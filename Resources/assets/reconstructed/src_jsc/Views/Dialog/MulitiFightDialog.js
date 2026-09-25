@@ -70,8 +70,8 @@
                     // source line 63, bytecode pc 201
                     otherData.push(data[i]);
                 }
-                // source line 59, bytecode pc 215
-                (i = (+i + 1));
+                // source line 59, bytecode pc 216
+                i++;
             }
             if ((dropData.length == 0)) {
                 // source line 67, bytecode pc 286

@@ -733,8 +733,8 @@
         (_tmpChild = _childs[i]);
         // source line 780, bytecode pc 98
         _actions.push(xs.Utils.Node.createEffectAction(_tmpChild, event));
-        // source line 778, bytecode pc 112
-        (i = (+i + 1));
+        // source line 778, bytecode pc 113
+        i++;
     }
     // source line 783, bytecode pc 169
     (_actionSelf = xs.Utils.Node.createEffectActionSelf(root, event));

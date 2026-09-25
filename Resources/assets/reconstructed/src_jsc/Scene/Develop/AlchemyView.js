@@ -317,8 +317,8 @@
             // source line 269, bytecode pc 86
             this.self.barArray[i].setSelectStatue(false);
         }
-        // source line 267, bytecode pc 100
-        (i = (+i + 1));
+        // source line 267, bytecode pc 101
+        i++;
     }
     if ((this.curBar.getSelectBtn().getGuideTag() === 4009)) {
         // source line 273, bytecode pc 206
@@ -477,8 +477,8 @@
         }
         // source line 417, bytecode pc 665
         this.barArray.push(controlBar);
-        // source line 263, bytecode pc 679
-        (tag = (+tag + 1));
+        // source line 263, bytecode pc 680
+        tag++;
     }
     // source line 420, bytecode pc 694
     return true;

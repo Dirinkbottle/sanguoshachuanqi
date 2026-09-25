@@ -303,8 +303,8 @@
         while ((i < 20)) {
             // source line 289, bytecode pc 86
             mList.push(this.m_unionList[i]);
-            // source line 287, bytecode pc 100
-            (i = (+i + 1));
+            // source line 287, bytecode pc 101
+            i++;
         }
         // source line 291, bytecode pc 123
         (this.m_unionList = mList);

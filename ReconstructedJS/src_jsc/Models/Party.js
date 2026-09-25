@@ -28,8 +28,8 @@
             (this.m_arrParty[i] = _tmpPartyEvent);
             if (_tmpPartyEvent.isReceiveAble()) {
             }
-            // source line 34, bytecode pc 115
-            (i = (+i + 1));
+            // source line 34, bytecode pc 116
+            i++;
         }
     }
     // source line 43, bytecode pc 162

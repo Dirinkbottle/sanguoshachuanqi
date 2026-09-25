@@ -91,8 +91,8 @@
         this.dungeon_drop.push(xs.Tools.Model.createModelWithBase(parseInt(dropItem.type), dropItem.id, parseInt(dropItem.num)));
         // source line 63, bytecode pc 173
         (this.dungeon_drop[i].type = parseInt(dropItem.type));
-        // source line 59, bytecode pc 187
-        (i = (+i + 1));
+        // source line 59, bytecode pc 188
+        i++;
     }
 },
     createView: function() {
@@ -213,8 +213,8 @@
                 }
             }
         }
-        // source line 120, bytecode pc 2254
-        (i = (+i + 1));
+        // source line 120, bytecode pc 2255
+        i++;
     }
     // source line 155, bytecode pc 2314
     bottom.setContentSize(cc.size(99, 113));

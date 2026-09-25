@@ -87,8 +87,8 @@
         while ((i < this.dungeonViews.length)) {
             // source line 92, bytecode pc 243
             this.dungeonViews[i].removeFromParent(true);
-            // source line 91, bytecode pc 257
-            (i = (+i + 1));
+            // source line 91, bytecode pc 258
+            i++;
         }
     }
     // source line 95, bytecode pc 291
@@ -186,8 +186,8 @@
             // source line 167, bytecode pc 803
             dungeonView.setCascadeOpacityEnabled(true);
         }
-        // source line 99, bytecode pc 817
-        (i = (+i + 1));
+        // source line 99, bytecode pc 818
+        i++;
     }
 },
     entryDungeon: function() {

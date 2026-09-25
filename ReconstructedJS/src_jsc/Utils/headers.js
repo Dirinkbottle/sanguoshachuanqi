@@ -15,8 +15,8 @@
             // source line 18, bytecode pc 84
             require(filesArray[i], global);
         }
-        // source line 15, bytecode pc 98
-        (i = (+i + 1));
+        // source line 15, bytecode pc 99
+        i++;
     }
 });
 // source line 45, bytecode pc 234

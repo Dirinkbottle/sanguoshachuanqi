@@ -211,8 +211,8 @@
         this.m_lightLines[i].setZOrder(1);
         // source line 178, bytecode pc 487
         this.m_lightLines[i].setVisible(false);
-        // source line 156, bytecode pc 501
-        (i = (+i + 1));
+        // source line 156, bytecode pc 502
+        i++;
     }
     // source line 181, bytecode pc 523
     (array = []);
@@ -235,8 +235,8 @@
         this.m_haveList[i].setVisible(false);
         // source line 192, bytecode pc 747
         this.m_iconsList[i].setVisible(false);
-        // source line 188, bytecode pc 761
-        (i = (+i + 1));
+        // source line 188, bytecode pc 762
+        i++;
     }
     // source line 196, bytecode pc 794
     this.updateStars(this.step);
@@ -298,8 +298,8 @@
                 // source line 238, bytecode pc 1362
                 this.m_lightStars[i].setVisible(false);
             }
-            // source line 234, bytecode pc 1376
-            (i = (+i + 1));
+            // source line 234, bytecode pc 1377
+            i++;
         }
         // source line 242, bytecode pc 1398
         (arr = []);
@@ -341,8 +341,8 @@
                 // source line 254, bytecode pc 1705
                 this.m_lightLines[i].setVisible(false);
             }
-            // source line 250, bytecode pc 1719
-            (i = (+i + 1));
+            // source line 250, bytecode pc 1720
+            i++;
         }
     }
 },
@@ -406,8 +406,8 @@
                 // source line 305, bytecode pc 643
                 this.m_iconsList[i].setVisible(false);
             }
-            // source line 287, bytecode pc 657
-            (i = (+i + 1));
+            // source line 287, bytecode pc 658
+            i++;
         }
     }
 },
@@ -514,8 +514,8 @@
             (EquipmentPieceNum = this.arrayPieces[i].num);
             break;
         }
-        // source line 390, bytecode pc 448
-        (i = (+i + 1));
+        // source line 390, bytecode pc 449
+        i++;
     }
     // source line 399, bytecode pc 479
     (_array = []);
@@ -569,8 +569,8 @@
             (EquipmentPieceNum = this.arraySouls[i].num);
             break;
         }
-        // source line 436, bytecode pc 448
-        (i = (+i + 1));
+        // source line 436, bytecode pc 449
+        i++;
     }
     // source line 444, bytecode pc 479
     (_array = []);
@@ -621,8 +621,8 @@
     user_skill_id: this.m_selectSkillId
 }, function(data) {
     if ((data.result == true)) {
-        // source line 490, bytecode pc 40
-        (this.step = (+this.step + 1));
+        // source line 490, bytecode pc 41
+        this.step++;
         // source line 491, bytecode pc 63
         this.updateStars(this.step, true);
         // source line 492, bytecode pc 83

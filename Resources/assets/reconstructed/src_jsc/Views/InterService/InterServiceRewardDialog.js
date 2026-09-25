@@ -108,8 +108,8 @@
             // source line 121, bytecode pc 98
             _pk_Ids.push(("" + this.rewardList[i].pk_id));
         }
-        // source line 119, bytecode pc 112
-        (i = (+i + 1));
+        // source line 119, bytecode pc 113
+        i++;
     }
     // source line 124, bytecode pc 138
     return _pk_Ids;
@@ -129,8 +129,8 @@
             // source line 134, bytecode pc 120
             _usedList.push(this.rewardList[i]);
         }
-        // source line 129, bytecode pc 134
-        (i = (+i + 1));
+        // source line 129, bytecode pc 135
+        i++;
     }
     // source line 137, bytecode pc 160
     return _usedList;

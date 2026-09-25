@@ -54,8 +54,8 @@
     while ((i < 2)) {
         // source line 47, bytecode pc 536
         this.switchCreateIcon(this.m_info[i], i);
-        // source line 46, bytecode pc 550
-        (i = (+i + 1));
+        // source line 46, bytecode pc 551
+        i++;
     }
     // source line 54, bytecode pc 612
     this.m_closeBtn.setOnClickCallBack(this.closeClicked.bind({ self: this }));

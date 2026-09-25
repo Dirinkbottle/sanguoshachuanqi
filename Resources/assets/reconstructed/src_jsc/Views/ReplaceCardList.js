@@ -184,8 +184,8 @@
                 // source line 147, bytecode pc 126
                 _dataSource.push(dataSource[i]);
             }
-            // source line 145, bytecode pc 140
-            (i = (+i + 1));
+            // source line 145, bytecode pc 141
+            i++;
         }
         // source line 150, bytecode pc 169
         (this.m_dataSource = _dataSource);

@@ -117,8 +117,8 @@
             // source line 94, bytecode pc 817
             xs.Utils.Node.attachNodes(this.m_ccbNode, this[("m_selectButton_" + i)]);
         }
-        // source line 69, bytecode pc 831
-        (i = (+i + 1));
+        // source line 69, bytecode pc 832
+        i++;
     }
     if (this.m_selectButton_1) {
         // source line 99, bytecode pc 876
@@ -134,8 +134,8 @@
             // source line 105, bytecode pc 51
             this[("m_selectButton_" + i)].setSelected(false);
         }
-        // source line 103, bytecode pc 65
-        (i = (+i + 1));
+        // source line 103, bytecode pc 66
+        i++;
     }
     if (this[("m_selectButton_" + num)]) {
         // source line 109, bytecode pc 123
@@ -157,8 +157,8 @@
                 this.m_scrollViewList[i].setPositionX(3000);
             }
         }
-        // source line 120, bytecode pc 308
-        (i = (+i + 1));
+        // source line 120, bytecode pc 309
+        i++;
     }
 },
     selectButtonCallBack: function() {

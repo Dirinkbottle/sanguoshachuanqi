@@ -134,8 +134,8 @@
                 // source line 117, bytecode pc 257
                 dataArray.push(data[i]);
             }
-            // source line 101, bytecode pc 271
-            (i = (+i + 1));
+            // source line 101, bytecode pc 272
+            i++;
         }
         // source line 123, bytecode pc 288
         return dataArray;
@@ -177,8 +177,8 @@
                 this.m_ccbNode.getChildByTag(_tag).setTouchPriority((this.m_baseTouchPriority - 1));
             }
         }
-        // source line 146, bytecode pc 261
-        (i = (+i + 1));
+        // source line 146, bytecode pc 262
+        i++;
     }
     // source line 159, bytecode pc 279
     (i = 1);
@@ -189,8 +189,8 @@
             // source line 162, bytecode pc 367
             this.m_ccbNode.getChildByTag(tag).setTouchPriority((this.m_baseTouchPriority - 1));
         }
-        // source line 159, bytecode pc 381
-        (i = (+i + 1));
+        // source line 159, bytecode pc 382
+        i++;
     }
 },
     replacePicWithButton: function() {
@@ -225,8 +225,8 @@
                 lostPlayer.setOnClickCallBack(this.goToLostPlayersDialog.bind({ self: this, tag: i }));
             }
         }
-        // source line 168, bytecode pc 508
-        (i = (+i + 1));
+        // source line 168, bytecode pc 509
+        i++;
     }
     // source line 199, bytecode pc 526
     (i = 0);
@@ -241,8 +241,8 @@
             // source line 206, bytecode pc 718
             Player.setOnClickCallBack(this.goToLostPlayersDialog.bind({ self: this, tag: (i + 10) }));
         }
-        // source line 199, bytecode pc 732
-        (i = (+i + 1));
+        // source line 199, bytecode pc 733
+        i++;
     }
 },
     creatNormalMatchCell: function(data) {
@@ -358,8 +358,8 @@
             // source line 309, bytecode pc 1790
             xs.Utils.Node.attachNodes(cell, matchRound, { desc: "c", offset: cc.p(0, 20) });
         }
-        // source line 213, bytecode pc 1804
-        (i = (+i + 1));
+        // source line 213, bytecode pc 1805
+        i++;
     }
 },
     createTop4MatchCell: function() {
@@ -604,8 +604,8 @@
                 }
             }
         }
-        // source line 565, bytecode pc 405
-        (i = (+i + 1));
+        // source line 565, bytecode pc 406
+        i++;
     }
     // source line 610, bytecode pc 430
     (length = lostData.length);
@@ -620,8 +620,8 @@
                 line.setVisible(false);
             }
         }
-        // source line 612, bytecode pc 523
-        (i = (+i + 1));
+        // source line 612, bytecode pc 524
+        i++;
     }
 }
 }));

@@ -28,8 +28,8 @@
             // source line 22, bytecode pc 163
             this.m_gemsList.push(gemlistArray[i]);
         }
-        // source line 19, bytecode pc 177
-        (i = (+i + 1));
+        // source line 19, bytecode pc 178
+        i++;
     }
     // source line 25, bytecode pc 227
     (this.m_defaultSize = cc.size(930, 606));

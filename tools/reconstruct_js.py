@@ -501,6 +501,9 @@ class Decompiler:
     UNARY = {"not": "!", "neg": "-", "pos": "+", "bitnot": "~", "typeof": "typeof ", "typeofexpr": "typeof ", "void": "void "}
     SUPPORTED_OPS = set("nop notearg loophead loopentry lineno endinit stop undefined null true false this string zero one int8 int32 uint16 uint24 uint32 double name getgname callname getintrinsic callintrinsic getaliasedvar callaliasedvar setaliasedvar implicitthis arguments getarg callarg getlocal calllocal bindname getprop getxprop callprop length getelem callelem newinit newarray initprop initelem initelem_array lambda deffun setprop setgname setintrinsic setconst setname setlocal setarg setelem not neg pos bitnot typeof typeofexpr void add sub mul div mod eq ne stricteq strictne lt le gt ge in instanceof lsh rsh ursh bitand bitor bitxor dup dup2 swap pick call new eval funcall funapply pop popv popn delname delprop delelem incarg arginc decarg argdec inclocal localinc declocal localdec incname nameinc decname namedec incgname gnameinc decgname gnamedec incprop propinc decprop propdec incelem eleminc decelem elemdec return throw defvar goto ifeq ifne or and".split())
     SIMPLE_IGNORED = {"notearg", "loophead", "loopentry", "lineno", "nop", "endinit", "stop", "retrval"}
+    # JOF_DECOMPOSE inc/dec opcodes leave the old value on the operand stack and
+    # then assign; see _fold_postfix_incdec.
+    POSTFIX_INCDEC_RE = re.compile(r"^\((?P<target>.+) = \(\+(?P=target) (?P<sign>[+-]) 1\)\)$")
 
     def __init__(self, bodies, specs, metrics, active=None):
         self.bodies = bodies
@@ -597,6 +600,32 @@ class Decompiler:
             values.append(self._pop(vm, ins))
         return list(reversed(values))
 
+    def _fold_postfix_incdec(self, vm, value):
+        """Reassemble a decomposed postfix ++/-- at its JSOP_POP.
+
+        JOF_DECOMPOSE increment/decrement opcodes are no-ops for the v22
+        interpreter; the equivalent decomposed sequence that follows them is
+        what actually executes. For a postfix form that sequence is
+        GETLOCAL/GETARG, POS, DUP, ONE, ADD, SETLOCAL/SETARG, POP (and the
+        GETPROP/SETPROP or GETELEM/SETELEM variants), so the old value is
+        already on the operand stack when the assignment result is discarded.
+        Emitting that assignment as a statement here would move the side
+        effect in front of the consumer of the old value: for example
+        input.charCodeAt(i++) became i = i + 1; input.charCodeAt(i). Fold the
+        idiom back into the postfix expression instead; a plain statement
+        then falls out when the folded value is popped in turn.
+        """
+        if not value.effect or value.kind != "assignment":
+            return False
+        match = self.POSTFIX_INCDEC_RE.match(value.text)
+        if match is None or not vm.stack:
+            return False
+        previous = vm.stack[-1]
+        if previous.text != "+" + match.group("target") or previous.effect or previous.unknown:
+            return False
+        vm.stack[-1] = Expr(match.group("target") + ("++" if match.group("sign") == "+" else "--"), True, "expr")
+        return True
+
     def _emit_discard(self, vm, value, ins):
         if value.effect or value.kind in {"assignment", "call"}:
             self._stmt(vm, value.text, ins)
@@ -650,7 +679,12 @@ class Decompiler:
         if op in self.SIMPLE_IGNORED or op == "notearg":
             return
         if spec and spec.get("decompose"):
-            # See jsopcode.tbl JOF_DECOMPOSE and jsinterp.cpp's no-op cases.
+            # See jsopcode.tbl JOF_DECOMPOSE and jsinterp.cpp's no-op cases:
+            # the fused ++/-- opcode does nothing at run time and the
+            # equivalent decomposed sequence that follows it is the real
+            # code, so decode that sequence and let _fold_postfix_incdec
+            # reassemble the postfix form at its POP. The operand printed for
+            # these opcodes is the decomposed length, not the variable slot.
             return
         if op in {"string"}:
             vm.stack.append(Expr(js_string(self.quoted_or(arg)), False, "literal")); return
@@ -728,7 +762,13 @@ class Decompiler:
                 obj.data.append(Expr("[{}]: {}".format(js_string(prop), value.text), False, "expr"))
                 vm.stack.append(obj)
             else:
-                vm.stack.append(Expr("({} = {})".format(prop_access(obj.text, prop), value.text), True, "assignment"))
+                # initprop keeps the object on the stack (jsopcode.tbl nuses=2
+                # ndefs=1; jsinterp.cpp:2920-2946 writes into sp[-2]); only the
+                # property assignment is a side effect.  Pushing the assignment
+                # expression instead would hand the next initprop/endinit a
+                # non-object.
+                self._stmt(vm, "{} = {}".format(prop_access(obj.text, prop), value.text), ins)
+                vm.stack.append(obj)
             return
         if op in {"initelem", "initelem_array"}:
             if op == "initelem_array":
@@ -753,7 +793,16 @@ class Decompiler:
                 self._stmt(vm, "/* TODO_BYTECODE pc={} opcode={} reason=dynamic_initializer_target */".format(ins.pc, op), ins)
                 vm.stack.append(obj)
             return
-        if op in {"setprop", "setgname", "setintrinsic", "setconst"}:
+        if op == "setconst":
+            # setconst is the odd one out: JOF_NAME|JOF_SET but carries no scope
+            # operand on the stack (jsopcode.tbl nuses=1), unlike setname/setgname/
+            # setintrinsic which are nuses=2.  Popping a second value here shifts
+            # every later expression by one slot.
+            value = self._pop(vm, ins)
+            name = self.quoted_or(arg, "__const")
+            text = "({} = {})".format(name if valid_identifier(name) else "__const", value.text)
+            vm.stack.append(Expr(text, True, "assignment")); return
+        if op in {"setprop", "setgname", "setintrinsic"}:
             value = self._pop(vm, ins)
             if op == "setprop":
                 obj = self._pop(vm, ins); prop = self.quoted_or(arg, "__property")
@@ -804,12 +853,18 @@ class Decompiler:
         if op in {"call", "new", "eval", "funcall", "funapply"}:
             self._call(vm, ins, op); return
         if op in {"pop", "popv"}:
-            self._emit_discard(vm, self._pop(vm, ins), ins); return
+            value = self._pop(vm, ins)
+            if not self._fold_postfix_incdec(vm, value):
+                self._emit_discard(vm, value, ins)
+            return
         if op == "popn":
             n = int(self.number(arg)); values = self._popn(vm, n, ins)
             for val in values: self._emit_discard(vm, val, ins)
             return
         if op in {"incarg", "arginc", "decarg", "argdec", "inclocal", "localinc", "declocal", "localdec", "incname", "nameinc", "decname", "namedec", "incgname", "gnameinc", "decgname", "gnamedec", "incprop", "propinc", "decprop", "propdec", "incelem", "eleminc", "decelem", "elemdec"}:
+            # Every inc/dec opcode in this build carries JOF_DECOMPOSE, so the
+            # early return above handles them; keep this branch for opcodes
+            # whose decomposed tail is absent.
             dec = "dec" in op
             post = op in {"nameinc", "propinc", "eleminc", "namedec", "propdec", "elemdec", "gnameinc", "gnamedec", "localinc", "localdec", "arginc", "argdec"}
             if op in {"incarg", "arginc", "decarg", "argdec"}:
@@ -819,7 +874,10 @@ class Decompiler:
             elif "prop" in op:
                 obj = self._pop(vm, ins); target = prop_access(obj.text, self.quoted_or(arg, "__property"))
             elif "elem" in op:
-                key, obj = self._popn(vm, 2, ins); target = "{}[{}]".format(obj.text, key.text)
+                # Same operand order as delelem: obj=sp[-2], key=sp[-1].
+                # NOTE: if this fallback ever becomes reachable, the JOF_DECOMPOSE
+                # tail already performs the increment - do not apply it twice.
+                obj, key = self._popn(vm, 2, ins); target = "{}[{}]".format(obj.text, key.text)
             else:
                 target = self.quoted_or(arg, "__name")
             text = ("--" if dec else "++") + target
@@ -830,7 +888,9 @@ class Decompiler:
         if op == "delprop":
             obj = self._pop(vm, ins); vm.stack.append(Expr("delete " + prop_access(obj.text, self.quoted_or(arg, "__property")), True)); return
         if op == "delelem":
-            key, obj = self._popn(vm, 2, ins); vm.stack.append(Expr("delete {}[{}]".format(obj.text, key.text), True)); return
+            # sp[-2] is the object and sp[-1] the property (jsinterp.cpp:2118/2121,
+            # FETCH_OBJECT(cx, -2) + propval = sp[-1]); _popn returns bottom-to-top.
+            obj, key = self._popn(vm, 2, ins); vm.stack.append(Expr("delete {}[{}]".format(obj.text, key.text), True)); return
         if op == "throw":
             self._stmt(vm, "throw " + self._pop(vm, ins).text, ins); return
         if op == "return":
@@ -844,6 +904,14 @@ class Decompiler:
             self.metrics["todoOpcodes"][op] += 1; return
         if op == "regexp":
             self._todo(vm, ins, "regexp_object_literal_not_dumped"); return
+        if op == "toid":
+            # JSOP_TOID converts sp[-1] to a property id in place and leaves the
+            # object below it untouched (jsinterp.cpp:2131-2146; jsopcode.tbl
+            # nuses=1 ndefs=1, so the net stack effect is zero).  JS bracket
+            # access performs that same conversion, so keeping the value as-is
+            # is faithful - previously this fell through to a TODO placeholder
+            # that rendered the index as undefined.
+            return
         if op in {"ifeq", "ifne", "goto", "or", "and", "tableswitch"}:
             return
         if op in {"try", "enterwith", "leavewith", "enterblock", "leaveblock", "enterlet0", "enterlet1", "enditer", "iter", "iternext", "moreiter", "exception", "condswitch", "case", "default", "enumelem", "setrval", "throwing", "gosub", "backpatch", "finally", "callee", "incaliasedvar", "decaliasedvar", "aliasedvarinc", "aliasedvardec", "bindintrinsic"}:
@@ -1667,6 +1735,16 @@ def main():
             r = metrics
             if r["manualReviewRecommended"]:
                 writer.writerow([source_rel, out_file.relative_to(out_root).as_posix(), r["recoveryRate"], json.dumps(r["unresolvedOpcodes"], ensure_ascii=False), len(r["cfg"]["anomalies"]), r["functionLinksMissing"], r["detachedFunctionBodies"]])
+    # A few files carry deliberate client-behaviour fixes that must differ from
+    # the bytecode; the rewrite above would otherwise destroy them silently.
+    import sys as _sys
+    _sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import source_patches
+    patched, already, problems = source_patches.apply(out_root)
+    for problem in problems:
+        print("SOURCE PATCH PROBLEM: {}".format(problem))
+    print("source patches: {} applied, {} already present, {} problem(s)".format(
+        len(patched), len(already), len(problems)))
     print("weighted recovery rate: {:.2%}".format(summary["weightedRecoveryRate"]))
     print("outputs: {} (JS + recovery JSON) under {}".format(len(outputs), out_root))
 

@@ -18,8 +18,8 @@
     while ((i < this.arrayModel.length)) {
         // source line 25, bytecode pc 129
         (this.arrayModel[i].titleName = ((xs.Tools.String.createString("auto_name_123") + this.getHanZiByNum((i + 1))) + xs.Tools.String.createString("auto_name_289")));
-        // source line 23, bytecode pc 143
-        (i = (+i + 1));
+        // source line 23, bytecode pc 144
+        i++;
     }
     // source line 29, bytecode pc 184
     this.markFuncEnd("refreshData");

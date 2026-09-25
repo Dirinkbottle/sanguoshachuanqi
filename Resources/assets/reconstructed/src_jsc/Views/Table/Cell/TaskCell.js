@@ -142,18 +142,16 @@
                 // source line 125, bytecode pc 790
                 (tmp = 1);
                 while ((p.x >= newP.x)) {
-                    // source line 127, bytecode pc 845
-                    (tmp = (+tmp + 1));
                     // source line 127, bytecode pc 864
-                    (newP = cc.p((this.posCfg.icon1_x + (this.posCfg.step * +tmp)), newP.y));
+                    (newP = cc.p((this.posCfg.icon1_x + (this.posCfg.step * tmp++)), newP.y));
                 }
                 // source line 130, bytecode pc 914
                 this[("m_taskRewardIcon_" + _tag)].setPosition(newP);
                 // source line 133, bytecode pc 994
                 this[("m_taskRewardNumLabel_" + _tag)].setPosition(cc.p((newP.x + 24), this[("m_taskRewardNumLabel_" + _tag)].getPosition().y));
             }
-            // source line 106, bytecode pc 1008
-            (i = (+i + 1));
+            // source line 106, bytecode pc 1009
+            i++;
         }
         // source line 139, bytecode pc 1104
         this.m_taskProgressLabel.setString(((("" + this.taskData.getTaskValue()) + "/") + this.taskData.getTaskObjectiveNum()));

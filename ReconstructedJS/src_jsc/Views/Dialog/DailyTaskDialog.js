@@ -112,8 +112,8 @@
         (model = xs.Models.Task.createWithData(data.list[i]));
         // source line 116, bytecode pc 129
         arrModels.push(model);
-        // source line 114, bytecode pc 143
-        (i = (+i + 1));
+        // source line 114, bytecode pc 144
+        i++;
     }
     // source line 119, bytecode pc 188
     arrModels.sort(function(taskData1, taskData2) {

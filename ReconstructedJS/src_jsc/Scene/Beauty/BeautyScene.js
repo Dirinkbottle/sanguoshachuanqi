@@ -59,8 +59,8 @@
         }
         // source line 45, bytecode pc 317
         (dataSource[i] = model);
-        // source line 37, bytecode pc 331
-        (i = (+i + 1));
+        // source line 37, bytecode pc 332
+        i++;
     }
     // source line 48, bytecode pc 363
     (this.generalList = dataSource);
@@ -654,8 +654,8 @@
             (str = xs.Tools.String.createStringWithArgsArray("BeautyMaxStr", [ this.m_BeautyRecord[i].upgrade_user_name, this.m_BeautyRecord[i].upgrade_time ]));
             break;
         }
-        // source line 574, bytecode pc 158
-        (i = (+i + 1));
+        // source line 574, bytecode pc 159
+        i++;
     }
     if ((str == "")) {
         // source line 582, bytecode pc 230

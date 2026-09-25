@@ -270,8 +270,8 @@
     while ((x < mList.length)) {
         // source line 191, bytecode pc 108
         this.m_playerList.push(xs.Models.UnionMember.createWithJson(mList[x]));
-        // source line 190, bytecode pc 122
-        (x = (+x + 1));
+        // source line 190, bytecode pc 123
+        x++;
     }
     // source line 193, bytecode pc 159
     this.m_tableView.reloadData();

@@ -29,8 +29,8 @@
             // source line 34, bytecode pc 75
             return true;
         }
-        // source line 30, bytecode pc 89
-        (i = (+i + 1));
+        // source line 30, bytecode pc 90
+        i++;
     }
     // source line 37, bytecode pc 120
     return false;

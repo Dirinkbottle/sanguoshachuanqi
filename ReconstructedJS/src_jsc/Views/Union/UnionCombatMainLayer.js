@@ -465,8 +465,8 @@
             // source line 430, bytecode pc 245
             this[("btn_" + btnIdx)].setVisible(false);
         }
-        // source line 428, bytecode pc 259
-        (btnIdx = (+btnIdx + 1));
+        // source line 428, bytecode pc 260
+        btnIdx++;
     }
     // source line 436, bytecode pc 277
     (keyIndx = 0);
@@ -489,8 +489,8 @@
         mBtn.setTouchPriority((this.m_baseTouchPriority - 1));
         // source line 454, bytecode pc 592
         (this[("btn_" + keyIndx)] = mBtn);
-        // source line 436, bytecode pc 606
-        (keyIndx = (+keyIndx + 1));
+        // source line 436, bytecode pc 607
+        keyIndx++;
     }
     if ((mStage == xs.Constant_UnionWar_State_Apply)) {
         if (this.isApply) {
@@ -667,8 +667,8 @@
             // source line 610, bytecode pc 142
             this[("btn_" + btnIdx)].setTouchPriority((this.m_baseTouchPriority - 1));
         }
-        // source line 608, bytecode pc 156
-        (btnIdx = (+btnIdx + 1));
+        // source line 608, bytecode pc 157
+        btnIdx++;
     }
 }
 }));

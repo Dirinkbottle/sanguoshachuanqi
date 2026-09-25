@@ -32,8 +32,8 @@
             // source line 34, bytecode pc 55
             return true;
         }
-        // source line 32, bytecode pc 69
-        (i = (+i + 1));
+        // source line 32, bytecode pc 70
+        i++;
     }
     // source line 36, bytecode pc 90
     return false;
@@ -49,8 +49,8 @@
     while ((i < _obj_list.length)) {
         // source line 44, bytecode pc 62
         (index = (index + _obj_list[i].getSkinList().length));
-        // source line 43, bytecode pc 76
-        (i = (+i + 1));
+        // source line 43, bytecode pc 77
+        i++;
     }
     // source line 47, bytecode pc 99
     return index;
@@ -81,8 +81,8 @@
     while ((i < skinList.length)) {
         // source line 75, bytecode pc 87
         skinModelList.push(xs.Models.Goddess.createWithBaseSurface(skinList[i]));
-        // source line 73, bytecode pc 101
-        (i = (+i + 1));
+        // source line 73, bytecode pc 102
+        i++;
     }
     // source line 77, bytecode pc 124
     return skinModelList;
@@ -104,8 +104,8 @@
             // source line 87, bytecode pc 121
             (fight = goddessList[i].getSmallFighting());
         }
-        // source line 84, bytecode pc 135
-        (i = (+i + 1));
+        // source line 84, bytecode pc 136
+        i++;
     }
     if ((fight == 0)) {
         // source line 91, bytecode pc 166
@@ -118,8 +118,8 @@
             // source line 96, bytecode pc 195
             return false;
         }
-        // source line 94, bytecode pc 209
-        (i = (+i + 1));
+        // source line 94, bytecode pc 210
+        i++;
     }
     // source line 99, bytecode pc 230
     return true;
@@ -142,8 +142,8 @@
             (num = 0);
             break;
         }
-        // source line 108, bytecode pc 100
-        (i = (+i + 1));
+        // source line 108, bytecode pc 101
+        i++;
     }
     // source line 115, bytecode pc 123
     return num;
@@ -167,8 +167,8 @@
             // source line 132, bytecode pc 87
             return goddessList[i].getId();
         }
-        // source line 130, bytecode pc 101
-        (i = (+i + 1));
+        // source line 130, bytecode pc 102
+        i++;
     }
 },
     getFightGoddess: function() {
@@ -186,8 +186,8 @@
             // source line 145, bytecode pc 76
             return goddessList[i];
         }
-        // source line 143, bytecode pc 90
-        (i = (+i + 1));
+        // source line 143, bytecode pc 91
+        i++;
     }
 },
     getFateGoddess: function() {
@@ -225,8 +225,8 @@
                 break;
             }
         }
-        // source line 170, bytecode pc 204
-        (i = (+i + 1));
+        // source line 170, bytecode pc 205
+        i++;
     }
     // source line 185, bytecode pc 227
     return result;

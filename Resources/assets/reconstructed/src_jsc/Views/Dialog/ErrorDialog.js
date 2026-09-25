@@ -86,8 +86,8 @@
     while ((i < m_strs.length)) {
         // source line 118, bytecode pc 113
         (m_str = (m_str + m_strs[i]));
-        // source line 117, bytecode pc 127
-        (i = (+i + 1));
+        // source line 117, bytecode pc 128
+        i++;
     }
     // source line 121, bytecode pc 153
     (showStr = m_str);
@@ -107,8 +107,8 @@
             // source line 136, bytecode pc 28
             return true;
         }
-        // source line 134, bytecode pc 42
-        (i = (+i + 1));
+        // source line 134, bytecode pc 43
+        i++;
     }
     // source line 139, bytecode pc 63
     return false;

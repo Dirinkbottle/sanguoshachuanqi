@@ -69,8 +69,8 @@
             // source line 56, bytecode pc 95
             xs.Utils.Node.safeRemoveChild(this.m_showThreeWeaponsList[i]);
         }
-        // source line 54, bytecode pc 109
-        (i = (+i + 1));
+        // source line 54, bytecode pc 110
+        i++;
     }
     // source line 59, bytecode pc 134
     (this.m_showThreeWeaponsList = []);
@@ -326,10 +326,10 @@
     this.addChild(nextWeapon);
     // source line 251, bytecode pc 632
     (this.m_showThreeWeaponsList[last] = nextWeapon);
-    // source line 255, bytecode pc 658
-    (this.m_middleIndex = (+this.m_middleIndex + 1));
-    // source line 256, bytecode pc 685
-    (this.m_index = (+this.m_index + 1));
+    // source line 255, bytecode pc 659
+    this.m_middleIndex++;
+    // source line 256, bytecode pc 686
+    this.m_index++;
     if ((this.m_middleIndex == 3)) {
         // source line 258, bytecode pc 708
         (this.m_middleIndex = 0);
@@ -403,10 +403,10 @@
     this.addChild(nextWeapon);
     // source line 318, bytecode pc 632
     (this.m_showThreeWeaponsList[next] = nextWeapon);
-    // source line 322, bytecode pc 658
-    (this.m_middleIndex = (+this.m_middleIndex - 1));
-    // source line 323, bytecode pc 685
-    (this.m_index = (+this.m_index - 1));
+    // source line 322, bytecode pc 659
+    this.m_middleIndex--;
+    // source line 323, bytecode pc 686
+    this.m_index--;
     if ((this.m_middleIndex < 0)) {
         // source line 325, bytecode pc 708
         (this.m_middleIndex = 2);

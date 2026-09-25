@@ -69,8 +69,8 @@
 },
     countDown: function() {
     if ((this.coolDownTime > 0)) {
-        // source line 81, bytecode pc 38
-        (this.coolDownTime = (+this.coolDownTime - 1));
+        // source line 81, bytecode pc 39
+        this.coolDownTime--;
     }
 },
     requestCheckTransactionReceipt_Google: function() {

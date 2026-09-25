@@ -146,8 +146,8 @@
             // source line 173, bytecode pc 563
             _cardSprite.setScale(this.Cfg.sec_item_scale);
         }
-        // source line 134, bytecode pc 577
-        (i = (+i + 1));
+        // source line 134, bytecode pc 578
+        i++;
     }
     // source line 178, bytecode pc 628
     this.setTouchMode(cc.TOUCH_ONE_BY_ONE);
@@ -249,16 +249,14 @@
             // source line 282, bytecode pc 1453
             xs.dump("000", this.view.cardViews[i].getPositionX());
         }
-        // source line 203, bytecode pc 1467
-        (i = (+i + 1));
+        // source line 203, bytecode pc 1468
+        i++;
     }
 },
     updateViewsAlign: function() {
     var _moveDirection, _vX, _tmp, _time;
-    // source line 292, bytecode pc 45
-    (this.control.count = (+this.control.count + 1));
     // source line 292, bytecode pc 50
-    this.dump("this.control.count", +this.control.count);
+    this.dump("this.control.count", this.control.count++);
     // source line 306, bytecode pc 60
     (_moveDirection = this.Constant_MoveType_None);
     if ((_vX > 0)) {
@@ -399,8 +397,8 @@
         (_actionScale = cc.TargetedAction.create(this.view.cardViews[i], _actionScale));
         // source line 466, bytecode pc 1028
         _actions.push(xs.Utils.Action.combineSpawn([ _actionMove, _actionScale ]));
-        // source line 400, bytecode pc 1042
-        (i = (+i + 1));
+        // source line 400, bytecode pc 1043
+        i++;
     }
     // source line 473, bytecode pc 1074
     (_actionCushion = null);
@@ -422,8 +420,8 @@
             // source line 489, bytecode pc 102
             xs.dump("222", [ this.view.cardViews[i].getPositionX() ]);
         }
-        // source line 487, bytecode pc 116
-        (i = (+i + 1));
+        // source line 487, bytecode pc 117
+        i++;
     }
 }.bind(this)));
     // source line 505, bytecode pc 1232

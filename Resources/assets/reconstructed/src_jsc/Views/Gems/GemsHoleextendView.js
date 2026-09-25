@@ -220,8 +220,8 @@
                 this.m_gemsEquipmentAddL.m_ccbNode.getChildByTag(xs.Views.Gems.GemsEquipmentAdd.cfg.ccbCfg[mGemsIdx].tag).setVisible(false);
             }
         }
-        // source line 199, bytecode pc 243
-        (mGemsIdx = (+mGemsIdx + 1));
+        // source line 199, bytecode pc 244
+        mGemsIdx++;
     }
     if (!params) {
         // source line 209, bytecode pc 372
@@ -245,8 +245,8 @@
             // source line 224, bytecode pc 208
             xs.Utils.replaceNode(this.m_gemsEquipmentAddL.m_ccbNode, xs.Views.Gems.GemsEquipmentAdd.cfg.ccbCfg[mGemsIdx].tag, mSp, true);
         }
-        // source line 217, bytecode pc 222
-        (mGemsIdx = (+mGemsIdx + 1));
+        // source line 217, bytecode pc 223
+        mGemsIdx++;
     }
 },
     _getGemState: function(gemIdx, data) {
@@ -352,8 +352,8 @@
                     (this.isBoreListHaveGems = false);
                 }
             }
-            // source line 298, bytecode pc 160
-            (idx = (+idx + 1));
+            // source line 298, bytecode pc 161
+            idx++;
         }
         if (this.isBoreListHaveGems) {
             // source line 315, bytecode pc 245

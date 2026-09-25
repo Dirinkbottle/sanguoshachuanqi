@@ -39,8 +39,8 @@
             // source line 43, bytecode pc 61
             return _obj_list[i];
         }
-        // source line 41, bytecode pc 75
-        (i = (+i + 1));
+        // source line 41, bytecode pc 76
+        i++;
     }
     // source line 46, bytecode pc 96
     return null;
@@ -60,8 +60,8 @@
             // source line 57, bytecode pc 226
             _rs_obj.push(_arr_equipment_all[i].getId());
         }
-        // source line 53, bytecode pc 240
-        (i = (+i + 1));
+        // source line 53, bytecode pc 241
+        i++;
     }
     // source line 60, bytecode pc 290
     xs.log_zhz(("getIdsByType" + type), _rs_obj);
@@ -83,8 +83,8 @@
             // source line 71, bytecode pc 137
             _arr_rs.push(arr[a]);
         }
-        // source line 67, bytecode pc 151
-        (a = (+a + 1));
+        // source line 67, bytecode pc 152
+        a++;
     }
     // source line 74, bytecode pc 174
     return _arr_rs;
@@ -100,8 +100,8 @@
     while ((i < _arr_obj.length)) {
         // source line 82, bytecode pc 61
         (_num = (_num + _arr_obj[i].getItemNum()));
-        // source line 81, bytecode pc 75
-        (i = (+i + 1));
+        // source line 81, bytecode pc 76
+        i++;
     }
     // source line 84, bytecode pc 98
     return _num;

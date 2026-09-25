@@ -54,8 +54,8 @@ var _ccbGlobalContext;
                     callbackNode.setCallback(owner[callbackName], owner);
                 }
             }
-            // source line 38, bytecode pc 379
-            (i = (+i + 1));
+            // source line 38, bytecode pc 380
+            i++;
         }
         // source line 62, bytecode pc 416
         (ownerOutletNames = reader.getOwnerOutletNames());
@@ -70,8 +70,8 @@ var _ccbGlobalContext;
             (outletNode = ownerOutletNodes[i]);
             // source line 70, bytecode pc 478
             (owner[outletName] = outletNode);
-            // source line 65, bytecode pc 492
-            (i = (+i + 1));
+            // source line 65, bytecode pc 493
+            i++;
         }
     }
     // source line 74, bytecode pc 529
@@ -124,8 +124,8 @@ var _ccbGlobalContext;
                         callbackNode.setCallback(controller[callbackName], controller);
                     }
                 }
-                // source line 99, bytecode pc 931
-                (j = (+j + 1));
+                // source line 99, bytecode pc 932
+                j++;
             }
             // source line 124, bytecode pc 968
             (documentOutletNames = animationManager.getDocumentOutletNames());
@@ -140,8 +140,8 @@ var _ccbGlobalContext;
                 (outletNode = documentOutletNodes[j]);
                 // source line 132, bytecode pc 1030
                 (controller[outletName] = outletNode);
-                // source line 127, bytecode pc 1044
-                (j = (+j + 1));
+                // source line 127, bytecode pc 1045
+                j++;
             }
             if ((typeof(controller.onDidLoadFromCCB) == "function")) {
                 // source line 137, bytecode pc 1098
@@ -171,8 +171,8 @@ var _ccbGlobalContext;
                         animationManager.setCallFunc(callfunc, keyframeCallbacks[j]);
                     }
                 }
-                // source line 142, bytecode pc 1350
-                (j = (+j + 1));
+                // source line 142, bytecode pc 1351
+                j++;
             }
             // source line 161, bytecode pc 1387
             (autoPlaySeqId = animationManager.getAutoPlaySequenceId());
@@ -181,8 +181,8 @@ var _ccbGlobalContext;
                 animationManager.runAnimationsForSequenceIdTweenDuration(autoPlaySeqId, 0);
             }
         }
-        // source line 78, bytecode pc 1433
-        (i = (+i + 1));
+        // source line 78, bytecode pc 1434
+        i++;
     }
     // source line 168, bytecode pc 1456
     return node;

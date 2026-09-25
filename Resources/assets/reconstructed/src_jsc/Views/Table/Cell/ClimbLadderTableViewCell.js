@@ -294,8 +294,8 @@
             // source line 251, bytecode pc 117
             _subNode.setVisible(false);
         }
-        // source line 248, bytecode pc 131
-        (i = (+i - 1));
+        // source line 248, bytecode pc 132
+        i--;
     }
 },
     cfg: {

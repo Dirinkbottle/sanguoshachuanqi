@@ -24,8 +24,8 @@
     while ((i < arrayNames.length)) {
         // source line 31, bytecode pc 41
         this.registerCallBack("default", arrayNames[i], callback);
-        // source line 30, bytecode pc 55
-        (i = (+i + 1));
+        // source line 30, bytecode pc 56
+        i++;
     }
 },
     onCmnMsg: function(moduleName, funcName, other1, other2) {

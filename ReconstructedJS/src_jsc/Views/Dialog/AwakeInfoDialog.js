@@ -155,8 +155,8 @@
     while ((i < this.m_biaoQianBtns.length)) {
         // source line 150, bytecode pc 210
         this.m_biaoQianBtns[i].addCallBackForEvent(this, this.selectButtonCallBack.bind({ self: this, tag: i }));
-        // source line 148, bytecode pc 224
-        (i = (+i + 1));
+        // source line 148, bytecode pc 225
+        i++;
     }
 },
     selectButtonCallBack: function() {
@@ -185,8 +185,8 @@
             // source line 178, bytecode pc 75
             this.m_biaoQianBtns[i].setSelected(false);
         }
-        // source line 170, bytecode pc 89
-        (i = (+i + 1));
+        // source line 170, bytecode pc 90
+        i++;
     }
     // source line 182, bytecode pc 128
     this.onShowPage(index);
@@ -356,8 +356,8 @@ xs.Views.Mgr.registerDialog("AwakeInfoDialog", { "class": xs.Views.Dialog.AwakeI
         while ((i < this._childNodes.length)) {
             // source line 311, bytecode pc 140
             this.removeChild(this._childNodes[i], true);
-            // source line 309, bytecode pc 154
-            (i = (+i + 1));
+            // source line 309, bytecode pc 155
+            i++;
         }
     }
     // source line 315, bytecode pc 184
@@ -409,8 +409,8 @@ xs.Views.Mgr.registerDialog("AwakeInfoDialog", { "class": xs.Views.Dialog.AwakeI
                 // source line 347, bytecode pc 754
                 this._childNodes.push(itemView);
             }
-            // source line 322, bytecode pc 768
-            (i = (+i + 1));
+            // source line 322, bytecode pc 769
+            i++;
         }
     }
 }

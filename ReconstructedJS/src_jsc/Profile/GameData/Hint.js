@@ -423,8 +423,8 @@
             // source line 431, bytecode pc 65
             return true;
         }
-        // source line 429, bytecode pc 79
-        (i = (+i + 1));
+        // source line 429, bytecode pc 80
+        i++;
     }
     // source line 434, bytecode pc 95
     return false;

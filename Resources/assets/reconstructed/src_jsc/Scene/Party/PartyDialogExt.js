@@ -154,11 +154,11 @@
     (i = 0);
     while ((i < _reward_list.length)) {
         if (_reward_list[i].status.is_received) {
-            // source line 155, bytecode pc 106
-            (_receivedNum = (+_receivedNum + 1));
+            // source line 155, bytecode pc 107
+            _receivedNum++;
         }
-        // source line 153, bytecode pc 121
-        (i = (+i + 1));
+        // source line 153, bytecode pc 122
+        i++;
     }
     // source line 158, bytecode pc 166
     (this.m_signInNum = ((_receivedNum < 0) ? 0 : _receivedNum));
@@ -226,11 +226,11 @@
         (i = 0);
         while ((i < _reward_list.length)) {
             if (_reward_list[i].status.is_received) {
-                // source line 218, bytecode pc 90
-                (_receivedNum = (+_receivedNum + 1));
+                // source line 218, bytecode pc 91
+                _receivedNum++;
             }
-            // source line 216, bytecode pc 105
-            (i = (+i + 1));
+            // source line 216, bytecode pc 106
+            i++;
         }
         if ((_receivedNum == _reward_list.length)) {
             if (mStrId) {
@@ -280,8 +280,8 @@
             this.reloadData(_modelNew);
             break;
         }
-        // source line 263, bytecode pc 201
-        (i = (+i + 1));
+        // source line 263, bytecode pc 202
+        i++;
     }
     // source line 278, bytecode pc 262
     xs.Tools.Net.getInstance().UseItemSuccess(data);
@@ -379,8 +379,8 @@
                 _tmpView.setVisible(false);
             }
         }
-        // source line 320, bytecode pc 632
-        (i = (+i + 1));
+        // source line 320, bytecode pc 633
+        i++;
     }
     if (this.m_baseTouchPriority) {
         // source line 388, bytecode pc 661
@@ -392,8 +392,8 @@
                 // source line 392, bytecode pc 736
                 _tmpView.getViewOri().m_taskIconBtn.setTouchPriority((this.m_baseTouchPriority - 1));
             }
-            // source line 388, bytecode pc 750
-            (i = (+i + 1));
+            // source line 388, bytecode pc 751
+            i++;
         }
     }
 },
@@ -436,8 +436,8 @@
             // source line 445, bytecode pc 163
             _tmpView.getViewOri().m_taskIconBtn.setTouchPriority((this.m_baseTouchPriority - 1));
         }
-        // source line 441, bytecode pc 177
-        (i = (+i + 1));
+        // source line 441, bytecode pc 178
+        i++;
     }
     if (this.m_lastBtn) {
         // source line 451, bytecode pc 238
@@ -535,8 +535,8 @@
             // source line 542, bytecode pc 438
             _tmpNode.getParent().addChild(this.m_iconAwards[i], 3);
         }
-        // source line 514, bytecode pc 452
-        (i = (+i + 1));
+        // source line 514, bytecode pc 453
+        i++;
     }
 }
 })));
@@ -1050,8 +1050,8 @@
             this.reloadData(_modelNew);
             break;
         }
-        // source line 1005, bytecode pc 201
-        (i = (+i + 1));
+        // source line 1005, bytecode pc 202
+        i++;
     }
     // source line 1020, bytecode pc 233
     this._initIndex();

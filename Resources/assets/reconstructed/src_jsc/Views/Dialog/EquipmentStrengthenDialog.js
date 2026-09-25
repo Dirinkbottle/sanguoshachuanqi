@@ -417,8 +417,8 @@
 }.bind(this)));
         // source line 325, bytecode pc 1099
         this._actionarray.push(_action1);
-        // source line 286, bytecode pc 1113
-        (i = (+i + 1));
+        // source line 286, bytecode pc 1114
+        i++;
     }
     // source line 328, bytecode pc 1179
     this.runAction(xs.Utils.Action.combineSequence(this._actionarray));

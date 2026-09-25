@@ -74,8 +74,8 @@
             this[("OLButton" + i)].setPosition(cc.p(_pos.x, (_pos.y - (80 * (i + 1)))));
             // source line 70, bytecode pc 1111
             this.m_bg.addChild(this[("OLButton" + i)]);
-            // source line 64, bytecode pc 1125
-            (i = (+i + 1));
+            // source line 64, bytecode pc 1126
+            i++;
         }
     } else {
         if ((this.type == xs.Constant_Sgs_MobilePhone)) {
@@ -106,8 +106,8 @@
                     this[("OLButton" + i)].setPosition(cc.p(_pos.x, (_pos.y - (80 * i))));
                     // source line 89, bytecode pc 1685
                     this.m_bg.addChild(this[("OLButton" + i)]);
-                    // source line 83, bytecode pc 1699
-                    (i = (+i + 1));
+                    // source line 83, bytecode pc 1700
+                    i++;
                 }
             }
         }
@@ -198,8 +198,8 @@
             // source line 172, bytecode pc 153
             this[("OLButton" + i)].setTouchPriority((this.m_baseTouchPriority - 1));
         }
-        // source line 170, bytecode pc 167
-        (i = (+i + 1));
+        // source line 170, bytecode pc 168
+        i++;
     }
 }
 }));

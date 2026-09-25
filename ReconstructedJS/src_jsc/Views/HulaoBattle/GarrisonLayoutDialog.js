@@ -77,8 +77,8 @@
             // source line 75, bytecode pc 331
             this.m_left_list.push(this.m_last_leftList[i]);
         }
-        // source line 71, bytecode pc 345
-        (i = (+i + 1));
+        // source line 71, bytecode pc 346
+        i++;
     }
     // source line 79, bytecode pc 418
     (this.m_ccbNode = xs.ccb_reader.load(xs.Cfg.CCBI.GarrisonLayoutDialog, this));
@@ -129,8 +129,8 @@
                 (_icon = _GeneralIcon);
             }
         }
-        // source line 114, bytecode pc 183
-        (i = (+i + 1));
+        // source line 114, bytecode pc 184
+        i++;
     }
     // source line 126, bytecode pc 210
     (i = 0);
@@ -141,8 +141,8 @@
             // source line 129, bytecode pc 320
             _name.setString(((("S" + this.m_right_nameData[i].server_id) + " ") + this.m_right_nameData[i].user_nick));
         }
-        // source line 126, bytecode pc 334
-        (i = (+i + 1));
+        // source line 126, bytecode pc 335
+        i++;
     }
 },
     getRightGeneralsDeadState: function() {
@@ -163,15 +163,15 @@
         while ((i <= listEnd[(j - 1)])) {
             if (!xs.Utils.isEmpty(this.m_right_data[i])) {
                 if ((this.m_right_data[i].current_hp == 0)) {
-                    // source line 147, bytecode pc 173
-                    (allDead = (+allDead + 1));
+                    // source line 147, bytecode pc 174
+                    allDead++;
                 }
             } else {
-                // source line 150, bytecode pc 193
-                (allDead = (+allDead + 1));
+                // source line 150, bytecode pc 194
+                allDead++;
             }
-            // source line 143, bytecode pc 208
-            (i = (+i + 1));
+            // source line 143, bytecode pc 209
+            i++;
         }
         if ((allDead == 3)) {
             // source line 156, bytecode pc 259
@@ -179,11 +179,11 @@
         } else {
             // source line 158, bytecode pc 284
             this.m_waysList.push(true);
-            // source line 159, bytecode pc 310
-            (this.m_needGeneralsNum = (+this.m_needGeneralsNum + 1));
+            // source line 159, bytecode pc 311
+            this.m_needGeneralsNum++;
         }
-        // source line 141, bytecode pc 325
-        (j = (+j + 1));
+        // source line 141, bytecode pc 326
+        j++;
     }
 },
     replacePicWithButtonByType: function() {
@@ -205,12 +205,12 @@
                     // source line 181, bytecode pc 252
                     this[("btnAdd" + _tag)].setOnClickCallBack(this.selectGeneralCallBack.bind({ self: this, tag: _tag }));
                 }
-                // source line 170, bytecode pc 266
-                (j = (+j + 1));
+                // source line 170, bytecode pc 267
+                j++;
             }
         }
-        // source line 167, bytecode pc 293
-        (i = (+i + 1));
+        // source line 167, bytecode pc 294
+        i++;
     }
 },
     uncludeDeadGenerals: function(data) {
@@ -224,8 +224,8 @@
             // source line 193, bytecode pc 61
             list.push(data[i]);
         }
-        // source line 191, bytecode pc 75
-        (i = (+i + 1));
+        // source line 191, bytecode pc 76
+        i++;
     }
     // source line 196, bytecode pc 98
     return list;
@@ -256,11 +256,11 @@
                 // source line 218, bytecode pc 291
                 (this.m_tag_data_dic[idx] = null);
             }
-            // source line 204, bytecode pc 305
-            (j = (+j + 1));
+            // source line 204, bytecode pc 306
+            j++;
         }
-        // source line 202, bytecode pc 332
-        (i = (+i + 1));
+        // source line 202, bytecode pc 333
+        i++;
     }
 },
     getGeneralsDataByNewLeftGenerals: function(generalId) {
@@ -277,8 +277,8 @@
                 return null;
             }
         }
-        // source line 228, bytecode pc 88
-        (i = (+i + 1));
+        // source line 228, bytecode pc 89
+        i++;
     }
 },
     getLastGarrisonLayoutData: function(_lastGarrisonLayoutData) {
@@ -302,8 +302,8 @@
             // source line 259, bytecode pc 141
             list.push({});
         }
-        // source line 249, bytecode pc 155
-        (i = (+i + 1));
+        // source line 249, bytecode pc 156
+        i++;
     }
     // source line 262, bytecode pc 178
     return list;
@@ -345,15 +345,15 @@
                             // source line 286, bytecode pc 314
                             (allDead = false);
                         }
-                        // source line 288, bytecode pc 328
-                        (num = (+num + 1));
+                        // source line 288, bytecode pc 329
+                        num++;
                     }
-                    // source line 282, bytecode pc 343
-                    (j = (+j + 1));
+                    // source line 282, bytecode pc 344
+                    j++;
                 }
             }
-            // source line 280, bytecode pc 370
-            (i = (+i + 1));
+            // source line 280, bytecode pc 371
+            i++;
         }
         if (allDead) {
             // source line 294, bytecode pc 418
@@ -418,15 +418,15 @@
                         // source line 344, bytecode pc 1180
                         (this.m_tag_data_dic[_tag] = data);
                     }
-                    // source line 347, bytecode pc 1194
-                    (num = (+num + 1));
+                    // source line 347, bytecode pc 1195
+                    num++;
                 }
-                // source line 313, bytecode pc 1209
-                (j = (+j + 1));
+                // source line 313, bytecode pc 1210
+                j++;
             }
         }
-        // source line 311, bytecode pc 1236
-        (i = (+i + 1));
+        // source line 311, bytecode pc 1237
+        i++;
     }
 },
     createGeneralIcon: function(data) {
@@ -517,12 +517,12 @@
                     // source line 435, bytecode pc 256
                     _icon.setTouchPriority((this.m_baseTouchPriority - 1));
                 }
-                // source line 430, bytecode pc 270
-                (j = (+j + 1));
+                // source line 430, bytecode pc 271
+                j++;
             }
         }
-        // source line 427, bytecode pc 297
-        (i = (+i + 1));
+        // source line 427, bytecode pc 298
+        i++;
     }
 },
     exchangeGeneralData: function(data, _generalId) {
@@ -534,8 +534,8 @@
             // source line 448, bytecode pc 38
             return false;
         }
-        // source line 446, bytecode pc 52
-        (i = (+i + 1));
+        // source line 446, bytecode pc 53
+        i++;
     }
     // source line 452, bytecode pc 73
     return true;
@@ -551,8 +551,8 @@
             // source line 459, bytecode pc 71
             (this.m_left_list[i].fortune = 0);
         }
-        // source line 456, bytecode pc 85
-        (i = (+i + 1));
+        // source line 456, bytecode pc 86
+        i++;
     }
     // source line 463, bytecode pc 112
     (i = 0);
@@ -577,8 +577,8 @@
                 (this.m_tag_data_dic[data[i].tag] = _data);
             }
         }
-        // source line 463, bytecode pc 481
-        (i = (+i + 1));
+        // source line 463, bytecode pc 482
+        i++;
     }
 },
     LightenLuckCallBack: function() {
@@ -597,11 +597,11 @@
                 // source line 502, bytecode pc 94
                 generals_list.push(this.m_tag_data_dic[_tag]);
             }
-            // source line 499, bytecode pc 108
-            (j = (+j + 1));
+            // source line 499, bytecode pc 109
+            j++;
         }
-        // source line 497, bytecode pc 135
-        (i = (+i + 1));
+        // source line 497, bytecode pc 136
+        i++;
     }
     if ((generals_list.length == 0)) {
         // source line 507, bytecode pc 227
@@ -639,8 +639,8 @@
                     // source line 530, bytecode pc 96
                     (_idex = 1);
                 }
-                // source line 527, bytecode pc 110
-                (j = (+j + 1));
+                // source line 527, bytecode pc 111
+                j++;
             }
         } else {
             // source line 535, bytecode pc 133
@@ -648,8 +648,8 @@
         }
         // source line 538, bytecode pc 144
         (canGoToFight = (canGoToFight + _idex));
-        // source line 523, bytecode pc 158
-        (i = (+i + 1));
+        // source line 523, bytecode pc 159
+        i++;
     }
     // source line 541, bytecode pc 198
     return ((canGoToFight == this.m_type) ? true : false);
@@ -679,11 +679,11 @@
                     break;
                 }
             }
-            // source line 548, bytecode pc 150
-            (j = (+j + 1));
+            // source line 548, bytecode pc 151
+            j++;
         }
-        // source line 547, bytecode pc 177
-        (i = (+i + 1));
+        // source line 547, bytecode pc 178
+        i++;
     }
     if ((this.m_left_data.total_fortune != 0)) {
         if (usedFortune) {
@@ -760,8 +760,8 @@
                     // source line 615, bytecode pc 273
                     _garrisonLayoutData.push({});
                 }
-                // source line 601, bytecode pc 287
-                (j = (+j + 1));
+                // source line 601, bytecode pc 288
+                j++;
             }
         } else {
             // source line 620, bytecode pc 327
@@ -781,8 +781,8 @@
         }
         // source line 631, bytecode pc 453
         (canGoToFight = (canGoToFight + _idex));
-        // source line 597, bytecode pc 467
-        (i = (+i + 1));
+        // source line 597, bytecode pc 468
+        i++;
     }
     if ((this.m_needGeneralsNum == this.m_type)) {
         // source line 637, bytecode pc 545
@@ -846,8 +846,8 @@
             // source line 701, bytecode pc 39
             (_round = (i + 1));
         }
-        // source line 697, bytecode pc 53
-        (i = (+i + 1));
+        // source line 697, bytecode pc 54
+        i++;
     }
     // source line 726, bytecode pc 228
     xs.Scene.Mgr.changeSceneByName("FightScene", {
@@ -882,11 +882,11 @@
         if (this.m_waysList[i]) {
             // source line 739, bytecode pc 75
             (_round[j] = (i + 1));
-            // source line 740, bytecode pc 89
-            (j = (+j + 1));
+            // source line 740, bytecode pc 90
+            j++;
         }
-        // source line 735, bytecode pc 104
-        (i = (+i + 1));
+        // source line 735, bytecode pc 105
+        i++;
     }
     // source line 781, bytecode pc 293
     xs.Scene.Mgr.changeSceneByName("FightScene", {
@@ -1010,8 +1010,8 @@
                     uncludeList.push(self.m_left_list[i]);
                 }
             }
-            // source line 881, bytecode pc 474
-            (i = (+i + 1));
+            // source line 881, bytecode pc 475
+            i++;
         }
     } else {
         // source line 892, bytecode pc 508
@@ -1023,8 +1023,8 @@
                 // source line 895, bytecode pc 632
                 uncludeList.push(self.m_left_list[i]);
             }
-            // source line 892, bytecode pc 646
-            (i = (+i + 1));
+            // source line 892, bytecode pc 647
+            i++;
         }
     }
     if ((uncludeList.length == 0)) {

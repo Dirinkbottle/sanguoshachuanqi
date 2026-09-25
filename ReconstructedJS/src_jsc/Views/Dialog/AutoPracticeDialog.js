@@ -124,8 +124,8 @@
         this[("m_choose_" + i)].setOnClickCallBack(this.onBtnClicked.bind(this));
         // source line 77, bytecode pc 781
         this.setChooseVisible(i, false);
-        // source line 75, bytecode pc 795
-        (i = (+i + 1));
+        // source line 75, bytecode pc 796
+        i++;
     }
     // source line 80, bytecode pc 826
     this.setChooseVisible(13, true);
@@ -249,8 +249,8 @@
             // source line 170, bytecode pc 64
             (_chooseStatus[i] = 0);
         }
-        // source line 164, bytecode pc 78
-        (i = (+i + 1));
+        // source line 164, bytecode pc 79
+        i++;
     }
     // source line 173, bytecode pc 95
     return _chooseStatus;

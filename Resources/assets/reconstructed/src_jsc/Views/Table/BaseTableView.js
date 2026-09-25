@@ -52,8 +52,8 @@
     while ((i < this.Cfg.modelTypes)) {
         // source line 62, bytecode pc 98
         xs.Utils.Notify.addObserver(this, this.refreshDataAndReload, this.Cfg.modelTypes[i]);
-        // source line 61, bytecode pc 112
-        (i = (+i + 1));
+        // source line 61, bytecode pc 113
+        i++;
     }
     // source line 65, bytecode pc 147
     this.refreshDataAndReload();
@@ -67,8 +67,8 @@
     while ((i < this.Cfg.modelTypes)) {
         // source line 75, bytecode pc 68
         xs.Utils.Notify.removeObserver(this, this.Cfg.modelTypes[i]);
-        // source line 74, bytecode pc 82
-        (i = (+i + 1));
+        // source line 74, bytecode pc 83
+        i++;
     }
     if (this.m_cell_cache_use) {
         for (var _i in this.m_cell_cache) {

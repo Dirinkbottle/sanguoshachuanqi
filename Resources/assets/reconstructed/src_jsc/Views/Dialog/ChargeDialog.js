@@ -111,8 +111,8 @@
         while ((i < 3)) {
             // source line 96, bytecode pc 848
             this.ccbNode.getChildByTag(this.cfg.vipGiftIcon[i].tag).setVisible(false);
-            // source line 95, bytecode pc 862
-            (i = (+i + 1));
+            // source line 95, bytecode pc 863
+            i++;
         }
         // source line 100, bytecode pc 917
         (hight_Vip = xs.Factorys.Sprite.create("Cmn01_Zuigaovip", "Cmn01"));
@@ -136,8 +136,8 @@
         while ((j < adds.length)) {
             // source line 126, bytecode pc 1310
             _adds.push(xs.Factorys.Add.createWithJson(adds[j]));
-            // source line 125, bytecode pc 1324
-            (j = (+j + 1));
+            // source line 125, bytecode pc 1325
+            j++;
         }
         // source line 129, bytecode pc 1396
         _adds.sort(xs.Tools.Sort.by(xs.Constant_SortType_AddList_Default));
@@ -153,8 +153,8 @@
                 // source line 137, bytecode pc 1557
                 this.ccbNode.getChildByTag(this.cfg.vipGiftIcon[i].tag).setVisible(false);
             }
-            // source line 131, bytecode pc 1571
-            (i = (+i + 1));
+            // source line 131, bytecode pc 1572
+            i++;
         }
     }
 },

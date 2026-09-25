@@ -124,8 +124,8 @@
                     }
                 }
             }
-            // source line 83, bytecode pc 306
-            (i = (+i + 1));
+            // source line 83, bytecode pc 307
+            i++;
         }
         // source line 94, bytecode pc 361
         (str = xs.Tools.String.createString("EquipmentMeltSucess"));
@@ -351,8 +351,8 @@
                         }
                     }
                 }
-                // source line 341, bytecode pc 2546
-                (i = (+i + 1));
+                // source line 341, bytecode pc 2547
+                i++;
             }
         }
         // source line 359, bytecode pc 2584

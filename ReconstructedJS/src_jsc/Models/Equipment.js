@@ -107,8 +107,8 @@
             // source line 126, bytecode pc 109
             _gemsIds.push(("" + _boreList[i].gem_id));
         }
-        // source line 124, bytecode pc 123
-        (i = (+i + 1));
+        // source line 124, bytecode pc 124
+        i++;
     }
     // source line 130, bytecode pc 146
     return _gemsIds;
@@ -134,8 +134,8 @@
         (_allGemsAttr = (_allGemsAttr + _attr));
         // source line 144, bytecode pc 190
         xs.log_xjf(("_allGemsAttr = " + _attr));
-        // source line 137, bytecode pc 204
-        (i = (+i + 1));
+        // source line 137, bytecode pc 205
+        i++;
     }
     // source line 147, bytecode pc 227
     return _allGemsAttr;
@@ -402,8 +402,8 @@
             (_gems = xs.Models.Gems.createWithBase(_gemsIds[i]));
             // source line 479, bytecode pc 281
             (_gemsAttr = (_gemsAttr + _gems.getAttrNaked(attrType)));
-            // source line 476, bytecode pc 295
-            (i = (+i + 1));
+            // source line 476, bytecode pc 296
+            i++;
         }
         // source line 481, bytecode pc 325
         (_ret = (_ret + _gemsAttr));

@@ -145,8 +145,8 @@
     }
     // source line 139, bytecode pc 34
     (this.m_data = this.m_modelsList[this.m_idex]);
-    // source line 140, bytecode pc 60
-    (this.m_idex = (+this.m_idex + 1));
+    // source line 140, bytecode pc 61
+    this.m_idex++;
     if ((this.m_idex >= this.m_modelsListLength)) {
         // source line 142, bytecode pc 87
         (this.m_idex = 0);
@@ -313,8 +313,8 @@ xs.Views.Mgr.registerDialog("GoddessAchievementDialog", { "class": xs.Views.Godd
             // source line 294, bytecode pc 887
             xs.Utils.Node.attachNodes(this.m_ccbNode, label, { desc: "lb", sc: true, offset: { x: (position.x + 20), y: position.y } });
         }
-        // source line 260, bytecode pc 901
-        (i = (+i + 1));
+        // source line 260, bytecode pc 902
+        i++;
     }
     // source line 304, bytecode pc 925
     return true;

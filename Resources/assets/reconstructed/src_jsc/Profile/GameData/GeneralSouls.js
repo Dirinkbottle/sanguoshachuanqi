@@ -76,8 +76,8 @@
             // source line 78, bytecode pc 86
             _ret.push(_tmp);
         }
-        // source line 74, bytecode pc 100
-        (i = (+i + 1));
+        // source line 74, bytecode pc 101
+        i++;
     }
     // source line 81, bytecode pc 123
     return _ret;
@@ -113,8 +113,8 @@
                 }
             }
         }
-        // source line 93, bytecode pc 260
-        (i = (+i + 1));
+        // source line 93, bytecode pc 261
+        i++;
     }
     // source line 111, bytecode pc 332
     _ret_1.sort(xs.Tools.Sort.by(xs.Constant_SortType_SortGrade));
@@ -140,8 +140,8 @@
             // source line 131, bytecode pc 87
             _ret.push(_tmp);
         }
-        // source line 126, bytecode pc 101
-        (i = (+i + 1));
+        // source line 126, bytecode pc 102
+        i++;
     }
     // source line 134, bytecode pc 124
     return _ret;
@@ -161,8 +161,8 @@
             // source line 143, bytecode pc 77
             (nums = _tmp.num);
         }
-        // source line 139, bytecode pc 91
-        (i = (+i + 1));
+        // source line 139, bytecode pc 92
+        i++;
     }
     // source line 146, bytecode pc 114
     return nums;

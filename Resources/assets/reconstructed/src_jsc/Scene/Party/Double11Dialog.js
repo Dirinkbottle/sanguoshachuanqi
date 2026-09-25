@@ -246,11 +246,11 @@
                     break;
                 }
             }
-            // source line 169, bytecode pc 608
-            (j = (+j + 1));
+            // source line 169, bytecode pc 609
+            j++;
         }
-        // source line 161, bytecode pc 641
-        (i = (+i + 1));
+        // source line 161, bytecode pc 642
+        i++;
     }
 },
     createStyleModel: function(type, id) {

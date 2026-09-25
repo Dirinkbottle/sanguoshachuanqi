@@ -253,8 +253,8 @@
         xs.Utils.replaceNodeWithOldNode(this.ccbNode, this[("spDonate" + cfgDonateInfo.data_id)], newSp);
         // source line 229, bytecode pc 438
         (this[("spDonate" + cfgDonateInfo.data_id)] = newSp);
-        // source line 219, bytecode pc 452
-        (i = (+i + 1));
+        // source line 219, bytecode pc 453
+        i++;
     }
     if ((donate_infoAll.is_donate == true)) {
         // source line 235, bytecode pc 501
@@ -286,8 +286,8 @@
 }));
         // source line 256, bytecode pc 232
         logs.push(logModel);
-        // source line 251, bytecode pc 246
-        (i = (+i + 1));
+        // source line 251, bytecode pc 247
+        i++;
     }
     // source line 258, bytecode pc 278
     (this.logTableView.arrayModel = null);

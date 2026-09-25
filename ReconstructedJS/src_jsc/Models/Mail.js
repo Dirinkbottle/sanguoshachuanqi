@@ -14,8 +14,8 @@ var JsonToString;
         while ((i < O.length)) {
             // source line 7, bytecode pc 102
             S.push(JsonToString(O[i]));
-            // source line 6, bytecode pc 116
-            (i = (+i + 1));
+            // source line 6, bytecode pc 117
+            i++;
         }
         // source line 8, bytecode pc 171
         (J = (("[" + S.join(",")) + "]"));
@@ -182,8 +182,8 @@ var JsonToString;
             // source line 143, bytecode pc 72
             dict.set(_pkid, data[i]);
         }
-        // source line 140, bytecode pc 86
-        (i = (+i - 1));
+        // source line 140, bytecode pc 87
+        i--;
     }
     // source line 147, bytecode pc 102
     return dict;
@@ -203,8 +203,8 @@ var JsonToString;
                     break;
                 }
             }
-            // source line 153, bytecode pc 99
-            (i = (+i - 1));
+            // source line 153, bytecode pc 100
+            i--;
         }
     }
     // source line 162, bytecode pc 115
@@ -239,8 +239,8 @@ var JsonToString;
                 }
             }
         }
-        // source line 170, bytecode pc 272
-        (i = (+i - 1));
+        // source line 170, bytecode pc 273
+        i--;
     }
     // source line 186, bytecode pc 321
     xs.log(((("_analyzeDataSystemOrPlayerFlag " + _systemMailnum) + ",") + _userMailnum));
@@ -274,8 +274,8 @@ var JsonToString;
                 (result = true);
             }
         }
-        // source line 196, bytecode pc 185
-        (i = (+i - 1));
+        // source line 196, bytecode pc 186
+        i--;
     }
     // source line 210, bytecode pc 224
     xs.dump("analyzeDataAndStorageOnDict ", dict);

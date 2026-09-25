@@ -162,8 +162,8 @@
             // source line 131, bytecode pc 81
             (totalExp = (totalExp + this.generals[i].getModel().getProCombatExp()));
         }
-        // source line 129, bytecode pc 95
-        (i = (+i + 1));
+        // source line 129, bytecode pc 96
+        i++;
     }
     // source line 134, bytecode pc 121
     return totalExp;
@@ -179,8 +179,8 @@
             // source line 142, bytecode pc 103
             (totalExp = (totalExp + (this.soulsClone[i].getModel().getProCombatExp() * this.soulsClone[i].getSelectNum())));
         }
-        // source line 139, bytecode pc 117
-        (i = (+i + 1));
+        // source line 139, bytecode pc 118
+        i++;
     }
     // source line 145, bytecode pc 143
     return totalExp;
@@ -332,8 +332,8 @@
                     break;
                 }
             }
-            // source line 248, bytecode pc 380
-            (i = (+i + 1));
+            // source line 248, bytecode pc 381
+            i++;
         }
         // source line 258, bytecode pc 407
         (i = 0);
@@ -345,8 +345,8 @@
                     break;
                 }
             }
-            // source line 258, bytecode pc 597
-            (i = (+i + 1));
+            // source line 258, bytecode pc 598
+            i++;
         }
         if ((combatUpgradScene_str != null)) {
             // source line 268, bytecode pc 646
@@ -401,8 +401,8 @@
             // source line 305, bytecode pc 126
             _gids.push(this.generals[i].getModel().getPkId());
         }
-        // source line 303, bytecode pc 140
-        (i = (+i + 1));
+        // source line 303, bytecode pc 141
+        i++;
     }
     // source line 309, bytecode pc 167
     (i = 0);
@@ -413,8 +413,8 @@
             // source line 312, bytecode pc 284
             _sidNums.push(this.soulsClone[i].getSelectNum());
         }
-        // source line 309, bytecode pc 298
-        (i = (+i + 1));
+        // source line 309, bytecode pc 299
+        i++;
     }
     if (((_gids.length === 0) && (_sids.length === 0))) {
         // source line 317, bytecode pc 353
@@ -455,8 +455,8 @@
                 // source line 352, bytecode pc 203
                 this.soulsClone[i].setSelectNum(this.getMaxNeedNum(this.soulsClone[i]));
             }
-            // source line 346, bytecode pc 217
-            (i = (+i + 1));
+            // source line 346, bytecode pc 218
+            i++;
         }
         // source line 355, bytecode pc 257
         this.soulTableView.refreshDataAndReload();
@@ -476,8 +476,8 @@
                     // source line 365, bytecode pc 473
                     this.generals[i].setSelectNum(this.getMaxNeedNum(this.generals[i]));
                 }
-                // source line 359, bytecode pc 487
-                (i = (+i + 1));
+                // source line 359, bytecode pc 488
+                i++;
             }
             // source line 368, bytecode pc 527
             this.generalTableView.refreshDataAndReload();
@@ -502,8 +502,8 @@
                 // source line 384, bytecode pc 149
                 this.soulsClone[i].addSelectNum();
             }
-            // source line 382, bytecode pc 163
-            (i = (+i + 1));
+            // source line 382, bytecode pc 164
+            i++;
         }
         // source line 387, bytecode pc 203
         this.soulTableView.refreshDataAndReload();
@@ -518,8 +518,8 @@
                     // source line 393, bytecode pc 340
                     this.generals[i].addSelectNum();
                 }
-                // source line 391, bytecode pc 354
-                (i = (+i + 1));
+                // source line 391, bytecode pc 355
+                i++;
             }
             // source line 396, bytecode pc 394
             this.generalTableView.refreshDataAndReload();
@@ -535,16 +535,16 @@
     while ((i < this.generals.length)) {
         // source line 405, bytecode pc 32
         this.generals[i].reset();
-        // source line 404, bytecode pc 46
-        (i = (+i + 1));
+        // source line 404, bytecode pc 47
+        i++;
     }
     // source line 408, bytecode pc 73
     (i = 0);
     while ((i < this.soulsClone.length)) {
         // source line 409, bytecode pc 101
         this.soulsClone[i].reset();
-        // source line 408, bytecode pc 115
-        (i = (+i + 1));
+        // source line 408, bytecode pc 116
+        i++;
     }
     if ((this.miniPageView.getCurSelPage() === 0)) {
         // source line 413, bytecode pc 179

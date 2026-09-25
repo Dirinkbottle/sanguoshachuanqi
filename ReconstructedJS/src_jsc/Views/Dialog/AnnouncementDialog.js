@@ -69,24 +69,24 @@
         // source line 47, bytecode pc 497
         (rowWidth = (rowWidth + fontsizeW));
         if (((mChar == "\n") || (mChar == "\r\n"))) {
-            // source line 51, bytecode pc 540
-            (strRowNum = (+strRowNum + 1));
+            // source line 51, bytecode pc 541
+            strRowNum++;
             // source line 52, bytecode pc 546
             (rowWidth = 0);
         }
         if ((rowWidth > labelWidth)) {
-            // source line 55, bytecode pc 572
-            (strRowNum = (+strRowNum + 1));
+            // source line 55, bytecode pc 573
+            strRowNum++;
             // source line 56, bytecode pc 578
             (rowWidth = 0);
-            // source line 57, bytecode pc 607
-            (i = (+i - 1));
+            // source line 57, bytecode pc 608
+            i--;
         }
-        // source line 42, bytecode pc 637
-        (i = (+i + 1));
+        // source line 42, bytecode pc 638
+        i++;
     }
-    // source line 61, bytecode pc 672
-    (strRowNum = (+strRowNum + 1));
+    // source line 61, bytecode pc 673
+    strRowNum++;
     // source line 62, bytecode pc 678
     (newLabelHeight = 0);
     if ((strRowNum != 0)) {

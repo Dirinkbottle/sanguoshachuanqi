@@ -138,8 +138,8 @@
         (data = this.m_dataSource[i]);
         // source line 105, bytecode pc 39
         data.updateCloseTime();
-        // source line 103, bytecode pc 53
-        (i = (+i + 1));
+        // source line 103, bytecode pc 54
+        i++;
     }
     // source line 108, bytecode pc 113
     xs.Utils.Notify.postNotification(xs.Constant_Notify_Store_CloseTimeUpdate);

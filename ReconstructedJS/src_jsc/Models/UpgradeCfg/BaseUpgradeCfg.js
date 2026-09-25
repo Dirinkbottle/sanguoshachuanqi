@@ -111,8 +111,8 @@
             // source line 136, bytecode pc 96
             (num_total = (num_total + xs.Utils.parseFloatSafe(_arr_obj[i].num)));
         }
-        // source line 135, bytecode pc 110
-        (i = (+i + 1));
+        // source line 135, bytecode pc 111
+        i++;
     }
     // source line 140, bytecode pc 133
     return num_total;

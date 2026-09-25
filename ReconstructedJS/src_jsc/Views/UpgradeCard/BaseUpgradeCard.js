@@ -151,8 +151,8 @@
             actionArray.push(delayTime);
             // source line 129, bytecode pc 185
             (from = 0);
-            // source line 130, bytecode pc 199
-            (overTimes = (+overTimes - 1));
+            // source line 130, bytecode pc 200
+            overTimes--;
         }
     } else {
         while ((overTimes < 0)) {
@@ -170,8 +170,8 @@
             actionArray.push(delayTime);
             // source line 140, bytecode pc 411
             (from = 100);
-            // source line 141, bytecode pc 425
-            (overTimes = (+overTimes + 1));
+            // source line 141, bytecode pc 426
+            overTimes++;
         }
     }
     // source line 144, bytecode pc 502
@@ -218,8 +218,8 @@
     var actionArray, to1, to2;
     // source line 180, bytecode pc 9
     (this.bAdd = bAdd);
-    // source line 181, bytecode pc 35
-    (this.actionTimes = (+this.actionTimes - 1));
+    // source line 181, bytecode pc 36
+    this.actionTimes--;
     // source line 182, bytecode pc 45
     (actionArray = []);
     if (bAdd) {
@@ -317,8 +317,8 @@
     // source line 289, bytecode pc 274
     this.self.armEat.playAniById("eatCardFinish", { loop: false, speed: 1 });
 }.bind({ self: this, _particle: particle }))));
-        // source line 265, bytecode pc 318
-        (i = (+i + 1));
+        // source line 265, bytecode pc 319
+        i++;
     }
 },
     setCardScale: function(scale) {
@@ -390,8 +390,8 @@
             (percentage = Math.floor(percentage));
             break;
         }
-        // source line 328, bytecode pc 584
-        (i = (+i + 1));
+        // source line 328, bytecode pc 585
+        i++;
     }
     // source line 351, bytecode pc 625
     xs.log(("updateExp percentage:" + percentage));

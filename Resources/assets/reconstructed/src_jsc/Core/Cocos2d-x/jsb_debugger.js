@@ -50,8 +50,8 @@ var debugObject;
                 (tmpScript = scripts[n]);
                 break;
             }
-            // source line 20, bytecode pc 235
-            (n = (+n + 1));
+            // source line 20, bytecode pc 236
+            n++;
         }
         if ((off >= 0)) {
             // source line 29, bytecode pc 289
@@ -648,8 +648,8 @@ var debugObject;
                 }
             }
         }
-        // source line 516, bytecode pc 488
-        (i = (+i + 1));
+        // source line 516, bytecode pc 489
+        i++;
     }
 });
 // source line 552, bytecode pc 580

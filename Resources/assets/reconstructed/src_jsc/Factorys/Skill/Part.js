@@ -297,17 +297,17 @@
                                         _SpawnArray.push(_itemAction);
                                     }
                                 }
-                                // source line 245, bytecode pc 2470
-                                (_no = (+_no + 1));
+                                // source line 245, bytecode pc 2471
+                                _no++;
                             }
-                            // source line 241, bytecode pc 2498
-                            (_mo = (+_mo + 1));
+                            // source line 241, bytecode pc 2499
+                            _mo++;
                         }
-                        // source line 235, bytecode pc 2526
-                        (_n = (+_n + 1));
+                        // source line 235, bytecode pc 2527
+                        _n++;
                     }
-                    // source line 229, bytecode pc 2554
-                    (_m = (+_m + 1));
+                    // source line 229, bytecode pc 2555
+                    _m++;
                 }
             }
         }
@@ -324,20 +324,18 @@
     while ((i < this.length)) {
         // source line 342, bytecode pc 27
         this[i].release();
-        // source line 343, bytecode pc 76
-        (xs.tmpCount = (+xs.tmpCount - 1));
         // source line 343, bytecode pc 81
-        xs.log("xs.tmpCount", +xs.tmpCount);
-        // source line 340, bytecode pc 95
-        (i = (+i + 1));
+        xs.log("xs.tmpCount", xs.tmpCount--);
+        // source line 340, bytecode pc 96
+        i++;
     }
 }.bind(listenersArrAll), xs.unuse_this)
 ]));
         }
         // source line 353, bytecode pc 2744
         _loopActions.push(_actionActions);
-        // source line 147, bytecode pc 2758
-        (_loop_i = (+_loop_i + 1));
+        // source line 147, bytecode pc 2759
+        _loop_i++;
     }
     // source line 361, bytecode pc 2795
     (_cfgPart = (_cfgPart || {}));
@@ -351,8 +349,8 @@
         while ((i < _loopActions.length)) {
             // source line 376, bytecode pc 2953
             _tmpActions.push(xs.Utils.Action.combineSequence([ cc.DelayTime.create(((_property.delaySpawn * i) * baseDuration)), _loopActions[i] ]));
-            // source line 371, bytecode pc 2967
-            (i = (+i + 1));
+            // source line 371, bytecode pc 2968
+            i++;
         }
         // source line 382, bytecode pc 3020
         (_ret = xs.Utils.Action.combineSpawn(_tmpActions));
@@ -377,8 +375,8 @@
             (_tmp = pre[i]);
             // source line 408, bytecode pc 79
             this.onEvent(input, _tmp, para);
-            // source line 406, bytecode pc 93
-            (i = (+i + 1));
+            // source line 406, bytecode pc 94
+            i++;
         }
     }
     // source line 411, bytecode pc 137

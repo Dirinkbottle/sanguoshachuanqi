@@ -19,16 +19,16 @@
         while ((i < _tmpJuanZHou.length)) {
             // source line 25, bytecode pc 190
             this._allCloneData.push(xs.Models.ShowData.create(_tmpJuanZHou[i]));
-            // source line 24, bytecode pc 204
-            (i = (+i + 1));
+            // source line 24, bytecode pc 205
+            i++;
         }
         // source line 27, bytecode pc 228
         (i = 0);
         while ((i < _tmpData.length)) {
             // source line 28, bytecode pc 287
             this._allCloneData.push(xs.Models.ShowData.create(_tmpData[i]));
-            // source line 27, bytecode pc 301
-            (i = (+i + 1));
+            // source line 27, bytecode pc 302
+            i++;
         }
         // source line 31, bytecode pc 363
         (this.arrayModel = xs.Views.Table.changeDimensionsOneToTwo(this._allCloneData, 4));
@@ -80,8 +80,8 @@
             // source line 74, bytecode pc 89
             (posArray = posArray.concat(cell.getSelectIconPosArray()));
         }
-        // source line 70, bytecode pc 103
-        (i = (+i + 1));
+        // source line 70, bytecode pc 104
+        i++;
     }
     // source line 78, bytecode pc 129
     return posArray;
@@ -137,11 +137,11 @@
                     return void 0;
                 }
             }
-            // source line 91, bytecode pc 563
-            (j = (+j + 1));
+            // source line 91, bytecode pc 564
+            j++;
         }
-        // source line 88, bytecode pc 603
-        (i = (+i + 1));
+        // source line 88, bytecode pc 604
+        i++;
     }
 },
     setAllGoldBeSelected: function() {
@@ -195,11 +195,11 @@
                     return void 0;
                 }
             }
-            // source line 166, bytecode pc 563
-            (j = (+j + 1));
+            // source line 166, bytecode pc 564
+            j++;
         }
-        // source line 163, bytecode pc 603
-        (i = (+i + 1));
+        // source line 163, bytecode pc 604
+        i++;
     }
 },
     setAllJuanZhouBeSelected: function() {
@@ -255,11 +255,11 @@
                     return void 0;
                 }
             }
-            // source line 237, bytecode pc 623
-            (j = (+j + 1));
+            // source line 237, bytecode pc 624
+            j++;
         }
-        // source line 234, bytecode pc 663
-        (i = (+i + 1));
+        // source line 234, bytecode pc 664
+        i++;
     }
 },
     setAllGodBookBeSelected: function() {
@@ -304,11 +304,11 @@
                     return void 0;
                 }
             }
-            // source line 290, bytecode pc 412
-            (j = (+j + 1));
+            // source line 290, bytecode pc 413
+            j++;
         }
-        // source line 287, bytecode pc 452
-        (i = (+i + 1));
+        // source line 287, bytecode pc 453
+        i++;
     }
 },
     selectMaxLength: function(i, j) {

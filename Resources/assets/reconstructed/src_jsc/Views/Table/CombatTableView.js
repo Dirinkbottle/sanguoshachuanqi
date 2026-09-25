@@ -41,13 +41,13 @@
                 // source line 42, bytecode pc 139
                 _array.push(this.arrayTemp[((i * 4) + j)]);
             }
-            // source line 40, bytecode pc 153
-            (j = (+j + 1));
+            // source line 40, bytecode pc 154
+            j++;
         }
         // source line 45, bytecode pc 180
         (this.arrayModel[i] = _array);
-        // source line 38, bytecode pc 194
-        (i = (+i + 1));
+        // source line 38, bytecode pc 195
+        i++;
     }
 },
     onSortChg: function(sortedData) {
@@ -92,8 +92,8 @@
             // source line 84, bytecode pc 103
             (posArray = posArray.concat(cell.getSelectIconPosArray()));
         }
-        // source line 81, bytecode pc 117
-        (i = (+i + 1));
+        // source line 81, bytecode pc 118
+        i++;
     }
     // source line 87, bytecode pc 143
     return posArray;

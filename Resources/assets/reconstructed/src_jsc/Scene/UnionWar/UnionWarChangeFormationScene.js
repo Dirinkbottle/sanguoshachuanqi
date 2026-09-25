@@ -79,8 +79,8 @@
         xs.Utils.Node.attachNodes(this, headView, { desc: "lb", offset: { x: offset_x, y: offset_y }, sc: true });
         // source line 73, bytecode pc 883
         this.m_arrPlayerHeadViews.push(headView);
-        // source line 60, bytecode pc 897
-        (i = (+i + 1));
+        // source line 60, bytecode pc 898
+        i++;
     }
     // source line 76, bytecode pc 964
     (this.m_saveBtn = xs.Views.Btn.createByStyleId("BS_Btn1"));
@@ -130,8 +130,8 @@
                 (isHave = true);
                 break;
             }
-            // source line 106, bytecode pc 189
-            (j = (+j + 1));
+            // source line 106, bytecode pc 190
+            j++;
         }
         if (!isHave) {
             // source line 115, bytecode pc 241
@@ -141,8 +141,8 @@
         this.m_arrPlayerHeadViews[i].setIdx(i);
         // source line 118, bytecode pc 289
         this.m_arrPlayerHeadViews[i].refreshView();
-        // source line 104, bytecode pc 303
-        (i = (+i + 1));
+        // source line 104, bytecode pc 304
+        i++;
     }
 },
     onInnerBtnClicked: function(curPlayerData, curIdx) {
@@ -281,8 +281,8 @@
     while ((i < this.m_arrPlayerHeadViews.length)) {
         // source line 255, bytecode pc 210
         this.m_arrPlayerHeadViews[i].setBaseTouchPriority((this.m_baseTouchPriority + xs.Cfg.Scene.UnionWar.m_playerHeadView.priority));
-        // source line 253, bytecode pc 224
-        (i = (+i + 1));
+        // source line 253, bytecode pc 225
+        i++;
     }
 },
     ccbTitleCfg: [

@@ -246,8 +246,8 @@
     map_id: _source[i].map_id,
     pkid: _source[i].param_value
 }));
-        // source line 170, bytecode pc 329
-        (i = (+i + 1));
+        // source line 170, bytecode pc 330
+        i++;
     }
     // source line 182, bytecode pc 432
     this._SourceScrollView.addChildrenView(xs.DetailDialogComponent.createDStyleD({ titleText: xs.Tools.String.createString("auto_name_378") }));
@@ -273,8 +273,8 @@
     // source line 196, bytecode pc 70
     return _this.createCell(_cellData);
 }.bind([ this, general[i] ]));
-            // source line 189, bytecode pc 624
-            (i = (+i + 1));
+            // source line 189, bytecode pc 625
+            i++;
         }
         // source line 199, bytecode pc 680
         (general = xs.Views.Table.changeDimensionsOneToTwo(general, 4));
@@ -302,8 +302,8 @@
                 }
                 // source line 226, bytecode pc 1195
                 this._EffectScrollView.addChildrenView(xs.DetailDialogComponent.createEStyleGemsEqu({ gemsData: _gemsData, bore_sprite: this._equipData.getBoreSpriteNameByType(mHoleDate.bore_type) }));
-                // source line 216, bytecode pc 1209
-                (mHoleIdx = (+mHoleIdx - 1));
+                // source line 216, bytecode pc 1210
+                mHoleIdx--;
             }
             // source line 233, bytecode pc 1305
             this._EffectScrollView.addChildrenView(xs.DetailDialogComponent.createDStyleD({ titleText: xs.Tools.String.createString("gems_str_for_equDetails") }));

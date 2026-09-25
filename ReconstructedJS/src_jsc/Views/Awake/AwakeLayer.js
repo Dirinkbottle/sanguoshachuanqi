@@ -204,14 +204,14 @@
     (grade = null);
     if ((sub_level == 7)) {
         if ((level != 7)) {
-            // source line 186, bytecode pc 40
-            (level = (+level + 1));
+            // source line 186, bytecode pc 41
+            level++;
             // source line 187, bytecode pc 46
             (sub_level = 1);
         }
     } else {
-        // source line 191, bytecode pc 65
-        (sub_level = (+sub_level + 1));
+        // source line 191, bytecode pc 66
+        sub_level++;
     }
     // source line 195, bytecode pc 92
     (grade = { level: level, sub_level: sub_level });
@@ -299,8 +299,8 @@
             (EquipmentPieceNum = this.arrayPieces[i].num);
             break;
         }
-        // source line 265, bytecode pc 415
-        (i = (+i + 1));
+        // source line 265, bytecode pc 416
+        i++;
     }
     // source line 273, bytecode pc 451
     (this.m_haveArray[idex] = EquipmentPieceNum);
@@ -360,8 +360,8 @@
             (EquipmentPieceNum = this.arraySouls[i].num);
             break;
         }
-        // source line 321, bytecode pc 509
-        (i = (+i + 1));
+        // source line 321, bytecode pc 510
+        i++;
     }
     // source line 329, bytecode pc 545
     (this.m_haveArray[idex] = EquipmentPieceNum);
@@ -442,8 +442,8 @@
     while ((i < 2)) {
         // source line 403, bytecode pc 329
         this.switchCreateIcon(info[0].item_list[i.toString()], i);
-        // source line 402, bytecode pc 343
-        (i = (+i + 1));
+        // source line 402, bytecode pc 344
+        i++;
     }
     if ((this.m_fixSubLevel == 8)) {
         // source line 407, bytecode pc 395
@@ -475,8 +475,8 @@
         (starBtn = xs.Views.Btn.createInvisibleWithParent(this.m_darkStars[i]));
         // source line 427, bytecode pc 266
         starBtn.setOnClickCallBack(this.ClickStarCallback.bind({ self: this, tag: (i + 1) }));
-        // source line 415, bytecode pc 280
-        (i = (+i + 1));
+        // source line 415, bytecode pc 281
+        i++;
     }
 },
     updateStars: function() {
@@ -486,8 +486,8 @@
     while ((i < 7)) {
         // source line 434, bytecode pc 34
         this.m_lightStars[i].setVisible(true);
-        // source line 433, bytecode pc 48
-        (i = (+i + 1));
+        // source line 433, bytecode pc 49
+        i++;
     }
     // source line 437, bytecode pc 66
     (i = 0);
@@ -496,8 +496,8 @@
             // source line 439, bytecode pc 113
             this.m_lightStars[i].setVisible(false);
         }
-        // source line 437, bytecode pc 127
-        (i = (+i + 1));
+        // source line 437, bytecode pc 128
+        i++;
     }
     if ((this.m_fixSubLevel == 8)) {
         // source line 444, bytecode pc 159
@@ -505,8 +505,8 @@
         while ((i < 7)) {
             // source line 445, bytecode pc 189
             this.m_lightStars[i].setVisible(true);
-            // source line 444, bytecode pc 203
-            (i = (+i + 1));
+            // source line 444, bytecode pc 204
+            i++;
         }
     }
 },
@@ -527,8 +527,8 @@
     while ((i < 2)) {
         // source line 459, bytecode pc 202
         self.switchCreateIcon(info[0].item_list[i.toString()], i);
-        // source line 458, bytecode pc 216
-        (i = (+i + 1));
+        // source line 458, bytecode pc 217
+        i++;
     }
     if ((tag != self.m_fixSubLevel)) {
         // source line 463, bytecode pc 268
@@ -546,11 +546,11 @@
     (i = 0);
     while ((i < 2)) {
         if ((this.m_haveArray[i] >= this.m_conditionArray[i])) {
-            // source line 477, bytecode pc 55
-            (conditionNum = (+conditionNum + 1));
+            // source line 477, bytecode pc 56
+            conditionNum++;
         }
-        // source line 473, bytecode pc 70
-        (i = (+i + 1));
+        // source line 473, bytecode pc 71
+        i++;
     }
     if ((conditionNum == 2)) {
         // source line 496, bytecode pc 216

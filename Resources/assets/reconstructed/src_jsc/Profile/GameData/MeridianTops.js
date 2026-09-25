@@ -28,8 +28,8 @@
             // source line 24, bytecode pc 36
             (_bool = false);
         }
-        // source line 22, bytecode pc 50
-        (i = (+i + 1));
+        // source line 22, bytecode pc 51
+        i++;
     }
     // source line 27, bytecode pc 73
     return _bool;
@@ -61,8 +61,8 @@
                 // source line 45, bytecode pc 318
                 _data.push(meridianTopModel);
             }
-            // source line 35, bytecode pc 332
-            (i = (+i + 1));
+            // source line 35, bytecode pc 333
+            i++;
         }
         // source line 48, bytecode pc 355
         return _data;
@@ -85,8 +85,8 @@
                 // source line 58, bytecode pc 527
                 list_2.push(_obj_list[i]);
             }
-            // source line 54, bytecode pc 541
-            (i = (+i + 1));
+            // source line 54, bytecode pc 542
+            i++;
         }
         // source line 61, bytecode pc 578
         (teamGeneralModels = teamModels.getGeneralsInTeam());
@@ -116,8 +116,8 @@
                         (idx = j);
                         break;
                     }
-                    // source line 75, bytecode pc 858
-                    (j = (+j + 1));
+                    // source line 75, bytecode pc 859
+                    j++;
                 }
                 if (_bool) {
                     // source line 84, bytecode pc 908
@@ -127,8 +127,8 @@
                     list_3.push(meridianModels);
                 }
             }
-            // source line 62, bytecode pc 946
-            (i = (+i + 1));
+            // source line 62, bytecode pc 947
+            i++;
         }
         // source line 91, bytecode pc 987
         (list_3 = list_3.concat(list_2));
@@ -147,8 +147,8 @@
             // source line 101, bytecode pc 61
             return _obj_list[i];
         }
-        // source line 99, bytecode pc 75
-        (i = (+i + 1));
+        // source line 99, bytecode pc 76
+        i++;
     }
     // source line 104, bytecode pc 96
     return null;

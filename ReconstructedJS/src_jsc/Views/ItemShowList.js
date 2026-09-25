@@ -254,8 +254,8 @@
             // source line 232, bytecode pc 140
             this.setChildTouchPriority(_childsTmp[j], priority);
         }
-        // source line 224, bytecode pc 154
-        (j = (+j + 1));
+        // source line 224, bytecode pc 155
+        j++;
     }
 },
     scrollViewDidScroll: function() {

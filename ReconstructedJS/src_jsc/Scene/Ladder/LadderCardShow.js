@@ -123,8 +123,8 @@
             // source line 155, bytecode pc 716
             this.updateFocusView(cardModel);
         }
-        // source line 116, bytecode pc 730
-        (i = (+i + 1));
+        // source line 116, bytecode pc 731
+        i++;
     }
 },
     updateFocusView: function(model) {
@@ -431,8 +431,8 @@
         }
         // source line 462, bytecode pc 521
         this.cardViews[index].setZOrder(targetArea.zOrder);
-        // source line 450, bytecode pc 535
-        (i = (+i + 1));
+        // source line 450, bytecode pc 536
+        i++;
     }
     // source line 466, bytecode pc 663
     this.runAction(cc.Sequence.create(cc.DelayTime.create(this.moveDuration), cc.CallFunc.create(this.moveEnd.bind(this))));
@@ -444,8 +444,8 @@
         // source line 471, bytecode pc 766
         (this.startCardViewIndex = ((this.startCardViewIndex = (+this.startCardViewIndex + 1)) % this.cardCount));
         if ((this.startDataIndex < this.startDataIndexMax)) {
-            // source line 473, bytecode pc 810
-            (this.startDataIndex = (+this.startDataIndex + 1));
+            // source line 473, bytecode pc 811
+            this.startDataIndex++;
         }
     } else {
         if ((this.startCardViewIndex > 0)) {
@@ -456,8 +456,8 @@
             (this.startCardViewIndex = (this.cardViews.length - 1));
         }
         if ((this.startDataIndex > this.startDataIndexMin)) {
-            // source line 483, bytecode pc 933
-            (this.startDataIndex = (+this.startDataIndex - 1));
+            // source line 483, bytecode pc 934
+            this.startDataIndex--;
         }
     }
     // source line 486, bytecode pc 964

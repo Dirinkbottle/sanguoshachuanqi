@@ -157,8 +157,8 @@
             // source line 173, bytecode pc 1661
             this[("m_general_head" + i)].setVisible(false);
         }
-        // source line 129, bytecode pc 1675
-        (i = (+i + 1));
+        // source line 129, bytecode pc 1676
+        i++;
     }
     // source line 184, bytecode pc 1715
     this.m_btnExit.addCallBackForEvent(this, this.exitCallBack);
@@ -191,8 +191,8 @@
         xs.log("ooobb", objList[i]);
         // source line 216, bytecode pc 66
         this[objList[i]].setZOrder(mNum);
-        // source line 214, bytecode pc 80
-        (i = (+i + 1));
+        // source line 214, bytecode pc 81
+        i++;
     }
 },
     onCountDown: function() {
@@ -253,8 +253,8 @@
             // source line 287, bytecode pc 115
             this[("_mIconBtn" + i)].setTouchPriority((this.m_baseTouchPriority - 1));
         }
-        // source line 285, bytecode pc 129
-        (i = (+i + 1));
+        // source line 285, bytecode pc 130
+        i++;
     }
 }
 }));

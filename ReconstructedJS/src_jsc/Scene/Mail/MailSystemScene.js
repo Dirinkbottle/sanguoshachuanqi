@@ -144,8 +144,8 @@
                 }
             }
         }
-        // source line 125, bytecode pc 421
-        (i = (+i + 1));
+        // source line 125, bytecode pc 422
+        i++;
     }
 }
 }));

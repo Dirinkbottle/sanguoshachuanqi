@@ -111,8 +111,8 @@
                 default:
                 break;
             }
-            // source line 87, bytecode pc 383
-            (i = (+i + 1));
+            // source line 87, bytecode pc 384
+            i++;
         }
         // source line 110, bytecode pc 430
         (this.worldMsgQueue = this.worldMsgQueue.concat(tmpWorldArray));

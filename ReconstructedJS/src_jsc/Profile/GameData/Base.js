@@ -64,8 +64,8 @@
             // source line 80, bytecode pc 111
             return false;
         }
-        // source line 71, bytecode pc 125
-        (i = (+i + 1));
+        // source line 71, bytecode pc 126
+        i++;
     }
     // source line 83, bytecode pc 158
     (_ret = true);
@@ -83,8 +83,8 @@
         (_key = keys[i]);
         // source line 95, bytecode pc 46
         (_root = _root[_key]);
-        // source line 93, bytecode pc 60
-        (i = (+i + 1));
+        // source line 93, bytecode pc 61
+        i++;
     }
     // source line 100, bytecode pc 92
     return _root;
@@ -121,8 +121,8 @@
         }
         // source line 125, bytecode pc 171
         (_root = _root[_key]);
-        // source line 117, bytecode pc 185
-        (i = (+i + 1));
+        // source line 117, bytecode pc 186
+        i++;
     }
 },
     getByPkId: function(pk_id) {
@@ -191,8 +191,8 @@
             // source line 191, bytecode pc 122
             _rs_obj.push(_arr_equipment_all[i]);
         }
-        // source line 189, bytecode pc 136
-        (i = (+i + 1));
+        // source line 189, bytecode pc 137
+        i++;
     }
     if (need_sort) {
         // source line 196, bytecode pc 212
@@ -225,8 +225,8 @@
         (temp = _arr_general_all[i].Clone());
         // source line 219, bytecode pc 76
         _rs_obj.push(temp);
-        // source line 217, bytecode pc 90
-        (i = (+i + 1));
+        // source line 217, bytecode pc 91
+        i++;
     }
     // source line 221, bytecode pc 113
     return _rs_obj;
@@ -242,8 +242,8 @@
             // source line 229, bytecode pc 55
             return true;
         }
-        // source line 227, bytecode pc 69
-        (i = (+i + 1));
+        // source line 227, bytecode pc 70
+        i++;
     }
     // source line 232, bytecode pc 90
     return false;
@@ -267,8 +267,8 @@
                 // source line 247, bytecode pc 170
                 (this[_class_name] = xs.Profile.GameData[_class_name].create(this._cacheParam));
             }
-            // source line 241, bytecode pc 184
-            (i = (+i + 1));
+            // source line 241, bytecode pc 185
+            i++;
         }
     }
     // source line 255, bytecode pc 227
@@ -294,8 +294,8 @@
                 // source line 283, bytecode pc 177
                 _temp.push(_arr_equipment_all[i]);
             }
-            // source line 281, bytecode pc 191
-            (i = (+i + 1));
+            // source line 281, bytecode pc 192
+            i++;
         }
         // source line 286, bytecode pc 217
         (_arr_equipment_all = _temp);
@@ -308,8 +308,8 @@
         while ((j < params.add.length)) {
             // source line 292, bytecode pc 310
             _arr_equipment_all.push(this.getByPkId(params.add[j]));
-            // source line 291, bytecode pc 324
-            (j = (+j + 1));
+            // source line 291, bytecode pc 325
+            j++;
         }
     }
     if (!xs.Utils.isEmpty(params.upd)) {

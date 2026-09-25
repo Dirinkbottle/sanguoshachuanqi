@@ -158,8 +158,8 @@
             }
             // source line 135, bytecode pc 330
             _elite_list.push({ _data: _point_obj, _bool: false });
-            // source line 121, bytecode pc 344
-            (j = (+j + 1));
+            // source line 121, bytecode pc 345
+            j++;
         }
         // source line 143, bytecode pc 422
         (_point_obj = xs.Models.MagicalEquPoint.createWithJson({ is_normal: false, step: i, sub_step: 1, magical_id: magicalId }));
@@ -171,8 +171,8 @@
             // source line 152, bytecode pc 513
             _elite_list.push({ _data: _point_obj, _bool: false });
         }
-        // source line 113, bytecode pc 527
-        (i = (+i + 1));
+        // source line 113, bytecode pc 528
+        i++;
     }
     // source line 158, bytecode pc 544
     return _elite_list;

@@ -50,8 +50,8 @@
 },
     addSelectNum: function() {
     if (this.isAddSelectNumAble()) {
-        // source line 59, bytecode pc 42
-        (this.selectNum = (+this.selectNum + 1));
+        // source line 59, bytecode pc 43
+        this.selectNum++;
     } else {
         // source line 62, bytecode pc 71
         xs.warn("use isAddSelectNumAble before addSelectNum");
@@ -59,8 +59,8 @@
 },
     subSelectNum: function() {
     if (this.isSubSelectNumAble()) {
-        // source line 70, bytecode pc 42
-        (this.selectNum = (+this.selectNum - 1));
+        // source line 70, bytecode pc 43
+        this.selectNum--;
     } else {
         // source line 73, bytecode pc 71
         xs.warn("use isSubSelectNumAble before subSelectNum");

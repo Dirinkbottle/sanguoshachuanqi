@@ -459,8 +459,8 @@
     use: function() {
     // source line 449, bytecode pc 18
     this.error("use error");
-    // source line 453, bytecode pc 44
-    (this.item_num = (+this.item_num - 1));
+    // source line 453, bytecode pc 45
+    this.item_num--;
     if ((this.item_num < 0)) {
         // source line 455, bytecode pc 66
         (this.item_num = 0);

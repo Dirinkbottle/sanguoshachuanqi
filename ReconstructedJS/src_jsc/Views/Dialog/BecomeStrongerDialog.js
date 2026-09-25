@@ -161,8 +161,8 @@
             // source line 60, bytecode pc 541
             this.m_dataList.push(this._data[i]);
         }
-        // source line 58, bytecode pc 555
-        (i = (+i + 1));
+        // source line 58, bytecode pc 556
+        i++;
     }
     // source line 65, bytecode pc 632
     (this.m_tableView = cc.TableView.create(this, cc.size(895, 506)));

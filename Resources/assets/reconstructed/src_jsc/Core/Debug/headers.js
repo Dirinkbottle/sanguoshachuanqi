@@ -52,8 +52,8 @@
         }
         // source line 52, bytecode pc 129
         (fun = fun.arguments.callee.caller);
-        // source line 54, bytecode pc 143
-        (count = (+count + 1));
+        // source line 54, bytecode pc 144
+        count++;
     } while (fun);
     // source line 58, bytecode pc 156
     return _ret;

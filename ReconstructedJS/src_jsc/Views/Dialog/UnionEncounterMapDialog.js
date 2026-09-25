@@ -206,8 +206,8 @@
         (mMiaoshuStr = (this.ccbNode_time.getChildByTag((30 + i)).getString() || ""));
         // source line 199, bytecode pc 636
         xs.Utils.UI.replaceCcbByCfg(this.ccbNode_time, [ { tag: (30 + i), type: "ls", id: lsMiaoshu, string: mMiaoshuStr } ], this);
-        // source line 179, bytecode pc 650
-        (i = (+i + 1));
+        // source line 179, bytecode pc 651
+        i++;
     }
 },
     _getIdList: function(othList) {
@@ -225,8 +225,8 @@
             // source line 215, bytecode pc 76
             mList.push(mUnionId);
         }
-        // source line 209, bytecode pc 90
-        (i = (+i + 1));
+        // source line 209, bytecode pc 91
+        i++;
     }
     // source line 218, bytecode pc 113
     return mList;
@@ -291,8 +291,8 @@
     while ((mTagIdx < maxWinTagList.length)) {
         // source line 277, bytecode pc 149
         this._setNewUnionWarWinWire(maxWinTagList[mTagIdx]);
-        // source line 276, bytecode pc 163
-        (mTagIdx = (+mTagIdx + 1));
+        // source line 276, bytecode pc 164
+        mTagIdx++;
     }
 },
     _setUnionWireByTag_newWar: function(mTag) {
@@ -373,8 +373,8 @@
             // source line 359, bytecode pc 58
             return true;
         }
-        // source line 354, bytecode pc 72
-        (mTagIdx = (+mTagIdx + 1));
+        // source line 354, bytecode pc 73
+        mTagIdx++;
     }
     // source line 362, bytecode pc 96
     return false;
@@ -387,8 +387,8 @@
         while ((mTagIdx < this.newWarList.length)) {
             // source line 371, bytecode pc 45
             this._setLoopUnionWin(this.newWarList[mTagIdx]);
-            // source line 370, bytecode pc 59
-            (mTagIdx = (+mTagIdx + 1));
+            // source line 370, bytecode pc 60
+            mTagIdx++;
         }
     } else {
         // source line 375, bytecode pc 88
@@ -404,8 +404,8 @@
         (tag = tagList[tagIdx]);
         // source line 386, bytecode pc 38
         this._setUnionWireByTag(tag);
-        // source line 382, bytecode pc 52
-        (tagIdx = (+tagIdx + 1));
+        // source line 382, bytecode pc 53
+        tagIdx++;
     }
 },
     _getMaxTagList: function(mUnionWinWireList) {
@@ -663,8 +663,8 @@
                 this.winTagList.push(this._findParentForTag(leftTag));
             }
         }
-        // source line 526, bytecode pc 1334
-        (i = (+i + 1));
+        // source line 526, bytecode pc 1335
+        i++;
     }
     if ((maxLoop > 1)) {
         // source line 643, bytecode pc 1400
@@ -742,8 +742,8 @@
             // source line 708, bytecode pc 129
             mList.push(mChildList[i]);
         }
-        // source line 703, bytecode pc 143
-        (i = (+i + 1));
+        // source line 703, bytecode pc 144
+        i++;
     }
     // source line 712, bytecode pc 166
     return mList;
@@ -791,8 +791,8 @@
         mServer.setString("");
         // source line 746, bytecode pc 886
         mName.setString("");
-        // source line 720, bytecode pc 900
-        (i = (+i + 1));
+        // source line 720, bytecode pc 901
+        i++;
     }
 },
     _setUnionElement: function(mNode, mUnionObj) {
@@ -904,8 +904,8 @@
     while ((i < mChildList.length)) {
         // source line 861, bytecode pc 58
         mChildList[i].setVisible(false);
-        // source line 860, bytecode pc 72
-        (i = (+i + 1));
+        // source line 860, bytecode pc 73
+        i++;
     }
 },
     _initializeBtn: function() {
@@ -921,8 +921,8 @@
         xs.Utils.UI.replaceCcbByCfg(this.ccbNode, [ { tag: mTag, type: "btn", id: "Btn_Spectators" } ], this);
         // source line 882, bytecode pc 173
         this.ccbNode.getChildByTag(mTag).setVisible(false);
-        // source line 873, bytecode pc 187
-        (i = (+i + 1));
+        // source line 873, bytecode pc 188
+        i++;
     }
 },
     onEnter: function() {
@@ -959,8 +959,8 @@
     while ((i < mChildList.length)) {
         // source line 918, bytecode pc 148
         mChildList[i].setTouchPriority((this.m_baseTouchPriority - 1));
-        // source line 917, bytecode pc 162
-        (i = (+i + 1));
+        // source line 917, bytecode pc 163
+        i++;
     }
 }
 }));

@@ -136,10 +136,8 @@
                 team1.push(user1);
                 // source line 132, bytecode pc 314
                 user1.setBattleId(this.battleId);
-                // source line 133, bytecode pc 339
-                (pos1 = (+pos1 + 1));
                 // source line 133, bytecode pc 344
-                user1.setBattlePos(+pos1);
+                user1.setBattlePos(pos1++);
                 // source line 135, bytecode pc 395
                 (_killNum = (xs.Utils.parseIntSafe(killNums[user1.getPlayerId()]) || 0));
                 // source line 136, bytecode pc 414
@@ -160,10 +158,8 @@
                 team2.push(user2);
                 // source line 149, bytecode pc 611
                 user2.setBattleId(this.battleId);
-                // source line 150, bytecode pc 636
-                (pos2 = (+pos2 + 1));
                 // source line 150, bytecode pc 641
-                user2.setBattlePos(+pos2);
+                user2.setBattlePos(pos2++);
                 // source line 152, bytecode pc 692
                 (_killNum = (xs.Utils.parseIntSafe(killNums[user2.getPlayerId()]) || 0));
                 // source line 153, bytecode pc 711
@@ -179,8 +175,8 @@
                 // source line 161, bytecode pc 835
                 (lastUserId2 = ("" + user2.getPlayerId()));
             }
-            // source line 126, bytecode pc 849
-            (i = (+i + 1));
+            // source line 126, bytecode pc 850
+            i++;
         }
         // source line 166, bytecode pc 881
         (this.team1 = team1);
@@ -232,8 +228,8 @@
                 }
             }
         }
-        // source line 187, bytecode pc 199
-        (i = (+i + 1));
+        // source line 187, bytecode pc 200
+        i++;
     }
     // source line 210, bytecode pc 248
     xs.dump("killNums", killNums);
@@ -259,8 +255,8 @@
                 return true;
             }
         }
-        // source line 216, bytecode pc 122
-        (i = (+i + 1));
+        // source line 216, bytecode pc 123
+        i++;
     }
     // source line 228, bytecode pc 146
     return false;
@@ -282,8 +278,8 @@
             // source line 241, bytecode pc 109
             return true;
         }
-        // source line 233, bytecode pc 123
-        (i = (+i + 1));
+        // source line 233, bytecode pc 124
+        i++;
     }
     // source line 244, bytecode pc 147
     return false;
@@ -344,8 +340,8 @@
             // source line 295, bytecode pc 270
             arrVsList.push({ player1: user1, player2: user2, winner: winner });
         }
-        // source line 282, bytecode pc 284
-        (i = (+i + 1));
+        // source line 282, bytecode pc 285
+        i++;
     }
     // source line 301, bytecode pc 310
     return arrVsList;

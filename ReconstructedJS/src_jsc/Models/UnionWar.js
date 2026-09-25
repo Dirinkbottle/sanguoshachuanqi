@@ -38,8 +38,8 @@
         (_battleInfo = xs.Models.UnionWarBattleInfo.createWithBattleId(_battleId));
         // source line 43, bytecode pc 210
         (this.battleInfoDict[_battleId] = _battleInfo);
-        // source line 40, bytecode pc 224
-        (i = (+i + 1));
+        // source line 40, bytecode pc 225
+        i++;
     }
     // source line 47, bytecode pc 281
     (this._notifyCenter[xs.Constant_Notify_ModelChange_UnionWar] = xs.Utils.Notify.create());
@@ -64,8 +64,8 @@
             (playerInfo = xs.Models.UnionWarPlayer.createWithJson(jsonData.info[i]));
             // source line 64, bytecode pc 127
             this.fightPlayers.push(playerInfo);
-            // source line 61, bytecode pc 141
-            (i = (+i + 1));
+            // source line 61, bytecode pc 142
+            i++;
         }
     }
     // source line 69, bytecode pc 178
@@ -94,16 +94,16 @@
         (i = 0);
         while ((i < this.fightPlayers.length)) {
             if ((this.fightPlayers[i].getBattleId() == battleId)) {
-                // source line 89, bytecode pc 70
-                (num = (+num + 1));
+                // source line 89, bytecode pc 71
+                num++;
             }
-            // source line 87, bytecode pc 85
-            (i = (+i + 1));
+            // source line 87, bytecode pc 86
+            i++;
         }
         // source line 92, bytecode pc 128
         this._setBattlePlayerNum(battleId, num);
-        // source line 85, bytecode pc 142
-        (battleId = (+battleId + 1));
+        // source line 85, bytecode pc 143
+        battleId++;
     }
 },
     _setBattlePlayerNum: function(battleId, num) {
@@ -218,8 +218,8 @@
     while ((a < arguments.length)) {
         // source line 200, bytecode pc 47
         _arr_player_id.push(arguments[a]);
-        // source line 199, bytecode pc 61
-        (a = (+a + 1));
+        // source line 199, bytecode pc 62
+        a++;
     }
     // source line 203, bytecode pc 89
     (_rs_obj = []);
@@ -241,8 +241,8 @@
             // source line 215, bytecode pc 98
             _rs_obj.push(_arr_players_all[i]);
         }
-        // source line 213, bytecode pc 112
-        (i = (+i + 1));
+        // source line 213, bytecode pc 113
+        i++;
     }
     // source line 218, bytecode pc 135
     return _rs_obj;
@@ -387,8 +387,8 @@
                 return isStartTime;
             }
         }
-        // source line 366, bytecode pc 162
-        (i = (+i + 1));
+        // source line 366, bytecode pc 163
+        i++;
     }
     // source line 382, bytecode pc 183
     return 0;
@@ -572,8 +572,8 @@
             // source line 569, bytecode pc 441
             return _stage;
         }
-        // source line 543, bytecode pc 455
-        (i = (+i + 1));
+        // source line 543, bytecode pc 456
+        i++;
     }
     // source line 572, bytecode pc 497
     xs.error("no finad time!");

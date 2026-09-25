@@ -68,8 +68,8 @@
         this.addChild(cardView);
         // source line 93, bytecode pc 341
         this.cardViews.push(cardView);
-        // source line 72, bytecode pc 355
-        (i = (+i + 1));
+        // source line 72, bytecode pc 356
+        i++;
     }
     // source line 96, bytecode pc 382
     (i = 0);
@@ -78,8 +78,8 @@
         (this.cardViews_show[i] = this.cardViews[(i + 1)]);
         // source line 99, bytecode pc 428
         cardView.setVisible(true);
-        // source line 96, bytecode pc 442
-        (i = (+i + 1));
+        // source line 96, bytecode pc 443
+        i++;
     }
     // source line 102, bytecode pc 478
     (this.cardViews_show_noMove[0] = this.cardViews[0]);
@@ -107,8 +107,8 @@
     while ((i < (cardData.server.length - 4))) {
         // source line 125, bytecode pc 50
         (_severName = (_severName + cardData.server.charAt(i)));
-        // source line 124, bytecode pc 64
-        (i = (+i + 1));
+        // source line 124, bytecode pc 65
+        i++;
     }
     // source line 128, bytecode pc 140
     (_card_filePath = ((xs.Cfg.Resource.Path.Card1_V3.file_pre + cardData.gid) + ".png"));
@@ -229,8 +229,8 @@
         this.cardViews_show[i].setZOrder((10000 - Math.abs(this.cardViews_show[i].getCamera().getEye().x)));
         // source line 245, bytecode pc 349
         this.cardViews_show[i].setVisible(true);
-        // source line 242, bytecode pc 363
-        (i = (+i + 1));
+        // source line 242, bytecode pc 364
+        i++;
     }
 },
     getCenterCard: function() {
@@ -249,8 +249,8 @@
                 (_centerCard = this.cardViews_show[i]);
             }
         }
-        // source line 252, bytecode pc 111
-        (i = (+i + 1));
+        // source line 252, bytecode pc 112
+        i++;
     }
     // source line 262, bytecode pc 137
     return _centerCard;
@@ -278,8 +278,8 @@
         (model.disappearTime = showGenerals[i].disappearTime);
         // source line 279, bytecode pc 144
         generalsModel.push(model);
-        // source line 274, bytecode pc 158
-        (i = (+i + 1));
+        // source line 274, bytecode pc 159
+        i++;
     }
     // source line 281, bytecode pc 181
     return generalsModel;
@@ -316,8 +316,8 @@
         _cardView.setPosition(cc.p(_newPosX, _cardView.getPositionY()));
         // source line 314, bytecode pc 261
         this.refreshCameraEye(_cardView);
-        // source line 297, bytecode pc 275
-        (i = (+i + 1));
+        // source line 297, bytecode pc 276
+        i++;
     }
     if (_removeFirst) {
         // source line 318, bytecode pc 317

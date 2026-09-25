@@ -230,11 +230,11 @@
         (i = 1);
         while ((i < list.length)) {
             if ((list[i].bore_type == fistBoreType)) {
-                // source line 206, bytecode pc 79
-                (AllBoreOneProperty = (+AllBoreOneProperty + 1));
+                // source line 206, bytecode pc 80
+                AllBoreOneProperty++;
             }
-            // source line 204, bytecode pc 94
-            (i = (+i + 1));
+            // source line 204, bytecode pc 95
+            i++;
         }
         if ((AllBoreOneProperty == 5)) {
             // source line 210, bytecode pc 129
@@ -256,8 +256,8 @@
                     // source line 221, bytecode pc 406
                     (this.m_BoreAnimation_Array[i] = gemLightArm);
                 }
-                // source line 210, bytecode pc 420
-                (i = (+i + 1));
+                // source line 210, bytecode pc 421
+                i++;
             }
         } else {
             // source line 225, bytecode pc 443
@@ -269,8 +269,8 @@
                     // source line 228, bytecode pc 498
                     (this.m_BoreAnimation_Array[i] = null);
                 }
-                // source line 225, bytecode pc 512
-                (i = (+i + 1));
+                // source line 225, bytecode pc 513
+                i++;
             }
         }
     } else {
@@ -283,8 +283,8 @@
                 // source line 237, bytecode pc 599
                 (this.m_BoreAnimation_Array[i] = null);
             }
-            // source line 234, bytecode pc 613
-            (i = (+i + 1));
+            // source line 234, bytecode pc 614
+            i++;
         }
     }
 },
@@ -355,8 +355,8 @@
         (mSp = this._getGemCon(mHoleIdx));
         // source line 305, bytecode pc 93
         xs.Utils.replaceNode(this.m_punchNode, (xs.Views.Gems.GemsPunchView_cfg.gemOTag + mHoleIdx), mSp);
-        // source line 303, bytecode pc 107
-        (mHoleIdx = (+mHoleIdx + 1));
+        // source line 303, bytecode pc 108
+        mHoleIdx++;
     }
 },
     _getHoleTypeByIdx: function(mHoleIdx) {

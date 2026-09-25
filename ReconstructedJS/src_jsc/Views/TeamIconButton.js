@@ -260,11 +260,11 @@
             (i = 1);
             while ((i < this.m_data.m_bore_list.length)) {
                 if ((this.m_data.m_bore_list[i].bore_type == fistBoreType)) {
-                    // source line 206, bytecode pc 658
-                    (AllBoreOneProperty = (+AllBoreOneProperty + 1));
+                    // source line 206, bytecode pc 659
+                    AllBoreOneProperty++;
                 }
-                // source line 204, bytecode pc 673
-                (i = (+i + 1));
+                // source line 204, bytecode pc 674
+                i++;
             }
             if ((AllBoreOneProperty == 5)) {
                 if (!this.m_gemLightArm) {

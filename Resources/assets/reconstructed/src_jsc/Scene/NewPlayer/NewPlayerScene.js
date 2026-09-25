@@ -67,10 +67,8 @@
     _doStoryRound: function() {
     var _idx;
     try {
-        // source line 72, bytecode pc 26
-        (this.m_idx = (+this.m_idx + 1));
         // source line 72, bytecode pc 30
-        (_idx = +this.m_idx);
+        (_idx = this.m_idx++);
         if ((_idx > 11)) {
             // source line 75, bytecode pc 43
             return false;

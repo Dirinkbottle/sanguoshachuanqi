@@ -66,8 +66,8 @@
             // source line 77, bytecode pc 85
             _res_atlas.push(_arr_atlas_all[i]);
         }
-        // source line 75, bytecode pc 99
-        (i = (+i + 1));
+        // source line 75, bytecode pc 100
+        i++;
     }
     // source line 81, bytecode pc 122
     return _res_atlas;
@@ -85,8 +85,8 @@
             // source line 93, bytecode pc 76
             _res_atlas.push(_arr_atlas_all[i]);
         }
-        // source line 91, bytecode pc 90
-        (i = (+i + 1));
+        // source line 91, bytecode pc 91
+        i++;
     }
     // source line 97, bytecode pc 113
     return _res_atlas;
@@ -99,11 +99,11 @@
     (i = 0);
     while ((i < arr_atlas.length)) {
         if ((arr_atlas[i].getAtlasStatus() != 0)) {
-            // source line 106, bytecode pc 54
-            (_own_num = (+_own_num + 1));
+            // source line 106, bytecode pc 55
+            _own_num++;
         }
-        // source line 104, bytecode pc 69
-        (i = (+i + 1));
+        // source line 104, bytecode pc 70
+        i++;
     }
     // source line 110, bytecode pc 115
     this.dump("_own_num", _own_num, arr_atlas);

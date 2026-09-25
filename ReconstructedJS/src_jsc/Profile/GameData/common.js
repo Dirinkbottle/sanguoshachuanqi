@@ -272,8 +272,8 @@
                 }
             }
         }
-        // source line 295, bytecode pc 411
-        (i = (+i + 1));
+        // source line 295, bytecode pc 412
+        i++;
     }
     // source line 313, bytecode pc 432
     return true;
@@ -291,8 +291,8 @@
     while ((i < _notifyNames.length)) {
         // source line 368, bytecode pc 123
         xs.Utils.Notify.postNotification(_notifyNames[i]);
-        // source line 366, bytecode pc 137
-        (i = (+i + 1));
+        // source line 366, bytecode pc 138
+        i++;
     }
     // source line 371, bytecode pc 188
     (_modelMap = this.updateOtherData((_jsonResp || {})));
@@ -331,8 +331,8 @@
             (_model = xs.Models.TmpInfo.Adventure.createWithJson(_meeting_info[i]));
             // source line 416, bytecode pc 610
             _rs_obj.RandEvent.push({ type: xs.Constant_RandEvent_adventure, model: _model });
-            // source line 412, bytecode pc 624
-            (i = (+i + 1));
+            // source line 412, bytecode pc 625
+            i++;
         }
     }
     if (!xs.Utils.isEmpty(jsonResp.surrender_info)) {
@@ -347,8 +347,8 @@
                 // source line 434, bytecode pc 885
                 _rs_obj.RandEvent.push({ type: xs.Constant_RandEvent_achieve, model: _model[i] });
             }
-            // source line 426, bytecode pc 899
-            (i = (+i + 1));
+            // source line 426, bytecode pc 900
+            i++;
         }
     }
     if (!xs.Utils.isEmpty(jsonResp.surrender_info)) {
@@ -363,8 +363,8 @@
                 // source line 452, bytecode pc 1160
                 _rs_obj.RandEvent.push({ type: xs.Constant_RandEvent_achieve, model: _model[i] });
             }
-            // source line 444, bytecode pc 1174
-            (i = (+i + 1));
+            // source line 444, bytecode pc 1175
+            i++;
         }
     }
     // source line 458, bytecode pc 1197
@@ -447,9 +447,9 @@
                     // source line 532, bytecode pc 687
                     _notify_params.del.push(_del);
                     // source line 534, bytecode pc 695
-                    delete _del[_objMap];
-                    // source line 521, bytecode pc 709
-                    (j = (+j + 1));
+                    delete _objMap[_del];
+                    // source line 521, bytecode pc 710
+                    j++;
                 }
                 // source line 538, bytecode pc 733
                 (j = 0);
@@ -511,8 +511,8 @@
                         // source line 591, bytecode pc 1563
                         this.clearGeneralSoulCache(_objMap[_up.pk_id]);
                     }
-                    // source line 538, bytecode pc 1577
-                    (j = (+j + 1));
+                    // source line 538, bytecode pc 1578
+                    j++;
                 }
                 if (_isDataChange) {
                     if (!xs.Utils.isEmpty(_desc.indexProperty)) {
@@ -539,8 +539,8 @@
                         while ((j < _info.length)) {
                             // source line 622, bytecode pc 1867
                             _modelArray.push(_class.createWithJson(_info[j]));
-                            // source line 620, bytecode pc 1881
-                            (j = (+j + 1));
+                            // source line 620, bytecode pc 1882
+                            j++;
                         }
                         // source line 624, bytecode pc 1919
                         (this.private[_desc.propertyName] = _modelArray);
@@ -559,8 +559,8 @@
                 _notifyNames.push(_desc.notifyName);
             }
         }
-        // source line 487, bytecode pc 2061
-        (i = (+i + 1));
+        // source line 487, bytecode pc 2062
+        i++;
     }
     // source line 645, bytecode pc 2102
     (_isDataChange && this._firstTimeInitCmnData());
@@ -578,8 +578,8 @@
             // source line 657, bytecode pc 100
             _arr_soul_all[i]._delReferenceGeneralCache();
         }
-        // source line 655, bytecode pc 114
-        (i = (+i + 1));
+        // source line 655, bytecode pc 115
+        i++;
     }
 },
     setItemStatus: function(item_obj) {
@@ -627,8 +627,8 @@
                 // source line 709, bytecode pc 148
                 (_isIgnore = true);
             }
-            // source line 707, bytecode pc 162
-            (j = (+j + 1));
+            // source line 707, bytecode pc 163
+            j++;
         }
         if ((_isIgnore === true)) {
         } else {
@@ -658,8 +658,8 @@
     while ((i < _arr.length)) {
         // source line 741, bytecode pc 182
         _retArray.push(this.getModelByTypeAndPkId(nameType, _arr[i]));
-        // source line 740, bytecode pc 196
-        (i = (+i + 1));
+        // source line 740, bytecode pc 197
+        i++;
     }
     // source line 744, bytecode pc 219
     return _retArray;

@@ -92,8 +92,8 @@ xs.Scene.Mgr.registerScene("SettingScene", { "class": xs.Scene.SettingScene, are
             // source line 96, bytecode pc 435
             (this.settingData[i].btnStringKey = this._getBtnStringByType_OpenOrClose(this.settingData[i].settingType));
         }
-        // source line 90, bytecode pc 449
-        (i = (+i + 1));
+        // source line 90, bytecode pc 450
+        i++;
     }
     if (!xs.temp_3rd) {
         // source line 106, bytecode pc 557

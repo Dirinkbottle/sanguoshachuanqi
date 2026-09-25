@@ -29,8 +29,8 @@
             // source line 36, bytecode pc 95
             _rs_obj.push(_arr_skill_all[i]);
         }
-        // source line 33, bytecode pc 109
-        (i = (+i + 1));
+        // source line 33, bytecode pc 110
+        i++;
     }
     // source line 41, bytecode pc 132
     return _rs_obj;
@@ -56,8 +56,8 @@
             (_rs_obj = _arr_skill_all[i]);
             break;
         }
-        // source line 57, bytecode pc 126
-        (i = (+i + 1));
+        // source line 57, bytecode pc 127
+        i++;
     }
     // source line 65, bytecode pc 149
     return _rs_obj;
@@ -75,8 +75,8 @@
             // source line 77, bytecode pc 83
             _rs_obj.push(_arr_skill_all[i]);
         }
-        // source line 73, bytecode pc 97
-        (i = (+i + 1));
+        // source line 73, bytecode pc 98
+        i++;
     }
     // source line 81, bytecode pc 120
     return _rs_obj;
@@ -104,8 +104,8 @@
             // source line 97, bytecode pc 195
             return true;
         }
-        // source line 95, bytecode pc 209
-        (j = (+j + 1));
+        // source line 95, bytecode pc 210
+        j++;
     }
     // source line 100, bytecode pc 230
     return false;
@@ -123,8 +123,8 @@
     while ((a < arguments.length)) {
         // source line 108, bytecode pc 69
         _arr_pk_id.push(arguments[a]);
-        // source line 107, bytecode pc 83
-        (a = (+a + 1));
+        // source line 107, bytecode pc 84
+        a++;
     }
     // source line 111, bytecode pc 111
     (_rs_obj = []);
@@ -137,8 +137,8 @@
             // source line 120, bytecode pc 253
             _rs_obj.push(_arr_skill_all[i]);
         }
-        // source line 114, bytecode pc 267
-        (i = (+i + 1));
+        // source line 114, bytecode pc 268
+        i++;
     }
     // source line 124, bytecode pc 314
     xs.Debug.testEnd("getListWithoutNaturalSkillAndPkId");
@@ -156,8 +156,8 @@
         (generalPkid = _arr_skill_all[i].getGeneralPkId());
         if (generalPkid) {
         }
-        // source line 133, bytecode pc 70
-        (i = (+i + 1));
+        // source line 133, bytecode pc 71
+        i++;
     }
 },
     getAllSkillIsWorn: function() {
@@ -173,8 +173,8 @@
             // source line 154, bytecode pc 81
             _rs_obj.push(_arr_skill_all[i]);
         }
-        // source line 151, bytecode pc 95
-        (i = (+i + 1));
+        // source line 151, bytecode pc 96
+        i++;
     }
     // source line 157, bytecode pc 118
     return _rs_obj;
@@ -200,8 +200,8 @@
             // source line 174, bytecode pc 64
             return _bool;
         }
-        // source line 170, bytecode pc 78
-        (i = (+i + 1));
+        // source line 170, bytecode pc 79
+        i++;
     }
     // source line 177, bytecode pc 101
     return _bool;
@@ -219,8 +219,8 @@
             // source line 188, bytecode pc 110
             _rs_obj.push(_arr_skill_all[i]);
         }
-        // source line 185, bytecode pc 124
-        (i = (+i + 1));
+        // source line 185, bytecode pc 125
+        i++;
     }
     // source line 191, bytecode pc 147
     return _rs_obj;
@@ -265,15 +265,15 @@
                     (_v = false);
                     break;
                 }
-                // source line 225, bytecode pc 138
-                (j = (+j + 1));
+                // source line 225, bytecode pc 139
+                j++;
             }
             if (_v) {
                 // source line 233, bytecode pc 169
                 return _v;
             }
-            // source line 223, bytecode pc 183
-            (i = (+i + 1));
+            // source line 223, bytecode pc 184
+            i++;
         }
         // source line 236, bytecode pc 204
         return false;

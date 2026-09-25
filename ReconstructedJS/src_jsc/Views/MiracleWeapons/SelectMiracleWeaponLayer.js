@@ -239,8 +239,8 @@
             (pointPosition = cc.p((rightLength + (44 * i)), 16));
             // source line 256, bytecode pc 184
             this.m_statePoints.push(pointPosition);
-            // source line 254, bytecode pc 198
-            (i = (+i + 1));
+            // source line 254, bytecode pc 199
+            i++;
         }
     } else {
         // source line 260, bytecode pc 229
@@ -258,8 +258,8 @@
             (pointPosition = cc.p((rightLength + (44 * i)), 16));
             // source line 267, bytecode pc 327
             this.m_statePoints.push(pointPosition);
-            // source line 265, bytecode pc 341
-            (i = (+i + 1));
+            // source line 265, bytecode pc 342
+            i++;
         }
     }
     // source line 271, bytecode pc 360
@@ -271,8 +271,8 @@
         sp.setPosition(this.m_statePoints[i]);
         // source line 275, bytecode pc 451
         this.addChild(sp);
-        // source line 271, bytecode pc 465
-        (i = (+i + 1));
+        // source line 271, bytecode pc 466
+        i++;
     }
     // source line 279, bytecode pc 484
     (i = 0);
@@ -283,8 +283,8 @@
         sp.setPosition(cc.p((this.m_statePoints[i].x + 22), this.m_statePoints[i].y));
         // source line 283, bytecode pc 616
         this.addChild(sp);
-        // source line 279, bytecode pc 630
-        (i = (+i + 1));
+        // source line 279, bytecode pc 631
+        i++;
     }
 },
     updateMiddleWeapon: function(index) {
@@ -305,8 +305,8 @@
                 // source line 302, bytecode pc 179
                 this.m_middleWeaponInforArray[i].setVisible(false);
             }
-            // source line 298, bytecode pc 193
-            (i = (+i + 1));
+            // source line 298, bytecode pc 194
+            i++;
         }
         // source line 306, bytecode pc 235
         this.m_MiracleWeaponCondition.setVisible(true);
@@ -327,8 +327,8 @@
                     // source line 323, bytecode pc 413
                     this.m_middleWeaponInforArray[i].setVisible(true);
                 }
-                // source line 319, bytecode pc 427
-                (i = (+i + 1));
+                // source line 319, bytecode pc 428
+                i++;
             }
             // source line 328, bytecode pc 469
             this.m_MiracleWeaponCondition.setVisible(false);
@@ -381,8 +381,8 @@
     while ((i < data.length)) {
         // source line 371, bytecode pc 45
         (n = (n + data[i].status));
-        // source line 370, bytecode pc 59
-        (i = (+i + 1));
+        // source line 370, bytecode pc 60
+        i++;
     }
     if ((n == data.length)) {
         // source line 375, bytecode pc 103

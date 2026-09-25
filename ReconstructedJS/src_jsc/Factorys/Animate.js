@@ -21,8 +21,8 @@
     while ((i <= _info.last)) {
         // source line 33, bytecode pc 161
         _animation.addSpriteFrameWithFile((((this.path + _info.prefix) + i) + _info.suffix));
-        // source line 32, bytecode pc 175
-        (i = (+i + 1));
+        // source line 32, bytecode pc 176
+        i++;
     }
     // source line 36, bytecode pc 221
     (_delayPerUnit = (_time / ((_info.last - _info.first) + 1)));

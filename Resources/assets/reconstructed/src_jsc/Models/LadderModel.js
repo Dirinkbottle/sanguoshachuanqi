@@ -44,8 +44,8 @@
         }
         // source line 35, bytecode pc 98
         this.ladderTeam.push(otherPlayer);
-        // source line 30, bytecode pc 112
-        (i = (+i + 1));
+        // source line 30, bytecode pc 113
+        i++;
     }
     // source line 37, bytecode pc 160
     (this.ladderTop = this.ladderTeam.slice(0, 10));
@@ -97,8 +97,8 @@
             // source line 88, bytecode pc 40
             return i;
         }
-        // source line 86, bytecode pc 54
-        (i = (+i + 1));
+        // source line 86, bytecode pc 55
+        i++;
     }
 },
     getFocusIdx: function() {

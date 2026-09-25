@@ -29,8 +29,8 @@
         (this._pages[i] = cc.Node.create());
         // source line 32, bytecode pc 310
         this.m_pageView.addPage(xs.Tools.String.createString(("rank_tab_name_index" + i)), this._pages[i]);
-        // source line 29, bytecode pc 324
-        (i = (+i + 1));
+        // source line 29, bytecode pc 325
+        i++;
     }
     // source line 40, bytecode pc 357
     this.m_pageView.setListener(this);
@@ -163,8 +163,8 @@
                 // source line 136, bytecode pc 62
                 this._pageViewCaches[i].setVisible(false);
             }
-            // source line 132, bytecode pc 76
-            (i = (+i + 1));
+            // source line 132, bytecode pc 77
+            i++;
         }
     }
 },

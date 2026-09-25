@@ -44,8 +44,8 @@
         while ((i < this.generalExpLabels.length)) {
             // source line 45, bytecode pc 561
             this.generalExpLabels[i].removeFromParent(true);
-            // source line 44, bytecode pc 575
-            (i = (+i + 1));
+            // source line 44, bytecode pc 576
+            i++;
         }
     }
     // source line 48, bytecode pc 609
@@ -65,8 +65,8 @@
         (col = Math.floor((i / 3)));
         // source line 55, bytecode pc 878
         xs.Utils.Node.attachNodes(this, _generalExpLabel, { desc: "c", offset: cc.p(((255 * row) + 20), (106 - (col * 27))), sc: false });
-        // source line 50, bytecode pc 892
-        (i = (+i + 1));
+        // source line 50, bytecode pc 893
+        i++;
     }
     // source line 58, bytecode pc 987
     xs.Utils.replaceLabel(this.ccbNode, this.cfg.dropStr.tag, [ "LS_Lv" ], [ "1071110052" ]);
@@ -76,8 +76,8 @@
         while ((i < this.dropItemLabels.length)) {
             // source line 61, bytecode pc 1033
             this.dropItemLabels[i].removeFromParent(true);
-            // source line 60, bytecode pc 1047
-            (i = (+i + 1));
+            // source line 60, bytecode pc 1048
+            i++;
         }
     }
     // source line 64, bytecode pc 1081
@@ -95,8 +95,8 @@
         this.dropItemLabels.push(itemInfoLabel);
         // source line 70, bytecode pc 1257
         xs.Utils.Node.attachNodes(this, itemInfoLabel, { desc: "c", offset: cc.p(((255 * row) + 20), 5), sc: false });
-        // source line 66, bytecode pc 1271
-        (i = (+i + 1));
+        // source line 66, bytecode pc 1272
+        i++;
     }
 },
     getLabelForGeneralExp: function(generalName, exp) {

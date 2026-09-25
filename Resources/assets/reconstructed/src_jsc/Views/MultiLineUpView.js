@@ -77,8 +77,8 @@
         (str = (xs.Tools.String.createString("queueTeam_1") + xs.Tools.String.convNumberString((i + 1))));
         // source line 75, bytecode pc 257
         this.addTablePageViewAndButtonName(xs.Views.ShowTeamView, str, false, (i + 1));
-        // source line 73, bytecode pc 271
-        (i = (+i + 1));
+        // source line 73, bytecode pc 272
+        i++;
     }
     if (this.createLockButton((this.m_nowTeamNum + 1))) {
         // source line 80, bytecode pc 386
@@ -214,8 +214,8 @@
             // source line 200, bytecode pc 538
             this.m_buttonList[i].setSelected(true);
         }
-        // source line 196, bytecode pc 552
-        (i = (+i + 1));
+        // source line 196, bytecode pc 553
+        i++;
     }
 },
     clickLockButtonCallback: function() {

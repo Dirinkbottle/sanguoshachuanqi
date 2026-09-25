@@ -105,8 +105,8 @@
     // source line 97, bytecode pc 33
     xs.Tools.UI.showDropItemDetail(this.dropItem);
 }.bind({ dropItem: dropInfos[i] }));
-        // source line 92, bytecode pc 1877
-        (i = (+i + 1));
+        // source line 92, bytecode pc 1878
+        i++;
     }
     // source line 104, bytecode pc 1912
     (_mulitiKillTimes = this.dungeonModel.getMultiKillTimes());
@@ -364,8 +364,8 @@
             // source line 362, bytecode pc 100
             this.starLabArray[(i - 1)].setVisible(false);
         }
-        // source line 358, bytecode pc 114
-        (i = (+i + 1));
+        // source line 358, bytecode pc 115
+        i++;
     }
 },
     updateAll: function() {
@@ -464,8 +464,8 @@
     while ((i < this.dropIconBtn.length)) {
         // source line 441, bytecode pc 227
         this.dropIconBtn[i].setTouchPriority((this.m_baseTouchPriority + this.cfg.infoRegion.dropIcon1.priority));
-        // source line 440, bytecode pc 241
-        (i = (+i + 1));
+        // source line 440, bytecode pc 242
+        i++;
     }
 },
     cfg: {

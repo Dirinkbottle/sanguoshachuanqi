@@ -124,8 +124,8 @@
         this.m_arrBattleViews.push(battleView);
         // source line 130, bytecode pc 1524
         battleView.refreshView();
-        // source line 92, bytecode pc 1538
-        (i = (+i + 1));
+        // source line 92, bytecode pc 1539
+        i++;
     }
     // source line 136, bytecode pc 1590
     (this.m_closeBtn = xs.Views.Btn.create("Btn_CircleRedClose"));
@@ -170,8 +170,8 @@
                 }
             }
         }
-        // source line 158, bytecode pc 330
-        (i = (+i + 1));
+        // source line 158, bytecode pc 331
+        i++;
     }
     // source line 175, bytecode pc 389
     xs.log_xjf(((("score_1 = " + score_1) + ", score_2 = ") + score_2));
@@ -209,8 +209,8 @@
     while ((i < this.m_arrBattleViews.length)) {
         // source line 219, bytecode pc 156
         this.m_arrBattleViews[i].setBaseTouchPriority((this.m_baseTouchPriority + xs.Cfg.Scene.UnionWar.m_battleView.priority));
-        // source line 217, bytecode pc 170
-        (i = (+i + 1));
+        // source line 217, bytecode pc 171
+        i++;
     }
 },
     cfg: {

@@ -86,8 +86,8 @@
             // source line 113, bytecode pc 163
             return this.create(name, _areas[i]);
         }
-        // source line 111, bytecode pc 182
-        (i = (+i + 1));
+        // source line 111, bytecode pc 183
+        i++;
     }
     // source line 119, bytecode pc 234
     xs.assert(false, "createWithDefaultArea failed", name, _areas);

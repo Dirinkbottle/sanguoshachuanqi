@@ -21,8 +21,8 @@
     while ((i < arrIndexKey.length)) {
         // source line 23, bytecode pc 31
         this.createIndex(arrIndexKey[i]);
-        // source line 22, bytecode pc 45
-        (i = (+i + 1));
+        // source line 22, bytecode pc 46
+        i++;
     }
 },
     createIndex: function(indexKey) {
@@ -69,7 +69,7 @@
 },
     deleteIndex: function(indexKey) {
     // source line 74, bytecode pc 10
-    delete indexKey[this.index];
+    delete this.index[indexKey];
     // source line 75, bytecode pc 22
     (this.isIndexValid[indexKey] = false);
 },

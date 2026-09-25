@@ -34,8 +34,8 @@
         xs.log_zhz("item_list.total_num/item_list.need_num", (item_list.total_num / item_list.need_num));
         // source line 26, bytecode pc 271
         (this.maxNum = ((this.maxNum <= (item_list.total_num / item_list.need_num)) ? this.maxNum : (item_list.total_num / item_list.need_num)));
-        // source line 23, bytecode pc 285
-        (i = (+i + 1));
+        // source line 23, bytecode pc 286
+        i++;
     }
     // source line 36, bytecode pc 348
     (this.ccbNode = xs.ccb_reader.load("ccb3/0_8_5_MultiItemBuyDialog.ccbi", this));

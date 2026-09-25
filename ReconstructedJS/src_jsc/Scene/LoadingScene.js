@@ -44,8 +44,8 @@
         xs.log("_funcName", _funcName);
         // source line 64, bytecode pc 318
         this.view.dst[_funcName].apply(this.view.dst);
-        // source line 66, bytecode pc 349
-        (this.control.step0 = (+this.control.step0 + 1));
+        // source line 66, bytecode pc 350
+        this.control.step0++;
     } else {
         if ((this.control.step0 === this.model.param.loadFuncs.length)) {
             // source line 73, bytecode pc 420

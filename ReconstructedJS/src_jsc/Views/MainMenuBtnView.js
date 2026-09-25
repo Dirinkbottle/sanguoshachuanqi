@@ -192,8 +192,8 @@
             // source line 174, bytecode pc 186
             _surrenderArr.push(_tmp[i]);
         }
-        // source line 172, bytecode pc 200
-        (i = (+i + 1));
+        // source line 172, bytecode pc 201
+        i++;
     }
     // source line 180, bytecode pc 272
     xs.Views.Dialog.AgaSurrenderDialog.showWithSurrenderInfo({ datas: _surrenderArr, idxInit: 0 });

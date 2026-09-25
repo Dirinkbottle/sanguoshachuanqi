@@ -159,8 +159,8 @@
             // source line 133, bytecode pc 58
             return data[i];
         }
-        // source line 131, bytecode pc 72
-        (i = (+i + 1));
+        // source line 131, bytecode pc 73
+        i++;
     }
 },
     updateInfo: function() {

@@ -19,8 +19,8 @@ String.method("convWithArgs", function(argsArray) {
             (_arg = argsArray[i]);
             // source line 26, bytecode pc 139
             (_ret = _ret.replace(("$" + (i + 1)), _arg));
-            // source line 24, bytecode pc 153
-            (i = (+i + 1));
+            // source line 24, bytecode pc 154
+            i++;
         }
         if ((_ret.indexOf("$") >= 0)) {
             // source line 30, bytecode pc 234
@@ -44,8 +44,8 @@ String.method("toWordBreak", function() {
             // source line 50, bytecode pc 73
             (_ret = (_ret + "\n"));
         }
-        // source line 46, bytecode pc 87
-        (i = (+i + 1));
+        // source line 46, bytecode pc 88
+        i++;
     }
     // source line 54, bytecode pc 108
     return _ret;

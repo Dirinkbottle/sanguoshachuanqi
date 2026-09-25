@@ -129,8 +129,8 @@
                 // source line 100, bytecode pc 337
                 (yinLiang = (yinLiang + Number(list[i].num)));
             }
-            // source line 90, bytecode pc 351
-            (i = (+i + 1));
+            // source line 90, bytecode pc 352
+            i++;
         }
         // source line 103, bytecode pc 406
         (str = xs.Tools.String.createString("EquipmentMeltSucess"));

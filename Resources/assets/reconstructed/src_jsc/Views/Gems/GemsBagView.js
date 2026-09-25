@@ -293,8 +293,8 @@
             (_idx = i);
             break;
         }
-        // source line 265, bytecode pc 82
-        (i = (+i + 1));
+        // source line 265, bytecode pc 83
+        i++;
     }
     // source line 271, bytecode pc 130
     (y = (((_length - _idx) * 107) - this.m_defaultSize.height));

@@ -153,8 +153,8 @@
             // source line 142, bytecode pc 521
             (_val = (_val + magicalEqu.getPointEffectValAllByType(type)));
         }
-        // source line 139, bytecode pc 535
-        (i = (+i + 1));
+        // source line 139, bytecode pc 536
+        i++;
     }
     // source line 146, bytecode pc 580
     return xs.Utils.parseIntSafe(_val);

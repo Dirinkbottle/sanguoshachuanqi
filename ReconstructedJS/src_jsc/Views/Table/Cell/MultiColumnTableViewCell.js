@@ -27,8 +27,8 @@
     while ((i < this.iconArray.length)) {
         // source line 21, bytecode pc 34
         this.iconArray[i].removeFromParent(true);
-        // source line 20, bytecode pc 48
-        (i = (+i + 1));
+        // source line 20, bytecode pc 49
+        i++;
     }
     // source line 24, bytecode pc 82
     (this.iconArray = []);
@@ -41,8 +41,8 @@
         this.iconArray.push(icon);
         // source line 34, bytecode pc 223
         xs.Utils.Node.attachNodes(this, icon, { desc: "lb", sc: true, offset: { x: (53 + (104 * i)), y: 52 } });
-        // source line 26, bytecode pc 237
-        (i = (+i + 1));
+        // source line 26, bytecode pc 238
+        i++;
     }
 },
     _createIcon: function(index) {

@@ -246,8 +246,8 @@
                     // source line 297, bytecode pc 210
                     (_fatesCfg[i] = _fate_magicalEqu[_fatesCfg[i]]);
                 }
-                // source line 294, bytecode pc 224
-                (i = (+i + 1));
+                // source line 294, bytecode pc 225
+                i++;
             }
         }
     }
@@ -284,8 +284,8 @@
                     }
                 }
             }
-            // source line 307, bytecode pc 569
-            (i = (+i + 1));
+            // source line 307, bytecode pc 570
+            i++;
         }
     }
     // source line 332, bytecode pc 593
@@ -978,8 +978,8 @@
         }
         // source line 1073, bytecode pc 306
         xs.Utils.Node.attachNodes(node, starBg, { desc: "lb", offset: cc.p((0 - ((_breachLevelMax - i) * 32)), 0), sc: true }, null);
-        // source line 1064, bytecode pc 320
-        (i = (+i + 1));
+        // source line 1064, bytecode pc 321
+        i++;
     }
     // source line 1075, bytecode pc 338
     return node;

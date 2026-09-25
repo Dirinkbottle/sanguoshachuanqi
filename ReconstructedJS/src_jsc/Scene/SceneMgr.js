@@ -119,8 +119,8 @@
             // source line 157, bytecode pc 133
             return xs.Scene.Mgr._getSceneRegisInfo(_name).type;
         }
-        // source line 150, bytecode pc 147
-        (i = (+i - 1));
+        // source line 150, bytecode pc 148
+        i--;
     }
 },
         popSceneInfo: function() {
@@ -312,8 +312,8 @@
     while ((i >= 0)) {
         // source line 393, bytecode pc 34
         (this.status[i] = null);
-        // source line 392, bytecode pc 48
-        (i = (+i - 1));
+        // source line 392, bytecode pc 49
+        i--;
     }
 },
     registerScene: function(name, info) {
@@ -376,8 +376,8 @@
                 // source line 499, bytecode pc 147
                 _tmpChild.onCleanUpBeforeSceneExit();
             }
-            // source line 493, bytecode pc 161
-            (i = (+i + 1));
+            // source line 493, bytecode pc 162
+            i++;
         }
     }
 },
@@ -428,8 +428,8 @@
                 // source line 565, bytecode pc 434
                 xs.Factorys.Sprite.unload(_arrayAreaNames[i], true);
             }
-            // source line 558, bytecode pc 448
-            (i = (+i + 1));
+            // source line 558, bytecode pc 449
+            i++;
         }
         // source line 569, bytecode pc 479
         (_preload = _lastSceneCfg.preLoad);
@@ -453,8 +453,8 @@
                         // source line 585, bytecode pc 685
                         xs.warn("SceneMgr", ("unknow _factoryName:" + _i));
                     }
-                    // source line 573, bytecode pc 699
-                    (i = (+i + 1));
+                    // source line 573, bytecode pc 700
+                    i++;
                 }
             }
         }
@@ -474,8 +474,8 @@
                 // source line 607, bytecode pc 937
                 xs.Factorys.Sprite.load(_sceneCfg.area[i], true);
             }
-            // source line 598, bytecode pc 951
-            (i = (+i + 1));
+            // source line 598, bytecode pc 952
+            i++;
         }
     }
     // source line 613, bytecode pc 1007
@@ -506,8 +506,8 @@
         (_funcName = _loadFuncs[i]);
         // source line 640, bytecode pc 1246
         _scene[_funcName]();
-        // source line 638, bytecode pc 1260
-        (i = (+i + 1));
+        // source line 638, bytecode pc 1261
+        i++;
     }
     if (_sceneCfg.audio) {
         if (_sceneCfg.audio.bgId) {
@@ -543,8 +543,8 @@
                     // source line 678, bytecode pc 1628
                     xs.warn("SceneMgr", ("unknow _factoryName:" + _i));
                 }
-                // source line 665, bytecode pc 1642
-                (i = (+i + 1));
+                // source line 665, bytecode pc 1643
+                i++;
             }
         }
     }
@@ -593,8 +593,8 @@
         while ((i < _arrayAreaNames.length)) {
             // source line 723, bytecode pc 202
             xs.Factorys.Sprite.unload(_arrayAreaNames[i], true);
-            // source line 722, bytecode pc 216
-            (i = (+i + 1));
+            // source line 722, bytecode pc 217
+            i++;
         }
     }
     // source line 727, bytecode pc 262

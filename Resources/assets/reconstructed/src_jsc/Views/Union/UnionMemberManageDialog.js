@@ -132,8 +132,8 @@
         this[("MemButton" + i)].setPosition(cc.p(_pos.x, ((_pos.y + (77 * (i + 1))) - 20)));
         // source line 125, bytecode pc 1471
         this.m_bg.addChild(this[("MemButton" + i)]);
-        // source line 115, bytecode pc 1485
-        (i = (+i + 1));
+        // source line 115, bytecode pc 1486
+        i++;
     }
     // source line 131, bytecode pc 1509
     return true;
@@ -191,8 +191,8 @@
             // source line 184, bytecode pc 115
             this[("MemButton" + i)].setTouchPriority((this.m_baseTouchPriority - 1));
         }
-        // source line 182, bytecode pc 129
-        (i = (+i + 1));
+        // source line 182, bytecode pc 130
+        i++;
     }
 }
 }));

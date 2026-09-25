@@ -257,8 +257,8 @@
     (_actionCB = cc.CallFunc.create(function(sender, data) {
     var _text;
     if ((sender.m_storyLength < item.getContentString().length)) {
-        // source line 414, bytecode pc 66
-        (sender.m_storyLength = (+sender.m_storyLength + 1));
+        // source line 414, bytecode pc 67
+        sender.m_storyLength++;
         // source line 415, bytecode pc 113
         (_text = item.getContentString().substr(0, sender.m_storyLength));
         // source line 417, bytecode pc 137
@@ -274,8 +274,8 @@
         _actions.push(cc.DelayTime.create((2 / xs.fps)));
         // source line 428, bytecode pc 727
         _actions.push(_actionCB);
-        // source line 425, bytecode pc 741
-        (i = (+i + 1));
+        // source line 425, bytecode pc 742
+        i++;
     }
     // source line 460, bytecode pc 808
     return xs.Utils.Action.combineSequence(_actions);

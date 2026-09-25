@@ -209,8 +209,8 @@
                     // source line 174, bytecode pc 147
                     peachPriceData.push(parseInt(data[i].item_price));
                 }
-                // source line 172, bytecode pc 161
-                (i = (+i + 1));
+                // source line 172, bytecode pc 162
+                i++;
             }
             if (jsonObj.return_info.ordinary_price) {
                 // source line 179, bytecode pc 215
@@ -222,8 +222,8 @@
                         // source line 182, bytecode pc 315
                         challengePiceData.push(parseInt(_data[i].item_price));
                     }
-                    // source line 180, bytecode pc 329
-                    (i = (+i + 1));
+                    // source line 180, bytecode pc 330
+                    i++;
                 }
                 // source line 187, bytecode pc 390
                 xs.Profile.GameData.BuyPeachPriceData.setPeachPriceList(peachPriceData);
@@ -359,8 +359,8 @@
                                 }
                                 break;
                             }
-                            // source line 298, bytecode pc 530
-                            (buyPeachNum = (+buyPeachNum + 1));
+                            // source line 298, bytecode pc 531
+                            buyPeachNum++;
                             // source line 299, bytecode pc 542
                             (totalYuanBao = (totalYuanBao + piece));
                         } else {
@@ -390,8 +390,8 @@
                             }
                             break;
                         }
-                        // source line 323, bytecode pc 761
-                        (buyPeachNum = (+buyPeachNum + 1));
+                        // source line 323, bytecode pc 762
+                        buyPeachNum++;
                         // source line 324, bytecode pc 773
                         (totalYuanBao = (totalYuanBao + piece));
                     } else {
@@ -404,10 +404,10 @@
                 }
             }
         }
-        // source line 334, bytecode pc 839
-        (maxNum = (+maxNum + 1));
-        // source line 258, bytecode pc 854
-        (i = (+i + 1));
+        // source line 334, bytecode pc 840
+        maxNum++;
+        // source line 258, bytecode pc 855
+        i++;
     }
     // source line 338, bytecode pc 891
     return { num: maxNum, yuanBao: totalYuanBao }

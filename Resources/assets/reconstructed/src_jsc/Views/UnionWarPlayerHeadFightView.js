@@ -154,8 +154,8 @@
 },
     atkFinish: function() {
     if (this.result.isWin) {
-        // source line 164, bytecode pc 41
-        (this.killNum = (+this.killNum + 1));
+        // source line 164, bytecode pc 42
+        this.killNum++;
         // source line 165, bytecode pc 67
         this.m_icon.reloadData_killNum(this.killNum);
     }

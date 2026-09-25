@@ -319,8 +319,8 @@
         while ((i < _ids.length)) {
             // source line 387, bytecode pc 103
             this.cachePassiveEffects.push(xs.Models.SkillEffect.createWithBase(_ids[i]));
-            // source line 385, bytecode pc 117
-            (i = (+i + 1));
+            // source line 385, bytecode pc 118
+            i++;
         }
     }
     // source line 392, bytecode pc 143
@@ -358,8 +358,8 @@
             // source line 441, bytecode pc 239
             (_ret = (_ret + _effect.getValueOffset(attrType, (this.getLevel() + this.getExtraLevel()), targetGeneralModel)));
         }
-        // source line 426, bytecode pc 253
-        (i = (+i + 1));
+        // source line 426, bytecode pc 254
+        i++;
     } while ((i < _passiveEffects.length));
     // source line 449, bytecode pc 281
     return _ret;
@@ -477,8 +477,8 @@
             }
             // source line 597, bytecode pc 331
             (_arr_desc_param_value[i] = _val);
-            // source line 593, bytecode pc 345
-            (i = (+i + 1));
+            // source line 593, bytecode pc 346
+            i++;
         }
         // source line 601, bytecode pc 405
         (this._descString = xs.Tools.Ml.createStringWithArgsArray(_descId, _arr_desc_param_value));

@@ -389,11 +389,11 @@
     (i = (this.m_AllCellData.atlas_list_local.general_list.length - 1));
     while ((i >= 0)) {
         if ((this.m_AllCellData.atlas_list_local.general_list[i].atlas_status == xs.Models.Altas_Status_Surrender)) {
-            // source line 327, bytecode pc 97
-            (_num = (+_num + 1));
+            // source line 327, bytecode pc 98
+            _num++;
         }
-        // source line 325, bytecode pc 112
-        (i = (+i - 1));
+        // source line 325, bytecode pc 113
+        i--;
     }
     // source line 330, bytecode pc 128
     return _num;

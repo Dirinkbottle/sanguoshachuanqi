@@ -86,8 +86,8 @@
         this.combatCards[i].card.setScale(this.cardsBaseScale[i]);
         // source line 97, bytecode pc 1372
         this.combatCards[i].card.setZOrder(this.cardsBaseZorder_S[i]);
-        // source line 93, bytecode pc 1386
-        (i = (+i + 1));
+        // source line 93, bytecode pc 1387
+        i++;
     }
     // source line 100, bytecode pc 1441
     (infoBar = xs.ccb_reader.load("ccb3/0_7_13_Combat_InfoBar.ccbi", this));
@@ -276,8 +276,8 @@
 },
     timer: function(dt) {
     if ((this.touchBegan === true)) {
-        // source line 254, bytecode pc 38
-        (this.touchStartTime = (+this.touchStartTime + 1));
+        // source line 254, bytecode pc 39
+        this.touchStartTime++;
     } else {
         // source line 256, bytecode pc 52
         (this.touchStartTime = 0);
@@ -305,8 +305,8 @@
             this.combatCards[i].card.setPosition(this.combatCards[i].pos);
             // source line 279, bytecode pc 110
             this.combatCards[i].card.setScale(this.combatCards[i].scale);
-            // source line 277, bytecode pc 124
-            (i = (+i + 1));
+            // source line 277, bytecode pc 125
+            i++;
         }
     } else {
         if (((this.offSet < 0) && (Math.abs(this.offSet) > (this.cardDis / 2)))) {
@@ -333,8 +333,8 @@
             this.combatCards[this.getCardDataIdxByPosIdx(i)].card.runAction(cc.MoveTo.create(duration, this.cardsBasePos[i]));
             // source line 299, bytecode pc 499
             this.combatCards[this.getCardDataIdxByPosIdx(i)].card.runAction(cc.ScaleTo.create(duration, this.cardsBaseScale[i]));
-            // source line 296, bytecode pc 513
-            (i = (+i + 1));
+            // source line 296, bytecode pc 514
+            i++;
         }
     }
     if ((this.offSet !== 0)) {
@@ -356,8 +356,8 @@
                 this.combatCards[this.getCardDataIdxByPosIdx(i)].card.setZOrder(this.cardsBaseZorder_N[i]);
             }
         }
-        // source line 310, bytecode pc 179
-        (i = (+i + 1));
+        // source line 310, bytecode pc 180
+        i++;
     }
 },
     getSelectedCardInfo: function() {

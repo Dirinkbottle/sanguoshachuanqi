@@ -147,11 +147,11 @@
                 // source line 214, bytecode pc 289
                 this.error("_tmpModel is null", [ i, j ], _model);
             }
-            // source line 186, bytecode pc 303
-            (j = (+j + 1));
+            // source line 186, bytecode pc 304
+            j++;
         }
-        // source line 184, bytecode pc 331
-        (i = (+i + 1));
+        // source line 184, bytecode pc 332
+        i++;
     }
     // source line 219, bytecode pc 349
     (i = 0);
@@ -180,11 +180,11 @@
                 // source line 243, bytecode pc 510
                 _view.setVisible(false);
             }
-            // source line 227, bytecode pc 524
-            (j = (+j + 1));
+            // source line 227, bytecode pc 525
+            j++;
         }
-        // source line 219, bytecode pc 552
-        (i = (+i + 1));
+        // source line 219, bytecode pc 553
+        i++;
     }
 },
     initViews: function(model, layer) {
@@ -274,11 +274,11 @@
                 // source line 348, bytecode pc 1076
                 this.error("_tmpModel is null", [ i, j ], model);
             }
-            // source line 294, bytecode pc 1090
-            (j = (+j + 1));
+            // source line 294, bytecode pc 1091
+            j++;
         }
-        // source line 292, bytecode pc 1118
-        (i = (+i + 1));
+        // source line 292, bytecode pc 1119
+        i++;
     }
     // source line 355, bytecode pc 1159
     (this.near = cc.Node.create());
@@ -342,11 +342,11 @@
             _view.setVisible(false);
             // source line 413, bytecode pc 2251
             (this.backupViews[i][j] = _view);
-            // source line 394, bytecode pc 2265
-            (j = (+j + 1));
+            // source line 394, bytecode pc 2266
+            j++;
         }
-        // source line 386, bytecode pc 2293
-        (i = (+i + 1));
+        // source line 386, bytecode pc 2294
+        i++;
     }
     // source line 419, bytecode pc 2360
     (this.vs = xs.Factorys.Sprite.create("VS", "FightScene01"));
@@ -492,8 +492,8 @@
         xs.Utils.Node.attachNodes(_backupBg, this.backUpNum[i], { desc: ((i === 0) ? "rt" : "lt"), offset: cc.p((((i === 0) ? 1 : -1) * -40), -19) }, xs.Cfg.Constant.Scene.FightDemo.Bg1);
         // source line 576, bytecode pc 5396
         this.backUpNum[i].update(model.getBackUpNumCur(i), model.getBackUpNumMax(i));
-        // source line 545, bytecode pc 5410
-        (i = (+i + 1));
+        // source line 545, bytecode pc 5411
+        i++;
     }
     // source line 593, bytecode pc 5441
     (_sizeBackupBg = _backupBg.getContentSize());
@@ -574,8 +574,8 @@
         xs.Utils.Node.attachNodes(layer, this.userInfo[i], { desc: ((i === 0) ? "tl" : "tr"), sc: true, offset: cc.p(0, (-_sizeBackupBg.height - 60)) }, xs.Cfg.Constant.Scene.FightDemo.Bg1);
         // source line 659, bytecode pc 7049
         this._updateUserInfo(i, model);
-        // source line 597, bytecode pc 7063
-        (i = (+i + 1));
+        // source line 597, bytecode pc 7064
+        i++;
     }
     // source line 665, bytecode pc 7115
     (this.btnClose = xs.Views.Btn.createByStyleId("BS_Corner2_RB"));
@@ -909,8 +909,8 @@
                         (_isFromOrTo = true);
                         break;
                     }
-                    // source line 1009, bytecode pc 180
-                    (k = (+k + 1));
+                    // source line 1009, bytecode pc 181
+                    k++;
                 }
                 if ((_isFromOrTo === false)) {
                     // source line 1018, bytecode pc 214
@@ -923,8 +923,8 @@
                             (_isFromOrTo = true);
                             break;
                         }
-                        // source line 1018, bytecode pc 278
-                        (k = (+k + 1));
+                        // source line 1018, bytecode pc 279
+                        k++;
                     }
                 }
                 if (_isFromOrTo) {
@@ -938,11 +938,11 @@
                     }
                 }
             }
-            // source line 1001, bytecode pc 447
-            (j = (+j + 1));
+            // source line 1001, bytecode pc 448
+            j++;
         }
-        // source line 1000, bytecode pc 487
-        (i = (+i + 1));
+        // source line 1000, bytecode pc 488
+        i++;
     }
 },
     blackHalf_Others_revert: function(isBlack, data) {
@@ -957,11 +957,11 @@
                 // source line 1090, bytecode pc 95
                 this.cardViews[i][j].setBaseColor(cc.c3b(255, 255, 255));
             }
-            // source line 1086, bytecode pc 109
-            (j = (+j + 1));
+            // source line 1086, bytecode pc 110
+            j++;
         }
-        // source line 1085, bytecode pc 149
-        (i = (+i + 1));
+        // source line 1085, bytecode pc 150
+        i++;
     }
 },
     createHideFromAction: function(data) {
@@ -975,8 +975,8 @@
     while ((i < _fromViews.length)) {
         // source line 1105, bytecode pc 51
         _fromViews[i].setVisible(false);
-        // source line 1104, bytecode pc 65
-        (i = (+i + 1));
+        // source line 1104, bytecode pc 66
+        i++;
     }
 }.bind(data));
 },
@@ -991,8 +991,8 @@
     while ((i < _fromViews.length)) {
         // source line 1122, bytecode pc 51
         _fromViews[i].setVisible(true);
-        // source line 1121, bytecode pc 65
-        (i = (+i + 1));
+        // source line 1121, bytecode pc 66
+        i++;
     }
 }.bind(data));
 },
@@ -1038,11 +1038,11 @@
             (_tmp = _views[i]);
             // source line 1193, bytecode pc 169
             _tmp.setVisible(true);
-            // source line 1191, bytecode pc 183
-            (i = (+i + 1));
+            // source line 1191, bytecode pc 184
+            i++;
         }
-        // source line 1187, bytecode pc 216
-        (k = (+k + 1));
+        // source line 1187, bytecode pc 217
+        k++;
     }
 }.bind(data)),
     xs.Utils.Action.combineSpawn(_actions)
@@ -1076,11 +1076,11 @@
 ])));
                 }
             }
-            // source line 1234, bytecode pc 455
-            (j = (+j + 1));
+            // source line 1234, bytecode pc 456
+            j++;
         }
-        // source line 1233, bytecode pc 495
-        (i = (+i + 1));
+        // source line 1233, bytecode pc 496
+        i++;
     }
     // source line 1267, bytecode pc 844
     _actions.push(cc.TargetedAction.create(this.getBg(), xs.Utils.Action.combineSequence([
@@ -1120,11 +1120,11 @@
         if (((_tmp.hp > 0) && !_tmp.isCure)) {
             // source line 1307, bytecode pc 168
             (_hpAll = (_hpAll + xs.Utils.parseIntSafe(_tmp.hp)));
-            // source line 1308, bytecode pc 182
-            (_count = (+_count + 1));
+            // source line 1308, bytecode pc 183
+            _count++;
         }
-        // source line 1302, bytecode pc 197
-        (i = (+i + 1));
+        // source line 1302, bytecode pc 198
+        i++;
     }
     if ((_count <= 1)) {
         if ((_input.loopNum && (_input.loopNum > 1))) {
@@ -1205,14 +1205,14 @@
             while ((j < _childsTmp.length)) {
                 // source line 1398, bytecode pc 267
                 _childsTmp[j].pauseSchedulerAndActions();
-                // source line 1397, bytecode pc 281
-                (j = (+j + 1));
+                // source line 1397, bytecode pc 282
+                j++;
             }
-            // source line 1389, bytecode pc 314
-            (i = (+i + 1));
+            // source line 1389, bytecode pc 315
+            i++;
         }
-        // source line 1385, bytecode pc 347
-        (k = (+k + 1));
+        // source line 1385, bytecode pc 348
+        k++;
     }
     // source line 1404, bytecode pc 381
     _env.pauseSchedulerAndActions();
@@ -1263,14 +1263,14 @@
             while ((j < _childsTmp.length)) {
                 // source line 1454, bytecode pc 267
                 _childsTmp[j].resumeSchedulerAndActions();
-                // source line 1453, bytecode pc 281
-                (j = (+j + 1));
+                // source line 1453, bytecode pc 282
+                j++;
             }
-            // source line 1445, bytecode pc 314
-            (i = (+i + 1));
+            // source line 1445, bytecode pc 315
+            i++;
         }
-        // source line 1441, bytecode pc 347
-        (k = (+k + 1));
+        // source line 1441, bytecode pc 348
+        k++;
     }
     // source line 1458, bytecode pc 381
     _env.resumeSchedulerAndActions();
@@ -1305,11 +1305,11 @@
                 // source line 1491, bytecode pc 70
                 this.cardViews[i][j].setVisible(flag);
             }
-            // source line 1489, bytecode pc 84
-            (j = (+j + 1));
+            // source line 1489, bytecode pc 85
+            j++;
         }
-        // source line 1488, bytecode pc 124
-        (i = (+i + 1));
+        // source line 1488, bytecode pc 125
+        i++;
     }
 },
     createShowAllAction: function(data) {
@@ -1404,12 +1404,12 @@
                 _actionsSeq.push(cc.MoveBy.create(((_dp * 1) / xs.fps), cc.p(0, -4)));
                 // source line 1652, bytecode pc 721
                 _actions.push(cc.TargetedAction.create(_tmp, xs.Utils.Action.combineSequence(_actionsSeq)));
-                // source line 1619, bytecode pc 735
-                (j = (+j + 1));
+                // source line 1619, bytecode pc 736
+                j++;
             }
         }
-        // source line 1613, bytecode pc 767
-        (i = (+i + 1));
+        // source line 1613, bytecode pc 768
+        i++;
     }
     // source line 1662, bytecode pc 814
     (_ret = xs.Utils.Action.combineSpawn(_actions));
@@ -1462,12 +1462,12 @@
                 _actionsSeq.push(cc.MoveBy.create(((_dp * 1) / xs.fps), cc.p((factor * 8), 0)));
                 // source line 1731, bytecode pc 753
                 _actions.push(cc.TargetedAction.create(_tmp, xs.Utils.Action.combineSequence(_actionsSeq)));
-                // source line 1695, bytecode pc 767
-                (j = (+j + 1));
+                // source line 1695, bytecode pc 768
+                j++;
             }
         }
-        // source line 1689, bytecode pc 799
-        (i = (+i + 1));
+        // source line 1689, bytecode pc 800
+        i++;
     }
     // source line 1738, bytecode pc 835
     this.dump("_actions", _actions);
@@ -1509,8 +1509,8 @@
         _actionsFrom.push(_fromTmpAction);
         // source line 1794, bytecode pc 386
         _actionsTo.push(null);
-        // source line 1781, bytecode pc 400
-        (i = (+i + 1));
+        // source line 1781, bytecode pc 401
+        i++;
     }
     // source line 1801, bytecode pc 515
     return xs.Utils.Action.combineSpawn([ xs.Utils.Action.combineSequence(_actionsFrom), xs.Utils.Action.combineSequence(_actionsTo) ]);
@@ -1778,8 +1778,8 @@
     xs.Utils.Action.combineSpawn([ _arm.createPlayAction(_aniKey, { speed: _base_dp }) ]),
     null
 ]));
-        // source line 2080, bytecode pc 1046
-        (i = (+i + 1));
+        // source line 2080, bytecode pc 1047
+        i++;
     }
     // source line 2173, bytecode pc 1108
     (_ret = xs.Utils.Action.combineSpawn(_actionsSpawn));
@@ -1816,8 +1816,8 @@
         // source line 2221, bytecode pc 148
         (_cardModel = _initData.getCardModelByIdx(i));
         if ((_cardModel === null)) {
-            // source line 2226, bytecode pc 172
-            (_count = (+_count + 1));
+            // source line 2226, bytecode pc 173
+            _count++;
         } else {
             // source line 2230, bytecode pc 201
             (_side = ((i < _length) ? 0 : 1));
@@ -1835,8 +1835,8 @@
             // source line 2248, bytecode pc 410
             _actions.push(cc.TargetedAction.create(_tmpView, cc.MoveTo.create(_dp, cc.p(_posX, _tmpView.getPositionY()))));
         }
-        // source line 2214, bytecode pc 424
-        (i = (+i + 1));
+        // source line 2214, bytecode pc 425
+        i++;
     }
     // source line 2255, bytecode pc 482
     (_ret = xs.Utils.Action.combineSpawn(_actions));
@@ -1885,9 +1885,8 @@
     updateDeathNum: function(para, input, side) {
     // source line 2308, bytecode pc 24
     this.markFuncBegin("updateDeathNum", "begin");
-    /* TODO_BYTECODE pc=69 opcode=toid reason=opcode_handler_not_implemented */
-    // source line 2312, bytecode pc 83
-    (this.model.deathNum[undefined /* TODO_BYTECODE pc=69 opcode=toid reason=opcode_handler_not_implemented */] = (+this.model.deathNum[undefined /* TODO_BYTECODE pc=69 opcode=toid reason=opcode_handler_not_implemented */] + 1));
+    // source line 2312, bytecode pc 84
+    this.model.deathNum[((side === 0) ? input.sideFrom : input.sideTo)]++;
     // source line 2314, bytecode pc 136
     this._updateUserInfo(((side === 0) ? input.sideFrom : input.sideTo), this.model);
     // source line 2316, bytecode pc 161
@@ -1962,8 +1961,8 @@
                 para.env.model.setCardModelByIdx(para.toIdxs[i], null);
             }
         }
-        // source line 2407, bytecode pc 201
-        (i = (+i + 1));
+        // source line 2407, bytecode pc 202
+        i++;
     }
     // source line 2419, bytecode pc 245
     this.markFuncEnd("updateBackupModel", "end");
@@ -2771,8 +2770,8 @@
                 }
             }
         }
-        // source line 3415, bytecode pc 1297
-        (i = (+i + 1));
+        // source line 3415, bytecode pc 1298
+        i++;
     }
     if (_is_done) {
         // source line 3551, bytecode pc 1347
@@ -2866,8 +2865,8 @@
                 }
             }
         }
-        // source line 3555, bytecode pc 2198
-        (i = (+i + 1));
+        // source line 3555, bytecode pc 2199
+        i++;
     }
 },
     onEnterTransitionDidFinish: function() {
@@ -3002,10 +3001,8 @@
     // source line 3798, bytecode pc 36
     (_item = _rounds.getCurItem());
     if ((this.params.fightType === xs.Constant_FightScene_Type_NewPlayer)) {
-        // source line 3802, bytecode pc 112
-        (this.m_npf_idx = (+this.m_npf_idx + 1));
         // source line 3802, bytecode pc 117
-        xs.Tools.Statistic.event_forNewPlayerFight(+this.m_npf_idx);
+        xs.Tools.Statistic.event_forNewPlayerFight(this.m_npf_idx++);
     }
     if (xs.skipFightIfErr) {
         try {
@@ -3284,8 +3281,8 @@
 }.bind({ layer: this, statusId: _statusId, side: _side }), xs.unuse_this));
         // source line 4133, bytecode pc 822
         _sideActions.push(xs.Utils.Action.combineSequence(_arrActions));
-        // source line 4091, bytecode pc 836
-        (i = (+i + 1));
+        // source line 4091, bytecode pc 837
+        i++;
     }
     // source line 4136, bytecode pc 886
     return xs.Utils.Action.combineSpawn(_sideActions);
@@ -3460,14 +3457,14 @@
         case 0:
         // source line 4384, bytecode pc 57
         xs.Views.Mgr.displayLoadingLayer();
-        // source line 4385, bytecode pc 83
-        (this.step0 = (+this.step0 + 1));
+        // source line 4385, bytecode pc 84
+        this.step0++;
         break;
         case 1:
         // source line 4390, bytecode pc 102
         this.init0();
-        // source line 4391, bytecode pc 128
-        (this.step0 = (+this.step0 + 1));
+        // source line 4391, bytecode pc 129
+        this.step0++;
         break;
         case 2:
         // source line 4399, bytecode pc 147

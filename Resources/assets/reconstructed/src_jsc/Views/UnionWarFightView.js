@@ -109,8 +109,8 @@
             // source line 101, bytecode pc 1139
             this.team2_headViews.push(fightHeadView);
         }
-        // source line 59, bytecode pc 1153
-        (i = (+i + 1));
+        // source line 59, bytecode pc 1154
+        i++;
     }
     // source line 104, bytecode pc 1192
     this.scrollContainerView.addChild(this.team1_view);
@@ -157,8 +157,8 @@
         (headView = this.team1_headViews[i]);
         // source line 146, bytecode pc 48
         headView.showHeadViewResult();
-        // source line 144, bytecode pc 62
-        (i = (+i + 1));
+        // source line 144, bytecode pc 63
+        i++;
     }
     // source line 148, bytecode pc 89
     (i = 0);
@@ -167,8 +167,8 @@
         (headView = this.team2_headViews[i]);
         // source line 150, bytecode pc 133
         headView.showHeadViewResult();
-        // source line 148, bytecode pc 147
-        (i = (+i + 1));
+        // source line 148, bytecode pc 148
+        i++;
     }
     // source line 154, bytecode pc 211
     (winSp = xs.Factorys.Sprite.create("GuildDialog_shengchu", "GuildDialog"));
@@ -236,8 +236,8 @@
     (this.isTeamView1Ready = false);
     // source line 208, bytecode pc 347
     (this.isTeamView2Ready = false);
-    // source line 211, bytecode pc 373
-    (this.fightStep = (+this.fightStep + 1));
+    // source line 211, bytecode pc 374
+    this.fightStep++;
 },
     atkFinish: function(playerHeadFightView) {
     var _teamNo, upAction;
@@ -253,13 +253,13 @@
 }.bind(this))
 ]));
         if ((_teamNo == 1)) {
-            // source line 231, bytecode pc 223
-            (this.team1_fightingIdx = (+this.team1_fightingIdx + 1));
+            // source line 231, bytecode pc 224
+            this.team1_fightingIdx++;
             // source line 232, bytecode pc 246
             this.team1_view.runAction(upAction);
         } else {
-            // source line 235, bytecode pc 277
-            (this.team2_fightingIdx = (+this.team2_fightingIdx + 1));
+            // source line 235, bytecode pc 278
+            this.team2_fightingIdx++;
             // source line 236, bytecode pc 300
             this.team2_view.runAction(upAction);
         }
@@ -305,8 +305,8 @@
         (arrVsList[i].tag = this.battleFightInfo.getTag());
         // source line 272, bytecode pc 196
         (arrVsList[i].battle_id = this.battleFightInfo.getBattleId());
-        // source line 267, bytecode pc 210
-        (i = (+i + 1));
+        // source line 267, bytecode pc 211
+        i++;
     }
     // source line 275, bytecode pc 266
     xs.Views.Mgr.showDialogByName("UnionWarBattleResultDialog", arrVsList);
@@ -324,16 +324,16 @@
     while ((i < this.team1_headViews.length)) {
         // source line 285, bytecode pc 94
         this.team1_headViews[i].setBaseTouchPriority(this.m_baseTouchPriority);
-        // source line 284, bytecode pc 108
-        (i = (+i + 1));
+        // source line 284, bytecode pc 109
+        i++;
     }
     // source line 287, bytecode pc 135
     (i = 0);
     while ((i < this.team2_headViews.length)) {
         // source line 288, bytecode pc 170
         this.team2_headViews[i].setBaseTouchPriority(this.m_baseTouchPriority);
-        // source line 287, bytecode pc 184
-        (i = (+i + 1));
+        // source line 287, bytecode pc 185
+        i++;
     }
 }
 }));

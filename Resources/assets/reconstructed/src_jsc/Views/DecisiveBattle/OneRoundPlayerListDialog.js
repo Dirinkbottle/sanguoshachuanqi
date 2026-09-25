@@ -309,8 +309,8 @@
             (uidPosition = i);
             break;
         }
-        // source line 272, bytecode pc 159
-        (i = (+i + 1));
+        // source line 272, bytecode pc 160
+        i++;
     }
     // source line 281, bytecode pc 199
     (y = (((length - uidPosition) * 118) - 530));

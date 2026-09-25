@@ -61,8 +61,8 @@
             // source line 55, bytecode pc 135
             idNullList.push(forgePieceList[i]);
         }
-        // source line 50, bytecode pc 149
-        (i = (+i + 1));
+        // source line 50, bytecode pc 150
+        i++;
     }
     // source line 59, bytecode pc 190
     (list = list.concat(idNullList));

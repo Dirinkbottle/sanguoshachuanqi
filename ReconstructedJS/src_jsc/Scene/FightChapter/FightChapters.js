@@ -434,8 +434,8 @@
 },
     timer: function(dt) {
     if ((this.touchBegan === true)) {
-        // source line 384, bytecode pc 38
-        (this.touchStartTime = (+this.touchStartTime + 1));
+        // source line 384, bytecode pc 39
+        this.touchStartTime++;
     } else {
         // source line 386, bytecode pc 52
         (this.touchStartTime = 0);

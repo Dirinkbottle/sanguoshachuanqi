@@ -32,8 +32,8 @@
                 // source line 30, bytecode pc 133
                 (this.iconArray[i] = null);
             }
-            // source line 26, bytecode pc 147
-            (i = (+i + 1));
+            // source line 26, bytecode pc 148
+            i++;
         }
     }
     // source line 35, bytecode pc 174
@@ -119,8 +119,8 @@
         xs.Profile.GameData.Mgr.getInstance().Combat.getNotify().postNotification(xs.Views.CombatUpgradeView_Notify_SoulSelectChange);
     }
 }.bind({ model: data[i], self: this, icon: this.iconArray[i] }));
-        // source line 35, bytecode pc 727
-        (i = (+i + 1));
+        // source line 35, bytecode pc 728
+        i++;
     }
 },
     setModelType: function(type) {
@@ -144,8 +144,8 @@
             // source line 125, bytecode pc 102
             posArray.push(worldPos);
         }
-        // source line 121, bytecode pc 116
-        (i = (+i + 1));
+        // source line 121, bytecode pc 117
+        i++;
     }
     // source line 128, bytecode pc 142
     return posArray;

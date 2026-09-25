@@ -104,8 +104,8 @@ var buckets;
             // source line 137, bytecode pc 74
             return i;
         }
-        // source line 135, bytecode pc 88
-        (i = (+i + 1));
+        // source line 135, bytecode pc 89
+        i++;
     }
     // source line 140, bytecode pc 105
     return -1;
@@ -124,8 +124,8 @@ var buckets;
             // source line 158, bytecode pc 78
             return i;
         }
-        // source line 156, bytecode pc 92
-        (i = (+i - 1));
+        // source line 156, bytecode pc 93
+        i--;
     }
     // source line 161, bytecode pc 107
     return -1;
@@ -162,11 +162,11 @@ var buckets;
     (i = 0);
     while ((i < length)) {
         if (equals(array[i], item)) {
-            // source line 210, bytecode pc 89
-            (freq = (+freq + 1));
+            // source line 210, bytecode pc 90
+            freq++;
         }
-        // source line 208, bytecode pc 104
-        (i = (+i + 1));
+        // source line 208, bytecode pc 105
+        i++;
     }
     // source line 213, bytecode pc 122
     return freq;
@@ -189,8 +189,8 @@ var buckets;
             // source line 236, bytecode pc 101
             return false;
         }
-        // source line 234, bytecode pc 115
-        (i = (+i + 1));
+        // source line 234, bytecode pc 116
+        i++;
     }
     // source line 239, bytecode pc 131
     return true;
@@ -228,8 +228,8 @@ var buckets;
             // source line 279, bytecode pc 47
             return void 0;
         }
-        // source line 277, bytecode pc 61
-        (i = (+i + 1));
+        // source line 277, bytecode pc 62
+        i++;
     }
 });
     // source line 290, bytecode pc 349
@@ -281,8 +281,8 @@ var buckets;
             }
         }
     }
-    // source line 348, bytecode pc 308
-    (this.nElements = (+this.nElements + 1));
+    // source line 348, bytecode pc 309
+    this.nElements++;
     // source line 349, bytecode pc 311
     return true;
 });
@@ -334,8 +334,8 @@ var buckets;
             // source line 422, bytecode pc 101
             return index;
         }
-        // source line 424, bytecode pc 115
-        (index = (+index + 1));
+        // source line 424, bytecode pc 116
+        index++;
         // source line 425, bytecode pc 128
         (currentNode = currentNode.next);
     }
@@ -384,8 +384,8 @@ var buckets;
                     (currentNode.next = null);
                 }
             }
-            // source line 491, bytecode pc 281
-            (this.nElements = (+this.nElements - 1));
+            // source line 491, bytecode pc 282
+            this.nElements--;
             // source line 492, bytecode pc 284
             return true;
         }
@@ -474,8 +474,8 @@ var buckets;
             (previous.next = previous.next.next);
         }
     }
-    // source line 574, bytecode pc 274
-    (this.nElements = (+this.nElements - 1));
+    // source line 574, bytecode pc 275
+    this.nElements--;
     // source line 575, bytecode pc 279
     return element;
 });
@@ -562,8 +562,8 @@ var buckets;
     while ((i < index)) {
         // source line 658, bytecode pc 84
         (node = node.next);
-        // source line 657, bytecode pc 98
-        (i = (+i + 1));
+        // source line 657, bytecode pc 99
+        i++;
     }
     // source line 660, bytecode pc 116
     return node;
@@ -606,8 +606,8 @@ var buckets;
     // source line 748, bytecode pc 94
     (previousElement = this.table[k]);
     if (buckets.isUndefined(previousElement)) {
-        // source line 750, bytecode pc 145
-        (this.nElements = (+this.nElements + 1));
+        // source line 750, bytecode pc 146
+        this.nElements++;
         // source line 751, bytecode pc 155
         (ret = undefined);
     } else {
@@ -628,9 +628,9 @@ var buckets;
     (previousElement = this.table[k]);
     if (!buckets.isUndefined(previousElement)) {
         // source line 772, bytecode pc 70
-        delete k[this.table];
-        // source line 773, bytecode pc 96
-        (this.nElements = (+this.nElements - 1));
+        delete this.table[k];
+        // source line 773, bytecode pc 97
+        this.nElements--;
         // source line 774, bytecode pc 106
         return previousElement.value;
     }
@@ -790,11 +790,11 @@ var buckets;
         while ((j < v.length)) {
             // source line 986, bytecode pc 85
             array.push(v[j]);
-            // source line 985, bytecode pc 99
-            (j = (+j + 1));
+            // source line 985, bytecode pc 100
+            j++;
         }
-        // source line 983, bytecode pc 132
-        (i = (+i + 1));
+        // source line 983, bytecode pc 133
+        i++;
     }
     // source line 989, bytecode pc 155
     return array;
@@ -1356,11 +1356,11 @@ var buckets;
         while ((j < copies)) {
             // source line 1877, bytecode pc 117
             a.push(element);
-            // source line 1876, bytecode pc 131
-            (j = (+j + 1));
+            // source line 1876, bytecode pc 132
+            j++;
         }
-        // source line 1872, bytecode pc 159
-        (i = (+i + 1));
+        // source line 1872, bytecode pc 160
+        i++;
     }
     // source line 1880, bytecode pc 177
     return a;
@@ -1381,8 +1381,8 @@ var buckets;
         (value = elements[i].value);
         // source line 1893, bytecode pc 104
         set.add(value);
-        // source line 1891, bytecode pc 118
-        (i = (+i + 1));
+        // source line 1891, bytecode pc 119
+        i++;
     }
     // source line 1895, bytecode pc 136
     return set;
@@ -1403,8 +1403,8 @@ var buckets;
             // source line 1911, bytecode pc 61
             return false;
         }
-        // source line 1909, bytecode pc 75
-        (i = (+i + 1));
+        // source line 1909, bytecode pc 76
+        i++;
     }
     // source line 1914, bytecode pc 91
     return true;
@@ -1443,8 +1443,8 @@ var buckets;
         return false;
     }
     if ((this.insertNode(this.createNode(element)) !== null)) {
-        // source line 1989, bytecode pc 88
-        (this.nElements = (+this.nElements + 1));
+        // source line 1989, bytecode pc 89
+        this.nElements++;
         // source line 1990, bytecode pc 91
         return true;
     }
@@ -1488,8 +1488,8 @@ var buckets;
     }
     // source line 2041, bytecode pc 55
     this.removeNode(node);
-    // source line 2042, bytecode pc 81
-    (this.nElements = (+this.nElements - 1));
+    // source line 2042, bytecode pc 82
+    this.nElements--;
     // source line 2043, bytecode pc 84
     return true;
 });

@@ -145,8 +145,8 @@
             // source line 121, bytecode pc 526
             this.pageButtons[i].setSelected(true);
         }
-        // source line 117, bytecode pc 540
-        (i = (+i + 1));
+        // source line 117, bytecode pc 541
+        i++;
     }
     // source line 125, bytecode pc 582
     this.curPageView.setVisible(true);
@@ -242,8 +242,8 @@
                 return void 0;
             }
         }
-        // source line 200, bytecode pc 172
-        (i = (+i + 1));
+        // source line 200, bytecode pc 173
+        i++;
     }
     // source line 219, bytecode pc 211
     sender.setSelected(true);
@@ -259,8 +259,8 @@
                 this.selectPage(i);
             }
         }
-        // source line 220, bytecode pc 316
-        (i = (+i + 1));
+        // source line 220, bytecode pc 317
+        i++;
     }
 },
     getAdjustPos: function(idx) {
@@ -415,8 +415,8 @@
             default:
             // source line 347, bytecode pc 1811
             this.setIconNum(pageIdx, hintNum);
-            // source line 267, bytecode pc 1825
-            (i = (+i + 1));
+            // source line 267, bytecode pc 1826
+            i++;
             break;
         }
     }
@@ -464,8 +464,8 @@
                 this.viewArrays[i].setTouchPriority((this.m_baseTouchPriority + xs.Views.TablePage.cfg.view.priority));
             }
         }
-        // source line 374, bytecode pc 231
-        (i = (+i + 1));
+        // source line 374, bytecode pc 232
+        i++;
     }
     // source line 382, bytecode pc 258
     (i = 0);
@@ -479,8 +479,8 @@
                 this.pageButtons[i].setTouchPriority((this.m_baseTouchPriority + xs.Views.TablePage.cfg.btn.priority));
             }
         }
-        // source line 382, bytecode pc 475
-        (i = (+i + 1));
+        // source line 382, bytecode pc 476
+        i++;
     }
 },
     onExit: function() {

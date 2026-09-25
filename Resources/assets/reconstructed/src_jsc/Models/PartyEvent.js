@@ -88,11 +88,11 @@
         // source line 95, bytecode pc 29
         (_tmp = this.m_reward_list[i]);
         if ((_tmp.status.is_received === true)) {
-            // source line 97, bytecode pc 63
-            (_count = (+_count + 1));
+            // source line 97, bytecode pc 64
+            _count++;
         }
-        // source line 94, bytecode pc 78
-        (i = (+i + 1));
+        // source line 94, bytecode pc 79
+        i++;
     }
     // source line 101, bytecode pc 104
     return _count;

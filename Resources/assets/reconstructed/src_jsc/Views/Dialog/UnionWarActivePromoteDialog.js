@@ -79,8 +79,8 @@
         mBtn.setTouchPriority((this.m_baseTouchPriority - 1));
         // source line 74, bytecode pc 406
         (this[("btn_" + keyIndx)] = mBtn);
-        // source line 64, bytecode pc 420
-        (keyIndx = (+keyIndx + 1));
+        // source line 64, bytecode pc 421
+        keyIndx++;
     }
 },
     _getObjKeyList: function(mObj) {
@@ -146,8 +146,8 @@
             // source line 131, bytecode pc 115
             this[("btn_" + i)].setTouchPriority((this.m_baseTouchPriority - 1));
         }
-        // source line 129, bytecode pc 129
-        (i = (+i + 1));
+        // source line 129, bytecode pc 130
+        i++;
     }
 }
 }));

@@ -166,11 +166,11 @@
                 // source line 195, bytecode pc 320
                 return _ret;
             }
-            // source line 177, bytecode pc 334
-            (j = (+j + 1));
+            // source line 177, bytecode pc 335
+            j++;
         }
-        // source line 176, bytecode pc 367
-        (i = (+i + 1));
+        // source line 176, bytecode pc 368
+        i++;
     }
     // source line 199, bytecode pc 390
     return _ret;
@@ -187,8 +187,8 @@
         while ((i < bonesCfg.length)) {
             // source line 209, bytecode pc 47
             this.modifyBone_newway(input, arm, bonesCfg[i]);
-            // source line 208, bytecode pc 61
-            (i = (+i + 1));
+            // source line 208, bytecode pc 62
+            i++;
         }
     }
 },
@@ -438,8 +438,8 @@
     if (_itemView.getParent()) {
         // source line 541, bytecode pc 79
         _itemView.getParent().removeChild(_itemView);
-        // source line 543, bytecode pc 109
-        (xs.tmpRemoveCount = (+xs.tmpRemoveCount + 1));
+        // source line 543, bytecode pc 110
+        xs.tmpRemoveCount++;
         // source line 546, bytecode pc 144
         xs.log("xs.tmpRemoveCount", xs.tmpRemoveCount);
         // source line 552, bytecode pc 255
@@ -485,8 +485,8 @@
             // source line 622, bytecode pc 221
             _tmpView._setZOrder(_z);
         }
-        // source line 618, bytecode pc 235
-        (i = (+i + 1));
+        // source line 618, bytecode pc 236
+        i++;
     }
 }.bind([ _parentView, _itemView, _input ]), xs.unuse_this));
             // source line 634, bytecode pc 1126
@@ -501,8 +501,8 @@
     if (this[1].getParent()) {
         // source line 658, bytecode pc 39
         this[0].removeChild(this[1], true);
-        // source line 659, bytecode pc 69
-        (xs.tmpRemoveCount = (+xs.tmpRemoveCount - 1));
+        // source line 659, bytecode pc 70
+        xs.tmpRemoveCount--;
     }
 }.bind([ _parentView, _itemView ]), xs.unuse_this));
     }
@@ -519,8 +519,8 @@
             // source line 677, bytecode pc 78
             _tmpView._setZOrder(_tmpView.original.zOrder);
         }
-        // source line 673, bytecode pc 92
-        (i = (+i + 1));
+        // source line 673, bytecode pc 93
+        i++;
     }
 }.bind(_input), xs));
     }
@@ -994,8 +994,8 @@
                         (_ret = true);
                         break;
                     }
-                    // source line 1298, bytecode pc 228
-                    (i = (+i + 1));
+                    // source line 1298, bytecode pc 229
+                    i++;
                 }
             }
         }
@@ -1047,8 +1047,8 @@
                                 (_ret = true);
                                 break;
                             }
-                            // source line 1355, bytecode pc 314
-                            (i = (+i + 1));
+                            // source line 1355, bytecode pc 315
+                            i++;
                         }
                     }
                 }

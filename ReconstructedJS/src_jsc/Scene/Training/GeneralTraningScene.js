@@ -545,8 +545,8 @@
             (notHaveCanThankTrain = false);
             break;
         }
-        // source line 462, bytecode pc 81
-        (i = (+i + 1));
+        // source line 462, bytecode pc 82
+        i++;
     }
     // source line 468, bytecode pc 107
     return notHaveCanThankTrain;
@@ -562,8 +562,8 @@
             // source line 475, bytecode pc 87
             list.push(this.m_dataSource[i]);
         }
-        // source line 473, bytecode pc 101
-        (i = (+i + 1));
+        // source line 473, bytecode pc 102
+        i++;
     }
     // source line 478, bytecode pc 127
     return list;
@@ -743,8 +743,8 @@
             // source line 631, bytecode pc 75
             list.push(this.m_allDataSource[i]);
         }
-        // source line 628, bytecode pc 89
-        (i = (+i + 1));
+        // source line 628, bytecode pc 90
+        i++;
     }
     // source line 634, bytecode pc 115
     return list;
@@ -758,8 +758,8 @@
     while ((i < this.m_dataSource.length)) {
         // source line 639, bytecode pc 62
         this.m_dataSource[i].unschedule();
-        // source line 638, bytecode pc 76
-        (i = (+i + 1));
+        // source line 638, bytecode pc 77
+        i++;
     }
 },
     onEnterTransitionDidFinish: function() {

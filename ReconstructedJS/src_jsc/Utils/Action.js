@@ -75,8 +75,8 @@
             // source line 93, bytecode pc 118
             (_arrSafe[i] = cc.TargetedAction.create(target, _arrSafe[i]));
         }
-        // source line 87, bytecode pc 132
-        (i = (+i + 1));
+        // source line 87, bytecode pc 133
+        i++;
     }
     // source line 97, bytecode pc 179
     return this.combine(_arrSafe, cc.Sequence);

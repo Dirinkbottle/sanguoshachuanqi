@@ -370,8 +370,8 @@ var clearTimeout;
     }
     // source line 267, bytecode pc 67
     (p = cc._reuse_p[cc._reuse_p_index]);
-    // source line 268, bytecode pc 97
-    (cc._reuse_p_index = (+cc._reuse_p_index + 1));
+    // source line 268, bytecode pc 98
+    cc._reuse_p_index++;
     // source line 269, bytecode pc 110
     (p.x = x);
     // source line 270, bytecode pc 122
@@ -640,8 +640,8 @@ var clearTimeout;
             // source line 497, bytecode pc 30
             return i;
         }
-        // source line 495, bytecode pc 44
-        (i = (+i + 1));
+        // source line 495, bytecode pc 45
+        i++;
     }
     // source line 499, bytecode pc 66
     return -1;
@@ -661,8 +661,8 @@ var clearTimeout;
             // source line 516, bytecode pc 47
             arr.splice(i, 1);
         }
-        // source line 514, bytecode pc 61
-        (i = (+i + 1));
+        // source line 514, bytecode pc 62
+        i++;
     }
 });
 // source line 524, bytecode pc 2716
@@ -1058,10 +1058,8 @@ var clearTimeout;
     _code: null,
     _intervalId: 0,
     ctor: function(code) {
-    // source line 857, bytecode pc 29
-    (_windowTimeIntervalId = (+_windowTimeIntervalId + 1));
     // source line 857, bytecode pc 35
-    (this._intervalId = +_windowTimeIntervalId);
+    (this._intervalId = _windowTimeIntervalId++);
     // source line 858, bytecode pc 45
     (this._code = code);
 },
@@ -1117,7 +1115,7 @@ var clearTimeout;
         // source line 905, bytecode pc 77
         cc.Director.getInstance().getScheduler().unscheduleCallbackForTarget(target, target.fun);
         // source line 906, bytecode pc 87
-        delete intervalId[_windowTimeFunHash];
+        delete _windowTimeFunHash[intervalId];
     }
 });
 // source line 909, bytecode pc 3855

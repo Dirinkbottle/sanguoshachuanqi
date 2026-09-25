@@ -94,8 +94,8 @@
     while ((i < strings.length)) {
         // source line 68, bytecode pc 61
         (contentStr = (contentStr + xs.Tools.String.createString(strings[i])));
-        // source line 67, bytecode pc 75
-        (i = (+i + 1));
+        // source line 67, bytecode pc 76
+        i++;
     }
     // source line 71, bytecode pc 116
     this.m_content.setString(contentStr);

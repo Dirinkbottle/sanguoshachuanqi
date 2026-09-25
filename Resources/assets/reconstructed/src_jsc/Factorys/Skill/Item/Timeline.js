@@ -149,8 +149,8 @@
             while ((i < tl.aniIds.length)) {
                 // source line 188, bytecode pc 463
                 _tmpActions.push(input.itemView.createPlayAction(tl.aniIds[i], _control, null));
-                // source line 187, bytecode pc 477
-                (i = (+i + 1));
+                // source line 187, bytecode pc 478
+                i++;
             }
             // source line 190, bytecode pc 535
             (_ret = xs.Utils.Action.combineSequence(_tmpActions));

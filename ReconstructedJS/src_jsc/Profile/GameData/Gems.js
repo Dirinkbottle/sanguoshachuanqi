@@ -42,8 +42,8 @@
             // source line 48, bytecode pc 64
             return mGemDate;
         }
-        // source line 43, bytecode pc 78
-        (mGemIdx = (+mGemIdx + 1));
+        // source line 43, bytecode pc 79
+        mGemIdx++;
     }
     // source line 51, bytecode pc 99
     return null;
@@ -65,8 +65,8 @@
             // source line 64, bytecode pc 129
             mList.push(mGemDate);
         }
-        // source line 59, bytecode pc 143
-        (mGemIdx = (+mGemIdx + 1));
+        // source line 59, bytecode pc 144
+        mGemIdx++;
     }
     // source line 67, bytecode pc 166
     return mList;

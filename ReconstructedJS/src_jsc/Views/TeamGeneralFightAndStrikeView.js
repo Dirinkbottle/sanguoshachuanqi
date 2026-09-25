@@ -133,8 +133,8 @@
             // source line 113, bytecode pc 696
             (_Int = (_Int + magicalEqu.getPointEffectValAllByType(xs.Constant_AttrType_Int)));
         }
-        // source line 107, bytecode pc 710
-        (i = (+i + 1));
+        // source line 107, bytecode pc 711
+        i++;
     }
     // source line 122, bytecode pc 911
     (_fight_point = (_fight_point + xs.Tools.Card.calculateAttrType_FightPoint((generalModle.getAttr(this.m_generalData, xs.Constant_AttrType_Atk) + _Atk), (generalModle.getAttr(this.m_generalData, xs.Constant_AttrType_Def) + _Def), (generalModle.getAttr(this.m_generalData, xs.Constant_AttrType_Hp) + _Hp), (generalModle.getAttr(this.m_generalData, xs.Constant_AttrType_Int) + _Int))));
@@ -145,8 +145,8 @@
     while ((i < _arr_general_skill_all.length)) {
         // source line 128, bytecode pc 984
         (_fight_point = (_fight_point + _arr_general_skill_all[i].getAttrNaked(xs.Constant_AttrType_FightPoint)));
-        // source line 127, bytecode pc 998
-        (i = (+i + 1));
+        // source line 127, bytecode pc 999
+        i++;
     }
     // source line 131, bytecode pc 1043
     return xs.Utils.parseIntSafe(_fight_point);

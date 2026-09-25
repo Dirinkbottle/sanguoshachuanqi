@@ -180,8 +180,8 @@
             (_surrender.surrender_status = 1);
             // source line 146, bytecode pc 391
             (_surrender.all_progress = all_progress);
-            // source line 147, bytecode pc 405
-            (all_progressed = (+all_progressed + 1));
+            // source line 147, bytecode pc 406
+            all_progressed++;
             // source line 148, bytecode pc 418
             (_surrender.all_progressed = all_progressed);
             // source line 149, bytecode pc 440

@@ -275,8 +275,8 @@
     while ((i < this.m_jiachengPicList.length)) {
         // source line 246, bytecode pc 456
         xs.Utils.Node.safeRemoveChild(this.m_jiachengPicList[i]);
-        // source line 244, bytecode pc 470
-        (i = (+i + 1));
+        // source line 244, bytecode pc 471
+        i++;
     }
     // source line 249, bytecode pc 504
     (this.m_jiachengPicList = []);
@@ -309,8 +309,8 @@
             // source line 292, bytecode pc 1101
             this.m_jiachengPicList.push(label);
         }
-        // source line 251, bytecode pc 1115
-        (i = (+i + 1));
+        // source line 251, bytecode pc 1116
+        i++;
     }
     if ((data.getSkinList().length == 0)) {
         // source line 299, bytecode pc 1180
@@ -541,8 +541,8 @@
 },
     rightCallBack: function() {
     var maxPage;
-    // source line 510, bytecode pc 25
-    (this.m_nowPage = (+this.m_nowPage + 1));
+    // source line 510, bytecode pc 26
+    this.m_nowPage++;
     // source line 511, bytecode pc 38
     (maxPage = (this.m_goddessNum - 1));
     if ((this.m_nowPage == maxPage)) {
@@ -558,8 +558,8 @@
     }
 },
     leftCallBack: function() {
-    // source line 524, bytecode pc 25
-    (this.m_nowPage = (+this.m_nowPage - 1));
+    // source line 524, bytecode pc 26
+    this.m_nowPage--;
     if ((this.m_nowPage == 0)) {
         // source line 526, bytecode pc 59
         this.m_leftButton.setVisible(false);

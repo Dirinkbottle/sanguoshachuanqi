@@ -476,11 +476,11 @@
         (i = 1);
         while ((i < list.length)) {
             if ((list[i].bore_type == fistBoreType)) {
-                // source line 390, bytecode pc 79
-                (AllBoreOneProperty = (+AllBoreOneProperty + 1));
+                // source line 390, bytecode pc 80
+                AllBoreOneProperty++;
             }
-            // source line 388, bytecode pc 94
-            (i = (+i + 1));
+            // source line 388, bytecode pc 95
+            i++;
         }
         if ((AllBoreOneProperty == 5)) {
             // source line 394, bytecode pc 129
@@ -502,8 +502,8 @@
                     // source line 405, bytecode pc 386
                     this.m_BoreAnimation_Array.push(gemLightArm);
                 }
-                // source line 394, bytecode pc 400
-                (i = (+i + 1));
+                // source line 394, bytecode pc 401
+                i++;
             }
         } else {
             // source line 409, bytecode pc 423
@@ -515,8 +515,8 @@
                     // source line 412, bytecode pc 478
                     (this.m_BoreAnimation_Array[i] = null);
                 }
-                // source line 409, bytecode pc 492
-                (i = (+i + 1));
+                // source line 409, bytecode pc 493
+                i++;
             }
         }
     } else {
@@ -529,8 +529,8 @@
                 // source line 421, bytecode pc 579
                 (this.m_BoreAnimation_Array[i] = null);
             }
-            // source line 418, bytecode pc 593
-            (i = (+i + 1));
+            // source line 418, bytecode pc 594
+            i++;
         }
     }
 },
@@ -671,8 +671,8 @@
         this._replaceSp(mSp, (this.cfg.gemOTag + mHoleIdx));
         // source line 557, bytecode pc 121
         this._setLockBtn(mHoleIdx, mHoleType);
-        // source line 552, bytecode pc 135
-        (mHoleIdx = (+mHoleIdx + 1));
+        // source line 552, bytecode pc 136
+        mHoleIdx++;
     }
 },
     _getHoleTypeByIdx: function(mHoleIdx) {

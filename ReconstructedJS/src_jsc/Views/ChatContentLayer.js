@@ -334,8 +334,8 @@
     while ((i < chatModelArray.length)) {
         // source line 297, bytecode pc 97
         (_height = (_height + chatModelArray[i].getCellHeight()));
-        // source line 296, bytecode pc 111
-        (i = (+i + 1));
+        // source line 296, bytecode pc 112
+        i++;
     }
     // source line 301, bytecode pc 151
     (offsetOld = this.m_tableView.getContentOffset());

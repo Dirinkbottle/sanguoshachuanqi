@@ -241,8 +241,8 @@
             // source line 188, bytecode pc 1950
             this[("m_SubStepName_" + i)].setZOrder(2);
         }
-        // source line 183, bytecode pc 1964
-        (i = (+i + 1));
+        // source line 183, bytecode pc 1965
+        i++;
     }
     // source line 192, bytecode pc 2010
     (_numStr = xs.Tools.String.convNumberString(11));
@@ -359,14 +359,14 @@
     (grade = null);
     if ((substep == 10)) {
         if ((step != 10)) {
-            // source line 286, bytecode pc 40
-            (step = (+step + 1));
+            // source line 286, bytecode pc 41
+            step++;
             // source line 287, bytecode pc 46
             (substep = 1);
         }
     } else {
-        // source line 290, bytecode pc 65
-        (substep = (+substep + 1));
+        // source line 290, bytecode pc 66
+        substep++;
     }
     // source line 294, bytecode pc 92
     (grade = { Step: step, subStep: substep });
@@ -421,8 +421,8 @@
         (starBtn = xs.Views.Btn.createInvisibleWithParent(this.m_darkStars[i]));
         // source line 336, bytecode pc 247
         starBtn.setOnClickCallBack(this.ClickStarCallback.bind({ self: this, tag: (i + 1) }));
-        // source line 328, bytecode pc 261
-        (i = (+i + 1));
+        // source line 328, bytecode pc 262
+        i++;
     }
     // source line 341, bytecode pc 284
     (lightStarsNum = this.m_subStep);
@@ -435,8 +435,8 @@
     while ((i < Number(lightStarsNum))) {
         // source line 349, bytecode pc 353
         this.m_lightStars[i].setVisible(true);
-        // source line 348, bytecode pc 367
-        (i = (+i + 1));
+        // source line 348, bytecode pc 368
+        i++;
     }
     if ((this.m_fixedStep == 1)) {
         // source line 355, bytecode pc 429
@@ -520,8 +520,8 @@
     }
 },
     rightButtonCallback: function() {
-    // source line 428, bytecode pc 25
-    (this.m_PagePosition = (+this.m_PagePosition + 1));
+    // source line 428, bytecode pc 26
+    this.m_PagePosition++;
     if ((this.m_PagePosition == 1)) {
         // source line 431, bytecode pc 59
         this.m_left_Button.setVisible(false);
@@ -550,8 +550,8 @@
     this.setForgeButtonStatus(this.m_PagePosition, 1);
 },
     leftButtonCallback: function() {
-    // source line 455, bytecode pc 25
-    (this.m_PagePosition = (+this.m_PagePosition - 1));
+    // source line 455, bytecode pc 26
+    this.m_PagePosition--;
     if ((this.m_PagePosition == 1)) {
         // source line 458, bytecode pc 59
         this.m_left_Button.setVisible(false);
@@ -586,8 +586,8 @@
     while ((i < this.m_lightStars.length)) {
         // source line 483, bytecode pc 34
         this.m_lightStars[i].setVisible(false);
-        // source line 482, bytecode pc 48
-        (i = (+i + 1));
+        // source line 482, bytecode pc 49
+        i++;
     }
     // source line 487, bytecode pc 75
     (lightStarsNum = 0);
@@ -610,8 +610,8 @@
     while ((i < lightStarsNum)) {
         // source line 504, bytecode pc 204
         this.m_lightStars[i].setVisible(true);
-        // source line 503, bytecode pc 218
-        (i = (+i + 1));
+        // source line 503, bytecode pc 219
+        i++;
     }
     // source line 508, bytecode pc 249
     this.setVipPointVisiable(page);
@@ -705,11 +705,11 @@
     (i = 0);
     while ((i < 3)) {
         if ((this.m_haveArray[i] >= this.m_conditionArray[i])) {
-            // source line 591, bytecode pc 55
-            (conditionNum = (+conditionNum + 1));
+            // source line 591, bytecode pc 56
+            conditionNum++;
         }
-        // source line 587, bytecode pc 70
-        (i = (+i + 1));
+        // source line 587, bytecode pc 71
+        i++;
     }
     if ((conditionNum == 3)) {
         // source line 622, bytecode pc 227
@@ -798,8 +798,8 @@
         this.m_haveList[i].setVisible(true);
         // source line 697, bytecode pc 483
         this.m_iconsList[i].setVisible(true);
-        // source line 694, bytecode pc 497
-        (i = (+i + 1));
+        // source line 694, bytecode pc 498
+        i++;
     }
     // source line 700, bytecode pc 522
     (conditionListLength = conditionList.length);
@@ -836,8 +836,8 @@
             // source line 730, bytecode pc 856
             this.m_iconsList[i].setVisible(false);
         }
-        // source line 701, bytecode pc 870
-        (i = (+i + 1));
+        // source line 701, bytecode pc 871
+        i++;
     }
     // source line 741, bytecode pc 919
     (gongInfor = { type: "1", Step: step, SubStep: subStep });
@@ -955,8 +955,8 @@
                 // source line 862, bytecode pc 195
                 (num = (num + Number(step_effectVal)));
             }
-            // source line 858, bytecode pc 209
-            (i = (+i + 1));
+            // source line 858, bytecode pc 210
+            i++;
         }
     } else {
         // source line 868, bytecode pc 246
@@ -970,8 +970,8 @@
                 // source line 874, bytecode pc 343
                 (num = (num + Number(step_effectVal)));
             }
-            // source line 870, bytecode pc 357
-            (i = (+i + 1));
+            // source line 870, bytecode pc 358
+            i++;
         }
     }
     // source line 880, bytecode pc 379
@@ -983,8 +983,8 @@
             // source line 885, bytecode pc 471
             (num = (num + Number(sub_effectVal)));
         }
-        // source line 880, bytecode pc 485
-        (i = (+i + 1));
+        // source line 880, bytecode pc 486
+        i++;
     }
     // source line 891, bytecode pc 503
     return num;
@@ -1098,8 +1098,8 @@
             (EquipmentPieceNum = this.arrayPieces[i].num);
             break;
         }
-        // source line 987, bytecode pc 467
-        (i = (+i + 1));
+        // source line 987, bytecode pc 468
+        i++;
     }
     // source line 995, bytecode pc 503
     (this.m_haveArray[idex] = EquipmentPieceNum);
@@ -1157,8 +1157,8 @@
             (EquipmentPieceNum = this.arraySouls[i].num);
             break;
         }
-        // source line 1041, bytecode pc 467
-        (i = (+i + 1));
+        // source line 1041, bytecode pc 468
+        i++;
     }
     // source line 1050, bytecode pc 503
     (this.m_haveArray[idex] = EquipmentPieceNum);

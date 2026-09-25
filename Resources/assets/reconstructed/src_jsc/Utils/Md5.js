@@ -111,8 +111,8 @@
         (lBytePosition = ((lByteCount % 4) * 8));
         // source line 72, bytecode pc 162
         (lWordArray[lWordCount] = (lWordArray[lWordCount] | (string.charCodeAt(lByteCount) << lBytePosition)));
-        // source line 73, bytecode pc 176
-        (lByteCount = (+lByteCount + 1));
+        // source line 73, bytecode pc 177
+        lByteCount++;
     }
     // source line 75, bytecode pc 207
     (lWordCount = ((lByteCount - (lByteCount % 4)) / 4));
@@ -143,8 +143,8 @@
         (WordToHexValue_temp = ("0" + lByte.toString(16)));
         // source line 88, bytecode pc 118
         (WordToHexValue = (WordToHexValue + WordToHexValue_temp.substr((WordToHexValue_temp.length - 2), 2)));
-        // source line 85, bytecode pc 132
-        (lCount = (+lCount + 1));
+        // source line 85, bytecode pc 133
+        lCount++;
     }
     // source line 90, bytecode pc 149
     return WordToHexValue;
@@ -180,8 +180,8 @@
                 (utftext = (utftext + String.fromCharCode(((c & 63) | 128))));
             }
         }
-        // source line 97, bytecode pc 337
-        (n = (+n + 1));
+        // source line 97, bytecode pc 338
+        n++;
     }
     // source line 116, bytecode pc 360
     return utftext;

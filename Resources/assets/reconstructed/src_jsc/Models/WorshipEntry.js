@@ -33,8 +33,8 @@
     while ((i < this.rank_list.length)) {
         // source line 30, bytecode pc 91
         (this.rank_list[i].server_rank = (i + 1));
-        // source line 29, bytecode pc 105
-        (i = (+i + 1));
+        // source line 29, bytecode pc 106
+        i++;
     }
     // source line 33, bytecode pc 140
     this.clearCache();

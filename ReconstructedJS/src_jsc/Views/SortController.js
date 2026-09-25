@@ -135,8 +135,8 @@
         (strKey = this.cfg.filterResults[idx].stringKey);
         // source line 114, bytecode pc 656
         this.sortStrs.push(xs.Tools.String.createString(strKey));
-        // source line 111, bytecode pc 670
-        (i = (+i + 1));
+        // source line 111, bytecode pc 671
+        i++;
     }
     // source line 119, bytecode pc 707
     this.setSelected(0);
@@ -228,8 +228,8 @@
             (realIdx = i);
             break;
         }
-        // source line 190, bytecode pc 66
-        (i = (+i + 1));
+        // source line 190, bytecode pc 67
+        i++;
     }
     // source line 196, bytecode pc 115
     xs.log(("canbeset =" + realIdx));

@@ -697,8 +697,8 @@
         (this.m_labels[i] = this[("m_cntLab" + i)]);
         // source line 648, bytecode pc 422
         (this.m_labels_light[i] = undefined);
-        // source line 646, bytecode pc 436
-        (i = (+i + 1));
+        // source line 646, bytecode pc 437
+        i++;
     }
     // source line 652, bytecode pc 509
     (this.m_bg = this.m_ccbNode.getChildByTag(xs.Scene.TeamBuild.TeamCntPopView.cfg.m_bg.tag));

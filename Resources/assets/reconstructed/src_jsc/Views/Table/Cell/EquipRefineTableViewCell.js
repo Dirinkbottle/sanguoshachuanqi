@@ -113,8 +113,8 @@
             // source line 94, bytecode pc 646
             this.iconArray[i].setTouchPriority((this.m_baseTouchPriority - 1));
         }
-        // source line 22, bytecode pc 660
-        (i = (+i + 1));
+        // source line 22, bytecode pc 661
+        i++;
     }
 },
     setListener: function(listener) {
@@ -134,8 +134,8 @@
             // source line 109, bytecode pc 102
             posArray.push(worldPos);
         }
-        // source line 105, bytecode pc 116
-        (i = (+i + 1));
+        // source line 105, bytecode pc 117
+        i++;
     }
     // source line 112, bytecode pc 142
     return posArray;
@@ -149,8 +149,8 @@
     while ((i < this.iconArray.length)) {
         // source line 118, bytecode pc 51
         this.iconArray[i].setTouchPriority((this.m_baseTouchPriority - 1));
-        // source line 117, bytecode pc 65
-        (i = (+i + 1));
+        // source line 117, bytecode pc 66
+        i++;
     }
 }
 }));

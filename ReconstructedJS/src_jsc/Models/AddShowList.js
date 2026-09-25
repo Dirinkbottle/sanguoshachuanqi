@@ -22,8 +22,8 @@
         (add = xs.Factorys.Add.createWithJson(jsonData[i]));
         // source line 23, bytecode pc 101
         this.m_data.push(add);
-        // source line 18, bytecode pc 115
-        (i = (+i + 1));
+        // source line 18, bytecode pc 116
+        i++;
     }
     // source line 36, bytecode pc 190
     this.m_data.sort(xs.Tools.Sort.by(xs.Constant_SortType_AddList_Default));

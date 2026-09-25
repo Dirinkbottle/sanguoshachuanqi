@@ -14,8 +14,8 @@
         (_id = arrIds[i]);
         // source line 16, bytecode pc 74
         (this.m_labels[i] = xs.Factorys.Label.createByLabelId(_id));
-        // source line 13, bytecode pc 88
-        (i = (+i + 1));
+        // source line 13, bytecode pc 89
+        i++;
     }
     // source line 19, bytecode pc 120
     this.init();
@@ -31,8 +31,8 @@
         (_id = arrLs[i]);
         // source line 27, bytecode pc 74
         (this.m_labels[i] = xs.Factorys.Label.createByStyleId(_id));
-        // source line 24, bytecode pc 88
-        (i = (+i + 1));
+        // source line 24, bytecode pc 89
+        i++;
     }
     // source line 30, bytecode pc 120
     this.init();
@@ -56,8 +56,8 @@
         this.m_labels[i].setAnchorPoint(xs.ap_lc);
         // source line 59, bytecode pc 202
         xs.Utils.Node.attachNodes(this, this.m_labels[i]);
-        // source line 39, bytecode pc 216
-        (i = (+i + 1));
+        // source line 39, bytecode pc 217
+        i++;
     }
     // source line 65, bytecode pc 251
     this.reloadLayout();
@@ -77,8 +77,8 @@
         (_hMax = ((_size.height > _hMax) ? _size.height : _hMax));
         // source line 79, bytecode pc 191
         (_wMax = (_wMax + _size.width));
-        // source line 74, bytecode pc 205
-        (i = (+i + 1));
+        // source line 74, bytecode pc 206
+        i++;
     }
     // source line 82, bytecode pc 265
     this.setContentSize(cc.size(_wMax, _hMax));
@@ -91,8 +91,8 @@
         this.m_labels[i].setPosition(cc.p(_wOffset, (_hMax / 2)));
         // source line 93, bytecode pc 387
         (_wOffset = (_wOffset + (this.m_labels[i].getContentSize().width * this.m_labels[i].getScaleX())));
-        // source line 85, bytecode pc 401
-        (i = (+i + 1));
+        // source line 85, bytecode pc 402
+        i++;
     }
 },
     getLabelByIdx: function(idx) {
@@ -159,8 +159,8 @@
     while ((i < stringIds.length)) {
         // source line 170, bytecode pc 46
         this.getLabelByIdx(i).setStringById(stringIds[i]);
-        // source line 169, bytecode pc 60
-        (i = (+i + 1));
+        // source line 169, bytecode pc 61
+        i++;
     }
     // source line 172, bytecode pc 92
     this.reloadLayout();
@@ -172,8 +172,8 @@
     while ((i < stringKeys.length)) {
         // source line 177, bytecode pc 73
         this.getLabelByIdx(i).setString(xs.Tools.String.createString(stringKeys[i]));
-        // source line 176, bytecode pc 87
-        (i = (+i + 1));
+        // source line 176, bytecode pc 88
+        i++;
     }
     // source line 179, bytecode pc 119
     this.reloadLayout();
@@ -185,8 +185,8 @@
     while ((i < strings.length)) {
         // source line 184, bytecode pc 46
         this.getLabelByIdx(i).setString(strings[i]);
-        // source line 183, bytecode pc 60
-        (i = (+i + 1));
+        // source line 183, bytecode pc 61
+        i++;
     }
     // source line 186, bytecode pc 92
     this.reloadLayout();
@@ -287,8 +287,8 @@
                 (this._allobj[i].type = "sprite");
             }
         }
-        // source line 231, bytecode pc 521
-        (i = (+i + 1));
+        // source line 231, bytecode pc 522
+        i++;
     }
     // source line 268, bytecode pc 556
     this.reloadLayout();
@@ -308,8 +308,8 @@
         (_hMax = ((_size.height > _hMax) ? _size.height : _hMax));
         // source line 279, bytecode pc 191
         (_wMax = (_wMax + _size.width));
-        // source line 274, bytecode pc 205
-        (i = (+i + 1));
+        // source line 274, bytecode pc 206
+        i++;
     }
     // source line 281, bytecode pc 265
     this.setContentSize(cc.size(_wMax, _hMax));
@@ -322,8 +322,8 @@
         this._allobj[i].setPosition(cc.p(_wOffset, (_hMax / 2)));
         // source line 291, bytecode pc 387
         (_wOffset = (_wOffset + (this._allobj[i].getContentSize().width * this._allobj[i].getScaleX())));
-        // source line 283, bytecode pc 401
-        (i = (+i + 1));
+        // source line 283, bytecode pc 402
+        i++;
     }
 }
 })));

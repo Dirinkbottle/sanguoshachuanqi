@@ -137,8 +137,8 @@
 });
         // source line 120, bytecode pc 259
         general_list.push(data);
-        // source line 108, bytecode pc 273
-        (i = (+i + 1));
+        // source line 108, bytecode pc 274
+        i++;
     }
     // source line 124, bytecode pc 296
     return general_list;

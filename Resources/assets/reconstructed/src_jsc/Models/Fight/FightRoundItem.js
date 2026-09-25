@@ -156,11 +156,11 @@
                 // source line 185, bytecode pc 1086
                 _toIdxs.push(_tmp);
             }
-            // source line 107, bytecode pc 1100
-            (j = (+j + 1));
+            // source line 107, bytecode pc 1101
+            j++;
         }
-        // source line 106, bytecode pc 1137
-        (i = (+i + 1));
+        // source line 106, bytecode pc 1138
+        i++;
     }
     // source line 198, bytecode pc 1161
     (i = 0);
@@ -171,8 +171,8 @@
         this.dump("cardModel", envLayer.getModel().getCardModelByIdx(_tmp));
         // source line 205, bytecode pc 1263
         (_model = envLayer.getModel().getCardModelByIdx(_tmp));
-        // source line 198, bytecode pc 1277
-        (i = (+i + 1));
+        // source line 198, bytecode pc 1278
+        i++;
     }
     if ((this.skill === "Open_Pvp")) {
         // source line 217, bytecode pc 1337
@@ -265,8 +265,8 @@
                 // source line 367, bytecode pc 444
                 this.to.push(data.to[mIdx]);
             }
-            // source line 362, bytecode pc 458
-            (mIdx = (+mIdx + 1));
+            // source line 362, bytecode pc 459
+            mIdx++;
         }
     }
 },

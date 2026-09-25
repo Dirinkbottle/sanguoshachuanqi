@@ -460,8 +460,8 @@
                 (icon = _icon);
             }
         }
-        // source line 331, bytecode pc 598
-        (i = (+i + 1));
+        // source line 331, bytecode pc 599
+        i++;
     }
 },
     rightButtonCallback: function() {
@@ -469,8 +469,8 @@
         // source line 377, bytecode pc 19
         return void 0;
     }
-    // source line 379, bytecode pc 45
-    (this.m_pageIdex = (+this.m_pageIdex + 1));
+    // source line 379, bytecode pc 46
+    this.m_pageIdex++;
     if ((this.m_pageIdex == 1)) {
         // source line 381, bytecode pc 79
         this.m_left_Button.setVisible(false);
@@ -501,8 +501,8 @@
         // source line 402, bytecode pc 14
         return void 0;
     }
-    // source line 404, bytecode pc 40
-    (this.m_pageIdex = (+this.m_pageIdex - 1));
+    // source line 404, bytecode pc 41
+    this.m_pageIdex--;
     if ((this.m_pageIdex == 1)) {
         // source line 406, bytecode pc 74
         this.m_left_Button.setVisible(false);

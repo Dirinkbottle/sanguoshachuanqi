@@ -949,8 +949,8 @@
             // source line 908, bytecode pc 122
             return void 0;
         }
-        // source line 904, bytecode pc 136
-        (i = (+i + 1));
+        // source line 904, bytecode pc 137
+        i++;
     }
     // source line 911, bytecode pc 210
     xs.Views.Mgr.showToast(xs.Tools.String.createString("MiracleWeapon_kaiqi"));
@@ -1581,8 +1581,8 @@
         (i = 0);
         while ((i < xs.Constant_Team_Max)) {
             if (this.hintInfo.isEquipEnabled(idx, i)) {
-                // source line 1509, bytecode pc 776
-                (eventNum = (+eventNum + 1));
+                // source line 1509, bytecode pc 777
+                eventNum++;
                 break;
             }
             // source line 1507, bytecode pc 795

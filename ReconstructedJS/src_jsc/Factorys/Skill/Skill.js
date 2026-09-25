@@ -318,8 +318,8 @@
                 // source line 290, bytecode pc 390
                 _retArr.push(args[i]);
             }
-            // source line 279, bytecode pc 404
-            (i = (+i + 1));
+            // source line 279, bytecode pc 405
+            i++;
         }
     }
     // source line 296, bytecode pc 448
@@ -518,8 +518,8 @@
                     while ((k < _loopNum)) {
                         // source line 550, bytecode pc 456
                         _ret.hp.push(_hpValue);
-                        // source line 549, bytecode pc 470
-                        (k = (+k + 1));
+                        // source line 549, bytecode pc 471
+                        k++;
                     }
                 } else {
                     if ((hpsType === xs.Constant_FightScene_HpsType_Test)) {
@@ -530,8 +530,8 @@
                             _ret.hp.push(((k + 1) * 100));
                             // source line 558, bytecode pc 577
                             _ret.hp.push(((k + 1) * 100));
-                            // source line 556, bytecode pc 591
-                            (k = (+k + 1));
+                            // source line 556, bytecode pc 592
+                            k++;
                         }
                     } else {
                         if ((hpsType === xs.Constant_FightScene_HpsType_Loop2Finish1)) {
@@ -560,8 +560,8 @@
                             while ((k < _num_loop)) {
                                 // source line 577, bytecode pc 786
                                 _ret.hp.push(xs.ceil((_cake_loop / _num_loop)));
-                                // source line 576, bytecode pc 800
-                                (k = (+k + 1));
+                                // source line 576, bytecode pc 801
+                                k++;
                             }
                             // source line 580, bytecode pc 855
                             _ret.hp.push(xs.ceil(_cake_over));
@@ -591,18 +591,18 @@
                                     // source line 601, bytecode pc 1045
                                     (isCritical = this.isCriticalForProbability((_residueCriticalNum / _residueLoopNum)));
                                     if (isCritical) {
-                                        // source line 604, bytecode pc 1067
-                                        (_residueCriticalNum = (+_residueCriticalNum - 1));
+                                        // source line 604, bytecode pc 1068
+                                        _residueCriticalNum--;
                                         // source line 605, bytecode pc 1113
                                         _ret.hp.push(Math.round((_commonHpValue * _criticalValue)));
                                     } else {
                                         // source line 608, bytecode pc 1142
                                         _ret.hp.push(_commonHpValue);
                                     }
-                                    // source line 610, bytecode pc 1156
-                                    (_residueLoopNum = (+_residueLoopNum - 1));
-                                    // source line 600, bytecode pc 1171
-                                    (loopIdx = (+loopIdx + 1));
+                                    // source line 610, bytecode pc 1157
+                                    _residueLoopNum--;
+                                    // source line 600, bytecode pc 1172
+                                    loopIdx++;
                                 }
                                 // source line 614, bytecode pc 1217
                                 xs.log_hsq("_rethp11", _ret.hp);
@@ -615,12 +615,12 @@
                 }
                 // source line 622, bytecode pc 1271
                 (input.queue[_scopeName][j] = _ret);
-                // source line 523, bytecode pc 1285
-                (j = (+j + 1));
+                // source line 523, bytecode pc 1286
+                j++;
             }
         }
-        // source line 507, bytecode pc 1318
-        (i = (+i + 1));
+        // source line 507, bytecode pc 1319
+        i++;
     }
     // source line 629, bytecode pc 1369
     xs.log_zj("hpStack", input.queue);
@@ -749,8 +749,8 @@
         (_root = _root[_childKey]);
         // source line 829, bytecode pc 140
         xs.assert(_root, ("getExtendObj error:" + childDesc), _childKey);
-        // source line 822, bytecode pc 154
-        (i = (+i + 1));
+        // source line 822, bytecode pc 155
+        i++;
     }
     // source line 832, bytecode pc 178
     (useSuperExtend = true);
@@ -790,8 +790,8 @@
         (_baseCopy = _base);
         // source line 887, bytecode pc 234
         (_diff = xs.Utils.cloneWithDiff(_baseCopy, _diff));
-        // source line 870, bytecode pc 248
-        (i = (+i + 1));
+        // source line 870, bytecode pc 249
+        i++;
     }
     // source line 892, bytecode pc 272
     (_extend = null);

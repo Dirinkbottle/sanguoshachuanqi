@@ -35,8 +35,8 @@
 ]));
         // source line 30, bytecode pc 328
         (speakWords[i] = str);
-        // source line 25, bytecode pc 342
-        (i = (+i + 1));
+        // source line 25, bytecode pc 343
+        i++;
     }
     // source line 38, bytecode pc 414
     (this.generalShow = xs.Views.GeneralPlayView.create(xs.Views.GeneralPlayViewType_Foot, teachers));
@@ -90,11 +90,11 @@
     xs.log("onEnterTransitionDidFinish-SkillPieceIconShow", "end");
 },
     next: function() {
-    // source line 85, bytecode pc 25
-    (this.focusIdx = (+this.focusIdx + 1));
+    // source line 85, bytecode pc 26
+    this.focusIdx++;
     if ((this.focusIdx >= this.skillPieceCount)) {
-        // source line 87, bytecode pc 70
-        (this.focusIdx = (+this.focusIdx - 1));
+        // source line 87, bytecode pc 71
+        this.focusIdx--;
         // source line 88, bytecode pc 73
         return void 0;
     }
@@ -104,11 +104,11 @@
     this.tableView.prev();
 },
     prev: function() {
-    // source line 96, bytecode pc 25
-    (this.focusIdx = (+this.focusIdx - 1));
+    // source line 96, bytecode pc 26
+    this.focusIdx--;
     if ((this.focusIdx < 0)) {
-        // source line 98, bytecode pc 65
-        (this.focusIdx = (+this.focusIdx + 1));
+        // source line 98, bytecode pc 66
+        this.focusIdx++;
         // source line 99, bytecode pc 68
         return void 0;
     }

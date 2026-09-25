@@ -182,8 +182,8 @@
             (_idx = i);
             break;
         }
-        // source line 174, bytecode pc 82
-        (i = (+i + 1));
+        // source line 174, bytecode pc 83
+        i++;
     }
     // source line 180, bytecode pc 130
     (y = (((_length - _idx) * 120) - this.m_tableViewSize.height));

@@ -200,8 +200,8 @@
             xs.log_zhz("item-true", item);
             // source line 232, bytecode pc 547
             this.pageView.addPageWhitConstruct("", item.className, null);
-            // source line 229, bytecode pc 561
-            (i = (+i + 1));
+            // source line 229, bytecode pc 562
+            i++;
         }
     } else {
         // source line 235, bytecode pc 598
@@ -213,8 +213,8 @@
             xs.log_zhz("item-false", item);
             // source line 238, bytecode pc 685
             this.pageView.addPageWhitConstruct("", item.className, null);
-            // source line 235, bytecode pc 699
-            (i = (+i + 1));
+            // source line 235, bytecode pc 700
+            i++;
         }
     }
     // source line 242, bytecode pc 817

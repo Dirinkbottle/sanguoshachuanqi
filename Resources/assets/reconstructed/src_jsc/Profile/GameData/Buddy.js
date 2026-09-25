@@ -59,8 +59,8 @@
             // source line 66, bytecode pc 93
             _retArray.push(general);
         }
-        // source line 61, bytecode pc 107
-        (i = (+i + 1));
+        // source line 61, bytecode pc 108
+        i++;
     }
     // source line 70, bytecode pc 130
     return _retArray;
@@ -76,8 +76,8 @@
             // source line 78, bytecode pc 55
             return true;
         }
-        // source line 76, bytecode pc 69
-        (i = (+i + 1));
+        // source line 76, bytecode pc 70
+        i++;
     }
     // source line 81, bytecode pc 90
     return false;
@@ -148,8 +148,8 @@
         (_temp.general_position = 100);
         // source line 129, bytecode pc 87
         _ret_clone.push(_temp);
-        // source line 126, bytecode pc 101
-        (i = (+i + 1));
+        // source line 126, bytecode pc 102
+        i++;
     }
     // source line 131, bytecode pc 143
     this.dump("Buddy clone before", _ret);
@@ -174,8 +174,8 @@
             (isBuddy = true);
             break;
         }
-        // source line 139, bytecode pc 89
-        (i = (+i + 1));
+        // source line 139, bytecode pc 90
+        i++;
     }
     // source line 146, bytecode pc 112
     return isBuddy;

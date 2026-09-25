@@ -98,8 +98,8 @@
         }
         // source line 143, bytecode pc 87
         this.m_feasts[i].loadJson(json[i]);
-        // source line 137, bytecode pc 101
-        (i = (+i + 1));
+        // source line 137, bytecode pc 102
+        i++;
     }
     // source line 153, bytecode pc 135
     (this.m_num = json.length);
@@ -126,8 +126,8 @@
             (_ret = true);
             break;
         }
-        // source line 174, bytecode pc 85
-        (i = (+i + 1));
+        // source line 174, bytecode pc 86
+        i++;
     }
     // source line 180, bytecode pc 111
     return _ret;
@@ -143,8 +143,8 @@
     while ((i < this.m_num)) {
         // source line 193, bytecode pc 32
         this.m_feasts[i].schedule_update();
-        // source line 192, bytecode pc 46
-        (i = (+i + 1));
+        // source line 192, bytecode pc 47
+        i++;
     }
 }
 }));
@@ -370,32 +370,32 @@
     while ((i < this.m_generalList.length)) {
         // source line 430, bytecode pc 197
         this.m_generaMode.push(xs.Models.General.createWithBase(this.m_generalList[i].general_id));
-        // source line 429, bytecode pc 211
-        (i = (+i + 1));
+        // source line 429, bytecode pc 212
+        i++;
     }
     // source line 433, bytecode pc 238
     (i = 0);
     while ((i < this.m_generalList.length)) {
         // source line 434, bytecode pc 305
         this.m_generaGoalMode.push(xs.Models.GeneralSoul.createWithBase(this.m_generalList[i].wish_general_id));
-        // source line 433, bytecode pc 319
-        (i = (+i + 1));
+        // source line 433, bytecode pc 320
+        i++;
     }
     // source line 437, bytecode pc 346
     (i = 0);
     while ((i < this.m_generalList.length)) {
         // source line 438, bytecode pc 386
         this.m_generaSayMode.push(this.m_generalList[i].wish_desc);
-        // source line 437, bytecode pc 400
-        (i = (+i + 1));
+        // source line 437, bytecode pc 401
+        i++;
     }
     // source line 441, bytecode pc 427
     (i = 0);
     while ((i < this.m_generalList.length)) {
         // source line 442, bytecode pc 467
         this.m_isEnableList.push(this.m_generalList[i].wish_enable);
-        // source line 441, bytecode pc 481
-        (i = (+i + 1));
+        // source line 441, bytecode pc 482
+        i++;
     }
 },
     getIsFree: function() {

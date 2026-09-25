@@ -24,8 +24,8 @@
     while ((i < _ret.length)) {
         // source line 28, bytecode pc 51
         (totalFighting = (totalFighting + _ret[i].fighting));
-        // source line 27, bytecode pc 65
-        (i = (+i + 1));
+        // source line 27, bytecode pc 66
+        i++;
     }
     // source line 38, bytecode pc 88
     return totalFighting;
@@ -41,8 +41,8 @@
             // source line 44, bytecode pc 61
             return teaminfo[i];
         }
-        // source line 42, bytecode pc 75
-        (i = (+i + 1));
+        // source line 42, bytecode pc 76
+        i++;
     }
     // source line 47, bytecode pc 96
     return null;
@@ -67,11 +67,11 @@
                 // source line 58, bytecode pc 120
                 return _bool;
             }
-            // source line 55, bytecode pc 134
-            (j = (+j + 1));
+            // source line 55, bytecode pc 135
+            j++;
         }
-        // source line 53, bytecode pc 167
-        (i = (+i + 1));
+        // source line 53, bytecode pc 168
+        i++;
     }
     // source line 62, bytecode pc 190
     return _bool;
@@ -116,11 +116,11 @@
                     return { haveCanEquip: haveCanEquipment, moneyEnough: moneyEnough }
                 }
             }
-            // source line 76, bytecode pc 302
-            (j = (+j + 1));
+            // source line 76, bytecode pc 303
+            j++;
         }
-        // source line 72, bytecode pc 335
-        (i = (+i + 1));
+        // source line 72, bytecode pc 336
+        i++;
     }
     // source line 104, bytecode pc 377
     return { haveCanEquip: haveCanEquipment, moneyEnough: moneyEnough }
@@ -145,11 +145,11 @@
                 // source line 116, bytecode pc 120
                 return _bool;
             }
-            // source line 113, bytecode pc 134
-            (j = (+j + 1));
+            // source line 113, bytecode pc 135
+            j++;
         }
-        // source line 111, bytecode pc 167
-        (i = (+i + 1));
+        // source line 111, bytecode pc 168
+        i++;
     }
     // source line 120, bytecode pc 190
     return _bool;
@@ -205,8 +205,8 @@
             // source line 180, bytecode pc 116
             _retArray.push(general);
         }
-        // source line 172, bytecode pc 130
-        (i = (+i + 1));
+        // source line 172, bytecode pc 131
+        i++;
     }
     // source line 184, bytecode pc 153
     return _retArray;
@@ -222,8 +222,8 @@
     while ((a < arguments.length)) {
         // source line 190, bytecode pc 47
         _arr_pk_id.push(arguments[a]);
-        // source line 189, bytecode pc 61
-        (a = (+a + 1));
+        // source line 189, bytecode pc 62
+        a++;
     }
     // source line 193, bytecode pc 89
     (_rs_obj = []);
@@ -236,8 +236,8 @@
             // source line 197, bytecode pc 179
             _rs_obj.push(_arr_general_all[i]);
         }
-        // source line 195, bytecode pc 193
-        (i = (+i + 1));
+        // source line 195, bytecode pc 194
+        i++;
     }
     // source line 200, bytecode pc 216
     return _rs_obj;
@@ -253,8 +253,8 @@
             // source line 207, bytecode pc 55
             return true;
         }
-        // source line 205, bytecode pc 69
-        (i = (+i + 1));
+        // source line 205, bytecode pc 70
+        i++;
     }
     // source line 210, bytecode pc 90
     return false;
@@ -281,11 +281,11 @@
                 // source line 226, bytecode pc 218
                 return true;
             }
-            // source line 224, bytecode pc 232
-            (j = (+j + 1));
+            // source line 224, bytecode pc 233
+            j++;
         }
-        // source line 216, bytecode pc 265
-        (i = (+i + 1));
+        // source line 216, bytecode pc 266
+        i++;
     }
     // source line 231, bytecode pc 316
     (buddyGenerals = this._initInstance().Buddy.getBuddyGeneralsWithoutEmptyPos());
@@ -298,8 +298,8 @@
             // source line 235, bytecode pc 403
             return true;
         }
-        // source line 232, bytecode pc 417
-        (i = (+i + 1));
+        // source line 232, bytecode pc 418
+        i++;
     }
     // source line 239, bytecode pc 438
     return false;
@@ -315,8 +315,8 @@
             // source line 248, bytecode pc 72
             return teaminfo[i].getIdxInTeam();
         }
-        // source line 246, bytecode pc 86
-        (i = (+i + 1));
+        // source line 246, bytecode pc 87
+        i++;
     }
     // source line 251, bytecode pc 107
     return null;
@@ -391,8 +391,8 @@
         (_temp.general_position = 100);
         // source line 305, bytecode pc 87
         _ret_clone.push(_temp);
-        // source line 302, bytecode pc 101
-        (i = (+i + 1));
+        // source line 302, bytecode pc 102
+        i++;
     }
     // source line 307, bytecode pc 143
     this.dump("team clone before", _ret);

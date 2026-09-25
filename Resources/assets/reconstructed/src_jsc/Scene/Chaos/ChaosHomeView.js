@@ -47,8 +47,8 @@
             // source line 45, bytecode pc 82
             skill_list.push(this.skillPieceArray[i].getId());
         }
-        // source line 43, bytecode pc 96
-        (i = (+i + 1));
+        // source line 43, bytecode pc 97
+        i++;
     }
     if ((skill_list.length == 0)) {
         // source line 50, bytecode pc 193
@@ -125,8 +125,8 @@
             // source line 113, bytecode pc 251
             skillPiece.setNum(skillPiecesInfo[i].num);
         }
-        // source line 103, bytecode pc 265
-        (i = (+i + 1));
+        // source line 103, bytecode pc 266
+        i++;
     }
     // source line 116, bytecode pc 312
     (this.skillPieceArray = this.skillPieceArray.concat(bookArray));
@@ -137,8 +137,8 @@
     while ((i < this.skillPieceArray.length)) {
         // source line 120, bytecode pc 396
         teachers.push(xs.Models.General.createWithBase(this.skillPieceArray[i].getTeacher()));
-        // source line 119, bytecode pc 410
-        (i = (+i + 1));
+        // source line 119, bytecode pc 411
+        i++;
     }
     // source line 122, bytecode pc 450
     this.skillPieceArray.reverse();
@@ -206,8 +206,8 @@
                 // source line 173, bytecode pc 1317
                 this.skillPiecesShow.setCurSelectByIdx(i);
             }
-            // source line 171, bytecode pc 1331
-            (i = (+i + 1));
+            // source line 171, bytecode pc 1332
+            i++;
         }
     }
     // source line 178, bytecode pc 1395
@@ -229,8 +229,8 @@
                 (this.skillPieceArray[i] = skillPiece);
                 break;
             }
-            // source line 187, bytecode pc 168
-            (i = (+i + 1));
+            // source line 187, bytecode pc 169
+            i++;
         }
     }
     if (!this.skillPieceCCb) {

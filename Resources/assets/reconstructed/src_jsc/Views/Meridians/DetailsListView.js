@@ -69,8 +69,8 @@
         cell.setAnchorPoint(cc.p(0, 0.5));
         // source line 63, bytecode pc 964
         xs.Utils.Node.attachNodes(this, cell, { desc: "lb", sc: true, offset: { x: 0, y: (_height - (60 * (i - 1))) } });
-        // source line 54, bytecode pc 978
-        (i = (+i + 1));
+        // source line 54, bytecode pc 979
+        i++;
     }
     // source line 69, bytecode pc 1034
     (willHaveIcon = xs.Factorys.Sprite.create("Cmn01_Toast_bg", "Cmn01"));

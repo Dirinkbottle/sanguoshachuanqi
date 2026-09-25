@@ -241,8 +241,8 @@
         (logModel = xs.Models.UnionLog.createWithData({ content: union_log[i].content }));
         // source line 215, bytecode pc 92
         logs.push(logModel);
-        // source line 213, bytecode pc 106
-        (i = (+i + 1));
+        // source line 213, bytecode pc 107
+        i++;
     }
     // source line 217, bytecode pc 138
     (this.logTableView.arrayModel = null);

@@ -70,8 +70,8 @@
         }
         // source line 88, bytecode pc 743
         _ret.setTitleForState(_str, _stateArr[i]);
-        // source line 45, bytecode pc 757
-        (i = (+i + 1));
+        // source line 45, bytecode pc 758
+        i++;
     }
     if (size) {
     } else {

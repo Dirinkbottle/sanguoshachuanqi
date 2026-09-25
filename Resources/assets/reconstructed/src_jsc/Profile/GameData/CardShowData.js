@@ -27,8 +27,8 @@
     while ((i < generals.length)) {
         // source line 27, bytecode pc 161
         generalShowData.push(xs.Models.ShowData.create(generals[i]));
-        // source line 26, bytecode pc 175
-        (i = (+i + 1));
+        // source line 26, bytecode pc 176
+        i++;
     }
     // source line 30, bytecode pc 198
     return generalShowData;
@@ -46,8 +46,8 @@
     while ((i < generalSouls.length)) {
         // source line 41, bytecode pc 154
         soulShowData.push(xs.Models.ShowData.create(generalSouls[i]));
-        // source line 40, bytecode pc 168
-        (i = (+i + 1));
+        // source line 40, bytecode pc 169
+        i++;
     }
     // source line 44, bytecode pc 191
     return soulShowData;
@@ -63,8 +63,8 @@
     while ((i < equipMents.length)) {
         // source line 53, bytecode pc 101
         equipShowData.push(xs.Models.ShowData.create(equipMents[i]));
-        // source line 52, bytecode pc 115
-        (i = (+i + 1));
+        // source line 52, bytecode pc 116
+        i++;
     }
     // source line 56, bytecode pc 138
     return equipShowData;
@@ -80,8 +80,8 @@
     while ((i < refineStones.length)) {
         // source line 64, bytecode pc 101
         refineStoneShowData.push(xs.Models.ShowData.create(refineStones[i]));
-        // source line 63, bytecode pc 115
-        (i = (+i + 1));
+        // source line 63, bytecode pc 116
+        i++;
     }
     // source line 67, bytecode pc 138
     return refineStoneShowData;

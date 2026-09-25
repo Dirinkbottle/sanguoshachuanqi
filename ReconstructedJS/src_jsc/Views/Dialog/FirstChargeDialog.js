@@ -54,8 +54,8 @@
             // source line 45, bytecode pc 676
             this.ccbNode.getChildByTag(this.cfg.giftIcon[i].tag).setVisible(false);
         }
-        // source line 40, bytecode pc 690
-        (i = (+i + 1));
+        // source line 40, bytecode pc 691
+        i++;
     }
     // source line 49, bytecode pc 754
     this.m_extraStr.setStringByKeys([ "firstChargeDlg_extraStr_1", "firstChargeDlg_extraStr_2", "firstChargeDlg_extraStr_3" ]);

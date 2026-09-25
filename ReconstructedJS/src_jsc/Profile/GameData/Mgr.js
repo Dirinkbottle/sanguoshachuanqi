@@ -67,8 +67,8 @@
         (_class_name = _temp[i]);
         // source line 76, bytecode pc 324
         (this[_class_name] = xs.Profile.GameData[_class_name].create(_init_data));
-        // source line 73, bytecode pc 338
-        (i = (+i + 1));
+        // source line 73, bytecode pc 339
+        i++;
     }
     // source line 79, bytecode pc 376
     return true;
@@ -103,8 +103,8 @@
             // source line 102, bytecode pc 83
             this[_class_name].onClearCache_InFunc();
         }
-        // source line 99, bytecode pc 97
-        (i = (+i + 1));
+        // source line 99, bytecode pc 98
+        i++;
     }
 },
     setPlayId: function(play_id) {
@@ -213,8 +213,8 @@
                 (xs.customerServiceConf = false);
                 break;
             }
-            // source line 237, bytecode pc 1020
-            (i = (+i + 1));
+            // source line 237, bytecode pc 1021
+            i++;
         }
     }
 },

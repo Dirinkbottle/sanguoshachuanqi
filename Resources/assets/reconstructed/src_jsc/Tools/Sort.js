@@ -13,8 +13,8 @@
     // source line 79, bytecode pc 178
     return function(o, p) {
     var i, _argument, _order_by, _condition_type, _condition_name, a, b;
-    // source line 27, bytecode pc 25
-    (this.n = (+this.n + 1));
+    // source line 27, bytecode pc 26
+    this.n++;
     // source line 28, bytecode pc 31
     (i = 0);
     while ((i < _arguments.length)) {
@@ -59,8 +59,8 @@
             // source line 74, bytecode pc 558
             this.error("xs.Tools.Sort error");
         }
-        // source line 28, bytecode pc 572
-        (i = (+i + 1));
+        // source line 28, bytecode pc 573
+        i++;
     }
     // source line 78, bytecode pc 599
     return 0;

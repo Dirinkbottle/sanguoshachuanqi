@@ -238,8 +238,8 @@ if (ccs.Armature) {
             // source line 261, bytecode pc 118
             triObj.done();
         }
-        // source line 258, bytecode pc 132
-        (i = (+i + 1));
+        // source line 258, bytecode pc 133
+        i++;
     }
 });
 // source line 285, bytecode pc 1961
@@ -377,8 +377,8 @@ if (ccs.Armature) {
             // source line 383, bytecode pc 116
             (ret = (ret && obj.detect()));
         }
-        // source line 380, bytecode pc 130
-        (i = (+i + 1));
+        // source line 380, bytecode pc 131
+        i++;
     }
     // source line 386, bytecode pc 156
     return ret;
@@ -398,8 +398,8 @@ if (ccs.Armature) {
             // source line 397, bytecode pc 98
             obj.done();
         }
-        // source line 394, bytecode pc 112
-        (i = (+i + 1));
+        // source line 394, bytecode pc 113
+        i++;
     }
 },
     removeAll: function() {
@@ -415,8 +415,8 @@ if (ccs.Armature) {
             // source line 407, bytecode pc 52
             obj.removeAll();
         }
-        // source line 404, bytecode pc 66
-        (i = (+i + 1));
+        // source line 404, bytecode pc 67
+        i++;
     }
     // source line 409, bytecode pc 100
     (this._cons = []);
@@ -429,8 +429,8 @@ if (ccs.Armature) {
             // source line 413, bytecode pc 148
             obj.removeAll();
         }
-        // source line 410, bytecode pc 162
-        (i = (+i + 1));
+        // source line 410, bytecode pc 163
+        i++;
     }
     // source line 415, bytecode pc 196
     (this._acts = []);
@@ -463,8 +463,8 @@ if (ccs.Armature) {
             // source line 434, bytecode pc 230
             this._cons.push(con);
         }
-        // source line 421, bytecode pc 244
-        (i = (+i + 1));
+        // source line 421, bytecode pc 245
+        i++;
     }
     // source line 437, bytecode pc 286
     (actions = (jsonVal.actions || []));
@@ -490,8 +490,8 @@ if (ccs.Armature) {
             // source line 451, bytecode pc 472
             this._acts.push(act);
         }
-        // source line 438, bytecode pc 486
-        (i = (+i + 1));
+        // source line 438, bytecode pc 487
+        i++;
     }
     // source line 454, bytecode pc 528
     (events = (jsonVal.events || []));
@@ -507,8 +507,8 @@ if (ccs.Armature) {
             // source line 461, bytecode pc 599
             this._vInt.push(event);
         }
-        // source line 455, bytecode pc 613
-        (i = (+i + 1));
+        // source line 455, bytecode pc 614
+        i++;
     }
 },
     getId: function() {
@@ -577,8 +577,8 @@ if (ccs.Armature) {
             (event = events[j]);
             // source line 509, bytecode pc 133
             this.add(event, triggerObj);
-            // source line 507, bytecode pc 147
-            (j = (+j + 1));
+            // source line 507, bytecode pc 148
+            j++;
         }
         // source line 511, bytecode pc 191
         (this._triggerObjs[triggerObj.getId()] = triggerObj);
@@ -621,8 +621,8 @@ if (ccs.Armature) {
             (obj = triObjArr[j]);
             // source line 539, bytecode pc 69
             obj.removeAll();
-            // source line 537, bytecode pc 83
-            (j = (+j + 1));
+            // source line 537, bytecode pc 84
+            j++;
         }
     }
     // source line 542, bytecode pc 123
@@ -651,11 +651,11 @@ if (ccs.Armature) {
                 // source line 557, bytecode pc 109
                 triObject.removeAll();
             }
-            // source line 554, bytecode pc 123
-            (i = (+i + 1));
+            // source line 554, bytecode pc 124
+            i++;
         }
         // source line 560, bytecode pc 153
-        delete event[this._eventTriggers];
+        delete this._eventTriggers[event];
         // source line 561, bytecode pc 158
         (bRet = true);
     } while (0);
@@ -684,8 +684,8 @@ if (ccs.Armature) {
                 triObjects.splice(i, 1);
                 break;
             }
-            // source line 572, bytecode pc 133
-            (i = (+i + 1));
+            // source line 572, bytecode pc 134
+            i++;
         }
         // source line 580, bytecode pc 157
         (bRet = true);
@@ -710,8 +710,8 @@ if (ccs.Armature) {
         (event = events[i]);
         // source line 593, bytecode pc 91
         this.remove(event, obj);
-        // source line 591, bytecode pc 105
-        (i = (+i + 1));
+        // source line 591, bytecode pc 106
+        i++;
     }
     // source line 595, bytecode pc 126
     return true;
@@ -739,8 +739,8 @@ if (ccs.Armature) {
             // source line 610, bytecode pc 118
             (hasADD = true);
         }
-        // source line 606, bytecode pc 132
-        (i = (+i + 1));
+        // source line 606, bytecode pc 133
+        i++;
     }
     if (!hasADD) {
         // source line 614, bytecode pc 182
@@ -768,8 +768,8 @@ if (ccs.Armature) {
             // source line 629, bytecode pc 108
             locAmd.removeAnimationEventCallBack(callFunc, target);
         }
-        // source line 626, bytecode pc 122
-        (i = (+i + 1));
+        // source line 626, bytecode pc 123
+        i++;
     }
 },
     removeArmatureAllMovementCallBack: function(armature) {
@@ -788,8 +788,8 @@ if (ccs.Armature) {
             this._movementDispatches.splice(i, 1);
             break;
         }
-        // source line 639, bytecode pc 106
-        (i = (+i + 1));
+        // source line 639, bytecode pc 107
+        i++;
     }
 },
     removeAllArmatureMovementCallBack: function() {

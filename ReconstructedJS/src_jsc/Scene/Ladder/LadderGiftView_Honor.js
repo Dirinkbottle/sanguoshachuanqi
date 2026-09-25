@@ -72,8 +72,8 @@ var LadderGiftView_RfreshTime;
     // source line 69, bytecode pc 127
     (getData = function(data) {
     var j, i, param;
-    // source line 70, bytecode pc 32
-    (getDataNum = (+getDataNum + 1));
+    // source line 70, bytecode pc 33
+    getDataNum++;
     // source line 73, bytecode pc 38
     (j = 0);
     // source line 74, bytecode pc 43
@@ -84,10 +84,10 @@ var LadderGiftView_RfreshTime;
             (awardList[i].num = (xs.Utils.parseIntSafe(awardList[i].num) + xs.Utils.parseIntSafe(data.add_list[0].num)).toString());
             break;
         }
-        // source line 79, bytecode pc 255
-        (j = (+j + 1));
-        // source line 74, bytecode pc 270
-        (i = (+i + 1));
+        // source line 79, bytecode pc 256
+        j++;
+        // source line 74, bytecode pc 271
+        i++;
     }
     if ((j == awardList.length)) {
         // source line 82, bytecode pc 350
@@ -113,8 +113,8 @@ var LadderGiftView_RfreshTime;
     while ((i < this.exchangeListData.length)) {
         if (this.exchangeListData[i].can_exchange) {
             if ((honor >= this.exchangeListData[i].discount_price)) {
-                // source line 101, bytecode pc 215
-                (canExchangeNum = (+canExchangeNum + 1));
+                // source line 101, bytecode pc 216
+                canExchangeNum++;
                 // source line 109, bytecode pc 308
                 xs.Tools.Net.requestGiftAndOpen({
     item_advanced_id: this.exchangeListData[i].pk_id,
@@ -124,8 +124,8 @@ var LadderGiftView_RfreshTime;
 }, getData, this);
             }
         }
-        // source line 97, bytecode pc 322
-        (i = (+i + 1));
+        // source line 97, bytecode pc 323
+        i++;
     }
     if ((canExchangeNum == 0)) {
         // source line 116, bytecode pc 420

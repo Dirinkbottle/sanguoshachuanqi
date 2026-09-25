@@ -191,8 +191,8 @@
                 }
             }
         }
-        // source line 206, bytecode pc 724
-        (i = (+i + 1));
+        // source line 206, bytecode pc 725
+        i++;
     }
     // source line 231, bytecode pc 771
     this.tableView.setStateNowIdx(this._stateNowIdx);

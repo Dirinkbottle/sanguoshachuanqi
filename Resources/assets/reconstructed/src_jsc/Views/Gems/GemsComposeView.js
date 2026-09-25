@@ -234,8 +234,8 @@
             // source line 180, bytecode pc 69
             gems.push(this.m_dataGems[i]);
         }
-        // source line 178, bytecode pc 83
-        (i = (+i + 1));
+        // source line 178, bytecode pc 84
+        i++;
     }
     // source line 183, bytecode pc 114
     (bigGems = []);
@@ -251,8 +251,8 @@
             // source line 190, bytecode pc 196
             threeGems.push(gems[i]);
         }
-        // source line 186, bytecode pc 210
-        (i = (+i + 1));
+        // source line 186, bytecode pc 211
+        i++;
     }
     // source line 193, bytecode pc 240
     (bigGems[1] = threeGems[0]);
@@ -344,8 +344,8 @@
                 break;
             }
         }
-        // source line 289, bytecode pc 157
-        (i = (+i + 1));
+        // source line 289, bytecode pc 158
+        i++;
     }
     // source line 301, bytecode pc 180
     return smallGemlist;

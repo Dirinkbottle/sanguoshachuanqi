@@ -301,8 +301,8 @@
     while ((i < _stateArr.length)) {
         // source line 302, bytecode pc 106
         button.setTitleForState(title, _stateArr[i]);
-        // source line 301, bytecode pc 120
-        (i = (+i + 1));
+        // source line 301, bytecode pc 121
+        i++;
     }
 });
 // source line 307, bytecode pc 380
@@ -545,8 +545,8 @@
         while ((i >= 0)) {
             // source line 503, bytecode pc 302
             (_replaceText = (_replaceText + "？"));
-            // source line 502, bytecode pc 316
-            (i = (+i - 1));
+            // source line 502, bytecode pc 317
+            i--;
         }
         // source line 505, bytecode pc 354
         (_text = _text.replace(_reg, _replaceText));
@@ -616,8 +616,8 @@
         while ((i >= 0)) {
             // source line 544, bytecode pc 265
             (_replaceText = (_replaceText + "？"));
-            // source line 543, bytecode pc 279
-            (i = (+i - 1));
+            // source line 543, bytecode pc 280
+            i--;
         }
         // source line 546, bytecode pc 317
         (_text = _text.replace(_reg, _replaceText));

@@ -223,8 +223,8 @@
                 (_obj.guide_tag = -1);
             }
         }
-        // source line 200, bytecode pc 722
-        (i = (+i + 1));
+        // source line 200, bytecode pc 723
+        i++;
     }
     // source line 260, bytecode pc 764
     this.dump("_refresh_nav_models", this.m_nav, 3);

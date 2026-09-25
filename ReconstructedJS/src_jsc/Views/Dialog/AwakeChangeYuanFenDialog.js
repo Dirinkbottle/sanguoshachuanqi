@@ -55,8 +55,8 @@
                 // source line 52, bytecode pc 104
                 (changeObj[this.m_itemsState[i].key] = this.m_itemsState[i].state);
             }
-            // source line 48, bytecode pc 118
-            (i = (+i + 1));
+            // source line 48, bytecode pc 119
+            i++;
         }
         // source line 70, bytecode pc 212
         xs.Tools.Net.requestEvolutionChangeYuanFen({ evolution_id: this.evolutionInfo.evolution_id, fate_ids: changeObj, ignoreRandEvent: true }, function(jsonObj, _modelMap) {
@@ -191,8 +191,8 @@
                 (this.m_isReadyChange = true);
                 break;
             }
-            // source line 186, bytecode pc 198
-            (i = (+i + 1));
+            // source line 186, bytecode pc 199
+            i++;
         }
     }
 }

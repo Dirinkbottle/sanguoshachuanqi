@@ -83,8 +83,8 @@
         }
         // source line 76, bytecode pc 198
         data.push(pointModel);
-        // source line 58, bytecode pc 212
-        (i = (+i + 1));
+        // source line 58, bytecode pc 213
+        i++;
     }
     // source line 79, bytecode pc 229
     return data;

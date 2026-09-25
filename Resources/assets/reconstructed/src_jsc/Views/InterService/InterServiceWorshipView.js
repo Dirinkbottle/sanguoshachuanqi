@@ -283,8 +283,8 @@
             (_selfData = this.rankList[i]);
             break;
         }
-        // source line 310, bytecode pc 178
-        (i = (+i + 1));
+        // source line 310, bytecode pc 179
+        i++;
     }
     // source line 316, bytecode pc 204
     return _selfData;

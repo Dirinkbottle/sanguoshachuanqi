@@ -421,8 +421,8 @@
         this[("m_num_" + (6 - i))].setVisible(false);
         // source line 389, bytecode pc 194
         beginAct.replaceSkin(("text0" + i), this._armLabel1);
-        // source line 384, bytecode pc 208
-        (i = (+i + 1));
+        // source line 384, bytecode pc 209
+        i++;
     }
 },
     freshView: function() {

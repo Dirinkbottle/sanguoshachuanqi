@@ -70,8 +70,8 @@
     // source line 75, bytecode pc 20
     (contentOffset_y = this.getContentOffset().y);
     if ((this.selectedIdx > 0)) {
-        // source line 77, bytecode pc 59
-        (this.selectedIdx = (+this.selectedIdx - 1));
+        // source line 77, bytecode pc 60
+        this.selectedIdx--;
     } else {
         // source line 79, bytecode pc 85
         (this.selectedIdx = (this.arrayModel.length - 1));

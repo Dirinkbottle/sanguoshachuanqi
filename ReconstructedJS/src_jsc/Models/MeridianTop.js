@@ -182,8 +182,8 @@
         }
         // source line 147, bytecode pc 285
         data.push(meridianModel);
-        // source line 131, bytecode pc 299
-        (i = (+i + 1));
+        // source line 131, bytecode pc 300
+        i++;
     }
     // source line 149, bytecode pc 317
     return data;
@@ -218,8 +218,8 @@
             // source line 172, bytecode pc 276
             data.push(meridianModel);
         }
-        // source line 153, bytecode pc 290
-        (i = (+i + 1));
+        // source line 153, bytecode pc 291
+        i++;
     }
     // source line 175, bytecode pc 307
     return data;
@@ -340,14 +340,14 @@
                 (buffValue = meridianPointModel.getMeridianPointBuffValueNum());
                 // source line 248, bytecode pc 775
                 addBuffValue(buffType, parseInt(buffValue));
-                // source line 240, bytecode pc 789
-                (k = (+k + 1));
+                // source line 240, bytecode pc 790
+                k++;
             }
-            // source line 220, bytecode pc 817
-            (j = (+j + 1));
+            // source line 220, bytecode pc 818
+            j++;
         }
-        // source line 218, bytecode pc 845
-        (i = (+i + 1));
+        // source line 218, bytecode pc 846
+        i++;
     }
     if ((meridianTopNum > 1)) {
         // source line 257, bytecode pc 998
@@ -432,14 +432,14 @@
                     // source line 312, bytecode pc 671
                     (RealValue = (RealValue + parseInt(buffValue)));
                 }
-                // source line 303, bytecode pc 685
-                (k = (+k + 1));
+                // source line 303, bytecode pc 686
+                k++;
             }
-            // source line 279, bytecode pc 713
-            (j = (+j + 1));
+            // source line 279, bytecode pc 714
+            j++;
         }
-        // source line 277, bytecode pc 741
-        (i = (+i + 1));
+        // source line 277, bytecode pc 742
+        i++;
     }
     if ((meridianTopNum > 1)) {
         if ((type == xs.Constant_AttrType_Hp)) {

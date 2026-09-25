@@ -22,8 +22,8 @@
         (hintInfo = { joinEnable: false, equipHintInfo: new Array(8) });
         // source line 34, bytecode pc 195
         (this.hintInfos[i] = hintInfo);
-        // source line 29, bytecode pc 209
-        (i = (+i + 1));
+        // source line 29, bytecode pc 210
+        i++;
     }
     // source line 36, bytecode pc 228
     (i = 0);
@@ -44,8 +44,8 @@
                 (this.hintInfos[i].joinEnable = false);
             }
         }
-        // source line 36, bytecode pc 416
-        (i = (+i + 1));
+        // source line 36, bytecode pc 417
+        i++;
     }
     // source line 52, bytecode pc 432
     return true;
@@ -65,8 +65,8 @@
     while ((i < equipedSkills.length)) {
         // source line 68, bytecode pc 260
         skillTypes_eliminated.push(equipedSkills[i].getSkillType());
-        // source line 67, bytecode pc 274
-        (i = (+i + 1));
+        // source line 67, bytecode pc 275
+        i++;
     }
     if (lieutenant_1) {
         // source line 71, bytecode pc 356
@@ -160,8 +160,8 @@
             default:
             break;
         }
-        // source line 81, bytecode pc 1530
-        (i = (+i + 1));
+        // source line 81, bytecode pc 1531
+        i++;
     }
 },
     _isJoinEnabled: function(posIdx) {
@@ -184,8 +184,8 @@
     (i = 0);
     while ((i < this.hintInfos.length)) {
         if (this.hintInfos[i].joinEnable) {
-            // source line 169, bytecode pc 49
-            (count = (+count + 1));
+            // source line 169, bytecode pc 50
+            count++;
         }
         // source line 172, bytecode pc 69
         (equipHintInfo = this.hintInfos[i].equipHintInfo);
@@ -193,14 +193,14 @@
         (j = 0);
         while ((j < equipHintInfo.length)) {
             if ((equipHintInfo[j] && equipHintInfo[j].equipEnable)) {
-                // source line 175, bytecode pc 124
-                (count = (+count + 1));
+                // source line 175, bytecode pc 125
+                count++;
             }
-            // source line 173, bytecode pc 139
-            (j = (+j + 1));
+            // source line 173, bytecode pc 140
+            j++;
         }
-        // source line 167, bytecode pc 172
-        (i = (+i + 1));
+        // source line 167, bytecode pc 173
+        i++;
     }
     // source line 179, bytecode pc 198
     return count;
@@ -236,17 +236,17 @@
         (_general = xs.Profile.GameData.Mgr.getInstance().GeneralSouls.getReferenceGeneral(souls[i]));
         if (_general) {
             if ((souls[i].checkSoulNumEnough() && (((souls[i].getGrade() === xs.Constant_Grade_God) || (souls[i].getGrade() === xs.Constant_Grade_Demon)) && !_general.isBreachToMax()))) {
-                // source line 212, bytecode pc 284
-                (this.breachHintCount = (+this.breachHintCount + 1));
+                // source line 212, bytecode pc 285
+                this.breachHintCount++;
             }
         } else {
             if ((souls[i].getNum() >= souls[i].getReincarnateNum())) {
-                // source line 217, bytecode pc 358
-                (this.reincarnationHintCount = (+this.reincarnationHintCount + 1));
+                // source line 217, bytecode pc 359
+                this.reincarnationHintCount++;
             }
         }
-        // source line 203, bytecode pc 373
-        (i = (+i + 1));
+        // source line 203, bytecode pc 374
+        i++;
     }
     // source line 221, bytecode pc 394
     return true;
@@ -293,11 +293,11 @@
     (i = 0);
     while ((i < equipmentPiece.length)) {
         if (equipmentPiece[i].canCompose()) {
-            // source line 261, bytecode pc 118
-            (this.hintCount = (+this.hintCount + 1));
+            // source line 261, bytecode pc 119
+            this.hintCount++;
         }
-        // source line 259, bytecode pc 133
-        (i = (+i + 1));
+        // source line 259, bytecode pc 134
+        i++;
     }
     // source line 264, bytecode pc 159
     return this.hintCount;
@@ -330,11 +330,11 @@
     (i = 0);
     while ((i < items.length)) {
         if (items[i].getNewStatus()) {
-            // source line 291, bytecode pc 126
-            (this.hintCount = (+this.hintCount + 1));
+            // source line 291, bytecode pc 127
+            this.hintCount++;
         }
-        // source line 289, bytecode pc 141
-        (i = (+i + 1));
+        // source line 289, bytecode pc 142
+        i++;
     }
     // source line 330, bytecode pc 183
     xs.log_hsq("HintCampBagHintCampBag");
@@ -344,11 +344,11 @@
     (i = 0);
     while ((i < gems.length)) {
         if (gems[i].getStatus()) {
-            // source line 335, bytecode pc 294
-            (this.gemHintNum = (+this.gemHintNum + 1));
+            // source line 335, bytecode pc 295
+            this.gemHintNum++;
         }
-        // source line 333, bytecode pc 309
-        (i = (+i + 1));
+        // source line 333, bytecode pc 310
+        i++;
     }
     // source line 342, bytecode pc 330
     return true;
@@ -391,11 +391,11 @@
     (i = 0);
     while ((i < skillPieces.length)) {
         if (skillPieces[i].canCompose()) {
-            // source line 379, bytecode pc 118
-            (this.hintCount = (+this.hintCount + 1));
+            // source line 379, bytecode pc 119
+            this.hintCount++;
         }
-        // source line 377, bytecode pc 133
-        (i = (+i + 1));
+        // source line 377, bytecode pc 134
+        i++;
     }
     // source line 383, bytecode pc 154
     return true;

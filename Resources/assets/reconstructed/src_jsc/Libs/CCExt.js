@@ -49,8 +49,8 @@
                     callbackNode.setCallback(owner[callbackName], owner);
                 }
             }
-            // source line 49, bytecode pc 392
-            (i = (+i + 1));
+            // source line 49, bytecode pc 393
+            i++;
         }
         // source line 73, bytecode pc 429
         (ownerOutletNames = reader.getOwnerOutletNames());
@@ -65,8 +65,8 @@
             (outletNode = ownerOutletNodes[i]);
             // source line 81, bytecode pc 491
             (owner[outletName] = outletNode);
-            // source line 76, bytecode pc 505
-            (i = (+i + 1));
+            // source line 76, bytecode pc 506
+            i++;
         }
     }
     // source line 85, bytecode pc 542
@@ -119,8 +119,8 @@
                         callbackNode.setCallback(controller[callbackName], controller);
                     }
                 }
-                // source line 110, bytecode pc 944
-                (j = (+j + 1));
+                // source line 110, bytecode pc 945
+                j++;
             }
             // source line 135, bytecode pc 981
             (documentOutletNames = animationManager.getDocumentOutletNames());
@@ -135,8 +135,8 @@
                 (outletNode = documentOutletNodes[j]);
                 // source line 143, bytecode pc 1043
                 (controller[outletName] = outletNode);
-                // source line 138, bytecode pc 1057
-                (j = (+j + 1));
+                // source line 138, bytecode pc 1058
+                j++;
             }
             if ((typeof(controller.onDidLoadFromCCB) == "function")) {
                 // source line 148, bytecode pc 1111
@@ -166,8 +166,8 @@
                         animationManager.setCallFunc(callfunc, keyframeCallbacks[j]);
                     }
                 }
-                // source line 153, bytecode pc 1363
-                (j = (+j + 1));
+                // source line 153, bytecode pc 1364
+                j++;
             }
             // source line 172, bytecode pc 1400
             (autoPlaySeqId = animationManager.getAutoPlaySequenceId());
@@ -176,8 +176,8 @@
                 animationManager.runAnimationsForSequenceIdTweenDuration(autoPlaySeqId, 0);
             }
         }
-        // source line 89, bytecode pc 1446
-        (i = (+i + 1));
+        // source line 89, bytecode pc 1447
+        i++;
     }
     // source line 179, bytecode pc 1469
     return node;

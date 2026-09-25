@@ -121,13 +121,13 @@
                     (is_chg = true);
                     // source line 98, bytecode pc 210
                     this.m_equipData[i].addSelectNum();
-                    // source line 99, bytecode pc 236
-                    (this.selectMaxLength = (+this.selectMaxLength + 1));
+                    // source line 99, bytecode pc 237
+                    this.selectMaxLength++;
                 }
             }
         }
-        // source line 89, bytecode pc 251
-        (i = (+i + 1));
+        // source line 89, bytecode pc 252
+        i++;
     }
     // source line 104, bytecode pc 278
     (i = 0);
@@ -145,13 +145,13 @@
                     (is_chg = true);
                     // source line 113, bytecode pc 484
                     this.m_refineList[i].addSelectNum();
-                    // source line 114, bytecode pc 510
-                    (this.selectMaxLength = (+this.selectMaxLength + 1));
+                    // source line 114, bytecode pc 511
+                    this.selectMaxLength++;
                 }
             }
         }
-        // source line 104, bytecode pc 525
-        (i = (+i + 1));
+        // source line 104, bytecode pc 526
+        i++;
     }
     if (is_chg) {
         // source line 121, bytecode pc 573
@@ -180,13 +180,13 @@
                     (is_chg = true);
                     // source line 136, bytecode pc 210
                     this.m_equipData[i].addSelectNum();
-                    // source line 137, bytecode pc 236
-                    (this.selectMaxLength = (+this.selectMaxLength + 1));
+                    // source line 137, bytecode pc 237
+                    this.selectMaxLength++;
                 }
             }
         }
-        // source line 127, bytecode pc 251
-        (i = (+i + 1));
+        // source line 127, bytecode pc 252
+        i++;
     }
     // source line 142, bytecode pc 278
     (i = 0);
@@ -199,8 +199,8 @@
             // source line 146, bytecode pc 399
             (this.selectMaxLength = (this.selectMaxLength + this.m_refineList[i].getMaxNum()));
         }
-        // source line 142, bytecode pc 413
-        (i = (+i + 1));
+        // source line 142, bytecode pc 414
+        i++;
     }
     if (is_chg) {
         // source line 152, bytecode pc 461
@@ -229,13 +229,13 @@
                     (is_chg = true);
                     // source line 168, bytecode pc 210
                     this.m_equipData[i].addSelectNum();
-                    // source line 169, bytecode pc 236
-                    (this.selectMaxLength = (+this.selectMaxLength + 1));
+                    // source line 169, bytecode pc 237
+                    this.selectMaxLength++;
                 }
             }
         }
-        // source line 159, bytecode pc 251
-        (i = (+i + 1));
+        // source line 159, bytecode pc 252
+        i++;
     }
     // source line 174, bytecode pc 278
     (i = 0);
@@ -253,13 +253,13 @@
                     (is_chg = true);
                     // source line 183, bytecode pc 484
                     this.m_refineList[i].addSelectNum();
-                    // source line 184, bytecode pc 510
-                    (this.selectMaxLength = (+this.selectMaxLength + 1));
+                    // source line 184, bytecode pc 511
+                    this.selectMaxLength++;
                 }
             }
         }
-        // source line 174, bytecode pc 525
-        (i = (+i + 1));
+        // source line 174, bytecode pc 526
+        i++;
     }
     if (is_chg) {
         // source line 192, bytecode pc 573
@@ -288,13 +288,13 @@
                     (is_chg = true);
                     // source line 207, bytecode pc 210
                     this.m_equipData[i].addSelectNum();
-                    // source line 208, bytecode pc 236
-                    (this.selectMaxLength = (+this.selectMaxLength + 1));
+                    // source line 208, bytecode pc 237
+                    this.selectMaxLength++;
                 }
             }
         }
-        // source line 198, bytecode pc 251
-        (i = (+i + 1));
+        // source line 198, bytecode pc 252
+        i++;
     }
     // source line 213, bytecode pc 278
     (i = 0);
@@ -307,8 +307,8 @@
             // source line 217, bytecode pc 399
             (this.selectMaxLength = (this.selectMaxLength + this.m_refineList[i].getMaxNum()));
         }
-        // source line 213, bytecode pc 413
-        (i = (+i + 1));
+        // source line 213, bytecode pc 414
+        i++;
     }
     if (is_chg) {
         // source line 224, bytecode pc 461
@@ -337,13 +337,13 @@
                     (is_chg = true);
                     // source line 241, bytecode pc 210
                     this.m_equipData[i].addSelectNum();
-                    // source line 242, bytecode pc 236
-                    (this.selectMaxLength = (+this.selectMaxLength + 1));
+                    // source line 242, bytecode pc 237
+                    this.selectMaxLength++;
                 }
             }
         }
-        // source line 232, bytecode pc 251
-        (i = (+i + 1));
+        // source line 232, bytecode pc 252
+        i++;
     }
     if (is_chg) {
         // source line 248, bytecode pc 299
@@ -365,8 +365,8 @@
             // source line 259, bytecode pc 114
             eids.push(this.m_equipData[i].getModel().getPkId());
         }
-        // source line 257, bytecode pc 128
-        (i = (+i + 1));
+        // source line 257, bytecode pc 129
+        i++;
     }
     // source line 262, bytecode pc 160
     (refineStones = {});
@@ -385,8 +385,8 @@
             // source line 269, bytecode pc 279
             (refineStones[_pkid] = _selectNum);
         }
-        // source line 264, bytecode pc 293
-        (i = (+i + 1));
+        // source line 264, bytecode pc 294
+        i++;
     }
     if (((eids.length == 0) && refineStoneIsNull)) {
         // source line 275, bytecode pc 399
@@ -430,8 +430,8 @@
             // source line 305, bytecode pc 81
             (addExp = (addExp + this.m_equipData[i].getOriModel().getEatedRefineExp()));
         }
-        // source line 303, bytecode pc 95
-        (i = (+i + 1));
+        // source line 303, bytecode pc 96
+        i++;
     }
     // source line 308, bytecode pc 122
     (i = 0);
@@ -444,8 +444,8 @@
             // source line 313, bytecode pc 230
             (addExp = (addExp + (selectNum * eatExp)));
         }
-        // source line 308, bytecode pc 244
-        (i = (+i + 1));
+        // source line 308, bytecode pc 245
+        i++;
     }
     // source line 318, bytecode pc 290
     (addExp = Math.floor(addExp));
@@ -463,8 +463,8 @@
             // source line 331, bytecode pc 139
             newArray.push(this.m_equipData[i]);
         }
-        // source line 327, bytecode pc 153
-        (i = (+i + 1));
+        // source line 327, bytecode pc 154
+        i++;
     }
     // source line 334, bytecode pc 179
     return newArray;
@@ -482,8 +482,8 @@
             // source line 342, bytecode pc 102
             (addExp = (addExp + this.m_equipData[i].getOriModel().getEatedRefineExp()));
         }
-        // source line 340, bytecode pc 116
-        (i = (+i + 1));
+        // source line 340, bytecode pc 117
+        i++;
     }
     // source line 345, bytecode pc 143
     (i = 0);
@@ -496,8 +496,8 @@
             // source line 349, bytecode pc 251
             (addExp = (addExp + (selectNum * eatExp)));
         }
-        // source line 345, bytecode pc 265
-        (i = (+i + 1));
+        // source line 345, bytecode pc 266
+        i++;
     }
     // source line 354, bytecode pc 310
     return parseInt((curExp + addExp));
@@ -522,8 +522,8 @@
             // source line 366, bytecode pc 102
             (addExp = (addExp + this.m_equipData[i].getOriModel().getEatedRefineExp()));
         }
-        // source line 364, bytecode pc 116
-        (i = (+i + 1));
+        // source line 364, bytecode pc 117
+        i++;
     }
     // source line 369, bytecode pc 143
     (i = 0);
@@ -536,8 +536,8 @@
             // source line 373, bytecode pc 251
             (addExp = (addExp + (selectNum * eatExp)));
         }
-        // source line 369, bytecode pc 265
-        (i = (+i + 1));
+        // source line 369, bytecode pc 266
+        i++;
     }
     if ((curExp >= this.m_maxExp)) {
         // source line 379, bytecode pc 304
@@ -565,16 +565,16 @@
     while ((i < this.m_equipData.length)) {
         // source line 397, bytecode pc 171
         this.m_equipData[i].reset();
-        // source line 396, bytecode pc 185
-        (i = (+i + 1));
+        // source line 396, bytecode pc 186
+        i++;
     }
     // source line 399, bytecode pc 212
     (i = 0);
     while ((i < this.m_refineList.length)) {
         // source line 400, bytecode pc 240
         this.m_refineList[i].reset();
-        // source line 399, bytecode pc 254
-        (i = (+i + 1));
+        // source line 399, bytecode pc 255
+        i++;
     }
     // source line 402, bytecode pc 301
     this.m_tableView.resetTargetModel(this.m_equip);

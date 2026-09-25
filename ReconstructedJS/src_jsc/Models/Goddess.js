@@ -190,8 +190,8 @@
                 return skinList[next];
             }
         }
-        // source line 173, bytecode pc 150
-        (i = (+i + 1));
+        // source line 173, bytecode pc 151
+        i++;
     }
 },
     getBigFighting: function() {

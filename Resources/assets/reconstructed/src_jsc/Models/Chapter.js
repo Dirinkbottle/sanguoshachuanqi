@@ -63,8 +63,8 @@
                 this.error("type err", dungeonsInfo[i]);
             }
         }
-        // source line 49, bytecode pc 225
-        (i = (+i + 1));
+        // source line 49, bytecode pc 226
+        i++;
     }
 },
     getDungeons: function() {
@@ -80,8 +80,8 @@
             // source line 71, bytecode pc 51
             return this.dungeons[i];
         }
-        // source line 69, bytecode pc 65
-        (i = (+i + 1));
+        // source line 69, bytecode pc 66
+        i++;
     }
     // source line 75, bytecode pc 89
     return null;
@@ -152,8 +152,8 @@
             // source line 131, bytecode pc 51
             return this.dungeons[i];
         }
-        // source line 129, bytecode pc 65
-        (i = (+i + 1));
+        // source line 129, bytecode pc 66
+        i++;
     }
     // source line 135, bytecode pc 89
     return null;
@@ -171,8 +171,8 @@
             // source line 144, bytecode pc 117
             (maxDungeon = id);
         }
-        // source line 141, bytecode pc 131
-        (i = (+i + 1));
+        // source line 141, bytecode pc 132
+        i++;
     }
     // source line 147, bytecode pc 180
     xs.log(("getBossDungeonId:" + maxDungeon));

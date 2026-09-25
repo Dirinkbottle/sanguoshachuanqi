@@ -57,8 +57,8 @@
     while ((i < 10)) {
         // source line 50, bytecode pc 50
         this._EffectScrollView.addChildrenView(xs.DetailDialogComponent.createDStyleS());
-        // source line 48, bytecode pc 64
-        (i = (+i + 1));
+        // source line 48, bytecode pc 65
+        i++;
     }
     // source line 52, bytecode pc 95
     this._EffectScrollView.resizeView();

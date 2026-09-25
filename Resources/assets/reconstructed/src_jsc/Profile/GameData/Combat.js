@@ -25,8 +25,8 @@
             // source line 23, bytecode pc 77
             return m_combats[i];
         }
-        // source line 21, bytecode pc 91
-        (i = (+i + 1));
+        // source line 21, bytecode pc 92
+        i++;
     }
 },
     getNotify: function() {

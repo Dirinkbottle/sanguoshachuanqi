@@ -259,8 +259,8 @@
             buttonHello.setAnchorPoint(xs.ap_rt);
             // source line 564, bytecode pc 4672
             xs.Utils.Node.attachNodes(this, buttonHello, { desc: "rt", sc: true, offset: { x: -200, y: (-0 - (i * buttonHello.getButtonSize().height)) } });
-            // source line 539, bytecode pc 4686
-            (i = (+i + 1));
+            // source line 539, bytecode pc 4687
+            i++;
         }
     }
     if (!xs._enter_isFirst_mainmenu) {
@@ -291,8 +291,8 @@
             // source line 618, bytecode pc 189
             _arrayGeneralOwn.push(_tmpModelGeneral);
         }
-        // source line 612, bytecode pc 203
-        (i = (+i + 1));
+        // source line 612, bytecode pc 204
+        i++;
     }
     // source line 622, bytecode pc 229
     (_arrayDataSource = _arrayGeneralOwn);
@@ -524,8 +524,8 @@
                     }
                 }
             }
-            // source line 884, bytecode pc 306
-            (i = (+i + 1));
+            // source line 884, bytecode pc 307
+            i++;
         }
         // source line 895, bytecode pc 361
         (str = xs.Tools.String.createString("EquipmentMeltSucess"));

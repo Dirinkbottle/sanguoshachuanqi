@@ -40,8 +40,8 @@
                 (cacheKey = this.cachesAll[i]);
                 // source line 50, bytecode pc 82
                 (this[cacheKey] = null);
-                // source line 48, bytecode pc 96
-                (i = (+i + 1));
+                // source line 48, bytecode pc 97
+                i++;
             }
         }
     }

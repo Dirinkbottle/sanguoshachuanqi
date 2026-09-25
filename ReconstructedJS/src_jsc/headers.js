@@ -47,8 +47,8 @@ while ((i < xs.appFiles.length)) {
         // source line 111, bytecode pc 433
         require(xs.appFiles[i]);
     }
-    // source line 109, bytecode pc 462
-    (i = (+i + 1));
+    // source line 109, bytecode pc 463
+    i++;
 }
 // source line 119, bytecode pc 511
 require("debug.js");

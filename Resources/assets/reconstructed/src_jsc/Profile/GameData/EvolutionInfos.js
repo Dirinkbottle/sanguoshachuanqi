@@ -30,8 +30,8 @@
             // source line 29, bytecode pc 61
             return _obj_list[i];
         }
-        // source line 27, bytecode pc 75
-        (i = (+i + 1));
+        // source line 27, bytecode pc 76
+        i++;
     }
     // source line 32, bytecode pc 96
     return null;
@@ -109,8 +109,8 @@
                 }
             }
         }
-        // source line 70, bytecode pc 423
-        (i = (+i + 1));
+        // source line 70, bytecode pc 424
+        i++;
     }
     // source line 99, bytecode pc 457
     (this.hitNum = waitAwakeObjs.length);
@@ -119,24 +119,24 @@
     while ((i < waitAwakeObjs.length)) {
         // source line 102, bytecode pc 491
         _awake_obj.push(waitAwakeObjs[i]);
-        // source line 101, bytecode pc 505
-        (i = (+i + 1));
+        // source line 101, bytecode pc 506
+        i++;
     }
     // source line 105, bytecode pc 529
     (i = 0);
     while ((i < openAwakeObjs.length)) {
         // source line 106, bytecode pc 558
         _awake_obj.push(openAwakeObjs[i]);
-        // source line 105, bytecode pc 572
-        (i = (+i + 1));
+        // source line 105, bytecode pc 573
+        i++;
     }
     // source line 108, bytecode pc 596
     (i = 0);
     while ((i < closeAwakeObjs.length)) {
         // source line 109, bytecode pc 625
         _awake_obj.push(closeAwakeObjs[i]);
-        // source line 108, bytecode pc 639
-        (i = (+i + 1));
+        // source line 108, bytecode pc 640
+        i++;
     }
     // source line 112, bytecode pc 662
     return _awake_obj;

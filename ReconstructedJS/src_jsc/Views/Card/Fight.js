@@ -746,8 +746,8 @@
             // source line 1150, bytecode pc 684
             _tmpArm.setVisible(false);
         }
-        // source line 1147, bytecode pc 698
-        (i = (+i + 1));
+        // source line 1147, bytecode pc 699
+        i++;
     }
 },
     init: function(viewCfg) {

@@ -16,8 +16,8 @@
     while ((i < _childs.length)) {
         // source line 26, bytecode pc 106
         xs.log(("_childs[i]." + _childs[i].name), _childs[i].getZOrder());
-        // source line 25, bytecode pc 120
-        (i = (+i + 1));
+        // source line 25, bytecode pc 121
+        i++;
     }
     // source line 28, bytecode pc 162
     xs.log("-------------------------------");
@@ -94,8 +94,8 @@
     while ((i < str.length)) {
         // source line 82, bytecode pc 62
         cc.log(str[i]);
-        // source line 81, bytecode pc 76
-        (i = (+i + 1));
+        // source line 81, bytecode pc 77
+        i++;
     }
     // source line 84, bytecode pc 118
     cc.log("\n");
@@ -249,8 +249,8 @@
                     while ((i < level)) {
                         // source line 233, bytecode pc 250
                         (_lastPre = (_lastPre + _SPACE));
-                        // source line 232, bytecode pc 264
-                        (i = (+i + 1));
+                        // source line 232, bytecode pc 265
+                        i++;
                     }
                     // source line 235, bytecode pc 289
                     (_pre = (_lastPre + _SPACE));
@@ -260,8 +260,8 @@
                     (_isEmptyObj = true);
                     for (var _tmp in obj) {
                         if ((i === 0)) {
-                            // source line 249, bytecode pc 343
-                            (i = (+i + 1));
+                            // source line 249, bytecode pc 344
+                            i++;
                         }
                         if (!obj.hasOwnProperty(_tmp)) {
                         } else {
@@ -364,8 +364,8 @@
         }
         // source line 364, bytecode pc 136
         (fun = fun.arguments.callee.caller);
-        // source line 366, bytecode pc 150
-        (count = (+count + 1));
+        // source line 366, bytecode pc 151
+        count++;
     } while (fun);
 });
     if (((expression === null) || ((expression === undefined) || (expression === false)))) {

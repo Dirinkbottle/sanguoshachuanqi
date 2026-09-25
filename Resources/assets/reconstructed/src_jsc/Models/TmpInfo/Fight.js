@@ -142,8 +142,8 @@
     // source line 138, bytecode pc 41
     (leftNum = parseInt(fightData.cards_size0));
     for (var mroundStr in roundsData) {
-        // source line 141, bytecode pc 71
-        (i = (+i + 1));
+        // source line 141, bytecode pc 72
+        i++;
         // source line 142, bytecode pc 83
         (mRound = roundsData[mroundStr]);
         if ((mRound.skill == this.cfg.goddessSkillName)) {
@@ -171,8 +171,8 @@
     while ((i < length)) {
         // source line 164, bytecode pc 42
         mList.push((startidx + i));
-        // source line 163, bytecode pc 56
-        (i = (+i + 1));
+        // source line 163, bytecode pc 57
+        i++;
     }
     // source line 166, bytecode pc 74
     return mList;
@@ -316,11 +316,11 @@
     (i = _begin);
     while ((i < _end)) {
         if (!!this.cardDatas[i]) {
-            // source line 296, bytecode pc 153
-            (_count = (+_count + 1));
+            // source line 296, bytecode pc 154
+            _count++;
         }
-        // source line 294, bytecode pc 168
-        (i = (+i + 1));
+        // source line 294, bytecode pc 169
+        i++;
     }
     // source line 299, bytecode pc 186
     return _count;
@@ -458,8 +458,8 @@
     return xs.Cfg.Scene.FightScene.speedInfos;
 },
     changeSpeed: function() {
-    // source line 438, bytecode pc 25
-    (this.speedIdx = (+this.speedIdx + 1));
+    // source line 438, bytecode pc 26
+    this.speedIdx++;
     if ((this.speedIdx >= this._getSpeedInfos().length)) {
         // source line 441, bytecode pc 63
         (this.speedIdx = 0);

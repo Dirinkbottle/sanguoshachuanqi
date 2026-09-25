@@ -307,8 +307,8 @@
     pkid: _source[i].param_value,
     param_value: _source[i].param_value
 }));
-        // source line 183, bytecode pc 643
-        (i = (+i + 1));
+        // source line 183, bytecode pc 644
+        i++;
     }
     // source line 196, bytecode pc 746
     this._SourceScrollView.addChildrenView(xs.DetailDialogComponent.createDStyleD({ titleText: xs.Tools.String.createString("1071110016") }));
@@ -677,8 +677,8 @@
     while ((i >= 0)) {
         // source line 533, bytecode pc 393
         scrollView.addChildrenView(xs.DetailDialogComponent.createDStyleO({ surrenderData: surrenderData[i], index: i }));
-        // source line 530, bytecode pc 407
-        (i = (+i - 1));
+        // source line 530, bytecode pc 408
+        i--;
     }
     if (hasAwakedSurrender) {
         // source line 543, bytecode pc 507

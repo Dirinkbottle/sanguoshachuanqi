@@ -259,8 +259,8 @@
     while ((i >= 0)) {
         // source line 250, bytecode pc 399
         surrenderView.addChildrenView(xs.DetailDialogComponent.createDStyleO({ surrenderData: surrenderData[i], index: i }));
-        // source line 247, bytecode pc 413
-        (i = (+i - 1));
+        // source line 247, bytecode pc 414
+        i--;
     }
     if (hasAwakedSurrender) {
         // source line 260, bytecode pc 513
@@ -352,8 +352,8 @@
             // source line 330, bytecode pc 65
             return i;
         }
-        // source line 327, bytecode pc 79
-        (i = (+i + 1));
+        // source line 327, bytecode pc 80
+        i++;
     }
     // source line 333, bytecode pc 103
     return 0;

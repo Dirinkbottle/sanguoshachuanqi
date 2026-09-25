@@ -128,8 +128,8 @@
             }
             // source line 136, bytecode pc 222
             (_list[i] = _point_obj);
-            // source line 124, bytecode pc 236
-            (i = (+i + 1));
+            // source line 124, bytecode pc 237
+            i++;
         }
         // source line 139, bytecode pc 259
         (this.normal_point_list = _list);
@@ -170,8 +170,8 @@
             }
             // source line 174, bytecode pc 177
             (_elite_list[i] = _point_obj);
-            // source line 163, bytecode pc 191
-            (i = (+i + 1));
+            // source line 163, bytecode pc 192
+            i++;
         }
         // source line 177, bytecode pc 214
         (this.elite_point_list = _elite_list);
@@ -240,8 +240,8 @@
             // source line 238, bytecode pc 309
             (_effect_val = (_effect_val + Number(_point_obj.getEffectVal())));
         }
-        // source line 235, bytecode pc 323
-        (i = (+i + 1));
+        // source line 235, bytecode pc 324
+        i++;
     }
     // source line 242, bytecode pc 346
     return _effect_val;
@@ -262,7 +262,7 @@
         // source line 277, bytecode pc 84
         (_fate_arr[x] = _fate_arr[temp]);
         // source line 278, bytecode pc 92
-        delete temp[_fate_arr];
+        delete _fate_arr[temp];
     }
     if (flag) {
         // source line 283, bytecode pc 127
@@ -292,8 +292,8 @@
             // source line 262, bytecode pc 212
             (_fate_arr[_effectVal[0]] = _effectVal[1]);
         }
-        // source line 257, bytecode pc 226
-        (i = (+i + 1));
+        // source line 257, bytecode pc 227
+        i++;
     }
     // source line 286, bytecode pc 266
     _fate_replace(_fate_arr);

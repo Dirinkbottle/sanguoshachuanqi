@@ -67,8 +67,8 @@
         (obj.disappearTime = parseInt(jsonObj.show_general_list[i].disappear_time));
         // source line 60, bytecode pc 711
         this.showGenerals.push(obj);
-        // source line 53, bytecode pc 725
-        (i = (+i + 1));
+        // source line 53, bytecode pc 726
+        i++;
     }
     // source line 64, bytecode pc 791
     xs.director.getScheduler().unscheduleCallbackForTarget(this, this.countDown);
@@ -248,8 +248,8 @@
     // source line 210, bytecode pc 12
     this.updateCountTime();
     if ((this.goldCountTime > 0)) {
-        // source line 213, bytecode pc 51
-        (this.goldCountTime = (+this.goldCountTime - 1));
+        // source line 213, bytecode pc 52
+        this.goldCountTime--;
         // source line 214, bytecode pc 60
         (this.bUpdateForGold = false);
     } else {
@@ -263,8 +263,8 @@
         }
     }
     if ((this.silverCountTime > 0)) {
-        // source line 225, bytecode pc 185
-        (this.silverCountTime = (+this.silverCountTime - 1));
+        // source line 225, bytecode pc 186
+        this.silverCountTime--;
         // source line 226, bytecode pc 194
         (this.bUpdateForSilver = false);
     } else {
@@ -278,8 +278,8 @@
         }
     }
     if ((this.copperCountTime > 0)) {
-        // source line 237, bytecode pc 319
-        (this.copperCountTime = (+this.copperCountTime - 1));
+        // source line 237, bytecode pc 320
+        this.copperCountTime--;
         // source line 238, bytecode pc 328
         (this.bUpdateForCopper = false);
     } else {

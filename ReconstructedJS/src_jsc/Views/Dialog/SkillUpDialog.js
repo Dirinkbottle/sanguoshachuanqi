@@ -222,8 +222,8 @@
     while ((i <= level)) {
         // source line 195, bytecode pc 41
         (totalExp = (totalExp + data.getUpgradeExpNeed(i)));
-        // source line 193, bytecode pc 55
-        (i = (+i + 1));
+        // source line 193, bytecode pc 56
+        i++;
     }
     // source line 197, bytecode pc 73
     return totalExp;
@@ -520,8 +520,8 @@
             // source line 440, bytecode pc 29
             return void 0;
         }
-        // source line 438, bytecode pc 43
-        (i = (+i + 1));
+        // source line 438, bytecode pc 44
+        i++;
     }
     // source line 445, bytecode pc 109
     (this.armEat = xs.Views.Armature.AutoAudioArmature.create("Arm_UpgradeCard_LevelUp"));
@@ -534,8 +534,8 @@
     // source line 458, bytecode pc 308
     this.armEat.playAniById("eatCardFinish", { loop: false, speed: 1 });
 }.bind(this))));
-        // source line 414, bytecode pc 406
-        (i = (+i + 1));
+        // source line 414, bytecode pc 407
+        i++;
     }
 },
     isMaxExp: function() {
@@ -568,8 +568,8 @@
     while ((i < level)) {
         // source line 484, bytecode pc 39
         (totalExp = (totalExp + this.getUpgradeExpNeed(i)));
-        // source line 482, bytecode pc 53
-        (i = (+i + 1));
+        // source line 482, bytecode pc 54
+        i++;
     }
     // source line 487, bytecode pc 71
     return totalExp;
@@ -634,8 +634,8 @@
     while ((i < this._data.getMaxLevel())) {
         // source line 535, bytecode pc 68
         (totalExp = (totalExp + this._data.getUpgradeExpNeed(i)));
-        // source line 533, bytecode pc 82
-        (i = (+i + 1));
+        // source line 533, bytecode pc 83
+        i++;
     }
     // source line 538, bytecode pc 114
     return totalExp;

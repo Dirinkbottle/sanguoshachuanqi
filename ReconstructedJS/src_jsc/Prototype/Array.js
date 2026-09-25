@@ -11,8 +11,8 @@ Array.method("hasItemString", function() {
             // source line 5, bytecode pc 44
             return true;
         }
-        // source line 3, bytecode pc 58
-        (i = (+i + 1));
+        // source line 3, bytecode pc 59
+        i++;
     }
     // source line 8, bytecode pc 77
     return false;
@@ -32,8 +32,8 @@ Array.method("hasItem", function(input) {
             // source line 20, bytecode pc 26
             return true;
         }
-        // source line 18, bytecode pc 40
-        (i = (+i + 1));
+        // source line 18, bytecode pc 41
+        i++;
     }
     // source line 23, bytecode pc 59
     return false;
@@ -50,8 +50,8 @@ Array.method("removeEmptys", function() {
             // source line 34, bytecode pc 69
             _ret.push(this[i]);
         }
-        // source line 32, bytecode pc 83
-        (i = (+i + 1));
+        // source line 32, bytecode pc 84
+        i++;
     }
     // source line 38, bytecode pc 104
     return _ret;
@@ -75,8 +75,8 @@ Array.method("inArray", function(val, type) {
                 return true;
             }
         }
-        // source line 45, bytecode pc 83
-        (i = (+i + 1));
+        // source line 45, bytecode pc 84
+        i++;
     }
     // source line 56, bytecode pc 102
     return false;

@@ -177,8 +177,8 @@
         this.m_tiles[this._getLastTileIndex()].setScale(0.3);
         // source line 130, bytecode pc 635
         this.m_tiles[this._getLastTileIndex()].setPosition(cc.p(this.m_size.width, this.m_offsetY));
-        // source line 133, bytecode pc 661
-        (this.m_index = (+this.m_index + 1));
+        // source line 133, bytecode pc 662
+        this.m_index++;
         if (((this.m_index + 1) < this.m_dataSource.length)) {
             // source line 135, bytecode pc 722
             this._updateTile(this._getLastTileIndex(), (this.m_index + 1));
@@ -227,8 +227,8 @@
         this.m_tiles[this._getNextTileIndex()].setScale(0.3);
         // source line 167, bytecode pc 600
         this.m_tiles[this._getNextTileIndex()].setPosition(cc.p(0, this.m_offsetY));
-        // source line 170, bytecode pc 626
-        (this.m_index = (+this.m_index - 1));
+        // source line 170, bytecode pc 627
+        this.m_index--;
         if (((this.m_index - 1) >= 0)) {
             // source line 172, bytecode pc 677
             this._updateTile(this._getNextTileIndex(), (this.m_index - 1));

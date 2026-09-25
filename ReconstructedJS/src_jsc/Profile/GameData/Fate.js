@@ -78,8 +78,8 @@
             (_obj_general = this._initInstance().Generals.getByIdAndAutoCreate(_arr_general[i]));
             // source line 82, bytecode pc 389
             _rs.push(_obj_general);
-            // source line 80, bytecode pc 403
-            (i = (+i + 1));
+            // source line 80, bytecode pc 404
+            i++;
         }
     }
     // source line 86, bytecode pc 473

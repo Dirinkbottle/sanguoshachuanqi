@@ -84,8 +84,8 @@
 });
             }
         }
-        // source line 40, bytecode pc 465
-        (i = (+i + 1));
+        // source line 40, bytecode pc 466
+        i++;
     }
 },
     createCell: function(cellData, index) {
@@ -392,8 +392,8 @@
         (cellData = {});
         // source line 386, bytecode pc 41
         this.createCell(cellData, i);
-        // source line 384, bytecode pc 55
-        (i = (+i + 1));
+        // source line 384, bytecode pc 56
+        i++;
     }
 },
     createCell: function(cellData, index) {
@@ -429,8 +429,8 @@
         (cellData = {});
         // source line 420, bytecode pc 41
         this.createCell(cellData, i);
-        // source line 418, bytecode pc 55
-        (i = (+i + 1));
+        // source line 418, bytecode pc 56
+        i++;
     }
 },
     createCell: function(cellData, index) {

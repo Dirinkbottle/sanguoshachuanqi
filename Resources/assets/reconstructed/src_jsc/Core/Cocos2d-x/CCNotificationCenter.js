@@ -40,8 +40,8 @@
                 return void 0;
             }
         }
-        // source line 61, bytecode pc 125
-        (i = (+i + 1));
+        // source line 61, bytecode pc 126
+        i++;
     }
 },
     removeAllObservers: function(target) {
@@ -57,8 +57,8 @@
             // source line 82, bytecode pc 75
             removes.push(selObserver);
         }
-        // source line 79, bytecode pc 89
-        (i = (+i + 1));
+        // source line 79, bytecode pc 90
+        i++;
     }
     // source line 84, bytecode pc 139
     cc.ArrayRemoveArray(this._observers, removes);
@@ -79,8 +79,8 @@
                 observer.performSelector(object);
             }
         }
-        // source line 93, bytecode pc 94
-        (i = (+i + 1));
+        // source line 93, bytecode pc 95
+        i++;
     }
 },
     _observerExisted: function(target, name) {
@@ -97,8 +97,8 @@
                 return true;
             }
         }
-        // source line 113, bytecode pc 101
-        (i = (+i + 1));
+        // source line 113, bytecode pc 102
+        i++;
     }
     // source line 120, bytecode pc 125
     return false;

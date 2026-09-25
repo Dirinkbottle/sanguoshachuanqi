@@ -47,8 +47,8 @@
             (_pngFile = (_prefix + ".png"));
             // source line 75, bytecode pc 350
             cc.ArmatureDataManager.getInstance().addArmatureFileInfo(_pngFile, _plistFile, _fileName);
-            // source line 66, bytecode pc 364
-            (i = (+i + 1));
+            // source line 66, bytecode pc 365
+            i++;
         }
     }
 },
@@ -79,8 +79,8 @@
             (_plistFile = (_prefix + ".plist"));
             // source line 114, bytecode pc 280
             cc.SpriteFrameCache.getInstance().removeSpriteFramesFromFile(_plistFile);
-            // source line 106, bytecode pc 294
-            (i = (+i + 1));
+            // source line 106, bytecode pc 295
+            i++;
         }
     }
     // source line 119, bytecode pc 334

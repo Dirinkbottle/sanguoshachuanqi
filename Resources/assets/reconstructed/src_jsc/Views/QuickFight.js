@@ -177,8 +177,8 @@
                 (icon = xs.Utils.replaceIcon_direct(this.ccbNode, this.m_drop[i], dropItems[i].createIcon_GradeAndName()));
                 // source line 156, bytecode pc 1779
                 icon.setVisible(true);
-                // source line 151, bytecode pc 1793
-                (i = (+i + 1));
+                // source line 151, bytecode pc 1794
+                i++;
             }
         }
     }
@@ -267,8 +267,8 @@
     while ((i < starNum)) {
         // source line 258, bytecode pc 34
         this.m_winStar[i].setVisible(true);
-        // source line 257, bytecode pc 48
-        (i = (+i + 1));
+        // source line 257, bytecode pc 49
+        i++;
     }
 },
     hideWinStar: function() {

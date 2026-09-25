@@ -105,8 +105,8 @@
         this.m_iconBtns.push(btn);
         // source line 118, bytecode pc 425
         xs.Utils.Node.attachNodes(this, btn, { desc: _desc, sc: true, offset: { x: offset_x, y: offset_y } }, xs.Cfg.Scene.TeamBuildScene.m_iconBtn);
-        // source line 85, bytecode pc 439
-        (i = (+i + 1));
+        // source line 85, bytecode pc 440
+        i++;
     }
 },
     updateIconBtns: function() {
@@ -153,8 +153,8 @@
         }
         // source line 162, bytecode pc 564
         this.m_iconBtns[i].updateView();
-        // source line 129, bytecode pc 578
-        (i = (+i + 1));
+        // source line 129, bytecode pc 579
+        i++;
     }
 },
     iconBtnCallback: function(index, data) {
@@ -237,8 +237,8 @@
             // source line 245, bytecode pc 599
             view.addChild(fateView);
         }
-        // source line 220, bytecode pc 613
-        (i = (+i + 1));
+        // source line 220, bytecode pc 614
+        i++;
     }
     // source line 250, bytecode pc 657
     (parentView = cc.Node.create());
@@ -334,8 +334,8 @@
     while ((i < this.m_iconBtns.length)) {
         // source line 343, bytecode pc 125
         this.m_iconBtns[i].setTouchPriority((this.m_baseTouchPriority + xs.Cfg.Scene.TeamBuildScene.m_iconBtn.priority));
-        // source line 342, bytecode pc 139
-        (i = (+i + 1));
+        // source line 342, bytecode pc 140
+        i++;
     }
 },
     requestActivateBuddyPosition: function() {

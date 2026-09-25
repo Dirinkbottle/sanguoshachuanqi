@@ -20,8 +20,8 @@
     while ((i < 256)) {
         // source line 37, bytecode pc 48
         (s[i] = i);
-        // source line 36, bytecode pc 62
-        (i = (+i + 1));
+        // source line 36, bytecode pc 63
+        i++;
     }
     // source line 39, bytecode pc 81
     (i = 0);
@@ -34,8 +34,8 @@
         (s[i] = s[j]);
         // source line 43, bytecode pc 171
         (s[j] = x);
-        // source line 39, bytecode pc 185
-        (i = (+i + 1));
+        // source line 39, bytecode pc 186
+        i++;
     }
     // source line 45, bytecode pc 204
     (i = 0);
@@ -56,8 +56,8 @@
         (s[j] = x);
         // source line 53, bytecode pc 356
         (res = (res + String.fromCharCode((str.charCodeAt(y) ^ s[((s[i] + s[j]) % 256)]))));
-        // source line 47, bytecode pc 370
-        (y = (+y + 1));
+        // source line 47, bytecode pc 371
+        y++;
     }
     // source line 55, bytecode pc 393
     return res;

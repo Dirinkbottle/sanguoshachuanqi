@@ -25,8 +25,8 @@
 },
     nextIdx: function() {
     if (((this.idx + 1) <= this.items.length)) {
-        // source line 37, bytecode pc 50
-        (this.idx = (+this.idx + 1));
+        // source line 37, bytecode pc 51
+        this.idx++;
     } else {
         // source line 40, bytecode pc 79
         cc.log("WARNING nextIdx ");
@@ -54,8 +54,8 @@
             // source line 56, bytecode pc 193
             otherList.push(i);
         }
-        // source line 48, bytecode pc 207
-        (i = (+i + 1));
+        // source line 48, bytecode pc 208
+        i++;
     }
     // source line 61, bytecode pc 249
     return { fsList: fsList, otherList: otherList }
@@ -84,8 +84,8 @@
             mToArray.push(_roundCfg.to[fsList[i]]);
             // source line 82, bytecode pc 181
             mToCfgList.push(mToList[fsList[i]]);
-            // source line 80, bytecode pc 195
-            (i = (+i + 1));
+            // source line 80, bytecode pc 196
+            i++;
         }
         // source line 87, bytecode pc 300
         (mSkillCfg = {
@@ -114,8 +114,8 @@
         mToArray.push(_roundCfg.to[otherList[x]]);
         // source line 99, bytecode pc 446
         mToCfgList.push(mToList[otherList[x]]);
-        // source line 97, bytecode pc 460
-        (x = (+x + 1));
+        // source line 97, bytecode pc 461
+        x++;
     }
     // source line 105, bytecode pc 583
     (mSkillCfg = {
@@ -157,8 +157,8 @@
             // source line 131, bytecode pc 83
             mRYIdxList.push(i);
         }
-        // source line 129, bytecode pc 97
-        (i = (+i + 1));
+        // source line 129, bytecode pc 98
+        i++;
     }
     // source line 135, bytecode pc 120
     return mRYIdxList;
@@ -191,8 +191,8 @@
             }
             // source line 156, bytecode pc 237
             (mToObj.event = mEventList);
-            // source line 150, bytecode pc 251
-            (i = (+i + 1));
+            // source line 150, bytecode pc 252
+            i++;
         }
     }
     // source line 162, bytecode pc 289
@@ -238,8 +238,8 @@
             // source line 192, bytecode pc 116
             mRoundCfg.params.to.splice(idx, 1);
         }
-        // source line 189, bytecode pc 130
-        (idx = (+idx + 1));
+        // source line 189, bytecode pc 131
+        idx++;
     }
     // source line 195, bytecode pc 176
     xs.log_hsq("mRoundCfg:", mRoundCfg);
@@ -310,8 +310,8 @@
             }
             // source line 246, bytecode pc 229
             (mToObj.event = mEventList);
-            // source line 240, bytecode pc 243
-            (i = (+i + 1));
+            // source line 240, bytecode pc 244
+            i++;
         }
     }
     // source line 252, bytecode pc 281
@@ -347,8 +347,8 @@
                 // source line 275, bytecode pc 196
                 (mFromObj.event = mEventList);
             }
-            // source line 266, bytecode pc 210
-            (i = (+i + 1));
+            // source line 266, bytecode pc 211
+            i++;
         }
     }
     // source line 285, bytecode pc 248
@@ -388,8 +388,8 @@
                 // source line 315, bytecode pc 248
                 (mFromObj.event = mEventList);
             }
-            // source line 303, bytecode pc 262
-            (i = (+i + 1));
+            // source line 303, bytecode pc 263
+            i++;
         }
     }
     // source line 323, bytecode pc 300
@@ -425,8 +425,8 @@
             }
             // source line 347, bytecode pc 220
             (mToObj.event = mEventList);
-            // source line 341, bytecode pc 234
-            (i = (+i + 1));
+            // source line 341, bytecode pc 235
+            i++;
         }
     }
     // source line 353, bytecode pc 272
@@ -449,8 +449,8 @@
             // source line 368, bytecode pc 98
             mTagList.push(mToList[toIdx]);
         }
-        // source line 365, bytecode pc 117
-        (toIdx = (+toIdx + 1));
+        // source line 365, bytecode pc 118
+        toIdx++;
     }
     // source line 374, bytecode pc 150
     return mTagList;
@@ -470,8 +470,8 @@
             // source line 388, bytecode pc 99
             mTagList.push(mToList[toIdx]);
         }
-        // source line 384, bytecode pc 113
-        (toIdx = (+toIdx + 1));
+        // source line 384, bytecode pc 114
+        toIdx++;
     }
     // source line 391, bytecode pc 146
     return mTagList;
@@ -499,8 +499,8 @@
             // source line 406, bytecode pc 181
             mTagList.push(mToList[toIdx]);
         }
-        // source line 401, bytecode pc 195
-        (toIdx = (+toIdx + 1));
+        // source line 401, bytecode pc 196
+        toIdx++;
     }
     if (isHave) {
         // source line 410, bytecode pc 221
@@ -544,8 +544,8 @@
                         _newItem.init(_roundCfgList[cfgIdx]);
                         // source line 446, bytecode pc 285
                         _tmp.push(_newItem);
-                        // source line 442, bytecode pc 299
-                        (cfgIdx = (+cfgIdx + 1));
+                        // source line 442, bytecode pc 300
+                        cfgIdx++;
                     }
                 } else {
                     if ((_roundCfg.skill.indexOf("luanwu") >= 0)) {
@@ -562,8 +562,8 @@
                             _newItem.init(_roundCfgList[cfgIdx]);
                             // source line 457, bytecode pc 482
                             _tmp.push(_newItem);
-                            // source line 453, bytecode pc 496
-                            (cfgIdx = (+cfgIdx + 1));
+                            // source line 453, bytecode pc 497
+                            cfgIdx++;
                         }
                     } else {
                         if ((_roundCfg.skill.indexOf("_nuyan") >= 0)) {
@@ -580,8 +580,8 @@
                                 _newItem.init(_roundCfgList[cfgIdx]);
                                 // source line 468, bytecode pc 679
                                 _tmp.push(_newItem);
-                                // source line 464, bytecode pc 693
-                                (cfgIdx = (+cfgIdx + 1));
+                                // source line 464, bytecode pc 694
+                                cfgIdx++;
                             }
                         } else {
                             if (((_roundCfg.skill.indexOf("kuanggu") >= 0) || (_roundCfg.skill.indexOf("shixue") >= 0))) {
@@ -598,8 +598,8 @@
                                     _newItem.init(_roundCfgList[cfgIdx]);
                                     // source line 479, bytecode pc 909
                                     _tmp.push(_newItem);
-                                    // source line 475, bytecode pc 923
-                                    (cfgIdx = (+cfgIdx + 1));
+                                    // source line 475, bytecode pc 924
+                                    cfgIdx++;
                                 }
                             } else {
                                 if ((_roundCfg.skill.indexOf("jieyin") >= 0)) {
@@ -616,8 +616,8 @@
                                         _newItem.init(_roundCfgList[cfgIdx]);
                                         // source line 490, bytecode pc 1106
                                         _tmp.push(_newItem);
-                                        // source line 486, bytecode pc 1120
-                                        (cfgIdx = (+cfgIdx + 1));
+                                        // source line 486, bytecode pc 1121
+                                        cfgIdx++;
                                     }
                                 } else {
                                     if ((_roundCfg.skill.indexOf("jiuyuan") >= 0)) {
@@ -634,8 +634,8 @@
                                             _newItem.init(_roundCfgList[cfgIdx]);
                                             // source line 503, bytecode pc 1303
                                             _tmp.push(_newItem);
-                                            // source line 499, bytecode pc 1317
-                                            (cfgIdx = (+cfgIdx + 1));
+                                            // source line 499, bytecode pc 1318
+                                            cfgIdx++;
                                         }
                                     } else {
                                         if ((_roundCfg.skill.indexOf("lieren") >= 0)) {
@@ -652,8 +652,8 @@
                                                 _newItem.init(_roundCfgList[cfgIdx]);
                                                 // source line 516, bytecode pc 1500
                                                 _tmp.push(_newItem);
-                                                // source line 512, bytecode pc 1514
-                                                (cfgIdx = (+cfgIdx + 1));
+                                                // source line 512, bytecode pc 1515
+                                                cfgIdx++;
                                             }
                                         } else {
                                             if (((_roundCfg.skill.indexOf("qixi") >= 0) || (_roundCfg.skill.indexOf("tiaoxin") >= 0))) {
@@ -670,8 +670,8 @@
                                                     _newItem.init(_roundCfgList[cfgIdx]);
                                                     // source line 527, bytecode pc 1761
                                                     _tmp.push(_newItem);
-                                                    // source line 523, bytecode pc 1775
-                                                    (cfgIdx = (+cfgIdx + 1));
+                                                    // source line 523, bytecode pc 1776
+                                                    cfgIdx++;
                                                 }
                                             }
                                         }
@@ -743,12 +743,12 @@
                     _newItem.init(_round);
                     // source line 605, bytecode pc 2394
                     _tmp.push(_newItem);
-                    // source line 574, bytecode pc 2408
-                    (j = (+j + 1));
+                    // source line 574, bytecode pc 2409
+                    j++;
                 }
             }
-            // source line 429, bytecode pc 2435
-            (i = (+i + 1));
+            // source line 429, bytecode pc 2436
+            i++;
         }
     } else {
         // source line 611, bytecode pc 2486
@@ -776,8 +776,8 @@
             _newItem.init(itemArray[i]);
             // source line 636, bytecode pc 144
             _tmp.push(_newItem);
-            // source line 630, bytecode pc 158
-            (i = (+i + 1));
+            // source line 630, bytecode pc 159
+            i++;
         }
         // source line 639, bytecode pc 181
         return _tmp;

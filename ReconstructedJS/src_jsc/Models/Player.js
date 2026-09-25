@@ -318,8 +318,8 @@
     // source line 279, bytecode pc 88
     (this.chaosCountDown = (((this._chaosCountDown - timeOffset) >= 0) ? (this._chaosCountDown - timeOffset) : 0));
     if ((this.chaosCountDown > 0)) {
-        // source line 282, bytecode pc 127
-        (this.chaosCountDown = (+this.chaosCountDown - 1));
+        // source line 282, bytecode pc 128
+        this.chaosCountDown--;
     }
     // source line 286, bytecode pc 166
     xs.Utils.Notify.postNotification(xs.Constant_Notify_ModelChange_ChaosCountDown);
@@ -613,8 +613,8 @@
             // source line 567, bytecode pc 106
             (_max_length = cfg_team_num);
         }
-        // source line 563, bytecode pc 120
-        (i = (+i + 1));
+        // source line 563, bytecode pc 121
+        i++;
     }
     if ((_max_length > xs.maxTeamNum)) {
         // source line 575, bytecode pc 172
@@ -640,8 +640,8 @@
                 (_max_length = cfg_team_num);
             }
         }
-        // source line 584, bytecode pc 141
-        (i = (+i + 1));
+        // source line 584, bytecode pc 142
+        i++;
     }
     if ((_max_length > xs.maxTeamNum)) {
         // source line 596, bytecode pc 193
@@ -665,8 +665,8 @@
             // source line 611, bytecode pc 157
             return (i + 1);
         }
-        // source line 608, bytecode pc 171
-        (i = (+i + 1));
+        // source line 608, bytecode pc 172
+        i++;
     }
     // source line 615, bytecode pc 209
     this.warn("the team num in the the user level conf is error!!");
@@ -686,8 +686,8 @@
             // source line 625, bytecode pc 122
             (_max_length = ((_max_length < _arr_player_upgrade[i].lieutenant_num) ? _arr_player_upgrade[i].lieutenant_num : _max_length));
         }
-        // source line 623, bytecode pc 136
-        (i = (+i + 1));
+        // source line 623, bytecode pc 137
+        i++;
     }
     // source line 628, bytecode pc 174
     return parseInt(_max_length);
@@ -705,8 +705,8 @@
             // source line 639, bytecode pc 144
             return (i + 1);
         }
-        // source line 637, bytecode pc 158
-        (i = (+i + 1));
+        // source line 637, bytecode pc 159
+        i++;
     }
     // source line 642, bytecode pc 196
     this.warn("the lieutenant num in the the user level conf is error!!");
@@ -801,8 +801,8 @@
                 (_item_conditions.next_vip_level = (vipLevel + 1));
                 break;
             }
-            // source line 730, bytecode pc 714
-            (vipLevel = (+vipLevel + 1));
+            // source line 730, bytecode pc 715
+            vipLevel++;
         }
         if ((item_id === xs.Models.ItemID_RecoveryEliteDungeonTimes)) {
             // source line 735, bytecode pc 762
@@ -830,8 +830,8 @@
                     (_item_conditions.next_vip_level = (vipLevel + 1));
                     break;
                 }
-                // source line 754, bytecode pc 1143
-                (vipLevel = (+vipLevel + 1));
+                // source line 754, bytecode pc 1144
+                vipLevel++;
             }
         }
         // source line 759, bytecode pc 1169

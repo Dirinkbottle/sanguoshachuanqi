@@ -55,8 +55,8 @@
         (_arg = _argsArray[i]);
         // source line 56, bytecode pc 142
         (_ret = _ret.replace(("$" + (i + 1)), _arg));
-        // source line 53, bytecode pc 156
-        (i = (+i + 1));
+        // source line 53, bytecode pc 157
+        i++;
     }
     // source line 60, bytecode pc 179
     return _ret;

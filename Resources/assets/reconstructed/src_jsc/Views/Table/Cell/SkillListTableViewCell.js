@@ -38,8 +38,8 @@
         this.iconArray.push(icon);
         // source line 32, bytecode pc 260
         xs.Utils.Node.attachNodes(this, icon, { desc: "lb", sc: true, offset: { x: (52 + (104 * i)), y: 70 } });
-        // source line 19, bytecode pc 274
-        (i = (+i + 1));
+        // source line 19, bytecode pc 275
+        i++;
     }
 },
     _createIcon: function(index) {
@@ -142,8 +142,8 @@
             // source line 114, bytecode pc 153
             posArray.push(worldPos);
         }
-        // source line 109, bytecode pc 167
-        (i = (+i + 1));
+        // source line 109, bytecode pc 168
+        i++;
     }
     // source line 117, bytecode pc 193
     return posArray;
@@ -169,8 +169,8 @@
             // source line 131, bytecode pc 310
             this._parent.getSelectData().set(this.iconArray[i]._wrapmodle.getOriModel().getPkId(), this.iconArray[i]._wrapmodle);
         }
-        // source line 120, bytecode pc 324
-        (i = (+i + 1));
+        // source line 120, bytecode pc 325
+        i++;
     }
 },
     setAllGoldBeSelected: function() {
@@ -192,8 +192,8 @@
             // source line 148, bytecode pc 254
             this._parent.getSelectData().set(this.iconArray[i]._wrapmodle.getOriModel().getPkId(), this.iconArray[i]._wrapmodle);
         }
-        // source line 137, bytecode pc 268
-        (i = (+i + 1));
+        // source line 137, bytecode pc 269
+        i++;
     }
 },
     setAllGodBookBeSelected: function() {
@@ -215,8 +215,8 @@
             // source line 166, bytecode pc 259
             this._parent.getSelectData().set(this.iconArray[i]._wrapmodle.getOriModel().getPkId(), this.iconArray[i]._wrapmodle);
         }
-        // source line 153, bytecode pc 273
-        (i = (+i + 1));
+        // source line 153, bytecode pc 274
+        i++;
     }
 },
     reloadItem: function(index) {
@@ -232,8 +232,8 @@
             // source line 184, bytecode pc 209
             this.iconArray[i].reloadData(this.iconArray[i]._wrapmodle);
         }
-        // source line 180, bytecode pc 223
-        (i = (+i + 1));
+        // source line 180, bytecode pc 224
+        i++;
     }
 }
 }));

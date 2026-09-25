@@ -26,8 +26,8 @@
             // source line 35, bytecode pc 96
             (num_total = (num_total + xs.Utils.parseFloatSafe(_arr_obj[i].exp_need)));
         }
-        // source line 34, bytecode pc 110
-        (i = (+i + 1));
+        // source line 34, bytecode pc 111
+        i++;
     }
     // source line 38, bytecode pc 171
     this.dump(((("get num total level:" + this.getLevel()) + "num_total:") + num_total));

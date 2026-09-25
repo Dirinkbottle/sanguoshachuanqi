@@ -179,8 +179,8 @@
         (chaos = xs.Models.OtherPlayerInfo.create(chaosInfos[i]));
         // source line 158, bytecode pc 118
         chaosArray.push(chaos);
-        // source line 156, bytecode pc 132
-        (i = (+i + 1));
+        // source line 156, bytecode pc 133
+        i++;
     }
     if (!this.tableView) {
         // source line 161, bytecode pc 212

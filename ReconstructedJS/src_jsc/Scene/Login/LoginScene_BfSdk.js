@@ -170,8 +170,8 @@
         this[("cipherBtn" + i)].setOpacity(0);
         // source line 178, bytecode pc 520
         this[("cipherBtn" + i)].setVisible(false);
-        // source line 160, bytecode pc 534
-        (i = (+i + 1));
+        // source line 160, bytecode pc 535
+        i++;
     }
     // source line 183, bytecode pc 583
     (cipherBtn7 = xs.Views.Btn.create("Btn_Instruction_lucency"));
@@ -187,8 +187,8 @@
     while ((i < 7)) {
         // source line 192, bytecode pc 47
         this[("cipherBtn" + i)].setVisible(true);
-        // source line 191, bytecode pc 61
-        (i = (+i + 1));
+        // source line 191, bytecode pc 62
+        i++;
     }
 });
     // source line 196, bytecode pc 709

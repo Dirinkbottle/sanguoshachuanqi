@@ -172,8 +172,8 @@
             // source line 237, bytecode pc 1293
             (i = (i - 1));
         }
-        // source line 216, bytecode pc 1312
-        (i = (+i + 1));
+        // source line 216, bytecode pc 1313
+        i++;
     }
     // source line 244, bytecode pc 1350
     this.m_type_orders.sort(function(a, b) {
@@ -312,8 +312,8 @@
     while ((i < this.m_menuItemModels.length)) {
         // source line 362, bytecode pc 27
         this._updateHintIconByIdx(i);
-        // source line 361, bytecode pc 41
-        (i = (+i + 1));
+        // source line 361, bytecode pc 42
+        i++;
     }
 },
     _updateHintIconByIdx: function(index) {

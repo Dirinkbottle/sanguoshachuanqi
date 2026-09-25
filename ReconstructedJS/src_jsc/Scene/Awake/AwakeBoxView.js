@@ -407,8 +407,8 @@
         xs.Utils.Node.attachNodes(this.ccb_Node, node);
         // source line 372, bytecode pc 990
         xs.Utils.Node.safeRemoveChild(_replaceNode);
-        // source line 314, bytecode pc 1004
-        (i = (+i + 1));
+        // source line 314, bytecode pc 1005
+        i++;
     }
 },
     refreshData: function() {
@@ -791,8 +791,8 @@
     (scale2 = cc.ScaleTo.create(0.3, 1));
     // source line 729, bytecode pc 1168
     head.runAction(scale2);
-    // source line 730, bytecode pc 1194
-    (this.index = (+this.index + 1));
+    // source line 730, bytecode pc 1195
+    this.index++;
 }.bind(this), this)));
     } else {
         // source line 737, bytecode pc 166
@@ -859,12 +859,12 @@
         (scale2 = cc.ScaleTo.create(0.3, 1));
         // source line 782, bytecode pc 1282
         head.runAction(scale2);
-        // source line 783, bytecode pc 1308
-        (this.index = (+this.index + 1));
+        // source line 783, bytecode pc 1309
+        this.index++;
     }
 }.bind(this)));
-        // source line 674, bytecode pc 563
-        (i = (+i + 1));
+        // source line 674, bytecode pc 564
+        i++;
     }
     // source line 867, bytecode pc 644
     actionArray.push(cc.CallFunc.create(function() {

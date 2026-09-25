@@ -35,8 +35,8 @@
     while ((i < this.generalArray.length)) {
         // source line 50, bytecode pc 305
         teachers.push(this.generalArray[i]);
-        // source line 49, bytecode pc 319
-        (i = (+i + 1));
+        // source line 49, bytecode pc 320
+        i++;
     }
     // source line 53, bytecode pc 356
     teachers.reverse();
@@ -57,8 +57,8 @@
     while ((i < speakWords.length)) {
         // source line 68, bytecode pc 598
         (speakWords[i] = m_says[i]);
-        // source line 66, bytecode pc 612
-        (i = (+i + 1));
+        // source line 66, bytecode pc 613
+        i++;
     }
     // source line 72, bytecode pc 646
     speakWords.reverse();
@@ -230,11 +230,11 @@
     onExit: function() {
 },
     next: function() {
-    // source line 264, bytecode pc 25
-    (this.focusIdx = (+this.focusIdx + 1));
+    // source line 264, bytecode pc 26
+    this.focusIdx++;
     if ((this.focusIdx >= this.generalCount)) {
-        // source line 266, bytecode pc 70
-        (this.focusIdx = (+this.focusIdx - 1));
+        // source line 266, bytecode pc 71
+        this.focusIdx--;
         // source line 267, bytecode pc 73
         return void 0;
     }
@@ -244,11 +244,11 @@
     this.tableView.prev();
 },
     prev: function() {
-    // source line 275, bytecode pc 25
-    (this.focusIdx = (+this.focusIdx - 1));
+    // source line 275, bytecode pc 26
+    this.focusIdx--;
     if ((this.focusIdx < 0)) {
-        // source line 277, bytecode pc 65
-        (this.focusIdx = (+this.focusIdx + 1));
+        // source line 277, bytecode pc 66
+        this.focusIdx++;
         // source line 278, bytecode pc 68
         return void 0;
     }
@@ -270,8 +270,8 @@
             // source line 290, bytecode pc 78
             return ("" + i);
         }
-        // source line 287, bytecode pc 92
-        (i = (+i + 1));
+        // source line 287, bytecode pc 93
+        i++;
     }
     // source line 295, bytecode pc 120
     return "0";
@@ -315,8 +315,8 @@
         xs.Utils.Node.attachNodes(m_icon, m_numLab, { desc: "cb", offset: cc.p(0, -59) }, { zOrder: 2, tag: 3 });
         // source line 336, bytecode pc 449
         this.m_loadArm.replaceSkin(("touxiang0" + i), m_icon);
-        // source line 316, bytecode pc 463
-        (i = (+i + 1));
+        // source line 316, bytecode pc 464
+        i++;
     }
 },
     removeOutAll: function() {
@@ -351,8 +351,8 @@
                 (m_num = i);
                 break;
             }
-            // source line 369, bytecode pc 151
-            (i = (+i + 1));
+            // source line 369, bytecode pc 152
+            i++;
         }
     }
     // source line 378, bytecode pc 187

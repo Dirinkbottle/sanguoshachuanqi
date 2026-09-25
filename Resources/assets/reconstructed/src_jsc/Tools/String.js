@@ -112,8 +112,8 @@
         (_ret = string.replace(str, array[i]));
         // source line 110, bytecode pc 67
         (string = _ret);
-        // source line 105, bytecode pc 81
-        (i = (+i + 1));
+        // source line 105, bytecode pc 82
+        i++;
     }
     // source line 114, bytecode pc 104
     return _ret;
@@ -144,8 +144,8 @@
         (_arg = _argsArray[i]);
         // source line 142, bytecode pc 146
         (_ret = _ret.replace(("$" + (i + 1)), _arg));
-        // source line 140, bytecode pc 160
-        (i = (+i + 1));
+        // source line 140, bytecode pc 161
+        i++;
     }
     // source line 144, bytecode pc 183
     return _ret;
@@ -166,7 +166,7 @@
     } else {
         // source line 164, bytecode pc 129
         (_ret = (_ret + "."));
-        while ((+limit <= 0)) {
+        while ((limit-- <= 0)) {
             // source line 167, bytecode pc 148
             (_ret = (_ret + "0"));
         }

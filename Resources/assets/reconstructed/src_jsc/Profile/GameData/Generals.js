@@ -45,8 +45,8 @@
             // source line 44, bytecode pc 85
             _rs_obj.push(_arr_general_all[i]);
         }
-        // source line 42, bytecode pc 99
-        (i = (+i + 1));
+        // source line 42, bytecode pc 100
+        i++;
     }
     // source line 48, bytecode pc 122
     return _rs_obj;
@@ -62,8 +62,8 @@
             // source line 57, bytecode pc 99
             return _arr_general_all[i];
         }
-        // source line 54, bytecode pc 113
-        (i = (+i + 1));
+        // source line 54, bytecode pc 114
+        i++;
     }
     // source line 60, bytecode pc 134
     return null;
@@ -79,8 +79,8 @@
             // source line 67, bytecode pc 61
             return _obj_general_all[i];
         }
-        // source line 65, bytecode pc 75
-        (i = (+i + 1));
+        // source line 65, bytecode pc 76
+        i++;
     }
     // source line 70, bytecode pc 96
     return null;
@@ -96,8 +96,8 @@
     while ((i < _obj_general_all.length)) {
         // source line 78, bytecode pc 58
         _rs_obj.push(_obj_general_all[i]);
-        // source line 77, bytecode pc 72
-        (i = (+i + 1));
+        // source line 77, bytecode pc 73
+        i++;
     }
     // source line 80, bytecode pc 95
     return _rs_obj;
@@ -120,8 +120,8 @@
             // source line 95, bytecode pc 129
             _rs_obj.push(_obj_general_all[i]);
         }
-        // source line 89, bytecode pc 143
-        (i = (+i + 1));
+        // source line 89, bytecode pc 144
+        i++;
     }
     // source line 97, bytecode pc 166
     return _rs_obj;
@@ -165,8 +165,8 @@
             // source line 127, bytecode pc 205
             _rs_obj.push(_obj_general_all[i]);
         }
-        // source line 119, bytecode pc 219
-        (i = (+i + 1));
+        // source line 119, bytecode pc 220
+        i++;
     }
     // source line 129, bytecode pc 242
     return _rs_obj;
@@ -182,8 +182,8 @@
     while ((a < arguments.length)) {
         // source line 138, bytecode pc 47
         _arr_pk_id.push(arguments[a]);
-        // source line 137, bytecode pc 61
-        (a = (+a + 1));
+        // source line 137, bytecode pc 62
+        a++;
     }
     // source line 141, bytecode pc 89
     (_rs_obj = []);
@@ -203,8 +203,8 @@
     while ((a < arguments.length)) {
         // source line 150, bytecode pc 47
         _arr_pk_id.push(arguments[a]);
-        // source line 149, bytecode pc 61
-        (a = (+a + 1));
+        // source line 149, bytecode pc 62
+        a++;
     }
     // source line 153, bytecode pc 100
     (_rs_obj = this._getListNotInTeamAndPkId(_arr_pk_id));
@@ -217,8 +217,8 @@
             // source line 158, bytecode pc 168
             _rs_obj_2.push(_rs_obj[i]);
         }
-        // source line 156, bytecode pc 182
-        (i = (+i + 1));
+        // source line 156, bytecode pc 183
+        i++;
     }
     // source line 163, bytecode pc 205
     return _rs_obj_2;
@@ -234,8 +234,8 @@
     while ((a < arguments.length)) {
         // source line 170, bytecode pc 47
         _arr_pk_id.push(arguments[a]);
-        // source line 169, bytecode pc 61
-        (a = (+a + 1));
+        // source line 169, bytecode pc 62
+        a++;
     }
     // source line 173, bytecode pc 89
     (_rs_obj = []);
@@ -255,8 +255,8 @@
     while ((a < arguments.length)) {
         // source line 183, bytecode pc 47
         _arr_pk_id.push(arguments[a]);
-        // source line 182, bytecode pc 61
-        (a = (+a + 1));
+        // source line 182, bytecode pc 62
+        a++;
     }
     // source line 186, bytecode pc 100
     (_rs_obj = this._getListNotInTeamAndNotInLieutenantAndPkId(_arr_pk_id));
@@ -269,8 +269,8 @@
             // source line 191, bytecode pc 168
             _rs_obj_2.push(_rs_obj[i]);
         }
-        // source line 189, bytecode pc 182
-        (i = (+i + 1));
+        // source line 189, bytecode pc 183
+        i++;
     }
     // source line 197, bytecode pc 205
     return _rs_obj_2;
@@ -288,8 +288,8 @@
             // source line 206, bytecode pc 98
             _rs_obj.push(_arr_general_all[i]);
         }
-        // source line 204, bytecode pc 112
-        (i = (+i + 1));
+        // source line 204, bytecode pc 113
+        i++;
     }
     // source line 209, bytecode pc 135
     return _rs_obj;
@@ -307,8 +307,8 @@
             // source line 218, bytecode pc 98
             _rs_obj.push(_arr_general_all[i]);
         }
-        // source line 216, bytecode pc 112
-        (i = (+i + 1));
+        // source line 216, bytecode pc 113
+        i++;
     }
     // source line 221, bytecode pc 135
     return _rs_obj;
@@ -355,8 +355,8 @@
     while ((i < _lieutenant_generals.length)) {
         // source line 261, bytecode pc 86
         _lieutenant_skill.push(this.getNaturalSkill(_lieutenant_generals[i]));
-        // source line 260, bytecode pc 100
-        (i = (+i + 1));
+        // source line 260, bytecode pc 101
+        i++;
     }
     // source line 263, bytecode pc 123
     return _lieutenant_skill;
@@ -402,8 +402,8 @@
             // source line 296, bytecode pc 282
             _arr_skill_all.push(_arr_skill[j]);
         }
-        // source line 291, bytecode pc 296
-        (j = (+j + 1));
+        // source line 291, bytecode pc 297
+        j++;
     }
     // source line 300, bytecode pc 320
     (z = 0);
@@ -414,8 +414,8 @@
             // source line 303, bytecode pc 400
             return false;
         }
-        // source line 300, bytecode pc 414
-        (z = (+z + 1));
+        // source line 300, bytecode pc 415
+        z++;
     }
     // source line 308, bytecode pc 435
     return true;
@@ -462,8 +462,8 @@
             // source line 344, bytecode pc 387
             _arr_skill_all.push(this.getNaturalSkill(_arr_lieutenant[i]));
         }
-        // source line 339, bytecode pc 401
-        (i = (+i + 1));
+        // source line 339, bytecode pc 402
+        i++;
     }
     // source line 347, bytecode pc 425
     (z = 0);
@@ -472,8 +472,8 @@
             // source line 350, bytecode pc 484
             return false;
         }
-        // source line 347, bytecode pc 498
-        (z = (+z + 1));
+        // source line 347, bytecode pc 499
+        z++;
     }
     // source line 354, bytecode pc 519
     return true;
@@ -532,8 +532,8 @@
                 return true;
             }
         }
-        // source line 393, bytecode pc 243
-        (i = (+i + 1));
+        // source line 393, bytecode pc 244
+        i++;
     }
     // source line 408, bytecode pc 291
     return false;
@@ -604,8 +604,8 @@
                 // source line 460, bytecode pc 788
                 (_Int = (_Int + magicalEqu.getPointEffectValAllByType(xs.Constant_AttrType_Int)));
             }
-            // source line 454, bytecode pc 802
-            (i = (+i + 1));
+            // source line 454, bytecode pc 803
+            i++;
         }
         // source line 468, bytecode pc 983
         (_fight_point = (_fight_point + xs.Tools.Card.calculateAttrType_FightPoint((this.getAttr(obj_general_model, xs.Constant_AttrType_Atk) + _Atk), (this.getAttr(obj_general_model, xs.Constant_AttrType_Def) + _Def), (this.getAttr(obj_general_model, xs.Constant_AttrType_Hp) + _Hp), (this.getAttr(obj_general_model, xs.Constant_AttrType_Int) + _Int))));
@@ -616,8 +616,8 @@
         while ((i < _arr_general_skill_all.length)) {
             // source line 476, bytecode pc 1051
             (_fight_point = (_fight_point + _arr_general_skill_all[i].getAttrNaked(xs.Constant_AttrType_FightPoint)));
-            // source line 475, bytecode pc 1065
-            (i = (+i + 1));
+            // source line 475, bytecode pc 1066
+            i++;
         }
         // source line 479, bytecode pc 1110
         return xs.Utils.parseIntSafe(_fight_point);
@@ -680,8 +680,8 @@
         (_generalModel = _generalsInTeam[i]);
         // source line 537, bytecode pc 147
         (_ret = (_ret + this._getEffectToGeneral(_generalModel, obj_general_model, attrType)));
-        // source line 533, bytecode pc 161
-        (i = (+i + 1));
+        // source line 533, bytecode pc 162
+        i++;
     } while ((i < _generalsInTeam.length));
     // source line 541, bytecode pc 212
     (_generalsInBuddy = this._initInstance().Buddy.getGeneralsInBuddy());
@@ -692,8 +692,8 @@
         (_generalBuddyModel = _generalsInBuddy[i]);
         // source line 546, bytecode pc 266
         (_ret = (_ret + this._getEffectToGeneral(_generalBuddyModel, obj_general_model, attrType)));
-        // source line 542, bytecode pc 280
-        (i = (+i + 1));
+        // source line 542, bytecode pc 281
+        i++;
     }
     // source line 552, bytecode pc 308
     return _ret;
@@ -885,8 +885,8 @@
             (_offset = _skillModel.getAttrOffsetByAttrType(attrType, generalModelB, generalModelA));
             // source line 747, bytecode pc 293
             (_countOffset = (_countOffset + _offset));
-            // source line 738, bytecode pc 307
-            (i = (+i + 1));
+            // source line 738, bytecode pc 308
+            i++;
         }
         // source line 750, bytecode pc 330
         return _countOffset;
@@ -914,8 +914,8 @@
                 (attrPlus = (attrPlus + xs.parseFloat(effects.firstAttr)));
             }
         }
-        // source line 763, bytecode pc 179
-        (i = (+i + 1));
+        // source line 763, bytecode pc 180
+        i++;
     }
     // source line 774, bytecode pc 202
     return attrPlus;
@@ -952,15 +952,15 @@
                 (_v = false);
                 break;
             }
-            // source line 793, bytecode pc 233
-            (j = (+j + 1));
+            // source line 793, bytecode pc 234
+            j++;
         }
         if ((_v === true)) {
             // source line 807, bytecode pc 264
             return true;
         }
-        // source line 791, bytecode pc 278
-        (i = (+i + 1));
+        // source line 791, bytecode pc 279
+        i++;
     }
     // source line 810, bytecode pc 299
     return false;
@@ -980,8 +980,8 @@
             // source line 825, bytecode pc 84
             _ret.push(_tmp);
         }
-        // source line 821, bytecode pc 98
-        (i = (+i + 1));
+        // source line 821, bytecode pc 99
+        i++;
     }
     // source line 828, bytecode pc 121
     return _ret;
@@ -1003,8 +1003,8 @@
             // source line 838, bytecode pc 70
             return _bool;
         }
-        // source line 834, bytecode pc 84
-        (i = (+i + 1));
+        // source line 834, bytecode pc 85
+        i++;
     }
     // source line 841, bytecode pc 107
     return _bool;
@@ -1020,8 +1020,8 @@
             // source line 849, bytecode pc 61
             return _obj_general_all[i];
         }
-        // source line 847, bytecode pc 75
-        (i = (+i + 1));
+        // source line 847, bytecode pc 76
+        i++;
     }
     // source line 852, bytecode pc 96
     return null;

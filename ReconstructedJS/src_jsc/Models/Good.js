@@ -146,8 +146,8 @@
 },
     updateCloseTime: function() {
     if ((this.close_time > 0)) {
-        // source line 143, bytecode pc 38
-        (this.close_time = (+this.close_time - 1));
+        // source line 143, bytecode pc 39
+        this.close_time--;
     }
 },
     getNameString: function() {

@@ -202,8 +202,8 @@
                     (_haveFlag = true);
                 }
             }
-            // source line 166, bytecode pc 239
-            (i = (+i + 1));
+            // source line 166, bytecode pc 240
+            i++;
         }
         // source line 174, bytecode pc 292
         (_generalData = xs.Models.General.createWithBase(_generalId));
@@ -394,8 +394,8 @@
                             (_haveFlag = true);
                         }
                     }
-                    // source line 332, bytecode pc 401
-                    (i = (+i + 1));
+                    // source line 332, bytecode pc 402
+                    i++;
                 }
                 if (_haveFlag) {
                     // source line 346, bytecode pc 486
@@ -644,8 +644,8 @@
     offset: { x: ((this._cellSize.width / 2) + (this._cellSize.width * i)), y: (this._cellSize.height / 2) }
 });
         }
-        // source line 551, bytecode pc 199
-        (i = (+i + 1));
+        // source line 551, bytecode pc 200
+        i++;
     }
 }
 }));
@@ -703,8 +703,8 @@
     while ((i < this._allCellData.length)) {
         // source line 611, bytecode pc 150
         (tmpViewHeight = (this._cellSize.height * (i + 1)));
-        // source line 610, bytecode pc 164
-        (i = (+i + 1));
+        // source line 610, bytecode pc 165
+        i++;
     }
     if ((this._allCellData[0] != null)) {
         // source line 615, bytecode pc 206
@@ -712,8 +712,8 @@
         while ((i < this._allCellData[0].length)) {
             // source line 616, bytecode pc 233
             (tmpViewWidth = (this._cellSize.width * (i + 1)));
-            // source line 615, bytecode pc 247
-            (i = (+i + 1));
+            // source line 615, bytecode pc 248
+            i++;
         }
     }
     // source line 620, bytecode pc 302
@@ -1732,32 +1732,32 @@
     if ((param.callbackUnUse == null)) {
         // source line 1527, bytecode pc 470
         this._unuse.setVisible(false);
-        // source line 1528, bytecode pc 484
-        (numButton = (+numButton - 1));
+        // source line 1528, bytecode pc 485
+        numButton--;
         // source line 1529, bytecode pc 507
         buttronArray.remove(this._unuse);
     }
     if ((param.callbackLeft == null)) {
         // source line 1532, bytecode pc 542
         this._leftbutton.setVisible(false);
-        // source line 1533, bytecode pc 556
-        (numButton = (+numButton - 1));
+        // source line 1533, bytecode pc 557
+        numButton--;
         // source line 1534, bytecode pc 579
         buttronArray.remove(this._leftbutton);
     }
     if ((param.callbackMiddle == null)) {
         // source line 1537, bytecode pc 614
         this._middlebutton.setVisible(false);
-        // source line 1538, bytecode pc 628
-        (numButton = (+numButton - 1));
+        // source line 1538, bytecode pc 629
+        numButton--;
         // source line 1539, bytecode pc 651
         buttronArray.remove(this._middlebutton);
     }
     if ((param.callbackRight == null)) {
         // source line 1542, bytecode pc 686
         this._rightbutton.setVisible(false);
-        // source line 1543, bytecode pc 700
-        (numButton = (+numButton - 1));
+        // source line 1543, bytecode pc 701
+        numButton--;
         // source line 1544, bytecode pc 723
         buttronArray.remove(this._rightbutton);
     }
@@ -1774,8 +1774,8 @@
         buttronArray.elementAtIndex(i).setAnchorPoint(cc.p(0.5, 0.5));
         // source line 1552, bytecode pc 945
         buttronArray.elementAtIndex(i).setPositionX((((_edgeWidth + (_unitWidth / 2)) * (i + 1)) + ((i * _unitWidth) / 2)));
-        // source line 1549, bytecode pc 959
-        (i = (+i + 1));
+        // source line 1549, bytecode pc 960
+        i++;
     }
     // source line 1558, bytecode pc 1025
     this._leftbutton.setTouchPriority((xs.Cfg.Scene.CommonScene.Dialog.priority - 2));
@@ -2249,8 +2249,8 @@
         (height = (height + tmpView.getViewSize().height));
         // source line 2019, bytecode pc 651
         _arrView.push(tmpView);
-        // source line 1962, bytecode pc 665
-        (i = (+i + 1));
+        // source line 1962, bytecode pc 666
+        i++;
     }
     // source line 2023, bytecode pc 741
     (this._scrollViewSize = cc.size(this._scrollViewSize.width, ((height + (this._data.length * 5)) + 15)));
@@ -2265,8 +2265,8 @@
     while ((i < _arrView.length)) {
         // source line 2031, bytecode pc 899
         this._scrollView.addChildrenView(_arrView[i]);
-        // source line 2030, bytecode pc 913
-        (i = (+i + 1));
+        // source line 2030, bytecode pc 914
+        i++;
     }
     // source line 2034, bytecode pc 952
     this.changeCCBNodeSize(this._scrollViewSize);
@@ -2372,8 +2372,8 @@
         (height = (height + tmpView.getViewSize().height));
         // source line 2112, bytecode pc 646
         _arrView.push(tmpView);
-        // source line 2075, bytecode pc 660
-        (i = (+i + 1));
+        // source line 2075, bytecode pc 661
+        i++;
     }
     // source line 2116, bytecode pc 736
     (this._scrollViewSize = cc.size(this._scrollViewSize.width, ((height + (this._data.length * 5)) + 15)));
@@ -2388,8 +2388,8 @@
     while ((i < _arrView.length)) {
         // source line 2124, bytecode pc 894
         this._scrollView.addChildrenView(_arrView[i]);
-        // source line 2123, bytecode pc 908
-        (i = (+i + 1));
+        // source line 2123, bytecode pc 909
+        i++;
     }
     // source line 2127, bytecode pc 947
     this.changeCCBNodeSize(this._scrollViewSize);
@@ -2500,8 +2500,8 @@
                     (_oldpos = _allChildren[j].getPosition());
                     // source line 2211, bytecode pc 1146
                     _allChildren[j].setPosition(cc.p(_oldpos.x, (_oldpos.y - 38)));
-                    // source line 2208, bytecode pc 1160
-                    (j = (+j + 1));
+                    // source line 2208, bytecode pc 1161
+                    j++;
                 }
                 // source line 2213, bytecode pc 1229
                 (this._viewSize = cc.size(this._viewSize.width, (this._viewSize.height - 38)));

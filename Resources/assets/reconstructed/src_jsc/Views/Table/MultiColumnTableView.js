@@ -69,8 +69,8 @@
         }
         // source line 70, bytecode pc 221
         (data[one][two] = srcData[i]);
-        // source line 63, bytecode pc 235
-        (i = (+i + 1));
+        // source line 63, bytecode pc 236
+        i++;
     }
     // source line 72, bytecode pc 286
     xs.log(("xs.Views.Table.changeDimensionsOneToTwo data[one] length is " + data.length));

@@ -187,10 +187,8 @@
             // source line 155, bytecode pc 698
             (tmp = 1);
             while ((p.x >= newP.x)) {
-                // source line 157, bytecode pc 753
-                (tmp = (+tmp + 1));
                 // source line 157, bytecode pc 772
-                (newP = cc.p((this.posCfg.icon1_x + (this.posCfg.step * +tmp)), newP.y));
+                (newP = cc.p((this.posCfg.icon1_x + (this.posCfg.step * tmp++)), newP.y));
             }
             // source line 160, bytecode pc 822
             this[("m_RewardIcon_" + _tag)].setPosition(newP);
@@ -201,8 +199,8 @@
         this[("m_RewardIcon_" + _tag)].setVisible(true);
         // source line 167, bytecode pc 952
         this[("m_RewardNum_" + _tag)].setVisible(true);
-        // source line 136, bytecode pc 966
-        (i = (+i + 1));
+        // source line 136, bytecode pc 967
+        i++;
     }
     // source line 171, bytecode pc 1008
     (playerNum = (this.num + 1));
@@ -382,8 +380,8 @@
 },
     myScheduler: function() {
     var strCountDownTime;
-    // source line 319, bytecode pc 25
-    (this.m_activityTime = (+this.m_activityTime - 1));
+    // source line 319, bytecode pc 26
+    this.m_activityTime--;
     if ((this.m_activityTime >= 0)) {
         // source line 321, bytecode pc 71
         (strCountDownTime = xs.Utils.convertSecondToTime(this.m_activityTime));

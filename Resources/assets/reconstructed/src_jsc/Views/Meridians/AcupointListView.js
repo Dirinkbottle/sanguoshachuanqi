@@ -52,11 +52,11 @@
             cell.setAnchorPoint(cc.p(0, 0.5));
             // source line 56, bytecode pc 633
             xs.Utils.Node.attachNodes(this, cell, { desc: "lb", sc: true, offset: { x: 0, y: ((_height + 930) - (60 * j)) } });
-            // source line 44, bytecode pc 647
-            (j = (+j + 1));
+            // source line 44, bytecode pc 648
+            j++;
         }
-        // source line 29, bytecode pc 674
-        (i = (+i + 1));
+        // source line 29, bytecode pc 675
+        i++;
     }
     // source line 62, bytecode pc 693
     return true;

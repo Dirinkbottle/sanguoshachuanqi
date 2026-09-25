@@ -143,8 +143,8 @@
             // source line 176, bytecode pc 921
             (i = (i - 1));
         }
-        // source line 155, bytecode pc 940
-        (i = (+i + 1));
+        // source line 155, bytecode pc 941
+        i++;
     }
     // source line 180, bytecode pc 978
     this.m_event_models.sort(function(a, b) {
@@ -271,8 +271,8 @@
                 // source line 319, bytecode pc 123
                 this.node.getChildByTag((6 - i)).setVisible(false);
             }
-            // source line 317, bytecode pc 137
-            (i = (+i + 1));
+            // source line 317, bytecode pc 138
+            i++;
         }
     }
     // source line 323, bytecode pc 159
@@ -497,8 +497,8 @@
             // source line 518, bytecode pc 2208
             this.node.getChildByTag((i + 1)).setVisible(false);
         }
-        // source line 323, bytecode pc 2222
-        (i = (+i + 1));
+        // source line 323, bytecode pc 2223
+        i++;
     }
 }
 }));

@@ -47,8 +47,8 @@
             // source line 63, bytecode pc 308
             animation.sprite.playAniById("disableAnimation", { loop: true, speed: 4 });
         }
-        // source line 56, bytecode pc 322
-        (i = (+i + 1));
+        // source line 56, bytecode pc 323
+        i++;
     }
     // source line 68, bytecode pc 440
     xs.Utils.Node.attachNodes(this.borderImage, this.getStarStatusLabel(), { desc: "cb", offset: cc.p(0, 25), sc: false });

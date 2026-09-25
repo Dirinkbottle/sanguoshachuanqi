@@ -46,8 +46,8 @@
 },
     update: function(fDelta) {
     if ((this.m_step0 === 0)) {
-        // source line 68, bytecode pc 38
-        (this.m_step0 = (+this.m_step0 + 1));
+        // source line 68, bytecode pc 39
+        this.m_step0++;
     } else {
         // source line 73, bytecode pc 61
         this._update(fDelta);
@@ -72,8 +72,8 @@
         // source line 89, bytecode pc 25
         (i = this.step);
         while ((i < _RandEvent.length)) {
-            // source line 91, bytecode pc 57
-            (this.step = (+this.step + 1));
+            // source line 91, bytecode pc 58
+            this.step++;
             // source line 93, bytecode pc 71
             switch (_RandEvent[i].type) {
                 case xs.Constant_RandEvent_upGrade:
@@ -166,8 +166,8 @@
                 this.error("the rand event type is error");
                 break;
             }
-            // source line 89, bytecode pc 796
-            (i = (+i + 1));
+            // source line 89, bytecode pc 797
+            i++;
         }
         if (this.param.lastFunc) {
             // source line 194, bytecode pc 849

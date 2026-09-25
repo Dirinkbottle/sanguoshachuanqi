@@ -255,8 +255,8 @@
     while ((i < objList.length)) {
         // source line 254, bytecode pc 35
         this[objList[i]].setZOrder(mNum);
-        // source line 253, bytecode pc 49
-        (i = (+i + 1));
+        // source line 253, bytecode pc 50
+        i++;
     }
 },
     onCountDown: function() {

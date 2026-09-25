@@ -237,8 +237,8 @@
                     default:
                     break;
                 }
-                // source line 195, bytecode pc 1042
-                (i = (+i + 1));
+                // source line 195, bytecode pc 1043
+                i++;
             }
         }
         // source line 242, bytecode pc 1065
@@ -547,16 +547,16 @@
                             // source line 484, bytecode pc 204
                             (value = (value + parseInt(info.buff_effect)));
                         }
-                        // source line 475, bytecode pc 218
-                        (z = (+z + 1));
+                        // source line 475, bytecode pc 219
+                        z++;
                     }
                 }
             }
-            // source line 460, bytecode pc 251
-            (j = (+j + 1));
+            // source line 460, bytecode pc 252
+            j++;
         }
-        // source line 458, bytecode pc 282
-        (i = (+i + 1));
+        // source line 458, bytecode pc 283
+        i++;
     }
     // source line 495, bytecode pc 299
     return value;
@@ -619,12 +619,12 @@
                             (int = (int + (itemViewData.valueInt || 0)));
                         }
                     }
-                    // source line 526, bytecode pc 392
-                    (j = (+j + 1));
+                    // source line 526, bytecode pc 393
+                    j++;
                 }
             }
-            // source line 513, bytecode pc 425
-            (i = (+i + 1));
+            // source line 513, bytecode pc 426
+            i++;
         }
         if ((viewData.length > 0)) {
             // source line 554, bytecode pc 463

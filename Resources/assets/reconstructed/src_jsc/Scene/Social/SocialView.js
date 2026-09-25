@@ -266,8 +266,8 @@
                     // source line 220, bytecode pc 422
                     this.datas.splice(i, 1);
                 }
-                // source line 216, bytecode pc 436
-                (i = (+i - 1));
+                // source line 216, bytecode pc 437
+                i--;
             }
         }
         if ((this.datas && (this.datas.length === 0))) {
@@ -307,13 +307,13 @@
             // source line 256, bytecode pc 121
             (model = arrModel[i]);
             if (model.isInvited) {
-                // source line 258, bytecode pc 148
-                (invitedNum = (+invitedNum + 1));
+                // source line 258, bytecode pc 149
+                invitedNum++;
             } else {
                 break;
             }
-            // source line 255, bytecode pc 173
-            (i = (+i + 1));
+            // source line 255, bytecode pc 174
+            i++;
         }
         if (((invitedNum != 0) && (invitedNum == arrModel.length))) {
             // source line 266, bytecode pc 263

@@ -65,8 +65,8 @@
         (dataSource[index] = model);
         // source line 137, bytecode pc 322
         (index = (index + 1));
-        // source line 134, bytecode pc 336
-        (i = (+i + 1));
+        // source line 134, bytecode pc 337
+        i++;
     }
     // source line 140, bytecode pc 368
     (this.generalList = dataSource);
@@ -198,8 +198,8 @@
     while ((i < 2)) {
         // source line 246, bytecode pc 2165
         this.switchCreateIcon(item_list[i], i);
-        // source line 245, bytecode pc 2179
-        (i = (+i + 1));
+        // source line 245, bytecode pc 2180
+        i++;
     }
     // source line 252, bytecode pc 2231
     (this.killBtn = xs.Views.Btn.create("Btn_Copy_Kill"));
@@ -279,8 +279,8 @@
         (cell = this.m_teamList.cellAtIndex(i));
         // source line 337, bytecode pc 73
         cell.setIsLocked(is_lock);
-        // source line 334, bytecode pc 87
-        (i = (+i + 1));
+        // source line 334, bytecode pc 88
+        i++;
     }
 },
     setUpIconAndName: function() {
@@ -345,8 +345,8 @@
     while ((i < 2)) {
         // source line 393, bytecode pc 347
         this.switchCreateIcon(item_list[i], i);
-        // source line 392, bytecode pc 361
-        (i = (+i + 1));
+        // source line 392, bytecode pc 362
+        i++;
     }
     // source line 396, bytecode pc 393
     (this.m_curr_bossId = this.getCurrBossId());
@@ -460,8 +460,8 @@
             (str = xs.Tools.String.createStringWithArgsArray("BossKilledStr", [ this.m_kill_info[i].kill_user_name, this.m_kill_info[i].kill_time ]));
             break;
         }
-        // source line 473, bytecode pc 142
-        (i = (+i + 1));
+        // source line 473, bytecode pc 143
+        i++;
     }
     if ((str == "")) {
         // source line 481, bytecode pc 214

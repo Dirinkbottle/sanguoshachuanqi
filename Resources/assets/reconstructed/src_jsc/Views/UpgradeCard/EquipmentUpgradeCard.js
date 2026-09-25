@@ -66,8 +66,8 @@
             (percentage = Math.floor(percentage));
             break;
         }
-        // source line 43, bytecode pc 342
-        (i = (+i + 1));
+        // source line 43, bytecode pc 343
+        i++;
     }
     if ((levelUpValue >= this.preLevelUp)) {
         // source line 64, bytecode pc 379

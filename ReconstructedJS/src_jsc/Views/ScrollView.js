@@ -146,8 +146,8 @@
             // source line 125, bytecode pc 134
             childrenarray[i].isLayerTouched(touch, e);
         }
-        // source line 123, bytecode pc 148
-        (i = (+i + 1));
+        // source line 123, bytecode pc 149
+        i++;
     }
     // source line 128, bytecode pc 175
     (this.touchBeganFlag = false);
@@ -180,8 +180,8 @@
             (_newpos.y = (_newpos.y + _diffvalue));
             // source line 147, bytecode pc 151
             this._childrenArray[i].setPosition(_newpos);
-            // source line 143, bytecode pc 165
-            (i = (+i + 1));
+            // source line 143, bytecode pc 166
+            i++;
         }
     }
 },

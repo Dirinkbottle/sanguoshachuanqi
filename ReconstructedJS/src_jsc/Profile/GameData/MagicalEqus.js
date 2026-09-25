@@ -28,8 +28,8 @@
             // source line 32, bytecode pc 61
             return _obj_list[i];
         }
-        // source line 30, bytecode pc 75
-        (i = (+i + 1));
+        // source line 30, bytecode pc 76
+        i++;
     }
     // source line 36, bytecode pc 96
     return null;
@@ -53,8 +53,8 @@
             // source line 52, bytecode pc 69
             return index;
         }
-        // source line 49, bytecode pc 83
-        (i = (+i + 1));
+        // source line 49, bytecode pc 84
+        i++;
     }
     // source line 56, bytecode pc 106
     return index;

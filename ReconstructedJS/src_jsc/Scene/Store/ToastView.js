@@ -401,8 +401,8 @@
 },
     timer: function(dt) {
     if ((this.touchBegan === true)) {
-        // source line 367, bytecode pc 38
-        (this.touchStartTime = (+this.touchStartTime + 1));
+        // source line 367, bytecode pc 39
+        this.touchStartTime++;
     } else {
         // source line 369, bytecode pc 52
         (this.touchStartTime = 0);
@@ -549,8 +549,8 @@
                 // source line 494, bytecode pc 1634
                 (drawModel = soulModel);
             }
-            // source line 485, bytecode pc 1648
-            (i = (+i + 1));
+            // source line 485, bytecode pc 1649
+            i++;
         }
         // source line 498, bytecode pc 1712
         (soulModel = xs.Models.GeneralSoul.createWithBase(drawModel.id));
@@ -717,8 +717,8 @@
         tipLabel.setVisible(false);
         // source line 635, bytecode pc 620
         _arm1.replaceSkin("txt", tipLabel);
-        // source line 608, bytecode pc 634
-        (i = (+i + 1));
+        // source line 608, bytecode pc 635
+        i++;
     }
     // source line 638, bytecode pc 714
     actionArray.push(_arm1.createPlayAction("draw_ten", { speed: 1, loop: false }));
@@ -757,8 +757,8 @@
             }
             // source line 665, bytecode pc 1164
             _arm2.replaceSkin(nameStr, soulNameLb);
-            // source line 647, bytecode pc 1178
-            (i = (+i + 1));
+            // source line 647, bytecode pc 1179
+            i++;
         }
         // source line 667, bytecode pc 1237
         _arm2.playAniById("idle", { speed: 1, loop: false });
@@ -796,8 +796,8 @@
     // source line 689, bytecode pc 60
     xs.Views.Mgr.showDialogByName("DetailDialogGeneral", { generalData: this.generalModel, type: "achieve_have" });
 }.bind({ generalModel: _generalModel }));
-        // source line 677, bytecode pc 376
-        (i = (+i + 1));
+        // source line 677, bytecode pc 377
+        i++;
     }
 }.bind(this)));
     // source line 704, bytecode pc 1420

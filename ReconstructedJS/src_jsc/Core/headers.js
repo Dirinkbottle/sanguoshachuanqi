@@ -17,8 +17,8 @@ if ((!xs.Core || xs.Core)) {
             // source line 25, bytecode pc 53
             require(filesArray[i], global);
         }
-        // source line 23, bytecode pc 67
-        (i = (+i + 1));
+        // source line 23, bytecode pc 68
+        i++;
     }
 },
     Cpp2Jsb: {
@@ -38,8 +38,8 @@ if ((!xs.Core || xs.Core)) {
     while ((i < arrayNames.length)) {
         // source line 49, bytecode pc 41
         this.registerCallBack("default", arrayNames[i], callback);
-        // source line 48, bytecode pc 55
-        (i = (+i + 1));
+        // source line 48, bytecode pc 56
+        i++;
     }
 },
         onCmnMsg: function(moduleName, funcName, other1, other2) {

@@ -1209,11 +1209,11 @@
                 // source line 1116, bytecode pc 147
                 (infoArray[j] = tmp);
             }
-            // source line 1112, bytecode pc 161
-            (j = (+j + 1));
+            // source line 1112, bytecode pc 162
+            j++;
         }
-        // source line 1111, bytecode pc 194
-        (i = (+i + 1));
+        // source line 1111, bytecode pc 195
+        i++;
     }
     // source line 1121, bytecode pc 218
     (i = 0);
@@ -1229,11 +1229,11 @@
                 // source line 1126, bytecode pc 336
                 (infoArray[j] = tmp);
             }
-            // source line 1122, bytecode pc 350
-            (j = (+j + 1));
+            // source line 1122, bytecode pc 351
+            j++;
         }
-        // source line 1121, bytecode pc 383
-        (i = (+i + 1));
+        // source line 1121, bytecode pc 384
+        i++;
     }
     // source line 1132, bytecode pc 406
     return infoArray;

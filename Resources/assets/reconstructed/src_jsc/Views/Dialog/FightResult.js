@@ -355,8 +355,8 @@
         (icon = xs.Utils.replaceIcon_direct(this.ccbNode.getChildByTag(this.cfg.ccbCfg_win.Booty_tag), this.m_drop[i], dropItems[i].createIcon_GradeAndNumAndName()));
         // source line 320, bytecode pc 4281
         icon.setVisible(true);
-        // source line 317, bytecode pc 4295
-        (i = (+i + 1));
+        // source line 317, bytecode pc 4296
+        i++;
     } while ((i < dropItems.length));
     if (!this.sucess) {
         if (((this.infoModel.getFightType() === xs.Constant_FightType_Climb) || (this.infoModel.getFightType() === xs.Constant_FightType_UnionWar))) {
@@ -449,8 +449,8 @@
     while ((i < starNum)) {
         // source line 457, bytecode pc 34
         this.m_winStar[i].setVisible(true);
-        // source line 456, bytecode pc 48
-        (i = (+i + 1));
+        // source line 456, bytecode pc 49
+        i++;
     }
 },
     hideWinStar: function() {

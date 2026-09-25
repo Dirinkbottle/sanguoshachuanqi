@@ -56,8 +56,8 @@
         }
         // source line 42, bytecode pc 479
         (this.cardAreaState[i] = state);
-        // source line 16, bytecode pc 493
-        (i = (+i + 1));
+        // source line 16, bytecode pc 494
+        i++;
     }
     // source line 45, bytecode pc 535
     (this.cardViews = new Array(7));
@@ -103,8 +103,8 @@
             // source line 81, bytecode pc 67
             return (i - 3);
         }
-        // source line 78, bytecode pc 81
-        (i = (+i + 1));
+        // source line 78, bytecode pc 82
+        i++;
     }
     // source line 84, bytecode pc 126
     xs.log_xjf("未找到限时武将,默认展示");
@@ -144,8 +144,8 @@
             // source line 113, bytecode pc 351
             this.cardViews[index].updateSellMark(null);
         }
-        // source line 95, bytecode pc 365
-        (i = (+i + 1));
+        // source line 95, bytecode pc 366
+        i++;
     }
 },
     getCardDataByIndexOffset: function(indexOffset) {
@@ -206,8 +206,8 @@
             // source line 160, bytecode pc 582
             this.cardViews[index].runAction(cc.Spawn.create(moveTo, scaleTo, skewTo, fadeTo));
         }
-        // source line 146, bytecode pc 596
-        (i = (+i + 1));
+        // source line 146, bytecode pc 597
+        i++;
     }
     if (bDirection) {
         // source line 165, bytecode pc 657
@@ -306,8 +306,8 @@
         (model.disappearTime = showGenerals[i].disappearTime);
         // source line 254, bytecode pc 144
         generalsModel.push(model);
-        // source line 249, bytecode pc 158
-        (i = (+i + 1));
+        // source line 249, bytecode pc 159
+        i++;
     }
     // source line 256, bytecode pc 181
     return generalsModel;

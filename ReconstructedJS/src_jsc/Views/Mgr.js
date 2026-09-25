@@ -97,8 +97,8 @@
         (_tmp = _stack[i]);
         // source line 117, bytecode pc 134
         this.log((((((tag + "-") + i) + "(") + type) + ")"), _tmp[0][1]);
-        // source line 115, bytecode pc 148
-        (i = (+i + 1));
+        // source line 115, bytecode pc 149
+        i++;
     }
 }
     },
@@ -926,8 +926,8 @@
             }
             // source line 1169, bytecode pc 257
             (_tmp = this.lastView.popArguments(xs.Constant_ViewType_Dlg));
-            // source line 1170, bytecode pc 271
-            (count = (+count + 1));
+            // source line 1170, bytecode pc 272
+            count++;
         } else {
             break;
         }

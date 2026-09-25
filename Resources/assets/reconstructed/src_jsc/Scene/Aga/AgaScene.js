@@ -1043,8 +1043,8 @@
                 // source line 998, bytecode pc 1097
                 xs.Utils.replaceNode(this.infoRegion, (this.cfg.infoView.levelMark1.tag + (i - 1)), sprite, false, true);
             }
-            // source line 979, bytecode pc 1111
-            (i = (+i + 1));
+            // source line 979, bytecode pc 1112
+            i++;
         }
     } else {
         // source line 1007, bytecode pc 1182

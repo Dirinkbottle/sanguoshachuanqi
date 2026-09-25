@@ -496,8 +496,8 @@
 },
     updataUITime: function() {
     var residueTime, day, hours, minute, seconds;
-    // source line 458, bytecode pc 25
-    (this.m_residueTime = (+this.m_residueTime - 1));
+    // source line 458, bytecode pc 26
+    this.m_residueTime--;
     // source line 460, bytecode pc 53
     (residueTime = Math.floor(this.m_residueTime));
     // source line 462, bytecode pc 82

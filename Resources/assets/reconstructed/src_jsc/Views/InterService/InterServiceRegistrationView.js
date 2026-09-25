@@ -317,7 +317,7 @@
     (s = "");
     // source line 312, bytecode pc 40
     (i = length);
-    while ((+i > len)) {
+    while ((i-- > len)) {
         // source line 313, bytecode pc 59
         (s = (s + "0"));
     }

@@ -48,8 +48,8 @@
                 }
                 // source line 55, bytecode pc 419
                 (this.chapters[i] = chapterModel);
-                // source line 50, bytecode pc 433
-                (i = (+i + 1));
+                // source line 50, bytecode pc 434
+                i++;
             }
         }
     } else {
@@ -76,8 +76,8 @@
                     // source line 84, bytecode pc 793
                     chapterModel.updateDetail(curChapterInfo);
                 }
-                // source line 65, bytecode pc 807
-                (i = (+i + 1));
+                // source line 65, bytecode pc 808
+                i++;
             }
         }
     }
@@ -92,8 +92,8 @@
                 chapter.updateDetail(this.mapInfo.chapter_details[i]);
             }
         }
-        // source line 91, bytecode pc 955
-        (i = (+i + 1));
+        // source line 91, bytecode pc 956
+        i++;
     }
     // source line 102, bytecode pc 984
     return void 0;
@@ -136,8 +136,8 @@
             // source line 135, bytecode pc 51
             return this.hardChapters[i];
         }
-        // source line 133, bytecode pc 65
-        (i = (+i + 1));
+        // source line 133, bytecode pc 66
+        i++;
     }
     // source line 139, bytecode pc 92
     (i = 0);
@@ -146,8 +146,8 @@
             // source line 141, bytecode pc 139
             return this.chapters[i];
         }
-        // source line 139, bytecode pc 153
-        (i = (+i + 1));
+        // source line 139, bytecode pc 154
+        i++;
     }
     // source line 145, bytecode pc 177
     return null;
@@ -172,8 +172,8 @@
                     return null;
                 }
             }
-            // source line 151, bytecode pc 153
-            (i = (+i + 1));
+            // source line 151, bytecode pc 154
+            i++;
         }
     } else {
         // source line 165, bytecode pc 185
@@ -193,8 +193,8 @@
                     return null;
                 }
             }
-            // source line 165, bytecode pc 326
-            (i = (+i + 1));
+            // source line 165, bytecode pc 327
+            i++;
         }
     }
 },
@@ -218,8 +218,8 @@
                     return null;
                 }
             }
-            // source line 185, bytecode pc 141
-            (i = (+i + 1));
+            // source line 185, bytecode pc 142
+            i++;
         }
     } else {
         // source line 199, bytecode pc 173
@@ -239,8 +239,8 @@
                     return null;
                 }
             }
-            // source line 199, bytecode pc 302
-            (i = (+i + 1));
+            // source line 199, bytecode pc 303
+            i++;
         }
     }
 },
@@ -256,8 +256,8 @@
                 // source line 222, bytecode pc 78
                 (mapid = this.hardChapters[i].getChapterId());
             }
-            // source line 220, bytecode pc 92
-            (i = (+i + 1));
+            // source line 220, bytecode pc 93
+            i++;
         }
     } else {
         // source line 226, bytecode pc 124
@@ -267,8 +267,8 @@
                 // source line 228, bytecode pc 181
                 (mapid = this.chapters[i].getChapterId());
             }
-            // source line 226, bytecode pc 195
-            (i = (+i + 1));
+            // source line 226, bytecode pc 196
+            i++;
         }
     }
     // source line 233, bytecode pc 221
@@ -304,8 +304,8 @@
                 return false;
             }
         }
-        // source line 253, bytecode pc 174
-        (i = (+i + 1));
+        // source line 253, bytecode pc 175
+        i++;
     }
     // source line 266, bytecode pc 258
     (curDunegeonStep = xs.Profile.GameData.Mgr.getInstance().Player.getPlayer().getPlayerEliteDungeonStep());
@@ -328,8 +328,8 @@
             // source line 279, bytecode pc 42
             return false;
         }
-        // source line 277, bytecode pc 56
-        (i = (+i + 1));
+        // source line 277, bytecode pc 57
+        i++;
     }
     // source line 282, bytecode pc 80
     return true;

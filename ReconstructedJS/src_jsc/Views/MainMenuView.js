@@ -223,8 +223,8 @@
     while ((i < this.m_items.length)) {
         // source line 214, bytecode pc 138
         this.m_items[i].setBaseTouchPriority(((this.m_baseTouchPriority + xs.Views.MainMenuView.cfg.m_tableView.priority) + 1));
-        // source line 213, bytecode pc 152
-        (i = (+i + 1));
+        // source line 213, bytecode pc 153
+        i++;
     }
 },
     scrollViewDidScroll: function() {
@@ -286,8 +286,8 @@
         (this.m_items[i] = xs.Views.MainMenuViewCell.create(_params, _bs, _isback));
         // source line 285, bytecode pc 335
         this.m_items[i].setUp(_selector, this);
-        // source line 243, bytecode pc 349
-        (i = (+i + 1));
+        // source line 243, bytecode pc 350
+        i++;
     }
 },
     closeButtonCallBack: function() {

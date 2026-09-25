@@ -548,8 +548,8 @@
     (_size = 0);
     for (var i in obj) {
         if (!(obj.hasOwnProperty(i))) continue;
-        // source line 454, bytecode pc 57
-        (_size = (+_size + 1));
+        // source line 454, bytecode pc 58
+        _size++;
     }
     // source line 457, bytecode pc 70
     return _size;

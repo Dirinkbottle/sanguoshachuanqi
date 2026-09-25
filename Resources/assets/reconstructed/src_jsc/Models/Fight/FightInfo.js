@@ -98,8 +98,8 @@
                     // source line 107, bytecode pc 489
                     (needPush = false);
                 }
-                // source line 102, bytecode pc 503
-                (j = (+j + 1));
+                // source line 102, bytecode pc 504
+                j++;
             }
             if (needPush) {
                 // source line 112, bytecode pc 635
@@ -107,8 +107,8 @@
                 // source line 113, bytecode pc 659
                 type.push(dropItem.type);
             }
-            // source line 99, bytecode pc 673
-            (i = (+i + 1));
+            // source line 99, bytecode pc 674
+            i++;
         }
     }
     // source line 121, bytecode pc 741
@@ -283,8 +283,8 @@
     while ((i < jsonObj.fight_result_all.length)) {
         // source line 303, bytecode pc 80
         this.fightInfos.push(xs.Models.FightInfo.create(jsonObj.fight_result_all[i]));
-        // source line 302, bytecode pc 94
-        (i = (+i + 1));
+        // source line 302, bytecode pc 95
+        i++;
     }
     // source line 306, bytecode pc 120
     return true;
