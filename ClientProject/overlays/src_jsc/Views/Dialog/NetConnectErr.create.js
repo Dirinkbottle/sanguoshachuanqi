@@ -1,17 +1,18 @@
 (xs.Views.Dialog.NetConnectErr.create = function() {
     var ret, visibleSize, label, labelSize, defaultLabelSize, bgSize;
-    var maxLabelWidth, maxLabelHeight, ccbSize, fitScale, detail, content;
+    var maxLabelWidth, maxLabelHeight, ccbSize, fitScale, detail, content, baseContent;
 
     visibleSize = xs.director.getVisibleSize();
     detail = xs.Utils.Net.lastErrorMessage || "";
-    content = xs.Tools.String.createString("auto_name_392");
+    baseContent = xs.Tools.String.createString("auto_name_392");
+    content = baseContent;
     if (detail) {
         content += "\n" + detail;
     }
 
     ret = xs.Views.Dialog.createOneButtonDialog(
         xs.Tools.String.createString("auto_name_391"),
-        content,
+        baseContent,
         xs.Tools.String.createString("auto_name_319"),
         function() {
             xs.Views.Mgr.hideDialogByName("NetConnectErr");
