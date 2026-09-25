@@ -1,0 +1,358 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Chaos/ChaosFightScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=126 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Chaos/ChaosFightScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Scene"
+00010:   7  name "cc"
+00015:   7  getprop "Scene"
+00020:   7  dup
+00021:   7  callprop "extend"
+00026:   7  swap
+00027:   7  notearg
+00028:   7  newinit 1
+00033:   8  lambda (function () {
+    [sourceless code]
+})
+00038:   8  initprop "ctor"
+00043:  13  lambda (function () {
+    [sourceless code]
+})
+00048:  13  initprop "init"
+00053:  42  newinit 1
+00058:  43  newinit 1
+00063:  44  int8 -1
+00065:  44  initprop "priority"
+00070:  44  endinit
+00071:  44  initprop "tableView"
+00076:  47  newinit 1
+00081:  48  int8 -10
+00083:  48  initprop "priority"
+00088:  48  endinit
+00089:  48  initprop "sideBar"
+00094:  48  endinit
+00095:  48  initprop "cfg"
+00100:  48  endinit
+00101:  48  notearg
+00102:  48  call 1
+00105:  48  setprop "ChaosFightScene"
+00110:  48  popv
+00111:  53  name "xs"
+00116:  53  getprop "Scene"
+00121:  53  getprop "ChaosFightScene"
+00126:  53  lambda (function () {
+    [sourceless code]
+})
+00131:  53  setprop "create"
+00136:  53  popv
+00137:  62  name "xs"
+00142:  62  getprop "Scene"
+00147:  62  getprop "Mgr"
+00152:  62  dup
+00153:  62  callprop "registerScene"
+00158:  62  swap
+00159:  62  notearg
+00160:  62  string "ChaosFightScene"
+00165:  62  notearg
+00166:  62  newinit 1
+00171:  63  name "xs"
+00176:  63  getprop "Scene"
+00181:  63  getprop "ChaosFightScene"
+00186:  63  initprop "class"
+00191:  65  name "xs"
+00196:  65  getprop "Constant_SceneType_Challenge"
+00201:  65  initprop "type"
+00206:  65  endinit
+00207:  65  notearg
+00208:  65  call 2
+00211:  65  popv
+00212:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Chaos/ChaosFightScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Chaos/ChaosFightScene.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  call 0
+00012:   9  pop
+00013:  10  name "cc"
+00018:  10  dup
+00019:  10  callprop "associateWithNative"
+00024:  10  swap
+00025:  10  notearg
+00026:  10  this
+00027:  10  notearg
+00028:  10  name "cc"
+00033:  10  getprop "Scene"
+00038:  10  notearg
+00039:  10  call 2
+00042:  10  pop
+00043:  10  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Chaos/ChaosFightScene.js:8 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=3
+;; arg[0] _param
+;; local[0] visibleSize
+;; local[1] playerInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Chaos/ChaosFightScene.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  14  this
+00001:  14  dup
+00002:  14  callprop "_super"
+00007:  14  swap
+00008:  14  notearg
+00009:  14  call 0
+00012:  14  pop
+00013:  16  name "xs"
+00018:  16  getprop "director"
+00023:  16  dup
+00024:  16  callprop "getVisibleSize"
+00029:  16  swap
+00030:  16  notearg
+00031:  16  call 0
+00034:  16  setlocal 0
+00037:  16  pop
+00038:  19  name "xs"
+00043:  19  getprop "Tools"
+00048:  19  getprop "UI"
+00053:  19  dup
+00054:  19  callprop "addBgByType"
+00059:  19  swap
+00060:  19  notearg
+00061:  19  this
+00062:  19  notearg
+00063:  19  name "xs"
+00068:  19  getprop "Constant_BgType_Chaos"
+00073:  19  notearg
+00074:  19  call 2
+00077:  19  pop
+00078:  22  name "xs"
+00083:  22  getprop "Views"
+00088:  22  getprop "PlayerInfoBannerSimpleView"
+00093:  22  dup
+00094:  22  callprop "create"
+00099:  22  swap
+00100:  22  notearg
+00101:  22  call 0
+00104:  22  setlocal 1
+00107:  22  pop
+00108:  23  getlocal 1
+00111:  23  dup
+00112:  23  callprop "setAnchorPoint"
+00117:  23  swap
+00118:  23  notearg
+00119:  23  name "cc"
+00124:  23  dup
+00125:  23  callprop "p"
+00130:  23  swap
+00131:  23  notearg
+00132:  23  zero
+00133:  23  notearg
+00134:  23  one
+00135:  23  notearg
+00136:  23  call 2
+00139:  23  notearg
+00140:  23  call 1
+00143:  23  pop
+00144:  24  name "xs"
+00149:  24  getprop "Utils"
+00154:  24  getprop "Node"
+00159:  24  dup
+00160:  24  callprop "attachNodes"
+00165:  24  swap
+00166:  24  notearg
+00167:  24  this
+00168:  24  notearg
+00169:  24  getlocal 1
+00172:  24  notearg
+00173:  24  newinit 1
+00178:  24  string "lt"
+00183:  24  initprop "desc"
+00188:  24  true
+00189:  24  initprop "sc"
+00194:  24  endinit
+00195:  24  notearg
+00196:  24  call 3
+00199:  24  pop
+00200:  27  this
+00201:  27  name "xs"
+00206:  27  getprop "Views"
+00211:  27  getprop "TablePage"
+00216:  27  dup
+00217:  27  callprop "create"
+00222:  27  swap
+00223:  27  notearg
+00224:  27  name "cc"
+00229:  27  dup
+00230:  27  callprop "size"
+00235:  27  swap
+00236:  27  notearg
+00237:  27  getlocal 0
+00240:  27  getprop "width"
+00245:  27  name "xs"
+00250:  27  getprop "Views"
+00255:  27  getprop "MainMenuView"
+00260:  27  getprop "Width"
+00265:  27  sub
+00266:  27  notearg
+00267:  28  getlocal 0
+00270:  28  getprop "height"
+00275:  28  int8 56
+00277:  28  sub
+00278:  28  notearg
+00279:  28  call 2
+00282:  28  notearg
+00283:  28  call 1
+00286:  28  setprop "pageView"
+00291:  28  pop
+00292:  29  this
+00293:  29  getprop "pageView"
+00298:  29  dup
+00299:  29  callprop "setBaseTouchPriority"
+00304:  29  swap
+00305:  29  notearg
+00306:  29  this
+00307:  29  getprop "cfg"
+00312:  29  getprop "tableView"
+00317:  29  getprop "priority"
+00322:  29  notearg
+00323:  29  call 1
+00326:  29  pop
+00327:  30  this
+00328:  30  getprop "pageView"
+00333:  30  dup
+00334:  30  callprop "addPageWhitConstruct"
+00339:  30  swap
+00340:  30  notearg
+00341:  30  name "xs"
+00346:  30  getprop "Tools"
+00351:  30  getprop "String"
+00356:  30  dup
+00357:  30  callprop "createString"
+00362:  30  swap
+00363:  30  notearg
+00364:  30  string "chaos_snatch"
+00369:  30  notearg
+00370:  30  call 1
+00373:  30  notearg
+00374:  31  name "xs"
+00379:  31  getprop "Views"
+00384:  31  getprop "ChaosFightView"
+00389:  31  notearg
+00390:  31  newinit 1
+00395:  31  getarg 0
+00398:  31  initprop "param"
+00403:  31  endinit
+00404:  31  notearg
+00405:  31  call 3
+00408:  31  pop
+00409:  32  name "xs"
+00414:  32  getprop "Utils"
+00419:  32  getprop "Node"
+00424:  32  dup
+00425:  32  callprop "attachNodes"
+00430:  32  swap
+00431:  32  notearg
+00432:  32  this
+00433:  32  notearg
+00434:  32  this
+00435:  32  getprop "pageView"
+00440:  32  notearg
+00441:  32  newinit 1
+00446:  32  string "lb"
+00451:  32  initprop "desc"
+00456:  32  true
+00457:  32  initprop "sc"
+00462:  32  endinit
+00463:  32  notearg
+00464:  32  call 3
+00467:  32  pop
+00468:  36  this
+00469:  36  name "xs"
+00474:  36  getprop "Tools"
+00479:  36  getprop "UI"
+00484:  36  dup
+00485:  36  callprop "addShortcutBoard"
+00490:  36  swap
+00491:  36  notearg
+00492:  36  this
+00493:  36  notearg
+00494:  36  true
+00495:  36  notearg
+00496:  36  call 2
+00499:  36  setprop "m_mainMenu"
+00504:  36  pop
+00505:  37  this
+00506:  37  getprop "m_mainMenu"
+00511:  37  dup
+00512:  37  callprop "setBaseTouchPriority"
+00517:  37  swap
+00518:  37  notearg
+00519:  37  this
+00520:  37  getprop "cfg"
+00525:  37  getprop "sideBar"
+00530:  37  getprop "priority"
+00535:  37  notearg
+00536:  37  call 1
+00539:  37  pop
+00540:  39  true
+00541:  39  return
+00542:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Chaos/ChaosFightScene.js:13 ---
+;; function object[2] create
+;; function metadata object[2] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Chaos/ChaosFightScene.js:53 ---
+loc   line  op
+----- ----  --
+main:
+00000:  54  name "xs"
+00005:  54  getprop "Scene"
+00010:  54  getprop "ChaosFightScene"
+00015:  54  undefined
+00016:  54  notearg
+00017:  54  new 0
+00020:  54  setlocal 0
+00023:  54  pop
+00024:  55  getlocal 0
+00027:  55  and 51 (+24)
+00032:  55  pop
+00033:  55  getlocal 0
+00036:  55  dup
+00037:  55  callprop "init"
+00042:  55  swap
+00043:  55  notearg
+00044:  55  getarg 0
+00047:  55  notearg
+00048:  55  call 1
+00051:  55  ifeq 60 (+9)
+00056:  56  getlocal 0
+00059:  56  return
+00060:  58  null
+00061:  58  return
+00062:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Chaos/ChaosFightScene.js:53 ---

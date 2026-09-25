@@ -1,0 +1,346 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/TeamGeneral.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=38 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=58 object[2]
+;; FUNCTION-MAP kind=lambda offset=68 object[3]
+;; FUNCTION-MAP kind=lambda offset=78 object[4]
+;; FUNCTION-MAP kind=lambda offset=114 object[5]
+;; FUNCTION-MAP kind=lambda offset=140 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  name "xs"
+00005:  19  getprop "Models"
+00010:  19  name "xs"
+00015:  19  getprop "Models"
+00020:  19  getprop "Base"
+00025:  19  dup
+00026:  19  callprop "extend"
+00031:  19  swap
+00032:  19  notearg
+00033:  19  newinit 1
+00038:  22  lambda (function () {
+    [sourceless code]
+})
+00043:  22  initprop "init"
+00048:  35  lambda (function () {
+    [sourceless code]
+})
+00053:  35  initprop "loadJson"
+00058:  64  lambda (function () {
+    [sourceless code]
+})
+00063:  64  initprop "getGeneralPkId"
+00068:  69  lambda (function () {
+    [sourceless code]
+})
+00073:  69  initprop "getGeneralPos"
+00078:  74  lambda (function () {
+    [sourceless code]
+})
+00083:  74  initprop "getIdxInTeam"
+00088:  74  endinit
+00089:  74  notearg
+00090:  74  call 1
+00093:  74  setprop "TeamGeneral"
+00098:  74  popv
+00099:  90  name "xs"
+00104:  90  getprop "Models"
+00109:  90  getprop "TeamGeneral"
+00114:  90  lambda (function () {
+    [sourceless code]
+})
+00119:  90  setprop "createWithJson"
+00124:  90  popv
+00125:  99  name "xs"
+00130:  99  getprop "Models"
+00135:  99  getprop "TeamGeneral"
+00140:  99  lambda (function () {
+    [sourceless code]
+})
+00145:  99  setprop "createWithBase"
+00150:  99  popv
+00151: 105  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:22 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  this
+00001:  24  null
+00002:  24  setprop "general_pk_id"
+00007:  24  pop
+00008:  25  this
+00009:  25  null
+00010:  25  setprop "general_position"
+00015:  25  pop
+00016:  27  this
+00017:  27  zero
+00018:  27  setprop "hp"
+00023:  27  pop
+00024:  28  this
+00025:  28  zero
+00026:  28  setprop "atk"
+00031:  28  pop
+00032:  29  this
+00033:  29  zero
+00034:  29  setprop "def"
+00039:  29  pop
+00040:  30  this
+00041:  30  zero
+00042:  30  setprop "int"
+00047:  30  pop
+00048:  31  this
+00049:  31  zero
+00050:  31  setprop "fighting"
+00055:  31  pop
+00056:  33  true
+00057:  33  return
+00058:  33  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:22 ---
+;; function object[1] loadJson
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] json
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:35 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  this
+00001:  37  getarg 0
+00004:  37  getprop "pk_id"
+00009:  37  setprop "general_pk_id"
+00014:  37  pop
+00015:  38  this
+00016:  38  name "xs"
+00021:  38  getprop "Utils"
+00026:  38  dup
+00027:  38  callprop "parseIntSafe"
+00032:  38  swap
+00033:  38  notearg
+00034:  38  getarg 0
+00037:  38  getprop "position"
+00042:  38  notearg
+00043:  38  call 1
+00046:  38  setprop "general_position"
+00051:  38  pop
+00052:  47  this
+00053:  47  getarg 0
+00056:  47  getprop "general_hp"
+00061:  47  or 68 (+7)
+00066:  47  pop
+00067:  47  zero
+00068:  47  setprop "hp"
+00073:  47  pop
+00074:  48  this
+00075:  48  callname "parseInt"
+00080:  48  implicitthis "parseInt"
+00085:  48  notearg
+00086:  48  this
+00087:  48  getprop "hp"
+00092:  48  notearg
+00093:  48  call 1
+00096:  48  setprop "hp"
+00101:  48  pop
+00102:  49  this
+00103:  49  getarg 0
+00106:  49  getprop "general_attack"
+00111:  49  or 118 (+7)
+00116:  49  pop
+00117:  49  zero
+00118:  49  setprop "atk"
+00123:  49  pop
+00124:  50  this
+00125:  50  callname "parseInt"
+00130:  50  implicitthis "parseInt"
+00135:  50  notearg
+00136:  50  this
+00137:  50  getprop "atk"
+00142:  50  notearg
+00143:  50  call 1
+00146:  50  setprop "atk"
+00151:  50  pop
+00152:  51  this
+00153:  51  getarg 0
+00156:  51  getprop "general_defense"
+00161:  51  or 168 (+7)
+00166:  51  pop
+00167:  51  zero
+00168:  51  setprop "def"
+00173:  51  pop
+00174:  52  this
+00175:  52  callname "parseInt"
+00180:  52  implicitthis "parseInt"
+00185:  52  notearg
+00186:  52  this
+00187:  52  getprop "def"
+00192:  52  notearg
+00193:  52  call 1
+00196:  52  setprop "def"
+00201:  52  pop
+00202:  53  this
+00203:  53  getarg 0
+00206:  53  getprop "general_wisdom"
+00211:  53  or 218 (+7)
+00216:  53  pop
+00217:  53  zero
+00218:  53  setprop "int"
+00223:  53  pop
+00224:  54  this
+00225:  54  callname "parseInt"
+00230:  54  implicitthis "parseInt"
+00235:  54  notearg
+00236:  54  this
+00237:  54  getprop "int"
+00242:  54  notearg
+00243:  54  call 1
+00246:  54  setprop "int"
+00251:  54  pop
+00252:  55  this
+00253:  55  getarg 0
+00256:  55  getprop "general_fighting"
+00261:  55  or 268 (+7)
+00266:  55  pop
+00267:  55  zero
+00268:  55  setprop "fighting"
+00273:  55  pop
+00274:  56  this
+00275:  56  callname "parseInt"
+00280:  56  implicitthis "parseInt"
+00285:  56  notearg
+00286:  56  this
+00287:  56  getprop "fighting"
+00292:  56  notearg
+00293:  56  call 1
+00296:  56  setprop "fighting"
+00301:  56  pop
+00302:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:35 ---
+;; function object[2] getGeneralPkId
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:64 ---
+loc   line  op
+----- ----  --
+main:
+00000:  65  this
+00001:  65  getprop "general_pk_id"
+00006:  65  return
+00007:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:64 ---
+;; function object[3] getGeneralPos
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:69 ---
+loc   line  op
+----- ----  --
+main:
+00000:  70  this
+00001:  70  getprop "general_position"
+00006:  70  return
+00007:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:69 ---
+;; function object[4] getIdxInTeam
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:74 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  this
+00001:  75  getprop "general_position"
+00006:  75  one
+00007:  75  sub
+00008:  75  return
+00009:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:74 ---
+;; function object[5] createWithJson
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] json
+;; local[0] team
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:90 ---
+loc   line  op
+----- ----  --
+main:
+00000:  91  name "xs"
+00005:  91  getprop "Models"
+00010:  91  getprop "TeamGeneral"
+00015:  91  undefined
+00016:  91  notearg
+00017:  91  new 0
+00020:  91  setlocal 0
+00023:  91  pop
+00024:  92  getlocal 0
+00027:  92  and 47 (+20)
+00032:  92  pop
+00033:  92  getlocal 0
+00036:  92  dup
+00037:  92  callprop "init"
+00042:  92  swap
+00043:  92  notearg
+00044:  92  call 0
+00047:  92  ifeq 75 (+28)
+00052:  93  getlocal 0
+00055:  93  dup
+00056:  93  callprop "loadJson"
+00061:  93  swap
+00062:  93  notearg
+00063:  93  getarg 0
+00066:  93  notearg
+00067:  93  call 1
+00070:  93  pop
+00071:  94  getlocal 0
+00074:  94  return
+00075:  96  null
+00076:  96  return
+00077:  96  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:90 ---
+;; function object[6] createWithBase
+;; function metadata object[6] nargs=0 bindings=1
+;; local[0] team
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:99 ---
+loc   line  op
+----- ----  --
+main:
+00000: 100  name "xs"
+00005: 100  getprop "Models"
+00010: 100  getprop "TeamGeneral"
+00015: 100  undefined
+00016: 100  notearg
+00017: 100  new 0
+00020: 100  setlocal 0
+00023: 100  pop
+00024: 101  getlocal 0
+00027: 101  and 47 (+20)
+00032: 101  pop
+00033: 101  getlocal 0
+00036: 101  dup
+00037: 101  callprop "init"
+00042: 101  swap
+00043: 101  notearg
+00044: 101  call 0
+00047: 101  ifeq 56 (+9)
+00052: 102  getlocal 0
+00055: 102  return
+00056: 104  null
+00057: 104  return
+00058: 104  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TeamGeneral.js:99 ---

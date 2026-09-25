@@ -1,0 +1,291 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SpriteClippingNode.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=49 object[0]
+;; FUNCTION-MAP kind=lambda offset=59 object[1]
+;; FUNCTION-MAP kind=lambda offset=95 object[2]
+;; FUNCTION-MAP kind=lambda offset=121 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpriteClippingNode.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Views"
+00010:  10  name "cc"
+00015:  10  getprop "Node"
+00020:  10  dup
+00021:  10  callprop "extend"
+00026:  10  swap
+00027:  10  notearg
+00028:  10  newinit 1
+00033:  12  string "SpriteClippingNode"
+00038:  12  initprop "name"
+00043:  14  null
+00044:  14  initprop "clip"
+00049:  17  lambda (function () {
+    [sourceless code]
+})
+00054:  17  initprop "ctor"
+00059:  22  lambda (function () {
+    [sourceless code]
+})
+00064:  22  initprop "init"
+00069:  22  endinit
+00070:  22  notearg
+00071:  22  call 1
+00074:  22  setprop "SpriteClippingNode"
+00079:  22  popv
+00080:  47  name "xs"
+00085:  47  getprop "Views"
+00090:  47  getprop "SpriteClippingNode"
+00095:  47  lambda (function () {
+    [sourceless code]
+})
+00100:  47  setprop "createWithFileName"
+00105:  47  popv
+00106:  64  name "xs"
+00111:  64  getprop "Views"
+00116:  64  getprop "SpriteClippingNode"
+00121:  64  lambda (function () {
+    [sourceless code]
+})
+00126:  64  setprop "create"
+00131:  64  popv
+00132:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpriteClippingNode.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpriteClippingNode.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  this
+00001:  18  dup
+00002:  18  callprop "_super"
+00007:  18  swap
+00008:  18  notearg
+00009:  18  call 0
+00012:  18  pop
+00013:  19  name "cc"
+00018:  19  dup
+00019:  19  callprop "associateWithNative"
+00024:  19  swap
+00025:  19  notearg
+00026:  19  this
+00027:  19  notearg
+00028:  19  name "cc"
+00033:  19  getprop "Node"
+00038:  19  notearg
+00039:  19  call 2
+00042:  19  pop
+00043:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpriteClippingNode.js:17 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] stencilSprite
+;; local[0] _size
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpriteClippingNode.js:22 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  getarg 0
+00003:  24  dup
+00004:  24  callprop "getContentSize"
+00009:  24  swap
+00010:  24  notearg
+00011:  24  call 0
+00014:  24  setlocal 0
+00017:  24  pop
+00018:  26  this
+00019:  26  dup
+00020:  26  callprop "setContentSize"
+00025:  26  swap
+00026:  26  notearg
+00027:  26  getlocal 0
+00030:  26  notearg
+00031:  26  call 1
+00034:  26  pop
+00035:  27  this
+00036:  27  dup
+00037:  27  callprop "setAnchorPoint"
+00042:  27  swap
+00043:  27  notearg
+00044:  27  name "cc"
+00049:  27  dup
+00050:  27  callprop "p"
+00055:  27  swap
+00056:  27  notearg
+00057:  27  double 0.5
+00062:  27  notearg
+00063:  27  double 0.5
+00068:  27  notearg
+00069:  27  call 2
+00072:  27  notearg
+00073:  27  call 1
+00076:  27  pop
+00077:  30  getarg 0
+00080:  30  dup
+00081:  30  callprop "setAnchorPoint"
+00086:  30  swap
+00087:  30  notearg
+00088:  30  name "cc"
+00093:  30  dup
+00094:  30  callprop "p"
+00099:  30  swap
+00100:  30  notearg
+00101:  30  zero
+00102:  30  notearg
+00103:  30  zero
+00104:  30  notearg
+00105:  30  call 2
+00108:  30  notearg
+00109:  30  call 1
+00112:  30  pop
+00113:  34  this
+00114:  34  name "cc"
+00119:  34  getprop "ClippingNode"
+00124:  34  dup
+00125:  34  callprop "create"
+00130:  34  swap
+00131:  34  notearg
+00132:  34  getarg 0
+00135:  34  notearg
+00136:  34  call 1
+00139:  34  setprop "clip"
+00144:  34  pop
+00145:  36  this
+00146:  36  getprop "clip"
+00151:  36  dup
+00152:  36  callprop "setContentSize"
+00157:  36  swap
+00158:  36  notearg
+00159:  36  getlocal 0
+00162:  36  notearg
+00163:  36  call 1
+00166:  36  pop
+00167:  37  this
+00168:  37  getprop "clip"
+00173:  37  dup
+00174:  37  callprop "setAlphaThreshold"
+00179:  37  swap
+00180:  37  notearg
+00181:  37  double 0.5
+00186:  37  notearg
+00187:  37  call 1
+00190:  37  pop
+00191:  40  name "xs"
+00196:  40  getprop "Utils"
+00201:  40  getprop "Node"
+00206:  40  dup
+00207:  40  callprop "attachNodes"
+00212:  40  swap
+00213:  40  notearg
+00214:  40  this
+00215:  40  notearg
+00216:  40  this
+00217:  40  getprop "clip"
+00222:  40  notearg
+00223:  40  newinit 1
+00228:  40  string "lb"
+00233:  40  initprop "desc"
+00238:  40  endinit
+00239:  40  notearg
+00240:  40  call 3
+00243:  40  pop
+00244:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpriteClippingNode.js:22 ---
+;; function object[2] createWithFileName
+;; function metadata object[2] nargs=1 bindings=3
+;; arg[0] fileName
+;; local[0] _view
+;; local[1] _sprite
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpriteClippingNode.js:47 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  name "xs"
+00005:  50  getprop "Views"
+00010:  50  getprop "SpriteClippingNode"
+00015:  50  undefined
+00016:  50  notearg
+00017:  50  new 0
+00020:  50  setlocal 0
+00023:  50  pop
+00024:  52  name "xs"
+00029:  52  getprop "Factorys"
+00034:  52  getprop "Sprite"
+00039:  52  dup
+00040:  52  callprop "createWithFileName"
+00045:  52  swap
+00046:  52  notearg
+00047:  52  getarg 0
+00050:  52  notearg
+00051:  52  call 1
+00054:  52  setlocal 1
+00057:  52  pop
+00058:  54  name "xs"
+00063:  54  dup
+00064:  54  callprop "assert"
+00069:  54  swap
+00070:  54  notearg
+00071:  54  false
+00072:  54  notearg
+00073:  54  string "SpriteClippingNode"
+00078:  54  notearg
+00079:  54  call 2
+00082:  54  pop
+00083:  57  getlocal 0
+00086:  57  dup
+00087:  57  callprop "init"
+00092:  57  swap
+00093:  57  notearg
+00094:  57  getlocal 1
+00097:  57  notearg
+00098:  57  call 1
+00101:  57  pop
+00102:  60  getlocal 0
+00105:  60  return
+00106:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpriteClippingNode.js:47 ---
+;; function object[3] create
+;; function metadata object[3] nargs=1 bindings=2
+;; arg[0] spriteId
+;; local[0] _view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpriteClippingNode.js:64 ---
+loc   line  op
+----- ----  --
+main:
+00000:  67  name "xs"
+00005:  67  getprop "Views"
+00010:  67  getprop "SpriteClippingNode"
+00015:  67  undefined
+00016:  67  notearg
+00017:  67  new 0
+00020:  67  setlocal 0
+00023:  67  pop
+00024:  70  getlocal 0
+00027:  70  dup
+00028:  70  callprop "init"
+00033:  70  swap
+00034:  70  notearg
+00035:  70  name "size"
+00040:  70  notearg
+00041:  70  name "radius"
+00046:  70  notearg
+00047:  70  call 2
+00050:  70  pop
+00051:  73  getlocal 0
+00054:  73  return
+00055:  73  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpriteClippingNode.js:64 ---

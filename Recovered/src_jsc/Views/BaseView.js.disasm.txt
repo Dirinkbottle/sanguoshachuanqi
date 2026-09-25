@@ -1,0 +1,629 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/BaseView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=95 object[0]
+;; FUNCTION-MAP kind=lambda offset=105 object[1]
+;; FUNCTION-MAP kind=lambda offset=115 object[2]
+;; FUNCTION-MAP kind=lambda offset=125 object[3]
+;; FUNCTION-MAP kind=lambda offset=135 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "cc"
+00005:   7  getprop "NodeRGBA"
+00010:   7  name "cc"
+00015:   7  getprop "Class"
+00020:   7  getprop "extend"
+00025:   7  setprop "extend"
+00030:   7  popv
+00031:   9  name "xs"
+00036:   9  getprop "Views"
+00041:   9  name "xs"
+00046:   9  getprop "Views"
+00051:   9  getprop "BaseView"
+00056:   9  or 150 (+94)
+00061:   9  pop
+00062:   9  name "cc"
+00067:   9  getprop "NodeRGBA"
+00072:   9  dup
+00073:   9  callprop "extend"
+00078:   9  swap
+00079:   9  notearg
+00080:   9  newinit 1
+00085:  11  string "xs.Views.BaseView"
+00090:  11  initprop "name"
+00095:  13  lambda (function () {
+    [sourceless code]
+})
+00100:  13  initprop "ctor"
+00105:  18  lambda (function () {
+    [sourceless code]
+})
+00110:  18  initprop "init"
+00115:  27  lambda (function () {
+    [sourceless code]
+})
+00120:  27  initprop "_checkModel"
+00125:  32  lambda (function () {
+    [sourceless code]
+})
+00130:  32  initprop "_create_property_boolean_auto"
+00135:  87  lambda (function () {
+    [sourceless code]
+})
+00140:  87  initprop "_create_property_int_auto"
+00145:  87  endinit
+00146:  87  notearg
+00147:  87  call 1
+00150:  87  setprop "BaseView"
+00155:  87  popv
+00156: 143  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  14  this
+00001:  14  dup
+00002:  14  callprop "_super"
+00007:  14  swap
+00008:  14  notearg
+00009:  14  call 0
+00012:  14  pop
+00013:  15  name "cc"
+00018:  15  dup
+00019:  15  callprop "associateWithNative"
+00024:  15  swap
+00025:  15  notearg
+00026:  15  this
+00027:  15  notearg
+00028:  15  name "cc"
+00033:  15  getprop "NodeRGBA"
+00038:  15  notearg
+00039:  15  call 2
+00042:  15  pop
+00043:  15  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:13 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:18 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  this
+00001:  19  dup
+00002:  19  callprop "_super"
+00007:  19  swap
+00008:  19  notearg
+00009:  19  call 0
+00012:  19  pop
+00013:  22  this
+00014:  22  dup
+00015:  22  callprop "setCascadeOpacityEnabled"
+00020:  22  swap
+00021:  22  notearg
+00022:  22  true
+00023:  22  notearg
+00024:  22  call 1
+00027:  22  pop
+00028:  23  this
+00029:  23  dup
+00030:  23  callprop "setCascadeColorEnabled"
+00035:  23  swap
+00036:  23  notearg
+00037:  23  true
+00038:  23  notearg
+00039:  23  call 1
+00042:  23  pop
+00043:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:18 ---
+;; function object[2] _checkModel
+;; function metadata object[2] nargs=2 bindings=2
+;; arg[0] model
+;; arg[1] funcName
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  28  this
+00001:  28  dup
+00002:  28  callprop "assert"
+00007:  28  swap
+00008:  28  notearg
+00009:  28  getarg 0
+00012:  28  getarg 1
+00015:  28  getelem
+00016:  28  notearg
+00017:  28  string "model "
+00022:  28  getarg 0
+00025:  28  getprop "name"
+00030:  28  add
+00031:  28  string " need funcName:"
+00036:  28  add
+00037:  28  getarg 1
+00040:  28  add
+00041:  28  notearg
+00042:  28  call 2
+00045:  28  pop
+00046:  28  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:27 ---
+;; function object[3] _create_property_boolean_auto
+;; function metadata object[3] nargs=1 bindings=6
+;; arg[0] propertyName
+;; local[0] _setFuncName
+;; local[1] _isFuncName
+;; local[2] _propertyName
+;; local[3] _updateFuncName
+;; local[4] _lazyInitFuncName
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=81 object[0]
+;; FUNCTION-MAP kind=lambda offset=132 object[1]
+;; FUNCTION-MAP kind=lambda offset=199 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  string "set"
+00005:  34  getarg 0
+00008:  34  add
+00009:  34  setlocal 0
+00012:  34  pop
+00013:  35  string "is"
+00018:  35  getarg 0
+00021:  35  add
+00022:  35  setlocal 1
+00025:  35  pop
+00026:  36  string "m_"
+00031:  36  getarg 0
+00034:  36  add
+00035:  36  setlocal 2
+00038:  36  pop
+00039:  37  string "_update"
+00044:  37  getarg 0
+00047:  37  add
+00048:  37  string "View"
+00053:  37  add
+00054:  37  setlocal 3
+00057:  37  pop
+00058:  38  string "_getLazyInit"
+00063:  38  getarg 0
+00066:  38  add
+00067:  38  string "View"
+00072:  38  add
+00073:  38  setlocal 4
+00076:  38  pop
+00077:  40  this
+00078:  40  getlocal 1
+00081:  40  lambda (function () {
+    [sourceless code]
+})
+00086:  40  dup
+00087:  40  callprop "bind"
+00092:  40  swap
+00093:  40  notearg
+00094:  43  newinit 1
+00099:  44  this
+00100:  44  initprop "who"
+00105:  45  getlocal 1
+00108:  45  initprop "isFuncName"
+00113:  46  getlocal 2
+00116:  46  initprop "propertyName"
+00121:  46  endinit
+00122:  46  notearg
+00123:  46  call 1
+00126:  46  setelem
+00127:  46  pop
+00128:  50  this
+00129:  50  getlocal 0
+00132:  50  lambda (function () {
+    [sourceless code]
+})
+00137:  50  dup
+00138:  50  callprop "bind"
+00143:  50  swap
+00144:  50  notearg
+00145:  56  newinit 1
+00150:  57  this
+00151:  57  initprop "who"
+00156:  58  getlocal 1
+00159:  58  initprop "isFuncName"
+00164:  59  getlocal 0
+00167:  59  initprop "setFuncName"
+00172:  60  getlocal 3
+00175:  60  initprop "updateFuncName"
+00180:  61  getlocal 2
+00183:  61  initprop "propertyName"
+00188:  61  endinit
+00189:  61  notearg
+00190:  61  call 1
+00193:  61  setelem
+00194:  61  pop
+00195:  65  this
+00196:  65  getlocal 3
+00199:  65  lambda (function () {
+    [sourceless code]
+})
+00204:  65  dup
+00205:  65  callprop "bind"
+00210:  65  swap
+00211:  65  notearg
+00212:  72  newinit 1
+00217:  73  this
+00218:  73  initprop "who"
+00223:  74  getlocal 1
+00226:  74  initprop "isFuncName"
+00231:  75  getlocal 0
+00234:  75  initprop "setFuncName"
+00239:  76  getlocal 3
+00242:  76  initprop "updateFuncName"
+00247:  77  getlocal 4
+00250:  77  initprop "lazyInitFuncName"
+00255:  77  endinit
+00256:  77  notearg
+00257:  77  call 1
+00260:  77  setelem
+00261:  77  pop
+00262:  82  this
+00263:  82  dup
+00264:  82  callprop "assert"
+00269:  82  swap
+00270:  82  notearg
+00271:  82  this
+00272:  82  getlocal 4
+00275:  82  getelem
+00276:  82  notearg
+00277:  82  string "_create_property_boolean_auto need:"
+00282:  82  getlocal 4
+00285:  82  add
+00286:  82  notearg
+00287:  82  call 2
+00290:  82  pop
+00291:  82  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:32 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:40 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  this
+00001:  41  getprop "who"
+00006:  41  this
+00007:  41  getprop "propertyName"
+00012:  41  getelem
+00013:  41  or 20 (+7)
+00018:  41  pop
+00019:  41  false
+00020:  41  return
+00021:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:40 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] flag
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:50 ---
+loc   line  op
+----- ----  --
+main:
+00000:  51  getarg 0
+00003:  51  this
+00004:  51  getprop "who"
+00009:  51  this
+00010:  51  getprop "propertyName"
+00015:  51  getelem
+00016:  51  strictne
+00017:  51  ifeq 59 (+42)
+00022:  52  this
+00023:  52  getprop "who"
+00028:  52  this
+00029:  52  getprop "propertyName"
+00034:  52  getarg 0
+00037:  52  setelem
+00038:  52  pop
+00039:  53  this
+00040:  53  getprop "who"
+00045:  53  dup
+00046:  53  this
+00047:  53  getprop "updateFuncName"
+00052:  53  callelem
+00053:  53  swap
+00054:  53  notearg
+00055:  53  call 0
+00058:  53  pop
+00059:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:50 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=2
+;; local[0] _view
+;; local[1] _visible
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:65 ---
+loc   line  op
+----- ----  --
+main:
+00000:  66  this
+00001:  66  getprop "who"
+00006:  66  dup
+00007:  66  this
+00008:  66  getprop "lazyInitFuncName"
+00013:  66  callelem
+00014:  66  swap
+00015:  66  notearg
+00016:  66  call 0
+00019:  66  setlocal 0
+00022:  66  pop
+00023:  68  this
+00024:  68  getprop "who"
+00029:  68  dup
+00030:  68  this
+00031:  68  getprop "isFuncName"
+00036:  68  callelem
+00037:  68  swap
+00038:  68  notearg
+00039:  68  call 0
+00042:  68  setlocal 1
+00045:  68  pop
+00046:  70  getlocal 0
+00049:  70  dup
+00050:  70  callprop "setVisible"
+00055:  70  swap
+00056:  70  notearg
+00057:  70  getlocal 1
+00060:  70  notearg
+00061:  70  call 1
+00064:  70  pop
+00065:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:65 ---
+;; function object[4] _create_property_int_auto
+;; function metadata object[4] nargs=1 bindings=6
+;; arg[0] propertyName
+;; local[0] _setFuncName
+;; local[1] _getFuncName
+;; local[2] _propertyName
+;; local[3] _updateFuncName
+;; local[4] _lazyInitFuncName
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=81 object[0]
+;; FUNCTION-MAP kind=lambda offset=124 object[1]
+;; FUNCTION-MAP kind=lambda offset=193 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:87 ---
+loc   line  op
+----- ----  --
+main:
+00000:  89  string "set"
+00005:  89  getarg 0
+00008:  89  add
+00009:  89  setlocal 0
+00012:  89  pop
+00013:  90  string "get"
+00018:  90  getarg 0
+00021:  90  add
+00022:  90  setlocal 1
+00025:  90  pop
+00026:  91  string "m_"
+00031:  91  getarg 0
+00034:  91  add
+00035:  91  setlocal 2
+00038:  91  pop
+00039:  92  string "_update"
+00044:  92  getarg 0
+00047:  92  add
+00048:  92  string "View"
+00053:  92  add
+00054:  92  setlocal 3
+00057:  92  pop
+00058:  93  string "_getLazyInit"
+00063:  93  getarg 0
+00066:  93  add
+00067:  93  string "View"
+00072:  93  add
+00073:  93  setlocal 4
+00076:  93  pop
+00077:  95  this
+00078:  95  getlocal 1
+00081:  95  lambda (function () {
+    [sourceless code]
+})
+00086:  95  dup
+00087:  95  callprop "bind"
+00092:  95  swap
+00093:  95  notearg
+00094:  98  newinit 1
+00099:  99  this
+00100:  99  initprop "who"
+00105: 100  getlocal 2
+00108: 100  initprop "propertyName"
+00113: 100  endinit
+00114: 100  notearg
+00115: 100  call 1
+00118: 100  setelem
+00119: 100  pop
+00120: 104  this
+00121: 104  getlocal 0
+00124: 104  lambda (function () {
+    [sourceless code]
+})
+00129: 104  dup
+00130: 104  callprop "bind"
+00135: 104  swap
+00136: 104  notearg
+00137: 112  newinit 1
+00142: 113  this
+00143: 113  initprop "who"
+00148: 114  name "_isFuncName"
+00153: 114  initprop "isFuncName"
+00158: 115  getlocal 0
+00161: 115  initprop "setFuncName"
+00166: 116  getlocal 3
+00169: 116  initprop "updateFuncName"
+00174: 117  getlocal 2
+00177: 117  initprop "propertyName"
+00182: 117  endinit
+00183: 117  notearg
+00184: 117  call 1
+00187: 117  setelem
+00188: 117  pop
+00189: 121  this
+00190: 121  getlocal 3
+00193: 121  lambda (function () {
+    [sourceless code]
+})
+00198: 121  dup
+00199: 121  callprop "bind"
+00204: 121  swap
+00205: 121  notearg
+00206: 128  newinit 1
+00211: 129  this
+00212: 129  initprop "who"
+00217: 130  name "_isFuncName"
+00222: 130  initprop "isFuncName"
+00227: 131  getlocal 0
+00230: 131  initprop "setFuncName"
+00235: 132  getlocal 3
+00238: 132  initprop "updateFuncName"
+00243: 133  getlocal 4
+00246: 133  initprop "lazyInitFuncName"
+00251: 133  endinit
+00252: 133  notearg
+00253: 133  call 1
+00256: 133  setelem
+00257: 133  pop
+00258: 138  this
+00259: 138  dup
+00260: 138  callprop "assert"
+00265: 138  swap
+00266: 138  notearg
+00267: 138  this
+00268: 138  getlocal 4
+00271: 138  getelem
+00272: 138  notearg
+00273: 138  string "_create_property_boolean_auto need:"
+00278: 138  getlocal 4
+00281: 138  add
+00282: 138  notearg
+00283: 138  call 2
+00286: 138  pop
+00287: 138  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:87 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:95 ---
+loc   line  op
+----- ----  --
+main:
+00000:  96  this
+00001:  96  getprop "who"
+00006:  96  this
+00007:  96  getprop "propertyName"
+00012:  96  getelem
+00013:  96  return
+00014:  96  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:95 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] flag
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:104 ---
+loc   line  op
+----- ----  --
+main:
+00000: 105  getarg 0
+00003: 105  this
+00004: 105  getprop "who"
+00009: 105  this
+00010: 105  getprop "propertyName"
+00015: 105  getelem
+00016: 105  strictne
+00017: 105  ifeq 86 (+69)
+00022: 107  name "xs"
+00027: 107  getprop "Utils"
+00032: 107  getprop "Node"
+00037: 107  dup
+00038: 107  callprop "removeChildSafe"
+00043: 107  swap
+00044: 107  notearg
+00045: 107  call 0
+00048: 107  pop
+00049: 108  this
+00050: 108  getprop "who"
+00055: 108  this
+00056: 108  getprop "propertyName"
+00061: 108  getarg 0
+00064: 108  setelem
+00065: 108  pop
+00066: 109  this
+00067: 109  getprop "who"
+00072: 109  dup
+00073: 109  this
+00074: 109  getprop "updateFuncName"
+00079: 109  callelem
+00080: 109  swap
+00081: 109  notearg
+00082: 109  call 0
+00085: 109  pop
+00086: 110  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:104 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=2
+;; local[0] _view
+;; local[1] _visible
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:121 ---
+loc   line  op
+----- ----  --
+main:
+00000: 122  this
+00001: 122  getprop "who"
+00006: 122  dup
+00007: 122  this
+00008: 122  getprop "lazyInitFuncName"
+00013: 122  callelem
+00014: 122  swap
+00015: 122  notearg
+00016: 122  call 0
+00019: 122  setlocal 0
+00022: 122  pop
+00023: 124  this
+00024: 124  getprop "who"
+00029: 124  dup
+00030: 124  this
+00031: 124  getprop "isFuncName"
+00036: 124  callelem
+00037: 124  swap
+00038: 124  notearg
+00039: 124  call 0
+00042: 124  setlocal 1
+00045: 124  pop
+00046: 126  getlocal 0
+00049: 126  dup
+00050: 126  callprop "setVisible"
+00055: 126  swap
+00056: 126  notearg
+00057: 126  getlocal 1
+00060: 126  notearg
+00061: 126  call 1
+00064: 126  pop
+00065: 126  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/BaseView.js:121 ---

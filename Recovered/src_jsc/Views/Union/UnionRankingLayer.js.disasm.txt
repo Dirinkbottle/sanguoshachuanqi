@@ -1,0 +1,2067 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Union/UnionRankingLayer.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=415 object[0]
+;; FUNCTION-MAP kind=lambda offset=425 object[1]
+;; FUNCTION-MAP kind=lambda offset=435 object[2]
+;; FUNCTION-MAP kind=lambda offset=445 object[3]
+;; FUNCTION-MAP kind=lambda offset=455 object[4]
+;; FUNCTION-MAP kind=lambda offset=465 object[5]
+;; FUNCTION-MAP kind=lambda offset=475 object[6]
+;; FUNCTION-MAP kind=lambda offset=485 object[7]
+;; FUNCTION-MAP kind=lambda offset=495 object[8]
+;; FUNCTION-MAP kind=lambda offset=505 object[9]
+;; FUNCTION-MAP kind=lambda offset=515 object[10]
+;; FUNCTION-MAP kind=lambda offset=556 object[11]
+;; FUNCTION-MAP kind=lambda offset=615 object[12]
+;; FUNCTION-MAP kind=lambda offset=625 object[13]
+;; FUNCTION-MAP kind=lambda offset=635 object[14]
+;; FUNCTION-MAP kind=lambda offset=645 object[15]
+;; FUNCTION-MAP kind=lambda offset=655 object[16]
+;; FUNCTION-MAP kind=lambda offset=665 object[17]
+;; FUNCTION-MAP kind=lambda offset=675 object[18]
+;; FUNCTION-MAP kind=lambda offset=685 object[19]
+;; FUNCTION-MAP kind=lambda offset=695 object[20]
+;; FUNCTION-MAP kind=lambda offset=705 object[21]
+;; FUNCTION-MAP kind=lambda offset=715 object[22]
+;; FUNCTION-MAP kind=lambda offset=725 object[23]
+;; FUNCTION-MAP kind=lambda offset=735 object[24]
+;; FUNCTION-MAP kind=lambda offset=745 object[25]
+;; FUNCTION-MAP kind=lambda offset=755 object[26]
+;; FUNCTION-MAP kind=lambda offset=765 object[27]
+;; FUNCTION-MAP kind=lambda offset=806 object[28]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   2  name "xs"
+00005:   2  getprop "Views"
+00010:   2  getprop "Union"
+00015:   2  name "cc"
+00020:   2  getprop "TableViewCell"
+00025:   2  dup
+00026:   2  callprop "extend"
+00031:   2  swap
+00032:   2  notearg
+00033:   2  newinit 1
+00038:   3  newarray 6
+00042:   4  newinit 1
+00047:   4  string "m_nameLab"
+00052:   4  initprop "name"
+00057:   4  int8 2
+00059:   4  initprop "tag"
+00064:   4  string "ls"
+00069:   4  initprop "type"
+00074:   4  string "LS_yuanfenInf2"
+00079:   4  initprop "id"
+00084:   4  name "cc"
+00089:   4  dup
+00090:   4  callprop "p"
+00095:   4  swap
+00096:   4  notearg
+00097:   4  int8 -5
+00099:   4  notearg
+00100:   4  zero
+00101:   4  notearg
+00102:   4  call 2
+00105:   4  initprop "offset"
+00110:   4  endinit
+00111:   4  initelem_array 0
+00115:   5  newinit 1
+00120:   5  string "m_unionRank"
+00125:   5  initprop "name"
+00130:   5  one
+00131:   5  initprop "tag"
+00136:   5  string "ls"
+00141:   5  initprop "type"
+00146:   5  string "LS_TTPHnomb"
+00151:   5  initprop "id"
+00156:   5  endinit
+00157:   5  initelem_array 1
+00161:   6  newinit 1
+00166:   6  string "m_presidentName"
+00171:   6  initprop "name"
+00176:   6  int8 3
+00178:   6  initprop "tag"
+00183:   6  string "ls"
+00188:   6  initprop "type"
+00193:   6  string "LS_wujiangInf1"
+00198:   6  initprop "id"
+00203:   6  name "cc"
+00208:   6  dup
+00209:   6  callprop "p"
+00214:   6  swap
+00215:   6  notearg
+00216:   6  int8 20
+00218:   6  notearg
+00219:   6  zero
+00220:   6  notearg
+00221:   6  call 2
+00224:   6  initprop "offset"
+00229:   6  endinit
+00230:   6  initelem_array 2
+00234:   7  newinit 1
+00239:   7  string "m_unionLevel"
+00244:   7  initprop "name"
+00249:   7  int8 4
+00251:   7  initprop "tag"
+00256:   7  string "ls"
+00261:   7  initprop "type"
+00266:   7  string "LS_Lv"
+00271:   7  initprop "id"
+00276:   7  name "cc"
+00281:   7  dup
+00282:   7  callprop "p"
+00287:   7  swap
+00288:   7  notearg
+00289:   7  int8 40
+00291:   7  notearg
+00292:   7  int8 -2
+00294:   7  notearg
+00295:   7  call 2
+00298:   7  initprop "offset"
+00303:   7  endinit
+00304:   7  initelem_array 3
+00308:   8  newinit 1
+00313:   8  string "m_unionMemberNum"
+00318:   8  initprop "name"
+00323:   8  int8 5
+00325:   8  initprop "tag"
+00330:   8  string "ls"
+00335:   8  initprop "type"
+00340:   8  string "LS_wujiangName1"
+00345:   8  initprop "id"
+00350:   8  name "cc"
+00355:   8  dup
+00356:   8  callprop "p"
+00361:   8  swap
+00362:   8  notearg
+00363:   8  int8 55
+00365:   8  notearg
+00366:   8  int8 -4
+00368:   8  notearg
+00369:   8  call 2
+00372:   8  initprop "offset"
+00377:   8  endinit
+00378:   8  initelem_array 4
+00382:   9  newinit 1
+00387:   9  int8 6
+00389:   9  initprop "tag"
+00394:   9  string "m_unionLevelName"
+00399:   9  initprop "name"
+00404:   9  endinit
+00405:   9  initelem_array 5
+00409:   9  endinit
+00410:   9  initprop "ccbCfg"
+00415:  12  lambda (function () {
+    [sourceless code]
+})
+00420:  12  initprop "draw"
+00425:  15  lambda (function () {
+    [sourceless code]
+})
+00430:  15  initprop "ctor"
+00435:  19  lambda (function () {
+    [sourceless code]
+})
+00440:  19  initprop "init"
+00445:  71  lambda (function () {
+    [sourceless code]
+})
+00450:  71  initprop "onTouchCallBackToReject"
+00455:  75  lambda (function () {
+    [sourceless code]
+})
+00460:  75  initprop "onTouchCallBackToAgree"
+00465:  82  lambda (function () {
+    [sourceless code]
+})
+00470:  82  initprop "setBaseTouchPriority"
+00475:  87  lambda (function () {
+    [sourceless code]
+})
+00480:  87  initprop "setListener"
+00485:  91  lambda (function () {
+    [sourceless code]
+})
+00490:  91  initprop "onEnter"
+00495: 106  lambda (function () {
+    [sourceless code]
+})
+00500: 106  initprop "onExit"
+00505: 110  lambda (function () {
+    [sourceless code]
+})
+00510: 110  initprop "update"
+00515: 159  lambda (function () {
+    [sourceless code]
+})
+00520: 159  initprop "setRankTitle"
+00525: 159  endinit
+00526: 159  notearg
+00527: 159  call 1
+00530: 159  setprop "UnionRankingCell"
+00535: 159  popv
+00536: 202  name "xs"
+00541: 202  getprop "Views"
+00546: 202  getprop "Union"
+00551: 202  getprop "UnionRankingCell"
+00556: 202  lambda (function () {
+    [sourceless code]
+})
+00561: 202  setprop "create"
+00566: 202  popv
+00567: 220  name "xs"
+00572: 220  getprop "Views"
+00577: 220  getprop "Union"
+00582: 220  name "xs"
+00587: 220  getprop "Views"
+00592: 220  getprop "Union"
+00597: 220  getprop "UnionBaseLayer"
+00602: 220  dup
+00603: 220  callprop "extend"
+00608: 220  swap
+00609: 220  notearg
+00610: 220  newinit 1
+00615: 223  lambda (function () {
+    [sourceless code]
+})
+00620: 223  initprop "ctor"
+00625: 234  lambda (function () {
+    [sourceless code]
+})
+00630: 234  initprop "init"
+00635: 268  lambda (function () {
+    [sourceless code]
+})
+00640: 268  initprop "_readUnionList"
+00645: 304  lambda (function () {
+    [sourceless code]
+})
+00650: 304  initprop "refreshFromMenuClick"
+00655: 314  lambda (function () {
+    [sourceless code]
+})
+00660: 314  initprop "onEnterTransitionDidFinish"
+00665: 322  lambda (function () {
+    [sourceless code]
+})
+00670: 322  initprop "onExitTransitionDidStart"
+00675: 329  lambda (function () {
+    [sourceless code]
+})
+00680: 329  initprop "scrollViewDidScroll"
+00685: 332  lambda (function () {
+    [sourceless code]
+})
+00690: 332  initprop "scrollViewDidZoom"
+00695: 335  lambda (function () {
+    [sourceless code]
+})
+00700: 335  initprop "tableCellTouched"
+00705: 339  lambda (function () {
+    [sourceless code]
+})
+00710: 339  initprop "tableCellSizeForIndex"
+00715: 343  lambda (function () {
+    [sourceless code]
+})
+00720: 343  initprop "tableCellAtIndex"
+00725: 357  lambda (function () {
+    [sourceless code]
+})
+00730: 357  initprop "setBaseTouchPriority"
+00735: 364  lambda (function () {
+    [sourceless code]
+})
+00740: 364  initprop "numberOfCellsInTableView"
+00745: 369  lambda (function () {
+    [sourceless code]
+})
+00750: 369  initprop "scrollViewDidScroll"
+00755: 373  lambda (function () {
+    [sourceless code]
+})
+00760: 373  initprop "scrollViewDidZoom"
+00765: 377  lambda (function () {
+    [sourceless code]
+})
+00770: 377  initprop "tableCellTouched"
+00775: 377  endinit
+00776: 377  notearg
+00777: 377  call 1
+00780: 377  setprop "UnionRankingLayer"
+00785: 377  popv
+00786: 383  name "xs"
+00791: 383  getprop "Views"
+00796: 383  getprop "Union"
+00801: 383  getprop "UnionRankingLayer"
+00806: 383  lambda (function () {
+    [sourceless code]
+})
+00811: 383  setprop "create"
+00816: 383  popv
+00817: 389  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:1 ---
+;; function object[0] draw
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] ctx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "_super"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  getarg 0
+00012:  13  notearg
+00013:  13  call 1
+00016:  13  pop
+00017:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:12 ---
+;; function object[1] ctor
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  dup
+00002:  16  callprop "_super"
+00007:  16  swap
+00008:  16  notearg
+00009:  16  call 0
+00012:  16  pop
+00013:  17  name "cc"
+00018:  17  dup
+00019:  17  callprop "associateWithNative"
+00024:  17  swap
+00025:  17  notearg
+00026:  17  this
+00027:  17  notearg
+00028:  17  name "cc"
+00033:  17  getprop "TableViewCell"
+00038:  17  notearg
+00039:  17  call 2
+00042:  17  pop
+00043:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:15 ---
+;; function object[2] init
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] pos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:19 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  this
+00001:  20  dup
+00002:  20  callprop "_super"
+00007:  20  swap
+00008:  20  notearg
+00009:  20  call 0
+00012:  20  not
+00013:  20  ifeq 20 (+7)
+00018:  21  false
+00019:  21  return
+00020:  24  this
+00021:  24  zero
+00022:  24  setprop "m_baseTouchPriority"
+00027:  24  pop
+00028:  25  this
+00029:  25  null
+00030:  25  setprop "m_listener"
+00035:  25  pop
+00036:  27  this
+00037:  27  null
+00038:  27  setprop "m_ccbNode"
+00043:  27  pop
+00044:  28  this
+00045:  28  null
+00046:  28  setprop "m_nameLab"
+00051:  28  pop
+00052:  29  this
+00053:  29  null
+00054:  29  setprop "m_presidentName"
+00059:  29  pop
+00060:  30  this
+00061:  30  null
+00062:  30  setprop "m_unionLevel"
+00067:  30  pop
+00068:  31  this
+00069:  31  null
+00070:  31  setprop "m_unionRank"
+00075:  31  pop
+00076:  32  this
+00077:  32  null
+00078:  32  setprop "m_centerBtn"
+00083:  32  pop
+00084:  33  this
+00085:  33  null
+00086:  33  setprop "m_unionMemberNum"
+00091:  33  pop
+00092:  34  this
+00093:  34  null
+00094:  34  setprop "m_parentView"
+00099:  34  pop
+00100:  35  this
+00101:  35  null
+00102:  35  setprop "m_kuaFu_First"
+00107:  35  pop
+00108:  36  this
+00109:  36  null
+00110:  36  setprop "m_benFu_First"
+00115:  36  pop
+00116:  37  this
+00117:  37  null
+00118:  37  setprop "m_unionLevelName"
+00123:  37  pop
+00124:  39  this
+00125:  39  name "xs"
+00130:  39  getprop "ccb_reader"
+00135:  39  dup
+00136:  39  callprop "load"
+00141:  39  swap
+00142:  39  notearg
+00143:  39  name "xs"
+00148:  39  getprop "Cfg"
+00153:  39  getprop "CCBI"
+00158:  39  getprop "UnionRankingCell"
+00163:  39  notearg
+00164:  39  this
+00165:  39  notearg
+00166:  39  call 2
+00169:  39  setprop "m_ccbNode"
+00174:  39  pop
+00175:  40  name "xs"
+00180:  40  getprop "Utils"
+00185:  40  getprop "Node"
+00190:  40  dup
+00191:  40  callprop "attachNodes"
+00196:  40  swap
+00197:  40  notearg
+00198:  40  this
+00199:  40  notearg
+00200:  40  this
+00201:  40  getprop "m_ccbNode"
+00206:  40  notearg
+00207:  40  call 2
+00210:  40  pop
+00211:  42  name "xs"
+00216:  42  getprop "Utils"
+00221:  42  getprop "UI"
+00226:  42  dup
+00227:  42  callprop "replaceCcbByCfg"
+00232:  42  swap
+00233:  42  notearg
+00234:  42  this
+00235:  42  getprop "m_ccbNode"
+00240:  42  notearg
+00241:  42  this
+00242:  42  getprop "ccbCfg"
+00247:  42  notearg
+00248:  42  this
+00249:  42  notearg
+00250:  42  call 3
+00253:  42  pop
+00254:  44  this
+00255:  44  getprop "m_unionLevelName"
+00260:  44  dup
+00261:  44  callprop "getPosition"
+00266:  44  swap
+00267:  44  notearg
+00268:  44  call 0
+00271:  44  setlocal 0
+00274:  44  pop
+00275:  45  this
+00276:  45  getprop "m_unionLevelName"
+00281:  45  dup
+00282:  45  callprop "setPosition"
+00287:  45  swap
+00288:  45  notearg
+00289:  45  name "cc"
+00294:  45  dup
+00295:  45  callprop "p"
+00300:  45  swap
+00301:  45  notearg
+00302:  45  getlocal 0
+00305:  45  getprop "x"
+00310:  45  int8 58
+00312:  45  add
+00313:  45  notearg
+00314:  45  getlocal 0
+00317:  45  getprop "y"
+00322:  45  zero
+00323:  45  add
+00324:  45  notearg
+00325:  45  call 2
+00328:  45  notearg
+00329:  45  call 1
+00332:  45  pop
+00333:  47  name "xs"
+00338:  47  dup
+00339:  47  callprop "log_hsq"
+00344:  47  swap
+00345:  47  notearg
+00346:  47  string "m_kuaFu_First!!"
+00351:  47  notearg
+00352:  47  call 1
+00355:  47  pop
+00356:  49  this
+00357:  49  name "xs"
+00362:  49  getprop "Factorys"
+00367:  49  getprop "Sprite"
+00372:  49  dup
+00373:  49  callprop "create"
+00378:  49  swap
+00379:  49  notearg
+00380:  49  string "GuildDialog_kuaFuFirst"
+00385:  49  notearg
+00386:  49  string "GuildDialog"
+00391:  49  notearg
+00392:  49  call 2
+00395:  49  setprop "m_kuaFu_First"
+00400:  49  pop
+00401:  50  this
+00402:  50  getprop "m_kuaFu_First"
+00407:  50  dup
+00408:  50  callprop "setScale"
+00413:  50  swap
+00414:  50  notearg
+00415:  50  double 0.6
+00420:  50  notearg
+00421:  50  call 1
+00424:  50  pop
+00425:  51  this
+00426:  51  getprop "m_kuaFu_First"
+00431:  51  dup
+00432:  51  callprop "setVisible"
+00437:  51  swap
+00438:  51  notearg
+00439:  51  false
+00440:  51  notearg
+00441:  51  call 1
+00444:  51  pop
+00445:  52  this
+00446:  52  getprop "m_kuaFu_First"
+00451:  52  dup
+00452:  52  callprop "setPosition"
+00457:  52  swap
+00458:  52  notearg
+00459:  52  name "cc"
+00464:  52  dup
+00465:  52  callprop "p"
+00470:  52  swap
+00471:  52  notearg
+00472:  52  uint16 830
+00475:  52  notearg
+00476:  52  int8 50
+00478:  52  notearg
+00479:  52  call 2
+00482:  52  notearg
+00483:  52  call 1
+00486:  52  pop
+00487:  53  this
+00488:  53  dup
+00489:  53  callprop "addChild"
+00494:  53  swap
+00495:  53  notearg
+00496:  53  this
+00497:  53  getprop "m_kuaFu_First"
+00502:  53  notearg
+00503:  53  call 1
+00506:  53  pop
+00507:  55  this
+00508:  55  name "xs"
+00513:  55  getprop "Factorys"
+00518:  55  getprop "Sprite"
+00523:  55  dup
+00524:  55  callprop "create"
+00529:  55  swap
+00530:  55  notearg
+00531:  55  string "GuildDialog_benFuFirst"
+00536:  55  notearg
+00537:  55  string "GuildDialog"
+00542:  55  notearg
+00543:  55  call 2
+00546:  55  setprop "m_benFu_First"
+00551:  55  pop
+00552:  56  this
+00553:  56  getprop "m_benFu_First"
+00558:  56  dup
+00559:  56  callprop "setScale"
+00564:  56  swap
+00565:  56  notearg
+00566:  56  double 0.6
+00571:  56  notearg
+00572:  56  call 1
+00575:  56  pop
+00576:  57  this
+00577:  57  getprop "m_benFu_First"
+00582:  57  dup
+00583:  57  callprop "setVisible"
+00588:  57  swap
+00589:  57  notearg
+00590:  57  false
+00591:  57  notearg
+00592:  57  call 1
+00595:  57  pop
+00596:  58  this
+00597:  58  getprop "m_benFu_First"
+00602:  58  dup
+00603:  58  callprop "setPosition"
+00608:  58  swap
+00609:  58  notearg
+00610:  58  name "cc"
+00615:  58  dup
+00616:  58  callprop "p"
+00621:  58  swap
+00622:  58  notearg
+00623:  58  uint16 830
+00626:  58  notearg
+00627:  58  int8 50
+00629:  58  notearg
+00630:  58  call 2
+00633:  58  notearg
+00634:  58  call 1
+00637:  58  pop
+00638:  59  this
+00639:  59  dup
+00640:  59  callprop "addChild"
+00645:  59  swap
+00646:  59  notearg
+00647:  59  this
+00648:  59  getprop "m_benFu_First"
+00653:  59  notearg
+00654:  59  call 1
+00657:  59  pop
+00658:  62  this
+00659:  62  getprop "m_nameLab"
+00664:  62  dup
+00665:  62  callprop "setAnchorPoint"
+00670:  62  swap
+00671:  62  notearg
+00672:  62  name "xs"
+00677:  62  getprop "ap_lc"
+00682:  62  notearg
+00683:  62  call 1
+00686:  62  pop
+00687:  64  this
+00688:  64  getprop "m_presidentName"
+00693:  64  dup
+00694:  64  callprop "setAnchorPoint"
+00699:  64  swap
+00700:  64  notearg
+00701:  64  name "xs"
+00706:  64  getprop "ap_lc"
+00711:  64  notearg
+00712:  64  call 1
+00715:  64  pop
+00716:  65  this
+00717:  65  getprop "m_unionLevel"
+00722:  65  dup
+00723:  65  callprop "setAnchorPoint"
+00728:  65  swap
+00729:  65  notearg
+00730:  65  name "xs"
+00735:  65  getprop "ap_lc"
+00740:  65  notearg
+00741:  65  call 1
+00744:  65  pop
+00745:  68  true
+00746:  68  return
+00747:  68  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:19 ---
+;; function object[3] onTouchCallBackToReject
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:71 ---
+loc   line  op
+----- ----  --
+main:
+00000:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:71 ---
+;; function object[4] onTouchCallBackToAgree
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:75 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:75 ---
+;; function object[5] setBaseTouchPriority
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:82 ---
+loc   line  op
+----- ----  --
+main:
+00000:  83  this
+00001:  83  getarg 0
+00004:  83  setprop "m_baseTouchPriority"
+00009:  83  pop
+00010:  83  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:82 ---
+;; function object[6] setListener
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] listener
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:87 ---
+loc   line  op
+----- ----  --
+main:
+00000:  88  this
+00001:  88  getarg 0
+00004:  88  setprop "m_listener"
+00009:  88  pop
+00010:  88  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:87 ---
+;; function object[7] onEnter
+;; function metadata object[7] nargs=0 bindings=2
+;; local[0] parent
+;; local[1] touchPriority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:91 ---
+loc   line  op
+----- ----  --
+main:
+00000:  92  this
+00001:  92  dup
+00002:  92  callprop "_super"
+00007:  92  swap
+00008:  92  notearg
+00009:  92  call 0
+00012:  92  pop
+00013:  94  this
+00014:  94  dup
+00015:  94  callprop "getParent"
+00020:  94  swap
+00021:  94  notearg
+00022:  94  call 0
+00025:  94  setlocal 0
+00028:  94  pop
+00029:  95  goto 122 (+93)
+00034:  96  loophead
+00035:  96  getlocal 0
+00038:  96  name "cc"
+00043:  96  getprop "TableView"
+00048:  96  instanceof
+00049:  96  ifeq 104 (+55)
+00054:  97  this
+00055:  97  getlocal 0
+00058:  97  setprop "m_parentView"
+00063:  97  pop
+00064:  98  getlocal 0
+00067:  98  dup
+00068:  98  callprop "getTouchPriority"
+00073:  98  swap
+00074:  98  notearg
+00075:  98  call 0
+00078:  98  setlocal 1
+00081:  98  pop
+00082: 100  this
+00083: 100  dup
+00084: 100  callprop "setBaseTouchPriority"
+00089: 100  swap
+00090: 100  notearg
+00091: 100  getlocal 1
+00094: 100  notearg
+00095: 100  call 1
+00098: 100  pop
+00099: 101  goto 131 (+32)
+00104: 103  getlocal 0
+00107: 103  dup
+00108: 103  callprop "getParent"
+00113: 103  swap
+00114: 103  notearg
+00115: 103  call 0
+00118: 103  setlocal 0
+00121: 103  pop
+00122:  95  loopentry
+00123:  95  getlocal 0
+00126:  95  ifne 34 (-92)
+00131: 104  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:91 ---
+;; function object[8] onExit
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:106 ---
+loc   line  op
+----- ----  --
+main:
+00000: 107  this
+00001: 107  dup
+00002: 107  callprop "_super"
+00007: 107  swap
+00008: 107  notearg
+00009: 107  call 0
+00012: 107  pop
+00013: 107  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:106 ---
+;; function object[9] update
+;; function metadata object[9] nargs=2 bindings=5
+;; arg[0] par
+;; arg[1] num
+;; local[0] mName
+;; local[1] m_president
+;; local[2] isWarRank
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:110 ---
+loc   line  op
+----- ----  --
+main:
+00000: 111  this
+00001: 111  getarg 0
+00004: 111  setprop "par"
+00009: 111  pop
+00010: 112  this
+00011: 112  getarg 1
+00014: 112  setprop "num"
+00019: 112  pop
+00020: 117  this
+00021: 117  getprop "m_nameLab"
+00026: 117  dup
+00027: 117  callprop "setString"
+00032: 117  swap
+00033: 117  notearg
+00034: 117  this
+00035: 117  getprop "par"
+00040: 117  getprop "m_unionList"
+00045: 117  getarg 1
+00048: 117  getelem
+00049: 117  getprop "union_name"
+00054: 117  or 65 (+11)
+00059: 117  pop
+00060: 117  string ""
+00065: 117  notearg
+00066: 117  call 1
+00069: 117  pop
+00070: 119  this
+00071: 119  dup
+00072: 119  callprop "setRankTitle"
+00077: 119  swap
+00078: 119  notearg
+00079: 119  this
+00080: 119  getprop "par"
+00085: 119  getprop "m_unionList"
+00090: 119  getarg 1
+00093: 119  getelem
+00094: 119  getprop "rank"
+00099: 119  or 107 (+8)
+00104: 119  pop
+00105: 119  int8 99
+00107: 119  notearg
+00108: 119  one
+00109: 119  notearg
+00110: 119  call 2
+00113: 119  pop
+00114: 121  this
+00115: 121  getprop "par"
+00120: 121  getprop "m_unionList"
+00125: 121  getarg 1
+00128: 121  getelem
+00129: 121  getprop "leader_nickname"
+00134: 121  or 145 (+11)
+00139: 121  pop
+00140: 121  string ""
+00145: 121  setlocal 0
+00148: 121  pop
+00149: 122  getlocal 0
+00152: 122  length "length"
+00157: 122  int8 8
+00159: 122  gt
+00160: 122  ifeq 195 (+35)
+00165: 122  getlocal 0
+00168: 122  dup
+00169: 122  callprop "substring"
+00174: 122  swap
+00175: 122  notearg
+00176: 122  zero
+00177: 122  notearg
+00178: 122  int8 7
+00180: 122  notearg
+00181: 122  call 2
+00184: 122  string "..."
+00189: 122  add
+00190: 122  goto 198 (+8)
+00195: 122  getlocal 0
+00198: 122  setlocal 1
+00201: 122  pop
+00202: 123  getlocal 1
+00205: 123  ifeq 270 (+65)
+00210: 124  this
+00211: 124  getprop "m_presidentName"
+00216: 124  dup
+00217: 124  callprop "setString"
+00222: 124  swap
+00223: 124  notearg
+00224: 124  name "xs"
+00229: 124  getprop "Tools"
+00234: 124  getprop "String"
+00239: 124  dup
+00240: 124  callprop "createString"
+00245: 124  swap
+00246: 124  notearg
+00247: 124  string "auto_name_545"
+00252: 124  notearg
+00253: 124  call 1
+00256: 124  getlocal 1
+00259: 124  add
+00260: 124  notearg
+00261: 124  call 1
+00264: 124  pop
+00265: 124  goto 294 (+29)
+00270: 127  this
+00271: 127  getprop "m_presidentName"
+00276: 127  dup
+00277: 127  callprop "setString"
+00282: 127  swap
+00283: 127  notearg
+00284: 127  string ""
+00289: 127  notearg
+00290: 127  call 1
+00293: 127  pop
+00294: 131  this
+00295: 131  getprop "m_unionLevel"
+00300: 131  dup
+00301: 131  callprop "setString"
+00306: 131  swap
+00307: 131  notearg
+00308: 131  this
+00309: 131  getprop "par"
+00314: 131  getprop "m_unionList"
+00319: 131  getarg 1
+00322: 131  getelem
+00323: 131  getprop "union_level"
+00328: 131  or 339 (+11)
+00333: 131  pop
+00334: 131  string "0"
+00339: 131  notearg
+00340: 131  call 1
+00343: 131  pop
+00344: 132  this
+00345: 132  getprop "m_unionMemberNum"
+00350: 132  dup
+00351: 132  callprop "setString"
+00356: 132  swap
+00357: 132  notearg
+00358: 133  this
+00359: 133  getprop "par"
+00364: 133  getprop "m_unionList"
+00369: 133  getarg 1
+00372: 133  getelem
+00373: 133  getprop "user_num"
+00378: 133  or 389 (+11)
+00383: 133  pop
+00384: 133  string "0"
+00389: 133  string "/"
+00394: 133  add
+00395: 134  this
+00396: 134  getprop "par"
+00401: 134  getprop "m_unionList"
+00406: 134  getarg 1
+00409: 134  getelem
+00410: 134  getprop "user_limit"
+00415: 134  or 426 (+11)
+00420: 134  pop
+00421: 134  string "0"
+00426: 134  add
+00427: 134  notearg
+00428: 134  call 1
+00431: 134  pop
+00432: 137  this
+00433: 137  getprop "par"
+00438: 137  getprop "m_unionList"
+00443: 137  getarg 1
+00446: 137  getelem
+00447: 137  getprop "war_rank"
+00452: 137  or 459 (+7)
+00457: 137  pop
+00458: 137  zero
+00459: 137  setlocal 2
+00462: 137  pop
+00463: 140  getlocal 2
+00466: 140  name "xs"
+00471: 140  getprop "Constant_UnionRank_kuaFu_First"
+00476: 140  eq
+00477: 140  ifeq 507 (+30)
+00482: 141  this
+00483: 141  getprop "m_kuaFu_First"
+00488: 141  dup
+00489: 141  callprop "setVisible"
+00494: 141  swap
+00495: 141  notearg
+00496: 141  true
+00497: 141  notearg
+00498: 141  call 1
+00501: 141  pop
+00502: 141  goto 591 (+89)
+00507: 142  getlocal 2
+00510: 142  name "xs"
+00515: 142  getprop "Constant_UnionRank_benFu_First"
+00520: 142  eq
+00521: 142  ifeq 551 (+30)
+00526: 143  this
+00527: 143  getprop "m_benFu_First"
+00532: 143  dup
+00533: 143  callprop "setVisible"
+00538: 143  swap
+00539: 143  notearg
+00540: 143  true
+00541: 143  notearg
+00542: 143  call 1
+00545: 143  pop
+00546: 143  goto 591 (+45)
+00551: 145  this
+00552: 145  getprop "m_benFu_First"
+00557: 145  dup
+00558: 145  callprop "setVisible"
+00563: 145  swap
+00564: 145  notearg
+00565: 145  false
+00566: 145  notearg
+00567: 145  call 1
+00570: 145  pop
+00571: 146  this
+00572: 146  getprop "m_kuaFu_First"
+00577: 146  dup
+00578: 146  callprop "setVisible"
+00583: 146  swap
+00584: 146  notearg
+00585: 146  false
+00586: 146  notearg
+00587: 146  call 1
+00590: 146  pop
+00591: 147  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:110 ---
+;; function object[10] setRankTitle
+;; function metadata object[10] nargs=2 bindings=5
+;; arg[0] rank
+;; arg[1] tag
+;; local[0] ranking
+;; local[1] labelPos
+;; local[2] labelAp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:159 ---
+loc   line  op
+----- ----  --
+main:
+00000: 160  name "xs"
+00005: 160  dup
+00006: 160  callprop "log"
+00011: 160  swap
+00012: 160  notearg
+00013: 160  string "ClimbLadderTableViewCell setRankTitle is "
+00018: 160  getarg 0
+00021: 160  add
+00022: 160  notearg
+00023: 160  call 1
+00026: 160  pop
+00027: 161  name "xs"
+00032: 161  getprop "Utils"
+00037: 161  dup
+00038: 161  callprop "parseIntSafe"
+00043: 161  swap
+00044: 161  notearg
+00045: 161  getarg 0
+00048: 161  notearg
+00049: 161  call 1
+00052: 161  setlocal 0
+00055: 161  pop
+00056: 162  this
+00057: 162  this
+00058: 162  getprop "m_ccbNode"
+00063: 162  dup
+00064: 162  callprop "getChildByTag"
+00069: 162  swap
+00070: 162  notearg
+00071: 162  getarg 1
+00074: 162  notearg
+00075: 162  call 1
+00078: 162  setprop "m_ranking"
+00083: 162  pop
+00084: 163  getlocal 0
+00087: 163  int8 3
+00089: 163  le
+00090: 163  ifeq 508 (+418)
+00095: 164  this
+00096: 164  getprop "m_ranking"
+00101: 164  dup
+00102: 164  callprop "setVisible"
+00107: 164  swap
+00108: 164  notearg
+00109: 164  false
+00110: 164  notearg
+00111: 164  call 1
+00114: 164  pop
+00115: 165  this
+00116: 165  getprop "m_ranking"
+00121: 165  dup
+00122: 165  callprop "getPosition"
+00127: 165  swap
+00128: 165  notearg
+00129: 165  call 0
+00132: 165  setlocal 1
+00135: 165  pop
+00136: 166  this
+00137: 166  getprop "m_ranking"
+00142: 166  dup
+00143: 166  callprop "getAnchorPoint"
+00148: 166  swap
+00149: 166  notearg
+00150: 166  call 0
+00153: 166  setlocal 2
+00156: 166  pop
+00157: 167  this
+00158: 167  getprop "m_rankingSprite"
+00163: 167  ifeq 202 (+39)
+00168: 168  name "xs"
+00173: 168  getprop "Utils"
+00178: 168  getprop "Node"
+00183: 168  dup
+00184: 168  callprop "safeRemoveChild"
+00189: 168  swap
+00190: 168  notearg
+00191: 168  this
+00192: 168  getprop "m_rankingSprite"
+00197: 168  notearg
+00198: 168  call 1
+00201: 168  pop
+00202: 170  getlocal 0
+00205: 170  tableswitch defaultOffset 175 low 1 high 3
+	1: 25
+	2: 75
+	3: 125
+00230: 172  this
+00231: 172  name "xs"
+00236: 172  getprop "Factorys"
+00241: 172  getprop "Sprite"
+00246: 172  dup
+00247: 172  callprop "create"
+00252: 172  swap
+00253: 172  notearg
+00254: 172  string "Cmn01_Ladder_First"
+00259: 172  notearg
+00260: 172  string "Cmn01"
+00265: 172  notearg
+00266: 172  call 2
+00269: 172  setprop "m_rankingSprite"
+00274: 172  pop
+00275: 173  goto 414 (+139)
+00280: 175  this
+00281: 175  name "xs"
+00286: 175  getprop "Factorys"
+00291: 175  getprop "Sprite"
+00296: 175  dup
+00297: 175  callprop "create"
+00302: 175  swap
+00303: 175  notearg
+00304: 175  string "Cmn01_Ladder_Second"
+00309: 175  notearg
+00310: 175  string "Cmn01"
+00315: 175  notearg
+00316: 175  call 2
+00319: 175  setprop "m_rankingSprite"
+00324: 175  pop
+00325: 176  goto 414 (+89)
+00330: 178  this
+00331: 178  name "xs"
+00336: 178  getprop "Factorys"
+00341: 178  getprop "Sprite"
+00346: 178  dup
+00347: 178  callprop "create"
+00352: 178  swap
+00353: 178  notearg
+00354: 178  string "Cmn01_Ladder_Third"
+00359: 178  notearg
+00360: 178  string "Cmn01"
+00365: 178  notearg
+00366: 178  call 2
+00369: 178  setprop "m_rankingSprite"
+00374: 178  pop
+00375: 179  goto 414 (+39)
+00380: 181  name "xs"
+00385: 181  dup
+00386: 181  callprop "assert"
+00391: 181  swap
+00392: 181  notearg
+00393: 181  false
+00394: 181  notearg
+00395: 181  string "ranking is error!"
+00400: 181  notearg
+00401: 181  getlocal 0
+00404: 181  notearg
+00405: 181  call 3
+00408: 181  pop
+00409: 182  goto 414 (+5)
+00414: 184  this
+00415: 184  getprop "m_rankingSprite"
+00420: 184  dup
+00421: 184  callprop "setPosition"
+00426: 184  swap
+00427: 184  notearg
+00428: 184  getlocal 1
+00431: 184  notearg
+00432: 184  call 1
+00435: 184  pop
+00436: 185  this
+00437: 185  getprop "m_rankingSprite"
+00442: 185  dup
+00443: 185  callprop "setAnchorPoint"
+00448: 185  swap
+00449: 185  notearg
+00450: 185  getlocal 2
+00453: 185  notearg
+00454: 185  call 1
+00457: 185  pop
+00458: 187  this
+00459: 187  getprop "m_rankingSprite"
+00464: 187  dup
+00465: 187  callprop "setVisible"
+00470: 187  swap
+00471: 187  notearg
+00472: 187  true
+00473: 187  notearg
+00474: 187  call 1
+00477: 187  pop
+00478: 188  this
+00479: 188  getprop "m_ccbNode"
+00484: 188  dup
+00485: 188  callprop "addChild"
+00490: 188  swap
+00491: 188  notearg
+00492: 188  this
+00493: 188  getprop "m_rankingSprite"
+00498: 188  notearg
+00499: 188  call 1
+00502: 188  pop
+00503: 188  goto 587 (+84)
+00508: 190  this
+00509: 190  getprop "m_ranking"
+00514: 190  dup
+00515: 190  callprop "setVisible"
+00520: 190  swap
+00521: 190  notearg
+00522: 190  true
+00523: 190  notearg
+00524: 190  call 1
+00527: 190  pop
+00528: 191  this
+00529: 191  getprop "m_rankingSprite"
+00534: 191  ifeq 559 (+25)
+00539: 192  this
+00540: 192  getprop "m_rankingSprite"
+00545: 192  dup
+00546: 192  callprop "setVisible"
+00551: 192  swap
+00552: 192  notearg
+00553: 192  false
+00554: 192  notearg
+00555: 192  call 1
+00558: 192  pop
+00559: 194  this
+00560: 194  getprop "m_ranking"
+00565: 194  dup
+00566: 194  callprop "setString"
+00571: 194  swap
+00572: 194  notearg
+00573: 194  getarg 0
+00576: 194  string ""
+00581: 194  add
+00582: 194  notearg
+00583: 194  call 1
+00586: 194  pop
+00587: 195  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:159 ---
+;; function object[11] create
+;; function metadata object[11] nargs=0 bindings=1
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:202 ---
+loc   line  op
+----- ----  --
+main:
+00000: 203  name "xs"
+00005: 203  getprop "Views"
+00010: 203  getprop "Union"
+00015: 203  getprop "UnionRankingCell"
+00020: 203  undefined
+00021: 203  notearg
+00022: 203  new 0
+00025: 203  setlocal 0
+00028: 203  pop
+00029: 204  getlocal 0
+00032: 204  and 52 (+20)
+00037: 204  pop
+00038: 204  getlocal 0
+00041: 204  dup
+00042: 204  callprop "init"
+00047: 204  swap
+00048: 204  notearg
+00049: 204  call 0
+00052: 204  ifeq 61 (+9)
+00057: 205  getlocal 0
+00060: 205  return
+00061: 208  null
+00062: 208  return
+00063: 208  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:202 ---
+;; function object[12] ctor
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:223 ---
+loc   line  op
+----- ----  --
+main:
+00000: 224  this
+00001: 224  dup
+00002: 224  callprop "_super"
+00007: 224  swap
+00008: 224  notearg
+00009: 224  call 0
+00012: 224  pop
+00013: 225  name "cc"
+00018: 225  dup
+00019: 225  callprop "associateWithNative"
+00024: 225  swap
+00025: 225  notearg
+00026: 225  this
+00027: 225  notearg
+00028: 225  name "cc"
+00033: 225  getprop "Layer"
+00038: 225  notearg
+00039: 225  call 2
+00042: 225  pop
+00043: 225  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:223 ---
+;; function object[13] init
+;; function metadata object[13] nargs=0 bindings=1
+;; local[0] winSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:234 ---
+loc   line  op
+----- ----  --
+main:
+00000: 235  this
+00001: 235  dup
+00002: 235  callprop "_super"
+00007: 235  swap
+00008: 235  notearg
+00009: 235  call 0
+00012: 235  pop
+00013: 236  this
+00014: 236  newarray 0
+00018: 236  endinit
+00019: 236  setprop "m_unionList"
+00024: 236  pop
+00025: 237  name "xs"
+00030: 237  getprop "director"
+00035: 237  dup
+00036: 237  callprop "getVisibleSize"
+00041: 237  swap
+00042: 237  notearg
+00043: 237  call 0
+00046: 237  setlocal 0
+00049: 237  pop
+00050: 240  this
+00051: 240  name "cc"
+00056: 240  dup
+00057: 240  callprop "size"
+00062: 240  swap
+00063: 240  notearg
+00064: 240  uint16 891
+00067: 240  notearg
+00068: 240  uint16 420
+00071: 240  notearg
+00072: 240  call 2
+00075: 240  setprop "m_defaultSize"
+00080: 240  pop
+00081: 242  this
+00082: 242  name "cc"
+00087: 242  getprop "Scale9Sprite"
+00092: 242  dup
+00093: 242  callprop "createWithSpriteFrameName"
+00098: 242  swap
+00099: 242  notearg
+00100: 242  name "xs"
+00105: 242  getprop "Cfg"
+00110: 242  getprop "Sprite"
+00115: 242  getprop "Cmn01"
+00120: 242  getprop "popView_contentBg02"
+00125: 242  getprop "frameName"
+00130: 242  notearg
+00131: 242  call 1
+00134: 242  setprop "m_bg"
+00139: 242  pop
+00140: 243  this
+00141: 243  getprop "m_bg"
+00146: 243  dup
+00147: 243  callprop "setAnchorPoint"
+00152: 243  swap
+00153: 243  notearg
+00154: 243  name "cc"
+00159: 243  dup
+00160: 243  callprop "p"
+00165: 243  swap
+00166: 243  notearg
+00167: 243  zero
+00168: 243  notearg
+00169: 243  zero
+00170: 243  notearg
+00171: 243  call 2
+00174: 243  notearg
+00175: 243  call 1
+00178: 243  pop
+00179: 244  this
+00180: 244  getprop "m_bg"
+00185: 244  dup
+00186: 244  callprop "setContentSize"
+00191: 244  swap
+00192: 244  notearg
+00193: 244  this
+00194: 244  getprop "m_defaultSize"
+00199: 244  notearg
+00200: 244  call 1
+00203: 244  pop
+00204: 246  name "xs"
+00209: 246  getprop "Utils"
+00214: 246  getprop "Node"
+00219: 246  dup
+00220: 246  callprop "attachNodes"
+00225: 246  swap
+00226: 246  notearg
+00227: 246  this
+00228: 246  notearg
+00229: 246  this
+00230: 246  getprop "m_bg"
+00235: 246  notearg
+00236: 246  newinit 1
+00241: 246  string "lb"
+00246: 246  initprop "desc"
+00251: 246  newinit 1
+00256: 246  int8 -8
+00258: 246  initprop "x"
+00263: 246  zero
+00264: 246  initprop "y"
+00269: 246  endinit
+00270: 246  initprop "offset"
+00275: 246  endinit
+00276: 246  notearg
+00277: 246  call 3
+00280: 246  pop
+00281: 250  this
+00282: 250  name "cc"
+00287: 250  getprop "TableView"
+00292: 250  dup
+00293: 250  callprop "create"
+00298: 250  swap
+00299: 250  notearg
+00300: 250  this
+00301: 250  notearg
+00302: 250  name "cc"
+00307: 250  dup
+00308: 250  callprop "size"
+00313: 250  swap
+00314: 250  notearg
+00315: 250  uint16 882
+00318: 250  notearg
+00319: 250  this
+00320: 250  getprop "m_defaultSize"
+00325: 250  getprop "height"
+00330: 250  double 0.95
+00335: 250  mul
+00336: 250  notearg
+00337: 250  call 2
+00340: 250  notearg
+00341: 250  call 2
+00344: 250  setprop "m_tableView"
+00349: 250  pop
+00350: 251  this
+00351: 251  getprop "m_tableView"
+00356: 251  dup
+00357: 251  callprop "setDirection"
+00362: 251  swap
+00363: 251  notearg
+00364: 251  name "cc"
+00369: 251  getprop "SCROLLVIEW_DIRECTION_VERTICAL"
+00374: 251  notearg
+00375: 251  call 1
+00378: 251  pop
+00379: 252  this
+00380: 252  getprop "m_tableView"
+00385: 252  dup
+00386: 252  callprop "setPosition"
+00391: 252  swap
+00392: 252  notearg
+00393: 252  name "cc"
+00398: 252  dup
+00399: 252  callprop "p"
+00404: 252  swap
+00405: 252  notearg
+00406: 252  int8 5
+00408: 252  notearg
+00409: 252  int8 11
+00411: 252  notearg
+00412: 252  call 2
+00415: 252  notearg
+00416: 252  call 1
+00419: 252  pop
+00420: 253  this
+00421: 253  getprop "m_tableView"
+00426: 253  dup
+00427: 253  callprop "setDelegate"
+00432: 253  swap
+00433: 253  notearg
+00434: 253  this
+00435: 253  notearg
+00436: 253  call 1
+00439: 253  pop
+00440: 257  this
+00441: 257  getprop "m_tableView"
+00446: 257  dup
+00447: 257  callprop "setVerticalFillOrder"
+00452: 257  swap
+00453: 257  notearg
+00454: 257  name "cc"
+00459: 257  getprop "TABLEVIEW_FILL_TOPDOWN"
+00464: 257  notearg
+00465: 257  call 1
+00468: 257  pop
+00469: 258  this
+00470: 258  getprop "m_bg"
+00475: 258  dup
+00476: 258  callprop "addChild"
+00481: 258  swap
+00482: 258  notearg
+00483: 258  this
+00484: 258  getprop "m_tableView"
+00489: 258  notearg
+00490: 258  call 1
+00493: 258  pop
+00494: 261  this
+00495: 261  getprop "m_tableView"
+00500: 261  dup
+00501: 261  callprop "reloadData"
+00506: 261  swap
+00507: 261  notearg
+00508: 261  call 0
+00511: 261  pop
+00512: 264  true
+00513: 264  return
+00514: 264  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:234 ---
+;; function object[14] _readUnionList
+;; function metadata object[14] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=116 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:268 ---
+loc   line  op
+----- ----  --
+main:
+00000: 270  name "xs"
+00005: 270  dup
+00006: 270  callprop "log"
+00011: 270  swap
+00012: 270  notearg
+00013: 270  string "m_4:"
+00018: 270  notearg
+00019: 270  call 1
+00022: 270  pop
+00023: 272  name "xs"
+00028: 272  getprop "Tools"
+00033: 272  getprop "Net"
+00038: 272  dup
+00039: 272  callprop "requestUnionRankList"
+00044: 272  swap
+00045: 272  notearg
+00046: 272  newinit 1
+00051: 273  name "xs"
+00056: 273  getprop "Profile"
+00061: 273  getprop "GameData"
+00066: 273  getprop "Mgr"
+00071: 273  dup
+00072: 273  callprop "getInstance"
+00077: 273  swap
+00078: 273  notearg
+00079: 273  call 0
+00082: 273  getprop "Player"
+00087: 273  dup
+00088: 273  callprop "getPlayer"
+00093: 273  swap
+00094: 273  notearg
+00095: 273  call 0
+00098: 273  dup
+00099: 273  callprop "getPlayerId"
+00104: 273  swap
+00105: 273  notearg
+00106: 273  call 0
+00109: 273  initprop "user_id"
+00114: 273  endinit
+00115: 273  notearg
+00116: 275  lambda (function () {
+    [sourceless code]
+})
+00121: 275  dup
+00122: 275  callprop "bind"
+00127: 275  swap
+00128: 275  notearg
+00129: 299  this
+00130: 299  notearg
+00131: 299  call 1
+00134: 299  notearg
+00135: 300  this
+00136: 300  notearg
+00137: 300  call 3
+00140: 300  pop
+00141: 300  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:268 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=3
+;; arg[0] data
+;; local[0] mList
+;; local[1] i
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:275 ---
+loc   line  op
+----- ----  --
+main:
+00000: 279  getarg 0
+00003: 279  getprop "return_info"
+00008: 279  setlocal 0
+00011: 279  pop
+00012: 283  this
+00013: 283  getlocal 0
+00016: 283  setprop "m_unionList"
+00021: 283  pop
+00022: 285  this
+00023: 285  getprop "m_unionList"
+00028: 285  length "length"
+00033: 285  int8 20
+00035: 285  gt
+00036: 285  ifeq 124 (+88)
+00041: 286  newarray 0
+00045: 286  endinit
+00046: 286  setlocal 0
+00049: 286  pop
+00050: 287  zero
+00051: 287  setlocal 1
+00054: 287  pop
+00055: 287  goto 102 (+47)
+00060: 289  loophead
+00061: 289  getlocal 0
+00064: 289  dup
+00065: 289  callprop "push"
+00070: 289  swap
+00071: 289  notearg
+00072: 289  this
+00073: 289  getprop "m_unionList"
+00078: 289  getlocal 1
+00081: 289  getelem
+00082: 289  notearg
+00083: 289  call 1
+00086: 289  pop
+00087: 287  localinc 11
+00090: 287  getlocal 1
+00093: 287  pos
+00094: 287  dup
+00095: 287  one
+00096: 287  add
+00097: 287  setlocal 1
+00100: 287  pop
+00101: 287  pop
+00102: 287  loopentry
+00103: 287  getlocal 1
+00106: 287  int8 20
+00108: 287  lt
+00109: 287  ifne 60 (-49)
+00114: 291  this
+00115: 291  getlocal 0
+00118: 291  setprop "m_unionList"
+00123: 291  pop
+00124: 297  this
+00125: 297  getprop "m_tableView"
+00130: 297  dup
+00131: 297  callprop "reloadData"
+00136: 297  swap
+00137: 297  notearg
+00138: 297  call 0
+00141: 297  pop
+00142: 297  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:275 ---
+;; function object[15] refreshFromMenuClick
+;; function metadata object[15] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:304 ---
+loc   line  op
+----- ----  --
+main:
+00000: 305  name "xs"
+00005: 305  dup
+00006: 305  callprop "log"
+00011: 305  swap
+00012: 305  notearg
+00013: 305  string "refreshFromMenuClick in baseLayer"
+00018: 305  notearg
+00019: 305  call 1
+00022: 305  pop
+00023: 306  this
+00024: 306  getprop "isNeedRefresh"
+00029: 306  ifeq 55 (+26)
+00034: 307  this
+00035: 307  false
+00036: 307  setprop "isNeedRefresh"
+00041: 307  pop
+00042: 308  this
+00043: 308  dup
+00044: 308  callprop "_readUnionList"
+00049: 308  swap
+00050: 308  notearg
+00051: 308  call 0
+00054: 308  pop
+00055: 311  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:304 ---
+;; function object[16] onEnterTransitionDidFinish
+;; function metadata object[16] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:314 ---
+loc   line  op
+----- ----  --
+main:
+00000: 316  this
+00001: 316  dup
+00002: 316  callprop "_super"
+00007: 316  swap
+00008: 316  notearg
+00009: 316  call 0
+00012: 316  pop
+00013: 317  this
+00014: 317  dup
+00015: 317  callprop "_readUnionList"
+00020: 317  swap
+00021: 317  notearg
+00022: 317  call 0
+00025: 317  pop
+00026: 318  name "xs"
+00031: 318  getprop "Utils"
+00036: 318  getprop "Notify"
+00041: 318  dup
+00042: 318  callprop "addObserver"
+00047: 318  swap
+00048: 318  notearg
+00049: 318  this
+00050: 318  notearg
+00051: 318  this
+00052: 318  getprop "setIsNeedRefresh"
+00057: 318  notearg
+00058: 318  name "xs"
+00063: 318  getprop "Constant_Notify_Union_RankingUpdate"
+00068: 318  notearg
+00069: 318  call 3
+00072: 318  pop
+00073: 318  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:314 ---
+;; function object[17] onExitTransitionDidStart
+;; function metadata object[17] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:322 ---
+loc   line  op
+----- ----  --
+main:
+00000: 323  name "xs"
+00005: 323  getprop "Utils"
+00010: 323  getprop "Notify"
+00015: 323  dup
+00016: 323  callprop "removeObserver"
+00021: 323  swap
+00022: 323  notearg
+00023: 323  this
+00024: 323  notearg
+00025: 323  name "xs"
+00030: 323  getprop "Constant_Notify_Union_RankingUpdate"
+00035: 323  notearg
+00036: 323  call 2
+00039: 323  pop
+00040: 324  this
+00041: 324  dup
+00042: 324  callprop "_super"
+00047: 324  swap
+00048: 324  notearg
+00049: 324  call 0
+00052: 324  pop
+00053: 324  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:322 ---
+;; function object[18] scrollViewDidScroll
+;; function metadata object[18] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:329 ---
+loc   line  op
+----- ----  --
+main:
+00000: 329  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:329 ---
+;; function object[19] scrollViewDidZoom
+;; function metadata object[19] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:332 ---
+loc   line  op
+----- ----  --
+main:
+00000: 332  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:332 ---
+;; function object[20] tableCellTouched
+;; function metadata object[20] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:335 ---
+loc   line  op
+----- ----  --
+main:
+00000: 335  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:335 ---
+;; function object[21] tableCellSizeForIndex
+;; function metadata object[21] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:339 ---
+loc   line  op
+----- ----  --
+main:
+00000: 340  name "cc"
+00005: 340  dup
+00006: 340  callprop "size"
+00011: 340  swap
+00012: 340  notearg
+00013: 340  uint16 882
+00016: 340  notearg
+00017: 340  int8 107
+00019: 340  notearg
+00020: 340  call 2
+00023: 340  return
+00024: 340  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:339 ---
+;; function object[22] tableCellAtIndex
+;; function metadata object[22] nargs=2 bindings=3
+;; arg[0] table
+;; arg[1] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:343 ---
+loc   line  op
+----- ----  --
+main:
+00000: 344  name "cc"
+00005: 344  dup
+00006: 344  callprop "log"
+00011: 344  swap
+00012: 344  notearg
+00013: 344  getarg 1
+00016: 344  string "-----"
+00021: 344  add
+00022: 344  notearg
+00023: 344  call 1
+00026: 344  pop
+00027: 346  getarg 0
+00030: 346  dup
+00031: 346  callprop "dequeueCell"
+00036: 346  swap
+00037: 346  notearg
+00038: 346  call 0
+00041: 346  setlocal 0
+00044: 346  pop
+00045: 347  getlocal 0
+00048: 347  not
+00049: 347  ifeq 89 (+40)
+00054: 348  name "xs"
+00059: 348  getprop "Views"
+00064: 348  getprop "Union"
+00069: 348  getprop "UnionRankingCell"
+00074: 348  dup
+00075: 348  callprop "create"
+00080: 348  swap
+00081: 348  notearg
+00082: 348  call 0
+00085: 348  setlocal 0
+00088: 348  pop
+00089: 351  getlocal 0
+00092: 351  dup
+00093: 351  callprop "update"
+00098: 351  swap
+00099: 351  notearg
+00100: 351  this
+00101: 351  notearg
+00102: 351  getarg 1
+00105: 351  notearg
+00106: 351  call 2
+00109: 351  pop
+00110: 354  getlocal 0
+00113: 354  return
+00114: 354  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:343 ---
+;; function object[23] setBaseTouchPriority
+;; function metadata object[23] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:357 ---
+loc   line  op
+----- ----  --
+main:
+00000: 358  this
+00001: 358  getarg 0
+00004: 358  setprop "m_baseTouchPriority"
+00009: 358  pop
+00010: 360  this
+00011: 360  dup
+00012: 360  callprop "setTouchPriority"
+00017: 360  swap
+00018: 360  notearg
+00019: 360  this
+00020: 360  getprop "m_baseTouchPriority"
+00025: 360  notearg
+00026: 360  call 1
+00029: 360  pop
+00030: 361  this
+00031: 361  getprop "m_tableView"
+00036: 361  dup
+00037: 361  callprop "setTouchPriority"
+00042: 361  swap
+00043: 361  notearg
+00044: 361  this
+00045: 361  getprop "m_baseTouchPriority"
+00050: 361  one
+00051: 361  sub
+00052: 361  notearg
+00053: 361  call 1
+00056: 361  pop
+00057: 361  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:357 ---
+;; function object[24] numberOfCellsInTableView
+;; function metadata object[24] nargs=1 bindings=1
+;; arg[0] table
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:364 ---
+loc   line  op
+----- ----  --
+main:
+00000: 366  this
+00001: 366  getprop "m_unionList"
+00006: 366  length "length"
+00011: 366  return
+00012: 366  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:364 ---
+;; function object[25] scrollViewDidScroll
+;; function metadata object[25] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:369 ---
+loc   line  op
+----- ----  --
+main:
+00000: 369  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:369 ---
+;; function object[26] scrollViewDidZoom
+;; function metadata object[26] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:373 ---
+loc   line  op
+----- ----  --
+main:
+00000: 374  name "xs"
+00005: 374  getprop "Views"
+00010: 374  getprop "Mgr"
+00015: 374  dup
+00016: 374  callprop "showToast"
+00021: 374  swap
+00022: 374  notearg
+00023: 374  string "scrollViewDidZoom"
+00028: 374  notearg
+00029: 374  call 1
+00032: 374  pop
+00033: 374  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:373 ---
+;; function object[27] tableCellTouched
+;; function metadata object[27] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:377 ---
+loc   line  op
+----- ----  --
+main:
+00000: 378  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:377 ---
+;; function object[28] create
+;; function metadata object[28] nargs=0 bindings=1
+;; local[0] retObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:383 ---
+loc   line  op
+----- ----  --
+main:
+00000: 384  name "xs"
+00005: 384  getprop "Views"
+00010: 384  getprop "Union"
+00015: 384  getprop "UnionRankingLayer"
+00020: 384  undefined
+00021: 384  notearg
+00022: 384  new 0
+00025: 384  setlocal 0
+00028: 384  pop
+00029: 385  getlocal 0
+00032: 385  and 52 (+20)
+00037: 385  pop
+00038: 385  getlocal 0
+00041: 385  dup
+00042: 385  callprop "init"
+00047: 385  swap
+00048: 385  notearg
+00049: 385  call 0
+00052: 385  ifeq 61 (+9)
+00057: 386  getlocal 0
+00060: 386  return
+00061: 388  null
+00062: 388  return
+00063: 388  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Union/UnionRankingLayer.js:383 ---

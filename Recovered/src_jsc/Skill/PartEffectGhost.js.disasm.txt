@@ -1,0 +1,461 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/PartEffectGhost.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/PartEffectGhost.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Utils"
+00010:   8  dup
+00011:   8  callprop "extendScope"
+00016:   8  swap
+00017:   8  notearg
+00018:   9  name "xs"
+00023:   9  getprop "Cfg"
+00028:   9  getprop "Skill"
+00033:   9  getprop "part"
+00038:   9  notearg
+00039:  10  newinit 1
+00044:  15  newinit 1
+00049:  18  newinit 1
+00054:  19  newinit 1
+00059:  20  newinit 1
+00064:  21  string "to"
+00069:  21  initprop "parent"
+00074:  22  string "from_ghost"
+00079:  22  initprop "type"
+00084:  23  string "to_tmp"
+00089:  23  initprop "belong"
+00094:  28  name "cc"
+00099:  28  dup
+00100:  28  callprop "p"
+00105:  28  swap
+00106:  28  notearg
+00107:  28  int32 -173
+00112:  28  notearg
+00113:  28  zero
+00114:  28  notearg
+00115:  28  call 2
+00118:  28  initprop "pos"
+00123:  29  true
+00124:  29  initprop "ui"
+00129:  29  endinit
+00130:  29  initprop "property"
+00135:  32  newinit 1
+00140:  33  newinit 1
+00145:  33  string "Show"
+00150:  33  initprop "type"
+00155:  33  endinit
+00156:  33  initprop "_show"
+00161:  34  newinit 1
+00166:  34  string "createAction"
+00171:  34  initprop "type"
+00176:  34  string "createPlayAniActions"
+00181:  34  initprop "name"
+00186:  34  newinit 1
+00191:  34  string "ani_appear_sword"
+00196:  34  initprop "aniId"
+00201:  34  newinit 1
+00206:  34  one
+00207:  34  initprop "speed"
+00212:  34  endinit
+00213:  34  initprop "control"
+00218:  34  endinit
+00219:  34  initprop "data"
+00224:  34  endinit
+00225:  34  initprop "_appear"
+00230:  35  newinit 1
+00235:  35  string "createAction"
+00240:  35  initprop "type"
+00245:  35  string "createPlayAniActions"
+00250:  35  initprop "name"
+00255:  35  newinit 1
+00260:  35  string "ani_status_sword"
+00265:  35  initprop "aniId"
+00270:  35  newinit 1
+00275:  35  one
+00276:  35  initprop "speed"
+00281:  35  endinit
+00282:  35  initprop "control"
+00287:  35  endinit
+00288:  35  initprop "data"
+00293:  35  endinit
+00294:  35  initprop "_status"
+00299:  36  newinit 1
+00304:  36  string "createAction"
+00309:  36  initprop "type"
+00314:  36  string "createPlayAniActions"
+00319:  36  initprop "name"
+00324:  36  newinit 1
+00329:  36  string "ani_attack_sword"
+00334:  36  initprop "aniId"
+00339:  36  newinit 1
+00344:  36  one
+00345:  36  initprop "speed"
+00350:  36  endinit
+00351:  36  initprop "control"
+00356:  36  endinit
+00357:  36  initprop "data"
+00362:  36  endinit
+00363:  36  initprop "_attack"
+00368:  37  newinit 1
+00373:  37  newinit 1
+00378:  37  string "getSkin"
+00383:  37  initprop "func"
+00388:  37  endinit
+00389:  37  initprop "target"
+00394:  37  string "FadeOut"
+00399:  37  initprop "type"
+00404:  37  int8 6
+00406:  37  name "xs"
+00411:  37  getprop "fps"
+00416:  37  div
+00417:  37  initprop "dp"
+00422:  37  endinit
+00423:  37  initprop "_fadeOut"
+00428:  37  endinit
+00429:  37  initprop "timelines"
+00434:  37  endinit
+00435:  37  initprop "to_ghost"
+00440:  37  endinit
+00441:  37  initprop "items"
+00446:  37  endinit
+00447:  37  initprop "P_ZhenLie_Effect_To"
+00452:  43  newinit 1
+00457:  44  string "template.part.TP_GhostAttack_Effect_To"
+00462:  44  initprop "extend"
+00467:  45  newinit 1
+00472:  46  newinit 1
+00477:  47  newinit 1
+00482:  48  newinit 1
+00487:  48  newinit 1
+00492:  48  string "ani_appear_sword"
+00497:  48  initprop "aniId"
+00502:  48  endinit
+00503:  48  initprop "data"
+00508:  48  endinit
+00509:  48  initprop "_appear"
+00514:  49  newinit 1
+00519:  49  newinit 1
+00524:  49  string "ani_status_sword"
+00529:  49  initprop "aniId"
+00534:  49  endinit
+00535:  49  initprop "data"
+00540:  49  endinit
+00541:  49  initprop "_status"
+00546:  50  newinit 1
+00551:  50  newinit 1
+00556:  50  string "ani_attack_sword"
+00561:  50  initprop "aniId"
+00566:  50  endinit
+00567:  50  initprop "data"
+00572:  50  endinit
+00573:  50  initprop "_attack"
+00578:  50  endinit
+00579:  50  initprop "timelines"
+00584:  50  endinit
+00585:  50  initprop "to_ghost"
+00590:  50  endinit
+00591:  50  initprop "items"
+00596:  50  endinit
+00597:  50  initprop "P_Ghost_Sword_Effect_To"
+00602:  55  newinit 1
+00607:  56  string "template.part.TP_GhostAttack_Effect_To"
+00612:  56  initprop "extend"
+00617:  57  newinit 1
+00622:  58  newinit 1
+00627:  59  newinit 1
+00632:  60  newinit 1
+00637:  60  newinit 1
+00642:  60  string "ani_appear_chopper"
+00647:  60  initprop "aniId"
+00652:  60  endinit
+00653:  60  initprop "data"
+00658:  60  endinit
+00659:  60  initprop "_appear"
+00664:  61  newinit 1
+00669:  61  newinit 1
+00674:  61  string "ani_status_chopper"
+00679:  61  initprop "aniId"
+00684:  61  endinit
+00685:  61  initprop "data"
+00690:  61  endinit
+00691:  61  initprop "_status"
+00696:  62  newinit 1
+00701:  62  newinit 1
+00706:  62  string "ani_attack_chopper"
+00711:  62  initprop "aniId"
+00716:  62  endinit
+00717:  62  initprop "data"
+00722:  62  endinit
+00723:  62  initprop "_attack"
+00728:  62  endinit
+00729:  62  initprop "timelines"
+00734:  62  endinit
+00735:  62  initprop "to_ghost"
+00740:  62  endinit
+00741:  62  initprop "items"
+00746:  62  endinit
+00747:  62  initprop "P_Ghost_Chopper_Effect_To"
+00752:  68  newinit 1
+00757:  69  string "template.part.TP_GhostAttack_Effect_To"
+00762:  69  initprop "extend"
+00767:  70  newinit 1
+00772:  71  newinit 1
+00777:  72  newinit 1
+00782:  73  newinit 1
+00787:  73  newinit 1
+00792:  73  string "ani_appear_claw"
+00797:  73  initprop "aniId"
+00802:  73  endinit
+00803:  73  initprop "data"
+00808:  73  endinit
+00809:  73  initprop "_appear"
+00814:  74  newinit 1
+00819:  74  newinit 1
+00824:  74  string "ani_status_claw"
+00829:  74  initprop "aniId"
+00834:  74  endinit
+00835:  74  initprop "data"
+00840:  74  endinit
+00841:  74  initprop "_status"
+00846:  75  newinit 1
+00851:  75  newinit 1
+00856:  75  string "ani_attack_claw"
+00861:  75  initprop "aniId"
+00866:  75  endinit
+00867:  75  initprop "data"
+00872:  75  endinit
+00873:  75  initprop "_attack"
+00878:  75  endinit
+00879:  75  initprop "timelines"
+00884:  75  endinit
+00885:  75  initprop "to_ghost"
+00890:  75  endinit
+00891:  75  initprop "items"
+00896:  75  endinit
+00897:  75  initprop "P_Ghost_Claw_Effect_To"
+00902:  81  newinit 1
+00907:  82  string "template.part.TP_GhostAttack_Effect_To"
+00912:  82  initprop "extend"
+00917:  83  newinit 1
+00922:  84  newinit 1
+00927:  85  newinit 1
+00932:  86  newinit 1
+00937:  86  newinit 1
+00942:  86  string "ani_appear_knife"
+00947:  86  initprop "aniId"
+00952:  86  endinit
+00953:  86  initprop "data"
+00958:  86  endinit
+00959:  86  initprop "_appear"
+00964:  87  newinit 1
+00969:  87  newinit 1
+00974:  87  string "ani_status_knife"
+00979:  87  initprop "aniId"
+00984:  87  endinit
+00985:  87  initprop "data"
+00990:  87  endinit
+00991:  87  initprop "_status"
+00996:  88  newinit 1
+01001:  88  newinit 1
+01006:  88  string "ani_attack_knife"
+01011:  88  initprop "aniId"
+01016:  88  endinit
+01017:  88  initprop "data"
+01022:  88  endinit
+01023:  88  initprop "_attack"
+01028:  88  endinit
+01029:  88  initprop "timelines"
+01034:  88  endinit
+01035:  88  initprop "to_ghost"
+01040:  88  endinit
+01041:  88  initprop "items"
+01046:  88  endinit
+01047:  88  initprop "P_Ghost_Knife_Effect_To"
+01052:  94  newinit 1
+01057:  95  string "template.part.TP_GhostAttack_Effect_To"
+01062:  95  initprop "extend"
+01067:  96  newinit 1
+01072:  97  newinit 1
+01077:  98  newinit 1
+01082:  99  newinit 1
+01087:  99  newinit 1
+01092:  99  string "ani_appear_spear"
+01097:  99  initprop "aniId"
+01102:  99  endinit
+01103:  99  initprop "data"
+01108:  99  endinit
+01109:  99  initprop "_appear"
+01114: 100  newinit 1
+01119: 100  newinit 1
+01124: 100  string "ani_status_spear"
+01129: 100  initprop "aniId"
+01134: 100  endinit
+01135: 100  initprop "data"
+01140: 100  endinit
+01141: 100  initprop "_status"
+01146: 101  newinit 1
+01151: 101  newinit 1
+01156: 101  string "ani_attack_spear"
+01161: 101  initprop "aniId"
+01166: 101  endinit
+01167: 101  initprop "data"
+01172: 101  endinit
+01173: 101  initprop "_attack"
+01178: 101  endinit
+01179: 101  initprop "timelines"
+01184: 101  endinit
+01185: 101  initprop "to_ghost"
+01190: 101  endinit
+01191: 101  initprop "items"
+01196: 101  endinit
+01197: 101  initprop "P_Ghost_Spear_Effect_To"
+01202: 106  newinit 1
+01207: 107  string "template.part.TP_GhostAttack_Effect_To"
+01212: 107  initprop "extend"
+01217: 108  newinit 1
+01222: 109  newinit 1
+01227: 110  newinit 1
+01232: 111  newinit 1
+01237: 111  newinit 1
+01242: 111  string "ani_appear_pike"
+01247: 111  initprop "aniId"
+01252: 111  endinit
+01253: 111  initprop "data"
+01258: 111  endinit
+01259: 111  initprop "_appear"
+01264: 112  newinit 1
+01269: 112  newinit 1
+01274: 112  string "ani_status_pike"
+01279: 112  initprop "aniId"
+01284: 112  endinit
+01285: 112  initprop "data"
+01290: 112  endinit
+01291: 112  initprop "_status"
+01296: 113  newinit 1
+01301: 113  newinit 1
+01306: 113  string "ani_attack_pike"
+01311: 113  initprop "aniId"
+01316: 113  endinit
+01317: 113  initprop "data"
+01322: 113  endinit
+01323: 113  initprop "_attack"
+01328: 113  endinit
+01329: 113  initprop "timelines"
+01334: 113  endinit
+01335: 113  initprop "to_ghost"
+01340: 113  endinit
+01341: 113  initprop "items"
+01346: 113  endinit
+01347: 113  initprop "P_Ghost_Pike_Effect_To"
+01352: 118  newinit 1
+01357: 119  string "template.part.TP_GhostAttack_Effect_To"
+01362: 119  initprop "extend"
+01367: 120  newinit 1
+01372: 121  newinit 1
+01377: 122  newinit 1
+01382: 125  null
+01383: 125  initprop "_appear"
+01388: 126  null
+01389: 126  initprop "_status"
+01394: 127  newinit 1
+01399: 127  newinit 1
+01404: 127  string "ani_attack_hammer"
+01409: 127  initprop "aniId"
+01414: 127  endinit
+01415: 127  initprop "data"
+01420: 127  endinit
+01421: 127  initprop "_attack"
+01426: 127  endinit
+01427: 127  initprop "timelines"
+01432: 127  endinit
+01433: 127  initprop "to_ghost"
+01438: 127  endinit
+01439: 127  initprop "items"
+01444: 127  endinit
+01445: 127  initprop "P_Ghost_Hammer_Effect_To"
+01450: 132  newinit 1
+01455: 133  string "template.part.TP_GhostAttack_Effect_To"
+01460: 133  initprop "extend"
+01465: 134  newinit 1
+01470: 135  newinit 1
+01475: 136  newinit 1
+01480: 139  null
+01481: 139  initprop "_appear"
+01486: 140  null
+01487: 140  initprop "_status"
+01492: 141  newinit 1
+01497: 141  newinit 1
+01502: 141  string "ani_attack_axe"
+01507: 141  initprop "aniId"
+01512: 141  endinit
+01513: 141  initprop "data"
+01518: 141  endinit
+01519: 141  initprop "_attack"
+01524: 141  endinit
+01525: 141  initprop "timelines"
+01530: 141  endinit
+01531: 141  initprop "to_ghost"
+01536: 141  endinit
+01537: 141  initprop "items"
+01542: 141  endinit
+01543: 141  initprop "P_Ghost_Axe_Effect_To"
+01548: 147  newinit 1
+01553: 148  string "template.part.TP_GhostOther_Effect_To"
+01558: 148  initprop "extend"
+01563: 149  newinit 1
+01568: 150  newinit 1
+01573: 151  newinit 1
+01578: 154  null
+01579: 154  initprop "_appear"
+01584: 155  null
+01585: 155  initprop "_status"
+01590: 156  newinit 1
+01595: 156  newinit 1
+01600: 156  string "ani_from1"
+01605: 156  initprop "aniId"
+01610: 156  string "Arm_Fight_QiXi"
+01615: 156  initprop "armId"
+01620: 156  endinit
+01621: 156  initprop "data"
+01626: 156  endinit
+01627: 156  initprop "_attack"
+01632: 156  endinit
+01633: 156  initprop "timelines"
+01638: 159  newinit 1
+01643: 160  newinit 1
+01648: 163  null
+01649: 163  initprop "_appear"
+01654: 164  null
+01655: 164  initprop "_status"
+01660: 165  newinit 1
+01665: 165  newinit 1
+01670: 165  string "ani_from0"
+01675: 165  initprop "aniId"
+01680: 165  string "Arm_Fight_QiXi"
+01685: 165  initprop "armId"
+01690: 165  endinit
+01691: 165  initprop "data"
+01696: 165  endinit
+01697: 165  initprop "_attack"
+01702: 165  endinit
+01703: 165  initprop "timelines"
+01708: 165  endinit
+01709: 165  initprop "nodef"
+01714: 165  endinit
+01715: 165  initprop "to_ghost"
+01720: 165  endinit
+01721: 165  initprop "items"
+01726: 165  endinit
+01727: 165  initprop "P_QiXi_Effect_to0"
+01732: 165  endinit
+01733: 165  notearg
+01734: 165  call 2
+01737: 165  popv
+01738: 176  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/PartEffectGhost.js:1 ---

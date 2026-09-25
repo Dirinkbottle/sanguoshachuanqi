@@ -1,0 +1,322 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Libs/Views/Layer/BaseLayer.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=48 object[0]
+;; FUNCTION-MAP kind=lambda offset=58 object[1]
+;; FUNCTION-MAP kind=lambda offset=68 object[2]
+;; FUNCTION-MAP kind=lambda offset=78 object[3]
+;; FUNCTION-MAP kind=lambda offset=88 object[4]
+;; FUNCTION-MAP kind=lambda offset=98 object[5]
+;; FUNCTION-MAP kind=lambda offset=108 object[6]
+;; FUNCTION-MAP kind=lambda offset=118 object[7]
+;; FUNCTION-MAP kind=lambda offset=128 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  name "xs"
+00005:  13  getprop "Libs"
+00010:  13  getprop "Views"
+00015:  13  name "cc"
+00020:  13  getprop "LayerColor"
+00025:  13  dup
+00026:  13  callprop "extend"
+00031:  13  swap
+00032:  13  notearg
+00033:  13  newinit 1
+00038:  15  string "xs.Libs.Views.BaseLayer"
+00043:  15  initprop "name"
+00048:  17  lambda (function () {
+    [sourceless code]
+})
+00053:  17  initprop "ctor"
+00058:  21  lambda (function () {
+    [sourceless code]
+})
+00063:  21  initprop "init"
+00068:  37  lambda (function () {
+    [sourceless code]
+})
+00073:  37  initprop "setIsEatEvent"
+00078:  42  lambda (function () {
+    [sourceless code]
+})
+00083:  42  initprop "getIsEatEvent"
+00088:  47  lambda (function () {
+    [sourceless code]
+})
+00093:  47  initprop "setTouchCheckVisible"
+00098:  85  lambda (function () {
+    [sourceless code]
+})
+00103:  85  initprop "onTouchBegan"
+00108:  92  lambda (function () {
+    [sourceless code]
+})
+00113:  92  initprop "onTouchMoved"
+00118:  97  lambda (function () {
+    [sourceless code]
+})
+00123:  97  initprop "onTouchEnded"
+00128: 103  lambda (function () {
+    [sourceless code]
+})
+00133: 103  initprop "_isvisible"
+00138: 103  endinit
+00139: 103  notearg
+00140: 103  call 1
+00143: 103  setprop "BaseLayer"
+00148: 103  popv
+00149: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  this
+00001:  18  dup
+00002:  18  callprop "_super"
+00007:  18  swap
+00008:  18  notearg
+00009:  18  call 0
+00012:  18  pop
+00013:  19  name "cc"
+00018:  19  dup
+00019:  19  callprop "associateWithNative"
+00024:  19  swap
+00025:  19  notearg
+00026:  19  this
+00027:  19  notearg
+00028:  19  name "cc"
+00033:  19  getprop "Layer"
+00038:  19  notearg
+00039:  19  call 2
+00042:  19  pop
+00043:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:17 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  this
+00001:  22  dup
+00002:  22  callprop "_super"
+00007:  22  swap
+00008:  22  notearg
+00009:  22  call 0
+00012:  22  not
+00013:  22  ifeq 20 (+7)
+00018:  23  false
+00019:  23  return
+00020:  27  this
+00021:  27  false
+00022:  27  setprop "b_isEatEvents"
+00027:  27  pop
+00028:  34  true
+00029:  34  return
+00030:  34  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:21 ---
+;; function object[2] setIsEatEvent
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] eat
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  this
+00001:  38  getprop "b_isEatEvents"
+00006:  38  getarg 0
+00009:  38  strictne
+00010:  38  ifeq 25 (+15)
+00015:  39  this
+00016:  39  getarg 0
+00019:  39  setprop "b_isEatEvents"
+00024:  39  pop
+00025:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:37 ---
+;; function object[3] getIsEatEvent
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:42 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  this
+00001:  44  getprop "b_isEatEvents"
+00006:  44  return
+00007:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:42 ---
+;; function object[4] setTouchCheckVisible
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] flag
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:47 ---
+loc   line  op
+----- ----  --
+main:
+00000:  48  this
+00001:  48  getprop "m_bCheckVisible"
+00006:  48  getarg 0
+00009:  48  strictne
+00010:  48  ifeq 25 (+15)
+00015:  49  this
+00016:  49  getarg 0
+00019:  49  setprop "m_bCheckVisible"
+00024:  49  pop
+00025:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:47 ---
+;; function object[5] onTouchBegan
+;; function metadata object[5] nargs=2 bindings=2
+;; arg[0] touch
+;; arg[1] e
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:85 ---
+loc   line  op
+----- ----  --
+main:
+00000:  87  this
+00001:  87  getprop "m_bCheckVisible"
+00006:  87  and 26 (+20)
+00011:  87  pop
+00012:  87  this
+00013:  87  dup
+00014:  87  callprop "_isvisible"
+00019:  87  swap
+00020:  87  notearg
+00021:  87  call 0
+00024:  87  false
+00025:  87  eq
+00026:  87  ifeq 33 (+7)
+00031:  88  false
+00032:  88  return
+00033:  90  this
+00034:  90  dup
+00035:  90  callprop "getIsEatEvent"
+00040:  90  swap
+00041:  90  notearg
+00042:  90  call 0
+00045:  90  return
+00046:  90  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:85 ---
+;; function object[6] onTouchMoved
+;; function metadata object[6] nargs=2 bindings=2
+;; arg[0] touch
+;; arg[1] e
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:92 ---
+loc   line  op
+----- ----  --
+main:
+00000:  93  this
+00001:  93  getprop "m_bCheckVisible"
+00006:  93  and 26 (+20)
+00011:  93  pop
+00012:  93  this
+00013:  93  dup
+00014:  93  callprop "_isvisible"
+00019:  93  swap
+00020:  93  notearg
+00021:  93  call 0
+00024:  93  false
+00025:  93  eq
+00026:  93  ifeq 33 (+7)
+00031:  94  false
+00032:  94  return
+00033:  95  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:92 ---
+;; function object[7] onTouchEnded
+;; function metadata object[7] nargs=2 bindings=2
+;; arg[0] touch
+;; arg[1] e
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:97 ---
+loc   line  op
+----- ----  --
+main:
+00000:  98  this
+00001:  98  getprop "m_bCheckVisible"
+00006:  98  and 26 (+20)
+00011:  98  pop
+00012:  98  this
+00013:  98  dup
+00014:  98  callprop "_isvisible"
+00019:  98  swap
+00020:  98  notearg
+00021:  98  call 0
+00024:  98  false
+00025:  98  eq
+00026:  98  ifeq 33 (+7)
+00031:  99  false
+00032:  99  return
+00033: 101  this
+00034: 101  dup
+00035: 101  callprop "layerTouched"
+00040: 101  swap
+00041: 101  notearg
+00042: 101  call 0
+00045: 101  pop
+00046: 101  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:97 ---
+;; function object[8] _isvisible
+;; function metadata object[8] nargs=0 bindings=1
+;; local[0] _parent
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:103 ---
+loc   line  op
+----- ----  --
+main:
+00000: 104  this
+00001: 104  dup
+00002: 104  callprop "getParent"
+00007: 104  swap
+00008: 104  notearg
+00009: 104  call 0
+00012: 104  setlocal 0
+00015: 104  pop
+00016: 105  goto 63 (+47)
+00021: 106  loophead
+00022: 106  getlocal 0
+00025: 106  dup
+00026: 106  callprop "isVisible"
+00031: 106  swap
+00032: 106  notearg
+00033: 106  call 0
+00036: 106  false
+00037: 106  eq
+00038: 106  ifeq 45 (+7)
+00043: 107  false
+00044: 107  return
+00045: 109  getlocal 0
+00048: 109  dup
+00049: 109  callprop "getParent"
+00054: 109  swap
+00055: 109  notearg
+00056: 109  call 0
+00059: 109  setlocal 0
+00062: 109  pop
+00063: 105  loopentry
+00064: 105  getlocal 0
+00067: 105  null
+00068: 105  ne
+00069: 105  ifne 21 (-48)
+00074: 110  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Layer/BaseLayer.js:103 ---

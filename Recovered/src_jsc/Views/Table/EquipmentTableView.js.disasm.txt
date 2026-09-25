@@ -1,0 +1,383 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/EquipmentTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=93 object[0]
+;; FUNCTION-MAP kind=lambda offset=103 object[1]
+;; FUNCTION-MAP kind=lambda offset=113 object[2]
+;; FUNCTION-MAP kind=lambda offset=123 object[3]
+;; FUNCTION-MAP kind=lambda offset=133 object[4]
+;; FUNCTION-MAP kind=lambda offset=174 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   2  name "xs"
+00005:   2  getprop "Views"
+00010:   2  getprop "Table"
+00015:   2  name "xs"
+00020:   2  getprop "Views"
+00025:   2  getprop "Table"
+00030:   2  getprop "BaseTableViewExtra"
+00035:   2  dup
+00036:   2  callprop "extend"
+00041:   2  swap
+00042:   2  notearg
+00043:   2  newinit 1
+00048:   4  string "EquipmentTableView"
+00053:   4  initprop "name"
+00058:   6  newinit 1
+00063:   7  newarray 1
+00067:   8  name "xs"
+00072:   8  getprop "Constant_Notify_ModelChange_Equ"
+00077:   8  initelem_array 0
+00081:   8  endinit
+00082:   8  initprop "modelTypes"
+00087:   8  endinit
+00088:   8  initprop "Cfg"
+00093:  12  lambda (function () {
+    [sourceless code]
+})
+00098:  12  initprop "refreshData"
+00103:  28  lambda (function () {
+    [sourceless code]
+})
+00108:  28  initprop "createCell"
+00113:  43  lambda (function () {
+    [sourceless code]
+})
+00118:  43  initprop "makeViewSize"
+00123:  46  lambda (function () {
+    [sourceless code]
+})
+00128:  46  initprop "onFilterChange"
+00133:  52  lambda (function () {
+    [sourceless code]
+})
+00138:  52  initprop "setBaseTouchPriority"
+00143:  52  endinit
+00144:  52  notearg
+00145:  52  call 1
+00148:  52  setprop "EquipmentTableView"
+00153:  52  popv
+00154:  58  name "xs"
+00159:  58  getprop "Views"
+00164:  58  getprop "Table"
+00169:  58  getprop "EquipmentTableView"
+00174:  58  lambda (function () {
+    [sourceless code]
+})
+00179:  58  setprop "create"
+00184:  58  popv
+00185:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:1 ---
+;; function object[0] refreshData
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] params
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  getprop "_filterResult"
+00006:  13  null
+00007:  13  eq
+00008:  13  and 22 (+14)
+00013:  13  pop
+00014:  13  this
+00015:  13  getprop "_filterType"
+00020:  13  null
+00021:  13  eq
+00022:  13  ifeq 142 (+120)
+00027:  15  this
+00028:  15  name "xs"
+00033:  15  getprop "Profile"
+00038:  15  getprop "GameData"
+00043:  15  getprop "Mgr"
+00048:  15  dup
+00049:  15  callprop "getInstance"
+00054:  15  swap
+00055:  15  notearg
+00056:  15  call 0
+00059:  15  getprop "Equipments"
+00064:  15  dup
+00065:  15  callprop "getAll"
+00070:  15  swap
+00071:  15  notearg
+00072:  15  call 0
+00075:  15  setprop "arrayModel"
+00080:  15  pop
+00081:  16  this
+00082:  16  getprop "arrayModel"
+00087:  16  dup
+00088:  16  callprop "sort"
+00093:  16  swap
+00094:  16  notearg
+00095:  16  name "xs"
+00100:  16  getprop "Tools"
+00105:  16  getprop "Sort"
+00110:  16  dup
+00111:  16  callprop "by"
+00116:  16  swap
+00117:  16  notearg
+00118:  16  name "xs"
+00123:  16  getprop "Constant_SortType_Equipment_Default_Reverse"
+00128:  16  notearg
+00129:  16  call 1
+00132:  16  notearg
+00133:  16  call 1
+00136:  16  pop
+00137:  16  goto 278 (+141)
+00142:  18  newinit 1
+00147:  19  name "xs"
+00152:  19  getprop "Profile"
+00157:  19  getprop "GameData"
+00162:  19  getprop "Mgr"
+00167:  19  dup
+00168:  19  callprop "getInstance"
+00173:  19  swap
+00174:  19  notearg
+00175:  19  call 0
+00178:  19  getprop "Equipments"
+00183:  19  dup
+00184:  19  callprop "getAll"
+00189:  19  swap
+00190:  19  notearg
+00191:  19  call 0
+00194:  19  initprop "data"
+00199:  20  this
+00200:  20  getprop "_filterResult"
+00205:  20  initprop "result"
+00210:  21  this
+00211:  21  getprop "_filterType"
+00216:  21  initprop "filterConditions"
+00221:  22  name "xs"
+00226:  22  getprop "Constant_SortType_Equipment_Default_Reverse"
+00231:  22  initprop "sortConditions"
+00236:  22  endinit
+00237:  22  setlocal 0
+00240:  22  pop
+00241:  24  this
+00242:  24  name "xs"
+00247:  24  getprop "Tools"
+00252:  24  getprop "Filter"
+00257:  24  dup
+00258:  24  callprop "filterData"
+00263:  24  swap
+00264:  24  notearg
+00265:  24  getlocal 0
+00268:  24  notearg
+00269:  24  call 1
+00272:  24  setprop "arrayModel"
+00277:  24  pop
+00278:  25  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:12 ---
+;; function object[1] createCell
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  null
+00001:  29  setlocal 0
+00004:  29  pop
+00005:  30  getarg 0
+00008:  30  this
+00009:  30  getprop "arrayModel"
+00014:  30  length "length"
+00019:  30  ge
+00020:  30  ifeq 70 (+50)
+00025:  31  name "xs"
+00030:  31  getprop "Views"
+00035:  31  getprop "Table"
+00040:  31  getprop "Cell"
+00045:  31  getprop "EquipmentTableViewCell"
+00050:  31  dup
+00051:  31  callprop "create"
+00056:  31  swap
+00057:  31  notearg
+00058:  31  call 0
+00061:  31  setlocal 0
+00064:  31  pop
+00065:  31  goto 121 (+56)
+00070:  33  name "xs"
+00075:  33  getprop "Views"
+00080:  33  getprop "Table"
+00085:  33  getprop "Cell"
+00090:  33  getprop "EquipmentTableViewCell"
+00095:  33  dup
+00096:  33  callprop "create"
+00101:  33  swap
+00102:  33  notearg
+00103:  33  this
+00104:  33  getprop "arrayModel"
+00109:  33  getarg 0
+00112:  33  getelem
+00113:  33  notearg
+00114:  33  call 1
+00117:  33  setlocal 0
+00120:  33  pop
+00121:  35  getarg 0
+00124:  35  zero
+00125:  35  stricteq
+00126:  35  ifeq 155 (+29)
+00131:  36  getlocal 0
+00134:  36  dup
+00135:  36  callprop "setCellGuideTag"
+00140:  36  swap
+00141:  36  notearg
+00142:  36  uint16 4002
+00145:  36  notearg
+00146:  36  call 1
+00149:  36  pop
+00150:  36  goto 173 (+23)
+00155:  38  getlocal 0
+00158:  38  dup
+00159:  38  callprop "setCellGuideTag"
+00164:  38  swap
+00165:  38  notearg
+00166:  38  int8 -1
+00168:  38  notearg
+00169:  38  call 1
+00172:  38  pop
+00173:  40  getlocal 0
+00176:  40  return
+00177:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:28 ---
+;; function object[2] makeViewSize
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  name "xs"
+00005:  44  getprop "Views"
+00010:  44  getprop "TablePage"
+00015:  44  dup
+00016:  44  callprop "getTableViewSize"
+00021:  44  swap
+00022:  44  notearg
+00023:  44  call 0
+00026:  44  return
+00027:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:43 ---
+;; function object[3] onFilterChange
+;; function metadata object[3] nargs=2 bindings=2
+;; arg[0] filterType
+;; arg[1] filterResult
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  name "xs"
+00005:  47  dup
+00006:  47  callprop "log"
+00011:  47  swap
+00012:  47  notearg
+00013:  47  string "EquipmentTableView onFilterChange "
+00018:  47  getarg 0
+00021:  47  add
+00022:  47  string ","
+00027:  47  add
+00028:  47  getarg 1
+00031:  47  add
+00032:  47  notearg
+00033:  47  call 1
+00036:  47  pop
+00037:  48  this
+00038:  48  getarg 0
+00041:  48  setprop "_filterType"
+00046:  48  pop
+00047:  49  this
+00048:  49  getarg 1
+00051:  49  setprop "_filterResult"
+00056:  49  pop
+00057:  50  this
+00058:  50  dup
+00059:  50  callprop "refreshDataAndReload"
+00064:  50  swap
+00065:  50  notearg
+00066:  50  call 0
+00069:  50  pop
+00070:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:46 ---
+;; function object[4] setBaseTouchPriority
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:52 ---
+loc   line  op
+----- ----  --
+main:
+00000:  53  this
+00001:  53  getarg 0
+00004:  53  setprop "m_baseTouchPriority"
+00009:  53  pop
+00010:  54  this
+00011:  54  dup
+00012:  54  callprop "setTouchPriority"
+00017:  54  swap
+00018:  54  notearg
+00019:  54  this
+00020:  54  getprop "m_baseTouchPriority"
+00025:  54  notearg
+00026:  54  call 1
+00029:  54  pop
+00030:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:52 ---
+;; function object[5] create
+;; function metadata object[5] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  name "xs"
+00005:  59  getprop "Views"
+00010:  59  getprop "Table"
+00015:  59  getprop "EquipmentTableView"
+00020:  59  undefined
+00021:  59  notearg
+00022:  59  new 0
+00025:  59  setlocal 0
+00028:  59  pop
+00029:  60  getlocal 0
+00032:  60  and 52 (+20)
+00037:  60  pop
+00038:  60  getlocal 0
+00041:  60  dup
+00042:  60  callprop "init"
+00047:  60  swap
+00048:  60  notearg
+00049:  60  call 0
+00052:  60  ifeq 61 (+9)
+00057:  61  getlocal 0
+00060:  61  return
+00061:  63  this
+00062:  63  dup
+00063:  63  callprop "error"
+00068:  63  swap
+00069:  63  notearg
+00070:  63  string "EquipmentTableView.create:"
+00075:  63  notearg
+00076:  63  call 1
+00079:  63  pop
+00080:  64  null
+00081:  64  return
+00082:  64  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentTableView.js:58 ---

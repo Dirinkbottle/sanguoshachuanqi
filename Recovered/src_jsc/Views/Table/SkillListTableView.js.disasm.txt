@@ -1,0 +1,1654 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/SkillListTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=101 object[0]
+;; FUNCTION-MAP kind=lambda offset=111 object[1]
+;; FUNCTION-MAP kind=lambda offset=121 object[2]
+;; FUNCTION-MAP kind=lambda offset=131 object[3]
+;; FUNCTION-MAP kind=lambda offset=141 object[4]
+;; FUNCTION-MAP kind=lambda offset=151 object[5]
+;; FUNCTION-MAP kind=lambda offset=161 object[6]
+;; FUNCTION-MAP kind=lambda offset=171 object[7]
+;; FUNCTION-MAP kind=lambda offset=181 object[8]
+;; FUNCTION-MAP kind=lambda offset=191 object[9]
+;; FUNCTION-MAP kind=lambda offset=201 object[10]
+;; FUNCTION-MAP kind=lambda offset=211 object[11]
+;; FUNCTION-MAP kind=lambda offset=252 object[12]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Views"
+00010:   4  getprop "Table"
+00015:   4  name "xs"
+00020:   4  getprop "Views"
+00025:   4  getprop "Table"
+00030:   4  getprop "MultiColumnTableView"
+00035:   4  dup
+00036:   4  callprop "extend"
+00041:   4  swap
+00042:   4  notearg
+00043:   4  newinit 1
+00048:   5  string "SkillListTableView"
+00053:   5  initprop "name"
+00058:   7  newinit 1
+00063:   8  newarray 1
+00067:   9  name "xs"
+00072:   9  getprop "Constant_Notify_ModelChange_Skill"
+00077:   9  initelem_array 0
+00081:   9  endinit
+00082:   9  initprop "modelTypes"
+00087:  11  uint16 250
+00090:  11  initprop "maxLength"
+00095:  11  endinit
+00096:  11  initprop "Cfg"
+00101:  15  lambda (function () {
+    [sourceless code]
+})
+00106:  15  initprop "refreshData"
+00111:  39  lambda (function () {
+    [sourceless code]
+})
+00116:  39  initprop "onSortChg"
+00121:  41  lambda (function () {
+    [sourceless code]
+})
+00126:  41  initprop "createCell"
+00131:  47  lambda (function () {
+    [sourceless code]
+})
+00136:  47  initprop "makeViewSize"
+00141:  56  lambda (function () {
+    [sourceless code]
+})
+00146:  56  initprop "tableCellTouched"
+00151:  62  lambda (function () {
+    [sourceless code]
+})
+00156:  62  initprop "getViewSize"
+00161:  66  lambda (function () {
+    [sourceless code]
+})
+00166:  66  initprop "getSelectIconPosArray"
+00171:  81  lambda (function () {
+    [sourceless code]
+})
+00176:  81  initprop "setAllSilverBeSelected"
+00181: 155  lambda (function () {
+    [sourceless code]
+})
+00186: 155  initprop "setAllGoldBeSelected"
+00191: 229  lambda (function () {
+    [sourceless code]
+})
+00196: 229  initprop "setAllJuanZhouBeSelected"
+00201: 280  lambda (function () {
+    [sourceless code]
+})
+00206: 280  initprop "setAllGodBookBeSelected"
+00211: 340  lambda (function () {
+    [sourceless code]
+})
+00216: 340  initprop "selectMaxLength"
+00221: 340  endinit
+00222: 340  notearg
+00223: 340  call 1
+00226: 340  setprop "SkillListTableView"
+00231: 340  popv
+00232: 357  name "xs"
+00237: 357  getprop "Views"
+00242: 357  getprop "Table"
+00247: 357  getprop "SkillListTableView"
+00252: 357  lambda (function () {
+    [sourceless code]
+})
+00257: 357  setprop "create"
+00262: 357  popv
+00263: 369  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:1 ---
+;; function object[0] refreshData
+;; function metadata object[0] nargs=0 bindings=3
+;; local[0] _tmpData
+;; local[1] _tmpJuanZHou
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  getprop "_parent"
+00006:  17  dup
+00007:  17  callprop "getCloneData"
+00012:  17  swap
+00013:  17  notearg
+00014:  17  call 0
+00017:  17  or 29 (+12)
+00022:  17  pop
+00023:  17  newinit 1
+00028:  17  endinit
+00029:  17  setlocal 0
+00032:  17  pop
+00033:  19  name "xs"
+00038:  19  getprop "Profile"
+00043:  19  getprop "GameData"
+00048:  19  getprop "Mgr"
+00053:  19  dup
+00054:  19  callprop "getInstance"
+00059:  19  swap
+00060:  19  notearg
+00061:  19  call 0
+00064:  19  getprop "Items"
+00069:  19  dup
+00070:  19  callprop "getExpJuanZhou"
+00075:  19  swap
+00076:  19  notearg
+00077:  19  call 0
+00080:  19  setlocal 1
+00083:  19  pop
+00084:  20  this
+00085:  20  newarray 0
+00089:  20  endinit
+00090:  20  setprop "_allCloneData"
+00095:  20  pop
+00096:  21  getlocal 0
+00099:  21  length "length"
+00104:  21  zero
+00105:  21  gt
+00106:  21  or 122 (+16)
+00111:  21  pop
+00112:  21  getlocal 1
+00115:  21  length "length"
+00120:  21  zero
+00121:  21  gt
+00122:  21  ifeq 369 (+247)
+00127:  24  zero
+00128:  24  setlocal 2
+00131:  24  pop
+00132:  24  goto 206 (+74)
+00137:  25  loophead
+00138:  25  this
+00139:  25  getprop "_allCloneData"
+00144:  25  dup
+00145:  25  callprop "push"
+00150:  25  swap
+00151:  25  notearg
+00152:  25  name "xs"
+00157:  25  getprop "Models"
+00162:  25  getprop "ShowData"
+00167:  25  dup
+00168:  25  callprop "create"
+00173:  25  swap
+00174:  25  notearg
+00175:  25  getlocal 1
+00178:  25  getlocal 2
+00181:  25  getelem
+00182:  25  notearg
+00183:  25  call 1
+00186:  25  notearg
+00187:  25  call 1
+00190:  25  pop
+00191:  24  localinc 11
+00194:  24  getlocal 2
+00197:  24  pos
+00198:  24  dup
+00199:  24  one
+00200:  24  add
+00201:  24  setlocal 2
+00204:  24  pop
+00205:  24  pop
+00206:  24  loopentry
+00207:  24  getlocal 2
+00210:  24  getlocal 1
+00213:  24  length "length"
+00218:  24  lt
+00219:  24  ifne 137 (-82)
+00224:  27  zero
+00225:  27  setlocal 2
+00228:  27  pop
+00229:  27  goto 303 (+74)
+00234:  28  loophead
+00235:  28  this
+00236:  28  getprop "_allCloneData"
+00241:  28  dup
+00242:  28  callprop "push"
+00247:  28  swap
+00248:  28  notearg
+00249:  28  name "xs"
+00254:  28  getprop "Models"
+00259:  28  getprop "ShowData"
+00264:  28  dup
+00265:  28  callprop "create"
+00270:  28  swap
+00271:  28  notearg
+00272:  28  getlocal 0
+00275:  28  getlocal 2
+00278:  28  getelem
+00279:  28  notearg
+00280:  28  call 1
+00283:  28  notearg
+00284:  28  call 1
+00287:  28  pop
+00288:  27  localinc 11
+00291:  27  getlocal 2
+00294:  27  pos
+00295:  27  dup
+00296:  27  one
+00297:  27  add
+00298:  27  setlocal 2
+00301:  27  pop
+00302:  27  pop
+00303:  27  loopentry
+00304:  27  getlocal 2
+00307:  27  getlocal 0
+00310:  27  length "length"
+00315:  27  lt
+00316:  27  ifne 234 (-82)
+00321:  31  this
+00322:  31  name "xs"
+00327:  31  getprop "Views"
+00332:  31  getprop "Table"
+00337:  31  dup
+00338:  31  callprop "changeDimensionsOneToTwo"
+00343:  31  swap
+00344:  31  notearg
+00345:  31  this
+00346:  31  getprop "_allCloneData"
+00351:  31  notearg
+00352:  31  int8 4
+00354:  31  notearg
+00355:  31  call 2
+00358:  31  setprop "arrayModel"
+00363:  31  pop
+00364:  31  goto 381 (+17)
+00369:  33  this
+00370:  33  newarray 0
+00374:  33  endinit
+00375:  33  setprop "arrayModel"
+00380:  33  pop
+00381:  34  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:15 ---
+;; function object[1] onSortChg
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] sortedData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:39 ---
+;; function object[2] createCell
+;; function metadata object[2] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  43  name "xs"
+00005:  43  getprop "Views"
+00010:  43  getprop "Table"
+00015:  43  getprop "Cell"
+00020:  43  getprop "SkillListTableViewCell"
+00025:  43  dup
+00026:  43  callprop "create"
+00031:  43  swap
+00032:  43  notearg
+00033:  43  this
+00034:  43  getprop "arrayModel"
+00039:  43  getarg 0
+00042:  43  getelem
+00043:  43  notearg
+00044:  43  this
+00045:  43  getprop "_parent"
+00050:  43  notearg
+00051:  43  call 2
+00054:  43  setlocal 0
+00057:  43  pop
+00058:  45  getlocal 0
+00061:  45  return
+00062:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:41 ---
+;; function object[3] makeViewSize
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] size
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:47 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  name "cc"
+00005:  49  dup
+00006:  49  callprop "size"
+00011:  49  swap
+00012:  49  notearg
+00013:  49  uint16 425
+00016:  49  notearg
+00017:  49  uint16 310
+00020:  49  notearg
+00021:  49  call 2
+00024:  49  setlocal 0
+00027:  49  pop
+00028:  50  this
+00029:  50  getprop "_viewSize"
+00034:  50  null
+00035:  50  ne
+00036:  50  ifeq 51 (+15)
+00041:  51  this
+00042:  51  getprop "_viewSize"
+00047:  51  setlocal 0
+00050:  51  pop
+00051:  53  getlocal 0
+00054:  53  return
+00055:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:47 ---
+;; function object[4] tableCellTouched
+;; function metadata object[4] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  60  true
+00001:  60  return
+00002:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:56 ---
+;; function object[5] getViewSize
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  this
+00001:  63  getprop "_viewSize"
+00006:  63  return
+00007:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:62 ---
+;; function object[6] getSelectIconPosArray
+;; function metadata object[6] nargs=0 bindings=4
+;; local[0] posArray
+;; local[1] arr
+;; local[2] i
+;; local[3] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:66 ---
+loc   line  op
+----- ----  --
+main:
+00000:  68  newarray 0
+00004:  68  endinit
+00005:  68  setlocal 0
+00008:  68  pop
+00009:  69  newarray 0
+00013:  69  endinit
+00014:  69  setlocal 1
+00017:  69  pop
+00018:  70  zero
+00019:  70  setlocal 2
+00022:  70  pop
+00023:  70  goto 105 (+82)
+00028:  71  loophead
+00029:  71  this
+00030:  71  dup
+00031:  71  callprop "cellAtIndex"
+00036:  71  swap
+00037:  71  notearg
+00038:  71  getlocal 2
+00041:  71  notearg
+00042:  71  call 1
+00045:  71  setlocal 3
+00048:  71  pop
+00049:  73  getlocal 3
+00052:  73  ifeq 90 (+38)
+00057:  74  getlocal 0
+00060:  74  dup
+00061:  74  callprop "concat"
+00066:  74  swap
+00067:  74  notearg
+00068:  74  getlocal 3
+00071:  74  dup
+00072:  74  callprop "getSelectIconPosArray"
+00077:  74  swap
+00078:  74  notearg
+00079:  74  call 0
+00082:  74  notearg
+00083:  74  call 1
+00086:  74  setlocal 0
+00089:  74  pop
+00090:  70  localinc 11
+00093:  70  getlocal 2
+00096:  70  pos
+00097:  70  dup
+00098:  70  one
+00099:  70  add
+00100:  70  setlocal 2
+00103:  70  pop
+00104:  70  pop
+00105:  70  loopentry
+00106:  70  getlocal 2
+00109:  70  this
+00110:  70  getprop "arrayModel"
+00115:  70  length "length"
+00120:  70  lt
+00121:  70  ifne 28 (-93)
+00126:  78  getlocal 0
+00129:  78  return
+00130:  78  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:66 ---
+;; function object[7] setAllSilverBeSelected
+;; function metadata object[7] nargs=0 bindings=9
+;; local[0] _totalExp
+;; local[1] _curExp
+;; local[2] _addExp
+;; local[3] expPerUnit
+;; local[4] itemId
+;; local[5] i
+;; local[6] cell
+;; local[7] j
+;; local[8] item
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:81 ---
+loc   line  op
+----- ----  --
+main:
+00000:  82  this
+00001:  82  getprop "_parent"
+00006:  82  dup
+00007:  82  callprop "getMaxSkillExp"
+00012:  82  swap
+00013:  82  notearg
+00014:  82  call 0
+00017:  82  setlocal 0
+00020:  82  pop
+00021:  83  this
+00022:  83  getprop "_parent"
+00027:  83  dup
+00028:  83  callprop "_getPreviewCloneData"
+00033:  83  swap
+00034:  83  notearg
+00035:  83  call 0
+00038:  83  dup
+00039:  83  callprop "getTotalExp"
+00044:  83  swap
+00045:  83  notearg
+00046:  83  call 0
+00049:  83  setlocal 1
+00052:  83  pop
+00053:  84  this
+00054:  84  getprop "_parent"
+00059:  84  dup
+00060:  84  callprop "_caculateSelectDataExp"
+00065:  84  swap
+00066:  84  notearg
+00067:  84  call 0
+00070:  84  setlocal 2
+00073:  84  pop
+00074:  85  null
+00075:  85  setlocal 3
+00078:  85  pop
+00079:  86  int8 -1
+00081:  86  setlocal 4
+00084:  86  pop
+00085:  88  zero
+00086:  88  setlocal 5
+00089:  88  pop
+00090:  88  goto 605 (+515)
+00095:  90  loophead
+00096:  90  this
+00097:  90  dup
+00098:  90  callprop "cellAtIndex"
+00103:  90  swap
+00104:  90  notearg
+00105:  90  getlocal 5
+00108:  90  notearg
+00109:  90  call 1
+00112:  90  setlocal 6
+00115:  90  pop
+00116:  91  zero
+00117:  91  setlocal 7
+00120:  91  pop
+00121:  91  goto 565 (+444)
+00126:  93  loophead
+00127:  93  this
+00128:  93  getprop "arrayModel"
+00133:  93  getlocal 5
+00136:  93  getelem
+00137:  93  getlocal 7
+00140:  93  getelem
+00141:  93  setlocal 8
+00144:  93  pop
+00145:  94  getlocal 8
+00148:  94  dup
+00149:  94  callprop "getSelectNum"
+00154:  94  swap
+00155:  94  notearg
+00156:  94  call 0
+00159:  94  zero
+00160:  94  eq
+00161:  94  and 250 (+89)
+00166:  94  pop
+00167:  94  getlocal 8
+00170:  94  dup
+00171:  94  callprop "getOriModel"
+00176:  94  swap
+00177:  94  notearg
+00178:  94  call 0
+00181:  94  dup
+00182:  94  callprop "getGrade"
+00187:  94  swap
+00188:  94  notearg
+00189:  94  call 0
+00192:  94  name "xs"
+00197:  94  getprop "Constant_Grade_Silver"
+00202:  94  eq
+00203:  94  and 250 (+47)
+00208:  94  pop
+00209:  95  getlocal 8
+00212:  95  dup
+00213:  95  callprop "getOriModel"
+00218:  95  swap
+00219:  95  notearg
+00220:  95  call 0
+00223:  95  dup
+00224:  95  callprop "getId"
+00229:  95  swap
+00230:  95  notearg
+00231:  95  call 0
+00234:  95  name "xs"
+00239:  95  getprop "Models"
+00244:  95  getprop "ItemID_JuanZhou_chuji"
+00249:  95  ne
+00250:  95  ifeq 550 (+300)
+00255:  96  getlocal 3
+00258:  96  null
+00259:  96  eq
+00260:  96  ifeq 328 (+68)
+00265:  97  getlocal 8
+00268:  97  dup
+00269:  97  callprop "getOriModel"
+00274:  97  swap
+00275:  97  notearg
+00276:  97  call 0
+00279:  97  dup
+00280:  97  callprop "getId"
+00285:  97  swap
+00286:  97  notearg
+00287:  97  call 0
+00290:  97  setlocal 4
+00293:  97  pop
+00294:  98  getlocal 8
+00297:  98  dup
+00298:  98  callprop "getOriModel"
+00303:  98  swap
+00304:  98  notearg
+00305:  98  call 0
+00308:  98  dup
+00309:  98  callprop "getEatedProExp"
+00314:  98  swap
+00315:  98  notearg
+00316:  98  call 0
+00319:  98  setlocal 3
+00322:  98  pop
+00323:  98  goto 420 (+97)
+00328: 102  getlocal 4
+00331: 102  getlocal 8
+00334: 102  dup
+00335: 102  callprop "getOriModel"
+00340: 102  swap
+00341: 102  notearg
+00342: 102  call 0
+00345: 102  dup
+00346: 102  callprop "getId"
+00351: 102  swap
+00352: 102  notearg
+00353: 102  call 0
+00356: 102  ne
+00357: 102  ifeq 420 (+63)
+00362: 104  getlocal 8
+00365: 104  dup
+00366: 104  callprop "getOriModel"
+00371: 104  swap
+00372: 104  notearg
+00373: 104  call 0
+00376: 104  dup
+00377: 104  callprop "getId"
+00382: 104  swap
+00383: 104  notearg
+00384: 104  call 0
+00387: 104  setlocal 4
+00390: 104  pop
+00391: 105  getlocal 8
+00394: 105  dup
+00395: 105  callprop "getOriModel"
+00400: 105  swap
+00401: 105  notearg
+00402: 105  call 0
+00405: 105  dup
+00406: 105  callprop "getEatedProExp"
+00411: 105  swap
+00412: 105  notearg
+00413: 105  call 0
+00416: 105  setlocal 3
+00419: 105  pop
+00420: 111  getlocal 8
+00423: 111  dup
+00424: 111  callprop "addSelectNum"
+00429: 111  swap
+00430: 111  notearg
+00431: 111  call 0
+00434: 111  pop
+00435: 112  getlocal 2
+00438: 112  getlocal 3
+00441: 112  add
+00442: 112  setlocal 2
+00445: 112  pop
+00446: 113  this
+00447: 113  getprop "_parent"
+00452: 113  dup
+00453: 113  callprop "getSelectData"
+00458: 113  swap
+00459: 113  notearg
+00460: 113  call 0
+00463: 113  dup
+00464: 113  callprop "set"
+00469: 113  swap
+00470: 113  notearg
+00471: 113  getlocal 8
+00474: 113  dup
+00475: 113  callprop "getOriModel"
+00480: 113  swap
+00481: 113  notearg
+00482: 113  call 0
+00485: 113  dup
+00486: 113  callprop "getPkId"
+00491: 113  swap
+00492: 113  notearg
+00493: 113  call 0
+00496: 113  notearg
+00497: 113  getlocal 8
+00500: 113  notearg
+00501: 113  call 2
+00504: 113  pop
+00505: 115  getlocal 6
+00508: 115  ifeq 532 (+24)
+00513: 116  getlocal 6
+00516: 116  dup
+00517: 116  callprop "reloadItem"
+00522: 116  swap
+00523: 116  notearg
+00524: 116  getlocal 7
+00527: 116  notearg
+00528: 116  call 1
+00531: 116  pop
+00532: 118  getlocal 2
+00535: 118  getlocal 1
+00538: 118  add
+00539: 118  getlocal 0
+00542: 118  ge
+00543: 118  ifeq 550 (+7)
+00548: 119  undefined
+00549: 119  return
+00550:  91  localinc 11
+00553:  91  getlocal 7
+00556:  91  pos
+00557:  91  dup
+00558:  91  one
+00559:  91  add
+00560:  91  setlocal 7
+00563:  91  pop
+00564:  91  pop
+00565:  91  loopentry
+00566:  91  getlocal 7
+00569:  91  this
+00570:  91  getprop "arrayModel"
+00575:  91  getlocal 5
+00578:  91  getelem
+00579:  91  length "length"
+00584:  91  lt
+00585:  91  ifne 126 (-459)
+00590:  88  localinc 11
+00593:  88  getlocal 5
+00596:  88  pos
+00597:  88  dup
+00598:  88  one
+00599:  88  add
+00600:  88  setlocal 5
+00603:  88  pop
+00604:  88  pop
+00605:  88  loopentry
+00606:  88  getlocal 5
+00609:  88  this
+00610:  88  getprop "arrayModel"
+00615:  88  length "length"
+00620:  88  lt
+00621:  88  ifne 95 (-526)
+00626: 124  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:81 ---
+;; function object[8] setAllGoldBeSelected
+;; function metadata object[8] nargs=0 bindings=9
+;; local[0] _totalExp
+;; local[1] _curExp
+;; local[2] _addExp
+;; local[3] expPerUnit
+;; local[4] itemId
+;; local[5] i
+;; local[6] cell
+;; local[7] j
+;; local[8] item
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:155 ---
+loc   line  op
+----- ----  --
+main:
+00000: 157  this
+00001: 157  getprop "_parent"
+00006: 157  dup
+00007: 157  callprop "getMaxSkillExp"
+00012: 157  swap
+00013: 157  notearg
+00014: 157  call 0
+00017: 157  setlocal 0
+00020: 157  pop
+00021: 158  this
+00022: 158  getprop "_parent"
+00027: 158  dup
+00028: 158  callprop "_getPreviewCloneData"
+00033: 158  swap
+00034: 158  notearg
+00035: 158  call 0
+00038: 158  dup
+00039: 158  callprop "getTotalExp"
+00044: 158  swap
+00045: 158  notearg
+00046: 158  call 0
+00049: 158  setlocal 1
+00052: 158  pop
+00053: 159  this
+00054: 159  getprop "_parent"
+00059: 159  dup
+00060: 159  callprop "_caculateSelectDataExp"
+00065: 159  swap
+00066: 159  notearg
+00067: 159  call 0
+00070: 159  setlocal 2
+00073: 159  pop
+00074: 160  null
+00075: 160  setlocal 3
+00078: 160  pop
+00079: 161  int8 -1
+00081: 161  setlocal 4
+00084: 161  pop
+00085: 163  zero
+00086: 163  setlocal 5
+00089: 163  pop
+00090: 163  goto 605 (+515)
+00095: 165  loophead
+00096: 165  this
+00097: 165  dup
+00098: 165  callprop "cellAtIndex"
+00103: 165  swap
+00104: 165  notearg
+00105: 165  getlocal 5
+00108: 165  notearg
+00109: 165  call 1
+00112: 165  setlocal 6
+00115: 165  pop
+00116: 166  zero
+00117: 166  setlocal 7
+00120: 166  pop
+00121: 166  goto 565 (+444)
+00126: 168  loophead
+00127: 168  this
+00128: 168  getprop "arrayModel"
+00133: 168  getlocal 5
+00136: 168  getelem
+00137: 168  getlocal 7
+00140: 168  getelem
+00141: 168  setlocal 8
+00144: 168  pop
+00145: 169  getlocal 8
+00148: 169  dup
+00149: 169  callprop "getSelectNum"
+00154: 169  swap
+00155: 169  notearg
+00156: 169  call 0
+00159: 169  zero
+00160: 169  eq
+00161: 169  and 250 (+89)
+00166: 169  pop
+00167: 169  getlocal 8
+00170: 169  dup
+00171: 169  callprop "getOriModel"
+00176: 169  swap
+00177: 169  notearg
+00178: 169  call 0
+00181: 169  dup
+00182: 169  callprop "getGrade"
+00187: 169  swap
+00188: 169  notearg
+00189: 169  call 0
+00192: 169  name "xs"
+00197: 169  getprop "Constant_Grade_Gold"
+00202: 169  eq
+00203: 169  and 250 (+47)
+00208: 169  pop
+00209: 170  getlocal 8
+00212: 170  dup
+00213: 170  callprop "getOriModel"
+00218: 170  swap
+00219: 170  notearg
+00220: 170  call 0
+00223: 170  dup
+00224: 170  callprop "getId"
+00229: 170  swap
+00230: 170  notearg
+00231: 170  call 0
+00234: 170  name "xs"
+00239: 170  getprop "Models"
+00244: 170  getprop "ItemID_JuanZhou_zhongji"
+00249: 170  ne
+00250: 170  ifeq 550 (+300)
+00255: 171  getlocal 3
+00258: 171  null
+00259: 171  eq
+00260: 171  ifeq 328 (+68)
+00265: 172  getlocal 8
+00268: 172  dup
+00269: 172  callprop "getOriModel"
+00274: 172  swap
+00275: 172  notearg
+00276: 172  call 0
+00279: 172  dup
+00280: 172  callprop "getId"
+00285: 172  swap
+00286: 172  notearg
+00287: 172  call 0
+00290: 172  setlocal 4
+00293: 172  pop
+00294: 173  getlocal 8
+00297: 173  dup
+00298: 173  callprop "getOriModel"
+00303: 173  swap
+00304: 173  notearg
+00305: 173  call 0
+00308: 173  dup
+00309: 173  callprop "getEatedProExp"
+00314: 173  swap
+00315: 173  notearg
+00316: 173  call 0
+00319: 173  setlocal 3
+00322: 173  pop
+00323: 173  goto 420 (+97)
+00328: 177  getlocal 4
+00331: 177  getlocal 8
+00334: 177  dup
+00335: 177  callprop "getOriModel"
+00340: 177  swap
+00341: 177  notearg
+00342: 177  call 0
+00345: 177  dup
+00346: 177  callprop "getId"
+00351: 177  swap
+00352: 177  notearg
+00353: 177  call 0
+00356: 177  ne
+00357: 177  ifeq 420 (+63)
+00362: 179  getlocal 8
+00365: 179  dup
+00366: 179  callprop "getOriModel"
+00371: 179  swap
+00372: 179  notearg
+00373: 179  call 0
+00376: 179  dup
+00377: 179  callprop "getId"
+00382: 179  swap
+00383: 179  notearg
+00384: 179  call 0
+00387: 179  setlocal 4
+00390: 179  pop
+00391: 180  getlocal 8
+00394: 180  dup
+00395: 180  callprop "getOriModel"
+00400: 180  swap
+00401: 180  notearg
+00402: 180  call 0
+00405: 180  dup
+00406: 180  callprop "getEatedProExp"
+00411: 180  swap
+00412: 180  notearg
+00413: 180  call 0
+00416: 180  setlocal 3
+00419: 180  pop
+00420: 186  getlocal 8
+00423: 186  dup
+00424: 186  callprop "addSelectNum"
+00429: 186  swap
+00430: 186  notearg
+00431: 186  call 0
+00434: 186  pop
+00435: 187  getlocal 2
+00438: 187  getlocal 3
+00441: 187  add
+00442: 187  setlocal 2
+00445: 187  pop
+00446: 188  this
+00447: 188  getprop "_parent"
+00452: 188  dup
+00453: 188  callprop "getSelectData"
+00458: 188  swap
+00459: 188  notearg
+00460: 188  call 0
+00463: 188  dup
+00464: 188  callprop "set"
+00469: 188  swap
+00470: 188  notearg
+00471: 188  getlocal 8
+00474: 188  dup
+00475: 188  callprop "getOriModel"
+00480: 188  swap
+00481: 188  notearg
+00482: 188  call 0
+00485: 188  dup
+00486: 188  callprop "getPkId"
+00491: 188  swap
+00492: 188  notearg
+00493: 188  call 0
+00496: 188  notearg
+00497: 188  getlocal 8
+00500: 188  notearg
+00501: 188  call 2
+00504: 188  pop
+00505: 190  getlocal 6
+00508: 190  ifeq 532 (+24)
+00513: 191  getlocal 6
+00516: 191  dup
+00517: 191  callprop "reloadItem"
+00522: 191  swap
+00523: 191  notearg
+00524: 191  getlocal 7
+00527: 191  notearg
+00528: 191  call 1
+00531: 191  pop
+00532: 193  getlocal 2
+00535: 193  getlocal 1
+00538: 193  add
+00539: 193  getlocal 0
+00542: 193  ge
+00543: 193  ifeq 550 (+7)
+00548: 194  undefined
+00549: 194  return
+00550: 166  localinc 11
+00553: 166  getlocal 7
+00556: 166  pos
+00557: 166  dup
+00558: 166  one
+00559: 166  add
+00560: 166  setlocal 7
+00563: 166  pop
+00564: 166  pop
+00565: 166  loopentry
+00566: 166  getlocal 7
+00569: 166  this
+00570: 166  getprop "arrayModel"
+00575: 166  getlocal 5
+00578: 166  getelem
+00579: 166  length "length"
+00584: 166  lt
+00585: 166  ifne 126 (-459)
+00590: 163  localinc 11
+00593: 163  getlocal 5
+00596: 163  pos
+00597: 163  dup
+00598: 163  one
+00599: 163  add
+00600: 163  setlocal 5
+00603: 163  pop
+00604: 163  pop
+00605: 163  loopentry
+00606: 163  getlocal 5
+00609: 163  this
+00610: 163  getprop "arrayModel"
+00615: 163  length "length"
+00620: 163  lt
+00621: 163  ifne 95 (-526)
+00626: 199  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:155 ---
+;; function object[9] setAllJuanZhouBeSelected
+;; function metadata object[9] nargs=0 bindings=12
+;; local[0] _totalExp
+;; local[1] _curExp
+;; local[2] _addExp
+;; local[3] i
+;; local[4] cell
+;; local[5] j
+;; local[6] item
+;; local[7] startIndex
+;; local[8] totalNum
+;; local[9] expPerUnit
+;; local[10] loseNum
+;; local[11] addNum
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:229 ---
+loc   line  op
+----- ----  --
+main:
+00000: 230  this
+00001: 230  getprop "_parent"
+00006: 230  dup
+00007: 230  callprop "getMaxSkillExp"
+00012: 230  swap
+00013: 230  notearg
+00014: 230  call 0
+00017: 230  setlocal 0
+00020: 230  pop
+00021: 231  this
+00022: 231  getprop "_parent"
+00027: 231  dup
+00028: 231  callprop "_getPreviewCloneData"
+00033: 231  swap
+00034: 231  notearg
+00035: 231  call 0
+00038: 231  dup
+00039: 231  callprop "getTotalExp"
+00044: 231  swap
+00045: 231  notearg
+00046: 231  call 0
+00049: 231  setlocal 1
+00052: 231  pop
+00053: 232  this
+00054: 232  getprop "_parent"
+00059: 232  dup
+00060: 232  callprop "_caculateSelectDataExp"
+00065: 232  swap
+00066: 232  notearg
+00067: 232  call 0
+00070: 232  setlocal 2
+00073: 232  pop
+00074: 234  zero
+00075: 234  setlocal 3
+00078: 234  pop
+00079: 234  goto 665 (+586)
+00084: 236  loophead
+00085: 236  this
+00086: 236  dup
+00087: 236  callprop "cellAtIndex"
+00092: 236  swap
+00093: 236  notearg
+00094: 236  getlocal 3
+00097: 236  notearg
+00098: 236  call 1
+00101: 236  setlocal 4
+00104: 236  pop
+00105: 237  zero
+00106: 237  setlocal 5
+00109: 237  pop
+00110: 237  goto 625 (+515)
+00115: 239  loophead
+00116: 239  this
+00117: 239  getprop "arrayModel"
+00122: 239  getlocal 3
+00125: 239  getelem
+00126: 239  getlocal 5
+00129: 239  getelem
+00130: 239  setlocal 6
+00133: 239  pop
+00134: 240  getlocal 6
+00137: 240  dup
+00138: 240  callprop "getOriModel"
+00143: 240  swap
+00144: 240  notearg
+00145: 240  call 0
+00148: 240  dup
+00149: 240  callprop "getId"
+00154: 240  swap
+00155: 240  notearg
+00156: 240  call 0
+00159: 240  name "xs"
+00164: 240  getprop "Models"
+00169: 240  getprop "ItemID_JuanZhou_chuji"
+00174: 240  eq
+00175: 240  or 269 (+94)
+00180: 240  pop
+00181: 241  getlocal 6
+00184: 241  dup
+00185: 241  callprop "getOriModel"
+00190: 241  swap
+00191: 241  notearg
+00192: 241  call 0
+00195: 241  dup
+00196: 241  callprop "getId"
+00201: 241  swap
+00202: 241  notearg
+00203: 241  call 0
+00206: 241  name "xs"
+00211: 241  getprop "Models"
+00216: 241  getprop "ItemID_JuanZhou_zhongji"
+00221: 241  eq
+00222: 241  or 269 (+47)
+00227: 241  pop
+00228: 242  getlocal 6
+00231: 242  dup
+00232: 242  callprop "getOriModel"
+00237: 242  swap
+00238: 242  notearg
+00239: 242  call 0
+00242: 242  dup
+00243: 242  callprop "getId"
+00248: 242  swap
+00249: 242  notearg
+00250: 242  call 0
+00253: 242  name "xs"
+00258: 242  getprop "Models"
+00263: 242  getprop "ItemID_JuanZhou_gaoji"
+00268: 242  eq
+00269: 242  ifeq 610 (+341)
+00274: 244  getlocal 6
+00277: 244  dup
+00278: 244  callprop "getSelectNum"
+00283: 244  swap
+00284: 244  notearg
+00285: 244  call 0
+00288: 244  setlocal 7
+00291: 244  pop
+00292: 245  getlocal 6
+00295: 245  dup
+00296: 245  callprop "getOriModel"
+00301: 245  swap
+00302: 245  notearg
+00303: 245  call 0
+00306: 245  dup
+00307: 245  callprop "getNum"
+00312: 245  swap
+00313: 245  notearg
+00314: 245  call 0
+00317: 245  setlocal 8
+00320: 245  pop
+00321: 247  getlocal 7
+00324: 247  getlocal 8
+00327: 247  lt
+00328: 247  ifeq 506 (+178)
+00333: 249  getlocal 6
+00336: 249  dup
+00337: 249  callprop "getOriModel"
+00342: 249  swap
+00343: 249  notearg
+00344: 249  call 0
+00347: 249  dup
+00348: 249  callprop "getEatedProExp"
+00353: 249  swap
+00354: 249  notearg
+00355: 249  call 0
+00358: 249  setlocal 9
+00361: 249  pop
+00362: 250  getlocal 8
+00365: 250  getlocal 7
+00368: 250  sub
+00369: 250  setlocal 10
+00372: 250  pop
+00373: 251  getlocal 10
+00376: 251  getlocal 9
+00379: 251  mul
+00380: 251  getlocal 2
+00383: 251  add
+00384: 251  getlocal 1
+00387: 251  add
+00388: 251  getlocal 0
+00391: 251  gt
+00392: 251  ifeq 476 (+84)
+00397: 253  name "Math"
+00402: 253  dup
+00403: 253  callprop "ceil"
+00408: 253  swap
+00409: 253  notearg
+00410: 253  getlocal 0
+00413: 253  getlocal 2
+00416: 253  sub
+00417: 253  getlocal 1
+00420: 253  sub
+00421: 253  getlocal 9
+00424: 253  div
+00425: 253  notearg
+00426: 253  call 1
+00429: 253  setlocal 11
+00432: 253  pop
+00433: 254  getlocal 6
+00436: 254  dup
+00437: 254  callprop "setSelectNum"
+00442: 254  swap
+00443: 254  notearg
+00444: 254  getlocal 7
+00447: 254  getlocal 11
+00450: 254  add
+00451: 254  notearg
+00452: 254  call 1
+00455: 254  pop
+00456: 255  getlocal 2
+00459: 255  getlocal 11
+00462: 255  getlocal 9
+00465: 255  mul
+00466: 255  add
+00467: 255  setlocal 2
+00470: 255  pop
+00471: 255  goto 506 (+35)
+00476: 259  getlocal 6
+00479: 259  dup
+00480: 259  callprop "setSelectMaxNum"
+00485: 259  swap
+00486: 259  notearg
+00487: 259  call 0
+00490: 259  pop
+00491: 260  getlocal 2
+00494: 260  getlocal 10
+00497: 260  getlocal 9
+00500: 260  mul
+00501: 260  add
+00502: 260  setlocal 2
+00505: 260  pop
+00506: 264  this
+00507: 264  getprop "_parent"
+00512: 264  dup
+00513: 264  callprop "getSelectData"
+00518: 264  swap
+00519: 264  notearg
+00520: 264  call 0
+00523: 264  dup
+00524: 264  callprop "set"
+00529: 264  swap
+00530: 264  notearg
+00531: 264  getlocal 6
+00534: 264  dup
+00535: 264  callprop "getOriModel"
+00540: 264  swap
+00541: 264  notearg
+00542: 264  call 0
+00545: 264  dup
+00546: 264  callprop "getPkId"
+00551: 264  swap
+00552: 264  notearg
+00553: 264  call 0
+00556: 264  notearg
+00557: 264  getlocal 6
+00560: 264  notearg
+00561: 264  call 2
+00564: 264  pop
+00565: 267  getlocal 4
+00568: 267  ifeq 592 (+24)
+00573: 268  getlocal 4
+00576: 268  dup
+00577: 268  callprop "reloadItem"
+00582: 268  swap
+00583: 268  notearg
+00584: 268  getlocal 5
+00587: 268  notearg
+00588: 268  call 1
+00591: 268  pop
+00592: 270  getlocal 2
+00595: 270  getlocal 1
+00598: 270  add
+00599: 270  getlocal 0
+00602: 270  ge
+00603: 270  ifeq 610 (+7)
+00608: 272  undefined
+00609: 272  return
+00610: 237  localinc 11
+00613: 237  getlocal 5
+00616: 237  pos
+00617: 237  dup
+00618: 237  one
+00619: 237  add
+00620: 237  setlocal 5
+00623: 237  pop
+00624: 237  pop
+00625: 237  loopentry
+00626: 237  getlocal 5
+00629: 237  this
+00630: 237  getprop "arrayModel"
+00635: 237  getlocal 3
+00638: 237  getelem
+00639: 237  length "length"
+00644: 237  lt
+00645: 237  ifne 115 (-530)
+00650: 234  localinc 11
+00653: 234  getlocal 3
+00656: 234  pos
+00657: 234  dup
+00658: 234  one
+00659: 234  add
+00660: 234  setlocal 3
+00663: 234  pop
+00664: 234  pop
+00665: 234  loopentry
+00666: 234  getlocal 3
+00669: 234  this
+00670: 234  getprop "arrayModel"
+00675: 234  length "length"
+00680: 234  lt
+00681: 234  ifne 84 (-597)
+00686: 278  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:229 ---
+;; function object[10] setAllGodBookBeSelected
+;; function metadata object[10] nargs=0 bindings=8
+;; local[0] _totalExp
+;; local[1] _curExp
+;; local[2] _addExp
+;; local[3] expPerUnit
+;; local[4] i
+;; local[5] cell
+;; local[6] j
+;; local[7] item
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:280 ---
+loc   line  op
+----- ----  --
+main:
+00000: 281  name "xs"
+00005: 281  dup
+00006: 281  callprop "log_ck"
+00011: 281  swap
+00012: 281  notearg
+00013: 281  string "SkillListTableView setAllGodBookBeSelected"
+00018: 281  notearg
+00019: 281  call 1
+00022: 281  pop
+00023: 282  this
+00024: 282  getprop "_parent"
+00029: 282  dup
+00030: 282  callprop "getMaxSkillExp"
+00035: 282  swap
+00036: 282  notearg
+00037: 282  call 0
+00040: 282  setlocal 0
+00043: 282  pop
+00044: 283  this
+00045: 283  getprop "_parent"
+00050: 283  dup
+00051: 283  callprop "_getPreviewCloneData"
+00056: 283  swap
+00057: 283  notearg
+00058: 283  call 0
+00061: 283  dup
+00062: 283  callprop "getTotalExp"
+00067: 283  swap
+00068: 283  notearg
+00069: 283  call 0
+00072: 283  setlocal 1
+00075: 283  pop
+00076: 284  this
+00077: 284  getprop "_parent"
+00082: 284  dup
+00083: 284  callprop "_caculateSelectDataExp"
+00088: 284  swap
+00089: 284  notearg
+00090: 284  call 0
+00093: 284  setlocal 2
+00096: 284  pop
+00097: 285  null
+00098: 285  setlocal 3
+00101: 285  pop
+00102: 287  zero
+00103: 287  setlocal 4
+00106: 287  pop
+00107: 287  goto 454 (+347)
+00112: 289  loophead
+00113: 289  this
+00114: 289  dup
+00115: 289  callprop "cellAtIndex"
+00120: 289  swap
+00121: 289  notearg
+00122: 289  getlocal 4
+00125: 289  notearg
+00126: 289  call 1
+00129: 289  setlocal 5
+00132: 289  pop
+00133: 290  zero
+00134: 290  setlocal 6
+00137: 290  pop
+00138: 290  goto 414 (+276)
+00143: 292  loophead
+00144: 292  this
+00145: 292  getprop "arrayModel"
+00150: 292  getlocal 4
+00153: 292  getelem
+00154: 292  getlocal 6
+00157: 292  getelem
+00158: 292  setlocal 7
+00161: 292  pop
+00162: 293  getlocal 7
+00165: 293  dup
+00166: 293  callprop "getSelectNum"
+00171: 293  swap
+00172: 293  notearg
+00173: 293  call 0
+00176: 293  zero
+00177: 293  eq
+00178: 293  and 225 (+47)
+00183: 293  pop
+00184: 293  getlocal 7
+00187: 293  dup
+00188: 293  callprop "getOriModel"
+00193: 293  swap
+00194: 293  notearg
+00195: 293  call 0
+00198: 293  dup
+00199: 293  callprop "getId"
+00204: 293  swap
+00205: 293  notearg
+00206: 293  call 0
+00209: 293  name "xs"
+00214: 293  getprop "Models"
+00219: 293  getprop "ItemID_GodBook"
+00224: 293  eq
+00225: 293  ifeq 399 (+174)
+00230: 294  getlocal 3
+00233: 294  null
+00234: 294  eq
+00235: 294  ifeq 269 (+34)
+00240: 295  getlocal 7
+00243: 295  dup
+00244: 295  callprop "getOriModel"
+00249: 295  swap
+00250: 295  notearg
+00251: 295  call 0
+00254: 295  dup
+00255: 295  callprop "getEatedProExp"
+00260: 295  swap
+00261: 295  notearg
+00262: 295  call 0
+00265: 295  setlocal 3
+00268: 295  pop
+00269: 298  getlocal 7
+00272: 298  dup
+00273: 298  callprop "addSelectNum"
+00278: 298  swap
+00279: 298  notearg
+00280: 298  call 0
+00283: 298  pop
+00284: 299  getlocal 2
+00287: 299  getlocal 3
+00290: 299  add
+00291: 299  setlocal 2
+00294: 299  pop
+00295: 300  this
+00296: 300  getprop "_parent"
+00301: 300  dup
+00302: 300  callprop "getSelectData"
+00307: 300  swap
+00308: 300  notearg
+00309: 300  call 0
+00312: 300  dup
+00313: 300  callprop "set"
+00318: 300  swap
+00319: 300  notearg
+00320: 300  getlocal 7
+00323: 300  dup
+00324: 300  callprop "getOriModel"
+00329: 300  swap
+00330: 300  notearg
+00331: 300  call 0
+00334: 300  dup
+00335: 300  callprop "getPkId"
+00340: 300  swap
+00341: 300  notearg
+00342: 300  call 0
+00345: 300  notearg
+00346: 300  getlocal 7
+00349: 300  notearg
+00350: 300  call 2
+00353: 300  pop
+00354: 302  getlocal 5
+00357: 302  ifeq 381 (+24)
+00362: 303  getlocal 5
+00365: 303  dup
+00366: 303  callprop "reloadItem"
+00371: 303  swap
+00372: 303  notearg
+00373: 303  getlocal 6
+00376: 303  notearg
+00377: 303  call 1
+00380: 303  pop
+00381: 305  getlocal 2
+00384: 305  getlocal 1
+00387: 305  add
+00388: 305  getlocal 0
+00391: 305  ge
+00392: 305  ifeq 399 (+7)
+00397: 306  undefined
+00398: 306  return
+00399: 290  localinc 11
+00402: 290  getlocal 6
+00405: 290  pos
+00406: 290  dup
+00407: 290  one
+00408: 290  add
+00409: 290  setlocal 6
+00412: 290  pop
+00413: 290  pop
+00414: 290  loopentry
+00415: 290  getlocal 6
+00418: 290  this
+00419: 290  getprop "arrayModel"
+00424: 290  getlocal 4
+00427: 290  getelem
+00428: 290  length "length"
+00433: 290  lt
+00434: 290  ifne 143 (-291)
+00439: 287  localinc 11
+00442: 287  getlocal 4
+00445: 287  pos
+00446: 287  dup
+00447: 287  one
+00448: 287  add
+00449: 287  setlocal 4
+00452: 287  pop
+00453: 287  pop
+00454: 287  loopentry
+00455: 287  getlocal 4
+00458: 287  this
+00459: 287  getprop "arrayModel"
+00464: 287  length "length"
+00469: 287  lt
+00470: 287  ifne 112 (-358)
+00475: 311  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:280 ---
+;; function object[11] selectMaxLength
+;; function metadata object[11] nargs=2 bindings=2
+;; arg[0] i
+;; arg[1] j
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:340 ---
+loc   line  op
+----- ----  --
+main:
+00000: 342  getarg 0
+00003: 342  one
+00004: 342  add
+00005: 342  int8 4
+00007: 342  mul
+00008: 342  getarg 1
+00011: 342  add
+00012: 342  this
+00013: 342  getprop "Cfg"
+00018: 342  getprop "maxLength"
+00023: 342  gt
+00024: 342  return
+00025: 342  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:340 ---
+;; function object[12] create
+;; function metadata object[12] nargs=3 bindings=4
+;; arg[0] viewSize
+;; arg[1] cellData
+;; arg[2] target
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:357 ---
+loc   line  op
+----- ----  --
+main:
+00000: 359  name "xs"
+00005: 359  getprop "Views"
+00010: 359  getprop "Table"
+00015: 359  getprop "SkillListTableView"
+00020: 359  undefined
+00021: 359  notearg
+00022: 359  new 0
+00025: 359  setlocal 0
+00028: 359  pop
+00029: 360  getlocal 0
+00032: 360  getarg 0
+00035: 360  setprop "_viewSize"
+00040: 360  pop
+00041: 361  getlocal 0
+00044: 361  getarg 1
+00047: 361  setprop "_cellData"
+00052: 361  pop
+00053: 362  getlocal 0
+00056: 362  getarg 2
+00059: 362  setprop "_parent"
+00064: 362  pop
+00065: 364  getlocal 0
+00068: 364  and 88 (+20)
+00073: 364  pop
+00074: 364  getlocal 0
+00077: 364  dup
+00078: 364  callprop "init"
+00083: 364  swap
+00084: 364  notearg
+00085: 364  call 0
+00088: 364  ifeq 97 (+9)
+00093: 365  getlocal 0
+00096: 365  return
+00097: 367  this
+00098: 367  dup
+00099: 367  callprop "error"
+00104: 367  swap
+00105: 367  notearg
+00106: 367  string "SkillListTableView.create:"
+00111: 367  notearg
+00112: 367  call 1
+00115: 367  pop
+00116: 368  null
+00117: 368  return
+00118: 368  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillListTableView.js:357 ---

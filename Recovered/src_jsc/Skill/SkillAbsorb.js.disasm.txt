@@ -1,0 +1,160 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/SkillAbsorb.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/SkillAbsorb.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Utils"
+00010:   8  dup
+00011:   8  callprop "extendScope"
+00016:   8  swap
+00017:   8  notearg
+00018:   9  name "xs"
+00023:   9  getprop "Cfg"
+00028:   9  getprop "Skill"
+00033:   9  notearg
+00034:  10  newinit 1
+00039:  12  newinit 1
+00044:  13  string "template.T_Absorb_Atk_0"
+00049:  13  initprop "extend"
+00054:  13  endinit
+00055:  13  initprop "guixin_TEST"
+00060:  17  newinit 1
+00065:  17  endinit
+00066:  17  initprop "jianxiong_0"
+00071:  18  newinit 1
+00076:  19  string "template.T_Buff_Super"
+00081:  19  initprop "extend"
+00086:  20  newinit 1
+00091:  21  string "Spawn"
+00096:  21  initprop "type"
+00101:  22  newinit 1
+00106:  23  string "P_JianXiong_Effect_From"
+00111:  23  initprop "_type"
+00116:  23  endinit
+00117:  23  initprop "_effect_from"
+00122:  25  newinit 1
+00127:  26  newarray 2
+00131:  26  string "P_Delay_Frame_10"
+00136:  26  initelem_array 0
+00140:  26  string "P_Delay_Frame_7"
+00145:  26  initelem_array 1
+00149:  26  endinit
+00150:  26  initprop "_delay"
+00155:  27  string "P_JianXiong_Effect_To"
+00160:  27  initprop "_type"
+00165:  27  endinit
+00166:  27  initprop "_effect_to"
+00171:  29  newinit 1
+00176:  30  newarray 2
+00180:  30  string "P_Delay_Frame_10"
+00185:  30  initelem_array 0
+00189:  30  string "P_Delay_Frame_7"
+00194:  30  initelem_array 1
+00198:  30  endinit
+00199:  30  initprop "_delay"
+00204:  31  string "P_Atk_Add_From"
+00209:  31  initprop "_type"
+00214:  31  endinit
+00215:  31  initprop "_buff_from"
+00220:  33  newinit 1
+00225:  34  newarray 5
+00229:  34  string "P_Delay_Frame_10"
+00234:  34  initelem_array 0
+00238:  34  string "P_Delay_Frame_10"
+00243:  34  initelem_array 1
+00247:  34  string "P_Delay_Frame_10"
+00252:  34  initelem_array 2
+00256:  34  string "P_Delay_Frame_10"
+00261:  34  initelem_array 3
+00265:  34  string "P_Delay_Frame_5"
+00270:  34  initelem_array 4
+00274:  34  endinit
+00275:  34  initprop "_delay"
+00280:  35  string "P_Atk_Sub_To"
+00285:  35  initprop "_type"
+00290:  35  endinit
+00291:  35  initprop "_buff_to"
+00296:  38  newinit 1
+00301:  39  newarray 2
+00305:  39  string "P_Delay_Frame_10"
+00310:  39  initelem_array 0
+00314:  39  string "P_Delay_Frame_7"
+00319:  39  initelem_array 1
+00323:  39  endinit
+00324:  39  initprop "_delay"
+00329:  40  string "P_Absorb_Tmp_To2From"
+00334:  40  initprop "_absorb"
+00339:  40  endinit
+00340:  40  initprop "_sub"
+00345:  40  endinit
+00346:  40  initprop "_attack"
+00351:  40  endinit
+00352:  40  initprop "jianxiong_1"
+00357:  46  newinit 1
+00362:  46  endinit
+00363:  46  initprop "yiji_0"
+00368:  49  newinit 1
+00373:  50  string "template.T_Buff_Super"
+00378:  50  initprop "extend"
+00383:  52  newinit 1
+00388:  53  string "Spawn"
+00393:  53  initprop "type"
+00398:  54  newinit 1
+00403:  55  string "P_YiJi_Effect_From"
+00408:  55  initprop "_type"
+00413:  55  endinit
+00414:  55  initprop "_effect_from"
+00419:  57  newinit 1
+00424:  58  newarray 5
+00428:  58  string "P_Delay_Frame_10"
+00433:  58  initelem_array 0
+00437:  58  string "P_Delay_Frame_10"
+00442:  58  initelem_array 1
+00446:  58  string "P_Delay_Frame_10"
+00451:  58  initelem_array 2
+00455:  58  string "P_Delay_Frame_5"
+00460:  58  initelem_array 3
+00464:  58  string "P_Delay_Frame_4"
+00469:  58  initelem_array 4
+00473:  58  endinit
+00474:  58  initprop "_delay"
+00479:  59  string "P_YiJi_Effect_To"
+00484:  59  initprop "_type"
+00489:  59  endinit
+00490:  59  initprop "_effect_to"
+00495:  61  newinit 1
+00500:  62  newarray 6
+00504:  62  string "P_Delay_Frame_10"
+00509:  62  initelem_array 0
+00513:  62  string "P_Delay_Frame_10"
+00518:  62  initelem_array 1
+00522:  62  string "P_Delay_Frame_10"
+00527:  62  initelem_array 2
+00531:  62  string "P_Delay_Frame_10"
+00536:  62  initelem_array 3
+00540:  62  string "P_Delay_Frame_10"
+00545:  62  initelem_array 4
+00549:  62  string "P_Delay_Frame_4"
+00554:  62  initelem_array 5
+00558:  62  endinit
+00559:  62  initprop "_delay"
+00564:  63  string "P_Def_Add_To"
+00569:  63  initprop "_type"
+00574:  63  endinit
+00575:  63  initprop "_buff_to"
+00580:  63  endinit
+00581:  63  initprop "_attack"
+00586:  63  endinit
+00587:  63  initprop "yiji_1"
+00592:  63  endinit
+00593:  63  notearg
+00594:  63  call 2
+00597:  63  popv
+00598:  80  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/SkillAbsorb.js:1 ---

@@ -1,0 +1,1614 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Cocos2d-x/jsb_chipmunk.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=808 object[0]
+;; FUNCTION-MAP kind=lambda offset=824 object[1]
+;; FUNCTION-MAP kind=lambda offset=840 object[2]
+;; FUNCTION-MAP kind=lambda offset=856 object[3]
+;; FUNCTION-MAP kind=lambda offset=872 object[4]
+;; FUNCTION-MAP kind=lambda offset=922 object[5]
+;; FUNCTION-MAP kind=lambda offset=995 object[6]
+;; FUNCTION-MAP kind=lambda offset=1005 object[7]
+;; FUNCTION-MAP kind=lambda offset=1038 object[8]
+;; FUNCTION-MAP kind=lambda offset=1048 object[9]
+;; FUNCTION-MAP kind=lambda offset=1081 object[10]
+;; FUNCTION-MAP kind=lambda offset=1091 object[11]
+;; FUNCTION-MAP kind=lambda offset=1124 object[12]
+;; FUNCTION-MAP kind=lambda offset=1157 object[13]
+;; FUNCTION-MAP kind=lambda offset=1167 object[14]
+;; FUNCTION-MAP kind=lambda offset=1200 object[15]
+;; FUNCTION-MAP kind=lambda offset=1210 object[16]
+;; FUNCTION-MAP kind=lambda offset=1243 object[17]
+;; FUNCTION-MAP kind=lambda offset=1253 object[18]
+;; FUNCTION-MAP kind=lambda offset=1286 object[19]
+;; FUNCTION-MAP kind=lambda offset=1296 object[20]
+;; FUNCTION-MAP kind=lambda offset=1329 object[21]
+;; FUNCTION-MAP kind=lambda offset=1339 object[22]
+;; FUNCTION-MAP kind=lambda offset=1372 object[23]
+;; FUNCTION-MAP kind=lambda offset=1382 object[24]
+;; FUNCTION-MAP kind=lambda offset=1455 object[25]
+;; FUNCTION-MAP kind=lambda offset=1465 object[26]
+;; FUNCTION-MAP kind=lambda offset=1498 object[27]
+;; FUNCTION-MAP kind=lambda offset=1508 object[28]
+;; FUNCTION-MAP kind=lambda offset=1541 object[29]
+;; FUNCTION-MAP kind=lambda offset=1551 object[30]
+;; FUNCTION-MAP kind=lambda offset=1584 object[31]
+;; FUNCTION-MAP kind=lambda offset=1594 object[32]
+;; FUNCTION-MAP kind=lambda offset=1627 object[33]
+;; FUNCTION-MAP kind=lambda offset=1637 object[34]
+;; FUNCTION-MAP kind=lambda offset=1710 object[35]
+;; FUNCTION-MAP kind=lambda offset=1720 object[36]
+;; FUNCTION-MAP kind=lambda offset=1753 object[37]
+;; FUNCTION-MAP kind=lambda offset=1763 object[38]
+;; FUNCTION-MAP kind=lambda offset=1796 object[39]
+;; FUNCTION-MAP kind=lambda offset=1869 object[40]
+;; FUNCTION-MAP kind=lambda offset=1879 object[41]
+;; FUNCTION-MAP kind=lambda offset=1952 object[42]
+;; FUNCTION-MAP kind=lambda offset=1962 object[43]
+;; FUNCTION-MAP kind=lambda offset=1995 object[44]
+;; FUNCTION-MAP kind=lambda offset=2005 object[45]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:1 ---
+loc   line  op
+----- ----  --
+00000:   5  defvar "cp"
+main:
+00005:   5  bindname "cp"
+00010:   5  name "cp"
+00015:   5  or 27 (+12)
+00020:   5  pop
+00021:   5  newinit 1
+00026:   5  endinit
+00027:   5  setname "cp"
+00032:   5  pop
+00033:   7  name "cp"
+00038:   7  name "cc"
+00043:   7  getprop "p"
+00048:   7  setprop "v"
+00053:   7  popv
+00054:   8  name "cp"
+00059:   8  name "cc"
+00064:   8  getprop "_p"
+00069:   8  setprop "_v"
+00074:   8  popv
+00075:   9  name "cp"
+00080:   9  name "cp"
+00085:   9  dup
+00086:   9  callprop "v"
+00091:   9  swap
+00092:   9  notearg
+00093:   9  zero
+00094:   9  notearg
+00095:   9  zero
+00096:   9  notearg
+00097:   9  call 2
+00100:   9  setprop "vzero"
+00105:   9  popv
+00106:  12  name "cp"
+00111:  12  getprop "v"
+00116:  12  name "cp"
+00121:  12  getprop "vadd"
+00126:  12  setprop "add"
+00131:  12  popv
+00132:  13  name "cp"
+00137:  13  getprop "v"
+00142:  13  name "cp"
+00147:  13  getprop "vclamp"
+00152:  13  setprop "clamp"
+00157:  13  popv
+00158:  14  name "cp"
+00163:  14  getprop "v"
+00168:  14  name "cp"
+00173:  14  getprop "vcross"
+00178:  14  setprop "cross"
+00183:  14  popv
+00184:  15  name "cp"
+00189:  15  getprop "v"
+00194:  15  name "cp"
+00199:  15  getprop "vdist"
+00204:  15  setprop "dist"
+00209:  15  popv
+00210:  16  name "cp"
+00215:  16  getprop "v"
+00220:  16  name "cp"
+00225:  16  getprop "vdistsq"
+00230:  16  setprop "distsq"
+00235:  16  popv
+00236:  17  name "cp"
+00241:  17  getprop "v"
+00246:  17  name "cp"
+00251:  17  getprop "vdot"
+00256:  17  setprop "dot"
+00261:  17  popv
+00262:  18  name "cp"
+00267:  18  getprop "v"
+00272:  18  name "cp"
+00277:  18  getprop "veql"
+00282:  18  setprop "eql"
+00287:  18  popv
+00288:  19  name "cp"
+00293:  19  getprop "v"
+00298:  19  name "cp"
+00303:  19  getprop "vforangle"
+00308:  19  setprop "forangle"
+00313:  19  popv
+00314:  20  name "cp"
+00319:  20  getprop "v"
+00324:  20  name "cp"
+00329:  20  getprop "vlength"
+00334:  20  setprop "len"
+00339:  20  popv
+00340:  21  name "cp"
+00345:  21  getprop "v"
+00350:  21  name "cp"
+00355:  21  getprop "vlengthsq"
+00360:  21  setprop "lengthsq"
+00365:  21  popv
+00366:  22  name "cp"
+00371:  22  getprop "v"
+00376:  22  name "cp"
+00381:  22  getprop "vlerp"
+00386:  22  setprop "lerp"
+00391:  22  popv
+00392:  23  name "cp"
+00397:  23  getprop "v"
+00402:  23  name "cp"
+00407:  23  getprop "vlerpconst"
+00412:  23  setprop "lerpconst"
+00417:  23  popv
+00418:  24  name "cp"
+00423:  24  getprop "v"
+00428:  24  name "cp"
+00433:  24  getprop "vmult"
+00438:  24  setprop "mult"
+00443:  24  popv
+00444:  25  name "cp"
+00449:  25  getprop "v"
+00454:  25  name "cp"
+00459:  25  getprop "vnear"
+00464:  25  setprop "near"
+00469:  25  popv
+00470:  26  name "cp"
+00475:  26  getprop "v"
+00480:  26  name "cp"
+00485:  26  getprop "vneg"
+00490:  26  setprop "neg"
+00495:  26  popv
+00496:  27  name "cp"
+00501:  27  getprop "v"
+00506:  27  name "cp"
+00511:  27  getprop "vnormalize"
+00516:  27  setprop "normalize"
+00521:  27  popv
+00522:  28  name "cp"
+00527:  28  getprop "v"
+00532:  28  name "cp"
+00537:  28  getprop "vnormalize_safe"
+00542:  28  setprop "normalize_safe"
+00547:  28  popv
+00548:  29  name "cp"
+00553:  29  getprop "v"
+00558:  29  name "cp"
+00563:  29  getprop "vperp"
+00568:  29  setprop "perp"
+00573:  29  popv
+00574:  30  name "cp"
+00579:  30  getprop "v"
+00584:  30  name "cp"
+00589:  30  getprop "vproject"
+00594:  30  setprop "project"
+00599:  30  popv
+00600:  31  name "cp"
+00605:  31  getprop "v"
+00610:  31  name "cp"
+00615:  31  getprop "vrotate"
+00620:  31  setprop "rotate"
+00625:  31  popv
+00626:  32  name "cp"
+00631:  32  getprop "v"
+00636:  32  name "cp"
+00641:  32  getprop "vrperp"
+00646:  32  setprop "rperp"
+00651:  32  popv
+00652:  33  name "cp"
+00657:  33  getprop "v"
+00662:  33  name "cp"
+00667:  33  getprop "vslerp"
+00672:  33  setprop "slerp"
+00677:  33  popv
+00678:  34  name "cp"
+00683:  34  getprop "v"
+00688:  34  name "cp"
+00693:  34  getprop "vslerpconst"
+00698:  34  setprop "slerpconst"
+00703:  34  popv
+00704:  35  name "cp"
+00709:  35  getprop "v"
+00714:  35  name "cp"
+00719:  35  getprop "vsub"
+00724:  35  setprop "sub"
+00729:  35  popv
+00730:  36  name "cp"
+00735:  36  getprop "v"
+00740:  36  name "cp"
+00745:  36  getprop "vtoangle"
+00750:  36  setprop "toangle"
+00755:  36  popv
+00756:  37  name "cp"
+00761:  37  getprop "v"
+00766:  37  name "cp"
+00771:  37  getprop "vunrotate"
+00776:  37  setprop "unrotate"
+00781:  37  popv
+00782:  40  name "cp"
+00787:  40  name "cp"
+00792:  40  getprop "fclamp01"
+00797:  40  setprop "clamp01"
+00802:  40  popv
+00803:  44  name "cp"
+00808:  44  lambda (function () {
+    [sourceless code]
+})
+00813:  44  setprop "BoxShape2"
+00818:  44  popv
+00819:  57  name "cp"
+00824:  57  lambda (function () {
+    [sourceless code]
+})
+00829:  57  setprop "BoxShape"
+00834:  57  popv
+00835:  67  name "cp"
+00840:  67  lambda (function () {
+    [sourceless code]
+})
+00845:  67  setprop "StaticBody"
+00850:  67  popv
+00851:  74  name "cp"
+00856:  74  lambda (function () {
+    [sourceless code]
+})
+00861:  74  setprop "BB"
+00866:  74  popv
+00867:  80  name "cp"
+00872:  80  lambda (function () {
+    [sourceless code]
+})
+00877:  80  setprop "bb"
+00882:  80  popv
+00883:  88  name "Object"
+00888:  88  dup
+00889:  88  callprop "defineProperties"
+00894:  88  swap
+00895:  88  notearg
+00896:  88  name "cp"
+00901:  88  getprop "Base"
+00906:  88  getprop "prototype"
+00911:  88  notearg
+00912:  89  newinit 1
+00917:  90  newinit 1
+00922:  91  lambda (function () {
+    [sourceless code]
+})
+00927:  91  initprop "get"
+00932:  94  true
+00933:  94  initprop "enumerable"
+00938:  95  true
+00939:  95  initprop "configurable"
+00944:  95  endinit
+00945:  95  initprop "handle"
+00950:  95  endinit
+00951:  95  notearg
+00952:  95  call 2
+00955:  95  popv
+00956: 101  name "Object"
+00961: 101  dup
+00962: 101  callprop "defineProperties"
+00967: 101  swap
+00968: 101  notearg
+00969: 101  name "cp"
+00974: 101  getprop "Space"
+00979: 101  getprop "prototype"
+00984: 101  notearg
+00985: 102  newinit 1
+00990: 103  newinit 1
+00995: 104  lambda (function () {
+    [sourceless code]
+})
+01000: 104  initprop "get"
+01005: 107  lambda (function () {
+    [sourceless code]
+})
+01010: 107  initprop "set"
+01015: 110  true
+01016: 110  initprop "enumerable"
+01021: 111  true
+01022: 111  initprop "configurable"
+01027: 111  endinit
+01028: 111  initprop "gravity"
+01033: 113  newinit 1
+01038: 114  lambda (function () {
+    [sourceless code]
+})
+01043: 114  initprop "get"
+01048: 117  lambda (function () {
+    [sourceless code]
+})
+01053: 117  initprop "set"
+01058: 120  true
+01059: 120  initprop "enumerable"
+01064: 121  true
+01065: 121  initprop "configurable"
+01070: 121  endinit
+01071: 121  initprop "iterations"
+01076: 123  newinit 1
+01081: 124  lambda (function () {
+    [sourceless code]
+})
+01086: 124  initprop "get"
+01091: 127  lambda (function () {
+    [sourceless code]
+})
+01096: 127  initprop "set"
+01101: 130  true
+01102: 130  initprop "enumerable"
+01107: 131  true
+01108: 131  initprop "configurable"
+01113: 131  endinit
+01114: 131  initprop "damping"
+01119: 133  newinit 1
+01124: 134  lambda (function () {
+    [sourceless code]
+})
+01129: 134  initprop "get"
+01134: 137  true
+01135: 137  initprop "enumerable"
+01140: 138  true
+01141: 138  initprop "configurable"
+01146: 138  endinit
+01147: 138  initprop "staticBody"
+01152: 140  newinit 1
+01157: 141  lambda (function () {
+    [sourceless code]
+})
+01162: 141  initprop "get"
+01167: 144  lambda (function () {
+    [sourceless code]
+})
+01172: 144  initprop "set"
+01177: 147  true
+01178: 147  initprop "enumerable"
+01183: 148  true
+01184: 148  initprop "configurable"
+01189: 148  endinit
+01190: 148  initprop "idleSpeedThreshold"
+01195: 150  newinit 1
+01200: 151  lambda (function () {
+    [sourceless code]
+})
+01205: 151  initprop "get"
+01210: 154  lambda (function () {
+    [sourceless code]
+})
+01215: 154  initprop "set"
+01220: 157  true
+01221: 157  initprop "enumerable"
+01226: 158  true
+01227: 158  initprop "configurable"
+01232: 158  endinit
+01233: 158  initprop "sleepTimeThreshold"
+01238: 160  newinit 1
+01243: 161  lambda (function () {
+    [sourceless code]
+})
+01248: 161  initprop "get"
+01253: 164  lambda (function () {
+    [sourceless code]
+})
+01258: 164  initprop "set"
+01263: 167  true
+01264: 167  initprop "enumerable"
+01269: 168  true
+01270: 168  initprop "configurable"
+01275: 168  endinit
+01276: 168  initprop "collisionSlop"
+01281: 170  newinit 1
+01286: 171  lambda (function () {
+    [sourceless code]
+})
+01291: 171  initprop "get"
+01296: 174  lambda (function () {
+    [sourceless code]
+})
+01301: 174  initprop "set"
+01306: 177  true
+01307: 177  initprop "enumerable"
+01312: 178  true
+01313: 178  initprop "configurable"
+01318: 178  endinit
+01319: 178  initprop "collisionBias"
+01324: 180  newinit 1
+01329: 181  lambda (function () {
+    [sourceless code]
+})
+01334: 181  initprop "get"
+01339: 184  lambda (function () {
+    [sourceless code]
+})
+01344: 184  initprop "set"
+01349: 187  true
+01350: 187  initprop "enumerable"
+01355: 188  true
+01356: 188  initprop "configurable"
+01361: 188  endinit
+01362: 188  initprop "collisionPersistence"
+01367: 190  newinit 1
+01372: 191  lambda (function () {
+    [sourceless code]
+})
+01377: 191  initprop "get"
+01382: 194  lambda (function () {
+    [sourceless code]
+})
+01387: 194  initprop "set"
+01392: 197  true
+01393: 197  initprop "enumerable"
+01398: 198  true
+01399: 198  initprop "configurable"
+01404: 198  endinit
+01405: 198  initprop "enableContactGraph"
+01410: 198  endinit
+01411: 198  notearg
+01412: 198  call 2
+01415: 198  popv
+01416: 203  name "Object"
+01421: 203  dup
+01422: 203  callprop "defineProperties"
+01427: 203  swap
+01428: 203  notearg
+01429: 203  name "cp"
+01434: 203  getprop "Body"
+01439: 203  getprop "prototype"
+01444: 203  notearg
+01445: 204  newinit 1
+01450: 205  newinit 1
+01455: 206  lambda (function () {
+    [sourceless code]
+})
+01460: 206  initprop "get"
+01465: 209  lambda (function () {
+    [sourceless code]
+})
+01470: 209  initprop "set"
+01475: 212  true
+01476: 212  initprop "enumerable"
+01481: 213  true
+01482: 213  initprop "configurable"
+01487: 213  endinit
+01488: 213  initprop "a"
+01493: 215  newinit 1
+01498: 216  lambda (function () {
+    [sourceless code]
+})
+01503: 216  initprop "get"
+01508: 219  lambda (function () {
+    [sourceless code]
+})
+01513: 219  initprop "set"
+01518: 222  true
+01519: 222  initprop "enumerable"
+01524: 223  true
+01525: 223  initprop "configurable"
+01530: 223  endinit
+01531: 223  initprop "w"
+01536: 225  newinit 1
+01541: 226  lambda (function () {
+    [sourceless code]
+})
+01546: 226  initprop "get"
+01551: 229  lambda (function () {
+    [sourceless code]
+})
+01556: 229  initprop "set"
+01561: 232  true
+01562: 232  initprop "enumerable"
+01567: 233  true
+01568: 233  initprop "configurable"
+01573: 233  endinit
+01574: 233  initprop "p"
+01579: 235  newinit 1
+01584: 236  lambda (function () {
+    [sourceless code]
+})
+01589: 236  initprop "get"
+01594: 239  lambda (function () {
+    [sourceless code]
+})
+01599: 239  initprop "set"
+01604: 242  true
+01605: 242  initprop "enumerable"
+01610: 243  true
+01611: 243  initprop "configurable"
+01616: 243  endinit
+01617: 243  initprop "v"
+01622: 245  newinit 1
+01627: 246  lambda (function () {
+    [sourceless code]
+})
+01632: 246  initprop "get"
+01637: 249  lambda (function () {
+    [sourceless code]
+})
+01642: 249  initprop "set"
+01647: 252  true
+01648: 252  initprop "enumerable"
+01653: 253  true
+01654: 253  initprop "configurable"
+01659: 253  endinit
+01660: 253  initprop "i"
+01665: 253  endinit
+01666: 253  notearg
+01667: 253  call 2
+01670: 253  popv
+01671: 259  name "Object"
+01676: 259  dup
+01677: 259  callprop "defineProperties"
+01682: 259  swap
+01683: 259  notearg
+01684: 259  name "cp"
+01689: 259  getprop "Shape"
+01694: 259  getprop "prototype"
+01699: 259  notearg
+01700: 260  newinit 1
+01705: 261  newinit 1
+01710: 262  lambda (function () {
+    [sourceless code]
+})
+01715: 262  initprop "get"
+01720: 265  lambda (function () {
+    [sourceless code]
+})
+01725: 265  initprop "set"
+01730: 268  true
+01731: 268  initprop "enumerable"
+01736: 269  true
+01737: 269  initprop "configurable"
+01742: 269  endinit
+01743: 269  initprop "body"
+01748: 271  newinit 1
+01753: 272  lambda (function () {
+    [sourceless code]
+})
+01758: 272  initprop "get"
+01763: 275  lambda (function () {
+    [sourceless code]
+})
+01768: 275  initprop "set"
+01773: 278  true
+01774: 278  initprop "enumerable"
+01779: 279  true
+01780: 279  initprop "configurable"
+01785: 279  endinit
+01786: 279  initprop "group"
+01791: 281  newinit 1
+01796: 282  lambda (function () {
+    [sourceless code]
+})
+01801: 282  initprop "get"
+01806: 285  true
+01807: 285  initprop "enumerable"
+01812: 286  true
+01813: 286  initprop "configurable"
+01818: 286  endinit
+01819: 286  initprop "collision_type"
+01824: 286  endinit
+01825: 286  notearg
+01826: 286  call 2
+01829: 286  popv
+01830: 291  name "Object"
+01835: 291  dup
+01836: 291  callprop "defineProperties"
+01841: 291  swap
+01842: 291  notearg
+01843: 291  name "cp"
+01848: 291  getprop "Constraint"
+01853: 291  getprop "prototype"
+01858: 291  notearg
+01859: 292  newinit 1
+01864: 293  newinit 1
+01869: 294  lambda (function () {
+    [sourceless code]
+})
+01874: 294  initprop "get"
+01879: 297  lambda (function () {
+    [sourceless code]
+})
+01884: 297  initprop "set"
+01889: 300  true
+01890: 300  initprop "enumerable"
+01895: 301  true
+01896: 301  initprop "configurable"
+01901: 301  endinit
+01902: 301  initprop "maxForce"
+01907: 301  endinit
+01908: 301  notearg
+01909: 301  call 2
+01912: 301  popv
+01913: 306  name "Object"
+01918: 306  dup
+01919: 306  callprop "defineProperties"
+01924: 306  swap
+01925: 306  notearg
+01926: 306  name "cp"
+01931: 306  getprop "PinJoint"
+01936: 306  getprop "prototype"
+01941: 306  notearg
+01942: 307  newinit 1
+01947: 308  newinit 1
+01952: 309  lambda (function () {
+    [sourceless code]
+})
+01957: 309  initprop "get"
+01962: 312  lambda (function () {
+    [sourceless code]
+})
+01967: 312  initprop "set"
+01972: 315  true
+01973: 315  initprop "enumerable"
+01978: 316  true
+01979: 316  initprop "configurable"
+01984: 316  endinit
+01985: 316  initprop "anchr1"
+01990: 318  newinit 1
+01995: 319  lambda (function () {
+    [sourceless code]
+})
+02000: 319  initprop "get"
+02005: 322  lambda (function () {
+    [sourceless code]
+})
+02010: 322  initprop "set"
+02015: 325  true
+02016: 325  initprop "enumerable"
+02021: 326  true
+02022: 326  initprop "configurable"
+02027: 326  endinit
+02028: 326  initprop "anchr2"
+02033: 326  endinit
+02034: 326  notearg
+02035: 326  call 2
+02038: 326  popv
+02039: 328  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:1 ---
+;; function object[0] BoxShape2
+;; function metadata object[0] nargs=2 bindings=3
+;; arg[0] body
+;; arg[1] box
+;; local[0] verts
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  newarray 8
+00004:  47  getarg 1
+00007:  47  getprop "l"
+00012:  47  initelem_array 0
+00016:  47  getarg 1
+00019:  47  getprop "b"
+00024:  47  initelem_array 1
+00028:  48  getarg 1
+00031:  48  getprop "l"
+00036:  48  initelem_array 2
+00040:  48  getarg 1
+00043:  48  getprop "t"
+00048:  48  initelem_array 3
+00052:  49  getarg 1
+00055:  49  getprop "r"
+00060:  49  initelem_array 4
+00064:  49  getarg 1
+00067:  49  getprop "t"
+00072:  49  initelem_array 5
+00076:  50  getarg 1
+00079:  50  getprop "r"
+00084:  50  initelem_array 6
+00088:  50  getarg 1
+00091:  50  getprop "b"
+00096:  50  initelem_array 7
+00100:  50  endinit
+00101:  50  setlocal 0
+00104:  50  pop
+00105:  53  name "cp"
+00110:  53  getprop "PolyShape"
+00115:  53  undefined
+00116:  53  notearg
+00117:  53  getarg 0
+00120:  53  notearg
+00121:  53  getlocal 0
+00124:  53  notearg
+00125:  53  name "cp"
+00130:  53  getprop "vzero"
+00135:  53  notearg
+00136:  53  new 3
+00139:  53  return
+00140:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:44 ---
+;; function object[1] BoxShape
+;; function metadata object[1] nargs=3 bindings=5
+;; arg[0] body
+;; arg[1] width
+;; arg[2] height
+;; local[0] hw
+;; local[1] hh
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:57 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  getarg 1
+00003:  59  int8 2
+00005:  59  div
+00006:  59  setlocal 0
+00009:  59  pop
+00010:  60  getarg 2
+00013:  60  int8 2
+00015:  60  div
+00016:  60  setlocal 1
+00019:  60  pop
+00020:  62  name "cp"
+00025:  62  dup
+00026:  62  callprop "BoxShape2"
+00031:  62  swap
+00032:  62  notearg
+00033:  62  getarg 0
+00036:  62  notearg
+00037:  62  name "cp"
+00042:  62  getprop "BB"
+00047:  62  undefined
+00048:  62  notearg
+00049:  62  getlocal 0
+00052:  62  neg
+00053:  62  notearg
+00054:  62  getlocal 1
+00057:  62  neg
+00058:  62  notearg
+00059:  62  getlocal 0
+00062:  62  notearg
+00063:  62  getlocal 1
+00066:  62  notearg
+00067:  62  new 4
+00070:  62  notearg
+00071:  62  call 2
+00074:  62  return
+00075:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:57 ---
+;; function object[2] StaticBody
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:67 ---
+loc   line  op
+----- ----  --
+main:
+00000:  69  name "cp"
+00005:  69  getprop "Body"
+00010:  69  undefined
+00011:  69  notearg
+00012:  69  name "Infinity"
+00017:  69  notearg
+00018:  69  name "Infinity"
+00023:  69  notearg
+00024:  69  new 2
+00027:  69  return
+00028:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:67 ---
+;; function object[3] BB
+;; function metadata object[3] nargs=4 bindings=4
+;; arg[0] l
+;; arg[1] b
+;; arg[2] r
+;; arg[3] t
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:74 ---
+loc   line  op
+----- ----  --
+main:
+00000:  76  newinit 1
+00005:  76  getarg 0
+00008:  76  initprop "l"
+00013:  76  getarg 1
+00016:  76  initprop "b"
+00021:  76  getarg 2
+00024:  76  initprop "r"
+00029:  76  getarg 3
+00032:  76  initprop "t"
+00037:  76  endinit
+00038:  76  return
+00039:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:74 ---
+;; function object[4] bb
+;; function metadata object[4] nargs=4 bindings=4
+;; arg[0] l
+;; arg[1] b
+;; arg[2] r
+;; arg[3] t
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:80 ---
+loc   line  op
+----- ----  --
+main:
+00000:  81  name "cp"
+00005:  81  getprop "BB"
+00010:  81  undefined
+00011:  81  notearg
+00012:  81  getarg 0
+00015:  81  notearg
+00016:  81  getarg 1
+00019:  81  notearg
+00020:  81  getarg 2
+00023:  81  notearg
+00024:  81  getarg 3
+00027:  81  notearg
+00028:  81  new 4
+00031:  81  return
+00032:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:80 ---
+;; function object[5] get
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:91 ---
+loc   line  op
+----- ----  --
+main:
+00000:  92  this
+00001:  92  dup
+00002:  92  callprop "getHandle"
+00007:  92  swap
+00008:  92  notearg
+00009:  92  call 0
+00012:  92  return
+00013:  92  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:91 ---
+;; function object[6] get
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:104 ---
+loc   line  op
+----- ----  --
+main:
+00000: 105  this
+00001: 105  dup
+00002: 105  callprop "getGravity"
+00007: 105  swap
+00008: 105  notearg
+00009: 105  call 0
+00012: 105  return
+00013: 105  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:104 ---
+;; function object[7] set
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:107 ---
+loc   line  op
+----- ----  --
+main:
+00000: 108  this
+00001: 108  dup
+00002: 108  callprop "setGravity"
+00007: 108  swap
+00008: 108  notearg
+00009: 108  getarg 0
+00012: 108  notearg
+00013: 108  call 1
+00016: 108  pop
+00017: 108  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:107 ---
+;; function object[8] get
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:114 ---
+loc   line  op
+----- ----  --
+main:
+00000: 115  this
+00001: 115  dup
+00002: 115  callprop "getIterations"
+00007: 115  swap
+00008: 115  notearg
+00009: 115  call 0
+00012: 115  return
+00013: 115  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:114 ---
+;; function object[9] set
+;; function metadata object[9] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:117 ---
+loc   line  op
+----- ----  --
+main:
+00000: 118  this
+00001: 118  dup
+00002: 118  callprop "setIterations"
+00007: 118  swap
+00008: 118  notearg
+00009: 118  getarg 0
+00012: 118  notearg
+00013: 118  call 1
+00016: 118  pop
+00017: 118  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:117 ---
+;; function object[10] get
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:124 ---
+loc   line  op
+----- ----  --
+main:
+00000: 125  this
+00001: 125  dup
+00002: 125  callprop "getDamping"
+00007: 125  swap
+00008: 125  notearg
+00009: 125  call 0
+00012: 125  return
+00013: 125  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:124 ---
+;; function object[11] set
+;; function metadata object[11] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:127 ---
+loc   line  op
+----- ----  --
+main:
+00000: 128  this
+00001: 128  dup
+00002: 128  callprop "setDamping"
+00007: 128  swap
+00008: 128  notearg
+00009: 128  getarg 0
+00012: 128  notearg
+00013: 128  call 1
+00016: 128  pop
+00017: 128  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:127 ---
+;; function object[12] get
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:134 ---
+loc   line  op
+----- ----  --
+main:
+00000: 135  this
+00001: 135  dup
+00002: 135  callprop "getStaticBody"
+00007: 135  swap
+00008: 135  notearg
+00009: 135  call 0
+00012: 135  return
+00013: 135  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:134 ---
+;; function object[13] get
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:141 ---
+loc   line  op
+----- ----  --
+main:
+00000: 142  this
+00001: 142  dup
+00002: 142  callprop "getIdleSpeedThreshold"
+00007: 142  swap
+00008: 142  notearg
+00009: 142  call 0
+00012: 142  return
+00013: 142  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:141 ---
+;; function object[14] set
+;; function metadata object[14] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:144 ---
+loc   line  op
+----- ----  --
+main:
+00000: 145  this
+00001: 145  dup
+00002: 145  callprop "setIdleSpeedThreshold"
+00007: 145  swap
+00008: 145  notearg
+00009: 145  getarg 0
+00012: 145  notearg
+00013: 145  call 1
+00016: 145  pop
+00017: 145  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:144 ---
+;; function object[15] get
+;; function metadata object[15] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:151 ---
+loc   line  op
+----- ----  --
+main:
+00000: 152  this
+00001: 152  dup
+00002: 152  callprop "getSleepTimeThreshold"
+00007: 152  swap
+00008: 152  notearg
+00009: 152  call 0
+00012: 152  return
+00013: 152  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:151 ---
+;; function object[16] set
+;; function metadata object[16] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:154 ---
+loc   line  op
+----- ----  --
+main:
+00000: 155  this
+00001: 155  dup
+00002: 155  callprop "setSleepTimeThreshold"
+00007: 155  swap
+00008: 155  notearg
+00009: 155  getarg 0
+00012: 155  notearg
+00013: 155  call 1
+00016: 155  pop
+00017: 155  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:154 ---
+;; function object[17] get
+;; function metadata object[17] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:161 ---
+loc   line  op
+----- ----  --
+main:
+00000: 162  this
+00001: 162  dup
+00002: 162  callprop "getCollisionSlop"
+00007: 162  swap
+00008: 162  notearg
+00009: 162  call 0
+00012: 162  return
+00013: 162  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:161 ---
+;; function object[18] set
+;; function metadata object[18] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:164 ---
+loc   line  op
+----- ----  --
+main:
+00000: 165  this
+00001: 165  dup
+00002: 165  callprop "setCollisionSlop"
+00007: 165  swap
+00008: 165  notearg
+00009: 165  getarg 0
+00012: 165  notearg
+00013: 165  call 1
+00016: 165  pop
+00017: 165  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:164 ---
+;; function object[19] get
+;; function metadata object[19] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:171 ---
+loc   line  op
+----- ----  --
+main:
+00000: 172  this
+00001: 172  dup
+00002: 172  callprop "getCollisionBias"
+00007: 172  swap
+00008: 172  notearg
+00009: 172  call 0
+00012: 172  return
+00013: 172  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:171 ---
+;; function object[20] set
+;; function metadata object[20] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:174 ---
+loc   line  op
+----- ----  --
+main:
+00000: 175  this
+00001: 175  dup
+00002: 175  callprop "setCollisionBias"
+00007: 175  swap
+00008: 175  notearg
+00009: 175  getarg 0
+00012: 175  notearg
+00013: 175  call 1
+00016: 175  pop
+00017: 175  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:174 ---
+;; function object[21] get
+;; function metadata object[21] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:181 ---
+loc   line  op
+----- ----  --
+main:
+00000: 182  this
+00001: 182  dup
+00002: 182  callprop "getCollisionPersistence"
+00007: 182  swap
+00008: 182  notearg
+00009: 182  call 0
+00012: 182  return
+00013: 182  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:181 ---
+;; function object[22] set
+;; function metadata object[22] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:184 ---
+loc   line  op
+----- ----  --
+main:
+00000: 185  this
+00001: 185  dup
+00002: 185  callprop "setCollisionPersistence"
+00007: 185  swap
+00008: 185  notearg
+00009: 185  getarg 0
+00012: 185  notearg
+00013: 185  call 1
+00016: 185  pop
+00017: 185  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:184 ---
+;; function object[23] get
+;; function metadata object[23] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:191 ---
+loc   line  op
+----- ----  --
+main:
+00000: 192  this
+00001: 192  dup
+00002: 192  callprop "getEnableContactGraph"
+00007: 192  swap
+00008: 192  notearg
+00009: 192  call 0
+00012: 192  return
+00013: 192  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:191 ---
+;; function object[24] set
+;; function metadata object[24] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:194 ---
+loc   line  op
+----- ----  --
+main:
+00000: 195  this
+00001: 195  dup
+00002: 195  callprop "setEnableContactGraph"
+00007: 195  swap
+00008: 195  notearg
+00009: 195  getarg 0
+00012: 195  notearg
+00013: 195  call 1
+00016: 195  pop
+00017: 195  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:194 ---
+;; function object[25] get
+;; function metadata object[25] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:206 ---
+loc   line  op
+----- ----  --
+main:
+00000: 207  this
+00001: 207  dup
+00002: 207  callprop "getAngle"
+00007: 207  swap
+00008: 207  notearg
+00009: 207  call 0
+00012: 207  return
+00013: 207  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:206 ---
+;; function object[26] set
+;; function metadata object[26] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:209 ---
+loc   line  op
+----- ----  --
+main:
+00000: 210  this
+00001: 210  dup
+00002: 210  callprop "setAngle"
+00007: 210  swap
+00008: 210  notearg
+00009: 210  getarg 0
+00012: 210  notearg
+00013: 210  call 1
+00016: 210  pop
+00017: 210  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:209 ---
+;; function object[27] get
+;; function metadata object[27] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:216 ---
+loc   line  op
+----- ----  --
+main:
+00000: 217  this
+00001: 217  dup
+00002: 217  callprop "getAngVel"
+00007: 217  swap
+00008: 217  notearg
+00009: 217  call 0
+00012: 217  return
+00013: 217  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:216 ---
+;; function object[28] set
+;; function metadata object[28] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:219 ---
+loc   line  op
+----- ----  --
+main:
+00000: 220  this
+00001: 220  dup
+00002: 220  callprop "setAngVel"
+00007: 220  swap
+00008: 220  notearg
+00009: 220  getarg 0
+00012: 220  notearg
+00013: 220  call 1
+00016: 220  pop
+00017: 220  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:219 ---
+;; function object[29] get
+;; function metadata object[29] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:226 ---
+loc   line  op
+----- ----  --
+main:
+00000: 227  this
+00001: 227  dup
+00002: 227  callprop "getPos"
+00007: 227  swap
+00008: 227  notearg
+00009: 227  call 0
+00012: 227  return
+00013: 227  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:226 ---
+;; function object[30] set
+;; function metadata object[30] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:229 ---
+loc   line  op
+----- ----  --
+main:
+00000: 230  this
+00001: 230  dup
+00002: 230  callprop "setPos"
+00007: 230  swap
+00008: 230  notearg
+00009: 230  getarg 0
+00012: 230  notearg
+00013: 230  call 1
+00016: 230  pop
+00017: 230  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:229 ---
+;; function object[31] get
+;; function metadata object[31] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:236 ---
+loc   line  op
+----- ----  --
+main:
+00000: 237  this
+00001: 237  dup
+00002: 237  callprop "getVel"
+00007: 237  swap
+00008: 237  notearg
+00009: 237  call 0
+00012: 237  return
+00013: 237  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:236 ---
+;; function object[32] set
+;; function metadata object[32] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:239 ---
+loc   line  op
+----- ----  --
+main:
+00000: 240  this
+00001: 240  dup
+00002: 240  callprop "setVel"
+00007: 240  swap
+00008: 240  notearg
+00009: 240  getarg 0
+00012: 240  notearg
+00013: 240  call 1
+00016: 240  pop
+00017: 240  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:239 ---
+;; function object[33] get
+;; function metadata object[33] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:246 ---
+loc   line  op
+----- ----  --
+main:
+00000: 247  this
+00001: 247  dup
+00002: 247  callprop "getMoment"
+00007: 247  swap
+00008: 247  notearg
+00009: 247  call 0
+00012: 247  return
+00013: 247  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:246 ---
+;; function object[34] set
+;; function metadata object[34] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:249 ---
+loc   line  op
+----- ----  --
+main:
+00000: 250  this
+00001: 250  dup
+00002: 250  callprop "setMoment"
+00007: 250  swap
+00008: 250  notearg
+00009: 250  getarg 0
+00012: 250  notearg
+00013: 250  call 1
+00016: 250  pop
+00017: 250  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:249 ---
+;; function object[35] get
+;; function metadata object[35] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:262 ---
+loc   line  op
+----- ----  --
+main:
+00000: 263  this
+00001: 263  dup
+00002: 263  callprop "getBody"
+00007: 263  swap
+00008: 263  notearg
+00009: 263  call 0
+00012: 263  return
+00013: 263  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:262 ---
+;; function object[36] set
+;; function metadata object[36] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:265 ---
+loc   line  op
+----- ----  --
+main:
+00000: 266  this
+00001: 266  dup
+00002: 266  callprop "setBody"
+00007: 266  swap
+00008: 266  notearg
+00009: 266  getarg 0
+00012: 266  notearg
+00013: 266  call 1
+00016: 266  pop
+00017: 266  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:265 ---
+;; function object[37] get
+;; function metadata object[37] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:272 ---
+loc   line  op
+----- ----  --
+main:
+00000: 273  this
+00001: 273  dup
+00002: 273  callprop "getGroup"
+00007: 273  swap
+00008: 273  notearg
+00009: 273  call 0
+00012: 273  return
+00013: 273  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:272 ---
+;; function object[38] set
+;; function metadata object[38] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:275 ---
+loc   line  op
+----- ----  --
+main:
+00000: 276  this
+00001: 276  dup
+00002: 276  callprop "setGroup"
+00007: 276  swap
+00008: 276  notearg
+00009: 276  getarg 0
+00012: 276  notearg
+00013: 276  call 1
+00016: 276  pop
+00017: 276  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:275 ---
+;; function object[39] get
+;; function metadata object[39] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:282 ---
+loc   line  op
+----- ----  --
+main:
+00000: 283  this
+00001: 283  dup
+00002: 283  callprop "getCollisionType"
+00007: 283  swap
+00008: 283  notearg
+00009: 283  call 0
+00012: 283  return
+00013: 283  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:282 ---
+;; function object[40] get
+;; function metadata object[40] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:294 ---
+loc   line  op
+----- ----  --
+main:
+00000: 295  this
+00001: 295  dup
+00002: 295  callprop "getMaxForce"
+00007: 295  swap
+00008: 295  notearg
+00009: 295  call 0
+00012: 295  return
+00013: 295  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:294 ---
+;; function object[41] set
+;; function metadata object[41] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:297 ---
+loc   line  op
+----- ----  --
+main:
+00000: 298  this
+00001: 298  dup
+00002: 298  callprop "setMaxForce"
+00007: 298  swap
+00008: 298  notearg
+00009: 298  getarg 0
+00012: 298  notearg
+00013: 298  call 1
+00016: 298  pop
+00017: 298  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:297 ---
+;; function object[42] get
+;; function metadata object[42] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:309 ---
+loc   line  op
+----- ----  --
+main:
+00000: 310  this
+00001: 310  dup
+00002: 310  callprop "getAnchr1"
+00007: 310  swap
+00008: 310  notearg
+00009: 310  call 0
+00012: 310  return
+00013: 310  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:309 ---
+;; function object[43] set
+;; function metadata object[43] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:312 ---
+loc   line  op
+----- ----  --
+main:
+00000: 313  this
+00001: 313  dup
+00002: 313  callprop "setAnchr1"
+00007: 313  swap
+00008: 313  notearg
+00009: 313  getarg 0
+00012: 313  notearg
+00013: 313  call 1
+00016: 313  pop
+00017: 313  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:312 ---
+;; function object[44] get
+;; function metadata object[44] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:319 ---
+loc   line  op
+----- ----  --
+main:
+00000: 320  this
+00001: 320  dup
+00002: 320  callprop "getAnchr2"
+00007: 320  swap
+00008: 320  notearg
+00009: 320  call 0
+00012: 320  return
+00013: 320  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:319 ---
+;; function object[45] set
+;; function metadata object[45] nargs=1 bindings=1
+;; arg[0] newValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:322 ---
+loc   line  op
+----- ----  --
+main:
+00000: 323  this
+00001: 323  dup
+00002: 323  callprop "setAnchr2"
+00007: 323  swap
+00008: 323  notearg
+00009: 323  getarg 0
+00012: 323  notearg
+00013: 323  call 1
+00016: 323  pop
+00017: 323  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_chipmunk.js:322 ---

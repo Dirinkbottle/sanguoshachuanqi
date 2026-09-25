@@ -1,0 +1,2843 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/InterService/InterServiceFightView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=822 object[0]
+;; FUNCTION-MAP kind=lambda offset=832 object[1]
+;; FUNCTION-MAP kind=lambda offset=842 object[2]
+;; FUNCTION-MAP kind=lambda offset=852 object[3]
+;; FUNCTION-MAP kind=lambda offset=862 object[4]
+;; FUNCTION-MAP kind=lambda offset=872 object[5]
+;; FUNCTION-MAP kind=lambda offset=882 object[6]
+;; FUNCTION-MAP kind=lambda offset=892 object[7]
+;; FUNCTION-MAP kind=lambda offset=902 object[8]
+;; FUNCTION-MAP kind=lambda offset=912 object[9]
+;; FUNCTION-MAP kind=lambda offset=922 object[10]
+;; FUNCTION-MAP kind=lambda offset=932 object[11]
+;; FUNCTION-MAP kind=lambda offset=942 object[12]
+;; FUNCTION-MAP kind=lambda offset=952 object[13]
+;; FUNCTION-MAP kind=lambda offset=962 object[14]
+;; FUNCTION-MAP kind=lambda offset=998 object[15]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Views"
+00010:   5  name "cc"
+00015:   5  getprop "Layer"
+00020:   5  dup
+00021:   5  callprop "extend"
+00026:   5  swap
+00027:   5  notearg
+00028:   5  newinit 1
+00033:   6  string "xs.Views.InterServiceFightView"
+00038:   6  initprop "name"
+00043:   7  newarray 5
+00047:   8  newinit 1
+00052:   8  one
+00053:   8  initprop "tag"
+00058:   8  string "ls"
+00063:   8  initprop "type"
+00068:   8  string "m_first_PlayerName"
+00073:   8  initprop "name"
+00078:   8  string "LS_yuanfenInf2"
+00083:   8  initprop "id"
+00088:   8  endinit
+00089:   8  initelem_array 0
+00093:   9  newinit 1
+00098:   9  int8 10
+00100:   9  initprop "tag"
+00105:   9  string "ls"
+00110:   9  initprop "type"
+00115:   9  string "m_first_PlayerServer"
+00120:   9  initprop "name"
+00125:   9  string "LS_yuanfenInf2"
+00130:   9  initprop "id"
+00135:   9  endinit
+00136:   9  initelem_array 1
+00140:  10  newinit 1
+00145:  10  int8 3
+00147:  10  initprop "tag"
+00152:  10  string "ls"
+00157:  10  initprop "type"
+00162:  10  string "m_first_PlayerLevel"
+00167:  10  initprop "name"
+00172:  10  string "LS_Lv"
+00177:  10  initprop "id"
+00182:  10  endinit
+00183:  10  initelem_array 2
+00187:  11  newinit 1
+00192:  11  int8 50
+00194:  11  initprop "tag"
+00199:  11  string "ls"
+00204:  11  initprop "type"
+00209:  11  string "m_first_YuanbaoNum"
+00214:  11  initprop "name"
+00219:  11  string "LS_Lv"
+00224:  11  initprop "id"
+00229:  11  endinit
+00230:  11  initelem_array 3
+00234:  12  newinit 1
+00239:  12  int8 4
+00241:  12  initprop "tag"
+00246:  12  string "btn"
+00251:  12  initprop "type"
+00256:  12  string "m_first_fightBtn"
+00261:  12  initprop "name"
+00266:  12  string "Btn_btn1"
+00271:  12  initprop "id"
+00276:  12  endinit
+00277:  12  initelem_array 4
+00281:  12  endinit
+00282:  12  initprop "ccbCfg_first"
+00287:  14  newarray 5
+00291:  15  newinit 1
+00296:  15  one
+00297:  15  initprop "tag"
+00302:  15  string "ls"
+00307:  15  initprop "type"
+00312:  15  string "m_second_PlayerName"
+00317:  15  initprop "name"
+00322:  15  string "LS_yuanfenInf2"
+00327:  15  initprop "id"
+00332:  15  endinit
+00333:  15  initelem_array 0
+00337:  16  newinit 1
+00342:  16  int8 10
+00344:  16  initprop "tag"
+00349:  16  string "ls"
+00354:  16  initprop "type"
+00359:  16  string "m_second_PlayerServer"
+00364:  16  initprop "name"
+00369:  16  string "LS_yuanfenInf2"
+00374:  16  initprop "id"
+00379:  16  endinit
+00380:  16  initelem_array 1
+00384:  17  newinit 1
+00389:  17  int8 3
+00391:  17  initprop "tag"
+00396:  17  string "ls"
+00401:  17  initprop "type"
+00406:  17  string "m_second_PlayerLevel"
+00411:  17  initprop "name"
+00416:  17  string "LS_Lv"
+00421:  17  initprop "id"
+00426:  17  endinit
+00427:  17  initelem_array 2
+00431:  18  newinit 1
+00436:  18  int8 50
+00438:  18  initprop "tag"
+00443:  18  string "ls"
+00448:  18  initprop "type"
+00453:  18  string "m_second_YuanbaoNum"
+00458:  18  initprop "name"
+00463:  18  string "LS_Lv"
+00468:  18  initprop "id"
+00473:  18  endinit
+00474:  18  initelem_array 3
+00478:  19  newinit 1
+00483:  19  int8 4
+00485:  19  initprop "tag"
+00490:  19  string "btn"
+00495:  19  initprop "type"
+00500:  19  string "m_second_fightBtn"
+00505:  19  initprop "name"
+00510:  19  string "Btn_btn1"
+00515:  19  initprop "id"
+00520:  19  endinit
+00521:  19  initelem_array 4
+00525:  19  endinit
+00526:  19  initprop "ccbCfg_second"
+00531:  21  newarray 6
+00535:  22  newinit 1
+00540:  22  one
+00541:  22  initprop "tag"
+00546:  22  string "ls"
+00551:  22  initprop "type"
+00556:  22  string "m_winNum_history"
+00561:  22  initprop "name"
+00566:  22  string "LS_liansha"
+00571:  22  initprop "id"
+00576:  22  endinit
+00577:  22  initelem_array 0
+00581:  23  newinit 1
+00586:  23  int8 2
+00588:  23  initprop "tag"
+00593:  23  string "ls"
+00598:  23  initprop "type"
+00603:  23  string "m_winNum_now"
+00608:  23  initprop "name"
+00613:  23  string "LS_liansha"
+00618:  23  initprop "id"
+00623:  23  endinit
+00624:  23  initelem_array 1
+00628:  24  newinit 1
+00633:  24  int8 3
+00635:  24  initprop "tag"
+00640:  24  string "ls"
+00645:  24  initprop "type"
+00650:  24  string "m_points_history"
+00655:  24  initprop "name"
+00660:  24  string "LS_Lv"
+00665:  24  initprop "id"
+00670:  24  endinit
+00671:  24  initelem_array 2
+00675:  25  newinit 1
+00680:  25  int8 4
+00682:  25  initprop "tag"
+00687:  25  string "ls"
+00692:  25  initprop "type"
+00697:  25  string "m_points_residue"
+00702:  25  initprop "name"
+00707:  25  string "LS_Lv"
+00712:  25  initprop "id"
+00717:  25  endinit
+00718:  25  initelem_array 3
+00722:  26  newinit 1
+00727:  26  int8 5
+00729:  26  initprop "tag"
+00734:  26  string "ls"
+00739:  26  initprop "type"
+00744:  26  string "m_rank"
+00749:  26  initprop "name"
+00754:  26  string "LS_Lv"
+00759:  26  initprop "id"
+00764:  26  endinit
+00765:  26  initelem_array 4
+00769:  27  newinit 1
+00774:  27  int8 40
+00776:  27  initprop "tag"
+00781:  27  string "ls"
+00786:  27  initprop "type"
+00791:  27  string "m_historyResidueNum"
+00796:  27  initprop "name"
+00801:  27  string "LS_ZbJn"
+00806:  27  initprop "id"
+00811:  27  endinit
+00812:  27  initelem_array 5
+00816:  27  endinit
+00817:  27  initprop "ccbCfg_userinfor"
+00822:  29  lambda (function () {
+    [sourceless code]
+})
+00827:  29  initprop "ctor"
+00832:  33  lambda (function () {
+    [sourceless code]
+})
+00837:  33  initprop "init"
+00842: 171  lambda (function () {
+    [sourceless code]
+})
+00847: 171  initprop "onEnter"
+00852: 176  lambda (function () {
+    [sourceless code]
+})
+00857: 176  initprop "onExit"
+00862: 180  lambda (function () {
+    [sourceless code]
+})
+00867: 180  initprop "setBaseTouchPriority"
+00872: 185  lambda (function () {
+    [sourceless code]
+})
+00877: 185  initprop "requestPlayersInfor"
+00882: 220  lambda (function () {
+    [sourceless code]
+})
+00887: 220  initprop "initLayerInfor"
+00892: 308  lambda (function () {
+    [sourceless code]
+})
+00897: 308  initprop "goToFight"
+00902: 369  lambda (function () {
+    [sourceless code]
+})
+00907: 369  initprop "ClickGoToFight"
+00912: 389  lambda (function () {
+    [sourceless code]
+})
+00917: 389  initprop "firstFightCallback"
+00922: 397  lambda (function () {
+    [sourceless code]
+})
+00927: 397  initprop "secondFightCallback"
+00932: 405  lambda (function () {
+    [sourceless code]
+})
+00937: 405  initprop "createTwentyWinPrompt"
+00942: 416  lambda (function () {
+    [sourceless code]
+})
+00947: 416  initprop "rightBtnCallback"
+00952: 419  lambda (function () {
+    [sourceless code]
+})
+00957: 419  initprop "leftBtnCallback"
+00962: 424  lambda (function () {
+    [sourceless code]
+})
+00967: 424  initprop "closeCallback"
+00972: 424  endinit
+00973: 424  notearg
+00974: 424  call 1
+00977: 424  setprop "InterServiceFightView"
+00982: 424  popv
+00983: 430  name "xs"
+00988: 430  getprop "Views"
+00993: 430  getprop "InterServiceFightView"
+00998: 430  lambda (function () {
+    [sourceless code]
+})
+01003: 430  setprop "create"
+01008: 430  popv
+01009: 437  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  this
+00001:  30  dup
+00002:  30  callprop "_super"
+00007:  30  swap
+00008:  30  notearg
+00009:  30  call 0
+00012:  30  pop
+00013:  31  name "cc"
+00018:  31  dup
+00019:  31  callprop "associateWithNative"
+00024:  31  swap
+00025:  31  notearg
+00026:  31  this
+00027:  31  notearg
+00028:  31  name "cc"
+00033:  31  getprop "Layer"
+00038:  31  notearg
+00039:  31  call 2
+00042:  31  pop
+00043:  31  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:29 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] visibleSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:33 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  this
+00001:  34  dup
+00002:  34  callprop "_super"
+00007:  34  swap
+00008:  34  notearg
+00009:  34  call 0
+00012:  34  not
+00013:  34  ifeq 20 (+7)
+00018:  35  false
+00019:  35  return
+00020:  38  this
+00021:  38  null
+00022:  38  setprop "ccbNode_first"
+00027:  38  pop
+00028:  39  this
+00029:  39  null
+00030:  39  setprop "ccbNode_second"
+00035:  39  pop
+00036:  40  this
+00037:  40  null
+00038:  40  setprop "m_first_PlayerName"
+00043:  40  pop
+00044:  41  this
+00045:  41  null
+00046:  41  setprop "m_first_PlayerLevel"
+00051:  41  pop
+00052:  42  this
+00053:  42  null
+00054:  42  setprop "m_first_PlayerServer"
+00059:  42  pop
+00060:  43  this
+00061:  43  null
+00062:  43  setprop "m_first_fightBtn"
+00067:  43  pop
+00068:  44  this
+00069:  44  null
+00070:  44  setprop "m_first_icon"
+00075:  44  pop
+00076:  45  this
+00077:  45  null
+00078:  45  setprop "m_second_PlayerName"
+00083:  45  pop
+00084:  46  this
+00085:  46  null
+00086:  46  setprop "m_second_PlayerLevel"
+00091:  46  pop
+00092:  47  this
+00093:  47  null
+00094:  47  setprop "m_second_PlayerServer"
+00099:  47  pop
+00100:  48  this
+00101:  48  null
+00102:  48  setprop "m_second_fightBtn"
+00107:  48  pop
+00108:  49  this
+00109:  49  null
+00110:  49  setprop "m_second_icon"
+00115:  49  pop
+00116:  50  this
+00117:  50  null
+00118:  50  setprop "m_winNum_history"
+00123:  50  pop
+00124:  51  this
+00125:  51  null
+00126:  51  setprop "m_winNum_now"
+00131:  51  pop
+00132:  52  this
+00133:  52  null
+00134:  52  setprop "m_points_history"
+00139:  52  pop
+00140:  53  this
+00141:  53  null
+00142:  53  setprop "m_points_residue"
+00147:  53  pop
+00148:  54  this
+00149:  54  null
+00150:  54  setprop "m_rank"
+00155:  54  pop
+00156:  56  this
+00157:  56  null
+00158:  56  setprop "m_first_YuanbaoNum"
+00163:  56  pop
+00164:  57  this
+00165:  57  null
+00166:  57  setprop "m_second_YuanbaoNum"
+00171:  57  pop
+00172:  59  this
+00173:  59  null
+00174:  59  setprop "m_historyResidueNum"
+00179:  59  pop
+00180:  61  this
+00181:  61  null
+00182:  61  setprop "m_firstID"
+00187:  61  pop
+00188:  62  this
+00189:  62  null
+00190:  62  setprop "m_secondID"
+00195:  62  pop
+00196:  64  this
+00197:  64  null
+00198:  64  setprop "m_history_fight"
+00203:  64  pop
+00204:  65  this
+00205:  65  null
+00206:  65  setprop "m_left_fight"
+00211:  65  pop
+00212:  66  this
+00213:  66  null
+00214:  66  setprop "m_price"
+00219:  66  pop
+00220:  67  this
+00221:  67  null
+00222:  67  setprop "m_current_win"
+00227:  67  pop
+00228:  68  this
+00229:  68  null
+00230:  68  setprop "m_enable_fight"
+00235:  68  pop
+00236:  70  this
+00237:  70  getarg 0
+00240:  70  setprop "m_local"
+00245:  70  pop
+00246:  72  this
+00247:  72  null
+00248:  72  setprop "m_data"
+00253:  72  pop
+00254:  74  name "xs"
+00259:  74  getprop "director"
+00264:  74  dup
+00265:  74  callprop "getVisibleSize"
+00270:  74  swap
+00271:  74  notearg
+00272:  74  call 0
+00275:  74  setlocal 0
+00278:  74  pop
+00279:  78  this
+00280:  78  name "xs"
+00285:  78  getprop "ccb_reader"
+00290:  78  dup
+00291:  78  callprop "load"
+00296:  78  swap
+00297:  78  notearg
+00298:  78  name "xs"
+00303:  78  getprop "Cfg"
+00308:  78  getprop "CCBI"
+00313:  78  getprop "InterServicePlayerInfor"
+00318:  78  notearg
+00319:  78  this
+00320:  78  notearg
+00321:  78  call 2
+00324:  78  setprop "ccbNode_first"
+00329:  78  pop
+00330:  79  name "xs"
+00335:  79  getprop "Utils"
+00340:  79  getprop "Node"
+00345:  79  dup
+00346:  79  callprop "attachNodes"
+00351:  79  swap
+00352:  79  notearg
+00353:  79  this
+00354:  79  notearg
+00355:  79  this
+00356:  79  getprop "ccbNode_first"
+00361:  79  notearg
+00362:  79  newinit 1
+00367:  79  string "lb"
+00372:  79  initprop "desc"
+00377:  80  name "cc"
+00382:  80  dup
+00383:  80  callprop "p"
+00388:  80  swap
+00389:  80  notearg
+00390:  80  uint16 200
+00393:  80  notearg
+00394:  80  int8 110
+00396:  80  notearg
+00397:  80  call 2
+00400:  80  initprop "offset"
+00405:  81  false
+00406:  81  initprop "sc"
+00411:  81  endinit
+00412:  81  notearg
+00413:  81  call 3
+00416:  81  pop
+00417:  82  name "xs"
+00422:  82  getprop "Utils"
+00427:  82  getprop "UI"
+00432:  82  dup
+00433:  82  callprop "replaceCcbByCfg"
+00438:  82  swap
+00439:  82  notearg
+00440:  82  this
+00441:  82  getprop "ccbNode_first"
+00446:  82  notearg
+00447:  82  this
+00448:  82  getprop "ccbCfg_first"
+00453:  82  notearg
+00454:  82  this
+00455:  82  notearg
+00456:  82  call 3
+00459:  82  pop
+00460:  85  this
+00461:  85  name "xs"
+00466:  85  getprop "ccb_reader"
+00471:  85  dup
+00472:  85  callprop "load"
+00477:  85  swap
+00478:  85  notearg
+00479:  85  name "xs"
+00484:  85  getprop "Cfg"
+00489:  85  getprop "CCBI"
+00494:  85  getprop "InterServicePlayerInfor"
+00499:  85  notearg
+00500:  85  this
+00501:  85  notearg
+00502:  85  call 2
+00505:  85  setprop "ccbNode_second"
+00510:  85  pop
+00511:  86  name "xs"
+00516:  86  getprop "Utils"
+00521:  86  getprop "Node"
+00526:  86  dup
+00527:  86  callprop "attachNodes"
+00532:  86  swap
+00533:  86  notearg
+00534:  86  this
+00535:  86  notearg
+00536:  86  this
+00537:  86  getprop "ccbNode_second"
+00542:  86  notearg
+00543:  86  newinit 1
+00548:  86  string "rb"
+00553:  86  initprop "desc"
+00558:  87  name "cc"
+00563:  87  dup
+00564:  87  callprop "p"
+00569:  87  swap
+00570:  87  notearg
+00571:  87  int32 -450
+00576:  87  notearg
+00577:  87  int8 110
+00579:  87  notearg
+00580:  87  call 2
+00583:  87  initprop "offset"
+00588:  88  false
+00589:  88  initprop "sc"
+00594:  88  endinit
+00595:  88  notearg
+00596:  88  call 3
+00599:  88  pop
+00600:  89  name "xs"
+00605:  89  getprop "Utils"
+00610:  89  getprop "UI"
+00615:  89  dup
+00616:  89  callprop "replaceCcbByCfg"
+00621:  89  swap
+00622:  89  notearg
+00623:  89  this
+00624:  89  getprop "ccbNode_second"
+00629:  89  notearg
+00630:  89  this
+00631:  89  getprop "ccbCfg_second"
+00636:  89  notearg
+00637:  89  this
+00638:  89  notearg
+00639:  89  call 3
+00642:  89  pop
+00643:  92  this
+00644:  92  name "xs"
+00649:  92  getprop "Utils"
+00654:  92  dup
+00655:  92  callprop "getChildByTag"
+00660:  92  swap
+00661:  92  notearg
+00662:  92  this
+00663:  92  getprop "ccbNode_first"
+00668:  92  notearg
+00669:  92  int8 60
+00671:  92  notearg
+00672:  92  call 2
+00675:  92  setprop "m_first_YuanbaoBg"
+00680:  92  pop
+00681:  93  this
+00682:  93  name "xs"
+00687:  93  getprop "Utils"
+00692:  93  dup
+00693:  93  callprop "getChildByTag"
+00698:  93  swap
+00699:  93  notearg
+00700:  93  this
+00701:  93  getprop "ccbNode_second"
+00706:  93  notearg
+00707:  93  int8 60
+00709:  93  notearg
+00710:  93  call 2
+00713:  93  setprop "m_second_YuanbaoBg"
+00718:  93  pop
+00719:  95  this
+00720:  95  name "xs"
+00725:  95  getprop "ccb_reader"
+00730:  95  dup
+00731:  95  callprop "load"
+00736:  95  swap
+00737:  95  notearg
+00738:  95  name "xs"
+00743:  95  getprop "Cfg"
+00748:  95  getprop "CCBI"
+00753:  95  getprop "InterFightUserInfor"
+00758:  95  notearg
+00759:  95  this
+00760:  95  notearg
+00761:  95  call 2
+00764:  95  setprop "ccbNode_userinfor"
+00769:  95  pop
+00770:  96  this
+00771:  96  getprop "ccbNode_userinfor"
+00776:  96  dup
+00777:  96  callprop "setContentSize"
+00782:  96  swap
+00783:  96  notearg
+00784:  96  name "cc"
+00789:  96  dup
+00790:  96  callprop "size"
+00795:  96  swap
+00796:  96  notearg
+00797:  96  uint16 800
+00800:  96  notearg
+00801:  96  int8 110
+00803:  96  notearg
+00804:  96  call 2
+00807:  96  notearg
+00808:  96  call 1
+00811:  96  pop
+00812:  97  name "xs"
+00817:  97  getprop "Utils"
+00822:  97  getprop "Node"
+00827:  97  dup
+00828:  97  callprop "attachNodes"
+00833:  97  swap
+00834:  97  notearg
+00835:  97  this
+00836:  97  notearg
+00837:  97  this
+00838:  97  getprop "ccbNode_userinfor"
+00843:  97  notearg
+00844:  97  newinit 1
+00849:  97  string "lb"
+00854:  97  initprop "desc"
+00859:  98  newinit 1
+00864:  99  getlocal 0
+00867:  99  getprop "width"
+00872:  99  int8 2
+00874:  99  div
+00875:  99  uint16 310
+00878:  99  sub
+00879:  99  initprop "x"
+00884: 100  int8 6
+00886: 100  initprop "y"
+00891: 100  endinit
+00892: 100  initprop "offset"
+00897: 102  false
+00898: 102  initprop "sc"
+00903: 102  endinit
+00904: 102  notearg
+00905: 102  call 3
+00908: 102  pop
+00909: 103  name "xs"
+00914: 103  getprop "Utils"
+00919: 103  getprop "UI"
+00924: 103  dup
+00925: 103  callprop "replaceCcbByCfg"
+00930: 103  swap
+00931: 103  notearg
+00932: 103  this
+00933: 103  getprop "ccbNode_userinfor"
+00938: 103  notearg
+00939: 103  this
+00940: 103  getprop "ccbCfg_userinfor"
+00945: 103  notearg
+00946: 103  this
+00947: 103  notearg
+00948: 103  call 3
+00951: 103  pop
+00952: 107  this
+00953: 107  name "xs"
+00958: 107  getprop "Factorys"
+00963: 107  getprop "Sprite"
+00968: 107  dup
+00969: 107  callprop "create"
+00974: 107  swap
+00975: 107  notearg
+00976: 107  string "InterServiceLadderWar_WinPoints"
+00981: 107  notearg
+00982: 107  string "InterServiceLadderWar"
+00987: 107  notearg
+00988: 107  call 2
+00991: 107  setprop "winPoint_bg"
+00996: 107  pop
+00997: 108  name "xs"
+01002: 108  getprop "Utils"
+01007: 108  getprop "Node"
+01012: 108  dup
+01013: 108  callprop "attachNodes"
+01018: 108  swap
+01019: 108  notearg
+01020: 108  this
+01021: 108  notearg
+01022: 108  this
+01023: 108  getprop "winPoint_bg"
+01028: 108  notearg
+01029: 108  newinit 1
+01034: 108  string "lt"
+01039: 108  initprop "desc"
+01044: 108  newinit 1
+01049: 109  getlocal 0
+01052: 109  getprop "width"
+01057: 109  int8 2
+01059: 109  div
+01060: 109  initprop "x"
+01065: 110  int32 -130
+01070: 110  initprop "y"
+01075: 110  endinit
+01076: 110  initprop "offset"
+01081: 111  true
+01082: 111  initprop "sc"
+01087: 111  endinit
+01088: 111  notearg
+01089: 111  null
+01090: 111  notearg
+01091: 111  call 4
+01094: 111  pop
+01095: 113  this
+01096: 113  name "xs"
+01101: 113  getprop "Factorys"
+01106: 113  getprop "Label"
+01111: 113  dup
+01112: 113  callprop "createByStyleIdWithString"
+01117: 113  swap
+01118: 113  notearg
+01119: 113  string "LS_Lv"
+01124: 113  notearg
+01125: 113  string "0"
+01130: 113  notearg
+01131: 113  call 2
+01134: 113  setprop "winPointNumLabel"
+01139: 113  pop
+01140: 114  name "xs"
+01145: 114  getprop "Utils"
+01150: 114  getprop "Node"
+01155: 114  dup
+01156: 114  callprop "attachNodes"
+01161: 114  swap
+01162: 114  notearg
+01163: 114  this
+01164: 114  notearg
+01165: 114  this
+01166: 114  getprop "winPointNumLabel"
+01171: 114  notearg
+01172: 114  newinit 1
+01177: 115  string "lt"
+01182: 115  initprop "desc"
+01187: 116  true
+01188: 116  initprop "sc"
+01193: 117  newinit 1
+01198: 118  this
+01199: 118  getprop "winPoint_bg"
+01204: 118  dup
+01205: 118  callprop "getPositionX"
+01210: 118  swap
+01211: 118  notearg
+01212: 118  call 0
+01215: 118  int8 20
+01217: 118  add
+01218: 118  initprop "x"
+01223: 119  int32 -154
+01228: 119  initprop "y"
+01233: 119  endinit
+01234: 119  initprop "offset"
+01239: 119  endinit
+01240: 119  notearg
+01241: 119  call 3
+01244: 119  pop
+01245: 125  this
+01246: 125  getprop "m_first_fightBtn"
+01251: 125  dup
+01252: 125  callprop "setString"
+01257: 125  swap
+01258: 125  notearg
+01259: 125  name "xs"
+01264: 125  getprop "Tools"
+01269: 125  getprop "String"
+01274: 125  dup
+01275: 125  callprop "createString"
+01280: 125  swap
+01281: 125  notearg
+01282: 125  string "interService_kill"
+01287: 125  notearg
+01288: 125  call 1
+01291: 125  notearg
+01292: 125  call 1
+01295: 125  pop
+01296: 127  this
+01297: 127  getprop "m_first_fightBtn"
+01302: 127  dup
+01303: 127  callprop "setZOrder"
+01308: 127  swap
+01309: 127  notearg
+01310: 127  int8 2
+01312: 127  notearg
+01313: 127  call 1
+01316: 127  pop
+01317: 128  this
+01318: 128  getprop "m_first_fightBtn"
+01323: 128  dup
+01324: 128  callprop "setZoomOnTouchDown"
+01329: 128  swap
+01330: 128  notearg
+01331: 128  true
+01332: 128  notearg
+01333: 128  call 1
+01336: 128  pop
+01337: 129  this
+01338: 129  getprop "m_first_fightBtn"
+01343: 129  dup
+01344: 129  callprop "setOnClickCallBack"
+01349: 129  swap
+01350: 129  notearg
+01351: 129  this
+01352: 129  getprop "firstFightCallback"
+01357: 129  dup
+01358: 129  callprop "bind"
+01363: 129  swap
+01364: 129  notearg
+01365: 129  this
+01366: 129  notearg
+01367: 129  call 1
+01370: 129  notearg
+01371: 129  call 1
+01374: 129  pop
+01375: 132  this
+01376: 132  getprop "m_second_fightBtn"
+01381: 132  dup
+01382: 132  callprop "setString"
+01387: 132  swap
+01388: 132  notearg
+01389: 132  name "xs"
+01394: 132  getprop "Tools"
+01399: 132  getprop "String"
+01404: 132  dup
+01405: 132  callprop "createString"
+01410: 132  swap
+01411: 132  notearg
+01412: 132  string "interService_kill"
+01417: 132  notearg
+01418: 132  call 1
+01421: 132  notearg
+01422: 132  call 1
+01425: 132  pop
+01426: 134  this
+01427: 134  getprop "m_second_fightBtn"
+01432: 134  dup
+01433: 134  callprop "setZOrder"
+01438: 134  swap
+01439: 134  notearg
+01440: 134  int8 2
+01442: 134  notearg
+01443: 134  call 1
+01446: 134  pop
+01447: 135  this
+01448: 135  getprop "m_second_fightBtn"
+01453: 135  dup
+01454: 135  callprop "setZoomOnTouchDown"
+01459: 135  swap
+01460: 135  notearg
+01461: 135  true
+01462: 135  notearg
+01463: 135  call 1
+01466: 135  pop
+01467: 136  this
+01468: 136  getprop "m_second_fightBtn"
+01473: 136  dup
+01474: 136  callprop "setOnClickCallBack"
+01479: 136  swap
+01480: 136  notearg
+01481: 136  this
+01482: 136  getprop "secondFightCallback"
+01487: 136  dup
+01488: 136  callprop "bind"
+01493: 136  swap
+01494: 136  notearg
+01495: 136  this
+01496: 136  notearg
+01497: 136  call 1
+01500: 136  notearg
+01501: 136  call 1
+01504: 136  pop
+01505: 139  this
+01506: 139  name "xs"
+01511: 139  getprop "Utils"
+01516: 139  dup
+01517: 139  callprop "getChildByTag"
+01522: 139  swap
+01523: 139  notearg
+01524: 139  this
+01525: 139  getprop "ccbNode_first"
+01530: 139  notearg
+01531: 139  int8 2
+01533: 139  notearg
+01534: 139  call 2
+01537: 139  setprop "m_first_icon"
+01542: 139  pop
+01543: 140  this
+01544: 140  getprop "m_first_icon"
+01549: 140  dup
+01550: 140  callprop "setZOrder"
+01555: 140  swap
+01556: 140  notearg
+01557: 140  one
+01558: 140  notearg
+01559: 140  call 1
+01562: 140  pop
+01563: 141  this
+01564: 141  name "xs"
+01569: 141  getprop "Utils"
+01574: 141  dup
+01575: 141  callprop "getChildByTag"
+01580: 141  swap
+01581: 141  notearg
+01582: 141  this
+01583: 141  getprop "ccbNode_second"
+01588: 141  notearg
+01589: 141  int8 2
+01591: 141  notearg
+01592: 141  call 2
+01595: 141  setprop "m_second_icon"
+01600: 141  pop
+01601: 142  this
+01602: 142  getprop "m_first_icon"
+01607: 142  dup
+01608: 142  callprop "setZOrder"
+01613: 142  swap
+01614: 142  notearg
+01615: 142  one
+01616: 142  notearg
+01617: 142  call 1
+01620: 142  pop
+01621: 144  this
+01622: 144  name "xs"
+01627: 144  getprop "Utils"
+01632: 144  dup
+01633: 144  callprop "getChildByTag"
+01638: 144  swap
+01639: 144  notearg
+01640: 144  this
+01641: 144  getprop "ccbNode_first"
+01646: 144  notearg
+01647: 144  int8 30
+01649: 144  notearg
+01650: 144  call 2
+01653: 144  setprop "m_firstgeneral_bg"
+01658: 144  pop
+01659: 145  this
+01660: 145  getprop "m_firstgeneral_bg"
+01665: 145  dup
+01666: 145  callprop "setZOrder"
+01671: 145  swap
+01672: 145  notearg
+01673: 145  int8 2
+01675: 145  notearg
+01676: 145  call 1
+01679: 145  pop
+01680: 146  this
+01681: 146  name "xs"
+01686: 146  getprop "Utils"
+01691: 146  dup
+01692: 146  callprop "getChildByTag"
+01697: 146  swap
+01698: 146  notearg
+01699: 146  this
+01700: 146  getprop "ccbNode_second"
+01705: 146  notearg
+01706: 146  int8 30
+01708: 146  notearg
+01709: 146  call 2
+01712: 146  setprop "m_secondgeneral_bg"
+01717: 146  pop
+01718: 147  this
+01719: 147  getprop "m_secondgeneral_bg"
+01724: 147  dup
+01725: 147  callprop "setZOrder"
+01730: 147  swap
+01731: 147  notearg
+01732: 147  int8 2
+01734: 147  notearg
+01735: 147  call 1
+01738: 147  pop
+01739: 148  this
+01740: 148  name "xs"
+01745: 148  getprop "Utils"
+01750: 148  dup
+01751: 148  callprop "getChildByTag"
+01756: 148  swap
+01757: 148  notearg
+01758: 148  this
+01759: 148  getprop "ccbNode_first"
+01764: 148  notearg
+01765: 148  int8 40
+01767: 148  notearg
+01768: 148  call 2
+01771: 148  setprop "m_firstlv_bg"
+01776: 148  pop
+01777: 149  this
+01778: 149  getprop "m_firstlv_bg"
+01783: 149  dup
+01784: 149  callprop "setZOrder"
+01789: 149  swap
+01790: 149  notearg
+01791: 149  int8 3
+01793: 149  notearg
+01794: 149  call 1
+01797: 149  pop
+01798: 150  this
+01799: 150  name "xs"
+01804: 150  getprop "Utils"
+01809: 150  dup
+01810: 150  callprop "getChildByTag"
+01815: 150  swap
+01816: 150  notearg
+01817: 150  this
+01818: 150  getprop "ccbNode_second"
+01823: 150  notearg
+01824: 150  int8 40
+01826: 150  notearg
+01827: 150  call 2
+01830: 150  setprop "m_secondlv_bg"
+01835: 150  pop
+01836: 151  this
+01837: 151  getprop "m_secondlv_bg"
+01842: 151  dup
+01843: 151  callprop "setZOrder"
+01848: 151  swap
+01849: 151  notearg
+01850: 151  int8 3
+01852: 151  notearg
+01853: 151  call 1
+01856: 151  pop
+01857: 153  this
+01858: 153  getprop "m_first_PlayerName"
+01863: 153  dup
+01864: 153  callprop "setZOrder"
+01869: 153  swap
+01870: 153  notearg
+01871: 153  int8 3
+01873: 153  notearg
+01874: 153  call 1
+01877: 153  pop
+01878: 154  this
+01879: 154  getprop "m_first_PlayerLevel"
+01884: 154  dup
+01885: 154  callprop "setZOrder"
+01890: 154  swap
+01891: 154  notearg
+01892: 154  int8 3
+01894: 154  notearg
+01895: 154  call 1
+01898: 154  pop
+01899: 155  this
+01900: 155  getprop "m_first_PlayerServer"
+01905: 155  dup
+01906: 155  callprop "setZOrder"
+01911: 155  swap
+01912: 155  notearg
+01913: 155  int8 3
+01915: 155  notearg
+01916: 155  call 1
+01919: 155  pop
+01920: 156  this
+01921: 156  getprop "m_second_PlayerName"
+01926: 156  dup
+01927: 156  callprop "setZOrder"
+01932: 156  swap
+01933: 156  notearg
+01934: 156  int8 3
+01936: 156  notearg
+01937: 156  call 1
+01940: 156  pop
+01941: 157  this
+01942: 157  getprop "m_second_PlayerLevel"
+01947: 157  dup
+01948: 157  callprop "setZOrder"
+01953: 157  swap
+01954: 157  notearg
+01955: 157  int8 3
+01957: 157  notearg
+01958: 157  call 1
+01961: 157  pop
+01962: 158  this
+01963: 158  getprop "m_second_PlayerServer"
+01968: 158  dup
+01969: 158  callprop "setZOrder"
+01974: 158  swap
+01975: 158  notearg
+01976: 158  int8 3
+01978: 158  notearg
+01979: 158  call 1
+01982: 158  pop
+01983: 161  this
+01984: 161  getprop "m_winNum_history"
+01989: 161  dup
+01990: 161  callprop "setString"
+01995: 161  swap
+01996: 161  notearg
+01997: 161  string "0"
+02002: 161  notearg
+02003: 161  call 1
+02006: 161  pop
+02007: 162  this
+02008: 162  getprop "m_winNum_now"
+02013: 162  dup
+02014: 162  callprop "setString"
+02019: 162  swap
+02020: 162  notearg
+02021: 162  string "0"
+02026: 162  notearg
+02027: 162  call 1
+02030: 162  pop
+02031: 163  this
+02032: 163  getprop "m_points_history"
+02037: 163  dup
+02038: 163  callprop "setString"
+02043: 163  swap
+02044: 163  notearg
+02045: 163  string "0"
+02050: 163  notearg
+02051: 163  call 1
+02054: 163  pop
+02055: 164  this
+02056: 164  getprop "m_points_residue"
+02061: 164  dup
+02062: 164  callprop "setString"
+02067: 164  swap
+02068: 164  notearg
+02069: 164  string "0"
+02074: 164  notearg
+02075: 164  call 1
+02078: 164  pop
+02079: 165  this
+02080: 165  getprop "m_rank"
+02085: 165  dup
+02086: 165  callprop "setString"
+02091: 165  swap
+02092: 165  notearg
+02093: 165  string "0"
+02098: 165  notearg
+02099: 165  call 1
+02102: 165  pop
+02103: 169  true
+02104: 169  return
+02105: 169  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:33 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:171 ---
+loc   line  op
+----- ----  --
+main:
+00000: 172  this
+00001: 172  dup
+00002: 172  callprop "_super"
+00007: 172  swap
+00008: 172  notearg
+00009: 172  call 0
+00012: 172  pop
+00013: 173  name "xs"
+00018: 173  getprop "Utils"
+00023: 173  getprop "Notify"
+00028: 173  dup
+00029: 173  callprop "addObserver"
+00034: 173  swap
+00035: 173  notearg
+00036: 173  this
+00037: 173  notearg
+00038: 173  this
+00039: 173  getprop "goToFight"
+00044: 173  notearg
+00045: 173  name "xs"
+00050: 173  getprop "Constant_Notify_Event_InterBuyGoFight"
+00055: 173  notearg
+00056: 173  call 3
+00059: 173  pop
+00060: 174  this
+00061: 174  dup
+00062: 174  callprop "requestPlayersInfor"
+00067: 174  swap
+00068: 174  notearg
+00069: 174  call 0
+00072: 174  pop
+00073: 174  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:171 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:176 ---
+loc   line  op
+----- ----  --
+main:
+00000: 177  name "xs"
+00005: 177  getprop "Utils"
+00010: 177  getprop "Notify"
+00015: 177  dup
+00016: 177  callprop "removeObserver"
+00021: 177  swap
+00022: 177  notearg
+00023: 177  this
+00024: 177  notearg
+00025: 177  name "xs"
+00030: 177  getprop "Constant_Notify_Event_InterBuyGoFight"
+00035: 177  notearg
+00036: 177  call 2
+00039: 177  pop
+00040: 178  this
+00041: 178  dup
+00042: 178  callprop "_super"
+00047: 178  swap
+00048: 178  notearg
+00049: 178  call 0
+00052: 178  pop
+00053: 178  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:176 ---
+;; function object[4] setBaseTouchPriority
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:180 ---
+loc   line  op
+----- ----  --
+main:
+00000: 181  this
+00001: 181  getarg 0
+00004: 181  setprop "m_baseTouchPriority"
+00009: 181  pop
+00010: 182  this
+00011: 182  getprop "m_first_fightBtn"
+00016: 182  dup
+00017: 182  callprop "setTouchPriority"
+00022: 182  swap
+00023: 182  notearg
+00024: 182  this
+00025: 182  getprop "m_baseTouchPriority"
+00030: 182  one
+00031: 182  sub
+00032: 182  notearg
+00033: 182  call 1
+00036: 182  pop
+00037: 183  this
+00038: 183  getprop "m_second_fightBtn"
+00043: 183  dup
+00044: 183  callprop "setTouchPriority"
+00049: 183  swap
+00050: 183  notearg
+00051: 183  this
+00052: 183  getprop "m_baseTouchPriority"
+00057: 183  one
+00058: 183  sub
+00059: 183  notearg
+00060: 183  call 1
+00063: 183  pop
+00064: 183  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:180 ---
+;; function object[5] requestPlayersInfor
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=110 object[0]
+;; FUNCTION-MAP kind=lambda offset=116 object[1]
+;; FUNCTION-MAP kind=lambda offset=232 object[2]
+;; FUNCTION-MAP kind=lambda offset=238 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:185 ---
+loc   line  op
+----- ----  --
+main:
+00000: 186  this
+00001: 186  getprop "m_local"
+00006: 186  ifeq 133 (+127)
+00011: 187  name "xs"
+00016: 187  getprop "Tools"
+00021: 187  getprop "Net"
+00026: 187  dup
+00027: 187  callprop "requestLocalInterGetMatchs"
+00032: 187  swap
+00033: 187  notearg
+00034: 187  newinit 1
+00039: 188  name "xs"
+00044: 188  getprop "Profile"
+00049: 188  getprop "GameData"
+00054: 188  getprop "Mgr"
+00059: 188  dup
+00060: 188  callprop "getInstance"
+00065: 188  swap
+00066: 188  notearg
+00067: 188  call 0
+00070: 188  getprop "Player"
+00075: 188  dup
+00076: 188  callprop "getPlayer"
+00081: 188  swap
+00082: 188  notearg
+00083: 188  call 0
+00086: 188  dup
+00087: 188  callprop "getPlayerId"
+00092: 188  swap
+00093: 188  notearg
+00094: 188  call 0
+00097: 188  initprop "user_id"
+00102: 189  one
+00103: 189  initprop "is_main"
+00108: 189  endinit
+00109: 189  notearg
+00110: 191  lambda (function () {
+    [sourceless code]
+})
+00115: 191  notearg
+00116: 197  lambda (function () {
+    [sourceless code]
+})
+00121: 197  notearg
+00122: 199  this
+00123: 199  notearg
+00124: 199  call 4
+00127: 199  pop
+00128: 199  goto 250 (+122)
+00133: 202  name "xs"
+00138: 202  getprop "Tools"
+00143: 202  getprop "Net"
+00148: 202  dup
+00149: 202  callprop "requestInterGetMatchs"
+00154: 202  swap
+00155: 202  notearg
+00156: 202  newinit 1
+00161: 203  name "xs"
+00166: 203  getprop "Profile"
+00171: 203  getprop "GameData"
+00176: 203  getprop "Mgr"
+00181: 203  dup
+00182: 203  callprop "getInstance"
+00187: 203  swap
+00188: 203  notearg
+00189: 203  call 0
+00192: 203  getprop "Player"
+00197: 203  dup
+00198: 203  callprop "getPlayer"
+00203: 203  swap
+00204: 203  notearg
+00205: 203  call 0
+00208: 203  dup
+00209: 203  callprop "getPlayerId"
+00214: 203  swap
+00215: 203  notearg
+00216: 203  call 0
+00219: 203  initprop "user_id"
+00224: 204  one
+00225: 204  initprop "is_main"
+00230: 204  endinit
+00231: 204  notearg
+00232: 206  lambda (function () {
+    [sourceless code]
+})
+00237: 206  notearg
+00238: 212  lambda (function () {
+    [sourceless code]
+})
+00243: 212  notearg
+00244: 214  this
+00245: 214  notearg
+00246: 214  call 4
+00249: 214  pop
+00250: 216  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:185 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:191 ---
+loc   line  op
+----- ----  --
+main:
+00000: 192  getarg 0
+00003: 192  getprop "return_info"
+00008: 192  ifeq 50 (+42)
+00013: 193  this
+00014: 193  getarg 0
+00017: 193  getprop "return_info"
+00022: 193  setprop "m_data"
+00027: 193  pop
+00028: 194  this
+00029: 194  dup
+00030: 194  callprop "initLayerInfor"
+00035: 194  swap
+00036: 194  notearg
+00037: 194  getarg 0
+00040: 194  getprop "return_info"
+00045: 194  notearg
+00046: 194  call 1
+00049: 194  pop
+00050: 195  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:191 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:197 ---
+loc   line  op
+----- ----  --
+main:
+00000: 197  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:197 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:206 ---
+loc   line  op
+----- ----  --
+main:
+00000: 207  getarg 0
+00003: 207  getprop "return_info"
+00008: 207  ifeq 50 (+42)
+00013: 208  this
+00014: 208  getarg 0
+00017: 208  getprop "return_info"
+00022: 208  setprop "m_data"
+00027: 208  pop
+00028: 209  this
+00029: 209  dup
+00030: 209  callprop "initLayerInfor"
+00035: 209  swap
+00036: 209  notearg
+00037: 209  getarg 0
+00040: 209  getprop "return_info"
+00045: 209  notearg
+00046: 209  call 1
+00049: 209  pop
+00050: 210  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:206 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:212 ---
+loc   line  op
+----- ----  --
+main:
+00000: 212  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:212 ---
+;; function object[6] initLayerInfor
+;; function metadata object[6] nargs=1 bindings=8
+;; arg[0] data
+;; local[0] playerArray
+;; local[1] fightStr
+;; local[2] doubleKillStr
+;; local[3] _first_filePath
+;; local[4] _second_filePath
+;; local[5] _first_general
+;; local[6] _second_general
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:220 ---
+loc   line  op
+----- ----  --
+main:
+00000: 222  getarg 0
+00003: 222  getprop "match_info"
+00008: 222  setlocal 0
+00011: 222  pop
+00012: 224  this
+00013: 224  getlocal 0
+00016: 224  zero
+00017: 224  getelem
+00018: 224  getprop "uid"
+00023: 224  setprop "m_firstID"
+00028: 224  pop
+00029: 225  this
+00030: 225  getlocal 0
+00033: 225  one
+00034: 225  getelem
+00035: 225  getprop "uid"
+00040: 225  setprop "m_secondID"
+00045: 225  pop
+00046: 228  this
+00047: 228  getprop "winPointNumLabel"
+00052: 228  dup
+00053: 228  callprop "setString"
+00058: 228  swap
+00059: 228  notearg
+00060: 228  getarg 0
+00063: 228  getprop "point"
+00068: 228  notearg
+00069: 228  call 1
+00072: 228  pop
+00073: 230  this
+00074: 230  getarg 0
+00077: 230  getprop "history_fight"
+00082: 230  setprop "m_history_fight"
+00087: 230  pop
+00088: 231  this
+00089: 231  getarg 0
+00092: 231  getprop "left_fight"
+00097: 231  setprop "m_left_fight"
+00102: 231  pop
+00103: 232  this
+00104: 232  getarg 0
+00107: 232  getprop "price"
+00112: 232  setprop "m_price"
+00117: 232  pop
+00118: 233  this
+00119: 233  getarg 0
+00122: 233  getprop "enable_fight"
+00127: 233  setprop "m_enable_fight"
+00132: 233  pop
+00133: 235  getarg 0
+00136: 235  getprop "left_fight"
+00141: 235  zero
+00142: 235  gt
+00143: 235  ifeq 315 (+172)
+00148: 237  this
+00149: 237  getprop "m_first_YuanbaoNum"
+00154: 237  dup
+00155: 237  callprop "setVisible"
+00160: 237  swap
+00161: 237  notearg
+00162: 237  false
+00163: 237  notearg
+00164: 237  call 1
+00167: 237  pop
+00168: 238  this
+00169: 238  getprop "m_second_YuanbaoNum"
+00174: 238  dup
+00175: 238  callprop "setVisible"
+00180: 238  swap
+00181: 238  notearg
+00182: 238  false
+00183: 238  notearg
+00184: 238  call 1
+00187: 238  pop
+00188: 240  this
+00189: 240  getprop "m_first_YuanbaoBg"
+00194: 240  dup
+00195: 240  callprop "setVisible"
+00200: 240  swap
+00201: 240  notearg
+00202: 240  false
+00203: 240  notearg
+00204: 240  call 1
+00207: 240  pop
+00208: 241  this
+00209: 241  getprop "m_second_YuanbaoBg"
+00214: 241  dup
+00215: 241  callprop "setVisible"
+00220: 241  swap
+00221: 241  notearg
+00222: 241  false
+00223: 241  notearg
+00224: 241  call 1
+00227: 241  pop
+00228: 243  name "xs"
+00233: 243  getprop "Tools"
+00238: 243  getprop "String"
+00243: 243  dup
+00244: 243  callprop "createString"
+00249: 243  swap
+00250: 243  notearg
+00251: 243  string "interService_residueNum"
+00256: 243  notearg
+00257: 243  call 1
+00260: 243  setlocal 1
+00263: 243  pop
+00264: 244  this
+00265: 244  getprop "m_historyResidueNum"
+00270: 244  dup
+00271: 244  callprop "setString"
+00276: 244  swap
+00277: 244  notearg
+00278: 244  getlocal 1
+00281: 244  getarg 0
+00284: 244  getprop "left_fight"
+00289: 244  add
+00290: 244  string "/"
+00295: 244  add
+00296: 244  getarg 0
+00299: 244  getprop "total_fight"
+00304: 244  add
+00305: 244  notearg
+00306: 244  call 1
+00309: 244  pop
+00310: 244  goto 615 (+305)
+00315: 248  getarg 0
+00318: 248  getprop "enable_fight"
+00323: 248  not
+00324: 248  ifeq 468 (+144)
+00329: 249  this
+00330: 249  getprop "m_first_YuanbaoNum"
+00335: 249  dup
+00336: 249  callprop "setVisible"
+00341: 249  swap
+00342: 249  notearg
+00343: 249  true
+00344: 249  notearg
+00345: 249  call 1
+00348: 249  pop
+00349: 250  this
+00350: 250  getprop "m_second_YuanbaoNum"
+00355: 250  dup
+00356: 250  callprop "setVisible"
+00361: 250  swap
+00362: 250  notearg
+00363: 250  true
+00364: 250  notearg
+00365: 250  call 1
+00368: 250  pop
+00369: 251  this
+00370: 251  getprop "m_first_YuanbaoNum"
+00375: 251  dup
+00376: 251  callprop "setString"
+00381: 251  swap
+00382: 251  notearg
+00383: 251  getarg 0
+00386: 251  getprop "price"
+00391: 251  notearg
+00392: 251  call 1
+00395: 251  pop
+00396: 252  this
+00397: 252  getprop "m_second_YuanbaoNum"
+00402: 252  dup
+00403: 252  callprop "setString"
+00408: 252  swap
+00409: 252  notearg
+00410: 252  getarg 0
+00413: 252  getprop "price"
+00418: 252  notearg
+00419: 252  call 1
+00422: 252  pop
+00423: 253  this
+00424: 253  getprop "m_first_YuanbaoBg"
+00429: 253  dup
+00430: 253  callprop "setVisible"
+00435: 253  swap
+00436: 253  notearg
+00437: 253  true
+00438: 253  notearg
+00439: 253  call 1
+00442: 253  pop
+00443: 254  this
+00444: 254  getprop "m_second_YuanbaoBg"
+00449: 254  dup
+00450: 254  callprop "setVisible"
+00455: 254  swap
+00456: 254  notearg
+00457: 254  true
+00458: 254  notearg
+00459: 254  call 1
+00462: 254  pop
+00463: 254  goto 548 (+85)
+00468: 256  this
+00469: 256  getprop "m_first_YuanbaoNum"
+00474: 256  dup
+00475: 256  callprop "setVisible"
+00480: 256  swap
+00481: 256  notearg
+00482: 256  false
+00483: 256  notearg
+00484: 256  call 1
+00487: 256  pop
+00488: 257  this
+00489: 257  getprop "m_second_YuanbaoNum"
+00494: 257  dup
+00495: 257  callprop "setVisible"
+00500: 257  swap
+00501: 257  notearg
+00502: 257  false
+00503: 257  notearg
+00504: 257  call 1
+00507: 257  pop
+00508: 258  this
+00509: 258  getprop "m_first_YuanbaoBg"
+00514: 258  dup
+00515: 258  callprop "setVisible"
+00520: 258  swap
+00521: 258  notearg
+00522: 258  false
+00523: 258  notearg
+00524: 258  call 1
+00527: 258  pop
+00528: 259  this
+00529: 259  getprop "m_second_YuanbaoBg"
+00534: 259  dup
+00535: 259  callprop "setVisible"
+00540: 259  swap
+00541: 259  notearg
+00542: 259  false
+00543: 259  notearg
+00544: 259  call 1
+00547: 259  pop
+00548: 263  name "xs"
+00553: 263  getprop "Tools"
+00558: 263  getprop "String"
+00563: 263  dup
+00564: 263  callprop "createString"
+00569: 263  swap
+00570: 263  notearg
+00571: 263  string "interService_HisResidueNum"
+00576: 263  notearg
+00577: 263  call 1
+00580: 263  setlocal 1
+00583: 263  pop
+00584: 264  this
+00585: 264  getprop "m_historyResidueNum"
+00590: 264  dup
+00591: 264  callprop "setString"
+00596: 264  swap
+00597: 264  notearg
+00598: 264  getlocal 1
+00601: 264  getarg 0
+00604: 264  getprop "history_fight"
+00609: 264  add
+00610: 264  notearg
+00611: 264  call 1
+00614: 264  pop
+00615: 268  this
+00616: 268  getprop "m_first_PlayerName"
+00621: 268  dup
+00622: 268  callprop "setString"
+00627: 268  swap
+00628: 268  notearg
+00629: 268  getlocal 0
+00632: 268  zero
+00633: 268  getelem
+00634: 268  getprop "nick"
+00639: 268  notearg
+00640: 268  call 1
+00643: 268  pop
+00644: 269  this
+00645: 269  getprop "m_first_PlayerServer"
+00650: 269  dup
+00651: 269  callprop "setString"
+00656: 269  swap
+00657: 269  notearg
+00658: 269  getlocal 0
+00661: 269  zero
+00662: 269  getelem
+00663: 269  getprop "server"
+00668: 269  notearg
+00669: 269  call 1
+00672: 269  pop
+00673: 270  this
+00674: 270  getprop "m_first_PlayerLevel"
+00679: 270  dup
+00680: 270  callprop "setString"
+00685: 270  swap
+00686: 270  notearg
+00687: 270  getlocal 0
+00690: 270  zero
+00691: 270  getelem
+00692: 270  getprop "level"
+00697: 270  or 708 (+11)
+00702: 270  pop
+00703: 270  string "0"
+00708: 270  notearg
+00709: 270  call 1
+00712: 270  pop
+00713: 271  this
+00714: 271  getprop "m_second_PlayerName"
+00719: 271  dup
+00720: 271  callprop "setString"
+00725: 271  swap
+00726: 271  notearg
+00727: 271  getlocal 0
+00730: 271  one
+00731: 271  getelem
+00732: 271  getprop "nick"
+00737: 271  notearg
+00738: 271  call 1
+00741: 271  pop
+00742: 272  this
+00743: 272  getprop "m_second_PlayerServer"
+00748: 272  dup
+00749: 272  callprop "setString"
+00754: 272  swap
+00755: 272  notearg
+00756: 272  getlocal 0
+00759: 272  one
+00760: 272  getelem
+00761: 272  getprop "server"
+00766: 272  notearg
+00767: 272  call 1
+00770: 272  pop
+00771: 273  this
+00772: 273  getprop "m_second_PlayerLevel"
+00777: 273  dup
+00778: 273  callprop "setString"
+00783: 273  swap
+00784: 273  notearg
+00785: 273  getlocal 0
+00788: 273  one
+00789: 273  getelem
+00790: 273  getprop "level"
+00795: 273  or 806 (+11)
+00800: 273  pop
+00801: 273  string "0"
+00806: 273  notearg
+00807: 273  call 1
+00810: 273  pop
+00811: 275  name "xs"
+00816: 275  getprop "Tools"
+00821: 275  getprop "String"
+00826: 275  dup
+00827: 275  callprop "createString"
+00832: 275  swap
+00833: 275  notearg
+00834: 275  string "interService_doubleKill"
+00839: 275  notearg
+00840: 275  call 1
+00843: 275  setlocal 2
+00846: 275  pop
+00847: 276  callname "Number"
+00852: 276  implicitthis "Number"
+00857: 276  notearg
+00858: 276  getarg 0
+00861: 276  getprop "max_win"
+00866: 276  notearg
+00867: 276  call 1
+00870: 276  int8 2
+00872: 276  ge
+00873: 276  ifeq 925 (+52)
+00878: 277  this
+00879: 277  getprop "m_winNum_history"
+00884: 277  dup
+00885: 277  callprop "setString"
+00890: 277  swap
+00891: 277  notearg
+00892: 277  getarg 0
+00895: 277  getprop "max_win"
+00900: 277  or 911 (+11)
+00905: 277  pop
+00906: 277  string "0"
+00911: 277  getlocal 2
+00914: 277  add
+00915: 277  notearg
+00916: 277  call 1
+00919: 277  pop
+00920: 277  goto 963 (+43)
+00925: 279  this
+00926: 279  getprop "m_winNum_history"
+00931: 279  dup
+00932: 279  callprop "setString"
+00937: 279  swap
+00938: 279  notearg
+00939: 279  getarg 0
+00942: 279  getprop "max_win"
+00947: 279  or 958 (+11)
+00952: 279  pop
+00953: 279  string "0"
+00958: 279  notearg
+00959: 279  call 1
+00962: 279  pop
+00963: 282  this
+00964: 282  getarg 0
+00967: 282  getprop "current_win"
+00972: 282  setprop "m_current_win"
+00977: 282  pop
+00978: 283  callname "Number"
+00983: 283  implicitthis "Number"
+00988: 283  notearg
+00989: 283  getarg 0
+00992: 283  getprop "current_win"
+00997: 283  notearg
+00998: 283  call 1
+01001: 283  int8 2
+01003: 283  ge
+01004: 283  ifeq 1056 (+52)
+01009: 284  this
+01010: 284  getprop "m_winNum_now"
+01015: 284  dup
+01016: 284  callprop "setString"
+01021: 284  swap
+01022: 284  notearg
+01023: 284  getarg 0
+01026: 284  getprop "current_win"
+01031: 284  or 1042 (+11)
+01036: 284  pop
+01037: 284  string "0"
+01042: 284  getlocal 2
+01045: 284  add
+01046: 284  notearg
+01047: 284  call 1
+01050: 284  pop
+01051: 284  goto 1094 (+43)
+01056: 286  this
+01057: 286  getprop "m_winNum_now"
+01062: 286  dup
+01063: 286  callprop "setString"
+01068: 286  swap
+01069: 286  notearg
+01070: 286  getarg 0
+01073: 286  getprop "current_win"
+01078: 286  or 1089 (+11)
+01083: 286  pop
+01084: 286  string "0"
+01089: 286  notearg
+01090: 286  call 1
+01093: 286  pop
+01094: 288  this
+01095: 288  getprop "m_points_history"
+01100: 288  dup
+01101: 288  callprop "setString"
+01106: 288  swap
+01107: 288  notearg
+01108: 288  getarg 0
+01111: 288  getprop "total_point"
+01116: 288  or 1127 (+11)
+01121: 288  pop
+01122: 288  string "0"
+01127: 288  notearg
+01128: 288  call 1
+01131: 288  pop
+01132: 289  this
+01133: 289  getprop "m_points_residue"
+01138: 289  dup
+01139: 289  callprop "setString"
+01144: 289  swap
+01145: 289  notearg
+01146: 289  getarg 0
+01149: 289  getprop "daily_point"
+01154: 289  or 1165 (+11)
+01159: 289  pop
+01160: 289  string "0"
+01165: 289  notearg
+01166: 289  call 1
+01169: 289  pop
+01170: 291  this
+01171: 291  getprop "m_rank"
+01176: 291  dup
+01177: 291  callprop "setString"
+01182: 291  swap
+01183: 291  notearg
+01184: 291  getarg 0
+01187: 291  getprop "rank"
+01192: 291  or 1203 (+11)
+01197: 291  pop
+01198: 291  string "0"
+01203: 291  notearg
+01204: 291  call 1
+01207: 291  pop
+01208: 294  name "xs"
+01213: 294  getprop "Cfg"
+01218: 294  getprop "Resource"
+01223: 294  getprop "Path"
+01228: 294  getprop "Card1_V2"
+01233: 294  getprop "file_pre"
+01238: 294  getlocal 0
+01241: 294  zero
+01242: 294  getelem
+01243: 294  getprop "gid"
+01248: 294  add
+01249: 294  string ".png"
+01254: 294  add
+01255: 294  setlocal 3
+01258: 294  pop
+01259: 295  name "xs"
+01264: 295  getprop "Cfg"
+01269: 295  getprop "Resource"
+01274: 295  getprop "Path"
+01279: 295  getprop "Card1_V2"
+01284: 295  getprop "file_pre"
+01289: 295  getlocal 0
+01292: 295  one
+01293: 295  getelem
+01294: 295  getprop "gid"
+01299: 295  add
+01300: 295  string ".png"
+01305: 295  add
+01306: 295  setlocal 4
+01309: 295  pop
+01310: 296  name "xs"
+01315: 296  getprop "Factorys"
+01320: 296  getprop "Sprite"
+01325: 296  dup
+01326: 296  callprop "createWithFileName"
+01331: 296  swap
+01332: 296  notearg
+01333: 296  getlocal 3
+01336: 296  notearg
+01337: 296  call 1
+01340: 296  setlocal 5
+01343: 296  pop
+01344: 297  getlocal 5
+01347: 297  dup
+01348: 297  callprop "setScale"
+01353: 297  swap
+01354: 297  notearg
+01355: 297  double 0.7
+01360: 297  notearg
+01361: 297  call 1
+01364: 297  pop
+01365: 298  name "xs"
+01370: 298  getprop "Factorys"
+01375: 298  getprop "Sprite"
+01380: 298  dup
+01381: 298  callprop "createWithFileName"
+01386: 298  swap
+01387: 298  notearg
+01388: 298  getlocal 4
+01391: 298  notearg
+01392: 298  call 1
+01395: 298  setlocal 6
+01398: 298  pop
+01399: 299  getlocal 6
+01402: 299  dup
+01403: 299  callprop "setScale"
+01408: 299  swap
+01409: 299  notearg
+01410: 299  double 0.7
+01415: 299  notearg
+01416: 299  call 1
+01419: 299  pop
+01420: 300  name "xs"
+01425: 300  getprop "Utils"
+01430: 300  getprop "Node"
+01435: 300  dup
+01436: 300  callprop "replaceChildSafe"
+01441: 300  swap
+01442: 300  notearg
+01443: 300  this
+01444: 300  getprop "ccbNode_first"
+01449: 300  notearg
+01450: 300  this
+01451: 300  getprop "m_first_icon"
+01456: 300  notearg
+01457: 300  getlocal 5
+01460: 300  notearg
+01461: 300  call 3
+01464: 300  pop
+01465: 301  this
+01466: 301  getlocal 5
+01469: 301  setprop "m_first_icon"
+01474: 301  pop
+01475: 302  this
+01476: 302  getprop "m_first_icon"
+01481: 302  dup
+01482: 302  callprop "setZOrder"
+01487: 302  swap
+01488: 302  notearg
+01489: 302  one
+01490: 302  notearg
+01491: 302  call 1
+01494: 302  pop
+01495: 303  name "xs"
+01500: 303  getprop "Utils"
+01505: 303  getprop "Node"
+01510: 303  dup
+01511: 303  callprop "replaceChildSafe"
+01516: 303  swap
+01517: 303  notearg
+01518: 303  this
+01519: 303  getprop "ccbNode_second"
+01524: 303  notearg
+01525: 303  this
+01526: 303  getprop "m_second_icon"
+01531: 303  notearg
+01532: 303  getlocal 6
+01535: 303  notearg
+01536: 303  call 3
+01539: 303  pop
+01540: 304  this
+01541: 304  getlocal 6
+01544: 304  setprop "m_second_icon"
+01549: 304  pop
+01550: 305  this
+01551: 305  getprop "m_second_icon"
+01556: 305  dup
+01557: 305  callprop "setZOrder"
+01562: 305  swap
+01563: 305  notearg
+01564: 305  one
+01565: 305  notearg
+01566: 305  call 1
+01569: 305  pop
+01570: 305  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:220 ---
+;; function object[7] goToFight
+;; function metadata object[7] nargs=0 bindings=1
+;; local[0] successFunction
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=176 object[1]
+;; FUNCTION-MAP kind=lambda offset=182 object[2]
+;; FUNCTION-MAP kind=lambda offset=303 object[3]
+;; FUNCTION-MAP kind=lambda offset=309 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:308 ---
+loc   line  op
+----- ----  --
+main:
+00000: 309  name "xs"
+00005: 309  getprop "Tools"
+00010: 309  getprop "Statistic"
+00015: 309  dup
+00016: 309  callprop "event"
+00021: 309  swap
+00022: 309  notearg
+00023: 309  string "ladderWar_kill"
+00028: 309  notearg
+00029: 309  call 1
+00032: 309  pop
+00033: 310  lambda (function () {
+    [sourceless code]
+})
+00038: 310  dup
+00039: 310  callprop "bind"
+00044: 310  swap
+00045: 310  notearg
+00046: 343  this
+00047: 343  notearg
+00048: 343  call 1
+00051: 343  setaliasedvar "successFunction" (hops = 0, slot = 2)
+00060: 343  pop
+00061: 345  this
+00062: 345  getprop "m_local"
+00067: 345  ifeq 199 (+132)
+00072: 346  name "xs"
+00077: 346  getprop "Tools"
+00082: 346  getprop "Net"
+00087: 346  dup
+00088: 346  callprop "requestLocalInterServiceFight"
+00093: 346  swap
+00094: 346  notearg
+00095: 346  newinit 1
+00100: 347  name "xs"
+00105: 347  getprop "Profile"
+00110: 347  getprop "GameData"
+00115: 347  getprop "Mgr"
+00120: 347  dup
+00121: 347  callprop "getInstance"
+00126: 347  swap
+00127: 347  notearg
+00128: 347  call 0
+00131: 347  getprop "Player"
+00136: 347  dup
+00137: 347  callprop "getPlayer"
+00142: 347  swap
+00143: 347  notearg
+00144: 347  call 0
+00147: 347  dup
+00148: 347  callprop "getPlayerId"
+00153: 347  swap
+00154: 347  notearg
+00155: 347  call 0
+00158: 347  initprop "user_id"
+00163: 348  this
+00164: 348  getprop "m_playerId"
+00169: 348  initprop "player_id"
+00174: 348  endinit
+00175: 348  notearg
+00176: 350  lambda (function () {
+    [sourceless code]
+})
+00181: 350  notearg
+00182: 353  lambda (function () {
+    [sourceless code]
+})
+00187: 353  notearg
+00188: 355  this
+00189: 355  notearg
+00190: 355  call 4
+00193: 355  pop
+00194: 355  goto 321 (+127)
+00199: 357  name "xs"
+00204: 357  getprop "Tools"
+00209: 357  getprop "Net"
+00214: 357  dup
+00215: 357  callprop "requestInterServiceFight"
+00220: 357  swap
+00221: 357  notearg
+00222: 357  newinit 1
+00227: 358  name "xs"
+00232: 358  getprop "Profile"
+00237: 358  getprop "GameData"
+00242: 358  getprop "Mgr"
+00247: 358  dup
+00248: 358  callprop "getInstance"
+00253: 358  swap
+00254: 358  notearg
+00255: 358  call 0
+00258: 358  getprop "Player"
+00263: 358  dup
+00264: 358  callprop "getPlayer"
+00269: 358  swap
+00270: 358  notearg
+00271: 358  call 0
+00274: 358  dup
+00275: 358  callprop "getPlayerId"
+00280: 358  swap
+00281: 358  notearg
+00282: 358  call 0
+00285: 358  initprop "user_id"
+00290: 359  this
+00291: 359  getprop "m_playerId"
+00296: 359  initprop "player_id"
+00301: 359  endinit
+00302: 359  notearg
+00303: 361  lambda (function () {
+    [sourceless code]
+})
+00308: 361  notearg
+00309: 364  lambda (function () {
+    [sourceless code]
+})
+00314: 364  notearg
+00315: 366  this
+00316: 366  notearg
+00317: 366  call 4
+00320: 366  pop
+00321: 367  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:308 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] jsonObj
+;; local[0] fightNum
+
+;; nested bytecode depth=2
+;; FUNCTION-MAP kind=lambda offset=141 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:310 ---
+loc   line  op
+----- ----  --
+main:
+00000: 311  this
+00001: 311  getprop "m_left_fight"
+00006: 311  this
+00007: 311  getprop "m_history_fight"
+00012: 311  add
+00013: 311  setlocal 0
+00016: 311  pop
+00017: 312  getlocal 0
+00020: 312  one
+00021: 312  stricteq
+00022: 312  ifeq 175 (+153)
+00027: 314  name "xs"
+00032: 314  getprop "Scene"
+00037: 314  getprop "Mgr"
+00042: 314  dup
+00043: 314  callprop "changeSceneByName"
+00048: 314  swap
+00049: 314  notearg
+00050: 315  string "FightScene"
+00055: 315  notearg
+00056: 316  newinit 1
+00061: 317  name "xs"
+00066: 317  getprop "Constant_FightScene_Mode_Normal"
+00071: 317  initprop "mode"
+00076: 319  name "xs"
+00081: 319  getprop "Constant_FightScene_Type_UnionWar"
+00086: 319  initprop "fightType"
+00091: 320  name "xs"
+00096: 320  getprop "Constant_FightScene_OpenType_Pvp"
+00101: 320  initprop "openType"
+00106: 321  name "xs"
+00111: 321  getprop "Models"
+00116: 321  getprop "FightInfo"
+00121: 321  dup
+00122: 321  callprop "create"
+00127: 321  swap
+00128: 321  notearg
+00129: 321  getarg 0
+00132: 321  notearg
+00133: 321  call 1
+00136: 321  initprop "fightData"
+00141: 322  lambda (function () {
+    [sourceless code]
+})
+00146: 322  dup
+00147: 322  callprop "bind"
+00152: 322  swap
+00153: 322  notearg
+00154: 326  this
+00155: 326  notearg
+00156: 326  call 1
+00159: 326  initprop "funcFinish"
+00164: 326  endinit
+00165: 326  notearg
+00166: 326  call 2
+00169: 326  pop
+00170: 326  goto 295 (+125)
+00175: 331  name "xs"
+00180: 331  getprop "Scene"
+00185: 331  getprop "Mgr"
+00190: 331  dup
+00191: 331  callprop "changeSceneByName"
+00196: 331  swap
+00197: 331  notearg
+00198: 332  string "FightScene"
+00203: 332  notearg
+00204: 333  newinit 1
+00209: 334  name "xs"
+00214: 334  getprop "Constant_FightScene_Mode_Normal"
+00219: 334  initprop "mode"
+00224: 336  name "xs"
+00229: 336  getprop "Constant_FightScene_Type_UnionWar"
+00234: 336  initprop "fightType"
+00239: 337  name "xs"
+00244: 337  getprop "Constant_FightScene_OpenType_Pvp"
+00249: 337  initprop "openType"
+00254: 338  name "xs"
+00259: 338  getprop "Models"
+00264: 338  getprop "FightInfo"
+00269: 338  dup
+00270: 338  callprop "create"
+00275: 338  swap
+00276: 338  notearg
+00277: 338  getarg 0
+00280: 338  notearg
+00281: 338  call 1
+00284: 338  initprop "fightData"
+00289: 338  endinit
+00290: 338  notearg
+00291: 338  call 2
+00294: 338  pop
+00295: 341  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:310 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:322 ---
+loc   line  op
+----- ----  --
+main:
+00000: 323  name "xs"
+00005: 323  getprop "Scene"
+00010: 323  getprop "Mgr"
+00015: 323  getprop "history"
+00020: 323  getprop "names_sub"
+00025: 323  dup
+00026: 323  callprop "pop"
+00031: 323  swap
+00032: 323  notearg
+00033: 323  call 0
+00036: 323  pop
+00037: 324  name "xs"
+00042: 324  getprop "Scene"
+00047: 324  getprop "Mgr"
+00052: 324  getprop "history"
+00057: 324  getprop "paramMap"
+00062: 324  newinit 1
+00067: 324  this
+00068: 324  getprop "m_local"
+00073: 324  initprop "local"
+00078: 324  endinit
+00079: 324  setprop "InterServiceRegistrationScene"
+00084: 324  pop
+00085: 325  name "xs"
+00090: 325  getprop "Scene"
+00095: 325  getprop "Mgr"
+00100: 325  dup
+00101: 325  callprop "gotoLastScene"
+00106: 325  swap
+00107: 325  notearg
+00108: 325  call 0
+00111: 325  pop
+00112: 325  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:322 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] jsonObj
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:350 ---
+loc   line  op
+----- ----  --
+main:
+00000: 351  callaliasedvar "successFunction" (hops = 0, slot = 2)
+00009: 351  undefined
+00010: 351  notearg
+00011: 351  getarg 0
+00014: 351  notearg
+00015: 351  call 1
+00018: 351  pop
+00019: 351  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:350 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] jsonObj
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:353 ---
+loc   line  op
+----- ----  --
+main:
+00000: 353  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:353 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] jsonObj
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:361 ---
+loc   line  op
+----- ----  --
+main:
+00000: 362  callaliasedvar "successFunction" (hops = 0, slot = 2)
+00009: 362  undefined
+00010: 362  notearg
+00011: 362  getarg 0
+00014: 362  notearg
+00015: 362  call 1
+00018: 362  pop
+00019: 362  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:361 ---
+;; function object[4] <anonymous>
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] jsonObj
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:364 ---
+loc   line  op
+----- ----  --
+main:
+00000: 364  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:364 ---
+;; function object[8] ClickGoToFight
+;; function metadata object[8] nargs=0 bindings=1
+;; local[0] promptInfor
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:369 ---
+loc   line  op
+----- ----  --
+main:
+00000: 371  this
+00001: 371  getprop "m_left_fight"
+00006: 371  zero
+00007: 371  gt
+00008: 371  ifeq 31 (+23)
+00013: 373  this
+00014: 373  dup
+00015: 373  callprop "goToFight"
+00020: 373  swap
+00021: 373  notearg
+00022: 373  call 0
+00025: 373  pop
+00026: 373  goto 157 (+131)
+00031: 375  this
+00032: 375  getprop "m_enable_fight"
+00037: 375  ifeq 60 (+23)
+00042: 376  this
+00043: 376  dup
+00044: 376  callprop "goToFight"
+00049: 376  swap
+00050: 376  notearg
+00051: 376  call 0
+00054: 376  pop
+00055: 376  goto 157 (+102)
+00060: 378  newinit 1
+00065: 379  this
+00066: 379  getprop "m_price"
+00071: 379  initprop "price"
+00076: 380  this
+00077: 380  getprop "m_history_fight"
+00082: 380  initprop "history_fight"
+00087: 381  true
+00088: 381  initprop "fightOrRegistration"
+00093: 381  endinit
+00094: 381  setlocal 0
+00097: 381  pop
+00098: 383  name "xs"
+00103: 383  getprop "Views"
+00108: 383  getprop "Mgr"
+00113: 383  dup
+00114: 383  callprop "showDialogByName"
+00119: 383  swap
+00120: 383  notearg
+00121: 383  string "PromptFrameDialog"
+00126: 383  notearg
+00127: 383  newinit 1
+00132: 384  getlocal 0
+00135: 384  initprop "param"
+00140: 385  this
+00141: 385  getprop "m_local"
+00146: 385  initprop "local"
+00151: 385  endinit
+00152: 385  notearg
+00153: 385  call 2
+00156: 385  pop
+00157: 387  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:369 ---
+;; function object[9] firstFightCallback
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:389 ---
+loc   line  op
+----- ----  --
+main:
+00000: 390  this
+00001: 390  this
+00002: 390  getprop "m_firstID"
+00007: 390  setprop "m_playerId"
+00012: 390  pop
+00013: 391  callname "Number"
+00018: 391  implicitthis "Number"
+00023: 391  notearg
+00024: 391  this
+00025: 391  getprop "m_current_win"
+00030: 391  notearg
+00031: 391  call 1
+00034: 391  int8 20
+00036: 391  stricteq
+00037: 391  ifeq 57 (+20)
+00042: 392  this
+00043: 392  dup
+00044: 392  callprop "createTwentyWinPrompt"
+00049: 392  swap
+00050: 392  notearg
+00051: 392  call 0
+00054: 392  pop
+00055: 393  undefined
+00056: 393  return
+00057: 395  this
+00058: 395  dup
+00059: 395  callprop "ClickGoToFight"
+00064: 395  swap
+00065: 395  notearg
+00066: 395  call 0
+00069: 395  pop
+00070: 395  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:389 ---
+;; function object[10] secondFightCallback
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:397 ---
+loc   line  op
+----- ----  --
+main:
+00000: 398  this
+00001: 398  this
+00002: 398  getprop "m_secondID"
+00007: 398  setprop "m_playerId"
+00012: 398  pop
+00013: 399  callname "Number"
+00018: 399  implicitthis "Number"
+00023: 399  notearg
+00024: 399  this
+00025: 399  getprop "m_current_win"
+00030: 399  notearg
+00031: 399  call 1
+00034: 399  int8 20
+00036: 399  stricteq
+00037: 399  ifeq 57 (+20)
+00042: 400  this
+00043: 400  dup
+00044: 400  callprop "createTwentyWinPrompt"
+00049: 400  swap
+00050: 400  notearg
+00051: 400  call 0
+00054: 400  pop
+00055: 401  undefined
+00056: 401  return
+00057: 403  this
+00058: 403  dup
+00059: 403  callprop "ClickGoToFight"
+00064: 403  swap
+00065: 403  notearg
+00066: 403  call 0
+00069: 403  pop
+00070: 403  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:397 ---
+;; function object[11] createTwentyWinPrompt
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:405 ---
+loc   line  op
+----- ----  --
+main:
+00000: 406  this
+00001: 406  name "xs"
+00006: 406  getprop "Views"
+00011: 406  getprop "MessagePopView"
+00016: 406  dup
+00017: 406  callprop "create"
+00022: 406  swap
+00023: 406  notearg
+00024: 406  name "xs"
+00029: 406  getprop "Views"
+00034: 406  getprop "MessagePopViewType_Two"
+00039: 406  notearg
+00040: 406  call 1
+00043: 406  setprop "PromptMessagePop"
+00048: 406  pop
+00049: 407  this
+00050: 407  getprop "PromptMessagePop"
+00055: 407  dup
+00056: 407  callprop "setTitle"
+00061: 407  swap
+00062: 407  notearg
+00063: 407  name "xs"
+00068: 407  getprop "Tools"
+00073: 407  getprop "String"
+00078: 407  dup
+00079: 407  callprop "createString"
+00084: 407  swap
+00085: 407  notearg
+00086: 407  string "inter_winClearTitle"
+00091: 407  notearg
+00092: 407  call 1
+00095: 407  notearg
+00096: 407  call 1
+00099: 407  pop
+00100: 408  this
+00101: 408  getprop "PromptMessagePop"
+00106: 408  dup
+00107: 408  callprop "setPrompt"
+00112: 408  swap
+00113: 408  notearg
+00114: 408  name "xs"
+00119: 408  getprop "Tools"
+00124: 408  getprop "String"
+00129: 408  dup
+00130: 408  callprop "createString"
+00135: 408  swap
+00136: 408  notearg
+00137: 408  string "inter_winClear"
+00142: 408  notearg
+00143: 408  call 1
+00146: 408  notearg
+00147: 408  call 1
+00150: 408  pop
+00151: 409  this
+00152: 409  getprop "PromptMessagePop"
+00157: 409  dup
+00158: 409  callprop "setPopSize"
+00163: 409  swap
+00164: 409  notearg
+00165: 409  name "cc"
+00170: 409  dup
+00171: 409  callprop "size"
+00176: 409  swap
+00177: 409  notearg
+00178: 409  uint16 480
+00181: 409  notearg
+00182: 409  uint16 240
+00185: 409  notearg
+00186: 409  call 2
+00189: 409  notearg
+00190: 409  call 1
+00193: 409  pop
+00194: 410  this
+00195: 410  getprop "PromptMessagePop"
+00200: 410  dup
+00201: 410  callprop "setListener"
+00206: 410  swap
+00207: 410  notearg
+00208: 410  this
+00209: 410  notearg
+00210: 410  call 1
+00213: 410  pop
+00214: 411  this
+00215: 411  getprop "PromptMessagePop"
+00220: 411  dup
+00221: 411  callprop "setBaseTouchPriority"
+00226: 411  swap
+00227: 411  notearg
+00228: 411  this
+00229: 411  getprop "m_baseTouchPriority"
+00234: 411  int8 3
+00236: 411  sub
+00237: 411  notearg
+00238: 411  call 1
+00241: 411  pop
+00242: 412  name "xs"
+00247: 412  getprop "Utils"
+00252: 412  getprop "Node"
+00257: 412  dup
+00258: 412  callprop "attachNodes"
+00263: 412  swap
+00264: 412  notearg
+00265: 412  this
+00266: 412  notearg
+00267: 412  this
+00268: 412  getprop "PromptMessagePop"
+00273: 412  notearg
+00274: 412  call 2
+00277: 412  pop
+00278: 412  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:405 ---
+;; function object[12] rightBtnCallback
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:416 ---
+loc   line  op
+----- ----  --
+main:
+00000: 417  this
+00001: 417  dup
+00002: 417  callprop "ClickGoToFight"
+00007: 417  swap
+00008: 417  notearg
+00009: 417  call 0
+00012: 417  pop
+00013: 417  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:416 ---
+;; function object[13] leftBtnCallback
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:419 ---
+loc   line  op
+----- ----  --
+main:
+00000: 420  this
+00001: 420  getprop "PromptMessagePop"
+00006: 420  ifeq 29 (+23)
+00011: 421  this
+00012: 421  getprop "PromptMessagePop"
+00017: 421  dup
+00018: 421  callprop "removeFromParent"
+00023: 421  swap
+00024: 421  notearg
+00025: 421  call 0
+00028: 421  pop
+00029: 422  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:419 ---
+;; function object[14] closeCallback
+;; function metadata object[14] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:424 ---
+loc   line  op
+----- ----  --
+main:
+00000: 425  this
+00001: 425  getprop "PromptMessagePop"
+00006: 425  ifeq 29 (+23)
+00011: 426  this
+00012: 426  getprop "PromptMessagePop"
+00017: 426  dup
+00018: 426  callprop "removeFromParent"
+00023: 426  swap
+00024: 426  notearg
+00025: 426  call 0
+00028: 426  pop
+00029: 427  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:424 ---
+;; function object[15] create
+;; function metadata object[15] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:430 ---
+loc   line  op
+----- ----  --
+main:
+00000: 431  name "xs"
+00005: 431  getprop "Views"
+00010: 431  getprop "InterServiceFightView"
+00015: 431  undefined
+00016: 431  notearg
+00017: 431  new 0
+00020: 431  setlocal 0
+00023: 431  pop
+00024: 432  getlocal 0
+00027: 432  and 51 (+24)
+00032: 432  pop
+00033: 432  getlocal 0
+00036: 432  dup
+00037: 432  callprop "init"
+00042: 432  swap
+00043: 432  notearg
+00044: 432  getarg 0
+00047: 432  notearg
+00048: 432  call 1
+00051: 432  ifeq 60 (+9)
+00056: 433  getlocal 0
+00059: 433  return
+00060: 435  name "xs"
+00065: 435  dup
+00066: 435  callprop "assert"
+00071: 435  swap
+00072: 435  notearg
+00073: 435  false
+00074: 435  notearg
+00075: 435  string "xs.Views.InterServiceFightView.create error!"
+00080: 435  notearg
+00081: 435  call 2
+00084: 435  pop
+00085: 436  null
+00086: 436  return
+00087: 436  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/InterService/InterServiceFightView.js:430 ---

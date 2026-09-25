@@ -1,0 +1,2465 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Cfg/Guide.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Cfg/Guide.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  name "xs"
+00005:  16  string "40000"
+00010:  16  setprop "Constant_GuideTag_MainMenu_General"
+00015:  16  popv
+00016:  17  name "xs"
+00021:  17  string "50000"
+00026:  17  setprop "Constant_GuideTag_Shortcut_Idx"
+00031:  17  popv
+00032:  18  name "xs"
+00037:  18  string "60000"
+00042:  18  setprop "Constant_GuideTag_DlgDetail_Surrender"
+00047:  18  popv
+00048:  20  name "xs"
+00053:  20  string "70000"
+00058:  20  setprop "Constant_GuideTag_Chapter_Surrender"
+00063:  20  popv
+00064:  23  name "xs"
+00069:  23  string "3000"
+00074:  23  setprop "Constant_GuideTag_ChapterDetail_Fight"
+00079:  23  popv
+00080:  25  name "xs"
+00085:  25  string "10000"
+00090:  25  setprop "Constant_GuideTag_EliteDuplicate"
+00095:  25  popv
+00096:  29  name "xs"
+00101:  29  getprop "Cfg"
+00106:  29  name "xs"
+00111:  29  getprop "Cfg"
+00116:  29  getprop "Guide"
+00121:  29  or 9434 (+9313)
+00126:  29  pop
+00127:  29  newinit 1
+00132:  32  newinit 1
+00137:  33  string "NewGuideStep"
+00142:  33  initprop "locationKey"
+00147:  34  string "0"
+00152:  34  initprop "defaultStep"
+00157:  34  zero
+00158:  37  newinit 1
+00163:  38  name "xs"
+00168:  38  getprop "Constant_GuideStepType_None"
+00173:  38  initprop "type"
+00178:  39  true
+00179:  39  initprop "isDot"
+00184:  40  string "00101"
+00189:  40  initprop "nextStep"
+00194:  40  endinit
+00195:  40  initelem
+00196:  43  newinit 1
+00201:  44  name "xs"
+00206:  44  getprop "Constant_GuideStepType_CG"
+00211:  44  initprop "type"
+00216:  45  true
+00217:  45  initprop "isDot"
+00222:  46  string "00113"
+00227:  46  initprop "nextStep"
+00232:  46  endinit
+00233:  46  initprop "00101"
+00238:  49  newinit 1
+00243:  50  name "xs"
+00248:  50  getprop "Constant_GuideStepType_ChangeScene"
+00253:  50  initprop "type"
+00258:  51  true
+00259:  51  initprop "isDot"
+00264:  52  string "00201"
+00269:  52  initprop "nextStep"
+00274:  53  newinit 1
+00279:  54  true
+00280:  54  initprop "isNeedChangeScene"
+00285:  55  string "MainMenuScene"
+00290:  55  initprop "sceneName"
+00295:  56  true
+00296:  56  initprop "data"
+00301:  56  endinit
+00302:  56  initprop "data"
+00307:  56  endinit
+00308:  56  initprop "00113"
+00313:  60  newinit 1
+00318:  61  name "xs"
+00323:  61  getprop "Constant_GuideStepType_Story"
+00328:  61  initprop "type"
+00333:  62  false
+00334:  62  initprop "isDot"
+00339:  63  string "00301"
+00344:  63  initprop "nextStep"
+00349:  64  newinit 1
+00354:  65  string "99000201"
+00359:  65  initprop "storyId"
+00364:  65  endinit
+00365:  65  initprop "data"
+00370:  65  endinit
+00371:  65  initprop "00201"
+00376:  69  newinit 1
+00381:  70  name "xs"
+00386:  70  getprop "Constant_GuideStepType_NewPlayerFight"
+00391:  70  initprop "type"
+00396:  71  false
+00397:  71  initprop "isDot"
+00402:  72  string "00302"
+00407:  72  initprop "nextStep"
+00412:  73  newinit 1
+00417:  73  endinit
+00418:  73  initprop "data"
+00423:  73  endinit
+00424:  73  initprop "00301"
+00429:  78  newinit 1
+00434:  79  name "xs"
+00439:  79  getprop "Constant_GuideStepType_HollowOut"
+00444:  79  initprop "type"
+00449:  80  false
+00450:  80  initprop "isDot"
+00455:  81  string "00335_before"
+00460:  81  initprop "nextStep"
+00465:  82  newinit 1
+00470:  83  newinit 1
+00475:  83  string "c"
+00480:  83  initprop "desc"
+00485:  83  true
+00486:  83  initprop "sc"
+00491:  83  endinit
+00492:  83  initprop "posCfg"
+00497:  84  false
+00498:  84  initprop "isClickHand"
+00503:  85  uint16 1136
+00506:  85  initprop "width"
+00511:  86  uint16 960
+00514:  86  initprop "height"
+00519:  86  endinit
+00520:  86  initprop "data"
+00525:  86  endinit
+00526:  86  initprop "00302"
+00531:  90  newinit 1
+00536:  91  name "xs"
+00541:  91  getprop "Constant_GuideStepType_ChangeScene"
+00546:  91  initprop "type"
+00551:  92  true
+00552:  92  initprop "isDot"
+00557:  93  string "00335"
+00562:  93  initprop "nextStep"
+00567:  94  newinit 1
+00572:  95  true
+00573:  95  initprop "isNeedChangeScene"
+00578:  96  string "MainMenuScene"
+00583:  96  initprop "sceneName"
+00588:  96  endinit
+00589:  96  initprop "data"
+00594:  96  endinit
+00595:  96  initprop "00335_before"
+00600: 100  newinit 1
+00605: 101  name "xs"
+00610: 101  getprop "Constant_GuideStepType_Story"
+00615: 101  initprop "type"
+00620: 102  false
+00621: 102  initprop "isDot"
+00626: 103  string "10000_before"
+00631: 103  initprop "nextStep"
+00636: 104  newinit 1
+00641: 105  string "99000335"
+00646: 105  initprop "storyId"
+00651: 105  endinit
+00652: 105  initprop "data"
+00657: 105  endinit
+00658: 105  initprop "00335"
+00663: 109  newinit 1
+00668: 110  name "xs"
+00673: 110  getprop "Constant_GuideStepType_ChangeScene"
+00678: 110  initprop "type"
+00683: 111  false
+00684: 111  initprop "isDot"
+00689: 112  string "10000"
+00694: 112  initprop "nextStep"
+00699: 113  newinit 1
+00704: 114  string "GeneralSelectScene"
+00709: 114  initprop "sceneName"
+00714: 114  endinit
+00715: 114  initprop "data"
+00720: 114  endinit
+00721: 114  initprop "10000_before"
+00726: 114  uint16 10000
+00729: 118  newinit 1
+00734: 119  name "xs"
+00739: 119  getprop "Constant_GuideStepType_HollowOut"
+00744: 119  initprop "type"
+00749: 120  false
+00750: 120  initprop "isDot"
+00755: 121  string "10100"
+00760: 121  initprop "nextStep"
+00765: 122  newinit 1
+00770: 123  newinit 1
+00775: 123  string "c"
+00780: 123  initprop "desc"
+00785: 123  true
+00786: 123  initprop "sc"
+00791: 123  endinit
+00792: 123  initprop "posCfg"
+00797: 124  false
+00798: 124  initprop "isClickHand"
+00803: 125  uint16 1136
+00806: 125  initprop "width"
+00811: 126  uint16 960
+00814: 126  initprop "height"
+00819: 126  endinit
+00820: 126  initprop "data"
+00825: 126  endinit
+00826: 126  initelem
+00827: 126  uint16 10100
+00830: 130  newinit 1
+00835: 131  name "xs"
+00840: 131  getprop "Constant_GuideStepType_ChangeScene"
+00845: 131  initprop "type"
+00850: 132  true
+00851: 132  initprop "isDot"
+00856: 133  string "10101"
+00861: 133  initprop "nextStep"
+00866: 134  newinit 1
+00871: 135  true
+00872: 135  initprop "isNeedChangeScene"
+00877: 136  string "MainMenuScene"
+00882: 136  initprop "sceneName"
+00887: 136  endinit
+00888: 136  initprop "data"
+00893: 136  endinit
+00894: 136  initelem
+00895: 136  uint16 10101
+00898: 140  newinit 1
+00903: 141  name "xs"
+00908: 141  getprop "Constant_GuideStepType_Story"
+00913: 141  initprop "type"
+00918: 142  false
+00919: 142  initprop "isDot"
+00924: 143  string "10201_before"
+00929: 143  initprop "nextStep"
+00934: 144  newinit 1
+00939: 145  string "99010101"
+00944: 145  initprop "storyId"
+00949: 145  endinit
+00950: 145  initprop "data"
+00955: 145  endinit
+00956: 145  initelem
+00957: 149  newinit 1
+00962: 150  name "xs"
+00967: 150  getprop "Constant_GuideStepType_ChangeScene"
+00972: 150  initprop "type"
+00977: 151  true
+00978: 151  initprop "isDot"
+00983: 152  string "10201"
+00988: 152  initprop "nextStep"
+00993: 153  newinit 1
+00998: 154  false
+00999: 154  initprop "isNeedChangeScene"
+01004: 155  string "MainMenuScene"
+01009: 155  initprop "sceneName"
+01014: 155  endinit
+01015: 155  initprop "data"
+01020: 155  endinit
+01021: 155  initprop "10201_before"
+01026: 155  uint16 10201
+01029: 159  newinit 1
+01034: 160  name "xs"
+01039: 160  getprop "Constant_GuideStepType_Story"
+01044: 160  initprop "type"
+01049: 161  false
+01050: 161  initprop "isDot"
+01055: 162  string "20000"
+01060: 162  initprop "nextStep"
+01065: 163  newinit 1
+01070: 164  string "99010201"
+01075: 164  initprop "storyId"
+01080: 164  endinit
+01081: 164  initprop "data"
+01086: 164  endinit
+01087: 164  initelem
+01088: 164  uint16 20000
+01091: 168  newinit 1
+01096: 169  name "xs"
+01101: 169  getprop "Constant_GuideStepType_ShowDialog"
+01106: 169  initprop "type"
+01111: 170  false
+01112: 170  initprop "isDot"
+01117: 171  string "20101_before"
+01122: 171  initprop "nextStep"
+01127: 172  newinit 1
+01132: 173  string "PlayerChangeNameDialog"
+01137: 173  initprop "dialogName"
+01142: 173  endinit
+01143: 173  initprop "data"
+01148: 173  endinit
+01149: 173  initelem
+01150: 177  newinit 1
+01155: 178  name "xs"
+01160: 178  getprop "Constant_GuideStepType_ChangeScene"
+01165: 178  initprop "type"
+01170: 179  true
+01171: 179  initprop "isDot"
+01176: 180  string "20101"
+01181: 180  initprop "nextStep"
+01186: 181  newinit 1
+01191: 182  false
+01192: 182  initprop "isNeedChangeScene"
+01197: 183  string "MainMenuScene"
+01202: 183  initprop "sceneName"
+01207: 183  endinit
+01208: 183  initprop "data"
+01213: 183  endinit
+01214: 183  initprop "20101_before"
+01219: 183  uint16 20101
+01222: 187  newinit 1
+01227: 188  name "xs"
+01232: 188  getprop "Constant_GuideStepType_Story"
+01237: 188  initprop "type"
+01242: 189  false
+01243: 189  initprop "isDot"
+01248: 190  string "20201"
+01253: 190  initprop "nextStep"
+01258: 191  newinit 1
+01263: 192  string "99020101"
+01268: 192  initprop "storyId"
+01273: 192  endinit
+01274: 192  initprop "data"
+01279: 192  endinit
+01280: 192  initelem
+01281: 192  uint16 20201
+01284: 196  newinit 1
+01289: 197  name "xs"
+01294: 197  getprop "Constant_GuideStepType_HollowOut"
+01299: 197  initprop "type"
+01304: 198  false
+01305: 198  initprop "isDot"
+01310: 199  string "20202"
+01315: 199  initprop "nextStep"
+01320: 200  newinit 1
+01325: 201  uint16 1000
+01328: 201  initprop "guideTag"
+01333: 202  int8 110
+01335: 202  initprop "width"
+01340: 203  int8 110
+01342: 203  initprop "height"
+01347: 203  endinit
+01348: 203  initprop "data"
+01353: 203  endinit
+01354: 203  initelem
+01355: 203  uint16 20202
+01358: 207  newinit 1
+01363: 208  name "xs"
+01368: 208  getprop "Constant_GuideStepType_HollowOut"
+01373: 208  initprop "type"
+01378: 209  false
+01379: 209  initprop "isDot"
+01384: 210  string "20204"
+01389: 210  initprop "nextStep"
+01394: 211  newinit 1
+01399: 212  uint16 2000
+01402: 212  initprop "guideTag"
+01407: 213  int8 110
+01409: 213  initprop "width"
+01414: 214  int8 110
+01416: 214  initprop "height"
+01421: 214  endinit
+01422: 214  initprop "data"
+01427: 214  endinit
+01428: 214  initelem
+01429: 214  uint16 20204
+01432: 218  newinit 1
+01437: 219  name "xs"
+01442: 219  getprop "Constant_GuideStepType_Story"
+01447: 219  initprop "type"
+01452: 220  false
+01453: 220  initprop "isDot"
+01458: 221  string "30000"
+01463: 221  initprop "nextStep"
+01468: 222  newinit 1
+01473: 223  string "99020204"
+01478: 223  initprop "storyId"
+01483: 223  endinit
+01484: 223  initprop "data"
+01489: 223  endinit
+01490: 223  initelem
+01491: 223  uint16 30000
+01494: 227  newinit 1
+01499: 228  name "xs"
+01504: 228  getprop "Constant_GuideStepType_HollowOut"
+01509: 228  initprop "type"
+01514: 229  false
+01515: 229  initprop "isDot"
+01520: 230  string "30001"
+01525: 230  initprop "nextStep"
+01530: 231  newinit 1
+01535: 232  name "xs"
+01540: 232  getprop "Constant_GuideTag_ChapterDetail_Fight"
+01545: 232  initprop "guideTag"
+01550: 233  uint16 150
+01553: 233  initprop "width"
+01558: 234  int8 72
+01560: 234  initprop "height"
+01565: 234  endinit
+01566: 234  initprop "data"
+01571: 234  endinit
+01572: 234  initelem
+01573: 234  uint16 30001
+01576: 238  newinit 1
+01581: 239  name "xs"
+01586: 239  getprop "Constant_GuideStepType_HollowOut"
+01591: 239  initprop "type"
+01596: 240  false
+01597: 240  initprop "isDot"
+01602: 241  string "30002"
+01607: 241  initprop "nextStep"
+01612: 242  newinit 1
+01617: 243  newinit 1
+01622: 243  string "c"
+01627: 243  initprop "desc"
+01632: 243  true
+01633: 243  initprop "sc"
+01638: 243  endinit
+01639: 243  initprop "posCfg"
+01644: 244  false
+01645: 244  initprop "isClickHand"
+01650: 245  uint16 1136
+01653: 245  initprop "width"
+01658: 246  uint16 960
+01661: 246  initprop "height"
+01666: 246  endinit
+01667: 246  initprop "data"
+01672: 246  endinit
+01673: 246  initelem
+01674: 246  uint16 30002
+01677: 250  newinit 1
+01682: 251  name "xs"
+01687: 251  getprop "Constant_GuideStepType_HollowOut"
+01692: 251  initprop "type"
+01697: 252  false
+01698: 252  initprop "isDot"
+01703: 253  string "30101_before"
+01708: 253  initprop "nextStep"
+01713: 254  newinit 1
+01718: 255  uint16 3001
+01721: 255  initprop "guideTag"
+01726: 256  uint16 150
+01729: 256  initprop "width"
+01734: 257  int8 72
+01736: 257  initprop "height"
+01741: 257  endinit
+01742: 257  initprop "data"
+01747: 257  endinit
+01748: 257  initelem
+01749: 263  newinit 1
+01754: 264  name "xs"
+01759: 264  getprop "Constant_GuideStepType_ChangeScene"
+01764: 264  initprop "type"
+01769: 265  true
+01770: 265  initprop "isDot"
+01775: 266  string "30101"
+01780: 266  initprop "nextStep"
+01785: 267  newinit 1
+01790: 268  false
+01791: 268  initprop "isNeedChangeScene"
+01796: 269  string "FightChapters"
+01801: 269  initprop "sceneName"
+01806: 269  endinit
+01807: 269  initprop "data"
+01812: 269  endinit
+01813: 269  initprop "30101_before"
+01818: 269  uint16 30101
+01821: 273  newinit 1
+01826: 274  name "xs"
+01831: 274  getprop "Constant_GuideStepType_Story"
+01836: 274  initprop "type"
+01841: 275  false
+01842: 275  initprop "isDot"
+01847: 276  string "30102"
+01852: 276  initprop "nextStep"
+01857: 277  newinit 1
+01862: 278  string "99030101"
+01867: 278  initprop "storyId"
+01872: 278  endinit
+01873: 278  initprop "data"
+01878: 278  endinit
+01879: 278  initelem
+01880: 278  uint16 30102
+01883: 282  newinit 1
+01888: 283  name "xs"
+01893: 283  getprop "Constant_GuideStepType_HollowOut"
+01898: 283  initprop "type"
+01903: 284  false
+01904: 284  initprop "isDot"
+01909: 285  string "40000"
+01914: 285  initprop "nextStep"
+01919: 286  newinit 1
+01924: 287  uint16 1001
+01927: 287  initprop "guideTag"
+01932: 288  int8 110
+01934: 288  initprop "width"
+01939: 289  int8 110
+01941: 289  initprop "height"
+01946: 289  endinit
+01947: 289  initprop "data"
+01952: 289  endinit
+01953: 289  initelem
+01954: 289  uint16 40000
+01957: 293  newinit 1
+01962: 294  name "xs"
+01967: 294  getprop "Constant_GuideStepType_HollowOut"
+01972: 294  initprop "type"
+01977: 295  false
+01978: 295  initprop "isDot"
+01983: 296  string "40001_before"
+01988: 296  initprop "nextStep"
+01993: 297  newinit 1
+01998: 298  uint16 3002
+02001: 298  initprop "guideTag"
+02006: 299  uint16 200
+02009: 299  initprop "width"
+02014: 300  int8 100
+02016: 300  initprop "height"
+02021: 300  endinit
+02022: 300  initprop "data"
+02027: 300  endinit
+02028: 300  initelem
+02029: 304  newinit 1
+02034: 305  name "xs"
+02039: 305  getprop "Constant_GuideStepType_HollowOut"
+02044: 305  initprop "type"
+02049: 306  false
+02050: 306  initprop "isDot"
+02055: 307  string "40001"
+02060: 307  initprop "nextStep"
+02065: 308  newinit 1
+02070: 309  newinit 1
+02075: 309  string "c"
+02080: 309  initprop "desc"
+02085: 309  true
+02086: 309  initprop "sc"
+02091: 309  endinit
+02092: 309  initprop "posCfg"
+02097: 310  false
+02098: 310  initprop "isClickHand"
+02103: 311  uint16 1136
+02106: 311  initprop "width"
+02111: 312  uint16 960
+02114: 312  initprop "height"
+02119: 312  endinit
+02120: 312  initprop "data"
+02125: 312  endinit
+02126: 312  initprop "40001_before"
+02131: 312  uint16 40001
+02134: 316  newinit 1
+02139: 317  name "xs"
+02144: 317  getprop "Constant_GuideStepType_Story"
+02149: 317  initprop "type"
+02154: 318  false
+02155: 318  initprop "isDot"
+02160: 319  string "40002"
+02165: 319  initprop "nextStep"
+02170: 320  newinit 1
+02175: 321  string "99040001"
+02180: 321  initprop "storyId"
+02185: 321  endinit
+02186: 321  initprop "data"
+02191: 321  endinit
+02192: 321  initelem
+02193: 321  uint16 40002
+02196: 325  newinit 1
+02201: 326  name "xs"
+02206: 326  getprop "Constant_GuideStepType_HollowOut"
+02211: 326  initprop "type"
+02216: 327  false
+02217: 327  initprop "isDot"
+02222: 328  string "40101_before"
+02227: 328  initprop "nextStep"
+02232: 329  newinit 1
+02237: 330  uint16 3003
+02240: 330  initprop "guideTag"
+02245: 331  uint16 150
+02248: 331  initprop "width"
+02253: 332  int8 72
+02255: 332  initprop "height"
+02260: 332  endinit
+02261: 332  initprop "data"
+02266: 332  endinit
+02267: 332  initelem
+02268: 336  newinit 1
+02273: 337  name "xs"
+02278: 337  getprop "Constant_GuideStepType_ChangeScene"
+02283: 337  initprop "type"
+02288: 338  true
+02289: 338  initprop "isDot"
+02294: 339  string "40101"
+02299: 339  initprop "nextStep"
+02304: 340  newinit 1
+02309: 341  false
+02310: 341  initprop "isNeedChangeScene"
+02315: 342  string "StoreScene"
+02320: 342  initprop "sceneName"
+02325: 342  endinit
+02326: 342  initprop "data"
+02331: 342  endinit
+02332: 342  initprop "40101_before"
+02337: 342  uint16 40101
+02340: 346  newinit 1
+02345: 347  name "xs"
+02350: 347  getprop "Constant_GuideStepType_Story"
+02355: 347  initprop "type"
+02360: 348  false
+02361: 348  initprop "isDot"
+02366: 349  string "40102"
+02371: 349  initprop "nextStep"
+02376: 350  newinit 1
+02381: 351  string "99040101"
+02386: 351  initprop "storyId"
+02391: 351  endinit
+02392: 351  initprop "data"
+02397: 351  endinit
+02398: 351  initelem
+02399: 351  uint16 40102
+02402: 355  newinit 1
+02407: 356  name "xs"
+02412: 356  getprop "Constant_GuideStepType_HollowOut"
+02417: 356  initprop "type"
+02422: 357  false
+02423: 357  initprop "isDot"
+02428: 358  string "40103"
+02433: 358  initprop "nextStep"
+02438: 359  newinit 1
+02443: 360  uint16 1002
+02446: 360  initprop "guideTag"
+02451: 361  int8 110
+02453: 361  initprop "width"
+02458: 362  int8 110
+02460: 362  initprop "height"
+02465: 362  endinit
+02466: 362  initprop "data"
+02471: 362  endinit
+02472: 362  initelem
+02473: 362  uint16 40103
+02476: 366  newinit 1
+02481: 367  name "xs"
+02486: 367  getprop "Constant_GuideStepType_HollowOut"
+02491: 367  initprop "type"
+02496: 368  false
+02497: 368  initprop "isDot"
+02502: 369  string "40104"
+02507: 369  initprop "nextStep"
+02512: 370  newinit 1
+02517: 371  uint16 3004
+02520: 371  initprop "guideTag"
+02525: 372  uint16 342
+02528: 372  initprop "width"
+02533: 373  uint16 230
+02536: 373  initprop "height"
+02541: 373  endinit
+02542: 373  initprop "data"
+02547: 373  endinit
+02548: 373  initelem
+02549: 373  uint16 40104
+02552: 377  newinit 1
+02557: 378  name "xs"
+02562: 378  getprop "Constant_GuideStepType_HollowOut"
+02567: 378  initprop "type"
+02572: 379  false
+02573: 379  initprop "isDot"
+02578: 380  string "40105"
+02583: 380  initprop "nextStep"
+02588: 381  newinit 1
+02593: 382  uint16 3005
+02596: 382  initprop "guideTag"
+02601: 383  int8 100
+02603: 383  initprop "width"
+02608: 384  int8 100
+02610: 384  initprop "height"
+02615: 384  endinit
+02616: 384  initprop "data"
+02621: 384  endinit
+02622: 384  initelem
+02623: 384  uint16 40105
+02626: 388  newinit 1
+02631: 389  name "xs"
+02636: 389  getprop "Constant_GuideStepType_HollowOut"
+02641: 389  initprop "type"
+02646: 390  false
+02647: 390  initprop "isDot"
+02652: 391  string "50000"
+02657: 391  initprop "nextStep"
+02662: 392  newinit 1
+02667: 393  newinit 1
+02672: 393  string "c"
+02677: 393  initprop "desc"
+02682: 393  true
+02683: 393  initprop "sc"
+02688: 393  newinit 1
+02693: 393  int8 -50
+02695: 393  initprop "x"
+02700: 393  int8 -50
+02702: 393  initprop "y"
+02707: 393  endinit
+02708: 393  initprop "offset"
+02713: 393  endinit
+02714: 393  initprop "posCfg"
+02719: 394  uint16 420
+02722: 394  initprop "width"
+02727: 395  uint16 500
+02730: 395  initprop "height"
+02735: 395  endinit
+02736: 395  initprop "data"
+02741: 395  endinit
+02742: 395  initelem
+02743: 395  uint16 50000
+02746: 399  newinit 1
+02751: 400  name "xs"
+02756: 400  getprop "Constant_GuideStepType_HollowOut"
+02761: 400  initprop "type"
+02766: 401  false
+02767: 401  initprop "isDot"
+02772: 402  string "50101_before"
+02777: 402  initprop "nextStep"
+02782: 403  newinit 1
+02787: 404  uint16 3006
+02790: 404  initprop "guideTag"
+02795: 405  uint16 150
+02798: 405  initprop "width"
+02803: 406  int8 72
+02805: 406  initprop "height"
+02810: 406  endinit
+02811: 406  initprop "data"
+02816: 406  endinit
+02817: 406  initelem
+02818: 410  newinit 1
+02823: 411  name "xs"
+02828: 411  getprop "Constant_GuideStepType_ChangeScene"
+02833: 411  initprop "type"
+02838: 412  true
+02839: 412  initprop "isDot"
+02844: 413  string "50101"
+02849: 413  initprop "nextStep"
+02854: 414  newinit 1
+02859: 415  false
+02860: 415  initprop "isNeedChangeScene"
+02865: 416  string "TeamBuildScene"
+02870: 416  initprop "sceneName"
+02875: 416  endinit
+02876: 416  initprop "data"
+02881: 416  endinit
+02882: 416  initprop "50101_before"
+02887: 416  uint16 50101
+02890: 420  newinit 1
+02895: 421  name "xs"
+02900: 421  getprop "Constant_GuideStepType_Story"
+02905: 421  initprop "type"
+02910: 422  false
+02911: 422  initprop "isDot"
+02916: 423  string "50102"
+02921: 423  initprop "nextStep"
+02926: 424  newinit 1
+02931: 425  string "99050101"
+02936: 425  initprop "storyId"
+02941: 425  endinit
+02942: 425  initprop "data"
+02947: 425  endinit
+02948: 425  initelem
+02949: 425  uint16 50102
+02952: 429  newinit 1
+02957: 430  name "xs"
+02962: 430  getprop "Constant_GuideStepType_HollowOut"
+02967: 430  initprop "type"
+02972: 431  false
+02973: 431  initprop "isDot"
+02978: 432  string "50103"
+02983: 432  initprop "nextStep"
+02988: 433  newinit 1
+02993: 434  uint16 1000
+02996: 434  initprop "guideTag"
+03001: 435  int8 110
+03003: 435  initprop "width"
+03008: 436  int8 110
+03010: 436  initprop "height"
+03015: 436  endinit
+03016: 436  initprop "data"
+03021: 436  endinit
+03022: 436  initelem
+03023: 436  uint16 50103
+03026: 440  newinit 1
+03031: 441  name "xs"
+03036: 441  getprop "Constant_GuideStepType_HollowOut"
+03041: 441  initprop "type"
+03046: 442  false
+03047: 442  initprop "isDot"
+03052: 443  string "60000"
+03057: 443  initprop "nextStep"
+03062: 444  newinit 1
+03067: 445  uint16 2001
+03070: 445  initprop "guideTag"
+03075: 446  int8 110
+03077: 446  initprop "width"
+03082: 447  int8 110
+03084: 447  initprop "height"
+03089: 447  endinit
+03090: 447  initprop "data"
+03095: 447  endinit
+03096: 447  initelem
+03097: 447  uint16 60000
+03100: 451  newinit 1
+03105: 452  name "xs"
+03110: 452  getprop "Constant_GuideStepType_HollowOut"
+03115: 452  initprop "type"
+03120: 453  false
+03121: 453  initprop "isDot"
+03126: 454  string "60001"
+03131: 454  initprop "nextStep"
+03136: 455  newinit 1
+03141: 456  name "xs"
+03146: 456  getprop "Constant_GuideTag_ChapterDetail_Fight"
+03151: 456  initprop "guideTag"
+03156: 457  uint16 150
+03159: 457  initprop "width"
+03164: 458  int8 72
+03166: 458  initprop "height"
+03171: 458  endinit
+03172: 458  initprop "data"
+03177: 458  endinit
+03178: 458  initelem
+03179: 458  uint16 60001
+03182: 462  newinit 1
+03187: 463  name "xs"
+03192: 463  getprop "Constant_GuideStepType_HollowOut"
+03197: 463  initprop "type"
+03202: 464  false
+03203: 464  initprop "isDot"
+03208: 465  string "60002"
+03213: 465  initprop "nextStep"
+03218: 466  newinit 1
+03223: 467  newinit 1
+03228: 467  string "c"
+03233: 467  initprop "desc"
+03238: 467  true
+03239: 467  initprop "sc"
+03244: 467  endinit
+03245: 467  initprop "posCfg"
+03250: 468  false
+03251: 468  initprop "isClickHand"
+03256: 469  uint16 1136
+03259: 469  initprop "width"
+03264: 470  uint16 960
+03267: 470  initprop "height"
+03272: 470  endinit
+03273: 470  initprop "data"
+03278: 470  endinit
+03279: 470  initelem
+03280: 470  uint16 60002
+03283: 474  newinit 1
+03288: 475  name "xs"
+03293: 475  getprop "Constant_GuideStepType_HollowOut"
+03298: 475  initprop "type"
+03303: 476  false
+03304: 476  initprop "isDot"
+03309: 477  string "60101_before"
+03314: 477  initprop "nextStep"
+03319: 478  newinit 1
+03324: 479  uint16 3001
+03327: 479  initprop "guideTag"
+03332: 480  uint16 150
+03335: 480  initprop "width"
+03340: 481  int8 72
+03342: 481  initprop "height"
+03347: 481  endinit
+03348: 481  initprop "data"
+03353: 481  endinit
+03354: 481  initelem
+03355: 485  newinit 1
+03360: 486  name "xs"
+03365: 486  getprop "Constant_GuideStepType_ChangeScene"
+03370: 486  initprop "type"
+03375: 487  true
+03376: 487  initprop "isDot"
+03381: 488  string "60101"
+03386: 488  initprop "nextStep"
+03391: 489  newinit 1
+03396: 490  false
+03397: 490  initprop "isNeedChangeScene"
+03402: 491  string "FightChapters"
+03407: 491  initprop "sceneName"
+03412: 491  endinit
+03413: 491  initprop "data"
+03418: 491  endinit
+03419: 491  initprop "60101_before"
+03424: 491  uint16 60101
+03427: 495  newinit 1
+03432: 496  name "xs"
+03437: 496  getprop "Constant_GuideStepType_Story"
+03442: 496  initprop "type"
+03447: 497  false
+03448: 497  initprop "isDot"
+03453: 498  string "60102"
+03458: 498  initprop "nextStep"
+03463: 499  newinit 1
+03468: 500  string "99060101"
+03473: 500  initprop "storyId"
+03478: 500  endinit
+03479: 500  initprop "data"
+03484: 500  endinit
+03485: 500  initelem
+03486: 500  uint16 60102
+03489: 504  newinit 1
+03494: 505  name "xs"
+03499: 505  getprop "Constant_GuideStepType_ShowToast"
+03504: 505  initprop "type"
+03509: 506  false
+03510: 506  initprop "isDot"
+03515: 507  string "60103"
+03520: 507  initprop "nextStep"
+03525: 508  newinit 1
+03530: 509  string "auto_name_6"
+03535: 509  initprop "stringId"
+03540: 509  endinit
+03541: 509  initprop "data"
+03546: 509  endinit
+03547: 509  initelem
+03548: 509  uint16 60103
+03551: 514  newinit 1
+03556: 515  name "xs"
+03561: 515  getprop "Constant_GuideStepType_HollowOut"
+03566: 515  initprop "type"
+03571: 516  false
+03572: 516  initprop "isDot"
+03577: 517  string "60104"
+03582: 517  initprop "nextStep"
+03587: 518  newinit 1
+03592: 519  uint16 1002
+03595: 519  initprop "guideTag"
+03600: 520  int8 110
+03602: 520  initprop "width"
+03607: 521  int8 110
+03609: 521  initprop "height"
+03614: 521  endinit
+03615: 521  initprop "data"
+03620: 521  endinit
+03621: 521  initelem
+03622: 521  uint16 60104
+03625: 525  newinit 1
+03630: 526  name "xs"
+03635: 526  getprop "Constant_GuideStepType_HollowOut"
+03640: 526  initprop "type"
+03645: 527  false
+03646: 527  initprop "isDot"
+03651: 528  string "70000"
+03656: 528  initprop "nextStep"
+03661: 529  newinit 1
+03666: 530  uint16 3007
+03669: 530  initprop "guideTag"
+03674: 531  uint16 342
+03677: 531  initprop "width"
+03682: 532  uint16 230
+03685: 532  initprop "height"
+03690: 532  endinit
+03691: 532  initprop "data"
+03696: 532  endinit
+03697: 532  initelem
+03698: 532  uint24 70000
+03702: 536  newinit 1
+03707: 537  name "xs"
+03712: 537  getprop "Constant_GuideStepType_HollowOut"
+03717: 537  initprop "type"
+03722: 538  false
+03723: 538  initprop "isDot"
+03728: 539  string "70001"
+03733: 539  initprop "nextStep"
+03738: 540  newinit 1
+03743: 541  uint16 3008
+03746: 541  initprop "guideTag"
+03751: 542  uint16 150
+03754: 542  initprop "width"
+03759: 543  int8 72
+03761: 543  initprop "height"
+03766: 543  endinit
+03767: 543  initprop "data"
+03772: 543  endinit
+03773: 543  initelem
+03774: 543  uint24 70001
+03778: 547  newinit 1
+03783: 548  name "xs"
+03788: 548  getprop "Constant_GuideStepType_HollowOut"
+03793: 548  initprop "type"
+03798: 549  false
+03799: 549  initprop "isDot"
+03804: 550  string "70101_before"
+03809: 550  initprop "nextStep"
+03814: 551  newinit 1
+03819: 552  uint16 3009
+03822: 552  initprop "guideTag"
+03827: 553  uint16 150
+03830: 553  initprop "width"
+03835: 554  int8 72
+03837: 554  initprop "height"
+03842: 554  endinit
+03843: 554  initprop "data"
+03848: 554  endinit
+03849: 554  initelem
+03850: 558  newinit 1
+03855: 559  name "xs"
+03860: 559  getprop "Constant_GuideStepType_ChangeScene"
+03865: 559  initprop "type"
+03870: 560  true
+03871: 560  initprop "isDot"
+03876: 561  string "70101"
+03881: 561  initprop "nextStep"
+03886: 562  newinit 1
+03891: 563  false
+03892: 563  initprop "isNeedChangeScene"
+03897: 564  string "BagScene"
+03902: 564  initprop "sceneName"
+03907: 564  endinit
+03908: 564  initprop "data"
+03913: 564  endinit
+03914: 564  initprop "70101_before"
+03919: 564  uint24 70101
+03923: 568  newinit 1
+03928: 569  name "xs"
+03933: 569  getprop "Constant_GuideStepType_Story"
+03938: 569  initprop "type"
+03943: 570  false
+03944: 570  initprop "isDot"
+03949: 571  string "70102"
+03954: 571  initprop "nextStep"
+03959: 572  newinit 1
+03964: 573  string "99070101"
+03969: 573  initprop "storyId"
+03974: 573  endinit
+03975: 573  initprop "data"
+03980: 573  endinit
+03981: 573  initelem
+03982: 573  uint24 70102
+03986: 577  newinit 1
+03991: 578  name "xs"
+03996: 578  getprop "Constant_GuideStepType_HollowOut"
+04001: 578  initprop "type"
+04006: 579  false
+04007: 579  initprop "isDot"
+04012: 580  string "70103"
+04017: 580  initprop "nextStep"
+04022: 581  newinit 1
+04027: 582  uint16 1002
+04030: 582  initprop "guideTag"
+04035: 583  int8 110
+04037: 583  initprop "width"
+04042: 584  int8 110
+04044: 584  initprop "height"
+04049: 584  endinit
+04050: 584  initprop "data"
+04055: 584  endinit
+04056: 584  initelem
+04057: 584  uint24 70103
+04061: 588  newinit 1
+04066: 589  name "xs"
+04071: 589  getprop "Constant_GuideStepType_HollowOut"
+04076: 589  initprop "type"
+04081: 590  false
+04082: 590  initprop "isDot"
+04087: 591  string "70104"
+04092: 591  initprop "nextStep"
+04097: 592  newinit 1
+04102: 593  uint16 3004
+04105: 593  initprop "guideTag"
+04110: 594  uint16 342
+04113: 594  initprop "width"
+04118: 595  uint16 230
+04121: 595  initprop "height"
+04126: 595  endinit
+04127: 595  initprop "data"
+04132: 595  endinit
+04133: 595  initelem
+04134: 595  uint24 70104
+04138: 599  newinit 1
+04143: 600  name "xs"
+04148: 600  getprop "Constant_GuideStepType_HollowOut"
+04153: 600  initprop "type"
+04158: 601  false
+04159: 601  initprop "isDot"
+04164: 602  string "80000"
+04169: 602  initprop "nextStep"
+04174: 603  newinit 1
+04179: 604  uint16 3010
+04182: 604  initprop "guideTag"
+04187: 605  int8 110
+04189: 605  initprop "width"
+04194: 606  int8 110
+04196: 606  initprop "height"
+04201: 606  endinit
+04202: 606  initprop "data"
+04207: 606  endinit
+04208: 606  initelem
+04209: 606  uint24 80000
+04213: 610  newinit 1
+04218: 611  name "xs"
+04223: 611  getprop "Constant_GuideStepType_HollowOut"
+04228: 611  initprop "type"
+04233: 612  false
+04234: 612  initprop "isDot"
+04239: 613  string "80101"
+04244: 613  initprop "nextStep"
+04249: 614  newinit 1
+04254: 615  uint16 3006
+04257: 615  initprop "guideTag"
+04262: 616  uint16 150
+04265: 616  initprop "width"
+04270: 617  int8 72
+04272: 617  initprop "height"
+04277: 617  endinit
+04278: 617  initprop "data"
+04283: 617  endinit
+04284: 617  initelem
+04285: 621  newinit 1
+04290: 622  name "xs"
+04295: 622  getprop "Constant_GuideStepType_ChangeScene"
+04300: 622  initprop "type"
+04305: 623  true
+04306: 623  initprop "isDot"
+04311: 624  string "70101"
+04316: 624  initprop "nextStep"
+04321: 625  newinit 1
+04326: 626  false
+04327: 626  initprop "isNeedChangeScene"
+04332: 627  string "BagScene"
+04337: 627  initprop "sceneName"
+04342: 627  endinit
+04343: 627  initprop "data"
+04348: 627  endinit
+04349: 627  initprop "80101_before"
+04354: 627  uint24 80101
+04358: 631  newinit 1
+04363: 632  name "xs"
+04368: 632  getprop "Constant_GuideStepType_Story"
+04373: 632  initprop "type"
+04378: 633  false
+04379: 633  initprop "isDot"
+04384: 634  string "80102"
+04389: 634  initprop "nextStep"
+04394: 635  newinit 1
+04399: 636  string "99080101"
+04404: 636  initprop "storyId"
+04409: 636  endinit
+04410: 636  initprop "data"
+04415: 636  endinit
+04416: 636  initelem
+04417: 636  uint24 80102
+04421: 640  newinit 1
+04426: 641  name "xs"
+04431: 641  getprop "Constant_GuideStepType_HollowOut"
+04436: 641  initprop "type"
+04441: 642  false
+04442: 642  initprop "isDot"
+04447: 643  string "80103"
+04452: 643  initprop "nextStep"
+04457: 644  newinit 1
+04462: 645  uint16 1000
+04465: 645  initprop "guideTag"
+04470: 646  int8 110
+04472: 646  initprop "width"
+04477: 647  int8 110
+04479: 647  initprop "height"
+04484: 647  endinit
+04485: 647  initprop "data"
+04490: 647  endinit
+04491: 647  initelem
+04492: 647  uint24 80103
+04496: 663  newinit 1
+04501: 665  name "xs"
+04506: 665  getprop "Constant_GuideStepType_ShowDialog"
+04511: 665  initprop "type"
+04516: 666  false
+04517: 666  initprop "isDot"
+04522: 667  null
+04523: 667  initprop "nextStep"
+04528: 668  newinit 1
+04533: 672  string "AdvertisementDialogGuide"
+04538: 672  initprop "dialogName"
+04543: 672  endinit
+04544: 672  initprop "data"
+04549: 672  endinit
+04550: 672  initelem
+04551: 672  endinit
+04552: 672  initprop "NewGuideCfg"
+04557: 679  newinit 1
+04562: 680  string "TreasureGuideStep"
+04567: 680  initprop "locationKey"
+04572: 681  string "90101"
+04577: 681  initprop "defaultStep"
+04582: 681  uint24 90101
+04586: 683  newinit 1
+04591: 684  name "xs"
+04596: 684  getprop "Constant_GuideStepType_Story"
+04601: 684  initprop "type"
+04606: 685  false
+04607: 685  initprop "isDot"
+04612: 686  string "90102"
+04617: 686  initprop "nextStep"
+04622: 687  newinit 1
+04627: 688  string "99090101"
+04632: 688  initprop "storyId"
+04637: 688  endinit
+04638: 688  initprop "data"
+04643: 688  endinit
+04644: 688  initelem
+04645: 688  uint24 90102
+04649: 692  newinit 1
+04654: 693  name "xs"
+04659: 693  getprop "Constant_GuideStepType_HollowOut"
+04664: 693  initprop "type"
+04669: 694  false
+04670: 694  initprop "isDot"
+04675: 695  string "90103"
+04680: 695  initprop "nextStep"
+04685: 696  newinit 1
+04690: 697  uint16 2005
+04693: 697  initprop "guideTag"
+04698: 698  int8 110
+04700: 698  initprop "width"
+04705: 699  int8 110
+04707: 699  initprop "height"
+04712: 699  endinit
+04713: 699  initprop "data"
+04718: 699  endinit
+04719: 699  initelem
+04720: 699  uint24 90103
+04724: 703  newinit 1
+04729: 704  name "xs"
+04734: 704  getprop "Constant_GuideStepType_HollowOut"
+04739: 704  initprop "type"
+04744: 705  false
+04745: 705  initprop "isDot"
+04750: 706  string "90104"
+04755: 706  initprop "nextStep"
+04760: 707  newinit 1
+04765: 708  uint16 3009
+04768: 708  initprop "guideTag"
+04773: 709  uint16 150
+04776: 709  initprop "width"
+04781: 710  int8 72
+04783: 710  initprop "height"
+04788: 710  endinit
+04789: 710  initprop "data"
+04794: 710  endinit
+04795: 710  initelem
+04796: 710  uint24 90104
+04800: 714  newinit 1
+04805: 715  name "xs"
+04810: 715  getprop "Constant_GuideStepType_HollowOut"
+04815: 715  initprop "type"
+04820: 716  false
+04821: 716  initprop "isDot"
+04826: 717  null
+04827: 717  initprop "nextStep"
+04832: 718  newinit 1
+04837: 719  uint16 4000
+04840: 719  initprop "guideTag"
+04845: 720  int8 30
+04847: 720  initprop "width"
+04852: 721  uint16 172
+04855: 721  initprop "height"
+04860: 721  endinit
+04861: 721  initprop "data"
+04866: 721  endinit
+04867: 721  initelem
+04868: 721  endinit
+04869: 721  initprop "TreasureGuideCfg"
+04874: 726  newinit 1
+04879: 727  string "ImproveGuideStep"
+04884: 727  initprop "locationKey"
+04889: 728  string "110101"
+04894: 728  initprop "defaultStep"
+04899: 728  uint24 110101
+04903: 730  newinit 1
+04908: 731  name "xs"
+04913: 731  getprop "Constant_GuideStepType_Story"
+04918: 731  initprop "type"
+04923: 732  false
+04924: 732  initprop "isDot"
+04929: 733  string "110102"
+04934: 733  initprop "nextStep"
+04939: 734  newinit 1
+04944: 735  string "990110101"
+04949: 735  initprop "storyId"
+04954: 735  endinit
+04955: 735  initprop "data"
+04960: 735  endinit
+04961: 735  initelem
+04962: 735  uint24 110102
+04966: 739  newinit 1
+04971: 740  name "xs"
+04976: 740  getprop "Constant_GuideStepType_HollowOut"
+04981: 740  initprop "type"
+04986: 741  false
+04987: 741  initprop "isDot"
+04992: 742  string "110103"
+04997: 742  initprop "nextStep"
+05002: 743  newinit 1
+05007: 744  uint16 1002
+05010: 744  initprop "guideTag"
+05015: 745  int8 110
+05017: 745  initprop "width"
+05022: 746  int8 110
+05024: 746  initprop "height"
+05029: 746  endinit
+05030: 746  initprop "data"
+05035: 746  endinit
+05036: 746  initelem
+05037: 746  uint24 110103
+05041: 750  newinit 1
+05046: 751  name "xs"
+05051: 751  getprop "Constant_GuideStepType_HollowOut"
+05056: 751  initprop "type"
+05061: 752  false
+05062: 752  initprop "isDot"
+05067: 753  null
+05068: 753  initprop "nextStep"
+05073: 754  newinit 1
+05078: 755  uint16 4001
+05081: 755  initprop "guideTag"
+05086: 756  uint16 192
+05089: 756  initprop "width"
+05094: 757  uint16 230
+05097: 757  initprop "height"
+05102: 757  endinit
+05103: 757  initprop "data"
+05108: 757  endinit
+05109: 757  initelem
+05110: 757  endinit
+05111: 757  initprop "ImproveGuideCfg"
+05116: 778  newinit 1
+05121: 779  string "SurrenderGuideStep"
+05126: 779  initprop "locationKey"
+05131: 780  string "180101"
+05136: 780  initprop "defaultStep"
+05141: 780  uint24 180101
+05145: 783  newinit 1
+05150: 784  name "xs"
+05155: 784  getprop "Constant_GuideStepType_Story"
+05160: 784  initprop "type"
+05165: 785  false
+05166: 785  initprop "isDot"
+05171: 786  string "180102"
+05176: 786  initprop "nextStep"
+05181: 787  newinit 1
+05186: 788  string "990180101"
+05191: 788  initprop "storyId"
+05196: 788  endinit
+05197: 788  initprop "data"
+05202: 788  endinit
+05203: 788  initelem
+05204: 788  uint24 180102
+05208: 793  newinit 1
+05213: 794  name "xs"
+05218: 794  getprop "Constant_GuideStepType_HollowOut"
+05223: 794  initprop "type"
+05228: 795  false
+05229: 795  initprop "isDot"
+05234: 796  string "180103"
+05239: 796  initprop "nextStep"
+05244: 797  newinit 1
+05249: 798  name "xs"
+05254: 798  getprop "Constant_GuideTag_Shortcut_Idx"
+05259: 798  initprop "guideTag"
+05264: 799  int8 110
+05266: 799  initprop "width"
+05271: 800  int8 110
+05273: 800  initprop "height"
+05278: 800  endinit
+05279: 800  initprop "data"
+05284: 800  endinit
+05285: 800  initelem
+05286: 800  uint24 180103
+05290: 805  newinit 1
+05295: 806  name "xs"
+05300: 806  getprop "Constant_GuideStepType_Story"
+05305: 806  initprop "type"
+05310: 807  false
+05311: 807  initprop "isDot"
+05316: 808  string "180104"
+05321: 808  initprop "nextStep"
+05326: 809  newinit 1
+05331: 810  string "990180103"
+05336: 810  initprop "storyId"
+05341: 810  endinit
+05342: 810  initprop "data"
+05347: 810  endinit
+05348: 810  initelem
+05349: 810  uint24 180104
+05353: 815  newinit 1
+05358: 816  name "xs"
+05363: 816  getprop "Constant_GuideStepType_HollowOut"
+05368: 816  initprop "type"
+05373: 817  false
+05374: 817  initprop "isDot"
+05379: 818  string "180105"
+05384: 818  initprop "nextStep"
+05389: 819  newinit 1
+05394: 820  name "xs"
+05399: 820  getprop "Constant_GuideTag_MainMenu_General"
+05404: 820  initprop "guideTag"
+05409: 821  uint16 192
+05412: 821  initprop "width"
+05417: 822  uint16 230
+05420: 822  initprop "height"
+05425: 822  endinit
+05426: 822  initprop "data"
+05431: 822  endinit
+05432: 822  initelem
+05433: 822  uint24 180105
+05437: 827  newinit 1
+05442: 828  name "xs"
+05447: 828  getprop "Constant_GuideStepType_Story"
+05452: 828  initprop "type"
+05457: 829  false
+05458: 829  initprop "isDot"
+05463: 830  string "180106"
+05468: 830  initprop "nextStep"
+05473: 831  newinit 1
+05478: 832  string "990180105"
+05483: 832  initprop "storyId"
+05488: 832  endinit
+05489: 832  initprop "data"
+05494: 832  endinit
+05495: 832  initelem
+05496: 832  uint24 180106
+05500: 837  newinit 1
+05505: 838  name "xs"
+05510: 838  getprop "Constant_GuideStepType_HollowOut"
+05515: 838  initprop "type"
+05520: 839  false
+05521: 839  initprop "isDot"
+05526: 840  string "180107"
+05531: 840  initprop "nextStep"
+05536: 841  newinit 1
+05541: 842  name "xs"
+05546: 842  getprop "Constant_GuideTag_DlgDetail_Surrender"
+05551: 842  initprop "guideTag"
+05556: 843  uint16 192
+05559: 843  initprop "width"
+05564: 844  uint16 230
+05567: 844  initprop "height"
+05572: 844  endinit
+05573: 844  initprop "data"
+05578: 844  endinit
+05579: 844  initelem
+05580: 844  uint24 180107
+05584: 849  newinit 1
+05589: 850  name "xs"
+05594: 850  getprop "Constant_GuideStepType_Story"
+05599: 850  initprop "type"
+05604: 851  false
+05605: 851  initprop "isDot"
+05610: 852  string "180108"
+05615: 852  initprop "nextStep"
+05620: 853  newinit 1
+05625: 854  string "990180107"
+05630: 854  initprop "storyId"
+05635: 854  endinit
+05636: 854  initprop "data"
+05641: 854  endinit
+05642: 854  initelem
+05643: 854  uint24 180108
+05647: 859  newinit 1
+05652: 860  name "xs"
+05657: 860  getprop "Constant_GuideStepType_HollowOut"
+05662: 860  initprop "type"
+05667: 861  false
+05668: 861  initprop "isDot"
+05673: 862  null
+05674: 862  initprop "nextStep"
+05679: 863  newinit 1
+05684: 864  name "xs"
+05689: 864  getprop "Constant_GuideTag_ChapterDetail_Fight"
+05694: 864  initprop "guideTag"
+05699: 865  uint16 150
+05702: 865  initprop "width"
+05707: 866  int8 72
+05709: 866  initprop "height"
+05714: 866  endinit
+05715: 866  initprop "data"
+05720: 866  endinit
+05721: 866  initelem
+05722: 866  endinit
+05723: 866  initprop "SurrenderGuideCfg"
+05728: 871  newinit 1
+05733: 872  string "InTeamGuideStep"
+05738: 872  initprop "locationKey"
+05743: 873  string "150101"
+05748: 873  initprop "defaultStep"
+05753: 873  uint24 150101
+05757: 875  newinit 1
+05762: 876  name "xs"
+05767: 876  getprop "Constant_GuideStepType_HollowOut"
+05772: 876  initprop "type"
+05777: 877  false
+05778: 877  initprop "isDot"
+05783: 878  string "150102"
+05788: 878  initprop "nextStep"
+05793: 879  newinit 1
+05798: 880  false
+05799: 880  initprop "isClickHand"
+05804: 881  uint16 4003
+05807: 881  initprop "guideTag"
+05812: 882  uint16 150
+05815: 882  initprop "width"
+05820: 883  int8 72
+05822: 883  initprop "height"
+05827: 883  endinit
+05828: 883  initprop "data"
+05833: 883  endinit
+05834: 883  initelem
+05835: 883  uint24 150102
+05839: 887  newinit 1
+05844: 888  name "xs"
+05849: 888  getprop "Constant_GuideStepType_Story"
+05854: 888  initprop "type"
+05859: 889  false
+05860: 889  initprop "isDot"
+05865: 890  string "150103"
+05870: 890  initprop "nextStep"
+05875: 891  newinit 1
+05880: 892  string "990150102"
+05885: 892  initprop "storyId"
+05890: 892  endinit
+05891: 892  initprop "data"
+05896: 892  endinit
+05897: 892  initelem
+05898: 892  uint24 150103
+05902: 896  newinit 1
+05907: 897  name "xs"
+05912: 897  getprop "Constant_GuideStepType_HollowOut"
+05917: 897  initprop "type"
+05922: 898  false
+05923: 898  initprop "isDot"
+05928: 899  string "150104"
+05933: 899  initprop "nextStep"
+05938: 900  newinit 1
+05943: 901  uint16 1002
+05946: 901  initprop "guideTag"
+05951: 902  int8 110
+05953: 902  initprop "width"
+05958: 903  int8 110
+05960: 903  initprop "height"
+05965: 903  endinit
+05966: 903  initprop "data"
+05971: 903  endinit
+05972: 903  initelem
+05973: 903  uint24 150104
+05977: 907  newinit 1
+05982: 908  name "xs"
+05987: 908  getprop "Constant_GuideStepType_HollowOut"
+05992: 908  initprop "type"
+05997: 909  false
+05998: 909  initprop "isDot"
+06003: 910  string "150105"
+06008: 910  initprop "nextStep"
+06013: 911  newinit 1
+06018: 912  uint16 3004
+06021: 912  initprop "guideTag"
+06026: 913  uint16 342
+06029: 913  initprop "width"
+06034: 914  uint16 230
+06037: 914  initprop "height"
+06042: 914  endinit
+06043: 914  initprop "data"
+06048: 914  endinit
+06049: 914  initelem
+06050: 914  uint24 150105
+06054: 918  newinit 1
+06059: 919  name "xs"
+06064: 919  getprop "Constant_GuideStepType_HollowOut"
+06069: 919  initprop "type"
+06074: 920  false
+06075: 920  initprop "isDot"
+06080: 921  string "150106"
+06085: 921  initprop "nextStep"
+06090: 922  newinit 1
+06095: 923  uint16 4004
+06098: 923  initprop "guideTag"
+06103: 924  int8 100
+06105: 924  initprop "width"
+06110: 925  int8 100
+06112: 925  initprop "height"
+06117: 925  endinit
+06118: 925  initprop "data"
+06123: 925  endinit
+06124: 925  initelem
+06125: 925  uint24 150106
+06129: 929  newinit 1
+06134: 930  name "xs"
+06139: 930  getprop "Constant_GuideStepType_HollowOut"
+06144: 930  initprop "type"
+06149: 931  false
+06150: 931  initprop "isDot"
+06155: 932  null
+06156: 932  initprop "nextStep"
+06161: 933  newinit 1
+06166: 934  newinit 1
+06171: 934  string "c"
+06176: 934  initprop "desc"
+06181: 934  true
+06182: 934  initprop "sc"
+06187: 934  newinit 1
+06192: 934  int8 -50
+06194: 934  initprop "x"
+06199: 934  int8 -50
+06201: 934  initprop "y"
+06206: 934  endinit
+06207: 934  initprop "offset"
+06212: 934  endinit
+06213: 934  initprop "posCfg"
+06218: 935  uint16 420
+06221: 935  initprop "width"
+06226: 936  uint16 500
+06229: 936  initprop "height"
+06234: 936  endinit
+06235: 936  initprop "data"
+06240: 936  endinit
+06241: 936  initelem
+06242: 936  endinit
+06243: 936  initprop "InTeamGuideCfg"
+06248: 942  newinit 1
+06253: 943  string "LadderGuideStep"
+06258: 943  initprop "locationKey"
+06263: 944  string "120115"
+06268: 944  initprop "defaultStep"
+06273: 944  uint24 120115
+06277: 946  newinit 1
+06282: 947  name "xs"
+06287: 947  getprop "Constant_GuideStepType_HollowOut"
+06292: 947  initprop "type"
+06297: 948  false
+06298: 948  initprop "isDot"
+06303: 949  string "120101"
+06308: 949  initprop "nextStep"
+06313: 950  newinit 1
+06318: 951  false
+06319: 951  initprop "isClickHand"
+06324: 952  uint16 4003
+06327: 952  initprop "guideTag"
+06332: 953  uint16 150
+06335: 953  initprop "width"
+06340: 954  int8 72
+06342: 954  initprop "height"
+06347: 954  endinit
+06348: 954  initprop "data"
+06353: 954  endinit
+06354: 954  initelem
+06355: 954  uint24 120101
+06359: 958  newinit 1
+06364: 959  name "xs"
+06369: 959  getprop "Constant_GuideStepType_Story"
+06374: 959  initprop "type"
+06379: 960  false
+06380: 960  initprop "isDot"
+06385: 961  string "120102"
+06390: 961  initprop "nextStep"
+06395: 962  newinit 1
+06400: 963  string "990120101"
+06405: 963  initprop "storyId"
+06410: 963  endinit
+06411: 963  initprop "data"
+06416: 963  endinit
+06417: 963  initelem
+06418: 963  uint24 120102
+06422: 967  newinit 1
+06427: 968  name "xs"
+06432: 968  getprop "Constant_GuideStepType_HollowOut"
+06437: 968  initprop "type"
+06442: 969  false
+06443: 969  initprop "isDot"
+06448: 970  string "120103"
+06453: 970  initprop "nextStep"
+06458: 971  newinit 1
+06463: 972  uint16 1003
+06466: 972  initprop "guideTag"
+06471: 973  int8 110
+06473: 973  initprop "width"
+06478: 974  int8 110
+06480: 974  initprop "height"
+06485: 974  endinit
+06486: 974  initprop "data"
+06491: 974  endinit
+06492: 974  initelem
+06493: 974  uint24 120103
+06497: 978  newinit 1
+06502: 979  name "xs"
+06507: 979  getprop "Constant_GuideStepType_HollowOut"
+06512: 979  initprop "type"
+06517: 980  false
+06518: 980  initprop "isDot"
+06523: 981  string "120104_before"
+06528: 981  initprop "nextStep"
+06533: 982  newinit 1
+06538: 983  uint16 4005
+06541: 983  initprop "guideTag"
+06546: 984  uint16 342
+06549: 984  initprop "width"
+06554: 985  uint16 230
+06557: 985  initprop "height"
+06562: 985  endinit
+06563: 985  initprop "data"
+06568: 985  endinit
+06569: 985  initelem
+06570: 989  newinit 1
+06575: 990  name "xs"
+06580: 990  getprop "Constant_GuideStepType_ChangeScene"
+06585: 990  initprop "type"
+06590: 991  false
+06591: 991  initprop "isDot"
+06596: 992  string "120104"
+06601: 992  initprop "nextStep"
+06606: 993  newinit 1
+06611: 994  false
+06612: 994  initprop "isNeedChangeScene"
+06617: 995  string "LadderScene"
+06622: 995  initprop "sceneName"
+06627: 996  true
+06628: 996  initprop "data"
+06633: 996  endinit
+06634: 996  initprop "data"
+06639: 996  endinit
+06640: 996  initprop "120104_before"
+06645: 996  uint24 120104
+06649:1001  newinit 1
+06654:1002  name "xs"
+06659:1002  getprop "Constant_GuideStepType_Story"
+06664:1002  initprop "type"
+06669:1003  false
+06670:1003  initprop "isDot"
+06675:1004  null
+06676:1004  initprop "nextStep"
+06681:1005  newinit 1
+06686:1006  string "990120104"
+06691:1006  initprop "storyId"
+06696:1006  endinit
+06697:1006  initprop "data"
+06702:1006  endinit
+06703:1006  initelem
+06704:1006  endinit
+06705:1006  initprop "LadderGuideCfg"
+06710:1011  newinit 1
+06715:1012  string "ChaosGuideStep"
+06720:1012  initprop "locationKey"
+06725:1013  string "130101"
+06730:1013  initprop "defaultStep"
+06735:1013  uint24 130101
+06739:1015  newinit 1
+06744:1016  name "xs"
+06749:1016  getprop "Constant_GuideStepType_HollowOut"
+06754:1016  initprop "type"
+06759:1017  false
+06760:1017  initprop "isDot"
+06765:1018  string "130102"
+06770:1018  initprop "nextStep"
+06775:1019  newinit 1
+06780:1020  false
+06781:1020  initprop "isClickHand"
+06786:1021  uint16 4003
+06789:1021  initprop "guideTag"
+06794:1022  uint16 150
+06797:1022  initprop "width"
+06802:1023  int8 72
+06804:1023  initprop "height"
+06809:1023  endinit
+06810:1023  initprop "data"
+06815:1023  endinit
+06816:1023  initelem
+06817:1023  uint24 130102
+06821:1027  newinit 1
+06826:1028  name "xs"
+06831:1028  getprop "Constant_GuideStepType_Story"
+06836:1028  initprop "type"
+06841:1029  false
+06842:1029  initprop "isDot"
+06847:1030  string "130103"
+06852:1030  initprop "nextStep"
+06857:1031  newinit 1
+06862:1032  string "990130102"
+06867:1032  initprop "storyId"
+06872:1032  endinit
+06873:1032  initprop "data"
+06878:1032  endinit
+06879:1032  initelem
+06880:1032  uint24 130103
+06884:1036  newinit 1
+06889:1037  name "xs"
+06894:1037  getprop "Constant_GuideStepType_HollowOut"
+06899:1037  initprop "type"
+06904:1038  false
+06905:1038  initprop "isDot"
+06910:1039  string "130104"
+06915:1039  initprop "nextStep"
+06920:1040  newinit 1
+06925:1041  uint16 1003
+06928:1041  initprop "guideTag"
+06933:1042  int8 110
+06935:1042  initprop "width"
+06940:1043  int8 110
+06942:1043  initprop "height"
+06947:1043  endinit
+06948:1043  initprop "data"
+06953:1043  endinit
+06954:1043  initelem
+06955:1043  uint24 130104
+06959:1047  newinit 1
+06964:1048  name "xs"
+06969:1048  getprop "Constant_GuideStepType_HollowOut"
+06974:1048  initprop "type"
+06979:1049  false
+06980:1049  initprop "isDot"
+06985:1050  string "130105"
+06990:1050  initprop "nextStep"
+06995:1051  newinit 1
+07000:1052  uint16 4006
+07003:1052  initprop "guideTag"
+07008:1053  uint16 342
+07011:1053  initprop "width"
+07016:1054  uint16 230
+07019:1054  initprop "height"
+07024:1054  endinit
+07025:1054  initprop "data"
+07030:1054  endinit
+07031:1054  initelem
+07032:1054  uint24 130105
+07036:1058  newinit 1
+07041:1059  name "xs"
+07046:1059  getprop "Constant_GuideStepType_Story"
+07051:1059  initprop "type"
+07056:1060  false
+07057:1060  initprop "isDot"
+07062:1061  null
+07063:1061  initprop "nextStep"
+07068:1062  newinit 1
+07073:1063  string "990130105"
+07078:1063  initprop "storyId"
+07083:1063  endinit
+07084:1063  initprop "data"
+07089:1063  endinit
+07090:1063  initelem
+07091:1063  endinit
+07092:1063  initprop "ChaosGuideCfg"
+07097:1068  newinit 1
+07102:1069  string "DevelopGuideStep"
+07107:1069  initprop "locationKey"
+07112:1070  string "140101"
+07117:1070  initprop "defaultStep"
+07122:1070  uint24 140101
+07126:1072  newinit 1
+07131:1073  name "xs"
+07136:1073  getprop "Constant_GuideStepType_HollowOut"
+07141:1073  initprop "type"
+07146:1074  false
+07147:1074  initprop "isDot"
+07152:1075  string "140102"
+07157:1075  initprop "nextStep"
+07162:1076  newinit 1
+07167:1077  false
+07168:1077  initprop "isClickHand"
+07173:1078  uint16 4003
+07176:1078  initprop "guideTag"
+07181:1079  uint16 150
+07184:1079  initprop "width"
+07189:1080  int8 72
+07191:1080  initprop "height"
+07196:1080  endinit
+07197:1080  initprop "data"
+07202:1080  endinit
+07203:1080  initelem
+07204:1080  uint24 140102
+07208:1084  newinit 1
+07213:1085  name "xs"
+07218:1085  getprop "Constant_GuideStepType_Story"
+07223:1085  initprop "type"
+07228:1086  false
+07229:1086  initprop "isDot"
+07234:1087  string "140103"
+07239:1087  initprop "nextStep"
+07244:1088  newinit 1
+07249:1089  string "990140102"
+07254:1089  initprop "storyId"
+07259:1089  endinit
+07260:1089  initprop "data"
+07265:1089  endinit
+07266:1089  initelem
+07267:1089  uint24 140103
+07271:1093  newinit 1
+07276:1094  name "xs"
+07281:1094  getprop "Constant_GuideStepType_HollowOut"
+07286:1094  initprop "type"
+07291:1095  false
+07292:1095  initprop "isDot"
+07297:1096  string "140104"
+07302:1096  initprop "nextStep"
+07307:1097  newinit 1
+07312:1098  uint16 1002
+07315:1098  initprop "guideTag"
+07320:1099  int8 110
+07322:1099  initprop "width"
+07327:1100  int8 110
+07329:1100  initprop "height"
+07334:1100  endinit
+07335:1100  initprop "data"
+07340:1100  endinit
+07341:1100  initelem
+07342:1100  uint24 140104
+07346:1104  newinit 1
+07351:1105  name "xs"
+07356:1105  getprop "Constant_GuideStepType_HollowOut"
+07361:1105  initprop "type"
+07366:1106  false
+07367:1106  initprop "isDot"
+07372:1107  string "140105"
+07377:1107  initprop "nextStep"
+07382:1108  newinit 1
+07387:1109  uint16 4007
+07390:1109  initprop "guideTag"
+07395:1110  uint16 192
+07398:1110  initprop "width"
+07403:1111  uint16 230
+07406:1111  initprop "height"
+07411:1111  endinit
+07412:1111  initprop "data"
+07417:1111  endinit
+07418:1111  initelem
+07419:1111  uint24 140105
+07423:1115  newinit 1
+07428:1116  name "xs"
+07433:1116  getprop "Constant_GuideStepType_HollowOut"
+07438:1116  initprop "type"
+07443:1117  false
+07444:1117  initprop "isDot"
+07449:1118  string "140106"
+07454:1118  initprop "nextStep"
+07459:1119  newinit 1
+07464:1120  uint16 4008
+07467:1120  initprop "guideTag"
+07472:1121  uint16 150
+07475:1121  initprop "width"
+07480:1122  int8 72
+07482:1122  initprop "height"
+07487:1122  endinit
+07488:1122  initprop "data"
+07493:1122  endinit
+07494:1122  initelem
+07495:1122  uint24 140106
+07499:1126  newinit 1
+07504:1127  name "xs"
+07509:1127  getprop "Constant_GuideStepType_Story"
+07514:1127  initprop "type"
+07519:1128  false
+07520:1128  initprop "isDot"
+07525:1129  string "140107"
+07530:1129  initprop "nextStep"
+07535:1130  newinit 1
+07540:1131  string "990140106"
+07545:1131  initprop "storyId"
+07550:1131  endinit
+07551:1131  initprop "data"
+07556:1131  endinit
+07557:1131  initelem
+07558:1131  uint24 140107
+07562:1135  newinit 1
+07567:1136  name "xs"
+07572:1136  getprop "Constant_GuideStepType_HollowOut"
+07577:1136  initprop "type"
+07582:1137  false
+07583:1137  initprop "isDot"
+07588:1138  null
+07589:1138  initprop "nextStep"
+07594:1139  newinit 1
+07599:1140  uint16 4009
+07602:1140  initprop "guideTag"
+07607:1141  uint16 300
+07610:1141  initprop "width"
+07615:1142  int8 72
+07617:1142  initprop "height"
+07622:1142  endinit
+07623:1142  initprop "data"
+07628:1142  endinit
+07629:1142  initelem
+07630:1142  endinit
+07631:1142  initprop "DevelopGuideCfg"
+07636:1147  newinit 1
+07641:1148  string "ClimbGuideStep"
+07646:1148  initprop "locationKey"
+07651:1149  string "170101"
+07656:1149  initprop "defaultStep"
+07661:1149  uint24 170101
+07665:1151  newinit 1
+07670:1152  name "xs"
+07675:1152  getprop "Constant_GuideStepType_HollowOut"
+07680:1152  initprop "type"
+07685:1153  false
+07686:1153  initprop "isDot"
+07691:1154  string "170102"
+07696:1154  initprop "nextStep"
+07701:1155  newinit 1
+07706:1156  false
+07707:1156  initprop "isClickHand"
+07712:1157  uint16 4003
+07715:1157  initprop "guideTag"
+07720:1158  uint16 150
+07723:1158  initprop "width"
+07728:1159  int8 72
+07730:1159  initprop "height"
+07735:1159  endinit
+07736:1159  initprop "data"
+07741:1159  endinit
+07742:1159  initelem
+07743:1159  uint24 170102
+07747:1163  newinit 1
+07752:1164  name "xs"
+07757:1164  getprop "Constant_GuideStepType_Story"
+07762:1164  initprop "type"
+07767:1165  false
+07768:1165  initprop "isDot"
+07773:1166  string "170103"
+07778:1166  initprop "nextStep"
+07783:1167  newinit 1
+07788:1168  string "990170102"
+07793:1168  initprop "storyId"
+07798:1168  endinit
+07799:1168  initprop "data"
+07804:1168  endinit
+07805:1168  initelem
+07806:1168  uint24 170103
+07810:1172  newinit 1
+07815:1173  name "xs"
+07820:1173  getprop "Constant_GuideStepType_HollowOut"
+07825:1173  initprop "type"
+07830:1174  false
+07831:1174  initprop "isDot"
+07836:1175  string "170104"
+07841:1175  initprop "nextStep"
+07846:1176  newinit 1
+07851:1177  uint16 1003
+07854:1177  initprop "guideTag"
+07859:1178  int8 110
+07861:1178  initprop "width"
+07866:1179  int8 110
+07868:1179  initprop "height"
+07873:1179  endinit
+07874:1179  initprop "data"
+07879:1179  endinit
+07880:1179  initelem
+07881:1179  uint24 170104
+07885:1183  newinit 1
+07890:1184  name "xs"
+07895:1184  getprop "Constant_GuideStepType_HollowOut"
+07900:1184  initprop "type"
+07905:1185  false
+07906:1185  initprop "isDot"
+07911:1186  string "170105"
+07916:1186  initprop "nextStep"
+07921:1187  newinit 1
+07926:1188  uint16 4010
+07929:1188  initprop "guideTag"
+07934:1189  uint16 342
+07937:1189  initprop "width"
+07942:1190  uint16 230
+07945:1190  initprop "height"
+07950:1190  endinit
+07951:1190  initprop "data"
+07956:1190  endinit
+07957:1190  initelem
+07958:1190  uint24 170105
+07962:1194  newinit 1
+07967:1195  name "xs"
+07972:1195  getprop "Constant_GuideStepType_Story"
+07977:1195  initprop "type"
+07982:1196  false
+07983:1196  initprop "isDot"
+07988:1197  null
+07989:1197  initprop "nextStep"
+07994:1198  newinit 1
+07999:1199  string "990170105"
+08004:1199  initprop "storyId"
+08009:1199  endinit
+08010:1199  initprop "data"
+08015:1199  endinit
+08016:1199  initelem
+08017:1199  endinit
+08018:1199  initprop "ClimbGuideCfg"
+08023:1204  newinit 1
+08028:1205  string "LieutenantGuideStep"
+08033:1205  initprop "locationKey"
+08038:1206  string "160101"
+08043:1206  initprop "defaultStep"
+08048:1206  uint24 160101
+08052:1208  newinit 1
+08057:1209  name "xs"
+08062:1209  getprop "Constant_GuideStepType_HollowOut"
+08067:1209  initprop "type"
+08072:1210  false
+08073:1210  initprop "isDot"
+08078:1211  string "160102"
+08083:1211  initprop "nextStep"
+08088:1212  newinit 1
+08093:1213  false
+08094:1213  initprop "isClickHand"
+08099:1214  uint16 4003
+08102:1214  initprop "guideTag"
+08107:1215  uint16 150
+08110:1215  initprop "width"
+08115:1216  int8 72
+08117:1216  initprop "height"
+08122:1216  endinit
+08123:1216  initprop "data"
+08128:1216  endinit
+08129:1216  initelem
+08130:1216  uint24 160102
+08134:1220  newinit 1
+08139:1221  name "xs"
+08144:1221  getprop "Constant_GuideStepType_Story"
+08149:1221  initprop "type"
+08154:1222  false
+08155:1222  initprop "isDot"
+08160:1223  string "160103"
+08165:1223  initprop "nextStep"
+08170:1224  newinit 1
+08175:1225  string "990160102"
+08180:1225  initprop "storyId"
+08185:1225  endinit
+08186:1225  initprop "data"
+08191:1225  endinit
+08192:1225  initelem
+08193:1225  uint24 160103
+08197:1229  newinit 1
+08202:1230  name "xs"
+08207:1230  getprop "Constant_GuideStepType_HollowOut"
+08212:1230  initprop "type"
+08217:1231  false
+08218:1231  initprop "isDot"
+08223:1232  string "160104"
+08228:1232  initprop "nextStep"
+08233:1233  newinit 1
+08238:1234  uint16 1002
+08241:1234  initprop "guideTag"
+08246:1235  int8 110
+08248:1235  initprop "width"
+08253:1236  int8 110
+08255:1236  initprop "height"
+08260:1236  endinit
+08261:1236  initprop "data"
+08266:1236  endinit
+08267:1236  initelem
+08268:1236  uint24 160104
+08272:1240  newinit 1
+08277:1241  name "xs"
+08282:1241  getprop "Constant_GuideStepType_HollowOut"
+08287:1241  initprop "type"
+08292:1242  false
+08293:1242  initprop "isDot"
+08298:1243  string "160105"
+08303:1243  initprop "nextStep"
+08308:1244  newinit 1
+08313:1245  uint16 3004
+08316:1245  initprop "guideTag"
+08321:1246  uint16 342
+08324:1246  initprop "width"
+08329:1247  uint16 230
+08332:1247  initprop "height"
+08337:1247  endinit
+08338:1247  initprop "data"
+08343:1247  endinit
+08344:1247  initelem
+08345:1247  uint24 160105
+08349:1251  newinit 1
+08354:1252  name "xs"
+08359:1252  getprop "Constant_GuideStepType_HollowOut"
+08364:1252  initprop "type"
+08369:1253  false
+08370:1253  initprop "isDot"
+08375:1254  null
+08376:1254  initprop "nextStep"
+08381:1255  newinit 1
+08386:1256  uint16 4011
+08389:1256  initprop "guideTag"
+08394:1257  int8 110
+08396:1257  initprop "width"
+08401:1258  int8 110
+08403:1258  initprop "height"
+08408:1258  endinit
+08409:1258  initprop "data"
+08414:1258  endinit
+08415:1258  initelem
+08416:1258  endinit
+08417:1258  initprop "LieutenantGuideCfg"
+08422:1264  newinit 1
+08427:1265  string "LieutenantGuideStep"
+08432:1265  initprop "locationKey"
+08437:1266  string "190101"
+08442:1266  initprop "defaultStep"
+08447:1266  uint24 190101
+08451:1268  newinit 1
+08456:1269  name "xs"
+08461:1269  getprop "Constant_GuideStepType_HollowOut"
+08466:1269  initprop "type"
+08471:1270  false
+08472:1270  initprop "isDot"
+08477:1271  string "190102"
+08482:1271  initprop "nextStep"
+08487:1272  newinit 1
+08492:1273  false
+08493:1273  initprop "isClickHand"
+08498:1274  uint16 4003
+08501:1274  initprop "guideTag"
+08506:1275  name "cc"
+08511:1275  dup
+08512:1275  callprop "p"
+08517:1275  swap
+08518:1275  notearg
+08519:1275  double 0.5
+08524:1275  notearg
+08525:1275  double 0.5
+08530:1275  notearg
+08531:1275  call 2
+08534:1275  initprop "anchorPoint"
+08539:1276  uint16 150
+08542:1276  initprop "width"
+08547:1277  int8 72
+08549:1277  initprop "height"
+08554:1277  endinit
+08555:1277  initprop "data"
+08560:1277  endinit
+08561:1277  initelem
+08562:1277  uint24 190102
+08566:1281  newinit 1
+08571:1282  name "xs"
+08576:1282  getprop "Constant_GuideStepType_Story"
+08581:1282  initprop "type"
+08586:1283  false
+08587:1283  initprop "isDot"
+08592:1284  string "190103"
+08597:1284  initprop "nextStep"
+08602:1285  newinit 1
+08607:1286  string "990190102"
+08612:1286  initprop "storyId"
+08617:1286  endinit
+08618:1286  initprop "data"
+08623:1286  endinit
+08624:1286  initelem
+08625:1286  uint24 190103
+08629:1290  newinit 1
+08634:1291  name "xs"
+08639:1291  getprop "Constant_GuideStepType_HollowOut"
+08644:1291  initprop "type"
+08649:1292  false
+08650:1292  initprop "isDot"
+08655:1293  string "190104"
+08660:1293  initprop "nextStep"
+08665:1294  newinit 1
+08670:1295  name "xs"
+08675:1295  getprop "Constant_GuideTag_EliteDuplicate"
+08680:1295  initprop "guideTag"
+08685:1296  uint16 181
+08688:1296  initprop "width"
+08693:1297  int8 65
+08695:1297  initprop "height"
+08700:1297  endinit
+08701:1297  initprop "data"
+08706:1297  endinit
+08707:1297  initelem
+08708:1297  uint24 190104
+08712:1301  newinit 1
+08717:1302  name "xs"
+08722:1302  getprop "Constant_GuideStepType_Story"
+08727:1302  initprop "type"
+08732:1303  false
+08733:1303  initprop "isDot"
+08738:1304  null
+08739:1304  initprop "nextStep"
+08744:1305  newinit 1
+08749:1306  string "990190104"
+08754:1306  initprop "storyId"
+08759:1306  endinit
+08760:1306  initprop "data"
+08765:1306  endinit
+08766:1306  initelem
+08767:1306  endinit
+08768:1306  initprop "EliteDuplicateGuideCfg"
+08773:1313  newinit 1
+08778:1314  string "LieutenantGuideStep"
+08783:1314  initprop "locationKey"
+08788:1315  string "200102"
+08793:1315  initprop "defaultStep"
+08798:1315  uint24 200101
+08802:1317  newinit 1
+08807:1318  name "xs"
+08812:1318  getprop "Constant_GuideStepType_HollowOut"
+08817:1318  initprop "type"
+08822:1319  false
+08823:1319  initprop "isDot"
+08828:1320  string "200102"
+08833:1320  initprop "nextStep"
+08838:1321  newinit 1
+08843:1322  false
+08844:1322  initprop "isClickHand"
+08849:1323  uint16 4003
+08852:1323  initprop "guideTag"
+08857:1324  uint16 150
+08860:1324  initprop "width"
+08865:1325  int8 72
+08867:1325  initprop "height"
+08872:1325  endinit
+08873:1325  initprop "data"
+08878:1325  endinit
+08879:1325  initelem
+08880:1325  uint24 200102
+08884:1329  newinit 1
+08889:1330  name "xs"
+08894:1330  getprop "Constant_GuideStepType_Story"
+08899:1330  initprop "type"
+08904:1331  false
+08905:1331  initprop "isDot"
+08910:1332  string "200103"
+08915:1332  initprop "nextStep"
+08920:1333  newinit 1
+08925:1334  string "990200102"
+08930:1334  initprop "storyId"
+08935:1334  endinit
+08936:1334  initprop "data"
+08941:1334  endinit
+08942:1334  initelem
+08943:1334  uint24 200103
+08947:1338  newinit 1
+08952:1339  name "xs"
+08957:1339  getprop "Constant_GuideStepType_HollowOut"
+08962:1339  initprop "type"
+08967:1340  false
+08968:1340  initprop "isDot"
+08973:1341  string "200104"
+08978:1341  initprop "nextStep"
+08983:1342  newinit 1
+08988:1343  uint16 1002
+08991:1343  initprop "guideTag"
+08996:1344  int8 110
+08998:1344  initprop "width"
+09003:1345  int8 110
+09005:1345  initprop "height"
+09010:1345  endinit
+09011:1345  initprop "data"
+09016:1345  endinit
+09017:1345  initelem
+09018:1345  uint24 200104
+09022:1349  newinit 1
+09027:1350  name "xs"
+09032:1350  getprop "Constant_GuideStepType_HollowOut"
+09037:1350  initprop "type"
+09042:1351  false
+09043:1351  initprop "isDot"
+09048:1352  string "200105"
+09053:1352  initprop "nextStep"
+09058:1353  newinit 1
+09063:1354  uint16 4001
+09066:1354  initprop "guideTag"
+09071:1355  uint16 192
+09074:1355  initprop "width"
+09079:1356  uint16 230
+09082:1356  initprop "height"
+09087:1356  endinit
+09088:1356  initprop "data"
+09093:1356  endinit
+09094:1356  initelem
+09095:1356  uint24 200105
+09099:1360  newinit 1
+09104:1361  name "xs"
+09109:1361  getprop "Constant_GuideStepType_Story"
+09114:1361  initprop "type"
+09119:1362  false
+09120:1362  initprop "isDot"
+09125:1363  null
+09126:1363  initprop "nextStep"
+09131:1364  newinit 1
+09136:1365  string "990200105"
+09141:1365  initprop "storyId"
+09146:1365  endinit
+09147:1365  initprop "data"
+09152:1365  endinit
+09153:1365  initelem
+09154:1365  endinit
+09155:1365  initprop "RefineEquipGuideCfg"
+09160:1371  newinit 1
+09165:1373  string "NewGuideStep"
+09170:1373  initprop "locationKey"
+09175:1374  string "0"
+09180:1374  initprop "defaultStep"
+09185:1374  zero
+09186:1376  newinit 1
+09191:1377  name "xs"
+09196:1377  getprop "Constant_GuideStepType_Story"
+09201:1377  initprop "type"
+09206:1378  true
+09207:1378  initprop "isDot"
+09212:1379  string "10001"
+09217:1379  initprop "nextStep"
+09222:1380  newinit 1
+09227:1381  string "00000"
+09232:1381  initprop "storyId"
+09237:1381  endinit
+09238:1381  initprop "data"
+09243:1381  endinit
+09244:1381  initelem
+09245:1381  uint16 10001
+09248:1384  newinit 1
+09253:1385  name "xs"
+09258:1385  getprop "Constant_GuideStepType_Story"
+09263:1385  initprop "type"
+09268:1386  false
+09269:1386  initprop "isDot"
+09274:1387  string "10002"
+09279:1387  initprop "nextStep"
+09284:1388  newinit 1
+09289:1389  string "10001"
+09294:1389  initprop "storyId"
+09299:1389  endinit
+09300:1389  initprop "data"
+09305:1389  endinit
+09306:1389  initelem
+09307:1389  uint16 10002
+09310:1392  newinit 1
+09315:1393  name "xs"
+09320:1393  getprop "Constant_GuideStepType_Story"
+09325:1393  initprop "type"
+09330:1394  true
+09331:1394  initprop "isDot"
+09336:1395  string "10003"
+09341:1395  initprop "nextStep"
+09346:1396  newinit 1
+09351:1397  string "00000"
+09356:1397  initprop "storyId"
+09361:1397  endinit
+09362:1397  initprop "data"
+09367:1397  endinit
+09368:1397  initelem
+09369:1397  uint16 10003
+09372:1400  newinit 1
+09377:1401  name "xs"
+09382:1401  getprop "Constant_GuideStepType_Story"
+09387:1401  initprop "type"
+09392:1402  true
+09393:1402  initprop "isDot"
+09398:1403  null
+09399:1403  initprop "nextStep"
+09404:1404  newinit 1
+09409:1405  string "50100501"
+09414:1405  initprop "storyId"
+09419:1405  endinit
+09420:1405  initprop "data"
+09425:1405  endinit
+09426:1405  initelem
+09427:1405  endinit
+09428:1405  initprop "testStoryCfg"
+09433:1405  endinit
+09434:1405  setprop "Guide"
+09439:1405  popv
+09440:1410  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Cfg/Guide.js:1 ---

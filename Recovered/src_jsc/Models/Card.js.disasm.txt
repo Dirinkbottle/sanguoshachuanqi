@@ -1,0 +1,2438 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/Card.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=208 object[0]
+;; FUNCTION-MAP kind=lambda offset=218 object[1]
+;; FUNCTION-MAP kind=lambda offset=228 object[2]
+;; FUNCTION-MAP kind=lambda offset=238 object[3]
+;; FUNCTION-MAP kind=lambda offset=248 object[4]
+;; FUNCTION-MAP kind=lambda offset=258 object[5]
+;; FUNCTION-MAP kind=lambda offset=268 object[6]
+;; FUNCTION-MAP kind=lambda offset=278 object[7]
+;; FUNCTION-MAP kind=lambda offset=288 object[8]
+;; FUNCTION-MAP kind=lambda offset=298 object[9]
+;; FUNCTION-MAP kind=lambda offset=308 object[10]
+;; FUNCTION-MAP kind=lambda offset=318 object[11]
+;; FUNCTION-MAP kind=lambda offset=328 object[12]
+;; FUNCTION-MAP kind=lambda offset=338 object[13]
+;; FUNCTION-MAP kind=lambda offset=348 object[14]
+;; FUNCTION-MAP kind=lambda offset=358 object[15]
+;; FUNCTION-MAP kind=lambda offset=368 object[16]
+;; FUNCTION-MAP kind=lambda offset=378 object[17]
+;; FUNCTION-MAP kind=lambda offset=388 object[18]
+;; FUNCTION-MAP kind=lambda offset=398 object[19]
+;; FUNCTION-MAP kind=lambda offset=408 object[20]
+;; FUNCTION-MAP kind=lambda offset=418 object[21]
+;; FUNCTION-MAP kind=lambda offset=428 object[22]
+;; FUNCTION-MAP kind=lambda offset=438 object[23]
+;; FUNCTION-MAP kind=lambda offset=448 object[24]
+;; FUNCTION-MAP kind=lambda offset=458 object[25]
+;; FUNCTION-MAP kind=lambda offset=468 object[26]
+;; FUNCTION-MAP kind=lambda offset=478 object[27]
+;; FUNCTION-MAP kind=lambda offset=488 object[28]
+;; FUNCTION-MAP kind=lambda offset=498 object[29]
+;; FUNCTION-MAP kind=lambda offset=508 object[30]
+;; FUNCTION-MAP kind=lambda offset=518 object[31]
+;; FUNCTION-MAP kind=lambda offset=528 object[32]
+;; FUNCTION-MAP kind=lambda offset=538 object[33]
+;; FUNCTION-MAP kind=lambda offset=548 object[34]
+;; FUNCTION-MAP kind=lambda offset=558 object[35]
+;; FUNCTION-MAP kind=lambda offset=568 object[36]
+;; FUNCTION-MAP kind=lambda offset=578 object[37]
+;; FUNCTION-MAP kind=lambda offset=588 object[38]
+;; FUNCTION-MAP kind=lambda offset=598 object[39]
+;; FUNCTION-MAP kind=lambda offset=608 object[40]
+;; FUNCTION-MAP kind=lambda offset=618 object[41]
+;; FUNCTION-MAP kind=lambda offset=628 object[42]
+;; FUNCTION-MAP kind=lambda offset=638 object[43]
+;; FUNCTION-MAP kind=lambda offset=648 object[44]
+;; FUNCTION-MAP kind=lambda offset=658 object[45]
+;; FUNCTION-MAP kind=lambda offset=668 object[46]
+;; FUNCTION-MAP kind=lambda offset=678 object[47]
+;; FUNCTION-MAP kind=lambda offset=688 object[48]
+;; FUNCTION-MAP kind=lambda offset=698 object[49]
+;; FUNCTION-MAP kind=lambda offset=708 object[50]
+;; FUNCTION-MAP kind=lambda offset=718 object[51]
+;; FUNCTION-MAP kind=lambda offset=728 object[52]
+;; FUNCTION-MAP kind=lambda offset=738 object[53]
+;; FUNCTION-MAP kind=lambda offset=748 object[54]
+;; FUNCTION-MAP kind=lambda offset=758 object[55]
+;; FUNCTION-MAP kind=lambda offset=768 object[56]
+;; FUNCTION-MAP kind=lambda offset=778 object[57]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  name "xs"
+00005:  12  getprop "Models"
+00010:  12  one
+00011:  12  setprop "Card_Type_General"
+00016:  12  popv
+00017:  13  name "xs"
+00022:  13  getprop "Models"
+00027:  13  int8 2
+00029:  13  setprop "Card_Type_MTip"
+00034:  13  popv
+00035:  14  name "xs"
+00040:  14  getprop "Models"
+00045:  14  int8 3
+00047:  14  setprop "Card_Type_Equipment"
+00052:  14  popv
+00053:  15  name "xs"
+00058:  15  getprop "Models"
+00063:  15  int8 4
+00065:  15  setprop "Card_Type_Skill"
+00070:  15  popv
+00071:  16  name "xs"
+00076:  16  getprop "Models"
+00081:  16  int8 5
+00083:  16  setprop "Card_Type_Connect"
+00088:  16  popv
+00089:  21  name "xs"
+00094:  21  getprop "Models"
+00099:  21  one
+00100:  21  setprop "Card_Orbit_Wei"
+00105:  21  popv
+00106:  22  name "xs"
+00111:  22  getprop "Models"
+00116:  22  int8 2
+00118:  22  setprop "Card_Orbit_Shu"
+00123:  22  popv
+00124:  23  name "xs"
+00129:  23  getprop "Models"
+00134:  23  int8 3
+00136:  23  setprop "Card_Orbit_Wu"
+00141:  23  popv
+00142:  24  name "xs"
+00147:  24  getprop "Models"
+00152:  24  int8 4
+00154:  24  setprop "Card_Orbit_Qun"
+00159:  24  popv
+00160:  29  name "xs"
+00165:  29  getprop "Models"
+00170:  29  name "xs"
+00175:  29  getprop "Models"
+00180:  29  getprop "BaseCfg"
+00185:  29  dup
+00186:  29  callprop "extend"
+00191:  29  swap
+00192:  29  notearg
+00193:  29  newinit 1
+00198:  31  string "xs.Models.Card"
+00203:  31  initprop "name"
+00208:  34  lambda (function () {
+    [sourceless code]
+})
+00213:  34  initprop "init"
+00218:  60  lambda (function () {
+    [sourceless code]
+})
+00223:  60  initprop "isDefault"
+00228:  70  lambda (function () {
+    [sourceless code]
+})
+00233:  70  initprop "setNum"
+00238:  74  lambda (function () {
+    [sourceless code]
+})
+00243:  74  initprop "getNum"
+00248:  81  lambda (function () {
+    [sourceless code]
+})
+00253:  81  initprop "isIgnoreByFilter"
+00258:  87  lambda (function () {
+    [sourceless code]
+})
+00263:  87  initprop "getGrade"
+00268:  96  lambda (function () {
+    [sourceless code]
+})
+00273:  96  initprop "getSortGrade"
+00278: 106  lambda (function () {
+    [sourceless code]
+})
+00283: 106  initprop "getStyleId"
+00288: 111  lambda (function () {
+    [sourceless code]
+})
+00293: 111  initprop "getStyleDesc"
+00298: 117  lambda (function () {
+    [sourceless code]
+})
+00303: 117  initprop "getObrit"
+00308: 121  lambda (function () {
+    [sourceless code]
+})
+00313: 121  initprop "getStyleModel"
+00318: 129  lambda (function () {
+    [sourceless code]
+})
+00323: 129  initprop "createHeadView"
+00328: 138  lambda (function () {
+    [sourceless code]
+})
+00333: 138  initprop "createCardView"
+00338: 145  lambda (function () {
+    [sourceless code]
+})
+00343: 145  initprop "createCard_Grade"
+00348: 152  lambda (function () {
+    [sourceless code]
+})
+00353: 152  initprop "createIcon_Grade"
+00358: 163  lambda (function () {
+    [sourceless code]
+})
+00363: 163  initprop "createIcon_GradeAndLv"
+00368: 174  lambda (function () {
+    [sourceless code]
+})
+00373: 174  initprop "createIcon_GradeAndLvAndFate"
+00378: 187  lambda (function () {
+    [sourceless code]
+})
+00383: 187  initprop "createIcon_GradeAndLvAndName"
+00388: 200  lambda (function () {
+    [sourceless code]
+})
+00393: 200  initprop "createIcon_GradeAndNameOrLv"
+00398: 213  lambda (function () {
+    [sourceless code]
+})
+00403: 213  initprop "createIcon_GradeAndNum"
+00408: 225  lambda (function () {
+    [sourceless code]
+})
+00413: 225  initprop "createIcon_GradeAndNumAndName"
+00418: 240  lambda (function () {
+    [sourceless code]
+})
+00423: 240  initprop "createIcon_GradeAndName"
+00428: 251  lambda (function () {
+    [sourceless code]
+})
+00433: 251  initprop "createIcon_GradeAndName"
+00438: 263  lambda (function () {
+    [sourceless code]
+})
+00443: 263  initprop "createIcon_GradeAndNameAndEqued"
+00448: 280  lambda (function () {
+    [sourceless code]
+})
+00453: 280  initprop "loadJson"
+00458: 296  lambda (function () {
+    [sourceless code]
+})
+00463: 296  initprop "setExp"
+00468: 300  lambda (function () {
+    [sourceless code]
+})
+00473: 300  initprop "getExp"
+00478: 304  lambda (function () {
+    [sourceless code]
+})
+00483: 304  initprop "setPkId"
+00488: 308  lambda (function () {
+    [sourceless code]
+})
+00493: 308  initprop "getPkId"
+00498: 314  lambda (function () {
+    [sourceless code]
+})
+00503: 314  initprop "getCardType"
+00508: 318  lambda (function () {
+    [sourceless code]
+})
+00513: 318  initprop "setCardType"
+00518: 323  lambda (function () {
+    [sourceless code]
+})
+00523: 323  initprop "getGetTime"
+00528: 327  lambda (function () {
+    [sourceless code]
+})
+00533: 327  initprop "setGetTime"
+00538: 332  lambda (function () {
+    [sourceless code]
+})
+00543: 332  initprop "setLevel"
+00548: 343  lambda (function () {
+    [sourceless code]
+})
+00553: 343  initprop "getLevel"
+00558: 349  lambda (function () {
+    [sourceless code]
+})
+00563: 349  initprop "getSource"
+00568: 353  lambda (function () {
+    [sourceless code]
+})
+00573: 353  initprop "clearResCache"
+00578: 357  lambda (function () {
+    [sourceless code]
+})
+00583: 357  initprop "getRes"
+00588: 408  lambda (function () {
+    [sourceless code]
+})
+00593: 408  initprop "getFightBase"
+00598: 411  lambda (function () {
+    [sourceless code]
+})
+00603: 411  initprop "getFightStep"
+00608: 417  lambda (function () {
+    [sourceless code]
+})
+00613: 417  initprop "getNextLevel"
+00618: 429  lambda (function () {
+    [sourceless code]
+})
+00623: 429  initprop "isMaxLv"
+00628: 438  lambda (function () {
+    [sourceless code]
+})
+00633: 438  initprop "getCurLevelExpPer"
+00638: 445  lambda (function () {
+    [sourceless code]
+})
+00643: 445  initprop "createGradeSmallIcon"
+00648: 450  lambda (function () {
+    [sourceless code]
+})
+00653: 450  initprop "createOrbitSmallIcon"
+00658: 457  lambda (function () {
+    [sourceless code]
+})
+00663: 457  initprop "createEffectTypeSmallIcon"
+00668: 464  lambda (function () {
+    [sourceless code]
+})
+00673: 464  initprop "getTotalExp"
+00678: 476  lambda (function () {
+    [sourceless code]
+})
+00683: 476  initprop "getMaxLevel"
+00688: 481  lambda (function () {
+    [sourceless code]
+})
+00693: 481  initprop "getUpgradeCoinNeed"
+00698: 487  lambda (function () {
+    [sourceless code]
+})
+00703: 487  initprop "getUpgradeExpNeed"
+00708: 493  lambda (function () {
+    [sourceless code]
+})
+00713: 493  initprop "getEatedProExp"
+00718: 514  lambda (function () {
+    [sourceless code]
+})
+00723: 514  initprop "getPrice"
+00728: 520  lambda (function () {
+    [sourceless code]
+})
+00733: 520  initprop "_getUpgradeExpCfgObj"
+00738: 528  lambda (function () {
+    [sourceless code]
+})
+00743: 528  initprop "_getEatedExpCfgObj"
+00748: 537  lambda (function () {
+    [sourceless code]
+})
+00753: 537  initprop "_getSellCfgObj"
+00758: 546  lambda (function () {
+    [sourceless code]
+})
+00763: 546  initprop "_getUpgradeCoinCfgObj"
+00768: 552  lambda (function () {
+    [sourceless code]
+})
+00773: 552  initprop "isAwaked"
+00778: 560  lambda (function () {
+    [sourceless code]
+})
+00783: 560  initprop "print"
+00788: 560  endinit
+00789: 560  notearg
+00790: 560  call 1
+00793: 560  setprop "Card"
+00798: 560  popv
+00799: 567  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  this
+00001:  38  dup
+00002:  38  callprop "_super"
+00007:  38  swap
+00008:  38  notearg
+00009:  38  call 0
+00012:  38  pop
+00013:  40  this
+00014:  40  zero
+00015:  40  setprop "card_type"
+00020:  40  pop
+00021:  41  this
+00022:  41  string "0"
+00027:  41  setprop "pk_id"
+00032:  41  pop
+00033:  42  this
+00034:  42  one
+00035:  42  setprop "level"
+00040:  42  pop
+00041:  43  this
+00042:  43  zero
+00043:  43  setprop "get_time"
+00048:  43  pop
+00049:  44  this
+00050:  44  one
+00051:  44  setprop "num"
+00056:  44  pop
+00057:  45  this
+00058:  45  zero
+00059:  45  setprop "exp"
+00064:  45  pop
+00065:  47  this
+00066:  47  dup
+00067:  47  callprop "assert"
+00072:  47  swap
+00073:  47  notearg
+00074:  47  this
+00075:  47  getprop "createHeadView"
+00080:  47  notearg
+00081:  47  string "need override createHeadView"
+00086:  47  notearg
+00087:  47  call 2
+00090:  47  pop
+00091:  48  this
+00092:  48  dup
+00093:  48  callprop "assert"
+00098:  48  swap
+00099:  48  notearg
+00100:  48  this
+00101:  48  getprop "isDefault"
+00106:  48  notearg
+00107:  48  string "need override isDefault"
+00112:  48  notearg
+00113:  48  call 2
+00116:  48  pop
+00117:  54  true
+00118:  54  return
+00119:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:34 ---
+;; function object[1] isDefault
+;; function metadata object[1] nargs=0 bindings=1
+;; local[0] _resModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  61  this
+00001:  61  dup
+00002:  61  callprop "getRes"
+00007:  61  swap
+00008:  61  notearg
+00009:  61  call 0
+00012:  61  setlocal 0
+00015:  61  pop
+00016:  62  getlocal 0
+00019:  62  dup
+00020:  62  callprop "getId"
+00025:  62  swap
+00026:  62  notearg
+00027:  62  call 0
+00030:  62  string "0"
+00035:  62  stricteq
+00036:  62  ifeq 43 (+7)
+00041:  63  true
+00042:  63  return
+00043:  65  false
+00044:  65  return
+00045:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:60 ---
+;; function object[2] setNum
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] num
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:70 ---
+loc   line  op
+----- ----  --
+main:
+00000:  71  this
+00001:  71  name "xs"
+00006:  71  getprop "Utils"
+00011:  71  dup
+00012:  71  callprop "parseIntSafe"
+00017:  71  swap
+00018:  71  notearg
+00019:  71  getarg 0
+00022:  71  notearg
+00023:  71  call 1
+00026:  71  setprop "num"
+00031:  71  pop
+00032:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:70 ---
+;; function object[3] getNum
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:74 ---
+loc   line  op
+----- ----  --
+main:
+00000:  76  this
+00001:  76  getprop "num"
+00006:  76  return
+00007:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:74 ---
+;; function object[4] isIgnoreByFilter
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:81 ---
+loc   line  op
+----- ----  --
+main:
+00000:  82  this
+00001:  82  dup
+00002:  82  callprop "error"
+00007:  82  swap
+00008:  82  notearg
+00009:  82  string "isIgnoreByFilter need override"
+00014:  82  notearg
+00015:  82  call 1
+00018:  82  pop
+00019:  83  false
+00020:  83  return
+00021:  83  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:81 ---
+;; function object[5] getGrade
+;; function metadata object[5] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:87 ---
+loc   line  op
+----- ----  --
+main:
+00000:  88  this
+00001:  88  dup
+00002:  88  callprop "getBaseDataRef"
+00007:  88  swap
+00008:  88  notearg
+00009:  88  call 0
+00012:  88  getprop "grade"
+00017:  88  setlocal 0
+00020:  88  pop
+00021:  90  name "xs"
+00026:  90  dup
+00027:  90  callprop "assert"
+00032:  90  swap
+00033:  90  notearg
+00034:  90  getlocal 0
+00037:  90  notearg
+00038:  90  string "getGrade"
+00043:  90  notearg
+00044:  90  this
+00045:  90  getprop "name"
+00050:  90  notearg
+00051:  90  call 3
+00054:  90  pop
+00055:  92  name "xs"
+00060:  92  getprop "Utils"
+00065:  92  dup
+00066:  92  callprop "parseIntSafe"
+00071:  92  swap
+00072:  92  notearg
+00073:  92  getlocal 0
+00076:  92  notearg
+00077:  92  call 1
+00080:  92  return
+00081:  92  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:87 ---
+;; function object[6] getSortGrade
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:96 ---
+loc   line  op
+----- ----  --
+main:
+00000:  97  this
+00001:  97  dup
+00002:  97  callprop "getGrade"
+00007:  97  swap
+00008:  97  notearg
+00009:  97  call 0
+00012:  97  name "xs"
+00017:  97  getprop "Constant_Grade_Demon"
+00022:  97  eq
+00023:  97  ifeq 35 (+12)
+00028:  98  one
+00029:  98  return
+00030:  98  goto 50 (+20)
+00035: 101  this
+00036: 101  dup
+00037: 101  callprop "getGrade"
+00042: 101  swap
+00043: 101  notearg
+00044: 101  call 0
+00047: 101  one
+00048: 101  add
+00049: 101  return
+00050: 102  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:96 ---
+;; function object[7] getStyleId
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:106 ---
+loc   line  op
+----- ----  --
+main:
+00000: 107  name "xs"
+00005: 107  getprop "Utils"
+00010: 107  dup
+00011: 107  callprop "parseIntSafe"
+00016: 107  swap
+00017: 107  notearg
+00018: 107  this
+00019: 107  dup
+00020: 107  callprop "getBaseDataRef"
+00025: 107  swap
+00026: 107  notearg
+00027: 107  call 0
+00030: 107  getprop "style_id"
+00035: 107  notearg
+00036: 107  call 1
+00039: 107  return
+00040: 107  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:106 ---
+;; function object[8] getStyleDesc
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:111 ---
+loc   line  op
+----- ----  --
+main:
+00000: 112  this
+00001: 112  dup
+00002: 112  callprop "getBaseDataRef"
+00007: 112  swap
+00008: 112  notearg
+00009: 112  call 0
+00012: 112  getprop "style_desc"
+00017: 112  return
+00018: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:111 ---
+;; function object[9] getObrit
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:117 ---
+loc   line  op
+----- ----  --
+main:
+00000: 118  zero
+00001: 118  return
+00002: 118  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:117 ---
+;; function object[10] getStyleModel
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:121 ---
+loc   line  op
+----- ----  --
+main:
+00000: 122  this
+00001: 122  return
+00002: 122  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:121 ---
+;; function object[11] createHeadView
+;; function metadata object[11] nargs=1 bindings=1
+;; arg[0] viewCfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:129 ---
+loc   line  op
+----- ----  --
+main:
+00000: 131  this
+00001: 131  dup
+00002: 131  callprop "createIcon_Grade"
+00007: 131  swap
+00008: 131  notearg
+00009: 131  getarg 0
+00012: 131  notearg
+00013: 131  call 1
+00016: 131  return
+00017: 131  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:129 ---
+;; function object[12] createCardView
+;; function metadata object[12] nargs=1 bindings=1
+;; arg[0] viewCfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:138 ---
+loc   line  op
+----- ----  --
+main:
+00000: 140  this
+00001: 140  dup
+00002: 140  callprop "createCard_Grade"
+00007: 140  swap
+00008: 140  notearg
+00009: 140  getarg 0
+00012: 140  notearg
+00013: 140  call 1
+00016: 140  return
+00017: 140  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:138 ---
+;; function object[13] createCard_Grade
+;; function metadata object[13] nargs=1 bindings=1
+;; arg[0] viewCfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:145 ---
+loc   line  op
+----- ----  --
+main:
+00000: 147  this
+00001: 147  dup
+00002: 147  callprop "error"
+00007: 147  swap
+00008: 147  notearg
+00009: 147  string "need override createCard_Grade"
+00014: 147  notearg
+00015: 147  call 1
+00018: 147  pop
+00019: 148  null
+00020: 148  return
+00021: 148  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:145 ---
+;; function object[14] createIcon_Grade
+;; function metadata object[14] nargs=1 bindings=2
+;; arg[0] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:152 ---
+loc   line  op
+----- ----  --
+main:
+00000: 153  name "xs"
+00005: 153  getprop "Views"
+00010: 153  getprop "Icon"
+00015: 153  getprop "IconStyleA"
+00020: 153  dup
+00021: 153  callprop "create"
+00026: 153  swap
+00027: 153  notearg
+00028: 154  newinit 1
+00033: 155  true
+00034: 155  initprop "grade"
+00039: 155  endinit
+00040: 155  notearg
+00041: 157  getarg 0
+00044: 157  notearg
+00045: 157  call 2
+00048: 157  setlocal 0
+00051: 157  pop
+00052: 159  getlocal 0
+00055: 159  dup
+00056: 159  callprop "reloadData"
+00061: 159  swap
+00062: 159  notearg
+00063: 159  this
+00064: 159  notearg
+00065: 159  call 1
+00068: 159  pop
+00069: 160  getlocal 0
+00072: 160  return
+00073: 160  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:152 ---
+;; function object[15] createIcon_GradeAndLv
+;; function metadata object[15] nargs=1 bindings=2
+;; arg[0] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:163 ---
+loc   line  op
+----- ----  --
+main:
+00000: 164  name "xs"
+00005: 164  getprop "Views"
+00010: 164  getprop "Icon"
+00015: 164  getprop "IconStyleA"
+00020: 164  dup
+00021: 164  callprop "create"
+00026: 164  swap
+00027: 164  notearg
+00028: 165  newinit 1
+00033: 166  true
+00034: 166  initprop "grade"
+00039: 167  true
+00040: 167  initprop "lv"
+00045: 167  endinit
+00046: 167  notearg
+00047: 169  getarg 0
+00050: 169  notearg
+00051: 169  call 2
+00054: 169  setlocal 0
+00057: 169  pop
+00058: 171  getlocal 0
+00061: 171  dup
+00062: 171  callprop "reloadData"
+00067: 171  swap
+00068: 171  notearg
+00069: 171  this
+00070: 171  notearg
+00071: 171  call 1
+00074: 171  pop
+00075: 172  getlocal 0
+00078: 172  return
+00079: 172  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:163 ---
+;; function object[16] createIcon_GradeAndLvAndFate
+;; function metadata object[16] nargs=1 bindings=2
+;; arg[0] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:174 ---
+loc   line  op
+----- ----  --
+main:
+00000: 175  name "xs"
+00005: 175  getprop "Views"
+00010: 175  getprop "Icon"
+00015: 175  getprop "IconStyleA"
+00020: 175  dup
+00021: 175  callprop "create"
+00026: 175  swap
+00027: 175  notearg
+00028: 176  newinit 1
+00033: 177  true
+00034: 177  initprop "grade"
+00039: 178  true
+00040: 178  initprop "lv"
+00045: 179  true
+00046: 179  initprop "fate"
+00051: 179  endinit
+00052: 179  notearg
+00053: 181  getarg 0
+00056: 181  notearg
+00057: 181  call 2
+00060: 181  setlocal 0
+00063: 181  pop
+00064: 183  getlocal 0
+00067: 183  dup
+00068: 183  callprop "reloadData"
+00073: 183  swap
+00074: 183  notearg
+00075: 183  this
+00076: 183  notearg
+00077: 183  call 1
+00080: 183  pop
+00081: 184  getlocal 0
+00084: 184  return
+00085: 184  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:174 ---
+;; function object[17] createIcon_GradeAndLvAndName
+;; function metadata object[17] nargs=1 bindings=2
+;; arg[0] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:187 ---
+loc   line  op
+----- ----  --
+main:
+00000: 188  name "xs"
+00005: 188  getprop "Views"
+00010: 188  getprop "Icon"
+00015: 188  getprop "IconStyleA"
+00020: 188  dup
+00021: 188  callprop "create"
+00026: 188  swap
+00027: 188  notearg
+00028: 189  newinit 1
+00033: 190  true
+00034: 190  initprop "grade"
+00039: 191  true
+00040: 191  initprop "lv"
+00045: 193  true
+00046: 193  initprop "name"
+00051: 193  endinit
+00052: 193  notearg
+00053: 195  getarg 0
+00056: 195  notearg
+00057: 195  call 2
+00060: 195  setlocal 0
+00063: 195  pop
+00064: 197  getlocal 0
+00067: 197  dup
+00068: 197  callprop "reloadData"
+00073: 197  swap
+00074: 197  notearg
+00075: 197  this
+00076: 197  notearg
+00077: 197  call 1
+00080: 197  pop
+00081: 198  getlocal 0
+00084: 198  return
+00085: 198  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:187 ---
+;; function object[18] createIcon_GradeAndNameOrLv
+;; function metadata object[18] nargs=1 bindings=2
+;; arg[0] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:200 ---
+loc   line  op
+----- ----  --
+main:
+00000: 201  name "xs"
+00005: 201  getprop "Views"
+00010: 201  getprop "Icon"
+00015: 201  getprop "IconStyleA"
+00020: 201  dup
+00021: 201  callprop "create"
+00026: 201  swap
+00027: 201  notearg
+00028: 202  newinit 1
+00033: 203  true
+00034: 203  initprop "grade"
+00039: 204  true
+00040: 204  initprop "lv"
+00045: 206  true
+00046: 206  initprop "name"
+00051: 206  endinit
+00052: 206  notearg
+00053: 208  getarg 0
+00056: 208  notearg
+00057: 208  call 2
+00060: 208  setlocal 0
+00063: 208  pop
+00064: 210  getlocal 0
+00067: 210  dup
+00068: 210  callprop "reloadData"
+00073: 210  swap
+00074: 210  notearg
+00075: 210  this
+00076: 210  notearg
+00077: 210  call 1
+00080: 210  pop
+00081: 211  getlocal 0
+00084: 211  return
+00085: 211  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:200 ---
+;; function object[19] createIcon_GradeAndNum
+;; function metadata object[19] nargs=1 bindings=2
+;; arg[0] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:213 ---
+loc   line  op
+----- ----  --
+main:
+00000: 214  name "xs"
+00005: 214  getprop "Views"
+00010: 214  getprop "Icon"
+00015: 214  getprop "IconStyleA"
+00020: 214  dup
+00021: 214  callprop "create"
+00026: 214  swap
+00027: 214  notearg
+00028: 215  newinit 1
+00033: 216  true
+00034: 216  initprop "grade"
+00039: 217  true
+00040: 217  initprop "num"
+00045: 217  endinit
+00046: 217  notearg
+00047: 219  getarg 0
+00050: 219  notearg
+00051: 219  call 2
+00054: 219  setlocal 0
+00057: 219  pop
+00058: 221  getlocal 0
+00061: 221  dup
+00062: 221  callprop "reloadData"
+00067: 221  swap
+00068: 221  notearg
+00069: 221  this
+00070: 221  notearg
+00071: 221  call 1
+00074: 221  pop
+00075: 222  getlocal 0
+00078: 222  return
+00079: 222  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:213 ---
+;; function object[20] createIcon_GradeAndNumAndName
+;; function metadata object[20] nargs=1 bindings=2
+;; arg[0] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:225 ---
+loc   line  op
+----- ----  --
+main:
+00000: 226  name "xs"
+00005: 226  getprop "Views"
+00010: 226  getprop "Icon"
+00015: 226  getprop "IconStyleA"
+00020: 226  dup
+00021: 226  callprop "create"
+00026: 226  swap
+00027: 226  notearg
+00028: 227  newinit 1
+00033: 228  true
+00034: 228  initprop "grade"
+00039: 229  true
+00040: 229  initprop "num"
+00045: 230  true
+00046: 230  initprop "name"
+00051: 230  endinit
+00052: 230  notearg
+00053: 232  getarg 0
+00056: 232  notearg
+00057: 232  call 2
+00060: 232  setlocal 0
+00063: 232  pop
+00064: 234  getlocal 0
+00067: 234  dup
+00068: 234  callprop "reloadData"
+00073: 234  swap
+00074: 234  notearg
+00075: 234  this
+00076: 234  notearg
+00077: 234  call 1
+00080: 234  pop
+00081: 235  getlocal 0
+00084: 235  return
+00085: 235  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:225 ---
+;; function object[21] createIcon_GradeAndName
+;; function metadata object[21] nargs=1 bindings=2
+;; arg[0] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:240 ---
+loc   line  op
+----- ----  --
+main:
+00000: 241  name "xs"
+00005: 241  getprop "Views"
+00010: 241  getprop "Icon"
+00015: 241  getprop "IconStyleA"
+00020: 241  dup
+00021: 241  callprop "create"
+00026: 241  swap
+00027: 241  notearg
+00028: 242  newinit 1
+00033: 243  true
+00034: 243  initprop "grade"
+00039: 244  true
+00040: 244  initprop "name"
+00045: 244  endinit
+00046: 244  notearg
+00047: 246  getarg 0
+00050: 246  notearg
+00051: 246  call 2
+00054: 246  setlocal 0
+00057: 246  pop
+00058: 248  getlocal 0
+00061: 248  dup
+00062: 248  callprop "reloadData"
+00067: 248  swap
+00068: 248  notearg
+00069: 248  this
+00070: 248  notearg
+00071: 248  call 1
+00074: 248  pop
+00075: 249  getlocal 0
+00078: 249  return
+00079: 249  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:240 ---
+;; function object[22] createIcon_GradeAndName
+;; function metadata object[22] nargs=1 bindings=2
+;; arg[0] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:251 ---
+loc   line  op
+----- ----  --
+main:
+00000: 252  name "xs"
+00005: 252  getprop "Views"
+00010: 252  getprop "Icon"
+00015: 252  getprop "IconStyleA"
+00020: 252  dup
+00021: 252  callprop "create"
+00026: 252  swap
+00027: 252  notearg
+00028: 253  newinit 1
+00033: 254  true
+00034: 254  initprop "grade"
+00039: 255  true
+00040: 255  initprop "name"
+00045: 255  endinit
+00046: 255  notearg
+00047: 257  getarg 0
+00050: 257  notearg
+00051: 257  call 2
+00054: 257  setlocal 0
+00057: 257  pop
+00058: 259  getlocal 0
+00061: 259  dup
+00062: 259  callprop "reloadData"
+00067: 259  swap
+00068: 259  notearg
+00069: 259  this
+00070: 259  notearg
+00071: 259  call 1
+00074: 259  pop
+00075: 260  getlocal 0
+00078: 260  return
+00079: 260  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:251 ---
+;; function object[23] createIcon_GradeAndNameAndEqued
+;; function metadata object[23] nargs=1 bindings=2
+;; arg[0] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:263 ---
+loc   line  op
+----- ----  --
+main:
+00000: 265  name "xs"
+00005: 265  getprop "Views"
+00010: 265  getprop "Icon"
+00015: 265  getprop "IconStyleA"
+00020: 265  dup
+00021: 265  callprop "create"
+00026: 265  swap
+00027: 265  notearg
+00028: 266  newinit 1
+00033: 267  true
+00034: 267  initprop "grade"
+00039: 268  true
+00040: 268  initprop "equed"
+00045: 269  true
+00046: 269  initprop "name"
+00051: 269  endinit
+00052: 269  notearg
+00053: 271  getarg 0
+00056: 271  notearg
+00057: 271  call 2
+00060: 271  setlocal 0
+00063: 271  pop
+00064: 273  getlocal 0
+00067: 273  dup
+00068: 273  callprop "reloadData"
+00073: 273  swap
+00074: 273  notearg
+00075: 273  this
+00076: 273  notearg
+00077: 273  call 1
+00080: 273  pop
+00081: 274  getlocal 0
+00084: 274  return
+00085: 274  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:263 ---
+;; function object[24] loadJson
+;; function metadata object[24] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:280 ---
+loc   line  op
+----- ----  --
+main:
+00000: 282  this
+00001: 282  dup
+00002: 282  callprop "_super"
+00007: 282  swap
+00008: 282  notearg
+00009: 282  getarg 0
+00012: 282  notearg
+00013: 282  call 1
+00016: 282  pop
+00017: 285  this
+00018: 285  dup
+00019: 285  callprop "setPkId"
+00024: 285  swap
+00025: 285  notearg
+00026: 285  getarg 0
+00029: 285  getprop "pk_id"
+00034: 285  notearg
+00035: 285  call 1
+00038: 285  pop
+00039: 286  this
+00040: 286  dup
+00041: 286  callprop "setCardType"
+00046: 286  swap
+00047: 286  notearg
+00048: 286  getarg 0
+00051: 286  getprop "card_type"
+00056: 286  notearg
+00057: 286  call 1
+00060: 286  pop
+00061: 287  this
+00062: 287  dup
+00063: 287  callprop "setGetTime"
+00068: 287  swap
+00069: 287  notearg
+00070: 287  getarg 0
+00073: 287  getprop "get_time"
+00078: 287  or 85 (+7)
+00083: 287  pop
+00084: 287  zero
+00085: 287  notearg
+00086: 287  call 1
+00089: 287  pop
+00090: 288  this
+00091: 288  dup
+00092: 288  callprop "setLevel"
+00097: 288  swap
+00098: 288  notearg
+00099: 288  getarg 0
+00102: 288  getprop "level"
+00107: 288  notearg
+00108: 288  call 1
+00111: 288  pop
+00112: 289  this
+00113: 289  dup
+00114: 289  callprop "setExp"
+00119: 289  swap
+00120: 289  notearg
+00121: 289  getarg 0
+00124: 289  getprop "exp"
+00129: 289  notearg
+00130: 289  call 1
+00133: 289  pop
+00134: 291  name "xs"
+00139: 291  dup
+00140: 291  callprop "assert"
+00145: 291  swap
+00146: 291  notearg
+00147: 291  this
+00148: 291  getprop "pk_id"
+00153: 291  notearg
+00154: 291  string "data.pk_id"
+00159: 291  notearg
+00160: 291  getarg 0
+00163: 291  notearg
+00164: 291  this
+00165: 291  getprop "name"
+00170: 291  notearg
+00171: 291  call 4
+00174: 291  pop
+00175: 292  name "xs"
+00180: 292  dup
+00181: 292  callprop "assert"
+00186: 292  swap
+00187: 292  notearg
+00188: 292  this
+00189: 292  getprop "get_time"
+00194: 292  notearg
+00195: 292  string "data.get_time"
+00200: 292  notearg
+00201: 292  getarg 0
+00204: 292  notearg
+00205: 292  this
+00206: 292  getprop "name"
+00211: 292  notearg
+00212: 292  call 4
+00215: 292  pop
+00216: 293  name "xs"
+00221: 293  dup
+00222: 293  callprop "assert"
+00227: 293  swap
+00228: 293  notearg
+00229: 293  this
+00230: 293  getprop "level"
+00235: 293  notearg
+00236: 293  string "data.level"
+00241: 293  notearg
+00242: 293  getarg 0
+00245: 293  notearg
+00246: 293  newarray 1
+00250: 293  this
+00251: 293  getprop "name"
+00256: 293  initelem_array 0
+00260: 293  endinit
+00261: 293  notearg
+00262: 293  call 4
+00265: 293  pop
+00266: 293  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:280 ---
+;; function object[25] setExp
+;; function metadata object[25] nargs=1 bindings=1
+;; arg[0] exp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:296 ---
+loc   line  op
+----- ----  --
+main:
+00000: 297  this
+00001: 297  name "xs"
+00006: 297  getprop "Utils"
+00011: 297  dup
+00012: 297  callprop "parseIntSafe"
+00017: 297  swap
+00018: 297  notearg
+00019: 297  getarg 0
+00022: 297  notearg
+00023: 297  call 1
+00026: 297  setprop "exp"
+00031: 297  pop
+00032: 297  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:296 ---
+;; function object[26] getExp
+;; function metadata object[26] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:300 ---
+loc   line  op
+----- ----  --
+main:
+00000: 301  this
+00001: 301  getprop "exp"
+00006: 301  return
+00007: 301  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:300 ---
+;; function object[27] setPkId
+;; function metadata object[27] nargs=1 bindings=1
+;; arg[0] pkId
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:304 ---
+loc   line  op
+----- ----  --
+main:
+00000: 305  this
+00001: 305  getarg 0
+00004: 305  setprop "pk_id"
+00009: 305  pop
+00010: 305  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:304 ---
+;; function object[28] getPkId
+;; function metadata object[28] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:308 ---
+loc   line  op
+----- ----  --
+main:
+00000: 309  this
+00001: 309  getprop "pk_id"
+00006: 309  return
+00007: 309  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:308 ---
+;; function object[29] getCardType
+;; function metadata object[29] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:314 ---
+loc   line  op
+----- ----  --
+main:
+00000: 315  this
+00001: 315  getprop "card_type"
+00006: 315  return
+00007: 315  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:314 ---
+;; function object[30] setCardType
+;; function metadata object[30] nargs=1 bindings=1
+;; arg[0] card_type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:318 ---
+loc   line  op
+----- ----  --
+main:
+00000: 319  this
+00001: 319  getarg 0
+00004: 319  setprop "card_type"
+00009: 319  pop
+00010: 319  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:318 ---
+;; function object[31] getGetTime
+;; function metadata object[31] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:323 ---
+loc   line  op
+----- ----  --
+main:
+00000: 324  this
+00001: 324  getprop "get_time"
+00006: 324  return
+00007: 324  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:323 ---
+;; function object[32] setGetTime
+;; function metadata object[32] nargs=1 bindings=1
+;; arg[0] time
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:327 ---
+loc   line  op
+----- ----  --
+main:
+00000: 328  this
+00001: 328  getarg 0
+00004: 328  setprop "get_time"
+00009: 328  pop
+00010: 328  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:327 ---
+;; function object[33] setLevel
+;; function metadata object[33] nargs=1 bindings=2
+;; arg[0] level
+;; local[0] _level
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:332 ---
+loc   line  op
+----- ----  --
+main:
+00000: 334  name "xs"
+00005: 334  getprop "Utils"
+00010: 334  dup
+00011: 334  callprop "parseIntSafe"
+00016: 334  swap
+00017: 334  notearg
+00018: 334  getarg 0
+00021: 334  notearg
+00022: 334  call 1
+00025: 334  setlocal 0
+00028: 334  pop
+00029: 336  this
+00030: 336  getprop "level"
+00035: 336  getlocal 0
+00038: 336  strictne
+00039: 336  ifeq 67 (+28)
+00044: 338  this
+00045: 338  dup
+00046: 338  callprop "clearCache"
+00051: 338  swap
+00052: 338  notearg
+00053: 338  call 0
+00056: 338  pop
+00057: 339  this
+00058: 339  getlocal 0
+00061: 339  setprop "level"
+00066: 339  pop
+00067: 340  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:332 ---
+;; function object[34] getLevel
+;; function metadata object[34] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:343 ---
+loc   line  op
+----- ----  --
+main:
+00000: 344  this
+00001: 344  getprop "level"
+00006: 344  return
+00007: 344  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:343 ---
+;; function object[35] getSource
+;; function metadata object[35] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:349 ---
+loc   line  op
+----- ----  --
+main:
+00000: 350  this
+00001: 350  dup
+00002: 350  callprop "getBaseDataRef"
+00007: 350  swap
+00008: 350  notearg
+00009: 350  call 0
+00012: 350  getprop "source"
+00017: 350  return
+00018: 350  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:349 ---
+;; function object[36] clearResCache
+;; function metadata object[36] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:353 ---
+loc   line  op
+----- ----  --
+main:
+00000: 354  this
+00001: 354  null
+00002: 354  setprop "cacheResInfo"
+00007: 354  pop
+00008: 354  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:353 ---
+;; function object[37] getRes
+;; function metadata object[37] nargs=0 bindings=3
+;; local[0] _resId
+;; local[1] evolutionData
+;; local[2] evoResId
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:357 ---
+loc   line  op
+----- ----  --
+main:
+00000: 360  this
+00001: 360  getprop "cacheResInfo"
+00006: 360  null
+00007: 360  stricteq
+00008: 360  or 26 (+18)
+00013: 360  pop
+00014: 360  this
+00015: 360  getprop "cacheResInfo"
+00020: 360  name "undefined"
+00025: 360  stricteq
+00026: 360  ifeq 294 (+268)
+00031: 362  this
+00032: 362  dup
+00033: 362  callprop "getBaseDataRef"
+00038: 362  swap
+00039: 362  notearg
+00040: 362  call 0
+00043: 362  getprop "resource_id"
+00048: 362  setlocal 0
+00051: 362  pop
+00052: 363  this
+00053: 363  dup
+00054: 363  callprop "isAwaked"
+00059: 363  swap
+00060: 363  notearg
+00061: 363  call 0
+00064: 363  ifeq 186 (+122)
+00069: 366  name "xs"
+00074: 366  getprop "Profile"
+00079: 366  getprop "GameData"
+00084: 366  getprop "Mgr"
+00089: 366  dup
+00090: 366  callprop "getInstance"
+00095: 366  swap
+00096: 366  notearg
+00097: 366  call 0
+00100: 366  getprop "EvolutionInfos"
+00105: 366  dup
+00106: 366  callprop "getByGeneralId"
+00111: 366  swap
+00112: 366  notearg
+00113: 366  this
+00114: 366  dup
+00115: 366  callprop "getId"
+00120: 366  swap
+00121: 366  notearg
+00122: 366  call 0
+00125: 366  notearg
+00126: 366  call 1
+00129: 366  setlocal 1
+00132: 366  pop
+00133: 367  getlocal 1
+00136: 367  ifeq 186 (+50)
+00141: 370  getlocal 1
+00144: 370  getprop "cfgInfo"
+00149: 370  ifeq 186 (+37)
+00154: 373  getlocal 1
+00157: 373  getprop "cfgInfo"
+00162: 373  getprop "resource_id"
+00167: 373  setlocal 2
+00170: 373  pop
+00171: 374  getlocal 2
+00174: 374  ifeq 186 (+12)
+00179: 381  getlocal 2
+00182: 381  setlocal 0
+00185: 381  pop
+00186: 394  this
+00187: 394  dup
+00188: 394  callprop "assert"
+00193: 394  swap
+00194: 394  notearg
+00195: 394  getlocal 0
+00198: 394  notearg
+00199: 394  string "_resId error"
+00204: 394  notearg
+00205: 394  this
+00206: 394  notearg
+00207: 394  this
+00208: 394  dup
+00209: 394  callprop "getBaseDataRef"
+00214: 394  swap
+00215: 394  notearg
+00216: 394  call 0
+00219: 394  notearg
+00220: 394  call 4
+00223: 394  pop
+00224: 396  this
+00225: 396  dup
+00226: 396  callprop "assert"
+00231: 396  swap
+00232: 396  notearg
+00233: 396  this
+00234: 396  getprop "ResType"
+00239: 396  notearg
+00240: 396  string "need this.ResType"
+00245: 396  notearg
+00246: 396  call 2
+00249: 396  pop
+00250: 399  this
+00251: 399  name "xs"
+00256: 399  getprop "Models"
+00261: 399  getprop "Resource"
+00266: 399  dup
+00267: 399  callprop "createWithBase"
+00272: 399  swap
+00273: 399  notearg
+00274: 399  getlocal 0
+00277: 399  notearg
+00278: 399  this
+00279: 399  getprop "ResType"
+00284: 399  notearg
+00285: 399  call 2
+00288: 399  setprop "cacheResInfo"
+00293: 399  pop
+00294: 404  this
+00295: 404  getprop "cacheResInfo"
+00300: 404  return
+00301: 404  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:357 ---
+;; function object[38] getFightBase
+;; function metadata object[38] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:408 ---
+loc   line  op
+----- ----  --
+main:
+00000: 409  name "xs"
+00005: 409  getprop "Utils"
+00010: 409  dup
+00011: 409  callprop "parseFloatSafe"
+00016: 409  swap
+00017: 409  notearg
+00018: 409  this
+00019: 409  dup
+00020: 409  callprop "getBaseDataRef"
+00025: 409  swap
+00026: 409  notearg
+00027: 409  call 0
+00030: 409  getprop "fighting"
+00035: 409  notearg
+00036: 409  call 1
+00039: 409  return
+00040: 409  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:408 ---
+;; function object[39] getFightStep
+;; function metadata object[39] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:411 ---
+loc   line  op
+----- ----  --
+main:
+00000: 412  name "xs"
+00005: 412  getprop "Utils"
+00010: 412  dup
+00011: 412  callprop "parseFloatSafe"
+00016: 412  swap
+00017: 412  notearg
+00018: 412  this
+00019: 412  dup
+00020: 412  callprop "getBaseDataRef"
+00025: 412  swap
+00026: 412  notearg
+00027: 412  call 0
+00030: 412  getprop "fighting_step"
+00035: 412  notearg
+00036: 412  call 1
+00039: 412  return
+00040: 412  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:411 ---
+;; function object[40] getNextLevel
+;; function metadata object[40] nargs=0 bindings=2
+;; local[0] _nextLevel
+;; local[1] _maxLevel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:417 ---
+loc   line  op
+----- ----  --
+main:
+00000: 418  this
+00001: 418  dup
+00002: 418  callprop "getLevel"
+00007: 418  swap
+00008: 418  notearg
+00009: 418  call 0
+00012: 418  one
+00013: 418  add
+00014: 418  setlocal 0
+00017: 418  pop
+00018: 420  this
+00019: 420  dup
+00020: 420  callprop "getMaxLevel"
+00025: 420  swap
+00026: 420  notearg
+00027: 420  call 0
+00030: 420  setlocal 1
+00033: 420  pop
+00034: 422  getlocal 0
+00037: 422  getlocal 1
+00040: 422  ge
+00041: 422  ifeq 53 (+12)
+00046: 423  getlocal 1
+00049: 423  setlocal 0
+00052: 423  pop
+00053: 425  getlocal 0
+00056: 425  return
+00057: 425  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:417 ---
+;; function object[41] isMaxLv
+;; function metadata object[41] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:429 ---
+loc   line  op
+----- ----  --
+main:
+00000: 430  this
+00001: 430  dup
+00002: 430  callprop "getLevel"
+00007: 430  swap
+00008: 430  notearg
+00009: 430  call 0
+00012: 430  this
+00013: 430  dup
+00014: 430  callprop "getMaxLevel"
+00019: 430  swap
+00020: 430  notearg
+00021: 430  call 0
+00024: 430  ge
+00025: 430  ifeq 32 (+7)
+00030: 431  true
+00031: 431  return
+00032: 433  false
+00033: 433  return
+00034: 433  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:429 ---
+;; function object[42] getCurLevelExpPer
+;; function metadata object[42] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:438 ---
+loc   line  op
+----- ----  --
+main:
+00000: 439  name "Math"
+00005: 439  dup
+00006: 439  callprop "floor"
+00011: 439  swap
+00012: 439  notearg
+00013: 439  this
+00014: 439  dup
+00015: 439  callprop "getExp"
+00020: 439  swap
+00021: 439  notearg
+00022: 439  call 0
+00025: 439  this
+00026: 439  dup
+00027: 439  callprop "getUpgradeExpNeed"
+00032: 439  swap
+00033: 439  notearg
+00034: 439  call 0
+00037: 439  div
+00038: 439  int8 100
+00040: 439  mul
+00041: 439  notearg
+00042: 439  call 1
+00045: 439  return
+00046: 439  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:438 ---
+;; function object[43] createGradeSmallIcon
+;; function metadata object[43] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:445 ---
+loc   line  op
+----- ----  --
+main:
+00000: 446  name "xs"
+00005: 446  getprop "Tools"
+00010: 446  getprop "UI"
+00015: 446  dup
+00016: 446  callprop "createGradeSmallIcon"
+00021: 446  swap
+00022: 446  notearg
+00023: 446  this
+00024: 446  dup
+00025: 446  callprop "getGrade"
+00030: 446  swap
+00031: 446  notearg
+00032: 446  call 0
+00035: 446  notearg
+00036: 446  call 1
+00039: 446  return
+00040: 446  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:445 ---
+;; function object[44] createOrbitSmallIcon
+;; function metadata object[44] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:450 ---
+loc   line  op
+----- ----  --
+main:
+00000: 451  name "xs"
+00005: 451  getprop "Tools"
+00010: 451  getprop "UI"
+00015: 451  dup
+00016: 451  callprop "createOrbitSmallIcon"
+00021: 451  swap
+00022: 451  notearg
+00023: 451  this
+00024: 451  dup
+00025: 451  callprop "getObrit"
+00030: 451  swap
+00031: 451  notearg
+00032: 451  call 0
+00035: 451  notearg
+00036: 451  call 1
+00039: 451  return
+00040: 451  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:450 ---
+;; function object[45] createEffectTypeSmallIcon
+;; function metadata object[45] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:457 ---
+loc   line  op
+----- ----  --
+main:
+00000: 458  name "xs"
+00005: 458  getprop "Tools"
+00010: 458  getprop "UI"
+00015: 458  dup
+00016: 458  callprop "createEffectTypeSmallIcon"
+00021: 458  swap
+00022: 458  notearg
+00023: 458  this
+00024: 458  dup
+00025: 458  callprop "getEffectType"
+00030: 458  swap
+00031: 458  notearg
+00032: 458  call 0
+00035: 458  notearg
+00036: 458  call 1
+00039: 458  return
+00040: 458  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:457 ---
+;; function object[46] getTotalExp
+;; function metadata object[46] nargs=0 bindings=1
+;; local[0] total
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:464 ---
+loc   line  op
+----- ----  --
+main:
+00000: 465  this
+00001: 465  dup
+00002: 465  callprop "getLevel"
+00007: 465  swap
+00008: 465  notearg
+00009: 465  call 0
+00012: 465  one
+00013: 465  gt
+00014: 465  ifeq 68 (+54)
+00019: 467  this
+00020: 467  dup
+00021: 467  callprop "_getUpgradeExpCfgObj"
+00026: 467  swap
+00027: 467  notearg
+00028: 467  call 0
+00031: 467  dup
+00032: 467  callprop "getNumTotal"
+00037: 467  swap
+00038: 467  notearg
+00039: 467  call 0
+00042: 467  setlocal 0
+00045: 467  pop
+00046: 468  getlocal 0
+00049: 468  this
+00050: 468  dup
+00051: 468  callprop "getExp"
+00056: 468  swap
+00057: 468  notearg
+00058: 468  call 0
+00061: 468  add
+00062: 468  return
+00063: 468  goto 81 (+18)
+00068: 471  this
+00069: 471  dup
+00070: 471  callprop "getExp"
+00075: 471  swap
+00076: 471  notearg
+00077: 471  call 0
+00080: 471  return
+00081: 472  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:464 ---
+;; function object[47] getMaxLevel
+;; function metadata object[47] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:476 ---
+loc   line  op
+----- ----  --
+main:
+00000: 477  this
+00001: 477  dup
+00002: 477  callprop "_getUpgradeExpCfgObj"
+00007: 477  swap
+00008: 477  notearg
+00009: 477  call 0
+00012: 477  dup
+00013: 477  callprop "getMaxLevel"
+00018: 477  swap
+00019: 477  notearg
+00020: 477  call 0
+00023: 477  return
+00024: 477  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:476 ---
+;; function object[48] getUpgradeCoinNeed
+;; function metadata object[48] nargs=1 bindings=2
+;; arg[0] level
+;; local[0] _upgrade_coin_obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:481 ---
+loc   line  op
+----- ----  --
+main:
+00000: 482  this
+00001: 482  dup
+00002: 482  callprop "_getUpgradeCoinCfgObj"
+00007: 482  swap
+00008: 482  notearg
+00009: 482  null
+00010: 482  notearg
+00011: 482  getarg 0
+00014: 482  notearg
+00015: 482  call 2
+00018: 482  setlocal 0
+00021: 482  pop
+00022: 483  getlocal 0
+00025: 483  dup
+00026: 483  callprop "getNum"
+00031: 483  swap
+00032: 483  notearg
+00033: 483  call 0
+00036: 483  return
+00037: 483  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:481 ---
+;; function object[49] getUpgradeExpNeed
+;; function metadata object[49] nargs=1 bindings=2
+;; arg[0] level
+;; local[0] _upgrade_exp_obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:487 ---
+loc   line  op
+----- ----  --
+main:
+00000: 488  this
+00001: 488  dup
+00002: 488  callprop "_getUpgradeExpCfgObj"
+00007: 488  swap
+00008: 488  notearg
+00009: 488  null
+00010: 488  notearg
+00011: 488  getarg 0
+00014: 488  notearg
+00015: 488  call 2
+00018: 488  setlocal 0
+00021: 488  pop
+00022: 489  getlocal 0
+00025: 489  dup
+00026: 489  callprop "getNum"
+00031: 489  swap
+00032: 489  notearg
+00033: 489  call 0
+00036: 489  return
+00037: 489  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:487 ---
+;; function object[50] getEatedProExp
+;; function metadata object[50] nargs=1 bindings=3
+;; arg[0] level
+;; local[0] _eated_exp_obj
+;; local[1] itemId
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:493 ---
+loc   line  op
+----- ----  --
+main:
+00000: 494  null
+00001: 494  setlocal 0
+00004: 494  pop
+00005: 495  this
+00006: 495  dup
+00007: 495  callprop "getId"
+00012: 495  swap
+00013: 495  notearg
+00014: 495  call 0
+00017: 495  setlocal 1
+00020: 495  pop
+00021: 496  getlocal 1
+00024: 496  condswitch
+00025: 497  name "xs"
+00030: 497  getprop "Models"
+00035: 497  getprop "ItemID_JuanZhou_chuji"
+00040: 497  case 90 (+50)
+00045: 500  name "xs"
+00050: 500  getprop "Models"
+00055: 500  getprop "ItemID_JuanZhou_zhongji"
+00060: 500  case 133 (+73)
+00065: 504  name "xs"
+00070: 504  getprop "Models"
+00075: 504  getprop "ItemID_JuanZhou_gaoji"
+00080: 504  case 176 (+96)
+00085: 504  default 219 (+134)
+00090: 498  name "xs"
+00095: 498  getprop "Models"
+00100: 498  getprop "EatedExpUpgradeCfg"
+00105: 498  dup
+00106: 498  callprop "createWithBase"
+00111: 498  swap
+00112: 498  notearg
+00113: 498  string "chujijuanzhou_jinengshengji"
+00118: 498  notearg
+00119: 498  one
+00120: 498  notearg
+00121: 498  call 2
+00124: 498  setlocal 0
+00127: 498  pop
+00128: 499  goto 219 (+91)
+00133: 501  name "xs"
+00138: 501  getprop "Models"
+00143: 501  getprop "EatedExpUpgradeCfg"
+00148: 501  dup
+00149: 501  callprop "createWithBase"
+00154: 501  swap
+00155: 501  notearg
+00156: 501  string "zhongjijuanzhou_jinengshengji"
+00161: 501  notearg
+00162: 501  one
+00163: 501  notearg
+00164: 501  call 2
+00167: 501  setlocal 0
+00170: 501  pop
+00171: 503  goto 219 (+48)
+00176: 505  name "xs"
+00181: 505  getprop "Models"
+00186: 505  getprop "EatedExpUpgradeCfg"
+00191: 505  dup
+00192: 505  callprop "createWithBase"
+00197: 505  swap
+00198: 505  notearg
+00199: 505  string "gaojijuanzhou_jinengshengji"
+00204: 505  notearg
+00205: 505  one
+00206: 505  notearg
+00207: 505  call 2
+00210: 505  setlocal 0
+00213: 505  pop
+00214: 506  goto 219 (+5)
+00219: 508  getlocal 0
+00222: 508  null
+00223: 508  eq
+00224: 508  ifeq 251 (+27)
+00229: 509  this
+00230: 509  dup
+00231: 509  callprop "_getEatedExpCfgObj"
+00236: 509  swap
+00237: 509  notearg
+00238: 509  null
+00239: 509  notearg
+00240: 509  getarg 0
+00243: 509  notearg
+00244: 509  call 2
+00247: 509  setlocal 0
+00250: 509  pop
+00251: 510  getlocal 0
+00254: 510  dup
+00255: 510  callprop "getNum"
+00260: 510  swap
+00261: 510  notearg
+00262: 510  call 0
+00265: 510  return
+00266: 510  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:493 ---
+;; function object[51] getPrice
+;; function metadata object[51] nargs=1 bindings=2
+;; arg[0] level
+;; local[0] _sell_cfg_obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:514 ---
+loc   line  op
+----- ----  --
+main:
+00000: 515  this
+00001: 515  dup
+00002: 515  callprop "_getSellCfgObj"
+00007: 515  swap
+00008: 515  notearg
+00009: 515  null
+00010: 515  notearg
+00011: 515  getarg 0
+00014: 515  notearg
+00015: 515  call 2
+00018: 515  setlocal 0
+00021: 515  pop
+00022: 516  getlocal 0
+00025: 516  dup
+00026: 516  callprop "getNum"
+00031: 516  swap
+00032: 516  notearg
+00033: 516  call 0
+00036: 516  return
+00037: 516  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:514 ---
+;; function object[52] _getUpgradeExpCfgObj
+;; function metadata object[52] nargs=2 bindings=5
+;; arg[0] tag
+;; arg[1] level
+;; local[0] _tag
+;; local[1] _level
+;; local[2] _upgrade_exp_obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:520 ---
+loc   line  op
+----- ----  --
+main:
+00000: 521  getarg 0
+00003: 521  or 14 (+11)
+00008: 521  pop
+00009: 521  string "upgrade_exp_type"
+00014: 521  setlocal 0
+00017: 521  pop
+00018: 522  getarg 1
+00021: 522  or 39 (+18)
+00026: 522  pop
+00027: 522  this
+00028: 522  dup
+00029: 522  callprop "getLevel"
+00034: 522  swap
+00035: 522  notearg
+00036: 522  call 0
+00039: 522  setlocal 1
+00042: 522  pop
+00043: 523  name "xs"
+00048: 523  getprop "Models"
+00053: 523  getprop "UpgradeExpCfg"
+00058: 523  dup
+00059: 523  callprop "createWithBase"
+00064: 523  swap
+00065: 523  notearg
+00066: 523  this
+00067: 523  dup
+00068: 523  callprop "getBaseDataRef"
+00073: 523  swap
+00074: 523  notearg
+00075: 523  call 0
+00078: 523  getlocal 0
+00081: 523  getelem
+00082: 523  notearg
+00083: 523  getlocal 1
+00086: 523  notearg
+00087: 523  call 2
+00090: 523  setlocal 2
+00093: 523  pop
+00094: 524  getlocal 2
+00097: 524  return
+00098: 524  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:520 ---
+;; function object[53] _getEatedExpCfgObj
+;; function metadata object[53] nargs=2 bindings=5
+;; arg[0] tag
+;; arg[1] level
+;; local[0] _tag
+;; local[1] _level
+;; local[2] _eated_exp_obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:528 ---
+loc   line  op
+----- ----  --
+main:
+00000: 529  getarg 0
+00003: 529  or 14 (+11)
+00008: 529  pop
+00009: 529  string "eated_exp_type"
+00014: 529  setlocal 0
+00017: 529  pop
+00018: 530  getarg 1
+00021: 530  or 39 (+18)
+00026: 530  pop
+00027: 530  this
+00028: 530  dup
+00029: 530  callprop "getLevel"
+00034: 530  swap
+00035: 530  notearg
+00036: 530  call 0
+00039: 530  setlocal 1
+00042: 530  pop
+00043: 532  name "xs"
+00048: 532  getprop "Models"
+00053: 532  getprop "EatedExpUpgradeCfg"
+00058: 532  dup
+00059: 532  callprop "createWithBase"
+00064: 532  swap
+00065: 532  notearg
+00066: 532  this
+00067: 532  dup
+00068: 532  callprop "getBaseDataRef"
+00073: 532  swap
+00074: 532  notearg
+00075: 532  call 0
+00078: 532  getlocal 0
+00081: 532  getelem
+00082: 532  notearg
+00083: 532  getlocal 1
+00086: 532  notearg
+00087: 532  call 2
+00090: 532  setlocal 2
+00093: 532  pop
+00094: 533  getlocal 2
+00097: 533  return
+00098: 533  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:528 ---
+;; function object[54] _getSellCfgObj
+;; function metadata object[54] nargs=2 bindings=5
+;; arg[0] tag
+;; arg[1] level
+;; local[0] _tag
+;; local[1] _level
+;; local[2] _sell_obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:537 ---
+loc   line  op
+----- ----  --
+main:
+00000: 538  getarg 0
+00003: 538  or 14 (+11)
+00008: 538  pop
+00009: 538  string "sell_type"
+00014: 538  setlocal 0
+00017: 538  pop
+00018: 539  getarg 1
+00021: 539  or 39 (+18)
+00026: 539  pop
+00027: 539  this
+00028: 539  dup
+00029: 539  callprop "getLevel"
+00034: 539  swap
+00035: 539  notearg
+00036: 539  call 0
+00039: 539  setlocal 1
+00042: 539  pop
+00043: 541  name "xs"
+00048: 541  getprop "Models"
+00053: 541  getprop "SellCfg"
+00058: 541  dup
+00059: 541  callprop "createWithBase"
+00064: 541  swap
+00065: 541  notearg
+00066: 541  this
+00067: 541  dup
+00068: 541  callprop "getBaseDataRef"
+00073: 541  swap
+00074: 541  notearg
+00075: 541  call 0
+00078: 541  getlocal 0
+00081: 541  getelem
+00082: 541  notearg
+00083: 541  getlocal 1
+00086: 541  notearg
+00087: 541  call 2
+00090: 541  setlocal 2
+00093: 541  pop
+00094: 542  getlocal 2
+00097: 542  return
+00098: 542  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:537 ---
+;; function object[55] _getUpgradeCoinCfgObj
+;; function metadata object[55] nargs=2 bindings=5
+;; arg[0] tag
+;; arg[1] level
+;; local[0] _tag
+;; local[1] _level
+;; local[2] _upgrade_coin_obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:546 ---
+loc   line  op
+----- ----  --
+main:
+00000: 547  getarg 0
+00003: 547  or 14 (+11)
+00008: 547  pop
+00009: 547  string "upgrade_coin_type"
+00014: 547  setlocal 0
+00017: 547  pop
+00018: 548  getarg 1
+00021: 548  or 39 (+18)
+00026: 548  pop
+00027: 548  this
+00028: 548  dup
+00029: 548  callprop "getLevel"
+00034: 548  swap
+00035: 548  notearg
+00036: 548  call 0
+00039: 548  setlocal 1
+00042: 548  pop
+00043: 550  name "xs"
+00048: 550  getprop "Models"
+00053: 550  getprop "UpgradeCoinCfg"
+00058: 550  dup
+00059: 550  callprop "createWithBase"
+00064: 550  swap
+00065: 550  notearg
+00066: 550  this
+00067: 550  dup
+00068: 550  callprop "getBaseDataRef"
+00073: 550  swap
+00074: 550  notearg
+00075: 550  call 0
+00078: 550  getlocal 0
+00081: 550  getelem
+00082: 550  notearg
+00083: 550  getlocal 1
+00086: 550  notearg
+00087: 550  call 2
+00090: 550  setlocal 2
+00093: 550  pop
+00094: 551  getlocal 2
+00097: 551  return
+00098: 551  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:546 ---
+;; function object[56] isAwaked
+;; function metadata object[56] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:552 ---
+loc   line  op
+----- ----  --
+main:
+00000: 554  name "xs"
+00005: 554  getprop "Profile"
+00010: 554  getprop "GameData"
+00015: 554  getprop "Mgr"
+00020: 554  dup
+00021: 554  callprop "getInstance"
+00026: 554  swap
+00027: 554  notearg
+00028: 554  call 0
+00031: 554  getprop "EvolutionInfos"
+00036: 554  dup
+00037: 554  callprop "checkAwakedByGeneralId"
+00042: 554  swap
+00043: 554  notearg
+00044: 554  this
+00045: 554  dup
+00046: 554  callprop "getId"
+00051: 554  swap
+00052: 554  notearg
+00053: 554  call 0
+00056: 554  notearg
+00057: 554  call 1
+00060: 554  return
+00061: 554  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:552 ---
+;; function object[57] print
+;; function metadata object[57] nargs=0 bindings=1
+;; local[0] item
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=31 length=52 stackDepth=1 target=83
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:560 ---
+loc   line  op
+----- ----  --
+main:
+00000: 561  name "xs"
+00005: 561  dup
+00006: 561  callprop "log"
+00011: 561  swap
+00012: 561  notearg
+00013: 561  string "{"
+00018: 561  notearg
+00019: 561  call 1
+00022: 561  pop
+00023: 562  this
+00024: 562  iter 1
+00026: 562  goto 76 (+50)
+00031: 562  loophead
+00032: 562  iternext
+00033: 562  setlocal 0
+00036: 562  pop
+00037: 563  name "xs"
+00042: 563  dup
+00043: 563  callprop "log"
+00048: 563  swap
+00049: 563  notearg
+00050: 563  string "    "
+00055: 563  getlocal 0
+00058: 563  add
+00059: 563  string " = "
+00064: 563  add
+00065: 563  this
+00066: 563  getlocal 0
+00069: 563  getelem
+00070: 563  add
+00071: 563  notearg
+00072: 563  call 1
+00075: 563  pop
+00076: 563  loopentry
+00077: 563  moreiter
+00078: 563  ifne 31 (-47)
+00083: 563  enditer
+00084: 565  name "xs"
+00089: 565  dup
+00090: 565  callprop "log"
+00095: 565  swap
+00096: 565  notearg
+00097: 565  string "}"
+00102: 565  notearg
+00103: 565  call 1
+00106: 565  pop
+00107: 565  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Card.js:560 ---

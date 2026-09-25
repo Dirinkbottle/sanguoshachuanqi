@@ -1,0 +1,285 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SpeakerView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=99 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Views"
+00010:   9  name "cc"
+00015:   9  getprop "Node"
+00020:   9  dup
+00021:   9  callprop "extend"
+00026:   9  swap
+00027:   9  notearg
+00028:   9  newinit 1
+00033:  10  lambda (function () {
+    [sourceless code]
+})
+00038:  10  initprop "ctor"
+00043:  14  lambda (function () {
+    [sourceless code]
+})
+00048:  14  initprop "init"
+00053:  32  lambda (function () {
+    [sourceless code]
+})
+00058:  32  initprop "say"
+00063:  37  lambda (function () {
+    [sourceless code]
+})
+00068:  37  initprop "setDirector"
+00073:  37  endinit
+00074:  37  notearg
+00075:  37  call 1
+00078:  37  setprop "SpeakerView"
+00083:  37  popv
+00084:  44  name "xs"
+00089:  44  getprop "Views"
+00094:  44  getprop "SpeakerView"
+00099:  44  lambda (function () {
+    [sourceless code]
+})
+00104:  44  setprop "create"
+00109:  44  popv
+00110:  53  name "xs"
+00115:  53  getprop "Views"
+00120:  53  getprop "SpeakerView"
+00125:  53  newinit 1
+00130:  54  newarray 1
+00134:  55  newinit 1
+00139:  55  string "m_speakLab"
+00144:  55  initprop "name"
+00149:  55  int8 10
+00151:  55  initprop "tag"
+00156:  55  string "ls"
+00161:  55  initprop "type"
+00166:  55  string "LS_mainUI3"
+00171:  55  initprop "id"
+00176:  55  endinit
+00177:  55  initelem_array 0
+00181:  55  endinit
+00182:  55  initprop "ccbCfg"
+00187:  55  endinit
+00188:  55  setprop "cfg"
+00193:  55  popv
+00194:  57  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  pop
+00013:  12  name "cc"
+00018:  12  dup
+00019:  12  callprop "associateWithNative"
+00024:  12  swap
+00025:  12  notearg
+00026:  12  this
+00027:  12  notearg
+00028:  12  name "cc"
+00033:  12  getprop "Node"
+00038:  12  notearg
+00039:  12  call 2
+00042:  12  pop
+00043:  12  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:10 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  this
+00001:  15  dup
+00002:  15  callprop "_super"
+00007:  15  swap
+00008:  15  notearg
+00009:  15  call 0
+00012:  15  not
+00013:  15  ifeq 20 (+7)
+00018:  16  false
+00019:  16  return
+00020:  19  this
+00021:  19  null
+00022:  19  setprop "m_ccbNode"
+00027:  19  pop
+00028:  20  this
+00029:  20  null
+00030:  20  setprop "m_speakLab"
+00035:  20  pop
+00036:  22  this
+00037:  22  name "xs"
+00042:  22  getprop "ccb_reader"
+00047:  22  dup
+00048:  22  callprop "load"
+00053:  22  swap
+00054:  22  notearg
+00055:  22  name "xs"
+00060:  22  getprop "Cfg"
+00065:  22  getprop "CCBI"
+00070:  22  getprop "Speaker"
+00075:  22  notearg
+00076:  22  this
+00077:  22  notearg
+00078:  22  call 2
+00081:  22  setprop "m_ccbNode"
+00086:  22  pop
+00087:  23  name "xs"
+00092:  23  getprop "Utils"
+00097:  23  getprop "Node"
+00102:  23  dup
+00103:  23  callprop "attachNodes"
+00108:  23  swap
+00109:  23  notearg
+00110:  23  this
+00111:  23  notearg
+00112:  23  this
+00113:  23  getprop "m_ccbNode"
+00118:  23  notearg
+00119:  23  call 2
+00122:  23  pop
+00123:  25  this
+00124:  25  this
+00125:  25  getprop "m_ccbNode"
+00130:  25  dup
+00131:  25  callprop "getChildByTag"
+00136:  25  swap
+00137:  25  notearg
+00138:  25  int8 11
+00140:  25  notearg
+00141:  25  call 1
+00144:  25  setprop "m_bg"
+00149:  25  pop
+00150:  27  name "xs"
+00155:  27  getprop "Utils"
+00160:  27  getprop "UI"
+00165:  27  dup
+00166:  27  callprop "replaceCcbByCfg"
+00171:  27  swap
+00172:  27  notearg
+00173:  27  this
+00174:  27  getprop "m_ccbNode"
+00179:  27  notearg
+00180:  27  name "xs"
+00185:  27  getprop "Views"
+00190:  27  getprop "SpeakerView"
+00195:  27  getprop "cfg"
+00200:  27  getprop "ccbCfg"
+00205:  27  notearg
+00206:  27  this
+00207:  27  notearg
+00208:  27  call 3
+00211:  27  pop
+00212:  29  true
+00213:  29  return
+00214:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:14 ---
+;; function object[2] say
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] words
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  33  this
+00001:  33  getprop "m_speakLab"
+00006:  33  dup
+00007:  33  callprop "setString"
+00012:  33  swap
+00013:  33  notearg
+00014:  33  getarg 0
+00017:  33  notearg
+00018:  33  call 1
+00021:  33  pop
+00022:  33  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:32 ---
+;; function object[3] setDirector
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] bLeftToRight
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  getarg 0
+00003:  38  not
+00004:  38  ifeq 31 (+27)
+00009:  39  this
+00010:  39  getprop "m_bg"
+00015:  39  dup
+00016:  39  callprop "setRotationY"
+00021:  39  swap
+00022:  39  notearg
+00023:  39  uint16 180
+00026:  39  notearg
+00027:  39  call 1
+00030:  39  pop
+00031:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:37 ---
+;; function object[4] create
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  name "xs"
+00005:  45  getprop "Views"
+00010:  45  getprop "SpeakerView"
+00015:  45  undefined
+00016:  45  notearg
+00017:  45  new 0
+00020:  45  setlocal 0
+00023:  45  pop
+00024:  46  getlocal 0
+00027:  46  and 47 (+20)
+00032:  46  pop
+00033:  46  getlocal 0
+00036:  46  dup
+00037:  46  callprop "init"
+00042:  46  swap
+00043:  46  notearg
+00044:  46  call 0
+00047:  46  ifeq 56 (+9)
+00052:  47  getlocal 0
+00055:  47  return
+00056:  49  name "xs"
+00061:  49  dup
+00062:  49  callprop "warn"
+00067:  49  swap
+00068:  49  notearg
+00069:  49  string "xs.Views.SpeakerView.create error!"
+00074:  49  notearg
+00075:  49  call 1
+00078:  49  pop
+00079:  50  null
+00080:  50  return
+00081:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SpeakerView.js:44 ---

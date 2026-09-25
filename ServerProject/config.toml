@@ -1,0 +1,36 @@
+# Bind to loopback; Android reaches it via adb reverse tcp:18723 tcp:18723.
+listen = "127.0.0.1:18723"
+public_host = "127.0.0.1:18723"
+database = "data/accounts.sqlite3"
+servers = "servers.json"
+guest_enabled = false
+session_ttl_seconds = 86400
+
+# First-time-player grants used by this reconstruction.
+#
+# These are LOCAL DESIGN VALUES, not recovered original server rules: the closed
+# service's recruit pool, drop tables and starter grants cannot be observed from
+# the client. Each id below is checked against the shipped plan tables at test
+# time (see tests::tutorial_ids_exist_in_shipped_config).
+#
+#   recruit_general_id  121018 131006 141007 121013 are the four the client
+#                       itself offers at step 10000 (FreshmanChooseGeneralId);
+#                       100000 is used here as the first recruit result.
+#   gift_item_id        410001, sgs_item.js item_type = "1" (gift).
+#   equipment_id        200000, sgs_equipments.js entry.
+[tutorial]
+recruit_general_id = "100000"
+gift_item_id = "410001"
+equipment_id = "200000"
+gift_coin = 1000
+
+# 请求/响应日志。
+#
+#   off      不打请求日志
+#   summary  每个请求一行：时间、请求号、状态码、result、error_code、耗时
+#   full     额外打出脱敏后的请求 data / body 与响应体（各截断 2000 字符）
+#
+# 无论哪个级别都会把 password / token / user_auth / sessionId 等键替换成 ***，
+# 见 src/logging.rs 的 SENSITIVE_KEYS。
+[log]
+level = "summary"

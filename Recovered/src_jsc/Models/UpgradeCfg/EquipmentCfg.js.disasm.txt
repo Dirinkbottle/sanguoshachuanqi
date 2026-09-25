@@ -1,0 +1,405 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/UpgradeCfg/EquipmentCfg.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=63 object[0]
+;; FUNCTION-MAP kind=lambda offset=73 object[1]
+;; FUNCTION-MAP kind=lambda offset=83 object[2]
+;; FUNCTION-MAP kind=lambda offset=93 object[3]
+;; FUNCTION-MAP kind=lambda offset=103 object[4]
+;; FUNCTION-MAP kind=lambda offset=113 object[5]
+;; FUNCTION-MAP kind=lambda offset=149 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Models"
+00010:   8  name "xs"
+00015:   8  getprop "Models"
+00020:   8  getprop "BaseUpgradeCfg"
+00025:   8  dup
+00026:   8  callprop "extend"
+00031:   8  swap
+00032:   8  notearg
+00033:   8  newinit 1
+00038:  10  name "xs"
+00043:  10  getprop "Constant_CfgDataType_Equipment_Upgrade"
+00048:  10  initprop "CfgDataType"
+00053:  12  string "EquipmentCfg"
+00058:  12  initprop "name"
+00063:  15  lambda (function () {
+    [sourceless code]
+})
+00068:  15  initprop "init"
+00073:  28  lambda (function () {
+    [sourceless code]
+})
+00078:  28  initprop "readBaseData"
+00083:  37  lambda (function () {
+    [sourceless code]
+})
+00088:  37  initprop "setType"
+00093:  41  lambda (function () {
+    [sourceless code]
+})
+00098:  41  initprop "getTypeDataRef"
+00103:  49  lambda (function () {
+    [sourceless code]
+})
+00108:  49  initprop "getLevelDataRef"
+00113:  76  lambda (function () {
+    [sourceless code]
+})
+00118:  76  initprop "getMaxLevel"
+00123:  76  endinit
+00124:  76  notearg
+00125:  76  call 1
+00128:  76  setprop "EquipmentCfg"
+00133:  76  popv
+00134:  84  name "xs"
+00139:  84  getprop "Models"
+00144:  84  getprop "EquipmentCfg"
+00149:  84  lambda (function () {
+    [sourceless code]
+})
+00154:  84  setprop "createWithBase"
+00159:  84  popv
+00160:  93  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] caches
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  dup
+00002:  17  callprop "_super"
+00007:  17  swap
+00008:  17  notearg
+00009:  17  call 0
+00012:  17  pop
+00013:  19  newarray 1
+00017:  20  string "typeDataRef"
+00022:  20  initelem_array 0
+00026:  20  endinit
+00027:  20  setlocal 0
+00030:  20  pop
+00031:  23  this
+00032:  23  dup
+00033:  23  callprop "registerCaches"
+00038:  23  swap
+00039:  23  notearg
+00040:  23  getlocal 0
+00043:  23  notearg
+00044:  23  call 1
+00047:  23  pop
+00048:  25  true
+00049:  25  return
+00050:  25  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:15 ---
+;; function object[1] readBaseData
+;; function metadata object[1] nargs=3 bindings=3
+;; arg[0] grade
+;; arg[1] type
+;; arg[2] level
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  name "xs"
+00005:  30  dup
+00006:  30  callprop "assert"
+00011:  30  swap
+00012:  30  notearg
+00013:  30  this
+00014:  30  getprop "CfgDataType"
+00019:  30  notearg
+00020:  30  string "need override CfgDataType"
+00025:  30  notearg
+00026:  30  this
+00027:  30  getprop "name"
+00032:  30  notearg
+00033:  30  call 3
+00036:  30  pop
+00037:  32  this
+00038:  32  dup
+00039:  32  callprop "setType"
+00044:  32  swap
+00045:  32  notearg
+00046:  32  getarg 1
+00049:  32  notearg
+00050:  32  call 1
+00053:  32  pop
+00054:  33  this
+00055:  33  dup
+00056:  33  callprop "setGrade"
+00061:  33  swap
+00062:  33  notearg
+00063:  33  getarg 0
+00066:  33  notearg
+00067:  33  call 1
+00070:  33  pop
+00071:  34  this
+00072:  34  dup
+00073:  34  callprop "setLevel"
+00078:  34  swap
+00079:  34  notearg
+00080:  34  getarg 2
+00083:  34  notearg
+00084:  34  call 1
+00087:  34  pop
+00088:  34  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:28 ---
+;; function object[2] setType
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  this
+00001:  38  getarg 0
+00004:  38  setprop "type"
+00009:  38  pop
+00010:  38  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:37 ---
+;; function object[3] getTypeDataRef
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  42  this
+00001:  42  getprop "typeDataRef"
+00006:  42  not
+00007:  42  ifeq 38 (+31)
+00012:  43  this
+00013:  43  this
+00014:  43  dup
+00015:  43  callprop "getGradeDataRef"
+00020:  43  swap
+00021:  43  notearg
+00022:  43  call 0
+00025:  43  this
+00026:  43  getprop "type"
+00031:  43  getelem
+00032:  43  setprop "typeDataRef"
+00037:  43  pop
+00038:  45  this
+00039:  45  getprop "typeDataRef"
+00044:  45  return
+00045:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:41 ---
+;; function object[4] getLevelDataRef
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] _idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  52  this
+00001:  52  getprop "levelDataRef"
+00006:  52  not
+00007:  52  ifeq 149 (+142)
+00012:  54  this
+00013:  54  dup
+00014:  54  callprop "getLevel"
+00019:  54  swap
+00020:  54  notearg
+00021:  54  call 0
+00024:  54  one
+00025:  54  sub
+00026:  54  setlocal 0
+00029:  54  pop
+00030:  56  getlocal 0
+00033:  56  this
+00034:  56  dup
+00035:  56  callprop "getTypeDataRef"
+00040:  56  swap
+00041:  56  notearg
+00042:  56  call 0
+00045:  56  length "length"
+00050:  56  ge
+00051:  56  ifeq 126 (+75)
+00056:  57  this
+00057:  57  dup
+00058:  57  callprop "getTypeDataRef"
+00063:  57  swap
+00064:  57  notearg
+00065:  57  call 0
+00068:  57  length "length"
+00073:  57  one
+00074:  57  sub
+00075:  57  setlocal 0
+00078:  57  pop
+00079:  58  this
+00080:  58  dup
+00081:  58  callprop "warn"
+00086:  58  swap
+00087:  58  notearg
+00088:  58  string "_idx overflow:"
+00093:  58  getlocal 0
+00096:  58  add
+00097:  58  string " in "
+00102:  58  add
+00103:  58  this
+00104:  58  dup
+00105:  58  callprop "getTypeDataRef"
+00110:  58  swap
+00111:  58  notearg
+00112:  58  call 0
+00115:  58  length "length"
+00120:  58  add
+00121:  58  notearg
+00122:  58  call 1
+00125:  58  pop
+00126:  61  this
+00127:  61  this
+00128:  61  dup
+00129:  61  callprop "getTypeDataRef"
+00134:  61  swap
+00135:  61  notearg
+00136:  61  call 0
+00139:  61  getlocal 0
+00142:  61  getelem
+00143:  61  setprop "levelDataRef"
+00148:  61  pop
+00149:  64  this
+00150:  64  dup
+00151:  64  callprop "assert"
+00156:  64  swap
+00157:  64  notearg
+00158:  64  this
+00159:  64  getprop "levelDataRef"
+00164:  64  notearg
+00165:  64  string "need levelDataRef"
+00170:  64  notearg
+00171:  64  this
+00172:  64  dup
+00173:  64  callprop "getTypeDataRef"
+00178:  64  swap
+00179:  64  notearg
+00180:  64  call 0
+00183:  64  notearg
+00184:  64  this
+00185:  64  dup
+00186:  64  callprop "getLevel"
+00191:  64  swap
+00192:  64  notearg
+00193:  64  call 0
+00196:  64  notearg
+00197:  64  call 4
+00200:  64  pop
+00201:  66  this
+00202:  66  getprop "levelDataRef"
+00207:  66  return
+00208:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:49 ---
+;; function object[5] getMaxLevel
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:76 ---
+loc   line  op
+----- ----  --
+main:
+00000:  78  name "xs"
+00005:  78  getprop "Utils"
+00010:  78  dup
+00011:  78  callprop "parseIntSafe"
+00016:  78  swap
+00017:  78  notearg
+00018:  78  this
+00019:  78  dup
+00020:  78  callprop "getTypeDataRef"
+00025:  78  swap
+00026:  78  notearg
+00027:  78  call 0
+00030:  78  length "length"
+00035:  78  notearg
+00036:  78  call 1
+00039:  78  return
+00040:  78  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:76 ---
+;; function object[6] createWithBase
+;; function metadata object[6] nargs=3 bindings=4
+;; arg[0] grade
+;; arg[1] type
+;; arg[2] level
+;; local[0] cfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:84 ---
+loc   line  op
+----- ----  --
+main:
+00000:  85  name "xs"
+00005:  85  dup
+00006:  85  callprop "error"
+00011:  85  swap
+00012:  85  notearg
+00013:  85  string "xs.Models.EquipmentCfg.createWithBase this file will remove"
+00018:  85  notearg
+00019:  85  call 1
+00022:  85  pop
+00023:  86  name "xs"
+00028:  86  getprop "Models"
+00033:  86  getprop "EquipmentCfg"
+00038:  86  undefined
+00039:  86  notearg
+00040:  86  new 0
+00043:  86  setlocal 0
+00046:  86  pop
+00047:  87  getlocal 0
+00050:  87  and 70 (+20)
+00055:  87  pop
+00056:  87  getlocal 0
+00059:  87  dup
+00060:  87  callprop "init"
+00065:  87  swap
+00066:  87  notearg
+00067:  87  call 0
+00070:  87  ifeq 106 (+36)
+00075:  88  getlocal 0
+00078:  88  dup
+00079:  88  callprop "readBaseData"
+00084:  88  swap
+00085:  88  notearg
+00086:  88  getarg 0
+00089:  88  notearg
+00090:  88  getarg 1
+00093:  88  notearg
+00094:  88  getarg 2
+00097:  88  notearg
+00098:  88  call 3
+00101:  88  pop
+00102:  89  getlocal 0
+00105:  89  return
+00106:  91  name "xs"
+00111:  91  dup
+00112:  91  callprop "error"
+00117:  91  swap
+00118:  91  notearg
+00119:  91  string "xs.Models.EquipmentCfg.createWithBase"
+00124:  91  notearg
+00125:  91  call 1
+00128:  91  pop
+00129:  92  null
+00130:  92  return
+00131:  92  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/EquipmentCfg.js:84 ---

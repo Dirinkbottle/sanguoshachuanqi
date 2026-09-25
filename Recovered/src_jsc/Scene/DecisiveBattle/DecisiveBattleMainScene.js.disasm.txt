@@ -1,0 +1,430 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=109 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Scene"
+00010:   4  name "cc"
+00015:   4  getprop "Scene"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  string "xs.Scene.DecisiveBattleMainScene"
+00038:   5  initprop "name"
+00043:   6  lambda (function () {
+    [sourceless code]
+})
+00048:   6  initprop "ctor"
+00053:  10  lambda (function () {
+    [sourceless code]
+})
+00058:  10  initprop "init"
+00063:  48  lambda (function () {
+    [sourceless code]
+})
+00068:  48  initprop "onEnter"
+00073:  51  lambda (function () {
+    [sourceless code]
+})
+00078:  51  initprop "onExit"
+00083:  51  endinit
+00084:  51  notearg
+00085:  51  call 1
+00088:  51  setprop "DecisiveBattleMainScene"
+00093:  51  popv
+00094:  55  name "xs"
+00099:  55  getprop "Scene"
+00104:  55  getprop "DecisiveBattleMainScene"
+00109:  55  lambda (function () {
+    [sourceless code]
+})
+00114:  55  setprop "create"
+00119:  55  popv
+00120:  65  name "xs"
+00125:  65  getprop "Scene"
+00130:  65  getprop "Mgr"
+00135:  65  dup
+00136:  65  callprop "registerScene"
+00141:  65  swap
+00142:  65  notearg
+00143:  65  string "DecisiveBattleMainScene"
+00148:  65  notearg
+00149:  65  newinit 1
+00154:  66  name "xs"
+00159:  66  getprop "Scene"
+00164:  66  getprop "DecisiveBattleMainScene"
+00169:  66  initprop "class"
+00174:  67  name "xs"
+00179:  67  getprop "Constant_SceneType_Challenge"
+00184:  67  initprop "type"
+00189:  67  endinit
+00190:  67  notearg
+00191:  67  call 2
+00194:  67  popv
+00195:  68  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "Scene"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=3
+;; arg[0] data
+;; local[0] visibleSize
+;; local[1] str
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  15  name "xs"
+00025:  15  getprop "director"
+00030:  15  dup
+00031:  15  callprop "getVisibleSize"
+00036:  15  swap
+00037:  15  notearg
+00038:  15  call 0
+00041:  15  setlocal 0
+00044:  15  pop
+00045:  17  name "xs"
+00050:  17  getprop "Tools"
+00055:  17  getprop "UI"
+00060:  17  dup
+00061:  17  callprop "addBgByType"
+00066:  17  swap
+00067:  17  notearg
+00068:  17  this
+00069:  17  notearg
+00070:  17  name "xs"
+00075:  17  getprop "Constant_BgType_InterServiceFight"
+00080:  17  notearg
+00081:  17  call 2
+00084:  17  pop
+00085:  20  this
+00086:  20  name "xs"
+00091:  20  getprop "Views"
+00096:  20  getprop "PlayerInfoBannerSimpleView"
+00101:  20  dup
+00102:  20  callprop "create"
+00107:  20  swap
+00108:  20  notearg
+00109:  20  call 0
+00112:  20  setprop "m_infoBar"
+00117:  20  pop
+00118:  21  this
+00119:  21  getprop "m_infoBar"
+00124:  21  dup
+00125:  21  callprop "setAnchorPoint"
+00130:  21  swap
+00131:  21  notearg
+00132:  21  name "cc"
+00137:  21  dup
+00138:  21  callprop "p"
+00143:  21  swap
+00144:  21  notearg
+00145:  21  zero
+00146:  21  notearg
+00147:  21  one
+00148:  21  notearg
+00149:  21  call 2
+00152:  21  notearg
+00153:  21  call 1
+00156:  21  pop
+00157:  22  name "xs"
+00162:  22  getprop "Utils"
+00167:  22  getprop "Node"
+00172:  22  dup
+00173:  22  callprop "attachNodes"
+00178:  22  swap
+00179:  22  notearg
+00180:  22  this
+00181:  22  notearg
+00182:  22  this
+00183:  22  getprop "m_infoBar"
+00188:  22  notearg
+00189:  22  newinit 1
+00194:  23  string "lt"
+00199:  23  initprop "desc"
+00204:  24  true
+00205:  24  initprop "sc"
+00210:  24  endinit
+00211:  24  notearg
+00212:  24  call 3
+00215:  24  pop
+00216:  26  null
+00217:  26  setlocal 1
+00220:  26  pop
+00221:  27  getarg 0
+00224:  27  getprop "local"
+00229:  27  ifeq 275 (+46)
+00234:  28  name "xs"
+00239:  28  getprop "Tools"
+00244:  28  getprop "String"
+00249:  28  dup
+00250:  28  callprop "createString"
+00255:  28  swap
+00256:  28  notearg
+00257:  28  string "LocalDecisiveBattle_4"
+00262:  28  notearg
+00263:  28  call 1
+00266:  28  setlocal 1
+00269:  28  pop
+00270:  28  goto 311 (+41)
+00275:  30  name "xs"
+00280:  30  getprop "Tools"
+00285:  30  getprop "String"
+00290:  30  dup
+00291:  30  callprop "createString"
+00296:  30  swap
+00297:  30  notearg
+00298:  30  string "DecisiveBattle"
+00303:  30  notearg
+00304:  30  call 1
+00307:  30  setlocal 1
+00310:  30  pop
+00311:  33  this
+00312:  33  name "xs"
+00317:  33  getprop "Views"
+00322:  33  getprop "TablePage"
+00327:  33  dup
+00328:  33  callprop "create"
+00333:  33  swap
+00334:  33  notearg
+00335:  33  name "cc"
+00340:  33  dup
+00341:  33  callprop "size"
+00346:  33  swap
+00347:  33  notearg
+00348:  33  getlocal 0
+00351:  33  getprop "width"
+00356:  33  name "xs"
+00361:  33  getprop "Views"
+00366:  33  getprop "MainMenuView"
+00371:  33  getprop "Width"
+00376:  33  sub
+00377:  33  notearg
+00378:  33  getlocal 0
+00381:  33  getprop "height"
+00386:  33  int8 50
+00388:  33  sub
+00389:  33  notearg
+00390:  33  call 2
+00393:  33  notearg
+00394:  33  call 1
+00397:  33  setprop "m_pageView"
+00402:  33  pop
+00403:  34  this
+00404:  34  getprop "m_pageView"
+00409:  34  dup
+00410:  34  callprop "setBaseTouchPriority"
+00415:  34  swap
+00416:  34  notearg
+00417:  34  int8 -1
+00419:  34  notearg
+00420:  34  call 1
+00423:  34  pop
+00424:  35  this
+00425:  35  getprop "m_pageView"
+00430:  35  dup
+00431:  35  callprop "setListener"
+00436:  35  swap
+00437:  35  notearg
+00438:  35  this
+00439:  35  notearg
+00440:  35  call 1
+00443:  35  pop
+00444:  36  this
+00445:  36  getprop "m_pageView"
+00450:  36  dup
+00451:  36  callprop "addPageWhitConstruct"
+00456:  36  swap
+00457:  36  notearg
+00458:  36  getlocal 1
+00461:  36  notearg
+00462:  36  name "xs"
+00467:  36  getprop "Views"
+00472:  36  getprop "DecisiveBattleMainView"
+00477:  36  notearg
+00478:  36  newinit 1
+00483:  36  getarg 0
+00486:  36  initprop "param"
+00491:  36  endinit
+00492:  36  notearg
+00493:  36  call 3
+00496:  36  pop
+00497:  37  name "xs"
+00502:  37  getprop "Utils"
+00507:  37  getprop "Node"
+00512:  37  dup
+00513:  37  callprop "attachNodes"
+00518:  37  swap
+00519:  37  notearg
+00520:  37  this
+00521:  37  notearg
+00522:  37  this
+00523:  37  getprop "m_pageView"
+00528:  37  notearg
+00529:  37  newinit 1
+00534:  38  string "lb"
+00539:  38  initprop "desc"
+00544:  39  true
+00545:  39  initprop "sc"
+00550:  39  endinit
+00551:  39  notearg
+00552:  39  call 3
+00555:  39  pop
+00556:  43  this
+00557:  43  name "xs"
+00562:  43  getprop "Tools"
+00567:  43  getprop "UI"
+00572:  43  dup
+00573:  43  callprop "addShortcutBoard"
+00578:  43  swap
+00579:  43  notearg
+00580:  43  this
+00581:  43  notearg
+00582:  43  true
+00583:  43  notearg
+00584:  43  name "xs"
+00589:  43  getprop "Cfg"
+00594:  43  getprop "Scene"
+00599:  43  getprop "SkillScene"
+00604:  43  getprop "mainmenu"
+00609:  43  notearg
+00610:  43  call 3
+00613:  43  setprop "m_mainMenu"
+00618:  43  pop
+00619:  46  true
+00620:  46  return
+00621:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:10 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:48 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  this
+00001:  49  dup
+00002:  49  callprop "_super"
+00007:  49  swap
+00008:  49  notearg
+00009:  49  call 0
+00012:  49  pop
+00013:  49  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:48 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:51 ---
+loc   line  op
+----- ----  --
+main:
+00000:  52  this
+00001:  52  dup
+00002:  52  callprop "_super"
+00007:  52  swap
+00008:  52  notearg
+00009:  52  call 0
+00012:  52  pop
+00013:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:51 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:55 ---
+loc   line  op
+----- ----  --
+main:
+00000:  57  name "xs"
+00005:  57  getprop "Scene"
+00010:  57  getprop "DecisiveBattleMainScene"
+00015:  57  undefined
+00016:  57  notearg
+00017:  57  new 0
+00020:  57  setlocal 0
+00023:  57  pop
+00024:  58  getlocal 0
+00027:  58  and 51 (+24)
+00032:  58  pop
+00033:  58  getlocal 0
+00036:  58  dup
+00037:  58  callprop "init"
+00042:  58  swap
+00043:  58  notearg
+00044:  58  getarg 0
+00047:  58  notearg
+00048:  58  call 1
+00051:  58  ifeq 60 (+9)
+00056:  59  getlocal 0
+00059:  59  return
+00060:  61  name "xs"
+00065:  61  dup
+00066:  61  callprop "assert"
+00071:  61  swap
+00072:  61  notearg
+00073:  61  false
+00074:  61  notearg
+00075:  61  string "xs.Scene.DecisiveBattleMainScene.create error!"
+00080:  61  notearg
+00081:  61  call 2
+00084:  61  pop
+00085:  62  null
+00086:  62  return
+00087:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.js:55 ---

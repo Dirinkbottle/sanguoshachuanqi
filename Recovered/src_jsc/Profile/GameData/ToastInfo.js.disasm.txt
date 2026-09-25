@@ -1,0 +1,231 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/ToastInfo.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=78 object[0]
+;; FUNCTION-MAP kind=lambda offset=88 object[1]
+;; FUNCTION-MAP kind=lambda offset=98 object[2]
+;; FUNCTION-MAP kind=lambda offset=139 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/ToastInfo.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Profile"
+00010:   6  getprop "GameData"
+00015:   6  name "xs"
+00020:   6  getprop "Profile"
+00025:   6  getprop "GameData"
+00030:   6  getprop "Base"
+00035:   6  dup
+00036:   6  callprop "extend"
+00041:   6  swap
+00042:   6  notearg
+00043:   6  newinit 1
+00048:   7  string "xs.Profile.GameData.ToastInfo"
+00053:   7  initprop "name"
+00058:   9  name "xs"
+00063:   9  getprop "Debug"
+00068:   9  getprop "emptyFunc"
+00073:   9  initprop "dump"
+00078:  11  lambda (function () {
+    [sourceless code]
+})
+00083:  11  initprop "init"
+00088:  16  lambda (function () {
+    [sourceless code]
+})
+00093:  16  initprop "update"
+00098:  26  lambda (function () {
+    [sourceless code]
+})
+00103:  26  initprop "getToastInfo"
+00108:  26  endinit
+00109:  26  notearg
+00110:  26  call 1
+00113:  26  setprop "ToastInfo"
+00118:  26  popv
+00119:  34  name "xs"
+00124:  34  getprop "Profile"
+00129:  34  getprop "GameData"
+00134:  34  getprop "ToastInfo"
+00139:  34  lambda (function () {
+    [sourceless code]
+})
+00144:  34  setprop "create"
+00149:  34  popv
+00150:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/ToastInfo.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/ToastInfo.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  getarg 0
+00012:  12  notearg
+00013:  12  call 1
+00016:  12  pop
+00017:  13  true
+00018:  13  return
+00019:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/ToastInfo.js:11 ---
+;; function object[1] update
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] json_data
+;; local[0] wine_info
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/ToastInfo.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  getarg 0
+00003:  17  setlocal 0
+00006:  17  pop
+00007:  19  this
+00008:  19  getprop "toastInfo"
+00013:  19  not
+00014:  19  ifeq 61 (+47)
+00019:  20  this
+00020:  20  name "xs"
+00025:  20  getprop "Models"
+00030:  20  getprop "Toast"
+00035:  20  dup
+00036:  20  callprop "create"
+00041:  20  swap
+00042:  20  notearg
+00043:  20  getlocal 0
+00046:  20  notearg
+00047:  20  call 1
+00050:  20  setprop "toastInfo"
+00055:  20  pop
+00056:  20  goto 83 (+27)
+00061:  22  this
+00062:  22  getprop "toastInfo"
+00067:  22  dup
+00068:  22  callprop "update"
+00073:  22  swap
+00074:  22  notearg
+00075:  22  getlocal 0
+00078:  22  notearg
+00079:  22  call 1
+00082:  22  pop
+00083:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/ToastInfo.js:16 ---
+;; function object[2] getToastInfo
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/ToastInfo.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  this
+00001:  27  getprop "toastInfo"
+00006:  27  ifeq 18 (+12)
+00011:  28  this
+00012:  28  getprop "toastInfo"
+00017:  28  return
+00018:  30  null
+00019:  30  return
+00020:  30  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/ToastInfo.js:26 ---
+;; function object[3] create
+;; function metadata object[3] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/ToastInfo.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  getarg 0
+00003:  35  getprop "play_id"
+00008:  35  setlocal 0
+00011:  35  pop
+00012:  36  name "xs"
+00017:  36  getprop "Profile"
+00022:  36  getprop "GameData"
+00027:  36  getprop "ToastInfo"
+00032:  36  setlocal 1
+00035:  36  pop
+00036:  37  name "xs"
+00041:  37  getprop "Utils"
+00046:  37  dup
+00047:  37  callprop "isSet"
+00052:  37  swap
+00053:  37  notearg
+00054:  37  getlocal 1
+00057:  37  getprop "_instance"
+00062:  37  notearg
+00063:  37  call 1
+00066:  37  or 85 (+19)
+00071:  37  pop
+00072:  37  getlocal 1
+00075:  37  newarray 0
+00079:  37  endinit
+00080:  37  setprop "_instance"
+00085:  37  pop
+00086:  39  getlocal 1
+00089:  39  getprop "_instance"
+00094:  39  getlocal 0
+00097:  39  getelem
+00098:  39  ifeq 116 (+18)
+00103:  40  getlocal 1
+00106:  40  getprop "_instance"
+00111:  40  getlocal 0
+00114:  40  getelem
+00115:  40  return
+00116:  43  getlocal 1
+00119:  43  undefined
+00120:  43  notearg
+00121:  43  new 0
+00124:  43  setlocal 2
+00127:  43  pop
+00128:  44  getlocal 2
+00131:  44  and 155 (+24)
+00136:  44  pop
+00137:  44  getlocal 2
+00140:  44  dup
+00141:  44  callprop "init"
+00146:  44  swap
+00147:  44  notearg
+00148:  44  getarg 0
+00151:  44  notearg
+00152:  44  call 1
+00155:  44  ifeq 180 (+25)
+00160:  45  getlocal 1
+00163:  45  getprop "_instance"
+00168:  45  getlocal 0
+00171:  45  getlocal 2
+00174:  45  setelem
+00175:  45  pop
+00176:  46  getlocal 2
+00179:  46  return
+00180:  48  name "xs"
+00185:  48  dup
+00186:  48  callprop "error"
+00191:  48  swap
+00192:  48  notearg
+00193:  48  string "xs.Profile.GameData.ToastInfo.create failed"
+00198:  48  notearg
+00199:  48  call 1
+00202:  48  pop
+00203:  49  null
+00204:  49  return
+00205:  49  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/ToastInfo.js:34 ---

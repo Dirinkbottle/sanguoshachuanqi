@@ -1,0 +1,448 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/Style/headers.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=10 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Models"
+00010:   5  lambda (function () {
+    [sourceless code]
+})
+00015:   5  setprop "Style"
+00020:   5  popv
+00021:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:1 ---
+;; function object[0] Style
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] jsonStyle
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=57 object[0]
+;; FUNCTION-MAP kind=lambda offset=69 object[1]
+;; FUNCTION-MAP kind=lambda offset=81 object[2]
+;; FUNCTION-MAP kind=lambda offset=93 object[3]
+;; FUNCTION-MAP kind=lambda offset=105 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:5 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  getarg 0
+00004:   8  getprop "style_id"
+00009:   8  setprop "m_style_id"
+00014:   8  pop
+00015:   9  this
+00016:   9  getarg 0
+00019:   9  getprop "style_desc"
+00024:   9  setprop "m_style_desc"
+00029:   9  pop
+00030:  10  this
+00031:  10  getarg 0
+00034:  10  getprop "style_name"
+00039:  10  or 50 (+11)
+00044:  10  pop
+00045:  10  string ""
+00050:  10  setprop "m_style_name"
+00055:  10  pop
+00056:  12  this
+00057:  12  lambda (function () {
+    [sourceless code]
+})
+00062:  12  setprop "getStyleId"
+00067:  12  pop
+00068:  16  this
+00069:  16  lambda (function () {
+    [sourceless code]
+})
+00074:  16  setprop "getStyleDesc"
+00079:  16  pop
+00080:  20  this
+00081:  20  lambda (function () {
+    [sourceless code]
+})
+00086:  20  setprop "createView_Head"
+00091:  20  pop
+00092:  25  this
+00093:  25  lambda (function () {
+    [sourceless code]
+})
+00098:  25  setprop "createView_HeadAndName"
+00103:  25  pop
+00104:  39  this
+00105:  39  lambda (function () {
+    [sourceless code]
+})
+00110:  39  setprop "createStyleModel"
+00115:  39  pop
+00116:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:5 ---
+;; function object[0] getStyleId
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  callname "parseInt"
+00005:  13  implicitthis "parseInt"
+00010:  13  notearg
+00011:  13  this
+00012:  13  getprop "m_style_id"
+00017:  13  notearg
+00018:  13  call 1
+00021:  13  return
+00022:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:12 ---
+;; function object[1] getStyleDesc
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  getprop "m_style_desc"
+00006:  17  return
+00007:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:16 ---
+;; function object[2] createView_Head
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] _model
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:20 ---
+loc   line  op
+----- ----  --
+main:
+00000:  21  this
+00001:  21  dup
+00002:  21  callprop "createStyleModel"
+00007:  21  swap
+00008:  21  notearg
+00009:  21  call 0
+00012:  21  setlocal 0
+00015:  21  pop
+00016:  22  name "xs"
+00021:  22  getprop "Tools"
+00026:  22  getprop "Card"
+00031:  22  dup
+00032:  22  callprop "createHeadView"
+00037:  22  swap
+00038:  22  notearg
+00039:  22  getlocal 0
+00042:  22  notearg
+00043:  22  this
+00044:  22  dup
+00045:  22  callprop "getStyleId"
+00050:  22  swap
+00051:  22  notearg
+00052:  22  call 0
+00055:  22  notearg
+00056:  22  call 2
+00059:  22  return
+00060:  22  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:20 ---
+;; function object[3] createView_HeadAndName
+;; function metadata object[3] nargs=0 bindings=3
+;; local[0] _model
+;; local[1] mHead
+;; local[2] _ret
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  26  this
+00001:  26  dup
+00002:  26  callprop "createStyleModel"
+00007:  26  swap
+00008:  26  notearg
+00009:  26  call 0
+00012:  26  setlocal 0
+00015:  26  pop
+00016:  27  getlocal 0
+00019:  27  dup
+00020:  27  callprop "createIcon_Grade"
+00025:  27  swap
+00026:  27  notearg
+00027:  27  call 0
+00030:  27  setlocal 1
+00033:  27  pop
+00034:  28  name "xs"
+00039:  28  getprop "Factorys"
+00044:  28  getprop "Label"
+00049:  28  dup
+00050:  28  callprop "createByStyleId"
+00055:  28  swap
+00056:  28  notearg
+00057:  28  string "LS_daojuName"
+00062:  28  notearg
+00063:  28  call 1
+00066:  28  setlocal 2
+00069:  28  pop
+00070:  29  this
+00071:  29  getprop "m_style_name"
+00076:  29  string ""
+00081:  29  ne
+00082:  29  ifeq 114 (+32)
+00087:  30  getlocal 2
+00090:  30  dup
+00091:  30  callprop "setString"
+00096:  30  swap
+00097:  30  notearg
+00098:  30  this
+00099:  30  getprop "m_style_name"
+00104:  30  notearg
+00105:  30  call 1
+00108:  30  pop
+00109:  30  goto 177 (+68)
+00114:  32  getlocal 2
+00117:  32  dup
+00118:  32  callprop "setString"
+00123:  32  swap
+00124:  32  notearg
+00125:  32  getlocal 0
+00128:  32  dup
+00129:  32  callprop "getNameString"
+00134:  32  swap
+00135:  32  notearg
+00136:  32  call 0
+00139:  32  name "xs"
+00144:  32  getprop "Tools"
+00149:  32  getprop "String"
+00154:  32  dup
+00155:  32  callprop "createString"
+00160:  32  swap
+00161:  32  notearg
+00162:  32  string "str_Vip_Gift"
+00167:  32  notearg
+00168:  32  call 1
+00171:  32  add
+00172:  32  notearg
+00173:  32  call 1
+00176:  32  pop
+00177:  34  name "xs"
+00182:  34  getprop "Utils"
+00187:  34  getprop "Node"
+00192:  34  dup
+00193:  34  callprop "attachNodes"
+00198:  34  swap
+00199:  34  notearg
+00200:  34  getlocal 1
+00203:  34  notearg
+00204:  34  getlocal 2
+00207:  34  notearg
+00208:  34  newinit 1
+00213:  34  string "c"
+00218:  34  initprop "base"
+00223:  34  newinit 1
+00228:  34  zero
+00229:  34  initprop "x"
+00234:  34  int8 -60
+00236:  34  initprop "y"
+00241:  34  endinit
+00242:  34  initprop "offset"
+00247:  34  endinit
+00248:  34  notearg
+00249:  34  call 3
+00252:  34  pop
+00253:  36  getlocal 1
+00256:  36  return
+00257:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:25 ---
+;; function object[4] createStyleModel
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] _model
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  getlocal 0
+00003:  40  pop
+00004:  42  this
+00005:  42  dup
+00006:  42  callprop "getStyleId"
+00011:  42  swap
+00012:  42  notearg
+00013:  42  call 0
+00016:  42  condswitch
+00017:  43  name "xs"
+00022:  43  getprop "Const_Item_Style_General"
+00027:  43  case 127 (+100)
+00032:  46  name "xs"
+00037:  46  getprop "Const_Item_Style_Equ"
+00042:  46  case 175 (+133)
+00047:  49  name "xs"
+00052:  49  getprop "Const_Item_Style_Skill"
+00057:  49  case 223 (+166)
+00062:  52  name "xs"
+00067:  52  getprop "Const_Item_Style_Item"
+00072:  52  case 271 (+199)
+00077:  55  name "xs"
+00082:  55  getprop "Const_Item_Style_GeneralSoul"
+00087:  55  case 319 (+232)
+00092:  58  name "xs"
+00097:  58  getprop "Const_Item_Style_SkillPiece"
+00102:  58  case 367 (+265)
+00107:  61  name "xs"
+00112:  61  getprop "Const_Item_Style_EquPiece"
+00117:  61  case 415 (+298)
+00122:  61  default 463 (+341)
+00127:  44  name "xs"
+00132:  44  getprop "Models"
+00137:  44  getprop "General"
+00142:  44  dup
+00143:  44  callprop "createWithBase"
+00148:  44  swap
+00149:  44  notearg
+00150:  44  this
+00151:  44  dup
+00152:  44  callprop "getStyleDesc"
+00157:  44  swap
+00158:  44  notearg
+00159:  44  call 0
+00162:  44  notearg
+00163:  44  call 1
+00166:  44  setlocal 0
+00169:  44  pop
+00170:  45  goto 504 (+334)
+00175:  47  name "xs"
+00180:  47  getprop "Models"
+00185:  47  getprop "Equipment"
+00190:  47  dup
+00191:  47  callprop "createWithBase"
+00196:  47  swap
+00197:  47  notearg
+00198:  47  this
+00199:  47  dup
+00200:  47  callprop "getStyleDesc"
+00205:  47  swap
+00206:  47  notearg
+00207:  47  call 0
+00210:  47  notearg
+00211:  47  call 1
+00214:  47  setlocal 0
+00217:  47  pop
+00218:  48  goto 504 (+286)
+00223:  50  name "xs"
+00228:  50  getprop "Models"
+00233:  50  getprop "Skill"
+00238:  50  dup
+00239:  50  callprop "createWithBase"
+00244:  50  swap
+00245:  50  notearg
+00246:  50  this
+00247:  50  dup
+00248:  50  callprop "getStyleDesc"
+00253:  50  swap
+00254:  50  notearg
+00255:  50  call 0
+00258:  50  notearg
+00259:  50  call 1
+00262:  50  setlocal 0
+00265:  50  pop
+00266:  51  goto 504 (+238)
+00271:  53  name "xs"
+00276:  53  getprop "Models"
+00281:  53  getprop "Item"
+00286:  53  dup
+00287:  53  callprop "createWithBase"
+00292:  53  swap
+00293:  53  notearg
+00294:  53  this
+00295:  53  dup
+00296:  53  callprop "getStyleDesc"
+00301:  53  swap
+00302:  53  notearg
+00303:  53  call 0
+00306:  53  notearg
+00307:  53  call 1
+00310:  53  setlocal 0
+00313:  53  pop
+00314:  54  goto 504 (+190)
+00319:  56  name "xs"
+00324:  56  getprop "Models"
+00329:  56  getprop "GeneralSoul"
+00334:  56  dup
+00335:  56  callprop "createWithBase"
+00340:  56  swap
+00341:  56  notearg
+00342:  56  this
+00343:  56  dup
+00344:  56  callprop "getStyleDesc"
+00349:  56  swap
+00350:  56  notearg
+00351:  56  call 0
+00354:  56  notearg
+00355:  56  call 1
+00358:  56  setlocal 0
+00361:  56  pop
+00362:  57  goto 504 (+142)
+00367:  59  name "xs"
+00372:  59  getprop "Models"
+00377:  59  getprop "SkillPiece"
+00382:  59  dup
+00383:  59  callprop "createWithBase"
+00388:  59  swap
+00389:  59  notearg
+00390:  59  this
+00391:  59  dup
+00392:  59  callprop "getStyleDesc"
+00397:  59  swap
+00398:  59  notearg
+00399:  59  call 0
+00402:  59  notearg
+00403:  59  call 1
+00406:  59  setlocal 0
+00409:  59  pop
+00410:  60  goto 504 (+94)
+00415:  62  name "xs"
+00420:  62  getprop "Models"
+00425:  62  getprop "EquipmentPiece"
+00430:  62  dup
+00431:  62  callprop "createWithBase"
+00436:  62  swap
+00437:  62  notearg
+00438:  62  this
+00439:  62  dup
+00440:  62  callprop "getStyleDesc"
+00445:  62  swap
+00446:  62  notearg
+00447:  62  call 0
+00450:  62  notearg
+00451:  62  call 1
+00454:  62  setlocal 0
+00457:  62  pop
+00458:  63  goto 504 (+46)
+00463:  65  name "xs"
+00468:  65  dup
+00469:  65  callprop "error"
+00474:  65  swap
+00475:  65  notearg
+00476:  65  string "getStyleId error"
+00481:  65  notearg
+00482:  65  this
+00483:  65  dup
+00484:  65  callprop "getStyleId"
+00489:  65  swap
+00490:  65  notearg
+00491:  65  call 0
+00494:  65  notearg
+00495:  65  call 2
+00498:  65  pop
+00499:  66  goto 504 (+5)
+00504:  69  getlocal 0
+00507:  69  return
+00508:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Style/headers.js:39 ---

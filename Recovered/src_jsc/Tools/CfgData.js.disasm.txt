@@ -1,0 +1,1059 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/CfgData.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=46 object[0]
+;; FUNCTION-MAP kind=lambda offset=56 object[1]
+;; FUNCTION-MAP kind=lambda offset=66 object[2]
+;; FUNCTION-MAP kind=lambda offset=76 object[3]
+;; FUNCTION-MAP kind=lambda offset=86 object[4]
+;; FUNCTION-MAP kind=lambda offset=96 object[5]
+;; FUNCTION-MAP kind=lambda offset=106 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Tools"
+00010:   9  name "xs"
+00015:   9  getprop "Tools"
+00020:   9  getprop "CfgData"
+00025:   9  or 117 (+92)
+00030:   9  pop
+00031:   9  newinit 1
+00036:  11  string "xs.Tools.CfgData "
+00041:  11  initprop "name"
+00046:  14  lambda (function () {
+    [sourceless code]
+})
+00051:  14  initprop "isRecordExistByTypeAndKey"
+00056:  35  lambda (function () {
+    [sourceless code]
+})
+00061:  35  initprop "readRecordByTypeAndKey"
+00066:  64  lambda (function () {
+    [sourceless code]
+})
+00071:  64  initprop "readRecordByTypeAndKeyNoDefault"
+00076:  86  lambda (function () {
+    [sourceless code]
+})
+00081:  86  initprop "readRecordByType"
+00086:  99  lambda (function () {
+    [sourceless code]
+})
+00091:  99  initprop "getGlobalConf"
+00096: 114  lambda (function () {
+    [sourceless code]
+})
+00101: 114  initprop "getCfgDataByType"
+00106: 278  lambda (function () {
+    [sourceless code]
+})
+00111: 278  initprop "getDefaultKey"
+00116: 278  endinit
+00117: 278  setprop "CfgData"
+00122: 278  popv
+00123: 362  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:1 ---
+;; function object[0] isRecordExistByTypeAndKey
+;; function metadata object[0] nargs=2 bindings=4
+;; arg[0] type
+;; arg[1] key
+;; local[0] _records
+;; local[1] _record
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  dup
+00002:  17  callprop "readRecordByType"
+00007:  17  swap
+00008:  17  notearg
+00009:  17  getarg 0
+00012:  17  notearg
+00013:  17  call 1
+00016:  17  setlocal 0
+00019:  17  pop
+00020:  19  getlocal 0
+00023:  19  getarg 1
+00026:  19  getelem
+00027:  19  setlocal 1
+00030:  19  pop
+00031:  21  getlocal 1
+00034:  21  null
+00035:  21  stricteq
+00036:  21  or 51 (+15)
+00041:  21  pop
+00042:  21  getlocal 1
+00045:  21  name "undefined"
+00050:  21  stricteq
+00051:  21  ifeq 63 (+12)
+00056:  22  false
+00057:  22  return
+00058:  22  goto 65 (+7)
+00063:  25  true
+00064:  25  return
+00065:  26  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:14 ---
+;; function object[1] readRecordByTypeAndKey
+;; function metadata object[1] nargs=2 bindings=6
+;; arg[0] type
+;; arg[1] key
+;; local[0] _dataCfg
+;; local[1] _record
+;; local[2] defaultKey
+;; local[3] valueDef
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:35 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  this
+00001:  37  dup
+00002:  37  callprop "assert"
+00007:  37  swap
+00008:  37  notearg
+00009:  37  getarg 1
+00012:  37  notearg
+00013:  37  string "readRecordByTypeAndKey need valid key: "
+00018:  37  getarg 1
+00021:  37  add
+00022:  37  string "("
+00027:  37  add
+00028:  37  getarg 0
+00031:  37  add
+00032:  37  string ")"
+00037:  37  add
+00038:  37  notearg
+00039:  37  call 2
+00042:  37  pop
+00043:  39  this
+00044:  39  dup
+00045:  39  callprop "getCfgDataByType"
+00050:  39  swap
+00051:  39  notearg
+00052:  39  getarg 0
+00055:  39  notearg
+00056:  39  call 1
+00059:  39  setlocal 0
+00062:  39  pop
+00063:  41  this
+00064:  41  dup
+00065:  41  callprop "assert"
+00070:  41  swap
+00071:  41  notearg
+00072:  41  getlocal 0
+00075:  41  notearg
+00076:  41  string "need _dataCfg"
+00081:  41  notearg
+00082:  41  getarg 0
+00085:  41  notearg
+00086:  41  call 3
+00089:  41  pop
+00090:  43  this
+00091:  43  dup
+00092:  43  callprop "log"
+00097:  43  swap
+00098:  43  notearg
+00099:  43  string "type = "
+00104:  43  getarg 0
+00107:  43  add
+00108:  43  string "; key = "
+00113:  43  add
+00114:  43  getarg 1
+00117:  43  add
+00118:  43  notearg
+00119:  43  call 1
+00122:  43  pop
+00123:  44  getlocal 0
+00126:  44  getarg 1
+00129:  44  getelem
+00130:  44  setlocal 1
+00133:  44  pop
+00134:  48  getlocal 1
+00137:  48  null
+00138:  48  stricteq
+00139:  48  or 154 (+15)
+00144:  48  pop
+00145:  48  getlocal 1
+00148:  48  name "undefined"
+00153:  48  stricteq
+00154:  48  ifeq 240 (+86)
+00159:  51  this
+00160:  51  dup
+00161:  51  callprop "getDefaultKey"
+00166:  51  swap
+00167:  51  notearg
+00168:  51  getarg 0
+00171:  51  notearg
+00172:  51  call 1
+00175:  51  setlocal 2
+00178:  51  pop
+00179:  52  getlocal 0
+00182:  52  getlocal 2
+00185:  52  getelem
+00186:  52  setlocal 3
+00189:  52  pop
+00190:  53  this
+00191:  53  dup
+00192:  53  callprop "warn"
+00197:  53  swap
+00198:  53  notearg
+00199:  53  string "_record not found! type="
+00204:  53  getarg 0
+00207:  53  add
+00208:  53  string " key="
+00213:  53  add
+00214:  53  getarg 1
+00217:  53  add
+00218:  53  string " use defaultKey="
+00223:  53  add
+00224:  53  getlocal 2
+00227:  53  add
+00228:  53  notearg
+00229:  53  call 1
+00232:  53  pop
+00233:  54  getlocal 3
+00236:  54  setlocal 1
+00239:  54  pop
+00240:  58  this
+00241:  58  dup
+00242:  58  callprop "assert"
+00247:  58  swap
+00248:  58  notearg
+00249:  58  getlocal 1
+00252:  58  notearg
+00253:  58  string "_record not found! type="
+00258:  58  getarg 0
+00261:  58  add
+00262:  58  string " key="
+00267:  58  add
+00268:  58  getarg 1
+00271:  58  add
+00272:  58  notearg
+00273:  58  call 2
+00276:  58  pop
+00277:  60  getlocal 1
+00280:  60  return
+00281:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:35 ---
+;; function object[2] readRecordByTypeAndKeyNoDefault
+;; function metadata object[2] nargs=2 bindings=4
+;; arg[0] type
+;; arg[1] key
+;; local[0] _dataCfg
+;; local[1] _record
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:64 ---
+loc   line  op
+----- ----  --
+main:
+00000:  68  this
+00001:  68  dup
+00002:  68  callprop "getCfgDataByType"
+00007:  68  swap
+00008:  68  notearg
+00009:  68  getarg 0
+00012:  68  notearg
+00013:  68  call 1
+00016:  68  setlocal 0
+00019:  68  pop
+00020:  70  this
+00021:  70  dup
+00022:  70  callprop "assert"
+00027:  70  swap
+00028:  70  notearg
+00029:  70  getlocal 0
+00032:  70  notearg
+00033:  70  string "need _dataCfg"
+00038:  70  notearg
+00039:  70  getarg 0
+00042:  70  notearg
+00043:  70  call 3
+00046:  70  pop
+00047:  74  getlocal 0
+00050:  74  getarg 1
+00053:  74  getelem
+00054:  74  setlocal 1
+00057:  74  pop
+00058:  83  getlocal 1
+00061:  83  return
+00062:  83  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:64 ---
+;; function object[3] readRecordByType
+;; function metadata object[3] nargs=1 bindings=3
+;; arg[0] type
+;; local[0] _dataCfg
+;; local[1] _record
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:86 ---
+loc   line  op
+----- ----  --
+main:
+00000:  88  this
+00001:  88  dup
+00002:  88  callprop "getCfgDataByType"
+00007:  88  swap
+00008:  88  notearg
+00009:  88  getarg 0
+00012:  88  notearg
+00013:  88  call 1
+00016:  88  setlocal 0
+00019:  88  pop
+00020:  90  this
+00021:  90  dup
+00022:  90  callprop "assert"
+00027:  90  swap
+00028:  90  notearg
+00029:  90  getlocal 0
+00032:  90  notearg
+00033:  90  string "need _dataCfg"
+00038:  90  notearg
+00039:  90  getarg 0
+00042:  90  notearg
+00043:  90  call 3
+00046:  90  pop
+00047:  92  getlocal 0
+00050:  92  setlocal 1
+00053:  92  pop
+00054:  94  getlocal 1
+00057:  94  return
+00058:  94  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:86 ---
+;; function object[4] getGlobalConf
+;; function metadata object[4] nargs=2 bindings=3
+;; arg[0] string
+;; arg[1] valueDef
+;; local[0] _conf
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:99 ---
+loc   line  op
+----- ----  --
+main:
+00000: 101  this
+00001: 101  dup
+00002: 101  callprop "readRecordByTypeAndKeyNoDefault"
+00007: 101  swap
+00008: 101  notearg
+00009: 101  name "xs"
+00014: 101  getprop "Constant_CfgDataType_Global"
+00019: 101  notearg
+00020: 101  getarg 0
+00023: 101  notearg
+00024: 101  call 2
+00027: 101  setlocal 0
+00030: 101  pop
+00031: 103  getlocal 0
+00034: 103  null
+00035: 103  stricteq
+00036: 103  or 51 (+15)
+00041: 103  pop
+00042: 103  getlocal 0
+00045: 103  name "undefined"
+00050: 103  stricteq
+00051: 103  ifeq 93 (+42)
+00056: 104  this
+00057: 104  dup
+00058: 104  callprop "warn"
+00063: 104  swap
+00064: 104  notearg
+00065: 104  string "getGlobalConf use default:"
+00070: 104  getarg 0
+00073: 104  add
+00074: 104  string " | "
+00079: 104  add
+00080: 104  getarg 1
+00083: 104  add
+00084: 104  notearg
+00085: 104  call 1
+00088: 104  pop
+00089: 105  getarg 1
+00092: 105  return
+00093: 108  name "xs"
+00098: 108  getprop "Utils"
+00103: 108  dup
+00104: 108  callprop "isJsonString"
+00109: 108  swap
+00110: 108  notearg
+00111: 108  getlocal 0
+00114: 108  getprop "logical_data"
+00119: 108  notearg
+00120: 108  call 1
+00123: 108  ifeq 158 (+35)
+00128: 109  name "JSON"
+00133: 109  dup
+00134: 109  callprop "parse"
+00139: 109  swap
+00140: 109  notearg
+00141: 109  getlocal 0
+00144: 109  getprop "logical_data"
+00149: 109  notearg
+00150: 109  call 1
+00153: 109  goto 166 (+13)
+00158: 110  getlocal 0
+00161: 110  getprop "logical_data"
+00166: 110  return
+00167: 110  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:99 ---
+;; function object[5] getCfgDataByType
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:114 ---
+loc   line  op
+----- ----  --
+main:
+00000: 115  getarg 0
+00003: 115  condswitch
+00004: 116  name "xs"
+00009: 116  getprop "Constant_CfgDataType_CombatLevel"
+00014: 116  case 804 (+790)
+00019: 119  name "xs"
+00024: 119  getprop "Constant_CfgDataType_Equipment"
+00029: 119  case 825 (+796)
+00034: 122  name "xs"
+00039: 122  getprop "Constant_CfgDataType_Equipment_Upgrade"
+00044: 122  case 846 (+802)
+00049: 125  name "xs"
+00054: 125  getprop "Constant_CfgDataType_General"
+00059: 125  case 867 (+808)
+00064: 128  name "xs"
+00069: 128  getprop "Constant_CfgDataType_GeneralLevel"
+00074: 128  case 888 (+814)
+00079: 131  name "xs"
+00084: 131  getprop "Constant_CfgDataType_General_Insight"
+00089: 131  case 909 (+820)
+00094: 134  name "xs"
+00099: 134  getprop "Constant_CfgDataType_Skill"
+00104: 134  case 930 (+826)
+00109: 137  name "xs"
+00114: 137  getprop "Constant_CfgDataType_Skill_Upgrade"
+00119: 137  case 951 (+832)
+00124: 140  name "xs"
+00129: 140  getprop "Constant_CfgDataType_Fate"
+00134: 140  case 972 (+838)
+00139: 143  name "xs"
+00144: 143  getprop "Constant_CfgDataType_Map"
+00149: 143  case 993 (+844)
+00154: 146  name "xs"
+00159: 146  getprop "Constant_CfgDataType_Res"
+00164: 146  case 1014 (+850)
+00169: 149  name "xs"
+00174: 149  getprop "Constant_CfgDataType_i18n"
+00179: 149  case 1035 (+856)
+00184: 152  name "xs"
+00189: 152  getprop "Constant_CfgDataType_Item"
+00194: 152  case 1056 (+862)
+00199: 155  name "xs"
+00204: 155  getprop "Constant_CfgDataType_Kits"
+00209: 155  case 1077 (+868)
+00214: 158  name "xs"
+00219: 158  getprop "Constant_CfgDataType_Vip"
+00224: 158  case 1098 (+874)
+00229: 161  name "xs"
+00234: 161  getprop "Constant_CfgDataType_SkillEffect"
+00239: 161  case 1119 (+880)
+00244: 164  name "xs"
+00249: 164  getprop "Constant_CfgDataType_Player_Upgrade"
+00254: 164  case 1140 (+886)
+00259: 167  name "xs"
+00264: 167  getprop "Constant_CfgDataType_Random_Name"
+00269: 167  case 1161 (+892)
+00274: 170  name "xs"
+00279: 170  getprop "Constant_CfgDataType_Eated_Exp"
+00284: 170  case 1182 (+898)
+00289: 173  name "xs"
+00294: 173  getprop "Constant_CfgDataType_Upgrade_Coin"
+00299: 173  case 1203 (+904)
+00304: 176  name "xs"
+00309: 176  getprop "Constant_CfgDataType_Upgrade_Exp"
+00314: 176  case 1224 (+910)
+00319: 179  name "xs"
+00324: 179  getprop "Constant_CfgDataType_Sell"
+00329: 179  case 1245 (+916)
+00334: 182  name "xs"
+00339: 182  getprop "Constant_CfgDataType_General_Insight_GrowType"
+00344: 182  case 1266 (+922)
+00349: 185  name "xs"
+00354: 185  getprop "Constant_CfgDataType_Surrender"
+00359: 185  case 1287 (+928)
+00364: 188  name "xs"
+00369: 188  getprop "Constant_CfgDataType_General_Surrender"
+00374: 188  case 1308 (+934)
+00379: 191  name "xs"
+00384: 191  getprop "Constant_CfgDataType_Plot_Conf"
+00389: 191  case 1329 (+940)
+00394: 194  name "xs"
+00399: 194  getprop "Constant_CfgDataType_Plot_Dialog"
+00404: 194  case 1350 (+946)
+00409: 197  name "xs"
+00414: 197  getprop "Constant_CfgDataType_Global"
+00419: 197  case 1371 (+952)
+00424: 200  name "xs"
+00429: 200  getprop "Constant_CfgDataType_Equ_Refine_GrowType"
+00434: 200  case 1392 (+958)
+00439: 203  name "xs"
+00444: 203  getprop "Constant_CfgDataType_LieutennantAttrPlus"
+00449: 203  case 1413 (+964)
+00454: 206  name "xs"
+00459: 206  getprop "Constant_CfgDataType_Buddy"
+00464: 206  case 1434 (+970)
+00469: 209  name "xs"
+00474: 209  getprop "Constant_CfgDataType_UnionWar_Battle"
+00479: 209  case 1455 (+976)
+00484: 211  name "xs"
+00489: 211  getprop "Constant_CfgDataType_MapAndDungon_Data"
+00494: 211  case 1476 (+982)
+00499: 213  name "xs"
+00504: 213  getprop "Constant_CfgDataType_Gem"
+00509: 213  case 1497 (+988)
+00514: 215  name "xs"
+00519: 215  getprop "Constant_CfgDataType_MagicalEquPoint"
+00524: 215  case 1518 (+994)
+00529: 218  name "xs"
+00534: 218  getprop "Constant_CfgDataType_Skill_Advanced"
+00539: 218  case 1544 (+1005)
+00544: 221  name "xs"
+00549: 221  getprop "Constant_CfgDataType_Decisive"
+00554: 221  case 1570 (+1016)
+00559: 224  name "xs"
+00564: 224  getprop "Constant_CfgDataType_Goddess"
+00569: 224  case 1596 (+1027)
+00574: 227  name "xs"
+00579: 227  getprop "Constant_CfgDataType_GoddessSurface"
+00584: 227  case 1622 (+1038)
+00589: 230  name "xs"
+00594: 230  getprop "Constant_CfgDataType_HulaoReward"
+00599: 230  case 1648 (+1049)
+00604: 233  name "xs"
+00609: 233  getprop "Constant_CfgDataType_Melt"
+00614: 233  case 1674 (+1060)
+00619: 235  name "xs"
+00624: 235  getprop "Constant_CfgDataType_Upgrade_Guide"
+00629: 235  case 1695 (+1066)
+00634: 238  name "xs"
+00639: 238  getprop "Constant_CfgDataType_MeridianTop"
+00644: 238  case 1721 (+1077)
+00649: 241  name "xs"
+00654: 241  getprop "Constant_CfgDataType_Meridian"
+00659: 241  case 1747 (+1088)
+00664: 244  name "xs"
+00669: 244  getprop "Constant_CfgDataType_MeridianPoint"
+00674: 244  case 1773 (+1099)
+00679: 247  name "xs"
+00684: 247  getprop "Constant_CfgDataType_GoddessFate"
+00689: 247  case 1799 (+1110)
+00694: 250  name "xs"
+00699: 250  getprop "Constant_CfgDataType_SkillMelt"
+00704: 250  case 1825 (+1121)
+00709: 253  name "xs"
+00714: 253  getprop "Constant_CfgDataType_Evolution"
+00719: 253  case 1851 (+1132)
+00724: 256  name "xs"
+00729: 256  getprop "Constant_CfgDataType_Evolution_open_conf"
+00734: 256  case 1877 (+1143)
+00739: 259  name "xs"
+00744: 259  getprop "Constant_CfgDataType_Evolution_buff_conf"
+00749: 259  case 1903 (+1154)
+00754: 262  name "xs"
+00759: 262  getprop "Constant_CfgDataType_Evolution_surrender"
+00764: 262  case 1929 (+1165)
+00769: 265  name "xs"
+00774: 265  getprop "Constant_CfgDataType_Beauty"
+00779: 265  case 1955 (+1176)
+00784: 268  name "xs"
+00789: 268  getprop "Constant_CfgDataType_Skill_refine_conf"
+00794: 268  case 1981 (+1187)
+00799: 268  default 2007 (+1208)
+00804: 117  name "xs"
+00809: 117  getprop "Cfg"
+00814: 117  getprop "System"
+00819: 117  getprop "sgs_combat_level_conf"
+00824: 117  return
+00825: 120  name "xs"
+00830: 120  getprop "Cfg"
+00835: 120  getprop "System"
+00840: 120  getprop "sgs_equipments"
+00845: 120  return
+00846: 123  name "xs"
+00851: 123  getprop "Cfg"
+00856: 123  getprop "System"
+00861: 123  getprop "sgs_equipment_upgrade_conf"
+00866: 123  return
+00867: 126  name "xs"
+00872: 126  getprop "Cfg"
+00877: 126  getprop "System"
+00882: 126  getprop "sgs_generals"
+00887: 126  return
+00888: 129  name "xs"
+00893: 129  getprop "Cfg"
+00898: 129  getprop "System"
+00903: 129  getprop "sgs_general_level_conf"
+00908: 129  return
+00909: 132  name "xs"
+00914: 132  getprop "Cfg"
+00919: 132  getprop "System"
+00924: 132  getprop "sgs_general_insight_conf"
+00929: 132  return
+00930: 135  name "xs"
+00935: 135  getprop "Cfg"
+00940: 135  getprop "System"
+00945: 135  getprop "sgs_skills"
+00950: 135  return
+00951: 138  name "xs"
+00956: 138  getprop "Cfg"
+00961: 138  getprop "System"
+00966: 138  getprop "sgs_skill_upgrade_conf"
+00971: 138  return
+00972: 141  name "xs"
+00977: 141  getprop "Cfg"
+00982: 141  getprop "System"
+00987: 141  getprop "sgs_fates"
+00992: 141  return
+00993: 144  name "xs"
+00998: 144  getprop "Cfg"
+01003: 144  getprop "System"
+01008: 144  getprop "sgs_map_conf"
+01013: 144  return
+01014: 147  name "xs"
+01019: 147  getprop "Cfg"
+01024: 147  getprop "System"
+01029: 147  getprop "sgs_resource"
+01034: 147  return
+01035: 150  name "xs"
+01040: 150  getprop "Cfg"
+01045: 150  getprop "System"
+01050: 150  getprop "sgs_i18n"
+01055: 150  return
+01056: 153  name "xs"
+01061: 153  getprop "Cfg"
+01066: 153  getprop "System"
+01071: 153  getprop "sgs_item"
+01076: 153  return
+01077: 156  name "xs"
+01082: 156  getprop "Cfg"
+01087: 156  getprop "System"
+01092: 156  getprop "sgs_kits"
+01097: 156  return
+01098: 159  name "xs"
+01103: 159  getprop "Cfg"
+01108: 159  getprop "System"
+01113: 159  getprop "sgs_vip_level_conf"
+01118: 159  return
+01119: 162  name "xs"
+01124: 162  getprop "Cfg"
+01129: 162  getprop "System"
+01134: 162  getprop "sgs_skill_effect"
+01139: 162  return
+01140: 165  name "xs"
+01145: 165  getprop "Cfg"
+01150: 165  getprop "System"
+01155: 165  getprop "sgs_user_level_conf"
+01160: 165  return
+01161: 168  name "xs"
+01166: 168  getprop "Cfg"
+01171: 168  getprop "System"
+01176: 168  getprop "sgs_random_name"
+01181: 168  return
+01182: 171  name "xs"
+01187: 171  getprop "Cfg"
+01192: 171  getprop "System"
+01197: 171  getprop "sgs_eated_exp_conf"
+01202: 171  return
+01203: 174  name "xs"
+01208: 174  getprop "Cfg"
+01213: 174  getprop "System"
+01218: 174  getprop "sgs_upgrade_coin_conf"
+01223: 174  return
+01224: 177  name "xs"
+01229: 177  getprop "Cfg"
+01234: 177  getprop "System"
+01239: 177  getprop "sgs_upgrade_exp_conf"
+01244: 177  return
+01245: 180  name "xs"
+01250: 180  getprop "Cfg"
+01255: 180  getprop "System"
+01260: 180  getprop "sgs_sell_conf"
+01265: 180  return
+01266: 183  name "xs"
+01271: 183  getprop "Cfg"
+01276: 183  getprop "System"
+01281: 183  getprop "sgs_insight_grow_type"
+01286: 183  return
+01287: 186  name "xs"
+01292: 186  getprop "Cfg"
+01297: 186  getprop "System"
+01302: 186  getprop "sgs_surrender"
+01307: 186  return
+01308: 189  name "xs"
+01313: 189  getprop "Cfg"
+01318: 189  getprop "System"
+01323: 189  getprop "sgs_general_surrender"
+01328: 189  return
+01329: 192  name "xs"
+01334: 192  getprop "Cfg"
+01339: 192  getprop "System"
+01344: 192  getprop "sgs_dungeon_plot_conf"
+01349: 192  return
+01350: 195  name "xs"
+01355: 195  getprop "Cfg"
+01360: 195  getprop "System"
+01365: 195  getprop "sgs_dungeon_plot_dialog"
+01370: 195  return
+01371: 198  name "xs"
+01376: 198  getprop "Cfg"
+01381: 198  getprop "System"
+01386: 198  getprop "sgs_global_conf"
+01391: 198  return
+01392: 201  name "xs"
+01397: 201  getprop "Cfg"
+01402: 201  getprop "System"
+01407: 201  getprop "sgs_refine_conf"
+01412: 201  return
+01413: 204  name "xs"
+01418: 204  getprop "Cfg"
+01423: 204  getprop "System"
+01428: 204  getprop "sgs_lieutenant_skill"
+01433: 204  return
+01434: 207  name "xs"
+01439: 207  getprop "Cfg"
+01444: 207  getprop "System"
+01449: 207  getprop "sgs_buddy_conf"
+01454: 207  return
+01455: 210  name "xs"
+01460: 210  getprop "Cfg"
+01465: 210  getprop "System"
+01470: 210  getprop "sgs_union_war_battle_conf"
+01475: 210  return
+01476: 212  name "xs"
+01481: 212  getprop "Cfg"
+01486: 212  getprop "System"
+01491: 212  getprop "sgs_dungeon_conf"
+01496: 212  return
+01497: 214  name "xs"
+01502: 214  getprop "Cfg"
+01507: 214  getprop "System"
+01512: 214  getprop "sgs_gem"
+01517: 214  return
+01518: 216  name "xs"
+01523: 216  getprop "Cfg"
+01528: 216  getprop "System"
+01533: 216  getprop "sgs_magic_buff_conf"
+01538: 216  return
+01539: 217  goto 2069 (+530)
+01544: 219  name "xs"
+01549: 219  getprop "Cfg"
+01554: 219  getprop "System"
+01559: 219  getprop "sgs_skill_advanced_conf"
+01564: 219  return
+01565: 220  goto 2069 (+504)
+01570: 222  name "xs"
+01575: 222  getprop "Cfg"
+01580: 222  getprop "System"
+01585: 222  getprop "sgs_world_war_schedule"
+01590: 222  return
+01591: 223  goto 2069 (+478)
+01596: 225  name "xs"
+01601: 225  getprop "Cfg"
+01606: 225  getprop "System"
+01611: 225  getprop "sgs_godness"
+01616: 225  return
+01617: 226  goto 2069 (+452)
+01622: 228  name "xs"
+01627: 228  getprop "Cfg"
+01632: 228  getprop "System"
+01637: 228  getprop "sgs_godness_skin"
+01642: 228  return
+01643: 229  goto 2069 (+426)
+01648: 231  name "xs"
+01653: 231  getprop "Cfg"
+01658: 231  getprop "System"
+01663: 231  getprop "sgs_hulao_reward_conf"
+01668: 231  return
+01669: 232  goto 2069 (+400)
+01674: 234  name "xs"
+01679: 234  getprop "Cfg"
+01684: 234  getprop "System"
+01689: 234  getprop "sgs_melt_conf"
+01694: 234  return
+01695: 236  name "xs"
+01700: 236  getprop "Cfg"
+01705: 236  getprop "System"
+01710: 236  getprop "sgs_function_level_conf"
+01715: 236  return
+01716: 237  goto 2069 (+353)
+01721: 239  name "xs"
+01726: 239  getprop "Cfg"
+01731: 239  getprop "System"
+01736: 239  getprop "sgs_meridian_top_conf"
+01741: 239  return
+01742: 240  goto 2069 (+327)
+01747: 242  name "xs"
+01752: 242  getprop "Cfg"
+01757: 242  getprop "System"
+01762: 242  getprop "sgs_meridian_conf"
+01767: 242  return
+01768: 243  goto 2069 (+301)
+01773: 245  name "xs"
+01778: 245  getprop "Cfg"
+01783: 245  getprop "System"
+01788: 245  getprop "sgs_meridian_point_conf"
+01793: 245  return
+01794: 246  goto 2069 (+275)
+01799: 248  name "xs"
+01804: 248  getprop "Cfg"
+01809: 248  getprop "System"
+01814: 248  getprop "sgs_godness_fates"
+01819: 248  return
+01820: 249  goto 2069 (+249)
+01825: 251  name "xs"
+01830: 251  getprop "Cfg"
+01835: 251  getprop "System"
+01840: 251  getprop "sgs_skill_melt_conf"
+01845: 251  return
+01846: 252  goto 2069 (+223)
+01851: 254  name "xs"
+01856: 254  getprop "Cfg"
+01861: 254  getprop "System"
+01866: 254  getprop "sgs_evolution"
+01871: 254  return
+01872: 255  goto 2069 (+197)
+01877: 257  name "xs"
+01882: 257  getprop "Cfg"
+01887: 257  getprop "System"
+01892: 257  getprop "sgs_evolution_open_conf"
+01897: 257  return
+01898: 258  goto 2069 (+171)
+01903: 260  name "xs"
+01908: 260  getprop "Cfg"
+01913: 260  getprop "System"
+01918: 260  getprop "sgs_evolution_buff_conf"
+01923: 260  return
+01924: 261  goto 2069 (+145)
+01929: 263  name "xs"
+01934: 263  getprop "Cfg"
+01939: 263  getprop "System"
+01944: 263  getprop "sgs_evolution_surrender"
+01949: 263  return
+01950: 264  goto 2069 (+119)
+01955: 266  name "xs"
+01960: 266  getprop "Cfg"
+01965: 266  getprop "System"
+01970: 266  getprop "sgs_beauty_conf_detail"
+01975: 266  return
+01976: 267  goto 2069 (+93)
+01981: 269  name "xs"
+01986: 269  getprop "Cfg"
+01991: 269  getprop "System"
+01996: 269  getprop "sgs_skill_refine_conf"
+02001: 269  return
+02002: 270  goto 2069 (+67)
+02007: 272  name "xs"
+02012: 272  dup
+02013: 272  callprop "log"
+02018: 272  swap
+02019: 272  notearg
+02020: 272  string "type = "
+02025: 272  getarg 0
+02028: 272  add
+02029: 272  notearg
+02030: 272  call 1
+02033: 272  pop
+02034: 273  name "xs"
+02039: 273  dup
+02040: 273  callprop "warn"
+02045: 273  swap
+02046: 273  notearg
+02047: 273  string "getCfgDataByType error! type "
+02052: 273  getarg 0
+02055: 273  add
+02056: 273  string " is not found!"
+02061: 273  add
+02062: 273  notearg
+02063: 273  call 1
+02066: 273  pop
+02067: 274  null
+02068: 274  return
+02069: 275  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:114 ---
+;; function object[6] getDefaultKey
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:278 ---
+loc   line  op
+----- ----  --
+main:
+00000: 279  getarg 0
+00003: 279  condswitch
+00004: 280  name "xs"
+00009: 280  getprop "Constant_CfgDataType_CombatLevel"
+00014: 280  case 474 (+460)
+00019: 283  name "xs"
+00024: 283  getprop "Constant_CfgDataType_Equipment"
+00029: 283  case 480 (+451)
+00034: 284  name "xs"
+00039: 284  getprop "Constant_CfgDataType_Equipment_Upgrade"
+00044: 284  case 480 (+436)
+00049: 287  name "xs"
+00054: 287  getprop "Constant_CfgDataType_General"
+00059: 287  case 486 (+427)
+00064: 290  name "xs"
+00069: 290  getprop "Constant_CfgDataType_GeneralLevel"
+00074: 290  case 492 (+418)
+00079: 291  name "xs"
+00084: 291  getprop "Constant_CfgDataType_General_Insight"
+00089: 291  case 492 (+403)
+00094: 294  name "xs"
+00099: 294  getprop "Constant_CfgDataType_Skill"
+00104: 294  case 498 (+394)
+00109: 297  name "xs"
+00114: 297  getprop "Constant_CfgDataType_Skill_Upgrade"
+00119: 297  case 504 (+385)
+00124: 300  name "xs"
+00129: 300  getprop "Constant_CfgDataType_Fate"
+00134: 300  case 510 (+376)
+00139: 303  name "xs"
+00144: 303  getprop "Constant_CfgDataType_Map"
+00149: 303  case 516 (+367)
+00154: 306  name "xs"
+00159: 306  getprop "Constant_CfgDataType_Res"
+00164: 306  case 522 (+358)
+00169: 309  name "xs"
+00174: 309  getprop "Constant_CfgDataType_i18n"
+00179: 309  case 528 (+349)
+00184: 312  name "xs"
+00189: 312  getprop "Constant_CfgDataType_Item"
+00194: 312  case 534 (+340)
+00199: 315  name "xs"
+00204: 315  getprop "Constant_CfgDataType_Kits"
+00209: 315  case 540 (+331)
+00214: 318  name "xs"
+00219: 318  getprop "Constant_CfgDataType_Vip"
+00224: 318  case 546 (+322)
+00229: 321  name "xs"
+00234: 321  getprop "Constant_CfgDataType_SkillEffect"
+00239: 321  case 552 (+313)
+00244: 324  name "xs"
+00249: 324  getprop "Constant_CfgDataType_Player_Upgrade"
+00254: 324  case 558 (+304)
+00259: 327  name "xs"
+00264: 327  getprop "Constant_CfgDataType_Random_Name"
+00269: 327  case 564 (+295)
+00274: 330  name "xs"
+00279: 330  getprop "Constant_CfgDataType_Eated_Exp"
+00284: 330  case 570 (+286)
+00289: 331  name "xs"
+00294: 331  getprop "Constant_CfgDataType_Upgrade_Coin"
+00299: 331  case 570 (+271)
+00304: 332  name "xs"
+00309: 332  getprop "Constant_CfgDataType_Upgrade_Exp"
+00314: 332  case 570 (+256)
+00319: 333  name "xs"
+00324: 333  getprop "Constant_CfgDataType_Sell"
+00329: 333  case 570 (+241)
+00334: 334  name "xs"
+00339: 334  getprop "Constant_CfgDataType_General_Insight_GrowType"
+00344: 334  case 570 (+226)
+00349: 335  name "xs"
+00354: 335  getprop "Constant_CfgDataType_Surrender"
+00359: 335  case 570 (+211)
+00364: 338  name "xs"
+00369: 338  getprop "Constant_CfgDataType_General_Surrender"
+00374: 338  case 576 (+202)
+00379: 341  name "xs"
+00384: 341  getprop "Constant_CfgDataType_Plot_Conf"
+00389: 341  case 582 (+193)
+00394: 344  name "xs"
+00399: 344  getprop "Constant_CfgDataType_Plot_Dialog"
+00404: 344  case 588 (+184)
+00409: 347  name "xs"
+00414: 347  getprop "Constant_CfgDataType_Global"
+00419: 347  case 594 (+175)
+00424: 350  name "xs"
+00429: 350  getprop "Constant_CfgDataType_Equ_Refine_GrowType"
+00434: 350  case 600 (+166)
+00439: 353  name "xs"
+00444: 353  getprop "Constant_CfgDataType_LieutennantAttrPlus"
+00449: 353  case 606 (+157)
+00454: 355  name "xs"
+00459: 355  getprop "Constant_CfgDataType_Beauty"
+00464: 355  case 612 (+148)
+00469: 355  default 618 (+149)
+00474: 281  string "0"
+00479: 281  return
+00480: 285  string "200000"
+00485: 285  return
+00486: 288  string "100000"
+00491: 288  return
+00492: 292  string "000000"
+00497: 292  return
+00498: 295  string "300000"
+00503: 295  return
+00504: 298  string "000000"
+00509: 298  return
+00510: 301  string "411003"
+00515: 301  return
+00516: 304  string "500001"
+00521: 304  return
+00522: 307  string "100000"
+00527: 307  return
+00528: 310  string "0000000"
+00533: 310  return
+00534: 313  string "700000"
+00539: 313  return
+00540: 316  string "000000"
+00545: 316  return
+00546: 319  string "1"
+00551: 319  return
+00552: 322  string "30300111"
+00557: 322  return
+00558: 325  string "1"
+00563: 325  return
+00564: 328  string "first_name"
+00569: 328  return
+00570: 336  string "1"
+00575: 336  return
+00576: 339  string "111005"
+00581: 339  return
+00582: 342  string "501005"
+00587: 342  return
+00588: 345  string "50100501"
+00593: 345  return
+00594: 348  string "Chaos_Unlock_Level"
+00599: 348  return
+00600: 351  string "1"
+00605: 351  return
+00606: 354  string "600001"
+00611: 354  return
+00612: 356  string "1"
+00617: 356  return
+00618: 358  name "xs"
+00623: 358  dup
+00624: 358  callprop "warn"
+00629: 358  swap
+00630: 358  notearg
+00631: 358  string "getCfgDataByType error! type "
+00636: 358  getarg 0
+00639: 358  add
+00640: 358  string " is not found!"
+00645: 358  add
+00646: 358  notearg
+00647: 358  call 1
+00650: 358  pop
+00651: 359  null
+00652: 359  return
+00653: 360  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CfgData.js:278 ---

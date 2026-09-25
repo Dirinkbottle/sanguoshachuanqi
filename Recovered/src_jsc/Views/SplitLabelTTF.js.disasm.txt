@@ -1,0 +1,470 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SplitLabelTTF.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=89 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SplitLabelTTF.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  66  name "xs"
+00005:  66  getprop "Views"
+00010:  66  name "cc"
+00015:  66  getprop "Node"
+00020:  66  dup
+00021:  66  callprop "extend"
+00026:  66  swap
+00027:  66  notearg
+00028:  66  newinit 1
+00033:  67  lambda (function () {
+    [sourceless code]
+})
+00038:  67  initprop "ctor"
+00043:  71  lambda (function () {
+    [sourceless code]
+})
+00048:  71  initprop "init"
+00053: 103  lambda (function () {
+    [sourceless code]
+})
+00058: 103  initprop "SplitLable"
+00063: 103  endinit
+00064: 103  notearg
+00065: 103  call 1
+00068: 103  setprop "SplitLableTTF"
+00073: 103  popv
+00074: 131  name "xs"
+00079: 131  getprop "Views"
+00084: 131  getprop "SplitLableTTF"
+00089: 131  lambda (function () {
+    [sourceless code]
+})
+00094: 131  setprop "create"
+00099: 131  popv
+00100: 138  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SplitLabelTTF.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SplitLabelTTF.js:67 ---
+loc   line  op
+----- ----  --
+main:
+00000:  68  this
+00001:  68  dup
+00002:  68  callprop "_super"
+00007:  68  swap
+00008:  68  notearg
+00009:  68  call 0
+00012:  68  pop
+00013:  69  name "cc"
+00018:  69  dup
+00019:  69  callprop "associateWithNative"
+00024:  69  swap
+00025:  69  notearg
+00026:  69  this
+00027:  69  notearg
+00028:  69  name "cc"
+00033:  69  getprop "Node"
+00038:  69  notearg
+00039:  69  call 2
+00042:  69  pop
+00043:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SplitLabelTTF.js:67 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=8
+;; arg[0] format
+;; local[0] y
+;; local[1] flag
+;; local[2] nodeHeight
+;; local[3] nodeWidth
+;; local[4] i
+;; local[5] strInfo
+;; local[6] size
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SplitLabelTTF.js:71 ---
+loc   line  op
+----- ----  --
+main:
+00000:  72  this
+00001:  72  dup
+00002:  72  callprop "_super"
+00007:  72  swap
+00008:  72  notearg
+00009:  72  call 0
+00012:  72  not
+00013:  72  ifeq 20 (+7)
+00018:  73  false
+00019:  73  return
+00020:  75  zero
+00021:  75  setlocal 0
+00024:  75  pop
+00025:  76  false
+00026:  76  setlocal 1
+00029:  76  pop
+00030:  77  zero
+00031:  77  setlocal 2
+00034:  77  pop
+00035:  78  zero
+00036:  78  setlocal 3
+00039:  78  pop
+00040:  79  zero
+00041:  79  setlocal 4
+00044:  79  pop
+00045:  79  goto 177 (+132)
+00050:  80  loophead
+00051:  80  getarg 0
+00054:  80  getlocal 4
+00057:  80  getelem
+00058:  80  setlocal 5
+00061:  80  pop
+00062:  81  getlocal 5
+00065:  81  name "Array"
+00070:  81  instanceof
+00071:  81  ifeq 159 (+88)
+00076:  82  this
+00077:  82  dup
+00078:  82  callprop "SplitLable"
+00083:  82  swap
+00084:  82  notearg
+00085:  82  getlocal 5
+00088:  82  notearg
+00089:  82  this
+00090:  82  notearg
+00091:  82  getlocal 0
+00094:  82  notearg
+00095:  82  call 3
+00098:  82  setlocal 6
+00101:  82  pop
+00102:  83  getlocal 0
+00105:  83  getlocal 6
+00108:  83  getprop "height"
+00113:  83  add
+00114:  83  setlocal 0
+00117:  83  pop
+00118:  84  getlocal 6
+00121:  84  getprop "width"
+00126:  84  getlocal 3
+00129:  84  gt
+00130:  84  ifeq 147 (+17)
+00135:  85  getlocal 6
+00138:  85  getprop "width"
+00143:  85  setlocal 3
+00146:  85  pop
+00147:  87  getlocal 0
+00150:  87  setlocal 2
+00153:  87  pop
+00154:  87  goto 164 (+10)
+00159:  89  true
+00160:  89  setlocal 1
+00163:  89  pop
+00164:  79  inclocal 9
+00167:  79  getlocal 4
+00170:  79  pos
+00171:  79  one
+00172:  79  add
+00173:  79  setlocal 4
+00176:  79  pop
+00177:  79  loopentry
+00178:  79  getlocal 4
+00181:  79  getarg 0
+00184:  79  length "length"
+00189:  79  lt
+00190:  79  ifne 50 (-140)
+00195:  92  getlocal 1
+00198:  92  ifeq 253 (+55)
+00203:  93  this
+00204:  93  dup
+00205:  93  callprop "SplitLable"
+00210:  93  swap
+00211:  93  notearg
+00212:  93  getarg 0
+00215:  93  notearg
+00216:  93  this
+00217:  93  notearg
+00218:  93  getlocal 0
+00221:  93  notearg
+00222:  93  call 3
+00225:  93  setlocal 6
+00228:  93  pop
+00229:  94  getlocal 6
+00232:  94  getprop "width"
+00237:  94  setlocal 3
+00240:  94  pop
+00241:  95  getlocal 6
+00244:  95  getprop "height"
+00249:  95  setlocal 2
+00252:  95  pop
+00253:  98  this
+00254:  98  dup
+00255:  98  callprop "setContentSize"
+00260:  98  swap
+00261:  98  notearg
+00262:  98  name "cc"
+00267:  98  dup
+00268:  98  callprop "size"
+00273:  98  swap
+00274:  98  notearg
+00275:  98  getlocal 3
+00278:  98  notearg
+00279:  98  getlocal 2
+00282:  98  notearg
+00283:  98  call 2
+00286:  98  notearg
+00287:  98  call 1
+00290:  98  pop
+00291: 100  true
+00292: 100  return
+00293: 100  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SplitLabelTTF.js:71 ---
+;; function object[2] SplitLable
+;; function metadata object[2] nargs=3 bindings=9
+;; arg[0] js
+;; arg[1] fatherNode
+;; arg[2] y
+;; local[0] x
+;; local[1] height
+;; local[2] i
+;; local[3] strInfo
+;; local[4] label
+;; local[5] size
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SplitLabelTTF.js:103 ---
+loc   line  op
+----- ----  --
+main:
+00000: 104  zero
+00001: 104  setlocal 0
+00004: 104  pop
+00005: 105  zero
+00006: 105  setlocal 1
+00009: 105  pop
+00010: 106  zero
+00011: 106  setlocal 2
+00014: 106  pop
+00015: 106  goto 423 (+408)
+00020: 107  loophead
+00021: 107  getarg 0
+00024: 107  getlocal 2
+00027: 107  getelem
+00028: 107  setlocal 3
+00031: 107  pop
+00032: 108  null
+00033: 108  setlocal 4
+00036: 108  pop
+00037: 109  getlocal 3
+00040: 109  getprop "labelId"
+00045: 109  ifeq 94 (+49)
+00050: 110  name "xs"
+00055: 110  getprop "Factorys"
+00060: 110  getprop "Label"
+00065: 110  dup
+00066: 110  callprop "createByLabelId"
+00071: 110  swap
+00072: 110  notearg
+00073: 110  getlocal 3
+00076: 110  getprop "labelId"
+00081: 110  notearg
+00082: 110  call 1
+00085: 110  setlocal 4
+00088: 110  pop
+00089: 110  goto 236 (+147)
+00094: 111  getlocal 3
+00097: 111  getprop "fontId"
+00102: 111  ifeq 160 (+58)
+00107: 112  name "xs"
+00112: 112  getprop "Factorys"
+00117: 112  getprop "LabelTTF"
+00122: 112  dup
+00123: 112  callprop "create"
+00128: 112  swap
+00129: 112  notearg
+00130: 112  getlocal 3
+00133: 112  getprop "str"
+00138: 112  notearg
+00139: 112  getlocal 3
+00142: 112  getprop "fontId"
+00147: 112  notearg
+00148: 112  call 2
+00151: 112  setlocal 4
+00154: 112  pop
+00155: 112  goto 236 (+81)
+00160: 114  name "cc"
+00165: 114  getprop "LabelTTF"
+00170: 114  dup
+00171: 114  callprop "create"
+00176: 114  swap
+00177: 114  notearg
+00178: 114  getlocal 3
+00181: 114  getprop "str"
+00186: 114  notearg
+00187: 114  getlocal 3
+00190: 114  getprop "font"
+00195: 114  notearg
+00196: 114  getlocal 3
+00199: 114  getprop "size"
+00204: 114  notearg
+00205: 114  call 3
+00208: 114  setlocal 4
+00211: 114  pop
+00212: 115  getlocal 4
+00215: 115  dup
+00216: 115  callprop "setColor"
+00221: 115  swap
+00222: 115  notearg
+00223: 115  getlocal 3
+00226: 115  getprop "color"
+00231: 115  notearg
+00232: 115  call 1
+00235: 115  pop
+00236: 117  getlocal 4
+00239: 117  dup
+00240: 117  callprop "setAnchorPoint"
+00245: 117  swap
+00246: 117  notearg
+00247: 117  name "cc"
+00252: 117  dup
+00253: 117  callprop "p"
+00258: 117  swap
+00259: 117  notearg
+00260: 117  zero
+00261: 117  notearg
+00262: 117  zero
+00263: 117  notearg
+00264: 117  call 2
+00267: 117  notearg
+00268: 117  call 1
+00271: 117  pop
+00272: 118  getlocal 4
+00275: 118  dup
+00276: 118  callprop "setPosition"
+00281: 118  swap
+00282: 118  notearg
+00283: 118  name "cc"
+00288: 118  dup
+00289: 118  callprop "p"
+00294: 118  swap
+00295: 118  notearg
+00296: 118  getlocal 0
+00299: 118  notearg
+00300: 118  getarg 2
+00303: 118  notearg
+00304: 118  call 2
+00307: 118  notearg
+00308: 118  call 1
+00311: 118  pop
+00312: 119  name "xs"
+00317: 119  getprop "Utils"
+00322: 119  getprop "Node"
+00327: 119  dup
+00328: 119  callprop "attachNodes"
+00333: 119  swap
+00334: 119  notearg
+00335: 119  getarg 1
+00338: 119  notearg
+00339: 119  getlocal 4
+00342: 119  notearg
+00343: 119  call 2
+00346: 119  pop
+00347: 120  getlocal 4
+00350: 120  dup
+00351: 120  callprop "getContentSize"
+00356: 120  swap
+00357: 120  notearg
+00358: 120  call 0
+00361: 120  setlocal 5
+00364: 120  pop
+00365: 121  getlocal 0
+00368: 121  getlocal 5
+00371: 121  getprop "width"
+00376: 121  add
+00377: 121  setlocal 0
+00380: 121  pop
+00381: 122  getlocal 5
+00384: 122  getprop "height"
+00389: 122  getlocal 1
+00392: 122  gt
+00393: 122  ifeq 410 (+17)
+00398: 123  getlocal 5
+00401: 123  getprop "height"
+00406: 123  setlocal 1
+00409: 123  pop
+00410: 106  inclocal 9
+00413: 106  getlocal 2
+00416: 106  pos
+00417: 106  one
+00418: 106  add
+00419: 106  setlocal 2
+00422: 106  pop
+00423: 106  loopentry
+00424: 106  getlocal 2
+00427: 106  getarg 0
+00430: 106  length "length"
+00435: 106  lt
+00436: 106  ifne 20 (-416)
+00441: 127  name "cc"
+00446: 127  dup
+00447: 127  callprop "size"
+00452: 127  swap
+00453: 127  notearg
+00454: 127  getlocal 0
+00457: 127  notearg
+00458: 127  getlocal 1
+00461: 127  notearg
+00462: 127  call 2
+00465: 127  return
+00466: 127  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SplitLabelTTF.js:103 ---
+;; function object[3] create
+;; function metadata object[3] nargs=1 bindings=2
+;; arg[0] format
+;; local[0] label
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SplitLabelTTF.js:131 ---
+loc   line  op
+----- ----  --
+main:
+00000: 132  name "xs"
+00005: 132  getprop "Views"
+00010: 132  getprop "SplitLableTTF"
+00015: 132  undefined
+00016: 132  notearg
+00017: 132  new 0
+00020: 132  setlocal 0
+00023: 132  pop
+00024: 133  getlocal 0
+00027: 133  and 51 (+24)
+00032: 133  pop
+00033: 133  getlocal 0
+00036: 133  dup
+00037: 133  callprop "init"
+00042: 133  swap
+00043: 133  notearg
+00044: 133  getarg 0
+00047: 133  notearg
+00048: 133  call 1
+00051: 133  ifeq 60 (+9)
+00056: 134  getlocal 0
+00059: 134  return
+00060: 136  name "xs"
+00065: 136  dup
+00066: 136  callprop "warn"
+00071: 136  swap
+00072: 136  notearg
+00073: 136  string "xs.Views.SplitLableTTF.create error!"
+00078: 136  notearg
+00079: 136  call 1
+00082: 136  pop
+00083: 137  null
+00084: 137  return
+00085: 137  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SplitLabelTTF.js:131 ---

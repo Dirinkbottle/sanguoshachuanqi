@@ -1,0 +1,1159 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Libs/Views/Button/Factory.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=94 object[0]
+;; FUNCTION-MAP kind=lambda offset=104 object[1]
+;; FUNCTION-MAP kind=lambda offset=114 object[2]
+;; FUNCTION-MAP kind=lambda offset=124 object[3]
+;; FUNCTION-MAP kind=lambda offset=134 object[4]
+;; FUNCTION-MAP kind=lambda offset=144 object[5]
+;; FUNCTION-MAP kind=lambda offset=154 object[6]
+;; FUNCTION-MAP kind=lambda offset=164 object[7]
+;; FUNCTION-MAP kind=lambda offset=174 object[8]
+;; FUNCTION-MAP kind=lambda offset=184 object[9]
+;; FUNCTION-MAP kind=lambda offset=194 object[10]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Libs"
+00010:  10  getprop "Views"
+00015:  10  getprop "Button"
+00020:  10  name "xs"
+00025:  10  getprop "Libs"
+00030:  10  getprop "Views"
+00035:  10  getprop "Button"
+00040:  10  getprop "Factory"
+00045:  10  or 205 (+160)
+00050:  10  pop
+00051:  10  newinit 1
+00056:  12  string "xs.Libs.Views.Button.Factory"
+00061:  12  initprop "name"
+00066:  14  name "cc"
+00071:  14  dup
+00072:  14  callprop "size"
+00077:  14  swap
+00078:  14  notearg
+00079:  14  uint16 200
+00082:  14  notearg
+00083:  14  int8 100
+00085:  14  notearg
+00086:  14  call 2
+00089:  14  initprop "defaultSize"
+00094:  16  lambda (function () {
+    [sourceless code]
+})
+00099:  16  initprop "_createWithFont"
+00104: 130  lambda (function () {
+    [sourceless code]
+})
+00109: 130  initprop "create"
+00114: 157  lambda (function () {
+    [sourceless code]
+})
+00119: 157  initprop "createByStyleId"
+00124: 163  lambda (function () {
+    [sourceless code]
+})
+00129: 163  initprop "getCfg"
+00134: 168  lambda (function () {
+    [sourceless code]
+})
+00139: 168  initprop "_getCfg"
+00144: 186  lambda (function () {
+    [sourceless code]
+})
+00149: 186  initprop "_getStyleCfg"
+00154: 221  lambda (function () {
+    [sourceless code]
+})
+00159: 221  initprop "createWithStringId"
+00164: 228  lambda (function () {
+    [sourceless code]
+})
+00169: 228  initprop "createWithString"
+00174: 235  lambda (function () {
+    [sourceless code]
+})
+00179: 235  initprop "createInvisible"
+00184: 249  lambda (function () {
+    [sourceless code]
+})
+00189: 249  initprop "createInvisibleWithChild"
+00194: 274  lambda (function () {
+    [sourceless code]
+})
+00199: 274  initprop "createInvisibleWithParent"
+00204: 274  endinit
+00205: 274  setprop "Factory"
+00210: 274  popv
+00211: 298  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:1 ---
+;; function object[0] _createWithFont
+;; function metadata object[0] nargs=5 bindings=15
+;; arg[0] fontType
+;; arg[1] fontIds
+;; arg[2] bgCfg
+;; arg[3] str
+;; arg[4] size
+;; local[0] _str
+;; local[1] _ret
+;; local[2] _spriteAreaCfg
+;; local[3] _stateArr
+;; local[4] i
+;; local[5] _bgId
+;; local[6] _bgSpriteP9
+;; local[7] _fontId
+;; local[8] _label
+;; local[9] _size
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  getarg 3
+00003:  20  or 14 (+11)
+00008:  20  pop
+00009:  20  string ""
+00014:  20  setlocal 0
+00017:  20  pop
+00018:  22  name "xs"
+00023:  22  getprop "Libs"
+00028:  22  getprop "Views"
+00033:  22  getprop "Button"
+00038:  22  dup
+00039:  22  callprop "create"
+00044:  22  swap
+00045:  22  notearg
+00046:  22  call 0
+00049:  22  setlocal 1
+00052:  22  pop
+00053:  23  getlocal 1
+00056:  23  dup
+00057:  23  callprop "setAnchorPoint"
+00062:  23  swap
+00063:  23  notearg
+00064:  23  name "xs"
+00069:  23  getprop "ap_c"
+00074:  23  notearg
+00075:  23  call 1
+00078:  23  pop
+00079:  24  getlocal 1
+00082:  24  dup
+00083:  24  callprop "setMargins"
+00088:  24  swap
+00089:  24  notearg
+00090:  24  zero
+00091:  24  notearg
+00092:  24  zero
+00093:  24  notearg
+00094:  24  call 2
+00097:  24  pop
+00098:  26  getarg 4
+00101:  26  ifeq 125 (+24)
+00106:  28  getlocal 1
+00109:  28  dup
+00110:  28  callprop "setPreferredSize"
+00115:  28  swap
+00116:  28  notearg
+00117:  28  getarg 4
+00120:  28  notearg
+00121:  28  call 1
+00124:  28  pop
+00125:  31  name "xs"
+00130:  31  getprop "Cfg"
+00135:  31  getprop "Sprite"
+00140:  31  getarg 2
+00143:  31  getprop "bgArea"
+00148:  31  getelem
+00149:  31  setlocal 2
+00152:  31  pop
+00153:  34  name "xs"
+00158:  34  dup
+00159:  34  callprop "assert"
+00164:  34  swap
+00165:  34  notearg
+00166:  34  getlocal 2
+00169:  34  notearg
+00170:  34  string "_spriteAreaCfg error"
+00175:  34  notearg
+00176:  34  getarg 2
+00179:  34  notearg
+00180:  34  call 3
+00183:  34  pop
+00184:  37  newarray 4
+00188:  38  name "cc"
+00193:  38  getprop "CONTROL_STATE_NORMAL"
+00198:  38  initelem_array 0
+00202:  39  name "cc"
+00207:  39  getprop "CONTROL_STATE_HIGHLIGHTED"
+00212:  39  initelem_array 1
+00216:  40  name "cc"
+00221:  40  getprop "CONTROL_STATE_DISABLED"
+00226:  40  initelem_array 2
+00230:  41  name "cc"
+00235:  41  getprop "CONTROL_STATE_SELECTED"
+00240:  41  initelem_array 3
+00244:  41  endinit
+00245:  41  setlocal 3
+00248:  41  pop
+00249:  45  zero
+00250:  45  setlocal 4
+00253:  45  pop
+00254:  45  goto 759 (+505)
+00259:  46  loophead
+00260:  46  getarg 2
+00263:  46  getprop "bgIds"
+00268:  46  getlocal 4
+00271:  46  getelem
+00272:  46  or 288 (+16)
+00277:  46  pop
+00278:  46  getarg 2
+00281:  46  getprop "bgIds"
+00286:  46  zero
+00287:  46  getelem
+00288:  46  setlocal 5
+00291:  46  pop
+00292:  51  getlocal 1
+00295:  51  dup
+00296:  51  callprop "setBackgroundSpriteFrameForState"
+00301:  51  swap
+00302:  51  notearg
+00303:  51  getlocal 2
+00306:  51  getlocal 5
+00309:  51  getelem
+00310:  51  getprop "frameName"
+00315:  51  notearg
+00316:  51  getlocal 3
+00319:  51  getlocal 4
+00322:  51  getelem
+00323:  51  notearg
+00324:  51  call 2
+00327:  51  pop
+00328:  52  getarg 2
+00331:  52  getprop "bgFlipX"
+00336:  52  true
+00337:  52  stricteq
+00338:  52  ifeq 388 (+50)
+00343:  53  getlocal 1
+00346:  53  dup
+00347:  53  callprop "getBackgroundSpriteForState"
+00352:  53  swap
+00353:  53  notearg
+00354:  53  getlocal 3
+00357:  53  getlocal 4
+00360:  53  getelem
+00361:  53  notearg
+00362:  53  call 1
+00365:  53  setlocal 6
+00368:  53  pop
+00369:  59  getlocal 6
+00372:  59  dup
+00373:  59  callprop "setRotationY"
+00378:  59  swap
+00379:  59  notearg
+00380:  59  uint16 180
+00383:  59  notearg
+00384:  59  call 1
+00387:  59  pop
+00388:  65  getarg 0
+00391:  65  name "xs"
+00396:  65  getprop "Constant_View_Btn_TTF_V2"
+00401:  65  stricteq
+00402:  65  ifeq 547 (+145)
+00407:  66  getarg 2
+00410:  66  getprop "fontIds"
+00415:  66  getlocal 4
+00418:  66  getelem
+00419:  66  or 435 (+16)
+00424:  66  pop
+00425:  66  getarg 2
+00428:  66  getprop "fontIds"
+00433:  66  zero
+00434:  66  getelem
+00435:  66  setlocal 7
+00438:  66  pop
+00439:  68  name "xs"
+00444:  68  getprop "Factorys"
+00449:  68  getprop "LabelTTF"
+00454:  68  dup
+00455:  68  callprop "create"
+00460:  68  swap
+00461:  68  notearg
+00462:  68  getlocal 0
+00465:  68  notearg
+00466:  68  getlocal 7
+00469:  68  notearg
+00470:  68  call 2
+00473:  68  setlocal 8
+00476:  68  pop
+00477:  70  getlocal 1
+00480:  70  dup
+00481:  70  callprop "setTitleColorForState"
+00486:  70  swap
+00487:  70  notearg
+00488:  70  getlocal 8
+00491:  70  dup
+00492:  70  callprop "getColor"
+00497:  70  swap
+00498:  70  notearg
+00499:  70  call 0
+00502:  70  notearg
+00503:  70  getlocal 3
+00506:  70  getlocal 4
+00509:  70  getelem
+00510:  70  notearg
+00511:  70  call 2
+00514:  70  pop
+00515:  71  getlocal 1
+00518:  71  dup
+00519:  71  callprop "setTitleLabelForState"
+00524:  71  swap
+00525:  71  notearg
+00526:  71  getlocal 8
+00529:  71  notearg
+00530:  71  getlocal 3
+00533:  71  getlocal 4
+00536:  71  getelem
+00537:  71  notearg
+00538:  71  call 2
+00541:  71  pop
+00542:  71  goto 717 (+175)
+00547:  73  getarg 0
+00550:  73  name "xs"
+00555:  73  getprop "Constant_View_Btn_BMF_V2"
+00560:  73  stricteq
+00561:  73  ifeq 668 (+107)
+00566:  75  getarg 2
+00569:  75  getprop "fontIds"
+00574:  75  getlocal 4
+00577:  75  getelem
+00578:  75  or 594 (+16)
+00583:  75  pop
+00584:  75  getarg 2
+00587:  75  getprop "fontIds"
+00592:  75  zero
+00593:  75  getelem
+00594:  75  setlocal 7
+00597:  75  pop
+00598:  77  name "xs"
+00603:  77  getprop "Factorys"
+00608:  77  getprop "LabelBMFont"
+00613:  77  dup
+00614:  77  callprop "create"
+00619:  77  swap
+00620:  77  notearg
+00621:  77  getlocal 0
+00624:  77  notearg
+00625:  77  getlocal 7
+00628:  77  notearg
+00629:  77  call 2
+00632:  77  setlocal 8
+00635:  77  pop
+00636:  78  getlocal 1
+00639:  78  dup
+00640:  78  callprop "setTitleLabelForState"
+00645:  78  swap
+00646:  78  notearg
+00647:  78  getlocal 8
+00650:  78  notearg
+00651:  78  getlocal 3
+00654:  78  getlocal 4
+00657:  78  getelem
+00658:  78  notearg
+00659:  78  call 2
+00662:  78  pop
+00663:  78  goto 717 (+54)
+00668:  81  getarg 0
+00671:  81  name "xs"
+00676:  81  getprop "Constant_View_Btn_NoneFont"
+00681:  81  stricteq
+00682:  81  ifeq 692 (+10)
+00687:  81  goto 717 (+30)
+00692:  84  name "xs"
+00697:  84  dup
+00698:  84  callprop "assert"
+00703:  84  swap
+00704:  84  notearg
+00705:  84  false
+00706:  84  notearg
+00707:  84  string "fontType error"
+00712:  84  notearg
+00713:  84  call 2
+00716:  84  pop
+00717:  88  getlocal 1
+00720:  88  dup
+00721:  88  callprop "setTitleForState"
+00726:  88  swap
+00727:  88  notearg
+00728:  88  getlocal 0
+00731:  88  notearg
+00732:  88  getlocal 3
+00735:  88  getlocal 4
+00738:  88  getelem
+00739:  88  notearg
+00740:  88  call 2
+00743:  88  pop
+00744:  45  localinc 11
+00747:  45  getlocal 4
+00750:  45  pos
+00751:  45  dup
+00752:  45  one
+00753:  45  add
+00754:  45  setlocal 4
+00757:  45  pop
+00758:  45  pop
+00759:  45  loopentry
+00760:  45  getlocal 4
+00763:  45  getlocal 3
+00766:  45  length "length"
+00771:  45  lt
+00772:  45  ifne 259 (-513)
+00777: 104  getlocal 9
+00780: 104  pop
+00781: 105  getarg 4
+00784: 105  ifeq 794 (+10)
+00789: 105  goto 881 (+92)
+00794: 111  getarg 2
+00797: 111  getprop "bgIds"
+00802: 111  zero
+00803: 111  getelem
+00804: 111  setlocal 5
+00807: 111  pop
+00808: 113  name "xs"
+00813: 113  getprop "Factorys"
+00818: 113  getprop "Sprite"
+00823: 113  dup
+00824: 113  callprop "create"
+00829: 113  swap
+00830: 113  notearg
+00831: 113  getlocal 5
+00834: 113  notearg
+00835: 113  getarg 2
+00838: 113  getprop "bgArea"
+00843: 113  notearg
+00844: 113  call 2
+00847: 113  dup
+00848: 113  callprop "getContentSize"
+00853: 113  swap
+00854: 113  notearg
+00855: 113  call 0
+00858: 113  setlocal 9
+00861: 113  pop
+00862: 114  getlocal 1
+00865: 114  dup
+00866: 114  callprop "setPreferredSize"
+00871: 114  swap
+00872: 114  notearg
+00873: 114  getlocal 9
+00876: 114  notearg
+00877: 114  call 1
+00880: 114  pop
+00881: 121  getarg 2
+00884: 121  getprop "label_ap"
+00889: 121  ifeq 918 (+29)
+00894: 122  getlocal 1
+00897: 122  dup
+00898: 122  callprop "setLabelAnchorPoint"
+00903: 122  swap
+00904: 122  notearg
+00905: 122  getarg 2
+00908: 122  getprop "label_ap"
+00913: 122  notearg
+00914: 122  call 1
+00917: 122  pop
+00918: 125  getlocal 1
+00921: 125  return
+00922: 125  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:16 ---
+;; function object[1] create
+;; function metadata object[1] nargs=1 bindings=4
+;; arg[0] btnId
+;; local[0] _cfg
+;; local[1] _cfgStyle
+;; local[2] _str
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:130 ---
+loc   line  op
+----- ----  --
+main:
+00000: 132  this
+00001: 132  dup
+00002: 132  callprop "_getCfg"
+00007: 132  swap
+00008: 132  notearg
+00009: 132  getarg 0
+00012: 132  notearg
+00013: 132  call 1
+00016: 132  setlocal 0
+00019: 132  pop
+00020: 134  this
+00021: 134  dup
+00022: 134  callprop "_getStyleCfg"
+00027: 134  swap
+00028: 134  notearg
+00029: 134  getlocal 0
+00032: 134  getprop "styleId"
+00037: 134  notearg
+00038: 134  call 1
+00041: 134  setlocal 1
+00044: 134  pop
+00045: 137  getlocal 2
+00048: 137  pop
+00049: 139  getlocal 0
+00052: 139  getprop "stringId"
+00057: 139  ifeq 106 (+49)
+00062: 140  name "xs"
+00067: 140  getprop "Tools"
+00072: 140  getprop "Ml"
+00077: 140  dup
+00078: 140  callprop "createString"
+00083: 140  swap
+00084: 140  notearg
+00085: 140  getlocal 0
+00088: 140  getprop "stringId"
+00093: 140  notearg
+00094: 140  call 1
+00097: 140  setlocal 2
+00100: 140  pop
+00101: 140  goto 145 (+44)
+00106: 142  getlocal 0
+00109: 142  getprop "string"
+00114: 142  ifeq 136 (+22)
+00119: 143  getlocal 0
+00122: 143  getprop "string"
+00127: 143  setlocal 2
+00130: 143  pop
+00131: 143  goto 145 (+14)
+00136: 146  string ""
+00141: 146  setlocal 2
+00144: 146  pop
+00145: 150  this
+00146: 150  dup
+00147: 150  callprop "_createWithFont"
+00152: 150  swap
+00153: 150  notearg
+00154: 150  getlocal 1
+00157: 150  getprop "type"
+00162: 150  notearg
+00163: 150  getlocal 1
+00166: 150  getprop "fontIds"
+00171: 150  or 182 (+11)
+00176: 150  pop
+00177: 150  newarray 0
+00181: 150  endinit
+00182: 150  notearg
+00183: 150  getlocal 1
+00186: 150  notearg
+00187: 150  getlocal 2
+00190: 150  notearg
+00191: 150  getlocal 1
+00194: 150  getprop "size"
+00199: 150  notearg
+00200: 150  call 5
+00203: 150  return
+00204: 150  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:130 ---
+;; function object[2] createByStyleId
+;; function metadata object[2] nargs=2 bindings=3
+;; arg[0] styleId
+;; arg[1] string
+;; local[0] _cfgStyle
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:157 ---
+loc   line  op
+----- ----  --
+main:
+00000: 158  this
+00001: 158  dup
+00002: 158  callprop "_getStyleCfg"
+00007: 158  swap
+00008: 158  notearg
+00009: 158  getarg 0
+00012: 158  notearg
+00013: 158  call 1
+00016: 158  setlocal 0
+00019: 158  pop
+00020: 159  this
+00021: 159  dup
+00022: 159  callprop "_createWithFont"
+00027: 159  swap
+00028: 159  notearg
+00029: 159  getlocal 0
+00032: 159  getprop "type"
+00037: 159  notearg
+00038: 159  getlocal 0
+00041: 159  getprop "fontIds"
+00046: 159  or 57 (+11)
+00051: 159  pop
+00052: 159  newarray 0
+00056: 159  endinit
+00057: 159  notearg
+00058: 159  getlocal 0
+00061: 159  notearg
+00062: 159  getarg 1
+00065: 159  or 76 (+11)
+00070: 159  pop
+00071: 159  string ""
+00076: 159  notearg
+00077: 159  getlocal 0
+00080: 159  getprop "size"
+00085: 159  notearg
+00086: 159  call 5
+00089: 159  return
+00090: 159  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:157 ---
+;; function object[3] getCfg
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] btnId
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:163 ---
+loc   line  op
+----- ----  --
+main:
+00000: 164  this
+00001: 164  dup
+00002: 164  callprop "_getCfg"
+00007: 164  swap
+00008: 164  notearg
+00009: 164  getarg 0
+00012: 164  notearg
+00013: 164  call 1
+00016: 164  return
+00017: 164  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:163 ---
+;; function object[4] _getCfg
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] btnId
+;; local[0] _cfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:168 ---
+loc   line  op
+----- ----  --
+main:
+00000: 169  name "xs"
+00005: 169  getprop "Cfg"
+00010: 169  getprop "Btn"
+00015: 169  getarg 0
+00018: 169  getelem
+00019: 169  setlocal 0
+00022: 169  pop
+00023: 172  getlocal 0
+00026: 172  not
+00027: 172  ifeq 88 (+61)
+00032: 173  this
+00033: 173  dup
+00034: 173  callprop "warn"
+00039: 173  swap
+00040: 173  notearg
+00041: 173  string "_cfg cant find,use default:"
+00046: 173  getarg 0
+00049: 173  add
+00050: 173  notearg
+00051: 173  call 1
+00054: 173  pop
+00055: 174  getlocal 0
+00058: 174  or 84 (+26)
+00063: 174  pop
+00064: 174  name "xs"
+00069: 174  getprop "Cfg"
+00074: 174  getprop "Btn"
+00079: 174  getprop "Default"
+00084: 174  setlocal 0
+00087: 174  pop
+00088: 178  this
+00089: 178  dup
+00090: 178  callprop "assert"
+00095: 178  swap
+00096: 178  notearg
+00097: 178  getlocal 0
+00100: 178  getprop "styleId"
+00105: 178  notearg
+00106: 178  string "need styleId"
+00111: 178  notearg
+00112: 178  getlocal 0
+00115: 178  notearg
+00116: 178  call 3
+00119: 178  pop
+00120: 181  getlocal 0
+00123: 181  return
+00124: 181  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:168 ---
+;; function object[5] _getStyleCfg
+;; function metadata object[5] nargs=1 bindings=3
+;; arg[0] btnStyleId
+;; local[0] _cfg
+;; local[1] _type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:186 ---
+loc   line  op
+----- ----  --
+main:
+00000: 187  name "xs"
+00005: 187  getprop "Cfg"
+00010: 187  getprop "BtnStyle"
+00015: 187  getarg 0
+00018: 187  getelem
+00019: 187  setlocal 0
+00022: 187  pop
+00023: 190  getlocal 0
+00026: 190  not
+00027: 190  ifeq 88 (+61)
+00032: 191  this
+00033: 191  dup
+00034: 191  callprop "warn"
+00039: 191  swap
+00040: 191  notearg
+00041: 191  string "_cfg cant find,use default:"
+00046: 191  getarg 0
+00049: 191  add
+00050: 191  notearg
+00051: 191  call 1
+00054: 191  pop
+00055: 192  getlocal 0
+00058: 192  or 84 (+26)
+00063: 192  pop
+00064: 192  name "xs"
+00069: 192  getprop "Cfg"
+00074: 192  getprop "BtnStyle"
+00079: 192  getprop "Default"
+00084: 192  setlocal 0
+00087: 192  pop
+00088: 196  getlocal 0
+00091: 196  getprop "type"
+00096: 196  name "xs"
+00101: 196  getprop "Constant_View_Btn_TTF_V2"
+00106: 196  stricteq
+00107: 196  ifeq 117 (+10)
+00112: 196  goto 222 (+110)
+00117: 197  getlocal 0
+00120: 197  getprop "type"
+00125: 197  name "xs"
+00130: 197  getprop "Constant_View_Btn_BMF_V2"
+00135: 197  stricteq
+00136: 197  ifeq 146 (+10)
+00141: 197  goto 222 (+81)
+00146: 198  getlocal 0
+00149: 198  getprop "type"
+00154: 198  name "xs"
+00159: 198  getprop "Constant_View_Btn_NoneFont"
+00164: 198  stricteq
+00165: 198  ifeq 175 (+10)
+00170: 198  goto 222 (+52)
+00175: 203  this
+00176: 203  dup
+00177: 203  callprop "warn"
+00182: 203  swap
+00183: 203  notearg
+00184: 203  string "_cfg _type error :"
+00189: 203  getarg 0
+00192: 203  add
+00193: 203  notearg
+00194: 203  call 1
+00197: 203  pop
+00198: 204  name "xs"
+00203: 204  getprop "Cfg"
+00208: 204  getprop "BtnStyle"
+00213: 204  getprop "Default"
+00218: 204  setlocal 0
+00221: 204  pop
+00222: 207  getlocal 0
+00225: 207  getprop "type"
+00230: 207  setlocal 1
+00233: 207  pop
+00234: 209  getlocal 1
+00237: 209  name "xs"
+00242: 209  getprop "Constant_View_Btn_TTF_V2"
+00247: 209  stricteq
+00248: 209  or 268 (+20)
+00253: 209  pop
+00254: 209  getlocal 1
+00257: 209  name "xs"
+00262: 209  getprop "Constant_View_Btn_BMF_V2"
+00267: 209  stricteq
+00268: 209  ifeq 351 (+83)
+00273: 210  this
+00274: 210  dup
+00275: 210  callprop "assert"
+00280: 210  swap
+00281: 210  notearg
+00282: 210  getlocal 0
+00285: 210  getprop "bgIds"
+00290: 210  length "length"
+00295: 210  one
+00296: 210  ge
+00297: 210  notearg
+00298: 210  string "bgIds at least one"
+00303: 210  notearg
+00304: 210  getlocal 0
+00307: 210  notearg
+00308: 210  call 3
+00311: 210  pop
+00312: 211  this
+00313: 211  dup
+00314: 211  callprop "assert"
+00319: 211  swap
+00320: 211  notearg
+00321: 211  getlocal 0
+00324: 211  getprop "fontIds"
+00329: 211  length "length"
+00334: 211  one
+00335: 211  ge
+00336: 211  notearg
+00337: 211  string "fontIds at least one"
+00342: 211  notearg
+00343: 211  getlocal 0
+00346: 211  notearg
+00347: 211  call 3
+00350: 211  pop
+00351: 214  getlocal 0
+00354: 214  return
+00355: 214  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:186 ---
+;; function object[6] createWithStringId
+;; function metadata object[6] nargs=2 bindings=3
+;; arg[0] btnId
+;; arg[1] strId
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:221 ---
+loc   line  op
+----- ----  --
+main:
+00000: 222  this
+00001: 222  dup
+00002: 222  callprop "create"
+00007: 222  swap
+00008: 222  notearg
+00009: 222  getarg 0
+00012: 222  notearg
+00013: 222  call 1
+00016: 222  setlocal 0
+00019: 222  pop
+00020: 223  getlocal 0
+00023: 223  dup
+00024: 223  callprop "setStringById"
+00029: 223  swap
+00030: 223  notearg
+00031: 223  getarg 1
+00034: 223  notearg
+00035: 223  call 1
+00038: 223  pop
+00039: 224  getlocal 0
+00042: 224  return
+00043: 224  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:221 ---
+;; function object[7] createWithString
+;; function metadata object[7] nargs=2 bindings=3
+;; arg[0] btnId
+;; arg[1] string
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:228 ---
+loc   line  op
+----- ----  --
+main:
+00000: 229  this
+00001: 229  dup
+00002: 229  callprop "create"
+00007: 229  swap
+00008: 229  notearg
+00009: 229  getarg 0
+00012: 229  notearg
+00013: 229  call 1
+00016: 229  setlocal 0
+00019: 229  pop
+00020: 230  getlocal 0
+00023: 230  dup
+00024: 230  callprop "setString"
+00029: 230  swap
+00030: 230  notearg
+00031: 230  getarg 1
+00034: 230  notearg
+00035: 230  call 1
+00038: 230  pop
+00039: 231  getlocal 0
+00042: 231  return
+00043: 231  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:228 ---
+;; function object[8] createInvisible
+;; function metadata object[8] nargs=1 bindings=2
+;; arg[0] size
+;; local[0] _btn
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:235 ---
+loc   line  op
+----- ----  --
+main:
+00000: 239  name "xs"
+00005: 239  getprop "Libs"
+00010: 239  getprop "Views"
+00015: 239  getprop "Button"
+00020: 239  dup
+00021: 239  callprop "create"
+00026: 239  swap
+00027: 239  notearg
+00028: 239  call 0
+00031: 239  setlocal 0
+00034: 239  pop
+00035: 240  getlocal 0
+00038: 240  dup
+00039: 240  callprop "setAnchorPoint"
+00044: 240  swap
+00045: 240  notearg
+00046: 240  name "xs"
+00051: 240  getprop "ap_c"
+00056: 240  notearg
+00057: 240  call 1
+00060: 240  pop
+00061: 241  getlocal 0
+00064: 241  dup
+00065: 241  callprop "setPreferredSize"
+00070: 241  swap
+00071: 241  notearg
+00072: 241  getarg 0
+00075: 241  notearg
+00076: 241  call 1
+00079: 241  pop
+00080: 243  name "xs"
+00085: 243  getprop "Utils"
+00090: 243  getprop "Node"
+00095: 243  dup
+00096: 243  callprop "makeDebugBoundRect"
+00101: 243  swap
+00102: 243  notearg
+00103: 243  getlocal 0
+00106: 243  notearg
+00107: 243  call 1
+00110: 243  pop
+00111: 245  getlocal 0
+00114: 245  return
+00115: 245  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:235 ---
+;; function object[9] createInvisibleWithChild
+;; function metadata object[9] nargs=1 bindings=3
+;; arg[0] nodeView
+;; local[0] touchAreaSize
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:249 ---
+loc   line  op
+----- ----  --
+main:
+00000: 250  null
+00001: 250  setlocal 0
+00004: 250  pop
+00005: 251  getarg 0
+00008: 251  getprop "getBodySize"
+00013: 251  ifeq 41 (+28)
+00018: 252  getarg 0
+00021: 252  dup
+00022: 252  callprop "getBodySize"
+00027: 252  swap
+00028: 252  notearg
+00029: 252  call 0
+00032: 252  setlocal 0
+00035: 252  pop
+00036: 252  goto 127 (+91)
+00041: 254  this
+00042: 254  dup
+00043: 254  callprop "assert"
+00048: 254  swap
+00049: 254  notearg
+00050: 254  getarg 0
+00053: 254  dup
+00054: 254  callprop "getContentSize"
+00059: 254  swap
+00060: 254  notearg
+00061: 254  call 0
+00064: 254  getprop "width"
+00069: 254  zero
+00070: 254  strictne
+00071: 254  or 98 (+27)
+00076: 254  pop
+00077: 254  getarg 0
+00080: 254  dup
+00081: 254  callprop "getContentSize"
+00086: 254  swap
+00087: 254  notearg
+00088: 254  call 0
+00091: 254  getprop "height"
+00096: 254  zero
+00097: 254  strictne
+00098: 254  notearg
+00099: 255  string "need impl getBodySize or contentsize != 0"
+00104: 255  notearg
+00105: 255  call 2
+00108: 255  pop
+00109: 256  getarg 0
+00112: 256  dup
+00113: 256  callprop "getContentSize"
+00118: 256  swap
+00119: 256  notearg
+00120: 256  call 0
+00123: 256  setlocal 0
+00126: 256  pop
+00127: 259  this
+00128: 259  dup
+00129: 259  callprop "createInvisible"
+00134: 259  swap
+00135: 259  notearg
+00136: 259  getlocal 0
+00139: 259  notearg
+00140: 259  call 1
+00143: 259  setlocal 1
+00146: 259  pop
+00147: 263  name "xs"
+00152: 263  getprop "Utils"
+00157: 263  getprop "Node"
+00162: 263  dup
+00163: 263  callprop "makeDebugBoundRect"
+00168: 263  swap
+00169: 263  notearg
+00170: 263  getlocal 1
+00173: 263  notearg
+00174: 263  call 1
+00177: 263  pop
+00178: 265  name "xs"
+00183: 265  getprop "Utils"
+00188: 265  getprop "Node"
+00193: 265  dup
+00194: 265  callprop "attachNodes"
+00199: 265  swap
+00200: 265  notearg
+00201: 265  getlocal 1
+00204: 265  notearg
+00205: 265  getarg 0
+00208: 265  notearg
+00209: 265  newinit 1
+00214: 266  string "c"
+00219: 266  initprop "desc"
+00224: 266  endinit
+00225: 266  notearg
+00226: 266  call 3
+00229: 266  pop
+00230: 270  getlocal 1
+00233: 270  return
+00234: 270  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:249 ---
+;; function object[10] createInvisibleWithParent
+;; function metadata object[10] nargs=1 bindings=3
+;; arg[0] nodeView
+;; local[0] touchAreaSize
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:274 ---
+loc   line  op
+----- ----  --
+main:
+00000: 275  null
+00001: 275  setlocal 0
+00004: 275  pop
+00005: 276  getarg 0
+00008: 276  getprop "getBodySize"
+00013: 276  ifeq 41 (+28)
+00018: 277  getarg 0
+00021: 277  dup
+00022: 277  callprop "getBodySize"
+00027: 277  swap
+00028: 277  notearg
+00029: 277  call 0
+00032: 277  setlocal 0
+00035: 277  pop
+00036: 277  goto 127 (+91)
+00041: 279  this
+00042: 279  dup
+00043: 279  callprop "assert"
+00048: 279  swap
+00049: 279  notearg
+00050: 279  getarg 0
+00053: 279  dup
+00054: 279  callprop "getContentSize"
+00059: 279  swap
+00060: 279  notearg
+00061: 279  call 0
+00064: 279  getprop "width"
+00069: 279  zero
+00070: 279  strictne
+00071: 279  or 98 (+27)
+00076: 279  pop
+00077: 279  getarg 0
+00080: 279  dup
+00081: 279  callprop "getContentSize"
+00086: 279  swap
+00087: 279  notearg
+00088: 279  call 0
+00091: 279  getprop "height"
+00096: 279  zero
+00097: 279  strictne
+00098: 279  notearg
+00099: 280  string "need impl getBodySize or contentsize != 0"
+00104: 280  notearg
+00105: 280  call 2
+00108: 280  pop
+00109: 281  getarg 0
+00112: 281  dup
+00113: 281  callprop "getContentSize"
+00118: 281  swap
+00119: 281  notearg
+00120: 281  call 0
+00123: 281  setlocal 0
+00126: 281  pop
+00127: 284  this
+00128: 284  dup
+00129: 284  callprop "createInvisible"
+00134: 284  swap
+00135: 284  notearg
+00136: 284  getlocal 0
+00139: 284  notearg
+00140: 284  call 1
+00143: 284  setlocal 1
+00146: 284  pop
+00147: 288  name "xs"
+00152: 288  getprop "Utils"
+00157: 288  getprop "Node"
+00162: 288  dup
+00163: 288  callprop "makeDebugBoundRect"
+00168: 288  swap
+00169: 288  notearg
+00170: 288  getlocal 1
+00173: 288  notearg
+00174: 288  call 1
+00177: 288  pop
+00178: 290  name "xs"
+00183: 290  getprop "Utils"
+00188: 290  getprop "Node"
+00193: 290  dup
+00194: 290  callprop "attachNodes"
+00199: 290  swap
+00200: 290  notearg
+00201: 290  getarg 0
+00204: 290  notearg
+00205: 290  getlocal 1
+00208: 290  notearg
+00209: 290  newinit 1
+00214: 291  string "c"
+00219: 291  initprop "desc"
+00224: 291  endinit
+00225: 291  notearg
+00226: 291  call 3
+00229: 291  pop
+00230: 295  getlocal 1
+00233: 295  return
+00234: 295  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Libs/Views/Button/Factory.js:274 ---

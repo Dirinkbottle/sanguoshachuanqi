@@ -1,0 +1,238 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/Player.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+;; FUNCTION-MAP kind=lambda offset=68 object[1]
+;; FUNCTION-MAP kind=lambda offset=78 object[2]
+;; FUNCTION-MAP kind=lambda offset=177 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Player.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Profile"
+00010:   8  getprop "GameData"
+00015:   8  name "xs"
+00020:   8  getprop "Profile"
+00025:   8  getprop "GameData"
+00030:   8  getprop "Base"
+00035:   8  dup
+00036:   8  callprop "extend"
+00041:   8  swap
+00042:   8  notearg
+00043:   8  newinit 1
+00048:   9  string "xs.Profile.GameData.Player"
+00053:   9  initprop "name"
+00058:  11  lambda (function () {
+    [sourceless code]
+})
+00063:  11  initprop "init"
+00068:  17  lambda (function () {
+    [sourceless code]
+})
+00073:  17  initprop "getPlayer"
+00078:  22  lambda (function () {
+    [sourceless code]
+})
+00083:  22  initprop "getPlayerOnlineTime"
+00088:  22  endinit
+00089:  22  notearg
+00090:  22  call 1
+00093:  22  setprop "Player"
+00098:  22  popv
+00099:  34  name "xs"
+00104:  34  getprop "Profile"
+00109:  34  getprop "GameData"
+00114:  34  getprop "Player"
+00119:  34  zero
+00120:  34  setprop "g_serverId"
+00125:  34  popv
+00126:  35  name "xs"
+00131:  35  getprop "Profile"
+00136:  35  getprop "GameData"
+00141:  35  getprop "Player"
+00146:  35  string ""
+00151:  35  setprop "g_serverURL"
+00156:  35  popv
+00157:  37  name "xs"
+00162:  37  getprop "Profile"
+00167:  37  getprop "GameData"
+00172:  37  getprop "Player"
+00177:  37  lambda (function () {
+    [sourceless code]
+})
+00182:  37  setprop "create"
+00187:  37  popv
+00188:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Player.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Player.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  getarg 0
+00012:  12  notearg
+00013:  12  call 1
+00016:  12  pop
+00017:  13  true
+00018:  13  return
+00019:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Player.js:11 ---
+;; function object[1] getPlayer
+;; function metadata object[1] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Player.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  this
+00001:  18  getprop "dataRef"
+00006:  18  dup
+00007:  18  callprop "getDataByNameType"
+00012:  18  swap
+00013:  18  notearg
+00014:  18  name "xs"
+00019:  18  getprop "Constant_GameData_Player"
+00024:  18  notearg
+00025:  18  call 1
+00028:  18  setlocal 0
+00031:  18  pop
+00032:  19  getlocal 0
+00035:  19  return
+00036:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Player.js:17 ---
+;; function object[2] getPlayerOnlineTime
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] _data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Player.js:22 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  name "xs"
+00005:  23  getprop "Utils"
+00010:  23  getprop "LocalStore"
+00015:  23  dup
+00016:  23  callprop "getItem"
+00021:  23  swap
+00022:  23  notearg
+00023:  23  string "anti-addiction"
+00028:  23  notearg
+00029:  23  call 1
+00032:  23  setlocal 0
+00035:  23  pop
+00036:  24  getlocal 0
+00039:  24  string ""
+00044:  24  eq
+00045:  24  ifeq 57 (+12)
+00050:  25  zero
+00051:  25  return
+00052:  25  goto 66 (+14)
+00057:  27  getlocal 0
+00060:  27  getprop "onlineTime"
+00065:  27  return
+00066:  28  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Player.js:22 ---
+;; function object[3] create
+;; function metadata object[3] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Player.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  getarg 0
+00003:  38  getprop "play_id"
+00008:  38  setlocal 0
+00011:  38  pop
+00012:  39  name "xs"
+00017:  39  getprop "Profile"
+00022:  39  getprop "GameData"
+00027:  39  getprop "Player"
+00032:  39  setlocal 1
+00035:  39  pop
+00036:  40  name "xs"
+00041:  40  getprop "Utils"
+00046:  40  dup
+00047:  40  callprop "isSet"
+00052:  40  swap
+00053:  40  notearg
+00054:  40  getlocal 1
+00057:  40  getprop "_instance"
+00062:  40  notearg
+00063:  40  call 1
+00066:  40  or 85 (+19)
+00071:  40  pop
+00072:  40  getlocal 1
+00075:  40  newarray 0
+00079:  40  endinit
+00080:  40  setprop "_instance"
+00085:  40  pop
+00086:  42  getlocal 1
+00089:  42  getprop "_instance"
+00094:  42  getlocal 0
+00097:  42  getelem
+00098:  42  ifeq 116 (+18)
+00103:  43  getlocal 1
+00106:  43  getprop "_instance"
+00111:  43  getlocal 0
+00114:  43  getelem
+00115:  43  return
+00116:  46  getlocal 1
+00119:  46  undefined
+00120:  46  notearg
+00121:  46  new 0
+00124:  46  setlocal 2
+00127:  46  pop
+00128:  47  getlocal 2
+00131:  47  and 155 (+24)
+00136:  47  pop
+00137:  47  getlocal 2
+00140:  47  dup
+00141:  47  callprop "init"
+00146:  47  swap
+00147:  47  notearg
+00148:  47  getarg 0
+00151:  47  notearg
+00152:  47  call 1
+00155:  47  ifeq 180 (+25)
+00160:  48  getlocal 1
+00163:  48  getprop "_instance"
+00168:  48  getlocal 0
+00171:  48  getlocal 2
+00174:  48  setelem
+00175:  48  pop
+00176:  49  getlocal 2
+00179:  49  return
+00180:  51  name "xs"
+00185:  51  dup
+00186:  51  callprop "error"
+00191:  51  swap
+00192:  51  notearg
+00193:  51  string "xs.Profile.GameData.Player.create failed"
+00198:  51  notearg
+00199:  51  call 1
+00202:  51  pop
+00203:  52  null
+00204:  52  return
+00205:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Player.js:37 ---

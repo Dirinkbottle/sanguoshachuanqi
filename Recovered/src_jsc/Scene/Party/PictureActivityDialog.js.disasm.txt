@@ -1,0 +1,1022 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Party/PictureActivityDialog.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=448 object[0]
+;; FUNCTION-MAP kind=lambda offset=458 object[1]
+;; FUNCTION-MAP kind=lambda offset=468 object[2]
+;; FUNCTION-MAP kind=lambda offset=478 object[3]
+;; FUNCTION-MAP kind=lambda offset=488 object[4]
+;; FUNCTION-MAP kind=lambda offset=498 object[5]
+;; FUNCTION-MAP kind=lambda offset=539 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Scene"
+00010:   9  getprop "Party"
+00015:   9  name "xs"
+00020:   9  getprop "Views"
+00025:   9  getprop "HungerLayer"
+00030:   9  dup
+00031:   9  callprop "extend"
+00036:   9  swap
+00037:   9  notearg
+00038:   9  newinit 1
+00043:  11  string "PictureActivityDialog"
+00048:  11  initprop "name"
+00053:  13  newarray 3
+00057:  14  newinit 1
+00062:  14  one
+00063:  14  initprop "tag"
+00068:  14  string "ls"
+00073:  14  initprop "type"
+00078:  14  string "m_labelTitle"
+00083:  14  initprop "name"
+00088:  14  string "LS_huodong_title"
+00093:  14  initprop "id"
+00098:  14  string "auto_name_179"
+00103:  14  initprop "stringId"
+00108:  14  endinit
+00109:  14  initelem_array 0
+00113:  15  newinit 1
+00118:  15  int8 2
+00120:  15  initprop "tag"
+00125:  15  string "bs"
+00130:  15  initprop "type"
+00135:  15  string "m_btnExit"
+00140:  15  initprop "name"
+00145:  15  string "BS_Close"
+00150:  15  initprop "id"
+00155:  15  endinit
+00156:  15  initelem_array 1
+00160:  17  newinit 1
+00165:  17  int8 4
+00167:  17  initprop "tag"
+00172:  17  string "m_spriteBg"
+00177:  17  initprop "name"
+00182:  17  endinit
+00183:  17  initelem_array 2
+00187:  17  endinit
+00188:  17  initprop "CCB_Cfg"
+00193:  21  newinit 1
+00198:  22  newinit 1
+00203:  23  name "xs"
+00208:  23  getprop "Tools"
+00213:  23  getprop "String"
+00218:  23  dup
+00219:  23  callprop "createString"
+00224:  23  swap
+00225:  23  notearg
+00226:  23  string "auto_name_180"
+00231:  23  notearg
+00232:  23  call 1
+00235:  23  initprop "tile"
+00240:  24  string "big_picture/HuodongScene02_ad_chongzhifanli.png"
+00245:  24  initprop "fileName"
+00250:  25  name "cc"
+00255:  25  dup
+00256:  25  callprop "p"
+00261:  25  swap
+00262:  25  notearg
+00263:  25  uint16 467
+00266:  25  notearg
+00267:  25  uint16 283
+00270:  25  notearg
+00271:  25  call 2
+00274:  25  initprop "bg_pos"
+00279:  25  name "cc"
+00284:  25  dup
+00285:  25  callprop "p"
+00290:  25  swap
+00291:  25  notearg
+00292:  25  uint16 645
+00295:  25  notearg
+00296:  25  uint16 484
+00299:  25  notearg
+00300:  25  call 2
+00303:  25  initprop "lab_pos"
+00308:  26  true
+00309:  26  initprop "isTime"
+00314:  26  endinit
+00315:  26  initprop "rechargeRebate"
+00320:  28  newinit 1
+00325:  29  name "xs"
+00330:  29  getprop "Tools"
+00335:  29  getprop "String"
+00340:  29  dup
+00341:  29  callprop "createString"
+00346:  29  swap
+00347:  29  notearg
+00348:  29  string "auto_name_181"
+00353:  29  notearg
+00354:  29  call 1
+00357:  29  initprop "tile"
+00362:  30  string "big_picture/HuodongScene02_ad_lingju.png"
+00367:  30  initprop "fileName"
+00372:  31  name "cc"
+00377:  31  dup
+00378:  31  callprop "p"
+00383:  31  swap
+00384:  31  notearg
+00385:  31  uint16 467
+00388:  31  notearg
+00389:  31  uint16 293
+00392:  31  notearg
+00393:  31  call 2
+00396:  31  initprop "bg_pos"
+00401:  31  name "cc"
+00406:  31  dup
+00407:  31  callprop "p"
+00412:  31  swap
+00413:  31  notearg
+00414:  31  uint16 645
+00417:  31  notearg
+00418:  31  uint16 484
+00421:  31  notearg
+00422:  31  call 2
+00425:  31  initprop "lab_pos"
+00430:  32  false
+00431:  32  initprop "isTime"
+00436:  32  endinit
+00437:  32  initprop "sendLingJu"
+00442:  32  endinit
+00443:  32  initprop "ad_cfg"
+00448:  43  lambda (function () {
+    [sourceless code]
+})
+00453:  43  initprop "init"
+00458: 118  lambda (function () {
+    [sourceless code]
+})
+00463: 118  initprop "timeDispose"
+00468: 126  lambda (function () {
+    [sourceless code]
+})
+00473: 126  initprop "onCountDown"
+00478: 149  lambda (function () {
+    [sourceless code]
+})
+00483: 149  initprop "onEnter"
+00488: 153  lambda (function () {
+    [sourceless code]
+})
+00493: 153  initprop "setBaseTouchPriority"
+00498: 159  lambda (function () {
+    [sourceless code]
+})
+00503: 159  initprop "onExit"
+00508: 159  endinit
+00509: 159  notearg
+00510: 159  call 1
+00513: 159  setprop "PictureActivityDialog"
+00518: 159  popv
+00519: 165  name "xs"
+00524: 165  getprop "Scene"
+00529: 165  getprop "Party"
+00534: 165  getprop "PictureActivityDialog"
+00539: 165  lambda (function () {
+    [sourceless code]
+})
+00544: 165  setprop "create"
+00549: 165  popv
+00550: 173  name "xs"
+00555: 173  getprop "Views"
+00560: 173  getprop "Mgr"
+00565: 173  dup
+00566: 173  callprop "registerDialog"
+00571: 173  swap
+00572: 173  notearg
+00573: 173  string "PictureActivityDialog"
+00578: 173  notearg
+00579: 173  newinit 1
+00584: 174  name "xs"
+00589: 174  getprop "Scene"
+00594: 174  getprop "Party"
+00599: 174  getprop "PictureActivityDialog"
+00604: 174  initprop "class"
+00609: 175  name "xs"
+00614: 175  getprop "Constant_DlgStyleType_Large"
+00619: 175  initprop "styleType"
+00624: 175  endinit
+00625: 175  notearg
+00626: 175  call 2
+00629: 175  popv
+00630: 177  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=2 bindings=3
+;; arg[0] params
+;; arg[1] idx
+;; local[0] m_bg
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=1370 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  this
+00001:  44  dup
+00002:  44  callprop "_super"
+00007:  44  swap
+00008:  44  notearg
+00009:  44  call 0
+00012:  44  not
+00013:  44  ifeq 20 (+7)
+00018:  45  false
+00019:  45  return
+00020:  48  this
+00021:  48  null
+00022:  48  setprop "m_labelTitle"
+00027:  48  pop
+00028:  49  this
+00029:  49  null
+00030:  49  setprop "m_btnExit"
+00035:  49  pop
+00036:  50  this
+00037:  50  null
+00038:  50  setprop "m_spriteBg"
+00043:  50  pop
+00044:  51  this
+00045:  51  getarg 0
+00048:  51  dup
+00049:  51  callprop "getPartyEventType"
+00054:  51  swap
+00055:  51  notearg
+00056:  51  call 0
+00059:  51  setprop "m_type"
+00064:  51  pop
+00065:  52  this
+00066:  52  null
+00067:  52  setprop "m_cfg"
+00072:  52  pop
+00073:  54  this
+00074:  54  name "xs"
+00079:  54  getprop "ccb_reader"
+00084:  54  dup
+00085:  54  callprop "load"
+00090:  54  swap
+00091:  54  notearg
+00092:  54  name "xs"
+00097:  54  getprop "Cfg"
+00102:  54  getprop "CCBI"
+00107:  54  getprop "Party_advertisement"
+00112:  54  notearg
+00113:  54  this
+00114:  54  notearg
+00115:  54  call 2
+00118:  54  setprop "_ccbNode"
+00123:  54  pop
+00124:  56  name "xs"
+00129:  56  getprop "Utils"
+00134:  56  getprop "Node"
+00139:  56  dup
+00140:  56  callprop "attachNodes"
+00145:  56  swap
+00146:  56  notearg
+00147:  56  this
+00148:  56  notearg
+00149:  56  this
+00150:  56  getprop "_ccbNode"
+00155:  56  notearg
+00156:  56  newinit 1
+00161:  56  string "c"
+00166:  56  initprop "desc"
+00171:  56  name "cc"
+00176:  56  dup
+00177:  56  callprop "p"
+00182:  56  swap
+00183:  56  notearg
+00184:  56  int32 -466
+00189:  56  notearg
+00190:  56  int32 -306
+00195:  56  notearg
+00196:  56  call 2
+00199:  56  initprop "offset"
+00204:  56  endinit
+00205:  56  notearg
+00206:  56  call 3
+00209:  56  pop
+00210:  58  name "xs"
+00215:  58  getprop "Utils"
+00220:  58  getprop "UI"
+00225:  58  dup
+00226:  58  callprop "replaceCcbByCfg"
+00231:  58  swap
+00232:  58  notearg
+00233:  58  this
+00234:  58  getprop "_ccbNode"
+00239:  58  notearg
+00240:  58  this
+00241:  58  getprop "CCB_Cfg"
+00246:  58  notearg
+00247:  58  this
+00248:  58  notearg
+00249:  58  call 3
+00252:  58  pop
+00253:  60  this
+00254:  60  getprop "m_type"
+00259:  60  name "xs"
+00264:  60  getprop "Constant_PartyType_PresentYuanbao"
+00269:  60  eq
+00270:  60  ifeq 589 (+319)
+00275:  61  this
+00276:  61  this
+00277:  61  getprop "ad_cfg"
+00282:  61  getprop "rechargeRebate"
+00287:  61  setprop "m_cfg"
+00292:  61  pop
+00293:  63  this
+00294:  63  name "xs"
+00299:  63  getprop "Views"
+00304:  63  getprop "Label"
+00309:  63  getprop "LabelExt"
+00314:  63  dup
+00315:  63  callprop "createWithStyles"
+00320:  63  swap
+00321:  63  notearg
+00322:  63  newarray 2
+00326:  63  string "LS_paihangNomb"
+00331:  63  initelem_array 0
+00335:  63  string "LS_danyao"
+00340:  63  initelem_array 1
+00344:  63  endinit
+00345:  63  notearg
+00346:  63  call 1
+00349:  63  setprop "_labelRecharge"
+00354:  63  pop
+00355:  64  this
+00356:  64  getprop "_labelRecharge"
+00361:  64  dup
+00362:  64  callprop "setString"
+00367:  64  swap
+00368:  64  notearg
+00369:  64  zero
+00370:  64  notearg
+00371:  64  name "xs"
+00376:  64  getprop "Tools"
+00381:  64  getprop "String"
+00386:  64  dup
+00387:  64  callprop "createString"
+00392:  64  swap
+00393:  64  notearg
+00394:  64  string "auto_name_182"
+00399:  64  notearg
+00400:  64  call 1
+00403:  64  notearg
+00404:  64  call 2
+00407:  64  pop
+00408:  65  this
+00409:  65  getprop "_labelRecharge"
+00414:  65  dup
+00415:  65  callprop "setString"
+00420:  65  swap
+00421:  65  notearg
+00422:  65  one
+00423:  65  notearg
+00424:  65  callname "parseInt"
+00429:  65  implicitthis "parseInt"
+00434:  65  notearg
+00435:  65  getarg 0
+00438:  65  getprop "recharge"
+00443:  65  notearg
+00444:  65  call 1
+00447:  65  name "xs"
+00452:  65  getprop "Tools"
+00457:  65  getprop "String"
+00462:  65  dup
+00463:  65  callprop "createString"
+00468:  65  swap
+00469:  65  notearg
+00470:  65  string "auto_name_161"
+00475:  65  notearg
+00476:  65  call 1
+00479:  65  add
+00480:  65  notearg
+00481:  65  call 2
+00484:  65  pop
+00485:  66  this
+00486:  66  getprop "_labelRecharge"
+00491:  66  dup
+00492:  66  callprop "setAnchorPoint"
+00497:  66  swap
+00498:  66  notearg
+00499:  66  name "xs"
+00504:  66  getprop "ap_lc"
+00509:  66  notearg
+00510:  66  call 1
+00513:  66  pop
+00514:  67  this
+00515:  67  getprop "_ccbNode"
+00520:  67  dup
+00521:  67  callprop "addChild"
+00526:  67  swap
+00527:  67  notearg
+00528:  67  this
+00529:  67  getprop "_labelRecharge"
+00534:  67  notearg
+00535:  67  int8 2
+00537:  67  notearg
+00538:  67  call 2
+00541:  67  pop
+00542:  68  this
+00543:  68  getprop "_labelRecharge"
+00548:  68  dup
+00549:  68  callprop "setPosition"
+00554:  68  swap
+00555:  68  notearg
+00556:  68  name "cc"
+00561:  68  dup
+00562:  68  callprop "p"
+00567:  68  swap
+00568:  68  notearg
+00569:  68  int8 40
+00571:  68  notearg
+00572:  68  uint16 494
+00575:  68  notearg
+00576:  68  call 2
+00579:  68  notearg
+00580:  68  call 1
+00583:  68  pop
+00584:  68  goto 682 (+98)
+00589:  69  this
+00590:  69  getprop "m_type"
+00595:  69  name "xs"
+00600:  69  getprop "Constant_PartyType_Advertisement_noTime"
+00605:  69  eq
+00606:  69  ifeq 682 (+76)
+00611:  70  getarg 0
+00614:  70  dup
+00615:  70  callprop "getBg"
+00620:  70  swap
+00621:  70  notearg
+00622:  70  call 0
+00625:  70  name "xs"
+00630:  70  getprop "Constant_PartyType_Advertisement_sendLingJu"
+00635:  70  eq
+00636:  70  ifeq 664 (+28)
+00641:  71  this
+00642:  71  this
+00643:  71  getprop "ad_cfg"
+00648:  71  getprop "sendLingJu"
+00653:  71  setprop "m_cfg"
+00658:  71  pop
+00659:  71  goto 682 (+23)
+00664:  73  this
+00665:  73  this
+00666:  73  getprop "ad_cfg"
+00671:  73  getprop "sendLingJu"
+00676:  73  setprop "m_cfg"
+00681:  73  pop
+00682:  77  name "xs"
+00687:  77  dup
+00688:  77  callprop "log"
+00693:  77  swap
+00694:  77  notearg
+00695:  77  string "bgbgbg:"
+00700:  77  notearg
+00701:  77  getarg 0
+00704:  77  dup
+00705:  77  callprop "getBg"
+00710:  77  swap
+00711:  77  notearg
+00712:  77  call 0
+00715:  77  notearg
+00716:  77  call 2
+00719:  77  pop
+00720:  80  name "xs"
+00725:  80  dup
+00726:  80  callprop "dump"
+00731:  80  swap
+00732:  80  notearg
+00733:  80  string "this.m_cfg"
+00738:  80  notearg
+00739:  80  this
+00740:  80  getprop "m_cfg"
+00745:  80  notearg
+00746:  80  call 2
+00749:  80  pop
+00750:  81  name "xs"
+00755:  81  getprop "Factorys"
+00760:  81  getprop "Sprite"
+00765:  81  dup
+00766:  81  callprop "createWithFileName"
+00771:  81  swap
+00772:  81  notearg
+00773:  81  this
+00774:  81  getprop "m_cfg"
+00779:  81  getprop "fileName"
+00784:  81  notearg
+00785:  81  call 1
+00788:  81  setlocal 0
+00791:  81  pop
+00792:  82  this
+00793:  82  getprop "m_labelTitle"
+00798:  82  dup
+00799:  82  callprop "setString"
+00804:  82  swap
+00805:  82  notearg
+00806:  82  this
+00807:  82  getprop "m_cfg"
+00812:  82  getprop "tile"
+00817:  82  notearg
+00818:  82  call 1
+00821:  82  pop
+00822:  83  getlocal 0
+00825:  83  dup
+00826:  83  callprop "setPosition"
+00831:  83  swap
+00832:  83  notearg
+00833:  83  this
+00834:  83  getprop "m_cfg"
+00839:  83  getprop "bg_pos"
+00844:  83  notearg
+00845:  83  call 1
+00848:  83  pop
+00849:  84  this
+00850:  84  getprop "_ccbNode"
+00855:  84  dup
+00856:  84  callprop "addChild"
+00861:  84  swap
+00862:  84  notearg
+00863:  84  getlocal 0
+00866:  84  notearg
+00867:  84  call 1
+00870:  84  pop
+00871:  86  this
+00872:  86  getprop "m_cfg"
+00877:  86  getprop "isTime"
+00882:  86  ifeq 1356 (+474)
+00887:  88  name "xs"
+00892:  88  getprop "Profile"
+00897:  88  getprop "GameData"
+00902:  88  getprop "PushInfo"
+00907:  88  dup
+00908:  88  callprop "getInstance"
+00913:  88  swap
+00914:  88  notearg
+00915:  88  call 0
+00918:  88  dup
+00919:  88  callprop "getPartyInfo"
+00924:  88  swap
+00925:  88  notearg
+00926:  88  call 0
+00929:  88  dup
+00930:  88  callprop "isStartTime"
+00935:  88  swap
+00936:  88  notearg
+00937:  88  getarg 1
+00940:  88  notearg
+00941:  88  call 1
+00944:  88  ifeq 1047 (+103)
+00949:  90  this
+00950:  90  name "xs"
+00955:  90  getprop "Profile"
+00960:  90  getprop "GameData"
+00965:  90  getprop "PushInfo"
+00970:  90  dup
+00971:  90  callprop "getInstance"
+00976:  90  swap
+00977:  90  notearg
+00978:  90  call 0
+00981:  90  dup
+00982:  90  callprop "getPartyInfo"
+00987:  90  swap
+00988:  90  notearg
+00989:  90  call 0
+00992:  90  dup
+00993:  90  callprop "adPresentTime"
+00998:  90  swap
+00999:  90  notearg
+01000:  90  getarg 1
+01003:  90  notearg
+01004:  90  call 1
+01007:  90  or 1014 (+7)
+01012:  90  pop
+01013:  90  zero
+01014:  90  setprop "m_residueTime"
+01019:  90  pop
+01020:  91  this
+01021:  91  dup
+01022:  91  callprop "schedule"
+01027:  91  swap
+01028:  91  notearg
+01029:  91  this
+01030:  91  getprop "onCountDown"
+01035:  91  notearg
+01036:  91  one
+01037:  91  notearg
+01038:  91  call 2
+01041:  91  pop
+01042:  91  goto 1118 (+76)
+01047:  93  this
+01048:  93  name "xs"
+01053:  93  getprop "Profile"
+01058:  93  getprop "GameData"
+01063:  93  getprop "PushInfo"
+01068:  93  dup
+01069:  93  callprop "getInstance"
+01074:  93  swap
+01075:  93  notearg
+01076:  93  call 0
+01079:  93  dup
+01080:  93  callprop "getPartyInfo"
+01085:  93  swap
+01086:  93  notearg
+01087:  93  call 0
+01090:  93  dup
+01091:  93  callprop "getContinueTime"
+01096:  93  swap
+01097:  93  notearg
+01098:  93  getarg 1
+01101:  93  notearg
+01102:  93  call 1
+01105:  93  or 1112 (+7)
+01110:  93  pop
+01111:  93  zero
+01112:  93  setprop "m_residueTime"
+01117:  93  pop
+01118:  96  this
+01119:  96  name "xs"
+01124:  96  getprop "Views"
+01129:  96  getprop "Label"
+01134:  96  getprop "LabelExt"
+01139:  96  dup
+01140:  96  callprop "createWithStyles"
+01145:  96  swap
+01146:  96  notearg
+01147:  96  newarray 2
+01151:  96  string "LS_paihangNomb"
+01156:  96  initelem_array 0
+01160:  96  string "LS_danyao"
+01165:  96  initelem_array 1
+01169:  96  endinit
+01170:  96  notearg
+01171:  96  call 1
+01174:  96  setprop "_labelExt"
+01179:  96  pop
+01180:  97  this
+01181:  97  getprop "_labelExt"
+01186:  97  dup
+01187:  97  callprop "setString"
+01192:  97  swap
+01193:  97  notearg
+01194:  97  zero
+01195:  97  notearg
+01196:  97  name "xs"
+01201:  97  getprop "Tools"
+01206:  97  getprop "String"
+01211:  97  dup
+01212:  97  callprop "createString"
+01217:  97  swap
+01218:  97  notearg
+01219:  97  string "auto_name_157"
+01224:  97  notearg
+01225:  97  call 1
+01228:  97  notearg
+01229:  97  call 2
+01232:  97  pop
+01233:  98  this
+01234:  98  getprop "_labelExt"
+01239:  98  dup
+01240:  98  callprop "setString"
+01245:  98  swap
+01246:  98  notearg
+01247:  98  one
+01248:  98  notearg
+01249:  98  string ""
+01254:  98  notearg
+01255:  98  call 2
+01258:  98  pop
+01259:  99  this
+01260:  99  getprop "_labelExt"
+01265:  99  dup
+01266:  99  callprop "setAnchorPoint"
+01271:  99  swap
+01272:  99  notearg
+01273:  99  name "xs"
+01278:  99  getprop "ap_c"
+01283:  99  notearg
+01284:  99  call 1
+01287:  99  pop
+01288: 100  this
+01289: 100  getprop "_ccbNode"
+01294: 100  dup
+01295: 100  callprop "addChild"
+01300: 100  swap
+01301: 100  notearg
+01302: 100  this
+01303: 100  getprop "_labelExt"
+01308: 100  notearg
+01309: 100  call 1
+01312: 100  pop
+01313: 101  this
+01314: 101  getprop "_labelExt"
+01319: 101  dup
+01320: 101  callprop "setPosition"
+01325: 101  swap
+01326: 101  notearg
+01327: 101  this
+01328: 101  getprop "m_cfg"
+01333: 101  getprop "lab_pos"
+01338: 101  notearg
+01339: 101  call 1
+01342: 101  pop
+01343: 103  this
+01344: 103  dup
+01345: 103  callprop "onCountDown"
+01350: 103  swap
+01351: 103  notearg
+01352: 103  call 0
+01355: 103  pop
+01356: 109  this
+01357: 109  getprop "m_btnExit"
+01362: 109  dup
+01363: 109  callprop "setOnClickCallBack"
+01368: 109  swap
+01369: 109  notearg
+01370: 109  lambda (function () {
+    [sourceless code]
+})
+01375: 109  notearg
+01376: 109  call 1
+01379: 109  pop
+01380: 115  true
+01381: 115  return
+01382: 115  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:43 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:109 ---
+loc   line  op
+----- ----  --
+main:
+00000: 110  name "xs"
+00005: 110  getprop "Views"
+00010: 110  getprop "Mgr"
+00015: 110  dup
+00016: 110  callprop "hideDialog"
+00021: 110  swap
+00022: 110  notearg
+00023: 110  call 0
+00026: 110  pop
+00027: 110  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:109 ---
+;; function object[1] timeDispose
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] mNum
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:118 ---
+loc   line  op
+----- ----  --
+main:
+00000: 119  getarg 0
+00003: 119  int8 10
+00005: 119  lt
+00006: 119  ifeq 24 (+18)
+00011: 120  string "0"
+00016: 120  getarg 0
+00019: 120  add
+00020: 120  setarg 0
+00023: 120  pop
+00024: 123  getarg 0
+00027: 123  return
+00028: 123  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:118 ---
+;; function object[2] onCountDown
+;; function metadata object[2] nargs=0 bindings=3
+;; local[0] hours
+;; local[1] minute
+;; local[2] seconds
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:126 ---
+loc   line  op
+----- ----  --
+main:
+00000: 129  this
+00001: 129  getprop "m_residueTime"
+00006: 129  zero
+00007: 129  le
+00008: 129  ifeq 41 (+33)
+00013: 131  this
+00014: 131  zero
+00015: 131  setprop "m_residueTime"
+00020: 131  pop
+00021: 132  this
+00022: 132  dup
+00023: 132  callprop "unschedule"
+00028: 132  swap
+00029: 132  notearg
+00030: 132  this
+00031: 132  getprop "onCountDown"
+00036: 132  notearg
+00037: 132  call 1
+00040: 132  pop
+00041: 138  name "Math"
+00046: 138  dup
+00047: 138  callprop "floor"
+00052: 138  swap
+00053: 138  notearg
+00054: 138  this
+00055: 138  getprop "m_residueTime"
+00060: 138  uint16 3600
+00063: 138  div
+00064: 138  notearg
+00065: 138  call 1
+00068: 138  setlocal 0
+00071: 138  pop
+00072: 139  name "Math"
+00077: 139  dup
+00078: 139  callprop "floor"
+00083: 139  swap
+00084: 139  notearg
+00085: 139  this
+00086: 139  getprop "m_residueTime"
+00091: 139  uint16 3600
+00094: 139  mod
+00095: 139  int8 60
+00097: 139  div
+00098: 139  notearg
+00099: 139  call 1
+00102: 139  setlocal 1
+00105: 139  pop
+00106: 140  this
+00107: 140  getprop "m_residueTime"
+00112: 140  uint16 3600
+00115: 140  mod
+00116: 140  int8 60
+00118: 140  mod
+00119: 140  setlocal 2
+00122: 140  pop
+00123: 144  this
+00124: 144  getprop "_labelExt"
+00129: 144  dup
+00130: 144  callprop "setString"
+00135: 144  swap
+00136: 144  notearg
+00137: 144  one
+00138: 144  notearg
+00139: 144  string ""
+00144: 144  this
+00145: 144  dup
+00146: 144  callprop "timeDispose"
+00151: 144  swap
+00152: 144  notearg
+00153: 144  getlocal 0
+00156: 144  notearg
+00157: 144  call 1
+00160: 144  add
+00161: 144  string ":"
+00166: 144  add
+00167: 144  this
+00168: 144  dup
+00169: 144  callprop "timeDispose"
+00174: 144  swap
+00175: 144  notearg
+00176: 144  getlocal 1
+00179: 144  notearg
+00180: 144  call 1
+00183: 144  add
+00184: 144  string ":"
+00189: 144  add
+00190: 144  this
+00191: 144  dup
+00192: 144  callprop "timeDispose"
+00197: 144  swap
+00198: 144  notearg
+00199: 144  getlocal 2
+00202: 144  notearg
+00203: 144  call 1
+00206: 144  add
+00207: 144  notearg
+00208: 144  call 2
+00211: 144  pop
+00212: 146  this
+00213: 146  dup
+00214: 146  getprop "m_residueTime"
+00219: 146  one
+00220: 146  sub
+00221: 146  setprop "m_residueTime"
+00226: 146  pop
+00227: 146  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:126 ---
+;; function object[3] onEnter
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:149 ---
+loc   line  op
+----- ----  --
+main:
+00000: 150  this
+00001: 150  dup
+00002: 150  callprop "_super"
+00007: 150  swap
+00008: 150  notearg
+00009: 150  call 0
+00012: 150  pop
+00013: 150  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:149 ---
+;; function object[4] setBaseTouchPriority
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:153 ---
+loc   line  op
+----- ----  --
+main:
+00000: 154  this
+00001: 154  getarg 0
+00004: 154  setprop "m_baseTouchPriority"
+00009: 154  pop
+00010: 155  this
+00011: 155  getprop "m_btnExit"
+00016: 155  dup
+00017: 155  callprop "setTouchPriority"
+00022: 155  swap
+00023: 155  notearg
+00024: 155  this
+00025: 155  getprop "m_baseTouchPriority"
+00030: 155  one
+00031: 155  sub
+00032: 155  notearg
+00033: 155  call 1
+00036: 155  pop
+00037: 155  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:153 ---
+;; function object[5] onExit
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:159 ---
+loc   line  op
+----- ----  --
+main:
+00000: 160  this
+00001: 160  dup
+00002: 160  callprop "_super"
+00007: 160  swap
+00008: 160  notearg
+00009: 160  call 0
+00012: 160  pop
+00013: 161  this
+00014: 161  dup
+00015: 161  callprop "unschedule"
+00020: 161  swap
+00021: 161  notearg
+00022: 161  this
+00023: 161  getprop "onCountDown"
+00028: 161  notearg
+00029: 161  call 1
+00032: 161  pop
+00033: 161  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:159 ---
+;; function object[6] create
+;; function metadata object[6] nargs=2 bindings=3
+;; arg[0] params
+;; arg[1] idx
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:165 ---
+loc   line  op
+----- ----  --
+main:
+00000: 166  name "xs"
+00005: 166  getprop "Scene"
+00010: 166  getprop "Party"
+00015: 166  getprop "PictureActivityDialog"
+00020: 166  undefined
+00021: 166  notearg
+00022: 166  new 0
+00025: 166  setlocal 0
+00028: 166  pop
+00029: 167  getlocal 0
+00032: 167  and 60 (+28)
+00037: 167  pop
+00038: 167  getlocal 0
+00041: 167  dup
+00042: 167  callprop "init"
+00047: 167  swap
+00048: 167  notearg
+00049: 167  getarg 0
+00052: 167  notearg
+00053: 167  getarg 1
+00056: 167  notearg
+00057: 167  call 2
+00060: 167  ifeq 69 (+9)
+00065: 168  getlocal 0
+00068: 168  return
+00069: 170  null
+00070: 170  return
+00071: 170  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/PictureActivityDialog.js:165 ---

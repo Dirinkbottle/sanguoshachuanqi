@@ -1,0 +1,1722 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/UnionWarFightView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=38 object[0]
+;; FUNCTION-MAP kind=lambda offset=55 object[1]
+;; FUNCTION-MAP kind=lambda offset=65 object[2]
+;; FUNCTION-MAP kind=lambda offset=75 object[3]
+;; FUNCTION-MAP kind=lambda offset=85 object[4]
+;; FUNCTION-MAP kind=lambda offset=95 object[5]
+;; FUNCTION-MAP kind=lambda offset=105 object[6]
+;; FUNCTION-MAP kind=lambda offset=115 object[7]
+;; FUNCTION-MAP kind=lambda offset=125 object[8]
+;; FUNCTION-MAP kind=lambda offset=135 object[9]
+;; FUNCTION-MAP kind=lambda offset=145 object[10]
+;; FUNCTION-MAP kind=lambda offset=181 object[11]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "xs"
+00015:   6  getprop "Views"
+00020:   6  getprop "HungerLayer"
+00025:   6  dup
+00026:   6  callprop "extend"
+00031:   6  swap
+00032:   6  notearg
+00033:   6  newinit 1
+00038:   7  lambda (function () {
+    [sourceless code]
+})
+00043:   7  initprop "ctor"
+00048:  12  int8 20
+00050:  12  initprop "offHeight"
+00055:  14  lambda (function () {
+    [sourceless code]
+})
+00060:  14  initprop "init"
+00065: 125  lambda (function () {
+    [sourceless code]
+})
+00070: 125  initprop "onEnter"
+00075: 138  lambda (function () {
+    [sourceless code]
+})
+00080: 138  initprop "setListener"
+00085: 142  lambda (function () {
+    [sourceless code]
+})
+00090: 142  initprop "showResult"
+00095: 179  lambda (function () {
+    [sourceless code]
+})
+00100: 179  initprop "atkStart"
+00105: 215  lambda (function () {
+    [sourceless code]
+})
+00110: 215  initprop "atkFinish"
+00115: 247  lambda (function () {
+    [sourceless code]
+})
+00120: 247  initprop "atkViewReady"
+00125: 259  lambda (function () {
+    [sourceless code]
+})
+00130: 259  initprop "getViewHeight"
+00135: 264  lambda (function () {
+    [sourceless code]
+})
+00140: 264  initprop "onBtnSpectatorClicked"
+00145: 279  lambda (function () {
+    [sourceless code]
+})
+00150: 279  initprop "setBaseTouchPriority"
+00155: 279  endinit
+00156: 279  notearg
+00157: 279  call 1
+00160: 279  setprop "UnionWarFightView"
+00165: 279  popv
+00166: 293  name "xs"
+00171: 293  getprop "Views"
+00176: 293  getprop "UnionWarFightView"
+00181: 293  lambda (function () {
+    [sourceless code]
+})
+00186: 293  setprop "create"
+00191: 293  popv
+00192: 300  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  dup
+00002:   8  callprop "_super"
+00007:   8  swap
+00008:   8  notearg
+00009:   8  call 0
+00012:   8  pop
+00013:   9  name "cc"
+00018:   9  dup
+00019:   9  callprop "associateWithNative"
+00024:   9  swap
+00025:   9  notearg
+00026:   9  this
+00027:   9  notearg
+00028:   9  name "xs"
+00033:   9  getprop "Views"
+00038:   9  getprop "HungerLayer"
+00043:   9  notearg
+00044:   9  call 2
+00047:   9  pop
+00048:   9  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:7 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=7
+;; arg[0] params
+;; local[0] visibleSize
+;; local[1] visibleOrigin
+;; local[2] _sort
+;; local[3] count
+;; local[4] i
+;; local[5] fightHeadView
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=341 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  this
+00001:  15  dup
+00002:  15  callprop "_super"
+00007:  15  swap
+00008:  15  notearg
+00009:  15  call 0
+00012:  15  not
+00013:  15  ifeq 20 (+7)
+00018:  16  false
+00019:  16  return
+00020:  18  this
+00021:  18  getarg 0
+00024:  18  getprop "battleId"
+00029:  18  setprop "btattleId"
+00034:  18  pop
+00035:  19  this
+00036:  19  getarg 0
+00039:  19  getprop "battleFightInfo"
+00044:  19  setprop "battleFightInfo"
+00049:  19  pop
+00050:  20  this
+00051:  20  getarg 0
+00054:  20  getprop "processState"
+00059:  20  setprop "processState"
+00064:  20  pop
+00065:  22  this
+00066:  22  zero
+00067:  22  setprop "fightStep"
+00072:  22  pop
+00073:  23  this
+00074:  23  zero
+00075:  23  setprop "team1_fightingIdx"
+00080:  23  pop
+00081:  24  this
+00082:  24  zero
+00083:  24  setprop "team2_fightingIdx"
+00088:  24  pop
+00089:  29  this
+00090:  29  this
+00091:  29  getprop "battleFightInfo"
+00096:  29  dup
+00097:  29  callprop "getTeam1"
+00102:  29  swap
+00103:  29  notearg
+00104:  29  call 0
+00107:  29  setprop "team1"
+00112:  29  pop
+00113:  30  this
+00114:  30  this
+00115:  30  getprop "battleFightInfo"
+00120:  30  dup
+00121:  30  callprop "getTeam2"
+00126:  30  swap
+00127:  30  notearg
+00128:  30  call 0
+00131:  30  setprop "team2"
+00136:  30  pop
+00137:  31  name "xs"
+00142:  31  dup
+00143:  31  callprop "dump"
+00148:  31  swap
+00149:  31  notearg
+00150:  31  string "this.playersTeam1"
+00155:  31  notearg
+00156:  31  this
+00157:  31  getprop "team1"
+00162:  31  notearg
+00163:  31  call 2
+00166:  31  pop
+00167:  32  name "xs"
+00172:  32  dup
+00173:  32  callprop "dump"
+00178:  32  swap
+00179:  32  notearg
+00180:  32  string "this.playersTeam2"
+00185:  32  notearg
+00186:  32  this
+00187:  32  getprop "team2"
+00192:  32  notearg
+00193:  32  call 2
+00196:  32  pop
+00197:  34  this
+00198:  34  newarray 0
+00202:  34  endinit
+00203:  34  setprop "team1_headViews"
+00208:  34  pop
+00209:  35  this
+00210:  35  newarray 0
+00214:  35  endinit
+00215:  35  setprop "team2_headViews"
+00220:  35  pop
+00221:  36  name "xs"
+00226:  36  getprop "director"
+00231:  36  dup
+00232:  36  callprop "getVisibleSize"
+00237:  36  swap
+00238:  36  notearg
+00239:  36  call 0
+00242:  36  setlocal 0
+00245:  36  pop
+00246:  37  name "xs"
+00251:  37  getprop "director"
+00256:  37  dup
+00257:  37  callprop "getVisibleOrigin"
+00262:  37  swap
+00263:  37  notearg
+00264:  37  call 0
+00267:  37  setlocal 1
+00270:  37  pop
+00271:  40  this
+00272:  40  getprop "processState"
+00277:  40  name "xs"
+00282:  40  getprop "Constant_UnionWar_FightViewProcessState_ShowResult"
+00287:  40  eq
+00288:  40  ifeq 394 (+106)
+00293:  41  this
+00294:  41  this
+00295:  41  getprop "team1"
+00300:  41  dup
+00301:  41  callprop "concat"
+00306:  41  swap
+00307:  41  notearg
+00308:  41  call 0
+00311:  41  setprop "team1"
+00316:  41  pop
+00317:  42  this
+00318:  42  this
+00319:  42  getprop "team2"
+00324:  42  dup
+00325:  42  callprop "concat"
+00330:  42  swap
+00331:  42  notearg
+00332:  42  call 0
+00335:  42  setprop "team2"
+00340:  42  pop
+00341:  44  lambda (function () {
+    [sourceless code]
+})
+00346:  44  setlocal 2
+00349:  44  pop
+00350:  51  this
+00351:  51  getprop "team1"
+00356:  51  dup
+00357:  51  callprop "sort"
+00362:  51  swap
+00363:  51  notearg
+00364:  51  getlocal 2
+00367:  51  notearg
+00368:  51  call 1
+00371:  51  pop
+00372:  52  this
+00373:  52  getprop "team2"
+00378:  52  dup
+00379:  52  callprop "sort"
+00384:  52  swap
+00385:  52  notearg
+00386:  52  getlocal 2
+00389:  52  notearg
+00390:  52  call 1
+00393:  52  pop
+00394:  55  this
+00395:  55  name "xs"
+00400:  55  getprop "Views"
+00405:  55  getprop "HungerLayer"
+00410:  55  dup
+00411:  55  callprop "create"
+00416:  55  swap
+00417:  55  notearg
+00418:  55  call 0
+00421:  55  setprop "scrollContainerView"
+00426:  55  pop
+00427:  56  this
+00428:  56  name "cc"
+00433:  56  getprop "Layer"
+00438:  56  dup
+00439:  56  callprop "create"
+00444:  56  swap
+00445:  56  notearg
+00446:  56  call 0
+00449:  56  setprop "team1_view"
+00454:  56  pop
+00455:  57  this
+00456:  57  name "cc"
+00461:  57  getprop "Layer"
+00466:  57  dup
+00467:  57  callprop "create"
+00472:  57  swap
+00473:  57  notearg
+00474:  57  call 0
+00477:  57  setprop "team2_view"
+00482:  57  pop
+00483:  58  this
+00484:  58  getprop "team1"
+00489:  58  length "length"
+00494:  58  this
+00495:  58  getprop "team2"
+00500:  58  length "length"
+00505:  58  gt
+00506:  58  ifeq 527 (+21)
+00511:  58  this
+00512:  58  getprop "team1"
+00517:  58  length "length"
+00522:  58  goto 538 (+16)
+00527:  58  this
+00528:  58  getprop "team2"
+00533:  58  length "length"
+00538:  58  setlocal 3
+00541:  58  pop
+00542:  59  zero
+00543:  59  setlocal 4
+00546:  59  pop
+00547:  59  goto 1155 (+608)
+00552:  61  loophead
+00553:  61  getlocal 4
+00556:  61  this
+00557:  61  getprop "team1"
+00562:  61  length "length"
+00567:  61  lt
+00568:  61  ifeq 856 (+288)
+00573:  62  name "xs"
+00578:  62  getprop "Views"
+00583:  62  getprop "UnionWarPlayerHeadFightView"
+00588:  62  dup
+00589:  62  callprop "create"
+00594:  62  swap
+00595:  62  notearg
+00596:  62  newinit 1
+00601:  63  one
+00602:  63  initprop "teamNo"
+00607:  64  this
+00608:  64  getprop "team1"
+00613:  64  getlocal 4
+00616:  64  getelem
+00617:  64  initprop "playerData"
+00622:  65  this
+00623:  65  getprop "processState"
+00628:  65  initprop "processState"
+00633:  65  endinit
+00634:  65  notearg
+00635:  65  call 1
+00638:  65  setlocal 5
+00641:  65  pop
+00642:  67  getlocal 5
+00645:  67  dup
+00646:  67  callprop "setListener"
+00651:  67  swap
+00652:  67  notearg
+00653:  67  this
+00654:  67  notearg
+00655:  67  call 1
+00658:  67  pop
+00659:  68  getlocal 5
+00662:  68  dup
+00663:  68  callprop "setIdx"
+00668:  68  swap
+00669:  68  notearg
+00670:  68  getlocal 4
+00673:  68  notearg
+00674:  68  call 1
+00677:  68  pop
+00678:  69  getlocal 5
+00681:  69  dup
+00682:  69  callprop "refreshView"
+00687:  69  swap
+00688:  69  notearg
+00689:  69  call 0
+00692:  69  pop
+00693:  70  name "xs"
+00698:  70  getprop "Utils"
+00703:  70  getprop "Node"
+00708:  70  dup
+00709:  70  callprop "attachNodes"
+00714:  70  swap
+00715:  70  notearg
+00716:  70  this
+00717:  70  getprop "team1_view"
+00722:  70  notearg
+00723:  70  getlocal 5
+00726:  70  notearg
+00727:  70  newinit 1
+00732:  71  string "cb"
+00737:  71  initprop "desc"
+00742:  72  newinit 1
+00747:  73  int8 -90
+00749:  73  getlocal 5
+00752:  73  dup
+00753:  73  callprop "getContentSize"
+00758:  73  swap
+00759:  73  notearg
+00760:  73  call 0
+00763:  73  getprop "width"
+00768:  73  sub
+00769:  73  initprop "x"
+00774:  74  this
+00775:  74  getprop "offHeight"
+00780:  74  neg
+00781:  74  int8 125
+00783:  74  getlocal 3
+00786:  74  one
+00787:  74  sub
+00788:  74  getlocal 4
+00791:  74  sub
+00792:  74  mul
+00793:  74  add
+00794:  74  initprop "y"
+00799:  74  endinit
+00800:  74  initprop "offset"
+00805:  76  true
+00806:  76  initprop "sc"
+00811:  76  endinit
+00812:  76  notearg
+00813:  76  call 3
+00816:  76  pop
+00817:  78  getlocal 5
+00820:  78  dup
+00821:  78  callprop "setListener"
+00826:  78  swap
+00827:  78  notearg
+00828:  78  this
+00829:  78  notearg
+00830:  78  call 1
+00833:  78  pop
+00834:  79  this
+00835:  79  getprop "team1_headViews"
+00840:  79  dup
+00841:  79  callprop "push"
+00846:  79  swap
+00847:  79  notearg
+00848:  79  getlocal 5
+00851:  79  notearg
+00852:  79  call 1
+00855:  79  pop
+00856:  82  getlocal 4
+00859:  82  this
+00860:  82  getprop "team2"
+00865:  82  length "length"
+00870:  82  lt
+00871:  82  ifeq 1140 (+269)
+00876:  84  name "xs"
+00881:  84  getprop "Views"
+00886:  84  getprop "UnionWarPlayerHeadFightView"
+00891:  84  dup
+00892:  84  callprop "create"
+00897:  84  swap
+00898:  84  notearg
+00899:  84  newinit 1
+00904:  85  int8 2
+00906:  85  initprop "teamNo"
+00911:  86  this
+00912:  86  getprop "team2"
+00917:  86  getlocal 4
+00920:  86  getelem
+00921:  86  initprop "playerData"
+00926:  87  this
+00927:  87  getprop "processState"
+00932:  87  initprop "processState"
+00937:  87  endinit
+00938:  87  notearg
+00939:  87  call 1
+00942:  87  setlocal 5
+00945:  87  pop
+00946:  89  getlocal 5
+00949:  89  dup
+00950:  89  callprop "setListener"
+00955:  89  swap
+00956:  89  notearg
+00957:  89  this
+00958:  89  notearg
+00959:  89  call 1
+00962:  89  pop
+00963:  90  getlocal 5
+00966:  90  dup
+00967:  90  callprop "setIdx"
+00972:  90  swap
+00973:  90  notearg
+00974:  90  getlocal 4
+00977:  90  notearg
+00978:  90  call 1
+00981:  90  pop
+00982:  91  getlocal 5
+00985:  91  dup
+00986:  91  callprop "refreshView"
+00991:  91  swap
+00992:  91  notearg
+00993:  91  call 0
+00996:  91  pop
+00997:  92  name "xs"
+01002:  92  getprop "Utils"
+01007:  92  getprop "Node"
+01012:  92  dup
+01013:  92  callprop "attachNodes"
+01018:  92  swap
+01019:  92  notearg
+01020:  92  this
+01021:  92  getprop "team2_view"
+01026:  92  notearg
+01027:  92  getlocal 5
+01030:  92  notearg
+01031:  92  newinit 1
+01036:  93  string "cb"
+01041:  93  initprop "desc"
+01046:  94  newinit 1
+01051:  95  int8 85
+01053:  95  initprop "x"
+01058:  96  this
+01059:  96  getprop "offHeight"
+01064:  96  neg
+01065:  96  int8 125
+01067:  96  getlocal 3
+01070:  96  one
+01071:  96  sub
+01072:  96  getlocal 4
+01075:  96  sub
+01076:  96  mul
+01077:  96  add
+01078:  96  initprop "y"
+01083:  96  endinit
+01084:  96  initprop "offset"
+01089:  98  true
+01090:  98  initprop "sc"
+01095:  98  endinit
+01096:  98  notearg
+01097:  98  call 3
+01100:  98  pop
+01101: 100  getlocal 5
+01104: 100  dup
+01105: 100  callprop "setListener"
+01110: 100  swap
+01111: 100  notearg
+01112: 100  this
+01113: 100  notearg
+01114: 100  call 1
+01117: 100  pop
+01118: 101  this
+01119: 101  getprop "team2_headViews"
+01124: 101  dup
+01125: 101  callprop "push"
+01130: 101  swap
+01131: 101  notearg
+01132: 101  getlocal 5
+01135: 101  notearg
+01136: 101  call 1
+01139: 101  pop
+01140:  59  localinc 11
+01143:  59  getlocal 4
+01146:  59  pos
+01147:  59  dup
+01148:  59  one
+01149:  59  add
+01150:  59  setlocal 4
+01153:  59  pop
+01154:  59  pop
+01155:  59  loopentry
+01156:  59  getlocal 4
+01159:  59  getlocal 3
+01162:  59  lt
+01163:  59  ifne 552 (-611)
+01168: 104  this
+01169: 104  getprop "scrollContainerView"
+01174: 104  dup
+01175: 104  callprop "addChild"
+01180: 104  swap
+01181: 104  notearg
+01182: 104  this
+01183: 104  getprop "team1_view"
+01188: 104  notearg
+01189: 104  call 1
+01192: 104  pop
+01193: 105  this
+01194: 105  getprop "scrollContainerView"
+01199: 105  dup
+01200: 105  callprop "addChild"
+01205: 105  swap
+01206: 105  notearg
+01207: 105  this
+01208: 105  getprop "team2_view"
+01213: 105  notearg
+01214: 105  call 1
+01217: 105  pop
+01218: 108  this
+01219: 108  this
+01220: 108  getprop "offHeight"
+01225: 108  int8 125
+01227: 108  getlocal 3
+01230: 108  mul
+01231: 108  add
+01232: 108  setprop "viewHeight"
+01237: 108  pop
+01238: 109  this
+01239: 109  getprop "scrollContainerView"
+01244: 109  dup
+01245: 109  callprop "setContentSize"
+01250: 109  swap
+01251: 109  notearg
+01252: 109  name "cc"
+01257: 109  dup
+01258: 109  callprop "size"
+01263: 109  swap
+01264: 109  notearg
+01265: 109  this
+01266: 109  getprop "scrollContainerView"
+01271: 109  dup
+01272: 109  callprop "getContentSize"
+01277: 109  swap
+01278: 109  notearg
+01279: 109  call 0
+01282: 109  getprop "width"
+01287: 109  notearg
+01288: 109  this
+01289: 109  getprop "viewHeight"
+01294: 109  notearg
+01295: 109  call 2
+01298: 109  notearg
+01299: 109  call 1
+01302: 109  pop
+01303: 112  this
+01304: 112  name "cc"
+01309: 112  dup
+01310: 112  callprop "size"
+01315: 112  swap
+01316: 112  notearg
+01317: 112  getlocal 0
+01320: 112  getprop "width"
+01325: 112  notearg
+01326: 112  getlocal 0
+01329: 112  getprop "height"
+01334: 112  double 0.75
+01339: 112  mul
+01340: 112  notearg
+01341: 112  call 2
+01344: 112  setprop "m_scrollViewSize"
+01349: 112  pop
+01350: 113  this
+01351: 113  name "xs"
+01356: 113  getprop "Views"
+01361: 113  getprop "ScrollView"
+01366: 113  dup
+01367: 113  callprop "create"
+01372: 113  swap
+01373: 113  notearg
+01374: 113  this
+01375: 113  getprop "m_scrollViewSize"
+01380: 113  notearg
+01381: 113  call 1
+01384: 113  setprop "m_scrollView"
+01389: 113  pop
+01390: 114  name "xs"
+01395: 114  getprop "Utils"
+01400: 114  getprop "Node"
+01405: 114  dup
+01406: 114  callprop "attachNodes"
+01411: 114  swap
+01412: 114  notearg
+01413: 114  this
+01414: 114  notearg
+01415: 114  this
+01416: 114  getprop "m_scrollView"
+01421: 114  notearg
+01422: 114  newinit 1
+01427: 115  string "lb"
+01432: 115  initprop "desc"
+01437: 116  true
+01438: 116  initprop "sc"
+01443: 116  endinit
+01444: 116  notearg
+01445: 116  call 3
+01448: 116  pop
+01449: 118  this
+01450: 118  getprop "m_scrollView"
+01455: 118  dup
+01456: 118  callprop "addChildrenView"
+01461: 118  swap
+01462: 118  notearg
+01463: 118  this
+01464: 118  getprop "scrollContainerView"
+01469: 118  notearg
+01470: 118  call 1
+01473: 118  pop
+01474: 119  this
+01475: 119  getprop "m_scrollView"
+01480: 119  dup
+01481: 119  callprop "resizeView"
+01486: 119  swap
+01487: 119  notearg
+01488: 119  call 0
+01491: 119  pop
+01492: 122  true
+01493: 122  return
+01494: 122  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:14 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=2 bindings=2
+;; arg[0] a
+;; arg[1] b
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  getarg 0
+00003:  49  dup
+00004:  49  callprop "getKillNum"
+00009:  49  swap
+00010:  49  notearg
+00011:  49  call 0
+00014:  49  getarg 1
+00017:  49  dup
+00018:  49  callprop "getKillNum"
+00023:  49  swap
+00024:  49  notearg
+00025:  49  call 0
+00028:  49  lt
+00029:  49  return
+00030:  49  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:44 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:125 ---
+loc   line  op
+----- ----  --
+main:
+00000: 126  this
+00001: 126  dup
+00002: 126  callprop "_super"
+00007: 126  swap
+00008: 126  notearg
+00009: 126  call 0
+00012: 126  pop
+00013: 128  this
+00014: 128  getprop "processState"
+00019: 128  name "xs"
+00024: 128  getprop "Constant_UnionWar_FightViewProcessState_ShowFight"
+00029: 128  eq
+00030: 128  ifeq 40 (+10)
+00035: 128  goto 75 (+40)
+00040: 132  this
+00041: 132  getprop "processState"
+00046: 132  name "xs"
+00051: 132  getprop "Constant_UnionWar_FightViewProcessState_ShowResult"
+00056: 132  eq
+00057: 132  ifeq 75 (+18)
+00062: 134  this
+00063: 134  dup
+00064: 134  callprop "showResult"
+00069: 134  swap
+00070: 134  notearg
+00071: 134  call 0
+00074: 134  pop
+00075: 135  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:125 ---
+;; function object[3] setListener
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] listener
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:138 ---
+loc   line  op
+----- ----  --
+main:
+00000: 139  this
+00001: 139  getarg 0
+00004: 139  setprop "m_listener"
+00009: 139  pop
+00010: 139  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:138 ---
+;; function object[4] showResult
+;; function metadata object[4] nargs=0 bindings=5
+;; local[0] i
+;; local[1] winSp
+;; local[2] loseSp
+;; local[3] posL
+;; local[4] posR
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:142 ---
+loc   line  op
+----- ----  --
+main:
+00000: 144  zero
+00001: 144  setlocal 0
+00004: 144  pop
+00005: 144  goto 64 (+59)
+00010: 145  loophead
+00011: 145  bindname "headView"
+00016: 145  this
+00017: 145  getprop "team1_headViews"
+00022: 145  getlocal 0
+00025: 145  getelem
+00026: 145  setname "headView"
+00031: 145  pop
+00032: 146  name "headView"
+00037: 146  dup
+00038: 146  callprop "showHeadViewResult"
+00043: 146  swap
+00044: 146  notearg
+00045: 146  call 0
+00048: 146  pop
+00049: 144  localinc 11
+00052: 144  getlocal 0
+00055: 144  pos
+00056: 144  dup
+00057: 144  one
+00058: 144  add
+00059: 144  setlocal 0
+00062: 144  pop
+00063: 144  pop
+00064: 144  loopentry
+00065: 144  getlocal 0
+00068: 144  this
+00069: 144  getprop "team1_headViews"
+00074: 144  length "length"
+00079: 144  lt
+00080: 144  ifne 10 (-70)
+00085: 148  zero
+00086: 148  setlocal 0
+00089: 148  pop
+00090: 148  goto 149 (+59)
+00095: 149  loophead
+00096: 149  bindname "headView"
+00101: 149  this
+00102: 149  getprop "team2_headViews"
+00107: 149  getlocal 0
+00110: 149  getelem
+00111: 149  setname "headView"
+00116: 149  pop
+00117: 150  name "headView"
+00122: 150  dup
+00123: 150  callprop "showHeadViewResult"
+00128: 150  swap
+00129: 150  notearg
+00130: 150  call 0
+00133: 150  pop
+00134: 148  localinc 11
+00137: 148  getlocal 0
+00140: 148  pos
+00141: 148  dup
+00142: 148  one
+00143: 148  add
+00144: 148  setlocal 0
+00147: 148  pop
+00148: 148  pop
+00149: 148  loopentry
+00150: 148  getlocal 0
+00153: 148  this
+00154: 148  getprop "team2_headViews"
+00159: 148  length "length"
+00164: 148  lt
+00165: 148  ifne 95 (-70)
+00170: 154  name "xs"
+00175: 154  getprop "Factorys"
+00180: 154  getprop "Sprite"
+00185: 154  dup
+00186: 154  callprop "create"
+00191: 154  swap
+00192: 154  notearg
+00193: 154  string "GuildDialog_shengchu"
+00198: 154  notearg
+00199: 154  string "GuildDialog"
+00204: 154  notearg
+00205: 154  call 2
+00208: 154  setlocal 1
+00211: 154  pop
+00212: 155  name "xs"
+00217: 155  getprop "Factorys"
+00222: 155  getprop "Sprite"
+00227: 155  dup
+00228: 155  callprop "create"
+00233: 155  swap
+00234: 155  notearg
+00235: 155  string "GuildDialog_zhanbai"
+00240: 155  notearg
+00241: 155  string "GuildDialog"
+00246: 155  notearg
+00247: 155  call 2
+00250: 155  setlocal 2
+00253: 155  pop
+00254: 157  name "cc"
+00259: 157  dup
+00260: 157  callprop "p"
+00265: 157  swap
+00266: 157  notearg
+00267: 158  this
+00268: 158  getprop "scrollContainerView"
+00273: 158  dup
+00274: 158  callprop "getContentSize"
+00279: 158  swap
+00280: 158  notearg
+00281: 158  call 0
+00284: 158  getprop "width"
+00289: 158  int8 2
+00291: 158  div
+00292: 158  uint16 300
+00295: 158  sub
+00296: 158  notearg
+00297: 159  this
+00298: 159  getprop "scrollContainerView"
+00303: 159  dup
+00304: 159  callprop "getContentSize"
+00309: 159  swap
+00310: 159  notearg
+00311: 159  call 0
+00314: 159  getprop "height"
+00319: 159  uint16 200
+00322: 159  sub
+00323: 159  notearg
+00324: 159  call 2
+00327: 159  setlocal 3
+00330: 159  pop
+00331: 160  name "cc"
+00336: 160  dup
+00337: 160  callprop "p"
+00342: 160  swap
+00343: 160  notearg
+00344: 161  this
+00345: 161  getprop "scrollContainerView"
+00350: 161  dup
+00351: 161  callprop "getContentSize"
+00356: 161  swap
+00357: 161  notearg
+00358: 161  call 0
+00361: 161  getprop "width"
+00366: 161  int8 2
+00368: 161  div
+00369: 161  uint16 300
+00372: 161  add
+00373: 161  notearg
+00374: 162  this
+00375: 162  getprop "scrollContainerView"
+00380: 162  dup
+00381: 162  callprop "getContentSize"
+00386: 162  swap
+00387: 162  notearg
+00388: 162  call 0
+00391: 162  getprop "height"
+00396: 162  uint16 200
+00399: 162  sub
+00400: 162  notearg
+00401: 162  call 2
+00404: 162  setlocal 4
+00407: 162  pop
+00408: 164  this
+00409: 164  getprop "battleFightInfo"
+00414: 164  dup
+00415: 164  callprop "getWinnerUnionIdx"
+00420: 164  swap
+00421: 164  notearg
+00422: 164  call 0
+00425: 164  zero
+00426: 164  eq
+00427: 164  ifeq 475 (+48)
+00432: 165  getlocal 1
+00435: 165  dup
+00436: 165  callprop "setPosition"
+00441: 165  swap
+00442: 165  notearg
+00443: 165  getlocal 3
+00446: 165  notearg
+00447: 165  call 1
+00450: 165  pop
+00451: 166  getlocal 2
+00454: 166  dup
+00455: 166  callprop "setPosition"
+00460: 166  swap
+00461: 166  notearg
+00462: 166  getlocal 4
+00465: 166  notearg
+00466: 166  call 1
+00469: 166  pop
+00470: 166  goto 513 (+43)
+00475: 169  getlocal 1
+00478: 169  dup
+00479: 169  callprop "setPosition"
+00484: 169  swap
+00485: 169  notearg
+00486: 169  getlocal 4
+00489: 169  notearg
+00490: 169  call 1
+00493: 169  pop
+00494: 170  getlocal 2
+00497: 170  dup
+00498: 170  callprop "setPosition"
+00503: 170  swap
+00504: 170  notearg
+00505: 170  getlocal 3
+00508: 170  notearg
+00509: 170  call 1
+00512: 170  pop
+00513: 173  this
+00514: 173  getprop "scrollContainerView"
+00519: 173  dup
+00520: 173  callprop "addChild"
+00525: 173  swap
+00526: 173  notearg
+00527: 173  getlocal 1
+00530: 173  notearg
+00531: 173  call 1
+00534: 173  pop
+00535: 174  this
+00536: 174  getprop "scrollContainerView"
+00541: 174  dup
+00542: 174  callprop "addChild"
+00547: 174  swap
+00548: 174  notearg
+00549: 174  getlocal 2
+00552: 174  notearg
+00553: 174  call 1
+00556: 174  pop
+00557: 174  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:142 ---
+;; function object[5] atkStart
+;; function metadata object[5] nargs=0 bindings=3
+;; local[0] winner
+;; local[1] _team1_headView
+;; local[2] _team2_headView
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:179 ---
+loc   line  op
+----- ----  --
+main:
+00000: 181  this
+00001: 181  getprop "battleFightInfo"
+00006: 181  dup
+00007: 181  callprop "isFightOver"
+00012: 181  swap
+00013: 181  notearg
+00014: 181  this
+00015: 181  getprop "fightStep"
+00020: 181  notearg
+00021: 181  call 1
+00024: 181  ifeq 100 (+76)
+00029: 182  name "xs"
+00034: 182  dup
+00035: 182  callprop "log"
+00040: 182  swap
+00041: 182  notearg
+00042: 182  string "\u6218\u6597\u7ED3\u675F"
+00047: 182  notearg
+00048: 182  call 1
+00051: 182  pop
+00052: 183  this
+00053: 183  getprop "m_listener"
+00058: 183  and 75 (+17)
+00063: 183  pop
+00064: 183  this
+00065: 183  getprop "m_listener"
+00070: 183  getprop "onBtnSkipClicked"
+00075: 183  ifeq 98 (+23)
+00080: 184  this
+00081: 184  getprop "m_listener"
+00086: 184  dup
+00087: 184  callprop "onBtnSkipClicked"
+00092: 184  swap
+00093: 184  notearg
+00094: 184  call 0
+00097: 184  pop
+00098: 186  undefined
+00099: 186  return
+00100: 189  this
+00101: 189  getprop "battleFightInfo"
+00106: 189  dup
+00107: 189  callprop "getWinner"
+00112: 189  swap
+00113: 189  notearg
+00114: 189  this
+00115: 189  getprop "fightStep"
+00120: 189  notearg
+00121: 189  call 1
+00124: 189  setlocal 0
+00127: 189  pop
+00128: 190  this
+00129: 190  getprop "team1_headViews"
+00134: 190  this
+00135: 190  getprop "team1_fightingIdx"
+00140: 190  getelem
+00141: 190  setlocal 1
+00144: 190  pop
+00145: 191  this
+00146: 191  getprop "team2_headViews"
+00151: 191  this
+00152: 191  getprop "team2_fightingIdx"
+00157: 191  getelem
+00158: 191  setlocal 2
+00161: 191  pop
+00162: 193  getlocal 1
+00165: 193  null
+00166: 193  eq
+00167: 193  ifeq 215 (+48)
+00172: 194  name "xs"
+00177: 194  dup
+00178: 194  callprop "warn"
+00183: 194  swap
+00184: 194  notearg
+00185: 194  string "_team1_headView \u4E3A\u7A7A!!!!"
+00190: 194  notearg
+00191: 194  call 1
+00194: 194  pop
+00195: 195  this
+00196: 195  getprop "m_listener"
+00201: 195  dup
+00202: 195  callprop "onBtnSkipClicked"
+00207: 195  swap
+00208: 195  notearg
+00209: 195  call 0
+00212: 195  pop
+00213: 196  undefined
+00214: 196  return
+00215: 198  getlocal 2
+00218: 198  null
+00219: 198  eq
+00220: 198  ifeq 268 (+48)
+00225: 199  name "xs"
+00230: 199  dup
+00231: 199  callprop "warn"
+00236: 199  swap
+00237: 199  notearg
+00238: 199  string "_team2_headView \u4E3A\u7A7A!!!!"
+00243: 199  notearg
+00244: 199  call 1
+00247: 199  pop
+00248: 200  this
+00249: 200  getprop "m_listener"
+00254: 200  dup
+00255: 200  callprop "onBtnSkipClicked"
+00260: 200  swap
+00261: 200  notearg
+00262: 200  call 0
+00265: 200  pop
+00266: 201  undefined
+00267: 201  return
+00268: 204  getlocal 1
+00271: 204  dup
+00272: 204  callprop "startAtk"
+00277: 204  swap
+00278: 204  notearg
+00279: 204  newinit 1
+00284: 204  getlocal 0
+00287: 204  zero
+00288: 204  eq
+00289: 204  initprop "isWin"
+00294: 204  endinit
+00295: 204  notearg
+00296: 204  call 1
+00299: 204  pop
+00300: 205  getlocal 2
+00303: 205  dup
+00304: 205  callprop "startAtk"
+00309: 205  swap
+00310: 205  notearg
+00311: 205  newinit 1
+00316: 205  getlocal 0
+00319: 205  one
+00320: 205  eq
+00321: 205  initprop "isWin"
+00326: 205  endinit
+00327: 205  notearg
+00328: 205  call 1
+00331: 205  pop
+00332: 207  this
+00333: 207  false
+00334: 207  setprop "isTeamView1Ready"
+00339: 207  pop
+00340: 208  this
+00341: 208  false
+00342: 208  setprop "isTeamView2Ready"
+00347: 208  pop
+00348: 211  this
+00349: 211  propinc "fightStep"
+00355: 211  dup
+00356: 211  getprop "fightStep"
+00361: 211  pos
+00362: 211  dup
+00363: 211  one
+00364: 211  add
+00365: 211  pick 2
+00367: 211  swap
+00368: 211  setprop "fightStep"
+00373: 211  pop
+00374: 211  pop
+00375: 211  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:179 ---
+;; function object[6] atkFinish
+;; function metadata object[6] nargs=1 bindings=3
+;; arg[0] playerHeadFightView
+;; local[0] _teamNo
+;; local[1] upAction
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=147 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:215 ---
+loc   line  op
+----- ----  --
+main:
+00000: 217  getarg 0
+00003: 217  dup
+00004: 217  callprop "getTeamNo"
+00009: 217  swap
+00010: 217  notearg
+00011: 217  call 0
+00014: 217  setaliasedvar "_teamNo" (hops = 0, slot = 2)
+00023: 217  pop
+00024: 218  getarg 0
+00027: 218  dup
+00028: 218  callprop "getResult"
+00033: 218  swap
+00034: 218  notearg
+00035: 218  call 0
+00038: 218  getprop "isWin"
+00043: 218  not
+00044: 218  ifeq 323 (+279)
+00049: 221  name "xs"
+00054: 221  getprop "Utils"
+00059: 221  getprop "Action"
+00064: 221  dup
+00065: 221  callprop "combineSequence"
+00070: 221  swap
+00071: 221  notearg
+00072: 222  newarray 2
+00076: 223  name "cc"
+00081: 223  getprop "MoveBy"
+00086: 223  dup
+00087: 223  callprop "create"
+00092: 223  swap
+00093: 223  notearg
+00094: 223  double 0.5
+00099: 223  notearg
+00100: 223  name "cc"
+00105: 223  dup
+00106: 223  callprop "p"
+00111: 223  swap
+00112: 223  notearg
+00113: 223  zero
+00114: 223  notearg
+00115: 223  int8 125
+00117: 223  notearg
+00118: 223  call 2
+00121: 223  notearg
+00122: 223  call 2
+00125: 223  initelem_array 0
+00129: 224  name "cc"
+00134: 224  getprop "CallFunc"
+00139: 224  dup
+00140: 224  callprop "create"
+00145: 224  swap
+00146: 224  notearg
+00147: 224  lambda (function () {
+    [sourceless code]
+})
+00152: 224  dup
+00153: 224  callprop "bind"
+00158: 224  swap
+00159: 224  notearg
+00160: 226  this
+00161: 226  notearg
+00162: 226  call 1
+00165: 226  notearg
+00166: 226  call 1
+00169: 226  initelem_array 1
+00173: 226  endinit
+00174: 226  notearg
+00175: 226  call 1
+00178: 226  setlocal 1
+00181: 226  pop
+00182: 230  getaliasedvar "_teamNo" (hops = 0, slot = 2)
+00191: 230  one
+00192: 230  eq
+00193: 230  ifeq 252 (+59)
+00198: 231  this
+00199: 231  propinc "team1_fightingIdx"
+00205: 231  dup
+00206: 231  getprop "team1_fightingIdx"
+00211: 231  pos
+00212: 231  dup
+00213: 231  one
+00214: 231  add
+00215: 231  pick 2
+00217: 231  swap
+00218: 231  setprop "team1_fightingIdx"
+00223: 231  pop
+00224: 231  pop
+00225: 232  this
+00226: 232  getprop "team1_view"
+00231: 232  dup
+00232: 232  callprop "runAction"
+00237: 232  swap
+00238: 232  notearg
+00239: 232  getlocal 1
+00242: 232  notearg
+00243: 232  call 1
+00246: 232  pop
+00247: 232  goto 301 (+54)
+00252: 235  this
+00253: 235  propinc "team2_fightingIdx"
+00259: 235  dup
+00260: 235  getprop "team2_fightingIdx"
+00265: 235  pos
+00266: 235  dup
+00267: 235  one
+00268: 235  add
+00269: 235  pick 2
+00271: 235  swap
+00272: 235  setprop "team2_fightingIdx"
+00277: 235  pop
+00278: 235  pop
+00279: 236  this
+00280: 236  getprop "team2_view"
+00285: 236  dup
+00286: 236  callprop "runAction"
+00291: 236  swap
+00292: 236  notearg
+00293: 236  getlocal 1
+00296: 236  notearg
+00297: 236  call 1
+00300: 236  pop
+00301: 238  getarg 0
+00304: 238  dup
+00305: 238  callprop "setVisible"
+00310: 238  swap
+00311: 238  notearg
+00312: 238  false
+00313: 238  notearg
+00314: 238  call 1
+00317: 238  pop
+00318: 238  goto 346 (+28)
+00323: 242  this
+00324: 242  dup
+00325: 242  callprop "atkViewReady"
+00330: 242  swap
+00331: 242  notearg
+00332: 242  getaliasedvar "_teamNo" (hops = 0, slot = 2)
+00341: 242  notearg
+00342: 242  call 1
+00345: 242  pop
+00346: 243  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:215 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:224 ---
+loc   line  op
+----- ----  --
+main:
+00000: 225  this
+00001: 225  dup
+00002: 225  callprop "atkViewReady"
+00007: 225  swap
+00008: 225  notearg
+00009: 225  getaliasedvar "_teamNo" (hops = 0, slot = 2)
+00018: 225  notearg
+00019: 225  call 1
+00022: 225  pop
+00023: 225  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:224 ---
+;; function object[7] atkViewReady
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] teamNo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:247 ---
+loc   line  op
+----- ----  --
+main:
+00000: 248  getarg 0
+00003: 248  one
+00004: 248  eq
+00005: 248  ifeq 18 (+13)
+00010: 249  this
+00011: 249  true
+00012: 249  setprop "isTeamView1Ready"
+00017: 249  pop
+00018: 251  getarg 0
+00021: 251  int8 2
+00023: 251  eq
+00024: 251  ifeq 37 (+13)
+00029: 252  this
+00030: 252  true
+00031: 252  setprop "isTeamView2Ready"
+00036: 252  pop
+00037: 254  this
+00038: 254  getprop "isTeamView1Ready"
+00043: 254  and 55 (+12)
+00048: 254  pop
+00049: 254  this
+00050: 254  getprop "isTeamView2Ready"
+00055: 254  ifeq 73 (+18)
+00060: 255  this
+00061: 255  dup
+00062: 255  callprop "atkStart"
+00067: 255  swap
+00068: 255  notearg
+00069: 255  call 0
+00072: 255  pop
+00073: 256  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:247 ---
+;; function object[8] getViewHeight
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:259 ---
+loc   line  op
+----- ----  --
+main:
+00000: 260  this
+00001: 260  getprop "viewHeight"
+00006: 260  return
+00007: 260  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:259 ---
+;; function object[9] onBtnSpectatorClicked
+;; function metadata object[9] nargs=1 bindings=3
+;; arg[0] playerData
+;; local[0] arrVsList
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:264 ---
+loc   line  op
+----- ----  --
+main:
+00000: 265  this
+00001: 265  getprop "battleFightInfo"
+00006: 265  dup
+00007: 265  callprop "getPlayerVsList"
+00012: 265  swap
+00013: 265  notearg
+00014: 265  getarg 0
+00017: 265  dup
+00018: 265  callprop "getPlayerId"
+00023: 265  swap
+00024: 265  notearg
+00025: 265  call 0
+00028: 265  notearg
+00029: 265  call 1
+00032: 265  setlocal 0
+00035: 265  pop
+00036: 267  zero
+00037: 267  setlocal 1
+00040: 267  pop
+00041: 267  goto 212 (+171)
+00046: 268  loophead
+00047: 268  getlocal 0
+00050: 268  getlocal 1
+00053: 268  getelem
+00054: 268  this
+00055: 268  getprop "battleFightInfo"
+00060: 268  dup
+00061: 268  callprop "getUnions"
+00066: 268  swap
+00067: 268  notearg
+00068: 268  call 0
+00071: 268  setprop "unions"
+00076: 268  pop
+00077: 269  getlocal 0
+00080: 269  getlocal 1
+00083: 269  getelem
+00084: 269  this
+00085: 269  getprop "battleFightInfo"
+00090: 269  dup
+00091: 269  callprop "getUnionWarId"
+00096: 269  swap
+00097: 269  notearg
+00098: 269  call 0
+00101: 269  setprop "union_war_id"
+00106: 269  pop
+00107: 270  getlocal 0
+00110: 270  getlocal 1
+00113: 270  getelem
+00114: 270  this
+00115: 270  getprop "battleFightInfo"
+00120: 270  dup
+00121: 270  callprop "getBattleRounds"
+00126: 270  swap
+00127: 270  notearg
+00128: 270  call 0
+00131: 270  setprop "battle_rounds"
+00136: 270  pop
+00137: 271  getlocal 0
+00140: 271  getlocal 1
+00143: 271  getelem
+00144: 271  this
+00145: 271  getprop "battleFightInfo"
+00150: 271  dup
+00151: 271  callprop "getTag"
+00156: 271  swap
+00157: 271  notearg
+00158: 271  call 0
+00161: 271  setprop "tag"
+00166: 271  pop
+00167: 272  getlocal 0
+00170: 272  getlocal 1
+00173: 272  getelem
+00174: 272  this
+00175: 272  getprop "battleFightInfo"
+00180: 272  dup
+00181: 272  callprop "getBattleId"
+00186: 272  swap
+00187: 272  notearg
+00188: 272  call 0
+00191: 272  setprop "battle_id"
+00196: 272  pop
+00197: 267  localinc 11
+00200: 267  getlocal 1
+00203: 267  pos
+00204: 267  dup
+00205: 267  one
+00206: 267  add
+00207: 267  setlocal 1
+00210: 267  pop
+00211: 267  pop
+00212: 267  loopentry
+00213: 267  getlocal 1
+00216: 267  getlocal 0
+00219: 267  length "length"
+00224: 267  lt
+00225: 267  ifne 46 (-179)
+00230: 275  name "xs"
+00235: 275  getprop "Views"
+00240: 275  getprop "Mgr"
+00245: 275  dup
+00246: 275  callprop "showDialogByName"
+00251: 275  swap
+00252: 275  notearg
+00253: 275  string "UnionWarBattleResultDialog"
+00258: 275  notearg
+00259: 275  getlocal 0
+00262: 275  notearg
+00263: 275  call 2
+00266: 275  pop
+00267: 275  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:264 ---
+;; function object[10] setBaseTouchPriority
+;; function metadata object[10] nargs=1 bindings=2
+;; arg[0] priority
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:279 ---
+loc   line  op
+----- ----  --
+main:
+00000: 280  this
+00001: 280  getarg 0
+00004: 280  setprop "m_baseTouchPriority"
+00009: 280  pop
+00010: 281  this
+00011: 281  dup
+00012: 281  callprop "setTouchPriority"
+00017: 281  swap
+00018: 281  notearg
+00019: 281  this
+00020: 281  getprop "m_baseTouchPriority"
+00025: 281  notearg
+00026: 281  call 1
+00029: 281  pop
+00030: 282  this
+00031: 282  getprop "m_scrollView"
+00036: 282  dup
+00037: 282  callprop "setBaseTouchPriority"
+00042: 282  swap
+00043: 282  notearg
+00044: 282  this
+00045: 282  getprop "m_baseTouchPriority"
+00050: 282  notearg
+00051: 282  call 1
+00054: 282  pop
+00055: 284  zero
+00056: 284  setlocal 0
+00059: 284  pop
+00060: 284  goto 110 (+50)
+00065: 285  loophead
+00066: 285  this
+00067: 285  getprop "team1_headViews"
+00072: 285  getlocal 0
+00075: 285  getelem
+00076: 285  dup
+00077: 285  callprop "setBaseTouchPriority"
+00082: 285  swap
+00083: 285  notearg
+00084: 285  this
+00085: 285  getprop "m_baseTouchPriority"
+00090: 285  notearg
+00091: 285  call 1
+00094: 285  pop
+00095: 284  localinc 11
+00098: 284  getlocal 0
+00101: 284  pos
+00102: 284  dup
+00103: 284  one
+00104: 284  add
+00105: 284  setlocal 0
+00108: 284  pop
+00109: 284  pop
+00110: 284  loopentry
+00111: 284  getlocal 0
+00114: 284  this
+00115: 284  getprop "team1_headViews"
+00120: 284  length "length"
+00125: 284  lt
+00126: 284  ifne 65 (-61)
+00131: 287  zero
+00132: 287  setlocal 0
+00135: 287  pop
+00136: 287  goto 186 (+50)
+00141: 288  loophead
+00142: 288  this
+00143: 288  getprop "team2_headViews"
+00148: 288  getlocal 0
+00151: 288  getelem
+00152: 288  dup
+00153: 288  callprop "setBaseTouchPriority"
+00158: 288  swap
+00159: 288  notearg
+00160: 288  this
+00161: 288  getprop "m_baseTouchPriority"
+00166: 288  notearg
+00167: 288  call 1
+00170: 288  pop
+00171: 287  localinc 11
+00174: 287  getlocal 0
+00177: 287  pos
+00178: 287  dup
+00179: 287  one
+00180: 287  add
+00181: 287  setlocal 0
+00184: 287  pop
+00185: 287  pop
+00186: 287  loopentry
+00187: 287  getlocal 0
+00190: 287  this
+00191: 287  getprop "team2_headViews"
+00196: 287  length "length"
+00201: 287  lt
+00202: 287  ifne 141 (-61)
+00207: 289  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:279 ---
+;; function object[11] create
+;; function metadata object[11] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] layer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:293 ---
+loc   line  op
+----- ----  --
+main:
+00000: 294  name "xs"
+00005: 294  getprop "Views"
+00010: 294  getprop "UnionWarFightView"
+00015: 294  undefined
+00016: 294  notearg
+00017: 294  new 0
+00020: 294  setlocal 0
+00023: 294  pop
+00024: 295  getlocal 0
+00027: 295  and 51 (+24)
+00032: 295  pop
+00033: 295  getlocal 0
+00036: 295  dup
+00037: 295  callprop "init"
+00042: 295  swap
+00043: 295  notearg
+00044: 295  getarg 0
+00047: 295  notearg
+00048: 295  call 1
+00051: 295  ifeq 60 (+9)
+00056: 296  getlocal 0
+00059: 296  return
+00060: 298  name "xs"
+00065: 298  dup
+00066: 298  callprop "warn"
+00071: 298  swap
+00072: 298  notearg
+00073: 298  string "xs.Views.UnionWarFightView.create error!"
+00078: 298  notearg
+00079: 298  call 1
+00082: 298  pop
+00083: 299  null
+00084: 299  return
+00085: 299  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UnionWarFightView.js:293 ---

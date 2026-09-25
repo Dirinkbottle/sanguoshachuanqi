@@ -1,0 +1,373 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Icon/IconStyleB.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=98 object[0]
+;; FUNCTION-MAP kind=lambda offset=108 object[1]
+;; FUNCTION-MAP kind=lambda offset=118 object[2]
+;; FUNCTION-MAP kind=lambda offset=159 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Icon/IconStyleB.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  36  name "xs"
+00005:  36  getprop "Views"
+00010:  36  getprop "Icon"
+00015:  36  name "xs"
+00020:  36  getprop "Views"
+00025:  36  getprop "Icon"
+00030:  36  getprop "IconStyleA"
+00035:  36  dup
+00036:  36  callprop "extend"
+00041:  36  swap
+00042:  36  notearg
+00043:  36  newinit 1
+00048:  37  string "xs.Views.Icon.IconStyleB"
+00053:  37  initprop "name"
+00058:  39  name "xs"
+00063:  39  getprop "Debug"
+00068:  39  getprop "emptyFunc"
+00073:  39  initprop "log"
+00078:  40  name "xs"
+00083:  40  getprop "Debug"
+00088:  40  getprop "emptyFunc"
+00093:  40  initprop "dump"
+00098:  43  lambda (function () {
+    [sourceless code]
+})
+00103:  43  initprop "_createHeadView"
+00108:  52  lambda (function () {
+    [sourceless code]
+})
+00113:  52  initprop "_reloadData_Name"
+00118:  73  lambda (function () {
+    [sourceless code]
+})
+00123:  73  initprop "_reloadData_PieceName"
+00128:  73  endinit
+00129:  73  notearg
+00130:  73  call 1
+00133:  73  setprop "IconStyleB"
+00138:  73  popv
+00139: 117  name "xs"
+00144: 117  getprop "Views"
+00149: 117  getprop "Icon"
+00154: 117  getprop "IconStyleB"
+00159: 117  lambda (function () {
+    [sourceless code]
+})
+00164: 117  setprop "create"
+00169: 117  popv
+00170: 133  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Icon/IconStyleB.js:1 ---
+;; function object[0] _createHeadView
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] model
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Icon/IconStyleB.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  name "xs"
+00005:  45  getprop "Tools"
+00010:  45  getprop "Card"
+00015:  45  dup
+00016:  45  callprop "createHeadView_Item"
+00021:  45  swap
+00022:  45  notearg
+00023:  45  getarg 0
+00026:  45  notearg
+00027:  45  call 1
+00030:  45  return
+00031:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Icon/IconStyleB.js:43 ---
+;; function object[1] _reloadData_Name
+;; function metadata object[1] nargs=1 bindings=4
+;; arg[0] model
+;; local[0] _model
+;; local[1] _str
+;; local[2] _pos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Icon/IconStyleB.js:52 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  getarg 0
+00003:  56  setlocal 0
+00006:  56  pop
+00007:  58  getlocal 0
+00010:  58  dup
+00011:  58  callprop "getNameString"
+00016:  58  swap
+00017:  58  notearg
+00018:  58  call 0
+00021:  58  setlocal 1
+00024:  58  pop
+00025:  60  this
+00026:  60  getprop "nameView"
+00031:  60  not
+00032:  60  ifeq 213 (+181)
+00037:  62  this
+00038:  62  name "xs"
+00043:  62  getprop "Factorys"
+00048:  62  getprop "Label"
+00053:  62  dup
+00054:  62  callprop "createByStyleId"
+00059:  62  swap
+00060:  62  notearg
+00061:  62  string "LS_daojuName"
+00066:  62  notearg
+00067:  62  call 1
+00070:  62  setprop "nameView"
+00075:  62  pop
+00076:  64  name "cc"
+00081:  64  dup
+00082:  64  callprop "p"
+00087:  64  swap
+00088:  64  notearg
+00089:  64  zero
+00090:  64  notearg
+00091:  64  int8 -13
+00093:  64  name "xs"
+00098:  64  getprop "Cfg"
+00103:  64  getprop "Resource"
+00108:  64  getprop "Head"
+00113:  64  getprop "h"
+00118:  64  int8 2
+00120:  64  div
+00121:  64  sub
+00122:  64  notearg
+00123:  64  call 2
+00126:  64  setlocal 2
+00129:  64  pop
+00130:  66  name "xs"
+00135:  66  getprop "Utils"
+00140:  66  getprop "Node"
+00145:  66  dup
+00146:  66  callprop "attachNodes"
+00151:  66  swap
+00152:  66  notearg
+00153:  66  this
+00154:  66  notearg
+00155:  66  this
+00156:  66  getprop "nameView"
+00161:  66  notearg
+00162:  66  newinit 1
+00167:  66  string "cb"
+00172:  66  initprop "desc"
+00177:  66  getlocal 2
+00180:  66  initprop "offset"
+00185:  66  endinit
+00186:  66  notearg
+00187:  66  this
+00188:  66  getprop "Cfg"
+00193:  66  getprop "Constant"
+00198:  66  getprop "Bg"
+00203:  66  getprop "Name"
+00208:  66  notearg
+00209:  66  call 4
+00212:  66  pop
+00213:  69  this
+00214:  69  getprop "nameView"
+00219:  69  ifeq 246 (+27)
+00224:  70  this
+00225:  70  getprop "nameView"
+00230:  70  dup
+00231:  70  callprop "setString"
+00236:  70  swap
+00237:  70  notearg
+00238:  70  getlocal 1
+00241:  70  notearg
+00242:  70  call 1
+00245:  70  pop
+00246:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Icon/IconStyleB.js:52 ---
+;; function object[2] _reloadData_PieceName
+;; function metadata object[2] nargs=1 bindings=4
+;; arg[0] model
+;; local[0] _model
+;; local[1] _nameString
+;; local[2] _pos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Icon/IconStyleB.js:73 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  this
+00001:  75  dup
+00002:  75  callprop "log"
+00007:  75  swap
+00008:  75  notearg
+00009:  75  string "_reloadData_PieceName"
+00014:  75  notearg
+00015:  75  call 1
+00018:  75  pop
+00019:  77  getarg 0
+00022:  77  setlocal 0
+00025:  77  pop
+00026:  79  getlocal 0
+00029:  79  dup
+00030:  79  callprop "getNameString"
+00035:  79  swap
+00036:  79  notearg
+00037:  79  call 0
+00040:  79  name "xs"
+00045:  79  getprop "Tools"
+00050:  79  getprop "String"
+00055:  79  dup
+00056:  79  callprop "createString"
+00061:  79  swap
+00062:  79  notearg
+00063:  79  string "auto_name_31"
+00068:  79  notearg
+00069:  79  call 1
+00072:  79  add
+00073:  79  setlocal 1
+00076:  79  pop
+00077:  81  this
+00078:  81  getprop "nameView"
+00083:  81  not
+00084:  81  ifeq 265 (+181)
+00089:  83  this
+00090:  83  name "xs"
+00095:  83  getprop "Factorys"
+00100:  83  getprop "Label"
+00105:  83  dup
+00106:  83  callprop "createByStyleId"
+00111:  83  swap
+00112:  83  notearg
+00113:  83  string "LS_daojuName"
+00118:  83  notearg
+00119:  83  call 1
+00122:  83  setprop "nameView"
+00127:  83  pop
+00128:  85  name "cc"
+00133:  85  dup
+00134:  85  callprop "p"
+00139:  85  swap
+00140:  85  notearg
+00141:  85  zero
+00142:  85  notearg
+00143:  85  int8 -10
+00145:  85  name "xs"
+00150:  85  getprop "Cfg"
+00155:  85  getprop "Resource"
+00160:  85  getprop "Head"
+00165:  85  getprop "h"
+00170:  85  int8 2
+00172:  85  div
+00173:  85  sub
+00174:  85  notearg
+00175:  85  call 2
+00178:  85  setlocal 2
+00181:  85  pop
+00182:  87  name "xs"
+00187:  87  getprop "Utils"
+00192:  87  getprop "Node"
+00197:  87  dup
+00198:  87  callprop "attachNodes"
+00203:  87  swap
+00204:  87  notearg
+00205:  87  this
+00206:  87  notearg
+00207:  87  this
+00208:  87  getprop "nameView"
+00213:  87  notearg
+00214:  87  newinit 1
+00219:  87  string "cb"
+00224:  87  initprop "desc"
+00229:  87  getlocal 2
+00232:  87  initprop "offset"
+00237:  87  endinit
+00238:  87  notearg
+00239:  87  this
+00240:  87  getprop "Cfg"
+00245:  87  getprop "Constant"
+00250:  87  getprop "Bg"
+00255:  87  getprop "Name"
+00260:  87  notearg
+00261:  87  call 4
+00264:  87  pop
+00265:  90  this
+00266:  90  getprop "nameView"
+00271:  90  ifeq 298 (+27)
+00276:  91  this
+00277:  91  getprop "nameView"
+00282:  91  dup
+00283:  91  callprop "setString"
+00288:  91  swap
+00289:  91  notearg
+00290:  91  getlocal 1
+00293:  91  notearg
+00294:  91  call 1
+00297:  91  pop
+00298:  92  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Icon/IconStyleB.js:73 ---
+;; function object[3] create
+;; function metadata object[3] nargs=2 bindings=4
+;; arg[0] objCfg
+;; arg[1] viewCfg
+;; local[0] _view
+;; local[1] _objCfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Icon/IconStyleB.js:117 ---
+loc   line  op
+----- ----  --
+main:
+00000: 121  name "xs"
+00005: 121  getprop "Views"
+00010: 121  getprop "Icon"
+00015: 121  getprop "IconStyleB"
+00020: 121  undefined
+00021: 121  notearg
+00022: 121  new 0
+00025: 121  setlocal 0
+00028: 121  pop
+00029: 123  getarg 0
+00032: 123  or 44 (+12)
+00037: 123  pop
+00038: 123  newinit 1
+00043: 123  endinit
+00044: 123  setlocal 1
+00047: 123  pop
+00048: 127  getlocal 0
+00051: 127  dup
+00052: 127  callprop "init"
+00057: 127  swap
+00058: 127  notearg
+00059: 127  getlocal 1
+00062: 127  notearg
+00063: 127  getarg 1
+00066: 127  notearg
+00067: 127  call 2
+00070: 127  pop
+00071: 129  name "xs"
+00076: 129  getprop "Utils"
+00081: 129  dup
+00082: 129  callprop "makeDebugPoint"
+00087: 129  swap
+00088: 129  notearg
+00089: 129  getlocal 0
+00092: 129  notearg
+00093: 129  call 1
+00096: 129  pop
+00097: 130  name "xs"
+00102: 130  getprop "Utils"
+00107: 130  dup
+00108: 130  callprop "makeOriginal"
+00113: 130  swap
+00114: 130  notearg
+00115: 130  getlocal 0
+00118: 130  notearg
+00119: 130  call 1
+00122: 130  pop
+00123: 132  getlocal 0
+00126: 132  return
+00127: 132  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Icon/IconStyleB.js:117 ---

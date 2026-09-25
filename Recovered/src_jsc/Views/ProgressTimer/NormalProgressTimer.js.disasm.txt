@@ -1,0 +1,424 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/ProgressTimer/NormalProgressTimer.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=185 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Views"
+00010:   5  name "cc"
+00015:   5  getprop "Node"
+00020:   5  dup
+00021:   5  callprop "extend"
+00026:   5  swap
+00027:   5  notearg
+00028:   5  newinit 1
+00033:   6  lambda (function () {
+    [sourceless code]
+})
+00038:   6  initprop "ctor"
+00043:  11  lambda (function () {
+    [sourceless code]
+})
+00048:  11  initprop "init"
+00053:  39  lambda (function () {
+    [sourceless code]
+})
+00058:  39  initprop "setPercentage"
+00063:  45  lambda (function () {
+    [sourceless code]
+})
+00068:  45  initprop "setExpShow"
+00073:  50  newinit 1
+00078:  51  newinit 1
+00083:  52  int8 10
+00085:  52  initprop "tag"
+00090:  52  endinit
+00091:  52  initprop "progressSprite"
+00096:  56  newarray 1
+00100:  57  newinit 1
+00105:  57  int8 11
+00107:  57  initprop "tag"
+00112:  57  string "ls"
+00117:  57  initprop "type"
+00122:  57  string "m_exp"
+00127:  57  initprop "name"
+00132:  57  string "LS_EXPInf"
+00137:  57  initprop "id"
+00142:  57  endinit
+00143:  57  initelem_array 0
+00147:  57  endinit
+00148:  57  initprop "ccbCfg"
+00153:  57  endinit
+00154:  57  initprop "cfg"
+00159:  57  endinit
+00160:  57  notearg
+00161:  57  call 1
+00164:  57  setprop "NormalProgressTimer"
+00169:  57  popv
+00170:  62  name "xs"
+00175:  62  getprop "Views"
+00180:  62  getprop "NormalProgressTimer"
+00185:  62  lambda (function () {
+    [sourceless code]
+})
+00190:  62  setprop "create"
+00195:  62  popv
+00196:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "Node"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=2
+;; local[0] progressBarSprite
+;; local[1] progressBarSpritePos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  call 0
+00012:  12  not
+00013:  12  ifeq 20 (+7)
+00018:  13  false
+00019:  13  return
+00020:  16  this
+00021:  16  name "xs"
+00026:  16  getprop "ccb_reader"
+00031:  16  dup
+00032:  16  callprop "load"
+00037:  16  swap
+00038:  16  notearg
+00039:  16  string "ccb3/0_7_9_ProgressTimer.ccbi"
+00044:  16  notearg
+00045:  16  call 1
+00048:  16  setprop "ccbNode"
+00053:  16  pop
+00054:  17  this
+00055:  17  dup
+00056:  17  callprop "addChild"
+00061:  17  swap
+00062:  17  notearg
+00063:  17  this
+00064:  17  getprop "ccbNode"
+00069:  17  notearg
+00070:  17  call 1
+00073:  17  pop
+00074:  19  this
+00075:  19  dup
+00076:  19  callprop "setContentSize"
+00081:  19  swap
+00082:  19  notearg
+00083:  19  name "cc"
+00088:  19  dup
+00089:  19  callprop "size"
+00094:  19  swap
+00095:  19  notearg
+00096:  19  uint16 195
+00099:  19  notearg
+00100:  19  int8 24
+00102:  19  notearg
+00103:  19  call 2
+00106:  19  notearg
+00107:  19  call 1
+00110:  19  pop
+00111:  20  this
+00112:  20  dup
+00113:  20  callprop "setAnchorPoint"
+00118:  20  swap
+00119:  20  notearg
+00120:  20  name "cc"
+00125:  20  dup
+00126:  20  callprop "p"
+00131:  20  swap
+00132:  20  notearg
+00133:  20  double 0.5
+00138:  20  notearg
+00139:  20  double 0.5
+00144:  20  notearg
+00145:  20  call 2
+00148:  20  notearg
+00149:  20  call 1
+00152:  20  pop
+00153:  22  this
+00154:  22  getprop "ccbNode"
+00159:  22  dup
+00160:  22  callprop "getChildByTag"
+00165:  22  swap
+00166:  22  notearg
+00167:  22  this
+00168:  22  getprop "cfg"
+00173:  22  getprop "progressSprite"
+00178:  22  getprop "tag"
+00183:  22  notearg
+00184:  22  call 1
+00187:  22  setlocal 0
+00190:  22  pop
+00191:  23  getlocal 0
+00194:  23  dup
+00195:  23  callprop "removeFromParent"
+00200:  23  swap
+00201:  23  notearg
+00202:  23  call 0
+00205:  23  pop
+00206:  24  getlocal 0
+00209:  24  dup
+00210:  24  callprop "getPosition"
+00215:  24  swap
+00216:  24  notearg
+00217:  24  call 0
+00220:  24  setlocal 1
+00223:  24  pop
+00224:  26  this
+00225:  26  name "cc"
+00230:  26  getprop "ProgressTimer"
+00235:  26  dup
+00236:  26  callprop "create"
+00241:  26  swap
+00242:  26  notearg
+00243:  26  getlocal 0
+00246:  26  notearg
+00247:  26  call 1
+00250:  26  setprop "progressTimer"
+00255:  26  pop
+00256:  27  this
+00257:  27  getprop "progressTimer"
+00262:  27  dup
+00263:  27  callprop "setPosition"
+00268:  27  swap
+00269:  27  notearg
+00270:  27  getlocal 1
+00273:  27  notearg
+00274:  27  call 1
+00277:  27  pop
+00278:  28  this
+00279:  28  getprop "progressTimer"
+00284:  28  dup
+00285:  28  callprop "setType"
+00290:  28  swap
+00291:  28  notearg
+00292:  28  name "cc"
+00297:  28  getprop "PROGRESS_TIMER_TYPE_BAR"
+00302:  28  notearg
+00303:  28  call 1
+00306:  28  pop
+00307:  29  this
+00308:  29  getprop "progressTimer"
+00313:  29  dup
+00314:  29  callprop "setMidpoint"
+00319:  29  swap
+00320:  29  notearg
+00321:  29  name "cc"
+00326:  29  dup
+00327:  29  callprop "p"
+00332:  29  swap
+00333:  29  notearg
+00334:  29  zero
+00335:  29  notearg
+00336:  29  zero
+00337:  29  notearg
+00338:  29  call 2
+00341:  29  notearg
+00342:  29  call 1
+00345:  29  pop
+00346:  30  this
+00347:  30  getprop "progressTimer"
+00352:  30  dup
+00353:  30  callprop "setBarChangeRate"
+00358:  30  swap
+00359:  30  notearg
+00360:  30  name "cc"
+00365:  30  dup
+00366:  30  callprop "p"
+00371:  30  swap
+00372:  30  notearg
+00373:  30  one
+00374:  30  notearg
+00375:  30  zero
+00376:  30  notearg
+00377:  30  call 2
+00380:  30  notearg
+00381:  30  call 1
+00384:  30  pop
+00385:  31  this
+00386:  31  getprop "ccbNode"
+00391:  31  dup
+00392:  31  callprop "addChild"
+00397:  31  swap
+00398:  31  notearg
+00399:  31  this
+00400:  31  getprop "progressTimer"
+00405:  31  notearg
+00406:  31  call 1
+00409:  31  pop
+00410:  33  this
+00411:  33  null
+00412:  33  setprop "m_exp"
+00417:  33  pop
+00418:  34  name "xs"
+00423:  34  getprop "Utils"
+00428:  34  getprop "UI"
+00433:  34  dup
+00434:  34  callprop "replaceCcbByCfg"
+00439:  34  swap
+00440:  34  notearg
+00441:  34  this
+00442:  34  getprop "ccbNode"
+00447:  34  notearg
+00448:  34  this
+00449:  34  getprop "cfg"
+00454:  34  getprop "ccbCfg"
+00459:  34  notearg
+00460:  34  this
+00461:  34  notearg
+00462:  34  call 3
+00465:  34  pop
+00466:  36  true
+00467:  36  return
+00468:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:11 ---
+;; function object[2] setPercentage
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] percentage
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  this
+00001:  40  getprop "progressTimer"
+00006:  40  ifeq 33 (+27)
+00011:  41  this
+00012:  41  getprop "progressTimer"
+00017:  41  dup
+00018:  41  callprop "setPercentage"
+00023:  41  swap
+00024:  41  notearg
+00025:  41  getarg 0
+00028:  41  notearg
+00029:  41  call 1
+00032:  41  pop
+00033:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:39 ---
+;; function object[3] setExpShow
+;; function metadata object[3] nargs=2 bindings=2
+;; arg[0] haveExp
+;; arg[1] totalExp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  this
+00001:  46  getprop "m_exp"
+00006:  46  dup
+00007:  46  callprop "setString"
+00012:  46  swap
+00013:  46  notearg
+00014:  46  getarg 0
+00017:  46  string "/"
+00022:  46  add
+00023:  46  getarg 1
+00026:  46  add
+00027:  46  notearg
+00028:  46  call 1
+00031:  46  pop
+00032:  47  this
+00033:  47  dup
+00034:  47  callprop "setPercentage"
+00039:  47  swap
+00040:  47  notearg
+00041:  47  name "Math"
+00046:  47  dup
+00047:  47  callprop "floor"
+00052:  47  swap
+00053:  47  notearg
+00054:  47  getarg 0
+00057:  47  int8 100
+00059:  47  mul
+00060:  47  getarg 1
+00063:  47  div
+00064:  47  notearg
+00065:  47  call 1
+00068:  47  notearg
+00069:  47  call 1
+00072:  47  pop
+00073:  47  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:45 ---
+;; function object[4] create
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  name "xs"
+00005:  63  getprop "Views"
+00010:  63  getprop "NormalProgressTimer"
+00015:  63  undefined
+00016:  63  notearg
+00017:  63  new 0
+00020:  63  setlocal 0
+00023:  63  pop
+00024:  64  getlocal 0
+00027:  64  and 47 (+20)
+00032:  64  pop
+00033:  64  getlocal 0
+00036:  64  dup
+00037:  64  callprop "init"
+00042:  64  swap
+00043:  64  notearg
+00044:  64  call 0
+00047:  64  ifeq 56 (+9)
+00052:  65  getlocal 0
+00055:  65  return
+00056:  68  null
+00057:  68  return
+00058:  68  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ProgressTimer/NormalProgressTimer.js:62 ---

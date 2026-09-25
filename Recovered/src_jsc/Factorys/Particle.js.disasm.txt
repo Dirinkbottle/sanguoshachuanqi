@@ -1,0 +1,135 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Factorys/Particle.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=42 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Particle.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Factorys"
+00010:   8  newinit 1
+00015:  11  newinit 1
+00020:  12  string "particle/"
+00025:  12  initprop "path"
+00030:  13  null
+00031:  13  initprop "areaDef"
+00036:  13  endinit
+00037:  13  initprop "private"
+00042:  17  lambda (function () {
+    [sourceless code]
+})
+00047:  17  initprop "create"
+00052:  17  endinit
+00053:  17  setprop "Particle"
+00058:  17  popv
+00059:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Particle.js:1 ---
+;; function object[0] create
+;; function metadata object[0] nargs=1 bindings=3
+;; arg[0] id
+;; local[0] _ret
+;; local[1] _cfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Particle.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  null
+00001:  19  setlocal 0
+00004:  19  pop
+00005:  20  name "xs"
+00010:  20  getprop "Cfg"
+00015:  20  getprop "Particle"
+00020:  20  getarg 0
+00023:  20  getelem
+00024:  20  setlocal 1
+00027:  20  pop
+00028:  22  name "xs"
+00033:  22  dup
+00034:  22  callprop "assert"
+00039:  22  swap
+00040:  22  notearg
+00041:  22  getlocal 1
+00044:  22  notearg
+00045:  22  string "cant find ParticleId "
+00050:  22  notearg
+00051:  22  getarg 0
+00054:  22  notearg
+00055:  22  call 3
+00058:  22  pop
+00059:  23  getlocal 1
+00062:  23  name "undefined"
+00067:  23  stricteq
+00068:  23  ifeq 97 (+29)
+00073:  24  name "xs"
+00078:  24  getprop "Cfg"
+00083:  24  getprop "Particle"
+00088:  24  getprop "Particle_Default"
+00093:  24  setlocal 1
+00096:  24  pop
+00097:  27  getlocal 1
+00100:  27  getprop "class"
+00105:  27  ifeq 138 (+33)
+00110:  28  getlocal 1
+00113:  28  getprop "class"
+00118:  28  dup
+00119:  28  callprop "create"
+00124:  28  swap
+00125:  28  notearg
+00126:  28  call 0
+00129:  28  setlocal 0
+00132:  28  pop
+00133:  28  goto 197 (+64)
+00138:  30  getlocal 1
+00141:  30  getprop "file"
+00146:  30  ifeq 197 (+51)
+00151:  31  name "cc"
+00156:  31  getprop "ParticleSystem"
+00161:  31  dup
+00162:  31  callprop "create"
+00167:  31  swap
+00168:  31  notearg
+00169:  31  this
+00170:  31  getprop "private"
+00175:  31  getprop "path"
+00180:  31  getlocal 1
+00183:  31  getprop "file"
+00188:  31  add
+00189:  31  notearg
+00190:  31  call 1
+00193:  31  setlocal 0
+00196:  31  pop
+00197:  34  name "xs"
+00202:  34  dup
+00203:  34  callprop "assert"
+00208:  34  swap
+00209:  34  notearg
+00210:  34  getlocal 0
+00213:  34  notearg
+00214:  34  string "cant find class "
+00219:  34  notearg
+00220:  34  getarg 0
+00223:  34  notearg
+00224:  34  getlocal 0
+00227:  34  notearg
+00228:  34  call 4
+00231:  34  pop
+00232:  36  getlocal 0
+00235:  36  dup
+00236:  36  callprop "setPosition"
+00241:  36  swap
+00242:  36  notearg
+00243:  36  name "cc"
+00248:  36  getprop "POINT_ZERO"
+00253:  36  notearg
+00254:  36  call 1
+00257:  36  pop
+00258:  38  getlocal 0
+00261:  38  return
+00262:  38  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Particle.js:17 ---

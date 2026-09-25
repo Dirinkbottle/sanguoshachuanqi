@@ -1,0 +1,1645 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/PartHurt.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/PartHurt.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Cfg"
+00010:  10  getprop "Skill"
+00015:  10  getprop "part"
+00020:  10  newinit 1
+00025:  11  string "template.part.TP_Hurt_Hit"
+00030:  11  initprop "extend"
+00035:  12  newinit 1
+00040:  13  newinit 1
+00045:  14  newinit 1
+00050:  15  newinit 1
+00055:  15  newinit 1
+00060:  15  string "ani_hit_stiff"
+00065:  15  initprop "aniId"
+00070:  15  endinit
+00071:  15  initprop "data"
+00076:  15  endinit
+00077:  15  initprop "_card"
+00082:  15  endinit
+00083:  15  initprop "timelines"
+00088:  15  endinit
+00089:  15  initprop "_card_to"
+00094:  15  endinit
+00095:  15  initprop "items"
+00100:  15  endinit
+00101:  15  setprop "P_Hurt_Hit"
+00106:  15  popv
+00107:  20  name "xs"
+00112:  20  getprop "Cfg"
+00117:  20  getprop "Skill"
+00122:  20  getprop "part"
+00127:  20  newinit 1
+00132:  21  string "template.part.TP_Hurt_Hit"
+00137:  21  initprop "extend"
+00142:  22  newinit 1
+00147:  23  string "fs"
+00152:  23  initprop "ignore"
+00157:  23  endinit
+00158:  23  initprop "property"
+00163:  25  newinit 1
+00168:  26  newinit 1
+00173:  27  newinit 1
+00178:  28  newinit 1
+00183:  28  newinit 1
+00188:  28  string "ani_hit_stiff"
+00193:  28  initprop "aniId"
+00198:  28  endinit
+00199:  28  initprop "data"
+00204:  28  endinit
+00205:  28  initprop "_card"
+00210:  28  endinit
+00211:  28  initprop "timelines"
+00216:  28  endinit
+00217:  28  initprop "_card_to"
+00222:  28  endinit
+00223:  28  initprop "items"
+00228:  28  endinit
+00229:  28  setprop "P_Hurt_Hit_NoFs"
+00234:  28  popv
+00235:  37  name "xs"
+00240:  37  getprop "Cfg"
+00245:  37  getprop "Skill"
+00250:  37  getprop "part"
+00255:  37  newinit 1
+00260:  38  string "template.part.TP_Hurt_Hit"
+00265:  38  initprop "extend"
+00270:  39  newinit 1
+00275:  40  newinit 1
+00280:  41  newinit 1
+00285:  42  newinit 1
+00290:  42  newinit 1
+00295:  42  string "ani_hit_stiff"
+00300:  42  initprop "aniId"
+00305:  42  endinit
+00306:  42  initprop "data"
+00311:  42  endinit
+00312:  42  initprop "_card"
+00317:  42  endinit
+00318:  42  initprop "timelines"
+00323:  42  endinit
+00324:  42  initprop "_card_to"
+00329:  46  newinit 1
+00334:  48  newinit 1
+00339:  49  newinit 1
+00344:  50  string "HitTextPos"
+00349:  50  initprop "creater"
+00354:  51  null
+00355:  51  initprop "offset"
+00360:  51  endinit
+00361:  51  initprop "pos"
+00366:  51  endinit
+00367:  51  initprop "property"
+00372:  51  endinit
+00373:  51  initprop "_to_text"
+00378:  56  newinit 1
+00383:  57  newinit 1
+00388:  58  string "to"
+00393:  58  initprop "type"
+00398:  59  string "to"
+00403:  59  initprop "belong"
+00408:  59  endinit
+00409:  59  initprop "property"
+00414:  61  newinit 1
+00419:  63  newinit 1
+00424:  63  string "MoveBy"
+00429:  63  initprop "type"
+00434:  63  newarray 1
+00438:  63  name "cc"
+00443:  63  dup
+00444:  63  callprop "p"
+00449:  63  swap
+00450:  63  notearg
+00451:  63  zero
+00452:  63  notearg
+00453:  63  int8 20
+00455:  63  notearg
+00456:  63  call 2
+00459:  63  initelem_array 0
+00463:  63  endinit
+00464:  63  initprop "args"
+00469:  63  int8 4
+00471:  63  name "xs"
+00476:  63  getprop "fps"
+00481:  63  div
+00482:  63  initprop "dp"
+00487:  63  endinit
+00488:  63  initprop "_fix0"
+00493:  64  newinit 1
+00498:  64  string "MoveBy"
+00503:  64  initprop "type"
+00508:  64  newarray 1
+00512:  64  name "cc"
+00517:  64  dup
+00518:  64  callprop "p"
+00523:  64  swap
+00524:  64  notearg
+00525:  64  zero
+00526:  64  notearg
+00527:  64  int8 -10
+00529:  64  notearg
+00530:  64  call 2
+00533:  64  initelem_array 0
+00537:  64  endinit
+00538:  64  initprop "args"
+00543:  64  int8 4
+00545:  64  name "xs"
+00550:  64  getprop "fps"
+00555:  64  div
+00556:  64  initprop "dp"
+00561:  64  endinit
+00562:  64  initprop "_fix1"
+00567:  64  endinit
+00568:  64  initprop "timelines"
+00573:  64  endinit
+00574:  64  initprop "_fixY"
+00579:  64  endinit
+00580:  64  initprop "items"
+00585:  64  endinit
+00586:  64  setprop "P_Hurt_Hit_Higher"
+00591:  64  popv
+00592:  74  name "xs"
+00597:  74  getprop "Cfg"
+00602:  74  getprop "Skill"
+00607:  74  getprop "part"
+00612:  74  newinit 1
+00617:  75  string "part.P_Hurt_Hit_Higher"
+00622:  75  initprop "extend"
+00627:  76  newinit 1
+00632:  77  newinit 1
+00637:  78  newinit 1
+00642:  79  newinit 1
+00647:  79  name "cc"
+00652:  79  dup
+00653:  79  callprop "p"
+00658:  79  swap
+00659:  79  notearg
+00660:  79  zero
+00661:  79  notearg
+00662:  79  uint16 150
+00665:  79  notearg
+00666:  79  call 2
+00669:  79  initprop "offset"
+00674:  79  endinit
+00675:  79  initprop "pos"
+00680:  79  endinit
+00681:  79  initprop "property"
+00686:  79  endinit
+00687:  79  initprop "_to_text"
+00692:  79  endinit
+00693:  79  initprop "items"
+00698:  79  endinit
+00699:  79  setprop "P_Hurt_Hit_Higher0"
+00704:  79  popv
+00705:  84  name "xs"
+00710:  84  getprop "Cfg"
+00715:  84  getprop "Skill"
+00720:  84  getprop "part"
+00725:  84  newinit 1
+00730:  85  string "part.P_Hurt_Hit_Higher"
+00735:  85  initprop "extend"
+00740:  86  newinit 1
+00745:  87  newinit 1
+00750:  88  newinit 1
+00755:  89  newinit 1
+00760:  89  name "cc"
+00765:  89  dup
+00766:  89  callprop "p"
+00771:  89  swap
+00772:  89  notearg
+00773:  89  zero
+00774:  89  notearg
+00775:  89  uint16 170
+00778:  89  notearg
+00779:  89  call 2
+00782:  89  initprop "offset"
+00787:  89  endinit
+00788:  89  initprop "pos"
+00793:  89  endinit
+00794:  89  initprop "property"
+00799:  89  endinit
+00800:  89  initprop "_to_text"
+00805:  89  endinit
+00806:  89  initprop "items"
+00811:  89  endinit
+00812:  89  setprop "P_Hurt_Hit_Higher1"
+00817:  89  popv
+00818:  94  name "xs"
+00823:  94  getprop "Cfg"
+00828:  94  getprop "Skill"
+00833:  94  getprop "part"
+00838:  94  newinit 1
+00843:  95  string "part.P_Hurt_Hit_Higher"
+00848:  95  initprop "extend"
+00853:  96  newinit 1
+00858:  97  newinit 1
+00863:  98  newinit 1
+00868:  99  newinit 1
+00873:  99  name "cc"
+00878:  99  dup
+00879:  99  callprop "p"
+00884:  99  swap
+00885:  99  notearg
+00886:  99  zero
+00887:  99  notearg
+00888:  99  uint16 190
+00891:  99  notearg
+00892:  99  call 2
+00895:  99  initprop "offset"
+00900:  99  endinit
+00901:  99  initprop "pos"
+00906:  99  endinit
+00907:  99  initprop "property"
+00912:  99  endinit
+00913:  99  initprop "_to_text"
+00918:  99  endinit
+00919:  99  initprop "items"
+00924:  99  endinit
+00925:  99  setprop "P_Hurt_Hit_Higher2"
+00930:  99  popv
+00931: 104  name "xs"
+00936: 104  getprop "Cfg"
+00941: 104  getprop "Skill"
+00946: 104  getprop "part"
+00951: 104  newinit 1
+00956: 105  string "part.P_Hurt_Hit_Higher"
+00961: 105  initprop "extend"
+00966: 106  newinit 1
+00971: 107  newinit 1
+00976: 108  newinit 1
+00981: 109  newinit 1
+00986: 109  name "cc"
+00991: 109  dup
+00992: 109  callprop "p"
+00997: 109  swap
+00998: 109  notearg
+00999: 109  zero
+01000: 109  notearg
+01001: 109  uint16 210
+01004: 109  notearg
+01005: 109  call 2
+01008: 109  initprop "offset"
+01013: 109  endinit
+01014: 109  initprop "pos"
+01019: 109  endinit
+01020: 109  initprop "property"
+01025: 109  endinit
+01026: 109  initprop "_to_text"
+01031: 109  endinit
+01032: 109  initprop "items"
+01037: 109  endinit
+01038: 109  setprop "P_Hurt_Hit_Higher3"
+01043: 109  popv
+01044: 116  name "xs"
+01049: 116  getprop "Cfg"
+01054: 116  getprop "Skill"
+01059: 116  getprop "part"
+01064: 116  newinit 1
+01069: 117  string "template.part.TP_Hurt_Over_Skill"
+01074: 117  initprop "extend"
+01079: 118  newinit 1
+01084: 119  newinit 1
+01089: 121  newinit 1
+01094: 122  newinit 1
+01099: 123  string "HitTextPos"
+01104: 123  initprop "creater"
+01109: 124  null
+01110: 124  initprop "offset"
+01115: 124  endinit
+01116: 124  initprop "pos"
+01121: 124  endinit
+01122: 124  initprop "property"
+01127: 124  endinit
+01128: 124  initprop "_to_text"
+01133: 129  newinit 1
+01138: 130  newinit 1
+01143: 131  string "env"
+01148: 131  initprop "type"
+01153: 132  string "to"
+01158: 132  initprop "belong"
+01163: 133  newarray 1
+01167: 133  string "skillend"
+01172: 133  initelem_array 0
+01176: 133  endinit
+01177: 133  initprop "trigger"
+01182: 133  endinit
+01183: 133  initprop "property"
+01188: 135  newinit 1
+01193: 136  null
+01194: 136  initprop "_delay"
+01199: 137  newinit 1
+01204: 137  string "createAction"
+01209: 137  initprop "type"
+01214: 137  string "createHurtAllEffectAction"
+01219: 137  initprop "name"
+01224: 137  endinit
+01225: 137  initprop "_finish"
+01230: 137  endinit
+01231: 137  initprop "timelines"
+01236: 137  endinit
+01237: 137  initprop "_to_text_all"
+01242: 140  newinit 1
+01247: 141  string "template.item.TI_Card_Hurt_Over_To"
+01252: 141  initprop "extend"
+01257: 142  newinit 1
+01262: 143  newinit 1
+01267: 143  newinit 1
+01272: 143  string "ani_hit_back"
+01277: 143  initprop "aniId"
+01282: 143  endinit
+01283: 143  initprop "data"
+01288: 143  endinit
+01289: 143  initprop "_hurt_over"
+01294: 143  endinit
+01295: 143  initprop "timelines"
+01300: 143  endinit
+01301: 143  initprop "_card_to"
+01306: 143  endinit
+01307: 143  initprop "items"
+01312: 143  endinit
+01313: 143  setprop "P_Hurt_Back_OnSkillEnd"
+01318: 143  popv
+01319: 150  name "xs"
+01324: 150  getprop "Cfg"
+01329: 150  getprop "Skill"
+01334: 150  getprop "part"
+01339: 150  newinit 1
+01344: 152  newarray 1
+01348: 153  newinit 1
+01353: 154  string "env"
+01358: 154  initprop "who"
+01363: 155  string "updateBackupModel"
+01368: 155  initprop "type"
+01373: 156  newarray 1
+01377: 156  string "$para"
+01382: 156  initelem_array 0
+01386: 156  endinit
+01387: 156  initprop "args"
+01392: 156  endinit
+01393: 156  initelem_array 0
+01397: 156  endinit
+01398: 156  initprop "pre"
+01403: 160  newinit 1
+01408: 162  newinit 1
+01413: 163  newinit 1
+01418: 164  string "to"
+01423: 164  initprop "type"
+01428: 165  string "to"
+01433: 165  initprop "belong"
+01438: 166  newarray 1
+01442: 166  string "backup"
+01447: 166  initelem_array 0
+01451: 166  endinit
+01452: 166  initprop "trigger"
+01457: 167  newarray 1
+01461: 167  string "death"
+01466: 167  initelem_array 0
+01470: 167  endinit
+01471: 167  initprop "mirror"
+01476: 167  endinit
+01477: 167  initprop "property"
+01482: 169  newinit 1
+01487: 170  null
+01488: 170  initprop "_hide"
+01493: 170  endinit
+01494: 170  initprop "timelines"
+01499: 172  newinit 1
+01504: 173  newinit 1
+01509: 174  newinit 1
+01514: 174  string "Hide"
+01519: 174  initprop "type"
+01524: 174  endinit
+01525: 174  initprop "_hide"
+01530: 174  endinit
+01531: 174  initprop "timelines"
+01536: 174  endinit
+01537: 174  initprop "death"
+01542: 174  endinit
+01543: 174  initprop "_death"
+01548: 179  newinit 1
+01553: 180  newinit 1
+01558: 181  string "env"
+01563: 181  initprop "type"
+01568: 182  string "once"
+01573: 182  initprop "belong"
+01578: 182  endinit
+01579: 182  initprop "property"
+01584: 184  newarray 1
+01588: 185  newinit 1
+01593: 185  string "createAction"
+01598: 185  initprop "type"
+01603: 185  string "createBackupIconsFixActions"
+01608: 185  initprop "name"
+01613: 185  int8 7
+01615: 185  name "xs"
+01620: 185  getprop "fps"
+01625: 185  div
+01626: 185  initprop "dp"
+01631: 185  newinit 1
+01636: 185  endinit
+01637: 185  initprop "data"
+01642: 185  endinit
+01643: 185  initelem_array 0
+01647: 185  endinit
+01648: 185  initprop "timelines"
+01653: 185  endinit
+01654: 185  initprop "from_other_icons"
+01659: 185  endinit
+01660: 185  initprop "items"
+01665: 185  endinit
+01666: 185  setprop "P_Hurt_Backup_Death"
+01671: 185  popv
+01672: 194  name "xs"
+01677: 194  getprop "Cfg"
+01682: 194  getprop "Skill"
+01687: 194  getprop "part"
+01692: 194  newinit 1
+01697: 196  string "template.part.TP_Hurt_Over_Normal"
+01702: 196  initprop "extend"
+01707: 198  newinit 1
+01712: 199  newinit 1
+01717: 200  string "template.item.TI_Arm_To"
+01722: 200  initprop "extend"
+01727: 201  newinit 1
+01732: 202  string "Arm_Fight_DuJin"
+01737: 202  initprop "armatureId"
+01742: 203  newarray 1
+01746: 203  string "dujin"
+01751: 203  initelem_array 0
+01755: 203  endinit
+01756: 203  initprop "trigger"
+01761: 204  uint16 180
+01764: 204  initprop "rotationY"
+01769: 204  endinit
+01770: 204  initprop "property"
+01775: 206  newinit 1
+01780: 207  newinit 1
+01785: 207  string "ani_from"
+01790: 207  initprop "aniId"
+01795: 207  endinit
+01796: 207  initprop "_play"
+01801: 207  endinit
+01802: 207  initprop "timelines"
+01807: 207  endinit
+01808: 207  initprop "_dujin"
+01813: 210  newinit 1
+01818: 211  string "template.item.TI_Arm_To"
+01823: 211  initprop "extend"
+01828: 212  newinit 1
+01833: 213  string "Arm_Fight_TianXiang"
+01838: 213  initprop "armatureId"
+01843: 215  newarray 2
+01847: 215  string "tianxiang"
+01852: 215  initelem_array 0
+01856: 215  string "liuli"
+01861: 215  initelem_array 1
+01865: 215  endinit
+01866: 215  initprop "trigger"
+01871: 215  endinit
+01872: 215  initprop "property"
+01877: 217  newinit 1
+01882: 218  newinit 1
+01887: 218  string "ani_from"
+01892: 218  initprop "aniId"
+01897: 218  endinit
+01898: 218  initprop "_play"
+01903: 218  endinit
+01904: 218  initprop "timelines"
+01909: 218  endinit
+01910: 218  initprop "_tianxiang"
+01915: 222  newinit 1
+01920: 223  string "template.item.TI_Arm_To"
+01925: 223  initprop "extend"
+01930: 224  newinit 1
+01935: 225  string "Arm_Fight_TianXiang_jinjie"
+01940: 225  initprop "armatureId"
+01945: 227  newarray 2
+01949: 227  string "tianxiang_v3"
+01954: 227  initelem_array 0
+01958: 227  string "tianxiang_v5"
+01963: 227  initelem_array 1
+01967: 227  endinit
+01968: 227  initprop "trigger"
+01973: 227  endinit
+01974: 227  initprop "property"
+01979: 229  newinit 1
+01984: 230  newinit 1
+01989: 230  string "ani_from"
+01994: 230  initprop "aniId"
+01999: 230  endinit
+02000: 230  initprop "_play"
+02005: 230  endinit
+02006: 230  initprop "timelines"
+02011: 230  endinit
+02012: 230  initprop "_tianxiang_v3"
+02017: 245  newinit 1
+02022: 246  string "template.item.TI_Arm_To"
+02027: 246  initprop "extend"
+02032: 247  newinit 1
+02037: 248  string "Arm_Fight_YiZhong"
+02042: 248  initprop "armatureId"
+02047: 249  uint16 180
+02050: 249  initprop "rotationY"
+02055: 250  newarray 1
+02059: 250  string "yizhong"
+02064: 250  initelem_array 0
+02068: 250  endinit
+02069: 250  initprop "trigger"
+02074: 250  endinit
+02075: 250  initprop "property"
+02080: 252  newinit 1
+02085: 253  newinit 1
+02090: 253  string "ani_from"
+02095: 253  initprop "aniId"
+02100: 253  endinit
+02101: 253  initprop "_play"
+02106: 253  endinit
+02107: 253  initprop "timelines"
+02112: 253  endinit
+02113: 253  initprop "_yizhong"
+02118: 257  newinit 1
+02123: 258  string "template.item.TI_Arm_To"
+02128: 258  initprop "extend"
+02133: 259  newinit 1
+02138: 260  string "Arm_Fight_BuQu"
+02143: 260  initprop "armatureId"
+02148: 261  uint16 180
+02151: 261  initprop "rotationY"
+02156: 262  newarray 1
+02160: 262  string "buqu"
+02165: 262  initelem_array 0
+02169: 262  endinit
+02170: 262  initprop "trigger"
+02175: 262  endinit
+02176: 262  initprop "property"
+02181: 264  newinit 1
+02186: 265  newinit 1
+02191: 265  string "ani_from"
+02196: 265  initprop "aniId"
+02201: 265  endinit
+02202: 265  initprop "_play"
+02207: 265  endinit
+02208: 265  initprop "timelines"
+02213: 265  endinit
+02214: 265  initprop "_buqu"
+02219: 265  endinit
+02220: 265  initprop "items"
+02225: 265  endinit
+02226: 265  setprop "P_Hurt_Normal_Over"
+02231: 265  popv
+02232: 271  name "xs"
+02237: 271  getprop "Cfg"
+02242: 271  getprop "Skill"
+02247: 271  getprop "part"
+02252: 271  newinit 1
+02257: 273  string "template.part.TP_Hurt_Over_Normal"
+02262: 273  initprop "extend"
+02267: 275  newinit 1
+02272: 276  null
+02273: 276  initprop "_to_hp_top"
+02278: 277  null
+02279: 277  initprop "_to_hp_bot"
+02284: 278  null
+02285: 278  initprop "_to_text"
+02290: 279  null
+02291: 279  initprop "_card_to"
+02296: 279  endinit
+02297: 279  initprop "items"
+02302: 279  endinit
+02303: 279  setprop "P_Hurt_V2_Over"
+02308: 279  popv
+02309: 285  name "xs"
+02314: 285  getprop "Cfg"
+02319: 285  getprop "Skill"
+02324: 285  getprop "part"
+02329: 285  newinit 1
+02334: 287  string "template.part.TP_Hurt_Over_Normal"
+02339: 287  initprop "extend"
+02344: 289  newinit 1
+02349: 290  null
+02350: 290  initprop "_to_hp_top"
+02355: 291  null
+02356: 291  initprop "_to_hp_bot"
+02361: 292  null
+02362: 292  initprop "_to_text"
+02367: 292  endinit
+02368: 292  initprop "items"
+02373: 292  endinit
+02374: 292  setprop "P_Hurt_V3_Over"
+02379: 292  popv
+02380: 303  name "xs"
+02385: 303  getprop "Cfg"
+02390: 303  getprop "Skill"
+02395: 303  getprop "part"
+02400: 303  newinit 1
+02405: 305  string "template.part.TP_Hurt_Over_Skill"
+02410: 305  initprop "extend"
+02415: 306  newinit 1
+02420: 308  newinit 1
+02425: 310  newinit 1
+02430: 311  newinit 1
+02435: 312  string "HitTextPos"
+02440: 312  initprop "creater"
+02445: 313  null
+02446: 313  initprop "offset"
+02451: 313  endinit
+02452: 313  initprop "pos"
+02457: 313  endinit
+02458: 313  initprop "property"
+02463: 313  endinit
+02464: 313  initprop "_to_text"
+02469: 318  newinit 1
+02474: 319  string "template.item.TI_Card_Hurt_Over_To"
+02479: 319  initprop "extend"
+02484: 320  newinit 1
+02489: 321  newinit 1
+02494: 321  newinit 1
+02499: 321  string "ani_hit_back"
+02504: 321  initprop "aniId"
+02509: 321  endinit
+02510: 321  initprop "data"
+02515: 321  endinit
+02516: 321  initprop "_hurt_over"
+02521: 321  endinit
+02522: 321  initprop "timelines"
+02527: 321  endinit
+02528: 321  initprop "_card_to"
+02533: 321  endinit
+02534: 321  initprop "items"
+02539: 321  endinit
+02540: 321  setprop "P_Hurt_Back_Over"
+02545: 321  popv
+02546: 327  name "xs"
+02551: 327  getprop "Cfg"
+02556: 327  getprop "Skill"
+02561: 327  getprop "part"
+02566: 327  newinit 1
+02571: 328  string "template.part.TP_Hurt_Over_Skill"
+02576: 328  initprop "extend"
+02581: 329  newinit 1
+02586: 331  newinit 1
+02591: 332  newinit 1
+02596: 333  string "env"
+02601: 333  initprop "type"
+02606: 334  string "to"
+02611: 334  initprop "belong"
+02616: 335  newarray 1
+02620: 335  string "skillend"
+02625: 335  initelem_array 0
+02629: 335  endinit
+02630: 335  initprop "trigger"
+02635: 335  endinit
+02636: 335  initprop "property"
+02641: 337  newinit 1
+02646: 338  null
+02647: 338  initprop "_delay"
+02652: 339  newinit 1
+02657: 339  string "createAction"
+02662: 339  initprop "type"
+02667: 339  string "createHurtAllEffectAction"
+02672: 339  initprop "name"
+02677: 339  endinit
+02678: 339  initprop "_finish"
+02683: 339  endinit
+02684: 339  initprop "timelines"
+02689: 339  endinit
+02690: 339  initprop "_to_text_all"
+02695: 342  newinit 1
+02700: 343  string "template.item.TI_Card_Hurt_Over_Normal_To"
+02705: 343  initprop "extend"
+02710: 344  newinit 1
+02715: 345  newinit 1
+02720: 345  newinit 1
+02725: 345  string "ani_scle_change"
+02730: 345  initprop "aniId"
+02735: 345  endinit
+02736: 345  initprop "data"
+02741: 345  endinit
+02742: 345  initprop "_hurt_over"
+02747: 345  endinit
+02748: 345  initprop "timelines"
+02753: 345  endinit
+02754: 345  initprop "_card_to"
+02759: 345  endinit
+02760: 345  initprop "items"
+02765: 345  endinit
+02766: 345  setprop "P_Hurt_Back_Over_No_FJ"
+02771: 345  popv
+02772: 351  name "xs"
+02777: 351  getprop "Cfg"
+02782: 351  getprop "Skill"
+02787: 351  getprop "part"
+02792: 351  newinit 1
+02797: 352  string "template.part.TP_Hurt_Over_Skill"
+02802: 352  initprop "extend"
+02807: 353  newinit 1
+02812: 355  string "fs"
+02817: 355  initprop "ignore"
+02822: 355  endinit
+02823: 355  initprop "property"
+02828: 357  newinit 1
+02833: 359  newinit 1
+02838: 360  newinit 1
+02843: 361  string "env"
+02848: 361  initprop "type"
+02853: 362  string "to"
+02858: 362  initprop "belong"
+02863: 363  newarray 1
+02867: 363  string "skillend"
+02872: 363  initelem_array 0
+02876: 363  endinit
+02877: 363  initprop "trigger"
+02882: 363  endinit
+02883: 363  initprop "property"
+02888: 365  newinit 1
+02893: 366  null
+02894: 366  initprop "_delay"
+02899: 367  newinit 1
+02904: 367  string "createAction"
+02909: 367  initprop "type"
+02914: 367  string "createHurtAllEffectAction"
+02919: 367  initprop "name"
+02924: 367  endinit
+02925: 367  initprop "_finish"
+02930: 367  endinit
+02931: 367  initprop "timelines"
+02936: 367  endinit
+02937: 367  initprop "_to_text_all"
+02942: 370  newinit 1
+02947: 371  newinit 1
+02952: 372  newinit 1
+02957: 372  string "DelayTime"
+02962: 372  initprop "type"
+02967: 372  int8 60
+02969: 372  name "xs"
+02974: 372  getprop "fps"
+02979: 372  div
+02980: 372  initprop "dp"
+02985: 372  endinit
+02986: 372  initprop "_delay"
+02991: 373  newinit 1
+02996: 373  string "createPlayAction"
+03001: 373  initprop "type"
+03006: 373  string "ani_text_hurt"
+03011: 373  initprop "aniId"
+03016: 373  endinit
+03017: 373  initprop "_play"
+03022: 374  newinit 1
+03027: 374  string "Show"
+03032: 374  initprop "type"
+03037: 374  endinit
+03038: 374  initprop "_show"
+03043: 374  endinit
+03044: 374  initprop "timelines"
+03049: 374  endinit
+03050: 374  initprop "_to_text"
+03055: 377  newinit 1
+03060: 378  string "template.item.TI_Card_Hurt_Over_Normal_To"
+03065: 378  initprop "extend"
+03070: 379  newinit 1
+03075: 380  newinit 1
+03080: 380  newinit 1
+03085: 380  string "ani_xuechi"
+03090: 380  initprop "aniId"
+03095: 380  endinit
+03096: 380  initprop "data"
+03101: 380  endinit
+03102: 380  initprop "_hurt_over"
+03107: 380  endinit
+03108: 380  initprop "timelines"
+03113: 380  endinit
+03114: 380  initprop "_card_to"
+03119: 380  endinit
+03120: 380  initprop "items"
+03125: 380  endinit
+03126: 380  setprop "P_Hurt_Back_Over_ZhaoXin"
+03131: 380  popv
+03132: 388  name "xs"
+03137: 388  getprop "Cfg"
+03142: 388  getprop "Skill"
+03147: 388  getprop "part"
+03152: 388  newinit 1
+03157: 389  string "template.part.TP_Hurt_Over_Skill"
+03162: 389  initprop "extend"
+03167: 390  newinit 1
+03172: 392  newinit 1
+03177: 393  newinit 1
+03182: 394  string "env"
+03187: 394  initprop "type"
+03192: 395  string "to"
+03197: 395  initprop "belong"
+03202: 396  newarray 1
+03206: 396  string "skillend"
+03211: 396  initelem_array 0
+03215: 396  endinit
+03216: 396  initprop "trigger"
+03221: 396  endinit
+03222: 396  initprop "property"
+03227: 398  newinit 1
+03232: 399  null
+03233: 399  initprop "_delay"
+03238: 400  newinit 1
+03243: 400  string "createAction"
+03248: 400  initprop "type"
+03253: 400  string "createHurtAllEffectAction"
+03258: 400  initprop "name"
+03263: 400  endinit
+03264: 400  initprop "_finish"
+03269: 400  endinit
+03270: 400  initprop "timelines"
+03275: 400  endinit
+03276: 400  initprop "_to_text_all"
+03281: 403  newinit 1
+03286: 404  string "template.item.TI_Card_Hurt_Over_Normal_To"
+03291: 404  initprop "extend"
+03296: 405  newinit 1
+03301: 406  newinit 1
+03306: 406  newinit 1
+03311: 406  string "ani_idle"
+03316: 406  initprop "aniId"
+03321: 406  endinit
+03322: 406  initprop "data"
+03327: 406  endinit
+03328: 406  initprop "_hurt_over"
+03333: 406  endinit
+03334: 406  initprop "timelines"
+03339: 406  endinit
+03340: 406  initprop "_card_to"
+03345: 406  endinit
+03346: 406  initprop "items"
+03351: 406  endinit
+03352: 406  setprop "P_Hurt_Back_Over_IDLE"
+03357: 406  popv
+03358: 414  name "xs"
+03363: 414  getprop "Cfg"
+03368: 414  getprop "Skill"
+03373: 414  getprop "part"
+03378: 414  newinit 1
+03383: 415  string "template.part.TP_Hurt_Over_Skill"
+03388: 415  initprop "extend"
+03393: 416  newinit 1
+03398: 418  newinit 1
+03403: 419  newinit 1
+03408: 420  string "env"
+03413: 420  initprop "type"
+03418: 421  string "to"
+03423: 421  initprop "belong"
+03428: 422  newarray 1
+03432: 422  string "skillend"
+03437: 422  initelem_array 0
+03441: 422  endinit
+03442: 422  initprop "trigger"
+03447: 422  endinit
+03448: 422  initprop "property"
+03453: 424  newinit 1
+03458: 425  null
+03459: 425  initprop "_delay"
+03464: 426  newinit 1
+03469: 426  string "createAction"
+03474: 426  initprop "type"
+03479: 426  string "createHurtAllEffectAction"
+03484: 426  initprop "name"
+03489: 426  endinit
+03490: 426  initprop "_finish"
+03495: 426  endinit
+03496: 426  initprop "timelines"
+03501: 426  endinit
+03502: 426  initprop "_to_text_all"
+03507: 429  newinit 1
+03512: 430  string "template.item.TI_Card_Hurt_Over_Normal_To"
+03517: 430  initprop "extend"
+03522: 431  newinit 1
+03527: 432  newinit 1
+03532: 432  newinit 1
+03537: 432  string "ani_kun"
+03542: 432  initprop "aniId"
+03547: 432  endinit
+03548: 432  initprop "data"
+03553: 432  endinit
+03554: 432  initprop "_hurt_over"
+03559: 432  endinit
+03560: 432  initprop "timelines"
+03565: 432  endinit
+03566: 432  initprop "_card_to"
+03571: 432  endinit
+03572: 432  initprop "items"
+03577: 432  endinit
+03578: 432  setprop "P_Hurt_Back_Over_FL"
+03583: 432  popv
+03584: 442  name "xs"
+03589: 442  getprop "Cfg"
+03594: 442  getprop "Skill"
+03599: 442  getprop "part"
+03604: 442  newinit 1
+03609: 443  string "template.part.TP_Hurt_Over_Skill"
+03614: 443  initprop "extend"
+03619: 444  newinit 1
+03624: 445  newarray 6
+03628: 445  string "second"
+03633: 445  initelem_array 0
+03637: 445  string "third"
+03642: 445  initelem_array 1
+03646: 445  string "fourth"
+03651: 445  initelem_array 2
+03655: 445  string "fifth"
+03660: 445  initelem_array 3
+03664: 445  string "sixth"
+03669: 445  initelem_array 4
+03673: 445  string "seventh"
+03678: 445  initelem_array 5
+03682: 445  endinit
+03683: 445  initprop "ignore"
+03688: 445  endinit
+03689: 445  initprop "property"
+03694: 447  newinit 1
+03699: 449  newinit 1
+03704: 451  newinit 1
+03709: 453  newinit 1
+03714: 454  string "HitTextPos"
+03719: 454  initprop "creater"
+03724: 455  null
+03725: 455  initprop "offset"
+03730: 455  endinit
+03731: 455  initprop "pos"
+03736: 455  endinit
+03737: 455  initprop "property"
+03742: 455  endinit
+03743: 455  initprop "_to_text"
+03748: 460  newinit 1
+03753: 461  string "template.item.TI_Card_Hurt_Over_To"
+03758: 461  initprop "extend"
+03763: 465  newinit 1
+03768: 466  newinit 1
+03773: 466  newinit 1
+03778: 466  string "ani_hit_back"
+03783: 466  initprop "aniId"
+03788: 466  endinit
+03789: 466  initprop "data"
+03794: 466  endinit
+03795: 466  initprop "_hurt_over"
+03800: 466  endinit
+03801: 466  initprop "timelines"
+03806: 466  endinit
+03807: 466  initprop "_card_to"
+03812: 466  endinit
+03813: 466  initprop "items"
+03818: 466  endinit
+03819: 466  setprop "P_Hurt_Back_Over_FJ"
+03824: 466  popv
+03825: 473  name "xs"
+03830: 473  getprop "Cfg"
+03835: 473  getprop "Skill"
+03840: 473  getprop "part"
+03845: 473  newinit 1
+03850: 474  string "template.part.TP_Hurt_Over_Skill"
+03855: 474  initprop "extend"
+03860: 475  newinit 1
+03865: 477  newinit 1
+03870: 479  newinit 1
+03875: 480  string "nohurt"
+03880: 480  initprop "ignore"
+03885: 481  newinit 1
+03890: 482  string "HitTextPos"
+03895: 482  initprop "creater"
+03900: 483  null
+03901: 483  initprop "offset"
+03906: 483  endinit
+03907: 483  initprop "pos"
+03912: 483  endinit
+03913: 483  initprop "property"
+03918: 483  endinit
+03919: 483  initprop "_to_text"
+03924: 488  newinit 1
+03929: 489  string "template.item.TI_Card_Hurt_Over_To"
+03934: 489  initprop "extend"
+03939: 490  newinit 1
+03944: 491  string "nohurt"
+03949: 491  initprop "ignore"
+03954: 491  endinit
+03955: 491  initprop "property"
+03960: 494  newinit 1
+03965: 495  newinit 1
+03970: 495  newinit 1
+03975: 495  string "ani_hit_back"
+03980: 495  initprop "aniId"
+03985: 495  endinit
+03986: 495  initprop "data"
+03991: 495  endinit
+03992: 495  initprop "_hurt_over"
+03997: 495  endinit
+03998: 495  initprop "timelines"
+04003: 495  endinit
+04004: 495  initprop "_card_to"
+04009: 495  endinit
+04010: 495  initprop "items"
+04015: 495  endinit
+04016: 495  setprop "P_Hurt_Back_Over_NOHURT"
+04021: 495  popv
+04022: 502  name "xs"
+04027: 502  getprop "Cfg"
+04032: 502  getprop "Skill"
+04037: 502  getprop "part"
+04042: 502  newinit 1
+04047: 503  string "template.part.TP_Hurt_Over_Skill"
+04052: 503  initprop "extend"
+04057: 504  newinit 1
+04062: 506  newinit 1
+04067: 508  newinit 1
+04072: 509  string "fs"
+04077: 509  initprop "ignore"
+04082: 510  newinit 1
+04087: 511  string "HitTextPos"
+04092: 511  initprop "creater"
+04097: 512  null
+04098: 512  initprop "offset"
+04103: 512  endinit
+04104: 512  initprop "pos"
+04109: 512  endinit
+04110: 512  initprop "property"
+04115: 512  endinit
+04116: 512  initprop "_to_text"
+04121: 517  newinit 1
+04126: 518  string "template.item.TI_Card_Hurt_Over_To"
+04131: 518  initprop "extend"
+04136: 519  newinit 1
+04141: 520  string "fs"
+04146: 520  initprop "ignore"
+04151: 520  endinit
+04152: 520  initprop "property"
+04157: 523  newinit 1
+04162: 524  newinit 1
+04167: 524  newinit 1
+04172: 524  string "ani_hit_back"
+04177: 524  initprop "aniId"
+04182: 524  endinit
+04183: 524  initprop "data"
+04188: 524  endinit
+04189: 524  initprop "_hurt_over"
+04194: 524  endinit
+04195: 524  initprop "timelines"
+04200: 524  endinit
+04201: 524  initprop "_card_to"
+04206: 524  endinit
+04207: 524  initprop "items"
+04212: 524  endinit
+04213: 524  setprop "P_Hurt_Back_Over_NFS"
+04218: 524  popv
+04219: 530  name "xs"
+04224: 530  getprop "Cfg"
+04229: 530  getprop "Skill"
+04234: 530  getprop "part"
+04239: 530  newinit 1
+04244: 531  string "template.part.TP_Hurt_Over_Skill"
+04249: 531  initprop "extend"
+04254: 532  newinit 1
+04259: 534  newinit 1
+04264: 536  newinit 1
+04269: 537  newarray 1
+04273: 537  string "fs"
+04278: 537  initelem_array 0
+04282: 537  endinit
+04283: 537  initprop "trigger"
+04288: 538  newinit 1
+04293: 539  string "HitTextPos"
+04298: 539  initprop "creater"
+04303: 540  null
+04304: 540  initprop "offset"
+04309: 540  endinit
+04310: 540  initprop "pos"
+04315: 540  endinit
+04316: 540  initprop "property"
+04321: 540  endinit
+04322: 540  initprop "_to_text"
+04327: 545  newinit 1
+04332: 546  string "template.item.TI_Card_Hurt_Over_To"
+04337: 546  initprop "extend"
+04342: 547  newinit 1
+04347: 548  newarray 1
+04351: 548  string "fs"
+04356: 548  initelem_array 0
+04360: 548  endinit
+04361: 548  initprop "trigger"
+04366: 548  endinit
+04367: 548  initprop "property"
+04372: 550  newinit 1
+04377: 551  newinit 1
+04382: 551  newinit 1
+04387: 551  string "ani_hit_back"
+04392: 551  initprop "aniId"
+04397: 551  endinit
+04398: 551  initprop "data"
+04403: 551  endinit
+04404: 551  initprop "_hurt_over"
+04409: 551  endinit
+04410: 551  initprop "timelines"
+04415: 551  endinit
+04416: 551  initprop "_card_to"
+04421: 551  endinit
+04422: 551  initprop "items"
+04427: 551  endinit
+04428: 551  setprop "P_Hurt_Back_Over_FS"
+04433: 551  popv
+04434: 557  name "xs"
+04439: 557  getprop "Cfg"
+04444: 557  getprop "Skill"
+04449: 557  getprop "part"
+04454: 557  newinit 1
+04459: 558  string "template.part.TP_Hurt_Over_Skill"
+04464: 558  initprop "extend"
+04469: 559  newinit 1
+04474: 561  newinit 1
+04479: 563  newinit 1
+04484: 564  newarray 1
+04488: 564  string "boom"
+04493: 564  initelem_array 0
+04497: 564  endinit
+04498: 564  initprop "trigger"
+04503: 565  newinit 1
+04508: 566  string "HitTextPos"
+04513: 566  initprop "creater"
+04518: 567  null
+04519: 567  initprop "offset"
+04524: 567  endinit
+04525: 567  initprop "pos"
+04530: 567  endinit
+04531: 567  initprop "property"
+04536: 567  endinit
+04537: 567  initprop "_to_text"
+04542: 572  newinit 1
+04547: 573  string "template.item.TI_Card_Hurt_Over_To"
+04552: 573  initprop "extend"
+04557: 574  newinit 1
+04562: 575  newarray 1
+04566: 575  string "boom"
+04571: 575  initelem_array 0
+04575: 575  endinit
+04576: 575  initprop "trigger"
+04581: 575  endinit
+04582: 575  initprop "property"
+04587: 577  newinit 1
+04592: 578  newinit 1
+04597: 578  newinit 1
+04602: 578  string "ani_hit_back"
+04607: 578  initprop "aniId"
+04612: 578  endinit
+04613: 578  initprop "data"
+04618: 578  endinit
+04619: 578  initprop "_hurt_over"
+04624: 578  endinit
+04625: 578  initprop "timelines"
+04630: 578  endinit
+04631: 578  initprop "_card_to"
+04636: 578  endinit
+04637: 578  initprop "items"
+04642: 578  endinit
+04643: 578  setprop "P_Hurt_Back_Over_BOOM"
+04648: 578  popv
+04649: 584  name "xs"
+04654: 584  getprop "Cfg"
+04659: 584  getprop "Skill"
+04664: 584  getprop "part"
+04669: 584  newinit 1
+04674: 585  string "part.P_Hurt_Back_Over"
+04679: 585  initprop "extend"
+04684: 586  newinit 1
+04689: 587  string "fs"
+04694: 587  initprop "ignore"
+04699: 587  endinit
+04700: 587  initprop "property"
+04705: 587  endinit
+04706: 587  setprop "P_Hurt_Back_Over_No_Fs"
+04711: 587  popv
+04712: 593  name "xs"
+04717: 593  getprop "Cfg"
+04722: 593  getprop "Skill"
+04727: 593  getprop "part"
+04732: 593  newinit 1
+04737: 594  string "part.P_Hurt_Back_Over"
+04742: 594  initprop "extend"
+04747: 595  newinit 1
+04752: 598  null
+04753: 598  initprop "_finish_pause"
+04758: 600  newinit 1
+04763: 600  string "template.item.TI_DeathCount_From"
+04768: 600  initprop "extend"
+04773: 600  endinit
+04774: 600  initprop "_death_count"
+04779: 602  newinit 1
+04784: 603  newinit 1
+04789: 604  string "from"
+04794: 604  initprop "type"
+04799: 605  string "from"
+04804: 605  initprop "belong"
+04809: 605  endinit
+04810: 605  initprop "property"
+04815: 605  endinit
+04816: 605  initprop "_to_hp_top"
+04821: 609  newinit 1
+04826: 610  newinit 1
+04831: 611  string "from"
+04836: 611  initprop "type"
+04841: 612  string "from"
+04846: 612  initprop "belong"
+04851: 612  endinit
+04852: 612  initprop "property"
+04857: 612  endinit
+04858: 612  initprop "_to_hp_bot"
+04863: 616  newinit 1
+04868: 617  newinit 1
+04873: 618  string "from_tmp"
+04878: 618  initprop "belong"
+04883: 619  newinit 1
+04888: 620  string "from"
+04893: 620  initprop "base"
+04898: 621  null
+04899: 621  initprop "creater"
+04904: 622  null
+04905: 622  initprop "offset"
+04910: 622  endinit
+04911: 622  initprop "pos"
+04916: 622  endinit
+04917: 622  initprop "property"
+04922: 622  endinit
+04923: 622  initprop "_to_text"
+04928: 627  null
+04929: 627  initprop "_to_text_all"
+04934: 629  null
+04935: 629  initprop "_to_miss"
+04940: 630  null
+04941: 630  initprop "_to_cri"
+04946: 633  newinit 1
+04951: 634  newinit 1
+04956: 635  string "from"
+04961: 635  initprop "type"
+04966: 636  string "from"
+04971: 636  initprop "belong"
+04976: 636  endinit
+04977: 636  initprop "property"
+04982: 636  endinit
+04983: 636  initprop "_to_status_clean_feng"
+04988: 639  newinit 1
+04993: 640  newinit 1
+04998: 641  string "from"
+05003: 641  initprop "type"
+05008: 642  string "from"
+05013: 642  initprop "belong"
+05018: 642  endinit
+05019: 642  initprop "property"
+05024: 642  endinit
+05025: 642  initprop "_to_status_clean_le"
+05030: 645  newinit 1
+05035: 646  newinit 1
+05040: 647  string "from"
+05045: 647  initprop "type"
+05050: 648  string "from"
+05055: 648  initprop "belong"
+05060: 648  endinit
+05061: 648  initprop "property"
+05066: 648  endinit
+05067: 648  initprop "_to_status_clean_yun"
+05072: 658  newinit 1
+05077: 659  newinit 1
+05082: 660  string "from"
+05087: 660  initprop "type"
+05092: 661  string "from"
+05097: 661  initprop "belong"
+05102: 661  endinit
+05103: 661  initprop "property"
+05108: 661  endinit
+05109: 661  initprop "_card_to"
+05114: 661  endinit
+05115: 661  initprop "items"
+05120: 661  endinit
+05121: 661  setprop "P_Hurt_Back_Over_From_FL"
+05126: 661  popv
+05127: 670  name "xs"
+05132: 670  getprop "Cfg"
+05137: 670  getprop "Skill"
+05142: 670  getprop "part"
+05147: 670  newinit 1
+05152: 671  string "part.P_Hurt_Back_Over"
+05157: 671  initprop "extend"
+05162: 672  newinit 1
+05167: 675  null
+05168: 675  initprop "_finish_pause"
+05173: 677  newinit 1
+05178: 677  string "template.item.TI_DeathCount_From"
+05183: 677  initprop "extend"
+05188: 677  endinit
+05189: 677  initprop "_death_count"
+05194: 679  newinit 1
+05199: 680  newinit 1
+05204: 681  string "from"
+05209: 681  initprop "type"
+05214: 682  string "from"
+05219: 682  initprop "belong"
+05224: 682  endinit
+05225: 682  initprop "property"
+05230: 682  endinit
+05231: 682  initprop "_to_hp_top"
+05236: 686  newinit 1
+05241: 687  newinit 1
+05246: 688  string "from"
+05251: 688  initprop "type"
+05256: 689  string "from"
+05261: 689  initprop "belong"
+05266: 689  endinit
+05267: 689  initprop "property"
+05272: 689  endinit
+05273: 689  initprop "_to_hp_bot"
+05278: 693  newinit 1
+05283: 694  newinit 1
+05288: 695  string "from_tmp"
+05293: 695  initprop "belong"
+05298: 696  newinit 1
+05303: 697  string "from"
+05308: 697  initprop "base"
+05313: 698  null
+05314: 698  initprop "creater"
+05319: 699  null
+05320: 699  initprop "offset"
+05325: 699  endinit
+05326: 699  initprop "pos"
+05331: 699  endinit
+05332: 699  initprop "property"
+05337: 699  endinit
+05338: 699  initprop "_to_text"
+05343: 704  null
+05344: 704  initprop "_to_text_all"
+05349: 706  null
+05350: 706  initprop "_to_miss"
+05355: 707  null
+05356: 707  initprop "_to_cri"
+05361: 710  newinit 1
+05366: 711  newinit 1
+05371: 712  string "from"
+05376: 712  initprop "type"
+05381: 713  string "from"
+05386: 713  initprop "belong"
+05391: 713  endinit
+05392: 713  initprop "property"
+05397: 713  endinit
+05398: 713  initprop "_to_status_clean_feng"
+05403: 716  newinit 1
+05408: 717  newinit 1
+05413: 718  string "from"
+05418: 718  initprop "type"
+05423: 719  string "from"
+05428: 719  initprop "belong"
+05433: 719  endinit
+05434: 719  initprop "property"
+05439: 719  endinit
+05440: 719  initprop "_to_status_clean_le"
+05445: 722  newinit 1
+05450: 723  newinit 1
+05455: 724  string "from"
+05460: 724  initprop "type"
+05465: 725  string "from"
+05470: 725  initprop "belong"
+05475: 725  endinit
+05476: 725  initprop "property"
+05481: 725  endinit
+05482: 725  initprop "_to_status_clean_yun"
+05487: 735  newinit 1
+05492: 736  newinit 1
+05497: 737  string "from"
+05502: 737  initprop "type"
+05507: 738  string "from"
+05512: 738  initprop "belong"
+05517: 738  endinit
+05518: 738  initprop "property"
+05523: 738  endinit
+05524: 738  initprop "_card_to"
+05529: 738  endinit
+05530: 738  initprop "items"
+05535: 738  endinit
+05536: 738  setprop "P_Hurt_Back_Over_From"
+05541: 738  popv
+05542: 745  name "xs"
+05547: 745  getprop "Cfg"
+05552: 745  getprop "Skill"
+05557: 745  getprop "part"
+05562: 745  newinit 1
+05567: 747  string "template.part.TP_Hurt_Over_Skill"
+05572: 747  initprop "extend"
+05577: 748  newinit 1
+05582: 749  newinit 1
+05587: 750  string "template.item.TI_Card_Hurt_Over_To"
+05592: 750  initprop "extend"
+05597: 751  newinit 1
+05602: 752  newinit 1
+05607: 752  newinit 1
+05612: 752  string "ani_hit_flat"
+05617: 752  initprop "aniId"
+05622: 752  endinit
+05623: 752  initprop "data"
+05628: 752  endinit
+05629: 752  initprop "_hurt_over"
+05634: 752  endinit
+05635: 752  initprop "timelines"
+05640: 752  endinit
+05641: 752  initprop "_card_to"
+05646: 752  endinit
+05647: 752  initprop "items"
+05652: 752  endinit
+05653: 752  setprop "P_Hurt_Flat_Over"
+05658: 752  popv
+05659: 763  name "xs"
+05664: 763  getprop "Cfg"
+05669: 763  getprop "Skill"
+05674: 763  getprop "part"
+05679: 763  newinit 1
+05684: 764  string "template.part.TP_Hurt_Over_Skill"
+05689: 764  initprop "extend"
+05694: 764  endinit
+05695: 764  setprop "P_Hurt_Over"
+05700: 764  popv
+05701: 768  name "xs"
+05706: 768  getprop "Cfg"
+05711: 768  getprop "Skill"
+05716: 768  getprop "part"
+05721: 768  newinit 1
+05726: 769  string "template.part.TP_Hurt_Over_Skill"
+05731: 769  initprop "extend"
+05736: 769  endinit
+05737: 769  setprop "P_Hurt_Fly_Over"
+05742: 769  popv
+05743: 773  name "xs"
+05748: 773  getprop "Cfg"
+05753: 773  getprop "Skill"
+05758: 773  getprop "part"
+05763: 773  newinit 1
+05768: 774  string "template.part.TP_Hurt_Over_Skill"
+05773: 774  initprop "extend"
+05778: 775  newinit 1
+05783: 776  newinit 1
+05788: 777  newinit 1
+05793: 778  string "fs"
+05798: 778  initprop "ignore"
+05803: 778  endinit
+05804: 778  initprop "property"
+05809: 778  endinit
+05810: 778  initprop "_to_text"
+05815: 781  newinit 1
+05820: 782  newinit 1
+05825: 783  string "fs"
+05830: 783  initprop "ignore"
+05835: 783  endinit
+05836: 783  initprop "property"
+05841: 783  endinit
+05842: 783  initprop "_card_to"
+05847: 783  endinit
+05848: 783  initprop "items"
+05853: 783  endinit
+05854: 783  setprop "P_Hurt_Fly_Over_NFS"
+05859: 783  popv
+05860: 791  name "xs"
+05865: 791  getprop "Cfg"
+05870: 791  getprop "Skill"
+05875: 791  getprop "part"
+05880: 791  newinit 1
+05885: 792  string "template.part.TP_Hurt_Over_Skill"
+05890: 792  initprop "extend"
+05895: 793  newinit 1
+05900: 794  string "fs"
+05905: 794  initprop "ignore"
+05910: 794  endinit
+05911: 794  initprop "property"
+05916: 794  endinit
+05917: 794  setprop "P_Hurt_Fly_Over_NO_FS"
+05922: 794  popv
+05923: 799  name "xs"
+05928: 799  getprop "Cfg"
+05933: 799  getprop "Skill"
+05938: 799  getprop "part"
+05943: 799  newinit 1
+05948: 800  newinit 1
+05953: 802  newinit 1
+05958: 802  string "template.item.TI_Hp_Sub_Top_To"
+05963: 802  initprop "extend"
+05968: 802  endinit
+05969: 802  initprop "_to_hp_top"
+05974: 803  newinit 1
+05979: 803  string "template.item.TI_Hp_Sub_Bot_To"
+05984: 803  initprop "extend"
+05989: 803  endinit
+05990: 803  initprop "_to_hp_bot"
+05995: 804  newinit 1
+06000: 804  string "template.item.TI_Text_Hurt_To"
+06005: 804  initprop "extend"
+06010: 804  endinit
+06011: 804  initprop "_to_text"
+06016: 804  endinit
+06017: 804  initprop "items"
+06022: 804  endinit
+06023: 804  setprop "P_Over_TEST"
+06028: 804  popv
+06029: 813  name "xs"
+06034: 813  getprop "Cfg"
+06039: 813  getprop "Skill"
+06044: 813  getprop "part"
+06049: 813  newinit 1
+06054: 815  newinit 1
+06059: 817  newinit 1
+06064: 817  string "template.item.TI_Text_Hurt_toOther"
+06069: 817  initprop "extend"
+06074: 817  endinit
+06075: 817  initprop "_to_text"
+06080: 817  endinit
+06081: 817  initprop "items"
+06086: 817  endinit
+06087: 817  setprop "P_Hurt_Normal_Over_OTHER"
+06092: 817  popv
+06093: 839  name "xs"
+06098: 839  getprop "Cfg"
+06103: 839  getprop "Skill"
+06108: 839  getprop "part"
+06113: 839  newinit 1
+06118: 841  string "template.part.TP_Hurt_From"
+06123: 841  initprop "extend"
+06128: 842  newinit 1
+06133: 843  null
+06134: 843  initprop "_effect"
+06139: 843  endinit
+06140: 843  initprop "items"
+06145: 843  endinit
+06146: 843  setprop "P_Hurt_From"
+06151: 843  popv
+06152: 865  name "xs"
+06157: 865  getprop "Cfg"
+06162: 865  getprop "Skill"
+06167: 865  getprop "part"
+06172: 865  newinit 1
+06177: 867  string "part.P_Hurt_Back_Over"
+06182: 867  initprop "extend"
+06187: 868  newinit 1
+06192: 869  newarray 1
+06196: 869  string "fs"
+06201: 869  initelem_array 0
+06205: 869  endinit
+06206: 869  initprop "ignore"
+06211: 869  endinit
+06212: 869  initprop "property"
+06217: 869  endinit
+06218: 869  setprop "P_Hurt_Back_Over_IgnoreOther"
+06223: 869  popv
+06224: 874  name "xs"
+06229: 874  getprop "Cfg"
+06234: 874  getprop "Skill"
+06239: 874  getprop "part"
+06244: 874  newinit 1
+06249: 876  string "part.P_Hurt_Fly_Over"
+06254: 876  initprop "extend"
+06259: 877  newinit 1
+06264: 878  newarray 1
+06268: 878  string "fs"
+06273: 878  initelem_array 0
+06277: 878  endinit
+06278: 878  initprop "ignore"
+06283: 878  endinit
+06284: 878  initprop "property"
+06289: 878  endinit
+06290: 878  setprop "P_Hurt_Fly_Over_IgnoreOther"
+06295: 878  popv
+06296: 884  name "xs"
+06301: 884  getprop "Cfg"
+06306: 884  getprop "Skill"
+06311: 884  getprop "part"
+06316: 884  newinit 1
+06321: 886  string "part.P_Hurt_Back_Over"
+06326: 886  initprop "extend"
+06331: 887  newinit 1
+06336: 888  null
+06337: 888  initprop "_to_text"
+06342: 888  endinit
+06343: 888  initprop "items"
+06348: 888  endinit
+06349: 888  setprop "P_Hurt_Back_Over_No_Text"
+06354: 888  popv
+06355: 893  name "xs"
+06360: 893  getprop "Cfg"
+06365: 893  getprop "Skill"
+06370: 893  getprop "part"
+06375: 893  newinit 1
+06380: 895  string "part.P_Hurt_Normal_Over"
+06385: 895  initprop "extend"
+06390: 896  newinit 1
+06395: 897  null
+06396: 897  initprop "_to_text"
+06401: 897  endinit
+06402: 897  initprop "items"
+06407: 897  endinit
+06408: 897  setprop "P_Hurt_Normal_Over_No_Text"
+06413: 897  popv
+06414: 899  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/PartHurt.js:1 ---

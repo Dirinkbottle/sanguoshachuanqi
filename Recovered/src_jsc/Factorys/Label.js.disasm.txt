@@ -1,0 +1,489 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Factorys/Label.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=25 object[0]
+;; FUNCTION-MAP kind=lambda offset=35 object[1]
+;; FUNCTION-MAP kind=lambda offset=45 object[2]
+;; FUNCTION-MAP kind=lambda offset=55 object[3]
+;; FUNCTION-MAP kind=lambda offset=65 object[4]
+;; FUNCTION-MAP kind=lambda offset=75 object[5]
+;; FUNCTION-MAP kind=lambda offset=85 object[6]
+;; FUNCTION-MAP kind=lambda offset=95 object[7]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Factorys"
+00010:   9  newinit 1
+00015:  11  string "xs.Factorys.Label"
+00020:  11  initprop "name"
+00025:  27  lambda (function () {
+    [sourceless code]
+})
+00030:  27  initprop "_getCfg"
+00035:  44  lambda (function () {
+    [sourceless code]
+})
+00040:  44  initprop "_getStyleCfg"
+00045:  61  lambda (function () {
+    [sourceless code]
+})
+00050:  61  initprop "createByLabelId"
+00055:  77  lambda (function () {
+    [sourceless code]
+})
+00060:  77  initprop "createByStyleId"
+00065:  96  lambda (function () {
+    [sourceless code]
+})
+00070:  96  initprop "createByStyleIdWithString"
+00075: 102  lambda (function () {
+    [sourceless code]
+})
+00080: 102  initprop "createByStyleIdWithStringId"
+00085: 109  lambda (function () {
+    [sourceless code]
+})
+00090: 109  initprop "createWithString"
+00095: 116  lambda (function () {
+    [sourceless code]
+})
+00100: 116  initprop "createWithStringId"
+00105: 116  endinit
+00106: 116  setprop "Label"
+00111: 116  popv
+00112: 122  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:1 ---
+;; function object[0] _getCfg
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] labelId
+;; local[0] _cfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  name "xs"
+00005:  29  getprop "Cfg"
+00010:  29  getprop "Label"
+00015:  29  getarg 0
+00018:  29  getelem
+00019:  29  or 49 (+30)
+00024:  29  pop
+00025:  29  name "xs"
+00030:  29  getprop "Cfg"
+00035:  29  getprop "System"
+00040:  29  getprop "sgs_config_label"
+00045:  29  getarg 0
+00048:  29  getelem
+00049:  29  setlocal 0
+00052:  29  pop
+00053:  31  getlocal 0
+00056:  31  not
+00057:  31  ifeq 118 (+61)
+00062:  32  this
+00063:  32  dup
+00064:  32  callprop "warn"
+00069:  32  swap
+00070:  32  notearg
+00071:  32  string "_cfg cant find,use default:"
+00076:  32  getarg 0
+00079:  32  add
+00080:  32  notearg
+00081:  32  call 1
+00084:  32  pop
+00085:  33  getlocal 0
+00088:  33  or 114 (+26)
+00093:  33  pop
+00094:  33  name "xs"
+00099:  33  getprop "Cfg"
+00104:  33  getprop "Label"
+00109:  33  getprop "Default"
+00114:  33  setlocal 0
+00117:  33  pop
+00118:  36  this
+00119:  36  dup
+00120:  36  callprop "assert"
+00125:  36  swap
+00126:  36  notearg
+00127:  36  getlocal 0
+00130:  36  getprop "styleId"
+00135:  36  notearg
+00136:  36  string "need styleId"
+00141:  36  notearg
+00142:  36  getlocal 0
+00145:  36  notearg
+00146:  36  call 3
+00149:  36  pop
+00150:  39  getlocal 0
+00153:  39  return
+00154:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:27 ---
+;; function object[1] _getStyleCfg
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] styleId
+;; local[0] _cfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  name "xs"
+00005:  45  getprop "Cfg"
+00010:  45  getprop "System"
+00015:  45  getprop "sgs_config_ls"
+00020:  45  getarg 0
+00023:  45  getelem
+00024:  45  setlocal 0
+00027:  45  pop
+00028:  47  getlocal 0
+00031:  47  not
+00032:  47  ifeq 60 (+28)
+00037:  48  name "xs"
+00042:  48  getprop "Cfg"
+00047:  48  getprop "LabelStyle"
+00052:  48  getarg 0
+00055:  48  getelem
+00056:  48  setlocal 0
+00059:  48  pop
+00060:  51  getlocal 0
+00063:  51  not
+00064:  51  ifeq 125 (+61)
+00069:  52  this
+00070:  52  dup
+00071:  52  callprop "warn"
+00076:  52  swap
+00077:  52  notearg
+00078:  52  string "_getStyleCfg ,_cfg cant find,use default:"
+00083:  52  getarg 0
+00086:  52  add
+00087:  52  notearg
+00088:  52  call 1
+00091:  52  pop
+00092:  53  getlocal 0
+00095:  53  or 121 (+26)
+00100:  53  pop
+00101:  53  name "xs"
+00106:  53  getprop "Cfg"
+00111:  53  getprop "LabelStyle"
+00116:  53  getprop "Default"
+00121:  53  setlocal 0
+00124:  53  pop
+00125:  56  getlocal 0
+00128:  56  return
+00129:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:44 ---
+;; function object[2] createByLabelId
+;; function metadata object[2] nargs=1 bindings=3
+;; arg[0] labelId
+;; local[0] _labelCfg
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:61 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  this
+00001:  63  dup
+00002:  63  callprop "_getCfg"
+00007:  63  swap
+00008:  63  notearg
+00009:  63  getarg 0
+00012:  63  notearg
+00013:  63  call 1
+00016:  63  setlocal 0
+00019:  63  pop
+00020:  64  this
+00021:  64  dup
+00022:  64  callprop "createByStyleId"
+00027:  64  swap
+00028:  64  notearg
+00029:  64  getlocal 0
+00032:  64  getprop "styleId"
+00037:  64  notearg
+00038:  64  call 1
+00041:  64  setlocal 1
+00044:  64  pop
+00045:  66  getlocal 0
+00048:  66  getprop "stringId"
+00053:  66  ifeq 82 (+29)
+00058:  67  getlocal 1
+00061:  67  dup
+00062:  67  callprop "setStringById"
+00067:  67  swap
+00068:  67  notearg
+00069:  67  getlocal 0
+00072:  67  getprop "stringId"
+00077:  67  notearg
+00078:  67  call 1
+00081:  67  pop
+00082:  70  getlocal 0
+00085:  70  getprop "string"
+00090:  70  ifeq 119 (+29)
+00095:  71  getlocal 1
+00098:  71  dup
+00099:  71  callprop "setString"
+00104:  71  swap
+00105:  71  notearg
+00106:  71  getlocal 0
+00109:  71  getprop "string"
+00114:  71  notearg
+00115:  71  call 1
+00118:  71  pop
+00119:  74  getlocal 1
+00122:  74  return
+00123:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:61 ---
+;; function object[3] createByStyleId
+;; function metadata object[3] nargs=1 bindings=3
+;; arg[0] styleId
+;; local[0] _cfg
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:77 ---
+loc   line  op
+----- ----  --
+main:
+00000:  79  this
+00001:  79  dup
+00002:  79  callprop "_getStyleCfg"
+00007:  79  swap
+00008:  79  notearg
+00009:  79  getarg 0
+00012:  79  notearg
+00013:  79  call 1
+00016:  79  setlocal 0
+00019:  79  pop
+00020:  82  getlocal 1
+00023:  82  pop
+00024:  83  getlocal 0
+00027:  83  getprop "fontType"
+00032:  83  name "xs"
+00037:  83  getprop "Constant_FontType_BMF"
+00042:  83  stricteq
+00043:  83  ifeq 107 (+64)
+00048:  84  name "xs"
+00053:  84  getprop "Factorys"
+00058:  84  getprop "LabelBMFont"
+00063:  84  dup
+00064:  84  callprop "create"
+00069:  84  swap
+00070:  84  notearg
+00071:  84  string ""
+00076:  84  notearg
+00077:  84  getlocal 0
+00080:  84  getprop "fontId"
+00085:  84  notearg
+00086:  84  getlocal 0
+00089:  84  getprop "alignH"
+00094:  84  notearg
+00095:  84  call 3
+00098:  84  setlocal 1
+00101:  84  pop
+00102:  84  goto 228 (+126)
+00107:  86  getlocal 0
+00110:  86  getprop "fontType"
+00115:  86  name "xs"
+00120:  86  getprop "Constant_FontType_TTF"
+00125:  86  stricteq
+00126:  86  ifeq 199 (+73)
+00131:  87  name "xs"
+00136:  87  getprop "Factorys"
+00141:  87  getprop "LabelTTF"
+00146:  87  dup
+00147:  87  callprop "create"
+00152:  87  swap
+00153:  87  notearg
+00154:  87  string ""
+00159:  87  notearg
+00160:  87  getlocal 0
+00163:  87  getprop "fontId"
+00168:  87  notearg
+00169:  87  getlocal 0
+00172:  87  getprop "alignH"
+00177:  87  notearg
+00178:  87  getlocal 0
+00181:  87  getprop "alignV"
+00186:  87  notearg
+00187:  87  call 4
+00190:  87  setlocal 1
+00193:  87  pop
+00194:  87  goto 228 (+34)
+00199:  90  this
+00200:  90  dup
+00201:  90  callprop "warn"
+00206:  90  swap
+00207:  90  notearg
+00208:  90  string "createByLabelId"
+00213:  90  notearg
+00214:  90  string "need fontType "
+00219:  90  getarg 0
+00222:  90  add
+00223:  90  notearg
+00224:  90  call 2
+00227:  90  pop
+00228:  93  getlocal 1
+00231:  93  return
+00232:  93  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:77 ---
+;; function object[4] createByStyleIdWithString
+;; function metadata object[4] nargs=2 bindings=3
+;; arg[0] styleId
+;; arg[1] string
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:96 ---
+loc   line  op
+----- ----  --
+main:
+00000:  97  this
+00001:  97  dup
+00002:  97  callprop "createByStyleId"
+00007:  97  swap
+00008:  97  notearg
+00009:  97  getarg 0
+00012:  97  notearg
+00013:  97  call 1
+00016:  97  setlocal 0
+00019:  97  pop
+00020:  98  getlocal 0
+00023:  98  dup
+00024:  98  callprop "setString"
+00029:  98  swap
+00030:  98  notearg
+00031:  98  getarg 1
+00034:  98  notearg
+00035:  98  call 1
+00038:  98  pop
+00039:  99  getlocal 0
+00042:  99  return
+00043:  99  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:96 ---
+;; function object[5] createByStyleIdWithStringId
+;; function metadata object[5] nargs=2 bindings=3
+;; arg[0] styleId
+;; arg[1] stringId
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:102 ---
+loc   line  op
+----- ----  --
+main:
+00000: 103  this
+00001: 103  dup
+00002: 103  callprop "createByStyleId"
+00007: 103  swap
+00008: 103  notearg
+00009: 103  getarg 0
+00012: 103  notearg
+00013: 103  call 1
+00016: 103  setlocal 0
+00019: 103  pop
+00020: 104  getlocal 0
+00023: 104  dup
+00024: 104  callprop "setStringById"
+00029: 104  swap
+00030: 104  notearg
+00031: 104  getarg 1
+00034: 104  notearg
+00035: 104  call 1
+00038: 104  pop
+00039: 105  getlocal 0
+00042: 105  return
+00043: 105  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:102 ---
+;; function object[6] createWithString
+;; function metadata object[6] nargs=2 bindings=4
+;; arg[0] labelId
+;; arg[1] string
+;; local[0] _string
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:109 ---
+loc   line  op
+----- ----  --
+main:
+00000: 110  getarg 1
+00003: 110  or 14 (+11)
+00008: 110  pop
+00009: 110  string ""
+00014: 110  setlocal 0
+00017: 110  pop
+00018: 111  this
+00019: 111  dup
+00020: 111  callprop "createByLabelId"
+00025: 111  swap
+00026: 111  notearg
+00027: 111  getarg 0
+00030: 111  notearg
+00031: 111  call 1
+00034: 111  setlocal 1
+00037: 111  pop
+00038: 112  getlocal 1
+00041: 112  dup
+00042: 112  callprop "setString"
+00047: 112  swap
+00048: 112  notearg
+00049: 112  getlocal 0
+00052: 112  notearg
+00053: 112  call 1
+00056: 112  pop
+00057: 114  getlocal 1
+00060: 114  return
+00061: 114  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:109 ---
+;; function object[7] createWithStringId
+;; function metadata object[7] nargs=3 bindings=4
+;; arg[0] labelId
+;; arg[1] stringId
+;; arg[2] paramArray
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:116 ---
+loc   line  op
+----- ----  --
+main:
+00000: 117  this
+00001: 117  dup
+00002: 117  callprop "createByLabelId"
+00007: 117  swap
+00008: 117  notearg
+00009: 117  getarg 0
+00012: 117  notearg
+00013: 117  call 1
+00016: 117  setlocal 0
+00019: 117  pop
+00020: 118  getlocal 0
+00023: 118  dup
+00024: 118  callprop "setStringById"
+00029: 118  swap
+00030: 118  notearg
+00031: 118  getarg 1
+00034: 118  notearg
+00035: 118  call 1
+00038: 118  pop
+00039: 119  getlocal 0
+00042: 119  dup
+00043: 119  callprop "setStringParams"
+00048: 119  swap
+00049: 119  notearg
+00050: 119  getarg 2
+00053: 119  notearg
+00054: 119  call 1
+00057: 119  pop
+00058: 120  getlocal 0
+00061: 120  return
+00062: 120  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Label.js:116 ---

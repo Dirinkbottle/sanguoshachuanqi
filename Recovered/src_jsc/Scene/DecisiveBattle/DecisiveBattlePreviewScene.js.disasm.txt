@@ -1,0 +1,267 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=109 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Scene"
+00010:   4  name "cc"
+00015:   4  getprop "Scene"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  string "xs.Scene.DecisiveBattlePreviewScene"
+00038:   5  initprop "name"
+00043:   6  lambda (function () {
+    [sourceless code]
+})
+00048:   6  initprop "ctor"
+00053:  10  lambda (function () {
+    [sourceless code]
+})
+00058:  10  initprop "init"
+00063:  25  lambda (function () {
+    [sourceless code]
+})
+00068:  25  initprop "onEnter"
+00073:  28  lambda (function () {
+    [sourceless code]
+})
+00078:  28  initprop "onExit"
+00083:  28  endinit
+00084:  28  notearg
+00085:  28  call 1
+00088:  28  setprop "DecisiveBattlePreviewScene"
+00093:  28  popv
+00094:  32  name "xs"
+00099:  32  getprop "Scene"
+00104:  32  getprop "DecisiveBattlePreviewScene"
+00109:  32  lambda (function () {
+    [sourceless code]
+})
+00114:  32  setprop "create"
+00119:  32  popv
+00120:  42  name "xs"
+00125:  42  getprop "Scene"
+00130:  42  getprop "Mgr"
+00135:  42  dup
+00136:  42  callprop "registerScene"
+00141:  42  swap
+00142:  42  notearg
+00143:  42  string "DecisiveBattlePreviewScene"
+00148:  42  notearg
+00149:  42  newinit 1
+00154:  43  name "xs"
+00159:  43  getprop "Scene"
+00164:  43  getprop "DecisiveBattlePreviewScene"
+00169:  43  initprop "class"
+00174:  44  name "xs"
+00179:  44  getprop "Constant_SceneType_Challenge"
+00184:  44  initprop "type"
+00189:  44  endinit
+00190:  44  notearg
+00191:  44  call 2
+00194:  44  popv
+00195:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "Scene"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] layer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  16  name "xs"
+00025:  16  getprop "Tools"
+00030:  16  getprop "UI"
+00035:  16  dup
+00036:  16  callprop "addBgByType"
+00041:  16  swap
+00042:  16  notearg
+00043:  16  this
+00044:  16  notearg
+00045:  16  name "xs"
+00050:  16  getprop "Constant_BgType_InterServiceFight"
+00055:  16  notearg
+00056:  16  call 2
+00059:  16  pop
+00060:  19  name "xs"
+00065:  19  getprop "Views"
+00070:  19  getprop "DecisiveBattlePreviewView"
+00075:  19  dup
+00076:  19  callprop "create"
+00081:  19  swap
+00082:  19  notearg
+00083:  19  getarg 0
+00086:  19  notearg
+00087:  19  call 1
+00090:  19  setlocal 0
+00093:  19  pop
+00094:  20  getlocal 0
+00097:  20  dup
+00098:  20  callprop "setBaseTouchPriority"
+00103:  20  swap
+00104:  20  notearg
+00105:  20  int8 -1
+00107:  20  notearg
+00108:  20  call 1
+00111:  20  pop
+00112:  21  name "xs"
+00117:  21  getprop "Utils"
+00122:  21  getprop "Node"
+00127:  21  dup
+00128:  21  callprop "attachNodes"
+00133:  21  swap
+00134:  21  notearg
+00135:  21  this
+00136:  21  notearg
+00137:  21  getlocal 0
+00140:  21  notearg
+00141:  21  newinit 1
+00146:  21  string "lb"
+00151:  21  initprop "desc"
+00156:  21  true
+00157:  21  initprop "sc"
+00162:  21  endinit
+00163:  21  notearg
+00164:  21  call 3
+00167:  21  pop
+00168:  23  true
+00169:  23  return
+00170:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:10 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  26  this
+00001:  26  dup
+00002:  26  callprop "_super"
+00007:  26  swap
+00008:  26  notearg
+00009:  26  call 0
+00012:  26  pop
+00013:  26  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:25 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  this
+00001:  29  dup
+00002:  29  callprop "_super"
+00007:  29  swap
+00008:  29  notearg
+00009:  29  call 0
+00012:  29  pop
+00013:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:28 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  name "xs"
+00005:  34  getprop "Scene"
+00010:  34  getprop "DecisiveBattlePreviewScene"
+00015:  34  undefined
+00016:  34  notearg
+00017:  34  new 0
+00020:  34  setlocal 0
+00023:  34  pop
+00024:  35  getlocal 0
+00027:  35  and 51 (+24)
+00032:  35  pop
+00033:  35  getlocal 0
+00036:  35  dup
+00037:  35  callprop "init"
+00042:  35  swap
+00043:  35  notearg
+00044:  35  getarg 0
+00047:  35  notearg
+00048:  35  call 1
+00051:  35  ifeq 60 (+9)
+00056:  36  getlocal 0
+00059:  36  return
+00060:  38  name "xs"
+00065:  38  dup
+00066:  38  callprop "assert"
+00071:  38  swap
+00072:  38  notearg
+00073:  38  false
+00074:  38  notearg
+00075:  38  string "xs.Scene.DecisiveBattlePreviewScene.create error!"
+00080:  38  notearg
+00081:  38  call 2
+00084:  38  pop
+00085:  39  null
+00086:  39  return
+00087:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.js:32 ---

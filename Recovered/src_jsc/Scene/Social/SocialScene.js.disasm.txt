@@ -1,0 +1,405 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Social/SocialScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=79 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Scene"
+00010:   7  name "cc"
+00015:   7  getprop "Scene"
+00020:   7  dup
+00021:   7  callprop "extend"
+00026:   7  swap
+00027:   7  notearg
+00028:   7  newinit 1
+00033:   8  lambda (function () {
+    [sourceless code]
+})
+00038:   8  initprop "ctor"
+00043:  13  lambda (function () {
+    [sourceless code]
+})
+00048:  13  initprop "init"
+00053:  13  endinit
+00054:  13  notearg
+00055:  13  call 1
+00058:  13  setprop "SocialScene"
+00063:  13  popv
+00064:  49  name "xs"
+00069:  49  getprop "Scene"
+00074:  49  getprop "SocialScene"
+00079:  49  lambda (function () {
+    [sourceless code]
+})
+00084:  49  setprop "create"
+00089:  49  popv
+00090:  59  name "xs"
+00095:  59  getprop "Scene"
+00100:  59  getprop "Mgr"
+00105:  59  dup
+00106:  59  callprop "registerScene"
+00111:  59  swap
+00112:  59  notearg
+00113:  59  string "SocialScene"
+00118:  59  notearg
+00119:  59  newinit 1
+00124:  60  name "xs"
+00129:  60  getprop "Scene"
+00134:  60  getprop "SocialScene"
+00139:  60  initprop "class"
+00144:  61  newarray 0
+00148:  61  endinit
+00149:  61  initprop "area"
+00154:  62  name "xs"
+00159:  62  getprop "Constant_SceneType_Cmn"
+00164:  62  initprop "type"
+00169:  62  endinit
+00170:  62  notearg
+00171:  62  call 2
+00174:  62  popv
+00175:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialScene.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  call 0
+00012:   9  pop
+00013:  10  name "cc"
+00018:  10  dup
+00019:  10  callprop "associateWithNative"
+00024:  10  swap
+00025:  10  notearg
+00026:  10  this
+00027:  10  notearg
+00028:  10  name "cc"
+00033:  10  getprop "Scene"
+00038:  10  notearg
+00039:  10  call 2
+00042:  10  pop
+00043:  10  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialScene.js:8 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=3
+;; local[0] visibleSize
+;; local[1] playerInfo
+;; local[2] mainMenu
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialScene.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  14  this
+00001:  14  dup
+00002:  14  callprop "_super"
+00007:  14  swap
+00008:  14  notearg
+00009:  14  call 0
+00012:  14  not
+00013:  14  ifeq 20 (+7)
+00018:  15  false
+00019:  15  return
+00020:  18  name "xs"
+00025:  18  getprop "director"
+00030:  18  dup
+00031:  18  callprop "getVisibleSize"
+00036:  18  swap
+00037:  18  notearg
+00038:  18  call 0
+00041:  18  setlocal 0
+00044:  18  pop
+00045:  21  name "xs"
+00050:  21  getprop "Tools"
+00055:  21  getprop "UI"
+00060:  21  dup
+00061:  21  callprop "addCommonBg"
+00066:  21  swap
+00067:  21  notearg
+00068:  21  this
+00069:  21  notearg
+00070:  21  true
+00071:  21  notearg
+00072:  21  true
+00073:  21  notearg
+00074:  21  call 3
+00077:  21  pop
+00078:  24  name "xs"
+00083:  24  getprop "Views"
+00088:  24  getprop "PlayerInfoBannerSimpleView"
+00093:  24  dup
+00094:  24  callprop "create"
+00099:  24  swap
+00100:  24  notearg
+00101:  24  call 0
+00104:  24  setlocal 1
+00107:  24  pop
+00108:  25  getlocal 1
+00111:  25  dup
+00112:  25  callprop "setAnchorPoint"
+00117:  25  swap
+00118:  25  notearg
+00119:  25  name "cc"
+00124:  25  dup
+00125:  25  callprop "p"
+00130:  25  swap
+00131:  25  notearg
+00132:  25  zero
+00133:  25  notearg
+00134:  25  one
+00135:  25  notearg
+00136:  25  call 2
+00139:  25  notearg
+00140:  25  call 1
+00143:  25  pop
+00144:  26  name "xs"
+00149:  26  getprop "Utils"
+00154:  26  getprop "Node"
+00159:  26  dup
+00160:  26  callprop "attachNodes"
+00165:  26  swap
+00166:  26  notearg
+00167:  26  this
+00168:  26  notearg
+00169:  26  getlocal 1
+00172:  26  notearg
+00173:  26  newinit 1
+00178:  26  string "lt"
+00183:  26  initprop "desc"
+00188:  26  true
+00189:  26  initprop "sc"
+00194:  26  endinit
+00195:  26  notearg
+00196:  26  call 3
+00199:  26  pop
+00200:  29  this
+00201:  29  name "xs"
+00206:  29  getprop "Views"
+00211:  29  getprop "TablePage"
+00216:  29  dup
+00217:  29  callprop "create"
+00222:  29  swap
+00223:  29  notearg
+00224:  29  name "cc"
+00229:  29  dup
+00230:  29  callprop "size"
+00235:  29  swap
+00236:  29  notearg
+00237:  29  getlocal 0
+00240:  29  getprop "width"
+00245:  29  name "xs"
+00250:  29  getprop "Views"
+00255:  29  getprop "MainMenuView"
+00260:  29  getprop "Width"
+00265:  29  sub
+00266:  29  notearg
+00267:  30  getlocal 0
+00270:  30  getprop "height"
+00275:  30  int8 50
+00277:  30  sub
+00278:  30  notearg
+00279:  30  call 2
+00282:  30  notearg
+00283:  30  call 1
+00286:  30  setprop "pageView"
+00291:  30  pop
+00292:  31  this
+00293:  31  getprop "pageView"
+00298:  31  dup
+00299:  31  callprop "addPageWhitConstruct"
+00304:  31  swap
+00305:  31  notearg
+00306:  31  name "xs"
+00311:  31  getprop "Tools"
+00316:  31  getprop "String"
+00321:  31  dup
+00322:  31  callprop "createString"
+00327:  31  swap
+00328:  31  notearg
+00329:  31  string "auto_name_117"
+00334:  31  notearg
+00335:  31  call 1
+00338:  31  notearg
+00339:  31  name "xs"
+00344:  31  getprop "Views"
+00349:  31  getprop "SocialView"
+00354:  31  notearg
+00355:  32  newinit 1
+00360:  32  name "xs"
+00365:  32  getprop "Views"
+00370:  32  getprop "SocialView_Type_Friends"
+00375:  32  initprop "param"
+00380:  32  endinit
+00381:  32  notearg
+00382:  32  call 3
+00385:  32  pop
+00386:  33  this
+00387:  33  getprop "pageView"
+00392:  33  dup
+00393:  33  callprop "addPageWhitConstruct"
+00398:  33  swap
+00399:  33  notearg
+00400:  33  name "xs"
+00405:  33  getprop "Tools"
+00410:  33  getprop "String"
+00415:  33  dup
+00416:  33  callprop "createString"
+00421:  33  swap
+00422:  33  notearg
+00423:  33  string "auto_name_200"
+00428:  33  notearg
+00429:  33  call 1
+00432:  33  notearg
+00433:  33  name "xs"
+00438:  33  getprop "Views"
+00443:  33  getprop "SocialView"
+00448:  33  notearg
+00449:  34  newinit 1
+00454:  34  name "xs"
+00459:  34  getprop "Views"
+00464:  34  getprop "SocialView_Type_Foe"
+00469:  34  initprop "param"
+00474:  34  endinit
+00475:  34  notearg
+00476:  34  call 3
+00479:  34  pop
+00480:  35  this
+00481:  35  getprop "pageView"
+00486:  35  dup
+00487:  35  callprop "addPageWhitConstruct"
+00492:  35  swap
+00493:  35  notearg
+00494:  35  name "xs"
+00499:  35  getprop "Tools"
+00504:  35  getprop "String"
+00509:  35  dup
+00510:  35  callprop "createString"
+00515:  35  swap
+00516:  35  notearg
+00517:  35  string "auto_name_199"
+00522:  35  notearg
+00523:  35  call 1
+00526:  35  notearg
+00527:  35  name "xs"
+00532:  35  getprop "Views"
+00537:  35  getprop "SocialView"
+00542:  35  notearg
+00543:  36  newinit 1
+00548:  36  name "xs"
+00553:  36  getprop "Views"
+00558:  36  getprop "SocialView_Type_QuasiFriends"
+00563:  36  initprop "param"
+00568:  36  endinit
+00569:  36  notearg
+00570:  36  call 3
+00573:  36  pop
+00574:  37  this
+00575:  37  getprop "pageView"
+00580:  37  dup
+00581:  37  callprop "setListener"
+00586:  37  swap
+00587:  37  notearg
+00588:  37  this
+00589:  37  notearg
+00590:  37  call 1
+00593:  37  pop
+00594:  39  name "xs"
+00599:  39  getprop "Utils"
+00604:  39  getprop "Node"
+00609:  39  dup
+00610:  39  callprop "attachNodes"
+00615:  39  swap
+00616:  39  notearg
+00617:  39  this
+00618:  39  notearg
+00619:  39  this
+00620:  39  getprop "pageView"
+00625:  39  notearg
+00626:  39  newinit 1
+00631:  39  string "lb"
+00636:  39  initprop "desc"
+00641:  39  true
+00642:  39  initprop "sc"
+00647:  39  endinit
+00648:  39  notearg
+00649:  39  call 3
+00652:  39  pop
+00653:  43  name "xs"
+00658:  43  getprop "Tools"
+00663:  43  getprop "UI"
+00668:  43  dup
+00669:  43  callprop "addShortcutBoard"
+00674:  43  swap
+00675:  43  notearg
+00676:  43  this
+00677:  43  notearg
+00678:  43  true
+00679:  43  notearg
+00680:  43  call 2
+00683:  43  setlocal 2
+00686:  43  pop
+00687:  45  true
+00688:  45  return
+00689:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialScene.js:13 ---
+;; function object[2] create
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialScene.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  name "xs"
+00005:  50  getprop "Scene"
+00010:  50  getprop "SocialScene"
+00015:  50  undefined
+00016:  50  notearg
+00017:  50  new 0
+00020:  50  setlocal 0
+00023:  50  pop
+00024:  51  getlocal 0
+00027:  51  and 47 (+20)
+00032:  51  pop
+00033:  51  getlocal 0
+00036:  51  dup
+00037:  51  callprop "init"
+00042:  51  swap
+00043:  51  notearg
+00044:  51  call 0
+00047:  51  ifeq 56 (+9)
+00052:  52  getlocal 0
+00055:  52  return
+00056:  54  name "xs"
+00061:  54  dup
+00062:  54  callprop "warn"
+00067:  54  swap
+00068:  54  notearg
+00069:  54  string "xs.Scene.SocialScene"
+00074:  54  notearg
+00075:  54  string "create fail!"
+00080:  54  notearg
+00081:  54  call 2
+00084:  54  pop
+00085:  55  null
+00086:  55  return
+00087:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialScene.js:49 ---

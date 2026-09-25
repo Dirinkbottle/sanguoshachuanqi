@@ -1,0 +1,318 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Prototype/Array.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=19 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=77 object[2]
+;; FUNCTION-MAP kind=lambda offset=106 object[3]
+;; FUNCTION-MAP kind=lambda offset=135 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   1  name "Array"
+00005:   1  dup
+00006:   1  callprop "method"
+00011:   1  swap
+00012:   1  notearg
+00013:   1  string "hasItemString"
+00018:   1  notearg
+00019:   1  lambda (function () {
+    [sourceless code]
+})
+00024:   1  notearg
+00025:   1  call 2
+00028:   1  popv
+00029:  12  name "Array"
+00034:  12  dup
+00035:  12  callprop "method"
+00040:  12  swap
+00041:  12  notearg
+00042:  12  string "insert"
+00047:  12  notearg
+00048:  12  lambda (function () {
+    [sourceless code]
+})
+00053:  12  notearg
+00054:  12  call 2
+00057:  12  popv
+00058:  16  name "Array"
+00063:  16  dup
+00064:  16  callprop "method"
+00069:  16  swap
+00070:  16  notearg
+00071:  16  string "hasItem"
+00076:  16  notearg
+00077:  16  lambda (function () {
+    [sourceless code]
+})
+00082:  16  notearg
+00083:  16  call 2
+00086:  16  popv
+00087:  27  name "Array"
+00092:  27  dup
+00093:  27  callprop "method"
+00098:  27  swap
+00099:  27  notearg
+00100:  27  string "removeEmptys"
+00105:  27  notearg
+00106:  27  lambda (function () {
+    [sourceless code]
+})
+00111:  27  notearg
+00112:  27  call 2
+00115:  27  popv
+00116:  42  name "Array"
+00121:  42  dup
+00122:  42  callprop "method"
+00127:  42  swap
+00128:  42  notearg
+00129:  42  string "inArray"
+00134:  42  notearg
+00135:  42  lambda (function () {
+    [sourceless code]
+})
+00140:  42  notearg
+00141:  42  call 2
+00144:  42  popv
+00145:  57  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:1 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   3  zero
+00001:   3  setlocal 0
+00004:   3  pop
+00005:   3  goto 60 (+55)
+00010:   4  loophead
+00011:   4  name "xs"
+00016:   4  getprop "Utils"
+00021:   4  dup
+00022:   4  callprop "isString"
+00027:   4  swap
+00028:   4  notearg
+00029:   4  this
+00030:   4  getlocal 0
+00033:   4  getelem
+00034:   4  notearg
+00035:   4  call 1
+00038:   4  ifeq 45 (+7)
+00043:   5  true
+00044:   5  return
+00045:   3  localinc 11
+00048:   3  getlocal 0
+00051:   3  pos
+00052:   3  dup
+00053:   3  one
+00054:   3  add
+00055:   3  setlocal 0
+00058:   3  pop
+00059:   3  pop
+00060:   3  loopentry
+00061:   3  getlocal 0
+00064:   3  this
+00065:   3  length "length"
+00070:   3  lt
+00071:   3  ifne 10 (-61)
+00076:   8  false
+00077:   8  return
+00078:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:1 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=2 bindings=2
+;; arg[0] index
+;; arg[1] item
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "splice"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  getarg 0
+00012:  13  notearg
+00013:  13  zero
+00014:  13  notearg
+00015:  13  getarg 1
+00018:  13  notearg
+00019:  13  call 3
+00022:  13  pop
+00023:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:12 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=1 bindings=2
+;; arg[0] input
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  zero
+00001:  18  setlocal 0
+00004:  18  pop
+00005:  18  goto 42 (+37)
+00010:  19  loophead
+00011:  19  this
+00012:  19  getlocal 0
+00015:  19  getelem
+00016:  19  getarg 0
+00019:  19  stricteq
+00020:  19  ifeq 27 (+7)
+00025:  20  true
+00026:  20  return
+00027:  18  localinc 11
+00030:  18  getlocal 0
+00033:  18  pos
+00034:  18  dup
+00035:  18  one
+00036:  18  add
+00037:  18  setlocal 0
+00040:  18  pop
+00041:  18  pop
+00042:  18  loopentry
+00043:  18  getlocal 0
+00046:  18  this
+00047:  18  length "length"
+00052:  18  lt
+00053:  18  ifne 10 (-43)
+00058:  23  false
+00059:  23  return
+00060:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:16 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=0 bindings=2
+;; local[0] _ret
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  newarray 0
+00004:  30  endinit
+00005:  30  setlocal 0
+00008:  30  pop
+00009:  32  zero
+00010:  32  setlocal 1
+00013:  32  pop
+00014:  32  goto 85 (+71)
+00019:  33  loophead
+00020:  33  this
+00021:  33  getlocal 1
+00024:  33  getelem
+00025:  33  null
+00026:  33  strictne
+00027:  33  and 44 (+17)
+00032:  33  pop
+00033:  33  this
+00034:  33  getlocal 1
+00037:  33  getelem
+00038:  33  name "undefined"
+00043:  33  strictne
+00044:  33  ifeq 70 (+26)
+00049:  34  getlocal 0
+00052:  34  dup
+00053:  34  callprop "push"
+00058:  34  swap
+00059:  34  notearg
+00060:  34  this
+00061:  34  getlocal 1
+00064:  34  getelem
+00065:  34  notearg
+00066:  34  call 1
+00069:  34  pop
+00070:  32  localinc 11
+00073:  32  getlocal 1
+00076:  32  pos
+00077:  32  dup
+00078:  32  one
+00079:  32  add
+00080:  32  setlocal 1
+00083:  32  pop
+00084:  32  pop
+00085:  32  loopentry
+00086:  32  getlocal 1
+00089:  32  this
+00090:  32  length "length"
+00095:  32  lt
+00096:  32  ifne 19 (-77)
+00101:  38  getlocal 0
+00104:  38  return
+00105:  38  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:27 ---
+;; function object[4] <anonymous>
+;; function metadata object[4] nargs=2 bindings=3
+;; arg[0] val
+;; arg[1] type
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:42 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  getarg 1
+00003:  44  or 10 (+7)
+00008:  44  pop
+00009:  44  false
+00010:  44  setarg 1
+00013:  44  pop
+00014:  45  zero
+00015:  45  setlocal 0
+00018:  45  pop
+00019:  45  goto 85 (+66)
+00024:  46  loophead
+00025:  46  getarg 1
+00028:  46  ifeq 54 (+26)
+00033:  47  getarg 0
+00036:  47  this
+00037:  47  getlocal 0
+00040:  47  getelem
+00041:  47  stricteq
+00042:  47  ifeq 49 (+7)
+00047:  48  true
+00048:  48  return
+00049:  48  goto 70 (+21)
+00054:  51  getarg 0
+00057:  51  this
+00058:  51  getlocal 0
+00061:  51  getelem
+00062:  51  eq
+00063:  51  ifeq 70 (+7)
+00068:  52  true
+00069:  52  return
+00070:  45  localinc 11
+00073:  45  getlocal 0
+00076:  45  pos
+00077:  45  dup
+00078:  45  one
+00079:  45  add
+00080:  45  setlocal 0
+00083:  45  pop
+00084:  45  pop
+00085:  45  loopentry
+00086:  45  getlocal 0
+00089:  45  this
+00090:  45  length "length"
+00095:  45  lt
+00096:  45  ifne 24 (-72)
+00101:  56  false
+00102:  56  return
+00103:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/Array.js:42 ---

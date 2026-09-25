@@ -1,0 +1,1467 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/Fate.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=89 object[0]
+;; FUNCTION-MAP kind=lambda offset=99 object[1]
+;; FUNCTION-MAP kind=lambda offset=109 object[2]
+;; FUNCTION-MAP kind=lambda offset=119 object[3]
+;; FUNCTION-MAP kind=lambda offset=129 object[4]
+;; FUNCTION-MAP kind=lambda offset=139 object[5]
+;; FUNCTION-MAP kind=lambda offset=149 object[6]
+;; FUNCTION-MAP kind=lambda offset=159 object[7]
+;; FUNCTION-MAP kind=lambda offset=169 object[8]
+;; FUNCTION-MAP kind=lambda offset=179 object[9]
+;; FUNCTION-MAP kind=lambda offset=189 object[10]
+;; FUNCTION-MAP kind=lambda offset=199 object[11]
+;; FUNCTION-MAP kind=lambda offset=209 object[12]
+;; FUNCTION-MAP kind=lambda offset=219 object[13]
+;; FUNCTION-MAP kind=lambda offset=229 object[14]
+;; FUNCTION-MAP kind=lambda offset=270 object[15]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Profile"
+00010:   9  getprop "GameData"
+00015:   9  name "xs"
+00020:   9  getprop "Profile"
+00025:   9  getprop "GameData"
+00030:   9  getprop "Base"
+00035:   9  dup
+00036:   9  callprop "extend"
+00041:   9  swap
+00042:   9  notearg
+00043:   9  newinit 1
+00048:  11  newinit 1
+00053:  11  endinit
+00054:  11  initprop "fateInfo"
+00059:  13  string "xs.Profile.GameData.Fate"
+00064:  13  initprop "name"
+00069:  16  name "xs"
+00074:  16  getprop "Debug"
+00079:  16  getprop "emptyFunc"
+00084:  16  initprop "dump"
+00089:  18  lambda (function () {
+    [sourceless code]
+})
+00094:  18  initprop "init"
+00099:  30  lambda (function () {
+    [sourceless code]
+})
+00104:  30  initprop "getEquipmentFateByTypeAndId"
+00109:  35  lambda (function () {
+    [sourceless code]
+})
+00114:  35  initprop "getSkillFateByTypeAndId"
+00119:  40  lambda (function () {
+    [sourceless code]
+})
+00124:  40  initprop "_clearFateByTypeAndId"
+00129:  49  lambda (function () {
+    [sourceless code]
+})
+00134:  49  initprop "_clearLightedInGeneral"
+00139:  58  lambda (function () {
+    [sourceless code]
+})
+00144:  58  initprop "_getFateByTypeAndId"
+00149:  91  lambda (function () {
+    [sourceless code]
+})
+00154:  91  initprop "getById"
+00159: 101  lambda (function () {
+    [sourceless code]
+})
+00164: 101  initprop "_getFateBelongsGeneralId"
+00169: 115  lambda (function () {
+    [sourceless code]
+})
+00174: 115  initprop "getAttrPer"
+00179: 125  lambda (function () {
+    [sourceless code]
+})
+00184: 125  initprop "getEffectPer"
+00189: 163  lambda (function () {
+    [sourceless code]
+})
+00194: 163  initprop "_countStepNum"
+00199: 225  lambda (function () {
+    [sourceless code]
+})
+00204: 225  initprop "isLightedInGeneral"
+00209: 269  lambda (function () {
+    [sourceless code]
+})
+00214: 269  initprop "isHasFateWithEquId"
+00219: 274  lambda (function () {
+    [sourceless code]
+})
+00224: 274  initprop "isHasFateWithSkillId"
+00229: 279  lambda (function () {
+    [sourceless code]
+})
+00234: 279  initprop "isHasFateWithGeneralId"
+00239: 279  endinit
+00240: 279  notearg
+00241: 279  call 1
+00244: 279  setprop "Fate"
+00249: 279  popv
+00250: 287  name "xs"
+00255: 287  getprop "Profile"
+00260: 287  getprop "GameData"
+00265: 287  getprop "Fate"
+00270: 287  lambda (function () {
+    [sourceless code]
+})
+00275: 287  setprop "create"
+00280: 287  popv
+00281: 303  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:18 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  this
+00001:  19  dup
+00002:  19  callprop "_super"
+00007:  19  swap
+00008:  19  notearg
+00009:  19  getarg 0
+00012:  19  notearg
+00013:  19  call 1
+00016:  19  pop
+00017:  21  name "xs"
+00022:  21  getprop "Utils"
+00027:  21  getprop "Notify"
+00032:  21  dup
+00033:  21  callprop "addObserver"
+00038:  21  swap
+00039:  21  notearg
+00040:  21  this
+00041:  21  notearg
+00042:  21  this
+00043:  21  getprop "_clearFateByTypeAndId"
+00048:  21  notearg
+00049:  21  name "xs"
+00054:  21  getprop "Constant_Notify_Generals_Change"
+00059:  21  notearg
+00060:  21  call 3
+00063:  21  pop
+00064:  22  name "xs"
+00069:  22  getprop "Utils"
+00074:  22  getprop "Notify"
+00079:  22  dup
+00080:  22  callprop "addObserver"
+00085:  22  swap
+00086:  22  notearg
+00087:  22  this
+00088:  22  notearg
+00089:  22  this
+00090:  22  getprop "_clearFateByTypeAndId"
+00095:  22  notearg
+00096:  22  name "xs"
+00101:  22  getprop "Constant_Notify_Team_Change"
+00106:  22  notearg
+00107:  22  call 3
+00110:  22  pop
+00111:  23  name "xs"
+00116:  23  getprop "Utils"
+00121:  23  getprop "Notify"
+00126:  23  dup
+00127:  23  callprop "addObserver"
+00132:  23  swap
+00133:  23  notearg
+00134:  23  this
+00135:  23  notearg
+00136:  23  this
+00137:  23  getprop "_clearFateByTypeAndId"
+00142:  23  notearg
+00143:  23  name "xs"
+00148:  23  getprop "Constant_Notify_Buddy_Change"
+00153:  23  notearg
+00154:  23  call 3
+00157:  23  pop
+00158:  24  name "xs"
+00163:  24  getprop "Utils"
+00168:  24  getprop "Notify"
+00173:  24  dup
+00174:  24  callprop "addObserver"
+00179:  24  swap
+00180:  24  notearg
+00181:  24  this
+00182:  24  notearg
+00183:  24  this
+00184:  24  getprop "_clearFateByTypeAndId"
+00189:  24  notearg
+00190:  24  name "xs"
+00195:  24  getprop "Constant_Notify_Equipmen_Change"
+00200:  24  notearg
+00201:  24  call 3
+00204:  24  pop
+00205:  25  name "xs"
+00210:  25  getprop "Utils"
+00215:  25  getprop "Notify"
+00220:  25  dup
+00221:  25  callprop "addObserver"
+00226:  25  swap
+00227:  25  notearg
+00228:  25  this
+00229:  25  notearg
+00230:  25  this
+00231:  25  getprop "_clearFateByTypeAndId"
+00236:  25  notearg
+00237:  25  name "xs"
+00242:  25  getprop "Constant_Notify_Skill_Change"
+00247:  25  notearg
+00248:  25  call 3
+00251:  25  pop
+00252:  26  true
+00253:  26  return
+00254:  26  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:18 ---
+;; function object[1] getEquipmentFateByTypeAndId
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] equipment_id
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  this
+00001:  31  dup
+00002:  31  callprop "_getFateByTypeAndId"
+00007:  31  swap
+00008:  31  notearg
+00009:  31  name "xs"
+00014:  31  getprop "Models"
+00019:  31  getprop "Fate_Type_Equipment"
+00024:  31  notearg
+00025:  31  getarg 0
+00028:  31  notearg
+00029:  31  call 2
+00032:  31  return
+00033:  31  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:30 ---
+;; function object[2] getSkillFateByTypeAndId
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] skill_id
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:35 ---
+loc   line  op
+----- ----  --
+main:
+00000:  36  this
+00001:  36  dup
+00002:  36  callprop "_getFateByTypeAndId"
+00007:  36  swap
+00008:  36  notearg
+00009:  36  name "xs"
+00014:  36  getprop "Models"
+00019:  36  getprop "Fate_Type_Skill"
+00024:  36  notearg
+00025:  36  getarg 0
+00028:  36  notearg
+00029:  36  call 2
+00032:  36  return
+00033:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:35 ---
+;; function object[3] _clearFateByTypeAndId
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:40 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  name "xs"
+00005:  41  dup
+00006:  41  callprop "log_hsq"
+00011:  41  swap
+00012:  41  notearg
+00013:  41  string "_clearFateByTypeAndId"
+00018:  41  notearg
+00019:  41  call 1
+00022:  41  pop
+00023:  42  this
+00024:  42  getprop "_cache_in_func"
+00029:  42  getprop "_getFateByTypeAndId"
+00034:  42  ifeq 52 (+18)
+00039:  43  this
+00040:  43  getprop "_cache_in_func"
+00045:  43  null
+00046:  43  setprop "_getFateByTypeAndId"
+00051:  43  pop
+00052:  45  this
+00053:  45  dup
+00054:  45  callprop "_clearLightedInGeneral"
+00059:  45  swap
+00060:  45  notearg
+00061:  45  call 0
+00064:  45  pop
+00065:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:40 ---
+;; function object[4] _clearLightedInGeneral
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  name "xs"
+00005:  50  dup
+00006:  50  callprop "log_hsq"
+00011:  50  swap
+00012:  50  notearg
+00013:  50  string "_clearLightedInGeneral"
+00018:  50  notearg
+00019:  50  call 1
+00022:  50  pop
+00023:  52  this
+00024:  52  getprop "_cache_in_func"
+00029:  52  getprop "isLightedInGeneral"
+00034:  52  ifeq 52 (+18)
+00039:  53  this
+00040:  53  getprop "_cache_in_func"
+00045:  53  null
+00046:  53  setprop "isLightedInGeneral"
+00051:  53  pop
+00052:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:49 ---
+;; function object[5] _getFateByTypeAndId
+;; function metadata object[5] nargs=2 bindings=11
+;; arg[0] fate_type
+;; arg[1] skill_id
+;; local[0] _cache_key_0
+;; local[1] _cache_key_1
+;; local[2] _rs
+;; local[3] _cfg_fate_all
+;; local[4] fate_id
+;; local[5] _obj
+;; local[6] _arr_general
+;; local[7] i
+;; local[8] _obj_general
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=156 length=274 stackDepth=1 target=430
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  60  getarg 0
+00003:  60  setlocal 0
+00006:  60  pop
+00007:  61  getarg 1
+00010:  61  setlocal 1
+00013:  61  pop
+00014:  62  this
+00015:  62  dup
+00016:  62  callprop "_isCacheHint"
+00021:  62  swap
+00022:  62  notearg
+00023:  62  string "_getFateByTypeAndId"
+00028:  62  notearg
+00029:  62  newarray 2
+00033:  62  getlocal 0
+00036:  62  initelem_array 0
+00040:  62  getlocal 1
+00043:  62  initelem_array 1
+00047:  62  endinit
+00048:  62  notearg
+00049:  62  call 2
+00052:  62  ifeq 96 (+44)
+00057:  63  this
+00058:  63  dup
+00059:  63  callprop "_getCacheData"
+00064:  63  swap
+00065:  63  notearg
+00066:  63  string "_getFateByTypeAndId"
+00071:  63  notearg
+00072:  63  newarray 2
+00076:  63  getlocal 0
+00079:  63  initelem_array 0
+00083:  63  getlocal 1
+00086:  63  initelem_array 1
+00090:  63  endinit
+00091:  63  notearg
+00092:  63  call 2
+00095:  63  return
+00096:  66  newarray 0
+00100:  66  endinit
+00101:  66  setlocal 2
+00104:  66  pop
+00105:  67  name "xs"
+00110:  67  getprop "Tools"
+00115:  67  getprop "CfgData"
+00120:  67  dup
+00121:  67  callprop "readRecordByType"
+00126:  67  swap
+00127:  67  notearg
+00128:  67  name "xs"
+00133:  67  getprop "Constant_CfgDataType_Fate"
+00138:  67  notearg
+00139:  67  call 1
+00142:  67  setlocal 3
+00145:  67  pop
+00146:  70  getlocal 3
+00149:  70  iter 1
+00151:  70  goto 423 (+272)
+00156:  70  loophead
+00157:  70  iternext
+00158:  70  setlocal 4
+00161:  70  pop
+00162:  70  getlocal 3
+00165:  70  dup
+00166:  70  callprop "hasOwnProperty"
+00171:  70  swap
+00172:  70  notearg
+00173:  70  getlocal 4
+00176:  70  notearg
+00177:  70  call 1
+00180:  70  ifeq 423 (+243)
+00185:  71  this
+00186:  71  dup
+00187:  71  callprop "getById"
+00192:  71  swap
+00193:  71  notearg
+00194:  71  getlocal 4
+00197:  71  notearg
+00198:  71  call 1
+00201:  71  setlocal 5
+00204:  71  pop
+00205:  73  getlocal 5
+00208:  73  dup
+00209:  73  callprop "getType"
+00214:  73  swap
+00215:  73  notearg
+00216:  73  call 0
+00219:  73  getarg 0
+00222:  73  eq
+00223:  73  and 258 (+35)
+00228:  73  pop
+00229:  73  getlocal 5
+00232:  73  dup
+00233:  73  callprop "getFateObject"
+00238:  73  swap
+00239:  73  notearg
+00240:  73  call 0
+00243:  73  dup
+00244:  73  callprop "inArray"
+00249:  73  swap
+00250:  73  notearg
+00251:  73  getarg 1
+00254:  73  notearg
+00255:  73  call 1
+00258:  73  ifeq 423 (+165)
+00263:  75  this
+00264:  75  dup
+00265:  75  callprop "_getFateBelongsGeneralId"
+00270:  75  swap
+00271:  75  notearg
+00272:  75  getlocal 4
+00275:  75  notearg
+00276:  75  call 1
+00279:  75  setlocal 6
+00282:  75  pop
+00283:  77  this
+00284:  77  dup
+00285:  77  callprop "dump"
+00290:  77  swap
+00291:  77  notearg
+00292:  77  string "_arr_general_fate_type"
+00297:  77  getarg 0
+00300:  77  add
+00301:  77  string "_fate_id"
+00306:  77  add
+00307:  77  getlocal 4
+00310:  77  add
+00311:  77  notearg
+00312:  77  getlocal 6
+00315:  77  notearg
+00316:  77  call 2
+00319:  77  pop
+00320:  80  zero
+00321:  80  setlocal 7
+00324:  80  pop
+00325:  80  goto 405 (+80)
+00330:  81  loophead
+00331:  81  this
+00332:  81  dup
+00333:  81  callprop "_initInstance"
+00338:  81  swap
+00339:  81  notearg
+00340:  81  call 0
+00343:  81  getprop "Generals"
+00348:  81  dup
+00349:  81  callprop "getByIdAndAutoCreate"
+00354:  81  swap
+00355:  81  notearg
+00356:  81  getlocal 6
+00359:  81  getlocal 7
+00362:  81  getelem
+00363:  81  notearg
+00364:  81  call 1
+00367:  81  setlocal 8
+00370:  81  pop
+00371:  82  getlocal 2
+00374:  82  dup
+00375:  82  callprop "push"
+00380:  82  swap
+00381:  82  notearg
+00382:  82  getlocal 8
+00385:  82  notearg
+00386:  82  call 1
+00389:  82  pop
+00390:  80  localinc 11
+00393:  80  getlocal 7
+00396:  80  pos
+00397:  80  dup
+00398:  80  one
+00399:  80  add
+00400:  80  setlocal 7
+00403:  80  pop
+00404:  80  pop
+00405:  80  loopentry
+00406:  80  getlocal 7
+00409:  80  getlocal 6
+00412:  80  length "length"
+00417:  80  lt
+00418:  80  ifne 330 (-88)
+00423:  80  loopentry
+00424:  80  moreiter
+00425:  80  ifne 156 (-269)
+00430:  80  enditer
+00431:  86  this
+00432:  86  dup
+00433:  86  callprop "_setCacheData"
+00438:  86  swap
+00439:  86  notearg
+00440:  86  string "_getFateByTypeAndId"
+00445:  86  notearg
+00446:  86  newarray 2
+00450:  86  getlocal 0
+00453:  86  initelem_array 0
+00457:  86  getlocal 1
+00460:  86  initelem_array 1
+00464:  86  endinit
+00465:  86  notearg
+00466:  86  getlocal 2
+00469:  86  notearg
+00470:  86  call 3
+00473:  86  pop
+00474:  87  getlocal 2
+00477:  87  return
+00478:  87  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:58 ---
+;; function object[6] getById
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] id
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:91 ---
+loc   line  op
+----- ----  --
+main:
+00000:  92  this
+00001:  92  dup
+00002:  92  callprop "assert"
+00007:  92  swap
+00008:  92  notearg
+00009:  92  getarg 0
+00012:  92  notearg
+00013:  92  string "gamedata/Fate.js getById error"
+00018:  92  notearg
+00019:  92  call 2
+00022:  92  pop
+00023:  93  this
+00024:  93  getprop "fateInfo"
+00029:  93  getarg 0
+00032:  93  getelem
+00033:  93  name "undefined"
+00038:  93  stricteq
+00039:  93  ifeq 85 (+46)
+00044:  94  this
+00045:  94  getprop "fateInfo"
+00050:  94  getarg 0
+00053:  94  name "xs"
+00058:  94  getprop "Models"
+00063:  94  getprop "Fate"
+00068:  94  dup
+00069:  94  callprop "createWithBase"
+00074:  94  swap
+00075:  94  notearg
+00076:  94  getarg 0
+00079:  94  notearg
+00080:  94  call 1
+00083:  94  setelem
+00084:  94  pop
+00085:  97  this
+00086:  97  getprop "fateInfo"
+00091:  97  getarg 0
+00094:  97  getelem
+00095:  97  return
+00096:  97  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:91 ---
+;; function object[7] _getFateBelongsGeneralId
+;; function metadata object[7] nargs=1 bindings=4
+;; arg[0] fate_id
+;; local[0] _cfg_general_all
+;; local[1] _arr_general_id
+;; local[2] general_id
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=60 length=87 stackDepth=1 target=147
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:101 ---
+loc   line  op
+----- ----  --
+main:
+00000: 102  name "xs"
+00005: 102  getprop "Tools"
+00010: 102  getprop "CfgData"
+00015: 102  dup
+00016: 102  callprop "readRecordByType"
+00021: 102  swap
+00022: 102  notearg
+00023: 102  name "xs"
+00028: 102  getprop "Constant_CfgDataType_General"
+00033: 102  notearg
+00034: 102  call 1
+00037: 102  setlocal 0
+00040: 102  pop
+00041: 103  newarray 0
+00045: 103  endinit
+00046: 103  setlocal 1
+00049: 103  pop
+00050: 104  getlocal 0
+00053: 104  iter 1
+00055: 104  goto 140 (+85)
+00060: 104  loophead
+00061: 104  iternext
+00062: 104  setlocal 2
+00065: 104  pop
+00066: 104  getlocal 0
+00069: 104  dup
+00070: 104  callprop "hasOwnProperty"
+00075: 104  swap
+00076: 104  notearg
+00077: 104  getlocal 2
+00080: 104  notearg
+00081: 104  call 1
+00084: 104  ifeq 140 (+56)
+00089: 105  getlocal 0
+00092: 105  getlocal 2
+00095: 105  getelem
+00096: 105  getprop "general_fate_id"
+00101: 105  dup
+00102: 105  callprop "inArray"
+00107: 105  swap
+00108: 105  notearg
+00109: 105  getarg 0
+00112: 105  notearg
+00113: 105  call 1
+00116: 105  ifeq 140 (+24)
+00121: 106  getlocal 1
+00124: 106  dup
+00125: 106  callprop "push"
+00130: 106  swap
+00131: 106  notearg
+00132: 106  getlocal 2
+00135: 106  notearg
+00136: 106  call 1
+00139: 106  pop
+00140: 106  loopentry
+00141: 106  moreiter
+00142: 106  ifne 60 (-82)
+00147: 106  enditer
+00148: 110  getlocal 1
+00151: 110  return
+00152: 110  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:101 ---
+;; function object[8] getAttrPer
+;; function metadata object[8] nargs=3 bindings=3
+;; arg[0] fateModel
+;; arg[1] type
+;; arg[2] generalModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:115 ---
+loc   line  op
+----- ----  --
+main:
+00000: 116  getarg 1
+00003: 116  getarg 0
+00006: 116  dup
+00007: 116  callprop "getAdditionType"
+00012: 116  swap
+00013: 116  notearg
+00014: 116  call 0
+00017: 116  stricteq
+00018: 116  ifeq 49 (+31)
+00023: 117  this
+00024: 117  dup
+00025: 117  callprop "getEffectPer"
+00030: 117  swap
+00031: 117  notearg
+00032: 117  getarg 0
+00035: 117  notearg
+00036: 117  getarg 2
+00039: 117  notearg
+00040: 117  call 2
+00043: 117  return
+00044: 117  goto 51 (+7)
+00049: 120  zero
+00050: 120  return
+00051: 121  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:115 ---
+;; function object[9] getEffectPer
+;; function metadata object[9] nargs=2 bindings=6
+;; arg[0] fateModel
+;; arg[1] generalModel
+;; local[0] count
+;; local[1] _fate_ids
+;; local[2] _base
+;; local[3] _step
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:125 ---
+loc   line  op
+----- ----  --
+main:
+00000: 127  this
+00001: 127  dup
+00002: 127  callprop "_countStepNum"
+00007: 127  swap
+00008: 127  notearg
+00009: 127  getarg 0
+00012: 127  notearg
+00013: 127  getarg 1
+00016: 127  notearg
+00017: 127  call 2
+00020: 127  setlocal 0
+00023: 127  pop
+00024: 129  getarg 0
+00027: 129  dup
+00028: 129  callprop "getBaseDataRef"
+00033: 129  swap
+00034: 129  notearg
+00035: 129  call 0
+00038: 129  getprop "fate_object"
+00043: 129  or 54 (+11)
+00048: 129  pop
+00049: 129  newarray 0
+00053: 129  endinit
+00054: 129  setlocal 1
+00057: 129  pop
+00058: 131  getarg 0
+00061: 131  dup
+00062: 131  callprop "getLimit"
+00067: 131  swap
+00068: 131  notearg
+00069: 131  call 0
+00072: 131  condswitch
+00073: 132  name "xs"
+00078: 132  getprop "Models"
+00083: 132  getprop "Fate_Limit_Step"
+00088: 132  case 118 (+30)
+00093: 144  name "xs"
+00098: 144  getprop "Models"
+00103: 144  getprop "Fate_Limit_All"
+00108: 144  case 260 (+152)
+00113: 144  default 341 (+228)
+00118: 134  getlocal 0
+00121: 134  zero
+00122: 134  gt
+00123: 134  ifeq 253 (+130)
+00128: 135  name "xs"
+00133: 135  getprop "Utils"
+00138: 135  dup
+00139: 135  callprop "parseFloatSafe"
+00144: 135  swap
+00145: 135  notearg
+00146: 135  getarg 0
+00149: 135  dup
+00150: 135  callprop "getBaseDataRef"
+00155: 135  swap
+00156: 135  notearg
+00157: 135  call 0
+00160: 135  getprop "fate_effect"
+00165: 135  notearg
+00166: 135  call 1
+00169: 135  setlocal 2
+00172: 135  pop
+00173: 136  name "xs"
+00178: 136  getprop "Utils"
+00183: 136  dup
+00184: 136  callprop "parseFloatSafe"
+00189: 136  swap
+00190: 136  notearg
+00191: 136  getarg 0
+00194: 136  dup
+00195: 136  callprop "getBaseDataRef"
+00200: 136  swap
+00201: 136  notearg
+00202: 136  call 0
+00205: 136  getprop "fate_effect_step"
+00210: 136  notearg
+00211: 136  call 1
+00214: 136  setlocal 3
+00217: 136  pop
+00218: 137  this
+00219: 137  getlocal 2
+00222: 137  getlocal 0
+00225: 137  one
+00226: 137  sub
+00227: 137  getlocal 3
+00230: 137  mul
+00231: 137  add
+00232: 137  setprop "_effectValue"
+00237: 137  pop
+00238: 138  this
+00239: 138  getprop "_effectValue"
+00244: 138  int8 100
+00246: 138  div
+00247: 138  return
+00248: 138  goto 255 (+7)
+00253: 140  zero
+00254: 140  return
+00255: 143  goto 348 (+93)
+00260: 146  getlocal 0
+00263: 146  getlocal 1
+00266: 146  length "length"
+00271: 146  stricteq
+00272: 146  ifeq 334 (+62)
+00277: 147  name "xs"
+00282: 147  getprop "Utils"
+00287: 147  dup
+00288: 147  callprop "parseFloatSafe"
+00293: 147  swap
+00294: 147  notearg
+00295: 147  getarg 0
+00298: 147  dup
+00299: 147  callprop "getBaseDataRef"
+00304: 147  swap
+00305: 147  notearg
+00306: 147  call 0
+00309: 147  getprop "fate_effect"
+00314: 147  notearg
+00315: 147  call 1
+00318: 147  setlocal 2
+00321: 147  pop
+00322: 148  getlocal 2
+00325: 148  int8 100
+00327: 148  div
+00328: 148  return
+00329: 148  goto 336 (+7)
+00334: 150  zero
+00335: 150  return
+00336: 153  goto 348 (+12)
+00341: 156  zero
+00342: 156  return
+00343: 158  goto 348 (+5)
+00348: 159  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:125 ---
+;; function object[10] _countStepNum
+;; function metadata object[10] nargs=2 bindings=5
+;; arg[0] fateModel
+;; arg[1] generalModel
+;; local[0] count
+;; local[1] _fate_ids
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:163 ---
+loc   line  op
+----- ----  --
+main:
+00000: 165  zero
+00001: 165  setlocal 0
+00004: 165  pop
+00005: 168  this
+00006: 168  dup
+00007: 168  callprop "_initInstance"
+00012: 168  swap
+00013: 168  notearg
+00014: 168  call 0
+00017: 168  getprop "Team"
+00022: 168  dup
+00023: 168  callprop "isInTeam"
+00028: 168  swap
+00029: 168  notearg
+00030: 168  getarg 1
+00033: 168  dup
+00034: 168  callprop "getPkId"
+00039: 168  swap
+00040: 168  notearg
+00041: 168  call 0
+00044: 168  notearg
+00045: 168  call 1
+00048: 168  not
+00049: 168  and 70 (+21)
+00054: 168  pop
+00055: 169  getarg 1
+00058: 169  dup
+00059: 169  callprop "isLieutenant"
+00064: 169  swap
+00065: 169  notearg
+00066: 169  call 0
+00069: 169  not
+00070: 169  ifeq 77 (+7)
+00075: 171  zero
+00076: 171  return
+00077: 175  getarg 0
+00080: 175  dup
+00081: 175  callprop "getBaseDataRef"
+00086: 175  swap
+00087: 175  notearg
+00088: 175  call 0
+00091: 175  getprop "fate_object"
+00096: 175  or 107 (+11)
+00101: 175  pop
+00102: 175  newarray 0
+00106: 175  endinit
+00107: 175  setlocal 1
+00110: 175  pop
+00111: 177  getarg 0
+00114: 177  dup
+00115: 177  callprop "getType"
+00120: 177  swap
+00121: 177  notearg
+00122: 177  call 0
+00125: 177  condswitch
+00126: 178  name "xs"
+00131: 178  getprop "Models"
+00136: 178  getprop "Fate_Type_General"
+00141: 178  case 211 (+70)
+00146: 188  name "xs"
+00151: 188  getprop "Models"
+00156: 188  getprop "Fate_Type_Skill"
+00161: 188  case 308 (+147)
+00166: 197  name "xs"
+00171: 197  getprop "Models"
+00176: 197  getprop "Fate_Type_Equipment"
+00181: 197  case 420 (+239)
+00186: 206  name "xs"
+00191: 206  getprop "Models"
+00196: 206  getprop "Fate_Type_MTip"
+00201: 206  case 532 (+331)
+00206: 206  default 596 (+390)
+00211: 180  zero
+00212: 180  setlocal 2
+00215: 180  pop
+00216: 180  goto 285 (+69)
+00221: 182  loophead
+00222: 182  this
+00223: 182  dup
+00224: 182  callprop "_initInstance"
+00229: 182  swap
+00230: 182  notearg
+00231: 182  call 0
+00234: 182  getprop "Team"
+00239: 182  dup
+00240: 182  callprop "isInTeamOrInLieutenant_GeneralId"
+00245: 182  swap
+00246: 182  notearg
+00247: 182  getlocal 1
+00250: 182  getlocal 2
+00253: 182  getelem
+00254: 182  notearg
+00255: 182  call 1
+00258: 182  ifeq 272 (+14)
+00263: 183  getlocal 0
+00266: 183  one
+00267: 183  add
+00268: 183  setlocal 0
+00271: 183  pop
+00272: 180  inclocal 9
+00275: 180  getlocal 2
+00278: 180  pos
+00279: 180  one
+00280: 180  add
+00281: 180  setlocal 2
+00284: 180  pop
+00285: 180  loopentry
+00286: 180  getlocal 2
+00289: 180  getlocal 1
+00292: 180  length "length"
+00297: 180  lt
+00298: 180  ifne 221 (-77)
+00303: 187  goto 637 (+334)
+00308: 190  zero
+00309: 190  setlocal 2
+00312: 190  pop
+00313: 190  goto 397 (+84)
+00318: 191  loophead
+00319: 191  this
+00320: 191  dup
+00321: 191  callprop "_initInstance"
+00326: 191  swap
+00327: 191  notearg
+00328: 191  call 0
+00331: 191  getprop "Skills"
+00336: 191  dup
+00337: 191  callprop "isGeneralPkIdEquipedSkillId"
+00342: 191  swap
+00343: 191  notearg
+00344: 191  getarg 1
+00347: 191  dup
+00348: 191  callprop "getPkId"
+00353: 191  swap
+00354: 191  notearg
+00355: 191  call 0
+00358: 191  notearg
+00359: 191  getlocal 1
+00362: 191  getlocal 2
+00365: 191  getelem
+00366: 191  notearg
+00367: 191  call 2
+00370: 191  ifeq 384 (+14)
+00375: 192  getlocal 0
+00378: 192  one
+00379: 192  add
+00380: 192  setlocal 0
+00383: 192  pop
+00384: 190  inclocal 9
+00387: 190  getlocal 2
+00390: 190  pos
+00391: 190  one
+00392: 190  add
+00393: 190  setlocal 2
+00396: 190  pop
+00397: 190  loopentry
+00398: 190  getlocal 2
+00401: 190  getlocal 1
+00404: 190  length "length"
+00409: 190  lt
+00410: 190  ifne 318 (-92)
+00415: 196  goto 637 (+222)
+00420: 199  zero
+00421: 199  setlocal 2
+00424: 199  pop
+00425: 199  goto 509 (+84)
+00430: 200  loophead
+00431: 200  this
+00432: 200  dup
+00433: 200  callprop "_initInstance"
+00438: 200  swap
+00439: 200  notearg
+00440: 200  call 0
+00443: 200  getprop "Equipments"
+00448: 200  dup
+00449: 200  callprop "isGeneralPkIdEquipedEquipmentId"
+00454: 200  swap
+00455: 200  notearg
+00456: 200  getarg 1
+00459: 200  dup
+00460: 200  callprop "getPkId"
+00465: 200  swap
+00466: 200  notearg
+00467: 200  call 0
+00470: 200  notearg
+00471: 200  getlocal 1
+00474: 200  getlocal 2
+00477: 200  getelem
+00478: 200  notearg
+00479: 200  call 2
+00482: 200  ifeq 496 (+14)
+00487: 201  getlocal 0
+00490: 201  one
+00491: 201  add
+00492: 201  setlocal 0
+00495: 201  pop
+00496: 199  inclocal 9
+00499: 199  getlocal 2
+00502: 199  pos
+00503: 199  one
+00504: 199  add
+00505: 199  setlocal 2
+00508: 199  pop
+00509: 199  loopentry
+00510: 199  getlocal 2
+00513: 199  getlocal 1
+00516: 199  length "length"
+00521: 199  lt
+00522: 199  ifne 430 (-92)
+00527: 205  goto 637 (+110)
+00532: 208  name "xs"
+00537: 208  dup
+00538: 208  callprop "warn"
+00543: 208  swap
+00544: 208  notearg
+00545: 208  string "Fate_Type_MTip"
+00550: 208  notearg
+00551: 208  string "not support yet,Fate_Type_MTip"
+00556: 208  getarg 0
+00559: 208  dup
+00560: 208  callprop "getId"
+00565: 208  swap
+00566: 208  notearg
+00567: 208  call 0
+00570: 208  add
+00571: 208  getarg 0
+00574: 208  dup
+00575: 208  callprop "getType"
+00580: 208  swap
+00581: 208  notearg
+00582: 208  call 0
+00585: 208  add
+00586: 208  notearg
+00587: 208  call 2
+00590: 208  pop
+00591: 210  goto 637 (+46)
+00596: 213  this
+00597: 213  dup
+00598: 213  callprop "error"
+00603: 213  swap
+00604: 213  notearg
+00605: 213  string "fate this.getType()"
+00610: 213  notearg
+00611: 213  getarg 0
+00614: 213  dup
+00615: 213  callprop "getType"
+00620: 213  swap
+00621: 213  notearg
+00622: 213  call 0
+00625: 213  notearg
+00626: 213  call 2
+00629: 213  pop
+00630: 214  zero
+00631: 214  return
+00632: 216  goto 637 (+5)
+00637: 219  getlocal 0
+00640: 219  return
+00641: 219  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:163 ---
+;; function object[11] isLightedInGeneral
+;; function metadata object[11] nargs=2 bindings=7
+;; arg[0] fateModel
+;; arg[1] generalModel
+;; local[0] _cache_key_0
+;; local[1] _cache_key_1
+;; local[2] count
+;; local[3] _fate_ids
+;; local[4] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:225 ---
+loc   line  op
+----- ----  --
+main:
+00000: 227  getarg 0
+00003: 227  dup
+00004: 227  callprop "getId"
+00009: 227  swap
+00010: 227  notearg
+00011: 227  call 0
+00014: 227  setlocal 0
+00017: 227  pop
+00018: 228  getarg 1
+00021: 228  dup
+00022: 228  callprop "getPkId"
+00027: 228  swap
+00028: 228  notearg
+00029: 228  call 0
+00032: 228  setlocal 1
+00035: 228  pop
+00036: 230  this
+00037: 230  dup
+00038: 230  callprop "_isCacheHint"
+00043: 230  swap
+00044: 230  notearg
+00045: 230  string "isLightedInGeneral"
+00050: 230  notearg
+00051: 230  newarray 2
+00055: 230  getlocal 0
+00058: 230  initelem_array 0
+00062: 230  getlocal 1
+00065: 230  initelem_array 1
+00069: 230  endinit
+00070: 230  notearg
+00071: 230  call 2
+00074: 230  ifeq 118 (+44)
+00079: 231  this
+00080: 231  dup
+00081: 231  callprop "_getCacheData"
+00086: 231  swap
+00087: 231  notearg
+00088: 231  string "isLightedInGeneral"
+00093: 231  notearg
+00094: 231  newarray 2
+00098: 231  getlocal 0
+00101: 231  initelem_array 0
+00105: 231  getlocal 1
+00108: 231  initelem_array 1
+00112: 231  endinit
+00113: 231  notearg
+00114: 231  call 2
+00117: 231  return
+00118: 234  this
+00119: 234  dup
+00120: 234  callprop "_countStepNum"
+00125: 234  swap
+00126: 234  notearg
+00127: 234  getarg 0
+00130: 234  notearg
+00131: 234  getarg 1
+00134: 234  notearg
+00135: 234  call 2
+00138: 234  setlocal 2
+00141: 234  pop
+00142: 236  getarg 0
+00145: 236  dup
+00146: 236  callprop "getBaseDataRef"
+00151: 236  swap
+00152: 236  notearg
+00153: 236  call 0
+00156: 236  getprop "fate_object"
+00161: 236  or 172 (+11)
+00166: 236  pop
+00167: 236  newarray 0
+00171: 236  endinit
+00172: 236  setlocal 3
+00175: 236  pop
+00176: 238  false
+00177: 238  setlocal 4
+00180: 238  pop
+00181: 239  getarg 0
+00184: 239  dup
+00185: 239  callprop "getLimit"
+00190: 239  swap
+00191: 239  notearg
+00192: 239  call 0
+00195: 239  condswitch
+00196: 240  name "xs"
+00201: 240  getprop "Models"
+00206: 240  getprop "Fate_Limit_Step"
+00211: 240  case 241 (+30)
+00216: 247  name "xs"
+00221: 247  getprop "Models"
+00226: 247  getprop "Fate_Limit_All"
+00231: 247  case 261 (+30)
+00236: 247  default 288 (+52)
+00241: 242  getlocal 2
+00244: 242  zero
+00245: 242  gt
+00246: 242  ifeq 256 (+10)
+00251: 243  true
+00252: 243  setlocal 4
+00255: 243  pop
+00256: 246  goto 293 (+37)
+00261: 249  getlocal 2
+00264: 249  getlocal 3
+00267: 249  length "length"
+00272: 249  stricteq
+00273: 249  ifeq 283 (+10)
+00278: 250  true
+00279: 250  setlocal 4
+00282: 250  pop
+00283: 253  goto 293 (+10)
+00288: 255  goto 293 (+5)
+00293: 258  this
+00294: 258  dup
+00295: 258  callprop "_setCacheData"
+00300: 258  swap
+00301: 258  notearg
+00302: 258  string "isLightedInGeneral"
+00307: 258  notearg
+00308: 259  newarray 2
+00312: 260  getarg 0
+00315: 260  dup
+00316: 260  callprop "getId"
+00321: 260  swap
+00322: 260  notearg
+00323: 260  call 0
+00326: 260  initelem_array 0
+00330: 260  getarg 1
+00333: 260  dup
+00334: 260  callprop "getPkId"
+00339: 260  swap
+00340: 260  notearg
+00341: 260  call 0
+00344: 260  initelem_array 1
+00348: 260  endinit
+00349: 260  notearg
+00350: 262  getlocal 4
+00353: 262  notearg
+00354: 262  call 3
+00357: 262  pop
+00358: 264  getlocal 4
+00361: 264  return
+00362: 264  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:225 ---
+;; function object[12] isHasFateWithEquId
+;; function metadata object[12] nargs=2 bindings=2
+;; arg[0] generalModel
+;; arg[1] equModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:269 ---
+loc   line  op
+----- ----  --
+main:
+00000: 270  getarg 0
+00003: 270  dup
+00004: 270  callprop "isFateConnectWithEquipmentId"
+00009: 270  swap
+00010: 270  notearg
+00011: 270  getarg 1
+00014: 270  dup
+00015: 270  callprop "getId"
+00020: 270  swap
+00021: 270  notearg
+00022: 270  call 0
+00025: 270  notearg
+00026: 270  call 1
+00029: 270  return
+00030: 270  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:269 ---
+;; function object[13] isHasFateWithSkillId
+;; function metadata object[13] nargs=2 bindings=2
+;; arg[0] generalModel
+;; arg[1] skillModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:274 ---
+loc   line  op
+----- ----  --
+main:
+00000: 275  getarg 0
+00003: 275  dup
+00004: 275  callprop "isFateConnectWithSkillId"
+00009: 275  swap
+00010: 275  notearg
+00011: 275  getarg 1
+00014: 275  dup
+00015: 275  callprop "getId"
+00020: 275  swap
+00021: 275  notearg
+00022: 275  call 0
+00025: 275  notearg
+00026: 275  call 1
+00029: 275  return
+00030: 275  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:274 ---
+;; function object[14] isHasFateWithGeneralId
+;; function metadata object[14] nargs=2 bindings=2
+;; arg[0] generalModel
+;; arg[1] generalModelOther
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:279 ---
+loc   line  op
+----- ----  --
+main:
+00000: 280  getarg 0
+00003: 280  dup
+00004: 280  callprop "isFateConnectWithGeneralId"
+00009: 280  swap
+00010: 280  notearg
+00011: 280  getarg 1
+00014: 280  dup
+00015: 280  callprop "getId"
+00020: 280  swap
+00021: 280  notearg
+00022: 280  call 0
+00025: 280  notearg
+00026: 280  call 1
+00029: 280  return
+00030: 280  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:279 ---
+;; function object[15] create
+;; function metadata object[15] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:287 ---
+loc   line  op
+----- ----  --
+main:
+00000: 288  getarg 0
+00003: 288  getprop "play_id"
+00008: 288  setlocal 0
+00011: 288  pop
+00012: 289  name "xs"
+00017: 289  getprop "Profile"
+00022: 289  getprop "GameData"
+00027: 289  getprop "Fate"
+00032: 289  setlocal 1
+00035: 289  pop
+00036: 290  name "xs"
+00041: 290  getprop "Utils"
+00046: 290  dup
+00047: 290  callprop "isSet"
+00052: 290  swap
+00053: 290  notearg
+00054: 290  getlocal 1
+00057: 290  getprop "_instance"
+00062: 290  notearg
+00063: 290  call 1
+00066: 290  or 85 (+19)
+00071: 290  pop
+00072: 290  getlocal 1
+00075: 290  newarray 0
+00079: 290  endinit
+00080: 290  setprop "_instance"
+00085: 290  pop
+00086: 292  getlocal 1
+00089: 292  getprop "_instance"
+00094: 292  getlocal 0
+00097: 292  getelem
+00098: 292  ifeq 116 (+18)
+00103: 293  getlocal 1
+00106: 293  getprop "_instance"
+00111: 293  getlocal 0
+00114: 293  getelem
+00115: 293  return
+00116: 296  getlocal 1
+00119: 296  undefined
+00120: 296  notearg
+00121: 296  new 0
+00124: 296  setlocal 2
+00127: 296  pop
+00128: 297  getlocal 2
+00131: 297  and 155 (+24)
+00136: 297  pop
+00137: 297  getlocal 2
+00140: 297  dup
+00141: 297  callprop "init"
+00146: 297  swap
+00147: 297  notearg
+00148: 297  getarg 0
+00151: 297  notearg
+00152: 297  call 1
+00155: 297  ifeq 180 (+25)
+00160: 298  getlocal 1
+00163: 298  getprop "_instance"
+00168: 298  getlocal 0
+00171: 298  getlocal 2
+00174: 298  setelem
+00175: 298  pop
+00176: 299  getlocal 2
+00179: 299  return
+00180: 301  name "xs"
+00185: 301  dup
+00186: 301  callprop "error"
+00191: 301  swap
+00192: 301  notearg
+00193: 301  string "xs.Profile.GameData.Equipments.create failed"
+00198: 301  notearg
+00199: 301  call 1
+00202: 301  pop
+00203: 302  null
+00204: 302  return
+00205: 302  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Fate.js:287 ---

@@ -1,0 +1,251 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/AddShowList.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=89 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AddShowList.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Models"
+00010:   9  name "cc"
+00015:   9  getprop "Class"
+00020:   9  dup
+00021:   9  callprop "extend"
+00026:   9  swap
+00027:   9  notearg
+00028:   9  newinit 1
+00033:  10  lambda (function () {
+    [sourceless code]
+})
+00038:  10  initprop "init"
+00043:  15  lambda (function () {
+    [sourceless code]
+})
+00048:  15  initprop "loadJson"
+00053:  39  lambda (function () {
+    [sourceless code]
+})
+00058:  39  initprop "createItemShowList"
+00063:  39  endinit
+00064:  39  notearg
+00065:  39  call 1
+00068:  39  setprop "AddShowList"
+00073:  39  popv
+00074:  45  name "xs"
+00079:  45  getprop "Models"
+00084:  45  getprop "AddShowList"
+00089:  45  lambda (function () {
+    [sourceless code]
+})
+00094:  45  setprop "create"
+00099:  45  popv
+00100:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AddShowList.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AddShowList.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  newarray 0
+00005:  11  endinit
+00006:  11  setprop "m_data"
+00011:  11  pop
+00012:  12  this
+00013:  12  string ""
+00018:  12  setprop "show_list_type"
+00023:  12  pop
+00024:  13  true
+00025:  13  return
+00026:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AddShowList.js:10 ---
+;; function object[1] loadJson
+;; function metadata object[1] nargs=2 bindings=4
+;; arg[0] jsonData
+;; arg[1] show_list_type
+;; local[0] i
+;; local[1] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AddShowList.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  getarg 1
+00004:  17  or 25 (+21)
+00009:  17  pop
+00010:  17  name "xs"
+00015:  17  getprop "Views"
+00020:  17  getprop "ItemShowListType_Add"
+00025:  17  setprop "show_list_type"
+00030:  17  pop
+00031:  18  zero
+00032:  18  setlocal 0
+00035:  18  pop
+00036:  18  goto 117 (+81)
+00041:  22  loophead
+00042:  22  name "xs"
+00047:  22  getprop "Factorys"
+00052:  22  getprop "Add"
+00057:  22  dup
+00058:  22  callprop "createWithJson"
+00063:  22  swap
+00064:  22  notearg
+00065:  22  getarg 0
+00068:  22  getlocal 0
+00071:  22  getelem
+00072:  22  notearg
+00073:  22  call 1
+00076:  22  setlocal 1
+00079:  22  pop
+00080:  23  this
+00081:  23  getprop "m_data"
+00086:  23  dup
+00087:  23  callprop "push"
+00092:  23  swap
+00093:  23  notearg
+00094:  23  getlocal 1
+00097:  23  notearg
+00098:  23  call 1
+00101:  23  pop
+00102:  18  localinc 11
+00105:  18  getlocal 0
+00108:  18  pos
+00109:  18  dup
+00110:  18  one
+00111:  18  add
+00112:  18  setlocal 0
+00115:  18  pop
+00116:  18  pop
+00117:  18  loopentry
+00118:  18  getlocal 0
+00121:  18  getarg 0
+00124:  18  length "length"
+00129:  18  lt
+00130:  18  ifne 41 (-89)
+00135:  36  this
+00136:  36  getprop "m_data"
+00141:  36  dup
+00142:  36  callprop "sort"
+00147:  36  swap
+00148:  36  notearg
+00149:  36  name "xs"
+00154:  36  getprop "Tools"
+00159:  36  getprop "Sort"
+00164:  36  dup
+00165:  36  callprop "by"
+00170:  36  swap
+00171:  36  notearg
+00172:  36  name "xs"
+00177:  36  getprop "Constant_SortType_AddList_Default"
+00182:  36  notearg
+00183:  36  call 1
+00186:  36  notearg
+00187:  36  call 1
+00190:  36  pop
+00191:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AddShowList.js:15 ---
+;; function object[2] createItemShowList
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] node
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AddShowList.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  name "xs"
+00005:  40  getprop "Views"
+00010:  40  getprop "ItemShowList"
+00015:  40  dup
+00016:  40  callprop "create"
+00021:  40  swap
+00022:  40  notearg
+00023:  40  this
+00024:  40  getprop "m_data"
+00029:  40  notearg
+00030:  40  this
+00031:  40  getprop "show_list_type"
+00036:  40  notearg
+00037:  40  call 2
+00040:  40  setlocal 0
+00043:  40  pop
+00044:  41  getlocal 0
+00047:  41  return
+00048:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AddShowList.js:39 ---
+;; function object[3] create
+;; function metadata object[3] nargs=2 bindings=4
+;; arg[0] jsonData
+;; arg[1] show_list_type
+;; local[0] _type
+;; local[1] showList
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AddShowList.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  getarg 1
+00003:  46  or 24 (+21)
+00008:  46  pop
+00009:  46  name "xs"
+00014:  46  getprop "Views"
+00019:  46  getprop "ItemShowListType_Add"
+00024:  46  setlocal 0
+00027:  46  pop
+00028:  47  name "xs"
+00033:  47  getprop "Models"
+00038:  47  getprop "AddShowList"
+00043:  47  undefined
+00044:  47  notearg
+00045:  47  new 0
+00048:  47  setlocal 1
+00051:  47  pop
+00052:  48  getlocal 1
+00055:  48  and 75 (+20)
+00060:  48  pop
+00061:  48  getlocal 1
+00064:  48  dup
+00065:  48  callprop "init"
+00070:  48  swap
+00071:  48  notearg
+00072:  48  call 0
+00075:  48  ifeq 107 (+32)
+00080:  49  getlocal 1
+00083:  49  dup
+00084:  49  callprop "loadJson"
+00089:  49  swap
+00090:  49  notearg
+00091:  49  getarg 0
+00094:  49  notearg
+00095:  49  getlocal 0
+00098:  49  notearg
+00099:  49  call 2
+00102:  49  pop
+00103:  50  getlocal 1
+00106:  50  return
+00107:  52  name "xs"
+00112:  52  dup
+00113:  52  callprop "warn"
+00118:  52  swap
+00119:  52  notearg
+00120:  52  string "xs.Views.AddShowList.create error!"
+00125:  52  notearg
+00126:  52  call 1
+00129:  52  pop
+00130:  53  null
+00131:  53  return
+00132:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AddShowList.js:45 ---

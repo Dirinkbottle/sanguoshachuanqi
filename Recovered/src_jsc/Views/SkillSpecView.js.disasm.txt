@@ -1,0 +1,260 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SkillSpecView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=39 object[0]
+;; FUNCTION-MAP kind=lambda offset=49 object[1]
+;; FUNCTION-MAP kind=lambda offset=85 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillSpecView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Views"
+00010:   8  name "cc"
+00015:   8  getprop "Node"
+00020:   8  dup
+00021:   8  callprop "extend"
+00026:   8  swap
+00027:   8  notearg
+00028:   8  newinit 1
+00033:   9  null
+00034:   9  initprop "bgSprite"
+00039:  12  lambda (function () {
+    [sourceless code]
+})
+00044:  12  initprop "ctor"
+00049:  19  lambda (function () {
+    [sourceless code]
+})
+00054:  19  initprop "init"
+00059:  19  endinit
+00060:  19  notearg
+00061:  19  call 1
+00064:  19  setprop "SkillSpecView"
+00069:  19  popv
+00070:  44  name "xs"
+00075:  44  getprop "Views"
+00080:  44  getprop "SkillSpecView"
+00085:  44  lambda (function () {
+    [sourceless code]
+})
+00090:  44  setprop "create"
+00095:  44  popv
+00096:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillSpecView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillSpecView.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  14  this
+00001:  14  dup
+00002:  14  callprop "_super"
+00007:  14  swap
+00008:  14  notearg
+00009:  14  call 0
+00012:  14  pop
+00013:  15  name "cc"
+00018:  15  dup
+00019:  15  callprop "associateWithNative"
+00024:  15  swap
+00025:  15  notearg
+00026:  15  this
+00027:  15  notearg
+00028:  15  name "cc"
+00033:  15  getprop "Node"
+00038:  15  notearg
+00039:  15  call 2
+00042:  15  pop
+00043:  15  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillSpecView.js:12 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=1
+;; local[0] _size
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillSpecView.js:19 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  this
+00001:  23  dup
+00002:  23  callprop "_super"
+00007:  23  swap
+00008:  23  notearg
+00009:  23  call 0
+00012:  23  pop
+00013:  27  this
+00014:  27  name "cc"
+00019:  27  getprop "Sprite"
+00024:  27  dup
+00025:  27  callprop "create"
+00030:  27  swap
+00031:  27  notearg
+00032:  27  string "res/HelloWorld.png"
+00037:  27  notearg
+00038:  27  call 1
+00041:  27  setprop "bgSprite"
+00046:  27  pop
+00047:  30  this
+00048:  30  getprop "bgSprite"
+00053:  30  dup
+00054:  30  callprop "setAnchorPoint"
+00059:  30  swap
+00060:  30  notearg
+00061:  30  name "cc"
+00066:  30  dup
+00067:  30  callprop "p"
+00072:  30  swap
+00073:  30  notearg
+00074:  30  double 0.5
+00079:  30  notearg
+00080:  30  double 0.5
+00085:  30  notearg
+00086:  30  call 2
+00089:  30  notearg
+00090:  30  call 1
+00093:  30  pop
+00094:  31  this
+00095:  31  getprop "bgSprite"
+00100:  31  dup
+00101:  31  callprop "getContentSize"
+00106:  31  swap
+00107:  31  notearg
+00108:  31  call 0
+00111:  31  setlocal 0
+00114:  31  pop
+00115:  32  this
+00116:  32  getprop "bgSprite"
+00121:  32  dup
+00122:  32  callprop "setPosition"
+00127:  32  swap
+00128:  32  notearg
+00129:  32  name "cc"
+00134:  32  dup
+00135:  32  callprop "p"
+00140:  32  swap
+00141:  32  notearg
+00142:  32  getlocal 0
+00145:  32  getprop "width"
+00150:  32  int8 2
+00152:  32  div
+00153:  32  notearg
+00154:  32  getlocal 0
+00157:  32  getprop "height"
+00162:  32  int8 2
+00164:  32  div
+00165:  32  notearg
+00166:  32  call 2
+00169:  32  notearg
+00170:  32  call 1
+00173:  32  pop
+00174:  35  this
+00175:  35  dup
+00176:  35  callprop "addChild"
+00181:  35  swap
+00182:  35  notearg
+00183:  35  this
+00184:  35  getprop "bgSprite"
+00189:  35  notearg
+00190:  35  zero
+00191:  35  notearg
+00192:  35  call 2
+00195:  35  pop
+00196:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillSpecView.js:19 ---
+;; function object[2] create
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] winSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillSpecView.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  bindname "_specSkillView"
+00005:  49  name "xs"
+00010:  49  getprop "Views"
+00015:  49  getprop "SkillSpecView"
+00020:  49  undefined
+00021:  49  notearg
+00022:  49  new 0
+00025:  49  setname "_specSkillView"
+00030:  49  pop
+00031:  51  name "_specSkillView"
+00036:  51  dup
+00037:  51  callprop "init"
+00042:  51  swap
+00043:  51  notearg
+00044:  51  call 0
+00047:  51  pop
+00048:  53  name "_specSkillView"
+00053:  53  dup
+00054:  53  callprop "setAnchorPoint"
+00059:  53  swap
+00060:  53  notearg
+00061:  53  name "cc"
+00066:  53  dup
+00067:  53  callprop "p"
+00072:  53  swap
+00073:  53  notearg
+00074:  53  double 0.5
+00079:  53  notearg
+00080:  53  double 0.5
+00085:  53  notearg
+00086:  53  call 2
+00089:  53  notearg
+00090:  53  call 1
+00093:  53  pop
+00094:  54  name "_specSkillView"
+00099:  54  dup
+00100:  54  callprop "setPosition"
+00105:  54  swap
+00106:  54  notearg
+00107:  54  name "cc"
+00112:  54  dup
+00113:  54  callprop "p"
+00118:  54  swap
+00119:  54  notearg
+00120:  54  getarg 0
+00123:  54  getprop "width"
+00128:  54  int8 2
+00130:  54  div
+00131:  54  notearg
+00132:  54  getarg 0
+00135:  54  getprop "height"
+00140:  54  int8 2
+00142:  54  div
+00143:  54  notearg
+00144:  54  call 2
+00147:  54  notearg
+00148:  54  call 1
+00151:  54  pop
+00152:  56  name "_specSkillView"
+00157:  56  dup
+00158:  56  callprop "setScale"
+00163:  56  swap
+00164:  56  notearg
+00165:  56  double 0.5
+00170:  56  notearg
+00171:  56  call 1
+00174:  56  pop
+00175:  57  name "_specSkillView"
+00180:  57  dup
+00181:  57  callprop "setVisible"
+00186:  57  swap
+00187:  57  notearg
+00188:  57  true
+00189:  57  notearg
+00190:  57  call 1
+00193:  57  pop
+00194:  59  name "_specSkillView"
+00199:  59  return
+00200:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillSpecView.js:44 ---

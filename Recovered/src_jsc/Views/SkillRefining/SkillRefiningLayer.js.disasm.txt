@@ -1,0 +1,3882 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SkillRefining/SkillRefiningLayer.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=589 object[0]
+;; FUNCTION-MAP kind=lambda offset=599 object[1]
+;; FUNCTION-MAP kind=lambda offset=609 object[2]
+;; FUNCTION-MAP kind=lambda offset=619 object[3]
+;; FUNCTION-MAP kind=lambda offset=629 object[4]
+;; FUNCTION-MAP kind=lambda offset=639 object[5]
+;; FUNCTION-MAP kind=lambda offset=649 object[6]
+;; FUNCTION-MAP kind=lambda offset=659 object[7]
+;; FUNCTION-MAP kind=lambda offset=669 object[8]
+;; FUNCTION-MAP kind=lambda offset=679 object[9]
+;; FUNCTION-MAP kind=lambda offset=689 object[10]
+;; FUNCTION-MAP kind=lambda offset=699 object[11]
+;; FUNCTION-MAP kind=lambda offset=709 object[12]
+;; FUNCTION-MAP kind=lambda offset=719 object[13]
+;; FUNCTION-MAP kind=lambda offset=729 object[14]
+;; FUNCTION-MAP kind=lambda offset=765 object[15]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   2  name "xs"
+00005:   2  getprop "Views"
+00010:   2  name "cc"
+00015:   2  getprop "Layer"
+00020:   2  dup
+00021:   2  callprop "extend"
+00026:   2  swap
+00027:   2  notearg
+00028:   2  newinit 1
+00033:   3  string "xs.Views.SkillRefiningLayer"
+00038:   3  initprop "name"
+00043:   4  newarray 0
+00047:   4  endinit
+00048:   4  initprop "ccbCfg_BuaGua"
+00053:   7  newarray 11
+00057:   8  newinit 1
+00062:   8  one
+00063:   8  initprop "tag"
+00068:   8  string "ls"
+00073:   8  initprop "type"
+00078:   8  string "m_lb_title"
+00083:   8  initprop "name"
+00088:   8  string "LS_huodong_title"
+00093:   8  initprop "id"
+00098:   8  endinit
+00099:   8  initelem_array 0
+00103:   9  newinit 1
+00108:   9  int8 2
+00110:   9  initprop "tag"
+00115:   9  string "ls"
+00120:   9  initprop "type"
+00125:   9  string "m_lb_jiacheng"
+00130:   9  initprop "name"
+00135:   9  string "LS_mainUI4"
+00140:   9  initprop "id"
+00145:   9  endinit
+00146:   9  initelem_array 1
+00150:  10  newinit 1
+00155:  10  int8 3
+00157:  10  initprop "tag"
+00162:  10  string "ls"
+00167:  10  initprop "type"
+00172:  10  string "m_lb_addition"
+00177:  10  initprop "name"
+00182:  10  string "LS_gouyu"
+00187:  10  initprop "id"
+00192:  10  endinit
+00193:  10  initelem_array 2
+00197:  11  newinit 1
+00202:  11  int8 5
+00204:  11  initprop "tag"
+00209:  11  string "ls"
+00214:  11  initprop "type"
+00219:  11  string "m_lb_xuqiu"
+00224:  11  initprop "name"
+00229:  11  string "LS_mainUI4"
+00234:  11  initprop "id"
+00239:  11  endinit
+00240:  11  initelem_array 3
+00244:  13  newinit 1
+00249:  13  int8 6
+00251:  13  initprop "tag"
+00256:  13  string "ls"
+00261:  13  initprop "type"
+00266:  13  string "m_first_Need"
+00271:  13  initprop "name"
+00276:  13  string "LS_qiangduo_Inf"
+00281:  13  initprop "id"
+00286:  13  endinit
+00287:  13  initelem_array 4
+00291:  14  newinit 1
+00296:  14  int8 7
+00298:  14  initprop "tag"
+00303:  14  string "ls"
+00308:  14  initprop "type"
+00313:  14  string "m_first_Have"
+00318:  14  initprop "name"
+00323:  14  string "LS_gouyu"
+00328:  14  initprop "id"
+00333:  14  endinit
+00334:  14  initelem_array 5
+00338:  15  newinit 1
+00343:  15  int8 8
+00345:  15  initprop "tag"
+00350:  15  string "ls"
+00355:  15  initprop "type"
+00360:  15  string "m_second_Need"
+00365:  15  initprop "name"
+00370:  15  string "LS_qiangduo_Inf"
+00375:  15  initprop "id"
+00380:  15  endinit
+00381:  15  initelem_array 6
+00385:  16  newinit 1
+00390:  16  int8 9
+00392:  16  initprop "tag"
+00397:  16  string "ls"
+00402:  16  initprop "type"
+00407:  16  string "m_second_Have"
+00412:  16  initprop "name"
+00417:  16  string "LS_gouyu"
+00422:  16  initprop "id"
+00427:  16  endinit
+00428:  16  initelem_array 7
+00432:  17  newinit 1
+00437:  17  int8 10
+00439:  17  initprop "tag"
+00444:  17  string "ls"
+00449:  17  initprop "type"
+00454:  17  string "m_third_Need"
+00459:  17  initprop "name"
+00464:  17  string "LS_qiangduo_Inf"
+00469:  17  initprop "id"
+00474:  17  endinit
+00475:  17  initelem_array 8
+00479:  18  newinit 1
+00484:  18  int8 11
+00486:  18  initprop "tag"
+00491:  18  string "ls"
+00496:  18  initprop "type"
+00501:  18  string "m_third_Have"
+00506:  18  initprop "name"
+00511:  18  string "LS_gouyu"
+00516:  18  initprop "id"
+00521:  18  endinit
+00522:  18  initelem_array 9
+00526:  20  newinit 1
+00531:  20  int8 24
+00533:  20  initprop "tag"
+00538:  20  string "btn"
+00543:  20  initprop "type"
+00548:  20  string "m_lianhuaButton"
+00553:  20  initprop "name"
+00558:  20  string "Btn_btn1"
+00563:  20  initprop "id"
+00568:  20  string "Lianhua"
+00573:  20  initprop "stringId"
+00578:  20  endinit
+00579:  20  initelem_array 10
+00583:  20  endinit
+00584:  20  initprop "ccbCfg_Infor"
+00589:  24  lambda (function () {
+    [sourceless code]
+})
+00594:  24  initprop "ctor"
+00599:  29  lambda (function () {
+    [sourceless code]
+})
+00604:  29  initprop "init"
+00609: 153  lambda (function () {
+    [sourceless code]
+})
+00614: 153  initprop "initStarsAndButton"
+00619: 199  lambda (function () {
+    [sourceless code]
+})
+00624: 199  initprop "updateStars"
+00629: 259  lambda (function () {
+    [sourceless code]
+})
+00634: 259  initprop "updateRefiningInfor"
+00639: 311  lambda (function () {
+    [sourceless code]
+})
+00644: 311  initprop "switchCreateIcon"
+00649: 336  lambda (function () {
+    [sourceless code]
+})
+00654: 336  initprop "createItemIcon"
+00659: 364  lambda (function () {
+    [sourceless code]
+})
+00664: 364  initprop "createEquipmentFragmentIcon"
+00669: 406  lambda (function () {
+    [sourceless code]
+})
+00674: 406  initprop "createGeneralsSoulIcon"
+00679: 453  lambda (function () {
+    [sourceless code]
+})
+00684: 453  initprop "selectButtonCallback"
+00689: 456  lambda (function () {
+    [sourceless code]
+})
+00694: 456  initprop "selectSkill"
+00699: 478  lambda (function () {
+    [sourceless code]
+})
+00704: 478  initprop "lianhuaCallback"
+00709: 509  lambda (function () {
+    [sourceless code]
+})
+00714: 509  initprop "onEnter"
+00719: 513  lambda (function () {
+    [sourceless code]
+})
+00724: 513  initprop "onExit"
+00729: 517  lambda (function () {
+    [sourceless code]
+})
+00734: 517  initprop "setBaseTouchPriority"
+00739: 517  endinit
+00740: 517  notearg
+00741: 517  call 1
+00744: 517  setprop "SkillRefiningLayer"
+00749: 517  popv
+00750: 521  name "xs"
+00755: 521  getprop "Views"
+00760: 521  getprop "SkillRefiningLayer"
+00765: 521  lambda (function () {
+    [sourceless code]
+})
+00770: 521  setprop "create"
+00775: 521  popv
+00776: 528  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] self
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:24 ---
+loc   line  op
+----- ----  --
+main:
+00000:  25  this
+00001:  25  dup
+00002:  25  callprop "_super"
+00007:  25  swap
+00008:  25  notearg
+00009:  25  call 0
+00012:  25  pop
+00013:  26  this
+00014:  26  setlocal 0
+00017:  26  pop
+00018:  27  name "cc"
+00023:  27  dup
+00024:  27  callprop "associateWithNative"
+00029:  27  swap
+00030:  27  notearg
+00031:  27  this
+00032:  27  notearg
+00033:  27  name "cc"
+00038:  27  getprop "Layer"
+00043:  27  notearg
+00044:  27  call 2
+00047:  27  pop
+00048:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:24 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=2
+;; local[0] visibleSize
+;; local[1] mainMenuWidth
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  this
+00001:  30  dup
+00002:  30  callprop "_super"
+00007:  30  swap
+00008:  30  notearg
+00009:  30  call 0
+00012:  30  not
+00013:  30  ifeq 20 (+7)
+00018:  31  false
+00019:  31  return
+00020:  34  this
+00021:  34  null
+00022:  34  setprop "m_lb_title"
+00027:  34  pop
+00028:  35  this
+00029:  35  null
+00030:  35  setprop "m_lb_jiacheng"
+00035:  35  pop
+00036:  36  this
+00037:  36  null
+00038:  36  setprop "m_lb_xuqiu"
+00043:  36  pop
+00044:  37  this
+00045:  37  null
+00046:  37  setprop "m_lb_addition"
+00051:  37  pop
+00052:  40  this
+00053:  40  null
+00054:  40  setprop "m_first_Need"
+00059:  40  pop
+00060:  41  this
+00061:  41  null
+00062:  41  setprop "m_first_Have"
+00067:  41  pop
+00068:  42  this
+00069:  42  null
+00070:  42  setprop "m_second_Need"
+00075:  42  pop
+00076:  43  this
+00077:  43  null
+00078:  43  setprop "m_second_Have"
+00083:  43  pop
+00084:  44  this
+00085:  44  null
+00086:  44  setprop "m_third_Need"
+00091:  44  pop
+00092:  45  this
+00093:  45  null
+00094:  45  setprop "m_third_Have"
+00099:  45  pop
+00100:  48  this
+00101:  48  null
+00102:  48  setprop "m_first_icon"
+00107:  48  pop
+00108:  49  this
+00109:  49  null
+00110:  49  setprop "m_second_icon"
+00115:  49  pop
+00116:  50  this
+00117:  50  null
+00118:  50  setprop "m_third_icon"
+00123:  50  pop
+00124:  52  this
+00125:  52  null
+00126:  52  setprop "m_lianhuaButton"
+00131:  52  pop
+00132:  53  this
+00133:  53  null
+00134:  53  setprop "m_addButton"
+00139:  53  pop
+00140:  55  this
+00141:  55  null
+00142:  55  setprop "show"
+00147:  55  pop
+00148:  57  this
+00149:  57  zero
+00150:  57  setprop "step"
+00155:  57  pop
+00156:  58  this
+00157:  58  false
+00158:  58  setprop "isSelected"
+00163:  58  pop
+00164:  59  this
+00165:  59  null
+00166:  59  setprop "m_selectSkillId"
+00171:  59  pop
+00172:  61  this
+00173:  61  newarray 0
+00177:  61  endinit
+00178:  61  setprop "m_lightStars"
+00183:  61  pop
+00184:  62  this
+00185:  62  newarray 0
+00189:  62  endinit
+00190:  62  setprop "m_lightLines"
+00195:  62  pop
+00196:  64  this
+00197:  64  newarray 0
+00201:  64  endinit
+00202:  64  setprop "m_needList"
+00207:  64  pop
+00208:  65  this
+00209:  65  newarray 0
+00213:  65  endinit
+00214:  65  setprop "m_haveList"
+00219:  65  pop
+00220:  66  this
+00221:  66  newarray 0
+00225:  66  endinit
+00226:  66  setprop "m_iconsList"
+00231:  66  pop
+00232:  68  this
+00233:  68  name "xs"
+00238:  68  getprop "Profile"
+00243:  68  getprop "GameData"
+00248:  68  getprop "Mgr"
+00253:  68  dup
+00254:  68  callprop "getInstance"
+00259:  68  swap
+00260:  68  notearg
+00261:  68  call 0
+00264:  68  getprop "Player"
+00269:  68  dup
+00270:  68  callprop "getPlayer"
+00275:  68  swap
+00276:  68  notearg
+00277:  68  call 0
+00280:  68  dup
+00281:  68  callprop "getPlayerVipLevel"
+00286:  68  swap
+00287:  68  notearg
+00288:  68  call 0
+00291:  68  setprop "m_userVipGrade"
+00296:  68  pop
+00297:  70  this
+00298:  70  name "xs"
+00303:  70  getprop "Profile"
+00308:  70  getprop "GameData"
+00313:  70  getprop "Mgr"
+00318:  70  dup
+00319:  70  callprop "getInstance"
+00324:  70  swap
+00325:  70  notearg
+00326:  70  call 0
+00329:  70  getprop "EquipmentPieces"
+00334:  70  dup
+00335:  70  callprop "getAll"
+00340:  70  swap
+00341:  70  notearg
+00342:  70  call 0
+00345:  70  setprop "arrayPieces"
+00350:  70  pop
+00351:  71  this
+00352:  71  name "xs"
+00357:  71  getprop "Profile"
+00362:  71  getprop "GameData"
+00367:  71  getprop "Mgr"
+00372:  71  dup
+00373:  71  callprop "getInstance"
+00378:  71  swap
+00379:  71  notearg
+00380:  71  call 0
+00383:  71  getprop "GeneralSouls"
+00388:  71  dup
+00389:  71  callprop "getAll"
+00394:  71  swap
+00395:  71  notearg
+00396:  71  call 0
+00399:  71  setprop "arraySouls"
+00404:  71  pop
+00405:  73  name "xs"
+00410:  73  getprop "director"
+00415:  73  dup
+00416:  73  callprop "getVisibleSize"
+00421:  73  swap
+00422:  73  notearg
+00423:  73  call 0
+00426:  73  setlocal 0
+00429:  73  pop
+00430:  74  name "xs"
+00435:  74  getprop "Views"
+00440:  74  getprop "MainMenuView"
+00445:  74  getprop "Width"
+00450:  74  setlocal 1
+00453:  74  pop
+00454:  76  this
+00455:  76  name "xs"
+00460:  76  getprop "ccb_reader"
+00465:  76  dup
+00466:  76  callprop "load"
+00471:  76  swap
+00472:  76  notearg
+00473:  76  name "xs"
+00478:  76  getprop "Cfg"
+00483:  76  getprop "CCBI"
+00488:  76  getprop "SkillRefiningBaGua"
+00493:  76  notearg
+00494:  76  this
+00495:  76  notearg
+00496:  76  call 2
+00499:  76  setprop "ccbNode_BuaGua"
+00504:  76  pop
+00505:  77  name "xs"
+00510:  77  getprop "Utils"
+00515:  77  getprop "Node"
+00520:  77  dup
+00521:  77  callprop "attachNodes"
+00526:  77  swap
+00527:  77  notearg
+00528:  77  this
+00529:  77  notearg
+00530:  77  this
+00531:  77  getprop "ccbNode_BuaGua"
+00536:  77  notearg
+00537:  77  newinit 1
+00542:  77  string "lb"
+00547:  77  initprop "desc"
+00552:  78  name "cc"
+00557:  78  dup
+00558:  78  callprop "p"
+00563:  78  swap
+00564:  78  notearg
+00565:  78  zero
+00566:  78  notearg
+00567:  78  zero
+00568:  78  notearg
+00569:  78  call 2
+00572:  78  initprop "offset"
+00577:  79  true
+00578:  79  initprop "sc"
+00583:  79  endinit
+00584:  79  notearg
+00585:  79  call 3
+00588:  79  pop
+00589:  80  name "xs"
+00594:  80  getprop "Utils"
+00599:  80  getprop "UI"
+00604:  80  dup
+00605:  80  callprop "replaceCcbByCfg"
+00610:  80  swap
+00611:  80  notearg
+00612:  80  this
+00613:  80  getprop "ccbNode_BuaGua"
+00618:  80  notearg
+00619:  80  this
+00620:  80  getprop "ccbCfg_BuaGua"
+00625:  80  notearg
+00626:  80  this
+00627:  80  notearg
+00628:  80  call 3
+00631:  80  pop
+00632:  82  this
+00633:  82  name "xs"
+00638:  82  getprop "ccb_reader"
+00643:  82  dup
+00644:  82  callprop "load"
+00649:  82  swap
+00650:  82  notearg
+00651:  82  name "xs"
+00656:  82  getprop "Cfg"
+00661:  82  getprop "CCBI"
+00666:  82  getprop "SkillRefiningInfor"
+00671:  82  notearg
+00672:  82  this
+00673:  82  notearg
+00674:  82  call 2
+00677:  82  setprop "ccbNode_Infor"
+00682:  82  pop
+00683:  83  this
+00684:  83  getprop "ccbNode_Infor"
+00689:  83  dup
+00690:  83  callprop "setContentSize"
+00695:  83  swap
+00696:  83  notearg
+00697:  83  name "cc"
+00702:  83  dup
+00703:  83  callprop "size"
+00708:  83  swap
+00709:  83  notearg
+00710:  83  uint16 400
+00713:  83  notearg
+00714:  83  uint16 640
+00717:  83  notearg
+00718:  83  call 2
+00721:  83  notearg
+00722:  83  call 1
+00725:  83  pop
+00726:  84  this
+00727:  84  getprop "ccbNode_Infor"
+00732:  84  dup
+00733:  84  callprop "setAnchorPoint"
+00738:  84  swap
+00739:  84  notearg
+00740:  84  name "cc"
+00745:  84  dup
+00746:  84  callprop "p"
+00751:  84  swap
+00752:  84  notearg
+00753:  84  one
+00754:  84  notearg
+00755:  84  double 0.5
+00760:  84  notearg
+00761:  84  call 2
+00764:  84  notearg
+00765:  84  call 1
+00768:  84  pop
+00769:  85  name "xs"
+00774:  85  getprop "Utils"
+00779:  85  getprop "Node"
+00784:  85  dup
+00785:  85  callprop "attachNodes"
+00790:  85  swap
+00791:  85  notearg
+00792:  85  this
+00793:  85  notearg
+00794:  85  this
+00795:  85  getprop "ccbNode_Infor"
+00800:  85  notearg
+00801:  85  newinit 1
+00806:  85  string "lb"
+00811:  85  initprop "desc"
+00816:  86  newinit 1
+00821:  87  getlocal 0
+00824:  87  getprop "width"
+00829:  87  getlocal 1
+00832:  87  sub
+00833:  87  int8 50
+00835:  87  add
+00836:  87  initprop "x"
+00841:  88  getlocal 0
+00844:  88  getprop "height"
+00849:  88  int8 2
+00851:  88  div
+00852:  88  initprop "y"
+00857:  88  endinit
+00858:  88  initprop "offset"
+00863:  90  true
+00864:  90  initprop "sc"
+00869:  90  endinit
+00870:  90  notearg
+00871:  90  call 3
+00874:  90  pop
+00875:  92  name "xs"
+00880:  92  getprop "Utils"
+00885:  92  getprop "UI"
+00890:  92  dup
+00891:  92  callprop "replaceCcbByCfg"
+00896:  92  swap
+00897:  92  notearg
+00898:  92  this
+00899:  92  getprop "ccbNode_Infor"
+00904:  92  notearg
+00905:  92  this
+00906:  92  getprop "ccbCfg_Infor"
+00911:  92  notearg
+00912:  92  this
+00913:  92  notearg
+00914:  92  call 3
+00917:  92  pop
+00918:  93  this
+00919:  93  getprop "ccbNode_Infor"
+00924:  93  dup
+00925:  93  callprop "setVisible"
+00930:  93  swap
+00931:  93  notearg
+00932:  93  false
+00933:  93  notearg
+00934:  93  call 1
+00937:  93  pop
+00938:  95  this
+00939:  95  name "xs"
+00944:  95  getprop "ccb_reader"
+00949:  95  dup
+00950:  95  callprop "load"
+00955:  95  swap
+00956:  95  notearg
+00957:  95  name "xs"
+00962:  95  getprop "Cfg"
+00967:  95  getprop "CCBI"
+00972:  95  getprop "SkillRefiningShow"
+00977:  95  notearg
+00978:  95  this
+00979:  95  notearg
+00980:  95  call 2
+00983:  95  setprop "ccbNode_Show"
+00988:  95  pop
+00989:  96  this
+00990:  96  getprop "ccbNode_Show"
+00995:  96  dup
+00996:  96  callprop "setContentSize"
+01001:  96  swap
+01002:  96  notearg
+01003:  96  name "cc"
+01008:  96  dup
+01009:  96  callprop "size"
+01014:  96  swap
+01015:  96  notearg
+01016:  96  uint16 400
+01019:  96  notearg
+01020:  96  uint16 640
+01023:  96  notearg
+01024:  96  call 2
+01027:  96  notearg
+01028:  96  call 1
+01031:  96  pop
+01032:  97  this
+01033:  97  getprop "ccbNode_Show"
+01038:  97  dup
+01039:  97  callprop "setAnchorPoint"
+01044:  97  swap
+01045:  97  notearg
+01046:  97  name "cc"
+01051:  97  dup
+01052:  97  callprop "p"
+01057:  97  swap
+01058:  97  notearg
+01059:  97  one
+01060:  97  notearg
+01061:  97  double 0.5
+01066:  97  notearg
+01067:  97  call 2
+01070:  97  notearg
+01071:  97  call 1
+01074:  97  pop
+01075:  98  name "xs"
+01080:  98  getprop "Utils"
+01085:  98  getprop "Node"
+01090:  98  dup
+01091:  98  callprop "attachNodes"
+01096:  98  swap
+01097:  98  notearg
+01098:  98  this
+01099:  98  notearg
+01100:  98  this
+01101:  98  getprop "ccbNode_Show"
+01106:  98  notearg
+01107:  98  newinit 1
+01112:  98  string "lb"
+01117:  98  initprop "desc"
+01122:  99  newinit 1
+01127: 100  getlocal 0
+01130: 100  getprop "width"
+01135: 100  getlocal 1
+01138: 100  sub
+01139: 100  int8 50
+01141: 100  add
+01142: 100  initprop "x"
+01147: 101  getlocal 0
+01150: 101  getprop "height"
+01155: 101  int8 2
+01157: 101  div
+01158: 101  initprop "y"
+01163: 101  endinit
+01164: 101  initprop "offset"
+01169: 103  true
+01170: 103  initprop "sc"
+01175: 103  endinit
+01176: 103  notearg
+01177: 103  call 3
+01180: 103  pop
+01181: 106  this
+01182: 106  name "xs"
+01187: 106  getprop "Views"
+01192: 106  getprop "Table"
+01197: 106  getprop "RefiningSkillShowTableView"
+01202: 106  dup
+01203: 106  callprop "create"
+01208: 106  swap
+01209: 106  notearg
+01210: 106  call 0
+01213: 106  setprop "m_RefiningSkillShowTableView"
+01218: 106  pop
+01219: 108  name "xs"
+01224: 108  getprop "Utils"
+01229: 108  getprop "Node"
+01234: 108  dup
+01235: 108  callprop "attachNodes"
+01240: 108  swap
+01241: 108  notearg
+01242: 108  this
+01243: 108  getprop "ccbNode_Show"
+01248: 108  notearg
+01249: 108  this
+01250: 108  getprop "m_RefiningSkillShowTableView"
+01255: 108  notearg
+01256: 108  newinit 1
+01261: 109  string "lb"
+01266: 109  initprop "desc"
+01271: 110  true
+01272: 110  initprop "sc"
+01277: 111  newinit 1
+01282: 111  int8 20
+01284: 111  initprop "x"
+01289: 111  int8 50
+01291: 111  initprop "y"
+01296: 111  endinit
+01297: 111  initprop "offset"
+01302: 111  endinit
+01303: 111  notearg
+01304: 111  call 3
+01307: 111  pop
+01308: 113  this
+01309: 113  getprop "m_RefiningSkillShowTableView"
+01314: 113  dup
+01315: 113  callprop "setVisible"
+01320: 113  swap
+01321: 113  notearg
+01322: 113  true
+01323: 113  notearg
+01324: 113  call 1
+01327: 113  pop
+01328: 114  this
+01329: 114  getprop "m_RefiningSkillShowTableView"
+01334: 114  dup
+01335: 114  callprop "setKeepOldOffsetFlag"
+01340: 114  swap
+01341: 114  notearg
+01342: 114  true
+01343: 114  notearg
+01344: 114  call 1
+01347: 114  pop
+01348: 117  this
+01349: 117  getprop "m_lb_jiacheng"
+01354: 117  dup
+01355: 117  callprop "setString"
+01360: 117  swap
+01361: 117  notearg
+01362: 117  name "xs"
+01367: 117  getprop "Tools"
+01372: 117  getprop "String"
+01377: 117  dup
+01378: 117  callprop "createString"
+01383: 117  swap
+01384: 117  notearg
+01385: 117  string "refine_jiacheng"
+01390: 117  notearg
+01391: 117  call 1
+01394: 117  notearg
+01395: 117  call 1
+01398: 117  pop
+01399: 118  this
+01400: 118  getprop "m_lb_addition"
+01405: 118  dup
+01406: 118  callprop "setString"
+01411: 118  swap
+01412: 118  notearg
+01413: 118  name "xs"
+01418: 118  getprop "Tools"
+01423: 118  getprop "String"
+01428: 118  dup
+01429: 118  callprop "createString"
+01434: 118  swap
+01435: 118  notearg
+01436: 118  string "refine_uptext"
+01441: 118  notearg
+01442: 118  call 1
+01445: 118  notearg
+01446: 118  call 1
+01449: 118  pop
+01450: 119  this
+01451: 119  getprop "m_lb_xuqiu"
+01456: 119  dup
+01457: 119  callprop "setString"
+01462: 119  swap
+01463: 119  notearg
+01464: 119  name "xs"
+01469: 119  getprop "Tools"
+01474: 119  getprop "String"
+01479: 119  dup
+01480: 119  callprop "createString"
+01485: 119  swap
+01486: 119  notearg
+01487: 119  string "refine_xuqiu"
+01492: 119  notearg
+01493: 119  call 1
+01496: 119  notearg
+01497: 119  call 1
+01500: 119  pop
+01501: 121  this
+01502: 121  name "xs"
+01507: 121  getprop "Tools"
+01512: 121  getprop "CfgData"
+01517: 121  dup
+01518: 121  callprop "getGlobalConf"
+01523: 121  swap
+01524: 121  notearg
+01525: 121  string "SkillRefineUnlockVipLevel"
+01530: 121  notearg
+01531: 121  call 1
+01534: 121  setprop "m_needVip"
+01539: 121  pop
+01540: 124  this
+01541: 124  this
+01542: 124  getprop "ccbNode_Infor"
+01547: 124  dup
+01548: 124  callprop "getChildByTag"
+01553: 124  swap
+01554: 124  notearg
+01555: 124  int8 21
+01557: 124  notearg
+01558: 124  call 1
+01561: 124  setprop "m_first_icon"
+01566: 124  pop
+01567: 125  this
+01568: 125  this
+01569: 125  getprop "ccbNode_Infor"
+01574: 125  dup
+01575: 125  callprop "getChildByTag"
+01580: 125  swap
+01581: 125  notearg
+01582: 125  int8 22
+01584: 125  notearg
+01585: 125  call 1
+01588: 125  setprop "m_second_icon"
+01593: 125  pop
+01594: 126  this
+01595: 126  this
+01596: 126  getprop "ccbNode_Infor"
+01601: 126  dup
+01602: 126  callprop "getChildByTag"
+01607: 126  swap
+01608: 126  notearg
+01609: 126  int8 23
+01611: 126  notearg
+01612: 126  call 1
+01615: 126  setprop "m_third_icon"
+01620: 126  pop
+01621: 127  this
+01622: 127  getprop "m_iconsList"
+01627: 127  dup
+01628: 127  callprop "push"
+01633: 127  swap
+01634: 127  notearg
+01635: 127  this
+01636: 127  getprop "m_first_icon"
+01641: 127  notearg
+01642: 127  call 1
+01645: 127  pop
+01646: 128  this
+01647: 128  getprop "m_iconsList"
+01652: 128  dup
+01653: 128  callprop "push"
+01658: 128  swap
+01659: 128  notearg
+01660: 128  this
+01661: 128  getprop "m_second_icon"
+01666: 128  notearg
+01667: 128  call 1
+01670: 128  pop
+01671: 129  this
+01672: 129  getprop "m_iconsList"
+01677: 129  dup
+01678: 129  callprop "push"
+01683: 129  swap
+01684: 129  notearg
+01685: 129  this
+01686: 129  getprop "m_third_icon"
+01691: 129  notearg
+01692: 129  call 1
+01695: 129  pop
+01696: 131  this
+01697: 131  getprop "m_needList"
+01702: 131  dup
+01703: 131  callprop "push"
+01708: 131  swap
+01709: 131  notearg
+01710: 131  this
+01711: 131  getprop "m_first_Need"
+01716: 131  notearg
+01717: 131  call 1
+01720: 131  pop
+01721: 132  this
+01722: 132  getprop "m_needList"
+01727: 132  dup
+01728: 132  callprop "push"
+01733: 132  swap
+01734: 132  notearg
+01735: 132  this
+01736: 132  getprop "m_second_Need"
+01741: 132  notearg
+01742: 132  call 1
+01745: 132  pop
+01746: 133  this
+01747: 133  getprop "m_needList"
+01752: 133  dup
+01753: 133  callprop "push"
+01758: 133  swap
+01759: 133  notearg
+01760: 133  this
+01761: 133  getprop "m_third_Need"
+01766: 133  notearg
+01767: 133  call 1
+01770: 133  pop
+01771: 134  this
+01772: 134  getprop "m_haveList"
+01777: 134  dup
+01778: 134  callprop "push"
+01783: 134  swap
+01784: 134  notearg
+01785: 134  this
+01786: 134  getprop "m_first_Have"
+01791: 134  notearg
+01792: 134  call 1
+01795: 134  pop
+01796: 135  this
+01797: 135  getprop "m_haveList"
+01802: 135  dup
+01803: 135  callprop "push"
+01808: 135  swap
+01809: 135  notearg
+01810: 135  this
+01811: 135  getprop "m_second_Have"
+01816: 135  notearg
+01817: 135  call 1
+01820: 135  pop
+01821: 136  this
+01822: 136  getprop "m_haveList"
+01827: 136  dup
+01828: 136  callprop "push"
+01833: 136  swap
+01834: 136  notearg
+01835: 136  this
+01836: 136  getprop "m_third_Have"
+01841: 136  notearg
+01842: 136  call 1
+01845: 136  pop
+01846: 139  this
+01847: 139  name "xs"
+01852: 139  getprop "Tools"
+01857: 139  getprop "Views"
+01862: 139  getprop "Btn"
+01867: 139  dup
+01868: 139  callprop "createInstruction"
+01873: 139  swap
+01874: 139  notearg
+01875: 139  string "skill_refine_info"
+01880: 139  notearg
+01881: 139  call 1
+01884: 139  setprop "m_instructionBtn"
+01889: 139  pop
+01890: 140  name "xs"
+01895: 140  getprop "Utils"
+01900: 140  getprop "Node"
+01905: 140  dup
+01906: 140  callprop "attachNodes"
+01911: 140  swap
+01912: 140  notearg
+01913: 140  this
+01914: 140  notearg
+01915: 140  this
+01916: 140  getprop "m_instructionBtn"
+01921: 140  notearg
+01922: 140  newinit 1
+01927: 140  string "lb"
+01932: 140  initprop "desc"
+01937: 140  name "cc"
+01942: 140  dup
+01943: 140  callprop "p"
+01948: 140  swap
+01949: 140  notearg
+01950: 140  int8 60
+01952: 140  notearg
+01953: 140  int8 110
+01955: 140  notearg
+01956: 140  call 2
+01959: 140  initprop "offset"
+01964: 140  true
+01965: 140  initprop "sc"
+01970: 140  endinit
+01971: 140  notearg
+01972: 140  null
+01973: 140  notearg
+01974: 140  call 4
+01977: 140  pop
+01978: 142  this
+01979: 142  name "xs"
+01984: 142  getprop "Views"
+01989: 142  getprop "Btn"
+01994: 142  dup
+01995: 142  callprop "createInvisibleWithParent"
+02000: 142  swap
+02001: 142  notearg
+02002: 142  this
+02003: 142  getprop "ccbNode_BuaGua"
+02008: 142  dup
+02009: 142  callprop "getChildByTag"
+02014: 142  swap
+02015: 142  notearg
+02016: 142  int8 101
+02018: 142  notearg
+02019: 142  call 1
+02022: 142  notearg
+02023: 142  call 1
+02026: 142  setprop "m_addButton"
+02031: 142  pop
+02032: 143  this
+02033: 143  getprop "m_addButton"
+02038: 143  dup
+02039: 143  callprop "setOnClickCallBack"
+02044: 143  swap
+02045: 143  notearg
+02046: 143  this
+02047: 143  getprop "selectButtonCallback"
+02052: 143  dup
+02053: 143  callprop "bind"
+02058: 143  swap
+02059: 143  notearg
+02060: 143  this
+02061: 143  notearg
+02062: 143  call 1
+02065: 143  notearg
+02066: 143  call 1
+02069: 143  pop
+02070: 145  this
+02071: 145  getprop "m_lianhuaButton"
+02076: 145  dup
+02077: 145  callprop "setOnClickCallBack"
+02082: 145  swap
+02083: 145  notearg
+02084: 145  this
+02085: 145  getprop "lianhuaCallback"
+02090: 145  dup
+02091: 145  callprop "bind"
+02096: 145  swap
+02097: 145  notearg
+02098: 145  this
+02099: 145  notearg
+02100: 145  call 1
+02103: 145  notearg
+02104: 145  call 1
+02107: 145  pop
+02108: 147  this
+02109: 147  getprop "ccbNode_Infor"
+02114: 147  dup
+02115: 147  callprop "getChildByTag"
+02120: 147  swap
+02121: 147  notearg
+02122: 147  int8 12
+02124: 147  notearg
+02125: 147  call 1
+02128: 147  dup
+02129: 147  callprop "setVisible"
+02134: 147  swap
+02135: 147  notearg
+02136: 147  false
+02137: 147  notearg
+02138: 147  call 1
+02141: 147  pop
+02142: 148  this
+02143: 148  dup
+02144: 148  callprop "initStarsAndButton"
+02149: 148  swap
+02150: 148  notearg
+02151: 148  call 0
+02154: 148  pop
+02155: 151  true
+02156: 151  return
+02157: 151  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:29 ---
+;; function object[2] initStarsAndButton
+;; function metadata object[2] nargs=0 bindings=7
+;; local[0] allshows
+;; local[1] i
+;; local[2] _arm1
+;; local[3] show
+;; local[4] array
+;; local[5] str
+;; local[6] titleStr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:153 ---
+loc   line  op
+----- ----  --
+main:
+00000: 154  newarray 5
+00004: 154  string "jin"
+00009: 154  initelem_array 0
+00013: 154  string "mu"
+00018: 154  initelem_array 1
+00022: 154  string "shui"
+00027: 154  initelem_array 2
+00031: 154  string "huo"
+00036: 154  initelem_array 3
+00040: 154  string "tu"
+00045: 154  initelem_array 4
+00049: 154  endinit
+00050: 154  setlocal 0
+00053: 154  pop
+00054: 156  zero
+00055: 156  setlocal 1
+00058: 156  pop
+00059: 156  goto 503 (+444)
+00064: 161  loophead
+00065: 161  this
+00066: 161  getprop "m_lightStars"
+00071: 161  getlocal 1
+00074: 161  name "xs"
+00079: 161  getprop "Factorys"
+00084: 161  getprop "Sprite"
+00089: 161  dup
+00090: 161  callprop "createDummy"
+00095: 161  swap
+00096: 161  notearg
+00097: 161  call 0
+00100: 161  setelem
+00101: 161  pop
+00102: 163  name "xs"
+00107: 163  getprop "Views"
+00112: 163  getprop "Armature"
+00117: 163  getprop "AutoAudioArmature"
+00122: 163  dup
+00123: 163  callprop "create"
+00128: 163  swap
+00129: 163  notearg
+00130: 163  string "Arm_AwakeBox_Light"
+00135: 163  notearg
+00136: 163  call 1
+00139: 163  setlocal 2
+00142: 163  pop
+00143: 164  getlocal 2
+00146: 164  dup
+00147: 164  callprop "playAniById"
+00152: 164  swap
+00153: 164  notearg
+00154: 164  string "Baox_Jx_bj_ani"
+00159: 164  notearg
+00160: 164  newinit 1
+00165: 164  one
+00166: 164  initprop "speed"
+00171: 164  true
+00172: 164  initprop "loop"
+00177: 164  endinit
+00178: 164  notearg
+00179: 164  call 2
+00182: 164  pop
+00183: 165  name "xs"
+00188: 165  getprop "Utils"
+00193: 165  getprop "Node"
+00198: 165  dup
+00199: 165  callprop "attachNodes"
+00204: 165  swap
+00205: 165  notearg
+00206: 165  this
+00207: 165  getprop "m_lightStars"
+00212: 165  getlocal 1
+00215: 165  getelem
+00216: 165  notearg
+00217: 165  getlocal 2
+00220: 165  notearg
+00221: 165  call 2
+00224: 165  pop
+00225: 167  name "xs"
+00230: 167  getprop "Factorys"
+00235: 167  getprop "Sprite"
+00240: 167  dup
+00241: 167  callprop "create"
+00246: 167  swap
+00247: 167  notearg
+00248: 167  getlocal 0
+00251: 167  getlocal 1
+00254: 167  getelem
+00255: 167  notearg
+00256: 167  string "SkillRefiningScene"
+00261: 167  notearg
+00262: 167  call 2
+00265: 167  setlocal 3
+00268: 167  pop
+00269: 168  name "xs"
+00274: 168  getprop "Utils"
+00279: 168  getprop "Node"
+00284: 168  dup
+00285: 168  callprop "attachNodes"
+00290: 168  swap
+00291: 168  notearg
+00292: 168  this
+00293: 168  getprop "m_lightStars"
+00298: 168  getlocal 1
+00301: 168  getelem
+00302: 168  notearg
+00303: 168  getlocal 3
+00306: 168  notearg
+00307: 168  call 2
+00310: 168  pop
+00311: 170  name "xs"
+00316: 170  getprop "Utils"
+00321: 170  getprop "Node"
+00326: 170  dup
+00327: 170  callprop "replaceChildSafe"
+00332: 170  swap
+00333: 170  notearg
+00334: 170  this
+00335: 170  getprop "ccbNode_BuaGua"
+00340: 170  notearg
+00341: 170  this
+00342: 170  getprop "ccbNode_BuaGua"
+00347: 170  dup
+00348: 170  callprop "getChildByTag"
+00353: 170  swap
+00354: 170  notearg
+00355: 170  int8 81
+00357: 170  getlocal 1
+00360: 170  add
+00361: 170  notearg
+00362: 170  call 1
+00365: 170  notearg
+00366: 170  this
+00367: 170  getprop "m_lightStars"
+00372: 170  getlocal 1
+00375: 170  getelem
+00376: 170  notearg
+00377: 170  call 3
+00380: 170  pop
+00381: 172  this
+00382: 172  getprop "m_lightStars"
+00387: 172  getlocal 1
+00390: 172  getelem
+00391: 172  dup
+00392: 172  callprop "setVisible"
+00397: 172  swap
+00398: 172  notearg
+00399: 172  false
+00400: 172  notearg
+00401: 172  call 1
+00404: 172  pop
+00405: 176  this
+00406: 176  getprop "m_lightLines"
+00411: 176  getlocal 1
+00414: 176  this
+00415: 176  getprop "ccbNode_BuaGua"
+00420: 176  dup
+00421: 176  callprop "getChildByTag"
+00426: 176  swap
+00427: 176  notearg
+00428: 176  int8 91
+00430: 176  getlocal 1
+00433: 176  add
+00434: 176  notearg
+00435: 176  call 1
+00438: 176  setelem
+00439: 176  pop
+00440: 177  this
+00441: 177  getprop "m_lightLines"
+00446: 177  getlocal 1
+00449: 177  getelem
+00450: 177  dup
+00451: 177  callprop "setZOrder"
+00456: 177  swap
+00457: 177  notearg
+00458: 177  one
+00459: 177  notearg
+00460: 177  call 1
+00463: 177  pop
+00464: 178  this
+00465: 178  getprop "m_lightLines"
+00470: 178  getlocal 1
+00473: 178  getelem
+00474: 178  dup
+00475: 178  callprop "setVisible"
+00480: 178  swap
+00481: 178  notearg
+00482: 178  false
+00483: 178  notearg
+00484: 178  call 1
+00487: 178  pop
+00488: 156  localinc 11
+00491: 156  getlocal 1
+00494: 156  pos
+00495: 156  dup
+00496: 156  one
+00497: 156  add
+00498: 156  setlocal 1
+00501: 156  pop
+00502: 156  pop
+00503: 156  loopentry
+00504: 156  getlocal 1
+00507: 156  int8 5
+00509: 156  lt
+00510: 156  ifne 64 (-446)
+00515: 181  newarray 0
+00519: 181  endinit
+00520: 181  setlocal 4
+00523: 181  pop
+00524: 182  getlocal 4
+00527: 182  zero
+00528: 182  name "xs"
+00533: 182  getprop "Tools"
+00538: 182  getprop "String"
+00543: 182  dup
+00544: 182  callprop "convNumberString"
+00549: 182  swap
+00550: 182  notearg
+00551: 182  one
+00552: 182  notearg
+00553: 182  call 1
+00556: 182  setelem
+00557: 182  pop
+00558: 183  getlocal 4
+00561: 183  one
+00562: 183  string "\u91D1"
+00567: 183  setelem
+00568: 183  pop
+00569: 184  name "xs"
+00574: 184  getprop "Tools"
+00579: 184  getprop "String"
+00584: 184  dup
+00585: 184  callprop "createString"
+00590: 184  swap
+00591: 184  notearg
+00592: 184  string "RefiningSkill_title"
+00597: 184  notearg
+00598: 184  call 1
+00601: 184  setlocal 5
+00604: 184  pop
+00605: 185  name "xs"
+00610: 185  getprop "Tools"
+00615: 185  getprop "String"
+00620: 185  dup
+00621: 185  callprop "replaceStringByArray"
+00626: 185  swap
+00627: 185  notearg
+00628: 185  getlocal 5
+00631: 185  notearg
+00632: 185  getlocal 4
+00635: 185  notearg
+00636: 185  call 2
+00639: 185  setlocal 6
+00642: 185  pop
+00643: 186  this
+00644: 186  getprop "m_lb_title"
+00649: 186  dup
+00650: 186  callprop "setString"
+00655: 186  swap
+00656: 186  notearg
+00657: 186  getlocal 6
+00660: 186  notearg
+00661: 186  call 1
+00664: 186  pop
+00665: 188  zero
+00666: 188  setlocal 1
+00669: 188  pop
+00670: 188  goto 763 (+93)
+00675: 190  loophead
+00676: 190  this
+00677: 190  getprop "m_needList"
+00682: 190  getlocal 1
+00685: 190  getelem
+00686: 190  dup
+00687: 190  callprop "setVisible"
+00692: 190  swap
+00693: 190  notearg
+00694: 190  false
+00695: 190  notearg
+00696: 190  call 1
+00699: 190  pop
+00700: 191  this
+00701: 191  getprop "m_haveList"
+00706: 191  getlocal 1
+00709: 191  getelem
+00710: 191  dup
+00711: 191  callprop "setVisible"
+00716: 191  swap
+00717: 191  notearg
+00718: 191  false
+00719: 191  notearg
+00720: 191  call 1
+00723: 191  pop
+00724: 192  this
+00725: 192  getprop "m_iconsList"
+00730: 192  getlocal 1
+00733: 192  getelem
+00734: 192  dup
+00735: 192  callprop "setVisible"
+00740: 192  swap
+00741: 192  notearg
+00742: 192  false
+00743: 192  notearg
+00744: 192  call 1
+00747: 192  pop
+00748: 188  localinc 11
+00751: 188  getlocal 1
+00754: 188  pos
+00755: 188  dup
+00756: 188  one
+00757: 188  add
+00758: 188  setlocal 1
+00761: 188  pop
+00762: 188  pop
+00763: 188  loopentry
+00764: 188  getlocal 1
+00767: 188  int8 3
+00769: 188  lt
+00770: 188  ifne 675 (-95)
+00775: 196  this
+00776: 196  dup
+00777: 196  callprop "updateStars"
+00782: 196  swap
+00783: 196  notearg
+00784: 196  this
+00785: 196  getprop "step"
+00790: 196  notearg
+00791: 196  call 1
+00794: 196  pop
+00795: 197  this
+00796: 197  dup
+00797: 197  callprop "updateRefiningInfor"
+00802: 197  swap
+00803: 197  notearg
+00804: 197  this
+00805: 197  getprop "step"
+00810: 197  notearg
+00811: 197  call 1
+00814: 197  pop
+00815: 197  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:153 ---
+;; function object[3] updateStars
+;; function metadata object[3] nargs=2 bindings=5
+;; arg[0] step
+;; arg[1] isup
+;; local[0] allshows
+;; local[1] i
+;; local[2] arr
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=1249 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:199 ---
+loc   line  op
+----- ----  --
+main:
+00000: 200  getarg 1
+00003: 200  ifeq 1287 (+1284)
+00008: 202  this
+00009: 202  getprop "m_lightStars"
+00014: 202  getarg 0
+00017: 202  one
+00018: 202  sub
+00019: 202  getelem
+00020: 202  dup
+00021: 202  callprop "runAction"
+00026: 202  swap
+00027: 202  notearg
+00028: 202  name "cc"
+00033: 202  getprop "Sequence"
+00038: 202  dup
+00039: 202  callprop "create"
+00044: 202  swap
+00045: 202  notearg
+00046: 202  name "cc"
+00051: 202  getprop "Blink"
+00056: 202  dup
+00057: 202  callprop "create"
+00062: 202  swap
+00063: 202  notearg
+00064: 202  double 0.4
+00069: 202  notearg
+00070: 202  int8 2
+00072: 202  notearg
+00073: 202  call 2
+00076: 202  notearg
+00077: 202  name "cc"
+00082: 202  getprop "Hide"
+00087: 202  dup
+00088: 202  callprop "create"
+00093: 202  swap
+00094: 202  notearg
+00095: 202  call 0
+00098: 202  notearg
+00099: 202  name "cc"
+00104: 202  getprop "FadeIn"
+00109: 202  dup
+00110: 202  callprop "create"
+00115: 202  swap
+00116: 202  notearg
+00117: 202  one
+00118: 202  notearg
+00119: 202  call 1
+00122: 202  notearg
+00123: 202  name "cc"
+00128: 202  getprop "Show"
+00133: 202  dup
+00134: 202  callprop "create"
+00139: 202  swap
+00140: 202  notearg
+00141: 202  call 0
+00144: 202  notearg
+00145: 202  call 4
+00148: 202  notearg
+00149: 202  call 1
+00152: 202  pop
+00153: 203  getarg 0
+00156: 203  int8 3
+00158: 203  eq
+00159: 203  ifeq 437 (+278)
+00164: 204  this
+00165: 204  getprop "m_lightLines"
+00170: 204  int8 3
+00172: 204  getelem
+00173: 204  dup
+00174: 204  callprop "runAction"
+00179: 204  swap
+00180: 204  notearg
+00181: 204  name "cc"
+00186: 204  getprop "Sequence"
+00191: 204  dup
+00192: 204  callprop "create"
+00197: 204  swap
+00198: 204  notearg
+00199: 204  name "cc"
+00204: 204  getprop "Hide"
+00209: 204  dup
+00210: 204  callprop "create"
+00215: 204  swap
+00216: 204  notearg
+00217: 204  call 0
+00220: 204  notearg
+00221: 204  name "cc"
+00226: 204  getprop "EaseBackIn"
+00231: 204  dup
+00232: 204  callprop "create"
+00237: 204  swap
+00238: 204  notearg
+00239: 204  name "cc"
+00244: 204  getprop "FadeIn"
+00249: 204  dup
+00250: 204  callprop "create"
+00255: 204  swap
+00256: 204  notearg
+00257: 204  int8 2
+00259: 204  notearg
+00260: 204  call 1
+00263: 204  notearg
+00264: 204  call 1
+00267: 204  notearg
+00268: 204  name "cc"
+00273: 204  getprop "Show"
+00278: 204  dup
+00279: 204  callprop "create"
+00284: 204  swap
+00285: 204  notearg
+00286: 204  call 0
+00289: 204  notearg
+00290: 204  call 3
+00293: 204  notearg
+00294: 204  call 1
+00297: 204  pop
+00298: 205  this
+00299: 205  getprop "m_lightLines"
+00304: 205  int8 4
+00306: 205  getelem
+00307: 205  dup
+00308: 205  callprop "runAction"
+00313: 205  swap
+00314: 205  notearg
+00315: 205  name "cc"
+00320: 205  getprop "Sequence"
+00325: 205  dup
+00326: 205  callprop "create"
+00331: 205  swap
+00332: 205  notearg
+00333: 205  name "cc"
+00338: 205  getprop "Hide"
+00343: 205  dup
+00344: 205  callprop "create"
+00349: 205  swap
+00350: 205  notearg
+00351: 205  call 0
+00354: 205  notearg
+00355: 205  name "cc"
+00360: 205  getprop "EaseBackIn"
+00365: 205  dup
+00366: 205  callprop "create"
+00371: 205  swap
+00372: 205  notearg
+00373: 205  name "cc"
+00378: 205  getprop "FadeIn"
+00383: 205  dup
+00384: 205  callprop "create"
+00389: 205  swap
+00390: 205  notearg
+00391: 205  int8 2
+00393: 205  notearg
+00394: 205  call 1
+00397: 205  notearg
+00398: 205  call 1
+00401: 205  notearg
+00402: 205  name "cc"
+00407: 205  getprop "Show"
+00412: 205  dup
+00413: 205  callprop "create"
+00418: 205  swap
+00419: 205  notearg
+00420: 205  call 0
+00423: 205  notearg
+00424: 205  call 3
+00427: 205  notearg
+00428: 205  call 1
+00431: 205  pop
+00432: 205  goto 864 (+432)
+00437: 206  getarg 0
+00440: 206  int8 4
+00442: 206  eq
+00443: 206  ifeq 586 (+143)
+00448: 207  this
+00449: 207  getprop "m_lightLines"
+00454: 207  zero
+00455: 207  getelem
+00456: 207  dup
+00457: 207  callprop "runAction"
+00462: 207  swap
+00463: 207  notearg
+00464: 207  name "cc"
+00469: 207  getprop "Sequence"
+00474: 207  dup
+00475: 207  callprop "create"
+00480: 207  swap
+00481: 207  notearg
+00482: 207  name "cc"
+00487: 207  getprop "Hide"
+00492: 207  dup
+00493: 207  callprop "create"
+00498: 207  swap
+00499: 207  notearg
+00500: 207  call 0
+00503: 207  notearg
+00504: 207  name "cc"
+00509: 207  getprop "EaseBackIn"
+00514: 207  dup
+00515: 207  callprop "create"
+00520: 207  swap
+00521: 207  notearg
+00522: 207  name "cc"
+00527: 207  getprop "FadeIn"
+00532: 207  dup
+00533: 207  callprop "create"
+00538: 207  swap
+00539: 207  notearg
+00540: 207  int8 2
+00542: 207  notearg
+00543: 207  call 1
+00546: 207  notearg
+00547: 207  call 1
+00550: 207  notearg
+00551: 207  name "cc"
+00556: 207  getprop "Show"
+00561: 207  dup
+00562: 207  callprop "create"
+00567: 207  swap
+00568: 207  notearg
+00569: 207  call 0
+00572: 207  notearg
+00573: 207  call 3
+00576: 207  notearg
+00577: 207  call 1
+00580: 207  pop
+00581: 207  goto 864 (+283)
+00586: 208  getarg 0
+00589: 208  int8 5
+00591: 208  eq
+00592: 208  ifeq 864 (+272)
+00597: 209  this
+00598: 209  getprop "m_lightLines"
+00603: 209  one
+00604: 209  getelem
+00605: 209  dup
+00606: 209  callprop "runAction"
+00611: 209  swap
+00612: 209  notearg
+00613: 209  name "cc"
+00618: 209  getprop "Sequence"
+00623: 209  dup
+00624: 209  callprop "create"
+00629: 209  swap
+00630: 209  notearg
+00631: 209  name "cc"
+00636: 209  getprop "Hide"
+00641: 209  dup
+00642: 209  callprop "create"
+00647: 209  swap
+00648: 209  notearg
+00649: 209  call 0
+00652: 209  notearg
+00653: 209  name "cc"
+00658: 209  getprop "EaseBackIn"
+00663: 209  dup
+00664: 209  callprop "create"
+00669: 209  swap
+00670: 209  notearg
+00671: 209  name "cc"
+00676: 209  getprop "FadeIn"
+00681: 209  dup
+00682: 209  callprop "create"
+00687: 209  swap
+00688: 209  notearg
+00689: 209  int8 2
+00691: 209  notearg
+00692: 209  call 1
+00695: 209  notearg
+00696: 209  call 1
+00699: 209  notearg
+00700: 209  name "cc"
+00705: 209  getprop "Show"
+00710: 209  dup
+00711: 209  callprop "create"
+00716: 209  swap
+00717: 209  notearg
+00718: 209  call 0
+00721: 209  notearg
+00722: 209  call 3
+00725: 209  notearg
+00726: 209  call 1
+00729: 209  pop
+00730: 210  this
+00731: 210  getprop "m_lightLines"
+00736: 210  int8 2
+00738: 210  getelem
+00739: 210  dup
+00740: 210  callprop "runAction"
+00745: 210  swap
+00746: 210  notearg
+00747: 210  name "cc"
+00752: 210  getprop "Sequence"
+00757: 210  dup
+00758: 210  callprop "create"
+00763: 210  swap
+00764: 210  notearg
+00765: 210  name "cc"
+00770: 210  getprop "Hide"
+00775: 210  dup
+00776: 210  callprop "create"
+00781: 210  swap
+00782: 210  notearg
+00783: 210  call 0
+00786: 210  notearg
+00787: 210  name "cc"
+00792: 210  getprop "EaseBackIn"
+00797: 210  dup
+00798: 210  callprop "create"
+00803: 210  swap
+00804: 210  notearg
+00805: 210  name "cc"
+00810: 210  getprop "FadeIn"
+00815: 210  dup
+00816: 210  callprop "create"
+00821: 210  swap
+00822: 210  notearg
+00823: 210  int8 2
+00825: 210  notearg
+00826: 210  call 1
+00829: 210  notearg
+00830: 210  call 1
+00833: 210  notearg
+00834: 210  name "cc"
+00839: 210  getprop "Show"
+00844: 210  dup
+00845: 210  callprop "create"
+00850: 210  swap
+00851: 210  notearg
+00852: 210  call 0
+00855: 210  notearg
+00856: 210  call 3
+00859: 210  notearg
+00860: 210  call 1
+00863: 210  pop
+00864: 213  this
+00865: 213  getprop "show"
+00870: 213  null
+00871: 213  ne
+00872: 213  ifeq 937 (+65)
+00877: 214  this
+00878: 214  getprop "show"
+00883: 214  dup
+00884: 214  callprop "stopAllAction"
+00889: 214  swap
+00890: 214  notearg
+00891: 214  call 0
+00894: 214  pop
+00895: 215  name "xs"
+00900: 215  getprop "Utils"
+00905: 215  getprop "Node"
+00910: 215  dup
+00911: 215  callprop "removeFromParentSafe"
+00916: 215  swap
+00917: 215  notearg
+00918: 215  this
+00919: 215  getprop "show"
+00924: 215  notearg
+00925: 215  call 1
+00928: 215  pop
+00929: 216  this
+00930: 216  null
+00931: 216  setprop "show"
+00936: 216  pop
+00937: 219  newarray 5
+00941: 219  string "jin"
+00946: 219  initelem_array 0
+00950: 219  string "mu"
+00955: 219  initelem_array 1
+00959: 219  string "shui"
+00964: 219  initelem_array 2
+00968: 219  string "huo"
+00973: 219  initelem_array 3
+00977: 219  string "tu"
+00982: 219  initelem_array 4
+00986: 219  endinit
+00987: 219  setlocal 0
+00990: 219  pop
+00991: 220  this
+00992: 220  name "xs"
+00997: 220  getprop "Factorys"
+01002: 220  getprop "Sprite"
+01007: 220  dup
+01008: 220  callprop "create"
+01013: 220  swap
+01014: 220  notearg
+01015: 220  getlocal 0
+01018: 220  getarg 0
+01021: 220  one
+01022: 220  sub
+01023: 220  getelem
+01024: 220  notearg
+01025: 220  string "SkillRefiningScene"
+01030: 220  notearg
+01031: 220  call 2
+01034: 220  setprop "show"
+01039: 220  pop
+01040: 222  name "xs"
+01045: 222  getprop "Utils"
+01050: 222  getprop "Node"
+01055: 222  dup
+01056: 222  callprop "attachNodes"
+01061: 222  swap
+01062: 222  notearg
+01063: 222  this
+01064: 222  notearg
+01065: 222  this
+01066: 222  getprop "show"
+01071: 222  notearg
+01072: 222  newinit 1
+01077: 223  string "lb"
+01082: 223  initprop "desc"
+01087: 224  true
+01088: 224  initprop "sc"
+01093: 225  newinit 1
+01098: 225  uint16 260
+01101: 225  initprop "x"
+01106: 225  uint16 330
+01109: 225  initprop "y"
+01114: 225  endinit
+01115: 225  initprop "offset"
+01120: 225  endinit
+01121: 225  notearg
+01122: 225  call 3
+01125: 225  pop
+01126: 227  this
+01127: 227  getprop "show"
+01132: 227  dup
+01133: 227  callprop "runAction"
+01138: 227  swap
+01139: 227  notearg
+01140: 227  name "cc"
+01145: 227  getprop "Sequence"
+01150: 227  dup
+01151: 227  callprop "create"
+01156: 227  swap
+01157: 227  notearg
+01158: 227  name "cc"
+01163: 227  getprop "Spawn"
+01168: 227  dup
+01169: 227  callprop "create"
+01174: 227  swap
+01175: 227  notearg
+01176: 227  name "cc"
+01181: 227  getprop "ScaleTo"
+01186: 227  dup
+01187: 227  callprop "create"
+01192: 227  swap
+01193: 227  notearg
+01194: 227  one
+01195: 227  notearg
+01196: 227  int8 3
+01198: 227  notearg
+01199: 227  call 2
+01202: 227  notearg
+01203: 227  name "cc"
+01208: 227  getprop "FadeOut"
+01213: 227  dup
+01214: 227  callprop "create"
+01219: 227  swap
+01220: 227  notearg
+01221: 227  one
+01222: 227  notearg
+01223: 227  call 1
+01226: 227  notearg
+01227: 227  call 2
+01230: 227  notearg
+01231: 227  name "cc"
+01236: 227  getprop "CallFunc"
+01241: 227  dup
+01242: 227  callprop "create"
+01247: 227  swap
+01248: 227  notearg
+01249: 228  lambda (function () {
+    [sourceless code]
+})
+01254: 228  dup
+01255: 228  callprop "bind"
+01260: 228  swap
+01261: 228  notearg
+01262: 231  this
+01263: 231  notearg
+01264: 231  call 1
+01267: 231  notearg
+01268: 231  this
+01269: 231  notearg
+01270: 231  call 2
+01273: 231  notearg
+01274: 231  call 2
+01277: 231  notearg
+01278: 231  call 1
+01281: 231  pop
+01282: 231  goto 1733 (+451)
+01287: 234  zero
+01288: 234  setlocal 1
+01291: 234  pop
+01292: 234  goto 1378 (+86)
+01297: 235  loophead
+01298: 235  getlocal 1
+01301: 235  getarg 0
+01304: 235  lt
+01305: 235  ifeq 1339 (+34)
+01310: 236  this
+01311: 236  getprop "m_lightStars"
+01316: 236  getlocal 1
+01319: 236  getelem
+01320: 236  dup
+01321: 236  callprop "setVisible"
+01326: 236  swap
+01327: 236  notearg
+01328: 236  true
+01329: 236  notearg
+01330: 236  call 1
+01333: 236  pop
+01334: 236  goto 1363 (+29)
+01339: 238  this
+01340: 238  getprop "m_lightStars"
+01345: 238  getlocal 1
+01348: 238  getelem
+01349: 238  dup
+01350: 238  callprop "setVisible"
+01355: 238  swap
+01356: 238  notearg
+01357: 238  false
+01358: 238  notearg
+01359: 238  call 1
+01362: 238  pop
+01363: 234  localinc 11
+01366: 234  getlocal 1
+01369: 234  pos
+01370: 234  dup
+01371: 234  one
+01372: 234  add
+01373: 234  setlocal 1
+01376: 234  pop
+01377: 234  pop
+01378: 234  loopentry
+01379: 234  getlocal 1
+01382: 234  int8 5
+01384: 234  lt
+01385: 234  ifne 1297 (-88)
+01390: 242  newarray 0
+01394: 242  endinit
+01395: 242  setlocal 2
+01398: 242  pop
+01399: 243  getarg 0
+01402: 243  int8 3
+01404: 243  eq
+01405: 243  ifeq 1451 (+46)
+01410: 244  getlocal 2
+01413: 244  dup
+01414: 244  callprop "push"
+01419: 244  swap
+01420: 244  notearg
+01421: 244  int8 3
+01423: 244  notearg
+01424: 244  call 1
+01427: 244  pop
+01428: 244  getlocal 2
+01431: 244  dup
+01432: 244  callprop "push"
+01437: 244  swap
+01438: 244  notearg
+01439: 244  int8 4
+01441: 244  notearg
+01442: 244  call 1
+01445: 244  pop
+01446: 244  goto 1619 (+173)
+01451: 245  getarg 0
+01454: 245  int8 4
+01456: 245  eq
+01457: 245  ifeq 1520 (+63)
+01462: 246  getlocal 2
+01465: 246  dup
+01466: 246  callprop "push"
+01471: 246  swap
+01472: 246  notearg
+01473: 246  zero
+01474: 246  notearg
+01475: 246  call 1
+01478: 246  pop
+01479: 246  getlocal 2
+01482: 246  dup
+01483: 246  callprop "push"
+01488: 246  swap
+01489: 246  notearg
+01490: 246  int8 3
+01492: 246  notearg
+01493: 246  call 1
+01496: 246  pop
+01497: 246  getlocal 2
+01500: 246  dup
+01501: 246  callprop "push"
+01506: 246  swap
+01507: 246  notearg
+01508: 246  int8 4
+01510: 246  notearg
+01511: 246  call 1
+01514: 246  pop
+01515: 246  goto 1619 (+104)
+01520: 247  getarg 0
+01523: 247  int8 5
+01525: 247  eq
+01526: 247  ifeq 1619 (+93)
+01531: 248  getlocal 2
+01534: 248  dup
+01535: 248  callprop "push"
+01540: 248  swap
+01541: 248  notearg
+01542: 248  zero
+01543: 248  notearg
+01544: 248  call 1
+01547: 248  pop
+01548: 248  getlocal 2
+01551: 248  dup
+01552: 248  callprop "push"
+01557: 248  swap
+01558: 248  notearg
+01559: 248  one
+01560: 248  notearg
+01561: 248  call 1
+01564: 248  pop
+01565: 248  getlocal 2
+01568: 248  dup
+01569: 248  callprop "push"
+01574: 248  swap
+01575: 248  notearg
+01576: 248  int8 2
+01578: 248  notearg
+01579: 248  call 1
+01582: 248  pop
+01583: 248  getlocal 2
+01586: 248  dup
+01587: 248  callprop "push"
+01592: 248  swap
+01593: 248  notearg
+01594: 248  int8 3
+01596: 248  notearg
+01597: 248  call 1
+01600: 248  pop
+01601: 248  getlocal 2
+01604: 248  dup
+01605: 248  callprop "push"
+01610: 248  swap
+01611: 248  notearg
+01612: 248  int8 4
+01614: 248  notearg
+01615: 248  call 1
+01618: 248  pop
+01619: 250  zero
+01620: 250  setlocal 1
+01623: 250  pop
+01624: 250  goto 1721 (+97)
+01629: 251  loophead
+01630: 251  getlocal 2
+01633: 251  dup
+01634: 251  callprop "inArray"
+01639: 251  swap
+01640: 251  notearg
+01641: 251  getlocal 1
+01644: 251  notearg
+01645: 251  call 1
+01648: 251  ifeq 1682 (+34)
+01653: 252  this
+01654: 252  getprop "m_lightLines"
+01659: 252  getlocal 1
+01662: 252  getelem
+01663: 252  dup
+01664: 252  callprop "setVisible"
+01669: 252  swap
+01670: 252  notearg
+01671: 252  true
+01672: 252  notearg
+01673: 252  call 1
+01676: 252  pop
+01677: 252  goto 1706 (+29)
+01682: 254  this
+01683: 254  getprop "m_lightLines"
+01688: 254  getlocal 1
+01691: 254  getelem
+01692: 254  dup
+01693: 254  callprop "setVisible"
+01698: 254  swap
+01699: 254  notearg
+01700: 254  false
+01701: 254  notearg
+01702: 254  call 1
+01705: 254  pop
+01706: 250  localinc 11
+01709: 250  getlocal 1
+01712: 250  pos
+01713: 250  dup
+01714: 250  one
+01715: 250  add
+01716: 250  setlocal 1
+01719: 250  pop
+01720: 250  pop
+01721: 250  loopentry
+01722: 250  getlocal 1
+01725: 250  int8 5
+01727: 250  lt
+01728: 250  ifne 1629 (-99)
+01733: 257  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:199 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:228 ---
+loc   line  op
+----- ----  --
+main:
+00000: 229  name "xs"
+00005: 229  getprop "Utils"
+00010: 229  getprop "Node"
+00015: 229  dup
+00016: 229  callprop "removeFromParentSafe"
+00021: 229  swap
+00022: 229  notearg
+00023: 229  this
+00024: 229  getprop "show"
+00029: 229  notearg
+00030: 229  call 1
+00033: 229  pop
+00034: 230  this
+00035: 230  null
+00036: 230  setprop "show"
+00041: 230  pop
+00042: 230  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:228 ---
+;; function object[4] updateRefiningInfor
+;; function metadata object[4] nargs=1 bindings=9
+;; arg[0] step
+;; local[0] allsteps
+;; local[1] array
+;; local[2] str
+;; local[3] titleStr
+;; local[4] RefineInfos
+;; local[5] i
+;; local[6] clickRefineInfo
+;; local[7] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:259 ---
+loc   line  op
+----- ----  --
+main:
+00000: 261  getarg 0
+00003: 261  int8 5
+00005: 261  ge
+00006: 261  or 19 (+13)
+00011: 261  pop
+00012: 261  this
+00013: 261  getprop "isSelected"
+00018: 261  not
+00019: 261  ifeq 55 (+36)
+00024: 262  this
+00025: 262  getprop "m_lianhuaButton"
+00030: 262  dup
+00031: 262  callprop "setEnabled"
+00036: 262  swap
+00037: 262  notearg
+00038: 262  false
+00039: 262  notearg
+00040: 262  call 1
+00043: 262  pop
+00044: 263  int8 4
+00046: 263  setarg 0
+00049: 263  pop
+00050: 263  goto 158 (+108)
+00055: 265  this
+00056: 265  getprop "m_lianhuaButton"
+00061: 265  dup
+00062: 265  callprop "setEnabled"
+00067: 265  swap
+00068: 265  notearg
+00069: 265  true
+00070: 265  notearg
+00071: 265  call 1
+00074: 265  pop
+00075: 266  getarg 0
+00078: 266  int8 2
+00080: 266  ge
+00081: 266  ifeq 158 (+77)
+00086: 267  this
+00087: 267  getprop "m_userVipGrade"
+00092: 267  this
+00093: 267  getprop "m_needVip"
+00098: 267  lt
+00099: 267  ifeq 158 (+59)
+00104: 268  this
+00105: 268  getprop "m_lianhuaButton"
+00110: 268  dup
+00111: 268  callprop "setEnabled"
+00116: 268  swap
+00117: 268  notearg
+00118: 268  false
+00119: 268  notearg
+00120: 268  call 1
+00123: 268  pop
+00124: 269  this
+00125: 269  getprop "ccbNode_Infor"
+00130: 269  dup
+00131: 269  callprop "getChildByTag"
+00136: 269  swap
+00137: 269  notearg
+00138: 269  int8 12
+00140: 269  notearg
+00141: 269  call 1
+00144: 269  dup
+00145: 269  callprop "setVisible"
+00150: 269  swap
+00151: 269  notearg
+00152: 269  true
+00153: 269  notearg
+00154: 269  call 1
+00157: 269  pop
+00158: 274  this
+00159: 274  getprop "isSelected"
+00164: 274  ifeq 671 (+507)
+00169: 275  newarray 5
+00173: 275  string "\u91D1"
+00178: 275  initelem_array 0
+00182: 275  string "\u6728"
+00187: 275  initelem_array 1
+00191: 275  string "\u6C34"
+00196: 275  initelem_array 2
+00200: 275  string "\u706B"
+00205: 275  initelem_array 3
+00209: 275  string "\u571F"
+00214: 275  initelem_array 4
+00218: 275  endinit
+00219: 275  setlocal 0
+00222: 275  pop
+00223: 276  newarray 0
+00227: 276  endinit
+00228: 276  setlocal 1
+00231: 276  pop
+00232: 277  getlocal 1
+00235: 277  zero
+00236: 277  name "xs"
+00241: 277  getprop "Tools"
+00246: 277  getprop "String"
+00251: 277  dup
+00252: 277  callprop "convNumberString"
+00257: 277  swap
+00258: 277  notearg
+00259: 277  getarg 0
+00262: 277  one
+00263: 277  add
+00264: 277  notearg
+00265: 277  call 1
+00268: 277  setelem
+00269: 277  pop
+00270: 278  getlocal 1
+00273: 278  one
+00274: 278  getlocal 0
+00277: 278  getarg 0
+00280: 278  getelem
+00281: 278  setelem
+00282: 278  pop
+00283: 280  name "xs"
+00288: 280  getprop "Tools"
+00293: 280  getprop "String"
+00298: 280  dup
+00299: 280  callprop "createString"
+00304: 280  swap
+00305: 280  notearg
+00306: 280  string "RefiningSkill_title"
+00311: 280  notearg
+00312: 280  call 1
+00315: 280  setlocal 2
+00318: 280  pop
+00319: 281  name "xs"
+00324: 281  getprop "Tools"
+00329: 281  getprop "String"
+00334: 281  dup
+00335: 281  callprop "replaceStringByArray"
+00340: 281  swap
+00341: 281  notearg
+00342: 281  getlocal 2
+00345: 281  notearg
+00346: 281  getlocal 1
+00349: 281  notearg
+00350: 281  call 2
+00353: 281  setlocal 3
+00356: 281  pop
+00357: 282  this
+00358: 282  getprop "m_lb_title"
+00363: 282  dup
+00364: 282  callprop "setString"
+00369: 282  swap
+00370: 282  notearg
+00371: 282  getlocal 3
+00374: 282  notearg
+00375: 282  call 1
+00378: 282  pop
+00379: 285  this
+00380: 285  getprop "refinedata"
+00385: 285  getarg 0
+00388: 285  one
+00389: 285  add
+00390: 285  getelem
+00391: 285  setlocal 4
+00394: 285  pop
+00395: 287  zero
+00396: 287  setlocal 5
+00399: 287  pop
+00400: 287  goto 659 (+259)
+00405: 289  loophead
+00406: 289  getlocal 4
+00409: 289  getlocal 5
+00412: 289  getelem
+00413: 289  setlocal 6
+00416: 289  pop
+00417: 291  getlocal 6
+00420: 291  ifeq 572 (+152)
+00425: 292  newinit 1
+00430: 293  getlocal 6
+00433: 293  getprop "item_id"
+00438: 293  initprop "id"
+00443: 294  getlocal 6
+00446: 294  getprop "item_num"
+00451: 294  initprop "num"
+00456: 295  getlocal 6
+00459: 295  getprop "item_type"
+00464: 295  initprop "type"
+00469: 295  endinit
+00470: 295  setlocal 7
+00473: 295  pop
+00474: 298  this
+00475: 298  dup
+00476: 298  callprop "switchCreateIcon"
+00481: 298  swap
+00482: 298  notearg
+00483: 298  getlocal 7
+00486: 298  notearg
+00487: 298  getlocal 5
+00490: 298  notearg
+00491: 298  call 2
+00494: 298  pop
+00495: 299  this
+00496: 299  getprop "m_needList"
+00501: 299  getlocal 5
+00504: 299  getelem
+00505: 299  dup
+00506: 299  callprop "setVisible"
+00511: 299  swap
+00512: 299  notearg
+00513: 299  true
+00514: 299  notearg
+00515: 299  call 1
+00518: 299  pop
+00519: 300  this
+00520: 300  getprop "m_haveList"
+00525: 300  getlocal 5
+00528: 300  getelem
+00529: 300  dup
+00530: 300  callprop "setVisible"
+00535: 300  swap
+00536: 300  notearg
+00537: 300  true
+00538: 300  notearg
+00539: 300  call 1
+00542: 300  pop
+00543: 301  this
+00544: 301  getprop "m_iconsList"
+00549: 301  getlocal 5
+00552: 301  getelem
+00553: 301  dup
+00554: 301  callprop "setVisible"
+00559: 301  swap
+00560: 301  notearg
+00561: 301  true
+00562: 301  notearg
+00563: 301  call 1
+00566: 301  pop
+00567: 301  goto 644 (+77)
+00572: 303  this
+00573: 303  getprop "m_needList"
+00578: 303  getlocal 5
+00581: 303  getelem
+00582: 303  dup
+00583: 303  callprop "setVisible"
+00588: 303  swap
+00589: 303  notearg
+00590: 303  false
+00591: 303  notearg
+00592: 303  call 1
+00595: 303  pop
+00596: 304  this
+00597: 304  getprop "m_haveList"
+00602: 304  getlocal 5
+00605: 304  getelem
+00606: 304  dup
+00607: 304  callprop "setVisible"
+00612: 304  swap
+00613: 304  notearg
+00614: 304  false
+00615: 304  notearg
+00616: 304  call 1
+00619: 304  pop
+00620: 305  this
+00621: 305  getprop "m_iconsList"
+00626: 305  getlocal 5
+00629: 305  getelem
+00630: 305  dup
+00631: 305  callprop "setVisible"
+00636: 305  swap
+00637: 305  notearg
+00638: 305  false
+00639: 305  notearg
+00640: 305  call 1
+00643: 305  pop
+00644: 287  localinc 11
+00647: 287  getlocal 5
+00650: 287  pos
+00651: 287  dup
+00652: 287  one
+00653: 287  add
+00654: 287  setlocal 5
+00657: 287  pop
+00658: 287  pop
+00659: 287  loopentry
+00660: 287  getlocal 5
+00663: 287  int8 3
+00665: 287  lt
+00666: 287  ifne 405 (-261)
+00671: 308  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:259 ---
+;; function object[5] switchCreateIcon
+;; function metadata object[5] nargs=2 bindings=3
+;; arg[0] data
+;; arg[1] i
+;; local[0] type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:311 ---
+loc   line  op
+----- ----  --
+main:
+00000: 313  callname "Number"
+00005: 313  implicitthis "Number"
+00010: 313  notearg
+00011: 313  getarg 0
+00014: 313  getprop "type"
+00019: 313  notearg
+00020: 313  call 1
+00023: 313  setlocal 0
+00026: 313  pop
+00027: 314  getlocal 0
+00030: 314  tableswitch defaultOffset 107 low 5 high 8
+	5: 29
+	6: 55
+	7: 0
+	8: 81
+00059: 317  this
+00060: 317  dup
+00061: 317  callprop "createItemIcon"
+00066: 317  swap
+00067: 317  notearg
+00068: 317  getarg 0
+00071: 317  notearg
+00072: 317  getarg 1
+00075: 317  notearg
+00076: 317  call 2
+00079: 317  pop
+00080: 318  goto 163 (+83)
+00085: 322  this
+00086: 322  dup
+00087: 322  callprop "createGeneralsSoulIcon"
+00092: 322  swap
+00093: 322  notearg
+00094: 322  getarg 0
+00097: 322  notearg
+00098: 322  getarg 1
+00101: 322  notearg
+00102: 322  call 2
+00105: 322  pop
+00106: 323  goto 163 (+57)
+00111: 327  this
+00112: 327  dup
+00113: 327  callprop "createEquipmentFragmentIcon"
+00118: 327  swap
+00119: 327  notearg
+00120: 327  getarg 0
+00123: 327  notearg
+00124: 327  getarg 1
+00127: 327  notearg
+00128: 327  call 2
+00131: 327  pop
+00132: 328  goto 163 (+31)
+00137: 331  this
+00138: 331  dup
+00139: 331  callprop "createItemIcon"
+00144: 331  swap
+00145: 331  notearg
+00146: 331  getarg 0
+00149: 331  notearg
+00150: 331  getarg 1
+00153: 331  notearg
+00154: 331  call 2
+00157: 331  pop
+00158: 332  goto 163 (+5)
+00163: 333  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:311 ---
+;; function object[6] createItemIcon
+;; function metadata object[6] nargs=2 bindings=11
+;; arg[0] data
+;; arg[1] idex
+;; local[0] model
+;; local[1] head
+;; local[2] array
+;; local[3] str
+;; local[4] introduction
+;; local[5] goodNum
+;; local[6] _array
+;; local[7] _str
+;; local[8] haveNum
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:336 ---
+loc   line  op
+----- ----  --
+main:
+00000: 339  name "xs"
+00005: 339  getprop "Models"
+00010: 339  getprop "Item"
+00015: 339  dup
+00016: 339  callprop "createWithBase"
+00021: 339  swap
+00022: 339  notearg
+00023: 339  getarg 0
+00026: 339  getprop "id"
+00031: 339  notearg
+00032: 339  call 1
+00035: 339  setlocal 0
+00038: 339  pop
+00039: 340  getlocal 0
+00042: 340  dup
+00043: 340  callprop "createIcon_Grade"
+00048: 340  swap
+00049: 340  notearg
+00050: 340  call 0
+00053: 340  setlocal 1
+00056: 340  pop
+00057: 341  name "xs"
+00062: 341  getprop "Utils"
+00067: 341  getprop "Node"
+00072: 341  dup
+00073: 341  callprop "replaceChildSafe"
+00078: 341  swap
+00079: 341  notearg
+00080: 341  this
+00081: 341  getprop "ccbNode_Infor"
+00086: 341  notearg
+00087: 341  this
+00088: 341  getprop "m_iconsList"
+00093: 341  getarg 1
+00096: 341  getelem
+00097: 341  notearg
+00098: 341  getlocal 1
+00101: 341  notearg
+00102: 341  call 3
+00105: 341  pop
+00106: 342  this
+00107: 342  getprop "m_iconsList"
+00112: 342  getarg 1
+00115: 342  getlocal 1
+00118: 342  setelem
+00119: 342  pop
+00120: 345  newarray 0
+00124: 345  endinit
+00125: 345  setlocal 2
+00128: 345  pop
+00129: 346  getlocal 2
+00132: 346  zero
+00133: 346  getlocal 0
+00136: 346  dup
+00137: 346  callprop "getNameString"
+00142: 346  swap
+00143: 346  notearg
+00144: 346  call 0
+00147: 346  setelem
+00148: 346  pop
+00149: 347  getlocal 2
+00152: 347  one
+00153: 347  getarg 0
+00156: 347  getprop "num"
+00161: 347  setelem
+00162: 347  pop
+00163: 348  name "xs"
+00168: 348  getprop "Tools"
+00173: 348  getprop "String"
+00178: 348  dup
+00179: 348  callprop "createString"
+00184: 348  swap
+00185: 348  notearg
+00186: 348  string "MiracleWeapon_1"
+00191: 348  notearg
+00192: 348  call 1
+00195: 348  setlocal 3
+00198: 348  pop
+00199: 349  name "xs"
+00204: 349  getprop "Tools"
+00209: 349  getprop "String"
+00214: 349  dup
+00215: 349  callprop "replaceStringByArray"
+00220: 349  swap
+00221: 349  notearg
+00222: 349  getlocal 3
+00225: 349  notearg
+00226: 349  getlocal 2
+00229: 349  notearg
+00230: 349  call 2
+00233: 349  setlocal 4
+00236: 349  pop
+00237: 351  this
+00238: 351  getprop "m_needList"
+00243: 351  getarg 1
+00246: 351  getelem
+00247: 351  dup
+00248: 351  callprop "setString"
+00253: 351  swap
+00254: 351  notearg
+00255: 351  getlocal 4
+00258: 351  notearg
+00259: 351  call 1
+00262: 351  pop
+00263: 354  name "xs"
+00268: 354  getprop "Profile"
+00273: 354  getprop "GameData"
+00278: 354  getprop "Mgr"
+00283: 354  dup
+00284: 354  callprop "getInstance"
+00289: 354  swap
+00290: 354  notearg
+00291: 354  call 0
+00294: 354  getprop "Items"
+00299: 354  dup
+00300: 354  callprop "getTotalNumById"
+00305: 354  swap
+00306: 354  notearg
+00307: 354  getarg 0
+00310: 354  getprop "id"
+00315: 354  notearg
+00316: 354  call 1
+00319: 354  setlocal 5
+00322: 354  pop
+00323: 356  newarray 0
+00327: 356  endinit
+00328: 356  setlocal 6
+00331: 356  pop
+00332: 357  getlocal 6
+00335: 357  zero
+00336: 357  getlocal 5
+00339: 357  dup
+00340: 357  callprop "toString"
+00345: 357  swap
+00346: 357  notearg
+00347: 357  call 0
+00350: 357  setelem
+00351: 357  pop
+00352: 358  name "xs"
+00357: 358  getprop "Tools"
+00362: 358  getprop "String"
+00367: 358  dup
+00368: 358  callprop "createString"
+00373: 358  swap
+00374: 358  notearg
+00375: 358  string "MiracleWeapon_have"
+00380: 358  notearg
+00381: 358  call 1
+00384: 358  setlocal 7
+00387: 358  pop
+00388: 359  name "xs"
+00393: 359  getprop "Tools"
+00398: 359  getprop "String"
+00403: 359  dup
+00404: 359  callprop "replaceStringByArray"
+00409: 359  swap
+00410: 359  notearg
+00411: 359  getlocal 7
+00414: 359  notearg
+00415: 359  getlocal 6
+00418: 359  notearg
+00419: 359  call 2
+00422: 359  setlocal 8
+00425: 359  pop
+00426: 361  this
+00427: 361  getprop "m_haveList"
+00432: 361  getarg 1
+00435: 361  getelem
+00436: 361  dup
+00437: 361  callprop "setString"
+00442: 361  swap
+00443: 361  notearg
+00444: 361  getlocal 8
+00447: 361  notearg
+00448: 361  call 1
+00451: 361  pop
+00452: 361  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:336 ---
+;; function object[7] createEquipmentFragmentIcon
+;; function metadata object[7] nargs=2 bindings=14
+;; arg[0] data
+;; arg[1] idex
+;; local[0] equipmentlId
+;; local[1] model
+;; local[2] equipData
+;; local[3] head
+;; local[4] array
+;; local[5] str
+;; local[6] introduction
+;; local[7] EquipmentPieceNum
+;; local[8] i
+;; local[9] _array
+;; local[10] _str
+;; local[11] haveNum
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=137 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:364 ---
+loc   line  op
+----- ----  --
+main:
+00000: 367  getarg 0
+00003: 367  getprop "id"
+00008: 367  setlocal 0
+00011: 367  pop
+00012: 368  name "xs"
+00017: 368  getprop "Models"
+00022: 368  getprop "Equipment"
+00027: 368  dup
+00028: 368  callprop "createWithBase"
+00033: 368  swap
+00034: 368  notearg
+00035: 368  getlocal 0
+00038: 368  dup
+00039: 368  callprop "toString"
+00044: 368  swap
+00045: 368  notearg
+00046: 368  call 0
+00049: 368  notearg
+00050: 368  call 1
+00053: 368  setaliasedvar "model" (hops = 0, slot = 2)
+00062: 368  pop
+00063: 369  name "xs"
+00068: 369  getprop "Models"
+00073: 369  getprop "EquipmentPiece"
+00078: 369  dup
+00079: 369  callprop "createWithBase"
+00084: 369  swap
+00085: 369  notearg
+00086: 369  getlocal 0
+00089: 369  dup
+00090: 369  callprop "toString"
+00095: 369  swap
+00096: 369  notearg
+00097: 369  call 0
+00100: 369  notearg
+00101: 369  call 1
+00104: 369  setlocal 2
+00107: 369  pop
+00108: 370  getlocal 2
+00111: 370  dup
+00112: 370  callprop "createIcon_Grade"
+00117: 370  swap
+00118: 370  notearg
+00119: 370  call 0
+00122: 370  setlocal 3
+00125: 370  pop
+00126: 371  getlocal 3
+00129: 371  dup
+00130: 371  callprop "setOnClickCallBack"
+00135: 371  swap
+00136: 371  notearg
+00137: 371  lambda (function () {
+    [sourceless code]
+})
+00142: 371  dup
+00143: 371  callprop "bind"
+00148: 371  swap
+00149: 371  notearg
+00150: 375  this
+00151: 375  notearg
+00152: 375  call 1
+00155: 375  notearg
+00156: 375  call 1
+00159: 375  pop
+00160: 377  name "xs"
+00165: 377  getprop "Utils"
+00170: 377  getprop "Node"
+00175: 377  dup
+00176: 377  callprop "replaceChildSafe"
+00181: 377  swap
+00182: 377  notearg
+00183: 377  this
+00184: 377  getprop "ccbNode_Infor"
+00189: 377  notearg
+00190: 377  this
+00191: 377  getprop "m_iconsList"
+00196: 377  getarg 1
+00199: 377  getelem
+00200: 377  notearg
+00201: 377  getlocal 3
+00204: 377  notearg
+00205: 377  call 3
+00208: 377  pop
+00209: 378  this
+00210: 378  getprop "m_iconsList"
+00215: 378  getarg 1
+00218: 378  getlocal 3
+00221: 378  setelem
+00222: 378  pop
+00223: 381  newarray 0
+00227: 381  endinit
+00228: 381  setlocal 4
+00231: 381  pop
+00232: 382  getlocal 4
+00235: 382  zero
+00236: 382  getlocal 2
+00239: 382  dup
+00240: 382  callprop "getNameString"
+00245: 382  swap
+00246: 382  notearg
+00247: 382  call 0
+00250: 382  setelem
+00251: 382  pop
+00252: 383  getlocal 4
+00255: 383  one
+00256: 383  getarg 0
+00259: 383  getprop "num"
+00264: 383  setelem
+00265: 383  pop
+00266: 384  name "xs"
+00271: 384  getprop "Tools"
+00276: 384  getprop "String"
+00281: 384  dup
+00282: 384  callprop "createString"
+00287: 384  swap
+00288: 384  notearg
+00289: 384  string "MiracleWeapon_3"
+00294: 384  notearg
+00295: 384  call 1
+00298: 384  setlocal 5
+00301: 384  pop
+00302: 385  name "xs"
+00307: 385  getprop "Tools"
+00312: 385  getprop "String"
+00317: 385  dup
+00318: 385  callprop "replaceStringByArray"
+00323: 385  swap
+00324: 385  notearg
+00325: 385  getlocal 5
+00328: 385  notearg
+00329: 385  getlocal 4
+00332: 385  notearg
+00333: 385  call 2
+00336: 385  setlocal 6
+00339: 385  pop
+00340: 386  this
+00341: 386  getprop "m_needList"
+00346: 386  getarg 1
+00349: 386  getelem
+00350: 386  dup
+00351: 386  callprop "setString"
+00356: 386  swap
+00357: 386  notearg
+00358: 386  getlocal 6
+00361: 386  notearg
+00362: 386  call 1
+00365: 386  pop
+00366: 389  zero
+00367: 389  setlocal 7
+00370: 389  pop
+00371: 390  zero
+00372: 390  setlocal 8
+00375: 390  pop
+00376: 390  goto 450 (+74)
+00381: 391  loophead
+00382: 391  this
+00383: 391  getprop "arrayPieces"
+00388: 391  getlocal 8
+00391: 391  getelem
+00392: 391  getprop "pk_id"
+00397: 391  getarg 0
+00400: 391  getprop "id"
+00405: 391  eq
+00406: 391  ifeq 435 (+29)
+00411: 393  this
+00412: 393  getprop "arrayPieces"
+00417: 393  getlocal 8
+00420: 393  getelem
+00421: 393  getprop "num"
+00426: 393  setlocal 7
+00429: 393  pop
+00430: 394  goto 471 (+41)
+00435: 390  localinc 11
+00438: 390  getlocal 8
+00441: 390  pos
+00442: 390  dup
+00443: 390  one
+00444: 390  add
+00445: 390  setlocal 8
+00448: 390  pop
+00449: 390  pop
+00450: 390  loopentry
+00451: 390  getlocal 8
+00454: 390  this
+00455: 390  getprop "arrayPieces"
+00460: 390  length "length"
+00465: 390  lt
+00466: 390  ifne 381 (-85)
+00471: 399  newarray 0
+00475: 399  endinit
+00476: 399  setlocal 9
+00479: 399  pop
+00480: 400  getlocal 9
+00483: 400  zero
+00484: 400  getlocal 7
+00487: 400  dup
+00488: 400  callprop "toString"
+00493: 400  swap
+00494: 400  notearg
+00495: 400  call 0
+00498: 400  setelem
+00499: 400  pop
+00500: 401  name "xs"
+00505: 401  getprop "Tools"
+00510: 401  getprop "String"
+00515: 401  dup
+00516: 401  callprop "createString"
+00521: 401  swap
+00522: 401  notearg
+00523: 401  string "MiracleWeapon_have"
+00528: 401  notearg
+00529: 401  call 1
+00532: 401  setlocal 10
+00535: 401  pop
+00536: 402  name "xs"
+00541: 402  getprop "Tools"
+00546: 402  getprop "String"
+00551: 402  dup
+00552: 402  callprop "replaceStringByArray"
+00557: 402  swap
+00558: 402  notearg
+00559: 402  getlocal 10
+00562: 402  notearg
+00563: 402  getlocal 9
+00566: 402  notearg
+00567: 402  call 2
+00570: 402  setlocal 11
+00573: 402  pop
+00574: 403  this
+00575: 403  getprop "m_haveList"
+00580: 403  getarg 1
+00583: 403  getelem
+00584: 403  dup
+00585: 403  callprop "setString"
+00590: 403  swap
+00591: 403  notearg
+00592: 403  getlocal 11
+00595: 403  notearg
+00596: 403  call 1
+00599: 403  pop
+00600: 403  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:364 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:371 ---
+loc   line  op
+----- ----  --
+main:
+00000: 372  name "xs"
+00005: 372  getprop "Views"
+00010: 372  getprop "Mgr"
+00015: 372  dup
+00016: 372  callprop "showDialogByName"
+00021: 372  swap
+00022: 372  notearg
+00023: 372  string "EquipNoPanel"
+00028: 372  notearg
+00029: 372  newinit 1
+00034: 373  getaliasedvar "model" (hops = 0, slot = 2)
+00043: 373  initprop "equipData"
+00048: 373  endinit
+00049: 373  notearg
+00050: 373  call 2
+00053: 373  pop
+00054: 374  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:371 ---
+;; function object[8] createGeneralsSoulIcon
+;; function metadata object[8] nargs=2 bindings=14
+;; arg[0] data
+;; arg[1] idex
+;; local[0] generalId
+;; local[1] equipData
+;; local[2] model
+;; local[3] head
+;; local[4] array
+;; local[5] str
+;; local[6] introduction
+;; local[7] EquipmentPieceNum
+;; local[8] i
+;; local[9] _array
+;; local[10] _str
+;; local[11] haveNum
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=137 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:406 ---
+loc   line  op
+----- ----  --
+main:
+00000: 409  getarg 0
+00003: 409  getprop "id"
+00008: 409  setlocal 0
+00011: 409  pop
+00012: 410  name "xs"
+00017: 410  getprop "Models"
+00022: 410  getprop "General"
+00027: 410  dup
+00028: 410  callprop "createWithBase"
+00033: 410  swap
+00034: 410  notearg
+00035: 410  getlocal 0
+00038: 410  dup
+00039: 410  callprop "toString"
+00044: 410  swap
+00045: 410  notearg
+00046: 410  call 0
+00049: 410  notearg
+00050: 410  call 1
+00053: 410  setaliasedvar "equipData" (hops = 0, slot = 2)
+00062: 410  pop
+00063: 411  name "xs"
+00068: 411  getprop "Models"
+00073: 411  getprop "GeneralSoul"
+00078: 411  dup
+00079: 411  callprop "createWithBase"
+00084: 411  swap
+00085: 411  notearg
+00086: 411  getlocal 0
+00089: 411  dup
+00090: 411  callprop "toString"
+00095: 411  swap
+00096: 411  notearg
+00097: 411  call 0
+00100: 411  notearg
+00101: 411  call 1
+00104: 411  setlocal 2
+00107: 411  pop
+00108: 412  getlocal 2
+00111: 412  dup
+00112: 412  callprop "createIcon_Grade"
+00117: 412  swap
+00118: 412  notearg
+00119: 412  call 0
+00122: 412  setlocal 3
+00125: 412  pop
+00126: 414  getlocal 3
+00129: 414  dup
+00130: 414  callprop "setOnClickCallBack"
+00135: 414  swap
+00136: 414  notearg
+00137: 414  lambda (function () {
+    [sourceless code]
+})
+00142: 414  dup
+00143: 414  callprop "bind"
+00148: 414  swap
+00149: 414  notearg
+00150: 419  this
+00151: 419  notearg
+00152: 419  call 1
+00155: 419  notearg
+00156: 419  call 1
+00159: 419  pop
+00160: 421  name "xs"
+00165: 421  getprop "Utils"
+00170: 421  getprop "Node"
+00175: 421  dup
+00176: 421  callprop "replaceChildSafe"
+00181: 421  swap
+00182: 421  notearg
+00183: 421  this
+00184: 421  getprop "ccbNode_Infor"
+00189: 421  notearg
+00190: 421  this
+00191: 421  getprop "m_iconsList"
+00196: 421  getarg 1
+00199: 421  getelem
+00200: 421  notearg
+00201: 421  getlocal 3
+00204: 421  notearg
+00205: 421  call 3
+00208: 421  pop
+00209: 422  this
+00210: 422  getprop "m_iconsList"
+00215: 422  getarg 1
+00218: 422  getlocal 3
+00221: 422  setelem
+00222: 422  pop
+00223: 425  newarray 0
+00227: 425  endinit
+00228: 425  setlocal 4
+00231: 425  pop
+00232: 426  getlocal 4
+00235: 426  zero
+00236: 426  getlocal 2
+00239: 426  dup
+00240: 426  callprop "getNameString"
+00245: 426  swap
+00246: 426  notearg
+00247: 426  call 0
+00250: 426  setelem
+00251: 426  pop
+00252: 427  getlocal 4
+00255: 427  one
+00256: 427  getarg 0
+00259: 427  getprop "num"
+00264: 427  setelem
+00265: 427  pop
+00266: 428  name "xs"
+00271: 428  getprop "Tools"
+00276: 428  getprop "String"
+00281: 428  dup
+00282: 428  callprop "createString"
+00287: 428  swap
+00288: 428  notearg
+00289: 428  string "MiracleWeapon_2"
+00294: 428  notearg
+00295: 428  call 1
+00298: 428  setlocal 5
+00301: 428  pop
+00302: 429  name "xs"
+00307: 429  getprop "Tools"
+00312: 429  getprop "String"
+00317: 429  dup
+00318: 429  callprop "replaceStringByArray"
+00323: 429  swap
+00324: 429  notearg
+00325: 429  getlocal 5
+00328: 429  notearg
+00329: 429  getlocal 4
+00332: 429  notearg
+00333: 429  call 2
+00336: 429  setlocal 6
+00339: 429  pop
+00340: 431  this
+00341: 431  getprop "m_needList"
+00346: 431  getarg 1
+00349: 431  getelem
+00350: 431  dup
+00351: 431  callprop "setString"
+00356: 431  swap
+00357: 431  notearg
+00358: 431  getlocal 6
+00361: 431  notearg
+00362: 431  call 1
+00365: 431  pop
+00366: 435  zero
+00367: 435  setlocal 7
+00370: 435  pop
+00371: 436  zero
+00372: 436  setlocal 8
+00375: 436  pop
+00376: 436  goto 450 (+74)
+00381: 437  loophead
+00382: 437  this
+00383: 437  getprop "arraySouls"
+00388: 437  getlocal 8
+00391: 437  getelem
+00392: 437  getprop "pk_id"
+00397: 437  getarg 0
+00400: 437  getprop "id"
+00405: 437  eq
+00406: 437  ifeq 435 (+29)
+00411: 439  this
+00412: 439  getprop "arraySouls"
+00417: 439  getlocal 8
+00420: 439  getelem
+00421: 439  getprop "num"
+00426: 439  setlocal 7
+00429: 439  pop
+00430: 440  goto 471 (+41)
+00435: 436  localinc 11
+00438: 436  getlocal 8
+00441: 436  pos
+00442: 436  dup
+00443: 436  one
+00444: 436  add
+00445: 436  setlocal 8
+00448: 436  pop
+00449: 436  pop
+00450: 436  loopentry
+00451: 436  getlocal 8
+00454: 436  this
+00455: 436  getprop "arraySouls"
+00460: 436  length "length"
+00465: 436  lt
+00466: 436  ifne 381 (-85)
+00471: 444  newarray 0
+00475: 444  endinit
+00476: 444  setlocal 9
+00479: 444  pop
+00480: 445  getlocal 9
+00483: 445  zero
+00484: 445  getlocal 7
+00487: 445  dup
+00488: 445  callprop "toString"
+00493: 445  swap
+00494: 445  notearg
+00495: 445  call 0
+00498: 445  setelem
+00499: 445  pop
+00500: 447  name "xs"
+00505: 447  getprop "Tools"
+00510: 447  getprop "String"
+00515: 447  dup
+00516: 447  callprop "createString"
+00521: 447  swap
+00522: 447  notearg
+00523: 447  string "MiracleWeapon_have"
+00528: 447  notearg
+00529: 447  call 1
+00532: 447  setlocal 10
+00535: 447  pop
+00536: 448  name "xs"
+00541: 448  getprop "Tools"
+00546: 448  getprop "String"
+00551: 448  dup
+00552: 448  callprop "replaceStringByArray"
+00557: 448  swap
+00558: 448  notearg
+00559: 448  getlocal 10
+00562: 448  notearg
+00563: 448  getlocal 9
+00566: 448  notearg
+00567: 448  call 2
+00570: 448  setlocal 11
+00573: 448  pop
+00574: 449  this
+00575: 449  getprop "m_haveList"
+00580: 449  getarg 1
+00583: 449  getelem
+00584: 449  dup
+00585: 449  callprop "setString"
+00590: 449  swap
+00591: 449  notearg
+00592: 449  getlocal 11
+00595: 449  notearg
+00596: 449  call 1
+00599: 449  pop
+00600: 449  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:406 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:414 ---
+loc   line  op
+----- ----  --
+main:
+00000: 415  name "xs"
+00005: 415  getprop "Views"
+00010: 415  getprop "Mgr"
+00015: 415  dup
+00016: 415  callprop "showDialogByName"
+00021: 415  swap
+00022: 415  notearg
+00023: 415  string "DetailDialogGeneral"
+00028: 415  notearg
+00029: 415  newinit 1
+00034: 416  getaliasedvar "equipData" (hops = 0, slot = 2)
+00043: 416  initprop "generalData"
+00048: 417  string "achieve_nothave"
+00053: 417  initprop "type"
+00058: 417  endinit
+00059: 417  notearg
+00060: 417  call 2
+00063: 417  pop
+00064: 418  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:414 ---
+;; function object[9] selectButtonCallback
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:453 ---
+loc   line  op
+----- ----  --
+main:
+00000: 454  name "xs"
+00005: 454  getprop "Views"
+00010: 454  getprop "Mgr"
+00015: 454  dup
+00016: 454  callprop "showDialogByName"
+00021: 454  swap
+00022: 454  notearg
+00023: 454  string "RefiningSkillDialog"
+00028: 454  notearg
+00029: 454  call 1
+00032: 454  pop
+00033: 454  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:453 ---
+;; function object[10] selectSkill
+;; function metadata object[10] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:456 ---
+loc   line  op
+----- ----  --
+main:
+00000: 458  this
+00001: 458  true
+00002: 458  setprop "isSelected"
+00007: 458  pop
+00008: 459  this
+00009: 459  getprop "ccbNode_Infor"
+00014: 459  dup
+00015: 459  callprop "setVisible"
+00020: 459  swap
+00021: 459  notearg
+00022: 459  true
+00023: 459  notearg
+00024: 459  call 1
+00027: 459  pop
+00028: 460  this
+00029: 460  getprop "ccbNode_Show"
+00034: 460  dup
+00035: 460  callprop "setVisible"
+00040: 460  swap
+00041: 460  notearg
+00042: 460  false
+00043: 460  notearg
+00044: 460  call 1
+00047: 460  pop
+00048: 462  name "xs"
+00053: 462  getprop "Utils"
+00058: 462  getprop "Node"
+00063: 462  dup
+00064: 462  callprop "safeRemoveChild"
+00069: 462  swap
+00070: 462  notearg
+00071: 462  this
+00072: 462  getprop "m_addButton"
+00077: 462  notearg
+00078: 462  call 1
+00081: 462  pop
+00082: 464  this
+00083: 464  getarg 0
+00086: 464  dup
+00087: 464  callprop "createIcon_Select"
+00092: 464  swap
+00093: 464  notearg
+00094: 464  call 0
+00097: 464  setprop "m_addButton"
+00102: 464  pop
+00103: 465  this
+00104: 465  getprop "m_addButton"
+00109: 465  dup
+00110: 465  callprop "setOnClickCallBack"
+00115: 465  swap
+00116: 465  notearg
+00117: 465  this
+00118: 465  getprop "selectButtonCallback"
+00123: 465  dup
+00124: 465  callprop "bind"
+00129: 465  swap
+00130: 465  notearg
+00131: 465  this
+00132: 465  notearg
+00133: 465  call 1
+00136: 465  notearg
+00137: 465  call 1
+00140: 465  pop
+00141: 466  name "xs"
+00146: 466  getprop "Utils"
+00151: 466  getprop "Node"
+00156: 466  dup
+00157: 466  callprop "attachNodes"
+00162: 466  swap
+00163: 466  notearg
+00164: 466  this
+00165: 466  getprop "ccbNode_BuaGua"
+00170: 466  dup
+00171: 466  callprop "getChildByTag"
+00176: 466  swap
+00177: 466  notearg
+00178: 466  int8 101
+00180: 466  notearg
+00181: 466  call 1
+00184: 466  notearg
+00185: 466  this
+00186: 466  getprop "m_addButton"
+00191: 466  notearg
+00192: 466  newinit 1
+00197: 466  string "lb"
+00202: 466  initprop "desc"
+00207: 466  name "cc"
+00212: 466  dup
+00213: 466  callprop "p"
+00218: 466  swap
+00219: 466  notearg
+00220: 466  int8 30
+00222: 466  notearg
+00223: 466  int8 30
+00225: 466  notearg
+00226: 466  call 2
+00229: 466  initprop "offset"
+00234: 466  true
+00235: 466  initprop "sc"
+00240: 466  endinit
+00241: 466  notearg
+00242: 466  null
+00243: 466  notearg
+00244: 466  call 4
+00247: 466  pop
+00248: 468  this
+00249: 468  getarg 0
+00252: 468  getprop "advanced_level"
+00257: 468  setprop "step"
+00262: 468  pop
+00263: 470  this
+00264: 470  getarg 0
+00267: 470  getprop "pk_id"
+00272: 470  setprop "m_selectSkillId"
+00277: 470  pop
+00278: 472  this
+00279: 472  name "xs"
+00284: 472  getprop "Tools"
+00289: 472  getprop "CfgData"
+00294: 472  dup
+00295: 472  callprop "readRecordByTypeAndKey"
+00300: 472  swap
+00301: 472  notearg
+00302: 472  name "xs"
+00307: 472  getprop "Constant_CfgDataType_Skill_refine_conf"
+00312: 472  notearg
+00313: 472  getarg 0
+00316: 472  getprop "id"
+00321: 472  notearg
+00322: 472  call 2
+00325: 472  setprop "refinedata"
+00330: 472  pop
+00331: 474  this
+00332: 474  dup
+00333: 474  callprop "updateStars"
+00338: 474  swap
+00339: 474  notearg
+00340: 474  this
+00341: 474  getprop "step"
+00346: 474  notearg
+00347: 474  call 1
+00350: 474  pop
+00351: 475  this
+00352: 475  dup
+00353: 475  callprop "updateRefiningInfor"
+00358: 475  swap
+00359: 475  notearg
+00360: 475  this
+00361: 475  getprop "step"
+00366: 475  notearg
+00367: 475  call 1
+00370: 475  pop
+00371: 475  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:456 ---
+;; function object[11] lianhuaCallback
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=118 object[0]
+;; FUNCTION-MAP kind=lambda offset=124 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:478 ---
+loc   line  op
+----- ----  --
+main:
+00000: 482  this
+00001: 482  getprop "step"
+00006: 482  int8 5
+00008: 482  lt
+00009: 482  ifeq 136 (+127)
+00014: 483  name "xs"
+00019: 483  getprop "Tools"
+00024: 483  getprop "Net"
+00029: 483  dup
+00030: 483  callprop "requestSkillRefine"
+00035: 483  swap
+00036: 483  notearg
+00037: 484  newinit 1
+00042: 485  name "xs"
+00047: 485  getprop "Profile"
+00052: 485  getprop "GameData"
+00057: 485  getprop "Mgr"
+00062: 485  dup
+00063: 485  callprop "getInstance"
+00068: 485  swap
+00069: 485  notearg
+00070: 485  call 0
+00073: 485  getprop "Player"
+00078: 485  dup
+00079: 485  callprop "getPlayer"
+00084: 485  swap
+00085: 485  notearg
+00086: 485  call 0
+00089: 485  dup
+00090: 485  callprop "getPlayerId"
+00095: 485  swap
+00096: 485  notearg
+00097: 485  call 0
+00100: 485  initprop "user_id"
+00105: 486  this
+00106: 486  getprop "m_selectSkillId"
+00111: 486  initprop "user_skill_id"
+00116: 486  endinit
+00117: 486  notearg
+00118: 488  lambda (function () {
+    [sourceless code]
+})
+00123: 488  notearg
+00124: 495  lambda (function () {
+    [sourceless code]
+})
+00129: 495  notearg
+00130: 505  this
+00131: 505  notearg
+00132: 505  call 4
+00135: 505  pop
+00136: 507  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:478 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:488 ---
+loc   line  op
+----- ----  --
+main:
+00000: 489  getarg 0
+00003: 489  getprop "result"
+00008: 489  true
+00009: 489  eq
+00010: 489  ifeq 84 (+74)
+00015: 490  this
+00016: 490  propinc "step"
+00022: 490  dup
+00023: 490  getprop "step"
+00028: 490  pos
+00029: 490  dup
+00030: 490  one
+00031: 490  add
+00032: 490  pick 2
+00034: 490  swap
+00035: 490  setprop "step"
+00040: 490  pop
+00041: 490  pop
+00042: 491  this
+00043: 491  dup
+00044: 491  callprop "updateStars"
+00049: 491  swap
+00050: 491  notearg
+00051: 491  this
+00052: 491  getprop "step"
+00057: 491  notearg
+00058: 491  true
+00059: 491  notearg
+00060: 491  call 2
+00063: 491  pop
+00064: 492  this
+00065: 492  dup
+00066: 492  callprop "updateRefiningInfor"
+00071: 492  swap
+00072: 492  notearg
+00073: 492  this
+00074: 492  getprop "step"
+00079: 492  notearg
+00080: 492  call 1
+00083: 492  pop
+00084: 493  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:488 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:495 ---
+loc   line  op
+----- ----  --
+main:
+00000: 497  string "e_skill_refine_1007"
+00005: 497  getarg 0
+00008: 497  getprop "error_code"
+00013: 497  eq
+00014: 497  ifeq 84 (+70)
+00019: 498  name "xs"
+00024: 498  getprop "Views"
+00029: 498  getprop "Mgr"
+00034: 498  dup
+00035: 498  callprop "showToast"
+00040: 498  swap
+00041: 498  notearg
+00042: 498  name "xs"
+00047: 498  getprop "Tools"
+00052: 498  getprop "String"
+00057: 498  dup
+00058: 498  callprop "createString"
+00063: 498  swap
+00064: 498  notearg
+00065: 498  string "RefiningNotFill"
+00070: 498  notearg
+00071: 498  call 1
+00074: 498  notearg
+00075: 498  call 1
+00078: 498  pop
+00079: 498  goto 144 (+65)
+00084: 500  name "xs"
+00089: 500  getprop "Views"
+00094: 500  getprop "Mgr"
+00099: 500  dup
+00100: 500  callprop "showToast"
+00105: 500  swap
+00106: 500  notearg
+00107: 500  name "xs"
+00112: 500  getprop "Tools"
+00117: 500  getprop "String"
+00122: 500  dup
+00123: 500  callprop "createString"
+00128: 500  swap
+00129: 500  notearg
+00130: 500  string "RefiningFailed"
+00135: 500  notearg
+00136: 500  call 1
+00139: 500  notearg
+00140: 500  call 1
+00143: 500  pop
+00144: 503  true
+00145: 503  return
+00146: 503  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:495 ---
+;; function object[12] onEnter
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:509 ---
+loc   line  op
+----- ----  --
+main:
+00000: 510  this
+00001: 510  dup
+00002: 510  callprop "_super"
+00007: 510  swap
+00008: 510  notearg
+00009: 510  call 0
+00012: 510  pop
+00013: 511  name "xs"
+00018: 511  getprop "Utils"
+00023: 511  getprop "Notify"
+00028: 511  dup
+00029: 511  callprop "addObserver"
+00034: 511  swap
+00035: 511  notearg
+00036: 511  this
+00037: 511  notearg
+00038: 511  this
+00039: 511  getprop "selectSkill"
+00044: 511  notearg
+00045: 511  name "xs"
+00050: 511  getprop "Constant_Notify_Event_SkillSelect"
+00055: 511  notearg
+00056: 511  call 3
+00059: 511  pop
+00060: 511  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:509 ---
+;; function object[13] onExit
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:513 ---
+loc   line  op
+----- ----  --
+main:
+00000: 514  this
+00001: 514  dup
+00002: 514  callprop "_super"
+00007: 514  swap
+00008: 514  notearg
+00009: 514  call 0
+00012: 514  pop
+00013: 515  name "xs"
+00018: 515  getprop "Utils"
+00023: 515  getprop "Notify"
+00028: 515  dup
+00029: 515  callprop "removeObserver"
+00034: 515  swap
+00035: 515  notearg
+00036: 515  this
+00037: 515  notearg
+00038: 515  name "xs"
+00043: 515  getprop "Constant_Notify_Event_SkillSelect"
+00048: 515  notearg
+00049: 515  call 2
+00052: 515  pop
+00053: 515  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:513 ---
+;; function object[14] setBaseTouchPriority
+;; function metadata object[14] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:517 ---
+loc   line  op
+----- ----  --
+main:
+00000: 518  this
+00001: 518  getarg 0
+00004: 518  setprop "m_baseTouchPriority"
+00009: 518  pop
+00010: 518  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:517 ---
+;; function object[15] create
+;; function metadata object[15] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:521 ---
+loc   line  op
+----- ----  --
+main:
+00000: 522  name "xs"
+00005: 522  getprop "Views"
+00010: 522  getprop "SkillRefiningLayer"
+00015: 522  undefined
+00016: 522  notearg
+00017: 522  new 0
+00020: 522  setlocal 0
+00023: 522  pop
+00024: 523  getlocal 0
+00027: 523  and 51 (+24)
+00032: 523  pop
+00033: 523  getlocal 0
+00036: 523  dup
+00037: 523  callprop "init"
+00042: 523  swap
+00043: 523  notearg
+00044: 523  getarg 0
+00047: 523  notearg
+00048: 523  call 1
+00051: 523  ifeq 60 (+9)
+00056: 524  getlocal 0
+00059: 524  return
+00060: 526  name "xs"
+00065: 526  dup
+00066: 526  callprop "assert"
+00071: 526  swap
+00072: 526  notearg
+00073: 526  false
+00074: 526  notearg
+00075: 526  string "xs.Views.SkillRefiningLayer.create error!"
+00080: 526  notearg
+00081: 526  call 2
+00084: 526  pop
+00085: 527  null
+00086: 527  return
+00087: 527  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/SkillRefiningLayer.js:521 ---

@@ -1,0 +1,352 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/TemplatePartHurt.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/TemplatePartHurt.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Utils"
+00010:   9  dup
+00011:   9  callprop "extendScope"
+00016:   9  swap
+00017:   9  notearg
+00018:  10  name "xs"
+00023:  10  getprop "Cfg"
+00028:  10  getprop "Skill"
+00033:  10  getprop "template"
+00038:  10  getprop "part"
+00043:  10  notearg
+00044:  11  newinit 1
+00049:  14  newinit 1
+00054:  15  newinit 1
+00059:  16  newinit 1
+00064:  16  string "template.item.TI_Hp_Sub_Top_To"
+00069:  16  initprop "extend"
+00074:  16  endinit
+00075:  16  initprop "_to_hp_top"
+00080:  18  newinit 1
+00085:  18  string "template.item.TI_Text_Hurt_To"
+00090:  18  initprop "extend"
+00095:  18  endinit
+00096:  18  initprop "_to_text"
+00101:  19  newinit 1
+00106:  19  string "template.item.TI_Card_Do_To"
+00111:  19  initprop "extend"
+00116:  19  endinit
+00117:  19  initprop "_card_to"
+00122:  19  endinit
+00123:  19  initprop "items"
+00128:  19  endinit
+00129:  19  initprop "TP_Hurt_Hit"
+00134:  25  newinit 1
+00139:  26  newinit 1
+00144:  29  newinit 1
+00149:  30  newinit 1
+00154:  31  string "env"
+00159:  31  initprop "type"
+00164:  32  string "to_once"
+00169:  32  initprop "belong"
+00174:  33  newarray 1
+00178:  33  string "finish"
+00183:  33  initelem_array 0
+00187:  33  endinit
+00188:  33  initprop "trigger"
+00193:  33  endinit
+00194:  33  initprop "property"
+00199:  35  newinit 1
+00204:  36  newinit 1
+00209:  36  string "DelayTime"
+00214:  36  initprop "type"
+00219:  36  int8 4
+00221:  36  name "xs"
+00226:  36  getprop "fps"
+00231:  36  div
+00232:  36  initprop "dp"
+00237:  36  endinit
+00238:  36  initprop "_delay"
+00243:  37  newinit 1
+00248:  37  string "createAction"
+00253:  37  initprop "type"
+00258:  37  string "createFinishEffectAction"
+00263:  37  initprop "name"
+00268:  37  endinit
+00269:  37  initprop "_finish"
+00274:  37  endinit
+00275:  37  initprop "timelines"
+00280:  37  endinit
+00281:  37  initprop "_finish_pause"
+00286:  41  newinit 1
+00291:  41  string "template.item.TI_DeathCount_To"
+00296:  41  initprop "extend"
+00301:  41  endinit
+00302:  41  initprop "_death_count"
+00307:  42  newinit 1
+00312:  42  string "template.item.TI_Hp_Sub_Top_To"
+00317:  42  initprop "extend"
+00322:  42  endinit
+00323:  42  initprop "_to_hp_top"
+00328:  43  newinit 1
+00333:  43  string "template.item.TI_Hp_Sub_Bot_To"
+00338:  43  initprop "extend"
+00343:  43  endinit
+00344:  43  initprop "_to_hp_bot"
+00349:  45  newinit 1
+00354:  45  string "template.item.TI_Text_Hurt_To"
+00359:  45  initprop "extend"
+00364:  45  endinit
+00365:  45  initprop "_to_text"
+00370:  47  newinit 1
+00375:  47  string "template.item.TI_Text_Hurt_All"
+00380:  47  initprop "extend"
+00385:  47  endinit
+00386:  47  initprop "_to_text_all"
+00391:  49  newinit 1
+00396:  50  string "template.item.TI_Arm_To"
+00401:  50  initprop "extend"
+00406:  51  newinit 1
+00411:  52  string "Arm_Fight_Buff01"
+00416:  52  initprop "armatureId"
+00421:  53  true
+00422:  53  initprop "ui"
+00427:  54  newarray 3
+00431:  54  string "miss"
+00436:  54  initelem_array 0
+00440:  54  string "leiji"
+00445:  54  initelem_array 1
+00449:  54  string "spleiji"
+00454:  54  initelem_array 2
+00458:  54  endinit
+00459:  54  initprop "trigger"
+00464:  54  endinit
+00465:  54  initprop "property"
+00470:  56  newinit 1
+00475:  57  newinit 1
+00480:  57  string "ani_effect_miss"
+00485:  57  initprop "aniId"
+00490:  57  endinit
+00491:  57  initprop "_play"
+00496:  57  endinit
+00497:  57  initprop "timelines"
+00502:  57  endinit
+00503:  57  initprop "_to_miss"
+00508:  67  newinit 1
+00513:  68  string "template.item.TI_BgAndCards_Shake_To_Once"
+00518:  68  initprop "extend"
+00523:  69  newinit 1
+00528:  70  false
+00529:  70  initprop "trigger"
+00534:  71  newarray 12
+00538:  71  string "miss"
+00543:  71  initelem_array 0
+00547:  71  string "leiji"
+00552:  71  initelem_array 1
+00556:  71  string "spleiji"
+00561:  71  initelem_array 2
+00565:  71  string "liuli"
+00570:  71  initelem_array 3
+00574:  71  string "tianxiang"
+00579:  71  initelem_array 4
+00583:  71  string "dujin"
+00588:  71  initelem_array 5
+00592:  71  string "tianxiang_v3"
+00597:  71  initelem_array 6
+00601:  71  string "tianxiang_v5"
+00606:  71  initelem_array 7
+00610:  71  string "jiuyuan"
+00615:  71  initelem_array 8
+00619:  71  string "jiuyuan_v3"
+00624:  71  initelem_array 9
+00628:  71  string "jiuyuan_v4"
+00633:  71  initelem_array 10
+00637:  71  string "jiuyuan_v5"
+00642:  71  initelem_array 11
+00646:  71  endinit
+00647:  71  initprop "ignore"
+00652:  71  endinit
+00653:  71  initprop "property"
+00658:  71  endinit
+00659:  71  initprop "_to_cri"
+00664:  77  newinit 1
+00669:  78  string "template.item.TI_CardStatus_End"
+00674:  78  initprop "extend"
+00679:  79  newinit 1
+00684:  80  newarray 2
+00688:  80  string "death"
+00693:  80  initelem_array 0
+00697:  80  string "ghost"
+00702:  80  initelem_array 1
+00706:  80  endinit
+00707:  80  initprop "trigger"
+00712:  80  endinit
+00713:  80  initprop "property"
+00718:  82  newinit 1
+00723:  83  newinit 1
+00728:  83  newinit 1
+00733:  83  string "feng"
+00738:  83  initprop "statusId"
+00743:  83  endinit
+00744:  83  initprop "data"
+00749:  83  endinit
+00750:  83  initprop "_status"
+00755:  83  endinit
+00756:  83  initprop "timelines"
+00761:  83  endinit
+00762:  83  initprop "_to_status_clean_feng"
+00767:  86  newinit 1
+00772:  87  string "template.item.TI_CardStatus_End"
+00777:  87  initprop "extend"
+00782:  88  newinit 1
+00787:  89  newarray 2
+00791:  89  string "death"
+00796:  89  initelem_array 0
+00800:  89  string "ghost"
+00805:  89  initelem_array 1
+00809:  89  endinit
+00810:  89  initprop "trigger"
+00815:  89  endinit
+00816:  89  initprop "property"
+00821:  91  newinit 1
+00826:  92  newinit 1
+00831:  92  newinit 1
+00836:  92  string "le"
+00841:  92  initprop "statusId"
+00846:  92  endinit
+00847:  92  initprop "data"
+00852:  92  endinit
+00853:  92  initprop "_status"
+00858:  92  endinit
+00859:  92  initprop "timelines"
+00864:  92  endinit
+00865:  92  initprop "_to_status_clean_le"
+00870:  96  newinit 1
+00875:  97  string "template.item.TI_CardStatus_End"
+00880:  97  initprop "extend"
+00885:  98  newinit 1
+00890:  99  newarray 2
+00894:  99  string "death"
+00899:  99  initelem_array 0
+00903:  99  string "ghost"
+00908:  99  initelem_array 1
+00912:  99  endinit
+00913:  99  initprop "trigger"
+00918:  99  endinit
+00919:  99  initprop "property"
+00924: 101  newinit 1
+00929: 102  newinit 1
+00934: 102  newinit 1
+00939: 102  string "yun"
+00944: 102  initprop "statusId"
+00949: 102  endinit
+00950: 102  initprop "data"
+00955: 102  endinit
+00956: 102  initprop "_status"
+00961: 102  endinit
+00962: 102  initprop "timelines"
+00967: 102  endinit
+00968: 102  initprop "_to_status_clean_yun"
+00973: 106  newinit 1
+00978: 107  string "template.item.TI_CardStatus_End"
+00983: 107  initprop "extend"
+00988: 108  newinit 1
+00993: 109  newarray 2
+00997: 109  string "death"
+01002: 109  initelem_array 0
+01006: 109  string "ghost"
+01011: 109  initelem_array 1
+01015: 109  endinit
+01016: 109  initprop "trigger"
+01021: 109  endinit
+01022: 109  initprop "property"
+01027: 111  newinit 1
+01032: 112  newinit 1
+01037: 112  newinit 1
+01042: 112  string "fu"
+01047: 112  initprop "statusId"
+01052: 112  endinit
+01053: 112  initprop "data"
+01058: 112  endinit
+01059: 112  initprop "_status"
+01064: 112  endinit
+01065: 112  initprop "timelines"
+01070: 112  endinit
+01071: 112  initprop "_to_status_clean_Fu"
+01076: 116  newinit 1
+01081: 117  string "template.item.TI_Card_Hurt_Over_Normal_To"
+01086: 117  initprop "extend"
+01091: 117  endinit
+01092: 117  initprop "_card_to"
+01097: 117  endinit
+01098: 117  initprop "items"
+01103: 117  endinit
+01104: 117  initprop "TP_Hurt_Over_Normal"
+01109: 127  newinit 1
+01114: 128  string "template.part.TP_Hurt_Over_Normal"
+01119: 128  initprop "extend"
+01124: 130  newinit 1
+01129: 132  null
+01130: 132  initprop "_to_miss"
+01135: 134  newinit 1
+01140: 135  newinit 1
+01145: 136  string "bg_blood"
+01150: 136  initprop "type"
+01155: 137  string "once"
+01160: 137  initprop "belong"
+01165: 138  newarray 1
+01169: 138  string "finish"
+01174: 138  initelem_array 0
+01178: 138  endinit
+01179: 138  initprop "ignore"
+01184: 138  endinit
+01185: 138  initprop "property"
+01190: 140  newinit 1
+01195: 141  newinit 1
+01200: 141  string "Show"
+01205: 141  initprop "type"
+01210: 141  endinit
+01211: 141  initprop "_show"
+01216: 142  newinit 1
+01221: 142  string "DelayTime"
+01226: 142  initprop "type"
+01231: 142  int8 6
+01233: 142  name "xs"
+01238: 142  getprop "fps"
+01243: 142  div
+01244: 142  initprop "dp"
+01249: 142  endinit
+01250: 142  initprop "_delay"
+01255: 143  newinit 1
+01260: 143  string "Hide"
+01265: 143  initprop "type"
+01270: 143  endinit
+01271: 143  initprop "_hide"
+01276: 143  endinit
+01277: 143  initprop "timelines"
+01282: 143  endinit
+01283: 143  initprop "_red_bg"
+01288: 148  newinit 1
+01293: 149  newinit 1
+01298: 150  true
+01299: 150  initprop "trigger"
+01304: 150  endinit
+01305: 150  initprop "property"
+01310: 150  endinit
+01311: 150  initprop "_to_cri"
+01316: 153  newinit 1
+01321: 154  string "template.item.TI_Card_Hurt_Over_To"
+01326: 154  initprop "extend"
+01331: 154  endinit
+01332: 154  initprop "_card_to"
+01337: 154  endinit
+01338: 154  initprop "items"
+01343: 154  endinit
+01344: 154  initprop "TP_Hurt_Over_Skill"
+01349: 154  endinit
+01350: 154  notearg
+01351: 154  call 2
+01354: 154  popv
+01355: 158  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/TemplatePartHurt.js:1 ---

@@ -1,0 +1,420 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Ladder/LadderChartView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=165 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Ladder/LadderChartView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Views"
+00010:   7  name "cc"
+00015:   7  getprop "Layer"
+00020:   7  dup
+00021:   7  callprop "extend"
+00026:   7  swap
+00027:   7  notearg
+00028:   7  newinit 1
+00033:   8  lambda (function () {
+    [sourceless code]
+})
+00038:   8  initprop "ctor"
+00043:  13  lambda (function () {
+    [sourceless code]
+})
+00048:  13  initprop "init"
+00053:  50  newinit 1
+00058:  52  newarray 1
+00062:  53  newinit 1
+00067:  53  int8 10
+00069:  53  initprop "tag"
+00074:  53  string "ls_ext"
+00079:  53  initprop "type"
+00084:  53  string "m_rankingInfo"
+00089:  53  initprop "name"
+00094:  53  newarray 2
+00098:  53  string "LS_qiangduo_Inf"
+00103:  53  initelem_array 0
+00107:  53  string "LS_wujiangName1"
+00112:  53  initelem_array 1
+00116:  53  endinit
+00117:  53  initprop "ids"
+00122:  53  endinit
+00123:  53  initelem_array 0
+00127:  53  endinit
+00128:  53  initprop "info_ccbCfg"
+00133:  53  endinit
+00134:  53  initprop "cfg"
+00139:  53  endinit
+00140:  53  notearg
+00141:  53  call 1
+00144:  53  setprop "LadderChartView"
+00149:  53  popv
+00150:  58  name "xs"
+00155:  58  getprop "Views"
+00160:  58  getprop "LadderChartView"
+00165:  58  lambda (function () {
+    [sourceless code]
+})
+00170:  58  setprop "create"
+00175:  58  popv
+00176:  64  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Ladder/LadderChartView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Ladder/LadderChartView.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  call 0
+00012:   9  pop
+00013:  10  name "cc"
+00018:  10  dup
+00019:  10  callprop "associateWithNative"
+00024:  10  swap
+00025:  10  notearg
+00026:  10  this
+00027:  10  notearg
+00028:  10  name "cc"
+00033:  10  getprop "Layer"
+00038:  10  notearg
+00039:  10  call 2
+00042:  10  pop
+00043:  10  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Ladder/LadderChartView.js:8 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=3
+;; local[0] visibleSize
+;; local[1] offset_y
+;; local[2] playerLadderInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Ladder/LadderChartView.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  14  this
+00001:  14  name "cc"
+00006:  14  dup
+00007:  14  callprop "size"
+00012:  14  swap
+00013:  14  notearg
+00014:  14  uint16 260
+00017:  14  notearg
+00018:  14  uint16 520
+00021:  14  notearg
+00022:  14  call 2
+00025:  14  setprop "viewCellSize"
+00030:  14  pop
+00031:  15  name "cc"
+00036:  15  getprop "Director"
+00041:  15  dup
+00042:  15  callprop "getInstance"
+00047:  15  swap
+00048:  15  notearg
+00049:  15  call 0
+00052:  15  dup
+00053:  15  callprop "getVisibleSize"
+00058:  15  swap
+00059:  15  notearg
+00060:  15  call 0
+00063:  15  setlocal 0
+00066:  15  pop
+00067:  18  name "xs"
+00072:  18  getprop "Tools"
+00077:  18  getprop "UI"
+00082:  18  dup
+00083:  18  callprop "addBgByType"
+00088:  18  swap
+00089:  18  notearg
+00090:  18  this
+00091:  18  notearg
+00092:  18  name "xs"
+00097:  18  getprop "Constant_BgType_Ladder"
+00102:  18  notearg
+00103:  18  call 2
+00106:  18  pop
+00107:  20  getlocal 0
+00110:  20  getprop "height"
+00115:  20  uint16 640
+00118:  20  sub
+00119:  20  zero
+00120:  20  gt
+00121:  20  ifeq 146 (+25)
+00126:  20  getlocal 0
+00129:  20  getprop "height"
+00134:  20  uint16 640
+00137:  20  sub
+00138:  20  int8 2
+00140:  20  div
+00141:  20  goto 147 (+6)
+00146:  20  zero
+00147:  20  setlocal 1
+00150:  20  pop
+00151:  22  this
+00152:  22  name "xs"
+00157:  22  getprop "ccb_reader"
+00162:  22  dup
+00163:  22  callprop "load"
+00168:  22  swap
+00169:  22  notearg
+00170:  22  string "ccb3/beta_1_tiantipaihangdi.ccbi"
+00175:  22  notearg
+00176:  22  call 1
+00179:  22  setprop "infoBarNode"
+00184:  22  pop
+00185:  23  name "xs"
+00190:  23  getprop "Utils"
+00195:  23  getprop "Node"
+00200:  23  dup
+00201:  23  callprop "attachNodes"
+00206:  23  swap
+00207:  23  notearg
+00208:  23  this
+00209:  23  notearg
+00210:  23  this
+00211:  23  getprop "infoBarNode"
+00216:  23  notearg
+00217:  23  newinit 1
+00222:  23  string "rt"
+00227:  23  initprop "desc"
+00232:  23  name "cc"
+00237:  23  dup
+00238:  23  callprop "p"
+00243:  23  swap
+00244:  23  notearg
+00245:  23  int32 -470
+00250:  23  notearg
+00251:  23  int8 51
+00253:  23  getlocal 1
+00256:  23  add
+00257:  23  neg
+00258:  23  notearg
+00259:  23  call 2
+00262:  23  initprop "offset"
+00267:  23  true
+00268:  23  initprop "sc"
+00273:  23  endinit
+00274:  23  notearg
+00275:  23  call 3
+00278:  23  pop
+00279:  25  this
+00280:  25  null
+00281:  25  setprop "m_rankingInfo"
+00286:  25  pop
+00287:  26  name "xs"
+00292:  26  getprop "Utils"
+00297:  26  getprop "UI"
+00302:  26  dup
+00303:  26  callprop "replaceCcbByCfg"
+00308:  26  swap
+00309:  26  notearg
+00310:  26  this
+00311:  26  getprop "infoBarNode"
+00316:  26  notearg
+00317:  26  this
+00318:  26  getprop "cfg"
+00323:  26  getprop "info_ccbCfg"
+00328:  26  notearg
+00329:  26  this
+00330:  26  notearg
+00331:  26  call 3
+00334:  26  pop
+00335:  28  name "xs"
+00340:  28  getprop "Profile"
+00345:  28  getprop "GameData"
+00350:  28  getprop "Mgr"
+00355:  28  dup
+00356:  28  callprop "getInstance"
+00361:  28  swap
+00362:  28  notearg
+00363:  28  call 0
+00366:  28  getprop "LadderInfo"
+00371:  28  dup
+00372:  28  callprop "getLadderInfo"
+00377:  28  swap
+00378:  28  notearg
+00379:  28  call 0
+00382:  28  setlocal 2
+00385:  28  pop
+00386:  29  getlocal 2
+00389:  29  dup
+00390:  29  callprop "isInTop10"
+00395:  29  swap
+00396:  29  notearg
+00397:  29  call 0
+00400:  29  ifeq 488 (+88)
+00405:  30  this
+00406:  30  getprop "m_rankingInfo"
+00411:  30  dup
+00412:  30  callprop "setStringByStrings"
+00417:  30  swap
+00418:  30  notearg
+00419:  30  newarray 2
+00423:  30  name "xs"
+00428:  30  getprop "Tools"
+00433:  30  getprop "String"
+00438:  30  dup
+00439:  30  callprop "createString"
+00444:  30  swap
+00445:  30  notearg
+00446:  30  string "chartInfoStr_in"
+00451:  30  notearg
+00452:  30  call 1
+00455:  30  initelem_array 0
+00459:  31  getlocal 2
+00462:  31  dup
+00463:  31  callprop "getLadderRank"
+00468:  31  swap
+00469:  31  notearg
+00470:  31  call 0
+00473:  31  initelem_array 1
+00477:  31  endinit
+00478:  31  notearg
+00479:  31  call 1
+00482:  31  pop
+00483:  31  goto 566 (+83)
+00488:  33  this
+00489:  33  getprop "m_rankingInfo"
+00494:  33  dup
+00495:  33  callprop "setStringByStrings"
+00500:  33  swap
+00501:  33  notearg
+00502:  33  newarray 2
+00506:  33  name "xs"
+00511:  33  getprop "Tools"
+00516:  33  getprop "String"
+00521:  33  dup
+00522:  33  callprop "createString"
+00527:  33  swap
+00528:  33  notearg
+00529:  33  string "chartInfoStr_out"
+00534:  33  notearg
+00535:  33  call 1
+00538:  33  initelem_array 0
+00542:  34  getlocal 2
+00545:  34  dup
+00546:  34  callprop "getLadderRank"
+00551:  34  swap
+00552:  34  notearg
+00553:  34  call 0
+00556:  34  initelem_array 1
+00560:  34  endinit
+00561:  34  notearg
+00562:  34  call 1
+00565:  34  pop
+00566:  39  this
+00567:  39  name "xs"
+00572:  39  getprop "Views"
+00577:  39  getprop "Table"
+00582:  39  getprop "LadderChartTableView"
+00587:  39  dup
+00588:  39  callprop "create"
+00593:  39  swap
+00594:  39  notearg
+00595:  39  call 0
+00598:  39  setprop "tableView"
+00603:  39  pop
+00604:  40  name "xs"
+00609:  40  getprop "Utils"
+00614:  40  getprop "Node"
+00619:  40  dup
+00620:  40  callprop "attachNodes"
+00625:  40  swap
+00626:  40  notearg
+00627:  40  this
+00628:  40  notearg
+00629:  40  this
+00630:  40  getprop "tableView"
+00635:  40  notearg
+00636:  40  newinit 1
+00641:  40  string "lb"
+00646:  40  initprop "desc"
+00651:  41  name "cc"
+00656:  41  dup
+00657:  41  callprop "p"
+00662:  41  swap
+00663:  41  notearg
+00664:  41  zero
+00665:  41  notearg
+00666:  41  getlocal 0
+00669:  41  getprop "height"
+00674:  41  uint16 640
+00677:  41  sub
+00678:  41  int8 2
+00680:  41  div
+00681:  41  int8 30
+00683:  41  add
+00684:  41  notearg
+00685:  41  call 2
+00688:  41  initprop "offset"
+00693:  41  true
+00694:  41  initprop "sc"
+00699:  41  endinit
+00700:  41  notearg
+00701:  41  call 3
+00704:  41  pop
+00705:  44  this
+00706:  44  name "xs"
+00711:  44  getprop "Tools"
+00716:  44  getprop "UI"
+00721:  44  dup
+00722:  44  callprop "addShortcutBoard"
+00727:  44  swap
+00728:  44  notearg
+00729:  44  this
+00730:  44  notearg
+00731:  44  true
+00732:  44  notearg
+00733:  44  call 2
+00736:  44  setprop "m_mainMenu"
+00741:  44  pop
+00742:  47  true
+00743:  47  return
+00744:  47  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Ladder/LadderChartView.js:13 ---
+;; function object[2] create
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Ladder/LadderChartView.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  name "xs"
+00005:  59  getprop "Views"
+00010:  59  getprop "LadderChartView"
+00015:  59  undefined
+00016:  59  notearg
+00017:  59  new 0
+00020:  59  setlocal 0
+00023:  59  pop
+00024:  60  getlocal 0
+00027:  60  and 47 (+20)
+00032:  60  pop
+00033:  60  getlocal 0
+00036:  60  dup
+00037:  60  callprop "init"
+00042:  60  swap
+00043:  60  notearg
+00044:  60  call 0
+00047:  60  ifeq 56 (+9)
+00052:  61  getlocal 0
+00055:  61  return
+00056:  63  null
+00057:  63  return
+00058:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Ladder/LadderChartView.js:58 ---

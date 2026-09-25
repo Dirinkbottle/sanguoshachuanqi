@@ -1,0 +1,1733 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Utils/Base64.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=10 object[0]
+;; FUNCTION-MAP kind=lambda offset=31 object[1]
+;; FUNCTION-MAP kind=lambda offset=88 object[2]
+;; FUNCTION-MAP kind=lambda offset=98 object[3]
+;; FUNCTION-MAP kind=lambda offset=108 object[4]
+;; FUNCTION-MAP kind=lambda offset=118 object[5]
+;; FUNCTION-MAP kind=lambda offset=181 object[6]
+;; FUNCTION-MAP kind=lambda offset=191 object[7]
+;; FUNCTION-MAP kind=lambda offset=254 object[8]
+;; FUNCTION-MAP kind=lambda offset=264 object[9]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   1  name "xs"
+00005:   1  getprop "Utils"
+00010:   1  lambda (function () {
+    [sourceless code]
+})
+00015:   1  setprop "UTF16TO8"
+00020:   1  popv
+00021:   5  name "xs"
+00026:   5  getprop "Utils"
+00031:   5  lambda (function () {
+    [sourceless code]
+})
+00036:   5  setprop "UTF8TO16"
+00041:   5  popv
+00042:  10  name "xs"
+00047:  10  getprop "Utils"
+00052:  10  name "xs"
+00057:  10  getprop "Utils"
+00062:  10  getprop "Base64WithUtf8"
+00067:  10  or 129 (+62)
+00072:  10  pop
+00073:  10  newinit 1
+00078:  12  string "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
+00083:  12  initprop "_keyStr"
+00088:  15  lambda (function () {
+    [sourceless code]
+})
+00093:  15  initprop "encode"
+00098:  41  lambda (function () {
+    [sourceless code]
+})
+00103:  41  initprop "decode"
+00108:  68  lambda (function () {
+    [sourceless code]
+})
+00113:  68  initprop "_utf8_encode"
+00118:  89  lambda (function () {
+    [sourceless code]
+})
+00123:  89  initprop "_utf8_decode"
+00128:  89  endinit
+00129:  89  setprop "Base64WithUtf8"
+00134:  89  popv
+00135: 113  name "xs"
+00140: 113  getprop "Utils"
+00145: 113  name "xs"
+00150: 113  getprop "Utils"
+00155: 113  getprop "Base64"
+00160: 113  or 202 (+42)
+00165: 113  pop
+00166: 113  newinit 1
+00171: 115  string "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
+00176: 115  initprop "_keyStr"
+00181: 118  lambda (function () {
+    [sourceless code]
+})
+00186: 118  initprop "encode"
+00191: 143  lambda (function () {
+    [sourceless code]
+})
+00196: 143  initprop "decode"
+00201: 143  endinit
+00202: 143  setprop "Base64"
+00207: 143  popv
+00208: 169  name "xs"
+00213: 169  getprop "Utils"
+00218: 169  name "xs"
+00223: 169  getprop "Utils"
+00228: 169  getprop "Utf16ToUtf8"
+00233: 169  or 275 (+42)
+00238: 169  pop
+00239: 169  newinit 1
+00244: 171  string "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
+00249: 171  initprop "_keyStr"
+00254: 174  lambda (function () {
+    [sourceless code]
+})
+00259: 174  initprop "utf8_encode"
+00264: 195  lambda (function () {
+    [sourceless code]
+})
+00269: 195  initprop "utf8_decode"
+00274: 195  endinit
+00275: 195  setprop "Utf16ToUtf8"
+00280: 195  popv
+00281: 217  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:1 ---
+;; function object[0] UTF16TO8
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] string
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   2  name "xs"
+00005:   2  getprop "Utils"
+00010:   2  getprop "Base64WithUtf8"
+00015:   2  dup
+00016:   2  callprop "_utf8_encode"
+00021:   2  swap
+00022:   2  notearg
+00023:   2  getarg 0
+00026:   2  notearg
+00027:   2  call 1
+00030:   2  return
+00031:   2  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:1 ---
+;; function object[1] UTF8TO16
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] utftext
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:5 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Utils"
+00010:   6  getprop "Base64WithUtf8"
+00015:   6  dup
+00016:   6  callprop "_utf8_decode"
+00021:   6  swap
+00022:   6  notearg
+00023:   6  getarg 0
+00026:   6  notearg
+00027:   6  call 1
+00030:   6  return
+00031:   6  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:5 ---
+;; function object[2] encode
+;; function metadata object[2] nargs=1 bindings=10
+;; arg[0] input
+;; local[0] output
+;; local[1] chr1
+;; local[2] chr2
+;; local[3] chr3
+;; local[4] enc1
+;; local[5] enc2
+;; local[6] enc3
+;; local[7] enc4
+;; local[8] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  string ""
+00005:  16  setlocal 0
+00008:  16  pop
+00009:  17  getlocal 1
+00012:  17  pop
+00013:  17  getlocal 2
+00016:  17  pop
+00017:  17  getlocal 3
+00020:  17  pop
+00021:  17  getlocal 4
+00024:  17  pop
+00025:  17  getlocal 5
+00028:  17  pop
+00029:  17  getlocal 6
+00032:  17  pop
+00033:  17  getlocal 7
+00036:  17  pop
+00037:  18  zero
+00038:  18  setlocal 8
+00041:  18  pop
+00042:  19  this
+00043:  19  dup
+00044:  19  callprop "_utf8_encode"
+00049:  19  swap
+00050:  19  notearg
+00051:  19  getarg 0
+00054:  19  notearg
+00055:  19  call 1
+00058:  19  setarg 0
+00061:  19  pop
+00062:  20  goto 388 (+326)
+00067:  21  loophead
+00068:  21  getarg 0
+00071:  21  dup
+00072:  21  callprop "charCodeAt"
+00077:  21  swap
+00078:  21  notearg
+00079:  21  localinc 11
+00082:  21  getlocal 8
+00085:  21  pos
+00086:  21  dup
+00087:  21  one
+00088:  21  add
+00089:  21  setlocal 8
+00092:  21  pop
+00093:  21  notearg
+00094:  21  call 1
+00097:  21  setlocal 1
+00100:  21  pop
+00101:  22  getarg 0
+00104:  22  dup
+00105:  22  callprop "charCodeAt"
+00110:  22  swap
+00111:  22  notearg
+00112:  22  localinc 11
+00115:  22  getlocal 8
+00118:  22  pos
+00119:  22  dup
+00120:  22  one
+00121:  22  add
+00122:  22  setlocal 8
+00125:  22  pop
+00126:  22  notearg
+00127:  22  call 1
+00130:  22  setlocal 2
+00133:  22  pop
+00134:  23  getarg 0
+00137:  23  dup
+00138:  23  callprop "charCodeAt"
+00143:  23  swap
+00144:  23  notearg
+00145:  23  localinc 11
+00148:  23  getlocal 8
+00151:  23  pos
+00152:  23  dup
+00153:  23  one
+00154:  23  add
+00155:  23  setlocal 8
+00158:  23  pop
+00159:  23  notearg
+00160:  23  call 1
+00163:  23  setlocal 3
+00166:  23  pop
+00167:  24  getlocal 1
+00170:  24  int8 2
+00172:  24  rsh
+00173:  24  setlocal 4
+00176:  24  pop
+00177:  25  getlocal 1
+00180:  25  int8 3
+00182:  25  bitand
+00183:  25  int8 4
+00185:  25  lsh
+00186:  25  getlocal 2
+00189:  25  int8 4
+00191:  25  rsh
+00192:  25  bitor
+00193:  25  setlocal 5
+00196:  25  pop
+00197:  26  getlocal 2
+00200:  26  int8 15
+00202:  26  bitand
+00203:  26  int8 2
+00205:  26  lsh
+00206:  26  getlocal 3
+00209:  26  int8 6
+00211:  26  rsh
+00212:  26  bitor
+00213:  26  setlocal 6
+00216:  26  pop
+00217:  27  getlocal 3
+00220:  27  int8 63
+00222:  27  bitand
+00223:  27  setlocal 7
+00226:  27  pop
+00227:  28  callname "isNaN"
+00232:  28  implicitthis "isNaN"
+00237:  28  notearg
+00238:  28  getlocal 2
+00241:  28  notearg
+00242:  28  call 1
+00245:  28  ifeq 264 (+19)
+00250:  29  int8 64
+00252:  29  setlocal 7
+00255:  29  setlocal 6
+00258:  29  pop
+00259:  29  goto 293 (+34)
+00264:  30  callname "isNaN"
+00269:  30  implicitthis "isNaN"
+00274:  30  notearg
+00275:  30  getlocal 3
+00278:  30  notearg
+00279:  30  call 1
+00282:  30  ifeq 293 (+11)
+00287:  31  int8 64
+00289:  31  setlocal 7
+00292:  31  pop
+00293:  33  getlocal 0
+00296:  34  this
+00297:  34  getprop "_keyStr"
+00302:  34  dup
+00303:  34  callprop "charAt"
+00308:  34  swap
+00309:  34  notearg
+00310:  34  getlocal 4
+00313:  34  notearg
+00314:  34  call 1
+00317:  34  add
+00318:  34  this
+00319:  34  getprop "_keyStr"
+00324:  34  dup
+00325:  34  callprop "charAt"
+00330:  34  swap
+00331:  34  notearg
+00332:  34  getlocal 5
+00335:  34  notearg
+00336:  34  call 1
+00339:  34  add
+00340:  35  this
+00341:  35  getprop "_keyStr"
+00346:  35  dup
+00347:  35  callprop "charAt"
+00352:  35  swap
+00353:  35  notearg
+00354:  35  getlocal 6
+00357:  35  notearg
+00358:  35  call 1
+00361:  35  add
+00362:  35  this
+00363:  35  getprop "_keyStr"
+00368:  35  dup
+00369:  35  callprop "charAt"
+00374:  35  swap
+00375:  35  notearg
+00376:  35  getlocal 7
+00379:  35  notearg
+00380:  35  call 1
+00383:  35  add
+00384:  35  setlocal 0
+00387:  35  pop
+00388:  20  loopentry
+00389:  20  getlocal 8
+00392:  20  getarg 0
+00395:  20  length "length"
+00400:  20  lt
+00401:  20  ifne 67 (-334)
+00406:  37  getlocal 0
+00409:  37  return
+00410:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:15 ---
+;; function object[3] decode
+;; function metadata object[3] nargs=1 bindings=10
+;; arg[0] input
+;; local[0] output
+;; local[1] chr1
+;; local[2] chr2
+;; local[3] chr3
+;; local[4] enc1
+;; local[5] enc2
+;; local[6] enc3
+;; local[7] enc4
+;; local[8] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  42  string ""
+00005:  42  setlocal 0
+00008:  42  pop
+00009:  43  getlocal 1
+00012:  43  pop
+00013:  43  getlocal 2
+00016:  43  pop
+00017:  43  getlocal 3
+00020:  43  pop
+00021:  44  getlocal 4
+00024:  44  pop
+00025:  44  getlocal 5
+00028:  44  pop
+00029:  44  getlocal 6
+00032:  44  pop
+00033:  44  getlocal 7
+00036:  44  pop
+00037:  45  zero
+00038:  45  setlocal 8
+00041:  45  pop
+00042:  46  getarg 0
+00045:  46  dup
+00046:  46  callprop "replace"
+00051:  46  swap
+00052:  46  notearg
+00053:  46  regexp /[^A-Za-z0-9\+\/\=]/g
+00058:  46  notearg
+00059:  46  string ""
+00064:  46  notearg
+00065:  46  call 2
+00068:  46  setarg 0
+00071:  46  pop
+00072:  47  goto 442 (+370)
+00077:  48  loophead
+00078:  48  this
+00079:  48  getprop "_keyStr"
+00084:  48  dup
+00085:  48  callprop "indexOf"
+00090:  48  swap
+00091:  48  notearg
+00092:  48  getarg 0
+00095:  48  dup
+00096:  48  callprop "charAt"
+00101:  48  swap
+00102:  48  notearg
+00103:  48  localinc 11
+00106:  48  getlocal 8
+00109:  48  pos
+00110:  48  dup
+00111:  48  one
+00112:  48  add
+00113:  48  setlocal 8
+00116:  48  pop
+00117:  48  notearg
+00118:  48  call 1
+00121:  48  notearg
+00122:  48  call 1
+00125:  48  setlocal 4
+00128:  48  pop
+00129:  49  this
+00130:  49  getprop "_keyStr"
+00135:  49  dup
+00136:  49  callprop "indexOf"
+00141:  49  swap
+00142:  49  notearg
+00143:  49  getarg 0
+00146:  49  dup
+00147:  49  callprop "charAt"
+00152:  49  swap
+00153:  49  notearg
+00154:  49  localinc 11
+00157:  49  getlocal 8
+00160:  49  pos
+00161:  49  dup
+00162:  49  one
+00163:  49  add
+00164:  49  setlocal 8
+00167:  49  pop
+00168:  49  notearg
+00169:  49  call 1
+00172:  49  notearg
+00173:  49  call 1
+00176:  49  setlocal 5
+00179:  49  pop
+00180:  50  this
+00181:  50  getprop "_keyStr"
+00186:  50  dup
+00187:  50  callprop "indexOf"
+00192:  50  swap
+00193:  50  notearg
+00194:  50  getarg 0
+00197:  50  dup
+00198:  50  callprop "charAt"
+00203:  50  swap
+00204:  50  notearg
+00205:  50  localinc 11
+00208:  50  getlocal 8
+00211:  50  pos
+00212:  50  dup
+00213:  50  one
+00214:  50  add
+00215:  50  setlocal 8
+00218:  50  pop
+00219:  50  notearg
+00220:  50  call 1
+00223:  50  notearg
+00224:  50  call 1
+00227:  50  setlocal 6
+00230:  50  pop
+00231:  51  this
+00232:  51  getprop "_keyStr"
+00237:  51  dup
+00238:  51  callprop "indexOf"
+00243:  51  swap
+00244:  51  notearg
+00245:  51  getarg 0
+00248:  51  dup
+00249:  51  callprop "charAt"
+00254:  51  swap
+00255:  51  notearg
+00256:  51  localinc 11
+00259:  51  getlocal 8
+00262:  51  pos
+00263:  51  dup
+00264:  51  one
+00265:  51  add
+00266:  51  setlocal 8
+00269:  51  pop
+00270:  51  notearg
+00271:  51  call 1
+00274:  51  notearg
+00275:  51  call 1
+00278:  51  setlocal 7
+00281:  51  pop
+00282:  52  getlocal 4
+00285:  52  int8 2
+00287:  52  lsh
+00288:  52  getlocal 5
+00291:  52  int8 4
+00293:  52  rsh
+00294:  52  bitor
+00295:  52  setlocal 1
+00298:  52  pop
+00299:  53  getlocal 5
+00302:  53  int8 15
+00304:  53  bitand
+00305:  53  int8 4
+00307:  53  lsh
+00308:  53  getlocal 6
+00311:  53  int8 2
+00313:  53  rsh
+00314:  53  bitor
+00315:  53  setlocal 2
+00318:  53  pop
+00319:  54  getlocal 6
+00322:  54  int8 3
+00324:  54  bitand
+00325:  54  int8 6
+00327:  54  lsh
+00328:  54  getlocal 7
+00331:  54  bitor
+00332:  54  setlocal 3
+00335:  54  pop
+00336:  55  getlocal 0
+00339:  55  name "String"
+00344:  55  dup
+00345:  55  callprop "fromCharCode"
+00350:  55  swap
+00351:  55  notearg
+00352:  55  getlocal 1
+00355:  55  notearg
+00356:  55  call 1
+00359:  55  add
+00360:  55  setlocal 0
+00363:  55  pop
+00364:  56  getlocal 6
+00367:  56  int8 64
+00369:  56  ne
+00370:  56  ifeq 403 (+33)
+00375:  57  getlocal 0
+00378:  57  name "String"
+00383:  57  dup
+00384:  57  callprop "fromCharCode"
+00389:  57  swap
+00390:  57  notearg
+00391:  57  getlocal 2
+00394:  57  notearg
+00395:  57  call 1
+00398:  57  add
+00399:  57  setlocal 0
+00402:  57  pop
+00403:  59  getlocal 7
+00406:  59  int8 64
+00408:  59  ne
+00409:  59  ifeq 442 (+33)
+00414:  60  getlocal 0
+00417:  60  name "String"
+00422:  60  dup
+00423:  60  callprop "fromCharCode"
+00428:  60  swap
+00429:  60  notearg
+00430:  60  getlocal 3
+00433:  60  notearg
+00434:  60  call 1
+00437:  60  add
+00438:  60  setlocal 0
+00441:  60  pop
+00442:  47  loopentry
+00443:  47  getlocal 8
+00446:  47  getarg 0
+00449:  47  length "length"
+00454:  47  lt
+00455:  47  ifne 77 (-378)
+00460:  63  this
+00461:  63  dup
+00462:  63  callprop "_utf8_decode"
+00467:  63  swap
+00468:  63  notearg
+00469:  63  getlocal 0
+00472:  63  notearg
+00473:  63  call 1
+00476:  63  setlocal 0
+00479:  63  pop
+00480:  64  getlocal 0
+00483:  64  return
+00484:  64  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:41 ---
+;; function object[4] _utf8_encode
+;; function metadata object[4] nargs=1 bindings=4
+;; arg[0] string
+;; local[0] utftext
+;; local[1] n
+;; local[2] c
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  69  getarg 0
+00003:  69  dup
+00004:  69  callprop "replace"
+00009:  69  swap
+00010:  69  notearg
+00011:  69  regexp /\r\n/g
+00016:  69  notearg
+00017:  69  string "\n"
+00022:  69  notearg
+00023:  69  call 2
+00026:  69  setarg 0
+00029:  69  pop
+00030:  70  string ""
+00035:  70  setlocal 0
+00038:  70  pop
+00039:  71  zero
+00040:  71  setlocal 1
+00043:  71  pop
+00044:  71  goto 339 (+295)
+00049:  72  loophead
+00050:  72  getarg 0
+00053:  72  dup
+00054:  72  callprop "charCodeAt"
+00059:  72  swap
+00060:  72  notearg
+00061:  72  getlocal 1
+00064:  72  notearg
+00065:  72  call 1
+00068:  72  setlocal 2
+00071:  72  pop
+00072:  73  getlocal 2
+00075:  73  uint16 128
+00078:  73  lt
+00079:  73  ifeq 117 (+38)
+00084:  74  getlocal 0
+00087:  74  name "String"
+00092:  74  dup
+00093:  74  callprop "fromCharCode"
+00098:  74  swap
+00099:  74  notearg
+00100:  74  getlocal 2
+00103:  74  notearg
+00104:  74  call 1
+00107:  74  add
+00108:  74  setlocal 0
+00111:  74  pop
+00112:  74  goto 324 (+212)
+00117:  75  getlocal 2
+00120:  75  int8 127
+00122:  75  gt
+00123:  75  and 136 (+13)
+00128:  75  pop
+00129:  75  getlocal 2
+00132:  75  uint16 2048
+00135:  75  lt
+00136:  75  ifeq 216 (+80)
+00141:  76  getlocal 0
+00144:  76  name "String"
+00149:  76  dup
+00150:  76  callprop "fromCharCode"
+00155:  76  swap
+00156:  76  notearg
+00157:  76  getlocal 2
+00160:  76  int8 6
+00162:  76  rsh
+00163:  76  uint16 192
+00166:  76  bitor
+00167:  76  notearg
+00168:  76  call 1
+00171:  76  add
+00172:  76  setlocal 0
+00175:  76  pop
+00176:  77  getlocal 0
+00179:  77  name "String"
+00184:  77  dup
+00185:  77  callprop "fromCharCode"
+00190:  77  swap
+00191:  77  notearg
+00192:  77  getlocal 2
+00195:  77  int8 63
+00197:  77  bitand
+00198:  77  uint16 128
+00201:  77  bitor
+00202:  77  notearg
+00203:  77  call 1
+00206:  77  add
+00207:  77  setlocal 0
+00210:  77  pop
+00211:  77  goto 324 (+113)
+00216:  79  getlocal 0
+00219:  79  name "String"
+00224:  79  dup
+00225:  79  callprop "fromCharCode"
+00230:  79  swap
+00231:  79  notearg
+00232:  79  getlocal 2
+00235:  79  int8 12
+00237:  79  rsh
+00238:  79  uint16 224
+00241:  79  bitor
+00242:  79  notearg
+00243:  79  call 1
+00246:  79  add
+00247:  79  setlocal 0
+00250:  79  pop
+00251:  80  getlocal 0
+00254:  80  name "String"
+00259:  80  dup
+00260:  80  callprop "fromCharCode"
+00265:  80  swap
+00266:  80  notearg
+00267:  80  getlocal 2
+00270:  80  int8 6
+00272:  80  rsh
+00273:  80  int8 63
+00275:  80  bitand
+00276:  80  uint16 128
+00279:  80  bitor
+00280:  80  notearg
+00281:  80  call 1
+00284:  80  add
+00285:  80  setlocal 0
+00288:  80  pop
+00289:  81  getlocal 0
+00292:  81  name "String"
+00297:  81  dup
+00298:  81  callprop "fromCharCode"
+00303:  81  swap
+00304:  81  notearg
+00305:  81  getlocal 2
+00308:  81  int8 63
+00310:  81  bitand
+00311:  81  uint16 128
+00314:  81  bitor
+00315:  81  notearg
+00316:  81  call 1
+00319:  81  add
+00320:  81  setlocal 0
+00323:  81  pop
+00324:  71  localinc 11
+00327:  71  getlocal 1
+00330:  71  pos
+00331:  71  dup
+00332:  71  one
+00333:  71  add
+00334:  71  setlocal 1
+00337:  71  pop
+00338:  71  pop
+00339:  71  loopentry
+00340:  71  getlocal 1
+00343:  71  getarg 0
+00346:  71  length "length"
+00351:  71  lt
+00352:  71  ifne 49 (-303)
+00357:  85  getlocal 0
+00360:  85  return
+00361:  85  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:68 ---
+;; function object[5] _utf8_decode
+;; function metadata object[5] nargs=1 bindings=4
+;; arg[0] utftext
+;; local[0] string
+;; local[1] i
+;; local[2] c
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:89 ---
+loc   line  op
+----- ----  --
+main:
+00000:  90  string ""
+00005:  90  setlocal 0
+00008:  90  pop
+00009:  91  zero
+00010:  91  setlocal 1
+00013:  91  pop
+00014:  92  bindname "c1"
+00019:  92  bindname "c2"
+00024:  92  zero
+00025:  92  setname "c2"
+00030:  92  setname "c1"
+00035:  92  setlocal 2
+00038:  92  pop
+00039:  93  goto 369 (+330)
+00044:  94  loophead
+00045:  94  getarg 0
+00048:  94  dup
+00049:  94  callprop "charCodeAt"
+00054:  94  swap
+00055:  94  notearg
+00056:  94  getlocal 1
+00059:  94  notearg
+00060:  94  call 1
+00063:  94  setlocal 2
+00066:  94  pop
+00067:  95  getlocal 2
+00070:  95  uint16 128
+00073:  95  lt
+00074:  95  ifeq 127 (+53)
+00079:  96  getlocal 0
+00082:  96  name "String"
+00087:  96  dup
+00088:  96  callprop "fromCharCode"
+00093:  96  swap
+00094:  96  notearg
+00095:  96  getlocal 2
+00098:  96  notearg
+00099:  96  call 1
+00102:  96  add
+00103:  96  setlocal 0
+00106:  96  pop
+00107:  97  localinc 11
+00110:  97  getlocal 1
+00113:  97  pos
+00114:  97  dup
+00115:  97  one
+00116:  97  add
+00117:  97  setlocal 1
+00120:  97  pop
+00121:  97  pop
+00122:  97  goto 369 (+247)
+00127:  98  getlocal 2
+00130:  98  uint16 191
+00133:  98  gt
+00134:  98  and 147 (+13)
+00139:  98  pop
+00140:  98  getlocal 2
+00143:  98  uint16 224
+00146:  98  lt
+00147:  98  ifeq 241 (+94)
+00152:  99  bindname "c2"
+00157:  99  getarg 0
+00160:  99  dup
+00161:  99  callprop "charCodeAt"
+00166:  99  swap
+00167:  99  notearg
+00168:  99  getlocal 1
+00171:  99  one
+00172:  99  add
+00173:  99  notearg
+00174:  99  call 1
+00177:  99  setname "c2"
+00182:  99  pop
+00183: 100  getlocal 0
+00186: 100  name "String"
+00191: 100  dup
+00192: 100  callprop "fromCharCode"
+00197: 100  swap
+00198: 100  notearg
+00199: 100  getlocal 2
+00202: 100  int8 31
+00204: 100  bitand
+00205: 100  int8 6
+00207: 100  lsh
+00208: 100  name "c2"
+00213: 100  int8 63
+00215: 100  bitand
+00216: 100  bitor
+00217: 100  notearg
+00218: 100  call 1
+00221: 100  add
+00222: 100  setlocal 0
+00225: 100  pop
+00226: 101  getlocal 1
+00229: 101  int8 2
+00231: 101  add
+00232: 101  setlocal 1
+00235: 101  pop
+00236: 101  goto 369 (+133)
+00241: 103  bindname "c2"
+00246: 103  getarg 0
+00249: 103  dup
+00250: 103  callprop "charCodeAt"
+00255: 103  swap
+00256: 103  notearg
+00257: 103  getlocal 1
+00260: 103  one
+00261: 103  add
+00262: 103  notearg
+00263: 103  call 1
+00266: 103  setname "c2"
+00271: 103  pop
+00272: 104  bindname "c3"
+00277: 104  getarg 0
+00280: 104  dup
+00281: 104  callprop "charCodeAt"
+00286: 104  swap
+00287: 104  notearg
+00288: 104  getlocal 1
+00291: 104  int8 2
+00293: 104  add
+00294: 104  notearg
+00295: 104  call 1
+00298: 104  setname "c3"
+00303: 104  pop
+00304: 105  getlocal 0
+00307: 105  name "String"
+00312: 105  dup
+00313: 105  callprop "fromCharCode"
+00318: 105  swap
+00319: 105  notearg
+00320: 105  getlocal 2
+00323: 105  int8 15
+00325: 105  bitand
+00326: 105  int8 12
+00328: 105  lsh
+00329: 105  name "c2"
+00334: 105  int8 63
+00336: 105  bitand
+00337: 105  int8 6
+00339: 105  lsh
+00340: 105  bitor
+00341: 105  name "c3"
+00346: 105  int8 63
+00348: 105  bitand
+00349: 105  bitor
+00350: 105  notearg
+00351: 105  call 1
+00354: 105  add
+00355: 105  setlocal 0
+00358: 105  pop
+00359: 106  getlocal 1
+00362: 106  int8 3
+00364: 106  add
+00365: 106  setlocal 1
+00368: 106  pop
+00369:  93  loopentry
+00370:  93  getlocal 1
+00373:  93  getarg 0
+00376:  93  length "length"
+00381:  93  lt
+00382:  93  ifne 44 (-338)
+00387: 109  getlocal 0
+00390: 109  return
+00391: 109  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:89 ---
+;; function object[6] encode
+;; function metadata object[6] nargs=1 bindings=10
+;; arg[0] input
+;; local[0] output
+;; local[1] chr1
+;; local[2] chr2
+;; local[3] chr3
+;; local[4] enc1
+;; local[5] enc2
+;; local[6] enc3
+;; local[7] enc4
+;; local[8] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:118 ---
+loc   line  op
+----- ----  --
+main:
+00000: 119  string ""
+00005: 119  setlocal 0
+00008: 119  pop
+00009: 120  getlocal 1
+00012: 120  pop
+00013: 120  getlocal 2
+00016: 120  pop
+00017: 120  getlocal 3
+00020: 120  pop
+00021: 120  getlocal 4
+00024: 120  pop
+00025: 120  getlocal 5
+00028: 120  pop
+00029: 120  getlocal 6
+00032: 120  pop
+00033: 120  getlocal 7
+00036: 120  pop
+00037: 121  zero
+00038: 121  setlocal 8
+00041: 121  pop
+00042: 122  goto 368 (+326)
+00047: 123  loophead
+00048: 123  getarg 0
+00051: 123  dup
+00052: 123  callprop "charCodeAt"
+00057: 123  swap
+00058: 123  notearg
+00059: 123  localinc 11
+00062: 123  getlocal 8
+00065: 123  pos
+00066: 123  dup
+00067: 123  one
+00068: 123  add
+00069: 123  setlocal 8
+00072: 123  pop
+00073: 123  notearg
+00074: 123  call 1
+00077: 123  setlocal 1
+00080: 123  pop
+00081: 124  getarg 0
+00084: 124  dup
+00085: 124  callprop "charCodeAt"
+00090: 124  swap
+00091: 124  notearg
+00092: 124  localinc 11
+00095: 124  getlocal 8
+00098: 124  pos
+00099: 124  dup
+00100: 124  one
+00101: 124  add
+00102: 124  setlocal 8
+00105: 124  pop
+00106: 124  notearg
+00107: 124  call 1
+00110: 124  setlocal 2
+00113: 124  pop
+00114: 125  getarg 0
+00117: 125  dup
+00118: 125  callprop "charCodeAt"
+00123: 125  swap
+00124: 125  notearg
+00125: 125  localinc 11
+00128: 125  getlocal 8
+00131: 125  pos
+00132: 125  dup
+00133: 125  one
+00134: 125  add
+00135: 125  setlocal 8
+00138: 125  pop
+00139: 125  notearg
+00140: 125  call 1
+00143: 125  setlocal 3
+00146: 125  pop
+00147: 126  getlocal 1
+00150: 126  int8 2
+00152: 126  rsh
+00153: 126  setlocal 4
+00156: 126  pop
+00157: 127  getlocal 1
+00160: 127  int8 3
+00162: 127  bitand
+00163: 127  int8 4
+00165: 127  lsh
+00166: 127  getlocal 2
+00169: 127  int8 4
+00171: 127  rsh
+00172: 127  bitor
+00173: 127  setlocal 5
+00176: 127  pop
+00177: 128  getlocal 2
+00180: 128  int8 15
+00182: 128  bitand
+00183: 128  int8 2
+00185: 128  lsh
+00186: 128  getlocal 3
+00189: 128  int8 6
+00191: 128  rsh
+00192: 128  bitor
+00193: 128  setlocal 6
+00196: 128  pop
+00197: 129  getlocal 3
+00200: 129  int8 63
+00202: 129  bitand
+00203: 129  setlocal 7
+00206: 129  pop
+00207: 130  callname "isNaN"
+00212: 130  implicitthis "isNaN"
+00217: 130  notearg
+00218: 130  getlocal 2
+00221: 130  notearg
+00222: 130  call 1
+00225: 130  ifeq 244 (+19)
+00230: 131  int8 64
+00232: 131  setlocal 7
+00235: 131  setlocal 6
+00238: 131  pop
+00239: 131  goto 273 (+34)
+00244: 132  callname "isNaN"
+00249: 132  implicitthis "isNaN"
+00254: 132  notearg
+00255: 132  getlocal 3
+00258: 132  notearg
+00259: 132  call 1
+00262: 132  ifeq 273 (+11)
+00267: 133  int8 64
+00269: 133  setlocal 7
+00272: 133  pop
+00273: 135  getlocal 0
+00276: 136  this
+00277: 136  getprop "_keyStr"
+00282: 136  dup
+00283: 136  callprop "charAt"
+00288: 136  swap
+00289: 136  notearg
+00290: 136  getlocal 4
+00293: 136  notearg
+00294: 136  call 1
+00297: 136  add
+00298: 136  this
+00299: 136  getprop "_keyStr"
+00304: 136  dup
+00305: 136  callprop "charAt"
+00310: 136  swap
+00311: 136  notearg
+00312: 136  getlocal 5
+00315: 136  notearg
+00316: 136  call 1
+00319: 136  add
+00320: 137  this
+00321: 137  getprop "_keyStr"
+00326: 137  dup
+00327: 137  callprop "charAt"
+00332: 137  swap
+00333: 137  notearg
+00334: 137  getlocal 6
+00337: 137  notearg
+00338: 137  call 1
+00341: 137  add
+00342: 137  this
+00343: 137  getprop "_keyStr"
+00348: 137  dup
+00349: 137  callprop "charAt"
+00354: 137  swap
+00355: 137  notearg
+00356: 137  getlocal 7
+00359: 137  notearg
+00360: 137  call 1
+00363: 137  add
+00364: 137  setlocal 0
+00367: 137  pop
+00368: 122  loopentry
+00369: 122  getlocal 8
+00372: 122  getarg 0
+00375: 122  length "length"
+00380: 122  lt
+00381: 122  ifne 47 (-334)
+00386: 139  getlocal 0
+00389: 139  return
+00390: 139  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:118 ---
+;; function object[7] decode
+;; function metadata object[7] nargs=1 bindings=10
+;; arg[0] input
+;; local[0] output
+;; local[1] chr1
+;; local[2] chr2
+;; local[3] chr3
+;; local[4] enc1
+;; local[5] enc2
+;; local[6] enc3
+;; local[7] enc4
+;; local[8] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:143 ---
+loc   line  op
+----- ----  --
+main:
+00000: 144  string ""
+00005: 144  setlocal 0
+00008: 144  pop
+00009: 145  getlocal 1
+00012: 145  pop
+00013: 145  getlocal 2
+00016: 145  pop
+00017: 145  getlocal 3
+00020: 145  pop
+00021: 146  getlocal 4
+00024: 146  pop
+00025: 146  getlocal 5
+00028: 146  pop
+00029: 146  getlocal 6
+00032: 146  pop
+00033: 146  getlocal 7
+00036: 146  pop
+00037: 147  zero
+00038: 147  setlocal 8
+00041: 147  pop
+00042: 148  getarg 0
+00045: 148  dup
+00046: 148  callprop "replace"
+00051: 148  swap
+00052: 148  notearg
+00053: 148  regexp /[^A-Za-z0-9\+\/\=]/g
+00058: 148  notearg
+00059: 148  string ""
+00064: 148  notearg
+00065: 148  call 2
+00068: 148  setarg 0
+00071: 148  pop
+00072: 149  goto 442 (+370)
+00077: 150  loophead
+00078: 150  this
+00079: 150  getprop "_keyStr"
+00084: 150  dup
+00085: 150  callprop "indexOf"
+00090: 150  swap
+00091: 150  notearg
+00092: 150  getarg 0
+00095: 150  dup
+00096: 150  callprop "charAt"
+00101: 150  swap
+00102: 150  notearg
+00103: 150  localinc 11
+00106: 150  getlocal 8
+00109: 150  pos
+00110: 150  dup
+00111: 150  one
+00112: 150  add
+00113: 150  setlocal 8
+00116: 150  pop
+00117: 150  notearg
+00118: 150  call 1
+00121: 150  notearg
+00122: 150  call 1
+00125: 150  setlocal 4
+00128: 150  pop
+00129: 151  this
+00130: 151  getprop "_keyStr"
+00135: 151  dup
+00136: 151  callprop "indexOf"
+00141: 151  swap
+00142: 151  notearg
+00143: 151  getarg 0
+00146: 151  dup
+00147: 151  callprop "charAt"
+00152: 151  swap
+00153: 151  notearg
+00154: 151  localinc 11
+00157: 151  getlocal 8
+00160: 151  pos
+00161: 151  dup
+00162: 151  one
+00163: 151  add
+00164: 151  setlocal 8
+00167: 151  pop
+00168: 151  notearg
+00169: 151  call 1
+00172: 151  notearg
+00173: 151  call 1
+00176: 151  setlocal 5
+00179: 151  pop
+00180: 152  this
+00181: 152  getprop "_keyStr"
+00186: 152  dup
+00187: 152  callprop "indexOf"
+00192: 152  swap
+00193: 152  notearg
+00194: 152  getarg 0
+00197: 152  dup
+00198: 152  callprop "charAt"
+00203: 152  swap
+00204: 152  notearg
+00205: 152  localinc 11
+00208: 152  getlocal 8
+00211: 152  pos
+00212: 152  dup
+00213: 152  one
+00214: 152  add
+00215: 152  setlocal 8
+00218: 152  pop
+00219: 152  notearg
+00220: 152  call 1
+00223: 152  notearg
+00224: 152  call 1
+00227: 152  setlocal 6
+00230: 152  pop
+00231: 153  this
+00232: 153  getprop "_keyStr"
+00237: 153  dup
+00238: 153  callprop "indexOf"
+00243: 153  swap
+00244: 153  notearg
+00245: 153  getarg 0
+00248: 153  dup
+00249: 153  callprop "charAt"
+00254: 153  swap
+00255: 153  notearg
+00256: 153  localinc 11
+00259: 153  getlocal 8
+00262: 153  pos
+00263: 153  dup
+00264: 153  one
+00265: 153  add
+00266: 153  setlocal 8
+00269: 153  pop
+00270: 153  notearg
+00271: 153  call 1
+00274: 153  notearg
+00275: 153  call 1
+00278: 153  setlocal 7
+00281: 153  pop
+00282: 154  getlocal 4
+00285: 154  int8 2
+00287: 154  lsh
+00288: 154  getlocal 5
+00291: 154  int8 4
+00293: 154  rsh
+00294: 154  bitor
+00295: 154  setlocal 1
+00298: 154  pop
+00299: 155  getlocal 5
+00302: 155  int8 15
+00304: 155  bitand
+00305: 155  int8 4
+00307: 155  lsh
+00308: 155  getlocal 6
+00311: 155  int8 2
+00313: 155  rsh
+00314: 155  bitor
+00315: 155  setlocal 2
+00318: 155  pop
+00319: 156  getlocal 6
+00322: 156  int8 3
+00324: 156  bitand
+00325: 156  int8 6
+00327: 156  lsh
+00328: 156  getlocal 7
+00331: 156  bitor
+00332: 156  setlocal 3
+00335: 156  pop
+00336: 157  getlocal 0
+00339: 157  name "String"
+00344: 157  dup
+00345: 157  callprop "fromCharCode"
+00350: 157  swap
+00351: 157  notearg
+00352: 157  getlocal 1
+00355: 157  notearg
+00356: 157  call 1
+00359: 157  add
+00360: 157  setlocal 0
+00363: 157  pop
+00364: 158  getlocal 6
+00367: 158  int8 64
+00369: 158  ne
+00370: 158  ifeq 403 (+33)
+00375: 159  getlocal 0
+00378: 159  name "String"
+00383: 159  dup
+00384: 159  callprop "fromCharCode"
+00389: 159  swap
+00390: 159  notearg
+00391: 159  getlocal 2
+00394: 159  notearg
+00395: 159  call 1
+00398: 159  add
+00399: 159  setlocal 0
+00402: 159  pop
+00403: 161  getlocal 7
+00406: 161  int8 64
+00408: 161  ne
+00409: 161  ifeq 442 (+33)
+00414: 162  getlocal 0
+00417: 162  name "String"
+00422: 162  dup
+00423: 162  callprop "fromCharCode"
+00428: 162  swap
+00429: 162  notearg
+00430: 162  getlocal 3
+00433: 162  notearg
+00434: 162  call 1
+00437: 162  add
+00438: 162  setlocal 0
+00441: 162  pop
+00442: 149  loopentry
+00443: 149  getlocal 8
+00446: 149  getarg 0
+00449: 149  length "length"
+00454: 149  lt
+00455: 149  ifne 77 (-378)
+00460: 165  getlocal 0
+00463: 165  return
+00464: 165  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:143 ---
+;; function object[8] utf8_encode
+;; function metadata object[8] nargs=1 bindings=4
+;; arg[0] string
+;; local[0] utftext
+;; local[1] n
+;; local[2] c
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:174 ---
+loc   line  op
+----- ----  --
+main:
+00000: 175  getarg 0
+00003: 175  dup
+00004: 175  callprop "replace"
+00009: 175  swap
+00010: 175  notearg
+00011: 175  regexp /\r\n/g
+00016: 175  notearg
+00017: 175  string "\n"
+00022: 175  notearg
+00023: 175  call 2
+00026: 175  setarg 0
+00029: 175  pop
+00030: 176  string ""
+00035: 176  setlocal 0
+00038: 176  pop
+00039: 177  zero
+00040: 177  setlocal 1
+00043: 177  pop
+00044: 177  goto 339 (+295)
+00049: 178  loophead
+00050: 178  getarg 0
+00053: 178  dup
+00054: 178  callprop "charCodeAt"
+00059: 178  swap
+00060: 178  notearg
+00061: 178  getlocal 1
+00064: 178  notearg
+00065: 178  call 1
+00068: 178  setlocal 2
+00071: 178  pop
+00072: 179  getlocal 2
+00075: 179  uint16 128
+00078: 179  lt
+00079: 179  ifeq 117 (+38)
+00084: 180  getlocal 0
+00087: 180  name "String"
+00092: 180  dup
+00093: 180  callprop "fromCharCode"
+00098: 180  swap
+00099: 180  notearg
+00100: 180  getlocal 2
+00103: 180  notearg
+00104: 180  call 1
+00107: 180  add
+00108: 180  setlocal 0
+00111: 180  pop
+00112: 180  goto 324 (+212)
+00117: 181  getlocal 2
+00120: 181  int8 127
+00122: 181  gt
+00123: 181  and 136 (+13)
+00128: 181  pop
+00129: 181  getlocal 2
+00132: 181  uint16 2048
+00135: 181  lt
+00136: 181  ifeq 216 (+80)
+00141: 182  getlocal 0
+00144: 182  name "String"
+00149: 182  dup
+00150: 182  callprop "fromCharCode"
+00155: 182  swap
+00156: 182  notearg
+00157: 182  getlocal 2
+00160: 182  int8 6
+00162: 182  rsh
+00163: 182  uint16 192
+00166: 182  bitor
+00167: 182  notearg
+00168: 182  call 1
+00171: 182  add
+00172: 182  setlocal 0
+00175: 182  pop
+00176: 183  getlocal 0
+00179: 183  name "String"
+00184: 183  dup
+00185: 183  callprop "fromCharCode"
+00190: 183  swap
+00191: 183  notearg
+00192: 183  getlocal 2
+00195: 183  int8 63
+00197: 183  bitand
+00198: 183  uint16 128
+00201: 183  bitor
+00202: 183  notearg
+00203: 183  call 1
+00206: 183  add
+00207: 183  setlocal 0
+00210: 183  pop
+00211: 183  goto 324 (+113)
+00216: 185  getlocal 0
+00219: 185  name "String"
+00224: 185  dup
+00225: 185  callprop "fromCharCode"
+00230: 185  swap
+00231: 185  notearg
+00232: 185  getlocal 2
+00235: 185  int8 12
+00237: 185  rsh
+00238: 185  uint16 224
+00241: 185  bitor
+00242: 185  notearg
+00243: 185  call 1
+00246: 185  add
+00247: 185  setlocal 0
+00250: 185  pop
+00251: 186  getlocal 0
+00254: 186  name "String"
+00259: 186  dup
+00260: 186  callprop "fromCharCode"
+00265: 186  swap
+00266: 186  notearg
+00267: 186  getlocal 2
+00270: 186  int8 6
+00272: 186  rsh
+00273: 186  int8 63
+00275: 186  bitand
+00276: 186  uint16 128
+00279: 186  bitor
+00280: 186  notearg
+00281: 186  call 1
+00284: 186  add
+00285: 186  setlocal 0
+00288: 186  pop
+00289: 187  getlocal 0
+00292: 187  name "String"
+00297: 187  dup
+00298: 187  callprop "fromCharCode"
+00303: 187  swap
+00304: 187  notearg
+00305: 187  getlocal 2
+00308: 187  int8 63
+00310: 187  bitand
+00311: 187  uint16 128
+00314: 187  bitor
+00315: 187  notearg
+00316: 187  call 1
+00319: 187  add
+00320: 187  setlocal 0
+00323: 187  pop
+00324: 177  localinc 11
+00327: 177  getlocal 1
+00330: 177  pos
+00331: 177  dup
+00332: 177  one
+00333: 177  add
+00334: 177  setlocal 1
+00337: 177  pop
+00338: 177  pop
+00339: 177  loopentry
+00340: 177  getlocal 1
+00343: 177  getarg 0
+00346: 177  length "length"
+00351: 177  lt
+00352: 177  ifne 49 (-303)
+00357: 191  getlocal 0
+00360: 191  return
+00361: 191  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:174 ---
+;; function object[9] utf8_decode
+;; function metadata object[9] nargs=1 bindings=4
+;; arg[0] utftext
+;; local[0] string
+;; local[1] i
+;; local[2] c
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:195 ---
+loc   line  op
+----- ----  --
+main:
+00000: 196  string ""
+00005: 196  setlocal 0
+00008: 196  pop
+00009: 197  zero
+00010: 197  setlocal 1
+00013: 197  pop
+00014: 198  bindname "c1"
+00019: 198  bindname "c2"
+00024: 198  zero
+00025: 198  setname "c2"
+00030: 198  setname "c1"
+00035: 198  setlocal 2
+00038: 198  pop
+00039: 199  goto 369 (+330)
+00044: 200  loophead
+00045: 200  getarg 0
+00048: 200  dup
+00049: 200  callprop "charCodeAt"
+00054: 200  swap
+00055: 200  notearg
+00056: 200  getlocal 1
+00059: 200  notearg
+00060: 200  call 1
+00063: 200  setlocal 2
+00066: 200  pop
+00067: 201  getlocal 2
+00070: 201  uint16 128
+00073: 201  lt
+00074: 201  ifeq 127 (+53)
+00079: 202  getlocal 0
+00082: 202  name "String"
+00087: 202  dup
+00088: 202  callprop "fromCharCode"
+00093: 202  swap
+00094: 202  notearg
+00095: 202  getlocal 2
+00098: 202  notearg
+00099: 202  call 1
+00102: 202  add
+00103: 202  setlocal 0
+00106: 202  pop
+00107: 203  localinc 11
+00110: 203  getlocal 1
+00113: 203  pos
+00114: 203  dup
+00115: 203  one
+00116: 203  add
+00117: 203  setlocal 1
+00120: 203  pop
+00121: 203  pop
+00122: 203  goto 369 (+247)
+00127: 204  getlocal 2
+00130: 204  uint16 191
+00133: 204  gt
+00134: 204  and 147 (+13)
+00139: 204  pop
+00140: 204  getlocal 2
+00143: 204  uint16 224
+00146: 204  lt
+00147: 204  ifeq 241 (+94)
+00152: 205  bindname "c2"
+00157: 205  getarg 0
+00160: 205  dup
+00161: 205  callprop "charCodeAt"
+00166: 205  swap
+00167: 205  notearg
+00168: 205  getlocal 1
+00171: 205  one
+00172: 205  add
+00173: 205  notearg
+00174: 205  call 1
+00177: 205  setname "c2"
+00182: 205  pop
+00183: 206  getlocal 0
+00186: 206  name "String"
+00191: 206  dup
+00192: 206  callprop "fromCharCode"
+00197: 206  swap
+00198: 206  notearg
+00199: 206  getlocal 2
+00202: 206  int8 31
+00204: 206  bitand
+00205: 206  int8 6
+00207: 206  lsh
+00208: 206  name "c2"
+00213: 206  int8 63
+00215: 206  bitand
+00216: 206  bitor
+00217: 206  notearg
+00218: 206  call 1
+00221: 206  add
+00222: 206  setlocal 0
+00225: 206  pop
+00226: 207  getlocal 1
+00229: 207  int8 2
+00231: 207  add
+00232: 207  setlocal 1
+00235: 207  pop
+00236: 207  goto 369 (+133)
+00241: 209  bindname "c2"
+00246: 209  getarg 0
+00249: 209  dup
+00250: 209  callprop "charCodeAt"
+00255: 209  swap
+00256: 209  notearg
+00257: 209  getlocal 1
+00260: 209  one
+00261: 209  add
+00262: 209  notearg
+00263: 209  call 1
+00266: 209  setname "c2"
+00271: 209  pop
+00272: 210  bindname "c3"
+00277: 210  getarg 0
+00280: 210  dup
+00281: 210  callprop "charCodeAt"
+00286: 210  swap
+00287: 210  notearg
+00288: 210  getlocal 1
+00291: 210  int8 2
+00293: 210  add
+00294: 210  notearg
+00295: 210  call 1
+00298: 210  setname "c3"
+00303: 210  pop
+00304: 211  getlocal 0
+00307: 211  name "String"
+00312: 211  dup
+00313: 211  callprop "fromCharCode"
+00318: 211  swap
+00319: 211  notearg
+00320: 211  getlocal 2
+00323: 211  int8 15
+00325: 211  bitand
+00326: 211  int8 12
+00328: 211  lsh
+00329: 211  name "c2"
+00334: 211  int8 63
+00336: 211  bitand
+00337: 211  int8 6
+00339: 211  lsh
+00340: 211  bitor
+00341: 211  name "c3"
+00346: 211  int8 63
+00348: 211  bitand
+00349: 211  bitor
+00350: 211  notearg
+00351: 211  call 1
+00354: 211  add
+00355: 211  setlocal 0
+00358: 211  pop
+00359: 212  getlocal 1
+00362: 212  int8 3
+00364: 212  add
+00365: 212  setlocal 1
+00368: 212  pop
+00369: 199  loopentry
+00370: 199  getlocal 1
+00373: 199  getarg 0
+00376: 199  length "length"
+00381: 199  lt
+00382: 199  ifne 44 (-338)
+00387: 215  getlocal 0
+00390: 215  return
+00391: 215  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Base64.js:195 ---

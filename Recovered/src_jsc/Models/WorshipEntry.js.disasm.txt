@@ -1,0 +1,300 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/WorshipEntry.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=48 object[0]
+;; FUNCTION-MAP kind=lambda offset=58 object[1]
+;; FUNCTION-MAP kind=lambda offset=68 object[2]
+;; FUNCTION-MAP kind=lambda offset=78 object[3]
+;; FUNCTION-MAP kind=lambda offset=88 object[4]
+;; FUNCTION-MAP kind=lambda offset=98 object[5]
+;; FUNCTION-MAP kind=lambda offset=108 object[6]
+;; FUNCTION-MAP kind=lambda offset=144 object[7]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Models"
+00010:   5  name "xs"
+00015:   5  getprop "Models"
+00020:   5  getprop "Base"
+00025:   5  dup
+00026:   5  callprop "extend"
+00031:   5  swap
+00032:   5  notearg
+00033:   5  newinit 1
+00038:   7  string "xs.Models.WorshipEntry"
+00043:   7  initprop "name"
+00048:   9  lambda (function () {
+    [sourceless code]
+})
+00053:   9  initprop "init"
+00058:  22  lambda (function () {
+    [sourceless code]
+})
+00063:  22  initprop "loadJson"
+00068:  37  lambda (function () {
+    [sourceless code]
+})
+00073:  37  initprop "getRankList"
+00078:  41  lambda (function () {
+    [sourceless code]
+})
+00083:  41  initprop "getAwardList"
+00088:  45  lambda (function () {
+    [sourceless code]
+})
+00093:  45  initprop "isInlist"
+00098:  49  lambda (function () {
+    [sourceless code]
+})
+00103:  49  initprop "getStatus"
+00108:  53  lambda (function () {
+    [sourceless code]
+})
+00113:  53  initprop "setStatus"
+00118:  53  endinit
+00119:  53  notearg
+00120:  53  call 1
+00123:  53  setprop "WorshipEntry"
+00128:  53  popv
+00129:  60  name "xs"
+00134:  60  getprop "Models"
+00139:  60  getprop "WorshipEntry"
+00144:  60  lambda (function () {
+    [sourceless code]
+})
+00149:  60  setprop "createWithJson"
+00154:  60  popv
+00155:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  pop
+00013:  13  this
+00014:  13  null
+00015:  13  setprop "rank_list"
+00020:  13  pop
+00021:  14  this
+00022:  14  null
+00023:  14  setprop "award_list"
+00028:  14  pop
+00029:  15  this
+00030:  15  false
+00031:  15  setprop "is_inlist"
+00036:  15  pop
+00037:  16  this
+00038:  16  zero
+00039:  16  setprop "status"
+00044:  16  pop
+00045:  18  true
+00046:  18  return
+00047:  18  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:9 ---
+;; function object[1] loadJson
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] jsonData
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:22 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  this
+00001:  23  getarg 0
+00004:  23  getprop "rank_list"
+00009:  23  setprop "rank_list"
+00014:  23  pop
+00015:  24  this
+00016:  24  getarg 0
+00019:  24  getprop "award_list"
+00024:  24  setprop "award_list"
+00029:  24  pop
+00030:  25  this
+00031:  25  getarg 0
+00034:  25  getprop "is_inlist"
+00039:  25  setprop "is_inlist"
+00044:  25  pop
+00045:  26  this
+00046:  26  getarg 0
+00049:  26  getprop "status"
+00054:  26  setprop "status"
+00059:  26  pop
+00060:  29  zero
+00061:  29  setlocal 0
+00064:  29  pop
+00065:  29  goto 107 (+42)
+00070:  30  loophead
+00071:  30  this
+00072:  30  getprop "rank_list"
+00077:  30  getlocal 0
+00080:  30  getelem
+00081:  30  getlocal 0
+00084:  30  one
+00085:  30  add
+00086:  30  setprop "server_rank"
+00091:  30  pop
+00092:  29  localinc 11
+00095:  29  getlocal 0
+00098:  29  pos
+00099:  29  dup
+00100:  29  one
+00101:  29  add
+00102:  29  setlocal 0
+00105:  29  pop
+00106:  29  pop
+00107:  29  loopentry
+00108:  29  getlocal 0
+00111:  29  this
+00112:  29  getprop "rank_list"
+00117:  29  length "length"
+00122:  29  lt
+00123:  29  ifne 70 (-53)
+00128:  33  this
+00129:  33  dup
+00130:  33  callprop "clearCache"
+00135:  33  swap
+00136:  33  notearg
+00137:  33  call 0
+00140:  33  pop
+00141:  34  true
+00142:  34  return
+00143:  34  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:22 ---
+;; function object[2] getRankList
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  this
+00001:  38  getprop "rank_list"
+00006:  38  return
+00007:  38  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:37 ---
+;; function object[3] getAwardList
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  42  this
+00001:  42  getprop "award_list"
+00006:  42  return
+00007:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:41 ---
+;; function object[4] isInlist
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  this
+00001:  46  getprop "is_inlist"
+00006:  46  return
+00007:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:45 ---
+;; function object[5] getStatus
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  this
+00001:  50  getprop "status"
+00006:  50  return
+00007:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:49 ---
+;; function object[6] setStatus
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] newStatus
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:53 ---
+loc   line  op
+----- ----  --
+main:
+00000:  54  this
+00001:  54  getarg 0
+00004:  54  setprop "status"
+00009:  54  pop
+00010:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:53 ---
+;; function object[7] createWithJson
+;; function metadata object[7] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] worshipEntry
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  name "xs"
+00005:  62  getprop "Models"
+00010:  62  getprop "WorshipEntry"
+00015:  62  undefined
+00016:  62  notearg
+00017:  62  new 0
+00020:  62  setlocal 0
+00023:  62  pop
+00024:  64  getlocal 0
+00027:  64  and 47 (+20)
+00032:  64  pop
+00033:  64  getlocal 0
+00036:  64  dup
+00037:  64  callprop "init"
+00042:  64  swap
+00043:  64  notearg
+00044:  64  call 0
+00047:  64  ifeq 75 (+28)
+00052:  65  getlocal 0
+00055:  65  dup
+00056:  65  callprop "loadJson"
+00061:  65  swap
+00062:  65  notearg
+00063:  65  getarg 0
+00066:  65  notearg
+00067:  65  call 1
+00070:  65  pop
+00071:  66  getlocal 0
+00074:  66  return
+00075:  68  name "xs"
+00080:  68  dup
+00081:  68  callprop "assert"
+00086:  68  swap
+00087:  68  notearg
+00088:  68  false
+00089:  68  notearg
+00090:  68  string "xs.Models.WorshipEntry.createWithJson failed"
+00095:  68  notearg
+00096:  68  call 2
+00099:  68  pop
+00100:  69  null
+00101:  69  return
+00102:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/WorshipEntry.js:60 ---

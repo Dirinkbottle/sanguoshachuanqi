@@ -1,0 +1,796 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/Chapter.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=118 object[0]
+;; FUNCTION-MAP kind=lambda offset=128 object[1]
+;; FUNCTION-MAP kind=lambda offset=138 object[2]
+;; FUNCTION-MAP kind=lambda offset=148 object[3]
+;; FUNCTION-MAP kind=lambda offset=158 object[4]
+;; FUNCTION-MAP kind=lambda offset=168 object[5]
+;; FUNCTION-MAP kind=lambda offset=178 object[6]
+;; FUNCTION-MAP kind=lambda offset=188 object[7]
+;; FUNCTION-MAP kind=lambda offset=198 object[8]
+;; FUNCTION-MAP kind=lambda offset=208 object[9]
+;; FUNCTION-MAP kind=lambda offset=218 object[10]
+;; FUNCTION-MAP kind=lambda offset=228 object[11]
+;; FUNCTION-MAP kind=lambda offset=238 object[12]
+;; FUNCTION-MAP kind=lambda offset=248 object[13]
+;; FUNCTION-MAP kind=lambda offset=258 object[14]
+;; FUNCTION-MAP kind=lambda offset=268 object[15]
+;; FUNCTION-MAP kind=lambda offset=278 object[16]
+;; FUNCTION-MAP kind=lambda offset=314 object[17]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Models"
+00010:   6  one
+00011:   6  setprop "Chapter_Type_Dungeon"
+00016:   6  popv
+00017:   7  name "xs"
+00022:   7  getprop "Models"
+00027:   7  int8 2
+00029:   7  setprop "Chapter_Type_TreasureBox"
+00034:   7  popv
+00035:   9  name "xs"
+00040:   9  getprop "Models"
+00045:   9  name "cc"
+00050:   9  getprop "Class"
+00055:   9  dup
+00056:   9  callprop "extend"
+00061:   9  swap
+00062:   9  notearg
+00063:   9  newinit 1
+00068:  10  string "xs.Models.Chapter"
+00073:  10  initprop "name"
+00078:  12  name "xs"
+00083:  12  getprop "Debug"
+00088:  12  getprop "emptyFunc"
+00093:  12  initprop "log"
+00098:  13  name "xs"
+00103:  13  getprop "Debug"
+00108:  13  getprop "emptyFunc"
+00113:  13  initprop "dump"
+00118:  15  lambda (function () {
+    [sourceless code]
+})
+00123:  15  initprop "init"
+00128:  27  lambda (function () {
+    [sourceless code]
+})
+00133:  27  initprop "updateInfo"
+00138:  32  lambda (function () {
+    [sourceless code]
+})
+00143:  32  initprop "updateDetail"
+00148:  45  lambda (function () {
+    [sourceless code]
+})
+00153:  45  initprop "initDungeons"
+00158:  63  lambda (function () {
+    [sourceless code]
+})
+00163:  63  initprop "getDungeons"
+00168:  68  lambda (function () {
+    [sourceless code]
+})
+00173:  68  initprop "getDungeonByPos"
+00178:  78  lambda (function () {
+    [sourceless code]
+})
+00183:  78  initprop "getChapterId"
+00188:  82  lambda (function () {
+    [sourceless code]
+})
+00193:  82  initprop "getName"
+00198:  86  lambda (function () {
+    [sourceless code]
+})
+00203:  86  initprop "isCanShow"
+00208:  90  lambda (function () {
+    [sourceless code]
+})
+00213:  90  initprop "isCanIn"
+00218:  94  lambda (function () {
+    [sourceless code]
+})
+00223:  94  initprop "isBuffer"
+00228:  99  lambda (function () {
+    [sourceless code]
+})
+00233:  99  initprop "getNextDungeon"
+00238: 113  lambda (function () {
+    [sourceless code]
+})
+00243: 113  initprop "getNextDungeonsById"
+00248: 119  lambda (function () {
+    [sourceless code]
+})
+00253: 119  initprop "getChapterBg"
+00258: 124  lambda (function () {
+    [sourceless code]
+})
+00263: 124  initprop "getChapterBgId"
+00268: 128  lambda (function () {
+    [sourceless code]
+})
+00273: 128  initprop "getDungeonById"
+00278: 139  lambda (function () {
+    [sourceless code]
+})
+00283: 139  initprop "getBossDungeonId"
+00288: 139  endinit
+00289: 139  notearg
+00290: 139  call 1
+00293: 139  setprop "Chapter"
+00298: 139  popv
+00299: 152  name "xs"
+00304: 152  getprop "Models"
+00309: 152  getprop "Chapter"
+00314: 152  lambda (function () {
+    [sourceless code]
+})
+00319: 152  setprop "create"
+00324: 152  popv
+00325: 157  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] chapterInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  getarg 0
+00004:  16  getprop "map_id"
+00009:  16  setprop "chapter_id"
+00014:  16  pop
+00015:  17  this
+00016:  17  getarg 0
+00019:  17  getprop "map_name"
+00024:  17  setprop "chapter_name"
+00029:  17  pop
+00030:  18  this
+00031:  18  getarg 0
+00034:  18  getprop "can_show"
+00039:  18  setprop "canShow"
+00044:  18  pop
+00045:  19  this
+00046:  19  getarg 0
+00049:  19  getprop "can_in"
+00054:  19  setprop "canIn"
+00059:  19  pop
+00060:  22  this
+00061:  22  newarray 0
+00065:  22  endinit
+00066:  22  setprop "dungeons"
+00071:  22  pop
+00072:  24  true
+00073:  24  return
+00074:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:15 ---
+;; function object[1] updateInfo
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] chapterInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  28  this
+00001:  28  getarg 0
+00004:  28  getprop "can_show"
+00009:  28  setprop "canShow"
+00014:  28  pop
+00015:  29  this
+00016:  29  getarg 0
+00019:  29  getprop "can_in"
+00024:  29  setprop "canIn"
+00029:  29  pop
+00030:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:27 ---
+;; function object[2] updateDetail
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] chapterInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  33  this
+00001:  33  getarg 0
+00004:  33  getprop "map_id"
+00009:  33  setprop "chapter_id"
+00014:  33  pop
+00015:  34  this
+00016:  34  getarg 0
+00019:  34  getprop "map_name"
+00024:  34  setprop "chapter_name"
+00029:  34  pop
+00030:  35  this
+00031:  35  getarg 0
+00034:  35  getprop "map_bgimage"
+00039:  35  setprop "chapter_bg"
+00044:  35  pop
+00045:  36  this
+00046:  36  getarg 0
+00049:  36  getprop "can_in"
+00054:  36  setprop "canIn"
+00059:  36  pop
+00060:  39  this
+00061:  39  dup
+00062:  39  callprop "initDungeons"
+00067:  39  swap
+00068:  39  notearg
+00069:  39  getarg 0
+00072:  39  getprop "dungeon_info"
+00077:  39  notearg
+00078:  39  call 1
+00081:  39  pop
+00082:  42  this
+00083:  42  true
+00084:  42  setprop "buffed"
+00089:  42  pop
+00090:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:32 ---
+;; function object[3] initDungeons
+;; function metadata object[3] nargs=1 bindings=2
+;; arg[0] dungeonsInfo
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  48  this
+00001:  48  newarray 0
+00005:  48  endinit
+00006:  48  setprop "dungeons"
+00011:  48  pop
+00012:  49  zero
+00013:  49  setlocal 0
+00016:  49  pop
+00017:  49  goto 227 (+210)
+00022:  50  loophead
+00023:  50  getarg 0
+00026:  50  getlocal 0
+00029:  50  getelem
+00030:  50  getprop "type"
+00035:  50  string "dungeon"
+00040:  50  stricteq
+00041:  50  ifeq 104 (+63)
+00046:  51  this
+00047:  51  getprop "dungeons"
+00052:  51  dup
+00053:  51  callprop "push"
+00058:  51  swap
+00059:  51  notearg
+00060:  51  name "xs"
+00065:  51  getprop "Models"
+00070:  51  getprop "Dungeon"
+00075:  51  dup
+00076:  51  callprop "create"
+00081:  51  swap
+00082:  51  notearg
+00083:  51  getarg 0
+00086:  51  getlocal 0
+00089:  51  getelem
+00090:  51  notearg
+00091:  51  call 1
+00094:  51  notearg
+00095:  51  call 1
+00098:  51  pop
+00099:  51  goto 212 (+113)
+00104:  53  getarg 0
+00107:  53  getlocal 0
+00110:  53  getelem
+00111:  53  getprop "type"
+00116:  53  string "box"
+00121:  53  stricteq
+00122:  53  ifeq 185 (+63)
+00127:  54  this
+00128:  54  getprop "dungeons"
+00133:  54  dup
+00134:  54  callprop "push"
+00139:  54  swap
+00140:  54  notearg
+00141:  54  name "xs"
+00146:  54  getprop "Models"
+00151:  54  getprop "TreasureBox"
+00156:  54  dup
+00157:  54  callprop "create"
+00162:  54  swap
+00163:  54  notearg
+00164:  54  getarg 0
+00167:  54  getlocal 0
+00170:  54  getelem
+00171:  54  notearg
+00172:  54  call 1
+00175:  54  notearg
+00176:  54  call 1
+00179:  54  pop
+00180:  54  goto 212 (+32)
+00185:  57  this
+00186:  57  dup
+00187:  57  callprop "error"
+00192:  57  swap
+00193:  57  notearg
+00194:  57  string "type err"
+00199:  57  notearg
+00200:  57  getarg 0
+00203:  57  getlocal 0
+00206:  57  getelem
+00207:  57  notearg
+00208:  57  call 2
+00211:  57  pop
+00212:  49  localinc 11
+00215:  49  getlocal 0
+00218:  49  pos
+00219:  49  dup
+00220:  49  one
+00221:  49  add
+00222:  49  setlocal 0
+00225:  49  pop
+00226:  49  pop
+00227:  49  loopentry
+00228:  49  getlocal 0
+00231:  49  getarg 0
+00234:  49  length "length"
+00239:  49  lt
+00240:  49  ifne 22 (-218)
+00245:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:45 ---
+;; function object[4] getDungeons
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:63 ---
+loc   line  op
+----- ----  --
+main:
+00000:  64  this
+00001:  64  getprop "dungeons"
+00006:  64  return
+00007:  64  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:63 ---
+;; function object[5] getDungeonByPos
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] pos
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  69  zero
+00001:  69  setlocal 0
+00004:  69  pop
+00005:  69  goto 67 (+62)
+00010:  70  loophead
+00011:  70  this
+00012:  70  getprop "dungeons"
+00017:  70  getlocal 0
+00020:  70  getelem
+00021:  70  dup
+00022:  70  callprop "getPos"
+00027:  70  swap
+00028:  70  notearg
+00029:  70  call 0
+00032:  70  getarg 0
+00035:  70  stricteq
+00036:  70  ifeq 52 (+16)
+00041:  71  this
+00042:  71  getprop "dungeons"
+00047:  71  getlocal 0
+00050:  71  getelem
+00051:  71  return
+00052:  69  localinc 11
+00055:  69  getlocal 0
+00058:  69  pos
+00059:  69  dup
+00060:  69  one
+00061:  69  add
+00062:  69  setlocal 0
+00065:  69  pop
+00066:  69  pop
+00067:  69  loopentry
+00068:  69  getlocal 0
+00071:  69  this
+00072:  69  getprop "dungeons"
+00077:  69  length "length"
+00082:  69  lt
+00083:  69  ifne 10 (-73)
+00088:  75  null
+00089:  75  return
+00090:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:68 ---
+;; function object[6] getChapterId
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:78 ---
+loc   line  op
+----- ----  --
+main:
+00000:  79  this
+00001:  79  getprop "chapter_id"
+00006:  79  return
+00007:  79  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:78 ---
+;; function object[7] getName
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:82 ---
+loc   line  op
+----- ----  --
+main:
+00000:  83  name "xs"
+00005:  83  getprop "Tools"
+00010:  83  getprop "Ml"
+00015:  83  dup
+00016:  83  callprop "createString"
+00021:  83  swap
+00022:  83  notearg
+00023:  83  this
+00024:  83  getprop "chapter_name"
+00029:  83  notearg
+00030:  83  call 1
+00033:  83  return
+00034:  83  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:82 ---
+;; function object[8] isCanShow
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:86 ---
+loc   line  op
+----- ----  --
+main:
+00000:  87  this
+00001:  87  getprop "canShow"
+00006:  87  return
+00007:  87  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:86 ---
+;; function object[9] isCanIn
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:90 ---
+loc   line  op
+----- ----  --
+main:
+00000:  91  this
+00001:  91  getprop "canIn"
+00006:  91  return
+00007:  91  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:90 ---
+;; function object[10] isBuffer
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:94 ---
+loc   line  op
+----- ----  --
+main:
+00000:  95  this
+00001:  95  getprop "buffed"
+00006:  95  return
+00007:  95  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:94 ---
+;; function object[11] getNextDungeon
+;; function metadata object[11] nargs=2 bindings=3
+;; arg[0] dungeonPos
+;; arg[1] direction
+;; local[0] pos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:99 ---
+loc   line  op
+----- ----  --
+main:
+00000: 100  getarg 1
+00003: 100  int8 3
+00005: 100  stricteq
+00006: 100  ifeq 43 (+37)
+00011: 101  getarg 0
+00014: 101  int8 4
+00016: 101  add
+00017: 101  setlocal 0
+00020: 101  pop
+00021: 102  this
+00022: 102  dup
+00023: 102  callprop "getDungeonByPos"
+00028: 102  swap
+00029: 102  notearg
+00030: 102  getlocal 0
+00033: 102  notearg
+00034: 102  call 1
+00037: 102  return
+00038: 102  goto 86 (+48)
+00043: 103  getarg 1
+00046: 103  one
+00047: 103  stricteq
+00048: 103  ifeq 84 (+36)
+00053: 104  getarg 0
+00056: 104  one
+00057: 104  add
+00058: 104  setlocal 0
+00061: 104  pop
+00062: 105  this
+00063: 105  dup
+00064: 105  callprop "getDungeonByPos"
+00069: 105  swap
+00070: 105  notearg
+00071: 105  getlocal 0
+00074: 105  notearg
+00075: 105  call 1
+00078: 105  return
+00079: 105  goto 86 (+7)
+00084: 107  null
+00085: 107  return
+00086: 108  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:99 ---
+;; function object[12] getNextDungeonsById
+;; function metadata object[12] nargs=1 bindings=2
+;; arg[0] dungeonId
+;; local[0] curDungeon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:113 ---
+loc   line  op
+----- ----  --
+main:
+00000: 114  this
+00001: 114  dup
+00002: 114  callprop "getDungeonById"
+00007: 114  swap
+00008: 114  notearg
+00009: 114  getarg 0
+00012: 114  notearg
+00013: 114  call 1
+00016: 114  setlocal 0
+00019: 114  pop
+00020: 115  getlocal 0
+00023: 115  dup
+00024: 115  callprop "getUnlockedIds"
+00029: 115  swap
+00030: 115  notearg
+00031: 115  call 0
+00034: 115  return
+00035: 115  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:113 ---
+;; function object[13] getChapterBg
+;; function metadata object[13] nargs=0 bindings=1
+;; local[0] resModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:119 ---
+loc   line  op
+----- ----  --
+main:
+00000: 120  name "xs"
+00005: 120  getprop "Models"
+00010: 120  getprop "Resource"
+00015: 120  dup
+00016: 120  callprop "createWithBase"
+00021: 120  swap
+00022: 120  notearg
+00023: 120  this
+00024: 120  getprop "chapter_bg"
+00029: 120  notearg
+00030: 120  name "xs"
+00035: 120  getprop "Constant_ResType_Map"
+00040: 120  notearg
+00041: 120  call 2
+00044: 120  setlocal 0
+00047: 120  pop
+00048: 121  getlocal 0
+00051: 121  dup
+00052: 121  callprop "createBgSprite_Map"
+00057: 121  swap
+00058: 121  notearg
+00059: 121  call 0
+00062: 121  return
+00063: 121  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:119 ---
+;; function object[14] getChapterBgId
+;; function metadata object[14] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:124 ---
+loc   line  op
+----- ----  --
+main:
+00000: 125  this
+00001: 125  getprop "chapter_bg"
+00006: 125  return
+00007: 125  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:124 ---
+;; function object[15] getDungeonById
+;; function metadata object[15] nargs=1 bindings=2
+;; arg[0] dungeonId
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:128 ---
+loc   line  op
+----- ----  --
+main:
+00000: 129  zero
+00001: 129  setlocal 0
+00004: 129  pop
+00005: 129  goto 67 (+62)
+00010: 130  loophead
+00011: 130  this
+00012: 130  getprop "dungeons"
+00017: 130  getlocal 0
+00020: 130  getelem
+00021: 130  dup
+00022: 130  callprop "getId"
+00027: 130  swap
+00028: 130  notearg
+00029: 130  call 0
+00032: 130  getarg 0
+00035: 130  stricteq
+00036: 130  ifeq 52 (+16)
+00041: 131  this
+00042: 131  getprop "dungeons"
+00047: 131  getlocal 0
+00050: 131  getelem
+00051: 131  return
+00052: 129  localinc 11
+00055: 129  getlocal 0
+00058: 129  pos
+00059: 129  dup
+00060: 129  one
+00061: 129  add
+00062: 129  setlocal 0
+00065: 129  pop
+00066: 129  pop
+00067: 129  loopentry
+00068: 129  getlocal 0
+00071: 129  this
+00072: 129  getprop "dungeons"
+00077: 129  length "length"
+00082: 129  lt
+00083: 129  ifne 10 (-73)
+00088: 135  null
+00089: 135  return
+00090: 135  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:128 ---
+;; function object[16] getBossDungeonId
+;; function metadata object[16] nargs=0 bindings=3
+;; local[0] maxDungeon
+;; local[1] i
+;; local[2] id
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:139 ---
+loc   line  op
+----- ----  --
+main:
+00000: 140  zero
+00001: 140  setlocal 0
+00004: 140  pop
+00005: 141  zero
+00006: 141  setlocal 1
+00009: 141  pop
+00010: 141  goto 133 (+123)
+00015: 142  loophead
+00016: 142  callname "parseInt"
+00021: 142  implicitthis "parseInt"
+00026: 142  notearg
+00027: 142  this
+00028: 142  getprop "dungeons"
+00033: 142  getlocal 1
+00036: 142  getelem
+00037: 142  dup
+00038: 142  callprop "getId"
+00043: 142  swap
+00044: 142  notearg
+00045: 142  call 0
+00048: 142  notearg
+00049: 142  call 1
+00052: 142  setlocal 2
+00055: 142  pop
+00056: 143  getlocal 2
+00059: 143  getlocal 0
+00062: 143  gt
+00063: 143  and 106 (+43)
+00068: 143  pop
+00069: 143  this
+00070: 143  getprop "dungeons"
+00075: 143  getlocal 1
+00078: 143  getelem
+00079: 143  dup
+00080: 143  callprop "getType"
+00085: 143  swap
+00086: 143  notearg
+00087: 143  call 0
+00090: 143  name "xs"
+00095: 143  getprop "Models"
+00100: 143  getprop "Chapter_Type_Dungeon"
+00105: 143  stricteq
+00106: 143  ifeq 118 (+12)
+00111: 144  getlocal 2
+00114: 144  setlocal 0
+00117: 144  pop
+00118: 141  localinc 11
+00121: 141  getlocal 1
+00124: 141  pos
+00125: 141  dup
+00126: 141  one
+00127: 141  add
+00128: 141  setlocal 1
+00131: 141  pop
+00132: 141  pop
+00133: 141  loopentry
+00134: 141  getlocal 1
+00137: 141  this
+00138: 141  getprop "dungeons"
+00143: 141  length "length"
+00148: 141  lt
+00149: 141  ifne 15 (-134)
+00154: 147  name "xs"
+00159: 147  dup
+00160: 147  callprop "log"
+00165: 147  swap
+00166: 147  notearg
+00167: 147  string "getBossDungeonId:"
+00172: 147  getlocal 0
+00175: 147  add
+00176: 147  notearg
+00177: 147  call 1
+00180: 147  pop
+00181: 148  getlocal 0
+00184: 148  string ""
+00189: 148  add
+00190: 148  return
+00191: 148  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:139 ---
+;; function object[17] create
+;; function metadata object[17] nargs=1 bindings=2
+;; arg[0] chapterInfo
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:152 ---
+loc   line  op
+----- ----  --
+main:
+00000: 153  name "xs"
+00005: 153  getprop "Models"
+00010: 153  getprop "Chapter"
+00015: 153  undefined
+00016: 153  notearg
+00017: 153  new 0
+00020: 153  setlocal 0
+00023: 153  pop
+00024: 154  getlocal 0
+00027: 154  and 51 (+24)
+00032: 154  pop
+00033: 154  getlocal 0
+00036: 154  dup
+00037: 154  callprop "init"
+00042: 154  swap
+00043: 154  notearg
+00044: 154  getarg 0
+00047: 154  notearg
+00048: 154  call 1
+00051: 154  ifeq 60 (+9)
+00056: 155  getlocal 0
+00059: 155  return
+00060: 156  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chapter.js:152 ---

@@ -1,0 +1,391 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Meridians/MeridiansMainScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=109 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Scene"
+00010:   4  name "cc"
+00015:   4  getprop "Scene"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  string "xs.Scene.MeridiansMainScene"
+00038:   5  initprop "name"
+00043:   6  lambda (function () {
+    [sourceless code]
+})
+00048:   6  initprop "ctor"
+00053:  10  lambda (function () {
+    [sourceless code]
+})
+00058:  10  initprop "init"
+00063:  42  lambda (function () {
+    [sourceless code]
+})
+00068:  42  initprop "onEnter"
+00073:  45  lambda (function () {
+    [sourceless code]
+})
+00078:  45  initprop "onExit"
+00083:  45  endinit
+00084:  45  notearg
+00085:  45  call 1
+00088:  45  setprop "MeridiansMainScene"
+00093:  45  popv
+00094:  49  name "xs"
+00099:  49  getprop "Scene"
+00104:  49  getprop "MeridiansMainScene"
+00109:  49  lambda (function () {
+    [sourceless code]
+})
+00114:  49  setprop "create"
+00119:  49  popv
+00120:  59  name "xs"
+00125:  59  getprop "Scene"
+00130:  59  getprop "Mgr"
+00135:  59  dup
+00136:  59  callprop "registerScene"
+00141:  59  swap
+00142:  59  notearg
+00143:  59  string "MeridiansMainScene"
+00148:  59  notearg
+00149:  59  newinit 1
+00154:  60  name "xs"
+00159:  60  getprop "Scene"
+00164:  60  getprop "MeridiansMainScene"
+00169:  60  initprop "class"
+00174:  61  name "xs"
+00179:  61  getprop "Constant_SceneType_Challenge"
+00184:  61  initprop "type"
+00189:  62  newarray 1
+00193:  62  string "MeridiansMainScene"
+00198:  62  initelem_array 0
+00202:  62  endinit
+00203:  62  initprop "area"
+00208:  62  endinit
+00209:  62  notearg
+00210:  62  call 2
+00213:  62  popv
+00214:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "Scene"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] visibleSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  16  name "xs"
+00025:  16  getprop "director"
+00030:  16  dup
+00031:  16  callprop "getVisibleSize"
+00036:  16  swap
+00037:  16  notearg
+00038:  16  call 0
+00041:  16  setlocal 0
+00044:  16  pop
+00045:  18  name "xs"
+00050:  18  getprop "Tools"
+00055:  18  getprop "UI"
+00060:  18  dup
+00061:  18  callprop "addBgByType"
+00066:  18  swap
+00067:  18  notearg
+00068:  18  this
+00069:  18  notearg
+00070:  18  name "xs"
+00075:  18  getprop "Constant_BgType_MeridiansMainView_Bg"
+00080:  18  notearg
+00081:  18  call 2
+00084:  18  pop
+00085:  21  this
+00086:  21  name "xs"
+00091:  21  getprop "Views"
+00096:  21  getprop "PlayerInfoBannerSimpleView"
+00101:  21  dup
+00102:  21  callprop "create"
+00107:  21  swap
+00108:  21  notearg
+00109:  21  call 0
+00112:  21  setprop "m_infoBar"
+00117:  21  pop
+00118:  22  this
+00119:  22  getprop "m_infoBar"
+00124:  22  dup
+00125:  22  callprop "setAnchorPoint"
+00130:  22  swap
+00131:  22  notearg
+00132:  22  name "cc"
+00137:  22  dup
+00138:  22  callprop "p"
+00143:  22  swap
+00144:  22  notearg
+00145:  22  zero
+00146:  22  notearg
+00147:  22  one
+00148:  22  notearg
+00149:  22  call 2
+00152:  22  notearg
+00153:  22  call 1
+00156:  22  pop
+00157:  23  name "xs"
+00162:  23  getprop "Utils"
+00167:  23  getprop "Node"
+00172:  23  dup
+00173:  23  callprop "attachNodes"
+00178:  23  swap
+00179:  23  notearg
+00180:  23  this
+00181:  23  notearg
+00182:  23  this
+00183:  23  getprop "m_infoBar"
+00188:  23  notearg
+00189:  23  newinit 1
+00194:  24  string "lt"
+00199:  24  initprop "desc"
+00204:  25  true
+00205:  25  initprop "sc"
+00210:  25  endinit
+00211:  25  notearg
+00212:  25  call 3
+00215:  25  pop
+00216:  29  this
+00217:  29  name "xs"
+00222:  29  getprop "Views"
+00227:  29  getprop "TablePage"
+00232:  29  dup
+00233:  29  callprop "create"
+00238:  29  swap
+00239:  29  notearg
+00240:  29  name "cc"
+00245:  29  dup
+00246:  29  callprop "size"
+00251:  29  swap
+00252:  29  notearg
+00253:  29  getlocal 0
+00256:  29  getprop "width"
+00261:  29  name "xs"
+00266:  29  getprop "Views"
+00271:  29  getprop "MainMenuView"
+00276:  29  getprop "Width"
+00281:  29  sub
+00282:  29  notearg
+00283:  29  getlocal 0
+00286:  29  getprop "height"
+00291:  29  int8 50
+00293:  29  sub
+00294:  29  notearg
+00295:  29  call 2
+00298:  29  notearg
+00299:  29  call 1
+00302:  29  setprop "m_pageView"
+00307:  29  pop
+00308:  30  this
+00309:  30  getprop "m_pageView"
+00314:  30  dup
+00315:  30  callprop "setBaseTouchPriority"
+00320:  30  swap
+00321:  30  notearg
+00322:  30  int8 -1
+00324:  30  notearg
+00325:  30  call 1
+00328:  30  pop
+00329:  31  this
+00330:  31  getprop "m_pageView"
+00335:  31  dup
+00336:  31  callprop "setListener"
+00341:  31  swap
+00342:  31  notearg
+00343:  31  this
+00344:  31  notearg
+00345:  31  call 1
+00348:  31  pop
+00349:  32  this
+00350:  32  getprop "m_pageView"
+00355:  32  dup
+00356:  32  callprop "addPageWhitConstruct"
+00361:  32  swap
+00362:  32  notearg
+00363:  32  name "xs"
+00368:  32  getprop "Tools"
+00373:  32  getprop "String"
+00378:  32  dup
+00379:  32  callprop "createString"
+00384:  32  swap
+00385:  32  notearg
+00386:  32  string "MeridiansMain_1"
+00391:  32  notearg
+00392:  32  call 1
+00395:  32  notearg
+00396:  32  name "xs"
+00401:  32  getprop "Views"
+00406:  32  getprop "MeridiansMainView"
+00411:  32  notearg
+00412:  32  newinit 1
+00417:  32  getarg 0
+00420:  32  initprop "param"
+00425:  32  endinit
+00426:  32  notearg
+00427:  32  call 3
+00430:  32  pop
+00431:  33  name "xs"
+00436:  33  getprop "Utils"
+00441:  33  getprop "Node"
+00446:  33  dup
+00447:  33  callprop "attachNodes"
+00452:  33  swap
+00453:  33  notearg
+00454:  33  this
+00455:  33  notearg
+00456:  33  this
+00457:  33  getprop "m_pageView"
+00462:  33  notearg
+00463:  33  newinit 1
+00468:  34  string "lb"
+00473:  34  initprop "desc"
+00478:  35  true
+00479:  35  initprop "sc"
+00484:  35  endinit
+00485:  35  notearg
+00486:  35  call 3
+00489:  35  pop
+00490:  40  true
+00491:  40  return
+00492:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:10 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:42 ---
+loc   line  op
+----- ----  --
+main:
+00000:  43  this
+00001:  43  dup
+00002:  43  callprop "_super"
+00007:  43  swap
+00008:  43  notearg
+00009:  43  call 0
+00012:  43  pop
+00013:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:42 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  this
+00001:  46  dup
+00002:  46  callprop "_super"
+00007:  46  swap
+00008:  46  notearg
+00009:  46  call 0
+00012:  46  pop
+00013:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:45 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  51  name "xs"
+00005:  51  getprop "Scene"
+00010:  51  getprop "MeridiansMainScene"
+00015:  51  undefined
+00016:  51  notearg
+00017:  51  new 0
+00020:  51  setlocal 0
+00023:  51  pop
+00024:  52  getlocal 0
+00027:  52  and 51 (+24)
+00032:  52  pop
+00033:  52  getlocal 0
+00036:  52  dup
+00037:  52  callprop "init"
+00042:  52  swap
+00043:  52  notearg
+00044:  52  getarg 0
+00047:  52  notearg
+00048:  52  call 1
+00051:  52  ifeq 60 (+9)
+00056:  53  getlocal 0
+00059:  53  return
+00060:  55  name "xs"
+00065:  55  dup
+00066:  55  callprop "assert"
+00071:  55  swap
+00072:  55  notearg
+00073:  55  false
+00074:  55  notearg
+00075:  55  string "xs.Scene.MeridiansMainScene.create error!"
+00080:  55  notearg
+00081:  55  call 2
+00084:  55  pop
+00085:  56  null
+00086:  56  return
+00087:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Meridians/MeridiansMainScene.js:49 ---

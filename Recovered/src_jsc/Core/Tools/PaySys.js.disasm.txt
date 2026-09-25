@@ -1,0 +1,303 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Tools/PaySys.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=15 object[0]
+;; FUNCTION-MAP kind=lambda offset=25 object[1]
+;; FUNCTION-MAP kind=lambda offset=35 object[2]
+;; FUNCTION-MAP kind=lambda offset=45 object[3]
+;; FUNCTION-MAP kind=lambda offset=55 object[4]
+;; FUNCTION-MAP kind=lambda offset=65 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xsc"
+00005:   7  getprop "Tools"
+00010:   7  newinit 1
+00015:   9  lambda (function () {
+    [sourceless code]
+})
+00020:   9  initprop "isUsingEasySdk"
+00025:  14  lambda (function () {
+    [sourceless code]
+})
+00030:  14  initprop "isUsingAppStore"
+00035:  21  lambda (function () {
+    [sourceless code]
+})
+00040:  21  initprop "isUsingAnySdk"
+00045:  26  lambda (function () {
+    [sourceless code]
+})
+00050:  26  initprop "isUsingAliPay"
+00055:  32  lambda (function () {
+    [sourceless code]
+})
+00060:  32  initprop "isUsing3rdSdk"
+00065:  42  lambda (function () {
+    [sourceless code]
+})
+00070:  42  initprop "getAppStoreId"
+00075:  42  endinit
+00076:  42  setprop "PaySys"
+00081:  42  popv
+00082:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:1 ---
+;; function object[0] isUsingEasySdk
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "app_account_sys"
+00010:  10  name "xsc"
+00015:  10  getprop "Const_App_Account_Sys_EasySdk"
+00020:  10  eq
+00021:  10  or 48 (+27)
+00026:  10  pop
+00027:  11  name "xs"
+00032:  11  getprop "app_account_sys"
+00037:  11  name "xsc"
+00042:  11  getprop "Const_App_Account_Sys_EasyGuestSdk"
+00047:  11  eq
+00048:  11  return
+00049:  11  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:9 ---
+;; function object[1] isUsingAppStore
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  name "xs"
+00005:  16  getprop "app_account_sys"
+00010:  16  name "xsc"
+00015:  16  getprop "Const_App_Account_Sys_AppStore"
+00020:  16  eq
+00021:  16  or 75 (+54)
+00026:  16  pop
+00027:  17  name "xs"
+00032:  17  getprop "app_account_sys"
+00037:  17  name "xsc"
+00042:  17  getprop "Const_App_Account_Sys_LoginBySuper3rdSdkAndGuest_PayByAppStore"
+00047:  17  eq
+00048:  17  or 75 (+27)
+00053:  17  pop
+00054:  18  name "xs"
+00059:  18  getprop "app_account_sys"
+00064:  18  name "xsc"
+00069:  18  getprop "Const_App_Account_Sys_LoginBySuper3rdSdk_PayByAppStore"
+00074:  18  eq
+00075:  18  return
+00076:  18  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:14 ---
+;; function object[2] isUsingAnySdk
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  name "xs"
+00005:  23  getprop "app_account_sys"
+00010:  23  name "xsc"
+00015:  23  getprop "Const_App_Account_Sys_AnySdk"
+00020:  23  eq
+00021:  23  return
+00022:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:21 ---
+;; function object[3] isUsingAliPay
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  28  name "xs"
+00005:  28  getprop "app_account_sys"
+00010:  28  name "xsc"
+00015:  28  getprop "Const_App_Account_Sys_BfSdk"
+00020:  28  eq
+00021:  28  or 48 (+27)
+00026:  28  pop
+00027:  29  name "xs"
+00032:  29  getprop "app_account_sys"
+00037:  29  name "xsc"
+00042:  29  getprop "Const_App_Account_Sys_Default"
+00047:  29  eq
+00048:  29  return
+00049:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:26 ---
+;; function object[4] isUsing3rdSdk
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  name "xs"
+00005:  34  getprop "app_account_sys"
+00010:  34  name "xsc"
+00015:  34  getprop "Const_App_Account_Sys_BfSdk_3rdPay"
+00020:  34  eq
+00021:  34  or 156 (+135)
+00026:  34  pop
+00027:  35  name "xs"
+00032:  35  getprop "app_account_sys"
+00037:  35  name "xsc"
+00042:  35  getprop "Const_App_Account_Sys_ThirdSdkSet"
+00047:  35  eq
+00048:  35  or 156 (+108)
+00053:  35  pop
+00054:  36  name "xs"
+00059:  36  getprop "app_account_sys"
+00064:  36  name "xsc"
+00069:  36  getprop "Const_App_Account_Sys_BfSdkWithThirdPay"
+00074:  36  eq
+00075:  36  or 156 (+81)
+00080:  36  pop
+00081:  37  name "xs"
+00086:  37  getprop "app_account_sys"
+00091:  37  name "xsc"
+00096:  37  getprop "Const_App_Account_Sys_Super3rdSdk_Ios"
+00101:  37  eq
+00102:  37  or 156 (+54)
+00107:  37  pop
+00108:  38  name "xs"
+00113:  38  getprop "app_account_sys"
+00118:  38  name "xsc"
+00123:  38  getprop "Const_App_Account_Sys_Super3rdSdk_And"
+00128:  38  eq
+00129:  38  or 156 (+27)
+00134:  38  pop
+00135:  39  name "xs"
+00140:  39  getprop "app_account_sys"
+00145:  39  name "xsc"
+00150:  39  getprop "Const_App_Account_Sys_LoginBySuper3rdSdkAndGuest_PayByGooglePlay"
+00155:  39  eq
+00156:  39  return
+00157:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:32 ---
+;; function object[5] getAppStoreId
+;; function metadata object[5] nargs=0 bindings=1
+;; local[0] isUsingAppStore
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=0 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:42 ---
+loc   line  op
+----- ----  --
+main:
+00000:  43  lambda (function () {
+    [sourceless code]
+})
+00005:  43  setlocal 0
+00008:  43  pop
+00009:  50  name "xs"
+00014:  50  dup
+00015:  50  callprop "assert"
+00020:  50  swap
+00021:  50  notearg
+00022:  50  this
+00023:  50  dup
+00024:  50  callprop "isUsingAppStore"
+00029:  50  swap
+00030:  50  notearg
+00031:  50  call 0
+00034:  50  or 43 (+9)
+00039:  50  pop
+00040:  50  getlocal 0
+00043:  50  notearg
+00044:  50  string "getAppStoreId why"
+00049:  50  notearg
+00050:  50  call 2
+00053:  50  pop
+00054:  52  name "xsc"
+00059:  52  getprop "Tools"
+00064:  52  getprop "ProductSys"
+00069:  52  dup
+00070:  52  callprop "getArea"
+00075:  52  swap
+00076:  52  notearg
+00077:  52  call 0
+00080:  52  name "xsc"
+00085:  52  getprop "Const_Area_CN"
+00090:  52  eq
+00091:  52  ifeq 107 (+16)
+00096:  53  int32 975955904
+00101:  53  return
+00102:  53  goto 155 (+53)
+00107:  55  name "xsc"
+00112:  55  getprop "Tools"
+00117:  55  getprop "ProductSys"
+00122:  55  dup
+00123:  55  callprop "getArea"
+00128:  55  swap
+00129:  55  notearg
+00130:  55  call 0
+00133:  55  name "xsc"
+00138:  55  getprop "Const_Area_TW"
+00143:  55  eq
+00144:  55  ifeq 155 (+11)
+00149:  56  int32 991360132
+00154:  56  return
+00155:  59  name "xs"
+00160:  59  dup
+00161:  59  callprop "error"
+00166:  59  swap
+00167:  59  notearg
+00168:  59  string "should use easy"
+00173:  59  notearg
+00174:  59  call 1
+00177:  59  pop
+00178:  60  int32 975955904
+00183:  60  return
+00184:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:42 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  name "xsc"
+00005:  44  getprop "Tools"
+00010:  44  getprop "PaySys"
+00015:  44  dup
+00016:  44  callprop "isUsingEasySdk"
+00021:  44  swap
+00022:  44  notearg
+00023:  44  call 0
+00026:  44  ifeq 80 (+54)
+00031:  45  name "xs"
+00036:  45  getprop "Tools"
+00041:  45  getprop "Jsb"
+00046:  45  getprop "EasySdk"
+00051:  45  getprop "Payment"
+00056:  45  dup
+00057:  45  callprop "getPlatformId"
+00062:  45  swap
+00063:  45  notearg
+00064:  45  call 0
+00067:  45  string "appstore"
+00072:  45  eq
+00073:  45  ifeq 80 (+7)
+00078:  46  true
+00079:  46  return
+00080:  48  false
+00081:  48  return
+00082:  48  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/PaySys.js:43 ---

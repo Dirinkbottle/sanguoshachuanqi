@@ -1,0 +1,234 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/UpgradeCfg/InsightGrowType.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=63 object[0]
+;; FUNCTION-MAP kind=lambda offset=73 object[1]
+;; FUNCTION-MAP kind=lambda offset=109 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/InsightGrowType.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Models"
+00010:   8  name "xs"
+00015:   8  getprop "Models"
+00020:   8  getprop "BaseUpgradeCfg"
+00025:   8  dup
+00026:   8  callprop "extend"
+00031:   8  swap
+00032:   8  notearg
+00033:   8  newinit 1
+00038:   9  name "xs"
+00043:   9  getprop "Constant_CfgDataType_General_Insight_GrowType"
+00048:   9  initprop "CfgDataType"
+00053:  10  string "xs.Models.InsightGrowType"
+00058:  10  initprop "name"
+00063:  12  lambda (function () {
+    [sourceless code]
+})
+00068:  12  initprop "getEffectByAttrType_100Percent"
+00073:  17  lambda (function () {
+    [sourceless code]
+})
+00078:  17  initprop "getEffectByAttrType"
+00083:  17  endinit
+00084:  17  notearg
+00085:  17  call 1
+00088:  17  setprop "InsightGrowType"
+00093:  17  popv
+00094:  46  name "xs"
+00099:  46  getprop "Models"
+00104:  46  getprop "InsightGrowType"
+00109:  46  lambda (function () {
+    [sourceless code]
+})
+00114:  46  setprop "createWithBase"
+00119:  46  popv
+00120:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/InsightGrowType.js:1 ---
+;; function object[0] getEffectByAttrType_100Percent
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] attrType
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/InsightGrowType.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "getEffectByAttrType"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  getarg 0
+00012:  13  notearg
+00013:  13  call 1
+00016:  13  return
+00017:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/InsightGrowType.js:12 ---
+;; function object[1] getEffectByAttrType
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] attrType
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/InsightGrowType.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  getlocal 0
+00003:  19  pop
+00004:  21  getarg 0
+00007:  21  condswitch
+00008:  23  name "xs"
+00013:  23  getprop "Constant_AttrType_Atk"
+00018:  23  case 73 (+55)
+00023:  26  name "xs"
+00028:  26  getprop "Constant_AttrType_Def"
+00033:  26  case 121 (+88)
+00038:  29  name "xs"
+00043:  29  getprop "Constant_AttrType_Hp"
+00048:  29  case 169 (+121)
+00053:  32  name "xs"
+00058:  32  getprop "Constant_AttrType_Int"
+00063:  32  case 217 (+154)
+00068:  32  default 265 (+197)
+00073:  24  name "xs"
+00078:  24  getprop "Utils"
+00083:  24  dup
+00084:  24  callprop "parseIntSafe"
+00089:  24  swap
+00090:  24  notearg
+00091:  24  this
+00092:  24  dup
+00093:  24  callprop "getLevelDataRef"
+00098:  24  swap
+00099:  24  notearg
+00100:  24  call 0
+00103:  24  getprop "attr_attack"
+00108:  24  notearg
+00109:  24  call 1
+00112:  24  setlocal 0
+00115:  24  pop
+00116:  25  goto 272 (+156)
+00121:  27  name "xs"
+00126:  27  getprop "Utils"
+00131:  27  dup
+00132:  27  callprop "parseIntSafe"
+00137:  27  swap
+00138:  27  notearg
+00139:  27  this
+00140:  27  dup
+00141:  27  callprop "getLevelDataRef"
+00146:  27  swap
+00147:  27  notearg
+00148:  27  call 0
+00151:  27  getprop "attr_defense"
+00156:  27  notearg
+00157:  27  call 1
+00160:  27  setlocal 0
+00163:  27  pop
+00164:  28  goto 272 (+108)
+00169:  30  name "xs"
+00174:  30  getprop "Utils"
+00179:  30  dup
+00180:  30  callprop "parseIntSafe"
+00185:  30  swap
+00186:  30  notearg
+00187:  30  this
+00188:  30  dup
+00189:  30  callprop "getLevelDataRef"
+00194:  30  swap
+00195:  30  notearg
+00196:  30  call 0
+00199:  30  getprop "attr_hp"
+00204:  30  notearg
+00205:  30  call 1
+00208:  30  setlocal 0
+00211:  30  pop
+00212:  31  goto 272 (+60)
+00217:  33  name "xs"
+00222:  33  getprop "Utils"
+00227:  33  dup
+00228:  33  callprop "parseIntSafe"
+00233:  33  swap
+00234:  33  notearg
+00235:  33  this
+00236:  33  dup
+00237:  33  callprop "getLevelDataRef"
+00242:  33  swap
+00243:  33  notearg
+00244:  33  call 0
+00247:  33  getprop "attr_wisdom"
+00252:  33  notearg
+00253:  33  call 1
+00256:  33  setlocal 0
+00259:  33  pop
+00260:  34  goto 272 (+12)
+00265:  37  zero
+00266:  37  return
+00267:  38  goto 272 (+5)
+00272:  41  getlocal 0
+00275:  41  return
+00276:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/InsightGrowType.js:17 ---
+;; function object[2] createWithBase
+;; function metadata object[2] nargs=2 bindings=3
+;; arg[0] type
+;; arg[1] level
+;; local[0] cfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/InsightGrowType.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  name "xs"
+00005:  47  getprop "Models"
+00010:  47  getprop "InsightGrowType"
+00015:  47  undefined
+00016:  47  notearg
+00017:  47  new 0
+00020:  47  setlocal 0
+00023:  47  pop
+00024:  48  getlocal 0
+00027:  48  and 47 (+20)
+00032:  48  pop
+00033:  48  getlocal 0
+00036:  48  dup
+00037:  48  callprop "init"
+00042:  48  swap
+00043:  48  notearg
+00044:  48  call 0
+00047:  48  ifeq 79 (+32)
+00052:  49  getlocal 0
+00055:  49  dup
+00056:  49  callprop "readBaseData"
+00061:  49  swap
+00062:  49  notearg
+00063:  49  getarg 0
+00066:  49  notearg
+00067:  49  getarg 1
+00070:  49  notearg
+00071:  49  call 2
+00074:  49  pop
+00075:  50  getlocal 0
+00078:  50  return
+00079:  52  name "xs"
+00084:  52  dup
+00085:  52  callprop "assert"
+00090:  52  swap
+00091:  52  notearg
+00092:  52  false
+00093:  52  notearg
+00094:  52  string "xs.Models.InsightGrowType.createWithBase error"
+00099:  52  notearg
+00100:  52  call 2
+00103:  52  pop
+00104:  53  null
+00105:  53  return
+00106:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/InsightGrowType.js:46 ---

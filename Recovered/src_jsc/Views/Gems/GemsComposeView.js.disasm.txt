@@ -1,0 +1,3396 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Gems/GemsComposeView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=101 object[0]
+;; FUNCTION-MAP kind=lambda offset=235 object[1]
+;; FUNCTION-MAP kind=lambda offset=245 object[2]
+;; FUNCTION-MAP kind=lambda offset=255 object[3]
+;; FUNCTION-MAP kind=lambda offset=265 object[4]
+;; FUNCTION-MAP kind=lambda offset=275 object[5]
+;; FUNCTION-MAP kind=lambda offset=285 object[6]
+;; FUNCTION-MAP kind=lambda offset=295 object[7]
+;; FUNCTION-MAP kind=lambda offset=305 object[8]
+;; FUNCTION-MAP kind=lambda offset=315 object[9]
+;; FUNCTION-MAP kind=lambda offset=325 object[10]
+;; FUNCTION-MAP kind=lambda offset=335 object[11]
+;; FUNCTION-MAP kind=lambda offset=345 object[12]
+;; FUNCTION-MAP kind=lambda offset=355 object[13]
+;; FUNCTION-MAP kind=lambda offset=365 object[14]
+;; FUNCTION-MAP kind=lambda offset=375 object[15]
+;; FUNCTION-MAP kind=lambda offset=385 object[16]
+;; FUNCTION-MAP kind=lambda offset=395 object[17]
+;; FUNCTION-MAP kind=lambda offset=405 object[18]
+;; FUNCTION-MAP kind=lambda offset=415 object[19]
+;; FUNCTION-MAP kind=lambda offset=425 object[20]
+;; FUNCTION-MAP kind=lambda offset=435 object[21]
+;; FUNCTION-MAP kind=lambda offset=471 object[22]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Views"
+00010:   4  getprop "Gems"
+00015:   4  one
+00016:   4  setprop "firstClick"
+00021:   4  popv
+00022:   5  name "xs"
+00027:   5  getprop "Views"
+00032:   5  getprop "Gems"
+00037:   5  int8 2
+00039:   5  setprop "secondClick"
+00044:   5  popv
+00045:   6  name "xs"
+00050:   6  getprop "Views"
+00055:   6  getprop "Gems"
+00060:   6  int8 3
+00062:   6  setprop "thirdClick"
+00067:   6  popv
+00068:   8  name "xs"
+00073:   8  getprop "Views"
+00078:   8  name "cc"
+00083:   8  getprop "Layer"
+00088:   8  dup
+00089:   8  callprop "extend"
+00094:   8  swap
+00095:   8  notearg
+00096:   8  newinit 1
+00101:   9  lambda (function () {
+    [sourceless code]
+})
+00106:   9  initprop "ctor"
+00111:  13  newarray 2
+00115:  14  newinit 1
+00120:  14  int8 5
+00122:  14  initprop "tag"
+00127:  14  string "btn"
+00132:  14  initprop "type"
+00137:  14  string "m_ComposeBtn"
+00142:  14  initprop "name"
+00147:  14  string "Btn_btn1"
+00152:  14  initprop "id"
+00157:  14  string "gems_compose"
+00162:  14  initprop "stringId"
+00167:  14  endinit
+00168:  14  initelem_array 0
+00172:  15  newinit 1
+00177:  15  int8 6
+00179:  15  initprop "tag"
+00184:  15  string "btn"
+00189:  15  initprop "type"
+00194:  15  string "m_oneStepComposeBtn"
+00199:  15  initprop "name"
+00204:  15  string "Btn_btn1"
+00209:  15  initprop "id"
+00214:  15  string "GemsOneStepCompose"
+00219:  15  initprop "stringId"
+00224:  15  endinit
+00225:  15  initelem_array 1
+00229:  15  endinit
+00230:  15  initprop "ccbCfg"
+00235:  18  lambda (function () {
+    [sourceless code]
+})
+00240:  18  initprop "init"
+00245: 155  lambda (function () {
+    [sourceless code]
+})
+00250: 155  initprop "_PosTransform"
+00255: 161  lambda (function () {
+    [sourceless code]
+})
+00260: 161  initprop "onEnter"
+00265: 165  lambda (function () {
+    [sourceless code]
+})
+00270: 165  initprop "onExit"
+00275: 169  lambda (function () {
+    [sourceless code]
+})
+00280: 169  initprop "setBaseTouchPriority"
+00285: 175  lambda (function () {
+    [sourceless code]
+})
+00290: 175  initprop "GetGemIdByLevelAndType"
+00295: 200  lambda (function () {
+    [sourceless code]
+})
+00300: 200  initprop "OneStepComposeCallBack"
+00305: 246  lambda (function () {
+    [sourceless code]
+})
+00310: 246  initprop "ComposeCallback"
+00315: 284  lambda (function () {
+    [sourceless code]
+})
+00320: 284  initprop "ResidueSmallGemCanCompose"
+00325: 305  lambda (function () {
+    [sourceless code]
+})
+00330: 305  initprop "GemFirstCallBack"
+00335: 308  lambda (function () {
+    [sourceless code]
+})
+00340: 308  initprop "GemSecondCallBack"
+00345: 312  lambda (function () {
+    [sourceless code]
+})
+00350: 312  initprop "GemThirdCallBack"
+00355: 315  lambda (function () {
+    [sourceless code]
+})
+00360: 315  initprop "PullAllGemsByNum"
+00365: 332  lambda (function () {
+    [sourceless code]
+})
+00370: 332  initprop "ComposeGemIsOk"
+00375: 375  lambda (function () {
+    [sourceless code]
+})
+00380: 375  initprop "SelectFirstGem"
+00385: 388  lambda (function () {
+    [sourceless code]
+})
+00390: 388  initprop "SelectSecondGem"
+00395: 401  lambda (function () {
+    [sourceless code]
+})
+00400: 401  initprop "SelectThirdGem"
+00405: 414  lambda (function () {
+    [sourceless code]
+})
+00410: 414  initprop "SelectFourthGem"
+00415: 427  lambda (function () {
+    [sourceless code]
+})
+00420: 427  initprop "ClearGems"
+00425: 436  lambda (function () {
+    [sourceless code]
+})
+00430: 436  initprop "ClearAllGems"
+00435: 466  lambda (function () {
+    [sourceless code]
+})
+00440: 466  initprop "ExchangeGemIcon"
+00445: 466  endinit
+00446: 466  notearg
+00447: 466  call 1
+00450: 466  setprop "GemsComposeView"
+00455: 466  popv
+00456: 488  name "xs"
+00461: 488  getprop "Views"
+00466: 488  getprop "GemsComposeView"
+00471: 488  lambda (function () {
+    [sourceless code]
+})
+00476: 488  setprop "create"
+00481: 488  popv
+00482: 494  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  this
+00001:  10  dup
+00002:  10  callprop "_super"
+00007:  10  swap
+00008:  10  notearg
+00009:  10  call 0
+00012:  10  pop
+00013:  11  name "cc"
+00018:  11  dup
+00019:  11  callprop "associateWithNative"
+00024:  11  swap
+00025:  11  notearg
+00026:  11  this
+00027:  11  notearg
+00028:  11  name "cc"
+00033:  11  getprop "Layer"
+00038:  11  notearg
+00039:  11  call 2
+00042:  11  pop
+00043:  11  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:9 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=4
+;; local[0] _dataObj
+;; local[1] key
+;; local[2] visibleSize
+;; local[3] RealWidth
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=283 length=62 stackDepth=1 target=345
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:18 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  this
+00001:  19  dup
+00002:  19  callprop "_super"
+00007:  19  swap
+00008:  19  notearg
+00009:  19  call 0
+00012:  19  not
+00013:  19  ifeq 20 (+7)
+00018:  20  false
+00019:  20  return
+00020:  23  this
+00021:  23  null
+00022:  23  setprop "ccbNode"
+00027:  23  pop
+00028:  24  this
+00029:  24  null
+00030:  24  setprop "m_gem_first"
+00035:  24  pop
+00036:  25  this
+00037:  25  null
+00038:  25  setprop "m_gem_second"
+00043:  25  pop
+00044:  26  this
+00045:  26  null
+00046:  26  setprop "m_gem_third"
+00051:  26  pop
+00052:  27  this
+00053:  27  null
+00054:  27  setprop "m_gem_compose"
+00059:  27  pop
+00060:  28  this
+00061:  28  null
+00062:  28  setprop "first_button"
+00067:  28  pop
+00068:  29  this
+00069:  29  null
+00070:  29  setprop "second_button"
+00075:  29  pop
+00076:  30  this
+00077:  30  null
+00078:  30  setprop "third_button"
+00083:  30  pop
+00084:  31  this
+00085:  31  null
+00086:  31  setprop "m_ComposeBtn"
+00091:  31  pop
+00092:  32  this
+00093:  32  null
+00094:  32  setprop "m_oneStepComposeBtn"
+00099:  32  pop
+00100:  34  this
+00101:  34  null
+00102:  34  setprop "ccbComposeNode"
+00107:  34  pop
+00108:  35  this
+00109:  35  null
+00110:  35  setprop "m_composeGem_first"
+00115:  35  pop
+00116:  36  this
+00117:  36  null
+00118:  36  setprop "m_composeGem_second"
+00123:  36  pop
+00124:  37  this
+00125:  37  null
+00126:  37  setprop "m_composeGem_third"
+00131:  37  pop
+00132:  38  this
+00133:  38  null
+00134:  38  setprop "m_composeGem_fourth"
+00139:  38  pop
+00140:  41  this
+00141:  41  null
+00142:  41  setprop "m_firstGemid"
+00147:  41  pop
+00148:  42  this
+00149:  42  null
+00150:  42  setprop "m_SecondGemid"
+00155:  42  pop
+00156:  43  this
+00157:  43  null
+00158:  43  setprop "m_ThirdGemid"
+00163:  43  pop
+00164:  44  this
+00165:  44  null
+00166:  44  setprop "m_FourthGemid"
+00171:  44  pop
+00172:  46  this
+00173:  46  null
+00174:  46  setprop "m_smallgemsID"
+00179:  46  pop
+00180:  47  this
+00181:  47  null
+00182:  47  setprop "m_smallGemType"
+00187:  47  pop
+00188:  48  this
+00189:  48  null
+00190:  48  setprop "m_smallGemLevel"
+00195:  48  pop
+00196:  49  this
+00197:  49  false
+00198:  49  setprop "m_canCompose"
+00203:  49  pop
+00204:  50  this
+00205:  50  null
+00206:  50  setprop "m_bigGemType"
+00211:  50  pop
+00212:  51  this
+00213:  51  null
+00214:  51  setprop "m_BigGemsList"
+00219:  51  pop
+00220:  53  this
+00221:  53  newarray 0
+00225:  53  endinit
+00226:  53  setprop "m_dataGems"
+00231:  53  pop
+00232:  54  name "xs"
+00237:  54  getprop "Tools"
+00242:  54  getprop "CfgData"
+00247:  54  dup
+00248:  54  callprop "getCfgDataByType"
+00253:  54  swap
+00254:  54  notearg
+00255:  55  name "xs"
+00260:  55  getprop "Constant_CfgDataType_Gem"
+00265:  55  notearg
+00266:  55  call 1
+00269:  55  setlocal 0
+00272:  55  pop
+00273:  57  getlocal 0
+00276:  57  iter 1
+00278:  57  goto 338 (+60)
+00283:  57  loophead
+00284:  57  iternext
+00285:  57  setlocal 1
+00288:  57  pop
+00289:  59  getlocal 0
+00292:  59  dup
+00293:  59  callprop "hasOwnProperty"
+00298:  59  swap
+00299:  59  notearg
+00300:  59  getlocal 1
+00303:  59  notearg
+00304:  59  call 1
+00307:  59  ifeq 338 (+31)
+00312:  60  this
+00313:  60  getprop "m_dataGems"
+00318:  60  dup
+00319:  60  callprop "push"
+00324:  60  swap
+00325:  60  notearg
+00326:  60  getlocal 0
+00329:  60  getlocal 1
+00332:  60  getelem
+00333:  60  notearg
+00334:  60  call 1
+00337:  60  pop
+00338:  60  loopentry
+00339:  60  moreiter
+00340:  60  ifne 283 (-57)
+00345:  60  enditer
+00346:  64  name "xs"
+00351:  64  getprop "director"
+00356:  64  dup
+00357:  64  callprop "getVisibleSize"
+00362:  64  swap
+00363:  64  notearg
+00364:  64  call 0
+00367:  64  setlocal 2
+00370:  64  pop
+00371:  66  name "xs"
+00376:  66  getprop "Tools"
+00381:  66  getprop "UI"
+00386:  66  dup
+00387:  66  callprop "addCommonBg"
+00392:  66  swap
+00393:  66  notearg
+00394:  66  this
+00395:  66  notearg
+00396:  66  true
+00397:  66  notearg
+00398:  66  true
+00399:  66  notearg
+00400:  66  call 3
+00403:  66  pop
+00404:  67  this
+00405:  67  name "xs"
+00410:  67  getprop "Factorys"
+00415:  67  getprop "Sprite"
+00420:  67  dup
+00421:  67  callprop "create"
+00426:  67  swap
+00427:  67  notearg
+00428:  67  string "gemsScene_beijing2"
+00433:  67  notearg
+00434:  67  string "GemsScene"
+00439:  67  notearg
+00440:  67  call 2
+00443:  67  setprop "m_GeneralBg"
+00448:  67  pop
+00449:  68  name "xs"
+00454:  68  getprop "Tools"
+00459:  68  getprop "UI"
+00464:  68  dup
+00465:  68  callprop "addSpriteAsBg"
+00470:  68  swap
+00471:  68  notearg
+00472:  68  this
+00473:  68  notearg
+00474:  68  this
+00475:  68  getprop "m_GeneralBg"
+00480:  68  notearg
+00481:  68  call 2
+00484:  68  pop
+00485:  71  this
+00486:  71  name "xs"
+00491:  71  getprop "Views"
+00496:  71  getprop "PlayerInfoBannerSimpleView"
+00501:  71  dup
+00502:  71  callprop "create"
+00507:  71  swap
+00508:  71  notearg
+00509:  71  call 0
+00512:  71  setprop "m_infoBar"
+00517:  71  pop
+00518:  72  this
+00519:  72  getprop "m_infoBar"
+00524:  72  dup
+00525:  72  callprop "setAnchorPoint"
+00530:  72  swap
+00531:  72  notearg
+00532:  72  name "cc"
+00537:  72  dup
+00538:  72  callprop "p"
+00543:  72  swap
+00544:  72  notearg
+00545:  72  zero
+00546:  72  notearg
+00547:  72  one
+00548:  72  notearg
+00549:  72  call 2
+00552:  72  notearg
+00553:  72  call 1
+00556:  72  pop
+00557:  73  name "xs"
+00562:  73  getprop "Utils"
+00567:  73  getprop "Node"
+00572:  73  dup
+00573:  73  callprop "attachNodes"
+00578:  73  swap
+00579:  73  notearg
+00580:  73  this
+00581:  73  notearg
+00582:  73  this
+00583:  73  getprop "m_infoBar"
+00588:  73  notearg
+00589:  73  newinit 1
+00594:  74  string "lt"
+00599:  74  initprop "desc"
+00604:  75  true
+00605:  75  initprop "sc"
+00610:  75  endinit
+00611:  75  notearg
+00612:  75  call 3
+00615:  75  pop
+00616:  78  getlocal 2
+00619:  78  getprop "width"
+00624:  78  name "xs"
+00629:  78  getprop "Views"
+00634:  78  getprop "MainMenuView"
+00639:  78  getprop "Width"
+00644:  78  sub
+00645:  78  setlocal 3
+00648:  78  pop
+00649:  79  this
+00650:  79  name "xs"
+00655:  79  getprop "ccb_reader"
+00660:  79  dup
+00661:  79  callprop "load"
+00666:  79  swap
+00667:  79  notearg
+00668:  79  name "xs"
+00673:  79  getprop "Cfg"
+00678:  79  getprop "CCBI"
+00683:  79  getprop "GemsComposeList"
+00688:  79  notearg
+00689:  79  this
+00690:  79  notearg
+00691:  79  call 2
+00694:  79  setprop "ccbComposeNode"
+00699:  79  pop
+00700:  80  this
+00701:  80  getprop "ccbComposeNode"
+00706:  80  dup
+00707:  80  callprop "setContentSize"
+00712:  80  swap
+00713:  80  notearg
+00714:  80  name "cc"
+00719:  80  dup
+00720:  80  callprop "size"
+00725:  80  swap
+00726:  80  notearg
+00727:  80  getlocal 3
+00730:  80  notearg
+00731:  80  int8 90
+00733:  80  notearg
+00734:  80  call 2
+00737:  80  notearg
+00738:  80  call 1
+00741:  80  pop
+00742:  81  name "xs"
+00747:  81  getprop "Utils"
+00752:  81  getprop "Node"
+00757:  81  dup
+00758:  81  callprop "attachNodes"
+00763:  81  swap
+00764:  81  notearg
+00765:  81  this
+00766:  81  notearg
+00767:  81  this
+00768:  81  getprop "ccbComposeNode"
+00773:  81  notearg
+00774:  81  newinit 1
+00779:  82  string "lb"
+00784:  82  initprop "desc"
+00789:  83  newinit 1
+00794:  84  zero
+00795:  84  initprop "x"
+00800:  85  zero
+00801:  85  initprop "y"
+00806:  85  endinit
+00807:  85  initprop "offset"
+00812:  87  true
+00813:  87  initprop "sc"
+00818:  87  endinit
+00819:  87  notearg
+00820:  87  call 3
+00823:  87  pop
+00824:  89  this
+00825:  89  getprop "ccbComposeNode"
+00830:  89  dup
+00831:  89  callprop "setVisible"
+00836:  89  swap
+00837:  89  notearg
+00838:  89  false
+00839:  89  notearg
+00840:  89  call 1
+00843:  89  pop
+00844:  92  this
+00845:  92  name "xs"
+00850:  92  getprop "ccb_reader"
+00855:  92  dup
+00856:  92  callprop "load"
+00861:  92  swap
+00862:  92  notearg
+00863:  92  name "xs"
+00868:  92  getprop "Cfg"
+00873:  92  getprop "CCBI"
+00878:  92  getprop "GemsComposeView"
+00883:  92  notearg
+00884:  92  this
+00885:  92  notearg
+00886:  92  call 2
+00889:  92  setprop "ccbNode"
+00894:  92  pop
+00895:  93  this
+00896:  93  getprop "ccbNode"
+00901:  93  dup
+00902:  93  callprop "setContentSize"
+00907:  93  swap
+00908:  93  notearg
+00909:  93  name "cc"
+00914:  93  dup
+00915:  93  callprop "size"
+00920:  93  swap
+00921:  93  notearg
+00922:  93  uint16 550
+00925:  93  notearg
+00926:  93  uint16 431
+00929:  93  notearg
+00930:  93  call 2
+00933:  93  notearg
+00934:  93  call 1
+00937:  93  pop
+00938:  94  name "xs"
+00943:  94  getprop "Utils"
+00948:  94  getprop "Node"
+00953:  94  dup
+00954:  94  callprop "attachNodes"
+00959:  94  swap
+00960:  94  notearg
+00961:  94  this
+00962:  94  notearg
+00963:  94  this
+00964:  94  getprop "ccbNode"
+00969:  94  notearg
+00970:  94  newinit 1
+00975:  95  string "lb"
+00980:  95  initprop "desc"
+00985:  96  newinit 1
+00990:  97  getlocal 2
+00993:  97  getprop "width"
+00998:  97  int8 2
+01000:  97  div
+01001:  97  this
+01002:  97  getprop "ccbNode"
+01007:  97  dup
+01008:  97  callprop "getContentSize"
+01013:  97  swap
+01014:  97  notearg
+01015:  97  call 0
+01018:  97  getprop "width"
+01023:  97  int8 2
+01025:  97  div
+01026:  97  sub
+01027:  97  name "xs"
+01032:  97  getprop "Views"
+01037:  97  getprop "MainMenuView"
+01042:  97  getprop "Width"
+01047:  97  int8 2
+01049:  97  div
+01050:  97  sub
+01051:  97  initprop "x"
+01056:  98  getlocal 2
+01059:  98  getprop "height"
+01064:  98  int8 2
+01066:  98  div
+01067:  98  uint16 220
+01070:  98  sub
+01071:  98  initprop "y"
+01076:  98  endinit
+01077:  98  initprop "offset"
+01082: 100  true
+01083: 100  initprop "sc"
+01088: 100  endinit
+01089: 100  notearg
+01090: 100  call 3
+01093: 100  pop
+01094: 103  name "xs"
+01099: 103  getprop "Utils"
+01104: 103  getprop "UI"
+01109: 103  dup
+01110: 103  callprop "replaceCcbByCfg"
+01115: 103  swap
+01116: 103  notearg
+01117: 103  this
+01118: 103  getprop "ccbNode"
+01123: 103  notearg
+01124: 103  this
+01125: 103  getprop "ccbCfg"
+01130: 103  notearg
+01131: 103  this
+01132: 103  notearg
+01133: 103  call 3
+01136: 103  pop
+01137: 106  this
+01138: 106  name "xs"
+01143: 106  getprop "Utils"
+01148: 106  dup
+01149: 106  callprop "getChildByTag"
+01154: 106  swap
+01155: 106  notearg
+01156: 106  this
+01157: 106  getprop "ccbNode"
+01162: 106  notearg
+01163: 106  one
+01164: 106  notearg
+01165: 106  call 2
+01168: 106  setprop "m_gem_first"
+01173: 106  pop
+01174: 107  this
+01175: 107  name "xs"
+01180: 107  getprop "Utils"
+01185: 107  dup
+01186: 107  callprop "getChildByTag"
+01191: 107  swap
+01192: 107  notearg
+01193: 107  this
+01194: 107  getprop "ccbNode"
+01199: 107  notearg
+01200: 107  int8 2
+01202: 107  notearg
+01203: 107  call 2
+01206: 107  setprop "m_gem_second"
+01211: 107  pop
+01212: 108  this
+01213: 108  name "xs"
+01218: 108  getprop "Utils"
+01223: 108  dup
+01224: 108  callprop "getChildByTag"
+01229: 108  swap
+01230: 108  notearg
+01231: 108  this
+01232: 108  getprop "ccbNode"
+01237: 108  notearg
+01238: 108  int8 3
+01240: 108  notearg
+01241: 108  call 2
+01244: 108  setprop "m_gem_third"
+01249: 108  pop
+01250: 109  this
+01251: 109  name "xs"
+01256: 109  getprop "Utils"
+01261: 109  dup
+01262: 109  callprop "getChildByTag"
+01267: 109  swap
+01268: 109  notearg
+01269: 109  this
+01270: 109  getprop "ccbNode"
+01275: 109  notearg
+01276: 109  int8 4
+01278: 109  notearg
+01279: 109  call 2
+01282: 109  setprop "m_gem_compose"
+01287: 109  pop
+01288: 111  this
+01289: 111  name "xs"
+01294: 111  getprop "Views"
+01299: 111  getprop "Btn"
+01304: 111  dup
+01305: 111  callprop "createInvisibleWithParent"
+01310: 111  swap
+01311: 111  notearg
+01312: 111  this
+01313: 111  getprop "m_gem_first"
+01318: 111  notearg
+01319: 111  call 1
+01322: 111  setprop "first_button"
+01327: 111  pop
+01328: 112  this
+01329: 112  getprop "first_button"
+01334: 112  dup
+01335: 112  callprop "setOnClickCallBack"
+01340: 112  swap
+01341: 112  notearg
+01342: 112  this
+01343: 112  getprop "GemFirstCallBack"
+01348: 112  dup
+01349: 112  callprop "bind"
+01354: 112  swap
+01355: 112  notearg
+01356: 112  this
+01357: 112  notearg
+01358: 112  call 1
+01361: 112  notearg
+01362: 112  call 1
+01365: 112  pop
+01366: 113  this
+01367: 113  name "xs"
+01372: 113  getprop "Views"
+01377: 113  getprop "Btn"
+01382: 113  dup
+01383: 113  callprop "createInvisibleWithParent"
+01388: 113  swap
+01389: 113  notearg
+01390: 113  this
+01391: 113  getprop "m_gem_second"
+01396: 113  notearg
+01397: 113  call 1
+01400: 113  setprop "second_button"
+01405: 113  pop
+01406: 114  this
+01407: 114  getprop "second_button"
+01412: 114  dup
+01413: 114  callprop "setOnClickCallBack"
+01418: 114  swap
+01419: 114  notearg
+01420: 114  this
+01421: 114  getprop "GemSecondCallBack"
+01426: 114  dup
+01427: 114  callprop "bind"
+01432: 114  swap
+01433: 114  notearg
+01434: 114  this
+01435: 114  notearg
+01436: 114  call 1
+01439: 114  notearg
+01440: 114  call 1
+01443: 114  pop
+01444: 115  this
+01445: 115  name "xs"
+01450: 115  getprop "Views"
+01455: 115  getprop "Btn"
+01460: 115  dup
+01461: 115  callprop "createInvisibleWithParent"
+01466: 115  swap
+01467: 115  notearg
+01468: 115  this
+01469: 115  getprop "m_gem_third"
+01474: 115  notearg
+01475: 115  call 1
+01478: 115  setprop "third_button"
+01483: 115  pop
+01484: 116  this
+01485: 116  getprop "third_button"
+01490: 116  dup
+01491: 116  callprop "setOnClickCallBack"
+01496: 116  swap
+01497: 116  notearg
+01498: 116  this
+01499: 116  getprop "GemThirdCallBack"
+01504: 116  dup
+01505: 116  callprop "bind"
+01510: 116  swap
+01511: 116  notearg
+01512: 116  this
+01513: 116  notearg
+01514: 116  call 1
+01517: 116  notearg
+01518: 116  call 1
+01521: 116  pop
+01522: 119  this
+01523: 119  name "xs"
+01528: 119  getprop "Utils"
+01533: 119  dup
+01534: 119  callprop "getChildByTag"
+01539: 119  swap
+01540: 119  notearg
+01541: 119  this
+01542: 119  getprop "ccbComposeNode"
+01547: 119  notearg
+01548: 119  one
+01549: 119  notearg
+01550: 119  call 2
+01553: 119  setprop "m_composeGem_first"
+01558: 119  pop
+01559: 120  this
+01560: 120  getprop "m_composeGem_first"
+01565: 120  dup
+01566: 120  callprop "setPositionX"
+01571: 120  swap
+01572: 120  notearg
+01573: 120  this
+01574: 120  dup
+01575: 120  callprop "_PosTransform"
+01580: 120  swap
+01581: 120  notearg
+01582: 120  this
+01583: 120  getprop "m_composeGem_first"
+01588: 120  dup
+01589: 120  callprop "getPositionX"
+01594: 120  swap
+01595: 120  notearg
+01596: 120  call 0
+01599: 120  notearg
+01600: 120  call 1
+01603: 120  notearg
+01604: 120  call 1
+01607: 120  pop
+01608: 121  this
+01609: 121  name "xs"
+01614: 121  getprop "Utils"
+01619: 121  dup
+01620: 121  callprop "getChildByTag"
+01625: 121  swap
+01626: 121  notearg
+01627: 121  this
+01628: 121  getprop "ccbComposeNode"
+01633: 121  notearg
+01634: 121  int8 2
+01636: 121  notearg
+01637: 121  call 2
+01640: 121  setprop "m_composeGem_second"
+01645: 121  pop
+01646: 122  this
+01647: 122  getprop "m_composeGem_second"
+01652: 122  dup
+01653: 122  callprop "setPositionX"
+01658: 122  swap
+01659: 122  notearg
+01660: 122  this
+01661: 122  dup
+01662: 122  callprop "_PosTransform"
+01667: 122  swap
+01668: 122  notearg
+01669: 122  this
+01670: 122  getprop "m_composeGem_second"
+01675: 122  dup
+01676: 122  callprop "getPositionX"
+01681: 122  swap
+01682: 122  notearg
+01683: 122  call 0
+01686: 122  notearg
+01687: 122  call 1
+01690: 122  notearg
+01691: 122  call 1
+01694: 122  pop
+01695: 123  this
+01696: 123  name "xs"
+01701: 123  getprop "Utils"
+01706: 123  dup
+01707: 123  callprop "getChildByTag"
+01712: 123  swap
+01713: 123  notearg
+01714: 123  this
+01715: 123  getprop "ccbComposeNode"
+01720: 123  notearg
+01721: 123  int8 3
+01723: 123  notearg
+01724: 123  call 2
+01727: 123  setprop "m_composeGem_third"
+01732: 123  pop
+01733: 124  this
+01734: 124  getprop "m_composeGem_third"
+01739: 124  dup
+01740: 124  callprop "setPositionX"
+01745: 124  swap
+01746: 124  notearg
+01747: 124  this
+01748: 124  dup
+01749: 124  callprop "_PosTransform"
+01754: 124  swap
+01755: 124  notearg
+01756: 124  this
+01757: 124  getprop "m_composeGem_third"
+01762: 124  dup
+01763: 124  callprop "getPositionX"
+01768: 124  swap
+01769: 124  notearg
+01770: 124  call 0
+01773: 124  notearg
+01774: 124  call 1
+01777: 124  notearg
+01778: 124  call 1
+01781: 124  pop
+01782: 125  this
+01783: 125  name "xs"
+01788: 125  getprop "Utils"
+01793: 125  dup
+01794: 125  callprop "getChildByTag"
+01799: 125  swap
+01800: 125  notearg
+01801: 125  this
+01802: 125  getprop "ccbComposeNode"
+01807: 125  notearg
+01808: 125  int8 4
+01810: 125  notearg
+01811: 125  call 2
+01814: 125  setprop "m_composeGem_fourth"
+01819: 125  pop
+01820: 126  this
+01821: 126  getprop "m_composeGem_fourth"
+01826: 126  dup
+01827: 126  callprop "setPositionX"
+01832: 126  swap
+01833: 126  notearg
+01834: 126  this
+01835: 126  dup
+01836: 126  callprop "_PosTransform"
+01841: 126  swap
+01842: 126  notearg
+01843: 126  this
+01844: 126  getprop "m_composeGem_fourth"
+01849: 126  dup
+01850: 126  callprop "getPositionX"
+01855: 126  swap
+01856: 126  notearg
+01857: 126  call 0
+01860: 126  notearg
+01861: 126  call 1
+01864: 126  notearg
+01865: 126  call 1
+01868: 126  pop
+01869: 127  this
+01870: 127  name "xs"
+01875: 127  getprop "Utils"
+01880: 127  dup
+01881: 127  callprop "getChildByTag"
+01886: 127  swap
+01887: 127  notearg
+01888: 127  this
+01889: 127  getprop "ccbComposeNode"
+01894: 127  notearg
+01895: 127  int8 10
+01897: 127  notearg
+01898: 127  call 2
+01901: 127  setprop "m_composeGem_bg"
+01906: 127  pop
+01907: 128  this
+01908: 128  getprop "m_composeGem_bg"
+01913: 128  dup
+01914: 128  callprop "setPositionX"
+01919: 128  swap
+01920: 128  notearg
+01921: 128  this
+01922: 128  dup
+01923: 128  callprop "_PosTransform"
+01928: 128  swap
+01929: 128  notearg
+01930: 128  this
+01931: 128  getprop "m_composeGem_bg"
+01936: 128  dup
+01937: 128  callprop "getPositionX"
+01942: 128  swap
+01943: 128  notearg
+01944: 128  call 0
+01947: 128  notearg
+01948: 128  call 1
+01951: 128  notearg
+01952: 128  call 1
+01955: 128  pop
+01956: 131  this
+01957: 131  getprop "m_ComposeBtn"
+01962: 131  dup
+01963: 131  callprop "setEnabled"
+01968: 131  swap
+01969: 131  notearg
+01970: 131  false
+01971: 131  notearg
+01972: 131  call 1
+01975: 131  pop
+01976: 132  this
+01977: 132  getprop "m_ComposeBtn"
+01982: 132  dup
+01983: 132  callprop "setEventOnDisable"
+01988: 132  swap
+01989: 132  notearg
+01990: 132  true
+01991: 132  notearg
+01992: 132  call 1
+01995: 132  pop
+01996: 133  this
+01997: 133  getprop "m_ComposeBtn"
+02002: 133  dup
+02003: 133  callprop "setZoomOnTouchDown"
+02008: 133  swap
+02009: 133  notearg
+02010: 133  true
+02011: 133  notearg
+02012: 133  call 1
+02015: 133  pop
+02016: 134  this
+02017: 134  getprop "m_ComposeBtn"
+02022: 134  dup
+02023: 134  callprop "setOnClickCallBack"
+02028: 134  swap
+02029: 134  notearg
+02030: 134  this
+02031: 134  getprop "ComposeCallback"
+02036: 134  dup
+02037: 134  callprop "bind"
+02042: 134  swap
+02043: 134  notearg
+02044: 134  this
+02045: 134  notearg
+02046: 134  call 1
+02049: 134  notearg
+02050: 134  call 1
+02053: 134  pop
+02054: 138  this
+02055: 138  getprop "m_oneStepComposeBtn"
+02060: 138  dup
+02061: 138  callprop "addCallBackForEvent"
+02066: 138  swap
+02067: 138  notearg
+02068: 138  this
+02069: 138  notearg
+02070: 138  this
+02071: 138  getprop "OneStepComposeCallBack"
+02076: 138  dup
+02077: 138  callprop "bind"
+02082: 138  swap
+02083: 138  notearg
+02084: 138  this
+02085: 138  notearg
+02086: 138  call 1
+02089: 138  notearg
+02090: 138  call 2
+02093: 138  pop
+02094: 139  this
+02095: 139  getprop "m_oneStepComposeBtn"
+02100: 139  dup
+02101: 139  callprop "setEnabled"
+02106: 139  swap
+02107: 139  notearg
+02108: 139  false
+02109: 139  notearg
+02110: 139  call 1
+02113: 139  pop
+02114: 140  this
+02115: 140  getprop "m_oneStepComposeBtn"
+02120: 140  dup
+02121: 140  callprop "setEventOnDisable"
+02126: 140  swap
+02127: 140  notearg
+02128: 140  true
+02129: 140  notearg
+02130: 140  call 1
+02133: 140  pop
+02134: 143  this
+02135: 143  name "xs"
+02140: 143  getprop "Factorys"
+02145: 143  getprop "Sprite"
+02150: 143  dup
+02151: 143  callprop "create"
+02156: 143  swap
+02157: 143  notearg
+02158: 143  string "Cmn02_icon_lt_equipped_2"
+02163: 143  notearg
+02164: 143  string "Cmn01"
+02169: 143  notearg
+02170: 143  call 2
+02173: 143  setprop "m_IconBg"
+02178: 143  pop
+02179: 144  this
+02180: 144  getprop "m_IconBg"
+02185: 144  dup
+02186: 144  callprop "setVisible"
+02191: 144  swap
+02192: 144  notearg
+02193: 144  false
+02194: 144  notearg
+02195: 144  call 1
+02198: 144  pop
+02199: 145  name "xs"
+02204: 145  getprop "Utils"
+02209: 145  getprop "Node"
+02214: 145  dup
+02215: 145  callprop "attachNodes"
+02220: 145  swap
+02221: 145  notearg
+02222: 145  this
+02223: 145  getprop "ccbComposeNode"
+02228: 145  notearg
+02229: 145  this
+02230: 145  getprop "m_IconBg"
+02235: 145  notearg
+02236: 145  newinit 1
+02241: 146  string "lb"
+02246: 146  initprop "desc"
+02251: 147  true
+02252: 147  initprop "sc"
+02257: 147  endinit
+02258: 147  notearg
+02259: 147  call 3
+02262: 147  pop
+02263: 151  true
+02264: 151  return
+02265: 151  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:18 ---
+;; function object[2] _PosTransform
+;; function metadata object[2] nargs=1 bindings=4
+;; arg[0] x
+;; local[0] visibleSize
+;; local[1] RealWidth
+;; local[2] mScaleW
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:155 ---
+loc   line  op
+----- ----  --
+main:
+00000: 156  name "xs"
+00005: 156  getprop "director"
+00010: 156  dup
+00011: 156  callprop "getVisibleSize"
+00016: 156  swap
+00017: 156  notearg
+00018: 156  call 0
+00021: 156  setlocal 0
+00024: 156  pop
+00025: 157  getlocal 0
+00028: 157  getprop "width"
+00033: 157  name "xs"
+00038: 157  getprop "Views"
+00043: 157  getprop "MainMenuView"
+00048: 157  getprop "Width"
+00053: 157  sub
+00054: 157  setlocal 1
+00057: 157  pop
+00058: 158  getlocal 1
+00061: 158  uint16 1124
+00064: 158  div
+00065: 158  setlocal 2
+00068: 158  pop
+00069: 159  getarg 0
+00072: 159  getlocal 2
+00075: 159  mul
+00076: 159  return
+00077: 159  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:155 ---
+;; function object[3] onEnter
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:161 ---
+loc   line  op
+----- ----  --
+main:
+00000: 162  this
+00001: 162  dup
+00002: 162  callprop "_super"
+00007: 162  swap
+00008: 162  notearg
+00009: 162  call 0
+00012: 162  pop
+00013: 163  name "xs"
+00018: 163  getprop "Utils"
+00023: 163  getprop "Notify"
+00028: 163  dup
+00029: 163  callprop "addObserver"
+00034: 163  swap
+00035: 163  notearg
+00036: 163  this
+00037: 163  notearg
+00038: 163  this
+00039: 163  getprop "ExchangeGemIcon"
+00044: 163  notearg
+00045: 163  name "xs"
+00050: 163  getprop "Constant_Notify_Event_GemSelect"
+00055: 163  notearg
+00056: 163  call 3
+00059: 163  pop
+00060: 163  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:161 ---
+;; function object[4] onExit
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:165 ---
+loc   line  op
+----- ----  --
+main:
+00000: 166  this
+00001: 166  dup
+00002: 166  callprop "_super"
+00007: 166  swap
+00008: 166  notearg
+00009: 166  call 0
+00012: 166  pop
+00013: 167  name "xs"
+00018: 167  getprop "Utils"
+00023: 167  getprop "Notify"
+00028: 167  dup
+00029: 167  callprop "removeObserver"
+00034: 167  swap
+00035: 167  notearg
+00036: 167  this
+00037: 167  notearg
+00038: 167  name "xs"
+00043: 167  getprop "Constant_Notify_Event_GemSelect"
+00048: 167  notearg
+00049: 167  call 2
+00052: 167  pop
+00053: 167  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:165 ---
+;; function object[5] setBaseTouchPriority
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:169 ---
+loc   line  op
+----- ----  --
+main:
+00000: 170  this
+00001: 170  getarg 0
+00004: 170  setprop "m_baseTouchPriority"
+00009: 170  pop
+00010: 171  this
+00011: 171  dup
+00012: 171  callprop "setTouchPriority"
+00017: 171  swap
+00018: 171  notearg
+00019: 171  this
+00020: 171  getprop "m_baseTouchPriority"
+00025: 171  notearg
+00026: 171  call 1
+00029: 171  pop
+00030: 172  this
+00031: 172  getprop "first_button"
+00036: 172  dup
+00037: 172  callprop "setTouchPriority"
+00042: 172  swap
+00043: 172  notearg
+00044: 172  this
+00045: 172  getprop "m_baseTouchPriority"
+00050: 172  one
+00051: 172  sub
+00052: 172  notearg
+00053: 172  call 1
+00056: 172  pop
+00057: 172  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:169 ---
+;; function object[6] GetGemIdByLevelAndType
+;; function metadata object[6] nargs=2 bindings=6
+;; arg[0] level
+;; arg[1] type
+;; local[0] gems
+;; local[1] i
+;; local[2] bigGems
+;; local[3] threeGems
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:175 ---
+loc   line  op
+----- ----  --
+main:
+00000: 177  newarray 0
+00004: 177  endinit
+00005: 177  setlocal 0
+00008: 177  pop
+00009: 178  zero
+00010: 178  setlocal 1
+00013: 178  pop
+00014: 178  goto 85 (+71)
+00019: 179  loophead
+00020: 179  this
+00021: 179  getprop "m_dataGems"
+00026: 179  getlocal 1
+00029: 179  getelem
+00030: 179  getprop "level"
+00035: 179  getarg 0
+00038: 179  eq
+00039: 179  ifeq 70 (+31)
+00044: 180  getlocal 0
+00047: 180  dup
+00048: 180  callprop "push"
+00053: 180  swap
+00054: 180  notearg
+00055: 180  this
+00056: 180  getprop "m_dataGems"
+00061: 180  getlocal 1
+00064: 180  getelem
+00065: 180  notearg
+00066: 180  call 1
+00069: 180  pop
+00070: 178  localinc 11
+00073: 178  getlocal 1
+00076: 178  pos
+00077: 178  dup
+00078: 178  one
+00079: 178  add
+00080: 178  setlocal 1
+00083: 178  pop
+00084: 178  pop
+00085: 178  loopentry
+00086: 178  getlocal 1
+00089: 178  this
+00090: 178  getprop "m_dataGems"
+00095: 178  length "length"
+00100: 178  lt
+00101: 178  ifne 19 (-82)
+00106: 183  newarray 0
+00110: 183  endinit
+00111: 183  setlocal 2
+00114: 183  pop
+00115: 184  newarray 0
+00119: 184  endinit
+00120: 184  setlocal 3
+00123: 184  pop
+00124: 186  zero
+00125: 186  setlocal 1
+00128: 186  pop
+00129: 186  goto 212 (+83)
+00134: 187  loophead
+00135: 187  getlocal 0
+00138: 187  getlocal 1
+00141: 187  getelem
+00142: 187  getprop "type"
+00147: 187  getarg 1
+00150: 187  eq
+00151: 187  ifeq 174 (+23)
+00156: 188  getlocal 2
+00159: 188  zero
+00160: 188  getlocal 0
+00163: 188  getlocal 1
+00166: 188  getelem
+00167: 188  setelem
+00168: 188  pop
+00169: 188  goto 197 (+28)
+00174: 190  getlocal 3
+00177: 190  dup
+00178: 190  callprop "push"
+00183: 190  swap
+00184: 190  notearg
+00185: 190  getlocal 0
+00188: 190  getlocal 1
+00191: 190  getelem
+00192: 190  notearg
+00193: 190  call 1
+00196: 190  pop
+00197: 186  localinc 11
+00200: 186  getlocal 1
+00203: 186  pos
+00204: 186  dup
+00205: 186  one
+00206: 186  add
+00207: 186  setlocal 1
+00210: 186  pop
+00211: 186  pop
+00212: 186  loopentry
+00213: 186  getlocal 1
+00216: 186  getlocal 0
+00219: 186  length "length"
+00224: 186  lt
+00225: 186  ifne 134 (-91)
+00230: 193  getlocal 2
+00233: 193  one
+00234: 193  getlocal 3
+00237: 193  zero
+00238: 193  getelem
+00239: 193  setelem
+00240: 193  pop
+00241: 194  getlocal 2
+00244: 194  int8 2
+00246: 194  getlocal 3
+00249: 194  one
+00250: 194  getelem
+00251: 194  setelem
+00252: 194  pop
+00253: 195  getlocal 2
+00256: 195  int8 3
+00258: 195  getlocal 3
+00261: 195  int8 2
+00263: 195  getelem
+00264: 195  setelem
+00265: 195  pop
+00266: 197  getlocal 2
+00269: 197  return
+00270: 197  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:175 ---
+;; function object[7] OneStepComposeCallBack
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=113 object[0]
+;; FUNCTION-MAP kind=lambda offset=132 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:200 ---
+loc   line  op
+----- ----  --
+main:
+00000: 202  this
+00001: 202  getprop "m_canCompose"
+00006: 202  ifeq 270 (+264)
+00011: 205  this
+00012: 205  name "xs"
+00017: 205  getprop "Views"
+00022: 205  getprop "Dialog"
+00027: 205  dup
+00028: 205  callprop "createTwoButtonDialog"
+00033: 205  swap
+00034: 205  notearg
+00035: 205  string "GemsOneStepTitle"
+00040: 205  notearg
+00041: 205  string "GemsOneStepPrompt"
+00046: 205  notearg
+00047: 205  name "xs"
+00052: 205  getprop "Tools"
+00057: 205  getprop "String"
+00062: 205  dup
+00063: 205  callprop "createString"
+00068: 205  swap
+00069: 205  notearg
+00070: 205  string "auto_name_146"
+00075: 205  notearg
+00076: 205  call 1
+00079: 205  notearg
+00080: 205  name "xs"
+00085: 205  getprop "Tools"
+00090: 205  getprop "String"
+00095: 205  dup
+00096: 205  callprop "createString"
+00101: 205  swap
+00102: 205  notearg
+00103: 205  string "auto_name_76"
+00108: 205  notearg
+00109: 205  call 1
+00112: 205  notearg
+00113: 206  lambda (function () {
+    [sourceless code]
+})
+00118: 206  dup
+00119: 206  callprop "bind"
+00124: 206  swap
+00125: 206  notearg
+00126: 208  this
+00127: 208  notearg
+00128: 208  call 1
+00131: 208  notearg
+00132: 209  lambda (function () {
+    [sourceless code]
+})
+00137: 209  dup
+00138: 209  callprop "bind"
+00143: 209  swap
+00144: 209  notearg
+00145: 230  this
+00146: 230  notearg
+00147: 230  call 1
+00150: 230  notearg
+00151: 230  call 6
+00154: 230  setprop "_dialog2"
+00159: 230  pop
+00160: 232  name "xs"
+00165: 232  getprop "Utils"
+00170: 232  getprop "Node"
+00175: 232  dup
+00176: 232  callprop "attachNodes"
+00181: 232  swap
+00182: 232  notearg
+00183: 232  this
+00184: 232  notearg
+00185: 232  this
+00186: 232  getprop "_dialog2"
+00191: 232  notearg
+00192: 232  newinit 1
+00197: 233  string "lb"
+00202: 233  initprop "desc"
+00207: 234  newinit 1
+00212: 235  name "xs"
+00217: 235  getprop "Views"
+00222: 235  getprop "MainMenuView"
+00227: 235  getprop "Width"
+00232: 235  neg
+00233: 235  int8 2
+00235: 235  div
+00236: 235  initprop "x"
+00241: 236  zero
+00242: 236  initprop "y"
+00247: 236  endinit
+00248: 236  initprop "offset"
+00253: 238  true
+00254: 238  initprop "sc"
+00259: 238  endinit
+00260: 238  notearg
+00261: 238  call 3
+00264: 238  pop
+00265: 238  goto 303 (+38)
+00270: 242  name "xs"
+00275: 242  getprop "Views"
+00280: 242  getprop "Mgr"
+00285: 242  dup
+00286: 242  callprop "showToastByStringKey"
+00291: 242  swap
+00292: 242  notearg
+00293: 242  string "gems_str_NoCompose"
+00298: 242  notearg
+00299: 242  call 1
+00302: 242  pop
+00303: 243  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:200 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:206 ---
+loc   line  op
+----- ----  --
+main:
+00000: 207  name "xs"
+00005: 207  getprop "Utils"
+00010: 207  getprop "Node"
+00015: 207  dup
+00016: 207  callprop "removeFromParentSafe"
+00021: 207  swap
+00022: 207  notearg
+00023: 207  this
+00024: 207  getprop "_dialog2"
+00029: 207  notearg
+00030: 207  call 1
+00033: 207  pop
+00034: 207  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:206 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+;; FUNCTION-MAP kind=lambda offset=170 object[0]
+;; FUNCTION-MAP kind=lambda offset=176 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:209 ---
+loc   line  op
+----- ----  --
+main:
+00000: 210  name "xs"
+00005: 210  getprop "Utils"
+00010: 210  getprop "Node"
+00015: 210  dup
+00016: 210  callprop "removeFromParentSafe"
+00021: 210  swap
+00022: 210  notearg
+00023: 210  this
+00024: 210  getprop "_dialog2"
+00029: 210  notearg
+00030: 210  call 1
+00033: 210  pop
+00034: 211  name "xs"
+00039: 211  getprop "Tools"
+00044: 211  getprop "Net"
+00049: 211  dup
+00050: 211  callprop "requestGemsCompose"
+00055: 211  swap
+00056: 211  notearg
+00057: 212  newinit 1
+00062: 213  name "xs"
+00067: 213  getprop "Profile"
+00072: 213  getprop "GameData"
+00077: 213  getprop "Mgr"
+00082: 213  dup
+00083: 213  callprop "getInstance"
+00088: 213  swap
+00089: 213  notearg
+00090: 213  call 0
+00093: 213  getprop "Player"
+00098: 213  dup
+00099: 213  callprop "getPlayer"
+00104: 213  swap
+00105: 213  notearg
+00106: 213  call 0
+00109: 213  dup
+00110: 213  callprop "getPlayerId"
+00115: 213  swap
+00116: 213  notearg
+00117: 213  call 0
+00120: 213  initprop "user_id"
+00125: 214  this
+00126: 214  getprop "m_smallgemsID"
+00131: 214  initprop "user_gem_id"
+00136: 215  callname "Number"
+00141: 215  implicitthis "Number"
+00146: 215  notearg
+00147: 215  this
+00148: 215  getprop "m_bigGemType"
+00153: 215  notearg
+00154: 215  call 1
+00157: 215  initprop "type"
+00162: 216  one
+00163: 216  initprop "multi"
+00168: 216  endinit
+00169: 216  notearg
+00170: 218  lambda (function () {
+    [sourceless code]
+})
+00175: 218  notearg
+00176: 225  lambda (function () {
+    [sourceless code]
+})
+00181: 225  notearg
+00182: 228  this
+00183: 228  notearg
+00184: 228  call 4
+00187: 228  pop
+00188: 229  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:209 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] jsonData
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:218 ---
+loc   line  op
+----- ----  --
+main:
+00000: 219  getarg 0
+00003: 219  getprop "result"
+00008: 219  ifeq 59 (+51)
+00013: 220  name "xs"
+00018: 220  getprop "Views"
+00023: 220  getprop "Mgr"
+00028: 220  dup
+00029: 220  callprop "showToastByStringKey"
+00034: 220  swap
+00035: 220  notearg
+00036: 220  string "gems_str_ComposeOK"
+00041: 220  notearg
+00042: 220  call 1
+00045: 220  pop
+00046: 221  this
+00047: 221  dup
+00048: 221  callprop "ClearAllGems"
+00053: 221  swap
+00054: 221  notearg
+00055: 221  call 0
+00058: 221  pop
+00059: 222  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:218 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:225 ---
+loc   line  op
+----- ----  --
+main:
+00000: 225  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:225 ---
+;; function object[8] ComposeCallback
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=147 object[0]
+;; FUNCTION-MAP kind=lambda offset=153 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:246 ---
+loc   line  op
+----- ----  --
+main:
+00000: 248  this
+00001: 248  getprop "m_canCompose"
+00006: 248  ifeq 170 (+164)
+00011: 250  name "xs"
+00016: 250  getprop "Tools"
+00021: 250  getprop "Net"
+00026: 250  dup
+00027: 250  callprop "requestGemsCompose"
+00032: 250  swap
+00033: 250  notearg
+00034: 251  newinit 1
+00039: 252  name "xs"
+00044: 252  getprop "Profile"
+00049: 252  getprop "GameData"
+00054: 252  getprop "Mgr"
+00059: 252  dup
+00060: 252  callprop "getInstance"
+00065: 252  swap
+00066: 252  notearg
+00067: 252  call 0
+00070: 252  getprop "Player"
+00075: 252  dup
+00076: 252  callprop "getPlayer"
+00081: 252  swap
+00082: 252  notearg
+00083: 252  call 0
+00086: 252  dup
+00087: 252  callprop "getPlayerId"
+00092: 252  swap
+00093: 252  notearg
+00094: 252  call 0
+00097: 252  initprop "user_id"
+00102: 253  this
+00103: 253  getprop "m_smallgemsID"
+00108: 253  initprop "user_gem_id"
+00113: 254  callname "Number"
+00118: 254  implicitthis "Number"
+00123: 254  notearg
+00124: 254  this
+00125: 254  getprop "m_bigGemType"
+00130: 254  notearg
+00131: 254  call 1
+00134: 254  initprop "type"
+00139: 255  zero
+00140: 255  initprop "multi"
+00145: 255  endinit
+00146: 255  notearg
+00147: 257  lambda (function () {
+    [sourceless code]
+})
+00152: 257  notearg
+00153: 275  lambda (function () {
+    [sourceless code]
+})
+00158: 275  notearg
+00159: 278  this
+00160: 278  notearg
+00161: 278  call 4
+00164: 278  pop
+00165: 278  goto 203 (+38)
+00170: 281  name "xs"
+00175: 281  getprop "Views"
+00180: 281  getprop "Mgr"
+00185: 281  dup
+00186: 281  callprop "showToastByStringKey"
+00191: 281  swap
+00192: 281  notearg
+00193: 281  string "gems_str_NoCompose"
+00198: 281  notearg
+00199: 281  call 1
+00202: 281  pop
+00203: 282  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:246 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] jsonData
+;; local[0] smallGemList
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:257 ---
+loc   line  op
+----- ----  --
+main:
+00000: 258  getarg 0
+00003: 258  getprop "result"
+00008: 258  ifeq 120 (+112)
+00013: 259  name "xs"
+00018: 259  getprop "Views"
+00023: 259  getprop "Mgr"
+00028: 259  dup
+00029: 259  callprop "showToastByStringKey"
+00034: 259  swap
+00035: 259  notearg
+00036: 259  string "gems_str_ComposeOK"
+00041: 259  notearg
+00042: 259  call 1
+00045: 259  pop
+00046: 260  this
+00047: 260  dup
+00048: 260  callprop "ClearAllGems"
+00053: 260  swap
+00054: 260  notearg
+00055: 260  call 0
+00058: 260  pop
+00059: 261  getarg 0
+00062: 261  getprop "return_info"
+00067: 261  ifeq 120 (+53)
+00072: 264  this
+00073: 264  dup
+00074: 264  callprop "ResidueSmallGemCanCompose"
+00079: 264  swap
+00080: 264  notearg
+00081: 264  this
+00082: 264  getprop "m_smallgemsID"
+00087: 264  notearg
+00088: 264  call 1
+00091: 264  setlocal 0
+00094: 264  pop
+00095: 265  getlocal 0
+00098: 265  ifeq 120 (+22)
+00103: 267  this
+00104: 267  dup
+00105: 267  callprop "ExchangeGemIcon"
+00110: 267  swap
+00111: 267  notearg
+00112: 267  getlocal 0
+00115: 267  notearg
+00116: 267  call 1
+00119: 267  pop
+00120: 272  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:257 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:275 ---
+loc   line  op
+----- ----  --
+main:
+00000: 275  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:275 ---
+;; function object[9] ResidueSmallGemCanCompose
+;; function metadata object[9] nargs=1 bindings=5
+;; arg[0] PkId
+;; local[0] smallGemlist
+;; local[1] allGemsList
+;; local[2] i
+;; local[3] num
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:284 ---
+loc   line  op
+----- ----  --
+main:
+00000: 286  null
+00001: 286  setlocal 0
+00004: 286  pop
+00005: 287  name "xs"
+00010: 287  getprop "Profile"
+00015: 287  getprop "GameData"
+00020: 287  getprop "Mgr"
+00025: 287  dup
+00026: 287  callprop "getInstance"
+00031: 287  swap
+00032: 287  notearg
+00033: 287  call 0
+00036: 287  getprop "Gems"
+00041: 287  dup
+00042: 287  callprop "getAll"
+00047: 287  swap
+00048: 287  notearg
+00049: 287  call 0
+00052: 287  setlocal 1
+00055: 287  pop
+00056: 289  zero
+00057: 289  setlocal 2
+00060: 289  pop
+00061: 289  goto 159 (+98)
+00066: 291  loophead
+00067: 291  getlocal 1
+00070: 291  getlocal 2
+00073: 291  getelem
+00074: 291  getprop "pk_id"
+00079: 291  getarg 0
+00082: 291  eq
+00083: 291  ifeq 144 (+61)
+00088: 292  getlocal 1
+00091: 292  getlocal 2
+00094: 292  getelem
+00095: 292  getprop "total_num"
+00100: 292  getlocal 1
+00103: 292  getlocal 2
+00106: 292  getelem
+00107: 292  getprop "used_num"
+00112: 292  sub
+00113: 292  setlocal 3
+00116: 292  pop
+00117: 293  getlocal 3
+00120: 293  int8 3
+00122: 293  ge
+00123: 293  ifeq 144 (+21)
+00128: 294  getlocal 1
+00131: 294  getlocal 2
+00134: 294  getelem
+00135: 294  setlocal 0
+00138: 294  pop
+00139: 295  goto 177 (+38)
+00144: 289  localinc 11
+00147: 289  getlocal 2
+00150: 289  pos
+00151: 289  dup
+00152: 289  one
+00153: 289  add
+00154: 289  setlocal 2
+00157: 289  pop
+00158: 289  pop
+00159: 289  loopentry
+00160: 289  getlocal 2
+00163: 289  getlocal 1
+00166: 289  length "length"
+00171: 289  lt
+00172: 289  ifne 66 (-106)
+00177: 301  getlocal 0
+00180: 301  return
+00181: 301  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:284 ---
+;; function object[10] GemFirstCallBack
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:305 ---
+loc   line  op
+----- ----  --
+main:
+00000: 306  name "xs"
+00005: 306  getprop "Views"
+00010: 306  getprop "Mgr"
+00015: 306  dup
+00016: 306  callprop "showDialogByName"
+00021: 306  swap
+00022: 306  notearg
+00023: 306  string "AllGemsListDialog"
+00028: 306  notearg
+00029: 306  call 1
+00032: 306  pop
+00033: 306  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:305 ---
+;; function object[11] GemSecondCallBack
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:308 ---
+loc   line  op
+----- ----  --
+main:
+00000: 310  name "xs"
+00005: 310  getprop "Views"
+00010: 310  getprop "Mgr"
+00015: 310  dup
+00016: 310  callprop "showDialogByName"
+00021: 310  swap
+00022: 310  notearg
+00023: 310  string "AllGemsListDialog"
+00028: 310  notearg
+00029: 310  call 1
+00032: 310  pop
+00033: 310  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:308 ---
+;; function object[12] GemThirdCallBack
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:312 ---
+loc   line  op
+----- ----  --
+main:
+00000: 313  name "xs"
+00005: 313  getprop "Views"
+00010: 313  getprop "Mgr"
+00015: 313  dup
+00016: 313  callprop "showDialogByName"
+00021: 313  swap
+00022: 313  notearg
+00023: 313  string "AllGemsListDialog"
+00028: 313  notearg
+00029: 313  call 1
+00032: 313  pop
+00033: 313  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:312 ---
+;; function object[13] PullAllGemsByNum
+;; function metadata object[13] nargs=1 bindings=4
+;; arg[0] gemList
+;; local[0] iconButton_1
+;; local[1] iconButton_2
+;; local[2] iconButton_3
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:315 ---
+loc   line  op
+----- ----  --
+main:
+00000: 316  getarg 0
+00003: 316  dup
+00004: 316  callprop "createIcon_GradeAndAttribute"
+00009: 316  swap
+00010: 316  notearg
+00011: 316  call 0
+00014: 316  setlocal 0
+00017: 316  pop
+00018: 317  getlocal 0
+00021: 317  dup
+00022: 317  callprop "setOnClickCallBack"
+00027: 317  swap
+00028: 317  notearg
+00029: 317  this
+00030: 317  getprop "GemFirstCallBack"
+00035: 317  dup
+00036: 317  callprop "bind"
+00041: 317  swap
+00042: 317  notearg
+00043: 317  this
+00044: 317  notearg
+00045: 317  call 1
+00048: 317  notearg
+00049: 317  call 1
+00052: 317  pop
+00053: 318  name "xs"
+00058: 318  getprop "Utils"
+00063: 318  getprop "Node"
+00068: 318  dup
+00069: 318  callprop "replaceChildSafe"
+00074: 318  swap
+00075: 318  notearg
+00076: 318  this
+00077: 318  getprop "ccbNode"
+00082: 318  notearg
+00083: 318  this
+00084: 318  getprop "m_gem_first"
+00089: 318  notearg
+00090: 318  getlocal 0
+00093: 318  notearg
+00094: 318  call 3
+00097: 318  pop
+00098: 319  this
+00099: 319  getlocal 0
+00102: 319  setprop "m_gem_first"
+00107: 319  pop
+00108: 321  getarg 0
+00111: 321  dup
+00112: 321  callprop "createIcon_GradeAndAttribute"
+00117: 321  swap
+00118: 321  notearg
+00119: 321  call 0
+00122: 321  setlocal 1
+00125: 321  pop
+00126: 322  getlocal 1
+00129: 322  dup
+00130: 322  callprop "setOnClickCallBack"
+00135: 322  swap
+00136: 322  notearg
+00137: 322  this
+00138: 322  getprop "GemSecondCallBack"
+00143: 322  dup
+00144: 322  callprop "bind"
+00149: 322  swap
+00150: 322  notearg
+00151: 322  this
+00152: 322  notearg
+00153: 322  call 1
+00156: 322  notearg
+00157: 322  call 1
+00160: 322  pop
+00161: 323  name "xs"
+00166: 323  getprop "Utils"
+00171: 323  getprop "Node"
+00176: 323  dup
+00177: 323  callprop "replaceChildSafe"
+00182: 323  swap
+00183: 323  notearg
+00184: 323  this
+00185: 323  getprop "ccbNode"
+00190: 323  notearg
+00191: 323  this
+00192: 323  getprop "m_gem_second"
+00197: 323  notearg
+00198: 323  getlocal 1
+00201: 323  notearg
+00202: 323  call 3
+00205: 323  pop
+00206: 324  this
+00207: 324  getlocal 1
+00210: 324  setprop "m_gem_second"
+00215: 324  pop
+00216: 326  getarg 0
+00219: 326  dup
+00220: 326  callprop "createIcon_GradeAndAttribute"
+00225: 326  swap
+00226: 326  notearg
+00227: 326  call 0
+00230: 326  setlocal 2
+00233: 326  pop
+00234: 327  getlocal 2
+00237: 327  dup
+00238: 327  callprop "setOnClickCallBack"
+00243: 327  swap
+00244: 327  notearg
+00245: 327  this
+00246: 327  getprop "GemThirdCallBack"
+00251: 327  dup
+00252: 327  callprop "bind"
+00257: 327  swap
+00258: 327  notearg
+00259: 327  this
+00260: 327  notearg
+00261: 327  call 1
+00264: 327  notearg
+00265: 327  call 1
+00268: 327  pop
+00269: 328  name "xs"
+00274: 328  getprop "Utils"
+00279: 328  getprop "Node"
+00284: 328  dup
+00285: 328  callprop "replaceChildSafe"
+00290: 328  swap
+00291: 328  notearg
+00292: 328  this
+00293: 328  getprop "ccbNode"
+00298: 328  notearg
+00299: 328  this
+00300: 328  getprop "m_gem_third"
+00305: 328  notearg
+00306: 328  getlocal 2
+00309: 328  notearg
+00310: 328  call 3
+00313: 328  pop
+00314: 329  this
+00315: 329  getlocal 2
+00318: 329  setprop "m_gem_third"
+00323: 329  pop
+00324: 329  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:315 ---
+;; function object[14] ComposeGemIsOk
+;; function metadata object[14] nargs=0 bindings=11
+;; local[0] defaultGemId
+;; local[1] iconButton
+;; local[2] icon
+;; local[3] iconButton_1
+;; local[4] icon_1
+;; local[5] iconButton_2
+;; local[6] icon_2
+;; local[7] iconButton_3
+;; local[8] icon_3
+;; local[9] iconButton_4
+;; local[10] icon_4
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:332 ---
+loc   line  op
+----- ----  --
+main:
+00000: 334  this
+00001: 334  getprop "ccbComposeNode"
+00006: 334  dup
+00007: 334  callprop "setVisible"
+00012: 334  swap
+00013: 334  notearg
+00014: 334  true
+00015: 334  notearg
+00016: 334  call 1
+00019: 334  pop
+00020: 336  this
+00021: 336  this
+00022: 336  dup
+00023: 336  callprop "GetGemIdByLevelAndType"
+00028: 336  swap
+00029: 336  notearg
+00030: 336  this
+00031: 336  getprop "m_smallGemLevel"
+00036: 336  notearg
+00037: 336  this
+00038: 336  getprop "m_smallGemType"
+00043: 336  notearg
+00044: 336  call 2
+00047: 336  setprop "m_BigGemsList"
+00052: 336  pop
+00053: 337  this
+00054: 337  this
+00055: 337  getprop "m_BigGemsList"
+00060: 337  zero
+00061: 337  getelem
+00062: 337  getprop "type"
+00067: 337  setprop "m_bigGemType"
+00072: 337  pop
+00073: 340  callname "Number"
+00078: 340  implicitthis "Number"
+00083: 340  notearg
+00084: 340  this
+00085: 340  getprop "m_BigGemsList"
+00090: 340  zero
+00091: 340  getelem
+00092: 340  getprop "resource_id"
+00097: 340  notearg
+00098: 340  call 1
+00101: 340  one
+00102: 340  add
+00103: 340  setlocal 0
+00106: 340  pop
+00107: 341  name "xs"
+00112: 341  getprop "Models"
+00117: 341  getprop "Gems"
+00122: 341  dup
+00123: 341  callprop "createWithBase"
+00128: 341  swap
+00129: 341  notearg
+00130: 341  getlocal 0
+00133: 341  dup
+00134: 341  callprop "toString"
+00139: 341  swap
+00140: 341  notearg
+00141: 341  call 0
+00144: 341  notearg
+00145: 341  call 1
+00148: 341  setlocal 1
+00151: 341  pop
+00152: 342  getlocal 1
+00155: 342  dup
+00156: 342  callprop "createIcon_GradeAndAttribute"
+00161: 342  swap
+00162: 342  notearg
+00163: 342  call 0
+00166: 342  setlocal 2
+00169: 342  pop
+00170: 343  name "xs"
+00175: 343  getprop "Utils"
+00180: 343  getprop "Node"
+00185: 343  dup
+00186: 343  callprop "replaceChildSafe"
+00191: 343  swap
+00192: 343  notearg
+00193: 343  this
+00194: 343  getprop "ccbNode"
+00199: 343  notearg
+00200: 343  this
+00201: 343  getprop "m_gem_compose"
+00206: 343  notearg
+00207: 343  getlocal 2
+00210: 343  notearg
+00211: 343  call 3
+00214: 343  pop
+00215: 344  this
+00216: 344  getlocal 2
+00219: 344  setprop "m_gem_compose"
+00224: 344  pop
+00225: 346  this
+00226: 346  getlocal 0
+00229: 346  dup
+00230: 346  callprop "toString"
+00235: 346  swap
+00236: 346  notearg
+00237: 346  call 0
+00240: 346  setprop "m_firstGemid"
+00245: 346  pop
+00246: 347  name "xs"
+00251: 347  getprop "Models"
+00256: 347  getprop "Gems"
+00261: 347  dup
+00262: 347  callprop "createWithBase"
+00267: 347  swap
+00268: 347  notearg
+00269: 347  getlocal 0
+00272: 347  dup
+00273: 347  callprop "toString"
+00278: 347  swap
+00279: 347  notearg
+00280: 347  call 0
+00283: 347  notearg
+00284: 347  call 1
+00287: 347  setlocal 3
+00290: 347  pop
+00291: 348  getlocal 3
+00294: 348  dup
+00295: 348  callprop "createIcon_GradeAndAttribute"
+00300: 348  swap
+00301: 348  notearg
+00302: 348  call 0
+00305: 348  setlocal 4
+00308: 348  pop
+00309: 349  getlocal 4
+00312: 349  dup
+00313: 349  callprop "setOnClickCallBack"
+00318: 349  swap
+00319: 349  notearg
+00320: 349  this
+00321: 349  getprop "SelectFirstGem"
+00326: 349  dup
+00327: 349  callprop "bind"
+00332: 349  swap
+00333: 349  notearg
+00334: 349  this
+00335: 349  notearg
+00336: 349  call 1
+00339: 349  notearg
+00340: 349  call 1
+00343: 349  pop
+00344: 350  name "xs"
+00349: 350  getprop "Utils"
+00354: 350  getprop "Node"
+00359: 350  dup
+00360: 350  callprop "replaceChildSafe"
+00365: 350  swap
+00366: 350  notearg
+00367: 350  this
+00368: 350  getprop "ccbComposeNode"
+00373: 350  notearg
+00374: 350  this
+00375: 350  getprop "m_composeGem_first"
+00380: 350  notearg
+00381: 350  getlocal 4
+00384: 350  notearg
+00385: 350  call 3
+00388: 350  pop
+00389: 351  this
+00390: 351  getlocal 4
+00393: 351  setprop "m_composeGem_first"
+00398: 351  pop
+00399: 353  this
+00400: 353  this
+00401: 353  getprop "m_BigGemsList"
+00406: 353  one
+00407: 353  getelem
+00408: 353  getprop "resource_id"
+00413: 353  setprop "m_SecondGemid"
+00418: 353  pop
+00419: 354  name "xs"
+00424: 354  getprop "Models"
+00429: 354  getprop "Gems"
+00434: 354  dup
+00435: 354  callprop "createWithBase"
+00440: 354  swap
+00441: 354  notearg
+00442: 354  this
+00443: 354  getprop "m_BigGemsList"
+00448: 354  one
+00449: 354  getelem
+00450: 354  getprop "resource_id"
+00455: 354  notearg
+00456: 354  call 1
+00459: 354  setlocal 5
+00462: 354  pop
+00463: 355  getlocal 5
+00466: 355  dup
+00467: 355  callprop "createIcon_GradeAndAttribute"
+00472: 355  swap
+00473: 355  notearg
+00474: 355  call 0
+00477: 355  setlocal 6
+00480: 355  pop
+00481: 356  getlocal 6
+00484: 356  dup
+00485: 356  callprop "setOnClickCallBack"
+00490: 356  swap
+00491: 356  notearg
+00492: 356  this
+00493: 356  getprop "SelectSecondGem"
+00498: 356  dup
+00499: 356  callprop "bind"
+00504: 356  swap
+00505: 356  notearg
+00506: 356  this
+00507: 356  notearg
+00508: 356  call 1
+00511: 356  notearg
+00512: 356  call 1
+00515: 356  pop
+00516: 357  name "xs"
+00521: 357  getprop "Utils"
+00526: 357  getprop "Node"
+00531: 357  dup
+00532: 357  callprop "replaceChildSafe"
+00537: 357  swap
+00538: 357  notearg
+00539: 357  this
+00540: 357  getprop "ccbComposeNode"
+00545: 357  notearg
+00546: 357  this
+00547: 357  getprop "m_composeGem_second"
+00552: 357  notearg
+00553: 357  getlocal 6
+00556: 357  notearg
+00557: 357  call 3
+00560: 357  pop
+00561: 358  this
+00562: 358  getlocal 6
+00565: 358  setprop "m_composeGem_second"
+00570: 358  pop
+00571: 360  this
+00572: 360  this
+00573: 360  getprop "m_BigGemsList"
+00578: 360  int8 2
+00580: 360  getelem
+00581: 360  getprop "resource_id"
+00586: 360  setprop "m_ThirdGemid"
+00591: 360  pop
+00592: 361  name "xs"
+00597: 361  getprop "Models"
+00602: 361  getprop "Gems"
+00607: 361  dup
+00608: 361  callprop "createWithBase"
+00613: 361  swap
+00614: 361  notearg
+00615: 361  this
+00616: 361  getprop "m_BigGemsList"
+00621: 361  int8 2
+00623: 361  getelem
+00624: 361  getprop "resource_id"
+00629: 361  notearg
+00630: 361  call 1
+00633: 361  setlocal 7
+00636: 361  pop
+00637: 362  getlocal 7
+00640: 362  dup
+00641: 362  callprop "createIcon_GradeAndAttribute"
+00646: 362  swap
+00647: 362  notearg
+00648: 362  call 0
+00651: 362  setlocal 8
+00654: 362  pop
+00655: 363  getlocal 8
+00658: 363  dup
+00659: 363  callprop "setOnClickCallBack"
+00664: 363  swap
+00665: 363  notearg
+00666: 363  this
+00667: 363  getprop "SelectThirdGem"
+00672: 363  dup
+00673: 363  callprop "bind"
+00678: 363  swap
+00679: 363  notearg
+00680: 363  this
+00681: 363  notearg
+00682: 363  call 1
+00685: 363  notearg
+00686: 363  call 1
+00689: 363  pop
+00690: 364  name "xs"
+00695: 364  getprop "Utils"
+00700: 364  getprop "Node"
+00705: 364  dup
+00706: 364  callprop "replaceChildSafe"
+00711: 364  swap
+00712: 364  notearg
+00713: 364  this
+00714: 364  getprop "ccbComposeNode"
+00719: 364  notearg
+00720: 364  this
+00721: 364  getprop "m_composeGem_third"
+00726: 364  notearg
+00727: 364  getlocal 8
+00730: 364  notearg
+00731: 364  call 3
+00734: 364  pop
+00735: 365  this
+00736: 365  getlocal 8
+00739: 365  setprop "m_composeGem_third"
+00744: 365  pop
+00745: 367  this
+00746: 367  this
+00747: 367  getprop "m_BigGemsList"
+00752: 367  int8 3
+00754: 367  getelem
+00755: 367  getprop "resource_id"
+00760: 367  setprop "m_FourthGemid"
+00765: 367  pop
+00766: 368  name "xs"
+00771: 368  getprop "Models"
+00776: 368  getprop "Gems"
+00781: 368  dup
+00782: 368  callprop "createWithBase"
+00787: 368  swap
+00788: 368  notearg
+00789: 368  this
+00790: 368  getprop "m_BigGemsList"
+00795: 368  int8 3
+00797: 368  getelem
+00798: 368  getprop "resource_id"
+00803: 368  notearg
+00804: 368  call 1
+00807: 368  setlocal 9
+00810: 368  pop
+00811: 369  getlocal 9
+00814: 369  dup
+00815: 369  callprop "createIcon_GradeAndAttribute"
+00820: 369  swap
+00821: 369  notearg
+00822: 369  call 0
+00825: 369  setlocal 10
+00828: 369  pop
+00829: 370  getlocal 10
+00832: 370  dup
+00833: 370  callprop "setOnClickCallBack"
+00838: 370  swap
+00839: 370  notearg
+00840: 370  this
+00841: 370  getprop "SelectFourthGem"
+00846: 370  dup
+00847: 370  callprop "bind"
+00852: 370  swap
+00853: 370  notearg
+00854: 370  this
+00855: 370  notearg
+00856: 370  call 1
+00859: 370  notearg
+00860: 370  call 1
+00863: 370  pop
+00864: 371  name "xs"
+00869: 371  getprop "Utils"
+00874: 371  getprop "Node"
+00879: 371  dup
+00880: 371  callprop "replaceChildSafe"
+00885: 371  swap
+00886: 371  notearg
+00887: 371  this
+00888: 371  getprop "ccbComposeNode"
+00893: 371  notearg
+00894: 371  this
+00895: 371  getprop "m_composeGem_fourth"
+00900: 371  notearg
+00901: 371  getlocal 10
+00904: 371  notearg
+00905: 371  call 3
+00908: 371  pop
+00909: 372  this
+00910: 372  getlocal 10
+00913: 372  setprop "m_composeGem_fourth"
+00918: 372  pop
+00919: 372  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:332 ---
+;; function object[15] SelectFirstGem
+;; function metadata object[15] nargs=0 bindings=2
+;; local[0] iconButton
+;; local[1] icon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:375 ---
+loc   line  op
+----- ----  --
+main:
+00000: 377  this
+00001: 377  this
+00002: 377  getprop "m_BigGemsList"
+00007: 377  zero
+00008: 377  getelem
+00009: 377  getprop "type"
+00014: 377  setprop "m_bigGemType"
+00019: 377  pop
+00020: 379  this
+00021: 379  getprop "m_IconBg"
+00026: 379  dup
+00027: 379  callprop "setVisible"
+00032: 379  swap
+00033: 379  notearg
+00034: 379  true
+00035: 379  notearg
+00036: 379  call 1
+00039: 379  pop
+00040: 380  this
+00041: 380  getprop "m_IconBg"
+00046: 380  dup
+00047: 380  callprop "setPosition"
+00052: 380  swap
+00053: 380  notearg
+00054: 380  this
+00055: 380  getprop "m_composeGem_first"
+00060: 380  dup
+00061: 380  callprop "getPosition"
+00066: 380  swap
+00067: 380  notearg
+00068: 380  call 0
+00071: 380  notearg
+00072: 380  call 1
+00075: 380  pop
+00076: 382  name "xs"
+00081: 382  getprop "Models"
+00086: 382  getprop "Gems"
+00091: 382  dup
+00092: 382  callprop "createWithBase"
+00097: 382  swap
+00098: 382  notearg
+00099: 382  this
+00100: 382  getprop "m_firstGemid"
+00105: 382  notearg
+00106: 382  call 1
+00109: 382  setlocal 0
+00112: 382  pop
+00113: 383  getlocal 0
+00116: 383  dup
+00117: 383  callprop "createIcon_GradeAndAttribute"
+00122: 383  swap
+00123: 383  notearg
+00124: 383  call 0
+00127: 383  setlocal 1
+00130: 383  pop
+00131: 384  name "xs"
+00136: 384  getprop "Utils"
+00141: 384  getprop "Node"
+00146: 384  dup
+00147: 384  callprop "replaceChildSafe"
+00152: 384  swap
+00153: 384  notearg
+00154: 384  this
+00155: 384  getprop "ccbNode"
+00160: 384  notearg
+00161: 384  this
+00162: 384  getprop "m_gem_compose"
+00167: 384  notearg
+00168: 384  getlocal 1
+00171: 384  notearg
+00172: 384  call 3
+00175: 384  pop
+00176: 385  this
+00177: 385  getlocal 1
+00180: 385  setprop "m_gem_compose"
+00185: 385  pop
+00186: 385  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:375 ---
+;; function object[16] SelectSecondGem
+;; function metadata object[16] nargs=0 bindings=2
+;; local[0] iconButton
+;; local[1] icon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:388 ---
+loc   line  op
+----- ----  --
+main:
+00000: 390  this
+00001: 390  this
+00002: 390  getprop "m_BigGemsList"
+00007: 390  one
+00008: 390  getelem
+00009: 390  getprop "type"
+00014: 390  setprop "m_bigGemType"
+00019: 390  pop
+00020: 392  this
+00021: 392  getprop "m_IconBg"
+00026: 392  dup
+00027: 392  callprop "setVisible"
+00032: 392  swap
+00033: 392  notearg
+00034: 392  true
+00035: 392  notearg
+00036: 392  call 1
+00039: 392  pop
+00040: 393  this
+00041: 393  getprop "m_IconBg"
+00046: 393  dup
+00047: 393  callprop "setPosition"
+00052: 393  swap
+00053: 393  notearg
+00054: 393  this
+00055: 393  getprop "m_composeGem_second"
+00060: 393  dup
+00061: 393  callprop "getPosition"
+00066: 393  swap
+00067: 393  notearg
+00068: 393  call 0
+00071: 393  notearg
+00072: 393  call 1
+00075: 393  pop
+00076: 395  name "xs"
+00081: 395  getprop "Models"
+00086: 395  getprop "Gems"
+00091: 395  dup
+00092: 395  callprop "createWithBase"
+00097: 395  swap
+00098: 395  notearg
+00099: 395  this
+00100: 395  getprop "m_SecondGemid"
+00105: 395  notearg
+00106: 395  call 1
+00109: 395  setlocal 0
+00112: 395  pop
+00113: 396  getlocal 0
+00116: 396  dup
+00117: 396  callprop "createIcon_GradeAndAttribute"
+00122: 396  swap
+00123: 396  notearg
+00124: 396  call 0
+00127: 396  setlocal 1
+00130: 396  pop
+00131: 397  name "xs"
+00136: 397  getprop "Utils"
+00141: 397  getprop "Node"
+00146: 397  dup
+00147: 397  callprop "replaceChildSafe"
+00152: 397  swap
+00153: 397  notearg
+00154: 397  this
+00155: 397  getprop "ccbNode"
+00160: 397  notearg
+00161: 397  this
+00162: 397  getprop "m_gem_compose"
+00167: 397  notearg
+00168: 397  getlocal 1
+00171: 397  notearg
+00172: 397  call 3
+00175: 397  pop
+00176: 398  this
+00177: 398  getlocal 1
+00180: 398  setprop "m_gem_compose"
+00185: 398  pop
+00186: 398  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:388 ---
+;; function object[17] SelectThirdGem
+;; function metadata object[17] nargs=0 bindings=2
+;; local[0] iconButton
+;; local[1] icon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:401 ---
+loc   line  op
+----- ----  --
+main:
+00000: 403  this
+00001: 403  this
+00002: 403  getprop "m_BigGemsList"
+00007: 403  int8 2
+00009: 403  getelem
+00010: 403  getprop "type"
+00015: 403  setprop "m_bigGemType"
+00020: 403  pop
+00021: 405  this
+00022: 405  getprop "m_IconBg"
+00027: 405  dup
+00028: 405  callprop "setVisible"
+00033: 405  swap
+00034: 405  notearg
+00035: 405  true
+00036: 405  notearg
+00037: 405  call 1
+00040: 405  pop
+00041: 406  this
+00042: 406  getprop "m_IconBg"
+00047: 406  dup
+00048: 406  callprop "setPosition"
+00053: 406  swap
+00054: 406  notearg
+00055: 406  this
+00056: 406  getprop "m_composeGem_third"
+00061: 406  dup
+00062: 406  callprop "getPosition"
+00067: 406  swap
+00068: 406  notearg
+00069: 406  call 0
+00072: 406  notearg
+00073: 406  call 1
+00076: 406  pop
+00077: 408  name "xs"
+00082: 408  getprop "Models"
+00087: 408  getprop "Gems"
+00092: 408  dup
+00093: 408  callprop "createWithBase"
+00098: 408  swap
+00099: 408  notearg
+00100: 408  this
+00101: 408  getprop "m_ThirdGemid"
+00106: 408  notearg
+00107: 408  call 1
+00110: 408  setlocal 0
+00113: 408  pop
+00114: 409  getlocal 0
+00117: 409  dup
+00118: 409  callprop "createIcon_GradeAndAttribute"
+00123: 409  swap
+00124: 409  notearg
+00125: 409  call 0
+00128: 409  setlocal 1
+00131: 409  pop
+00132: 410  name "xs"
+00137: 410  getprop "Utils"
+00142: 410  getprop "Node"
+00147: 410  dup
+00148: 410  callprop "replaceChildSafe"
+00153: 410  swap
+00154: 410  notearg
+00155: 410  this
+00156: 410  getprop "ccbNode"
+00161: 410  notearg
+00162: 410  this
+00163: 410  getprop "m_gem_compose"
+00168: 410  notearg
+00169: 410  getlocal 1
+00172: 410  notearg
+00173: 410  call 3
+00176: 410  pop
+00177: 411  this
+00178: 411  getlocal 1
+00181: 411  setprop "m_gem_compose"
+00186: 411  pop
+00187: 411  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:401 ---
+;; function object[18] SelectFourthGem
+;; function metadata object[18] nargs=0 bindings=2
+;; local[0] iconButton
+;; local[1] icon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:414 ---
+loc   line  op
+----- ----  --
+main:
+00000: 416  this
+00001: 416  this
+00002: 416  getprop "m_BigGemsList"
+00007: 416  int8 3
+00009: 416  getelem
+00010: 416  getprop "type"
+00015: 416  setprop "m_bigGemType"
+00020: 416  pop
+00021: 418  this
+00022: 418  getprop "m_IconBg"
+00027: 418  dup
+00028: 418  callprop "setVisible"
+00033: 418  swap
+00034: 418  notearg
+00035: 418  true
+00036: 418  notearg
+00037: 418  call 1
+00040: 418  pop
+00041: 419  this
+00042: 419  getprop "m_IconBg"
+00047: 419  dup
+00048: 419  callprop "setPosition"
+00053: 419  swap
+00054: 419  notearg
+00055: 419  this
+00056: 419  getprop "m_composeGem_fourth"
+00061: 419  dup
+00062: 419  callprop "getPosition"
+00067: 419  swap
+00068: 419  notearg
+00069: 419  call 0
+00072: 419  notearg
+00073: 419  call 1
+00076: 419  pop
+00077: 421  name "xs"
+00082: 421  getprop "Models"
+00087: 421  getprop "Gems"
+00092: 421  dup
+00093: 421  callprop "createWithBase"
+00098: 421  swap
+00099: 421  notearg
+00100: 421  this
+00101: 421  getprop "m_FourthGemid"
+00106: 421  notearg
+00107: 421  call 1
+00110: 421  setlocal 0
+00113: 421  pop
+00114: 422  getlocal 0
+00117: 422  dup
+00118: 422  callprop "createIcon_GradeAndAttribute"
+00123: 422  swap
+00124: 422  notearg
+00125: 422  call 0
+00128: 422  setlocal 1
+00131: 422  pop
+00132: 423  name "xs"
+00137: 423  getprop "Utils"
+00142: 423  getprop "Node"
+00147: 423  dup
+00148: 423  callprop "replaceChildSafe"
+00153: 423  swap
+00154: 423  notearg
+00155: 423  this
+00156: 423  getprop "ccbNode"
+00161: 423  notearg
+00162: 423  this
+00163: 423  getprop "m_gem_compose"
+00168: 423  notearg
+00169: 423  getlocal 1
+00172: 423  notearg
+00173: 423  call 3
+00176: 423  pop
+00177: 424  this
+00178: 424  getlocal 1
+00181: 424  setprop "m_gem_compose"
+00186: 424  pop
+00187: 424  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:414 ---
+;; function object[19] ClearGems
+;; function metadata object[19] nargs=0 bindings=1
+;; local[0] jiahaoIcon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:427 ---
+loc   line  op
+----- ----  --
+main:
+00000: 429  this
+00001: 429  getprop "ccbComposeNode"
+00006: 429  dup
+00007: 429  callprop "setVisible"
+00012: 429  swap
+00013: 429  notearg
+00014: 429  false
+00015: 429  notearg
+00016: 429  call 1
+00019: 429  pop
+00020: 430  name "xs"
+00025: 430  getprop "Factorys"
+00030: 430  getprop "Sprite"
+00035: 430  dup
+00036: 430  callprop "create"
+00041: 430  swap
+00042: 430  notearg
+00043: 430  string "gemsScene_wenhao1"
+00048: 430  notearg
+00049: 430  string "GemsScene"
+00054: 430  notearg
+00055: 430  call 2
+00058: 430  setlocal 0
+00061: 430  pop
+00062: 431  name "xs"
+00067: 431  getprop "Utils"
+00072: 431  getprop "Node"
+00077: 431  dup
+00078: 431  callprop "replaceChildSafe"
+00083: 431  swap
+00084: 431  notearg
+00085: 431  this
+00086: 431  getprop "ccbNode"
+00091: 431  notearg
+00092: 431  this
+00093: 431  getprop "m_gem_compose"
+00098: 431  notearg
+00099: 431  getlocal 0
+00102: 431  notearg
+00103: 431  call 3
+00106: 431  pop
+00107: 432  this
+00108: 432  getlocal 0
+00111: 432  setprop "m_gem_compose"
+00116: 432  pop
+00117: 432  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:427 ---
+;; function object[20] ClearAllGems
+;; function metadata object[20] nargs=0 bindings=4
+;; local[0] jiahaoIcon
+;; local[1] iconButton_1
+;; local[2] iconButton_2
+;; local[3] iconButton_3
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:436 ---
+loc   line  op
+----- ----  --
+main:
+00000: 438  this
+00001: 438  getprop "ccbComposeNode"
+00006: 438  dup
+00007: 438  callprop "setVisible"
+00012: 438  swap
+00013: 438  notearg
+00014: 438  false
+00015: 438  notearg
+00016: 438  call 1
+00019: 438  pop
+00020: 439  name "xs"
+00025: 439  getprop "Factorys"
+00030: 439  getprop "Sprite"
+00035: 439  dup
+00036: 439  callprop "create"
+00041: 439  swap
+00042: 439  notearg
+00043: 439  string "gemsScene_wenhao1"
+00048: 439  notearg
+00049: 439  string "GemsScene"
+00054: 439  notearg
+00055: 439  call 2
+00058: 439  setlocal 0
+00061: 439  pop
+00062: 440  name "xs"
+00067: 440  getprop "Utils"
+00072: 440  getprop "Node"
+00077: 440  dup
+00078: 440  callprop "replaceChildSafe"
+00083: 440  swap
+00084: 440  notearg
+00085: 440  this
+00086: 440  getprop "ccbNode"
+00091: 440  notearg
+00092: 440  this
+00093: 440  getprop "m_gem_compose"
+00098: 440  notearg
+00099: 440  getlocal 0
+00102: 440  notearg
+00103: 440  call 3
+00106: 440  pop
+00107: 441  this
+00108: 441  getlocal 0
+00111: 441  setprop "m_gem_compose"
+00116: 441  pop
+00117: 443  name "xs"
+00122: 443  getprop "Factorys"
+00127: 443  getprop "Sprite"
+00132: 443  dup
+00133: 443  callprop "create"
+00138: 443  swap
+00139: 443  notearg
+00140: 443  string "gemsScene_jiahao"
+00145: 443  notearg
+00146: 443  string "GemsScene"
+00151: 443  notearg
+00152: 443  call 2
+00155: 443  setlocal 1
+00158: 443  pop
+00159: 444  name "xs"
+00164: 444  getprop "Utils"
+00169: 444  getprop "Node"
+00174: 444  dup
+00175: 444  callprop "replaceChildSafe"
+00180: 444  swap
+00181: 444  notearg
+00182: 444  this
+00183: 444  getprop "ccbNode"
+00188: 444  notearg
+00189: 444  this
+00190: 444  getprop "m_gem_first"
+00195: 444  notearg
+00196: 444  getlocal 1
+00199: 444  notearg
+00200: 444  call 3
+00203: 444  pop
+00204: 445  this
+00205: 445  getlocal 1
+00208: 445  setprop "m_gem_first"
+00213: 445  pop
+00214: 446  this
+00215: 446  name "xs"
+00220: 446  getprop "Views"
+00225: 446  getprop "Btn"
+00230: 446  dup
+00231: 446  callprop "createInvisibleWithParent"
+00236: 446  swap
+00237: 446  notearg
+00238: 446  this
+00239: 446  getprop "m_gem_first"
+00244: 446  notearg
+00245: 446  call 1
+00248: 446  setprop "first_button"
+00253: 446  pop
+00254: 447  this
+00255: 447  getprop "first_button"
+00260: 447  dup
+00261: 447  callprop "setOnClickCallBack"
+00266: 447  swap
+00267: 447  notearg
+00268: 447  this
+00269: 447  getprop "GemFirstCallBack"
+00274: 447  dup
+00275: 447  callprop "bind"
+00280: 447  swap
+00281: 447  notearg
+00282: 447  this
+00283: 447  notearg
+00284: 447  call 1
+00287: 447  notearg
+00288: 447  call 1
+00291: 447  pop
+00292: 449  name "xs"
+00297: 449  getprop "Factorys"
+00302: 449  getprop "Sprite"
+00307: 449  dup
+00308: 449  callprop "create"
+00313: 449  swap
+00314: 449  notearg
+00315: 449  string "gemsScene_jiahao"
+00320: 449  notearg
+00321: 449  string "GemsScene"
+00326: 449  notearg
+00327: 449  call 2
+00330: 449  setlocal 2
+00333: 449  pop
+00334: 450  name "xs"
+00339: 450  getprop "Utils"
+00344: 450  getprop "Node"
+00349: 450  dup
+00350: 450  callprop "replaceChildSafe"
+00355: 450  swap
+00356: 450  notearg
+00357: 450  this
+00358: 450  getprop "ccbNode"
+00363: 450  notearg
+00364: 450  this
+00365: 450  getprop "m_gem_second"
+00370: 450  notearg
+00371: 450  getlocal 2
+00374: 450  notearg
+00375: 450  call 3
+00378: 450  pop
+00379: 451  this
+00380: 451  getlocal 2
+00383: 451  setprop "m_gem_second"
+00388: 451  pop
+00389: 452  this
+00390: 452  name "xs"
+00395: 452  getprop "Views"
+00400: 452  getprop "Btn"
+00405: 452  dup
+00406: 452  callprop "createInvisibleWithParent"
+00411: 452  swap
+00412: 452  notearg
+00413: 452  this
+00414: 452  getprop "m_gem_second"
+00419: 452  notearg
+00420: 452  call 1
+00423: 452  setprop "second_button"
+00428: 452  pop
+00429: 453  this
+00430: 453  getprop "second_button"
+00435: 453  dup
+00436: 453  callprop "setOnClickCallBack"
+00441: 453  swap
+00442: 453  notearg
+00443: 453  this
+00444: 453  getprop "GemSecondCallBack"
+00449: 453  dup
+00450: 453  callprop "bind"
+00455: 453  swap
+00456: 453  notearg
+00457: 453  this
+00458: 453  notearg
+00459: 453  call 1
+00462: 453  notearg
+00463: 453  call 1
+00466: 453  pop
+00467: 455  name "xs"
+00472: 455  getprop "Factorys"
+00477: 455  getprop "Sprite"
+00482: 455  dup
+00483: 455  callprop "create"
+00488: 455  swap
+00489: 455  notearg
+00490: 455  string "gemsScene_jiahao"
+00495: 455  notearg
+00496: 455  string "GemsScene"
+00501: 455  notearg
+00502: 455  call 2
+00505: 455  setlocal 3
+00508: 455  pop
+00509: 456  name "xs"
+00514: 456  getprop "Utils"
+00519: 456  getprop "Node"
+00524: 456  dup
+00525: 456  callprop "replaceChildSafe"
+00530: 456  swap
+00531: 456  notearg
+00532: 456  this
+00533: 456  getprop "ccbNode"
+00538: 456  notearg
+00539: 456  this
+00540: 456  getprop "m_gem_third"
+00545: 456  notearg
+00546: 456  getlocal 3
+00549: 456  notearg
+00550: 456  call 3
+00553: 456  pop
+00554: 457  this
+00555: 457  getlocal 3
+00558: 457  setprop "m_gem_third"
+00563: 457  pop
+00564: 458  this
+00565: 458  name "xs"
+00570: 458  getprop "Views"
+00575: 458  getprop "Btn"
+00580: 458  dup
+00581: 458  callprop "createInvisibleWithParent"
+00586: 458  swap
+00587: 458  notearg
+00588: 458  this
+00589: 458  getprop "m_gem_third"
+00594: 458  notearg
+00595: 458  call 1
+00598: 458  setprop "third_button"
+00603: 458  pop
+00604: 459  this
+00605: 459  getprop "third_button"
+00610: 459  dup
+00611: 459  callprop "setOnClickCallBack"
+00616: 459  swap
+00617: 459  notearg
+00618: 459  this
+00619: 459  getprop "GemThirdCallBack"
+00624: 459  dup
+00625: 459  callprop "bind"
+00630: 459  swap
+00631: 459  notearg
+00632: 459  this
+00633: 459  notearg
+00634: 459  call 1
+00637: 459  notearg
+00638: 459  call 1
+00641: 459  pop
+00642: 461  this
+00643: 461  getprop "m_ComposeBtn"
+00648: 461  dup
+00649: 461  callprop "setEnabled"
+00654: 461  swap
+00655: 461  notearg
+00656: 461  false
+00657: 461  notearg
+00658: 461  call 1
+00661: 461  pop
+00662: 462  this
+00663: 462  getprop "m_oneStepComposeBtn"
+00668: 462  dup
+00669: 462  callprop "setEnabled"
+00674: 462  swap
+00675: 462  notearg
+00676: 462  false
+00677: 462  notearg
+00678: 462  call 1
+00681: 462  pop
+00682: 463  this
+00683: 463  false
+00684: 463  setprop "m_canCompose"
+00689: 463  pop
+00690: 463  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:436 ---
+;; function object[21] ExchangeGemIcon
+;; function metadata object[21] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] gemList
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:466 ---
+loc   line  op
+----- ----  --
+main:
+00000: 467  getarg 0
+00003: 467  setlocal 0
+00006: 467  pop
+00007: 469  this
+00008: 469  getlocal 0
+00011: 469  getprop "pk_id"
+00016: 469  setprop "m_smallgemsID"
+00021: 469  pop
+00022: 471  this
+00023: 471  getlocal 0
+00026: 471  getprop "baseDataRef"
+00031: 471  getprop "type"
+00036: 471  setprop "m_smallGemType"
+00041: 471  pop
+00042: 472  this
+00043: 472  getlocal 0
+00046: 472  getprop "baseDataRef"
+00051: 472  getprop "level"
+00056: 472  setprop "m_smallGemLevel"
+00061: 472  pop
+00062: 474  this
+00063: 474  dup
+00064: 474  callprop "ClearGems"
+00069: 474  swap
+00070: 474  notearg
+00071: 474  call 0
+00074: 474  pop
+00075: 475  this
+00076: 475  dup
+00077: 475  callprop "PullAllGemsByNum"
+00082: 475  swap
+00083: 475  notearg
+00084: 475  getlocal 0
+00087: 475  notearg
+00088: 475  call 1
+00091: 475  pop
+00092: 476  this
+00093: 476  getprop "m_ComposeBtn"
+00098: 476  dup
+00099: 476  callprop "setEnabled"
+00104: 476  swap
+00105: 476  notearg
+00106: 476  true
+00107: 476  notearg
+00108: 476  call 1
+00111: 476  pop
+00112: 477  this
+00113: 477  getprop "m_oneStepComposeBtn"
+00118: 477  dup
+00119: 477  callprop "setEnabled"
+00124: 477  swap
+00125: 477  notearg
+00126: 477  true
+00127: 477  notearg
+00128: 477  call 1
+00131: 477  pop
+00132: 478  this
+00133: 478  true
+00134: 478  setprop "m_canCompose"
+00139: 478  pop
+00140: 480  this
+00141: 480  getprop "m_IconBg"
+00146: 480  dup
+00147: 480  callprop "setVisible"
+00152: 480  swap
+00153: 480  notearg
+00154: 480  true
+00155: 480  notearg
+00156: 480  call 1
+00159: 480  pop
+00160: 481  this
+00161: 481  getprop "m_IconBg"
+00166: 481  dup
+00167: 481  callprop "setPosition"
+00172: 481  swap
+00173: 481  notearg
+00174: 481  this
+00175: 481  getprop "m_composeGem_first"
+00180: 481  dup
+00181: 481  callprop "getPosition"
+00186: 481  swap
+00187: 481  notearg
+00188: 481  call 0
+00191: 481  notearg
+00192: 481  call 1
+00195: 481  pop
+00196: 483  this
+00197: 483  dup
+00198: 483  callprop "ComposeGemIsOk"
+00203: 483  swap
+00204: 483  notearg
+00205: 483  call 0
+00208: 483  pop
+00209: 483  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:466 ---
+;; function object[22] create
+;; function metadata object[22] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:488 ---
+loc   line  op
+----- ----  --
+main:
+00000: 489  name "xs"
+00005: 489  getprop "Views"
+00010: 489  getprop "GemsComposeView"
+00015: 489  undefined
+00016: 489  notearg
+00017: 489  new 0
+00020: 489  setlocal 0
+00023: 489  pop
+00024: 490  getlocal 0
+00027: 490  and 47 (+20)
+00032: 490  pop
+00033: 490  getlocal 0
+00036: 490  dup
+00037: 490  callprop "init"
+00042: 490  swap
+00043: 490  notearg
+00044: 490  call 0
+00047: 490  ifeq 56 (+9)
+00052: 491  getlocal 0
+00055: 491  return
+00056: 493  null
+00057: 493  return
+00058: 493  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Gems/GemsComposeView.js:488 ---

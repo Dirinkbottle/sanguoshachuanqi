@@ -1,0 +1,2729 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/common.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=2495 object[0]
+;; FUNCTION-MAP kind=lambda offset=2505 object[1]
+;; FUNCTION-MAP kind=lambda offset=2515 object[2]
+;; FUNCTION-MAP kind=lambda offset=2525 object[3]
+;; FUNCTION-MAP kind=lambda offset=2535 object[4]
+;; FUNCTION-MAP kind=lambda offset=2545 object[5]
+;; FUNCTION-MAP kind=lambda offset=2555 object[6]
+;; FUNCTION-MAP kind=lambda offset=2565 object[7]
+;; FUNCTION-MAP kind=lambda offset=2575 object[8]
+;; FUNCTION-MAP kind=lambda offset=2585 object[9]
+;; FUNCTION-MAP kind=lambda offset=2595 object[10]
+;; FUNCTION-MAP kind=lambda offset=2605 object[11]
+;; FUNCTION-MAP kind=lambda offset=2615 object[12]
+;; FUNCTION-MAP kind=lambda offset=2625 object[13]
+;; FUNCTION-MAP kind=lambda offset=2661 object[14]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  name "xs"
+00005:  11  getprop "Profile"
+00010:  11  name "cc"
+00015:  11  getprop "Class"
+00020:  11  dup
+00021:  11  callprop "extend"
+00026:  11  swap
+00027:  11  notearg
+00028:  11  newinit 1
+00033:  13  string "xs.Profile.GameData"
+00038:  13  initprop "name"
+00043:  15  name "xs"
+00048:  15  getprop "Debug"
+00053:  15  getprop "emptyFunc"
+00058:  15  initprop "dump"
+00063:  17  newinit 1
+00068:  33  newarray 21
+00072:  35  newinit 1
+00077:  36  string "m_player"
+00082:  36  initprop "propertyName"
+00087:  37  string "user_info"
+00092:  37  initprop "key"
+00097:  38  name "xs"
+00102:  38  getprop "Models"
+00107:  38  getprop "Player"
+00112:  38  initprop "class"
+00117:  39  name "xs"
+00122:  39  getprop "Constant_GD_MgrType_SingletonType"
+00127:  39  initprop "mgrType"
+00132:  40  name "xs"
+00137:  40  getprop "Constant_Notify_ModelChange_UserInfo"
+00142:  40  initprop "notifyName"
+00147:  41  string ""
+00152:  41  initprop "sortChangeNotifyName"
+00157:  42  newarray 0
+00161:  42  endinit
+00162:  42  initprop "indexProperty"
+00167:  43  string "m_player_index"
+00172:  43  initprop "indexName"
+00177:  43  endinit
+00178:  43  initelem_array 0
+00182:  46  newinit 1
+00187:  47  string "m_generals"
+00192:  47  initprop "propertyName"
+00197:  48  string "general_info"
+00202:  48  initprop "key"
+00207:  49  name "xs"
+00212:  49  getprop "Models"
+00217:  49  getprop "General"
+00222:  49  initprop "class"
+00227:  50  name "xs"
+00232:  50  getprop "Constant_GD_MgrType_MapType"
+00237:  50  initprop "mgrType"
+00242:  51  name "xs"
+00247:  51  getprop "Constant_Notify_ModelChange_General"
+00252:  51  initprop "notifyName"
+00257:  52  name "xs"
+00262:  52  getprop "Constant_Notify_ModelChange_General_SortChange"
+00267:  52  initprop "sortChangeNotifyName"
+00272:  53  newarray 1
+00276:  53  string "getMajorPkId"
+00281:  53  initelem_array 0
+00285:  53  endinit
+00286:  53  initprop "indexProperty"
+00291:  54  string "m_generals_index"
+00296:  54  initprop "indexName"
+00301:  54  endinit
+00302:  54  initelem_array 1
+00306:  57  newinit 1
+00311:  58  string "m_general_souls"
+00316:  58  initprop "propertyName"
+00321:  59  string "general_soul_info"
+00326:  59  initprop "key"
+00331:  60  name "xs"
+00336:  60  getprop "Models"
+00341:  60  getprop "GeneralSoul"
+00346:  60  initprop "class"
+00351:  61  name "xs"
+00356:  61  getprop "Constant_GD_MgrType_MapType"
+00361:  61  initprop "mgrType"
+00366:  62  name "xs"
+00371:  62  getprop "Constant_Notify_ModelChange_GeneralSoul"
+00376:  62  initprop "notifyName"
+00381:  63  name "xs"
+00386:  63  getprop "Constant_Notify_ModelChange_GeneralSoul_SortChange"
+00391:  63  initprop "sortChangeNotifyName"
+00396:  64  newarray 0
+00400:  64  endinit
+00401:  64  initprop "indexProperty"
+00406:  65  string "m_general_souls_index"
+00411:  65  initprop "indexName"
+00416:  65  endinit
+00417:  65  initelem_array 2
+00421:  68  newinit 1
+00426:  69  string "m_skills"
+00431:  69  initprop "propertyName"
+00436:  70  string "skill_info"
+00441:  70  initprop "key"
+00446:  71  name "xs"
+00451:  71  getprop "Models"
+00456:  71  getprop "Skill"
+00461:  71  initprop "class"
+00466:  72  name "xs"
+00471:  72  getprop "Constant_GD_MgrType_MapType"
+00476:  72  initprop "mgrType"
+00481:  73  name "xs"
+00486:  73  getprop "Constant_Notify_ModelChange_Skill"
+00491:  73  initprop "notifyName"
+00496:  74  name "xs"
+00501:  74  getprop "Constant_Notify_ModelChange_Skill_SortChange"
+00506:  74  initprop "sortChangeNotifyName"
+00511:  75  newarray 2
+00515:  75  string "getGeneralPkId"
+00520:  75  initelem_array 0
+00524:  75  string "getSkillType"
+00529:  75  initelem_array 1
+00533:  75  endinit
+00534:  75  initprop "indexProperty"
+00539:  76  string "m_skills_index"
+00544:  76  initprop "indexName"
+00549:  76  endinit
+00550:  76  initelem_array 3
+00554:  79  newinit 1
+00559:  80  string "m_equs"
+00564:  80  initprop "propertyName"
+00569:  81  string "equipment_info"
+00574:  81  initprop "key"
+00579:  82  name "xs"
+00584:  82  getprop "Models"
+00589:  82  getprop "Equipment"
+00594:  82  initprop "class"
+00599:  83  name "xs"
+00604:  83  getprop "Constant_GD_MgrType_MapType"
+00609:  83  initprop "mgrType"
+00614:  84  name "xs"
+00619:  84  getprop "Constant_Notify_ModelChange_Equ"
+00624:  84  initprop "notifyName"
+00629:  85  name "xs"
+00634:  85  getprop "Constant_Notify_ModelChange_Equ_SortChange"
+00639:  85  initprop "sortChangeNotifyName"
+00644:  86  newarray 1
+00648:  86  string "getGeneralPkId"
+00653:  86  initelem_array 0
+00657:  86  endinit
+00658:  86  initprop "indexProperty"
+00663:  87  string "m_equs_index"
+00668:  87  initprop "indexName"
+00673:  87  endinit
+00674:  87  initelem_array 4
+00678:  90  newinit 1
+00683:  91  string "m_items"
+00688:  91  initprop "propertyName"
+00693:  92  string "item_info"
+00698:  92  initprop "key"
+00703:  93  name "xs"
+00708:  93  getprop "Models"
+00713:  93  getprop "Item"
+00718:  93  initprop "class"
+00723:  94  name "xs"
+00728:  94  getprop "Constant_GD_MgrType_MapType"
+00733:  94  initprop "mgrType"
+00738:  95  name "xs"
+00743:  95  getprop "Constant_Notify_ModelChange_Item"
+00748:  95  initprop "notifyName"
+00753:  96  name "xs"
+00758:  96  getprop "Constant_Notify_ModelChange_Item_SortChange"
+00763:  96  initprop "sortChangeNotifyName"
+00768:  97  newarray 0
+00772:  97  endinit
+00773:  97  initprop "indexProperty"
+00778:  98  string "m_items_index"
+00783:  98  initprop "indexName"
+00788:  98  endinit
+00789:  98  initelem_array 5
+00793: 101  newinit 1
+00798: 102  string "m_combats"
+00803: 102  initprop "propertyName"
+00808: 103  string "combat_info"
+00813: 103  initprop "key"
+00818: 104  name "xs"
+00823: 104  getprop "Models"
+00828: 104  getprop "Combat"
+00833: 104  initprop "class"
+00838: 105  name "xs"
+00843: 105  getprop "Constant_GD_MgrType_ReplaceType"
+00848: 105  initprop "mgrType"
+00853: 106  name "xs"
+00858: 106  getprop "Constant_Notify_ModelChange_Combat"
+00863: 106  initprop "notifyName"
+00868: 107  newarray 0
+00872: 107  endinit
+00873: 107  initprop "indexProperty"
+00878: 108  string "m_combats_index"
+00883: 108  initprop "indexName"
+00888: 108  endinit
+00889: 108  initelem_array 6
+00893: 111  newinit 1
+00898: 112  string "m_team_general"
+00903: 112  initprop "propertyName"
+00908: 113  string "team_info"
+00913: 113  initprop "key"
+00918: 114  name "xs"
+00923: 114  getprop "Models"
+00928: 114  getprop "TeamGeneral"
+00933: 114  initprop "class"
+00938: 115  name "xs"
+00943: 115  getprop "Constant_GD_MgrType_ReplaceType"
+00948: 115  initprop "mgrType"
+00953: 116  name "xs"
+00958: 116  getprop "Constant_Notify_ModelChange_TeamGeneral"
+00963: 116  initprop "notifyName"
+00968: 117  newarray 0
+00972: 117  endinit
+00973: 117  initprop "indexProperty"
+00978: 118  name "xs"
+00983: 118  getprop "Constant_Notify_ModelChange_Team_SortChange"
+00988: 118  initprop "sortChangeNotifyName"
+00993: 119  string "m_team_general_index"
+00998: 119  initprop "indexName"
+01003: 119  endinit
+01004: 119  initelem_array 7
+01008: 122  newinit 1
+01013: 123  string "m_equ_pieces"
+01018: 123  initprop "propertyName"
+01023: 124  string "equipment_piece_info"
+01028: 124  initprop "key"
+01033: 125  name "xs"
+01038: 125  getprop "Models"
+01043: 125  getprop "EquipmentPiece"
+01048: 125  initprop "class"
+01053: 126  name "xs"
+01058: 126  getprop "Constant_GD_MgrType_MapType"
+01063: 126  initprop "mgrType"
+01068: 127  name "xs"
+01073: 127  getprop "Constant_Notify_ModelChange_EquPiece"
+01078: 127  initprop "notifyName"
+01083: 128  name "xs"
+01088: 128  getprop "Constant_Notify_ModelChange_EquPiece_SortChange"
+01093: 128  initprop "sortChangeNotifyName"
+01098: 129  newarray 0
+01102: 129  endinit
+01103: 129  initprop "indexProperty"
+01108: 130  string "m_equ_pieces_index"
+01113: 130  initprop "indexName"
+01118: 130  endinit
+01119: 130  initelem_array 8
+01123: 133  newinit 1
+01128: 134  string "m_atlas"
+01133: 134  initprop "propertyName"
+01138: 135  string "atlas_info"
+01143: 135  initprop "key"
+01148: 136  name "xs"
+01153: 136  getprop "Models"
+01158: 136  getprop "Atlas"
+01163: 136  initprop "class"
+01168: 137  name "xs"
+01173: 137  getprop "Constant_GD_MgrType_MapType"
+01178: 137  initprop "mgrType"
+01183: 138  name "xs"
+01188: 138  getprop "Constant_Notify_ModelChange_Atlas"
+01193: 138  initprop "notifyName"
+01198: 139  name "xs"
+01203: 139  getprop "Constant_Notify_ModelChange_Atlas_SortChange"
+01208: 139  initprop "sortChangeNotifyName"
+01213: 140  newarray 0
+01217: 140  endinit
+01218: 140  initprop "indexProperty"
+01223: 141  string "m_atlas_index"
+01228: 141  initprop "indexName"
+01233: 141  endinit
+01234: 141  initelem_array 9
+01238: 144  newinit 1
+01243: 145  string "m_skill_pieces"
+01248: 145  initprop "propertyName"
+01253: 146  string "skill_piece_info"
+01258: 146  initprop "key"
+01263: 147  name "xs"
+01268: 147  getprop "Models"
+01273: 147  getprop "SkillPiece"
+01278: 147  initprop "class"
+01283: 148  name "xs"
+01288: 148  getprop "Constant_GD_MgrType_MapType"
+01293: 148  initprop "mgrType"
+01298: 149  name "xs"
+01303: 149  getprop "Constant_Notify_ModelChange_SkillPiece"
+01308: 149  initprop "notifyName"
+01313: 150  name "xs"
+01318: 150  getprop "Constant_Notify_ModelChange_SkillPiece_SortChange"
+01323: 150  initprop "sortChangeNotifyName"
+01328: 151  newarray 0
+01332: 151  endinit
+01333: 151  initprop "indexProperty"
+01338: 152  string "m_skill_pieces_index"
+01343: 152  initprop "indexName"
+01348: 152  endinit
+01349: 152  initelem_array 10
+01353: 155  newinit 1
+01358: 156  string "m_push"
+01363: 156  initprop "propertyName"
+01368: 157  string "push"
+01373: 157  initprop "key"
+01378: 158  name "xs"
+01383: 158  getprop "Models"
+01388: 158  getprop "PushInfo"
+01393: 158  initprop "class"
+01398: 159  name "xs"
+01403: 159  getprop "Constant_GD_MgrType_SingletonType"
+01408: 159  initprop "mgrType"
+01413: 160  name "xs"
+01418: 160  getprop "Constant_Notify_ModelChange_Push"
+01423: 160  initprop "notifyName"
+01428: 161  string ""
+01433: 161  initprop "sortChangeNotifyName"
+01438: 162  newarray 0
+01442: 162  endinit
+01443: 162  initprop "indexProperty"
+01448: 163  string "m_push_index"
+01453: 163  initprop "indexName"
+01458: 163  endinit
+01459: 163  initelem_array 11
+01463: 166  newinit 1
+01468: 167  string "m_adInfo"
+01473: 167  initprop "propertyName"
+01478: 168  string "adInfo"
+01483: 168  initprop "key"
+01488: 169  name "xs"
+01493: 169  getprop "Models"
+01498: 169  getprop "AdInfo"
+01503: 169  initprop "class"
+01508: 170  name "xs"
+01513: 170  getprop "Constant_GD_MgrType_SingletonType"
+01518: 170  initprop "mgrType"
+01523: 171  name "xs"
+01528: 171  getprop "Constant_Notify_ModelChange_AD"
+01533: 171  initprop "notifyName"
+01538: 172  string ""
+01543: 172  initprop "sortChangeNotifyName"
+01548: 173  newarray 0
+01552: 173  endinit
+01553: 173  initprop "indexProperty"
+01558: 174  string "m_adInfo_index"
+01563: 174  initprop "indexName"
+01568: 174  endinit
+01569: 174  initelem_array 12
+01573: 177  newinit 1
+01578: 178  string "m_union"
+01583: 178  initprop "propertyName"
+01588: 179  string "union_info"
+01593: 179  initprop "key"
+01598: 180  name "xs"
+01603: 180  getprop "Models"
+01608: 180  getprop "Union"
+01613: 180  initprop "class"
+01618: 181  name "xs"
+01623: 181  getprop "Constant_GD_MgrType_SingletonType"
+01628: 181  initprop "mgrType"
+01633: 182  name "xs"
+01638: 182  getprop "Constant_Notify_ModelChange_UnionInfo"
+01643: 182  initprop "notifyName"
+01648: 183  string ""
+01653: 183  initprop "sortChangeNotifyName"
+01658: 184  newarray 0
+01662: 184  endinit
+01663: 184  initprop "indexProperty"
+01668: 185  string "m_union_index"
+01673: 185  initprop "indexName"
+01678: 185  endinit
+01679: 185  initelem_array 13
+01683: 188  newinit 1
+01688: 189  string "m_buddy_general"
+01693: 189  initprop "propertyName"
+01698: 190  string "buddy_info"
+01703: 190  initprop "key"
+01708: 191  name "xs"
+01713: 191  getprop "Models"
+01718: 191  getprop "BuddyGeneral"
+01723: 191  initprop "class"
+01728: 192  name "xs"
+01733: 192  getprop "Constant_GD_MgrType_ReplaceType"
+01738: 192  initprop "mgrType"
+01743: 193  name "xs"
+01748: 193  getprop "Constant_Notify_ModelChange_BuddyGeneral"
+01753: 193  initprop "notifyName"
+01758: 194  name "xs"
+01763: 194  getprop "Constant_Notify_ModelChange_Buddy_SortChange"
+01768: 194  initprop "sortChangeNotifyName"
+01773: 195  newarray 0
+01777: 195  endinit
+01778: 195  initprop "indexProperty"
+01783: 196  string "m_buddy_general_index"
+01788: 196  initprop "indexName"
+01793: 196  endinit
+01794: 196  initelem_array 14
+01798: 199  newinit 1
+01803: 200  string "m_unionWar"
+01808: 200  initprop "propertyName"
+01813: 201  string "unionWar"
+01818: 201  initprop "key"
+01823: 202  name "xs"
+01828: 202  getprop "Models"
+01833: 202  getprop "UnionWar"
+01838: 202  initprop "class"
+01843: 203  name "xs"
+01848: 203  getprop "Constant_GD_MgrType_SingletonType"
+01853: 203  initprop "mgrType"
+01858: 204  name "xs"
+01863: 204  getprop "Constant_Notify_ModelChange_UnionWar"
+01868: 204  initprop "notifyName"
+01873: 205  string ""
+01878: 205  initprop "sortChangeNotifyName"
+01883: 206  newarray 0
+01887: 206  endinit
+01888: 206  initprop "indexProperty"
+01893: 207  string "m_unionWar_index"
+01898: 207  initprop "indexName"
+01903: 207  endinit
+01904: 207  initelem_array 15
+01908: 210  newinit 1
+01913: 211  string "m_gem"
+01918: 211  initprop "propertyName"
+01923: 212  string "gem_info"
+01928: 212  initprop "key"
+01933: 213  name "xs"
+01938: 213  getprop "Models"
+01943: 213  getprop "Gems"
+01948: 213  initprop "class"
+01953: 214  name "xs"
+01958: 214  getprop "Constant_GD_MgrType_MapType"
+01963: 214  initprop "mgrType"
+01968: 215  name "xs"
+01973: 215  getprop "Constant_Notify_ModelChange_Gem"
+01978: 215  initprop "notifyName"
+01983: 216  name "xs"
+01988: 216  getprop "Constant_Notify_ModelChange_Gems_SortChange"
+01993: 216  initprop "sortChangeNotifyName"
+01998: 217  newarray 0
+02002: 217  endinit
+02003: 217  initprop "indexProperty"
+02008: 218  string "m_gem_index"
+02013: 218  initprop "indexName"
+02018: 218  endinit
+02019: 218  initelem_array 16
+02023: 222  newinit 1
+02028: 223  string "m_magicalEqus"
+02033: 223  initprop "propertyName"
+02038: 224  string "magic_info"
+02043: 224  initprop "key"
+02048: 225  name "xs"
+02053: 225  getprop "Models"
+02058: 225  getprop "MagicalEqu"
+02063: 225  initprop "class"
+02068: 226  name "xs"
+02073: 226  getprop "Constant_GD_MgrType_MapType"
+02078: 226  initprop "mgrType"
+02083: 227  name "xs"
+02088: 227  getprop "Constant_Notify_ModelChange_MagicalEqu"
+02093: 227  initprop "notifyName"
+02098: 228  name "xs"
+02103: 228  getprop "Constant_Notify_ModelChange_MagicalEqus_SortChange"
+02108: 228  initprop "sortChangeNotifyName"
+02113: 229  newarray 0
+02117: 229  endinit
+02118: 229  initprop "indexProperty"
+02123: 230  string "m_magicalEqu_index"
+02128: 230  initprop "indexName"
+02133: 230  endinit
+02134: 230  initelem_array 17
+02138: 233  newinit 1
+02143: 234  string "m_goddess"
+02148: 234  initprop "propertyName"
+02153: 235  string "godness_info"
+02158: 235  initprop "key"
+02163: 236  name "xs"
+02168: 236  getprop "Models"
+02173: 236  getprop "Goddess"
+02178: 236  initprop "class"
+02183: 237  name "xs"
+02188: 237  getprop "Constant_GD_MgrType_MapType"
+02193: 237  initprop "mgrType"
+02198: 238  name "xs"
+02203: 238  getprop "Constant_Notify_ModelChange_Goddess"
+02208: 238  initprop "notifyName"
+02213: 239  name "xs"
+02218: 239  getprop "Constant_Notify_ModelChange_Goddess_SortChange"
+02223: 239  initprop "sortChangeNotifyName"
+02228: 240  newarray 0
+02232: 240  endinit
+02233: 240  initprop "indexProperty"
+02238: 241  string "m_goddess_index"
+02243: 241  initprop "indexName"
+02248: 241  endinit
+02249: 241  initelem_array 18
+02253: 244  newinit 1
+02258: 245  string "m_meridianTop"
+02263: 245  initprop "propertyName"
+02268: 246  string "meridian_info"
+02273: 246  initprop "key"
+02278: 247  name "xs"
+02283: 247  getprop "Models"
+02288: 247  getprop "MeridianTop"
+02293: 247  initprop "class"
+02298: 248  name "xs"
+02303: 248  getprop "Constant_GD_MgrType_MapType"
+02308: 248  initprop "mgrType"
+02313: 249  name "xs"
+02318: 249  getprop "Constant_Notify_ModelChange_MeridianTop"
+02323: 249  initprop "notifyName"
+02328: 250  name "xs"
+02333: 250  getprop "Constant_Notify_ModelChange_MeridianTop_SortChange"
+02338: 250  initprop "sortChangeNotifyName"
+02343: 251  newarray 0
+02347: 251  endinit
+02348: 251  initprop "indexProperty"
+02353: 252  string "m_meridianTop_index"
+02358: 252  initprop "indexName"
+02363: 252  endinit
+02364: 252  initelem_array 19
+02368: 254  newinit 1
+02373: 255  string "m_evolutionInfo"
+02378: 255  initprop "propertyName"
+02383: 256  string "evolution_info"
+02388: 256  initprop "key"
+02393: 257  name "xs"
+02398: 257  getprop "Models"
+02403: 257  getprop "EvolutionInfo"
+02408: 257  initprop "class"
+02413: 258  name "xs"
+02418: 258  getprop "Constant_GD_MgrType_MapType"
+02423: 258  initprop "mgrType"
+02428: 259  name "xs"
+02433: 259  getprop "Constant_Notify_ModelChange_Evolution"
+02438: 259  initprop "notifyName"
+02443: 260  name "xs"
+02448: 260  getprop "Constant_Notify_ModelChange_Evolution_SortChange"
+02453: 260  initprop "sortChangeNotifyName"
+02458: 261  newarray 0
+02462: 261  endinit
+02463: 261  initprop "indexProperty"
+02468: 262  string "m_evolutionInfo_index"
+02473: 262  initprop "indexName"
+02478: 262  endinit
+02479: 262  initelem_array 20
+02483: 262  endinit
+02484: 262  initprop "dataDescs"
+02489: 262  endinit
+02490: 262  initprop "Cfg"
+02495: 268  lambda (function () {
+    [sourceless code]
+})
+02500: 268  initprop "getDataDescByNameType"
+02505: 275  lambda (function () {
+    [sourceless code]
+})
+02510: 275  initprop "getDataByNameType"
+02515: 280  lambda (function () {
+    [sourceless code]
+})
+02520: 280  initprop "init"
+02525: 318  lambda (function () {
+    [sourceless code]
+})
+02530: 318  initprop "updateRespData"
+02535: 376  lambda (function () {
+    [sourceless code]
+})
+02540: 376  initprop "updateOtherData"
+02545: 463  lambda (function () {
+    [sourceless code]
+})
+02550: 463  initprop "updateCmnData"
+02555: 653  lambda (function () {
+    [sourceless code]
+})
+02560: 653  initprop "clearGeneralSoulCache"
+02565: 663  lambda (function () {
+    [sourceless code]
+})
+02570: 663  initprop "setItemStatus"
+02575: 670  lambda (function () {
+    [sourceless code]
+})
+02580: 670  initprop "getModelByTypeAndPkId"
+02585: 690  lambda (function () {
+    [sourceless code]
+})
+02590: 690  initprop "getModelsByTypeAndFilter"
+02595: 725  lambda (function () {
+    [sourceless code]
+})
+02600: 725  initprop "getModelsByTypeAndIndex"
+02605: 748  lambda (function () {
+    [sourceless code]
+})
+02610: 748  initprop "refreshCacheDataEveryDay"
+02615: 754  lambda (function () {
+    [sourceless code]
+})
+02620: 754  initprop "getNotifyCenter"
+02625: 760  lambda (function () {
+    [sourceless code]
+})
+02630: 760  initprop "_firstTimeInitCmnData"
+02635: 760  endinit
+02636: 760  notearg
+02637: 760  call 1
+02640: 760  setprop "GameData"
+02645: 760  popv
+02646: 767  name "xs"
+02651: 767  getprop "Profile"
+02656: 767  getprop "GameData"
+02661: 767  lambda (function () {
+    [sourceless code]
+})
+02666: 767  setprop "create"
+02671: 767  popv
+02672: 775  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:1 ---
+;; function object[0] getDataDescByNameType
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] nameType
+;; local[0] _dataDesc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:268 ---
+loc   line  op
+----- ----  --
+main:
+00000: 269  this
+00001: 269  getprop "Cfg"
+00006: 269  getprop "dataDescs"
+00011: 269  getarg 0
+00014: 269  getelem
+00015: 269  setlocal 0
+00018: 269  pop
+00019: 271  getlocal 0
+00022: 271  return
+00023: 271  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:268 ---
+;; function object[1] getDataByNameType
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] nameType
+;; local[0] _dataDesc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:275 ---
+loc   line  op
+----- ----  --
+main:
+00000: 276  this
+00001: 276  dup
+00002: 276  callprop "getDataDescByNameType"
+00007: 276  swap
+00008: 276  notearg
+00009: 276  getarg 0
+00012: 276  notearg
+00013: 276  call 1
+00016: 276  setlocal 0
+00019: 276  pop
+00020: 277  this
+00021: 277  getprop "private"
+00026: 277  getlocal 0
+00029: 277  getprop "propertyName"
+00034: 277  getelem
+00035: 277  return
+00036: 277  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:275 ---
+;; function object[2] init
+;; function metadata object[2] nargs=1 bindings=4
+;; arg[0] isNotify
+;; local[0] _dataDescs
+;; local[1] i
+;; local[2] _desc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:280 ---
+loc   line  op
+----- ----  --
+main:
+00000: 283  this
+00001: 283  true
+00002: 283  setprop "isFirstTimeInitCmnData"
+00007: 283  pop
+00008: 285  this
+00009: 285  newinit 1
+00014: 285  endinit
+00015: 285  setprop "private"
+00020: 285  pop
+00021: 287  this
+00022: 287  getarg 0
+00025: 287  or 32 (+7)
+00030: 287  pop
+00031: 287  false
+00032: 287  setprop "_isNotify"
+00037: 287  pop
+00038: 290  this
+00039: 290  null
+00040: 290  setprop "_notifyCenter"
+00045: 290  pop
+00046: 291  this
+00047: 291  name "xs"
+00052: 291  getprop "Utils"
+00057: 291  getprop "Notify"
+00062: 291  dup
+00063: 291  callprop "create"
+00068: 291  swap
+00069: 291  notearg
+00070: 291  call 0
+00073: 291  setprop "_notifyCenter"
+00078: 291  pop
+00079: 293  this
+00080: 293  getprop "Cfg"
+00085: 293  getprop "dataDescs"
+00090: 293  or 101 (+11)
+00095: 293  pop
+00096: 293  newarray 0
+00100: 293  endinit
+00101: 293  setlocal 0
+00104: 293  pop
+00105: 295  zero
+00106: 295  setlocal 1
+00109: 295  pop
+00110: 295  goto 413 (+303)
+00115: 296  loophead
+00116: 296  getlocal 0
+00119: 296  getlocal 1
+00122: 296  getelem
+00123: 296  setlocal 2
+00126: 296  pop
+00127: 299  getlocal 2
+00130: 299  getprop "mgrType"
+00135: 299  name "xs"
+00140: 299  getprop "Constant_GD_MgrType_MapType"
+00145: 299  stricteq
+00146: 299  ifeq 240 (+94)
+00151: 300  this
+00152: 300  getprop "private"
+00157: 300  getlocal 2
+00160: 300  getprop "propertyName"
+00165: 300  newinit 1
+00170: 300  endinit
+00171: 300  setelem
+00172: 300  pop
+00173: 301  this
+00174: 301  getprop "private"
+00179: 301  getlocal 2
+00182: 301  getprop "indexName"
+00187: 301  name "xs"
+00192: 301  getprop "Profile"
+00197: 301  getprop "GameData"
+00202: 301  getprop "Index"
+00207: 301  getprop "create"
+00212: 301  undefined
+00213: 301  notearg
+00214: 301  this
+00215: 301  getprop "private"
+00220: 301  getlocal 2
+00223: 301  getprop "propertyName"
+00228: 301  getelem
+00229: 301  notearg
+00230: 301  new 1
+00233: 301  setelem
+00234: 301  pop
+00235: 301  goto 398 (+163)
+00240: 302  getlocal 2
+00243: 302  getprop "mgrType"
+00248: 302  name "xs"
+00253: 302  getprop "Constant_GD_MgrType_SingletonType"
+00258: 302  stricteq
+00259: 302  ifeq 325 (+66)
+00264: 303  this
+00265: 303  getprop "private"
+00270: 303  getlocal 2
+00273: 303  getprop "propertyName"
+00278: 303  getlocal 2
+00281: 303  getprop "class"
+00286: 303  undefined
+00287: 303  notearg
+00288: 303  new 0
+00291: 303  setelem
+00292: 303  pop
+00293: 304  this
+00294: 304  getprop "private"
+00299: 304  getlocal 2
+00302: 304  getprop "propertyName"
+00307: 304  getelem
+00308: 304  dup
+00309: 304  callprop "init"
+00314: 304  swap
+00315: 304  notearg
+00316: 304  call 0
+00319: 304  pop
+00320: 304  goto 398 (+78)
+00325: 306  getlocal 2
+00328: 306  getprop "mgrType"
+00333: 306  name "xs"
+00338: 306  getprop "Constant_GD_MgrType_ReplaceType"
+00343: 306  stricteq
+00344: 306  ifeq 375 (+31)
+00349: 307  this
+00350: 307  getprop "private"
+00355: 307  getlocal 2
+00358: 307  getprop "propertyName"
+00363: 307  newarray 0
+00367: 307  endinit
+00368: 307  setelem
+00369: 307  pop
+00370: 307  goto 398 (+28)
+00375: 309  this
+00376: 309  dup
+00377: 309  callprop "error"
+00382: 309  swap
+00383: 309  notearg
+00384: 309  string "_desc.mgrType err"
+00389: 309  notearg
+00390: 309  getlocal 2
+00393: 309  notearg
+00394: 309  call 2
+00397: 309  pop
+00398: 295  localinc 11
+00401: 295  getlocal 1
+00404: 295  pos
+00405: 295  dup
+00406: 295  one
+00407: 295  add
+00408: 295  setlocal 1
+00411: 295  pop
+00412: 295  pop
+00413: 295  loopentry
+00414: 295  getlocal 1
+00417: 295  getlocal 0
+00420: 295  length "length"
+00425: 295  lt
+00426: 295  ifne 115 (-311)
+00431: 313  true
+00432: 313  return
+00433: 313  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:280 ---
+;; function object[3] updateRespData
+;; function metadata object[3] nargs=1 bindings=5
+;; arg[0] jsonResp
+;; local[0] _jsonResp
+;; local[1] _notifyNames
+;; local[2] i
+;; local[3] _modelMap
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:318 ---
+loc   line  op
+----- ----  --
+main:
+00000: 319  getarg 0
+00003: 319  or 15 (+12)
+00008: 319  pop
+00009: 319  newinit 1
+00014: 319  endinit
+00015: 319  setlocal 0
+00018: 319  pop
+00019: 362  this
+00020: 362  dup
+00021: 362  callprop "refreshCacheDataEveryDay"
+00026: 362  swap
+00027: 362  notearg
+00028: 362  getlocal 0
+00031: 362  getprop "refresh_info"
+00036: 362  notearg
+00037: 362  call 1
+00040: 362  pop
+00041: 363  this
+00042: 363  dup
+00043: 363  callprop "updateCmnData"
+00048: 363  swap
+00049: 363  notearg
+00050: 363  getlocal 0
+00053: 363  getprop "cmn"
+00058: 363  or 70 (+12)
+00063: 363  pop
+00064: 363  newinit 1
+00069: 363  endinit
+00070: 363  notearg
+00071: 363  call 1
+00074: 363  setlocal 1
+00077: 363  pop
+00078: 366  zero
+00079: 366  setlocal 2
+00082: 366  pop
+00083: 366  goto 139 (+56)
+00088: 368  loophead
+00089: 368  name "xs"
+00094: 368  getprop "Utils"
+00099: 368  getprop "Notify"
+00104: 368  dup
+00105: 368  callprop "postNotification"
+00110: 368  swap
+00111: 368  notearg
+00112: 368  getlocal 1
+00115: 368  getlocal 2
+00118: 368  getelem
+00119: 368  notearg
+00120: 368  call 1
+00123: 368  pop
+00124: 366  localinc 11
+00127: 366  getlocal 2
+00130: 366  pos
+00131: 366  dup
+00132: 366  one
+00133: 366  add
+00134: 366  setlocal 2
+00137: 366  pop
+00138: 366  pop
+00139: 366  loopentry
+00140: 366  getlocal 2
+00143: 366  getlocal 1
+00146: 366  length "length"
+00151: 366  lt
+00152: 366  ifne 88 (-64)
+00157: 371  this
+00158: 371  dup
+00159: 371  callprop "updateOtherData"
+00164: 371  swap
+00165: 371  notearg
+00166: 371  getlocal 0
+00169: 371  or 181 (+12)
+00174: 371  pop
+00175: 371  newinit 1
+00180: 371  endinit
+00181: 371  notearg
+00182: 371  call 1
+00185: 371  setlocal 3
+00188: 371  pop
+00189: 372  getlocal 3
+00192: 372  return
+00193: 372  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:318 ---
+;; function object[4] updateOtherData
+;; function metadata object[4] nargs=1 bindings=7
+;; arg[0] jsonResp
+;; local[0] _rs_obj
+;; local[1] _model
+;; local[2] player
+;; local[3] userInfoArgs
+;; local[4] _meeting_info
+;; local[5] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:376 ---
+loc   line  op
+----- ----  --
+main:
+00000: 380  newinit 1
+00005: 380  endinit
+00006: 380  setlocal 0
+00009: 380  pop
+00010: 381  getlocal 0
+00013: 381  newarray 0
+00017: 381  endinit
+00018: 381  setprop "RandEvent"
+00023: 381  pop
+00024: 384  name "xs"
+00029: 384  getprop "Guide"
+00034: 384  getprop "GuideMgr"
+00039: 384  dup
+00040: 384  callprop "getIsOver"
+00045: 384  swap
+00046: 384  notearg
+00047: 384  call 0
+00050: 384  not
+00051: 384  ifeq 60 (+9)
+00056: 385  getlocal 0
+00059: 385  return
+00060: 389  name "xs"
+00065: 389  getprop "Utils"
+00070: 389  dup
+00071: 389  callprop "isEmpty"
+00076: 389  swap
+00077: 389  notearg
+00078: 389  getarg 0
+00081: 389  getprop "user_level_up_info"
+00086: 389  notearg
+00087: 389  call 1
+00090: 389  not
+00091: 389  ifeq 459 (+368)
+00096: 390  name "xs"
+00101: 390  getprop "Models"
+00106: 390  getprop "TmpInfo"
+00111: 390  getprop "UsrUpgrade"
+00116: 390  dup
+00117: 390  callprop "createWithJson"
+00122: 390  swap
+00123: 390  notearg
+00124: 390  getarg 0
+00127: 390  getprop "user_level_up_info"
+00132: 390  notearg
+00133: 390  call 1
+00136: 390  setlocal 1
+00139: 390  pop
+00140: 391  getlocal 0
+00143: 391  getprop "RandEvent"
+00148: 391  dup
+00149: 391  callprop "push"
+00154: 391  swap
+00155: 391  notearg
+00156: 391  newinit 1
+00161: 392  name "xs"
+00166: 392  getprop "Constant_RandEvent_upGrade"
+00171: 392  initprop "type"
+00176: 393  getlocal 1
+00179: 393  initprop "model"
+00184: 393  endinit
+00185: 393  notearg
+00186: 393  call 1
+00189: 393  pop
+00190: 397  name "xs"
+00195: 397  getprop "Profile"
+00200: 397  getprop "GameData"
+00205: 397  getprop "Mgr"
+00210: 397  dup
+00211: 397  callprop "getInstance"
+00216: 397  swap
+00217: 397  notearg
+00218: 397  call 0
+00221: 397  getprop "Player"
+00226: 397  dup
+00227: 397  callprop "getPlayer"
+00232: 397  swap
+00233: 397  notearg
+00234: 397  call 0
+00237: 397  setlocal 2
+00240: 397  pop
+00241: 398  getlocal 2
+00244: 398  dup
+00245: 398  callprop "getPlayerId"
+00250: 398  swap
+00251: 398  notearg
+00252: 398  call 0
+00255: 398  string "|"
+00260: 398  add
+00261: 399  getlocal 2
+00264: 399  dup
+00265: 399  callprop "getPlayerName"
+00270: 399  swap
+00271: 399  notearg
+00272: 399  call 0
+00275: 399  add
+00276: 399  string "|"
+00281: 399  add
+00282: 400  getlocal 2
+00285: 400  dup
+00286: 400  callprop "getPlayerLevel"
+00291: 400  swap
+00292: 400  notearg
+00293: 400  call 0
+00296: 400  add
+00297: 400  string "|"
+00302: 400  add
+00303: 401  name "xs"
+00308: 401  getprop "Profile"
+00313: 401  getprop "UserCfg"
+00318: 401  dup
+00319: 401  callprop "getGameAddr"
+00324: 401  swap
+00325: 401  notearg
+00326: 401  call 0
+00329: 401  getprop "id"
+00334: 401  add
+00335: 401  string "|"
+00340: 401  add
+00341: 402  name "xs"
+00346: 402  getprop "Profile"
+00351: 402  getprop "UserCfg"
+00356: 402  dup
+00357: 402  callprop "getGameAddr"
+00362: 402  swap
+00363: 402  notearg
+00364: 402  call 0
+00367: 402  getprop "name"
+00372: 402  add
+00373: 402  string "|"
+00378: 402  add
+00379: 403  string "levelUp"
+00384: 403  add
+00385: 403  string "|"
+00390: 403  add
+00391: 404  getlocal 2
+00394: 404  dup
+00395: 404  callprop "getPlayerVipLevel"
+00400: 404  swap
+00401: 404  notearg
+00402: 404  call 0
+00405: 404  add
+00406: 404  setlocal 3
+00409: 404  pop
+00410: 405  name "xs"
+00415: 405  getprop "JsbConnecter"
+00420: 405  dup
+00421: 405  callprop "getInstance"
+00426: 405  swap
+00427: 405  notearg
+00428: 405  call 0
+00431: 405  dup
+00432: 405  callprop "invoke"
+00437: 405  swap
+00438: 405  notearg
+00439: 405  string "UserInfo"
+00444: 405  notearg
+00445: 405  string ""
+00450: 405  notearg
+00451: 405  getlocal 3
+00454: 405  notearg
+00455: 405  call 3
+00458: 405  pop
+00459: 410  name "xs"
+00464: 410  getprop "Utils"
+00469: 410  dup
+00470: 410  callprop "isEmpty"
+00475: 410  swap
+00476: 410  notearg
+00477: 410  getarg 0
+00480: 410  getprop "meeting_info"
+00485: 410  notearg
+00486: 410  call 1
+00489: 410  not
+00490: 410  ifeq 644 (+154)
+00495: 411  getarg 0
+00498: 411  getprop "meeting_info"
+00503: 411  setlocal 4
+00506: 411  pop
+00507: 412  zero
+00508: 412  setlocal 5
+00511: 412  pop
+00512: 412  goto 626 (+114)
+00517: 413  loophead
+00518: 413  name "xs"
+00523: 413  getprop "Models"
+00528: 413  getprop "TmpInfo"
+00533: 413  getprop "Adventure"
+00538: 413  dup
+00539: 413  callprop "createWithJson"
+00544: 413  swap
+00545: 413  notearg
+00546: 413  getlocal 4
+00549: 413  getlocal 5
+00552: 413  getelem
+00553: 413  notearg
+00554: 413  call 1
+00557: 413  setlocal 1
+00560: 413  pop
+00561: 414  getlocal 0
+00564: 414  getprop "RandEvent"
+00569: 414  dup
+00570: 414  callprop "push"
+00575: 414  swap
+00576: 414  notearg
+00577: 414  newinit 1
+00582: 415  name "xs"
+00587: 415  getprop "Constant_RandEvent_adventure"
+00592: 415  initprop "type"
+00597: 416  getlocal 1
+00600: 416  initprop "model"
+00605: 416  endinit
+00606: 416  notearg
+00607: 416  call 1
+00610: 416  pop
+00611: 412  localinc 11
+00614: 412  getlocal 5
+00617: 412  pos
+00618: 412  dup
+00619: 412  one
+00620: 412  add
+00621: 412  setlocal 5
+00624: 412  pop
+00625: 412  pop
+00626: 412  loopentry
+00627: 412  getlocal 5
+00630: 412  getlocal 4
+00633: 412  length "length"
+00638: 412  lt
+00639: 412  ifne 517 (-122)
+00644: 423  name "xs"
+00649: 423  getprop "Utils"
+00654: 423  dup
+00655: 423  callprop "isEmpty"
+00660: 423  swap
+00661: 423  notearg
+00662: 423  getarg 0
+00665: 423  getprop "surrender_info"
+00670: 423  notearg
+00671: 423  call 1
+00674: 423  not
+00675: 423  ifeq 919 (+244)
+00680: 425  name "xs"
+00685: 425  getprop "Models"
+00690: 425  getprop "TmpInfo"
+00695: 425  getprop "Achieve"
+00700: 425  dup
+00701: 425  callprop "loadData"
+00706: 425  swap
+00707: 425  notearg
+00708: 425  getarg 0
+00711: 425  getprop "surrender_info"
+00716: 425  notearg
+00717: 425  call 1
+00720: 425  setlocal 1
+00723: 425  pop
+00724: 426  zero
+00725: 426  setlocal 5
+00728: 426  pop
+00729: 426  goto 901 (+172)
+00734: 427  loophead
+00735: 427  getlocal 0
+00738: 427  getprop "RandEvent"
+00743: 427  dup
+00744: 427  callprop "push"
+00749: 427  swap
+00750: 427  notearg
+00751: 427  newinit 1
+00756: 428  name "xs"
+00761: 428  getprop "Constant_RandEvent_achieve_new"
+00766: 428  initprop "type"
+00771: 429  getlocal 1
+00774: 429  getlocal 5
+00777: 429  getelem
+00778: 429  initprop "model"
+00783: 429  endinit
+00784: 429  notearg
+00785: 429  call 1
+00788: 429  pop
+00789: 431  zero
+00790: 431  getlocal 1
+00793: 431  getlocal 5
+00796: 431  getelem
+00797: 431  getprop "all_status"
+00802: 431  ne
+00803: 431  and 827 (+24)
+00808: 431  pop
+00809: 431  getlocal 1
+00812: 431  getlocal 5
+00815: 431  getelem
+00816: 431  dup
+00817: 431  callprop "getGeneralReceive"
+00822: 431  swap
+00823: 431  notearg
+00824: 431  call 0
+00827: 431  ifeq 886 (+59)
+00832: 432  getlocal 0
+00835: 432  getprop "RandEvent"
+00840: 432  dup
+00841: 432  callprop "push"
+00846: 432  swap
+00847: 432  notearg
+00848: 432  newinit 1
+00853: 433  name "xs"
+00858: 433  getprop "Constant_RandEvent_achieve"
+00863: 433  initprop "type"
+00868: 434  getlocal 1
+00871: 434  getlocal 5
+00874: 434  getelem
+00875: 434  initprop "model"
+00880: 434  endinit
+00881: 434  notearg
+00882: 434  call 1
+00885: 434  pop
+00886: 426  localinc 11
+00889: 426  getlocal 5
+00892: 426  pos
+00893: 426  dup
+00894: 426  one
+00895: 426  add
+00896: 426  setlocal 5
+00899: 426  pop
+00900: 426  pop
+00901: 426  loopentry
+00902: 426  getlocal 5
+00905: 426  getlocal 1
+00908: 426  length "length"
+00913: 426  lt
+00914: 426  ifne 734 (-180)
+00919: 441  name "xs"
+00924: 441  getprop "Utils"
+00929: 441  dup
+00930: 441  callprop "isEmpty"
+00935: 441  swap
+00936: 441  notearg
+00937: 441  getarg 0
+00940: 441  getprop "surrender_info"
+00945: 441  notearg
+00946: 441  call 1
+00949: 441  not
+00950: 441  ifeq 1194 (+244)
+00955: 443  name "xs"
+00960: 443  getprop "Models"
+00965: 443  getprop "TmpInfo"
+00970: 443  getprop "Achieve"
+00975: 443  dup
+00976: 443  callprop "loadDataAwake"
+00981: 443  swap
+00982: 443  notearg
+00983: 443  getarg 0
+00986: 443  getprop "surrender_info"
+00991: 443  notearg
+00992: 443  call 1
+00995: 443  setlocal 1
+00998: 443  pop
+00999: 444  zero
+01000: 444  setlocal 5
+01003: 444  pop
+01004: 444  goto 1176 (+172)
+01009: 445  loophead
+01010: 445  getlocal 0
+01013: 445  getprop "RandEvent"
+01018: 445  dup
+01019: 445  callprop "push"
+01024: 445  swap
+01025: 445  notearg
+01026: 445  newinit 1
+01031: 446  name "xs"
+01036: 446  getprop "Constant_RandEvent_achieve_new"
+01041: 446  initprop "type"
+01046: 447  getlocal 1
+01049: 447  getlocal 5
+01052: 447  getelem
+01053: 447  initprop "model"
+01058: 447  endinit
+01059: 447  notearg
+01060: 447  call 1
+01063: 447  pop
+01064: 449  zero
+01065: 449  getlocal 1
+01068: 449  getlocal 5
+01071: 449  getelem
+01072: 449  getprop "all_status"
+01077: 449  ne
+01078: 449  and 1102 (+24)
+01083: 449  pop
+01084: 449  getlocal 1
+01087: 449  getlocal 5
+01090: 449  getelem
+01091: 449  dup
+01092: 449  callprop "getGeneralReceive"
+01097: 449  swap
+01098: 449  notearg
+01099: 449  call 0
+01102: 449  ifeq 1161 (+59)
+01107: 450  getlocal 0
+01110: 450  getprop "RandEvent"
+01115: 450  dup
+01116: 450  callprop "push"
+01121: 450  swap
+01122: 450  notearg
+01123: 450  newinit 1
+01128: 451  name "xs"
+01133: 451  getprop "Constant_RandEvent_achieve"
+01138: 451  initprop "type"
+01143: 452  getlocal 1
+01146: 452  getlocal 5
+01149: 452  getelem
+01150: 452  initprop "model"
+01155: 452  endinit
+01156: 452  notearg
+01157: 452  call 1
+01160: 452  pop
+01161: 444  localinc 11
+01164: 444  getlocal 5
+01167: 444  pos
+01168: 444  dup
+01169: 444  one
+01170: 444  add
+01171: 444  setlocal 5
+01174: 444  pop
+01175: 444  pop
+01176: 444  loopentry
+01177: 444  getlocal 5
+01180: 444  getlocal 1
+01183: 444  length "length"
+01188: 444  lt
+01189: 444  ifne 1009 (-180)
+01194: 458  getlocal 0
+01197: 458  return
+01198: 458  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:376 ---
+;; function object[5] updateCmnData
+;; function metadata object[5] nargs=1 bindings=20
+;; arg[0] jsonCmn
+;; local[0] _notifyNames
+;; local[1] _dataDescs
+;; local[2] i
+;; local[3] _desc
+;; local[4] _info
+;; local[5] _isDataChange
+;; local[6] _isItemIncrease
+;; local[7] _class
+;; local[8] _del_list
+;; local[9] _up_list
+;; local[10] _notify_params
+;; local[11] j
+;; local[12] _del
+;; local[13] _objMap
+;; local[14] _up
+;; local[15] _model
+;; local[16] _item_num_old
+;; local[17] _item_num_new
+;; local[18] _modelArray
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:463 ---
+loc   line  op
+----- ----  --
+main:
+00000: 467  getarg 0
+00003: 467  getprop "general_skin"
+00008: 467  ifeq 32 (+24)
+00013: 467  name "xs"
+00018: 467  getarg 0
+00021: 467  getprop "general_skin"
+00026: 467  setprop "player_skin"
+00031: 467  pop
+00032: 468  getarg 0
+00035: 468  getprop "server_version"
+00040: 468  ifeq 64 (+24)
+00045: 468  name "xs"
+00050: 468  getarg 0
+00053: 468  getprop "server_version"
+00058: 468  setprop "sinfo_game_ver"
+00063: 468  pop
+00064: 469  getarg 0
+00067: 469  getprop "cfg_version"
+00072: 469  ifeq 96 (+24)
+00077: 469  name "xs"
+00082: 469  getarg 0
+00085: 469  getprop "cfg_version"
+00090: 469  setprop "sinfo_cfg_ver"
+00095: 469  pop
+00096: 470  getarg 0
+00099: 470  getprop "opt_cfg_version"
+00104: 470  ifeq 128 (+24)
+00109: 470  name "xs"
+00114: 470  getarg 0
+00117: 470  getprop "opt_cfg_version"
+00122: 470  setprop "sinfo_optcfg_ver"
+00127: 470  pop
+00128: 471  getarg 0
+00131: 471  getprop "server_time"
+00136: 471  ifeq 196 (+60)
+00141: 472  name "xs"
+00146: 472  getarg 0
+00149: 472  getprop "server_time"
+00154: 472  setprop "sinfo_server_time"
+00159: 472  pop
+00160: 473  name "xs"
+00165: 473  name "Date"
+00170: 473  undefined
+00171: 473  notearg
+00172: 473  new 0
+00175: 473  dup
+00176: 473  callprop "getTime"
+00181: 473  swap
+00182: 473  notearg
+00183: 473  call 0
+00186: 473  uint16 1000
+00189: 473  div
+00190: 473  setprop "sinfo_local_time"
+00195: 473  pop
+00196: 477  name "xs"
+00201: 477  getprop "Utils"
+00206: 477  dup
+00207: 477  callprop "isSet"
+00212: 477  swap
+00213: 477  notearg
+00214: 477  getarg 0
+00217: 477  getprop "offset_time"
+00222: 477  notearg
+00223: 477  call 1
+00226: 477  ifeq 259 (+33)
+00231: 478  name "xs"
+00236: 478  getarg 0
+00239: 478  getprop "offset_time"
+00244: 478  uint16 1000
+00247: 478  mul
+00248: 478  setprop "sinfo_offset_time"
+00253: 478  pop
+00254: 478  goto 275 (+21)
+00259: 480  name "xs"
+00264: 480  int32 28800000
+00269: 480  setprop "sinfo_offset_time"
+00274: 480  pop
+00275: 483  newarray 0
+00279: 483  endinit
+00280: 483  setlocal 0
+00283: 483  pop
+00284: 486  this
+00285: 486  getprop "Cfg"
+00290: 486  getprop "dataDescs"
+00295: 486  or 306 (+11)
+00300: 486  pop
+00301: 486  newarray 0
+00305: 486  endinit
+00306: 486  setlocal 1
+00309: 486  pop
+00310: 487  zero
+00311: 487  setlocal 2
+00314: 487  pop
+00315: 487  goto 2063 (+1748)
+00320: 488  loophead
+00321: 488  getlocal 1
+00324: 488  getlocal 2
+00327: 488  getelem
+00328: 488  setlocal 3
+00331: 488  pop
+00332: 492  getarg 0
+00335: 492  getlocal 3
+00338: 492  getprop "key"
+00343: 492  getelem
+00344: 492  setlocal 4
+00347: 492  pop
+00348: 493  getlocal 4
+00351: 493  null
+00352: 493  stricteq
+00353: 493  or 368 (+15)
+00358: 493  pop
+00359: 493  getlocal 4
+00362: 493  name "undefined"
+00367: 493  stricteq
+00368: 493  ifeq 378 (+10)
+00373: 494  goto 2048 (+1675)
+00378: 497  false
+00379: 497  setlocal 5
+00382: 497  pop
+00383: 499  false
+00384: 499  setlocal 6
+00387: 499  pop
+00388: 501  getlocal 3
+00391: 501  getprop "class"
+00396: 501  setlocal 7
+00399: 501  pop
+00400: 503  getlocal 3
+00403: 503  getprop "mgrType"
+00408: 503  name "xs"
+00413: 503  getprop "Constant_GD_MgrType_MapType"
+00418: 503  stricteq
+00419: 503  ifeq 1721 (+1302)
+00424: 505  getlocal 4
+00427: 505  getprop "del_list"
+00432: 505  or 443 (+11)
+00437: 505  pop
+00438: 505  newarray 0
+00442: 505  endinit
+00443: 505  setlocal 8
+00446: 505  pop
+00447: 506  getlocal 4
+00450: 506  getprop "update_list"
+00455: 506  or 466 (+11)
+00460: 506  pop
+00461: 506  newarray 0
+00465: 506  endinit
+00466: 506  setlocal 9
+00469: 506  pop
+00470: 510  newinit 1
+00475: 511  newarray 0
+00479: 511  endinit
+00480: 511  initprop "del"
+00485: 512  newarray 0
+00489: 512  endinit
+00490: 512  initprop "add"
+00495: 513  newarray 0
+00499: 513  endinit
+00500: 513  initprop "upd"
+00505: 513  endinit
+00506: 513  setlocal 10
+00509: 513  pop
+00510: 516  getlocal 8
+00513: 516  length "length"
+00518: 516  zero
+00519: 516  gt
+00520: 516  or 536 (+16)
+00525: 516  pop
+00526: 516  getlocal 9
+00529: 516  length "length"
+00534: 516  zero
+00535: 516  gt
+00536: 516  ifeq 546 (+10)
+00541: 517  true
+00542: 517  setlocal 5
+00545: 517  pop
+00546: 521  zero
+00547: 521  setlocal 11
+00550: 521  pop
+00551: 521  goto 711 (+160)
+00556: 522  loophead
+00557: 522  getlocal 8
+00560: 522  getlocal 11
+00563: 522  getelem
+00564: 522  setlocal 12
+00567: 522  pop
+00568: 523  this
+00569: 523  getprop "private"
+00574: 523  getlocal 3
+00577: 523  getprop "propertyName"
+00582: 523  getelem
+00583: 523  setlocal 13
+00586: 523  pop
+00587: 524  this
+00588: 524  dup
+00589: 524  callprop "assert"
+00594: 524  swap
+00595: 524  notearg
+00596: 524  getlocal 13
+00599: 524  notearg
+00600: 524  string "need _objMap"
+00605: 524  notearg
+00606: 524  getlocal 13
+00609: 524  notearg
+00610: 524  call 3
+00613: 524  pop
+00614: 528  getlocal 3
+00617: 528  getprop "class"
+00622: 528  name "xs"
+00627: 528  getprop "Models"
+00632: 528  getprop "General"
+00637: 528  stricteq
+00638: 528  ifeq 664 (+26)
+00643: 529  this
+00644: 529  dup
+00645: 529  callprop "clearGeneralSoulCache"
+00650: 529  swap
+00651: 529  notearg
+00652: 529  getlocal 13
+00655: 529  getlocal 12
+00658: 529  getelem
+00659: 529  notearg
+00660: 529  call 1
+00663: 529  pop
+00664: 532  getlocal 10
+00667: 532  getprop "del"
+00672: 532  dup
+00673: 532  callprop "push"
+00678: 532  swap
+00679: 532  notearg
+00680: 532  getlocal 12
+00683: 532  notearg
+00684: 532  call 1
+00687: 532  pop
+00688: 534  getlocal 13
+00691: 534  getlocal 12
+00694: 534  delelem
+00695: 534  pop
+00696: 521  localinc 11
+00699: 521  getlocal 11
+00702: 521  pos
+00703: 521  dup
+00704: 521  one
+00705: 521  add
+00706: 521  setlocal 11
+00709: 521  pop
+00710: 521  pop
+00711: 521  loopentry
+00712: 521  getlocal 11
+00715: 521  getlocal 8
+00718: 521  length "length"
+00723: 521  lt
+00724: 521  ifne 556 (-168)
+00729: 538  zero
+00730: 538  setlocal 11
+00733: 538  pop
+00734: 538  goto 1579 (+845)
+00739: 539  loophead
+00740: 539  getlocal 9
+00743: 539  getlocal 11
+00746: 539  getelem
+00747: 539  setlocal 14
+00750: 539  pop
+00751: 540  this
+00752: 540  getprop "private"
+00757: 540  getlocal 3
+00760: 540  getprop "propertyName"
+00765: 540  getelem
+00766: 540  setlocal 13
+00769: 540  pop
+00770: 541  this
+00771: 541  dup
+00772: 541  callprop "assert"
+00777: 541  swap
+00778: 541  notearg
+00779: 541  getlocal 13
+00782: 541  notearg
+00783: 541  string "need _objMap"
+00788: 541  notearg
+00789: 541  getlocal 13
+00792: 541  notearg
+00793: 541  call 3
+00796: 541  pop
+00797: 543  getlocal 13
+00800: 543  getlocal 14
+00803: 543  getprop "pk_id"
+00808: 543  getelem
+00809: 543  null
+00810: 543  strictne
+00811: 543  and 835 (+24)
+00816: 543  pop
+00817: 543  getlocal 13
+00820: 543  getlocal 14
+00823: 543  getprop "pk_id"
+00828: 543  getelem
+00829: 543  name "undefined"
+00834: 543  strictne
+00835: 543  ifeq 1135 (+300)
+00840: 545  getlocal 13
+00843: 545  getlocal 14
+00846: 545  getprop "pk_id"
+00851: 545  getelem
+00852: 545  setlocal 15
+00855: 545  pop
+00856: 548  getlocal 3
+00859: 548  getprop "class"
+00864: 548  name "xs"
+00869: 548  getprop "Models"
+00874: 548  getprop "Item"
+00879: 548  stricteq
+00880: 548  or 910 (+30)
+00885: 548  pop
+00886: 548  getlocal 3
+00889: 548  getprop "class"
+00894: 548  name "xs"
+00899: 548  getprop "Models"
+00904: 548  getprop "Gems"
+00909: 548  stricteq
+00910: 548  ifeq 933 (+23)
+00915: 549  getlocal 15
+00918: 549  dup
+00919: 549  callprop "getItemNum"
+00924: 549  swap
+00925: 549  notearg
+00926: 549  call 0
+00929: 549  setlocal 16
+00932: 549  pop
+00933: 552  getlocal 15
+00936: 552  dup
+00937: 552  callprop "loadJson"
+00942: 552  swap
+00943: 552  notearg
+00944: 552  getlocal 14
+00947: 552  notearg
+00948: 552  call 1
+00951: 552  pop
+00952: 553  getlocal 10
+00955: 553  getprop "upd"
+00960: 553  dup
+00961: 553  callprop "push"
+00966: 553  swap
+00967: 553  notearg
+00968: 553  getlocal 14
+00971: 553  getprop "pk_id"
+00976: 553  notearg
+00977: 553  call 1
+00980: 553  pop
+00981: 556  getlocal 3
+00984: 556  getprop "class"
+00989: 556  name "xs"
+00994: 556  getprop "Models"
+00999: 556  getprop "Item"
+01004: 556  stricteq
+01005: 556  or 1035 (+30)
+01010: 556  pop
+01011: 556  getlocal 3
+01014: 556  getprop "class"
+01019: 556  name "xs"
+01024: 556  getprop "Models"
+01029: 556  getprop "Gems"
+01034: 556  stricteq
+01035: 556  ifeq 1130 (+95)
+01040: 557  getlocal 15
+01043: 557  dup
+01044: 557  callprop "getItemNum"
+01049: 557  swap
+01050: 557  notearg
+01051: 557  call 0
+01054: 557  setlocal 17
+01057: 557  pop
+01058: 558  name "xs"
+01063: 558  dup
+01064: 558  callprop "log_hsq"
+01069: 558  swap
+01070: 558  notearg
+01071: 558  string "update _item_num_new"
+01076: 558  notearg
+01077: 558  getlocal 17
+01080: 558  notearg
+01081: 558  call 2
+01084: 558  pop
+01085: 559  name "xs"
+01090: 559  dup
+01091: 559  callprop "log_hsq"
+01096: 559  swap
+01097: 559  notearg
+01098: 559  string "update _item_num_old"
+01103: 559  notearg
+01104: 559  getlocal 16
+01107: 559  notearg
+01108: 559  call 2
+01111: 559  pop
+01112: 560  getlocal 17
+01115: 560  getlocal 16
+01118: 560  gt
+01119: 560  and 1129 (+10)
+01124: 560  pop
+01125: 560  true
+01126: 560  setlocal 6
+01129: 560  pop
+01130: 560  goto 1341 (+211)
+01135: 564  getlocal 3
+01138: 564  getprop "propertyName"
+01143: 564  string "m_gem"
+01148: 564  eq
+01149: 564  ifeq 1209 (+60)
+01154: 565  name "xs"
+01159: 565  dup
+01160: 565  callprop "log_hsq"
+01165: 565  swap
+01166: 565  notearg
+01167: 565  string "update length"
+01172: 565  notearg
+01173: 565  call 1
+01176: 565  pop
+01177: 566  name "xs"
+01182: 566  dup
+01183: 566  callprop "log_hsq"
+01188: 566  swap
+01189: 566  notearg
+01190: 566  string "update length"
+01195: 566  notearg
+01196: 566  getlocal 3
+01199: 566  getprop "propertyName"
+01204: 566  notearg
+01205: 566  call 2
+01208: 566  pop
+01209: 570  getlocal 7
+01212: 570  dup
+01213: 570  callprop "createWithJson"
+01218: 570  swap
+01219: 570  notearg
+01220: 570  getlocal 14
+01223: 570  notearg
+01224: 570  call 1
+01227: 570  setlocal 15
+01230: 570  pop
+01231: 571  getlocal 13
+01234: 571  getlocal 14
+01237: 571  getprop "pk_id"
+01242: 571  getlocal 15
+01245: 571  setelem
+01246: 571  pop
+01247: 572  getlocal 10
+01250: 572  getprop "add"
+01255: 572  dup
+01256: 572  callprop "push"
+01261: 572  swap
+01262: 572  notearg
+01263: 572  getlocal 14
+01266: 572  getprop "pk_id"
+01271: 572  notearg
+01272: 572  call 1
+01275: 572  pop
+01276: 575  getlocal 3
+01279: 575  getprop "class"
+01284: 575  name "xs"
+01289: 575  getprop "Models"
+01294: 575  getprop "Item"
+01299: 575  stricteq
+01300: 575  or 1330 (+30)
+01305: 575  pop
+01306: 575  getlocal 3
+01309: 575  getprop "class"
+01314: 575  name "xs"
+01319: 575  getprop "Models"
+01324: 575  getprop "Gems"
+01329: 575  stricteq
+01330: 575  and 1340 (+10)
+01335: 575  pop
+01336: 575  true
+01337: 575  setlocal 6
+01340: 575  pop
+01341: 578  getlocal 3
+01344: 578  getprop "propertyName"
+01349: 578  string "m_gem"
+01354: 578  eq
+01355: 578  ifeq 1415 (+60)
+01360: 579  name "xs"
+01365: 579  dup
+01366: 579  callprop "log_hsq"
+01371: 579  swap
+01372: 579  notearg
+01373: 579  string "update length"
+01378: 579  notearg
+01379: 579  call 1
+01382: 579  pop
+01383: 580  name "xs"
+01388: 580  dup
+01389: 580  callprop "log_hsq"
+01394: 580  swap
+01395: 580  notearg
+01396: 580  string "update class"
+01401: 580  notearg
+01402: 580  getlocal 3
+01405: 580  getprop "class"
+01410: 580  notearg
+01411: 580  call 2
+01414: 580  pop
+01415: 585  getlocal 3
+01418: 585  getprop "class"
+01423: 585  name "xs"
+01428: 585  getprop "Models"
+01433: 585  getprop "Item"
+01438: 585  stricteq
+01439: 585  or 1469 (+30)
+01444: 585  pop
+01445: 585  getlocal 3
+01448: 585  getprop "class"
+01453: 585  name "xs"
+01458: 585  getprop "Models"
+01463: 585  getprop "Gems"
+01468: 585  stricteq
+01469: 585  and 1478 (+9)
+01474: 585  pop
+01475: 585  getlocal 6
+01478: 585  ifeq 1509 (+31)
+01483: 586  this
+01484: 586  dup
+01485: 586  callprop "setItemStatus"
+01490: 586  swap
+01491: 586  notearg
+01492: 586  getlocal 13
+01495: 586  getlocal 14
+01498: 586  getprop "pk_id"
+01503: 586  getelem
+01504: 586  notearg
+01505: 586  call 1
+01508: 586  pop
+01509: 590  getlocal 3
+01512: 590  getprop "class"
+01517: 590  name "xs"
+01522: 590  getprop "Models"
+01527: 590  getprop "General"
+01532: 590  stricteq
+01533: 590  ifeq 1564 (+31)
+01538: 591  this
+01539: 591  dup
+01540: 591  callprop "clearGeneralSoulCache"
+01545: 591  swap
+01546: 591  notearg
+01547: 591  getlocal 13
+01550: 591  getlocal 14
+01553: 591  getprop "pk_id"
+01558: 591  getelem
+01559: 591  notearg
+01560: 591  call 1
+01563: 591  pop
+01564: 538  localinc 11
+01567: 538  getlocal 11
+01570: 538  pos
+01571: 538  dup
+01572: 538  one
+01573: 538  add
+01574: 538  setlocal 11
+01577: 538  pop
+01578: 538  pop
+01579: 538  loopentry
+01580: 538  getlocal 11
+01583: 538  getlocal 9
+01586: 538  length "length"
+01591: 538  lt
+01592: 538  ifne 739 (-853)
+01597: 596  getlocal 5
+01600: 596  ifeq 1716 (+116)
+01605: 599  name "xs"
+01610: 599  getprop "Utils"
+01615: 599  dup
+01616: 599  callprop "isEmpty"
+01621: 599  swap
+01622: 599  notearg
+01623: 599  getlocal 3
+01626: 599  getprop "indexProperty"
+01631: 599  notearg
+01632: 599  call 1
+01635: 599  not
+01636: 599  ifeq 1668 (+32)
+01641: 602  this
+01642: 602  getprop "private"
+01647: 602  getlocal 3
+01650: 602  getprop "indexName"
+01655: 602  getelem
+01656: 602  dup
+01657: 602  callprop "deleteIndexAll"
+01662: 602  swap
+01663: 602  notearg
+01664: 602  call 0
+01667: 602  pop
+01668: 606  this
+01669: 606  getprop "_isNotify"
+01674: 606  ifeq 1716 (+42)
+01679: 607  this
+01680: 607  dup
+01681: 607  callprop "getNotifyCenter"
+01686: 607  swap
+01687: 607  notearg
+01688: 607  call 0
+01691: 607  dup
+01692: 607  callprop "postNotification"
+01697: 607  swap
+01698: 607  notearg
+01699: 607  getlocal 3
+01702: 607  getprop "sortChangeNotifyName"
+01707: 607  notearg
+01708: 607  getlocal 10
+01711: 607  notearg
+01712: 607  call 2
+01715: 607  pop
+01716: 607  goto 2004 (+288)
+01721: 612  getlocal 3
+01724: 612  getprop "mgrType"
+01729: 612  name "xs"
+01734: 612  getprop "Constant_GD_MgrType_SingletonType"
+01739: 612  stricteq
+01740: 612  ifeq 1786 (+46)
+01745: 616  this
+01746: 616  getprop "private"
+01751: 616  getlocal 3
+01754: 616  getprop "propertyName"
+01759: 616  getelem
+01760: 616  dup
+01761: 616  callprop "update"
+01766: 616  swap
+01767: 616  notearg
+01768: 616  getlocal 4
+01771: 616  notearg
+01772: 616  call 1
+01775: 616  pop
+01776: 617  true
+01777: 617  setlocal 5
+01780: 617  pop
+01781: 617  goto 2004 (+223)
+01786: 618  getlocal 3
+01789: 618  getprop "mgrType"
+01794: 618  name "xs"
+01799: 618  getprop "Constant_GD_MgrType_ReplaceType"
+01804: 618  stricteq
+01805: 618  ifeq 1981 (+176)
+01810: 619  newarray 0
+01814: 619  endinit
+01815: 619  setlocal 18
+01818: 619  pop
+01819: 620  zero
+01820: 620  setlocal 11
+01823: 620  pop
+01824: 620  goto 1883 (+59)
+01829: 622  loophead
+01830: 622  getlocal 18
+01833: 622  dup
+01834: 622  callprop "push"
+01839: 622  swap
+01840: 622  notearg
+01841: 622  getlocal 7
+01844: 622  dup
+01845: 622  callprop "createWithJson"
+01850: 622  swap
+01851: 622  notearg
+01852: 622  getlocal 4
+01855: 622  getlocal 11
+01858: 622  getelem
+01859: 622  notearg
+01860: 622  call 1
+01863: 622  notearg
+01864: 622  call 1
+01867: 622  pop
+01868: 620  localinc 11
+01871: 620  getlocal 11
+01874: 620  pos
+01875: 620  dup
+01876: 620  one
+01877: 620  add
+01878: 620  setlocal 11
+01881: 620  pop
+01882: 620  pop
+01883: 620  loopentry
+01884: 620  getlocal 11
+01887: 620  getlocal 4
+01890: 620  length "length"
+01895: 620  lt
+01896: 620  ifne 1829 (-67)
+01901: 624  this
+01902: 624  getprop "private"
+01907: 624  getlocal 3
+01910: 624  getprop "propertyName"
+01915: 624  getlocal 18
+01918: 624  setelem
+01919: 624  pop
+01920: 625  true
+01921: 625  setlocal 5
+01924: 625  pop
+01925: 627  this
+01926: 627  dup
+01927: 627  callprop "getNotifyCenter"
+01932: 627  swap
+01933: 627  notearg
+01934: 627  call 0
+01937: 627  dup
+01938: 627  callprop "postNotification"
+01943: 627  swap
+01944: 627  notearg
+01945: 627  getlocal 3
+01948: 627  getprop "sortChangeNotifyName"
+01953: 627  notearg
+01954: 627  newinit 1
+01959: 627  newinit 1
+01964: 627  endinit
+01965: 627  initprop "upd"
+01970: 627  endinit
+01971: 627  notearg
+01972: 627  call 2
+01975: 627  pop
+01976: 627  goto 2004 (+28)
+01981: 630  this
+01982: 630  dup
+01983: 630  callprop "error"
+01988: 630  swap
+01989: 630  notearg
+01990: 630  string "_desc.mgrType err"
+01995: 630  notearg
+01996: 630  getlocal 3
+01999: 630  notearg
+02000: 630  call 2
+02003: 630  pop
+02004: 633  getlocal 5
+02007: 633  and 2019 (+12)
+02012: 633  pop
+02013: 633  this
+02014: 633  getprop "_isNotify"
+02019: 633  ifeq 2048 (+29)
+02024: 634  getlocal 0
+02027: 634  dup
+02028: 634  callprop "push"
+02033: 634  swap
+02034: 634  notearg
+02035: 634  getlocal 3
+02038: 634  getprop "notifyName"
+02043: 634  notearg
+02044: 634  call 1
+02047: 634  pop
+02048: 487  localinc 11
+02051: 487  getlocal 2
+02054: 487  pos
+02055: 487  dup
+02056: 487  one
+02057: 487  add
+02058: 487  setlocal 2
+02061: 487  pop
+02062: 487  pop
+02063: 487  loopentry
+02064: 487  getlocal 2
+02067: 487  getlocal 1
+02070: 487  length "length"
+02075: 487  lt
+02076: 487  ifne 320 (-1756)
+02081: 645  getlocal 5
+02084: 645  and 2102 (+18)
+02089: 645  pop
+02090: 645  this
+02091: 645  dup
+02092: 645  callprop "_firstTimeInitCmnData"
+02097: 645  swap
+02098: 645  notearg
+02099: 645  call 0
+02102: 645  pop
+02103: 649  getlocal 0
+02106: 649  return
+02107: 649  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:463 ---
+;; function object[6] clearGeneralSoulCache
+;; function metadata object[6] nargs=1 bindings=3
+;; arg[0] general_obj
+;; local[0] _arr_soul_all
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:653 ---
+loc   line  op
+----- ----  --
+main:
+00000: 654  this
+00001: 654  dup
+00002: 654  callprop "getModelsByTypeAndFilter"
+00007: 654  swap
+00008: 654  notearg
+00009: 654  name "xs"
+00014: 654  getprop "Constant_GameData_GeneralSoul"
+00019: 654  notearg
+00020: 654  newarray 0
+00024: 654  endinit
+00025: 654  notearg
+00026: 654  call 2
+00029: 654  setlocal 0
+00032: 654  pop
+00033: 655  zero
+00034: 655  setlocal 1
+00037: 655  pop
+00038: 655  goto 116 (+78)
+00043: 656  loophead
+00044: 656  getlocal 0
+00047: 656  getlocal 1
+00050: 656  getelem
+00051: 656  dup
+00052: 656  callprop "getId"
+00057: 656  swap
+00058: 656  notearg
+00059: 656  call 0
+00062: 656  getarg 0
+00065: 656  dup
+00066: 656  callprop "getId"
+00071: 656  swap
+00072: 656  notearg
+00073: 656  call 0
+00076: 656  eq
+00077: 656  ifeq 101 (+24)
+00082: 657  getlocal 0
+00085: 657  getlocal 1
+00088: 657  getelem
+00089: 657  dup
+00090: 657  callprop "_delReferenceGeneralCache"
+00095: 657  swap
+00096: 657  notearg
+00097: 657  call 0
+00100: 657  pop
+00101: 655  localinc 11
+00104: 655  getlocal 1
+00107: 655  pos
+00108: 655  dup
+00109: 655  one
+00110: 655  add
+00111: 655  setlocal 1
+00114: 655  pop
+00115: 655  pop
+00116: 655  loopentry
+00117: 655  getlocal 1
+00120: 655  getlocal 0
+00123: 655  length "length"
+00128: 655  lt
+00129: 655  ifne 43 (-86)
+00134: 659  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:653 ---
+;; function object[7] setItemStatus
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] item_obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:663 ---
+loc   line  op
+----- ----  --
+main:
+00000: 664  this
+00001: 664  getprop "isFirstTimeInitCmnData"
+00006: 664  not
+00007: 664  ifeq 29 (+22)
+00012: 665  getarg 0
+00015: 665  dup
+00016: 665  callprop "setNewStatus"
+00021: 665  swap
+00022: 665  notearg
+00023: 665  true
+00024: 665  notearg
+00025: 665  call 1
+00028: 665  pop
+00029: 666  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:663 ---
+;; function object[8] getModelByTypeAndPkId
+;; function metadata object[8] nargs=2 bindings=4
+;; arg[0] nameType
+;; arg[1] pkId
+;; local[0] _modelsMap
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:670 ---
+loc   line  op
+----- ----  --
+main:
+00000: 673  this
+00001: 673  dup
+00002: 673  callprop "getDataByNameType"
+00007: 673  swap
+00008: 673  notearg
+00009: 673  getarg 0
+00012: 673  notearg
+00013: 673  call 1
+00016: 673  setlocal 0
+00019: 673  pop
+00020: 675  this
+00021: 675  dup
+00022: 675  callprop "assert"
+00027: 675  swap
+00028: 675  notearg
+00029: 675  getarg 1
+00032: 675  notearg
+00033: 675  string "getModelByTypeAndPkId"
+00038: 675  notearg
+00039: 675  newarray 2
+00043: 675  getarg 0
+00046: 675  initelem_array 0
+00050: 675  getarg 1
+00053: 675  initelem_array 1
+00057: 675  endinit
+00058: 675  notearg
+00059: 675  getlocal 0
+00062: 675  notearg
+00063: 675  call 4
+00066: 675  pop
+00067: 677  getlocal 0
+00070: 677  getarg 1
+00073: 677  getelem
+00074: 677  setlocal 1
+00077: 677  pop
+00078: 679  getlocal 1
+00081: 679  ifeq 95 (+14)
+00086: 680  getlocal 1
+00089: 680  return
+00090: 680  goto 128 (+38)
+00095: 683  this
+00096: 683  dup
+00097: 683  callprop "warn"
+00102: 683  swap
+00103: 683  notearg
+00104: 683  string "getModelByTypeAndPkId ret null:"
+00109: 683  getarg 0
+00112: 683  add
+00113: 683  string "|"
+00118: 683  add
+00119: 683  getarg 1
+00122: 683  add
+00123: 683  notearg
+00124: 683  call 1
+00127: 683  pop
+00128: 686  getlocal 1
+00131: 686  return
+00132: 686  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:670 ---
+;; function object[9] getModelsByTypeAndFilter
+;; function metadata object[9] nargs=2 bindings=9
+;; arg[0] nameType
+;; arg[1] filterArray
+;; local[0] _modelsMap
+;; local[1] _retArray
+;; local[2] _filterArray
+;; local[3] key_pk_id
+;; local[4] _tmpModel
+;; local[5] _isIgnore
+;; local[6] j
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=57 length=166 stackDepth=1 target=223
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:690 ---
+loc   line  op
+----- ----  --
+main:
+00000: 693  this
+00001: 693  dup
+00002: 693  callprop "getDataByNameType"
+00007: 693  swap
+00008: 693  notearg
+00009: 693  getarg 0
+00012: 693  notearg
+00013: 693  call 1
+00016: 693  setlocal 0
+00019: 693  pop
+00020: 695  newarray 0
+00024: 695  endinit
+00025: 695  setlocal 1
+00028: 695  pop
+00029: 698  getarg 1
+00032: 698  or 43 (+11)
+00037: 698  pop
+00038: 698  newarray 0
+00042: 698  endinit
+00043: 698  setlocal 2
+00046: 698  pop
+00047: 701  getlocal 0
+00050: 701  iter 1
+00052: 701  goto 216 (+164)
+00057: 701  loophead
+00058: 701  iternext
+00059: 701  setlocal 3
+00062: 701  pop
+00063: 702  getlocal 0
+00066: 702  dup
+00067: 702  callprop "hasOwnProperty"
+00072: 702  swap
+00073: 702  notearg
+00074: 702  getlocal 3
+00077: 702  notearg
+00078: 702  call 1
+00081: 702  ifeq 216 (+135)
+00086: 704  getlocal 0
+00089: 704  getlocal 3
+00092: 704  getelem
+00093: 704  setlocal 4
+00096: 704  pop
+00097: 706  false
+00098: 706  setlocal 5
+00101: 706  pop
+00102: 707  zero
+00103: 707  setlocal 6
+00106: 707  pop
+00107: 707  goto 164 (+57)
+00112: 708  loophead
+00113: 708  getlocal 4
+00116: 708  dup
+00117: 708  callprop "isIgnoreByFilter"
+00122: 708  swap
+00123: 708  notearg
+00124: 708  getlocal 2
+00127: 708  name "i"
+00132: 708  getelem
+00133: 708  notearg
+00134: 708  call 1
+00137: 708  true
+00138: 708  stricteq
+00139: 708  ifeq 149 (+10)
+00144: 709  true
+00145: 709  setlocal 5
+00148: 709  pop
+00149: 707  localinc 11
+00152: 707  getlocal 6
+00155: 707  pos
+00156: 707  dup
+00157: 707  one
+00158: 707  add
+00159: 707  setlocal 6
+00162: 707  pop
+00163: 707  pop
+00164: 707  loopentry
+00165: 707  getlocal 6
+00168: 707  getlocal 2
+00171: 707  length "length"
+00176: 707  lt
+00177: 707  ifne 112 (-65)
+00182: 713  getlocal 5
+00185: 713  true
+00186: 713  stricteq
+00187: 713  ifeq 197 (+10)
+00192: 714  goto 216 (+24)
+00197: 716  getlocal 1
+00200: 716  dup
+00201: 716  callprop "push"
+00206: 716  swap
+00207: 716  notearg
+00208: 716  getlocal 4
+00211: 716  notearg
+00212: 716  call 1
+00215: 716  pop
+00216: 716  loopentry
+00217: 716  moreiter
+00218: 716  ifne 57 (-161)
+00223: 716  enditer
+00224: 719  getlocal 1
+00227: 719  return
+00228: 719  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:690 ---
+;; function object[10] getModelsByTypeAndIndex
+;; function metadata object[10] nargs=3 bindings=7
+;; arg[0] nameType
+;; arg[1] indexName
+;; arg[2] indexValue
+;; local[0] _dataDesc
+;; local[1] _arr
+;; local[2] _retArray
+;; local[3] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:725 ---
+loc   line  op
+----- ----  --
+main:
+00000: 727  this
+00001: 727  dup
+00002: 727  callprop "getDataDescByNameType"
+00007: 727  swap
+00008: 727  notearg
+00009: 727  getarg 0
+00012: 727  notearg
+00013: 727  call 1
+00016: 727  setlocal 0
+00019: 727  pop
+00020: 729  this
+00021: 729  getprop "private"
+00026: 729  getlocal 0
+00029: 729  getprop "indexName"
+00034: 729  getelem
+00035: 729  dup
+00036: 729  callprop "createIndex"
+00041: 729  swap
+00042: 729  notearg
+00043: 729  getarg 1
+00046: 729  notearg
+00047: 729  call 1
+00050: 729  pop
+00051: 731  this
+00052: 731  getprop "private"
+00057: 731  getlocal 0
+00060: 731  getprop "indexName"
+00065: 731  getelem
+00066: 731  dup
+00067: 731  callprop "findWithIndex"
+00072: 731  swap
+00073: 731  notearg
+00074: 731  getarg 1
+00077: 731  notearg
+00078: 731  getarg 2
+00081: 731  notearg
+00082: 731  call 2
+00085: 731  setlocal 1
+00088: 731  pop
+00089: 734  getlocal 1
+00092: 734  int8 -1
+00094: 734  eq
+00095: 734  ifeq 123 (+28)
+00100: 735  this
+00101: 735  dup
+00102: 735  callprop "getModelsByTypeAndFilter"
+00107: 735  swap
+00108: 735  notearg
+00109: 735  getarg 0
+00112: 735  notearg
+00113: 735  newarray 0
+00117: 735  endinit
+00118: 735  notearg
+00119: 735  call 2
+00122: 735  return
+00123: 738  newarray 0
+00127: 738  endinit
+00128: 738  setlocal 2
+00131: 738  pop
+00132: 740  zero
+00133: 740  setlocal 3
+00136: 740  pop
+00137: 740  goto 198 (+61)
+00142: 741  loophead
+00143: 741  getlocal 2
+00146: 741  dup
+00147: 741  callprop "push"
+00152: 741  swap
+00153: 741  notearg
+00154: 741  this
+00155: 741  dup
+00156: 741  callprop "getModelByTypeAndPkId"
+00161: 741  swap
+00162: 741  notearg
+00163: 741  getarg 0
+00166: 741  notearg
+00167: 741  getlocal 1
+00170: 741  getlocal 3
+00173: 741  getelem
+00174: 741  notearg
+00175: 741  call 2
+00178: 741  notearg
+00179: 741  call 1
+00182: 741  pop
+00183: 740  localinc 11
+00186: 740  getlocal 3
+00189: 740  pos
+00190: 740  dup
+00191: 740  one
+00192: 740  add
+00193: 740  setlocal 3
+00196: 740  pop
+00197: 740  pop
+00198: 740  loopentry
+00199: 740  getlocal 3
+00202: 740  getlocal 1
+00205: 740  length "length"
+00210: 740  lt
+00211: 740  ifne 142 (-69)
+00216: 744  getlocal 2
+00219: 744  return
+00220: 744  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:725 ---
+;; function object[11] refreshCacheDataEveryDay
+;; function metadata object[11] nargs=1 bindings=1
+;; arg[0] refresh_data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:748 ---
+loc   line  op
+----- ----  --
+main:
+00000: 749  name "undefined"
+00005: 749  getarg 0
+00008: 749  strictne
+00009: 749  and 45 (+36)
+00014: 749  pop
+00015: 749  name "undefined"
+00020: 749  getarg 0
+00023: 749  getprop "status"
+00028: 749  strictne
+00029: 749  and 45 (+16)
+00034: 749  pop
+00035: 749  true
+00036: 749  getarg 0
+00039: 749  getprop "status"
+00044: 749  stricteq
+00045: 749  ifeq 73 (+28)
+00050: 750  name "xs"
+00055: 750  dup
+00056: 750  callprop "log"
+00061: 750  swap
+00062: 750  notearg
+00063: 750  string "be refreshed data here: map etc;"
+00068: 750  notearg
+00069: 750  call 1
+00072: 750  pop
+00073: 751  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:748 ---
+;; function object[12] getNotifyCenter
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:754 ---
+loc   line  op
+----- ----  --
+main:
+00000: 755  this
+00001: 755  dup
+00002: 755  callprop "assert"
+00007: 755  swap
+00008: 755  notearg
+00009: 755  this
+00010: 755  getprop "_notifyCenter"
+00015: 755  notearg
+00016: 755  string "the notityCenter is error"
+00021: 755  notearg
+00022: 755  call 2
+00025: 755  pop
+00026: 756  this
+00027: 756  getprop "_notifyCenter"
+00032: 756  return
+00033: 756  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:754 ---
+;; function object[13] _firstTimeInitCmnData
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:760 ---
+loc   line  op
+----- ----  --
+main:
+00000: 761  this
+00001: 761  getprop "isFirstTimeInitCmnData"
+00006: 761  and 19 (+13)
+00011: 761  pop
+00012: 761  this
+00013: 761  false
+00014: 761  setprop "isFirstTimeInitCmnData"
+00019: 761  pop
+00020: 761  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:760 ---
+;; function object[14] create
+;; function metadata object[14] nargs=1 bindings=2
+;; arg[0] isNotify
+;; local[0] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:767 ---
+loc   line  op
+----- ----  --
+main:
+00000: 768  name "xs"
+00005: 768  getprop "Profile"
+00010: 768  getprop "GameData"
+00015: 768  undefined
+00016: 768  notearg
+00017: 768  new 0
+00020: 768  setlocal 0
+00023: 768  pop
+00024: 769  getlocal 0
+00027: 769  and 51 (+24)
+00032: 769  pop
+00033: 769  getlocal 0
+00036: 769  dup
+00037: 769  callprop "init"
+00042: 769  swap
+00043: 769  notearg
+00044: 769  getarg 0
+00047: 769  notearg
+00048: 769  call 1
+00051: 769  ifeq 60 (+9)
+00056: 771  getlocal 0
+00059: 771  return
+00060: 773  name "xs"
+00065: 773  dup
+00066: 773  callprop "error"
+00071: 773  swap
+00072: 773  notearg
+00073: 773  string "xs.Profile.GameData.create failed"
+00078: 773  notearg
+00079: 773  call 1
+00082: 773  pop
+00083: 774  null
+00084: 774  return
+00085: 774  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/common.js:767 ---

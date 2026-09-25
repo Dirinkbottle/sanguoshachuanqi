@@ -1,0 +1,807 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=53 object[0]
+;; FUNCTION-MAP kind=lambda offset=63 object[1]
+;; FUNCTION-MAP kind=lambda offset=73 object[2]
+;; FUNCTION-MAP kind=lambda offset=83 object[3]
+;; FUNCTION-MAP kind=lambda offset=93 object[4]
+;; FUNCTION-MAP kind=lambda offset=103 object[5]
+;; FUNCTION-MAP kind=lambda offset=149 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   1  name "xs"
+00005:   1  getprop "Views"
+00010:   1  getprop "Table"
+00015:   1  getprop "Cell"
+00020:   1  name "cc"
+00025:   1  getprop "TableViewCell"
+00030:   1  dup
+00031:   1  callprop "extend"
+00036:   1  swap
+00037:   1  notearg
+00038:   1  newinit 1
+00043:   2  string "SkillTableViewCell"
+00048:   2  initprop "name"
+00053:   3  lambda (function () {
+    [sourceless code]
+})
+00058:   3  initprop "ctor"
+00063:   7  lambda (function () {
+    [sourceless code]
+})
+00068:   7  initprop "initWithData"
+00073:  15  lambda (function () {
+    [sourceless code]
+})
+00078:  15  initprop "updateCell"
+00083:  22  lambda (function () {
+    [sourceless code]
+})
+00088:  22  initprop "updateCellEx"
+00093:  26  lambda (function () {
+    [sourceless code]
+})
+00098:  26  initprop "refiningSkill"
+00103:  31  lambda (function () {
+    [sourceless code]
+})
+00108:  31  initprop "ccbUpdateCell"
+00113:  31  endinit
+00114:  31  notearg
+00115:  31  call 1
+00118:  31  setprop "RefiningSkillTableViewCell"
+00123:  31  popv
+00124:  90  name "xs"
+00129:  90  getprop "Views"
+00134:  90  getprop "Table"
+00139:  90  getprop "Cell"
+00144:  90  getprop "RefiningSkillTableViewCell"
+00149:  90  lambda (function () {
+    [sourceless code]
+})
+00154:  90  setprop "create"
+00159:  90  popv
+00160:  98  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:3 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  this
+00001:   4  dup
+00002:   4  callprop "_super"
+00007:   4  swap
+00008:   4  notearg
+00009:   4  call 0
+00012:   4  pop
+00013:   4  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:3 ---
+;; function object[1] initWithData
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  name "xs"
+00006:   9  getprop "Views"
+00011:   9  getprop "Table"
+00016:   9  getprop "Cell"
+00021:   9  getprop "BaseCmnStyleBCell"
+00026:   9  dup
+00027:   9  callprop "create"
+00032:   9  swap
+00033:   9  notearg
+00034:   9  call 0
+00037:   9  setprop "_ccbNode"
+00042:   9  pop
+00043:  10  name "xs"
+00048:  10  getprop "Utils"
+00053:  10  getprop "Node"
+00058:  10  dup
+00059:  10  callprop "attachNodes"
+00064:  10  swap
+00065:  10  notearg
+00066:  10  this
+00067:  10  notearg
+00068:  10  this
+00069:  10  getprop "_ccbNode"
+00074:  10  notearg
+00075:  10  call 2
+00078:  10  pop
+00079:  12  true
+00080:  12  return
+00081:  12  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:7 ---
+;; function object[2] updateCell
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  getarg 0
+00004:  17  setprop "_data"
+00009:  17  pop
+00010:  18  this
+00011:  18  getprop "_ccbNode"
+00016:  18  dup
+00017:  18  callprop "setVisible"
+00022:  18  swap
+00023:  18  notearg
+00024:  18  true
+00025:  18  notearg
+00026:  18  call 1
+00029:  18  pop
+00030:  19  this
+00031:  19  dup
+00032:  19  callprop "ccbUpdateCell"
+00037:  19  swap
+00038:  19  notearg
+00039:  19  call 0
+00042:  19  pop
+00043:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:15 ---
+;; function object[3] updateCellEx
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:22 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  this
+00001:  24  getprop "_ccbNode"
+00006:  24  dup
+00007:  24  callprop "setVisible"
+00012:  24  swap
+00013:  24  notearg
+00014:  24  false
+00015:  24  notearg
+00016:  24  call 1
+00019:  24  pop
+00020:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:22 ---
+;; function object[4] refiningSkill
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  name "xs"
+00005:  27  dup
+00006:  27  callprop "log"
+00011:  27  swap
+00012:  27  notearg
+00013:  27  string "refiningSkill"
+00018:  27  notearg
+00019:  27  call 1
+00022:  27  pop
+00023:  28  name "xs"
+00028:  28  getprop "Utils"
+00033:  28  getprop "Notify"
+00038:  28  dup
+00039:  28  callprop "postNotification"
+00044:  28  swap
+00045:  28  notearg
+00046:  28  name "xs"
+00051:  28  getprop "Constant_Notify_Event_SkillSelect"
+00056:  28  notearg
+00057:  28  this
+00058:  28  getprop "_data"
+00063:  28  notearg
+00064:  28  call 2
+00067:  28  pop
+00068:  29  name "xs"
+00073:  29  getprop "Views"
+00078:  29  getprop "Mgr"
+00083:  29  dup
+00084:  29  callprop "hideDialog"
+00089:  29  swap
+00090:  29  notearg
+00091:  29  call 0
+00094:  29  pop
+00095:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:26 ---
+;; function object[5] ccbUpdateCell
+;; function metadata object[5] nargs=0 bindings=2
+;; local[0] belong_general
+;; local[1] pos
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=804 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:31 ---
+loc   line  op
+----- ----  --
+main:
+00000:  32  name "xs"
+00005:  32  dup
+00006:  32  callprop "log"
+00011:  32  swap
+00012:  32  notearg
+00013:  32  string "SkillTableViewCell ccbUpdateCell"
+00018:  32  notearg
+00019:  32  call 1
+00022:  32  pop
+00023:  34  this
+00024:  34  getprop "_ccbNode"
+00029:  34  getprop "m_fightBg"
+00034:  34  dup
+00035:  34  callprop "setVisible"
+00040:  34  swap
+00041:  34  notearg
+00042:  34  true
+00043:  34  notearg
+00044:  34  call 1
+00047:  34  pop
+00048:  35  this
+00049:  35  getprop "_ccbNode"
+00054:  35  getprop "m_icon"
+00059:  35  dup
+00060:  35  callprop "setVisible"
+00065:  35  swap
+00066:  35  notearg
+00067:  35  false
+00068:  35  notearg
+00069:  35  call 1
+00072:  35  pop
+00073:  36  this
+00074:  36  getprop "_ccbNode"
+00079:  36  getprop "m_gradeIcon"
+00084:  36  dup
+00085:  36  callprop "setVisible"
+00090:  36  swap
+00091:  36  notearg
+00092:  36  true
+00093:  36  notearg
+00094:  36  call 1
+00097:  36  pop
+00098:  37  this
+00099:  37  getprop "_ccbNode"
+00104:  37  getprop "m_nameLab"
+00109:  37  dup
+00110:  37  callprop "setVisible"
+00115:  37  swap
+00116:  37  notearg
+00117:  37  true
+00118:  37  notearg
+00119:  37  call 1
+00122:  37  pop
+00123:  38  this
+00124:  38  getprop "_ccbNode"
+00129:  38  getprop "m_belongLab"
+00134:  38  dup
+00135:  38  callprop "setVisible"
+00140:  38  swap
+00141:  38  notearg
+00142:  38  true
+00143:  38  notearg
+00144:  38  call 1
+00147:  38  pop
+00148:  39  this
+00149:  39  getprop "_ccbNode"
+00154:  39  getprop "m_fightIcon"
+00159:  39  dup
+00160:  39  callprop "setVisible"
+00165:  39  swap
+00166:  39  notearg
+00167:  39  true
+00168:  39  notearg
+00169:  39  call 1
+00172:  39  pop
+00173:  40  this
+00174:  40  getprop "_ccbNode"
+00179:  40  getprop "m_propertyBg"
+00184:  40  dup
+00185:  40  callprop "setVisible"
+00190:  40  swap
+00191:  40  notearg
+00192:  40  false
+00193:  40  notearg
+00194:  40  call 1
+00197:  40  pop
+00198:  42  name "xs"
+00203:  42  getprop "Profile"
+00208:  42  getprop "GameData"
+00213:  42  getprop "Mgr"
+00218:  42  dup
+00219:  42  callprop "getInstance"
+00224:  42  swap
+00225:  42  notearg
+00226:  42  call 0
+00229:  42  getprop "Skills"
+00234:  42  dup
+00235:  42  callprop "getGeneral"
+00240:  42  swap
+00241:  42  notearg
+00242:  42  this
+00243:  42  getprop "_data"
+00248:  42  notearg
+00249:  42  call 1
+00252:  42  setlocal 0
+00255:  42  pop
+00256:  44  getlocal 0
+00259:  44  null
+00260:  44  ne
+00261:  44  ifeq 342 (+81)
+00266:  45  this
+00267:  45  getprop "_ccbNode"
+00272:  45  getprop "m_belongLab"
+00277:  45  dup
+00278:  45  callprop "setString"
+00283:  45  swap
+00284:  45  notearg
+00285:  45  name "xs"
+00290:  45  getprop "Tools"
+00295:  45  getprop "String"
+00300:  45  dup
+00301:  45  callprop "createString"
+00306:  45  swap
+00307:  45  notearg
+00308:  45  string "str_Equipment_BelongTo"
+00313:  45  notearg
+00314:  45  call 1
+00317:  45  getlocal 0
+00320:  45  dup
+00321:  45  callprop "getNameString"
+00326:  45  swap
+00327:  45  notearg
+00328:  45  call 0
+00331:  45  add
+00332:  45  notearg
+00333:  45  call 1
+00336:  45  pop
+00337:  45  goto 371 (+34)
+00342:  47  this
+00343:  47  getprop "_ccbNode"
+00348:  47  getprop "m_belongLab"
+00353:  47  dup
+00354:  47  callprop "setString"
+00359:  47  swap
+00360:  47  notearg
+00361:  47  string " "
+00366:  47  notearg
+00367:  47  call 1
+00370:  47  pop
+00371:  49  this
+00372:  49  getprop "_ccbNode"
+00377:  49  getprop "m_btn"
+00382:  49  dup
+00383:  49  callprop "setVisible"
+00388:  49  swap
+00389:  49  notearg
+00390:  49  true
+00391:  49  notearg
+00392:  49  call 1
+00395:  49  pop
+00396:  50  this
+00397:  50  getprop "_ccbNode"
+00402:  50  getprop "m_btn"
+00407:  50  dup
+00408:  50  callprop "setString"
+00413:  50  swap
+00414:  50  notearg
+00415:  50  name "xs"
+00420:  50  getprop "Tools"
+00425:  50  getprop "String"
+00430:  50  dup
+00431:  50  callprop "createString"
+00436:  50  swap
+00437:  50  notearg
+00438:  50  string "Lianhua"
+00443:  50  notearg
+00444:  50  call 1
+00447:  50  notearg
+00448:  50  call 1
+00451:  50  pop
+00452:  51  this
+00453:  51  getprop "_ccbNode"
+00458:  51  getprop "m_btn"
+00463:  51  dup
+00464:  51  callprop "setOnClickCallBack"
+00469:  51  swap
+00470:  51  notearg
+00471:  51  this
+00472:  51  getprop "refiningSkill"
+00477:  51  dup
+00478:  51  callprop "bind"
+00483:  51  swap
+00484:  51  notearg
+00485:  51  this
+00486:  51  notearg
+00487:  51  call 1
+00490:  51  notearg
+00491:  51  call 1
+00494:  51  pop
+00495:  52  this
+00496:  52  getprop "_ccbNode"
+00501:  52  getprop "m_atkTxtLab"
+00506:  52  dup
+00507:  52  callprop "setVisible"
+00512:  52  swap
+00513:  52  notearg
+00514:  52  true
+00515:  52  notearg
+00516:  52  call 1
+00519:  52  pop
+00520:  53  this
+00521:  53  getprop "_ccbNode"
+00526:  53  getprop "m_fightLab"
+00531:  53  dup
+00532:  53  callprop "setVisible"
+00537:  53  swap
+00538:  53  notearg
+00539:  53  true
+00540:  53  notearg
+00541:  53  call 1
+00544:  53  pop
+00545:  58  name "xs"
+00550:  58  dup
+00551:  58  callprop "log"
+00556:  58  swap
+00557:  58  notearg
+00558:  58  string "SkillTableViewCell ccbUpdateCell 1 "
+00563:  58  this
+00564:  58  getprop "_data"
+00569:  58  dup
+00570:  58  callprop "getSkillTypeToString"
+00575:  58  swap
+00576:  58  notearg
+00577:  58  call 0
+00580:  58  add
+00581:  58  notearg
+00582:  58  call 1
+00585:  58  pop
+00586:  60  this
+00587:  60  getprop "_ccbNode"
+00592:  60  getprop "m_atkTxtLab"
+00597:  60  dup
+00598:  60  callprop "setString"
+00603:  60  swap
+00604:  60  notearg
+00605:  60  this
+00606:  60  getprop "_data"
+00611:  60  dup
+00612:  60  callprop "getSkillTypeToString"
+00617:  60  swap
+00618:  60  notearg
+00619:  60  call 0
+00622:  60  notearg
+00623:  60  call 1
+00626:  60  pop
+00627:  61  name "xs"
+00632:  61  dup
+00633:  61  callprop "log"
+00638:  61  swap
+00639:  61  notearg
+00640:  61  string "SkillTableViewCell ccbUpdateCell 2"
+00645:  61  notearg
+00646:  61  call 1
+00649:  61  pop
+00650:  63  name "xs"
+00655:  63  getprop "Utils"
+00660:  63  getprop "Node"
+00665:  63  dup
+00666:  63  callprop "safeRemoveChild"
+00671:  63  swap
+00672:  63  notearg
+00673:  63  this
+00674:  63  getprop "_skillHead"
+00679:  63  notearg
+00680:  63  call 1
+00683:  63  pop
+00684:  64  this
+00685:  64  this
+00686:  64  getprop "_data"
+00691:  64  dup
+00692:  64  callprop "createIcon_GradeAndLvAndAdvancedLv"
+00697:  64  swap
+00698:  64  notearg
+00699:  64  call 0
+00702:  64  setprop "_skillHead"
+00707:  64  pop
+00708:  65  name "xs"
+00713:  65  getprop "Utils"
+00718:  65  getprop "Node"
+00723:  65  dup
+00724:  65  callprop "attachNodes"
+00729:  65  swap
+00730:  65  notearg
+00731:  65  this
+00732:  65  getprop "_ccbNode"
+00737:  65  notearg
+00738:  65  this
+00739:  65  getprop "_skillHead"
+00744:  65  notearg
+00745:  65  call 2
+00748:  65  pop
+00749:  66  this
+00750:  66  getprop "_skillHead"
+00755:  66  dup
+00756:  66  callprop "setPosition"
+00761:  66  swap
+00762:  66  notearg
+00763:  66  this
+00764:  66  getprop "_ccbNode"
+00769:  66  getprop "m_icon"
+00774:  66  dup
+00775:  66  callprop "getPosition"
+00780:  66  swap
+00781:  66  notearg
+00782:  66  call 0
+00785:  66  notearg
+00786:  66  call 1
+00789:  66  pop
+00790:  67  this
+00791:  67  getprop "_skillHead"
+00796:  67  dup
+00797:  67  callprop "setOnClickCallBack"
+00802:  67  swap
+00803:  67  notearg
+00804:  67  lambda (function () {
+    [sourceless code]
+})
+00809:  67  dup
+00810:  67  callprop "bind"
+00815:  67  swap
+00816:  67  notearg
+00817:  73  this
+00818:  73  notearg
+00819:  73  call 1
+00822:  73  notearg
+00823:  73  call 1
+00826:  73  pop
+00827:  74  name "xs"
+00832:  74  dup
+00833:  74  callprop "log"
+00838:  74  swap
+00839:  74  notearg
+00840:  74  string "SkillTableViewCell ccbUpdateCell 3"
+00845:  74  notearg
+00846:  74  call 1
+00849:  74  pop
+00850:  76  this
+00851:  76  getprop "_ccbNode"
+00856:  76  getprop "m_nameLab"
+00861:  76  dup
+00862:  76  callprop "setString"
+00867:  76  swap
+00868:  76  notearg
+00869:  76  this
+00870:  76  getprop "_data"
+00875:  76  dup
+00876:  76  callprop "getNameString"
+00881:  76  swap
+00882:  76  notearg
+00883:  76  call 0
+00886:  76  notearg
+00887:  76  call 1
+00890:  76  pop
+00891:  77  name "xs"
+00896:  77  dup
+00897:  77  callprop "log"
+00902:  77  swap
+00903:  77  notearg
+00904:  77  string "SkillTableViewCell ccbUpdateCell 4"
+00909:  77  notearg
+00910:  77  call 1
+00913:  77  pop
+00914:  79  this
+00915:  79  getprop "_ccbNode"
+00920:  79  getprop "m_gradeIcon"
+00925:  79  dup
+00926:  79  callprop "getPosition"
+00931:  79  swap
+00932:  79  notearg
+00933:  79  call 0
+00936:  79  setlocal 1
+00939:  79  pop
+00940:  80  name "xs"
+00945:  80  getprop "Utils"
+00950:  80  getprop "Node"
+00955:  80  dup
+00956:  80  callprop "safeRemoveChild"
+00961:  80  swap
+00962:  80  notearg
+00963:  80  this
+00964:  80  getprop "_ccbNode"
+00969:  80  getprop "m_gradeIcon"
+00974:  80  notearg
+00975:  80  call 1
+00978:  80  pop
+00979:  81  this
+00980:  81  getprop "_ccbNode"
+00985:  81  name "xs"
+00990:  81  getprop "Tools"
+00995:  81  getprop "UI"
+01000:  81  dup
+01001:  81  callprop "createGradeSmallIcon"
+01006:  81  swap
+01007:  81  notearg
+01008:  81  this
+01009:  81  getprop "_data"
+01014:  81  dup
+01015:  81  callprop "getGrade"
+01020:  81  swap
+01021:  81  notearg
+01022:  81  call 0
+01025:  81  notearg
+01026:  81  call 1
+01029:  81  setprop "m_gradeIcon"
+01034:  81  pop
+01035:  82  this
+01036:  82  getprop "_ccbNode"
+01041:  82  getprop "m_gradeIcon"
+01046:  82  dup
+01047:  82  callprop "setPosition"
+01052:  82  swap
+01053:  82  notearg
+01054:  82  getlocal 1
+01057:  82  notearg
+01058:  82  call 1
+01061:  82  pop
+01062:  83  name "xs"
+01067:  83  getprop "Utils"
+01072:  83  getprop "Node"
+01077:  83  dup
+01078:  83  callprop "attachNodes"
+01083:  83  swap
+01084:  83  notearg
+01085:  83  this
+01086:  83  getprop "_ccbNode"
+01091:  83  notearg
+01092:  83  this
+01093:  83  getprop "_ccbNode"
+01098:  83  getprop "m_gradeIcon"
+01103:  83  notearg
+01104:  83  call 2
+01107:  83  pop
+01108:  84  name "xs"
+01113:  84  dup
+01114:  84  callprop "log"
+01119:  84  swap
+01120:  84  notearg
+01121:  84  string "SkillTableViewCell ccbUpdateCell 5"
+01126:  84  notearg
+01127:  84  call 1
+01130:  84  pop
+01131:  86  this
+01132:  86  getprop "_ccbNode"
+01137:  86  getprop "m_fightLab"
+01142:  86  dup
+01143:  86  callprop "setString"
+01148:  86  swap
+01149:  86  notearg
+01150:  86  this
+01151:  86  getprop "_data"
+01156:  86  dup
+01157:  86  callprop "getAttrNaked"
+01162:  86  swap
+01163:  86  notearg
+01164:  86  name "xs"
+01169:  86  getprop "Constant_AttrType_FightPoint"
+01174:  86  notearg
+01175:  86  call 1
+01178:  86  notearg
+01179:  86  call 1
+01182:  86  pop
+01183:  86  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:31 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=2
+;; local[0] _id
+;; local[1] _model
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:67 ---
+loc   line  op
+----- ----  --
+main:
+00000:  68  this
+00001:  68  getprop "_data"
+00006:  68  dup
+00007:  68  callprop "getId"
+00012:  68  swap
+00013:  68  notearg
+00014:  68  call 0
+00017:  68  setlocal 0
+00020:  68  pop
+00021:  69  this
+00022:  69  getprop "_data"
+00027:  69  setlocal 1
+00030:  69  pop
+00031:  70  name "xs"
+00036:  70  getprop "Views"
+00041:  70  getprop "Mgr"
+00046:  70  dup
+00047:  70  callprop "showDialogByName"
+00052:  70  swap
+00053:  70  notearg
+00054:  70  string "SkillNoPanel"
+00059:  70  notearg
+00060:  70  newinit 1
+00065:  71  getlocal 1
+00068:  71  initprop "skillData"
+00073:  71  endinit
+00074:  71  notearg
+00075:  71  call 2
+00078:  71  pop
+00079:  72  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:67 ---
+;; function object[6] create
+;; function metadata object[6] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] object
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:90 ---
+loc   line  op
+----- ----  --
+main:
+00000:  91  name "xs"
+00005:  91  dup
+00006:  91  callprop "log"
+00011:  91  swap
+00012:  91  notearg
+00013:  91  string "xs.Views.Table.RefiningSkillTableViewCell"
+00018:  91  notearg
+00019:  91  call 1
+00022:  91  pop
+00023:  92  name "xs"
+00028:  92  getprop "Views"
+00033:  92  getprop "Table"
+00038:  92  getprop "Cell"
+00043:  92  getprop "RefiningSkillTableViewCell"
+00048:  92  undefined
+00049:  92  notearg
+00050:  92  new 0
+00053:  92  setlocal 0
+00056:  92  pop
+00057:  93  getlocal 0
+00060:  93  and 84 (+24)
+00065:  93  pop
+00066:  93  getlocal 0
+00069:  93  dup
+00070:  93  callprop "initWithData"
+00075:  93  swap
+00076:  93  notearg
+00077:  93  getarg 0
+00080:  93  notearg
+00081:  93  call 1
+00084:  93  ifeq 93 (+9)
+00089:  94  getlocal 0
+00092:  94  return
+00093:  96  name "xs"
+00098:  96  dup
+00099:  96  callprop "assert"
+00104:  96  swap
+00105:  96  notearg
+00106:  96  false
+00107:  96  notearg
+00108:  96  string "xs.Views.Table.Cell.RefiningSkillTableViewCell.create error"
+00113:  96  notearg
+00114:  96  call 2
+00117:  96  pop
+00118:  97  null
+00119:  97  return
+00120:  97  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableViewCell.js:90 ---

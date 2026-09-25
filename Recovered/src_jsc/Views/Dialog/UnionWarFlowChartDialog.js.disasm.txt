@@ -1,0 +1,966 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Dialog/UnionWarFlowChartDialog.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=1500 object[0]
+;; FUNCTION-MAP kind=lambda offset=1510 object[1]
+;; FUNCTION-MAP kind=lambda offset=1520 object[2]
+;; FUNCTION-MAP kind=lambda offset=1530 object[3]
+;; FUNCTION-MAP kind=lambda offset=1540 object[4]
+;; FUNCTION-MAP kind=lambda offset=1581 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Views"
+00010:   9  getprop "Dialog"
+00015:   9  name "xs"
+00020:   9  getprop "Views"
+00025:   9  getprop "HungerLayer"
+00030:   9  dup
+00031:   9  callprop "extend"
+00036:   9  swap
+00037:   9  notearg
+00038:   9  newinit 1
+00043:  11  newarray 28
+00047:  17  newinit 1
+00052:  19  int8 -1
+00054:  19  initprop "serverType"
+00059:  20  zero
+00060:  20  initprop "group"
+00065:  21  name "xs"
+00070:  21  getprop "Constant_UnionWar_State_ActiveStatistical"
+00075:  21  initprop "state"
+00080:  21  endinit
+00081:  21  initelem_array 0
+00085:  23  newinit 1
+00090:  25  int8 -1
+00092:  25  initprop "serverType"
+00097:  26  zero
+00098:  26  initprop "group"
+00103:  27  name "xs"
+00108:  27  getprop "Constant_UnionWar_State_Apply"
+00113:  27  initprop "state"
+00118:  27  endinit
+00119:  27  initelem_array 1
+00123:  29  newinit 1
+00128:  30  name "xs"
+00133:  30  getprop "Constant_UnionWar_Server_Local"
+00138:  30  initprop "serverType"
+00143:  31  int8 8
+00145:  31  initprop "group"
+00150:  32  name "xs"
+00155:  32  getprop "Constant_UnionWar_State_Formation"
+00160:  32  initprop "state"
+00165:  32  endinit
+00166:  32  initelem_array 2
+00170:  34  newinit 1
+00175:  35  name "xs"
+00180:  35  getprop "Constant_UnionWar_Server_Local"
+00185:  35  initprop "serverType"
+00190:  36  int8 8
+00192:  36  initprop "group"
+00197:  37  name "xs"
+00202:  37  getprop "Constant_UnionWar_State_Combat"
+00207:  37  initprop "state"
+00212:  38  true
+00213:  38  initprop "noDesc"
+00218:  38  endinit
+00219:  38  initelem_array 3
+00223:  40  newinit 1
+00228:  41  name "xs"
+00233:  41  getprop "Constant_UnionWar_Server_Local"
+00238:  41  initprop "serverType"
+00243:  42  int8 8
+00245:  42  initprop "group"
+00250:  43  name "xs"
+00255:  43  getprop "Constant_UnionWar_State_ShowFight"
+00260:  43  initprop "state"
+00265:  43  endinit
+00266:  43  initelem_array 4
+00270:  45  newinit 1
+00275:  46  name "xs"
+00280:  46  getprop "Constant_UnionWar_Server_Local"
+00285:  46  initprop "serverType"
+00290:  47  int8 4
+00292:  47  initprop "group"
+00297:  48  name "xs"
+00302:  48  getprop "Constant_UnionWar_State_Formation"
+00307:  48  initprop "state"
+00312:  48  endinit
+00313:  48  initelem_array 5
+00317:  50  newinit 1
+00322:  51  name "xs"
+00327:  51  getprop "Constant_UnionWar_Server_Local"
+00332:  51  initprop "serverType"
+00337:  52  int8 4
+00339:  52  initprop "group"
+00344:  53  name "xs"
+00349:  53  getprop "Constant_UnionWar_State_Combat"
+00354:  53  initprop "state"
+00359:  54  true
+00360:  54  initprop "noDesc"
+00365:  54  endinit
+00366:  54  initelem_array 6
+00370:  56  newinit 1
+00375:  57  name "xs"
+00380:  57  getprop "Constant_UnionWar_Server_Local"
+00385:  57  initprop "serverType"
+00390:  58  int8 4
+00392:  58  initprop "group"
+00397:  59  name "xs"
+00402:  59  getprop "Constant_UnionWar_State_ShowFight"
+00407:  59  initprop "state"
+00412:  59  endinit
+00413:  59  initelem_array 7
+00417:  61  newinit 1
+00422:  62  name "xs"
+00427:  62  getprop "Constant_UnionWar_Server_Local"
+00432:  62  initprop "serverType"
+00437:  63  int8 2
+00439:  63  initprop "group"
+00444:  64  name "xs"
+00449:  64  getprop "Constant_UnionWar_State_Formation"
+00454:  64  initprop "state"
+00459:  64  endinit
+00460:  64  initelem_array 8
+00464:  66  newinit 1
+00469:  67  name "xs"
+00474:  67  getprop "Constant_UnionWar_Server_Local"
+00479:  67  initprop "serverType"
+00484:  68  int8 2
+00486:  68  initprop "group"
+00491:  69  name "xs"
+00496:  69  getprop "Constant_UnionWar_State_Combat"
+00501:  69  initprop "state"
+00506:  70  true
+00507:  70  initprop "noDesc"
+00512:  70  endinit
+00513:  70  initelem_array 9
+00517:  72  newinit 1
+00522:  73  name "xs"
+00527:  73  getprop "Constant_UnionWar_Server_Local"
+00532:  73  initprop "serverType"
+00537:  74  int8 2
+00539:  74  initprop "group"
+00544:  75  name "xs"
+00549:  75  getprop "Constant_UnionWar_State_ShowFight"
+00554:  75  initprop "state"
+00559:  75  endinit
+00560:  75  initelem_array 10
+00564:  77  newinit 1
+00569:  78  name "xs"
+00574:  78  getprop "Constant_UnionWar_Server_Local"
+00579:  78  initprop "serverType"
+00584:  79  one
+00585:  79  initprop "group"
+00590:  80  name "xs"
+00595:  80  getprop "Constant_UnionWar_State_Formation"
+00600:  80  initprop "state"
+00605:  80  endinit
+00606:  80  initelem_array 11
+00610:  82  newinit 1
+00615:  83  name "xs"
+00620:  83  getprop "Constant_UnionWar_Server_Local"
+00625:  83  initprop "serverType"
+00630:  84  one
+00631:  84  initprop "group"
+00636:  85  name "xs"
+00641:  85  getprop "Constant_UnionWar_State_Combat"
+00646:  85  initprop "state"
+00651:  86  true
+00652:  86  initprop "noDesc"
+00657:  86  endinit
+00658:  86  initelem_array 12
+00662:  88  newinit 1
+00667:  89  name "xs"
+00672:  89  getprop "Constant_UnionWar_Server_Local"
+00677:  89  initprop "serverType"
+00682:  90  one
+00683:  90  initprop "group"
+00688:  91  name "xs"
+00693:  91  getprop "Constant_UnionWar_State_ShowFight"
+00698:  91  initprop "state"
+00703:  91  endinit
+00704:  91  initelem_array 13
+00708:  93  newinit 1
+00713:  95  int8 -1
+00715:  95  initprop "serverType"
+00720:  96  zero
+00721:  96  initprop "group"
+00726:  97  name "xs"
+00731:  97  getprop "Constant_UnionWar_State_LocalEndAndSpanBefore"
+00736:  97  initprop "state"
+00741:  98  true
+00742:  98  initprop "noDesc"
+00747:  98  endinit
+00748:  98  initelem_array 14
+00752: 101  newinit 1
+00757: 102  name "xs"
+00762: 102  getprop "Constant_UnionWar_Server_International"
+00767: 102  initprop "serverType"
+00772: 103  int8 8
+00774: 103  initprop "group"
+00779: 104  name "xs"
+00784: 104  getprop "Constant_UnionWar_State_Formation"
+00789: 104  initprop "state"
+00794: 104  endinit
+00795: 104  initelem_array 15
+00799: 106  newinit 1
+00804: 107  name "xs"
+00809: 107  getprop "Constant_UnionWar_Server_International"
+00814: 107  initprop "serverType"
+00819: 108  int8 8
+00821: 108  initprop "group"
+00826: 109  name "xs"
+00831: 109  getprop "Constant_UnionWar_State_Combat"
+00836: 109  initprop "state"
+00841: 110  true
+00842: 110  initprop "noDesc"
+00847: 110  endinit
+00848: 110  initelem_array 16
+00852: 112  newinit 1
+00857: 113  name "xs"
+00862: 113  getprop "Constant_UnionWar_Server_International"
+00867: 113  initprop "serverType"
+00872: 114  int8 8
+00874: 114  initprop "group"
+00879: 115  name "xs"
+00884: 115  getprop "Constant_UnionWar_State_ShowFight"
+00889: 115  initprop "state"
+00894: 115  endinit
+00895: 115  initelem_array 17
+00899: 117  newinit 1
+00904: 118  name "xs"
+00909: 118  getprop "Constant_UnionWar_Server_International"
+00914: 118  initprop "serverType"
+00919: 119  int8 4
+00921: 119  initprop "group"
+00926: 120  name "xs"
+00931: 120  getprop "Constant_UnionWar_State_Formation"
+00936: 120  initprop "state"
+00941: 120  endinit
+00942: 120  initelem_array 18
+00946: 122  newinit 1
+00951: 123  name "xs"
+00956: 123  getprop "Constant_UnionWar_Server_International"
+00961: 123  initprop "serverType"
+00966: 124  int8 4
+00968: 124  initprop "group"
+00973: 125  name "xs"
+00978: 125  getprop "Constant_UnionWar_State_Combat"
+00983: 125  initprop "state"
+00988: 126  true
+00989: 126  initprop "noDesc"
+00994: 126  endinit
+00995: 126  initelem_array 19
+00999: 128  newinit 1
+01004: 129  name "xs"
+01009: 129  getprop "Constant_UnionWar_Server_International"
+01014: 129  initprop "serverType"
+01019: 130  int8 4
+01021: 130  initprop "group"
+01026: 131  name "xs"
+01031: 131  getprop "Constant_UnionWar_State_ShowFight"
+01036: 131  initprop "state"
+01041: 131  endinit
+01042: 131  initelem_array 20
+01046: 133  newinit 1
+01051: 134  name "xs"
+01056: 134  getprop "Constant_UnionWar_Server_International"
+01061: 134  initprop "serverType"
+01066: 135  int8 2
+01068: 135  initprop "group"
+01073: 136  name "xs"
+01078: 136  getprop "Constant_UnionWar_State_Formation"
+01083: 136  initprop "state"
+01088: 136  endinit
+01089: 136  initelem_array 21
+01093: 138  newinit 1
+01098: 139  name "xs"
+01103: 139  getprop "Constant_UnionWar_Server_International"
+01108: 139  initprop "serverType"
+01113: 140  int8 2
+01115: 140  initprop "group"
+01120: 141  name "xs"
+01125: 141  getprop "Constant_UnionWar_State_Combat"
+01130: 141  initprop "state"
+01135: 142  true
+01136: 142  initprop "noDesc"
+01141: 142  endinit
+01142: 142  initelem_array 22
+01146: 144  newinit 1
+01151: 145  name "xs"
+01156: 145  getprop "Constant_UnionWar_Server_International"
+01161: 145  initprop "serverType"
+01166: 146  int8 2
+01168: 146  initprop "group"
+01173: 147  name "xs"
+01178: 147  getprop "Constant_UnionWar_State_ShowFight"
+01183: 147  initprop "state"
+01188: 147  endinit
+01189: 147  initelem_array 23
+01193: 149  newinit 1
+01198: 150  name "xs"
+01203: 150  getprop "Constant_UnionWar_Server_International"
+01208: 150  initprop "serverType"
+01213: 151  one
+01214: 151  initprop "group"
+01219: 152  name "xs"
+01224: 152  getprop "Constant_UnionWar_State_Formation"
+01229: 152  initprop "state"
+01234: 152  endinit
+01235: 152  initelem_array 24
+01239: 154  newinit 1
+01244: 155  name "xs"
+01249: 155  getprop "Constant_UnionWar_Server_International"
+01254: 155  initprop "serverType"
+01259: 156  one
+01260: 156  initprop "group"
+01265: 157  name "xs"
+01270: 157  getprop "Constant_UnionWar_State_Combat"
+01275: 157  initprop "state"
+01280: 158  true
+01281: 158  initprop "noDesc"
+01286: 158  endinit
+01287: 158  initelem_array 25
+01291: 160  newinit 1
+01296: 161  name "xs"
+01301: 161  getprop "Constant_UnionWar_Server_International"
+01306: 161  initprop "serverType"
+01311: 162  one
+01312: 162  initprop "group"
+01317: 163  name "xs"
+01322: 163  getprop "Constant_UnionWar_State_ShowFight"
+01327: 163  initprop "state"
+01332: 163  endinit
+01333: 163  initelem_array 26
+01337: 165  newinit 1
+01342: 167  int8 -1
+01344: 167  initprop "serverType"
+01349: 168  zero
+01350: 168  initprop "group"
+01355: 169  name "xs"
+01360: 169  getprop "Constant_UnionWar_State_EndSpanNextWeekBefore"
+01365: 169  initprop "state"
+01370: 170  true
+01371: 170  initprop "noDesc"
+01376: 170  endinit
+01377: 170  initelem_array 27
+01381: 170  endinit
+01382: 170  initprop "flowChartCfg"
+01387: 173  newarray 2
+01391: 175  newinit 1
+01396: 175  int8 2
+01398: 175  initprop "tag"
+01403: 175  string "btn"
+01408: 175  initprop "type"
+01413: 175  string "btnClose"
+01418: 175  initprop "name"
+01423: 175  string "Btn_Close"
+01428: 175  initprop "id"
+01433: 175  endinit
+01434: 175  initelem_array 0
+01438: 176  newinit 1
+01443: 176  one
+01444: 176  initprop "tag"
+01449: 176  string "ls"
+01454: 176  initprop "type"
+01459: 176  string "lblTitle"
+01464: 176  initprop "name"
+01469: 176  string "LS_popUI1"
+01474: 176  initprop "id"
+01479: 176  string "uwar_ep_title"
+01484: 176  initprop "stringId"
+01489: 176  endinit
+01490: 176  initelem_array 1
+01494: 176  endinit
+01495: 176  initprop "ccbNodeCfg"
+01500: 179  lambda (function () {
+    [sourceless code]
+})
+01505: 179  initprop "init"
+01510: 238  lambda (function () {
+    [sourceless code]
+})
+01515: 238  initprop "onEnter"
+01520: 251  lambda (function () {
+    [sourceless code]
+})
+01525: 251  initprop "onExit"
+01530: 255  lambda (function () {
+    [sourceless code]
+})
+01535: 255  initprop "onBtnCloseClicked"
+01540: 259  lambda (function () {
+    [sourceless code]
+})
+01545: 259  initprop "setBaseTouchPriority"
+01550: 259  endinit
+01551: 259  notearg
+01552: 259  call 1
+01555: 259  setprop "UnionWarFlowChartDialog"
+01560: 259  popv
+01561: 267  name "xs"
+01566: 267  getprop "Views"
+01571: 267  getprop "Dialog"
+01576: 267  getprop "UnionWarFlowChartDialog"
+01581: 267  lambda (function () {
+    [sourceless code]
+})
+01586: 267  setprop "create"
+01591: 267  popv
+01592: 276  name "xs"
+01597: 276  getprop "Views"
+01602: 276  getprop "Mgr"
+01607: 276  dup
+01608: 276  callprop "registerDialog"
+01613: 276  swap
+01614: 276  notearg
+01615: 276  string "UnionWarFlowChartDialog"
+01620: 276  notearg
+01621: 276  newinit 1
+01626: 277  name "xs"
+01631: 277  getprop "Views"
+01636: 277  getprop "Dialog"
+01641: 277  getprop "UnionWarFlowChartDialog"
+01646: 277  initprop "class"
+01651: 278  name "xs"
+01656: 278  getprop "Constant_DlgStyleType_Small"
+01661: 278  initprop "styleType"
+01666: 278  endinit
+01667: 278  notearg
+01668: 278  call 2
+01671: 278  popv
+01672: 279  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _stageDetail
+;; local[1] i
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:179 ---
+loc   line  op
+----- ----  --
+main:
+00000: 180  this
+00001: 180  dup
+00002: 180  callprop "_super"
+00007: 180  swap
+00008: 180  notearg
+00009: 180  call 0
+00012: 180  not
+00013: 180  ifeq 20 (+7)
+00018: 181  false
+00019: 181  return
+00020: 185  this
+00021: 185  int8 -1
+00023: 185  setprop "_stateNowIdx"
+00028: 185  pop
+00029: 186  this
+00030: 186  null
+00031: 186  setprop "btnClose"
+00036: 186  pop
+00037: 189  this
+00038: 189  name "xs"
+00043: 189  getprop "ccb_reader"
+00048: 189  dup
+00049: 189  callprop "load"
+00054: 189  swap
+00055: 189  notearg
+00056: 189  string "ccb3/unionWarFlowChartDialog.ccbi"
+00061: 189  notearg
+00062: 189  call 1
+00065: 189  setprop "ccbNode"
+00070: 189  pop
+00071: 190  this
+00072: 190  getprop "ccbNode"
+00077: 190  dup
+00078: 190  callprop "setContentSize"
+00083: 190  swap
+00084: 190  notearg
+00085: 190  name "cc"
+00090: 190  dup
+00091: 190  callprop "size"
+00096: 190  swap
+00097: 190  notearg
+00098: 190  uint16 856
+00101: 190  notearg
+00102: 190  uint16 615
+00105: 190  notearg
+00106: 190  call 2
+00109: 190  notearg
+00110: 190  call 1
+00113: 190  pop
+00114: 191  this
+00115: 191  getprop "ccbNode"
+00120: 191  dup
+00121: 191  callprop "setAnchorPoint"
+00126: 191  swap
+00127: 191  notearg
+00128: 191  name "cc"
+00133: 191  dup
+00134: 191  callprop "p"
+00139: 191  swap
+00140: 191  notearg
+00141: 191  double 0.5
+00146: 191  notearg
+00147: 191  double 0.5
+00152: 191  notearg
+00153: 191  call 2
+00156: 191  notearg
+00157: 191  call 1
+00160: 191  pop
+00161: 192  name "xs"
+00166: 192  getprop "Utils"
+00171: 192  getprop "Node"
+00176: 192  dup
+00177: 192  callprop "attachNodes"
+00182: 192  swap
+00183: 192  notearg
+00184: 192  this
+00185: 192  notearg
+00186: 192  this
+00187: 192  getprop "ccbNode"
+00192: 192  notearg
+00193: 192  newinit 1
+00198: 192  string "c"
+00203: 192  initprop "desc"
+00208: 192  endinit
+00209: 192  notearg
+00210: 192  call 3
+00213: 192  pop
+00214: 193  name "xs"
+00219: 193  getprop "Utils"
+00224: 193  getprop "UI"
+00229: 193  dup
+00230: 193  callprop "replaceCcbByCfg"
+00235: 193  swap
+00236: 193  notearg
+00237: 193  this
+00238: 193  getprop "ccbNode"
+00243: 193  notearg
+00244: 193  this
+00245: 193  getprop "ccbNodeCfg"
+00250: 193  notearg
+00251: 193  this
+00252: 193  notearg
+00253: 193  call 3
+00256: 193  pop
+00257: 194  this
+00258: 194  getprop "lblTitle"
+00263: 194  dup
+00264: 194  callprop "setFontSize"
+00269: 194  swap
+00270: 194  notearg
+00271: 194  int8 48
+00273: 194  notearg
+00274: 194  call 1
+00277: 194  pop
+00278: 197  this
+00279: 197  name "xs"
+00284: 197  getprop "Views"
+00289: 197  getprop "Table"
+00294: 197  getprop "UnionWarFlowChartTableView"
+00299: 197  dup
+00300: 197  callprop "create"
+00305: 197  swap
+00306: 197  notearg
+00307: 197  call 0
+00310: 197  setprop "tableView"
+00315: 197  pop
+00316: 198  this
+00317: 198  getprop "tableView"
+00322: 198  dup
+00323: 198  callprop "setPosition"
+00328: 198  swap
+00329: 198  notearg
+00330: 198  name "cc"
+00335: 198  dup
+00336: 198  callprop "p"
+00341: 198  swap
+00342: 198  notearg
+00343: 198  int8 34
+00345: 198  notearg
+00346: 198  int8 10
+00348: 198  notearg
+00349: 198  call 2
+00352: 198  notearg
+00353: 198  call 1
+00356: 198  pop
+00357: 199  this
+00358: 199  getprop "tableView"
+00363: 199  dup
+00364: 199  callprop "setData"
+00369: 199  swap
+00370: 199  notearg
+00371: 199  this
+00372: 199  getprop "flowChartCfg"
+00377: 199  notearg
+00378: 199  call 1
+00381: 199  pop
+00382: 201  name "xs"
+00387: 201  getprop "Utils"
+00392: 201  getprop "Node"
+00397: 201  dup
+00398: 201  callprop "attachNodes"
+00403: 201  swap
+00404: 201  notearg
+00405: 201  this
+00406: 201  getprop "ccbNode"
+00411: 201  notearg
+00412: 201  this
+00413: 201  getprop "tableView"
+00418: 201  notearg
+00419: 201  call 2
+00422: 201  pop
+00423: 204  name "xs"
+00428: 204  getprop "Profile"
+00433: 204  getprop "GameData"
+00438: 204  getprop "Mgr"
+00443: 204  dup
+00444: 204  callprop "getInstance"
+00449: 204  swap
+00450: 204  notearg
+00451: 204  call 0
+00454: 204  getprop "UnionWar"
+00459: 204  dup
+00460: 204  callprop "getUnionWar"
+00465: 204  swap
+00466: 204  notearg
+00467: 204  call 0
+00470: 204  dup
+00471: 204  callprop "getUnionWarStageDetail"
+00476: 204  swap
+00477: 204  notearg
+00478: 204  call 0
+00481: 204  setlocal 0
+00484: 204  pop
+00485: 206  zero
+00486: 206  setlocal 1
+00489: 206  pop
+00490: 206  goto 726 (+236)
+00495: 207  loophead
+00496: 207  this
+00497: 207  getprop "flowChartCfg"
+00502: 207  getlocal 1
+00505: 207  getelem
+00506: 207  setlocal 2
+00509: 207  pop
+00510: 208  getlocal 2
+00513: 208  getprop "state"
+00518: 208  getlocal 0
+00521: 208  getprop "state"
+00526: 208  eq
+00527: 208  ifeq 711 (+184)
+00532: 209  getlocal 2
+00535: 209  getprop "state"
+00540: 209  name "xs"
+00545: 209  getprop "Constant_UnionWar_State_ActiveStatistical"
+00550: 209  eq
+00551: 209  or 626 (+75)
+00556: 209  pop
+00557: 210  getlocal 2
+00560: 210  getprop "state"
+00565: 210  name "xs"
+00570: 210  getprop "Constant_UnionWar_State_Apply"
+00575: 210  eq
+00576: 210  or 626 (+50)
+00581: 210  pop
+00582: 211  getlocal 2
+00585: 211  getprop "state"
+00590: 211  name "xs"
+00595: 211  getprop "Constant_UnionWar_State_LocalEndAndSpanBefore"
+00600: 211  eq
+00601: 211  or 626 (+25)
+00606: 211  pop
+00607: 212  getlocal 2
+00610: 212  getprop "state"
+00615: 212  name "xs"
+00620: 212  getprop "Constant_UnionWar_State_EndSpanNextWeekBefore"
+00625: 212  eq
+00626: 212  ifeq 651 (+25)
+00631: 214  this
+00632: 214  getlocal 1
+00635: 214  setprop "_stateNowIdx"
+00640: 214  pop
+00641: 215  goto 747 (+106)
+00646: 215  goto 711 (+65)
+00651: 218  getlocal 2
+00654: 218  getprop "serverType"
+00659: 218  getlocal 0
+00662: 218  getprop "serverType"
+00667: 218  eq
+00668: 218  and 691 (+23)
+00673: 218  pop
+00674: 219  getlocal 2
+00677: 219  getprop "group"
+00682: 219  getlocal 0
+00685: 219  getprop "group"
+00690: 219  eq
+00691: 219  ifeq 711 (+20)
+00696: 221  this
+00697: 221  getlocal 1
+00700: 221  setprop "_stateNowIdx"
+00705: 221  pop
+00706: 222  goto 747 (+41)
+00711: 206  localinc 11
+00714: 206  getlocal 1
+00717: 206  pos
+00718: 206  dup
+00719: 206  one
+00720: 206  add
+00721: 206  setlocal 1
+00724: 206  pop
+00725: 206  pop
+00726: 206  loopentry
+00727: 206  getlocal 1
+00730: 206  this
+00731: 206  getprop "flowChartCfg"
+00736: 206  length "length"
+00741: 206  lt
+00742: 206  ifne 495 (-247)
+00747: 231  this
+00748: 231  getprop "tableView"
+00753: 231  dup
+00754: 231  callprop "setStateNowIdx"
+00759: 231  swap
+00760: 231  notearg
+00761: 231  this
+00762: 231  getprop "_stateNowIdx"
+00767: 231  notearg
+00768: 231  call 1
+00771: 231  pop
+00772: 233  this
+00773: 233  getprop "btnClose"
+00778: 233  dup
+00779: 233  callprop "setOnClickCallBack"
+00784: 233  swap
+00785: 233  notearg
+00786: 233  this
+00787: 233  getprop "onBtnCloseClicked"
+00792: 233  dup
+00793: 233  callprop "bind"
+00798: 233  swap
+00799: 233  notearg
+00800: 233  this
+00801: 233  notearg
+00802: 233  call 1
+00805: 233  notearg
+00806: 233  call 1
+00809: 233  pop
+00810: 235  true
+00811: 235  return
+00812: 235  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:179 ---
+;; function object[1] onEnter
+;; function metadata object[1] nargs=0 bindings=2
+;; local[0] _cellHeight
+;; local[1] _offY
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:238 ---
+loc   line  op
+----- ----  --
+main:
+00000: 239  this
+00001: 239  dup
+00002: 239  callprop "_super"
+00007: 239  swap
+00008: 239  notearg
+00009: 239  call 0
+00012: 239  pop
+00013: 241  this
+00014: 241  getprop "tableView"
+00019: 241  dup
+00020: 241  callprop "makeCellSize"
+00025: 241  swap
+00026: 241  notearg
+00027: 241  null
+00028: 241  notearg
+00029: 241  one
+00030: 241  notearg
+00031: 241  call 2
+00034: 241  getprop "height"
+00039: 241  setlocal 0
+00042: 241  pop
+00043: 242  int8 -1
+00045: 242  getlocal 0
+00048: 242  this
+00049: 242  getprop "flowChartCfg"
+00054: 242  length "length"
+00059: 242  this
+00060: 242  getprop "_stateNowIdx"
+00065: 242  sub
+00066: 242  mul
+00067: 242  this
+00068: 242  getprop "tableView"
+00073: 242  dup
+00074: 242  callprop "makeViewSize"
+00079: 242  swap
+00080: 242  notearg
+00081: 242  call 0
+00084: 242  getprop "height"
+00089: 242  sub
+00090: 242  mul
+00091: 242  setlocal 1
+00094: 242  pop
+00095: 244  getlocal 1
+00098: 244  zero
+00099: 244  gt
+00100: 244  ifeq 110 (+10)
+00105: 245  zero
+00106: 245  setlocal 1
+00109: 245  pop
+00110: 248  this
+00111: 248  getprop "tableView"
+00116: 248  dup
+00117: 248  callprop "setContentOffset"
+00122: 248  swap
+00123: 248  notearg
+00124: 248  name "cc"
+00129: 248  dup
+00130: 248  callprop "p"
+00135: 248  swap
+00136: 248  notearg
+00137: 248  zero
+00138: 248  notearg
+00139: 248  getlocal 1
+00142: 248  notearg
+00143: 248  call 2
+00146: 248  notearg
+00147: 248  true
+00148: 248  notearg
+00149: 248  call 2
+00152: 248  pop
+00153: 248  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:238 ---
+;; function object[2] onExit
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:251 ---
+loc   line  op
+----- ----  --
+main:
+00000: 252  this
+00001: 252  dup
+00002: 252  callprop "_super"
+00007: 252  swap
+00008: 252  notearg
+00009: 252  call 0
+00012: 252  pop
+00013: 252  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:251 ---
+;; function object[3] onBtnCloseClicked
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:255 ---
+loc   line  op
+----- ----  --
+main:
+00000: 256  name "xs"
+00005: 256  getprop "Views"
+00010: 256  getprop "Mgr"
+00015: 256  dup
+00016: 256  callprop "hideDialog"
+00021: 256  swap
+00022: 256  notearg
+00023: 256  call 0
+00026: 256  pop
+00027: 256  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:255 ---
+;; function object[4] setBaseTouchPriority
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:259 ---
+loc   line  op
+----- ----  --
+main:
+00000: 260  this
+00001: 260  getarg 0
+00004: 260  setprop "m_baseTouchPriority"
+00009: 260  pop
+00010: 261  this
+00011: 261  getprop "btnClose"
+00016: 261  dup
+00017: 261  callprop "setTouchPriority"
+00022: 261  swap
+00023: 261  notearg
+00024: 261  this
+00025: 261  getprop "m_baseTouchPriority"
+00030: 261  one
+00031: 261  sub
+00032: 261  notearg
+00033: 261  call 1
+00036: 261  pop
+00037: 262  this
+00038: 262  getprop "tableView"
+00043: 262  dup
+00044: 262  callprop "setTouchPriority"
+00049: 262  swap
+00050: 262  notearg
+00051: 262  this
+00052: 262  getprop "m_baseTouchPriority"
+00057: 262  one
+00058: 262  sub
+00059: 262  notearg
+00060: 262  call 1
+00063: 262  pop
+00064: 262  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:259 ---
+;; function object[5] create
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] dialog
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:267 ---
+loc   line  op
+----- ----  --
+main:
+00000: 268  name "xs"
+00005: 268  getprop "Views"
+00010: 268  getprop "Dialog"
+00015: 268  getprop "UnionWarFlowChartDialog"
+00020: 268  undefined
+00021: 268  notearg
+00022: 268  new 0
+00025: 268  setlocal 0
+00028: 268  pop
+00029: 269  getlocal 0
+00032: 269  and 56 (+24)
+00037: 269  pop
+00038: 269  getlocal 0
+00041: 269  dup
+00042: 269  callprop "init"
+00047: 269  swap
+00048: 269  notearg
+00049: 269  getarg 0
+00052: 269  notearg
+00053: 269  call 1
+00056: 269  ifeq 65 (+9)
+00061: 270  getlocal 0
+00064: 270  return
+00065: 272  name "xs"
+00070: 272  dup
+00071: 272  callprop "warn"
+00076: 272  swap
+00077: 272  notearg
+00078: 272  string "xs.Views.Dialog.UnionWarFlowChartDialog.create error!"
+00083: 272  notearg
+00084: 272  call 1
+00087: 272  pop
+00088: 273  null
+00089: 273  return
+00090: 273  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionWarFlowChartDialog.js:267 ---

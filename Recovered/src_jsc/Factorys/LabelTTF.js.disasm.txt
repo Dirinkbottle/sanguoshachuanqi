@@ -1,0 +1,496 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Factorys/LabelTTF.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=46 object[0]
+;; FUNCTION-MAP kind=lambda offset=56 object[1]
+;; FUNCTION-MAP kind=lambda offset=66 object[2]
+;; FUNCTION-MAP kind=lambda offset=76 object[3]
+;; FUNCTION-MAP kind=lambda offset=86 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  name "xs"
+00005:  12  getprop "Factorys"
+00010:  12  name "xs"
+00015:  12  getprop "Factorys"
+00020:  12  getprop "LabelTTF"
+00025:  12  or 97 (+72)
+00030:  12  pop
+00031:  12  newinit 1
+00036:  14  string "xs.Factorys.LabelTTF"
+00041:  14  initprop "name"
+00046:  17  lambda (function () {
+    [sourceless code]
+})
+00051:  17  initprop "_create"
+00056:  70  lambda (function () {
+    [sourceless code]
+})
+00061:  70  initprop "_setNext"
+00066:  85  lambda (function () {
+    [sourceless code]
+})
+00071:  85  initprop "_setLast"
+00076: 101  lambda (function () {
+    [sourceless code]
+})
+00081: 101  initprop "_refreshLayout"
+00086: 122  lambda (function () {
+    [sourceless code]
+})
+00091: 122  initprop "create"
+00096: 122  endinit
+00097: 122  setprop "LabelTTF"
+00102: 122  popv
+00103: 163  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:1 ---
+;; function object[0] _create
+;; function metadata object[0] nargs=5 bindings=8
+;; arg[0] str
+;; arg[1] fontSize
+;; arg[2] fontName
+;; arg[3] alignmentH
+;; arg[4] alignmentV
+;; local[0] _fontName
+;; local[1] _str
+;; local[2] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  getarg 2
+00003:  19  or 14 (+11)
+00008:  19  pop
+00009:  19  string ""
+00014:  19  setlocal 0
+00017:  19  pop
+00018:  21  getarg 0
+00021:  21  or 32 (+11)
+00026:  21  pop
+00027:  21  string ""
+00032:  21  setlocal 1
+00035:  21  pop
+00036:  23  getlocal 0
+00039:  23  string ""
+00044:  23  stricteq
+00045:  23  ifeq 50 (+5)
+00050:  32  name "cc"
+00055:  32  getprop "LabelTTF"
+00060:  32  dup
+00061:  32  callprop "create"
+00066:  32  swap
+00067:  32  notearg
+00068:  32  getlocal 1
+00071:  32  notearg
+00072:  32  getlocal 0
+00075:  32  notearg
+00076:  32  getarg 1
+00079:  32  notearg
+00080:  32  call 3
+00083:  32  setlocal 2
+00086:  32  pop
+00087:  33  getarg 3
+00090:  33  name "undefined"
+00095:  33  strictne
+00096:  33  and 107 (+11)
+00101:  33  pop
+00102:  33  getarg 3
+00105:  33  null
+00106:  33  strictne
+00107:  33  ifeq 131 (+24)
+00112:  34  getlocal 2
+00115:  34  dup
+00116:  34  callprop "setHorizontalAlignment"
+00121:  34  swap
+00122:  34  notearg
+00123:  34  getarg 3
+00126:  34  notearg
+00127:  34  call 1
+00130:  34  pop
+00131:  37  getarg 4
+00134:  37  name "undefined"
+00139:  37  strictne
+00140:  37  and 151 (+11)
+00145:  37  pop
+00146:  37  getarg 4
+00149:  37  null
+00150:  37  strictne
+00151:  37  ifeq 175 (+24)
+00156:  38  getlocal 2
+00159:  38  dup
+00160:  38  callprop "setVerticalAlignment"
+00165:  38  swap
+00166:  38  notearg
+00167:  38  getarg 4
+00170:  38  notearg
+00171:  38  call 1
+00174:  38  pop
+00175:  49  name "xs"
+00180:  49  getprop "Factorys"
+00185:  49  getprop "BaseLabel"
+00190:  49  dup
+00191:  49  callprop "_wrapperExt"
+00196:  49  swap
+00197:  49  notearg
+00198:  49  getlocal 2
+00201:  49  notearg
+00202:  49  this
+00203:  49  notearg
+00204:  49  call 2
+00207:  49  pop
+00208:  51  getlocal 2
+00211:  51  dup
+00212:  51  callprop "refreshAp"
+00217:  51  swap
+00218:  51  notearg
+00219:  51  call 0
+00222:  51  pop
+00223:  56  getlocal 2
+00226:  56  return
+00227:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:17 ---
+;; function object[1] _setNext
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] nextLabel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:70 ---
+loc   line  op
+----- ----  --
+main:
+00000:  72  this
+00001:  72  dup
+00002:  72  callprop "assert"
+00007:  72  swap
+00008:  72  notearg
+00009:  72  this
+00010:  72  getprop "m_nextLabel"
+00015:  72  not
+00016:  72  notearg
+00017:  72  string "nextlabel is already exist"
+00022:  72  notearg
+00023:  72  call 2
+00026:  72  pop
+00027:  74  this
+00028:  74  getarg 0
+00031:  74  setprop "m_nextLabel"
+00036:  74  pop
+00037:  77  getarg 0
+00040:  77  dup
+00041:  77  callprop "setAligns"
+00046:  77  swap
+00047:  77  notearg
+00048:  77  name "xs"
+00053:  77  getprop "AlignH_Left"
+00058:  77  notearg
+00059:  77  name "xs"
+00064:  77  getprop "AlignV_Center"
+00069:  77  notearg
+00070:  77  call 2
+00073:  77  pop
+00074:  80  name "xs"
+00079:  80  getprop "Utils"
+00084:  80  getprop "Node"
+00089:  80  dup
+00090:  80  callprop "attachNodes"
+00095:  80  swap
+00096:  80  notearg
+00097:  80  this
+00098:  80  notearg
+00099:  80  this
+00100:  80  getprop "m_nextLabel"
+00105:  80  notearg
+00106:  80  newinit 1
+00111:  80  string "rc"
+00116:  80  initprop "base"
+00121:  80  endinit
+00122:  80  notearg
+00123:  80  call 3
+00126:  80  pop
+00127:  82  getarg 0
+00130:  82  return
+00131:  82  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:70 ---
+;; function object[2] _setLast
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] lastLabel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:85 ---
+loc   line  op
+----- ----  --
+main:
+00000:  87  this
+00001:  87  dup
+00002:  87  callprop "assert"
+00007:  87  swap
+00008:  87  notearg
+00009:  87  this
+00010:  87  getprop "m_lastLabel"
+00015:  87  not
+00016:  87  notearg
+00017:  87  string "lastLabel is already exist"
+00022:  87  notearg
+00023:  87  call 2
+00026:  87  pop
+00027:  89  this
+00028:  89  getarg 0
+00031:  89  setprop "m_lastLabel"
+00036:  89  pop
+00037:  93  getarg 0
+00040:  93  dup
+00041:  93  callprop "setAligns"
+00046:  93  swap
+00047:  93  notearg
+00048:  93  name "xs"
+00053:  93  getprop "AlignH_Right"
+00058:  93  notearg
+00059:  93  name "xs"
+00064:  93  getprop "AlignV_Center"
+00069:  93  notearg
+00070:  93  call 2
+00073:  93  pop
+00074:  96  name "xs"
+00079:  96  getprop "Utils"
+00084:  96  getprop "Node"
+00089:  96  dup
+00090:  96  callprop "attachNodes"
+00095:  96  swap
+00096:  96  notearg
+00097:  96  this
+00098:  96  notearg
+00099:  96  this
+00100:  96  getprop "m_lastLabel"
+00105:  96  notearg
+00106:  96  newinit 1
+00111:  96  string "lc"
+00116:  96  initprop "base"
+00121:  96  endinit
+00122:  96  notearg
+00123:  96  call 3
+00126:  96  pop
+00127:  98  getarg 0
+00130:  98  return
+00131:  98  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:85 ---
+;; function object[3] _refreshLayout
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:101 ---
+loc   line  op
+----- ----  --
+main:
+00000: 105  this
+00001: 105  getprop "m_nextLabel"
+00006: 105  ifeq 88 (+82)
+00011: 107  name "xs"
+00016: 107  getprop "Utils"
+00021: 107  getprop "Node"
+00026: 107  dup
+00027: 107  callprop "attachNodes"
+00032: 107  swap
+00033: 107  notearg
+00034: 107  this
+00035: 107  notearg
+00036: 107  this
+00037: 107  getprop "m_nextLabel"
+00042: 107  notearg
+00043: 107  newinit 1
+00048: 107  string "rc"
+00053: 107  initprop "base"
+00058: 107  true
+00059: 107  initprop "pc"
+00064: 107  endinit
+00065: 107  notearg
+00066: 107  call 3
+00069: 107  pop
+00070: 109  this
+00071: 109  getprop "m_nextLabel"
+00076: 109  dup
+00077: 109  callprop "refreshLayout"
+00082: 109  swap
+00083: 109  notearg
+00084: 109  call 0
+00087: 109  pop
+00088: 112  this
+00089: 112  getprop "m_lastLabel"
+00094: 112  ifeq 176 (+82)
+00099: 114  name "xs"
+00104: 114  getprop "Utils"
+00109: 114  getprop "Node"
+00114: 114  dup
+00115: 114  callprop "attachNodes"
+00120: 114  swap
+00121: 114  notearg
+00122: 114  this
+00123: 114  notearg
+00124: 114  this
+00125: 114  getprop "m_lastLabel"
+00130: 114  notearg
+00131: 114  newinit 1
+00136: 114  string "lc"
+00141: 114  initprop "base"
+00146: 114  true
+00147: 114  initprop "pc"
+00152: 114  endinit
+00153: 114  notearg
+00154: 114  call 3
+00157: 114  pop
+00158: 116  this
+00159: 116  getprop "m_lastLabel"
+00164: 116  dup
+00165: 116  callprop "refreshLayout"
+00170: 116  swap
+00171: 116  notearg
+00172: 116  call 0
+00175: 116  pop
+00176: 117  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:101 ---
+;; function object[4] create
+;; function metadata object[4] nargs=4 bindings=9
+;; arg[0] str
+;; arg[1] fontId
+;; arg[2] alignmentH
+;; arg[3] alignmentV
+;; local[0] _fontId
+;; local[1] _info
+;; local[2] _fontname
+;; local[3] _fontNameKey
+;; local[4] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:122 ---
+loc   line  op
+----- ----  --
+main:
+00000: 125  getarg 1
+00003: 125  or 14 (+11)
+00008: 125  pop
+00009: 125  string "Default"
+00014: 125  setlocal 0
+00017: 125  pop
+00018: 128  name "xs"
+00023: 128  getprop "Cfg"
+00028: 128  getprop "System"
+00033: 128  getprop "sgs_config_ttf"
+00038: 128  getlocal 0
+00041: 128  getelem
+00042: 128  setlocal 1
+00045: 128  pop
+00046: 129  getlocal 1
+00049: 129  not
+00050: 129  ifeq 78 (+28)
+00055: 130  name "xs"
+00060: 130  getprop "Cfg"
+00065: 130  getprop "Font"
+00070: 130  getlocal 0
+00073: 130  getelem
+00074: 130  setlocal 1
+00077: 130  pop
+00078: 133  name "xs"
+00083: 133  dup
+00084: 133  callprop "assert"
+00089: 133  swap
+00090: 133  notearg
+00091: 133  getlocal 1
+00094: 133  notearg
+00095: 133  string "createWithFontId ,need _info"
+00100: 133  notearg
+00101: 133  getlocal 0
+00104: 133  notearg
+00105: 133  getarg 1
+00108: 133  notearg
+00109: 133  call 4
+00112: 133  pop
+00113: 136  getlocal 1
+00116: 136  getprop "fontName"
+00121: 136  setlocal 2
+00124: 136  pop
+00125: 137  getlocal 0
+00128: 137  string "Default"
+00133: 137  eq
+00134: 137  ifeq 186 (+52)
+00139: 138  string "fontName_"
+00144: 138  name "xsc"
+00149: 138  getprop "Tools"
+00154: 138  getprop "ProductSys"
+00159: 138  dup
+00160: 138  callprop "getAreaTag"
+00165: 138  swap
+00166: 138  notearg
+00167: 138  call 0
+00170: 138  add
+00171: 138  setlocal 3
+00174: 138  pop
+00175: 139  getlocal 1
+00178: 139  getlocal 3
+00181: 139  getelem
+00182: 139  setlocal 2
+00185: 139  pop
+00186: 141  this
+00187: 141  dup
+00188: 141  callprop "_create"
+00193: 141  swap
+00194: 141  notearg
+00195: 141  getarg 0
+00198: 141  notearg
+00199: 141  getlocal 1
+00202: 141  getprop "fontSize"
+00207: 141  notearg
+00208: 141  getlocal 2
+00211: 141  notearg
+00212: 141  getarg 2
+00215: 141  notearg
+00216: 141  getarg 3
+00219: 141  notearg
+00220: 141  call 5
+00223: 141  setlocal 4
+00226: 141  pop
+00227: 146  getlocal 1
+00230: 146  getprop "color"
+00235: 146  ifeq 266 (+31)
+00240: 148  getlocal 4
+00243: 148  dup
+00244: 148  callprop "setFontFillColor"
+00249: 148  swap
+00250: 148  notearg
+00251: 148  getlocal 1
+00254: 148  getprop "color"
+00259: 148  notearg
+00260: 148  true
+00261: 148  notearg
+00262: 148  call 2
+00265: 148  pop
+00266: 151  getlocal 1
+00269: 151  getprop "strokeColor"
+00274: 151  and 288 (+14)
+00279: 151  pop
+00280: 151  getlocal 1
+00283: 151  getprop "strokeSize"
+00288: 151  ifeq 328 (+40)
+00293: 152  getlocal 4
+00296: 152  dup
+00297: 152  callprop "enableStroke"
+00302: 152  swap
+00303: 152  notearg
+00304: 152  getlocal 1
+00307: 152  getprop "strokeColor"
+00312: 152  notearg
+00313: 152  getlocal 1
+00316: 152  getprop "strokeSize"
+00321: 152  notearg
+00322: 152  true
+00323: 152  notearg
+00324: 152  call 3
+00327: 152  pop
+00328: 161  getlocal 4
+00331: 161  return
+00332: 161  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelTTF.js:122 ---

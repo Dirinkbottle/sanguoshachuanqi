@@ -1,0 +1,766 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/Template.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/Template.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Cfg"
+00010:   7  getprop "Skill"
+00015:   7  newinit 1
+00020:   8  newinit 1
+00025:   8  endinit
+00026:   8  initprop "T_Status"
+00031:  12  newinit 1
+00036:  12  endinit
+00037:  12  initprop "T_Status_0"
+00042:  16  newinit 1
+00047:  16  endinit
+00048:  16  initprop "T_Status_1"
+00053:  20  newinit 1
+00058:  20  zero
+00059:  20  string "super_skill"
+00064:  20  initelem
+00065:  20  one
+00066:  20  string "P_Atk_Add_From"
+00071:  20  initelem
+00072:  20  endinit
+00073:  20  initprop "T_From_Buff_Atk_Add_0"
+00078:  21  newinit 1
+00083:  21  zero
+00084:  21  string "P_Normal_Skill"
+00089:  21  initelem
+00090:  21  one
+00091:  21  string "P_Atk_Add_From"
+00096:  21  initelem
+00097:  21  endinit
+00098:  21  initprop "T_From_Buff_Atk_Add_1"
+00103:  22  newinit 1
+00108:  22  zero
+00109:  22  string "super_skill"
+00114:  22  initelem
+00115:  22  one
+00116:  22  string "P_Atk_Add_To"
+00121:  22  initelem
+00122:  22  endinit
+00123:  22  initprop "T_To_Buff_Atk_Add_0"
+00128:  23  newinit 1
+00133:  23  zero
+00134:  23  string "P_Normal_Skill"
+00139:  23  initelem
+00140:  23  one
+00141:  23  string "P_Atk_Add_To"
+00146:  23  initelem
+00147:  23  endinit
+00148:  23  initprop "T_To_Buff_Atk_Add_1"
+00153:  25  newinit 1
+00158:  25  zero
+00159:  25  string "super_skill"
+00164:  25  initelem
+00165:  25  one
+00166:  25  string "P_Atk_Sub_From"
+00171:  25  initelem
+00172:  25  endinit
+00173:  25  initprop "T_From_Buff_Atk_Sub_0"
+00178:  26  newinit 1
+00183:  26  zero
+00184:  26  string "P_Normal_Skill"
+00189:  26  initelem
+00190:  26  one
+00191:  26  string "P_Atk_Sub_From"
+00196:  26  initelem
+00197:  26  endinit
+00198:  26  initprop "T_From_Buff_Atk_Sub_1"
+00203:  27  newinit 1
+00208:  27  zero
+00209:  27  string "super_skill"
+00214:  27  initelem
+00215:  27  one
+00216:  27  string "P_Atk_Sub_To"
+00221:  27  initelem
+00222:  27  endinit
+00223:  27  initprop "T_To_Buff_Atk_Sub_0"
+00228:  28  newinit 1
+00233:  28  zero
+00234:  28  string "P_Normal_Skill"
+00239:  28  initelem
+00240:  28  one
+00241:  28  string "P_Atk_Sub_To"
+00246:  28  initelem
+00247:  28  endinit
+00248:  28  initprop "T_To_Buff_Atk_Sub_1"
+00253:  30  newinit 1
+00258:  30  zero
+00259:  30  string "super_skill"
+00264:  30  initelem
+00265:  30  one
+00266:  30  string "P_Int_Add_From"
+00271:  30  initelem
+00272:  30  endinit
+00273:  30  initprop "T_From_Buff_Int_Add_0"
+00278:  31  newinit 1
+00283:  31  zero
+00284:  31  string "P_Normal_Skill"
+00289:  31  initelem
+00290:  31  one
+00291:  31  string "P_Int_Add_From"
+00296:  31  initelem
+00297:  31  endinit
+00298:  31  initprop "T_From_Buff_Int_Add_1"
+00303:  32  newinit 1
+00308:  32  zero
+00309:  32  string "super_skill"
+00314:  32  initelem
+00315:  32  one
+00316:  32  string "P_Int_Add_To"
+00321:  32  initelem
+00322:  32  endinit
+00323:  32  initprop "T_To_Buff_Int_Add_0"
+00328:  33  newinit 1
+00333:  33  zero
+00334:  33  string "P_Normal_Skill"
+00339:  33  initelem
+00340:  33  one
+00341:  33  string "P_Int_Add_To"
+00346:  33  initelem
+00347:  33  endinit
+00348:  33  initprop "T_To_Buff_Int_Add_1"
+00353:  35  newinit 1
+00358:  35  zero
+00359:  35  string "super_skill"
+00364:  35  initelem
+00365:  35  one
+00366:  35  string "P_Int_Sub_From"
+00371:  35  initelem
+00372:  35  endinit
+00373:  35  initprop "T_From_Buff_Int_Sub_0"
+00378:  36  newinit 1
+00383:  36  zero
+00384:  36  string "P_Normal_Skill"
+00389:  36  initelem
+00390:  36  one
+00391:  36  string "P_Int_Sub_From"
+00396:  36  initelem
+00397:  36  endinit
+00398:  36  initprop "T_From_Buff_Int_Sub_1"
+00403:  37  newinit 1
+00408:  37  zero
+00409:  37  string "super_skill"
+00414:  37  initelem
+00415:  37  one
+00416:  37  string "P_Int_Sub_To"
+00421:  37  initelem
+00422:  37  endinit
+00423:  37  initprop "T_To_Buff_Int_Sub_0"
+00428:  38  newinit 1
+00433:  38  zero
+00434:  38  string "P_Normal_Skill"
+00439:  38  initelem
+00440:  38  one
+00441:  38  string "P_Int_Sub_To"
+00446:  38  initelem
+00447:  38  endinit
+00448:  38  initprop "T_To_Buff_Int_Sub_1"
+00453:  40  newinit 1
+00458:  40  zero
+00459:  40  string "super_skill"
+00464:  40  initelem
+00465:  40  one
+00466:  40  string "P_Def_Add_From"
+00471:  40  initelem
+00472:  40  endinit
+00473:  40  initprop "T_From_Buff_Def_Add_0"
+00478:  41  newinit 1
+00483:  41  zero
+00484:  41  string "P_Normal_Skill"
+00489:  41  initelem
+00490:  41  one
+00491:  41  string "P_Def_Add_From"
+00496:  41  initelem
+00497:  41  endinit
+00498:  41  initprop "T_From_Buff_Def_Add_1"
+00503:  42  newinit 1
+00508:  42  zero
+00509:  42  string "super_skill"
+00514:  42  initelem
+00515:  42  one
+00516:  42  string "P_Def_Add_To"
+00521:  42  initelem
+00522:  42  endinit
+00523:  42  initprop "T_To_Buff_Def_Add_0"
+00528:  43  newinit 1
+00533:  43  zero
+00534:  43  string "P_Normal_Skill"
+00539:  43  initelem
+00540:  43  one
+00541:  43  string "P_Def_Add_To"
+00546:  43  initelem
+00547:  43  endinit
+00548:  43  initprop "T_To_Buff_Def_Add_1"
+00553:  45  newinit 1
+00558:  45  zero
+00559:  45  string "super_skill"
+00564:  45  initelem
+00565:  45  one
+00566:  45  string "P_Def_Sub_From"
+00571:  45  initelem
+00572:  45  endinit
+00573:  45  initprop "T_From_Buff_Def_Sub_0"
+00578:  46  newinit 1
+00583:  46  zero
+00584:  46  string "P_Normal_Skill"
+00589:  46  initelem
+00590:  46  one
+00591:  46  string "P_Def_Sub_From"
+00596:  46  initelem
+00597:  46  endinit
+00598:  46  initprop "T_From_Buff_Def_Sub_1"
+00603:  47  newinit 1
+00608:  47  zero
+00609:  47  string "super_skill"
+00614:  47  initelem
+00615:  47  one
+00616:  47  string "P_Def_Sub_To"
+00621:  47  initelem
+00622:  47  endinit
+00623:  47  initprop "T_To_Buff_Def_Sub_0"
+00628:  48  newinit 1
+00633:  48  zero
+00634:  48  string "P_Normal_Skill"
+00639:  48  initelem
+00640:  48  one
+00641:  48  string "P_Def_Sub_To"
+00646:  48  initelem
+00647:  48  endinit
+00648:  48  initprop "T_To_Buff_Def_Sub_1"
+00653:  50  newinit 1
+00658:  50  zero
+00659:  50  string "super_skill"
+00664:  50  initelem
+00665:  50  one
+00666:  50  string "P_Cure_From"
+00671:  50  initelem
+00672:  50  endinit
+00673:  50  initprop "T_From_Cure_0"
+00678:  51  newinit 1
+00683:  51  zero
+00684:  51  string "P_Normal_Skill"
+00689:  51  initelem
+00690:  51  one
+00691:  51  string "P_Cure_From"
+00696:  51  initelem
+00697:  51  endinit
+00698:  51  initprop "T_From_Cure_1"
+00703:  52  newinit 1
+00708:  52  zero
+00709:  52  string "super_skill"
+00714:  52  initelem
+00715:  52  one
+00716:  52  string "P_Cure_To"
+00721:  52  initelem
+00722:  52  endinit
+00723:  52  initprop "T_To_Cure_0"
+00728:  53  newinit 1
+00733:  53  zero
+00734:  53  string "P_Normal_Skill"
+00739:  53  initelem
+00740:  53  one
+00741:  53  string "P_Hp_Add_To"
+00746:  53  initelem
+00747:  53  endinit
+00748:  53  initprop "T_To_Cure_1"
+00753:  55  newinit 1
+00758:  55  zero
+00759:  55  string "P_Normal_Skill"
+00764:  55  initelem
+00765:  55  one
+00766:  55  string "P_Cure_From"
+00771:  55  initelem
+00772:  55  endinit
+00773:  55  initprop "T_Cure_From_1"
+00778:  60  newinit 1
+00783:  61  string "P_Normal_Skill"
+00788:  61  initprop "_name"
+00793:  62  newinit 1
+00798:  63  string "Spawn"
+00803:  63  initprop "type"
+00808:  64  string "P_Absorb_Tmp_To2From"
+00813:  64  initprop "_tmp"
+00818:  65  string "P_Atk_Sub_To"
+00823:  65  initprop "_buff"
+00828:  65  endinit
+00829:  65  initprop "_sub"
+00834:  67  string "P_Atk_Add_From"
+00839:  67  initprop "_add"
+00844:  67  endinit
+00845:  67  initprop "T_Absorb_0"
+00850:  70  newinit 1
+00855:  71  string "template.T_Absorb_0"
+00860:  71  initprop "extend"
+00865:  71  endinit
+00866:  71  initprop "T_Absorb_Atk_0"
+00871:  73  newinit 1
+00876:  74  string "template.T_Absorb_0"
+00881:  74  initprop "extend"
+00886:  75  newinit 1
+00891:  76  string "P_Def_Sub_To"
+00896:  76  initprop "_buff"
+00901:  76  endinit
+00902:  76  initprop "_sub"
+00907:  78  string "P_Def_Add_From"
+00912:  78  initprop "_add"
+00917:  78  endinit
+00918:  78  initprop "T_Absorb_Def_0"
+00923:  83  newinit 1
+00928:  84  string "P_SS_BG_Begin"
+00933:  84  initprop "_black_begin"
+00938:  85  string "P_SS_Skill"
+00943:  85  initprop "_name"
+00948:  86  null
+00949:  86  initprop "_attack_before"
+00954:  87  newinit 1
+00959:  88  string "Spawn"
+00964:  88  initprop "type"
+00969:  89  newinit 1
+00974:  90  null
+00975:  90  initprop "_delay"
+00980:  91  string "override T_Remote_SS"
+00985:  91  initprop "_type"
+00990:  91  endinit
+00991:  91  initprop "_hurt"
+00996:  93  newinit 1
+01001:  94  null
+01002:  94  initprop "_delay"
+01007:  95  null
+01008:  95  initprop "_type"
+01013:  95  endinit
+01014:  95  initprop "_effect"
+01019:  97  newinit 1
+01024:  98  null
+01025:  98  initprop "_delay"
+01030:  99  null
+01031:  99  initprop "_type"
+01036:  99  endinit
+01037:  99  initprop "_effect_from"
+01042: 101  newinit 1
+01047: 102  null
+01048: 102  initprop "_delay"
+01053: 103  null
+01054: 103  initprop "_type"
+01059: 104  string "P_SS_BG_End"
+01064: 104  initprop "_black_end"
+01069: 104  endinit
+01070: 104  initprop "_effect_to"
+01075: 104  endinit
+01076: 104  initprop "_attack"
+01081: 107  string "P_Hurt_Backup_Death"
+01086: 107  initprop "_backup"
+01091: 107  endinit
+01092: 107  initprop "T_Remote_SS"
+01097: 110  newinit 1
+01102: 111  string "P_BlackHalfBegin"
+01107: 111  initprop "_black_begin"
+01112: 112  string "P_Super_Skill"
+01117: 112  initprop "_name"
+01122: 113  null
+01123: 113  initprop "_attack_before"
+01128: 114  newinit 1
+01133: 115  string "Spawn"
+01138: 115  initprop "type"
+01143: 116  newinit 1
+01148: 117  null
+01149: 117  initprop "_delay"
+01154: 118  string "override T_Remote_Super"
+01159: 118  initprop "_type"
+01164: 118  endinit
+01165: 118  initprop "_hurt"
+01170: 120  newinit 1
+01175: 121  null
+01176: 121  initprop "_delay"
+01181: 122  null
+01182: 122  initprop "_type"
+01187: 122  endinit
+01188: 122  initprop "_effect"
+01193: 124  newinit 1
+01198: 125  null
+01199: 125  initprop "_delay"
+01204: 126  string "override T_Remote_Super"
+01209: 126  initprop "_type"
+01214: 126  endinit
+01215: 126  initprop "_effect_from"
+01220: 128  newinit 1
+01225: 129  null
+01226: 129  initprop "_delay"
+01231: 130  string "override T_Remote_Super"
+01236: 130  initprop "_type"
+01241: 130  endinit
+01242: 130  initprop "_effect_to"
+01247: 130  endinit
+01248: 130  initprop "_attack"
+01253: 133  null
+01254: 133  initprop "_attack_after"
+01259: 134  string "P_Hurt_Backup_Death"
+01264: 134  initprop "_backup"
+01269: 135  string "P_BlackHalfEnd"
+01274: 135  initprop "_black_end"
+01279: 135  endinit
+01280: 135  initprop "T_Remote_Super"
+01285: 138  newinit 1
+01290: 139  string "P_BlackHalfBegin"
+01295: 139  initprop "_black_begin"
+01300: 140  string "P_Normal_Skill"
+01305: 140  initprop "_name"
+01310: 141  newinit 1
+01315: 142  string "Spawn"
+01320: 142  initprop "type"
+01325: 143  newinit 1
+01330: 144  null
+01331: 144  initprop "_delay"
+01336: 145  string "P_Hurt_Over"
+01341: 145  initprop "_type"
+01346: 145  endinit
+01347: 145  initprop "_hurt"
+01352: 147  newinit 1
+01357: 148  null
+01358: 148  initprop "_delay"
+01363: 149  null
+01364: 149  initprop "_type"
+01369: 149  endinit
+01370: 149  initprop "_effect"
+01375: 151  newinit 1
+01380: 152  null
+01381: 152  initprop "_delay"
+01386: 153  string "override T_Remote_0"
+01391: 153  initprop "_type"
+01396: 153  endinit
+01397: 153  initprop "_effect_from"
+01402: 155  newinit 1
+01407: 156  null
+01408: 156  initprop "_delay"
+01413: 157  string "override T_Remote_0"
+01418: 157  initprop "_type"
+01423: 157  endinit
+01424: 157  initprop "_effect_to"
+01429: 157  endinit
+01430: 157  initprop "_attack"
+01435: 160  string "P_Hurt_Backup_Death"
+01440: 160  initprop "_backup"
+01445: 161  string "P_BlackHalfEnd"
+01450: 161  initprop "_black_end"
+01455: 161  endinit
+01456: 161  initprop "T_Remote_Normal"
+01461: 164  newinit 1
+01466: 165  string "P_BlackBegin"
+01471: 165  initprop "_black_begin"
+01476: 166  string "P_Normal_Skill"
+01481: 166  initprop "_name"
+01486: 167  newinit 1
+01491: 168  string "Spawn"
+01496: 168  initprop "type"
+01501: 169  newinit 1
+01506: 170  null
+01507: 170  initprop "_delay"
+01512: 171  string "P_Hurt_Over"
+01517: 171  initprop "_type"
+01522: 171  endinit
+01523: 171  initprop "_hurt"
+01528: 173  newinit 1
+01533: 174  null
+01534: 174  initprop "_delay"
+01539: 175  null
+01540: 175  initprop "_type"
+01545: 175  endinit
+01546: 175  initprop "_effect"
+01551: 177  newinit 1
+01556: 178  null
+01557: 178  initprop "_delay"
+01562: 179  string "override T_Remote_0"
+01567: 179  initprop "_type"
+01572: 179  endinit
+01573: 179  initprop "_effect_from"
+01578: 181  newinit 1
+01583: 182  null
+01584: 182  initprop "_delay"
+01589: 183  string "override T_Remote_0"
+01594: 183  initprop "_type"
+01599: 183  endinit
+01600: 183  initprop "_effect_to"
+01605: 183  endinit
+01606: 183  initprop "_attack"
+01611: 186  string "P_Hurt_Backup_Death"
+01616: 186  initprop "_backup"
+01621: 187  string "P_BlackEnd"
+01626: 187  initprop "_black_end"
+01631: 187  endinit
+01632: 187  initprop "T_Remote_0"
+01637: 191  newinit 1
+01642: 192  string "P_BlackHalfBegin"
+01647: 192  initprop "_black_begin"
+01652: 193  string "P_Super_Skill"
+01657: 193  initprop "_name"
+01662: 194  null
+01663: 194  initprop "_main"
+01668: 195  string "P_BlackHalfEnd"
+01673: 195  initprop "_black_end"
+01678: 195  endinit
+01679: 195  initprop "T_Super"
+01684: 198  newinit 1
+01689: 199  string "P_SS_BG_Begin"
+01694: 199  initprop "_black_begin"
+01699: 200  string "P_SS_Skill"
+01704: 200  initprop "_name"
+01709: 201  null
+01710: 201  initprop "_main_before"
+01715: 202  null
+01716: 202  initprop "_main"
+01721: 203  null
+01722: 203  initprop "_main_after"
+01727: 204  string "P_SS_BG_End"
+01732: 204  initprop "_black_end"
+01737: 204  endinit
+01738: 204  initprop "T_SS"
+01743: 207  newinit 1
+01748: 208  string "P_Move"
+01753: 208  initprop "_move"
+01758: 209  string "P_SS_BG_Begin"
+01763: 209  initprop "_black_begin"
+01768: 210  string "P_SS_Skill"
+01773: 210  initprop "_name"
+01778: 211  null
+01779: 211  initprop "_main_before"
+01784: 212  null
+01785: 212  initprop "_main"
+01790: 213  null
+01791: 213  initprop "_main_after"
+01796: 214  string "P_Back"
+01801: 214  initprop "_back"
+01806: 215  string "P_SS_BG_End"
+01811: 215  initprop "_black_end"
+01816: 215  endinit
+01817: 215  initprop "T_SS_MoveFst"
+01822: 221  newinit 1
+01827: 222  string "P_BlackHalfBegin"
+01832: 222  initprop "_black_begin"
+01837: 223  string "P_Super_Skill"
+01842: 223  initprop "_name"
+01847: 224  newinit 1
+01852: 225  string "Spawn"
+01857: 225  initprop "type"
+01862: 226  newinit 1
+01867: 227  null
+01868: 227  initprop "_delay"
+01873: 228  null
+01874: 228  initprop "_type"
+01879: 228  endinit
+01880: 228  initprop "_effect_from"
+01885: 230  newinit 1
+01890: 231  null
+01891: 231  initprop "_delay"
+01896: 232  null
+01897: 232  initprop "_type"
+01902: 232  endinit
+01903: 232  initprop "_effect_to"
+01908: 234  newinit 1
+01913: 235  null
+01914: 235  initprop "_delay"
+01919: 236  null
+01920: 236  initprop "_type"
+01925: 236  endinit
+01926: 236  initprop "_buff_from"
+01931: 238  newinit 1
+01936: 239  null
+01937: 239  initprop "_delay"
+01942: 240  null
+01943: 240  initprop "_type"
+01948: 240  endinit
+01949: 240  initprop "_buff_to"
+01954: 240  endinit
+01955: 240  initprop "_attack"
+01960: 243  string "P_Hurt_Backup_Death"
+01965: 243  initprop "_backup"
+01970: 244  string "P_BlackHalfEnd"
+01975: 244  initprop "_black_end"
+01980: 244  endinit
+01981: 244  initprop "T_Buff_Super"
+01986: 246  newinit 1
+01991: 247  string "P_BlackHalfBegin"
+01996: 247  initprop "_black_begin"
+02001: 248  string "P_Normal_Skill"
+02006: 248  initprop "_name"
+02011: 249  newinit 1
+02016: 250  string "Spawn"
+02021: 250  initprop "type"
+02026: 251  newinit 1
+02031: 252  null
+02032: 252  initprop "_delay"
+02037: 253  null
+02038: 253  initprop "_type"
+02043: 253  endinit
+02044: 253  initprop "_effect_from"
+02049: 255  newinit 1
+02054: 256  null
+02055: 256  initprop "_delay"
+02060: 257  null
+02061: 257  initprop "_type"
+02066: 257  endinit
+02067: 257  initprop "_effect_to"
+02072: 259  newinit 1
+02077: 260  null
+02078: 260  initprop "_delay"
+02083: 261  null
+02084: 261  initprop "_type"
+02089: 261  endinit
+02090: 261  initprop "_buff_from"
+02095: 263  newinit 1
+02100: 264  null
+02101: 264  initprop "_delay"
+02106: 265  null
+02107: 265  initprop "_type"
+02112: 265  endinit
+02113: 265  initprop "_buff_to"
+02118: 265  endinit
+02119: 265  initprop "_main"
+02124: 268  null
+02125: 268  initprop "_main_after"
+02130: 269  string "P_Hurt_Backup_Death"
+02135: 269  initprop "_backup"
+02140: 270  string "P_BlackHalfEnd"
+02145: 270  initprop "_black_end"
+02150: 270  endinit
+02151: 270  initprop "T_Buff_Normal"
+02156: 276  newinit 1
+02161: 277  string "P_Normal_Skill"
+02166: 277  initprop "_name"
+02171: 278  string "P_Move"
+02176: 278  initprop "_move"
+02181: 279  newinit 1
+02186: 280  string "Spawn"
+02191: 280  initprop "type"
+02196: 281  newinit 1
+02201: 282  null
+02202: 282  initprop "_delay"
+02207: 283  null
+02208: 283  initprop "_type"
+02213: 283  endinit
+02214: 283  initprop "_hurt"
+02219: 285  newinit 1
+02224: 286  null
+02225: 286  initprop "_delay"
+02230: 287  null
+02231: 287  initprop "_type"
+02236: 287  endinit
+02237: 287  initprop "_effect"
+02242: 287  endinit
+02243: 287  initprop "_hit"
+02248: 290  newinit 1
+02253: 291  string "Spawn"
+02258: 291  initprop "type"
+02263: 292  newinit 1
+02268: 293  null
+02269: 293  initprop "_delay"
+02274: 294  null
+02275: 294  initprop "_type"
+02280: 294  endinit
+02281: 294  initprop "_hurt"
+02286: 296  newinit 1
+02291: 297  null
+02292: 297  initprop "_delay"
+02297: 298  null
+02298: 298  initprop "_type"
+02303: 298  endinit
+02304: 298  initprop "_effect"
+02309: 298  endinit
+02310: 298  initprop "_attack"
+02315: 301  string "P_Back"
+02320: 301  initprop "_back"
+02325: 301  endinit
+02326: 301  initprop "T_Proximal_NameFst_0"
+02331: 304  newinit 1
+02336: 305  string "P_Move"
+02341: 305  initprop "_move"
+02346: 306  string "P_SS_BG_Begin"
+02351: 306  initprop "_black_begin"
+02356: 307  string "P_SS_Skill"
+02361: 307  initprop "_name"
+02366: 308  newinit 1
+02371: 309  null
+02372: 309  initprop "_delay"
+02377: 310  string "T_Proximal_MoveFst_SS._effect_from override"
+02382: 310  initprop "_type"
+02387: 310  endinit
+02388: 310  initprop "_attack0"
+02393: 312  newinit 1
+02398: 313  string "Spawn"
+02403: 313  initprop "type"
+02408: 314  newinit 1
+02413: 315  null
+02414: 315  initprop "_delay"
+02419: 316  string "T_Proximal_MoveFst_SS._hurt"
+02424: 316  initprop "_type"
+02429: 316  endinit
+02430: 316  initprop "_hurt"
+02435: 318  newinit 1
+02440: 320  null
+02441: 320  initprop "_delay"
+02446: 321  null
+02447: 321  initprop "_type"
+02452: 321  endinit
+02453: 321  initprop "_effect_to"
+02458: 323  newinit 1
+02463: 325  null
+02464: 325  initprop "_delay"
+02469: 326  string "T_Proximal_MoveFst_SS"
+02474: 326  initprop "_type"
+02479: 326  endinit
+02480: 326  initprop "_effect_from"
+02485: 326  endinit
+02486: 326  initprop "_attack1"
+02491: 329  null
+02492: 329  initprop "_backup"
+02497: 330  string "P_Back"
+02502: 330  initprop "_back"
+02507: 331  string "P_SS_BG_End"
+02512: 331  initprop "_black_end"
+02517: 331  endinit
+02518: 331  initprop "T_Proximal_MoveFst_SS"
+02523: 335  newinit 1
+02528: 336  string "P_BlackHalfBegin"
+02533: 336  initprop "_black_begin"
+02538: 337  string "P_SS_Skill"
+02543: 337  initprop "_name"
+02548: 338  null
+02549: 338  initprop "_main_before"
+02554: 339  newinit 1
+02559: 340  string "Spawn"
+02564: 340  initprop "type"
+02569: 341  newinit 1
+02574: 342  null
+02575: 342  initprop "_delay"
+02580: 343  string "P_Hurt_Normal_Over"
+02585: 343  initprop "_type"
+02590: 343  endinit
+02591: 343  initprop "_hurt"
+02596: 345  newinit 1
+02601: 346  null
+02602: 346  initprop "_delay"
+02607: 348  string "override T_GhostAttack_Super"
+02612: 348  initprop "_type"
+02617: 348  endinit
+02618: 348  initprop "_effect_to"
+02623: 348  endinit
+02624: 348  initprop "_main"
+02629: 351  null
+02630: 351  initprop "_main_after"
+02635: 352  string "P_BlackHalfEnd"
+02640: 352  initprop "_black_end"
+02645: 352  endinit
+02646: 352  initprop "T_GhostAttack_Super"
+02651: 352  endinit
+02652: 352  setprop "template"
+02657: 352  popv
+02658: 356  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/Template.js:1 ---

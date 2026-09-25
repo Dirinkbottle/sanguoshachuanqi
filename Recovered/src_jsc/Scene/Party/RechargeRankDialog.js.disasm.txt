@@ -1,0 +1,2466 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Party/RechargeRankDialog.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=517 object[0]
+;; FUNCTION-MAP kind=lambda offset=527 object[1]
+;; FUNCTION-MAP kind=lambda offset=537 object[2]
+;; FUNCTION-MAP kind=lambda offset=547 object[3]
+;; FUNCTION-MAP kind=lambda offset=557 object[4]
+;; FUNCTION-MAP kind=lambda offset=567 object[5]
+;; FUNCTION-MAP kind=lambda offset=577 object[6]
+;; FUNCTION-MAP kind=lambda offset=587 object[7]
+;; FUNCTION-MAP kind=lambda offset=597 object[8]
+;; FUNCTION-MAP kind=lambda offset=607 object[9]
+;; FUNCTION-MAP kind=lambda offset=617 object[10]
+;; FUNCTION-MAP kind=lambda offset=627 object[11]
+;; FUNCTION-MAP kind=lambda offset=668 object[12]
+;; FUNCTION-MAP kind=lambda offset=929 object[13]
+;; FUNCTION-MAP kind=lambda offset=939 object[14]
+;; FUNCTION-MAP kind=lambda offset=949 object[15]
+;; FUNCTION-MAP kind=lambda offset=959 object[16]
+;; FUNCTION-MAP kind=lambda offset=969 object[17]
+;; FUNCTION-MAP kind=lambda offset=979 object[18]
+;; FUNCTION-MAP kind=lambda offset=989 object[19]
+;; FUNCTION-MAP kind=lambda offset=999 object[20]
+;; FUNCTION-MAP kind=lambda offset=1009 object[21]
+;; FUNCTION-MAP kind=lambda offset=1019 object[22]
+;; FUNCTION-MAP kind=lambda offset=1029 object[23]
+;; FUNCTION-MAP kind=lambda offset=1039 object[24]
+;; FUNCTION-MAP kind=lambda offset=1080 object[25]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  getprop "Union"
+00015:   6  name "cc"
+00020:   6  getprop "TableViewCell"
+00025:   6  dup
+00026:   6  callprop "extend"
+00031:   6  swap
+00032:   6  notearg
+00033:   6  newinit 1
+00038:   7  newinit 1
+00043:   8  uint16 190
+00046:   8  initprop "icon1_x"
+00051:   9  uint16 130
+00054:   9  initprop "step"
+00059:   9  endinit
+00060:   9  initprop "posCfg"
+00065:  11  newarray 9
+00069:  12  newinit 1
+00074:  12  one
+00075:  12  initprop "tag"
+00080:  12  string "ls"
+00085:  12  initprop "type"
+00090:  12  string "m_PlayerNameLabel"
+00095:  12  initprop "name"
+00100:  12  string "LS_wujiangInf1"
+00105:  12  initprop "id"
+00110:  12  endinit
+00111:  12  initelem_array 0
+00115:  13  newinit 1
+00120:  13  int8 2
+00122:  13  initprop "tag"
+00127:  13  string "ls"
+00132:  13  initprop "type"
+00137:  13  string "m_VIPNumLabel"
+00142:  13  initprop "name"
+00147:  13  string "LS_Lv"
+00152:  13  initprop "id"
+00157:  13  endinit
+00158:  13  initelem_array 1
+00162:  14  newinit 1
+00167:  14  int8 3
+00169:  14  initprop "tag"
+00174:  14  string "ls"
+00179:  14  initprop "type"
+00184:  14  string "m_IntegrationDescLabel"
+00189:  14  initprop "name"
+00194:  14  string "LS_jinengInf1"
+00199:  14  initprop "id"
+00204:  14  string "str_ActivityConsumeDesc"
+00209:  14  initprop "stringId"
+00214:  14  endinit
+00215:  14  initelem_array 2
+00219:  15  newinit 1
+00224:  15  int8 4
+00226:  15  initprop "tag"
+00231:  15  string "ls"
+00236:  15  initprop "type"
+00241:  15  string "m_IntegrationNumLabel"
+00246:  15  initprop "name"
+00251:  15  string "LS_Lv"
+00256:  15  initprop "id"
+00261:  15  endinit
+00262:  15  initelem_array 3
+00266:  16  newinit 1
+00271:  16  int8 5
+00273:  16  initprop "tag"
+00278:  16  string "ls"
+00283:  16  initprop "type"
+00288:  16  string "m_RewardDescLabel"
+00293:  16  initprop "name"
+00298:  16  string "LS_jinengInf1"
+00303:  16  initprop "id"
+00308:  16  string "auto_name_511"
+00313:  16  initprop "stringId"
+00318:  16  endinit
+00319:  16  initelem_array 4
+00323:  17  newinit 1
+00328:  17  int8 7
+00330:  17  initprop "tag"
+00335:  17  string "ls"
+00340:  17  initprop "type"
+00345:  17  string "m_RewardNum_1"
+00350:  17  initprop "name"
+00355:  17  string "LS_Lv"
+00360:  17  initprop "id"
+00365:  17  endinit
+00366:  17  initelem_array 5
+00370:  18  newinit 1
+00375:  18  int8 9
+00377:  18  initprop "tag"
+00382:  18  string "ls"
+00387:  18  initprop "type"
+00392:  18  string "m_RewardNum_2"
+00397:  18  initprop "name"
+00402:  18  string "LS_Lv"
+00407:  18  initprop "id"
+00412:  18  endinit
+00413:  18  initelem_array 6
+00417:  19  newinit 1
+00422:  19  int8 30
+00424:  19  initprop "tag"
+00429:  19  string "btn"
+00434:  19  initprop "type"
+00439:  19  string "m_CheckBtn"
+00444:  19  initprop "name"
+00449:  19  string "Btn_btn3"
+00454:  19  initprop "id"
+00459:  19  endinit
+00460:  19  initelem_array 7
+00464:  20  newinit 1
+00469:  20  int8 21
+00471:  20  initprop "tag"
+00476:  20  string "ls"
+00481:  20  initprop "type"
+00486:  20  string "m_RankNum"
+00491:  20  initprop "name"
+00496:  20  string "LS_TTPHnomb"
+00501:  20  initprop "id"
+00506:  20  endinit
+00507:  20  initelem_array 8
+00511:  20  endinit
+00512:  20  initprop "ccbCfg"
+00517:  23  lambda (function () {
+    [sourceless code]
+})
+00522:  23  initprop "draw"
+00527:  26  lambda (function () {
+    [sourceless code]
+})
+00532:  26  initprop "ctor"
+00537:  30  lambda (function () {
+    [sourceless code]
+})
+00542:  30  initprop "init"
+00547:  73  lambda (function () {
+    [sourceless code]
+})
+00552:  73  initprop "onTouchCallBackToReject"
+00557:  76  lambda (function () {
+    [sourceless code]
+})
+00562:  76  initprop "onTouchCallBackToAgree"
+00567:  81  lambda (function () {
+    [sourceless code]
+})
+00572:  81  initprop "setBaseTouchPriority"
+00577:  86  lambda (function () {
+    [sourceless code]
+})
+00582:  86  initprop "setListener"
+00587:  90  lambda (function () {
+    [sourceless code]
+})
+00592:  90  initprop "onEnter"
+00597: 103  lambda (function () {
+    [sourceless code]
+})
+00602: 103  initprop "onExit"
+00607: 107  lambda (function () {
+    [sourceless code]
+})
+00612: 107  initprop "CheckBtnClick"
+00617: 114  lambda (function () {
+    [sourceless code]
+})
+00622: 114  initprop "update"
+00627: 181  lambda (function () {
+    [sourceless code]
+})
+00632: 181  initprop "setRankTitle"
+00637: 181  endinit
+00638: 181  notearg
+00639: 181  call 1
+00642: 181  setprop "RechargeRankTableViewCell"
+00647: 181  popv
+00648: 224  name "xs"
+00653: 224  getprop "Views"
+00658: 224  getprop "Union"
+00663: 224  getprop "RechargeRankTableViewCell"
+00668: 224  lambda (function () {
+    [sourceless code]
+})
+00673: 224  setprop "create"
+00678: 224  popv
+00679: 236  name "xs"
+00684: 236  getprop "Scene"
+00689: 236  getprop "Party"
+00694: 236  name "xs"
+00699: 236  getprop "Views"
+00704: 236  getprop "HungerLayer"
+00709: 236  dup
+00710: 236  callprop "extend"
+00715: 236  swap
+00716: 236  notearg
+00717: 236  newinit 1
+00722: 237  string "xs.Scene.Party.RechargeRankDialog"
+00727: 237  initprop "name"
+00732: 239  newarray 4
+00736: 240  newinit 1
+00741: 240  one
+00742: 240  initprop "tag"
+00747: 240  string "ls"
+00752: 240  initprop "type"
+00757: 240  string "m_title"
+00762: 240  initprop "name"
+00767: 240  string "LS_huodong_title"
+00772: 240  initprop "id"
+00777: 240  endinit
+00778: 240  initelem_array 0
+00782: 241  newinit 1
+00787: 241  int8 2
+00789: 241  initprop "tag"
+00794: 241  string "ls"
+00799: 241  initprop "type"
+00804: 241  string "m_labelDesc_1"
+00809: 241  initprop "name"
+00814: 241  string "LS_jinengInf1"
+00819: 241  initprop "id"
+00824: 241  endinit
+00825: 241  initelem_array 1
+00829: 242  newinit 1
+00834: 242  int8 3
+00836: 242  initprop "tag"
+00841: 242  string "bs"
+00846: 242  initprop "type"
+00851: 242  string "m_closeBtn"
+00856: 242  initprop "name"
+00861: 242  string "BS_Close"
+00866: 242  initprop "id"
+00871: 242  endinit
+00872: 242  initelem_array 2
+00876: 243  newinit 1
+00881: 243  int8 4
+00883: 243  initprop "tag"
+00888: 243  string "ls"
+00893: 243  initprop "type"
+00898: 243  string "m_labelDesc_2"
+00903: 243  initprop "name"
+00908: 243  string "LS_jinengInf1"
+00913: 243  initprop "id"
+00918: 243  endinit
+00919: 243  initelem_array 3
+00923: 243  endinit
+00924: 243  initprop "CCB_Cfg"
+00929: 246  lambda (function () {
+    [sourceless code]
+})
+00934: 246  initprop "ctor"
+00939: 250  lambda (function () {
+    [sourceless code]
+})
+00944: 250  initprop "init"
+00949: 317  lambda (function () {
+    [sourceless code]
+})
+00954: 317  initprop "myScheduler"
+00959: 330  lambda (function () {
+    [sourceless code]
+})
+00964: 330  initprop "onEnter"
+00969: 338  lambda (function () {
+    [sourceless code]
+})
+00974: 338  initprop "onExit"
+00979: 343  lambda (function () {
+    [sourceless code]
+})
+00984: 343  initprop "scrollViewDidScroll"
+00989: 346  lambda (function () {
+    [sourceless code]
+})
+00994: 346  initprop "scrollViewDidZoom"
+00999: 349  lambda (function () {
+    [sourceless code]
+})
+01004: 349  initprop "tableCellTouched"
+01009: 352  lambda (function () {
+    [sourceless code]
+})
+01014: 352  initprop "tableCellSizeForIndex"
+01019: 356  lambda (function () {
+    [sourceless code]
+})
+01024: 356  initprop "tableCellAtIndex"
+01029: 365  lambda (function () {
+    [sourceless code]
+})
+01034: 365  initprop "numberOfCellsInTableView"
+01039: 370  lambda (function () {
+    [sourceless code]
+})
+01044: 370  initprop "setBaseTouchPriority"
+01049: 370  endinit
+01050: 370  notearg
+01051: 370  call 1
+01054: 370  setprop "RechargeRankDialog"
+01059: 370  popv
+01060: 378  name "xs"
+01065: 378  getprop "Scene"
+01070: 378  getprop "Party"
+01075: 378  getprop "RechargeRankDialog"
+01080: 378  lambda (function () {
+    [sourceless code]
+})
+01085: 378  setprop "create"
+01090: 378  popv
+01091: 392  name "xs"
+01096: 392  getprop "Views"
+01101: 392  getprop "Mgr"
+01106: 392  dup
+01107: 392  callprop "registerDialog"
+01112: 392  swap
+01113: 392  notearg
+01114: 392  string "RechargeRankDialog"
+01119: 392  notearg
+01120: 392  newinit 1
+01125: 393  name "xs"
+01130: 393  getprop "Scene"
+01135: 393  getprop "Party"
+01140: 393  getprop "RechargeRankDialog"
+01145: 393  initprop "class"
+01150: 394  name "xs"
+01155: 394  getprop "Constant_DlgStyleType_Large"
+01160: 394  initprop "styleType"
+01165: 394  endinit
+01166: 394  notearg
+01167: 394  call 2
+01170: 394  popv
+01171: 395  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:1 ---
+;; function object[0] draw
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] ctx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:23 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  this
+00001:  24  dup
+00002:  24  callprop "_super"
+00007:  24  swap
+00008:  24  notearg
+00009:  24  getarg 0
+00012:  24  notearg
+00013:  24  call 1
+00016:  24  pop
+00017:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:23 ---
+;; function object[1] ctor
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  this
+00001:  27  dup
+00002:  27  callprop "_super"
+00007:  27  swap
+00008:  27  notearg
+00009:  27  call 0
+00012:  27  pop
+00013:  28  name "cc"
+00018:  28  dup
+00019:  28  callprop "associateWithNative"
+00024:  28  swap
+00025:  28  notearg
+00026:  28  this
+00027:  28  notearg
+00028:  28  name "cc"
+00033:  28  getprop "TableViewCell"
+00038:  28  notearg
+00039:  28  call 2
+00042:  28  pop
+00043:  28  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:26 ---
+;; function object[2] init
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  this
+00001:  31  dup
+00002:  31  callprop "_super"
+00007:  31  swap
+00008:  31  notearg
+00009:  31  call 0
+00012:  31  not
+00013:  31  ifeq 20 (+7)
+00018:  32  false
+00019:  32  return
+00020:  35  this
+00021:  35  null
+00022:  35  setprop "m_PlayerNameLabel"
+00027:  35  pop
+00028:  36  this
+00029:  36  null
+00030:  36  setprop "m_VIPNumLabel"
+00035:  36  pop
+00036:  37  this
+00037:  37  null
+00038:  37  setprop "m_IntegrationDescLabel"
+00043:  37  pop
+00044:  38  this
+00045:  38  null
+00046:  38  setprop "m_IntegrationNumLabel"
+00051:  38  pop
+00052:  39  this
+00053:  39  null
+00054:  39  setprop "m_RewardDescLabel"
+00059:  39  pop
+00060:  40  this
+00061:  40  null
+00062:  40  setprop "m_RewardNum_1"
+00067:  40  pop
+00068:  41  this
+00069:  41  null
+00070:  41  setprop "m_RewardNum_2"
+00075:  41  pop
+00076:  42  this
+00077:  42  null
+00078:  42  setprop "m_RewardIcon_1"
+00083:  42  pop
+00084:  43  this
+00085:  43  null
+00086:  43  setprop "m_RewardIcon_2"
+00091:  43  pop
+00092:  44  this
+00093:  44  null
+00094:  44  setprop "m_CheckBtn"
+00099:  44  pop
+00100:  45  this
+00101:  45  null
+00102:  45  setprop "m_playerId"
+00107:  45  pop
+00108:  48  this
+00109:  48  name "xs"
+00114:  48  getprop "ccb_reader"
+00119:  48  dup
+00120:  48  callprop "load"
+00125:  48  swap
+00126:  48  notearg
+00127:  48  string "ccb3/RechargeRankTableViewCell.ccbi"
+00132:  48  notearg
+00133:  48  this
+00134:  48  notearg
+00135:  48  call 2
+00138:  48  setprop "ccbNode"
+00143:  48  pop
+00144:  49  this
+00145:  49  getprop "ccbNode"
+00150:  49  dup
+00151:  49  callprop "setAnchorPoint"
+00156:  49  swap
+00157:  49  notearg
+00158:  49  name "cc"
+00163:  49  dup
+00164:  49  callprop "p"
+00169:  49  swap
+00170:  49  notearg
+00171:  49  zero
+00172:  49  notearg
+00173:  49  zero
+00174:  49  notearg
+00175:  49  call 2
+00178:  49  notearg
+00179:  49  call 1
+00182:  49  pop
+00183:  50  name "xs"
+00188:  50  getprop "Utils"
+00193:  50  getprop "Node"
+00198:  50  dup
+00199:  50  callprop "attachNodes"
+00204:  50  swap
+00205:  50  notearg
+00206:  50  this
+00207:  50  notearg
+00208:  50  this
+00209:  50  getprop "ccbNode"
+00214:  50  notearg
+00215:  50  call 2
+00218:  50  pop
+00219:  51  name "xs"
+00224:  51  getprop "Utils"
+00229:  51  getprop "UI"
+00234:  51  dup
+00235:  51  callprop "replaceCcbByCfg"
+00240:  51  swap
+00241:  51  notearg
+00242:  51  this
+00243:  51  getprop "ccbNode"
+00248:  51  notearg
+00249:  51  this
+00250:  51  getprop "ccbCfg"
+00255:  51  notearg
+00256:  51  this
+00257:  51  notearg
+00258:  51  call 3
+00261:  51  pop
+00262:  54  this
+00263:  54  getprop "m_CheckBtn"
+00268:  54  dup
+00269:  54  callprop "setString"
+00274:  54  swap
+00275:  54  notearg
+00276:  54  name "xs"
+00281:  54  getprop "Tools"
+00286:  54  getprop "String"
+00291:  54  dup
+00292:  54  callprop "createString"
+00297:  54  swap
+00298:  54  notearg
+00299:  54  string "str_ActivityZhenRongDesc"
+00304:  54  notearg
+00305:  54  call 1
+00308:  54  notearg
+00309:  54  call 1
+00312:  54  pop
+00313:  55  this
+00314:  55  getprop "m_CheckBtn"
+00319:  55  dup
+00320:  55  callprop "setSwallowTouch"
+00325:  55  swap
+00326:  55  notearg
+00327:  55  true
+00328:  55  notearg
+00329:  55  call 1
+00332:  55  pop
+00333:  56  this
+00334:  56  getprop "m_CheckBtn"
+00339:  56  dup
+00340:  56  callprop "setZoomOnTouchDown"
+00345:  56  swap
+00346:  56  notearg
+00347:  56  false
+00348:  56  notearg
+00349:  56  call 1
+00352:  56  pop
+00353:  57  this
+00354:  57  getprop "m_CheckBtn"
+00359:  57  dup
+00360:  57  callprop "setOnClickCallBack"
+00365:  57  swap
+00366:  57  notearg
+00367:  57  this
+00368:  57  getprop "CheckBtnClick"
+00373:  57  dup
+00374:  57  callprop "bind"
+00379:  57  swap
+00380:  57  notearg
+00381:  57  this
+00382:  57  notearg
+00383:  57  call 1
+00386:  57  notearg
+00387:  57  call 1
+00390:  57  pop
+00391:  58  this
+00392:  58  getprop "m_CheckBtn"
+00397:  58  dup
+00398:  58  callprop "setVisible"
+00403:  58  swap
+00404:  58  notearg
+00405:  58  false
+00406:  58  notearg
+00407:  58  call 1
+00410:  58  pop
+00411:  60  this
+00412:  60  name "xs"
+00417:  60  getprop "Utils"
+00422:  60  dup
+00423:  60  callprop "getChildByTag"
+00428:  60  swap
+00429:  60  notearg
+00430:  60  this
+00431:  60  getprop "ccbNode"
+00436:  60  notearg
+00437:  60  int8 6
+00439:  60  notearg
+00440:  60  call 2
+00443:  60  setprop "m_RewardIcon_1"
+00448:  60  pop
+00449:  61  this
+00450:  61  name "xs"
+00455:  61  getprop "Utils"
+00460:  61  dup
+00461:  61  callprop "getChildByTag"
+00466:  61  swap
+00467:  61  notearg
+00468:  61  this
+00469:  61  getprop "ccbNode"
+00474:  61  notearg
+00475:  61  int8 8
+00477:  61  notearg
+00478:  61  call 2
+00481:  61  setprop "m_RewardIcon_2"
+00486:  61  pop
+00487:  62  this
+00488:  62  name "xs"
+00493:  62  getprop "Utils"
+00498:  62  dup
+00499:  62  callprop "getChildByTag"
+00504:  62  swap
+00505:  62  notearg
+00506:  62  this
+00507:  62  getprop "ccbNode"
+00512:  62  notearg
+00513:  62  int8 20
+00515:  62  notearg
+00516:  62  call 2
+00519:  62  setprop "m_RankNumIcon"
+00524:  62  pop
+00525:  64  this
+00526:  64  getprop "m_RewardNum_1"
+00531:  64  dup
+00532:  64  callprop "setVisible"
+00537:  64  swap
+00538:  64  notearg
+00539:  64  false
+00540:  64  notearg
+00541:  64  call 1
+00544:  64  pop
+00545:  65  this
+00546:  65  getprop "m_RewardNum_2"
+00551:  65  dup
+00552:  65  callprop "setVisible"
+00557:  65  swap
+00558:  65  notearg
+00559:  65  false
+00560:  65  notearg
+00561:  65  call 1
+00564:  65  pop
+00565:  66  this
+00566:  66  getprop "m_RewardIcon_1"
+00571:  66  dup
+00572:  66  callprop "setVisible"
+00577:  66  swap
+00578:  66  notearg
+00579:  66  false
+00580:  66  notearg
+00581:  66  call 1
+00584:  66  pop
+00585:  67  this
+00586:  67  getprop "m_RewardIcon_2"
+00591:  67  dup
+00592:  67  callprop "setVisible"
+00597:  67  swap
+00598:  67  notearg
+00599:  67  false
+00600:  67  notearg
+00601:  67  call 1
+00604:  67  pop
+00605:  70  true
+00606:  70  return
+00607:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:30 ---
+;; function object[3] onTouchCallBackToReject
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:73 ---
+loc   line  op
+----- ----  --
+main:
+00000:  73  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:73 ---
+;; function object[4] onTouchCallBackToAgree
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:76 ---
+loc   line  op
+----- ----  --
+main:
+00000:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:76 ---
+;; function object[5] setBaseTouchPriority
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:81 ---
+loc   line  op
+----- ----  --
+main:
+00000:  82  this
+00001:  82  getarg 0
+00004:  82  setprop "m_baseTouchPriority"
+00009:  82  pop
+00010:  83  this
+00011:  83  getprop "m_CheckBtn"
+00016:  83  dup
+00017:  83  callprop "setTouchPriority"
+00022:  83  swap
+00023:  83  notearg
+00024:  83  this
+00025:  83  getprop "m_baseTouchPriority"
+00030:  83  int8 2
+00032:  83  sub
+00033:  83  notearg
+00034:  83  call 1
+00037:  83  pop
+00038:  83  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:81 ---
+;; function object[6] setListener
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] listener
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:86 ---
+loc   line  op
+----- ----  --
+main:
+00000:  87  this
+00001:  87  getarg 0
+00004:  87  setprop "m_listener"
+00009:  87  pop
+00010:  87  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:86 ---
+;; function object[7] onEnter
+;; function metadata object[7] nargs=0 bindings=2
+;; local[0] parent
+;; local[1] touchPriority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:90 ---
+loc   line  op
+----- ----  --
+main:
+00000:  91  this
+00001:  91  dup
+00002:  91  callprop "_super"
+00007:  91  swap
+00008:  91  notearg
+00009:  91  call 0
+00012:  91  pop
+00013:  92  this
+00014:  92  dup
+00015:  92  callprop "getParent"
+00020:  92  swap
+00021:  92  notearg
+00022:  92  call 0
+00025:  92  setlocal 0
+00028:  92  pop
+00029:  93  goto 122 (+93)
+00034:  94  loophead
+00035:  94  getlocal 0
+00038:  94  name "cc"
+00043:  94  getprop "TableView"
+00048:  94  instanceof
+00049:  94  ifeq 104 (+55)
+00054:  95  this
+00055:  95  getlocal 0
+00058:  95  setprop "m_parentView"
+00063:  95  pop
+00064:  96  getlocal 0
+00067:  96  dup
+00068:  96  callprop "getTouchPriority"
+00073:  96  swap
+00074:  96  notearg
+00075:  96  call 0
+00078:  96  setlocal 1
+00081:  96  pop
+00082:  97  this
+00083:  97  dup
+00084:  97  callprop "setBaseTouchPriority"
+00089:  97  swap
+00090:  97  notearg
+00091:  97  getlocal 1
+00094:  97  notearg
+00095:  97  call 1
+00098:  97  pop
+00099:  98  goto 131 (+32)
+00104: 100  getlocal 0
+00107: 100  dup
+00108: 100  callprop "getParent"
+00113: 100  swap
+00114: 100  notearg
+00115: 100  call 0
+00118: 100  setlocal 0
+00121: 100  pop
+00122:  93  loopentry
+00123:  93  getlocal 0
+00126:  93  ifne 34 (-92)
+00131: 101  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:90 ---
+;; function object[8] onExit
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:103 ---
+loc   line  op
+----- ----  --
+main:
+00000: 104  this
+00001: 104  dup
+00002: 104  callprop "_super"
+00007: 104  swap
+00008: 104  notearg
+00009: 104  call 0
+00012: 104  pop
+00013: 104  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:103 ---
+;; function object[9] CheckBtnClick
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:107 ---
+loc   line  op
+----- ----  --
+main:
+00000: 108  name "xs"
+00005: 108  dup
+00006: 108  callprop "log"
+00011: 108  swap
+00012: 108  notearg
+00013: 108  string "CheckBtnClick"
+00018: 108  notearg
+00019: 108  call 1
+00022: 108  pop
+00023: 109  name "xs"
+00028: 109  getprop "Tools"
+00033: 109  getprop "Net"
+00038: 109  dup
+00039: 109  callprop "getInstance"
+00044: 109  swap
+00045: 109  notearg
+00046: 109  call 0
+00049: 109  dup
+00050: 109  callprop "displayOtherTeamInfo"
+00055: 109  swap
+00056: 109  notearg
+00057: 109  newinit 1
+00062: 110  this
+00063: 110  getprop "m_playerId"
+00068: 110  initprop "other_user_id"
+00073: 110  endinit
+00074: 110  notearg
+00075: 110  call 1
+00078: 110  pop
+00079: 111  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:107 ---
+;; function object[10] update
+;; function metadata object[10] nargs=2 bindings=12
+;; arg[0] par
+;; arg[1] num
+;; local[0] m_list
+;; local[1] x
+;; local[2] _model
+;; local[3] i
+;; local[4] rewordDataView
+;; local[5] _tag
+;; local[6] p
+;; local[7] newP
+;; local[8] tmp
+;; local[9] playerNum
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=191 length=76 stackDepth=1 target=267
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:114 ---
+loc   line  op
+----- ----  --
+main:
+00000: 116  this
+00001: 116  getarg 0
+00004: 116  setprop "par"
+00009: 116  pop
+00010: 117  this
+00011: 117  getarg 1
+00014: 117  setprop "num"
+00019: 117  pop
+00020: 118  this
+00021: 118  this
+00022: 118  getprop "par"
+00027: 118  getarg 1
+00030: 118  getelem
+00031: 118  getprop "user_info"
+00036: 118  getprop "user_id"
+00041: 118  setprop "m_playerId"
+00046: 118  pop
+00047: 121  this
+00048: 121  getprop "m_PlayerNameLabel"
+00053: 121  dup
+00054: 121  callprop "setString"
+00059: 121  swap
+00060: 121  notearg
+00061: 121  this
+00062: 121  getprop "par"
+00067: 121  getarg 1
+00070: 121  getelem
+00071: 121  getprop "user_info"
+00076: 121  getprop "nickname"
+00081: 121  notearg
+00082: 121  call 1
+00085: 121  pop
+00086: 123  this
+00087: 123  getprop "m_VIPNumLabel"
+00092: 123  dup
+00093: 123  callprop "setString"
+00098: 123  swap
+00099: 123  notearg
+00100: 123  this
+00101: 123  getprop "par"
+00106: 123  getarg 1
+00109: 123  getelem
+00110: 123  getprop "user_info"
+00115: 123  getprop "vip"
+00120: 123  notearg
+00121: 123  call 1
+00124: 123  pop
+00125: 125  this
+00126: 125  getprop "m_IntegrationNumLabel"
+00131: 125  dup
+00132: 125  callprop "setString"
+00137: 125  swap
+00138: 125  notearg
+00139: 125  this
+00140: 125  getprop "par"
+00145: 125  getarg 1
+00148: 125  getelem
+00149: 125  getprop "user_info"
+00154: 125  getprop "point"
+00159: 125  notearg
+00160: 125  call 1
+00163: 125  pop
+00164: 127  null
+00165: 127  setlocal 0
+00168: 127  pop
+00169: 128  this
+00170: 128  getprop "par"
+00175: 128  getarg 1
+00178: 128  getelem
+00179: 128  getprop "object"
+00184: 128  iter 1
+00186: 128  goto 260 (+74)
+00191: 128  loophead
+00192: 128  iternext
+00193: 128  setlocal 1
+00196: 128  pop
+00197: 130  this
+00198: 130  getprop "par"
+00203: 130  getarg 1
+00206: 130  getelem
+00207: 130  getprop "object"
+00212: 130  dup
+00213: 130  callprop "hasOwnProperty"
+00218: 130  swap
+00219: 130  notearg
+00220: 130  getlocal 1
+00223: 130  notearg
+00224: 130  call 1
+00227: 130  ifeq 255 (+28)
+00232: 131  this
+00233: 131  getprop "par"
+00238: 131  getarg 1
+00241: 131  getelem
+00242: 131  getprop "object"
+00247: 131  getlocal 1
+00250: 131  getelem
+00251: 131  setlocal 0
+00254: 131  pop
+00255: 133  goto 267 (+12)
+00260: 133  loopentry
+00261: 133  moreiter
+00262: 133  ifne 191 (-71)
+00267: 133  enditer
+00268: 135  name "xs"
+00273: 135  getprop "Models"
+00278: 135  getprop "Game"
+00283: 135  getprop "Package"
+00288: 135  dup
+00289: 135  callprop "createWithJson"
+00294: 135  swap
+00295: 135  notearg
+00296: 135  getlocal 0
+00299: 135  notearg
+00300: 135  call 1
+00303: 135  setlocal 2
+00306: 135  pop
+00307: 136  zero
+00308: 136  setlocal 3
+00311: 136  pop
+00312: 136  goto 968 (+656)
+00317: 137  loophead
+00318: 137  name "xs"
+00323: 137  getprop "Views"
+00328: 137  getprop "Icon"
+00333: 137  getprop "IconPackage"
+00338: 137  dup
+00339: 137  callprop "create"
+00344: 137  swap
+00345: 137  notearg
+00346: 137  call 0
+00349: 137  setlocal 4
+00352: 137  pop
+00353: 138  getlocal 4
+00356: 138  dup
+00357: 138  callprop "reloadRewordData"
+00362: 138  swap
+00363: 138  notearg
+00364: 138  getlocal 2
+00367: 138  notearg
+00368: 138  getlocal 3
+00371: 138  notearg
+00372: 138  double 0.38
+00377: 138  notearg
+00378: 138  call 3
+00381: 138  pop
+00382: 139  getlocal 4
+00385: 139  dup
+00386: 139  callprop "attr"
+00391: 139  swap
+00392: 139  notearg
+00393: 139  newinit 1
+00398: 140  name "xs"
+00403: 140  getprop "ap_c"
+00408: 140  initprop "ap"
+00413: 140  endinit
+00414: 140  notearg
+00415: 140  call 1
+00418: 140  pop
+00419: 142  getlocal 3
+00422: 142  one
+00423: 142  add
+00424: 142  setlocal 5
+00427: 142  pop
+00428: 143  name "xs"
+00433: 143  getprop "Utils"
+00438: 143  getprop "Node"
+00443: 143  dup
+00444: 143  callprop "replaceChildSafe"
+00449: 143  swap
+00450: 143  notearg
+00451: 143  this
+00452: 143  notearg
+00453: 143  this
+00454: 143  string "m_RewardIcon_"
+00459: 143  getlocal 5
+00462: 143  add
+00463: 143  getelem
+00464: 143  notearg
+00465: 143  getlocal 4
+00468: 143  notearg
+00469: 143  call 3
+00472: 143  pop
+00473: 144  this
+00474: 144  string "m_RewardNum_"
+00479: 144  getlocal 5
+00482: 144  add
+00483: 144  getelem
+00484: 144  dup
+00485: 144  callprop "setString"
+00490: 144  swap
+00491: 144  notearg
+00492: 144  string ""
+00497: 144  getlocal 2
+00500: 144  dup
+00501: 144  callprop "getData"
+00506: 144  swap
+00507: 144  notearg
+00508: 144  call 0
+00511: 144  getlocal 3
+00514: 144  getelem
+00515: 144  getprop "num"
+00520: 144  add
+00521: 144  notearg
+00522: 144  call 1
+00525: 144  pop
+00526: 145  this
+00527: 145  string "m_RewardIcon_"
+00532: 145  getlocal 5
+00535: 145  add
+00536: 145  getlocal 4
+00539: 145  setelem
+00540: 145  pop
+00541: 148  getlocal 5
+00544: 148  int8 2
+00546: 148  ge
+00547: 148  ifeq 903 (+356)
+00552: 150  name "cc"
+00557: 150  dup
+00558: 150  callprop "p"
+00563: 150  swap
+00564: 150  notearg
+00565: 150  this
+00566: 150  string "m_RewardIcon_"
+00571: 150  getlocal 5
+00574: 150  one
+00575: 150  sub
+00576: 150  add
+00577: 150  getelem
+00578: 150  dup
+00579: 150  callprop "getPosition"
+00584: 150  swap
+00585: 150  notearg
+00586: 150  call 0
+00589: 150  getprop "x"
+00594: 150  int8 40
+00596: 150  add
+00597: 151  this
+00598: 151  string "m_RewardNum_"
+00603: 151  getlocal 5
+00606: 151  one
+00607: 151  sub
+00608: 151  add
+00609: 151  getelem
+00610: 151  dup
+00611: 151  callprop "getContentSize"
+00616: 151  swap
+00617: 151  notearg
+00618: 151  call 0
+00621: 151  getprop "width"
+00626: 151  add
+00627: 151  notearg
+00628: 152  this
+00629: 152  string "m_RewardIcon_"
+00634: 152  getlocal 5
+00637: 152  add
+00638: 152  getelem
+00639: 152  dup
+00640: 152  callprop "getPosition"
+00645: 152  swap
+00646: 152  notearg
+00647: 152  call 0
+00650: 152  getprop "y"
+00655: 152  notearg
+00656: 152  call 2
+00659: 152  setlocal 6
+00662: 152  pop
+00663: 154  name "cc"
+00668: 154  dup
+00669: 154  callprop "p"
+00674: 154  swap
+00675: 154  notearg
+00676: 154  zero
+00677: 154  notearg
+00678: 154  getlocal 6
+00681: 154  getprop "y"
+00686: 154  notearg
+00687: 154  call 2
+00690: 154  setlocal 7
+00693: 154  pop
+00694: 155  one
+00695: 155  setlocal 8
+00698: 155  pop
+00699: 156  goto 773 (+74)
+00704: 157  loophead
+00705: 157  name "cc"
+00710: 157  dup
+00711: 157  callprop "p"
+00716: 157  swap
+00717: 157  notearg
+00718: 157  this
+00719: 157  getprop "posCfg"
+00724: 157  getprop "icon1_x"
+00729: 157  this
+00730: 157  getprop "posCfg"
+00735: 157  getprop "step"
+00740: 157  localinc 11
+00743: 157  getlocal 8
+00746: 157  pos
+00747: 157  dup
+00748: 157  one
+00749: 157  add
+00750: 157  setlocal 8
+00753: 157  pop
+00754: 157  mul
+00755: 157  add
+00756: 157  notearg
+00757: 157  getlocal 7
+00760: 157  getprop "y"
+00765: 157  notearg
+00766: 157  call 2
+00769: 157  setlocal 7
+00772: 157  pop
+00773: 156  loopentry
+00774: 156  getlocal 6
+00777: 156  getprop "x"
+00782: 156  getlocal 7
+00785: 156  getprop "x"
+00790: 156  ge
+00791: 156  ifne 704 (-87)
+00796: 160  this
+00797: 160  string "m_RewardIcon_"
+00802: 160  getlocal 5
+00805: 160  add
+00806: 160  getelem
+00807: 160  dup
+00808: 160  callprop "setPosition"
+00813: 160  swap
+00814: 160  notearg
+00815: 160  getlocal 7
+00818: 160  notearg
+00819: 160  call 1
+00822: 160  pop
+00823: 161  this
+00824: 161  string "m_RewardNum_"
+00829: 161  getlocal 5
+00832: 161  add
+00833: 161  getelem
+00834: 161  dup
+00835: 161  callprop "setPosition"
+00840: 161  swap
+00841: 161  notearg
+00842: 162  name "cc"
+00847: 162  dup
+00848: 162  callprop "p"
+00853: 162  swap
+00854: 162  notearg
+00855: 162  getlocal 7
+00858: 162  getprop "x"
+00863: 162  int8 24
+00865: 162  add
+00866: 162  notearg
+00867: 163  this
+00868: 163  string "m_RewardNum_"
+00873: 163  getlocal 5
+00876: 163  add
+00877: 163  getelem
+00878: 163  dup
+00879: 163  callprop "getPosition"
+00884: 163  swap
+00885: 163  notearg
+00886: 163  call 0
+00889: 163  getprop "y"
+00894: 163  notearg
+00895: 163  call 2
+00898: 163  notearg
+00899: 163  call 1
+00902: 163  pop
+00903: 166  this
+00904: 166  string "m_RewardIcon_"
+00909: 166  getlocal 5
+00912: 166  add
+00913: 166  getelem
+00914: 166  dup
+00915: 166  callprop "setVisible"
+00920: 166  swap
+00921: 166  notearg
+00922: 166  true
+00923: 166  notearg
+00924: 166  call 1
+00927: 166  pop
+00928: 167  this
+00929: 167  string "m_RewardNum_"
+00934: 167  getlocal 5
+00937: 167  add
+00938: 167  getelem
+00939: 167  dup
+00940: 167  callprop "setVisible"
+00945: 167  swap
+00946: 167  notearg
+00947: 167  true
+00948: 167  notearg
+00949: 167  call 1
+00952: 167  pop
+00953: 136  localinc 11
+00956: 136  getlocal 3
+00959: 136  pos
+00960: 136  dup
+00961: 136  one
+00962: 136  add
+00963: 136  setlocal 3
+00966: 136  pop
+00967: 136  pop
+00968: 136  loopentry
+00969: 136  getlocal 3
+00972: 136  getlocal 2
+00975: 136  dup
+00976: 136  callprop "getData"
+00981: 136  swap
+00982: 136  notearg
+00983: 136  call 0
+00986: 136  length "length"
+00991: 136  lt
+00992: 136  ifne 317 (-675)
+00997: 171  this
+00998: 171  getprop "num"
+01003: 171  one
+01004: 171  add
+01005: 171  setlocal 9
+01008: 171  pop
+01009: 178  this
+01010: 178  dup
+01011: 178  callprop "setRankTitle"
+01016: 178  swap
+01017: 178  notearg
+01018: 178  getlocal 9
+01021: 178  notearg
+01022: 178  int8 21
+01024: 178  notearg
+01025: 178  call 2
+01028: 178  pop
+01029: 178  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:114 ---
+;; function object[11] setRankTitle
+;; function metadata object[11] nargs=2 bindings=5
+;; arg[0] rank
+;; arg[1] tag
+;; local[0] ranking
+;; local[1] labelPos
+;; local[2] labelAp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:181 ---
+loc   line  op
+----- ----  --
+main:
+00000: 182  name "xs"
+00005: 182  dup
+00006: 182  callprop "log_hsq"
+00011: 182  swap
+00012: 182  notearg
+00013: 182  string "ClimbLadderTableViewCell setRankTitle is "
+00018: 182  getarg 0
+00021: 182  add
+00022: 182  notearg
+00023: 182  call 1
+00026: 182  pop
+00027: 183  name "xs"
+00032: 183  getprop "Utils"
+00037: 183  dup
+00038: 183  callprop "parseIntSafe"
+00043: 183  swap
+00044: 183  notearg
+00045: 183  getarg 0
+00048: 183  notearg
+00049: 183  call 1
+00052: 183  setlocal 0
+00055: 183  pop
+00056: 184  this
+00057: 184  this
+00058: 184  getprop "ccbNode"
+00063: 184  dup
+00064: 184  callprop "getChildByTag"
+00069: 184  swap
+00070: 184  notearg
+00071: 184  getarg 1
+00074: 184  notearg
+00075: 184  call 1
+00078: 184  setprop "m_ranking"
+00083: 184  pop
+00084: 186  getlocal 0
+00087: 186  int8 3
+00089: 186  le
+00090: 186  ifeq 508 (+418)
+00095: 187  this
+00096: 187  getprop "m_ranking"
+00101: 187  dup
+00102: 187  callprop "setVisible"
+00107: 187  swap
+00108: 187  notearg
+00109: 187  false
+00110: 187  notearg
+00111: 187  call 1
+00114: 187  pop
+00115: 188  this
+00116: 188  getprop "m_ranking"
+00121: 188  dup
+00122: 188  callprop "getPosition"
+00127: 188  swap
+00128: 188  notearg
+00129: 188  call 0
+00132: 188  setlocal 1
+00135: 188  pop
+00136: 189  this
+00137: 189  getprop "m_ranking"
+00142: 189  dup
+00143: 189  callprop "getAnchorPoint"
+00148: 189  swap
+00149: 189  notearg
+00150: 189  call 0
+00153: 189  setlocal 2
+00156: 189  pop
+00157: 190  this
+00158: 190  getprop "m_rankingSprite"
+00163: 190  ifeq 202 (+39)
+00168: 191  name "xs"
+00173: 191  getprop "Utils"
+00178: 191  getprop "Node"
+00183: 191  dup
+00184: 191  callprop "safeRemoveChild"
+00189: 191  swap
+00190: 191  notearg
+00191: 191  this
+00192: 191  getprop "m_rankingSprite"
+00197: 191  notearg
+00198: 191  call 1
+00201: 191  pop
+00202: 193  getlocal 0
+00205: 193  tableswitch defaultOffset 175 low 1 high 3
+	1: 25
+	2: 75
+	3: 125
+00230: 195  this
+00231: 195  name "xs"
+00236: 195  getprop "Factorys"
+00241: 195  getprop "Sprite"
+00246: 195  dup
+00247: 195  callprop "create"
+00252: 195  swap
+00253: 195  notearg
+00254: 195  string "Cmn01_Ladder_First"
+00259: 195  notearg
+00260: 195  string "Cmn01"
+00265: 195  notearg
+00266: 195  call 2
+00269: 195  setprop "m_rankingSprite"
+00274: 195  pop
+00275: 196  goto 414 (+139)
+00280: 198  this
+00281: 198  name "xs"
+00286: 198  getprop "Factorys"
+00291: 198  getprop "Sprite"
+00296: 198  dup
+00297: 198  callprop "create"
+00302: 198  swap
+00303: 198  notearg
+00304: 198  string "Cmn01_Ladder_Second"
+00309: 198  notearg
+00310: 198  string "Cmn01"
+00315: 198  notearg
+00316: 198  call 2
+00319: 198  setprop "m_rankingSprite"
+00324: 198  pop
+00325: 199  goto 414 (+89)
+00330: 201  this
+00331: 201  name "xs"
+00336: 201  getprop "Factorys"
+00341: 201  getprop "Sprite"
+00346: 201  dup
+00347: 201  callprop "create"
+00352: 201  swap
+00353: 201  notearg
+00354: 201  string "Cmn01_Ladder_Third"
+00359: 201  notearg
+00360: 201  string "Cmn01"
+00365: 201  notearg
+00366: 201  call 2
+00369: 201  setprop "m_rankingSprite"
+00374: 201  pop
+00375: 202  goto 414 (+39)
+00380: 204  name "xs"
+00385: 204  dup
+00386: 204  callprop "assert"
+00391: 204  swap
+00392: 204  notearg
+00393: 204  false
+00394: 204  notearg
+00395: 204  string "ranking is error!"
+00400: 204  notearg
+00401: 204  getlocal 0
+00404: 204  notearg
+00405: 204  call 3
+00408: 204  pop
+00409: 205  goto 414 (+5)
+00414: 208  this
+00415: 208  getprop "m_rankingSprite"
+00420: 208  dup
+00421: 208  callprop "setPosition"
+00426: 208  swap
+00427: 208  notearg
+00428: 208  getlocal 1
+00431: 208  notearg
+00432: 208  call 1
+00435: 208  pop
+00436: 209  this
+00437: 209  getprop "m_rankingSprite"
+00442: 209  dup
+00443: 209  callprop "setAnchorPoint"
+00448: 209  swap
+00449: 209  notearg
+00450: 209  getlocal 2
+00453: 209  notearg
+00454: 209  call 1
+00457: 209  pop
+00458: 211  this
+00459: 211  getprop "m_rankingSprite"
+00464: 211  dup
+00465: 211  callprop "setVisible"
+00470: 211  swap
+00471: 211  notearg
+00472: 211  true
+00473: 211  notearg
+00474: 211  call 1
+00477: 211  pop
+00478: 212  this
+00479: 212  getprop "ccbNode"
+00484: 212  dup
+00485: 212  callprop "addChild"
+00490: 212  swap
+00491: 212  notearg
+00492: 212  this
+00493: 212  getprop "m_rankingSprite"
+00498: 212  notearg
+00499: 212  call 1
+00502: 212  pop
+00503: 212  goto 587 (+84)
+00508: 214  this
+00509: 214  getprop "m_ranking"
+00514: 214  dup
+00515: 214  callprop "setVisible"
+00520: 214  swap
+00521: 214  notearg
+00522: 214  true
+00523: 214  notearg
+00524: 214  call 1
+00527: 214  pop
+00528: 215  this
+00529: 215  getprop "m_rankingSprite"
+00534: 215  ifeq 559 (+25)
+00539: 216  this
+00540: 216  getprop "m_rankingSprite"
+00545: 216  dup
+00546: 216  callprop "setVisible"
+00551: 216  swap
+00552: 216  notearg
+00553: 216  false
+00554: 216  notearg
+00555: 216  call 1
+00558: 216  pop
+00559: 219  this
+00560: 219  getprop "m_ranking"
+00565: 219  dup
+00566: 219  callprop "setString"
+00571: 219  swap
+00572: 219  notearg
+00573: 219  getarg 0
+00576: 219  string ""
+00581: 219  add
+00582: 219  notearg
+00583: 219  call 1
+00586: 219  pop
+00587: 220  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:181 ---
+;; function object[12] create
+;; function metadata object[12] nargs=0 bindings=1
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:224 ---
+loc   line  op
+----- ----  --
+main:
+00000: 225  name "xs"
+00005: 225  getprop "Views"
+00010: 225  getprop "Union"
+00015: 225  getprop "RechargeRankTableViewCell"
+00020: 225  undefined
+00021: 225  notearg
+00022: 225  new 0
+00025: 225  setlocal 0
+00028: 225  pop
+00029: 226  getlocal 0
+00032: 226  and 52 (+20)
+00037: 226  pop
+00038: 226  getlocal 0
+00041: 226  dup
+00042: 226  callprop "init"
+00047: 226  swap
+00048: 226  notearg
+00049: 226  call 0
+00052: 226  ifeq 61 (+9)
+00057: 227  getlocal 0
+00060: 227  return
+00061: 229  null
+00062: 229  return
+00063: 229  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:224 ---
+;; function object[13] ctor
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:246 ---
+loc   line  op
+----- ----  --
+main:
+00000: 247  this
+00001: 247  dup
+00002: 247  callprop "_super"
+00007: 247  swap
+00008: 247  notearg
+00009: 247  call 0
+00012: 247  pop
+00013: 248  name "cc"
+00018: 248  dup
+00019: 248  callprop "associateWithNative"
+00024: 248  swap
+00025: 248  notearg
+00026: 248  this
+00027: 248  notearg
+00028: 248  name "cc"
+00033: 248  getprop "Node"
+00038: 248  notearg
+00039: 248  call 2
+00042: 248  pop
+00043: 248  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:246 ---
+;; function object[14] init
+;; function metadata object[14] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] strCountDownTime
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=271 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:250 ---
+loc   line  op
+----- ----  --
+main:
+00000: 251  this
+00001: 251  dup
+00002: 251  callprop "_super"
+00007: 251  swap
+00008: 251  notearg
+00009: 251  call 0
+00012: 251  not
+00013: 251  ifeq 20 (+7)
+00018: 252  false
+00019: 252  return
+00020: 255  this
+00021: 255  null
+00022: 255  setprop "m_data"
+00027: 255  pop
+00028: 256  this
+00029: 256  null
+00030: 256  setprop "m_title"
+00035: 256  pop
+00036: 257  this
+00037: 257  null
+00038: 257  setprop "m_labelDesc_1"
+00043: 257  pop
+00044: 258  this
+00045: 258  null
+00046: 258  setprop "m_labelDesc_2"
+00051: 258  pop
+00052: 259  this
+00053: 259  null
+00054: 259  setprop "m_tableView"
+00059: 259  pop
+00060: 260  this
+00061: 260  null
+00062: 260  setprop "m_closeBtn"
+00067: 260  pop
+00068: 261  this
+00069: 261  null
+00070: 261  setprop "m_activityTime"
+00075: 261  pop
+00076: 262  this
+00077: 262  null
+00078: 262  setprop "m_strTime_1"
+00083: 262  pop
+00084: 263  this
+00085: 263  null
+00086: 263  setprop "m_strTime_2"
+00091: 263  pop
+00092: 266  this
+00093: 266  name "xs"
+00098: 266  getprop "ccb_reader"
+00103: 266  dup
+00104: 266  callprop "load"
+00109: 266  swap
+00110: 266  notearg
+00111: 266  string "ccb3/RechargeRankDialog.ccbi"
+00116: 266  notearg
+00117: 266  this
+00118: 266  notearg
+00119: 266  call 2
+00122: 266  setprop "ccbNode"
+00127: 266  pop
+00128: 267  name "xs"
+00133: 267  getprop "Utils"
+00138: 267  getprop "Node"
+00143: 267  dup
+00144: 267  callprop "attachNodes"
+00149: 267  swap
+00150: 267  notearg
+00151: 267  this
+00152: 267  notearg
+00153: 267  this
+00154: 267  getprop "ccbNode"
+00159: 267  notearg
+00160: 267  newinit 1
+00165: 267  string "c"
+00170: 267  initprop "desc"
+00175: 267  name "cc"
+00180: 267  dup
+00181: 267  callprop "p"
+00186: 267  swap
+00187: 267  notearg
+00188: 267  int32 -466
+00193: 267  notearg
+00194: 267  int32 -306
+00199: 267  notearg
+00200: 267  call 2
+00203: 267  initprop "offset"
+00208: 267  endinit
+00209: 267  notearg
+00210: 267  call 3
+00213: 267  pop
+00214: 268  name "xs"
+00219: 268  getprop "Utils"
+00224: 268  getprop "UI"
+00229: 268  dup
+00230: 268  callprop "replaceCcbByCfg"
+00235: 268  swap
+00236: 268  notearg
+00237: 268  this
+00238: 268  getprop "ccbNode"
+00243: 268  notearg
+00244: 268  this
+00245: 268  getprop "CCB_Cfg"
+00250: 268  notearg
+00251: 268  this
+00252: 268  notearg
+00253: 268  call 3
+00256: 268  pop
+00257: 271  this
+00258: 271  getprop "m_closeBtn"
+00263: 271  dup
+00264: 271  callprop "setOnClickCallBack"
+00269: 271  swap
+00270: 271  notearg
+00271: 271  lambda (function () {
+    [sourceless code]
+})
+00276: 271  notearg
+00277: 271  call 1
+00280: 271  pop
+00281: 276  name "xs"
+00286: 276  getprop "Constant_PartyType_Recharge_Rank"
+00291: 276  getarg 0
+00294: 276  getprop "modelEvent"
+00299: 276  getprop "m_activity_type"
+00304: 276  eq
+00305: 276  ifeq 417 (+112)
+00310: 277  this
+00311: 277  getprop "m_title"
+00316: 277  dup
+00317: 277  callprop "setString"
+00322: 277  swap
+00323: 277  notearg
+00324: 277  name "xs"
+00329: 277  getprop "Tools"
+00334: 277  getprop "String"
+00339: 277  dup
+00340: 277  callprop "createString"
+00345: 277  swap
+00346: 277  notearg
+00347: 277  string "str_ActivityRechargeRankTitle"
+00352: 277  notearg
+00353: 277  call 1
+00356: 277  notearg
+00357: 277  call 1
+00360: 277  pop
+00361: 278  this
+00362: 278  getprop "m_labelDesc_1"
+00367: 278  dup
+00368: 278  callprop "setString"
+00373: 278  swap
+00374: 278  notearg
+00375: 278  name "xs"
+00380: 278  getprop "Tools"
+00385: 278  getprop "String"
+00390: 278  dup
+00391: 278  callprop "createString"
+00396: 278  swap
+00397: 278  notearg
+00398: 278  string "str_ActivityRechargeRankDesc"
+00403: 278  notearg
+00404: 278  call 1
+00407: 278  notearg
+00408: 278  call 1
+00411: 278  pop
+00412: 278  goto 548 (+136)
+00417: 280  name "xs"
+00422: 280  getprop "Constant_PartyType_Consume_Rank"
+00427: 280  getarg 0
+00430: 280  getprop "modelEvent"
+00435: 280  getprop "m_activity_type"
+00440: 280  eq
+00441: 280  ifeq 548 (+107)
+00446: 281  this
+00447: 281  getprop "m_title"
+00452: 281  dup
+00453: 281  callprop "setString"
+00458: 281  swap
+00459: 281  notearg
+00460: 281  name "xs"
+00465: 281  getprop "Tools"
+00470: 281  getprop "String"
+00475: 281  dup
+00476: 281  callprop "createString"
+00481: 281  swap
+00482: 281  notearg
+00483: 281  string "str_ActivityConsumeRankTitle"
+00488: 281  notearg
+00489: 281  call 1
+00492: 281  notearg
+00493: 281  call 1
+00496: 281  pop
+00497: 282  this
+00498: 282  getprop "m_labelDesc_1"
+00503: 282  dup
+00504: 282  callprop "setString"
+00509: 282  swap
+00510: 282  notearg
+00511: 282  name "xs"
+00516: 282  getprop "Tools"
+00521: 282  getprop "String"
+00526: 282  dup
+00527: 282  callprop "createString"
+00532: 282  swap
+00533: 282  notearg
+00534: 282  string "str_ActivityConsumeRankDesc"
+00539: 282  notearg
+00540: 282  call 1
+00543: 282  notearg
+00544: 282  call 1
+00547: 282  pop
+00548: 285  this
+00549: 285  name "xs"
+00554: 285  getprop "Tools"
+00559: 285  getprop "String"
+00564: 285  dup
+00565: 285  callprop "createString"
+00570: 285  swap
+00571: 285  notearg
+00572: 285  string "str_ActivityTimeDesc_1"
+00577: 285  notearg
+00578: 285  call 1
+00581: 285  setprop "m_strTime_1"
+00586: 285  pop
+00587: 286  this
+00588: 286  name "xs"
+00593: 286  getprop "Tools"
+00598: 286  getprop "String"
+00603: 286  dup
+00604: 286  callprop "createString"
+00609: 286  swap
+00610: 286  notearg
+00611: 286  string "str_ActivityTimeDesc_2"
+00616: 286  notearg
+00617: 286  call 1
+00620: 286  setprop "m_strTime_2"
+00625: 286  pop
+00626: 287  getarg 0
+00629: 287  getprop "modelEvent"
+00634: 287  getprop "instance_countdown"
+00639: 287  and 660 (+21)
+00644: 287  pop
+00645: 287  getarg 0
+00648: 287  getprop "modelEvent"
+00653: 287  getprop "instance_countdown"
+00658: 287  zero
+00659: 287  ge
+00660: 287  ifeq 758 (+98)
+00665: 288  this
+00666: 288  getarg 0
+00669: 288  getprop "modelEvent"
+00674: 288  getprop "instance_countdown"
+00679: 288  setprop "m_activityTime"
+00684: 288  pop
+00685: 290  name "xs"
+00690: 290  getprop "Utils"
+00695: 290  dup
+00696: 290  callprop "convertSecondToTime"
+00701: 290  swap
+00702: 290  notearg
+00703: 290  this
+00704: 290  getprop "m_activityTime"
+00709: 290  notearg
+00710: 290  call 1
+00713: 290  setlocal 0
+00716: 290  pop
+00717: 291  this
+00718: 291  getprop "m_labelDesc_2"
+00723: 291  dup
+00724: 291  callprop "setString"
+00729: 291  swap
+00730: 291  notearg
+00731: 291  this
+00732: 291  getprop "m_strTime_1"
+00737: 291  getlocal 0
+00740: 291  add
+00741: 291  this
+00742: 291  getprop "m_strTime_2"
+00747: 291  add
+00748: 291  notearg
+00749: 291  call 1
+00752: 291  pop
+00753: 291  goto 804 (+51)
+00758: 293  this
+00759: 293  zero
+00760: 293  setprop "m_activityTime"
+00765: 293  pop
+00766: 294  this
+00767: 294  getprop "m_labelDesc_2"
+00772: 294  dup
+00773: 294  callprop "setString"
+00778: 294  swap
+00779: 294  notearg
+00780: 294  this
+00781: 294  getprop "m_strTime_1"
+00786: 294  string "00:00:00"
+00791: 294  add
+00792: 294  this
+00793: 294  getprop "m_strTime_2"
+00798: 294  add
+00799: 294  notearg
+00800: 294  call 1
+00803: 294  pop
+00804: 297  getarg 0
+00807: 297  getprop "modelEvent"
+00812: 297  getprop "m_reward_list"
+00817: 297  ifeq 842 (+25)
+00822: 299  this
+00823: 299  getarg 0
+00826: 299  getprop "modelEvent"
+00831: 299  getprop "m_reward_list"
+00836: 299  setprop "m_data"
+00841: 299  pop
+00842: 304  this
+00843: 304  name "cc"
+00848: 304  getprop "TableView"
+00853: 304  dup
+00854: 304  callprop "create"
+00859: 304  swap
+00860: 304  notearg
+00861: 304  this
+00862: 304  notearg
+00863: 304  name "cc"
+00868: 304  dup
+00869: 304  callprop "size"
+00874: 304  swap
+00875: 304  notearg
+00876: 304  uint16 895
+00879: 304  notearg
+00880: 304  uint16 472
+00883: 304  notearg
+00884: 304  call 2
+00887: 304  notearg
+00888: 304  call 2
+00891: 304  setprop "m_tableView"
+00896: 304  pop
+00897: 305  this
+00898: 305  getprop "m_tableView"
+00903: 305  dup
+00904: 305  callprop "setDirection"
+00909: 305  swap
+00910: 305  notearg
+00911: 305  name "cc"
+00916: 305  getprop "SCROLLVIEW_DIRECTION_VERTICAL"
+00921: 305  notearg
+00922: 305  call 1
+00925: 305  pop
+00926: 306  this
+00927: 306  getprop "m_tableView"
+00932: 306  dup
+00933: 306  callprop "setPosition"
+00938: 306  swap
+00939: 306  notearg
+00940: 306  name "cc"
+00945: 306  dup
+00946: 306  callprop "p"
+00951: 306  swap
+00952: 306  notearg
+00953: 306  int8 26
+00955: 306  notearg
+00956: 306  int8 18
+00958: 306  notearg
+00959: 306  call 2
+00962: 306  notearg
+00963: 306  call 1
+00966: 306  pop
+00967: 307  this
+00968: 307  getprop "m_tableView"
+00973: 307  dup
+00974: 307  callprop "setDelegate"
+00979: 307  swap
+00980: 307  notearg
+00981: 307  this
+00982: 307  notearg
+00983: 307  call 1
+00986: 307  pop
+00987: 308  this
+00988: 308  getprop "m_tableView"
+00993: 308  dup
+00994: 308  callprop "setVerticalFillOrder"
+00999: 308  swap
+01000: 308  notearg
+01001: 308  name "cc"
+01006: 308  getprop "TABLEVIEW_FILL_TOPDOWN"
+01011: 308  notearg
+01012: 308  call 1
+01015: 308  pop
+01016: 309  this
+01017: 309  getprop "ccbNode"
+01022: 309  dup
+01023: 309  callprop "addChild"
+01028: 309  swap
+01029: 309  notearg
+01030: 309  this
+01031: 309  getprop "m_tableView"
+01036: 309  notearg
+01037: 309  call 1
+01040: 309  pop
+01041: 310  this
+01042: 310  getprop "m_tableView"
+01047: 310  dup
+01048: 310  callprop "reloadData"
+01053: 310  swap
+01054: 310  notearg
+01055: 310  call 0
+01058: 310  pop
+01059: 315  true
+01060: 315  return
+01061: 315  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:250 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:271 ---
+loc   line  op
+----- ----  --
+main:
+00000: 272  name "xs"
+00005: 272  getprop "Views"
+00010: 272  getprop "Mgr"
+00015: 272  dup
+00016: 272  callprop "hideDialog"
+00021: 272  swap
+00022: 272  notearg
+00023: 272  call 0
+00026: 272  pop
+00027: 272  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:271 ---
+;; function object[15] myScheduler
+;; function metadata object[15] nargs=0 bindings=1
+;; local[0] strCountDownTime
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:317 ---
+loc   line  op
+----- ----  --
+main:
+00000: 319  this
+00001: 319  propdec "m_activityTime"
+00007: 319  dup
+00008: 319  getprop "m_activityTime"
+00013: 319  pos
+00014: 319  dup
+00015: 319  one
+00016: 319  sub
+00017: 319  pick 2
+00019: 319  swap
+00020: 319  setprop "m_activityTime"
+00025: 319  pop
+00026: 319  pop
+00027: 320  this
+00028: 320  getprop "m_activityTime"
+00033: 320  zero
+00034: 320  ge
+00035: 320  ifeq 113 (+78)
+00040: 321  name "xs"
+00045: 321  getprop "Utils"
+00050: 321  dup
+00051: 321  callprop "convertSecondToTime"
+00056: 321  swap
+00057: 321  notearg
+00058: 321  this
+00059: 321  getprop "m_activityTime"
+00064: 321  notearg
+00065: 321  call 1
+00068: 321  setlocal 0
+00071: 321  pop
+00072: 322  this
+00073: 322  getprop "m_labelDesc_2"
+00078: 322  dup
+00079: 322  callprop "setString"
+00084: 322  swap
+00085: 322  notearg
+00086: 322  this
+00087: 322  getprop "m_strTime_1"
+00092: 322  getlocal 0
+00095: 322  add
+00096: 322  this
+00097: 322  getprop "m_strTime_2"
+00102: 322  add
+00103: 322  notearg
+00104: 322  call 1
+00107: 322  pop
+00108: 322  goto 155 (+47)
+00113: 325  name "xs"
+00118: 325  getprop "director"
+00123: 325  dup
+00124: 325  callprop "getScheduler"
+00129: 325  swap
+00130: 325  notearg
+00131: 325  call 0
+00134: 325  dup
+00135: 325  callprop "unscheduleCallbackForTarget"
+00140: 325  swap
+00141: 325  notearg
+00142: 325  this
+00143: 325  notearg
+00144: 325  this
+00145: 325  getprop "myScheduler"
+00150: 325  notearg
+00151: 325  call 2
+00154: 325  pop
+00155: 326  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:317 ---
+;; function object[16] onEnter
+;; function metadata object[16] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:330 ---
+loc   line  op
+----- ----  --
+main:
+00000: 331  this
+00001: 331  dup
+00002: 331  callprop "_super"
+00007: 331  swap
+00008: 331  notearg
+00009: 331  call 0
+00012: 331  pop
+00013: 334  name "xs"
+00018: 334  dup
+00019: 334  callprop "log"
+00024: 334  swap
+00025: 334  notearg
+00026: 334  string "scheduleCallbackForTarget"
+00031: 334  notearg
+00032: 334  call 1
+00035: 334  pop
+00036: 335  name "xs"
+00041: 335  getprop "director"
+00046: 335  dup
+00047: 335  callprop "getScheduler"
+00052: 335  swap
+00053: 335  notearg
+00054: 335  call 0
+00057: 335  dup
+00058: 335  callprop "unscheduleCallbackForTarget"
+00063: 335  swap
+00064: 335  notearg
+00065: 335  this
+00066: 335  notearg
+00067: 335  this
+00068: 335  getprop "myScheduler"
+00073: 335  notearg
+00074: 335  call 2
+00077: 335  pop
+00078: 336  name "xs"
+00083: 336  getprop "director"
+00088: 336  dup
+00089: 336  callprop "getScheduler"
+00094: 336  swap
+00095: 336  notearg
+00096: 336  call 0
+00099: 336  dup
+00100: 336  callprop "scheduleCallbackForTarget"
+00105: 336  swap
+00106: 336  notearg
+00107: 336  this
+00108: 336  notearg
+00109: 336  this
+00110: 336  getprop "myScheduler"
+00115: 336  notearg
+00116: 336  one
+00117: 336  notearg
+00118: 336  name "cc"
+00123: 336  getprop "REPEAT_FOREVER"
+00128: 336  notearg
+00129: 336  call 4
+00132: 336  pop
+00133: 336  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:330 ---
+;; function object[17] onExit
+;; function metadata object[17] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:338 ---
+loc   line  op
+----- ----  --
+main:
+00000: 339  name "xs"
+00005: 339  getprop "director"
+00010: 339  dup
+00011: 339  callprop "getScheduler"
+00016: 339  swap
+00017: 339  notearg
+00018: 339  call 0
+00021: 339  dup
+00022: 339  callprop "unscheduleCallbackForTarget"
+00027: 339  swap
+00028: 339  notearg
+00029: 339  this
+00030: 339  notearg
+00031: 339  this
+00032: 339  getprop "myScheduler"
+00037: 339  notearg
+00038: 339  call 2
+00041: 339  pop
+00042: 340  this
+00043: 340  dup
+00044: 340  callprop "_super"
+00049: 340  swap
+00050: 340  notearg
+00051: 340  call 0
+00054: 340  pop
+00055: 340  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:338 ---
+;; function object[18] scrollViewDidScroll
+;; function metadata object[18] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:343 ---
+loc   line  op
+----- ----  --
+main:
+00000: 343  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:343 ---
+;; function object[19] scrollViewDidZoom
+;; function metadata object[19] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:346 ---
+loc   line  op
+----- ----  --
+main:
+00000: 346  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:346 ---
+;; function object[20] tableCellTouched
+;; function metadata object[20] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:349 ---
+loc   line  op
+----- ----  --
+main:
+00000: 349  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:349 ---
+;; function object[21] tableCellSizeForIndex
+;; function metadata object[21] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:352 ---
+loc   line  op
+----- ----  --
+main:
+00000: 353  name "cc"
+00005: 353  dup
+00006: 353  callprop "size"
+00011: 353  swap
+00012: 353  notearg
+00013: 353  uint16 889
+00016: 353  notearg
+00017: 353  int8 118
+00019: 353  notearg
+00020: 353  call 2
+00023: 353  return
+00024: 353  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:352 ---
+;; function object[22] tableCellAtIndex
+;; function metadata object[22] nargs=2 bindings=3
+;; arg[0] table
+;; arg[1] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:356 ---
+loc   line  op
+----- ----  --
+main:
+00000: 359  name "xs"
+00005: 359  getprop "Views"
+00010: 359  getprop "Union"
+00015: 359  getprop "RechargeRankTableViewCell"
+00020: 359  dup
+00021: 359  callprop "create"
+00026: 359  swap
+00027: 359  notearg
+00028: 359  call 0
+00031: 359  setlocal 0
+00034: 359  pop
+00035: 361  getlocal 0
+00038: 361  dup
+00039: 361  callprop "update"
+00044: 361  swap
+00045: 361  notearg
+00046: 361  this
+00047: 361  getprop "m_data"
+00052: 361  notearg
+00053: 361  getarg 1
+00056: 361  notearg
+00057: 361  call 2
+00060: 361  pop
+00061: 363  getlocal 0
+00064: 363  return
+00065: 363  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:356 ---
+;; function object[23] numberOfCellsInTableView
+;; function metadata object[23] nargs=1 bindings=1
+;; arg[0] table
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:365 ---
+loc   line  op
+----- ----  --
+main:
+00000: 367  this
+00001: 367  getprop "m_data"
+00006: 367  length "length"
+00011: 367  return
+00012: 367  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:365 ---
+;; function object[24] setBaseTouchPriority
+;; function metadata object[24] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:370 ---
+loc   line  op
+----- ----  --
+main:
+00000: 371  this
+00001: 371  getarg 0
+00004: 371  setprop "m_baseTouchPriority"
+00009: 371  pop
+00010: 372  this
+00011: 372  dup
+00012: 372  callprop "setTouchPriority"
+00017: 372  swap
+00018: 372  notearg
+00019: 372  this
+00020: 372  getprop "m_baseTouchPriority"
+00025: 372  notearg
+00026: 372  call 1
+00029: 372  pop
+00030: 373  this
+00031: 373  getprop "m_tableView"
+00036: 373  dup
+00037: 373  callprop "setTouchPriority"
+00042: 373  swap
+00043: 373  notearg
+00044: 373  this
+00045: 373  getprop "m_baseTouchPriority"
+00050: 373  one
+00051: 373  sub
+00052: 373  notearg
+00053: 373  call 1
+00056: 373  pop
+00057: 374  this
+00058: 374  getprop "m_closeBtn"
+00063: 374  dup
+00064: 374  callprop "setTouchPriority"
+00069: 374  swap
+00070: 374  notearg
+00071: 374  this
+00072: 374  getprop "m_baseTouchPriority"
+00077: 374  one
+00078: 374  sub
+00079: 374  notearg
+00080: 374  call 1
+00083: 374  pop
+00084: 374  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:370 ---
+;; function object[25] create
+;; function metadata object[25] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:378 ---
+loc   line  op
+----- ----  --
+main:
+00000: 379  name "xs"
+00005: 379  getprop "Scene"
+00010: 379  getprop "Party"
+00015: 379  getprop "RechargeRankDialog"
+00020: 379  undefined
+00021: 379  notearg
+00022: 379  new 0
+00025: 379  setlocal 0
+00028: 379  pop
+00029: 380  getlocal 0
+00032: 380  and 56 (+24)
+00037: 380  pop
+00038: 380  getlocal 0
+00041: 380  dup
+00042: 380  callprop "init"
+00047: 380  swap
+00048: 380  notearg
+00049: 380  getarg 0
+00052: 380  notearg
+00053: 380  call 1
+00056: 380  ifeq 65 (+9)
+00061: 381  getlocal 0
+00064: 381  return
+00065: 384  name "xs"
+00070: 384  dup
+00071: 384  callprop "assert"
+00076: 384  swap
+00077: 384  notearg
+00078: 384  false
+00079: 384  notearg
+00080: 384  string "xs.Scene.Party.RechargeRankDialog.create err"
+00085: 384  notearg
+00086: 384  call 2
+00089: 384  pop
+00090: 385  null
+00091: 385  return
+00092: 385  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/RechargeRankDialog.js:378 ---

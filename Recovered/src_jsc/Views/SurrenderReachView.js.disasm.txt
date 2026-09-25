@@ -1,0 +1,736 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SurrenderReachView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "SpecificDialog"
+00010:   7  name "xs"
+00015:   7  getprop "Views"
+00020:   7  getprop "Dialog"
+00025:   7  getprop "CommonDialog"
+00030:   7  dup
+00031:   7  callprop "extend"
+00036:   7  swap
+00037:   7  notearg
+00038:   7  newinit 1
+00043:   8  lambda (function () {
+    [sourceless code]
+})
+00048:   8  initprop "ctor"
+00053:  11  lambda (function () {
+    [sourceless code]
+})
+00058:  11  initprop "loadCCBI"
+00063:  65  lambda (function () {
+    [sourceless code]
+})
+00068:  65  initprop "showDialog"
+00073:  68  lambda (function () {
+    [sourceless code]
+})
+00078:  68  initprop "init"
+00083:  79  lambda (function () {
+    [sourceless code]
+})
+00088:  79  initprop "onTouchEnded"
+00093:  79  endinit
+00094:  79  notearg
+00095:  79  call 1
+00098:  79  setprop "SurrenderReachView"
+00103:  79  popv
+00104:  84  name "xs"
+00109:  84  getprop "Views"
+00114:  84  getprop "Mgr"
+00119:  84  dup
+00120:  84  callprop "registerDialog"
+00125:  84  swap
+00126:  84  notearg
+00127:  84  string "SurrenderReachView"
+00132:  84  notearg
+00133:  84  newinit 1
+00138:  85  name "xs"
+00143:  85  getprop "SpecificDialog"
+00148:  85  getprop "SurrenderReachView"
+00153:  85  initprop "class"
+00158:  85  endinit
+00159:  85  notearg
+00160:  85  call 2
+00163:  85  popv
+00164:  86  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  call 0
+00012:   9  pop
+00013:   9  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:8 ---
+;; function object[1] loadCCBI
+;; function metadata object[1] nargs=0 bindings=8
+;; local[0] visibleSize
+;; local[1] pos
+;; local[2] _data
+;; local[3] proScaleX
+;; local[4] proStatusStr
+;; local[5] itemModel
+;; local[6] icon
+;; local[7] general
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  name "xs"
+00005:  12  dup
+00006:  12  callprop "log"
+00011:  12  swap
+00012:  12  notearg
+00013:  12  string "SurrenderReachView loadCCBI"
+00018:  12  notearg
+00019:  12  call 1
+00022:  12  pop
+00023:  13  this
+00024:  13  name "xs"
+00029:  13  getprop "ccb_reader"
+00034:  13  dup
+00035:  13  callprop "load"
+00040:  13  swap
+00041:  13  notearg
+00042:  13  name "xs"
+00047:  13  getprop "Cfg"
+00052:  13  getprop "CCBI"
+00057:  13  getprop "SurrenderReach"
+00062:  13  notearg
+00063:  13  this
+00064:  13  notearg
+00065:  13  call 2
+00068:  13  setprop "_BGccbNode"
+00073:  13  pop
+00074:  14  name "xs"
+00079:  14  getprop "Utils"
+00084:  14  getprop "Node"
+00089:  14  dup
+00090:  14  callprop "attachNodes"
+00095:  14  swap
+00096:  14  notearg
+00097:  14  this
+00098:  14  notearg
+00099:  14  this
+00100:  14  getprop "_BGccbNode"
+00105:  14  notearg
+00106:  14  newinit 1
+00111:  15  string "lb"
+00116:  15  initprop "desc"
+00121:  16  true
+00122:  16  initprop "sc"
+00127:  16  endinit
+00128:  16  notearg
+00129:  16  call 3
+00132:  16  pop
+00133:  19  name "xs"
+00138:  19  getprop "director"
+00143:  19  dup
+00144:  19  callprop "getVisibleSize"
+00149:  19  swap
+00150:  19  notearg
+00151:  19  call 0
+00154:  19  setlocal 0
+00157:  19  pop
+00158:  20  name "cc"
+00163:  20  dup
+00164:  20  callprop "p"
+00169:  20  swap
+00170:  20  notearg
+00171:  20  getlocal 0
+00174:  20  getprop "width"
+00179:  20  int8 2
+00181:  20  div
+00182:  20  this
+00183:  20  getprop "_BGccbNode"
+00188:  20  dup
+00189:  20  callprop "getContentSize"
+00194:  20  swap
+00195:  20  notearg
+00196:  20  call 0
+00199:  20  getprop "width"
+00204:  20  int8 2
+00206:  20  div
+00207:  20  sub
+00208:  20  notearg
+00209:  20  zero
+00210:  20  notearg
+00211:  20  call 2
+00214:  20  setlocal 1
+00217:  20  pop
+00218:  21  this
+00219:  21  getprop "_BGccbNode"
+00224:  21  dup
+00225:  21  callprop "setPosition"
+00230:  21  swap
+00231:  21  notearg
+00232:  21  getlocal 1
+00235:  21  notearg
+00236:  21  call 1
+00239:  21  pop
+00240:  24  this
+00241:  24  getprop "_data"
+00246:  24  getprop "data"
+00251:  24  setlocal 2
+00254:  24  pop
+00255:  26  this
+00256:  26  getprop "_BGccbNode"
+00261:  26  dup
+00262:  26  callprop "getChildByTag"
+00267:  26  swap
+00268:  26  notearg
+00269:  26  int8 3
+00271:  26  notearg
+00272:  26  call 1
+00275:  26  dup
+00276:  26  callprop "setString"
+00281:  26  swap
+00282:  26  notearg
+00283:  26  getlocal 2
+00286:  26  getprop "surrender_title"
+00291:  26  notearg
+00292:  26  call 1
+00295:  26  pop
+00296:  27  this
+00297:  27  getprop "_BGccbNode"
+00302:  27  dup
+00303:  27  callprop "getChildByTag"
+00308:  27  swap
+00309:  27  notearg
+00310:  27  int8 5
+00312:  27  notearg
+00313:  27  call 1
+00316:  27  dup
+00317:  27  callprop "setString"
+00322:  27  swap
+00323:  27  notearg
+00324:  27  getlocal 2
+00327:  27  getprop "surrender_desc"
+00332:  27  notearg
+00333:  27  call 1
+00336:  27  pop
+00337:  29  getlocal 2
+00340:  29  getprop "progressed_num"
+00345:  29  getlocal 2
+00348:  29  getprop "progress_num"
+00353:  29  div
+00354:  29  or 365 (+11)
+00359:  29  pop
+00360:  29  double 0.01
+00365:  29  setlocal 3
+00368:  29  pop
+00369:  30  this
+00370:  30  getprop "_BGccbNode"
+00375:  30  dup
+00376:  30  callprop "getChildByTag"
+00381:  30  swap
+00382:  30  notearg
+00383:  30  int8 4
+00385:  30  notearg
+00386:  30  call 1
+00389:  30  dup
+00390:  30  callprop "setScaleX"
+00395:  30  swap
+00396:  30  notearg
+00397:  30  getlocal 3
+00400:  30  notearg
+00401:  30  call 1
+00404:  30  pop
+00405:  32  getlocal 2
+00408:  32  getprop "progressed_num"
+00413:  32  string "/"
+00418:  32  add
+00419:  32  getlocal 2
+00422:  32  getprop "progress_num"
+00427:  32  add
+00428:  32  setlocal 4
+00431:  32  pop
+00432:  33  this
+00433:  33  getprop "_BGccbNode"
+00438:  33  dup
+00439:  33  callprop "getChildByTag"
+00444:  33  swap
+00445:  33  notearg
+00446:  33  int8 10
+00448:  33  notearg
+00449:  33  call 1
+00452:  33  dup
+00453:  33  callprop "setString"
+00458:  33  swap
+00459:  33  notearg
+00460:  33  getlocal 4
+00463:  33  notearg
+00464:  33  call 1
+00467:  33  pop
+00468:  35  getlocal 2
+00471:  35  getprop "surrender_id"
+00476:  35  null
+00477:  35  ne
+00478:  35  ifeq 707 (+229)
+00483:  36  name "xs"
+00488:  36  dup
+00489:  36  callprop "log"
+00494:  36  swap
+00495:  36  notearg
+00496:  36  string "_data.surrender_id is "
+00501:  36  getlocal 2
+00504:  36  getprop "surrender_id"
+00509:  36  add
+00510:  36  notearg
+00511:  36  call 1
+00514:  36  pop
+00515:  37  name "xs"
+00520:  37  getprop "Models"
+00525:  37  getprop "Item"
+00530:  37  dup
+00531:  37  callprop "createWithBase"
+00536:  37  swap
+00537:  37  notearg
+00538:  37  getlocal 2
+00541:  37  getprop "surrender_id"
+00546:  37  dup
+00547:  37  callprop "toString"
+00552:  37  swap
+00553:  37  notearg
+00554:  37  call 0
+00557:  37  notearg
+00558:  37  call 1
+00561:  37  setlocal 5
+00564:  37  pop
+00565:  38  name "xs"
+00570:  38  dup
+00571:  38  callprop "log"
+00576:  38  swap
+00577:  38  notearg
+00578:  38  string "_data.surrender_id 111111 is "
+00583:  38  getlocal 2
+00586:  38  getprop "surrender_id"
+00591:  38  add
+00592:  38  notearg
+00593:  38  call 1
+00596:  38  pop
+00597:  39  this
+00598:  39  getprop "_BGccbNode"
+00603:  39  dup
+00604:  39  callprop "getChildByTag"
+00609:  39  swap
+00610:  39  notearg
+00611:  39  int8 7
+00613:  39  notearg
+00614:  39  call 1
+00617:  39  dup
+00618:  39  callprop "getPosition"
+00623:  39  swap
+00624:  39  notearg
+00625:  39  call 0
+00628:  39  setlocal 1
+00631:  39  pop
+00632:  40  getlocal 5
+00635:  40  dup
+00636:  40  callprop "createHeadView"
+00641:  40  swap
+00642:  40  notearg
+00643:  40  call 0
+00646:  40  setlocal 6
+00649:  40  pop
+00650:  41  getlocal 6
+00653:  41  dup
+00654:  41  callprop "setPosition"
+00659:  41  swap
+00660:  41  notearg
+00661:  41  getlocal 1
+00664:  41  notearg
+00665:  41  call 1
+00668:  41  pop
+00669:  42  name "xs"
+00674:  42  getprop "Utils"
+00679:  42  getprop "Node"
+00684:  42  dup
+00685:  42  callprop "attachNodes"
+00690:  42  swap
+00691:  42  notearg
+00692:  42  this
+00693:  42  getprop "_BGccbNode"
+00698:  42  notearg
+00699:  42  getlocal 6
+00702:  42  notearg
+00703:  42  call 2
+00706:  42  pop
+00707:  45  this
+00708:  45  getprop "_BGccbNode"
+00713:  45  dup
+00714:  45  callprop "getChildByTag"
+00719:  45  swap
+00720:  45  notearg
+00721:  45  int8 2
+00723:  45  notearg
+00724:  45  call 1
+00727:  45  dup
+00728:  45  callprop "setZOrder"
+00733:  45  swap
+00734:  45  notearg
+00735:  45  int8 100
+00737:  45  notearg
+00738:  45  call 1
+00741:  45  pop
+00742:  47  this
+00743:  47  getprop "_data"
+00748:  47  getprop "general_id"
+00753:  47  null
+00754:  47  ne
+00755:  47  ifeq 1099 (+344)
+00760:  48  name "xs"
+00765:  48  getprop "Models"
+00770:  48  getprop "General"
+00775:  48  dup
+00776:  48  callprop "createWithBase"
+00781:  48  swap
+00782:  48  notearg
+00783:  48  this
+00784:  48  getprop "_data"
+00789:  48  getprop "general_id"
+00794:  48  notearg
+00795:  48  call 1
+00798:  48  setlocal 7
+00801:  48  pop
+00802:  49  this
+00803:  49  getlocal 7
+00806:  49  dup
+00807:  49  callprop "getRes"
+00812:  49  swap
+00813:  49  notearg
+00814:  49  call 0
+00817:  49  dup
+00818:  49  callprop "createOriginalSprite"
+00823:  49  swap
+00824:  49  notearg
+00825:  49  call 0
+00828:  49  setprop "m_body"
+00833:  49  pop
+00834:  50  this
+00835:  50  getprop "m_body"
+00840:  50  dup
+00841:  50  callprop "setScale"
+00846:  50  swap
+00847:  50  notearg
+00848:  50  double 0.86
+00853:  50  notearg
+00854:  50  call 1
+00857:  50  pop
+00858:  51  this
+00859:  51  getprop "m_body"
+00864:  51  dup
+00865:  51  callprop "setAnchorPoint"
+00870:  51  swap
+00871:  51  notearg
+00872:  51  name "cc"
+00877:  51  dup
+00878:  51  callprop "p"
+00883:  51  swap
+00884:  51  notearg
+00885:  51  double 0.5
+00890:  51  notearg
+00891:  51  zero
+00892:  51  notearg
+00893:  51  call 2
+00896:  51  notearg
+00897:  51  call 1
+00900:  51  pop
+00901:  52  this
+00902:  52  getprop "_BGccbNode"
+00907:  52  dup
+00908:  52  callprop "getChildByTag"
+00913:  52  swap
+00914:  52  notearg
+00915:  52  one
+00916:  52  notearg
+00917:  52  call 1
+00920:  52  dup
+00921:  52  callprop "getPosition"
+00926:  52  swap
+00927:  52  notearg
+00928:  52  call 0
+00931:  52  setlocal 1
+00934:  52  pop
+00935:  53  this
+00936:  53  getprop "m_body"
+00941:  53  dup
+00942:  53  callprop "setPosition"
+00947:  53  swap
+00948:  53  notearg
+00949:  53  getlocal 1
+00952:  53  notearg
+00953:  53  call 1
+00956:  53  pop
+00957:  54  this
+00958:  54  getprop "m_body"
+00963:  54  dup
+00964:  54  callprop "setZOrder"
+00969:  54  swap
+00970:  54  notearg
+00971:  54  int8 -1
+00973:  54  notearg
+00974:  54  call 1
+00977:  54  pop
+00978:  55  name "xs"
+00983:  55  getprop "Utils"
+00988:  55  getprop "Node"
+00993:  55  dup
+00994:  55  callprop "attachNodes"
+00999:  55  swap
+01000:  55  notearg
+01001:  55  this
+01002:  55  getprop "_BGccbNode"
+01007:  55  notearg
+01008:  55  this
+01009:  55  getprop "m_body"
+01014:  55  notearg
+01015:  55  call 2
+01018:  55  pop
+01019:  57  this
+01020:  57  getprop "_BGccbNode"
+01025:  57  dup
+01026:  57  callprop "getChildByTag"
+01031:  57  swap
+01032:  57  notearg
+01033:  57  int8 100
+01035:  57  notearg
+01036:  57  call 1
+01039:  57  dup
+01040:  57  callprop "setString"
+01045:  57  swap
+01046:  57  notearg
+01047:  57  getlocal 7
+01050:  57  dup
+01051:  57  callprop "getNameString"
+01056:  57  swap
+01057:  57  notearg
+01058:  57  call 0
+01061:  57  name "xs"
+01066:  57  getprop "Tools"
+01071:  57  getprop "String"
+01076:  57  dup
+01077:  57  callprop "createString"
+01082:  57  swap
+01083:  57  notearg
+01084:  57  string "auto_name_303"
+01089:  57  notearg
+01090:  57  call 1
+01093:  57  add
+01094:  57  notearg
+01095:  57  call 1
+01098:  57  pop
+01099:  61  this
+01100:  61  getprop "_BGccbNode"
+01105:  61  dup
+01106:  61  callprop "getChildByTag"
+01111:  61  swap
+01112:  61  notearg
+01113:  61  int8 101
+01115:  61  notearg
+01116:  61  call 1
+01119:  61  dup
+01120:  61  callprop "setString"
+01125:  61  swap
+01126:  61  notearg
+01127:  61  getlocal 7
+01130:  61  dup
+01131:  61  callprop "getNameString"
+01136:  61  swap
+01137:  61  notearg
+01138:  61  call 0
+01141:  61  name "xs"
+01146:  61  getprop "Tools"
+01151:  61  getprop "String"
+01156:  61  dup
+01157:  61  callprop "createString"
+01162:  61  swap
+01163:  61  notearg
+01164:  61  string "auto_name_304"
+01169:  61  notearg
+01170:  61  call 1
+01173:  61  add
+01174:  61  getlocal 2
+01177:  61  getprop "progressed_num"
+01182:  61  add
+01183:  61  string "/"
+01188:  61  add
+01189:  61  getlocal 2
+01192:  61  getprop "progress_num"
+01197:  61  add
+01198:  61  name "xs"
+01203:  61  getprop "Tools"
+01208:  61  getprop "String"
+01213:  61  dup
+01214:  61  callprop "createString"
+01219:  61  swap
+01220:  61  notearg
+01221:  61  string "auto_name_305"
+01226:  61  notearg
+01227:  61  call 1
+01230:  61  add
+01231:  61  getlocal 7
+01234:  61  dup
+01235:  61  callprop "getNameString"
+01240:  61  swap
+01241:  61  notearg
+01242:  61  call 0
+01245:  61  add
+01246:  61  name "xs"
+01251:  61  getprop "Tools"
+01256:  61  getprop "String"
+01261:  61  dup
+01262:  61  callprop "createString"
+01267:  61  swap
+01268:  61  notearg
+01269:  61  string "auto_name_47"
+01274:  61  notearg
+01275:  61  call 1
+01278:  61  add
+01279:  61  notearg
+01280:  61  call 1
+01283:  61  pop
+01284:  63  this
+01285:  63  getprop "_BGccbNode"
+01290:  63  dup
+01291:  63  callprop "getChildByTag"
+01296:  63  swap
+01297:  63  notearg
+01298:  63  int8 6
+01300:  63  notearg
+01301:  63  call 1
+01304:  63  dup
+01305:  63  callprop "setString"
+01310:  63  swap
+01311:  63  notearg
+01312:  63  getlocal 2
+01315:  63  getprop "govern_value"
+01320:  63  string ""
+01325:  63  add
+01326:  63  notearg
+01327:  63  call 1
+01330:  63  pop
+01331:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:11 ---
+;; function object[2] showDialog
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] params
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:65 ---
+loc   line  op
+----- ----  --
+main:
+00000:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:65 ---
+;; function object[3] init
+;; function metadata object[3] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  70  getarg 0
+00003:  70  or 15 (+12)
+00008:  70  pop
+00009:  70  newinit 1
+00014:  70  endinit
+00015:  70  setlocal 0
+00018:  70  pop
+00019:  71  this
+00020:  71  getlocal 0
+00023:  71  setprop "_data"
+00028:  71  pop
+00029:  72  name "xs"
+00034:  72  dup
+00035:  72  callprop "dump"
+00040:  72  swap
+00041:  72  notearg
+00042:  72  string "SurrenderReachView init"
+00047:  72  notearg
+00048:  72  this
+00049:  72  getprop "_data"
+00054:  72  notearg
+00055:  72  call 2
+00058:  72  pop
+00059:  73  this
+00060:  73  dup
+00061:  73  callprop "_super"
+00066:  73  swap
+00067:  73  notearg
+00068:  73  call 0
+00071:  73  pop
+00072:  75  this
+00073:  75  dup
+00074:  75  callprop "setIsEatEvent"
+00079:  75  swap
+00080:  75  notearg
+00081:  75  true
+00082:  75  notearg
+00083:  75  call 1
+00086:  75  pop
+00087:  77  true
+00088:  77  return
+00089:  77  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:68 ---
+;; function object[4] onTouchEnded
+;; function metadata object[4] nargs=2 bindings=2
+;; arg[0] touch
+;; arg[1] e
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:79 ---
+loc   line  op
+----- ----  --
+main:
+00000:  80  name "xs"
+00005:  80  dup
+00006:  80  callprop "log"
+00011:  80  swap
+00012:  80  notearg
+00013:  80  string "SurrenderReachView onTouchEnded "
+00018:  80  notearg
+00019:  80  call 1
+00022:  80  pop
+00023:  81  name "xs"
+00028:  81  getprop "Utils"
+00033:  81  getprop "Node"
+00038:  81  dup
+00039:  81  callprop "safeRemoveChild"
+00044:  81  swap
+00045:  81  notearg
+00046:  81  this
+00047:  81  notearg
+00048:  81  call 1
+00051:  81  pop
+00052:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SurrenderReachView.js:79 ---

@@ -1,0 +1,407 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Utils/Action.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=15 object[0]
+;; FUNCTION-MAP kind=lambda offset=25 object[1]
+;; FUNCTION-MAP kind=lambda offset=45 object[2]
+;; FUNCTION-MAP kind=lambda offset=55 object[3]
+;; FUNCTION-MAP kind=lambda offset=65 object[4]
+;; FUNCTION-MAP kind=lambda offset=75 object[5]
+;; FUNCTION-MAP kind=lambda offset=85 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  name "xs"
+00005:  11  getprop "Utils"
+00010:  11  newinit 1
+00015:  13  lambda (function () {
+    [sourceless code]
+})
+00020:  13  initprop "log"
+00025:  15  lambda (function () {
+    [sourceless code]
+})
+00030:  15  initprop "dump"
+00035:  18  string "xs.Utils.Action"
+00040:  18  initprop "name"
+00045:  21  lambda (function () {
+    [sourceless code]
+})
+00050:  21  initprop "combine"
+00055:  63  lambda (function () {
+    [sourceless code]
+})
+00060:  63  initprop "combineNotNull"
+00065:  76  lambda (function () {
+    [sourceless code]
+})
+00070:  76  initprop "combineSequence"
+00075:  79  lambda (function () {
+    [sourceless code]
+})
+00080:  79  initprop "combineSpawn"
+00085:  83  lambda (function () {
+    [sourceless code]
+})
+00090:  83  initprop "combineSequenceWithTarget"
+00095:  83  endinit
+00096:  83  setprop "Action"
+00101:  83  popv
+00102:  99  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:1 ---
+;; function object[0] log
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:13 ---
+;; function object[1] dump
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:15 ---
+;; function object[2] combine
+;; function metadata object[2] nargs=2 bindings=4
+;; arg[0] arr
+;; arg[1] funcObj
+;; local[0] _arrSafe
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  this
+00001:  23  dup
+00002:  23  callprop "log"
+00007:  23  swap
+00008:  23  notearg
+00009:  23  string "combine"
+00014:  23  notearg
+00015:  23  string "begin:"
+00020:  23  getarg 0
+00023:  23  length "length"
+00028:  23  add
+00029:  23  notearg
+00030:  23  call 2
+00033:  23  pop
+00034:  24  this
+00035:  24  dup
+00036:  24  callprop "log"
+00041:  24  swap
+00042:  24  notearg
+00043:  24  string "combine"
+00048:  24  notearg
+00049:  24  string "begin:"
+00054:  24  getarg 0
+00057:  24  add
+00058:  24  notearg
+00059:  24  call 2
+00062:  24  pop
+00063:  27  name "xs"
+00068:  27  dup
+00069:  27  callprop "assert"
+00074:  27  swap
+00075:  27  notearg
+00076:  27  name "xs"
+00081:  27  getprop "Utils"
+00086:  27  dup
+00087:  27  callprop "isArray"
+00092:  27  swap
+00093:  27  notearg
+00094:  27  getarg 0
+00097:  27  notearg
+00098:  27  call 1
+00101:  27  notearg
+00102:  27  string "arr must be array"
+00107:  27  notearg
+00108:  27  getarg 0
+00111:  27  notearg
+00112:  27  call 3
+00115:  27  pop
+00116:  30  getarg 0
+00119:  30  dup
+00120:  30  callprop "removeEmptys"
+00125:  30  swap
+00126:  30  notearg
+00127:  30  call 0
+00130:  30  setlocal 0
+00133:  30  pop
+00134:  37  null
+00135:  37  setlocal 1
+00138:  37  pop
+00139:  39  getlocal 0
+00142:  39  null
+00143:  39  stricteq
+00144:  39  or 159 (+15)
+00149:  39  pop
+00150:  39  getlocal 0
+00153:  39  name "undefined"
+00158:  39  stricteq
+00159:  39  ifeq 174 (+15)
+00164:  40  null
+00165:  40  setlocal 1
+00168:  40  pop
+00169:  40  goto 286 (+117)
+00174:  42  getlocal 0
+00177:  42  length "length"
+00182:  42  one
+00183:  42  stricteq
+00184:  42  ifeq 203 (+19)
+00189:  43  getlocal 0
+00192:  43  zero
+00193:  43  getelem
+00194:  43  setlocal 1
+00197:  43  pop
+00198:  43  goto 286 (+88)
+00203:  45  getlocal 0
+00206:  45  length "length"
+00211:  45  zero
+00212:  45  stricteq
+00213:  45  ifeq 228 (+15)
+00218:  47  null
+00219:  47  setlocal 1
+00222:  47  pop
+00223:  47  goto 286 (+63)
+00228:  51  name "xs"
+00233:  51  dup
+00234:  51  callprop "assert"
+00239:  51  swap
+00240:  51  notearg
+00241:  51  getarg 1
+00244:  51  notearg
+00245:  51  string "need funcObj"
+00250:  51  notearg
+00251:  51  call 2
+00254:  51  pop
+00255:  55  getarg 1
+00258:  55  getprop "create"
+00263:  55  dup
+00264:  55  callprop "apply"
+00269:  55  swap
+00270:  55  notearg
+00271:  55  getarg 1
+00274:  55  notearg
+00275:  55  getlocal 0
+00278:  55  notearg
+00279:  55  funapply 2
+00282:  55  setlocal 1
+00285:  55  pop
+00286:  58  this
+00287:  58  dup
+00288:  58  callprop "log"
+00293:  58  swap
+00294:  58  notearg
+00295:  58  string "Utils/Action/combine"
+00300:  58  notearg
+00301:  58  string "end:"
+00306:  58  getlocal 0
+00309:  58  length "length"
+00314:  58  add
+00315:  58  notearg
+00316:  58  call 2
+00319:  58  pop
+00320:  60  getlocal 1
+00323:  60  return
+00324:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:21 ---
+;; function object[3] combineNotNull
+;; function metadata object[3] nargs=2 bindings=3
+;; arg[0] arr
+;; arg[1] funcObj
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:63 ---
+loc   line  op
+----- ----  --
+main:
+00000:  67  name "xs"
+00005:  67  dup
+00006:  67  callprop "assert"
+00011:  67  swap
+00012:  67  notearg
+00013:  67  getarg 0
+00016:  67  notearg
+00017:  67  string "arr err"
+00022:  67  notearg
+00023:  67  call 2
+00026:  67  pop
+00027:  69  this
+00028:  69  dup
+00029:  69  callprop "combine"
+00034:  69  swap
+00035:  69  notearg
+00036:  69  getarg 0
+00039:  69  notearg
+00040:  69  getarg 1
+00043:  69  notearg
+00044:  69  call 2
+00047:  69  or 76 (+29)
+00052:  69  pop
+00053:  69  name "cc"
+00058:  69  getprop "DelayTime"
+00063:  69  dup
+00064:  69  callprop "create"
+00069:  69  swap
+00070:  69  notearg
+00071:  69  zero
+00072:  69  notearg
+00073:  69  call 1
+00076:  69  setlocal 0
+00079:  69  pop
+00080:  73  getlocal 0
+00083:  73  return
+00084:  73  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:63 ---
+;; function object[4] combineSequence
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] arr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:76 ---
+loc   line  op
+----- ----  --
+main:
+00000:  77  this
+00001:  77  dup
+00002:  77  callprop "combine"
+00007:  77  swap
+00008:  77  notearg
+00009:  77  getarg 0
+00012:  77  notearg
+00013:  77  name "cc"
+00018:  77  getprop "Sequence"
+00023:  77  notearg
+00024:  77  call 2
+00027:  77  return
+00028:  77  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:76 ---
+;; function object[5] combineSpawn
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] arr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:79 ---
+loc   line  op
+----- ----  --
+main:
+00000:  80  this
+00001:  80  dup
+00002:  80  callprop "combine"
+00007:  80  swap
+00008:  80  notearg
+00009:  80  getarg 0
+00012:  80  notearg
+00013:  80  name "cc"
+00018:  80  getprop "Spawn"
+00023:  80  notearg
+00024:  80  call 2
+00027:  80  return
+00028:  80  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:79 ---
+;; function object[6] combineSequenceWithTarget
+;; function metadata object[6] nargs=2 bindings=5
+;; arg[0] arr
+;; arg[1] target
+;; local[0] _arrSafe
+;; local[1] i
+;; local[2] _type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:83 ---
+loc   line  op
+----- ----  --
+main:
+00000:  85  getarg 0
+00003:  85  dup
+00004:  85  callprop "removeEmptys"
+00009:  85  swap
+00010:  85  notearg
+00011:  85  call 0
+00014:  85  setlocal 0
+00017:  85  pop
+00018:  87  zero
+00019:  87  setlocal 1
+00022:  87  pop
+00023:  87  goto 134 (+111)
+00028:  88  loophead
+00029:  88  string ""
+00034:  88  getlocal 0
+00037:  88  getlocal 1
+00040:  88  getelem
+00041:  88  add
+00042:  88  setlocal 2
+00045:  88  pop
+00046:  89  getlocal 2
+00049:  89  dup
+00050:  89  callprop "indexOf"
+00055:  89  swap
+00056:  89  notearg
+00057:  89  string "[object CallFunc]"
+00062:  89  notearg
+00063:  89  call 1
+00066:  89  zero
+00067:  89  ge
+00068:  89  ifeq 78 (+10)
+00073:  89  goto 119 (+46)
+00078:  93  getlocal 0
+00081:  93  getlocal 1
+00084:  93  name "cc"
+00089:  93  getprop "TargetedAction"
+00094:  93  dup
+00095:  93  callprop "create"
+00100:  93  swap
+00101:  93  notearg
+00102:  93  getarg 1
+00105:  93  notearg
+00106:  93  getlocal 0
+00109:  93  getlocal 1
+00112:  93  getelem
+00113:  93  notearg
+00114:  93  call 2
+00117:  93  setelem
+00118:  93  pop
+00119:  87  localinc 11
+00122:  87  getlocal 1
+00125:  87  pos
+00126:  87  dup
+00127:  87  one
+00128:  87  add
+00129:  87  setlocal 1
+00132:  87  pop
+00133:  87  pop
+00134:  87  loopentry
+00135:  87  getlocal 1
+00138:  87  getlocal 0
+00141:  87  length "length"
+00146:  87  lt
+00147:  87  ifne 28 (-119)
+00152:  97  this
+00153:  97  dup
+00154:  97  callprop "combine"
+00159:  97  swap
+00160:  97  notearg
+00161:  97  getlocal 0
+00164:  97  notearg
+00165:  97  name "cc"
+00170:  97  getprop "Sequence"
+00175:  97  notearg
+00176:  97  call 2
+00179:  97  return
+00180:  97  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Action.js:83 ---

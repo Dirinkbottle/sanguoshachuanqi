@@ -1,0 +1,510 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/CardShowData.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=48 object[0]
+;; FUNCTION-MAP kind=lambda offset=58 object[1]
+;; FUNCTION-MAP kind=lambda offset=68 object[2]
+;; FUNCTION-MAP kind=lambda offset=78 object[3]
+;; FUNCTION-MAP kind=lambda offset=88 object[4]
+;; FUNCTION-MAP kind=lambda offset=129 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Profile"
+00010:   7  getprop "GameData"
+00015:   7  name "xs"
+00020:   7  getprop "Profile"
+00025:   7  getprop "GameData"
+00030:   7  getprop "Base"
+00035:   7  dup
+00036:   7  callprop "extend"
+00041:   7  swap
+00042:   7  notearg
+00043:   7  newinit 1
+00048:  10  lambda (function () {
+    [sourceless code]
+})
+00053:  10  initprop "init"
+00058:  16  lambda (function () {
+    [sourceless code]
+})
+00063:  16  initprop "getGeneralShowData"
+00068:  34  lambda (function () {
+    [sourceless code]
+})
+00073:  34  initprop "getSoulShowData"
+00078:  48  lambda (function () {
+    [sourceless code]
+})
+00083:  48  initprop "getEquipShowData"
+00088:  59  lambda (function () {
+    [sourceless code]
+})
+00093:  59  initprop "getRefineStoneShowData"
+00098:  59  endinit
+00099:  59  notearg
+00100:  59  call 1
+00103:  59  setprop "CardShowData"
+00108:  59  popv
+00109:  73  name "xs"
+00114:  73  getprop "Profile"
+00119:  73  getprop "GameData"
+00124:  73  getprop "CardShowData"
+00129:  73  lambda (function () {
+    [sourceless code]
+})
+00134:  73  setprop "create"
+00139:  73  popv
+00140:  89  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  getarg 0
+00012:  11  notearg
+00013:  11  call 1
+00016:  11  pop
+00017:  12  true
+00018:  12  return
+00019:  12  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:10 ---
+;; function object[1] getGeneralShowData
+;; function metadata object[1] nargs=1 bindings=4
+;; arg[0] isInTeam
+;; local[0] generals
+;; local[1] generalShowData
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  getarg 0
+00003:  17  ifeq 45 (+42)
+00008:  18  this
+00009:  18  dup
+00010:  18  callprop "_initInstance"
+00015:  18  swap
+00016:  18  notearg
+00017:  18  call 0
+00020:  18  getprop "Generals"
+00025:  18  dup
+00026:  18  callprop "getAllWithDefaultSort"
+00031:  18  swap
+00032:  18  notearg
+00033:  18  call 0
+00036:  18  setlocal 0
+00039:  18  pop
+00040:  18  goto 77 (+37)
+00045:  21  this
+00046:  21  dup
+00047:  21  callprop "_initInstance"
+00052:  21  swap
+00053:  21  notearg
+00054:  21  call 0
+00057:  21  getprop "Generals"
+00062:  21  dup
+00063:  21  callprop "getGeneralNotInTeamAndNotInLieutenantAndNotBuddy"
+00068:  21  swap
+00069:  21  notearg
+00070:  21  call 0
+00073:  21  setlocal 0
+00076:  21  pop
+00077:  24  getlocal 0
+00080:  24  dup
+00081:  24  callprop "reverse"
+00086:  24  swap
+00087:  24  notearg
+00088:  24  call 0
+00091:  24  pop
+00092:  25  newarray 0
+00096:  25  endinit
+00097:  25  setlocal 1
+00100:  25  pop
+00101:  26  zero
+00102:  26  setlocal 2
+00105:  26  pop
+00106:  26  goto 177 (+71)
+00111:  27  loophead
+00112:  27  getlocal 1
+00115:  27  dup
+00116:  27  callprop "push"
+00121:  27  swap
+00122:  27  notearg
+00123:  27  name "xs"
+00128:  27  getprop "Models"
+00133:  27  getprop "ShowData"
+00138:  27  dup
+00139:  27  callprop "create"
+00144:  27  swap
+00145:  27  notearg
+00146:  27  getlocal 0
+00149:  27  getlocal 2
+00152:  27  getelem
+00153:  27  notearg
+00154:  27  call 1
+00157:  27  notearg
+00158:  27  call 1
+00161:  27  pop
+00162:  26  localinc 11
+00165:  26  getlocal 2
+00168:  26  pos
+00169:  26  dup
+00170:  26  one
+00171:  26  add
+00172:  26  setlocal 2
+00175:  26  pop
+00176:  26  pop
+00177:  26  loopentry
+00178:  26  getlocal 2
+00181:  26  getlocal 0
+00184:  26  length "length"
+00189:  26  lt
+00190:  26  ifne 111 (-79)
+00195:  30  getlocal 1
+00198:  30  return
+00199:  30  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:16 ---
+;; function object[2] getSoulShowData
+;; function metadata object[2] nargs=0 bindings=3
+;; local[0] generalSouls
+;; local[1] soulShowData
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  this
+00001:  35  dup
+00002:  35  callprop "_initInstance"
+00007:  35  swap
+00008:  35  notearg
+00009:  35  call 0
+00012:  35  getprop "GeneralSouls"
+00017:  35  dup
+00018:  35  callprop "getAllClone"
+00023:  35  swap
+00024:  35  notearg
+00025:  35  call 0
+00028:  35  setlocal 0
+00031:  35  pop
+00032:  37  getlocal 0
+00035:  37  dup
+00036:  37  callprop "sort"
+00041:  37  swap
+00042:  37  notearg
+00043:  37  name "xs"
+00048:  37  getprop "Tools"
+00053:  37  getprop "Sort"
+00058:  37  dup
+00059:  37  callprop "by"
+00064:  37  swap
+00065:  37  notearg
+00066:  37  name "xs"
+00071:  37  getprop "Constant_SortType_GeneralSoul_Default_Reverse"
+00076:  37  notearg
+00077:  37  call 1
+00080:  37  notearg
+00081:  37  call 1
+00084:  37  pop
+00085:  39  newarray 0
+00089:  39  endinit
+00090:  39  setlocal 1
+00093:  39  pop
+00094:  40  zero
+00095:  40  setlocal 2
+00098:  40  pop
+00099:  40  goto 170 (+71)
+00104:  41  loophead
+00105:  41  getlocal 1
+00108:  41  dup
+00109:  41  callprop "push"
+00114:  41  swap
+00115:  41  notearg
+00116:  41  name "xs"
+00121:  41  getprop "Models"
+00126:  41  getprop "ShowData"
+00131:  41  dup
+00132:  41  callprop "create"
+00137:  41  swap
+00138:  41  notearg
+00139:  41  getlocal 0
+00142:  41  getlocal 2
+00145:  41  getelem
+00146:  41  notearg
+00147:  41  call 1
+00150:  41  notearg
+00151:  41  call 1
+00154:  41  pop
+00155:  40  localinc 11
+00158:  40  getlocal 2
+00161:  40  pos
+00162:  40  dup
+00163:  40  one
+00164:  40  add
+00165:  40  setlocal 2
+00168:  40  pop
+00169:  40  pop
+00170:  40  loopentry
+00171:  40  getlocal 2
+00174:  40  getlocal 0
+00177:  40  length "length"
+00182:  40  lt
+00183:  40  ifne 104 (-79)
+00188:  44  getlocal 1
+00191:  44  return
+00192:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:34 ---
+;; function object[3] getEquipShowData
+;; function metadata object[3] nargs=0 bindings=3
+;; local[0] equipMents
+;; local[1] equipShowData
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:48 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  this
+00001:  49  dup
+00002:  49  callprop "_initInstance"
+00007:  49  swap
+00008:  49  notearg
+00009:  49  call 0
+00012:  49  getprop "Equipments"
+00017:  49  dup
+00018:  49  callprop "getAllWithDefaultSort"
+00023:  49  swap
+00024:  49  notearg
+00025:  49  call 0
+00028:  49  setlocal 0
+00031:  49  pop
+00032:  51  newarray 0
+00036:  51  endinit
+00037:  51  setlocal 1
+00040:  51  pop
+00041:  52  zero
+00042:  52  setlocal 2
+00045:  52  pop
+00046:  52  goto 117 (+71)
+00051:  53  loophead
+00052:  53  getlocal 1
+00055:  53  dup
+00056:  53  callprop "push"
+00061:  53  swap
+00062:  53  notearg
+00063:  53  name "xs"
+00068:  53  getprop "Models"
+00073:  53  getprop "ShowData"
+00078:  53  dup
+00079:  53  callprop "create"
+00084:  53  swap
+00085:  53  notearg
+00086:  53  getlocal 0
+00089:  53  getlocal 2
+00092:  53  getelem
+00093:  53  notearg
+00094:  53  call 1
+00097:  53  notearg
+00098:  53  call 1
+00101:  53  pop
+00102:  52  localinc 11
+00105:  52  getlocal 2
+00108:  52  pos
+00109:  52  dup
+00110:  52  one
+00111:  52  add
+00112:  52  setlocal 2
+00115:  52  pop
+00116:  52  pop
+00117:  52  loopentry
+00118:  52  getlocal 2
+00121:  52  getlocal 0
+00124:  52  length "length"
+00129:  52  lt
+00130:  52  ifne 51 (-79)
+00135:  56  getlocal 1
+00138:  56  return
+00139:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:48 ---
+;; function object[4] getRefineStoneShowData
+;; function metadata object[4] nargs=0 bindings=3
+;; local[0] refineStones
+;; local[1] refineStoneShowData
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:59 ---
+loc   line  op
+----- ----  --
+main:
+00000:  60  this
+00001:  60  dup
+00002:  60  callprop "_initInstance"
+00007:  60  swap
+00008:  60  notearg
+00009:  60  call 0
+00012:  60  getprop "Items"
+00017:  60  dup
+00018:  60  callprop "getRefineStones"
+00023:  60  swap
+00024:  60  notearg
+00025:  60  call 0
+00028:  60  setlocal 0
+00031:  60  pop
+00032:  62  newarray 0
+00036:  62  endinit
+00037:  62  setlocal 1
+00040:  62  pop
+00041:  63  zero
+00042:  63  setlocal 2
+00045:  63  pop
+00046:  63  goto 117 (+71)
+00051:  64  loophead
+00052:  64  getlocal 1
+00055:  64  dup
+00056:  64  callprop "push"
+00061:  64  swap
+00062:  64  notearg
+00063:  64  name "xs"
+00068:  64  getprop "Models"
+00073:  64  getprop "ShowData"
+00078:  64  dup
+00079:  64  callprop "create"
+00084:  64  swap
+00085:  64  notearg
+00086:  64  getlocal 0
+00089:  64  getlocal 2
+00092:  64  getelem
+00093:  64  notearg
+00094:  64  call 1
+00097:  64  notearg
+00098:  64  call 1
+00101:  64  pop
+00102:  63  localinc 11
+00105:  63  getlocal 2
+00108:  63  pos
+00109:  63  dup
+00110:  63  one
+00111:  63  add
+00112:  63  setlocal 2
+00115:  63  pop
+00116:  63  pop
+00117:  63  loopentry
+00118:  63  getlocal 2
+00121:  63  getlocal 0
+00124:  63  length "length"
+00129:  63  lt
+00130:  63  ifne 51 (-79)
+00135:  67  getlocal 1
+00138:  67  return
+00139:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:59 ---
+;; function object[5] create
+;; function metadata object[5] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:73 ---
+loc   line  op
+----- ----  --
+main:
+00000:  74  getarg 0
+00003:  74  getprop "play_id"
+00008:  74  setlocal 0
+00011:  74  pop
+00012:  75  name "xs"
+00017:  75  getprop "Profile"
+00022:  75  getprop "GameData"
+00027:  75  getprop "CardShowData"
+00032:  75  setlocal 1
+00035:  75  pop
+00036:  76  name "xs"
+00041:  76  getprop "Utils"
+00046:  76  dup
+00047:  76  callprop "isSet"
+00052:  76  swap
+00053:  76  notearg
+00054:  76  getlocal 1
+00057:  76  getprop "_instance"
+00062:  76  notearg
+00063:  76  call 1
+00066:  76  or 85 (+19)
+00071:  76  pop
+00072:  76  getlocal 1
+00075:  76  newarray 0
+00079:  76  endinit
+00080:  76  setprop "_instance"
+00085:  76  pop
+00086:  78  getlocal 1
+00089:  78  getprop "_instance"
+00094:  78  getlocal 0
+00097:  78  getelem
+00098:  78  ifeq 116 (+18)
+00103:  79  getlocal 1
+00106:  79  getprop "_instance"
+00111:  79  getlocal 0
+00114:  79  getelem
+00115:  79  return
+00116:  82  getlocal 1
+00119:  82  undefined
+00120:  82  notearg
+00121:  82  new 0
+00124:  82  setlocal 2
+00127:  82  pop
+00128:  83  getlocal 2
+00131:  83  and 155 (+24)
+00136:  83  pop
+00137:  83  getlocal 2
+00140:  83  dup
+00141:  83  callprop "init"
+00146:  83  swap
+00147:  83  notearg
+00148:  83  getarg 0
+00151:  83  notearg
+00152:  83  call 1
+00155:  83  ifeq 180 (+25)
+00160:  84  getlocal 1
+00163:  84  getprop "_instance"
+00168:  84  getlocal 0
+00171:  84  getlocal 2
+00174:  84  setelem
+00175:  84  pop
+00176:  85  getlocal 2
+00179:  85  return
+00180:  87  name "xs"
+00185:  87  dup
+00186:  87  callprop "error"
+00191:  87  swap
+00192:  87  notearg
+00193:  87  string "xs.Profile.GameData.CardShowData.create failed"
+00198:  87  notearg
+00199:  87  call 1
+00202:  87  pop
+00203:  88  null
+00204:  88  return
+00205:  88  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/CardShowData.js:73 ---

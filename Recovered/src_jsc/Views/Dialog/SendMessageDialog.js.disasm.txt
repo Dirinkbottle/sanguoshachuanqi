@@ -1,0 +1,1122 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Dialog/SendMessageDialog.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=87 object[0]
+;; FUNCTION-MAP kind=lambda offset=97 object[1]
+;; FUNCTION-MAP kind=lambda offset=107 object[2]
+;; FUNCTION-MAP kind=lambda offset=117 object[3]
+;; FUNCTION-MAP kind=lambda offset=127 object[4]
+;; FUNCTION-MAP kind=lambda offset=137 object[5]
+;; FUNCTION-MAP kind=lambda offset=147 object[6]
+;; FUNCTION-MAP kind=lambda offset=642 object[7]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  getprop "Dialog"
+00015:   6  zero
+00016:   6  setprop "SendMessageDialog_Type_FeedBack"
+00021:   6  popv
+00022:   7  name "xs"
+00027:   7  getprop "Views"
+00032:   7  getprop "Dialog"
+00037:   7  one
+00038:   7  setprop "SendMessageDialog_Type_SendMsgToFriend"
+00043:   7  popv
+00044:  10  name "xs"
+00049:  10  getprop "Views"
+00054:  10  getprop "Dialog"
+00059:  10  name "xs"
+00064:  10  getprop "Views"
+00069:  10  getprop "HungerLayer"
+00074:  10  dup
+00075:  10  callprop "extend"
+00080:  10  swap
+00081:  10  notearg
+00082:  10  newinit 1
+00087:  11  lambda (function () {
+    [sourceless code]
+})
+00092:  11  initprop "ctor"
+00097:  15  lambda (function () {
+    [sourceless code]
+})
+00102:  15  initprop "init"
+00107:  74  lambda (function () {
+    [sourceless code]
+})
+00112:  74  initprop "onCloseBtn"
+00117:  78  lambda (function () {
+    [sourceless code]
+})
+00122:  78  initprop "onSendBtnClick"
+00127: 114  lambda (function () {
+    [sourceless code]
+})
+00132: 114  initprop "onResponse"
+00137: 120  lambda (function () {
+    [sourceless code]
+})
+00142: 120  initprop "onTouchEnded"
+00147: 130  lambda (function () {
+    [sourceless code]
+})
+00152: 130  initprop "setBaseTouchPriority"
+00157: 138  newinit 1
+00162: 140  newarray 4
+00166: 141  newinit 1
+00171: 141  int8 10
+00173: 141  initprop "tag"
+00178: 141  string "btn"
+00183: 141  initprop "type"
+00188: 141  string "m_shutDownBtn"
+00193: 141  initprop "name"
+00198: 141  string "Btn_Close"
+00203: 141  initprop "id"
+00208: 141  endinit
+00209: 141  initelem_array 0
+00213: 142  newinit 1
+00218: 142  int8 11
+00220: 142  initprop "tag"
+00225: 142  string "btn"
+00230: 142  initprop "type"
+00235: 142  string "m_closeBtn"
+00240: 142  initprop "name"
+00245: 142  string "Btn_ShutDown"
+00250: 142  initprop "id"
+00255: 142  endinit
+00256: 142  initelem_array 1
+00260: 143  newinit 1
+00265: 143  int8 12
+00267: 143  initprop "tag"
+00272: 143  string "btn"
+00277: 143  initprop "type"
+00282: 143  string "m_sendBtn"
+00287: 143  initprop "name"
+00292: 143  string "Btn_Send"
+00297: 143  initprop "id"
+00302: 143  endinit
+00303: 143  initelem_array 2
+00307: 144  newinit 1
+00312: 144  int8 14
+00314: 144  initprop "tag"
+00319: 144  string "ls"
+00324: 144  initprop "type"
+00329: 144  string "m_title"
+00334: 144  initprop "name"
+00339: 144  string "LS_popUI1"
+00344: 144  initprop "id"
+00349: 144  endinit
+00350: 144  initelem_array 3
+00354: 144  endinit
+00355: 144  initprop "ccbCfg_1"
+00360: 147  newarray 5
+00364: 148  newinit 1
+00369: 148  int8 10
+00371: 148  initprop "tag"
+00376: 148  string "btn"
+00381: 148  initprop "type"
+00386: 148  string "m_shutDownBtn"
+00391: 148  initprop "name"
+00396: 148  string "Btn_Close"
+00401: 148  initprop "id"
+00406: 148  endinit
+00407: 148  initelem_array 0
+00411: 149  newinit 1
+00416: 149  int8 11
+00418: 149  initprop "tag"
+00423: 149  string "btn"
+00428: 149  initprop "type"
+00433: 149  string "m_closeBtn"
+00438: 149  initprop "name"
+00443: 149  string "Btn_ShutDown"
+00448: 149  initprop "id"
+00453: 149  endinit
+00454: 149  initelem_array 1
+00458: 150  newinit 1
+00463: 150  int8 12
+00465: 150  initprop "tag"
+00470: 150  string "btn"
+00475: 150  initprop "type"
+00480: 150  string "m_sendBtn"
+00485: 150  initprop "name"
+00490: 150  string "Btn_Send"
+00495: 150  initprop "id"
+00500: 150  endinit
+00501: 150  initelem_array 2
+00505: 151  newinit 1
+00510: 151  int8 14
+00512: 151  initprop "tag"
+00517: 151  string "ls"
+00522: 151  initprop "type"
+00527: 151  string "m_title"
+00532: 151  initprop "name"
+00537: 151  string "LS_popUI1"
+00542: 151  initprop "id"
+00547: 151  endinit
+00548: 151  initelem_array 3
+00552: 152  newinit 1
+00557: 152  int8 15
+00559: 152  initprop "tag"
+00564: 152  string "ls"
+00569: 152  initprop "type"
+00574: 152  string "m_targetName"
+00579: 152  initprop "name"
+00584: 152  string "LS_liebiaoInf2"
+00589: 152  initprop "id"
+00594: 152  endinit
+00595: 152  initelem_array 4
+00599: 152  endinit
+00600: 152  initprop "ccbCfg_2"
+00605: 152  endinit
+00606: 152  initprop "cfg"
+00611: 152  endinit
+00612: 152  notearg
+00613: 152  call 1
+00616: 152  setprop "SendMessageDialog"
+00621: 152  popv
+00622: 157  name "xs"
+00627: 157  getprop "Views"
+00632: 157  getprop "Dialog"
+00637: 157  getprop "SendMessageDialog"
+00642: 157  lambda (function () {
+    [sourceless code]
+})
+00647: 157  setprop "create"
+00652: 157  popv
+00653: 165  name "xs"
+00658: 165  getprop "Views"
+00663: 165  getprop "Mgr"
+00668: 165  dup
+00669: 165  callprop "registerDialog"
+00674: 165  swap
+00675: 165  notearg
+00676: 165  string "SendMessageDialog"
+00681: 165  notearg
+00682: 165  newinit 1
+00687: 166  name "xs"
+00692: 166  getprop "Views"
+00697: 166  getprop "Dialog"
+00702: 166  getprop "SendMessageDialog"
+00707: 166  initprop "class"
+00712: 167  name "xs"
+00717: 167  getprop "Constant_DlgStyleType_Large"
+00722: 167  initprop "styleType"
+00727: 167  endinit
+00728: 167  notearg
+00729: 167  call 2
+00732: 167  popv
+00733: 168  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  call 0
+00012:  12  pop
+00013:  12  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:11 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] params
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  dup
+00002:  16  callprop "_super"
+00007:  16  swap
+00008:  16  notearg
+00009:  16  call 0
+00012:  16  pop
+00013:  17  this
+00014:  17  getarg 0
+00017:  17  getprop "targetUser"
+00022:  17  setprop "target"
+00027:  17  pop
+00028:  18  this
+00029:  18  getarg 0
+00032:  18  getprop "type"
+00037:  18  setprop "viewType"
+00042:  18  pop
+00043:  20  this
+00044:  20  null
+00045:  20  setprop "m_title"
+00050:  20  pop
+00051:  21  this
+00052:  21  null
+00053:  21  setprop "m_shutDownBtn"
+00058:  21  pop
+00059:  22  this
+00060:  22  null
+00061:  22  setprop "m_closeBtn"
+00066:  22  pop
+00067:  23  this
+00068:  23  null
+00069:  23  setprop "m_sendBtn"
+00074:  23  pop
+00075:  24  this
+00076:  24  null
+00077:  24  setprop "m_targetName"
+00082:  24  pop
+00083:  26  this
+00084:  26  getprop "viewType"
+00089:  26  name "xs"
+00094:  26  getprop "Views"
+00099:  26  getprop "Dialog"
+00104:  26  getprop "SendMessageDialog_Type_FeedBack"
+00109:  26  stricteq
+00110:  26  ifeq 202 (+92)
+00115:  27  this
+00116:  27  name "xs"
+00121:  27  getprop "ccb_reader"
+00126:  27  dup
+00127:  27  callprop "load"
+00132:  27  swap
+00133:  27  notearg
+00134:  27  string "ccb3/0_6_2_SendMail.ccbi"
+00139:  27  notearg
+00140:  27  call 1
+00143:  27  setprop "ccbNode"
+00148:  27  pop
+00149:  28  name "xs"
+00154:  28  getprop "Utils"
+00159:  28  getprop "UI"
+00164:  28  dup
+00165:  28  callprop "replaceCcbByCfg"
+00170:  28  swap
+00171:  28  notearg
+00172:  28  this
+00173:  28  getprop "ccbNode"
+00178:  28  notearg
+00179:  28  this
+00180:  28  getprop "cfg"
+00185:  28  getprop "ccbCfg_1"
+00190:  28  notearg
+00191:  28  this
+00192:  28  notearg
+00193:  28  call 3
+00196:  28  pop
+00197:  28  goto 316 (+119)
+00202:  29  this
+00203:  29  getprop "viewType"
+00208:  29  name "xs"
+00213:  29  getprop "Views"
+00218:  29  getprop "Dialog"
+00223:  29  getprop "SendMessageDialog_Type_SendMsgToFriend"
+00228:  29  stricteq
+00229:  29  ifeq 316 (+87)
+00234:  30  this
+00235:  30  name "xs"
+00240:  30  getprop "ccb_reader"
+00245:  30  dup
+00246:  30  callprop "load"
+00251:  30  swap
+00252:  30  notearg
+00253:  30  string "ccb3/0_6_3_SendMsgToFriend.ccbi"
+00258:  30  notearg
+00259:  30  call 1
+00262:  30  setprop "ccbNode"
+00267:  30  pop
+00268:  31  name "xs"
+00273:  31  getprop "Utils"
+00278:  31  getprop "UI"
+00283:  31  dup
+00284:  31  callprop "replaceCcbByCfg"
+00289:  31  swap
+00290:  31  notearg
+00291:  31  this
+00292:  31  getprop "ccbNode"
+00297:  31  notearg
+00298:  31  this
+00299:  31  getprop "cfg"
+00304:  31  getprop "ccbCfg_2"
+00309:  31  notearg
+00310:  31  this
+00311:  31  notearg
+00312:  31  call 3
+00315:  31  pop
+00316:  34  this
+00317:  34  getprop "ccbNode"
+00322:  34  dup
+00323:  34  callprop "setContentSize"
+00328:  34  swap
+00329:  34  notearg
+00330:  34  name "cc"
+00335:  34  dup
+00336:  34  callprop "size"
+00341:  34  swap
+00342:  34  notearg
+00343:  34  uint16 782
+00346:  34  notearg
+00347:  34  uint16 605
+00350:  34  notearg
+00351:  34  call 2
+00354:  34  notearg
+00355:  34  call 1
+00358:  34  pop
+00359:  35  this
+00360:  35  getprop "ccbNode"
+00365:  35  dup
+00366:  35  callprop "setAnchorPoint"
+00371:  35  swap
+00372:  35  notearg
+00373:  35  name "cc"
+00378:  35  dup
+00379:  35  callprop "p"
+00384:  35  swap
+00385:  35  notearg
+00386:  35  double 0.5
+00391:  35  notearg
+00392:  35  double 0.5
+00397:  35  notearg
+00398:  35  call 2
+00401:  35  notearg
+00402:  35  call 1
+00405:  35  pop
+00406:  36  name "xs"
+00411:  36  getprop "Utils"
+00416:  36  getprop "Node"
+00421:  36  dup
+00422:  36  callprop "attachNodes"
+00427:  36  swap
+00428:  36  notearg
+00429:  36  this
+00430:  36  notearg
+00431:  36  this
+00432:  36  getprop "ccbNode"
+00437:  36  notearg
+00438:  36  newinit 1
+00443:  36  string "c"
+00448:  36  initprop "desc"
+00453:  36  true
+00454:  36  initprop "sc"
+00459:  36  endinit
+00460:  36  notearg
+00461:  36  call 3
+00464:  36  pop
+00465:  43  this
+00466:  43  getprop "m_shutDownBtn"
+00471:  43  dup
+00472:  43  callprop "setOnClickCallBack"
+00477:  43  swap
+00478:  43  notearg
+00479:  43  this
+00480:  43  getprop "onCloseBtn"
+00485:  43  dup
+00486:  43  callprop "bind"
+00491:  43  swap
+00492:  43  notearg
+00493:  43  this
+00494:  43  notearg
+00495:  43  call 1
+00498:  43  notearg
+00499:  43  call 1
+00502:  43  pop
+00503:  46  this
+00504:  46  getprop "m_closeBtn"
+00509:  46  dup
+00510:  46  callprop "setOnClickCallBack"
+00515:  46  swap
+00516:  46  notearg
+00517:  46  this
+00518:  46  getprop "onCloseBtn"
+00523:  46  dup
+00524:  46  callprop "bind"
+00529:  46  swap
+00530:  46  notearg
+00531:  46  this
+00532:  46  notearg
+00533:  46  call 1
+00536:  46  notearg
+00537:  46  call 1
+00540:  46  pop
+00541:  48  this
+00542:  48  getprop "m_sendBtn"
+00547:  48  dup
+00548:  48  callprop "setOnClickCallBack"
+00553:  48  swap
+00554:  48  notearg
+00555:  48  this
+00556:  48  getprop "onSendBtnClick"
+00561:  48  dup
+00562:  48  callprop "bind"
+00567:  48  swap
+00568:  48  notearg
+00569:  48  this
+00570:  48  notearg
+00571:  48  call 1
+00574:  48  notearg
+00575:  48  call 1
+00578:  48  pop
+00579:  51  this
+00580:  51  getprop "viewType"
+00585:  51  name "xs"
+00590:  51  getprop "Views"
+00595:  51  getprop "Dialog"
+00600:  51  getprop "SendMessageDialog_Type_FeedBack"
+00605:  51  stricteq
+00606:  51  ifeq 871 (+265)
+00611:  52  this
+00612:  52  getprop "m_sendBtn"
+00617:  52  dup
+00618:  52  callprop "setString"
+00623:  52  swap
+00624:  52  notearg
+00625:  52  name "xs"
+00630:  52  getprop "Tools"
+00635:  52  getprop "String"
+00640:  52  dup
+00641:  52  callprop "createString"
+00646:  52  swap
+00647:  52  notearg
+00648:  52  string "send"
+00653:  52  notearg
+00654:  52  call 1
+00657:  52  notearg
+00658:  52  call 1
+00661:  52  pop
+00662:  53  this
+00663:  53  getprop "m_title"
+00668:  53  dup
+00669:  53  callprop "setString"
+00674:  53  swap
+00675:  53  notearg
+00676:  53  name "xs"
+00681:  53  getprop "Tools"
+00686:  53  getprop "String"
+00691:  53  dup
+00692:  53  callprop "createString"
+00697:  53  swap
+00698:  53  notearg
+00699:  53  string "feedBack"
+00704:  53  notearg
+00705:  53  call 1
+00708:  53  notearg
+00709:  53  call 1
+00712:  53  pop
+00713:  54  this
+00714:  54  name "cc"
+00719:  54  getprop "TextFieldTTF"
+00724:  54  dup
+00725:  54  callprop "textFieldWithPlaceHolder"
+00730:  54  swap
+00731:  54  notearg
+00732:  54  name "xs"
+00737:  54  getprop "Tools"
+00742:  54  getprop "String"
+00747:  54  dup
+00748:  54  callprop "createString"
+00753:  54  swap
+00754:  54  notearg
+00755:  54  string "auto_name_437"
+00760:  54  notearg
+00761:  54  call 1
+00764:  54  notearg
+00765:  54  name "cc"
+00770:  54  dup
+00771:  54  callprop "size"
+00776:  54  swap
+00777:  54  notearg
+00778:  54  uint16 620
+00781:  54  notearg
+00782:  54  uint16 385
+00785:  54  notearg
+00786:  54  call 2
+00789:  54  notearg
+00790:  55  name "cc"
+00795:  55  getprop "TEXT_ALIGNMENT_LEFT"
+00800:  55  notearg
+00801:  55  string "Helvetica"
+00806:  55  notearg
+00807:  55  int8 24
+00809:  55  notearg
+00810:  55  call 5
+00813:  55  setprop "textField"
+00818:  55  pop
+00819:  56  this
+00820:  56  getprop "textField"
+00825:  56  dup
+00826:  56  callprop "setColorSpaceHolder"
+00831:  56  swap
+00832:  56  notearg
+00833:  56  name "cc"
+00838:  56  dup
+00839:  56  callprop "c3b"
+00844:  56  swap
+00845:  56  notearg
+00846:  56  uint16 255
+00849:  56  notearg
+00850:  56  uint16 235
+00853:  56  notearg
+00854:  56  uint16 188
+00857:  56  notearg
+00858:  56  call 3
+00861:  56  notearg
+00862:  56  call 1
+00865:  56  pop
+00866:  56  goto 1140 (+274)
+00871:  57  this
+00872:  57  getprop "viewType"
+00877:  57  name "xs"
+00882:  57  getprop "Views"
+00887:  57  getprop "Dialog"
+00892:  57  getprop "SendMessageDialog_Type_SendMsgToFriend"
+00897:  57  stricteq
+00898:  57  ifeq 1140 (+242)
+00903:  58  this
+00904:  58  getprop "m_sendBtn"
+00909:  58  dup
+00910:  58  callprop "setStringById"
+00915:  58  swap
+00916:  58  notearg
+00917:  58  string "1071310023"
+00922:  58  notearg
+00923:  58  call 1
+00926:  58  pop
+00927:  59  this
+00928:  59  getprop "m_title"
+00933:  59  dup
+00934:  59  callprop "setString"
+00939:  59  swap
+00940:  59  notearg
+00941:  59  this
+00942:  59  getprop "target"
+00947:  59  getprop "name"
+00952:  59  notearg
+00953:  59  call 1
+00956:  59  pop
+00957:  60  this
+00958:  60  getprop "m_targetName"
+00963:  60  dup
+00964:  60  callprop "setString"
+00969:  60  swap
+00970:  60  notearg
+00971:  60  this
+00972:  60  getprop "target"
+00977:  60  getprop "name"
+00982:  60  notearg
+00983:  60  call 1
+00986:  60  pop
+00987:  61  this
+00988:  61  name "cc"
+00993:  61  getprop "TextFieldTTF"
+00998:  61  dup
+00999:  61  callprop "textFieldWithPlaceHolder"
+01004:  61  swap
+01005:  61  notearg
+01006:  61  name "xs"
+01011:  61  getprop "Tools"
+01016:  61  getprop "String"
+01021:  61  dup
+01022:  61  callprop "createString"
+01027:  61  swap
+01028:  61  notearg
+01029:  61  string "auto_name_437"
+01034:  61  notearg
+01035:  61  call 1
+01038:  61  notearg
+01039:  61  name "cc"
+01044:  61  dup
+01045:  61  callprop "size"
+01050:  61  swap
+01051:  61  notearg
+01052:  61  uint16 620
+01055:  61  notearg
+01056:  61  uint16 355
+01059:  61  notearg
+01060:  61  call 2
+01063:  61  notearg
+01064:  62  name "cc"
+01069:  62  getprop "TEXT_ALIGNMENT_LEFT"
+01074:  62  notearg
+01075:  62  string "Helvetica"
+01080:  62  notearg
+01081:  62  int8 24
+01083:  62  notearg
+01084:  62  call 5
+01087:  62  setprop "textField"
+01092:  62  pop
+01093:  63  this
+01094:  63  getprop "textField"
+01099:  63  dup
+01100:  63  callprop "setColorSpaceHolder"
+01105:  63  swap
+01106:  63  notearg
+01107:  63  name "cc"
+01112:  63  dup
+01113:  63  callprop "c3b"
+01118:  63  swap
+01119:  63  notearg
+01120:  63  uint16 255
+01123:  63  notearg
+01124:  63  uint16 235
+01127:  63  notearg
+01128:  63  uint16 188
+01131:  63  notearg
+01132:  63  call 3
+01135:  63  notearg
+01136:  63  call 1
+01139:  63  pop
+01140:  66  name "xs"
+01145:  66  getprop "Utils"
+01150:  66  getprop "Node"
+01155:  66  dup
+01156:  66  callprop "attachNodes"
+01161:  66  swap
+01162:  66  notearg
+01163:  66  this
+01164:  66  notearg
+01165:  66  this
+01166:  66  getprop "textField"
+01171:  66  notearg
+01172:  66  newinit 1
+01177:  66  string "c"
+01182:  66  initprop "desc"
+01187:  66  true
+01188:  66  initprop "sc"
+01193:  66  endinit
+01194:  66  notearg
+01195:  66  call 3
+01198:  66  pop
+01199:  71  true
+01200:  71  return
+01201:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:15 ---
+;; function object[2] onCloseBtn
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:74 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  name "xs"
+00005:  75  getprop "Views"
+00010:  75  getprop "Mgr"
+00015:  75  dup
+00016:  75  callprop "hideDialog"
+00021:  75  swap
+00022:  75  notearg
+00023:  75  call 0
+00026:  75  pop
+00027:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:74 ---
+;; function object[3] onSendBtnClick
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] _text
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:78 ---
+loc   line  op
+----- ----  --
+main:
+00000:  79  this
+00001:  79  getprop "textField"
+00006:  79  dup
+00007:  79  callprop "getString"
+00012:  79  swap
+00013:  79  notearg
+00014:  79  call 0
+00017:  79  setlocal 0
+00020:  79  pop
+00021:  80  getlocal 0
+00024:  80  ifeq 165 (+141)
+00029:  82  name "xs"
+00034:  82  getprop "Tools"
+00039:  82  getprop "UI"
+00044:  82  dup
+00045:  82  callprop "IsHaveSensitiveWords"
+00050:  82  swap
+00051:  82  notearg
+00052:  82  getlocal 0
+00055:  82  notearg
+00056:  82  call 1
+00059:  82  ifeq 131 (+72)
+00064:  83  name "xs"
+00069:  83  getprop "Views"
+00074:  83  getprop "Mgr"
+00079:  83  dup
+00080:  83  callprop "showToast"
+00085:  83  swap
+00086:  83  notearg
+00087:  83  name "xs"
+00092:  83  getprop "Tools"
+00097:  83  getprop "String"
+00102:  83  dup
+00103:  83  callprop "createString"
+00108:  83  swap
+00109:  83  notearg
+00110:  83  string "str_haveSensitiveWords"
+00115:  83  notearg
+00116:  83  call 1
+00119:  83  notearg
+00120:  83  call 1
+00123:  83  pop
+00124:  84  undefined
+00125:  84  return
+00126:  84  goto 165 (+39)
+00131:  88  name "xs"
+00136:  88  getprop "Tools"
+00141:  88  getprop "UI"
+00146:  88  dup
+00147:  88  callprop "deleteBlankSpace"
+00152:  88  swap
+00153:  88  notearg
+00154:  88  getlocal 0
+00157:  88  notearg
+00158:  88  call 1
+00161:  88  setlocal 0
+00164:  88  pop
+00165:  92  this
+00166:  92  getprop "viewType"
+00171:  92  name "xs"
+00176:  92  getprop "Views"
+00181:  92  getprop "Dialog"
+00186:  92  getprop "SendMessageDialog_Type_FeedBack"
+00191:  92  stricteq
+00192:  92  ifeq 354 (+162)
+00197:  93  getlocal 0
+00200:  93  null
+00201:  93  eq
+00202:  93  or 217 (+15)
+00207:  93  pop
+00208:  93  getlocal 0
+00211:  93  string ""
+00216:  93  eq
+00217:  93  ifeq 284 (+67)
+00222:  94  name "xs"
+00227:  94  getprop "Views"
+00232:  94  getprop "Mgr"
+00237:  94  dup
+00238:  94  callprop "showToast"
+00243:  94  swap
+00244:  94  notearg
+00245:  94  name "xs"
+00250:  94  getprop "Tools"
+00255:  94  getprop "String"
+00260:  94  dup
+00261:  94  callprop "createString"
+00266:  94  swap
+00267:  94  notearg
+00268:  94  string "str_SendBugMessageNull"
+00273:  94  notearg
+00274:  94  call 1
+00277:  94  notearg
+00278:  94  call 1
+00281:  94  pop
+00282:  95  undefined
+00283:  95  return
+00284:  97  name "xs"
+00289:  97  getprop "Tools"
+00294:  97  getprop "Net"
+00299:  97  dup
+00300:  97  callprop "requestSendFeedBack"
+00305:  97  swap
+00306:  97  notearg
+00307:  97  newinit 1
+00312:  98  this
+00313:  98  getprop "textField"
+00318:  98  dup
+00319:  98  callprop "getString"
+00324:  98  swap
+00325:  98  notearg
+00326:  98  call 0
+00329:  98  initprop "message"
+00334:  98  endinit
+00335:  98  notearg
+00336:  99  this
+00337:  99  getprop "onResponse"
+00342:  99  notearg
+00343:  99  this
+00344:  99  notearg
+00345:  99  call 3
+00348:  99  pop
+00349:  99  goto 571 (+222)
+00354: 100  this
+00355: 100  getprop "viewType"
+00360: 100  name "xs"
+00365: 100  getprop "Views"
+00370: 100  getprop "Dialog"
+00375: 100  getprop "SendMessageDialog_Type_SendMsgToFriend"
+00380: 100  stricteq
+00381: 100  ifeq 571 (+190)
+00386: 101  getlocal 0
+00389: 101  null
+00390: 101  eq
+00391: 101  or 406 (+15)
+00396: 101  pop
+00397: 101  getlocal 0
+00400: 101  string ""
+00405: 101  eq
+00406: 101  ifeq 473 (+67)
+00411: 102  name "xs"
+00416: 102  getprop "Views"
+00421: 102  getprop "Mgr"
+00426: 102  dup
+00427: 102  callprop "showToast"
+00432: 102  swap
+00433: 102  notearg
+00434: 102  name "xs"
+00439: 102  getprop "Tools"
+00444: 102  getprop "String"
+00449: 102  dup
+00450: 102  callprop "createString"
+00455: 102  swap
+00456: 102  notearg
+00457: 102  string "str_SendMessageToFriendNull"
+00462: 102  notearg
+00463: 102  call 1
+00466: 102  notearg
+00467: 102  call 1
+00470: 102  pop
+00471: 103  undefined
+00472: 103  return
+00473: 105  name "xs"
+00478: 105  getprop "Tools"
+00483: 105  getprop "Net"
+00488: 105  dup
+00489: 105  callprop "requestSendMessage"
+00494: 105  swap
+00495: 105  notearg
+00496: 105  newinit 1
+00501: 106  this
+00502: 106  getprop "target"
+00507: 106  getprop "id"
+00512: 106  initprop "send_to"
+00517: 107  string ""
+00522: 107  initprop "title"
+00527: 108  this
+00528: 108  getprop "textField"
+00533: 108  dup
+00534: 108  callprop "getString"
+00539: 108  swap
+00540: 108  notearg
+00541: 108  call 0
+00544: 108  initprop "content"
+00549: 109  int8 3
+00551: 109  initprop "send_type"
+00556: 109  endinit
+00557: 109  notearg
+00558: 110  this
+00559: 110  getprop "onResponse"
+00564: 110  notearg
+00565: 110  this
+00566: 110  notearg
+00567: 110  call 3
+00570: 110  pop
+00571: 111  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:78 ---
+;; function object[4] onResponse
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] jsObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:114 ---
+loc   line  op
+----- ----  --
+main:
+00000: 116  name "xs"
+00005: 116  getprop "Views"
+00010: 116  getprop "Mgr"
+00015: 116  dup
+00016: 116  callprop "showToast"
+00021: 116  swap
+00022: 116  notearg
+00023: 116  name "xs"
+00028: 116  getprop "Tools"
+00033: 116  getprop "String"
+00038: 116  dup
+00039: 116  callprop "createString"
+00044: 116  swap
+00045: 116  notearg
+00046: 116  string "auto_name_285"
+00051: 116  notearg
+00052: 116  call 1
+00055: 116  notearg
+00056: 116  call 1
+00059: 116  pop
+00060: 117  this
+00061: 117  dup
+00062: 117  callprop "onCloseBtn"
+00067: 117  swap
+00068: 117  notearg
+00069: 117  call 0
+00072: 117  pop
+00073: 117  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:114 ---
+;; function object[5] onTouchEnded
+;; function metadata object[5] nargs=2 bindings=3
+;; arg[0] touch
+;; arg[1] e
+;; local[0] point
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:120 ---
+loc   line  op
+----- ----  --
+main:
+00000: 122  this
+00001: 122  dup
+00002: 122  callprop "convertTouchToNodeSpace"
+00007: 122  swap
+00008: 122  notearg
+00009: 122  getarg 0
+00012: 122  notearg
+00013: 122  call 1
+00016: 122  setlocal 0
+00019: 122  pop
+00020: 123  name "cc"
+00025: 123  dup
+00026: 123  callprop "rectContainsPoint"
+00031: 123  swap
+00032: 123  notearg
+00033: 123  this
+00034: 123  getprop "textField"
+00039: 123  dup
+00040: 123  callprop "getBoundingBox"
+00045: 123  swap
+00046: 123  notearg
+00047: 123  call 0
+00050: 123  notearg
+00051: 123  getlocal 0
+00054: 123  notearg
+00055: 123  call 2
+00058: 123  ifeq 86 (+28)
+00063: 124  this
+00064: 124  getprop "textField"
+00069: 124  dup
+00070: 124  callprop "attachWithIME"
+00075: 124  swap
+00076: 124  notearg
+00077: 124  call 0
+00080: 124  pop
+00081: 124  goto 104 (+23)
+00086: 126  this
+00087: 126  getprop "textField"
+00092: 126  dup
+00093: 126  callprop "detachWithIME"
+00098: 126  swap
+00099: 126  notearg
+00100: 126  call 0
+00103: 126  pop
+00104: 127  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:120 ---
+;; function object[6] setBaseTouchPriority
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:130 ---
+loc   line  op
+----- ----  --
+main:
+00000: 131  this
+00001: 131  getarg 0
+00004: 131  setprop "m_touchPriority"
+00009: 131  pop
+00010: 132  this
+00011: 132  dup
+00012: 132  callprop "setTouchPriority"
+00017: 132  swap
+00018: 132  notearg
+00019: 132  this
+00020: 132  getprop "m_touchPriority"
+00025: 132  notearg
+00026: 132  call 1
+00029: 132  pop
+00030: 133  this
+00031: 133  getprop "m_shutDownBtn"
+00036: 133  dup
+00037: 133  callprop "setTouchPriority"
+00042: 133  swap
+00043: 133  notearg
+00044: 133  this
+00045: 133  getprop "m_touchPriority"
+00050: 133  one
+00051: 133  sub
+00052: 133  notearg
+00053: 133  call 1
+00056: 133  pop
+00057: 134  this
+00058: 134  getprop "m_closeBtn"
+00063: 134  dup
+00064: 134  callprop "setTouchPriority"
+00069: 134  swap
+00070: 134  notearg
+00071: 134  this
+00072: 134  getprop "m_touchPriority"
+00077: 134  one
+00078: 134  sub
+00079: 134  notearg
+00080: 134  call 1
+00083: 134  pop
+00084: 135  this
+00085: 135  getprop "m_sendBtn"
+00090: 135  dup
+00091: 135  callprop "setTouchPriority"
+00096: 135  swap
+00097: 135  notearg
+00098: 135  this
+00099: 135  getprop "m_touchPriority"
+00104: 135  one
+00105: 135  sub
+00106: 135  notearg
+00107: 135  call 1
+00110: 135  pop
+00111: 135  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:130 ---
+;; function object[7] create
+;; function metadata object[7] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:157 ---
+loc   line  op
+----- ----  --
+main:
+00000: 158  name "xs"
+00005: 158  getprop "Views"
+00010: 158  getprop "Dialog"
+00015: 158  getprop "SendMessageDialog"
+00020: 158  undefined
+00021: 158  notearg
+00022: 158  new 0
+00025: 158  setlocal 0
+00028: 158  pop
+00029: 159  getlocal 0
+00032: 159  and 56 (+24)
+00037: 159  pop
+00038: 159  getlocal 0
+00041: 159  dup
+00042: 159  callprop "init"
+00047: 159  swap
+00048: 159  notearg
+00049: 159  getarg 0
+00052: 159  notearg
+00053: 159  call 1
+00056: 159  ifeq 65 (+9)
+00061: 160  getlocal 0
+00064: 160  return
+00065: 162  null
+00066: 162  return
+00067: 162  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/SendMessageDialog.js:157 ---

@@ -1,0 +1,973 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/Sort.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=36 object[0]
+;; FUNCTION-MAP kind=lambda offset=46 object[1]
+;; FUNCTION-MAP kind=lambda offset=56 object[2]
+;; FUNCTION-MAP kind=lambda offset=66 object[3]
+;; FUNCTION-MAP kind=lambda offset=76 object[4]
+;; FUNCTION-MAP kind=lambda offset=86 object[5]
+;; FUNCTION-MAP kind=lambda offset=96 object[6]
+;; FUNCTION-MAP kind=lambda offset=106 object[7]
+;; FUNCTION-MAP kind=lambda offset=116 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Tools"
+00010:   9  name "xs"
+00015:   9  getprop "Tools"
+00020:   9  getprop "Sort"
+00025:   9  or 127 (+102)
+00030:   9  pop
+00031:   9  newinit 1
+00036:  14  lambda (function () {
+    [sourceless code]
+})
+00041:  14  initprop "by"
+00046:  86  lambda (function () {
+    [sourceless code]
+})
+00051:  86  initprop "byEquFate"
+00056: 100  lambda (function () {
+    [sourceless code]
+})
+00061: 100  initprop "bySkillFate"
+00066: 115  lambda (function () {
+    [sourceless code]
+})
+00071: 115  initprop "byGeneralFate"
+00076: 129  lambda (function () {
+    [sourceless code]
+})
+00081: 129  initprop "bySkillCanBeSet"
+00086: 143  lambda (function () {
+    [sourceless code]
+})
+00091: 143  initprop "byLieutenantCanBeSet"
+00096: 156  lambda (function () {
+    [sourceless code]
+})
+00101: 156  initprop "byGradeAndId_generals_order_asc"
+00106: 167  lambda (function () {
+    [sourceless code]
+})
+00111: 167  initprop "byGradeAndId_generals_order_desc"
+00116: 177  lambda (function () {
+    [sourceless code]
+})
+00121: 177  initprop "randomsort"
+00126: 177  endinit
+00127: 177  setprop "Sort"
+00132: 177  popv
+00133: 181  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:1 ---
+;; function object[0] by
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] _arguments
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=160 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  zero
+00002:  16  setprop "n"
+00007:  16  pop
+00008:  17  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00017:  17  name "xs"
+00022:  17  getprop "Constant_SortType_Skill_Default_Reverse"
+00027:  17  eq
+00028:  17  or 132 (+104)
+00033:  17  pop
+00034:  18  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00043:  18  name "xs"
+00048:  18  getprop "Constant_SortType_GeneralSoul_Default_Reverse"
+00053:  18  eq
+00054:  18  or 132 (+78)
+00059:  18  pop
+00060:  19  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00069:  19  name "xs"
+00074:  19  getprop "Constant_SortType_Equipment_Default_Reverse"
+00079:  19  eq
+00080:  19  or 132 (+52)
+00085:  19  pop
+00086:  20  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00095:  20  name "xs"
+00100:  20  getprop "Constant_SortType_EquipmentPiece_Default_Reverse"
+00105:  20  eq
+00106:  20  or 132 (+26)
+00111:  20  pop
+00112:  21  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00121:  21  name "xs"
+00126:  21  getprop "Constant_SortType_General_Default_Reverse"
+00131:  21  eq
+00132:  21  ifeq 160 (+28)
+00137:  22  name "xs"
+00142:  22  dup
+00143:  22  callprop "warn"
+00148:  22  swap
+00149:  22  notearg
+00150:  22  string "use the arr.reverse() function instead"
+00155:  22  notearg
+00156:  22  call 1
+00159:  22  pop
+00160:  25  lambda (function () {
+    [sourceless code]
+})
+00165:  25  dup
+00166:  25  callprop "bind"
+00171:  25  swap
+00172:  25  notearg
+00173:  79  this
+00174:  79  notearg
+00175:  79  call 1
+00178:  79  return
+00179:  79  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:14 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=2 bindings=9
+;; arg[0] o
+;; arg[1] p
+;; local[0] i
+;; local[1] _argument
+;; local[2] _order_by
+;; local[3] _condition_type
+;; local[4] _condition_name
+;; local[5] a
+;; local[6] b
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  this
+00001:  27  propinc "n"
+00007:  27  dup
+00008:  27  getprop "n"
+00013:  27  pos
+00014:  27  dup
+00015:  27  one
+00016:  27  add
+00017:  27  pick 2
+00019:  27  swap
+00020:  27  setprop "n"
+00025:  27  pop
+00026:  27  pop
+00027:  28  zero
+00028:  28  setlocal 0
+00031:  28  pop
+00032:  28  goto 574 (+542)
+00037:  29  loophead
+00038:  29  getarg 0
+00041:  29  and 50 (+9)
+00046:  29  pop
+00047:  29  getarg 1
+00050:  29  ifeq 540 (+490)
+00055:  30  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00064:  30  getlocal 0
+00067:  30  getelem
+00068:  30  zero
+00069:  30  getelem
+00070:  30  setlocal 1
+00073:  30  pop
+00074:  31  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00083:  31  getlocal 0
+00086:  31  getelem
+00087:  31  one
+00088:  31  getelem
+00089:  31  or 100 (+11)
+00094:  31  pop
+00095:  31  string "asc"
+00100:  31  setlocal 2
+00103:  31  pop
+00104:  32  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00113:  32  getlocal 0
+00116:  32  getelem
+00117:  32  int8 2
+00119:  32  getelem
+00120:  32  or 131 (+11)
+00125:  32  pop
+00126:  32  string "model"
+00131:  32  setlocal 3
+00134:  32  pop
+00135:  33  getlocal 3
+00138:  33  and 160 (+22)
+00143:  33  pop
+00144:  33  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00153:  33  getlocal 0
+00156:  33  getelem
+00157:  33  int8 3
+00159:  33  getelem
+00160:  33  setlocal 4
+00163:  33  pop
+00164:  36  getlocal 3
+00167:  36  string "model"
+00172:  36  eq
+00173:  36  ifeq 268 (+95)
+00178:  38  getarg 0
+00181:  38  getlocal 1
+00184:  38  getelem
+00185:  38  not
+00186:  38  ifeq 229 (+43)
+00191:  40  this
+00192:  40  dup
+00193:  40  callprop "error"
+00198:  40  swap
+00199:  40  notearg
+00200:  40  string "the sort conditions is error"
+00205:  40  notearg
+00206:  40  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00215:  40  getlocal 0
+00218:  40  getelem
+00219:  40  notearg
+00220:  40  call 2
+00223:  40  pop
+00224:  42  goto 559 (+335)
+00229:  45  getarg 0
+00232:  45  dup
+00233:  45  getlocal 1
+00236:  45  callelem
+00237:  45  swap
+00238:  45  notearg
+00239:  45  call 0
+00242:  45  setlocal 5
+00245:  45  pop
+00246:  46  getarg 1
+00249:  46  dup
+00250:  46  getlocal 1
+00253:  46  callelem
+00254:  46  swap
+00255:  46  notearg
+00256:  46  call 0
+00259:  46  setlocal 6
+00262:  46  pop
+00263:  46  goto 457 (+194)
+00268:  51  name "xs"
+00273:  51  getprop "Profile"
+00278:  51  getprop "GameData"
+00283:  51  getprop "Mgr"
+00288:  51  dup
+00289:  51  callprop "getInstance"
+00294:  51  swap
+00295:  51  notearg
+00296:  51  call 0
+00299:  51  getlocal 4
+00302:  51  getelem
+00303:  51  getlocal 1
+00306:  51  getelem
+00307:  51  not
+00308:  51  ifeq 351 (+43)
+00313:  53  this
+00314:  53  dup
+00315:  53  callprop "error"
+00320:  53  swap
+00321:  53  notearg
+00322:  53  string "the sort conditions is error"
+00327:  53  notearg
+00328:  53  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00337:  53  getlocal 0
+00340:  53  getelem
+00341:  53  notearg
+00342:  53  call 2
+00345:  53  pop
+00346:  54  goto 559 (+213)
+00351:  57  name "xs"
+00356:  57  getprop "Profile"
+00361:  57  getprop "GameData"
+00366:  57  getprop "Mgr"
+00371:  57  dup
+00372:  57  callprop "getInstance"
+00377:  57  swap
+00378:  57  notearg
+00379:  57  call 0
+00382:  57  getlocal 4
+00385:  57  getelem
+00386:  57  dup
+00387:  57  getlocal 1
+00390:  57  callelem
+00391:  57  swap
+00392:  57  notearg
+00393:  57  getarg 0
+00396:  57  notearg
+00397:  57  call 1
+00400:  57  setlocal 5
+00403:  57  pop
+00404:  58  name "xs"
+00409:  58  getprop "Profile"
+00414:  58  getprop "GameData"
+00419:  58  getprop "Mgr"
+00424:  58  dup
+00425:  58  callprop "getInstance"
+00430:  58  swap
+00431:  58  notearg
+00432:  58  call 0
+00435:  58  getlocal 4
+00438:  58  getelem
+00439:  58  dup
+00440:  58  getlocal 1
+00443:  58  callelem
+00444:  58  swap
+00445:  58  notearg
+00446:  58  getarg 1
+00449:  58  notearg
+00450:  58  call 1
+00453:  58  setlocal 6
+00456:  58  pop
+00457:  62  getlocal 5
+00460:  62  getlocal 6
+00463:  62  stricteq
+00464:  62  ifeq 474 (+10)
+00469:  63  goto 559 (+90)
+00474:  67  getlocal 2
+00477:  67  string "asc"
+00482:  67  eq
+00483:  67  ifeq 514 (+31)
+00488:  68  getlocal 5
+00491:  68  getlocal 6
+00494:  68  lt
+00495:  68  ifeq 507 (+12)
+00500:  68  int8 -1
+00502:  68  goto 508 (+6)
+00507:  68  one
+00508:  68  return
+00509:  68  goto 535 (+26)
+00514:  70  getlocal 5
+00517:  70  getlocal 6
+00520:  70  lt
+00521:  70  ifeq 532 (+11)
+00526:  70  one
+00527:  70  goto 534 (+7)
+00532:  70  int8 -1
+00534:  70  return
+00535:  70  goto 559 (+24)
+00540:  74  this
+00541:  74  dup
+00542:  74  callprop "error"
+00547:  74  swap
+00548:  74  notearg
+00549:  74  string "xs.Tools.Sort error"
+00554:  74  notearg
+00555:  74  call 1
+00558:  74  pop
+00559:  28  localinc 11
+00562:  28  getlocal 0
+00565:  28  pos
+00566:  28  dup
+00567:  28  one
+00568:  28  add
+00569:  28  setlocal 0
+00572:  28  pop
+00573:  28  pop
+00574:  28  loopentry
+00575:  28  getlocal 0
+00578:  28  getaliasedvar "_arguments" (hops = 0, slot = 2)
+00587:  28  length "length"
+00592:  28  lt
+00593:  28  ifne 37 (-556)
+00598:  78  zero
+00599:  78  return
+00600:  78  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:25 ---
+;; function object[1] byEquFate
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] generalModel
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=0 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:86 ---
+loc   line  op
+----- ----  --
+main:
+00000:  87  lambda (function () {
+    [sourceless code]
+})
+00005:  87  return
+00006:  94  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:86 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=2 bindings=4
+;; arg[0] o
+;; arg[1] p
+;; local[0] a
+;; local[1] b
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:87 ---
+loc   line  op
+----- ----  --
+main:
+00000:  88  name "xs"
+00005:  88  getprop "Profile"
+00010:  88  getprop "GameData"
+00015:  88  getprop "Mgr"
+00020:  88  dup
+00021:  88  callprop "getInstance"
+00026:  88  swap
+00027:  88  notearg
+00028:  88  call 0
+00031:  88  getprop "Fate"
+00036:  88  dup
+00037:  88  callprop "isHasFateWithEquId"
+00042:  88  swap
+00043:  88  notearg
+00044:  88  getaliasedvar "generalModel" (hops = 0, slot = 2)
+00053:  88  notearg
+00054:  88  getarg 0
+00057:  88  notearg
+00058:  88  call 2
+00061:  88  setlocal 0
+00064:  88  pop
+00065:  89  name "xs"
+00070:  89  getprop "Profile"
+00075:  89  getprop "GameData"
+00080:  89  getprop "Mgr"
+00085:  89  dup
+00086:  89  callprop "getInstance"
+00091:  89  swap
+00092:  89  notearg
+00093:  89  call 0
+00096:  89  getprop "Fate"
+00101:  89  dup
+00102:  89  callprop "isHasFateWithEquId"
+00107:  89  swap
+00108:  89  notearg
+00109:  89  getaliasedvar "generalModel" (hops = 0, slot = 2)
+00118:  89  notearg
+00119:  89  getarg 1
+00122:  89  notearg
+00123:  89  call 2
+00126:  89  setlocal 1
+00129:  89  pop
+00130:  90  getlocal 0
+00133:  90  getlocal 1
+00136:  90  stricteq
+00137:  90  ifeq 144 (+7)
+00142:  91  zero
+00143:  91  return
+00144:  93  getlocal 0
+00147:  93  getlocal 1
+00150:  93  lt
+00151:  93  ifeq 162 (+11)
+00156:  93  one
+00157:  93  goto 164 (+7)
+00162:  93  int8 -1
+00164:  93  return
+00165:  93  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:87 ---
+;; function object[2] bySkillFate
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] generalModel
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=0 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:100 ---
+loc   line  op
+----- ----  --
+main:
+00000: 101  lambda (function () {
+    [sourceless code]
+})
+00005: 101  return
+00006: 108  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:100 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=2 bindings=4
+;; arg[0] o
+;; arg[1] p
+;; local[0] a
+;; local[1] b
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:101 ---
+loc   line  op
+----- ----  --
+main:
+00000: 102  name "xs"
+00005: 102  getprop "Profile"
+00010: 102  getprop "GameData"
+00015: 102  getprop "Mgr"
+00020: 102  dup
+00021: 102  callprop "getInstance"
+00026: 102  swap
+00027: 102  notearg
+00028: 102  call 0
+00031: 102  getprop "Fate"
+00036: 102  dup
+00037: 102  callprop "isHasFateWithSkillId"
+00042: 102  swap
+00043: 102  notearg
+00044: 102  getaliasedvar "generalModel" (hops = 0, slot = 2)
+00053: 102  notearg
+00054: 102  getarg 0
+00057: 102  notearg
+00058: 102  call 2
+00061: 102  setlocal 0
+00064: 102  pop
+00065: 103  name "xs"
+00070: 103  getprop "Profile"
+00075: 103  getprop "GameData"
+00080: 103  getprop "Mgr"
+00085: 103  dup
+00086: 103  callprop "getInstance"
+00091: 103  swap
+00092: 103  notearg
+00093: 103  call 0
+00096: 103  getprop "Fate"
+00101: 103  dup
+00102: 103  callprop "isHasFateWithSkillId"
+00107: 103  swap
+00108: 103  notearg
+00109: 103  getaliasedvar "generalModel" (hops = 0, slot = 2)
+00118: 103  notearg
+00119: 103  getarg 1
+00122: 103  notearg
+00123: 103  call 2
+00126: 103  setlocal 1
+00129: 103  pop
+00130: 104  getlocal 0
+00133: 104  getlocal 1
+00136: 104  stricteq
+00137: 104  ifeq 144 (+7)
+00142: 105  zero
+00143: 105  return
+00144: 107  getlocal 0
+00147: 107  getlocal 1
+00150: 107  lt
+00151: 107  ifeq 162 (+11)
+00156: 107  one
+00157: 107  goto 164 (+7)
+00162: 107  int8 -1
+00164: 107  return
+00165: 107  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:101 ---
+;; function object[3] byGeneralFate
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] generalModel
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=0 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:115 ---
+loc   line  op
+----- ----  --
+main:
+00000: 116  lambda (function () {
+    [sourceless code]
+})
+00005: 116  return
+00006: 123  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:115 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=2 bindings=4
+;; arg[0] o
+;; arg[1] p
+;; local[0] a
+;; local[1] b
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:116 ---
+loc   line  op
+----- ----  --
+main:
+00000: 117  name "xs"
+00005: 117  getprop "Profile"
+00010: 117  getprop "GameData"
+00015: 117  getprop "Mgr"
+00020: 117  dup
+00021: 117  callprop "getInstance"
+00026: 117  swap
+00027: 117  notearg
+00028: 117  call 0
+00031: 117  getprop "Fate"
+00036: 117  dup
+00037: 117  callprop "isHasFateWithGeneralId"
+00042: 117  swap
+00043: 117  notearg
+00044: 117  getaliasedvar "generalModel" (hops = 0, slot = 2)
+00053: 117  notearg
+00054: 117  getarg 0
+00057: 117  notearg
+00058: 117  call 2
+00061: 117  setlocal 0
+00064: 117  pop
+00065: 118  name "xs"
+00070: 118  getprop "Profile"
+00075: 118  getprop "GameData"
+00080: 118  getprop "Mgr"
+00085: 118  dup
+00086: 118  callprop "getInstance"
+00091: 118  swap
+00092: 118  notearg
+00093: 118  call 0
+00096: 118  getprop "Fate"
+00101: 118  dup
+00102: 118  callprop "isHasFateWithGeneralId"
+00107: 118  swap
+00108: 118  notearg
+00109: 118  getaliasedvar "generalModel" (hops = 0, slot = 2)
+00118: 118  notearg
+00119: 118  getarg 1
+00122: 118  notearg
+00123: 118  call 2
+00126: 118  setlocal 1
+00129: 118  pop
+00130: 119  getlocal 0
+00133: 119  getlocal 1
+00136: 119  stricteq
+00137: 119  ifeq 144 (+7)
+00142: 120  zero
+00143: 120  return
+00144: 122  getlocal 0
+00147: 122  getlocal 1
+00150: 122  lt
+00151: 122  ifeq 162 (+11)
+00156: 122  one
+00157: 122  goto 164 (+7)
+00162: 122  int8 -1
+00164: 122  return
+00165: 122  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:116 ---
+;; function object[4] bySkillCanBeSet
+;; function metadata object[4] nargs=2 bindings=2
+;; arg[0] generalModel
+;; arg[1] pos
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=0 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:129 ---
+loc   line  op
+----- ----  --
+main:
+00000: 130  lambda (function () {
+    [sourceless code]
+})
+00005: 130  return
+00006: 137  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:129 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=2 bindings=4
+;; arg[0] o
+;; arg[1] p
+;; local[0] a
+;; local[1] b
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:130 ---
+loc   line  op
+----- ----  --
+main:
+00000: 131  name "xs"
+00005: 131  getprop "Profile"
+00010: 131  getprop "GameData"
+00015: 131  getprop "Mgr"
+00020: 131  dup
+00021: 131  callprop "getInstance"
+00026: 131  swap
+00027: 131  notearg
+00028: 131  call 0
+00031: 131  getprop "Generals"
+00036: 131  dup
+00037: 131  callprop "isThisSkillCanBeSet"
+00042: 131  swap
+00043: 131  notearg
+00044: 131  getaliasedvar "generalModel" (hops = 0, slot = 2)
+00053: 131  notearg
+00054: 131  getarg 0
+00057: 131  dup
+00058: 131  callprop "getPkId"
+00063: 131  swap
+00064: 131  notearg
+00065: 131  call 0
+00068: 131  notearg
+00069: 131  getaliasedvar "pos" (hops = 0, slot = 3)
+00078: 131  notearg
+00079: 131  call 3
+00082: 131  setlocal 0
+00085: 131  pop
+00086: 132  name "xs"
+00091: 132  getprop "Profile"
+00096: 132  getprop "GameData"
+00101: 132  getprop "Mgr"
+00106: 132  dup
+00107: 132  callprop "getInstance"
+00112: 132  swap
+00113: 132  notearg
+00114: 132  call 0
+00117: 132  getprop "Generals"
+00122: 132  dup
+00123: 132  callprop "isThisSkillCanBeSet"
+00128: 132  swap
+00129: 132  notearg
+00130: 132  getaliasedvar "generalModel" (hops = 0, slot = 2)
+00139: 132  notearg
+00140: 132  getarg 1
+00143: 132  dup
+00144: 132  callprop "getPkId"
+00149: 132  swap
+00150: 132  notearg
+00151: 132  call 0
+00154: 132  notearg
+00155: 132  getaliasedvar "pos" (hops = 0, slot = 3)
+00164: 132  notearg
+00165: 132  call 3
+00168: 132  setlocal 1
+00171: 132  pop
+00172: 133  getlocal 0
+00175: 133  getlocal 1
+00178: 133  stricteq
+00179: 133  ifeq 186 (+7)
+00184: 134  zero
+00185: 134  return
+00186: 136  getlocal 0
+00189: 136  getlocal 1
+00192: 136  lt
+00193: 136  ifeq 204 (+11)
+00198: 136  one
+00199: 136  goto 206 (+7)
+00204: 136  int8 -1
+00206: 136  return
+00207: 136  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:130 ---
+;; function object[5] byLieutenantCanBeSet
+;; function metadata object[5] nargs=2 bindings=2
+;; arg[0] generalModel
+;; arg[1] pos
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=0 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:143 ---
+loc   line  op
+----- ----  --
+main:
+00000: 144  lambda (function () {
+    [sourceless code]
+})
+00005: 144  return
+00006: 151  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:143 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=2 bindings=4
+;; arg[0] o
+;; arg[1] p
+;; local[0] a
+;; local[1] b
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:144 ---
+loc   line  op
+----- ----  --
+main:
+00000: 145  name "xs"
+00005: 145  getprop "Profile"
+00010: 145  getprop "GameData"
+00015: 145  getprop "Mgr"
+00020: 145  dup
+00021: 145  callprop "getInstance"
+00026: 145  swap
+00027: 145  notearg
+00028: 145  call 0
+00031: 145  getprop "Generals"
+00036: 145  dup
+00037: 145  callprop "isThisLieutenantCanBeSet"
+00042: 145  swap
+00043: 145  notearg
+00044: 145  getaliasedvar "generalModel" (hops = 0, slot = 2)
+00053: 145  notearg
+00054: 145  getarg 0
+00057: 145  dup
+00058: 145  callprop "getPkId"
+00063: 145  swap
+00064: 145  notearg
+00065: 145  call 0
+00068: 145  notearg
+00069: 145  getaliasedvar "pos" (hops = 0, slot = 3)
+00078: 145  notearg
+00079: 145  call 3
+00082: 145  setlocal 0
+00085: 145  pop
+00086: 146  name "xs"
+00091: 146  getprop "Profile"
+00096: 146  getprop "GameData"
+00101: 146  getprop "Mgr"
+00106: 146  dup
+00107: 146  callprop "getInstance"
+00112: 146  swap
+00113: 146  notearg
+00114: 146  call 0
+00117: 146  getprop "Generals"
+00122: 146  dup
+00123: 146  callprop "isThisLieutenantCanBeSet"
+00128: 146  swap
+00129: 146  notearg
+00130: 146  getaliasedvar "generalModel" (hops = 0, slot = 2)
+00139: 146  notearg
+00140: 146  getarg 1
+00143: 146  dup
+00144: 146  callprop "getPkId"
+00149: 146  swap
+00150: 146  notearg
+00151: 146  call 0
+00154: 146  notearg
+00155: 146  getaliasedvar "pos" (hops = 0, slot = 3)
+00164: 146  notearg
+00165: 146  call 3
+00168: 146  setlocal 1
+00171: 146  pop
+00172: 147  getlocal 0
+00175: 147  getlocal 1
+00178: 147  stricteq
+00179: 147  ifeq 186 (+7)
+00184: 148  zero
+00185: 148  return
+00186: 150  getlocal 0
+00189: 150  getlocal 1
+00192: 150  lt
+00193: 150  ifeq 204 (+11)
+00198: 150  one
+00199: 150  goto 206 (+7)
+00204: 150  int8 -1
+00206: 150  return
+00207: 150  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:144 ---
+;; function object[6] byGradeAndId_generals_order_asc
+;; function metadata object[6] nargs=2 bindings=2
+;; arg[0] a
+;; arg[1] b
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:156 ---
+loc   line  op
+----- ----  --
+main:
+00000: 158  getarg 0
+00003: 158  dup
+00004: 158  callprop "getGrade"
+00009: 158  swap
+00010: 158  notearg
+00011: 158  call 0
+00014: 158  getarg 1
+00017: 158  dup
+00018: 158  callprop "getGrade"
+00023: 158  swap
+00024: 158  notearg
+00025: 158  call 0
+00028: 158  stricteq
+00029: 158  ifeq 69 (+40)
+00034: 159  getarg 0
+00037: 159  dup
+00038: 159  callprop "getId"
+00043: 159  swap
+00044: 159  notearg
+00045: 159  call 0
+00048: 159  getarg 1
+00051: 159  dup
+00052: 159  callprop "getId"
+00057: 159  swap
+00058: 159  notearg
+00059: 159  call 0
+00062: 159  gt
+00063: 159  return
+00064: 159  goto 99 (+35)
+00069: 162  getarg 0
+00072: 162  dup
+00073: 162  callprop "getSortGrade"
+00078: 162  swap
+00079: 162  notearg
+00080: 162  call 0
+00083: 162  getarg 1
+00086: 162  dup
+00087: 162  callprop "getSortGrade"
+00092: 162  swap
+00093: 162  notearg
+00094: 162  call 0
+00097: 162  lt
+00098: 162  return
+00099: 163  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:156 ---
+;; function object[7] byGradeAndId_generals_order_desc
+;; function metadata object[7] nargs=2 bindings=2
+;; arg[0] a
+;; arg[1] b
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:167 ---
+loc   line  op
+----- ----  --
+main:
+00000: 169  getarg 0
+00003: 169  dup
+00004: 169  callprop "getGrade"
+00009: 169  swap
+00010: 169  notearg
+00011: 169  call 0
+00014: 169  getarg 1
+00017: 169  dup
+00018: 169  callprop "getGrade"
+00023: 169  swap
+00024: 169  notearg
+00025: 169  call 0
+00028: 169  stricteq
+00029: 169  ifeq 69 (+40)
+00034: 170  getarg 0
+00037: 170  dup
+00038: 170  callprop "getId"
+00043: 170  swap
+00044: 170  notearg
+00045: 170  call 0
+00048: 170  getarg 1
+00051: 170  dup
+00052: 170  callprop "getId"
+00057: 170  swap
+00058: 170  notearg
+00059: 170  call 0
+00062: 170  lt
+00063: 170  return
+00064: 170  goto 99 (+35)
+00069: 173  getarg 0
+00072: 173  dup
+00073: 173  callprop "getGrade"
+00078: 173  swap
+00079: 173  notearg
+00080: 173  call 0
+00083: 173  getarg 1
+00086: 173  dup
+00087: 173  callprop "getGrade"
+00092: 173  swap
+00093: 173  notearg
+00094: 173  call 0
+00097: 173  gt
+00098: 173  return
+00099: 174  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:167 ---
+;; function object[8] randomsort
+;; function metadata object[8] nargs=2 bindings=2
+;; arg[0] a
+;; arg[1] b
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:177 ---
+loc   line  op
+----- ----  --
+main:
+00000: 178  name "Math"
+00005: 178  dup
+00006: 178  callprop "random"
+00011: 178  swap
+00012: 178  notearg
+00013: 178  call 0
+00016: 178  double 0.5
+00021: 178  gt
+00022: 178  ifeq 34 (+12)
+00027: 178  int8 -1
+00029: 178  goto 35 (+6)
+00034: 178  one
+00035: 178  return
+00036: 178  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sort.js:177 ---

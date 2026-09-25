@@ -1,0 +1,230 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/SkillPieces.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=133 object[0]
+;; FUNCTION-MAP kind=lambda offset=143 object[1]
+;; FUNCTION-MAP kind=lambda offset=184 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/SkillPieces.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Profile"
+00010:   8  getprop "GameData"
+00015:   8  name "xs"
+00020:   8  getprop "Profile"
+00025:   8  getprop "GameData"
+00030:   8  getprop "Base"
+00035:   8  dup
+00036:   8  callprop "extend"
+00041:   8  swap
+00042:   8  notearg
+00043:   8  newinit 1
+00048:  10  name "xs"
+00053:  10  getprop "Debug"
+00058:  10  getprop "emptyFunc"
+00063:  10  initprop "log"
+00068:  11  name "xs"
+00073:  11  getprop "Debug"
+00078:  11  getprop "emptyFunc"
+00083:  11  initprop "dump"
+00088:  13  string "xs.Profile.GameData.SkillPieces"
+00093:  13  initprop "name"
+00098:  14  name "xs"
+00103:  14  getprop "Constant_GameData_SkillPiece"
+00108:  14  initprop "nameType"
+00113:  15  name "xs"
+00118:  15  getprop "Models"
+00123:  15  getprop "SkillPiece"
+00128:  15  initprop "modelName"
+00133:  19  lambda (function () {
+    [sourceless code]
+})
+00138:  19  initprop "init"
+00143:  25  lambda (function () {
+    [sourceless code]
+})
+00148:  25  initprop "_updateNotice"
+00153:  25  endinit
+00154:  25  notearg
+00155:  25  call 1
+00158:  25  setprop "SkillPieces"
+00163:  25  popv
+00164:  33  name "xs"
+00169:  33  getprop "Profile"
+00174:  33  getprop "GameData"
+00179:  33  getprop "SkillPieces"
+00184:  33  lambda (function () {
+    [sourceless code]
+})
+00189:  33  setprop "create"
+00194:  33  popv
+00195:  49  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/SkillPieces.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/SkillPieces.js:19 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  this
+00001:  20  dup
+00002:  20  callprop "_super"
+00007:  20  swap
+00008:  20  notearg
+00009:  20  getarg 0
+00012:  20  notearg
+00013:  20  call 1
+00016:  20  pop
+00017:  21  this
+00018:  21  getprop "dataRef"
+00023:  21  dup
+00024:  21  callprop "getNotifyCenter"
+00029:  21  swap
+00030:  21  notearg
+00031:  21  call 0
+00034:  21  dup
+00035:  21  callprop "addObserver"
+00040:  21  swap
+00041:  21  notearg
+00042:  21  this
+00043:  21  notearg
+00044:  21  this
+00045:  21  getprop "clearCache"
+00050:  21  notearg
+00051:  21  name "xs"
+00056:  21  getprop "Constant_Notify_ModelChange_SkillPiece_SortChange"
+00061:  21  notearg
+00062:  21  call 3
+00065:  21  pop
+00066:  22  true
+00067:  22  return
+00068:  22  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/SkillPieces.js:19 ---
+;; function object[1] _updateNotice
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/SkillPieces.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  26  name "xs"
+00005:  26  dup
+00006:  26  callprop "log_hsq"
+00011:  26  swap
+00012:  26  notearg
+00013:  26  string "_updateNotice SkillPieces"
+00018:  26  notearg
+00019:  26  call 1
+00022:  26  pop
+00023:  27  name "xs"
+00028:  27  getprop "Utils"
+00033:  27  getprop "Notify"
+00038:  27  dup
+00039:  27  callprop "postNotification"
+00044:  27  swap
+00045:  27  notearg
+00046:  27  name "xs"
+00051:  27  getprop "Constant_Notify_SkillPoeces_Change"
+00056:  27  notearg
+00057:  27  this
+00058:  27  notearg
+00059:  27  call 2
+00062:  27  pop
+00063:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/SkillPieces.js:25 ---
+;; function object[2] create
+;; function metadata object[2] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/SkillPieces.js:33 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  getarg 0
+00003:  34  getprop "play_id"
+00008:  34  setlocal 0
+00011:  34  pop
+00012:  35  name "xs"
+00017:  35  getprop "Profile"
+00022:  35  getprop "GameData"
+00027:  35  getprop "SkillPieces"
+00032:  35  setlocal 1
+00035:  35  pop
+00036:  36  name "xs"
+00041:  36  getprop "Utils"
+00046:  36  dup
+00047:  36  callprop "isSet"
+00052:  36  swap
+00053:  36  notearg
+00054:  36  getlocal 1
+00057:  36  getprop "_instance"
+00062:  36  notearg
+00063:  36  call 1
+00066:  36  or 85 (+19)
+00071:  36  pop
+00072:  36  getlocal 1
+00075:  36  newarray 0
+00079:  36  endinit
+00080:  36  setprop "_instance"
+00085:  36  pop
+00086:  38  getlocal 1
+00089:  38  getprop "_instance"
+00094:  38  getlocal 0
+00097:  38  getelem
+00098:  38  ifeq 116 (+18)
+00103:  39  getlocal 1
+00106:  39  getprop "_instance"
+00111:  39  getlocal 0
+00114:  39  getelem
+00115:  39  return
+00116:  42  getlocal 1
+00119:  42  undefined
+00120:  42  notearg
+00121:  42  new 0
+00124:  42  setlocal 2
+00127:  42  pop
+00128:  43  getlocal 2
+00131:  43  and 155 (+24)
+00136:  43  pop
+00137:  43  getlocal 2
+00140:  43  dup
+00141:  43  callprop "init"
+00146:  43  swap
+00147:  43  notearg
+00148:  43  getarg 0
+00151:  43  notearg
+00152:  43  call 1
+00155:  43  ifeq 180 (+25)
+00160:  44  getlocal 1
+00163:  44  getprop "_instance"
+00168:  44  getlocal 0
+00171:  44  getlocal 2
+00174:  44  setelem
+00175:  44  pop
+00176:  45  getlocal 2
+00179:  45  return
+00180:  47  name "xs"
+00185:  47  dup
+00186:  47  callprop "error"
+00191:  47  swap
+00192:  47  notearg
+00193:  47  string "xs.Profile.GameData.SkillPieces.create failed"
+00198:  47  notearg
+00199:  47  call 1
+00202:  47  pop
+00203:  48  null
+00204:  48  return
+00205:  48  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/SkillPieces.js:33 ---

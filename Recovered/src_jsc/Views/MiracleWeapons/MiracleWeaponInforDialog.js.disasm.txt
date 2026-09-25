@@ -1,0 +1,2415 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=443 object[0]
+;; FUNCTION-MAP kind=lambda offset=453 object[1]
+;; FUNCTION-MAP kind=lambda offset=463 object[2]
+;; FUNCTION-MAP kind=lambda offset=473 object[3]
+;; FUNCTION-MAP kind=lambda offset=483 object[4]
+;; FUNCTION-MAP kind=lambda offset=493 object[5]
+;; FUNCTION-MAP kind=lambda offset=503 object[6]
+;; FUNCTION-MAP kind=lambda offset=513 object[7]
+;; FUNCTION-MAP kind=lambda offset=523 object[8]
+;; FUNCTION-MAP kind=lambda offset=533 object[9]
+;; FUNCTION-MAP kind=lambda offset=543 object[10]
+;; FUNCTION-MAP kind=lambda offset=553 object[11]
+;; FUNCTION-MAP kind=lambda offset=563 object[12]
+;; FUNCTION-MAP kind=lambda offset=573 object[13]
+;; FUNCTION-MAP kind=lambda offset=609 object[14]
+;; FUNCTION-MAP kind=lambda offset=635 object[15]
+;; FUNCTION-MAP kind=lambda offset=661 object[16]
+;; FUNCTION-MAP kind=lambda offset=790 object[17]
+;; FUNCTION-MAP kind=lambda offset=800 object[18]
+;; FUNCTION-MAP kind=lambda offset=810 object[19]
+;; FUNCTION-MAP kind=lambda offset=820 object[20]
+;; FUNCTION-MAP kind=lambda offset=830 object[21]
+;; FUNCTION-MAP kind=lambda offset=840 object[22]
+;; FUNCTION-MAP kind=lambda offset=850 object[23]
+;; FUNCTION-MAP kind=lambda offset=886 object[24]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Views"
+00010:   4  name "xs"
+00015:   4  getprop "Views"
+00020:   4  getprop "HungerLayer"
+00025:   4  dup
+00026:   4  callprop "extend"
+00031:   4  swap
+00032:   4  notearg
+00033:   4  newinit 1
+00038:   5  string "xs.Views.MiracleWeaponInforDialog"
+00043:   5  initprop "name"
+00048:   6  newarray 8
+00052:   7  newinit 1
+00057:   7  one
+00058:   7  initprop "tag"
+00063:   7  string "ls"
+00068:   7  initprop "type"
+00073:   7  string "m_title"
+00078:   7  initprop "name"
+00083:   7  string "LS_huodong_title"
+00088:   7  initprop "id"
+00093:   7  endinit
+00094:   7  initelem_array 0
+00098:   8  newinit 1
+00103:   8  int8 2
+00105:   8  initprop "tag"
+00110:   8  string "ls"
+00115:   8  initprop "type"
+00120:   8  string "m_grade"
+00125:   8  initprop "name"
+00130:   8  string "LS_huodong_title"
+00135:   8  initprop "id"
+00140:   8  endinit
+00141:   8  initelem_array 1
+00145:   9  newinit 1
+00150:   9  int8 3
+00152:   9  initprop "tag"
+00157:   9  string "ls"
+00162:   9  initprop "type"
+00167:   9  string "m_xue"
+00172:   9  initprop "name"
+00177:   9  string "LS_yuanfenInf1"
+00182:   9  initprop "id"
+00187:   9  endinit
+00188:   9  initelem_array 2
+00192:  10  newinit 1
+00197:  10  int8 4
+00199:  10  initprop "tag"
+00204:  10  string "ls"
+00209:  10  initprop "type"
+00214:  10  string "m_gong"
+00219:  10  initprop "name"
+00224:  10  string "LS_yuanfenInf1"
+00229:  10  initprop "id"
+00234:  10  endinit
+00235:  10  initelem_array 3
+00239:  11  newinit 1
+00244:  11  int8 5
+00246:  11  initprop "tag"
+00251:  11  string "ls"
+00256:  11  initprop "type"
+00261:  11  string "m_fang"
+00266:  11  initprop "name"
+00271:  11  string "LS_yuanfenInf1"
+00276:  11  initprop "id"
+00281:  11  endinit
+00282:  11  initelem_array 4
+00286:  12  newinit 1
+00291:  12  int8 6
+00293:  12  initprop "tag"
+00298:  12  string "ls"
+00303:  12  initprop "type"
+00308:  12  string "m_zhi"
+00313:  12  initprop "name"
+00318:  12  string "LS_yuanfenInf1"
+00323:  12  initprop "id"
+00328:  12  endinit
+00329:  12  initelem_array 5
+00333:  13  newinit 1
+00338:  13  int8 21
+00340:  13  initprop "tag"
+00345:  13  string "ls"
+00350:  13  initprop "type"
+00355:  13  string "m_shuxing"
+00360:  13  initprop "name"
+00365:  13  string "LS_yuanfen"
+00370:  13  initprop "id"
+00375:  13  string "MiracleWeapon_shuxing"
+00380:  13  initprop "stringId"
+00385:  13  endinit
+00386:  13  initelem_array 6
+00390:  14  newinit 1
+00395:  14  int8 7
+00397:  14  initprop "tag"
+00402:  14  string "btn"
+00407:  14  initprop "type"
+00412:  14  string "m_Close"
+00417:  14  initprop "name"
+00422:  14  string "Btn_Close"
+00427:  14  initprop "id"
+00432:  14  endinit
+00433:  14  initelem_array 7
+00437:  14  endinit
+00438:  14  initprop "ccbCfg"
+00443:  17  lambda (function () {
+    [sourceless code]
+})
+00448:  17  initprop "ctor"
+00453:  21  lambda (function () {
+    [sourceless code]
+})
+00458:  21  initprop "init"
+00463: 105  lambda (function () {
+    [sourceless code]
+})
+00468: 105  initprop "getAllDate"
+00473: 160  lambda (function () {
+    [sourceless code]
+})
+00478: 160  initprop "initStepAndSubStep"
+00483: 171  lambda (function () {
+    [sourceless code]
+})
+00488: 171  initprop "onBtnCloseClicked"
+00493: 174  lambda (function () {
+    [sourceless code]
+})
+00498: 174  initprop "scrollViewDidScroll"
+00503: 177  lambda (function () {
+    [sourceless code]
+})
+00508: 177  initprop "scrollViewDidZoom"
+00513: 180  lambda (function () {
+    [sourceless code]
+})
+00518: 180  initprop "tableCellTouched"
+00523: 183  lambda (function () {
+    [sourceless code]
+})
+00528: 183  initprop "tableCellSizeForIndex"
+00533: 187  lambda (function () {
+    [sourceless code]
+})
+00538: 187  initprop "tableCellAtIndex"
+00543: 199  lambda (function () {
+    [sourceless code]
+})
+00548: 199  initprop "numberOfCellsInTableView"
+00553: 203  lambda (function () {
+    [sourceless code]
+})
+00558: 203  initprop "onEnter"
+00563: 206  lambda (function () {
+    [sourceless code]
+})
+00568: 206  initprop "onExit"
+00573: 209  lambda (function () {
+    [sourceless code]
+})
+00578: 209  initprop "setBaseTouchPriority"
+00583: 209  endinit
+00584: 209  notearg
+00585: 209  call 1
+00588: 209  setprop "MiracleWeaponInforDialog"
+00593: 209  popv
+00594: 217  name "xs"
+00599: 217  getprop "Views"
+00604: 217  getprop "MiracleWeaponInforDialog"
+00609: 217  lambda (function () {
+    [sourceless code]
+})
+00614: 217  setprop "create"
+00619: 217  popv
+00620: 225  name "xs"
+00625: 225  getprop "Views"
+00630: 225  getprop "MiracleWeaponInforDialog"
+00635: 225  lambda (function () {
+    [sourceless code]
+})
+00640: 225  setprop "load"
+00645: 225  popv
+00646: 228  name "xs"
+00651: 228  getprop "Views"
+00656: 228  getprop "MiracleWeaponInforDialog"
+00661: 228  lambda (function () {
+    [sourceless code]
+})
+00666: 228  setprop "unload"
+00671: 228  popv
+00672: 232  name "xs"
+00677: 232  getprop "Views"
+00682: 232  getprop "Mgr"
+00687: 232  dup
+00688: 232  callprop "registerDialog"
+00693: 232  swap
+00694: 232  notearg
+00695: 232  string "MiracleWeaponInforDialog"
+00700: 232  notearg
+00701: 232  newinit 1
+00706: 233  name "xs"
+00711: 233  getprop "Views"
+00716: 233  getprop "MiracleWeaponInforDialog"
+00721: 233  initprop "class"
+00726: 234  name "xs"
+00731: 234  getprop "Constant_DlgStyleType_Small"
+00736: 234  initprop "styleType"
+00741: 235  string "MiracleWeaponsScene"
+00746: 235  initprop "area"
+00751: 235  endinit
+00752: 235  notearg
+00753: 235  call 2
+00756: 235  popv
+00757: 242  name "xs"
+00762: 242  getprop "Views"
+00767: 242  name "cc"
+00772: 242  getprop "TableViewCell"
+00777: 242  dup
+00778: 242  callprop "extend"
+00783: 242  swap
+00784: 242  notearg
+00785: 242  newinit 1
+00790: 243  lambda (function () {
+    [sourceless code]
+})
+00795: 243  initprop "ctor"
+00800: 247  lambda (function () {
+    [sourceless code]
+})
+00805: 247  initprop "init"
+00810: 279  lambda (function () {
+    [sourceless code]
+})
+00815: 279  initprop "createWeaponIntroByType"
+00820: 347  lambda (function () {
+    [sourceless code]
+})
+00825: 347  initprop "onEnter"
+00830: 350  lambda (function () {
+    [sourceless code]
+})
+00835: 350  initprop "onExit"
+00840: 353  lambda (function () {
+    [sourceless code]
+})
+00845: 353  initprop "setBaseTouchPriority"
+00850: 356  lambda (function () {
+    [sourceless code]
+})
+00855: 356  initprop "update"
+00860: 356  endinit
+00861: 356  notearg
+00862: 356  call 1
+00865: 356  setprop "MiracleWeaponInforTableViewCell"
+00870: 356  popv
+00871: 411  name "xs"
+00876: 411  getprop "Views"
+00881: 411  getprop "MiracleWeaponInforTableViewCell"
+00886: 411  lambda (function () {
+    [sourceless code]
+})
+00891: 411  setprop "create"
+00896: 411  popv
+00897: 417  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  this
+00001:  18  dup
+00002:  18  callprop "_super"
+00007:  18  swap
+00008:  18  notearg
+00009:  18  call 0
+00012:  18  pop
+00013:  19  name "cc"
+00018:  19  dup
+00019:  19  callprop "associateWithNative"
+00024:  19  swap
+00025:  19  notearg
+00026:  19  this
+00027:  19  notearg
+00028:  19  name "cc"
+00033:  19  getprop "Layer"
+00038:  19  notearg
+00039:  19  call 2
+00042:  19  pop
+00043:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:17 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=7
+;; arg[0] param
+;; local[0] weaponName
+;; local[1] weaponStr
+;; local[2] gong
+;; local[3] fang
+;; local[4] xue
+;; local[5] zhi
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  this
+00001:  22  dup
+00002:  22  callprop "_super"
+00007:  22  swap
+00008:  22  notearg
+00009:  22  call 0
+00012:  22  not
+00013:  22  ifeq 20 (+7)
+00018:  23  false
+00019:  23  return
+00020:  25  this
+00021:  25  null
+00022:  25  setprop "m_ccbNode"
+00027:  25  pop
+00028:  26  this
+00029:  26  null
+00030:  26  setprop "m_Close"
+00035:  26  pop
+00036:  28  this
+00037:  28  getarg 0
+00040:  28  setprop "m_MiracleWeaponInfor"
+00045:  28  pop
+00046:  29  this
+00047:  29  null
+00048:  29  setprop "m_step"
+00053:  29  pop
+00054:  30  this
+00055:  30  null
+00056:  30  setprop "m_subStep"
+00061:  30  pop
+00062:  31  this
+00063:  31  null
+00064:  31  setprop "m_vipStep"
+00069:  31  pop
+00070:  33  this
+00071:  33  null
+00072:  33  setprop "m_xue"
+00077:  33  pop
+00078:  34  this
+00079:  34  null
+00080:  34  setprop "m_gong"
+00085:  34  pop
+00086:  35  this
+00087:  35  null
+00088:  35  setprop "m_fang"
+00093:  35  pop
+00094:  36  this
+00095:  36  null
+00096:  36  setprop "m_zhi"
+00101:  36  pop
+00102:  38  this
+00103:  38  null
+00104:  38  setprop "m_allData"
+00109:  38  pop
+00110:  39  this
+00111:  39  null
+00112:  39  setprop "m_userVipGrade"
+00117:  39  pop
+00118:  41  this
+00119:  41  name "xs"
+00124:  41  getprop "Profile"
+00129:  41  getprop "GameData"
+00134:  41  getprop "Mgr"
+00139:  41  dup
+00140:  41  callprop "getInstance"
+00145:  41  swap
+00146:  41  notearg
+00147:  41  call 0
+00150:  41  getprop "Player"
+00155:  41  dup
+00156:  41  callprop "getPlayer"
+00161:  41  swap
+00162:  41  notearg
+00163:  41  call 0
+00166:  41  dup
+00167:  41  callprop "getPlayerVipLevel"
+00172:  41  swap
+00173:  41  notearg
+00174:  41  call 0
+00177:  41  setprop "m_userVipGrade"
+00182:  41  pop
+00183:  43  this
+00184:  43  this
+00185:  43  getprop "m_MiracleWeaponInfor"
+00190:  43  dup
+00191:  43  callprop "getNormalList"
+00196:  43  swap
+00197:  43  notearg
+00198:  43  call 0
+00201:  43  setprop "m_weaponOnHundredInforList"
+00206:  43  pop
+00207:  44  this
+00208:  44  this
+00209:  44  getprop "m_MiracleWeaponInfor"
+00214:  44  dup
+00215:  44  callprop "getEliteList"
+00220:  44  swap
+00221:  44  notearg
+00222:  44  call 0
+00225:  44  setprop "m_weaponVIPInforList"
+00230:  44  pop
+00231:  46  this
+00232:  46  name "xs"
+00237:  46  getprop "ccb_reader"
+00242:  46  dup
+00243:  46  callprop "load"
+00248:  46  swap
+00249:  46  notearg
+00250:  46  name "xs"
+00255:  46  getprop "Cfg"
+00260:  46  getprop "CCBI"
+00265:  46  getprop "MiracleWeaponsInforDialog"
+00270:  46  notearg
+00271:  46  this
+00272:  46  notearg
+00273:  46  call 2
+00276:  46  setprop "m_ccbNode"
+00281:  46  pop
+00282:  47  this
+00283:  47  getprop "m_ccbNode"
+00288:  47  dup
+00289:  47  callprop "setContentSize"
+00294:  47  swap
+00295:  47  notearg
+00296:  47  name "cc"
+00301:  47  dup
+00302:  47  callprop "size"
+00307:  47  swap
+00308:  47  notearg
+00309:  47  uint16 581
+00312:  47  notearg
+00313:  47  uint16 528
+00316:  47  notearg
+00317:  47  call 2
+00320:  47  notearg
+00321:  47  call 1
+00324:  47  pop
+00325:  48  this
+00326:  48  getprop "m_ccbNode"
+00331:  48  dup
+00332:  48  callprop "setAnchorPoint"
+00337:  48  swap
+00338:  48  notearg
+00339:  48  name "cc"
+00344:  48  dup
+00345:  48  callprop "p"
+00350:  48  swap
+00351:  48  notearg
+00352:  48  double 0.5
+00357:  48  notearg
+00358:  48  double 0.5
+00363:  48  notearg
+00364:  48  call 2
+00367:  48  notearg
+00368:  48  call 1
+00371:  48  pop
+00372:  49  name "xs"
+00377:  49  getprop "Utils"
+00382:  49  getprop "Node"
+00387:  49  dup
+00388:  49  callprop "attachNodes"
+00393:  49  swap
+00394:  49  notearg
+00395:  49  this
+00396:  49  notearg
+00397:  49  this
+00398:  49  getprop "m_ccbNode"
+00403:  49  notearg
+00404:  49  newinit 1
+00409:  49  string "c"
+00414:  49  initprop "desc"
+00419:  50  name "cc"
+00424:  50  dup
+00425:  50  callprop "p"
+00430:  50  swap
+00431:  50  notearg
+00432:  50  zero
+00433:  50  notearg
+00434:  50  zero
+00435:  50  notearg
+00436:  50  call 2
+00439:  50  initprop "offset"
+00444:  51  true
+00445:  51  initprop "sc"
+00450:  51  endinit
+00451:  51  notearg
+00452:  51  call 3
+00455:  51  pop
+00456:  52  name "xs"
+00461:  52  getprop "Utils"
+00466:  52  getprop "UI"
+00471:  52  dup
+00472:  52  callprop "replaceCcbByCfg"
+00477:  52  swap
+00478:  52  notearg
+00479:  52  this
+00480:  52  getprop "m_ccbNode"
+00485:  52  notearg
+00486:  52  this
+00487:  52  getprop "ccbCfg"
+00492:  52  notearg
+00493:  52  this
+00494:  52  notearg
+00495:  52  call 3
+00498:  52  pop
+00499:  54  this
+00500:  54  getprop "m_Close"
+00505:  54  dup
+00506:  54  callprop "setOnClickCallBack"
+00511:  54  swap
+00512:  54  notearg
+00513:  54  this
+00514:  54  getprop "onBtnCloseClicked"
+00519:  54  dup
+00520:  54  callprop "bind"
+00525:  54  swap
+00526:  54  notearg
+00527:  54  this
+00528:  54  notearg
+00529:  54  call 1
+00532:  54  notearg
+00533:  54  call 1
+00536:  54  pop
+00537:  57  this
+00538:  57  getprop "m_MiracleWeaponInfor"
+00543:  57  dup
+00544:  57  callprop "getMagicalName"
+00549:  57  swap
+00550:  57  notearg
+00551:  57  call 0
+00554:  57  setlocal 0
+00557:  57  pop
+00558:  58  name "xs"
+00563:  58  getprop "Tools"
+00568:  58  getprop "String"
+00573:  58  dup
+00574:  58  callprop "createString"
+00579:  58  swap
+00580:  58  notearg
+00581:  58  string "MiracleWeapon_shenbing"
+00586:  58  notearg
+00587:  58  call 1
+00590:  58  setlocal 1
+00593:  58  pop
+00594:  59  this
+00595:  59  getprop "m_title"
+00600:  59  dup
+00601:  59  callprop "setString"
+00606:  59  swap
+00607:  59  notearg
+00608:  59  getlocal 1
+00611:  59  getlocal 0
+00614:  59  add
+00615:  59  notearg
+00616:  59  call 1
+00619:  59  pop
+00620:  62  this
+00621:  62  callname "Number"
+00626:  62  implicitthis "Number"
+00631:  62  notearg
+00632:  62  this
+00633:  62  getprop "m_MiracleWeaponInfor"
+00638:  62  dup
+00639:  62  callprop "getNormalStep"
+00644:  62  swap
+00645:  62  notearg
+00646:  62  call 0
+00649:  62  notearg
+00650:  62  call 1
+00653:  62  setprop "m_step"
+00658:  62  pop
+00659:  63  this
+00660:  63  callname "Number"
+00665:  63  implicitthis "Number"
+00670:  63  notearg
+00671:  63  this
+00672:  63  getprop "m_MiracleWeaponInfor"
+00677:  63  dup
+00678:  63  callprop "getNormalSubStep"
+00683:  63  swap
+00684:  63  notearg
+00685:  63  call 0
+00688:  63  notearg
+00689:  63  call 1
+00692:  63  setprop "m_subStep"
+00697:  63  pop
+00698:  64  this
+00699:  64  callname "Number"
+00704:  64  implicitthis "Number"
+00709:  64  notearg
+00710:  64  this
+00711:  64  getprop "m_MiracleWeaponInfor"
+00716:  64  dup
+00717:  64  callprop "getEliteStep"
+00722:  64  swap
+00723:  64  notearg
+00724:  64  call 0
+00727:  64  notearg
+00728:  64  call 1
+00731:  64  setprop "m_vipStep"
+00736:  64  pop
+00737:  67  this
+00738:  67  dup
+00739:  67  callprop "initStepAndSubStep"
+00744:  67  swap
+00745:  67  notearg
+00746:  67  this
+00747:  67  getprop "m_step"
+00752:  67  notearg
+00753:  67  this
+00754:  67  getprop "m_subStep"
+00759:  67  notearg
+00760:  67  call 2
+00763:  67  pop
+00764:  71  this
+00765:  71  getprop "m_step"
+00770:  71  one
+00771:  71  eq
+00772:  71  and 786 (+14)
+00777:  71  pop
+00778:  71  this
+00779:  71  getprop "m_subStep"
+00784:  71  zero
+00785:  71  eq
+00786:  71  ifeq 892 (+106)
+00791:  72  this
+00792:  72  getprop "m_xue"
+00797:  72  dup
+00798:  72  callprop "setString"
+00803:  72  swap
+00804:  72  notearg
+00805:  72  string "0"
+00810:  72  notearg
+00811:  72  call 1
+00814:  72  pop
+00815:  73  this
+00816:  73  getprop "m_gong"
+00821:  73  dup
+00822:  73  callprop "setString"
+00827:  73  swap
+00828:  73  notearg
+00829:  73  string "0"
+00834:  73  notearg
+00835:  73  call 1
+00838:  73  pop
+00839:  74  this
+00840:  74  getprop "m_fang"
+00845:  74  dup
+00846:  74  callprop "setString"
+00851:  74  swap
+00852:  74  notearg
+00853:  74  string "0"
+00858:  74  notearg
+00859:  74  call 1
+00862:  74  pop
+00863:  75  this
+00864:  75  getprop "m_zhi"
+00869:  75  dup
+00870:  75  callprop "setString"
+00875:  75  swap
+00876:  75  notearg
+00877:  75  string "0"
+00882:  75  notearg
+00883:  75  call 1
+00886:  75  pop
+00887:  75  goto 1108 (+221)
+00892:  77  this
+00893:  77  getprop "m_MiracleWeaponInfor"
+00898:  77  dup
+00899:  77  callprop "getPointEffectValAllByType"
+00904:  77  swap
+00905:  77  notearg
+00906:  77  name "xs"
+00911:  77  getprop "Constant_MagicalEquPoint_Type_Atk"
+00916:  77  notearg
+00917:  77  call 1
+00920:  77  setlocal 2
+00923:  77  pop
+00924:  78  this
+00925:  78  getprop "m_MiracleWeaponInfor"
+00930:  78  dup
+00931:  78  callprop "getPointEffectValAllByType"
+00936:  78  swap
+00937:  78  notearg
+00938:  78  name "xs"
+00943:  78  getprop "Constant_MagicalEquPoint_Type_Def"
+00948:  78  notearg
+00949:  78  call 1
+00952:  78  setlocal 3
+00955:  78  pop
+00956:  79  this
+00957:  79  getprop "m_MiracleWeaponInfor"
+00962:  79  dup
+00963:  79  callprop "getPointEffectValAllByType"
+00968:  79  swap
+00969:  79  notearg
+00970:  79  name "xs"
+00975:  79  getprop "Constant_MagicalEquPoint_Type_Hp"
+00980:  79  notearg
+00981:  79  call 1
+00984:  79  setlocal 4
+00987:  79  pop
+00988:  80  this
+00989:  80  getprop "m_MiracleWeaponInfor"
+00994:  80  dup
+00995:  80  callprop "getPointEffectValAllByType"
+01000:  80  swap
+01001:  80  notearg
+01002:  80  name "xs"
+01007:  80  getprop "Constant_MagicalEquPoint_Type_Int"
+01012:  80  notearg
+01013:  80  call 1
+01016:  80  setlocal 5
+01019:  80  pop
+01020:  82  this
+01021:  82  getprop "m_xue"
+01026:  82  dup
+01027:  82  callprop "setString"
+01032:  82  swap
+01033:  82  notearg
+01034:  82  getlocal 4
+01037:  82  notearg
+01038:  82  call 1
+01041:  82  pop
+01042:  83  this
+01043:  83  getprop "m_gong"
+01048:  83  dup
+01049:  83  callprop "setString"
+01054:  83  swap
+01055:  83  notearg
+01056:  83  getlocal 2
+01059:  83  notearg
+01060:  83  call 1
+01063:  83  pop
+01064:  84  this
+01065:  84  getprop "m_fang"
+01070:  84  dup
+01071:  84  callprop "setString"
+01076:  84  swap
+01077:  84  notearg
+01078:  84  getlocal 3
+01081:  84  notearg
+01082:  84  call 1
+01085:  84  pop
+01086:  85  this
+01087:  85  getprop "m_zhi"
+01092:  85  dup
+01093:  85  callprop "setString"
+01098:  85  swap
+01099:  85  notearg
+01100:  85  getlocal 5
+01103:  85  notearg
+01104:  85  call 1
+01107:  85  pop
+01108:  90  this
+01109:  90  this
+01110:  90  dup
+01111:  90  callprop "getAllDate"
+01116:  90  swap
+01117:  90  notearg
+01118:  90  this
+01119:  90  getprop "m_step"
+01124:  90  notearg
+01125:  90  this
+01126:  90  getprop "m_subStep"
+01131:  90  notearg
+01132:  90  this
+01133:  90  getprop "m_vipStep"
+01138:  90  notearg
+01139:  90  call 3
+01142:  90  setprop "m_allData"
+01147:  90  pop
+01148:  93  this
+01149:  93  name "cc"
+01154:  93  getprop "TableView"
+01159:  93  dup
+01160:  93  callprop "create"
+01165:  93  swap
+01166:  93  notearg
+01167:  93  this
+01168:  93  notearg
+01169:  93  name "cc"
+01174:  93  dup
+01175:  93  callprop "size"
+01180:  93  swap
+01181:  93  notearg
+01182:  93  uint16 560
+01185:  93  notearg
+01186:  93  uint16 290
+01189:  93  notearg
+01190:  93  call 2
+01193:  93  notearg
+01194:  93  call 2
+01197:  93  setprop "m_tableView"
+01202:  93  pop
+01203:  94  this
+01204:  94  getprop "m_tableView"
+01209:  94  dup
+01210:  94  callprop "setDirection"
+01215:  94  swap
+01216:  94  notearg
+01217:  94  name "cc"
+01222:  94  getprop "SCROLLVIEW_DIRECTION_VERTICAL"
+01227:  94  notearg
+01228:  94  call 1
+01231:  94  pop
+01232:  95  this
+01233:  95  getprop "m_tableView"
+01238:  95  dup
+01239:  95  callprop "setPosition"
+01244:  95  swap
+01245:  95  notearg
+01246:  95  name "cc"
+01251:  95  dup
+01252:  95  callprop "p"
+01257:  95  swap
+01258:  95  notearg
+01259:  95  zero
+01260:  95  notearg
+01261:  95  int8 20
+01263:  95  notearg
+01264:  95  call 2
+01267:  95  notearg
+01268:  95  call 1
+01271:  95  pop
+01272:  96  this
+01273:  96  getprop "m_tableView"
+01278:  96  dup
+01279:  96  callprop "setDelegate"
+01284:  96  swap
+01285:  96  notearg
+01286:  96  this
+01287:  96  notearg
+01288:  96  call 1
+01291:  96  pop
+01292:  97  this
+01293:  97  getprop "m_tableView"
+01298:  97  dup
+01299:  97  callprop "setVerticalFillOrder"
+01304:  97  swap
+01305:  97  notearg
+01306:  97  name "cc"
+01311:  97  getprop "TABLEVIEW_FILL_TOPDOWN"
+01316:  97  notearg
+01317:  97  call 1
+01320:  97  pop
+01321:  98  this
+01322:  98  getprop "m_ccbNode"
+01327:  98  dup
+01328:  98  callprop "addChild"
+01333:  98  swap
+01334:  98  notearg
+01335:  98  this
+01336:  98  getprop "m_tableView"
+01341:  98  notearg
+01342:  98  call 1
+01345:  98  pop
+01346:  99  this
+01347:  99  getprop "m_tableView"
+01352:  99  dup
+01353:  99  callprop "reloadData"
+01358:  99  swap
+01359:  99  notearg
+01360:  99  call 0
+01363:  99  pop
+01364: 103  true
+01365: 103  return
+01366: 103  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:21 ---
+;; function object[2] getAllDate
+;; function metadata object[2] nargs=3 bindings=12
+;; arg[0] step
+;; arg[1] subStep
+;; arg[2] vipStep
+;; local[0] magicalId
+;; local[1] relStep
+;; local[2] _elite_list
+;; local[3] i
+;; local[4] numStr
+;; local[5] StepStr
+;; local[6] j
+;; local[7] _point_obj
+;; local[8] index
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:105 ---
+loc   line  op
+----- ----  --
+main:
+00000: 107  this
+00001: 107  getprop "m_MiracleWeaponInfor"
+00006: 107  dup
+00007: 107  callprop "getMagicalId"
+00012: 107  swap
+00013: 107  notearg
+00014: 107  call 0
+00017: 107  setlocal 0
+00020: 107  pop
+00021: 108  getarg 0
+00024: 108  int8 10
+00026: 108  mul
+00027: 108  getarg 1
+00030: 108  add
+00031: 108  setlocal 1
+00034: 108  pop
+00035: 112  newarray 0
+00039: 112  endinit
+00040: 112  setlocal 2
+00043: 112  pop
+00044: 113  one
+00045: 113  setlocal 3
+00048: 113  pop
+00049: 113  goto 529 (+480)
+00054: 115  loophead
+00055: 115  name "xs"
+00060: 115  getprop "Tools"
+00065: 115  getprop "String"
+00070: 115  dup
+00071: 115  callprop "convNumberString"
+00076: 115  swap
+00077: 115  notearg
+00078: 115  getlocal 3
+00081: 115  notearg
+00082: 115  call 1
+00085: 115  setlocal 4
+00088: 115  pop
+00089: 116  name "xs"
+00094: 116  getprop "Tools"
+00099: 116  getprop "String"
+00104: 116  dup
+00105: 116  callprop "createStringWithArgsArray"
+00110: 116  swap
+00111: 116  notearg
+00112: 116  string "MiracleWeaponInfor_2"
+00117: 116  notearg
+00118: 116  newarray 1
+00122: 116  getlocal 4
+00125: 116  initelem_array 0
+00129: 116  endinit
+00130: 116  notearg
+00131: 116  call 2
+00134: 116  setlocal 5
+00137: 116  pop
+00138: 117  getlocal 2
+00141: 117  dup
+00142: 117  callprop "push"
+00147: 117  swap
+00148: 117  notearg
+00149: 117  newinit 1
+00154: 118  getlocal 5
+00157: 118  initprop "_data"
+00162: 119  true
+00163: 119  initprop "_bool"
+00168: 119  endinit
+00169: 119  notearg
+00170: 119  call 1
+00173: 119  pop
+00174: 121  one
+00175: 121  setlocal 6
+00178: 121  pop
+00179: 121  goto 346 (+167)
+00184: 122  loophead
+00185: 122  name "xs"
+00190: 122  getprop "Models"
+00195: 122  getprop "MagicalEquPoint"
+00200: 122  dup
+00201: 122  callprop "createWithJson"
+00206: 122  swap
+00207: 122  notearg
+00208: 122  newinit 1
+00213: 123  true
+00214: 123  initprop "is_normal"
+00219: 124  getlocal 3
+00222: 124  initprop "step"
+00227: 125  getlocal 6
+00230: 125  initprop "sub_step"
+00235: 126  getlocal 0
+00238: 126  initprop "magical_id"
+00243: 126  endinit
+00244: 126  notearg
+00245: 126  call 1
+00248: 126  setlocal 7
+00251: 126  pop
+00252: 128  getlocal 3
+00255: 128  int8 10
+00257: 128  mul
+00258: 128  getlocal 6
+00261: 128  add
+00262: 128  setlocal 8
+00265: 128  pop
+00266: 130  getlocal 8
+00269: 130  getlocal 1
+00272: 130  le
+00273: 130  ifeq 295 (+22)
+00278: 131  getlocal 7
+00281: 131  dup
+00282: 131  callprop "setLight"
+00287: 131  swap
+00288: 131  notearg
+00289: 131  true
+00290: 131  notearg
+00291: 131  call 1
+00294: 131  pop
+00295: 133  getlocal 2
+00298: 133  dup
+00299: 133  callprop "push"
+00304: 133  swap
+00305: 133  notearg
+00306: 133  newinit 1
+00311: 134  getlocal 7
+00314: 134  initprop "_data"
+00319: 135  false
+00320: 135  initprop "_bool"
+00325: 135  endinit
+00326: 135  notearg
+00327: 135  call 1
+00330: 135  pop
+00331: 121  localinc 11
+00334: 121  getlocal 6
+00337: 121  pos
+00338: 121  dup
+00339: 121  one
+00340: 121  add
+00341: 121  setlocal 6
+00344: 121  pop
+00345: 121  pop
+00346: 121  loopentry
+00347: 121  getlocal 6
+00350: 121  int8 10
+00352: 121  le
+00353: 121  ifne 184 (-169)
+00358: 139  name "xs"
+00363: 139  getprop "Models"
+00368: 139  getprop "MagicalEquPoint"
+00373: 139  dup
+00374: 139  callprop "createWithJson"
+00379: 139  swap
+00380: 139  notearg
+00381: 139  newinit 1
+00386: 140  false
+00387: 140  initprop "is_normal"
+00392: 141  getlocal 3
+00395: 141  initprop "step"
+00400: 142  one
+00401: 142  initprop "sub_step"
+00406: 143  getlocal 0
+00409: 143  initprop "magical_id"
+00414: 143  endinit
+00415: 143  notearg
+00416: 143  call 1
+00419: 143  setlocal 7
+00422: 143  pop
+00423: 145  getlocal 3
+00426: 145  getarg 2
+00429: 145  le
+00430: 145  ifeq 452 (+22)
+00435: 146  getlocal 7
+00438: 146  dup
+00439: 146  callprop "setLight"
+00444: 146  swap
+00445: 146  notearg
+00446: 146  true
+00447: 146  notearg
+00448: 146  call 1
+00451: 146  pop
+00452: 149  this
+00453: 149  getprop "m_userVipGrade"
+00458: 149  getlocal 7
+00461: 149  dup
+00462: 149  callprop "getVipGrade"
+00467: 149  swap
+00468: 149  notearg
+00469: 149  call 0
+00472: 149  ge
+00473: 149  ifeq 514 (+41)
+00478: 150  getlocal 2
+00481: 150  dup
+00482: 150  callprop "push"
+00487: 150  swap
+00488: 150  notearg
+00489: 150  newinit 1
+00494: 151  getlocal 7
+00497: 151  initprop "_data"
+00502: 152  false
+00503: 152  initprop "_bool"
+00508: 152  endinit
+00509: 152  notearg
+00510: 152  call 1
+00513: 152  pop
+00514: 113  localinc 11
+00517: 113  getlocal 3
+00520: 113  pos
+00521: 113  dup
+00522: 113  one
+00523: 113  add
+00524: 113  setlocal 3
+00527: 113  pop
+00528: 113  pop
+00529: 113  loopentry
+00530: 113  getlocal 3
+00533: 113  int8 10
+00535: 113  le
+00536: 113  ifne 54 (-482)
+00541: 158  getlocal 2
+00544: 158  return
+00545: 158  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:105 ---
+;; function object[3] initStepAndSubStep
+;; function metadata object[3] nargs=2 bindings=5
+;; arg[0] step
+;; arg[1] substep
+;; local[0] array
+;; local[1] str
+;; local[2] grade
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:160 ---
+loc   line  op
+----- ----  --
+main:
+00000: 162  newarray 0
+00004: 162  endinit
+00005: 162  setlocal 0
+00008: 162  pop
+00009: 163  getlocal 0
+00012: 163  zero
+00013: 163  name "xs"
+00018: 163  getprop "Tools"
+00023: 163  getprop "String"
+00028: 163  dup
+00029: 163  callprop "convNumberString"
+00034: 163  swap
+00035: 163  notearg
+00036: 163  getarg 0
+00039: 163  notearg
+00040: 163  call 1
+00043: 163  setelem
+00044: 163  pop
+00045: 164  getlocal 0
+00048: 164  one
+00049: 164  name "xs"
+00054: 164  getprop "Tools"
+00059: 164  getprop "String"
+00064: 164  dup
+00065: 164  callprop "convNumberString"
+00070: 164  swap
+00071: 164  notearg
+00072: 164  getarg 1
+00075: 164  notearg
+00076: 164  call 1
+00079: 164  setelem
+00080: 164  pop
+00081: 166  name "xs"
+00086: 166  getprop "Tools"
+00091: 166  getprop "String"
+00096: 166  dup
+00097: 166  callprop "createString"
+00102: 166  swap
+00103: 166  notearg
+00104: 166  string "MiracleWeapon_chongDuan"
+00109: 166  notearg
+00110: 166  call 1
+00113: 166  setlocal 1
+00116: 166  pop
+00117: 167  name "xs"
+00122: 167  getprop "Tools"
+00127: 167  getprop "String"
+00132: 167  dup
+00133: 167  callprop "replaceStringByArray"
+00138: 167  swap
+00139: 167  notearg
+00140: 167  getlocal 1
+00143: 167  notearg
+00144: 167  getlocal 0
+00147: 167  notearg
+00148: 167  call 2
+00151: 167  setlocal 2
+00154: 167  pop
+00155: 169  this
+00156: 169  getprop "m_grade"
+00161: 169  dup
+00162: 169  callprop "setString"
+00167: 169  swap
+00168: 169  notearg
+00169: 169  getlocal 2
+00172: 169  notearg
+00173: 169  call 1
+00176: 169  pop
+00177: 169  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:160 ---
+;; function object[4] onBtnCloseClicked
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:171 ---
+loc   line  op
+----- ----  --
+main:
+00000: 172  name "xs"
+00005: 172  getprop "Views"
+00010: 172  getprop "Mgr"
+00015: 172  dup
+00016: 172  callprop "hideDialog"
+00021: 172  swap
+00022: 172  notearg
+00023: 172  call 0
+00026: 172  pop
+00027: 172  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:171 ---
+;; function object[5] scrollViewDidScroll
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:174 ---
+loc   line  op
+----- ----  --
+main:
+00000: 174  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:174 ---
+;; function object[6] scrollViewDidZoom
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:177 ---
+loc   line  op
+----- ----  --
+main:
+00000: 177  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:177 ---
+;; function object[7] tableCellTouched
+;; function metadata object[7] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:180 ---
+loc   line  op
+----- ----  --
+main:
+00000: 180  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:180 ---
+;; function object[8] tableCellSizeForIndex
+;; function metadata object[8] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:183 ---
+loc   line  op
+----- ----  --
+main:
+00000: 184  name "cc"
+00005: 184  dup
+00006: 184  callprop "size"
+00011: 184  swap
+00012: 184  notearg
+00013: 184  uint16 560
+00016: 184  notearg
+00017: 184  int8 40
+00019: 184  notearg
+00020: 184  call 2
+00023: 184  return
+00024: 184  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:183 ---
+;; function object[9] tableCellAtIndex
+;; function metadata object[9] nargs=2 bindings=3
+;; arg[0] table
+;; arg[1] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:187 ---
+loc   line  op
+----- ----  --
+main:
+00000: 189  getarg 0
+00003: 189  dup
+00004: 189  callprop "dequeueCell"
+00009: 189  swap
+00010: 189  notearg
+00011: 189  call 0
+00014: 189  setlocal 0
+00017: 189  pop
+00018: 190  getlocal 0
+00021: 190  not
+00022: 190  ifeq 57 (+35)
+00027: 191  name "xs"
+00032: 191  getprop "Views"
+00037: 191  getprop "MiracleWeaponInforTableViewCell"
+00042: 191  dup
+00043: 191  callprop "create"
+00048: 191  swap
+00049: 191  notearg
+00050: 191  call 0
+00053: 191  setlocal 0
+00056: 191  pop
+00057: 195  getlocal 0
+00060: 195  dup
+00061: 195  callprop "update"
+00066: 195  swap
+00067: 195  notearg
+00068: 195  this
+00069: 195  getprop "m_allData"
+00074: 195  getarg 1
+00077: 195  getelem
+00078: 195  notearg
+00079: 195  call 1
+00082: 195  pop
+00083: 197  getlocal 0
+00086: 197  return
+00087: 197  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:187 ---
+;; function object[10] numberOfCellsInTableView
+;; function metadata object[10] nargs=1 bindings=1
+;; arg[0] table
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:199 ---
+loc   line  op
+----- ----  --
+main:
+00000: 201  this
+00001: 201  getprop "m_allData"
+00006: 201  length "length"
+00011: 201  return
+00012: 201  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:199 ---
+;; function object[11] onEnter
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:203 ---
+loc   line  op
+----- ----  --
+main:
+00000: 204  this
+00001: 204  dup
+00002: 204  callprop "_super"
+00007: 204  swap
+00008: 204  notearg
+00009: 204  call 0
+00012: 204  pop
+00013: 204  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:203 ---
+;; function object[12] onExit
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:206 ---
+loc   line  op
+----- ----  --
+main:
+00000: 207  this
+00001: 207  dup
+00002: 207  callprop "_super"
+00007: 207  swap
+00008: 207  notearg
+00009: 207  call 0
+00012: 207  pop
+00013: 207  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:206 ---
+;; function object[13] setBaseTouchPriority
+;; function metadata object[13] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:209 ---
+loc   line  op
+----- ----  --
+main:
+00000: 210  this
+00001: 210  getarg 0
+00004: 210  int8 10
+00006: 210  sub
+00007: 210  setprop "m_baseTouchPriority"
+00012: 210  pop
+00013: 211  this
+00014: 211  dup
+00015: 211  callprop "setTouchPriority"
+00020: 211  swap
+00021: 211  notearg
+00022: 211  this
+00023: 211  getprop "m_baseTouchPriority"
+00028: 211  one
+00029: 211  sub
+00030: 211  notearg
+00031: 211  call 1
+00034: 211  pop
+00035: 212  this
+00036: 212  getprop "m_Close"
+00041: 212  dup
+00042: 212  callprop "setTouchPriority"
+00047: 212  swap
+00048: 212  notearg
+00049: 212  this
+00050: 212  getprop "m_baseTouchPriority"
+00055: 212  one
+00056: 212  sub
+00057: 212  notearg
+00058: 212  call 1
+00061: 212  pop
+00062: 213  this
+00063: 213  getprop "m_tableView"
+00068: 213  dup
+00069: 213  callprop "setTouchPriority"
+00074: 213  swap
+00075: 213  notearg
+00076: 213  this
+00077: 213  getprop "m_baseTouchPriority"
+00082: 213  one
+00083: 213  sub
+00084: 213  notearg
+00085: 213  call 1
+00088: 213  pop
+00089: 213  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:209 ---
+;; function object[14] create
+;; function metadata object[14] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:217 ---
+loc   line  op
+----- ----  --
+main:
+00000: 218  name "xs"
+00005: 218  getprop "Views"
+00010: 218  getprop "MiracleWeaponInforDialog"
+00015: 218  undefined
+00016: 218  notearg
+00017: 218  new 0
+00020: 218  setlocal 0
+00023: 218  pop
+00024: 219  getlocal 0
+00027: 219  and 51 (+24)
+00032: 219  pop
+00033: 219  getlocal 0
+00036: 219  dup
+00037: 219  callprop "init"
+00042: 219  swap
+00043: 219  notearg
+00044: 219  getarg 0
+00047: 219  notearg
+00048: 219  call 1
+00051: 219  ifeq 60 (+9)
+00056: 220  getlocal 0
+00059: 220  return
+00060: 222  name "xs"
+00065: 222  dup
+00066: 222  callprop "assert"
+00071: 222  swap
+00072: 222  notearg
+00073: 222  false
+00074: 222  notearg
+00075: 222  string "xs.Views.MiracleWeaponInforDialog.create err"
+00080: 222  notearg
+00081: 222  call 2
+00084: 222  pop
+00085: 223  null
+00086: 223  return
+00087: 223  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:217 ---
+;; function object[15] load
+;; function metadata object[15] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:225 ---
+loc   line  op
+----- ----  --
+main:
+00000: 226  name "xs"
+00005: 226  getprop "Factorys"
+00010: 226  getprop "Sprite"
+00015: 226  dup
+00016: 226  callprop "load"
+00021: 226  swap
+00022: 226  notearg
+00023: 226  string "MiracleWeaponsScene"
+00028: 226  notearg
+00029: 226  call 1
+00032: 226  pop
+00033: 226  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:225 ---
+;; function object[16] unload
+;; function metadata object[16] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:228 ---
+loc   line  op
+----- ----  --
+main:
+00000: 229  name "xs"
+00005: 229  getprop "Factorys"
+00010: 229  getprop "Sprite"
+00015: 229  dup
+00016: 229  callprop "unload"
+00021: 229  swap
+00022: 229  notearg
+00023: 229  string "MiracleWeaponsScene"
+00028: 229  notearg
+00029: 229  call 1
+00032: 229  pop
+00033: 229  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:228 ---
+;; function object[17] ctor
+;; function metadata object[17] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:243 ---
+loc   line  op
+----- ----  --
+main:
+00000: 244  this
+00001: 244  dup
+00002: 244  callprop "_super"
+00007: 244  swap
+00008: 244  notearg
+00009: 244  call 0
+00012: 244  pop
+00013: 245  name "cc"
+00018: 245  dup
+00019: 245  callprop "associateWithNative"
+00024: 245  swap
+00025: 245  notearg
+00026: 245  this
+00027: 245  notearg
+00028: 245  name "cc"
+00033: 245  getprop "TableViewCell"
+00038: 245  notearg
+00039: 245  call 2
+00042: 245  pop
+00043: 245  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:243 ---
+;; function object[18] init
+;; function metadata object[18] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:247 ---
+loc   line  op
+----- ----  --
+main:
+00000: 248  this
+00001: 248  dup
+00002: 248  callprop "_super"
+00007: 248  swap
+00008: 248  notearg
+00009: 248  call 0
+00012: 248  not
+00013: 248  ifeq 20 (+7)
+00018: 249  false
+00019: 249  return
+00020: 252  this
+00021: 252  null
+00022: 252  setprop "m_LightPointPic"
+00027: 252  pop
+00028: 253  this
+00029: 253  null
+00030: 253  setprop "m_DarkPointPic"
+00035: 253  pop
+00036: 254  this
+00037: 254  null
+00038: 254  setprop "m_WeaponIntro"
+00043: 254  pop
+00044: 256  this
+00045: 256  name "xs"
+00050: 256  getprop "Factorys"
+00055: 256  getprop "Sprite"
+00060: 256  dup
+00061: 256  callprop "create"
+00066: 256  swap
+00067: 256  notearg
+00068: 256  string "MiracleWeapons_liangguang"
+00073: 256  notearg
+00074: 256  string "MiracleWeaponsScene"
+00079: 256  notearg
+00080: 256  call 2
+00083: 256  setprop "m_LightPointPic"
+00088: 256  pop
+00089: 257  this
+00090: 257  getprop "m_LightPointPic"
+00095: 257  dup
+00096: 257  callprop "setPosition"
+00101: 257  swap
+00102: 257  notearg
+00103: 257  name "cc"
+00108: 257  dup
+00109: 257  callprop "p"
+00114: 257  swap
+00115: 257  notearg
+00116: 257  int8 50
+00118: 257  notearg
+00119: 257  int8 20
+00121: 257  notearg
+00122: 257  call 2
+00125: 257  notearg
+00126: 257  call 1
+00129: 257  pop
+00130: 258  this
+00131: 258  dup
+00132: 258  callprop "addChild"
+00137: 258  swap
+00138: 258  notearg
+00139: 258  this
+00140: 258  getprop "m_LightPointPic"
+00145: 258  notearg
+00146: 258  call 1
+00149: 258  pop
+00150: 260  this
+00151: 260  name "xs"
+00156: 260  getprop "Factorys"
+00161: 260  getprop "Sprite"
+00166: 260  dup
+00167: 260  callprop "create"
+00172: 260  swap
+00173: 260  notearg
+00174: 260  string "MiracleWeapons_andian"
+00179: 260  notearg
+00180: 260  string "MiracleWeaponsScene"
+00185: 260  notearg
+00186: 260  call 2
+00189: 260  setprop "m_DarkPointPic"
+00194: 260  pop
+00195: 261  this
+00196: 261  getprop "m_DarkPointPic"
+00201: 261  dup
+00202: 261  callprop "setPosition"
+00207: 261  swap
+00208: 261  notearg
+00209: 261  name "cc"
+00214: 261  dup
+00215: 261  callprop "p"
+00220: 261  swap
+00221: 261  notearg
+00222: 261  int8 50
+00224: 261  notearg
+00225: 261  int8 20
+00227: 261  notearg
+00228: 261  call 2
+00231: 261  notearg
+00232: 261  call 1
+00235: 261  pop
+00236: 262  this
+00237: 262  dup
+00238: 262  callprop "addChild"
+00243: 262  swap
+00244: 262  notearg
+00245: 262  this
+00246: 262  getprop "m_DarkPointPic"
+00251: 262  notearg
+00252: 262  call 1
+00255: 262  pop
+00256: 266  this
+00257: 266  name "xs"
+00262: 266  getprop "Factorys"
+00267: 266  getprop "Label"
+00272: 266  dup
+00273: 266  callprop "createByStyleId"
+00278: 266  swap
+00279: 266  notearg
+00280: 266  string "LS_liaotian_5"
+00285: 266  notearg
+00286: 266  call 1
+00289: 266  setprop "m_WeaponIntro"
+00294: 266  pop
+00295: 267  this
+00296: 267  getprop "m_WeaponIntro"
+00301: 267  dup
+00302: 267  callprop "setAnchorPoint"
+00307: 267  swap
+00308: 267  notearg
+00309: 267  name "cc"
+00314: 267  dup
+00315: 267  callprop "p"
+00320: 267  swap
+00321: 267  notearg
+00322: 267  zero
+00323: 267  notearg
+00324: 267  double 0.5
+00329: 267  notearg
+00330: 267  call 2
+00333: 267  notearg
+00334: 267  call 1
+00337: 267  pop
+00338: 268  name "xs"
+00343: 268  getprop "Utils"
+00348: 268  getprop "Node"
+00353: 268  dup
+00354: 268  callprop "attachNodes"
+00359: 268  swap
+00360: 268  notearg
+00361: 268  this
+00362: 268  notearg
+00363: 268  this
+00364: 268  getprop "m_WeaponIntro"
+00369: 268  notearg
+00370: 268  newinit 1
+00375: 269  string "lb"
+00380: 269  initprop "desc"
+00385: 270  true
+00386: 270  initprop "sc"
+00391: 271  newinit 1
+00396: 272  int8 60
+00398: 272  initprop "x"
+00403: 273  int8 20
+00405: 273  initprop "y"
+00410: 273  endinit
+00411: 273  initprop "offset"
+00416: 273  endinit
+00417: 273  notearg
+00418: 273  call 3
+00421: 273  pop
+00422: 277  true
+00423: 277  return
+00424: 277  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:247 ---
+;; function object[19] createWeaponIntroByType
+;; function metadata object[19] nargs=2 bindings=7
+;; arg[0] type
+;; arg[1] data
+;; local[0] str
+;; local[1] numStr
+;; local[2] subStepStr
+;; local[3] array
+;; local[4] yuanfenArray
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:279 ---
+loc   line  op
+----- ----  --
+main:
+00000: 281  null
+00001: 281  setlocal 0
+00004: 281  pop
+00005: 282  getarg 0
+00008: 282  tableswitch defaultOffset 373 low 1 high 8
+	1: 45
+	2: 86
+	3: 127
+	4: 168
+	5: 209
+	6: 250
+	7: 291
+	8: 332
+00053: 285  name "xs"
+00058: 285  getprop "Tools"
+00063: 285  getprop "String"
+00068: 285  dup
+00069: 285  callprop "createString"
+00074: 285  swap
+00075: 285  notearg
+00076: 285  string "MiracleWeapon_gongjia"
+00081: 285  notearg
+00082: 285  call 1
+00085: 285  setlocal 0
+00088: 285  pop
+00089: 286  goto 409 (+320)
+00094: 289  name "xs"
+00099: 289  getprop "Tools"
+00104: 289  getprop "String"
+00109: 289  dup
+00110: 289  callprop "createString"
+00115: 289  swap
+00116: 289  notearg
+00117: 289  string "MiracleWeapon_fangjia"
+00122: 289  notearg
+00123: 289  call 1
+00126: 289  setlocal 0
+00129: 289  pop
+00130: 290  goto 409 (+279)
+00135: 293  name "xs"
+00140: 293  getprop "Tools"
+00145: 293  getprop "String"
+00150: 293  dup
+00151: 293  callprop "createString"
+00156: 293  swap
+00157: 293  notearg
+00158: 293  string "MiracleWeapon_xuejia"
+00163: 293  notearg
+00164: 293  call 1
+00167: 293  setlocal 0
+00170: 293  pop
+00171: 294  goto 409 (+238)
+00176: 297  name "xs"
+00181: 297  getprop "Tools"
+00186: 297  getprop "String"
+00191: 297  dup
+00192: 297  callprop "createString"
+00197: 297  swap
+00198: 297  notearg
+00199: 297  string "MiracleWeapon_zhijia"
+00204: 297  notearg
+00205: 297  call 1
+00208: 297  setlocal 0
+00211: 297  pop
+00212: 298  goto 409 (+197)
+00217: 301  name "xs"
+00222: 301  getprop "Tools"
+00227: 301  getprop "String"
+00232: 301  dup
+00233: 301  callprop "createString"
+00238: 301  swap
+00239: 301  notearg
+00240: 301  string "MiracleWeapon_jinengjia"
+00245: 301  notearg
+00246: 301  call 1
+00249: 301  setlocal 0
+00252: 301  pop
+00253: 302  goto 409 (+156)
+00258: 305  name "xs"
+00263: 305  getprop "Tools"
+00268: 305  getprop "String"
+00273: 305  dup
+00274: 305  callprop "createString"
+00279: 305  swap
+00280: 305  notearg
+00281: 305  string "MiracleWeapon_jinengjinjie"
+00286: 305  notearg
+00287: 305  call 1
+00290: 305  setlocal 0
+00293: 305  pop
+00294: 306  goto 409 (+115)
+00299: 309  name "xs"
+00304: 309  getprop "Tools"
+00309: 309  getprop "String"
+00314: 309  dup
+00315: 309  callprop "createString"
+00320: 309  swap
+00321: 309  notearg
+00322: 309  string "MiracleWeapon_yuanfenType"
+00327: 309  notearg
+00328: 309  call 1
+00331: 309  setlocal 0
+00334: 309  pop
+00335: 310  goto 409 (+74)
+00340: 313  name "xs"
+00345: 313  getprop "Tools"
+00350: 313  getprop "String"
+00355: 313  dup
+00356: 313  callprop "createString"
+00361: 313  swap
+00362: 313  notearg
+00363: 313  string "MiracleWeapon_tianfudian"
+00368: 313  notearg
+00369: 313  call 1
+00372: 313  setlocal 0
+00375: 313  pop
+00376: 314  goto 409 (+33)
+00381: 317  name "xs"
+00386: 317  dup
+00387: 317  callprop "warn"
+00392: 317  swap
+00393: 317  notearg
+00394: 317  string "createWeaponIntroByType type is erro"
+00399: 317  notearg
+00400: 317  call 1
+00403: 317  pop
+00404: 318  goto 409 (+5)
+00409: 320  null
+00410: 320  setlocal 1
+00413: 320  pop
+00414: 321  getarg 1
+00417: 321  dup
+00418: 321  callprop "getIsNormal"
+00423: 321  swap
+00424: 321  notearg
+00425: 321  call 0
+00428: 321  ifeq 483 (+55)
+00433: 322  name "xs"
+00438: 322  getprop "Tools"
+00443: 322  getprop "String"
+00448: 322  dup
+00449: 322  callprop "convNumberString"
+00454: 322  swap
+00455: 322  notearg
+00456: 322  getarg 1
+00459: 322  dup
+00460: 322  callprop "getEffectSubStep"
+00465: 322  swap
+00466: 322  notearg
+00467: 322  call 0
+00470: 322  notearg
+00471: 322  call 1
+00474: 322  setlocal 1
+00477: 322  pop
+00478: 322  goto 516 (+38)
+00483: 324  name "xs"
+00488: 324  getprop "Tools"
+00493: 324  getprop "String"
+00498: 324  dup
+00499: 324  callprop "convNumberString"
+00504: 324  swap
+00505: 324  notearg
+00506: 324  int8 11
+00508: 324  notearg
+00509: 324  call 1
+00512: 324  setlocal 1
+00515: 324  pop
+00516: 326  name "xs"
+00521: 326  getprop "Tools"
+00526: 326  getprop "String"
+00531: 326  dup
+00532: 326  callprop "createStringWithArgsArray"
+00537: 326  swap
+00538: 326  notearg
+00539: 326  string "MiracleWeaponInfor_1"
+00544: 326  notearg
+00545: 326  newarray 1
+00549: 326  getlocal 1
+00552: 326  initelem_array 0
+00556: 326  endinit
+00557: 326  notearg
+00558: 326  call 2
+00561: 326  setlocal 2
+00564: 326  pop
+00565: 328  getarg 0
+00568: 328  int8 7
+00570: 328  ne
+00571: 328  ifeq 667 (+96)
+00576: 330  newarray 0
+00580: 330  endinit
+00581: 330  setlocal 3
+00584: 330  pop
+00585: 331  getlocal 3
+00588: 331  zero
+00589: 331  getarg 1
+00592: 331  dup
+00593: 331  callprop "getEffectVal"
+00598: 331  swap
+00599: 331  notearg
+00600: 331  call 0
+00603: 331  setelem
+00604: 331  pop
+00605: 333  this
+00606: 333  getprop "m_WeaponIntro"
+00611: 333  dup
+00612: 333  callprop "setString"
+00617: 333  swap
+00618: 333  notearg
+00619: 333  getlocal 2
+00622: 333  name "xs"
+00627: 333  getprop "Tools"
+00632: 333  getprop "String"
+00637: 333  dup
+00638: 333  callprop "replaceStringByArray"
+00643: 333  swap
+00644: 333  notearg
+00645: 333  getlocal 0
+00648: 333  notearg
+00649: 333  getlocal 3
+00652: 333  notearg
+00653: 333  call 2
+00656: 333  add
+00657: 333  notearg
+00658: 333  call 1
+00661: 333  pop
+00662: 333  goto 849 (+187)
+00667: 337  getarg 1
+00670: 337  dup
+00671: 337  callprop "getEffectVal"
+00676: 337  swap
+00677: 337  notearg
+00678: 337  call 0
+00681: 337  setlocal 4
+00684: 337  pop
+00685: 339  newarray 0
+00689: 339  endinit
+00690: 339  setlocal 3
+00693: 339  pop
+00694: 340  getlocal 3
+00697: 340  zero
+00698: 340  name "xs"
+00703: 340  getprop "Models"
+00708: 340  getprop "Fate"
+00713: 340  dup
+00714: 340  callprop "createWithBase"
+00719: 340  swap
+00720: 340  notearg
+00721: 340  getlocal 4
+00724: 340  zero
+00725: 340  getelem
+00726: 340  notearg
+00727: 340  call 1
+00730: 340  dup
+00731: 340  callprop "getNameString"
+00736: 340  swap
+00737: 340  notearg
+00738: 340  call 0
+00741: 340  setelem
+00742: 340  pop
+00743: 341  getlocal 3
+00746: 341  one
+00747: 341  name "xs"
+00752: 341  getprop "Models"
+00757: 341  getprop "Fate"
+00762: 341  dup
+00763: 341  callprop "createWithBase"
+00768: 341  swap
+00769: 341  notearg
+00770: 341  getlocal 4
+00773: 341  one
+00774: 341  getelem
+00775: 341  notearg
+00776: 341  call 1
+00779: 341  dup
+00780: 341  callprop "getNameString"
+00785: 341  swap
+00786: 341  notearg
+00787: 341  call 0
+00790: 341  setelem
+00791: 341  pop
+00792: 343  this
+00793: 343  getprop "m_WeaponIntro"
+00798: 343  dup
+00799: 343  callprop "setString"
+00804: 343  swap
+00805: 343  notearg
+00806: 343  getlocal 2
+00809: 343  name "xs"
+00814: 343  getprop "Tools"
+00819: 343  getprop "String"
+00824: 343  dup
+00825: 343  callprop "replaceStringByArray"
+00830: 343  swap
+00831: 343  notearg
+00832: 343  getlocal 0
+00835: 343  notearg
+00836: 343  getlocal 3
+00839: 343  notearg
+00840: 343  call 2
+00843: 343  add
+00844: 343  notearg
+00845: 343  call 1
+00848: 343  pop
+00849: 345  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:279 ---
+;; function object[20] onEnter
+;; function metadata object[20] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:347 ---
+loc   line  op
+----- ----  --
+main:
+00000: 348  this
+00001: 348  dup
+00002: 348  callprop "_super"
+00007: 348  swap
+00008: 348  notearg
+00009: 348  call 0
+00012: 348  pop
+00013: 348  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:347 ---
+;; function object[21] onExit
+;; function metadata object[21] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:350 ---
+loc   line  op
+----- ----  --
+main:
+00000: 351  this
+00001: 351  dup
+00002: 351  callprop "_super"
+00007: 351  swap
+00008: 351  notearg
+00009: 351  call 0
+00012: 351  pop
+00013: 351  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:350 ---
+;; function object[22] setBaseTouchPriority
+;; function metadata object[22] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:353 ---
+loc   line  op
+----- ----  --
+main:
+00000: 354  this
+00001: 354  getarg 0
+00004: 354  setprop "m_baseTouchPriority"
+00009: 354  pop
+00010: 354  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:353 ---
+;; function object[23] update
+;; function metadata object[23] nargs=1 bindings=3
+;; arg[0] param
+;; local[0] isLight
+;; local[1] type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:356 ---
+loc   line  op
+----- ----  --
+main:
+00000: 357  this
+00001: 357  getarg 0
+00004: 357  getprop "_data"
+00009: 357  setprop "m_data"
+00014: 357  pop
+00015: 358  getarg 0
+00018: 358  getprop "_bool"
+00023: 358  ifeq 356 (+333)
+00028: 360  this
+00029: 360  getprop "m_WeaponSubIntro"
+00034: 360  ifeq 91 (+57)
+00039: 361  this
+00040: 361  getprop "m_WeaponSubIntro"
+00045: 361  dup
+00046: 361  callprop "setVisible"
+00051: 361  swap
+00052: 361  notearg
+00053: 361  true
+00054: 361  notearg
+00055: 361  call 1
+00058: 361  pop
+00059: 362  this
+00060: 362  getprop "m_WeaponSubIntro"
+00065: 362  dup
+00066: 362  callprop "setString"
+00071: 362  swap
+00072: 362  notearg
+00073: 362  getarg 0
+00076: 362  getprop "_data"
+00081: 362  notearg
+00082: 362  call 1
+00085: 362  pop
+00086: 362  goto 289 (+203)
+00091: 364  this
+00092: 364  name "xs"
+00097: 364  getprop "Factorys"
+00102: 364  getprop "Label"
+00107: 364  dup
+00108: 364  callprop "createByStyleId"
+00113: 364  swap
+00114: 364  notearg
+00115: 364  string "LS_paixun"
+00120: 364  notearg
+00121: 364  call 1
+00124: 364  setprop "m_WeaponSubIntro"
+00129: 364  pop
+00130: 365  this
+00131: 365  getprop "m_WeaponSubIntro"
+00136: 365  dup
+00137: 365  callprop "setAnchorPoint"
+00142: 365  swap
+00143: 365  notearg
+00144: 365  name "cc"
+00149: 365  dup
+00150: 365  callprop "p"
+00155: 365  swap
+00156: 365  notearg
+00157: 365  double 0.5
+00162: 365  notearg
+00163: 365  double 0.5
+00168: 365  notearg
+00169: 365  call 2
+00172: 365  notearg
+00173: 365  call 1
+00176: 365  pop
+00177: 366  this
+00178: 366  getprop "m_WeaponSubIntro"
+00183: 366  dup
+00184: 366  callprop "setString"
+00189: 366  swap
+00190: 366  notearg
+00191: 366  getarg 0
+00194: 366  getprop "_data"
+00199: 366  notearg
+00200: 366  call 1
+00203: 366  pop
+00204: 367  name "xs"
+00209: 367  getprop "Utils"
+00214: 367  getprop "Node"
+00219: 367  dup
+00220: 367  callprop "attachNodes"
+00225: 367  swap
+00226: 367  notearg
+00227: 367  this
+00228: 367  notearg
+00229: 367  this
+00230: 367  getprop "m_WeaponSubIntro"
+00235: 367  notearg
+00236: 367  newinit 1
+00241: 368  string "lb"
+00246: 368  initprop "desc"
+00251: 369  true
+00252: 369  initprop "sc"
+00257: 370  newinit 1
+00262: 371  uint16 280
+00265: 371  initprop "x"
+00270: 372  int8 20
+00272: 372  initprop "y"
+00277: 372  endinit
+00278: 372  initprop "offset"
+00283: 372  endinit
+00284: 372  notearg
+00285: 372  call 3
+00288: 372  pop
+00289: 376  this
+00290: 376  getprop "m_LightPointPic"
+00295: 376  dup
+00296: 376  callprop "setVisible"
+00301: 376  swap
+00302: 376  notearg
+00303: 376  false
+00304: 376  notearg
+00305: 376  call 1
+00308: 376  pop
+00309: 377  this
+00310: 377  getprop "m_DarkPointPic"
+00315: 377  dup
+00316: 377  callprop "setVisible"
+00321: 377  swap
+00322: 377  notearg
+00323: 377  false
+00324: 377  notearg
+00325: 377  call 1
+00328: 377  pop
+00329: 378  this
+00330: 378  getprop "m_WeaponIntro"
+00335: 378  dup
+00336: 378  callprop "setVisible"
+00341: 378  swap
+00342: 378  notearg
+00343: 378  false
+00344: 378  notearg
+00345: 378  call 1
+00348: 378  pop
+00349: 380  undefined
+00350: 380  return
+00351: 380  goto 447 (+96)
+00356: 383  this
+00357: 383  getprop "m_LightPointPic"
+00362: 383  dup
+00363: 383  callprop "setVisible"
+00368: 383  swap
+00369: 383  notearg
+00370: 383  true
+00371: 383  notearg
+00372: 383  call 1
+00375: 383  pop
+00376: 384  this
+00377: 384  getprop "m_DarkPointPic"
+00382: 384  dup
+00383: 384  callprop "setVisible"
+00388: 384  swap
+00389: 384  notearg
+00390: 384  true
+00391: 384  notearg
+00392: 384  call 1
+00395: 384  pop
+00396: 385  this
+00397: 385  getprop "m_WeaponIntro"
+00402: 385  dup
+00403: 385  callprop "setVisible"
+00408: 385  swap
+00409: 385  notearg
+00410: 385  true
+00411: 385  notearg
+00412: 385  call 1
+00415: 385  pop
+00416: 386  this
+00417: 386  getprop "m_WeaponSubIntro"
+00422: 386  ifeq 447 (+25)
+00427: 387  this
+00428: 387  getprop "m_WeaponSubIntro"
+00433: 387  dup
+00434: 387  callprop "setVisible"
+00439: 387  swap
+00440: 387  notearg
+00441: 387  false
+00442: 387  notearg
+00443: 387  call 1
+00446: 387  pop
+00447: 390  this
+00448: 390  getprop "m_data"
+00453: 390  dup
+00454: 390  callprop "isLight"
+00459: 390  swap
+00460: 390  notearg
+00461: 390  call 0
+00464: 390  setlocal 0
+00467: 390  pop
+00468: 393  getlocal 0
+00471: 393  ifeq 501 (+30)
+00476: 394  this
+00477: 394  getprop "m_LightPointPic"
+00482: 394  dup
+00483: 394  callprop "setVisible"
+00488: 394  swap
+00489: 394  notearg
+00490: 394  true
+00491: 394  notearg
+00492: 394  call 1
+00495: 394  pop
+00496: 394  goto 521 (+25)
+00501: 398  this
+00502: 398  getprop "m_LightPointPic"
+00507: 398  dup
+00508: 398  callprop "setVisible"
+00513: 398  swap
+00514: 398  notearg
+00515: 398  false
+00516: 398  notearg
+00517: 398  call 1
+00520: 398  pop
+00521: 403  this
+00522: 403  getprop "m_data"
+00527: 403  dup
+00528: 403  callprop "getEffectType"
+00533: 403  swap
+00534: 403  notearg
+00535: 403  call 0
+00538: 403  setlocal 1
+00541: 403  pop
+00542: 404  this
+00543: 404  dup
+00544: 404  callprop "createWeaponIntroByType"
+00549: 404  swap
+00550: 404  notearg
+00551: 404  callname "Number"
+00556: 404  implicitthis "Number"
+00561: 404  notearg
+00562: 404  getlocal 1
+00565: 404  notearg
+00566: 404  call 1
+00569: 404  notearg
+00570: 404  this
+00571: 404  getprop "m_data"
+00576: 404  notearg
+00577: 404  call 2
+00580: 404  pop
+00581: 404  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:356 ---
+;; function object[24] create
+;; function metadata object[24] nargs=0 bindings=1
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:411 ---
+loc   line  op
+----- ----  --
+main:
+00000: 412  name "xs"
+00005: 412  getprop "Views"
+00010: 412  getprop "MiracleWeaponInforTableViewCell"
+00015: 412  undefined
+00016: 412  notearg
+00017: 412  new 0
+00020: 412  setlocal 0
+00023: 412  pop
+00024: 413  getlocal 0
+00027: 413  and 47 (+20)
+00032: 413  pop
+00033: 413  getlocal 0
+00036: 413  dup
+00037: 413  callprop "init"
+00042: 413  swap
+00043: 413  notearg
+00044: 413  call 0
+00047: 413  ifeq 56 (+9)
+00052: 414  getlocal 0
+00055: 414  return
+00056: 416  null
+00057: 416  return
+00058: 416  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MiracleWeapons/MiracleWeaponInforDialog.js:411 ---

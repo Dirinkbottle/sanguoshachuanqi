@@ -1,0 +1,72 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/Story.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=36 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Story.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Tools"
+00010:   9  name "xs"
+00015:   9  getprop "Tools"
+00020:   9  getprop "Story"
+00025:   9  or 47 (+22)
+00030:   9  pop
+00031:   9  newinit 1
+00036:  12  lambda (function () {
+    [sourceless code]
+})
+00041:  12  initprop "showStoryDialog"
+00046:  12  endinit
+00047:  12  setprop "Story"
+00052:  12  popv
+00053:  21  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Story.js:1 ---
+;; function object[0] showStoryDialog
+;; function metadata object[0] nargs=2 bindings=2
+;; arg[0] storyId
+;; arg[1] funcNext
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Story.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  name "xs"
+00005:  13  getprop "Views"
+00010:  13  getprop "Mgr"
+00015:  13  dup
+00016:  13  callprop "showDialogByName"
+00021:  13  swap
+00022:  13  notearg
+00023:  14  string "Story"
+00028:  14  notearg
+00029:  15  newinit 1
+00034:  16  name "xs"
+00039:  16  getprop "Models"
+00044:  16  getprop "FightRoundList"
+00049:  16  dup
+00050:  16  callprop "createWithStoryItems"
+00055:  16  swap
+00056:  16  notearg
+00057:  16  name "xs"
+00062:  16  getprop "Cfg"
+00067:  16  getprop "System"
+00072:  16  getprop "sgs_dungeon_plot_dialog"
+00077:  16  getarg 0
+00080:  16  getelem
+00081:  16  notearg
+00082:  16  call 1
+00085:  16  initprop "rounds"
+00090:  17  getarg 1
+00093:  17  initprop "funcNext"
+00098:  17  endinit
+00099:  17  notearg
+00100:  17  call 2
+00103:  17  pop
+00104:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Story.js:12 ---

@@ -1,0 +1,67 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Factorys/Fate.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=15 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Fate.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Factorys"
+00010:  10  newinit 1
+00015:  11  lambda (function () {
+    [sourceless code]
+})
+00020:  11  initprop "create"
+00025:  11  endinit
+00026:  11  setprop "Fate"
+00031:  11  popv
+00032:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Fate.js:1 ---
+;; function object[0] create
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] id
+;; local[0] fate
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Fate.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  name "xs"
+00005:  12  getprop "Models"
+00010:  12  getprop "Fate"
+00015:  12  dup
+00016:  12  callprop "create"
+00021:  12  swap
+00022:  12  notearg
+00023:  12  call 0
+00026:  12  setlocal 0
+00029:  12  pop
+00030:  13  name "xs"
+00035:  13  dup
+00036:  13  callprop "assert"
+00041:  13  swap
+00042:  13  notearg
+00043:  13  getarg 0
+00046:  13  notearg
+00047:  13  string "Fate id error"
+00052:  13  notearg
+00053:  13  call 2
+00056:  13  pop
+00057:  14  getlocal 0
+00060:  14  dup
+00061:  14  callprop "readBaseData"
+00066:  14  swap
+00067:  14  notearg
+00068:  14  getarg 0
+00071:  14  notearg
+00072:  14  call 1
+00075:  14  pop
+00076:  15  getlocal 0
+00079:  15  return
+00080:  15  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Fate.js:11 ---

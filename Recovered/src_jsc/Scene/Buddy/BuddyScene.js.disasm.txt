@@ -1,0 +1,743 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Buddy/BuddyScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=48 object[0]
+;; FUNCTION-MAP kind=lambda offset=58 object[1]
+;; FUNCTION-MAP kind=lambda offset=68 object[2]
+;; FUNCTION-MAP kind=lambda offset=78 object[3]
+;; FUNCTION-MAP kind=lambda offset=114 object[4]
+;; FUNCTION-MAP kind=lambda offset=158 object[5]
+;; FUNCTION-MAP kind=lambda offset=168 object[6]
+;; FUNCTION-MAP kind=lambda offset=204 object[7]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Scene"
+00010:   5  name "xs"
+00015:   5  getprop "Views"
+00020:   5  getprop "HungerLayer"
+00025:   5  dup
+00026:   5  callprop "extend"
+00031:   5  swap
+00032:   5  notearg
+00033:   5  newinit 1
+00038:   6  string "BuddyLayer"
+00043:   6  initprop "name"
+00048:   8  lambda (function () {
+    [sourceless code]
+})
+00053:   8  initprop "ctor"
+00058:  11  lambda (function () {
+    [sourceless code]
+})
+00063:  11  initprop "init"
+00068:  72  lambda (function () {
+    [sourceless code]
+})
+00073:  72  initprop "closeBtnCallback"
+00078:  81  lambda (function () {
+    [sourceless code]
+})
+00083:  81  initprop "setBaseTouchPriority"
+00088:  81  endinit
+00089:  81  notearg
+00090:  81  call 1
+00093:  81  setprop "BuddyLayer"
+00098:  81  popv
+00099:  90  name "xs"
+00104:  90  getprop "Scene"
+00109:  90  getprop "BuddyLayer"
+00114:  90  lambda (function () {
+    [sourceless code]
+})
+00119:  90  setprop "create"
+00124:  90  popv
+00125: 100  name "xs"
+00130: 100  getprop "Scene"
+00135: 100  name "cc"
+00140: 100  getprop "Scene"
+00145: 100  dup
+00146: 100  callprop "extend"
+00151: 100  swap
+00152: 100  notearg
+00153: 100  newinit 1
+00158: 101  lambda (function () {
+    [sourceless code]
+})
+00163: 101  initprop "ctor"
+00168: 105  lambda (function () {
+    [sourceless code]
+})
+00173: 105  initprop "init"
+00178: 105  endinit
+00179: 105  notearg
+00180: 105  call 1
+00183: 105  setprop "BuddyScene"
+00188: 105  popv
+00189: 119  name "xs"
+00194: 119  getprop "Scene"
+00199: 119  getprop "BuddyScene"
+00204: 119  lambda (function () {
+    [sourceless code]
+})
+00209: 119  setprop "create"
+00214: 119  popv
+00215: 128  name "xs"
+00220: 128  getprop "Scene"
+00225: 128  getprop "Mgr"
+00230: 128  dup
+00231: 128  callprop "registerScene"
+00236: 128  swap
+00237: 128  notearg
+00238: 128  string "BuddyScene"
+00243: 128  notearg
+00244: 128  newinit 1
+00249: 129  name "xs"
+00254: 129  getprop "Scene"
+00259: 129  getprop "BuddyScene"
+00264: 129  initprop "class"
+00269: 131  name "xs"
+00274: 131  getprop "Constant_SceneType_General"
+00279: 131  initprop "type"
+00284: 131  endinit
+00285: 131  notearg
+00286: 131  call 2
+00289: 131  popv
+00290: 132  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  call 0
+00012:   9  pop
+00013:   9  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:8 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=6
+;; arg[0] param
+;; local[0] playerInfo
+;; local[1] visibleSize
+;; local[2] paramOne
+;; local[3] paramTwo
+;; local[4] paramThree
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  call 0
+00012:  12  not
+00013:  12  ifeq 20 (+7)
+00018:  13  false
+00019:  13  return
+00020:  15  this
+00021:  15  true
+00022:  15  setprop "b_isSelf"
+00027:  15  pop
+00028:  16  getarg 0
+00031:  16  and 59 (+28)
+00036:  16  pop
+00037:  16  getarg 0
+00040:  16  getprop "playerId"
+00045:  16  and 59 (+14)
+00050:  16  pop
+00051:  16  getarg 0
+00054:  16  getprop "playerData"
+00059:  16  ifeq 72 (+13)
+00064:  17  this
+00065:  17  false
+00066:  17  setprop "b_isSelf"
+00071:  17  pop
+00072:  20  name "xs"
+00077:  20  getprop "Tools"
+00082:  20  getprop "UI"
+00087:  20  dup
+00088:  20  callprop "addBgByType"
+00093:  20  swap
+00094:  20  notearg
+00095:  20  this
+00096:  20  notearg
+00097:  20  name "xs"
+00102:  20  getprop "Constant_BgType_Toast"
+00107:  20  notearg
+00108:  20  call 2
+00111:  20  pop
+00112:  21  name "xs"
+00117:  21  getprop "Tools"
+00122:  21  getprop "UI"
+00127:  21  dup
+00128:  21  callprop "addContentBg"
+00133:  21  swap
+00134:  21  notearg
+00135:  21  this
+00136:  21  notearg
+00137:  21  true
+00138:  21  notearg
+00139:  21  call 2
+00142:  21  pop
+00143:  24  name "xs"
+00148:  24  getprop "Views"
+00153:  24  getprop "PlayerInfoBannerSimpleView"
+00158:  24  dup
+00159:  24  callprop "create"
+00164:  24  swap
+00165:  24  notearg
+00166:  24  call 0
+00169:  24  setlocal 0
+00172:  24  pop
+00173:  25  getlocal 0
+00176:  25  dup
+00177:  25  callprop "setAnchorPoint"
+00182:  25  swap
+00183:  25  notearg
+00184:  25  name "cc"
+00189:  25  dup
+00190:  25  callprop "p"
+00195:  25  swap
+00196:  25  notearg
+00197:  25  zero
+00198:  25  notearg
+00199:  25  one
+00200:  25  notearg
+00201:  25  call 2
+00204:  25  notearg
+00205:  25  call 1
+00208:  25  pop
+00209:  26  name "xs"
+00214:  26  getprop "Utils"
+00219:  26  getprop "Node"
+00224:  26  dup
+00225:  26  callprop "attachNodes"
+00230:  26  swap
+00231:  26  notearg
+00232:  26  this
+00233:  26  notearg
+00234:  26  getlocal 0
+00237:  26  notearg
+00238:  26  newinit 1
+00243:  26  string "lt"
+00248:  26  initprop "desc"
+00253:  26  true
+00254:  26  initprop "sc"
+00259:  26  endinit
+00260:  26  notearg
+00261:  26  call 3
+00264:  26  pop
+00265:  29  name "cc"
+00270:  29  getprop "Director"
+00275:  29  dup
+00276:  29  callprop "getInstance"
+00281:  29  swap
+00282:  29  notearg
+00283:  29  call 0
+00286:  29  dup
+00287:  29  callprop "getVisibleSize"
+00292:  29  swap
+00293:  29  notearg
+00294:  29  call 0
+00297:  29  setlocal 1
+00300:  29  pop
+00301:  30  this
+00302:  30  name "xs"
+00307:  30  getprop "Views"
+00312:  30  getprop "TablePage"
+00317:  30  dup
+00318:  30  callprop "create"
+00323:  30  swap
+00324:  30  notearg
+00325:  30  name "cc"
+00330:  30  dup
+00331:  30  callprop "size"
+00336:  30  swap
+00337:  30  notearg
+00338:  30  uint16 846
+00341:  30  notearg
+00342:  30  getlocal 1
+00345:  30  getprop "height"
+00350:  30  int8 56
+00352:  30  sub
+00353:  30  notearg
+00354:  30  call 2
+00357:  30  notearg
+00358:  30  call 1
+00361:  30  setprop "m_pageView"
+00366:  30  pop
+00367:  32  name "xs"
+00372:  32  getprop "Utils"
+00377:  32  dup
+00378:  32  callprop "clone"
+00383:  32  swap
+00384:  32  notearg
+00385:  32  getarg 0
+00388:  32  notearg
+00389:  32  call 1
+00392:  32  setlocal 2
+00395:  32  pop
+00396:  33  getlocal 2
+00399:  33  zero
+00400:  33  setprop "pageIdx"
+00405:  33  pop
+00406:  34  name "xs"
+00411:  34  getprop "Utils"
+00416:  34  dup
+00417:  34  callprop "clone"
+00422:  34  swap
+00423:  34  notearg
+00424:  34  getarg 0
+00427:  34  notearg
+00428:  34  call 1
+00431:  34  setlocal 3
+00434:  34  pop
+00435:  35  getlocal 3
+00438:  35  one
+00439:  35  setprop "pageIdx"
+00444:  35  pop
+00445:  36  name "xs"
+00450:  36  getprop "Utils"
+00455:  36  dup
+00456:  36  callprop "clone"
+00461:  36  swap
+00462:  36  notearg
+00463:  36  getarg 0
+00466:  36  notearg
+00467:  36  call 1
+00470:  36  setlocal 4
+00473:  36  pop
+00474:  37  getlocal 4
+00477:  37  int8 2
+00479:  37  setprop "pageIdx"
+00484:  37  pop
+00485:  39  this
+00486:  39  getprop "m_pageView"
+00491:  39  dup
+00492:  39  callprop "addPageWhitConstruct"
+00497:  39  swap
+00498:  39  notearg
+00499:  40  name "xs"
+00504:  40  getprop "Tools"
+00509:  40  getprop "String"
+00514:  40  dup
+00515:  40  callprop "createString"
+00520:  40  swap
+00521:  40  notearg
+00522:  40  string "zhenrong_buddy_name_yangzhen"
+00527:  40  notearg
+00528:  40  call 1
+00531:  40  notearg
+00532:  41  name "xs"
+00537:  41  getprop "Scene"
+00542:  41  getprop "BuddyView"
+00547:  41  notearg
+00548:  42  newinit 1
+00553:  43  getlocal 2
+00556:  43  initprop "param"
+00561:  43  endinit
+00562:  43  notearg
+00563:  43  call 3
+00566:  43  pop
+00567:  46  this
+00568:  46  getprop "m_pageView"
+00573:  46  dup
+00574:  46  callprop "addPageWhitConstruct"
+00579:  46  swap
+00580:  46  notearg
+00581:  47  name "xs"
+00586:  47  getprop "Tools"
+00591:  47  getprop "String"
+00596:  47  dup
+00597:  47  callprop "createString"
+00602:  47  swap
+00603:  47  notearg
+00604:  47  string "zhenrong_buddy_name_yinzhen"
+00609:  47  notearg
+00610:  47  call 1
+00613:  47  notearg
+00614:  48  name "xs"
+00619:  48  getprop "Scene"
+00624:  48  getprop "BuddyView"
+00629:  48  notearg
+00630:  49  newinit 1
+00635:  50  getlocal 3
+00638:  50  initprop "param"
+00643:  50  endinit
+00644:  50  notearg
+00645:  50  call 3
+00648:  50  pop
+00649:  53  this
+00650:  53  getprop "m_pageView"
+00655:  53  dup
+00656:  53  callprop "addPageWhitConstruct"
+00661:  53  swap
+00662:  53  notearg
+00663:  54  name "xs"
+00668:  54  getprop "Tools"
+00673:  54  getprop "String"
+00678:  54  dup
+00679:  54  callprop "createString"
+00684:  54  swap
+00685:  54  notearg
+00686:  54  string "zhenrong_buddy_name_fengzhen"
+00691:  54  notearg
+00692:  54  call 1
+00695:  54  notearg
+00696:  55  name "xs"
+00701:  55  getprop "Scene"
+00706:  55  getprop "BuddyView"
+00711:  55  notearg
+00712:  56  newinit 1
+00717:  57  getlocal 4
+00720:  57  initprop "param"
+00725:  57  endinit
+00726:  57  notearg
+00727:  57  call 3
+00730:  57  pop
+00731:  61  name "xs"
+00736:  61  getprop "Utils"
+00741:  61  getprop "Node"
+00746:  61  dup
+00747:  61  callprop "attachNodes"
+00752:  61  swap
+00753:  61  notearg
+00754:  61  this
+00755:  61  notearg
+00756:  61  this
+00757:  61  getprop "m_pageView"
+00762:  61  notearg
+00763:  61  newinit 1
+00768:  61  string "lb"
+00773:  61  initprop "desc"
+00778:  61  true
+00779:  61  initprop "sc"
+00784:  61  endinit
+00785:  61  notearg
+00786:  61  call 3
+00789:  61  pop
+00790:  64  this
+00791:  64  name "xs"
+00796:  64  getprop "Views"
+00801:  64  getprop "Btn"
+00806:  64  dup
+00807:  64  callprop "create"
+00812:  64  swap
+00813:  64  notearg
+00814:  64  string "Btn_CircleRedClose"
+00819:  64  notearg
+00820:  64  call 1
+00823:  64  setprop "m_closeBtn"
+00828:  64  pop
+00829:  65  this
+00830:  65  getprop "m_closeBtn"
+00835:  65  dup
+00836:  65  callprop "setOnClickCallBack"
+00841:  65  swap
+00842:  65  notearg
+00843:  65  this
+00844:  65  getprop "closeBtnCallback"
+00849:  65  dup
+00850:  65  callprop "bind"
+00855:  65  swap
+00856:  65  notearg
+00857:  65  this
+00858:  65  notearg
+00859:  65  call 1
+00862:  65  notearg
+00863:  65  call 1
+00866:  65  pop
+00867:  66  name "xs"
+00872:  66  getprop "Utils"
+00877:  66  getprop "Node"
+00882:  66  dup
+00883:  66  callprop "attachNodes"
+00888:  66  swap
+00889:  66  notearg
+00890:  66  this
+00891:  66  notearg
+00892:  66  this
+00893:  66  getprop "m_closeBtn"
+00898:  66  notearg
+00899:  66  newinit 1
+00904:  66  string "rt"
+00909:  66  initprop "desc"
+00914:  66  true
+00915:  66  initprop "sc"
+00920:  66  newinit 1
+00925:  66  int8 -55
+00927:  66  initprop "x"
+00932:  66  int8 -64
+00934:  66  initprop "y"
+00939:  66  endinit
+00940:  66  initprop "offset"
+00945:  66  endinit
+00946:  66  notearg
+00947:  66  call 3
+00950:  66  pop
+00951:  68  true
+00952:  68  return
+00953:  68  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:11 ---
+;; function object[2] closeBtnCallback
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:72 ---
+loc   line  op
+----- ----  --
+main:
+00000:  73  this
+00001:  73  getprop "b_isSelf"
+00006:  73  ifeq 43 (+37)
+00011:  74  name "xs"
+00016:  74  getprop "Scene"
+00021:  74  getprop "Mgr"
+00026:  74  dup
+00027:  74  callprop "gotoLastScene"
+00032:  74  swap
+00033:  74  notearg
+00034:  74  call 0
+00037:  74  pop
+00038:  74  goto 70 (+32)
+00043:  77  name "xs"
+00048:  77  getprop "Views"
+00053:  77  getprop "Mgr"
+00058:  77  dup
+00059:  77  callprop "hideDialog"
+00064:  77  swap
+00065:  77  notearg
+00066:  77  call 0
+00069:  77  pop
+00070:  78  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:72 ---
+;; function object[3] setBaseTouchPriority
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:81 ---
+loc   line  op
+----- ----  --
+main:
+00000:  82  this
+00001:  82  getarg 0
+00004:  82  setprop "m_baseTouchPriority"
+00009:  82  pop
+00010:  83  this
+00011:  83  dup
+00012:  83  callprop "setTouchPriority"
+00017:  83  swap
+00018:  83  notearg
+00019:  83  this
+00020:  83  getprop "m_baseTouchPriority"
+00025:  83  notearg
+00026:  83  call 1
+00029:  83  pop
+00030:  84  this
+00031:  84  getprop "m_pageView"
+00036:  84  dup
+00037:  84  callprop "setBaseTouchPriority"
+00042:  84  swap
+00043:  84  notearg
+00044:  84  this
+00045:  84  getprop "m_baseTouchPriority"
+00050:  84  one
+00051:  84  sub
+00052:  84  notearg
+00053:  84  call 1
+00056:  84  pop
+00057:  85  this
+00058:  85  getprop "m_closeBtn"
+00063:  85  dup
+00064:  85  callprop "setTouchPriority"
+00069:  85  swap
+00070:  85  notearg
+00071:  85  this
+00072:  85  getprop "m_baseTouchPriority"
+00077:  85  name "xs"
+00082:  85  getprop "Cfg"
+00087:  85  getprop "Scene"
+00092:  85  getprop "TeamBuildScene"
+00097:  85  getprop "m_closeBtn"
+00102:  85  getprop "priority"
+00107:  85  add
+00108:  85  notearg
+00109:  85  call 1
+00112:  85  pop
+00113:  85  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:81 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] buddyLayer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:90 ---
+loc   line  op
+----- ----  --
+main:
+00000:  91  name "xs"
+00005:  91  getprop "Scene"
+00010:  91  getprop "BuddyLayer"
+00015:  91  undefined
+00016:  91  notearg
+00017:  91  new 0
+00020:  91  setlocal 0
+00023:  91  pop
+00024:  92  getlocal 0
+00027:  92  and 51 (+24)
+00032:  92  pop
+00033:  92  getlocal 0
+00036:  92  dup
+00037:  92  callprop "init"
+00042:  92  swap
+00043:  92  notearg
+00044:  92  getarg 0
+00047:  92  notearg
+00048:  92  call 1
+00051:  92  ifeq 77 (+26)
+00056:  93  getlocal 0
+00059:  93  dup
+00060:  93  callprop "setBaseTouchPriority"
+00065:  93  swap
+00066:  93  notearg
+00067:  93  zero
+00068:  93  notearg
+00069:  93  call 1
+00072:  93  pop
+00073:  94  getlocal 0
+00076:  94  return
+00077:  96  null
+00078:  96  return
+00079:  96  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:90 ---
+;; function object[5] ctor
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:101 ---
+loc   line  op
+----- ----  --
+main:
+00000: 102  this
+00001: 102  dup
+00002: 102  callprop "_super"
+00007: 102  swap
+00008: 102  notearg
+00009: 102  call 0
+00012: 102  pop
+00013: 103  name "cc"
+00018: 103  dup
+00019: 103  callprop "associateWithNative"
+00024: 103  swap
+00025: 103  notearg
+00026: 103  this
+00027: 103  notearg
+00028: 103  name "cc"
+00033: 103  getprop "Scene"
+00038: 103  notearg
+00039: 103  call 2
+00042: 103  pop
+00043: 103  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:101 ---
+;; function object[6] init
+;; function metadata object[6] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] layer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:105 ---
+loc   line  op
+----- ----  --
+main:
+00000: 106  this
+00001: 106  dup
+00002: 106  callprop "_super"
+00007: 106  swap
+00008: 106  notearg
+00009: 106  call 0
+00012: 106  not
+00013: 106  ifeq 20 (+7)
+00018: 107  false
+00019: 107  return
+00020: 110  name "xs"
+00025: 110  getprop "Scene"
+00030: 110  getprop "BuddyLayer"
+00035: 110  dup
+00036: 110  callprop "create"
+00041: 110  swap
+00042: 110  notearg
+00043: 110  getarg 0
+00046: 110  notearg
+00047: 110  call 1
+00050: 110  setlocal 0
+00053: 110  pop
+00054: 111  getlocal 0
+00057: 111  ifeq 79 (+22)
+00062: 112  this
+00063: 112  dup
+00064: 112  callprop "addChild"
+00069: 112  swap
+00070: 112  notearg
+00071: 112  getlocal 0
+00074: 112  notearg
+00075: 112  call 1
+00078: 112  pop
+00079: 115  true
+00080: 115  return
+00081: 115  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:105 ---
+;; function object[7] create
+;; function metadata object[7] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] scene
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:119 ---
+loc   line  op
+----- ----  --
+main:
+00000: 120  name "xs"
+00005: 120  getprop "Scene"
+00010: 120  getprop "BuddyScene"
+00015: 120  undefined
+00016: 120  notearg
+00017: 120  new 0
+00020: 120  setlocal 0
+00023: 120  pop
+00024: 121  getlocal 0
+00027: 121  and 51 (+24)
+00032: 121  pop
+00033: 121  getlocal 0
+00036: 121  dup
+00037: 121  callprop "init"
+00042: 121  swap
+00043: 121  notearg
+00044: 121  getarg 0
+00047: 121  notearg
+00048: 121  call 1
+00051: 121  ifeq 60 (+9)
+00056: 122  getlocal 0
+00059: 122  return
+00060: 124  null
+00061: 124  return
+00062: 124  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Buddy/BuddyScene.js:119 ---

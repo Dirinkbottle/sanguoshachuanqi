@@ -1,0 +1,2250 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Dialog/UnionDepotMemberDialog.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=601 object[0]
+;; FUNCTION-MAP kind=lambda offset=611 object[1]
+;; FUNCTION-MAP kind=lambda offset=621 object[2]
+;; FUNCTION-MAP kind=lambda offset=631 object[3]
+;; FUNCTION-MAP kind=lambda offset=641 object[4]
+;; FUNCTION-MAP kind=lambda offset=651 object[5]
+;; FUNCTION-MAP kind=lambda offset=661 object[6]
+;; FUNCTION-MAP kind=lambda offset=671 object[7]
+;; FUNCTION-MAP kind=lambda offset=681 object[8]
+;; FUNCTION-MAP kind=lambda offset=722 object[9]
+;; FUNCTION-MAP kind=lambda offset=776 object[10]
+;; FUNCTION-MAP kind=lambda offset=786 object[11]
+;; FUNCTION-MAP kind=lambda offset=796 object[12]
+;; FUNCTION-MAP kind=lambda offset=806 object[13]
+;; FUNCTION-MAP kind=lambda offset=816 object[14]
+;; FUNCTION-MAP kind=lambda offset=826 object[15]
+;; FUNCTION-MAP kind=lambda offset=836 object[16]
+;; FUNCTION-MAP kind=lambda offset=846 object[17]
+;; FUNCTION-MAP kind=lambda offset=856 object[18]
+;; FUNCTION-MAP kind=lambda offset=866 object[19]
+;; FUNCTION-MAP kind=lambda offset=876 object[20]
+;; FUNCTION-MAP kind=lambda offset=886 object[21]
+;; FUNCTION-MAP kind=lambda offset=896 object[22]
+;; FUNCTION-MAP kind=lambda offset=906 object[23]
+;; FUNCTION-MAP kind=lambda offset=916 object[24]
+;; FUNCTION-MAP kind=lambda offset=926 object[25]
+;; FUNCTION-MAP kind=lambda offset=936 object[26]
+;; FUNCTION-MAP kind=lambda offset=977 object[27]
+;; FUNCTION-MAP kind=lambda offset=1163 object[28]
+;; FUNCTION-MAP kind=lambda offset=1173 object[29]
+;; FUNCTION-MAP kind=lambda offset=1183 object[30]
+;; FUNCTION-MAP kind=lambda offset=1193 object[31]
+;; FUNCTION-MAP kind=lambda offset=1234 object[32]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Views"
+00010:   4  getprop "Dialog"
+00015:   4  name "cc"
+00020:   4  getprop "TableViewCell"
+00025:   4  dup
+00026:   4  callprop "extend"
+00031:   4  swap
+00032:   4  notearg
+00033:   4  newinit 1
+00038:   5  newarray 12
+00042:   6  newinit 1
+00047:   6  string "m_nameLab"
+00052:   6  initprop "name"
+00057:   6  int8 2
+00059:   6  initprop "tag"
+00064:   6  string "ls"
+00069:   6  initprop "type"
+00074:   6  string "LS_Lv"
+00079:   6  initprop "id"
+00084:   6  endinit
+00085:   6  initelem_array 0
+00089:   7  newinit 1
+00094:   7  string "m_vipLevel"
+00099:   7  initprop "name"
+00104:   7  int8 3
+00106:   7  initprop "tag"
+00111:   7  string "ls"
+00116:   7  initprop "type"
+00121:   7  string "LS_Lv"
+00126:   7  initprop "id"
+00131:   7  endinit
+00132:   7  initelem_array 1
+00136:   8  newinit 1
+00141:   8  string "m_playerLevel"
+00146:   8  initprop "name"
+00151:   8  one
+00152:   8  initprop "tag"
+00157:   8  string "ls"
+00162:   8  initprop "type"
+00167:   8  string "LS_mainLv"
+00172:   8  initprop "id"
+00177:   8  endinit
+00178:   8  initelem_array 2
+00182:   9  newinit 1
+00187:   9  string "m_contributionTitle"
+00192:   9  initprop "name"
+00197:   9  int8 5
+00199:   9  initprop "tag"
+00204:   9  string "ls"
+00209:   9  initprop "type"
+00214:   9  string "LS_jinengInf1"
+00219:   9  initprop "id"
+00224:   9  string "auto_name_550"
+00229:   9  initprop "stringId"
+00234:   9  endinit
+00235:   9  initelem_array 3
+00239:  10  newinit 1
+00244:  10  string "m_contributionNum"
+00249:  10  initprop "name"
+00254:  10  int8 6
+00256:  10  initprop "tag"
+00261:  10  string "ls"
+00266:  10  initprop "type"
+00271:  10  string "LS_mainUI4"
+00276:  10  initprop "id"
+00281:  10  endinit
+00282:  10  initelem_array 4
+00286:  11  newinit 1
+00291:  11  string "m_battleTimeTitle"
+00296:  11  initprop "name"
+00301:  11  int8 8
+00303:  11  initprop "tag"
+00308:  11  string "ls"
+00313:  11  initprop "type"
+00318:  11  string "LS_jinengInf1"
+00323:  11  initprop "id"
+00328:  11  string "lblStr_unionDepotMbrDlgBtlTTtl"
+00333:  11  initprop "stringId"
+00338:  11  endinit
+00339:  11  initelem_array 5
+00343:  12  newinit 1
+00348:  12  string "m_weekActiveTitle"
+00353:  12  initprop "name"
+00358:  12  int8 9
+00360:  12  initprop "tag"
+00365:  12  string "ls"
+00370:  12  initprop "type"
+00375:  12  string "LS_jinengInf1"
+00380:  12  initprop "id"
+00385:  12  string "lblStr_unionDepotMbrDlgWKAtvTtl"
+00390:  12  initprop "stringId"
+00395:  12  endinit
+00396:  12  initelem_array 6
+00400:  13  newinit 1
+00405:  13  string "m_battleTime"
+00410:  13  initprop "name"
+00415:  13  int8 12
+00417:  13  initprop "tag"
+00422:  13  string "ls"
+00427:  13  initprop "type"
+00432:  13  string "LS_Lv"
+00437:  13  initprop "id"
+00442:  13  endinit
+00443:  13  initelem_array 7
+00447:  14  newinit 1
+00452:  14  string "m_weekActive"
+00457:  14  initprop "name"
+00462:  14  int8 13
+00464:  14  initprop "tag"
+00469:  14  string "ls"
+00474:  14  initprop "type"
+00479:  14  string "LS_Lv"
+00484:  14  initprop "id"
+00489:  14  endinit
+00490:  14  initelem_array 8
+00494:  15  newinit 1
+00499:  15  string "m_distributionButton"
+00504:  15  initprop "name"
+00509:  15  int8 7
+00511:  15  initprop "tag"
+00516:  15  string "btn"
+00521:  15  initprop "type"
+00526:  15  string "Btn_btn3"
+00531:  15  initprop "id"
+00536:  15  endinit
+00537:  15  initelem_array 9
+00541:  16  newinit 1
+00546:  16  string "m_duty"
+00551:  16  initprop "name"
+00556:  16  int8 4
+00558:  16  initprop "tag"
+00563:  16  endinit
+00564:  16  initelem_array 10
+00568:  17  newinit 1
+00573:  17  string "m_onlineState"
+00578:  17  initprop "name"
+00583:  17  int8 11
+00585:  17  initprop "tag"
+00590:  17  endinit
+00591:  17  initelem_array 11
+00595:  17  endinit
+00596:  17  initprop "ccbCfg"
+00601:  21  lambda (function () {
+    [sourceless code]
+})
+00606:  21  initprop "ctor"
+00611:  25  lambda (function () {
+    [sourceless code]
+})
+00616:  25  initprop "draw"
+00621:  29  lambda (function () {
+    [sourceless code]
+})
+00626:  29  initprop "init"
+00631:  60  lambda (function () {
+    [sourceless code]
+})
+00636:  60  initprop "setBaseTouchPriority"
+00641:  65  lambda (function () {
+    [sourceless code]
+})
+00646:  65  initprop "onEnter"
+00651:  80  lambda (function () {
+    [sourceless code]
+})
+00656:  80  initprop "onExit"
+00661:  83  lambda (function () {
+    [sourceless code]
+})
+00666:  83  initprop "setListener"
+00671:  86  lambda (function () {
+    [sourceless code]
+})
+00676:  86  initprop "update"
+00681: 125  lambda (function () {
+    [sourceless code]
+})
+00686: 125  initprop "distributionButtonCallBack"
+00691: 125  endinit
+00692: 125  notearg
+00693: 125  call 1
+00696: 125  setprop "UnionDepotMemberCell"
+00701: 125  popv
+00702: 139  name "xs"
+00707: 139  getprop "Views"
+00712: 139  getprop "Dialog"
+00717: 139  getprop "UnionDepotMemberCell"
+00722: 139  lambda (function () {
+    [sourceless code]
+})
+00727: 139  setprop "create"
+00732: 139  popv
+00733: 147  name "xs"
+00738: 147  getprop "Views"
+00743: 147  getprop "Dialog"
+00748: 147  name "xs"
+00753: 147  getprop "Views"
+00758: 147  getprop "HungerLayer"
+00763: 147  dup
+00764: 147  callprop "extend"
+00769: 147  swap
+00770: 147  notearg
+00771: 147  newinit 1
+00776: 150  lambda (function () {
+    [sourceless code]
+})
+00781: 150  initprop "ctor"
+00786: 156  lambda (function () {
+    [sourceless code]
+})
+00791: 156  initprop "init"
+00796: 170  lambda (function () {
+    [sourceless code]
+})
+00801: 170  initprop "setListener"
+00806: 175  lambda (function () {
+    [sourceless code]
+})
+00811: 175  initprop "_readMemberList"
+00816: 199  lambda (function () {
+    [sourceless code]
+})
+00821: 199  initprop "refreshFromMenuClick"
+00826: 208  lambda (function () {
+    [sourceless code]
+})
+00831: 208  initprop "onEnterTransitionDidFinish"
+00836: 216  lambda (function () {
+    [sourceless code]
+})
+00841: 216  initprop "onExitTransitionDidStart"
+00846: 222  lambda (function () {
+    [sourceless code]
+})
+00851: 222  initprop "scrollViewDidScroll"
+00856: 225  lambda (function () {
+    [sourceless code]
+})
+00861: 225  initprop "scrollViewDidZoom"
+00866: 228  lambda (function () {
+    [sourceless code]
+})
+00871: 228  initprop "tableCellTouched"
+00876: 232  lambda (function () {
+    [sourceless code]
+})
+00881: 232  initprop "tableCellSizeForIndex"
+00886: 236  lambda (function () {
+    [sourceless code]
+})
+00891: 236  initprop "tableCellAtIndex"
+00896: 251  lambda (function () {
+    [sourceless code]
+})
+00901: 251  initprop "setBaseTouchPriority"
+00906: 258  lambda (function () {
+    [sourceless code]
+})
+00911: 258  initprop "numberOfCellsInTableView"
+00916: 263  lambda (function () {
+    [sourceless code]
+})
+00921: 263  initprop "scrollViewDidScroll"
+00926: 267  lambda (function () {
+    [sourceless code]
+})
+00931: 267  initprop "scrollViewDidZoom"
+00936: 271  lambda (function () {
+    [sourceless code]
+})
+00941: 271  initprop "tableCellTouched"
+00946: 271  endinit
+00947: 271  notearg
+00948: 271  call 1
+00951: 271  setprop "UnionDepotMemberDialogLayer"
+00956: 271  popv
+00957: 277  name "xs"
+00962: 277  getprop "Views"
+00967: 277  getprop "Dialog"
+00972: 277  getprop "UnionDepotMemberDialogLayer"
+00977: 277  lambda (function () {
+    [sourceless code]
+})
+00982: 277  setprop "create"
+00987: 277  popv
+00988: 285  name "xs"
+00993: 285  getprop "Views"
+00998: 285  getprop "Dialog"
+01003: 285  name "xs"
+01008: 285  getprop "Views"
+01013: 285  getprop "HungerLayer"
+01018: 285  dup
+01019: 285  callprop "extend"
+01024: 285  swap
+01025: 285  notearg
+01026: 285  newinit 1
+01031: 286  newinit 1
+01036: 287  newinit 1
+01041: 287  int8 -1
+01043: 287  initprop "priority"
+01048: 287  endinit
+01049: 287  initprop "btnClose"
+01054: 290  newarray 2
+01058: 291  newinit 1
+01063: 291  int8 2
+01065: 291  initprop "tag"
+01070: 291  string "btn"
+01075: 291  initprop "type"
+01080: 291  string "btnClose"
+01085: 291  initprop "name"
+01090: 291  string "Btn_Close"
+01095: 291  initprop "id"
+01100: 291  endinit
+01101: 291  initelem_array 0
+01105: 292  newinit 1
+01110: 292  one
+01111: 292  initprop "tag"
+01116: 292  string "ls"
+01121: 292  initprop "type"
+01126: 292  string "lblTitle"
+01131: 292  initprop "name"
+01136: 292  string "LS_huodong_title"
+01141: 292  initprop "id"
+01146: 292  endinit
+01147: 292  initelem_array 1
+01151: 292  endinit
+01152: 292  initprop "ccbCfg"
+01157: 292  endinit
+01158: 292  initprop "cfg"
+01163: 296  lambda (function () {
+    [sourceless code]
+})
+01168: 296  initprop "init"
+01173: 322  lambda (function () {
+    [sourceless code]
+})
+01178: 322  initprop "btnCloseClickCallBack"
+01183: 330  lambda (function () {
+    [sourceless code]
+})
+01188: 330  initprop "setBaseTouchPriority"
+01193: 336  lambda (function () {
+    [sourceless code]
+})
+01198: 336  initprop "setListener"
+01203: 336  endinit
+01204: 336  notearg
+01205: 336  call 1
+01208: 336  setprop "UnionDepotMemberDialog"
+01213: 336  popv
+01214: 341  name "xs"
+01219: 341  getprop "Views"
+01224: 341  getprop "Dialog"
+01229: 341  getprop "UnionDepotMemberDialog"
+01234: 341  lambda (function () {
+    [sourceless code]
+})
+01239: 341  setprop "create"
+01244: 341  popv
+01245: 349  name "xs"
+01250: 349  getprop "Views"
+01255: 349  getprop "Mgr"
+01260: 349  dup
+01261: 349  callprop "registerDialog"
+01266: 349  swap
+01267: 349  notearg
+01268: 349  string "UnionDepotMemberDialog"
+01273: 349  notearg
+01274: 349  newinit 1
+01279: 350  name "xs"
+01284: 350  getprop "Views"
+01289: 350  getprop "Dialog"
+01294: 350  getprop "UnionDepotMemberDialog"
+01299: 350  initprop "class"
+01304: 351  name "xs"
+01309: 351  getprop "Constant_DlgStyleType_Large"
+01314: 351  initprop "styleType"
+01319: 351  endinit
+01320: 351  notearg
+01321: 351  call 2
+01324: 351  popv
+01325: 352  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  this
+00001:  22  dup
+00002:  22  callprop "_super"
+00007:  22  swap
+00008:  22  notearg
+00009:  22  call 0
+00012:  22  pop
+00013:  23  name "cc"
+00018:  23  dup
+00019:  23  callprop "associateWithNative"
+00024:  23  swap
+00025:  23  notearg
+00026:  23  this
+00027:  23  notearg
+00028:  23  name "cc"
+00033:  23  getprop "TableViewCell"
+00038:  23  notearg
+00039:  23  call 2
+00042:  23  pop
+00043:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:21 ---
+;; function object[1] draw
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] ctx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  26  this
+00001:  26  dup
+00002:  26  callprop "_super"
+00007:  26  swap
+00008:  26  notearg
+00009:  26  getarg 0
+00012:  26  notearg
+00013:  26  call 1
+00016:  26  pop
+00017:  26  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:25 ---
+;; function object[2] init
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] itemInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  this
+00001:  30  dup
+00002:  30  callprop "_super"
+00007:  30  swap
+00008:  30  notearg
+00009:  30  call 0
+00012:  30  not
+00013:  30  ifeq 20 (+7)
+00018:  31  false
+00019:  31  return
+00020:  33  name "xs"
+00025:  33  dup
+00026:  33  callprop "log"
+00031:  33  swap
+00032:  33  notearg
+00033:  33  string "cell init start"
+00038:  33  notearg
+00039:  33  call 1
+00042:  33  pop
+00043:  34  this
+00044:  34  zero
+00045:  34  setprop "m_baseTouchPriority"
+00050:  34  pop
+00051:  35  this
+00052:  35  null
+00053:  35  setprop "m_otherName"
+00058:  35  pop
+00059:  36  this
+00060:  36  null
+00061:  36  setprop "m_ccbNode"
+00066:  36  pop
+00067:  37  this
+00068:  37  null
+00069:  37  setprop "m_nameLab"
+00074:  37  pop
+00075:  38  this
+00076:  38  null
+00077:  38  setprop "m_vipLevel"
+00082:  38  pop
+00083:  39  this
+00084:  39  null
+00085:  39  setprop "m_contributionTitle"
+00090:  39  pop
+00091:  40  this
+00092:  40  null
+00093:  40  setprop "m_contributionNum"
+00098:  40  pop
+00099:  41  this
+00100:  41  null
+00101:  41  setprop "m_battleTimeTitle"
+00106:  41  pop
+00107:  42  this
+00108:  42  null
+00109:  42  setprop "m_weekActiveTitle"
+00114:  42  pop
+00115:  43  this
+00116:  43  null
+00117:  43  setprop "m_battleTime"
+00122:  43  pop
+00123:  44  this
+00124:  44  null
+00125:  44  setprop "m_weekActive"
+00130:  44  pop
+00131:  45  this
+00132:  45  null
+00133:  45  setprop "m_distributionButton"
+00138:  45  pop
+00139:  46  this
+00140:  46  null
+00141:  46  setprop "m_rankingSprite"
+00146:  46  pop
+00147:  47  this
+00148:  47  null
+00149:  47  setprop "m_duty"
+00154:  47  pop
+00155:  48  this
+00156:  48  null
+00157:  48  setprop "m_onlineState"
+00162:  48  pop
+00163:  49  this
+00164:  49  getarg 0
+00167:  49  setprop "m_itemInfo"
+00172:  49  pop
+00173:  50  this
+00174:  50  null
+00175:  50  setprop "m_memberId"
+00180:  50  pop
+00181:  51  this
+00182:  51  null
+00183:  51  setprop "m_listener"
+00188:  51  pop
+00189:  52  this
+00190:  52  name "xs"
+00195:  52  getprop "ccb_reader"
+00200:  52  dup
+00201:  52  callprop "load"
+00206:  52  swap
+00207:  52  notearg
+00208:  52  name "xs"
+00213:  52  getprop "Cfg"
+00218:  52  getprop "CCBI"
+00223:  52  getprop "UnionDepotMemberCell"
+00228:  52  notearg
+00229:  52  this
+00230:  52  notearg
+00231:  52  call 2
+00234:  52  setprop "m_ccbNode"
+00239:  52  pop
+00240:  53  name "xs"
+00245:  53  getprop "Utils"
+00250:  53  getprop "Node"
+00255:  53  dup
+00256:  53  callprop "attachNodes"
+00261:  53  swap
+00262:  53  notearg
+00263:  53  this
+00264:  53  notearg
+00265:  53  this
+00266:  53  getprop "m_ccbNode"
+00271:  53  notearg
+00272:  53  call 2
+00275:  53  pop
+00276:  54  name "xs"
+00281:  54  getprop "Utils"
+00286:  54  getprop "UI"
+00291:  54  dup
+00292:  54  callprop "replaceCcbByCfg"
+00297:  54  swap
+00298:  54  notearg
+00299:  54  this
+00300:  54  getprop "m_ccbNode"
+00305:  54  notearg
+00306:  54  this
+00307:  54  getprop "ccbCfg"
+00312:  54  notearg
+00313:  54  this
+00314:  54  notearg
+00315:  54  call 3
+00318:  54  pop
+00319:  55  this
+00320:  55  getprop "m_distributionButton"
+00325:  55  dup
+00326:  55  callprop "setString"
+00331:  55  swap
+00332:  55  notearg
+00333:  55  name "xs"
+00338:  55  getprop "Tools"
+00343:  55  getprop "String"
+00348:  55  dup
+00349:  55  callprop "createString"
+00354:  55  swap
+00355:  55  notearg
+00356:  55  string "btnStr_unionDepotMbrDlgAllotTtl"
+00361:  55  notearg
+00362:  55  call 1
+00365:  55  notearg
+00366:  55  call 1
+00369:  55  pop
+00370:  56  true
+00371:  56  return
+00372:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:29 ---
+;; function object[3] setBaseTouchPriority
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  61  this
+00001:  61  getarg 0
+00004:  61  setprop "m_baseTouchPriority"
+00009:  61  pop
+00010:  62  this
+00011:  62  getprop "m_distributionButton"
+00016:  62  dup
+00017:  62  callprop "setTouchPriority"
+00022:  62  swap
+00023:  62  notearg
+00024:  62  this
+00025:  62  getprop "m_baseTouchPriority"
+00030:  62  one
+00031:  62  sub
+00032:  62  notearg
+00033:  62  call 1
+00036:  62  pop
+00037:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:60 ---
+;; function object[4] onEnter
+;; function metadata object[4] nargs=0 bindings=2
+;; local[0] parent
+;; local[1] touchPriority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:65 ---
+loc   line  op
+----- ----  --
+main:
+00000:  66  this
+00001:  66  dup
+00002:  66  callprop "_super"
+00007:  66  swap
+00008:  66  notearg
+00009:  66  call 0
+00012:  66  pop
+00013:  68  this
+00014:  68  dup
+00015:  68  callprop "getParent"
+00020:  68  swap
+00021:  68  notearg
+00022:  68  call 0
+00025:  68  setlocal 0
+00028:  68  pop
+00029:  69  goto 122 (+93)
+00034:  70  loophead
+00035:  70  getlocal 0
+00038:  70  name "cc"
+00043:  70  getprop "TableView"
+00048:  70  instanceof
+00049:  70  ifeq 104 (+55)
+00054:  71  this
+00055:  71  getlocal 0
+00058:  71  setprop "m_parentView"
+00063:  71  pop
+00064:  72  getlocal 0
+00067:  72  dup
+00068:  72  callprop "getTouchPriority"
+00073:  72  swap
+00074:  72  notearg
+00075:  72  call 0
+00078:  72  setlocal 1
+00081:  72  pop
+00082:  74  this
+00083:  74  dup
+00084:  74  callprop "setBaseTouchPriority"
+00089:  74  swap
+00090:  74  notearg
+00091:  74  getlocal 1
+00094:  74  notearg
+00095:  74  call 1
+00098:  74  pop
+00099:  75  goto 131 (+32)
+00104:  77  getlocal 0
+00107:  77  dup
+00108:  77  callprop "getParent"
+00113:  77  swap
+00114:  77  notearg
+00115:  77  call 0
+00118:  77  setlocal 0
+00121:  77  pop
+00122:  69  loopentry
+00123:  69  getlocal 0
+00126:  69  ifne 34 (-92)
+00131:  78  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:65 ---
+;; function object[5] onExit
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:80 ---
+loc   line  op
+----- ----  --
+main:
+00000:  81  this
+00001:  81  dup
+00002:  81  callprop "_super"
+00007:  81  swap
+00008:  81  notearg
+00009:  81  call 0
+00012:  81  pop
+00013:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:80 ---
+;; function object[6] setListener
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] listener
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:83 ---
+loc   line  op
+----- ----  --
+main:
+00000:  84  this
+00001:  84  getarg 0
+00004:  84  setprop "m_listener"
+00009:  84  pop
+00010:  84  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:83 ---
+;; function object[7] update
+;; function metadata object[7] nargs=1 bindings=5
+;; arg[0] par
+;; local[0] m_role
+;; local[1] normalDuty
+;; local[2] m_LogonTimeType
+;; local[3] lbl_leaveTime
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:86 ---
+loc   line  op
+----- ----  --
+main:
+00000:  87  this
+00001:  87  getarg 0
+00004:  87  setprop "par"
+00009:  87  pop
+00010:  88  this
+00011:  88  this
+00012:  88  getprop "par"
+00017:  88  dup
+00018:  88  callprop "getPlayerName"
+00023:  88  swap
+00024:  88  notearg
+00025:  88  call 0
+00028:  88  setprop "m_otherName"
+00033:  88  pop
+00034:  89  this
+00035:  89  getprop "m_nameLab"
+00040:  89  dup
+00041:  89  callprop "setString"
+00046:  89  swap
+00047:  89  notearg
+00048:  89  this
+00049:  89  getprop "m_otherName"
+00054:  89  notearg
+00055:  89  call 1
+00058:  89  pop
+00059:  90  this
+00060:  90  getprop "m_playerLevel"
+00065:  90  dup
+00066:  90  callprop "setString"
+00071:  90  swap
+00072:  90  notearg
+00073:  90  this
+00074:  90  getprop "par"
+00079:  90  dup
+00080:  90  callprop "getPlayerLevel"
+00085:  90  swap
+00086:  90  notearg
+00087:  90  call 0
+00090:  90  notearg
+00091:  90  call 1
+00094:  90  pop
+00095:  91  this
+00096:  91  getprop "m_vipLevel"
+00101:  91  dup
+00102:  91  callprop "setString"
+00107:  91  swap
+00108:  91  notearg
+00109:  91  this
+00110:  91  getprop "par"
+00115:  91  dup
+00116:  91  callprop "getVipLevel"
+00121:  91  swap
+00122:  91  notearg
+00123:  91  call 0
+00126:  91  notearg
+00127:  91  call 1
+00130:  91  pop
+00131:  92  this
+00132:  92  getprop "m_weekActive"
+00137:  92  dup
+00138:  92  callprop "setString"
+00143:  92  swap
+00144:  92  notearg
+00145:  92  this
+00146:  92  getprop "par"
+00151:  92  dup
+00152:  92  callprop "getActive"
+00157:  92  swap
+00158:  92  notearg
+00159:  92  call 0
+00162:  92  notearg
+00163:  92  call 1
+00166:  92  pop
+00167:  93  this
+00168:  93  getprop "m_battleTime"
+00173:  93  dup
+00174:  93  callprop "setString"
+00179:  93  swap
+00180:  93  notearg
+00181:  93  this
+00182:  93  getprop "par"
+00187:  93  dup
+00188:  93  callprop "getUnionJoinTimes"
+00193:  93  swap
+00194:  93  notearg
+00195:  93  call 0
+00198:  93  notearg
+00199:  93  call 1
+00202:  93  pop
+00203:  96  this
+00204:  96  getprop "par"
+00209:  96  dup
+00210:  96  callprop "getUserRoleToString"
+00215:  96  swap
+00216:  96  notearg
+00217:  96  call 0
+00220:  96  setlocal 0
+00223:  96  pop
+00224:  97  getlocal 0
+00227:  97  name "xs"
+00232:  97  getprop "Tools"
+00237:  97  getprop "String"
+00242:  97  dup
+00243:  97  callprop "createString"
+00248:  97  swap
+00249:  97  notearg
+00250:  97  string "auto_name_42"
+00255:  97  notearg
+00256:  97  call 1
+00259:  97  eq
+00260:  97  ifeq 290 (+30)
+00265:  98  this
+00266:  98  getprop "m_duty"
+00271:  98  dup
+00272:  98  callprop "setVisible"
+00277:  98  swap
+00278:  98  notearg
+00279:  98  true
+00280:  98  notearg
+00281:  98  call 1
+00284:  98  pop
+00285:  98  goto 415 (+130)
+00290: 100  this
+00291: 100  getprop "m_duty"
+00296: 100  dup
+00297: 100  callprop "setVisible"
+00302: 100  swap
+00303: 100  notearg
+00304: 100  false
+00305: 100  notearg
+00306: 100  call 1
+00309: 100  pop
+00310: 101  name "xs"
+00315: 101  getprop "Factorys"
+00320: 101  getprop "Label"
+00325: 101  dup
+00326: 101  callprop "createByStyleId"
+00331: 101  swap
+00332: 101  notearg
+00333: 101  string "LS_wujiangName1"
+00338: 101  notearg
+00339: 101  call 1
+00342: 101  setlocal 1
+00345: 101  pop
+00346: 102  getlocal 1
+00349: 102  dup
+00350: 102  callprop "setString"
+00355: 102  swap
+00356: 102  notearg
+00357: 102  getlocal 0
+00360: 102  notearg
+00361: 102  call 1
+00364: 102  pop
+00365: 103  name "xs"
+00370: 103  getprop "Utils"
+00375: 103  getprop "Node"
+00380: 103  dup
+00381: 103  callprop "replaceChildSafe"
+00386: 103  swap
+00387: 103  notearg
+00388: 103  this
+00389: 103  notearg
+00390: 103  this
+00391: 103  getprop "m_duty"
+00396: 103  notearg
+00397: 103  getlocal 1
+00400: 103  notearg
+00401: 103  call 3
+00404: 103  pop
+00405: 104  this
+00406: 104  getlocal 1
+00409: 104  setprop "m_duty"
+00414: 104  pop
+00415: 107  this
+00416: 107  getprop "m_contributionNum"
+00421: 107  dup
+00422: 107  callprop "setString"
+00427: 107  swap
+00428: 107  notearg
+00429: 107  this
+00430: 107  getprop "par"
+00435: 107  dup
+00436: 107  callprop "getUserDonate"
+00441: 107  swap
+00442: 107  notearg
+00443: 107  call 0
+00446: 107  notearg
+00447: 107  call 1
+00450: 107  pop
+00451: 109  this
+00452: 109  getprop "par"
+00457: 109  dup
+00458: 109  callprop "getLogonTimeTypeToString"
+00463: 109  swap
+00464: 109  notearg
+00465: 109  call 0
+00468: 109  setlocal 2
+00471: 109  pop
+00472: 110  getlocal 2
+00475: 110  name "xs"
+00480: 110  getprop "Tools"
+00485: 110  getprop "String"
+00490: 110  dup
+00491: 110  callprop "createString"
+00496: 110  swap
+00497: 110  notearg
+00498: 110  string "auto_name_37"
+00503: 110  notearg
+00504: 110  call 1
+00507: 110  eq
+00508: 110  ifeq 538 (+30)
+00513: 111  this
+00514: 111  getprop "m_onlineState"
+00519: 111  dup
+00520: 111  callprop "setVisible"
+00525: 111  swap
+00526: 111  notearg
+00527: 111  true
+00528: 111  notearg
+00529: 111  call 1
+00532: 111  pop
+00533: 111  goto 663 (+130)
+00538: 113  this
+00539: 113  getprop "m_onlineState"
+00544: 113  dup
+00545: 113  callprop "setVisible"
+00550: 113  swap
+00551: 113  notearg
+00552: 113  false
+00553: 113  notearg
+00554: 113  call 1
+00557: 113  pop
+00558: 114  name "xs"
+00563: 114  getprop "Factorys"
+00568: 114  getprop "Label"
+00573: 114  dup
+00574: 114  callprop "createByStyleId"
+00579: 114  swap
+00580: 114  notearg
+00581: 114  string "LS_jinengInf1"
+00586: 114  notearg
+00587: 114  call 1
+00590: 114  setlocal 3
+00593: 114  pop
+00594: 115  getlocal 3
+00597: 115  dup
+00598: 115  callprop "setString"
+00603: 115  swap
+00604: 115  notearg
+00605: 115  getlocal 2
+00608: 115  notearg
+00609: 115  call 1
+00612: 115  pop
+00613: 116  name "xs"
+00618: 116  getprop "Utils"
+00623: 116  getprop "Node"
+00628: 116  dup
+00629: 116  callprop "replaceChildSafe"
+00634: 116  swap
+00635: 116  notearg
+00636: 116  this
+00637: 116  notearg
+00638: 116  this
+00639: 116  getprop "m_onlineState"
+00644: 116  notearg
+00645: 116  getlocal 3
+00648: 116  notearg
+00649: 116  call 3
+00652: 116  pop
+00653: 117  this
+00654: 117  getlocal 3
+00657: 117  setprop "m_onlineState"
+00662: 117  pop
+00663: 121  this
+00664: 121  this
+00665: 121  getprop "par"
+00670: 121  dup
+00671: 121  callprop "getUserId"
+00676: 121  swap
+00677: 121  notearg
+00678: 121  call 0
+00681: 121  setprop "m_memberId"
+00686: 121  pop
+00687: 122  this
+00688: 122  getprop "m_distributionButton"
+00693: 122  dup
+00694: 122  callprop "setOnClickCallBack"
+00699: 122  swap
+00700: 122  notearg
+00701: 122  this
+00702: 122  getprop "distributionButtonCallBack"
+00707: 122  dup
+00708: 122  callprop "bind"
+00713: 122  swap
+00714: 122  notearg
+00715: 122  this
+00716: 122  notearg
+00717: 122  call 1
+00720: 122  notearg
+00721: 122  call 1
+00724: 122  pop
+00725: 122  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:86 ---
+;; function object[8] distributionButtonCallBack
+;; function metadata object[8] nargs=0 bindings=1
+;; local[0] numChooseDialog
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:125 ---
+loc   line  op
+----- ----  --
+main:
+00000: 127  name "xs"
+00005: 127  getprop "Views"
+00010: 127  getprop "Mgr"
+00015: 127  dup
+00016: 127  callprop "showDialogByName"
+00021: 127  swap
+00022: 127  notearg
+00023: 127  string "UnionDepotNumChooseDialog"
+00028: 127  notearg
+00029: 127  newinit 1
+00034: 128  this
+00035: 128  getprop "m_itemInfo"
+00040: 128  getprop "user_id"
+00045: 128  initprop "user_id"
+00050: 129  this
+00051: 129  getprop "m_memberId"
+00056: 129  initprop "member_id"
+00061: 130  this
+00062: 130  getprop "m_itemInfo"
+00067: 130  getprop "maxNum"
+00072: 130  initprop "maxNum"
+00077: 131  this
+00078: 131  getprop "m_itemInfo"
+00083: 131  getprop "pk_id"
+00088: 131  initprop "pk_id"
+00093: 131  endinit
+00094: 131  notearg
+00095: 131  call 2
+00098: 131  setlocal 0
+00101: 131  pop
+00102: 133  getlocal 0
+00105: 133  dup
+00106: 133  callprop "setListener"
+00111: 133  swap
+00112: 133  notearg
+00113: 133  this
+00114: 133  notearg
+00115: 133  call 1
+00118: 133  pop
+00119: 133  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:125 ---
+;; function object[9] create
+;; function metadata object[9] nargs=1 bindings=2
+;; arg[0] itemInfo
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:139 ---
+loc   line  op
+----- ----  --
+main:
+00000: 140  name "xs"
+00005: 140  getprop "Views"
+00010: 140  getprop "Dialog"
+00015: 140  getprop "UnionDepotMemberCell"
+00020: 140  undefined
+00021: 140  notearg
+00022: 140  new 0
+00025: 140  setlocal 0
+00028: 140  pop
+00029: 141  getlocal 0
+00032: 141  and 56 (+24)
+00037: 141  pop
+00038: 141  getlocal 0
+00041: 141  dup
+00042: 141  callprop "init"
+00047: 141  swap
+00048: 141  notearg
+00049: 141  getarg 0
+00052: 141  notearg
+00053: 141  call 1
+00056: 141  ifeq 65 (+9)
+00061: 142  getlocal 0
+00064: 142  return
+00065: 144  null
+00066: 144  return
+00067: 144  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:139 ---
+;; function object[10] ctor
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:150 ---
+loc   line  op
+----- ----  --
+main:
+00000: 151  this
+00001: 151  dup
+00002: 151  callprop "_super"
+00007: 151  swap
+00008: 151  notearg
+00009: 151  call 0
+00012: 151  pop
+00013: 152  name "cc"
+00018: 152  dup
+00019: 152  callprop "associateWithNative"
+00024: 152  swap
+00025: 152  notearg
+00026: 152  this
+00027: 152  notearg
+00028: 152  name "cc"
+00033: 152  getprop "Layer"
+00038: 152  notearg
+00039: 152  call 2
+00042: 152  pop
+00043: 152  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:150 ---
+;; function object[11] init
+;; function metadata object[11] nargs=1 bindings=1
+;; arg[0] itemInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:156 ---
+loc   line  op
+----- ----  --
+main:
+00000: 157  this
+00001: 157  dup
+00002: 157  callprop "_super"
+00007: 157  swap
+00008: 157  notearg
+00009: 157  call 0
+00012: 157  pop
+00013: 158  this
+00014: 158  newarray 0
+00018: 158  endinit
+00019: 158  setprop "m_playerList"
+00024: 158  pop
+00025: 159  this
+00026: 159  name "cc"
+00031: 159  getprop "TableView"
+00036: 159  dup
+00037: 159  callprop "create"
+00042: 159  swap
+00043: 159  notearg
+00044: 159  this
+00045: 159  notearg
+00046: 159  name "cc"
+00051: 159  dup
+00052: 159  callprop "size"
+00057: 159  swap
+00058: 159  notearg
+00059: 159  uint16 895
+00062: 159  notearg
+00063: 159  uint16 502
+00066: 159  notearg
+00067: 159  call 2
+00070: 159  notearg
+00071: 159  call 2
+00074: 159  setprop "m_tableView"
+00079: 159  pop
+00080: 160  this
+00081: 160  getprop "m_tableView"
+00086: 160  dup
+00087: 160  callprop "setDirection"
+00092: 160  swap
+00093: 160  notearg
+00094: 160  name "cc"
+00099: 160  getprop "SCROLLVIEW_DIRECTION_VERTICAL"
+00104: 160  notearg
+00105: 160  call 1
+00108: 160  pop
+00109: 161  this
+00110: 161  getprop "m_tableView"
+00115: 161  dup
+00116: 161  callprop "setPosition"
+00121: 161  swap
+00122: 161  notearg
+00123: 161  name "cc"
+00128: 161  dup
+00129: 161  callprop "p"
+00134: 161  swap
+00135: 161  notearg
+00136: 161  zero
+00137: 161  notearg
+00138: 161  int8 14
+00140: 161  notearg
+00141: 161  call 2
+00144: 161  notearg
+00145: 161  call 1
+00148: 161  pop
+00149: 162  this
+00150: 162  getprop "m_tableView"
+00155: 162  dup
+00156: 162  callprop "setDelegate"
+00161: 162  swap
+00162: 162  notearg
+00163: 162  this
+00164: 162  notearg
+00165: 162  call 1
+00168: 162  pop
+00169: 163  this
+00170: 163  getprop "m_tableView"
+00175: 163  dup
+00176: 163  callprop "setVerticalFillOrder"
+00181: 163  swap
+00182: 163  notearg
+00183: 163  name "cc"
+00188: 163  getprop "TABLEVIEW_FILL_TOPDOWN"
+00193: 163  notearg
+00194: 163  call 1
+00197: 163  pop
+00198: 164  name "xs"
+00203: 164  getprop "Utils"
+00208: 164  getprop "Node"
+00213: 164  dup
+00214: 164  callprop "attachNodes"
+00219: 164  swap
+00220: 164  notearg
+00221: 164  this
+00222: 164  notearg
+00223: 164  this
+00224: 164  getprop "m_tableView"
+00229: 164  notearg
+00230: 164  newinit 1
+00235: 164  string "lb"
+00240: 164  initprop "desc"
+00245: 164  endinit
+00246: 164  notearg
+00247: 164  call 3
+00250: 164  pop
+00251: 165  this
+00252: 165  getarg 0
+00255: 165  setprop "m_itemInfo"
+00260: 165  pop
+00261: 166  this
+00262: 166  getprop "m_tableView"
+00267: 166  dup
+00268: 166  callprop "reloadData"
+00273: 166  swap
+00274: 166  notearg
+00275: 166  call 0
+00278: 166  pop
+00279: 167  this
+00280: 167  null
+00281: 167  setprop "m_listener"
+00286: 167  pop
+00287: 168  true
+00288: 168  return
+00289: 168  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:156 ---
+;; function object[12] setListener
+;; function metadata object[12] nargs=1 bindings=1
+;; arg[0] listener
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:170 ---
+loc   line  op
+----- ----  --
+main:
+00000: 171  this
+00001: 171  getarg 0
+00004: 171  setprop "m_listener"
+00009: 171  pop
+00010: 171  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:170 ---
+;; function object[13] _readMemberList
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=185 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:175 ---
+loc   line  op
+----- ----  --
+main:
+00000: 176  name "xs"
+00005: 176  dup
+00006: 176  callprop "log"
+00011: 176  swap
+00012: 176  notearg
+00013: 176  string "m_5:"
+00018: 176  notearg
+00019: 176  call 1
+00022: 176  pop
+00023: 178  name "xs"
+00028: 178  getprop "Tools"
+00033: 178  getprop "Net"
+00038: 178  dup
+00039: 178  callprop "requestUnionUserList"
+00044: 178  swap
+00045: 178  notearg
+00046: 178  newinit 1
+00051: 179  name "xs"
+00056: 179  getprop "Profile"
+00061: 179  getprop "GameData"
+00066: 179  getprop "Mgr"
+00071: 179  dup
+00072: 179  callprop "getInstance"
+00077: 179  swap
+00078: 179  notearg
+00079: 179  call 0
+00082: 179  getprop "Union"
+00087: 179  dup
+00088: 179  callprop "getUnion"
+00093: 179  swap
+00094: 179  notearg
+00095: 179  call 0
+00098: 179  dup
+00099: 179  callprop "getUnionId"
+00104: 179  swap
+00105: 179  notearg
+00106: 179  call 0
+00109: 179  initprop "union_id"
+00114: 180  name "xs"
+00119: 180  getprop "Profile"
+00124: 180  getprop "GameData"
+00129: 180  getprop "Mgr"
+00134: 180  dup
+00135: 180  callprop "getInstance"
+00140: 180  swap
+00141: 180  notearg
+00142: 180  call 0
+00145: 180  getprop "Player"
+00150: 180  dup
+00151: 180  callprop "getPlayer"
+00156: 180  swap
+00157: 180  notearg
+00158: 180  call 0
+00161: 180  dup
+00162: 180  callprop "getPlayerId"
+00167: 180  swap
+00168: 180  notearg
+00169: 180  call 0
+00172: 180  initprop "user_id"
+00177: 181  true
+00178: 181  initprop "forcepush"
+00183: 181  endinit
+00184: 181  notearg
+00185: 183  lambda (function () {
+    [sourceless code]
+})
+00190: 183  dup
+00191: 183  callprop "bind"
+00196: 183  swap
+00197: 183  notearg
+00198: 194  this
+00199: 194  notearg
+00200: 194  call 1
+00203: 194  notearg
+00204: 195  this
+00205: 195  notearg
+00206: 195  call 3
+00209: 195  pop
+00210: 196  this
+00211: 196  getprop "m_tableView"
+00216: 196  dup
+00217: 196  callprop "reloadData"
+00222: 196  swap
+00223: 196  notearg
+00224: 196  call 0
+00227: 196  pop
+00228: 196  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:175 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=3
+;; arg[0] data
+;; local[0] mList
+;; local[1] x
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:183 ---
+loc   line  op
+----- ----  --
+main:
+00000: 184  getarg 0
+00003: 184  getprop "result"
+00008: 184  not
+00009: 184  ifeq 16 (+7)
+00014: 185  undefined
+00015: 185  return
+00016: 188  getarg 0
+00019: 188  getprop "return_info"
+00024: 188  getprop "user_list"
+00029: 188  setlocal 0
+00032: 188  pop
+00033: 189  this
+00034: 189  newarray 0
+00038: 189  endinit
+00039: 189  setprop "m_playerList"
+00044: 189  pop
+00045: 190  zero
+00046: 190  setlocal 1
+00049: 190  pop
+00050: 190  goto 124 (+74)
+00055: 191  loophead
+00056: 191  this
+00057: 191  getprop "m_playerList"
+00062: 191  dup
+00063: 191  callprop "push"
+00068: 191  swap
+00069: 191  notearg
+00070: 191  name "xs"
+00075: 191  getprop "Models"
+00080: 191  getprop "UnionMember"
+00085: 191  dup
+00086: 191  callprop "createWithJson"
+00091: 191  swap
+00092: 191  notearg
+00093: 191  getlocal 0
+00096: 191  getlocal 1
+00099: 191  getelem
+00100: 191  notearg
+00101: 191  call 1
+00104: 191  notearg
+00105: 191  call 1
+00108: 191  pop
+00109: 190  localinc 11
+00112: 190  getlocal 1
+00115: 190  pos
+00116: 190  dup
+00117: 190  one
+00118: 190  add
+00119: 190  setlocal 1
+00122: 190  pop
+00123: 190  pop
+00124: 190  loopentry
+00125: 190  getlocal 1
+00128: 190  getlocal 0
+00131: 190  length "length"
+00136: 190  lt
+00137: 190  ifne 55 (-82)
+00142: 193  this
+00143: 193  getprop "m_tableView"
+00148: 193  dup
+00149: 193  callprop "reloadData"
+00154: 193  swap
+00155: 193  notearg
+00156: 193  call 0
+00159: 193  pop
+00160: 193  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:183 ---
+;; function object[14] refreshFromMenuClick
+;; function metadata object[14] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:199 ---
+loc   line  op
+----- ----  --
+main:
+00000: 200  name "xs"
+00005: 200  dup
+00006: 200  callprop "log"
+00011: 200  swap
+00012: 200  notearg
+00013: 200  string "refreshFromMenuClick in baseLayer"
+00018: 200  notearg
+00019: 200  call 1
+00022: 200  pop
+00023: 201  this
+00024: 201  getprop "isNeedRefresh"
+00029: 201  ifeq 42 (+13)
+00034: 202  this
+00035: 202  false
+00036: 202  setprop "isNeedRefresh"
+00041: 202  pop
+00042: 205  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:199 ---
+;; function object[15] onEnterTransitionDidFinish
+;; function metadata object[15] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:208 ---
+loc   line  op
+----- ----  --
+main:
+00000: 210  this
+00001: 210  dup
+00002: 210  callprop "_super"
+00007: 210  swap
+00008: 210  notearg
+00009: 210  call 0
+00012: 210  pop
+00013: 211  name "xs"
+00018: 211  dup
+00019: 211  callprop "log"
+00024: 211  swap
+00025: 211  notearg
+00026: 211  string "EnterTransitionDidFinish"
+00031: 211  notearg
+00032: 211  call 1
+00035: 211  pop
+00036: 212  this
+00037: 212  dup
+00038: 212  callprop "_readMemberList"
+00043: 212  swap
+00044: 212  notearg
+00045: 212  call 0
+00048: 212  pop
+00049: 212  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:208 ---
+;; function object[16] onExitTransitionDidStart
+;; function metadata object[16] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:216 ---
+loc   line  op
+----- ----  --
+main:
+00000: 217  this
+00001: 217  dup
+00002: 217  callprop "_super"
+00007: 217  swap
+00008: 217  notearg
+00009: 217  call 0
+00012: 217  pop
+00013: 217  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:216 ---
+;; function object[17] scrollViewDidScroll
+;; function metadata object[17] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:222 ---
+loc   line  op
+----- ----  --
+main:
+00000: 222  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:222 ---
+;; function object[18] scrollViewDidZoom
+;; function metadata object[18] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:225 ---
+loc   line  op
+----- ----  --
+main:
+00000: 225  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:225 ---
+;; function object[19] tableCellTouched
+;; function metadata object[19] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:228 ---
+loc   line  op
+----- ----  --
+main:
+00000: 228  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:228 ---
+;; function object[20] tableCellSizeForIndex
+;; function metadata object[20] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:232 ---
+loc   line  op
+----- ----  --
+main:
+00000: 233  name "cc"
+00005: 233  dup
+00006: 233  callprop "size"
+00011: 233  swap
+00012: 233  notearg
+00013: 233  uint16 882
+00016: 233  notearg
+00017: 233  int8 107
+00019: 233  notearg
+00020: 233  call 2
+00023: 233  return
+00024: 233  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:232 ---
+;; function object[21] tableCellAtIndex
+;; function metadata object[21] nargs=2 bindings=3
+;; arg[0] table
+;; arg[1] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:236 ---
+loc   line  op
+----- ----  --
+main:
+00000: 237  name "cc"
+00005: 237  dup
+00006: 237  callprop "log"
+00011: 237  swap
+00012: 237  notearg
+00013: 237  getarg 1
+00016: 237  string "-----"
+00021: 237  add
+00022: 237  notearg
+00023: 237  call 1
+00026: 237  pop
+00027: 238  getarg 0
+00030: 238  dup
+00031: 238  callprop "dequeueCell"
+00036: 238  swap
+00037: 238  notearg
+00038: 238  call 0
+00041: 238  setlocal 0
+00044: 238  pop
+00045: 239  name "xs"
+00050: 239  dup
+00051: 239  callprop "log"
+00056: 239  swap
+00057: 239  notearg
+00058: 239  string "cell create start"
+00063: 239  notearg
+00064: 239  call 1
+00067: 239  pop
+00068: 240  getlocal 0
+00071: 240  not
+00072: 240  ifeq 136 (+64)
+00077: 241  name "xs"
+00082: 241  getprop "Views"
+00087: 241  getprop "Dialog"
+00092: 241  getprop "UnionDepotMemberCell"
+00097: 241  dup
+00098: 241  callprop "create"
+00103: 241  swap
+00104: 241  notearg
+00105: 241  this
+00106: 241  getprop "m_itemInfo"
+00111: 241  notearg
+00112: 241  call 1
+00115: 241  setlocal 0
+00118: 241  pop
+00119: 242  getlocal 0
+00122: 242  dup
+00123: 242  callprop "setListener"
+00128: 242  swap
+00129: 242  notearg
+00130: 242  this
+00131: 242  notearg
+00132: 242  call 1
+00135: 242  pop
+00136: 244  name "xs"
+00141: 244  dup
+00142: 244  callprop "dump"
+00147: 244  swap
+00148: 244  notearg
+00149: 244  this
+00150: 244  getprop "m_playerList"
+00155: 244  notearg
+00156: 244  call 1
+00159: 244  pop
+00160: 245  getlocal 0
+00163: 245  dup
+00164: 245  callprop "update"
+00169: 245  swap
+00170: 245  notearg
+00171: 245  this
+00172: 245  getprop "m_playerList"
+00177: 245  getarg 1
+00180: 245  getelem
+00181: 245  notearg
+00182: 245  call 1
+00185: 245  pop
+00186: 248  getlocal 0
+00189: 248  return
+00190: 248  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:236 ---
+;; function object[22] setBaseTouchPriority
+;; function metadata object[22] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:251 ---
+loc   line  op
+----- ----  --
+main:
+00000: 252  this
+00001: 252  getarg 0
+00004: 252  setprop "m_baseTouchPriority"
+00009: 252  pop
+00010: 254  this
+00011: 254  dup
+00012: 254  callprop "setTouchPriority"
+00017: 254  swap
+00018: 254  notearg
+00019: 254  this
+00020: 254  getprop "m_baseTouchPriority"
+00025: 254  notearg
+00026: 254  call 1
+00029: 254  pop
+00030: 255  this
+00031: 255  getprop "m_tableView"
+00036: 255  dup
+00037: 255  callprop "setTouchPriority"
+00042: 255  swap
+00043: 255  notearg
+00044: 255  this
+00045: 255  getprop "m_baseTouchPriority"
+00050: 255  one
+00051: 255  sub
+00052: 255  notearg
+00053: 255  call 1
+00056: 255  pop
+00057: 255  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:251 ---
+;; function object[23] numberOfCellsInTableView
+;; function metadata object[23] nargs=1 bindings=1
+;; arg[0] table
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:258 ---
+loc   line  op
+----- ----  --
+main:
+00000: 260  this
+00001: 260  getprop "m_playerList"
+00006: 260  length "length"
+00011: 260  return
+00012: 260  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:258 ---
+;; function object[24] scrollViewDidScroll
+;; function metadata object[24] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:263 ---
+loc   line  op
+----- ----  --
+main:
+00000: 263  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:263 ---
+;; function object[25] scrollViewDidZoom
+;; function metadata object[25] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:267 ---
+loc   line  op
+----- ----  --
+main:
+00000: 268  name "xs"
+00005: 268  getprop "Views"
+00010: 268  getprop "Mgr"
+00015: 268  dup
+00016: 268  callprop "showToast"
+00021: 268  swap
+00022: 268  notearg
+00023: 268  string "scrollViewDidZoom"
+00028: 268  notearg
+00029: 268  call 1
+00032: 268  pop
+00033: 268  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:267 ---
+;; function object[26] tableCellTouched
+;; function metadata object[26] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:271 ---
+loc   line  op
+----- ----  --
+main:
+00000: 272  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:271 ---
+;; function object[27] create
+;; function metadata object[27] nargs=1 bindings=2
+;; arg[0] itemInfo
+;; local[0] retObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:277 ---
+loc   line  op
+----- ----  --
+main:
+00000: 278  name "xs"
+00005: 278  getprop "Views"
+00010: 278  getprop "Dialog"
+00015: 278  getprop "UnionDepotMemberDialogLayer"
+00020: 278  undefined
+00021: 278  notearg
+00022: 278  new 0
+00025: 278  setlocal 0
+00028: 278  pop
+00029: 279  getlocal 0
+00032: 279  and 56 (+24)
+00037: 279  pop
+00038: 279  getlocal 0
+00041: 279  dup
+00042: 279  callprop "init"
+00047: 279  swap
+00048: 279  notearg
+00049: 279  getarg 0
+00052: 279  notearg
+00053: 279  call 1
+00056: 279  ifeq 65 (+9)
+00061: 280  getlocal 0
+00064: 280  return
+00065: 282  null
+00066: 282  return
+00067: 282  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:277 ---
+;; function object[28] init
+;; function metadata object[28] nargs=1 bindings=1
+;; arg[0] itemInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:296 ---
+loc   line  op
+----- ----  --
+main:
+00000: 297  this
+00001: 297  dup
+00002: 297  callprop "_super"
+00007: 297  swap
+00008: 297  notearg
+00009: 297  call 0
+00012: 297  pop
+00013: 298  this
+00014: 298  null
+00015: 298  setprop "btnClose"
+00020: 298  pop
+00021: 299  this
+00022: 299  null
+00023: 299  setprop "lblTitle"
+00028: 299  pop
+00029: 300  this
+00030: 300  name "cc"
+00035: 300  dup
+00036: 300  callprop "size"
+00041: 300  swap
+00042: 300  notearg
+00043: 300  uint16 891
+00046: 300  notearg
+00047: 300  uint16 420
+00050: 300  notearg
+00051: 300  call 2
+00054: 300  setprop "m_defaultSize"
+00059: 300  pop
+00060: 302  this
+00061: 302  name "xs"
+00066: 302  getprop "ccb_reader"
+00071: 302  dup
+00072: 302  callprop "load"
+00077: 302  swap
+00078: 302  notearg
+00079: 302  name "xs"
+00084: 302  getprop "Cfg"
+00089: 302  getprop "CCBI"
+00094: 302  getprop "UnionDepotMemberDialog"
+00099: 302  notearg
+00100: 302  this
+00101: 302  notearg
+00102: 302  call 2
+00105: 302  setprop "ccbNode"
+00110: 302  pop
+00111: 303  this
+00112: 303  getprop "ccbNode"
+00117: 303  dup
+00118: 303  callprop "setContentSize"
+00123: 303  swap
+00124: 303  notearg
+00125: 303  name "cc"
+00130: 303  dup
+00131: 303  callprop "size"
+00136: 303  swap
+00137: 303  notearg
+00138: 303  uint16 935
+00141: 303  notearg
+00142: 303  uint16 613
+00145: 303  notearg
+00146: 303  call 2
+00149: 303  notearg
+00150: 303  call 1
+00153: 303  pop
+00154: 304  this
+00155: 304  getprop "ccbNode"
+00160: 304  dup
+00161: 304  callprop "setAnchorPoint"
+00166: 304  swap
+00167: 304  notearg
+00168: 304  name "cc"
+00173: 304  dup
+00174: 304  callprop "p"
+00179: 304  swap
+00180: 304  notearg
+00181: 304  double 0.5
+00186: 304  notearg
+00187: 304  double 0.5
+00192: 304  notearg
+00193: 304  call 2
+00196: 304  notearg
+00197: 304  call 1
+00200: 304  pop
+00201: 305  this
+00202: 305  null
+00203: 305  setprop "m_listener"
+00208: 305  pop
+00209: 306  name "xs"
+00214: 306  getprop "Utils"
+00219: 306  getprop "Node"
+00224: 306  dup
+00225: 306  callprop "attachNodes"
+00230: 306  swap
+00231: 306  notearg
+00232: 306  this
+00233: 306  notearg
+00234: 306  this
+00235: 306  getprop "ccbNode"
+00240: 306  notearg
+00241: 306  newinit 1
+00246: 306  string "c"
+00251: 306  initprop "desc"
+00256: 306  endinit
+00257: 306  notearg
+00258: 306  call 3
+00261: 306  pop
+00262: 307  name "xs"
+00267: 307  getprop "Utils"
+00272: 307  getprop "UI"
+00277: 307  dup
+00278: 307  callprop "replaceCcbByCfg"
+00283: 307  swap
+00284: 307  notearg
+00285: 307  this
+00286: 307  getprop "ccbNode"
+00291: 307  notearg
+00292: 307  this
+00293: 307  getprop "cfg"
+00298: 307  getprop "ccbCfg"
+00303: 307  notearg
+00304: 307  this
+00305: 307  notearg
+00306: 307  call 3
+00309: 307  pop
+00310: 309  this
+00311: 309  getprop "btnClose"
+00316: 309  dup
+00317: 309  callprop "setOnClickCallBack"
+00322: 309  swap
+00323: 309  notearg
+00324: 309  this
+00325: 309  getprop "btnCloseClickCallBack"
+00330: 309  dup
+00331: 309  callprop "bind"
+00336: 309  swap
+00337: 309  notearg
+00338: 309  this
+00339: 309  notearg
+00340: 309  call 1
+00343: 309  notearg
+00344: 309  call 1
+00347: 309  pop
+00348: 311  this
+00349: 311  getprop "lblTitle"
+00354: 311  dup
+00355: 311  callprop "setString"
+00360: 311  swap
+00361: 311  notearg
+00362: 311  name "xs"
+00367: 311  getprop "Tools"
+00372: 311  getprop "String"
+00377: 311  dup
+00378: 311  callprop "createString"
+00383: 311  swap
+00384: 311  notearg
+00385: 311  string "lblStr_unionDepotMbrDlgTtl"
+00390: 311  notearg
+00391: 311  call 1
+00394: 311  notearg
+00395: 311  call 1
+00398: 311  pop
+00399: 312  this
+00400: 312  name "xs"
+00405: 312  getprop "Views"
+00410: 312  getprop "Dialog"
+00415: 312  getprop "UnionDepotMemberDialogLayer"
+00420: 312  dup
+00421: 312  callprop "create"
+00426: 312  swap
+00427: 312  notearg
+00428: 312  getarg 0
+00431: 312  notearg
+00432: 312  call 1
+00435: 312  setprop "layer"
+00440: 312  pop
+00441: 313  this
+00442: 313  getprop "layer"
+00447: 313  dup
+00448: 313  callprop "setListener"
+00453: 313  swap
+00454: 313  notearg
+00455: 313  this
+00456: 313  notearg
+00457: 313  call 1
+00460: 313  pop
+00461: 314  name "xs"
+00466: 314  getprop "Utils"
+00471: 314  getprop "Node"
+00476: 314  dup
+00477: 314  callprop "attachNodes"
+00482: 314  swap
+00483: 314  notearg
+00484: 314  this
+00485: 314  getprop "ccbNode"
+00490: 314  notearg
+00491: 314  this
+00492: 314  getprop "layer"
+00497: 314  notearg
+00498: 314  newinit 1
+00503: 314  name "cc"
+00508: 314  dup
+00509: 314  callprop "p"
+00514: 314  swap
+00515: 314  notearg
+00516: 314  int8 26
+00518: 314  notearg
+00519: 314  int8 23
+00521: 314  notearg
+00522: 314  call 2
+00525: 314  initprop "offset"
+00530: 314  string "lb"
+00535: 314  initprop "desc"
+00540: 314  true
+00541: 314  initprop "sc"
+00546: 314  endinit
+00547: 314  notearg
+00548: 314  call 3
+00551: 314  pop
+00552: 316  true
+00553: 316  return
+00554: 316  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:296 ---
+;; function object[29] btnCloseClickCallBack
+;; function metadata object[29] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:322 ---
+loc   line  op
+----- ----  --
+main:
+00000: 323  name "xs"
+00005: 323  getprop "Views"
+00010: 323  getprop "Mgr"
+00015: 323  dup
+00016: 323  callprop "hideDialog"
+00021: 323  swap
+00022: 323  notearg
+00023: 323  call 0
+00026: 323  pop
+00027: 324  this
+00028: 324  getprop "m_listener"
+00033: 324  getprop "m_listener"
+00038: 324  and 60 (+22)
+00043: 324  pop
+00044: 324  this
+00045: 324  getprop "m_listener"
+00050: 324  getprop "m_listener"
+00055: 324  getprop "_readUnionDepotList"
+00060: 324  ifeq 88 (+28)
+00065: 325  this
+00066: 325  getprop "m_listener"
+00071: 325  getprop "m_listener"
+00076: 325  dup
+00077: 325  callprop "_readUnionDepotList"
+00082: 325  swap
+00083: 325  notearg
+00084: 325  call 0
+00087: 325  pop
+00088: 326  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:322 ---
+;; function object[30] setBaseTouchPriority
+;; function metadata object[30] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:330 ---
+loc   line  op
+----- ----  --
+main:
+00000: 331  this
+00001: 331  getarg 0
+00004: 331  setprop "m_baseTouchPriority"
+00009: 331  pop
+00010: 332  this
+00011: 332  getprop "btnClose"
+00016: 332  dup
+00017: 332  callprop "setTouchPriority"
+00022: 332  swap
+00023: 332  notearg
+00024: 332  this
+00025: 332  getprop "m_baseTouchPriority"
+00030: 332  int8 2
+00032: 332  sub
+00033: 332  notearg
+00034: 332  call 1
+00037: 332  pop
+00038: 333  this
+00039: 333  getprop "layer"
+00044: 333  dup
+00045: 333  callprop "setBaseTouchPriority"
+00050: 333  swap
+00051: 333  notearg
+00052: 333  this
+00053: 333  getprop "m_baseTouchPriority"
+00058: 333  one
+00059: 333  sub
+00060: 333  notearg
+00061: 333  call 1
+00064: 333  pop
+00065: 333  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:330 ---
+;; function object[31] setListener
+;; function metadata object[31] nargs=1 bindings=1
+;; arg[0] listener
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:336 ---
+loc   line  op
+----- ----  --
+main:
+00000: 337  this
+00001: 337  getarg 0
+00004: 337  setprop "m_listener"
+00009: 337  pop
+00010: 337  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:336 ---
+;; function object[32] create
+;; function metadata object[32] nargs=1 bindings=2
+;; arg[0] itemInfo
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:341 ---
+loc   line  op
+----- ----  --
+main:
+00000: 342  name "xs"
+00005: 342  getprop "Views"
+00010: 342  getprop "Dialog"
+00015: 342  getprop "UnionDepotMemberDialog"
+00020: 342  undefined
+00021: 342  notearg
+00022: 342  new 0
+00025: 342  setlocal 0
+00028: 342  pop
+00029: 343  getlocal 0
+00032: 343  and 56 (+24)
+00037: 343  pop
+00038: 343  getlocal 0
+00041: 343  dup
+00042: 343  callprop "init"
+00047: 343  swap
+00048: 343  notearg
+00049: 343  getarg 0
+00052: 343  notearg
+00053: 343  call 1
+00056: 343  ifeq 65 (+9)
+00061: 344  getlocal 0
+00064: 344  return
+00065: 346  null
+00066: 346  return
+00067: 346  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/UnionDepotMemberDialog.js:341 ---

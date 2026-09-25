@@ -1,0 +1,922 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Login/headers.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=36 object[0]
+;; FUNCTION-MAP kind=lambda offset=46 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/headers.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Scene"
+00010:   8  name "xs"
+00015:   8  getprop "Scene"
+00020:   8  getprop "Login"
+00025:   8  or 57 (+32)
+00030:   8  pop
+00031:   8  newinit 1
+00036:  11  lambda (function () {
+    [sourceless code]
+})
+00041:  11  initprop "onResponse_GetServerList"
+00046:  17  lambda (function () {
+    [sourceless code]
+})
+00051:  17  initprop "onGetPlayerInfoSuccess"
+00056:  17  endinit
+00057:  17  setprop "Login"
+00062:  17  popv
+00063: 133  name "xs"
+00068: 133  getprop "Utils"
+00073: 133  dup
+00074: 133  callprop "require"
+00079: 133  swap
+00080: 133  notearg
+00081: 134  newarray 1
+00085: 135  string "Views/ServerSelectView.js"
+00090: 135  initelem_array 0
+00094: 135  endinit
+00095: 135  notearg
+00096: 135  call 1
+00099: 135  popv
+00100: 139  name "xs"
+00105: 139  dup
+00106: 139  callprop "log"
+00111: 139  swap
+00112: 139  notearg
+00113: 139  string "app_account_sys in headers = "
+00118: 139  name "xs"
+00123: 139  getprop "app_account_sys"
+00128: 139  add
+00129: 139  notearg
+00130: 139  call 1
+00133: 139  popv
+00134: 142  name "xsc"
+00139: 142  getprop "Tools"
+00144: 142  getprop "AccountSys"
+00149: 142  dup
+00150: 142  callprop "isUsingBfSdk"
+00155: 142  swap
+00156: 142  notearg
+00157: 142  call 0
+00160: 142  ifeq 207 (+47)
+00165: 143  name "xs"
+00170: 143  getprop "Utils"
+00175: 143  dup
+00176: 143  callprop "require"
+00181: 143  swap
+00182: 143  notearg
+00183: 144  newarray 1
+00187: 145  string "Scene/Login/LoginScene_BfSdk.js"
+00192: 145  initelem_array 0
+00196: 145  endinit
+00197: 145  notearg
+00198: 145  call 1
+00201: 145  popv
+00202: 145  goto 604 (+402)
+00207: 149  name "xsc"
+00212: 149  getprop "Tools"
+00217: 149  getprop "AccountSys"
+00222: 149  dup
+00223: 149  callprop "isUsingAnySdk"
+00228: 149  swap
+00229: 149  notearg
+00230: 149  call 0
+00233: 149  ifeq 280 (+47)
+00238: 150  name "xs"
+00243: 150  getprop "Utils"
+00248: 150  dup
+00249: 150  callprop "require"
+00254: 150  swap
+00255: 150  notearg
+00256: 151  newarray 1
+00260: 152  string "Scene/Login/LoginScene_AnySdk.js"
+00265: 152  initelem_array 0
+00269: 152  endinit
+00270: 152  notearg
+00271: 152  call 1
+00274: 152  popv
+00275: 152  goto 604 (+329)
+00280: 156  name "xsc"
+00285: 156  getprop "Tools"
+00290: 156  getprop "AccountSys"
+00295: 156  dup
+00296: 156  callprop "isUsing3rdSdk"
+00301: 156  swap
+00302: 156  notearg
+00303: 156  call 0
+00306: 156  ifeq 472 (+166)
+00311: 158  name "xsc"
+00316: 158  getprop "Tools"
+00321: 158  getprop "AccountSys"
+00326: 158  dup
+00327: 158  callprop "isUsingGuest"
+00332: 158  swap
+00333: 158  notearg
+00334: 158  call 0
+00337: 158  ifeq 407 (+70)
+00342: 159  name "xs"
+00347: 159  dup
+00348: 159  callprop "log"
+00353: 159  swap
+00354: 159  notearg
+00355: 159  string "\u8FDB\u5165 ThirdGuestSdk"
+00360: 159  notearg
+00361: 159  call 1
+00364: 159  popv
+00365: 160  name "xs"
+00370: 160  getprop "Utils"
+00375: 160  dup
+00376: 160  callprop "require"
+00381: 160  swap
+00382: 160  notearg
+00383: 161  newarray 1
+00387: 162  string "Scene/Login/LoginScene_ThirdGuestSdk.js"
+00392: 162  initelem_array 0
+00396: 162  endinit
+00397: 162  notearg
+00398: 162  call 1
+00401: 162  popv
+00402: 162  goto 467 (+65)
+00407: 167  name "xs"
+00412: 167  dup
+00413: 167  callprop "log"
+00418: 167  swap
+00419: 167  notearg
+00420: 167  string "\u8FDB\u5165 ThirdSdk"
+00425: 167  notearg
+00426: 167  call 1
+00429: 167  popv
+00430: 168  name "xs"
+00435: 168  getprop "Utils"
+00440: 168  dup
+00441: 168  callprop "require"
+00446: 168  swap
+00447: 168  notearg
+00448: 169  newarray 1
+00452: 170  string "Scene/Login/LoginScene_ThirdSdk.js"
+00457: 170  initelem_array 0
+00461: 170  endinit
+00462: 170  notearg
+00463: 170  call 1
+00466: 170  popv
+00467: 170  goto 604 (+137)
+00472: 176  name "xsc"
+00477: 176  getprop "Tools"
+00482: 176  getprop "AccountSys"
+00487: 176  dup
+00488: 176  callprop "isUsingEasySdk"
+00493: 176  swap
+00494: 176  notearg
+00495: 176  call 0
+00498: 176  ifeq 604 (+106)
+00503: 177  name "xs"
+00508: 177  dup
+00509: 177  callprop "log"
+00514: 177  swap
+00515: 177  notearg
+00516: 177  string "\u8FDB\u5165 EasySdk"
+00521: 177  notearg
+00522: 177  call 1
+00525: 177  popv
+00526: 178  name "xs"
+00531: 178  getprop "Utils"
+00536: 178  dup
+00537: 178  callprop "require"
+00542: 178  swap
+00543: 178  notearg
+00544: 179  newarray 1
+00548: 180  name "xsc"
+00553: 180  getprop "Tools"
+00558: 180  getprop "AccountSys"
+00563: 180  dup
+00564: 180  callprop "isUsingGuest"
+00569: 180  swap
+00570: 180  notearg
+00571: 180  call 0
+00574: 180  ifeq 589 (+15)
+00579: 180  string "Scene/Login/LoginScene_EasyGuestSdk.js"
+00584: 180  goto 594 (+10)
+00589: 180  string "Scene/Login/LoginScene_EasySdk.js"
+00594: 180  initelem_array 0
+00598: 180  endinit
+00599: 180  notearg
+00600: 180  call 1
+00603: 180  popv
+00604: 182  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/headers.js:1 ---
+;; function object[0] onResponse_GetServerList
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] jsonObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/headers.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  name "xs"
+00005:  12  getprop "g_account"
+00010:  12  dup
+00011:  12  callprop "init"
+00016:  12  swap
+00017:  12  notearg
+00018:  12  getarg 0
+00021:  12  notearg
+00022:  12  call 1
+00025:  12  pop
+00026:  13  name "xs"
+00031:  13  getprop "g_account"
+00036:  13  dup
+00037:  13  callprop "onLoginSuccess"
+00042:  13  swap
+00043:  13  notearg
+00044:  13  call 0
+00047:  13  pop
+00048:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/headers.js:11 ---
+;; function object[1] onGetPlayerInfoSuccess
+;; function metadata object[1] nargs=1 bindings=6
+;; arg[0] jsonObj
+;; local[0] player
+;; local[1] params
+;; local[2] isWeiDuanUp
+;; local[3] freshStep
+;; local[4] userInfoArgs
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/headers.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  21  name "xs"
+00005:  21  dup
+00006:  21  callprop "dump"
+00011:  21  swap
+00012:  21  notearg
+00013:  21  string "onResponse_GetServerList in"
+00018:  21  notearg
+00019:  21  getarg 0
+00022:  21  notearg
+00023:  21  call 2
+00026:  21  pop
+00027:  23  name "xs"
+00032:  23  getprop "Profile"
+00037:  23  getprop "GameData"
+00042:  23  getprop "Mgr"
+00047:  23  dup
+00048:  23  callprop "getInstance"
+00053:  23  swap
+00054:  23  notearg
+00055:  23  call 0
+00058:  23  dup
+00059:  23  callprop "init_Login"
+00064:  23  swap
+00065:  23  notearg
+00066:  23  getarg 0
+00069:  23  notearg
+00070:  23  call 1
+00073:  23  pop
+00074:  25  name "xs"
+00079:  25  getprop "g_account"
+00084:  25  dup
+00085:  25  callprop "onGetPlayerInfoSuccess"
+00090:  25  swap
+00091:  25  notearg
+00092:  25  call 0
+00095:  25  pop
+00096:  27  name "xs"
+00101:  27  getprop "Tools"
+00106:  27  getprop "TalkingDataAppCpa"
+00111:  27  dup
+00112:  27  callprop "onLogin"
+00117:  27  swap
+00118:  27  notearg
+00119:  27  call 0
+00122:  27  pop
+00123:  29  name "xs"
+00128:  29  getprop "Profile"
+00133:  29  getprop "GameData"
+00138:  29  getprop "Mgr"
+00143:  29  dup
+00144:  29  callprop "getInstance"
+00149:  29  swap
+00150:  29  notearg
+00151:  29  call 0
+00154:  29  getprop "Player"
+00159:  29  dup
+00160:  29  callprop "getPlayer"
+00165:  29  swap
+00166:  29  notearg
+00167:  29  call 0
+00170:  29  setlocal 0
+00173:  29  pop
+00174:  32  name "xsc"
+00179:  32  getprop "Tools"
+00184:  32  getprop "AccountSys"
+00189:  32  dup
+00190:  32  callprop "isUsingEasySdk"
+00195:  32  swap
+00196:  32  notearg
+00197:  32  call 0
+00200:  32  ifeq 321 (+121)
+00205:  34  name "xs"
+00210:  34  getprop "JsbConnecter"
+00215:  34  dup
+00216:  34  callprop "getInstance"
+00221:  34  swap
+00222:  34  notearg
+00223:  34  call 0
+00226:  34  dup
+00227:  34  callprop "invoke"
+00232:  34  swap
+00233:  34  notearg
+00234:  34  string "TestinHelp"
+00239:  34  notearg
+00240:  34  string "setUserInfo"
+00245:  34  notearg
+00246:  35  string ""
+00251:  35  getlocal 0
+00254:  35  dup
+00255:  35  callprop "getPlayerId"
+00260:  35  swap
+00261:  35  notearg
+00262:  35  call 0
+00265:  35  add
+00266:  36  string "_lv"
+00271:  36  add
+00272:  36  getlocal 0
+00275:  36  dup
+00276:  36  callprop "getPlayerLevel"
+00281:  36  swap
+00282:  36  notearg
+00283:  36  call 0
+00286:  36  add
+00287:  37  string "_sever"
+00292:  37  add
+00293:  37  this
+00294:  37  getprop "m_server_info"
+00299:  37  dup
+00300:  37  callprop "getCurServerId"
+00305:  37  swap
+00306:  37  notearg
+00307:  37  call 0
+00310:  37  add
+00311:  37  notearg
+00312:  37  call 3
+00315:  37  pop
+00316:  37  goto 426 (+110)
+00321:  41  name "xs"
+00326:  41  getprop "JsbConnecter"
+00331:  41  dup
+00332:  41  callprop "getInstance"
+00337:  41  swap
+00338:  41  notearg
+00339:  41  call 0
+00342:  41  dup
+00343:  41  callprop "invoke"
+00348:  41  swap
+00349:  41  notearg
+00350:  41  string "TestinHelp"
+00355:  41  notearg
+00356:  41  string "setUserInfo"
+00361:  41  notearg
+00362:  42  string ""
+00367:  42  getlocal 0
+00370:  42  dup
+00371:  42  callprop "getPlayerId"
+00376:  42  swap
+00377:  42  notearg
+00378:  42  call 0
+00381:  42  add
+00382:  43  string "_lv"
+00387:  43  add
+00388:  43  getlocal 0
+00391:  43  dup
+00392:  43  callprop "getPlayerLevel"
+00397:  43  swap
+00398:  43  notearg
+00399:  43  call 0
+00402:  43  add
+00403:  44  string "_sever"
+00408:  44  add
+00409:  44  this
+00410:  44  getprop "curSelServer"
+00415:  44  getprop "server_id"
+00420:  44  add
+00421:  44  notearg
+00422:  44  call 3
+00425:  44  pop
+00426:  47  name "xsc"
+00431:  47  getprop "Tools"
+00436:  47  getprop "AccountSys"
+00441:  47  dup
+00442:  47  callprop "isUsingAnySdk"
+00447:  47  swap
+00448:  47  notearg
+00449:  47  call 0
+00452:  47  ifeq 565 (+113)
+00457:  48  name "xs"
+00462:  48  getprop "AnySdk"
+00467:  48  getprop "AnySdkHelp_js"
+00472:  48  dup
+00473:  48  callprop "submitLoginGameRole"
+00478:  48  swap
+00479:  48  notearg
+00480:  49  getlocal 0
+00483:  49  dup
+00484:  49  callprop "getPlayerId"
+00489:  49  swap
+00490:  49  notearg
+00491:  49  call 0
+00494:  49  notearg
+00495:  50  getlocal 0
+00498:  50  dup
+00499:  50  callprop "getPlayerName"
+00504:  50  swap
+00505:  50  notearg
+00506:  50  call 0
+00509:  50  notearg
+00510:  51  getlocal 0
+00513:  51  dup
+00514:  51  callprop "getPlayerLevel"
+00519:  51  swap
+00520:  51  notearg
+00521:  51  call 0
+00524:  51  notearg
+00525:  52  this
+00526:  52  getprop "curSelServer"
+00531:  52  getprop "server_id"
+00536:  52  notearg
+00537:  53  this
+00538:  53  getprop "curSelServer"
+00543:  53  getprop "server_title"
+00548:  53  notearg
+00549:  54  string "1"
+00554:  54  notearg
+00555:  55  string "0"
+00560:  55  notearg
+00561:  55  call 7
+00564:  55  pop
+00565:  59  name "xsc"
+00570:  59  getprop "Tools"
+00575:  59  getprop "AccountSys"
+00580:  59  dup
+00581:  59  callprop "isUsing3rdSdk"
+00586:  59  swap
+00587:  59  notearg
+00588:  59  call 0
+00591:  59  ifeq 747 (+156)
+00596:  60  string ""
+00601:  60  getlocal 0
+00604:  60  dup
+00605:  60  callprop "getPlayerId"
+00610:  60  swap
+00611:  60  notearg
+00612:  60  call 0
+00615:  60  add
+00616:  60  string "|"
+00621:  60  add
+00622:  61  getlocal 0
+00625:  61  dup
+00626:  61  callprop "getPlayerName"
+00631:  61  swap
+00632:  61  notearg
+00633:  61  call 0
+00636:  61  add
+00637:  61  string "|"
+00642:  61  add
+00643:  62  getlocal 0
+00646:  62  dup
+00647:  62  callprop "getPlayerLevel"
+00652:  62  swap
+00653:  62  notearg
+00654:  62  call 0
+00657:  62  add
+00658:  62  string "|"
+00663:  62  add
+00664:  63  this
+00665:  63  getprop "curSelServer"
+00670:  63  getprop "server_id"
+00675:  63  add
+00676:  63  string "|"
+00681:  63  add
+00682:  64  this
+00683:  64  getprop "curSelServer"
+00688:  64  getprop "server_title"
+00693:  64  add
+00694:  64  setlocal 1
+00697:  64  pop
+00698:  65  name "xs"
+00703:  65  getprop "JsbConnecter"
+00708:  65  dup
+00709:  65  callprop "getInstance"
+00714:  65  swap
+00715:  65  notearg
+00716:  65  call 0
+00719:  65  dup
+00720:  65  callprop "invoke"
+00725:  65  swap
+00726:  65  notearg
+00727:  65  string "ThirdSdk"
+00732:  65  notearg
+00733:  65  string "thirdSubMitInfo"
+00738:  65  notearg
+00739:  65  getlocal 1
+00742:  65  notearg
+00743:  65  call 3
+00746:  65  pop
+00747:  68  name "xs"
+00752:  68  getprop "readAndWriteSqlByWeiduan"
+00757:  68  ifeq 788 (+31)
+00762:  68  name "xs"
+00767:  68  getprop "readAndWriteSqlByWeiduan"
+00772:  68  dup
+00773:  68  callprop "isUpdateWeiduan"
+00778:  68  swap
+00779:  68  notearg
+00780:  68  call 0
+00783:  68  goto 789 (+6)
+00788:  68  true
+00789:  68  setlocal 2
+00792:  68  pop
+00793:  70  name "xs"
+00798:  70  getprop "guideOpen"
+00803:  70  ifeq 1533 (+730)
+00808:  71  name "xs"
+00813:  71  getprop "Guide"
+00818:  71  getprop "GuideMgr"
+00823:  71  dup
+00824:  71  callprop "setUseCfg"
+00829:  71  swap
+00830:  71  notearg
+00831:  71  name "xs"
+00836:  71  getprop "Cfg"
+00841:  71  getprop "Guide"
+00846:  71  getprop "NewGuideCfg"
+00851:  71  notearg
+00852:  71  call 1
+00855:  71  pop
+00856:  72  name "xs"
+00861:  72  getprop "Profile"
+00866:  72  getprop "GameData"
+00871:  72  getprop "Mgr"
+00876:  72  dup
+00877:  72  callprop "getInstance"
+00882:  72  swap
+00883:  72  notearg
+00884:  72  call 0
+00887:  72  getprop "Player"
+00892:  72  dup
+00893:  72  callprop "getPlayer"
+00898:  72  swap
+00899:  72  notearg
+00900:  72  call 0
+00903:  72  dup
+00904:  72  callprop "getPlayerFreshStep"
+00909:  72  swap
+00910:  72  notearg
+00911:  72  call 0
+00914:  72  setlocal 3
+00917:  72  pop
+00918:  77  name "xs"
+00923:  77  getprop "Guide"
+00928:  77  getprop "GuideMgr"
+00933:  77  dup
+00934:  77  callprop "setServerStep"
+00939:  77  swap
+00940:  77  notearg
+00941:  77  getlocal 3
+00944:  77  notearg
+00945:  77  call 1
+00948:  77  pop
+00949:  79  name "xs"
+00954:  79  getprop "guideAlways"
+00959:  79  true
+00960:  79  stricteq
+00961:  79  ifeq 1032 (+71)
+00966:  81  name "xs"
+00971:  81  getprop "Guide"
+00976:  81  getprop "GuideMgr"
+00981:  81  dup
+00982:  81  callprop "setGuideStep"
+00987:  81  swap
+00988:  81  notearg
+00989:  81  string "00335_before"
+00994:  81  notearg
+00995:  81  call 1
+00998:  81  pop
+00999:  82  name "xs"
+01004:  82  getprop "Guide"
+01009:  82  getprop "GuideMgr"
+01014:  82  dup
+01015:  82  callprop "setServerStep"
+01020:  82  swap
+01021:  82  notearg
+01022:  82  string "00335_before"
+01027:  82  notearg
+01028:  82  call 1
+01031:  82  pop
+01032:  86  name "xs"
+01037:  86  getprop "Guide"
+01042:  86  getprop "GuideMgr"
+01047:  86  dup
+01048:  86  callprop "getIsOver"
+01053:  86  swap
+01054:  86  notearg
+01055:  86  call 0
+01058:  86  not
+01059:  86  ifeq 1337 (+278)
+01064:  88  callname "parseInt"
+01069:  88  implicitthis "parseInt"
+01074:  88  notearg
+01075:  88  name "xs"
+01080:  88  getprop "Guide"
+01085:  88  getprop "GuideMgr"
+01090:  88  dup
+01091:  88  callprop "getGuideStep"
+01096:  88  swap
+01097:  88  notearg
+01098:  88  call 0
+01101:  88  notearg
+01102:  88  call 1
+01105:  88  uint16 10100
+01108:  88  ge
+01109:  88  and 1135 (+26)
+01114:  88  pop
+01115:  88  getlocal 2
+01118:  88  not
+01119:  88  and 1135 (+16)
+01124:  88  pop
+01125:  88  name "xs"
+01130:  88  getprop "weiduan"
+01135:  88  ifeq 1243 (+108)
+01140:  90  name "xs"
+01145:  90  getprop "readAndWriteSqlByWeiduan"
+01150:  90  dup
+01151:  90  callprop "setWeiduanUpSql"
+01156:  90  swap
+01157:  90  notearg
+01158:  90  call 0
+01161:  90  pop
+01162:  91  name "xs"
+01167:  91  getprop "Scene"
+01172:  91  getprop "Mgr"
+01177:  91  dup
+01178:  91  callprop "clearAll"
+01183:  91  swap
+01184:  91  notearg
+01185:  91  call 0
+01188:  91  pop
+01189:  92  name "xsc"
+01194:  92  getprop "Scene"
+01199:  92  getprop "Mgr"
+01204:  92  dup
+01205:  92  callprop "changeScene"
+01210:  92  swap
+01211:  92  notearg
+01212:  92  name "xs"
+01217:  92  getprop "UpdateScene"
+01222:  92  dup
+01223:  92  callprop "create"
+01228:  92  swap
+01229:  92  notearg
+01230:  92  call 0
+01233:  92  notearg
+01234:  92  call 1
+01237:  92  pop
+01238:  92  goto 1332 (+94)
+01243:  95  name "xs"
+01248:  95  getprop "Tools"
+01253:  95  getprop "Statistic"
+01258:  95  dup
+01259:  95  callprop "event_enter"
+01264:  95  swap
+01265:  95  notearg
+01266:  95  string "new_player"
+01271:  95  notearg
+01272:  95  call 1
+01275:  95  pop
+01276:  98  name "xs"
+01281:  98  getprop "Guide"
+01286:  98  getprop "GuideMgr"
+01291:  98  dup
+01292:  98  callprop "setIsNeedChangeScene"
+01297:  98  swap
+01298:  98  notearg
+01299:  98  true
+01300:  98  notearg
+01301:  98  call 1
+01304:  98  pop
+01305:  99  name "xs"
+01310:  99  getprop "Guide"
+01315:  99  getprop "GuideMgr"
+01320:  99  dup
+01321:  99  callprop "start"
+01326:  99  swap
+01327:  99  notearg
+01328:  99  call 0
+01331:  99  pop
+01332:  99  goto 1533 (+201)
+01337: 102  getlocal 2
+01340: 102  not
+01341: 102  and 1357 (+16)
+01346: 102  pop
+01347: 102  name "xs"
+01352: 102  getprop "weiduan"
+01357: 102  ifeq 1465 (+108)
+01362: 103  name "xs"
+01367: 103  getprop "readAndWriteSqlByWeiduan"
+01372: 103  dup
+01373: 103  callprop "setWeiduanUpSql"
+01378: 103  swap
+01379: 103  notearg
+01380: 103  call 0
+01383: 103  pop
+01384: 104  name "xs"
+01389: 104  getprop "Scene"
+01394: 104  getprop "Mgr"
+01399: 104  dup
+01400: 104  callprop "clearAll"
+01405: 104  swap
+01406: 104  notearg
+01407: 104  call 0
+01410: 104  pop
+01411: 105  name "xsc"
+01416: 105  getprop "Scene"
+01421: 105  getprop "Mgr"
+01426: 105  dup
+01427: 105  callprop "changeScene"
+01432: 105  swap
+01433: 105  notearg
+01434: 105  name "xs"
+01439: 105  getprop "UpdateScene"
+01444: 105  dup
+01445: 105  callprop "create"
+01450: 105  swap
+01451: 105  notearg
+01452: 105  call 0
+01455: 105  notearg
+01456: 105  call 1
+01459: 105  pop
+01460: 105  goto 1533 (+73)
+01465: 108  name "xs"
+01470: 108  getprop "Tools"
+01475: 108  getprop "Statistic"
+01480: 108  dup
+01481: 108  callprop "event_enter"
+01486: 108  swap
+01487: 108  notearg
+01488: 108  string "normal_player"
+01493: 108  notearg
+01494: 108  call 1
+01497: 108  pop
+01498: 109  name "xs"
+01503: 109  getprop "Scene"
+01508: 109  getprop "Mgr"
+01513: 109  dup
+01514: 109  callprop "changeSceneByName"
+01519: 109  swap
+01520: 109  notearg
+01521: 109  string "MainMenuScene"
+01526: 109  notearg
+01527: 109  true
+01528: 109  notearg
+01529: 109  call 2
+01532: 109  pop
+01533: 114  name "xs"
+01538: 114  getprop "Tools"
+01543: 114  getprop "Statistic"
+01548: 114  dup
+01549: 114  callprop "event_enter"
+01554: 114  swap
+01555: 114  notearg
+01556: 114  string "all_player"
+01561: 114  notearg
+01562: 114  call 1
+01565: 114  pop
+01566: 117  name "xs"
+01571: 117  getprop "Tools"
+01576: 117  getprop "Statistic"
+01581: 117  dup
+01582: 117  callprop "setUserInfo"
+01587: 117  swap
+01588: 117  notearg
+01589: 117  name "xs"
+01594: 117  getprop "Profile"
+01599: 117  getprop "GameData"
+01604: 117  getprop "Mgr"
+01609: 117  dup
+01610: 117  callprop "getInstance"
+01615: 117  swap
+01616: 117  notearg
+01617: 117  call 0
+01620: 117  getprop "Player"
+01625: 117  dup
+01626: 117  callprop "getPlayer"
+01631: 117  swap
+01632: 117  notearg
+01633: 117  call 0
+01636: 117  dup
+01637: 117  callprop "getPlayerId"
+01642: 117  swap
+01643: 117  notearg
+01644: 117  call 0
+01647: 117  notearg
+01648: 117  zero
+01649: 117  notearg
+01650: 117  zero
+01651: 117  notearg
+01652: 117  call 3
+01655: 117  pop
+01656: 120  name "xs"
+01661: 120  getprop "Profile"
+01666: 120  getprop "GameData"
+01671: 120  getprop "Mgr"
+01676: 120  dup
+01677: 120  callprop "getInstance"
+01682: 120  swap
+01683: 120  notearg
+01684: 120  call 0
+01687: 120  getprop "Player"
+01692: 120  dup
+01693: 120  callprop "getPlayer"
+01698: 120  swap
+01699: 120  notearg
+01700: 120  call 0
+01703: 120  setlocal 0
+01706: 120  pop
+01707: 121  getlocal 0
+01710: 121  dup
+01711: 121  callprop "getPlayerId"
+01716: 121  swap
+01717: 121  notearg
+01718: 121  call 0
+01721: 121  string "|"
+01726: 121  add
+01727: 122  getlocal 0
+01730: 122  dup
+01731: 122  callprop "getPlayerName"
+01736: 122  swap
+01737: 122  notearg
+01738: 122  call 0
+01741: 122  add
+01742: 122  string "|"
+01747: 122  add
+01748: 123  getlocal 0
+01751: 123  dup
+01752: 123  callprop "getPlayerLevel"
+01757: 123  swap
+01758: 123  notearg
+01759: 123  call 0
+01762: 123  add
+01763: 123  string "|"
+01768: 123  add
+01769: 124  this
+01770: 124  getprop "curSelServer"
+01775: 124  getprop "server_id"
+01780: 124  add
+01781: 124  string "|"
+01786: 124  add
+01787: 125  this
+01788: 125  getprop "curSelServer"
+01793: 125  getprop "server_title"
+01798: 125  add
+01799: 125  string "|"
+01804: 125  add
+01805: 126  string "enterServer"
+01810: 126  add
+01811: 126  string "|"
+01816: 126  add
+01817: 127  getlocal 0
+01820: 127  dup
+01821: 127  callprop "getPlayerVipLevel"
+01826: 127  swap
+01827: 127  notearg
+01828: 127  call 0
+01831: 127  add
+01832: 127  setlocal 4
+01835: 127  pop
+01836: 128  name "xs"
+01841: 128  getprop "JsbConnecter"
+01846: 128  dup
+01847: 128  callprop "getInstance"
+01852: 128  swap
+01853: 128  notearg
+01854: 128  call 0
+01857: 128  dup
+01858: 128  callprop "invoke"
+01863: 128  swap
+01864: 128  notearg
+01865: 128  string "UserInfo"
+01870: 128  notearg
+01871: 128  string ""
+01876: 128  notearg
+01877: 128  getlocal 4
+01880: 128  notearg
+01881: 128  call 3
+01884: 128  pop
+01885: 128  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/headers.js:17 ---

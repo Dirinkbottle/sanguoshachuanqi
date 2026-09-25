@@ -1,0 +1,1549 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Party/LadderCompetitionDialog.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=599 object[0]
+;; FUNCTION-MAP kind=lambda offset=609 object[1]
+;; FUNCTION-MAP kind=lambda offset=619 object[2]
+;; FUNCTION-MAP kind=lambda offset=629 object[3]
+;; FUNCTION-MAP kind=lambda offset=639 object[4]
+;; FUNCTION-MAP kind=lambda offset=649 object[5]
+;; FUNCTION-MAP kind=lambda offset=659 object[6]
+;; FUNCTION-MAP kind=lambda offset=669 object[7]
+;; FUNCTION-MAP kind=lambda offset=679 object[8]
+;; FUNCTION-MAP kind=lambda offset=689 object[9]
+;; FUNCTION-MAP kind=lambda offset=730 object[10]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Scene"
+00010:   8  getprop "Party"
+00015:   8  name "xs"
+00020:   8  getprop "Views"
+00025:   8  getprop "HungerLayer"
+00030:   8  dup
+00031:   8  callprop "extend"
+00036:   8  swap
+00037:   8  notearg
+00038:   8  newinit 1
+00043:  10  string "xs.Scene.Party.LadderCompetitionDialog"
+00048:  10  initprop "name"
+00053:  12  newarray 2
+00057:  13  newinit 1
+00062:  13  one
+00063:  13  initprop "tag"
+00068:  13  string "ls"
+00073:  13  initprop "type"
+00078:  13  string "m_labelTitle"
+00083:  13  initprop "name"
+00088:  13  string "LS_huodong_title"
+00093:  13  initprop "id"
+00098:  13  string "auto_name_119"
+00103:  13  initprop "stringId"
+00108:  13  endinit
+00109:  13  initelem_array 0
+00113:  14  newinit 1
+00118:  14  int8 2
+00120:  14  initprop "tag"
+00125:  14  string "bs"
+00130:  14  initprop "type"
+00135:  14  string "m_btnExit"
+00140:  14  initprop "name"
+00145:  14  string "BS_Close"
+00150:  14  initprop "id"
+00155:  14  endinit
+00156:  14  initelem_array 1
+00160:  14  endinit
+00161:  14  initprop "CCB_Cfg"
+00166:  18  newarray 12
+00170:  19  newinit 1
+00175:  19  int8 6
+00177:  19  initprop "tag"
+00182:  19  string "ls"
+00187:  19  initprop "type"
+00192:  19  string "m_labelAbort"
+00197:  19  initprop "name"
+00202:  19  string "LS_fightUI1"
+00207:  19  initprop "id"
+00212:  19  string "auto_name_120"
+00217:  19  initprop "stringId"
+00222:  19  endinit
+00223:  19  initelem_array 0
+00227:  20  newinit 1
+00232:  20  one
+00233:  20  initprop "tag"
+00238:  20  string "m_leftGeneral"
+00243:  20  initprop "name"
+00248:  20  endinit
+00249:  20  initelem_array 1
+00253:  21  newinit 1
+00258:  21  int8 8
+00260:  21  initprop "tag"
+00265:  21  string "ls"
+00270:  21  initprop "type"
+00275:  21  string "m_labelAward"
+00280:  21  initprop "name"
+00285:  21  string "LS_jinengInf1"
+00290:  21  initprop "id"
+00295:  21  string "auto_name_121"
+00300:  21  initprop "stringId"
+00305:  21  endinit
+00306:  21  initelem_array 2
+00310:  24  newinit 1
+00315:  24  int8 9
+00317:  24  initprop "tag"
+00322:  24  string "m_general_head0"
+00327:  24  initprop "name"
+00332:  24  endinit
+00333:  24  initelem_array 3
+00337:  25  newinit 1
+00342:  25  int8 10
+00344:  25  initprop "tag"
+00349:  25  string "m_general_head1"
+00354:  25  initprop "name"
+00359:  25  endinit
+00360:  25  initelem_array 4
+00364:  26  newinit 1
+00369:  26  int8 11
+00371:  26  initprop "tag"
+00376:  26  string "m_general_head2"
+00381:  26  initprop "name"
+00386:  26  endinit
+00387:  26  initelem_array 5
+00391:  27  newinit 1
+00396:  27  int8 12
+00398:  27  initprop "tag"
+00403:  27  string "m_general_head3"
+00408:  27  initprop "name"
+00413:  27  endinit
+00414:  27  initelem_array 6
+00418:  28  newinit 1
+00423:  28  int8 13
+00425:  28  initprop "tag"
+00430:  28  string "m_spSole"
+00435:  28  initprop "name"
+00440:  28  endinit
+00441:  28  initelem_array 7
+00445:  29  newinit 1
+00450:  29  int8 3
+00452:  29  initprop "tag"
+00457:  29  string "m_timeBg"
+00462:  29  initprop "name"
+00467:  29  endinit
+00468:  29  initelem_array 8
+00472:  30  newinit 1
+00477:  30  int8 2
+00479:  30  initprop "tag"
+00484:  30  string "m_labelPicture"
+00489:  30  initprop "name"
+00494:  30  endinit
+00495:  30  initelem_array 9
+00499:  31  newinit 1
+00504:  31  int8 4
+00506:  31  initprop "tag"
+00511:  31  string "ls"
+00516:  31  initprop "type"
+00521:  31  string "LS_paihangNomb"
+00526:  31  initprop "id"
+00531:  31  string "auto_name_122"
+00536:  31  initprop "stringId"
+00541:  31  endinit
+00542:  31  initelem_array 10
+00546:  32  newinit 1
+00551:  32  int8 5
+00553:  32  initprop "tag"
+00558:  32  string "ls"
+00563:  32  initprop "type"
+00568:  32  string "m_labelTime"
+00573:  32  initprop "name"
+00578:  32  string "LS_danyao"
+00583:  32  initprop "id"
+00588:  32  endinit
+00589:  32  initelem_array 11
+00593:  32  endinit
+00594:  32  initprop "conCCB_Cfg"
+00599:  38  lambda (function () {
+    [sourceless code]
+})
+00604:  38  initprop "ctor"
+00609:  50  lambda (function () {
+    [sourceless code]
+})
+00614:  50  initprop "init"
+00619: 212  lambda (function () {
+    [sourceless code]
+})
+00624: 212  initprop "_setZOrder"
+00629: 221  lambda (function () {
+    [sourceless code]
+})
+00634: 221  initprop "onCountDown"
+00639: 238  lambda (function () {
+    [sourceless code]
+})
+00644: 238  initprop "timeDispose"
+00649: 251  lambda (function () {
+    [sourceless code]
+})
+00654: 251  initprop "updateCountDown"
+00659: 256  lambda (function () {
+    [sourceless code]
+})
+00664: 256  initprop "exitCallBack"
+00669: 261  lambda (function () {
+    [sourceless code]
+})
+00674: 261  initprop "onEnterTransitionDidFinish"
+00679: 266  lambda (function () {
+    [sourceless code]
+})
+00684: 266  initprop "onExitTransitionDidStart"
+00689: 277  lambda (function () {
+    [sourceless code]
+})
+00694: 277  initprop "setBaseTouchPriority"
+00699: 277  endinit
+00700: 277  notearg
+00701: 277  call 1
+00704: 277  setprop "LadderCompetitionDialog"
+00709: 277  popv
+00710: 296  name "xs"
+00715: 296  getprop "Scene"
+00720: 296  getprop "Party"
+00725: 296  getprop "LadderCompetitionDialog"
+00730: 296  lambda (function () {
+    [sourceless code]
+})
+00735: 296  setprop "create"
+00740: 296  popv
+00741: 310  name "xs"
+00746: 310  getprop "Views"
+00751: 310  getprop "Mgr"
+00756: 310  dup
+00757: 310  callprop "registerDialog"
+00762: 310  swap
+00763: 310  notearg
+00764: 310  string "LadderCompetitionDialog"
+00769: 310  notearg
+00770: 310  newinit 1
+00775: 311  name "xs"
+00780: 311  getprop "Scene"
+00785: 311  getprop "Party"
+00790: 311  getprop "LadderCompetitionDialog"
+00795: 311  initprop "class"
+00800: 312  name "xs"
+00805: 312  getprop "Constant_DlgStyleType_Large"
+00810: 312  initprop "styleType"
+00815: 312  endinit
+00816: 312  notearg
+00817: 312  call 2
+00820: 312  popv
+00821: 313  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:38 ---
+loc   line  op
+----- ----  --
+main:
+00000:  39  this
+00001:  39  dup
+00002:  39  callprop "_super"
+00007:  39  swap
+00008:  39  notearg
+00009:  39  call 0
+00012:  39  pop
+00013:  40  name "cc"
+00018:  40  dup
+00019:  40  callprop "associateWithNative"
+00024:  40  swap
+00025:  40  notearg
+00026:  40  this
+00027:  40  notearg
+00028:  40  name "cc"
+00033:  40  getprop "Node"
+00038:  40  notearg
+00039:  40  call 2
+00042:  40  pop
+00043:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:38 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=12
+;; arg[0] params
+;; local[0] leftId
+;; local[1] _leftGenModel
+;; local[2] i
+;; local[3] soulDate
+;; local[4] soulModel
+;; local[5] _soulGen_head
+;; local[6] m_pos
+;; local[7] m_num
+;; local[8] m_rankingStr
+;; local[9] m_numLast
+;; local[10] m_rankingLabel
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=1241 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:50 ---
+loc   line  op
+----- ----  --
+main:
+00000:  51  this
+00001:  51  dup
+00002:  51  callprop "_super"
+00007:  51  swap
+00008:  51  notearg
+00009:  51  call 0
+00012:  51  not
+00013:  51  ifeq 20 (+7)
+00018:  52  false
+00019:  52  return
+00020:  55  this
+00021:  55  null
+00022:  55  setprop "m_btnExit"
+00027:  55  pop
+00028:  56  this
+00029:  56  null
+00030:  56  setprop "m_labelTitle"
+00035:  56  pop
+00036:  57  this
+00037:  57  zero
+00038:  57  setprop "m_residueTime"
+00043:  57  pop
+00044:  58  this
+00045:  58  null
+00046:  58  setprop "m_labelTime"
+00051:  58  pop
+00052:  59  this
+00053:  59  true
+00054:  59  setprop "m_isShowTime"
+00059:  59  pop
+00060:  60  this
+00061:  60  null
+00062:  60  setprop "m_leftGeneral"
+00067:  60  pop
+00068:  61  this
+00069:  61  null
+00070:  61  setprop "m_general_head0"
+00075:  61  pop
+00076:  62  this
+00077:  62  null
+00078:  62  setprop "m_general_head1"
+00083:  62  pop
+00084:  63  this
+00085:  63  null
+00086:  63  setprop "m_general_head2"
+00091:  63  pop
+00092:  64  this
+00093:  64  null
+00094:  64  setprop "m_general_head3"
+00099:  64  pop
+00100:  65  this
+00101:  65  null
+00102:  65  setprop "m_spSole"
+00107:  65  pop
+00108:  66  this
+00109:  66  null
+00110:  66  setprop "m_labelAbort"
+00115:  66  pop
+00116:  67  this
+00117:  67  null
+00118:  67  setprop "m_labelAward"
+00123:  67  pop
+00124:  68  this
+00125:  68  null
+00126:  68  setprop "m_genList"
+00131:  68  pop
+00132:  69  this
+00133:  69  null
+00134:  69  setprop "m_timeBg"
+00139:  69  pop
+00140:  70  this
+00141:  70  null
+00142:  70  setprop "m_labelPicture"
+00147:  70  pop
+00148:  71  this
+00149:  71  null
+00150:  71  setprop "m_labelIcon0"
+00155:  71  pop
+00156:  72  this
+00157:  72  null
+00158:  72  setprop "m_labelIcon1"
+00163:  72  pop
+00164:  73  this
+00165:  73  null
+00166:  73  setprop "m_labelIcon2"
+00171:  73  pop
+00172:  74  this
+00173:  74  null
+00174:  74  setprop "m_labelIcon3"
+00179:  74  pop
+00180:  76  this
+00181:  76  name "xs"
+00186:  76  getprop "ccb_reader"
+00191:  76  dup
+00192:  76  callprop "load"
+00197:  76  swap
+00198:  76  notearg
+00199:  76  name "xs"
+00204:  76  getprop "Cfg"
+00209:  76  getprop "CCBI"
+00214:  76  getprop "Party_advertisement"
+00219:  76  notearg
+00220:  76  this
+00221:  76  notearg
+00222:  76  call 2
+00225:  76  setprop "_ccbNode"
+00230:  76  pop
+00231:  78  name "xs"
+00236:  78  getprop "Utils"
+00241:  78  getprop "Node"
+00246:  78  dup
+00247:  78  callprop "attachNodes"
+00252:  78  swap
+00253:  78  notearg
+00254:  78  this
+00255:  78  notearg
+00256:  78  this
+00257:  78  getprop "_ccbNode"
+00262:  78  notearg
+00263:  78  newinit 1
+00268:  78  string "c"
+00273:  78  initprop "desc"
+00278:  78  name "cc"
+00283:  78  dup
+00284:  78  callprop "p"
+00289:  78  swap
+00290:  78  notearg
+00291:  78  int32 -466
+00296:  78  notearg
+00297:  78  int32 -306
+00302:  78  notearg
+00303:  78  call 2
+00306:  78  initprop "offset"
+00311:  78  endinit
+00312:  78  notearg
+00313:  78  call 3
+00316:  78  pop
+00317:  81  name "xs"
+00322:  81  getprop "Utils"
+00327:  81  getprop "UI"
+00332:  81  dup
+00333:  81  callprop "replaceCcbByCfg"
+00338:  81  swap
+00339:  81  notearg
+00340:  81  this
+00341:  81  getprop "_ccbNode"
+00346:  81  notearg
+00347:  81  this
+00348:  81  getprop "CCB_Cfg"
+00353:  81  notearg
+00354:  81  this
+00355:  81  notearg
+00356:  81  call 3
+00359:  81  pop
+00360:  85  this
+00361:  85  name "xs"
+00366:  85  getprop "ccb_reader"
+00371:  85  dup
+00372:  85  callprop "load"
+00377:  85  swap
+00378:  85  notearg
+00379:  85  name "xs"
+00384:  85  getprop "Cfg"
+00389:  85  getprop "CCBI"
+00394:  85  getprop "Party_ladderCompetition"
+00399:  85  notearg
+00400:  85  this
+00401:  85  notearg
+00402:  85  call 2
+00405:  85  setprop "_contentCcb"
+00410:  85  pop
+00411:  86  this
+00412:  86  getprop "_ccbNode"
+00417:  86  dup
+00418:  86  callprop "addChild"
+00423:  86  swap
+00424:  86  notearg
+00425:  86  this
+00426:  86  getprop "_contentCcb"
+00431:  86  notearg
+00432:  86  call 1
+00435:  86  pop
+00436:  87  this
+00437:  87  getprop "_contentCcb"
+00442:  87  dup
+00443:  87  callprop "setPosition"
+00448:  87  swap
+00449:  87  notearg
+00450:  87  name "cc"
+00455:  87  dup
+00456:  87  callprop "p"
+00461:  87  swap
+00462:  87  notearg
+00463:  87  int8 -13
+00465:  87  notearg
+00466:  87  int8 32
+00468:  87  notearg
+00469:  87  call 2
+00472:  87  notearg
+00473:  87  call 1
+00476:  87  pop
+00477:  92  name "xs"
+00482:  92  getprop "Utils"
+00487:  92  getprop "UI"
+00492:  92  dup
+00493:  92  callprop "replaceCcbByCfg"
+00498:  92  swap
+00499:  92  notearg
+00500:  92  this
+00501:  92  getprop "_contentCcb"
+00506:  92  notearg
+00507:  92  this
+00508:  92  getprop "conCCB_Cfg"
+00513:  92  notearg
+00514:  92  this
+00515:  92  notearg
+00516:  92  call 3
+00519:  92  pop
+00520: 100  getarg 0
+00523: 100  getprop "modelEvent"
+00528: 100  getprop "m_reward_list"
+00533: 100  ifeq 558 (+25)
+00538: 102  this
+00539: 102  getarg 0
+00542: 102  getprop "modelEvent"
+00547: 102  getprop "m_reward_list"
+00552: 102  setprop "m_genList"
+00557: 102  pop
+00558: 114  this
+00559: 114  getprop "m_genList"
+00564: 114  zero
+00565: 114  getelem
+00566: 114  getprop "object"
+00571: 114  getprop "id"
+00576: 114  ifeq 670 (+94)
+00581: 115  name "xs"
+00586: 115  getprop "Profile"
+00591: 115  getprop "GameData"
+00596: 115  getprop "Mgr"
+00601: 115  dup
+00602: 115  callprop "getInstance"
+00607: 115  swap
+00608: 115  notearg
+00609: 115  call 0
+00612: 115  getprop "Items"
+00617: 115  dup
+00618: 115  callprop "createWithBase"
+00623: 115  swap
+00624: 115  notearg
+00625: 115  this
+00626: 115  getprop "m_genList"
+00631: 115  zero
+00632: 115  getelem
+00633: 115  getprop "object"
+00638: 115  getprop "id"
+00643: 115  notearg
+00644: 115  call 1
+00647: 115  dup
+00648: 115  callprop "getGiftPack"
+00653: 115  swap
+00654: 115  notearg
+00655: 115  call 0
+00658: 115  zero
+00659: 115  getelem
+00660: 115  getprop "id"
+00665: 115  goto 706 (+41)
+00670: 116  this
+00671: 116  getprop "m_genList"
+00676: 116  zero
+00677: 116  getelem
+00678: 116  getprop "object"
+00683: 116  dup
+00684: 116  callprop "firstObj"
+00689: 116  swap
+00690: 116  notearg
+00691: 116  call 0
+00694: 116  getprop "data"
+00699: 116  zero
+00700: 116  getelem
+00701: 116  getprop "id"
+00706: 116  setlocal 0
+00709: 116  pop
+00710: 120  name "xs"
+00715: 120  getprop "Models"
+00720: 120  getprop "Resource"
+00725: 120  dup
+00726: 120  callprop "createWithBase"
+00731: 120  swap
+00732: 120  notearg
+00733: 120  getlocal 0
+00736: 120  notearg
+00737: 120  one
+00738: 120  notearg
+00739: 120  call 2
+00742: 120  setlocal 1
+00745: 120  pop
+00746: 123  this
+00747: 123  getlocal 1
+00750: 123  dup
+00751: 123  callprop "createOriginalSprite_Waist"
+00756: 123  swap
+00757: 123  notearg
+00758: 123  call 0
+00761: 123  setprop "_leftGen"
+00766: 123  pop
+00767: 124  this
+00768: 124  getprop "_contentCcb"
+00773: 124  dup
+00774: 124  callprop "addChild"
+00779: 124  swap
+00780: 124  notearg
+00781: 124  this
+00782: 124  getprop "_leftGen"
+00787: 124  notearg
+00788: 124  call 1
+00791: 124  pop
+00792: 126  this
+00793: 126  getprop "_leftGen"
+00798: 126  dup
+00799: 126  callprop "setPosition"
+00804: 126  swap
+00805: 126  notearg
+00806: 126  this
+00807: 126  getprop "m_leftGeneral"
+00812: 126  dup
+00813: 126  callprop "getPosition"
+00818: 126  swap
+00819: 126  notearg
+00820: 126  call 0
+00823: 126  notearg
+00824: 126  call 1
+00827: 126  pop
+00828: 129  zero
+00829: 129  setlocal 2
+00832: 129  pop
+00833: 129  goto 1677 (+844)
+00838: 130  loophead
+00839: 130  this
+00840: 130  getprop "m_genList"
+00845: 130  getlocal 2
+00848: 130  getelem
+00849: 130  ifeq 1637 (+788)
+00854: 131  this
+00855: 131  getprop "m_genList"
+00860: 131  getlocal 2
+00863: 131  getelem
+00864: 131  getprop "object"
+00869: 131  getprop "id"
+00874: 131  ifeq 965 (+91)
+00879: 132  name "xs"
+00884: 132  getprop "Profile"
+00889: 132  getprop "GameData"
+00894: 132  getprop "Mgr"
+00899: 132  dup
+00900: 132  callprop "getInstance"
+00905: 132  swap
+00906: 132  notearg
+00907: 132  call 0
+00910: 132  getprop "Items"
+00915: 132  dup
+00916: 132  callprop "createWithBase"
+00921: 132  swap
+00922: 132  notearg
+00923: 132  this
+00924: 132  getprop "m_genList"
+00929: 132  getlocal 2
+00932: 132  getelem
+00933: 132  getprop "object"
+00938: 132  getprop "id"
+00943: 132  notearg
+00944: 132  call 1
+00947: 132  dup
+00948: 132  callprop "getGiftPack"
+00953: 132  swap
+00954: 132  notearg
+00955: 132  call 0
+00958: 132  zero
+00959: 132  getelem
+00960: 132  goto 998 (+38)
+00965: 133  this
+00966: 133  getprop "m_genList"
+00971: 133  getlocal 2
+00974: 133  getelem
+00975: 133  getprop "object"
+00980: 133  dup
+00981: 133  callprop "firstObj"
+00986: 133  swap
+00987: 133  notearg
+00988: 133  call 0
+00991: 133  getprop "data"
+00996: 133  zero
+00997: 133  getelem
+00998: 133  setlocal 3
+01001: 133  pop
+01002: 134  name "xs"
+01007: 134  dup
+01008: 134  callprop "dump"
+01013: 134  swap
+01014: 134  notearg
+01015: 134  string "soulDatesoulDate"
+01020: 134  notearg
+01021: 134  getlocal 3
+01024: 134  notearg
+01025: 134  call 2
+01028: 134  pop
+01029: 135  name "xs"
+01034: 135  getprop "Models"
+01039: 135  getprop "GeneralSoul"
+01044: 135  dup
+01045: 135  callprop "createWithBase"
+01050: 135  swap
+01051: 135  notearg
+01052: 135  getlocal 3
+01055: 135  getprop "id"
+01060: 135  notearg
+01061: 135  call 1
+01064: 135  setlocal 4
+01067: 135  pop
+01068: 136  getlocal 4
+01071: 136  dup
+01072: 136  callprop "setNum"
+01077: 136  swap
+01078: 136  notearg
+01079: 136  getlocal 3
+01082: 136  getprop "num"
+01087: 136  notearg
+01088: 136  call 1
+01091: 136  pop
+01092: 137  getlocal 4
+01095: 137  dup
+01096: 137  callprop "createIcon_GradeAndNumAndName"
+01101: 137  swap
+01102: 137  notearg
+01103: 137  call 0
+01106: 137  setlocal 5
+01109: 137  pop
+01110: 147  this
+01111: 147  getprop "_contentCcb"
+01116: 147  dup
+01117: 147  callprop "addChild"
+01122: 147  swap
+01123: 147  notearg
+01124: 147  getlocal 5
+01127: 147  notearg
+01128: 147  int8 2
+01130: 147  notearg
+01131: 147  call 2
+01134: 147  pop
+01135: 148  this
+01136: 148  string "m_general_head"
+01141: 148  getlocal 2
+01144: 148  add
+01145: 148  getelem
+01146: 148  dup
+01147: 148  callprop "getPosition"
+01152: 148  swap
+01153: 148  notearg
+01154: 148  call 0
+01157: 148  setlocal 6
+01160: 148  pop
+01161: 149  getlocal 5
+01164: 149  dup
+01165: 149  callprop "setPosition"
+01170: 149  swap
+01171: 149  notearg
+01172: 149  getlocal 6
+01175: 149  notearg
+01176: 149  call 1
+01179: 149  pop
+01180: 150  this
+01181: 150  string "_mIconBtn"
+01186: 150  getlocal 2
+01189: 150  add
+01190: 150  name "xs"
+01195: 150  getprop "Views"
+01200: 150  getprop "Btn"
+01205: 150  dup
+01206: 150  callprop "createInvisibleWithParent"
+01211: 150  swap
+01212: 150  notearg
+01213: 150  getlocal 5
+01216: 150  notearg
+01217: 150  call 1
+01220: 150  setelem
+01221: 150  pop
+01222: 151  this
+01223: 151  string "_mIconBtn"
+01228: 151  getlocal 2
+01231: 151  add
+01232: 151  getelem
+01233: 151  dup
+01234: 151  callprop "setOnClickCallBack"
+01239: 151  swap
+01240: 151  notearg
+01241: 151  lambda (function () {
+    [sourceless code]
+})
+01246: 151  dup
+01247: 151  callprop "bind"
+01252: 151  swap
+01253: 151  notearg
+01254: 154  newinit 1
+01259: 154  getlocal 4
+01262: 154  dup
+01263: 154  callprop "getBaseGeneralModel"
+01268: 154  swap
+01269: 154  notearg
+01270: 154  call 0
+01273: 154  initprop "soul"
+01278: 154  endinit
+01279: 154  notearg
+01280: 154  call 1
+01283: 154  notearg
+01284: 154  call 1
+01287: 154  pop
+01288: 155  callname "parseInt"
+01293: 155  implicitthis "parseInt"
+01298: 155  notearg
+01299: 155  this
+01300: 155  getprop "m_genList"
+01305: 155  getlocal 2
+01308: 155  getelem
+01309: 155  getprop "status"
+01314: 155  getprop "condition"
+01319: 155  notearg
+01320: 155  call 1
+01323: 155  setlocal 7
+01326: 155  pop
+01327: 156  string ""
+01332: 156  setlocal 8
+01335: 156  pop
+01336: 157  getlocal 2
+01339: 157  zero
+01340: 157  eq
+01341: 157  ifeq 1388 (+47)
+01346: 158  getlocal 7
+01349: 158  one
+01350: 158  eq
+01351: 158  ifeq 1370 (+19)
+01356: 159  string "1"
+01361: 159  setlocal 8
+01364: 159  pop
+01365: 159  goto 1383 (+18)
+01370: 161  string "1-"
+01375: 161  getlocal 7
+01378: 161  add
+01379: 161  setlocal 8
+01382: 161  pop
+01383: 161  goto 1448 (+65)
+01388: 165  callname "parseInt"
+01393: 165  implicitthis "parseInt"
+01398: 165  notearg
+01399: 165  this
+01400: 165  getprop "m_genList"
+01405: 165  getlocal 2
+01408: 165  one
+01409: 165  sub
+01410: 165  getelem
+01411: 165  getprop "status"
+01416: 165  getprop "condition"
+01421: 165  notearg
+01422: 165  call 1
+01425: 165  one
+01426: 165  add
+01427: 165  setlocal 9
+01430: 165  pop
+01431: 166  getlocal 9
+01434: 166  string "-"
+01439: 166  add
+01440: 166  getlocal 7
+01443: 166  add
+01444: 166  setlocal 8
+01447: 166  pop
+01448: 168  name "xs"
+01453: 168  getprop "Factorys"
+01458: 168  getprop "Label"
+01463: 168  dup
+01464: 168  callprop "createByStyleIdWithString"
+01469: 168  swap
+01470: 168  notearg
+01471: 168  string "LS_huodong_dayNomb"
+01476: 168  notearg
+01477: 168  name "xs"
+01482: 168  getprop "Tools"
+01487: 168  getprop "String"
+01492: 168  dup
+01493: 168  callprop "createString"
+01498: 168  swap
+01499: 168  notearg
+01500: 168  string "auto_name_123"
+01505: 168  notearg
+01506: 168  call 1
+01509: 168  getlocal 8
+01512: 168  add
+01513: 168  name "xs"
+01518: 168  getprop "Tools"
+01523: 168  getprop "String"
+01528: 168  dup
+01529: 168  callprop "createString"
+01534: 168  swap
+01535: 168  notearg
+01536: 168  string "auto_name_124"
+01541: 168  notearg
+01542: 168  call 1
+01545: 168  add
+01546: 168  notearg
+01547: 168  call 2
+01550: 168  setlocal 10
+01553: 168  pop
+01554: 169  this
+01555: 169  getprop "_contentCcb"
+01560: 169  dup
+01561: 169  callprop "addChild"
+01566: 169  swap
+01567: 169  notearg
+01568: 169  getlocal 10
+01571: 169  notearg
+01572: 169  int8 2
+01574: 169  notearg
+01575: 169  call 2
+01578: 169  pop
+01579: 170  getlocal 10
+01582: 170  dup
+01583: 170  callprop "setPosition"
+01588: 170  swap
+01589: 170  notearg
+01590: 170  name "cc"
+01595: 170  dup
+01596: 170  callprop "p"
+01601: 170  swap
+01602: 170  notearg
+01603: 170  getlocal 6
+01606: 170  getprop "x"
+01611: 170  notearg
+01612: 170  getlocal 6
+01615: 170  getprop "y"
+01620: 170  int8 60
+01622: 170  add
+01623: 170  notearg
+01624: 170  call 2
+01627: 170  notearg
+01628: 170  call 1
+01631: 170  pop
+01632: 170  goto 1662 (+30)
+01637: 173  this
+01638: 173  string "m_general_head"
+01643: 173  getlocal 2
+01646: 173  add
+01647: 173  getelem
+01648: 173  dup
+01649: 173  callprop "setVisible"
+01654: 173  swap
+01655: 173  notearg
+01656: 173  false
+01657: 173  notearg
+01658: 173  call 1
+01661: 173  pop
+01662: 129  localinc 11
+01665: 129  getlocal 2
+01668: 129  pos
+01669: 129  dup
+01670: 129  one
+01671: 129  add
+01672: 129  setlocal 2
+01675: 129  pop
+01676: 129  pop
+01677: 129  loopentry
+01678: 129  getlocal 2
+01681: 129  int8 4
+01683: 129  lt
+01684: 129  ifne 838 (-846)
+01689: 184  this
+01690: 184  getprop "m_btnExit"
+01695: 184  dup
+01696: 184  callprop "addCallBackForEvent"
+01701: 184  swap
+01702: 184  notearg
+01703: 184  this
+01704: 184  notearg
+01705: 184  this
+01706: 184  getprop "exitCallBack"
+01711: 184  notearg
+01712: 184  call 2
+01715: 184  pop
+01716: 191  this
+01717: 191  getprop "m_isShowTime"
+01722: 191  ifeq 2016 (+294)
+01727: 194  name "xs"
+01732: 194  getprop "Profile"
+01737: 194  getprop "GameData"
+01742: 194  getprop "PushInfo"
+01747: 194  dup
+01748: 194  callprop "getInstance"
+01753: 194  swap
+01754: 194  notearg
+01755: 194  call 0
+01758: 194  dup
+01759: 194  callprop "getPartyInfo"
+01764: 194  swap
+01765: 194  notearg
+01766: 194  call 0
+01769: 194  dup
+01770: 194  callprop "isStartTime"
+01775: 194  swap
+01776: 194  notearg
+01777: 194  getarg 0
+01780: 194  getprop "mIdx"
+01785: 194  notearg
+01786: 194  call 1
+01789: 194  ifeq 1897 (+108)
+01794: 195  this
+01795: 195  name "xs"
+01800: 195  getprop "Profile"
+01805: 195  getprop "GameData"
+01810: 195  getprop "PushInfo"
+01815: 195  dup
+01816: 195  callprop "getInstance"
+01821: 195  swap
+01822: 195  notearg
+01823: 195  call 0
+01826: 195  dup
+01827: 195  callprop "getPartyInfo"
+01832: 195  swap
+01833: 195  notearg
+01834: 195  call 0
+01837: 195  dup
+01838: 195  callprop "adPresentTime"
+01843: 195  swap
+01844: 195  notearg
+01845: 195  getarg 0
+01848: 195  getprop "mIdx"
+01853: 195  notearg
+01854: 195  call 1
+01857: 195  or 1864 (+7)
+01862: 195  pop
+01863: 195  zero
+01864: 195  setprop "m_residueTime"
+01869: 195  pop
+01870: 196  this
+01871: 196  dup
+01872: 196  callprop "schedule"
+01877: 196  swap
+01878: 196  notearg
+01879: 196  this
+01880: 196  getprop "onCountDown"
+01885: 196  notearg
+01886: 196  one
+01887: 196  notearg
+01888: 196  call 2
+01891: 196  pop
+01892: 196  goto 1973 (+81)
+01897: 198  this
+01898: 198  name "xs"
+01903: 198  getprop "Profile"
+01908: 198  getprop "GameData"
+01913: 198  getprop "PushInfo"
+01918: 198  dup
+01919: 198  callprop "getInstance"
+01924: 198  swap
+01925: 198  notearg
+01926: 198  call 0
+01929: 198  dup
+01930: 198  callprop "getPartyInfo"
+01935: 198  swap
+01936: 198  notearg
+01937: 198  call 0
+01940: 198  dup
+01941: 198  callprop "getContinueTime"
+01946: 198  swap
+01947: 198  notearg
+01948: 198  getarg 0
+01951: 198  getprop "mIdx"
+01956: 198  notearg
+01957: 198  call 1
+01960: 198  or 1967 (+7)
+01965: 198  pop
+01966: 198  zero
+01967: 198  setprop "m_residueTime"
+01972: 198  pop
+01973: 201  name "xs"
+01978: 201  dup
+01979: 201  callprop "dump"
+01984: 201  swap
+01985: 201  notearg
+01986: 201  string "m_residueTime"
+01991: 201  notearg
+01992: 201  this
+01993: 201  getprop "m_residueTime"
+01998: 201  notearg
+01999: 201  call 2
+02002: 201  pop
+02003: 204  this
+02004: 204  dup
+02005: 204  callprop "onCountDown"
+02010: 204  swap
+02011: 204  notearg
+02012: 204  call 0
+02015: 204  pop
+02016: 207  this
+02017: 207  dup
+02018: 207  callprop "_setZOrder"
+02023: 207  swap
+02024: 207  notearg
+02025: 207  one
+02026: 207  notearg
+02027: 207  newarray 4
+02031: 207  string "_leftGen"
+02036: 207  initelem_array 0
+02040: 207  string "m_spSole"
+02045: 207  initelem_array 1
+02049: 207  string "m_labelPicture"
+02054: 207  initelem_array 2
+02058: 207  string "m_labelAward"
+02063: 207  initelem_array 3
+02067: 207  endinit
+02068: 207  notearg
+02069: 207  call 2
+02072: 207  pop
+02073: 209  true
+02074: 209  return
+02075: 209  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:50 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:151 ---
+loc   line  op
+----- ----  --
+main:
+00000: 153  name "xs"
+00005: 153  getprop "Views"
+00010: 153  getprop "Mgr"
+00015: 153  dup
+00016: 153  callprop "showDialogByName"
+00021: 153  swap
+00022: 153  notearg
+00023: 153  string "DetailDialogGeneral"
+00028: 153  notearg
+00029: 153  newinit 1
+00034: 153  this
+00035: 153  getprop "soul"
+00040: 153  initprop "generalData"
+00045: 153  string "achieve_nothave"
+00050: 153  initprop "type"
+00055: 153  endinit
+00056: 153  notearg
+00057: 153  call 2
+00060: 153  pop
+00061: 153  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:151 ---
+;; function object[2] _setZOrder
+;; function metadata object[2] nargs=2 bindings=3
+;; arg[0] mNum
+;; arg[1] objList
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:212 ---
+loc   line  op
+----- ----  --
+main:
+00000: 214  zero
+00001: 214  setlocal 0
+00004: 214  pop
+00005: 214  goto 82 (+77)
+00010: 215  loophead
+00011: 215  name "xs"
+00016: 215  dup
+00017: 215  callprop "log"
+00022: 215  swap
+00023: 215  notearg
+00024: 215  string "ooobb"
+00029: 215  notearg
+00030: 215  getarg 1
+00033: 215  getlocal 0
+00036: 215  getelem
+00037: 215  notearg
+00038: 215  call 2
+00041: 215  pop
+00042: 216  this
+00043: 216  getarg 1
+00046: 216  getlocal 0
+00049: 216  getelem
+00050: 216  getelem
+00051: 216  dup
+00052: 216  callprop "setZOrder"
+00057: 216  swap
+00058: 216  notearg
+00059: 216  getarg 0
+00062: 216  notearg
+00063: 216  call 1
+00066: 216  pop
+00067: 214  localinc 11
+00070: 214  getlocal 0
+00073: 214  pos
+00074: 214  dup
+00075: 214  one
+00076: 214  add
+00077: 214  setlocal 0
+00080: 214  pop
+00081: 214  pop
+00082: 214  loopentry
+00083: 214  getlocal 0
+00086: 214  getarg 1
+00089: 214  length "length"
+00094: 214  lt
+00095: 214  ifne 10 (-85)
+00100: 218  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:212 ---
+;; function object[3] onCountDown
+;; function metadata object[3] nargs=0 bindings=3
+;; local[0] hours
+;; local[1] minute
+;; local[2] seconds
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:221 ---
+loc   line  op
+----- ----  --
+main:
+00000: 224  this
+00001: 224  getprop "m_residueTime"
+00006: 224  zero
+00007: 224  le
+00008: 224  ifeq 21 (+13)
+00013: 226  this
+00014: 226  zero
+00015: 226  setprop "m_residueTime"
+00020: 226  pop
+00021: 229  name "Math"
+00026: 229  dup
+00027: 229  callprop "floor"
+00032: 229  swap
+00033: 229  notearg
+00034: 229  this
+00035: 229  getprop "m_residueTime"
+00040: 229  uint16 3600
+00043: 229  div
+00044: 229  notearg
+00045: 229  call 1
+00048: 229  setlocal 0
+00051: 229  pop
+00052: 230  name "Math"
+00057: 230  dup
+00058: 230  callprop "floor"
+00063: 230  swap
+00064: 230  notearg
+00065: 230  this
+00066: 230  getprop "m_residueTime"
+00071: 230  uint16 3600
+00074: 230  mod
+00075: 230  int8 60
+00077: 230  div
+00078: 230  notearg
+00079: 230  call 1
+00082: 230  setlocal 1
+00085: 230  pop
+00086: 231  this
+00087: 231  getprop "m_residueTime"
+00092: 231  uint16 3600
+00095: 231  mod
+00096: 231  int8 60
+00098: 231  mod
+00099: 231  setlocal 2
+00102: 231  pop
+00103: 233  this
+00104: 233  dup
+00105: 233  callprop "updateCountDown"
+00110: 233  swap
+00111: 233  notearg
+00112: 233  this
+00113: 233  dup
+00114: 233  callprop "timeDispose"
+00119: 233  swap
+00120: 233  notearg
+00121: 233  getlocal 0
+00124: 233  notearg
+00125: 233  call 1
+00128: 233  notearg
+00129: 233  this
+00130: 233  dup
+00131: 233  callprop "timeDispose"
+00136: 233  swap
+00137: 233  notearg
+00138: 233  getlocal 1
+00141: 233  notearg
+00142: 233  call 1
+00145: 233  notearg
+00146: 233  this
+00147: 233  dup
+00148: 233  callprop "timeDispose"
+00153: 233  swap
+00154: 233  notearg
+00155: 233  getlocal 2
+00158: 233  notearg
+00159: 233  call 1
+00162: 233  notearg
+00163: 233  call 3
+00166: 233  pop
+00167: 235  this
+00168: 235  dup
+00169: 235  getprop "m_residueTime"
+00174: 235  one
+00175: 235  sub
+00176: 235  setprop "m_residueTime"
+00181: 235  pop
+00182: 235  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:221 ---
+;; function object[4] timeDispose
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] mNum
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:238 ---
+loc   line  op
+----- ----  --
+main:
+00000: 239  getarg 0
+00003: 239  int8 10
+00005: 239  lt
+00006: 239  ifeq 24 (+18)
+00011: 240  string "0"
+00016: 240  getarg 0
+00019: 240  add
+00020: 240  setarg 0
+00023: 240  pop
+00024: 243  getarg 0
+00027: 243  return
+00028: 243  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:238 ---
+;; function object[5] updateCountDown
+;; function metadata object[5] nargs=3 bindings=3
+;; arg[0] hour
+;; arg[1] minute
+;; arg[2] second
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:251 ---
+loc   line  op
+----- ----  --
+main:
+00000: 253  this
+00001: 253  getprop "m_labelTime"
+00006: 253  dup
+00007: 253  callprop "setString"
+00012: 253  swap
+00013: 253  notearg
+00014: 253  getarg 0
+00017: 253  string ":"
+00022: 253  add
+00023: 253  getarg 1
+00026: 253  add
+00027: 253  string ":"
+00032: 253  add
+00033: 253  getarg 2
+00036: 253  add
+00037: 253  notearg
+00038: 253  call 1
+00041: 253  pop
+00042: 253  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:251 ---
+;; function object[6] exitCallBack
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:256 ---
+loc   line  op
+----- ----  --
+main:
+00000: 257  name "xs"
+00005: 257  getprop "Views"
+00010: 257  getprop "Mgr"
+00015: 257  dup
+00016: 257  callprop "hideDialog"
+00021: 257  swap
+00022: 257  notearg
+00023: 257  call 0
+00026: 257  pop
+00027: 257  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:256 ---
+;; function object[7] onEnterTransitionDidFinish
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:261 ---
+loc   line  op
+----- ----  --
+main:
+00000: 262  this
+00001: 262  dup
+00002: 262  callprop "_super"
+00007: 262  swap
+00008: 262  notearg
+00009: 262  call 0
+00012: 262  pop
+00013: 262  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:261 ---
+;; function object[8] onExitTransitionDidStart
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:266 ---
+loc   line  op
+----- ----  --
+main:
+00000: 267  this
+00001: 267  dup
+00002: 267  callprop "_super"
+00007: 267  swap
+00008: 267  notearg
+00009: 267  call 0
+00012: 267  pop
+00013: 268  this
+00014: 268  dup
+00015: 268  callprop "unschedule"
+00020: 268  swap
+00021: 268  notearg
+00022: 268  this
+00023: 268  getprop "onCountDown"
+00028: 268  notearg
+00029: 268  call 1
+00032: 268  pop
+00033: 268  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:266 ---
+;; function object[9] setBaseTouchPriority
+;; function metadata object[9] nargs=1 bindings=2
+;; arg[0] priority
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:277 ---
+loc   line  op
+----- ----  --
+main:
+00000: 278  this
+00001: 278  getarg 0
+00004: 278  setprop "m_baseTouchPriority"
+00009: 278  pop
+00010: 280  this
+00011: 280  dup
+00012: 280  callprop "setTouchPriority"
+00017: 280  swap
+00018: 280  notearg
+00019: 280  this
+00020: 280  getprop "m_baseTouchPriority"
+00025: 280  notearg
+00026: 280  call 1
+00029: 280  pop
+00030: 281  this
+00031: 281  getprop "m_btnExit"
+00036: 281  dup
+00037: 281  callprop "setTouchPriority"
+00042: 281  swap
+00043: 281  notearg
+00044: 281  this
+00045: 281  getprop "m_baseTouchPriority"
+00050: 281  one
+00051: 281  sub
+00052: 281  notearg
+00053: 281  call 1
+00056: 281  pop
+00057: 285  zero
+00058: 285  setlocal 0
+00061: 285  pop
+00062: 285  goto 131 (+69)
+00067: 286  loophead
+00068: 286  this
+00069: 286  string "_mIconBtn"
+00074: 286  getlocal 0
+00077: 286  add
+00078: 286  getelem
+00079: 286  ifeq 116 (+37)
+00084: 287  this
+00085: 287  string "_mIconBtn"
+00090: 287  getlocal 0
+00093: 287  add
+00094: 287  getelem
+00095: 287  dup
+00096: 287  callprop "setTouchPriority"
+00101: 287  swap
+00102: 287  notearg
+00103: 287  this
+00104: 287  getprop "m_baseTouchPriority"
+00109: 287  one
+00110: 287  sub
+00111: 287  notearg
+00112: 287  call 1
+00115: 287  pop
+00116: 285  localinc 11
+00119: 285  getlocal 0
+00122: 285  pos
+00123: 285  dup
+00124: 285  one
+00125: 285  add
+00126: 285  setlocal 0
+00129: 285  pop
+00130: 285  pop
+00131: 285  loopentry
+00132: 285  getlocal 0
+00135: 285  int8 4
+00137: 285  lt
+00138: 285  ifne 67 (-71)
+00143: 290  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:277 ---
+;; function object[10] create
+;; function metadata object[10] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:296 ---
+loc   line  op
+----- ----  --
+main:
+00000: 297  name "xs"
+00005: 297  getprop "Scene"
+00010: 297  getprop "Party"
+00015: 297  getprop "LadderCompetitionDialog"
+00020: 297  undefined
+00021: 297  notearg
+00022: 297  new 0
+00025: 297  setlocal 0
+00028: 297  pop
+00029: 298  getlocal 0
+00032: 298  and 56 (+24)
+00037: 298  pop
+00038: 298  getlocal 0
+00041: 298  dup
+00042: 298  callprop "init"
+00047: 298  swap
+00048: 298  notearg
+00049: 298  getarg 0
+00052: 298  notearg
+00053: 298  call 1
+00056: 298  ifeq 65 (+9)
+00061: 299  getlocal 0
+00064: 299  return
+00065: 302  name "xs"
+00070: 302  dup
+00071: 302  callprop "assert"
+00076: 302  swap
+00077: 302  notearg
+00078: 302  false
+00079: 302  notearg
+00080: 302  string "xs.Scene.Party.LadderCompetitionDialog.create err"
+00085: 302  notearg
+00086: 302  call 2
+00089: 302  pop
+00090: 303  null
+00091: 303  return
+00092: 303  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Party/LadderCompetitionDialog.js:296 ---

@@ -1,0 +1,383 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=109 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Scene"
+00010:   4  name "cc"
+00015:   4  getprop "Scene"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  string "xs.Scene.MiracleWeaponScene"
+00038:   5  initprop "name"
+00043:   6  lambda (function () {
+    [sourceless code]
+})
+00048:   6  initprop "ctor"
+00053:  10  lambda (function () {
+    [sourceless code]
+})
+00058:  10  initprop "init"
+00063:  44  lambda (function () {
+    [sourceless code]
+})
+00068:  44  initprop "onEnter"
+00073:  47  lambda (function () {
+    [sourceless code]
+})
+00078:  47  initprop "onExit"
+00083:  47  endinit
+00084:  47  notearg
+00085:  47  call 1
+00088:  47  setprop "MiracleWeaponScene"
+00093:  47  popv
+00094:  51  name "xs"
+00099:  51  getprop "Scene"
+00104:  51  getprop "MiracleWeaponScene"
+00109:  51  lambda (function () {
+    [sourceless code]
+})
+00114:  51  setprop "create"
+00119:  51  popv
+00120:  61  name "xs"
+00125:  61  getprop "Scene"
+00130:  61  getprop "Mgr"
+00135:  61  dup
+00136:  61  callprop "registerScene"
+00141:  61  swap
+00142:  61  notearg
+00143:  61  string "MiracleWeaponScene"
+00148:  61  notearg
+00149:  61  newinit 1
+00154:  62  name "xs"
+00159:  62  getprop "Scene"
+00164:  62  getprop "MiracleWeaponScene"
+00169:  62  initprop "class"
+00174:  63  name "xs"
+00179:  63  getprop "Constant_SceneType_Challenge"
+00184:  63  initprop "type"
+00189:  64  newarray 1
+00193:  64  string "MiracleWeaponsScene"
+00198:  64  initelem_array 0
+00202:  64  endinit
+00203:  64  initprop "area"
+00208:  64  endinit
+00209:  64  notearg
+00210:  64  call 2
+00213:  64  popv
+00214:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "Scene"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] WeaponLayer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  15  name "xs"
+00025:  15  getprop "Tools"
+00030:  15  getprop "UI"
+00035:  15  dup
+00036:  15  callprop "addCommonBg"
+00041:  15  swap
+00042:  15  notearg
+00043:  15  this
+00044:  15  notearg
+00045:  15  true
+00046:  15  notearg
+00047:  15  true
+00048:  15  notearg
+00049:  15  call 3
+00052:  15  pop
+00053:  16  this
+00054:  16  name "xs"
+00059:  16  getprop "Factorys"
+00064:  16  getprop "Sprite"
+00069:  16  dup
+00070:  16  callprop "create"
+00075:  16  swap
+00076:  16  notearg
+00077:  16  string "MiracleWeapons_beijing"
+00082:  16  notearg
+00083:  16  string "MiracleWeaponsScene"
+00088:  16  notearg
+00089:  16  call 2
+00092:  16  setprop "m_GeneralBg"
+00097:  16  pop
+00098:  17  name "xs"
+00103:  17  getprop "Tools"
+00108:  17  getprop "UI"
+00113:  17  dup
+00114:  17  callprop "addSpriteAsBg"
+00119:  17  swap
+00120:  17  notearg
+00121:  17  this
+00122:  17  notearg
+00123:  17  this
+00124:  17  getprop "m_GeneralBg"
+00129:  17  notearg
+00130:  17  call 2
+00133:  17  pop
+00134:  21  this
+00135:  21  name "xs"
+00140:  21  getprop "Tools"
+00145:  21  getprop "UI"
+00150:  21  dup
+00151:  21  callprop "addShortcutBoard"
+00156:  21  swap
+00157:  21  notearg
+00158:  21  this
+00159:  21  notearg
+00160:  21  true
+00161:  21  notearg
+00162:  21  name "xs"
+00167:  21  getprop "Cfg"
+00172:  21  getprop "Scene"
+00177:  21  getprop "SkillScene"
+00182:  21  getprop "mainmenu"
+00187:  21  notearg
+00188:  21  call 3
+00191:  21  setprop "m_mainMenu"
+00196:  21  pop
+00197:  24  this
+00198:  24  name "xs"
+00203:  24  getprop "Views"
+00208:  24  getprop "PlayerInfoBannerSimpleView"
+00213:  24  dup
+00214:  24  callprop "create"
+00219:  24  swap
+00220:  24  notearg
+00221:  24  call 0
+00224:  24  setprop "m_infoBar"
+00229:  24  pop
+00230:  25  this
+00231:  25  getprop "m_infoBar"
+00236:  25  dup
+00237:  25  callprop "setAnchorPoint"
+00242:  25  swap
+00243:  25  notearg
+00244:  25  name "cc"
+00249:  25  dup
+00250:  25  callprop "p"
+00255:  25  swap
+00256:  25  notearg
+00257:  25  zero
+00258:  25  notearg
+00259:  25  one
+00260:  25  notearg
+00261:  25  call 2
+00264:  25  notearg
+00265:  25  call 1
+00268:  25  pop
+00269:  26  name "xs"
+00274:  26  getprop "Utils"
+00279:  26  getprop "Node"
+00284:  26  dup
+00285:  26  callprop "attachNodes"
+00290:  26  swap
+00291:  26  notearg
+00292:  26  this
+00293:  26  notearg
+00294:  26  this
+00295:  26  getprop "m_infoBar"
+00300:  26  notearg
+00301:  26  newinit 1
+00306:  27  string "lt"
+00311:  27  initprop "desc"
+00316:  28  true
+00317:  28  initprop "sc"
+00322:  28  endinit
+00323:  28  notearg
+00324:  28  call 3
+00327:  28  pop
+00328:  31  name "xs"
+00333:  31  getprop "Views"
+00338:  31  getprop "MiracleWeaponLayer"
+00343:  31  dup
+00344:  31  callprop "create"
+00349:  31  swap
+00350:  31  notearg
+00351:  31  getarg 0
+00354:  31  notearg
+00355:  31  call 1
+00358:  31  setlocal 0
+00361:  31  pop
+00362:  32  getlocal 0
+00365:  32  dup
+00366:  32  callprop "setAnchorPoint"
+00371:  32  swap
+00372:  32  notearg
+00373:  32  name "cc"
+00378:  32  dup
+00379:  32  callprop "p"
+00384:  32  swap
+00385:  32  notearg
+00386:  32  zero
+00387:  32  notearg
+00388:  32  zero
+00389:  32  notearg
+00390:  32  call 2
+00393:  32  notearg
+00394:  32  call 1
+00397:  32  pop
+00398:  33  name "xs"
+00403:  33  getprop "Utils"
+00408:  33  getprop "Node"
+00413:  33  dup
+00414:  33  callprop "attachNodes"
+00419:  33  swap
+00420:  33  notearg
+00421:  33  this
+00422:  33  notearg
+00423:  33  getlocal 0
+00426:  33  notearg
+00427:  33  newinit 1
+00432:  34  string "lb"
+00437:  34  initprop "desc"
+00442:  35  true
+00443:  35  initprop "sc"
+00448:  35  endinit
+00449:  35  notearg
+00450:  35  call 3
+00453:  35  pop
+00454:  42  true
+00455:  42  return
+00456:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:10 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  this
+00001:  45  dup
+00002:  45  callprop "_super"
+00007:  45  swap
+00008:  45  notearg
+00009:  45  call 0
+00012:  45  pop
+00013:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:44 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:47 ---
+loc   line  op
+----- ----  --
+main:
+00000:  48  this
+00001:  48  dup
+00002:  48  callprop "_super"
+00007:  48  swap
+00008:  48  notearg
+00009:  48  call 0
+00012:  48  pop
+00013:  48  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:47 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:51 ---
+loc   line  op
+----- ----  --
+main:
+00000:  52  name "xs"
+00005:  52  getprop "Scene"
+00010:  52  getprop "MiracleWeaponScene"
+00015:  52  undefined
+00016:  52  notearg
+00017:  52  new 0
+00020:  52  setlocal 0
+00023:  52  pop
+00024:  54  getlocal 0
+00027:  54  and 51 (+24)
+00032:  54  pop
+00033:  54  getlocal 0
+00036:  54  dup
+00037:  54  callprop "init"
+00042:  54  swap
+00043:  54  notearg
+00044:  54  getarg 0
+00047:  54  notearg
+00048:  54  call 1
+00051:  54  ifeq 60 (+9)
+00056:  55  getlocal 0
+00059:  55  return
+00060:  57  name "xs"
+00065:  57  dup
+00066:  57  callprop "assert"
+00071:  57  swap
+00072:  57  notearg
+00073:  57  false
+00074:  57  notearg
+00075:  57  string "xs.Scene.MiracleWeaponScene.create error!"
+00080:  57  notearg
+00081:  57  call 2
+00084:  57  pop
+00085:  58  null
+00086:  58  return
+00087:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.js:51 ---

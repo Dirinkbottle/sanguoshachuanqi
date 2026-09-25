@@ -1,0 +1,527 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/LadderModel.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=93 object[5]
+;; FUNCTION-MAP kind=lambda offset=103 object[6]
+;; FUNCTION-MAP kind=lambda offset=113 object[7]
+;; FUNCTION-MAP kind=lambda offset=123 object[8]
+;; FUNCTION-MAP kind=lambda offset=133 object[9]
+;; FUNCTION-MAP kind=lambda offset=143 object[10]
+;; FUNCTION-MAP kind=lambda offset=153 object[11]
+;; FUNCTION-MAP kind=lambda offset=163 object[12]
+;; FUNCTION-MAP kind=lambda offset=173 object[13]
+;; FUNCTION-MAP kind=lambda offset=209 object[14]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Models"
+00010:   6  name "cc"
+00015:   6  getprop "Class"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  string "xs.Models.LadderModel"
+00038:   7  initprop "name"
+00043:   9  lambda (function () {
+    [sourceless code]
+})
+00048:   9  initprop "init"
+00053:  29  lambda (function () {
+    [sourceless code]
+})
+00058:  29  initprop "initLadderTeam"
+00063:  41  lambda (function () {
+    [sourceless code]
+})
+00068:  41  initprop "getLadderTeam"
+00073:  45  lambda (function () {
+    [sourceless code]
+})
+00078:  45  initprop "getLadderTop"
+00083:  50  lambda (function () {
+    [sourceless code]
+})
+00088:  50  initprop "getLadderRank"
+00093:  55  lambda (function () {
+    [sourceless code]
+})
+00098:  55  initprop "getRankName"
+00103:  60  lambda (function () {
+    [sourceless code]
+})
+00108:  60  initprop "getCurRankSalary"
+00113:  65  lambda (function () {
+    [sourceless code]
+})
+00118:  65  initprop "getNextRankSalary"
+00123:  70  lambda (function () {
+    [sourceless code]
+})
+00128:  70  initprop "getTotalRankSalary"
+00133:  75  lambda (function () {
+    [sourceless code]
+})
+00138:  75  initprop "getTotalChallengeNum"
+00143:  80  lambda (function () {
+    [sourceless code]
+})
+00148:  80  initprop "getChallengeNum"
+00153:  85  lambda (function () {
+    [sourceless code]
+})
+00158:  85  initprop "getSelfIdx"
+00163:  94  lambda (function () {
+    [sourceless code]
+})
+00168:  94  initprop "getFocusIdx"
+00173: 102  lambda (function () {
+    [sourceless code]
+})
+00178: 102  initprop "isInTop10"
+00183: 102  endinit
+00184: 102  notearg
+00185: 102  call 1
+00188: 102  setprop "LadderModel"
+00193: 102  popv
+00194: 107  name "xs"
+00199: 107  getprop "Models"
+00204: 107  getprop "LadderModel"
+00209: 107  lambda (function () {
+    [sourceless code]
+})
+00214: 107  setprop "create"
+00219: 107  popv
+00220: 113  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] jsonObj
+;; local[0] ladderInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  getarg 0
+00003:  10  getprop "ladder_info"
+00008:  10  setlocal 0
+00011:  10  pop
+00012:  12  this
+00013:  12  getlocal 0
+00016:  12  getprop "ladder_rank"
+00021:  12  setprop "ladderRank"
+00026:  12  pop
+00027:  13  this
+00028:  13  getlocal 0
+00031:  13  getprop "rank_name"
+00036:  13  setprop "rankName"
+00041:  13  pop
+00042:  14  this
+00043:  14  getlocal 0
+00046:  14  getprop "cur_rank_salary"
+00051:  14  setprop "curRankSalary"
+00056:  14  pop
+00057:  15  this
+00058:  15  getlocal 0
+00061:  15  getprop "next_rank_salary"
+00066:  15  setprop "nextRankSalary"
+00071:  15  pop
+00072:  16  this
+00073:  16  getlocal 0
+00076:  16  getprop "ladder_rank_salary"
+00081:  16  setprop "totalRankSalary"
+00086:  16  pop
+00087:  17  this
+00088:  17  getlocal 0
+00091:  17  getprop "total_challenge_num"
+00096:  17  setprop "totalChallengeNum"
+00101:  17  pop
+00102:  18  this
+00103:  18  getlocal 0
+00106:  18  getprop "challenging_num"
+00111:  18  setprop "challengeNum"
+00116:  18  pop
+00117:  20  this
+00118:  20  newarray 0
+00122:  20  endinit
+00123:  20  setprop "ladderTeam"
+00128:  20  pop
+00129:  21  this
+00130:  21  newarray 0
+00134:  21  endinit
+00135:  21  setprop "ladderTop"
+00140:  21  pop
+00141:  23  this
+00142:  23  dup
+00143:  23  callprop "initLadderTeam"
+00148:  23  swap
+00149:  23  notearg
+00150:  23  getlocal 0
+00153:  23  getprop "ladder_team"
+00158:  23  notearg
+00159:  23  call 1
+00162:  23  pop
+00163:  25  true
+00164:  25  return
+00165:  25  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:9 ---
+;; function object[1] initLadderTeam
+;; function metadata object[1] nargs=1 bindings=3
+;; arg[0] ladder_team
+;; local[0] i
+;; local[1] otherPlayer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  zero
+00001:  30  setlocal 0
+00004:  30  pop
+00005:  30  goto 114 (+109)
+00010:  31  loophead
+00011:  31  name "xs"
+00016:  31  getprop "Models"
+00021:  31  getprop "OtherPlayerInfo"
+00026:  31  dup
+00027:  31  callprop "create"
+00032:  31  swap
+00033:  31  notearg
+00034:  31  getarg 0
+00037:  31  getlocal 0
+00040:  31  getelem
+00041:  31  notearg
+00042:  31  call 1
+00045:  31  setlocal 1
+00048:  31  pop
+00049:  32  getlocal 0
+00052:  32  int8 10
+00054:  32  lt
+00055:  32  ifeq 77 (+22)
+00060:  33  getlocal 1
+00063:  33  dup
+00064:  33  callprop "setIsTop"
+00069:  33  swap
+00070:  33  notearg
+00071:  33  true
+00072:  33  notearg
+00073:  33  call 1
+00076:  33  pop
+00077:  35  this
+00078:  35  getprop "ladderTeam"
+00083:  35  dup
+00084:  35  callprop "push"
+00089:  35  swap
+00090:  35  notearg
+00091:  35  getlocal 1
+00094:  35  notearg
+00095:  35  call 1
+00098:  35  pop
+00099:  30  localinc 11
+00102:  30  getlocal 0
+00105:  30  pos
+00106:  30  dup
+00107:  30  one
+00108:  30  add
+00109:  30  setlocal 0
+00112:  30  pop
+00113:  30  pop
+00114:  30  loopentry
+00115:  30  getlocal 0
+00118:  30  getarg 0
+00121:  30  length "length"
+00126:  30  lt
+00127:  30  ifne 10 (-117)
+00132:  37  this
+00133:  37  this
+00134:  37  getprop "ladderTeam"
+00139:  37  dup
+00140:  37  callprop "slice"
+00145:  37  swap
+00146:  37  notearg
+00147:  37  zero
+00148:  37  notearg
+00149:  37  int8 10
+00151:  37  notearg
+00152:  37  call 2
+00155:  37  setprop "ladderTop"
+00160:  37  pop
+00161:  38  this
+00162:  38  getprop "ladderTeam"
+00167:  38  dup
+00168:  38  callprop "reverse"
+00173:  38  swap
+00174:  38  notearg
+00175:  38  call 0
+00178:  38  pop
+00179:  38  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:29 ---
+;; function object[2] getLadderTeam
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  42  this
+00001:  42  getprop "ladderTeam"
+00006:  42  return
+00007:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:41 ---
+;; function object[3] getLadderTop
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  this
+00001:  46  getprop "ladderTop"
+00006:  46  return
+00007:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:45 ---
+;; function object[4] getLadderRank
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:50 ---
+loc   line  op
+----- ----  --
+main:
+00000:  51  this
+00001:  51  getprop "ladderRank"
+00006:  51  return
+00007:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:50 ---
+;; function object[5] getRankName
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:55 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  this
+00001:  56  getprop "rankName"
+00006:  56  return
+00007:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:55 ---
+;; function object[6] getCurRankSalary
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  61  this
+00001:  61  getprop "curRankSalary"
+00006:  61  return
+00007:  61  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:60 ---
+;; function object[7] getNextRankSalary
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:65 ---
+loc   line  op
+----- ----  --
+main:
+00000:  66  this
+00001:  66  getprop "nextRankSalary"
+00006:  66  return
+00007:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:65 ---
+;; function object[8] getTotalRankSalary
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:70 ---
+loc   line  op
+----- ----  --
+main:
+00000:  71  this
+00001:  71  getprop "totalRankSalary"
+00006:  71  return
+00007:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:70 ---
+;; function object[9] getTotalChallengeNum
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:75 ---
+loc   line  op
+----- ----  --
+main:
+00000:  76  this
+00001:  76  getprop "totalChallengeNum"
+00006:  76  return
+00007:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:75 ---
+;; function object[10] getChallengeNum
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:80 ---
+loc   line  op
+----- ----  --
+main:
+00000:  81  this
+00001:  81  getprop "challengeNum"
+00006:  81  return
+00007:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:80 ---
+;; function object[11] getSelfIdx
+;; function metadata object[11] nargs=0 bindings=1
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:85 ---
+loc   line  op
+----- ----  --
+main:
+00000:  86  zero
+00001:  86  setlocal 0
+00004:  86  pop
+00005:  86  goto 56 (+51)
+00010:  87  loophead
+00011:  87  this
+00012:  87  getprop "ladderTeam"
+00017:  87  getlocal 0
+00020:  87  getelem
+00021:  87  dup
+00022:  87  callprop "isSelf"
+00027:  87  swap
+00028:  87  notearg
+00029:  87  call 0
+00032:  87  ifeq 41 (+9)
+00037:  88  getlocal 0
+00040:  88  return
+00041:  86  localinc 11
+00044:  86  getlocal 0
+00047:  86  pos
+00048:  86  dup
+00049:  86  one
+00050:  86  add
+00051:  86  setlocal 0
+00054:  86  pop
+00055:  86  pop
+00056:  86  loopentry
+00057:  86  getlocal 0
+00060:  86  this
+00061:  86  getprop "ladderTeam"
+00066:  86  length "length"
+00071:  86  lt
+00072:  86  ifne 10 (-62)
+00077:  90  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:85 ---
+;; function object[12] getFocusIdx
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:94 ---
+loc   line  op
+----- ----  --
+main:
+00000:  95  this
+00001:  95  dup
+00002:  95  callprop "getSelfIdx"
+00007:  95  swap
+00008:  95  notearg
+00009:  95  call 0
+00012:  95  this
+00013:  95  getprop "ladderTeam"
+00018:  95  length "length"
+00023:  95  one
+00024:  95  sub
+00025:  95  stricteq
+00026:  95  ifeq 44 (+18)
+00031:  96  this
+00032:  96  dup
+00033:  96  callprop "getSelfIdx"
+00038:  96  swap
+00039:  96  notearg
+00040:  96  call 0
+00043:  96  return
+00044:  98  this
+00045:  98  dup
+00046:  98  callprop "getSelfIdx"
+00051:  98  swap
+00052:  98  notearg
+00053:  98  call 0
+00056:  98  one
+00057:  98  add
+00058:  98  return
+00059:  98  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:94 ---
+;; function object[13] isInTop10
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:102 ---
+loc   line  op
+----- ----  --
+main:
+00000: 103  this
+00001: 103  getprop "ladderRank"
+00006: 103  int8 10
+00008: 103  le
+00009: 103  ifeq 20 (+11)
+00014: 103  true
+00015: 103  goto 21 (+6)
+00020: 103  false
+00021: 103  return
+00022: 103  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:102 ---
+;; function object[14] create
+;; function metadata object[14] nargs=1 bindings=2
+;; arg[0] jsonObj
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:107 ---
+loc   line  op
+----- ----  --
+main:
+00000: 108  name "xs"
+00005: 108  getprop "Models"
+00010: 108  getprop "LadderModel"
+00015: 108  undefined
+00016: 108  notearg
+00017: 108  new 0
+00020: 108  setlocal 0
+00023: 108  pop
+00024: 109  getlocal 0
+00027: 109  and 51 (+24)
+00032: 109  pop
+00033: 109  getlocal 0
+00036: 109  dup
+00037: 109  callprop "init"
+00042: 109  swap
+00043: 109  notearg
+00044: 109  getarg 0
+00047: 109  notearg
+00048: 109  call 1
+00051: 109  ifeq 60 (+9)
+00056: 110  getlocal 0
+00059: 110  return
+00060: 112  null
+00061: 112  return
+00062: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/LadderModel.js:107 ---

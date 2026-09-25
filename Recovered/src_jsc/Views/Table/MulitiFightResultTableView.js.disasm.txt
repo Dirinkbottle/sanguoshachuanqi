@@ -1,0 +1,562 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/MulitiFightResultTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=79 object[0]
+;; FUNCTION-MAP kind=lambda offset=89 object[1]
+;; FUNCTION-MAP kind=lambda offset=99 object[2]
+;; FUNCTION-MAP kind=lambda offset=109 object[3]
+;; FUNCTION-MAP kind=lambda offset=119 object[4]
+;; FUNCTION-MAP kind=lambda offset=129 object[5]
+;; FUNCTION-MAP kind=lambda offset=139 object[6]
+;; FUNCTION-MAP kind=lambda offset=180 object[7]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Views"
+00010:   7  getprop "Table"
+00015:   7  name "xs"
+00020:   7  getprop "Views"
+00025:   7  getprop "Table"
+00030:   7  getprop "BaseTableView"
+00035:   7  dup
+00036:   7  callprop "extend"
+00041:   7  swap
+00042:   7  notearg
+00043:   7  newinit 1
+00048:   8  string "MulitiFightResultTableView"
+00053:   8  initprop "name"
+00058:  10  newinit 1
+00063:  11  newarray 0
+00067:  11  endinit
+00068:  11  initprop "modelTypes"
+00073:  11  endinit
+00074:  11  initprop "Cfg"
+00079:  16  lambda (function () {
+    [sourceless code]
+})
+00084:  16  initprop "setData"
+00089:  21  lambda (function () {
+    [sourceless code]
+})
+00094:  21  initprop "refreshData"
+00099:  33  lambda (function () {
+    [sourceless code]
+})
+00104:  33  initprop "createCell"
+00109:  39  lambda (function () {
+    [sourceless code]
+})
+00114:  39  initprop "makeViewSize"
+00119:  44  lambda (function () {
+    [sourceless code]
+})
+00124:  44  initprop "makeCellSize"
+00129:  47  lambda (function () {
+    [sourceless code]
+})
+00134:  47  initprop "getHanZiByNum"
+00139:  69  lambda (function () {
+    [sourceless code]
+})
+00144:  69  initprop "switchToHanzi"
+00149:  69  endinit
+00150:  69  notearg
+00151:  69  call 1
+00154:  69  setprop "MulitiFightResultTableView"
+00159:  69  popv
+00160:  98  name "xs"
+00165:  98  getprop "Views"
+00170:  98  getprop "Table"
+00175:  98  getprop "MulitiFightResultTableView"
+00180:  98  lambda (function () {
+    [sourceless code]
+})
+00185:  98  setprop "create"
+00190:  98  popv
+00191: 105  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:1 ---
+;; function object[0] setData
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] mulitiFightModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  getarg 0
+00004:  17  dup
+00005:  17  callprop "getFightInfos"
+00010:  17  swap
+00011:  17  notearg
+00012:  17  call 0
+00015:  17  setprop "arrayModel"
+00020:  17  pop
+00021:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:16 ---
+;; function object[1] refreshData
+;; function metadata object[1] nargs=0 bindings=1
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  this
+00001:  22  dup
+00002:  22  callprop "markFuncBegin"
+00007:  22  swap
+00008:  22  notearg
+00009:  22  string "refreshData"
+00014:  22  notearg
+00015:  22  call 1
+00018:  22  pop
+00019:  23  zero
+00020:  23  setlocal 0
+00023:  23  pop
+00024:  23  goto 145 (+121)
+00029:  25  loophead
+00030:  25  this
+00031:  25  getprop "arrayModel"
+00036:  25  getlocal 0
+00039:  25  getelem
+00040:  25  name "xs"
+00045:  25  getprop "Tools"
+00050:  25  getprop "String"
+00055:  25  dup
+00056:  25  callprop "createString"
+00061:  25  swap
+00062:  25  notearg
+00063:  25  string "auto_name_123"
+00068:  25  notearg
+00069:  25  call 1
+00072:  25  this
+00073:  25  dup
+00074:  25  callprop "getHanZiByNum"
+00079:  25  swap
+00080:  25  notearg
+00081:  25  getlocal 0
+00084:  25  one
+00085:  25  add
+00086:  25  notearg
+00087:  25  call 1
+00090:  25  add
+00091:  25  name "xs"
+00096:  25  getprop "Tools"
+00101:  25  getprop "String"
+00106:  25  dup
+00107:  25  callprop "createString"
+00112:  25  swap
+00113:  25  notearg
+00114:  25  string "auto_name_289"
+00119:  25  notearg
+00120:  25  call 1
+00123:  25  add
+00124:  25  setprop "titleName"
+00129:  25  pop
+00130:  23  localinc 11
+00133:  23  getlocal 0
+00136:  23  pos
+00137:  23  dup
+00138:  23  one
+00139:  23  add
+00140:  23  setlocal 0
+00143:  23  pop
+00144:  23  pop
+00145:  23  loopentry
+00146:  23  getlocal 0
+00149:  23  this
+00150:  23  getprop "arrayModel"
+00155:  23  length "length"
+00160:  23  lt
+00161:  23  ifne 29 (-132)
+00166:  29  this
+00167:  29  dup
+00168:  29  callprop "markFuncEnd"
+00173:  29  swap
+00174:  29  notearg
+00175:  29  string "refreshData"
+00180:  29  notearg
+00181:  29  call 1
+00184:  29  pop
+00185:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:21 ---
+;; function object[2] createCell
+;; function metadata object[2] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:33 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  name "xs"
+00005:  34  getprop "Views"
+00010:  34  getprop "Table"
+00015:  34  getprop "Cell"
+00020:  34  getprop "MulitiFightCell"
+00025:  34  dup
+00026:  34  callprop "create"
+00031:  34  swap
+00032:  34  notearg
+00033:  34  this
+00034:  34  getprop "arrayModel"
+00039:  34  getarg 0
+00042:  34  getelem
+00043:  34  notearg
+00044:  34  call 1
+00047:  34  setlocal 0
+00050:  34  pop
+00051:  35  getlocal 0
+00054:  35  return
+00055:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:33 ---
+;; function object[3] makeViewSize
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  name "cc"
+00005:  40  dup
+00006:  40  callprop "size"
+00011:  40  swap
+00012:  40  notearg
+00013:  40  uint16 710
+00016:  40  notearg
+00017:  40  uint16 450
+00020:  40  notearg
+00021:  40  call 2
+00024:  40  return
+00025:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:39 ---
+;; function object[4] makeCellSize
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  name "cc"
+00005:  45  dup
+00006:  45  callprop "size"
+00011:  45  swap
+00012:  45  notearg
+00013:  45  uint16 686
+00016:  45  notearg
+00017:  45  uint16 220
+00020:  45  notearg
+00021:  45  call 2
+00024:  45  return
+00025:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:44 ---
+;; function object[5] getHanZiByNum
+;; function metadata object[5] nargs=1 bindings=3
+;; arg[0] num
+;; local[0] num_1
+;; local[1] num_2
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:47 ---
+loc   line  op
+----- ----  --
+main:
+00000:  48  getarg 0
+00003:  48  int8 99
+00005:  48  gt
+00006:  48  ifeq 17 (+11)
+00011:  49  string ""
+00016:  49  return
+00017:  51  getarg 0
+00020:  51  int8 10
+00022:  51  le
+00023:  51  ifeq 50 (+27)
+00028:  52  this
+00029:  52  dup
+00030:  52  callprop "switchToHanzi"
+00035:  52  swap
+00036:  52  notearg
+00037:  52  getarg 0
+00040:  52  notearg
+00041:  52  call 1
+00044:  52  return
+00045:  52  goto 232 (+187)
+00050:  54  getarg 0
+00053:  54  int8 10
+00055:  54  mod
+00056:  54  setlocal 0
+00059:  54  pop
+00060:  55  callname "parseInt"
+00065:  55  implicitthis "parseInt"
+00070:  55  notearg
+00071:  55  getarg 0
+00074:  55  int8 10
+00076:  55  div
+00077:  55  notearg
+00078:  55  call 1
+00081:  55  setlocal 1
+00084:  55  pop
+00085:  56  getlocal 0
+00088:  56  zero
+00089:  56  eq
+00090:  56  ifeq 133 (+43)
+00095:  57  this
+00096:  57  dup
+00097:  57  callprop "switchToHanzi"
+00102:  57  swap
+00103:  57  notearg
+00104:  57  getlocal 1
+00107:  57  notearg
+00108:  57  call 1
+00111:  57  this
+00112:  57  dup
+00113:  57  callprop "switchToHanzi"
+00118:  57  swap
+00119:  57  notearg
+00120:  57  int8 10
+00122:  57  notearg
+00123:  57  call 1
+00126:  57  add
+00127:  57  return
+00128:  57  goto 232 (+104)
+00133:  59  getarg 0
+00136:  59  int8 20
+00138:  59  lt
+00139:  59  ifeq 182 (+43)
+00144:  60  this
+00145:  60  dup
+00146:  60  callprop "switchToHanzi"
+00151:  60  swap
+00152:  60  notearg
+00153:  60  int8 10
+00155:  60  notearg
+00156:  60  call 1
+00159:  60  this
+00160:  60  dup
+00161:  60  callprop "switchToHanzi"
+00166:  60  swap
+00167:  60  notearg
+00168:  60  getlocal 0
+00171:  60  notearg
+00172:  60  call 1
+00175:  60  add
+00176:  60  return
+00177:  60  goto 232 (+55)
+00182:  63  this
+00183:  63  dup
+00184:  63  callprop "switchToHanzi"
+00189:  63  swap
+00190:  63  notearg
+00191:  63  getlocal 1
+00194:  63  notearg
+00195:  63  call 1
+00198:  63  this
+00199:  63  dup
+00200:  63  callprop "switchToHanzi"
+00205:  63  swap
+00206:  63  notearg
+00207:  63  int8 10
+00209:  63  notearg
+00210:  63  call 1
+00213:  63  add
+00214:  63  this
+00215:  63  dup
+00216:  63  callprop "switchToHanzi"
+00221:  63  swap
+00222:  63  notearg
+00223:  63  getlocal 0
+00226:  63  notearg
+00227:  63  call 1
+00230:  63  add
+00231:  63  return
+00232:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:47 ---
+;; function object[6] switchToHanzi
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] num
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:69 ---
+loc   line  op
+----- ----  --
+main:
+00000:  70  getarg 0
+00003:  70  tableswitch defaultOffset 383 low 1 high 10
+	1: 53
+	2: 86
+	3: 119
+	4: 152
+	5: 185
+	6: 218
+	7: 251
+	8: 284
+	9: 317
+	10: 350
+00056:  72  name "xs"
+00061:  72  getprop "Tools"
+00066:  72  getprop "String"
+00071:  72  dup
+00072:  72  callprop "createString"
+00077:  72  swap
+00078:  72  notearg
+00079:  72  string "auto_name_475"
+00084:  72  notearg
+00085:  72  call 1
+00088:  72  return
+00089:  74  name "xs"
+00094:  74  getprop "Tools"
+00099:  74  getprop "String"
+00104:  74  dup
+00105:  74  callprop "createString"
+00110:  74  swap
+00111:  74  notearg
+00112:  74  string "auto_name_476"
+00117:  74  notearg
+00118:  74  call 1
+00121:  74  return
+00122:  76  name "xs"
+00127:  76  getprop "Tools"
+00132:  76  getprop "String"
+00137:  76  dup
+00138:  76  callprop "createString"
+00143:  76  swap
+00144:  76  notearg
+00145:  76  string "auto_name_477"
+00150:  76  notearg
+00151:  76  call 1
+00154:  76  return
+00155:  78  name "xs"
+00160:  78  getprop "Tools"
+00165:  78  getprop "String"
+00170:  78  dup
+00171:  78  callprop "createString"
+00176:  78  swap
+00177:  78  notearg
+00178:  78  string "auto_name_478"
+00183:  78  notearg
+00184:  78  call 1
+00187:  78  return
+00188:  80  name "xs"
+00193:  80  getprop "Tools"
+00198:  80  getprop "String"
+00203:  80  dup
+00204:  80  callprop "createString"
+00209:  80  swap
+00210:  80  notearg
+00211:  80  string "auto_name_479"
+00216:  80  notearg
+00217:  80  call 1
+00220:  80  return
+00221:  82  name "xs"
+00226:  82  getprop "Tools"
+00231:  82  getprop "String"
+00236:  82  dup
+00237:  82  callprop "createString"
+00242:  82  swap
+00243:  82  notearg
+00244:  82  string "auto_name_480"
+00249:  82  notearg
+00250:  82  call 1
+00253:  82  return
+00254:  84  name "xs"
+00259:  84  getprop "Tools"
+00264:  84  getprop "String"
+00269:  84  dup
+00270:  84  callprop "createString"
+00275:  84  swap
+00276:  84  notearg
+00277:  84  string "auto_name_481"
+00282:  84  notearg
+00283:  84  call 1
+00286:  84  return
+00287:  86  name "xs"
+00292:  86  getprop "Tools"
+00297:  86  getprop "String"
+00302:  86  dup
+00303:  86  callprop "createString"
+00308:  86  swap
+00309:  86  notearg
+00310:  86  string "auto_name_482"
+00315:  86  notearg
+00316:  86  call 1
+00319:  86  return
+00320:  88  name "xs"
+00325:  88  getprop "Tools"
+00330:  88  getprop "String"
+00335:  88  dup
+00336:  88  callprop "createString"
+00341:  88  swap
+00342:  88  notearg
+00343:  88  string "auto_name_483"
+00348:  88  notearg
+00349:  88  call 1
+00352:  88  return
+00353:  90  name "xs"
+00358:  90  getprop "Tools"
+00363:  90  getprop "String"
+00368:  90  dup
+00369:  90  callprop "createString"
+00374:  90  swap
+00375:  90  notearg
+00376:  90  string "auto_name_484"
+00381:  90  notearg
+00382:  90  call 1
+00385:  90  return
+00386:  92  getarg 0
+00389:  92  return
+00390:  93  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:69 ---
+;; function object[7] create
+;; function metadata object[7] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:98 ---
+loc   line  op
+----- ----  --
+main:
+00000:  99  name "xs"
+00005:  99  getprop "Views"
+00010:  99  getprop "Table"
+00015:  99  getprop "MulitiFightResultTableView"
+00020:  99  undefined
+00021:  99  notearg
+00022:  99  new 0
+00025:  99  setlocal 0
+00028:  99  pop
+00029: 100  getlocal 0
+00032: 100  and 52 (+20)
+00037: 100  pop
+00038: 100  getlocal 0
+00041: 100  dup
+00042: 100  callprop "init"
+00047: 100  swap
+00048: 100  notearg
+00049: 100  call 0
+00052: 100  ifeq 61 (+9)
+00057: 101  getlocal 0
+00060: 101  return
+00061: 103  this
+00062: 103  dup
+00063: 103  callprop "error"
+00068: 103  swap
+00069: 103  notearg
+00070: 103  string "MulitiFightResultTableView.create:"
+00075: 103  notearg
+00076: 103  call 1
+00079: 103  pop
+00080: 104  null
+00081: 104  return
+00082: 104  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/MulitiFightResultTableView.js:98 ---

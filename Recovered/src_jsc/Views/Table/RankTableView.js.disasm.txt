@@ -1,0 +1,382 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/RankTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+;; FUNCTION-MAP kind=lambda offset=68 object[1]
+;; FUNCTION-MAP kind=lambda offset=78 object[2]
+;; FUNCTION-MAP kind=lambda offset=88 object[3]
+;; FUNCTION-MAP kind=lambda offset=98 object[4]
+;; FUNCTION-MAP kind=lambda offset=108 object[5]
+;; FUNCTION-MAP kind=lambda offset=149 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Views"
+00010:   4  getprop "Table"
+00015:   4  name "xs"
+00020:   4  getprop "Views"
+00025:   4  getprop "Table"
+00030:   4  getprop "BaseTableView"
+00035:   4  dup
+00036:   4  callprop "extend"
+00041:   4  swap
+00042:   4  notearg
+00043:   4  newinit 1
+00048:   6  string "RankTableView"
+00053:   6  initprop "name"
+00058:   8  lambda (function () {
+    [sourceless code]
+})
+00063:   8  initprop "init"
+00068:  26  lambda (function () {
+    [sourceless code]
+})
+00073:  26  initprop "refreshData"
+00078:  31  lambda (function () {
+    [sourceless code]
+})
+00083:  31  initprop "createCell"
+00088:  57  lambda (function () {
+    [sourceless code]
+})
+00093:  57  initprop "makeViewSize"
+00098:  62  lambda (function () {
+    [sourceless code]
+})
+00103:  62  initprop "makeCellSize"
+00108:  65  lambda (function () {
+    [sourceless code]
+})
+00113:  65  initprop "numberOfCellsInTableView"
+00118:  65  endinit
+00119:  65  notearg
+00120:  65  call 1
+00123:  65  setprop "RankTableView"
+00128:  65  popv
+00129:  82  name "xs"
+00134:  82  getprop "Views"
+00139:  82  getprop "Table"
+00144:  82  getprop "RankTableView"
+00149:  82  lambda (function () {
+    [sourceless code]
+})
+00154:  82  setprop "create"
+00159:  82  popv
+00160:  89  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=2 bindings=2
+;; arg[0] data
+;; arg[1] type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  call 0
+00012:   9  not
+00013:   9  ifeq 20 (+7)
+00018:  10  false
+00019:  10  return
+00020:  13  this
+00021:  13  dup
+00022:  13  callprop "setDirection"
+00027:  13  swap
+00028:  13  notearg
+00029:  13  name "cc"
+00034:  13  getprop "SCROLLVIEW_DIRECTION_HORIZONTAL"
+00039:  13  notearg
+00040:  13  call 1
+00043:  13  pop
+00044:  14  this
+00045:  14  dup
+00046:  14  callprop "setVerticalFillOrder"
+00051:  14  swap
+00052:  14  notearg
+00053:  14  name "cc"
+00058:  14  getprop "TABLEVIEW_FILL_TOPDOWN"
+00063:  14  notearg
+00064:  14  call 1
+00067:  14  pop
+00068:  16  this
+00069:  16  getarg 1
+00072:  16  setprop "dataType"
+00077:  16  pop
+00078:  17  this
+00079:  17  getarg 0
+00082:  17  setprop "data"
+00087:  17  pop
+00088:  21  true
+00089:  21  return
+00090:  21  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:8 ---
+;; function object[1] refreshData
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  this
+00001:  27  this
+00002:  27  getprop "data"
+00007:  27  or 18 (+11)
+00012:  27  pop
+00013:  27  newarray 0
+00017:  27  endinit
+00018:  27  setprop "arrayModel"
+00023:  27  pop
+00024:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:26 ---
+;; function object[2] createCell
+;; function metadata object[2] nargs=1 bindings=3
+;; arg[0] idx
+;; local[0] obj
+;; local[1] celldata
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:31 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  getarg 0
+00003:  40  this
+00004:  40  getprop "arrayModel"
+00009:  40  length "length"
+00014:  40  eq
+00015:  40  ifeq 61 (+46)
+00020:  42  name "xs"
+00025:  42  getprop "Views"
+00030:  42  getprop "RankTableViewCell"
+00035:  42  dup
+00036:  42  callprop "create"
+00041:  42  swap
+00042:  42  notearg
+00043:  42  this
+00044:  42  getprop "dataType"
+00049:  42  notearg
+00050:  42  call 1
+00053:  42  setlocal 0
+00056:  42  pop
+00057:  43  getlocal 0
+00060:  43  return
+00061:  45  this
+00062:  45  getprop "arrayModel"
+00067:  45  getarg 0
+00070:  45  getelem
+00071:  45  setlocal 1
+00074:  45  pop
+00075:  47  getlocal 1
+00078:  47  string "undefined"
+00083:  47  eq
+00084:  47  or 95 (+11)
+00089:  47  pop
+00090:  47  getlocal 1
+00093:  47  null
+00094:  47  eq
+00095:  47  ifeq 141 (+46)
+00100:  49  name "xs"
+00105:  49  getprop "Views"
+00110:  49  getprop "RankTableViewCell"
+00115:  49  dup
+00116:  49  callprop "create"
+00121:  49  swap
+00122:  49  notearg
+00123:  49  this
+00124:  49  getprop "dataType"
+00129:  49  notearg
+00130:  49  call 1
+00133:  49  setlocal 0
+00136:  49  pop
+00137:  50  getlocal 0
+00140:  50  return
+00141:  53  name "xs"
+00146:  53  getprop "Views"
+00151:  53  getprop "RankTableViewCell"
+00156:  53  dup
+00157:  53  callprop "create"
+00162:  53  swap
+00163:  53  notearg
+00164:  53  this
+00165:  53  getprop "dataType"
+00170:  53  notearg
+00171:  53  getlocal 1
+00174:  53  notearg
+00175:  53  getarg 0
+00178:  53  notearg
+00179:  53  call 3
+00182:  53  return
+00183:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:31 ---
+;; function object[3] makeViewSize
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] visibelSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:57 ---
+loc   line  op
+----- ----  --
+main:
+00000:  58  name "cc"
+00005:  58  getprop "Director"
+00010:  58  dup
+00011:  58  callprop "getInstance"
+00016:  58  swap
+00017:  58  notearg
+00018:  58  call 0
+00021:  58  dup
+00022:  58  callprop "getVisibleSize"
+00027:  58  swap
+00028:  58  notearg
+00029:  58  call 0
+00032:  58  setlocal 0
+00035:  58  pop
+00036:  59  name "cc"
+00041:  59  dup
+00042:  59  callprop "size"
+00047:  59  swap
+00048:  59  notearg
+00049:  59  getlocal 0
+00052:  59  getprop "width"
+00057:  59  notearg
+00058:  59  uint16 564
+00061:  59  notearg
+00062:  59  call 2
+00065:  59  return
+00066:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:57 ---
+;; function object[4] makeCellSize
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  name "cc"
+00005:  63  dup
+00006:  63  callprop "size"
+00011:  63  swap
+00012:  63  notearg
+00013:  63  uint16 246
+00016:  63  notearg
+00017:  63  uint16 564
+00020:  63  notearg
+00021:  63  call 2
+00024:  63  return
+00025:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:62 ---
+;; function object[5] numberOfCellsInTableView
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] table
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=catch start=20 length=39 stackDepth=0 target=59
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:65 ---
+loc   line  op
+----- ----  --
+main:
+00000:  66  this
+00001:  66  dup
+00002:  66  callprop "markFuncBegin"
+00007:  66  swap
+00008:  66  notearg
+00009:  66  string "RankTableView numberOfCellsInTableView"
+00014:  66  notearg
+00015:  66  call 1
+00018:  66  pop
+00019:  67  try 59 (+40)
+00020:  69  this
+00021:  69  getprop "arrayModel"
+00026:  69  length "length"
+00031:  69  zero
+00032:  69  eq
+00033:  69  ifeq 40 (+7)
+00038:  70  one
+00039:  70  return
+00040:  72  this
+00041:  72  getprop "arrayModel"
+00046:  72  length "length"
+00051:  72  one
+00052:  72  add
+00053:  72  return
+00054:  72  goto 95 (+41)
+00059:  73  enterblock depth 0 {e: 0}
+00064:  73  exception
+00065:  73  setlocal 0
+00068:  73  pop
+00069:  74  this
+00070:  74  dup
+00071:  74  callprop "warnException"
+00076:  74  swap
+00077:  74  notearg
+00078:  74  getlocal 0
+00081:  74  notearg
+00082:  74  call 1
+00085:  74  pop
+00086:  74  leaveblock 1
+00089:  74  goto 95 (+6)
+00094:  74  nop
+00095:  77  this
+00096:  77  dup
+00097:  77  callprop "markFuncEnd"
+00102:  77  swap
+00103:  77  notearg
+00104:  77  string "RankTableView numberOfCellsInTableView"
+00109:  77  notearg
+00110:  77  call 1
+00113:  77  pop
+00114:  77  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:65 ---
+;; function object[6] create
+;; function metadata object[6] nargs=2 bindings=3
+;; arg[0] data
+;; arg[1] type
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:82 ---
+loc   line  op
+----- ----  --
+main:
+00000:  83  name "xs"
+00005:  83  getprop "Views"
+00010:  83  getprop "Table"
+00015:  83  getprop "RankTableView"
+00020:  83  undefined
+00021:  83  notearg
+00022:  83  new 0
+00025:  83  setlocal 0
+00028:  83  pop
+00029:  84  getlocal 0
+00032:  84  and 60 (+28)
+00037:  84  pop
+00038:  84  getlocal 0
+00041:  84  dup
+00042:  84  callprop "init"
+00047:  84  swap
+00048:  84  notearg
+00049:  84  getarg 0
+00052:  84  notearg
+00053:  84  getarg 1
+00056:  84  notearg
+00057:  84  call 2
+00060:  84  ifeq 69 (+9)
+00065:  85  getlocal 0
+00068:  85  return
+00069:  88  null
+00070:  88  return
+00071:  88  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/RankTableView.js:82 ---

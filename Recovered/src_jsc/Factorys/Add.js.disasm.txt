@@ -1,0 +1,333 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Factorys/Add.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=15 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Add.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Factorys"
+00010:   9  newinit 1
+00015:  10  lambda (function () {
+    [sourceless code]
+})
+00020:  10  initprop "createWithJson"
+00025:  10  endinit
+00026:  10  setprop "Add"
+00031:  10  popv
+00032:  77  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Add.js:1 ---
+;; function object[0] createWithJson
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] json
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Add.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  null
+00001:  11  setlocal 0
+00004:  11  pop
+00005:  13  callname "parseInt"
+00010:  13  implicitthis "parseInt"
+00015:  13  notearg
+00016:  13  getarg 0
+00019:  13  getprop "type"
+00024:  13  notearg
+00025:  13  call 1
+00028:  13  condswitch
+00029:  14  name "xs"
+00034:  14  getprop "Constant_AddType_Item"
+00039:  14  case 244 (+205)
+00044:  19  name "xs"
+00049:  19  getprop "Constant_AddType_PlayerAttr"
+00054:  19  case 298 (+244)
+00059:  24  name "xs"
+00064:  24  getprop "Constant_AddType_Equipment_Obj"
+00069:  24  case 352 (+283)
+00074:  25  name "xs"
+00079:  25  getprop "Constant_AddType_Equipment"
+00084:  25  case 352 (+268)
+00089:  30  name "xs"
+00094:  30  getprop "Constant_AddType_EquipmentPiece"
+00099:  30  case 406 (+307)
+00104:  35  name "xs"
+00109:  35  getprop "Constant_AddType_Skill_Obj"
+00114:  35  case 460 (+346)
+00119:  36  name "xs"
+00124:  36  getprop "Constant_AddType_Skill"
+00129:  36  case 460 (+331)
+00134:  41  name "xs"
+00139:  41  getprop "Constant_AddType_General_Obj"
+00144:  41  case 514 (+370)
+00149:  42  name "xs"
+00154:  42  getprop "Constant_AddType_General"
+00159:  42  case 514 (+355)
+00164:  47  name "xs"
+00169:  47  getprop "Constant_AddType_GeneralSoul"
+00174:  47  case 568 (+394)
+00179:  52  name "xs"
+00184:  52  getprop "Constant_AddType_SkillPiece"
+00189:  52  case 622 (+433)
+00194:  57  name "xs"
+00199:  57  getprop "Constant_AddType_Gems"
+00204:  57  case 676 (+472)
+00209:  61  name "xs"
+00214:  61  getprop "Constant_AddType_Goddess"
+00219:  61  case 730 (+511)
+00224:  65  name "xs"
+00229:  65  getprop "Constant_AddType_GoddessSurface"
+00234:  65  case 784 (+550)
+00239:  65  default 838 (+599)
+00244:  15  name "xs"
+00249:  15  getprop "Models"
+00254:  15  getprop "AddItem"
+00259:  15  dup
+00260:  15  callprop "create"
+00265:  15  swap
+00266:  15  notearg
+00267:  15  call 0
+00270:  15  setlocal 0
+00273:  15  pop
+00274:  16  getlocal 0
+00277:  16  dup
+00278:  16  callprop "loadJson"
+00283:  16  swap
+00284:  16  notearg
+00285:  16  getarg 0
+00288:  16  notearg
+00289:  16  call 1
+00292:  16  pop
+00293:  17  goto 896 (+603)
+00298:  20  name "xs"
+00303:  20  getprop "Models"
+00308:  20  getprop "AddPlayerInfo"
+00313:  20  dup
+00314:  20  callprop "create"
+00319:  20  swap
+00320:  20  notearg
+00321:  20  call 0
+00324:  20  setlocal 0
+00327:  20  pop
+00328:  21  getlocal 0
+00331:  21  dup
+00332:  21  callprop "loadJson"
+00337:  21  swap
+00338:  21  notearg
+00339:  21  getarg 0
+00342:  21  notearg
+00343:  21  call 1
+00346:  21  pop
+00347:  22  goto 896 (+549)
+00352:  26  name "xs"
+00357:  26  getprop "Models"
+00362:  26  getprop "AddEquipment"
+00367:  26  dup
+00368:  26  callprop "create"
+00373:  26  swap
+00374:  26  notearg
+00375:  26  call 0
+00378:  26  setlocal 0
+00381:  26  pop
+00382:  27  getlocal 0
+00385:  27  dup
+00386:  27  callprop "loadJson"
+00391:  27  swap
+00392:  27  notearg
+00393:  27  getarg 0
+00396:  27  notearg
+00397:  27  call 1
+00400:  27  pop
+00401:  28  goto 896 (+495)
+00406:  31  name "xs"
+00411:  31  getprop "Models"
+00416:  31  getprop "AddEquipmentPiece"
+00421:  31  dup
+00422:  31  callprop "create"
+00427:  31  swap
+00428:  31  notearg
+00429:  31  call 0
+00432:  31  setlocal 0
+00435:  31  pop
+00436:  32  getlocal 0
+00439:  32  dup
+00440:  32  callprop "loadJson"
+00445:  32  swap
+00446:  32  notearg
+00447:  32  getarg 0
+00450:  32  notearg
+00451:  32  call 1
+00454:  32  pop
+00455:  33  goto 896 (+441)
+00460:  37  name "xs"
+00465:  37  getprop "Models"
+00470:  37  getprop "AddSkill"
+00475:  37  dup
+00476:  37  callprop "create"
+00481:  37  swap
+00482:  37  notearg
+00483:  37  call 0
+00486:  37  setlocal 0
+00489:  37  pop
+00490:  38  getlocal 0
+00493:  38  dup
+00494:  38  callprop "loadJson"
+00499:  38  swap
+00500:  38  notearg
+00501:  38  getarg 0
+00504:  38  notearg
+00505:  38  call 1
+00508:  38  pop
+00509:  39  goto 896 (+387)
+00514:  43  name "xs"
+00519:  43  getprop "Models"
+00524:  43  getprop "AddGeneral"
+00529:  43  dup
+00530:  43  callprop "create"
+00535:  43  swap
+00536:  43  notearg
+00537:  43  call 0
+00540:  43  setlocal 0
+00543:  43  pop
+00544:  44  getlocal 0
+00547:  44  dup
+00548:  44  callprop "loadJson"
+00553:  44  swap
+00554:  44  notearg
+00555:  44  getarg 0
+00558:  44  notearg
+00559:  44  call 1
+00562:  44  pop
+00563:  45  goto 896 (+333)
+00568:  48  name "xs"
+00573:  48  getprop "Models"
+00578:  48  getprop "AddGeneralSoul"
+00583:  48  dup
+00584:  48  callprop "create"
+00589:  48  swap
+00590:  48  notearg
+00591:  48  call 0
+00594:  48  setlocal 0
+00597:  48  pop
+00598:  49  getlocal 0
+00601:  49  dup
+00602:  49  callprop "loadJson"
+00607:  49  swap
+00608:  49  notearg
+00609:  49  getarg 0
+00612:  49  notearg
+00613:  49  call 1
+00616:  49  pop
+00617:  50  goto 896 (+279)
+00622:  53  name "xs"
+00627:  53  getprop "Models"
+00632:  53  getprop "AddSkillFragment"
+00637:  53  dup
+00638:  53  callprop "create"
+00643:  53  swap
+00644:  53  notearg
+00645:  53  call 0
+00648:  53  setlocal 0
+00651:  53  pop
+00652:  54  getlocal 0
+00655:  54  dup
+00656:  54  callprop "loadJson"
+00661:  54  swap
+00662:  54  notearg
+00663:  54  getarg 0
+00666:  54  notearg
+00667:  54  call 1
+00670:  54  pop
+00671:  55  goto 896 (+225)
+00676:  58  name "xs"
+00681:  58  getprop "Models"
+00686:  58  getprop "AddGems"
+00691:  58  dup
+00692:  58  callprop "create"
+00697:  58  swap
+00698:  58  notearg
+00699:  58  call 0
+00702:  58  setlocal 0
+00705:  58  pop
+00706:  59  getlocal 0
+00709:  59  dup
+00710:  59  callprop "loadJson"
+00715:  59  swap
+00716:  59  notearg
+00717:  59  getarg 0
+00720:  59  notearg
+00721:  59  call 1
+00724:  59  pop
+00725:  60  goto 896 (+171)
+00730:  62  name "xs"
+00735:  62  getprop "Models"
+00740:  62  getprop "AddGoddess"
+00745:  62  dup
+00746:  62  callprop "create"
+00751:  62  swap
+00752:  62  notearg
+00753:  62  call 0
+00756:  62  setlocal 0
+00759:  62  pop
+00760:  63  getlocal 0
+00763:  63  dup
+00764:  63  callprop "loadJson"
+00769:  63  swap
+00770:  63  notearg
+00771:  63  getarg 0
+00774:  63  notearg
+00775:  63  call 1
+00778:  63  pop
+00779:  64  goto 896 (+117)
+00784:  66  name "xs"
+00789:  66  getprop "Models"
+00794:  66  getprop "AddGoddess"
+00799:  66  dup
+00800:  66  callprop "create"
+00805:  66  swap
+00806:  66  notearg
+00807:  66  call 0
+00810:  66  setlocal 0
+00813:  66  pop
+00814:  67  getlocal 0
+00817:  67  dup
+00818:  67  callprop "loadJson"
+00823:  67  swap
+00824:  67  notearg
+00825:  67  getarg 0
+00828:  67  notearg
+00829:  67  call 1
+00832:  67  pop
+00833:  68  goto 896 (+63)
+00838:  71  this
+00839:  71  dup
+00840:  71  callprop "error"
+00845:  71  swap
+00846:  71  notearg
+00847:  71  string "the add type is error!!"
+00852:  71  callname "parseInt"
+00857:  71  implicitthis "parseInt"
+00862:  71  notearg
+00863:  71  getarg 0
+00866:  71  getprop "type"
+00871:  71  notearg
+00872:  71  call 1
+00875:  71  add
+00876:  71  string ","
+00881:  71  add
+00882:  71  getarg 0
+00885:  71  add
+00886:  71  notearg
+00887:  71  call 1
+00890:  71  pop
+00891:  72  goto 896 (+5)
+00896:  75  getlocal 0
+00899:  75  return
+00900:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Add.js:10 ---

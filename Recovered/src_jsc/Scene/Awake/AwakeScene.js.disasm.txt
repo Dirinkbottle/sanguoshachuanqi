@@ -1,0 +1,435 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Awake/AwakeScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=89 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Scene"
+00010:   5  name "cc"
+00015:   5  getprop "Scene"
+00020:   5  dup
+00021:   5  callprop "extend"
+00026:   5  swap
+00027:   5  notearg
+00028:   5  newinit 1
+00033:   6  string "xs.Scene.AwakeScene"
+00038:   6  initprop "name"
+00043:   8  lambda (function () {
+    [sourceless code]
+})
+00048:   8  initprop "ctor"
+00053:  13  lambda (function () {
+    [sourceless code]
+})
+00058:  13  initprop "init"
+00063:  13  endinit
+00064:  13  notearg
+00065:  13  call 1
+00068:  13  setprop "AwakeScene"
+00073:  13  popv
+00074:  59  name "xs"
+00079:  59  getprop "Scene"
+00084:  59  getprop "AwakeScene"
+00089:  59  lambda (function () {
+    [sourceless code]
+})
+00094:  59  setprop "create"
+00099:  59  popv
+00100:  69  name "xs"
+00105:  69  getprop "Scene"
+00110:  69  getprop "Mgr"
+00115:  69  dup
+00116:  69  callprop "registerScene"
+00121:  69  swap
+00122:  69  notearg
+00123:  69  string "AwakeScene"
+00128:  69  notearg
+00129:  69  newinit 1
+00134:  70  name "xs"
+00139:  70  getprop "Scene"
+00144:  70  getprop "AwakeScene"
+00149:  70  initprop "class"
+00154:  71  name "xs"
+00159:  71  getprop "Constant_SceneType_Cmn"
+00164:  71  initprop "type"
+00169:  71  endinit
+00170:  71  notearg
+00171:  71  call 2
+00174:  71  popv
+00175:  72  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeScene.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  call 0
+00012:   9  pop
+00013:  10  name "cc"
+00018:  10  dup
+00019:  10  callprop "associateWithNative"
+00024:  10  swap
+00025:  10  notearg
+00026:  10  this
+00027:  10  notearg
+00028:  10  name "cc"
+00033:  10  getprop "Scene"
+00038:  10  notearg
+00039:  10  call 2
+00042:  10  pop
+00043:  10  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeScene.js:8 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] visibleSize
+;; local[1] mainMenuWidth
+;; local[2] playerInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeScene.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  14  this
+00001:  14  dup
+00002:  14  callprop "_super"
+00007:  14  swap
+00008:  14  notearg
+00009:  14  call 0
+00012:  14  not
+00013:  14  ifeq 20 (+7)
+00018:  15  false
+00019:  15  return
+00020:  18  this
+00021:  18  getarg 0
+00024:  18  getprop "generalId"
+00029:  18  setprop "generalId"
+00034:  18  pop
+00035:  20  name "cc"
+00040:  20  getprop "Director"
+00045:  20  dup
+00046:  20  callprop "getInstance"
+00051:  20  swap
+00052:  20  notearg
+00053:  20  call 0
+00056:  20  dup
+00057:  20  callprop "getVisibleSize"
+00062:  20  swap
+00063:  20  notearg
+00064:  20  call 0
+00067:  20  setlocal 0
+00070:  20  pop
+00071:  21  this
+00072:  21  dup
+00073:  21  callprop "setContentSize"
+00078:  21  swap
+00079:  21  notearg
+00080:  21  getlocal 0
+00083:  21  notearg
+00084:  21  call 1
+00087:  21  pop
+00088:  23  name "xs"
+00093:  23  getprop "Views"
+00098:  23  getprop "MainMenuView"
+00103:  23  getprop "Width"
+00108:  23  setlocal 1
+00111:  23  pop
+00112:  26  name "xs"
+00117:  26  getprop "Tools"
+00122:  26  getprop "UI"
+00127:  26  dup
+00128:  26  callprop "addBgByType"
+00133:  26  swap
+00134:  26  notearg
+00135:  26  this
+00136:  26  notearg
+00137:  26  name "xs"
+00142:  26  getprop "Constant_BgType_TuTeng"
+00147:  26  notearg
+00148:  26  call 2
+00151:  26  pop
+00152:  29  name "xs"
+00157:  29  getprop "Views"
+00162:  29  getprop "PlayerInfoBannerSimpleView"
+00167:  29  dup
+00168:  29  callprop "create"
+00173:  29  swap
+00174:  29  notearg
+00175:  29  call 0
+00178:  29  setlocal 2
+00181:  29  pop
+00182:  30  getlocal 2
+00185:  30  dup
+00186:  30  callprop "setAnchorPoint"
+00191:  30  swap
+00192:  30  notearg
+00193:  30  name "cc"
+00198:  30  dup
+00199:  30  callprop "p"
+00204:  30  swap
+00205:  30  notearg
+00206:  30  zero
+00207:  30  notearg
+00208:  30  one
+00209:  30  notearg
+00210:  30  call 2
+00213:  30  notearg
+00214:  30  call 1
+00217:  30  pop
+00218:  31  name "xs"
+00223:  31  getprop "Utils"
+00228:  31  getprop "Node"
+00233:  31  dup
+00234:  31  callprop "attachNodes"
+00239:  31  swap
+00240:  31  notearg
+00241:  31  this
+00242:  31  notearg
+00243:  31  getlocal 2
+00246:  31  notearg
+00247:  31  newinit 1
+00252:  31  string "lt"
+00257:  31  initprop "desc"
+00262:  31  true
+00263:  31  initprop "sc"
+00268:  31  endinit
+00269:  31  notearg
+00270:  31  call 3
+00273:  31  pop
+00274:  34  this
+00275:  34  name "xs"
+00280:  34  getprop "Tools"
+00285:  34  getprop "UI"
+00290:  34  dup
+00291:  34  callprop "addShortcutBoard"
+00296:  34  swap
+00297:  34  notearg
+00298:  34  this
+00299:  34  notearg
+00300:  34  true
+00301:  34  notearg
+00302:  34  call 2
+00305:  34  setprop "sideMenu"
+00310:  34  pop
+00311:  36  this
+00312:  36  name "xs"
+00317:  36  getprop "Views"
+00322:  36  getprop "TablePage"
+00327:  36  dup
+00328:  36  callprop "create"
+00333:  36  swap
+00334:  36  notearg
+00335:  36  name "cc"
+00340:  36  dup
+00341:  36  callprop "size"
+00346:  36  swap
+00347:  36  notearg
+00348:  36  getlocal 0
+00351:  36  getprop "width"
+00356:  37  name "xs"
+00361:  37  getprop "Views"
+00366:  37  getprop "MainMenuView"
+00371:  37  getprop "Width"
+00376:  37  sub
+00377:  37  notearg
+00378:  37  getlocal 0
+00381:  37  getprop "height"
+00386:  37  int8 50
+00388:  37  sub
+00389:  37  notearg
+00390:  37  call 2
+00393:  37  notearg
+00394:  37  call 1
+00397:  37  setprop "m_pageView"
+00402:  37  pop
+00403:  38  this
+00404:  38  getprop "m_pageView"
+00409:  38  dup
+00410:  38  callprop "setBaseTouchPriority"
+00415:  38  swap
+00416:  38  notearg
+00417:  38  int8 -1
+00419:  38  notearg
+00420:  38  call 1
+00423:  38  pop
+00424:  39  this
+00425:  39  getprop "m_pageView"
+00430:  39  dup
+00431:  39  callprop "setListener"
+00436:  39  swap
+00437:  39  notearg
+00438:  39  this
+00439:  39  notearg
+00440:  39  call 1
+00443:  39  pop
+00444:  40  this
+00445:  40  getprop "m_pageView"
+00450:  40  dup
+00451:  40  callprop "addPageWhitConstruct"
+00456:  40  swap
+00457:  40  notearg
+00458:  40  name "xs"
+00463:  40  getprop "Tools"
+00468:  40  getprop "String"
+00473:  40  dup
+00474:  40  callprop "createString"
+00479:  40  swap
+00480:  40  notearg
+00481:  40  string "AwakeTuTengTitle"
+00486:  40  notearg
+00487:  40  call 1
+00490:  40  notearg
+00491:  41  name "xs"
+00496:  41  getprop "Views"
+00501:  41  getprop "AwakeLayer"
+00506:  41  notearg
+00507:  41  newinit 1
+00512:  41  this
+00513:  41  initprop "listener"
+00518:  41  newinit 1
+00523:  41  this
+00524:  41  getprop "generalId"
+00529:  41  initprop "generalId"
+00534:  41  endinit
+00535:  41  initprop "param"
+00540:  41  endinit
+00541:  41  notearg
+00542:  41  call 3
+00545:  41  pop
+00546:  42  name "xs"
+00551:  42  getprop "Utils"
+00556:  42  getprop "Node"
+00561:  42  dup
+00562:  42  callprop "attachNodes"
+00567:  42  swap
+00568:  42  notearg
+00569:  42  this
+00570:  42  notearg
+00571:  42  this
+00572:  42  getprop "m_pageView"
+00577:  42  notearg
+00578:  42  newinit 1
+00583:  43  string "lb"
+00588:  43  initprop "desc"
+00593:  44  true
+00594:  44  initprop "sc"
+00599:  44  endinit
+00600:  44  notearg
+00601:  44  call 3
+00604:  44  pop
+00605:  49  this
+00606:  49  name "xs"
+00611:  49  getprop "Tools"
+00616:  49  getprop "Views"
+00621:  49  getprop "Btn"
+00626:  49  dup
+00627:  49  callprop "createInstruction"
+00632:  49  swap
+00633:  49  notearg
+00634:  49  string "txt_evolution_instruction"
+00639:  49  notearg
+00640:  49  call 1
+00643:  49  setprop "m_instructionBtn"
+00648:  49  pop
+00649:  50  name "xs"
+00654:  50  getprop "Utils"
+00659:  50  getprop "Node"
+00664:  50  dup
+00665:  50  callprop "attachNodes"
+00670:  50  swap
+00671:  50  notearg
+00672:  50  this
+00673:  50  notearg
+00674:  50  this
+00675:  50  getprop "m_instructionBtn"
+00680:  50  notearg
+00681:  51  newinit 1
+00686:  51  string "lb"
+00691:  51  initprop "desc"
+00696:  51  name "cc"
+00701:  51  dup
+00702:  51  callprop "p"
+00707:  51  swap
+00708:  51  notearg
+00709:  51  int8 60
+00711:  51  notearg
+00712:  51  int8 110
+00714:  51  notearg
+00715:  51  call 2
+00718:  51  initprop "offset"
+00723:  51  true
+00724:  51  initprop "sc"
+00729:  51  endinit
+00730:  51  notearg
+00731:  51  null
+00732:  51  notearg
+00733:  51  call 4
+00736:  51  pop
+00737:  53  true
+00738:  53  return
+00739:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeScene.js:13 ---
+;; function object[2] create
+;; function metadata object[2] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeScene.js:59 ---
+loc   line  op
+----- ----  --
+main:
+00000:  60  name "xs"
+00005:  60  getprop "Scene"
+00010:  60  getprop "AwakeScene"
+00015:  60  undefined
+00016:  60  notearg
+00017:  60  new 0
+00020:  60  setlocal 0
+00023:  60  pop
+00024:  62  getlocal 0
+00027:  62  and 51 (+24)
+00032:  62  pop
+00033:  62  getlocal 0
+00036:  62  dup
+00037:  62  callprop "init"
+00042:  62  swap
+00043:  62  notearg
+00044:  62  getarg 0
+00047:  62  notearg
+00048:  62  call 1
+00051:  62  ifeq 60 (+9)
+00056:  63  getlocal 0
+00059:  63  return
+00060:  65  name "xs"
+00065:  65  dup
+00066:  65  callprop "assert"
+00071:  65  swap
+00072:  65  notearg
+00073:  65  false
+00074:  65  notearg
+00075:  65  string "xs.Scene.MiracleWeaponScene.create error!"
+00080:  65  notearg
+00081:  65  call 2
+00084:  65  pop
+00085:  66  null
+00086:  66  return
+00087:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeScene.js:59 ---

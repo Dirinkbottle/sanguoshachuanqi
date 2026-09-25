@@ -1,0 +1,354 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/Task.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=93 object[5]
+;; FUNCTION-MAP kind=lambda offset=103 object[6]
+;; FUNCTION-MAP kind=lambda offset=113 object[7]
+;; FUNCTION-MAP kind=lambda offset=149 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Models"
+00010:   7  name "cc"
+00015:   7  getprop "Class"
+00020:   7  dup
+00021:   7  callprop "extend"
+00026:   7  swap
+00027:   7  notearg
+00028:   7  newinit 1
+00033:   8  string "xs.Models.Task"
+00038:   8  initprop "name"
+00043:   9  lambda (function () {
+    [sourceless code]
+})
+00048:   9  initprop "init"
+00053:  54  lambda (function () {
+    [sourceless code]
+})
+00058:  54  initprop "getStatus"
+00063:  58  lambda (function () {
+    [sourceless code]
+})
+00068:  58  initprop "getTitle"
+00073:  62  lambda (function () {
+    [sourceless code]
+})
+00078:  62  initprop "getDesc"
+00083:  66  lambda (function () {
+    [sourceless code]
+})
+00088:  66  initprop "getTaskValue"
+00093:  70  lambda (function () {
+    [sourceless code]
+})
+00098:  70  initprop "getTaskObjectiveNum"
+00103:  74  lambda (function () {
+    [sourceless code]
+})
+00108:  74  initprop "getScene"
+00113:  78  lambda (function () {
+    [sourceless code]
+})
+00118:  78  initprop "getSortPriority"
+00123:  78  endinit
+00124:  78  notearg
+00125:  78  call 1
+00128:  78  setprop "Task"
+00133:  78  popv
+00134:  93  name "xs"
+00139:  93  getprop "Models"
+00144:  93  getprop "Task"
+00149:  93  lambda (function () {
+    [sourceless code]
+})
+00154:  93  setprop "createWithData"
+00159:  93  popv
+00160:  99  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] jsonData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  getarg 0
+00003:  10  ifeq 290 (+287)
+00008:  11  this
+00009:  11  name "xs"
+00014:  11  getprop "Utils"
+00019:  11  dup
+00020:  11  callprop "parseIntSafe"
+00025:  11  swap
+00026:  11  notearg
+00027:  11  getarg 0
+00030:  11  getprop "pk_id"
+00035:  11  notearg
+00036:  11  call 1
+00039:  11  setprop "pk_id"
+00044:  11  pop
+00045:  12  this
+00046:  12  name "xs"
+00051:  12  getprop "Utils"
+00056:  12  dup
+00057:  12  callprop "parseIntSafe"
+00062:  12  swap
+00063:  12  notearg
+00064:  12  getarg 0
+00067:  12  getprop "status"
+00072:  12  notearg
+00073:  12  call 1
+00076:  12  setprop "status"
+00081:  12  pop
+00082:  13  this
+00083:  13  name "xs"
+00088:  13  getprop "Utils"
+00093:  13  dup
+00094:  13  callprop "parseIntSafe"
+00099:  13  swap
+00100:  13  notearg
+00101:  13  getarg 0
+00104:  13  getprop "task_value"
+00109:  13  notearg
+00110:  13  call 1
+00113:  13  setprop "task_value"
+00118:  13  pop
+00119:  14  this
+00120:  14  getarg 0
+00123:  14  getprop "task_objective_num"
+00128:  14  setprop "task_objective_num"
+00133:  14  pop
+00134:  15  this
+00135:  15  name "xs"
+00140:  15  getprop "Utils"
+00145:  15  dup
+00146:  15  callprop "parseStringSafe"
+00151:  15  swap
+00152:  15  notearg
+00153:  15  getarg 0
+00156:  15  getprop "title"
+00161:  15  notearg
+00162:  15  call 1
+00165:  15  setprop "title"
+00170:  15  pop
+00171:  16  this
+00172:  16  name "xs"
+00177:  16  getprop "Utils"
+00182:  16  dup
+00183:  16  callprop "parseStringSafe"
+00188:  16  swap
+00189:  16  notearg
+00190:  16  getarg 0
+00193:  16  getprop "desc"
+00198:  16  notearg
+00199:  16  call 1
+00202:  16  setprop "desc"
+00207:  16  pop
+00208:  17  this
+00209:  17  getarg 0
+00212:  17  getprop "icon"
+00217:  17  setprop "icon"
+00222:  17  pop
+00223:  18  this
+00224:  18  getarg 0
+00227:  18  getprop "icon_type"
+00232:  18  setprop "icon_type"
+00237:  18  pop
+00238:  19  this
+00239:  19  name "xs"
+00244:  19  getprop "Utils"
+00249:  19  dup
+00250:  19  callprop "parseStringSafe"
+00255:  19  swap
+00256:  19  notearg
+00257:  19  getarg 0
+00260:  19  getprop "scene"
+00265:  19  notearg
+00266:  19  call 1
+00269:  19  setprop "scene"
+00274:  19  pop
+00275:  20  this
+00276:  20  getarg 0
+00279:  20  getprop "reword_list"
+00284:  20  setprop "reword_list"
+00289:  20  pop
+00290:  51  true
+00291:  51  return
+00292:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:9 ---
+;; function object[1] getStatus
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:54 ---
+loc   line  op
+----- ----  --
+main:
+00000:  55  this
+00001:  55  getprop "status"
+00006:  55  return
+00007:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:54 ---
+;; function object[2] getTitle
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  this
+00001:  59  getprop "title"
+00006:  59  return
+00007:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:58 ---
+;; function object[3] getDesc
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  this
+00001:  63  getprop "desc"
+00006:  63  return
+00007:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:62 ---
+;; function object[4] getTaskValue
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:66 ---
+loc   line  op
+----- ----  --
+main:
+00000:  67  this
+00001:  67  getprop "task_value"
+00006:  67  return
+00007:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:66 ---
+;; function object[5] getTaskObjectiveNum
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:70 ---
+loc   line  op
+----- ----  --
+main:
+00000:  71  this
+00001:  71  getprop "task_objective_num"
+00006:  71  return
+00007:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:70 ---
+;; function object[6] getScene
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:74 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  this
+00001:  75  getprop "scene"
+00006:  75  return
+00007:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:74 ---
+;; function object[7] getSortPriority
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:78 ---
+loc   line  op
+----- ----  --
+main:
+00000:  79  this
+00001:  79  dup
+00002:  79  callprop "getStatus"
+00007:  79  swap
+00008:  79  notearg
+00009:  79  call 0
+00012:  79  name "xs"
+00017:  79  getprop "Constant_TaskStatus_UnFinished"
+00022:  79  eq
+00023:  79  ifeq 36 (+13)
+00028:  80  int8 2
+00030:  80  return
+00031:  80  goto 102 (+71)
+00036:  82  this
+00037:  82  dup
+00038:  82  callprop "getStatus"
+00043:  82  swap
+00044:  82  notearg
+00045:  82  call 0
+00048:  82  name "xs"
+00053:  82  getprop "Constant_TaskStatus_Finished_CanReceived"
+00058:  82  eq
+00059:  82  ifeq 71 (+12)
+00064:  83  one
+00065:  83  return
+00066:  83  goto 102 (+36)
+00071:  85  this
+00072:  85  dup
+00073:  85  callprop "getStatus"
+00078:  85  swap
+00079:  85  notearg
+00080:  85  call 0
+00083:  85  name "xs"
+00088:  85  getprop "Constant_TaskStatus_Finished_Received"
+00093:  85  eq
+00094:  85  ifeq 102 (+8)
+00099:  86  int8 3
+00101:  86  return
+00102:  89  zero
+00103:  89  return
+00104:  89  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:78 ---
+;; function object[8] createWithData
+;; function metadata object[8] nargs=1 bindings=2
+;; arg[0] jsonData
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:93 ---
+loc   line  op
+----- ----  --
+main:
+00000:  94  name "xs"
+00005:  94  getprop "Models"
+00010:  94  getprop "Task"
+00015:  94  undefined
+00016:  94  notearg
+00017:  94  new 0
+00020:  94  setlocal 0
+00023:  94  pop
+00024:  95  getlocal 0
+00027:  95  and 51 (+24)
+00032:  95  pop
+00033:  95  getlocal 0
+00036:  95  dup
+00037:  95  callprop "init"
+00042:  95  swap
+00043:  95  notearg
+00044:  95  getarg 0
+00047:  95  notearg
+00048:  95  call 1
+00051:  95  ifeq 60 (+9)
+00056:  96  getlocal 0
+00059:  96  return
+00060:  98  null
+00061:  98  return
+00062:  98  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Task.js:93 ---

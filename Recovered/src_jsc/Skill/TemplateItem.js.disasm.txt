@@ -1,0 +1,1396 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/TemplateItem.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/TemplateItem.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Cfg"
+00010:  10  getprop "Skill"
+00015:  10  getprop "template"
+00020:  10  newinit 1
+00025:  12  newinit 1
+00030:  13  newinit 1
+00035:  14  string "near"
+00040:  14  initprop "parent"
+00045:  15  newinit 1
+00050:  16  string "from"
+00055:  16  initprop "base"
+00060:  17  newinit 1
+00065:  17  zero
+00066:  17  initprop "x"
+00071:  17  zero
+00072:  17  initprop "y"
+00077:  17  endinit
+00078:  17  initprop "offset"
+00083:  17  endinit
+00084:  17  initprop "pos"
+00089:  19  newarray 1
+00093:  19  string "backup"
+00098:  19  initelem_array 0
+00102:  19  endinit
+00103:  19  initprop "ignore"
+00108:  20  string "tmp"
+00113:  20  initprop "belong"
+00118:  20  endinit
+00119:  20  initprop "property"
+00124:  22  newinit 1
+00129:  23  newinit 1
+00134:  23  string "DelayTime"
+00139:  23  initprop "type"
+00144:  23  zero
+00145:  23  initprop "dp"
+00150:  23  endinit
+00151:  23  initprop "delay"
+00156:  24  newinit 1
+00161:  24  string "Show"
+00166:  24  initprop "type"
+00171:  24  endinit
+00172:  24  initprop "show"
+00177:  25  newinit 1
+00182:  26  string "Move"
+00187:  26  initprop "type"
+00192:  26  double 0.5
+00197:  26  initprop "dp"
+00202:  27  newinit 1
+00207:  28  string "to"
+00212:  28  initprop "base"
+00217:  29  newinit 1
+00222:  29  zero
+00223:  29  initprop "x"
+00228:  29  zero
+00229:  29  initprop "y"
+00234:  29  endinit
+00235:  29  initprop "offset"
+00240:  29  endinit
+00241:  29  initprop "dst_pos"
+00246:  29  endinit
+00247:  29  initprop "move"
+00252:  33  newinit 1
+00257:  33  string "Hide"
+00262:  33  initprop "type"
+00267:  33  endinit
+00268:  33  initprop "hide"
+00273:  33  endinit
+00274:  33  initprop "timelines"
+00279:  33  endinit
+00280:  33  initprop "TI_from2toTmp"
+00285:  37  newinit 1
+00290:  38  string "template.item.TI_from2toTmp"
+00295:  38  initprop "extend"
+00300:  39  newinit 1
+00305:  40  newinit 1
+00310:  41  string "to"
+00315:  41  initprop "base"
+00320:  41  endinit
+00321:  41  initprop "pos"
+00326:  41  endinit
+00327:  41  initprop "property"
+00332:  44  newinit 1
+00337:  45  newinit 1
+00342:  46  newinit 1
+00347:  47  string "from"
+00352:  47  initprop "base"
+00357:  47  endinit
+00358:  47  initprop "dst_pos"
+00363:  47  endinit
+00364:  47  initprop "move"
+00369:  47  endinit
+00370:  47  initprop "timelines"
+00375:  47  endinit
+00376:  47  initprop "TI_to2fromTmp"
+00381:  53  newinit 1
+00386:  54  newinit 1
+00391:  55  string "near"
+00396:  55  initprop "parent"
+00401:  56  newinit 1
+00406:  57  string "from"
+00411:  57  initprop "base"
+00416:  58  newinit 1
+00421:  58  zero
+00422:  58  initprop "x"
+00427:  58  zero
+00428:  58  initprop "y"
+00433:  58  endinit
+00434:  58  initprop "offset"
+00439:  58  endinit
+00440:  58  initprop "pos"
+00445:  60  newarray 1
+00449:  60  string "backup"
+00454:  60  initelem_array 0
+00458:  60  endinit
+00459:  60  initprop "ignore"
+00464:  61  string "tmp"
+00469:  61  initprop "belong"
+00474:  61  endinit
+00475:  61  initprop "property"
+00480:  63  newinit 1
+00485:  64  newinit 1
+00490:  64  string "DelayTime"
+00495:  64  initprop "type"
+00500:  64  one
+00501:  64  initprop "dp"
+00506:  64  endinit
+00507:  64  initprop "delay"
+00512:  65  newinit 1
+00517:  65  string "Show"
+00522:  65  initprop "type"
+00527:  65  endinit
+00528:  65  initprop "show"
+00533:  66  newinit 1
+00538:  67  string "Bezier"
+00543:  67  initprop "type"
+00548:  67  double 0.5
+00553:  67  initprop "dp"
+00558:  68  newinit 1
+00563:  69  string "to"
+00568:  69  initprop "base"
+00573:  70  newinit 1
+00578:  70  zero
+00579:  70  initprop "x"
+00584:  70  zero
+00585:  70  initprop "y"
+00590:  70  endinit
+00591:  70  initprop "offset"
+00596:  70  endinit
+00597:  70  initprop "dst_pos"
+00602:  70  endinit
+00603:  70  initprop "move"
+00608:  73  newinit 1
+00613:  73  string "Hide"
+00618:  73  initprop "type"
+00623:  73  endinit
+00624:  73  initprop "hide"
+00629:  73  endinit
+00630:  73  initprop "timelines"
+00635:  73  endinit
+00636:  73  initprop "TI_from2toTmp_Bezier"
+00641:  77  newinit 1
+00646:  78  newinit 1
+00651:  79  string "near"
+00656:  79  initprop "parent"
+00661:  80  newinit 1
+00666:  81  string "to"
+00671:  81  initprop "base"
+00676:  82  newinit 1
+00681:  82  zero
+00682:  82  initprop "x"
+00687:  82  zero
+00688:  82  initprop "y"
+00693:  82  endinit
+00694:  82  initprop "offset"
+00699:  82  endinit
+00700:  82  initprop "pos"
+00705:  84  newarray 1
+00709:  84  string "backup"
+00714:  84  initelem_array 0
+00718:  84  endinit
+00719:  84  initprop "ignore"
+00724:  85  string "tmp"
+00729:  85  initprop "belong"
+00734:  85  endinit
+00735:  85  initprop "property"
+00740:  87  newinit 1
+00745:  88  newinit 1
+00750:  88  string "DelayTime"
+00755:  88  initprop "type"
+00760:  88  double 0.4
+00765:  88  initprop "dp"
+00770:  88  endinit
+00771:  88  initprop "delay"
+00776:  89  newinit 1
+00781:  89  string "Show"
+00786:  89  initprop "type"
+00791:  89  endinit
+00792:  89  initprop "show"
+00797:  90  newinit 1
+00802:  91  string "Bezier"
+00807:  91  initprop "type"
+00812:  92  double 2.5
+00817:  92  initprop "dp"
+00822:  93  newinit 1
+00827:  94  string "from"
+00832:  94  initprop "base"
+00837:  95  newinit 1
+00842:  95  zero
+00843:  95  initprop "x"
+00848:  95  zero
+00849:  95  initprop "y"
+00854:  95  endinit
+00855:  95  initprop "offset"
+00860:  96  name "cc"
+00865:  96  dup
+00866:  96  callprop "p"
+00871:  96  swap
+00872:  96  notearg
+00873:  96  zero
+00874:  96  notearg
+00875:  96  int32 -400
+00880:  96  notearg
+00881:  96  call 2
+00884:  96  initprop "controlPoint_0"
+00889:  97  name "cc"
+00894:  97  dup
+00895:  97  callprop "p"
+00900:  97  swap
+00901:  97  notearg
+00902:  97  zero
+00903:  97  notearg
+00904:  97  int8 -100
+00906:  97  notearg
+00907:  97  call 2
+00910:  97  initprop "controlPoint_1"
+00915:  97  endinit
+00916:  97  initprop "dst_pos"
+00921:  97  endinit
+00922:  97  initprop "move"
+00927: 100  newinit 1
+00932: 100  string "Hide"
+00937: 100  initprop "type"
+00942: 100  endinit
+00943: 100  initprop "hide"
+00948: 100  endinit
+00949: 100  initprop "timelines"
+00954: 100  endinit
+00955: 100  initprop "TI_to2fromTmp_Bezier"
+00960: 105  newinit 1
+00965: 106  newinit 1
+00970: 107  string "from"
+00975: 107  initprop "parent"
+00980: 108  string "armature"
+00985: 108  initprop "type"
+00990: 109  string "from_tmp"
+00995: 109  initprop "belong"
+01000: 110  string "Arm_SkillLight"
+01005: 110  initprop "armatureId"
+01010: 110  endinit
+01011: 110  initprop "property"
+01016: 113  newarray 3
+01020: 114  newinit 1
+01025: 114  string "Show"
+01030: 114  initprop "type"
+01035: 114  endinit
+01036: 114  initelem_array 0
+01040: 115  newinit 1
+01045: 115  string "Play"
+01050: 115  initprop "type"
+01055: 115  zero
+01056: 115  initprop "index"
+01061: 115  endinit
+01062: 115  initelem_array 1
+01066: 116  newinit 1
+01071: 116  string "DelayTime"
+01076: 116  initprop "type"
+01081: 116  int8 12
+01083: 116  name "xs"
+01088: 116  getprop "fps"
+01093: 116  div
+01094: 116  initprop "dp"
+01099: 116  endinit
+01100: 116  initelem_array 2
+01104: 116  endinit
+01105: 116  initprop "timelines"
+01110: 116  endinit
+01111: 116  initprop "TI_Skill_Light"
+01116: 120  newinit 1
+01121: 121  newinit 1
+01126: 122  string "from"
+01131: 122  initprop "parent"
+01136: 123  string "armature"
+01141: 123  initprop "type"
+01146: 124  string "from_tmp"
+01151: 124  initprop "belong"
+01156: 125  string "Arm_SkillLight"
+01161: 125  initprop "armatureId"
+01166: 126  name "cc"
+01171: 126  dup
+01172: 126  callprop "c3b"
+01177: 126  swap
+01178: 126  notearg
+01179: 126  uint16 247
+01182: 126  notearg
+01183: 126  uint16 255
+01186: 126  notearg
+01187: 126  int8 5
+01189: 126  notearg
+01190: 126  call 3
+01193: 126  initprop "c3b"
+01198: 126  endinit
+01199: 126  initprop "property"
+01204: 129  newarray 3
+01208: 130  newinit 1
+01213: 130  string "Show"
+01218: 130  initprop "type"
+01223: 130  endinit
+01224: 130  initelem_array 0
+01228: 131  newinit 1
+01233: 131  string "Play"
+01238: 131  initprop "type"
+01243: 131  zero
+01244: 131  initprop "index"
+01249: 131  endinit
+01250: 131  initelem_array 1
+01254: 132  newinit 1
+01259: 132  string "DelayTime"
+01264: 132  initprop "type"
+01269: 132  int8 12
+01271: 132  name "xs"
+01276: 132  getprop "fps"
+01281: 132  div
+01282: 132  initprop "dp"
+01287: 132  endinit
+01288: 132  initelem_array 2
+01292: 132  endinit
+01293: 132  initprop "timelines"
+01298: 132  endinit
+01299: 132  initprop "TI_Skill_Light_Yellow"
+01304: 136  newinit 1
+01309: 137  newinit 1
+01314: 138  string "env"
+01319: 138  initprop "type"
+01324: 139  string "from_once"
+01329: 139  initprop "belong"
+01334: 139  endinit
+01335: 139  initprop "property"
+01340: 141  newarray 1
+01344: 142  newinit 1
+01349: 142  string "createAction"
+01354: 142  initprop "type"
+01359: 142  string "createGeneralAudioEffectAction"
+01364: 142  initprop "name"
+01369: 142  endinit
+01370: 142  initelem_array 0
+01374: 142  endinit
+01375: 142  initprop "timelines"
+01380: 142  endinit
+01381: 142  initprop "TI_Skill_Name_Voice"
+01386: 148  newinit 1
+01391: 149  newinit 1
+01396: 150  string "to"
+01401: 150  initprop "parent"
+01406: 151  string "to"
+01411: 151  initprop "type"
+01416: 152  string "to"
+01421: 152  initprop "belong"
+01426: 152  endinit
+01427: 152  initprop "property"
+01432: 154  newarray 1
+01436: 155  newinit 1
+01441: 155  string "createAction"
+01446: 155  initprop "type"
+01451: 155  string "createLeaveAction"
+01456: 155  initprop "name"
+01461: 155  zero
+01462: 155  initprop "dp"
+01467: 155  endinit
+01468: 155  initelem_array 0
+01472: 155  endinit
+01473: 155  initprop "timelines"
+01478: 155  endinit
+01479: 155  initprop "TI_LeaveOrHide_To"
+01484: 159  newinit 1
+01489: 160  newinit 1
+01494: 161  string "env"
+01499: 161  initprop "type"
+01504: 162  string "to"
+01509: 162  initprop "belong"
+01514: 163  newarray 1
+01518: 163  string "death"
+01523: 163  initelem_array 0
+01527: 163  endinit
+01528: 163  initprop "trigger"
+01533: 164  newarray 1
+01537: 164  string "nohurt"
+01542: 164  initelem_array 0
+01546: 164  endinit
+01547: 164  initprop "ignore"
+01552: 164  endinit
+01553: 164  initprop "property"
+01558: 166  newinit 1
+01563: 168  newinit 1
+01568: 168  string "createAction"
+01573: 168  initprop "type"
+01578: 168  zero
+01579: 168  initprop "dp"
+01584: 168  string "createUpdateDeathNumAction"
+01589: 168  initprop "name"
+01594: 168  newinit 1
+01599: 168  one
+01600: 168  initprop "side"
+01605: 168  endinit
+01606: 168  initprop "data"
+01611: 168  endinit
+01612: 168  initprop "_update"
+01617: 168  endinit
+01618: 168  initprop "timelines"
+01623: 168  endinit
+01624: 168  initprop "TI_DeathCount_To"
+01629: 172  newinit 1
+01634: 173  newinit 1
+01639: 174  string "env"
+01644: 174  initprop "type"
+01649: 175  string "from"
+01654: 175  initprop "belong"
+01659: 176  newarray 1
+01663: 176  string "death"
+01668: 176  initelem_array 0
+01672: 176  endinit
+01673: 176  initprop "trigger"
+01678: 176  endinit
+01679: 176  initprop "property"
+01684: 178  newinit 1
+01689: 180  newinit 1
+01694: 180  string "createAction"
+01699: 180  initprop "type"
+01704: 180  zero
+01705: 180  initprop "dp"
+01710: 180  string "createUpdateDeathNumAction"
+01715: 180  initprop "name"
+01720: 180  newinit 1
+01725: 180  zero
+01726: 180  initprop "side"
+01731: 180  endinit
+01732: 180  initprop "data"
+01737: 180  endinit
+01738: 180  initprop "_update"
+01743: 180  endinit
+01744: 180  initprop "timelines"
+01749: 180  endinit
+01750: 180  initprop "TI_DeathCount_From"
+01755: 186  newinit 1
+01760: 187  newinit 1
+01765: 188  string "bg"
+01770: 188  initprop "type"
+01775: 189  string "to"
+01780: 189  initprop "belong"
+01785: 189  endinit
+01786: 189  initprop "property"
+01791: 191  newinit 1
+01796: 192  null
+01797: 192  initprop "_delay"
+01802: 193  newinit 1
+01807: 193  string "MoveBy"
+01812: 193  initprop "type"
+01817: 193  newarray 1
+01821: 193  name "cc"
+01826: 193  dup
+01827: 193  callprop "p"
+01832: 193  swap
+01833: 193  notearg
+01834: 193  zero
+01835: 193  notearg
+01836: 193  int8 -8
+01838: 193  notearg
+01839: 193  call 2
+01842: 193  initelem_array 0
+01846: 193  endinit
+01847: 193  initprop "args"
+01852: 193  one
+01853: 193  name "xs"
+01858: 193  getprop "fps"
+01863: 193  div
+01864: 193  initprop "dp"
+01869: 193  endinit
+01870: 193  initprop "_move0"
+01875: 194  newinit 1
+01880: 194  string "MoveBy"
+01885: 194  initprop "type"
+01890: 194  newarray 1
+01894: 194  name "cc"
+01899: 194  dup
+01900: 194  callprop "p"
+01905: 194  swap
+01906: 194  notearg
+01907: 194  zero
+01908: 194  notearg
+01909: 194  int8 12
+01911: 194  notearg
+01912: 194  call 2
+01915: 194  initelem_array 0
+01919: 194  endinit
+01920: 194  initprop "args"
+01925: 194  one
+01926: 194  name "xs"
+01931: 194  getprop "fps"
+01936: 194  div
+01937: 194  initprop "dp"
+01942: 194  endinit
+01943: 194  initprop "_move1"
+01948: 195  newinit 1
+01953: 195  string "MoveBy"
+01958: 195  initprop "type"
+01963: 195  newarray 1
+01967: 195  name "cc"
+01972: 195  dup
+01973: 195  callprop "p"
+01978: 195  swap
+01979: 195  notearg
+01980: 195  zero
+01981: 195  notearg
+01982: 195  int8 -4
+01984: 195  notearg
+01985: 195  call 2
+01988: 195  initelem_array 0
+01992: 195  endinit
+01993: 195  initprop "args"
+01998: 195  one
+01999: 195  name "xs"
+02004: 195  getprop "fps"
+02009: 195  div
+02010: 195  initprop "dp"
+02015: 195  endinit
+02016: 195  initprop "_move2"
+02021: 195  endinit
+02022: 195  initprop "timelines"
+02027: 195  endinit
+02028: 195  initprop "TI_Bg_Shake_To"
+02033: 199  newinit 1
+02038: 200  newinit 1
+02043: 201  string "env"
+02048: 201  initprop "type"
+02053: 202  string "to_once"
+02058: 202  initprop "belong"
+02063: 202  endinit
+02064: 202  initprop "property"
+02069: 204  newinit 1
+02074: 205  null
+02075: 205  initprop "_delay"
+02080: 206  newinit 1
+02085: 206  string "createAction"
+02090: 206  initprop "type"
+02095: 206  string "createShakeAction"
+02100: 206  initprop "name"
+02105: 206  newinit 1
+02110: 206  endinit
+02111: 206  initprop "data"
+02116: 206  endinit
+02117: 206  initprop "_moveAll"
+02122: 206  endinit
+02123: 206  initprop "timelines"
+02128: 206  endinit
+02129: 206  initprop "TI_BgAndCards_Shake_To_Once"
+02134: 210  newinit 1
+02139: 211  newinit 1
+02144: 212  string "from"
+02149: 212  initprop "type"
+02154: 213  string "from"
+02159: 213  initprop "belong"
+02164: 214  newarray 1
+02168: 214  string "backup"
+02173: 214  initelem_array 0
+02177: 214  endinit
+02178: 214  initprop "ignore"
+02183: 214  endinit
+02184: 214  initprop "property"
+02189: 216  newinit 1
+02194: 217  null
+02195: 217  initprop "_delay"
+02200: 218  newinit 1
+02205: 218  string "createAction"
+02210: 218  initprop "type"
+02215: 218  string "createPlayAniActions"
+02220: 218  initprop "name"
+02225: 218  newinit 1
+02230: 218  string "ani_idle"
+02235: 218  initprop "aniId"
+02240: 218  newinit 1
+02245: 218  one
+02246: 218  initprop "speed"
+02251: 218  endinit
+02252: 218  initprop "control"
+02257: 218  endinit
+02258: 218  initprop "data"
+02263: 218  endinit
+02264: 218  initprop "_card"
+02269: 218  endinit
+02270: 218  initprop "timelines"
+02275: 218  endinit
+02276: 218  initprop "TI_Card_Do_From"
+02281: 221  newinit 1
+02286: 222  newinit 1
+02291: 223  string "to"
+02296: 223  initprop "type"
+02301: 224  string "to"
+02306: 224  initprop "belong"
+02311: 225  newarray 1
+02315: 225  string "backup"
+02320: 225  initelem_array 0
+02324: 225  endinit
+02325: 225  initprop "ignore"
+02330: 225  endinit
+02331: 225  initprop "property"
+02336: 227  newinit 1
+02341: 228  null
+02342: 228  initprop "_delay"
+02347: 229  newinit 1
+02352: 229  string "createAction"
+02357: 229  initprop "type"
+02362: 229  string "createPlayAniActions"
+02367: 229  initprop "name"
+02372: 229  newinit 1
+02377: 229  string "ani_idle"
+02382: 229  initprop "aniId"
+02387: 229  newinit 1
+02392: 229  one
+02393: 229  initprop "speed"
+02398: 229  endinit
+02399: 229  initprop "control"
+02404: 229  endinit
+02405: 229  initprop "data"
+02410: 229  endinit
+02411: 229  initprop "_card"
+02416: 229  endinit
+02417: 229  initprop "timelines"
+02422: 229  endinit
+02423: 229  initprop "TI_Card_Do_To"
+02428: 232  newinit 1
+02433: 233  string "template.item.TI_Card_Do_From"
+02438: 233  initprop "extend"
+02443: 234  newinit 1
+02448: 235  newinit 1
+02453: 235  newinit 1
+02458: 235  string "ani_idle"
+02463: 235  initprop "aniId"
+02468: 235  endinit
+02469: 235  initprop "data"
+02474: 235  endinit
+02475: 235  initprop "_card"
+02480: 235  endinit
+02481: 235  initprop "timelines"
+02486: 235  endinit
+02487: 235  initprop "TI_Card_Idle_From"
+02492: 238  newinit 1
+02497: 239  string "template.item.TI_Card_Do_To"
+02502: 239  initprop "extend"
+02507: 240  newinit 1
+02512: 241  newinit 1
+02517: 241  newinit 1
+02522: 241  string "ani_idle"
+02527: 241  initprop "aniId"
+02532: 241  endinit
+02533: 241  initprop "data"
+02538: 241  endinit
+02539: 241  initprop "_card"
+02544: 241  endinit
+02545: 241  initprop "timelines"
+02550: 241  endinit
+02551: 241  initprop "TI_Card_Idle_To"
+02556: 247  newinit 1
+02561: 248  newinit 1
+02566: 249  string "to"
+02571: 249  initprop "type"
+02576: 250  string "to"
+02581: 250  initprop "belong"
+02586: 251  newarray 1
+02590: 251  string "backup"
+02595: 251  initelem_array 0
+02599: 251  endinit
+02600: 251  initprop "ignore"
+02605: 252  newarray 6
+02609: 252  string "finish"
+02614: 252  initelem_array 0
+02618: 252  string "ghost"
+02623: 252  initelem_array 1
+02627: 252  string "death"
+02632: 252  initelem_array 2
+02636: 252  string "miss"
+02641: 252  initelem_array 3
+02645: 252  string "leiji"
+02650: 252  initelem_array 4
+02654: 252  string "spleiji"
+02659: 252  initelem_array 5
+02663: 252  endinit
+02664: 252  initprop "mirror"
+02669: 252  endinit
+02670: 252  initprop "property"
+02675: 254  newinit 1
+02680: 255  newinit 1
+02685: 255  string "createAction"
+02690: 255  initprop "type"
+02695: 255  string "createPlayAniActions"
+02700: 255  initprop "name"
+02705: 255  newinit 1
+02710: 255  string "ani_hit_normal"
+02715: 255  initprop "aniId"
+02720: 255  newinit 1
+02725: 255  one
+02726: 255  initprop "speed"
+02731: 255  endinit
+02732: 255  initprop "control"
+02737: 255  endinit
+02738: 255  initprop "data"
+02743: 255  endinit
+02744: 255  initprop "_hurt_over"
+02749: 256  null
+02750: 256  initprop "_back"
+02755: 258  newinit 1
+02760: 258  string "createAction"
+02765: 258  initprop "type"
+02770: 258  string "createPlayAniActions"
+02775: 258  initprop "name"
+02780: 258  newinit 1
+02785: 258  string "ani_idle"
+02790: 258  initprop "aniId"
+02795: 258  newinit 1
+02800: 258  one
+02801: 258  initprop "speed"
+02806: 258  endinit
+02807: 258  initprop "control"
+02812: 258  endinit
+02813: 258  initprop "data"
+02818: 258  endinit
+02819: 258  initprop "_idle"
+02824: 258  endinit
+02825: 258  initprop "timelines"
+02830: 260  newinit 1
+02835: 261  newinit 1
+02840: 262  newinit 1
+02845: 262  string "createAction"
+02850: 262  initprop "type"
+02855: 262  string "createPlayAniActions"
+02860: 262  initprop "name"
+02865: 262  newinit 1
+02870: 262  string "ani_over_skill_ghost"
+02875: 262  initprop "aniId"
+02880: 262  newinit 1
+02885: 262  one
+02886: 262  initprop "speed"
+02891: 262  endinit
+02892: 262  initprop "control"
+02897: 262  endinit
+02898: 262  initprop "data"
+02903: 262  endinit
+02904: 262  initprop "_hurt_over"
+02909: 263  newinit 1
+02914: 263  newinit 1
+02919: 263  string "ani_idle_ghost"
+02924: 263  initprop "aniId"
+02929: 263  newinit 1
+02934: 263  true
+02935: 263  initprop "loop"
+02940: 263  endinit
+02941: 263  initprop "control"
+02946: 263  endinit
+02947: 263  initprop "data"
+02952: 263  endinit
+02953: 263  initprop "_idle"
+02958: 263  endinit
+02959: 263  initprop "timelines"
+02964: 263  endinit
+02965: 263  initprop "ghost"
+02970: 266  newinit 1
+02975: 267  newinit 1
+02980: 268  newinit 1
+02985: 268  string "createAction"
+02990: 268  initprop "type"
+02995: 268  string "createPlayAniActions"
+03000: 268  initprop "name"
+03005: 268  newinit 1
+03010: 268  string "ani_over_skill_death"
+03015: 268  initprop "aniId"
+03020: 268  newinit 1
+03025: 268  one
+03026: 268  initprop "speed"
+03031: 268  endinit
+03032: 268  initprop "control"
+03037: 268  endinit
+03038: 268  initprop "data"
+03043: 268  endinit
+03044: 268  initprop "_hurt_over"
+03049: 269  null
+03050: 269  initprop "_idle"
+03055: 269  endinit
+03056: 269  initprop "timelines"
+03061: 269  endinit
+03062: 269  initprop "death"
+03067: 272  newinit 1
+03072: 273  newinit 1
+03077: 274  newinit 1
+03082: 274  string "createAction"
+03087: 274  initprop "type"
+03092: 274  string "createPlayAniActions"
+03097: 274  initprop "name"
+03102: 274  newinit 1
+03107: 274  string "ani_over_skill_death"
+03112: 274  initprop "aniId"
+03117: 274  newinit 1
+03122: 274  one
+03123: 274  initprop "speed"
+03128: 274  endinit
+03129: 274  initprop "control"
+03134: 274  endinit
+03135: 274  initprop "data"
+03140: 274  endinit
+03141: 274  initprop "_hurt_over"
+03146: 275  null
+03147: 275  initprop "_idle"
+03152: 275  endinit
+03153: 275  initprop "timelines"
+03158: 275  endinit
+03159: 275  initprop "finish"
+03164: 278  newinit 1
+03169: 279  newinit 1
+03174: 280  newinit 1
+03179: 280  newinit 1
+03184: 280  string "ani_hit_miss"
+03189: 280  initprop "aniId"
+03194: 280  endinit
+03195: 280  initprop "data"
+03200: 280  endinit
+03201: 280  initprop "_hurt_over"
+03206: 280  endinit
+03207: 280  initprop "timelines"
+03212: 280  endinit
+03213: 280  initprop "miss"
+03218: 284  newinit 1
+03223: 285  newinit 1
+03228: 286  newinit 1
+03233: 286  newinit 1
+03238: 286  string "ani_hit_miss"
+03243: 286  initprop "aniId"
+03248: 286  endinit
+03249: 286  initprop "data"
+03254: 286  endinit
+03255: 286  initprop "_hurt_over"
+03260: 286  endinit
+03261: 286  initprop "timelines"
+03266: 286  endinit
+03267: 286  initprop "leiji"
+03272: 290  newinit 1
+03277: 291  newinit 1
+03282: 292  newinit 1
+03287: 292  newinit 1
+03292: 292  string "ani_hit_miss"
+03297: 292  initprop "aniId"
+03302: 292  endinit
+03303: 292  initprop "data"
+03308: 292  endinit
+03309: 292  initprop "_hurt_over"
+03314: 292  endinit
+03315: 292  initprop "timelines"
+03320: 292  endinit
+03321: 292  initprop "spleiji"
+03326: 292  endinit
+03327: 292  initprop "TI_Card_Hurt_Over_Normal_To"
+03332: 299  newinit 1
+03337: 300  string "template.item.TI_Card_Hurt_Over_Normal_To"
+03342: 300  initprop "extend"
+03347: 301  newinit 1
+03352: 302  newinit 1
+03357: 302  newinit 1
+03362: 302  string "ani_hit_fly"
+03367: 302  initprop "aniId"
+03372: 302  endinit
+03373: 302  initprop "data"
+03378: 302  endinit
+03379: 302  initprop "_hurt_over"
+03384: 303  newinit 1
+03389: 303  string "createAction"
+03394: 303  initprop "type"
+03399: 303  string "createPlayAniActions"
+03404: 303  initprop "name"
+03409: 303  newinit 1
+03414: 303  string "ani_over_skill_back"
+03419: 303  initprop "aniId"
+03424: 303  newinit 1
+03429: 303  one
+03430: 303  initprop "speed"
+03435: 303  endinit
+03436: 303  initprop "control"
+03441: 303  endinit
+03442: 303  initprop "data"
+03447: 303  endinit
+03448: 303  initprop "_back"
+03453: 303  endinit
+03454: 303  initprop "timelines"
+03459: 305  newinit 1
+03464: 306  newinit 1
+03469: 307  newinit 1
+03474: 307  newinit 1
+03479: 307  string "ani_over_skill_ghost"
+03484: 307  initprop "aniId"
+03489: 307  endinit
+03490: 307  initprop "data"
+03495: 307  endinit
+03496: 307  initprop "_hurt_over"
+03501: 308  null
+03502: 308  initprop "_back"
+03507: 308  endinit
+03508: 308  initprop "timelines"
+03513: 308  endinit
+03514: 308  initprop "ghost"
+03519: 311  newinit 1
+03524: 312  newinit 1
+03529: 313  newinit 1
+03534: 313  newinit 1
+03539: 313  string "ani_over_skill_death"
+03544: 313  initprop "aniId"
+03549: 313  endinit
+03550: 313  initprop "data"
+03555: 313  endinit
+03556: 313  initprop "_hurt_over"
+03561: 314  null
+03562: 314  initprop "_back"
+03567: 314  endinit
+03568: 314  initprop "timelines"
+03573: 314  endinit
+03574: 314  initprop "death"
+03579: 314  endinit
+03580: 314  initprop "TI_Card_Hurt_Over_To"
+03585: 319  newinit 1
+03590: 320  newinit 1
+03595: 321  string "to"
+03600: 321  initprop "parent"
+03605: 322  string "armature"
+03610: 322  initprop "type"
+03615: 323  string "override TI_Arm_To armatureId"
+03620: 323  initprop "armatureId"
+03625: 324  string "to_tmp"
+03630: 324  initprop "belong"
+03635: 326  newarray 1
+03639: 326  string "backup"
+03644: 326  initelem_array 0
+03648: 326  endinit
+03649: 326  initprop "ignore"
+03654: 326  endinit
+03655: 326  initprop "property"
+03660: 328  newinit 1
+03665: 329  newinit 1
+03670: 329  string "DelayTime"
+03675: 329  initprop "type"
+03680: 329  zero
+03681: 329  initprop "dp"
+03686: 329  endinit
+03687: 329  initprop "_delay"
+03692: 330  newinit 1
+03697: 330  string "Show"
+03702: 330  initprop "type"
+03707: 330  endinit
+03708: 330  initprop "_show"
+03713: 331  newinit 1
+03718: 331  string "createPlayAction"
+03723: 331  initprop "type"
+03728: 331  string "override TI_Arm_To._play"
+03733: 331  initprop "aniId"
+03738: 331  endinit
+03739: 331  initprop "_play"
+03744: 332  newinit 1
+03749: 332  string "Hide"
+03754: 332  initprop "type"
+03759: 332  endinit
+03760: 332  initprop "_hide"
+03765: 332  endinit
+03766: 332  initprop "timelines"
+03771: 332  endinit
+03772: 332  initprop "TI_Arm_To"
+03777: 336  newinit 1
+03782: 337  newinit 1
+03787: 338  string "to"
+03792: 338  initprop "parent"
+03797: 339  string "armature"
+03802: 339  initprop "type"
+03807: 340  string "override TI_Arm_To armatureId"
+03812: 340  initprop "armatureId"
+03817: 341  string "to_tmp"
+03822: 341  initprop "belong"
+03827: 343  newarray 1
+03831: 343  string "backup"
+03836: 343  initelem_array 0
+03840: 343  endinit
+03841: 343  initprop "ignore"
+03846: 344  newarray 1
+03850: 344  string "fs"
+03855: 344  initelem_array 0
+03859: 344  endinit
+03860: 344  initprop "trigger"
+03865: 344  endinit
+03866: 344  initprop "property"
+03871: 346  newinit 1
+03876: 347  newinit 1
+03881: 347  string "DelayTime"
+03886: 347  initprop "type"
+03891: 347  zero
+03892: 347  initprop "dp"
+03897: 347  endinit
+03898: 347  initprop "_delay"
+03903: 348  newinit 1
+03908: 348  string "Show"
+03913: 348  initprop "type"
+03918: 348  endinit
+03919: 348  initprop "_show"
+03924: 349  newinit 1
+03929: 349  string "createPlayAction"
+03934: 349  initprop "type"
+03939: 349  string "override TI_Arm_To._play"
+03944: 349  initprop "aniId"
+03949: 349  endinit
+03950: 349  initprop "_play"
+03955: 350  newinit 1
+03960: 350  string "Hide"
+03965: 350  initprop "type"
+03970: 350  endinit
+03971: 350  initprop "_hide"
+03976: 350  endinit
+03977: 350  initprop "timelines"
+03982: 350  endinit
+03983: 350  initprop "TI_Arm_To_FS"
+03988: 354  newinit 1
+03993: 355  newinit 1
+03998: 356  string "to"
+04003: 356  initprop "parent"
+04008: 357  string "armature"
+04013: 357  initprop "type"
+04018: 358  string "override TI_Arm_To armatureId"
+04023: 358  initprop "armatureId"
+04028: 359  string "to_tmp"
+04033: 359  initprop "belong"
+04038: 361  newarray 2
+04042: 361  string "backup"
+04047: 361  initelem_array 0
+04051: 361  string "fs"
+04056: 361  initelem_array 1
+04060: 361  endinit
+04061: 361  initprop "ignore"
+04066: 361  endinit
+04067: 361  initprop "property"
+04072: 363  newinit 1
+04077: 364  newinit 1
+04082: 364  string "DelayTime"
+04087: 364  initprop "type"
+04092: 364  zero
+04093: 364  initprop "dp"
+04098: 364  endinit
+04099: 364  initprop "_delay"
+04104: 365  newinit 1
+04109: 365  string "Show"
+04114: 365  initprop "type"
+04119: 365  endinit
+04120: 365  initprop "_show"
+04125: 366  newinit 1
+04130: 366  string "createPlayAction"
+04135: 366  initprop "type"
+04140: 366  string "override TI_Arm_To._play"
+04145: 366  initprop "aniId"
+04150: 366  endinit
+04151: 366  initprop "_play"
+04156: 367  newinit 1
+04161: 367  string "Hide"
+04166: 367  initprop "type"
+04171: 367  endinit
+04172: 367  initprop "_hide"
+04177: 367  endinit
+04178: 367  initprop "timelines"
+04183: 367  endinit
+04184: 367  initprop "TI_Arm_To_NFS"
+04189: 372  newinit 1
+04194: 373  newinit 1
+04199: 374  string "to"
+04204: 374  initprop "parent"
+04209: 375  string "armature"
+04214: 375  initprop "type"
+04219: 376  string "override TI_Arm_To armatureId"
+04224: 376  initprop "armatureId"
+04229: 377  string "to_tmp"
+04234: 377  initprop "belong"
+04239: 377  endinit
+04240: 377  initprop "property"
+04245: 380  newinit 1
+04250: 381  newinit 1
+04255: 381  string "DelayTime"
+04260: 381  initprop "type"
+04265: 381  zero
+04266: 381  initprop "dp"
+04271: 381  endinit
+04272: 381  initprop "_delay"
+04277: 382  newinit 1
+04282: 382  string "Show"
+04287: 382  initprop "type"
+04292: 382  endinit
+04293: 382  initprop "_show"
+04298: 383  newinit 1
+04303: 383  string "createPlayAction"
+04308: 383  initprop "type"
+04313: 383  string "override TI_Arm_To._play"
+04318: 383  initprop "aniId"
+04323: 383  endinit
+04324: 383  initprop "_play"
+04329: 384  newinit 1
+04334: 384  string "Hide"
+04339: 384  initprop "type"
+04344: 384  endinit
+04345: 384  initprop "_hide"
+04350: 384  endinit
+04351: 384  initprop "timelines"
+04356: 384  endinit
+04357: 384  initprop "TI_Arm_To_Backup"
+04362: 389  newinit 1
+04367: 390  string "template.item.TI_Arm_To"
+04372: 390  initprop "extend"
+04377: 391  newinit 1
+04382: 392  string "from"
+04387: 392  initprop "parent"
+04392: 393  string "from_tmp"
+04397: 393  initprop "belong"
+04402: 393  endinit
+04403: 393  initprop "property"
+04408: 393  endinit
+04409: 393  initprop "TI_Arm_From"
+04414: 397  newinit 1
+04419: 398  string "template.item.TI_Arm_From"
+04424: 398  initprop "extend"
+04429: 399  newinit 1
+04434: 400  string "far"
+04439: 400  initprop "parent"
+04444: 401  newinit 1
+04449: 401  string "from"
+04454: 401  initprop "base"
+04459: 401  name "cc"
+04464: 401  dup
+04465: 401  callprop "p"
+04470: 401  swap
+04471: 401  notearg
+04472: 401  zero
+04473: 401  notearg
+04474: 401  zero
+04475: 401  notearg
+04476: 401  call 2
+04479: 401  initprop "offset"
+04484: 401  endinit
+04485: 401  initprop "pos"
+04490: 402  string "from_tmp"
+04495: 402  initprop "belong"
+04500: 402  endinit
+04501: 402  initprop "property"
+04506: 402  endinit
+04507: 402  initprop "TI_Arm_Far_From"
+04512: 405  newinit 1
+04517: 406  string "template.item.TI_Arm_To"
+04522: 406  initprop "extend"
+04527: 407  newinit 1
+04532: 408  string "near"
+04537: 408  initprop "parent"
+04542: 409  newinit 1
+04547: 409  string "to"
+04552: 409  initprop "base"
+04557: 409  name "cc"
+04562: 409  dup
+04563: 409  callprop "p"
+04568: 409  swap
+04569: 409  notearg
+04570: 409  zero
+04571: 409  notearg
+04572: 409  zero
+04573: 409  notearg
+04574: 409  call 2
+04577: 409  initprop "offset"
+04582: 409  endinit
+04583: 409  initprop "pos"
+04588: 410  string "to_tmp"
+04593: 410  initprop "belong"
+04598: 410  endinit
+04599: 410  initprop "property"
+04604: 410  endinit
+04605: 410  initprop "TI_Arm_Near_To"
+04610: 413  newinit 1
+04615: 414  string "template.item.TI_Arm_From"
+04620: 414  initprop "extend"
+04625: 415  newinit 1
+04630: 416  string "near"
+04635: 416  initprop "parent"
+04640: 417  newinit 1
+04645: 417  string "from"
+04650: 417  initprop "base"
+04655: 417  name "cc"
+04660: 417  dup
+04661: 417  callprop "p"
+04666: 417  swap
+04667: 417  notearg
+04668: 417  zero
+04669: 417  notearg
+04670: 417  zero
+04671: 417  notearg
+04672: 417  call 2
+04675: 417  initprop "offset"
+04680: 417  endinit
+04681: 417  initprop "pos"
+04686: 418  string "from_tmp"
+04691: 418  initprop "belong"
+04696: 418  endinit
+04697: 418  initprop "property"
+04702: 418  endinit
+04703: 418  initprop "TI_Arm_Near_From"
+04708: 422  newinit 1
+04713: 423  string "template.item.TI_Arm_Near_To"
+04718: 423  initprop "extend"
+04723: 424  newinit 1
+04728: 425  string "to_tmp_once"
+04733: 425  initprop "belong"
+04738: 425  endinit
+04739: 425  initprop "property"
+04744: 425  endinit
+04745: 425  initprop "TI_Arm_Near_Once_To"
+04750: 428  newinit 1
+04755: 429  string "template.item.TI_Arm_From"
+04760: 429  initprop "extend"
+04765: 430  newinit 1
+04770: 431  string "near"
+04775: 431  initprop "parent"
+04780: 432  newinit 1
+04785: 432  string "from"
+04790: 432  initprop "base"
+04795: 432  name "cc"
+04800: 432  dup
+04801: 432  callprop "p"
+04806: 432  swap
+04807: 432  notearg
+04808: 432  zero
+04809: 432  notearg
+04810: 432  zero
+04811: 432  notearg
+04812: 432  call 2
+04815: 432  initprop "offset"
+04820: 432  endinit
+04821: 432  initprop "pos"
+04826: 433  string "from_tmp_once"
+04831: 433  initprop "belong"
+04836: 433  endinit
+04837: 433  initprop "property"
+04842: 433  endinit
+04843: 433  initprop "TI_Arm_Near_Once_From"
+04848: 436  newinit 1
+04853: 437  string "template.item.TI_Arm_To"
+04858: 437  initprop "extend"
+04863: 438  newinit 1
+04868: 439  string "far"
+04873: 439  initprop "parent"
+04878: 440  newinit 1
+04883: 440  string "to"
+04888: 440  initprop "base"
+04893: 440  name "cc"
+04898: 440  dup
+04899: 440  callprop "p"
+04904: 440  swap
+04905: 440  notearg
+04906: 440  zero
+04907: 440  notearg
+04908: 440  zero
+04909: 440  notearg
+04910: 440  call 2
+04913: 440  initprop "offset"
+04918: 440  endinit
+04919: 440  initprop "pos"
+04924: 441  string "to_tmp_once"
+04929: 441  initprop "belong"
+04934: 441  endinit
+04935: 441  initprop "property"
+04940: 441  endinit
+04941: 441  initprop "TI_Arm_Far_Once_To"
+04946: 445  newinit 1
+04951: 446  string "template.item.TI_Arm_From"
+04956: 446  initprop "extend"
+04961: 447  newinit 1
+04966: 448  string "far"
+04971: 448  initprop "parent"
+04976: 450  string "from_tmp_once"
+04981: 450  initprop "belong"
+04986: 450  endinit
+04987: 450  initprop "property"
+04992: 450  endinit
+04993: 450  initprop "TI_Arm_Far_Once_From"
+04998: 455  newinit 1
+05003: 456  string "template.item.TI_Arm_To"
+05008: 456  initprop "extend"
+05013: 457  newinit 1
+05018: 458  string "mid"
+05023: 458  initprop "parent"
+05028: 459  newinit 1
+05033: 459  string "to"
+05038: 459  initprop "base"
+05043: 459  name "cc"
+05048: 459  dup
+05049: 459  callprop "p"
+05054: 459  swap
+05055: 459  notearg
+05056: 459  zero
+05057: 459  notearg
+05058: 459  zero
+05059: 459  notearg
+05060: 459  call 2
+05063: 459  initprop "offset"
+05068: 459  endinit
+05069: 459  initprop "pos"
+05074: 460  string "to_tmp_once"
+05079: 460  initprop "belong"
+05084: 460  endinit
+05085: 460  initprop "property"
+05090: 460  endinit
+05091: 460  initprop "TI_Arm_Mid_Once_To"
+05096: 465  newinit 1
+05101: 466  string "template.item.TI_Arm_Near_Once_From"
+05106: 466  initprop "extend"
+05111: 467  newinit 1
+05116: 468  string "mid"
+05121: 468  initprop "parent"
+05126: 468  endinit
+05127: 468  initprop "property"
+05132: 468  endinit
+05133: 468  initprop "TI_Arm_Mid_Once_From"
+05138: 472  newinit 1
+05143: 473  string "template.item.TI_Arm_Far_Once_From"
+05148: 473  initprop "extend"
+05153: 474  newinit 1
+05158: 475  string "near"
+05163: 475  initprop "parent"
+05168: 475  endinit
+05169: 475  initprop "property"
+05174: 475  endinit
+05175: 475  initprop "TI_Arm_Mid_Once_From_Near"
+05180: 480  newinit 1
+05185: 481  string "template.item.TI_Arm_To"
+05190: 481  initprop "extend"
+05195: 482  newinit 1
+05200: 483  true
+05201: 483  initprop "ui"
+05206: 483  endinit
+05207: 483  initprop "property"
+05212: 483  endinit
+05213: 483  initprop "TI_Arm_UI_To"
+05218: 486  newinit 1
+05223: 487  string "template.item.TI_Arm_From"
+05228: 487  initprop "extend"
+05233: 488  newinit 1
+05238: 489  true
+05239: 489  initprop "ui"
+05244: 489  endinit
+05245: 489  initprop "property"
+05250: 489  endinit
+05251: 489  initprop "TI_Arm_UI_From"
+05256: 493  newinit 1
+05261: 494  string "template.item.TI_Arm_Near_To"
+05266: 494  initprop "extend"
+05271: 495  newinit 1
+05276: 496  true
+05277: 496  initprop "ui"
+05282: 496  endinit
+05283: 496  initprop "property"
+05288: 496  endinit
+05289: 496  initprop "TI_Arm_Near_UI_To"
+05294: 499  newinit 1
+05299: 500  string "template.item.TI_Arm_Near_From"
+05304: 500  initprop "extend"
+05309: 501  newinit 1
+05314: 502  true
+05315: 502  initprop "ui"
+05320: 502  endinit
+05321: 502  initprop "property"
+05326: 502  endinit
+05327: 502  initprop "TI_Arm_Near_UI_From"
+05332: 502  endinit
+05333: 502  setprop "item"
+05338: 502  popv
+05339: 505  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/TemplateItem.js:1 ---

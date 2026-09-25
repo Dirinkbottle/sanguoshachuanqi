@@ -1,0 +1,5686 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/SkillRemote.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/SkillRemote.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Utils"
+00010:   9  dup
+00011:   9  callprop "extendScope"
+00016:   9  swap
+00017:   9  notearg
+00018:  10  name "xs"
+00023:  10  getprop "Cfg"
+00028:  10  getprop "Skill"
+00033:  10  notearg
+00034:  11  newinit 1
+00039:  13  newinit 1
+00044:  14  string "template.T_Remote_SS"
+00049:  14  initprop "extend"
+00054:  15  newinit 1
+00059:  16  string "Spawn"
+00064:  16  initprop "type"
+00069:  17  newinit 1
+00074:  18  newarray 5
+00078:  18  string "P_Delay_Frame_10"
+00083:  18  initelem_array 0
+00087:  18  string "P_Delay_Frame_10"
+00092:  18  initelem_array 1
+00096:  18  string "P_Delay_Frame_10"
+00101:  18  initelem_array 2
+00105:  18  string "P_Delay_Frame_5"
+00110:  18  initelem_array 3
+00114:  18  string "P_Delay_Frame_1"
+00119:  18  initelem_array 4
+00123:  18  endinit
+00124:  18  initprop "_delay"
+00129:  19  string "P_Hurt_Back_Over_IgnoreOther"
+00134:  19  initprop "_type"
+00139:  19  endinit
+00140:  19  initprop "_hurt"
+00145:  21  newinit 1
+00150:  22  null
+00151:  22  initprop "_delay"
+00156:  23  string "P_QinYin_Effect_From_Near"
+00161:  23  initprop "_type"
+00166:  23  endinit
+00167:  23  initprop "_effect_from"
+00172:  26  string "P_QinYin_Effect_Far_To_Once"
+00177:  26  initprop "_effect_to_far"
+00182:  27  string "P_QinYin_Effect_Mid_To_Once"
+00187:  27  initprop "_effect_to_mid"
+00192:  28  string "P_QinYin_Effect_Near_To_Once"
+00197:  28  initprop "_effect_to_near"
+00202:  39  newinit 1
+00207:  40  newarray 2
+00211:  40  string "P_Delay_Frame_10"
+00216:  40  initelem_array 0
+00220:  40  string "P_Delay_Frame_2"
+00225:  40  initelem_array 1
+00229:  40  endinit
+00230:  40  initprop "_delay"
+00235:  41  string "P_Hp_Add_To_FS"
+00240:  41  initprop "_type"
+00245:  41  endinit
+00246:  41  initprop "_effect_to_cure"
+00251:  49  newinit 1
+00256:  50  newarray 3
+00260:  50  string "P_Delay_Frame_20"
+00265:  50  initelem_array 0
+00269:  50  string "P_Delay_Frame_20"
+00274:  50  initelem_array 1
+00278:  50  string "P_Delay_Frame_20"
+00283:  50  initelem_array 2
+00287:  50  endinit
+00288:  50  initprop "_delay"
+00293:  51  string "P_HuoYan_Begin"
+00298:  51  initprop "_type"
+00303:  51  endinit
+00304:  51  initprop "_effect_to_yinran"
+00309:  51  endinit
+00310:  51  initprop "_attack"
+00315:  51  endinit
+00316:  51  initprop "qinyin"
+00321:  56  newinit 1
+00326:  57  string "template.T_Remote_SS"
+00331:  57  initprop "extend"
+00336:  58  newinit 1
+00341:  60  string "Spawn"
+00346:  60  initprop "type"
+00351:  62  newinit 1
+00356:  63  null
+00357:  63  initprop "_delay"
+00362:  64  null
+00363:  64  initprop "_type"
+00368:  64  endinit
+00369:  64  initprop "_hurt"
+00374:  68  string "P_FengWu_Effect_Near_From_Once"
+00379:  68  initprop "_effect_from_near"
+00384:  71  newinit 1
+00389:  72  newarray 5
+00393:  72  string "P_Delay_Frame_10"
+00398:  72  initelem_array 0
+00402:  72  string "P_Delay_Frame_10"
+00407:  72  initelem_array 1
+00411:  72  string "P_Delay_Frame_10"
+00416:  72  initelem_array 2
+00420:  72  string "P_Delay_Frame_10"
+00425:  72  initelem_array 3
+00429:  72  string "P_Delay_Frame_2"
+00434:  72  initelem_array 4
+00438:  72  endinit
+00439:  72  initprop "_delay"
+00444:  73  string "P_Def_Add_To_FS"
+00449:  73  initprop "_type"
+00454:  73  endinit
+00455:  73  initprop "_effect_to_def_add"
+00460:  77  newinit 1
+00465:  78  newarray 2
+00469:  78  string "P_Delay_Frame_68"
+00474:  78  initelem_array 0
+00478:  78  string "P_Delay_Frame_10"
+00483:  78  initelem_array 1
+00487:  78  endinit
+00488:  78  initprop "_delay"
+00493:  79  string "P_Def_Sub_To_Not_FS"
+00498:  79  initprop "_type"
+00503:  79  endinit
+00504:  79  initprop "_effect_to_def_sub"
+00509:  83  newinit 1
+00514:  84  null
+00515:  84  initprop "_delay"
+00520:  85  string "P_FengWu_Effect_To"
+00525:  85  initprop "_type"
+00530:  85  endinit
+00531:  85  initprop "_effect_to"
+00536:  88  newinit 1
+00541:  89  null
+00542:  89  initprop "_delay"
+00547:  90  string "P_FengWu_Effect_From"
+00552:  90  initprop "_type"
+00557:  90  endinit
+00558:  90  initprop "_effect_from"
+00563:  90  endinit
+00564:  90  initprop "_attack"
+00569:  90  endinit
+00570:  90  initprop "fengwu"
+00575:  97  newinit 1
+00580:  98  string "template.T_Remote_SS"
+00585:  98  initprop "extend"
+00590:  99  newinit 1
+00595: 101  string "Spawn"
+00600: 101  initprop "type"
+00605: 103  newinit 1
+00610: 104  newarray 2
+00614: 104  string "P_Delay_Frame_5"
+00619: 104  initelem_array 0
+00623: 104  string "P_Delay_Frame_4"
+00628: 104  initelem_array 1
+00632: 104  endinit
+00633: 104  initprop "_delay"
+00638: 105  string "P_Hurt_Fly_Over_IgnoreOther"
+00643: 105  initprop "_type"
+00648: 105  endinit
+00649: 105  initprop "_hurt"
+00654: 109  newinit 1
+00659: 110  newarray 3
+00663: 110  string "P_Delay_Frame_10"
+00668: 110  initelem_array 0
+00672: 110  string "P_Delay_Frame_10"
+00677: 110  initelem_array 1
+00681: 110  string "P_Delay_Frame_2"
+00686: 110  initelem_array 2
+00690: 110  endinit
+00691: 110  initprop "_delay"
+00696: 111  string "P_Def_Add_To_FS"
+00701: 111  initprop "_type"
+00706: 111  endinit
+00707: 111  initprop "_effect_to_def_add"
+00712: 115  newinit 1
+00717: 116  newarray 2
+00721: 116  string "P_Delay_Frame_5"
+00726: 116  initelem_array 0
+00730: 116  string "P_Delay_Frame_4"
+00735: 116  initelem_array 1
+00739: 116  endinit
+00740: 116  initprop "_delay"
+00745: 117  string "P_Def_Sub_To_Not_FS"
+00750: 117  initprop "_type"
+00755: 117  endinit
+00756: 117  initprop "_effect_to_atk_sub"
+00761: 121  newinit 1
+00766: 122  null
+00767: 122  initprop "_delay"
+00772: 123  string "P_DiMeng_Effect_To_Def_Sub"
+00777: 123  initprop "_type"
+00782: 123  endinit
+00783: 123  initprop "_effect_to"
+00788: 127  newinit 1
+00793: 128  null
+00794: 128  initprop "_delay"
+00799: 129  string "P_DiMeng_Effect_To_Def_Add"
+00804: 129  initprop "_type"
+00809: 129  endinit
+00810: 129  initprop "_effect_from"
+00815: 129  endinit
+00816: 129  initprop "_attack"
+00821: 129  endinit
+00822: 129  initprop "dimeng"
+00827: 135  newinit 1
+00832: 136  string "template.T_Remote_SS"
+00837: 136  initprop "extend"
+00842: 137  newinit 1
+00847: 138  string "Spawn"
+00852: 138  initprop "type"
+00857: 139  newinit 1
+00862: 140  newarray 2
+00866: 140  string "P_Delay_Frame_30"
+00871: 140  initelem_array 0
+00875: 140  string "P_Delay_Frame_10"
+00880: 140  initelem_array 1
+00884: 140  endinit
+00885: 140  initprop "_delay"
+00890: 141  string "P_Hurt_V3_Over"
+00895: 141  initprop "_type"
+00900: 141  endinit
+00901: 141  initprop "_hurt"
+00906: 143  newinit 1
+00911: 144  newarray 2
+00915: 144  string "P_Delay_Frame_30"
+00920: 144  initelem_array 0
+00924: 144  string "P_Delay_Frame_10"
+00929: 144  initelem_array 1
+00933: 144  endinit
+00934: 144  initprop "_delay"
+00939: 145  string "P_Hurt_Back_Over_NOHURT"
+00944: 145  initprop "_type"
+00949: 145  endinit
+00950: 145  initprop "_hurt1"
+00955: 147  newinit 1
+00960: 148  null
+00961: 148  initprop "_delay"
+00966: 149  string "P_QiaoBianBefore_Effect_From"
+00971: 149  initprop "_type"
+00976: 149  endinit
+00977: 149  initprop "_effect_from"
+00982: 151  newinit 1
+00987: 152  null
+00988: 152  initprop "_delay"
+00993: 153  string "P_QiaoBianBefore_Effect_To"
+00998: 153  initprop "_type"
+01003: 153  endinit
+01004: 153  initprop "_effect_to"
+01009: 156  newinit 1
+01014: 157  newarray 2
+01018: 157  string "P_Delay_Frame_30"
+01023: 157  initelem_array 0
+01027: 157  string "P_Delay_Frame_10"
+01032: 157  initelem_array 1
+01036: 157  endinit
+01037: 157  initprop "_delay"
+01042: 158  string "P_Def_Add_From"
+01047: 158  initprop "_type"
+01052: 158  endinit
+01053: 158  initprop "_effect_to_def_add"
+01058: 161  newinit 1
+01063: 162  newarray 2
+01067: 162  string "P_Delay_Frame_30"
+01072: 162  initelem_array 0
+01076: 162  string "P_Delay_Frame_10"
+01081: 162  initelem_array 1
+01085: 162  endinit
+01086: 162  initprop "_delay"
+01091: 163  string "P_Def_Sub_To"
+01096: 163  initprop "_type"
+01101: 163  endinit
+01102: 163  initprop "_effect_to_def_sub"
+01107: 163  endinit
+01108: 163  initprop "_attack"
+01113: 163  endinit
+01114: 163  initprop "qiaobian_before"
+01119: 168  newinit 1
+01124: 169  string "template.T_Remote_SS"
+01129: 169  initprop "extend"
+01134: 170  newinit 1
+01139: 171  string "Spawn"
+01144: 171  initprop "type"
+01149: 172  newinit 1
+01154: 173  newarray 2
+01158: 173  string "P_Delay_Frame_46"
+01163: 173  initelem_array 0
+01167: 173  string "P_Delay_Frame_3"
+01172: 173  initelem_array 1
+01176: 173  endinit
+01177: 173  initprop "_delay"
+01182: 174  string "P_Hurt_V3_Over"
+01187: 174  initprop "_type"
+01192: 174  endinit
+01193: 174  initprop "_hurt"
+01198: 176  newinit 1
+01203: 177  null
+01204: 177  initprop "_delay"
+01209: 178  string "P_QiaoBianAfter_Effect_From0"
+01214: 178  initprop "_type"
+01219: 178  endinit
+01220: 178  initprop "_effect_from"
+01225: 180  newinit 1
+01230: 181  null
+01231: 181  initprop "_delay"
+01236: 182  string "P_QiaoBianAfter_Effect_From1"
+01241: 182  initprop "_type"
+01246: 182  endinit
+01247: 182  initprop "_effect_from1"
+01252: 184  newinit 1
+01257: 185  null
+01258: 185  initprop "_delay"
+01263: 186  string "P_QiaoBianAfter_Effect_To"
+01268: 186  initprop "_type"
+01273: 186  endinit
+01274: 186  initprop "_effect_to"
+01279: 186  endinit
+01280: 186  initprop "_attack"
+01285: 186  endinit
+01286: 186  initprop "qiaobian_after"
+01291: 195  newinit 1
+01296: 196  string "qiaobian_before"
+01301: 196  initprop "extend"
+01306: 196  endinit
+01307: 196  initprop "qiaobian_v5_before"
+01312: 199  newinit 1
+01317: 200  string "qiaobian_after"
+01322: 200  initprop "extend"
+01327: 200  endinit
+01328: 200  initprop "qiaobian_v5_after"
+01333: 203  newinit 1
+01338: 204  string "template.T_Remote_SS"
+01343: 204  initprop "extend"
+01348: 205  newinit 1
+01353: 206  string "Spawn"
+01358: 206  initprop "type"
+01363: 207  newinit 1
+01368: 208  newarray 2
+01372: 208  string "P_Delay_Frame_30"
+01377: 208  initelem_array 0
+01381: 208  string "P_Delay_Frame_10"
+01386: 208  initelem_array 1
+01390: 208  endinit
+01391: 208  initprop "_delay"
+01396: 209  string "P_Hurt_V3_Over"
+01401: 209  initprop "_type"
+01406: 209  endinit
+01407: 209  initprop "_hurt"
+01412: 212  newinit 1
+01417: 213  newarray 2
+01421: 213  string "P_Delay_Frame_30"
+01426: 213  initelem_array 0
+01430: 213  string "P_Delay_Frame_10"
+01435: 213  initelem_array 1
+01439: 213  endinit
+01440: 213  initprop "_delay"
+01445: 214  string "P_Hurt_Back_Over"
+01450: 214  initprop "_type"
+01455: 214  endinit
+01456: 214  initprop "_hurt1"
+01461: 226  newinit 1
+01466: 227  newarray 2
+01470: 227  string "P_Delay_Frame_46"
+01475: 227  initelem_array 0
+01479: 227  string "P_Delay_Frame_3"
+01484: 227  initelem_array 1
+01488: 227  endinit
+01489: 227  initprop "_delay"
+01494: 228  string "P_QiaoBian_Effect_To_Mid"
+01499: 228  initprop "_type"
+01504: 228  endinit
+01505: 228  initprop "_effect1"
+01510: 228  endinit
+01511: 228  initprop "_attack"
+01516: 228  endinit
+01517: 228  initprop "qiaobian_v5"
+01522: 246  newinit 1
+01527: 247  string "template.T_Remote_SS"
+01532: 247  initprop "extend"
+01537: 248  newinit 1
+01542: 249  string "Spawn"
+01547: 249  initprop "type"
+01552: 250  newinit 1
+01557: 251  newarray 2
+01561: 251  string "P_Delay_Frame_30"
+01566: 251  initelem_array 0
+01570: 251  string "P_Delay_Frame_10"
+01575: 251  initelem_array 1
+01579: 251  endinit
+01580: 251  initprop "_delay"
+01585: 252  string "P_Hurt_Back_Over"
+01590: 252  initprop "_type"
+01595: 252  endinit
+01596: 252  initprop "_hurt"
+01601: 259  newinit 1
+01606: 260  string "P_ZhuiKong_Effect_From"
+01611: 260  initprop "_type"
+01616: 260  endinit
+01617: 260  initprop "_effect_from"
+01622: 263  newinit 1
+01627: 264  string "P_ZhuiKong_Effect_To"
+01632: 264  initprop "_type"
+01637: 264  endinit
+01638: 264  initprop "_effect_to"
+01643: 272  newinit 1
+01648: 273  string "P_ZhuiKong_Effect_To_Far"
+01653: 273  initprop "_type"
+01658: 273  endinit
+01659: 273  initprop "_effect_to_far"
+01664: 273  endinit
+01665: 273  initprop "_attack"
+01670: 273  endinit
+01671: 273  initprop "zhuikong"
+01676: 278  newinit 1
+01681: 279  string "zhuikong"
+01686: 279  initprop "extend"
+01691: 280  newinit 1
+01696: 281  newinit 1
+01701: 282  newarray 2
+01705: 282  string "P_Delay_Frame_30"
+01710: 282  initelem_array 0
+01714: 282  string "P_Delay_Frame_10"
+01719: 282  initelem_array 1
+01723: 282  endinit
+01724: 282  initprop "_delay"
+01729: 283  string "P_BaoJi_Effect_To"
+01734: 283  initprop "_type"
+01739: 283  endinit
+01740: 283  initprop "_effect_to1"
+01745: 283  endinit
+01746: 283  initprop "_attack"
+01751: 283  endinit
+01752: 283  initprop "zhuikong_v3"
+01757: 288  newinit 1
+01762: 289  string "zhuikong_v3"
+01767: 289  initprop "extend"
+01772: 289  endinit
+01773: 289  initprop "zhuikong_v4"
+01778: 292  newinit 1
+01783: 293  string "zhuikong_v4"
+01788: 293  initprop "extend"
+01793: 293  endinit
+01794: 293  initprop "zhuikong_v5"
+01799: 298  newinit 1
+01804: 299  string "template.T_Remote_Normal"
+01809: 299  initprop "extend"
+01814: 300  string "P_Normal_Skill_Yellow"
+01819: 300  initprop "_name"
+01824: 302  newinit 1
+01829: 303  string "Spawn"
+01834: 303  initprop "type"
+01839: 304  newinit 1
+01844: 305  newarray 2
+01848: 305  string "P_Delay_Frame_30"
+01853: 305  initelem_array 0
+01857: 305  string "P_Delay_Frame_2"
+01862: 305  initelem_array 1
+01866: 305  endinit
+01867: 305  initprop "_delay"
+01872: 306  string "P_Hurt_Back_Over"
+01877: 306  initprop "_type"
+01882: 306  endinit
+01883: 306  initprop "_hurt"
+01888: 308  newinit 1
+01893: 309  null
+01894: 309  initprop "_delay"
+01899: 310  string "P_RenJia_Effect_From"
+01904: 310  initprop "_type"
+01909: 310  endinit
+01910: 310  initprop "_effect_from"
+01915: 313  newinit 1
+01920: 314  null
+01921: 314  initprop "_delay"
+01926: 315  string "P_RenJia_Effect_To"
+01931: 315  initprop "_type"
+01936: 315  endinit
+01937: 315  initprop "_effect_to"
+01942: 315  endinit
+01943: 315  initprop "_attack"
+01948: 315  endinit
+01949: 315  initprop "renjia"
+01954: 322  newinit 1
+01959: 323  string "template.T_Remote_Normal"
+01964: 323  initprop "extend"
+01969: 324  string "P_Normal_Skill_Yellow"
+01974: 324  initprop "_name"
+01979: 325  newinit 1
+01984: 326  string "Spawn"
+01989: 326  initprop "type"
+01994: 327  newinit 1
+01999: 328  null
+02000: 328  initprop "_delay"
+02005: 329  null
+02006: 329  initprop "_type"
+02011: 329  endinit
+02012: 329  initprop "_hurt"
+02017: 331  newinit 1
+02022: 332  null
+02023: 332  initprop "_delay"
+02028: 333  null
+02029: 333  initprop "_type"
+02034: 333  endinit
+02035: 333  initprop "_effect_from"
+02040: 336  newinit 1
+02045: 337  string "P_Delay_Frame_1"
+02050: 337  initprop "_delay"
+02055: 338  string "P_Atk_Sub_To"
+02060: 338  initprop "_type"
+02065: 338  endinit
+02066: 338  initprop "_effect_to1"
+02071: 341  newinit 1
+02076: 342  string "P_Delay_Frame_6"
+02081: 342  initprop "_delay"
+02086: 343  string "P_BuffSub_Effect_To"
+02091: 343  initprop "_type"
+02096: 343  endinit
+02097: 343  initprop "_effect_to"
+02102: 343  endinit
+02103: 343  initprop "_attack"
+02108: 343  endinit
+02109: 343  initprop "lueying"
+02114: 349  newinit 1
+02119: 350  string "template.T_Remote_Normal"
+02124: 350  initprop "extend"
+02129: 351  string "P_Normal_Skill_Yellow"
+02134: 351  initprop "_name"
+02139: 353  newinit 1
+02144: 354  string "Spawn"
+02149: 354  initprop "type"
+02154: 355  newinit 1
+02159: 356  null
+02160: 356  initprop "_delay"
+02165: 357  null
+02166: 357  initprop "_type"
+02171: 357  endinit
+02172: 357  initprop "_hurt"
+02177: 359  newinit 1
+02182: 360  null
+02183: 360  initprop "_delay"
+02188: 362  null
+02189: 362  initprop "_type"
+02194: 362  endinit
+02195: 362  initprop "_effect_from"
+02200: 364  newinit 1
+02205: 365  string "P_Delay_Frame_6"
+02210: 365  initprop "_delay"
+02215: 367  string "P_Cure_From"
+02220: 367  initprop "_type"
+02225: 367  endinit
+02226: 367  initprop "_effect_from1"
+02231: 370  newinit 1
+02236: 371  null
+02237: 371  initprop "_delay"
+02242: 372  null
+02243: 372  initprop "_type"
+02248: 372  endinit
+02249: 372  initprop "_effect_to"
+02254: 372  endinit
+02255: 372  initprop "_attack"
+02260: 372  endinit
+02261: 372  initprop "shesheng"
+02266: 379  newinit 1
+02271: 380  string "template.T_Remote_Normal"
+02276: 380  initprop "extend"
+02281: 381  string "P_Normal_Skill_Yellow"
+02286: 381  initprop "_name"
+02291: 383  newinit 1
+02296: 384  string "Spawn"
+02301: 384  initprop "type"
+02306: 385  newinit 1
+02311: 386  null
+02312: 386  initprop "_delay"
+02317: 387  null
+02318: 387  initprop "_type"
+02323: 387  endinit
+02324: 387  initprop "_hurt"
+02329: 389  newinit 1
+02334: 390  null
+02335: 390  initprop "_delay"
+02340: 391  null
+02341: 391  initprop "_type"
+02346: 391  endinit
+02347: 391  initprop "_effect_from"
+02352: 393  newinit 1
+02357: 394  string "P_Delay_Frame_1"
+02362: 394  initprop "_delay"
+02367: 395  null
+02368: 395  initprop "_type"
+02373: 395  endinit
+02374: 395  initprop "_effect_from1"
+02379: 398  newinit 1
+02384: 399  null
+02385: 399  initprop "_delay"
+02390: 400  null
+02391: 400  initprop "_type"
+02396: 400  endinit
+02397: 400  initprop "_effect_to"
+02402: 400  endinit
+02403: 400  initprop "_attack"
+02408: 400  endinit
+02409: 400  initprop "nuyan"
+02414: 407  newinit 1
+02419: 408  string "template.T_Remote_SS"
+02424: 408  initprop "extend"
+02429: 409  newinit 1
+02434: 411  newinit 1
+02439: 412  name "xs"
+02444: 412  getprop "Constant_FightScene_HpsType_Average"
+02449: 412  initprop "type"
+02454: 412  endinit
+02455: 412  initprop "hps"
+02460: 414  int8 4
+02462: 414  initprop "loopNum"
+02467: 414  endinit
+02468: 414  initprop "property"
+02473: 416  newinit 1
+02478: 417  string "Spawn"
+02483: 417  initprop "type"
+02488: 418  newinit 1
+02493: 419  newarray 2
+02497: 419  string "P_Delay_Frame_26"
+02502: 419  initelem_array 0
+02506: 419  string "P_Delay_Frame_10"
+02511: 419  initelem_array 1
+02515: 419  endinit
+02516: 419  initprop "_delay0"
+02521: 420  string "P_Hurt_Hit_NoFs"
+02526: 420  initprop "_type0"
+02531: 421  newinit 1
+02536: 422  zero
+02537: 422  initprop "idx"
+02542: 422  endinit
+02543: 422  initprop "params"
+02548: 422  endinit
+02549: 422  initprop "_hurt0"
+02554: 425  newinit 1
+02559: 426  newarray 2
+02563: 426  string "P_Delay_Frame_37"
+02568: 426  initelem_array 0
+02572: 426  string "P_Delay_Frame_10"
+02577: 426  initelem_array 1
+02581: 426  endinit
+02582: 426  initprop "_delay0"
+02587: 427  string "P_Hurt_Hit_NoFs"
+02592: 427  initprop "_type0"
+02597: 428  newinit 1
+02602: 429  one
+02603: 429  initprop "idx"
+02608: 429  endinit
+02609: 429  initprop "params"
+02614: 429  endinit
+02615: 429  initprop "_hurt1"
+02620: 433  newinit 1
+02625: 434  newarray 2
+02629: 434  string "P_Delay_Frame_46"
+02634: 434  initelem_array 0
+02638: 434  string "P_Delay_Frame_10"
+02643: 434  initelem_array 1
+02647: 434  endinit
+02648: 434  initprop "_delay0"
+02653: 435  string "P_Hurt_Hit_NoFs"
+02658: 435  initprop "_type0"
+02663: 436  newinit 1
+02668: 437  int8 2
+02670: 437  initprop "idx"
+02675: 437  endinit
+02676: 437  initprop "params"
+02681: 437  endinit
+02682: 437  initprop "_hurt2"
+02687: 441  newinit 1
+02692: 442  newarray 2
+02696: 442  string "P_Delay_Frame_68"
+02701: 442  initelem_array 0
+02705: 442  string "P_Delay_Frame_6"
+02710: 442  initelem_array 1
+02714: 442  endinit
+02715: 442  initprop "_delay"
+02720: 444  newinit 1
+02725: 445  string "Spawn"
+02730: 445  initprop "type"
+02735: 445  zero
+02736: 447  string "P_Hurt_Back_Over_NFS"
+02741: 447  initelem
+02742: 448  newinit 1
+02747: 449  int8 3
+02749: 449  initprop "idx"
+02754: 449  endinit
+02755: 449  initprop "params"
+02760: 449  endinit
+02761: 449  initprop "_type"
+02766: 449  endinit
+02767: 449  initprop "_hurt3"
+02772: 453  newinit 1
+02777: 454  newarray 2
+02781: 454  string "P_Delay_Frame_68"
+02786: 454  initelem_array 0
+02790: 454  string "P_Delay_Frame_6"
+02795: 454  initelem_array 1
+02799: 454  endinit
+02800: 454  initprop "_delay"
+02805: 455  null
+02806: 455  initprop "_type"
+02811: 455  endinit
+02812: 455  initprop "_hurt"
+02817: 457  newinit 1
+02822: 458  null
+02823: 458  initprop "_delay"
+02828: 459  string "P_LieRen_Effect_From1"
+02833: 459  initprop "_type"
+02838: 459  endinit
+02839: 459  initprop "_effect_from1"
+02844: 461  newinit 1
+02849: 462  null
+02850: 462  initprop "_delay"
+02855: 463  string "P_LieRen_Effect_From2"
+02860: 463  initprop "_type"
+02865: 463  endinit
+02866: 463  initprop "_effect_from2"
+02871: 465  newinit 1
+02876: 466  newarray 2
+02880: 466  string "P_Delay_Frame_68"
+02885: 466  initelem_array 0
+02889: 466  string "P_Delay_Frame_2"
+02894: 466  initelem_array 1
+02898: 466  endinit
+02899: 466  initprop "_delay"
+02904: 467  string "P_Atk_Add_From_Noatk"
+02909: 467  initprop "_type"
+02914: 467  endinit
+02915: 467  initprop "_effect_from_atkUp"
+02920: 469  newinit 1
+02925: 470  newarray 2
+02929: 470  string "P_Delay_Frame_68"
+02934: 470  initelem_array 0
+02938: 470  string "P_Delay_Frame_10"
+02943: 470  initelem_array 1
+02947: 470  endinit
+02948: 470  initprop "_delay"
+02953: 471  string "P_Int_Add_From_Nowis"
+02958: 471  initprop "_type"
+02963: 471  endinit
+02964: 471  initprop "_effect_from_intUp"
+02969: 473  newinit 1
+02974: 474  null
+02975: 474  initprop "_delay"
+02980: 475  string "P_TianYi_LieRen_To1"
+02985: 475  initprop "_type"
+02990: 475  endinit
+02991: 475  initprop "_effect_to1"
+02996: 477  newinit 1
+03001: 478  null
+03002: 478  initprop "_delay"
+03007: 479  string "P_TianYi_LieRen_To2"
+03012: 479  initprop "_type"
+03017: 479  endinit
+03018: 479  initprop "_effect_to2"
+03023: 481  newinit 1
+03028: 482  newarray 2
+03032: 482  string "P_Delay_Frame_37"
+03037: 482  initelem_array 0
+03041: 482  string "P_Delay_Frame_5"
+03046: 482  initelem_array 1
+03050: 482  endinit
+03051: 482  initprop "_delay"
+03056: 483  string "P_Atk_Sub_To"
+03061: 483  initprop "_type"
+03066: 483  endinit
+03067: 483  initprop "_effect_to_atkSub"
+03072: 485  newinit 1
+03077: 486  newarray 2
+03081: 486  string "P_Delay_Frame_46"
+03086: 486  initelem_array 0
+03090: 486  string "P_Delay_Frame_4"
+03095: 486  initelem_array 1
+03099: 486  endinit
+03100: 486  initprop "_delay"
+03105: 487  string "P_Int_Sub_To"
+03110: 487  initprop "_type"
+03115: 487  endinit
+03116: 487  initprop "_effect_to_intSub"
+03121: 487  endinit
+03122: 487  initprop "_attack"
+03127: 487  endinit
+03128: 487  initprop "lieren"
+03133: 493  newinit 1
+03138: 494  string "template.T_Remote_SS"
+03143: 494  initprop "extend"
+03148: 495  newinit 1
+03153: 496  string "Spawn"
+03158: 496  initprop "type"
+03163: 497  newinit 1
+03168: 498  newarray 2
+03172: 498  string "P_Delay_Frame_10"
+03177: 498  initelem_array 0
+03181: 498  string "P_Delay_Frame_5"
+03186: 498  initelem_array 1
+03190: 498  endinit
+03191: 498  initprop "_delay"
+03196: 499  string "P_Hurt_Back_Over"
+03201: 499  initprop "_type"
+03206: 499  endinit
+03207: 499  initprop "_hurt"
+03212: 501  newinit 1
+03217: 502  null
+03218: 502  initprop "_delay"
+03223: 503  string "P_TianYi_Effect_From"
+03228: 503  initprop "_type"
+03233: 503  endinit
+03234: 503  initprop "_effect_from"
+03239: 505  newinit 1
+03244: 506  newarray 2
+03248: 506  string "P_Delay_Frame_10"
+03253: 506  initelem_array 0
+03257: 506  string "P_Delay_Frame_5"
+03262: 506  initelem_array 1
+03266: 506  endinit
+03267: 506  initprop "_delay"
+03272: 507  string "P_TianYi_Effect_To"
+03277: 507  initprop "_type"
+03282: 507  endinit
+03283: 507  initprop "_effect_to"
+03288: 507  endinit
+03289: 507  initprop "_attack"
+03294: 507  endinit
+03295: 507  initprop "tianyi"
+03300: 512  newinit 1
+03305: 513  string "tianyi"
+03310: 513  initprop "extend"
+03315: 514  newinit 1
+03320: 515  string "Spawn"
+03325: 515  initprop "type"
+03330: 516  newinit 1
+03335: 517  newarray 2
+03339: 517  string "P_Delay_Frame_10"
+03344: 517  initelem_array 0
+03348: 517  string "P_Delay_Frame_5"
+03353: 517  initelem_array 1
+03357: 517  endinit
+03358: 517  initprop "_delay"
+03363: 518  string "P_Def_Sub_To"
+03368: 518  initprop "_type"
+03373: 518  endinit
+03374: 518  initprop "_effect_to1"
+03379: 520  newinit 1
+03384: 521  newarray 2
+03388: 521  string "P_Delay_Frame_10"
+03393: 521  initelem_array 0
+03397: 521  string "P_Delay_Frame_5"
+03402: 521  initelem_array 1
+03406: 521  endinit
+03407: 521  initprop "_delay"
+03412: 522  string "P_BuffSub_Effect_To"
+03417: 522  initprop "_type"
+03422: 522  endinit
+03423: 522  initprop "_effect_to2"
+03428: 522  endinit
+03429: 522  initprop "_attack"
+03434: 522  endinit
+03435: 522  initprop "tianyi_v3"
+03440: 527  newinit 1
+03445: 528  string "tianyi_v3"
+03450: 528  initprop "extend"
+03455: 528  endinit
+03456: 528  initprop "tianyi_v5"
+03461: 532  newinit 1
+03466: 533  string "tianyi_v3"
+03471: 533  initprop "extend"
+03476: 534  newinit 1
+03481: 535  string "Spawn"
+03486: 535  initprop "type"
+03491: 536  newinit 1
+03496: 537  newarray 2
+03500: 537  string "P_Delay_Frame_10"
+03505: 537  initelem_array 0
+03509: 537  string "P_Delay_Frame_5"
+03514: 537  initelem_array 1
+03518: 537  endinit
+03519: 537  initprop "_delay"
+03524: 539  null
+03525: 539  initprop "_type"
+03530: 539  endinit
+03531: 539  initprop "_effect_to3"
+03536: 539  endinit
+03537: 539  initprop "_attack"
+03542: 539  endinit
+03543: 539  initprop "tianyi_v5_yun"
+03548: 544  newinit 1
+03553: 545  string "template.T_Remote_SS"
+03558: 545  initprop "extend"
+03563: 546  newinit 1
+03568: 547  string "Spawn"
+03573: 547  initprop "type"
+03578: 548  newinit 1
+03583: 549  newarray 4
+03587: 549  string "P_Delay_Frame_10"
+03592: 549  initelem_array 0
+03596: 549  string "P_Delay_Frame_10"
+03601: 549  initelem_array 1
+03605: 549  string "P_Delay_Frame_10"
+03610: 549  initelem_array 2
+03614: 549  string "P_Delay_Frame_3"
+03619: 549  initelem_array 3
+03623: 549  endinit
+03624: 549  initprop "_delay"
+03629: 550  string "P_Hurt_Back_Over"
+03634: 550  initprop "_type"
+03639: 550  endinit
+03640: 550  initprop "_hurt"
+03645: 556  newinit 1
+03650: 557  null
+03651: 557  initprop "_delay"
+03656: 558  string "P_Gongxin_Effect_From"
+03661: 558  initprop "_type"
+03666: 558  endinit
+03667: 558  initprop "_effect_from"
+03672: 560  newinit 1
+03677: 561  null
+03678: 561  initprop "_delay"
+03683: 562  string "P_Gongxin_Effect_From_Mid"
+03688: 562  initprop "_type"
+03693: 562  endinit
+03694: 562  initprop "_effect_from1"
+03699: 564  newinit 1
+03704: 565  null
+03705: 565  initprop "_delay"
+03710: 566  string "P_Gongxin_Effect_To1"
+03715: 566  initprop "_type"
+03720: 566  endinit
+03721: 566  initprop "_effect_to"
+03726: 566  endinit
+03727: 566  initprop "_attack"
+03732: 566  endinit
+03733: 566  initprop "gongxin"
+03738: 571  newinit 1
+03743: 572  string "template.T_Remote_SS"
+03748: 572  initprop "extend"
+03753: 573  newinit 1
+03758: 574  string "Spawn"
+03763: 574  initprop "type"
+03768: 575  newinit 1
+03773: 576  newarray 4
+03777: 576  string "P_Delay_Frame_10"
+03782: 576  initelem_array 0
+03786: 576  string "P_Delay_Frame_10"
+03791: 576  initelem_array 1
+03795: 576  string "P_Delay_Frame_10"
+03800: 576  initelem_array 2
+03804: 576  string "P_Delay_Frame_7"
+03809: 576  initelem_array 3
+03813: 576  endinit
+03814: 576  initprop "_delay"
+03819: 577  string "P_Hurt_Back_Over"
+03824: 577  initprop "_type"
+03829: 577  endinit
+03830: 577  initprop "_hurt"
+03835: 579  newinit 1
+03840: 580  null
+03841: 580  initprop "_delay"
+03846: 581  string "P_XianZhen_Effect_From"
+03851: 581  initprop "_type"
+03856: 581  endinit
+03857: 581  initprop "_effect_from"
+03862: 583  newinit 1
+03867: 584  null
+03868: 584  initprop "_delay"
+03873: 585  string "P_XianZhen_Effect_To"
+03878: 585  initprop "_type"
+03883: 585  endinit
+03884: 585  initprop "_effect_to"
+03889: 585  endinit
+03890: 585  initprop "_attack"
+03895: 585  endinit
+03896: 585  initprop "xianzhen"
+03901: 590  newinit 1
+03906: 591  string "template.T_Remote_SS"
+03911: 591  initprop "extend"
+03916: 592  newinit 1
+03921: 594  newinit 1
+03926: 595  name "xs"
+03931: 595  getprop "Constant_FightScene_HpsType_Average"
+03936: 595  initprop "type"
+03941: 595  endinit
+03942: 595  initprop "hps"
+03947: 597  int8 2
+03949: 597  initprop "loopNum"
+03954: 597  endinit
+03955: 597  initprop "property"
+03960: 599  newinit 1
+03965: 600  string "Spawn"
+03970: 600  initprop "type"
+03975: 601  newinit 1
+03980: 602  newarray 2
+03984: 602  string "P_Delay_Frame_5"
+03989: 602  initelem_array 0
+03993: 602  string "P_Delay_Frame_1"
+03998: 602  initelem_array 1
+04002: 602  endinit
+04003: 602  initprop "_delay"
+04008: 603  string "P_Hurt_Hit"
+04013: 603  initprop "_type"
+04018: 603  endinit
+04019: 603  initprop "_hurt"
+04024: 605  newinit 1
+04029: 606  newarray 2
+04033: 606  string "P_Delay_Frame_10"
+04038: 606  initelem_array 0
+04042: 606  string "P_Delay_Frame_5"
+04047: 606  initelem_array 1
+04051: 606  endinit
+04052: 606  initprop "_delay"
+04057: 607  string "P_Hurt_Back_Over"
+04062: 607  initprop "_type"
+04067: 607  endinit
+04068: 607  initprop "_hurt_over"
+04073: 609  newinit 1
+04078: 610  null
+04079: 610  initprop "_delay"
+04084: 611  string "P_ShenSu_Effect_From"
+04089: 611  initprop "_type"
+04094: 611  endinit
+04095: 611  initprop "_effect_from"
+04100: 613  newinit 1
+04105: 614  null
+04106: 614  initprop "_delay"
+04111: 615  string "P_ShenSu_Effect_To"
+04116: 615  initprop "_type"
+04121: 615  endinit
+04122: 615  initprop "_effect_to"
+04127: 615  endinit
+04128: 615  initprop "_attack"
+04133: 615  endinit
+04134: 615  initprop "shensu"
+04139: 621  newinit 1
+04144: 622  string "template.T_Remote_Super"
+04149: 622  initprop "extend"
+04154: 623  newinit 1
+04159: 624  string "Spawn"
+04164: 624  initprop "type"
+04169: 625  newinit 1
+04174: 626  string "P_Delay_Frame_2"
+04179: 626  initprop "_delay"
+04184: 627  string "P_Hurt_Back_Over"
+04189: 627  initprop "_type"
+04194: 627  endinit
+04195: 627  initprop "_hurt"
+04200: 629  newinit 1
+04205: 630  null
+04206: 630  initprop "_delay"
+04211: 631  string "P_XiaoQi_Effect_To"
+04216: 631  initprop "_type"
+04221: 631  endinit
+04222: 631  initprop "_effect_to"
+04227: 631  endinit
+04228: 631  initprop "_attack"
+04233: 631  endinit
+04234: 631  initprop "xiaoqi"
+04239: 637  newinit 1
+04244: 638  string "template.T_Remote_SS"
+04249: 638  initprop "extend"
+04254: 639  newinit 1
+04259: 640  newinit 1
+04264: 641  string "P_Delay_Frame_68"
+04269: 641  initprop "_delay"
+04274: 642  string "P_Hurt_Fly_Over"
+04279: 642  initprop "_type"
+04284: 642  endinit
+04285: 642  initprop "_hurt"
+04290: 644  newinit 1
+04295: 645  null
+04296: 645  initprop "_delay"
+04301: 646  string "P_LieGong_Effect_From"
+04306: 646  initprop "_type"
+04311: 646  endinit
+04312: 646  initprop "_effect_from"
+04317: 648  newinit 1
+04322: 649  string "P_Delay_Frame_68"
+04327: 649  initprop "_delay"
+04332: 650  string "P_LieGong_Effect_To"
+04337: 650  initprop "_type"
+04342: 650  endinit
+04343: 650  initprop "_effect_to"
+04348: 650  endinit
+04349: 650  initprop "_attack"
+04354: 650  endinit
+04355: 650  initprop "liegong"
+04360: 654  newinit 1
+04365: 655  string "liegong"
+04370: 655  initprop "extend"
+04375: 655  endinit
+04376: 655  initprop "shenggong"
+04381: 658  newinit 1
+04386: 659  string "liegong"
+04391: 659  initprop "extend"
+04396: 660  newinit 1
+04401: 661  newinit 1
+04406: 662  string "P_Delay_Frame_68"
+04411: 662  initprop "_delay"
+04416: 663  string "P_Hurt_Fly_Over"
+04421: 663  initprop "_type"
+04426: 663  endinit
+04427: 663  initprop "_hurt"
+04432: 665  newinit 1
+04437: 666  null
+04438: 666  initprop "_delay"
+04443: 667  string "P_SpLieGong_Effect_From"
+04448: 667  initprop "_type"
+04453: 667  endinit
+04454: 667  initprop "_effect_from"
+04459: 669  newinit 1
+04464: 670  string "P_Delay_Frame_30"
+04469: 670  initprop "_delay"
+04474: 671  string "P_SpLieGong_Effect_To"
+04479: 671  initprop "_type"
+04484: 671  endinit
+04485: 671  initprop "_effect_to"
+04490: 671  endinit
+04491: 671  initprop "_attack"
+04496: 671  endinit
+04497: 671  initprop "spliegong"
+04502: 676  newinit 1
+04507: 677  newinit 1
+04512: 678  string "Spawn"
+04517: 678  initprop "type"
+04522: 679  newinit 1
+04527: 680  string "P_Delay_Frame_4"
+04532: 680  initprop "_delay"
+04537: 681  string "P_Hurt_Back_Over"
+04542: 681  initprop "_type"
+04547: 681  endinit
+04548: 681  initprop "_hurt"
+04553: 683  newinit 1
+04558: 684  null
+04559: 684  initprop "_delay"
+04564: 685  string "P_Bow_Effect_To"
+04569: 685  initprop "_type"
+04574: 685  endinit
+04575: 685  initprop "_effect_to"
+04580: 687  newinit 1
+04585: 688  string "P_Bow_Effect_From"
+04590: 688  initprop "_type"
+04595: 688  endinit
+04596: 688  initprop "_effect_from"
+04601: 688  endinit
+04602: 688  initprop "_attack"
+04607: 688  endinit
+04608: 688  initprop "spliegong_extra"
+04613: 694  newinit 1
+04618: 695  string "template.T_Remote_Super"
+04623: 695  initprop "extend"
+04628: 696  newinit 1
+04633: 697  newinit 1
+04638: 698  newarray 2
+04642: 698  string "P_Delay_Frame_55"
+04647: 698  initelem_array 0
+04651: 698  string "P_Delay_Frame_2"
+04656: 698  initelem_array 1
+04660: 698  endinit
+04661: 698  initprop "_delay"
+04666: 699  string "P_Hurt_Back_Over"
+04671: 699  initprop "_type"
+04676: 699  endinit
+04677: 699  initprop "_hurt"
+04682: 701  newinit 1
+04687: 702  null
+04688: 702  initprop "_delay"
+04693: 703  string "P_XingWu_Effect_From"
+04698: 703  initprop "_type"
+04703: 703  endinit
+04704: 703  initprop "_effect_from"
+04709: 705  newinit 1
+04714: 706  newarray 2
+04718: 706  string "P_Delay_Frame_30"
+04723: 706  initelem_array 0
+04727: 706  string "P_Delay_Frame_10"
+04732: 706  initelem_array 1
+04736: 706  endinit
+04737: 706  initprop "_delay"
+04742: 707  string "P_XingWu_Effect_To"
+04747: 707  initprop "_type"
+04752: 707  endinit
+04753: 707  initprop "_effect_to"
+04758: 707  endinit
+04759: 707  initprop "_attack"
+04764: 707  endinit
+04765: 707  initprop "xingwu"
+04770: 714  newinit 1
+04775: 715  string "template.T_Remote_SS"
+04780: 715  initprop "extend"
+04785: 716  newinit 1
+04790: 717  newinit 1
+04795: 718  newarray 2
+04799: 718  string "P_Delay_Frame_3"
+04804: 718  initelem_array 0
+04808: 718  string "P_Delay_Frame_4"
+04813: 718  initelem_array 1
+04817: 718  endinit
+04818: 718  initprop "_delay"
+04823: 719  string "P_Hurt_Back_Over"
+04828: 719  initprop "_type"
+04833: 719  endinit
+04834: 719  initprop "_hurt"
+04839: 721  newinit 1
+04844: 722  string "P_HuoJi_Effect_To_Mid"
+04849: 722  initprop "_type"
+04854: 722  endinit
+04855: 722  initprop "_effect"
+04860: 724  newinit 1
+04865: 725  null
+04866: 725  initprop "_type"
+04871: 725  endinit
+04872: 725  initprop "_effect_from"
+04877: 727  newinit 1
+04882: 728  string "P_Fire_Effect_To"
+04887: 728  initprop "_type"
+04892: 728  endinit
+04893: 728  initprop "_effect_to"
+04898: 730  newinit 1
+04903: 731  null
+04904: 731  initprop "_delay"
+04909: 732  string "P_ShuangXiong_Effect_To_BaoJi"
+04914: 732  initprop "_type"
+04919: 732  endinit
+04920: 732  initprop "_effect_to1"
+04925: 732  endinit
+04926: 732  initprop "_attack"
+04931: 732  endinit
+04932: 732  initprop "huoji"
+04937: 741  newinit 1
+04942: 742  newinit 1
+04947: 743  newinit 1
+04952: 744  null
+04953: 744  initprop "_delay"
+04958: 745  null
+04959: 745  initprop "_type"
+04964: 745  endinit
+04965: 745  initprop "_effect_to"
+04970: 745  endinit
+04971: 745  initprop "_attack"
+04976: 745  endinit
+04977: 745  initprop "huoji_enter"
+04982: 749  newinit 1
+04987: 750  newinit 1
+04992: 751  string "Spawn"
+04997: 751  initprop "type"
+05002: 752  newinit 1
+05007: 753  newarray 3
+05011: 753  string "P_Delay_Frame_10"
+05016: 753  initelem_array 0
+05020: 753  string "P_Delay_Frame_4"
+05025: 753  initelem_array 1
+05029: 753  string "P_Delay_Frame_4"
+05034: 753  initelem_array 2
+05038: 753  endinit
+05039: 753  initprop "_delay"
+05044: 754  string "P_Hurt_Back_Over"
+05049: 754  initprop "_type"
+05054: 754  endinit
+05055: 754  initprop "_hurt"
+05060: 756  newinit 1
+05065: 757  string "P_WuQian_Effect_From_Near"
+05070: 757  initprop "_type"
+05075: 757  endinit
+05076: 757  initprop "_effect"
+05081: 759  newinit 1
+05086: 760  newarray 3
+05090: 760  string "P_Delay_Frame_10"
+05095: 760  initelem_array 0
+05099: 760  string "P_Delay_Frame_4"
+05104: 760  initelem_array 1
+05108: 760  string "P_Delay_Frame_4"
+05113: 760  initelem_array 2
+05117: 760  endinit
+05118: 760  initprop "_delay"
+05123: 761  string "P_WuQian_Effect_To"
+05128: 761  initprop "_type"
+05133: 761  endinit
+05134: 761  initprop "_effect_to"
+05139: 761  endinit
+05140: 761  initprop "_attack"
+05145: 761  endinit
+05146: 761  initprop "shenji"
+05151: 766  newinit 1
+05156: 767  string "template.T_Remote_SS"
+05161: 767  initprop "extend"
+05166: 768  newinit 1
+05171: 769  newinit 1
+05176: 770  newarray 2
+05180: 770  string "P_Delay_Frame_10"
+05185: 770  initelem_array 0
+05189: 770  string "P_Delay_Frame_10"
+05194: 770  initelem_array 1
+05198: 770  endinit
+05199: 770  initprop "_delay"
+05204: 771  string "P_Hurt_Back_Over_IDLE"
+05209: 771  initprop "_type"
+05214: 771  endinit
+05215: 771  initprop "_hurt"
+05220: 774  newinit 1
+05225: 775  string "P_Fire_Effect_From"
+05230: 775  initprop "_type"
+05235: 775  endinit
+05236: 775  initprop "_effect_from"
+05241: 778  newinit 1
+05246: 779  null
+05247: 779  initprop "_type"
+05252: 779  endinit
+05253: 779  initprop "_effect_to"
+05258: 779  endinit
+05259: 779  initprop "_attack"
+05264: 779  endinit
+05265: 779  initprop "yanyan"
+05270: 784  newinit 1
+05275: 785  newinit 1
+05280: 786  string "Spawn"
+05285: 786  initprop "type"
+05290: 787  newinit 1
+05295: 788  newarray 1
+05299: 788  string "P_Delay_Frame_30"
+05304: 788  initelem_array 0
+05308: 788  endinit
+05309: 788  initprop "_delay"
+05314: 790  string "P_Hurt_Back_Over"
+05319: 790  initprop "_type"
+05324: 790  endinit
+05325: 790  initprop "_hurt"
+05330: 792  newinit 1
+05335: 793  string "P_YanYan_Effect_From_Mid"
+05340: 793  initprop "_type"
+05345: 793  endinit
+05346: 793  initprop "_effect_from"
+05351: 793  endinit
+05352: 793  initprop "_attack"
+05357: 793  endinit
+05358: 793  initprop "yanyan_extra"
+05363: 802  newinit 1
+05368: 803  string "template.T_Remote_SS"
+05373: 803  initprop "extend"
+05378: 804  newinit 1
+05383: 805  newinit 1
+05388: 806  newarray 3
+05392: 806  string "P_Delay_Frame_10"
+05397: 806  initelem_array 0
+05401: 806  string "P_Delay_Frame_7"
+05406: 806  initelem_array 1
+05410: 806  string "P_Delay_Frame_1"
+05415: 806  initelem_array 2
+05419: 806  endinit
+05420: 806  initprop "_delay"
+05425: 807  string "P_Hurt_Back_Over_IDLE"
+05430: 807  initprop "_type"
+05435: 807  endinit
+05436: 807  initprop "_hurt"
+05441: 810  newinit 1
+05446: 811  string "P_FuLuan_Effect_From"
+05451: 811  initprop "_type"
+05456: 811  endinit
+05457: 811  initprop "_effect_from"
+05462: 813  newinit 1
+05467: 814  null
+05468: 814  initprop "_type"
+05473: 814  endinit
+05474: 814  initprop "_effect_to"
+05479: 814  endinit
+05480: 814  initprop "_attack"
+05485: 814  endinit
+05486: 814  initprop "fuluan"
+05491: 819  newinit 1
+05496: 820  newinit 1
+05501: 821  string "Spawn"
+05506: 821  initprop "type"
+05511: 822  newinit 1
+05516: 823  newarray 2
+05520: 823  string "P_Delay_Frame_10"
+05525: 823  initelem_array 0
+05529: 823  string "P_Delay_Frame_30"
+05534: 823  initelem_array 1
+05538: 823  endinit
+05539: 823  initprop "_delay"
+05544: 824  string "P_Hurt_Back_Over_FL"
+05549: 824  initprop "_type"
+05554: 824  endinit
+05555: 824  initprop "_hurt"
+05560: 826  newinit 1
+05565: 827  string "P_FuLuan_Effect_To"
+05570: 827  initprop "_type"
+05575: 827  endinit
+05576: 827  initprop "_effect_to"
+05581: 827  endinit
+05582: 827  initprop "_attack"
+05587: 827  endinit
+05588: 827  initprop "fuluan_extra"
+05593: 835  newinit 1
+05598: 836  newinit 1
+05603: 837  string "Spawn"
+05608: 837  initprop "type"
+05613: 838  newinit 1
+05618: 839  null
+05619: 839  initprop "_delay"
+05624: 840  string "P_Hp_Add_To"
+05629: 840  initprop "_type"
+05634: 840  endinit
+05635: 840  initprop "_buff_to"
+05640: 840  endinit
+05641: 840  initprop "_attack"
+05646: 840  endinit
+05647: 840  initprop "fuluan_hp_add"
+05652: 849  newinit 1
+05657: 850  string "huoji"
+05662: 850  initprop "extend"
+05667: 851  newinit 1
+05672: 853  newinit 1
+05677: 854  string "P_HuoJi_Effect_To_Mid_RY"
+05682: 854  initprop "_type"
+05687: 854  endinit
+05688: 854  initprop "_effect1"
+05693: 854  endinit
+05694: 854  initprop "_attack"
+05699: 854  endinit
+05700: 854  initprop "huoji_new"
+05705: 860  newinit 1
+05710: 861  string "template.T_Remote_SS"
+05715: 861  initprop "extend"
+05720: 863  newinit 1
+05725: 864  newinit 1
+05730: 865  null
+05731: 865  initprop "_delay"
+05736: 866  null
+05737: 866  initprop "_type"
+05742: 866  endinit
+05743: 866  initprop "_hurt"
+05748: 869  newinit 1
+05753: 870  null
+05754: 870  initprop "_delay"
+05759: 871  string "P_JianYing_Effect_From"
+05764: 871  initprop "_type"
+05769: 871  endinit
+05770: 871  initprop "_effect_from"
+05775: 873  newinit 1
+05780: 874  null
+05781: 874  initprop "_delay"
+05786: 875  null
+05787: 875  initprop "_type"
+05792: 875  endinit
+05793: 875  initprop "_effect_to"
+05798: 875  endinit
+05799: 875  initprop "_attack"
+05804: 875  endinit
+05805: 875  initprop "jianying"
+05810: 894  newinit 1
+05815: 895  string "template.T_Remote_SS"
+05820: 895  initprop "extend"
+05825: 903  newinit 1
+05830: 904  string "Sequence"
+05835: 904  initprop "type"
+05840: 905  newinit 1
+05845: 906  null
+05846: 906  initprop "_delay"
+05851: 907  null
+05852: 907  initprop "_type"
+05857: 907  endinit
+05858: 907  initprop "_hurt"
+05863: 910  newinit 1
+05868: 911  null
+05869: 911  initprop "_delay"
+05874: 912  string "P_JianYing_Effect_From"
+05879: 912  initprop "_type"
+05884: 912  endinit
+05885: 912  initprop "_effect_from"
+05890: 914  newinit 1
+05895: 915  null
+05896: 915  initprop "_delay"
+05901: 916  null
+05902: 916  initprop "_type"
+05907: 916  endinit
+05908: 916  initprop "_effect_to"
+05913: 919  newinit 1
+05918: 920  newarray 1
+05922: 920  string "P_Delay_Frame_10"
+05927: 920  initelem_array 0
+05931: 920  endinit
+05932: 920  initprop "_delay"
+05937: 921  string "P_JianYing_Cure_From"
+05942: 921  initprop "_type"
+05947: 921  endinit
+05948: 921  initprop "_effect_from1"
+05953: 921  endinit
+05954: 921  initprop "_attack"
+05959: 921  endinit
+05960: 921  initprop "jianying_v5"
+05965: 926  newinit 1
+05970: 927  string "template.T_Remote_Super"
+05975: 927  initprop "extend"
+05980: 928  newinit 1
+05985: 929  newinit 1
+05990: 930  string "P_Delay_Frame_7"
+05995: 930  initprop "_delay"
+06000: 931  string "P_Hurt_Back_Over"
+06005: 931  initprop "_type"
+06010: 931  endinit
+06011: 931  initprop "_hurt"
+06016: 933  newinit 1
+06021: 934  string "P_QiangWu_Effect_To_Far"
+06026: 934  initprop "_type"
+06031: 934  endinit
+06032: 934  initprop "_effect_far"
+06037: 936  newinit 1
+06042: 937  string "P_QiangWu_Effect_To_Mid"
+06047: 937  initprop "_type"
+06052: 937  endinit
+06053: 937  initprop "_effect_mid"
+06058: 939  newinit 1
+06063: 940  null
+06064: 940  initprop "_type"
+06069: 940  endinit
+06070: 940  initprop "_effect_from"
+06075: 942  newinit 1
+06080: 943  string "P_Delay_Frame_4"
+06085: 943  initprop "_delay"
+06090: 944  string "P_QiangWu_Effect_To"
+06095: 944  initprop "_type"
+06100: 944  endinit
+06101: 944  initprop "_effect_to"
+06106: 944  endinit
+06107: 944  initprop "_attack"
+06112: 944  endinit
+06113: 944  initprop "qiangwu"
+06118: 950  newinit 1
+06123: 951  string "template.T_Remote_SS"
+06128: 951  initprop "extend"
+06133: 954  newinit 1
+06138: 955  newinit 1
+06143: 956  newarray 5
+06147: 956  string "P_Delay_Frame_10"
+06152: 956  initelem_array 0
+06156: 956  string "P_Delay_Frame_10"
+06161: 956  initelem_array 1
+06165: 956  string "P_Delay_Frame_10"
+06170: 956  initelem_array 2
+06174: 956  string "P_Delay_Frame_10"
+06179: 956  initelem_array 3
+06183: 956  string "P_Delay_Frame_1"
+06188: 956  initelem_array 4
+06192: 956  endinit
+06193: 956  initprop "_delay"
+06198: 957  newinit 1
+06203: 958  string "Spawn"
+06208: 958  initprop "type"
+06213: 958  zero
+06214: 959  string "P_Hurt_Back_Over_From"
+06219: 959  initelem
+06220: 959  one
+06221: 960  string "P_Hurt_Fly_Over"
+06226: 960  initelem
+06227: 960  endinit
+06228: 960  initprop "_type"
+06233: 960  endinit
+06234: 960  initprop "_hurt"
+06239: 963  newinit 1
+06244: 964  string "P_ShenFen_Effect_From"
+06249: 964  initprop "_type"
+06254: 964  endinit
+06255: 964  initprop "_effect_from"
+06260: 966  newinit 1
+06265: 967  string "P_ShenFen_Effect_To"
+06270: 967  initprop "_type"
+06275: 967  endinit
+06276: 967  initprop "_effect_to"
+06281: 967  endinit
+06282: 967  initprop "_attack"
+06287: 967  endinit
+06288: 967  initprop "shenfen"
+06293: 972  newinit 1
+06298: 973  string "template.T_Super"
+06303: 973  initprop "extend"
+06308: 974  newinit 1
+06313: 975  string "Spawn"
+06318: 975  initprop "type"
+06323: 976  newarray 1
+06327: 976  string "P_Fu_Effect_From"
+06332: 976  initelem_array 0
+06336: 976  endinit
+06337: 976  initprop "_effect_from"
+06342: 977  newarray 3
+06346: 977  string "P_Delay_Frame_10"
+06351: 977  initelem_array 0
+06355: 977  string "P_Delay_Frame_4"
+06360: 977  initelem_array 1
+06364: 977  string "P_Hurt_Normal_Over"
+06369: 977  initelem_array 2
+06373: 977  endinit
+06374: 977  initprop "_hurt"
+06379: 977  endinit
+06380: 977  initprop "_main"
+06385: 977  endinit
+06386: 977  initprop "fu"
+06391: 981  newinit 1
+06396: 982  string "template.T_Remote_SS"
+06401: 982  initprop "extend"
+06406: 983  newinit 1
+06411: 993  newinit 1
+06416: 994  name "xs"
+06421: 994  getprop "Constant_FightScene_HpsType_Average"
+06426: 994  initprop "type"
+06431: 994  endinit
+06432: 994  initprop "hps"
+06437: 996  int8 3
+06439: 996  initprop "loopNum"
+06444: 996  endinit
+06445: 996  initprop "property"
+06450: 999  newinit 1
+06455:1000  null
+06456:1000  initprop "_hurt"
+06461:1001  newinit 1
+06466:1002  newarray 2
+06470:1002  string "P_Delay_Frame_30"
+06475:1002  initelem_array 0
+06479:1002  string "P_Delay_Frame_5"
+06484:1002  initelem_array 1
+06488:1002  endinit
+06489:1002  initprop "_delay"
+06494:1003  string "P_Hurt_Hit"
+06499:1003  initprop "_type"
+06504:1004  newinit 1
+06509:1005  zero
+06510:1005  initprop "idx"
+06515:1005  endinit
+06516:1005  initprop "params"
+06521:1005  endinit
+06522:1005  initprop "_hurt0"
+06527:1008  newinit 1
+06532:1009  newarray 2
+06536:1009  string "P_Delay_Frame_37"
+06541:1009  initelem_array 0
+06545:1009  string "P_Delay_Frame_2"
+06550:1009  initelem_array 1
+06554:1009  endinit
+06555:1009  initprop "_delay"
+06560:1010  string "P_Hurt_Hit"
+06565:1010  initprop "_type"
+06570:1011  newinit 1
+06575:1012  one
+06576:1012  initprop "idx"
+06581:1012  endinit
+06582:1012  initprop "params"
+06587:1012  endinit
+06588:1012  initprop "_hurt1"
+06593:1015  newinit 1
+06598:1016  newarray 2
+06602:1016  string "P_Delay_Frame_50"
+06607:1016  initelem_array 0
+06611:1016  string "P_Delay_Frame_3"
+06616:1016  initelem_array 1
+06620:1016  endinit
+06621:1016  initprop "_delay"
+06626:1017  string "P_Hurt_Fly_Over"
+06631:1017  initprop "_type"
+06636:1018  newinit 1
+06641:1019  int8 2
+06643:1019  initprop "idx"
+06648:1019  endinit
+06649:1019  initprop "params"
+06654:1019  endinit
+06655:1019  initprop "_hurt2"
+06660:1022  newinit 1
+06665:1023  string "P_ShenFen_Effect_From"
+06670:1023  initprop "_type"
+06675:1023  endinit
+06676:1023  initprop "_effect_from"
+06681:1025  newinit 1
+06686:1026  string "P_SheFu_Effect_To0_Far"
+06691:1026  initprop "_type"
+06696:1026  endinit
+06697:1026  initprop "_effect_to0_far"
+06702:1028  newinit 1
+06707:1029  string "P_SheFu_Effect_To1"
+06712:1029  initprop "_type"
+06717:1029  endinit
+06718:1029  initprop "_effect_to1"
+06723:1029  endinit
+06724:1029  initprop "_attack"
+06729:1029  endinit
+06730:1029  initprop "shefu"
+06735:1038  newinit 1
+06740:1039  string "template.T_Remote_SS"
+06745:1039  initprop "extend"
+06750:1040  newinit 1
+06755:1041  newinit 1
+06760:1042  newarray 2
+06764:1042  string "P_Delay_Frame_10"
+06769:1042  initelem_array 0
+06773:1042  string "P_Delay_Frame_55"
+06778:1042  initelem_array 1
+06782:1042  endinit
+06783:1042  initprop "_delay"
+06788:1043  newarray 1
+06792:1043  string "P_Hurt_Fly_Over"
+06797:1043  initelem_array 0
+06801:1043  endinit
+06802:1043  initprop "_type"
+06807:1043  endinit
+06808:1043  initprop "_hurt"
+06813:1045  newinit 1
+06818:1046  null
+06819:1046  initprop "_type"
+06824:1046  endinit
+06825:1046  initprop "_effect"
+06830:1048  newinit 1
+06835:1049  string "P_YingHun_Effect_From"
+06840:1049  initprop "_type"
+06845:1049  endinit
+06846:1049  initprop "_effect_from"
+06851:1051  newinit 1
+06856:1052  string "P_YingHun_Effect_To"
+06861:1052  initprop "_type"
+06866:1052  endinit
+06867:1052  initprop "_effect_to"
+06872:1054  newinit 1
+06877:1055  newarray 2
+06881:1055  string "P_Delay_Frame_10"
+06886:1055  initelem_array 0
+06890:1055  string "P_Delay_Frame_55"
+06895:1055  initelem_array 1
+06899:1055  endinit
+06900:1055  initprop "_delay"
+06905:1056  string "P_Def_Sub_To"
+06910:1056  initprop "_type"
+06915:1056  endinit
+06916:1056  initprop "_buff_to"
+06921:1058  newinit 1
+06926:1059  newarray 2
+06930:1059  string "P_Delay_Frame_10"
+06935:1059  initelem_array 0
+06939:1059  string "P_Delay_Frame_55"
+06944:1059  initelem_array 1
+06948:1059  endinit
+06949:1059  initprop "_delay"
+06954:1060  string "P_BuffSub_Effect_To"
+06959:1060  initprop "_type"
+06964:1060  endinit
+06965:1060  initprop "_buff_to1"
+06970:1060  endinit
+06971:1060  initprop "_attack"
+06976:1060  endinit
+06977:1060  initprop "yinghun"
+06982:1065  newinit 1
+06987:1066  string "template.T_Remote_SS"
+06992:1066  initprop "extend"
+06997:1067  newinit 1
+07002:1068  newinit 1
+07007:1069  newarray 3
+07011:1069  string "P_Delay_Frame_10"
+07016:1069  initelem_array 0
+07020:1069  string "P_Delay_Frame_4"
+07025:1069  initelem_array 1
+07029:1069  string "P_Delay_Frame_4"
+07034:1069  initelem_array 2
+07038:1069  endinit
+07039:1069  initprop "_delay"
+07044:1070  string "P_Hurt_Fly_Over"
+07049:1070  initprop "_type"
+07054:1070  endinit
+07055:1070  initprop "_hurt"
+07060:1072  newinit 1
+07065:1073  string "P_WuShuang_Effect_From_Mid"
+07070:1073  initprop "_type"
+07075:1073  endinit
+07076:1073  initprop "_effect"
+07081:1075  newinit 1
+07086:1076  null
+07087:1076  initprop "_type"
+07092:1076  endinit
+07093:1076  initprop "_effect_from"
+07098:1078  newinit 1
+07103:1079  string "P_WuShuang_Effect_To"
+07108:1079  initprop "_type"
+07113:1079  endinit
+07114:1079  initprop "_effect_to"
+07119:1079  endinit
+07120:1079  initprop "_attack"
+07125:1079  endinit
+07126:1079  initprop "wushuang"
+07131:1084  newinit 1
+07136:1085  string "wushuang"
+07141:1085  initprop "extend"
+07146:1086  newinit 1
+07151:1088  newinit 1
+07156:1089  newarray 3
+07160:1089  string "P_Delay_Frame_10"
+07165:1089  initelem_array 0
+07169:1089  string "P_Delay_Frame_4"
+07174:1089  initelem_array 1
+07178:1089  string "P_Delay_Frame_4"
+07183:1089  initelem_array 2
+07187:1089  endinit
+07188:1089  initprop "_delay"
+07193:1090  string "P_Atk_Sub_To_NoBak"
+07198:1090  initprop "_type"
+07203:1090  endinit
+07204:1090  initprop "_buff"
+07209:1092  newinit 1
+07214:1093  newarray 3
+07218:1093  string "P_Delay_Frame_10"
+07223:1093  initelem_array 0
+07227:1093  string "P_Delay_Frame_4"
+07232:1093  initelem_array 1
+07236:1093  string "P_Delay_Frame_4"
+07241:1093  initelem_array 2
+07245:1093  endinit
+07246:1093  initprop "_delay"
+07251:1094  string "P_WuShuangV3_Effect_To"
+07256:1094  initprop "_type"
+07261:1094  endinit
+07262:1094  initprop "_effect_to1"
+07267:1094  endinit
+07268:1094  initprop "_attack"
+07273:1094  endinit
+07274:1094  initprop "wushuang_v3"
+07279:1099  newinit 1
+07284:1100  string "wushuang_v3"
+07289:1100  initprop "extend"
+07294:1100  endinit
+07295:1100  initprop "wushuang_v5"
+07300:1104  newinit 1
+07305:1105  string "template.T_Remote_SS"
+07310:1105  initprop "extend"
+07315:1106  newinit 1
+07320:1107  newinit 1
+07325:1108  newarray 3
+07329:1108  string "P_Delay_Frame_10"
+07334:1108  initelem_array 0
+07338:1108  string "P_Delay_Frame_4"
+07343:1108  initelem_array 1
+07347:1108  string "P_Delay_Frame_4"
+07352:1108  initelem_array 2
+07356:1108  endinit
+07357:1108  initprop "_delay"
+07362:1109  string "P_Hurt_Back_Over"
+07367:1109  initprop "_type"
+07372:1109  endinit
+07373:1109  initprop "_hurt"
+07378:1111  newinit 1
+07383:1112  string "P_WuQian_Effect_From_Near"
+07388:1112  initprop "_type"
+07393:1112  endinit
+07394:1112  initprop "_effect"
+07399:1114  newinit 1
+07404:1115  null
+07405:1115  initprop "_type"
+07410:1115  endinit
+07411:1115  initprop "_effect_from"
+07416:1117  newinit 1
+07421:1118  newarray 3
+07425:1118  string "P_Delay_Frame_10"
+07430:1118  initelem_array 0
+07434:1118  string "P_Delay_Frame_4"
+07439:1118  initelem_array 1
+07443:1118  string "P_Delay_Frame_4"
+07448:1118  initelem_array 2
+07452:1118  endinit
+07453:1118  initprop "_delay"
+07458:1119  string "P_WuQian_Effect_To"
+07463:1119  initprop "_type"
+07468:1119  endinit
+07469:1119  initprop "_effect_to"
+07474:1119  endinit
+07475:1119  initprop "_attack"
+07480:1119  endinit
+07481:1119  initprop "wuqian"
+07486:1124  newinit 1
+07491:1125  string "template.T_Remote_SS"
+07496:1125  initprop "extend"
+07501:1126  newinit 1
+07506:1127  newinit 1
+07511:1128  newarray 2
+07515:1128  string "P_Delay_Frame_30"
+07520:1128  initelem_array 0
+07524:1128  string "P_Delay_Frame_1"
+07529:1128  initelem_array 1
+07533:1128  endinit
+07534:1128  initprop "_delay"
+07539:1129  string "P_Hurt_Back_Over_NFS"
+07544:1129  initprop "_type"
+07549:1129  endinit
+07550:1129  initprop "_hurt"
+07555:1131  newinit 1
+07560:1132  newarray 2
+07564:1132  string "P_Delay_Frame_30"
+07569:1132  initelem_array 0
+07573:1132  string "P_Delay_Frame_4"
+07578:1132  initelem_array 1
+07582:1132  endinit
+07583:1132  initprop "_delay"
+07588:1133  string "P_Atk_Add_To_FS"
+07593:1133  initprop "_type"
+07598:1133  endinit
+07599:1133  initprop "_buff_to"
+07604:1136  newinit 1
+07609:1137  string "P_JiJiang_Effect_From1"
+07614:1137  initprop "_type"
+07619:1137  endinit
+07620:1137  initprop "_effect_from"
+07625:1139  newinit 1
+07630:1140  string "P_JiJiang_Effect_To_FS"
+07635:1140  initprop "_type"
+07640:1140  endinit
+07641:1140  initprop "_effect_to_friendly"
+07646:1142  newinit 1
+07651:1143  string "P_JiJiang_Effect_To"
+07656:1143  initprop "_type"
+07661:1143  endinit
+07662:1143  initprop "_effect_to"
+07667:1143  endinit
+07668:1143  initprop "_attack"
+07673:1143  endinit
+07674:1143  initprop "jijiang"
+07679:1149  newinit 1
+07684:1150  string "jijiang"
+07689:1150  initprop "extend"
+07694:1150  endinit
+07695:1150  initprop "jijiang_v3"
+07700:1153  newinit 1
+07705:1154  string "jijiang"
+07710:1154  initprop "extend"
+07715:1155  newinit 1
+07720:1156  newarray 2
+07724:1156  string "P_Delay_Frame_10"
+07729:1156  initelem_array 0
+07733:1156  string "P_Delay_Frame_2"
+07738:1156  initelem_array 1
+07742:1156  endinit
+07743:1156  initprop "_delay"
+07748:1157  string "P_Hp_Add_To_FS"
+07753:1157  initprop "_type"
+07758:1157  endinit
+07759:1157  initprop "_effect_to1"
+07764:1157  endinit
+07765:1157  initprop "jijiang_v4"
+07770:1161  newinit 1
+07775:1162  string "jijiang"
+07780:1162  initprop "extend"
+07785:1163  newinit 1
+07790:1164  newarray 2
+07794:1164  string "P_Delay_Frame_10"
+07799:1164  initelem_array 0
+07803:1164  string "P_Delay_Frame_2"
+07808:1164  initelem_array 1
+07812:1164  endinit
+07813:1164  initprop "_delay"
+07818:1165  string "P_Hp_Add_To_FS"
+07823:1165  initprop "_type"
+07828:1165  endinit
+07829:1165  initprop "_effect_to2"
+07834:1165  endinit
+07835:1165  initprop "jijiang_v5"
+07840:1169  newinit 1
+07845:1170  string "template.T_Remote_SS"
+07850:1170  initprop "extend"
+07855:1171  newinit 1
+07860:1172  string "Spawn"
+07865:1172  initprop "type"
+07870:1174  newinit 1
+07875:1175  newarray 1
+07879:1175  string "P_Delay_Frame_30"
+07884:1175  initelem_array 0
+07888:1175  endinit
+07889:1175  initprop "_delay"
+07894:1176  string "P_Hurt_Back_Over"
+07899:1176  initprop "_type"
+07904:1176  endinit
+07905:1176  initprop "_hurt"
+07910:1179  newinit 1
+07915:1180  null
+07916:1180  initprop "_delay"
+07921:1181  string "P_JiJiang_Effect_From1_Mid"
+07926:1181  initprop "_type"
+07931:1181  endinit
+07932:1181  initprop "_effect"
+07937:1184  newinit 1
+07942:1185  null
+07943:1185  initprop "_delay"
+07948:1186  string "P_JiJiang_Effect_From2_Mid"
+07953:1186  initprop "_type"
+07958:1186  endinit
+07959:1186  initprop "_effect1"
+07964:1186  endinit
+07965:1186  initprop "_attack"
+07970:1186  endinit
+07971:1186  initprop "jijiang_v5_enter"
+07976:1191  newinit 1
+07981:1192  string "template.T_Remote_SS"
+07986:1192  initprop "extend"
+07991:1193  newinit 1
+07996:1194  string "Spawn"
+08001:1194  initprop "type"
+08006:1195  newinit 1
+08011:1196  null
+08012:1196  initprop "_delay"
+08017:1197  null
+08018:1197  initprop "_type"
+08023:1197  endinit
+08024:1197  initprop "_hurt"
+08029:1199  newinit 1
+08034:1200  null
+08035:1200  initprop "_delay"
+08040:1201  string "P_HuJia_Effect_From_Mid"
+08045:1201  initprop "_type"
+08050:1201  endinit
+08051:1201  initprop "_effect_from"
+08056:1203  newinit 1
+08061:1204  newarray 2
+08065:1204  string "P_Delay_Frame_30"
+08070:1204  initelem_array 0
+08074:1204  string "P_Delay_Frame_5"
+08079:1204  initelem_array 1
+08083:1204  endinit
+08084:1204  initprop "_delay"
+08089:1205  string "P_Nuyan_Begin_QJ"
+08094:1205  initprop "_type"
+08099:1205  endinit
+08100:1205  initprop "_effect_to"
+08105:1207  newinit 1
+08110:1208  newarray 2
+08114:1208  string "P_Delay_Frame_30"
+08119:1208  initelem_array 0
+08123:1208  string "P_Delay_Frame_5"
+08128:1208  initelem_array 1
+08132:1208  endinit
+08133:1208  initprop "_delay"
+08138:1209  newarray 2
+08142:1209  string "P_Nuyan_Effect_To"
+08147:1209  initelem_array 0
+08151:1209  string "P_Nuyan_End_Boom"
+08156:1209  initelem_array 1
+08160:1209  endinit
+08161:1209  initprop "_type"
+08166:1209  endinit
+08167:1209  initprop "_effect_to1"
+08172:1209  endinit
+08173:1209  initprop "_attack"
+08178:1209  endinit
+08179:1209  initprop "hujia_v4_enter"
+08184:1219  newinit 1
+08189:1220  string "hujia_v4_enter"
+08194:1220  initprop "extend"
+08199:1220  endinit
+08200:1220  initprop "hujia_v5_enter"
+08205:1223  newinit 1
+08210:1224  string "hujia"
+08215:1224  initprop "extend"
+08220:1224  endinit
+08221:1224  initprop "hujia_v4"
+08226:1228  newinit 1
+08231:1229  string "hujia"
+08236:1229  initprop "extend"
+08241:1229  endinit
+08242:1229  initprop "hujia_v5"
+08247:1246  newinit 1
+08252:1247  newinit 1
+08257:1248  string "Spawn"
+08262:1248  initprop "type"
+08267:1249  newinit 1
+08272:1250  newarray 3
+08276:1250  string "P_Delay_Frame_10"
+08281:1250  initelem_array 0
+08285:1250  string "P_Delay_Frame_4"
+08290:1250  initelem_array 1
+08294:1250  string "P_Delay_Frame_4"
+08299:1250  initelem_array 2
+08303:1250  endinit
+08304:1250  initprop "_delay"
+08309:1251  string "P_Hurt_Back_Over_FS"
+08314:1251  initprop "_type"
+08319:1251  endinit
+08320:1251  initprop "_hurt"
+08325:1253  newinit 1
+08330:1254  null
+08331:1254  initprop "_type"
+08336:1254  endinit
+08337:1254  initprop "_effect_from"
+08342:1256  newinit 1
+08347:1257  newarray 3
+08351:1257  string "P_Delay_Frame_10"
+08356:1257  initelem_array 0
+08360:1257  string "P_Delay_Frame_4"
+08365:1257  initelem_array 1
+08369:1257  string "P_Delay_Frame_4"
+08374:1257  initelem_array 2
+08378:1257  endinit
+08379:1257  initprop "_delay"
+08384:1258  string "P_Hp_Add_To_NOFS"
+08389:1258  initprop "_type"
+08394:1258  endinit
+08395:1258  initprop "_effect_to"
+08400:1258  endinit
+08401:1258  initprop "_attack"
+08406:1258  endinit
+08407:1258  initprop "wwny"
+08412:1263  newinit 1
+08417:1265  newinit 1
+08422:1266  string "Spawn"
+08427:1266  initprop "type"
+08432:1267  newinit 1
+08437:1268  null
+08438:1268  initprop "_delay"
+08443:1269  null
+08444:1269  initprop "_type"
+08449:1269  endinit
+08450:1269  initprop "_hurt"
+08455:1271  newinit 1
+08460:1272  null
+08461:1272  initprop "_delay"
+08466:1273  null
+08467:1273  initprop "_type"
+08472:1273  endinit
+08473:1273  initprop "_effect_from"
+08478:1275  newinit 1
+08483:1276  newarray 1
+08487:1276  string "P_Delay_Frame_5"
+08492:1276  initelem_array 0
+08496:1276  endinit
+08497:1276  initprop "_delay"
+08502:1277  string "P_XiaoYong_1_Begin"
+08507:1277  initprop "_type"
+08512:1277  endinit
+08513:1277  initprop "_effect_to"
+08518:1277  endinit
+08519:1277  initprop "_attack"
+08524:1277  endinit
+08525:1277  initprop "xiaoyong_1"
+08530:1283  newinit 1
+08535:1285  newinit 1
+08540:1286  string "Spawn"
+08545:1286  initprop "type"
+08550:1287  newinit 1
+08555:1288  null
+08556:1288  initprop "_delay"
+08561:1289  null
+08562:1289  initprop "_type"
+08567:1289  endinit
+08568:1289  initprop "_hurt"
+08573:1291  newinit 1
+08578:1292  null
+08579:1292  initprop "_delay"
+08584:1293  null
+08585:1293  initprop "_type"
+08590:1293  endinit
+08591:1293  initprop "_effect_from"
+08596:1295  newinit 1
+08601:1296  newarray 1
+08605:1296  string "P_Delay_Frame_5"
+08610:1296  initelem_array 0
+08614:1296  endinit
+08615:1296  initprop "_delay"
+08620:1297  string "P_XiaoYong_2_Begin"
+08625:1297  initprop "_type"
+08630:1297  endinit
+08631:1297  initprop "_effect_to"
+08636:1297  endinit
+08637:1297  initprop "_attack"
+08642:1297  endinit
+08643:1297  initprop "xiaoyong_2"
+08648:1303  newinit 1
+08653:1305  newinit 1
+08658:1306  string "Spawn"
+08663:1306  initprop "type"
+08668:1307  newinit 1
+08673:1308  null
+08674:1308  initprop "_delay"
+08679:1309  null
+08680:1309  initprop "_type"
+08685:1309  endinit
+08686:1309  initprop "_hurt"
+08691:1311  newinit 1
+08696:1312  null
+08697:1312  initprop "_delay"
+08702:1313  null
+08703:1313  initprop "_type"
+08708:1313  endinit
+08709:1313  initprop "_effect_from"
+08714:1315  newinit 1
+08719:1316  newarray 1
+08723:1316  string "P_Delay_Frame_5"
+08728:1316  initelem_array 0
+08732:1316  endinit
+08733:1316  initprop "_delay"
+08738:1317  string "P_XiaoYong_3_Begin"
+08743:1317  initprop "_type"
+08748:1317  endinit
+08749:1317  initprop "_effect_to"
+08754:1317  endinit
+08755:1317  initprop "_attack"
+08760:1317  endinit
+08761:1317  initprop "xiaoyong_3"
+08766:1323  newinit 1
+08771:1325  newinit 1
+08776:1326  string "Spawn"
+08781:1326  initprop "type"
+08786:1327  newinit 1
+08791:1328  null
+08792:1328  initprop "_delay"
+08797:1329  null
+08798:1329  initprop "_type"
+08803:1329  endinit
+08804:1329  initprop "_hurt"
+08809:1331  newinit 1
+08814:1332  null
+08815:1332  initprop "_delay"
+08820:1333  null
+08821:1333  initprop "_type"
+08826:1333  endinit
+08827:1333  initprop "_effect_from"
+08832:1335  newinit 1
+08837:1336  newarray 1
+08841:1336  string "P_Delay_Frame_5"
+08846:1336  initelem_array 0
+08850:1336  endinit
+08851:1336  initprop "_delay"
+08856:1337  string "P_XiaoYong_4_Begin"
+08861:1337  initprop "_type"
+08866:1337  endinit
+08867:1337  initprop "_effect_to"
+08872:1337  endinit
+08873:1337  initprop "_attack"
+08878:1337  endinit
+08879:1337  initprop "xiaoyong_4"
+08884:1343  newinit 1
+08889:1345  newinit 1
+08894:1346  string "Spawn"
+08899:1346  initprop "type"
+08904:1347  newinit 1
+08909:1348  null
+08910:1348  initprop "_delay"
+08915:1349  null
+08916:1349  initprop "_type"
+08921:1349  endinit
+08922:1349  initprop "_hurt"
+08927:1351  newinit 1
+08932:1352  null
+08933:1352  initprop "_delay"
+08938:1353  null
+08939:1353  initprop "_type"
+08944:1353  endinit
+08945:1353  initprop "_effect_from"
+08950:1355  newinit 1
+08955:1356  newarray 1
+08959:1356  string "P_Delay_Frame_5"
+08964:1356  initelem_array 0
+08968:1356  endinit
+08969:1356  initprop "_delay"
+08974:1357  string "P_XiaoYong_5_Begin"
+08979:1357  initprop "_type"
+08984:1357  endinit
+08985:1357  initprop "_effect_to"
+08990:1357  endinit
+08991:1357  initprop "_attack"
+08996:1357  endinit
+08997:1357  initprop "xiaoyong_5"
+09002:1363  newinit 1
+09007:1365  newinit 1
+09012:1366  string "Spawn"
+09017:1366  initprop "type"
+09022:1367  newinit 1
+09027:1368  null
+09028:1368  initprop "_delay"
+09033:1369  null
+09034:1369  initprop "_type"
+09039:1369  endinit
+09040:1369  initprop "_hurt"
+09045:1371  newinit 1
+09050:1372  null
+09051:1372  initprop "_delay"
+09056:1373  null
+09057:1373  initprop "_type"
+09062:1373  endinit
+09063:1373  initprop "_effect_from"
+09068:1375  newinit 1
+09073:1376  newarray 1
+09077:1376  string "P_Delay_Frame_5"
+09082:1376  initelem_array 0
+09086:1376  endinit
+09087:1376  initprop "_delay"
+09092:1377  string "P_XiaoYong_6_Begin"
+09097:1377  initprop "_type"
+09102:1377  endinit
+09103:1377  initprop "_effect_to"
+09108:1377  endinit
+09109:1377  initprop "_attack"
+09114:1377  endinit
+09115:1377  initprop "xiaoyong_6"
+09120:1383  newinit 1
+09125:1385  newinit 1
+09130:1386  string "Spawn"
+09135:1386  initprop "type"
+09140:1387  newinit 1
+09145:1388  null
+09146:1388  initprop "_delay"
+09151:1389  null
+09152:1389  initprop "_type"
+09157:1389  endinit
+09158:1389  initprop "_hurt"
+09163:1391  newinit 1
+09168:1392  null
+09169:1392  initprop "_delay"
+09174:1393  null
+09175:1393  initprop "_type"
+09180:1393  endinit
+09181:1393  initprop "_effect_from"
+09186:1395  newinit 1
+09191:1396  newarray 1
+09195:1396  string "P_Delay_Frame_5"
+09200:1396  initelem_array 0
+09204:1396  endinit
+09205:1396  initprop "_delay"
+09210:1397  string "P_XiaoYong_7_Begin"
+09215:1397  initprop "_type"
+09220:1397  endinit
+09221:1397  initprop "_effect_to"
+09226:1397  endinit
+09227:1397  initprop "_attack"
+09232:1397  endinit
+09233:1397  initprop "xiaoyong_7"
+09238:1403  newinit 1
+09243:1405  newinit 1
+09248:1406  string "Spawn"
+09253:1406  initprop "type"
+09258:1407  newinit 1
+09263:1408  null
+09264:1408  initprop "_delay"
+09269:1409  null
+09270:1409  initprop "_type"
+09275:1409  endinit
+09276:1409  initprop "_hurt"
+09281:1411  newinit 1
+09286:1412  null
+09287:1412  initprop "_delay"
+09292:1413  null
+09293:1413  initprop "_type"
+09298:1413  endinit
+09299:1413  initprop "_effect_from"
+09304:1415  newinit 1
+09309:1416  newarray 1
+09313:1416  string "P_Delay_Frame_5"
+09318:1416  initelem_array 0
+09322:1416  endinit
+09323:1416  initprop "_delay"
+09328:1417  string "P_XiaoYong_8_Begin"
+09333:1417  initprop "_type"
+09338:1417  endinit
+09339:1417  initprop "_effect_to"
+09344:1417  endinit
+09345:1417  initprop "_attack"
+09350:1417  endinit
+09351:1417  initprop "xiaoyong_8"
+09356:1423  newinit 1
+09361:1425  newinit 1
+09366:1426  string "Spawn"
+09371:1426  initprop "type"
+09376:1427  newinit 1
+09381:1428  null
+09382:1428  initprop "_delay"
+09387:1429  null
+09388:1429  initprop "_type"
+09393:1429  endinit
+09394:1429  initprop "_hurt"
+09399:1431  newinit 1
+09404:1432  null
+09405:1432  initprop "_delay"
+09410:1433  null
+09411:1433  initprop "_type"
+09416:1433  endinit
+09417:1433  initprop "_effect_from"
+09422:1435  newinit 1
+09427:1436  newarray 1
+09431:1436  string "P_Delay_Frame_5"
+09436:1436  initelem_array 0
+09440:1436  endinit
+09441:1436  initprop "_delay"
+09446:1437  string "P_XiaoYong_9_Begin"
+09451:1437  initprop "_type"
+09456:1437  endinit
+09457:1437  initprop "_effect_to"
+09462:1437  endinit
+09463:1437  initprop "_attack"
+09468:1437  endinit
+09469:1437  initprop "xiaoyong_9"
+09474:1443  newinit 1
+09479:1444  string "template.T_Remote_SS"
+09484:1444  initprop "extend"
+09489:1445  newinit 1
+09494:1446  string "Spawn"
+09499:1446  initprop "type"
+09504:1447  newinit 1
+09509:1448  null
+09510:1448  initprop "_delay"
+09515:1449  null
+09516:1449  initprop "_type"
+09521:1449  endinit
+09522:1449  initprop "_hurt"
+09527:1451  newinit 1
+09532:1452  null
+09533:1452  initprop "_delay"
+09538:1453  null
+09539:1453  initprop "_type"
+09544:1453  endinit
+09545:1453  initprop "_effect_from"
+09550:1455  newinit 1
+09555:1456  newarray 1
+09559:1456  string "P_Delay_Frame_5"
+09564:1456  initelem_array 0
+09568:1456  endinit
+09569:1456  initprop "_delay"
+09574:1457  string "P_TianNian_1_Begin"
+09579:1457  initprop "_type"
+09584:1457  endinit
+09585:1457  initprop "_effect_to"
+09590:1457  endinit
+09591:1457  initprop "_attack"
+09596:1457  endinit
+09597:1457  initprop "tiannian_1"
+09602:1463  newinit 1
+09607:1464  string "template.T_Remote_SS"
+09612:1464  initprop "extend"
+09617:1465  newinit 1
+09622:1466  string "Spawn"
+09627:1466  initprop "type"
+09632:1467  newinit 1
+09637:1468  null
+09638:1468  initprop "_delay"
+09643:1469  null
+09644:1469  initprop "_type"
+09649:1469  endinit
+09650:1469  initprop "_hurt"
+09655:1471  newinit 1
+09660:1472  null
+09661:1472  initprop "_delay"
+09666:1473  null
+09667:1473  initprop "_type"
+09672:1473  endinit
+09673:1473  initprop "_effect_from"
+09678:1475  newinit 1
+09683:1476  newarray 1
+09687:1476  string "P_Delay_Frame_5"
+09692:1476  initelem_array 0
+09696:1476  endinit
+09697:1476  initprop "_delay"
+09702:1477  string "P_TianNian_2_Begin"
+09707:1477  initprop "_type"
+09712:1477  endinit
+09713:1477  initprop "_effect_to"
+09718:1477  endinit
+09719:1477  initprop "_attack"
+09724:1477  endinit
+09725:1477  initprop "tiannian_2"
+09730:1483  newinit 1
+09735:1484  string "template.T_Remote_SS"
+09740:1484  initprop "extend"
+09745:1485  newinit 1
+09750:1486  string "Spawn"
+09755:1486  initprop "type"
+09760:1487  newinit 1
+09765:1488  null
+09766:1488  initprop "_delay"
+09771:1489  null
+09772:1489  initprop "_type"
+09777:1489  endinit
+09778:1489  initprop "_hurt"
+09783:1491  newinit 1
+09788:1492  null
+09789:1492  initprop "_delay"
+09794:1493  null
+09795:1493  initprop "_type"
+09800:1493  endinit
+09801:1493  initprop "_effect_from"
+09806:1495  newinit 1
+09811:1496  newarray 1
+09815:1496  string "P_Delay_Frame_5"
+09820:1496  initelem_array 0
+09824:1496  endinit
+09825:1496  initprop "_delay"
+09830:1497  string "P_TianNian_3_Begin"
+09835:1497  initprop "_type"
+09840:1497  endinit
+09841:1497  initprop "_effect_to"
+09846:1497  endinit
+09847:1497  initprop "_attack"
+09852:1497  endinit
+09853:1497  initprop "tiannian_3"
+09858:1503  newinit 1
+09863:1504  string "template.T_Remote_SS"
+09868:1504  initprop "extend"
+09873:1505  newinit 1
+09878:1506  string "Spawn"
+09883:1506  initprop "type"
+09888:1507  newinit 1
+09893:1508  null
+09894:1508  initprop "_delay"
+09899:1509  null
+09900:1509  initprop "_type"
+09905:1509  endinit
+09906:1509  initprop "_hurt"
+09911:1511  newinit 1
+09916:1512  null
+09917:1512  initprop "_delay"
+09922:1513  null
+09923:1513  initprop "_type"
+09928:1513  endinit
+09929:1513  initprop "_effect_from"
+09934:1515  newinit 1
+09939:1516  newarray 1
+09943:1516  string "P_Delay_Frame_5"
+09948:1516  initelem_array 0
+09952:1516  endinit
+09953:1516  initprop "_delay"
+09958:1517  string "P_TianNian_4_Begin"
+09963:1517  initprop "_type"
+09968:1517  endinit
+09969:1517  initprop "_effect_to"
+09974:1517  endinit
+09975:1517  initprop "_attack"
+09980:1517  endinit
+09981:1517  initprop "tiannian_4"
+09986:1523  newinit 1
+09991:1524  string "template.T_Remote_SS"
+09996:1524  initprop "extend"
+10001:1525  newinit 1
+10006:1526  string "Spawn"
+10011:1526  initprop "type"
+10016:1527  newinit 1
+10021:1528  null
+10022:1528  initprop "_delay"
+10027:1529  null
+10028:1529  initprop "_type"
+10033:1529  endinit
+10034:1529  initprop "_hurt"
+10039:1531  newinit 1
+10044:1532  null
+10045:1532  initprop "_delay"
+10050:1533  null
+10051:1533  initprop "_type"
+10056:1533  endinit
+10057:1533  initprop "_effect_from"
+10062:1535  newinit 1
+10067:1536  newarray 1
+10071:1536  string "P_Delay_Frame_5"
+10076:1536  initelem_array 0
+10080:1536  endinit
+10081:1536  initprop "_delay"
+10086:1537  string "P_TianNian_5_Begin"
+10091:1537  initprop "_type"
+10096:1537  endinit
+10097:1537  initprop "_effect_to"
+10102:1537  endinit
+10103:1537  initprop "_attack"
+10108:1537  endinit
+10109:1537  initprop "tiannian_5"
+10114:1543  newinit 1
+10119:1544  string "template.T_Remote_SS"
+10124:1544  initprop "extend"
+10129:1545  newinit 1
+10134:1546  string "Spawn"
+10139:1546  initprop "type"
+10144:1547  newinit 1
+10149:1548  null
+10150:1548  initprop "_delay"
+10155:1549  null
+10156:1549  initprop "_type"
+10161:1549  endinit
+10162:1549  initprop "_hurt"
+10167:1551  newinit 1
+10172:1552  null
+10173:1552  initprop "_delay"
+10178:1553  null
+10179:1553  initprop "_type"
+10184:1553  endinit
+10185:1553  initprop "_effect_from"
+10190:1555  newinit 1
+10195:1556  newarray 1
+10199:1556  string "P_Delay_Frame_5"
+10204:1556  initelem_array 0
+10208:1556  endinit
+10209:1556  initprop "_delay"
+10214:1557  string "P_GuiXin_1_Begin"
+10219:1557  initprop "_type"
+10224:1557  endinit
+10225:1557  initprop "_effect_to"
+10230:1557  endinit
+10231:1557  initprop "_attack"
+10236:1557  endinit
+10237:1557  initprop "guixin_dun_1"
+10242:1563  newinit 1
+10247:1564  string "template.T_Remote_SS"
+10252:1564  initprop "extend"
+10257:1565  newinit 1
+10262:1566  string "Spawn"
+10267:1566  initprop "type"
+10272:1567  newinit 1
+10277:1568  null
+10278:1568  initprop "_delay"
+10283:1569  null
+10284:1569  initprop "_type"
+10289:1569  endinit
+10290:1569  initprop "_hurt"
+10295:1571  newinit 1
+10300:1572  null
+10301:1572  initprop "_delay"
+10306:1573  null
+10307:1573  initprop "_type"
+10312:1573  endinit
+10313:1573  initprop "_effect_from"
+10318:1575  newinit 1
+10323:1576  newarray 1
+10327:1576  string "P_Delay_Frame_5"
+10332:1576  initelem_array 0
+10336:1576  endinit
+10337:1576  initprop "_delay"
+10342:1577  string "P_GuiXin_2_Begin"
+10347:1577  initprop "_type"
+10352:1577  endinit
+10353:1577  initprop "_effect_to"
+10358:1577  endinit
+10359:1577  initprop "_attack"
+10364:1577  endinit
+10365:1577  initprop "guixin_dun_2"
+10370:1583  newinit 1
+10375:1584  string "template.T_Remote_SS"
+10380:1584  initprop "extend"
+10385:1585  newinit 1
+10390:1586  string "Spawn"
+10395:1586  initprop "type"
+10400:1587  newinit 1
+10405:1588  null
+10406:1588  initprop "_delay"
+10411:1589  null
+10412:1589  initprop "_type"
+10417:1589  endinit
+10418:1589  initprop "_hurt"
+10423:1591  newinit 1
+10428:1592  null
+10429:1592  initprop "_delay"
+10434:1593  null
+10435:1593  initprop "_type"
+10440:1593  endinit
+10441:1593  initprop "_effect_from"
+10446:1595  newinit 1
+10451:1596  newarray 1
+10455:1596  string "P_Delay_Frame_5"
+10460:1596  initelem_array 0
+10464:1596  endinit
+10465:1596  initprop "_delay"
+10470:1597  string "P_GuiXin_3_Begin"
+10475:1597  initprop "_type"
+10480:1597  endinit
+10481:1597  initprop "_effect_to"
+10486:1597  endinit
+10487:1597  initprop "_attack"
+10492:1597  endinit
+10493:1597  initprop "guixin_dun_3"
+10498:1603  newinit 1
+10503:1604  string "template.T_Remote_SS"
+10508:1604  initprop "extend"
+10513:1605  newinit 1
+10518:1606  string "Spawn"
+10523:1606  initprop "type"
+10528:1607  newinit 1
+10533:1608  null
+10534:1608  initprop "_delay"
+10539:1609  null
+10540:1609  initprop "_type"
+10545:1609  endinit
+10546:1609  initprop "_hurt"
+10551:1611  newinit 1
+10556:1612  null
+10557:1612  initprop "_delay"
+10562:1613  null
+10563:1613  initprop "_type"
+10568:1613  endinit
+10569:1613  initprop "_effect_from"
+10574:1615  newinit 1
+10579:1616  newarray 1
+10583:1616  string "P_Delay_Frame_5"
+10588:1616  initelem_array 0
+10592:1616  endinit
+10593:1616  initprop "_delay"
+10598:1617  string "P_GuiXin_4_Begin"
+10603:1617  initprop "_type"
+10608:1617  endinit
+10609:1617  initprop "_effect_to"
+10614:1617  endinit
+10615:1617  initprop "_attack"
+10620:1617  endinit
+10621:1617  initprop "guixin_dun_4"
+10626:1623  newinit 1
+10631:1624  string "template.T_Remote_SS"
+10636:1624  initprop "extend"
+10641:1625  newinit 1
+10646:1626  string "Spawn"
+10651:1626  initprop "type"
+10656:1627  newinit 1
+10661:1628  null
+10662:1628  initprop "_delay"
+10667:1629  null
+10668:1629  initprop "_type"
+10673:1629  endinit
+10674:1629  initprop "_hurt"
+10679:1631  newinit 1
+10684:1632  null
+10685:1632  initprop "_delay"
+10690:1633  null
+10691:1633  initprop "_type"
+10696:1633  endinit
+10697:1633  initprop "_effect_from"
+10702:1635  newinit 1
+10707:1636  newarray 1
+10711:1636  string "P_Delay_Frame_5"
+10716:1636  initelem_array 0
+10720:1636  endinit
+10721:1636  initprop "_delay"
+10726:1637  string "P_GuiXin_5_Begin"
+10731:1637  initprop "_type"
+10736:1637  endinit
+10737:1637  initprop "_effect_to"
+10742:1637  endinit
+10743:1637  initprop "_attack"
+10748:1637  endinit
+10749:1637  initprop "guixin_dun_5"
+10754:1643  newinit 1
+10759:1644  string "template.T_Remote_SS"
+10764:1644  initprop "extend"
+10769:1645  newinit 1
+10774:1646  string "Spawn"
+10779:1646  initprop "type"
+10784:1647  newinit 1
+10789:1648  newarray 2
+10793:1648  string "P_Delay_Frame_30"
+10798:1648  initelem_array 0
+10802:1648  string "P_Delay_Frame_26"
+10807:1648  initelem_array 1
+10811:1648  endinit
+10812:1648  initprop "_delay"
+10817:1649  string "P_Hurt_Back_Over"
+10822:1649  initprop "_type"
+10827:1649  endinit
+10828:1649  initprop "_hurt"
+10833:1651  newinit 1
+10838:1652  null
+10839:1652  initprop "_delay"
+10844:1653  string "P_GuiXin_Effect_From"
+10849:1653  initprop "_type"
+10854:1653  endinit
+10855:1653  initprop "_effect_from"
+10860:1656  newinit 1
+10865:1657  newarray 1
+10869:1657  string "P_Delay_Frame_26"
+10874:1657  initelem_array 0
+10878:1657  endinit
+10879:1657  initprop "_delay"
+10884:1658  string "P_GuiXin_Effect_To"
+10889:1658  initprop "_type"
+10894:1658  endinit
+10895:1658  initprop "_effect_to"
+10900:1658  endinit
+10901:1658  initprop "_attack"
+10906:1658  endinit
+10907:1658  initprop "guixin"
+10912:1668  newinit 1
+10917:1669  string "template.T_Remote_SS"
+10922:1669  initprop "extend"
+10927:1670  newinit 1
+10932:1671  string "Spawn"
+10937:1671  initprop "type"
+10942:1672  newinit 1
+10947:1673  null
+10948:1673  initprop "_delay"
+10953:1674  string "P_Hurt_Back_Over_ZhaoXin"
+10958:1674  initprop "_type"
+10963:1674  endinit
+10964:1674  initprop "_hurt"
+10969:1676  newinit 1
+10974:1677  null
+10975:1677  initprop "_delay"
+10980:1678  string "P_ZhaoXin_Effect_From"
+10985:1678  initprop "_type"
+10990:1678  endinit
+10991:1678  initprop "_effect_from"
+10996:1680  newinit 1
+11001:1681  newarray 2
+11005:1681  string "P_Delay_Frame_30"
+11010:1681  initelem_array 0
+11014:1681  string "P_Delay_Frame_10"
+11019:1681  initelem_array 1
+11023:1681  endinit
+11024:1681  initprop "_delay"
+11029:1682  string "P_XueChi_End_Blood"
+11034:1682  initprop "_type"
+11039:1682  endinit
+11040:1682  initprop "_effect_to1"
+11045:1685  newinit 1
+11050:1686  null
+11051:1686  initprop "_delay"
+11056:1687  string "P_ZhaoXin_Effect_To"
+11061:1687  initprop "_type"
+11066:1687  endinit
+11067:1687  initprop "_effect_to"
+11072:1687  endinit
+11073:1687  initprop "_attack"
+11078:1687  endinit
+11079:1687  initprop "zhaoxin"
+11084:1692  newinit 1
+11089:1693  string "zhaoxin"
+11094:1693  initprop "extend"
+11099:1694  newinit 1
+11104:1695  newinit 1
+11109:1696  newarray 2
+11113:1696  string "P_Delay_Frame_30"
+11118:1696  initelem_array 0
+11122:1696  string "P_Delay_Frame_20"
+11127:1696  initelem_array 1
+11131:1696  endinit
+11132:1696  initprop "_delay"
+11137:1697  string "P_Cure_From"
+11142:1697  initprop "_type"
+11147:1697  endinit
+11148:1697  initprop "_effect_from1"
+11153:1697  endinit
+11154:1697  initprop "_attack"
+11159:1697  endinit
+11160:1697  initprop "zhaoxin_v4"
+11165:1702  newinit 1
+11170:1703  string "template.T_Remote_SS"
+11175:1703  initprop "extend"
+11180:1704  newinit 1
+11185:1705  string "Spawn"
+11190:1705  initprop "type"
+11195:1706  newinit 1
+11200:1707  newarray 2
+11204:1707  string "P_Delay_Frame_5"
+11209:1707  initelem_array 0
+11213:1707  string "P_Delay_Frame_30"
+11218:1707  initelem_array 1
+11222:1707  endinit
+11223:1707  initprop "_delay"
+11228:1708  string "P_Hurt_Back_Over_BOOM"
+11233:1708  initprop "_type"
+11238:1708  endinit
+11239:1708  initprop "_hurt"
+11244:1710  newinit 1
+11249:1711  null
+11250:1711  initprop "_delay"
+11255:1712  string "P_TunTian_Effect_From_Mid"
+11260:1712  initprop "_type"
+11265:1712  endinit
+11266:1712  initprop "_effect_from"
+11271:1714  newinit 1
+11276:1715  newarray 2
+11280:1715  string "P_Delay_Frame_30"
+11285:1715  initelem_array 0
+11289:1715  string "P_Delay_Frame_5"
+11294:1715  initelem_array 1
+11298:1715  endinit
+11299:1715  initprop "_delay"
+11304:1716  string "P_Nuyan_Begin_QJ"
+11309:1716  initprop "_type"
+11314:1716  endinit
+11315:1716  initprop "_effect_to"
+11320:1718  newinit 1
+11325:1719  newarray 2
+11329:1719  string "P_Delay_Frame_30"
+11334:1719  initelem_array 0
+11338:1719  string "P_Delay_Frame_5"
+11343:1719  initelem_array 1
+11347:1719  endinit
+11348:1719  initprop "_delay"
+11353:1720  newarray 2
+11357:1720  string "P_Nuyan_Effect_To"
+11362:1720  initelem_array 0
+11366:1720  string "P_Nuyan_End_Boom"
+11371:1720  initelem_array 1
+11375:1720  endinit
+11376:1720  initprop "_type"
+11381:1720  endinit
+11382:1720  initprop "_effect_to1"
+11387:1720  endinit
+11388:1720  initprop "_attack"
+11393:1720  endinit
+11394:1720  initprop "tuntian"
+11399:1726  newinit 1
+11404:1727  string "tuntian"
+11409:1727  initprop "extend"
+11414:1728  newinit 1
+11419:1729  newarray 2
+11423:1729  string "P_Delay_Frame_30"
+11428:1729  initelem_array 0
+11432:1729  string "P_Delay_Frame_5"
+11437:1729  initelem_array 1
+11441:1729  endinit
+11442:1729  initprop "_delay"
+11447:1730  newarray 1
+11451:1730  string "P_Atk_Add_From"
+11456:1730  initelem_array 0
+11460:1730  endinit
+11461:1730  initprop "_type"
+11466:1730  endinit
+11467:1730  initprop "_effect_to2"
+11472:1730  endinit
+11473:1730  initprop "tuntian_v2"
+11478:1734  newinit 1
+11483:1735  string "template.T_Remote_SS"
+11488:1735  initprop "extend"
+11493:1736  newinit 1
+11498:1737  string "Spawn"
+11503:1737  initprop "type"
+11508:1738  newinit 1
+11513:1739  newarray 2
+11517:1739  string "P_Delay_Frame_5"
+11522:1739  initelem_array 0
+11526:1739  string "P_Delay_Frame_30"
+11531:1739  initelem_array 1
+11535:1739  endinit
+11536:1739  initprop "_delay"
+11541:1740  string "P_Hurt_Back_Over_BOOM"
+11546:1740  initprop "_type"
+11551:1740  endinit
+11552:1740  initprop "_hurt"
+11557:1742  newinit 1
+11562:1743  null
+11563:1743  initprop "_delay"
+11568:1744  string "P_TunTian_Effect_From_Mid"
+11573:1744  initprop "_type"
+11578:1744  endinit
+11579:1744  initprop "_effect_from"
+11584:1746  newinit 1
+11589:1747  newarray 2
+11593:1747  string "P_Delay_Frame_30"
+11598:1747  initelem_array 0
+11602:1747  string "P_Delay_Frame_5"
+11607:1747  initelem_array 1
+11611:1747  endinit
+11612:1747  initprop "_delay"
+11617:1748  string "P_Nuyan_Begin_QJ"
+11622:1748  initprop "_type"
+11627:1748  endinit
+11628:1748  initprop "_effect_to"
+11633:1750  newinit 1
+11638:1751  newarray 2
+11642:1751  string "P_Delay_Frame_30"
+11647:1751  initelem_array 0
+11651:1751  string "P_Delay_Frame_5"
+11656:1751  initelem_array 1
+11660:1751  endinit
+11661:1751  initprop "_delay"
+11666:1752  newarray 2
+11670:1752  string "P_Nuyan_Effect_To"
+11675:1752  initelem_array 0
+11679:1752  string "P_Nuyan_End_Boom"
+11684:1752  initelem_array 1
+11688:1752  endinit
+11689:1752  initprop "_type"
+11694:1752  endinit
+11695:1752  initprop "_effect_to1"
+11700:1755  newinit 1
+11705:1756  newarray 2
+11709:1756  string "P_Delay_Frame_30"
+11714:1756  initelem_array 0
+11718:1756  string "P_Delay_Frame_5"
+11723:1756  initelem_array 1
+11727:1756  endinit
+11728:1756  initprop "_delay"
+11733:1757  newarray 1
+11737:1757  string "P_Atk_Add_From"
+11742:1757  initelem_array 0
+11746:1757  endinit
+11747:1757  initprop "_type"
+11752:1757  endinit
+11753:1757  initprop "_effect_to2"
+11758:1760  newinit 1
+11763:1761  newarray 2
+11767:1761  string "P_Delay_Frame_10"
+11772:1761  initelem_array 0
+11776:1761  string "P_Delay_Frame_30"
+11781:1761  initelem_array 1
+11785:1761  endinit
+11786:1761  initprop "_delay"
+11791:1762  string "P_Hp_Add_From"
+11796:1762  initprop "_type"
+11801:1762  endinit
+11802:1762  initprop "_effect_to3"
+11807:1762  endinit
+11808:1762  initprop "_attack"
+11813:1762  endinit
+11814:1762  initprop "tuntian_v3"
+11819:1768  newinit 1
+11824:1769  string "template.T_Remote_SS"
+11829:1769  initprop "extend"
+11834:1770  newinit 1
+11839:1771  string "Spawn"
+11844:1771  initprop "type"
+11849:1772  newinit 1
+11854:1773  newarray 2
+11858:1773  string "P_Delay_Frame_5"
+11863:1773  initelem_array 0
+11867:1773  string "P_Delay_Frame_30"
+11872:1773  initelem_array 1
+11876:1773  endinit
+11877:1773  initprop "_delay"
+11882:1774  string "P_Hurt_Back_Over_BOOM"
+11887:1774  initprop "_type"
+11892:1774  endinit
+11893:1774  initprop "_hurt"
+11898:1776  newinit 1
+11903:1777  null
+11904:1777  initprop "_delay"
+11909:1778  string "P_TunTian_Effect_From_Mid"
+11914:1778  initprop "_type"
+11919:1778  endinit
+11920:1778  initprop "_effect_from"
+11925:1780  newinit 1
+11930:1781  newarray 2
+11934:1781  string "P_Delay_Frame_30"
+11939:1781  initelem_array 0
+11943:1781  string "P_Delay_Frame_5"
+11948:1781  initelem_array 1
+11952:1781  endinit
+11953:1781  initprop "_delay"
+11958:1782  string "P_Nuyan_Begin_QJ"
+11963:1782  initprop "_type"
+11968:1782  endinit
+11969:1782  initprop "_effect_to"
+11974:1784  newinit 1
+11979:1785  newarray 2
+11983:1785  string "P_Delay_Frame_30"
+11988:1785  initelem_array 0
+11992:1785  string "P_Delay_Frame_5"
+11997:1785  initelem_array 1
+12001:1785  endinit
+12002:1785  initprop "_delay"
+12007:1786  newarray 2
+12011:1786  string "P_Nuyan_Effect_To"
+12016:1786  initelem_array 0
+12020:1786  string "P_Nuyan_End_Boom"
+12025:1786  initelem_array 1
+12029:1786  endinit
+12030:1786  initprop "_type"
+12035:1786  endinit
+12036:1786  initprop "_effect_to1"
+12041:1789  newinit 1
+12046:1790  newarray 2
+12050:1790  string "P_Delay_Frame_30"
+12055:1790  initelem_array 0
+12059:1790  string "P_Delay_Frame_5"
+12064:1790  initelem_array 1
+12068:1790  endinit
+12069:1790  initprop "_delay"
+12074:1791  newarray 1
+12078:1791  string "P_Atk_Add_From"
+12083:1791  initelem_array 0
+12087:1791  endinit
+12088:1791  initprop "_type"
+12093:1791  endinit
+12094:1791  initprop "_effect_to2"
+12099:1794  newinit 1
+12104:1795  newarray 2
+12108:1795  string "P_Delay_Frame_10"
+12113:1795  initelem_array 0
+12117:1795  string "P_Delay_Frame_30"
+12122:1795  initelem_array 1
+12126:1795  endinit
+12127:1795  initprop "_delay"
+12132:1796  string "P_Hp_Add_From"
+12137:1796  initprop "_type"
+12142:1796  endinit
+12143:1796  initprop "_effect_to3"
+12148:1796  endinit
+12149:1796  initprop "_attack"
+12154:1796  endinit
+12155:1796  initprop "tuntian_v4"
+12160:1802  newinit 1
+12165:1803  string "template.T_Remote_SS"
+12170:1803  initprop "extend"
+12175:1804  newinit 1
+12180:1805  string "Spawn"
+12185:1805  initprop "type"
+12190:1806  newinit 1
+12195:1807  newarray 2
+12199:1807  string "P_Delay_Frame_5"
+12204:1807  initelem_array 0
+12208:1807  string "P_Delay_Frame_30"
+12213:1807  initelem_array 1
+12217:1807  endinit
+12218:1807  initprop "_delay"
+12223:1808  string "P_Hurt_Back_Over_BOOM"
+12228:1808  initprop "_type"
+12233:1808  endinit
+12234:1808  initprop "_hurt"
+12239:1810  newinit 1
+12244:1811  null
+12245:1811  initprop "_delay"
+12250:1812  string "P_TunTian_Effect_From_Mid"
+12255:1812  initprop "_type"
+12260:1812  endinit
+12261:1812  initprop "_effect_from"
+12266:1814  newinit 1
+12271:1815  newarray 2
+12275:1815  string "P_Delay_Frame_30"
+12280:1815  initelem_array 0
+12284:1815  string "P_Delay_Frame_5"
+12289:1815  initelem_array 1
+12293:1815  endinit
+12294:1815  initprop "_delay"
+12299:1816  string "P_Nuyan_Begin_QJ"
+12304:1816  initprop "_type"
+12309:1816  endinit
+12310:1816  initprop "_effect_to"
+12315:1818  newinit 1
+12320:1819  newarray 2
+12324:1819  string "P_Delay_Frame_30"
+12329:1819  initelem_array 0
+12333:1819  string "P_Delay_Frame_5"
+12338:1819  initelem_array 1
+12342:1819  endinit
+12343:1819  initprop "_delay"
+12348:1820  newarray 2
+12352:1820  string "P_Nuyan_Effect_To"
+12357:1820  initelem_array 0
+12361:1820  string "P_Nuyan_End_Boom"
+12366:1820  initelem_array 1
+12370:1820  endinit
+12371:1820  initprop "_type"
+12376:1820  endinit
+12377:1820  initprop "_effect_to1"
+12382:1823  newinit 1
+12387:1824  newarray 2
+12391:1824  string "P_Delay_Frame_30"
+12396:1824  initelem_array 0
+12400:1824  string "P_Delay_Frame_5"
+12405:1824  initelem_array 1
+12409:1824  endinit
+12410:1824  initprop "_delay"
+12415:1825  newarray 1
+12419:1825  string "P_Atk_Add_From"
+12424:1825  initelem_array 0
+12428:1825  endinit
+12429:1825  initprop "_type"
+12434:1825  endinit
+12435:1825  initprop "_effect_to2"
+12440:1828  newinit 1
+12445:1829  newarray 2
+12449:1829  string "P_Delay_Frame_10"
+12454:1829  initelem_array 0
+12458:1829  string "P_Delay_Frame_30"
+12463:1829  initelem_array 1
+12467:1829  endinit
+12468:1829  initprop "_delay"
+12473:1830  string "P_Hp_Add_From"
+12478:1830  initprop "_type"
+12483:1830  endinit
+12484:1830  initprop "_effect_to3"
+12489:1830  endinit
+12490:1830  initprop "_attack"
+12495:1830  endinit
+12496:1830  initprop "tuntian_v5"
+12501:1837  newinit 1
+12506:1838  newinit 1
+12511:1839  string "Spawn"
+12516:1839  initprop "type"
+12521:1840  newinit 1
+12526:1841  newarray 3
+12530:1841  string "P_Delay_Frame_10"
+12535:1841  initelem_array 0
+12539:1841  string "P_Delay_Frame_4"
+12544:1841  initelem_array 1
+12548:1841  string "P_Delay_Frame_4"
+12553:1841  initelem_array 2
+12557:1841  endinit
+12558:1841  initprop "_delay"
+12563:1842  string "P_Hurt_Back_Over"
+12568:1842  initprop "_type"
+12573:1842  endinit
+12574:1842  initprop "_hurt"
+12579:1844  newinit 1
+12584:1845  string "P_WuQian_Effect_From_Near"
+12589:1845  initprop "_type"
+12594:1845  endinit
+12595:1845  initprop "_effect"
+12600:1847  newinit 1
+12605:1848  newarray 3
+12609:1848  string "P_Delay_Frame_10"
+12614:1848  initelem_array 0
+12618:1848  string "P_Delay_Frame_4"
+12623:1848  initelem_array 1
+12627:1848  string "P_Delay_Frame_4"
+12632:1848  initelem_array 2
+12636:1848  endinit
+12637:1848  initprop "_delay"
+12642:1849  string "P_WuQian_Effect_To"
+12647:1849  initprop "_type"
+12652:1849  endinit
+12653:1849  initprop "_effect_to"
+12658:1849  endinit
+12659:1849  initprop "_attack"
+12664:1849  endinit
+12665:1849  initprop "shenji"
+12670:1854  newinit 1
+12675:1855  string "template.T_Remote_SS"
+12680:1855  initprop "extend"
+12685:1856  newinit 1
+12690:1857  newinit 1
+12695:1858  newarray 2
+12699:1858  string "P_Delay_Frame_4"
+12704:1858  initelem_array 0
+12708:1858  string "P_Delay_Frame_2"
+12713:1858  initelem_array 1
+12717:1858  endinit
+12718:1858  initprop "_delay"
+12723:1859  string "P_Hurt_Back_Over"
+12728:1859  initprop "_type"
+12733:1859  endinit
+12734:1859  initprop "_hurt"
+12739:1861  newinit 1
+12744:1862  string "P_XueJi_Effect_To_Mid"
+12749:1862  initprop "_type"
+12754:1862  endinit
+12755:1862  initprop "_effect"
+12760:1864  newinit 1
+12765:1865  null
+12766:1865  initprop "_type"
+12771:1865  endinit
+12772:1865  initprop "_effect_from"
+12777:1867  newinit 1
+12782:1868  newarray 2
+12786:1868  string "P_Delay_Frame_4"
+12791:1868  initelem_array 0
+12795:1868  string "P_Delay_Frame_2"
+12800:1868  initelem_array 1
+12804:1868  endinit
+12805:1868  initprop "_delay"
+12810:1869  string "P_XueJi_Effect_To"
+12815:1869  initprop "_type"
+12820:1869  endinit
+12821:1869  initprop "_effect_to"
+12826:1869  endinit
+12827:1869  initprop "_attack"
+12832:1869  endinit
+12833:1869  initprop "xueji"
+12838:1873  newinit 1
+12843:1874  string "template.T_Remote_SS"
+12848:1874  initprop "extend"
+12853:1875  newinit 1
+12858:1876  newinit 1
+12863:1877  newarray 3
+12867:1877  string "P_Delay_Frame_10"
+12872:1877  initelem_array 0
+12876:1877  string "P_Delay_Frame_10"
+12881:1877  initelem_array 1
+12885:1877  string "P_Delay_Frame_2"
+12890:1877  initelem_array 2
+12894:1877  endinit
+12895:1877  initprop "_delay"
+12900:1878  string "P_Hurt_Back_Over"
+12905:1878  initprop "_type"
+12910:1878  endinit
+12911:1878  initprop "_hurt"
+12916:1880  newinit 1
+12921:1881  string "P_Hp_Sub_From"
+12926:1881  initprop "_type"
+12931:1881  endinit
+12932:1881  initprop "_effect"
+12937:1883  newinit 1
+12942:1884  string "P_QiangXi_Effect_From"
+12947:1884  initprop "_type"
+12952:1884  endinit
+12953:1884  initprop "_effect_from"
+12958:1886  newinit 1
+12963:1887  newarray 3
+12967:1887  string "P_Delay_Frame_10"
+12972:1887  initelem_array 0
+12976:1887  string "P_Delay_Frame_10"
+12981:1887  initelem_array 1
+12985:1887  string "P_Delay_Frame_2"
+12990:1887  initelem_array 2
+12994:1887  endinit
+12995:1887  initprop "_delay"
+13000:1888  string "P_QiangXi_Effect_To"
+13005:1888  initprop "_type"
+13010:1888  endinit
+13011:1888  initprop "_effect_to"
+13016:1888  endinit
+13017:1888  initprop "_attack"
+13022:1888  endinit
+13023:1888  initprop "qiangxi"
+13028:1893  newinit 1
+13033:1894  string "template.T_Remote_SS"
+13038:1894  initprop "extend"
+13043:1895  string "P_TieJi_Effect_From"
+13048:1895  initprop "_attack_before"
+13053:1896  newinit 1
+13058:1897  newinit 1
+13063:1898  string "P_Delay_Frame_2"
+13068:1898  initprop "_delay"
+13073:1899  string "P_Hurt_Back_Over"
+13078:1899  initprop "_type"
+13083:1899  endinit
+13084:1899  initprop "_hurt"
+13089:1901  newinit 1
+13094:1902  null
+13095:1902  initprop "_type"
+13100:1902  endinit
+13101:1902  initprop "_effect_from"
+13106:1904  newinit 1
+13111:1905  string "P_TieJi_Effect_To"
+13116:1905  initprop "_type"
+13121:1905  endinit
+13122:1905  initprop "_effect_to"
+13127:1905  endinit
+13128:1905  initprop "_attack"
+13133:1905  endinit
+13134:1905  initprop "tieji"
+13139:1909  newinit 1
+13144:1910  string "tieji"
+13149:1910  initprop "extend"
+13154:1910  endinit
+13155:1910  initprop "tieqi"
+13160:1914  newinit 1
+13165:1915  string "template.T_Remote_SS"
+13170:1915  initprop "extend"
+13175:1916  newinit 1
+13180:1917  newinit 1
+13185:1918  string "P_Delay_Frame_2"
+13190:1918  initprop "_delay"
+13195:1919  string "P_Hurt_Back_Over"
+13200:1919  initprop "_type"
+13205:1919  endinit
+13206:1919  initprop "_hurt"
+13211:1921  newinit 1
+13216:1922  null
+13217:1922  initprop "_type"
+13222:1922  endinit
+13223:1922  initprop "_effect_from"
+13228:1924  newinit 1
+13233:1925  string "P_YanYu_Effect_To"
+13238:1925  initprop "_type"
+13243:1925  endinit
+13244:1925  initprop "_effect_to"
+13249:1925  endinit
+13250:1925  initprop "_attack"
+13255:1925  endinit
+13256:1925  initprop "yanyu"
+13261:1929  newinit 1
+13266:1930  string "yanyu"
+13271:1930  initprop "extend"
+13276:1930  endinit
+13277:1930  initprop "poxi"
+13282:1934  newinit 1
+13287:1935  string "template.T_Remote_Super"
+13292:1935  initprop "extend"
+13297:1936  newinit 1
+13302:1937  newinit 1
+13307:1938  newarray 2
+13311:1938  string "P_Delay_Frame_10"
+13316:1938  initelem_array 0
+13320:1938  string "P_Delay_Frame_4"
+13325:1938  initelem_array 1
+13329:1938  endinit
+13330:1938  initprop "_delay"
+13335:1939  string "P_Hurt_Back_Over"
+13340:1939  initprop "_type"
+13345:1939  endinit
+13346:1939  initprop "_hurt"
+13351:1941  newinit 1
+13356:1942  null
+13357:1942  initprop "_delay"
+13362:1943  null
+13363:1943  initprop "_type"
+13368:1943  endinit
+13369:1943  initprop "_effect"
+13374:1945  newinit 1
+13379:1946  null
+13380:1946  initprop "_delay"
+13385:1947  string "P_LuanJi_Effect_From"
+13390:1947  initprop "_type"
+13395:1947  endinit
+13396:1947  initprop "_effect_from"
+13401:1949  newinit 1
+13406:1950  null
+13407:1950  initprop "_delay"
+13412:1951  string "P_LuanJi_Effect_To"
+13417:1951  initprop "_type"
+13422:1951  endinit
+13423:1951  initprop "_effect_to"
+13428:1951  endinit
+13429:1951  initprop "_attack"
+13434:1951  endinit
+13435:1951  initprop "luanji"
+13440:1956  newinit 1
+13445:1956  string "luanwu"
+13450:1956  initprop "extend"
+13455:1956  endinit
+13456:1956  initprop "mo_luanwu"
+13461:1957  newinit 1
+13466:1957  endinit
+13467:1957  initprop "mo_luanwu_0"
+13472:1958  newinit 1
+13477:1958  string "luanwu"
+13482:1958  initprop "extend"
+13487:1958  endinit
+13488:1958  initprop "mo_luanwu_1"
+13493:1960  newinit 1
+13498:1961  string "template.T_Remote_SS"
+13503:1961  initprop "extend"
+13508:1962  newinit 1
+13513:1972  newinit 1
+13518:1973  name "xs"
+13523:1973  getprop "Constant_FightScene_HpsType_Average"
+13528:1973  initprop "type"
+13533:1973  endinit
+13534:1973  initprop "hps"
+13539:1975  int8 6
+13541:1975  initprop "loopNum"
+13546:1975  endinit
+13547:1975  initprop "property"
+13552:1978  newinit 1
+13557:1979  string "Spawn"
+13562:1979  initprop "type"
+13567:1980  newinit 1
+13572:1981  null
+13573:1981  initprop "_delay"
+13578:1982  null
+13579:1982  initprop "_type"
+13584:1982  endinit
+13585:1982  initprop "_hurt"
+13590:1984  newinit 1
+13595:1985  newarray 2
+13599:1985  string "P_Delay_Frame_30"
+13604:1985  initelem_array 0
+13608:1985  string "P_Delay_Frame_1"
+13613:1985  initelem_array 1
+13617:1985  endinit
+13618:1985  initprop "_delay"
+13623:1986  string "P_Hurt_Hit"
+13628:1986  initprop "_type"
+13633:1987  newinit 1
+13638:1988  zero
+13639:1988  initprop "idx"
+13644:1988  endinit
+13645:1988  initprop "params"
+13650:1988  endinit
+13651:1988  initprop "_hurt0"
+13656:1991  newinit 1
+13661:1992  newarray 1
+13665:1992  string "P_Delay_Frame_37"
+13670:1992  initelem_array 0
+13674:1992  endinit
+13675:1992  initprop "_delay"
+13680:1993  string "P_Hurt_Hit"
+13685:1993  initprop "_type"
+13690:1994  newinit 1
+13695:1995  one
+13696:1995  initprop "idx"
+13701:1995  endinit
+13702:1995  initprop "params"
+13707:1995  endinit
+13708:1995  initprop "_hurt1"
+13713:1998  newinit 1
+13718:1999  newarray 2
+13722:1999  string "P_Delay_Frame_37"
+13727:1999  initelem_array 0
+13731:1999  string "P_Delay_Frame_6"
+13736:1999  initelem_array 1
+13740:1999  endinit
+13741:1999  initprop "_delay"
+13746:2000  string "P_Hurt_Hit"
+13751:2000  initprop "_type"
+13756:2001  newinit 1
+13761:2002  int8 2
+13763:2002  initprop "idx"
+13768:2002  endinit
+13769:2002  initprop "params"
+13774:2002  endinit
+13775:2002  initprop "_hurt2"
+13780:2005  newinit 1
+13785:2006  newarray 2
+13789:2006  string "P_Delay_Frame_46"
+13794:2006  initelem_array 0
+13798:2006  string "P_Delay_Frame_3"
+13803:2006  initelem_array 1
+13807:2006  endinit
+13808:2006  initprop "_delay"
+13813:2007  string "P_Hurt_Hit"
+13818:2007  initprop "_type"
+13823:2008  newinit 1
+13828:2009  int8 3
+13830:2009  initprop "idx"
+13835:2009  endinit
+13836:2009  initprop "params"
+13841:2009  endinit
+13842:2009  initprop "_hurt3"
+13847:2012  newinit 1
+13852:2013  newarray 1
+13856:2013  string "P_Delay_Frame_55"
+13861:2013  initelem_array 0
+13865:2013  endinit
+13866:2013  initprop "_delay"
+13871:2014  string "P_Hurt_Hit"
+13876:2014  initprop "_type"
+13881:2015  newinit 1
+13886:2016  int8 4
+13888:2016  initprop "idx"
+13893:2016  endinit
+13894:2016  initprop "params"
+13899:2016  endinit
+13900:2016  initprop "_hurt4"
+13905:2019  newinit 1
+13910:2020  newarray 3
+13914:2020  string "P_Delay_Frame_55"
+13919:2020  initelem_array 0
+13923:2020  string "P_Delay_Frame_4"
+13928:2020  initelem_array 1
+13932:2020  string "P_Delay_Frame_4"
+13937:2020  initelem_array 2
+13941:2020  endinit
+13942:2020  initprop "_delay"
+13947:2021  string "P_Hurt_Fly_Over"
+13952:2021  initprop "_type"
+13957:2022  newinit 1
+13962:2023  int8 5
+13964:2023  initprop "idx"
+13969:2023  endinit
+13970:2023  initprop "params"
+13975:2023  endinit
+13976:2023  initprop "_hurt5"
+13981:2026  newinit 1
+13986:2027  null
+13987:2027  initprop "_delay"
+13992:2028  null
+13993:2028  initprop "_type"
+13998:2028  endinit
+13999:2028  initprop "_effect"
+14004:2030  newinit 1
+14009:2031  null
+14010:2031  initprop "_delay"
+14015:2032  string "P_LuanWu_Effect_From0"
+14020:2032  initprop "_type"
+14025:2032  endinit
+14026:2032  initprop "_effect_from0"
+14031:2034  newinit 1
+14036:2035  null
+14037:2035  initprop "_delay"
+14042:2036  string "P_LuanWu_Effect_From1"
+14047:2036  initprop "_type"
+14052:2036  endinit
+14053:2036  initprop "_effect_from1"
+14058:2039  newinit 1
+14063:2040  null
+14064:2040  initprop "_delay"
+14069:2041  string "P_LuanWu_Effect_To"
+14074:2041  initprop "_type"
+14079:2041  endinit
+14080:2041  initprop "_effect_to"
+14085:2041  endinit
+14086:2041  initprop "_attack"
+14091:2041  endinit
+14092:2041  initprop "luanwu"
+14097:2050  newinit 1
+14102:2051  string "template.T_Remote_SS"
+14107:2051  initprop "extend"
+14112:2052  newinit 1
+14117:2062  newinit 1
+14122:2063  name "xs"
+14127:2063  getprop "Constant_FightScene_HpsType_Average"
+14132:2063  initprop "type"
+14137:2063  endinit
+14138:2063  initprop "hps"
+14143:2065  int8 6
+14145:2065  initprop "loopNum"
+14150:2065  endinit
+14151:2065  initprop "property"
+14156:2068  newinit 1
+14161:2069  string "Spawn"
+14166:2069  initprop "type"
+14171:2070  newinit 1
+14176:2071  null
+14177:2071  initprop "_delay"
+14182:2072  null
+14183:2072  initprop "_type"
+14188:2072  endinit
+14189:2072  initprop "_hurt"
+14194:2074  newinit 1
+14199:2075  newarray 2
+14203:2075  string "P_Delay_Frame_30"
+14208:2075  initelem_array 0
+14212:2075  string "P_Delay_Frame_1"
+14217:2075  initelem_array 1
+14221:2075  endinit
+14222:2075  initprop "_delay"
+14227:2076  string "P_Hurt_Hit"
+14232:2076  initprop "_type"
+14237:2077  newinit 1
+14242:2078  zero
+14243:2078  initprop "idx"
+14248:2078  endinit
+14249:2078  initprop "params"
+14254:2078  endinit
+14255:2078  initprop "_hurt0"
+14260:2081  newinit 1
+14265:2082  newarray 1
+14269:2082  string "P_Delay_Frame_37"
+14274:2082  initelem_array 0
+14278:2082  endinit
+14279:2082  initprop "_delay"
+14284:2083  string "P_Hurt_Hit"
+14289:2083  initprop "_type"
+14294:2084  newinit 1
+14299:2085  one
+14300:2085  initprop "idx"
+14305:2085  endinit
+14306:2085  initprop "params"
+14311:2085  endinit
+14312:2085  initprop "_hurt1"
+14317:2088  newinit 1
+14322:2089  newarray 2
+14326:2089  string "P_Delay_Frame_37"
+14331:2089  initelem_array 0
+14335:2089  string "P_Delay_Frame_6"
+14340:2089  initelem_array 1
+14344:2089  endinit
+14345:2089  initprop "_delay"
+14350:2090  string "P_Hurt_Hit"
+14355:2090  initprop "_type"
+14360:2091  newinit 1
+14365:2092  int8 2
+14367:2092  initprop "idx"
+14372:2092  endinit
+14373:2092  initprop "params"
+14378:2092  endinit
+14379:2092  initprop "_hurt2"
+14384:2095  newinit 1
+14389:2096  newarray 2
+14393:2096  string "P_Delay_Frame_46"
+14398:2096  initelem_array 0
+14402:2096  string "P_Delay_Frame_3"
+14407:2096  initelem_array 1
+14411:2096  endinit
+14412:2096  initprop "_delay"
+14417:2097  string "P_Hurt_Hit"
+14422:2097  initprop "_type"
+14427:2098  newinit 1
+14432:2099  int8 3
+14434:2099  initprop "idx"
+14439:2099  endinit
+14440:2099  initprop "params"
+14445:2099  endinit
+14446:2099  initprop "_hurt3"
+14451:2102  newinit 1
+14456:2103  newarray 1
+14460:2103  string "P_Delay_Frame_55"
+14465:2103  initelem_array 0
+14469:2103  endinit
+14470:2103  initprop "_delay"
+14475:2104  string "P_Hurt_Hit"
+14480:2104  initprop "_type"
+14485:2105  newinit 1
+14490:2106  int8 4
+14492:2106  initprop "idx"
+14497:2106  endinit
+14498:2106  initprop "params"
+14503:2106  endinit
+14504:2106  initprop "_hurt4"
+14509:2109  newinit 1
+14514:2110  newarray 3
+14518:2110  string "P_Delay_Frame_55"
+14523:2110  initelem_array 0
+14527:2110  string "P_Delay_Frame_4"
+14532:2110  initelem_array 1
+14536:2110  string "P_Delay_Frame_4"
+14541:2110  initelem_array 2
+14545:2110  endinit
+14546:2110  initprop "_delay"
+14551:2111  string "P_Hurt_Fly_Over"
+14556:2111  initprop "_type"
+14561:2112  newinit 1
+14566:2113  int8 5
+14568:2113  initprop "idx"
+14573:2113  endinit
+14574:2113  initprop "params"
+14579:2113  endinit
+14580:2113  initprop "_hurt5"
+14585:2116  newinit 1
+14590:2117  null
+14591:2117  initprop "_delay"
+14596:2118  null
+14597:2118  initprop "_type"
+14602:2118  endinit
+14603:2118  initprop "_effect"
+14608:2120  newinit 1
+14613:2121  null
+14614:2121  initprop "_delay"
+14619:2122  string "P_BaiYin_Effect_From_Mid"
+14624:2122  initprop "_type"
+14629:2122  endinit
+14630:2122  initprop "_effect_from0"
+14635:2126  newinit 1
+14640:2127  null
+14641:2127  initprop "_delay"
+14646:2128  string "P_LuanWu_Effect_To"
+14651:2128  initprop "_type"
+14656:2128  endinit
+14657:2128  initprop "_effect_to"
+14662:2128  endinit
+14663:2128  initprop "_attack"
+14668:2128  endinit
+14669:2128  initprop "baiyin_luanwu"
+14674:2137  newinit 1
+14679:2138  string "template.T_Remote_SS"
+14684:2138  initprop "extend"
+14689:2139  newinit 1
+14694:2140  string "Spawn"
+14699:2140  initprop "type"
+14704:2142  newinit 1
+14709:2143  newarray 2
+14713:2143  string "P_Delay_Frame_37"
+14718:2143  initelem_array 0
+14722:2143  string "P_Delay_Frame_5"
+14727:2143  initelem_array 1
+14731:2143  endinit
+14732:2143  initprop "_delay"
+14737:2144  string "P_Hurt_Back_Over"
+14742:2144  initprop "_type"
+14747:2144  endinit
+14748:2144  initprop "_hurt"
+14753:2147  newinit 1
+14758:2148  null
+14759:2148  initprop "_delay"
+14764:2149  null
+14765:2149  initprop "_type"
+14770:2149  endinit
+14771:2149  initprop "_effect"
+14776:2152  newinit 1
+14781:2153  null
+14782:2153  initprop "_delay"
+14787:2154  string "P_GanLu_Effect_From"
+14792:2154  initprop "_type"
+14797:2154  endinit
+14798:2154  initprop "_effect_from"
+14803:2157  newinit 1
+14808:2158  newarray 2
+14812:2158  string "P_Delay_Frame_30"
+14817:2158  initelem_array 0
+14821:2158  string "P_Delay_Frame_5"
+14826:2158  initelem_array 1
+14830:2158  endinit
+14831:2158  initprop "_delay"
+14836:2159  string "P_Cure_From"
+14841:2159  initprop "_type"
+14846:2159  endinit
+14847:2159  initprop "_effect_from1"
+14852:2162  newinit 1
+14857:2163  null
+14858:2163  initprop "_delay"
+14863:2164  string "P_GanLu_Effect_To"
+14868:2164  initprop "_type"
+14873:2164  endinit
+14874:2164  initprop "_effect_to"
+14879:2164  endinit
+14880:2164  initprop "_attack"
+14885:2164  endinit
+14886:2164  initprop "ganlu"
+14891:2176  newinit 1
+14896:2177  string "template.T_Remote_SS"
+14901:2177  initprop "extend"
+14906:2178  newinit 1
+14911:2179  string "Spawn"
+14916:2179  initprop "type"
+14921:2181  newinit 1
+14926:2182  newarray 2
+14930:2182  string "P_Delay_Frame_50"
+14935:2182  initelem_array 0
+14939:2182  string "P_Delay_Frame_10"
+14944:2182  initelem_array 1
+14948:2182  endinit
+14949:2182  initprop "_delay"
+14954:2183  string "P_Hurt_Back_Over"
+14959:2183  initprop "_type"
+14964:2183  endinit
+14965:2183  initprop "_hurt"
+14970:2186  newinit 1
+14975:2187  null
+14976:2187  initprop "_delay"
+14981:2188  string "P_GanLu_V5_Effect_From"
+14986:2188  initprop "_type"
+14991:2188  endinit
+14992:2188  initprop "_effect_from"
+14997:2191  newinit 1
+15002:2192  newarray 3
+15006:2192  string "P_Delay_Frame_30"
+15011:2192  initelem_array 0
+15015:2192  string "P_Delay_Frame_10"
+15020:2192  initelem_array 1
+15024:2192  string "P_Delay_Frame_10"
+15029:2192  initelem_array 2
+15033:2192  endinit
+15034:2192  initprop "_delay"
+15039:2193  string "P_GanLu_V5_Effect_To"
+15044:2193  initprop "_type"
+15049:2193  endinit
+15050:2193  initprop "_effect_to"
+15055:2193  endinit
+15056:2193  initprop "_attack"
+15061:2193  endinit
+15062:2193  initprop "buyi"
+15067:2219  newinit 1
+15072:2220  string "template.T_Remote_SS"
+15077:2220  initprop "extend"
+15082:2221  newinit 1
+15087:2222  string "Spawn"
+15092:2222  initprop "type"
+15097:2223  newinit 1
+15102:2224  string "P_QiCai_Text"
+15107:2224  initprop "_type"
+15112:2224  endinit
+15113:2224  initprop "_text"
+15118:2226  newinit 1
+15123:2227  newarray 2
+15127:2227  string "P_Delay_Frame_37"
+15132:2227  initelem_array 0
+15136:2227  string "P_Delay_Frame_5"
+15141:2227  initelem_array 1
+15145:2227  endinit
+15146:2227  initprop "_delay"
+15151:2228  string "P_Hurt_Back_Over_No_Text"
+15156:2228  initprop "_type"
+15161:2228  endinit
+15162:2228  initprop "_hurt"
+15167:2230  newinit 1
+15172:2231  newarray 2
+15176:2231  string "P_Delay_Frame_10"
+15181:2231  initelem_array 0
+15185:2231  string "P_Delay_Frame_10"
+15190:2231  initelem_array 1
+15194:2231  endinit
+15195:2231  initprop "_delay"
+15200:2232  string "P_Hurt_Normal_Over_No_Text"
+15205:2232  initprop "_type"
+15210:2232  endinit
+15211:2232  initprop "_hurt1"
+15216:2234  newinit 1
+15221:2235  newarray 3
+15225:2235  string "P_Delay_Frame_10"
+15230:2235  initelem_array 0
+15234:2235  string "P_Delay_Frame_10"
+15239:2235  initelem_array 1
+15243:2235  string "P_Delay_Frame_10"
+15248:2235  initelem_array 2
+15252:2235  endinit
+15253:2235  initprop "_delay"
+15258:2236  string "P_Hurt_Normal_Over_No_Text"
+15263:2236  initprop "_type"
+15268:2236  endinit
+15269:2236  initprop "_hurt2"
+15274:2238  newinit 1
+15279:2239  null
+15280:2239  initprop "_delay"
+15285:2240  null
+15286:2240  initprop "_type"
+15291:2240  endinit
+15292:2240  initprop "_effect"
+15297:2242  newinit 1
+15302:2243  null
+15303:2243  initprop "_delay"
+15308:2244  string "P_QiCai_Effect_From0"
+15313:2244  initprop "_type"
+15318:2244  endinit
+15319:2244  initprop "_effect_from0"
+15324:2246  newinit 1
+15329:2247  newarray 2
+15333:2247  string "P_Delay_Frame_37"
+15338:2247  initelem_array 0
+15342:2247  string "P_Delay_Frame_5"
+15347:2247  initelem_array 1
+15351:2247  endinit
+15352:2247  initprop "_delay"
+15357:2248  string "P_QiCai_Effect_From1"
+15362:2248  initprop "_type"
+15367:2248  endinit
+15368:2248  initprop "_effect_from1"
+15373:2251  newinit 1
+15378:2252  newarray 1
+15382:2252  string "P_Delay_Frame_10"
+15387:2252  initelem_array 0
+15391:2252  endinit
+15392:2252  initprop "_delay"
+15397:2253  newarray 3
+15401:2253  string "P_QiCai_Effect_To"
+15406:2253  initelem_array 0
+15410:2253  string "P_QiCai_Effect_ToR"
+15415:2253  initelem_array 1
+15419:2253  string "P_QiCai_Effect_To"
+15424:2253  initelem_array 2
+15428:2253  endinit
+15429:2253  initprop "_type"
+15434:2253  endinit
+15435:2253  initprop "_effect_to1"
+15440:2256  newinit 1
+15445:2257  newarray 1
+15449:2257  string "P_Delay_Frame_10"
+15454:2257  initelem_array 0
+15458:2257  endinit
+15459:2257  initprop "_delay"
+15464:2258  newarray 3
+15468:2258  string "P_ShuangXiong_Effect_To_BaoJi"
+15473:2258  initelem_array 0
+15477:2258  string "P_ShuangXiong_Effect_To_BaoJi"
+15482:2258  initelem_array 1
+15486:2258  string "P_ShuangXiong_Effect_To_BaoJi"
+15491:2258  initelem_array 2
+15495:2258  endinit
+15496:2258  initprop "_type"
+15501:2258  endinit
+15502:2258  initprop "_effect_to2"
+15507:2260  newinit 1
+15512:2261  newarray 2
+15516:2261  string "P_Delay_Frame_37"
+15521:2261  initelem_array 0
+15525:2261  string "P_Delay_Frame_5"
+15530:2261  initelem_array 1
+15534:2261  endinit
+15535:2261  initprop "_delay"
+15540:2262  string "P_Def_Add_From"
+15545:2262  initprop "_type"
+15550:2262  endinit
+15551:2262  initprop "_buff"
+15556:2262  endinit
+15557:2262  initprop "_attack"
+15562:2262  endinit
+15563:2262  initprop "qicai"
+15568:2268  newinit 1
+15573:2269  string "qicai"
+15578:2269  initprop "extend"
+15583:2270  newinit 1
+15588:2271  newinit 1
+15593:2272  newarray 2
+15597:2272  string "P_Delay_Frame_37"
+15602:2272  initelem_array 0
+15606:2272  string "P_Delay_Frame_5"
+15611:2272  initelem_array 1
+15615:2272  endinit
+15616:2272  initprop "_delay"
+15621:2273  string "P_Def_Add_From"
+15626:2273  initprop "_type"
+15631:2273  endinit
+15632:2273  initprop "_effect_from0"
+15637:2275  newinit 1
+15642:2276  newarray 2
+15646:2276  string "P_Delay_Frame_37"
+15651:2276  initelem_array 0
+15655:2276  string "P_Delay_Frame_10"
+15660:2276  initelem_array 1
+15664:2276  endinit
+15665:2276  initprop "_delay"
+15670:2277  string "P_Cure_From"
+15675:2277  initprop "_type"
+15680:2277  endinit
+15681:2277  initprop "_effect_from1"
+15686:2277  endinit
+15687:2277  initprop "_attack"
+15692:2277  endinit
+15693:2277  initprop "qicai_v4"
+15698:2292  newinit 1
+15703:2293  newinit 1
+15708:2294  newinit 1
+15713:2295  null
+15714:2295  initprop "_delay"
+15719:2296  null
+15720:2296  initprop "_type"
+15725:2296  endinit
+15726:2296  initprop "_effect_to"
+15731:2296  endinit
+15732:2296  initprop "_attack"
+15737:2296  endinit
+15738:2296  initprop "qicai_v5_enter"
+15743:2300  newinit 1
+15748:2301  string "template.T_Remote_SS"
+15753:2301  initprop "extend"
+15758:2302  newinit 1
+15763:2303  string "Spawn"
+15768:2303  initprop "type"
+15773:2304  newinit 1
+15778:2305  newarray 4
+15782:2305  string "P_Delay_Frame_37"
+15787:2305  initelem_array 0
+15791:2305  string "P_Delay_Frame_5"
+15796:2305  initelem_array 1
+15800:2305  string "P_Delay_Frame_10"
+15805:2305  initelem_array 2
+15809:2305  string "P_Delay_Frame_5"
+15814:2305  initelem_array 3
+15818:2305  endinit
+15819:2305  initprop "_delay"
+15824:2306  string "P_Hurt_Back_Over_NOHURT"
+15829:2306  initprop "_type"
+15834:2306  endinit
+15835:2306  initprop "_hurt"
+15840:2308  newinit 1
+15845:2309  null
+15846:2309  initprop "_delay"
+15851:2310  null
+15852:2310  initprop "_type"
+15857:2310  endinit
+15858:2310  initprop "_effect"
+15863:2312  newinit 1
+15868:2313  null
+15869:2313  initprop "_delay"
+15874:2314  string "P_BaiYin_Effect_From_Mid"
+15879:2314  initprop "_type"
+15884:2314  endinit
+15885:2314  initprop "_effect_from0"
+15890:2318  newinit 1
+15895:2319  newarray 2
+15899:2319  string "P_Delay_Frame_10"
+15904:2319  initelem_array 0
+15908:2319  string "P_Delay_Frame_10"
+15913:2319  initelem_array 1
+15917:2319  endinit
+15918:2319  initprop "_delay"
+15923:2320  newarray 4
+15927:2320  string "P_QiCai_Effect_To"
+15932:2320  initelem_array 0
+15936:2320  string "P_QiCai_Effect_ToR"
+15941:2320  initelem_array 1
+15945:2320  string "P_QiCai_Effect_To"
+15950:2320  initelem_array 2
+15954:2320  string "P_Delay_Frame_5"
+15959:2320  initelem_array 3
+15963:2320  endinit
+15964:2320  initprop "_type"
+15969:2320  endinit
+15970:2320  initprop "_effect_to1"
+15975:2324  newinit 1
+15980:2325  newarray 2
+15984:2325  string "P_Delay_Frame_37"
+15989:2325  initelem_array 0
+15993:2325  string "P_Delay_Frame_5"
+15998:2325  initelem_array 1
+16002:2325  endinit
+16003:2325  initprop "_delay"
+16008:2326  string "P_Def_Add_From"
+16013:2326  initprop "_type"
+16018:2326  endinit
+16019:2326  initprop "_buff"
+16024:2326  endinit
+16025:2326  initprop "_attack"
+16030:2326  endinit
+16031:2326  initprop "baiyin_qicai"
+16036:2332  newinit 1
+16041:2333  string "template.T_Remote_SS"
+16046:2333  initprop "extend"
+16051:2334  string "P_Super_Skill"
+16056:2334  initprop "_name"
+16061:2335  newinit 1
+16066:2336  string "Spawn"
+16071:2336  initprop "type"
+16076:2337  newinit 1
+16081:2338  newarray 1
+16085:2338  string "P_Delay_Frame_37"
+16090:2338  initelem_array 0
+16094:2338  endinit
+16095:2338  initprop "_delay"
+16100:2339  string "P_Hurt_Back_Over"
+16105:2339  initprop "_type"
+16110:2339  endinit
+16111:2339  initprop "_hurt"
+16116:2341  newinit 1
+16121:2342  null
+16122:2342  initprop "_delay"
+16127:2343  null
+16128:2343  initprop "_type"
+16133:2343  endinit
+16134:2343  initprop "_effect"
+16139:2345  newinit 1
+16144:2346  null
+16145:2346  initprop "_delay"
+16150:2347  string "P_GuiCai_Effect_From"
+16155:2347  initprop "_type"
+16160:2347  endinit
+16161:2347  initprop "_effect_from"
+16166:2350  newinit 1
+16171:2351  null
+16172:2351  initprop "_delay"
+16177:2352  string "P_GuiCai_Effect_To"
+16182:2352  initprop "_type"
+16187:2353  null
+16188:2353  initprop "_black_end"
+16193:2353  endinit
+16194:2353  initprop "_effect_to"
+16199:2355  newinit 1
+16204:2356  string "P_Delay_Frame_37"
+16209:2356  initprop "_delay"
+16214:2357  string "P_Freeze_Begin"
+16219:2357  initprop "_type"
+16224:2358  string "P_SS_BG_End"
+16229:2358  initprop "_black_end"
+16234:2358  endinit
+16235:2358  initprop "_effect_to1"
+16240:2358  endinit
+16241:2358  initprop "_attack"
+16246:2358  endinit
+16247:2358  initprop "guicai"
+16252:2372  newinit 1
+16257:2373  string "template.T_Remote_SS"
+16262:2373  initprop "extend"
+16267:2374  newinit 1
+16272:2375  newinit 1
+16277:2376  string "P_Delay_Frame_5"
+16282:2376  initprop "_delay"
+16287:2377  string "P_Hurt_Back_Over"
+16292:2377  initprop "_type"
+16297:2377  endinit
+16298:2377  initprop "_hurt"
+16303:2379  newinit 1
+16308:2380  null
+16309:2380  initprop "_delay"
+16314:2381  null
+16315:2381  initprop "_type"
+16320:2381  endinit
+16321:2381  initprop "_effect"
+16326:2383  newinit 1
+16331:2384  null
+16332:2384  initprop "_delay"
+16337:2385  string "P_FenCheng_Effect_From"
+16342:2385  initprop "_type"
+16347:2385  endinit
+16348:2385  initprop "_effect_from"
+16353:2387  newinit 1
+16358:2388  null
+16359:2388  initprop "_delay"
+16364:2389  string "P_FenCheng_Effect_To"
+16369:2389  initprop "_type"
+16374:2389  endinit
+16375:2389  initprop "_effect_to"
+16380:2391  newarray 3
+16384:2391  string "P_Delay_Frame_5"
+16389:2391  initelem_array 0
+16393:2391  string "P_Delay_Frame_4"
+16398:2391  initelem_array 1
+16402:2391  string "P_Def_Sub_To"
+16407:2391  initelem_array 2
+16411:2391  endinit
+16412:2391  initprop "_buff"
+16417:2391  endinit
+16418:2391  initprop "_attack"
+16423:2391  endinit
+16424:2391  initprop "fencheng"
+16429:2397  newinit 1
+16434:2398  string "template.T_Remote_SS"
+16439:2398  initprop "extend"
+16444:2399  newinit 1
+16449:2400  newinit 1
+16454:2401  newarray 2
+16458:2401  string "P_Delay_Frame_50"
+16463:2401  initelem_array 0
+16467:2401  string "P_Delay_Frame_5"
+16472:2401  initelem_array 1
+16476:2401  endinit
+16477:2401  initprop "_delay"
+16482:2402  string "P_Hurt_Fly_Over"
+16487:2402  initprop "_type"
+16492:2402  endinit
+16493:2402  initprop "_hurt"
+16498:2404  newinit 1
+16503:2405  newarray 2
+16507:2405  string "P_Delay_Frame_50"
+16512:2405  initelem_array 0
+16516:2405  string "P_Delay_Frame_2"
+16521:2405  initelem_array 1
+16525:2405  endinit
+16526:2405  initprop "_delay"
+16531:2406  string "P_TiaoXin_Effect_to"
+16536:2406  initprop "_type"
+16541:2406  endinit
+16542:2406  initprop "_effect"
+16547:2408  newinit 1
+16552:2409  null
+16553:2409  initprop "_delay"
+16558:2410  string "P_TiaoXin_Effect_From0"
+16563:2410  initprop "_type"
+16568:2410  endinit
+16569:2410  initprop "_effect_from0"
+16574:2412  newinit 1
+16579:2413  newarray 2
+16583:2413  string "P_Delay_Frame_37"
+16588:2413  initelem_array 0
+16592:2413  string "P_Delay_Frame_7"
+16597:2413  initelem_array 1
+16601:2413  endinit
+16602:2413  initprop "_delay"
+16607:2414  string "P_TiaoXin_Effect_From1"
+16612:2414  initprop "_type"
+16617:2414  endinit
+16618:2414  initprop "_effect_from1"
+16623:2417  newarray 2
+16627:2417  string "P_Delay_Frame_10"
+16632:2417  initelem_array 0
+16636:2417  string "P_BuffSub_Effect_ToByNo"
+16641:2417  initelem_array 1
+16645:2417  endinit
+16646:2417  initprop "_buff_to1"
+16651:2418  newarray 2
+16655:2418  string "P_Delay_Frame_10"
+16660:2418  initelem_array 0
+16664:2418  string "P_Def_Sub_ToByDef"
+16669:2418  initelem_array 1
+16673:2418  endinit
+16674:2418  initprop "_buff_to2"
+16679:2419  newarray 3
+16683:2419  string "P_Delay_Frame_10"
+16688:2419  initelem_array 0
+16692:2419  string "P_Delay_Frame_7"
+16697:2419  initelem_array 1
+16701:2419  string "P_Def_Add_From"
+16706:2419  initelem_array 2
+16710:2419  endinit
+16711:2419  initprop "_buff_from1"
+16716:2420  newarray 3
+16720:2420  string "P_Delay_Frame_10"
+16725:2420  initelem_array 0
+16729:2420  string "P_Delay_Frame_7"
+16734:2420  initelem_array 1
+16738:2420  string "P_BuffAdd_Effect_From"
+16743:2420  initelem_array 2
+16747:2420  endinit
+16748:2420  initprop "_buff_from2"
+16753:2420  endinit
+16754:2420  initprop "_attack"
+16759:2420  endinit
+16760:2420  initprop "tiaoxin"
+16765:2424  newinit 1
+16770:2425  string "fencheng"
+16775:2425  initprop "extend"
+16780:2426  newinit 1
+16785:2427  null
+16786:2427  initprop "_buff"
+16791:2427  endinit
+16792:2427  initprop "_attack"
+16797:2427  endinit
+16798:2427  initprop "caijian"
+16803:2430  newinit 1
+16808:2431  string "fencheng"
+16813:2431  initprop "extend"
+16818:2432  newinit 1
+16823:2433  null
+16824:2433  initprop "_buff"
+16829:2433  endinit
+16830:2433  initprop "_attack"
+16835:2433  endinit
+16836:2433  initprop "zhiyan"
+16841:2438  newinit 1
+16846:2439  string "template.T_Remote_SS"
+16851:2439  initprop "extend"
+16856:2440  newinit 1
+16861:2441  newinit 1
+16866:2442  string "P_Delay_Frame_5"
+16871:2442  initprop "_delay"
+16876:2443  string "P_Hurt_Fly_Over"
+16881:2443  initprop "_type"
+16886:2443  endinit
+16887:2443  initprop "_hurt"
+16892:2445  newinit 1
+16897:2446  null
+16898:2446  initprop "_delay"
+16903:2447  null
+16904:2447  initprop "_type"
+16909:2447  endinit
+16910:2447  initprop "_effect"
+16915:2449  newinit 1
+16920:2450  null
+16921:2450  initprop "_delay"
+16926:2451  string "P_XuanFeng_Effect_From"
+16931:2451  initprop "_type"
+16936:2451  endinit
+16937:2451  initprop "_effect_from"
+16942:2453  newinit 1
+16947:2454  null
+16948:2454  initprop "_delay"
+16953:2455  string "P_XuanFeng_Effect_To"
+16958:2455  initprop "_type"
+16963:2455  endinit
+16964:2455  initprop "_effect_to"
+16969:2457  newarray 3
+16973:2457  string "P_Delay_Frame_10"
+16978:2457  initelem_array 0
+16982:2457  string "P_Delay_Frame_3"
+16987:2457  initelem_array 1
+16991:2457  string "P_Atk_Sub_To"
+16996:2457  initelem_array 2
+17000:2457  endinit
+17001:2457  initprop "_buff"
+17006:2457  endinit
+17007:2457  initprop "_attack"
+17012:2457  endinit
+17013:2457  initprop "xuanfeng"
+17018:2464  newinit 1
+17023:2465  string "template.T_Remote_0"
+17028:2465  initprop "extend"
+17033:2466  newinit 1
+17038:2467  string "Spawn"
+17043:2467  initprop "type"
+17048:2468  newinit 1
+17053:2469  string "P_Hurt_Normal_Over"
+17058:2469  initprop "_type"
+17063:2469  endinit
+17064:2469  initprop "_hurt"
+17069:2471  newinit 1
+17074:2471  endinit
+17075:2471  initprop "_effect"
+17080:2471  endinit
+17081:2471  initprop "_attack"
+17086:2471  endinit
+17087:2471  initprop "seli_TEST"
+17092:2479  newinit 1
+17097:2480  string "template.T_Remote_SS"
+17102:2480  initprop "extend"
+17107:2481  newinit 1
+17112:2482  string "Spawn"
+17117:2482  initprop "type"
+17122:2483  newinit 1
+17127:2484  string "P_GuiPu_Effect_From_Mid"
+17132:2484  initprop "_type"
+17137:2484  endinit
+17138:2484  initprop "_effect_from"
+17143:2486  newinit 1
+17148:2487  null
+17149:2487  initprop "_delay"
+17154:2488  null
+17155:2488  initprop "_type"
+17160:2488  endinit
+17161:2488  initprop "_hurt"
+17166:2490  newinit 1
+17171:2491  newarray 1
+17175:2491  string "P_Delay_Frame_30"
+17180:2491  initelem_array 0
+17184:2491  endinit
+17185:2491  initprop "_delay"
+17190:2492  string "P_GuiPu_Effect_To"
+17195:2492  initprop "_type"
+17200:2492  endinit
+17201:2492  initprop "_effect_to"
+17206:2494  newinit 1
+17211:2495  newarray 1
+17215:2495  string "P_Delay_Frame_37"
+17220:2495  initelem_array 0
+17224:2495  endinit
+17225:2495  initprop "_delay"
+17230:2496  string "P_Cure_To"
+17235:2496  initprop "_type"
+17240:2496  endinit
+17241:2496  initprop "_effect_to1"
+17246:2496  endinit
+17247:2496  initprop "_attack"
+17252:2496  endinit
+17253:2496  initprop "guipu"
+17258:2507  newinit 1
+17263:2509  string "template.T_Remote_SS"
+17268:2509  initprop "extend"
+17273:2510  newinit 1
+17278:2511  string "Spawn"
+17283:2511  initprop "type"
+17288:2512  newinit 1
+17293:2513  string "P_ZhengNan_Effect_From"
+17298:2513  initprop "_type"
+17303:2513  endinit
+17304:2513  initprop "_effect_from"
+17309:2515  newinit 1
+17314:2516  null
+17315:2516  initprop "_delay"
+17320:2517  null
+17321:2517  initprop "_type"
+17326:2517  endinit
+17327:2517  initprop "_hurt"
+17332:2519  newinit 1
+17337:2520  newarray 1
+17341:2520  string "P_Delay_Frame_30"
+17346:2520  initelem_array 0
+17350:2520  endinit
+17351:2520  initprop "_delay"
+17356:2521  string "P_ZhengNan_Effect_To"
+17361:2521  initprop "_type"
+17366:2521  endinit
+17367:2521  initprop "_effect_to"
+17372:2521  endinit
+17373:2521  initprop "_attack"
+17378:2521  endinit
+17379:2521  initprop "zhengnan"
+17384:2526  newinit 1
+17389:2527  newinit 1
+17394:2528  string "Spawn"
+17399:2528  initprop "type"
+17404:2537  newinit 1
+17409:2538  null
+17410:2538  initprop "_delay"
+17415:2539  string "P_Cure_To"
+17420:2539  initprop "_type"
+17425:2539  endinit
+17426:2539  initprop "_effect_to"
+17431:2539  endinit
+17432:2539  initprop "_attack"
+17437:2539  endinit
+17438:2539  initprop "zhengnan_hp_add"
+17443:2546  newinit 1
+17448:2548  newinit 1
+17453:2549  string "Spawn"
+17458:2549  initprop "type"
+17463:2550  newinit 1
+17468:2551  null
+17469:2551  initprop "_delay"
+17474:2552  null
+17475:2552  initprop "_type"
+17480:2552  endinit
+17481:2552  initprop "_hurt"
+17486:2554  newinit 1
+17491:2555  null
+17492:2555  initprop "_delay"
+17497:2556  null
+17498:2556  initprop "_type"
+17503:2556  endinit
+17504:2556  initprop "_effect_from"
+17509:2558  newinit 1
+17514:2559  newarray 1
+17518:2559  string "P_Delay_Frame_5"
+17523:2559  initelem_array 0
+17527:2559  endinit
+17528:2559  initprop "_delay"
+17533:2560  string "P_QingNangDun_Effect_To"
+17538:2560  initprop "_type"
+17543:2560  endinit
+17544:2560  initprop "_effect_to"
+17549:2560  endinit
+17550:2560  initprop "_attack"
+17555:2560  endinit
+17556:2560  initprop "qingnang_dun"
+17561:2565  newinit 1
+17566:2566  newinit 1
+17571:2567  string "Spawn"
+17576:2567  initprop "type"
+17581:2568  newinit 1
+17586:2569  null
+17587:2569  initprop "_delay"
+17592:2570  null
+17593:2570  initprop "_type"
+17598:2570  endinit
+17599:2570  initprop "_hurt"
+17604:2572  newinit 1
+17609:2573  null
+17610:2573  initprop "_delay"
+17615:2574  string "P_ZaiQi_Effect_From"
+17620:2574  initprop "_type"
+17625:2574  endinit
+17626:2574  initprop "_effect_from"
+17631:2576  newinit 1
+17636:2577  newarray 1
+17640:2577  string "P_Delay_Frame_55"
+17645:2577  initelem_array 0
+17649:2577  endinit
+17650:2577  initprop "_delay"
+17655:2578  string "P_Cure_To"
+17660:2578  initprop "_type"
+17665:2578  endinit
+17666:2578  initprop "_effect_to"
+17671:2578  endinit
+17672:2578  initprop "_attack"
+17677:2578  endinit
+17678:2578  initprop "zaiqi"
+17683:2585  newinit 1
+17688:2587  newinit 1
+17693:2588  string "Spawn"
+17698:2588  initprop "type"
+17703:2589  newinit 1
+17708:2590  null
+17709:2590  initprop "_delay"
+17714:2591  null
+17715:2591  initprop "_type"
+17720:2591  endinit
+17721:2591  initprop "_hurt"
+17726:2593  newinit 1
+17731:2594  null
+17732:2594  initprop "_delay"
+17737:2595  null
+17738:2595  initprop "_type"
+17743:2595  endinit
+17744:2595  initprop "_effect_from"
+17749:2597  newinit 1
+17754:2598  newarray 1
+17758:2598  string "P_Delay_Frame_5"
+17763:2598  initelem_array 0
+17767:2598  endinit
+17768:2598  initprop "_delay"
+17773:2599  string "P_ZaiQi_Begin"
+17778:2599  initprop "_type"
+17783:2599  endinit
+17784:2599  initprop "_effect_to"
+17789:2599  endinit
+17790:2599  initprop "_attack"
+17795:2599  endinit
+17796:2599  initprop "zaiqi_add"
+17801:2604  newinit 1
+17806:2606  newinit 1
+17811:2607  string "Spawn"
+17816:2607  initprop "type"
+17821:2608  newinit 1
+17826:2609  null
+17827:2609  initprop "_delay"
+17832:2610  null
+17833:2610  initprop "_type"
+17838:2610  endinit
+17839:2610  initprop "_hurt"
+17844:2612  newinit 1
+17849:2613  null
+17850:2613  initprop "_delay"
+17855:2614  null
+17856:2614  initprop "_type"
+17861:2614  endinit
+17862:2614  initprop "_effect_from"
+17867:2616  newinit 1
+17872:2617  newarray 1
+17876:2617  string "P_Delay_Frame_5"
+17881:2617  initelem_array 0
+17885:2617  endinit
+17886:2617  initprop "_delay"
+17891:2618  string "P_ZaiQi_End"
+17896:2618  initprop "_type"
+17901:2618  endinit
+17902:2618  initprop "_effect_to"
+17907:2618  endinit
+17908:2618  initprop "_attack"
+17913:2618  endinit
+17914:2618  initprop "zaiqi_end"
+17919:2624  newinit 1
+17924:2625  string "template.T_Remote_SS"
+17929:2625  initprop "extend"
+17934:2633  newinit 1
+17939:2634  string "Spawn"
+17944:2634  initprop "type"
+17949:2646  newinit 1
+17954:2647  newarray 2
+17958:2647  string "P_Delay_Frame_30"
+17963:2647  initelem_array 0
+17967:2647  string "P_Delay_Frame_6"
+17972:2647  initelem_array 1
+17976:2647  endinit
+17977:2647  initprop "_delay"
+17982:2648  string "P_Hurt_Over"
+17987:2648  initprop "_type"
+17992:2648  endinit
+17993:2648  initprop "_hurt"
+17998:2650  newinit 1
+18003:2651  null
+18004:2651  initprop "_delay"
+18009:2652  string "P_ZhiDao_Effect_From_01"
+18014:2652  initprop "_type"
+18019:2652  endinit
+18020:2652  initprop "_effect_from1"
+18025:2654  newinit 1
+18030:2655  newarray 2
+18034:2655  string "P_Delay_Frame_26"
+18039:2655  initelem_array 0
+18043:2655  string "P_Delay_Frame_2"
+18048:2655  initelem_array 1
+18052:2655  endinit
+18053:2655  initprop "_delay"
+18058:2656  string "P_ZhiDao_Effect_From_02"
+18063:2656  initprop "_type"
+18068:2656  endinit
+18069:2656  initprop "_effect_from2"
+18074:2658  newinit 1
+18079:2659  newarray 2
+18083:2659  string "P_Delay_Frame_55"
+18088:2659  initelem_array 0
+18092:2659  string "P_Delay_Frame_2"
+18097:2659  initelem_array 1
+18101:2659  endinit
+18102:2659  initprop "_delay"
+18107:2660  string "P_Atk_Add_From"
+18112:2660  initprop "_type"
+18117:2660  endinit
+18118:2660  initprop "_effect_from_atkUp"
+18123:2662  newinit 1
+18128:2663  newarray 3
+18132:2663  string "P_Delay_Frame_68"
+18137:2663  initelem_array 0
+18141:2663  string "P_Delay_Frame_11"
+18146:2663  initelem_array 1
+18150:2663  string "P_Delay_Frame_3"
+18155:2663  initelem_array 2
+18159:2663  endinit
+18160:2663  initprop "_delay"
+18165:2664  string "P_Def_Add_From"
+18170:2664  initprop "_type"
+18175:2664  endinit
+18176:2664  initprop "_effect_from_defUp"
+18181:2666  newinit 1
+18186:2667  newarray 2
+18190:2667  string "P_Delay_Frame_7"
+18195:2667  initelem_array 0
+18199:2667  string "P_Delay_Frame_5"
+18204:2667  initelem_array 1
+18208:2667  endinit
+18209:2667  initprop "_delay"
+18214:2668  string "P_ZhiDao_Effect_To"
+18219:2668  initprop "_type"
+18224:2668  endinit
+18225:2668  initprop "_effect_to1"
+18230:2670  newinit 1
+18235:2671  newarray 2
+18239:2671  string "P_Delay_Frame_26"
+18244:2671  initelem_array 0
+18248:2671  string "P_Delay_Frame_5"
+18253:2671  initelem_array 1
+18257:2671  endinit
+18258:2671  initprop "_delay"
+18263:2672  string "P_Atk_Sub_To"
+18268:2672  initprop "_type"
+18273:2672  endinit
+18274:2672  initprop "_effect_to_atkSub"
+18279:2675  newinit 1
+18284:2676  newarray 2
+18288:2676  string "P_Delay_Frame_46"
+18293:2676  initelem_array 0
+18297:2676  string "P_Delay_Frame_10"
+18302:2676  initelem_array 1
+18306:2676  endinit
+18307:2676  initprop "_delay"
+18312:2677  string "P_Def_Sub_To"
+18317:2677  initprop "_type"
+18322:2677  endinit
+18323:2677  initprop "_effect_to_DefSub"
+18328:2677  endinit
+18329:2677  initprop "_attack"
+18334:2677  endinit
+18335:2677  initprop "zhidao"
+18340:2683  newinit 1
+18345:2685  string "template.T_Remote_SS"
+18350:2685  initprop "extend"
+18355:2686  newinit 1
+18360:2687  string "Spawn"
+18365:2687  initprop "type"
+18370:2688  newinit 1
+18375:2689  null
+18376:2689  initprop "_delay"
+18381:2690  null
+18382:2690  initprop "_type"
+18387:2690  endinit
+18388:2690  initprop "_effect_from"
+18393:2692  newinit 1
+18398:2693  null
+18399:2693  initprop "_delay"
+18404:2694  null
+18405:2694  initprop "_type"
+18410:2694  endinit
+18411:2694  initprop "_hurt"
+18416:2696  newinit 1
+18421:2697  null
+18422:2697  initprop "_delay"
+18427:2698  string "P_JiLi_Effect_To_Add"
+18432:2698  initprop "_type"
+18437:2698  endinit
+18438:2698  initprop "_effect_to_add"
+18443:2700  newinit 1
+18448:2701  null
+18449:2701  initprop "_delay"
+18454:2702  string "P_Atk_Add_To_Add"
+18459:2702  initprop "_type"
+18464:2702  endinit
+18465:2702  initprop "_effect_to_not_fs_atkUp"
+18470:2704  newinit 1
+18475:2706  string "P_JiLi_Effect_To_Reduce"
+18480:2706  initprop "_type"
+18485:2706  endinit
+18486:2706  initprop "_effect_to"
+18491:2708  newinit 1
+18496:2710  string "P_Atk_Sub_To_Reduce"
+18501:2710  initprop "_type"
+18506:2710  endinit
+18507:2710  initprop "_effect_to_atkSub"
+18512:2710  endinit
+18513:2710  initprop "_attack"
+18518:2710  endinit
+18519:2710  initprop "jili"
+18524:2718  newinit 1
+18529:2719  string "template.T_SS"
+18534:2719  initprop "extend"
+18539:2728  newinit 1
+18544:2729  string "Spawn"
+18549:2729  initprop "type"
+18554:2745  newinit 1
+18559:2746  null
+18560:2746  initprop "_delay"
+18565:2747  string "P_MuMu_Effect_From_01"
+18570:2747  initprop "_type"
+18575:2747  endinit
+18576:2747  initprop "_effect_from1"
+18581:2749  newinit 1
+18586:2750  newarray 2
+18590:2750  string "P_Delay_Frame_7"
+18595:2750  initelem_array 0
+18599:2750  string "P_Delay_Frame_5"
+18604:2750  initelem_array 1
+18608:2750  endinit
+18609:2750  initprop "_delay"
+18614:2751  string "P_MuMu_Effect_From_Mid"
+18619:2751  initprop "_type"
+18624:2751  endinit
+18625:2751  initprop "_effect_from2"
+18630:2758  newinit 1
+18635:2759  newarray 2
+18639:2759  string "P_Delay_Frame_4"
+18644:2759  initelem_array 0
+18648:2759  string "P_Delay_Frame_10"
+18653:2759  initelem_array 1
+18657:2759  endinit
+18658:2759  initprop "_delay"
+18663:2760  string "P_Def_Add_From"
+18668:2760  initprop "_type"
+18673:2760  endinit
+18674:2760  initprop "_buff_from"
+18679:2762  newinit 1
+18684:2763  newarray 2
+18688:2763  string "P_Delay_Frame_26"
+18693:2763  initelem_array 0
+18697:2763  string "P_Delay_Frame_2"
+18702:2763  initelem_array 1
+18706:2763  endinit
+18707:2763  initprop "_delay"
+18712:2764  string "P_MuMu_Effect_To"
+18717:2764  initprop "_type"
+18722:2764  endinit
+18723:2764  initprop "_effect_to1"
+18728:2772  newinit 1
+18733:2773  newarray 3
+18737:2773  string "P_Delay_Frame_26"
+18742:2773  initelem_array 0
+18746:2773  string "P_Delay_Frame_11"
+18751:2773  initelem_array 1
+18755:2773  string "P_Delay_Frame_3"
+18760:2773  initelem_array 2
+18764:2773  endinit
+18765:2773  initprop "_delay"
+18770:2774  string "P_Def_Sub_To"
+18775:2774  initprop "_type"
+18780:2774  endinit
+18781:2774  initprop "_buff_to"
+18786:2774  endinit
+18787:2774  initprop "_attack"
+18792:2774  endinit
+18793:2774  initprop "mumu"
+18798:2780  newinit 1
+18803:2781  string "template.T_Remote_SS"
+18808:2781  initprop "extend"
+18813:2782  newinit 1
+18818:2783  string "Spawn"
+18823:2783  initprop "type"
+18828:2784  newinit 1
+18833:2785  null
+18834:2785  initprop "_delay"
+18839:2786  string "P_Hurt_Normal_Over"
+18844:2786  initprop "_type"
+18849:2786  endinit
+18850:2786  initprop "_hurt"
+18855:2788  newinit 1
+18860:2789  newarray 2
+18864:2789  string "P_Delay_Frame_37"
+18869:2789  initelem_array 0
+18873:2789  string "P_Delay_Frame_11"
+18878:2789  initelem_array 1
+18882:2789  endinit
+18883:2789  initprop "_delay"
+18888:2790  string "P_FuHun_Effect_From"
+18893:2790  initprop "_type"
+18898:2790  endinit
+18899:2790  initprop "_effect_from"
+18904:2792  newinit 1
+18909:2793  null
+18910:2793  initprop "_delay"
+18915:2794  string "P_FuHun_Effect_To"
+18920:2794  initprop "_type"
+18925:2794  endinit
+18926:2794  initprop "_effect_to"
+18931:2794  endinit
+18932:2794  initprop "_attack"
+18937:2794  endinit
+18938:2794  initprop "fuhun_skill"
+18943:2800  newinit 1
+18948:2801  string "template.T_Remote_SS"
+18953:2801  initprop "extend"
+18958:2802  newinit 1
+18963:2803  string "Spawn"
+18968:2803  initprop "type"
+18973:2804  newinit 1
+18978:2805  null
+18979:2805  initprop "_delay"
+18984:2806  null
+18985:2806  initprop "_type"
+18990:2806  endinit
+18991:2806  initprop "_hurt"
+18996:2808  newinit 1
+19001:2809  null
+19002:2809  initprop "_delay"
+19007:2810  string "P_PanDing_Effect_To"
+19012:2810  initprop "_type"
+19017:2810  endinit
+19018:2810  initprop "_effect_to"
+19023:2812  newinit 1
+19028:2813  newarray 2
+19032:2813  string "P_Delay_Frame_37"
+19037:2813  initelem_array 0
+19041:2813  string "P_Delay_Frame_6"
+19046:2813  initelem_array 1
+19050:2813  endinit
+19051:2813  initprop "_delay"
+19056:2814  string "P_PanDing_Effect_To01"
+19061:2814  initprop "_type"
+19066:2814  endinit
+19067:2814  initprop "_effect_to1"
+19072:2816  newinit 1
+19077:2817  newarray 2
+19081:2817  string "P_Delay_Frame_37"
+19086:2817  initelem_array 0
+19090:2817  string "P_Delay_Frame_6"
+19095:2817  initelem_array 1
+19099:2817  endinit
+19100:2817  initprop "_delay"
+19105:2818  string "P_PanDing_Effect_To02"
+19110:2818  initprop "_type"
+19115:2818  endinit
+19116:2818  initprop "_effect_to2"
+19121:2820  newinit 1
+19126:2821  newarray 2
+19130:2821  string "P_Delay_Frame_37"
+19135:2821  initelem_array 0
+19139:2821  string "P_Delay_Frame_6"
+19144:2821  initelem_array 1
+19148:2821  endinit
+19149:2821  initprop "_delay"
+19154:2822  string "P_PanDing_Effect_To03"
+19159:2822  initprop "_type"
+19164:2822  endinit
+19165:2822  initprop "_effect_to3"
+19170:2822  endinit
+19171:2822  initprop "_attack"
+19176:2822  endinit
+19177:2822  initprop "panding"
+19182:2827  newinit 1
+19187:2828  string "template.T_Remote_Super"
+19192:2828  initprop "extend"
+19197:2829  newinit 1
+19202:2830  string "Spawn"
+19207:2830  initprop "type"
+19212:2831  newinit 1
+19217:2832  newarray 3
+19221:2832  string "P_Delay_Frame_37"
+19226:2832  initelem_array 0
+19230:2832  string "P_Delay_Frame_30"
+19235:2832  initelem_array 1
+19239:2832  string "P_Delay_Frame_50"
+19244:2832  initelem_array 2
+19248:2832  endinit
+19249:2832  initprop "_delay"
+19254:2833  string "P_Hurt_Back_Over"
+19259:2833  initprop "_type"
+19264:2834  newinit 1
+19269:2835  name "xs"
+19274:2835  getprop "Constant_EffectPlayType_Single_Random"
+19279:2835  initprop "effectType"
+19284:2835  endinit
+19285:2835  initprop "params"
+19290:2835  endinit
+19291:2835  initprop "_hurt"
+19296:2839  newinit 1
+19301:2840  null
+19302:2840  initprop "_delay"
+19307:2841  string "P_PanDing_Effect_From"
+19312:2841  initprop "_type"
+19317:2841  endinit
+19318:2841  initprop "_effect_from"
+19323:2843  newinit 1
+19328:2844  newarray 2
+19332:2844  string "P_Delay_Frame_37"
+19337:2844  initelem_array 0
+19341:2844  string "P_Delay_Frame_6"
+19346:2844  initelem_array 1
+19350:2844  endinit
+19351:2844  initprop "_delay"
+19356:2845  string "P_PanDing_Effect_From01"
+19361:2845  initprop "_type"
+19366:2845  endinit
+19367:2845  initprop "_effect_from1"
+19372:2847  newinit 1
+19377:2848  newarray 2
+19381:2848  string "P_Delay_Frame_37"
+19386:2848  initelem_array 0
+19390:2848  string "P_Delay_Frame_6"
+19395:2848  initelem_array 1
+19399:2848  endinit
+19400:2848  initprop "_delay"
+19405:2849  string "P_PanDing_Effect_From02"
+19410:2849  initprop "_type"
+19415:2849  endinit
+19416:2849  initprop "_effect_from2"
+19421:2851  newinit 1
+19426:2852  newarray 2
+19430:2852  string "P_Delay_Frame_37"
+19435:2852  initelem_array 0
+19439:2852  string "P_Delay_Frame_6"
+19444:2852  initelem_array 1
+19448:2852  endinit
+19449:2852  initprop "_delay"
+19454:2853  string "P_PanDing_Effect_From03"
+19459:2853  initprop "_type"
+19464:2853  endinit
+19465:2853  initprop "_effect_from3"
+19470:2855  newinit 1
+19475:2856  newarray 2
+19479:2856  string "P_Delay_Frame_37"
+19484:2856  initelem_array 0
+19488:2856  string "P_Delay_Frame_50"
+19493:2856  initelem_array 1
+19497:2856  endinit
+19498:2856  initprop "_delay"
+19503:2857  string "P_SPLeiJi_Effect_To"
+19508:2857  initprop "_type"
+19513:2857  endinit
+19514:2857  initprop "_effect_to"
+19519:2857  endinit
+19520:2857  initprop "_attack"
+19525:2857  endinit
+19526:2857  initprop "spleidian"
+19531:2861  newinit 1
+19536:2862  newinit 1
+19541:2863  string "Spawn"
+19546:2863  initprop "type"
+19551:2864  newinit 1
+19556:2865  null
+19557:2865  initprop "_delay"
+19562:2866  string "P_Hurt_Back_Over"
+19567:2866  initprop "_type"
+19572:2866  endinit
+19573:2866  initprop "_hurt"
+19578:2868  newinit 1
+19583:2869  null
+19584:2869  initprop "_delay"
+19589:2870  string "P_SPLeiJi_Effect_To"
+19594:2870  initprop "_type"
+19599:2870  endinit
+19600:2870  initprop "_effect_to"
+19605:2870  endinit
+19606:2870  initprop "_attack"
+19611:2870  endinit
+19612:2870  initprop "spleidian_extra"
+19617:2874  newinit 1
+19622:2875  newinit 1
+19627:2876  string "Spawn"
+19632:2876  initprop "type"
+19637:2877  newinit 1
+19642:2878  null
+19643:2878  initprop "_delay"
+19648:2879  string "P_Hurt_Back_Over"
+19653:2879  initprop "_type"
+19658:2879  endinit
+19659:2879  initprop "_hurt"
+19664:2881  newinit 1
+19669:2882  null
+19670:2882  initprop "_delay"
+19675:2883  string "P_SPLeiJi_Effect_To"
+19680:2883  initprop "_type"
+19685:2883  endinit
+19686:2883  initprop "_effect_to"
+19691:2883  endinit
+19692:2883  initprop "_attack"
+19697:2883  endinit
+19698:2883  initprop "spleiji_extra"
+19703:2888  newinit 1
+19708:2889  string "template.T_Remote_SS"
+19713:2889  initprop "extend"
+19718:2890  newinit 1
+19723:2891  string "Spawn"
+19728:2891  initprop "type"
+19733:2892  newinit 1
+19738:2893  null
+19739:2893  initprop "_delay"
+19744:2894  string "P_Hurt_Normal_Over"
+19749:2894  initprop "_type"
+19754:2894  endinit
+19755:2894  initprop "_hurt"
+19760:2896  newinit 1
+19765:2897  null
+19766:2897  initprop "_delay"
+19771:2898  string "P_SPTieQi_Effect_To"
+19776:2898  initprop "_type"
+19781:2898  endinit
+19782:2898  initprop "_effect_to"
+19787:2898  endinit
+19788:2898  initprop "_attack"
+19793:2898  endinit
+19794:2898  initprop "sptieqi"
+19799:2920  newinit 1
+19804:2921  string "template.T_Remote_SS"
+19809:2921  initprop "extend"
+19814:2921  endinit
+19815:2921  initprop "yicong"
+19820:2931  newinit 1
+19825:2932  string "yicong"
+19830:2932  initprop "extend"
+19835:2933  newinit 1
+19840:2934  string "Spawn"
+19845:2934  initprop "type"
+19850:2935  newinit 1
+19855:2936  null
+19856:2936  initprop "_delay"
+19861:2937  string "P_Hurt_Normal_Over"
+19866:2937  initprop "_type"
+19871:2937  endinit
+19872:2937  initprop "_hurt"
+19877:2937  endinit
+19878:2937  initprop "_attack"
+19883:2937  endinit
+19884:2937  initprop "yicong_v3"
+19889:2942  newinit 1
+19894:2943  string "yicong_v3"
+19899:2943  initprop "extend"
+19904:2944  newinit 1
+19909:2945  string "Spawn"
+19914:2945  initprop "type"
+19919:2946  newinit 1
+19924:2947  null
+19925:2947  initprop "_delay"
+19930:2948  string "P_Def_Sub_To"
+19935:2948  initprop "_type"
+19940:2948  endinit
+19941:2948  initprop "_effect_to"
+19946:2948  endinit
+19947:2948  initprop "_attack"
+19952:2948  endinit
+19953:2948  initprop "yicong_v4"
+19958:2953  newinit 1
+19963:2954  string "yicong_v4"
+19968:2954  initprop "extend"
+19973:2955  newinit 1
+19978:2956  newinit 1
+19983:2957  null
+19984:2957  initprop "_delay"
+19989:2958  string "P_YiCong_Effect_From"
+19994:2958  initprop "_type"
+19999:2958  endinit
+20000:2958  initprop "_effect_from"
+20005:2958  endinit
+20006:2958  initprop "_attack"
+20011:2958  endinit
+20012:2958  initprop "yicong_v5"
+20017:2963  newinit 1
+20022:2964  string "template.T_Remote_SS"
+20027:2964  initprop "extend"
+20032:2965  newinit 1
+20037:2966  string "Spawn"
+20042:2966  initprop "type"
+20047:2967  newinit 1
+20052:2968  null
+20053:2968  initprop "_delay"
+20058:2969  string "P_Hurt_Normal_Over"
+20063:2969  initprop "_type"
+20068:2969  endinit
+20069:2969  initprop "_hurt"
+20074:2969  endinit
+20075:2969  initprop "_attack"
+20080:2969  endinit
+20081:2969  initprop "yingbing"
+20086:2974  newinit 1
+20091:2975  newinit 1
+20096:2976  string "Spawn"
+20101:2976  initprop "type"
+20106:2977  newinit 1
+20111:2978  null
+20112:2978  initprop "_delay"
+20117:2979  string "P_Hurt_Normal_Over"
+20122:2979  initprop "_type"
+20127:2979  endinit
+20128:2979  initprop "_hurt"
+20133:2981  newinit 1
+20138:2982  null
+20139:2982  initprop "_delay"
+20144:2983  string "P_YingBing_Effect_To"
+20149:2983  initprop "_type"
+20154:2983  endinit
+20155:2983  initprop "_effect_to"
+20160:2983  endinit
+20161:2983  initprop "_attack"
+20166:2983  endinit
+20167:2983  initprop "yingbing_v3"
+20172:2988  newinit 1
+20177:2989  newinit 1
+20182:2990  string "Spawn"
+20187:2990  initprop "type"
+20192:2991  newinit 1
+20197:2992  null
+20198:2992  initprop "_delay"
+20203:2993  string "P_Hurt_Normal_Over"
+20208:2993  initprop "_type"
+20213:2993  endinit
+20214:2993  initprop "_hurt"
+20219:2995  newinit 1
+20224:2996  null
+20225:2996  initprop "_delay"
+20230:2997  string "P_YingBing_Effect_To"
+20235:2997  initprop "_type"
+20240:2997  endinit
+20241:2997  initprop "_effect_to"
+20246:2999  newinit 1
+20251:3000  null
+20252:3000  initprop "_delay"
+20257:3002  string "P_Int_Add_From_NoFail"
+20262:3002  initprop "_type"
+20267:3002  endinit
+20268:3002  initprop "_effect_from"
+20273:3002  endinit
+20274:3002  initprop "_attack"
+20279:3002  endinit
+20280:3002  initprop "yingbing_v4"
+20285:3008  newinit 1
+20290:3009  string "template.T_Remote_SS"
+20295:3009  initprop "extend"
+20300:3010  newinit 1
+20305:3011  string "Spawn"
+20310:3011  initprop "type"
+20315:3012  newinit 1
+20320:3013  null
+20321:3013  initprop "_delay"
+20326:3014  null
+20327:3014  initprop "_type"
+20332:3014  endinit
+20333:3014  initprop "_hurt"
+20338:3016  newinit 1
+20343:3017  null
+20344:3017  initprop "_delay"
+20349:3018  null
+20350:3018  initprop "_type"
+20355:3018  endinit
+20356:3018  initprop "_effect_from"
+20361:3020  newinit 1
+20366:3021  newarray 1
+20370:3021  string "P_Delay_Frame_6"
+20375:3021  initelem_array 0
+20379:3021  endinit
+20380:3021  initprop "_delay"
+20385:3022  string "P_JueJingDun_Effect_From"
+20390:3022  initprop "_type"
+20395:3022  endinit
+20396:3022  initprop "_effect_to"
+20401:3024  newinit 1
+20406:3025  newarray 1
+20410:3025  string "P_Delay_Frame_46"
+20415:3025  initelem_array 0
+20419:3025  endinit
+20420:3025  initprop "_delay"
+20425:3026  string "P_JueJingDun_Begin"
+20430:3026  initprop "_type"
+20435:3026  endinit
+20436:3026  initprop "_effect_to1"
+20441:3026  endinit
+20442:3026  initprop "_attack"
+20447:3026  endinit
+20448:3026  initprop "juejing_dun"
+20453:3032  newinit 1
+20458:3034  newinit 1
+20463:3035  string "Spawn"
+20468:3035  initprop "type"
+20473:3036  newinit 1
+20478:3037  null
+20479:3037  initprop "_delay"
+20484:3038  null
+20485:3038  initprop "_type"
+20490:3038  endinit
+20491:3038  initprop "_hurt"
+20496:3040  newinit 1
+20501:3041  null
+20502:3041  initprop "_delay"
+20507:3042  null
+20508:3042  initprop "_type"
+20513:3042  endinit
+20514:3042  initprop "_effect_from"
+20519:3044  newinit 1
+20524:3045  newarray 1
+20528:3045  string "P_Delay_Frame_6"
+20533:3045  initelem_array 0
+20537:3045  endinit
+20538:3045  initprop "_delay"
+20543:3046  string "P_XuRuo_Begin"
+20548:3046  initprop "_type"
+20553:3046  endinit
+20554:3046  initprop "_effect_to1"
+20559:3046  endinit
+20560:3046  initprop "_attack"
+20565:3046  endinit
+20566:3046  initprop "xuruo_add"
+20571:3052  newinit 1
+20576:3054  newinit 1
+20581:3055  string "Spawn"
+20586:3055  initprop "type"
+20591:3056  newinit 1
+20596:3057  null
+20597:3057  initprop "_delay"
+20602:3058  null
+20603:3058  initprop "_type"
+20608:3058  endinit
+20609:3058  initprop "_hurt"
+20614:3060  newinit 1
+20619:3061  null
+20620:3061  initprop "_delay"
+20625:3062  string "P_FanJi_Begin"
+20630:3062  initprop "_type"
+20635:3062  endinit
+20636:3062  initprop "_effect_from"
+20641:3062  endinit
+20642:3062  initprop "_attack"
+20647:3062  endinit
+20648:3062  initprop "fanji_add"
+20653:3067  newinit 1
+20658:3069  newinit 1
+20663:3070  string "Spawn"
+20668:3070  initprop "type"
+20673:3071  newinit 1
+20678:3072  null
+20679:3072  initprop "_delay"
+20684:3073  null
+20685:3073  initprop "_type"
+20690:3073  endinit
+20691:3073  initprop "_hurt"
+20696:3075  newinit 1
+20701:3076  null
+20702:3076  initprop "_delay"
+20707:3077  string "P_PoJia_Begin"
+20712:3077  initprop "_type"
+20717:3077  endinit
+20718:3077  initprop "_effect_from"
+20723:3077  endinit
+20724:3077  initprop "_attack"
+20729:3077  endinit
+20730:3077  initprop "pojia_add"
+20735:3082  newinit 1
+20740:3084  newinit 1
+20745:3085  string "Spawn"
+20750:3085  initprop "type"
+20755:3086  newinit 1
+20760:3087  null
+20761:3087  initprop "_delay"
+20766:3088  null
+20767:3088  initprop "_type"
+20772:3088  endinit
+20773:3088  initprop "_hurt"
+20778:3090  newinit 1
+20783:3091  null
+20784:3091  initprop "_delay"
+20789:3092  string "P_ZhuiJi_Begin"
+20794:3092  initprop "_type"
+20799:3092  endinit
+20800:3092  initprop "_effect_from"
+20805:3092  endinit
+20806:3092  initprop "_attack"
+20811:3092  endinit
+20812:3092  initprop "zhuiji_add"
+20817:3097  newinit 1
+20822:3099  newinit 1
+20827:3100  string "Spawn"
+20832:3100  initprop "type"
+20837:3101  newinit 1
+20842:3102  null
+20843:3102  initprop "_delay"
+20848:3103  null
+20849:3103  initprop "_type"
+20854:3103  endinit
+20855:3103  initprop "_hurt"
+20860:3105  newinit 1
+20865:3106  null
+20866:3106  initprop "_delay"
+20871:3107  null
+20872:3107  initprop "_type"
+20877:3107  endinit
+20878:3107  initprop "_effect"
+20883:3109  newinit 1
+20888:3110  null
+20889:3110  initprop "_delay"
+20894:3111  null
+20895:3111  initprop "_type"
+20900:3111  endinit
+20901:3111  initprop "_effect_to"
+20906:3113  newinit 1
+20911:3114  null
+20912:3114  initprop "_delay"
+20917:3115  string "P_HuoYan_Begin_Copy"
+20922:3115  initprop "_type"
+20927:3115  endinit
+20928:3115  initprop "_effect_from"
+20933:3115  endinit
+20934:3115  initprop "_attack"
+20939:3115  endinit
+20940:3115  initprop "yinran_add"
+20945:3120  newinit 1
+20950:3122  newinit 1
+20955:3123  string "Spawn"
+20960:3123  initprop "type"
+20965:3124  newinit 1
+20970:3125  null
+20971:3125  initprop "_delay"
+20976:3126  null
+20977:3126  initprop "_type"
+20982:3126  endinit
+20983:3126  initprop "_hurt"
+20988:3128  newinit 1
+20993:3129  null
+20994:3129  initprop "_delay"
+20999:3130  null
+21000:3130  initprop "_type"
+21005:3130  endinit
+21006:3130  initprop "_effect_from"
+21011:3132  newinit 1
+21016:3133  newarray 1
+21020:3133  string "P_Delay_Frame_5"
+21025:3133  initelem_array 0
+21029:3133  endinit
+21030:3133  initprop "_delay"
+21035:3134  string "P_Star_1_Begin"
+21040:3134  initprop "_type"
+21045:3134  endinit
+21046:3134  initprop "_effect_to"
+21051:3134  endinit
+21052:3134  initprop "_attack"
+21057:3134  endinit
+21058:3134  initprop "star_1"
+21063:3140  newinit 1
+21068:3142  newinit 1
+21073:3143  string "Spawn"
+21078:3143  initprop "type"
+21083:3144  newinit 1
+21088:3145  null
+21089:3145  initprop "_delay"
+21094:3146  null
+21095:3146  initprop "_type"
+21100:3146  endinit
+21101:3146  initprop "_hurt"
+21106:3148  newinit 1
+21111:3149  null
+21112:3149  initprop "_delay"
+21117:3150  null
+21118:3150  initprop "_type"
+21123:3150  endinit
+21124:3150  initprop "_effect_from"
+21129:3152  newinit 1
+21134:3153  newarray 1
+21138:3153  string "P_Delay_Frame_5"
+21143:3153  initelem_array 0
+21147:3153  endinit
+21148:3153  initprop "_delay"
+21153:3154  string "P_Star_2_Begin"
+21158:3154  initprop "_type"
+21163:3154  endinit
+21164:3154  initprop "_effect_to"
+21169:3154  endinit
+21170:3154  initprop "_attack"
+21175:3154  endinit
+21176:3154  initprop "star_2"
+21181:3160  newinit 1
+21186:3162  newinit 1
+21191:3163  string "Spawn"
+21196:3163  initprop "type"
+21201:3164  newinit 1
+21206:3165  null
+21207:3165  initprop "_delay"
+21212:3166  null
+21213:3166  initprop "_type"
+21218:3166  endinit
+21219:3166  initprop "_hurt"
+21224:3168  newinit 1
+21229:3169  null
+21230:3169  initprop "_delay"
+21235:3170  null
+21236:3170  initprop "_type"
+21241:3170  endinit
+21242:3170  initprop "_effect_from"
+21247:3172  newinit 1
+21252:3173  newarray 1
+21256:3173  string "P_Delay_Frame_5"
+21261:3173  initelem_array 0
+21265:3173  endinit
+21266:3173  initprop "_delay"
+21271:3174  string "P_Star_3_Begin"
+21276:3174  initprop "_type"
+21281:3174  endinit
+21282:3174  initprop "_effect_to"
+21287:3174  endinit
+21288:3174  initprop "_attack"
+21293:3174  endinit
+21294:3174  initprop "star_3"
+21299:3180  newinit 1
+21304:3182  newinit 1
+21309:3183  string "Spawn"
+21314:3183  initprop "type"
+21319:3184  newinit 1
+21324:3185  null
+21325:3185  initprop "_delay"
+21330:3186  null
+21331:3186  initprop "_type"
+21336:3186  endinit
+21337:3186  initprop "_hurt"
+21342:3188  newinit 1
+21347:3189  null
+21348:3189  initprop "_delay"
+21353:3190  null
+21354:3190  initprop "_type"
+21359:3190  endinit
+21360:3190  initprop "_effect_from"
+21365:3192  newinit 1
+21370:3193  newarray 1
+21374:3193  string "P_Delay_Frame_5"
+21379:3193  initelem_array 0
+21383:3193  endinit
+21384:3193  initprop "_delay"
+21389:3194  string "P_Star_4_Begin"
+21394:3194  initprop "_type"
+21399:3194  endinit
+21400:3194  initprop "_effect_to"
+21405:3194  endinit
+21406:3194  initprop "_attack"
+21411:3194  endinit
+21412:3194  initprop "star_4"
+21417:3200  newinit 1
+21422:3202  newinit 1
+21427:3203  string "Spawn"
+21432:3203  initprop "type"
+21437:3204  newinit 1
+21442:3205  null
+21443:3205  initprop "_delay"
+21448:3206  null
+21449:3206  initprop "_type"
+21454:3206  endinit
+21455:3206  initprop "_hurt"
+21460:3208  newinit 1
+21465:3209  null
+21466:3209  initprop "_delay"
+21471:3210  null
+21472:3210  initprop "_type"
+21477:3210  endinit
+21478:3210  initprop "_effect_from"
+21483:3212  newinit 1
+21488:3213  newarray 1
+21492:3213  string "P_Delay_Frame_5"
+21497:3213  initelem_array 0
+21501:3213  endinit
+21502:3213  initprop "_delay"
+21507:3214  string "P_Star_5_Begin"
+21512:3214  initprop "_type"
+21517:3214  endinit
+21518:3214  initprop "_effect_to"
+21523:3214  endinit
+21524:3214  initprop "_attack"
+21529:3214  endinit
+21530:3214  initprop "star_5"
+21535:3220  newinit 1
+21540:3222  newinit 1
+21545:3223  string "Spawn"
+21550:3223  initprop "type"
+21555:3224  newinit 1
+21560:3225  null
+21561:3225  initprop "_delay"
+21566:3226  null
+21567:3226  initprop "_type"
+21572:3226  endinit
+21573:3226  initprop "_hurt"
+21578:3228  newinit 1
+21583:3229  null
+21584:3229  initprop "_delay"
+21589:3230  null
+21590:3230  initprop "_type"
+21595:3230  endinit
+21596:3230  initprop "_effect_from"
+21601:3232  newinit 1
+21606:3233  newarray 1
+21610:3233  string "P_Delay_Frame_5"
+21615:3233  initelem_array 0
+21619:3233  endinit
+21620:3233  initprop "_delay"
+21625:3234  string "P_Star_6_Begin"
+21630:3234  initprop "_type"
+21635:3234  endinit
+21636:3234  initprop "_effect_to"
+21641:3234  endinit
+21642:3234  initprop "_attack"
+21647:3234  endinit
+21648:3234  initprop "star_6"
+21653:3240  newinit 1
+21658:3242  newinit 1
+21663:3243  string "Spawn"
+21668:3243  initprop "type"
+21673:3244  newinit 1
+21678:3245  null
+21679:3245  initprop "_delay"
+21684:3246  null
+21685:3246  initprop "_type"
+21690:3246  endinit
+21691:3246  initprop "_hurt"
+21696:3248  newinit 1
+21701:3249  null
+21702:3249  initprop "_delay"
+21707:3250  null
+21708:3250  initprop "_type"
+21713:3250  endinit
+21714:3250  initprop "_effect_from"
+21719:3252  newinit 1
+21724:3253  newarray 1
+21728:3253  string "P_Delay_Frame_5"
+21733:3253  initelem_array 0
+21737:3253  endinit
+21738:3253  initprop "_delay"
+21743:3254  string "P_Star_7_Begin"
+21748:3254  initprop "_type"
+21753:3254  endinit
+21754:3254  initprop "_effect_to"
+21759:3254  endinit
+21760:3254  initprop "_attack"
+21765:3254  endinit
+21766:3254  initprop "star_7"
+21771:3260  newinit 1
+21776:3262  newinit 1
+21781:3263  string "Spawn"
+21786:3263  initprop "type"
+21791:3264  newinit 1
+21796:3265  null
+21797:3265  initprop "_delay"
+21802:3266  null
+21803:3266  initprop "_type"
+21808:3266  endinit
+21809:3266  initprop "_hurt"
+21814:3268  newinit 1
+21819:3269  null
+21820:3269  initprop "_delay"
+21825:3270  null
+21826:3270  initprop "_type"
+21831:3270  endinit
+21832:3270  initprop "_effect_from"
+21837:3272  newinit 1
+21842:3273  newarray 1
+21846:3273  string "P_Delay_Frame_5"
+21851:3273  initelem_array 0
+21855:3273  endinit
+21856:3273  initprop "_delay"
+21861:3274  string "P_Star_8_Begin"
+21866:3274  initprop "_type"
+21871:3274  endinit
+21872:3274  initprop "_effect_to"
+21877:3274  endinit
+21878:3274  initprop "_attack"
+21883:3274  endinit
+21884:3274  initprop "star_8"
+21889:3280  newinit 1
+21894:3282  newinit 1
+21899:3283  string "Spawn"
+21904:3283  initprop "type"
+21909:3284  newinit 1
+21914:3285  null
+21915:3285  initprop "_delay"
+21920:3286  null
+21921:3286  initprop "_type"
+21926:3286  endinit
+21927:3286  initprop "_hurt"
+21932:3288  newinit 1
+21937:3289  null
+21938:3289  initprop "_delay"
+21943:3290  null
+21944:3290  initprop "_type"
+21949:3290  endinit
+21950:3290  initprop "_effect_from"
+21955:3292  newinit 1
+21960:3293  newarray 1
+21964:3293  string "P_Delay_Frame_5"
+21969:3293  initelem_array 0
+21973:3293  endinit
+21974:3293  initprop "_delay"
+21979:3294  string "P_Star_9_Begin"
+21984:3294  initprop "_type"
+21989:3294  endinit
+21990:3294  initprop "_effect_to"
+21995:3294  endinit
+21996:3294  initprop "_attack"
+22001:3294  endinit
+22002:3294  initprop "star_9"
+22007:3300  newinit 1
+22012:3301  string "template.T_Remote_SS"
+22017:3301  initprop "extend"
+22022:3302  newinit 1
+22027:3303  newinit 1
+22032:3304  name "xs"
+22037:3304  getprop "Constant_FightScene_HpsType_Average"
+22042:3304  initprop "type"
+22047:3304  endinit
+22048:3304  initprop "hps"
+22053:3307  one
+22054:3307  initprop "loopNum"
+22059:3307  endinit
+22060:3307  initprop "property"
+22065:3309  newinit 1
+22070:3310  newinit 1
+22075:3311  newarray 1
+22079:3311  string "P_Delay_Frame_10"
+22084:3311  initelem_array 0
+22088:3311  endinit
+22089:3311  initprop "_delay"
+22094:3312  newinit 1
+22099:3312  zero
+22100:3313  string "P_JiJiaoZhiShi_Hit_Loop"
+22105:3313  initelem
+22106:3313  one
+22107:3314  string "P_Hurt_Back_Over"
+22112:3314  initelem
+22113:3314  endinit
+22114:3314  initprop "_type"
+22119:3314  endinit
+22120:3314  initprop "_hurt"
+22125:3318  newinit 1
+22130:3319  null
+22131:3319  initprop "_delay"
+22136:3320  null
+22137:3320  initprop "_type"
+22142:3320  endinit
+22143:3320  initprop "_effect_from"
+22148:3322  newinit 1
+22153:3323  null
+22154:3323  initprop "_delay"
+22159:3324  string "P_JiJiaoZhiShi_Effect_To"
+22164:3324  initprop "_type"
+22169:3324  endinit
+22170:3324  initprop "_effect_to"
+22175:3324  endinit
+22176:3324  initprop "_attack"
+22181:3324  endinit
+22182:3324  initprop "jijiaozhishi"
+22187:3331  newinit 1
+22192:3332  string "template.T_Remote_SS"
+22197:3332  initprop "extend"
+22202:3333  newinit 1
+22207:3334  newinit 1
+22212:3335  newarray 2
+22216:3335  string "P_Delay_Frame_30"
+22221:3335  initelem_array 0
+22225:3335  string "P_Delay_Frame_20"
+22230:3335  initelem_array 1
+22234:3335  endinit
+22235:3335  initprop "_delay"
+22240:3336  string "P_Hurt_Back_Over"
+22245:3336  initprop "_type"
+22250:3336  endinit
+22251:3336  initprop "_hurt"
+22256:3339  newinit 1
+22261:3340  null
+22262:3340  initprop "_delay"
+22267:3341  null
+22268:3341  initprop "_type"
+22273:3341  endinit
+22274:3341  initprop "_effect_from"
+22279:3343  newinit 1
+22284:3344  null
+22285:3344  initprop "_delay"
+22290:3345  string "P_YiJue_Effect_To"
+22295:3345  initprop "_type"
+22300:3345  endinit
+22301:3345  initprop "_effect_to"
+22306:3345  endinit
+22307:3345  initprop "_attack"
+22312:3345  endinit
+22313:3345  initprop "yijue"
+22318:3345  endinit
+22319:3345  notearg
+22320:3345  call 2
+22323:3345  popv
+22324:3350  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/SkillRemote.js:1 ---

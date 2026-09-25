@@ -1,0 +1,310 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Armature/AutoAudioArmature.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=84 object[0]
+;; FUNCTION-MAP kind=lambda offset=210 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Armature/AutoAudioArmature.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  name "xs"
+00005:  11  getprop "Views"
+00010:  11  getprop "Armature"
+00015:  11  name "xs"
+00020:  11  getprop "Libs"
+00025:  11  getprop "Views"
+00030:  11  getprop "Armature"
+00035:  11  getprop "BaseArmature"
+00040:  11  dup
+00041:  11  callprop "extend"
+00046:  11  swap
+00047:  11  notearg
+00048:  11  newinit 1
+00053:  11  endinit
+00054:  11  notearg
+00055:  11  call 1
+00058:  11  setprop "AutoAudioArmature"
+00063:  11  popv
+00064:  15  name "xs"
+00069:  15  getprop "Views"
+00074:  15  getprop "Armature"
+00079:  15  getprop "AutoAudioArmature"
+00084:  15  lambda (function () {
+    [sourceless code]
+})
+00089:  15  setprop "create"
+00094:  15  popv
+00095:  33  name "xs"
+00100:  33  getprop "Views"
+00105:  33  getprop "Armature"
+00110:  33  name "xs"
+00115:  33  getprop "Libs"
+00120:  33  getprop "Views"
+00125:  33  getprop "Armature"
+00130:  33  getprop "BaseArmature"
+00135:  33  dup
+00136:  33  callprop "extend"
+00141:  33  swap
+00142:  33  notearg
+00143:  33  newinit 1
+00148:  33  endinit
+00149:  33  notearg
+00150:  33  call 1
+00153:  33  setprop "FightArmature"
+00158:  33  popv
+00159:  37  name "xs"
+00164:  37  getprop "Views"
+00169:  37  getprop "Armature"
+00174:  37  getprop "FightArmature"
+00179:  37  string "FightArmature_Event_FrameEvent"
+00184:  37  setprop "Event_FrameEvent"
+00189:  37  popv
+00190:  39  name "xs"
+00195:  39  getprop "Views"
+00200:  39  getprop "Armature"
+00205:  39  getprop "FightArmature"
+00210:  39  lambda (function () {
+    [sourceless code]
+})
+00215:  39  setprop "create"
+00220:  39  popv
+00221:  80  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Armature/AutoAudioArmature.js:1 ---
+;; function object[0] create
+;; function metadata object[0] nargs=2 bindings=3
+;; arg[0] id
+;; arg[1] viewCfg
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Armature/AutoAudioArmature.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  name "xs"
+00005:  17  getprop "Views"
+00010:  17  getprop "Armature"
+00015:  17  getprop "AutoAudioArmature"
+00020:  17  undefined
+00021:  17  notearg
+00022:  17  new 0
+00025:  17  setlocal 0
+00028:  17  pop
+00029:  18  getlocal 0
+00032:  18  dup
+00033:  18  callprop "init"
+00038:  18  swap
+00039:  18  notearg
+00040:  18  getarg 0
+00043:  18  notearg
+00044:  18  getarg 1
+00047:  18  notearg
+00048:  18  call 2
+00051:  18  pop
+00052:  21  name "xs"
+00057:  21  getprop "Profile"
+00062:  21  getprop "UserCfg"
+00067:  21  dup
+00068:  21  callprop "isVoiceOn_Eff"
+00073:  21  swap
+00074:  21  notearg
+00075:  21  call 0
+00078:  21  ifeq 119 (+41)
+00083:  22  getlocal 0
+00086:  22  dup
+00087:  22  callprop "setFrameEventCallFunc"
+00092:  22  swap
+00093:  22  notearg
+00094:  23  name "xs"
+00099:  23  getprop "Tools"
+00104:  23  getprop "Audio"
+00109:  23  getprop "effect_frameEventCallFunc"
+00114:  23  notearg
+00115:  23  call 1
+00118:  23  pop
+00119:  27  getlocal 0
+00122:  27  return
+00123:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Armature/AutoAudioArmature.js:15 ---
+;; function object[1] create
+;; function metadata object[1] nargs=3 bindings=4
+;; arg[0] id
+;; arg[1] viewCfg
+;; arg[2] context
+;; local[0] _ret
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=63 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Armature/AutoAudioArmature.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  name "xs"
+00005:  41  getprop "Views"
+00010:  41  getprop "Armature"
+00015:  41  getprop "FightArmature"
+00020:  41  undefined
+00021:  41  notearg
+00022:  41  new 0
+00025:  41  setlocal 0
+00028:  41  pop
+00029:  42  getlocal 0
+00032:  42  dup
+00033:  42  callprop "init"
+00038:  42  swap
+00039:  42  notearg
+00040:  42  getarg 0
+00043:  42  notearg
+00044:  42  getarg 1
+00047:  42  notearg
+00048:  42  call 2
+00051:  42  pop
+00052:  44  getlocal 0
+00055:  44  dup
+00056:  44  callprop "setFrameEventCallFunc"
+00061:  44  swap
+00062:  44  notearg
+00063:  45  lambda (function () {
+    [sourceless code]
+})
+00068:  45  notearg
+00069:  45  call 1
+00072:  45  pop
+00073:  79  getlocal 0
+00076:  79  return
+00077:  79  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Armature/AutoAudioArmature.js:39 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=4 bindings=9
+;; arg[0] bone
+;; arg[1] frameEventName
+;; arg[2] originFrameIndex
+;; arg[3] currentFrameIndex
+;; local[0] _obj
+;; local[1] _context
+;; local[2] _para
+;; local[3] _env
+;; local[4] _fnc
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Armature/AutoAudioArmature.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  newinit 1
+00005:  50  getaliasedvar "context" (hops = 0, slot = 2)
+00014:  50  initprop "context"
+00019:  51  getarg 1
+00022:  51  initprop "frameEventName"
+00027:  51  endinit
+00028:  51  setlocal 0
+00031:  51  pop
+00032:  54  getarg 1
+00035:  54  dup
+00036:  54  callprop "indexOf"
+00041:  54  swap
+00042:  54  notearg
+00043:  54  string "to_"
+00048:  54  notearg
+00049:  54  call 1
+00052:  54  zero
+00053:  54  eq
+00054:  54  or 138 (+84)
+00059:  54  pop
+00060:  55  getarg 1
+00063:  55  dup
+00064:  55  callprop "indexOf"
+00069:  55  swap
+00070:  55  notearg
+00071:  55  string "from_"
+00076:  55  notearg
+00077:  55  call 1
+00080:  55  zero
+00081:  55  eq
+00082:  55  or 138 (+56)
+00087:  55  pop
+00088:  56  getarg 1
+00091:  56  dup
+00092:  56  callprop "indexOf"
+00097:  56  swap
+00098:  56  notearg
+00099:  56  string "ani_from_"
+00104:  56  notearg
+00105:  56  call 1
+00108:  56  zero
+00109:  56  eq
+00110:  56  or 138 (+28)
+00115:  56  pop
+00116:  57  getarg 1
+00119:  57  dup
+00120:  57  callprop "indexOf"
+00125:  57  swap
+00126:  57  notearg
+00127:  57  string "ani_to_"
+00132:  57  notearg
+00133:  57  call 1
+00136:  57  zero
+00137:  57  eq
+00138:  57  ifeq 247 (+109)
+00143:  61  getlocal 0
+00146:  61  getprop "context"
+00151:  61  setlocal 1
+00154:  61  pop
+00155:  62  getlocal 1
+00158:  62  getprop "para"
+00163:  62  setlocal 2
+00166:  62  pop
+00167:  63  getlocal 2
+00170:  63  getprop "env"
+00175:  63  setlocal 3
+00178:  63  pop
+00179:  64  getlocal 3
+00182:  64  dup
+00183:  64  callprop "getFightNotifyCenter"
+00188:  64  swap
+00189:  64  notearg
+00190:  64  call 0
+00193:  64  setlocal 4
+00196:  64  pop
+00197:  69  getlocal 4
+00200:  69  dup
+00201:  69  callprop "postNotification"
+00206:  69  swap
+00207:  69  notearg
+00208:  69  name "xs"
+00213:  69  getprop "Views"
+00218:  69  getprop "Armature"
+00223:  69  getprop "FightArmature"
+00228:  69  getprop "Event_FrameEvent"
+00233:  69  notearg
+00234:  69  getlocal 0
+00237:  69  notearg
+00238:  69  call 2
+00241:  69  pop
+00242:  69  goto 310 (+68)
+00247:  72  name "xs"
+00252:  72  getprop "Profile"
+00257:  72  getprop "UserCfg"
+00262:  72  dup
+00263:  72  callprop "isVoiceOn_Eff"
+00268:  72  swap
+00269:  72  notearg
+00270:  72  call 0
+00273:  72  ifeq 310 (+37)
+00278:  73  name "xs"
+00283:  73  getprop "audio"
+00288:  73  dup
+00289:  73  callprop "playEffectByFile"
+00294:  73  swap
+00295:  73  notearg
+00296:  73  getarg 1
+00299:  73  string ".mp3"
+00304:  73  add
+00305:  73  notearg
+00306:  73  call 1
+00309:  73  pop
+00310:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Armature/AutoAudioArmature.js:45 ---

@@ -1,0 +1,467 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=109 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Scene"
+00010:   4  name "cc"
+00015:   4  getprop "Scene"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  string "xs.Scene.HulaoBattleMainScene"
+00038:   5  initprop "name"
+00043:   6  lambda (function () {
+    [sourceless code]
+})
+00048:   6  initprop "ctor"
+00053:  10  lambda (function () {
+    [sourceless code]
+})
+00058:  10  initprop "init"
+00063:  46  lambda (function () {
+    [sourceless code]
+})
+00068:  46  initprop "onEnter"
+00073:  49  lambda (function () {
+    [sourceless code]
+})
+00078:  49  initprop "onExit"
+00083:  49  endinit
+00084:  49  notearg
+00085:  49  call 1
+00088:  49  setprop "HulaoBattleMainScene"
+00093:  49  popv
+00094:  53  name "xs"
+00099:  53  getprop "Scene"
+00104:  53  getprop "HulaoBattleMainScene"
+00109:  53  lambda (function () {
+    [sourceless code]
+})
+00114:  53  setprop "create"
+00119:  53  popv
+00120:  63  name "xs"
+00125:  63  getprop "Scene"
+00130:  63  getprop "Mgr"
+00135:  63  dup
+00136:  63  callprop "registerScene"
+00141:  63  swap
+00142:  63  notearg
+00143:  63  string "HulaoBattleMainScene"
+00148:  63  notearg
+00149:  63  newinit 1
+00154:  64  name "xs"
+00159:  64  getprop "Scene"
+00164:  64  getprop "HulaoBattleMainScene"
+00169:  64  initprop "class"
+00174:  65  name "xs"
+00179:  65  getprop "Constant_SceneType_Cmn"
+00184:  65  initprop "type"
+00189:  65  endinit
+00190:  65  notearg
+00191:  65  call 2
+00194:  65  popv
+00195:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "Scene"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] visibleSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  14  name "xs"
+00025:  14  dup
+00026:  14  callprop "log_zhz"
+00031:  14  swap
+00032:  14  notearg
+00033:  14  string "data"
+00038:  14  notearg
+00039:  14  getarg 0
+00042:  14  notearg
+00043:  14  call 2
+00046:  14  pop
+00047:  15  name "xs"
+00052:  15  getprop "director"
+00057:  15  dup
+00058:  15  callprop "getVisibleSize"
+00063:  15  swap
+00064:  15  notearg
+00065:  15  call 0
+00068:  15  setlocal 0
+00071:  15  pop
+00072:  17  name "xs"
+00077:  17  getprop "Tools"
+00082:  17  getprop "UI"
+00087:  17  dup
+00088:  17  callprop "addCommonBg"
+00093:  17  swap
+00094:  17  notearg
+00095:  17  this
+00096:  17  notearg
+00097:  17  true
+00098:  17  notearg
+00099:  17  true
+00100:  17  notearg
+00101:  17  call 3
+00104:  17  pop
+00105:  18  this
+00106:  18  name "xs"
+00111:  18  getprop "Factorys"
+00116:  18  getprop "Sprite"
+00121:  18  dup
+00122:  18  callprop "createWithFileName"
+00127:  18  swap
+00128:  18  notearg
+00129:  18  string "big_picture/big_picture_hulaoguan.png"
+00134:  18  notearg
+00135:  18  call 1
+00138:  18  setprop "m_GeneralBg"
+00143:  18  pop
+00144:  19  name "xs"
+00149:  19  getprop "Tools"
+00154:  19  getprop "UI"
+00159:  19  dup
+00160:  19  callprop "addSpriteAsBg"
+00165:  19  swap
+00166:  19  notearg
+00167:  19  this
+00168:  19  notearg
+00169:  19  this
+00170:  19  getprop "m_GeneralBg"
+00175:  19  notearg
+00176:  19  call 2
+00179:  19  pop
+00180:  22  this
+00181:  22  name "xs"
+00186:  22  getprop "Views"
+00191:  22  getprop "PlayerInfoBannerSimpleView"
+00196:  22  dup
+00197:  22  callprop "create"
+00202:  22  swap
+00203:  22  notearg
+00204:  22  call 0
+00207:  22  setprop "m_infoBar"
+00212:  22  pop
+00213:  23  this
+00214:  23  getprop "m_infoBar"
+00219:  23  dup
+00220:  23  callprop "setAnchorPoint"
+00225:  23  swap
+00226:  23  notearg
+00227:  23  name "cc"
+00232:  23  dup
+00233:  23  callprop "p"
+00238:  23  swap
+00239:  23  notearg
+00240:  23  zero
+00241:  23  notearg
+00242:  23  one
+00243:  23  notearg
+00244:  23  call 2
+00247:  23  notearg
+00248:  23  call 1
+00251:  23  pop
+00252:  24  name "xs"
+00257:  24  getprop "Utils"
+00262:  24  getprop "Node"
+00267:  24  dup
+00268:  24  callprop "attachNodes"
+00273:  24  swap
+00274:  24  notearg
+00275:  24  this
+00276:  24  notearg
+00277:  24  this
+00278:  24  getprop "m_infoBar"
+00283:  24  notearg
+00284:  24  newinit 1
+00289:  25  string "lt"
+00294:  25  initprop "desc"
+00299:  26  true
+00300:  26  initprop "sc"
+00305:  26  endinit
+00306:  26  notearg
+00307:  26  call 3
+00310:  26  pop
+00311:  30  this
+00312:  30  name "xs"
+00317:  30  getprop "Views"
+00322:  30  getprop "TablePage"
+00327:  30  dup
+00328:  30  callprop "create"
+00333:  30  swap
+00334:  30  notearg
+00335:  30  name "cc"
+00340:  30  dup
+00341:  30  callprop "size"
+00346:  30  swap
+00347:  30  notearg
+00348:  30  getlocal 0
+00351:  30  getprop "width"
+00356:  30  name "xs"
+00361:  30  getprop "Views"
+00366:  30  getprop "MainMenuView"
+00371:  30  getprop "Width"
+00376:  30  sub
+00377:  30  notearg
+00378:  30  getlocal 0
+00381:  30  getprop "height"
+00386:  30  int8 50
+00388:  30  sub
+00389:  30  notearg
+00390:  30  call 2
+00393:  30  notearg
+00394:  30  call 1
+00397:  30  setprop "m_pageView"
+00402:  30  pop
+00403:  31  this
+00404:  31  getprop "m_pageView"
+00409:  31  dup
+00410:  31  callprop "setBaseTouchPriority"
+00415:  31  swap
+00416:  31  notearg
+00417:  31  int8 -1
+00419:  31  notearg
+00420:  31  call 1
+00423:  31  pop
+00424:  32  this
+00425:  32  getprop "m_pageView"
+00430:  32  dup
+00431:  32  callprop "setListener"
+00436:  32  swap
+00437:  32  notearg
+00438:  32  this
+00439:  32  notearg
+00440:  32  call 1
+00443:  32  pop
+00444:  33  this
+00445:  33  getprop "m_pageView"
+00450:  33  dup
+00451:  33  callprop "addPageWhitConstruct"
+00456:  33  swap
+00457:  33  notearg
+00458:  33  name "xs"
+00463:  33  getprop "Tools"
+00468:  33  getprop "String"
+00473:  33  dup
+00474:  33  callprop "createString"
+00479:  33  swap
+00480:  33  notearg
+00481:  33  string "HulaoBattle_name"
+00486:  33  notearg
+00487:  33  call 1
+00490:  33  notearg
+00491:  33  name "xs"
+00496:  33  getprop "Views"
+00501:  33  getprop "HulaoBattleMainView"
+00506:  33  notearg
+00507:  33  newinit 1
+00512:  33  getarg 0
+00515:  33  initprop "param"
+00520:  33  endinit
+00521:  33  notearg
+00522:  33  call 3
+00525:  33  pop
+00526:  34  name "xs"
+00531:  34  getprop "Utils"
+00536:  34  getprop "Node"
+00541:  34  dup
+00542:  34  callprop "attachNodes"
+00547:  34  swap
+00548:  34  notearg
+00549:  34  this
+00550:  34  notearg
+00551:  34  this
+00552:  34  getprop "m_pageView"
+00557:  34  notearg
+00558:  34  newinit 1
+00563:  35  string "lb"
+00568:  35  initprop "desc"
+00573:  36  true
+00574:  36  initprop "sc"
+00579:  36  endinit
+00580:  36  notearg
+00581:  36  call 3
+00584:  36  pop
+00585:  38  this
+00586:  38  getprop "m_pageView"
+00591:  38  dup
+00592:  38  callprop "setHintIcon"
+00597:  38  swap
+00598:  38  notearg
+00599:  38  newarray 1
+00603:  38  zero
+00604:  38  initelem_array 0
+00608:  38  endinit
+00609:  38  notearg
+00610:  38  newarray 1
+00614:  38  name "xs"
+00619:  38  getprop "Constant_HintType_HuLaoBattle"
+00624:  38  initelem_array 0
+00628:  38  endinit
+00629:  38  notearg
+00630:  38  true
+00631:  38  notearg
+00632:  38  call 3
+00635:  38  pop
+00636:  41  this
+00637:  41  name "xs"
+00642:  41  getprop "Tools"
+00647:  41  getprop "UI"
+00652:  41  dup
+00653:  41  callprop "addShortcutBoard"
+00658:  41  swap
+00659:  41  notearg
+00660:  41  this
+00661:  41  notearg
+00662:  41  true
+00663:  41  notearg
+00664:  41  name "xs"
+00669:  41  getprop "Cfg"
+00674:  41  getprop "Scene"
+00679:  41  getprop "SkillScene"
+00684:  41  getprop "mainmenu"
+00689:  41  notearg
+00690:  41  call 3
+00693:  41  setprop "m_mainMenu"
+00698:  41  pop
+00699:  44  true
+00700:  44  return
+00701:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:10 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  this
+00001:  47  dup
+00002:  47  callprop "_super"
+00007:  47  swap
+00008:  47  notearg
+00009:  47  call 0
+00012:  47  pop
+00013:  47  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:46 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  this
+00001:  50  dup
+00002:  50  callprop "_super"
+00007:  50  swap
+00008:  50  notearg
+00009:  50  call 0
+00012:  50  pop
+00013:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:49 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:53 ---
+loc   line  op
+----- ----  --
+main:
+00000:  55  name "xs"
+00005:  55  getprop "Scene"
+00010:  55  getprop "HulaoBattleMainScene"
+00015:  55  undefined
+00016:  55  notearg
+00017:  55  new 0
+00020:  55  setlocal 0
+00023:  55  pop
+00024:  56  getlocal 0
+00027:  56  and 51 (+24)
+00032:  56  pop
+00033:  56  getlocal 0
+00036:  56  dup
+00037:  56  callprop "init"
+00042:  56  swap
+00043:  56  notearg
+00044:  56  getarg 0
+00047:  56  notearg
+00048:  56  call 1
+00051:  56  ifeq 60 (+9)
+00056:  57  getlocal 0
+00059:  57  return
+00060:  59  name "xs"
+00065:  59  dup
+00066:  59  callprop "assert"
+00071:  59  swap
+00072:  59  notearg
+00073:  59  false
+00074:  59  notearg
+00075:  59  string "xs.Scene.HulaoBattleMainScene.create error!"
+00080:  59  notearg
+00081:  59  call 2
+00084:  59  pop
+00085:  60  null
+00086:  60  return
+00087:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.js:53 ---

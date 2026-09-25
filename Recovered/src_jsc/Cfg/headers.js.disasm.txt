@@ -1,0 +1,445 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Cfg/headers.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Cfg/headers.js:1 ---
+loc   line  op
+----- ----  --
+00000:  15  defvar "planDatePrefix"
+00005:  16  defvar "artDatePrefix"
+00010:  17  defvar "mPorName"
+00015:  18  defvar "jsOrJsc"
+main:
+00020:  11  name "xs"
+00025:  11  name "xs"
+00030:  11  getprop "Cfg"
+00035:  11  or 47 (+12)
+00040:  11  pop
+00041:  11  newinit 1
+00046:  11  endinit
+00047:  11  setprop "Cfg"
+00052:  11  popv
+00053:  13  name "xs"
+00058:  13  getprop "Cfg"
+00063:  13  name "xs"
+00068:  13  getprop "Cfg"
+00073:  13  getprop "System"
+00078:  13  or 90 (+12)
+00083:  13  pop
+00084:  13  newinit 1
+00089:  13  endinit
+00090:  13  setprop "System"
+00095:  13  popv
+00096:  15  bindname "planDatePrefix"
+00101:  15  string ""
+00106:  15  setname "planDatePrefix"
+00111:  15  pop
+00112:  16  bindname "artDatePrefix"
+00117:  16  string ""
+00122:  16  setname "artDatePrefix"
+00127:  16  pop
+00128:  17  bindname "mPorName"
+00133:  17  name "xsc"
+00138:  17  getprop "Tools"
+00143:  17  getprop "ProductSys"
+00148:  17  dup
+00149:  17  callprop "getArea"
+00154:  17  swap
+00155:  17  notearg
+00156:  17  call 0
+00159:  17  setname "mPorName"
+00164:  17  pop
+00165:  18  bindname "jsOrJsc"
+00170:  18  string ""
+00175:  18  setname "jsOrJsc"
+00180:  18  pop
+00181:  19  name "xs"
+00186:  19  getprop "release"
+00191:  19  ifeq 212 (+21)
+00196:  20  bindname "jsOrJsc"
+00201:  20  string "_jsc"
+00206:  20  setname "jsOrJsc"
+00211:  20  popv
+00212:  22  name "mPorName"
+00217:  22  name "xsc"
+00222:  22  getprop "Const_Area_TW"
+00227:  22  eq
+00228:  22  ifeq 294 (+66)
+00233:  23  bindname "planDatePrefix"
+00238:  23  string "data_tw"
+00243:  23  name "jsOrJsc"
+00248:  23  add
+00249:  23  string "/plan"
+00254:  23  add
+00255:  23  setname "planDatePrefix"
+00260:  23  popv
+00261:  24  bindname "artDatePrefix"
+00266:  24  string "data_tw"
+00271:  24  name "jsOrJsc"
+00276:  24  add
+00277:  24  string "/art"
+00282:  24  add
+00283:  24  setname "artDatePrefix"
+00288:  24  popv
+00289:  24  goto 399 (+110)
+00294:  25  name "mPorName"
+00299:  25  name "xsc"
+00304:  25  getprop "Const_Area_CN"
+00309:  25  eq
+00310:  25  ifeq 376 (+66)
+00315:  26  bindname "planDatePrefix"
+00320:  26  string "data_cn"
+00325:  26  name "jsOrJsc"
+00330:  26  add
+00331:  26  string "/plan"
+00336:  26  add
+00337:  26  setname "planDatePrefix"
+00342:  26  popv
+00343:  27  bindname "artDatePrefix"
+00348:  27  string "data_cn"
+00353:  27  name "jsOrJsc"
+00358:  27  add
+00359:  27  string "/art"
+00364:  27  add
+00365:  27  setname "artDatePrefix"
+00370:  27  popv
+00371:  27  goto 399 (+28)
+00376:  30  name "xs"
+00381:  30  dup
+00382:  30  callprop "error"
+00387:  30  swap
+00388:  30  notearg
+00389:  30  string "no find project name!"
+00394:  30  notearg
+00395:  30  call 1
+00398:  30  popv
+00399:  34  name "xs"
+00404:  34  getprop "Cfg"
+00409:  34  getprop "System"
+00414:  34  newarray 50
+00418:  35  name "planDatePrefix"
+00423:  35  string "/sgs_combat_level_conf.js"
+00428:  35  add
+00429:  35  initelem_array 0
+00433:  36  name "planDatePrefix"
+00438:  36  string "/sgs_config_btn.js"
+00443:  36  add
+00444:  36  initelem_array 1
+00448:  37  name "planDatePrefix"
+00453:  37  string "/sgs_config_label.js"
+00458:  37  add
+00459:  37  initelem_array 2
+00463:  38  name "planDatePrefix"
+00468:  38  string "/sgs_dungeon_plot_conf.js"
+00473:  38  add
+00474:  38  initelem_array 3
+00478:  39  name "planDatePrefix"
+00483:  39  string "/sgs_dungeon_plot_dialog.js"
+00488:  39  add
+00489:  39  initelem_array 4
+00493:  40  name "planDatePrefix"
+00498:  40  string "/sgs_eated_exp_conf.js"
+00503:  40  add
+00504:  40  initelem_array 5
+00508:  41  name "planDatePrefix"
+00513:  41  string "/sgs_equipments.js"
+00518:  41  add
+00519:  41  initelem_array 6
+00523:  42  name "planDatePrefix"
+00528:  42  string "/sgs_fates.js"
+00533:  42  add
+00534:  42  initelem_array 7
+00538:  43  name "planDatePrefix"
+00543:  43  string "/sgs_general_surrender.js"
+00548:  43  add
+00549:  43  initelem_array 8
+00553:  44  name "planDatePrefix"
+00558:  44  string "/sgs_generals.js"
+00563:  44  add
+00564:  44  initelem_array 9
+00568:  45  name "planDatePrefix"
+00573:  45  string "/sgs_global_conf.js"
+00578:  45  add
+00579:  45  initelem_array 10
+00583:  46  name "planDatePrefix"
+00588:  46  string "/sgs_i18n.js"
+00593:  46  add
+00594:  46  initelem_array 11
+00598:  47  name "planDatePrefix"
+00603:  47  string "/sgs_insight_grow_type.js"
+00608:  47  add
+00609:  47  initelem_array 12
+00613:  48  name "planDatePrefix"
+00618:  48  string "/sgs_item.js"
+00623:  48  add
+00624:  48  initelem_array 13
+00628:  49  name "planDatePrefix"
+00633:  49  string "/sgs_map_conf.js"
+00638:  49  add
+00639:  49  initelem_array 14
+00643:  50  name "planDatePrefix"
+00648:  50  string "/sgs_random_name.js"
+00653:  50  add
+00654:  50  initelem_array 15
+00658:  51  name "planDatePrefix"
+00663:  51  string "/sgs_refine_conf.js"
+00668:  51  add
+00669:  51  initelem_array 16
+00673:  52  name "planDatePrefix"
+00678:  52  string "/sgs_resource.js"
+00683:  52  add
+00684:  52  initelem_array 17
+00688:  53  name "planDatePrefix"
+00693:  53  string "/sgs_sell_conf.js"
+00698:  53  add
+00699:  53  initelem_array 18
+00703:  54  name "planDatePrefix"
+00708:  54  string "/sgs_skill_effect.js"
+00713:  54  add
+00714:  54  initelem_array 19
+00718:  55  name "planDatePrefix"
+00723:  55  string "/sgs_skills.js"
+00728:  55  add
+00729:  55  initelem_array 20
+00733:  56  name "planDatePrefix"
+00738:  56  string "/sgs_surrender.js"
+00743:  56  add
+00744:  56  initelem_array 21
+00748:  57  name "planDatePrefix"
+00753:  57  string "/sgs_upgrade_coin_conf.js"
+00758:  57  add
+00759:  57  initelem_array 22
+00763:  58  name "planDatePrefix"
+00768:  58  string "/sgs_upgrade_exp_conf.js"
+00773:  58  add
+00774:  58  initelem_array 23
+00778:  59  name "planDatePrefix"
+00783:  59  string "/sgs_user_level_conf.js"
+00788:  59  add
+00789:  59  initelem_array 24
+00793:  60  name "planDatePrefix"
+00798:  60  string "/sgs_vip_level_conf.js"
+00803:  60  add
+00804:  60  initelem_array 25
+00808:  61  name "planDatePrefix"
+00813:  61  string "/sgs_lieutenant_skill.js"
+00818:  61  add
+00819:  61  initelem_array 26
+00823:  62  name "planDatePrefix"
+00828:  62  string "/sgs_buddy_conf.js"
+00833:  62  add
+00834:  62  initelem_array 27
+00838:  63  name "planDatePrefix"
+00843:  63  string "/sgs_dungeon_conf.js"
+00848:  63  add
+00849:  63  initelem_array 28
+00853:  64  name "planDatePrefix"
+00858:  64  string "/sgs_union_war_battle_conf.js"
+00863:  64  add
+00864:  64  initelem_array 29
+00868:  65  name "planDatePrefix"
+00873:  65  string "/sgs_gem.js"
+00878:  65  add
+00879:  65  initelem_array 30
+00883:  67  name "planDatePrefix"
+00888:  67  string "/sgs_skill_advanced_conf.js"
+00893:  67  add
+00894:  67  initelem_array 31
+00898:  68  name "planDatePrefix"
+00903:  68  string "/sgs_magic_buff_conf.js"
+00908:  68  add
+00909:  68  initelem_array 32
+00913:  70  name "planDatePrefix"
+00918:  70  string "/sgs_world_war_schedule.js"
+00923:  70  add
+00924:  70  initelem_array 33
+00928:  71  name "planDatePrefix"
+00933:  71  string "/sgs_godness.js"
+00938:  71  add
+00939:  71  initelem_array 34
+00943:  72  name "planDatePrefix"
+00948:  72  string "/sgs_godness_skin.js"
+00953:  72  add
+00954:  72  initelem_array 35
+00958:  73  name "planDatePrefix"
+00963:  73  string "/sgs_hulao_reward_conf.js"
+00968:  73  add
+00969:  73  initelem_array 36
+00973:  74  name "planDatePrefix"
+00978:  74  string "/sgs_melt_conf.js"
+00983:  74  add
+00984:  74  initelem_array 37
+00988:  75  name "planDatePrefix"
+00993:  75  string "/sgs_function_level_conf.js"
+00998:  75  add
+00999:  75  initelem_array 38
+01003:  76  name "planDatePrefix"
+01008:  76  string "/sgs_meridian_top_conf.js"
+01013:  76  add
+01014:  76  initelem_array 39
+01018:  77  name "planDatePrefix"
+01023:  77  string "/sgs_meridian_conf.js"
+01028:  77  add
+01029:  77  initelem_array 40
+01033:  78  name "planDatePrefix"
+01038:  78  string "/sgs_meridian_point_conf.js"
+01043:  78  add
+01044:  78  initelem_array 41
+01048:  79  name "planDatePrefix"
+01053:  79  string "/sgs_godness_fates.js"
+01058:  79  add
+01059:  79  initelem_array 42
+01063:  80  name "planDatePrefix"
+01068:  80  string "/sgs_skill_melt_conf.js"
+01073:  80  add
+01074:  80  initelem_array 43
+01078:  81  name "planDatePrefix"
+01083:  81  string "/sgs_evolution.js"
+01088:  81  add
+01089:  81  initelem_array 44
+01093:  82  name "planDatePrefix"
+01098:  82  string "/sgs_evolution_open_conf.js"
+01103:  82  add
+01104:  82  initelem_array 45
+01108:  83  name "planDatePrefix"
+01113:  83  string "/sgs_evolution_buff_conf.js"
+01118:  83  add
+01119:  83  initelem_array 46
+01123:  84  name "planDatePrefix"
+01128:  84  string "/sgs_evolution_surrender.js"
+01133:  84  add
+01134:  84  initelem_array 47
+01138:  85  name "planDatePrefix"
+01143:  85  string "/sgs_beauty_conf_detail.js"
+01148:  85  add
+01149:  85  initelem_array 48
+01153:  86  name "planDatePrefix"
+01158:  86  string "/sgs_skill_refine_conf.js"
+01163:  86  add
+01164:  86  initelem_array 49
+01168:  86  endinit
+01169:  86  setprop "files_generated_by_server"
+01174:  86  popv
+01175:  89  name "xs"
+01180:  89  getprop "Cfg"
+01185:  89  getprop "System"
+01190:  89  newarray 3
+01194:  90  name "artDatePrefix"
+01199:  90  string "/sgs_config_ttf.js"
+01204:  90  add
+01205:  90  initelem_array 0
+01209:  91  name "artDatePrefix"
+01214:  91  string "/sgs_config_ls.js"
+01219:  91  add
+01220:  91  initelem_array 1
+01224:  92  name "artDatePrefix"
+01229:  92  string "/sgs_config_bmf.js"
+01234:  92  add
+01235:  92  initelem_array 2
+01239:  92  endinit
+01240:  92  setprop "files_generated_by_client"
+01245:  92  popv
+01246:  95  name "xs"
+01251:  95  getprop "Utils"
+01256:  95  dup
+01257:  95  callprop "require"
+01262:  95  swap
+01263:  95  notearg
+01264:  95  name "xs"
+01269:  95  getprop "Cfg"
+01274:  95  getprop "System"
+01279:  95  getprop "files_generated_by_server"
+01284:  95  notearg
+01285:  95  call 1
+01288:  95  popv
+01289:  96  name "xs"
+01294:  96  getprop "Utils"
+01299:  96  dup
+01300:  96  callprop "require"
+01305:  96  swap
+01306:  96  notearg
+01307:  96  name "xs"
+01312:  96  getprop "Cfg"
+01317:  96  getprop "System"
+01322:  96  getprop "files_generated_by_client"
+01327:  96  notearg
+01328:  96  call 1
+01331:  96  popv
+01332:  99  name "xs"
+01337:  99  getprop "Utils"
+01342:  99  dup
+01343:  99  callprop "require"
+01348:  99  swap
+01349:  99  notearg
+01350: 100  newarray 20
+01354: 103  string "Cfg/Constant.js"
+01359: 103  initelem_array 0
+01363: 104  string "Cfg/Label.js"
+01368: 104  initelem_array 1
+01372: 105  string "Cfg/Meta.js"
+01377: 105  initelem_array 2
+01381: 107  string "Cfg/Resource/headers.js"
+01386: 107  initelem_array 3
+01390: 109  string "Cfg/Langage.js"
+01395: 109  initelem_array 4
+01399: 110  string "Cfg/Scene.js"
+01404: 110  initelem_array 5
+01408: 111  string "Cfg/Animate.js"
+01413: 111  initelem_array 6
+01417: 112  string "Cfg/Sprite.js"
+01422: 112  initelem_array 7
+01426: 113  string "Cfg/Armature.js"
+01431: 113  initelem_array 8
+01435: 114  string "Cfg/Audio.js"
+01440: 114  initelem_array 9
+01444: 115  string "Cfg/Font.js"
+01449: 115  initelem_array 10
+01453: 116  string "Cfg/BMFont.js"
+01458: 116  initelem_array 11
+01462: 118  string "Cfg/String.js"
+01467: 118  initelem_array 12
+01471: 119  string "Cfg/Url.js"
+01476: 119  initelem_array 13
+01480: 121  string "Cfg/Particle.js"
+01485: 121  initelem_array 14
+01489: 122  string "Cfg/CCBI.js"
+01494: 122  initelem_array 15
+01498: 124  string "Cfg/Btn.js"
+01503: 124  initelem_array 16
+01507: 126  string "Cfg/Guide.js"
+01512: 126  initelem_array 17
+01516: 128  string "Cfg/Fight/headers.js"
+01521: 128  initelem_array 18
+01525: 130  string "Cfg/alias.js"
+01530: 130  initelem_array 19
+01534: 130  endinit
+01535: 130  notearg
+01536: 130  call 1
+01539: 130  popv
+01540: 134  name "xs"
+01545: 134  getprop "Cfg"
+01550: 134  string "sgs"
+01555: 134  setprop "Tag"
+01560: 134  popv
+01561: 135  name "xs"
+01566: 135  getprop "Cfg"
+01571: 135  string "sgsw"
+01576: 135  setprop "TagWarn"
+01581: 135  popv
+01582: 136  name "xs"
+01587: 136  getprop "Cfg"
+01592: 136  string "sgse"
+01597: 136  setprop "TagErr"
+01602: 136  popv
+01603: 139  name "xs"
+01608: 139  getprop "Cfg"
+01613: 139  name "xs"
+01618: 139  getprop "Cfg"
+01623: 139  uint16 10000
+01626: 139  setprop "DebugTag"
+01631: 139  setprop "DebugZOrder"
+01636: 139  popv
+01637: 139  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Cfg/headers.js:1 ---

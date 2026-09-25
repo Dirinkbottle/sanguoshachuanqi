@@ -1,0 +1,260 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/NotificationNode.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=79 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/NotificationNode.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Views"
+00010:  10  name "cc"
+00015:  10  getprop "Node"
+00020:  10  dup
+00021:  10  callprop "extend"
+00026:  10  swap
+00027:  10  notearg
+00028:  10  newinit 1
+00033:  11  lambda (function () {
+    [sourceless code]
+})
+00038:  11  initprop "ctor"
+00043:  15  lambda (function () {
+    [sourceless code]
+})
+00048:  15  initprop "init"
+00053:  15  endinit
+00054:  15  notearg
+00055:  15  call 1
+00058:  15  setprop "NotificationNode"
+00063:  15  popv
+00064:  41  name "xs"
+00069:  41  getprop "Views"
+00074:  41  getprop "NotificationNode"
+00079:  41  lambda (function () {
+    [sourceless code]
+})
+00084:  41  setprop "create"
+00089:  41  popv
+00090:  50  name "xs"
+00095:  50  getprop "Views"
+00100:  50  getprop "Mgr"
+00105:  50  dup
+00106:  50  callprop "registerNotificationNode"
+00111:  50  swap
+00112:  50  notearg
+00113:  50  string "Loading"
+00118:  50  notearg
+00119:  50  newinit 1
+00124:  51  name "xs"
+00129:  51  getprop "Views"
+00134:  51  getprop "NotificationNode"
+00139:  51  initprop "class"
+00144:  51  endinit
+00145:  51  notearg
+00146:  51  call 2
+00149:  51  popv
+00150:  54  name "xs"
+00155:  54  getprop "Views"
+00160:  54  getprop "Mgr"
+00165:  54  dup
+00166:  54  callprop "registerNotificationNode"
+00171:  54  swap
+00172:  54  notearg
+00173:  54  string "EmptyNode"
+00178:  54  notearg
+00179:  54  newinit 1
+00184:  55  name "cc"
+00189:  55  getprop "Node"
+00194:  55  initprop "class"
+00199:  55  endinit
+00200:  55  notearg
+00201:  55  call 2
+00204:  55  popv
+00205:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/NotificationNode.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/NotificationNode.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  call 0
+00012:  12  pop
+00013:  13  name "cc"
+00018:  13  dup
+00019:  13  callprop "associateWithNative"
+00024:  13  swap
+00025:  13  notearg
+00026:  13  this
+00027:  13  notearg
+00028:  13  name "cc"
+00033:  13  getprop "Node"
+00038:  13  notearg
+00039:  13  call 2
+00042:  13  pop
+00043:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/NotificationNode.js:11 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=1
+;; local[0] loadingLayer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/NotificationNode.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  dup
+00002:  17  callprop "_super"
+00007:  17  swap
+00008:  17  notearg
+00009:  17  call 0
+00012:  17  not
+00013:  17  ifeq 20 (+7)
+00018:  18  false
+00019:  18  return
+00020:  21  name "xs"
+00025:  21  getprop "Views"
+00030:  21  getprop "LoadingView"
+00035:  21  dup
+00036:  21  callprop "create"
+00041:  21  swap
+00042:  21  notearg
+00043:  21  call 0
+00046:  21  setlocal 0
+00049:  21  pop
+00050:  22  getlocal 0
+00053:  22  dup
+00054:  22  callprop "setTag"
+00059:  22  swap
+00060:  22  notearg
+00061:  22  name "xs"
+00066:  22  getprop "Cfg"
+00071:  22  getprop "Scene"
+00076:  22  getprop "CommonScene"
+00081:  22  getprop "Loading"
+00086:  22  getprop "tag"
+00091:  22  notearg
+00092:  22  call 1
+00095:  22  pop
+00096:  23  getlocal 0
+00099:  23  dup
+00100:  23  callprop "setZOrder"
+00105:  23  swap
+00106:  23  notearg
+00107:  23  name "xs"
+00112:  23  getprop "Cfg"
+00117:  23  getprop "Scene"
+00122:  23  getprop "CommonScene"
+00127:  23  getprop "Loading"
+00132:  23  getprop "zOrder"
+00137:  23  notearg
+00138:  23  call 1
+00141:  23  pop
+00142:  24  getlocal 0
+00145:  24  dup
+00146:  24  callprop "setBaseTouchPriority"
+00151:  24  swap
+00152:  24  notearg
+00153:  24  name "xs"
+00158:  24  getprop "Cfg"
+00163:  24  getprop "Scene"
+00168:  24  getprop "CommonScene"
+00173:  24  getprop "Loading"
+00178:  24  getprop "priority"
+00183:  24  notearg
+00184:  24  call 1
+00187:  24  pop
+00188:  25  name "xs"
+00193:  25  getprop "Utils"
+00198:  25  getprop "Node"
+00203:  25  dup
+00204:  25  callprop "attachNodes"
+00209:  25  swap
+00210:  25  notearg
+00211:  25  this
+00212:  25  notearg
+00213:  25  getlocal 0
+00216:  25  notearg
+00217:  25  call 2
+00220:  25  pop
+00221:  26  getlocal 0
+00224:  26  dup
+00225:  26  callprop "setVisible"
+00230:  26  swap
+00231:  26  notearg
+00232:  26  true
+00233:  26  notearg
+00234:  26  call 1
+00237:  26  pop
+00238:  28  this
+00239:  28  getlocal 0
+00242:  28  setprop "m_arm_loading"
+00247:  28  pop
+00248:  31  this
+00249:  31  getprop "m_arm_loading"
+00254:  31  dup
+00255:  31  callprop "play"
+00260:  31  swap
+00261:  31  notearg
+00262:  31  call 0
+00265:  31  pop
+00266:  37  true
+00267:  37  return
+00268:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/NotificationNode.js:15 ---
+;; function object[2] create
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] node
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/NotificationNode.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  42  name "xs"
+00005:  42  getprop "Views"
+00010:  42  getprop "NotificationNode"
+00015:  42  undefined
+00016:  42  notearg
+00017:  42  new 0
+00020:  42  setlocal 0
+00023:  42  pop
+00024:  43  getlocal 0
+00027:  43  and 47 (+20)
+00032:  43  pop
+00033:  43  getlocal 0
+00036:  43  dup
+00037:  43  callprop "init"
+00042:  43  swap
+00043:  43  notearg
+00044:  43  call 0
+00047:  43  ifeq 56 (+9)
+00052:  44  getlocal 0
+00055:  44  return
+00056:  46  name "xs"
+00061:  46  dup
+00062:  46  callprop "warn"
+00067:  46  swap
+00068:  46  notearg
+00069:  46  string "xs.Views.NotificationNode.create error!"
+00074:  46  notearg
+00075:  46  call 1
+00078:  46  pop
+00079:  47  null
+00080:  47  return
+00081:  47  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/NotificationNode.js:41 ---

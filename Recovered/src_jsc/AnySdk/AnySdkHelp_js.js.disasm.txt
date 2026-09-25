@@ -1,0 +1,1019 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/AnySdk/AnySdkHelp_js.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=36 object[0]
+;; FUNCTION-MAP kind=lambda offset=46 object[1]
+;; FUNCTION-MAP kind=lambda offset=56 object[2]
+;; FUNCTION-MAP kind=lambda offset=66 object[3]
+;; FUNCTION-MAP kind=lambda offset=76 object[4]
+;; FUNCTION-MAP kind=lambda offset=86 object[5]
+;; FUNCTION-MAP kind=lambda offset=96 object[6]
+;; FUNCTION-MAP kind=lambda offset=106 object[7]
+;; FUNCTION-MAP kind=lambda offset=116 object[8]
+;; FUNCTION-MAP kind=lambda offset=126 object[9]
+;; FUNCTION-MAP kind=lambda offset=136 object[10]
+;; FUNCTION-MAP kind=lambda offset=146 object[11]
+;; FUNCTION-MAP kind=lambda offset=156 object[12]
+;; FUNCTION-MAP kind=lambda offset=166 object[13]
+;; FUNCTION-MAP kind=lambda offset=176 object[14]
+;; FUNCTION-MAP kind=lambda offset=186 object[15]
+;; FUNCTION-MAP kind=lambda offset=196 object[16]
+;; FUNCTION-MAP kind=lambda offset=206 object[17]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "AnySdk"
+00010:   7  name "xs"
+00015:   7  getprop "AnySdk"
+00020:   7  getprop "AnySdkHelp_js"
+00025:   7  or 217 (+192)
+00030:   7  pop
+00031:   7  newinit 1
+00036:   9  lambda (function () {
+    [sourceless code]
+})
+00041:   9  initprop "loadAllPlugin"
+00046:  68  lambda (function () {
+    [sourceless code]
+})
+00051:  68  initprop "unloadPlugins"
+00056:  73  lambda (function () {
+    [sourceless code]
+})
+00061:  73  initprop "getChannelId"
+00066:  77  lambda (function () {
+    [sourceless code]
+})
+00071:  77  initprop "getInitState"
+00076:  85  lambda (function () {
+    [sourceless code]
+})
+00081:  85  initprop "setInitState"
+00086:  91  lambda (function () {
+    [sourceless code]
+})
+00091:  91  initprop "login"
+00096: 109  lambda (function () {
+    [sourceless code]
+})
+00101: 109  initprop "logout"
+00106: 116  lambda (function () {
+    [sourceless code]
+})
+00111: 116  initprop "isLogined"
+00116: 121  lambda (function () {
+    [sourceless code]
+})
+00121: 121  initprop "isFunctionSupported"
+00126: 126  lambda (function () {
+    [sourceless code]
+})
+00131: 126  initprop "destroy"
+00136: 133  lambda (function () {
+    [sourceless code]
+})
+00141: 133  initprop "showToolBar"
+00146: 141  lambda (function () {
+    [sourceless code]
+})
+00151: 141  initprop "hideToolBar"
+00156: 148  lambda (function () {
+    [sourceless code]
+})
+00161: 148  initprop "accountSwitch"
+00166: 155  lambda (function () {
+    [sourceless code]
+})
+00171: 155  initprop "exit"
+00176: 161  lambda (function () {
+    [sourceless code]
+})
+00181: 161  initprop "submitLoginGameRole"
+00186: 182  lambda (function () {
+    [sourceless code]
+})
+00191: 182  initprop "pay"
+00196: 212  lambda (function () {
+    [sourceless code]
+})
+00201: 212  initprop "resetPayState"
+00206: 217  lambda (function () {
+    [sourceless code]
+})
+00211: 217  initprop "specialLogin"
+00216: 217  endinit
+00217: 217  setprop "AnySdkHelp_js"
+00222: 217  popv
+00223: 227  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:1 ---
+;; function object[0] loadAllPlugin
+;; function metadata object[0] nargs=0 bindings=7
+;; local[0] _cppVersion
+;; local[1] appKey
+;; local[2] appSecret
+;; local[3] privateKey
+;; local[4] oauthLoginServer
+;; local[5] key
+;; local[6] iap_plugin
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=470 length=132 stackDepth=1 target=602
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  this
+00001:  10  false
+00002:  10  setprop "_initState"
+00007:  10  pop
+00008:  11  this
+00009:  11  name "anysdk"
+00014:  11  getprop "AgentManager"
+00019:  11  dup
+00020:  11  callprop "getInstance"
+00025:  11  swap
+00026:  11  notearg
+00027:  11  call 0
+00030:  11  setprop "agent"
+00035:  11  pop
+00036:  15  name "xs"
+00041:  15  getprop "JsbConnecter"
+00046:  15  dup
+00047:  15  callprop "getInstance"
+00052:  15  swap
+00053:  15  notearg
+00054:  15  call 0
+00057:  15  dup
+00058:  15  callprop "invoke"
+00063:  15  swap
+00064:  15  notearg
+00065:  15  string "Build"
+00070:  15  notearg
+00071:  15  string "getBuildVersion"
+00076:  15  notearg
+00077:  15  string "null"
+00082:  15  notearg
+00083:  15  call 3
+00086:  15  setlocal 0
+00089:  15  pop
+00090:  16  getlocal 0
+00093:  16  uint16 290
+00096:  16  le
+00097:  16  ifeq 354 (+257)
+00102:  17  getlocal 1
+00105:  17  pop
+00106:  17  getlocal 2
+00109:  17  pop
+00110:  17  getlocal 3
+00113:  17  pop
+00114:  17  getlocal 4
+00117:  17  pop
+00118:  18  name "xsc"
+00123:  18  getprop "app_indentify"
+00128:  18  name "xsc"
+00133:  18  getprop "Const_Proj_Code_Develop"
+00138:  18  eq
+00139:  18  or 220 (+81)
+00144:  18  pop
+00145:  19  name "xsc"
+00150:  19  getprop "app_indentify"
+00155:  19  name "xsc"
+00160:  19  getprop "Const_Proj_Code_TestOnline"
+00165:  19  eq
+00166:  19  or 220 (+54)
+00171:  19  pop
+00172:  20  name "xsc"
+00177:  20  getprop "app_indentify"
+00182:  20  name "xsc"
+00187:  20  getprop "Const_Proj_Code_226_TestOnline"
+00192:  20  eq
+00193:  20  or 220 (+27)
+00198:  20  pop
+00199:  21  name "xsc"
+00204:  21  getprop "app_indentify"
+00209:  21  name "xsc"
+00214:  21  getprop "Const_Proj_Code_226_TW_TestOnline"
+00219:  21  eq
+00220:  21  ifeq 266 (+46)
+00225:  23  string "BFB23E85-8175-B8A8-AFF4-F216C3CAEE04"
+00230:  23  setlocal 1
+00233:  23  pop
+00234:  24  string "c414b8fda892f337232ed6147aaefd38"
+00239:  24  setlocal 2
+00242:  24  pop
+00243:  25  string "218A31EBFBA5DF711A84DE325FFC9958"
+00248:  25  setlocal 3
+00251:  25  pop
+00252:  26  string "http://10.225.254.113/test/sanguosha_account/?do=anysdkAccount.index"
+00257:  26  setlocal 4
+00260:  26  pop
+00261:  26  goto 302 (+41)
+00266:  30  string "C45E40BD-EB2B-3346-4A79-1F6CA8CE252D"
+00271:  30  setlocal 1
+00274:  30  pop
+00275:  31  string "aae3fd80073bda5c6d6ce9a409030a81"
+00280:  31  setlocal 2
+00283:  31  pop
+00284:  32  string "87676FD3CB93465AF8AA993E70B60DF6"
+00289:  32  setlocal 3
+00292:  32  pop
+00293:  33  string "http://cqzx.sanguosha.com/sanguosha_account/?do=anysdkAccount.index"
+00298:  33  setlocal 4
+00301:  33  pop
+00302:  36  this
+00303:  36  getprop "agent"
+00308:  36  dup
+00309:  36  callprop "init"
+00314:  36  swap
+00315:  36  notearg
+00316:  36  getlocal 1
+00319:  36  notearg
+00320:  36  getlocal 2
+00323:  36  notearg
+00324:  36  getlocal 3
+00327:  36  notearg
+00328:  36  getlocal 4
+00331:  36  notearg
+00332:  36  call 4
+00335:  36  pop
+00336:  37  this
+00337:  37  getprop "agent"
+00342:  37  dup
+00343:  37  callprop "loadALLPlugin"
+00348:  37  swap
+00349:  37  notearg
+00350:  37  call 0
+00353:  37  pop
+00354:  40  this
+00355:  40  this
+00356:  40  getprop "agent"
+00361:  40  dup
+00362:  40  callprop "getUserPlugin"
+00367:  40  swap
+00368:  40  notearg
+00369:  40  call 0
+00372:  40  setprop "user_plugin"
+00377:  40  pop
+00378:  41  this
+00379:  41  this
+00380:  41  getprop "agent"
+00385:  41  dup
+00386:  41  callprop "getIAPPlugin"
+00391:  41  swap
+00392:  41  notearg
+00393:  41  call 0
+00396:  41  setprop "iap_plugin"
+00401:  41  pop
+00402:  49  this
+00403:  49  getprop "user_plugin"
+00408:  49  dup
+00409:  49  callprop "setActionListener"
+00414:  49  swap
+00415:  49  notearg
+00416:  49  name "xs"
+00421:  49  getprop "AnySdk"
+00426:  49  getprop "AnySdkCallback"
+00431:  49  getprop "onUserPluginCallBack"
+00436:  49  notearg
+00437:  49  name "xs"
+00442:  49  getprop "AnySdk"
+00447:  49  getprop "AnySdkCallback"
+00452:  49  notearg
+00453:  49  call 2
+00456:  49  pop
+00457:  53  this
+00458:  53  getprop "iap_plugin"
+00463:  53  iter 1
+00465:  53  goto 595 (+130)
+00470:  53  loophead
+00471:  53  iternext
+00472:  53  setlocal 5
+00475:  53  pop
+00476:  53  this
+00477:  53  getprop "iap_plugin"
+00482:  53  dup
+00483:  53  callprop "hasOwnProperty"
+00488:  53  swap
+00489:  53  notearg
+00490:  53  getlocal 5
+00493:  53  notearg
+00494:  53  call 1
+00497:  53  ifeq 595 (+98)
+00502:  54  this
+00503:  54  getprop "iap_plugin"
+00508:  54  getlocal 5
+00511:  54  getelem
+00512:  54  setlocal 6
+00515:  54  pop
+00516:  55  getlocal 6
+00519:  55  dup
+00520:  55  callprop "setResultListener"
+00525:  55  swap
+00526:  55  notearg
+00527:  55  name "xs"
+00532:  55  getprop "AnySdk"
+00537:  55  getprop "AnySdkCallback"
+00542:  55  getprop "onPayResult"
+00547:  55  notearg
+00548:  55  name "xs"
+00553:  55  getprop "AnySdk"
+00558:  55  getprop "AnySdkCallback"
+00563:  55  notearg
+00564:  55  call 2
+00567:  55  pop
+00568:  58  getlocal 6
+00571:  58  dup
+00572:  58  callprop "setDebugMode"
+00577:  58  swap
+00578:  58  notearg
+00579:  58  name "xs"
+00584:  58  getprop "release"
+00589:  58  not
+00590:  58  notearg
+00591:  58  call 1
+00594:  58  pop
+00595:  58  loopentry
+00596:  58  moreiter
+00597:  58  ifne 470 (-127)
+00602:  58  enditer
+00603:  62  this
+00604:  62  getprop "user_plugin"
+00609:  62  dup
+00610:  62  callprop "setDebugMode"
+00615:  62  swap
+00616:  62  notearg
+00617:  62  name "xs"
+00622:  62  getprop "release"
+00627:  62  not
+00628:  62  notearg
+00629:  62  call 1
+00632:  62  pop
+00633:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:9 ---
+;; function object[1] unloadPlugins
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  69  this
+00001:  69  getprop "user_plugin"
+00006:  69  dup
+00007:  69  callprop "unloadPlugins"
+00012:  69  swap
+00013:  69  notearg
+00014:  69  call 0
+00017:  69  pop
+00018:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:68 ---
+;; function object[2] getChannelId
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:73 ---
+loc   line  op
+----- ----  --
+main:
+00000:  74  this
+00001:  74  getprop "agent"
+00006:  74  dup
+00007:  74  callprop "getChannelId"
+00012:  74  swap
+00013:  74  notearg
+00014:  74  call 0
+00017:  74  return
+00018:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:73 ---
+;; function object[3] getInitState
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:77 ---
+loc   line  op
+----- ----  --
+main:
+00000:  78  this
+00001:  78  dup
+00002:  78  callprop "getChannelId"
+00007:  78  swap
+00008:  78  notearg
+00009:  78  call 0
+00012:  78  string "000286"
+00017:  78  eq
+00018:  78  ifeq 48 (+30)
+00023:  79  name "xs"
+00028:  79  dup
+00029:  79  callprop "log"
+00034:  79  swap
+00035:  79  notearg
+00036:  79  string "set jinli loginstate is true"
+00041:  79  notearg
+00042:  79  call 1
+00045:  79  pop
+00046:  80  true
+00047:  80  return
+00048:  82  this
+00049:  82  getprop "_initState"
+00054:  82  return
+00055:  82  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:77 ---
+;; function object[4] setInitState
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] state
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:85 ---
+loc   line  op
+----- ----  --
+main:
+00000:  86  name "xs"
+00005:  86  dup
+00006:  86  callprop "log"
+00011:  86  swap
+00012:  86  notearg
+00013:  86  string "\u8BBE\u7F6Einit = true"
+00018:  86  notearg
+00019:  86  call 1
+00022:  86  pop
+00023:  87  this
+00024:  87  getarg 0
+00027:  87  setprop "_initState"
+00032:  87  pop
+00033:  87  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:85 ---
+;; function object[5] login
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:91 ---
+loc   line  op
+----- ----  --
+main:
+00000:  92  name "xs"
+00005:  92  dup
+00006:  92  callprop "log"
+00011:  92  swap
+00012:  92  notearg
+00013:  92  string "\u521D\u59CB\u5316\u72B6\u6001 = "
+00018:  92  this
+00019:  92  getprop "_initState"
+00024:  92  add
+00025:  92  notearg
+00026:  92  call 1
+00029:  92  pop
+00030:  93  this
+00031:  93  dup
+00032:  93  callprop "getInitState"
+00037:  93  swap
+00038:  93  notearg
+00039:  93  call 0
+00042:  93  ifeq 116 (+74)
+00047:  95  name "xs"
+00052:  95  getprop "Views"
+00057:  95  getprop "Mgr"
+00062:  95  dup
+00063:  95  callprop "displayLoadingLayer"
+00068:  95  swap
+00069:  95  notearg
+00070:  95  call 0
+00073:  95  pop
+00074:  98  this
+00075:  98  dup
+00076:  98  callprop "specialLogin"
+00081:  98  swap
+00082:  98  notearg
+00083:  98  call 0
+00086:  98  false
+00087:  98  eq
+00088:  98  ifeq 111 (+23)
+00093: 100  this
+00094: 100  getprop "user_plugin"
+00099: 100  dup
+00100: 100  callprop "login"
+00105: 100  swap
+00106: 100  notearg
+00107: 100  call 0
+00110: 100  pop
+00111: 100  goto 139 (+28)
+00116: 104  name "xs"
+00121: 104  dup
+00122: 104  callprop "warn"
+00127: 104  swap
+00128: 104  notearg
+00129: 104  string "anysdk,login before init success"
+00134: 104  notearg
+00135: 104  call 1
+00138: 104  pop
+00139: 105  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:91 ---
+;; function object[6] logout
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:109 ---
+loc   line  op
+----- ----  --
+main:
+00000: 110  this
+00001: 110  getprop "user_plugin"
+00006: 110  dup
+00007: 110  callprop "isFunctionSupported"
+00012: 110  swap
+00013: 110  notearg
+00014: 110  string "logout"
+00019: 110  notearg
+00020: 110  call 1
+00023: 110  ifeq 52 (+29)
+00028: 111  this
+00029: 111  getprop "user_plugin"
+00034: 111  dup
+00035: 111  callprop "callFuncWithParam"
+00040: 111  swap
+00041: 111  notearg
+00042: 111  string "logout"
+00047: 111  notearg
+00048: 111  call 1
+00051: 111  pop
+00052: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:109 ---
+;; function object[7] isLogined
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:116 ---
+loc   line  op
+----- ----  --
+main:
+00000: 117  this
+00001: 117  getprop "user_plugin"
+00006: 117  dup
+00007: 117  callprop "isLogined"
+00012: 117  swap
+00013: 117  notearg
+00014: 117  call 0
+00017: 117  return
+00018: 117  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:116 ---
+;; function object[8] isFunctionSupported
+;; function metadata object[8] nargs=1 bindings=1
+;; arg[0] funName
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:121 ---
+loc   line  op
+----- ----  --
+main:
+00000: 122  this
+00001: 122  getprop "user_plugin"
+00006: 122  dup
+00007: 122  callprop "isFunctionSupported"
+00012: 122  swap
+00013: 122  notearg
+00014: 122  getarg 0
+00017: 122  notearg
+00018: 122  call 1
+00021: 122  return
+00022: 122  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:121 ---
+;; function object[9] destroy
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:126 ---
+loc   line  op
+----- ----  --
+main:
+00000: 127  this
+00001: 127  getprop "user_plugin"
+00006: 127  dup
+00007: 127  callprop "isFunctionSupported"
+00012: 127  swap
+00013: 127  notearg
+00014: 127  string "destroy"
+00019: 127  notearg
+00020: 127  call 1
+00023: 127  ifeq 52 (+29)
+00028: 128  this
+00029: 128  getprop "user_plugin"
+00034: 128  dup
+00035: 128  callprop "callFuncWithParam"
+00040: 128  swap
+00041: 128  notearg
+00042: 128  string "destroy"
+00047: 128  notearg
+00048: 128  call 1
+00051: 128  pop
+00052: 129  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:126 ---
+;; function object[10] showToolBar
+;; function metadata object[10] nargs=0 bindings=1
+;; local[0] param1
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:133 ---
+loc   line  op
+----- ----  --
+main:
+00000: 134  this
+00001: 134  getprop "user_plugin"
+00006: 134  dup
+00007: 134  callprop "isFunctionSupported"
+00012: 134  swap
+00013: 134  notearg
+00014: 134  string "showToolBar"
+00019: 134  notearg
+00020: 134  call 1
+00023: 134  ifeq 83 (+60)
+00028: 135  name "anysdk"
+00033: 135  getprop "PluginParam"
+00038: 135  dup
+00039: 135  callprop "create"
+00044: 135  swap
+00045: 135  notearg
+00046: 135  one
+00047: 135  notearg
+00048: 135  call 1
+00051: 135  setlocal 0
+00054: 135  pop
+00055: 136  this
+00056: 136  getprop "user_plugin"
+00061: 136  dup
+00062: 136  callprop "callFuncWithParam"
+00067: 136  swap
+00068: 136  notearg
+00069: 136  string "showToolBar"
+00074: 136  notearg
+00075: 136  getlocal 0
+00078: 136  notearg
+00079: 136  call 2
+00082: 136  pop
+00083: 137  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:133 ---
+;; function object[11] hideToolBar
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:141 ---
+loc   line  op
+----- ----  --
+main:
+00000: 142  this
+00001: 142  getprop "user_plugin"
+00006: 142  dup
+00007: 142  callprop "isFunctionSupported"
+00012: 142  swap
+00013: 142  notearg
+00014: 142  string "hideToolBar"
+00019: 142  notearg
+00020: 142  call 1
+00023: 142  ifeq 52 (+29)
+00028: 143  this
+00029: 143  getprop "user_plugin"
+00034: 143  dup
+00035: 143  callprop "callFuncWithParam"
+00040: 143  swap
+00041: 143  notearg
+00042: 143  string "hideToolBar"
+00047: 143  notearg
+00048: 143  call 1
+00051: 143  pop
+00052: 144  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:141 ---
+;; function object[12] accountSwitch
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:148 ---
+loc   line  op
+----- ----  --
+main:
+00000: 149  this
+00001: 149  getprop "user_plugin"
+00006: 149  dup
+00007: 149  callprop "isFunctionSupported"
+00012: 149  swap
+00013: 149  notearg
+00014: 149  string "accountSwitch"
+00019: 149  notearg
+00020: 149  call 1
+00023: 149  ifeq 52 (+29)
+00028: 150  this
+00029: 150  getprop "user_plugin"
+00034: 150  dup
+00035: 150  callprop "callFuncWithParam"
+00040: 150  swap
+00041: 150  notearg
+00042: 150  string "accountSwitch"
+00047: 150  notearg
+00048: 150  call 1
+00051: 150  pop
+00052: 151  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:148 ---
+;; function object[13] exit
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:155 ---
+loc   line  op
+----- ----  --
+main:
+00000: 156  this
+00001: 156  getprop "user_plugin"
+00006: 156  dup
+00007: 156  callprop "isFunctionSupported"
+00012: 156  swap
+00013: 156  notearg
+00014: 156  string "exit"
+00019: 156  notearg
+00020: 156  call 1
+00023: 156  ifeq 52 (+29)
+00028: 157  this
+00029: 157  getprop "user_plugin"
+00034: 157  dup
+00035: 157  callprop "callFuncWithParam"
+00040: 157  swap
+00041: 157  notearg
+00042: 157  string "exit"
+00047: 157  notearg
+00048: 157  call 1
+00051: 157  pop
+00052: 158  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:155 ---
+;; function object[14] submitLoginGameRole
+;; function metadata object[14] nargs=7 bindings=9
+;; arg[0] roleId
+;; arg[1] roleName
+;; arg[2] roleLevel
+;; arg[3] zoneId
+;; arg[4] zoneName
+;; arg[5] dataType
+;; arg[6] ext
+;; local[0] userInfo
+;; local[1] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:161 ---
+loc   line  op
+----- ----  --
+main:
+00000: 164  this
+00001: 164  getprop "user_plugin"
+00006: 164  dup
+00007: 164  callprop "isFunctionSupported"
+00012: 164  swap
+00013: 164  notearg
+00014: 164  string "submitLoginGameRole"
+00019: 164  notearg
+00020: 164  call 1
+00023: 164  ifeq 221 (+198)
+00028: 166  newinit 1
+00033: 166  endinit
+00034: 166  setlocal 0
+00037: 166  pop
+00038: 167  getlocal 0
+00041: 167  string ""
+00046: 167  getarg 0
+00049: 167  add
+00050: 167  setprop "roleId"
+00055: 167  pop
+00056: 168  getlocal 0
+00059: 168  string ""
+00064: 168  getarg 1
+00067: 168  add
+00068: 168  setprop "roleName"
+00073: 168  pop
+00074: 169  getlocal 0
+00077: 169  string ""
+00082: 169  getarg 2
+00085: 169  add
+00086: 169  setprop "roleLevel"
+00091: 169  pop
+00092: 170  getlocal 0
+00095: 170  string ""
+00100: 170  getarg 3
+00103: 170  add
+00104: 170  setprop "zoneId"
+00109: 170  pop
+00110: 171  getlocal 0
+00113: 171  string ""
+00118: 171  getarg 4
+00121: 171  add
+00122: 171  setprop "zoneName"
+00127: 171  pop
+00128: 172  getlocal 0
+00131: 172  string ""
+00136: 172  getarg 5
+00139: 172  add
+00140: 172  setprop "dataType"
+00145: 172  pop
+00146: 173  getlocal 0
+00149: 173  string ""
+00154: 173  getarg 6
+00157: 173  add
+00158: 173  setprop "ext"
+00163: 173  pop
+00164: 174  name "anysdk"
+00169: 174  getprop "PluginParam"
+00174: 174  dup
+00175: 174  callprop "create"
+00180: 174  swap
+00181: 174  notearg
+00182: 174  getlocal 0
+00185: 174  notearg
+00186: 174  call 1
+00189: 174  setlocal 1
+00192: 174  pop
+00193: 175  this
+00194: 175  getprop "user_plugin"
+00199: 175  dup
+00200: 175  callprop "callFuncWithParam"
+00205: 175  swap
+00206: 175  notearg
+00207: 175  string "submitLoginGameRole"
+00212: 175  notearg
+00213: 175  getlocal 1
+00216: 175  notearg
+00217: 175  call 2
+00220: 175  pop
+00221: 176  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:161 ---
+;; function object[15] pay
+;; function metadata object[15] nargs=10 bindings=13
+;; arg[0] Product_Id
+;; arg[1] Product_Name
+;; arg[2] Product_Price
+;; arg[3] Product_Count
+;; arg[4] Role_Id
+;; arg[5] Role_Name
+;; arg[6] Role_Grade
+;; arg[7] Role_Balance
+;; arg[8] Server_Id
+;; arg[9] EXT
+;; local[0] info
+;; local[1] p
+;; local[2] iap_plusgin
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=163 length=145 stackDepth=1 target=308
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:182 ---
+loc   line  op
+----- ----  --
+main:
+00000: 186  newinit 1
+00005: 187  string ""
+00010: 187  getarg 0
+00013: 187  add
+00014: 187  initprop "Product_Id"
+00019: 188  string ""
+00024: 188  getarg 1
+00027: 188  add
+00028: 188  initprop "Product_Name"
+00033: 189  string ""
+00038: 189  getarg 2
+00041: 189  add
+00042: 189  initprop "Product_Price"
+00047: 190  string ""
+00052: 190  getarg 3
+00055: 190  add
+00056: 190  initprop "Product_Count"
+00061: 191  string ""
+00066: 191  getarg 4
+00069: 191  add
+00070: 191  initprop "Role_Id"
+00075: 192  string ""
+00080: 192  getarg 5
+00083: 192  add
+00084: 192  initprop "Role_Name"
+00089: 193  string ""
+00094: 193  getarg 6
+00097: 193  add
+00098: 193  initprop "Role_Grade"
+00103: 194  string ""
+00108: 194  getarg 7
+00111: 194  add
+00112: 194  initprop "Role_Balance"
+00117: 195  string ""
+00122: 195  getarg 8
+00125: 195  add
+00126: 195  initprop "Server_Id"
+00131: 196  string ""
+00136: 196  getarg 9
+00139: 196  add
+00140: 196  initprop "EXT"
+00145: 196  endinit
+00146: 196  setlocal 0
+00149: 196  pop
+00150: 200  this
+00151: 200  getprop "iap_plugin"
+00156: 200  iter 1
+00158: 200  goto 301 (+143)
+00163: 200  loophead
+00164: 200  iternext
+00165: 200  setlocal 1
+00168: 200  pop
+00169: 200  this
+00170: 200  getprop "iap_plugin"
+00175: 200  dup
+00176: 200  callprop "hasOwnProperty"
+00181: 200  swap
+00182: 200  notearg
+00183: 200  getlocal 1
+00186: 200  notearg
+00187: 200  call 1
+00190: 200  ifeq 301 (+111)
+00195: 201  this
+00196: 201  getprop "iap_plugin"
+00201: 201  getlocal 1
+00204: 201  getelem
+00205: 201  setlocal 2
+00208: 201  pop
+00209: 203  name "xs"
+00214: 203  dup
+00215: 203  callprop "log"
+00220: 203  swap
+00221: 203  notearg
+00222: 203  string "\u663E\u793AloadingLayer"
+00227: 203  notearg
+00228: 203  call 1
+00231: 203  pop
+00232: 204  name "xs"
+00237: 204  getprop "Views"
+00242: 204  getprop "Mgr"
+00247: 204  dup
+00248: 204  callprop "displayLoadingLayer_ext"
+00253: 204  swap
+00254: 204  notearg
+00255: 204  call 0
+00258: 204  pop
+00259: 206  getlocal 2
+00262: 206  dup
+00263: 206  callprop "payForProduct"
+00268: 206  swap
+00269: 206  notearg
+00270: 206  getlocal 0
+00273: 206  notearg
+00274: 206  call 1
+00277: 206  pop
+00278: 207  name "xs"
+00283: 207  dup
+00284: 207  callprop "log"
+00289: 207  swap
+00290: 207  notearg
+00291: 207  string "\u53D1\u8D77\u652F\u4ED8"
+00296: 207  notearg
+00297: 207  call 1
+00300: 207  pop
+00301: 207  loopentry
+00302: 207  moreiter
+00303: 207  ifne 163 (-140)
+00308: 207  enditer
+00309: 208  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:182 ---
+;; function object[16] resetPayState
+;; function metadata object[16] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:212 ---
+loc   line  op
+----- ----  --
+main:
+00000: 213  name "anysdk"
+00005: 213  getprop "ProtocolIAP"
+00010: 213  dup
+00011: 213  callprop "resetPayState"
+00016: 213  swap
+00017: 213  notearg
+00018: 213  call 0
+00021: 213  pop
+00022: 213  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:212 ---
+;; function object[17] specialLogin
+;; function metadata object[17] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:217 ---
+loc   line  op
+----- ----  --
+main:
+00000: 222  this
+00001: 222  dup
+00002: 222  callprop "getChannelId"
+00007: 222  swap
+00008: 222  notearg
+00009: 222  call 0
+00012: 222  string "120000"
+00017: 222  eq
+00018: 222  ifeq 25 (+7)
+00023: 223  true
+00024: 223  return
+00025: 225  false
+00026: 225  return
+00027: 225  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkHelp_js.js:217 ---

@@ -1,0 +1,416 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/Gems.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=148 object[0]
+;; FUNCTION-MAP kind=lambda offset=158 object[1]
+;; FUNCTION-MAP kind=lambda offset=168 object[2]
+;; FUNCTION-MAP kind=lambda offset=178 object[3]
+;; FUNCTION-MAP kind=lambda offset=219 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Profile"
+00010:   5  getprop "GameData"
+00015:   5  name "xs"
+00020:   5  getprop "Profile"
+00025:   5  getprop "GameData"
+00030:   5  getprop "Base"
+00035:   5  dup
+00036:   5  callprop "extend"
+00041:   5  swap
+00042:   5  notearg
+00043:   5  newinit 1
+00048:   7  name "xs"
+00053:   7  getprop "Debug"
+00058:   7  getprop "emptyFunc"
+00063:   7  initprop "log"
+00068:   8  name "xs"
+00073:   8  getprop "Debug"
+00078:   8  getprop "emptyFunc"
+00083:   8  initprop "dump"
+00088:  10  string "xs.Profile.GameData.Gems"
+00093:  10  initprop "name"
+00098:  11  name "xs"
+00103:  11  getprop "Constant_GameData_Gem"
+00108:  11  initprop "nameType"
+00113:  12  name "xs"
+00118:  12  getprop "Models"
+00123:  12  getprop "Gems"
+00128:  12  initprop "modelName"
+00133:  14  name "xs"
+00138:  14  getprop "Constant_SortType_Equipment_Default"
+00143:  14  initprop "sortBy"
+00148:  20  lambda (function () {
+    [sourceless code]
+})
+00153:  20  initprop "init"
+00158:  27  lambda (function () {
+    [sourceless code]
+})
+00163:  27  initprop "setAllGemsNoNew"
+00168:  40  lambda (function () {
+    [sourceless code]
+})
+00173:  40  initprop "getGemsWithPkId"
+00178:  54  lambda (function () {
+    [sourceless code]
+})
+00183:  54  initprop "getGemsListForType"
+00188:  54  endinit
+00189:  54  notearg
+00190:  54  call 1
+00193:  54  setprop "Gems"
+00198:  54  popv
+00199:  73  name "xs"
+00204:  73  getprop "Profile"
+00209:  73  getprop "GameData"
+00214:  73  getprop "Gems"
+00219:  73  lambda (function () {
+    [sourceless code]
+})
+00224:  73  setprop "create"
+00229:  73  popv
+00230:  92  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:20 ---
+loc   line  op
+----- ----  --
+main:
+00000:  21  this
+00001:  21  dup
+00002:  21  callprop "_super"
+00007:  21  swap
+00008:  21  notearg
+00009:  21  getarg 0
+00012:  21  notearg
+00013:  21  call 1
+00016:  21  pop
+00017:  22  this
+00018:  22  getprop "dataRef"
+00023:  22  dup
+00024:  22  callprop "getNotifyCenter"
+00029:  22  swap
+00030:  22  notearg
+00031:  22  call 0
+00034:  22  dup
+00035:  22  callprop "addObserver"
+00040:  22  swap
+00041:  22  notearg
+00042:  22  this
+00043:  22  notearg
+00044:  22  this
+00045:  22  getprop "clearCache"
+00050:  22  notearg
+00051:  22  name "xs"
+00056:  22  getprop "Constant_Notify_ModelChange_Gems_SortChange"
+00061:  22  notearg
+00062:  22  call 3
+00065:  22  pop
+00066:  23  true
+00067:  23  return
+00068:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:20 ---
+;; function object[1] setAllGemsNoNew
+;; function metadata object[1] nargs=0 bindings=3
+;; local[0] allGems
+;; local[1] mGemIdx
+;; local[2] mGemMode
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=26 length=54 stackDepth=1 target=80
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  28  this
+00001:  28  dup
+00002:  28  callprop "getAll"
+00007:  28  swap
+00008:  28  notearg
+00009:  28  call 0
+00012:  28  setlocal 0
+00015:  28  pop
+00016:  29  getlocal 0
+00019:  29  iter 1
+00021:  29  goto 73 (+52)
+00026:  29  loophead
+00027:  29  iternext
+00028:  29  setlocal 1
+00031:  29  pop
+00032:  30  getlocal 0
+00035:  30  getlocal 1
+00038:  30  getelem
+00039:  30  setlocal 2
+00042:  30  pop
+00043:  31  getlocal 2
+00046:  31  typeof
+00047:  31  string "function"
+00052:  31  ne
+00053:  31  ifeq 73 (+20)
+00058:  32  getlocal 2
+00061:  32  dup
+00062:  32  callprop "setNoNew"
+00067:  32  swap
+00068:  32  notearg
+00069:  32  call 0
+00072:  32  pop
+00073:  32  loopentry
+00074:  32  moreiter
+00075:  32  ifne 26 (-49)
+00080:  32  enditer
+00081:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:27 ---
+;; function object[2] getGemsWithPkId
+;; function metadata object[2] nargs=1 bindings=4
+;; arg[0] gemPkId
+;; local[0] mAllGems
+;; local[1] mGemIdx
+;; local[2] mGemDate
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:40 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  this
+00001:  41  dup
+00002:  41  callprop "getAll"
+00007:  41  swap
+00008:  41  notearg
+00009:  41  call 0
+00012:  41  setlocal 0
+00015:  41  pop
+00016:  43  zero
+00017:  43  setlocal 1
+00020:  43  pop
+00021:  43  goto 80 (+59)
+00026:  44  loophead
+00027:  44  getlocal 0
+00030:  44  getlocal 1
+00033:  44  getelem
+00034:  44  setlocal 2
+00037:  44  pop
+00038:  47  getlocal 2
+00041:  47  dup
+00042:  47  callprop "getPkId"
+00047:  47  swap
+00048:  47  notearg
+00049:  47  call 0
+00052:  47  getarg 0
+00055:  47  eq
+00056:  47  ifeq 65 (+9)
+00061:  48  getlocal 2
+00064:  48  return
+00065:  43  localinc 11
+00068:  43  getlocal 1
+00071:  43  pos
+00072:  43  dup
+00073:  43  one
+00074:  43  add
+00075:  43  setlocal 1
+00078:  43  pop
+00079:  43  pop
+00080:  43  loopentry
+00081:  43  getlocal 1
+00084:  43  getlocal 0
+00087:  43  length "length"
+00092:  43  lt
+00093:  43  ifne 26 (-67)
+00098:  51  null
+00099:  51  return
+00100:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:40 ---
+;; function object[3] getGemsListForType
+;; function metadata object[3] nargs=1 bindings=5
+;; arg[0] gemType
+;; local[0] mList
+;; local[1] mAllGems
+;; local[2] mGemIdx
+;; local[3] mGemDate
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:54 ---
+loc   line  op
+----- ----  --
+main:
+00000:  55  newarray 0
+00004:  55  endinit
+00005:  55  setlocal 0
+00008:  55  pop
+00009:  56  this
+00010:  56  dup
+00011:  56  callprop "getAll"
+00016:  56  swap
+00017:  56  notearg
+00018:  56  call 0
+00021:  56  setlocal 1
+00024:  56  pop
+00025:  57  name "xs"
+00030:  57  dup
+00031:  57  callprop "log_hsq"
+00036:  57  swap
+00037:  57  notearg
+00038:  57  string "gemType"
+00043:  57  notearg
+00044:  57  getarg 0
+00047:  57  notearg
+00048:  57  call 2
+00051:  57  pop
+00052:  59  zero
+00053:  59  setlocal 2
+00056:  59  pop
+00057:  59  goto 145 (+88)
+00062:  60  loophead
+00063:  60  getlocal 1
+00066:  60  getlocal 2
+00069:  60  getelem
+00070:  60  setlocal 3
+00073:  60  pop
+00074:  63  getlocal 3
+00077:  63  getprop "getEffectType"
+00082:  63  and 106 (+24)
+00087:  63  pop
+00088:  63  getlocal 3
+00091:  63  dup
+00092:  63  callprop "getEffectType"
+00097:  63  swap
+00098:  63  notearg
+00099:  63  call 0
+00102:  63  getarg 0
+00105:  63  eq
+00106:  63  ifeq 130 (+24)
+00111:  64  getlocal 0
+00114:  64  dup
+00115:  64  callprop "push"
+00120:  64  swap
+00121:  64  notearg
+00122:  64  getlocal 3
+00125:  64  notearg
+00126:  64  call 1
+00129:  64  pop
+00130:  59  localinc 11
+00133:  59  getlocal 2
+00136:  59  pos
+00137:  59  dup
+00138:  59  one
+00139:  59  add
+00140:  59  setlocal 2
+00143:  59  pop
+00144:  59  pop
+00145:  59  loopentry
+00146:  59  getlocal 2
+00149:  59  getlocal 1
+00152:  59  length "length"
+00157:  59  lt
+00158:  59  ifne 62 (-96)
+00163:  67  getlocal 0
+00166:  67  return
+00167:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:54 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:73 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  name "xs"
+00005:  75  dup
+00006:  75  callprop "log_hsq"
+00011:  75  swap
+00012:  75  notearg
+00013:  75  string "param222"
+00018:  75  notearg
+00019:  75  call 1
+00022:  75  pop
+00023:  76  getarg 0
+00026:  76  getprop "play_id"
+00031:  76  setlocal 0
+00034:  76  pop
+00035:  77  name "xs"
+00040:  77  getprop "Profile"
+00045:  77  getprop "GameData"
+00050:  77  getprop "Gems"
+00055:  77  setlocal 1
+00058:  77  pop
+00059:  78  name "xs"
+00064:  78  getprop "Utils"
+00069:  78  dup
+00070:  78  callprop "isSet"
+00075:  78  swap
+00076:  78  notearg
+00077:  78  getlocal 1
+00080:  78  getprop "_instance"
+00085:  78  notearg
+00086:  78  call 1
+00089:  78  or 108 (+19)
+00094:  78  pop
+00095:  78  getlocal 1
+00098:  78  newarray 0
+00102:  78  endinit
+00103:  78  setprop "_instance"
+00108:  78  pop
+00109:  80  getlocal 1
+00112:  80  getprop "_instance"
+00117:  80  getlocal 0
+00120:  80  getelem
+00121:  80  ifeq 139 (+18)
+00126:  81  getlocal 1
+00129:  81  getprop "_instance"
+00134:  81  getlocal 0
+00137:  81  getelem
+00138:  81  return
+00139:  84  getlocal 1
+00142:  84  undefined
+00143:  84  notearg
+00144:  84  new 0
+00147:  84  setlocal 2
+00150:  84  pop
+00151:  85  getlocal 2
+00154:  85  and 178 (+24)
+00159:  85  pop
+00160:  85  getlocal 2
+00163:  85  dup
+00164:  85  callprop "init"
+00169:  85  swap
+00170:  85  notearg
+00171:  85  getarg 0
+00174:  85  notearg
+00175:  85  call 1
+00178:  85  ifeq 203 (+25)
+00183:  86  getlocal 1
+00186:  86  getprop "_instance"
+00191:  86  getlocal 0
+00194:  86  getlocal 2
+00197:  86  setelem
+00198:  86  pop
+00199:  87  getlocal 2
+00202:  87  return
+00203:  90  name "xs"
+00208:  90  dup
+00209:  90  callprop "error"
+00214:  90  swap
+00215:  90  notearg
+00216:  90  string "xs.Profile.GameData.Gems.create failed"
+00221:  90  notearg
+00222:  90  call 1
+00225:  90  pop
+00226:  91  null
+00227:  91  return
+00228:  91  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Gems.js:73 ---

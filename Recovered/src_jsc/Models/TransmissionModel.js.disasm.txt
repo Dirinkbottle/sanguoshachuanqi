@@ -1,0 +1,261 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/TransmissionModel.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=48 object[0]
+;; FUNCTION-MAP kind=lambda offset=58 object[1]
+;; FUNCTION-MAP kind=lambda offset=68 object[2]
+;; FUNCTION-MAP kind=lambda offset=78 object[3]
+;; FUNCTION-MAP kind=lambda offset=88 object[4]
+;; FUNCTION-MAP kind=lambda offset=124 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Models"
+00010:   6  name "xs"
+00015:   6  getprop "Models"
+00020:   6  getprop "BaseBreach"
+00025:   6  dup
+00026:   6  callprop "extend"
+00031:   6  swap
+00032:   6  notearg
+00033:   6  newinit 1
+00038:   7  string "xs.Models.TransmissionModel"
+00043:   7  initprop "name"
+00048:   9  lambda (function () {
+    [sourceless code]
+})
+00053:   9  initprop "init"
+00058:  29  lambda (function () {
+    [sourceless code]
+})
+00063:  29  initprop "getTalentPointPlus"
+00068:  32  lambda (function () {
+    [sourceless code]
+})
+00073:  32  initprop "getSacrificeType"
+00078:  35  lambda (function () {
+    [sourceless code]
+})
+00083:  35  initprop "getTalentPoint"
+00088:  38  lambda (function () {
+    [sourceless code]
+})
+00093:  38  initprop "getGanodermaBackNum"
+00098:  38  endinit
+00099:  38  notearg
+00100:  38  call 1
+00103:  38  setprop "TransmissionModel"
+00108:  38  popv
+00109:  43  name "xs"
+00114:  43  getprop "Models"
+00119:  43  getprop "TransmissionModel"
+00124:  43  lambda (function () {
+    [sourceless code]
+})
+00129:  43  setprop "create"
+00134:  43  popv
+00135:  49  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=2 bindings=2
+;; arg[0] jsonObj
+;; arg[1] generalModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  this
+00001:  10  dup
+00002:  10  callprop "_super"
+00007:  10  swap
+00008:  10  notearg
+00009:  10  getarg 0
+00012:  10  notearg
+00013:  10  getarg 1
+00016:  10  notearg
+00017:  10  call 2
+00020:  10  not
+00021:  10  ifeq 28 (+7)
+00026:  11  false
+00027:  11  return
+00028:  15  this
+00029:  15  name "xs"
+00034:  15  getprop "Utils"
+00039:  15  dup
+00040:  15  callprop "parseIntSafe"
+00045:  15  swap
+00046:  15  notearg
+00047:  15  getarg 0
+00050:  15  getprop "info"
+00055:  15  getprop "talent_point"
+00060:  15  notearg
+00061:  15  call 1
+00064:  15  setprop "talentPoint_plus"
+00069:  15  pop
+00070:  16  this
+00071:  16  name "xs"
+00076:  16  getprop "Utils"
+00081:  16  dup
+00082:  16  callprop "parseIntSafe"
+00087:  16  swap
+00088:  16  notearg
+00089:  16  getarg 0
+00092:  16  getprop "info"
+00097:  16  getprop "sacrifice_type"
+00102:  16  notearg
+00103:  16  call 1
+00106:  16  setprop "sacrifice_type"
+00111:  16  pop
+00112:  18  this
+00113:  18  name "xs"
+00118:  18  getprop "Utils"
+00123:  18  dup
+00124:  18  callprop "parseIntSafe"
+00129:  18  swap
+00130:  18  notearg
+00131:  18  getarg 0
+00134:  18  getprop "info"
+00139:  18  getprop "ganoderma"
+00144:  18  notearg
+00145:  18  call 1
+00148:  18  setprop "ganodermaBackNum"
+00153:  18  pop
+00154:  20  this
+00155:  20  name "xs"
+00160:  20  getprop "Utils"
+00165:  20  dup
+00166:  20  callprop "parseIntSafe"
+00171:  20  swap
+00172:  20  notearg
+00173:  20  getarg 0
+00176:  20  getprop "info"
+00181:  20  getprop "general_level_now"
+00186:  20  notearg
+00187:  20  call 1
+00190:  20  setprop "generalLevel_new"
+00195:  20  pop
+00196:  21  this
+00197:  21  name "xs"
+00202:  21  getprop "Utils"
+00207:  21  dup
+00208:  21  callprop "parseIntSafe"
+00213:  21  swap
+00214:  21  notearg
+00215:  21  getarg 0
+00218:  21  getprop "info"
+00223:  21  getprop "general_level_before"
+00228:  21  notearg
+00229:  21  call 1
+00232:  21  setprop "generalLevel_old"
+00237:  21  pop
+00238:  23  this
+00239:  23  getarg 1
+00242:  23  dup
+00243:  23  callprop "getTalentPoint"
+00248:  23  swap
+00249:  23  notearg
+00250:  23  call 0
+00253:  23  setprop "talentPoint"
+00258:  23  pop
+00259:  26  true
+00260:  26  return
+00261:  26  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:9 ---
+;; function object[1] getTalentPointPlus
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  this
+00001:  30  getprop "talentPoint_plus"
+00006:  30  return
+00007:  30  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:29 ---
+;; function object[2] getSacrificeType
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  33  this
+00001:  33  getprop "sacrifice_type"
+00006:  33  return
+00007:  33  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:32 ---
+;; function object[3] getTalentPoint
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:35 ---
+loc   line  op
+----- ----  --
+main:
+00000:  36  this
+00001:  36  getprop "talentPoint"
+00006:  36  return
+00007:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:35 ---
+;; function object[4] getGanodermaBackNum
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:38 ---
+loc   line  op
+----- ----  --
+main:
+00000:  39  this
+00001:  39  getprop "ganodermaBackNum"
+00006:  39  return
+00007:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:38 ---
+;; function object[5] create
+;; function metadata object[5] nargs=2 bindings=3
+;; arg[0] jsonObj
+;; arg[1] generalModel
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  name "xs"
+00005:  44  getprop "Models"
+00010:  44  getprop "TransmissionModel"
+00015:  44  undefined
+00016:  44  notearg
+00017:  44  new 0
+00020:  44  setlocal 0
+00023:  44  pop
+00024:  45  getlocal 0
+00027:  45  and 55 (+28)
+00032:  45  pop
+00033:  45  getlocal 0
+00036:  45  dup
+00037:  45  callprop "init"
+00042:  45  swap
+00043:  45  notearg
+00044:  45  getarg 0
+00047:  45  notearg
+00048:  45  getarg 1
+00051:  45  notearg
+00052:  45  call 2
+00055:  45  ifeq 64 (+9)
+00060:  46  getlocal 0
+00063:  46  return
+00064:  48  null
+00065:  48  return
+00066:  48  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TransmissionModel.js:43 ---

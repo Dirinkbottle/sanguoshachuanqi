@@ -1,0 +1,372 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/SkillProximal.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/SkillProximal.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Utils"
+00010:   7  dup
+00011:   7  callprop "extendScope"
+00016:   7  swap
+00017:   7  notearg
+00018:   8  name "xs"
+00023:   8  getprop "Cfg"
+00028:   8  getprop "Skill"
+00033:   8  notearg
+00034:   9  newinit 1
+00039:  13  newinit 1
+00044:  14  string "template.T_Proximal_MoveFst_SS"
+00049:  14  initprop "extend"
+00054:  16  newinit 1
+00059:  17  string "P_LuoYi_Effect_From"
+00064:  17  initprop "_type"
+00069:  17  endinit
+00070:  17  initprop "_attack0"
+00075:  20  newinit 1
+00080:  21  newinit 1
+00085:  22  string "P_Hurt_Flat_Over"
+00090:  22  initprop "_type"
+00095:  22  endinit
+00096:  22  initprop "_hurt"
+00101:  24  newinit 1
+00106:  25  string "P_LuoYi_Effect_To"
+00111:  25  initprop "_type"
+00116:  25  endinit
+00117:  25  initprop "_effect_to"
+00122:  27  newinit 1
+00127:  28  null
+00128:  28  initprop "_type"
+00133:  28  endinit
+00134:  28  initprop "_effect_from"
+00139:  28  endinit
+00140:  28  initprop "_attack1"
+00145:  28  endinit
+00146:  28  initprop "luoyi"
+00151:  36  newinit 1
+00156:  37  string "template.T_Proximal_MoveFst_SS"
+00161:  37  initprop "extend"
+00166:  38  newinit 1
+00171:  39  null
+00172:  39  initprop "_delay"
+00177:  40  null
+00178:  40  initprop "_type"
+00183:  40  endinit
+00184:  40  initprop "_attack0"
+00189:  42  newinit 1
+00194:  43  string "Spawn"
+00199:  43  initprop "type"
+00204:  44  newinit 1
+00209:  45  string "P_Delay_Frame_10"
+00214:  45  initprop "_delay"
+00219:  46  string "P_Hurt_Fly_Over_NFS"
+00224:  46  initprop "_type"
+00229:  46  endinit
+00230:  46  initprop "_hurt"
+00235:  48  newinit 1
+00240:  50  newarray 3
+00244:  50  string "P_Delay_Frame_10"
+00249:  50  initelem_array 0
+00253:  50  string "P_Delay_Frame_5"
+00258:  50  initelem_array 1
+00262:  50  string "P_Delay_Frame_3"
+00267:  50  initelem_array 2
+00271:  50  endinit
+00272:  50  initprop "_delay"
+00277:  51  string "P_Hp_Add_From"
+00282:  51  initprop "_type"
+00287:  51  endinit
+00288:  51  initprop "_effect_to"
+00293:  53  newinit 1
+00298:  55  newarray 3
+00302:  55  string "P_Delay_Frame_10"
+00307:  55  initelem_array 0
+00311:  55  string "P_Delay_Frame_5"
+00316:  55  initelem_array 1
+00320:  55  string "P_Delay_Frame_3"
+00325:  55  initelem_array 2
+00329:  55  endinit
+00330:  55  initprop "_delay"
+00335:  56  string "P_Hp_Add_To_FS"
+00340:  56  initprop "_type"
+00345:  56  endinit
+00346:  56  initprop "_effect_to1"
+00351:  58  newinit 1
+00356:  59  string "P_KuangGu_Effect_From"
+00361:  59  initprop "_type"
+00366:  59  endinit
+00367:  59  initprop "_effect_from"
+00372:  59  endinit
+00373:  59  initprop "_attack1"
+00378:  59  endinit
+00379:  59  initprop "kuanggu"
+00384:  65  newinit 1
+00389:  66  string "kuanggu"
+00394:  66  initprop "extend"
+00399:  66  endinit
+00400:  66  initprop "shixue"
+00405:  69  newinit 1
+00410:  70  string "template.T_Proximal_MoveFst_SS"
+00415:  70  initprop "extend"
+00420:  71  newinit 1
+00425:  72  null
+00426:  72  initprop "_delay"
+00431:  73  null
+00432:  73  initprop "_type"
+00437:  73  endinit
+00438:  73  initprop "_attack0"
+00443:  75  newinit 1
+00448:  76  string "Spawn"
+00453:  76  initprop "type"
+00458:  77  newinit 1
+00463:  78  newarray 2
+00467:  78  string "P_Delay_Frame_11"
+00472:  78  initelem_array 0
+00476:  78  string "P_Delay_Frame_5"
+00481:  78  initelem_array 1
+00485:  78  endinit
+00486:  78  initprop "_delay"
+00491:  79  string "P_Hurt_Fly_Over"
+00496:  79  initprop "_type"
+00501:  79  endinit
+00502:  79  initprop "_hurt"
+00507:  81  newinit 1
+00512:  82  string "P_DuanLiang_Effect_To"
+00517:  82  initprop "_type"
+00522:  82  endinit
+00523:  82  initprop "_effect_to"
+00528:  84  newinit 1
+00533:  85  newarray 2
+00537:  85  string "P_Delay_Frame_11"
+00542:  85  initelem_array 0
+00546:  85  string "P_Delay_Frame_5"
+00551:  85  initelem_array 1
+00555:  85  endinit
+00556:  85  initprop "_delay"
+00561:  86  string "P_Treat_Sub_To"
+00566:  86  initprop "_type"
+00571:  86  endinit
+00572:  86  initprop "_effect_to1"
+00577:  88  newinit 1
+00582:  89  string "P_DuanLiang_Effect_From"
+00587:  89  initprop "_type"
+00592:  89  endinit
+00593:  89  initprop "_effect_from"
+00598:  89  endinit
+00599:  89  initprop "_attack1"
+00604:  89  endinit
+00605:  89  initprop "duanliang"
+00610:  94  newinit 1
+00615:  94  endinit
+00616:  94  initprop "mo_kurou"
+00621:  96  newinit 1
+00626:  97  string "template.T_Remote_SS"
+00631:  97  initprop "extend"
+00636:  98  null
+00637:  98  initprop "_black_begin"
+00642:  99  newinit 1
+00647: 100  string "Spawn"
+00652: 100  initprop "type"
+00657: 101  newinit 1
+00662: 102  null
+00663: 102  initprop "_delay"
+00668: 103  null
+00669: 103  initprop "_type"
+00674: 103  endinit
+00675: 103  initprop "_hurt"
+00680: 105  newinit 1
+00685: 106  null
+00686: 106  initprop "_delay"
+00691: 107  null
+00692: 107  initprop "_type"
+00697: 108  null
+00698: 108  initprop "_black_end"
+00703: 108  endinit
+00704: 108  initprop "_effect_to"
+00709: 110  newinit 1
+00714: 111  null
+00715: 111  initprop "_type"
+00720: 111  endinit
+00721: 111  initprop "_effect_from"
+00726: 111  endinit
+00727: 111  initprop "_attack"
+00732: 111  endinit
+00733: 111  initprop "mo_kurou_0"
+00738: 118  newinit 1
+00743: 119  string "template.T_Remote_SS"
+00748: 119  initprop "extend"
+00753: 120  newinit 1
+00758: 121  newinit 1
+00763: 122  name "xs"
+00768: 122  getprop "Constant_FightScene_HpsType_Average"
+00773: 122  initprop "type"
+00778: 122  endinit
+00779: 122  initprop "hps"
+00784: 124  int8 2
+00786: 124  initprop "loopNum"
+00791: 124  endinit
+00792: 124  initprop "property"
+00797: 127  null
+00798: 127  initprop "_name"
+00803: 128  newinit 1
+00808: 129  string "Spawn"
+00813: 129  initprop "type"
+00818: 130  newinit 1
+00823: 131  null
+00824: 131  initprop "_delay"
+00829: 132  null
+00830: 132  initprop "_type"
+00835: 132  endinit
+00836: 132  initprop "_hurt"
+00841: 134  newinit 1
+00846: 135  string "P_Delay_Frame_4"
+00851: 135  initprop "_delay"
+00856: 136  string "P_Hurt_Hit_Higher"
+00861: 136  initprop "_type"
+00866: 137  newinit 1
+00871: 138  zero
+00872: 138  initprop "idx"
+00877: 138  endinit
+00878: 138  initprop "params"
+00883: 138  endinit
+00884: 138  initprop "_hurt0"
+00889: 141  newinit 1
+00894: 142  string "P_Delay_Frame_10"
+00899: 142  initprop "_delay"
+00904: 143  newarray 2
+00908: 143  string "P_Higher_Over_Revert"
+00913: 143  initelem_array 0
+00917: 143  string "P_Hurt_Back_Over"
+00922: 143  initelem_array 1
+00926: 143  endinit
+00927: 143  initprop "_type"
+00932: 144  newinit 1
+00937: 145  one
+00938: 145  initprop "idx"
+00943: 145  endinit
+00944: 145  initprop "params"
+00949: 145  endinit
+00950: 145  initprop "_hurt1"
+00955: 148  newinit 1
+00960: 149  null
+00961: 149  initprop "_delay"
+00966: 150  newarray 1
+00970: 150  string "P_MoKuRou_Effect_To"
+00975: 150  initelem_array 0
+00979: 150  endinit
+00980: 150  initprop "_type"
+00985: 150  endinit
+00986: 150  initprop "_effect_to"
+00991: 152  newinit 1
+00996: 153  newarray 1
+01000: 153  string "P_MoKuRou_Effect_From0"
+01005: 153  initelem_array 0
+01009: 153  endinit
+01010: 153  initprop "_type"
+01015: 153  endinit
+01016: 153  initprop "_effect_from"
+01021: 155  newinit 1
+01026: 156  newarray 3
+01030: 156  string "P_Delay_Frame_10"
+01035: 156  initelem_array 0
+01039: 156  string "P_Delay_Frame_6"
+01044: 156  initelem_array 1
+01048: 156  string "P_Delay_Frame_3"
+01053: 156  initelem_array 2
+01057: 156  endinit
+01058: 156  initprop "_delay"
+01063: 157  string "P_Def_Add_To"
+01068: 157  initprop "_type"
+01073: 157  endinit
+01074: 157  initprop "_buff_to"
+01079: 157  endinit
+01080: 157  initprop "_attack"
+01085: 157  endinit
+01086: 157  initprop "mo_kurou_1"
+01091: 163  newinit 1
+01096: 164  string "template.T_Proximal_MoveFst_SS"
+01101: 164  initprop "extend"
+01106: 166  null
+01107: 166  initprop "_name"
+01112: 167  newinit 1
+01117: 168  null
+01118: 168  initprop "_delay"
+01123: 169  null
+01124: 169  initprop "_type"
+01129: 169  endinit
+01130: 169  initprop "_attack0"
+01135: 171  newinit 1
+01140: 172  string "Spawn"
+01145: 172  initprop "type"
+01150: 173  newinit 1
+01155: 174  string "P_Delay_Frame_6"
+01160: 174  initprop "_delay"
+01165: 175  string "P_Hurt_Fly_Over"
+01170: 175  initprop "_type"
+01175: 175  endinit
+01176: 175  initprop "_hurt"
+01181: 177  newinit 1
+01186: 178  null
+01187: 178  initprop "_delay"
+01192: 179  null
+01193: 179  initprop "_type"
+01198: 179  endinit
+01199: 179  initprop "_effect_to"
+01204: 181  newinit 1
+01209: 182  string "P_MoKuRou_Effect_From1"
+01214: 182  initprop "_type"
+01219: 182  endinit
+01220: 182  initprop "_effect_from"
+01225: 182  endinit
+01226: 182  initprop "_attack1"
+01231: 182  endinit
+01232: 182  initprop "mo_kurou_2"
+01237: 188  newinit 1
+01242: 189  string "template.T_Remote_SS"
+01247: 189  initprop "extend"
+01252: 190  newinit 1
+01257: 191  string "Spawn"
+01262: 191  initprop "type"
+01267: 192  newinit 1
+01272: 193  newarray 2
+01276: 193  string "P_Delay_Frame_10"
+01281: 193  initelem_array 0
+01285: 193  string "P_Delay_Frame_11"
+01290: 193  initelem_array 1
+01294: 193  endinit
+01295: 193  initprop "_delay"
+01300: 194  string "P_Hurt_Back_Over"
+01305: 194  initprop "_type"
+01310: 194  endinit
+01311: 194  initprop "_hurt"
+01316: 196  newinit 1
+01321: 197  newinit 1
+01326: 198  string "Spawn"
+01331: 198  initprop "type"
+01336: 199  string "P_Mo_LeiJi_Effect_From0"
+01341: 199  initprop "_0"
+01346: 200  string "P_Mo_LeiJi_Effect_From1"
+01351: 200  initprop "_1"
+01356: 200  endinit
+01357: 200  initprop "_type"
+01362: 200  endinit
+01363: 200  initprop "_effect_from"
+01368: 203  newinit 1
+01373: 204  string "P_Mo_LeiJi_Effect_To"
+01378: 204  initprop "_type"
+01383: 204  endinit
+01384: 204  initprop "_effect_to"
+01389: 204  endinit
+01390: 204  initprop "_attack"
+01395: 204  endinit
+01396: 204  initprop "mo_leiji"
+01401: 204  endinit
+01402: 204  notearg
+01403: 204  call 2
+01406: 204  popv
+01407: 208  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/SkillProximal.js:1 ---

@@ -1,0 +1,1084 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/Permission.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=156 object[0]
+;; FUNCTION-MAP kind=lambda offset=166 object[1]
+;; FUNCTION-MAP kind=lambda offset=176 object[2]
+;; FUNCTION-MAP kind=lambda offset=186 object[3]
+;; FUNCTION-MAP kind=lambda offset=196 object[4]
+;; FUNCTION-MAP kind=lambda offset=206 object[5]
+;; FUNCTION-MAP kind=lambda offset=216 object[6]
+;; FUNCTION-MAP kind=lambda offset=226 object[7]
+;; FUNCTION-MAP kind=lambda offset=236 object[8]
+;; FUNCTION-MAP kind=lambda offset=246 object[9]
+;; FUNCTION-MAP kind=lambda offset=256 object[10]
+;; FUNCTION-MAP kind=lambda offset=266 object[11]
+;; FUNCTION-MAP kind=lambda offset=276 object[12]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Profile"
+00010:   7  name "xs"
+00015:   7  getprop "Profile"
+00020:   7  getprop "Permission"
+00025:   7  or 287 (+262)
+00030:   7  pop
+00031:   7  newinit 1
+00036:   9  string "xs.Profile.Permission"
+00041:   9  initprop "name"
+00046:  18  newarray 5
+00050:  29  newinit 1
+00055:  33  string "Ladder_Unlock_Level"
+00060:  33  initprop "key"
+00065:  33  endinit
+00066:  33  initelem_array 0
+00070:  36  newinit 1
+00075:  40  string "Chaos_Unlock_Level"
+00080:  40  initprop "key"
+00085:  40  endinit
+00086:  40  initelem_array 1
+00090:  43  newinit 1
+00095:  47  string "Climb_Unlock_Level"
+00100:  47  initprop "key"
+00105:  47  endinit
+00106:  47  initelem_array 2
+00110:  50  newinit 1
+00115:  54  string "WorldBoss_Unlock_Level"
+00120:  54  initprop "key"
+00125:  54  endinit
+00126:  54  initelem_array 3
+00130:  57  newinit 1
+00135:  58  string "Ladder_War_Unlock_Level"
+00140:  58  initprop "key"
+00145:  58  endinit
+00146:  58  initelem_array 4
+00150:  58  endinit
+00151:  58  initprop "Cfg"
+00156:  62  lambda (function () {
+    [sourceless code]
+})
+00161:  62  initprop "getUnLockLevel"
+00166:  70  lambda (function () {
+    [sourceless code]
+})
+00171:  70  initprop "getLockHitString"
+00176:  85  lambda (function () {
+    [sourceless code]
+})
+00181:  85  initprop "isLock"
+00186:  92  lambda (function () {
+    [sourceless code]
+})
+00191:  92  initprop "isUnlock"
+00196:  95  lambda (function () {
+    [sourceless code]
+})
+00201:  95  initprop "getUserStarSpeed"
+00206: 103  lambda (function () {
+    [sourceless code]
+})
+00211: 103  initprop "isUnLock_fightSpeed2"
+00216: 117  lambda (function () {
+    [sourceless code]
+})
+00221: 117  initprop "isUnLock_fightSpeed3"
+00226: 137  lambda (function () {
+    [sourceless code]
+})
+00231: 137  initprop "isUnLock_dungeonCD"
+00236: 143  lambda (function () {
+    [sourceless code]
+})
+00241: 143  initprop "isUnLock_quickFight"
+00246: 163  lambda (function () {
+    [sourceless code]
+})
+00251: 163  initprop "isUnLock_ladderTenFight"
+00256: 182  lambda (function () {
+    [sourceless code]
+})
+00261: 182  initprop "isUnLock_AutoPractice"
+00266: 201  lambda (function () {
+    [sourceless code]
+})
+00271: 201  initprop "isUnLock_chaoFight"
+00276: 211  lambda (function () {
+    [sourceless code]
+})
+00281: 211  initprop "isUnLock_dailyTask"
+00286: 211  endinit
+00287: 211  setprop "Permission"
+00292: 211  popv
+00293: 222  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:1 ---
+;; function object[0] getUnLockLevel
+;; function metadata object[0] nargs=1 bindings=3
+;; arg[0] idx
+;; local[0] _keyGlobal
+;; local[1] _level
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  64  this
+00001:  64  getprop "Cfg"
+00006:  64  getarg 0
+00009:  64  getelem
+00010:  64  getprop "key"
+00015:  64  setlocal 0
+00018:  64  pop
+00019:  65  name "xs"
+00024:  65  getprop "Tools"
+00029:  65  getprop "CfgData"
+00034:  65  dup
+00035:  65  callprop "getGlobalConf"
+00040:  65  swap
+00041:  65  notearg
+00042:  65  getlocal 0
+00045:  65  notearg
+00046:  65  call 1
+00049:  65  setlocal 1
+00052:  65  pop
+00053:  66  name "xs"
+00058:  66  getprop "Utils"
+00063:  66  dup
+00064:  66  callprop "parseIntSafe"
+00069:  66  swap
+00070:  66  notearg
+00071:  66  getlocal 1
+00074:  66  notearg
+00075:  66  call 1
+00078:  66  return
+00079:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:62 ---
+;; function object[1] getLockHitString
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] _string
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:70 ---
+loc   line  op
+----- ----  --
+main:
+00000:  79  name "xs"
+00005:  79  getprop "Tools"
+00010:  79  getprop "String"
+00015:  79  dup
+00016:  79  callprop "createString"
+00021:  79  swap
+00022:  79  notearg
+00023:  79  string "auto_name_52"
+00028:  79  notearg
+00029:  79  call 1
+00032:  79  setlocal 0
+00035:  79  pop
+00036:  81  getlocal 0
+00039:  81  dup
+00040:  81  callprop "convWithArgs"
+00045:  81  swap
+00046:  81  notearg
+00047:  81  newarray 1
+00051:  81  this
+00052:  81  dup
+00053:  81  callprop "getUnLockLevel"
+00058:  81  swap
+00059:  81  notearg
+00060:  81  getarg 0
+00063:  81  notearg
+00064:  81  call 1
+00067:  81  initelem_array 0
+00071:  81  endinit
+00072:  81  notearg
+00073:  81  call 1
+00076:  81  return
+00077:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:70 ---
+;; function object[2] isLock
+;; function metadata object[2] nargs=1 bindings=3
+;; arg[0] idx
+;; local[0] _level
+;; local[1] _levelUnlock
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:85 ---
+loc   line  op
+----- ----  --
+main:
+00000:  86  name "xs"
+00005:  86  getprop "Profile"
+00010:  86  getprop "GameData"
+00015:  86  getprop "Mgr"
+00020:  86  dup
+00021:  86  callprop "getInstance"
+00026:  86  swap
+00027:  86  notearg
+00028:  86  call 0
+00031:  86  getprop "Player"
+00036:  86  dup
+00037:  86  callprop "getPlayer"
+00042:  86  swap
+00043:  86  notearg
+00044:  86  call 0
+00047:  86  dup
+00048:  86  callprop "getPlayerLevel"
+00053:  86  swap
+00054:  86  notearg
+00055:  86  call 0
+00058:  86  setlocal 0
+00061:  86  pop
+00062:  88  this
+00063:  88  dup
+00064:  88  callprop "getUnLockLevel"
+00069:  88  swap
+00070:  88  notearg
+00071:  88  getarg 0
+00074:  88  notearg
+00075:  88  call 1
+00078:  88  setlocal 1
+00081:  88  pop
+00082:  89  getlocal 1
+00085:  89  getlocal 0
+00088:  89  gt
+00089:  89  return
+00090:  89  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:85 ---
+;; function object[3] isUnlock
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:92 ---
+loc   line  op
+----- ----  --
+main:
+00000:  93  this
+00001:  93  dup
+00002:  93  callprop "isLock"
+00007:  93  swap
+00008:  93  notearg
+00009:  93  getarg 0
+00012:  93  notearg
+00013:  93  call 1
+00016:  93  not
+00017:  93  return
+00018:  93  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:92 ---
+;; function object[4] getUserStarSpeed
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:95 ---
+loc   line  op
+----- ----  --
+main:
+00000:  96  this
+00001:  96  dup
+00002:  96  callprop "isUnLock_fightSpeed3"
+00007:  96  swap
+00008:  96  notearg
+00009:  96  call 0
+00012:  96  getprop "result"
+00017:  96  ifeq 25 (+8)
+00022:  97  int8 2
+00024:  97  return
+00025: 100  one
+00026: 100  return
+00027: 100  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:95 ---
+;; function object[5] isUnLock_fightSpeed2
+;; function metadata object[5] nargs=0 bindings=3
+;; local[0] level
+;; local[1] _levelPlayer
+;; local[2] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:103 ---
+loc   line  op
+----- ----  --
+main:
+00000: 106  name "xs"
+00005: 106  getprop "Utils"
+00010: 106  dup
+00011: 106  callprop "parseIntSafe"
+00016: 106  swap
+00017: 106  notearg
+00018: 106  name "xs"
+00023: 106  getprop "Tools"
+00028: 106  getprop "CfgData"
+00033: 106  dup
+00034: 106  callprop "getGlobalConf"
+00039: 106  swap
+00040: 106  notearg
+00041: 106  string "Fight_Speed2_Unlock_Level"
+00046: 106  notearg
+00047: 106  one
+00048: 106  notearg
+00049: 106  call 2
+00052: 106  notearg
+00053: 106  call 1
+00056: 106  setlocal 0
+00059: 106  pop
+00060: 108  name "xs"
+00065: 108  getprop "gd_mgr"
+00070: 108  dup
+00071: 108  callprop "getInstance"
+00076: 108  swap
+00077: 108  notearg
+00078: 108  call 0
+00081: 108  getprop "Player"
+00086: 108  dup
+00087: 108  callprop "getPlayer"
+00092: 108  swap
+00093: 108  notearg
+00094: 108  call 0
+00097: 108  dup
+00098: 108  callprop "getPlayerLevel"
+00103: 108  swap
+00104: 108  notearg
+00105: 108  call 0
+00108: 108  setlocal 1
+00111: 108  pop
+00112: 110  getlocal 1
+00115: 110  getlocal 0
+00118: 110  ge
+00119: 110  setlocal 2
+00122: 110  pop
+00123: 112  this
+00124: 112  dup
+00125: 112  callprop "log"
+00130: 112  swap
+00131: 112  notearg
+00132: 112  string "isUnLock_fightSpeed2 "
+00137: 112  getlocal 2
+00140: 112  add
+00141: 112  notearg
+00142: 112  call 1
+00145: 112  pop
+00146: 114  getlocal 2
+00149: 114  return
+00150: 114  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:103 ---
+;; function object[6] isUnLock_fightSpeed3
+;; function metadata object[6] nargs=0 bindings=7
+;; local[0] fightCfg
+;; local[1] level
+;; local[2] _levelPlayer
+;; local[3] vipLevel
+;; local[4] _vipLevelPlayer
+;; local[5] _result
+;; local[6] descStr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:117 ---
+loc   line  op
+----- ----  --
+main:
+00000: 118  name "xs"
+00005: 118  getprop "Tools"
+00010: 118  getprop "CfgData"
+00015: 118  dup
+00016: 118  callprop "readRecordByTypeAndKeyNoDefault"
+00021: 118  swap
+00022: 118  notearg
+00023: 118  name "xs"
+00028: 118  getprop "Constant_CfgDataType_Global"
+00033: 118  notearg
+00034: 118  string "Fight_Speed3_Unlock_Level"
+00039: 118  notearg
+00040: 118  call 2
+00043: 118  setlocal 0
+00046: 118  pop
+00047: 119  getlocal 0
+00050: 119  getprop "user_level"
+00055: 119  or 63 (+8)
+00060: 119  pop
+00061: 119  int8 30
+00063: 119  setlocal 1
+00066: 119  pop
+00067: 120  name "xs"
+00072: 120  getprop "gd_mgr"
+00077: 120  dup
+00078: 120  callprop "getInstance"
+00083: 120  swap
+00084: 120  notearg
+00085: 120  call 0
+00088: 120  getprop "Player"
+00093: 120  dup
+00094: 120  callprop "getPlayer"
+00099: 120  swap
+00100: 120  notearg
+00101: 120  call 0
+00104: 120  dup
+00105: 120  callprop "getPlayerLevel"
+00110: 120  swap
+00111: 120  notearg
+00112: 120  call 0
+00115: 120  setlocal 2
+00118: 120  pop
+00119: 122  getlocal 0
+00122: 122  getprop "vip_level"
+00127: 122  or 135 (+8)
+00132: 122  pop
+00133: 122  int8 5
+00135: 122  setlocal 3
+00138: 122  pop
+00139: 123  name "xs"
+00144: 123  getprop "gd_mgr"
+00149: 123  dup
+00150: 123  callprop "getInstance"
+00155: 123  swap
+00156: 123  notearg
+00157: 123  call 0
+00160: 123  getprop "Player"
+00165: 123  dup
+00166: 123  callprop "getPlayer"
+00171: 123  swap
+00172: 123  notearg
+00173: 123  call 0
+00176: 123  dup
+00177: 123  callprop "getPlayerVipLevel"
+00182: 123  swap
+00183: 123  notearg
+00184: 123  call 0
+00187: 123  setlocal 4
+00190: 123  pop
+00191: 126  getlocal 2
+00194: 126  getlocal 1
+00197: 126  ge
+00198: 126  or 211 (+13)
+00203: 126  pop
+00204: 126  getlocal 4
+00207: 126  getlocal 3
+00210: 126  ge
+00211: 126  ifeq 222 (+11)
+00216: 126  true
+00217: 126  goto 223 (+6)
+00222: 126  false
+00223: 126  setlocal 5
+00226: 126  pop
+00227: 127  name "xs"
+00232: 127  getprop "Tools"
+00237: 127  getprop "String"
+00242: 127  dup
+00243: 127  callprop "createString"
+00248: 127  swap
+00249: 127  notearg
+00250: 127  string "str_Speed3Fail"
+00255: 127  notearg
+00256: 127  call 1
+00259: 127  dup
+00260: 127  callprop "convWithArgs"
+00265: 127  swap
+00266: 127  notearg
+00267: 128  newarray 2
+00271: 128  getlocal 1
+00274: 128  initelem_array 0
+00278: 128  getlocal 3
+00281: 128  initelem_array 1
+00285: 128  endinit
+00286: 128  notearg
+00287: 128  call 1
+00290: 128  setlocal 6
+00293: 128  pop
+00294: 130  newinit 1
+00299: 131  getlocal 5
+00302: 131  initprop "result"
+00307: 132  getlocal 6
+00310: 132  initprop "desc"
+00315: 132  endinit
+00316: 132  return
+00317: 133  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:117 ---
+;; function object[7] isUnLock_dungeonCD
+;; function metadata object[7] nargs=0 bindings=2
+;; local[0] level
+;; local[1] _levelPlayer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:137 ---
+loc   line  op
+----- ----  --
+main:
+00000: 138  name "xs"
+00005: 138  getprop "Utils"
+00010: 138  dup
+00011: 138  callprop "parseIntSafe"
+00016: 138  swap
+00017: 138  notearg
+00018: 138  name "xs"
+00023: 138  getprop "Tools"
+00028: 138  getprop "CfgData"
+00033: 138  dup
+00034: 138  callprop "getGlobalConf"
+00039: 138  swap
+00040: 138  notearg
+00041: 138  string "vip_mkill_clearcd"
+00046: 138  notearg
+00047: 138  int8 6
+00049: 138  notearg
+00050: 138  call 2
+00053: 138  notearg
+00054: 138  call 1
+00057: 138  setlocal 0
+00060: 138  pop
+00061: 139  name "xs"
+00066: 139  getprop "gd_mgr"
+00071: 139  dup
+00072: 139  callprop "getInstance"
+00077: 139  swap
+00078: 139  notearg
+00079: 139  call 0
+00082: 139  getprop "Player"
+00087: 139  dup
+00088: 139  callprop "getPlayer"
+00093: 139  swap
+00094: 139  notearg
+00095: 139  call 0
+00098: 139  dup
+00099: 139  callprop "getPlayerVipLevel"
+00104: 139  swap
+00105: 139  notearg
+00106: 139  call 0
+00109: 139  setlocal 1
+00112: 139  pop
+00113: 140  getlocal 1
+00116: 140  getlocal 0
+00119: 140  ge
+00120: 140  return
+00121: 140  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:137 ---
+;; function object[8] isUnLock_quickFight
+;; function metadata object[8] nargs=0 bindings=7
+;; local[0] ladderQuickFightCfg
+;; local[1] level
+;; local[2] _levelPlayer
+;; local[3] vipLevel
+;; local[4] _vipLevelPlayer
+;; local[5] _result
+;; local[6] descStr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:143 ---
+loc   line  op
+----- ----  --
+main:
+00000: 145  name "xs"
+00005: 145  getprop "Tools"
+00010: 145  getprop "CfgData"
+00015: 145  dup
+00016: 145  callprop "readRecordByTypeAndKeyNoDefault"
+00021: 145  swap
+00022: 145  notearg
+00023: 145  name "xs"
+00028: 145  getprop "Constant_CfgDataType_Global"
+00033: 145  notearg
+00034: 145  string "ladderFightConf"
+00039: 145  notearg
+00040: 145  call 2
+00043: 145  setlocal 0
+00046: 145  pop
+00047: 148  getlocal 0
+00050: 148  getprop "user_level"
+00055: 148  or 63 (+8)
+00060: 148  pop
+00061: 148  int8 25
+00063: 148  setlocal 1
+00066: 148  pop
+00067: 149  name "xs"
+00072: 149  getprop "gd_mgr"
+00077: 149  dup
+00078: 149  callprop "getInstance"
+00083: 149  swap
+00084: 149  notearg
+00085: 149  call 0
+00088: 149  getprop "Player"
+00093: 149  dup
+00094: 149  callprop "getPlayer"
+00099: 149  swap
+00100: 149  notearg
+00101: 149  call 0
+00104: 149  dup
+00105: 149  callprop "getPlayerLevel"
+00110: 149  swap
+00111: 149  notearg
+00112: 149  call 0
+00115: 149  setlocal 2
+00118: 149  pop
+00119: 151  getlocal 0
+00122: 151  getprop "vip_level"
+00127: 151  or 135 (+8)
+00132: 151  pop
+00133: 151  int8 5
+00135: 151  setlocal 3
+00138: 151  pop
+00139: 152  name "xs"
+00144: 152  getprop "gd_mgr"
+00149: 152  dup
+00150: 152  callprop "getInstance"
+00155: 152  swap
+00156: 152  notearg
+00157: 152  call 0
+00160: 152  getprop "Player"
+00165: 152  dup
+00166: 152  callprop "getPlayer"
+00171: 152  swap
+00172: 152  notearg
+00173: 152  call 0
+00176: 152  dup
+00177: 152  callprop "getPlayerVipLevel"
+00182: 152  swap
+00183: 152  notearg
+00184: 152  call 0
+00187: 152  setlocal 4
+00190: 152  pop
+00191: 154  getlocal 2
+00194: 154  getlocal 1
+00197: 154  ge
+00198: 154  or 211 (+13)
+00203: 154  pop
+00204: 154  getlocal 4
+00207: 154  getlocal 3
+00210: 154  ge
+00211: 154  ifeq 222 (+11)
+00216: 154  true
+00217: 154  goto 223 (+6)
+00222: 154  false
+00223: 154  setlocal 5
+00226: 154  pop
+00227: 155  name "xs"
+00232: 155  getprop "Tools"
+00237: 155  getprop "String"
+00242: 155  dup
+00243: 155  callprop "createString"
+00248: 155  swap
+00249: 155  notearg
+00250: 155  string "unLock_quickFight_level"
+00255: 155  notearg
+00256: 155  call 1
+00259: 155  dup
+00260: 155  callprop "convWithArgs"
+00265: 155  swap
+00266: 155  notearg
+00267: 156  newarray 2
+00271: 156  getlocal 1
+00274: 156  initelem_array 0
+00278: 156  getlocal 3
+00281: 156  initelem_array 1
+00285: 156  endinit
+00286: 156  notearg
+00287: 156  call 1
+00290: 156  setlocal 6
+00293: 156  pop
+00294: 158  newinit 1
+00299: 159  getlocal 5
+00302: 159  initprop "result"
+00307: 160  getlocal 6
+00310: 160  initprop "desc"
+00315: 160  endinit
+00316: 160  return
+00317: 161  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:143 ---
+;; function object[9] isUnLock_ladderTenFight
+;; function metadata object[9] nargs=0 bindings=7
+;; local[0] ladderTenFightCfg
+;; local[1] level
+;; local[2] _levelPlayer
+;; local[3] vipLevel
+;; local[4] _vipLevelPlayer
+;; local[5] _result
+;; local[6] descStr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:163 ---
+loc   line  op
+----- ----  --
+main:
+00000: 164  name "xs"
+00005: 164  getprop "Tools"
+00010: 164  getprop "CfgData"
+00015: 164  dup
+00016: 164  callprop "readRecordByTypeAndKeyNoDefault"
+00021: 164  swap
+00022: 164  notearg
+00023: 164  name "xs"
+00028: 164  getprop "Constant_CfgDataType_Global"
+00033: 164  notearg
+00034: 164  string "ladderRepeatedlyFight"
+00039: 164  notearg
+00040: 164  call 2
+00043: 164  setlocal 0
+00046: 164  pop
+00047: 167  getlocal 0
+00050: 167  getprop "user_level"
+00055: 167  or 63 (+8)
+00060: 167  pop
+00061: 167  int8 50
+00063: 167  setlocal 1
+00066: 167  pop
+00067: 168  name "xs"
+00072: 168  getprop "gd_mgr"
+00077: 168  dup
+00078: 168  callprop "getInstance"
+00083: 168  swap
+00084: 168  notearg
+00085: 168  call 0
+00088: 168  getprop "Player"
+00093: 168  dup
+00094: 168  callprop "getPlayer"
+00099: 168  swap
+00100: 168  notearg
+00101: 168  call 0
+00104: 168  dup
+00105: 168  callprop "getPlayerLevel"
+00110: 168  swap
+00111: 168  notearg
+00112: 168  call 0
+00115: 168  setlocal 2
+00118: 168  pop
+00119: 170  getlocal 0
+00122: 170  getprop "vip_level"
+00127: 170  or 135 (+8)
+00132: 170  pop
+00133: 170  int8 7
+00135: 170  setlocal 3
+00138: 170  pop
+00139: 171  name "xs"
+00144: 171  getprop "gd_mgr"
+00149: 171  dup
+00150: 171  callprop "getInstance"
+00155: 171  swap
+00156: 171  notearg
+00157: 171  call 0
+00160: 171  getprop "Player"
+00165: 171  dup
+00166: 171  callprop "getPlayer"
+00171: 171  swap
+00172: 171  notearg
+00173: 171  call 0
+00176: 171  dup
+00177: 171  callprop "getPlayerVipLevel"
+00182: 171  swap
+00183: 171  notearg
+00184: 171  call 0
+00187: 171  setlocal 4
+00190: 171  pop
+00191: 173  getlocal 2
+00194: 173  getlocal 1
+00197: 173  ge
+00198: 173  or 211 (+13)
+00203: 173  pop
+00204: 173  getlocal 4
+00207: 173  getlocal 3
+00210: 173  ge
+00211: 173  ifeq 222 (+11)
+00216: 173  true
+00217: 173  goto 223 (+6)
+00222: 173  false
+00223: 173  setlocal 5
+00226: 173  pop
+00227: 174  name "xs"
+00232: 174  getprop "Tools"
+00237: 174  getprop "String"
+00242: 174  dup
+00243: 174  callprop "createString"
+00248: 174  swap
+00249: 174  notearg
+00250: 174  string "CanNotLadderTenFight"
+00255: 174  notearg
+00256: 174  call 1
+00259: 174  dup
+00260: 174  callprop "convWithArgs"
+00265: 174  swap
+00266: 174  notearg
+00267: 175  newarray 2
+00271: 175  getlocal 1
+00274: 175  initelem_array 0
+00278: 175  getlocal 3
+00281: 175  initelem_array 1
+00285: 175  endinit
+00286: 175  notearg
+00287: 175  call 1
+00290: 175  setlocal 6
+00293: 175  pop
+00294: 177  newinit 1
+00299: 178  getlocal 5
+00302: 178  initprop "result"
+00307: 179  getlocal 6
+00310: 179  initprop "desc"
+00315: 179  endinit
+00316: 179  return
+00317: 180  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:163 ---
+;; function object[10] isUnLock_AutoPractice
+;; function metadata object[10] nargs=0 bindings=7
+;; local[0] ladderTenFightCfg
+;; local[1] level
+;; local[2] _levelPlayer
+;; local[3] vipLevel
+;; local[4] _vipLevelPlayer
+;; local[5] _result
+;; local[6] descStr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:182 ---
+loc   line  op
+----- ----  --
+main:
+00000: 183  name "xs"
+00005: 183  getprop "Tools"
+00010: 183  getprop "CfgData"
+00015: 183  dup
+00016: 183  callprop "readRecordByTypeAndKeyNoDefault"
+00021: 183  swap
+00022: 183  notearg
+00023: 183  name "xs"
+00028: 183  getprop "Constant_CfgDataType_Global"
+00033: 183  notearg
+00034: 183  string "autoCultivateVipLevel"
+00039: 183  notearg
+00040: 183  call 2
+00043: 183  setlocal 0
+00046: 183  pop
+00047: 186  getlocal 0
+00050: 186  getprop "user_level"
+00055: 186  or 63 (+8)
+00060: 186  pop
+00061: 186  int8 40
+00063: 186  setlocal 1
+00066: 186  pop
+00067: 187  name "xs"
+00072: 187  getprop "gd_mgr"
+00077: 187  dup
+00078: 187  callprop "getInstance"
+00083: 187  swap
+00084: 187  notearg
+00085: 187  call 0
+00088: 187  getprop "Player"
+00093: 187  dup
+00094: 187  callprop "getPlayer"
+00099: 187  swap
+00100: 187  notearg
+00101: 187  call 0
+00104: 187  dup
+00105: 187  callprop "getPlayerLevel"
+00110: 187  swap
+00111: 187  notearg
+00112: 187  call 0
+00115: 187  setlocal 2
+00118: 187  pop
+00119: 189  getlocal 0
+00122: 189  getprop "vip_level"
+00127: 189  or 135 (+8)
+00132: 189  pop
+00133: 189  int8 8
+00135: 189  setlocal 3
+00138: 189  pop
+00139: 190  name "xs"
+00144: 190  getprop "gd_mgr"
+00149: 190  dup
+00150: 190  callprop "getInstance"
+00155: 190  swap
+00156: 190  notearg
+00157: 190  call 0
+00160: 190  getprop "Player"
+00165: 190  dup
+00166: 190  callprop "getPlayer"
+00171: 190  swap
+00172: 190  notearg
+00173: 190  call 0
+00176: 190  dup
+00177: 190  callprop "getPlayerVipLevel"
+00182: 190  swap
+00183: 190  notearg
+00184: 190  call 0
+00187: 190  setlocal 4
+00190: 190  pop
+00191: 192  getlocal 2
+00194: 192  getlocal 1
+00197: 192  ge
+00198: 192  or 211 (+13)
+00203: 192  pop
+00204: 192  getlocal 4
+00207: 192  getlocal 3
+00210: 192  ge
+00211: 192  ifeq 222 (+11)
+00216: 192  true
+00217: 192  goto 223 (+6)
+00222: 192  false
+00223: 192  setlocal 5
+00226: 192  pop
+00227: 193  name "xs"
+00232: 193  getprop "Tools"
+00237: 193  getprop "String"
+00242: 193  dup
+00243: 193  callprop "createString"
+00248: 193  swap
+00249: 193  notearg
+00250: 193  string "AutoPracticeVipLevel"
+00255: 193  notearg
+00256: 193  call 1
+00259: 193  dup
+00260: 193  callprop "convWithArgs"
+00265: 193  swap
+00266: 193  notearg
+00267: 194  newarray 2
+00271: 194  getlocal 1
+00274: 194  initelem_array 0
+00278: 194  getlocal 3
+00281: 194  initelem_array 1
+00285: 194  endinit
+00286: 194  notearg
+00287: 194  call 1
+00290: 194  setlocal 6
+00293: 194  pop
+00294: 196  newinit 1
+00299: 197  getlocal 5
+00302: 197  initprop "result"
+00307: 198  getlocal 6
+00310: 198  initprop "desc"
+00315: 198  endinit
+00316: 198  return
+00317: 199  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:182 ---
+;; function object[11] isUnLock_chaoFight
+;; function metadata object[11] nargs=0 bindings=3
+;; local[0] _needlevel
+;; local[1] _vipLevel
+;; local[2] _result
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:201 ---
+loc   line  op
+----- ----  --
+main:
+00000: 202  int8 5
+00002: 202  setlocal 0
+00005: 202  pop
+00006: 203  name "xs"
+00011: 203  getprop "gd_mgr"
+00016: 203  dup
+00017: 203  callprop "getInstance"
+00022: 203  swap
+00023: 203  notearg
+00024: 203  call 0
+00027: 203  getprop "Player"
+00032: 203  dup
+00033: 203  callprop "getPlayer"
+00038: 203  swap
+00039: 203  notearg
+00040: 203  call 0
+00043: 203  dup
+00044: 203  callprop "getPlayerVipLevel"
+00049: 203  swap
+00050: 203  notearg
+00051: 203  call 0
+00054: 203  setlocal 1
+00057: 203  pop
+00058: 204  getlocal 1
+00061: 204  getlocal 0
+00064: 204  ge
+00065: 204  setlocal 2
+00068: 204  pop
+00069: 205  newinit 1
+00074: 206  getlocal 2
+00077: 206  initprop "result"
+00082: 207  name "xs"
+00087: 207  getprop "Tools"
+00092: 207  getprop "String"
+00097: 207  dup
+00098: 207  callprop "createString"
+00103: 207  swap
+00104: 207  notearg
+00105: 207  string "toast_unLock_quickFight"
+00110: 207  notearg
+00111: 207  call 1
+00114: 207  dup
+00115: 207  callprop "convWithArgs"
+00120: 207  swap
+00121: 207  notearg
+00122: 208  newarray 1
+00126: 208  getlocal 0
+00129: 208  initelem_array 0
+00133: 208  endinit
+00134: 208  notearg
+00135: 208  call 1
+00138: 208  initprop "desc"
+00143: 208  endinit
+00144: 208  return
+00145: 209  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:201 ---
+;; function object[12] isUnLock_dailyTask
+;; function metadata object[12] nargs=0 bindings=3
+;; local[0] _needlevel
+;; local[1] _levelPlayer
+;; local[2] _result
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:211 ---
+loc   line  op
+----- ----  --
+main:
+00000: 212  int8 5
+00002: 212  setlocal 0
+00005: 212  pop
+00006: 213  name "xs"
+00011: 213  getprop "gd_mgr"
+00016: 213  dup
+00017: 213  callprop "getInstance"
+00022: 213  swap
+00023: 213  notearg
+00024: 213  call 0
+00027: 213  getprop "Player"
+00032: 213  dup
+00033: 213  callprop "getPlayer"
+00038: 213  swap
+00039: 213  notearg
+00040: 213  call 0
+00043: 213  dup
+00044: 213  callprop "getPlayerLevel"
+00049: 213  swap
+00050: 213  notearg
+00051: 213  call 0
+00054: 213  setlocal 1
+00057: 213  pop
+00058: 214  getlocal 1
+00061: 214  getlocal 0
+00064: 214  ge
+00065: 214  setlocal 2
+00068: 214  pop
+00069: 215  newinit 1
+00074: 216  getlocal 2
+00077: 216  initprop "result"
+00082: 217  name "xs"
+00087: 217  getprop "Tools"
+00092: 217  getprop "String"
+00097: 217  dup
+00098: 217  callprop "createString"
+00103: 217  swap
+00104: 217  notearg
+00105: 217  string "toast_unLock_dailyTask"
+00110: 217  notearg
+00111: 217  call 1
+00114: 217  dup
+00115: 217  callprop "convWithArgs"
+00120: 217  swap
+00121: 217  notearg
+00122: 218  newarray 1
+00126: 218  getlocal 0
+00129: 218  initelem_array 0
+00133: 218  endinit
+00134: 218  notearg
+00135: 218  call 1
+00138: 218  initprop "desc"
+00143: 218  endinit
+00144: 218  return
+00145: 219  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Permission.js:211 ---

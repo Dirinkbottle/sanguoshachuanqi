@@ -1,0 +1,1469 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/Map.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=78 object[0]
+;; FUNCTION-MAP kind=lambda offset=88 object[1]
+;; FUNCTION-MAP kind=lambda offset=98 object[2]
+;; FUNCTION-MAP kind=lambda offset=108 object[3]
+;; FUNCTION-MAP kind=lambda offset=118 object[4]
+;; FUNCTION-MAP kind=lambda offset=128 object[5]
+;; FUNCTION-MAP kind=lambda offset=138 object[6]
+;; FUNCTION-MAP kind=lambda offset=148 object[7]
+;; FUNCTION-MAP kind=lambda offset=158 object[8]
+;; FUNCTION-MAP kind=lambda offset=168 object[9]
+;; FUNCTION-MAP kind=lambda offset=178 object[10]
+;; FUNCTION-MAP kind=lambda offset=188 object[11]
+;; FUNCTION-MAP kind=lambda offset=198 object[12]
+;; FUNCTION-MAP kind=lambda offset=239 object[13]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Profile"
+00010:  10  getprop "GameData"
+00015:  10  name "xs"
+00020:  10  getprop "Profile"
+00025:  10  getprop "GameData"
+00030:  10  getprop "Base"
+00035:  10  dup
+00036:  10  callprop "extend"
+00041:  10  swap
+00042:  10  notearg
+00043:  10  newinit 1
+00048:  11  string "xs.Profile.GameData.Map"
+00053:  11  initprop "name"
+00058:  12  name "xs"
+00063:  12  getprop "Debug"
+00068:  12  getprop "emptyFunc"
+00073:  12  initprop "dump"
+00078:  15  lambda (function () {
+    [sourceless code]
+})
+00083:  15  initprop "init"
+00088:  32  lambda (function () {
+    [sourceless code]
+})
+00093:  32  initprop "update"
+00098: 105  lambda (function () {
+    [sourceless code]
+})
+00103: 105  initprop "getCurMap"
+00108: 113  lambda (function () {
+    [sourceless code]
+})
+00113: 113  initprop "setCurMapId"
+00118: 122  lambda (function () {
+    [sourceless code]
+})
+00123: 122  initprop "getCurMapId"
+00128: 131  lambda (function () {
+    [sourceless code]
+})
+00133: 131  initprop "getMapObjByMapId"
+00138: 149  lambda (function () {
+    [sourceless code]
+})
+00143: 149  initprop "getNextChapterId"
+00148: 183  lambda (function () {
+    [sourceless code]
+})
+00153: 183  initprop "getPrevChapterId"
+00158: 217  lambda (function () {
+    [sourceless code]
+})
+00163: 217  initprop "getNewestMapId"
+00168: 237  lambda (function () {
+    [sourceless code]
+})
+00173: 237  initprop "getNewestMap"
+00178: 243  lambda (function () {
+    [sourceless code]
+})
+00183: 243  initprop "nextIsNewest"
+00188: 251  lambda (function () {
+    [sourceless code]
+})
+00193: 251  initprop "isStepOver"
+00198: 276  lambda (function () {
+    [sourceless code]
+})
+00203: 276  initprop "isEliteMap"
+00208: 276  endinit
+00209: 276  notearg
+00210: 276  call 1
+00213: 276  setprop "Map"
+00218: 276  popv
+00219: 287  name "xs"
+00224: 287  getprop "Profile"
+00229: 287  getprop "GameData"
+00234: 287  getprop "Map"
+00239: 287  lambda (function () {
+    [sourceless code]
+})
+00244: 287  setprop "create"
+00249: 287  popv
+00250: 303  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  dup
+00002:  16  callprop "_super"
+00007:  16  swap
+00008:  16  notearg
+00009:  16  getarg 0
+00012:  16  notearg
+00013:  16  call 1
+00016:  16  pop
+00017:  19  this
+00018:  19  newarray 0
+00022:  19  endinit
+00023:  19  setprop "chapters"
+00028:  19  pop
+00029:  22  this
+00030:  22  newarray 0
+00034:  22  endinit
+00035:  22  setprop "hardChapters"
+00040:  22  pop
+00041:  25  this
+00042:  25  string ""
+00047:  25  setprop "curMapId"
+00052:  25  pop
+00053:  27  this
+00054:  27  string ""
+00059:  27  setprop "curHardMapId"
+00064:  27  pop
+00065:  29  true
+00066:  29  return
+00067:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:15 ---
+;; function object[1] update
+;; function metadata object[1] nargs=1 bindings=5
+;; arg[0] mapInfo
+;; local[0] curChapterInfo
+;; local[1] i
+;; local[2] chapterModel
+;; local[3] chapter
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  this
+00001:  34  getarg 0
+00004:  34  setprop "mapInfo"
+00009:  34  pop
+00010:  36  this
+00011:  36  getprop "curMapId"
+00016:  36  string ""
+00021:  36  stricteq
+00022:  36  ifeq 92 (+70)
+00027:  37  this
+00028:  37  name "xs"
+00033:  37  getprop "Profile"
+00038:  37  getprop "GameData"
+00043:  37  getprop "Mgr"
+00048:  37  dup
+00049:  37  callprop "getInstance"
+00054:  37  swap
+00055:  37  notearg
+00056:  37  call 0
+00059:  37  getprop "Player"
+00064:  37  dup
+00065:  37  callprop "getPlayer"
+00070:  37  swap
+00071:  37  notearg
+00072:  37  call 0
+00075:  37  dup
+00076:  37  callprop "getPlayerMapStep"
+00081:  37  swap
+00082:  37  notearg
+00083:  37  call 0
+00086:  37  setprop "curMapId"
+00091:  37  pop
+00092:  40  this
+00093:  40  getprop "curHardMapId"
+00098:  40  string ""
+00103:  40  stricteq
+00104:  40  ifeq 174 (+70)
+00109:  41  this
+00110:  41  name "xs"
+00115:  41  getprop "Profile"
+00120:  41  getprop "GameData"
+00125:  41  getprop "Mgr"
+00130:  41  dup
+00131:  41  callprop "getInstance"
+00136:  41  swap
+00137:  41  notearg
+00138:  41  call 0
+00141:  41  getprop "Player"
+00146:  41  dup
+00147:  41  callprop "getPlayer"
+00152:  41  swap
+00153:  41  notearg
+00154:  41  call 0
+00157:  41  dup
+00158:  41  callprop "getPlayerEliteMapStep"
+00163:  41  swap
+00164:  41  notearg
+00165:  41  call 0
+00168:  41  setprop "curHardMapId"
+00173:  41  pop
+00174:  44  this
+00175:  44  getprop "mapInfo"
+00180:  44  getprop "chapter_list"
+00185:  44  zero
+00186:  44  getelem
+00187:  44  getprop "map_type"
+00192:  44  string "1"
+00197:  44  stricteq
+00198:  44  ifeq 466 (+268)
+00203:  46  this
+00204:  46  getprop "mapInfo"
+00209:  46  getprop "chapter_details"
+00214:  46  zero
+00215:  46  getelem
+00216:  46  setlocal 0
+00219:  46  pop
+00220:  48  this
+00221:  48  getprop "chapters"
+00226:  48  length "length"
+00231:  48  zero
+00232:  48  stricteq
+00233:  48  or 267 (+34)
+00238:  48  pop
+00239:  48  this
+00240:  48  getprop "mapInfo"
+00245:  48  getprop "chapter_list"
+00250:  48  length "length"
+00255:  48  this
+00256:  48  getprop "chapters"
+00261:  48  length "length"
+00266:  48  strictne
+00267:  48  ifeq 461 (+194)
+00272:  49  this
+00273:  49  newarray 1
+00277:  49  this
+00278:  49  getprop "mapInfo"
+00283:  49  getprop "chapter_list"
+00288:  49  length "length"
+00293:  49  initelem_array 0
+00297:  49  endinit
+00298:  49  setprop "chapters"
+00303:  49  pop
+00304:  50  zero
+00305:  50  setlocal 1
+00308:  50  pop
+00309:  50  goto 435 (+126)
+00314:  51  loophead
+00315:  51  name "xs"
+00320:  51  getprop "Models"
+00325:  51  getprop "Chapter"
+00330:  51  dup
+00331:  51  callprop "create"
+00336:  51  swap
+00337:  51  notearg
+00338:  51  this
+00339:  51  getprop "mapInfo"
+00344:  51  getprop "chapter_list"
+00349:  51  getlocal 1
+00352:  51  getelem
+00353:  51  notearg
+00354:  51  call 1
+00357:  51  setlocal 2
+00360:  51  pop
+00361:  52  getlocal 2
+00364:  52  dup
+00365:  52  callprop "getChapterId"
+00370:  52  swap
+00371:  52  notearg
+00372:  52  call 0
+00375:  52  this
+00376:  52  getprop "curMapId"
+00381:  52  stricteq
+00382:  52  ifeq 406 (+24)
+00387:  53  getlocal 2
+00390:  53  dup
+00391:  53  callprop "updateDetail"
+00396:  53  swap
+00397:  53  notearg
+00398:  53  getlocal 0
+00401:  53  notearg
+00402:  53  call 1
+00405:  53  pop
+00406:  55  this
+00407:  55  getprop "chapters"
+00412:  55  getlocal 1
+00415:  55  getlocal 2
+00418:  55  setelem
+00419:  55  pop
+00420:  50  localinc 11
+00423:  50  getlocal 1
+00426:  50  pos
+00427:  50  dup
+00428:  50  one
+00429:  50  add
+00430:  50  setlocal 1
+00433:  50  pop
+00434:  50  pop
+00435:  50  loopentry
+00436:  50  getlocal 1
+00439:  50  this
+00440:  50  getprop "mapInfo"
+00445:  50  getprop "chapter_list"
+00450:  50  length "length"
+00455:  50  lt
+00456:  50  ifne 314 (-142)
+00461:  50  goto 835 (+374)
+00466:  58  this
+00467:  58  getprop "mapInfo"
+00472:  58  getprop "chapter_list"
+00477:  58  zero
+00478:  58  getelem
+00479:  58  getprop "map_type"
+00484:  58  string "2"
+00489:  58  stricteq
+00490:  58  ifeq 835 (+345)
+00495:  60  this
+00496:  60  getprop "mapInfo"
+00501:  60  getprop "chapter_details"
+00506:  60  zero
+00507:  60  getelem
+00508:  60  setlocal 0
+00511:  60  pop
+00512:  64  this
+00513:  64  getprop "hardChapters"
+00518:  64  this
+00519:  64  getprop "mapInfo"
+00524:  64  getprop "chapter_list"
+00529:  64  length "length"
+00534:  64  setprop "length"
+00539:  64  pop
+00540:  65  zero
+00541:  65  setlocal 1
+00544:  65  pop
+00545:  65  goto 809 (+264)
+00550:  66  loophead
+00551:  66  getlocal 2
+00554:  66  pop
+00555:  67  this
+00556:  67  getprop "hardChapters"
+00561:  67  getlocal 1
+00564:  67  getelem
+00565:  67  and 634 (+69)
+00570:  67  pop
+00571:  68  this
+00572:  68  getprop "hardChapters"
+00577:  68  getlocal 1
+00580:  68  getelem
+00581:  68  getprop "getChapterId"
+00586:  68  and 634 (+48)
+00591:  68  pop
+00592:  69  this
+00593:  69  getprop "hardChapters"
+00598:  69  getlocal 1
+00601:  69  getelem
+00602:  69  dup
+00603:  69  callprop "getChapterId"
+00608:  69  swap
+00609:  69  notearg
+00610:  69  call 0
+00613:  69  this
+00614:  69  getprop "mapInfo"
+00619:  69  getprop "chapter_list"
+00624:  69  getlocal 1
+00627:  69  getelem
+00628:  69  getprop "map_id"
+00633:  69  eq
+00634:  69  ifeq 689 (+55)
+00639:  71  this
+00640:  71  getprop "hardChapters"
+00645:  71  getlocal 1
+00648:  71  getelem
+00649:  71  setlocal 2
+00652:  71  pop
+00653:  72  getlocal 2
+00656:  72  dup
+00657:  72  callprop "updateInfo"
+00662:  72  swap
+00663:  72  notearg
+00664:  72  this
+00665:  72  getprop "mapInfo"
+00670:  72  getprop "chapter_list"
+00675:  72  getlocal 1
+00678:  72  getelem
+00679:  72  notearg
+00680:  72  call 1
+00683:  72  pop
+00684:  72  goto 749 (+65)
+00689:  77  name "xs"
+00694:  77  getprop "Models"
+00699:  77  getprop "Chapter"
+00704:  77  dup
+00705:  77  callprop "create"
+00710:  77  swap
+00711:  77  notearg
+00712:  77  this
+00713:  77  getprop "mapInfo"
+00718:  77  getprop "chapter_list"
+00723:  77  getlocal 1
+00726:  77  getelem
+00727:  77  notearg
+00728:  77  call 1
+00731:  77  setlocal 2
+00734:  77  pop
+00735:  78  this
+00736:  78  getprop "hardChapters"
+00741:  78  getlocal 1
+00744:  78  getlocal 2
+00747:  78  setelem
+00748:  78  pop
+00749:  83  getlocal 2
+00752:  83  dup
+00753:  83  callprop "getChapterId"
+00758:  83  swap
+00759:  83  notearg
+00760:  83  call 0
+00763:  83  this
+00764:  83  getprop "curHardMapId"
+00769:  83  stricteq
+00770:  83  ifeq 794 (+24)
+00775:  84  getlocal 2
+00778:  84  dup
+00779:  84  callprop "updateDetail"
+00784:  84  swap
+00785:  84  notearg
+00786:  84  getlocal 0
+00789:  84  notearg
+00790:  84  call 1
+00793:  84  pop
+00794:  65  localinc 11
+00797:  65  getlocal 1
+00800:  65  pos
+00801:  65  dup
+00802:  65  one
+00803:  65  add
+00804:  65  setlocal 1
+00807:  65  pop
+00808:  65  pop
+00809:  65  loopentry
+00810:  65  getlocal 1
+00813:  65  this
+00814:  65  getprop "mapInfo"
+00819:  65  getprop "chapter_list"
+00824:  65  length "length"
+00829:  65  lt
+00830:  65  ifne 550 (-280)
+00835:  91  zero
+00836:  91  setlocal 1
+00839:  91  pop
+00840:  91  goto 957 (+117)
+00845:  93  loophead
+00846:  93  this
+00847:  93  getprop "mapInfo"
+00852:  93  getprop "chapter_details"
+00857:  93  getlocal 1
+00860:  93  getelem
+00861:  93  ifeq 942 (+81)
+00866:  94  this
+00867:  94  dup
+00868:  94  callprop "getMapObjByMapId"
+00873:  94  swap
+00874:  94  notearg
+00875:  94  this
+00876:  94  getprop "mapInfo"
+00881:  94  getprop "chapter_details"
+00886:  94  getlocal 1
+00889:  94  getelem
+00890:  94  getprop "map_id"
+00895:  94  notearg
+00896:  94  call 1
+00899:  94  setlocal 3
+00902:  94  pop
+00903:  95  getlocal 3
+00906:  95  ifeq 942 (+36)
+00911:  97  getlocal 3
+00914:  97  dup
+00915:  97  callprop "updateDetail"
+00920:  97  swap
+00921:  97  notearg
+00922:  97  this
+00923:  97  getprop "mapInfo"
+00928:  97  getprop "chapter_details"
+00933:  97  getlocal 1
+00936:  97  getelem
+00937:  97  notearg
+00938:  97  call 1
+00941:  97  pop
+00942:  91  localinc 11
+00945:  91  getlocal 1
+00948:  91  pos
+00949:  91  dup
+00950:  91  one
+00951:  91  add
+00952:  91  setlocal 1
+00955:  91  pop
+00956:  91  pop
+00957:  91  loopentry
+00958:  91  getlocal 1
+00961:  91  this
+00962:  91  getprop "mapInfo"
+00967:  91  getprop "chapter_list"
+00972:  91  length "length"
+00977:  91  lt
+00978:  91  ifne 845 (-133)
+00983: 102  undefined
+00984: 102  return
+00985: 102  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:32 ---
+;; function object[2] getCurMap
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] bIsHard
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:105 ---
+loc   line  op
+----- ----  --
+main:
+00000: 106  getarg 0
+00003: 106  ifeq 58 (+55)
+00008: 107  name "xs"
+00013: 107  dup
+00014: 107  callprop "log_xjf"
+00019: 107  swap
+00020: 107  notearg
+00021: 107  string "\u83B7\u53D6\u7CBE\u82F1mapId"
+00026: 107  notearg
+00027: 107  this
+00028: 107  getprop "curHardMapId"
+00033: 107  notearg
+00034: 107  call 2
+00037: 107  pop
+00038: 108  this
+00039: 108  dup
+00040: 108  callprop "getMapObjByMapId"
+00045: 108  swap
+00046: 108  notearg
+00047: 108  this
+00048: 108  getprop "curHardMapId"
+00053: 108  notearg
+00054: 108  call 1
+00057: 108  return
+00058: 110  this
+00059: 110  dup
+00060: 110  callprop "getMapObjByMapId"
+00065: 110  swap
+00066: 110  notearg
+00067: 110  this
+00068: 110  getprop "curMapId"
+00073: 110  notearg
+00074: 110  call 1
+00077: 110  return
+00078: 110  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:105 ---
+;; function object[3] setCurMapId
+;; function metadata object[3] nargs=2 bindings=2
+;; arg[0] mapId
+;; arg[1] bIsHard
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:113 ---
+loc   line  op
+----- ----  --
+main:
+00000: 114  getarg 1
+00003: 114  ifeq 50 (+47)
+00008: 115  name "xs"
+00013: 115  dup
+00014: 115  callprop "log_xjf"
+00019: 115  swap
+00020: 115  notearg
+00021: 115  string "\u8BBE\u7F6E\u7CBE\u82F1mapId"
+00026: 115  notearg
+00027: 115  getarg 0
+00030: 115  notearg
+00031: 115  call 2
+00034: 115  pop
+00035: 116  this
+00036: 116  getarg 0
+00039: 116  setprop "curHardMapId"
+00044: 116  pop
+00045: 116  goto 60 (+15)
+00050: 118  this
+00051: 118  getarg 0
+00054: 118  setprop "curMapId"
+00059: 118  pop
+00060: 119  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:113 ---
+;; function object[4] getCurMapId
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] bIsHard
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:122 ---
+loc   line  op
+----- ----  --
+main:
+00000: 123  getarg 0
+00003: 123  ifeq 15 (+12)
+00008: 124  this
+00009: 124  getprop "curHardMapId"
+00014: 124  return
+00015: 126  this
+00016: 126  getprop "curMapId"
+00021: 126  return
+00022: 126  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:122 ---
+;; function object[5] getMapObjByMapId
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] map_id
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:131 ---
+loc   line  op
+----- ----  --
+main:
+00000: 133  zero
+00001: 133  setlocal 0
+00004: 133  pop
+00005: 133  goto 67 (+62)
+00010: 134  loophead
+00011: 134  this
+00012: 134  getprop "hardChapters"
+00017: 134  getlocal 0
+00020: 134  getelem
+00021: 134  dup
+00022: 134  callprop "getChapterId"
+00027: 134  swap
+00028: 134  notearg
+00029: 134  call 0
+00032: 134  getarg 0
+00035: 134  stricteq
+00036: 134  ifeq 52 (+16)
+00041: 135  this
+00042: 135  getprop "hardChapters"
+00047: 135  getlocal 0
+00050: 135  getelem
+00051: 135  return
+00052: 133  localinc 11
+00055: 133  getlocal 0
+00058: 133  pos
+00059: 133  dup
+00060: 133  one
+00061: 133  add
+00062: 133  setlocal 0
+00065: 133  pop
+00066: 133  pop
+00067: 133  loopentry
+00068: 133  getlocal 0
+00071: 133  this
+00072: 133  getprop "hardChapters"
+00077: 133  length "length"
+00082: 133  lt
+00083: 133  ifne 10 (-73)
+00088: 139  zero
+00089: 139  setlocal 0
+00092: 139  pop
+00093: 139  goto 155 (+62)
+00098: 140  loophead
+00099: 140  this
+00100: 140  getprop "chapters"
+00105: 140  getlocal 0
+00108: 140  getelem
+00109: 140  dup
+00110: 140  callprop "getChapterId"
+00115: 140  swap
+00116: 140  notearg
+00117: 140  call 0
+00120: 140  getarg 0
+00123: 140  stricteq
+00124: 140  ifeq 140 (+16)
+00129: 141  this
+00130: 141  getprop "chapters"
+00135: 141  getlocal 0
+00138: 141  getelem
+00139: 141  return
+00140: 139  localinc 11
+00143: 139  getlocal 0
+00146: 139  pos
+00147: 139  dup
+00148: 139  one
+00149: 139  add
+00150: 139  setlocal 0
+00153: 139  pop
+00154: 139  pop
+00155: 139  loopentry
+00156: 139  getlocal 0
+00159: 139  this
+00160: 139  getprop "chapters"
+00165: 139  length "length"
+00170: 139  lt
+00171: 139  ifne 98 (-73)
+00176: 145  null
+00177: 145  return
+00178: 145  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:131 ---
+;; function object[6] getNextChapterId
+;; function metadata object[6] nargs=1 bindings=2
+;; arg[0] bIsHard
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:149 ---
+loc   line  op
+----- ----  --
+main:
+00000: 150  getarg 0
+00003: 150  ifeq 181 (+178)
+00008: 151  zero
+00009: 151  setlocal 0
+00012: 151  pop
+00013: 151  goto 155 (+142)
+00018: 152  loophead
+00019: 152  this
+00020: 152  getprop "curHardMapId"
+00025: 152  this
+00026: 152  getprop "hardChapters"
+00031: 152  getlocal 0
+00034: 152  getelem
+00035: 152  dup
+00036: 152  callprop "getChapterId"
+00041: 152  swap
+00042: 152  notearg
+00043: 152  call 0
+00046: 152  stricteq
+00047: 152  ifeq 140 (+93)
+00052: 153  getlocal 0
+00055: 153  this
+00056: 153  getprop "hardChapters"
+00061: 153  length "length"
+00066: 153  one
+00067: 153  sub
+00068: 153  lt
+00069: 153  ifeq 138 (+69)
+00074: 154  this
+00075: 154  getprop "hardChapters"
+00080: 154  getlocal 0
+00083: 154  one
+00084: 154  add
+00085: 154  getelem
+00086: 154  dup
+00087: 154  callprop "isCanIn"
+00092: 154  swap
+00093: 154  notearg
+00094: 154  call 0
+00097: 154  ifeq 131 (+34)
+00102: 155  this
+00103: 155  getprop "hardChapters"
+00108: 155  getlocal 0
+00111: 155  one
+00112: 155  add
+00113: 155  getelem
+00114: 155  dup
+00115: 155  callprop "getChapterId"
+00120: 155  swap
+00121: 155  notearg
+00122: 155  call 0
+00125: 155  return
+00126: 155  goto 133 (+7)
+00131: 157  null
+00132: 157  return
+00133: 157  goto 140 (+7)
+00138: 160  null
+00139: 160  return
+00140: 151  localinc 11
+00143: 151  getlocal 0
+00146: 151  pos
+00147: 151  dup
+00148: 151  one
+00149: 151  add
+00150: 151  setlocal 0
+00153: 151  pop
+00154: 151  pop
+00155: 151  loopentry
+00156: 151  getlocal 0
+00159: 151  this
+00160: 151  getprop "hardChapters"
+00165: 151  length "length"
+00170: 151  lt
+00171: 151  ifne 18 (-153)
+00176: 151  goto 349 (+173)
+00181: 165  zero
+00182: 165  setlocal 0
+00185: 165  pop
+00186: 165  goto 328 (+142)
+00191: 166  loophead
+00192: 166  this
+00193: 166  getprop "curMapId"
+00198: 166  this
+00199: 166  getprop "chapters"
+00204: 166  getlocal 0
+00207: 166  getelem
+00208: 166  dup
+00209: 166  callprop "getChapterId"
+00214: 166  swap
+00215: 166  notearg
+00216: 166  call 0
+00219: 166  stricteq
+00220: 166  ifeq 313 (+93)
+00225: 167  getlocal 0
+00228: 167  this
+00229: 167  getprop "chapters"
+00234: 167  length "length"
+00239: 167  one
+00240: 167  sub
+00241: 167  lt
+00242: 167  ifeq 311 (+69)
+00247: 168  this
+00248: 168  getprop "chapters"
+00253: 168  getlocal 0
+00256: 168  one
+00257: 168  add
+00258: 168  getelem
+00259: 168  dup
+00260: 168  callprop "isCanIn"
+00265: 168  swap
+00266: 168  notearg
+00267: 168  call 0
+00270: 168  ifeq 304 (+34)
+00275: 169  this
+00276: 169  getprop "chapters"
+00281: 169  getlocal 0
+00284: 169  one
+00285: 169  add
+00286: 169  getelem
+00287: 169  dup
+00288: 169  callprop "getChapterId"
+00293: 169  swap
+00294: 169  notearg
+00295: 169  call 0
+00298: 169  return
+00299: 169  goto 306 (+7)
+00304: 171  null
+00305: 171  return
+00306: 171  goto 313 (+7)
+00311: 174  null
+00312: 174  return
+00313: 165  localinc 11
+00316: 165  getlocal 0
+00319: 165  pos
+00320: 165  dup
+00321: 165  one
+00322: 165  add
+00323: 165  setlocal 0
+00326: 165  pop
+00327: 165  pop
+00328: 165  loopentry
+00329: 165  getlocal 0
+00332: 165  this
+00333: 165  getprop "chapters"
+00338: 165  length "length"
+00343: 165  lt
+00344: 165  ifne 191 (-153)
+00349: 178  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:149 ---
+;; function object[7] getPrevChapterId
+;; function metadata object[7] nargs=1 bindings=2
+;; arg[0] bIsHard
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:183 ---
+loc   line  op
+----- ----  --
+main:
+00000: 184  getarg 0
+00003: 184  ifeq 169 (+166)
+00008: 185  zero
+00009: 185  setlocal 0
+00012: 185  pop
+00013: 185  goto 143 (+130)
+00018: 186  loophead
+00019: 186  this
+00020: 186  getprop "curHardMapId"
+00025: 186  this
+00026: 186  getprop "hardChapters"
+00031: 186  getlocal 0
+00034: 186  getelem
+00035: 186  dup
+00036: 186  callprop "getChapterId"
+00041: 186  swap
+00042: 186  notearg
+00043: 186  call 0
+00046: 186  stricteq
+00047: 186  ifeq 128 (+81)
+00052: 187  getlocal 0
+00055: 187  zero
+00056: 187  gt
+00057: 187  ifeq 126 (+69)
+00062: 188  this
+00063: 188  getprop "hardChapters"
+00068: 188  getlocal 0
+00071: 188  one
+00072: 188  sub
+00073: 188  getelem
+00074: 188  dup
+00075: 188  callprop "isCanIn"
+00080: 188  swap
+00081: 188  notearg
+00082: 188  call 0
+00085: 188  ifeq 119 (+34)
+00090: 189  this
+00091: 189  getprop "hardChapters"
+00096: 189  getlocal 0
+00099: 189  one
+00100: 189  sub
+00101: 189  getelem
+00102: 189  dup
+00103: 189  callprop "getChapterId"
+00108: 189  swap
+00109: 189  notearg
+00110: 189  call 0
+00113: 189  return
+00114: 189  goto 121 (+7)
+00119: 191  null
+00120: 191  return
+00121: 191  goto 128 (+7)
+00126: 194  null
+00127: 194  return
+00128: 185  localinc 11
+00131: 185  getlocal 0
+00134: 185  pos
+00135: 185  dup
+00136: 185  one
+00137: 185  add
+00138: 185  setlocal 0
+00141: 185  pop
+00142: 185  pop
+00143: 185  loopentry
+00144: 185  getlocal 0
+00147: 185  this
+00148: 185  getprop "hardChapters"
+00153: 185  length "length"
+00158: 185  lt
+00159: 185  ifne 18 (-141)
+00164: 185  goto 325 (+161)
+00169: 199  zero
+00170: 199  setlocal 0
+00173: 199  pop
+00174: 199  goto 304 (+130)
+00179: 200  loophead
+00180: 200  this
+00181: 200  getprop "curMapId"
+00186: 200  this
+00187: 200  getprop "chapters"
+00192: 200  getlocal 0
+00195: 200  getelem
+00196: 200  dup
+00197: 200  callprop "getChapterId"
+00202: 200  swap
+00203: 200  notearg
+00204: 200  call 0
+00207: 200  stricteq
+00208: 200  ifeq 289 (+81)
+00213: 201  getlocal 0
+00216: 201  zero
+00217: 201  gt
+00218: 201  ifeq 287 (+69)
+00223: 202  this
+00224: 202  getprop "chapters"
+00229: 202  getlocal 0
+00232: 202  one
+00233: 202  sub
+00234: 202  getelem
+00235: 202  dup
+00236: 202  callprop "isCanIn"
+00241: 202  swap
+00242: 202  notearg
+00243: 202  call 0
+00246: 202  ifeq 280 (+34)
+00251: 203  this
+00252: 203  getprop "chapters"
+00257: 203  getlocal 0
+00260: 203  one
+00261: 203  sub
+00262: 203  getelem
+00263: 203  dup
+00264: 203  callprop "getChapterId"
+00269: 203  swap
+00270: 203  notearg
+00271: 203  call 0
+00274: 203  return
+00275: 203  goto 282 (+7)
+00280: 205  null
+00281: 205  return
+00282: 205  goto 289 (+7)
+00287: 208  null
+00288: 208  return
+00289: 199  localinc 11
+00292: 199  getlocal 0
+00295: 199  pos
+00296: 199  dup
+00297: 199  one
+00298: 199  add
+00299: 199  setlocal 0
+00302: 199  pop
+00303: 199  pop
+00304: 199  loopentry
+00305: 199  getlocal 0
+00308: 199  this
+00309: 199  getprop "chapters"
+00314: 199  length "length"
+00319: 199  lt
+00320: 199  ifne 179 (-141)
+00325: 212  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:183 ---
+;; function object[8] getNewestMapId
+;; function metadata object[8] nargs=1 bindings=3
+;; arg[0] bIsHard
+;; local[0] mapid
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:217 ---
+loc   line  op
+----- ----  --
+main:
+00000: 218  string ""
+00005: 218  setlocal 0
+00008: 218  pop
+00009: 219  getarg 0
+00012: 219  ifeq 120 (+108)
+00017: 220  zero
+00018: 220  setlocal 1
+00021: 220  pop
+00022: 220  goto 94 (+72)
+00027: 221  loophead
+00028: 221  this
+00029: 221  getprop "hardChapters"
+00034: 221  getlocal 1
+00037: 221  getelem
+00038: 221  dup
+00039: 221  callprop "isCanIn"
+00044: 221  swap
+00045: 221  notearg
+00046: 221  call 0
+00049: 221  ifeq 79 (+30)
+00054: 222  this
+00055: 222  getprop "hardChapters"
+00060: 222  getlocal 1
+00063: 222  getelem
+00064: 222  dup
+00065: 222  callprop "getChapterId"
+00070: 222  swap
+00071: 222  notearg
+00072: 222  call 0
+00075: 222  setlocal 0
+00078: 222  pop
+00079: 220  localinc 11
+00082: 220  getlocal 1
+00085: 220  pos
+00086: 220  dup
+00087: 220  one
+00088: 220  add
+00089: 220  setlocal 1
+00092: 220  pop
+00093: 220  pop
+00094: 220  loopentry
+00095: 220  getlocal 1
+00098: 220  this
+00099: 220  getprop "hardChapters"
+00104: 220  length "length"
+00109: 220  lt
+00110: 220  ifne 27 (-83)
+00115: 220  goto 218 (+103)
+00120: 226  zero
+00121: 226  setlocal 1
+00124: 226  pop
+00125: 226  goto 197 (+72)
+00130: 227  loophead
+00131: 227  this
+00132: 227  getprop "chapters"
+00137: 227  getlocal 1
+00140: 227  getelem
+00141: 227  dup
+00142: 227  callprop "isCanIn"
+00147: 227  swap
+00148: 227  notearg
+00149: 227  call 0
+00152: 227  ifeq 182 (+30)
+00157: 228  this
+00158: 228  getprop "chapters"
+00163: 228  getlocal 1
+00166: 228  getelem
+00167: 228  dup
+00168: 228  callprop "getChapterId"
+00173: 228  swap
+00174: 228  notearg
+00175: 228  call 0
+00178: 228  setlocal 0
+00181: 228  pop
+00182: 226  localinc 11
+00185: 226  getlocal 1
+00188: 226  pos
+00189: 226  dup
+00190: 226  one
+00191: 226  add
+00192: 226  setlocal 1
+00195: 226  pop
+00196: 226  pop
+00197: 226  loopentry
+00198: 226  getlocal 1
+00201: 226  this
+00202: 226  getprop "chapters"
+00207: 226  length "length"
+00212: 226  lt
+00213: 226  ifne 130 (-83)
+00218: 233  getlocal 0
+00221: 233  return
+00222: 233  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:217 ---
+;; function object[9] getNewestMap
+;; function metadata object[9] nargs=1 bindings=1
+;; arg[0] bIsHard
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:237 ---
+loc   line  op
+----- ----  --
+main:
+00000: 238  this
+00001: 238  dup
+00002: 238  callprop "getMapObjByMapId"
+00007: 238  swap
+00008: 238  notearg
+00009: 238  this
+00010: 238  dup
+00011: 238  callprop "getNewestMapId"
+00016: 238  swap
+00017: 238  notearg
+00018: 238  getarg 0
+00021: 238  notearg
+00022: 238  call 1
+00025: 238  notearg
+00026: 238  call 1
+00029: 238  return
+00030: 238  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:237 ---
+;; function object[10] nextIsNewest
+;; function metadata object[10] nargs=1 bindings=1
+;; arg[0] bIsHard
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:243 ---
+loc   line  op
+----- ----  --
+main:
+00000: 244  this
+00001: 244  dup
+00002: 244  callprop "getNextChapterId"
+00007: 244  swap
+00008: 244  notearg
+00009: 244  getarg 0
+00012: 244  notearg
+00013: 244  call 1
+00016: 244  this
+00017: 244  dup
+00018: 244  callprop "getNewestMapId"
+00023: 244  swap
+00024: 244  notearg
+00025: 244  getarg 0
+00028: 244  notearg
+00029: 244  call 1
+00032: 244  stricteq
+00033: 244  ifeq 40 (+7)
+00038: 245  true
+00039: 245  return
+00040: 247  false
+00041: 247  return
+00042: 247  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:243 ---
+;; function object[11] isStepOver
+;; function metadata object[11] nargs=2 bindings=4
+;; arg[0] mapId
+;; arg[1] dungeonId
+;; local[0] i
+;; local[1] curDunegeonStep
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:251 ---
+loc   line  op
+----- ----  --
+main:
+00000: 253  zero
+00001: 253  setlocal 0
+00004: 253  pop
+00005: 253  goto 176 (+171)
+00010: 254  loophead
+00011: 254  this
+00012: 254  getprop "chapters"
+00017: 254  getlocal 0
+00020: 254  getelem
+00021: 254  dup
+00022: 254  callprop "getChapterId"
+00027: 254  swap
+00028: 254  notearg
+00029: 254  call 0
+00032: 254  getarg 0
+00035: 254  stricteq
+00036: 254  ifeq 161 (+125)
+00041: 255  name "xs"
+00046: 255  getprop "Profile"
+00051: 255  getprop "GameData"
+00056: 255  getprop "Mgr"
+00061: 255  dup
+00062: 255  callprop "getInstance"
+00067: 255  swap
+00068: 255  notearg
+00069: 255  call 0
+00072: 255  getprop "Player"
+00077: 255  dup
+00078: 255  callprop "getPlayer"
+00083: 255  swap
+00084: 255  notearg
+00085: 255  call 0
+00088: 255  dup
+00089: 255  callprop "getPlayerDungeonStep"
+00094: 255  swap
+00095: 255  notearg
+00096: 255  call 0
+00099: 255  setlocal 1
+00102: 255  pop
+00103: 256  getlocal 1
+00106: 256  getarg 1
+00109: 256  ge
+00110: 256  ifeq 122 (+12)
+00115: 257  true
+00116: 257  return
+00117: 257  goto 161 (+44)
+00122: 259  name "xs"
+00127: 259  dup
+00128: 259  callprop "warn"
+00133: 259  swap
+00134: 259  notearg
+00135: 259  string "isStepOver error! curDunegeonStep:"
+00140: 259  getlocal 1
+00143: 259  add
+00144: 259  string " dungeonId:"
+00149: 259  add
+00150: 259  getarg 1
+00153: 259  add
+00154: 259  notearg
+00155: 259  call 1
+00158: 259  pop
+00159: 260  false
+00160: 260  return
+00161: 253  localinc 11
+00164: 253  getlocal 0
+00167: 253  pos
+00168: 253  dup
+00169: 253  one
+00170: 253  add
+00171: 253  setlocal 0
+00174: 253  pop
+00175: 253  pop
+00176: 253  loopentry
+00177: 253  getlocal 0
+00180: 253  this
+00181: 253  getprop "chapters"
+00186: 253  length "length"
+00191: 253  lt
+00192: 253  ifne 10 (-182)
+00197: 266  name "xs"
+00202: 266  getprop "Profile"
+00207: 266  getprop "GameData"
+00212: 266  getprop "Mgr"
+00217: 266  dup
+00218: 266  callprop "getInstance"
+00223: 266  swap
+00224: 266  notearg
+00225: 266  call 0
+00228: 266  getprop "Player"
+00233: 266  dup
+00234: 266  callprop "getPlayer"
+00239: 266  swap
+00240: 266  notearg
+00241: 266  call 0
+00244: 266  dup
+00245: 266  callprop "getPlayerEliteDungeonStep"
+00250: 266  swap
+00251: 266  notearg
+00252: 266  call 0
+00255: 266  setlocal 1
+00258: 266  pop
+00259: 267  getlocal 1
+00262: 267  getarg 1
+00265: 267  ge
+00266: 267  ifeq 278 (+12)
+00271: 268  true
+00272: 268  return
+00273: 268  goto 317 (+44)
+00278: 270  name "xs"
+00283: 270  dup
+00284: 270  callprop "warn"
+00289: 270  swap
+00290: 270  notearg
+00291: 270  string "isStepOver error! curDunegeonStep:"
+00296: 270  getlocal 1
+00299: 270  add
+00300: 270  string " dungeonId:"
+00305: 270  add
+00306: 270  getarg 1
+00309: 270  add
+00310: 270  notearg
+00311: 270  call 1
+00314: 270  pop
+00315: 271  false
+00316: 271  return
+00317: 272  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:251 ---
+;; function object[12] isEliteMap
+;; function metadata object[12] nargs=1 bindings=2
+;; arg[0] mapId
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:276 ---
+loc   line  op
+----- ----  --
+main:
+00000: 277  zero
+00001: 277  setlocal 0
+00004: 277  pop
+00005: 277  goto 58 (+53)
+00010: 278  loophead
+00011: 278  this
+00012: 278  getprop "chapters"
+00017: 278  getlocal 0
+00020: 278  getelem
+00021: 278  dup
+00022: 278  callprop "getChapterId"
+00027: 278  swap
+00028: 278  notearg
+00029: 278  call 0
+00032: 278  getarg 0
+00035: 278  stricteq
+00036: 278  ifeq 43 (+7)
+00041: 279  false
+00042: 279  return
+00043: 277  localinc 11
+00046: 277  getlocal 0
+00049: 277  pos
+00050: 277  dup
+00051: 277  one
+00052: 277  add
+00053: 277  setlocal 0
+00056: 277  pop
+00057: 277  pop
+00058: 277  loopentry
+00059: 277  getlocal 0
+00062: 277  this
+00063: 277  getprop "chapters"
+00068: 277  length "length"
+00073: 277  lt
+00074: 277  ifne 10 (-64)
+00079: 282  true
+00080: 282  return
+00081: 282  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:276 ---
+;; function object[13] create
+;; function metadata object[13] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:287 ---
+loc   line  op
+----- ----  --
+main:
+00000: 288  getarg 0
+00003: 288  getprop "play_id"
+00008: 288  setlocal 0
+00011: 288  pop
+00012: 289  name "xs"
+00017: 289  getprop "Profile"
+00022: 289  getprop "GameData"
+00027: 289  getprop "Map"
+00032: 289  setlocal 1
+00035: 289  pop
+00036: 290  name "xs"
+00041: 290  getprop "Utils"
+00046: 290  dup
+00047: 290  callprop "isSet"
+00052: 290  swap
+00053: 290  notearg
+00054: 290  getlocal 1
+00057: 290  getprop "_instance"
+00062: 290  notearg
+00063: 290  call 1
+00066: 290  or 85 (+19)
+00071: 290  pop
+00072: 290  getlocal 1
+00075: 290  newarray 0
+00079: 290  endinit
+00080: 290  setprop "_instance"
+00085: 290  pop
+00086: 292  getlocal 1
+00089: 292  getprop "_instance"
+00094: 292  getlocal 0
+00097: 292  getelem
+00098: 292  ifeq 116 (+18)
+00103: 293  getlocal 1
+00106: 293  getprop "_instance"
+00111: 293  getlocal 0
+00114: 293  getelem
+00115: 293  return
+00116: 296  getlocal 1
+00119: 296  undefined
+00120: 296  notearg
+00121: 296  new 0
+00124: 296  setlocal 2
+00127: 296  pop
+00128: 297  getlocal 2
+00131: 297  and 155 (+24)
+00136: 297  pop
+00137: 297  getlocal 2
+00140: 297  dup
+00141: 297  callprop "init"
+00146: 297  swap
+00147: 297  notearg
+00148: 297  getarg 0
+00151: 297  notearg
+00152: 297  call 1
+00155: 297  ifeq 180 (+25)
+00160: 298  getlocal 1
+00163: 298  getprop "_instance"
+00168: 298  getlocal 0
+00171: 298  getlocal 2
+00174: 298  setelem
+00175: 298  pop
+00176: 299  getlocal 2
+00179: 299  return
+00180: 301  name "xs"
+00185: 301  dup
+00186: 301  callprop "error"
+00191: 301  swap
+00192: 301  notearg
+00193: 301  string "xs.Profile.GameData.Map.create failed"
+00198: 301  notearg
+00199: 301  call 1
+00202: 301  pop
+00203: 302  null
+00204: 302  return
+00205: 302  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Map.js:287 ---

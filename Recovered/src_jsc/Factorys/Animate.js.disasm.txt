@@ -1,0 +1,233 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Factorys/Animate.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=65 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Animate.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Factorys"
+00010:   8  newinit 1
+00015:  10  name "xs"
+00020:  10  getprop "Debug"
+00025:  10  getprop "emptyFunc"
+00030:  10  initprop "log"
+00035:  11  name "xs"
+00040:  11  getprop "Debug"
+00045:  11  getprop "emptyFunc"
+00050:  11  initprop "dump"
+00055:  14  string "bak/"
+00060:  14  initprop "path"
+00065:  17  lambda (function () {
+    [sourceless code]
+})
+00070:  17  initprop "create"
+00075:  17  endinit
+00076:  17  setprop "Animate"
+00081:  17  popv
+00082:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Animate.js:1 ---
+;; function object[0] create
+;; function metadata object[0] nargs=2 bindings=10
+;; arg[0] animaName
+;; arg[1] time
+;; local[0] _info
+;; local[1] _time
+;; local[2] _animation
+;; local[3] i
+;; local[4] _delayPerUnit
+;; local[5] _animate
+;; local[6] _sprite
+;; local[7] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Animate.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  name "xs"
+00005:  20  getprop "Cfg"
+00010:  20  getprop "Animate"
+00015:  20  getarg 0
+00018:  20  getelem
+00019:  20  setlocal 0
+00022:  20  pop
+00023:  21  getarg 1
+00026:  21  or 33 (+7)
+00031:  21  pop
+00032:  21  one
+00033:  21  setlocal 1
+00036:  21  pop
+00037:  24  name "xs"
+00042:  24  dup
+00043:  24  callprop "assert"
+00048:  24  swap
+00049:  24  notearg
+00050:  24  getlocal 0
+00053:  24  notearg
+00054:  24  string "animaName error"
+00059:  24  notearg
+00060:  24  getarg 0
+00063:  24  notearg
+00064:  24  this
+00065:  24  getprop "cfg"
+00070:  24  notearg
+00071:  24  call 4
+00074:  24  pop
+00075:  29  name "cc"
+00080:  29  getprop "Animation"
+00085:  29  dup
+00086:  29  callprop "create"
+00091:  29  swap
+00092:  29  notearg
+00093:  29  call 0
+00096:  29  setlocal 2
+00099:  29  pop
+00100:  32  getlocal 0
+00103:  32  getprop "first"
+00108:  32  setlocal 3
+00111:  32  pop
+00112:  32  goto 177 (+65)
+00117:  33  loophead
+00118:  33  getlocal 2
+00121:  33  dup
+00122:  33  callprop "addSpriteFrameWithFile"
+00127:  33  swap
+00128:  33  notearg
+00129:  33  this
+00130:  33  getprop "path"
+00135:  33  getlocal 0
+00138:  33  getprop "prefix"
+00143:  33  add
+00144:  33  getlocal 3
+00147:  33  add
+00148:  33  getlocal 0
+00151:  33  getprop "suffix"
+00156:  33  add
+00157:  33  notearg
+00158:  33  call 1
+00161:  33  pop
+00162:  32  localinc 11
+00165:  32  getlocal 3
+00168:  32  pos
+00169:  32  dup
+00170:  32  one
+00171:  32  add
+00172:  32  setlocal 3
+00175:  32  pop
+00176:  32  pop
+00177:  32  loopentry
+00178:  32  getlocal 3
+00181:  32  getlocal 0
+00184:  32  getprop "last"
+00189:  32  le
+00190:  32  ifne 117 (-73)
+00195:  36  getlocal 1
+00198:  36  getlocal 0
+00201:  36  getprop "last"
+00206:  36  getlocal 0
+00209:  36  getprop "first"
+00214:  36  sub
+00215:  36  one
+00216:  36  add
+00217:  36  div
+00218:  36  setlocal 4
+00221:  36  pop
+00222:  39  getlocal 2
+00225:  39  dup
+00226:  39  callprop "setDelayPerUnit"
+00231:  39  swap
+00232:  39  notearg
+00233:  39  getlocal 4
+00236:  39  notearg
+00237:  39  call 1
+00240:  39  pop
+00241:  40  getlocal 2
+00244:  40  dup
+00245:  40  callprop "setRestoreOriginalFrame"
+00250:  40  swap
+00251:  40  notearg
+00252:  40  false
+00253:  40  notearg
+00254:  40  call 1
+00257:  40  pop
+00258:  43  name "cc"
+00263:  43  getprop "Animate"
+00268:  43  dup
+00269:  43  callprop "create"
+00274:  43  swap
+00275:  43  notearg
+00276:  43  getlocal 2
+00279:  43  notearg
+00280:  43  call 1
+00283:  43  setlocal 5
+00286:  43  pop
+00287:  47  name "cc"
+00292:  47  getprop "Sprite"
+00297:  47  dup
+00298:  47  callprop "create"
+00303:  47  swap
+00304:  47  notearg
+00305:  47  this
+00306:  47  getprop "path"
+00311:  47  getlocal 0
+00314:  47  getprop "prefix"
+00319:  47  add
+00320:  47  getlocal 0
+00323:  47  getprop "first"
+00328:  47  add
+00329:  47  getlocal 0
+00332:  47  getprop "suffix"
+00337:  47  add
+00338:  47  notearg
+00339:  47  call 1
+00342:  47  setlocal 6
+00345:  47  pop
+00346:  49  name "xs"
+00351:  49  dup
+00352:  49  callprop "assert"
+00357:  49  swap
+00358:  49  notearg
+00359:  49  getlocal 6
+00362:  49  notearg
+00363:  49  string "create animation sprite error"
+00368:  49  notearg
+00369:  49  getlocal 0
+00372:  49  notearg
+00373:  49  this
+00374:  49  getprop "Cfg"
+00379:  49  notearg
+00380:  49  call 4
+00383:  49  pop
+00384:  52  name "xs"
+00389:  52  getprop "Models"
+00394:  52  getprop "Animation"
+00399:  52  undefined
+00400:  52  notearg
+00401:  52  new 0
+00404:  52  setlocal 7
+00407:  52  pop
+00408:  53  getlocal 7
+00411:  53  dup
+00412:  53  callprop "init"
+00417:  53  swap
+00418:  53  notearg
+00419:  53  getlocal 6
+00422:  53  notearg
+00423:  53  getlocal 5
+00426:  53  notearg
+00427:  53  call 2
+00430:  53  pop
+00431:  55  newinit 1
+00436:  56  getlocal 6
+00439:  56  initprop "sprite"
+00444:  57  getlocal 5
+00447:  57  initprop "animate"
+00452:  57  endinit
+00453:  57  return
+00454:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Animate.js:17 ---

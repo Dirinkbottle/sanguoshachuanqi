@@ -1,0 +1,379 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/TemplateAttack.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/TemplateAttack.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Utils"
+00010:   8  dup
+00011:   8  callprop "extendScope"
+00016:   8  swap
+00017:   8  notearg
+00018:   9  name "xs"
+00023:   9  getprop "Cfg"
+00028:   9  getprop "Skill"
+00033:   9  getprop "template"
+00038:   9  notearg
+00039:  10  newinit 1
+00044:  12  newinit 1
+00049:  13  string "P_BlackHalfBegin"
+00054:  13  initprop "_black_begin"
+00059:  14  string "P_Normal_Skill"
+00064:  14  initprop "_name"
+00069:  15  string "P_Attack_Sword_0"
+00074:  15  initprop "_appear"
+00079:  16  string "P_Attack_Sword_1"
+00084:  16  initprop "_move"
+00089:  17  newinit 1
+00094:  18  string "Spawn"
+00099:  18  initprop "type"
+00104:  19  newinit 1
+00109:  20  null
+00110:  20  initprop "_delay"
+00115:  21  string "P_Hurt_Back_Over"
+00120:  21  initprop "_type"
+00125:  22  string "P_BlackHalfEnd"
+00130:  22  initprop "_black_end"
+00135:  22  endinit
+00136:  22  initprop "_hurt"
+00141:  24  newinit 1
+00146:  25  null
+00147:  25  initprop "_delay"
+00152:  26  string "P_Sword_Effect_From"
+00157:  26  initprop "_type"
+00162:  27  string "P_Attack_Sword_3"
+00167:  27  initprop "_back"
+00172:  27  endinit
+00173:  27  initprop "_effect"
+00178:  27  endinit
+00179:  27  initprop "_attack"
+00184:  27  endinit
+00185:  27  initprop "T_Sword"
+00190:  33  newinit 1
+00195:  34  string "P_BlackHalfBegin"
+00200:  34  initprop "_black_begin"
+00205:  35  string "P_Normal_Skill"
+00210:  35  initprop "_name"
+00215:  36  string "P_Attack_Chopper_0"
+00220:  36  initprop "_appear"
+00225:  37  string "P_Attack_Chopper_1"
+00230:  37  initprop "_move"
+00235:  38  newinit 1
+00240:  39  string "Spawn"
+00245:  39  initprop "type"
+00250:  40  newinit 1
+00255:  41  null
+00256:  41  initprop "_delay"
+00261:  42  string "P_Hurt_Back_Over"
+00266:  42  initprop "_type"
+00271:  43  string "P_BlackHalfEnd"
+00276:  43  initprop "_black_end"
+00281:  43  endinit
+00282:  43  initprop "_hurt"
+00287:  45  newinit 1
+00292:  46  null
+00293:  46  initprop "_delay"
+00298:  47  string "P_Chopper_Effect_From"
+00303:  47  initprop "_type"
+00308:  48  string "P_Attack_Chopper_3"
+00313:  48  initprop "_back"
+00318:  48  endinit
+00319:  48  initprop "_effect"
+00324:  48  endinit
+00325:  48  initprop "_attack"
+00330:  48  endinit
+00331:  48  initprop "T_Chopper"
+00336:  54  newinit 1
+00341:  55  string "P_BlackHalfBegin"
+00346:  55  initprop "_black_begin"
+00351:  56  string "P_Normal_Skill"
+00356:  56  initprop "_name"
+00361:  57  string "P_Attack_Axe_0"
+00366:  57  initprop "_appear"
+00371:  58  string "P_Attack_Axe_1"
+00376:  58  initprop "_move"
+00381:  59  newinit 1
+00386:  60  string "Spawn"
+00391:  60  initprop "type"
+00396:  61  newinit 1
+00401:  62  null
+00402:  62  initprop "_delay"
+00407:  63  string "P_Hurt_Flat_Over"
+00412:  63  initprop "_type"
+00417:  64  string "P_BlackHalfEnd"
+00422:  64  initprop "_black_end"
+00427:  65  string "P_Attack_Axe_3"
+00432:  65  initprop "_back"
+00437:  65  endinit
+00438:  65  initprop "_hurt"
+00443:  67  newinit 1
+00448:  68  null
+00449:  68  initprop "_delay"
+00454:  69  string "P_Axe_Effect_From"
+00459:  69  initprop "_type"
+00464:  69  endinit
+00465:  69  initprop "_effect"
+00470:  69  endinit
+00471:  69  initprop "_attack"
+00476:  72  null
+00477:  72  initprop "_attack_after"
+00482:  72  endinit
+00483:  72  initprop "T_Axe"
+00488:  74  newinit 1
+00493:  75  string "P_BlackHalfBegin"
+00498:  75  initprop "_black_begin"
+00503:  76  string "P_Normal_Skill"
+00508:  76  initprop "_name"
+00513:  77  string "P_Attack_Hammer_0"
+00518:  77  initprop "_appear"
+00523:  78  string "P_Attack_Hammer_1"
+00528:  78  initprop "_move"
+00533:  79  newinit 1
+00538:  80  string "Spawn"
+00543:  80  initprop "type"
+00548:  81  newinit 1
+00553:  82  string "P_Delay_Frame_1"
+00558:  82  initprop "_delay"
+00563:  83  string "P_Hurt_Flat_Over"
+00568:  83  initprop "_type"
+00573:  84  string "P_BlackHalfEnd"
+00578:  84  initprop "_black_end"
+00583:  84  endinit
+00584:  84  initprop "_hurt"
+00589:  86  newinit 1
+00594:  87  null
+00595:  87  initprop "_delay"
+00600:  88  string "P_Hammer_Effect_From"
+00605:  88  initprop "_type"
+00610:  89  string "P_Attack_Hammer_3"
+00615:  89  initprop "_back"
+00620:  89  endinit
+00621:  89  initprop "_effect"
+00626:  89  endinit
+00627:  89  initprop "_attack"
+00632:  89  endinit
+00633:  89  initprop "T_Hammer"
+00638:  97  newinit 1
+00643:  98  string "P_BlackHalfBegin"
+00648:  98  initprop "_black_begin"
+00653:  99  string "P_Normal_Skill"
+00658:  99  initprop "_name"
+00663: 100  string "P_Attack_Knife_0"
+00668: 100  initprop "_appear"
+00673: 101  string "P_Attack_Knife_1"
+00678: 101  initprop "_move"
+00683: 102  newinit 1
+00688: 103  string "Spawn"
+00693: 103  initprop "type"
+00698: 104  newinit 1
+00703: 105  null
+00704: 105  initprop "_delay"
+00709: 106  string "P_Hurt_Fly_Over"
+00714: 106  initprop "_type"
+00719: 107  string "P_BlackHalfEnd"
+00724: 107  initprop "_black_end"
+00729: 107  endinit
+00730: 107  initprop "_hurt"
+00735: 109  newinit 1
+00740: 110  null
+00741: 110  initprop "_delay"
+00746: 111  string "P_Knife_Effect_From"
+00751: 111  initprop "_type"
+00756: 112  string "P_Attack_Knife_3"
+00761: 112  initprop "_back"
+00766: 112  endinit
+00767: 112  initprop "_effect"
+00772: 112  endinit
+00773: 112  initprop "_attack"
+00778: 112  endinit
+00779: 112  initprop "T_Knife"
+00784: 118  newinit 1
+00789: 119  string "P_BlackHalfBegin"
+00794: 119  initprop "_black_begin"
+00799: 120  string "P_Normal_Skill"
+00804: 120  initprop "_name"
+00809: 121  string "P_Attack_Pike_0"
+00814: 121  initprop "_appear"
+00819: 122  string "P_Attack_Pike_1"
+00824: 122  initprop "_move"
+00829: 123  newinit 1
+00834: 124  string "Spawn"
+00839: 124  initprop "type"
+00844: 125  newinit 1
+00849: 126  null
+00850: 126  initprop "_delay"
+00855: 127  string "P_Hurt_Back_Over"
+00860: 127  initprop "_type"
+00865: 128  string "P_BlackHalfEnd"
+00870: 128  initprop "_black_end"
+00875: 128  endinit
+00876: 128  initprop "_hurt"
+00881: 130  newinit 1
+00886: 131  null
+00887: 131  initprop "_delay"
+00892: 132  string "P_Pike_Effect_From"
+00897: 132  initprop "_type"
+00902: 133  string "P_Attack_Pike_3"
+00907: 133  initprop "_back"
+00912: 133  endinit
+00913: 133  initprop "_effect"
+00918: 133  endinit
+00919: 133  initprop "_attack"
+00924: 133  endinit
+00925: 133  initprop "T_Pike"
+00930: 139  newinit 1
+00935: 140  string "P_BlackHalfBegin"
+00940: 140  initprop "_black_begin"
+00945: 141  string "P_Normal_Skill"
+00950: 141  initprop "_name"
+00955: 142  string "P_Attack_Spear_0"
+00960: 142  initprop "_appear"
+00965: 143  string "P_Attack_Spear_1"
+00970: 143  initprop "_move"
+00975: 144  newinit 1
+00980: 145  string "Spawn"
+00985: 145  initprop "type"
+00990: 146  newinit 1
+00995: 147  null
+00996: 147  initprop "_delay"
+01001: 148  string "P_Hurt_Back_Over"
+01006: 148  initprop "_type"
+01011: 149  string "P_BlackHalfEnd"
+01016: 149  initprop "_black_end"
+01021: 149  endinit
+01022: 149  initprop "_hurt"
+01027: 151  newinit 1
+01032: 152  null
+01033: 152  initprop "_delay"
+01038: 153  string "P_Spear_Effect_From"
+01043: 153  initprop "_type"
+01048: 154  string "P_Attack_Spear_3"
+01053: 154  initprop "_back"
+01058: 154  endinit
+01059: 154  initprop "_effect"
+01064: 154  endinit
+01065: 154  initprop "_attack"
+01070: 154  endinit
+01071: 154  initprop "T_Spear"
+01076: 159  newinit 1
+01081: 160  string "P_BlackHalfBegin"
+01086: 160  initprop "_black_begin"
+01091: 161  string "P_Normal_Skill"
+01096: 161  initprop "_name"
+01101: 162  string "P_Attack_Claw_0"
+01106: 162  initprop "_appear"
+01111: 163  string "P_Attack_Claw_1"
+01116: 163  initprop "_move"
+01121: 164  newinit 1
+01126: 165  string "Spawn"
+01131: 165  initprop "type"
+01136: 166  newinit 1
+01141: 167  null
+01142: 167  initprop "_delay"
+01147: 168  string "P_Hurt_Back_Over"
+01152: 168  initprop "_type"
+01157: 169  string "P_BlackHalfEnd"
+01162: 169  initprop "_black_end"
+01167: 169  endinit
+01168: 169  initprop "_hurt"
+01173: 171  newinit 1
+01178: 172  null
+01179: 172  initprop "_delay"
+01184: 173  string "P_Claw_Effect_From"
+01189: 173  initprop "_type"
+01194: 174  newarray 2
+01198: 174  string "P_Attack_Claw_3"
+01203: 174  initelem_array 0
+01207: 174  string "P_Idle_From"
+01212: 174  initelem_array 1
+01216: 174  endinit
+01217: 174  initprop "_back"
+01222: 174  endinit
+01223: 174  initprop "_effect"
+01228: 174  endinit
+01229: 174  initprop "_attack"
+01234: 174  endinit
+01235: 174  initprop "T_Claw"
+01240: 179  newinit 1
+01245: 180  string "P_BlackHalfBegin"
+01250: 180  initprop "_black_begin"
+01255: 181  string "P_Normal_Skill"
+01260: 181  initprop "_name"
+01265: 182  string "P_Attack_Fan_0"
+01270: 182  initprop "_appear"
+01275: 183  null
+01276: 183  initprop "_move"
+01281: 184  newinit 1
+01286: 185  string "Spawn"
+01291: 185  initprop "type"
+01296: 186  newinit 1
+01301: 187  null
+01302: 187  initprop "_delay"
+01307: 188  string "P_Hurt_Back_Over"
+01312: 188  initprop "_type"
+01317: 189  string "P_BlackHalfEnd"
+01322: 189  initprop "_black_end"
+01327: 189  endinit
+01328: 189  initprop "_hurt"
+01333: 191  newinit 1
+01338: 192  string "P_Fan_Effect_To"
+01343: 192  initprop "_type"
+01348: 192  endinit
+01349: 192  initprop "_effect_to"
+01354: 194  newinit 1
+01359: 195  string "P_Fan_Effect_From"
+01364: 195  initprop "_type"
+01369: 195  endinit
+01370: 195  initprop "_effect_from"
+01375: 195  endinit
+01376: 195  initprop "_attack"
+01381: 195  endinit
+01382: 195  initprop "T_Fan"
+01387: 200  newinit 1
+01392: 201  string "P_BlackHalfBegin"
+01397: 201  initprop "_black_begin"
+01402: 202  string "P_Normal_Skill"
+01407: 202  initprop "_name"
+01412: 203  string "P_Attack_Bow_0"
+01417: 203  initprop "_appear"
+01422: 204  null
+01423: 204  initprop "_move"
+01428: 205  newinit 1
+01433: 206  string "Spawn"
+01438: 206  initprop "type"
+01443: 207  newinit 1
+01448: 208  null
+01449: 208  initprop "_delay"
+01454: 209  string "P_Hurt_Back_Over"
+01459: 209  initprop "_type"
+01464: 210  string "P_BlackHalfEnd"
+01469: 210  initprop "_black_end"
+01474: 210  endinit
+01475: 210  initprop "_hurt"
+01480: 212  newinit 1
+01485: 213  null
+01486: 213  initprop "_delay"
+01491: 214  string "P_Bow_Effect_To"
+01496: 214  initprop "_type"
+01501: 214  endinit
+01502: 214  initprop "_effect_to"
+01507: 216  newinit 1
+01512: 217  string "P_Bow_Effect_From"
+01517: 217  initprop "_type"
+01522: 217  endinit
+01523: 217  initprop "_effect_from"
+01528: 217  endinit
+01529: 217  initprop "_attack"
+01534: 217  endinit
+01535: 217  initprop "T_Bow"
+01540: 217  endinit
+01541: 217  notearg
+01542: 217  call 2
+01545: 217  popv
+01546: 221  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/TemplateAttack.js:1 ---

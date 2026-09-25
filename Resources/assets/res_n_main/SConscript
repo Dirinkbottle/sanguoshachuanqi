@@ -1,0 +1,28 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+import os
+import sys
+
+Import('ARGUMENTS','PRO','sgscq')
+# 平台
+_platform = str(ARGUMENTS.get('platform'))
+# print _platform,type(_platform)
+# 工程目录
+_workdir = str(PRO['dirpathandname'])
+# print '_platform',_platform
+if _platform == 'android':
+	# 后缀名列表
+	# SuffixName = {}
+	# 遍历medium
+	_targetDir = _workdir+'/assets/res_n_main/'
+	for rootPath, directory, files in os.walk('medium/'):
+		# print 'rootPath',rootPath
+		# print 'directory',directory
+		for fileName in files:
+			_sourceFile = ''.join([rootPath,'/',fileName])
+			_targetFile = ''.join([_targetDir,_sourceFile])
+			sgscq.cp(_targetFile,_sourceFile)
+			# 获取所有文件的后缀名
+			# SuffixName[fileName.split('.')[-1]] = True
+	# print SuffixName

@@ -1,0 +1,2412 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Cfg/Fight/NewPlayerFight.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Cfg/Fight/NewPlayerFight.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Cfg"
+00010:   8  getprop "Fight"
+00015:   8  name "xs"
+00020:   8  getprop "Cfg"
+00025:   8  getprop "Fight"
+00030:   8  getprop "NewPlayerFight"
+00035:   8  or 8653 (+8618)
+00040:   8  pop
+00041:   8  newinit 1
+00046:   9  newinit 1
+00051:  10  zero
+00052:  10  initprop "first"
+00057:  11  int8 15
+00059:  11  initprop "roundMax"
+00064:  12  int8 3
+00066:  12  initprop "cards_size0"
+00071:  13  int8 3
+00073:  13  initprop "cards_size1"
+00078:  14  int8 4
+00080:  14  initprop "backups_size0"
+00085:  15  int8 4
+00087:  15  initprop "backups_size1"
+00092:  16  newarray 14
+00096:  17  newinit 1
+00101:  17  string "131007"
+00106:  17  initprop "id"
+00111:  17  uint16 20000
+00114:  17  initprop "hpCur"
+00119:  17  uint16 20000
+00122:  17  initprop "hpMax"
+00127:  17  string "\u5927\u4E54"
+00132:  17  initprop "name"
+00137:  17  endinit
+00138:  17  initelem_array 0
+00142:  18  newinit 1
+00147:  18  string "131008"
+00152:  18  initprop "id"
+00157:  18  uint16 20000
+00160:  18  initprop "hpCur"
+00165:  18  uint16 20000
+00168:  18  initprop "hpMax"
+00173:  18  string "\u5C0F\u4E54"
+00178:  18  initprop "name"
+00183:  18  endinit
+00184:  18  initelem_array 1
+00188:  19  newinit 1
+00193:  19  string "131014"
+00198:  19  initprop "id"
+00203:  19  uint16 20000
+00206:  19  initprop "hpCur"
+00211:  19  uint16 20000
+00214:  19  initprop "hpMax"
+00219:  19  string "\u9EC4\u76D6"
+00224:  19  initprop "name"
+00229:  19  endinit
+00230:  19  initelem_array 2
+00234:  21  newinit 1
+00239:  21  string "111007"
+00244:  21  initprop "id"
+00249:  21  uint16 20000
+00252:  21  initprop "hpCur"
+00257:  21  uint16 20000
+00260:  21  initprop "hpMax"
+00265:  21  string "\u590F\u4FAF\u60C7"
+00270:  21  initprop "name"
+00275:  21  endinit
+00276:  21  initelem_array 3
+00280:  22  newinit 1
+00285:  22  string "111004"
+00290:  22  initprop "id"
+00295:  22  uint16 20000
+00298:  22  initprop "hpCur"
+00303:  22  uint16 20000
+00306:  22  initprop "hpMax"
+00311:  22  string "\u7504\u59EC"
+00316:  22  initprop "name"
+00321:  22  endinit
+00322:  22  initelem_array 4
+00326:  23  newinit 1
+00331:  23  string "111012"
+00336:  23  initprop "id"
+00341:  23  uint16 20000
+00344:  23  initprop "hpCur"
+00349:  23  uint16 20000
+00352:  23  initprop "hpMax"
+00357:  23  string "\u66F9\u4E15"
+00362:  23  initprop "name"
+00367:  23  endinit
+00368:  23  initelem_array 5
+00372:  25  newinit 1
+00377:  25  string "121011"
+00382:  25  initprop "id"
+00387:  25  uint16 20000
+00390:  25  initprop "hpCur"
+00395:  25  uint16 20000
+00398:  25  initprop "hpMax"
+00403:  25  string "\u8BF8\u845B\u4EAE"
+00408:  25  initprop "name"
+00413:  25  endinit
+00414:  25  initelem_array 6
+00418:  26  newinit 1
+00423:  26  string "131004"
+00428:  26  initprop "id"
+00433:  26  uint16 20000
+00436:  26  initprop "hpCur"
+00441:  26  uint16 20000
+00444:  26  initprop "hpMax"
+00449:  26  string "\u5468\u745C"
+00454:  26  initprop "name"
+00459:  26  endinit
+00460:  26  initelem_array 7
+00464:  27  newinit 1
+00469:  27  string "121006"
+00474:  27  initprop "id"
+00479:  27  uint16 30000
+00482:  27  initprop "hpCur"
+00487:  27  uint16 30000
+00490:  27  initprop "hpMax"
+00495:  27  string "\u5173\u7FBD"
+00500:  27  initprop "name"
+00505:  27  endinit
+00506:  27  initelem_array 8
+00510:  28  newinit 1
+00515:  28  string "121008"
+00520:  28  initprop "id"
+00525:  28  uint16 20000
+00528:  28  initprop "hpCur"
+00533:  28  uint16 20000
+00536:  28  initprop "hpMax"
+00541:  28  string "\u8D75\u4E91"
+00546:  28  initprop "name"
+00551:  28  endinit
+00552:  28  initelem_array 9
+00556:  30  newinit 1
+00561:  30  string "111009"
+00566:  30  initprop "id"
+00571:  30  uint16 20000
+00574:  30  initprop "hpCur"
+00579:  30  uint16 20000
+00582:  30  initprop "hpMax"
+00587:  30  string "\u8BB8\u891A"
+00592:  30  initprop "name"
+00597:  30  endinit
+00598:  30  initelem_array 10
+00602:  31  newinit 1
+00607:  31  string "111003"
+00612:  31  initprop "id"
+00617:  31  uint16 20000
+00620:  31  initprop "hpCur"
+00625:  31  uint16 20000
+00628:  31  initprop "hpMax"
+00633:  31  string "\u66F9\u64CD"
+00638:  31  initprop "name"
+00643:  31  endinit
+00644:  31  initelem_array 11
+00648:  32  newinit 1
+00653:  32  string "111017"
+00658:  32  initprop "id"
+00663:  32  uint16 20000
+00666:  32  initprop "hpCur"
+00671:  32  uint16 20000
+00674:  32  initprop "hpMax"
+00679:  32  string "\u5F20\u90C3"
+00684:  32  initprop "name"
+00689:  32  endinit
+00690:  32  initelem_array 12
+00694:  33  newinit 1
+00699:  33  string "111006"
+00704:  33  initprop "id"
+00709:  33  uint16 20000
+00712:  33  initprop "hpCur"
+00717:  33  uint16 20000
+00720:  33  initprop "hpMax"
+00725:  33  string "\u5F20\u8FBD"
+00730:  33  initprop "name"
+00735:  33  endinit
+00736:  33  initelem_array 13
+00740:  33  endinit
+00741:  33  initprop "cards"
+00746:  36  one
+00747:  36  initprop "roundCur"
+00752:  38  zero
+00753:  38  initprop "skipRounds"
+00758:  38  endinit
+00759:  38  initprop "init"
+00764:  40  newarray 83
+00768:  43  newinit 1
+00773:  43  string "Round"
+00778:  43  initprop "skill"
+00783:  43  newinit 1
+00788:  43  newinit 1
+00793:  43  one
+00794:  43  initprop "roundCur"
+00799:  43  endinit
+00800:  43  initprop "pre"
+00805:  43  endinit
+00806:  43  initprop "params"
+00811:  43  endinit
+00812:  43  initelem_array 0
+00816:  47  newinit 1
+00821:  47  newarray 1
+00825:  47  int8 3
+00827:  47  initelem_array 0
+00831:  47  endinit
+00832:  47  initprop "from"
+00837:  47  newarray 1
+00841:  47  zero
+00842:  47  initelem_array 0
+00846:  47  endinit
+00847:  47  initprop "to"
+00852:  47  string "Attack_Knife"
+00857:  47  initprop "skill"
+00862:  47  zero
+00863:  47  initprop "type"
+00868:  47  newinit 1
+00873:  47  newarray 1
+00877:  47  newinit 1
+00882:  47  uint16 14000
+00885:  47  initprop "hpCur"
+00890:  47  uint16 20000
+00893:  47  initprop "hpMax"
+00898:  47  uint16 6000
+00901:  47  initprop "hp"
+00906:  47  endinit
+00907:  47  initelem_array 0
+00911:  47  endinit
+00912:  47  initprop "to"
+00917:  47  endinit
+00918:  47  initprop "params"
+00923:  47  endinit
+00924:  47  initelem_array 1
+00928:  49  newinit 1
+00933:  50  string "ShowStory"
+00938:  50  initprop "skill"
+00943:  50  string "98000402"
+00948:  50  initprop "skillId"
+00953:  50  one
+00954:  50  initprop "type"
+00959:  50  endinit
+00960:  50  initelem_array 2
+00964:  54  newinit 1
+00969:  54  newarray 1
+00973:  54  zero
+00974:  54  initelem_array 0
+00978:  54  endinit
+00979:  54  initprop "from"
+00984:  54  newarray 1
+00988:  54  int8 3
+00990:  54  initelem_array 0
+00994:  54  endinit
+00995:  54  initprop "to"
+01000:  54  string "guose"
+01005:  54  initprop "skill"
+01010:  54  string "331025"
+01015:  54  initprop "skillId"
+01020:  54  zero
+01021:  54  initprop "type"
+01026:  54  newinit 1
+01031:  54  newarray 1
+01035:  54  newinit 1
+01040:  54  uint16 11000
+01043:  54  initprop "hpCur"
+01048:  54  uint16 20000
+01051:  54  initprop "hpMax"
+01056:  54  uint16 9000
+01059:  54  initprop "hp"
+01064:  54  endinit
+01065:  54  initelem_array 0
+01069:  54  endinit
+01070:  54  initprop "to"
+01075:  54  endinit
+01076:  54  initprop "params"
+01081:  54  endinit
+01082:  54  initelem_array 3
+01086:  56  newinit 1
+01091:  57  string "ShowStory"
+01096:  57  initprop "skill"
+01101:  57  string "98000411"
+01106:  57  initprop "skillId"
+01111:  57  one
+01112:  57  initprop "type"
+01117:  57  endinit
+01118:  57  initelem_array 4
+01122:  63  newinit 1
+01127:  63  newarray 1
+01131:  63  int8 4
+01133:  63  initelem_array 0
+01137:  63  endinit
+01138:  63  initprop "from"
+01143:  63  string "luoshen"
+01148:  63  initprop "skill"
+01153:  63  string "311004"
+01158:  63  initprop "skillId"
+01163:  63  zero
+01164:  63  initprop "type"
+01169:  63  int8 5
+01171:  63  initprop "num"
+01176:  63  newinit 1
+01181:  63  endinit
+01182:  63  initprop "params"
+01187:  63  endinit
+01188:  63  initelem_array 5
+01192:  64  newinit 1
+01197:  64  newarray 1
+01201:  64  int8 4
+01203:  64  initelem_array 0
+01207:  64  endinit
+01208:  64  initprop "from"
+01213:  64  newarray 1
+01217:  64  one
+01218:  64  initelem_array 0
+01222:  64  endinit
+01223:  64  initprop "to"
+01228:  64  string "Attack_Bow_0"
+01233:  64  initprop "skill"
+01238:  64  zero
+01239:  64  initprop "type"
+01244:  64  newinit 1
+01249:  64  newarray 1
+01253:  64  newinit 1
+01258:  64  uint16 20000
+01261:  64  initprop "hpCur"
+01266:  64  uint16 20000
+01269:  64  initprop "hpMax"
+01274:  64  string "tianxiang"
+01279:  64  initprop "event"
+01284:  64  endinit
+01285:  64  initelem_array 0
+01289:  64  endinit
+01290:  64  initprop "to"
+01295:  64  endinit
+01296:  64  initprop "params"
+01301:  64  endinit
+01302:  64  initelem_array 6
+01306:  65  newinit 1
+01311:  65  newarray 1
+01315:  65  one
+01316:  65  initelem_array 0
+01320:  65  endinit
+01321:  65  initprop "from"
+01326:  65  newarray 1
+01330:  65  int8 4
+01332:  65  initelem_array 0
+01336:  65  endinit
+01337:  65  initprop "to"
+01342:  65  string "tianxiang_0"
+01347:  65  initprop "skill"
+01352:  65  string "331008"
+01357:  65  initprop "skillId"
+01362:  65  zero
+01363:  65  initprop "type"
+01368:  65  endinit
+01369:  65  initelem_array 7
+01373:  66  newinit 1
+01378:  66  newarray 1
+01382:  66  int8 4
+01384:  66  initelem_array 0
+01388:  66  endinit
+01389:  66  initprop "from"
+01394:  66  newarray 1
+01398:  66  one
+01399:  66  initelem_array 0
+01403:  66  endinit
+01404:  66  initprop "to"
+01409:  66  string "Attack_Bow_1"
+01414:  66  initprop "skill"
+01419:  66  zero
+01420:  66  initprop "type"
+01425:  66  newinit 1
+01430:  66  newarray 1
+01434:  66  newinit 1
+01439:  66  uint16 20000
+01442:  66  initprop "hpCur"
+01447:  66  uint16 20000
+01450:  66  initprop "hpMax"
+01455:  66  zero
+01456:  66  initprop "hp"
+01461:  66  newarray 1
+01465:  66  string "tianxiang"
+01470:  66  initelem_array 0
+01474:  66  endinit
+01475:  66  initprop "event"
+01480:  66  endinit
+01481:  66  initelem_array 0
+01485:  66  endinit
+01486:  66  initprop "to"
+01491:  66  endinit
+01492:  66  initprop "params"
+01497:  66  endinit
+01498:  66  initelem_array 8
+01502:  67  newinit 1
+01507:  67  newarray 1
+01511:  67  one
+01512:  67  initelem_array 0
+01516:  67  endinit
+01517:  67  initprop "from"
+01522:  67  newarray 1
+01526:  67  int8 4
+01528:  67  initelem_array 0
+01532:  67  endinit
+01533:  67  initprop "to"
+01538:  67  string "tianxiang_1"
+01543:  67  initprop "skill"
+01548:  67  string "331008"
+01553:  67  initprop "skillId"
+01558:  67  zero
+01559:  67  initprop "type"
+01564:  68  newinit 1
+01569:  68  newarray 1
+01573:  68  newinit 1
+01578:  68  uint16 5000
+01581:  68  initprop "hpCur"
+01586:  68  uint16 20000
+01589:  68  initprop "hpMax"
+01594:  68  uint16 15000
+01597:  68  initprop "hp"
+01602:  68  endinit
+01603:  68  initelem_array 0
+01607:  68  endinit
+01608:  68  initprop "to"
+01613:  68  endinit
+01614:  68  initprop "params"
+01619:  68  endinit
+01620:  68  initelem_array 9
+01624:  72  newinit 1
+01629:  72  newarray 1
+01633:  72  one
+01634:  72  initelem_array 0
+01638:  72  endinit
+01639:  72  initprop "from"
+01644:  72  newarray 1
+01648:  72  int8 4
+01650:  72  initelem_array 0
+01654:  72  endinit
+01655:  72  initprop "to"
+01660:  72  string "Attack_Bow"
+01665:  72  initprop "skill"
+01670:  72  zero
+01671:  72  initprop "type"
+01676:  72  newinit 1
+01681:  72  newarray 1
+01685:  72  newinit 1
+01690:  72  zero
+01691:  72  initprop "hpCur"
+01696:  72  uint16 20000
+01699:  72  initprop "hpMax"
+01704:  72  uint16 5000
+01707:  72  initprop "hp"
+01712:  72  newarray 1
+01716:  72  string "death"
+01721:  72  initelem_array 0
+01725:  72  endinit
+01726:  72  initprop "event"
+01731:  72  endinit
+01732:  72  initelem_array 0
+01736:  72  endinit
+01737:  72  initprop "to"
+01742:  72  endinit
+01743:  72  initprop "params"
+01748:  72  endinit
+01749:  72  initelem_array 10
+01753:  75  newinit 1
+01758:  76  newarray 1
+01762:  76  int8 10
+01764:  76  initelem_array 0
+01768:  76  endinit
+01769:  76  initprop "from"
+01774:  76  newarray 1
+01778:  76  int8 4
+01780:  76  initelem_array 0
+01784:  76  endinit
+01785:  76  initprop "to"
+01790:  76  string "enter"
+01795:  76  initprop "skill"
+01800:  76  zero
+01801:  76  initprop "type"
+01806:  77  newinit 1
+01811:  78  newinit 1
+01816:  79  int8 4
+01818:  79  initprop "leaveIdx"
+01823:  80  int8 10
+01825:  80  initprop "backupIdx"
+01830:  80  endinit
+01831:  80  initprop "pre"
+01836:  80  endinit
+01837:  80  initprop "params"
+01842:  80  endinit
+01843:  80  initelem_array 11
+01847:  85  newinit 1
+01852:  86  string "ShowStory"
+01857:  86  initprop "skill"
+01862:  86  string "98000403"
+01867:  86  initprop "skillId"
+01872:  86  one
+01873:  86  initprop "type"
+01878:  86  endinit
+01879:  86  initelem_array 12
+01883:  90  newinit 1
+01888:  90  newarray 1
+01892:  90  int8 5
+01894:  90  initelem_array 0
+01898:  90  endinit
+01899:  90  initprop "from"
+01904:  90  newarray 1
+01908:  90  int8 2
+01910:  90  initelem_array 0
+01914:  90  endinit
+01915:  90  initprop "to"
+01920:  90  string "Attack_Claw"
+01925:  90  initprop "skill"
+01930:  90  zero
+01931:  90  initprop "type"
+01936:  90  newinit 1
+01941:  90  newarray 1
+01945:  90  newinit 1
+01950:  90  uint16 15000
+01953:  90  initprop "hpCur"
+01958:  90  uint16 20000
+01961:  90  initprop "hpMax"
+01966:  90  uint16 5000
+01969:  90  initprop "hp"
+01974:  90  endinit
+01975:  90  initelem_array 0
+01979:  90  endinit
+01980:  90  initprop "to"
+01985:  90  endinit
+01986:  90  initprop "params"
+01991:  90  endinit
+01992:  90  initelem_array 13
+01996:  92  newinit 1
+02001:  93  string "ShowStory"
+02006:  93  initprop "skill"
+02011:  93  string "98000404"
+02016:  93  initprop "skillId"
+02021:  93  one
+02022:  93  initprop "type"
+02027:  93  endinit
+02028:  93  initelem_array 14
+02032: 101  newinit 1
+02037: 101  newarray 1
+02041: 101  int8 2
+02043: 101  initelem_array 0
+02047: 101  endinit
+02048: 101  initprop "from"
+02053: 101  string "kurou"
+02058: 101  initprop "skill"
+02063: 101  string "331014"
+02068: 101  initprop "skillId"
+02073: 101  zero
+02074: 101  initprop "type"
+02079: 101  int8 3
+02081: 101  initprop "num"
+02086: 101  newinit 1
+02091: 101  newarray 1
+02095: 101  newinit 1
+02100: 101  uint16 9000
+02103: 101  initprop "hpCur"
+02108: 101  uint16 20000
+02111: 101  initprop "hpMax"
+02116: 101  uint16 6000
+02119: 101  initprop "hp"
+02124: 101  endinit
+02125: 101  initelem_array 0
+02129: 101  endinit
+02130: 101  initprop "from"
+02135: 101  endinit
+02136: 101  initprop "params"
+02141: 101  endinit
+02142: 101  initelem_array 15
+02146: 102  newinit 1
+02151: 102  newarray 1
+02155: 102  int8 2
+02157: 102  initelem_array 0
+02161: 102  endinit
+02162: 102  initprop "from"
+02167: 102  newarray 1
+02171: 102  int8 5
+02173: 102  initelem_array 0
+02177: 102  endinit
+02178: 102  initprop "to"
+02183: 102  string "Attack_Claw_0"
+02188: 102  initprop "skill"
+02193: 102  zero
+02194: 102  initprop "type"
+02199: 102  newinit 1
+02204: 102  newarray 1
+02208: 102  newinit 1
+02213: 102  uint16 20000
+02216: 102  initprop "hpCur"
+02221: 102  uint16 20000
+02224: 102  initprop "hpMax"
+02229: 102  string "fangzhu"
+02234: 102  initprop "event"
+02239: 102  endinit
+02240: 102  initelem_array 0
+02244: 102  endinit
+02245: 102  initprop "to"
+02250: 102  endinit
+02251: 102  initprop "params"
+02256: 102  endinit
+02257: 102  initelem_array 16
+02261: 103  newinit 1
+02266: 103  newarray 1
+02270: 103  int8 5
+02272: 103  initelem_array 0
+02276: 103  endinit
+02277: 103  initprop "from"
+02282: 103  newarray 1
+02286: 103  int8 2
+02288: 103  initelem_array 0
+02292: 103  endinit
+02293: 103  initprop "to"
+02298: 103  string "fangzhu_0"
+02303: 103  initprop "skill"
+02308: 103  string "311012"
+02313: 103  initprop "skillId"
+02318: 103  zero
+02319: 103  initprop "type"
+02324: 103  newinit 1
+02329: 103  newarray 0
+02333: 103  endinit
+02334: 103  initprop "to"
+02339: 103  endinit
+02340: 103  initprop "params"
+02345: 103  endinit
+02346: 103  initelem_array 17
+02350: 104  newinit 1
+02355: 104  newarray 1
+02359: 104  int8 2
+02361: 104  initelem_array 0
+02365: 104  endinit
+02366: 104  initprop "from"
+02371: 104  newarray 1
+02375: 104  int8 5
+02377: 104  initelem_array 0
+02381: 104  endinit
+02382: 104  initprop "to"
+02387: 104  string "Attack_Claw_1"
+02392: 104  initprop "skill"
+02397: 104  zero
+02398: 104  initprop "type"
+02403: 104  newinit 1
+02408: 104  newarray 1
+02412: 104  newinit 1
+02417: 104  uint16 4000
+02420: 104  initprop "hpCur"
+02425: 104  uint16 20000
+02428: 104  initprop "hpMax"
+02433: 104  uint16 16000
+02436: 104  initprop "hp"
+02441: 104  string "fangzhu"
+02446: 104  initprop "event"
+02451: 104  endinit
+02452: 104  initelem_array 0
+02456: 104  endinit
+02457: 104  initprop "to"
+02462: 104  endinit
+02463: 104  initprop "params"
+02468: 104  endinit
+02469: 104  initelem_array 18
+02473: 105  newinit 1
+02478: 105  newarray 1
+02482: 105  int8 5
+02484: 105  initelem_array 0
+02488: 105  endinit
+02489: 105  initprop "from"
+02494: 105  newarray 1
+02498: 105  int8 2
+02500: 105  initelem_array 0
+02504: 105  endinit
+02505: 105  initprop "to"
+02510: 105  string "fangzhu_1"
+02515: 105  initprop "skill"
+02520: 105  string "311012"
+02525: 105  initprop "skillId"
+02530: 105  zero
+02531: 105  initprop "type"
+02536: 105  newinit 1
+02541: 105  newarray 1
+02545: 105  newinit 1
+02550: 105  uint16 1000
+02553: 105  initprop "hpCur"
+02558: 105  uint16 20000
+02561: 105  initprop "hpMax"
+02566: 105  uint16 8000
+02569: 105  initprop "hp"
+02574: 105  endinit
+02575: 105  initelem_array 0
+02579: 105  endinit
+02580: 105  initprop "to"
+02585: 105  endinit
+02586: 105  initprop "params"
+02591: 105  endinit
+02592: 105  initelem_array 19
+02596: 106  newinit 1
+02601: 106  newarray 1
+02605: 106  int8 2
+02607: 106  initelem_array 0
+02611: 106  endinit
+02612: 106  initprop "from"
+02617: 106  newarray 1
+02621: 106  int8 5
+02623: 106  initelem_array 0
+02627: 106  endinit
+02628: 106  initprop "to"
+02633: 106  string "Attack_Claw_2"
+02638: 106  initprop "skill"
+02643: 106  zero
+02644: 106  initprop "type"
+02649: 106  newinit 1
+02654: 106  newarray 1
+02658: 106  newinit 1
+02663: 106  uint16 4000
+02666: 106  initprop "hpCur"
+02671: 106  uint16 20000
+02674: 106  initprop "hpMax"
+02679: 106  endinit
+02680: 106  initelem_array 0
+02684: 106  endinit
+02685: 106  initprop "to"
+02690: 106  endinit
+02691: 106  initprop "params"
+02696: 106  endinit
+02697: 106  initelem_array 20
+02701: 108  newinit 1
+02706: 109  string "ShowStory"
+02711: 109  initprop "skill"
+02716: 109  string "98000412"
+02721: 109  initprop "skillId"
+02726: 109  one
+02727: 109  initprop "type"
+02732: 109  endinit
+02733: 109  initelem_array 21
+02737: 113  newinit 1
+02742: 113  string "Round"
+02747: 113  initprop "skill"
+02752: 113  newinit 1
+02757: 113  newinit 1
+02762: 113  int8 2
+02764: 113  initprop "roundCur"
+02769: 113  endinit
+02770: 113  initprop "pre"
+02775: 113  endinit
+02776: 113  initprop "params"
+02781: 113  endinit
+02782: 113  initelem_array 22
+02786: 117  newinit 1
+02791: 117  newarray 1
+02795: 117  zero
+02796: 117  initelem_array 0
+02800: 117  endinit
+02801: 117  initprop "from"
+02806: 117  newarray 1
+02810: 117  int8 3
+02812: 117  initelem_array 0
+02816: 117  endinit
+02817: 117  initprop "to"
+02822: 117  string "Attack_Bow_0"
+02827: 117  initprop "skill"
+02832: 117  zero
+02833: 117  initprop "type"
+02838: 117  newinit 1
+02843: 117  newarray 1
+02847: 117  newinit 1
+02852: 117  uint16 11000
+02855: 117  initprop "hpCur"
+02860: 117  uint16 20000
+02863: 117  initprop "hpMax"
+02868: 117  string "ganglie"
+02873: 117  initprop "event"
+02878: 117  endinit
+02879: 117  initelem_array 0
+02883: 117  endinit
+02884: 117  initprop "to"
+02889: 117  endinit
+02890: 117  initprop "params"
+02895: 117  endinit
+02896: 117  initelem_array 23
+02900: 118  newinit 1
+02905: 118  newarray 1
+02909: 118  int8 3
+02911: 118  initelem_array 0
+02915: 118  endinit
+02916: 118  initprop "from"
+02921: 118  newarray 1
+02925: 118  zero
+02926: 118  initelem_array 0
+02930: 118  endinit
+02931: 118  initprop "to"
+02936: 118  string "ganglie_0"
+02941: 118  initprop "skill"
+02946: 118  string "311007"
+02951: 118  initprop "skillId"
+02956: 118  zero
+02957: 118  initprop "type"
+02962: 118  newinit 1
+02967: 118  newarray 1
+02971: 118  newinit 1
+02976: 118  newarray 1
+02980: 118  string "death"
+02985: 118  initelem_array 0
+02989: 118  endinit
+02990: 118  initprop "event"
+02995: 118  endinit
+02996: 118  initelem_array 0
+03000: 118  endinit
+03001: 118  initprop "to"
+03006: 118  endinit
+03007: 118  initprop "params"
+03012: 118  endinit
+03013: 118  initelem_array 24
+03017: 119  newinit 1
+03022: 119  newarray 1
+03026: 119  zero
+03027: 119  initelem_array 0
+03031: 119  endinit
+03032: 119  initprop "from"
+03037: 119  newarray 1
+03041: 119  int8 3
+03043: 119  initelem_array 0
+03047: 119  endinit
+03048: 119  initprop "to"
+03053: 119  string "Attack_Bow_1"
+03058: 119  initprop "skill"
+03063: 119  zero
+03064: 119  initprop "type"
+03069: 119  newinit 1
+03074: 119  newarray 1
+03078: 119  newinit 1
+03083: 119  uint16 6000
+03086: 119  initprop "hpCur"
+03091: 119  uint16 20000
+03094: 119  initprop "hpMax"
+03099: 119  uint16 5000
+03102: 119  initprop "hp"
+03107: 119  string "ganglie"
+03112: 119  initprop "event"
+03117: 119  endinit
+03118: 119  initelem_array 0
+03122: 119  endinit
+03123: 119  initprop "to"
+03128: 119  endinit
+03129: 119  initprop "params"
+03134: 119  endinit
+03135: 119  initelem_array 25
+03139: 120  newinit 1
+03144: 120  newarray 1
+03148: 120  int8 3
+03150: 120  initelem_array 0
+03154: 120  endinit
+03155: 120  initprop "from"
+03160: 120  newarray 1
+03164: 120  zero
+03165: 120  initelem_array 0
+03169: 120  endinit
+03170: 120  initprop "to"
+03175: 120  string "ganglie_1"
+03180: 120  initprop "skill"
+03185: 120  string "311007"
+03190: 120  initprop "skillId"
+03195: 120  zero
+03196: 120  initprop "type"
+03201: 120  newinit 1
+03206: 120  newarray 1
+03210: 120  newinit 1
+03215: 120  zero
+03216: 120  initprop "hpCur"
+03221: 120  uint16 20000
+03224: 120  initprop "hpMax"
+03229: 120  uint16 15000
+03232: 120  initprop "hp"
+03237: 120  newarray 1
+03241: 120  string "death"
+03246: 120  initelem_array 0
+03250: 120  endinit
+03251: 120  initprop "event"
+03256: 120  endinit
+03257: 120  initelem_array 0
+03261: 120  endinit
+03262: 120  initprop "to"
+03267: 120  endinit
+03268: 120  initprop "params"
+03273: 120  endinit
+03274: 120  initelem_array 26
+03278: 123  newinit 1
+03283: 124  newarray 1
+03287: 124  int8 6
+03289: 124  initelem_array 0
+03293: 124  endinit
+03294: 124  initprop "from"
+03299: 124  newarray 1
+03303: 124  zero
+03304: 124  initelem_array 0
+03308: 124  endinit
+03309: 124  initprop "to"
+03314: 124  string "enter"
+03319: 124  initprop "skill"
+03324: 124  zero
+03325: 124  initprop "type"
+03330: 125  newinit 1
+03335: 126  newinit 1
+03340: 127  zero
+03341: 127  initprop "leaveIdx"
+03346: 128  int8 6
+03348: 128  initprop "backupIdx"
+03353: 128  endinit
+03354: 128  initprop "pre"
+03359: 128  endinit
+03360: 128  initprop "params"
+03365: 128  endinit
+03366: 128  initelem_array 27
+03370: 133  newinit 1
+03375: 134  string "ShowStory"
+03380: 134  initprop "skill"
+03385: 134  string "98000405"
+03390: 134  initprop "skillId"
+03395: 134  one
+03396: 134  initprop "type"
+03401: 134  endinit
+03402: 134  initelem_array 28
+03406: 138  newinit 1
+03411: 138  newarray 1
+03415: 138  int8 4
+03417: 138  initelem_array 0
+03421: 138  endinit
+03422: 138  initprop "from"
+03427: 138  newarray 1
+03431: 138  one
+03432: 138  initelem_array 0
+03436: 138  endinit
+03437: 138  initprop "to"
+03442: 138  string "luoyi"
+03447: 138  initprop "skill"
+03452: 138  string "311009"
+03457: 138  initprop "skillId"
+03462: 138  zero
+03463: 138  initprop "type"
+03468: 138  newinit 1
+03473: 138  newarray 1
+03477: 138  newinit 1
+03482: 138  zero
+03483: 138  initprop "hpCur"
+03488: 138  uint16 20000
+03491: 138  initprop "hpMax"
+03496: 138  uint16 20000
+03499: 138  initprop "hp"
+03504: 138  newarray 1
+03508: 138  string "death"
+03513: 138  initelem_array 0
+03517: 138  endinit
+03518: 138  initprop "event"
+03523: 138  endinit
+03524: 138  initelem_array 0
+03528: 138  endinit
+03529: 138  initprop "to"
+03534: 138  endinit
+03535: 138  initprop "params"
+03540: 138  endinit
+03541: 138  initelem_array 29
+03545: 141  newinit 1
+03550: 142  newarray 1
+03554: 142  int8 7
+03556: 142  initelem_array 0
+03560: 142  endinit
+03561: 142  initprop "from"
+03566: 142  newarray 1
+03570: 142  one
+03571: 142  initelem_array 0
+03575: 142  endinit
+03576: 142  initprop "to"
+03581: 142  string "enter"
+03586: 142  initprop "skill"
+03591: 142  zero
+03592: 142  initprop "type"
+03597: 143  newinit 1
+03602: 144  newinit 1
+03607: 145  one
+03608: 145  initprop "leaveIdx"
+03613: 146  int8 7
+03615: 146  initprop "backupIdx"
+03620: 146  endinit
+03621: 146  initprop "pre"
+03626: 146  endinit
+03627: 146  initprop "params"
+03632: 146  endinit
+03633: 146  initelem_array 30
+03637: 152  newinit 1
+03642: 152  newarray 1
+03646: 152  one
+03647: 152  initelem_array 0
+03651: 152  endinit
+03652: 152  initprop "from"
+03657: 152  newarray 1
+03661: 152  int8 4
+03663: 152  initelem_array 0
+03667: 152  endinit
+03668: 152  initprop "to"
+03673: 152  string "fanjian"
+03678: 152  initprop "skill"
+03683: 152  string "331004"
+03688: 152  initprop "skillId"
+03693: 152  zero
+03694: 152  initprop "type"
+03699: 152  newinit 1
+03704: 152  newarray 1
+03708: 152  newinit 1
+03713: 152  uint16 1000
+03716: 152  initprop "hpCur"
+03721: 152  uint16 20000
+03724: 152  initprop "hpMax"
+03729: 152  uint16 19000
+03732: 152  initprop "hp"
+03737: 152  endinit
+03738: 152  initelem_array 0
+03742: 152  endinit
+03743: 152  initprop "to"
+03748: 152  endinit
+03749: 152  initprop "params"
+03754: 152  endinit
+03755: 152  initelem_array 31
+03759: 155  newinit 1
+03764: 155  newarray 1
+03768: 155  int8 5
+03770: 155  initelem_array 0
+03774: 155  endinit
+03775: 155  initprop "from"
+03780: 155  newarray 1
+03784: 155  int8 2
+03786: 155  initelem_array 0
+03790: 155  endinit
+03791: 155  initprop "to"
+03796: 155  string "Attack_Claw"
+03801: 155  initprop "skill"
+03806: 155  zero
+03807: 155  initprop "type"
+03812: 155  newinit 1
+03817: 155  newarray 1
+03821: 155  newinit 1
+03826: 155  zero
+03827: 155  initprop "hpCur"
+03832: 155  uint16 20000
+03835: 155  initprop "hpMax"
+03840: 155  uint16 5000
+03843: 155  initprop "hp"
+03848: 155  newarray 1
+03852: 155  string "death"
+03857: 155  initelem_array 0
+03861: 155  endinit
+03862: 155  initprop "event"
+03867: 155  endinit
+03868: 155  initelem_array 0
+03872: 155  endinit
+03873: 155  initprop "to"
+03878: 155  endinit
+03879: 155  initprop "params"
+03884: 155  endinit
+03885: 155  initelem_array 32
+03889: 158  newinit 1
+03894: 159  newarray 1
+03898: 159  int8 8
+03900: 159  initelem_array 0
+03904: 159  endinit
+03905: 159  initprop "from"
+03910: 159  newarray 1
+03914: 159  int8 2
+03916: 159  initelem_array 0
+03920: 159  endinit
+03921: 159  initprop "to"
+03926: 159  string "enter"
+03931: 159  initprop "skill"
+03936: 159  zero
+03937: 159  initprop "type"
+03942: 160  newinit 1
+03947: 161  newinit 1
+03952: 162  int8 2
+03954: 162  initprop "leaveIdx"
+03959: 163  int8 8
+03961: 163  initprop "backupIdx"
+03966: 163  endinit
+03967: 163  initprop "pre"
+03972: 163  endinit
+03973: 163  initprop "params"
+03978: 163  endinit
+03979: 163  initelem_array 33
+03983: 168  newinit 1
+03988: 169  string "ShowStory"
+03993: 169  initprop "skill"
+03998: 169  string "98000406"
+04003: 169  initprop "skillId"
+04008: 169  one
+04009: 169  initprop "type"
+04014: 169  endinit
+04015: 169  initelem_array 34
+04019: 173  newinit 1
+04024: 173  newarray 1
+04028: 173  int8 2
+04030: 173  initelem_array 0
+04034: 173  endinit
+04035: 173  initprop "from"
+04040: 173  newarray 1
+04044: 173  int8 5
+04046: 173  initelem_array 0
+04050: 173  endinit
+04051: 173  initprop "to"
+04056: 173  string "wusheng"
+04061: 173  initprop "skill"
+04066: 173  string "321006"
+04071: 173  initprop "skillId"
+04076: 173  zero
+04077: 173  initprop "type"
+04082: 173  int8 2
+04084: 173  initprop "num"
+04089: 173  newinit 1
+04094: 173  newarray 1
+04098: 173  newinit 1
+04103: 173  zero
+04104: 173  initprop "hpCur"
+04109: 173  uint16 20000
+04112: 173  initprop "hpMax"
+04117: 173  uint16 24000
+04120: 173  initprop "hp"
+04125: 173  newarray 1
+04129: 173  string "death"
+04134: 173  initelem_array 0
+04138: 173  endinit
+04139: 173  initprop "event"
+04144: 173  endinit
+04145: 173  initelem_array 0
+04149: 173  endinit
+04150: 173  initprop "to"
+04155: 173  endinit
+04156: 173  initprop "params"
+04161: 173  endinit
+04162: 173  initelem_array 35
+04166: 176  newinit 1
+04171: 177  newarray 1
+04175: 177  int8 11
+04177: 177  initelem_array 0
+04181: 177  endinit
+04182: 177  initprop "from"
+04187: 177  newarray 1
+04191: 177  int8 5
+04193: 177  initelem_array 0
+04197: 177  endinit
+04198: 177  initprop "to"
+04203: 177  string "enter"
+04208: 177  initprop "skill"
+04213: 177  zero
+04214: 177  initprop "type"
+04219: 178  newinit 1
+04224: 179  newinit 1
+04229: 180  int8 5
+04231: 180  initprop "leaveIdx"
+04236: 181  int8 11
+04238: 181  initprop "backupIdx"
+04243: 181  endinit
+04244: 181  initprop "pre"
+04249: 181  endinit
+04250: 181  initprop "params"
+04255: 181  endinit
+04256: 181  initelem_array 36
+04260: 187  newinit 1
+04265: 187  string "Round"
+04270: 187  initprop "skill"
+04275: 187  newinit 1
+04280: 187  newinit 1
+04285: 187  int8 3
+04287: 187  initprop "roundCur"
+04292: 187  endinit
+04293: 187  initprop "pre"
+04298: 187  endinit
+04299: 187  initprop "params"
+04304: 187  endinit
+04305: 187  initelem_array 37
+04309: 190  newinit 1
+04314: 190  string "le_end"
+04319: 190  initprop "skill"
+04324: 190  newarray 1
+04328: 190  int8 3
+04330: 190  initelem_array 0
+04334: 190  endinit
+04335: 190  initprop "to"
+04340: 190  newinit 1
+04345: 190  endinit
+04346: 190  initprop "params"
+04351: 190  endinit
+04352: 190  initelem_array 38
+04356: 193  newinit 1
+04361: 193  newarray 1
+04365: 193  int8 3
+04367: 193  initelem_array 0
+04371: 193  endinit
+04372: 193  initprop "from"
+04377: 193  newarray 1
+04381: 193  zero
+04382: 193  initelem_array 0
+04386: 193  endinit
+04387: 193  initprop "to"
+04392: 193  string "Attack_Knife"
+04397: 193  initprop "skill"
+04402: 193  zero
+04403: 193  initprop "type"
+04408: 193  newinit 1
+04413: 193  newarray 1
+04417: 193  newinit 1
+04422: 193  uint16 15000
+04425: 193  initprop "hpCur"
+04430: 193  uint16 20000
+04433: 193  initprop "hpMax"
+04438: 193  uint16 5000
+04441: 193  initprop "hp"
+04446: 193  endinit
+04447: 193  initelem_array 0
+04451: 193  endinit
+04452: 193  initprop "to"
+04457: 193  endinit
+04458: 193  initprop "params"
+04463: 193  endinit
+04464: 193  initelem_array 39
+04468: 196  newinit 1
+04473: 197  string "ShowStory"
+04478: 197  initprop "skill"
+04483: 197  string "98000407"
+04488: 197  initprop "skillId"
+04493: 197  one
+04494: 197  initprop "type"
+04499: 197  endinit
+04500: 197  initelem_array 40
+04504: 202  newinit 1
+04509: 203  newarray 1
+04513: 203  zero
+04514: 203  initelem_array 0
+04518: 203  endinit
+04519: 203  initprop "from"
+04524: 203  newarray 6
+04528: 203  zero
+04529: 203  initelem_array 0
+04533: 203  one
+04534: 203  initelem_array 1
+04538: 203  int8 2
+04540: 203  initelem_array 2
+04544: 203  int8 3
+04546: 203  initelem_array 3
+04550: 203  int8 4
+04552: 203  initelem_array 4
+04556: 203  int8 5
+04558: 203  initelem_array 5
+04562: 203  endinit
+04563: 203  initprop "to"
+04568: 203  string "huoji_new"
+04573: 203  initprop "skill"
+04578: 203  string "321011"
+04583: 203  initprop "skillId"
+04588: 203  zero
+04589: 203  initprop "type"
+04594: 204  newinit 1
+04599: 205  newarray 6
+04603: 206  newinit 1
+04608: 206  uint16 4000
+04611: 206  initprop "hpCur"
+04616: 206  uint16 20000
+04619: 206  initprop "hpMax"
+04624: 206  uint16 11000
+04627: 206  initprop "hp"
+04632: 206  endinit
+04633: 206  initelem_array 0
+04637: 207  newinit 1
+04642: 207  uint16 9000
+04645: 207  initprop "hpCur"
+04650: 207  uint16 20000
+04653: 207  initprop "hpMax"
+04658: 207  uint16 11000
+04661: 207  initprop "hp"
+04666: 207  endinit
+04667: 207  initelem_array 1
+04671: 208  newinit 1
+04676: 208  uint16 19000
+04679: 208  initprop "hpCur"
+04684: 208  uint16 30000
+04687: 208  initprop "hpMax"
+04692: 208  uint16 11000
+04695: 208  initprop "hp"
+04700: 208  endinit
+04701: 208  initelem_array 2
+04705: 209  newinit 1
+04710: 209  uint16 2000
+04713: 209  initprop "hpCur"
+04718: 209  uint16 20000
+04721: 209  initprop "hpMax"
+04726: 209  uint16 4000
+04729: 209  initprop "hp"
+04734: 209  endinit
+04735: 209  initelem_array 3
+04739: 210  newinit 1
+04744: 210  zero
+04745: 210  initprop "hpCur"
+04750: 210  uint16 20000
+04753: 210  initprop "hpMax"
+04758: 210  uint16 4000
+04761: 210  initprop "hp"
+04766: 210  newarray 1
+04770: 210  string "death"
+04775: 210  initelem_array 0
+04779: 210  endinit
+04780: 210  initprop "event"
+04785: 210  endinit
+04786: 210  initelem_array 4
+04790: 211  newinit 1
+04795: 211  uint16 16000
+04798: 211  initprop "hpCur"
+04803: 211  uint16 20000
+04806: 211  initprop "hpMax"
+04811: 211  uint16 4000
+04814: 211  initprop "hp"
+04819: 211  endinit
+04820: 211  initelem_array 5
+04824: 211  endinit
+04825: 211  initprop "to"
+04830: 211  endinit
+04831: 211  initprop "params"
+04836: 211  endinit
+04837: 211  initelem_array 41
+04841: 218  newinit 1
+04846: 219  newarray 1
+04850: 219  int8 12
+04852: 219  initelem_array 0
+04856: 219  endinit
+04857: 219  initprop "from"
+04862: 219  newarray 1
+04866: 219  int8 4
+04868: 219  initelem_array 0
+04872: 219  endinit
+04873: 219  initprop "to"
+04878: 219  string "enter"
+04883: 219  initprop "skill"
+04888: 219  zero
+04889: 219  initprop "type"
+04894: 220  newinit 1
+04899: 221  newinit 1
+04904: 222  int8 4
+04906: 222  initprop "leaveIdx"
+04911: 223  int8 12
+04913: 223  initprop "backupIdx"
+04918: 223  endinit
+04919: 223  initprop "pre"
+04924: 223  endinit
+04925: 223  initprop "params"
+04930: 223  endinit
+04931: 223  initelem_array 42
+04935: 228  newinit 1
+04940: 229  string "ShowStory"
+04945: 229  initprop "skill"
+04950: 229  string "98000408"
+04955: 229  initprop "skillId"
+04960: 229  one
+04961: 229  initprop "type"
+04966: 229  endinit
+04967: 229  initelem_array 43
+04971: 233  newinit 1
+04976: 233  newarray 1
+04980: 233  int8 4
+04982: 233  initelem_array 0
+04986: 233  endinit
+04987: 233  initprop "from"
+04992: 233  newarray 1
+04996: 233  one
+04997: 233  initelem_array 0
+05001: 233  endinit
+05002: 233  initprop "to"
+05007: 233  string "qiaobian_before"
+05012: 233  initprop "skill"
+05017: 233  string "311017"
+05022: 233  initprop "skillId"
+05027: 233  zero
+05028: 233  initprop "type"
+05033: 233  newinit 1
+05038: 233  endinit
+05039: 233  initprop "params"
+05044: 233  endinit
+05045: 233  initelem_array 44
+05049: 236  newinit 1
+05054: 236  newarray 1
+05058: 236  int8 4
+05060: 236  initelem_array 0
+05064: 236  endinit
+05065: 236  initprop "from"
+05070: 236  newarray 1
+05074: 236  one
+05075: 236  initelem_array 0
+05079: 236  endinit
+05080: 236  initprop "to"
+05085: 236  string "Attack_Spear"
+05090: 236  initprop "skill"
+05095: 236  zero
+05096: 236  initprop "type"
+05101: 236  newinit 1
+05106: 236  newarray 1
+05110: 236  newinit 1
+05115: 236  zero
+05116: 236  initprop "hpCur"
+05121: 236  uint16 20000
+05124: 236  initprop "hpMax"
+05129: 236  uint16 8000
+05132: 236  initprop "hp"
+05137: 236  newarray 1
+05141: 236  string "death"
+05146: 236  initelem_array 0
+05150: 236  endinit
+05151: 236  initprop "event"
+05156: 236  endinit
+05157: 236  initelem_array 0
+05161: 236  endinit
+05162: 236  initprop "to"
+05167: 236  endinit
+05168: 236  initprop "params"
+05173: 236  endinit
+05174: 236  initelem_array 45
+05178: 239  newinit 1
+05183: 240  newarray 1
+05187: 240  int8 9
+05189: 240  initelem_array 0
+05193: 240  endinit
+05194: 240  initprop "from"
+05199: 240  newarray 1
+05203: 240  one
+05204: 240  initelem_array 0
+05208: 240  endinit
+05209: 240  initprop "to"
+05214: 240  string "enter"
+05219: 240  initprop "skill"
+05224: 240  zero
+05225: 240  initprop "type"
+05230: 241  newinit 1
+05235: 242  newinit 1
+05240: 243  one
+05241: 243  initprop "leaveIdx"
+05246: 244  int8 9
+05248: 244  initprop "backupIdx"
+05253: 244  endinit
+05254: 244  initprop "pre"
+05259: 244  endinit
+05260: 244  initprop "params"
+05265: 244  endinit
+05266: 244  initelem_array 46
+05270: 251  newinit 1
+05275: 251  newarray 1
+05279: 251  int8 4
+05281: 251  initelem_array 0
+05285: 251  endinit
+05286: 251  initprop "from"
+05291: 251  newarray 1
+05295: 251  one
+05296: 251  initelem_array 0
+05300: 251  endinit
+05301: 251  initprop "to"
+05306: 251  string "qiaobian_after"
+05311: 251  initprop "skill"
+05316: 251  string "311017"
+05321: 251  initprop "skillId"
+05326: 251  zero
+05327: 251  initprop "type"
+05332: 251  newinit 1
+05337: 251  endinit
+05338: 251  initprop "params"
+05343: 251  endinit
+05344: 251  initelem_array 47
+05348: 253  newinit 1
+05353: 254  string "ShowStory"
+05358: 254  initprop "skill"
+05363: 254  string "98000413"
+05368: 254  initprop "skillId"
+05373: 254  one
+05374: 254  initprop "type"
+05379: 254  endinit
+05380: 254  initelem_array 48
+05384: 263  newinit 1
+05389: 263  newarray 1
+05393: 263  int8 5
+05395: 263  initelem_array 0
+05399: 263  endinit
+05400: 263  initprop "from"
+05405: 263  newarray 1
+05409: 263  int8 2
+05411: 263  initelem_array 0
+05415: 263  endinit
+05416: 263  initprop "to"
+05421: 263  string "Attack_Sword"
+05426: 263  initprop "skill"
+05431: 263  zero
+05432: 263  initprop "type"
+05437: 263  newinit 1
+05442: 263  newarray 1
+05446: 263  newinit 1
+05451: 263  uint16 16000
+05454: 263  initprop "hpCur"
+05459: 263  uint16 30000
+05462: 263  initprop "hpMax"
+05467: 263  uint16 3000
+05470: 263  initprop "hp"
+05475: 263  endinit
+05476: 263  initelem_array 0
+05480: 263  endinit
+05481: 263  initprop "to"
+05486: 263  endinit
+05487: 263  initprop "params"
+05492: 263  endinit
+05493: 263  initelem_array 49
+05497: 265  newinit 1
+05502: 266  string "ShowStory"
+05507: 266  initprop "skill"
+05512: 266  string "98000409"
+05517: 266  initprop "skillId"
+05522: 266  one
+05523: 266  initprop "type"
+05528: 266  endinit
+05529: 266  initelem_array 50
+05533: 271  newinit 1
+05538: 271  newarray 1
+05542: 271  int8 2
+05544: 271  initelem_array 0
+05548: 271  endinit
+05549: 271  initprop "from"
+05554: 271  newarray 1
+05558: 271  int8 5
+05560: 271  initelem_array 0
+05564: 271  endinit
+05565: 271  initprop "to"
+05570: 271  string "Attack_Knife_0"
+05575: 271  initprop "skill"
+05580: 271  zero
+05581: 271  initprop "type"
+05586: 271  newinit 1
+05591: 271  newarray 1
+05595: 271  newinit 1
+05600: 271  uint16 16000
+05603: 271  initprop "hpCur"
+05608: 271  uint16 20000
+05611: 271  initprop "hpMax"
+05616: 271  string "jianxiong"
+05621: 271  initprop "event"
+05626: 271  endinit
+05627: 271  initelem_array 0
+05631: 271  endinit
+05632: 271  initprop "to"
+05637: 271  endinit
+05638: 271  initprop "params"
+05643: 271  endinit
+05644: 271  initelem_array 51
+05648: 272  newinit 1
+05653: 272  newarray 1
+05657: 272  int8 5
+05659: 272  initelem_array 0
+05663: 272  endinit
+05664: 272  initprop "from"
+05669: 272  newarray 1
+05673: 272  int8 2
+05675: 272  initelem_array 0
+05679: 272  endinit
+05680: 272  initprop "to"
+05685: 272  string "jianxiong_0"
+05690: 272  initprop "skill"
+05695: 272  string "311003"
+05700: 272  initprop "skillId"
+05705: 272  zero
+05706: 272  initprop "type"
+05711: 272  newinit 1
+05716: 272  newarray 0
+05720: 272  endinit
+05721: 272  initprop "to"
+05726: 272  endinit
+05727: 272  initprop "params"
+05732: 272  endinit
+05733: 272  initelem_array 52
+05737: 273  newinit 1
+05742: 273  newarray 1
+05746: 273  int8 2
+05748: 273  initelem_array 0
+05752: 273  endinit
+05753: 273  initprop "from"
+05758: 273  newarray 1
+05762: 273  int8 5
+05764: 273  initelem_array 0
+05768: 273  endinit
+05769: 273  initprop "to"
+05774: 273  string "Attack_Knife_1"
+05779: 273  initprop "skill"
+05784: 273  zero
+05785: 273  initprop "type"
+05790: 273  newinit 1
+05795: 273  newarray 1
+05799: 273  newinit 1
+05804: 273  uint16 10000
+05807: 273  initprop "hpCur"
+05812: 273  uint16 20000
+05815: 273  initprop "hpMax"
+05820: 273  uint16 6000
+05823: 273  initprop "hp"
+05828: 273  string "jianxiong"
+05833: 273  initprop "event"
+05838: 273  endinit
+05839: 273  initelem_array 0
+05843: 273  endinit
+05844: 273  initprop "to"
+05849: 273  endinit
+05850: 273  initprop "params"
+05855: 273  endinit
+05856: 273  initelem_array 53
+05860: 274  newinit 1
+05865: 274  newarray 1
+05869: 274  int8 5
+05871: 274  initelem_array 0
+05875: 274  endinit
+05876: 274  initprop "from"
+05881: 274  newarray 1
+05885: 274  int8 2
+05887: 274  initelem_array 0
+05891: 274  endinit
+05892: 274  initprop "to"
+05897: 274  string "jianxiong_1"
+05902: 274  initprop "skill"
+05907: 274  string "311003"
+05912: 274  initprop "skillId"
+05917: 274  zero
+05918: 274  initprop "type"
+05923: 274  newinit 1
+05928: 274  newarray 0
+05932: 274  endinit
+05933: 274  initprop "to"
+05938: 274  endinit
+05939: 274  initprop "params"
+05944: 274  endinit
+05945: 274  initelem_array 54
+05949: 275  newinit 1
+05954: 275  newarray 1
+05958: 275  int8 2
+05960: 275  initelem_array 0
+05964: 275  endinit
+05965: 275  initprop "from"
+05970: 275  newarray 1
+05974: 275  int8 5
+05976: 275  initelem_array 0
+05980: 275  endinit
+05981: 275  initprop "to"
+05986: 275  string "Attack_Knife_2"
+05991: 275  initprop "skill"
+05996: 275  zero
+05997: 275  initprop "type"
+06002: 275  newinit 1
+06007: 275  newarray 1
+06011: 275  newinit 1
+06016: 275  endinit
+06017: 275  initelem_array 0
+06021: 275  endinit
+06022: 275  initprop "to"
+06027: 275  endinit
+06028: 275  initprop "params"
+06033: 275  endinit
+06034: 275  initelem_array 55
+06038: 279  newinit 1
+06043: 279  string "Round"
+06048: 279  initprop "skill"
+06053: 279  newinit 1
+06058: 279  newinit 1
+06063: 279  int8 4
+06065: 279  initprop "roundCur"
+06070: 279  endinit
+06071: 279  initprop "pre"
+06076: 279  endinit
+06077: 279  initprop "params"
+06082: 279  endinit
+06083: 279  initelem_array 56
+06087: 284  newinit 1
+06092: 284  newarray 1
+06096: 284  int8 3
+06098: 284  initelem_array 0
+06102: 284  endinit
+06103: 284  initprop "from"
+06108: 284  newarray 1
+06112: 284  zero
+06113: 284  initelem_array 0
+06117: 284  endinit
+06118: 284  initprop "to"
+06123: 284  string "Attack_Knife"
+06128: 284  initprop "skill"
+06133: 284  zero
+06134: 284  initprop "type"
+06139: 284  newinit 1
+06144: 284  newarray 1
+06148: 284  newinit 1
+06153: 284  zero
+06154: 284  initprop "hpCur"
+06159: 284  uint16 20000
+06162: 284  initprop "hpMax"
+06167: 284  uint16 5000
+06170: 284  initprop "hp"
+06175: 284  newarray 1
+06179: 284  string "death"
+06184: 284  initelem_array 0
+06188: 284  endinit
+06189: 284  initprop "event"
+06194: 284  endinit
+06195: 284  initelem_array 0
+06199: 284  endinit
+06200: 284  initprop "to"
+06205: 284  endinit
+06206: 284  initprop "params"
+06211: 284  endinit
+06212: 284  initelem_array 57
+06216: 286  newinit 1
+06221: 287  string "ShowStory"
+06226: 287  initprop "skill"
+06231: 287  string "98000410"
+06236: 287  initprop "skillId"
+06241: 287  one
+06242: 287  initprop "type"
+06247: 287  endinit
+06248: 287  initelem_array 58
+06252: 291  newinit 1
+06257: 291  newarray 1
+06261: 291  int8 4
+06263: 291  initelem_array 0
+06267: 291  endinit
+06268: 291  initprop "from"
+06273: 291  newarray 1
+06277: 291  one
+06278: 291  initelem_array 0
+06282: 291  endinit
+06283: 291  initprop "to"
+06288: 291  string "Attack_Spear"
+06293: 291  initprop "skill"
+06298: 291  zero
+06299: 291  initprop "type"
+06304: 291  newinit 1
+06309: 291  newarray 1
+06313: 291  newinit 1
+06318: 291  uint16 16000
+06321: 291  initprop "hpCur"
+06326: 291  uint16 20000
+06329: 291  initprop "hpMax"
+06334: 291  uint16 5000
+06337: 291  initprop "hp"
+06342: 291  endinit
+06343: 291  initelem_array 0
+06347: 291  endinit
+06348: 291  initprop "to"
+06353: 291  endinit
+06354: 291  initprop "params"
+06359: 291  endinit
+06360: 291  initelem_array 59
+06364: 296  newinit 1
+06369: 296  newarray 1
+06373: 296  int8 5
+06375: 296  initelem_array 0
+06379: 296  endinit
+06380: 296  initprop "from"
+06385: 296  newarray 1
+06389: 296  int8 2
+06391: 296  initelem_array 0
+06395: 296  endinit
+06396: 296  initprop "to"
+06401: 296  string "Attack_Sword"
+06406: 296  initprop "skill"
+06411: 296  zero
+06412: 296  initprop "type"
+06417: 296  newinit 1
+06422: 296  newarray 1
+06426: 296  newinit 1
+06431: 296  uint16 11000
+06434: 296  initprop "hpCur"
+06439: 296  uint16 30000
+06442: 296  initprop "hpMax"
+06447: 296  uint16 5000
+06450: 296  initprop "hp"
+06455: 296  endinit
+06456: 296  initelem_array 0
+06460: 296  endinit
+06461: 296  initprop "to"
+06466: 296  endinit
+06467: 296  initprop "params"
+06472: 296  endinit
+06473: 296  initelem_array 60
+06477: 299  newinit 1
+06482: 299  newarray 1
+06486: 299  int8 2
+06488: 299  initelem_array 0
+06492: 299  endinit
+06493: 299  initprop "from"
+06498: 299  newarray 1
+06502: 299  int8 5
+06504: 299  initelem_array 0
+06508: 299  endinit
+06509: 299  initprop "to"
+06514: 299  string "Attack_Knife"
+06519: 299  initprop "skill"
+06524: 299  zero
+06525: 299  initprop "type"
+06530: 299  newinit 1
+06535: 299  newarray 1
+06539: 299  newinit 1
+06544: 299  uint16 9500
+06547: 299  initprop "hpCur"
+06552: 299  uint16 20000
+06555: 299  initprop "hpMax"
+06560: 299  uint16 500
+06563: 299  initprop "hp"
+06568: 299  endinit
+06569: 299  initelem_array 0
+06573: 299  endinit
+06574: 299  initprop "to"
+06579: 299  endinit
+06580: 299  initprop "params"
+06585: 299  endinit
+06586: 299  initelem_array 61
+06590: 303  newinit 1
+06595: 303  string "Round"
+06600: 303  initprop "skill"
+06605: 303  newinit 1
+06610: 303  newinit 1
+06615: 303  int8 5
+06617: 303  initprop "roundCur"
+06622: 303  endinit
+06623: 303  initprop "pre"
+06628: 303  endinit
+06629: 303  initprop "params"
+06634: 303  endinit
+06635: 303  initelem_array 62
+06639: 306  newinit 1
+06644: 306  string "le_end"
+06649: 306  initprop "skill"
+06654: 306  newarray 1
+06658: 306  one
+06659: 306  initelem_array 0
+06663: 306  endinit
+06664: 306  initprop "to"
+06669: 306  newinit 1
+06674: 306  endinit
+06675: 306  initprop "params"
+06680: 306  endinit
+06681: 306  initelem_array 63
+06685: 309  newinit 1
+06690: 309  newarray 1
+06694: 309  int8 3
+06696: 309  initelem_array 0
+06700: 309  endinit
+06701: 309  initprop "from"
+06706: 309  newarray 1
+06710: 309  one
+06711: 309  initelem_array 0
+06715: 309  endinit
+06716: 309  initprop "to"
+06721: 309  string "Attack_Knife"
+06726: 309  initprop "skill"
+06731: 309  zero
+06732: 309  initprop "type"
+06737: 309  newinit 1
+06742: 309  newarray 1
+06746: 309  newinit 1
+06751: 309  uint16 11000
+06754: 309  initprop "hpCur"
+06759: 309  uint16 20000
+06762: 309  initprop "hpMax"
+06767: 309  uint16 5000
+06770: 309  initprop "hp"
+06775: 309  endinit
+06776: 309  initelem_array 0
+06780: 309  endinit
+06781: 309  initprop "to"
+06786: 309  endinit
+06787: 309  initprop "params"
+06792: 309  endinit
+06793: 309  initelem_array 64
+06797: 312  newinit 1
+06802: 312  newarray 1
+06806: 312  int8 4
+06808: 312  initelem_array 0
+06812: 312  endinit
+06813: 312  initprop "from"
+06818: 312  newarray 1
+06822: 312  one
+06823: 312  initelem_array 0
+06827: 312  endinit
+06828: 312  initprop "to"
+06833: 312  string "Attack_Spear"
+06838: 312  initprop "skill"
+06843: 312  zero
+06844: 312  initprop "type"
+06849: 312  newinit 1
+06854: 312  newarray 1
+06858: 312  newinit 1
+06863: 312  uint16 7000
+06866: 312  initprop "hpCur"
+06871: 312  uint16 20000
+06874: 312  initprop "hpMax"
+06879: 312  uint16 4000
+06882: 312  initprop "hp"
+06887: 312  endinit
+06888: 312  initelem_array 0
+06892: 312  endinit
+06893: 312  initprop "to"
+06898: 312  endinit
+06899: 312  initprop "params"
+06904: 312  endinit
+06905: 312  initelem_array 65
+06909: 315  newinit 1
+06914: 315  newarray 1
+06918: 315  one
+06919: 315  initelem_array 0
+06923: 315  endinit
+06924: 315  initprop "from"
+06929: 315  newarray 1
+06933: 315  int8 4
+06935: 315  initelem_array 0
+06939: 315  endinit
+06940: 315  initprop "to"
+06945: 315  string "longdan"
+06950: 315  initprop "skill"
+06955: 315  string "321008"
+06960: 315  initprop "skillId"
+06965: 315  zero
+06966: 315  initprop "type"
+06971: 315  newinit 1
+06976: 315  newarray 0
+06980: 315  endinit
+06981: 315  initprop "to"
+06986: 315  endinit
+06987: 315  initprop "params"
+06992: 315  endinit
+06993: 315  initelem_array 66
+06997: 318  newinit 1
+07002: 318  newarray 1
+07006: 318  one
+07007: 318  initelem_array 0
+07011: 318  endinit
+07012: 318  initprop "from"
+07017: 318  newarray 1
+07021: 318  int8 4
+07023: 318  initelem_array 0
+07027: 318  endinit
+07028: 318  initprop "to"
+07033: 318  string "Attack_Spear"
+07038: 318  initprop "skill"
+07043: 318  zero
+07044: 318  initprop "type"
+07049: 318  newinit 1
+07054: 318  newarray 1
+07058: 318  newinit 1
+07063: 318  zero
+07064: 318  initprop "hpCur"
+07069: 318  uint16 20000
+07072: 318  initprop "hpMax"
+07077: 318  uint16 20000
+07080: 318  initprop "hp"
+07085: 318  newarray 1
+07089: 318  string "death"
+07094: 318  initelem_array 0
+07098: 318  endinit
+07099: 318  initprop "event"
+07104: 318  endinit
+07105: 318  initelem_array 0
+07109: 318  endinit
+07110: 318  initprop "to"
+07115: 318  endinit
+07116: 318  initprop "params"
+07121: 318  endinit
+07122: 318  initelem_array 67
+07126: 322  newinit 1
+07131: 323  newarray 1
+07135: 323  int8 13
+07137: 323  initelem_array 0
+07141: 323  endinit
+07142: 323  initprop "from"
+07147: 323  newarray 1
+07151: 323  int8 4
+07153: 323  initelem_array 0
+07157: 323  endinit
+07158: 323  initprop "to"
+07163: 323  string "enter"
+07168: 323  initprop "skill"
+07173: 323  zero
+07174: 323  initprop "type"
+07179: 324  newinit 1
+07184: 325  newinit 1
+07189: 326  int8 4
+07191: 326  initprop "leaveIdx"
+07196: 327  int8 13
+07198: 327  initprop "backupIdx"
+07203: 327  endinit
+07204: 327  initprop "pre"
+07209: 327  endinit
+07210: 327  initprop "params"
+07215: 327  endinit
+07216: 327  initelem_array 68
+07220: 336  newinit 1
+07225: 336  newarray 1
+07229: 336  int8 5
+07231: 336  initelem_array 0
+07235: 336  endinit
+07236: 336  initprop "from"
+07241: 336  newarray 1
+07245: 336  int8 2
+07247: 336  initelem_array 0
+07251: 336  endinit
+07252: 336  initprop "to"
+07257: 336  string "Attack_Sword"
+07262: 336  initprop "skill"
+07267: 336  zero
+07268: 336  initprop "type"
+07273: 337  newinit 1
+07278: 338  newarray 1
+07282: 338  newinit 1
+07287: 338  uint16 6000
+07290: 338  initprop "hpCur"
+07295: 338  uint16 30000
+07298: 338  initprop "hpMax"
+07303: 338  uint16 5000
+07306: 338  initprop "hp"
+07311: 338  endinit
+07312: 338  initelem_array 0
+07316: 338  endinit
+07317: 338  initprop "to"
+07322: 338  endinit
+07323: 338  initprop "params"
+07328: 338  endinit
+07329: 338  initelem_array 69
+07333: 345  newinit 1
+07338: 345  newarray 1
+07342: 345  int8 2
+07344: 345  initelem_array 0
+07348: 345  endinit
+07349: 345  initprop "from"
+07354: 345  newarray 1
+07358: 345  int8 5
+07360: 345  initelem_array 0
+07364: 345  endinit
+07365: 345  initprop "to"
+07370: 345  string "Attack_Knife_0"
+07375: 345  initprop "skill"
+07380: 345  zero
+07381: 345  initprop "type"
+07386: 345  newinit 1
+07391: 345  newarray 1
+07395: 345  newinit 1
+07400: 345  uint16 9500
+07403: 345  initprop "hpCur"
+07408: 345  uint16 20000
+07411: 345  initprop "hpMax"
+07416: 345  string "jianxiong"
+07421: 345  initprop "event"
+07426: 345  endinit
+07427: 345  initelem_array 0
+07431: 345  endinit
+07432: 345  initprop "to"
+07437: 345  endinit
+07438: 345  initprop "params"
+07443: 345  endinit
+07444: 345  initelem_array 70
+07448: 346  newinit 1
+07453: 346  newarray 1
+07457: 346  int8 5
+07459: 346  initelem_array 0
+07463: 346  endinit
+07464: 346  initprop "from"
+07469: 346  newarray 1
+07473: 346  int8 2
+07475: 346  initelem_array 0
+07479: 346  endinit
+07480: 346  initprop "to"
+07485: 346  string "jianxiong_0"
+07490: 346  initprop "skill"
+07495: 346  string "311003"
+07500: 346  initprop "skillId"
+07505: 346  zero
+07506: 346  initprop "type"
+07511: 346  newinit 1
+07516: 346  newarray 0
+07520: 346  endinit
+07521: 346  initprop "to"
+07526: 346  endinit
+07527: 346  initprop "params"
+07532: 346  endinit
+07533: 346  initelem_array 71
+07537: 347  newinit 1
+07542: 347  newarray 1
+07546: 347  int8 2
+07548: 347  initelem_array 0
+07552: 347  endinit
+07553: 347  initprop "from"
+07558: 347  newarray 1
+07562: 347  int8 5
+07564: 347  initelem_array 0
+07568: 347  endinit
+07569: 347  initprop "to"
+07574: 347  string "Attack_Knife_1"
+07579: 347  initprop "skill"
+07584: 347  zero
+07585: 347  initprop "type"
+07590: 347  newinit 1
+07595: 347  newarray 1
+07599: 347  newinit 1
+07604: 347  uint16 3500
+07607: 347  initprop "hpCur"
+07612: 347  uint16 20000
+07615: 347  initprop "hpMax"
+07620: 347  uint16 6000
+07623: 347  initprop "hp"
+07628: 347  string "jianxiong"
+07633: 347  initprop "event"
+07638: 347  endinit
+07639: 347  initelem_array 0
+07643: 347  endinit
+07644: 347  initprop "to"
+07649: 347  endinit
+07650: 347  initprop "params"
+07655: 347  endinit
+07656: 347  initelem_array 72
+07660: 348  newinit 1
+07665: 348  newarray 1
+07669: 348  int8 5
+07671: 348  initelem_array 0
+07675: 348  endinit
+07676: 348  initprop "from"
+07681: 348  newarray 1
+07685: 348  int8 2
+07687: 348  initelem_array 0
+07691: 348  endinit
+07692: 348  initprop "to"
+07697: 348  string "jianxiong_1"
+07702: 348  initprop "skill"
+07707: 348  string "311003"
+07712: 348  initprop "skillId"
+07717: 348  zero
+07718: 348  initprop "type"
+07723: 348  newinit 1
+07728: 348  newarray 0
+07732: 348  endinit
+07733: 348  initprop "to"
+07738: 348  endinit
+07739: 348  initprop "params"
+07744: 348  endinit
+07745: 348  initelem_array 73
+07749: 349  newinit 1
+07754: 349  newarray 1
+07758: 349  int8 2
+07760: 349  initelem_array 0
+07764: 349  endinit
+07765: 349  initprop "from"
+07770: 349  newarray 1
+07774: 349  int8 5
+07776: 349  initelem_array 0
+07780: 349  endinit
+07781: 349  initprop "to"
+07786: 349  string "Attack_Knife_2"
+07791: 349  initprop "skill"
+07796: 349  zero
+07797: 349  initprop "type"
+07802: 349  newinit 1
+07807: 349  newarray 1
+07811: 349  newinit 1
+07816: 349  endinit
+07817: 349  initelem_array 0
+07821: 349  endinit
+07822: 349  initprop "to"
+07827: 349  endinit
+07828: 349  initprop "params"
+07833: 349  endinit
+07834: 349  initelem_array 74
+07838: 354  newinit 1
+07843: 354  string "Round"
+07848: 354  initprop "skill"
+07853: 354  newinit 1
+07858: 354  newinit 1
+07863: 354  int8 6
+07865: 354  initprop "roundCur"
+07870: 354  endinit
+07871: 354  initprop "pre"
+07876: 354  endinit
+07877: 354  initprop "params"
+07882: 354  endinit
+07883: 354  initelem_array 75
+07887: 357  newinit 1
+07892: 357  newarray 1
+07896: 357  int8 3
+07898: 357  initelem_array 0
+07902: 357  endinit
+07903: 357  initprop "from"
+07908: 357  newarray 1
+07912: 357  one
+07913: 357  initelem_array 0
+07917: 357  endinit
+07918: 357  initprop "to"
+07923: 357  string "Attack_Knife"
+07928: 357  initprop "skill"
+07933: 357  zero
+07934: 357  initprop "type"
+07939: 357  newinit 1
+07944: 357  newarray 1
+07948: 357  newinit 1
+07953: 357  uint16 2000
+07956: 357  initprop "hpCur"
+07961: 357  uint16 20000
+07964: 357  initprop "hpMax"
+07969: 357  uint16 5000
+07972: 357  initprop "hp"
+07977: 357  endinit
+07978: 357  initelem_array 0
+07982: 357  endinit
+07983: 357  initprop "to"
+07988: 357  endinit
+07989: 357  initprop "params"
+07994: 357  endinit
+07995: 357  initelem_array 76
+07999: 360  newinit 1
+08004: 360  newarray 1
+08008: 360  int8 4
+08010: 360  initelem_array 0
+08014: 360  endinit
+08015: 360  initprop "from"
+08020: 360  newarray 2
+08024: 360  one
+08025: 360  initelem_array 0
+08029: 360  int8 2
+08031: 360  initelem_array 1
+08035: 360  endinit
+08036: 360  initprop "to"
+08041: 360  string "tuxi"
+08046: 360  initprop "skill"
+08051: 360  string "311006"
+08056: 360  initprop "skillId"
+08061: 360  zero
+08062: 360  initprop "type"
+08067: 360  newinit 1
+08072: 360  endinit
+08073: 360  initprop "params"
+08078: 360  endinit
+08079: 360  initelem_array 77
+08083: 363  newinit 1
+08088: 363  newarray 1
+08092: 363  int8 4
+08094: 363  initelem_array 0
+08098: 363  endinit
+08099: 363  initprop "from"
+08104: 363  newarray 1
+08108: 363  one
+08109: 363  initelem_array 0
+08113: 363  endinit
+08114: 363  initprop "to"
+08119: 363  string "Attack_Spear"
+08124: 363  initprop "skill"
+08129: 363  zero
+08130: 363  initprop "type"
+08135: 363  newinit 1
+08140: 363  newarray 1
+08144: 363  newinit 1
+08149: 363  zero
+08150: 363  initprop "hpCur"
+08155: 363  uint16 20000
+08158: 363  initprop "hpMax"
+08163: 363  uint16 15000
+08166: 363  initprop "hp"
+08171: 363  newarray 1
+08175: 363  string "death"
+08180: 363  initelem_array 0
+08184: 363  endinit
+08185: 363  initprop "event"
+08190: 363  endinit
+08191: 363  initelem_array 0
+08195: 363  endinit
+08196: 363  initprop "to"
+08201: 363  endinit
+08202: 363  initprop "params"
+08207: 363  endinit
+08208: 363  initelem_array 78
+08212: 366  newinit 1
+08217: 366  newarray 1
+08221: 366  int8 5
+08223: 366  initelem_array 0
+08227: 366  endinit
+08228: 366  initprop "from"
+08233: 366  newarray 1
+08237: 366  int8 2
+08239: 366  initelem_array 0
+08243: 366  endinit
+08244: 366  initprop "to"
+08249: 366  string "Attack_Sword"
+08254: 366  initprop "skill"
+08259: 366  zero
+08260: 366  initprop "type"
+08265: 367  newinit 1
+08270: 368  newarray 1
+08274: 368  newinit 1
+08279: 368  uint16 1000
+08282: 368  initprop "hpCur"
+08287: 368  uint16 30000
+08290: 368  initprop "hpMax"
+08295: 368  uint16 5000
+08298: 368  initprop "hp"
+08303: 368  endinit
+08304: 368  initelem_array 0
+08308: 368  endinit
+08309: 368  initprop "to"
+08314: 368  endinit
+08315: 368  initprop "params"
+08320: 368  endinit
+08321: 368  initelem_array 79
+08325: 374  newinit 1
+08330: 374  newarray 1
+08334: 374  int8 2
+08336: 374  initelem_array 0
+08340: 374  endinit
+08341: 374  initprop "from"
+08346: 374  newarray 1
+08350: 374  int8 5
+08352: 374  initelem_array 0
+08356: 374  endinit
+08357: 374  initprop "to"
+08362: 374  string "Attack_Knife"
+08367: 374  initprop "skill"
+08372: 374  zero
+08373: 374  initprop "type"
+08378: 374  newinit 1
+08383: 374  newarray 1
+08387: 374  newinit 1
+08392: 374  uint16 3400
+08395: 374  initprop "hpCur"
+08400: 374  uint16 20000
+08403: 374  initprop "hpMax"
+08408: 374  int8 100
+08410: 374  initprop "hp"
+08415: 374  endinit
+08416: 374  initelem_array 0
+08420: 374  endinit
+08421: 374  initprop "to"
+08426: 374  endinit
+08427: 374  initprop "params"
+08432: 374  endinit
+08433: 374  initelem_array 80
+08437: 379  newinit 1
+08442: 379  string "Round"
+08447: 379  initprop "skill"
+08452: 379  newinit 1
+08457: 379  newinit 1
+08462: 379  int8 7
+08464: 379  initprop "roundCur"
+08469: 379  endinit
+08470: 379  initprop "pre"
+08475: 379  endinit
+08476: 379  initprop "params"
+08481: 379  endinit
+08482: 379  initelem_array 81
+08486: 382  newinit 1
+08491: 382  newarray 1
+08495: 382  int8 3
+08497: 382  initelem_array 0
+08501: 382  endinit
+08502: 382  initprop "from"
+08507: 382  newarray 1
+08511: 382  int8 2
+08513: 382  initelem_array 0
+08517: 382  endinit
+08518: 382  initprop "to"
+08523: 382  string "Attack_Knife"
+08528: 382  initprop "skill"
+08533: 382  zero
+08534: 382  initprop "type"
+08539: 383  newinit 1
+08544: 384  newarray 1
+08548: 384  newinit 1
+08553: 384  zero
+08554: 384  initprop "hpCur"
+08559: 384  uint16 30000
+08562: 384  initprop "hpMax"
+08567: 384  uint16 5500
+08570: 384  initprop "hp"
+08575: 384  newarray 1
+08579: 384  string "death"
+08584: 384  initelem_array 0
+08588: 384  endinit
+08589: 384  initprop "event"
+08594: 384  endinit
+08595: 384  initelem_array 0
+08599: 384  endinit
+08600: 384  initprop "to"
+08605: 386  newinit 1
+08610: 387  newarray 1
+08614: 387  string "finish"
+08619: 387  initelem_array 0
+08623: 387  endinit
+08624: 387  initprop "event"
+08629: 387  endinit
+08630: 387  initprop "once"
+08635: 387  endinit
+08636: 387  initprop "params"
+08641: 387  endinit
+08642: 387  initelem_array 82
+08646: 387  endinit
+08647: 387  initprop "rounds"
+08652: 387  endinit
+08653: 387  setprop "NewPlayerFight"
+08658: 387  popv
+08659: 394  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Cfg/Fight/NewPlayerFight.js:1 ---

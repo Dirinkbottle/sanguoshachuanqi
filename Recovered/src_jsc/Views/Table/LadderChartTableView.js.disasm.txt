@@ -1,0 +1,271 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/LadderChartTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+;; FUNCTION-MAP kind=lambda offset=68 object[1]
+;; FUNCTION-MAP kind=lambda offset=78 object[2]
+;; FUNCTION-MAP kind=lambda offset=88 object[3]
+;; FUNCTION-MAP kind=lambda offset=98 object[4]
+;; FUNCTION-MAP kind=lambda offset=139 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  getprop "Table"
+00015:   6  name "xs"
+00020:   6  getprop "Views"
+00025:   6  getprop "Table"
+00030:   6  getprop "BaseTableView"
+00035:   6  dup
+00036:   6  callprop "extend"
+00041:   6  swap
+00042:   6  notearg
+00043:   6  newinit 1
+00048:   8  string "LadderChartTableView"
+00053:   8  initprop "name"
+00058:  10  lambda (function () {
+    [sourceless code]
+})
+00063:  10  initprop "init"
+00068:  23  lambda (function () {
+    [sourceless code]
+})
+00073:  23  initprop "refreshData"
+00078:  28  lambda (function () {
+    [sourceless code]
+})
+00083:  28  initprop "createCell"
+00088:  33  lambda (function () {
+    [sourceless code]
+})
+00093:  33  initprop "makeViewSize"
+00098:  38  lambda (function () {
+    [sourceless code]
+})
+00103:  38  initprop "makeCellSize"
+00108:  38  endinit
+00109:  38  notearg
+00110:  38  call 1
+00113:  38  setprop "LadderChartTableView"
+00118:  38  popv
+00119:  44  name "xs"
+00124:  44  getprop "Views"
+00129:  44  getprop "Table"
+00134:  44  getprop "LadderChartTableView"
+00139:  44  lambda (function () {
+    [sourceless code]
+})
+00144:  44  setprop "create"
+00149:  44  popv
+00150:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  15  this
+00021:  15  dup
+00022:  15  callprop "setDirection"
+00027:  15  swap
+00028:  15  notearg
+00029:  15  name "cc"
+00034:  15  getprop "SCROLLVIEW_DIRECTION_HORIZONTAL"
+00039:  15  notearg
+00040:  15  call 1
+00043:  15  pop
+00044:  16  this
+00045:  16  dup
+00046:  16  callprop "setVerticalFillOrder"
+00051:  16  swap
+00052:  16  notearg
+00053:  16  name "cc"
+00058:  16  getprop "TABLEVIEW_FILL_TOPDOWN"
+00063:  16  notearg
+00064:  16  call 1
+00067:  16  pop
+00068:  18  true
+00069:  18  return
+00070:  18  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:10 ---
+;; function object[1] refreshData
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:23 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  this
+00001:  24  name "xs"
+00006:  24  getprop "Profile"
+00011:  24  getprop "GameData"
+00016:  24  getprop "Mgr"
+00021:  24  dup
+00022:  24  callprop "getInstance"
+00027:  24  swap
+00028:  24  notearg
+00029:  24  call 0
+00032:  24  getprop "LadderInfo"
+00037:  24  dup
+00038:  24  callprop "getLadderInfo"
+00043:  24  swap
+00044:  24  notearg
+00045:  24  call 0
+00048:  24  dup
+00049:  24  callprop "getLadderTop"
+00054:  24  swap
+00055:  24  notearg
+00056:  24  call 0
+00059:  24  setprop "arrayModel"
+00064:  24  pop
+00065:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:23 ---
+;; function object[2] createCell
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  name "xs"
+00005:  29  getprop "Views"
+00010:  29  getprop "LadderChartTableViewCell"
+00015:  29  dup
+00016:  29  callprop "create"
+00021:  29  swap
+00022:  29  notearg
+00023:  29  this
+00024:  29  getprop "arrayModel"
+00029:  29  getarg 0
+00032:  29  getelem
+00033:  29  notearg
+00034:  29  call 1
+00037:  29  return
+00038:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:28 ---
+;; function object[3] makeViewSize
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] visibelSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:33 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  name "cc"
+00005:  34  getprop "Director"
+00010:  34  dup
+00011:  34  callprop "getInstance"
+00016:  34  swap
+00017:  34  notearg
+00018:  34  call 0
+00021:  34  dup
+00022:  34  callprop "getVisibleSize"
+00027:  34  swap
+00028:  34  notearg
+00029:  34  call 0
+00032:  34  setlocal 0
+00035:  34  pop
+00036:  35  name "cc"
+00041:  35  dup
+00042:  35  callprop "size"
+00047:  35  swap
+00048:  35  notearg
+00049:  35  getlocal 0
+00052:  35  getprop "width"
+00057:  35  notearg
+00058:  35  uint16 520
+00061:  35  notearg
+00062:  35  call 2
+00065:  35  return
+00066:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:33 ---
+;; function object[4] makeCellSize
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:38 ---
+loc   line  op
+----- ----  --
+main:
+00000:  39  name "cc"
+00005:  39  dup
+00006:  39  callprop "size"
+00011:  39  swap
+00012:  39  notearg
+00013:  39  uint16 260
+00016:  39  notearg
+00017:  39  uint16 517
+00020:  39  notearg
+00021:  39  call 2
+00024:  39  return
+00025:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:38 ---
+;; function object[5] create
+;; function metadata object[5] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  name "xs"
+00005:  45  getprop "Views"
+00010:  45  getprop "Table"
+00015:  45  getprop "LadderChartTableView"
+00020:  45  undefined
+00021:  45  notearg
+00022:  45  new 0
+00025:  45  setlocal 0
+00028:  45  pop
+00029:  46  getlocal 0
+00032:  46  and 52 (+20)
+00037:  46  pop
+00038:  46  getlocal 0
+00041:  46  dup
+00042:  46  callprop "init"
+00047:  46  swap
+00048:  46  notearg
+00049:  46  call 0
+00052:  46  ifeq 61 (+9)
+00057:  47  getlocal 0
+00060:  47  return
+00061:  50  name "xs"
+00066:  50  dup
+00067:  50  callprop "assert"
+00072:  50  swap
+00073:  50  notearg
+00074:  50  false
+00075:  50  notearg
+00076:  50  string "xs.Views.Table.LadderChartTableView.create fail"
+00081:  50  notearg
+00082:  50  getlocal 0
+00085:  50  notearg
+00086:  50  call 3
+00089:  50  pop
+00090:  51  null
+00091:  51  return
+00092:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/LadderChartTableView.js:44 ---

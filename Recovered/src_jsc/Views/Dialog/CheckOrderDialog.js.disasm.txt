@@ -1,0 +1,1286 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Dialog/CheckOrderDialog.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=93 object[5]
+;; FUNCTION-MAP kind=lambda offset=103 object[6]
+;; FUNCTION-MAP kind=lambda offset=113 object[7]
+;; FUNCTION-MAP kind=lambda offset=123 object[8]
+;; FUNCTION-MAP kind=lambda offset=133 object[9]
+;; FUNCTION-MAP kind=lambda offset=143 object[10]
+;; FUNCTION-MAP kind=lambda offset=153 object[11]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Views"
+00010:   8  getprop "Dialog"
+00015:   8  name "xs"
+00020:   8  getprop "SpecificDialog"
+00025:   8  getprop "base"
+00030:   8  dup
+00031:   8  callprop "extend"
+00036:   8  swap
+00037:   8  notearg
+00038:   8  newinit 1
+00043:   9  lambda (function () {
+    [sourceless code]
+})
+00048:   9  initprop "init"
+00053:  74  lambda (function () {
+    [sourceless code]
+})
+00058:  74  initprop "onExit"
+00063:  79  lambda (function () {
+    [sourceless code]
+})
+00068:  79  initprop "countDown"
+00073:  84  lambda (function () {
+    [sourceless code]
+})
+00078:  84  initprop "requestCheckTransactionReceipt_Google"
+00083:  94  lambda (function () {
+    [sourceless code]
+})
+00088:  94  initprop "requestCheckTransactionReceipt"
+00093: 107  lambda (function () {
+    [sourceless code]
+})
+00098: 107  initprop "onResponse_CheckTransactionReceipt"
+00103: 134  lambda (function () {
+    [sourceless code]
+})
+00108: 134  initprop "onResponse_CheckTransactionReceipt_Err"
+00113: 142  lambda (function () {
+    [sourceless code]
+})
+00118: 142  initprop "onResponse_Notify"
+00123: 150  lambda (function () {
+    [sourceless code]
+})
+00128: 150  initprop "onResponse_Status"
+00133: 163  lambda (function () {
+    [sourceless code]
+})
+00138: 163  initprop "pay_Success"
+00143: 190  lambda (function () {
+    [sourceless code]
+})
+00148: 190  initprop "onResponse_Status_Err"
+00153: 200  lambda (function () {
+    [sourceless code]
+})
+00158: 200  initprop "setBaseTouchPriority"
+00163: 200  endinit
+00164: 200  notearg
+00165: 200  call 1
+00168: 200  setprop "CheckOrderDialog"
+00173: 200  popv
+00174: 206  name "xs"
+00179: 206  getprop "Views"
+00184: 206  getprop "Mgr"
+00189: 206  dup
+00190: 206  callprop "registerDialog"
+00195: 206  swap
+00196: 206  notearg
+00197: 206  string "CheckOrderDialog"
+00202: 206  notearg
+00203: 206  newinit 1
+00208: 207  name "xs"
+00213: 207  getprop "Views"
+00218: 207  getprop "Dialog"
+00223: 207  getprop "CheckOrderDialog"
+00228: 207  initprop "class"
+00233: 208  name "xs"
+00238: 208  getprop "Constant_DlgStyleType_Small"
+00243: 208  initprop "styleType"
+00248: 208  endinit
+00249: 208  notearg
+00250: 208  call 2
+00253: 208  popv
+00254: 209  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] params
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=174 object[0]
+;; FUNCTION-MAP kind=lambda offset=358 object[1]
+;; FUNCTION-MAP kind=lambda offset=377 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  this
+00001:  10  dup
+00002:  10  callprop "_super"
+00007:  10  swap
+00008:  10  notearg
+00009:  10  call 0
+00012:  10  not
+00013:  10  ifeq 20 (+7)
+00018:  11  false
+00019:  11  return
+00020:  14  this
+00021:  14  getarg 0
+00024:  14  getprop "channelId"
+00029:  14  setprop "m_channelId"
+00034:  14  pop
+00035:  15  this
+00036:  15  null
+00037:  15  setprop "transactionId"
+00042:  15  pop
+00043:  16  this
+00044:  16  null
+00045:  16  setprop "transactionReceipt"
+00050:  16  pop
+00051:  18  this
+00052:  18  name "xs"
+00057:  18  getprop "Views"
+00062:  18  getprop "Dialog"
+00067:  18  dup
+00068:  18  callprop "createOneButtonDialog"
+00073:  18  swap
+00074:  18  notearg
+00075:  18  name "xs"
+00080:  18  getprop "Tools"
+00085:  18  getprop "String"
+00090:  18  dup
+00091:  18  callprop "createString"
+00096:  18  swap
+00097:  18  notearg
+00098:  18  string "auto_name_337"
+00103:  18  notearg
+00104:  18  call 1
+00107:  18  notearg
+00108:  18  name "xs"
+00113:  18  getprop "Tools"
+00118:  18  getprop "String"
+00123:  18  dup
+00124:  18  callprop "createString"
+00129:  18  swap
+00130:  18  notearg
+00131:  18  string "auto_name_338"
+00136:  18  notearg
+00137:  18  call 1
+00140:  18  notearg
+00141:  18  name "xs"
+00146:  18  getprop "Tools"
+00151:  18  getprop "String"
+00156:  18  dup
+00157:  18  callprop "createString"
+00162:  18  swap
+00163:  18  notearg
+00164:  18  string "auto_name_76"
+00169:  18  notearg
+00170:  18  call 1
+00173:  18  notearg
+00174:  19  lambda (function () {
+    [sourceless code]
+})
+00179:  19  notearg
+00180:  19  call 4
+00183:  19  setprop "_dialog"
+00188:  19  pop
+00189:  23  this
+00190:  23  getprop "_dialog"
+00195:  23  dup
+00196:  23  callprop "getRightButton"
+00201:  23  swap
+00202:  23  notearg
+00203:  23  call 0
+00206:  23  dup
+00207:  23  callprop "setEnabled"
+00212:  23  swap
+00213:  23  notearg
+00214:  23  false
+00215:  23  notearg
+00216:  23  call 1
+00219:  23  pop
+00220:  24  name "xs"
+00225:  24  getprop "Utils"
+00230:  24  getprop "Node"
+00235:  24  dup
+00236:  24  callprop "attachNodes"
+00241:  24  swap
+00242:  24  notearg
+00243:  24  this
+00244:  24  notearg
+00245:  24  this
+00246:  24  getprop "_dialog"
+00251:  24  notearg
+00252:  24  call 2
+00255:  24  pop
+00256:  27  this
+00257:  27  name "xs"
+00262:  27  getprop "Views"
+00267:  27  getprop "Dialog"
+00272:  27  dup
+00273:  27  callprop "createTwoButtonDialog"
+00278:  27  swap
+00279:  27  notearg
+00280:  27  string "isRetryTitle"
+00285:  27  notearg
+00286:  27  string "isRetryContent"
+00291:  27  notearg
+00292:  27  name "xs"
+00297:  27  getprop "Tools"
+00302:  27  getprop "String"
+00307:  27  dup
+00308:  27  callprop "createString"
+00313:  27  swap
+00314:  27  notearg
+00315:  27  string "auto_name_146"
+00320:  27  notearg
+00321:  27  call 1
+00324:  27  notearg
+00325:  27  name "xs"
+00330:  27  getprop "Tools"
+00335:  27  getprop "String"
+00340:  27  dup
+00341:  27  callprop "createString"
+00346:  27  swap
+00347:  27  notearg
+00348:  27  string "auto_name_339"
+00353:  27  notearg
+00354:  27  call 1
+00357:  27  notearg
+00358:  28  lambda (function () {
+    [sourceless code]
+})
+00363:  28  dup
+00364:  28  callprop "bind"
+00369:  28  swap
+00370:  28  notearg
+00371:  30  this
+00372:  30  notearg
+00373:  30  call 1
+00376:  30  notearg
+00377:  31  lambda (function () {
+    [sourceless code]
+})
+00382:  31  dup
+00383:  31  callprop "bind"
+00388:  31  swap
+00389:  31  notearg
+00390:  34  this
+00391:  34  notearg
+00392:  34  call 1
+00395:  34  notearg
+00396:  34  call 6
+00399:  34  setprop "_dialog2"
+00404:  34  pop
+00405:  36  this
+00406:  36  getprop "_dialog2"
+00411:  36  dup
+00412:  36  callprop "setVisible"
+00417:  36  swap
+00418:  36  notearg
+00419:  36  false
+00420:  36  notearg
+00421:  36  call 1
+00424:  36  pop
+00425:  37  name "xs"
+00430:  37  getprop "Utils"
+00435:  37  getprop "Node"
+00440:  37  dup
+00441:  37  callprop "attachNodes"
+00446:  37  swap
+00447:  37  notearg
+00448:  37  this
+00449:  37  notearg
+00450:  37  this
+00451:  37  getprop "_dialog2"
+00456:  37  notearg
+00457:  37  call 2
+00460:  37  pop
+00461:  42  name "xsc"
+00466:  42  getprop "Tools"
+00471:  42  getprop "PaySys"
+00476:  42  dup
+00477:  42  callprop "isUsingAppStore"
+00482:  42  swap
+00483:  42  notearg
+00484:  42  call 0
+00487:  42  ifeq 540 (+53)
+00492:  43  this
+00493:  43  getarg 0
+00496:  43  getprop "transactionId"
+00501:  43  setprop "transactionId"
+00506:  43  pop
+00507:  44  this
+00508:  44  getarg 0
+00511:  44  getprop "transactionReceipt"
+00516:  44  setprop "transactionReceipt"
+00521:  44  pop
+00522:  47  this
+00523:  47  dup
+00524:  47  callprop "requestCheckTransactionReceipt"
+00529:  47  swap
+00530:  47  notearg
+00531:  47  call 0
+00534:  47  pop
+00535:  47  goto 711 (+176)
+00540:  50  this
+00541:  50  name "xs"
+00546:  50  getprop "Scene"
+00551:  50  getprop "Mgr"
+00556:  50  dup
+00557:  50  callprop "loadStatusAndClear"
+00562:  50  swap
+00563:  50  notearg
+00564:  50  string "CurrentOrder"
+00569:  50  notearg
+00570:  50  call 1
+00573:  50  setprop "order"
+00578:  50  pop
+00579:  53  name "xs"
+00584:  53  getprop "director"
+00589:  53  dup
+00590:  53  callprop "getScheduler"
+00595:  53  swap
+00596:  53  notearg
+00597:  53  call 0
+00600:  53  dup
+00601:  53  callprop "unscheduleCallbackForTarget"
+00606:  53  swap
+00607:  53  notearg
+00608:  53  this
+00609:  53  notearg
+00610:  53  this
+00611:  53  getprop "countDown"
+00616:  53  notearg
+00617:  53  call 2
+00620:  53  pop
+00621:  54  name "xs"
+00626:  54  getprop "director"
+00631:  54  dup
+00632:  54  callprop "getScheduler"
+00637:  54  swap
+00638:  54  notearg
+00639:  54  call 0
+00642:  54  dup
+00643:  54  callprop "scheduleCallbackForTarget"
+00648:  54  swap
+00649:  54  notearg
+00650:  54  this
+00651:  54  notearg
+00652:  54  this
+00653:  54  getprop "countDown"
+00658:  54  notearg
+00659:  54  one
+00660:  54  notearg
+00661:  54  name "cc"
+00666:  54  getprop "REPEAT_FOREVER"
+00671:  54  notearg
+00672:  54  call 4
+00675:  54  pop
+00676:  55  this
+00677:  55  int8 60
+00679:  55  setprop "coolDownTime"
+00684:  55  pop
+00685:  56  this
+00686:  56  dup
+00687:  56  callprop "countDown"
+00692:  56  swap
+00693:  56  notearg
+00694:  56  call 0
+00697:  56  pop
+00698:  66  this
+00699:  66  dup
+00700:  66  callprop "onResponse_Notify"
+00705:  66  swap
+00706:  66  notearg
+00707:  66  call 0
+00710:  66  pop
+00711:  71  true
+00712:  71  return
+00713:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:9 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:19 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  name "xs"
+00005:  20  getprop "Views"
+00010:  20  getprop "Mgr"
+00015:  20  dup
+00016:  20  callprop "hideDialog"
+00021:  20  swap
+00022:  20  notearg
+00023:  20  call 0
+00026:  20  pop
+00027:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:19 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  name "xs"
+00005:  29  getprop "Views"
+00010:  29  getprop "Mgr"
+00015:  29  dup
+00016:  29  callprop "hideDialog"
+00021:  29  swap
+00022:  29  notearg
+00023:  29  call 0
+00026:  29  pop
+00027:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:28 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:31 ---
+loc   line  op
+----- ----  --
+main:
+00000:  32  this
+00001:  32  getprop "_dialog2"
+00006:  32  dup
+00007:  32  callprop "setVisible"
+00012:  32  swap
+00013:  32  notearg
+00014:  32  false
+00015:  32  notearg
+00016:  32  call 1
+00019:  32  pop
+00020:  33  this
+00021:  33  dup
+00022:  33  callprop "requestCheckTransactionReceipt"
+00027:  33  swap
+00028:  33  notearg
+00029:  33  call 0
+00032:  33  pop
+00033:  33  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:31 ---
+;; function object[1] onExit
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:74 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  this
+00001:  75  dup
+00002:  75  callprop "_super"
+00007:  75  swap
+00008:  75  notearg
+00009:  75  call 0
+00012:  75  pop
+00013:  76  name "xs"
+00018:  76  getprop "director"
+00023:  76  dup
+00024:  76  callprop "getScheduler"
+00029:  76  swap
+00030:  76  notearg
+00031:  76  call 0
+00034:  76  dup
+00035:  76  callprop "unscheduleCallbackForTarget"
+00040:  76  swap
+00041:  76  notearg
+00042:  76  this
+00043:  76  notearg
+00044:  76  this
+00045:  76  getprop "countDown"
+00050:  76  notearg
+00051:  76  call 2
+00054:  76  pop
+00055:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:74 ---
+;; function object[2] countDown
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:79 ---
+loc   line  op
+----- ----  --
+main:
+00000:  80  this
+00001:  80  getprop "coolDownTime"
+00006:  80  zero
+00007:  80  gt
+00008:  80  ifeq 40 (+32)
+00013:  81  this
+00014:  81  propdec "coolDownTime"
+00020:  81  dup
+00021:  81  getprop "coolDownTime"
+00026:  81  pos
+00027:  81  dup
+00028:  81  one
+00029:  81  sub
+00030:  81  pick 2
+00032:  81  swap
+00033:  81  setprop "coolDownTime"
+00038:  81  pop
+00039:  81  pop
+00040:  82  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:79 ---
+;; function object[3] requestCheckTransactionReceipt_Google
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:84 ---
+loc   line  op
+----- ----  --
+main:
+00000:  85  name "xs"
+00005:  85  getprop "Tools"
+00010:  85  getprop "Net"
+00015:  85  dup
+00016:  85  callprop "requestCheckTransactionReceipt"
+00021:  85  swap
+00022:  85  notearg
+00023:  85  newinit 1
+00028:  86  this
+00029:  86  getprop "_order"
+00034:  86  getprop "user_id"
+00039:  86  initprop "user_id"
+00044:  87  string "1003"
+00049:  87  initprop "pay_type"
+00054:  88  this
+00055:  88  getprop "_order"
+00060:  88  getprop "pk_id"
+00065:  88  initprop "receipt_data"
+00070:  88  endinit
+00071:  88  notearg
+00072:  90  this
+00073:  90  getprop "onResponse_CheckTransactionReceipt"
+00078:  90  notearg
+00079:  91  this
+00080:  91  getprop "onResponse_CheckTransactionReceipt_Err"
+00085:  91  notearg
+00086:  92  this
+00087:  92  notearg
+00088:  92  call 4
+00091:  92  pop
+00092:  92  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:84 ---
+;; function object[4] requestCheckTransactionReceipt
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:94 ---
+loc   line  op
+----- ----  --
+main:
+00000:  95  name "xs"
+00005:  95  getprop "Tools"
+00010:  95  getprop "Net"
+00015:  95  dup
+00016:  95  callprop "requestCheckTransactionReceipt"
+00021:  95  swap
+00022:  95  notearg
+00023:  95  newinit 1
+00028:  96  name "xs"
+00033:  96  getprop "Profile"
+00038:  96  getprop "GameData"
+00043:  96  getprop "Mgr"
+00048:  96  dup
+00049:  96  callprop "getInstance"
+00054:  96  swap
+00055:  96  notearg
+00056:  96  call 0
+00059:  96  getprop "Player"
+00064:  96  dup
+00065:  96  callprop "getPlayer"
+00070:  96  swap
+00071:  96  notearg
+00072:  96  call 0
+00075:  96  dup
+00076:  96  callprop "getPlayerId"
+00081:  96  swap
+00082:  96  notearg
+00083:  96  call 0
+00086:  96  initprop "user_id"
+00091:  97  string "1003"
+00096:  97  initprop "pay_type"
+00101:  98  this
+00102:  98  getprop "transactionReceipt"
+00107:  98  initprop "receipt_data"
+00112:  99  name "xs"
+00117:  99  getprop "Tools"
+00122:  99  getprop "Jsb"
+00127:  99  dup
+00128:  99  callprop "getChannelId"
+00133:  99  swap
+00134:  99  notearg
+00135:  99  call 0
+00138:  99  initprop "special_channel"
+00143:  99  endinit
+00144:  99  notearg
+00145: 101  this
+00146: 101  getprop "onResponse_CheckTransactionReceipt"
+00151: 101  notearg
+00152: 102  this
+00153: 102  getprop "onResponse_CheckTransactionReceipt_Err"
+00158: 102  notearg
+00159: 103  this
+00160: 103  notearg
+00161: 103  call 4
+00164: 103  pop
+00165: 103  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:94 ---
+;; function object[5] onResponse_CheckTransactionReceipt
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] jsonData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:107 ---
+loc   line  op
+----- ----  --
+main:
+00000: 108  name "xs"
+00005: 108  dup
+00006: 108  callprop "log"
+00011: 108  swap
+00012: 108  notearg
+00013: 108  string "flag = "
+00018: 108  notearg
+00019: 108  getarg 0
+00022: 108  getprop "chargeInfo"
+00027: 108  getprop "flag"
+00032: 108  notearg
+00033: 108  call 2
+00036: 108  pop
+00037: 109  getarg 0
+00040: 109  getprop "chargeInfo"
+00045: 109  getprop "flag"
+00050: 109  tableswitch defaultOffset 363 low -2 high 1
+	-2: 250
+	-1: 137
+	0: 363
+	1: 29
+00079: 112  name "xs"
+00084: 112  dup
+00085: 112  callprop "log"
+00090: 112  swap
+00091: 112  notearg
+00092: 112  string "\u9A8C\u8BC1\u6210\u529F,\u53D1\u8D27\u6210\u529F"
+00097: 112  notearg
+00098: 112  call 1
+00101: 112  pop
+00102: 113  this
+00103: 113  dup
+00104: 113  callprop "pay_Success"
+00109: 113  swap
+00110: 113  notearg
+00111: 113  getarg 0
+00114: 113  getprop "chargeInfo"
+00119: 113  notearg
+00120: 113  call 1
+00123: 113  pop
+00124: 114  name "xs"
+00129: 114  getprop "JsbConnecter"
+00134: 114  dup
+00135: 114  callprop "getInstance"
+00140: 114  swap
+00141: 114  notearg
+00142: 114  call 0
+00145: 114  dup
+00146: 114  callprop "invoke"
+00151: 114  swap
+00152: 114  notearg
+00153: 114  string "AppStore"
+00158: 114  notearg
+00159: 114  string "finishTransaction"
+00164: 114  notearg
+00165: 114  string ""
+00170: 114  this
+00171: 114  getprop "transactionId"
+00176: 114  add
+00177: 114  notearg
+00178: 114  call 3
+00181: 114  pop
+00182: 115  goto 431 (+249)
+00187: 117  name "xs"
+00192: 117  dup
+00193: 117  callprop "log"
+00198: 117  swap
+00199: 117  notearg
+00200: 117  string "\u9A8C\u8BC1\u6210\u529F,\u5DF2\u7ECF\u53D1\u8D27"
+00205: 117  notearg
+00206: 117  call 1
+00209: 117  pop
+00210: 118  name "xs"
+00215: 118  getprop "Views"
+00220: 118  getprop "Mgr"
+00225: 118  dup
+00226: 118  callprop "hideDialog"
+00231: 118  swap
+00232: 118  notearg
+00233: 118  call 0
+00236: 118  pop
+00237: 119  name "xs"
+00242: 119  getprop "JsbConnecter"
+00247: 119  dup
+00248: 119  callprop "getInstance"
+00253: 119  swap
+00254: 119  notearg
+00255: 119  call 0
+00258: 119  dup
+00259: 119  callprop "invoke"
+00264: 119  swap
+00265: 119  notearg
+00266: 119  string "AppStore"
+00271: 119  notearg
+00272: 119  string "finishTransaction"
+00277: 119  notearg
+00278: 119  string ""
+00283: 119  this
+00284: 119  getprop "transactionId"
+00289: 119  add
+00290: 119  notearg
+00291: 119  call 3
+00294: 119  pop
+00295: 120  goto 431 (+136)
+00300: 122  name "xs"
+00305: 122  dup
+00306: 122  callprop "log"
+00311: 122  swap
+00312: 122  notearg
+00313: 122  string "\u9A8C\u8BC1\u5931\u8D25"
+00318: 122  notearg
+00319: 122  call 1
+00322: 122  pop
+00323: 123  name "xs"
+00328: 123  getprop "Views"
+00333: 123  getprop "Mgr"
+00338: 123  dup
+00339: 123  callprop "hideDialog"
+00344: 123  swap
+00345: 123  notearg
+00346: 123  call 0
+00349: 123  pop
+00350: 124  name "xs"
+00355: 124  getprop "JsbConnecter"
+00360: 124  dup
+00361: 124  callprop "getInstance"
+00366: 124  swap
+00367: 124  notearg
+00368: 124  call 0
+00371: 124  dup
+00372: 124  callprop "invoke"
+00377: 124  swap
+00378: 124  notearg
+00379: 124  string "AppStore"
+00384: 124  notearg
+00385: 124  string "finishTransaction"
+00390: 124  notearg
+00391: 124  string ""
+00396: 124  this
+00397: 124  getprop "transactionId"
+00402: 124  add
+00403: 124  notearg
+00404: 124  call 3
+00407: 124  pop
+00408: 125  goto 431 (+23)
+00413: 130  this
+00414: 130  dup
+00415: 130  callprop "onResponse_CheckTransactionReceipt_Err"
+00420: 130  swap
+00421: 130  notearg
+00422: 130  call 0
+00425: 130  pop
+00426: 131  goto 431 (+5)
+00431: 132  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:107 ---
+;; function object[6] onResponse_CheckTransactionReceipt_Err
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] jsonData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:134 ---
+loc   line  op
+----- ----  --
+main:
+00000: 139  this
+00001: 139  getprop "_dialog2"
+00006: 139  dup
+00007: 139  callprop "setVisible"
+00012: 139  swap
+00013: 139  notearg
+00014: 139  true
+00015: 139  notearg
+00016: 139  call 1
+00019: 139  pop
+00020: 139  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:134 ---
+;; function object[7] onResponse_Notify
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] jsonData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:142 ---
+loc   line  op
+----- ----  --
+main:
+00000: 144  name "xs"
+00005: 144  getprop "Tools"
+00010: 144  getprop "Net"
+00015: 144  dup
+00016: 144  callprop "requestOrderStatus"
+00021: 144  swap
+00022: 144  notearg
+00023: 144  newinit 1
+00028: 144  newarray 1
+00032: 144  this
+00033: 144  getprop "order"
+00038: 144  getprop "tradeno"
+00043: 144  string ""
+00048: 144  add
+00049: 144  initelem_array 0
+00053: 144  endinit
+00054: 144  initprop "order_ids"
+00059: 144  true
+00060: 144  initprop "forcepush"
+00065: 144  endinit
+00066: 144  notearg
+00067: 145  this
+00068: 145  getprop "onResponse_Status"
+00073: 145  notearg
+00074: 146  this
+00075: 146  getprop "onResponse_Status_Err"
+00080: 146  notearg
+00081: 147  this
+00082: 147  notearg
+00083: 147  call 4
+00086: 147  pop
+00087: 147  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:142 ---
+;; function object[8] onResponse_Status
+;; function metadata object[8] nargs=1 bindings=1
+;; arg[0] jsonData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:150 ---
+loc   line  op
+----- ----  --
+main:
+00000: 151  getarg 0
+00003: 151  getprop "order_list"
+00008: 151  zero
+00009: 151  getelem
+00010: 151  getprop "is_completed"
+00015: 151  ifeq 49 (+34)
+00020: 153  this
+00021: 153  dup
+00022: 153  callprop "pay_Success"
+00027: 153  swap
+00028: 153  notearg
+00029: 153  getarg 0
+00032: 153  getprop "order_list"
+00037: 153  zero
+00038: 153  getelem
+00039: 153  notearg
+00040: 153  call 1
+00043: 153  pop
+00044: 153  goto 195 (+151)
+00049: 154  this
+00050: 154  getprop "coolDownTime"
+00055: 154  zero
+00056: 154  gt
+00057: 154  ifeq 80 (+23)
+00062: 155  this
+00063: 155  dup
+00064: 155  callprop "onResponse_Status_Err"
+00069: 155  swap
+00070: 155  notearg
+00071: 155  call 0
+00074: 155  pop
+00075: 155  goto 195 (+120)
+00080: 157  name "xs"
+00085: 157  getprop "Tools"
+00090: 157  getprop "Statistic"
+00095: 157  dup
+00096: 157  callprop "event"
+00101: 157  swap
+00102: 157  notearg
+00103: 157  string "1700013"
+00108: 157  notearg
+00109: 157  call 1
+00112: 157  pop
+00113: 158  this
+00114: 158  getprop "_dialog"
+00119: 158  dup
+00120: 158  callprop "setContentText"
+00125: 158  swap
+00126: 158  notearg
+00127: 158  name "xs"
+00132: 158  getprop "Tools"
+00137: 158  getprop "String"
+00142: 158  dup
+00143: 158  callprop "createString"
+00148: 158  swap
+00149: 158  notearg
+00150: 158  string "auto_name_340"
+00155: 158  notearg
+00156: 158  call 1
+00159: 158  notearg
+00160: 158  call 1
+00163: 158  pop
+00164: 159  this
+00165: 159  getprop "_dialog"
+00170: 159  dup
+00171: 159  callprop "getRightButton"
+00176: 159  swap
+00177: 159  notearg
+00178: 159  call 0
+00181: 159  dup
+00182: 159  callprop "setEnabled"
+00187: 159  swap
+00188: 159  notearg
+00189: 159  true
+00190: 159  notearg
+00191: 159  call 1
+00194: 159  pop
+00195: 160  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:150 ---
+;; function object[9] pay_Success
+;; function metadata object[9] nargs=1 bindings=1
+;; arg[0] payData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:163 ---
+loc   line  op
+----- ----  --
+main:
+00000: 164  name "xs"
+00005: 164  getprop "Tools"
+00010: 164  getprop "Statistic"
+00015: 164  dup
+00016: 164  callprop "event"
+00021: 164  swap
+00022: 164  notearg
+00023: 164  string "1700012"
+00028: 164  notearg
+00029: 164  call 1
+00032: 164  pop
+00033: 165  name "xs"
+00038: 165  getprop "Tools"
+00043: 165  getprop "Statistic"
+00048: 165  dup
+00049: 165  callprop "pay"
+00054: 165  swap
+00055: 165  notearg
+00056: 165  getarg 0
+00059: 165  getprop "price"
+00064: 165  notearg
+00065: 165  this
+00066: 165  getprop "m_channelId"
+00071: 165  notearg
+00072: 165  getarg 0
+00075: 165  getprop "gold"
+00080: 165  notearg
+00081: 165  call 3
+00084: 165  pop
+00085: 166  name "xsc"
+00090: 166  getprop "Tools"
+00095: 166  getprop "PaySys"
+00100: 166  dup
+00101: 166  callprop "isUsingEasySdk"
+00106: 166  swap
+00107: 166  notearg
+00108: 166  call 0
+00111: 166  ifeq 279 (+168)
+00116: 167  name "xs"
+00121: 167  getprop "Tools"
+00126: 167  getprop "Jsb"
+00131: 167  getprop "EasySdk"
+00136: 167  getprop "Statistic"
+00141: 167  dup
+00142: 167  callprop "event_pay"
+00147: 167  swap
+00148: 167  notearg
+00149: 168  newinit 1
+00154: 169  name "xs"
+00159: 169  getprop "Tools"
+00164: 169  getprop "Jsb"
+00169: 169  dup
+00170: 169  callprop "getDeviceId"
+00175: 169  swap
+00176: 169  notearg
+00177: 169  call 0
+00180: 169  initprop "account_id"
+00185: 170  getarg 0
+00188: 170  getprop "order_id"
+00193: 170  initprop "order_id"
+00198: 171  getarg 0
+00201: 171  getprop "price"
+00206: 171  initprop "amount"
+00211: 172  name "xsc"
+00216: 172  getprop "Tools"
+00221: 172  getprop "ProductSys"
+00226: 172  dup
+00227: 172  callprop "getCurrencyTypeString"
+00232: 172  swap
+00233: 172  notearg
+00234: 172  call 0
+00237: 172  initprop "currency_type"
+00242: 173  name "xsc"
+00247: 173  getprop "Tools"
+00252: 173  getprop "ProductSys"
+00257: 173  dup
+00258: 173  callprop "getPayTypeString"
+00263: 173  swap
+00264: 173  notearg
+00265: 173  call 0
+00268: 173  initprop "pay_type"
+00273: 173  endinit
+00274: 173  notearg
+00275: 173  call 1
+00278: 173  pop
+00279: 177  name "xs"
+00284: 177  getprop "Tools"
+00289: 177  getprop "TalkingDataAppCpa"
+00294: 177  dup
+00295: 177  callprop "onPay"
+00300: 177  swap
+00301: 177  notearg
+00302: 178  name "xs"
+00307: 178  getprop "Tools"
+00312: 178  getprop "Jsb"
+00317: 178  dup
+00318: 178  callprop "getDeviceId"
+00323: 178  swap
+00324: 178  notearg
+00325: 178  call 0
+00328: 178  notearg
+00329: 179  getarg 0
+00332: 179  getprop "order_id"
+00337: 179  notearg
+00338: 180  getarg 0
+00341: 180  getprop "price"
+00346: 180  int8 100
+00348: 180  mul
+00349: 180  notearg
+00350: 181  name "xsc"
+00355: 181  getprop "Tools"
+00360: 181  getprop "ProductSys"
+00365: 181  dup
+00366: 181  callprop "getCurrencyTypeString"
+00371: 181  swap
+00372: 181  notearg
+00373: 181  call 0
+00376: 181  notearg
+00377: 182  name "xsc"
+00382: 182  getprop "Tools"
+00387: 182  getprop "ProductSys"
+00392: 182  dup
+00393: 182  callprop "getPayTypeString"
+00398: 182  swap
+00399: 182  notearg
+00400: 182  call 0
+00403: 182  notearg
+00404: 182  call 5
+00407: 182  pop
+00408: 185  name "xs"
+00413: 185  getprop "Views"
+00418: 185  getprop "Mgr"
+00423: 185  dup
+00424: 185  callprop "showToast"
+00429: 185  swap
+00430: 185  notearg
+00431: 185  name "xs"
+00436: 185  getprop "Tools"
+00441: 185  getprop "String"
+00446: 185  dup
+00447: 185  callprop "createString"
+00452: 185  swap
+00453: 185  notearg
+00454: 185  string "auto_name_341"
+00459: 185  notearg
+00460: 185  call 1
+00463: 185  getarg 0
+00466: 185  getprop "gold"
+00471: 185  add
+00472: 185  name "xs"
+00477: 185  getprop "Tools"
+00482: 185  getprop "String"
+00487: 185  dup
+00488: 185  callprop "createString"
+00493: 185  swap
+00494: 185  notearg
+00495: 185  string "auto_name_27"
+00500: 185  notearg
+00501: 185  call 1
+00504: 185  add
+00505: 185  notearg
+00506: 185  call 1
+00509: 185  pop
+00510: 186  name "xs"
+00515: 186  getprop "Utils"
+00520: 186  getprop "Notify"
+00525: 186  dup
+00526: 186  callprop "postNotification"
+00531: 186  swap
+00532: 186  notearg
+00533: 186  name "xs"
+00538: 186  getprop "Constant_Notify_Event_ChargeSucess"
+00543: 186  notearg
+00544: 186  call 1
+00547: 186  pop
+00548: 187  name "xs"
+00553: 187  getprop "Views"
+00558: 187  getprop "Mgr"
+00563: 187  dup
+00564: 187  callprop "hideDialog"
+00569: 187  swap
+00570: 187  notearg
+00571: 187  call 0
+00574: 187  pop
+00575: 187  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:163 ---
+;; function object[10] onResponse_Status_Err
+;; function metadata object[10] nargs=0 bindings=1
+;; local[0] callback
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=18 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:190 ---
+loc   line  op
+----- ----  --
+main:
+00000: 191  name "cc"
+00005: 191  getprop "CallFunc"
+00010: 191  dup
+00011: 191  callprop "create"
+00016: 191  swap
+00017: 191  notearg
+00018: 191  lambda (function () {
+    [sourceless code]
+})
+00023: 191  dup
+00024: 191  callprop "bind"
+00029: 191  swap
+00030: 191  notearg
+00031: 196  this
+00032: 196  notearg
+00033: 196  call 1
+00036: 196  notearg
+00037: 196  call 1
+00040: 196  setlocal 0
+00043: 196  pop
+00044: 197  this
+00045: 197  dup
+00046: 197  callprop "runAction"
+00051: 197  swap
+00052: 197  notearg
+00053: 197  name "cc"
+00058: 197  getprop "Sequence"
+00063: 197  dup
+00064: 197  callprop "create"
+00069: 197  swap
+00070: 197  notearg
+00071: 197  name "cc"
+00076: 197  getprop "DelayTime"
+00081: 197  dup
+00082: 197  callprop "create"
+00087: 197  swap
+00088: 197  notearg
+00089: 197  int8 3
+00091: 197  notearg
+00092: 197  call 1
+00095: 197  notearg
+00096: 197  getlocal 0
+00099: 197  notearg
+00100: 197  call 2
+00103: 197  notearg
+00104: 197  call 1
+00107: 197  pop
+00108: 197  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:190 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:191 ---
+loc   line  op
+----- ----  --
+main:
+00000: 192  name "xs"
+00005: 192  getprop "Tools"
+00010: 192  getprop "Net"
+00015: 192  dup
+00016: 192  callprop "requestOrderStatus"
+00021: 192  swap
+00022: 192  notearg
+00023: 192  newinit 1
+00028: 192  newarray 1
+00032: 192  this
+00033: 192  getprop "order"
+00038: 192  getprop "tradeno"
+00043: 192  string ""
+00048: 192  add
+00049: 192  initelem_array 0
+00053: 192  endinit
+00054: 192  initprop "order_ids"
+00059: 192  endinit
+00060: 192  notearg
+00061: 193  this
+00062: 193  getprop "onResponse_Status"
+00067: 193  notearg
+00068: 194  this
+00069: 194  getprop "onResponse_Status_Err"
+00074: 194  notearg
+00075: 195  this
+00076: 195  notearg
+00077: 195  call 4
+00080: 195  pop
+00081: 195  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:191 ---
+;; function object[11] setBaseTouchPriority
+;; function metadata object[11] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:200 ---
+loc   line  op
+----- ----  --
+main:
+00000: 201  this
+00001: 201  dup
+00002: 201  callprop "_super"
+00007: 201  swap
+00008: 201  notearg
+00009: 201  getarg 0
+00012: 201  notearg
+00013: 201  call 1
+00016: 201  pop
+00017: 202  this
+00018: 202  getprop "_dialog"
+00023: 202  dup
+00024: 202  callprop "getRightButton"
+00029: 202  swap
+00030: 202  notearg
+00031: 202  call 0
+00034: 202  dup
+00035: 202  callprop "setTouchPriority"
+00040: 202  swap
+00041: 202  notearg
+00042: 202  getarg 0
+00045: 202  one
+00046: 202  sub
+00047: 202  notearg
+00048: 202  call 1
+00051: 202  pop
+00052: 202  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/CheckOrderDialog.js:200 ---

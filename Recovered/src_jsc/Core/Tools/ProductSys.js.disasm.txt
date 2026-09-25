@@ -1,0 +1,287 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Tools/ProductSys.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=15 object[0]
+;; FUNCTION-MAP kind=lambda offset=25 object[1]
+;; FUNCTION-MAP kind=lambda offset=35 object[2]
+;; FUNCTION-MAP kind=lambda offset=45 object[3]
+;; FUNCTION-MAP kind=lambda offset=55 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xsc"
+00005:   5  getprop "Tools"
+00010:   5  newinit 1
+00015:   7  lambda (function () {
+    [sourceless code]
+})
+00020:   7  initprop "getArea"
+00025:  16  lambda (function () {
+    [sourceless code]
+})
+00030:  16  initprop "getOurttf"
+00035:  31  lambda (function () {
+    [sourceless code]
+})
+00040:  31  initprop "getAreaTag"
+00045:  46  lambda (function () {
+    [sourceless code]
+})
+00050:  46  initprop "getCurrencyTypeString"
+00055:  61  lambda (function () {
+    [sourceless code]
+})
+00060:  61  initprop "getPayTypeString"
+00065:  61  endinit
+00066:  61  setprop "ProductSys"
+00071:  61  popv
+00072:  90  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:1 ---
+;; function object[0] getArea
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xsc"
+00005:   8  getprop "app_indentify"
+00010:   8  dup
+00011:   8  callprop "indexOf"
+00016:   8  swap
+00017:   8  notearg
+00018:   8  string "tw"
+00023:   8  notearg
+00024:   8  call 1
+00027:   8  zero
+00028:   8  eq
+00029:   8  ifeq 50 (+21)
+00034:   9  name "xsc"
+00039:   9  getprop "Const_Area_TW"
+00044:   9  return
+00045:   9  goto 61 (+16)
+00050:  12  name "xsc"
+00055:  12  getprop "Const_Area_CN"
+00060:  12  return
+00061:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:7 ---
+;; function object[1] getOurttf
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  name "xsc"
+00005:  17  getprop "Tools"
+00010:  17  getprop "ProductSys"
+00015:  17  dup
+00016:  17  callprop "getArea"
+00021:  17  swap
+00022:  17  notearg
+00023:  17  call 0
+00026:  17  condswitch
+00027:  18  name "xsc"
+00032:  18  getprop "Const_Area_TW"
+00037:  18  case 62 (+25)
+00042:  21  name "xsc"
+00047:  21  getprop "Const_Area_CN"
+00052:  21  case 73 (+21)
+00057:  21  default 84 (+27)
+00062:  19  string "ourttf-tw.ttf"
+00067:  19  return
+00068:  20  goto 112 (+44)
+00073:  22  string "ourttf.ttf"
+00078:  22  return
+00079:  23  goto 112 (+33)
+00084:  25  name "xs"
+00089:  25  dup
+00090:  25  callprop "error"
+00095:  25  swap
+00096:  25  notearg
+00097:  25  string "area err"
+00102:  25  notearg
+00103:  25  call 1
+00106:  25  pop
+00107:  26  goto 112 (+5)
+00112:  28  string "ourttf.ttf"
+00117:  28  return
+00118:  28  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:16 ---
+;; function object[2] getAreaTag
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:31 ---
+loc   line  op
+----- ----  --
+main:
+00000:  32  name "xs"
+00005:  32  getprop "isVersionForPublish"
+00010:  32  ifeq 21 (+11)
+00015:  33  string "sb"
+00020:  33  return
+00021:  35  this
+00022:  35  dup
+00023:  35  callprop "getArea"
+00028:  35  swap
+00029:  35  notearg
+00030:  35  call 0
+00033:  35  condswitch
+00034:  36  name "xsc"
+00039:  36  getprop "Const_Area_TW"
+00044:  36  case 69 (+25)
+00049:  38  name "xsc"
+00054:  38  getprop "Const_Area_CN"
+00059:  38  case 75 (+16)
+00064:  38  default 81 (+17)
+00069:  37  string "tw"
+00074:  37  return
+00075:  39  string "cn"
+00080:  39  return
+00081:  41  name "xs"
+00086:  41  dup
+00087:  41  callprop "error"
+00092:  41  swap
+00093:  41  notearg
+00094:  41  string "getAreaTag err"
+00099:  41  notearg
+00100:  41  call 1
+00103:  41  pop
+00104:  42  string "cn"
+00109:  42  return
+00110:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:31 ---
+;; function object[3] getCurrencyTypeString
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  name "xsc"
+00005:  47  getprop "Tools"
+00010:  47  getprop "ProductSys"
+00015:  47  dup
+00016:  47  callprop "getArea"
+00021:  47  swap
+00022:  47  notearg
+00023:  47  call 0
+00026:  47  condswitch
+00027:  48  name "xsc"
+00032:  48  getprop "Const_Area_TW"
+00037:  48  case 62 (+25)
+00042:  51  name "xsc"
+00047:  51  getprop "Const_Area_CN"
+00052:  51  case 73 (+21)
+00057:  51  default 84 (+27)
+00062:  49  string "TWD"
+00067:  49  return
+00068:  50  goto 112 (+44)
+00073:  52  string "CNY"
+00078:  52  return
+00079:  53  goto 112 (+33)
+00084:  55  name "xs"
+00089:  55  dup
+00090:  55  callprop "error"
+00095:  55  swap
+00096:  55  notearg
+00097:  55  string "area err"
+00102:  55  notearg
+00103:  55  call 1
+00106:  55  pop
+00107:  56  goto 112 (+5)
+00112:  58  string "ERR"
+00117:  58  return
+00118:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:46 ---
+;; function object[4] getPayTypeString
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] _payTypeStr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:61 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  getlocal 0
+00003:  62  pop
+00004:  63  name "xsc"
+00009:  63  getprop "Tools"
+00014:  63  getprop "PaySys"
+00019:  63  dup
+00020:  63  callprop "isUsingAppStore"
+00025:  63  swap
+00026:  63  notearg
+00027:  63  call 0
+00030:  63  ifeq 49 (+19)
+00035:  65  string "appStore"
+00040:  65  setlocal 0
+00043:  65  pop
+00044:  65  goto 238 (+194)
+00049:  67  name "xsc"
+00054:  67  getprop "Tools"
+00059:  67  getprop "PaySys"
+00064:  67  dup
+00065:  67  callprop "isUsingAnySdk"
+00070:  67  swap
+00071:  67  notearg
+00072:  67  call 0
+00075:  67  ifeq 94 (+19)
+00080:  69  string "anySdk"
+00085:  69  setlocal 0
+00088:  69  pop
+00089:  69  goto 238 (+149)
+00094:  71  name "xsc"
+00099:  71  getprop "Tools"
+00104:  71  getprop "PaySys"
+00109:  71  dup
+00110:  71  callprop "isUsingAliPay"
+00115:  71  swap
+00116:  71  notearg
+00117:  71  call 0
+00120:  71  ifeq 139 (+19)
+00125:  73  string "alipay"
+00130:  73  setlocal 0
+00133:  73  pop
+00134:  73  goto 238 (+104)
+00139:  75  name "xsc"
+00144:  75  getprop "Tools"
+00149:  75  getprop "PaySys"
+00154:  75  dup
+00155:  75  callprop "isUsing3rdSdk"
+00160:  75  swap
+00161:  75  notearg
+00162:  75  call 0
+00165:  75  ifeq 184 (+19)
+00170:  77  string "3rdPay"
+00175:  77  setlocal 0
+00178:  77  pop
+00179:  77  goto 238 (+59)
+00184:  79  name "xsc"
+00189:  79  getprop "Tools"
+00194:  79  getprop "PaySys"
+00199:  79  dup
+00200:  79  callprop "isUsingEasySdk"
+00205:  79  swap
+00206:  79  notearg
+00207:  79  call 0
+00210:  79  ifeq 229 (+19)
+00215:  80  string "easysdk"
+00220:  80  setlocal 0
+00223:  80  pop
+00224:  80  goto 238 (+14)
+00229:  83  string "default"
+00234:  83  setlocal 0
+00237:  83  pop
+00238:  86  getlocal 0
+00241:  86  return
+00242:  86  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/ProductSys.js:61 ---

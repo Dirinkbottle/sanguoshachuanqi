@@ -1,0 +1,340 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/RoundClippingNode.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=55 object[0]
+;; FUNCTION-MAP kind=lambda offset=65 object[1]
+;; FUNCTION-MAP kind=lambda offset=101 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/RoundClippingNode.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Views"
+00010:  10  name "cc"
+00015:  10  getprop "Node"
+00020:  10  dup
+00021:  10  callprop "extend"
+00026:  10  swap
+00027:  10  notearg
+00028:  10  newinit 1
+00033:  12  string "RoundClippingNode"
+00038:  12  initprop "name"
+00043:  14  null
+00044:  14  initprop "clip"
+00049:  15  null
+00050:  15  initprop "stencil"
+00055:  18  lambda (function () {
+    [sourceless code]
+})
+00060:  18  initprop "ctor"
+00065:  23  lambda (function () {
+    [sourceless code]
+})
+00070:  23  initprop "init"
+00075:  23  endinit
+00076:  23  notearg
+00077:  23  call 1
+00080:  23  setprop "RoundClippingNode"
+00085:  23  popv
+00086:  60  name "xs"
+00091:  60  getprop "Views"
+00096:  60  getprop "RoundClippingNode"
+00101:  60  lambda (function () {
+    [sourceless code]
+})
+00106:  60  setprop "create"
+00111:  60  popv
+00112:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/RoundClippingNode.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/RoundClippingNode.js:18 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  this
+00001:  19  dup
+00002:  19  callprop "_super"
+00007:  19  swap
+00008:  19  notearg
+00009:  19  call 0
+00012:  19  pop
+00013:  20  name "cc"
+00018:  20  dup
+00019:  20  callprop "associateWithNative"
+00024:  20  swap
+00025:  20  notearg
+00026:  20  this
+00027:  20  notearg
+00028:  20  name "cc"
+00033:  20  getprop "Node"
+00038:  20  notearg
+00039:  20  call 2
+00042:  20  pop
+00043:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/RoundClippingNode.js:18 ---
+;; function object[1] init
+;; function metadata object[1] nargs=2 bindings=2
+;; arg[0] size
+;; arg[1] radius
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/RoundClippingNode.js:23 ---
+loc   line  op
+----- ----  --
+main:
+00000:  25  this
+00001:  25  dup
+00002:  25  callprop "setContentSize"
+00007:  25  swap
+00008:  25  notearg
+00009:  25  getarg 0
+00012:  25  notearg
+00013:  25  call 1
+00016:  25  pop
+00017:  26  this
+00018:  26  dup
+00019:  26  callprop "setAnchorPoint"
+00024:  26  swap
+00025:  26  notearg
+00026:  26  name "cc"
+00031:  26  dup
+00032:  26  callprop "p"
+00037:  26  swap
+00038:  26  notearg
+00039:  26  double 0.5
+00044:  26  notearg
+00045:  26  double 0.5
+00050:  26  notearg
+00051:  26  call 2
+00054:  26  notearg
+00055:  26  call 1
+00058:  26  pop
+00059:  30  this
+00060:  30  name "cc"
+00065:  30  getprop "DrawNode"
+00070:  30  dup
+00071:  30  callprop "create"
+00076:  30  swap
+00077:  30  notearg
+00078:  30  call 0
+00081:  30  setprop "stencil"
+00086:  30  pop
+00087:  31  this
+00088:  31  getprop "stencil"
+00093:  31  dup
+00094:  31  callprop "setContentSize"
+00099:  31  swap
+00100:  31  notearg
+00101:  31  getarg 0
+00104:  31  notearg
+00105:  31  call 1
+00108:  31  pop
+00109:  34  this
+00110:  34  getprop "stencil"
+00115:  34  dup
+00116:  34  callprop "drawRoundPoly"
+00121:  34  swap
+00122:  34  notearg
+00123:  35  newarray 4
+00127:  35  name "cc"
+00132:  35  dup
+00133:  35  callprop "p"
+00138:  35  swap
+00139:  35  notearg
+00140:  35  zero
+00141:  35  notearg
+00142:  35  zero
+00143:  35  notearg
+00144:  35  call 2
+00147:  35  initelem_array 0
+00151:  35  name "cc"
+00156:  35  dup
+00157:  35  callprop "p"
+00162:  35  swap
+00163:  35  notearg
+00164:  35  zero
+00165:  35  notearg
+00166:  35  getarg 0
+00169:  35  getprop "height"
+00174:  35  notearg
+00175:  35  call 2
+00178:  35  initelem_array 1
+00182:  35  name "cc"
+00187:  35  dup
+00188:  35  callprop "p"
+00193:  35  swap
+00194:  35  notearg
+00195:  35  getarg 0
+00198:  35  getprop "width"
+00203:  35  notearg
+00204:  35  getarg 0
+00207:  35  getprop "height"
+00212:  35  notearg
+00213:  35  call 2
+00216:  35  initelem_array 2
+00220:  35  name "cc"
+00225:  35  dup
+00226:  35  callprop "p"
+00231:  35  swap
+00232:  35  notearg
+00233:  35  getarg 0
+00236:  35  getprop "width"
+00241:  35  notearg
+00242:  35  zero
+00243:  35  notearg
+00244:  35  call 2
+00247:  35  initelem_array 3
+00251:  35  endinit
+00252:  35  notearg
+00253:  36  getarg 1
+00256:  36  notearg
+00257:  37  int8 2
+00259:  37  notearg
+00260:  38  newarray 4
+00264:  38  true
+00265:  38  initelem_array 0
+00269:  38  true
+00270:  38  initelem_array 1
+00274:  38  true
+00275:  38  initelem_array 2
+00279:  38  true
+00280:  38  initelem_array 3
+00284:  38  endinit
+00285:  38  notearg
+00286:  39  name "cc"
+00291:  39  dup
+00292:  39  callprop "c4f"
+00297:  39  swap
+00298:  39  notearg
+00299:  39  one
+00300:  39  notearg
+00301:  39  zero
+00302:  39  notearg
+00303:  39  one
+00304:  39  notearg
+00305:  39  one
+00306:  39  notearg
+00307:  39  call 4
+00310:  39  notearg
+00311:  40  zero
+00312:  40  notearg
+00313:  41  name "cc"
+00318:  41  dup
+00319:  41  callprop "c4f"
+00324:  41  swap
+00325:  41  notearg
+00326:  41  zero
+00327:  41  notearg
+00328:  41  one
+00329:  41  notearg
+00330:  41  one
+00331:  41  notearg
+00332:  41  one
+00333:  41  notearg
+00334:  41  call 4
+00337:  41  notearg
+00338:  41  call 7
+00341:  41  pop
+00342:  43  this
+00343:  43  name "cc"
+00348:  43  getprop "ClippingNode"
+00353:  43  dup
+00354:  43  callprop "create"
+00359:  43  swap
+00360:  43  notearg
+00361:  43  this
+00362:  43  getprop "stencil"
+00367:  43  notearg
+00368:  43  call 1
+00371:  43  setprop "clip"
+00376:  43  pop
+00377:  44  this
+00378:  44  getprop "clip"
+00383:  44  dup
+00384:  44  callprop "setAnchorPoint"
+00389:  44  swap
+00390:  44  notearg
+00391:  44  name "cc"
+00396:  44  dup
+00397:  44  callprop "p"
+00402:  44  swap
+00403:  44  notearg
+00404:  44  double 0.5
+00409:  44  notearg
+00410:  44  double 0.5
+00415:  44  notearg
+00416:  44  call 2
+00419:  44  notearg
+00420:  44  call 1
+00423:  44  pop
+00424:  45  this
+00425:  45  getprop "clip"
+00430:  45  dup
+00431:  45  callprop "setContentSize"
+00436:  45  swap
+00437:  45  notearg
+00438:  45  getarg 0
+00441:  45  notearg
+00442:  45  call 1
+00445:  45  pop
+00446:  53  name "xs"
+00451:  53  getprop "Utils"
+00456:  53  getprop "Node"
+00461:  53  dup
+00462:  53  callprop "attachNodes"
+00467:  53  swap
+00468:  53  notearg
+00469:  53  this
+00470:  53  notearg
+00471:  53  this
+00472:  53  getprop "clip"
+00477:  53  notearg
+00478:  53  newinit 1
+00483:  53  string "c"
+00488:  53  initprop "desc"
+00493:  53  endinit
+00494:  53  notearg
+00495:  53  call 3
+00498:  53  pop
+00499:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/RoundClippingNode.js:23 ---
+;; function object[2] create
+;; function metadata object[2] nargs=2 bindings=3
+;; arg[0] size
+;; arg[1] radius
+;; local[0] _view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/RoundClippingNode.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  name "xs"
+00005:  63  getprop "Views"
+00010:  63  getprop "RoundClippingNode"
+00015:  63  undefined
+00016:  63  notearg
+00017:  63  new 0
+00020:  63  setlocal 0
+00023:  63  pop
+00024:  66  getlocal 0
+00027:  66  dup
+00028:  66  callprop "init"
+00033:  66  swap
+00034:  66  notearg
+00035:  66  getarg 0
+00038:  66  notearg
+00039:  66  getarg 1
+00042:  66  notearg
+00043:  66  call 2
+00046:  66  pop
+00047:  69  getlocal 0
+00050:  69  return
+00051:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/RoundClippingNode.js:60 ---

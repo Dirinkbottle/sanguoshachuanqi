@@ -1,0 +1,143 @@
+# `Scene/Fight/FightScene.js`
+
+- Original embedded path: `/home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Fight/FightScene.jsc`
+- XDR decode: `ok`; bytecode scripts: 131; instructions: 4638
+- Full instruction listing: `src_jsc/Scene/Fight/FightScene.js.disasm.txt`
+
+This is a navigation outline generated from names and line metadata
+retained in the compiled bytecode. It is not the original JavaScript text.
+
+## Function bodies
+
+| Original line | Object index | Recovered name |
+|---:|---:|---|
+| 49 | 0 | `init` |
+| 107 | 1 | `createRemoveFakePvpOpeningAction` |
+| 110 | 0 | `<anonymous>` |
+| 117 | 2 | `_initNC` |
+| 121 | 3 | `getFightNotifyCenter` |
+| 126 | 4 | `initPvp` |
+| 169 | 5 | `_getCardLayoutCfgBySideAndOffset` |
+| 176 | 6 | `revertViews` |
+| 250 | 7 | `initViews` |
+| 704 | 8 | `_freshEnabled` |
+| 708 | 9 | `_getLazyInitFinishArm` |
+| 732 | 10 | `getBg` |
+| 737 | 11 | `getBlackBg` |
+| 741 | 12 | `getBg_Blood` |
+| 745 | 13 | `getMid` |
+| 763 | 14 | `getUserInfos` |
+| 767 | 15 | `getRoundInfo` |
+| 771 | 16 | `getFightStar` |
+| 775 | 17 | `getModel` |
+| 779 | 18 | `getNear` |
+| 783 | 19 | `getFar` |
+| 787 | 20 | `getCenter` |
+| 791 | 21 | `_getPolicyIdx` |
+| 813 | 22 | `_makeCardPostion` |
+| 858 | 23 | `_updateUserInfo` |
+| 872 | 24 | `_updateRoundNum` |
+| 883 | 25 | `_updateStarNum` |
+| 908 | 26 | `initControl` |
+| 912 | 27 | `createGeneralAudioEffectAction` |
+| 952 | 0 | `<anonymous>` |
+| 975 | 28 | `createBlackOthersAction` |
+| 979 | 0 | `<anonymous>` |
+| 986 | 1 | `<anonymous>` |
+| 992 | 29 | `blackHalf_Others` |
+| 1077 | 30 | `blackHalf_Others_revert` |
+| 1098 | 31 | `createHideFromAction` |
+| 1102 | 0 | `<anonymous>` |
+| 1115 | 32 | `createShowFromAction` |
+| 1119 | 0 | `<anonymous>` |
+| 1132 | 33 | `createHideOthersAction` |
+| 1175 | 0 | `<anonymous>` |
+| 1209 | 34 | `createShakeAction` |
+| 1281 | 35 | `createHurtAllEffectAction` |
+| 1358 | 36 | `createFinishEffectAction` |
+| 1374 | 0 | `<anonymous>` |
+| 1429 | 1 | `<anonymous>` |
+| 1475 | 2 | `<anonymous>` |
+| 1487 | 37 | `setVisible_AllCards` |
+| 1497 | 38 | `createShowAllAction` |
+| 1503 | 0 | `<anonymous>` |
+| 1511 | 39 | `createBgAction` |
+| 1593 | 40 | `createCardsOpenActions` |
+| 1671 | 41 | `createBackupsOpenActions` |
+| 1751 | 42 | `createLianYingActions` |
+| 1824 | 43 | `createSkillAction` |
+| 1843 | 44 | `createSuperSkillNameAction` |
+| 1986 | 45 | `createSuperGoddessNameAction` |
+| 2060 | 46 | `createResultExpLevelAction` |
+| 2181 | 47 | `createResultLevelAction` |
+| 2190 | 48 | `createMoveIconsActions` |
+| 2195 | 49 | `createBackupIconsFixActions` |
+| 2264 | 50 | `updateBackupNum` |
+| 2269 | 51 | `updateRoundInfo` |
+| 2281 | 52 | `showRoundFinish` |
+| 2289 | 53 | `updateStarInfo` |
+| 2306 | 54 | `updateDeathNum` |
+| 2320 | 55 | `createShowStoryAction` |
+| 2341 | 0 | `<anonymous>` |
+| 2348 | 0 | `<anonymous>` |
+| 2361 | 56 | `createUpdateDeathNumAction` |
+| 2366 | 0 | `<anonymous>` |
+| 2386 | 57 | `updateModel` |
+| 2396 | 58 | `updateBackupModel` |
+| 2422 | 59 | `useNewBody` |
+| 2451 | 60 | `setInfoUIVisible` |
+| 2462 | 61 | `_can_change_speed` |
+| 2476 | 62 | `_btnOnClickCallBack_SpeedSwitch` |
+| 2509 | 63 | `getSpeed` |
+| 2537 | 64 | `startUpdate` |
+| 2552 | 65 | `stopUpdate` |
+| 2561 | 66 | `btnOnClickCallBack_SkipFightProcess` |
+| 2595 | 67 | `load_laststep` |
+| 2602 | 68 | `createBlackMaskAction_goto` |
+| 2616 | 0 | `<anonymous>` |
+| 2630 | 1 | `<anonymous>` |
+| 2641 | 69 | `createBlackMaskAction` |
+| 2662 | 0 | `<anonymous>` |
+| 2692 | 1 | `<anonymous>` |
+| 2734 | 70 | `_clearAllTemp` |
+| 2763 | 71 | `_update_ext` |
+| 2996 | 72 | `update` |
+| 3001 | 73 | `onFightArmatureFrameEvent_hit_card` |
+| 3046 | 74 | `onFightArmatureFrameEvent_over_card` |
+| 3125 | 75 | `onFightArmatureFrameEvent_ani_card` |
+| 3163 | 76 | `onFightArmatureFrameEvent_higher_card` |
+| 3195 | 77 | `onFightArmatureFrameEvent_hit_text` |
+| 3244 | 78 | `onFightArmatureFrameEvent_hit_hp` |
+| 3277 | 79 | `onFightArmatureFrameEvent_over_hp` |
+| 3309 | 80 | `onFightArmatureFrameEvent_buff` |
+| 3384 | 81 | `onFightArmatureFrameEvent` |
+| 3655 | 82 | `onEnterTransitionDidFinish` |
+| 3670 | 83 | `onExitTransitionDidStart` |
+| 3688 | 84 | `openSkipButton` |
+| 3696 | 85 | `_haveStory` |
+| 3706 | 86 | `doStoryRound` |
+| 3723 | 0 | `<anonymous>` |
+| 3752 | 87 | `doOpenRound` |
+| 3774 | 88 | `_doResultOpenRound` |
+| 3794 | 89 | `doShowRound` |
+| 3834 | 90 | `doResultRound_showDlg` |
+| 3847 | 0 | `<anonymous>` |
+| 3866 | 91 | `_fightResult_replayFunc` |
+| 3887 | 92 | `doResultRound` |
+| 3911 | 93 | `getOpenTypeSkillName` |
+| 3926 | 94 | `callfunc_nextRound` |
+| 3933 | 95 | `createActionStartScheduleUpdate` |
+| 3944 | 96 | `createStartStatusActions` |
+| 4032 | 97 | `createCancelStatusActions` |
+| 4066 | 0 | `<anonymous>` |
+| 4114 | 1 | `<anonymous>` |
+| 4139 | 98 | `createClearStatusActions` |
+| 4164 | 99 | `createStatusActions` |
+| 4259 | 100 | `callfunc_createStatusActions` |
+| 4320 | 101 | `ctor` |
+| 4326 | 102 | `init` |
+| 4335 | 103 | `init0` |
+| 4349 | 104 | `init1` |
+| 4361 | 105 | `onEnterTransitionDidFinish` |
+| 4375 | 106 | `update` |
+| 4459 | 107 | `create` |

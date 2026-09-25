@@ -1,0 +1,638 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/TeamIconButton_Buddy.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=38 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=84 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamIconButton_Buddy.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Views"
+00010:   7  name "xs"
+00015:   7  getprop "Views"
+00020:   7  getprop "TeamIconButton"
+00025:   7  dup
+00026:   7  callprop "extend"
+00031:   7  swap
+00032:   7  notearg
+00033:   7  newinit 1
+00038:   8  lambda (function () {
+    [sourceless code]
+})
+00043:   8  initprop "init"
+00048:  22  lambda (function () {
+    [sourceless code]
+})
+00053:  22  initprop "updateView"
+00058:  22  endinit
+00059:  22  notearg
+00060:  22  call 1
+00063:  22  setprop "TeamIconButton_Buddy"
+00068:  22  popv
+00069: 101  name "xs"
+00074: 101  getprop "Views"
+00079: 101  getprop "TeamIconButton_Buddy"
+00084: 101  lambda (function () {
+    [sourceless code]
+})
+00089: 101  setprop "create"
+00094: 101  popv
+00095: 108  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamIconButton_Buddy.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=2 bindings=2
+;; arg[0] playerId
+;; arg[1] playerData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamIconButton_Buddy.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  getarg 0
+00012:   9  notearg
+00013:   9  getarg 1
+00016:   9  notearg
+00017:   9  call 2
+00020:   9  not
+00021:   9  ifeq 28 (+7)
+00026:  10  false
+00027:  10  return
+00028:  13  this
+00029:  13  name "xs"
+00034:  13  getprop "Factorys"
+00039:  13  getprop "Sprite"
+00044:  13  dup
+00045:  13  callprop "create"
+00050:  13  swap
+00051:  13  notearg
+00052:  13  string "Cmn01_needZhaoLing"
+00057:  13  notearg
+00058:  13  string "Cmn01"
+00063:  13  notearg
+00064:  13  call 2
+00067:  13  setprop "m_lockIconExt"
+00072:  13  pop
+00073:  14  this
+00074:  14  getprop "m_lockIconExt"
+00079:  14  dup
+00080:  14  callprop "setPosition"
+00085:  14  swap
+00086:  14  notearg
+00087:  14  name "cc"
+00092:  14  dup
+00093:  14  callprop "p"
+00098:  14  swap
+00099:  14  notearg
+00100:  14  int8 50
+00102:  14  notearg
+00103:  14  int8 80
+00105:  14  notearg
+00106:  14  call 2
+00109:  14  notearg
+00110:  14  call 1
+00113:  14  pop
+00114:  15  this
+00115:  15  getprop "m_lockIconExt"
+00120:  15  dup
+00121:  15  callprop "setZOrder"
+00126:  15  swap
+00127:  15  notearg
+00128:  15  int8 3
+00130:  15  notearg
+00131:  15  call 1
+00134:  15  pop
+00135:  16  name "xs"
+00140:  16  getprop "Utils"
+00145:  16  getprop "Node"
+00150:  16  dup
+00151:  16  callprop "attachNodes"
+00156:  16  swap
+00157:  16  notearg
+00158:  16  this
+00159:  16  notearg
+00160:  16  this
+00161:  16  getprop "m_lockIconExt"
+00166:  16  notearg
+00167:  16  call 2
+00170:  16  pop
+00171:  18  name "xs"
+00176:  18  getprop "Utils"
+00181:  18  getprop "Node"
+00186:  18  dup
+00187:  18  callprop "fastSetVisible"
+00192:  18  swap
+00193:  18  notearg
+00194:  18  this
+00195:  18  getprop "m_lockIcon"
+00200:  18  notearg
+00201:  18  false
+00202:  18  notearg
+00203:  18  call 2
+00206:  18  pop
+00207:  20  true
+00208:  20  return
+00209:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamIconButton_Buddy.js:8 ---
+;; function object[1] updateView
+;; function metadata object[1] nargs=0 bindings=2
+;; local[0] pIconFrameName
+;; local[1] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamIconButton_Buddy.js:22 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  name "xs"
+00005:  24  getprop "Utils"
+00010:  24  getprop "Node"
+00015:  24  dup
+00016:  24  callprop "safeRemoveChild"
+00021:  24  swap
+00022:  24  notearg
+00023:  24  this
+00024:  24  getprop "m_placeIcon"
+00029:  24  notearg
+00030:  24  call 1
+00033:  24  pop
+00034:  25  this
+00035:  25  null
+00036:  25  setprop "m_placeIcon"
+00041:  25  pop
+00042:  27  string "icon_kongTouxiang"
+00047:  27  setlocal 0
+00050:  27  pop
+00051:  29  this
+00052:  29  name "xs"
+00057:  29  getprop "Factorys"
+00062:  29  getprop "Sprite"
+00067:  29  dup
+00068:  29  callprop "create"
+00073:  29  swap
+00074:  29  notearg
+00075:  29  getlocal 0
+00078:  29  notearg
+00079:  29  string "Cmn01"
+00084:  29  notearg
+00085:  29  call 2
+00088:  29  setprop "m_placeIcon"
+00093:  29  pop
+00094:  30  this
+00095:  30  getprop "m_placeIcon"
+00100:  30  dup
+00101:  30  callprop "setPosition"
+00106:  30  swap
+00107:  30  notearg
+00108:  30  name "cc"
+00113:  30  dup
+00114:  30  callprop "p"
+00119:  30  swap
+00120:  30  notearg
+00121:  30  int8 50
+00123:  30  notearg
+00124:  30  int8 80
+00126:  30  notearg
+00127:  30  call 2
+00130:  30  notearg
+00131:  30  call 1
+00134:  30  pop
+00135:  31  name "xs"
+00140:  31  getprop "Utils"
+00145:  31  getprop "Node"
+00150:  31  dup
+00151:  31  callprop "attachNodes"
+00156:  31  swap
+00157:  31  notearg
+00158:  31  this
+00159:  31  notearg
+00160:  31  this
+00161:  31  getprop "m_placeIcon"
+00166:  31  notearg
+00167:  31  call 2
+00170:  31  pop
+00171:  33  name "xs"
+00176:  33  getprop "Utils"
+00181:  33  getprop "Node"
+00186:  33  dup
+00187:  33  callprop "safeRemoveChild"
+00192:  33  swap
+00193:  33  notearg
+00194:  33  this
+00195:  33  getprop "m_icon"
+00200:  33  notearg
+00201:  33  call 1
+00204:  33  pop
+00205:  34  this
+00206:  34  null
+00207:  34  setprop "m_icon"
+00212:  34  pop
+00213:  36  this
+00214:  36  getprop "b_isLocked"
+00219:  36  ifeq 265 (+46)
+00224:  37  name "xs"
+00229:  37  getprop "Utils"
+00234:  37  getprop "Node"
+00239:  37  dup
+00240:  37  callprop "fastSetVisible"
+00245:  37  swap
+00246:  37  notearg
+00247:  37  this
+00248:  37  getprop "m_lockIconExt"
+00253:  37  notearg
+00254:  37  true
+00255:  37  notearg
+00256:  37  call 2
+00259:  37  pop
+00260:  37  goto 301 (+41)
+00265:  39  name "xs"
+00270:  39  getprop "Utils"
+00275:  39  getprop "Node"
+00280:  39  dup
+00281:  39  callprop "fastSetVisible"
+00286:  39  swap
+00287:  39  notearg
+00288:  39  this
+00289:  39  getprop "m_lockIconExt"
+00294:  39  notearg
+00295:  39  false
+00296:  39  notearg
+00297:  39  call 2
+00300:  39  pop
+00301:  42  this
+00302:  42  getprop "m_data"
+00307:  42  ifeq 501 (+194)
+00312:  47  newinit 1
+00317:  48  true
+00318:  48  initprop "grade"
+00323:  49  true
+00324:  49  initprop "lv"
+00329:  50  true
+00330:  50  initprop "name"
+00335:  51  true
+00336:  51  initprop "breach_lv"
+00341:  52  false
+00342:  52  initprop "lv"
+00347:  53  true
+00348:  53  initprop "skill_type_lieutenant"
+00353:  53  endinit
+00354:  53  setlocal 1
+00357:  53  pop
+00358:  56  this
+00359:  56  name "xs"
+00364:  56  getprop "Views"
+00369:  56  getprop "Icon"
+00374:  56  getprop "IconStyleA"
+00379:  56  dup
+00380:  56  callprop "create"
+00385:  56  swap
+00386:  56  notearg
+00387:  56  getlocal 1
+00390:  56  notearg
+00391:  56  call 1
+00394:  56  setprop "m_icon"
+00399:  56  pop
+00400:  57  this
+00401:  57  getprop "m_icon"
+00406:  57  dup
+00407:  57  callprop "reloadData"
+00412:  57  swap
+00413:  57  notearg
+00414:  57  this
+00415:  57  getprop "m_data"
+00420:  57  notearg
+00421:  57  call 1
+00424:  57  pop
+00425:  58  this
+00426:  58  getprop "m_icon"
+00431:  58  dup
+00432:  58  callprop "setPosition"
+00437:  58  swap
+00438:  58  notearg
+00439:  58  this
+00440:  58  getprop "m_innerBtn"
+00445:  58  dup
+00446:  58  callprop "getPosition"
+00451:  58  swap
+00452:  58  notearg
+00453:  58  call 0
+00456:  58  notearg
+00457:  58  call 1
+00460:  58  pop
+00461:  59  name "xs"
+00466:  59  getprop "Utils"
+00471:  59  getprop "Node"
+00476:  59  dup
+00477:  59  callprop "attachNodes"
+00482:  59  swap
+00483:  59  notearg
+00484:  59  this
+00485:  59  notearg
+00486:  59  this
+00487:  59  getprop "m_icon"
+00492:  59  notearg
+00493:  59  null
+00494:  59  notearg
+00495:  59  null
+00496:  59  notearg
+00497:  59  call 4
+00500:  59  pop
+00501:  64  this
+00502:  64  getprop "b_equipEnabled"
+00507:  64  ifeq 1026 (+519)
+00512:  65  this
+00513:  65  getprop "m_equipEnabledIcon"
+00518:  65  not
+00519:  65  ifeq 873 (+354)
+00524:  66  this
+00525:  66  name "xs"
+00530:  66  getprop "Factorys"
+00535:  66  getprop "Sprite"
+00540:  66  dup
+00541:  66  callprop "create"
+00546:  66  swap
+00547:  66  notearg
+00548:  66  string "icon_lt_joinEnabled"
+00553:  66  notearg
+00554:  66  string "Cmn02"
+00559:  66  notearg
+00560:  66  call 2
+00563:  66  setprop "m_equipEnabledIcon"
+00568:  66  pop
+00569:  67  this
+00570:  67  getprop "m_equipEnabledIcon"
+00575:  67  dup
+00576:  67  callprop "setAnchorPoint"
+00581:  67  swap
+00582:  67  notearg
+00583:  67  name "cc"
+00588:  67  dup
+00589:  67  callprop "p"
+00594:  67  swap
+00595:  67  notearg
+00596:  67  zero
+00597:  67  notearg
+00598:  67  one
+00599:  67  notearg
+00600:  67  call 2
+00603:  67  notearg
+00604:  67  call 1
+00607:  67  pop
+00608:  68  this
+00609:  68  getprop "m_equipEnabledIcon"
+00614:  68  dup
+00615:  68  callprop "setZOrder"
+00620:  68  swap
+00621:  68  notearg
+00622:  68  int8 10
+00624:  68  notearg
+00625:  68  call 1
+00628:  68  pop
+00629:  69  name "xs"
+00634:  69  getprop "Utils"
+00639:  69  getprop "Node"
+00644:  69  dup
+00645:  69  callprop "attachNodes"
+00650:  69  swap
+00651:  69  notearg
+00652:  69  this
+00653:  69  notearg
+00654:  69  this
+00655:  69  getprop "m_equipEnabledIcon"
+00660:  69  notearg
+00661:  69  newinit 1
+00666:  70  string "lt"
+00671:  70  initprop "desc"
+00676:  70  name "cc"
+00681:  70  dup
+00682:  70  callprop "p"
+00687:  70  swap
+00688:  70  notearg
+00689:  70  zero
+00690:  70  notearg
+00691:  70  int8 2
+00693:  70  notearg
+00694:  70  call 2
+00697:  70  initprop "offset"
+00702:  70  endinit
+00703:  70  notearg
+00704:  70  call 3
+00707:  70  pop
+00708:  73  this
+00709:  73  name "xs"
+00714:  73  getprop "Factorys"
+00719:  73  getprop "Sprite"
+00724:  73  dup
+00725:  73  callprop "create"
+00730:  73  swap
+00731:  73  notearg
+00732:  73  string "icon_lt_equipEnabled_btm"
+00737:  73  notearg
+00738:  73  string "Cmn02"
+00743:  73  notearg
+00744:  73  call 2
+00747:  73  setprop "m_equipEnabledIconBtm"
+00752:  73  pop
+00753:  74  this
+00754:  74  getprop "m_equipEnabledIconBtm"
+00759:  74  dup
+00760:  74  callprop "setZOrder"
+00765:  74  swap
+00766:  74  notearg
+00767:  74  int8 -1
+00769:  74  notearg
+00770:  74  call 1
+00773:  74  pop
+00774:  75  this
+00775:  75  getprop "m_equipEnabledIconBtm"
+00780:  75  dup
+00781:  75  callprop "setOpacity"
+00786:  75  swap
+00787:  75  notearg
+00788:  75  zero
+00789:  75  notearg
+00790:  75  call 1
+00793:  75  pop
+00794:  76  name "xs"
+00799:  76  getprop "Utils"
+00804:  76  getprop "Node"
+00809:  76  dup
+00810:  76  callprop "attachNodes"
+00815:  76  swap
+00816:  76  notearg
+00817:  76  this
+00818:  76  notearg
+00819:  76  this
+00820:  76  getprop "m_equipEnabledIconBtm"
+00825:  76  notearg
+00826:  76  newinit 1
+00831:  77  string "c"
+00836:  77  initprop "desc"
+00841:  77  name "cc"
+00846:  77  dup
+00847:  77  callprop "p"
+00852:  77  swap
+00853:  77  notearg
+00854:  77  zero
+00855:  77  notearg
+00856:  77  int8 15
+00858:  77  notearg
+00859:  77  call 2
+00862:  77  initprop "offset"
+00867:  77  endinit
+00868:  77  notearg
+00869:  77  call 3
+00872:  77  pop
+00873:  80  this
+00874:  80  getprop "m_equipEnabledIconBtm"
+00879:  80  dup
+00880:  80  callprop "stopAllActions"
+00885:  80  swap
+00886:  80  notearg
+00887:  80  call 0
+00890:  80  pop
+00891:  81  this
+00892:  81  getprop "m_equipEnabledIconBtm"
+00897:  81  dup
+00898:  81  callprop "setOpacity"
+00903:  81  swap
+00904:  81  notearg
+00905:  81  zero
+00906:  81  notearg
+00907:  81  call 1
+00910:  81  pop
+00911:  83  this
+00912:  83  getprop "m_equipEnabledIconBtm"
+00917:  83  dup
+00918:  83  callprop "runAction"
+00923:  83  swap
+00924:  83  notearg
+00925:  83  name "cc"
+00930:  83  getprop "RepeatForever"
+00935:  83  dup
+00936:  83  callprop "create"
+00941:  83  swap
+00942:  83  notearg
+00943:  83  name "cc"
+00948:  83  getprop "Sequence"
+00953:  83  dup
+00954:  83  callprop "create"
+00959:  83  swap
+00960:  83  notearg
+00961:  84  name "cc"
+00966:  84  getprop "FadeIn"
+00971:  84  dup
+00972:  84  callprop "create"
+00977:  84  swap
+00978:  84  notearg
+00979:  84  one
+00980:  84  notearg
+00981:  84  call 1
+00984:  84  notearg
+00985:  85  name "cc"
+00990:  85  getprop "FadeOut"
+00995:  85  dup
+00996:  85  callprop "create"
+01001:  85  swap
+01002:  85  notearg
+01003:  85  one
+01004:  85  notearg
+01005:  85  call 1
+01008:  85  notearg
+01009:  85  call 2
+01012:  85  notearg
+01013:  85  call 1
+01016:  85  notearg
+01017:  85  call 1
+01020:  85  pop
+01021:  85  goto 1100 (+79)
+01026:  89  this
+01027:  89  getprop "m_equipEnabledIcon"
+01032:  89  ifeq 1063 (+31)
+01037:  90  this
+01038:  90  getprop "m_equipEnabledIcon"
+01043:  90  dup
+01044:  90  callprop "removeFromParent"
+01049:  90  swap
+01050:  90  notearg
+01051:  90  call 0
+01054:  90  pop
+01055:  91  this
+01056:  91  null
+01057:  91  setprop "m_equipEnabledIcon"
+01062:  91  pop
+01063:  93  this
+01064:  93  getprop "m_equipEnabledIconBtm"
+01069:  93  ifeq 1100 (+31)
+01074:  94  this
+01075:  94  getprop "m_equipEnabledIconBtm"
+01080:  94  dup
+01081:  94  callprop "removeFromParent"
+01086:  94  swap
+01087:  94  notearg
+01088:  94  call 0
+01091:  94  pop
+01092:  95  this
+01093:  95  null
+01094:  95  setprop "m_equipEnabledIconBtm"
+01099:  95  pop
+01100:  97  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamIconButton_Buddy.js:22 ---
+;; function object[2] create
+;; function metadata object[2] nargs=2 bindings=3
+;; arg[0] playerId
+;; arg[1] playerData
+;; local[0] btn
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamIconButton_Buddy.js:101 ---
+loc   line  op
+----- ----  --
+main:
+00000: 102  name "xs"
+00005: 102  getprop "Views"
+00010: 102  getprop "TeamIconButton_Buddy"
+00015: 102  undefined
+00016: 102  notearg
+00017: 102  new 0
+00020: 102  setlocal 0
+00023: 102  pop
+00024: 103  getlocal 0
+00027: 103  and 55 (+28)
+00032: 103  pop
+00033: 103  getlocal 0
+00036: 103  dup
+00037: 103  callprop "init"
+00042: 103  swap
+00043: 103  notearg
+00044: 103  getarg 0
+00047: 103  notearg
+00048: 103  getarg 1
+00051: 103  notearg
+00052: 103  call 2
+00055: 103  ifeq 64 (+9)
+00060: 104  getlocal 0
+00063: 104  return
+00064: 106  name "xs"
+00069: 106  dup
+00070: 106  callprop "warn"
+00075: 106  swap
+00076: 106  notearg
+00077: 106  string "xs.Views.TeamIconButton_Buddy.create error!"
+00082: 106  notearg
+00083: 106  call 1
+00086: 106  pop
+00087: 107  null
+00088: 107  return
+00089: 107  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamIconButton_Buddy.js:101 ---

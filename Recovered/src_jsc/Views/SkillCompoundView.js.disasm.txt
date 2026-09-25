@@ -1,0 +1,631 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SkillCompoundView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=99 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "cc"
+00015:   6  getprop "Layer"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  lambda (function () {
+    [sourceless code]
+})
+00038:   7  initprop "ctor"
+00043:  12  lambda (function () {
+    [sourceless code]
+})
+00048:  12  initprop "init"
+00053:  46  lambda (function () {
+    [sourceless code]
+})
+00058:  46  initprop "onEnter"
+00063:  58  lambda (function () {
+    [sourceless code]
+})
+00068:  58  initprop "setBaseTouchPriority"
+00073:  58  endinit
+00074:  58  notearg
+00075:  58  call 1
+00078:  58  setprop "SkillCompoundView"
+00083:  58  popv
+00084:  66  name "xs"
+00089:  66  getprop "Views"
+00094:  66  getprop "SkillCompoundView"
+00099:  66  lambda (function () {
+    [sourceless code]
+})
+00104:  66  setprop "create"
+00109:  66  popv
+00110:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  dup
+00002:   8  callprop "_super"
+00007:   8  swap
+00008:   8  notearg
+00009:   8  call 0
+00012:   8  pop
+00013:   9  name "cc"
+00018:   9  dup
+00019:   9  callprop "associateWithNative"
+00024:   9  swap
+00025:   9  notearg
+00026:   9  this
+00027:   9  notearg
+00028:   9  name "cc"
+00033:   9  getprop "Layer"
+00038:   9  notearg
+00039:   9  call 2
+00042:   9  pop
+00043:   9  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:7 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] skillModel
+;; local[0] card
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=616 object[0]
+;; FUNCTION-MAP kind=lambda offset=800 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "_super"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  call 0
+00012:  13  not
+00013:  13  ifeq 20 (+7)
+00018:  14  false
+00019:  14  return
+00020:  17  this
+00021:  17  name "xs"
+00026:  17  getprop "Views"
+00031:  17  getprop "Armature"
+00036:  17  getprop "AutoAudioArmature"
+00041:  17  dup
+00042:  17  callprop "create"
+00047:  17  swap
+00048:  17  notearg
+00049:  17  string "Arm_Reincarnation"
+00054:  17  notearg
+00055:  17  call 1
+00058:  17  setprop "armLight"
+00063:  17  pop
+00064:  18  name "xs"
+00069:  18  getprop "Utils"
+00074:  18  getprop "Node"
+00079:  18  dup
+00080:  18  callprop "attachNodes"
+00085:  18  swap
+00086:  18  notearg
+00087:  18  this
+00088:  18  notearg
+00089:  18  this
+00090:  18  getprop "armLight"
+00095:  18  notearg
+00096:  18  newinit 1
+00101:  18  string "c"
+00106:  18  initprop "desc"
+00111:  18  name "cc"
+00116:  18  dup
+00117:  18  callprop "p"
+00122:  18  swap
+00123:  18  notearg
+00124:  18  zero
+00125:  18  notearg
+00126:  18  zero
+00127:  18  notearg
+00128:  18  call 2
+00131:  18  initprop "offset"
+00136:  18  endinit
+00137:  18  notearg
+00138:  18  call 3
+00141:  18  pop
+00142:  19  this
+00143:  19  getprop "armLight"
+00148:  19  dup
+00149:  19  callprop "playAniById"
+00154:  19  swap
+00155:  19  notearg
+00156:  19  string "idle"
+00161:  19  notearg
+00162:  19  newinit 1
+00167:  19  false
+00168:  19  initprop "loop"
+00173:  19  one
+00174:  19  initprop "speed"
+00179:  19  endinit
+00180:  19  notearg
+00181:  19  call 2
+00184:  19  pop
+00185:  21  this
+00186:  21  name "xs"
+00191:  21  getprop "Views"
+00196:  21  getprop "Armature"
+00201:  21  getprop "AutoAudioArmature"
+00206:  21  dup
+00207:  21  callprop "create"
+00212:  21  swap
+00213:  21  notearg
+00214:  21  string "Arm_Reincarnation"
+00219:  21  notearg
+00220:  21  call 1
+00223:  21  setprop "arm"
+00228:  21  pop
+00229:  22  getaliasedvar "skillModel" (hops = 0, slot = 2)
+00238:  22  dup
+00239:  22  callprop "createCard_Detail"
+00244:  22  swap
+00245:  22  notearg
+00246:  22  call 0
+00249:  22  setlocal 0
+00252:  22  pop
+00253:  23  this
+00254:  23  getprop "arm"
+00259:  23  dup
+00260:  23  callprop "replaceSkin"
+00265:  23  swap
+00266:  23  notearg
+00267:  23  string "card"
+00272:  23  notearg
+00273:  23  getlocal 0
+00276:  23  notearg
+00277:  23  call 2
+00280:  23  pop
+00281:  24  this
+00282:  24  getprop "arm"
+00287:  24  dup
+00288:  24  callprop "replaceSkin"
+00293:  24  swap
+00294:  24  notearg
+00295:  24  string "text"
+00300:  24  notearg
+00301:  24  name "xs"
+00306:  24  getprop "Factorys"
+00311:  24  getprop "Label"
+00316:  24  dup
+00317:  24  callprop "createByStyleIdWithStringId"
+00322:  24  swap
+00323:  24  notearg
+00324:  24  string "LS_wujiangName1"
+00329:  24  notearg
+00330:  24  string "1070910053"
+00335:  24  notearg
+00336:  24  call 2
+00339:  24  notearg
+00340:  24  call 2
+00343:  24  pop
+00344:  25  name "xs"
+00349:  25  getprop "Utils"
+00354:  25  getprop "Node"
+00359:  25  dup
+00360:  25  callprop "attachNodes"
+00365:  25  swap
+00366:  25  notearg
+00367:  25  this
+00368:  25  notearg
+00369:  25  this
+00370:  25  getprop "arm"
+00375:  25  notearg
+00376:  25  newinit 1
+00381:  25  string "c"
+00386:  25  initprop "desc"
+00391:  25  name "cc"
+00396:  25  dup
+00397:  25  callprop "p"
+00402:  25  swap
+00403:  25  notearg
+00404:  25  zero
+00405:  25  notearg
+00406:  25  int8 20
+00408:  25  notearg
+00409:  25  call 2
+00412:  25  initprop "offset"
+00417:  25  endinit
+00418:  25  notearg
+00419:  25  call 3
+00422:  25  pop
+00423:  26  this
+00424:  26  getprop "arm"
+00429:  26  dup
+00430:  26  callprop "playAniById"
+00435:  26  swap
+00436:  26  notearg
+00437:  26  string "idle"
+00442:  26  notearg
+00443:  26  newinit 1
+00448:  26  false
+00449:  26  initprop "loop"
+00454:  26  one
+00455:  26  initprop "speed"
+00460:  26  endinit
+00461:  26  notearg
+00462:  26  call 2
+00465:  26  pop
+00466:  28  this
+00467:  28  name "xs"
+00472:  28  getprop "Views"
+00477:  28  getprop "Btn"
+00482:  28  dup
+00483:  28  callprop "createInvisible"
+00488:  28  swap
+00489:  28  notearg
+00490:  28  name "cc"
+00495:  28  dup
+00496:  28  callprop "size"
+00501:  28  swap
+00502:  28  notearg
+00503:  28  uint16 310
+00506:  28  notearg
+00507:  28  uint16 430
+00510:  28  notearg
+00511:  28  call 2
+00514:  28  notearg
+00515:  28  call 1
+00518:  28  setprop "cardBtn"
+00523:  28  pop
+00524:  29  name "xs"
+00529:  29  getprop "Utils"
+00534:  29  getprop "Node"
+00539:  29  dup
+00540:  29  callprop "attachNodes"
+00545:  29  swap
+00546:  29  notearg
+00547:  29  this
+00548:  29  notearg
+00549:  29  this
+00550:  29  getprop "cardBtn"
+00555:  29  notearg
+00556:  29  newinit 1
+00561:  29  string "c"
+00566:  29  initprop "desc"
+00571:  29  name "cc"
+00576:  29  dup
+00577:  29  callprop "p"
+00582:  29  swap
+00583:  29  notearg
+00584:  29  zero
+00585:  29  notearg
+00586:  29  zero
+00587:  29  notearg
+00588:  29  call 2
+00591:  29  initprop "offset"
+00596:  29  endinit
+00597:  29  notearg
+00598:  29  call 3
+00601:  29  pop
+00602:  30  this
+00603:  30  getprop "cardBtn"
+00608:  30  dup
+00609:  30  callprop "setOnClickCallBack"
+00614:  30  swap
+00615:  30  notearg
+00616:  30  lambda (function () {
+    [sourceless code]
+})
+00621:  30  dup
+00622:  30  callprop "bind"
+00627:  30  swap
+00628:  30  notearg
+00629:  33  this
+00630:  33  notearg
+00631:  33  call 1
+00634:  33  notearg
+00635:  33  call 1
+00638:  33  pop
+00639:  36  this
+00640:  36  name "xs"
+00645:  36  getprop "Views"
+00650:  36  getprop "Btn"
+00655:  36  dup
+00656:  36  callprop "createWithStringId"
+00661:  36  swap
+00662:  36  notearg
+00663:  36  string "Btn_Default"
+00668:  36  notearg
+00669:  36  string "1071310061"
+00674:  36  notearg
+00675:  36  call 2
+00678:  36  setprop "confirmBtn"
+00683:  36  pop
+00684:  37  this
+00685:  37  getprop "confirmBtn"
+00690:  37  dup
+00691:  37  callprop "setAnchorPoint"
+00696:  37  swap
+00697:  37  notearg
+00698:  37  name "cc"
+00703:  37  dup
+00704:  37  callprop "p"
+00709:  37  swap
+00710:  37  notearg
+00711:  37  double 0.5
+00716:  37  notearg
+00717:  37  zero
+00718:  37  notearg
+00719:  37  call 2
+00722:  37  notearg
+00723:  37  call 1
+00726:  37  pop
+00727:  38  name "xs"
+00732:  38  getprop "Utils"
+00737:  38  getprop "Node"
+00742:  38  dup
+00743:  38  callprop "attachNodes"
+00748:  38  swap
+00749:  38  notearg
+00750:  38  this
+00751:  38  notearg
+00752:  38  this
+00753:  38  getprop "confirmBtn"
+00758:  38  notearg
+00759:  38  newinit 1
+00764:  38  string "cb"
+00769:  38  initprop "desc"
+00774:  38  true
+00775:  38  initprop "sc"
+00780:  38  endinit
+00781:  38  notearg
+00782:  38  call 3
+00785:  38  pop
+00786:  39  this
+00787:  39  getprop "confirmBtn"
+00792:  39  dup
+00793:  39  callprop "setOnClickCallBack"
+00798:  39  swap
+00799:  39  notearg
+00800:  39  lambda (function () {
+    [sourceless code]
+})
+00805:  39  dup
+00806:  39  callprop "bind"
+00811:  39  swap
+00812:  39  notearg
+00813:  41  this
+00814:  41  notearg
+00815:  41  call 1
+00818:  41  notearg
+00819:  41  call 1
+00822:  41  pop
+00823:  43  true
+00824:  43  return
+00825:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:12 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  32  name "xs"
+00005:  32  getprop "Views"
+00010:  32  getprop "Mgr"
+00015:  32  dup
+00016:  32  callprop "showDialogByName"
+00021:  32  swap
+00022:  32  notearg
+00023:  32  string "SkillNoPanel"
+00028:  32  notearg
+00029:  32  newinit 1
+00034:  32  getaliasedvar "skillModel" (hops = 0, slot = 2)
+00043:  32  initprop "skillData"
+00048:  32  endinit
+00049:  32  notearg
+00050:  32  call 2
+00053:  32  pop
+00054:  32  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:30 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  this
+00001:  40  dup
+00002:  40  callprop "getParent"
+00007:  40  swap
+00008:  40  notearg
+00009:  40  call 0
+00012:  40  dup
+00013:  40  callprop "back"
+00018:  40  swap
+00019:  40  notearg
+00020:  40  call 0
+00023:  40  pop
+00024:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:39 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  48  this
+00001:  48  dup
+00002:  48  callprop "runAction"
+00007:  48  swap
+00008:  48  notearg
+00009:  49  name "xs"
+00014:  49  getprop "Utils"
+00019:  49  getprop "Action"
+00024:  49  dup
+00025:  49  callprop "combineSequence"
+00030:  49  swap
+00031:  49  notearg
+00032:  50  newarray 2
+00036:  51  this
+00037:  51  getprop "arm"
+00042:  51  dup
+00043:  51  callprop "createPlayAction"
+00048:  51  swap
+00049:  51  notearg
+00050:  51  string "reincarnation"
+00055:  51  notearg
+00056:  51  newinit 1
+00061:  51  one
+00062:  51  initprop "speed"
+00067:  51  false
+00068:  51  initprop "loop"
+00073:  51  endinit
+00074:  51  notearg
+00075:  51  call 2
+00078:  51  initelem_array 0
+00082:  52  this
+00083:  52  getprop "armLight"
+00088:  52  dup
+00089:  52  callprop "createPlayAction"
+00094:  52  swap
+00095:  52  notearg
+00096:  52  string "lightFlash"
+00101:  52  notearg
+00102:  52  newinit 1
+00107:  52  true
+00108:  52  initprop "loop"
+00113:  52  one
+00114:  52  initprop "speed"
+00119:  52  endinit
+00120:  52  notearg
+00121:  52  call 2
+00124:  52  initelem_array 1
+00128:  52  endinit
+00129:  52  notearg
+00130:  52  call 1
+00133:  52  notearg
+00134:  52  call 1
+00137:  52  pop
+00138:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:46 ---
+;; function object[3] setBaseTouchPriority
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  this
+00001:  59  getarg 0
+00004:  59  setprop "m_basePriority"
+00009:  59  pop
+00010:  60  this
+00011:  60  dup
+00012:  60  callprop "setTouchPriority"
+00017:  60  swap
+00018:  60  notearg
+00019:  60  this
+00020:  60  getprop "m_basePriority"
+00025:  60  notearg
+00026:  60  call 1
+00029:  60  pop
+00030:  61  this
+00031:  61  getprop "confirmBtn"
+00036:  61  dup
+00037:  61  callprop "setTouchPriority"
+00042:  61  swap
+00043:  61  notearg
+00044:  61  this
+00045:  61  getprop "m_basePriority"
+00050:  61  one
+00051:  61  sub
+00052:  61  notearg
+00053:  61  call 1
+00056:  61  pop
+00057:  62  this
+00058:  62  getprop "cardBtn"
+00063:  62  dup
+00064:  62  callprop "setTouchPriority"
+00069:  62  swap
+00070:  62  notearg
+00071:  62  this
+00072:  62  getprop "m_basePriority"
+00077:  62  one
+00078:  62  sub
+00079:  62  notearg
+00080:  62  call 1
+00083:  62  pop
+00084:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:58 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] skillModel
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:66 ---
+loc   line  op
+----- ----  --
+main:
+00000:  67  name "xs"
+00005:  67  getprop "Views"
+00010:  67  getprop "SkillCompoundView"
+00015:  67  undefined
+00016:  67  notearg
+00017:  67  new 0
+00020:  67  setlocal 0
+00023:  67  pop
+00024:  68  getlocal 0
+00027:  68  and 51 (+24)
+00032:  68  pop
+00033:  68  getlocal 0
+00036:  68  dup
+00037:  68  callprop "init"
+00042:  68  swap
+00043:  68  notearg
+00044:  68  getarg 0
+00047:  68  notearg
+00048:  68  call 1
+00051:  68  ifeq 60 (+9)
+00056:  69  getlocal 0
+00059:  69  return
+00060:  72  name "xs"
+00065:  72  dup
+00066:  72  callprop "assert"
+00071:  72  swap
+00072:  72  notearg
+00073:  72  false
+00074:  72  notearg
+00075:  72  string "xs.Views.SkillCompoundView.create fail!"
+00080:  72  notearg
+00081:  72  getlocal 0
+00084:  72  notearg
+00085:  72  call 3
+00088:  72  pop
+00089:  74  null
+00090:  74  return
+00091:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillCompoundView.js:66 ---

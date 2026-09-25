@@ -1,0 +1,87 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+import os
+import sys
+import subprocess
+from build import err
+
+Import('ARGUMENTS','PRO','sgscq')
+# 平台
+_platform = str(ARGUMENTS.get('platform'))
+# print _platform,type(_platform)
+# 工程目录
+_workdir = str(PRO['dirpathandname'])
+# 模式
+_mode = str(ARGUMENTS.get('mode'))
+# print '_workdir is ',_workdir
+# builder
+# 得到当前目录位置
+_onPath = sys.path[0]
+# 得到cocos2d.py console 的位置
+cocos2dpyPath = os.path.split(os.path.split(os.path.split(_workdir)[0])[0])[0]+"/tools/cocos2d-console/console/bin/jsbcc "
+# cocos2d.py加入到搜索路径
+# sys.path.append(cocos2dpyPath)
+# print 'cocos2dpyPath',cocos2dpyPath
+# jsCompileExecutePath = 'jsbcc '
+def jscompile(target,source, env):
+	_targetFile = str(target[0])
+	_sourceFile = str(source[0])
+	# print '_sourceFile',_sourceFile
+	# print '_targetFile',_targetFile
+	
+	jsCompileExecutePath = ''.join([cocos2dpyPath,_sourceFile,' ',_targetFile])
+	ret = subprocess.call(jsCompileExecutePath,shell=True)
+	if ret != 0:
+		err(_sourceFile + ' compile error')
+		exit(0)
+	pass
+
+_builder = Builder(action = jscompile)
+sgscq.Append(BUILDERS={'jscompile':_builder})
+
+def android_release():
+	_targetDir = _workdir+'/assets/src_jsc'
+	# 处理当前目录的js
+	fileNameList = Glob('*.js',strings=True)
+	for fileName in fileNameList:
+		_sourceFile = fileName
+		_targetFile = ''.join([_targetDir,'/',_sourceFile])
+		tmp = os.path.splitext(_targetFile)
+		_newTagetName = ''.join([tmp[0],'.jsc'])
+		# print _sourceFile
+		# print _targetFile
+		sgscq.cp(_newTagetName,_sourceFile)
+		sgscq.jscompile(_newTagetName,_sourceFile)
+	# 得到所有文件，包括子文件夹的名字
+	allList = os.listdir(_onPath)
+	for _file in allList:
+		# print 'os.path.isdir(_file) ',os.path.isdir(_file)
+	 	if os.path.isdir(_file):
+	 		_targetDir = ''.join([_workdir,'/assets/src_jsc/'])
+			for rootPath, directory, files in os.walk(_file):
+				for fileName in files:
+					_sourceFile = ''.join([rootPath,'/',fileName])
+					_targetFile = ''.join([_targetDir,_sourceFile])
+					# print '_targetFile',_targetFile
+					tmp = os.path.splitext(_targetFile)
+					_newTagetName = ''.join([tmp[0],'.jsc'])
+					# print '_newTagetName',_newTagetName
+					sgscq.jscompile(_newTagetName,_sourceFile)
+	# # src: .js所在目录
+	# print '_targetDir',_targetDir
+	# sgscq.jscompile(_targetDir)
+	pass
+def ios_release():
+	# XCODE已经做好拷贝规则
+	pass
+if _platform == 'android':
+	if _mode == 'RELEASE':
+		android_release()
+elif _platform == 'ios':
+	if _mode == 'RELEASE':
+		ios_release()
+	pass
+	
+
+

@@ -1,0 +1,1802 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Social/SocialView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=86 object[0]
+;; FUNCTION-MAP kind=lambda offset=96 object[1]
+;; FUNCTION-MAP kind=lambda offset=106 object[2]
+;; FUNCTION-MAP kind=lambda offset=116 object[3]
+;; FUNCTION-MAP kind=lambda offset=126 object[4]
+;; FUNCTION-MAP kind=lambda offset=136 object[5]
+;; FUNCTION-MAP kind=lambda offset=146 object[6]
+;; FUNCTION-MAP kind=lambda offset=156 object[7]
+;; FUNCTION-MAP kind=lambda offset=166 object[8]
+;; FUNCTION-MAP kind=lambda offset=176 object[9]
+;; FUNCTION-MAP kind=lambda offset=212 object[10]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Views"
+00010:   7  one
+00011:   7  setprop "SocialView_Type_QuasiFriends"
+00016:   7  popv
+00017:   8  name "xs"
+00022:   8  getprop "Views"
+00027:   8  int8 2
+00029:   8  setprop "SocialView_Type_Friends"
+00034:   8  popv
+00035:   9  name "xs"
+00040:   9  getprop "Views"
+00045:   9  int8 3
+00047:   9  setprop "SocialView_Type_Foe"
+00052:   9  popv
+00053:  11  name "xs"
+00058:  11  getprop "Views"
+00063:  11  name "cc"
+00068:  11  getprop "Layer"
+00073:  11  dup
+00074:  11  callprop "extend"
+00079:  11  swap
+00080:  11  notearg
+00081:  11  newinit 1
+00086:  12  lambda (function () {
+    [sourceless code]
+})
+00091:  12  initprop "ctor"
+00096:  17  lambda (function () {
+    [sourceless code]
+})
+00101:  17  initprop "init"
+00106:  85  lambda (function () {
+    [sourceless code]
+})
+00111:  85  initprop "onEnter"
+00116:  99  lambda (function () {
+    [sourceless code]
+})
+00121:  99  initprop "onExit"
+00126: 112  lambda (function () {
+    [sourceless code]
+})
+00131: 112  initprop "onResponse"
+00136: 171  lambda (function () {
+    [sourceless code]
+})
+00141: 171  initprop "onSearchBtnClicked"
+00146: 180  lambda (function () {
+    [sourceless code]
+})
+00151: 180  initprop "onSearchCallBack"
+00156: 237  lambda (function () {
+    [sourceless code]
+})
+00161: 237  initprop "onSearchResponse"
+00166: 248  lambda (function () {
+    [sourceless code]
+})
+00171: 248  initprop "updateSocial"
+00176: 279  lambda (function () {
+    [sourceless code]
+})
+00181: 279  initprop "saveViewInfo"
+00186: 279  endinit
+00187: 279  notearg
+00188: 279  call 1
+00191: 279  setprop "SocialView"
+00196: 279  popv
+00197: 287  name "xs"
+00202: 287  getprop "Views"
+00207: 287  getprop "SocialView"
+00212: 287  lambda (function () {
+    [sourceless code]
+})
+00217: 287  setprop "create"
+00222: 287  popv
+00223: 293  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "_super"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  call 0
+00012:  13  pop
+00013:  14  name "cc"
+00018:  14  dup
+00019:  14  callprop "associateWithNative"
+00024:  14  swap
+00025:  14  notearg
+00026:  14  this
+00027:  14  notearg
+00028:  14  name "cc"
+00033:  14  getprop "Layer"
+00038:  14  notearg
+00039:  14  call 2
+00042:  14  pop
+00043:  14  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:12 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=5
+;; arg[0] type
+;; local[0] visibleSize
+;; local[1] searchBtn
+;; local[2] editBg
+;; local[3] pos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  this
+00001:  18  dup
+00002:  18  callprop "_super"
+00007:  18  swap
+00008:  18  notearg
+00009:  18  call 0
+00012:  18  not
+00013:  18  ifeq 20 (+7)
+00018:  19  false
+00019:  19  return
+00020:  22  this
+00021:  22  getarg 0
+00024:  22  setprop "viewType"
+00029:  22  pop
+00030:  23  name "cc"
+00035:  23  getprop "Director"
+00040:  23  dup
+00041:  23  callprop "getInstance"
+00046:  23  swap
+00047:  23  notearg
+00048:  23  call 0
+00051:  23  dup
+00052:  23  callprop "getVisibleSize"
+00057:  23  swap
+00058:  23  notearg
+00059:  23  call 0
+00062:  23  setlocal 0
+00065:  23  pop
+00066:  25  this
+00067:  25  name "xs"
+00072:  25  getprop "Views"
+00077:  25  getprop "Table"
+00082:  25  getprop "SocialTableView"
+00087:  25  dup
+00088:  25  callprop "create"
+00093:  25  swap
+00094:  25  notearg
+00095:  25  call 0
+00098:  25  setprop "socialTableView"
+00103:  25  pop
+00104:  26  name "xs"
+00109:  26  getprop "Utils"
+00114:  26  getprop "Node"
+00119:  26  dup
+00120:  26  callprop "attachNodes"
+00125:  26  swap
+00126:  26  notearg
+00127:  26  this
+00128:  26  notearg
+00129:  26  this
+00130:  26  getprop "socialTableView"
+00135:  26  notearg
+00136:  26  newinit 1
+00141:  27  string "lb"
+00146:  27  initprop "desc"
+00151:  28  name "xs"
+00156:  28  getprop "Views"
+00161:  28  getprop "TablePage"
+00166:  28  dup
+00167:  28  callprop "getTableViewOffset"
+00172:  28  swap
+00173:  28  notearg
+00174:  28  call 0
+00177:  28  initprop "offset"
+00182:  29  true
+00183:  29  initprop "sc"
+00188:  29  endinit
+00189:  29  notearg
+00190:  29  call 3
+00193:  29  pop
+00194:  33  this
+00195:  33  getprop "viewType"
+00200:  33  name "xs"
+00205:  33  getprop "Views"
+00210:  33  getprop "SocialView_Type_QuasiFriends"
+00215:  33  stricteq
+00216:  33  or 244 (+28)
+00221:  33  pop
+00222:  34  this
+00223:  34  getprop "viewType"
+00228:  34  name "xs"
+00233:  34  getprop "Views"
+00238:  34  getprop "SocialView_Type_Friends"
+00243:  34  stricteq
+00244:  34  ifeq 1163 (+919)
+00249:  35  this
+00250:  35  name "xs"
+00255:  35  getprop "ccb_reader"
+00260:  35  dup
+00261:  35  callprop "load"
+00266:  35  swap
+00267:  35  notearg
+00268:  35  string "ccb3/0_6_3_SearchEditor.ccbi"
+00273:  35  notearg
+00274:  35  this
+00275:  35  notearg
+00276:  35  call 2
+00279:  35  setprop "searchCcbNode"
+00284:  35  pop
+00285:  36  this
+00286:  36  getprop "searchCcbNode"
+00291:  36  dup
+00292:  36  callprop "setContentSize"
+00297:  36  swap
+00298:  36  notearg
+00299:  36  name "cc"
+00304:  36  dup
+00305:  36  callprop "size"
+00310:  36  swap
+00311:  36  notearg
+00312:  36  uint16 409
+00315:  36  notearg
+00316:  36  int8 48
+00318:  36  notearg
+00319:  36  call 2
+00322:  36  notearg
+00323:  36  call 1
+00326:  36  pop
+00327:  37  this
+00328:  37  getprop "searchCcbNode"
+00333:  37  dup
+00334:  37  callprop "setAnchorPoint"
+00339:  37  swap
+00340:  37  notearg
+00341:  37  name "cc"
+00346:  37  dup
+00347:  37  callprop "p"
+00352:  37  swap
+00353:  37  notearg
+00354:  37  double 0.5
+00359:  37  notearg
+00360:  37  one
+00361:  37  notearg
+00362:  37  call 2
+00365:  37  notearg
+00366:  37  call 1
+00369:  37  pop
+00370:  38  name "xs"
+00375:  38  getprop "Utils"
+00380:  38  getprop "Node"
+00385:  38  dup
+00386:  38  callprop "attachNodes"
+00391:  38  swap
+00392:  38  notearg
+00393:  38  this
+00394:  38  notearg
+00395:  38  this
+00396:  38  getprop "searchCcbNode"
+00401:  38  notearg
+00402:  38  newinit 1
+00407:  39  string "lt"
+00412:  39  initprop "desc"
+00417:  40  name "cc"
+00422:  40  dup
+00423:  40  callprop "p"
+00428:  40  swap
+00429:  40  notearg
+00430:  40  uint16 360
+00433:  40  getlocal 0
+00436:  40  getprop "width"
+00441:  40  uint16 360
+00444:  40  sub
+00445:  40  name "xs"
+00450:  40  getprop "Views"
+00455:  40  getprop "MainMenuView"
+00460:  40  getprop "Width"
+00465:  40  sub
+00466:  40  int8 2
+00468:  40  div
+00469:  40  add
+00470:  40  notearg
+00471:  40  int8 -45
+00473:  40  notearg
+00474:  40  call 2
+00477:  40  initprop "offset"
+00482:  41  true
+00483:  41  initprop "sc"
+00488:  41  endinit
+00489:  41  notearg
+00490:  41  call 3
+00493:  41  pop
+00494:  44  this
+00495:  44  getprop "searchCcbNode"
+00500:  44  dup
+00501:  44  callprop "getChildByTag"
+00506:  44  swap
+00507:  44  notearg
+00508:  44  int8 11
+00510:  44  notearg
+00511:  44  call 1
+00514:  44  setlocal 1
+00517:  44  pop
+00518:  45  getlocal 1
+00521:  45  dup
+00522:  45  callprop "setZOrder"
+00527:  45  swap
+00528:  45  notearg
+00529:  45  one
+00530:  45  notearg
+00531:  45  call 1
+00534:  45  pop
+00535:  46  getlocal 1
+00538:  46  dup
+00539:  46  callprop "setTouchPriority"
+00544:  46  swap
+00545:  46  notearg
+00546:  46  int8 -3
+00548:  46  notearg
+00549:  46  call 1
+00552:  46  pop
+00553:  47  getlocal 1
+00556:  47  dup
+00557:  47  callprop "addTargetWithActionForControlEvents"
+00562:  47  swap
+00563:  47  notearg
+00564:  47  this
+00565:  47  notearg
+00566:  47  this
+00567:  47  getprop "onSearchBtnClicked"
+00572:  47  dup
+00573:  47  callprop "bind"
+00578:  47  swap
+00579:  47  notearg
+00580:  47  this
+00581:  47  notearg
+00582:  47  call 1
+00585:  47  notearg
+00586:  47  name "cc"
+00591:  47  getprop "CONTROL_EVENT_TOUCH_UP_INSIDE"
+00596:  47  notearg
+00597:  47  call 3
+00600:  47  pop
+00601:  49  this
+00602:  49  getprop "searchCcbNode"
+00607:  49  dup
+00608:  49  callprop "getChildByTag"
+00613:  49  swap
+00614:  49  notearg
+00615:  49  int8 10
+00617:  49  notearg
+00618:  49  call 1
+00621:  49  setlocal 2
+00624:  49  pop
+00625:  50  getlocal 2
+00628:  50  dup
+00629:  50  callprop "getPosition"
+00634:  50  swap
+00635:  50  notearg
+00636:  50  call 0
+00639:  50  setlocal 3
+00642:  50  pop
+00643:  51  getlocal 2
+00646:  51  dup
+00647:  51  callprop "removeFromParent"
+00652:  51  swap
+00653:  51  notearg
+00654:  51  call 0
+00657:  51  pop
+00658:  52  this
+00659:  52  name "cc"
+00664:  52  getprop "EditBox"
+00669:  52  dup
+00670:  52  callprop "create"
+00675:  52  swap
+00676:  52  notearg
+00677:  52  name "cc"
+00682:  52  dup
+00683:  52  callprop "size"
+00688:  52  swap
+00689:  52  notearg
+00690:  52  uint16 345
+00693:  52  notearg
+00694:  52  int8 48
+00696:  52  notearg
+00697:  52  call 2
+00700:  52  notearg
+00701:  52  getlocal 2
+00704:  52  notearg
+00705:  52  call 2
+00708:  52  setprop "m_searchEditBox"
+00713:  52  pop
+00714:  53  this
+00715:  53  getprop "m_searchEditBox"
+00720:  53  dup
+00721:  53  callprop "setAnchorPoint"
+00726:  53  swap
+00727:  53  notearg
+00728:  53  name "cc"
+00733:  53  dup
+00734:  53  callprop "p"
+00739:  53  swap
+00740:  53  notearg
+00741:  53  zero
+00742:  53  notearg
+00743:  53  zero
+00744:  53  notearg
+00745:  53  call 2
+00748:  53  notearg
+00749:  53  call 1
+00752:  53  pop
+00753:  54  this
+00754:  54  getprop "m_searchEditBox"
+00759:  54  dup
+00760:  54  callprop "setZOrder"
+00765:  54  swap
+00766:  54  notearg
+00767:  54  zero
+00768:  54  notearg
+00769:  54  call 1
+00772:  54  pop
+00773:  55  this
+00774:  55  getprop "m_searchEditBox"
+00779:  55  dup
+00780:  55  callprop "setPosition"
+00785:  55  swap
+00786:  55  notearg
+00787:  55  getlocal 3
+00790:  55  notearg
+00791:  55  call 1
+00794:  55  pop
+00795:  56  this
+00796:  56  getprop "m_searchEditBox"
+00801:  56  dup
+00802:  56  callprop "setFontSize"
+00807:  56  swap
+00808:  56  notearg
+00809:  56  int8 20
+00811:  56  notearg
+00812:  56  call 1
+00815:  56  pop
+00816:  57  this
+00817:  57  getprop "m_searchEditBox"
+00822:  57  dup
+00823:  57  callprop "setPlaceholderFontColor"
+00828:  57  swap
+00829:  57  notearg
+00830:  57  name "cc"
+00835:  57  dup
+00836:  57  callprop "c3b"
+00841:  57  swap
+00842:  57  notearg
+00843:  57  uint16 135
+00846:  57  notearg
+00847:  57  int8 86
+00849:  57  notearg
+00850:  57  int8 34
+00852:  57  notearg
+00853:  57  call 3
+00856:  57  notearg
+00857:  57  call 1
+00860:  57  pop
+00861:  59  this
+00862:  59  getprop "m_searchEditBox"
+00867:  59  dup
+00868:  59  callprop "setFontColor"
+00873:  59  swap
+00874:  59  notearg
+00875:  59  name "cc"
+00880:  59  dup
+00881:  59  callprop "c3b"
+00886:  59  swap
+00887:  59  notearg
+00888:  59  zero
+00889:  59  notearg
+00890:  59  zero
+00891:  59  notearg
+00892:  59  zero
+00893:  59  notearg
+00894:  59  call 3
+00897:  59  notearg
+00898:  59  call 1
+00901:  59  pop
+00902:  60  this
+00903:  60  getprop "m_searchEditBox"
+00908:  60  dup
+00909:  60  callprop "setInputFlag"
+00914:  60  swap
+00915:  60  notearg
+00916:  60  name "cc"
+00921:  60  getprop "EDITBOX_INPUT_MODE_SINGLELINE"
+00926:  60  notearg
+00927:  60  call 1
+00930:  60  pop
+00931:  61  this
+00932:  61  getprop "m_searchEditBox"
+00937:  61  dup
+00938:  61  callprop "setReturnType"
+00943:  61  swap
+00944:  61  notearg
+00945:  61  name "cc"
+00950:  61  getprop "KEYBOARD_RETURNTYPE_DONE"
+00955:  61  notearg
+00956:  61  call 1
+00959:  61  pop
+00960:  62  this
+00961:  62  getprop "m_searchEditBox"
+00966:  62  dup
+00967:  62  callprop "setDelegate"
+00972:  62  swap
+00973:  62  notearg
+00974:  62  this
+00975:  62  notearg
+00976:  62  call 1
+00979:  62  pop
+00980:  63  this
+00981:  63  getprop "m_searchEditBox"
+00986:  63  dup
+00987:  63  callprop "setText"
+00992:  63  swap
+00993:  63  notearg
+00994:  63  string ""
+00999:  63  notearg
+01000:  63  call 1
+01003:  63  pop
+01004:  64  this
+01005:  64  getprop "searchCcbNode"
+01010:  64  dup
+01011:  64  callprop "addChild"
+01016:  64  swap
+01017:  64  notearg
+01018:  64  this
+01019:  64  getprop "m_searchEditBox"
+01024:  64  notearg
+01025:  64  call 1
+01028:  64  pop
+01029:  66  this
+01030:  66  getprop "viewType"
+01035:  66  name "xs"
+01040:  66  getprop "Views"
+01045:  66  getprop "SocialView_Type_QuasiFriends"
+01050:  66  stricteq
+01051:  66  ifeq 1112 (+61)
+01056:  68  this
+01057:  68  getprop "m_searchEditBox"
+01062:  68  dup
+01063:  68  callprop "setPlaceHolder"
+01068:  68  swap
+01069:  68  notearg
+01070:  68  name "xs"
+01075:  68  getprop "Tools"
+01080:  68  getprop "String"
+01085:  68  dup
+01086:  68  callprop "createString"
+01091:  68  swap
+01092:  68  notearg
+01093:  68  string "auto_name_201"
+01098:  68  notearg
+01099:  68  call 1
+01102:  68  notearg
+01103:  68  call 1
+01106:  68  pop
+01107:  68  goto 1163 (+56)
+01112:  72  this
+01113:  72  getprop "m_searchEditBox"
+01118:  72  dup
+01119:  72  callprop "setPlaceHolder"
+01124:  72  swap
+01125:  72  notearg
+01126:  72  name "xs"
+01131:  72  getprop "Tools"
+01136:  72  getprop "String"
+01141:  72  dup
+01142:  72  callprop "createString"
+01147:  72  swap
+01148:  72  notearg
+01149:  72  string "friendInputName"
+01154:  72  notearg
+01155:  72  call 1
+01158:  72  notearg
+01159:  72  call 1
+01162:  72  pop
+01163:  77  true
+01164:  77  return
+01165:  77  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:17 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:85 ---
+loc   line  op
+----- ----  --
+main:
+00000:  86  this
+00001:  86  dup
+00002:  86  callprop "_super"
+00007:  86  swap
+00008:  86  notearg
+00009:  86  call 0
+00012:  86  pop
+00013:  87  this
+00014:  87  getprop "viewType"
+00019:  87  name "xs"
+00024:  87  getprop "Views"
+00029:  87  getprop "SocialView_Type_QuasiFriends"
+00034:  87  stricteq
+00035:  87  ifeq 135 (+100)
+00040:  88  name "xs"
+00045:  88  getprop "Utils"
+00050:  88  getprop "Notify"
+00055:  88  dup
+00056:  88  callprop "addObserver"
+00061:  88  swap
+00062:  88  notearg
+00063:  88  this
+00064:  88  notearg
+00065:  88  this
+00066:  88  getprop "updateSocial"
+00071:  88  notearg
+00072:  88  name "xs"
+00077:  88  getprop "Constant_Notify_ModelChange_Social_req"
+00082:  88  notearg
+00083:  88  call 3
+00086:  88  pop
+00087:  89  name "xs"
+00092:  89  getprop "Tools"
+00097:  89  getprop "Net"
+00102:  89  dup
+00103:  89  callprop "requestQuasiFriends"
+00108:  89  swap
+00109:  89  notearg
+00110:  89  newinit 1
+00115:  89  endinit
+00116:  89  notearg
+00117:  89  this
+00118:  89  getprop "onResponse"
+00123:  89  notearg
+00124:  89  this
+00125:  89  notearg
+00126:  89  call 3
+00129:  89  pop
+00130:  89  goto 421 (+291)
+00135:  90  this
+00136:  90  getprop "viewType"
+00141:  90  name "xs"
+00146:  90  getprop "Views"
+00151:  90  getprop "SocialView_Type_Friends"
+00156:  90  stricteq
+00157:  90  ifeq 304 (+147)
+00162:  91  name "xs"
+00167:  91  getprop "Utils"
+00172:  91  getprop "Notify"
+00177:  91  dup
+00178:  91  callprop "addObserver"
+00183:  91  swap
+00184:  91  notearg
+00185:  91  this
+00186:  91  notearg
+00187:  91  this
+00188:  91  getprop "updateSocial"
+00193:  91  notearg
+00194:  91  name "xs"
+00199:  91  getprop "Constant_Notify_ModelChange_Social_del"
+00204:  91  notearg
+00205:  91  call 3
+00208:  91  pop
+00209:  92  name "xs"
+00214:  92  getprop "Utils"
+00219:  92  getprop "Notify"
+00224:  92  dup
+00225:  92  callprop "addObserver"
+00230:  92  swap
+00231:  92  notearg
+00232:  92  this
+00233:  92  notearg
+00234:  92  this
+00235:  92  getprop "saveViewInfo"
+00240:  92  notearg
+00241:  92  name "xs"
+00246:  92  getprop "Constant_Notify_Social_SaveFriendViewInfo"
+00251:  92  notearg
+00252:  92  call 3
+00255:  92  pop
+00256:  93  name "xs"
+00261:  93  getprop "Tools"
+00266:  93  getprop "Net"
+00271:  93  dup
+00272:  93  callprop "requestFriends"
+00277:  93  swap
+00278:  93  notearg
+00279:  93  newinit 1
+00284:  93  endinit
+00285:  93  notearg
+00286:  93  this
+00287:  93  getprop "onResponse"
+00292:  93  notearg
+00293:  93  this
+00294:  93  notearg
+00295:  93  call 3
+00298:  93  pop
+00299:  93  goto 421 (+122)
+00304:  94  this
+00305:  94  getprop "viewType"
+00310:  94  name "xs"
+00315:  94  getprop "Views"
+00320:  94  getprop "SocialView_Type_Foe"
+00325:  94  stricteq
+00326:  94  ifeq 421 (+95)
+00331:  95  name "xs"
+00336:  95  getprop "Utils"
+00341:  95  getprop "Notify"
+00346:  95  dup
+00347:  95  callprop "addObserver"
+00352:  95  swap
+00353:  95  notearg
+00354:  95  this
+00355:  95  notearg
+00356:  95  this
+00357:  95  getprop "updateSocial"
+00362:  95  notearg
+00363:  95  name "xs"
+00368:  95  getprop "Constant_Notify_ModelChange_Social_foe"
+00373:  95  notearg
+00374:  95  call 3
+00377:  95  pop
+00378:  96  name "xs"
+00383:  96  getprop "Tools"
+00388:  96  getprop "Net"
+00393:  96  dup
+00394:  96  callprop "requestFoes"
+00399:  96  swap
+00400:  96  notearg
+00401:  96  newinit 1
+00406:  96  endinit
+00407:  96  notearg
+00408:  96  this
+00409:  96  getprop "onResponse"
+00414:  96  notearg
+00415:  96  this
+00416:  96  notearg
+00417:  96  call 3
+00420:  96  pop
+00421:  97  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:85 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:99 ---
+loc   line  op
+----- ----  --
+main:
+00000: 101  this
+00001: 101  getprop "viewType"
+00006: 101  name "xs"
+00011: 101  getprop "Views"
+00016: 101  getprop "SocialView_Type_QuasiFriends"
+00021: 101  stricteq
+00022: 101  ifeq 72 (+50)
+00027: 102  name "xs"
+00032: 102  getprop "Utils"
+00037: 102  getprop "Notify"
+00042: 102  dup
+00043: 102  callprop "removeObserver"
+00048: 102  swap
+00049: 102  notearg
+00050: 102  this
+00051: 102  notearg
+00052: 102  name "xs"
+00057: 102  getprop "Constant_Notify_ModelChange_Social_req"
+00062: 102  notearg
+00063: 102  call 2
+00066: 102  pop
+00067: 102  goto 251 (+184)
+00072: 103  this
+00073: 103  getprop "viewType"
+00078: 103  name "xs"
+00083: 103  getprop "Views"
+00088: 103  getprop "SocialView_Type_Friends"
+00093: 103  stricteq
+00094: 103  ifeq 184 (+90)
+00099: 104  name "xs"
+00104: 104  getprop "Utils"
+00109: 104  getprop "Notify"
+00114: 104  dup
+00115: 104  callprop "removeObserver"
+00120: 104  swap
+00121: 104  notearg
+00122: 104  this
+00123: 104  notearg
+00124: 104  name "xs"
+00129: 104  getprop "Constant_Notify_Social_SaveFriendViewInfo"
+00134: 104  notearg
+00135: 104  call 2
+00138: 104  pop
+00139: 105  name "xs"
+00144: 105  getprop "Utils"
+00149: 105  getprop "Notify"
+00154: 105  dup
+00155: 105  callprop "removeObserver"
+00160: 105  swap
+00161: 105  notearg
+00162: 105  this
+00163: 105  notearg
+00164: 105  name "xs"
+00169: 105  getprop "Constant_Notify_ModelChange_Social_del"
+00174: 105  notearg
+00175: 105  call 2
+00178: 105  pop
+00179: 105  goto 251 (+72)
+00184: 106  this
+00185: 106  getprop "viewType"
+00190: 106  name "xs"
+00195: 106  getprop "Views"
+00200: 106  getprop "SocialView_Type_Foe"
+00205: 106  stricteq
+00206: 106  ifeq 251 (+45)
+00211: 107  name "xs"
+00216: 107  getprop "Utils"
+00221: 107  getprop "Notify"
+00226: 107  dup
+00227: 107  callprop "removeObserver"
+00232: 107  swap
+00233: 107  notearg
+00234: 107  this
+00235: 107  notearg
+00236: 107  name "xs"
+00241: 107  getprop "Constant_Notify_ModelChange_Social_foe"
+00246: 107  notearg
+00247: 107  call 2
+00250: 107  pop
+00251: 109  this
+00252: 109  dup
+00253: 109  callprop "_super"
+00258: 109  swap
+00259: 109  notearg
+00260: 109  call 0
+00263: 109  pop
+00264: 109  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:99 ---
+;; function object[4] onResponse
+;; function metadata object[4] nargs=1 bindings=3
+;; arg[0] jsObj
+;; local[0] friendSearchKey
+;; local[1] friendTableViewOffsetY
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:112 ---
+loc   line  op
+----- ----  --
+main:
+00000: 113  this
+00001: 113  getprop "viewType"
+00006: 113  name "xs"
+00011: 113  getprop "Views"
+00016: 113  getprop "SocialView_Type_QuasiFriends"
+00021: 113  stricteq
+00022: 113  ifeq 102 (+80)
+00027: 114  this
+00028: 114  getarg 0
+00031: 114  getprop "return_info"
+00036: 114  getprop "user_make_friends"
+00041: 114  setprop "datas"
+00046: 114  pop
+00047: 115  this
+00048: 115  getprop "socialTableView"
+00053: 115  dup
+00054: 115  callprop "setData"
+00059: 115  swap
+00060: 115  notearg
+00061: 115  this
+00062: 115  getprop "datas"
+00067: 115  notearg
+00068: 115  this
+00069: 115  getprop "viewType"
+00074: 115  notearg
+00075: 115  call 2
+00078: 115  pop
+00079: 116  this
+00080: 116  getprop "socialTableView"
+00085: 116  dup
+00086: 116  callprop "reloadData"
+00091: 116  swap
+00092: 116  notearg
+00093: 116  call 0
+00096: 116  pop
+00097: 116  goto 940 (+843)
+00102: 117  this
+00103: 117  getprop "viewType"
+00108: 117  name "xs"
+00113: 117  getprop "Views"
+00118: 117  getprop "SocialView_Type_Friends"
+00123: 117  stricteq
+00124: 117  ifeq 660 (+536)
+00129: 118  this
+00130: 118  getarg 0
+00133: 118  getprop "return_info"
+00138: 118  getprop "friends"
+00143: 118  setprop "datas"
+00148: 118  pop
+00149: 119  this
+00150: 119  getprop "datas"
+00155: 119  length "length"
+00160: 119  zero
+00161: 119  eq
+00162: 119  ifeq 184 (+22)
+00167: 120  this
+00168: 120  newarray 0
+00172: 120  endinit
+00173: 120  setprop "local_friends_cache"
+00178: 120  pop
+00179: 120  goto 208 (+29)
+00184: 123  this
+00185: 123  this
+00186: 123  getprop "datas"
+00191: 123  dup
+00192: 123  callprop "Clone"
+00197: 123  swap
+00198: 123  notearg
+00199: 123  call 0
+00202: 123  setprop "local_friends_cache"
+00207: 123  pop
+00208: 126  name "xs"
+00213: 126  getprop "Scene"
+00218: 126  getprop "Mgr"
+00223: 126  dup
+00224: 126  callprop "loadStatus"
+00229: 126  swap
+00230: 126  notearg
+00231: 126  string "friendSearchKey"
+00236: 126  notearg
+00237: 126  null
+00238: 126  notearg
+00239: 126  call 2
+00242: 126  setlocal 0
+00245: 126  pop
+00246: 127  name "xs"
+00251: 127  getprop "Scene"
+00256: 127  getprop "Mgr"
+00261: 127  dup
+00262: 127  callprop "loadStatus"
+00267: 127  swap
+00268: 127  notearg
+00269: 127  string "friendTableViewOffsetY"
+00274: 127  notearg
+00275: 127  null
+00276: 127  notearg
+00277: 127  call 2
+00280: 127  setlocal 1
+00283: 127  pop
+00284: 131  getlocal 0
+00287: 131  null
+00288: 131  ne
+00289: 131  and 304 (+15)
+00294: 131  pop
+00295: 131  getlocal 0
+00298: 131  string "null"
+00303: 131  ne
+00304: 131  ifeq 349 (+45)
+00309: 133  this
+00310: 133  getprop "m_searchEditBox"
+00315: 133  dup
+00316: 133  callprop "setText"
+00321: 133  swap
+00322: 133  notearg
+00323: 133  getlocal 0
+00326: 133  notearg
+00327: 133  call 1
+00330: 133  pop
+00331: 134  this
+00332: 134  dup
+00333: 134  callprop "onSearchCallBack"
+00338: 134  swap
+00339: 134  notearg
+00340: 134  call 0
+00343: 134  pop
+00344: 134  goto 399 (+55)
+00349: 137  this
+00350: 137  getprop "socialTableView"
+00355: 137  dup
+00356: 137  callprop "setData"
+00361: 137  swap
+00362: 137  notearg
+00363: 137  this
+00364: 137  getprop "datas"
+00369: 137  notearg
+00370: 137  this
+00371: 137  getprop "viewType"
+00376: 137  notearg
+00377: 137  call 2
+00380: 137  pop
+00381: 138  this
+00382: 138  getprop "socialTableView"
+00387: 138  dup
+00388: 138  callprop "reloadData"
+00393: 138  swap
+00394: 138  notearg
+00395: 138  call 0
+00398: 138  pop
+00399: 141  getlocal 1
+00402: 141  null
+00403: 141  ne
+00404: 141  ifeq 472 (+68)
+00409: 142  this
+00410: 142  getprop "socialTableView"
+00415: 142  dup
+00416: 142  callprop "setContentOffset"
+00421: 142  swap
+00422: 142  notearg
+00423: 142  name "cc"
+00428: 142  dup
+00429: 142  callprop "p"
+00434: 142  swap
+00435: 142  notearg
+00436: 142  zero
+00437: 142  notearg
+00438: 142  name "xs"
+00443: 142  getprop "Utils"
+00448: 142  dup
+00449: 142  callprop "parseIntSafe"
+00454: 142  swap
+00455: 142  notearg
+00456: 142  getlocal 1
+00459: 142  notearg
+00460: 142  call 1
+00463: 142  notearg
+00464: 142  call 2
+00467: 142  notearg
+00468: 142  call 1
+00471: 142  pop
+00472: 146  this
+00473: 146  getprop "datas"
+00478: 146  length "length"
+00483: 146  zero
+00484: 146  stricteq
+00485: 146  ifeq 626 (+141)
+00490: 147  this
+00491: 147  name "xs"
+00496: 147  getprop "Factorys"
+00501: 147  getprop "LabelTTF"
+00506: 147  dup
+00507: 147  callprop "create"
+00512: 147  swap
+00513: 147  notearg
+00514: 147  name "xs"
+00519: 147  getprop "Tools"
+00524: 147  getprop "String"
+00529: 147  dup
+00530: 147  callprop "createString"
+00535: 147  swap
+00536: 147  notearg
+00537: 147  string "auto_name_202"
+00542: 147  notearg
+00543: 147  call 1
+00546: 147  notearg
+00547: 147  string "TTF_SortButton"
+00552: 147  notearg
+00553: 147  call 2
+00556: 147  setprop "tipLab"
+00561: 147  pop
+00562: 148  name "xs"
+00567: 148  getprop "Utils"
+00572: 148  getprop "Node"
+00577: 148  dup
+00578: 148  callprop "attachNodes"
+00583: 148  swap
+00584: 148  notearg
+00585: 148  this
+00586: 148  notearg
+00587: 148  this
+00588: 148  getprop "tipLab"
+00593: 148  notearg
+00594: 148  newinit 1
+00599: 148  string "c"
+00604: 148  initprop "desc"
+00609: 148  true
+00610: 148  initprop "sc"
+00615: 148  endinit
+00616: 148  notearg
+00617: 148  call 3
+00620: 148  pop
+00621: 148  goto 655 (+34)
+00626: 149  this
+00627: 149  getprop "tipLab"
+00632: 149  ifeq 655 (+23)
+00637: 150  this
+00638: 150  getprop "tipLab"
+00643: 150  dup
+00644: 150  callprop "removeFromParent"
+00649: 150  swap
+00650: 150  notearg
+00651: 150  call 0
+00654: 150  pop
+00655: 150  goto 940 (+285)
+00660: 153  this
+00661: 153  getprop "viewType"
+00666: 153  name "xs"
+00671: 153  getprop "Views"
+00676: 153  getprop "SocialView_Type_Foe"
+00681: 153  stricteq
+00682: 153  ifeq 940 (+258)
+00687: 154  this
+00688: 154  getarg 0
+00691: 154  getprop "return_info"
+00696: 154  getprop "enemys"
+00701: 154  setprop "datas"
+00706: 154  pop
+00707: 155  this
+00708: 155  getprop "socialTableView"
+00713: 155  dup
+00714: 155  callprop "setData"
+00719: 155  swap
+00720: 155  notearg
+00721: 155  this
+00722: 155  getprop "datas"
+00727: 155  notearg
+00728: 155  this
+00729: 155  getprop "viewType"
+00734: 155  notearg
+00735: 155  call 2
+00738: 155  pop
+00739: 156  this
+00740: 156  getprop "socialTableView"
+00745: 156  dup
+00746: 156  callprop "reloadData"
+00751: 156  swap
+00752: 156  notearg
+00753: 156  call 0
+00756: 156  pop
+00757: 159  this
+00758: 159  getprop "datas"
+00763: 159  length "length"
+00768: 159  zero
+00769: 159  stricteq
+00770: 159  ifeq 911 (+141)
+00775: 160  this
+00776: 160  name "xs"
+00781: 160  getprop "Factorys"
+00786: 160  getprop "LabelTTF"
+00791: 160  dup
+00792: 160  callprop "create"
+00797: 160  swap
+00798: 160  notearg
+00799: 160  name "xs"
+00804: 160  getprop "Tools"
+00809: 160  getprop "String"
+00814: 160  dup
+00815: 160  callprop "createString"
+00820: 160  swap
+00821: 160  notearg
+00822: 160  string "auto_name_203"
+00827: 160  notearg
+00828: 160  call 1
+00831: 160  notearg
+00832: 160  string "TTF_SortButton"
+00837: 160  notearg
+00838: 160  call 2
+00841: 160  setprop "tipLab"
+00846: 160  pop
+00847: 161  name "xs"
+00852: 161  getprop "Utils"
+00857: 161  getprop "Node"
+00862: 161  dup
+00863: 161  callprop "attachNodes"
+00868: 161  swap
+00869: 161  notearg
+00870: 161  this
+00871: 161  notearg
+00872: 161  this
+00873: 161  getprop "tipLab"
+00878: 161  notearg
+00879: 161  newinit 1
+00884: 162  string "c"
+00889: 162  initprop "desc"
+00894: 163  true
+00895: 163  initprop "sc"
+00900: 163  endinit
+00901: 163  notearg
+00902: 163  call 3
+00905: 163  pop
+00906: 163  goto 940 (+34)
+00911: 165  this
+00912: 165  getprop "tipLab"
+00917: 165  ifeq 940 (+23)
+00922: 166  this
+00923: 166  getprop "tipLab"
+00928: 166  dup
+00929: 166  callprop "removeFromParent"
+00934: 166  swap
+00935: 166  notearg
+00936: 166  call 0
+00939: 166  pop
+00940: 168  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:112 ---
+;; function object[5] onSearchBtnClicked
+;; function metadata object[5] nargs=0 bindings=1
+;; local[0] searchKey
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:171 ---
+loc   line  op
+----- ----  --
+main:
+00000: 172  this
+00001: 172  getprop "viewType"
+00006: 172  name "xs"
+00011: 172  getprop "Views"
+00016: 172  getprop "SocialView_Type_Friends"
+00021: 172  stricteq
+00022: 172  ifeq 91 (+69)
+00027: 173  this
+00028: 173  getprop "m_searchEditBox"
+00033: 173  dup
+00034: 173  callprop "getText"
+00039: 173  swap
+00040: 173  notearg
+00041: 173  call 0
+00044: 173  setlocal 0
+00047: 173  pop
+00048: 174  name "xs"
+00053: 174  getprop "Scene"
+00058: 174  getprop "Mgr"
+00063: 174  dup
+00064: 174  callprop "saveStatus"
+00069: 174  swap
+00070: 174  notearg
+00071: 174  string "friendSearchKey"
+00076: 174  notearg
+00077: 174  string ""
+00082: 174  getlocal 0
+00085: 174  add
+00086: 174  notearg
+00087: 174  call 2
+00090: 174  pop
+00091: 177  this
+00092: 177  dup
+00093: 177  callprop "onSearchCallBack"
+00098: 177  swap
+00099: 177  notearg
+00100: 177  call 0
+00103: 177  pop
+00104: 177  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:171 ---
+;; function object[6] onSearchCallBack
+;; function metadata object[6] nargs=0 bindings=5
+;; local[0] searchKey
+;; local[1] keyType
+;; local[2] i
+;; local[3] name
+;; local[4] tmp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:180 ---
+loc   line  op
+----- ----  --
+main:
+00000: 181  this
+00001: 181  getprop "m_searchEditBox"
+00006: 181  dup
+00007: 181  callprop "getText"
+00012: 181  swap
+00013: 181  notearg
+00014: 181  call 0
+00017: 181  setlocal 0
+00020: 181  pop
+00021: 183  this
+00022: 183  getprop "viewType"
+00027: 183  name "xs"
+00032: 183  getprop "Views"
+00037: 183  getprop "SocialView_Type_QuasiFriends"
+00042: 183  stricteq
+00043: 183  ifeq 223 (+180)
+00048: 185  getlocal 0
+00051: 185  not
+00052: 185  ifeq 102 (+50)
+00057: 186  name "xs"
+00062: 186  getprop "Tools"
+00067: 186  getprop "Net"
+00072: 186  dup
+00073: 186  callprop "requestQuasiFriends"
+00078: 186  swap
+00079: 186  notearg
+00080: 186  newinit 1
+00085: 186  endinit
+00086: 186  notearg
+00087: 186  this
+00088: 186  getprop "onResponse"
+00093: 186  notearg
+00094: 186  this
+00095: 186  notearg
+00096: 186  call 3
+00099: 186  pop
+00100: 187  undefined
+00101: 187  return
+00102: 190  one
+00103: 190  setlocal 1
+00106: 190  pop
+00107: 191  callname "parseInt"
+00112: 191  implicitthis "parseInt"
+00117: 191  notearg
+00118: 191  getlocal 0
+00121: 191  notearg
+00122: 191  call 1
+00125: 191  ifeq 141 (+16)
+00130: 192  int8 2
+00132: 192  setlocal 1
+00135: 192  pop
+00136: 192  goto 146 (+10)
+00141: 194  one
+00142: 194  setlocal 1
+00145: 194  pop
+00146: 196  name "xs"
+00151: 196  getprop "Tools"
+00156: 196  getprop "Net"
+00161: 196  dup
+00162: 196  callprop "requestSearchUser"
+00167: 196  swap
+00168: 196  notearg
+00169: 196  newinit 1
+00174: 197  getlocal 0
+00177: 197  initprop "search_word"
+00182: 198  int8 50
+00184: 198  initprop "limit"
+00189: 199  one
+00190: 199  initprop "page"
+00195: 200  getlocal 1
+00198: 200  initprop "type"
+00203: 200  endinit
+00204: 200  notearg
+00205: 201  this
+00206: 201  getprop "onSearchResponse"
+00211: 201  notearg
+00212: 201  this
+00213: 201  notearg
+00214: 201  call 3
+00217: 201  pop
+00218: 201  goto 589 (+371)
+00223: 205  getlocal 0
+00226: 205  not
+00227: 205  ifeq 250 (+23)
+00232: 207  this
+00233: 207  this
+00234: 207  getprop "local_friends_cache"
+00239: 207  setprop "datas"
+00244: 207  pop
+00245: 207  goto 449 (+204)
+00250: 210  this
+00251: 210  getprop "local_friends_cache"
+00256: 210  length "length"
+00261: 210  zero
+00262: 210  eq
+00263: 210  ifeq 285 (+22)
+00268: 211  this
+00269: 211  newarray 0
+00273: 211  endinit
+00274: 211  setprop "datas"
+00279: 211  pop
+00280: 211  goto 309 (+29)
+00285: 214  this
+00286: 214  this
+00287: 214  getprop "local_friends_cache"
+00292: 214  dup
+00293: 214  callprop "Clone"
+00298: 214  swap
+00299: 214  notearg
+00300: 214  call 0
+00303: 214  setprop "datas"
+00308: 214  pop
+00309: 216  this
+00310: 216  getprop "datas"
+00315: 216  length "length"
+00320: 216  one
+00321: 216  sub
+00322: 216  setlocal 2
+00325: 216  pop
+00326: 216  goto 438 (+112)
+00331: 217  loophead
+00332: 217  this
+00333: 217  getprop "datas"
+00338: 217  getlocal 2
+00341: 217  getelem
+00342: 217  getprop "name"
+00347: 217  setlocal 3
+00350: 217  pop
+00351: 218  getlocal 3
+00354: 218  dup
+00355: 218  callprop "match"
+00360: 218  swap
+00361: 218  notearg
+00362: 218  getlocal 0
+00365: 218  notearg
+00366: 218  call 1
+00369: 218  setlocal 4
+00372: 218  pop
+00373: 219  getlocal 4
+00376: 219  null
+00377: 219  stricteq
+00378: 219  or 394 (+16)
+00383: 219  pop
+00384: 219  getlocal 4
+00387: 219  length "length"
+00392: 219  zero
+00393: 219  stricteq
+00394: 219  ifeq 423 (+29)
+00399: 220  this
+00400: 220  getprop "datas"
+00405: 220  dup
+00406: 220  callprop "splice"
+00411: 220  swap
+00412: 220  notearg
+00413: 220  getlocal 2
+00416: 220  notearg
+00417: 220  one
+00418: 220  notearg
+00419: 220  call 2
+00422: 220  pop
+00423: 216  localdec 11
+00426: 216  getlocal 2
+00429: 216  pos
+00430: 216  dup
+00431: 216  one
+00432: 216  sub
+00433: 216  setlocal 2
+00436: 216  pop
+00437: 216  pop
+00438: 216  loopentry
+00439: 216  getlocal 2
+00442: 216  zero
+00443: 216  ge
+00444: 216  ifne 331 (-113)
+00449: 225  this
+00450: 225  getprop "datas"
+00455: 225  and 474 (+19)
+00460: 225  pop
+00461: 225  this
+00462: 225  getprop "datas"
+00467: 225  length "length"
+00472: 225  zero
+00473: 225  stricteq
+00474: 225  ifeq 539 (+65)
+00479: 226  name "xs"
+00484: 226  getprop "Views"
+00489: 226  getprop "Mgr"
+00494: 226  dup
+00495: 226  callprop "showToast"
+00500: 226  swap
+00501: 226  notearg
+00502: 226  name "xs"
+00507: 226  getprop "Tools"
+00512: 226  getprop "String"
+00517: 226  dup
+00518: 226  callprop "createString"
+00523: 226  swap
+00524: 226  notearg
+00525: 226  string "auto_name_204"
+00530: 226  notearg
+00531: 226  call 1
+00534: 226  notearg
+00535: 226  call 1
+00538: 226  pop
+00539: 229  this
+00540: 229  getprop "socialTableView"
+00545: 229  dup
+00546: 229  callprop "setData"
+00551: 229  swap
+00552: 229  notearg
+00553: 229  this
+00554: 229  getprop "datas"
+00559: 229  notearg
+00560: 229  this
+00561: 229  getprop "viewType"
+00566: 229  notearg
+00567: 229  call 2
+00570: 229  pop
+00571: 230  this
+00572: 230  getprop "socialTableView"
+00577: 230  dup
+00578: 230  callprop "reloadData"
+00583: 230  swap
+00584: 230  notearg
+00585: 230  call 0
+00588: 230  pop
+00589: 233  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:180 ---
+;; function object[7] onSearchResponse
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] jsObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:237 ---
+loc   line  op
+----- ----  --
+main:
+00000: 238  this
+00001: 238  getarg 0
+00004: 238  getprop "return_info"
+00009: 238  getprop "search_user"
+00014: 238  setprop "datas"
+00019: 238  pop
+00020: 240  this
+00021: 240  getprop "datas"
+00026: 240  null
+00027: 240  stricteq
+00028: 240  ifeq 93 (+65)
+00033: 241  name "xs"
+00038: 241  getprop "Views"
+00043: 241  getprop "Mgr"
+00048: 241  dup
+00049: 241  callprop "showToast"
+00054: 241  swap
+00055: 241  notearg
+00056: 241  name "xs"
+00061: 241  getprop "Tools"
+00066: 241  getprop "String"
+00071: 241  dup
+00072: 241  callprop "createString"
+00077: 241  swap
+00078: 241  notearg
+00079: 241  string "auto_name_204"
+00084: 241  notearg
+00085: 241  call 1
+00088: 241  notearg
+00089: 241  call 1
+00092: 241  pop
+00093: 244  this
+00094: 244  getprop "socialTableView"
+00099: 244  dup
+00100: 244  callprop "setData"
+00105: 244  swap
+00106: 244  notearg
+00107: 244  this
+00108: 244  getprop "datas"
+00113: 244  notearg
+00114: 244  this
+00115: 244  getprop "viewType"
+00120: 244  notearg
+00121: 244  call 2
+00124: 244  pop
+00125: 245  this
+00126: 245  getprop "socialTableView"
+00131: 245  dup
+00132: 245  callprop "reloadData"
+00137: 245  swap
+00138: 245  notearg
+00139: 245  call 0
+00142: 245  pop
+00143: 245  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:237 ---
+;; function object[8] updateSocial
+;; function metadata object[8] nargs=1 bindings=5
+;; arg[0] params
+;; local[0] arrModel
+;; local[1] invitedNum
+;; local[2] i
+;; local[3] model
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:248 ---
+loc   line  op
+----- ----  --
+main:
+00000: 250  getarg 0
+00003: 250  getprop "type"
+00008: 250  condswitch
+00009: 251  name "xs"
+00014: 251  getprop "Views"
+00019: 251  getprop "SocialView_Type_QuasiFriends"
+00024: 251  case 74 (+50)
+00029: 270  name "xs"
+00034: 270  getprop "Views"
+00039: 270  getprop "SocialView_Type_Friends"
+00044: 270  case 269 (+225)
+00049: 273  name "xs"
+00054: 273  getprop "Views"
+00059: 273  getprop "SocialView_Type_Foe"
+00064: 273  case 317 (+253)
+00069: 273  default 365 (+296)
+00074: 253  this
+00075: 253  getprop "socialTableView"
+00080: 253  dup
+00081: 253  callprop "getArrayModel"
+00086: 253  swap
+00087: 253  notearg
+00088: 253  call 0
+00091: 253  setlocal 0
+00094: 253  pop
+00095: 254  zero
+00096: 254  setlocal 1
+00099: 254  pop
+00100: 255  zero
+00101: 255  setlocal 2
+00104: 255  pop
+00105: 255  goto 175 (+70)
+00110: 256  loophead
+00111: 256  getlocal 0
+00114: 256  getlocal 2
+00117: 256  getelem
+00118: 256  setlocal 3
+00121: 256  pop
+00122: 257  getlocal 3
+00125: 257  getprop "isInvited"
+00130: 257  ifeq 155 (+25)
+00135: 258  localinc 11
+00138: 258  getlocal 1
+00141: 258  pos
+00142: 258  dup
+00143: 258  one
+00144: 258  add
+00145: 258  setlocal 1
+00148: 258  pop
+00149: 258  pop
+00150: 258  goto 160 (+10)
+00155: 261  goto 193 (+38)
+00160: 255  localinc 11
+00163: 255  getlocal 2
+00166: 255  pos
+00167: 255  dup
+00168: 255  one
+00169: 255  add
+00170: 255  setlocal 2
+00173: 255  pop
+00174: 255  pop
+00175: 255  loopentry
+00176: 255  getlocal 2
+00179: 255  getlocal 0
+00182: 255  length "length"
+00187: 255  lt
+00188: 255  ifne 110 (-78)
+00193: 265  getlocal 1
+00196: 265  zero
+00197: 265  ne
+00198: 265  and 216 (+18)
+00203: 265  pop
+00204: 265  getlocal 1
+00207: 265  getlocal 0
+00210: 265  length "length"
+00215: 265  eq
+00216: 265  ifeq 264 (+48)
+00221: 266  name "xs"
+00226: 266  getprop "Tools"
+00231: 266  getprop "Net"
+00236: 266  dup
+00237: 266  callprop "requestQuasiFriends"
+00242: 266  swap
+00243: 266  notearg
+00244: 266  newinit 1
+00249: 266  endinit
+00250: 266  notearg
+00251: 266  this
+00252: 266  getprop "onResponse"
+00257: 266  notearg
+00258: 266  this
+00259: 266  notearg
+00260: 266  call 3
+00263: 266  pop
+00264: 269  goto 365 (+101)
+00269: 271  name "xs"
+00274: 271  getprop "Tools"
+00279: 271  getprop "Net"
+00284: 271  dup
+00285: 271  callprop "requestFriends"
+00290: 271  swap
+00291: 271  notearg
+00292: 271  newinit 1
+00297: 271  endinit
+00298: 271  notearg
+00299: 271  this
+00300: 271  getprop "onResponse"
+00305: 271  notearg
+00306: 271  this
+00307: 271  notearg
+00308: 271  call 3
+00311: 271  pop
+00312: 272  goto 365 (+53)
+00317: 274  name "xs"
+00322: 274  getprop "Tools"
+00327: 274  getprop "Net"
+00332: 274  dup
+00333: 274  callprop "requestFoes"
+00338: 274  swap
+00339: 274  notearg
+00340: 274  newinit 1
+00345: 274  endinit
+00346: 274  notearg
+00347: 274  this
+00348: 274  getprop "onResponse"
+00353: 274  notearg
+00354: 274  this
+00355: 274  notearg
+00356: 274  call 3
+00359: 274  pop
+00360: 275  goto 365 (+5)
+00365: 276  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:248 ---
+;; function object[9] saveViewInfo
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:279 ---
+loc   line  op
+----- ----  --
+main:
+00000: 280  name "xs"
+00005: 280  dup
+00006: 280  callprop "log_xjf"
+00011: 280  swap
+00012: 280  notearg
+00013: 280  string "\u4FDD\u5B58\u597D\u53CB\u754C\u9762\u4FE1\u606F"
+00018: 280  notearg
+00019: 280  call 1
+00022: 280  pop
+00023: 282  name "xs"
+00028: 282  getprop "Scene"
+00033: 282  getprop "Mgr"
+00038: 282  dup
+00039: 282  callprop "saveStatus"
+00044: 282  swap
+00045: 282  notearg
+00046: 282  string "friendTableViewOffsetY"
+00051: 282  notearg
+00052: 282  string ""
+00057: 282  this
+00058: 282  getprop "socialTableView"
+00063: 282  dup
+00064: 282  callprop "getContentOffsetY"
+00069: 282  swap
+00070: 282  notearg
+00071: 282  call 0
+00074: 282  add
+00075: 282  notearg
+00076: 282  call 2
+00079: 282  pop
+00080: 282  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:279 ---
+;; function object[10] create
+;; function metadata object[10] nargs=1 bindings=2
+;; arg[0] type
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:287 ---
+loc   line  op
+----- ----  --
+main:
+00000: 288  name "xs"
+00005: 288  getprop "Views"
+00010: 288  getprop "SocialView"
+00015: 288  undefined
+00016: 288  notearg
+00017: 288  new 0
+00020: 288  setlocal 0
+00023: 288  pop
+00024: 289  getlocal 0
+00027: 289  and 51 (+24)
+00032: 289  pop
+00033: 289  getlocal 0
+00036: 289  dup
+00037: 289  callprop "init"
+00042: 289  swap
+00043: 289  notearg
+00044: 289  getarg 0
+00047: 289  notearg
+00048: 289  call 1
+00051: 289  ifeq 60 (+9)
+00056: 290  getlocal 0
+00059: 290  return
+00060: 292  null
+00061: 292  return
+00062: 292  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Social/SocialView.js:287 ---

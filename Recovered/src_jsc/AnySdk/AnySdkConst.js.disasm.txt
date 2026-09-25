@@ -1,0 +1,278 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/AnySdk/AnySdkConst.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkConst.js:1 ---
+loc   line  op
+----- ----  --
+00000:   2  defvar "Plugin_type"
+00005:  13  defvar "AdsResultCode"
+00010:  24  defvar "AdsPos"
+00015:  34  defvar "AdsType"
+00020:  42  defvar "PayResultCode"
+00025:  55  defvar "PushActionResultCode"
+00030:  60  defvar "ShareResultCode"
+00035:  68  defvar "SocialRetCode"
+00040:  82  defvar "UserActionResultCode"
+00045: 105  defvar "ToolBarPlace"
+00050: 115  defvar "AccountType"
+00055: 125  defvar "AccountOperate"
+00060: 131  defvar "AccountGender"
+00065: 137  defvar "TaskType"
+main:
+00070:   2  bindname "Plugin_type"
+00075:   2  newinit 1
+00080:   3  one
+00081:   3  initprop "kPluginAds"
+00086:   4  int8 2
+00088:   4  initprop "kPluginAnalytics"
+00093:   5  int8 3
+00095:   5  initprop "kPluginIAP"
+00100:   6  int8 4
+00102:   6  initprop "kPluginShare"
+00107:   7  int8 5
+00109:   7  initprop "kPluginUser"
+00114:   8  int8 6
+00116:   8  initprop "kPluginSocial"
+00121:   9  int8 7
+00123:   9  initprop "kPluginPush"
+00128:   9  endinit
+00129:   9  setname "Plugin_type"
+00134:   9  pop
+00135:  13  bindname "AdsResultCode"
+00140:  13  newinit 1
+00145:  14  zero
+00146:  14  initprop "kAdsReceived"
+00151:  15  one
+00152:  15  initprop "kAdsShown"
+00157:  16  int8 2
+00159:  16  initprop "kAdsDismissed"
+00164:  17  int8 3
+00166:  17  initprop "kPointsSpendSucceed"
+00171:  18  int8 4
+00173:  18  initprop "kPointsSpendFailed"
+00178:  19  int8 5
+00180:  19  initprop "kNetworkError"
+00185:  20  int8 6
+00187:  20  initprop "kUnknownError"
+00192:  21  int8 7
+00194:  21  initprop "kOfferWallOnPointsChanged"
+00199:  21  endinit
+00200:  21  setname "AdsResultCode"
+00205:  21  pop
+00206:  24  bindname "AdsPos"
+00211:  24  newinit 1
+00216:  25  zero
+00217:  25  initprop "kPosCenter"
+00222:  26  one
+00223:  26  initprop "kPosTop"
+00228:  27  int8 2
+00230:  27  initprop "kPosTopLeft"
+00235:  28  int8 3
+00237:  28  initprop "kPosTopRight"
+00242:  29  int8 4
+00244:  29  initprop "kPosBottom"
+00249:  30  int8 5
+00251:  30  initprop "kPosBottomLeft"
+00256:  31  int8 6
+00258:  31  initprop "kPosBottomRight"
+00263:  31  endinit
+00264:  31  setname "AdsPos"
+00269:  31  pop
+00270:  34  bindname "AdsType"
+00275:  34  newinit 1
+00280:  35  zero
+00281:  35  initprop "AD_TYPE_BANNER"
+00286:  36  one
+00287:  36  initprop "AD_TYPE_FULLSCREEN"
+00292:  37  int8 2
+00294:  37  initprop "AD_TYPE_MOREAPP"
+00299:  38  int8 3
+00301:  38  initprop "AD_TYPE_OFFERWALL"
+00306:  38  endinit
+00307:  38  setname "AdsType"
+00312:  38  pop
+00313:  42  bindname "PayResultCode"
+00318:  42  newinit 1
+00323:  43  zero
+00324:  43  initprop "kPaySuccess"
+00329:  44  one
+00330:  44  initprop "kPayFail"
+00335:  45  int8 2
+00337:  45  initprop "kPayCancel"
+00342:  46  int8 3
+00344:  46  initprop "kPayNetworkError"
+00349:  47  int8 4
+00351:  47  initprop "kPayProductionInforIncomplete"
+00356:  48  int8 5
+00358:  48  initprop "kPayInitSuccess"
+00363:  49  int8 6
+00365:  49  initprop "kPayInitFail"
+00370:  50  int8 7
+00372:  50  initprop "kPayNowPaying"
+00377:  51  int8 8
+00379:  51  initprop "kPayRechareSuccess"
+00384:  51  endinit
+00385:  51  setname "PayResultCode"
+00390:  51  pop
+00391:  55  bindname "PushActionResultCode"
+00396:  55  newinit 1
+00401:  56  zero
+00402:  56  initprop "kPushReceiveMessage"
+00407:  56  endinit
+00408:  56  setname "PushActionResultCode"
+00413:  56  pop
+00414:  60  bindname "ShareResultCode"
+00419:  60  newinit 1
+00424:  61  zero
+00425:  61  initprop "kShareSuccess"
+00430:  62  one
+00431:  62  initprop "kShareFail"
+00436:  63  int8 2
+00438:  63  initprop "kShareCancel"
+00443:  64  int8 3
+00445:  64  initprop "kShareNetworkError"
+00450:  64  endinit
+00451:  64  setname "ShareResultCode"
+00456:  64  pop
+00457:  68  bindname "SocialRetCode"
+00462:  68  newinit 1
+00467:  70  one
+00468:  70  initprop "kScoreSubmitSucceed"
+00473:  71  int8 2
+00475:  71  initprop "kScoreSubmitfail"
+00480:  73  int8 3
+00482:  73  initprop "kAchUnlockSucceed"
+00487:  74  int8 4
+00489:  74  initprop "kAchUnlockFail"
+00494:  75  int8 5
+00496:  75  initprop "kSocialSignInSucceed"
+00501:  76  int8 6
+00503:  76  initprop "kSocialSignInFail"
+00508:  77  int8 7
+00510:  77  initprop "kSocialSignOutSucceed"
+00515:  78  int8 8
+00517:  78  initprop "kSocialSignOutFail"
+00522:  78  endinit
+00523:  78  setname "SocialRetCode"
+00528:  78  pop
+00529:  82  bindname "UserActionResultCode"
+00534:  82  newinit 1
+00539:  83  zero
+00540:  83  initprop "kInitSuccess"
+00545:  84  one
+00546:  84  initprop "kInitFail"
+00551:  85  int8 2
+00553:  85  initprop "kLoginSuccess"
+00558:  86  int8 3
+00560:  86  initprop "kLoginNetworkError"
+00565:  87  int8 4
+00567:  87  initprop "kLoginNoNeed"
+00572:  88  int8 5
+00574:  88  initprop "kLoginFail"
+00579:  89  int8 6
+00581:  89  initprop "kLoginCancel"
+00586:  90  int8 7
+00588:  90  initprop "kLogoutSuccess"
+00593:  91  int8 8
+00595:  91  initprop "kLogoutFail"
+00600:  92  int8 9
+00602:  92  initprop "kPlatformEnter"
+00607:  93  int8 10
+00609:  93  initprop "kPlatformBack"
+00614:  94  int8 11
+00616:  94  initprop "kPausePage"
+00621:  95  int8 12
+00623:  95  initprop "kExitPage"
+00628:  96  int8 13
+00630:  96  initprop "kAntiAddictionQuery"
+00635:  97  int8 14
+00637:  97  initprop "kRealNameRegister"
+00642:  98  int8 15
+00644:  98  initprop "kAccountSwitchSuccess"
+00649:  99  int8 16
+00651:  99  initprop "kAccountSwitchFail"
+00656: 100  int8 17
+00658: 100  initprop "kOpenShop"
+00663: 100  endinit
+00664: 100  setname "UserActionResultCode"
+00669: 100  pop
+00670: 105  bindname "ToolBarPlace"
+00675: 105  newinit 1
+00680: 106  one
+00681: 106  initprop "kToolBarTopLeft"
+00686: 107  int8 2
+00688: 107  initprop "kToolBarTopRight"
+00693: 108  int8 3
+00695: 108  initprop "kToolBarMidLeft"
+00700: 109  int8 4
+00702: 109  initprop "kToolBarMidRight"
+00707: 110  int8 5
+00709: 110  initprop "kToolBarBottomLeft"
+00714: 111  int8 6
+00716: 111  initprop "kToolBarBottomRight"
+00721: 111  endinit
+00722: 111  setname "ToolBarPlace"
+00727: 111  pop
+00728: 115  bindname "AccountType"
+00733: 115  newinit 1
+00738: 116  zero
+00739: 116  initprop "ANONYMOUS"
+00744: 117  one
+00745: 117  initprop "REGISTED"
+00750: 118  int8 2
+00752: 118  initprop "SINA_WEIBO"
+00757: 119  int8 3
+00759: 119  initprop "TENCENT_WEIBO"
+00764: 120  int8 4
+00766: 120  initprop "QQ"
+00771: 121  int8 5
+00773: 121  initprop "QQ_WEIBO"
+00778: 122  int8 6
+00780: 122  initprop "ND91"
+00785: 122  endinit
+00786: 122  setname "AccountType"
+00791: 122  pop
+00792: 125  bindname "AccountOperate"
+00797: 125  newinit 1
+00802: 126  zero
+00803: 126  initprop "LOGIN"
+00808: 127  one
+00809: 127  initprop "LOGOUT"
+00814: 128  int8 2
+00816: 128  initprop "REGISTER"
+00821: 128  endinit
+00822: 128  setname "AccountOperate"
+00827: 128  pop
+00828: 131  bindname "AccountGender"
+00833: 131  newinit 1
+00838: 132  zero
+00839: 132  initprop "MALE"
+00844: 133  one
+00845: 133  initprop "FEMALE"
+00850: 134  int8 2
+00852: 134  initprop "UNKNOWN"
+00857: 134  endinit
+00858: 134  setname "AccountGender"
+00863: 134  pop
+00864: 137  bindname "TaskType"
+00869: 137  newinit 1
+00874: 138  zero
+00875: 138  initprop "GUIDE_LINE"
+00880: 139  one
+00881: 139  initprop "MAIN_LINE"
+00886: 140  int8 2
+00888: 140  initprop "BRANCH_LINE"
+00893: 141  int8 3
+00895: 141  initprop "DAILY"
+00900: 142  int8 4
+00902: 142  initprop "ACTIVITY"
+00907: 143  int8 5
+00909: 143  initprop "OTHER"
+00914: 143  endinit
+00915: 143  setname "TaskType"
+00920: 143  pop
+00921: 137  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkConst.js:1 ---

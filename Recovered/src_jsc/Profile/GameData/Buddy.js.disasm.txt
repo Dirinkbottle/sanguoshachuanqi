@@ -1,0 +1,898 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/Buddy.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=78 object[0]
+;; FUNCTION-MAP kind=lambda offset=88 object[1]
+;; FUNCTION-MAP kind=lambda offset=98 object[2]
+;; FUNCTION-MAP kind=lambda offset=108 object[3]
+;; FUNCTION-MAP kind=lambda offset=118 object[4]
+;; FUNCTION-MAP kind=lambda offset=128 object[5]
+;; FUNCTION-MAP kind=lambda offset=138 object[6]
+;; FUNCTION-MAP kind=lambda offset=148 object[7]
+;; FUNCTION-MAP kind=lambda offset=158 object[8]
+;; FUNCTION-MAP kind=lambda offset=168 object[9]
+;; FUNCTION-MAP kind=lambda offset=178 object[10]
+;; FUNCTION-MAP kind=lambda offset=188 object[11]
+;; FUNCTION-MAP kind=lambda offset=198 object[12]
+;; FUNCTION-MAP kind=lambda offset=208 object[13]
+;; FUNCTION-MAP kind=lambda offset=249 object[14]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Profile"
+00010:   7  getprop "GameData"
+00015:   7  name "xs"
+00020:   7  getprop "Profile"
+00025:   7  getprop "GameData"
+00030:   7  getprop "Base"
+00035:   7  dup
+00036:   7  callprop "extend"
+00041:   7  swap
+00042:   7  notearg
+00043:   7  newinit 1
+00048:   8  string "xs.Profile.GameData.Buddy"
+00053:   8  initprop "name"
+00058:   9  name "xs"
+00063:   9  getprop "Debug"
+00068:   9  getprop "emptyFunc"
+00073:   9  initprop "dump"
+00078:  11  lambda (function () {
+    [sourceless code]
+})
+00083:  11  initprop "init"
+00088:  19  lambda (function () {
+    [sourceless code]
+})
+00093:  19  initprop "getCurBuddyMaxLength"
+00098:  24  lambda (function () {
+    [sourceless code]
+})
+00103:  24  initprop "getCurBuddyLength"
+00108:  29  lambda (function () {
+    [sourceless code]
+})
+00113:  29  initprop "getBuddyMaxLength"
+00118:  34  lambda (function () {
+    [sourceless code]
+})
+00123:  34  initprop "_updateNotice"
+00128:  40  lambda (function () {
+    [sourceless code]
+})
+00133:  40  initprop "getOpenZhaoLinNumByBuddyPos"
+00138:  56  lambda (function () {
+    [sourceless code]
+})
+00143:  56  initprop "getGeneralsInBuddy"
+00148:  74  lambda (function () {
+    [sourceless code]
+})
+00153:  74  initprop "isInBuddy"
+00158:  85  lambda (function () {
+    [sourceless code]
+})
+00163:  85  initprop "getBuddyGeneralInPos"
+00168: 104  lambda (function () {
+    [sourceless code]
+})
+00173: 104  initprop "getBuddyGeneralsWithoutEmptyPos"
+00178: 117  lambda (function () {
+    [sourceless code]
+})
+00183: 117  initprop "getBuddyGenerals"
+00188: 123  lambda (function () {
+    [sourceless code]
+})
+00193: 123  initprop "getBuddyGeneralsClone"
+00198: 136  lambda (function () {
+    [sourceless code]
+})
+00203: 136  initprop "isBuddyByGeneralPkId"
+00208: 149  lambda (function () {
+    [sourceless code]
+})
+00213: 149  initprop "getGeneral"
+00218: 149  endinit
+00219: 149  notearg
+00220: 149  call 1
+00223: 149  setprop "Buddy"
+00228: 149  popv
+00229: 158  name "xs"
+00234: 158  getprop "Profile"
+00239: 158  getprop "GameData"
+00244: 158  getprop "Buddy"
+00249: 158  lambda (function () {
+    [sourceless code]
+})
+00254: 158  setprop "create"
+00259: 158  popv
+00260: 174  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  getarg 0
+00012:  12  notearg
+00013:  12  call 1
+00016:  12  pop
+00017:  13  this
+00018:  13  getprop "dataRef"
+00023:  13  dup
+00024:  13  callprop "getNotifyCenter"
+00029:  13  swap
+00030:  13  notearg
+00031:  13  call 0
+00034:  13  dup
+00035:  13  callprop "addObserver"
+00040:  13  swap
+00041:  13  notearg
+00042:  13  this
+00043:  13  notearg
+00044:  13  this
+00045:  13  getprop "clearCache"
+00050:  13  notearg
+00051:  13  name "xs"
+00056:  13  getprop "Constant_Notify_ModelChange_Buddy_SortChange"
+00061:  13  notearg
+00062:  13  call 3
+00065:  13  pop
+00066:  14  true
+00067:  14  return
+00068:  14  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:11 ---
+;; function object[1] getCurBuddyMaxLength
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:19 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  this
+00001:  20  dup
+00002:  20  callprop "getBuddyGenerals"
+00007:  20  swap
+00008:  20  notearg
+00009:  20  call 0
+00012:  20  length "length"
+00017:  20  return
+00018:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:19 ---
+;; function object[2] getCurBuddyLength
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:24 ---
+loc   line  op
+----- ----  --
+main:
+00000:  25  this
+00001:  25  dup
+00002:  25  callprop "getBuddyGeneralsWithoutEmptyPos"
+00007:  25  swap
+00008:  25  notearg
+00009:  25  call 0
+00012:  25  length "length"
+00017:  25  return
+00018:  25  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:24 ---
+;; function object[3] getBuddyMaxLength
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  name "xs"
+00005:  30  getprop "Tools"
+00010:  30  getprop "CfgData"
+00015:  30  dup
+00016:  30  callprop "getCfgDataByType"
+00021:  30  swap
+00022:  30  notearg
+00023:  30  name "xs"
+00028:  30  getprop "Constant_CfgDataType_Buddy"
+00033:  30  notearg
+00034:  30  call 1
+00037:  30  length "length"
+00042:  30  return
+00043:  30  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:29 ---
+;; function object[4] _updateNotice
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  name "xs"
+00005:  35  getprop "Utils"
+00010:  35  getprop "Notify"
+00015:  35  dup
+00016:  35  callprop "postNotification"
+00021:  35  swap
+00022:  35  notearg
+00023:  35  name "xs"
+00028:  35  getprop "Constant_Notify_Buddy_Change"
+00033:  35  notearg
+00034:  35  this
+00035:  35  notearg
+00036:  35  call 2
+00039:  35  pop
+00040:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:34 ---
+;; function object[5] getOpenZhaoLinNumByBuddyPos
+;; function metadata object[5] nargs=1 bindings=3
+;; arg[0] pos
+;; local[0] _dataObj
+;; local[1] num
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:40 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  name "xs"
+00005:  41  getprop "Tools"
+00010:  41  getprop "CfgData"
+00015:  41  dup
+00016:  41  callprop "readRecordByTypeAndKey"
+00021:  41  swap
+00022:  41  notearg
+00023:  42  name "xs"
+00028:  42  getprop "Constant_CfgDataType_Buddy"
+00033:  42  notearg
+00034:  43  getarg 0
+00037:  43  notearg
+00038:  43  call 2
+00041:  43  setlocal 0
+00044:  43  pop
+00045:  45  zero
+00046:  45  setlocal 1
+00049:  45  pop
+00050:  46  getlocal 0
+00053:  46  ifeq 70 (+17)
+00058:  47  getlocal 0
+00061:  47  getprop "num"
+00066:  47  setlocal 1
+00069:  47  pop
+00070:  50  getlocal 1
+00073:  50  return
+00074:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:40 ---
+;; function object[6] getGeneralsInBuddy
+;; function metadata object[6] nargs=0 bindings=5
+;; local[0] _BuddyGeneralModels
+;; local[1] _retArray
+;; local[2] i
+;; local[3] _tmpBuddyGeneralModel
+;; local[4] general
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  57  this
+00001:  57  dup
+00002:  57  callprop "getBuddyGeneralsWithoutEmptyPos"
+00007:  57  swap
+00008:  57  notearg
+00009:  57  call 0
+00012:  57  setlocal 0
+00015:  57  pop
+00016:  60  newarray 0
+00020:  60  endinit
+00021:  60  setlocal 1
+00024:  60  pop
+00025:  61  zero
+00026:  61  setlocal 2
+00029:  61  pop
+00030:  61  goto 109 (+79)
+00035:  63  loophead
+00036:  63  getlocal 0
+00039:  63  getlocal 2
+00042:  63  getelem
+00043:  63  setlocal 3
+00046:  63  pop
+00047:  64  this
+00048:  64  dup
+00049:  64  callprop "getGeneral"
+00054:  64  swap
+00055:  64  notearg
+00056:  64  getlocal 3
+00059:  64  notearg
+00060:  64  call 1
+00063:  64  setlocal 4
+00066:  64  pop
+00067:  65  getlocal 4
+00070:  65  ifeq 94 (+24)
+00075:  66  getlocal 1
+00078:  66  dup
+00079:  66  callprop "push"
+00084:  66  swap
+00085:  66  notearg
+00086:  66  getlocal 4
+00089:  66  notearg
+00090:  66  call 1
+00093:  66  pop
+00094:  61  localinc 11
+00097:  61  getlocal 2
+00100:  61  pos
+00101:  61  dup
+00102:  61  one
+00103:  61  add
+00104:  61  setlocal 2
+00107:  61  pop
+00108:  61  pop
+00109:  61  loopentry
+00110:  61  getlocal 2
+00113:  61  getlocal 0
+00116:  61  length "length"
+00121:  61  lt
+00122:  61  ifne 35 (-87)
+00127:  70  getlocal 1
+00130:  70  return
+00131:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:56 ---
+;; function object[7] isInBuddy
+;; function metadata object[7] nargs=1 bindings=3
+;; arg[0] pk_id
+;; local[0] Buddyinfo
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:74 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  this
+00001:  75  dup
+00002:  75  callprop "getBuddyGeneralsWithoutEmptyPos"
+00007:  75  swap
+00008:  75  notearg
+00009:  75  call 0
+00012:  75  setlocal 0
+00015:  75  pop
+00016:  76  zero
+00017:  76  setlocal 1
+00020:  76  pop
+00021:  76  goto 71 (+50)
+00026:  77  loophead
+00027:  77  getarg 0
+00030:  77  getlocal 0
+00033:  77  getlocal 1
+00036:  77  getelem
+00037:  77  dup
+00038:  77  callprop "getGeneralPkId"
+00043:  77  swap
+00044:  77  notearg
+00045:  77  call 0
+00048:  77  stricteq
+00049:  77  ifeq 56 (+7)
+00054:  78  true
+00055:  78  return
+00056:  76  localinc 11
+00059:  76  getlocal 1
+00062:  76  pos
+00063:  76  dup
+00064:  76  one
+00065:  76  add
+00066:  76  setlocal 1
+00069:  76  pop
+00070:  76  pop
+00071:  76  loopentry
+00072:  76  getlocal 1
+00075:  76  getlocal 0
+00078:  76  length "length"
+00083:  76  lt
+00084:  76  ifne 26 (-58)
+00089:  81  false
+00090:  81  return
+00091:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:74 ---
+;; function object[8] getBuddyGeneralInPos
+;; function metadata object[8] nargs=1 bindings=4
+;; arg[0] pos
+;; local[0] Buddyinfo
+;; local[1] i
+;; local[2] _max_pos_unlock
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:85 ---
+loc   line  op
+----- ----  --
+main:
+00000:  86  this
+00001:  86  dup
+00002:  86  callprop "getBuddyGeneralsWithoutEmptyPos"
+00007:  86  swap
+00008:  86  notearg
+00009:  86  call 0
+00012:  86  setlocal 0
+00015:  86  pop
+00016:  87  zero
+00017:  87  setlocal 1
+00020:  87  pop
+00021:  87  goto 75 (+54)
+00026:  88  loophead
+00027:  88  getarg 0
+00030:  88  getlocal 0
+00033:  88  getlocal 1
+00036:  88  getelem
+00037:  88  dup
+00038:  88  callprop "getGeneralPos"
+00043:  88  swap
+00044:  88  notearg
+00045:  88  call 0
+00048:  88  stricteq
+00049:  88  ifeq 62 (+13)
+00054:  89  getlocal 0
+00057:  89  getlocal 1
+00060:  89  getelem
+00061:  89  return
+00062:  87  inclocal 9
+00065:  87  getlocal 1
+00068:  87  pos
+00069:  87  one
+00070:  87  add
+00071:  87  setlocal 1
+00074:  87  pop
+00075:  87  loopentry
+00076:  87  getlocal 1
+00079:  87  getlocal 0
+00082:  87  length "length"
+00087:  87  lt
+00088:  87  ifne 26 (-62)
+00093:  94  this
+00094:  94  dup
+00095:  94  callprop "getCurBuddyMaxLength"
+00100:  94  swap
+00101:  94  notearg
+00102:  94  call 0
+00105:  94  setlocal 2
+00108:  94  pop
+00109:  95  getarg 0
+00112:  95  getlocal 2
+00115:  95  le
+00116:  95  ifeq 148 (+32)
+00121:  96  name "xs"
+00126:  96  getprop "Models"
+00131:  96  getprop "BuddyGeneral"
+00136:  96  dup
+00137:  96  callprop "createWithBase"
+00142:  96  swap
+00143:  96  notearg
+00144:  96  call 0
+00147:  96  return
+00148:  99  name "xs"
+00153:  99  dup
+00154:  99  callprop "warn"
+00159:  99  swap
+00160:  99  notearg
+00161:  99  string "null BuddyGeneral In Pos "
+00166:  99  getarg 0
+00169:  99  add
+00170:  99  notearg
+00171:  99  call 1
+00174:  99  pop
+00175: 100  null
+00176: 100  return
+00177: 100  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:85 ---
+;; function object[9] getBuddyGeneralsWithoutEmptyPos
+;; function metadata object[9] nargs=0 bindings=3
+;; local[0] _ret
+;; local[1] _rs
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:104 ---
+loc   line  op
+----- ----  --
+main:
+00000: 105  this
+00001: 105  getprop "dataRef"
+00006: 105  dup
+00007: 105  callprop "getDataByNameType"
+00012: 105  swap
+00013: 105  notearg
+00014: 105  name "xs"
+00019: 105  getprop "Constant_GameData_Buddy"
+00024: 105  notearg
+00025: 105  call 1
+00028: 105  setlocal 0
+00031: 105  pop
+00032: 107  newarray 0
+00036: 107  endinit
+00037: 107  setlocal 1
+00040: 107  pop
+00041: 108  zero
+00042: 108  setlocal 2
+00045: 108  pop
+00046: 108  goto 134 (+88)
+00051: 109  loophead
+00052: 109  name "xs"
+00057: 109  getprop "Utils"
+00062: 109  dup
+00063: 109  callprop "isEmpty"
+00068: 109  swap
+00069: 109  notearg
+00070: 109  getlocal 0
+00073: 109  getlocal 2
+00076: 109  getelem
+00077: 109  dup
+00078: 109  callprop "getGeneralPkId"
+00083: 109  swap
+00084: 109  notearg
+00085: 109  call 0
+00088: 109  notearg
+00089: 109  call 1
+00092: 109  not
+00093: 109  ifeq 121 (+28)
+00098: 110  getlocal 1
+00101: 110  dup
+00102: 110  callprop "push"
+00107: 110  swap
+00108: 110  notearg
+00109: 110  getlocal 0
+00112: 110  getlocal 2
+00115: 110  getelem
+00116: 110  notearg
+00117: 110  call 1
+00120: 110  pop
+00121: 108  inclocal 9
+00124: 108  getlocal 2
+00127: 108  pos
+00128: 108  one
+00129: 108  add
+00130: 108  setlocal 2
+00133: 108  pop
+00134: 108  loopentry
+00135: 108  getlocal 2
+00138: 108  getlocal 0
+00141: 108  length "length"
+00146: 108  lt
+00147: 108  ifne 51 (-96)
+00152: 113  getlocal 1
+00155: 113  return
+00156: 113  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:104 ---
+;; function object[10] getBuddyGenerals
+;; function metadata object[10] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:117 ---
+loc   line  op
+----- ----  --
+main:
+00000: 118  this
+00001: 118  getprop "dataRef"
+00006: 118  dup
+00007: 118  callprop "getDataByNameType"
+00012: 118  swap
+00013: 118  notearg
+00014: 118  name "xs"
+00019: 118  getprop "Constant_GameData_Buddy"
+00024: 118  notearg
+00025: 118  call 1
+00028: 118  setlocal 0
+00031: 118  pop
+00032: 119  getlocal 0
+00035: 119  return
+00036: 119  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:117 ---
+;; function object[11] getBuddyGeneralsClone
+;; function metadata object[11] nargs=0 bindings=4
+;; local[0] _ret
+;; local[1] _ret_clone
+;; local[2] i
+;; local[3] _temp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:123 ---
+loc   line  op
+----- ----  --
+main:
+00000: 124  this
+00001: 124  dup
+00002: 124  callprop "getBuddyGenerals"
+00007: 124  swap
+00008: 124  notearg
+00009: 124  call 0
+00012: 124  setlocal 0
+00015: 124  pop
+00016: 125  newarray 0
+00020: 125  endinit
+00021: 125  setlocal 1
+00024: 125  pop
+00025: 126  zero
+00026: 126  setlocal 2
+00029: 126  pop
+00030: 126  goto 103 (+73)
+00035: 127  loophead
+00036: 127  getlocal 0
+00039: 127  getlocal 2
+00042: 127  getelem
+00043: 127  dup
+00044: 127  callprop "Clone"
+00049: 127  swap
+00050: 127  notearg
+00051: 127  call 0
+00054: 127  setlocal 3
+00057: 127  pop
+00058: 128  getlocal 3
+00061: 128  int8 100
+00063: 128  setprop "general_position"
+00068: 128  pop
+00069: 129  getlocal 1
+00072: 129  dup
+00073: 129  callprop "push"
+00078: 129  swap
+00079: 129  notearg
+00080: 129  getlocal 3
+00083: 129  notearg
+00084: 129  call 1
+00087: 129  pop
+00088: 126  localinc 11
+00091: 126  getlocal 2
+00094: 126  pos
+00095: 126  dup
+00096: 126  one
+00097: 126  add
+00098: 126  setlocal 2
+00101: 126  pop
+00102: 126  pop
+00103: 126  loopentry
+00104: 126  getlocal 2
+00107: 126  getlocal 0
+00110: 126  length "length"
+00115: 126  lt
+00116: 126  ifne 35 (-81)
+00121: 131  this
+00122: 131  dup
+00123: 131  callprop "dump"
+00128: 131  swap
+00129: 131  notearg
+00130: 131  string "Buddy clone before"
+00135: 131  notearg
+00136: 131  getlocal 0
+00139: 131  notearg
+00140: 131  call 2
+00143: 131  pop
+00144: 132  this
+00145: 132  dup
+00146: 132  callprop "dump"
+00151: 132  swap
+00152: 132  notearg
+00153: 132  string "Buddy clone done"
+00158: 132  notearg
+00159: 132  getlocal 1
+00162: 132  notearg
+00163: 132  call 2
+00166: 132  pop
+00167: 133  getlocal 1
+00170: 133  return
+00171: 133  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:123 ---
+;; function object[12] isBuddyByGeneralPkId
+;; function metadata object[12] nargs=1 bindings=5
+;; arg[0] generalPkId
+;; local[0] _ret
+;; local[1] isBuddy
+;; local[2] i
+;; local[3] _temp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:136 ---
+loc   line  op
+----- ----  --
+main:
+00000: 137  this
+00001: 137  dup
+00002: 137  callprop "getBuddyGenerals"
+00007: 137  swap
+00008: 137  notearg
+00009: 137  call 0
+00012: 137  setlocal 0
+00015: 137  pop
+00016: 138  false
+00017: 138  setlocal 1
+00020: 138  pop
+00021: 139  zero
+00022: 139  setlocal 2
+00025: 139  pop
+00026: 139  goto 91 (+65)
+00031: 140  loophead
+00032: 140  getlocal 0
+00035: 140  getlocal 2
+00038: 140  getelem
+00039: 140  dup
+00040: 140  callprop "getGeneralPkId"
+00045: 140  swap
+00046: 140  notearg
+00047: 140  call 0
+00050: 140  setlocal 3
+00053: 140  pop
+00054: 141  getarg 0
+00057: 141  getlocal 3
+00060: 141  eq
+00061: 141  ifeq 76 (+15)
+00066: 142  true
+00067: 142  setlocal 1
+00070: 142  pop
+00071: 143  goto 109 (+38)
+00076: 139  localinc 11
+00079: 139  getlocal 2
+00082: 139  pos
+00083: 139  dup
+00084: 139  one
+00085: 139  add
+00086: 139  setlocal 2
+00089: 139  pop
+00090: 139  pop
+00091: 139  loopentry
+00092: 139  getlocal 2
+00095: 139  getlocal 0
+00098: 139  length "length"
+00103: 139  lt
+00104: 139  ifne 31 (-73)
+00109: 146  getlocal 1
+00112: 146  return
+00113: 146  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:136 ---
+;; function object[13] getGeneral
+;; function metadata object[13] nargs=1 bindings=2
+;; arg[0] obj_buddy_general
+;; local[0] general_pk_id
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:149 ---
+loc   line  op
+----- ----  --
+main:
+00000: 150  getarg 0
+00003: 150  dup
+00004: 150  callprop "getGeneralPkId"
+00009: 150  swap
+00010: 150  notearg
+00011: 150  call 0
+00014: 150  setlocal 0
+00017: 150  pop
+00018: 151  name "xs"
+00023: 151  getprop "Utils"
+00028: 151  dup
+00029: 151  callprop "isEmpty"
+00034: 151  swap
+00035: 151  notearg
+00036: 151  getlocal 0
+00039: 151  notearg
+00040: 151  call 1
+00043: 151  not
+00044: 151  ifeq 82 (+38)
+00049: 152  this
+00050: 152  dup
+00051: 152  callprop "_initInstance"
+00056: 152  swap
+00057: 152  notearg
+00058: 152  call 0
+00061: 152  getprop "Generals"
+00066: 152  dup
+00067: 152  callprop "getByPkId"
+00072: 152  swap
+00073: 152  notearg
+00074: 152  getlocal 0
+00077: 152  notearg
+00078: 152  call 1
+00081: 152  return
+00082: 154  null
+00083: 154  return
+00084: 154  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:149 ---
+;; function object[14] create
+;; function metadata object[14] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:158 ---
+loc   line  op
+----- ----  --
+main:
+00000: 159  getarg 0
+00003: 159  getprop "play_id"
+00008: 159  setlocal 0
+00011: 159  pop
+00012: 160  name "xs"
+00017: 160  getprop "Profile"
+00022: 160  getprop "GameData"
+00027: 160  getprop "Buddy"
+00032: 160  setlocal 1
+00035: 160  pop
+00036: 161  name "xs"
+00041: 161  getprop "Utils"
+00046: 161  dup
+00047: 161  callprop "isSet"
+00052: 161  swap
+00053: 161  notearg
+00054: 161  getlocal 1
+00057: 161  getprop "_instance"
+00062: 161  notearg
+00063: 161  call 1
+00066: 161  or 85 (+19)
+00071: 161  pop
+00072: 161  getlocal 1
+00075: 161  newarray 0
+00079: 161  endinit
+00080: 161  setprop "_instance"
+00085: 161  pop
+00086: 163  getlocal 1
+00089: 163  getprop "_instance"
+00094: 163  getlocal 0
+00097: 163  getelem
+00098: 163  ifeq 116 (+18)
+00103: 164  getlocal 1
+00106: 164  getprop "_instance"
+00111: 164  getlocal 0
+00114: 164  getelem
+00115: 164  return
+00116: 167  getlocal 1
+00119: 167  undefined
+00120: 167  notearg
+00121: 167  new 0
+00124: 167  setlocal 2
+00127: 167  pop
+00128: 168  getlocal 2
+00131: 168  and 155 (+24)
+00136: 168  pop
+00137: 168  getlocal 2
+00140: 168  dup
+00141: 168  callprop "init"
+00146: 168  swap
+00147: 168  notearg
+00148: 168  getarg 0
+00151: 168  notearg
+00152: 168  call 1
+00155: 168  ifeq 180 (+25)
+00160: 169  getlocal 1
+00163: 169  getprop "_instance"
+00168: 169  getlocal 0
+00171: 169  getlocal 2
+00174: 169  setelem
+00175: 169  pop
+00176: 170  getlocal 2
+00179: 170  return
+00180: 172  name "xs"
+00185: 172  dup
+00186: 172  callprop "error"
+00191: 172  swap
+00192: 172  notearg
+00193: 172  string "xs.Profile.GameData.Buddy.create failed"
+00198: 172  notearg
+00199: 172  call 1
+00202: 172  pop
+00203: 173  null
+00204: 173  return
+00205: 173  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Buddy.js:158 ---

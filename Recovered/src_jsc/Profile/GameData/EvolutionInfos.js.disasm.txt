@@ -1,0 +1,723 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/EvolutionInfos.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=143 object[0]
+;; FUNCTION-MAP kind=lambda offset=153 object[1]
+;; FUNCTION-MAP kind=lambda offset=163 object[2]
+;; FUNCTION-MAP kind=lambda offset=173 object[3]
+;; FUNCTION-MAP kind=lambda offset=183 object[4]
+;; FUNCTION-MAP kind=lambda offset=193 object[5]
+;; FUNCTION-MAP kind=lambda offset=203 object[6]
+;; FUNCTION-MAP kind=lambda offset=244 object[7]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Profile"
+00010:   5  getprop "GameData"
+00015:   5  name "xs"
+00020:   5  getprop "Profile"
+00025:   5  getprop "GameData"
+00030:   5  getprop "Base"
+00035:   5  dup
+00036:   5  callprop "extend"
+00041:   5  swap
+00042:   5  notearg
+00043:   5  newinit 1
+00048:   7  name "xs"
+00053:   7  getprop "Debug"
+00058:   7  getprop "emptyFunc"
+00063:   7  initprop "log"
+00068:   8  name "xs"
+00073:   8  getprop "Debug"
+00078:   8  getprop "emptyFunc"
+00083:   8  initprop "dump"
+00088:  10  string "xs.Profile.GameData.EvolutionInfos"
+00093:  10  initprop "name"
+00098:  11  name "xs"
+00103:  11  getprop "Constant_GameData_Evolution"
+00108:  11  initprop "nameType"
+00113:  12  name "xs"
+00118:  12  getprop "Models"
+00123:  12  getprop "EvolutionInfo"
+00128:  12  initprop "modelName"
+00133:  13  string ""
+00138:  13  initprop "sortBy"
+00143:  15  lambda (function () {
+    [sourceless code]
+})
+00148:  15  initprop "init"
+00153:  25  lambda (function () {
+    [sourceless code]
+})
+00158:  25  initprop "getByGeneralId"
+00163:  36  lambda (function () {
+    [sourceless code]
+})
+00168:  36  initprop "_updateNotice"
+00173:  39  lambda (function () {
+    [sourceless code]
+})
+00178:  39  initprop "checkAwakedByGeneralId"
+00183:  45  lambda (function () {
+    [sourceless code]
+})
+00188:  45  initprop "checkCanAwakeByGeneral"
+00193:  56  lambda (function () {
+    [sourceless code]
+})
+00198:  56  initprop "getAllGeneralCanAwakeNum"
+00203:  59  lambda (function () {
+    [sourceless code]
+})
+00208:  59  initprop "getAllGeneralAwake"
+00213:  59  endinit
+00214:  59  notearg
+00215:  59  call 1
+00218:  59  setprop "EvolutionInfos"
+00223:  59  popv
+00224: 119  name "xs"
+00229: 119  getprop "Profile"
+00234: 119  getprop "GameData"
+00239: 119  getprop "EvolutionInfos"
+00244: 119  lambda (function () {
+    [sourceless code]
+})
+00249: 119  setprop "create"
+00254: 119  popv
+00255: 137  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  dup
+00002:  16  callprop "_super"
+00007:  16  swap
+00008:  16  notearg
+00009:  16  getarg 0
+00012:  16  notearg
+00013:  16  call 1
+00016:  16  pop
+00017:  17  this
+00018:  17  getprop "dataRef"
+00023:  17  dup
+00024:  17  callprop "getNotifyCenter"
+00029:  17  swap
+00030:  17  notearg
+00031:  17  call 0
+00034:  17  dup
+00035:  17  callprop "addObserver"
+00040:  17  swap
+00041:  17  notearg
+00042:  17  this
+00043:  17  notearg
+00044:  17  this
+00045:  17  getprop "clearCache"
+00050:  17  notearg
+00051:  17  name "xs"
+00056:  17  getprop "Constant_Notify_ModelChange_Evolution_SortChange"
+00061:  17  notearg
+00062:  17  call 3
+00065:  17  pop
+00066:  18  this
+00067:  18  zero
+00068:  18  setprop "hitNum"
+00073:  18  pop
+00074:  19  true
+00075:  19  return
+00076:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:15 ---
+;; function object[1] getByGeneralId
+;; function metadata object[1] nargs=1 bindings=3
+;; arg[0] general_id
+;; local[0] _obj_list
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  26  this
+00001:  26  dup
+00002:  26  callprop "getAllWithDefaultSort"
+00007:  26  swap
+00008:  26  notearg
+00009:  26  call 0
+00012:  26  setlocal 0
+00015:  26  pop
+00016:  27  zero
+00017:  27  setlocal 1
+00020:  27  pop
+00021:  27  goto 77 (+56)
+00026:  28  loophead
+00027:  28  getlocal 0
+00030:  28  getlocal 1
+00033:  28  getelem
+00034:  28  dup
+00035:  28  callprop "getGeneralId"
+00040:  28  swap
+00041:  28  notearg
+00042:  28  call 0
+00045:  28  getarg 0
+00048:  28  eq
+00049:  28  ifeq 62 (+13)
+00054:  29  getlocal 0
+00057:  29  getlocal 1
+00060:  29  getelem
+00061:  29  return
+00062:  27  localinc 11
+00065:  27  getlocal 1
+00068:  27  pos
+00069:  27  dup
+00070:  27  one
+00071:  27  add
+00072:  27  setlocal 1
+00075:  27  pop
+00076:  27  pop
+00077:  27  loopentry
+00078:  27  getlocal 1
+00081:  27  getlocal 0
+00084:  27  length "length"
+00089:  27  lt
+00090:  27  ifne 26 (-64)
+00095:  32  null
+00096:  32  return
+00097:  32  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:25 ---
+;; function object[2] _updateNotice
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:36 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  name "xs"
+00005:  37  getprop "Utils"
+00010:  37  getprop "Notify"
+00015:  37  dup
+00016:  37  callprop "postNotification"
+00021:  37  swap
+00022:  37  notearg
+00023:  37  name "xs"
+00028:  37  getprop "Constant_Notify_Evolution_Change"
+00033:  37  notearg
+00034:  37  this
+00035:  37  notearg
+00036:  37  call 2
+00039:  37  pop
+00040:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:36 ---
+;; function object[3] checkAwakedByGeneralId
+;; function metadata object[3] nargs=1 bindings=2
+;; arg[0] general_id
+;; local[0] evolution
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  this
+00001:  40  dup
+00002:  40  callprop "getByGeneralId"
+00007:  40  swap
+00008:  40  notearg
+00009:  40  getarg 0
+00012:  40  notearg
+00013:  40  call 1
+00016:  40  setlocal 0
+00019:  40  pop
+00020:  41  getlocal 0
+00023:  41  null
+00024:  41  ne
+00025:  41  and 56 (+31)
+00030:  41  pop
+00031:  41  getlocal 0
+00034:  41  dup
+00035:  41  callprop "getStatusAwake"
+00040:  41  swap
+00041:  41  notearg
+00042:  41  call 0
+00045:  41  name "xs"
+00050:  41  getprop "Constant_Evolution_Status_Enable"
+00055:  41  eq
+00056:  41  ifeq 63 (+7)
+00061:  42  true
+00062:  42  return
+00063:  43  false
+00064:  43  return
+00065:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:39 ---
+;; function object[4] checkCanAwakeByGeneral
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] generalModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  getarg 0
+00003:  46  null
+00004:  46  eq
+00005:  46  ifeq 12 (+7)
+00010:  47  false
+00011:  47  return
+00012:  48  name "xs"
+00017:  48  getprop "Models"
+00022:  48  getprop "EvolutionInfo"
+00027:  48  dup
+00028:  48  callprop "createWithBase"
+00033:  48  swap
+00034:  48  notearg
+00035:  48  getarg 0
+00038:  48  dup
+00039:  48  callprop "getId"
+00044:  48  swap
+00045:  48  notearg
+00046:  48  call 0
+00049:  48  notearg
+00050:  48  call 1
+00053:  48  dup
+00054:  48  callprop "isCanAwake"
+00059:  48  swap
+00060:  48  notearg
+00061:  50  getarg 0
+00064:  50  notearg
+00065:  51  name "xs"
+00070:  51  getprop "Profile"
+00075:  51  getprop "GameData"
+00080:  51  getprop "Mgr"
+00085:  51  dup
+00086:  51  callprop "getInstance"
+00091:  51  swap
+00092:  51  notearg
+00093:  51  call 0
+00096:  51  getprop "MagicalEqus"
+00101:  51  dup
+00102:  51  callprop "getByGeneralId"
+00107:  51  swap
+00108:  51  notearg
+00109:  51  getarg 0
+00112:  51  dup
+00113:  51  callprop "getId"
+00118:  51  swap
+00119:  51  notearg
+00120:  51  call 0
+00123:  51  notearg
+00124:  51  call 1
+00127:  51  notearg
+00128:  51  call 2
+00131:  51  return
+00132:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:45 ---
+;; function object[5] getAllGeneralCanAwakeNum
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  57  this
+00001:  57  getprop "hitNum"
+00006:  57  return
+00007:  57  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:56 ---
+;; function object[6] getAllGeneralAwake
+;; function metadata object[6] nargs=0 bindings=9
+;; local[0] allList
+;; local[1] _awake_obj
+;; local[2] waitAwakeObjs
+;; local[3] openAwakeObjs
+;; local[4] closeAwakeObjs
+;; local[5] i
+;; local[6] magicalEqusItem
+;; local[7] tmpGeneralId
+;; local[8] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:59 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  name "xs"
+00005:  62  getprop "Profile"
+00010:  62  getprop "GameData"
+00015:  62  getprop "Mgr"
+00020:  62  dup
+00021:  62  callprop "getInstance"
+00026:  62  swap
+00027:  62  notearg
+00028:  62  call 0
+00031:  62  getprop "MagicalEqus"
+00036:  62  dup
+00037:  62  callprop "getAll"
+00042:  62  swap
+00043:  62  notearg
+00044:  62  call 0
+00047:  62  setlocal 0
+00050:  62  pop
+00051:  64  newarray 0
+00055:  64  endinit
+00056:  64  setlocal 1
+00059:  64  pop
+00060:  65  newarray 0
+00064:  65  endinit
+00065:  65  setlocal 2
+00068:  65  pop
+00069:  66  newarray 0
+00073:  66  endinit
+00074:  66  setlocal 3
+00077:  66  pop
+00078:  67  newarray 0
+00082:  67  endinit
+00083:  67  setlocal 4
+00086:  67  pop
+00087:  70  zero
+00088:  70  setlocal 5
+00091:  70  pop
+00092:  70  goto 425 (+333)
+00097:  71  loophead
+00098:  71  getlocal 0
+00101:  71  getlocal 5
+00104:  71  getelem
+00105:  71  setlocal 6
+00108:  71  pop
+00109:  72  getlocal 6
+00112:  72  dup
+00113:  72  callprop "getGeneralId"
+00118:  72  swap
+00119:  72  notearg
+00120:  72  call 0
+00123:  72  setlocal 7
+00126:  72  pop
+00127:  73  this
+00128:  73  dup
+00129:  73  callprop "getByGeneralId"
+00134:  73  swap
+00135:  73  notearg
+00136:  73  getlocal 7
+00139:  73  notearg
+00140:  73  call 1
+00143:  73  setlocal 8
+00146:  73  pop
+00147:  74  getlocal 8
+00150:  74  null
+00151:  74  eq
+00152:  74  ifeq 191 (+39)
+00157:  76  name "xs"
+00162:  76  getprop "Models"
+00167:  76  getprop "EvolutionInfo"
+00172:  76  dup
+00173:  76  callprop "createWithBase"
+00178:  76  swap
+00179:  76  notearg
+00180:  76  getlocal 7
+00183:  76  notearg
+00184:  76  call 1
+00187:  76  setlocal 8
+00190:  76  pop
+00191:  78  getlocal 8
+00194:  78  dup
+00195:  78  callprop "initCachePoint"
+00200:  78  swap
+00201:  78  notearg
+00202:  78  getlocal 6
+00205:  78  notearg
+00206:  78  call 1
+00209:  78  pop
+00210:  79  getlocal 8
+00213:  79  dup
+00214:  79  callprop "getStatusAwake"
+00219:  79  swap
+00220:  79  notearg
+00221:  79  call 0
+00224:  79  name "xs"
+00229:  79  getprop "Constant_Evolution_Status_Close"
+00234:  79  eq
+00235:  79  ifeq 264 (+29)
+00240:  81  getlocal 4
+00243:  81  dup
+00244:  81  callprop "push"
+00249:  81  swap
+00250:  81  notearg
+00251:  81  getlocal 8
+00254:  81  notearg
+00255:  81  call 1
+00258:  81  pop
+00259:  81  goto 410 (+151)
+00264:  83  getlocal 8
+00267:  83  dup
+00268:  83  callprop "getStatusAwake"
+00273:  83  swap
+00274:  83  notearg
+00275:  83  call 0
+00278:  83  name "xs"
+00283:  83  getprop "Constant_Evolution_Status_Unable"
+00288:  83  eq
+00289:  83  ifeq 361 (+72)
+00294:  85  getlocal 8
+00297:  85  dup
+00298:  85  callprop "isCanAwake"
+00303:  85  swap
+00304:  85  notearg
+00305:  85  call 0
+00308:  85  ifeq 337 (+29)
+00313:  87  getlocal 2
+00316:  87  dup
+00317:  87  callprop "push"
+00322:  87  swap
+00323:  87  notearg
+00324:  87  getlocal 8
+00327:  87  notearg
+00328:  87  call 1
+00331:  87  pop
+00332:  87  goto 356 (+24)
+00337:  90  getlocal 3
+00340:  90  dup
+00341:  90  callprop "push"
+00346:  90  swap
+00347:  90  notearg
+00348:  90  getlocal 8
+00351:  90  notearg
+00352:  90  call 1
+00355:  90  pop
+00356:  90  goto 410 (+54)
+00361:  93  getlocal 8
+00364:  93  dup
+00365:  93  callprop "getStatusAwake"
+00370:  93  swap
+00371:  93  notearg
+00372:  93  call 0
+00375:  93  name "xs"
+00380:  93  getprop "Constant_Evolution_Status_Enable"
+00385:  93  eq
+00386:  93  ifeq 410 (+24)
+00391:  95  getlocal 1
+00394:  95  dup
+00395:  95  callprop "push"
+00400:  95  swap
+00401:  95  notearg
+00402:  95  getlocal 8
+00405:  95  notearg
+00406:  95  call 1
+00409:  95  pop
+00410:  70  localinc 11
+00413:  70  getlocal 5
+00416:  70  pos
+00417:  70  dup
+00418:  70  one
+00419:  70  add
+00420:  70  setlocal 5
+00423:  70  pop
+00424:  70  pop
+00425:  70  loopentry
+00426:  70  getlocal 5
+00429:  70  getlocal 0
+00432:  70  length "length"
+00437:  70  lt
+00438:  70  ifne 97 (-341)
+00443:  99  this
+00444:  99  getlocal 2
+00447:  99  length "length"
+00452:  99  setprop "hitNum"
+00457:  99  pop
+00458: 101  zero
+00459: 101  setlocal 5
+00462: 101  pop
+00463: 101  goto 507 (+44)
+00468: 102  loophead
+00469: 102  getlocal 1
+00472: 102  dup
+00473: 102  callprop "push"
+00478: 102  swap
+00479: 102  notearg
+00480: 102  getlocal 2
+00483: 102  getlocal 5
+00486: 102  getelem
+00487: 102  notearg
+00488: 102  call 1
+00491: 102  pop
+00492: 101  localinc 11
+00495: 101  getlocal 5
+00498: 101  pos
+00499: 101  dup
+00500: 101  one
+00501: 101  add
+00502: 101  setlocal 5
+00505: 101  pop
+00506: 101  pop
+00507: 101  loopentry
+00508: 101  getlocal 5
+00511: 101  getlocal 2
+00514: 101  length "length"
+00519: 101  lt
+00520: 101  ifne 468 (-52)
+00525: 105  zero
+00526: 105  setlocal 5
+00529: 105  pop
+00530: 105  goto 574 (+44)
+00535: 106  loophead
+00536: 106  getlocal 1
+00539: 106  dup
+00540: 106  callprop "push"
+00545: 106  swap
+00546: 106  notearg
+00547: 106  getlocal 3
+00550: 106  getlocal 5
+00553: 106  getelem
+00554: 106  notearg
+00555: 106  call 1
+00558: 106  pop
+00559: 105  localinc 11
+00562: 105  getlocal 5
+00565: 105  pos
+00566: 105  dup
+00567: 105  one
+00568: 105  add
+00569: 105  setlocal 5
+00572: 105  pop
+00573: 105  pop
+00574: 105  loopentry
+00575: 105  getlocal 5
+00578: 105  getlocal 3
+00581: 105  length "length"
+00586: 105  lt
+00587: 105  ifne 535 (-52)
+00592: 108  zero
+00593: 108  setlocal 5
+00596: 108  pop
+00597: 108  goto 641 (+44)
+00602: 109  loophead
+00603: 109  getlocal 1
+00606: 109  dup
+00607: 109  callprop "push"
+00612: 109  swap
+00613: 109  notearg
+00614: 109  getlocal 4
+00617: 109  getlocal 5
+00620: 109  getelem
+00621: 109  notearg
+00622: 109  call 1
+00625: 109  pop
+00626: 108  localinc 11
+00629: 108  getlocal 5
+00632: 108  pos
+00633: 108  dup
+00634: 108  one
+00635: 108  add
+00636: 108  setlocal 5
+00639: 108  pop
+00640: 108  pop
+00641: 108  loopentry
+00642: 108  getlocal 5
+00645: 108  getlocal 4
+00648: 108  length "length"
+00653: 108  lt
+00654: 108  ifne 602 (-52)
+00659: 112  getlocal 1
+00662: 112  return
+00663: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:59 ---
+;; function object[7] create
+;; function metadata object[7] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:119 ---
+loc   line  op
+----- ----  --
+main:
+00000: 121  getarg 0
+00003: 121  getprop "play_id"
+00008: 121  setlocal 0
+00011: 121  pop
+00012: 122  name "xs"
+00017: 122  getprop "Profile"
+00022: 122  getprop "GameData"
+00027: 122  getprop "EvolutionInfos"
+00032: 122  setlocal 1
+00035: 122  pop
+00036: 123  name "xs"
+00041: 123  getprop "Utils"
+00046: 123  dup
+00047: 123  callprop "isSet"
+00052: 123  swap
+00053: 123  notearg
+00054: 123  getlocal 1
+00057: 123  getprop "_instance"
+00062: 123  notearg
+00063: 123  call 1
+00066: 123  or 85 (+19)
+00071: 123  pop
+00072: 123  getlocal 1
+00075: 123  newarray 0
+00079: 123  endinit
+00080: 123  setprop "_instance"
+00085: 123  pop
+00086: 125  getlocal 1
+00089: 125  getprop "_instance"
+00094: 125  getlocal 0
+00097: 125  getelem
+00098: 125  ifeq 116 (+18)
+00103: 126  getlocal 1
+00106: 126  getprop "_instance"
+00111: 126  getlocal 0
+00114: 126  getelem
+00115: 126  return
+00116: 129  getlocal 1
+00119: 129  undefined
+00120: 129  notearg
+00121: 129  new 0
+00124: 129  setlocal 2
+00127: 129  pop
+00128: 130  getlocal 2
+00131: 130  and 155 (+24)
+00136: 130  pop
+00137: 130  getlocal 2
+00140: 130  dup
+00141: 130  callprop "init"
+00146: 130  swap
+00147: 130  notearg
+00148: 130  getarg 0
+00151: 130  notearg
+00152: 130  call 1
+00155: 130  ifeq 180 (+25)
+00160: 131  getlocal 1
+00163: 131  getprop "_instance"
+00168: 131  getlocal 0
+00171: 131  getlocal 2
+00174: 131  setelem
+00175: 131  pop
+00176: 132  getlocal 2
+00179: 132  return
+00180: 135  name "xs"
+00185: 135  dup
+00186: 135  callprop "error"
+00191: 135  swap
+00192: 135  notearg
+00193: 135  string "xs.Profile.GameData.EvolutionInfos.create failed"
+00198: 135  notearg
+00199: 135  call 1
+00202: 135  pop
+00203: 136  null
+00204: 136  return
+00205: 136  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/EvolutionInfos.js:119 ---

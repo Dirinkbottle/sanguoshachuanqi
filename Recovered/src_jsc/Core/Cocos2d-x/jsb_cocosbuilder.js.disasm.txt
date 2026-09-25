@@ -1,0 +1,780 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Cocos2d-x/jsb_cocosbuilder.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=81 object[0]
+;; FUNCTION-MAP kind=lambda offset=102 object[1]
+;; FUNCTION-MAP kind=lambda offset=123 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocosbuilder.js:1 ---
+loc   line  op
+----- ----  --
+00000:   8  defvar "_ccbGlobalContext"
+main:
+00005:   5  name "cc"
+00010:   5  name "cc"
+00015:   5  getprop "BuilderReader"
+00020:   5  or 32 (+12)
+00025:   5  pop
+00026:   5  newinit 1
+00031:   5  endinit
+00032:   5  setprop "BuilderReader"
+00037:   5  popv
+00038:   6  name "cc"
+00043:   6  getprop "BuilderReader"
+00048:   6  string ""
+00053:   6  setprop "_resourcePath"
+00058:   6  popv
+00059:   8  bindname "_ccbGlobalContext"
+00064:   8  this
+00065:   8  setname "_ccbGlobalContext"
+00070:   8  pop
+00071:  10  name "cc"
+00076:  10  getprop "BuilderReader"
+00081:  10  lambda (function () {
+    [sourceless code]
+})
+00086:  10  setprop "setResourcePath"
+00091:  10  popv
+00092:  14  name "cc"
+00097:  14  getprop "BuilderReader"
+00102:  14  lambda (function () {
+    [sourceless code]
+})
+00107:  14  setprop "load"
+00112:  14  popv
+00113: 171  name "cc"
+00118: 171  getprop "BuilderReader"
+00123: 171  lambda (function () {
+    [sourceless code]
+})
+00128: 171  setprop "loadAsScene"
+00133: 171  popv
+00134: 178  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocosbuilder.js:1 ---
+;; function object[0] setResourcePath
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] rootPath
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocosbuilder.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  name "cc"
+00005:  11  getprop "BuilderReader"
+00010:  11  getarg 0
+00013:  11  setprop "_resourcePath"
+00018:  11  pop
+00019:  11  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocosbuilder.js:10 ---
+;; function object[1] load
+;; function metadata object[1] nargs=3 bindings=32
+;; arg[0] file
+;; arg[1] owner
+;; arg[2] parentSize
+;; local[0] reader
+;; local[1] node
+;; local[2] ownerCallbackNames
+;; local[3] ownerCallbackNodes
+;; local[4] i
+;; local[5] callbackName
+;; local[6] callbackNode
+;; local[7] ownerCallbackControlEvents
+;; local[8] ownerOutletNames
+;; local[9] ownerOutletNodes
+;; local[10] outletName
+;; local[11] outletNode
+;; local[12] nodesWithAnimationManagers
+;; local[13] animationManagersForNodes
+;; local[14] innerNode
+;; local[15] animationManager
+;; local[16] documentControllerName
+;; local[17] controller
+;; local[18] documentCallbackNames
+;; local[19] documentCallbackNodes
+;; local[20] j
+;; local[21] documentCallbackControlEvents
+;; local[22] documentOutletNames
+;; local[23] documentOutletNodes
+;; local[24] keyframeCallbacks
+;; local[25] callbackSplit
+;; local[26] callbackType
+;; local[27] callfunc
+;; local[28] autoPlaySeqId
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocosbuilder.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  name "cc"
+00005:  17  getprop "_Reader"
+00010:  17  dup
+00011:  17  callprop "create"
+00016:  17  swap
+00017:  17  notearg
+00018:  17  call 0
+00021:  17  setlocal 0
+00024:  17  pop
+00025:  18  getlocal 0
+00028:  18  dup
+00029:  18  callprop "setCCBRootPath"
+00034:  18  swap
+00035:  18  notearg
+00036:  18  name "cc"
+00041:  18  getprop "BuilderReader"
+00046:  18  getprop "_resourcePath"
+00051:  18  notearg
+00052:  18  call 1
+00055:  18  pop
+00056:  20  getlocal 1
+00059:  20  pop
+00060:  22  getarg 2
+00063:  22  ifeq 101 (+38)
+00068:  24  getlocal 0
+00071:  24  dup
+00072:  24  callprop "load"
+00077:  24  swap
+00078:  24  notearg
+00079:  24  getarg 0
+00082:  24  notearg
+00083:  24  null
+00084:  24  notearg
+00085:  24  getarg 2
+00088:  24  notearg
+00089:  24  call 3
+00092:  24  setlocal 1
+00095:  24  pop
+00096:  24  goto 123 (+27)
+00101:  28  getlocal 0
+00104:  28  dup
+00105:  28  callprop "load"
+00110:  28  swap
+00111:  28  notearg
+00112:  28  getarg 0
+00115:  28  notearg
+00116:  28  call 1
+00119:  28  setlocal 1
+00122:  28  pop
+00123:  32  getarg 1
+00126:  32  ifeq 512 (+386)
+00131:  35  getlocal 0
+00134:  35  dup
+00135:  35  callprop "getOwnerCallbackNames"
+00140:  35  swap
+00141:  35  notearg
+00142:  35  call 0
+00145:  35  setlocal 2
+00148:  35  pop
+00149:  36  getlocal 0
+00152:  36  dup
+00153:  36  callprop "getOwnerCallbackNodes"
+00158:  36  swap
+00159:  36  notearg
+00160:  36  call 0
+00163:  36  setlocal 3
+00166:  36  pop
+00167:  38  zero
+00168:  38  setlocal 4
+00171:  38  pop
+00172:  38  goto 381 (+209)
+00177:  40  loophead
+00178:  40  getlocal 2
+00181:  40  getlocal 4
+00184:  40  getelem
+00185:  40  setlocal 5
+00188:  40  pop
+00189:  41  getlocal 3
+00192:  41  getlocal 4
+00195:  41  getelem
+00196:  41  setlocal 6
+00199:  41  pop
+00200:  43  getarg 1
+00203:  43  getlocal 5
+00206:  43  getelem
+00207:  43  name "undefined"
+00212:  43  stricteq
+00213:  43  ifeq 262 (+49)
+00218:  45  name "cc"
+00223:  45  dup
+00224:  45  callprop "log"
+00229:  45  swap
+00230:  45  notearg
+00231:  45  string "Warning: "
+00236:  45  string "owner."
+00241:  45  add
+00242:  45  getlocal 5
+00245:  45  add
+00246:  45  string " is undefined."
+00251:  45  add
+00252:  45  notearg
+00253:  45  call 1
+00256:  45  pop
+00257:  45  goto 366 (+109)
+00262:  49  getlocal 6
+00265:  49  name "cc"
+00270:  49  getprop "ControlButton"
+00275:  49  instanceof
+00276:  49  ifeq 339 (+63)
+00281:  51  getlocal 0
+00284:  51  dup
+00285:  51  callprop "getOwnerCallbackControlEvents"
+00290:  51  swap
+00291:  51  notearg
+00292:  51  call 0
+00295:  51  setlocal 7
+00298:  51  pop
+00299:  52  getlocal 6
+00302:  52  dup
+00303:  52  callprop "addTargetWithActionForControlEvents"
+00308:  52  swap
+00309:  52  notearg
+00310:  52  getarg 1
+00313:  52  notearg
+00314:  52  getarg 1
+00317:  52  getlocal 5
+00320:  52  getelem
+00321:  52  notearg
+00322:  52  getlocal 7
+00325:  52  getlocal 4
+00328:  52  getelem
+00329:  52  notearg
+00330:  52  call 3
+00333:  52  pop
+00334:  52  goto 366 (+32)
+00339:  56  getlocal 6
+00342:  56  dup
+00343:  56  callprop "setCallback"
+00348:  56  swap
+00349:  56  notearg
+00350:  56  getarg 1
+00353:  56  getlocal 5
+00356:  56  getelem
+00357:  56  notearg
+00358:  56  getarg 1
+00361:  56  notearg
+00362:  56  call 2
+00365:  56  pop
+00366:  38  localinc 11
+00369:  38  getlocal 4
+00372:  38  pos
+00373:  38  dup
+00374:  38  one
+00375:  38  add
+00376:  38  setlocal 4
+00379:  38  pop
+00380:  38  pop
+00381:  38  loopentry
+00382:  38  getlocal 4
+00385:  38  getlocal 2
+00388:  38  length "length"
+00393:  38  lt
+00394:  38  ifne 177 (-217)
+00399:  62  getlocal 0
+00402:  62  dup
+00403:  62  callprop "getOwnerOutletNames"
+00408:  62  swap
+00409:  62  notearg
+00410:  62  call 0
+00413:  62  setlocal 8
+00416:  62  pop
+00417:  63  getlocal 0
+00420:  63  dup
+00421:  63  callprop "getOwnerOutletNodes"
+00426:  63  swap
+00427:  63  notearg
+00428:  63  call 0
+00431:  63  setlocal 9
+00434:  63  pop
+00435:  65  zero
+00436:  65  setlocal 4
+00439:  65  pop
+00440:  65  goto 494 (+54)
+00445:  67  loophead
+00446:  67  getlocal 8
+00449:  67  getlocal 4
+00452:  67  getelem
+00453:  67  setlocal 10
+00456:  67  pop
+00457:  68  getlocal 9
+00460:  68  getlocal 4
+00463:  68  getelem
+00464:  68  setlocal 11
+00467:  68  pop
+00468:  70  getarg 1
+00471:  70  getlocal 10
+00474:  70  getlocal 11
+00477:  70  setelem
+00478:  70  pop
+00479:  65  localinc 11
+00482:  65  getlocal 4
+00485:  65  pos
+00486:  65  dup
+00487:  65  one
+00488:  65  add
+00489:  65  setlocal 4
+00492:  65  pop
+00493:  65  pop
+00494:  65  loopentry
+00495:  65  getlocal 4
+00498:  65  getlocal 8
+00501:  65  length "length"
+00506:  65  lt
+00507:  65  ifne 445 (-62)
+00512:  74  getlocal 0
+00515:  74  dup
+00516:  74  callprop "getNodesWithAnimationManagers"
+00521:  74  swap
+00522:  74  notearg
+00523:  74  call 0
+00526:  74  setlocal 12
+00529:  74  pop
+00530:  75  getlocal 0
+00533:  75  dup
+00534:  75  callprop "getAnimationManagersForNodes"
+00539:  75  swap
+00540:  75  notearg
+00541:  75  call 0
+00544:  75  setlocal 13
+00547:  75  pop
+00548:  78  zero
+00549:  78  setlocal 4
+00552:  78  pop
+00553:  78  goto 1435 (+882)
+00558:  80  loophead
+00559:  80  getlocal 12
+00562:  80  getlocal 4
+00565:  80  getelem
+00566:  80  setlocal 14
+00569:  80  pop
+00570:  81  getlocal 13
+00573:  81  getlocal 4
+00576:  81  getelem
+00577:  81  setlocal 15
+00580:  81  pop
+00581:  83  getlocal 14
+00584:  83  getlocal 15
+00587:  83  setprop "animationManager"
+00592:  83  pop
+00593:  85  getlocal 15
+00596:  85  dup
+00597:  85  callprop "getDocumentControllerName"
+00602:  85  swap
+00603:  85  notearg
+00604:  85  call 0
+00607:  85  setlocal 16
+00610:  85  pop
+00611:  86  getlocal 16
+00614:  86  not
+00615:  86  ifeq 625 (+10)
+00620:  86  goto 1420 (+800)
+00625:  89  name "_ccbGlobalContext"
+00630:  89  getlocal 16
+00633:  89  getelem
+00634:  89  undefined
+00635:  89  notearg
+00636:  89  new 0
+00639:  89  setlocal 17
+00642:  89  pop
+00643:  90  getlocal 17
+00646:  90  getlocal 16
+00649:  90  setprop "controllerName"
+00654:  90  pop
+00655:  92  getlocal 14
+00658:  92  getlocal 17
+00661:  92  setprop "controller"
+00666:  92  pop
+00667:  93  getlocal 17
+00670:  93  getlocal 14
+00673:  93  setprop "rootNode"
+00678:  93  pop
+00679:  96  getlocal 15
+00682:  96  dup
+00683:  96  callprop "getDocumentCallbackNames"
+00688:  96  swap
+00689:  96  notearg
+00690:  96  call 0
+00693:  96  setlocal 18
+00696:  96  pop
+00697:  97  getlocal 15
+00700:  97  dup
+00701:  97  callprop "getDocumentCallbackNodes"
+00706:  97  swap
+00707:  97  notearg
+00708:  97  call 0
+00711:  97  setlocal 19
+00714:  97  pop
+00715:  99  zero
+00716:  99  setlocal 20
+00719:  99  pop
+00720:  99  goto 933 (+213)
+00725: 101  loophead
+00726: 101  getlocal 18
+00729: 101  getlocal 20
+00732: 101  getelem
+00733: 101  setlocal 5
+00736: 101  pop
+00737: 102  getlocal 19
+00740: 102  getlocal 20
+00743: 102  getelem
+00744: 102  setlocal 6
+00747: 102  pop
+00748: 104  getlocal 17
+00751: 104  getlocal 5
+00754: 104  getelem
+00755: 104  name "undefined"
+00760: 104  stricteq
+00761: 104  ifeq 814 (+53)
+00766: 106  name "cc"
+00771: 106  dup
+00772: 106  callprop "log"
+00777: 106  swap
+00778: 106  notearg
+00779: 106  string "Warning: "
+00784: 106  getlocal 16
+00787: 106  add
+00788: 106  string "."
+00793: 106  add
+00794: 106  getlocal 5
+00797: 106  add
+00798: 106  string " is undefined."
+00803: 106  add
+00804: 106  notearg
+00805: 106  call 1
+00808: 106  pop
+00809: 106  goto 918 (+109)
+00814: 110  getlocal 6
+00817: 110  name "cc"
+00822: 110  getprop "ControlButton"
+00827: 110  instanceof
+00828: 110  ifeq 891 (+63)
+00833: 112  getlocal 15
+00836: 112  dup
+00837: 112  callprop "getDocumentCallbackControlEvents"
+00842: 112  swap
+00843: 112  notearg
+00844: 112  call 0
+00847: 112  setlocal 21
+00850: 112  pop
+00851: 113  getlocal 6
+00854: 113  dup
+00855: 113  callprop "addTargetWithActionForControlEvents"
+00860: 113  swap
+00861: 113  notearg
+00862: 113  getlocal 17
+00865: 113  notearg
+00866: 113  getlocal 17
+00869: 113  getlocal 5
+00872: 113  getelem
+00873: 113  notearg
+00874: 113  getlocal 21
+00877: 113  getlocal 20
+00880: 113  getelem
+00881: 113  notearg
+00882: 113  call 3
+00885: 113  pop
+00886: 113  goto 918 (+32)
+00891: 117  getlocal 6
+00894: 117  dup
+00895: 117  callprop "setCallback"
+00900: 117  swap
+00901: 117  notearg
+00902: 117  getlocal 17
+00905: 117  getlocal 5
+00908: 117  getelem
+00909: 117  notearg
+00910: 117  getlocal 17
+00913: 117  notearg
+00914: 117  call 2
+00917: 117  pop
+00918:  99  localinc 11
+00921:  99  getlocal 20
+00924:  99  pos
+00925:  99  dup
+00926:  99  one
+00927:  99  add
+00928:  99  setlocal 20
+00931:  99  pop
+00932:  99  pop
+00933:  99  loopentry
+00934:  99  getlocal 20
+00937:  99  getlocal 18
+00940:  99  length "length"
+00945:  99  lt
+00946:  99  ifne 725 (-221)
+00951: 124  getlocal 15
+00954: 124  dup
+00955: 124  callprop "getDocumentOutletNames"
+00960: 124  swap
+00961: 124  notearg
+00962: 124  call 0
+00965: 124  setlocal 22
+00968: 124  pop
+00969: 125  getlocal 15
+00972: 125  dup
+00973: 125  callprop "getDocumentOutletNodes"
+00978: 125  swap
+00979: 125  notearg
+00980: 125  call 0
+00983: 125  setlocal 23
+00986: 125  pop
+00987: 127  zero
+00988: 127  setlocal 20
+00991: 127  pop
+00992: 127  goto 1046 (+54)
+00997: 129  loophead
+00998: 129  getlocal 22
+01001: 129  getlocal 20
+01004: 129  getelem
+01005: 129  setlocal 10
+01008: 129  pop
+01009: 130  getlocal 23
+01012: 130  getlocal 20
+01015: 130  getelem
+01016: 130  setlocal 11
+01019: 130  pop
+01020: 132  getlocal 17
+01023: 132  getlocal 10
+01026: 132  getlocal 11
+01029: 132  setelem
+01030: 132  pop
+01031: 127  localinc 11
+01034: 127  getlocal 20
+01037: 127  pos
+01038: 127  dup
+01039: 127  one
+01040: 127  add
+01041: 127  setlocal 20
+01044: 127  pop
+01045: 127  pop
+01046: 127  loopentry
+01047: 127  getlocal 20
+01050: 127  getlocal 22
+01053: 127  length "length"
+01058: 127  lt
+01059: 127  ifne 997 (-62)
+01064: 135  getlocal 17
+01067: 135  getprop "onDidLoadFromCCB"
+01072: 135  typeofexpr
+01073: 135  string "function"
+01078: 135  eq
+01079: 135  ifeq 1099 (+20)
+01084: 137  getlocal 17
+01087: 137  dup
+01088: 137  callprop "onDidLoadFromCCB"
+01093: 137  swap
+01094: 137  notearg
+01095: 137  call 0
+01098: 137  pop
+01099: 141  getlocal 15
+01102: 141  dup
+01103: 141  callprop "getKeyframeCallbacks"
+01108: 141  swap
+01109: 141  notearg
+01110: 141  call 0
+01113: 141  setlocal 24
+01116: 141  pop
+01117: 142  zero
+01118: 142  setlocal 20
+01121: 142  pop
+01122: 142  goto 1352 (+230)
+01127: 144  loophead
+01128: 144  getlocal 24
+01131: 144  getlocal 20
+01134: 144  getelem
+01135: 144  dup
+01136: 144  callprop "split"
+01141: 144  swap
+01142: 144  notearg
+01143: 144  string ":"
+01148: 144  notearg
+01149: 144  call 1
+01152: 144  setlocal 25
+01155: 144  pop
+01156: 145  getlocal 25
+01159: 145  zero
+01160: 145  getelem
+01161: 145  setlocal 26
+01164: 145  pop
+01165: 146  getlocal 25
+01168: 146  one
+01169: 146  getelem
+01170: 146  setlocal 5
+01173: 146  pop
+01174: 148  getlocal 26
+01177: 148  one
+01178: 148  eq
+01179: 148  ifeq 1253 (+74)
+01184: 150  name "cc"
+01189: 150  getprop "CallFunc"
+01194: 150  dup
+01195: 150  callprop "create"
+01200: 150  swap
+01201: 150  notearg
+01202: 150  getlocal 17
+01205: 150  getlocal 5
+01208: 150  getelem
+01209: 150  notearg
+01210: 150  getlocal 17
+01213: 150  notearg
+01214: 150  call 2
+01217: 150  setlocal 27
+01220: 150  pop
+01221: 151  getlocal 15
+01224: 151  dup
+01225: 151  callprop "setCallFunc"
+01230: 151  swap
+01231: 151  notearg
+01232: 151  getlocal 27
+01235: 151  notearg
+01236: 151  getlocal 24
+01239: 151  getlocal 20
+01242: 151  getelem
+01243: 151  notearg
+01244: 151  call 2
+01247: 151  pop
+01248: 151  goto 1337 (+89)
+01253: 153  getlocal 26
+01256: 153  int8 2
+01258: 153  eq
+01259: 153  and 1268 (+9)
+01264: 153  pop
+01265: 153  getarg 1
+01268: 153  ifeq 1337 (+69)
+01273: 155  name "cc"
+01278: 155  getprop "CallFunc"
+01283: 155  dup
+01284: 155  callprop "create"
+01289: 155  swap
+01290: 155  notearg
+01291: 155  getarg 1
+01294: 155  getlocal 5
+01297: 155  getelem
+01298: 155  notearg
+01299: 155  getarg 1
+01302: 155  notearg
+01303: 155  call 2
+01306: 155  setlocal 27
+01309: 155  pop
+01310: 156  getlocal 15
+01313: 156  dup
+01314: 156  callprop "setCallFunc"
+01319: 156  swap
+01320: 156  notearg
+01321: 156  getlocal 27
+01324: 156  notearg
+01325: 156  getlocal 24
+01328: 156  getlocal 20
+01331: 156  getelem
+01332: 156  notearg
+01333: 156  call 2
+01336: 156  pop
+01337: 142  localinc 11
+01340: 142  getlocal 20
+01343: 142  pos
+01344: 142  dup
+01345: 142  one
+01346: 142  add
+01347: 142  setlocal 20
+01350: 142  pop
+01351: 142  pop
+01352: 142  loopentry
+01353: 142  getlocal 20
+01356: 142  getlocal 24
+01359: 142  length "length"
+01364: 142  lt
+01365: 142  ifne 1127 (-238)
+01370: 161  getlocal 15
+01373: 161  dup
+01374: 161  callprop "getAutoPlaySequenceId"
+01379: 161  swap
+01380: 161  notearg
+01381: 161  call 0
+01384: 161  setlocal 28
+01387: 161  pop
+01388: 162  getlocal 28
+01391: 162  int8 -1
+01393: 162  ne
+01394: 162  ifeq 1420 (+26)
+01399: 164  getlocal 15
+01402: 164  dup
+01403: 164  callprop "runAnimationsForSequenceIdTweenDuration"
+01408: 164  swap
+01409: 164  notearg
+01410: 164  getlocal 28
+01413: 164  notearg
+01414: 164  zero
+01415: 164  notearg
+01416: 164  call 2
+01419: 164  pop
+01420:  78  localinc 11
+01423:  78  getlocal 4
+01426:  78  pos
+01427:  78  dup
+01428:  78  one
+01429:  78  add
+01430:  78  setlocal 4
+01433:  78  pop
+01434:  78  pop
+01435:  78  loopentry
+01436:  78  getlocal 4
+01439:  78  getlocal 12
+01442:  78  length "length"
+01447:  78  lt
+01448:  78  ifne 558 (-890)
+01453: 168  getlocal 1
+01456: 168  return
+01457: 168  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocosbuilder.js:14 ---
+;; function object[2] loadAsScene
+;; function metadata object[2] nargs=3 bindings=5
+;; arg[0] file
+;; arg[1] owner
+;; arg[2] parentSize
+;; local[0] node
+;; local[1] scene
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocosbuilder.js:171 ---
+loc   line  op
+----- ----  --
+main:
+00000: 173  name "cc"
+00005: 173  getprop "BuilderReader"
+00010: 173  dup
+00011: 173  callprop "load"
+00016: 173  swap
+00017: 173  notearg
+00018: 173  getarg 0
+00021: 173  notearg
+00022: 173  getarg 1
+00025: 173  notearg
+00026: 173  getarg 2
+00029: 173  notearg
+00030: 173  call 3
+00033: 173  setlocal 0
+00036: 173  pop
+00037: 174  name "cc"
+00042: 174  getprop "Scene"
+00047: 174  dup
+00048: 174  callprop "create"
+00053: 174  swap
+00054: 174  notearg
+00055: 174  call 0
+00058: 174  setlocal 1
+00061: 174  pop
+00062: 175  getlocal 1
+00065: 175  dup
+00066: 175  callprop "addChild"
+00071: 175  swap
+00072: 175  notearg
+00073: 175  getlocal 0
+00076: 175  notearg
+00077: 175  call 1
+00080: 175  pop
+00081: 177  getlocal 1
+00084: 177  return
+00085: 177  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocosbuilder.js:171 ---

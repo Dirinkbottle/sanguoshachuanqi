@@ -1,0 +1,253 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/Base.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=93 object[5]
+;; FUNCTION-MAP kind=lambda offset=103 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Models"
+00010:   7  name "cc"
+00015:   7  getprop "Class"
+00020:   7  dup
+00021:   7  callprop "extend"
+00026:   7  swap
+00027:   7  notearg
+00028:   7  newinit 1
+00033:   9  string "xs.Models.Base"
+00038:   9  initprop "name"
+00043:  13  lambda (function () {
+    [sourceless code]
+})
+00048:  13  initprop "init"
+00053:  26  lambda (function () {
+    [sourceless code]
+})
+00058:  26  initprop "isNew"
+00063:  30  lambda (function () {
+    [sourceless code]
+})
+00068:  30  initprop "setIsNew"
+00073:  36  lambda (function () {
+    [sourceless code]
+})
+00078:  36  initprop "registerCaches"
+00083:  41  lambda (function () {
+    [sourceless code]
+})
+00088:  41  initprop "clearCache"
+00093:  59  lambda (function () {
+    [sourceless code]
+})
+00098:  59  initprop "loadJson"
+00103:  65  lambda (function () {
+    [sourceless code]
+})
+00108:  65  initprop "getNotifyCenter"
+00113:  65  endinit
+00114:  65  notearg
+00115:  65  call 1
+00118:  65  setprop "Base"
+00123:  65  popv
+00124:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  this
+00001:  15  newarray 0
+00005:  15  endinit
+00006:  15  setprop "cachesAll"
+00011:  15  pop
+00012:  17  this
+00013:  17  newinit 1
+00018:  17  endinit
+00019:  17  setprop "_notifyCenter"
+00024:  17  pop
+00025:  19  this
+00026:  19  false
+00027:  19  setprop "m_isNew"
+00032:  19  pop
+00033:  21  true
+00034:  21  return
+00035:  21  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:13 ---
+;; function object[1] isNew
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  this
+00001:  27  getprop "m_isNew"
+00006:  27  return
+00007:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:26 ---
+;; function object[2] setIsNew
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] isNew
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  this
+00001:  31  getarg 0
+00004:  31  setprop "m_isNew"
+00009:  31  pop
+00010:  31  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:30 ---
+;; function object[3] registerCaches
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] caches
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:36 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  this
+00001:  37  this
+00002:  37  getprop "cachesAll"
+00007:  37  dup
+00008:  37  callprop "concat"
+00013:  37  swap
+00014:  37  notearg
+00015:  37  getarg 0
+00018:  37  notearg
+00019:  37  call 1
+00022:  37  setprop "cachesAll"
+00027:  37  pop
+00028:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:36 ---
+;; function object[4] clearCache
+;; function metadata object[4] nargs=1 bindings=3
+;; arg[0] _cKey
+;; local[0] i
+;; local[1] cacheKey
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  42  getarg 0
+00003:  42  ifeq 20 (+17)
+00008:  43  this
+00009:  43  getarg 0
+00012:  43  null
+00013:  43  setelem
+00014:  43  pop
+00015:  43  goto 119 (+104)
+00020:  47  this
+00021:  47  getprop "cachesAll"
+00026:  47  name "undefined"
+00031:  47  strictne
+00032:  47  and 46 (+14)
+00037:  47  pop
+00038:  47  this
+00039:  47  getprop "cachesAll"
+00044:  47  null
+00045:  47  strictne
+00046:  47  ifeq 119 (+73)
+00051:  48  zero
+00052:  48  setlocal 0
+00055:  48  pop
+00056:  48  goto 98 (+42)
+00061:  49  loophead
+00062:  49  this
+00063:  49  getprop "cachesAll"
+00068:  49  getlocal 0
+00071:  49  getelem
+00072:  49  setlocal 1
+00075:  49  pop
+00076:  50  this
+00077:  50  getlocal 1
+00080:  50  null
+00081:  50  setelem
+00082:  50  pop
+00083:  48  localinc 11
+00086:  48  getlocal 0
+00089:  48  pos
+00090:  48  dup
+00091:  48  one
+00092:  48  add
+00093:  48  setlocal 0
+00096:  48  pop
+00097:  48  pop
+00098:  48  loopentry
+00099:  48  getlocal 0
+00102:  48  this
+00103:  48  getprop "cachesAll"
+00108:  48  length "length"
+00113:  48  lt
+00114:  48  ifne 61 (-53)
+00119:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:41 ---
+;; function object[5] loadJson
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:59 ---
+loc   line  op
+----- ----  --
+main:
+00000:  60  this
+00001:  60  dup
+00002:  60  callprop "clearCache"
+00007:  60  swap
+00008:  60  notearg
+00009:  60  call 0
+00012:  60  pop
+00013:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:59 ---
+;; function object[6] getNotifyCenter
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] name
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:65 ---
+loc   line  op
+----- ----  --
+main:
+00000:  66  this
+00001:  66  dup
+00002:  66  callprop "assert"
+00007:  66  swap
+00008:  66  notearg
+00009:  66  this
+00010:  66  getprop "_notifyCenter"
+00015:  66  getarg 0
+00018:  66  getelem
+00019:  66  notearg
+00020:  66  string "the notityCenter is error:"
+00025:  66  getarg 0
+00028:  66  add
+00029:  66  notearg
+00030:  66  call 2
+00033:  66  pop
+00034:  67  this
+00035:  67  getprop "_notifyCenter"
+00040:  67  getarg 0
+00043:  67  getelem
+00044:  67  return
+00045:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Base.js:65 ---

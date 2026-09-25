@@ -1,0 +1,821 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/Sys.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=46 object[0]
+;; FUNCTION-MAP kind=lambda offset=56 object[1]
+;; FUNCTION-MAP kind=lambda offset=66 object[2]
+;; FUNCTION-MAP kind=lambda offset=76 object[3]
+;; FUNCTION-MAP kind=lambda offset=86 object[4]
+;; FUNCTION-MAP kind=lambda offset=96 object[5]
+;; FUNCTION-MAP kind=lambda offset=106 object[6]
+;; FUNCTION-MAP kind=lambda offset=116 object[7]
+;; FUNCTION-MAP kind=lambda offset=126 object[8]
+;; FUNCTION-MAP kind=lambda offset=136 object[9]
+;; FUNCTION-MAP kind=lambda offset=146 object[10]
+;; FUNCTION-MAP kind=lambda offset=156 object[11]
+;; FUNCTION-MAP kind=lambda offset=166 object[12]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Tools"
+00010:   9  name "xs"
+00015:   9  getprop "Tools"
+00020:   9  getprop "Sys"
+00025:   9  or 177 (+152)
+00030:   9  pop
+00031:   9  newinit 1
+00036:  11  string "xs.Tools.Sys"
+00041:  11  initprop "name"
+00046:  16  lambda (function () {
+    [sourceless code]
+})
+00051:  16  initprop "getVersionDesc"
+00056:  70  lambda (function () {
+    [sourceless code]
+})
+00061:  70  initprop "requireCfgFilesGeneratedByServer"
+00066:  81  lambda (function () {
+    [sourceless code]
+})
+00071:  81  initprop "free_js_garbage_in_MainMenu"
+00076:  92  lambda (function () {
+    [sourceless code]
+})
+00081:  92  initprop "free_when_change_scene_before_new"
+00086: 117  lambda (function () {
+    [sourceless code]
+})
+00091: 117  initprop "free_when_change_scene_after_new"
+00096: 132  lambda (function () {
+    [sourceless code]
+})
+00101: 132  initprop "free_when_change_scene_after_1_frame"
+00106: 147  lambda (function () {
+    [sourceless code]
+})
+00111: 147  initprop "free_when_fight_result_exit"
+00116: 152  lambda (function () {
+    [sourceless code]
+})
+00121: 152  initprop "free_when_fight_story"
+00126: 170  lambda (function () {
+    [sourceless code]
+})
+00131: 170  initprop "free_when_fight_round"
+00136: 191  lambda (function () {
+    [sourceless code]
+})
+00141: 191  initprop "free_when_fight_round_callfunc_nextRound"
+00146: 200  lambda (function () {
+    [sourceless code]
+})
+00151: 200  initprop "dumpMemInfo"
+00156: 209  lambda (function () {
+    [sourceless code]
+})
+00161: 209  initprop "turnOn_UseMoreMem"
+00166: 223  lambda (function () {
+    [sourceless code]
+})
+00171: 223  initprop "turnOff_UseMoreMem"
+00176: 223  endinit
+00177: 223  setprop "Sys"
+00182: 223  popv
+00183: 245  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:1 ---
+;; function object[0] getVersionDesc
+;; function metadata object[0] nargs=0 bindings=5
+;; local[0] string
+;; local[1] _buildVer
+;; local[2] _projCode
+;; local[3] _buildType
+;; local[4] _productId
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  name "xs"
+00005:  18  getprop "Core"
+00010:  18  getprop "Tools"
+00015:  18  getprop "String"
+00020:  18  dup
+00021:  18  callprop "createString"
+00026:  18  swap
+00027:  18  notearg
+00028:  18  string "auto_name_version"
+00033:  18  notearg
+00034:  18  call 1
+00037:  18  setlocal 0
+00040:  18  pop
+00041:  20  name "xs"
+00046:  20  getprop "Tools"
+00051:  20  getprop "Jsb"
+00056:  20  dup
+00057:  20  callprop "getOriResCode"
+00062:  20  swap
+00063:  20  notearg
+00064:  20  call 0
+00067:  20  setlocal 1
+00070:  20  pop
+00071:  22  name "xs"
+00076:  22  getprop "Profile"
+00081:  22  getprop "UserCfg"
+00086:  22  dup
+00087:  22  callprop "readProductId"
+00092:  22  swap
+00093:  22  notearg
+00094:  22  call 0
+00097:  22  setlocal 2
+00100:  22  pop
+00101:  36  getlocal 0
+00104:  36  getlocal 1
+00107:  36  add
+00108:  36  setlocal 0
+00111:  36  pop
+00112:  37  getlocal 0
+00115:  37  string "("
+00120:  37  add
+00121:  37  setlocal 0
+00124:  37  pop
+00125:  38  getlocal 0
+00128:  38  getlocal 2
+00131:  38  add
+00132:  38  setlocal 0
+00135:  38  pop
+00136:  39  getlocal 0
+00139:  39  string ")"
+00144:  39  add
+00145:  39  setlocal 0
+00148:  39  pop
+00149:  42  getlocal 0
+00152:  42  string "-"
+00157:  42  name "xs"
+00162:  42  getprop "resVersion"
+00167:  42  add
+00168:  42  add
+00169:  42  setlocal 0
+00172:  42  pop
+00173:  44  name "xs"
+00178:  44  getprop "JsbConnecter"
+00183:  44  dup
+00184:  44  callprop "getInstance"
+00189:  44  swap
+00190:  44  notearg
+00191:  44  call 0
+00194:  44  dup
+00195:  44  callprop "invoke"
+00200:  44  swap
+00201:  44  notearg
+00202:  44  string "Build"
+00207:  44  notearg
+00208:  44  string "getBuildType"
+00213:  44  notearg
+00214:  44  string ""
+00219:  44  notearg
+00220:  44  call 3
+00223:  44  setlocal 3
+00226:  44  pop
+00227:  47  getlocal 0
+00230:  47  string "("
+00235:  47  add
+00236:  47  setlocal 0
+00239:  47  pop
+00240:  48  getlocal 0
+00243:  48  getlocal 3
+00246:  48  add
+00247:  48  setlocal 0
+00250:  48  pop
+00251:  49  getlocal 0
+00254:  49  string "-"
+00259:  49  name "xs"
+00264:  49  getprop "JsbConnecter"
+00269:  49  dup
+00270:  49  callprop "getInstance"
+00275:  49  swap
+00276:  49  notearg
+00277:  49  call 0
+00280:  49  dup
+00281:  49  callprop "invoke"
+00286:  49  swap
+00287:  49  notearg
+00288:  49  string "Build"
+00293:  49  notearg
+00294:  49  string "getUseJsc"
+00299:  49  notearg
+00300:  49  string ""
+00305:  49  notearg
+00306:  49  call 3
+00309:  49  add
+00310:  49  add
+00311:  49  setlocal 0
+00314:  49  pop
+00315:  50  getlocal 0
+00318:  50  string ")"
+00323:  50  add
+00324:  50  setlocal 0
+00327:  50  pop
+00328:  54  getlocal 0
+00331:  54  string "-a"
+00336:  54  add
+00337:  54  setlocal 0
+00340:  54  pop
+00341:  55  getlocal 0
+00344:  55  name "xsc"
+00349:  55  getprop "app_account_sys"
+00354:  55  add
+00355:  55  setlocal 0
+00358:  55  pop
+00359:  58  name "xs"
+00364:  58  getprop "Profile"
+00369:  58  getprop "UserCfg"
+00374:  58  dup
+00375:  58  callprop "readProductIdSql"
+00380:  58  swap
+00381:  58  notearg
+00382:  58  call 0
+00385:  58  setlocal 4
+00388:  58  pop
+00389:  59  getlocal 4
+00392:  59  ifeq 428 (+36)
+00397:  60  getlocal 0
+00400:  60  string "-p"
+00405:  60  add
+00406:  60  setlocal 0
+00409:  60  pop
+00410:  61  getlocal 0
+00413:  61  name "xsc"
+00418:  61  getprop "app_indentify"
+00423:  61  add
+00424:  61  setlocal 0
+00427:  61  pop
+00428:  67  getlocal 0
+00431:  67  return
+00432:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:16 ---
+;; function object[1] requireCfgFilesGeneratedByServer
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:70 ---
+loc   line  op
+----- ----  --
+main:
+00000:  71  name "xs"
+00005:  71  dup
+00006:  71  callprop "log"
+00011:  71  swap
+00012:  71  notearg
+00013:  71  string "requireCfgFiles"
+00018:  71  notearg
+00019:  71  string "requireCfgFiles"
+00024:  71  notearg
+00025:  71  call 2
+00028:  71  pop
+00029:  72  name "cc"
+00034:  72  getprop "FileUtils"
+00039:  72  dup
+00040:  72  callprop "getInstance"
+00045:  72  swap
+00046:  72  notearg
+00047:  72  call 0
+00050:  72  dup
+00051:  72  callprop "purgeCachedEntries"
+00056:  72  swap
+00057:  72  notearg
+00058:  72  call 0
+00061:  72  pop
+00062:  73  name "xs"
+00067:  73  getprop "Utils"
+00072:  73  dup
+00073:  73  callprop "require"
+00078:  73  swap
+00079:  73  notearg
+00080:  73  name "xs"
+00085:  73  getprop "Cfg"
+00090:  73  getprop "System"
+00095:  73  getprop "files_generated_by_server"
+00100:  73  notearg
+00101:  73  call 1
+00104:  73  pop
+00105:  75  name "xs"
+00110:  75  dup
+00111:  75  callprop "log"
+00116:  75  swap
+00117:  75  notearg
+00118:  76  string "after require,sgs_global_conf.cfg version"
+00123:  76  notearg
+00124:  77  name "xs"
+00129:  77  getprop "Cfg"
+00134:  77  getprop "System"
+00139:  77  getprop "sgs_global_conf"
+00144:  77  getprop "CfgVersion"
+00149:  77  getprop "logical_data"
+00154:  77  notearg
+00155:  77  call 2
+00158:  77  pop
+00159:  78  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:70 ---
+;; function object[2] free_js_garbage_in_MainMenu
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:81 ---
+loc   line  op
+----- ----  --
+main:
+00000:  82  this
+00001:  82  dup
+00002:  82  callprop "log"
+00007:  82  swap
+00008:  82  notearg
+00009:  82  string "free_js_garbage_in_MainMenu"
+00014:  82  notearg
+00015:  82  call 1
+00018:  82  pop
+00019:  85  name "cc"
+00024:  85  getprop "TextureCache"
+00029:  85  dup
+00030:  85  callprop "getInstance"
+00035:  85  swap
+00036:  85  notearg
+00037:  85  call 0
+00040:  85  dup
+00041:  85  callprop "removeUnusedTextures"
+00046:  85  swap
+00047:  85  notearg
+00048:  85  call 0
+00051:  85  pop
+00052:  86  name "xs"
+00057:  86  getprop "Utils"
+00062:  86  getprop "Sys"
+00067:  86  dup
+00068:  86  callprop "garbageCollect"
+00073:  86  swap
+00074:  86  notearg
+00075:  86  call 0
+00078:  86  pop
+00079:  86  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:81 ---
+;; function object[3] free_when_change_scene_before_new
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:92 ---
+loc   line  op
+----- ----  --
+main:
+00000:  93  name "xs"
+00005:  93  getprop "purgeSceneCache"
+00010:  93  true
+00011:  93  stricteq
+00012:  93  ifeq 104 (+92)
+00017:  95  this
+00018:  95  dup
+00019:  95  callprop "log"
+00024:  95  swap
+00025:  95  notearg
+00026:  95  string "free_when_change_scene_before_new-begin"
+00031:  95  notearg
+00032:  95  call 1
+00035:  95  pop
+00036: 101  name "cc"
+00041: 101  getprop "ArmatureDataManager"
+00046: 101  dup
+00047: 101  callprop "purge"
+00052: 101  swap
+00053: 101  notearg
+00054: 101  call 0
+00057: 101  pop
+00058: 107  name "xs"
+00063: 107  getprop "Factorys"
+00068: 107  getprop "Armature"
+00073: 107  dup
+00074: 107  callprop "unloadArmatureFileInfos"
+00079: 107  swap
+00080: 107  notearg
+00081: 107  call 0
+00084: 107  pop
+00085: 112  this
+00086: 112  dup
+00087: 112  callprop "log"
+00092: 112  swap
+00093: 112  notearg
+00094: 112  string "free_when_change_scene_before_new-end"
+00099: 112  notearg
+00100: 112  call 1
+00103: 112  pop
+00104: 113  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:92 ---
+;; function object[4] free_when_change_scene_after_new
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:117 ---
+loc   line  op
+----- ----  --
+main:
+00000: 119  this
+00001: 119  dup
+00002: 119  callprop "log"
+00007: 119  swap
+00008: 119  notearg
+00009: 119  string "free_when_change_scene_after_new-begin"
+00014: 119  notearg
+00015: 119  call 1
+00018: 119  pop
+00019: 122  name "xs"
+00024: 122  getprop "need_save_memory"
+00029: 122  ifeq 67 (+38)
+00034: 123  name "cc"
+00039: 123  getprop "TextureCache"
+00044: 123  dup
+00045: 123  callprop "getInstance"
+00050: 123  swap
+00051: 123  notearg
+00052: 123  call 0
+00055: 123  dup
+00056: 123  callprop "removeUnusedTextures"
+00061: 123  swap
+00062: 123  notearg
+00063: 123  call 0
+00066: 123  pop
+00067: 126  this
+00068: 126  dup
+00069: 126  callprop "dumpMemInfo"
+00074: 126  swap
+00075: 126  notearg
+00076: 126  call 0
+00079: 126  pop
+00080: 128  this
+00081: 128  dup
+00082: 128  callprop "log"
+00087: 128  swap
+00088: 128  notearg
+00089: 128  string "free_when_change_scene_after_new-end"
+00094: 128  notearg
+00095: 128  call 1
+00098: 128  pop
+00099: 128  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:117 ---
+;; function object[5] free_when_change_scene_after_1_frame
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:132 ---
+loc   line  op
+----- ----  --
+main:
+00000: 134  this
+00001: 134  dup
+00002: 134  callprop "log"
+00007: 134  swap
+00008: 134  notearg
+00009: 134  string "free_when_change_scene_after_1_frame-begin"
+00014: 134  notearg
+00015: 134  call 1
+00018: 134  pop
+00019: 137  name "xs"
+00024: 137  getprop "need_save_memory"
+00029: 137  ifeq 67 (+38)
+00034: 138  name "cc"
+00039: 138  getprop "TextureCache"
+00044: 138  dup
+00045: 138  callprop "getInstance"
+00050: 138  swap
+00051: 138  notearg
+00052: 138  call 0
+00055: 138  dup
+00056: 138  callprop "removeUnusedTextures"
+00061: 138  swap
+00062: 138  notearg
+00063: 138  call 0
+00066: 138  pop
+00067: 141  this
+00068: 141  dup
+00069: 141  callprop "dumpMemInfo"
+00074: 141  swap
+00075: 141  notearg
+00076: 141  call 0
+00079: 141  pop
+00080: 143  this
+00081: 143  dup
+00082: 143  callprop "log"
+00087: 143  swap
+00088: 143  notearg
+00089: 143  string "free_when_change_scene_after_1_frame-end"
+00094: 143  notearg
+00095: 143  call 1
+00098: 143  pop
+00099: 143  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:132 ---
+;; function object[6] free_when_fight_result_exit
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:147 ---
+loc   line  op
+----- ----  --
+main:
+00000: 148  name "xs"
+00005: 148  getprop "audio"
+00010: 148  dup
+00011: 148  callprop "releaseAllEffects"
+00016: 148  swap
+00017: 148  notearg
+00018: 148  call 0
+00021: 148  pop
+00022: 148  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:147 ---
+;; function object[7] free_when_fight_story
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:152 ---
+loc   line  op
+----- ----  --
+main:
+00000: 154  this
+00001: 154  dup
+00002: 154  callprop "log"
+00007: 154  swap
+00008: 154  notearg
+00009: 154  string "free_when_fight_story-begin"
+00014: 154  notearg
+00015: 154  call 1
+00018: 154  pop
+00019: 156  name "xs"
+00024: 156  getprop "audio"
+00029: 156  dup
+00030: 156  callprop "releaseAllEffects"
+00035: 156  swap
+00036: 156  notearg
+00037: 156  call 0
+00040: 156  pop
+00041: 157  name "xs"
+00046: 157  getprop "Factorys"
+00051: 157  getprop "Armature"
+00056: 157  dup
+00057: 157  callprop "unloadArmatureFileInfos"
+00062: 157  swap
+00063: 157  notearg
+00064: 157  call 0
+00067: 157  pop
+00068: 159  name "cc"
+00073: 159  getprop "SpriteFrameCache"
+00078: 159  dup
+00079: 159  callprop "getInstance"
+00084: 159  swap
+00085: 159  notearg
+00086: 159  call 0
+00089: 159  dup
+00090: 159  callprop "removeUnusedSpriteFrames"
+00095: 159  swap
+00096: 159  notearg
+00097: 159  call 0
+00100: 159  pop
+00101: 160  name "cc"
+00106: 160  getprop "TextureCache"
+00111: 160  dup
+00112: 160  callprop "getInstance"
+00117: 160  swap
+00118: 160  notearg
+00119: 160  call 0
+00122: 160  dup
+00123: 160  callprop "removeUnusedTextures"
+00128: 160  swap
+00129: 160  notearg
+00130: 160  call 0
+00133: 160  pop
+00134: 165  this
+00135: 165  dup
+00136: 165  callprop "log"
+00141: 165  swap
+00142: 165  notearg
+00143: 165  string "free_when_fight_story-end"
+00148: 165  notearg
+00149: 165  call 1
+00152: 165  pop
+00153: 165  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:152 ---
+;; function object[8] free_when_fight_round
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:170 ---
+loc   line  op
+----- ----  --
+main:
+00000: 176  this
+00001: 176  dup
+00002: 176  callprop "log"
+00007: 176  swap
+00008: 176  notearg
+00009: 176  string "free_when_fight_round-begin"
+00014: 176  notearg
+00015: 176  call 1
+00018: 176  pop
+00019: 178  name "xs"
+00024: 178  getprop "Factorys"
+00029: 178  getprop "Armature"
+00034: 178  dup
+00035: 178  callprop "unloadArmatureFileInfos"
+00040: 178  swap
+00041: 178  notearg
+00042: 178  call 0
+00045: 178  pop
+00046: 180  name "xs"
+00051: 180  getprop "need_save_memory"
+00056: 180  ifeq 127 (+71)
+00061: 181  name "cc"
+00066: 181  getprop "SpriteFrameCache"
+00071: 181  dup
+00072: 181  callprop "getInstance"
+00077: 181  swap
+00078: 181  notearg
+00079: 181  call 0
+00082: 181  dup
+00083: 181  callprop "removeUnusedSpriteFrames"
+00088: 181  swap
+00089: 181  notearg
+00090: 181  call 0
+00093: 181  pop
+00094: 182  name "cc"
+00099: 182  getprop "TextureCache"
+00104: 182  dup
+00105: 182  callprop "getInstance"
+00110: 182  swap
+00111: 182  notearg
+00112: 182  call 0
+00115: 182  dup
+00116: 182  callprop "removeUnusedTextures"
+00121: 182  swap
+00122: 182  notearg
+00123: 182  call 0
+00126: 182  pop
+00127: 185  this
+00128: 185  dup
+00129: 185  callprop "log"
+00134: 185  swap
+00135: 185  notearg
+00136: 185  string "free_when_fight_round-end"
+00141: 185  notearg
+00142: 185  call 1
+00145: 185  pop
+00146: 185  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:170 ---
+;; function object[9] free_when_fight_round_callfunc_nextRound
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:191 ---
+loc   line  op
+----- ----  --
+main:
+00000: 191  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:191 ---
+;; function object[10] dumpMemInfo
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:200 ---
+loc   line  op
+----- ----  --
+main:
+00000: 201  name "xs"
+00005: 201  getprop "dumpMemInfo"
+00010: 201  ifeq 157 (+147)
+00015: 202  name "xs"
+00020: 202  dup
+00021: 202  callprop "log_zj"
+00026: 202  swap
+00027: 202  notearg
+00028: 202  string "dumpMemInfo"
+00033: 202  notearg
+00034: 202  string "-----------------begin"
+00039: 202  notearg
+00040: 202  call 2
+00043: 202  pop
+00044: 203  name "xs"
+00049: 203  getprop "JsbConnecter"
+00054: 203  dup
+00055: 203  callprop "getInstance"
+00060: 203  swap
+00061: 203  notearg
+00062: 203  call 0
+00065: 203  dup
+00066: 203  callprop "invoke"
+00071: 203  swap
+00072: 203  notearg
+00073: 203  string "Debug"
+00078: 203  notearg
+00079: 203  string "dumpSpriteFrameCache"
+00084: 203  notearg
+00085: 203  string ""
+00090: 203  notearg
+00091: 203  call 3
+00094: 203  pop
+00095: 204  name "cc"
+00100: 204  getprop "TextureCache"
+00105: 204  dup
+00106: 204  callprop "getInstance"
+00111: 204  swap
+00112: 204  notearg
+00113: 204  call 0
+00116: 204  dup
+00117: 204  callprop "dumpCachedTextureInfo"
+00122: 204  swap
+00123: 204  notearg
+00124: 204  call 0
+00127: 204  pop
+00128: 205  name "xs"
+00133: 205  dup
+00134: 205  callprop "log_zj"
+00139: 205  swap
+00140: 205  notearg
+00141: 205  string "dumpMemInfo"
+00146: 205  notearg
+00147: 205  string "-----------------end"
+00152: 205  notearg
+00153: 205  call 2
+00156: 205  pop
+00157: 206  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:200 ---
+;; function object[11] turnOn_UseMoreMem
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:209 ---
+loc   line  op
+----- ----  --
+main:
+00000: 210  name "xs"
+00005: 210  false
+00006: 210  setprop "need_save_memory"
+00011: 210  pop
+00012: 214  name "xs"
+00017: 214  getprop "Profile"
+00022: 214  getprop "UserCfg"
+00027: 214  dup
+00028: 214  callprop "setMemMode_UseMoreMem"
+00033: 214  swap
+00034: 214  notearg
+00035: 214  true
+00036: 214  notearg
+00037: 214  call 1
+00040: 214  pop
+00041: 216  name "xs"
+00046: 216  dup
+00047: 216  callprop "log"
+00052: 216  swap
+00053: 216  notearg
+00054: 216  string "need_save_memory"
+00059: 216  notearg
+00060: 216  string "\u542F\u52A8\u9AD8\u901F\u6A21\u5F0F\uFF0C\u73B0\u5728\u5F00\u59CB\u4F7F\u7528\u66F4\u591A\u7684\u5185\u5B58"
+00065: 216  notearg
+00066: 216  call 2
+00069: 216  pop
+00070: 216  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:209 ---
+;; function object[12] turnOff_UseMoreMem
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:223 ---
+loc   line  op
+----- ----  --
+main:
+00000: 224  name "xs"
+00005: 224  true
+00006: 224  setprop "need_save_memory"
+00011: 224  pop
+00012: 228  name "xs"
+00017: 228  getprop "Profile"
+00022: 228  getprop "UserCfg"
+00027: 228  dup
+00028: 228  callprop "setMemMode_UseMoreMem"
+00033: 228  swap
+00034: 228  notearg
+00035: 228  false
+00036: 228  notearg
+00037: 228  call 1
+00040: 228  pop
+00041: 231  name "xs"
+00046: 231  dup
+00047: 231  callprop "log"
+00052: 231  swap
+00053: 231  notearg
+00054: 231  string "need_save_memory"
+00059: 231  notearg
+00060: 231  string "\u5173\u95ED\u9AD8\u901F\u6A21\u5F0F\uFF0C\u73B0\u5728\u5F00\u59CB\u4F7F\u7528\u5F88\u5C11\u7684\u5185\u5B58"
+00065: 231  notearg
+00066: 231  call 2
+00069: 231  pop
+00070: 231  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Sys.js:223 ---

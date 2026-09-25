@@ -1,0 +1,1243 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/Fight/FightRoundItem.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=83 object[0]
+;; FUNCTION-MAP kind=lambda offset=93 object[1]
+;; FUNCTION-MAP kind=lambda offset=103 object[2]
+;; FUNCTION-MAP kind=lambda offset=113 object[3]
+;; FUNCTION-MAP kind=lambda offset=123 object[4]
+;; FUNCTION-MAP kind=lambda offset=133 object[5]
+;; FUNCTION-MAP kind=lambda offset=143 object[6]
+;; FUNCTION-MAP kind=lambda offset=153 object[7]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Models"
+00010:   9  name "cc"
+00015:   9  getprop "Class"
+00020:   9  dup
+00021:   9  callprop "extend"
+00026:   9  swap
+00027:   9  notearg
+00028:   9  newinit 1
+00033:  11  name "xs"
+00038:  11  getprop "Debug"
+00043:  11  getprop "emptyFunc"
+00048:  11  initprop "log"
+00053:  12  name "xs"
+00058:  12  getprop "Debug"
+00063:  12  getprop "emptyFunc"
+00068:  12  initprop "dump"
+00073:  14  string "xs.Models.FightRoundItem"
+00078:  14  initprop "name"
+00083:  16  lambda (function () {
+    [sourceless code]
+})
+00088:  16  initprop "toDebugString"
+00093:  35  lambda (function () {
+    [sourceless code]
+})
+00098:  35  initprop "doShow"
+00103:  67  lambda (function () {
+    [sourceless code]
+})
+00108:  67  initprop "doShowBySkillName"
+00113:  73  lambda (function () {
+    [sourceless code]
+})
+00118:  73  initprop "createPara"
+00123: 264  lambda (function () {
+    [sourceless code]
+})
+00128: 264  initprop "doShowNvsN"
+00133: 297  lambda (function () {
+    [sourceless code]
+})
+00138: 297  initprop "doShowStory"
+00143: 327  lambda (function () {
+    [sourceless code]
+})
+00148: 327  initprop "init"
+00153: 378  lambda (function () {
+    [sourceless code]
+})
+00158: 378  initprop "getSkill"
+00163: 378  endinit
+00164: 378  notearg
+00165: 378  call 1
+00168: 378  setprop "FightRoundItem"
+00173: 378  popv
+00174: 382  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:1 ---
+;; function object[0] toDebugString
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  name "xs"
+00005:  18  getprop "Cfg"
+00010:  18  getprop "Debug"
+00015:  18  false
+00016:  18  stricteq
+00017:  18  ifeq 28 (+11)
+00022:  19  string "debug off"
+00027:  19  return
+00028:  22  string " "
+00033:  23  this
+00034:  23  getprop "type"
+00039:  23  name "undefined"
+00044:  23  strictne
+00045:  23  ifeq 97 (+52)
+00050:  23  name "xs"
+00055:  23  getprop "Cfg"
+00060:  23  getprop "Constant"
+00065:  23  getprop "Models"
+00070:  23  getprop "FightRoundItem"
+00075:  23  getprop "Type"
+00080:  23  getprop "Debug"
+00085:  23  this
+00086:  23  getprop "type"
+00091:  23  getelem
+00092:  23  goto 102 (+10)
+00097:  23  string "error"
+00102:  23  add
+00103:  23  string " "
+00108:  23  add
+00109:  24  string "["
+00114:  24  add
+00115:  24  this
+00116:  24  getprop "from"
+00121:  24  add
+00122:  24  string "] "
+00127:  24  add
+00128:  25  this
+00129:  25  getprop "skill"
+00134:  25  add
+00135:  26  string "["
+00140:  26  add
+00141:  26  this
+00142:  26  getprop "to"
+00147:  26  add
+00148:  26  string "] "
+00153:  26  add
+00154:  27  string " -> "
+00159:  27  add
+00160:  28  name "xs"
+00165:  28  getprop "Debug"
+00170:  28  dup
+00171:  28  callprop "toJsonString"
+00176:  28  swap
+00177:  28  notearg
+00178:  28  this
+00179:  28  getprop "params"
+00184:  28  notearg
+00185:  28  call 1
+00188:  28  add
+00189:  29  string " type is "
+00194:  29  add
+00195:  29  this
+00196:  29  getprop "type"
+00201:  29  add
+00202:  30  string " num is "
+00207:  30  add
+00208:  30  this
+00209:  30  getprop "num"
+00214:  30  add
+00215:  31  string ";"
+00220:  31  add
+00221:  31  return
+00222:  31  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:16 ---
+;; function object[1] doShow
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] envLayer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:35 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  name "xs"
+00005:  37  dup
+00006:  37  callprop "log_zj"
+00011:  37  swap
+00012:  37  notearg
+00013:  37  string "RightRoundItem"
+00018:  37  notearg
+00019:  37  string ""
+00024:  37  this
+00025:  37  dup
+00026:  37  callprop "toDebugString"
+00031:  37  swap
+00032:  37  notearg
+00033:  37  call 0
+00036:  37  add
+00037:  37  notearg
+00038:  37  call 2
+00041:  37  pop
+00042:  39  this
+00043:  39  getprop "type"
+00048:  39  tableswitch defaultOffset 21 low 0 high 1
+	0: 56
+	1: 78
+00069:  41  name "xs"
+00074:  41  dup
+00075:  41  callprop "error"
+00080:  41  swap
+00081:  41  notearg
+00082:  41  string "FightRoundItem unknow type"
+00087:  41  notearg
+00088:  41  this
+00089:  41  getprop "type"
+00094:  41  notearg
+00095:  41  call 2
+00098:  41  pop
+00099:  42  goto 148 (+49)
+00104:  45  this
+00105:  45  dup
+00106:  45  callprop "doShowNvsN"
+00111:  45  swap
+00112:  45  notearg
+00113:  45  getarg 0
+00116:  45  notearg
+00117:  45  call 1
+00120:  45  pop
+00121:  46  goto 148 (+27)
+00126:  48  this
+00127:  48  dup
+00128:  48  callprop "doShowStory"
+00133:  48  swap
+00134:  48  notearg
+00135:  48  getarg 0
+00138:  48  notearg
+00139:  48  call 1
+00142:  48  pop
+00143:  49  goto 148 (+5)
+00148:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:35 ---
+;; function object[2] doShowBySkillName
+;; function metadata object[2] nargs=1 bindings=2
+;; arg[0] envLayer
+;; local[0] _action
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:67 ---
+loc   line  op
+----- ----  --
+main:
+00000:  68  getarg 0
+00003:  68  dup
+00004:  68  callprop "createSkillAction"
+00009:  68  swap
+00010:  68  notearg
+00011:  68  this
+00012:  68  notearg
+00013:  68  call 1
+00016:  68  setlocal 0
+00019:  68  pop
+00020:  69  getarg 0
+00023:  69  dup
+00024:  69  callprop "runAction"
+00029:  69  swap
+00030:  69  notearg
+00031:  69  getlocal 0
+00034:  69  notearg
+00035:  69  call 1
+00038:  69  pop
+00039:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:67 ---
+;; function object[3] createPara
+;; function metadata object[3] nargs=1 bindings=28
+;; arg[0] envLayer
+;; local[0] _toViews
+;; local[1] _fromViews
+;; local[2] _fromFars
+;; local[3] _toFars
+;; local[4] _fromNears
+;; local[5] _toNears
+;; local[6] _fromSides
+;; local[7] _toSides
+;; local[8] _fromIdxs
+;; local[9] _toIdxs
+;; local[10] _cardNum
+;; local[11] _modelEnv
+;; local[12] _idx
+;; local[13] _side
+;; local[14] _view
+;; local[15] _arr
+;; local[16] _arrNames
+;; local[17] _tmp
+;; local[18] i
+;; local[19] j
+;; local[20] _isBackup
+;; local[21] _isCure
+;; local[22] _hpCur
+;; local[23] _hpMax
+;; local[24] _jsonCardData
+;; local[25] _model
+;; local[26] _para
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:73 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  newarray 0
+00004:  75  endinit
+00005:  75  setlocal 0
+00008:  75  pop
+00009:  76  newarray 0
+00013:  76  endinit
+00014:  76  setlocal 1
+00017:  76  pop
+00018:  77  newarray 0
+00022:  77  endinit
+00023:  77  setlocal 2
+00026:  77  pop
+00027:  78  newarray 0
+00031:  78  endinit
+00032:  78  setlocal 3
+00035:  78  pop
+00036:  79  newarray 0
+00040:  79  endinit
+00041:  79  setlocal 4
+00044:  79  pop
+00045:  80  newarray 0
+00049:  80  endinit
+00050:  80  setlocal 5
+00053:  80  pop
+00054:  81  newarray 0
+00058:  81  endinit
+00059:  81  setlocal 6
+00062:  81  pop
+00063:  82  newarray 0
+00067:  82  endinit
+00068:  82  setlocal 7
+00071:  82  pop
+00072:  85  newarray 0
+00076:  85  endinit
+00077:  85  setlocal 8
+00080:  85  pop
+00081:  86  newarray 0
+00085:  86  endinit
+00086:  86  setlocal 9
+00089:  86  pop
+00090:  89  getarg 0
+00093:  89  getprop "model"
+00098:  89  getprop "cards_size0"
+00103:  89  getarg 0
+00106:  89  getprop "model"
+00111:  89  getprop "cards_size1"
+00116:  89  add
+00117:  89  setlocal 10
+00120:  89  pop
+00121:  91  getarg 0
+00124:  91  dup
+00125:  91  callprop "getModel"
+00130:  91  swap
+00131:  91  notearg
+00132:  91  call 0
+00135:  91  setlocal 11
+00138:  91  pop
+00139:  93  zero
+00140:  93  setlocal 12
+00143:  93  pop
+00144:  94  zero
+00145:  94  setlocal 13
+00148:  94  pop
+00149:  95  getlocal 14
+00152:  95  pop
+00153:  97  newarray 2
+00157:  97  this
+00158:  97  getprop "from"
+00163:  97  initelem_array 0
+00167:  97  this
+00168:  97  getprop "to"
+00173:  97  initelem_array 1
+00177:  97  endinit
+00178:  97  setlocal 15
+00181:  97  pop
+00182:  99  newarray 2
+00186:  99  string "from"
+00191:  99  initelem_array 0
+00195:  99  string "to"
+00200:  99  initelem_array 1
+00204:  99  endinit
+00205:  99  setlocal 16
+00208:  99  pop
+00209: 101  getlocal 17
+00212: 101  pop
+00213: 106  zero
+00214: 106  setlocal 18
+00217: 106  pop
+00218: 106  goto 1139 (+921)
+00223: 107  loophead
+00224: 107  zero
+00225: 107  setlocal 19
+00228: 107  pop
+00229: 107  goto 1102 (+873)
+00234: 110  loophead
+00235: 110  getlocal 15
+00238: 110  getlocal 18
+00241: 110  getelem
+00242: 110  getlocal 19
+00245: 110  getelem
+00246: 110  setlocal 17
+00249: 110  pop
+00250: 112  false
+00251: 112  setlocal 20
+00254: 112  pop
+00255: 114  getlocal 11
+00258: 114  dup
+00259: 114  callprop "getSideByIdx"
+00264: 114  swap
+00265: 114  notearg
+00266: 114  getlocal 17
+00269: 114  notearg
+00270: 114  call 1
+00273: 114  setlocal 13
+00276: 114  pop
+00277: 115  getlocal 11
+00280: 115  dup
+00281: 115  callprop "getOffsetByIdx"
+00286: 115  swap
+00287: 115  notearg
+00288: 115  getlocal 17
+00291: 115  notearg
+00292: 115  call 1
+00295: 115  setlocal 12
+00298: 115  pop
+00299: 118  false
+00300: 118  setlocal 21
+00303: 118  pop
+00304: 124  getlocal 17
+00307: 124  getlocal 10
+00310: 124  lt
+00311: 124  ifeq 346 (+35)
+00316: 126  false
+00317: 126  setlocal 20
+00320: 126  pop
+00321: 127  getarg 0
+00324: 127  getprop "cardViews"
+00329: 127  getlocal 13
+00332: 127  getelem
+00333: 127  getlocal 12
+00336: 127  getelem
+00337: 127  setlocal 14
+00340: 127  pop
+00341: 127  goto 371 (+30)
+00346: 130  true
+00347: 130  setlocal 20
+00350: 130  pop
+00351: 131  getarg 0
+00354: 131  getprop "backupViews"
+00359: 131  getlocal 13
+00362: 131  getelem
+00363: 131  getlocal 12
+00366: 131  getelem
+00367: 131  setlocal 14
+00370: 131  pop
+00371: 134  name "xs"
+00376: 134  dup
+00377: 134  callprop "assert"
+00382: 134  swap
+00383: 134  notearg
+00384: 134  getlocal 14
+00387: 134  notearg
+00388: 134  string "_view must exist"
+00393: 134  notearg
+00394: 134  newinit 1
+00399: 134  getlocal 18
+00402: 134  initprop "i"
+00407: 134  getlocal 19
+00410: 134  initprop "j"
+00415: 134  this
+00416: 134  initprop "this"
+00421: 134  endinit
+00422: 134  notearg
+00423: 134  call 3
+00426: 134  pop
+00427: 138  this
+00428: 138  this
+00429: 138  getprop "params"
+00434: 138  or 445 (+11)
+00439: 138  pop
+00440: 138  newarray 0
+00444: 138  endinit
+00445: 138  setprop "params"
+00450: 138  pop
+00451: 139  this
+00452: 139  getprop "params"
+00457: 139  getlocal 16
+00460: 139  getlocal 18
+00463: 139  getelem
+00464: 139  this
+00465: 139  getprop "params"
+00470: 139  getlocal 16
+00473: 139  getlocal 18
+00476: 139  getelem
+00477: 139  getelem
+00478: 139  or 489 (+11)
+00483: 139  pop
+00484: 139  newarray 0
+00488: 139  endinit
+00489: 139  setelem
+00490: 139  pop
+00491: 140  this
+00492: 140  getprop "params"
+00497: 140  getlocal 16
+00500: 140  getlocal 18
+00503: 140  getelem
+00504: 140  getelem
+00505: 140  getlocal 19
+00508: 140  this
+00509: 140  getprop "params"
+00514: 140  getlocal 16
+00517: 140  getlocal 18
+00520: 140  getelem
+00521: 140  getelem
+00522: 140  getlocal 19
+00525: 140  getelem
+00526: 140  or 538 (+12)
+00531: 140  pop
+00532: 140  newinit 1
+00537: 140  endinit
+00538: 140  setelem
+00539: 140  pop
+00540: 141  this
+00541: 141  getprop "params"
+00546: 141  getlocal 16
+00549: 141  getlocal 18
+00552: 141  getelem
+00553: 141  getelem
+00554: 141  getlocal 19
+00557: 141  getelem
+00558: 141  this
+00559: 141  getprop "params"
+00564: 141  getlocal 16
+00567: 141  getlocal 18
+00570: 141  getelem
+00571: 141  getelem
+00572: 141  getlocal 19
+00575: 141  getelem
+00576: 141  getprop "event"
+00581: 141  or 592 (+11)
+00586: 141  pop
+00587: 141  newarray 0
+00591: 141  endinit
+00592: 141  setprop "event"
+00597: 141  pop
+00598: 142  getlocal 20
+00601: 142  true
+00602: 142  stricteq
+00603: 142  ifeq 649 (+46)
+00608: 143  this
+00609: 143  getprop "params"
+00614: 143  getlocal 16
+00617: 143  getlocal 18
+00620: 143  getelem
+00621: 143  getelem
+00622: 143  getlocal 19
+00625: 143  getelem
+00626: 143  getprop "event"
+00631: 143  dup
+00632: 143  callprop "push"
+00637: 143  swap
+00638: 143  notearg
+00639: 143  string "backup"
+00644: 143  notearg
+00645: 143  call 1
+00648: 143  pop
+00649: 147  this
+00650: 147  getprop "params"
+00655: 147  getlocal 16
+00658: 147  getlocal 18
+00661: 147  getelem
+00662: 147  getelem
+00663: 147  getlocal 19
+00666: 147  getelem
+00667: 147  getprop "cure"
+00672: 147  ifeq 682 (+10)
+00677: 148  true
+00678: 148  setlocal 21
+00681: 148  pop
+00682: 154  getlocal 21
+00685: 154  true
+00686: 154  stricteq
+00687: 154  ifeq 764 (+77)
+00692: 156  this
+00693: 156  getprop "params"
+00698: 156  getlocal 16
+00701: 156  getlocal 18
+00704: 156  getelem
+00705: 156  getelem
+00706: 156  getlocal 19
+00709: 156  getelem
+00710: 156  this
+00711: 156  getprop "params"
+00716: 156  getlocal 16
+00719: 156  getlocal 18
+00722: 156  getelem
+00723: 156  getelem
+00724: 156  getlocal 19
+00727: 156  getelem
+00728: 156  getprop "cure"
+00733: 156  setprop "hp"
+00738: 156  pop
+00739: 157  this
+00740: 157  getprop "params"
+00745: 157  getlocal 16
+00748: 157  getlocal 18
+00751: 157  getelem
+00752: 157  getelem
+00753: 157  getlocal 19
+00756: 157  getelem
+00757: 157  true
+00758: 157  setprop "isCure"
+00763: 157  pop
+00764: 161  this
+00765: 161  getprop "params"
+00770: 161  getlocal 16
+00773: 161  getlocal 18
+00776: 161  getelem
+00777: 161  getelem
+00778: 161  getlocal 19
+00781: 161  getelem
+00782: 161  getprop "hpCur"
+00787: 161  setlocal 22
+00790: 161  pop
+00791: 162  this
+00792: 162  getprop "params"
+00797: 162  getlocal 16
+00800: 162  getlocal 18
+00803: 162  getelem
+00804: 162  getelem
+00805: 162  getlocal 19
+00808: 162  getelem
+00809: 162  getprop "hpMax"
+00814: 162  setlocal 23
+00817: 162  pop
+00818: 166  getlocal 22
+00821: 166  null
+00822: 166  strictne
+00823: 166  and 838 (+15)
+00828: 166  pop
+00829: 166  getlocal 22
+00832: 166  name "undefined"
+00837: 166  strictne
+00838: 166  ifeq 888 (+50)
+00843: 168  getarg 0
+00846: 168  dup
+00847: 168  callprop "getModel"
+00852: 168  swap
+00853: 168  notearg
+00854: 168  call 0
+00857: 168  dup
+00858: 168  callprop "getCardModelByIdx"
+00863: 168  swap
+00864: 168  notearg
+00865: 168  getlocal 17
+00868: 168  notearg
+00869: 168  call 1
+00872: 168  setlocal 24
+00875: 168  pop
+00876: 169  getlocal 24
+00879: 169  getlocal 22
+00882: 169  setprop "hpCur"
+00887: 169  pop
+00888: 171  getlocal 23
+00891: 171  null
+00892: 171  strictne
+00893: 171  and 908 (+15)
+00898: 171  pop
+00899: 171  getlocal 23
+00902: 171  name "undefined"
+00907: 171  strictne
+00908: 171  ifeq 958 (+50)
+00913: 173  getarg 0
+00916: 173  dup
+00917: 173  callprop "getModel"
+00922: 173  swap
+00923: 173  notearg
+00924: 173  call 0
+00927: 173  dup
+00928: 173  callprop "getCardModelByIdx"
+00933: 173  swap
+00934: 173  notearg
+00935: 173  getlocal 17
+00938: 173  notearg
+00939: 173  call 1
+00942: 173  setlocal 24
+00945: 173  pop
+00946: 174  getlocal 24
+00949: 174  getlocal 23
+00952: 174  setprop "hpMax"
+00957: 174  pop
+00958: 177  getlocal 18
+00961: 177  zero
+00962: 177  eq
+00963: 177  ifeq 1030 (+67)
+00968: 178  getlocal 1
+00971: 178  dup
+00972: 178  callprop "push"
+00977: 178  swap
+00978: 178  notearg
+00979: 178  getlocal 14
+00982: 178  notearg
+00983: 178  call 1
+00986: 178  pop
+00987: 179  getlocal 6
+00990: 179  dup
+00991: 179  callprop "push"
+00996: 179  swap
+00997: 179  notearg
+00998: 179  getlocal 13
+01001: 179  notearg
+01002: 179  call 1
+01005: 179  pop
+01006: 180  getlocal 8
+01009: 180  dup
+01010: 180  callprop "push"
+01015: 180  swap
+01016: 180  notearg
+01017: 180  getlocal 17
+01020: 180  notearg
+01021: 180  call 1
+01024: 180  pop
+01025: 180  goto 1087 (+62)
+01030: 183  getlocal 0
+01033: 183  dup
+01034: 183  callprop "push"
+01039: 183  swap
+01040: 183  notearg
+01041: 183  getlocal 14
+01044: 183  notearg
+01045: 183  call 1
+01048: 183  pop
+01049: 184  getlocal 7
+01052: 184  dup
+01053: 184  callprop "push"
+01058: 184  swap
+01059: 184  notearg
+01060: 184  getlocal 13
+01063: 184  notearg
+01064: 184  call 1
+01067: 184  pop
+01068: 185  getlocal 9
+01071: 185  dup
+01072: 185  callprop "push"
+01077: 185  swap
+01078: 185  notearg
+01079: 185  getlocal 17
+01082: 185  notearg
+01083: 185  call 1
+01086: 185  pop
+01087: 107  localinc 11
+01090: 107  getlocal 19
+01093: 107  pos
+01094: 107  dup
+01095: 107  one
+01096: 107  add
+01097: 107  setlocal 19
+01100: 107  pop
+01101: 107  pop
+01102: 107  loopentry
+01103: 107  getlocal 19
+01106: 107  getlocal 15
+01109: 107  getlocal 18
+01112: 107  getelem
+01113: 107  length "length"
+01118: 107  lt
+01119: 107  ifne 234 (-885)
+01124: 106  localinc 11
+01127: 106  getlocal 18
+01130: 106  pos
+01131: 106  dup
+01132: 106  one
+01133: 106  add
+01134: 106  setlocal 18
+01137: 106  pop
+01138: 106  pop
+01139: 106  loopentry
+01140: 106  getlocal 18
+01143: 106  getlocal 15
+01146: 106  length "length"
+01151: 106  lt
+01152: 106  ifne 223 (-929)
+01157: 198  zero
+01158: 198  setlocal 18
+01161: 198  pop
+01162: 198  goto 1279 (+117)
+01167: 200  loophead
+01168: 200  this
+01169: 200  getprop "from"
+01174: 200  getlocal 18
+01177: 200  getelem
+01178: 200  setlocal 17
+01181: 200  pop
+01182: 203  this
+01183: 203  dup
+01184: 203  callprop "dump"
+01189: 203  swap
+01190: 203  notearg
+01191: 203  string "cardModel"
+01196: 203  notearg
+01197: 203  getarg 0
+01200: 203  dup
+01201: 203  callprop "getModel"
+01206: 203  swap
+01207: 203  notearg
+01208: 203  call 0
+01211: 203  dup
+01212: 203  callprop "getCardModelByIdx"
+01217: 203  swap
+01218: 203  notearg
+01219: 203  getlocal 17
+01222: 203  notearg
+01223: 203  call 1
+01226: 203  notearg
+01227: 203  call 2
+01230: 203  pop
+01231: 205  getarg 0
+01234: 205  dup
+01235: 205  callprop "getModel"
+01240: 205  swap
+01241: 205  notearg
+01242: 205  call 0
+01245: 205  dup
+01246: 205  callprop "getCardModelByIdx"
+01251: 205  swap
+01252: 205  notearg
+01253: 205  getlocal 17
+01256: 205  notearg
+01257: 205  call 1
+01260: 205  setlocal 25
+01263: 205  pop
+01264: 198  localinc 11
+01267: 198  getlocal 18
+01270: 198  pos
+01271: 198  dup
+01272: 198  one
+01273: 198  add
+01274: 198  setlocal 18
+01277: 198  pop
+01278: 198  pop
+01279: 198  loopentry
+01280: 198  getlocal 18
+01283: 198  this
+01284: 198  getprop "from"
+01289: 198  length "length"
+01294: 198  lt
+01295: 198  ifne 1167 (-128)
+01300: 216  this
+01301: 216  getprop "skill"
+01306: 216  string "Open_Pvp"
+01311: 216  stricteq
+01312: 216  ifeq 1338 (+26)
+01317: 217  this
+01318: 217  getarg 0
+01321: 217  dup
+01322: 217  callprop "getOpenTypeSkillName"
+01327: 217  swap
+01328: 217  notearg
+01329: 217  call 0
+01332: 217  setprop "skill"
+01337: 217  pop
+01338: 223  newinit 1
+01343: 225  this
+01344: 225  initprop "model"
+01349: 226  getarg 0
+01352: 226  initprop "env"
+01357: 227  getarg 0
+01360: 227  dup
+01361: 227  callprop "getNear"
+01366: 227  swap
+01367: 227  notearg
+01368: 227  call 0
+01371: 227  initprop "near"
+01376: 229  getlocal 1
+01379: 229  initprop "fromViews"
+01384: 230  getlocal 0
+01387: 230  initprop "toViews"
+01392: 235  getlocal 6
+01395: 235  initprop "fromSides"
+01400: 236  getlocal 7
+01403: 236  initprop "toSides"
+01408: 237  getlocal 8
+01411: 237  initprop "fromIdxs"
+01416: 238  getlocal 9
+01419: 238  initprop "toIdxs"
+01424: 238  endinit
+01425: 238  setlocal 26
+01428: 238  pop
+01429: 256  getlocal 26
+01432: 256  return
+01433: 256  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:73 ---
+;; function object[4] doShowNvsN
+;; function metadata object[4] nargs=1 bindings=3
+;; arg[0] envLayer
+;; local[0] _para
+;; local[1] _actionSkill
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:264 ---
+loc   line  op
+----- ----  --
+main:
+00000: 266  this
+00001: 266  dup
+00002: 266  callprop "markFuncBegin"
+00007: 266  swap
+00008: 266  notearg
+00009: 266  string "doShowNvsN"
+00014: 266  notearg
+00015: 266  call 1
+00018: 266  pop
+00019: 272  this
+00020: 272  dup
+00021: 272  callprop "createPara"
+00026: 272  swap
+00027: 272  notearg
+00028: 272  getarg 0
+00031: 272  notearg
+00032: 272  call 1
+00035: 272  setlocal 0
+00038: 272  pop
+00039: 276  name "xs"
+00044: 276  getprop "Factorys"
+00049: 276  getprop "Skill"
+00054: 276  dup
+00055: 276  callprop "create"
+00060: 276  swap
+00061: 276  notearg
+00062: 276  getlocal 0
+00065: 276  notearg
+00066: 276  call 1
+00069: 276  setlocal 1
+00072: 276  pop
+00073: 281  getarg 0
+00076: 281  dup
+00077: 281  callprop "runAction"
+00082: 281  swap
+00083: 281  notearg
+00084: 286  name "xs"
+00089: 286  getprop "Utils"
+00094: 286  getprop "Action"
+00099: 286  dup
+00100: 286  callprop "combineSequence"
+00105: 286  swap
+00106: 286  notearg
+00107: 287  newarray 2
+00111: 288  getlocal 1
+00114: 288  initelem_array 0
+00118: 289  getlocal 0
+00121: 289  getprop "env"
+00126: 289  dup
+00127: 289  callprop "createActionStartScheduleUpdate"
+00132: 289  swap
+00133: 289  notearg
+00134: 289  call 0
+00137: 289  initelem_array 1
+00141: 289  endinit
+00142: 289  notearg
+00143: 289  call 1
+00146: 289  notearg
+00147: 289  call 1
+00150: 289  pop
+00151: 294  this
+00152: 294  dup
+00153: 294  callprop "markFuncEnd"
+00158: 294  swap
+00159: 294  notearg
+00160: 294  string "doShowNvsN"
+00165: 294  notearg
+00166: 294  call 1
+00169: 294  pop
+00170: 294  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:264 ---
+;; function object[5] doShowStory
+;; function metadata object[5] nargs=1 bindings=3
+;; arg[0] envLayer
+;; local[0] _para
+;; local[1] _actionSkill
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:297 ---
+loc   line  op
+----- ----  --
+main:
+00000: 299  this
+00001: 299  dup
+00002: 299  callprop "markFuncBegin"
+00007: 299  swap
+00008: 299  notearg
+00009: 299  string "doShowStory"
+00014: 299  notearg
+00015: 299  call 1
+00018: 299  pop
+00019: 303  this
+00020: 303  dup
+00021: 303  callprop "createPara"
+00026: 303  swap
+00027: 303  notearg
+00028: 303  getarg 0
+00031: 303  notearg
+00032: 303  call 1
+00035: 303  setlocal 0
+00038: 303  pop
+00039: 305  name "xs"
+00044: 305  getprop "Factorys"
+00049: 305  getprop "Skill"
+00054: 305  dup
+00055: 305  callprop "create"
+00060: 305  swap
+00061: 305  notearg
+00062: 305  getlocal 0
+00065: 305  notearg
+00066: 305  call 1
+00069: 305  setlocal 1
+00072: 305  pop
+00073: 309  getarg 0
+00076: 309  dup
+00077: 309  callprop "runAction"
+00082: 309  swap
+00083: 309  notearg
+00084: 314  name "xs"
+00089: 314  getprop "Utils"
+00094: 314  getprop "Action"
+00099: 314  dup
+00100: 314  callprop "combineSequence"
+00105: 314  swap
+00106: 314  notearg
+00107: 315  newarray 1
+00111: 316  getlocal 1
+00114: 316  initelem_array 0
+00118: 316  endinit
+00119: 316  notearg
+00120: 316  call 1
+00123: 316  notearg
+00124: 316  call 1
+00127: 316  pop
+00128: 322  this
+00129: 322  dup
+00130: 322  callprop "markFuncEnd"
+00135: 322  swap
+00136: 322  notearg
+00137: 322  string "doShowStory"
+00142: 322  notearg
+00143: 322  call 1
+00146: 322  pop
+00147: 322  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:297 ---
+;; function object[6] init
+;; function metadata object[6] nargs=1 bindings=3
+;; arg[0] data
+;; local[0] mNum
+;; local[1] mIdx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:327 ---
+loc   line  op
+----- ----  --
+main:
+00000: 331  this
+00001: 331  getarg 0
+00004: 331  getprop "num"
+00009: 331  or 16 (+7)
+00014: 331  pop
+00015: 331  zero
+00016: 331  setprop "num"
+00021: 331  pop
+00022: 332  this
+00023: 332  getarg 0
+00026: 332  getprop "from"
+00031: 332  or 38 (+7)
+00036: 332  pop
+00037: 332  zero
+00038: 332  setprop "from"
+00043: 332  pop
+00044: 333  this
+00045: 333  getarg 0
+00048: 333  getprop "to"
+00053: 333  or 60 (+7)
+00058: 333  pop
+00059: 333  zero
+00060: 333  setprop "to"
+00065: 333  pop
+00066: 334  this
+00067: 334  getarg 0
+00070: 334  getprop "skill"
+00075: 334  or 86 (+11)
+00080: 334  pop
+00081: 334  string ""
+00086: 334  setprop "skill"
+00091: 334  pop
+00092: 335  this
+00093: 335  getarg 0
+00096: 335  getprop "type"
+00101: 335  or 108 (+7)
+00106: 335  pop
+00107: 335  zero
+00108: 335  setprop "type"
+00113: 335  pop
+00114: 336  this
+00115: 336  name "xs"
+00120: 336  getprop "Utils"
+00125: 336  dup
+00126: 336  callprop "clone"
+00131: 336  swap
+00132: 336  notearg
+00133: 336  getarg 0
+00136: 336  getprop "params"
+00141: 336  or 148 (+7)
+00146: 336  pop
+00147: 336  null
+00148: 336  notearg
+00149: 336  call 1
+00152: 336  setprop "params"
+00157: 336  pop
+00158: 337  this
+00159: 337  getarg 0
+00162: 337  getprop "side"
+00167: 337  or 174 (+7)
+00172: 337  pop
+00173: 337  null
+00174: 337  setprop "side"
+00179: 337  pop
+00180: 338  this
+00181: 338  getarg 0
+00184: 338  getprop "skillId"
+00189: 338  or 196 (+7)
+00194: 338  pop
+00195: 338  null
+00196: 338  setprop "skillId"
+00201: 338  pop
+00202: 339  this
+00203: 339  getarg 0
+00206: 339  getprop "cnum"
+00211: 339  or 218 (+7)
+00216: 339  pop
+00217: 339  null
+00218: 339  setprop "cnum"
+00223: 339  pop
+00224: 343  this
+00225: 343  getprop "skill"
+00230: 343  string "xiaoji"
+00235: 343  stricteq
+00236: 343  ifeq 278 (+42)
+00241: 344  this
+00242: 344  this
+00243: 344  getprop "num"
+00248: 344  int8 3
+00250: 344  sub
+00251: 344  setprop "num"
+00256: 344  pop
+00257: 345  this
+00258: 345  getprop "num"
+00263: 345  zero
+00264: 345  lt
+00265: 345  ifeq 278 (+13)
+00270: 346  this
+00271: 346  zero
+00272: 346  setprop "num"
+00277: 346  pop
+00278: 352  this
+00279: 352  getprop "skill"
+00284: 352  string "jiang"
+00289: 352  stricteq
+00290: 352  ifeq 321 (+31)
+00295: 354  this
+00296: 354  newarray 1
+00300: 354  getarg 0
+00303: 354  getprop "to"
+00308: 354  zero
+00309: 354  getelem
+00310: 354  initelem_array 0
+00314: 354  endinit
+00315: 354  setprop "to"
+00320: 354  pop
+00321: 359  this
+00322: 359  getprop "skill"
+00327: 359  string "qicai"
+00332: 359  stricteq
+00333: 359  ifeq 473 (+140)
+00338: 360  getarg 0
+00341: 360  getprop "to"
+00346: 360  length "length"
+00351: 360  setlocal 0
+00354: 360  pop
+00355: 361  this
+00356: 361  newarray 0
+00360: 361  endinit
+00361: 361  setprop "to"
+00366: 361  pop
+00367: 362  zero
+00368: 362  setlocal 1
+00371: 362  pop
+00372: 362  goto 460 (+88)
+00377: 365  loophead
+00378: 365  this
+00379: 365  one
+00380: 365  setprop "num"
+00385: 365  pop
+00386: 366  getarg 0
+00389: 366  getprop "to"
+00394: 366  getlocal 1
+00397: 366  getelem
+00398: 366  getarg 0
+00401: 366  getprop "from"
+00406: 366  zero
+00407: 366  getelem
+00408: 366  ne
+00409: 366  ifeq 445 (+36)
+00414: 367  this
+00415: 367  getprop "to"
+00420: 367  dup
+00421: 367  callprop "push"
+00426: 367  swap
+00427: 367  notearg
+00428: 367  getarg 0
+00431: 367  getprop "to"
+00436: 367  getlocal 1
+00439: 367  getelem
+00440: 367  notearg
+00441: 367  call 1
+00444: 367  pop
+00445: 362  localinc 11
+00448: 362  getlocal 1
+00451: 362  pos
+00452: 362  dup
+00453: 362  one
+00454: 362  add
+00455: 362  setlocal 1
+00458: 362  pop
+00459: 362  pop
+00460: 362  loopentry
+00461: 362  getlocal 1
+00464: 362  getlocal 0
+00467: 362  lt
+00468: 362  ifne 377 (-91)
+00473: 372  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:327 ---
+;; function object[7] getSkill
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:378 ---
+loc   line  op
+----- ----  --
+main:
+00000: 379  this
+00001: 379  getprop "skill"
+00006: 379  return
+00007: 379  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Fight/FightRoundItem.js:378 ---

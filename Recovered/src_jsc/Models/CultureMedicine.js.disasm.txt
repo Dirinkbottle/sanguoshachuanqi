@@ -1,0 +1,349 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/CultureMedicine.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=93 object[5]
+;; FUNCTION-MAP kind=lambda offset=129 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Models"
+00010:   6  name "cc"
+00015:   6  getprop "Class"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  string "xs.Models.CultureMedicine"
+00038:   7  initprop "name"
+00043:   9  lambda (function () {
+    [sourceless code]
+})
+00048:   9  initprop "init"
+00053:  46  lambda (function () {
+    [sourceless code]
+})
+00058:  46  initprop "getName"
+00063:  50  lambda (function () {
+    [sourceless code]
+})
+00068:  50  initprop "getUpAttrField"
+00073:  54  lambda (function () {
+    [sourceless code]
+})
+00078:  54  initprop "getUpAttrVal"
+00083:  58  lambda (function () {
+    [sourceless code]
+})
+00088:  58  initprop "getDownAttrField"
+00093:  62  lambda (function () {
+    [sourceless code]
+})
+00098:  62  initprop "getDownAttrVal"
+00103:  62  endinit
+00104:  62  notearg
+00105:  62  call 1
+00108:  62  setprop "CultureMedicine"
+00113:  62  popv
+00114:  68  name "xs"
+00119:  68  getprop "Models"
+00124:  68  getprop "CultureMedicine"
+00129:  68  lambda (function () {
+    [sourceless code]
+})
+00134:  68  setprop "create"
+00139:  68  popv
+00140:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=3
+;; arg[0] jsonObj
+;; local[0] culture_attr1
+;; local[1] culture_attr2
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  getarg 0
+00003:  10  string ""
+00008:  10  stricteq
+00009:  10  ifeq 16 (+7)
+00014:  11  false
+00015:  11  return
+00016:  13  this
+00017:  13  string ""
+00022:  13  setprop "item_name"
+00027:  13  pop
+00028:  14  this
+00029:  14  newarray 0
+00033:  14  endinit
+00034:  14  setprop "culture_attr"
+00039:  14  pop
+00040:  15  this
+00041:  15  false
+00042:  15  setprop "isEmpty"
+00047:  15  pop
+00048:  16  getarg 0
+00051:  16  getprop "item_name"
+00056:  16  name "undefined"
+00061:  16  stricteq
+00062:  16  and 82 (+20)
+00067:  16  pop
+00068:  16  getarg 0
+00071:  16  getprop "culture_attr"
+00076:  16  name "undefined"
+00081:  16  stricteq
+00082:  16  ifeq 117 (+35)
+00087:  17  this
+00088:  17  string ""
+00093:  17  setprop "name"
+00098:  17  pop
+00099:  18  this
+00100:  18  null
+00101:  18  setprop "culture_attr"
+00106:  18  pop
+00107:  19  this
+00108:  19  true
+00109:  19  setprop "isEmpty"
+00114:  19  pop
+00115:  20  undefined
+00116:  20  return
+00117:  22  this
+00118:  22  getarg 0
+00121:  22  getprop "item_name"
+00126:  22  setprop "item_name"
+00131:  22  pop
+00132:  23  this
+00133:  23  newarray 0
+00137:  23  endinit
+00138:  23  setprop "culture_attr"
+00143:  23  pop
+00144:  25  newinit 1
+00149:  25  endinit
+00150:  25  setlocal 0
+00153:  25  pop
+00154:  26  getlocal 0
+00157:  26  getarg 0
+00160:  26  getprop "culture_attr"
+00165:  26  zero
+00166:  26  getelem
+00167:  26  getprop "field"
+00172:  26  setprop "field"
+00177:  26  pop
+00178:  27  getlocal 0
+00181:  27  getarg 0
+00184:  27  getprop "culture_attr"
+00189:  27  zero
+00190:  27  getelem
+00191:  27  getprop "val"
+00196:  27  setprop "val"
+00201:  27  pop
+00202:  30  newinit 1
+00207:  30  endinit
+00208:  30  setlocal 1
+00211:  30  pop
+00212:  31  getlocal 1
+00215:  31  getarg 0
+00218:  31  getprop "culture_attr"
+00223:  31  one
+00224:  31  getelem
+00225:  31  getprop "field"
+00230:  31  setprop "field"
+00235:  31  pop
+00236:  32  getlocal 1
+00239:  32  getarg 0
+00242:  32  getprop "culture_attr"
+00247:  32  one
+00248:  32  getelem
+00249:  32  getprop "val"
+00254:  32  setprop "val"
+00259:  32  pop
+00260:  34  getlocal 0
+00263:  34  getprop "val"
+00268:  34  zero
+00269:  34  ge
+00270:  34  ifeq 324 (+54)
+00275:  35  this
+00276:  35  getprop "culture_attr"
+00281:  35  dup
+00282:  35  callprop "push"
+00287:  35  swap
+00288:  35  notearg
+00289:  35  getlocal 0
+00292:  35  notearg
+00293:  35  call 1
+00296:  35  pop
+00297:  36  this
+00298:  36  getprop "culture_attr"
+00303:  36  dup
+00304:  36  callprop "push"
+00309:  36  swap
+00310:  36  notearg
+00311:  36  getlocal 1
+00314:  36  notearg
+00315:  36  call 1
+00318:  36  pop
+00319:  36  goto 368 (+49)
+00324:  38  this
+00325:  38  getprop "culture_attr"
+00330:  38  dup
+00331:  38  callprop "push"
+00336:  38  swap
+00337:  38  notearg
+00338:  38  getlocal 1
+00341:  38  notearg
+00342:  38  call 1
+00345:  38  pop
+00346:  39  this
+00347:  39  getprop "culture_attr"
+00352:  39  dup
+00353:  39  callprop "push"
+00358:  39  swap
+00359:  39  notearg
+00360:  39  getlocal 0
+00363:  39  notearg
+00364:  39  call 1
+00367:  39  pop
+00368:  43  true
+00369:  43  return
+00370:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:9 ---
+;; function object[1] getName
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  this
+00001:  47  getprop "item_name"
+00006:  47  return
+00007:  47  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:46 ---
+;; function object[2] getUpAttrField
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:50 ---
+loc   line  op
+----- ----  --
+main:
+00000:  51  this
+00001:  51  getprop "culture_attr"
+00006:  51  zero
+00007:  51  getelem
+00008:  51  getprop "field"
+00013:  51  return
+00014:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:50 ---
+;; function object[3] getUpAttrVal
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:54 ---
+loc   line  op
+----- ----  --
+main:
+00000:  55  name "Math"
+00005:  55  dup
+00006:  55  callprop "abs"
+00011:  55  swap
+00012:  55  notearg
+00013:  55  this
+00014:  55  getprop "culture_attr"
+00019:  55  zero
+00020:  55  getelem
+00021:  55  getprop "val"
+00026:  55  notearg
+00027:  55  call 1
+00030:  55  return
+00031:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:54 ---
+;; function object[4] getDownAttrField
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  this
+00001:  59  getprop "culture_attr"
+00006:  59  one
+00007:  59  getelem
+00008:  59  getprop "field"
+00013:  59  return
+00014:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:58 ---
+;; function object[5] getDownAttrVal
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  name "Math"
+00005:  63  dup
+00006:  63  callprop "abs"
+00011:  63  swap
+00012:  63  notearg
+00013:  63  this
+00014:  63  getprop "culture_attr"
+00019:  63  one
+00020:  63  getelem
+00021:  63  getprop "val"
+00026:  63  notearg
+00027:  63  call 1
+00030:  63  return
+00031:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:62 ---
+;; function object[6] create
+;; function metadata object[6] nargs=1 bindings=2
+;; arg[0] jsonObj
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  69  name "xs"
+00005:  69  getprop "Models"
+00010:  69  getprop "CultureMedicine"
+00015:  69  undefined
+00016:  69  notearg
+00017:  69  new 0
+00020:  69  setlocal 0
+00023:  69  pop
+00024:  70  getlocal 0
+00027:  70  and 51 (+24)
+00032:  70  pop
+00033:  70  getlocal 0
+00036:  70  dup
+00037:  70  callprop "init"
+00042:  70  swap
+00043:  70  notearg
+00044:  70  getarg 0
+00047:  70  notearg
+00048:  70  call 1
+00051:  70  ifeq 60 (+9)
+00056:  71  getlocal 0
+00059:  71  return
+00060:  74  null
+00061:  74  return
+00062:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/CultureMedicine.js:68 ---

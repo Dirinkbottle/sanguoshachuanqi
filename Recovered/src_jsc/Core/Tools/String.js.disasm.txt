@@ -1,0 +1,110 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Tools/String.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=30 object[0]
+;; FUNCTION-MAP kind=lambda offset=40 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/String.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Core"
+00010:   8  getprop "Tools"
+00015:   8  newinit 1
+00020:  10  string "xs.Core.Tools.String"
+00025:  10  initprop "name"
+00030:  12  lambda (function () {
+    [sourceless code]
+})
+00035:  12  initprop "_getCfg"
+00040:  25  lambda (function () {
+    [sourceless code]
+})
+00045:  25  initprop "createString"
+00050:  25  endinit
+00051:  25  setprop "String"
+00056:  25  popv
+00057:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/String.js:1 ---
+;; function object[0] _getCfg
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] key
+;; local[0] _cfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/String.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  string ""
+00005:  13  setlocal 0
+00008:  13  pop
+00009:  14  name "xsc"
+00014:  14  getprop "Tools"
+00019:  14  getprop "ProductSys"
+00024:  14  dup
+00025:  14  callprop "getArea"
+00030:  14  swap
+00031:  14  notearg
+00032:  14  call 0
+00035:  14  name "xsc"
+00040:  14  getprop "Const_Area_TW"
+00045:  14  eq
+00046:  14  ifeq 74 (+28)
+00051:  15  name "xsc"
+00056:  15  getprop "CoreString_tw"
+00061:  15  getarg 0
+00064:  15  getelem
+00065:  15  setlocal 0
+00068:  15  pop
+00069:  15  goto 92 (+23)
+00074:  17  name "xsc"
+00079:  17  getprop "CoreString"
+00084:  17  getarg 0
+00087:  17  getelem
+00088:  17  setlocal 0
+00091:  17  pop
+00092:  22  getlocal 0
+00095:  22  return
+00096:  22  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/String.js:12 ---
+;; function object[1] createString
+;; function metadata object[1] nargs=2 bindings=3
+;; arg[0] key
+;; arg[1] langage
+;; local[0] _cfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/String.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  this
+00001:  27  dup
+00002:  27  callprop "_getCfg"
+00007:  27  swap
+00008:  27  notearg
+00009:  27  getarg 0
+00012:  27  notearg
+00013:  27  call 1
+00016:  27  setlocal 0
+00019:  27  pop
+00020:  29  getlocal 0
+00023:  29  name "undefined"
+00028:  29  stricteq
+00029:  29  or 40 (+11)
+00034:  29  pop
+00035:  29  getlocal 0
+00038:  29  null
+00039:  29  stricteq
+00040:  29  ifeq 51 (+11)
+00045:  30  string ""
+00050:  30  return
+00051:  33  getlocal 0
+00054:  33  getprop "format"
+00059:  33  return
+00060:  33  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/String.js:25 ---

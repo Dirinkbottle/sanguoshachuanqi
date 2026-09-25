@@ -1,0 +1,2409 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Login/LoginScene_EasySdk.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=38 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=58 object[2]
+;; FUNCTION-MAP kind=lambda offset=68 object[3]
+;; FUNCTION-MAP kind=lambda offset=78 object[4]
+;; FUNCTION-MAP kind=lambda offset=88 object[5]
+;; FUNCTION-MAP kind=lambda offset=98 object[6]
+;; FUNCTION-MAP kind=lambda offset=108 object[7]
+;; FUNCTION-MAP kind=lambda offset=118 object[8]
+;; FUNCTION-MAP kind=lambda offset=128 object[9]
+;; FUNCTION-MAP kind=lambda offset=138 object[10]
+;; FUNCTION-MAP kind=lambda offset=148 object[11]
+;; FUNCTION-MAP kind=lambda offset=158 object[12]
+;; FUNCTION-MAP kind=lambda offset=168 object[13]
+;; FUNCTION-MAP kind=lambda offset=178 object[14]
+;; FUNCTION-MAP kind=lambda offset=483 object[15]
+;; FUNCTION-MAP kind=lambda offset=493 object[16]
+;; FUNCTION-MAP kind=lambda offset=503 object[17]
+;; FUNCTION-MAP kind=lambda offset=544 object[18]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Scene"
+00010:   8  getprop "Login"
+00015:   8  name "cc"
+00020:   8  getprop "Layer"
+00025:   8  dup
+00026:   8  callprop "extend"
+00031:   8  swap
+00032:   8  notearg
+00033:   8  newinit 1
+00038:  12  lambda (function () {
+    [sourceless code]
+})
+00043:  12  initprop "ctor"
+00048:  16  lambda (function () {
+    [sourceless code]
+})
+00053:  16  initprop "init"
+00058:  98  lambda (function () {
+    [sourceless code]
+})
+00063:  98  initprop "onEnterTransitionDidFinish"
+00068: 113  lambda (function () {
+    [sourceless code]
+})
+00073: 113  initprop "onExitTransitionDidStart"
+00078: 119  lambda (function () {
+    [sourceless code]
+})
+00083: 119  initprop "_isAlreadyLogined"
+00088: 124  lambda (function () {
+    [sourceless code]
+})
+00093: 124  initprop "onCheckBtnClick"
+00098: 132  lambda (function () {
+    [sourceless code]
+})
+00103: 132  initprop "_startLogin"
+00108: 143  lambda (function () {
+    [sourceless code]
+})
+00113: 143  initprop "setServerInfoToGame"
+00118: 157  lambda (function () {
+    [sourceless code]
+})
+00123: 157  initprop "onClick_start_get_role"
+00128: 208  lambda (function () {
+    [sourceless code]
+})
+00133: 208  initprop "onResp_getPlayerInfoSuccess"
+00138: 213  lambda (function () {
+    [sourceless code]
+})
+00143: 213  initprop "showLoginDialogFromControlBtn"
+00148: 235  lambda (function () {
+    [sourceless code]
+})
+00153: 235  initprop "onClick_changeLoginServer"
+00158: 267  lambda (function () {
+    [sourceless code]
+})
+00163: 267  initprop "updateCurServerView"
+00168: 271  lambda (function () {
+    [sourceless code]
+})
+00173: 271  initprop "onEasySdkLoginSuccess"
+00178: 339  lambda (function () {
+    [sourceless code]
+})
+00183: 339  initprop "onResp_GetServerList"
+00188: 398  newinit 1
+00193: 400  newarray 5
+00197: 401  newinit 1
+00202: 401  int8 13
+00204: 401  initprop "tag"
+00209: 401  string "ls"
+00214: 401  initprop "type"
+00219: 401  string "m_loginType"
+00224: 401  initprop "name"
+00229: 401  string "LS_loginSign"
+00234: 401  initprop "id"
+00239: 401  endinit
+00240: 401  initelem_array 0
+00244: 402  newinit 1
+00249: 402  int8 14
+00251: 402  initprop "tag"
+00256: 402  string "ls"
+00261: 402  initprop "type"
+00266: 402  string "m_loginServer"
+00271: 402  initprop "name"
+00276: 402  string "LS_chooseServer"
+00281: 402  initprop "id"
+00286: 402  endinit
+00287: 402  initelem_array 1
+00291: 403  newinit 1
+00296: 403  int8 15
+00298: 403  initprop "tag"
+00303: 403  string "ls"
+00308: 403  initprop "type"
+00313: 403  string "m_loginTypeTip"
+00318: 403  initprop "name"
+00323: 403  string "LS_mainUI2"
+00328: 403  initprop "id"
+00333: 403  endinit
+00334: 403  initelem_array 2
+00338: 404  newinit 1
+00343: 404  int8 16
+00345: 404  initprop "tag"
+00350: 404  string "ls"
+00355: 404  initprop "type"
+00360: 404  string "m_loginServerTip"
+00365: 404  initprop "name"
+00370: 404  string "LS_mainUI2"
+00375: 404  initprop "id"
+00380: 404  endinit
+00381: 404  initelem_array 3
+00385: 405  newinit 1
+00390: 405  int8 12
+00392: 405  initprop "tag"
+00397: 405  string "btn"
+00402: 405  initprop "type"
+00407: 405  string "Btn_StartGame"
+00412: 405  initprop "id"
+00417: 405  endinit
+00418: 405  initelem_array 4
+00422: 405  endinit
+00423: 405  initprop "ccbCfg"
+00428: 405  endinit
+00429: 405  initprop "cfg"
+00434: 405  endinit
+00435: 405  notearg
+00436: 405  call 1
+00439: 405  setprop "LoginScene_EasySdk_Layer"
+00444: 405  popv
+00445: 415  name "xs"
+00450: 415  getprop "Scene"
+00455: 415  getprop "Login"
+00460: 415  name "cc"
+00465: 415  getprop "Scene"
+00470: 415  dup
+00471: 415  callprop "extend"
+00476: 415  swap
+00477: 415  notearg
+00478: 415  newinit 1
+00483: 416  lambda (function () {
+    [sourceless code]
+})
+00488: 416  initprop "ctor"
+00493: 420  lambda (function () {
+    [sourceless code]
+})
+00498: 420  initprop "init"
+00503: 432  lambda (function () {
+    [sourceless code]
+})
+00508: 432  initprop "onEnter"
+00513: 432  endinit
+00514: 432  notearg
+00515: 432  call 1
+00518: 432  setprop "LoginScene_EasySdk"
+00523: 432  popv
+00524: 439  name "xs"
+00529: 439  getprop "Scene"
+00534: 439  getprop "Login"
+00539: 439  getprop "LoginScene_EasySdk"
+00544: 439  lambda (function () {
+    [sourceless code]
+})
+00549: 439  setprop "create"
+00554: 439  popv
+00555: 448  name "xs"
+00560: 448  getprop "Scene"
+00565: 448  getprop "Mgr"
+00570: 448  dup
+00571: 448  callprop "registerScene"
+00576: 448  swap
+00577: 448  notearg
+00578: 448  string "LoginScene"
+00583: 448  notearg
+00584: 448  newinit 1
+00589: 449  name "xs"
+00594: 449  getprop "Scene"
+00599: 449  getprop "Login"
+00604: 449  getprop "LoginScene_EasySdk"
+00609: 449  initprop "class"
+00614: 451  newarray 1
+00618: 451  string "Login"
+00623: 451  initelem_array 0
+00627: 451  endinit
+00628: 451  initprop "area"
+00633: 453  name "xs"
+00638: 453  getprop "Constant_SceneType_None"
+00643: 453  initprop "type"
+00648: 455  newinit 1
+00653: 456  string "Audio_BG_Login"
+00658: 456  initprop "bgId"
+00663: 456  endinit
+00664: 456  initprop "audio"
+00669: 456  endinit
+00670: 456  notearg
+00671: 456  call 2
+00674: 456  popv
+00675: 458  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "_super"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  call 0
+00012:  13  pop
+00013:  14  name "cc"
+00018:  14  dup
+00019:  14  callprop "associateWithNative"
+00024:  14  swap
+00025:  14  notearg
+00026:  14  this
+00027:  14  notearg
+00028:  14  name "cc"
+00033:  14  getprop "Layer"
+00038:  14  notearg
+00039:  14  call 2
+00042:  14  pop
+00043:  14  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:12 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=5
+;; arg[0] params
+;; local[0] _gameNameView
+;; local[1] _labelVerDesc
+;; local[2] isHaveSwitchAccount
+;; local[3] isHaveLogout
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=587 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  dup
+00002:  17  callprop "_super"
+00007:  17  swap
+00008:  17  notearg
+00009:  17  call 0
+00012:  17  not
+00013:  17  ifeq 20 (+7)
+00018:  18  false
+00019:  18  return
+00020:  20  this
+00021:  20  getarg 0
+00024:  20  setprop "m_loginParams"
+00029:  20  pop
+00030:  21  name "xs"
+00035:  21  getprop "Tools"
+00040:  21  getprop "Statistic"
+00045:  21  dup
+00046:  21  callprop "event_once"
+00051:  21  swap
+00052:  21  notearg
+00053:  21  string "login"
+00058:  21  notearg
+00059:  21  call 1
+00062:  21  pop
+00063:  24  name "xs"
+00068:  24  getprop "Tools"
+00073:  24  getprop "UI"
+00078:  24  dup
+00079:  24  callprop "addIndexBgSprite"
+00084:  24  swap
+00085:  24  notearg
+00086:  24  this
+00087:  24  notearg
+00088:  24  call 1
+00091:  24  pop
+00092:  26  name "xs"
+00097:  26  getprop "Factorys"
+00102:  26  getprop "Sprite"
+00107:  26  dup
+00108:  26  callprop "createWithFileName"
+00113:  26  swap
+00114:  26  notearg
+00115:  26  string "tex/logo/logo_title.png"
+00120:  26  notearg
+00121:  26  call 1
+00124:  26  setlocal 0
+00127:  26  pop
+00128:  27  getlocal 0
+00131:  27  dup
+00132:  27  callprop "setAnchorPoint"
+00137:  27  swap
+00138:  27  notearg
+00139:  27  name "xs"
+00144:  27  getprop "ap_c"
+00149:  27  notearg
+00150:  27  call 1
+00153:  27  pop
+00154:  28  name "xs"
+00159:  28  getprop "Utils"
+00164:  28  getprop "Node"
+00169:  28  dup
+00170:  28  callprop "attachNodes"
+00175:  28  swap
+00176:  28  notearg
+00177:  28  this
+00178:  28  notearg
+00179:  28  getlocal 0
+00182:  28  notearg
+00183:  28  newinit 1
+00188:  29  string "c"
+00193:  29  initprop "desc"
+00198:  30  newinit 1
+00203:  30  uint16 172
+00206:  30  initprop "y"
+00211:  30  endinit
+00212:  30  initprop "offset"
+00217:  31  true
+00218:  31  initprop "sc"
+00223:  31  endinit
+00224:  31  notearg
+00225:  31  call 3
+00228:  31  pop
+00229:  34  this
+00230:  34  name "xs"
+00235:  34  getprop "ccb_reader"
+00240:  34  dup
+00241:  34  callprop "load"
+00246:  34  swap
+00247:  34  notearg
+00248:  34  string "ccb3/0_6_4_EnterGame.ccbi"
+00253:  34  notearg
+00254:  34  this
+00255:  34  notearg
+00256:  34  call 2
+00259:  34  setprop "ccbNode"
+00264:  34  pop
+00265:  35  this
+00266:  35  getprop "ccbNode"
+00271:  35  dup
+00272:  35  callprop "setContentSize"
+00277:  35  swap
+00278:  35  notearg
+00279:  35  name "cc"
+00284:  35  dup
+00285:  35  callprop "size"
+00290:  35  swap
+00291:  35  notearg
+00292:  35  uint16 550
+00295:  35  notearg
+00296:  35  uint16 328
+00299:  35  notearg
+00300:  35  call 2
+00303:  35  notearg
+00304:  35  call 1
+00307:  35  pop
+00308:  36  this
+00309:  36  getprop "ccbNode"
+00314:  36  dup
+00315:  36  callprop "setAnchorPoint"
+00320:  36  swap
+00321:  36  notearg
+00322:  36  name "cc"
+00327:  36  dup
+00328:  36  callprop "p"
+00333:  36  swap
+00334:  36  notearg
+00335:  36  double 0.5
+00340:  36  notearg
+00341:  36  zero
+00342:  36  notearg
+00343:  36  call 2
+00346:  36  notearg
+00347:  36  call 1
+00350:  36  pop
+00351:  37  name "xs"
+00356:  37  getprop "Utils"
+00361:  37  getprop "Node"
+00366:  37  dup
+00367:  37  callprop "attachNodes"
+00372:  37  swap
+00373:  37  notearg
+00374:  37  this
+00375:  37  notearg
+00376:  37  this
+00377:  37  getprop "ccbNode"
+00382:  37  notearg
+00383:  37  newinit 1
+00388:  37  string "cb"
+00393:  37  initprop "desc"
+00398:  37  name "cc"
+00403:  37  dup
+00404:  37  callprop "p"
+00409:  37  swap
+00410:  37  notearg
+00411:  37  zero
+00412:  37  notearg
+00413:  37  int8 25
+00415:  37  notearg
+00416:  37  call 2
+00419:  37  initprop "offset"
+00424:  37  true
+00425:  37  initprop "sc"
+00430:  37  endinit
+00431:  37  notearg
+00432:  37  call 3
+00435:  37  pop
+00436:  39  this
+00437:  39  null
+00438:  39  setprop "m_loginType"
+00443:  39  pop
+00444:  40  this
+00445:  40  null
+00446:  40  setprop "m_loginServer"
+00451:  40  pop
+00452:  41  this
+00453:  41  null
+00454:  41  setprop "m_loginTypeTip"
+00459:  41  pop
+00460:  42  this
+00461:  42  null
+00462:  42  setprop "m_loginServerTip"
+00467:  42  pop
+00468:  44  name "xs"
+00473:  44  getprop "Utils"
+00478:  44  getprop "UI"
+00483:  44  dup
+00484:  44  callprop "replaceCcbByCfg"
+00489:  44  swap
+00490:  44  notearg
+00491:  44  this
+00492:  44  getprop "ccbNode"
+00497:  44  notearg
+00498:  44  this
+00499:  44  getprop "cfg"
+00504:  44  getprop "ccbCfg"
+00509:  44  notearg
+00510:  44  this
+00511:  44  notearg
+00512:  44  call 3
+00515:  44  pop
+00516:  46  this
+00517:  46  name "xs"
+00522:  46  getprop "Views"
+00527:  46  getprop "Btn"
+00532:  46  dup
+00533:  46  callprop "createInvisibleWithParent"
+00538:  46  swap
+00539:  46  notearg
+00540:  46  this
+00541:  46  getprop "ccbNode"
+00546:  46  dup
+00547:  46  callprop "getChildByTag"
+00552:  46  swap
+00553:  46  notearg
+00554:  46  uint16 150
+00557:  46  notearg
+00558:  46  call 1
+00561:  46  notearg
+00562:  46  call 1
+00565:  46  setprop "zuizhonglabelBtn"
+00570:  46  pop
+00571:  47  this
+00572:  47  getprop "zuizhonglabelBtn"
+00577:  47  dup
+00578:  47  callprop "addCallBackForEvent"
+00583:  47  swap
+00584:  47  notearg
+00585:  48  this
+00586:  48  notearg
+00587:  49  lambda (function () {
+    [sourceless code]
+})
+00592:  49  notearg
+00593:  49  call 2
+00596:  49  pop
+00597:  55  this
+00598:  55  name "xs"
+00603:  55  getprop "Views"
+00608:  55  getprop "Btn"
+00613:  55  dup
+00614:  55  callprop "createInvisibleWithParent"
+00619:  55  swap
+00620:  55  notearg
+00621:  55  this
+00622:  55  getprop "ccbNode"
+00627:  55  dup
+00628:  55  callprop "getChildByTag"
+00633:  55  swap
+00634:  55  notearg
+00635:  55  uint16 200
+00638:  55  notearg
+00639:  55  call 1
+00642:  55  notearg
+00643:  55  call 1
+00646:  55  setprop "m_checkBtn"
+00651:  55  pop
+00652:  56  this
+00653:  56  getprop "m_checkBtn"
+00658:  56  dup
+00659:  56  callprop "setOnClickCallBack"
+00664:  56  swap
+00665:  56  notearg
+00666:  56  this
+00667:  56  getprop "onCheckBtnClick"
+00672:  56  dup
+00673:  56  callprop "bind"
+00678:  56  swap
+00679:  56  notearg
+00680:  56  this
+00681:  56  notearg
+00682:  56  call 1
+00685:  56  notearg
+00686:  56  call 1
+00689:  56  pop
+00690:  58  this
+00691:  58  getprop "m_loginTypeTip"
+00696:  58  dup
+00697:  58  callprop "setString"
+00702:  58  swap
+00703:  58  notearg
+00704:  58  name "xs"
+00709:  58  getprop "Tools"
+00714:  58  getprop "String"
+00719:  58  dup
+00720:  58  callprop "createString"
+00725:  58  swap
+00726:  58  notearg
+00727:  58  string "changLogin"
+00732:  58  notearg
+00733:  58  call 1
+00736:  58  notearg
+00737:  58  call 1
+00740:  58  pop
+00741:  59  this
+00742:  59  getprop "m_loginServerTip"
+00747:  59  dup
+00748:  59  callprop "setString"
+00753:  59  swap
+00754:  59  notearg
+00755:  59  name "xs"
+00760:  59  getprop "Tools"
+00765:  59  getprop "String"
+00770:  59  dup
+00771:  59  callprop "createString"
+00776:  59  swap
+00777:  59  notearg
+00778:  59  string "changeServer"
+00783:  59  notearg
+00784:  59  call 1
+00787:  59  notearg
+00788:  59  call 1
+00791:  59  pop
+00792:  61  this
+00793:  61  this
+00794:  61  getprop "ccbNode"
+00799:  61  dup
+00800:  61  callprop "getChildByTag"
+00805:  61  swap
+00806:  61  notearg
+00807:  61  int8 10
+00809:  61  notearg
+00810:  61  call 1
+00813:  61  setprop "btn_ChangeLoginType"
+00818:  61  pop
+00819:  62  this
+00820:  62  getprop "btn_ChangeLoginType"
+00825:  62  dup
+00826:  62  callprop "setTouchPriority"
+00831:  62  swap
+00832:  62  notearg
+00833:  62  int8 -1
+00835:  62  notearg
+00836:  62  call 1
+00839:  62  pop
+00840:  63  this
+00841:  63  getprop "btn_ChangeLoginType"
+00846:  63  dup
+00847:  63  callprop "setZoomOnTouchDown"
+00852:  63  swap
+00853:  63  notearg
+00854:  63  false
+00855:  63  notearg
+00856:  63  call 1
+00859:  63  pop
+00860:  64  this
+00861:  64  getprop "btn_ChangeLoginType"
+00866:  64  dup
+00867:  64  callprop "addTargetWithActionForControlEvents"
+00872:  64  swap
+00873:  64  notearg
+00874:  64  this
+00875:  64  notearg
+00876:  64  this
+00877:  64  getprop "showLoginDialogFromControlBtn"
+00882:  64  notearg
+00883:  64  name "cc"
+00888:  64  getprop "CONTROL_EVENT_TOUCH_UP_INSIDE"
+00893:  64  notearg
+00894:  64  call 3
+00897:  64  pop
+00898:  66  this
+00899:  66  this
+00900:  66  getprop "ccbNode"
+00905:  66  dup
+00906:  66  callprop "getChildByTag"
+00911:  66  swap
+00912:  66  notearg
+00913:  66  int8 11
+00915:  66  notearg
+00916:  66  call 1
+00919:  66  setprop "btn_ChangeLoginServer"
+00924:  66  pop
+00925:  67  this
+00926:  67  getprop "btn_ChangeLoginServer"
+00931:  67  dup
+00932:  67  callprop "setTouchPriority"
+00937:  67  swap
+00938:  67  notearg
+00939:  67  int8 -1
+00941:  67  notearg
+00942:  67  call 1
+00945:  67  pop
+00946:  68  this
+00947:  68  getprop "btn_ChangeLoginServer"
+00952:  68  dup
+00953:  68  callprop "setZoomOnTouchDown"
+00958:  68  swap
+00959:  68  notearg
+00960:  68  false
+00961:  68  notearg
+00962:  68  call 1
+00965:  68  pop
+00966:  69  this
+00967:  69  getprop "btn_ChangeLoginServer"
+00972:  69  dup
+00973:  69  callprop "addTargetWithActionForControlEvents"
+00978:  69  swap
+00979:  69  notearg
+00980:  69  this
+00981:  69  notearg
+00982:  69  this
+00983:  69  getprop "onClick_changeLoginServer"
+00988:  69  notearg
+00989:  69  name "cc"
+00994:  69  getprop "CONTROL_EVENT_TOUCH_UP_INSIDE"
+00999:  69  notearg
+01000:  69  call 3
+01003:  69  pop
+01004:  71  this
+01005:  71  this
+01006:  71  getprop "ccbNode"
+01011:  71  dup
+01012:  71  callprop "getChildByTag"
+01017:  71  swap
+01018:  71  notearg
+01019:  71  int8 12
+01021:  71  notearg
+01022:  71  call 1
+01025:  71  setprop "btn_StartLogin"
+01030:  71  pop
+01031:  72  this
+01032:  72  getprop "btn_StartLogin"
+01037:  72  dup
+01038:  72  callprop "setTouchPriority"
+01043:  72  swap
+01044:  72  notearg
+01045:  72  zero
+01046:  72  notearg
+01047:  72  call 1
+01050:  72  pop
+01051:  73  this
+01052:  73  getprop "btn_StartLogin"
+01057:  73  dup
+01058:  73  callprop "addTargetWithActionForControlEvents"
+01063:  73  swap
+01064:  73  notearg
+01065:  73  this
+01066:  73  notearg
+01067:  73  this
+01068:  73  getprop "onClick_start_get_role"
+01073:  73  notearg
+01074:  73  name "cc"
+01079:  73  getprop "CONTROL_EVENT_TOUCH_UP_INSIDE"
+01084:  73  notearg
+01085:  73  call 3
+01088:  73  pop
+01089:  76  this
+01090:  76  getprop "m_loginType"
+01095:  76  dup
+01096:  76  callprop "setString"
+01101:  76  swap
+01102:  76  notearg
+01103:  76  name "xs"
+01108:  76  getprop "Tools"
+01113:  76  getprop "String"
+01118:  76  dup
+01119:  76  callprop "createString"
+01124:  76  swap
+01125:  76  notearg
+01126:  76  string "bfLogin"
+01131:  76  notearg
+01132:  76  call 1
+01135:  76  notearg
+01136:  76  call 1
+01139:  76  pop
+01140:  79  name "xs"
+01145:  79  getprop "Factorys"
+01150:  79  getprop "Label"
+01155:  79  dup
+01156:  79  callprop "createByStyleId"
+01161:  79  swap
+01162:  79  notearg
+01163:  79  string "LS_shuxing1"
+01168:  79  notearg
+01169:  79  call 1
+01172:  79  setlocal 1
+01175:  79  pop
+01176:  80  getlocal 1
+01179:  80  dup
+01180:  80  callprop "setString"
+01185:  80  swap
+01186:  80  notearg
+01187:  80  name "xs"
+01192:  80  getprop "Tools"
+01197:  80  getprop "Sys"
+01202:  80  dup
+01203:  80  callprop "getVersionDesc"
+01208:  80  swap
+01209:  80  notearg
+01210:  80  call 0
+01213:  80  notearg
+01214:  80  call 1
+01217:  80  pop
+01218:  81  getlocal 1
+01221:  81  dup
+01222:  81  callprop "setAligns"
+01227:  81  swap
+01228:  81  notearg
+01229:  81  name "xs"
+01234:  81  getprop "AlignH_Left"
+01239:  81  notearg
+01240:  81  name "xs"
+01245:  81  getprop "AlignV_Bottom"
+01250:  81  notearg
+01251:  81  call 2
+01254:  81  pop
+01255:  82  name "xs"
+01260:  82  getprop "Utils"
+01265:  82  getprop "Node"
+01270:  82  dup
+01271:  82  callprop "attachNodes"
+01276:  82  swap
+01277:  82  notearg
+01278:  82  this
+01279:  82  notearg
+01280:  82  getlocal 1
+01283:  82  notearg
+01284:  82  newinit 1
+01289:  82  string "lb"
+01294:  82  initprop "desc"
+01299:  82  true
+01300:  82  initprop "sc"
+01305:  82  newinit 1
+01310:  82  zero
+01311:  82  initprop "x"
+01316:  82  zero
+01317:  82  initprop "y"
+01322:  82  endinit
+01323:  82  initprop "offset"
+01328:  82  endinit
+01329:  82  notearg
+01330:  82  call 3
+01333:  82  pop
+01334:  85  name "xs"
+01339:  85  getprop "Tools"
+01344:  85  getprop "Jsb"
+01349:  85  getprop "EasySdk"
+01354:  85  dup
+01355:  85  callprop "isSupportFunction"
+01360:  85  swap
+01361:  85  notearg
+01362:  85  string "Account"
+01367:  85  notearg
+01368:  85  string "switch"
+01373:  85  notearg
+01374:  85  call 2
+01377:  85  setlocal 2
+01380:  85  pop
+01381:  86  name "xs"
+01386:  86  getprop "Tools"
+01391:  86  getprop "Jsb"
+01396:  86  getprop "EasySdk"
+01401:  86  dup
+01402:  86  callprop "isSupportFunction"
+01407:  86  swap
+01408:  86  notearg
+01409:  86  string "Account"
+01414:  86  notearg
+01415:  86  string "logout"
+01420:  86  notearg
+01421:  86  call 2
+01424:  86  setlocal 3
+01427:  86  pop
+01428:  88  getlocal 2
+01431:  88  not
+01432:  88  and 1442 (+10)
+01437:  88  pop
+01438:  88  getlocal 3
+01441:  88  not
+01442:  88  ifeq 1507 (+65)
+01447:  89  this
+01448:  89  getprop "m_loginType"
+01453:  89  dup
+01454:  89  callprop "setVisible"
+01459:  89  swap
+01460:  89  notearg
+01461:  89  false
+01462:  89  notearg
+01463:  89  call 1
+01466:  89  pop
+01467:  90  this
+01468:  90  getprop "m_loginTypeTip"
+01473:  90  dup
+01474:  90  callprop "setVisible"
+01479:  90  swap
+01480:  90  notearg
+01481:  90  false
+01482:  90  notearg
+01483:  90  call 1
+01486:  90  pop
+01487:  91  this
+01488:  91  getprop "btn_ChangeLoginType"
+01493:  91  dup
+01494:  91  callprop "setVisible"
+01499:  91  swap
+01500:  91  notearg
+01501:  91  false
+01502:  91  notearg
+01503:  91  call 1
+01506:  91  pop
+01507:  95  true
+01508:  95  return
+01509:  95  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:16 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  51  name "xs"
+00005:  51  getprop "Views"
+00010:  51  getprop "Mgr"
+00015:  51  dup
+00016:  51  callprop "showDialogByName"
+00021:  51  swap
+00022:  51  notearg
+00023:  51  string "Announcement"
+00028:  51  notearg
+00029:  51  name "xs"
+00034:  51  getprop "Constant_SettingType_ZuiZhongXieYi"
+00039:  51  notearg
+00040:  51  call 2
+00043:  51  pop
+00044:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:49 ---
+;; function object[2] onEnterTransitionDidFinish
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:98 ---
+loc   line  op
+----- ----  --
+main:
+00000:  99  this
+00001:  99  dup
+00002:  99  callprop "_super"
+00007:  99  swap
+00008:  99  notearg
+00009:  99  call 0
+00012:  99  pop
+00013: 100  name "xs"
+00018: 100  getprop "Utils"
+00023: 100  getprop "Notify"
+00028: 100  dup
+00029: 100  callprop "addObserver"
+00034: 100  swap
+00035: 100  notearg
+00036: 100  this
+00037: 100  notearg
+00038: 100  this
+00039: 100  getprop "onEasySdkLoginSuccess"
+00044: 100  notearg
+00045: 100  name "xs"
+00050: 100  getprop "EasySdk"
+00055: 100  getprop "Account"
+00060: 100  getprop "Const"
+00065: 100  getprop "Notify_Event"
+00070: 100  getprop "Easy"
+00075: 100  getprop "CmnAccount"
+00080: 100  notearg
+00081: 100  call 3
+00084: 100  pop
+00085: 102  this
+00086: 102  getprop "m_loginParams"
+00091: 102  ifeq 121 (+30)
+00096: 104  this
+00097: 104  dup
+00098: 104  callprop "onEasySdkLoginSuccess"
+00103: 104  swap
+00104: 104  notearg
+00105: 104  this
+00106: 104  getprop "m_loginParams"
+00111: 104  notearg
+00112: 104  call 1
+00115: 104  pop
+00116: 104  goto 134 (+18)
+00121: 108  this
+00122: 108  dup
+00123: 108  callprop "_startLogin"
+00128: 108  swap
+00129: 108  notearg
+00130: 108  call 0
+00133: 108  pop
+00134: 109  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:98 ---
+;; function object[3] onExitTransitionDidStart
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:113 ---
+loc   line  op
+----- ----  --
+main:
+00000: 114  name "xs"
+00005: 114  getprop "Utils"
+00010: 114  getprop "Notify"
+00015: 114  dup
+00016: 114  callprop "removeObserver"
+00021: 114  swap
+00022: 114  notearg
+00023: 114  this
+00024: 114  notearg
+00025: 114  name "xs"
+00030: 114  getprop "EasySdk"
+00035: 114  getprop "Account"
+00040: 114  getprop "Const"
+00045: 114  getprop "Notify_Event"
+00050: 114  getprop "Easy"
+00055: 114  getprop "CmnAccount"
+00060: 114  notearg
+00061: 114  call 2
+00064: 114  pop
+00065: 115  this
+00066: 115  dup
+00067: 115  callprop "_super"
+00072: 115  swap
+00073: 115  notearg
+00074: 115  call 0
+00077: 115  pop
+00078: 115  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:113 ---
+;; function object[4] _isAlreadyLogined
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:119 ---
+loc   line  op
+----- ----  --
+main:
+00000: 121  name "xs"
+00005: 121  getprop "Tools"
+00010: 121  getprop "Jsb"
+00015: 121  getprop "EasySdk"
+00020: 121  getprop "Account"
+00025: 121  dup
+00026: 121  callprop "isLogined"
+00031: 121  swap
+00032: 121  notearg
+00033: 121  call 0
+00036: 121  return
+00037: 121  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:119 ---
+;; function object[5] onCheckBtnClick
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:124 ---
+loc   line  op
+----- ----  --
+main:
+00000: 125  this
+00001: 125  getprop "ccbNode"
+00006: 125  dup
+00007: 125  callprop "getChildByTag"
+00012: 125  swap
+00013: 125  notearg
+00014: 125  uint16 201
+00017: 125  notearg
+00018: 125  call 1
+00021: 125  dup
+00022: 125  callprop "isVisible"
+00027: 125  swap
+00028: 125  notearg
+00029: 125  call 0
+00032: 125  ifeq 77 (+45)
+00037: 126  this
+00038: 126  getprop "ccbNode"
+00043: 126  dup
+00044: 126  callprop "getChildByTag"
+00049: 126  swap
+00050: 126  notearg
+00051: 126  uint16 201
+00054: 126  notearg
+00055: 126  call 1
+00058: 126  dup
+00059: 126  callprop "setVisible"
+00064: 126  swap
+00065: 126  notearg
+00066: 126  false
+00067: 126  notearg
+00068: 126  call 1
+00071: 126  pop
+00072: 126  goto 112 (+40)
+00077: 128  this
+00078: 128  getprop "ccbNode"
+00083: 128  dup
+00084: 128  callprop "getChildByTag"
+00089: 128  swap
+00090: 128  notearg
+00091: 128  uint16 201
+00094: 128  notearg
+00095: 128  call 1
+00098: 128  dup
+00099: 128  callprop "setVisible"
+00104: 128  swap
+00105: 128  notearg
+00106: 128  true
+00107: 128  notearg
+00108: 128  call 1
+00111: 128  pop
+00112: 129  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:124 ---
+;; function object[6] _startLogin
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:132 ---
+loc   line  op
+----- ----  --
+main:
+00000: 134  this
+00001: 134  getprop "ccbNode"
+00006: 134  dup
+00007: 134  callprop "getChildByTag"
+00012: 134  swap
+00013: 134  notearg
+00014: 134  uint16 201
+00017: 134  notearg
+00018: 134  call 1
+00021: 134  dup
+00022: 134  callprop "isVisible"
+00027: 134  swap
+00028: 134  notearg
+00029: 134  call 0
+00032: 134  not
+00033: 134  ifeq 100 (+67)
+00038: 135  name "xs"
+00043: 135  getprop "Views"
+00048: 135  getprop "Mgr"
+00053: 135  dup
+00054: 135  callprop "showToast"
+00059: 135  swap
+00060: 135  notearg
+00061: 135  name "xs"
+00066: 135  getprop "Tools"
+00071: 135  getprop "String"
+00076: 135  dup
+00077: 135  callprop "createString"
+00082: 135  swap
+00083: 135  notearg
+00084: 135  string "hintStr_3rd_ZuiZhongXieYi"
+00089: 135  notearg
+00090: 135  call 1
+00093: 135  notearg
+00094: 135  call 1
+00097: 135  pop
+00098: 136  undefined
+00099: 136  return
+00100: 138  name "xs"
+00105: 138  dup
+00106: 138  callprop "log_zj"
+00111: 138  swap
+00112: 138  notearg
+00113: 138  string " step1 startLogin "
+00118: 138  notearg
+00119: 138  call 1
+00122: 138  pop
+00123: 139  name "xs"
+00128: 139  getprop "Tools"
+00133: 139  getprop "Jsb"
+00138: 139  getprop "EasySdk"
+00143: 139  getprop "Account"
+00148: 139  dup
+00149: 139  callprop "login"
+00154: 139  swap
+00155: 139  notearg
+00156: 139  call 0
+00159: 139  pop
+00160: 139  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:132 ---
+;; function object[7] setServerInfoToGame
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] curServerInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:143 ---
+loc   line  op
+----- ----  --
+main:
+00000: 145  name "xs"
+00005: 145  getprop "Profile"
+00010: 145  getprop "UserCfg"
+00015: 145  dup
+00016: 145  callprop "setGameAddr"
+00021: 145  swap
+00022: 145  notearg
+00023: 145  newinit 1
+00028: 146  getarg 0
+00031: 146  getprop "server_title"
+00036: 146  initprop "name"
+00041: 147  getarg 0
+00044: 147  getprop "server_url"
+00049: 147  initprop "domain"
+00054: 148  getarg 0
+00057: 148  getprop "server_id"
+00062: 148  initprop "id"
+00067: 148  endinit
+00068: 148  notearg
+00069: 148  call 1
+00072: 148  pop
+00073: 152  name "xs"
+00078: 152  getprop "Profile"
+00083: 152  getprop "GameData"
+00088: 152  getprop "Player"
+00093: 152  getarg 0
+00096: 152  getprop "server_id"
+00101: 152  setprop "g_serverId"
+00106: 152  pop
+00107: 153  name "xs"
+00112: 153  getprop "Profile"
+00117: 153  getprop "GameData"
+00122: 153  getprop "Player"
+00127: 153  getarg 0
+00130: 153  getprop "server_url"
+00135: 153  setprop "g_serverURL"
+00140: 153  pop
+00141: 153  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:143 ---
+;; function object[8] onClick_start_get_role
+;; function metadata object[8] nargs=0 bindings=2
+;; local[0] _isAlreadyLogined
+;; local[1] cfgVersion
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=323 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:157 ---
+loc   line  op
+----- ----  --
+main:
+00000: 159  name "xs"
+00005: 159  dup
+00006: 159  callprop "log_zj"
+00011: 159  swap
+00012: 159  notearg
+00013: 159  string " step5 start get role "
+00018: 159  notearg
+00019: 159  call 1
+00022: 159  pop
+00023: 162  this
+00024: 162  dup
+00025: 162  callprop "_isAlreadyLogined"
+00030: 162  swap
+00031: 162  notearg
+00032: 162  call 0
+00035: 162  setlocal 0
+00038: 162  pop
+00039: 163  name "xs"
+00044: 163  dup
+00045: 163  callprop "log"
+00050: 163  swap
+00051: 163  notearg
+00052: 163  string " _isAlreadyLogined = "
+00057: 163  getlocal 0
+00060: 163  add
+00061: 163  notearg
+00062: 163  call 1
+00065: 163  pop
+00066: 164  getlocal 0
+00069: 164  not
+00070: 164  ifeq 101 (+31)
+00075: 165  this
+00076: 165  dup
+00077: 165  callprop "_startLogin"
+00082: 165  swap
+00083: 165  notearg
+00084: 165  name "xs"
+00089: 165  getprop "Constant_LoginFunType_AccountLoginIn"
+00094: 165  notearg
+00095: 165  call 1
+00098: 165  pop
+00099: 166  undefined
+00100: 166  return
+00101: 170  name "xs"
+00106: 170  getprop "Tools"
+00111: 170  getprop "CfgData"
+00116: 170  dup
+00117: 170  callprop "getGlobalConf"
+00122: 170  swap
+00123: 170  notearg
+00124: 170  string "CfgVersion"
+00129: 170  notearg
+00130: 170  string ""
+00135: 170  notearg
+00136: 170  call 2
+00139: 170  setlocal 1
+00142: 170  pop
+00143: 172  name "xs"
+00148: 172  dup
+00149: 172  callprop "dump"
+00154: 172  swap
+00155: 172  notearg
+00156: 172  string "cfgVersion"
+00161: 172  notearg
+00162: 172  getlocal 1
+00165: 172  notearg
+00166: 172  call 2
+00169: 172  pop
+00170: 174  name "xs"
+00175: 174  getprop "Tools"
+00180: 174  getprop "Net"
+00185: 174  dup
+00186: 174  callprop "requestLogin"
+00191: 174  swap
+00192: 174  notearg
+00193: 174  newinit 1
+00198: 175  name "xs"
+00203: 175  getprop "Profile"
+00208: 175  getprop "UserCfg"
+00213: 175  dup
+00214: 175  callprop "readProductId"
+00219: 175  swap
+00220: 175  notearg
+00221: 175  call 0
+00224: 175  initprop "app_indentify"
+00229: 176  true
+00230: 176  initprop "forcepush"
+00235: 177  this
+00236: 177  getprop "m_server_info"
+00241: 177  dup
+00242: 177  callprop "getInfo"
+00247: 177  swap
+00248: 177  notearg
+00249: 177  call 0
+00252: 177  getprop "server_params"
+00257: 177  initprop "server_params"
+00262: 178  getlocal 1
+00265: 178  initprop "cfg_version"
+00270: 179  this
+00271: 179  getprop "m_account_info"
+00276: 179  dup
+00277: 179  callprop "getAccountId"
+00282: 179  swap
+00283: 179  notearg
+00284: 179  call 0
+00287: 179  initprop "account_uid"
+00292: 180  this
+00293: 180  getprop "m_account_info"
+00298: 180  dup
+00299: 180  callprop "getToken"
+00304: 180  swap
+00305: 180  notearg
+00306: 180  call 0
+00309: 180  initprop "token"
+00314: 180  endinit
+00315: 180  notearg
+00316: 182  this
+00317: 182  getprop "onResp_getPlayerInfoSuccess"
+00322: 182  notearg
+00323: 183  lambda (function () {
+    [sourceless code]
+})
+00328: 183  notearg
+00329: 203  this
+00330: 203  notearg
+00331: 203  call 4
+00334: 203  pop
+00335: 204  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:157 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] params
+
+;; nested bytecode depth=2
+;; FUNCTION-MAP kind=lambda offset=89 object[0]
+;; FUNCTION-MAP kind=lambda offset=108 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:183 ---
+loc   line  op
+----- ----  --
+main:
+00000: 184  name "xs"
+00005: 184  dup
+00006: 184  callprop "dump"
+00011: 184  swap
+00012: 184  notearg
+00013: 184  string "_params"
+00018: 184  notearg
+00019: 184  getarg 0
+00022: 184  notearg
+00023: 184  call 2
+00026: 184  pop
+00027: 185  getarg 0
+00030: 185  getprop "error_code"
+00035: 185  string "e_10011"
+00040: 185  stricteq
+00041: 185  ifeq 122 (+81)
+00046: 187  name "xs"
+00051: 187  getprop "Tools"
+00056: 187  getprop "Net"
+00061: 187  dup
+00062: 187  callprop "requestSGSConfig"
+00067: 187  swap
+00068: 187  notearg
+00069: 188  newinit 1
+00074: 188  getarg 0
+00077: 188  getprop "download_url"
+00082: 188  initprop "download_url"
+00087: 188  endinit
+00088: 188  notearg
+00089: 189  lambda (function () {
+    [sourceless code]
+})
+00094: 189  dup
+00095: 189  callprop "bind"
+00100: 189  swap
+00101: 189  notearg
+00102: 193  this
+00103: 193  notearg
+00104: 193  call 1
+00107: 193  notearg
+00108: 194  lambda (function () {
+    [sourceless code]
+})
+00113: 194  notearg
+00114: 197  this
+00115: 197  notearg
+00116: 197  call 4
+00119: 197  pop
+00120: 199  true
+00121: 199  return
+00122: 201  false
+00123: 201  return
+00124: 201  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:183 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:189 ---
+loc   line  op
+----- ----  --
+main:
+00000: 190  name "xs"
+00005: 190  dup
+00006: 190  callprop "log"
+00011: 190  swap
+00012: 190  notearg
+00013: 190  string "enter game!"
+00018: 190  notearg
+00019: 190  call 1
+00022: 190  pop
+00023: 191  name "xs"
+00028: 191  getprop "Utils"
+00033: 191  dup
+00034: 191  callprop "require"
+00039: 191  swap
+00040: 191  notearg
+00041: 191  name "xs"
+00046: 191  getprop "Cfg"
+00051: 191  getprop "System"
+00056: 191  getprop "files_generated_by_server"
+00061: 191  notearg
+00062: 191  call 1
+00065: 191  pop
+00066: 192  this
+00067: 192  dup
+00068: 192  callprop "onClick_start_get_role"
+00073: 192  swap
+00074: 192  notearg
+00075: 192  call 0
+00078: 192  pop
+00079: 192  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:189 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:194 ---
+loc   line  op
+----- ----  --
+main:
+00000: 195  name "xs"
+00005: 195  getprop "Views"
+00010: 195  getprop "Mgr"
+00015: 195  dup
+00016: 195  callprop "showToast"
+00021: 195  swap
+00022: 195  notearg
+00023: 195  name "xs"
+00028: 195  getprop "Tools"
+00033: 195  getprop "String"
+00038: 195  dup
+00039: 195  callprop "createString"
+00044: 195  swap
+00045: 195  notearg
+00046: 195  string "auto_name_103"
+00051: 195  notearg
+00052: 195  call 1
+00055: 195  notearg
+00056: 195  call 1
+00059: 195  pop
+00060: 195  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:194 ---
+;; function object[9] onResp_getPlayerInfoSuccess
+;; function metadata object[9] nargs=1 bindings=1
+;; arg[0] jsonObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:208 ---
+loc   line  op
+----- ----  --
+main:
+00000: 209  name "xs"
+00005: 209  getprop "Scene"
+00010: 209  getprop "Login"
+00015: 209  getprop "onGetPlayerInfoSuccess"
+00020: 209  dup
+00021: 209  callprop "apply"
+00026: 209  swap
+00027: 209  notearg
+00028: 209  this
+00029: 209  notearg
+00030: 209  newarray 1
+00034: 209  getarg 0
+00037: 209  initelem_array 0
+00041: 209  endinit
+00042: 209  notearg
+00043: 209  funapply 2
+00046: 209  pop
+00047: 209  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:208 ---
+;; function object[10] showLoginDialogFromControlBtn
+;; function metadata object[10] nargs=0 bindings=3
+;; local[0] str_isPlayerLogined
+;; local[1] isHaveSwitchAccount
+;; local[2] isHaveLogout
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:213 ---
+loc   line  op
+----- ----  --
+main:
+00000: 214  name "xs"
+00005: 214  getprop "Tools"
+00010: 214  getprop "Jsb"
+00015: 214  getprop "EasySdk"
+00020: 214  getprop "Account"
+00025: 214  dup
+00026: 214  callprop "isLogined"
+00031: 214  swap
+00032: 214  notearg
+00033: 214  call 0
+00036: 214  setlocal 0
+00039: 214  pop
+00040: 215  getlocal 0
+00043: 215  not
+00044: 215  ifeq 67 (+23)
+00049: 217  this
+00050: 217  dup
+00051: 217  callprop "_startLogin"
+00056: 217  swap
+00057: 217  notearg
+00058: 217  call 0
+00061: 217  pop
+00062: 217  goto 270 (+208)
+00067: 221  name "xs"
+00072: 221  getprop "Tools"
+00077: 221  getprop "Jsb"
+00082: 221  getprop "EasySdk"
+00087: 221  dup
+00088: 221  callprop "isSupportFunction"
+00093: 221  swap
+00094: 221  notearg
+00095: 221  string "Account"
+00100: 221  notearg
+00101: 221  string "switch"
+00106: 221  notearg
+00107: 221  call 2
+00110: 221  setlocal 1
+00113: 221  pop
+00114: 222  name "xs"
+00119: 222  getprop "Tools"
+00124: 222  getprop "Jsb"
+00129: 222  getprop "EasySdk"
+00134: 222  dup
+00135: 222  callprop "isSupportFunction"
+00140: 222  swap
+00141: 222  notearg
+00142: 222  string "Account"
+00147: 222  notearg
+00148: 222  string "logout"
+00153: 222  notearg
+00154: 222  call 2
+00157: 222  setlocal 2
+00160: 222  pop
+00161: 224  getlocal 1
+00164: 224  ifeq 218 (+54)
+00169: 225  name "xs"
+00174: 225  getprop "Tools"
+00179: 225  getprop "Jsb"
+00184: 225  getprop "EasySdk"
+00189: 225  dup
+00190: 225  callprop "callFunction"
+00195: 225  swap
+00196: 225  notearg
+00197: 225  string "Account"
+00202: 225  notearg
+00203: 225  string "switch"
+00208: 225  notearg
+00209: 225  call 2
+00212: 225  pop
+00213: 225  goto 270 (+57)
+00218: 227  getlocal 2
+00221: 227  ifeq 270 (+49)
+00226: 228  name "xs"
+00231: 228  getprop "Tools"
+00236: 228  getprop "Jsb"
+00241: 228  getprop "EasySdk"
+00246: 228  dup
+00247: 228  callprop "callFunction"
+00252: 228  swap
+00253: 228  notearg
+00254: 228  string "Account"
+00259: 228  notearg
+00260: 228  string "logout"
+00265: 228  notearg
+00266: 228  call 2
+00269: 228  pop
+00270: 230  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:213 ---
+;; function object[11] onClick_changeLoginServer
+;; function metadata object[11] nargs=0 bindings=2
+;; local[0] str_isPlayerLogined
+;; local[1] _callback_onChangeServerViewReturn
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=64 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:235 ---
+loc   line  op
+----- ----  --
+main:
+00000: 237  name "xs"
+00005: 237  getprop "Tools"
+00010: 237  getprop "Jsb"
+00015: 237  getprop "EasySdk"
+00020: 237  getprop "Account"
+00025: 237  dup
+00026: 237  callprop "isLogined"
+00031: 237  swap
+00032: 237  notearg
+00033: 237  call 0
+00036: 237  setlocal 0
+00039: 237  pop
+00040: 238  getlocal 0
+00043: 238  not
+00044: 238  ifeq 64 (+20)
+00049: 239  this
+00050: 239  dup
+00051: 239  callprop "_startLogin"
+00056: 239  swap
+00057: 239  notearg
+00058: 239  call 0
+00061: 239  pop
+00062: 240  undefined
+00063: 240  return
+00064: 243  lambda (function () {
+    [sourceless code]
+})
+00069: 243  setlocal 1
+00072: 243  pop
+00073: 258  this
+00074: 258  getprop "ccbNode"
+00079: 258  dup
+00080: 258  callprop "setVisible"
+00085: 258  swap
+00086: 258  notearg
+00087: 258  false
+00088: 258  notearg
+00089: 258  call 1
+00092: 258  pop
+00093: 259  this
+00094: 259  name "xs"
+00099: 259  getprop "Views"
+00104: 259  getprop "ServerSelectView"
+00109: 259  dup
+00110: 259  callprop "create"
+00115: 259  swap
+00116: 259  notearg
+00117: 259  this
+00118: 259  getprop "m_server_info"
+00123: 259  dup
+00124: 259  callprop "getInfo"
+00129: 259  swap
+00130: 259  notearg
+00131: 259  call 0
+00134: 259  notearg
+00135: 259  call 1
+00138: 259  setprop "serverSelView"
+00143: 259  pop
+00144: 260  this
+00145: 260  getprop "serverSelView"
+00150: 260  dup
+00151: 260  callprop "registerCallBack"
+00156: 260  swap
+00157: 260  notearg
+00158: 260  getlocal 1
+00161: 260  dup
+00162: 260  callprop "bind"
+00167: 260  swap
+00168: 260  notearg
+00169: 260  this
+00170: 260  notearg
+00171: 260  call 1
+00174: 260  notearg
+00175: 260  call 1
+00178: 260  pop
+00179: 261  this
+00180: 261  dup
+00181: 261  callprop "addChild"
+00186: 261  swap
+00187: 261  notearg
+00188: 261  this
+00189: 261  getprop "serverSelView"
+00194: 261  notearg
+00195: 261  call 1
+00198: 261  pop
+00199: 261  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:235 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=3 bindings=3
+;; arg[0] serverData
+;; arg[1] selectIdx
+;; arg[2] isHistory
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:243 ---
+loc   line  op
+----- ----  --
+main:
+00000: 245  name "xs"
+00005: 245  dup
+00006: 245  callprop "log"
+00011: 245  swap
+00012: 245  notearg
+00013: 245  string "_callback_onChangeServerViewReturn:"
+00018: 245  getarg 1
+00021: 245  add
+00022: 245  string "|"
+00027: 245  add
+00028: 245  getarg 2
+00031: 245  add
+00032: 245  notearg
+00033: 245  call 1
+00036: 245  pop
+00037: 247  this
+00038: 247  getprop "m_server_info"
+00043: 247  dup
+00044: 247  callprop "setCurServer"
+00049: 247  swap
+00050: 247  notearg
+00051: 247  getarg 1
+00054: 247  notearg
+00055: 247  getarg 2
+00058: 247  notearg
+00059: 247  call 2
+00062: 247  pop
+00063: 250  this
+00064: 250  dup
+00065: 250  callprop "setServerInfoToGame"
+00070: 250  swap
+00071: 250  notearg
+00072: 250  this
+00073: 250  getprop "m_server_info"
+00078: 250  dup
+00079: 250  callprop "getCurServerInfo"
+00084: 250  swap
+00085: 250  notearg
+00086: 250  call 0
+00089: 250  notearg
+00090: 250  call 1
+00093: 250  pop
+00094: 253  this
+00095: 253  getprop "ccbNode"
+00100: 253  dup
+00101: 253  callprop "setVisible"
+00106: 253  swap
+00107: 253  notearg
+00108: 253  true
+00109: 253  notearg
+00110: 253  call 1
+00113: 253  pop
+00114: 254  this
+00115: 254  getprop "serverSelView"
+00120: 254  dup
+00121: 254  callprop "removeFromParent"
+00126: 254  swap
+00127: 254  notearg
+00128: 254  true
+00129: 254  notearg
+00130: 254  call 1
+00133: 254  pop
+00134: 255  this
+00135: 255  dup
+00136: 255  callprop "updateCurServerView"
+00141: 255  swap
+00142: 255  notearg
+00143: 255  this
+00144: 255  getprop "curSelServer"
+00149: 255  notearg
+00150: 255  call 1
+00153: 255  pop
+00154: 255  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:243 ---
+;; function object[12] updateCurServerView
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:267 ---
+loc   line  op
+----- ----  --
+main:
+00000: 268  this
+00001: 268  getprop "m_loginServer"
+00006: 268  dup
+00007: 268  callprop "setString"
+00012: 268  swap
+00013: 268  notearg
+00014: 268  this
+00015: 268  getprop "m_server_info"
+00020: 268  dup
+00021: 268  callprop "getCurServerName"
+00026: 268  swap
+00027: 268  notearg
+00028: 268  call 0
+00031: 268  notearg
+00032: 268  call 1
+00035: 268  pop
+00036: 268  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:267 ---
+;; function object[13] onEasySdkLoginSuccess
+;; function metadata object[13] nargs=1 bindings=3
+;; arg[0] params
+;; local[0] _jsonSuccessMsg
+;; local[1] _loginType
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=421 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:271 ---
+loc   line  op
+----- ----  --
+main:
+00000: 276  getarg 0
+00003: 276  getprop "code"
+00008: 276  condswitch
+00009: 278  name "xs"
+00014: 278  getprop "EasySdk"
+00019: 278  getprop "Account"
+00024: 278  getprop "Protocol"
+00029: 278  getprop "Const_Account_Login_Success"
+00034: 278  case 194 (+160)
+00039: 307  name "xs"
+00044: 307  getprop "EasySdk"
+00049: 307  getprop "Account"
+00054: 307  getprop "Protocol"
+00059: 307  getprop "Const_Account_Login_Cancel"
+00064: 307  case 438 (+374)
+00069: 311  name "xs"
+00074: 311  getprop "EasySdk"
+00079: 311  getprop "Account"
+00084: 311  getprop "Protocol"
+00089: 311  getprop "Const_Account_Login_NoNeed"
+00094: 311  case 466 (+372)
+00099: 315  name "xs"
+00104: 315  getprop "EasySdk"
+00109: 315  getprop "Account"
+00114: 315  getprop "Protocol"
+00119: 315  getprop "Const_Account_Login_Timeout"
+00124: 315  case 494 (+370)
+00129: 320  name "xs"
+00134: 320  getprop "EasySdk"
+00139: 320  getprop "Account"
+00144: 320  getprop "Protocol"
+00149: 320  getprop "Const_Account_Login_Fail"
+00154: 320  case 522 (+368)
+00159: 325  name "xs"
+00164: 325  getprop "EasySdk"
+00169: 325  getprop "Account"
+00174: 325  getprop "Protocol"
+00179: 325  getprop "Const_Account_Login_Exception"
+00184: 325  case 550 (+366)
+00189: 325  default 578 (+389)
+00194: 280  name "JSON"
+00199: 280  dup
+00200: 280  callprop "parse"
+00205: 280  swap
+00206: 280  notearg
+00207: 280  getarg 0
+00210: 280  getprop "msg"
+00215: 280  notearg
+00216: 280  call 1
+00219: 280  setlocal 0
+00222: 280  pop
+00223: 283  name "xs"
+00228: 283  getprop "Profile"
+00233: 283  getprop "GameData"
+00238: 283  getprop "Mgr"
+00243: 283  dup
+00244: 283  callprop "releaseInstance"
+00249: 283  swap
+00250: 283  notearg
+00251: 283  call 0
+00254: 283  pop
+00255: 284  name "xs"
+00260: 284  getprop "Scene"
+00265: 284  getprop "Mgr"
+00270: 284  dup
+00271: 284  callprop "removeAllStatus"
+00276: 284  swap
+00277: 284  notearg
+00278: 284  call 0
+00281: 284  pop
+00282: 286  name "xs"
+00287: 286  getprop "Const_App_Account_Sys_EasySdk"
+00292: 286  setlocal 1
+00295: 286  pop
+00296: 288  name "xs"
+00301: 288  dup
+00302: 288  callprop "log_zj"
+00307: 288  swap
+00308: 288  notearg
+00309: 288  string " easysdk step3 request ServerList"
+00314: 288  notearg
+00315: 288  call 1
+00318: 288  pop
+00319: 290  name "xs"
+00324: 290  getprop "Tools"
+00329: 290  getprop "Net"
+00334: 290  dup
+00335: 290  callprop "requestGetServerList"
+00340: 290  swap
+00341: 290  notearg
+00342: 291  newinit 1
+00347: 292  getlocal 0
+00350: 292  getprop "easy_uid"
+00355: 292  initprop "uid"
+00360: 293  getlocal 1
+00363: 293  initprop "logintype"
+00368: 294  name "xs"
+00373: 294  getprop "Profile"
+00378: 294  getprop "UserCfg"
+00383: 294  dup
+00384: 294  callprop "readProductId"
+00389: 294  swap
+00390: 294  notearg
+00391: 294  call 0
+00394: 294  initprop "app_indentify"
+00399: 296  getlocal 0
+00402: 296  getprop "easy_session"
+00407: 296  initprop "session"
+00412: 296  endinit
+00413: 296  notearg
+00414: 298  this
+00415: 298  getprop "onResp_GetServerList"
+00420: 298  notearg
+00421: 299  lambda (function () {
+    [sourceless code]
+})
+00426: 299  notearg
+00427: 302  this
+00428: 302  notearg
+00429: 302  call 4
+00432: 302  pop
+00433: 305  goto 619 (+186)
+00438: 308  name "xs"
+00443: 308  dup
+00444: 308  callprop "log"
+00449: 308  swap
+00450: 308  notearg
+00451: 308  string "\u767B\u5F55\u53D6\u6D88"
+00456: 308  notearg
+00457: 308  call 1
+00460: 308  pop
+00461: 309  goto 619 (+158)
+00466: 312  name "xs"
+00471: 312  dup
+00472: 312  callprop "log"
+00477: 312  swap
+00478: 312  notearg
+00479: 312  string "\u65E0\u9700\u767B\u5F55"
+00484: 312  notearg
+00485: 312  call 1
+00488: 312  pop
+00489: 313  goto 619 (+130)
+00494: 316  name "xs"
+00499: 316  dup
+00500: 316  callprop "log"
+00505: 316  swap
+00506: 316  notearg
+00507: 316  string "\u767B\u5F55\u8D85\u65F6"
+00512: 316  notearg
+00513: 316  call 1
+00516: 316  pop
+00517: 318  goto 619 (+102)
+00522: 321  name "xs"
+00527: 321  dup
+00528: 321  callprop "log"
+00533: 321  swap
+00534: 321  notearg
+00535: 321  string "\u767B\u5F55\u5931\u8D25"
+00540: 321  notearg
+00541: 321  call 1
+00544: 321  pop
+00545: 323  goto 619 (+74)
+00550: 326  name "xs"
+00555: 326  dup
+00556: 326  callprop "log"
+00561: 326  swap
+00562: 326  notearg
+00563: 326  string "\u767B\u5F55\u5F02\u5E38"
+00568: 326  notearg
+00569: 326  call 1
+00572: 326  pop
+00573: 328  goto 619 (+46)
+00578: 331  name "xs"
+00583: 331  getprop "Views"
+00588: 331  getprop "Mgr"
+00593: 331  dup
+00594: 331  callprop "showToast"
+00599: 331  swap
+00600: 331  notearg
+00601: 331  getarg 0
+00604: 331  getprop "msg"
+00609: 331  notearg
+00610: 331  call 1
+00613: 331  pop
+00614: 332  goto 619 (+5)
+00619: 333  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:271 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:299 ---
+loc   line  op
+----- ----  --
+main:
+00000: 300  name "xs"
+00005: 300  getprop "Views"
+00010: 300  getprop "Mgr"
+00015: 300  dup
+00016: 300  callprop "showToast"
+00021: 300  swap
+00022: 300  notearg
+00023: 300  name "xs"
+00028: 300  getprop "Tools"
+00033: 300  getprop "String"
+00038: 300  dup
+00039: 300  callprop "createString"
+00044: 300  swap
+00045: 300  notearg
+00046: 300  string "auto_name_104"
+00051: 300  notearg
+00052: 300  call 1
+00055: 300  notearg
+00056: 300  call 1
+00059: 300  pop
+00060: 300  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:299 ---
+;; function object[14] onResp_GetServerList
+;; function metadata object[14] nargs=1 bindings=2
+;; arg[0] jsonObj
+;; local[0] _strE
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=catch start=24 length=399 stackDepth=0 target=423
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:339 ---
+loc   line  op
+----- ----  --
+main:
+00000: 341  name "xs"
+00005: 341  dup
+00006: 341  callprop "log_zj"
+00011: 341  swap
+00012: 341  notearg
+00013: 341  string " easysdk step4 onResp_GetServerList"
+00018: 341  notearg
+00019: 341  call 1
+00022: 341  pop
+00023: 343  try 423 (+400)
+00024: 346  name "xs"
+00029: 346  getprop "Scene"
+00034: 346  getprop "Login"
+00039: 346  getprop "onResponse_GetServerList"
+00044: 346  dup
+00045: 346  callprop "apply"
+00050: 346  swap
+00051: 346  notearg
+00052: 346  this
+00053: 346  notearg
+00054: 346  newarray 1
+00058: 346  getarg 0
+00061: 346  initelem_array 0
+00065: 346  endinit
+00066: 346  notearg
+00067: 346  funapply 2
+00070: 346  pop
+00071: 361  this
+00072: 361  name "xs"
+00077: 361  getprop "Models"
+00082: 361  getprop "Account"
+00087: 361  getprop "AccountInfo"
+00092: 361  undefined
+00093: 361  notearg
+00094: 361  new 0
+00097: 361  setprop "m_account_info"
+00102: 361  pop
+00103: 362  this
+00104: 362  getprop "m_account_info"
+00109: 362  dup
+00110: 362  callprop "setToken"
+00115: 362  swap
+00116: 362  notearg
+00117: 362  getarg 0
+00120: 362  getprop "token"
+00125: 362  notearg
+00126: 362  call 1
+00129: 362  pop
+00130: 363  this
+00131: 363  getprop "m_account_info"
+00136: 363  dup
+00137: 363  callprop "setAccountId"
+00142: 363  swap
+00143: 363  notearg
+00144: 363  getarg 0
+00147: 363  getprop "account_info"
+00152: 363  getprop "account_uid"
+00157: 363  notearg
+00158: 363  call 1
+00161: 363  pop
+00162: 365  this
+00163: 365  name "xs"
+00168: 365  getprop "Models"
+00173: 365  getprop "Account"
+00178: 365  getprop "GameServerInfo"
+00183: 365  undefined
+00184: 365  notearg
+00185: 365  new 0
+00188: 365  setprop "m_server_info"
+00193: 365  pop
+00194: 366  this
+00195: 366  getprop "m_server_info"
+00200: 366  dup
+00201: 366  callprop "setInfo"
+00206: 366  swap
+00207: 366  notearg
+00208: 366  getarg 0
+00211: 366  notearg
+00212: 366  call 1
+00215: 366  pop
+00216: 367  this
+00217: 367  getprop "m_server_info"
+00222: 367  dup
+00223: 367  callprop "setCurServer"
+00228: 367  swap
+00229: 367  notearg
+00230: 367  call 0
+00233: 367  pop
+00234: 369  this
+00235: 369  dup
+00236: 369  callprop "setServerInfoToGame"
+00241: 369  swap
+00242: 369  notearg
+00243: 369  this
+00244: 369  getprop "m_server_info"
+00249: 369  dup
+00250: 369  callprop "getCurServerInfo"
+00255: 369  swap
+00256: 369  notearg
+00257: 369  call 0
+00260: 369  notearg
+00261: 369  call 1
+00264: 369  pop
+00265: 373  name "xs"
+00270: 373  getprop "Scene"
+00275: 373  getprop "Mgr"
+00280: 373  dup
+00281: 373  callprop "saveStatus"
+00286: 373  swap
+00287: 373  notearg
+00288: 373  string "AccountInfo"
+00293: 373  notearg
+00294: 373  this
+00295: 373  getprop "m_account_info"
+00300: 373  notearg
+00301: 373  call 2
+00304: 373  pop
+00305: 374  name "xs"
+00310: 374  getprop "Scene"
+00315: 374  getprop "Mgr"
+00320: 374  dup
+00321: 374  callprop "saveStatus"
+00326: 374  swap
+00327: 374  notearg
+00328: 374  string "ServerInfo"
+00333: 374  notearg
+00334: 374  this
+00335: 374  getprop "m_server_info"
+00340: 374  notearg
+00341: 374  call 2
+00344: 374  pop
+00345: 378  this
+00346: 378  dup
+00347: 378  callprop "updateCurServerView"
+00352: 378  swap
+00353: 378  notearg
+00354: 378  call 0
+00357: 378  pop
+00358: 380  name "xs"
+00363: 380  getprop "Views"
+00368: 380  getprop "Mgr"
+00373: 380  dup
+00374: 380  callprop "showToast"
+00379: 380  swap
+00380: 380  notearg
+00381: 380  name "xs"
+00386: 380  getprop "Tools"
+00391: 380  getprop "String"
+00396: 380  dup
+00397: 380  callprop "createString"
+00402: 380  swap
+00403: 380  notearg
+00404: 380  string "completeLogin"
+00409: 380  notearg
+00410: 380  call 1
+00413: 380  notearg
+00414: 380  call 1
+00417: 380  pop
+00418: 380  goto 523 (+105)
+00423: 386  enterblock depth 0 {e: 0}
+00428: 386  exception
+00429: 386  setlocal 1
+00432: 386  pop
+00433: 387  name "xs"
+00438: 387  dup
+00439: 387  callprop "warnException"
+00444: 387  swap
+00445: 387  notearg
+00446: 387  getlocal 1
+00449: 387  notearg
+00450: 387  call 1
+00453: 387  pop
+00454: 388  name "xs"
+00459: 388  getprop "Debug"
+00464: 388  dup
+00465: 388  callprop "toJsonString"
+00470: 388  swap
+00471: 388  notearg
+00472: 388  getlocal 1
+00475: 388  notearg
+00476: 388  call 1
+00479: 388  setlocal 0
+00482: 388  pop
+00483: 389  name "xs"
+00488: 389  getprop "Views"
+00493: 389  getprop "Mgr"
+00498: 389  dup
+00499: 389  callprop "showToast"
+00504: 389  swap
+00505: 389  notearg
+00506: 389  getlocal 0
+00509: 389  notearg
+00510: 389  call 1
+00513: 389  pop
+00514: 389  leaveblock 1
+00517: 389  goto 523 (+6)
+00522: 389  nop
+00523: 390  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:339 ---
+;; function object[15] ctor
+;; function metadata object[15] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:416 ---
+loc   line  op
+----- ----  --
+main:
+00000: 417  this
+00001: 417  dup
+00002: 417  callprop "_super"
+00007: 417  swap
+00008: 417  notearg
+00009: 417  call 0
+00012: 417  pop
+00013: 418  name "cc"
+00018: 418  dup
+00019: 418  callprop "associateWithNative"
+00024: 418  swap
+00025: 418  notearg
+00026: 418  this
+00027: 418  notearg
+00028: 418  name "cc"
+00033: 418  getprop "Scene"
+00038: 418  notearg
+00039: 418  call 2
+00042: 418  pop
+00043: 418  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:416 ---
+;; function object[16] init
+;; function metadata object[16] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] layer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:420 ---
+loc   line  op
+----- ----  --
+main:
+00000: 421  this
+00001: 421  dup
+00002: 421  callprop "_super"
+00007: 421  swap
+00008: 421  notearg
+00009: 421  call 0
+00012: 421  not
+00013: 421  ifeq 20 (+7)
+00018: 422  false
+00019: 422  return
+00020: 425  name "xs"
+00025: 425  getprop "Scene"
+00030: 425  getprop "Login"
+00035: 425  getprop "LoginScene_EasySdk_Layer"
+00040: 425  undefined
+00041: 425  notearg
+00042: 425  new 0
+00045: 425  setlocal 0
+00048: 425  pop
+00049: 426  getlocal 0
+00052: 426  dup
+00053: 426  callprop "init"
+00058: 426  swap
+00059: 426  notearg
+00060: 426  getarg 0
+00063: 426  notearg
+00064: 426  call 1
+00067: 426  pop
+00068: 427  name "xs"
+00073: 427  getprop "Utils"
+00078: 427  getprop "Node"
+00083: 427  dup
+00084: 427  callprop "attachNodes"
+00089: 427  swap
+00090: 427  notearg
+00091: 427  this
+00092: 427  notearg
+00093: 427  getlocal 0
+00096: 427  notearg
+00097: 427  call 2
+00100: 427  pop
+00101: 429  true
+00102: 429  return
+00103: 429  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:420 ---
+;; function object[17] onEnter
+;; function metadata object[17] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:432 ---
+loc   line  op
+----- ----  --
+main:
+00000: 433  this
+00001: 433  dup
+00002: 433  callprop "_super"
+00007: 433  swap
+00008: 433  notearg
+00009: 433  call 0
+00012: 433  pop
+00013: 435  name "xs"
+00018: 435  getprop "Guide"
+00023: 435  getprop "GuideMgr"
+00028: 435  dup
+00029: 435  callprop "setIsOver"
+00034: 435  swap
+00035: 435  notearg
+00036: 435  true
+00037: 435  notearg
+00038: 435  call 1
+00041: 435  pop
+00042: 435  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:432 ---
+;; function object[18] create
+;; function metadata object[18] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] scene
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:439 ---
+loc   line  op
+----- ----  --
+main:
+00000: 440  name "xs"
+00005: 440  getprop "Scene"
+00010: 440  getprop "Login"
+00015: 440  getprop "LoginScene_EasySdk"
+00020: 440  undefined
+00021: 440  notearg
+00022: 440  new 0
+00025: 440  setlocal 0
+00028: 440  pop
+00029: 441  getlocal 0
+00032: 441  and 56 (+24)
+00037: 441  pop
+00038: 441  getlocal 0
+00041: 441  dup
+00042: 441  callprop "init"
+00047: 441  swap
+00048: 441  notearg
+00049: 441  getarg 0
+00052: 441  notearg
+00053: 441  call 1
+00056: 441  ifeq 106 (+50)
+00061: 442  getlocal 0
+00064: 442  dup
+00065: 442  callprop "setTag"
+00070: 442  swap
+00071: 442  notearg
+00072: 442  name "xs"
+00077: 442  getprop "Cfg"
+00082: 442  getprop "Scene"
+00087: 442  getprop "LoginScene"
+00092: 442  getprop "tag"
+00097: 442  notearg
+00098: 442  call 1
+00101: 442  pop
+00102: 443  getlocal 0
+00105: 443  return
+00106: 445  null
+00107: 445  return
+00108: 445  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Login/LoginScene_EasySdk.js:439 ---

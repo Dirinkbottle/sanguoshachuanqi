@@ -1,0 +1,316 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/Account.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=10 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Profile"
+00010:   8  lambda (function () {
+    [sourceless code]
+})
+00015:   8  setprop "Account"
+00020:   8  popv
+00021:  80  name "xs"
+00026:  80  name "xs"
+00031:  80  getprop "g_account"
+00036:  80  or 62 (+26)
+00041:  80  pop
+00042:  80  name "xs"
+00047:  80  getprop "Profile"
+00052:  80  getprop "Account"
+00057:  80  undefined
+00058:  80  notearg
+00059:  80  new 0
+00062:  80  setprop "g_account"
+00067:  80  popv
+00068:  80  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:1 ---
+;; function object[0] Account
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=13 object[0]
+;; FUNCTION-MAP kind=lambda offset=25 object[1]
+;; FUNCTION-MAP kind=lambda offset=37 object[2]
+;; FUNCTION-MAP kind=lambda offset=49 object[3]
+;; FUNCTION-MAP kind=lambda offset=61 object[4]
+;; FUNCTION-MAP kind=lambda offset=73 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  this
+00001:  10  string "xs.Profile.Account"
+00006:  10  setprop "name"
+00011:  10  pop
+00012:  15  this
+00013:  15  lambda (function () {
+    [sourceless code]
+})
+00018:  15  setprop "init"
+00023:  15  pop
+00024:  29  this
+00025:  29  lambda (function () {
+    [sourceless code]
+})
+00030:  29  setprop "isAppStoreVersion"
+00035:  29  pop
+00036:  52  this
+00037:  52  lambda (function () {
+    [sourceless code]
+})
+00042:  52  setprop "isUseAdmob"
+00047:  52  pop
+00048:  56  this
+00049:  56  lambda (function () {
+    [sourceless code]
+})
+00054:  56  setprop "getAccountUid"
+00059:  56  pop
+00060:  60  this
+00061:  60  lambda (function () {
+    [sourceless code]
+})
+00066:  60  setprop "onLoginSuccess"
+00071:  60  pop
+00072:  68  this
+00073:  68  lambda (function () {
+    [sourceless code]
+})
+00078:  68  setprop "onGetPlayerInfoSuccess"
+00083:  68  pop
+00084:  73  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:8 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] json
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  this
+00001:  20  name "xs"
+00006:  20  dup
+00007:  20  callprop "parseInt"
+00012:  20  swap
+00013:  20  notearg
+00014:  20  getarg 0
+00017:  20  getprop "app_store_version"
+00022:  20  notearg
+00023:  20  call 1
+00026:  20  or 35 (+9)
+00031:  20  pop
+00032:  20  uint16 9999
+00035:  20  setprop "m_app_store_version"
+00040:  20  pop
+00041:  22  this
+00042:  22  getarg 0
+00045:  22  getprop "account_info"
+00050:  22  getprop "account_uid"
+00055:  22  setprop "m_accountUid"
+00060:  22  pop
+00061:  24  name "xs"
+00066:  24  dup
+00067:  24  callprop "log"
+00072:  24  swap
+00073:  24  notearg
+00074:  24  string "m_app_store_version:"
+00079:  24  notearg
+00080:  24  this
+00081:  24  getprop "m_app_store_version"
+00086:  24  notearg
+00087:  24  call 2
+00090:  24  pop
+00091:  25  name "xs"
+00096:  25  dup
+00097:  25  callprop "log"
+00102:  25  swap
+00103:  25  notearg
+00104:  25  string "m_accountUid:"
+00109:  25  notearg
+00110:  25  this
+00111:  25  getprop "m_accountUid"
+00116:  25  notearg
+00117:  25  call 2
+00120:  25  pop
+00121:  25  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:15 ---
+;; function object[1] isAppStoreVersion
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  32  name "xsc"
+00005:  32  getprop "Tools"
+00010:  32  getprop "PaySys"
+00015:  32  dup
+00016:  32  callprop "isUsingAppStore"
+00021:  32  swap
+00022:  32  notearg
+00023:  32  call 0
+00026:  32  ifeq 70 (+44)
+00031:  34  name "xs"
+00036:  34  getprop "Tools"
+00041:  34  getprop "Jsb"
+00046:  34  dup
+00047:  34  callprop "getOriResCode"
+00052:  34  swap
+00053:  34  notearg
+00054:  34  call 0
+00057:  34  this
+00058:  34  getprop "m_app_store_version"
+00063:  34  ge
+00064:  34  return
+00065:  34  goto 189 (+124)
+00070:  36  name "xsc"
+00075:  36  getprop "Tools"
+00080:  36  getprop "PaySys"
+00085:  36  dup
+00086:  36  callprop "isUsingEasySdk"
+00091:  36  swap
+00092:  36  notearg
+00093:  36  call 0
+00096:  36  ifeq 187 (+91)
+00101:  37  name "xs"
+00106:  37  getprop "Tools"
+00111:  37  getprop "Jsb"
+00116:  37  getprop "EasySdk"
+00121:  37  getprop "Payment"
+00126:  37  dup
+00127:  37  callprop "getPlatformId"
+00132:  37  swap
+00133:  37  notearg
+00134:  37  call 0
+00137:  37  string "appstore"
+00142:  37  eq
+00143:  37  ifeq 182 (+39)
+00148:  39  name "xs"
+00153:  39  getprop "Tools"
+00158:  39  getprop "Jsb"
+00163:  39  dup
+00164:  39  callprop "getOriResCode"
+00169:  39  swap
+00170:  39  notearg
+00171:  39  call 0
+00174:  39  this
+00175:  39  getprop "m_app_store_version"
+00180:  39  ge
+00181:  39  return
+00182:  39  goto 189 (+7)
+00187:  43  false
+00188:  43  return
+00189:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:29 ---
+;; function object[2] isUseAdmob
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:52 ---
+loc   line  op
+----- ----  --
+main:
+00000:  53  this
+00001:  53  dup
+00002:  53  callprop "isAppStoreVersion"
+00007:  53  swap
+00008:  53  notearg
+00009:  53  call 0
+00012:  53  return
+00013:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:52 ---
+;; function object[3] getAccountUid
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  57  this
+00001:  57  getprop "m_accountUid"
+00006:  57  return
+00007:  57  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:56 ---
+;; function object[4] onLoginSuccess
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  this
+00001:  63  dup
+00002:  63  callprop "isUseAdmob"
+00007:  63  swap
+00008:  63  notearg
+00009:  63  call 0
+00012:  63  ifeq 68 (+56)
+00017:  64  name "xs"
+00022:  64  getprop "JsbConnecter"
+00027:  64  dup
+00028:  64  callprop "getInstance"
+00033:  64  swap
+00034:  64  notearg
+00035:  64  call 0
+00038:  64  dup
+00039:  64  callprop "invoke"
+00044:  64  swap
+00045:  64  notearg
+00046:  64  string "AdmobHelp"
+00051:  64  notearg
+00052:  64  string "showBanner"
+00057:  64  notearg
+00058:  64  string ""
+00063:  64  notearg
+00064:  64  call 3
+00067:  64  pop
+00068:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:60 ---
+;; function object[5] onGetPlayerInfoSuccess
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  70  this
+00001:  70  dup
+00002:  70  callprop "isUseAdmob"
+00007:  70  swap
+00008:  70  notearg
+00009:  70  call 0
+00012:  70  ifeq 68 (+56)
+00017:  71  name "xs"
+00022:  71  getprop "JsbConnecter"
+00027:  71  dup
+00028:  71  callprop "getInstance"
+00033:  71  swap
+00034:  71  notearg
+00035:  71  call 0
+00038:  71  dup
+00039:  71  callprop "invoke"
+00044:  71  swap
+00045:  71  notearg
+00046:  71  string "AdmobHelp"
+00051:  71  notearg
+00052:  71  string "hideBanner"
+00057:  71  notearg
+00058:  71  string ""
+00063:  71  notearg
+00064:  71  call 3
+00067:  71  pop
+00068:  72  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/Account.js:68 ---

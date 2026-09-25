@@ -1,0 +1,893 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/headers.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/headers.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  name "xs"
+00005:  12  name "xs"
+00010:  12  getprop "Scene"
+00015:  12  or 27 (+12)
+00020:  12  pop
+00021:  12  newinit 1
+00026:  12  endinit
+00027:  12  setprop "Scene"
+00032:  12  popv
+00033:  14  name "xs"
+00038:  14  getprop "Utils"
+00043:  14  dup
+00044:  14  callprop "require"
+00049:  14  swap
+00050:  14  notearg
+00051:  15  newarray 12
+00055:  18  string "Scene/SceneMgr.js"
+00060:  18  initelem_array 0
+00064:  20  string "Scene/TeamBuild/headers.js"
+00069:  20  initelem_array 1
+00073:  21  string "Scene/Skill/SkillScene.js"
+00078:  21  initelem_array 2
+00082:  23  string "Scene/Buddy/BuddyScene.js"
+00087:  23  initelem_array 3
+00091:  24  string "Scene/Buddy/BuddyView.js"
+00096:  24  initelem_array 4
+00100:  26  string "Scene/UnionWar/UnionWarBattleScene.js"
+00105:  26  initelem_array 5
+00109:  27  string "Scene/UnionWar/UnionWarChangeFormationScene.js"
+00114:  27  initelem_array 6
+00118:  28  string "Scene/UnionWar/UnionWarFightScene.js"
+00123:  28  initelem_array 7
+00127:  30  string "Scene/Gems/GemsScene.js"
+00132:  30  initelem_array 8
+00136:  31  string "Scene/Goddess/GoddessMainScene.js"
+00141:  31  initelem_array 9
+00145:  32  string "Scene/HulaoBattle/HulaoBattleMainScene.js"
+00150:  32  initelem_array 10
+00154:  33  string "Scene/Party/headers.js"
+00159:  33  initelem_array 11
+00163:  33  endinit
+00164:  33  notearg
+00165:  33  call 1
+00168:  33  popv
+00169:  40  name "xs"
+00174:  40  getprop "Scene"
+00179:  40  getprop "SceneJsMgr"
+00184:  40  getprop "mgr"
+00189:  40  dup
+00190:  40  callprop "register"
+00195:  40  swap
+00196:  40  notearg
+00197:  40  string "UpdateScene"
+00202:  40  notearg
+00203:  40  string "Scene/Update/UpdateScene.js"
+00208:  40  notearg
+00209:  40  call 2
+00212:  40  popv
+00213:  42  name "xs"
+00218:  42  getprop "Scene"
+00223:  42  getprop "SceneJsMgr"
+00228:  42  getprop "mgr"
+00233:  42  dup
+00234:  42  callprop "register"
+00239:  42  swap
+00240:  42  notearg
+00241:  42  string "DebugScene"
+00246:  42  notearg
+00247:  42  string "Scene/Debug/DebugScene.js"
+00252:  42  notearg
+00253:  42  call 2
+00256:  42  popv
+00257:  44  name "xs"
+00262:  44  getprop "Scene"
+00267:  44  getprop "SceneJsMgr"
+00272:  44  getprop "mgr"
+00277:  44  dup
+00278:  44  callprop "register"
+00283:  44  swap
+00284:  44  notearg
+00285:  44  string "SocialScene"
+00290:  44  notearg
+00291:  44  string "Scene/Social/headers.js"
+00296:  44  notearg
+00297:  44  call 2
+00300:  44  popv
+00301:  46  name "xs"
+00306:  46  getprop "Scene"
+00311:  46  getprop "SceneJsMgr"
+00316:  46  getprop "mgr"
+00321:  46  dup
+00322:  46  callprop "register"
+00327:  46  swap
+00328:  46  notearg
+00329:  46  string "MailSystemScene"
+00334:  46  notearg
+00335:  46  string "Scene/Mail/headers.js"
+00340:  46  notearg
+00341:  46  call 2
+00344:  46  popv
+00345:  48  name "xs"
+00350:  48  getprop "Scene"
+00355:  48  getprop "SceneJsMgr"
+00360:  48  getprop "mgr"
+00365:  48  dup
+00366:  48  callprop "register"
+00371:  48  swap
+00372:  48  notearg
+00373:  48  string "LoginScene"
+00378:  48  notearg
+00379:  48  string "Scene/Login/headers.js"
+00384:  48  notearg
+00385:  48  call 2
+00388:  48  popv
+00389:  50  name "xs"
+00394:  50  getprop "Scene"
+00399:  50  getprop "SceneJsMgr"
+00404:  50  getprop "mgr"
+00409:  50  dup
+00410:  50  callprop "register"
+00415:  50  swap
+00416:  50  notearg
+00417:  50  string "LadderScene"
+00422:  50  notearg
+00423:  50  newarray 6
+00427:  51  string "Scene/Ladder/LadderScene.js"
+00432:  51  initelem_array 0
+00436:  52  string "Scene/Ladder/LadderGiftView.js"
+00441:  52  initelem_array 1
+00445:  53  string "Scene/Ladder/LadderGiftView_Honor.js"
+00450:  53  initelem_array 2
+00454:  54  string "Scene/Ladder/LadderView.js"
+00459:  54  initelem_array 3
+00463:  55  string "Scene/Ladder/LadderCardShow.js"
+00468:  55  initelem_array 4
+00472:  56  string "Scene/Ladder/LadderTenFightResultDialog.js"
+00477:  56  initelem_array 5
+00481:  56  endinit
+00482:  56  notearg
+00483:  56  call 2
+00486:  56  popv
+00487:  59  name "xs"
+00492:  59  getprop "Scene"
+00497:  59  getprop "SceneJsMgr"
+00502:  59  getprop "mgr"
+00507:  59  dup
+00508:  59  callprop "register"
+00513:  59  swap
+00514:  59  notearg
+00515:  59  string "LadderChartScene"
+00520:  59  notearg
+00521:  59  newarray 2
+00525:  60  string "Scene/Ladder/LadderChartScene.js"
+00530:  60  initelem_array 0
+00534:  61  string "Scene/Ladder/LadderChartView.js"
+00539:  61  initelem_array 1
+00543:  61  endinit
+00544:  61  notearg
+00545:  61  call 2
+00548:  61  popv
+00549:  69  name "xs"
+00554:  69  getprop "Scene"
+00559:  69  getprop "SceneJsMgr"
+00564:  69  getprop "mgr"
+00569:  69  dup
+00570:  69  callprop "register"
+00575:  69  swap
+00576:  69  notearg
+00577:  69  string "GeneralSelectScene"
+00582:  69  notearg
+00583:  69  string "Scene/GeneralSelect/GeneralSelectScene.js"
+00588:  69  notearg
+00589:  69  call 2
+00592:  69  popv
+00593:  71  name "xs"
+00598:  71  getprop "Scene"
+00603:  71  getprop "SceneJsMgr"
+00608:  71  getprop "mgr"
+00613:  71  dup
+00614:  71  callprop "register"
+00619:  71  swap
+00620:  71  notearg
+00621:  71  string "AchievementScene"
+00626:  71  notearg
+00627:  71  string "Scene/Achievement/AchievementScene.js"
+00632:  71  notearg
+00633:  71  call 2
+00636:  71  popv
+00637:  74  name "xs"
+00642:  74  getprop "Scene"
+00647:  74  getprop "SceneJsMgr"
+00652:  74  getprop "mgr"
+00657:  74  dup
+00658:  74  callprop "register"
+00663:  74  swap
+00664:  74  notearg
+00665:  74  string "WorshipScene"
+00670:  74  notearg
+00671:  74  string "Scene/Worship/WorshipScene.js"
+00676:  74  notearg
+00677:  74  call 2
+00680:  74  popv
+00681:  76  name "xs"
+00686:  76  getprop "Scene"
+00691:  76  getprop "SceneJsMgr"
+00696:  76  getprop "mgr"
+00701:  76  dup
+00702:  76  callprop "register"
+00707:  76  swap
+00708:  76  notearg
+00709:  76  string "BagScene"
+00714:  76  notearg
+00715:  76  string "Scene/Bag/BagScene.js"
+00720:  76  notearg
+00721:  76  call 2
+00724:  76  popv
+00725:  78  name "xs"
+00730:  78  getprop "Scene"
+00735:  78  getprop "SceneJsMgr"
+00740:  78  getprop "mgr"
+00745:  78  dup
+00746:  78  callprop "register"
+00751:  78  swap
+00752:  78  notearg
+00753:  78  string "MainMenuScene"
+00758:  78  notearg
+00759:  78  string "Scene/Main/MainMenuScene.js"
+00764:  78  notearg
+00765:  78  call 2
+00768:  78  popv
+00769:  80  name "xs"
+00774:  80  getprop "Scene"
+00779:  80  getprop "SceneJsMgr"
+00784:  80  getprop "mgr"
+00789:  80  dup
+00790:  80  callprop "register"
+00795:  80  swap
+00796:  80  notearg
+00797:  80  string "WishingScene"
+00802:  80  notearg
+00803:  80  string "Scene/Party/WishingScene.js"
+00808:  80  notearg
+00809:  80  call 2
+00812:  80  popv
+00813:  83  name "xs"
+00818:  83  getprop "Scene"
+00823:  83  getprop "SceneJsMgr"
+00828:  83  getprop "mgr"
+00833:  83  dup
+00834:  83  callprop "register"
+00839:  83  swap
+00840:  83  notearg
+00841:  83  string "ChaosScene"
+00846:  83  notearg
+00847:  84  newarray 3
+00851:  86  string "Scene/Chaos/ChaosScene.js"
+00856:  86  initelem_array 0
+00860:  87  string "Scene/Chaos/ChaosFight.js"
+00865:  87  initelem_array 1
+00869:  88  string "Scene/Chaos/ChaosHomeView.js"
+00874:  88  initelem_array 2
+00878:  88  endinit
+00879:  88  notearg
+00880:  88  call 2
+00883:  88  popv
+00884:  91  name "xs"
+00889:  91  getprop "Scene"
+00894:  91  getprop "SceneJsMgr"
+00899:  91  getprop "mgr"
+00904:  91  dup
+00905:  91  callprop "register"
+00910:  91  swap
+00911:  91  notearg
+00912:  91  string "ChaosFightScene"
+00917:  91  notearg
+00918:  92  newarray 1
+00922:  94  string "Scene/Chaos/ChaosFightScene.js"
+00927:  94  initelem_array 0
+00931:  94  endinit
+00932:  94  notearg
+00933:  94  call 2
+00936:  94  popv
+00937:  99  name "xs"
+00942:  99  getprop "Scene"
+00947:  99  getprop "SceneJsMgr"
+00952:  99  getprop "mgr"
+00957:  99  dup
+00958:  99  callprop "register"
+00963:  99  swap
+00964:  99  notearg
+00965:  99  string "CombatScene"
+00970:  99  notearg
+00971: 100  newarray 3
+00975: 102  string "Scene/Combat/CombatScene.js"
+00980: 102  initelem_array 0
+00984: 103  string "Scene/Combat/CombatUpgradeScene.js"
+00989: 103  initelem_array 1
+00993: 104  string "Scene/Combat/CombatCardView.js"
+00998: 104  initelem_array 2
+01002: 104  endinit
+01003: 104  notearg
+01004: 104  call 2
+01007: 104  popv
+01008: 109  name "xs"
+01013: 109  getprop "Scene"
+01018: 109  getprop "SceneJsMgr"
+01023: 109  getprop "mgr"
+01028: 109  dup
+01029: 109  callprop "register"
+01034: 109  swap
+01035: 109  notearg
+01036: 109  string "DevelopScene"
+01041: 109  notearg
+01042: 110  newarray 2
+01046: 112  string "Scene/Develop/DevelopScene.js"
+01051: 112  initelem_array 0
+01055: 113  string "Scene/Develop/AlchemyView.js"
+01060: 113  initelem_array 1
+01064: 113  endinit
+01065: 113  notearg
+01066: 113  call 2
+01069: 113  popv
+01070: 118  name "xs"
+01075: 118  getprop "Scene"
+01080: 118  getprop "SceneJsMgr"
+01085: 118  getprop "mgr"
+01090: 118  dup
+01091: 118  callprop "register"
+01096: 118  swap
+01097: 118  notearg
+01098: 118  string "StoreScene"
+01103: 118  notearg
+01104: 119  newarray 2
+01108: 121  string "Scene/Store/StoreScene.js"
+01113: 121  initelem_array 0
+01117: 122  string "Scene/Store/ToastView.js"
+01122: 122  initelem_array 1
+01126: 122  endinit
+01127: 122  notearg
+01128: 122  call 2
+01131: 122  popv
+01132: 127  name "xs"
+01137: 127  getprop "Scene"
+01142: 127  getprop "SceneJsMgr"
+01147: 127  getprop "mgr"
+01152: 127  dup
+01153: 127  callprop "register"
+01158: 127  swap
+01159: 127  notearg
+01160: 127  string "FightChapters"
+01165: 127  notearg
+01166: 128  newarray 2
+01170: 130  string "Scene/FightChapter/FightChapters.js"
+01175: 130  initelem_array 0
+01179: 131  string "Scene/FightChapter/DungeonView.js"
+01184: 131  initelem_array 1
+01188: 131  endinit
+01189: 131  notearg
+01190: 131  call 2
+01193: 131  popv
+01194: 137  name "xs"
+01199: 137  getprop "Scene"
+01204: 137  getprop "SceneJsMgr"
+01209: 137  getprop "mgr"
+01214: 137  dup
+01215: 137  callprop "register"
+01220: 137  swap
+01221: 137  notearg
+01222: 137  string "AgaScene"
+01227: 137  notearg
+01228: 138  newarray 1
+01232: 140  string "Scene/Aga/AgaScene.js"
+01237: 140  initelem_array 0
+01241: 140  endinit
+01242: 140  notearg
+01243: 140  call 2
+01246: 140  popv
+01247: 145  name "xs"
+01252: 145  getprop "Scene"
+01257: 145  getprop "SceneJsMgr"
+01262: 145  getprop "mgr"
+01267: 145  dup
+01268: 145  callprop "register"
+01273: 145  swap
+01274: 145  notearg
+01275: 145  string "AwakeBoxScene"
+01280: 145  notearg
+01281: 146  newarray 2
+01285: 147  string "Scene/Awake/AwakeBoxScene.js"
+01290: 147  initelem_array 0
+01294: 148  string "Scene/Awake/AwakeBoxView.js"
+01299: 148  initelem_array 1
+01303: 148  endinit
+01304: 148  notearg
+01305: 148  call 2
+01308: 148  popv
+01309: 153  name "xs"
+01314: 153  getprop "Scene"
+01319: 153  getprop "SceneJsMgr"
+01324: 153  getprop "mgr"
+01329: 153  dup
+01330: 153  callprop "register"
+01335: 153  swap
+01336: 153  notearg
+01337: 153  string "AwakeScene"
+01342: 153  notearg
+01343: 154  newarray 1
+01347: 155  string "Scene/Awake/AwakeScene.js"
+01352: 155  initelem_array 0
+01356: 155  endinit
+01357: 155  notearg
+01358: 155  call 2
+01361: 155  popv
+01362: 160  name "xs"
+01367: 160  getprop "Scene"
+01372: 160  getprop "SceneJsMgr"
+01377: 160  getprop "mgr"
+01382: 160  dup
+01383: 160  callprop "register"
+01388: 160  swap
+01389: 160  notearg
+01390: 160  string "CopyScene"
+01395: 160  notearg
+01396: 161  newarray 2
+01400: 162  string "Scene/Copy/BossCell.js"
+01405: 162  initelem_array 0
+01409: 163  string "Scene/Copy/CopyScene.js"
+01414: 163  initelem_array 1
+01418: 163  endinit
+01419: 163  notearg
+01420: 163  call 2
+01423: 163  popv
+01424: 167  name "xs"
+01429: 167  getprop "Scene"
+01434: 167  getprop "SceneJsMgr"
+01439: 167  getprop "mgr"
+01444: 167  dup
+01445: 167  callprop "register"
+01450: 167  swap
+01451: 167  notearg
+01452: 167  string "PlantCopyScene"
+01457: 167  notearg
+01458: 168  newarray 2
+01462: 169  string "Scene/Copy/BossCell.js"
+01467: 169  initelem_array 0
+01471: 170  string "Scene/Copy/PlantCopyScene.js"
+01476: 170  initelem_array 1
+01480: 170  endinit
+01481: 170  notearg
+01482: 170  call 2
+01485: 170  popv
+01486: 174  name "xs"
+01491: 174  getprop "Scene"
+01496: 174  getprop "SceneJsMgr"
+01501: 174  getprop "mgr"
+01506: 174  dup
+01507: 174  callprop "register"
+01512: 174  swap
+01513: 174  notearg
+01514: 174  string "MemorialCopyScene"
+01519: 174  notearg
+01520: 175  newarray 2
+01524: 176  string "Scene/Copy/BossCell.js"
+01529: 176  initelem_array 0
+01533: 177  string "Scene/Copy/MemorialCopyScene.js"
+01538: 177  initelem_array 1
+01542: 177  endinit
+01543: 177  notearg
+01544: 177  call 2
+01547: 177  popv
+01548: 181  name "xs"
+01553: 181  getprop "Scene"
+01558: 181  getprop "SceneJsMgr"
+01563: 181  getprop "mgr"
+01568: 181  dup
+01569: 181  callprop "register"
+01574: 181  swap
+01575: 181  notearg
+01576: 181  string "LabourlCopyScene"
+01581: 181  notearg
+01582: 182  newarray 2
+01586: 183  string "Scene/Copy/BossCell.js"
+01591: 183  initelem_array 0
+01595: 184  string "Scene/Copy/LabourlCopyScene.js"
+01600: 184  initelem_array 1
+01604: 184  endinit
+01605: 184  notearg
+01606: 184  call 2
+01609: 184  popv
+01610: 188  name "xs"
+01615: 188  getprop "Scene"
+01620: 188  getprop "SceneJsMgr"
+01625: 188  getprop "mgr"
+01630: 188  dup
+01631: 188  callprop "register"
+01636: 188  swap
+01637: 188  notearg
+01638: 188  string "DuanWuCopyScene"
+01643: 188  notearg
+01644: 189  newarray 2
+01648: 190  string "Scene/Copy/BossCell.js"
+01653: 190  initelem_array 0
+01657: 191  string "Scene/Copy/DuanWuCopyScene.js"
+01662: 191  initelem_array 1
+01666: 191  endinit
+01667: 191  notearg
+01668: 191  call 2
+01671: 191  popv
+01672: 195  name "xs"
+01677: 195  getprop "Scene"
+01682: 195  getprop "SceneJsMgr"
+01687: 195  getprop "mgr"
+01692: 195  dup
+01693: 195  callprop "register"
+01698: 195  swap
+01699: 195  notearg
+01700: 195  string "PublicCopyScene"
+01705: 195  notearg
+01706: 196  newarray 2
+01710: 197  string "Scene/Copy/BossCell.js"
+01715: 197  initelem_array 0
+01719: 198  string "Scene/Copy/PublicCopyScene.js"
+01724: 198  initelem_array 1
+01728: 198  endinit
+01729: 198  notearg
+01730: 198  call 2
+01733: 198  popv
+01734: 202  name "xs"
+01739: 202  getprop "Scene"
+01744: 202  getprop "SceneJsMgr"
+01749: 202  getprop "mgr"
+01754: 202  dup
+01755: 202  callprop "register"
+01760: 202  swap
+01761: 202  notearg
+01762: 202  string "GeneralTrainingScene"
+01767: 202  notearg
+01768: 203  newarray 1
+01772: 204  string "Scene/Training/GeneralTraningScene.js"
+01777: 204  initelem_array 0
+01781: 204  endinit
+01782: 204  notearg
+01783: 204  call 2
+01786: 204  popv
+01787: 210  name "xs"
+01792: 210  getprop "Scene"
+01797: 210  getprop "SceneJsMgr"
+01802: 210  getprop "mgr"
+01807: 210  dup
+01808: 210  callprop "register"
+01813: 210  swap
+01814: 210  notearg
+01815: 210  string "EquipmentScene"
+01820: 210  notearg
+01821: 211  newarray 1
+01825: 213  string "Scene/Equ/EquipmentScene.js"
+01830: 213  initelem_array 0
+01834: 213  endinit
+01835: 213  notearg
+01836: 213  call 2
+01839: 213  popv
+01840: 218  name "xs"
+01845: 218  getprop "Scene"
+01850: 218  getprop "SceneJsMgr"
+01855: 218  getprop "mgr"
+01860: 218  dup
+01861: 218  callprop "register"
+01866: 218  swap
+01867: 218  notearg
+01868: 218  string "SettingScene"
+01873: 218  notearg
+01874: 219  newarray 2
+01878: 221  string "Scene/Setting/SettingScene.js"
+01883: 221  initelem_array 0
+01887: 222  string "Scene/Setting/ContactGMScene.js"
+01892: 222  initelem_array 1
+01896: 222  endinit
+01897: 222  notearg
+01898: 222  call 2
+01901: 222  popv
+01902: 227  name "xs"
+01907: 227  getprop "Scene"
+01912: 227  getprop "SceneJsMgr"
+01917: 227  getprop "mgr"
+01922: 227  dup
+01923: 227  callprop "register"
+01928: 227  swap
+01929: 227  notearg
+01930: 227  string "LoginScene"
+01935: 227  notearg
+01936: 227  string "Scene/Login/headers.js"
+01941: 227  notearg
+01942: 227  call 2
+01945: 227  popv
+01946: 229  name "xs"
+01951: 229  getprop "Scene"
+01956: 229  getprop "SceneJsMgr"
+01961: 229  getprop "mgr"
+01966: 229  dup
+01967: 229  callprop "register"
+01972: 229  swap
+01973: 229  notearg
+01974: 229  string "FightScene"
+01979: 229  notearg
+01980: 229  string "Scene/Fight/headers.js"
+01985: 229  notearg
+01986: 229  call 2
+01989: 229  popv
+01990: 231  name "xs"
+01995: 231  getprop "Scene"
+02000: 231  getprop "SceneJsMgr"
+02005: 231  getprop "mgr"
+02010: 231  dup
+02011: 231  callprop "register"
+02016: 231  swap
+02017: 231  notearg
+02018: 231  string "MailSystemScene"
+02023: 231  notearg
+02024: 231  string "Scene/Mail/headers.js"
+02029: 231  notearg
+02030: 231  call 2
+02033: 231  popv
+02034: 234  name "xs"
+02039: 234  getprop "Scene"
+02044: 234  getprop "SceneJsMgr"
+02049: 234  getprop "mgr"
+02054: 234  dup
+02055: 234  callprop "register"
+02060: 234  swap
+02061: 234  notearg
+02062: 234  string "MenuMenuScene"
+02067: 234  notearg
+02068: 234  string "Scene/SubMenu/MenuMenuScene.js"
+02073: 234  notearg
+02074: 234  call 2
+02077: 234  popv
+02078: 235  name "xs"
+02083: 235  getprop "Scene"
+02088: 235  getprop "SceneJsMgr"
+02093: 235  getprop "mgr"
+02098: 235  dup
+02099: 235  callprop "register"
+02104: 235  swap
+02105: 235  notearg
+02106: 235  string "ChallengeMenuScene"
+02111: 235  notearg
+02112: 235  string "Scene/SubMenu/ChallengeMenuScene.js"
+02117: 235  notearg
+02118: 235  call 2
+02121: 235  popv
+02122: 236  name "xs"
+02127: 236  getprop "Scene"
+02132: 236  getprop "SceneJsMgr"
+02137: 236  getprop "mgr"
+02142: 236  dup
+02143: 236  callprop "register"
+02148: 236  swap
+02149: 236  notearg
+02150: 236  string "GeneralMenuScene"
+02155: 236  notearg
+02156: 236  string "Scene/SubMenu/GeneralMenuScene.js"
+02161: 236  notearg
+02162: 236  call 2
+02165: 236  popv
+02166: 237  name "xs"
+02171: 237  getprop "Scene"
+02176: 237  getprop "SceneJsMgr"
+02181: 237  getprop "mgr"
+02186: 237  dup
+02187: 237  callprop "register"
+02192: 237  swap
+02193: 237  notearg
+02194: 237  string "PartyMenuScene"
+02199: 237  notearg
+02200: 238  newarray 1
+02204: 239  string "Scene/SubMenu/PartyMenuScene.js"
+02209: 239  initelem_array 0
+02213: 239  endinit
+02214: 239  notearg
+02215: 239  call 2
+02218: 239  popv
+02219: 248  name "xs"
+02224: 248  getprop "Scene"
+02229: 248  getprop "SceneJsMgr"
+02234: 248  getprop "mgr"
+02239: 248  dup
+02240: 248  callprop "register"
+02245: 248  swap
+02246: 248  notearg
+02247: 248  string "ClimbLadderScene"
+02252: 248  notearg
+02253: 248  newarray 2
+02257: 249  string "Scene/Climb/ClimbLadderScene.js"
+02262: 249  initelem_array 0
+02266: 250  string "Scene/Climb/StartBattleScene.js"
+02271: 250  initelem_array 1
+02275: 250  endinit
+02276: 250  notearg
+02277: 250  call 2
+02280: 250  popv
+02281: 253  name "xs"
+02286: 253  getprop "Scene"
+02291: 253  getprop "SceneJsMgr"
+02296: 253  getprop "mgr"
+02301: 253  dup
+02302: 253  callprop "register"
+02307: 253  swap
+02308: 253  notearg
+02309: 253  string "ClimbLadderRankListScene"
+02314: 253  notearg
+02315: 253  newarray 1
+02319: 254  string "Scene/Climb/ClimbLadderRankListScene.js"
+02324: 254  initelem_array 0
+02328: 254  endinit
+02329: 254  notearg
+02330: 254  call 2
+02333: 254  popv
+02334: 258  name "xs"
+02339: 258  getprop "Scene"
+02344: 258  getprop "SceneJsMgr"
+02349: 258  getprop "mgr"
+02354: 258  dup
+02355: 258  callprop "register"
+02360: 258  swap
+02361: 258  notearg
+02362: 258  string "RankScene"
+02367: 258  notearg
+02368: 258  newarray 1
+02372: 259  string "Scene/Rank/RankScene.js"
+02377: 259  initelem_array 0
+02381: 259  endinit
+02382: 259  notearg
+02383: 259  call 2
+02386: 259  popv
+02387: 263  name "xs"
+02392: 263  getprop "Scene"
+02397: 263  getprop "SceneJsMgr"
+02402: 263  getprop "mgr"
+02407: 263  dup
+02408: 263  callprop "register"
+02413: 263  swap
+02414: 263  notearg
+02415: 263  string "NewPlayerScene"
+02420: 263  notearg
+02421: 263  string "Scene/NewPlayer/NewPlayerScene.js"
+02426: 263  notearg
+02427: 263  call 2
+02430: 263  popv
+02431: 266  name "xs"
+02436: 266  getprop "Scene"
+02441: 266  getprop "SceneJsMgr"
+02446: 266  getprop "mgr"
+02451: 266  dup
+02452: 266  callprop "register"
+02457: 266  swap
+02458: 266  notearg
+02459: 266  string "InterServiceRegistrationScene"
+02464: 266  notearg
+02465: 266  newarray 4
+02469: 267  string "Scene/InterService/InterServiceRegistrationScene.js"
+02474: 267  initelem_array 0
+02478: 268  string "Scene/InterService/InterServiceFightScene.js"
+02483: 268  initelem_array 1
+02487: 269  string "Scene/InterService/PopularityRewardScene.js"
+02492: 269  initelem_array 2
+02496: 270  string "Scene/InterService/InterServiceWorshipScene.js"
+02501: 270  initelem_array 3
+02505: 270  endinit
+02506: 270  notearg
+02507: 270  call 2
+02510: 270  popv
+02511: 273  name "xs"
+02516: 273  getprop "Scene"
+02521: 273  getprop "SceneJsMgr"
+02526: 273  getprop "mgr"
+02531: 273  dup
+02532: 273  callprop "register"
+02537: 273  swap
+02538: 273  notearg
+02539: 273  string "SelectMiracleWeaponsScene"
+02544: 273  notearg
+02545: 273  newarray 2
+02549: 274  string "Scene/MiracleWeapons/SelectMiracleWeaponsScene.js"
+02554: 274  initelem_array 0
+02558: 275  string "Scene/MiracleWeapons/MiracleWeaponScene.js"
+02563: 275  initelem_array 1
+02567: 275  endinit
+02568: 275  notearg
+02569: 275  call 2
+02572: 275  popv
+02573: 278  name "xs"
+02578: 278  getprop "Scene"
+02583: 278  getprop "SceneJsMgr"
+02588: 278  getprop "mgr"
+02593: 278  dup
+02594: 278  callprop "register"
+02599: 278  swap
+02600: 278  notearg
+02601: 278  string "DecisiveBattleMainScene"
+02606: 278  notearg
+02607: 278  newarray 3
+02611: 279  string "Scene/DecisiveBattle/DecisiveBattleMainScene.js"
+02616: 279  initelem_array 0
+02620: 280  string "Scene/DecisiveBattle/SupportAwardScene.js"
+02625: 280  initelem_array 1
+02629: 281  string "Scene/DecisiveBattle/DecisiveBattlePreviewScene.js"
+02634: 281  initelem_array 2
+02638: 281  endinit
+02639: 281  notearg
+02640: 281  call 2
+02643: 281  popv
+02644: 285  name "xs"
+02649: 285  getprop "Scene"
+02654: 285  getprop "SceneJsMgr"
+02659: 285  getprop "mgr"
+02664: 285  dup
+02665: 285  callprop "register"
+02670: 285  swap
+02671: 285  notearg
+02672: 285  string "MeridiansMainScene"
+02677: 285  notearg
+02678: 285  newarray 1
+02682: 286  string "Scene/Meridians/MeridiansMainScene.js"
+02687: 286  initelem_array 0
+02691: 286  endinit
+02692: 286  notearg
+02693: 286  call 2
+02696: 286  popv
+02697: 289  name "xs"
+02702: 289  getprop "Scene"
+02707: 289  getprop "SceneJsMgr"
+02712: 289  getprop "mgr"
+02717: 289  dup
+02718: 289  callprop "register"
+02723: 289  swap
+02724: 289  notearg
+02725: 289  string "PracticeMeridiansMainScene"
+02730: 289  notearg
+02731: 289  newarray 1
+02735: 290  string "Scene/Meridians/PracticeMeridiansMainScene.js"
+02740: 290  initelem_array 0
+02744: 290  endinit
+02745: 290  notearg
+02746: 290  call 2
+02749: 290  popv
+02750: 294  name "xs"
+02755: 294  getprop "Scene"
+02760: 294  getprop "SceneJsMgr"
+02765: 294  getprop "mgr"
+02770: 294  dup
+02771: 294  callprop "register"
+02776: 294  swap
+02777: 294  notearg
+02778: 294  string "BeautyScene"
+02783: 294  notearg
+02784: 295  newarray 2
+02788: 296  string "Scene/Beauty/BeautyCell.js"
+02793: 296  initelem_array 0
+02797: 297  string "Scene/Beauty/BeautyScene.js"
+02802: 297  initelem_array 1
+02806: 297  endinit
+02807: 297  notearg
+02808: 297  call 2
+02811: 297  popv
+02812: 302  name "xs"
+02817: 302  getprop "Scene"
+02822: 302  getprop "SceneJsMgr"
+02827: 302  getprop "mgr"
+02832: 302  dup
+02833: 302  callprop "register"
+02838: 302  swap
+02839: 302  notearg
+02840: 302  string "SkillRefiningScene"
+02845: 302  notearg
+02846: 303  newarray 1
+02850: 304  string "Scene/SkillRefining/SkillRefiningScene.js"
+02855: 304  initelem_array 0
+02859: 304  endinit
+02860: 304  notearg
+02861: 304  call 2
+02864: 304  popv
+02865: 305  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/headers.js:1 ---

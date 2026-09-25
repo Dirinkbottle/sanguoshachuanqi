@@ -1,0 +1,806 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/Surrender.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=99 object[0]
+;; FUNCTION-MAP kind=lambda offset=109 object[1]
+;; FUNCTION-MAP kind=lambda offset=119 object[2]
+;; FUNCTION-MAP kind=lambda offset=129 object[3]
+;; FUNCTION-MAP kind=lambda offset=139 object[4]
+;; FUNCTION-MAP kind=lambda offset=149 object[5]
+;; FUNCTION-MAP kind=lambda offset=159 object[6]
+;; FUNCTION-MAP kind=lambda offset=169 object[7]
+;; FUNCTION-MAP kind=lambda offset=179 object[8]
+;; FUNCTION-MAP kind=lambda offset=189 object[9]
+;; FUNCTION-MAP kind=lambda offset=199 object[10]
+;; FUNCTION-MAP kind=lambda offset=235 object[11]
+;; FUNCTION-MAP kind=lambda offset=261 object[12]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Models"
+00010:   7  name "xs"
+00015:   7  getprop "Models"
+00020:   7  getprop "Surrender"
+00025:   7  or 214 (+189)
+00030:   7  pop
+00031:   7  name "xs"
+00036:   7  getprop "Models"
+00041:   7  getprop "Card"
+00046:   7  dup
+00047:   7  callprop "extend"
+00052:   7  swap
+00053:   7  notearg
+00054:   7  newinit 1
+00059:   8  string "xs.Models.Surrender"
+00064:   8  initprop "name"
+00069:  10  name "xs"
+00074:  10  getprop "Constant_CfgDataType_Surrender"
+00079:  10  initprop "CfgDataType"
+00084:  12  name "xs"
+00089:  12  getprop "Constant_CfgDataType_General_Surrender"
+00094:  12  initprop "CfgDataTypeSec"
+00099:  14  lambda (function () {
+    [sourceless code]
+})
+00104:  14  initprop "_getGeneralSurrenderDataRef"
+00109:  24  lambda (function () {
+    [sourceless code]
+})
+00114:  24  initprop "_getSurrenderDataRef"
+00119:  32  lambda (function () {
+    [sourceless code]
+})
+00124:  32  initprop "init"
+00129:  44  lambda (function () {
+    [sourceless code]
+})
+00134:  44  initprop "loadJson"
+00139: 102  lambda (function () {
+    [sourceless code]
+})
+00144: 102  initprop "_setGid"
+00149: 107  lambda (function () {
+    [sourceless code]
+})
+00154: 107  initprop "_getGid"
+00159: 111  lambda (function () {
+    [sourceless code]
+})
+00164: 111  initprop "_setSurrenderId"
+00169: 116  lambda (function () {
+    [sourceless code]
+})
+00174: 116  initprop "_getSurrenderId"
+00179: 120  lambda (function () {
+    [sourceless code]
+})
+00184: 120  initprop "getAchieveData"
+00189: 155  lambda (function () {
+    [sourceless code]
+})
+00194: 155  initprop "getSurrenderList"
+00199: 160  lambda (function () {
+    [sourceless code]
+})
+00204: 160  initprop "getAllStatus"
+00209: 160  endinit
+00210: 160  notearg
+00211: 160  call 1
+00214: 160  setprop "Surrender"
+00219: 160  popv
+00220: 168  name "xs"
+00225: 168  getprop "Models"
+00230: 168  getprop "Surrender"
+00235: 168  lambda (function () {
+    [sourceless code]
+})
+00240: 168  setprop "createWithJson"
+00245: 168  popv
+00246: 178  name "xs"
+00251: 178  getprop "Models"
+00256: 178  getprop "Surrender"
+00261: 178  lambda (function () {
+    [sourceless code]
+})
+00266: 178  setprop "create"
+00271: 178  popv
+00272: 185  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:1 ---
+;; function object[0] _getGeneralSurrenderDataRef
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  this
+00001:  15  getprop "cacheGeneralSurrenderDataRef"
+00006:  15  not
+00007:  15  ifeq 65 (+58)
+00012:  16  this
+00013:  16  name "xs"
+00018:  16  getprop "Tools"
+00023:  16  getprop "CfgData"
+00028:  16  dup
+00029:  16  callprop "readRecordByTypeAndKey"
+00034:  16  swap
+00035:  16  notearg
+00036:  17  this
+00037:  17  getprop "CfgDataTypeSec"
+00042:  17  notearg
+00043:  18  this
+00044:  18  dup
+00045:  18  callprop "_getGid"
+00050:  18  swap
+00051:  18  notearg
+00052:  18  call 0
+00055:  18  notearg
+00056:  18  call 2
+00059:  18  setprop "cacheGeneralSurrenderDataRef"
+00064:  18  pop
+00065:  21  this
+00066:  21  getprop "cacheGeneralSurrenderDataRef"
+00071:  21  return
+00072:  21  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:14 ---
+;; function object[1] _getSurrenderDataRef
+;; function metadata object[1] nargs=0 bindings=1
+;; local[0] surrenderDataRef
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:24 ---
+loc   line  op
+----- ----  --
+main:
+00000:  25  name "xs"
+00005:  25  getprop "Tools"
+00010:  25  getprop "CfgData"
+00015:  25  dup
+00016:  25  callprop "readRecordByTypeAndKey"
+00021:  25  swap
+00022:  25  notearg
+00023:  26  this
+00024:  26  getprop "CfgDataType"
+00029:  26  notearg
+00030:  27  this
+00031:  27  dup
+00032:  27  callprop "_getSurrenderId"
+00037:  27  swap
+00038:  27  notearg
+00039:  27  call 0
+00042:  27  notearg
+00043:  27  call 2
+00046:  27  setlocal 0
+00049:  27  pop
+00050:  29  getlocal 0
+00053:  29  return
+00054:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:24 ---
+;; function object[2] init
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  33  this
+00001:  33  dup
+00002:  33  callprop "_super"
+00007:  33  swap
+00008:  33  notearg
+00009:  33  call 0
+00012:  33  pop
+00013:  35  this
+00014:  35  zero
+00015:  35  setprop "gid"
+00020:  35  pop
+00021:  36  this
+00022:  36  string ""
+00027:  36  setprop "surrender_list"
+00032:  36  pop
+00033:  37  this
+00034:  37  zero
+00035:  37  setprop "item_id"
+00040:  37  pop
+00041:  38  this
+00042:  38  zero
+00043:  38  setprop "item_status"
+00048:  38  pop
+00049:  39  this
+00050:  39  false
+00051:  39  setprop "all_status"
+00056:  39  pop
+00057:  40  this
+00058:  40  string ""
+00063:  40  setprop "complated_list"
+00068:  40  pop
+00069:  41  true
+00070:  41  return
+00071:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:32 ---
+;; function object[3] loadJson
+;; function metadata object[3] nargs=3 bindings=9
+;; arg[0] gid
+;; arg[1] json
+;; arg[2] status
+;; local[0] surrenderList
+;; local[1] i
+;; local[2] _surrender_id
+;; local[3] _surrender
+;; local[4] _surrender_cfg
+;; local[5] govern
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  this
+00001:  45  dup
+00002:  45  callprop "_setGid"
+00007:  45  swap
+00008:  45  notearg
+00009:  45  getarg 0
+00012:  45  notearg
+00013:  45  call 1
+00016:  45  pop
+00017:  47  getarg 1
+00020:  47  getprop "surrender_list"
+00025:  47  setlocal 0
+00028:  47  pop
+00029:  50  getarg 2
+00032:  50  one
+00033:  50  eq
+00034:  50  ifeq 51 (+17)
+00039:  52  getarg 1
+00042:  52  getprop "evolution_surrender_list"
+00047:  52  setlocal 0
+00050:  52  pop
+00051:  56  this
+00052:  56  newarray 0
+00056:  56  endinit
+00057:  56  setprop "surrender_list"
+00062:  56  pop
+00063:  58  zero
+00064:  58  setlocal 1
+00067:  58  pop
+00068:  58  goto 387 (+319)
+00073:  59  loophead
+00074:  59  getlocal 0
+00077:  59  getlocal 1
+00080:  59  getelem
+00081:  59  getprop "surrender_id"
+00086:  59  setlocal 2
+00089:  59  pop
+00090:  64  newarray 0
+00094:  64  endinit
+00095:  64  setlocal 3
+00098:  64  pop
+00099:  65  getlocal 3
+00102:  65  getlocal 2
+00105:  65  setprop "surrender_id"
+00110:  65  pop
+00111:  66  this
+00112:  66  dup
+00113:  66  callprop "_setSurrenderId"
+00118:  66  swap
+00119:  66  notearg
+00120:  66  getlocal 2
+00123:  66  notearg
+00124:  66  call 1
+00127:  66  pop
+00128:  67  this
+00129:  67  dup
+00130:  67  callprop "_getSurrenderDataRef"
+00135:  67  swap
+00136:  67  notearg
+00137:  67  call 0
+00140:  67  setlocal 4
+00143:  67  pop
+00144:  68  getlocal 3
+00147:  68  getlocal 4
+00150:  68  getprop "surrender_title"
+00155:  68  setprop "surrender_title"
+00160:  68  pop
+00161:  69  getlocal 3
+00164:  69  getlocal 4
+00167:  69  getprop "surrender_desc"
+00172:  69  setprop "surrender_desc"
+00177:  69  pop
+00178:  71  newarray 0
+00182:  71  endinit
+00183:  71  setlocal 5
+00186:  71  pop
+00187:  72  getlocal 5
+00190:  72  name "xs"
+00195:  72  getprop "Constant_ObjType_PlayerAttr"
+00200:  72  setprop "type"
+00205:  72  pop
+00206:  73  getlocal 5
+00209:  73  name "xs"
+00214:  73  getprop "Models"
+00219:  73  getprop "AddPlayerInfoType_TeamPoint"
+00224:  73  setprop "id"
+00229:  73  pop
+00230:  74  getlocal 5
+00233:  74  getlocal 4
+00236:  74  getprop "govern_value"
+00241:  74  setprop "num"
+00246:  74  pop
+00247:  75  getlocal 3
+00250:  75  getlocal 5
+00253:  75  setprop "govern"
+00258:  75  pop
+00259:  77  getlocal 3
+00262:  77  getlocal 4
+00265:  77  getprop "govern_value"
+00270:  77  setprop "govern_value"
+00275:  77  pop
+00276:  78  getlocal 3
+00279:  78  getlocal 4
+00282:  78  getprop "progress_num"
+00287:  78  setprop "progress_num"
+00292:  78  pop
+00293:  80  getlocal 3
+00296:  80  getlocal 0
+00299:  80  getlocal 1
+00302:  80  getelem
+00303:  80  getprop "progress_num"
+00308:  80  setprop "progressed_num"
+00313:  80  pop
+00314:  81  getlocal 3
+00317:  81  getlocal 0
+00320:  81  getlocal 1
+00323:  81  getelem
+00324:  81  getprop "surrender_status"
+00329:  81  setprop "surrender_status"
+00334:  81  pop
+00335:  84  getlocal 3
+00338:  84  getlocal 4
+00341:  84  getprop "source"
+00346:  84  setprop "source"
+00351:  84  pop
+00352:  87  this
+00353:  87  getprop "surrender_list"
+00358:  87  dup
+00359:  87  callprop "push"
+00364:  87  swap
+00365:  87  notearg
+00366:  87  getlocal 3
+00369:  87  notearg
+00370:  87  call 1
+00373:  87  pop
+00374:  58  inclocal 9
+00377:  58  getlocal 1
+00380:  58  pos
+00381:  58  one
+00382:  58  add
+00383:  58  setlocal 1
+00386:  58  pop
+00387:  58  loopentry
+00388:  58  getlocal 1
+00391:  58  getlocal 0
+00394:  58  length "length"
+00399:  58  lt
+00400:  58  ifne 73 (-327)
+00405:  90  this
+00406:  90  getarg 1
+00409:  90  getprop "item_id"
+00414:  90  setprop "item_id"
+00419:  90  pop
+00420:  91  this
+00421:  91  getarg 1
+00424:  91  getprop "item_status"
+00429:  91  setprop "item_status"
+00434:  91  pop
+00435:  92  getarg 2
+00438:  92  one
+00439:  92  eq
+00440:  92  ifeq 475 (+35)
+00445:  94  this
+00446:  94  getarg 1
+00449:  94  getprop "evolution_item_id"
+00454:  94  setprop "item_id"
+00459:  94  pop
+00460:  95  this
+00461:  95  getarg 1
+00464:  95  getprop "evolution_item_status"
+00469:  95  setprop "item_status"
+00474:  95  pop
+00475:  97  name "xs"
+00480:  97  dup
+00481:  97  callprop "log_ck"
+00486:  97  swap
+00487:  97  notearg
+00488:  97  string "\u6570\u636E\u89E3\u6790\u5B8C\u6210"
+00493:  97  notearg
+00494:  97  call 1
+00497:  97  pop
+00498:  97  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:44 ---
+;; function object[4] _setGid
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] gid
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:102 ---
+loc   line  op
+----- ----  --
+main:
+00000: 103  this
+00001: 103  getarg 0
+00004: 103  setprop "gid"
+00009: 103  pop
+00010: 104  null
+00011: 104  return
+00012: 104  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:102 ---
+;; function object[5] _getGid
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:107 ---
+loc   line  op
+----- ----  --
+main:
+00000: 108  this
+00001: 108  getprop "gid"
+00006: 108  return
+00007: 108  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:107 ---
+;; function object[6] _setSurrenderId
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] surrender_id
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:111 ---
+loc   line  op
+----- ----  --
+main:
+00000: 112  this
+00001: 112  getarg 0
+00004: 112  setprop "surrender_id"
+00009: 112  pop
+00010: 113  null
+00011: 113  return
+00012: 113  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:111 ---
+;; function object[7] _getSurrenderId
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:116 ---
+loc   line  op
+----- ----  --
+main:
+00000: 117  this
+00001: 117  getprop "surrender_id"
+00006: 117  return
+00007: 117  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:116 ---
+;; function object[8] getAchieveData
+;; function metadata object[8] nargs=2 bindings=10
+;; arg[0] gid
+;; arg[1] json
+;; local[0] complete_list
+;; local[1] all_status
+;; local[2] all_progress
+;; local[3] all_progressed
+;; local[4] i
+;; local[5] _surrender
+;; local[6] _surrender_cfg
+;; local[7] govern
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:120 ---
+loc   line  op
+----- ----  --
+main:
+00000: 121  this
+00001: 121  dup
+00002: 121  callprop "_setGid"
+00007: 121  swap
+00008: 121  notearg
+00009: 121  getarg 0
+00012: 121  notearg
+00013: 121  call 1
+00016: 121  pop
+00017: 122  getarg 1
+00020: 122  getprop "complete_list"
+00025: 122  setlocal 0
+00028: 122  pop
+00029: 123  getlocal 0
+00032: 123  name "undefined"
+00037: 123  strictne
+00038: 123  ifeq 472 (+434)
+00043: 124  getarg 1
+00046: 124  getprop "all_status"
+00051: 124  setlocal 1
+00054: 124  pop
+00055: 125  this
+00056: 125  getlocal 1
+00059: 125  one
+00060: 125  eq
+00061: 125  ifeq 72 (+11)
+00066: 125  true
+00067: 125  goto 73 (+6)
+00072: 125  false
+00073: 125  setprop "all_status"
+00078: 125  pop
+00079: 126  getarg 1
+00082: 126  getprop "all_progress"
+00087: 126  setlocal 2
+00090: 126  pop
+00091: 127  getarg 1
+00094: 127  getprop "all_progressed"
+00099: 127  setlocal 3
+00102: 127  pop
+00103: 128  getlocal 3
+00106: 128  getlocal 0
+00109: 128  length "length"
+00114: 128  sub
+00115: 128  setlocal 3
+00118: 128  pop
+00119: 129  this
+00120: 129  newarray 0
+00124: 129  endinit
+00125: 129  setprop "surrender_list"
+00130: 129  pop
+00131: 130  zero
+00132: 130  setlocal 4
+00135: 130  pop
+00136: 130  goto 454 (+318)
+00141: 131  loophead
+00142: 131  newarray 0
+00146: 131  endinit
+00147: 131  setlocal 5
+00150: 131  pop
+00151: 132  getlocal 5
+00154: 132  getlocal 0
+00157: 132  getlocal 4
+00160: 132  getelem
+00161: 132  setprop "surrender_id"
+00166: 132  pop
+00167: 133  this
+00168: 133  dup
+00169: 133  callprop "_setSurrenderId"
+00174: 133  swap
+00175: 133  notearg
+00176: 133  getlocal 0
+00179: 133  getlocal 4
+00182: 133  getelem
+00183: 133  notearg
+00184: 133  call 1
+00187: 133  pop
+00188: 134  this
+00189: 134  dup
+00190: 134  callprop "_getSurrenderDataRef"
+00195: 134  swap
+00196: 134  notearg
+00197: 134  call 0
+00200: 134  setlocal 6
+00203: 134  pop
+00204: 135  getlocal 5
+00207: 135  getlocal 6
+00210: 135  getprop "surrender_title"
+00215: 135  setprop "surrender_title"
+00220: 135  pop
+00221: 136  getlocal 5
+00224: 136  getlocal 6
+00227: 136  getprop "surrender_desc"
+00232: 136  setprop "surrender_desc"
+00237: 136  pop
+00238: 137  newarray 0
+00242: 137  endinit
+00243: 137  setlocal 7
+00246: 137  pop
+00247: 138  getlocal 7
+00250: 138  name "xs"
+00255: 138  getprop "Constant_ObjType_PlayerAttr"
+00260: 138  setprop "type"
+00265: 138  pop
+00266: 139  getlocal 7
+00269: 139  name "xs"
+00274: 139  getprop "Models"
+00279: 139  getprop "AddPlayerInfoType_TeamPoint"
+00284: 139  setprop "id"
+00289: 139  pop
+00290: 140  getlocal 7
+00293: 140  getlocal 6
+00296: 140  getprop "govern_value"
+00301: 140  setprop "num"
+00306: 140  pop
+00307: 141  getlocal 5
+00310: 141  getlocal 7
+00313: 141  setprop "govern"
+00318: 141  pop
+00319: 142  getlocal 5
+00322: 142  getlocal 6
+00325: 142  getprop "govern_value"
+00330: 142  setprop "govern_value"
+00335: 142  pop
+00336: 143  getlocal 5
+00339: 143  getlocal 6
+00342: 143  getprop "progress_num"
+00347: 143  setprop "progress_num"
+00352: 143  pop
+00353: 144  getlocal 5
+00356: 144  getlocal 6
+00359: 144  getprop "progress_num"
+00364: 144  setprop "progressed_num"
+00369: 144  pop
+00370: 145  getlocal 5
+00373: 145  one
+00374: 145  setprop "surrender_status"
+00379: 145  pop
+00380: 146  getlocal 5
+00383: 146  getlocal 2
+00386: 146  setprop "all_progress"
+00391: 146  pop
+00392: 147  localinc 11
+00395: 147  getlocal 3
+00398: 147  pos
+00399: 147  dup
+00400: 147  one
+00401: 147  add
+00402: 147  setlocal 3
+00405: 147  pop
+00406: 147  pop
+00407: 148  getlocal 5
+00410: 148  getlocal 3
+00413: 148  setprop "all_progressed"
+00418: 148  pop
+00419: 149  this
+00420: 149  getprop "surrender_list"
+00425: 149  dup
+00426: 149  callprop "push"
+00431: 149  swap
+00432: 149  notearg
+00433: 149  getlocal 5
+00436: 149  notearg
+00437: 149  call 1
+00440: 149  pop
+00441: 130  inclocal 9
+00444: 130  getlocal 4
+00447: 130  pos
+00448: 130  one
+00449: 130  add
+00450: 130  setlocal 4
+00453: 130  pop
+00454: 130  loopentry
+00455: 130  getlocal 4
+00458: 130  getlocal 0
+00461: 130  length "length"
+00466: 130  lt
+00467: 130  ifne 141 (-326)
+00472: 151  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:120 ---
+;; function object[9] getSurrenderList
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:155 ---
+loc   line  op
+----- ----  --
+main:
+00000: 156  this
+00001: 156  getprop "surrender_list"
+00006: 156  return
+00007: 156  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:155 ---
+;; function object[10] getAllStatus
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:160 ---
+loc   line  op
+----- ----  --
+main:
+00000: 161  this
+00001: 161  getprop "all_status"
+00006: 161  return
+00007: 161  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:160 ---
+;; function object[11] createWithJson
+;; function metadata object[11] nargs=3 bindings=4
+;; arg[0] gid
+;; arg[1] json_data
+;; arg[2] status
+;; local[0] card
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:168 ---
+loc   line  op
+----- ----  --
+main:
+00000: 169  name "xs"
+00005: 169  getprop "Models"
+00010: 169  getprop "Surrender"
+00015: 169  undefined
+00016: 169  notearg
+00017: 169  new 0
+00020: 169  setlocal 0
+00023: 169  pop
+00024: 170  getlocal 0
+00027: 170  and 47 (+20)
+00032: 170  pop
+00033: 170  getlocal 0
+00036: 170  dup
+00037: 170  callprop "init"
+00042: 170  swap
+00043: 170  notearg
+00044: 170  call 0
+00047: 170  ifeq 83 (+36)
+00052: 171  getlocal 0
+00055: 171  dup
+00056: 171  callprop "loadJson"
+00061: 171  swap
+00062: 171  notearg
+00063: 171  getarg 0
+00066: 171  notearg
+00067: 171  getarg 1
+00070: 171  notearg
+00071: 171  getarg 2
+00074: 171  notearg
+00075: 171  call 3
+00078: 171  pop
+00079: 172  getlocal 0
+00082: 172  return
+00083: 174  null
+00084: 174  return
+00085: 174  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:168 ---
+;; function object[12] create
+;; function metadata object[12] nargs=2 bindings=3
+;; arg[0] gid
+;; arg[1] json_data
+;; local[0] card
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:178 ---
+loc   line  op
+----- ----  --
+main:
+00000: 179  name "xs"
+00005: 179  getprop "Models"
+00010: 179  getprop "Surrender"
+00015: 179  undefined
+00016: 179  notearg
+00017: 179  new 0
+00020: 179  setlocal 0
+00023: 179  pop
+00024: 180  getlocal 0
+00027: 180  and 47 (+20)
+00032: 180  pop
+00033: 180  getlocal 0
+00036: 180  dup
+00037: 180  callprop "init"
+00042: 180  swap
+00043: 180  notearg
+00044: 180  call 0
+00047: 180  ifeq 84 (+37)
+00052: 181  getlocal 0
+00055: 181  dup
+00056: 181  callprop "getAchieveData"
+00061: 181  swap
+00062: 181  notearg
+00063: 181  getarg 0
+00066: 181  notearg
+00067: 181  getarg 1
+00070: 181  notearg
+00071: 181  call 2
+00074: 181  pop
+00075: 182  getlocal 0
+00078: 182  getprop "surrender_list"
+00083: 182  return
+00084: 184  null
+00085: 184  return
+00086: 184  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Surrender.js:178 ---

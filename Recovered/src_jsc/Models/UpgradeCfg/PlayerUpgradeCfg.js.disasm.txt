@@ -1,0 +1,355 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=63 object[0]
+;; FUNCTION-MAP kind=lambda offset=73 object[1]
+;; FUNCTION-MAP kind=lambda offset=83 object[2]
+;; FUNCTION-MAP kind=lambda offset=93 object[3]
+;; FUNCTION-MAP kind=lambda offset=103 object[4]
+;; FUNCTION-MAP kind=lambda offset=113 object[5]
+;; FUNCTION-MAP kind=lambda offset=123 object[6]
+;; FUNCTION-MAP kind=lambda offset=133 object[7]
+;; FUNCTION-MAP kind=lambda offset=169 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Models"
+00010:  10  name "xs"
+00015:  10  getprop "Models"
+00020:  10  getprop "BaseUpgradeCfg"
+00025:  10  dup
+00026:  10  callprop "extend"
+00031:  10  swap
+00032:  10  notearg
+00033:  10  newinit 1
+00038:  12  name "xs"
+00043:  12  getprop "Constant_CfgDataType_Player_Upgrade"
+00048:  12  initprop "CfgDataType"
+00053:  14  string "PlayerUpgradeCfg"
+00058:  14  initprop "name"
+00063:  16  lambda (function () {
+    [sourceless code]
+})
+00068:  16  initprop "readBaseData"
+00073:  23  lambda (function () {
+    [sourceless code]
+})
+00078:  23  initprop "getLevelDataRef"
+00083:  34  lambda (function () {
+    [sourceless code]
+})
+00088:  34  initprop "getNum"
+00093:  39  lambda (function () {
+    [sourceless code]
+})
+00098:  39  initprop "getMaxPower"
+00103:  44  lambda (function () {
+    [sourceless code]
+})
+00108:  44  initprop "getMaxEnergy"
+00113:  49  lambda (function () {
+    [sourceless code]
+})
+00118:  49  initprop "getTeamMaxNum"
+00123:  55  lambda (function () {
+    [sourceless code]
+})
+00128:  55  initprop "getEquipmentUpgradeTotalLevel"
+00133:  60  lambda (function () {
+    [sourceless code]
+})
+00138:  60  initprop "getCombatMaxLevel"
+00143:  60  endinit
+00144:  60  notearg
+00145:  60  call 1
+00148:  60  setprop "PlayerUpgradeCfg"
+00153:  60  popv
+00154:  65  name "xs"
+00159:  65  getprop "Models"
+00164:  65  getprop "PlayerUpgradeCfg"
+00169:  65  lambda (function () {
+    [sourceless code]
+})
+00174:  65  setprop "createWithBase"
+00179:  65  popv
+00180:  72  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:1 ---
+;; function object[0] readBaseData
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] level
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  name "xs"
+00005:  18  dup
+00006:  18  callprop "assert"
+00011:  18  swap
+00012:  18  notearg
+00013:  18  this
+00014:  18  getprop "CfgDataType"
+00019:  18  notearg
+00020:  18  string "need override CfgDataType"
+00025:  18  notearg
+00026:  18  this
+00027:  18  getprop "name"
+00032:  18  notearg
+00033:  18  call 3
+00036:  18  pop
+00037:  20  this
+00038:  20  dup
+00039:  20  callprop "setLevel"
+00044:  20  swap
+00045:  20  notearg
+00046:  20  getarg 0
+00049:  20  notearg
+00050:  20  call 1
+00053:  20  pop
+00054:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:16 ---
+;; function object[1] getLevelDataRef
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:23 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  this
+00001:  24  getprop "cacheLevelDataRef"
+00006:  24  not
+00007:  24  ifeq 67 (+60)
+00012:  25  this
+00013:  25  name "xs"
+00018:  25  getprop "Tools"
+00023:  25  getprop "CfgData"
+00028:  25  dup
+00029:  25  callprop "readRecordByTypeAndKey"
+00034:  25  swap
+00035:  25  notearg
+00036:  26  this
+00037:  26  getprop "CfgDataType"
+00042:  26  notearg
+00043:  27  this
+00044:  27  dup
+00045:  27  callprop "getLevel"
+00050:  27  swap
+00051:  27  notearg
+00052:  27  call 0
+00055:  27  one
+00056:  27  sub
+00057:  27  notearg
+00058:  27  call 2
+00061:  27  setprop "cacheLevelDataRef"
+00066:  27  pop
+00067:  30  this
+00068:  30  getprop "cacheLevelDataRef"
+00073:  30  return
+00074:  30  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:23 ---
+;; function object[2] getNum
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  name "xs"
+00005:  35  getprop "Utils"
+00010:  35  dup
+00011:  35  callprop "parseFloatSafe"
+00016:  35  swap
+00017:  35  notearg
+00018:  35  this
+00019:  35  dup
+00020:  35  callprop "getLevelDataRef"
+00025:  35  swap
+00026:  35  notearg
+00027:  35  call 0
+00030:  35  getprop "exp_need"
+00035:  35  notearg
+00036:  35  call 1
+00039:  35  return
+00040:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:34 ---
+;; function object[3] getMaxPower
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  name "xs"
+00005:  40  getprop "Utils"
+00010:  40  dup
+00011:  40  callprop "parseFloatSafe"
+00016:  40  swap
+00017:  40  notearg
+00018:  40  this
+00019:  40  dup
+00020:  40  callprop "getLevelDataRef"
+00025:  40  swap
+00026:  40  notearg
+00027:  40  call 0
+00030:  40  getprop "max_power"
+00035:  40  notearg
+00036:  40  call 1
+00039:  40  return
+00040:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:39 ---
+;; function object[4] getMaxEnergy
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  name "xs"
+00005:  45  getprop "Utils"
+00010:  45  dup
+00011:  45  callprop "parseFloatSafe"
+00016:  45  swap
+00017:  45  notearg
+00018:  45  this
+00019:  45  dup
+00020:  45  callprop "getLevelDataRef"
+00025:  45  swap
+00026:  45  notearg
+00027:  45  call 0
+00030:  45  getprop "max_energy"
+00035:  45  notearg
+00036:  45  call 1
+00039:  45  return
+00040:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:44 ---
+;; function object[5] getTeamMaxNum
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  name "xs"
+00005:  50  getprop "Utils"
+00010:  50  dup
+00011:  50  callprop "parseFloatSafe"
+00016:  50  swap
+00017:  50  notearg
+00018:  50  this
+00019:  50  dup
+00020:  50  callprop "getLevelDataRef"
+00025:  50  swap
+00026:  50  notearg
+00027:  50  call 0
+00030:  50  getprop "team_num"
+00035:  50  notearg
+00036:  50  call 1
+00039:  50  return
+00040:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:49 ---
+;; function object[6] getEquipmentUpgradeTotalLevel
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:55 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  name "xs"
+00005:  56  getprop "Utils"
+00010:  56  dup
+00011:  56  callprop "parseFloatSafe"
+00016:  56  swap
+00017:  56  notearg
+00018:  56  this
+00019:  56  dup
+00020:  56  callprop "getLevelDataRef"
+00025:  56  swap
+00026:  56  notearg
+00027:  56  call 0
+00030:  56  getprop "equipment_upgrade_total_level"
+00035:  56  notearg
+00036:  56  call 1
+00039:  56  return
+00040:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:55 ---
+;; function object[7] getCombatMaxLevel
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  61  name "xs"
+00005:  61  getprop "Utils"
+00010:  61  dup
+00011:  61  callprop "parseIntSafe"
+00016:  61  swap
+00017:  61  notearg
+00018:  61  this
+00019:  61  dup
+00020:  61  callprop "getLevelDataRef"
+00025:  61  swap
+00026:  61  notearg
+00027:  61  call 0
+00030:  61  getprop "combat_max_level"
+00035:  61  notearg
+00036:  61  call 1
+00039:  61  return
+00040:  61  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:60 ---
+;; function object[8] createWithBase
+;; function metadata object[8] nargs=1 bindings=2
+;; arg[0] level
+;; local[0] cfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:65 ---
+loc   line  op
+----- ----  --
+main:
+00000:  66  name "xs"
+00005:  66  getprop "Models"
+00010:  66  getprop "PlayerUpgradeCfg"
+00015:  66  undefined
+00016:  66  notearg
+00017:  66  new 0
+00020:  66  setlocal 0
+00023:  66  pop
+00024:  67  getlocal 0
+00027:  67  and 47 (+20)
+00032:  67  pop
+00033:  67  getlocal 0
+00036:  67  dup
+00037:  67  callprop "init"
+00042:  67  swap
+00043:  67  notearg
+00044:  67  call 0
+00047:  67  ifeq 75 (+28)
+00052:  68  getlocal 0
+00055:  68  dup
+00056:  68  callprop "readBaseData"
+00061:  68  swap
+00062:  68  notearg
+00063:  68  getarg 0
+00066:  68  notearg
+00067:  68  call 1
+00070:  68  pop
+00071:  69  getlocal 0
+00074:  69  return
+00075:  71  null
+00076:  71  return
+00077:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/PlayerUpgradeCfg.js:65 ---

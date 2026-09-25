@@ -1,0 +1,367 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/TemplatePartBuff.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/TemplatePartBuff.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Utils"
+00010:   8  dup
+00011:   8  callprop "extendScope"
+00016:   8  swap
+00017:   8  notearg
+00018:   9  name "xs"
+00023:   9  getprop "Cfg"
+00028:   9  getprop "Skill"
+00033:   9  getprop "template"
+00038:   9  getprop "part"
+00043:   9  notearg
+00044:  10  newinit 1
+00049:  12  newinit 1
+00054:  13  newinit 1
+00059:  14  newinit 1
+00064:  15  string "template.item.TI_Arm_To"
+00069:  15  initprop "extend"
+00074:  16  newinit 1
+00079:  17  string "Arm_Treat"
+00084:  17  initprop "armatureId"
+00089:  17  endinit
+00090:  17  initprop "property"
+00095:  19  newinit 1
+00100:  20  newinit 1
+00105:  20  string "treat"
+00110:  20  initprop "aniId"
+00115:  20  endinit
+00116:  20  initprop "_play"
+00121:  20  endinit
+00122:  20  initprop "timelines"
+00127:  20  endinit
+00128:  20  initprop "_effect"
+00133:  23  newinit 1
+00138:  24  string "template.item.TI_Text_Cure_To"
+00143:  24  initprop "extend"
+00148:  24  endinit
+00149:  24  initprop "_text"
+00154:  26  newinit 1
+00159:  27  string "template.item.TI_Hp_Add_Top_To"
+00164:  27  initprop "extend"
+00169:  27  endinit
+00170:  27  initprop "_to_hp_top"
+00175:  29  newinit 1
+00180:  30  string "template.item.TI_Hp_Add_Bot_To"
+00185:  30  initprop "extend"
+00190:  30  endinit
+00191:  30  initprop "_to_hp_bot"
+00196:  30  endinit
+00197:  30  initprop "items"
+00202:  30  endinit
+00203:  30  initprop "TP_Cure_To"
+00208:  34  newinit 1
+00213:  35  string "template.part.TP_Cure_To"
+00218:  35  initprop "extend"
+00223:  36  newinit 1
+00228:  37  newinit 1
+00233:  38  string "template.item.TI_Arm_From"
+00238:  38  initprop "extend"
+00243:  38  endinit
+00244:  38  initprop "_effect"
+00249:  40  newinit 1
+00254:  41  string "template.item.TI_Text_Cure_From"
+00259:  41  initprop "extend"
+00264:  41  endinit
+00265:  41  initprop "_text"
+00270:  43  newinit 1
+00275:  44  string "template.item.TI_Hp_Add_Top_From"
+00280:  44  initprop "extend"
+00285:  44  endinit
+00286:  44  initprop "_to_hp_top"
+00291:  46  newinit 1
+00296:  47  string "template.item.TI_Hp_Add_Bot_From"
+00301:  47  initprop "extend"
+00306:  47  endinit
+00307:  47  initprop "_to_hp_bot"
+00312:  47  endinit
+00313:  47  initprop "items"
+00318:  47  endinit
+00319:  47  initprop "TP_Cure_From"
+00324:  56  newinit 1
+00329:  57  newinit 1
+00334:  58  newinit 1
+00339:  59  newinit 1
+00344:  60  string "from"
+00349:  60  initprop "type"
+00354:  61  string "from"
+00359:  61  initprop "belong"
+00364:  62  newarray 1
+00368:  62  string "backup"
+00373:  62  initelem_array 0
+00377:  62  endinit
+00378:  62  initprop "ignore"
+00383:  62  endinit
+00384:  62  initprop "property"
+00389:  64  newinit 1
+00394:  65  null
+00395:  65  initprop "_delay"
+00400:  66  newinit 1
+00405:  66  string "createAction"
+00410:  66  initprop "type"
+00415:  66  string "createPlayAniActions"
+00420:  66  initprop "name"
+00425:  66  newinit 1
+00430:  66  string "ani_idle"
+00435:  66  initprop "aniId"
+00440:  66  newinit 1
+00445:  66  one
+00446:  66  initprop "speed"
+00451:  66  endinit
+00452:  66  initprop "control"
+00457:  66  endinit
+00458:  66  initprop "data"
+00463:  66  endinit
+00464:  66  initprop "_card"
+00469:  66  endinit
+00470:  66  initprop "timelines"
+00475:  66  endinit
+00476:  66  initprop "_effect"
+00481:  69  newinit 1
+00486:  70  string "template.item.TI_Text_Hurt_From"
+00491:  70  initprop "extend"
+00496:  70  endinit
+00497:  70  initprop "_text"
+00502:  72  newinit 1
+00507:  72  string "template.item.TI_Hp_Sub_Top_From"
+00512:  72  initprop "extend"
+00517:  72  endinit
+00518:  72  initprop "_to_hp_top"
+00523:  73  newinit 1
+00528:  73  string "template.item.TI_Hp_Sub_Bot_From"
+00533:  73  initprop "extend"
+00538:  73  endinit
+00539:  73  initprop "_to_hp_bot"
+00544:  73  endinit
+00545:  73  initprop "items"
+00550:  73  endinit
+00551:  73  initprop "TP_Hurt_From"
+00556:  79  newinit 1
+00561:  80  newinit 1
+00566:  81  newinit 1
+00571:  82  string "template.item.TI_Arm_Near_From"
+00576:  82  initprop "extend"
+00581:  83  newinit 1
+00586:  84  string "Arm_Fight_SkillName"
+00591:  84  initprop "armatureId"
+00596:  85  newarray 1
+00600:  85  string "death"
+00605:  85  initelem_array 0
+00609:  85  endinit
+00610:  85  initprop "ignore"
+00615:  86  true
+00616:  86  initprop "ui"
+00621:  86  endinit
+00622:  86  initprop "property"
+00627:  88  newinit 1
+00632:  89  newinit 1
+00637:  89  string "override TP_Buff_From"
+00642:  89  initprop "aniId"
+00647:  89  endinit
+00648:  89  initprop "_play"
+00653:  89  endinit
+00654:  89  initprop "timelines"
+00659:  89  endinit
+00660:  89  initprop "_buff"
+00665:  89  endinit
+00666:  89  initprop "items"
+00671:  89  endinit
+00672:  89  initprop "TP_Buff_From"
+00677:  95  newinit 1
+00682:  96  newinit 1
+00687:  97  newinit 1
+00692:  98  string "template.item.TI_Arm_From"
+00697:  98  initprop "extend"
+00702:  99  newinit 1
+00707: 100  string "Arm_Fight_Buff"
+00712: 100  initprop "armatureId"
+00717: 101  newarray 1
+00721: 101  string "death"
+00726: 101  initelem_array 0
+00730: 101  endinit
+00731: 101  initprop "ignore"
+00736: 101  endinit
+00737: 101  initprop "property"
+00742: 103  newinit 1
+00747: 104  newinit 1
+00752: 104  string "ani_buff_up"
+00757: 104  initprop "aniId"
+00762: 104  endinit
+00763: 104  initprop "_play"
+00768: 104  endinit
+00769: 104  initprop "timelines"
+00774: 104  endinit
+00775: 104  initprop "_buff_effect"
+00780: 104  endinit
+00781: 104  initprop "items"
+00786: 104  endinit
+00787: 104  initprop "TP_Buff_Add_From"
+00792: 111  newinit 1
+00797: 112  newinit 1
+00802: 113  newinit 1
+00807: 114  string "template.item.TI_Arm_Near_UI_To"
+00812: 114  initprop "extend"
+00817: 115  newinit 1
+00822: 116  string "Arm_Fight_SkillName"
+00827: 116  initprop "armatureId"
+00832: 117  newarray 1
+00836: 117  string "death"
+00841: 117  initelem_array 0
+00845: 117  endinit
+00846: 117  initprop "ignore"
+00851: 118  true
+00852: 118  initprop "ui"
+00857: 118  endinit
+00858: 118  initprop "property"
+00863: 120  newinit 1
+00868: 121  newinit 1
+00873: 121  string "override TP_Buff_To"
+00878: 121  initprop "aniId"
+00883: 121  endinit
+00884: 121  initprop "_play"
+00889: 121  endinit
+00890: 121  initprop "timelines"
+00895: 121  endinit
+00896: 121  initprop "_buff"
+00901: 121  endinit
+00902: 121  initprop "items"
+00907: 121  endinit
+00908: 121  initprop "TP_Buff_To"
+00913: 128  newinit 1
+00918: 129  newinit 1
+00923: 130  newinit 1
+00928: 131  string "template.item.TI_Arm_Near_UI_To"
+00933: 131  initprop "extend"
+00938: 132  newinit 1
+00943: 133  string "Arm_Fight_SkillName"
+00948: 133  initprop "armatureId"
+00953: 134  newarray 2
+00957: 134  string "death"
+00962: 134  initelem_array 0
+00966: 134  string "backup"
+00971: 134  initelem_array 1
+00975: 134  endinit
+00976: 134  initprop "ignore"
+00981: 135  true
+00982: 135  initprop "ui"
+00987: 135  endinit
+00988: 135  initprop "property"
+00993: 137  newinit 1
+00998: 138  newinit 1
+01003: 138  string "override TP_Buff_To"
+01008: 138  initprop "aniId"
+01013: 138  endinit
+01014: 138  initprop "_play"
+01019: 138  endinit
+01020: 138  initprop "timelines"
+01025: 138  endinit
+01026: 138  initprop "_buff"
+01031: 138  endinit
+01032: 138  initprop "items"
+01037: 138  endinit
+01038: 138  initprop "TP_Buff_To_NoBak"
+01043: 144  newinit 1
+01048: 145  newinit 1
+01053: 146  newinit 1
+01058: 147  string "template.item.TI_Arm_To"
+01063: 147  initprop "extend"
+01068: 148  newinit 1
+01073: 149  string "Arm_Fight_Buff"
+01078: 149  initprop "armatureId"
+01083: 150  newarray 1
+01087: 150  string "death"
+01092: 150  initelem_array 0
+01096: 150  endinit
+01097: 150  initprop "ignore"
+01102: 150  endinit
+01103: 150  initprop "property"
+01108: 152  newinit 1
+01113: 153  newinit 1
+01118: 153  string "ani_buff_up"
+01123: 153  initprop "aniId"
+01128: 153  endinit
+01129: 153  initprop "_play"
+01134: 153  endinit
+01135: 153  initprop "timelines"
+01140: 153  endinit
+01141: 153  initprop "_buff_effect"
+01146: 153  endinit
+01147: 153  initprop "items"
+01152: 153  endinit
+01153: 153  initprop "TP_Buff_Add_To"
+01158: 161  newinit 1
+01163: 162  newinit 1
+01168: 163  newinit 1
+01173: 164  string "template.item.TI_Arm_To"
+01178: 164  initprop "extend"
+01183: 165  newinit 1
+01188: 166  string "Arm_Fight_Buff"
+01193: 166  initprop "armatureId"
+01198: 167  newarray 1
+01202: 167  string "death"
+01207: 167  initelem_array 0
+01211: 167  endinit
+01212: 167  initprop "ignore"
+01217: 167  endinit
+01218: 167  initprop "property"
+01223: 169  newinit 1
+01228: 170  newinit 1
+01233: 170  string "ani_buff_down"
+01238: 170  initprop "aniId"
+01243: 170  endinit
+01244: 170  initprop "_play"
+01249: 170  endinit
+01250: 170  initprop "timelines"
+01255: 170  endinit
+01256: 170  initprop "_buff_effect"
+01261: 170  endinit
+01262: 170  initprop "items"
+01267: 170  endinit
+01268: 170  initprop "TP_Buff_Sub_To"
+01273: 177  newinit 1
+01278: 178  newinit 1
+01283: 179  newinit 1
+01288: 180  string "template.item.TI_Arm_To"
+01293: 180  initprop "extend"
+01298: 181  newinit 1
+01303: 182  string "Arm_Fight_Buff"
+01308: 182  initprop "armatureId"
+01313: 183  newarray 2
+01317: 183  string "death"
+01322: 183  initelem_array 0
+01326: 183  string "nodef"
+01331: 183  initelem_array 1
+01335: 183  endinit
+01336: 183  initprop "ignore"
+01341: 183  endinit
+01342: 183  initprop "property"
+01347: 185  newinit 1
+01352: 186  newinit 1
+01357: 186  string "ani_buff_down"
+01362: 186  initprop "aniId"
+01367: 186  endinit
+01368: 186  initprop "_play"
+01373: 186  endinit
+01374: 186  initprop "timelines"
+01379: 186  endinit
+01380: 186  initprop "_buff_effect"
+01385: 186  endinit
+01386: 186  initprop "items"
+01391: 186  endinit
+01392: 186  initprop "TP_Buff_Sub_ToByNo"
+01397: 186  endinit
+01398: 186  notearg
+01399: 186  call 2
+01402: 186  popv
+01403: 191  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/TemplatePartBuff.js:1 ---

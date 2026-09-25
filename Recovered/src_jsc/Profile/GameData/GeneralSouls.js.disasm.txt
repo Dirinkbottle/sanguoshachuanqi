@@ -1,0 +1,764 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/GeneralSouls.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=148 object[0]
+;; FUNCTION-MAP kind=lambda offset=158 object[1]
+;; FUNCTION-MAP kind=lambda offset=168 object[2]
+;; FUNCTION-MAP kind=lambda offset=178 object[3]
+;; FUNCTION-MAP kind=lambda offset=188 object[4]
+;; FUNCTION-MAP kind=lambda offset=198 object[5]
+;; FUNCTION-MAP kind=lambda offset=208 object[6]
+;; FUNCTION-MAP kind=lambda offset=218 object[7]
+;; FUNCTION-MAP kind=lambda offset=259 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Profile"
+00010:   8  getprop "GameData"
+00015:   8  name "xs"
+00020:   8  getprop "Profile"
+00025:   8  getprop "GameData"
+00030:   8  getprop "Base"
+00035:   8  dup
+00036:   8  callprop "extend"
+00041:   8  swap
+00042:   8  notearg
+00043:   8  newinit 1
+00048:  10  string "xs.Profile.GameData.GeneralSouls"
+00053:  10  initprop "name"
+00058:  12  name "xs"
+00063:  12  getprop "Constant_GameData_GeneralSoul"
+00068:  12  initprop "nameType"
+00073:  13  name "xs"
+00078:  13  getprop "Models"
+00083:  13  getprop "GeneralSoul"
+00088:  13  initprop "modelName"
+00093:  14  name "xs"
+00098:  14  getprop "Debug"
+00103:  14  getprop "emptyFunc"
+00108:  14  initprop "dump"
+00113:  15  name "xs"
+00118:  15  getprop "Debug"
+00123:  15  getprop "emptyFunc"
+00128:  15  initprop "log"
+00133:  18  name "xs"
+00138:  18  getprop "Constant_SortType_GeneralSoul_Default"
+00143:  18  initprop "sortBy"
+00148:  21  lambda (function () {
+    [sourceless code]
+})
+00153:  21  initprop "init"
+00158:  28  lambda (function () {
+    [sourceless code]
+})
+00163:  28  initprop "getReferenceGeneral"
+00168:  43  lambda (function () {
+    [sourceless code]
+})
+00173:  43  initprop "canReincarnate"
+00178:  57  lambda (function () {
+    [sourceless code]
+})
+00183:  57  initprop "canAbleToBreach"
+00188:  71  lambda (function () {
+    [sourceless code]
+})
+00193:  71  initprop "getAll_canReincarnate"
+00198:  89  lambda (function () {
+    [sourceless code]
+})
+00203:  89  initprop "getAll_breach"
+00208: 123  lambda (function () {
+    [sourceless code]
+})
+00213: 123  initprop "getAll_reincarnate"
+00218: 136  lambda (function () {
+    [sourceless code]
+})
+00223: 136  initprop "getSoulNumsByGeneralId"
+00228: 136  endinit
+00229: 136  notearg
+00230: 136  call 1
+00233: 136  setprop "GeneralSouls"
+00238: 136  popv
+00239: 154  name "xs"
+00244: 154  getprop "Profile"
+00249: 154  getprop "GameData"
+00254: 154  getprop "GeneralSouls"
+00259: 154  lambda (function () {
+    [sourceless code]
+})
+00264: 154  setprop "create"
+00269: 154  popv
+00270: 170  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  this
+00001:  22  dup
+00002:  22  callprop "_super"
+00007:  22  swap
+00008:  22  notearg
+00009:  22  getarg 0
+00012:  22  notearg
+00013:  22  call 1
+00016:  22  pop
+00017:  23  this
+00018:  23  getprop "dataRef"
+00023:  23  dup
+00024:  23  callprop "getNotifyCenter"
+00029:  23  swap
+00030:  23  notearg
+00031:  23  call 0
+00034:  23  dup
+00035:  23  callprop "addObserver"
+00040:  23  swap
+00041:  23  notearg
+00042:  23  this
+00043:  23  notearg
+00044:  23  this
+00045:  23  getprop "clearCache"
+00050:  23  notearg
+00051:  23  name "xs"
+00056:  23  getprop "Constant_Notify_ModelChange_GeneralSoul_SortChange"
+00061:  23  notearg
+00062:  23  call 3
+00065:  23  pop
+00066:  24  true
+00067:  24  return
+00068:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:21 ---
+;; function object[1] getReferenceGeneral
+;; function metadata object[1] nargs=1 bindings=3
+;; arg[0] obj_soul_model
+;; local[0] general_cache
+;; local[1] general
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  getarg 0
+00003:  29  dup
+00004:  29  callprop "_getReferenceGeneralCache"
+00009:  29  swap
+00010:  29  notearg
+00011:  29  call 0
+00014:  29  setlocal 0
+00017:  29  pop
+00018:  31  getlocal 0
+00021:  31  int8 -1
+00023:  31  ne
+00024:  31  ifeq 33 (+9)
+00029:  32  getlocal 0
+00032:  32  return
+00033:  34  this
+00034:  34  dup
+00035:  34  callprop "_initInstance"
+00040:  34  swap
+00041:  34  notearg
+00042:  34  call 0
+00045:  34  getprop "Generals"
+00050:  34  dup
+00051:  34  callprop "getById"
+00056:  34  swap
+00057:  34  notearg
+00058:  34  getarg 0
+00061:  34  dup
+00062:  34  callprop "getId"
+00067:  34  swap
+00068:  34  notearg
+00069:  34  call 0
+00072:  34  notearg
+00073:  34  false
+00074:  34  notearg
+00075:  34  call 2
+00078:  34  zero
+00079:  34  getelem
+00080:  34  setlocal 1
+00083:  34  pop
+00084:  35  getarg 0
+00087:  35  dup
+00088:  35  callprop "_setReferenceGeneralCache"
+00093:  35  swap
+00094:  35  notearg
+00095:  35  getlocal 1
+00098:  35  notearg
+00099:  35  call 1
+00102:  35  pop
+00103:  36  getlocal 1
+00106:  36  ifeq 115 (+9)
+00111:  37  getlocal 1
+00114:  37  return
+00115:  39  null
+00116:  39  return
+00117:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:28 ---
+;; function object[2] canReincarnate
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] obj_model
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  this
+00001:  45  dup
+00002:  45  callprop "getReferenceGeneral"
+00007:  45  swap
+00008:  45  notearg
+00009:  45  getarg 0
+00012:  45  notearg
+00013:  45  call 1
+00016:  45  ifeq 23 (+7)
+00021:  46  false
+00022:  46  return
+00023:  50  getarg 0
+00026:  50  dup
+00027:  50  callprop "getNum"
+00032:  50  swap
+00033:  50  notearg
+00034:  50  call 0
+00037:  50  getarg 0
+00040:  50  dup
+00041:  50  callprop "getReincarnateNum"
+00046:  50  swap
+00047:  50  notearg
+00048:  50  call 0
+00051:  50  lt
+00052:  50  ifeq 59 (+7)
+00057:  51  false
+00058:  51  return
+00059:  53  true
+00060:  53  return
+00061:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:43 ---
+;; function object[3] canAbleToBreach
+;; function metadata object[3] nargs=1 bindings=2
+;; arg[0] obj_model
+;; local[0] general
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:57 ---
+loc   line  op
+----- ----  --
+main:
+00000:  58  this
+00001:  58  dup
+00002:  58  callprop "getReferenceGeneral"
+00007:  58  swap
+00008:  58  notearg
+00009:  58  getarg 0
+00012:  58  notearg
+00013:  58  call 1
+00016:  58  setlocal 0
+00019:  58  pop
+00020:  59  getlocal 0
+00023:  59  ifeq 49 (+26)
+00028:  61  getlocal 0
+00031:  61  dup
+00032:  61  callprop "checkAbleToBreach"
+00037:  61  swap
+00038:  61  notearg
+00039:  61  call 0
+00042:  61  ifeq 49 (+7)
+00047:  62  true
+00048:  62  return
+00049:  64  false
+00050:  64  return
+00051:  64  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:57 ---
+;; function object[4] getAll_canReincarnate
+;; function metadata object[4] nargs=0 bindings=4
+;; local[0] _ret
+;; local[1] _array_all
+;; local[2] i
+;; local[3] _tmp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:71 ---
+loc   line  op
+----- ----  --
+main:
+00000:  72  newarray 0
+00004:  72  endinit
+00005:  72  setlocal 0
+00008:  72  pop
+00009:  73  this
+00010:  73  dup
+00011:  73  callprop "getAll"
+00016:  73  swap
+00017:  73  notearg
+00018:  73  call 0
+00021:  73  setlocal 1
+00024:  73  pop
+00025:  74  zero
+00026:  74  setlocal 2
+00029:  74  pop
+00030:  74  goto 102 (+72)
+00035:  75  loophead
+00036:  75  getlocal 1
+00039:  75  getlocal 2
+00042:  75  getelem
+00043:  75  setlocal 3
+00046:  75  pop
+00047:  77  this
+00048:  77  dup
+00049:  77  callprop "canReincarnate"
+00054:  77  swap
+00055:  77  notearg
+00056:  77  getlocal 3
+00059:  77  notearg
+00060:  77  call 1
+00063:  77  ifeq 87 (+24)
+00068:  78  getlocal 0
+00071:  78  dup
+00072:  78  callprop "push"
+00077:  78  swap
+00078:  78  notearg
+00079:  78  getlocal 3
+00082:  78  notearg
+00083:  78  call 1
+00086:  78  pop
+00087:  74  localinc 11
+00090:  74  getlocal 2
+00093:  74  pos
+00094:  74  dup
+00095:  74  one
+00096:  74  add
+00097:  74  setlocal 2
+00100:  74  pop
+00101:  74  pop
+00102:  74  loopentry
+00103:  74  getlocal 2
+00106:  74  getlocal 1
+00109:  74  length "length"
+00114:  74  lt
+00115:  74  ifne 35 (-80)
+00120:  81  getlocal 0
+00123:  81  return
+00124:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:71 ---
+;; function object[5] getAll_breach
+;; function metadata object[5] nargs=0 bindings=7
+;; local[0] _ret_1
+;; local[1] _ret_2
+;; local[2] _array_all
+;; local[3] i
+;; local[4] _tmp
+;; local[5] general
+;; local[6] _grade
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:89 ---
+loc   line  op
+----- ----  --
+main:
+00000:  90  newarray 0
+00004:  90  endinit
+00005:  90  setlocal 0
+00008:  90  pop
+00009:  91  newarray 0
+00013:  91  endinit
+00014:  91  setlocal 1
+00017:  91  pop
+00018:  92  this
+00019:  92  dup
+00020:  92  callprop "getAll"
+00025:  92  swap
+00026:  92  notearg
+00027:  92  call 0
+00030:  92  setlocal 2
+00033:  92  pop
+00034:  93  zero
+00035:  93  setlocal 3
+00038:  93  pop
+00039:  93  goto 262 (+223)
+00044:  94  loophead
+00045:  94  getlocal 2
+00048:  94  getlocal 3
+00051:  94  getelem
+00052:  94  setlocal 4
+00055:  94  pop
+00056:  97  this
+00057:  97  dup
+00058:  97  callprop "getReferenceGeneral"
+00063:  97  swap
+00064:  97  notearg
+00065:  97  getlocal 4
+00068:  97  notearg
+00069:  97  call 1
+00072:  97  setlocal 5
+00075:  97  pop
+00076:  98  getlocal 5
+00079:  98  ifeq 247 (+168)
+00084:  99  getlocal 5
+00087:  99  dup
+00088:  99  callprop "isBreachToMax"
+00093:  99  swap
+00094:  99  notearg
+00095:  99  call 0
+00098:  99  ifeq 127 (+29)
+00103: 100  getlocal 1
+00106: 100  dup
+00107: 100  callprop "push"
+00112: 100  swap
+00113: 100  notearg
+00114: 100  getlocal 4
+00117: 100  notearg
+00118: 100  call 1
+00121: 100  pop
+00122: 100  goto 247 (+125)
+00127: 102  getlocal 5
+00130: 102  dup
+00131: 102  callprop "getGrade"
+00136: 102  swap
+00137: 102  notearg
+00138: 102  call 0
+00141: 102  setlocal 6
+00144: 102  pop
+00145: 103  getlocal 5
+00148: 103  dup
+00149: 103  callprop "checkAbleToBreach"
+00154: 103  swap
+00155: 103  notearg
+00156: 103  call 0
+00159: 103  and 199 (+40)
+00164: 103  pop
+00165: 103  getlocal 6
+00168: 103  name "xs"
+00173: 103  getprop "Constant_Grade_Demon"
+00178: 103  eq
+00179: 103  or 199 (+20)
+00184: 103  pop
+00185: 103  getlocal 6
+00188: 103  name "xs"
+00193: 103  getprop "Constant_Grade_God"
+00198: 103  eq
+00199: 103  ifeq 228 (+29)
+00204: 104  getlocal 0
+00207: 104  dup
+00208: 104  callprop "push"
+00213: 104  swap
+00214: 104  notearg
+00215: 104  getlocal 4
+00218: 104  notearg
+00219: 104  call 1
+00222: 104  pop
+00223: 104  goto 247 (+24)
+00228: 106  getlocal 1
+00231: 106  dup
+00232: 106  callprop "push"
+00237: 106  swap
+00238: 106  notearg
+00239: 106  getlocal 4
+00242: 106  notearg
+00243: 106  call 1
+00246: 106  pop
+00247:  93  localinc 11
+00250:  93  getlocal 3
+00253:  93  pos
+00254:  93  dup
+00255:  93  one
+00256:  93  add
+00257:  93  setlocal 3
+00260:  93  pop
+00261:  93  pop
+00262:  93  loopentry
+00263:  93  getlocal 3
+00266:  93  getlocal 2
+00269:  93  length "length"
+00274:  93  lt
+00275:  93  ifne 44 (-231)
+00280: 111  getlocal 0
+00283: 111  dup
+00284: 111  callprop "sort"
+00289: 111  swap
+00290: 111  notearg
+00291: 111  name "xs"
+00296: 111  getprop "Tools"
+00301: 111  getprop "Sort"
+00306: 111  dup
+00307: 111  callprop "by"
+00312: 111  swap
+00313: 111  notearg
+00314: 111  name "xs"
+00319: 111  getprop "Constant_SortType_SortGrade"
+00324: 111  notearg
+00325: 111  call 1
+00328: 111  notearg
+00329: 111  call 1
+00332: 111  pop
+00333: 112  getlocal 1
+00336: 112  dup
+00337: 112  callprop "sort"
+00342: 112  swap
+00343: 112  notearg
+00344: 112  name "xs"
+00349: 112  getprop "Tools"
+00354: 112  getprop "Sort"
+00359: 112  dup
+00360: 112  callprop "by"
+00365: 112  swap
+00366: 112  notearg
+00367: 112  name "xs"
+00372: 112  getprop "Constant_SortType_SortGrade"
+00377: 112  notearg
+00378: 112  call 1
+00381: 112  notearg
+00382: 112  call 1
+00385: 112  pop
+00386: 114  getlocal 0
+00389: 114  dup
+00390: 114  callprop "concat"
+00395: 114  swap
+00396: 114  notearg
+00397: 114  getlocal 1
+00400: 114  notearg
+00401: 114  call 1
+00404: 114  setlocal 0
+00407: 114  pop
+00408: 116  getlocal 0
+00411: 116  return
+00412: 116  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:89 ---
+;; function object[6] getAll_reincarnate
+;; function metadata object[6] nargs=0 bindings=4
+;; local[0] _ret
+;; local[1] _array_all
+;; local[2] i
+;; local[3] _tmp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:123 ---
+loc   line  op
+----- ----  --
+main:
+00000: 124  newarray 0
+00004: 124  endinit
+00005: 124  setlocal 0
+00008: 124  pop
+00009: 125  this
+00010: 125  dup
+00011: 125  callprop "getAll"
+00016: 125  swap
+00017: 125  notearg
+00018: 125  call 0
+00021: 125  setlocal 1
+00024: 125  pop
+00025: 126  zero
+00026: 126  setlocal 2
+00029: 126  pop
+00030: 126  goto 103 (+73)
+00035: 127  loophead
+00036: 127  getlocal 1
+00039: 127  getlocal 2
+00042: 127  getelem
+00043: 127  setlocal 3
+00046: 127  pop
+00047: 130  this
+00048: 130  dup
+00049: 130  callprop "getReferenceGeneral"
+00054: 130  swap
+00055: 130  notearg
+00056: 130  getlocal 3
+00059: 130  notearg
+00060: 130  call 1
+00063: 130  not
+00064: 130  ifeq 88 (+24)
+00069: 131  getlocal 0
+00072: 131  dup
+00073: 131  callprop "push"
+00078: 131  swap
+00079: 131  notearg
+00080: 131  getlocal 3
+00083: 131  notearg
+00084: 131  call 1
+00087: 131  pop
+00088: 126  localinc 11
+00091: 126  getlocal 2
+00094: 126  pos
+00095: 126  dup
+00096: 126  one
+00097: 126  add
+00098: 126  setlocal 2
+00101: 126  pop
+00102: 126  pop
+00103: 126  loopentry
+00104: 126  getlocal 2
+00107: 126  getlocal 1
+00110: 126  length "length"
+00115: 126  lt
+00116: 126  ifne 35 (-81)
+00121: 134  getlocal 0
+00124: 134  return
+00125: 134  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:123 ---
+;; function object[7] getSoulNumsByGeneralId
+;; function metadata object[7] nargs=1 bindings=5
+;; arg[0] generalId
+;; local[0] nums
+;; local[1] _array_all
+;; local[2] i
+;; local[3] _tmp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:136 ---
+loc   line  op
+----- ----  --
+main:
+00000: 137  zero
+00001: 137  setlocal 0
+00004: 137  pop
+00005: 138  this
+00006: 138  dup
+00007: 138  callprop "getAll"
+00012: 138  swap
+00013: 138  notearg
+00014: 138  call 0
+00017: 138  setlocal 1
+00020: 138  pop
+00021: 139  zero
+00022: 139  setlocal 2
+00025: 139  pop
+00026: 139  goto 93 (+67)
+00031: 140  loophead
+00032: 140  getlocal 1
+00035: 140  getlocal 2
+00038: 140  getelem
+00039: 140  setlocal 3
+00042: 140  pop
+00043: 142  getlocal 3
+00046: 142  dup
+00047: 142  callprop "getId"
+00052: 142  swap
+00053: 142  notearg
+00054: 142  call 0
+00057: 142  getarg 0
+00060: 142  eq
+00061: 142  ifeq 78 (+17)
+00066: 143  getlocal 3
+00069: 143  getprop "num"
+00074: 143  setlocal 0
+00077: 143  pop
+00078: 139  localinc 11
+00081: 139  getlocal 2
+00084: 139  pos
+00085: 139  dup
+00086: 139  one
+00087: 139  add
+00088: 139  setlocal 2
+00091: 139  pop
+00092: 139  pop
+00093: 139  loopentry
+00094: 139  getlocal 2
+00097: 139  getlocal 1
+00100: 139  length "length"
+00105: 139  lt
+00106: 139  ifne 31 (-75)
+00111: 146  getlocal 0
+00114: 146  return
+00115: 146  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:136 ---
+;; function object[8] create
+;; function metadata object[8] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:154 ---
+loc   line  op
+----- ----  --
+main:
+00000: 155  getarg 0
+00003: 155  getprop "play_id"
+00008: 155  setlocal 0
+00011: 155  pop
+00012: 156  name "xs"
+00017: 156  getprop "Profile"
+00022: 156  getprop "GameData"
+00027: 156  getprop "GeneralSouls"
+00032: 156  setlocal 1
+00035: 156  pop
+00036: 157  name "xs"
+00041: 157  getprop "Utils"
+00046: 157  dup
+00047: 157  callprop "isSet"
+00052: 157  swap
+00053: 157  notearg
+00054: 157  getlocal 1
+00057: 157  getprop "_instance"
+00062: 157  notearg
+00063: 157  call 1
+00066: 157  or 85 (+19)
+00071: 157  pop
+00072: 157  getlocal 1
+00075: 157  newarray 0
+00079: 157  endinit
+00080: 157  setprop "_instance"
+00085: 157  pop
+00086: 159  getlocal 1
+00089: 159  getprop "_instance"
+00094: 159  getlocal 0
+00097: 159  getelem
+00098: 159  ifeq 116 (+18)
+00103: 160  getlocal 1
+00106: 160  getprop "_instance"
+00111: 160  getlocal 0
+00114: 160  getelem
+00115: 160  return
+00116: 163  getlocal 1
+00119: 163  undefined
+00120: 163  notearg
+00121: 163  new 0
+00124: 163  setlocal 2
+00127: 163  pop
+00128: 164  getlocal 2
+00131: 164  and 155 (+24)
+00136: 164  pop
+00137: 164  getlocal 2
+00140: 164  dup
+00141: 164  callprop "init"
+00146: 164  swap
+00147: 164  notearg
+00148: 164  getarg 0
+00151: 164  notearg
+00152: 164  call 1
+00155: 164  ifeq 180 (+25)
+00160: 165  getlocal 1
+00163: 165  getprop "_instance"
+00168: 165  getlocal 0
+00171: 165  getlocal 2
+00174: 165  setelem
+00175: 165  pop
+00176: 166  getlocal 2
+00179: 166  return
+00180: 168  name "xs"
+00185: 168  dup
+00186: 168  callprop "error"
+00191: 168  swap
+00192: 168  notearg
+00193: 168  string "xs.Profile.GameData.GeneralSouls.create failed"
+00198: 168  notearg
+00199: 168  call 1
+00202: 168  pop
+00203: 169  null
+00204: 169  return
+00205: 169  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/GeneralSouls.js:154 ---

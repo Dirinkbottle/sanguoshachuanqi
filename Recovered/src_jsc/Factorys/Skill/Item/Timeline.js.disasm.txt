@@ -1,0 +1,2821 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Factorys/Skill/Item/Timeline.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=25 object[0]
+;; FUNCTION-MAP kind=lambda offset=35 object[1]
+;; FUNCTION-MAP kind=lambda offset=45 object[2]
+;; FUNCTION-MAP kind=lambda offset=55 object[3]
+;; FUNCTION-MAP kind=lambda offset=65 object[4]
+;; FUNCTION-MAP kind=lambda offset=75 object[5]
+;; FUNCTION-MAP kind=lambda offset=85 object[6]
+;; FUNCTION-MAP kind=lambda offset=95 object[7]
+;; FUNCTION-MAP kind=lambda offset=105 object[8]
+;; FUNCTION-MAP kind=lambda offset=115 object[9]
+;; FUNCTION-MAP kind=lambda offset=125 object[10]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Factorys"
+00010:   9  getprop "Skill"
+00015:   9  getprop "Item"
+00020:   9  newinit 1
+00025:  15  lambda (function () {
+    [sourceless code]
+})
+00030:  15  initprop "createNormalAction"
+00035:  49  lambda (function () {
+    [sourceless code]
+})
+00040:  49  initprop "createExtraAction"
+00045:  93  lambda (function () {
+    [sourceless code]
+})
+00050:  93  initprop "getTlTarget"
+00055: 134  lambda (function () {
+    [sourceless code]
+})
+00060: 134  initprop "createArmFrameEventEvents"
+00065: 156  lambda (function () {
+    [sourceless code]
+})
+00070: 156  initprop "createTlActionByParams"
+00075: 532  lambda (function () {
+    [sourceless code]
+})
+00080: 532  initprop "_makePos_use_creater"
+00085: 552  lambda (function () {
+    [sourceless code]
+})
+00090: 552  initprop "makePos"
+00095: 663  lambda (function () {
+    [sourceless code]
+})
+00100: 663  initprop "makeScaleArgsArray"
+00105: 713  lambda (function () {
+    [sourceless code]
+})
+00110: 713  initprop "makeRotateAngleByParams"
+00115: 728  lambda (function () {
+    [sourceless code]
+})
+00120: 728  initprop "makeMovePositionByParams"
+00125: 758  lambda (function () {
+    [sourceless code]
+})
+00130: 758  initprop "createTlAction"
+00135: 758  endinit
+00136: 758  setprop "Timeline"
+00141: 758  popv
+00142: 831  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:1 ---
+;; function object[0] createNormalAction
+;; function metadata object[0] nargs=3 bindings=5
+;; arg[0] ActionName
+;; arg[1] duration
+;; arg[2] args
+;; local[0] _class
+;; local[1] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:15 ---
+loc   line  op
+----- ----  --
+00000:  15  arguments
+00001:  15  setlocal 1
+00004:  15  pop
+main:
+00005:  16  name "cc"
+00010:  16  getarg 0
+00013:  16  getelem
+00014:  16  setlocal 0
+00017:  16  pop
+00018:  18  name "xs"
+00023:  18  dup
+00024:  18  callprop "assert"
+00029:  18  swap
+00030:  18  notearg
+00031:  18  getlocal 0
+00034:  18  notearg
+00035:  18  string "unkown ActionName"
+00040:  18  notearg
+00041:  18  getlocal 1
+00044:  18  notearg
+00045:  18  call 3
+00048:  18  pop
+00049:  21  getarg 2
+00052:  21  name "undefined"
+00057:  21  stricteq
+00058:  21  ifeq 87 (+29)
+00063:  22  getlocal 0
+00066:  22  dup
+00067:  22  callprop "create"
+00072:  22  swap
+00073:  22  notearg
+00074:  22  getarg 1
+00077:  22  notearg
+00078:  22  call 1
+00081:  22  return
+00082:  22  goto 342 (+260)
+00087:  24  getarg 2
+00090:  24  length "length"
+00095:  24  one
+00096:  24  stricteq
+00097:  24  ifeq 132 (+35)
+00102:  25  getlocal 0
+00105:  25  dup
+00106:  25  callprop "create"
+00111:  25  swap
+00112:  25  notearg
+00113:  25  getarg 1
+00116:  25  notearg
+00117:  25  getarg 2
+00120:  25  zero
+00121:  25  getelem
+00122:  25  notearg
+00123:  25  call 2
+00126:  25  return
+00127:  25  goto 342 (+215)
+00132:  27  getarg 2
+00135:  27  length "length"
+00140:  27  int8 2
+00142:  27  stricteq
+00143:  27  ifeq 184 (+41)
+00148:  28  getlocal 0
+00151:  28  dup
+00152:  28  callprop "create"
+00157:  28  swap
+00158:  28  notearg
+00159:  28  getarg 1
+00162:  28  notearg
+00163:  28  getarg 2
+00166:  28  zero
+00167:  28  getelem
+00168:  28  notearg
+00169:  28  getarg 2
+00172:  28  one
+00173:  28  getelem
+00174:  28  notearg
+00175:  28  call 3
+00178:  28  return
+00179:  28  goto 342 (+163)
+00184:  30  getarg 2
+00187:  30  length "length"
+00192:  30  int8 3
+00194:  30  stricteq
+00195:  30  ifeq 243 (+48)
+00200:  31  getlocal 0
+00203:  31  dup
+00204:  31  callprop "create"
+00209:  31  swap
+00210:  31  notearg
+00211:  31  getarg 1
+00214:  31  notearg
+00215:  31  getarg 2
+00218:  31  zero
+00219:  31  getelem
+00220:  31  notearg
+00221:  31  getarg 2
+00224:  31  one
+00225:  31  getelem
+00226:  31  notearg
+00227:  31  getarg 2
+00230:  31  int8 2
+00232:  31  getelem
+00233:  31  notearg
+00234:  31  call 4
+00237:  31  return
+00238:  31  goto 342 (+104)
+00243:  33  getarg 2
+00246:  33  length "length"
+00251:  33  int8 4
+00253:  33  stricteq
+00254:  33  ifeq 309 (+55)
+00259:  34  getlocal 0
+00262:  34  dup
+00263:  34  callprop "create"
+00268:  34  swap
+00269:  34  notearg
+00270:  34  getarg 1
+00273:  34  notearg
+00274:  34  getarg 2
+00277:  34  zero
+00278:  34  getelem
+00279:  34  notearg
+00280:  34  getarg 2
+00283:  34  one
+00284:  34  getelem
+00285:  34  notearg
+00286:  34  getarg 2
+00289:  34  int8 2
+00291:  34  getelem
+00292:  34  notearg
+00293:  34  getarg 2
+00296:  34  int8 3
+00298:  34  getelem
+00299:  34  notearg
+00300:  34  call 5
+00303:  34  return
+00304:  34  goto 342 (+38)
+00309:  37  name "xs"
+00314:  37  dup
+00315:  37  callprop "assert"
+00320:  37  swap
+00321:  37  notearg
+00322:  37  null
+00323:  37  notearg
+00324:  37  string "args error"
+00329:  37  notearg
+00330:  37  getarg 2
+00333:  37  notearg
+00334:  37  getarg 0
+00337:  37  notearg
+00338:  37  call 4
+00341:  37  pop
+00342:  38  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:15 ---
+;; function object[1] createExtraAction
+;; function metadata object[1] nargs=2 bindings=5
+;; arg[0] _action
+;; arg[1] _input
+;; local[0] _ret
+;; local[1] _class
+;; local[2] _args
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  52  getarg 0
+00003:  52  setlocal 0
+00006:  52  pop
+00007:  54  getarg 1
+00010:  54  null
+00011:  54  stricteq
+00012:  54  or 27 (+15)
+00017:  54  pop
+00018:  55  getarg 1
+00021:  55  name "undefined"
+00026:  55  stricteq
+00027:  55  ifeq 37 (+10)
+00032:  56  goto 183 (+151)
+00037:  58  getarg 1
+00040:  58  getprop "type"
+00045:  58  ifeq 183 (+138)
+00050:  59  name "cc"
+00055:  59  getarg 1
+00058:  59  getprop "type"
+00063:  59  getelem
+00064:  59  setlocal 1
+00067:  59  pop
+00068:  60  name "xs"
+00073:  60  dup
+00074:  60  callprop "assert"
+00079:  60  swap
+00080:  60  notearg
+00081:  60  getarg 0
+00084:  60  notearg
+00085:  60  string "extra error"
+00090:  60  notearg
+00091:  60  getarg 1
+00094:  60  notearg
+00095:  60  call 3
+00098:  60  pop
+00099:  62  getarg 1
+00102:  62  getprop "args"
+00107:  62  setlocal 2
+00110:  62  pop
+00111:  64  name "xs"
+00116:  64  dup
+00117:  64  callprop "assert"
+00122:  64  swap
+00123:  64  notearg
+00124:  64  getlocal 2
+00127:  64  notearg
+00128:  64  string "need args"
+00133:  64  notearg
+00134:  64  getarg 1
+00137:  64  notearg
+00138:  64  call 3
+00141:  64  pop
+00142:  66  getlocal 2
+00145:  66  ifeq 183 (+38)
+00150:  67  getlocal 1
+00153:  67  dup
+00154:  67  callprop "create"
+00159:  67  swap
+00160:  67  notearg
+00161:  67  getarg 0
+00164:  67  notearg
+00165:  67  getlocal 2
+00168:  67  zero
+00169:  67  getelem
+00170:  67  notearg
+00171:  67  call 2
+00174:  67  setlocal 0
+00177:  67  pop
+00178:  67  goto 183 (+5)
+00183:  73  null
+00184:  73  setlocal 1
+00187:  73  pop
+00188:  74  null
+00189:  74  setlocal 2
+00192:  74  pop
+00193:  77  getlocal 0
+00196:  77  return
+00197:  77  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:49 ---
+;; function object[2] getTlTarget
+;; function metadata object[2] nargs=3 bindings=6
+;; arg[0] input
+;; arg[1] tl
+;; arg[2] baseTag
+;; local[0] _tl
+;; local[1] _ret
+;; local[2] _funcName
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:93 ---
+loc   line  op
+----- ----  --
+main:
+00000:  95  getarg 1
+00003:  95  setlocal 0
+00006:  95  pop
+00007:  97  null
+00008:  97  setlocal 1
+00011:  97  pop
+00012: 100  getlocal 0
+00015: 100  getprop "target"
+00020: 100  null
+00021: 100  ne
+00022: 100  and 42 (+20)
+00027: 100  pop
+00028: 100  getlocal 0
+00031: 100  getprop "target"
+00036: 100  name "undefined"
+00041: 100  ne
+00042: 100  ifeq 118 (+76)
+00047: 103  getlocal 0
+00050: 103  getprop "target"
+00055: 103  getprop "func"
+00060: 103  ifeq 118 (+58)
+00065: 104  getlocal 0
+00068: 104  getprop "target"
+00073: 104  getprop "func"
+00078: 104  setlocal 2
+00081: 104  pop
+00082: 106  getarg 0
+00085: 106  getprop "itemView"
+00090: 106  getlocal 2
+00093: 106  getelem
+00094: 106  dup
+00095: 106  callprop "apply"
+00100: 106  swap
+00101: 106  notearg
+00102: 106  getarg 0
+00105: 106  getprop "itemView"
+00110: 106  notearg
+00111: 106  funapply 1
+00114: 106  setlocal 1
+00117: 106  pop
+00118: 111  getlocal 1
+00121: 111  return
+00122: 111  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:93 ---
+;; function object[3] createArmFrameEventEvents
+;; function metadata object[3] nargs=2 bindings=9
+;; arg[0] cfgEvents
+;; arg[1] listeners
+;; local[0] _events
+;; local[1] _i
+;; local[2] _actionNames
+;; local[3] _actions
+;; local[4] _j
+;; local[5] _name
+;; local[6] _actionSpawn
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=84 length=70 stackDepth=2 target=154
+;; TRY-NOTE kind=iter start=20 length=210 stackDepth=1 target=230
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:134 ---
+loc   line  op
+----- ----  --
+main:
+00000: 135  newinit 1
+00005: 135  endinit
+00006: 135  setlocal 0
+00009: 135  pop
+00010: 137  getarg 0
+00013: 137  iter 1
+00015: 137  goto 223 (+208)
+00020: 137  loophead
+00021: 137  iternext
+00022: 137  setlocal 1
+00025: 137  pop
+00026: 137  getarg 0
+00029: 137  dup
+00030: 137  callprop "hasOwnProperty"
+00035: 137  swap
+00036: 137  notearg
+00037: 137  getlocal 1
+00040: 137  notearg
+00041: 137  call 1
+00044: 137  ifeq 223 (+179)
+00049: 139  getarg 0
+00052: 139  getlocal 1
+00055: 139  getelem
+00056: 139  getprop "actions"
+00061: 139  setlocal 2
+00064: 139  pop
+00065: 140  newarray 0
+00069: 140  endinit
+00070: 140  setlocal 3
+00073: 140  pop
+00074: 142  getlocal 2
+00077: 142  iter 1
+00079: 142  goto 147 (+68)
+00084: 142  loophead
+00085: 142  iternext
+00086: 142  setlocal 4
+00089: 142  pop
+00090: 142  getlocal 2
+00093: 142  dup
+00094: 142  callprop "hasOwnProperty"
+00099: 142  swap
+00100: 142  notearg
+00101: 142  getlocal 4
+00104: 142  notearg
+00105: 142  call 1
+00108: 142  ifeq 147 (+39)
+00113: 143  getlocal 2
+00116: 143  getlocal 4
+00119: 143  getelem
+00120: 143  setlocal 5
+00123: 143  pop
+00124: 144  getlocal 3
+00127: 144  dup
+00128: 144  callprop "push"
+00133: 144  swap
+00134: 144  notearg
+00135: 144  getarg 1
+00138: 144  getlocal 5
+00141: 144  getelem
+00142: 144  notearg
+00143: 144  call 1
+00146: 144  pop
+00147: 144  loopentry
+00148: 144  moreiter
+00149: 144  ifne 84 (-65)
+00154: 144  enditer
+00155: 147  name "xs"
+00160: 147  getprop "Utils"
+00165: 147  getprop "Action"
+00170: 147  dup
+00171: 147  callprop "combineSpawn"
+00176: 147  swap
+00177: 147  notearg
+00178: 147  getlocal 3
+00181: 147  notearg
+00182: 147  call 1
+00185: 147  setlocal 6
+00188: 147  pop
+00189: 148  getlocal 6
+00192: 148  ifeq 223 (+31)
+00197: 149  getlocal 0
+00200: 149  getlocal 1
+00203: 149  getlocal 6
+00206: 149  setelem
+00207: 149  pop
+00208: 150  getlocal 6
+00211: 150  dup
+00212: 150  callprop "retain"
+00217: 150  swap
+00218: 150  notearg
+00219: 150  call 0
+00222: 150  pop
+00223: 150  loopentry
+00224: 150  moreiter
+00225: 150  ifne 20 (-205)
+00230: 150  enditer
+00231: 153  getlocal 0
+00234: 153  return
+00235: 153  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:134 ---
+;; function object[4] createTlActionByParams
+;; function metadata object[4] nargs=5 bindings=28
+;; arg[0] input
+;; arg[1] tl
+;; arg[2] baseTag
+;; arg[3] lastAction
+;; arg[4] baseDuration
+;; local[0] _tl
+;; local[1] _property
+;; local[2] _tag
+;; local[3] _tl_duration
+;; local[4] _base_duration
+;; local[5] _duration
+;; local[6] _ret
+;; local[7] _target
+;; local[8] _control
+;; local[9] _tmpActions
+;; local[10] i
+;; local[11] parentView
+;; local[12] sprite
+;; local[13] _animation
+;; local[14] _tmpPara
+;; local[15] _controlPoint_0
+;; local[16] _controlPoint_1
+;; local[17] _pos
+;; local[18] _args
+;; local[19] _tmpArgs
+;; local[20] _jump
+;; local[21] _func
+;; local[22] _retExtra
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=980 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:156 ---
+loc   line  op
+----- ----  --
+main:
+00000: 158  this
+00001: 158  dup
+00002: 158  callprop "markFuncBegin"
+00007: 158  swap
+00008: 158  notearg
+00009: 158  string "createTlActionByParams"
+00014: 158  notearg
+00015: 158  string "begin"
+00020: 158  notearg
+00021: 158  call 2
+00024: 158  pop
+00025: 160  getarg 1
+00028: 160  setlocal 0
+00031: 160  pop
+00032: 161  getarg 0
+00035: 161  getprop "item"
+00040: 161  getprop "property"
+00045: 161  setlocal 1
+00048: 161  pop
+00049: 164  getarg 2
+00052: 164  getarg 1
+00055: 164  getprop "type"
+00060: 164  add
+00061: 164  setlocal 2
+00064: 164  pop
+00065: 167  name "xs"
+00070: 167  getprop "Factorys"
+00075: 167  getprop "Skill"
+00080: 167  dup
+00081: 167  callprop "makeValidDuration"
+00086: 167  swap
+00087: 167  notearg
+00088: 167  getlocal 0
+00091: 167  getprop "dp"
+00096: 167  notearg
+00097: 167  call 1
+00100: 167  setlocal 3
+00103: 167  pop
+00104: 168  name "xs"
+00109: 168  getprop "Factorys"
+00114: 168  getprop "Skill"
+00119: 168  dup
+00120: 168  callprop "makeValidDuration"
+00125: 168  swap
+00126: 168  notearg
+00127: 168  getarg 4
+00130: 168  notearg
+00131: 168  call 1
+00134: 168  setlocal 4
+00137: 168  pop
+00138: 169  getlocal 3
+00141: 169  getlocal 4
+00144: 169  mul
+00145: 169  setlocal 5
+00148: 169  pop
+00149: 170  null
+00150: 170  setlocal 6
+00153: 170  pop
+00154: 171  this
+00155: 171  dup
+00156: 171  callprop "getTlTarget"
+00161: 171  swap
+00162: 171  notearg
+00163: 171  getarg 0
+00166: 171  notearg
+00167: 171  getarg 1
+00170: 171  notearg
+00171: 171  getarg 2
+00174: 171  notearg
+00175: 171  call 3
+00178: 171  setlocal 7
+00181: 171  pop
+00182: 175  getlocal 0
+00185: 175  getprop "type"
+00190: 175  string "createPlayAction"
+00195: 175  stricteq
+00196: 175  or 216 (+20)
+00201: 175  pop
+00202: 175  getlocal 0
+00205: 175  getprop "type"
+00210: 175  string "PlayAnimation"
+00215: 175  stricteq
+00216: 175  ifeq 584 (+368)
+00221: 178  name "xs"
+00226: 178  dup
+00227: 178  callprop "assert"
+00232: 178  swap
+00233: 178  notearg
+00234: 178  getlocal 5
+00237: 178  zero
+00238: 178  gt
+00239: 178  notearg
+00240: 178  string "_duration must > 0"
+00245: 178  notearg
+00246: 178  getlocal 5
+00249: 178  notearg
+00250: 178  getarg 1
+00253: 178  notearg
+00254: 178  call 4
+00257: 178  pop
+00258: 179  name "xs"
+00263: 179  dup
+00264: 179  callprop "assert"
+00269: 179  swap
+00270: 179  notearg
+00271: 179  getarg 0
+00274: 179  getprop "item"
+00279: 179  getprop "property"
+00284: 179  getprop "armatureId"
+00289: 179  notearg
+00290: 179  string "input.item.armatureId need"
+00295: 179  notearg
+00296: 179  getarg 0
+00299: 179  getprop "item"
+00304: 179  notearg
+00305: 179  call 3
+00308: 179  pop
+00309: 180  name "xs"
+00314: 180  dup
+00315: 180  callprop "assert"
+00320: 180  swap
+00321: 180  notearg
+00322: 180  getarg 1
+00325: 180  getprop "aniId"
+00330: 180  or 344 (+14)
+00335: 180  pop
+00336: 180  getarg 1
+00339: 180  getprop "aniIds"
+00344: 180  notearg
+00345: 180  string "tl.aniId or aniIds need"
+00350: 180  notearg
+00351: 180  getarg 1
+00354: 180  notearg
+00355: 180  call 3
+00358: 180  pop
+00359: 183  newinit 1
+00364: 183  getlocal 5
+00367: 183  initprop "speed"
+00372: 183  endinit
+00373: 183  setlocal 8
+00376: 183  pop
+00377: 185  getarg 1
+00380: 185  getprop "aniIds"
+00385: 185  ifeq 541 (+156)
+00390: 186  newarray 0
+00394: 186  endinit
+00395: 186  setlocal 9
+00398: 186  pop
+00399: 187  zero
+00400: 187  setlocal 10
+00403: 187  pop
+00404: 187  goto 479 (+75)
+00409: 188  loophead
+00410: 188  getlocal 9
+00413: 188  dup
+00414: 188  callprop "push"
+00419: 188  swap
+00420: 188  notearg
+00421: 188  getarg 0
+00424: 188  getprop "itemView"
+00429: 188  dup
+00430: 188  callprop "createPlayAction"
+00435: 188  swap
+00436: 188  notearg
+00437: 188  getarg 1
+00440: 188  getprop "aniIds"
+00445: 188  getlocal 10
+00448: 188  getelem
+00449: 188  notearg
+00450: 188  getlocal 8
+00453: 188  notearg
+00454: 188  null
+00455: 188  notearg
+00456: 188  call 3
+00459: 188  notearg
+00460: 188  call 1
+00463: 188  pop
+00464: 187  localinc 11
+00467: 187  getlocal 10
+00470: 187  pos
+00471: 187  dup
+00472: 187  one
+00473: 187  add
+00474: 187  setlocal 10
+00477: 187  pop
+00478: 187  pop
+00479: 187  loopentry
+00480: 187  getlocal 10
+00483: 187  getarg 1
+00486: 187  getprop "aniIds"
+00491: 187  length "length"
+00496: 187  lt
+00497: 187  ifne 409 (-88)
+00502: 190  name "xs"
+00507: 190  getprop "Utils"
+00512: 190  getprop "Action"
+00517: 190  dup
+00518: 190  callprop "combineSequence"
+00523: 190  swap
+00524: 190  notearg
+00525: 190  getlocal 9
+00528: 190  notearg
+00529: 190  call 1
+00532: 190  setlocal 6
+00535: 190  pop
+00536: 190  goto 579 (+43)
+00541: 193  getarg 0
+00544: 193  getprop "itemView"
+00549: 193  dup
+00550: 193  callprop "createPlayAction"
+00555: 193  swap
+00556: 193  notearg
+00557: 193  getarg 1
+00560: 193  getprop "aniId"
+00565: 193  notearg
+00566: 193  getlocal 8
+00569: 193  notearg
+00570: 193  null
+00571: 193  notearg
+00572: 193  call 3
+00575: 193  setlocal 6
+00578: 193  pop
+00579: 193  goto 2744 (+2165)
+00584: 252  getlocal 0
+00587: 252  getprop "type"
+00592: 252  string "AddWeiWuFlag"
+00597: 252  stricteq
+00598: 252  ifeq 805 (+207)
+00603: 253  name "xs"
+00608: 253  getprop "Factorys"
+00613: 253  getprop "Skill"
+00618: 253  dup
+00619: 253  callprop "getViewByName"
+00624: 253  swap
+00625: 253  notearg
+00626: 253  getarg 0
+00629: 253  notearg
+00630: 253  getarg 0
+00633: 253  getprop "item"
+00638: 253  getprop "property"
+00643: 253  getprop "parent"
+00648: 253  notearg
+00649: 253  call 2
+00652: 253  setlocal 11
+00655: 253  pop
+00656: 256  name "xs"
+00661: 256  getprop "Factorys"
+00666: 256  getprop "Sprite"
+00671: 256  dup
+00672: 256  callprop "create"
+00677: 256  swap
+00678: 256  notearg
+00679: 256  string "weiwu"
+00684: 256  notearg
+00685: 256  string "Cmn02"
+00690: 256  notearg
+00691: 256  call 2
+00694: 256  setlocal 12
+00697: 256  pop
+00698: 257  name "xs"
+00703: 257  dup
+00704: 257  callprop "assert"
+00709: 257  swap
+00710: 257  notearg
+00711: 257  getlocal 12
+00714: 257  notearg
+00715: 257  string "sprite no exist!  PlayBackupAnimate"
+00720: 257  notearg
+00721: 257  call 2
+00724: 257  pop
+00725: 259  name "xs"
+00730: 259  getprop "Utils"
+00735: 259  getprop "Node"
+00740: 259  dup
+00741: 259  callprop "attachNodes"
+00746: 259  swap
+00747: 259  notearg
+00748: 259  getlocal 11
+00751: 259  notearg
+00752: 259  getlocal 12
+00755: 259  notearg
+00756: 259  newinit 1
+00761: 259  string "c"
+00766: 259  initprop "desc"
+00771: 259  endinit
+00772: 259  notearg
+00773: 259  newinit 1
+00778: 259  uint16 997
+00781: 259  initprop "zOrder"
+00786: 259  uint16 998
+00789: 259  initprop "tag"
+00794: 259  endinit
+00795: 259  notearg
+00796: 259  call 4
+00799: 259  pop
+00800: 259  goto 2744 (+1944)
+00805: 260  getlocal 0
+00808: 260  getprop "type"
+00813: 260  string "RemoveWeiWuFlag"
+00818: 260  stricteq
+00819: 260  ifeq 943 (+124)
+00824: 261  name "xs"
+00829: 261  getprop "Factorys"
+00834: 261  getprop "Skill"
+00839: 261  dup
+00840: 261  callprop "getViewByName"
+00845: 261  swap
+00846: 261  notearg
+00847: 261  getarg 0
+00850: 261  notearg
+00851: 261  getarg 0
+00854: 261  getprop "item"
+00859: 261  getprop "property"
+00864: 261  getprop "parent"
+00869: 261  notearg
+00870: 261  call 2
+00873: 261  setlocal 11
+00876: 261  pop
+00877: 262  getlocal 11
+00880: 262  dup
+00881: 262  callprop "getChildByTag"
+00886: 262  swap
+00887: 262  notearg
+00888: 262  uint16 998
+00891: 262  notearg
+00892: 262  call 1
+00895: 262  setlocal 12
+00898: 262  pop
+00899: 263  getlocal 12
+00902: 263  ifeq 938 (+36)
+00907: 264  name "xs"
+00912: 264  getprop "Utils"
+00917: 264  getprop "Node"
+00922: 264  dup
+00923: 264  callprop "removeFromParentSafe"
+00928: 264  swap
+00929: 264  notearg
+00930: 264  getlocal 12
+00933: 264  notearg
+00934: 264  call 1
+00937: 264  pop
+00938: 264  goto 2744 (+1806)
+00943: 267  getlocal 0
+00946: 267  getprop "type"
+00951: 267  string "Play"
+00956: 267  stricteq
+00957: 267  ifeq 1100 (+143)
+00962: 269  name "cc"
+00967: 269  getprop "CallFunc"
+00972: 269  dup
+00973: 269  callprop "create"
+00978: 269  swap
+00979: 269  notearg
+00980: 271  lambda (function () {
+    [sourceless code]
+})
+00985: 271  dup
+00986: 271  callprop "bind"
+00991: 271  swap
+00992: 271  notearg
+00993: 320  newinit 1
+00998: 320  getarg 1
+01001: 320  getprop "loop"
+01006: 320  initprop "loop"
+01011: 320  getarg 1
+01014: 320  getprop "name"
+01019: 320  initprop "name"
+01024: 320  getarg 1
+01027: 320  getprop "index"
+01032: 320  initprop "idx"
+01037: 320  getlocal 5
+01040: 320  initprop "speed"
+01045: 320  endinit
+01046: 320  notearg
+01047: 320  call 1
+01050: 320  notearg
+01051: 320  call 1
+01054: 320  setlocal 6
+01057: 320  pop
+01058: 324  name "xs"
+01063: 324  dup
+01064: 324  callprop "assert"
+01069: 324  swap
+01070: 324  notearg
+01071: 324  getlocal 5
+01074: 324  zero
+01075: 324  gt
+01076: 324  notearg
+01077: 324  string "_duration must > 0"
+01082: 324  notearg
+01083: 324  getlocal 5
+01086: 324  notearg
+01087: 324  getarg 1
+01090: 324  notearg
+01091: 324  call 4
+01094: 324  pop
+01095: 324  goto 2744 (+1649)
+01100: 326  getlocal 0
+01103: 326  getprop "type"
+01108: 326  string "Animate"
+01113: 326  stricteq
+01114: 326  ifeq 1350 (+236)
+01119: 328  name "xs"
+01124: 328  dup
+01125: 328  callprop "assert"
+01130: 328  swap
+01131: 328  notearg
+01132: 328  getlocal 5
+01135: 328  notearg
+01136: 328  string "miss dp"
+01141: 328  notearg
+01142: 328  getlocal 0
+01145: 328  notearg
+01146: 328  getlocal 1
+01149: 328  notearg
+01150: 328  call 4
+01153: 328  pop
+01154: 329  name "xs"
+01159: 329  dup
+01160: 329  callprop "assert"
+01165: 329  swap
+01166: 329  notearg
+01167: 329  getarg 0
+01170: 329  getprop "animate"
+01175: 329  notearg
+01176: 329  string "animate is null"
+01181: 329  notearg
+01182: 329  getarg 0
+01185: 329  getprop "item"
+01190: 329  notearg
+01191: 329  getarg 0
+01194: 329  getprop "params"
+01199: 329  notearg
+01200: 329  call 4
+01203: 329  pop
+01204: 331  getarg 0
+01207: 331  getprop "animate"
+01212: 331  dup
+01213: 331  callprop "getAnimation"
+01218: 331  swap
+01219: 331  notearg
+01220: 331  call 0
+01223: 331  dup
+01224: 331  callprop "clone"
+01229: 331  swap
+01230: 331  notearg
+01231: 331  call 0
+01234: 331  setlocal 13
+01237: 331  pop
+01238: 333  getlocal 0
+01241: 333  getprop "loop"
+01246: 333  one
+01247: 333  ge
+01248: 333  ifeq 1277 (+29)
+01253: 334  getlocal 13
+01256: 334  dup
+01257: 334  callprop "setLoops"
+01262: 334  swap
+01263: 334  notearg
+01264: 334  getlocal 0
+01267: 334  getprop "loop"
+01272: 334  notearg
+01273: 334  call 1
+01276: 334  pop
+01277: 336  getlocal 13
+01280: 336  dup
+01281: 336  callprop "setDelayPerUnit"
+01286: 336  swap
+01287: 336  notearg
+01288: 336  getlocal 5
+01291: 336  getlocal 13
+01294: 336  dup
+01295: 336  callprop "getFrames"
+01300: 336  swap
+01301: 336  notearg
+01302: 336  call 0
+01305: 336  length "length"
+01310: 336  div
+01311: 336  notearg
+01312: 336  call 1
+01315: 336  pop
+01316: 338  name "cc"
+01321: 338  getprop "Animate"
+01326: 338  dup
+01327: 338  callprop "create"
+01332: 338  swap
+01333: 338  notearg
+01334: 338  getlocal 13
+01337: 338  notearg
+01338: 338  call 1
+01341: 338  setlocal 6
+01344: 338  pop
+01345: 338  goto 2744 (+1399)
+01350: 341  string "Move"
+01355: 341  getlocal 0
+01358: 341  getprop "type"
+01363: 341  stricteq
+01364: 341  ifeq 1441 (+77)
+01369: 343  this
+01370: 343  dup
+01371: 343  callprop "makeMovePositionByParams"
+01376: 343  swap
+01377: 343  notearg
+01378: 343  getarg 0
+01381: 343  notearg
+01382: 343  getlocal 0
+01385: 343  getprop "dst_pos"
+01390: 343  notearg
+01391: 343  call 2
+01394: 343  setlocal 14
+01397: 343  pop
+01398: 345  name "cc"
+01403: 345  getprop "MoveBy"
+01408: 345  dup
+01409: 345  callprop "create"
+01414: 345  swap
+01415: 345  notearg
+01416: 346  getlocal 5
+01419: 346  notearg
+01420: 347  getlocal 14
+01423: 347  notearg
+01424: 347  call 2
+01427: 347  setlocal 6
+01430: 347  pop
+01431: 349  null
+01432: 349  setlocal 14
+01435: 349  pop
+01436: 349  goto 2744 (+1308)
+01441: 352  string "Bezier"
+01446: 352  getlocal 0
+01449: 352  getprop "type"
+01454: 352  stricteq
+01455: 352  ifeq 1584 (+129)
+01460: 356  this
+01461: 356  dup
+01462: 356  callprop "makeMovePositionByParams"
+01467: 356  swap
+01468: 356  notearg
+01469: 356  getarg 0
+01472: 356  notearg
+01473: 356  getlocal 0
+01476: 356  getprop "dst_pos"
+01481: 356  notearg
+01482: 356  call 2
+01485: 356  setlocal 14
+01488: 356  pop
+01489: 359  getlocal 0
+01492: 359  getprop "dst_pos"
+01497: 359  getprop "controlPoint_0"
+01502: 359  setlocal 15
+01505: 359  pop
+01506: 360  getlocal 0
+01509: 360  getprop "dst_pos"
+01514: 360  getprop "controlPoint_1"
+01519: 360  setlocal 16
+01522: 360  pop
+01523: 362  name "cc"
+01528: 362  getprop "BezierBy"
+01533: 362  dup
+01534: 362  callprop "create"
+01539: 362  swap
+01540: 362  notearg
+01541: 363  getlocal 5
+01544: 363  notearg
+01545: 365  newarray 3
+01549: 365  getlocal 15
+01552: 365  initelem_array 0
+01556: 365  getlocal 16
+01559: 365  initelem_array 1
+01563: 365  getlocal 14
+01566: 365  initelem_array 2
+01570: 365  endinit
+01571: 365  notearg
+01572: 365  call 2
+01575: 365  setlocal 6
+01578: 365  pop
+01579: 365  goto 2744 (+1165)
+01584: 369  string "Rotate"
+01589: 369  getlocal 0
+01592: 369  getprop "type"
+01597: 369  stricteq
+01598: 369  ifeq 1675 (+77)
+01603: 371  this
+01604: 371  dup
+01605: 371  callprop "makeRotateAngleByParams"
+01610: 371  swap
+01611: 371  notearg
+01612: 371  getarg 0
+01615: 371  notearg
+01616: 371  getlocal 0
+01619: 371  getprop "rot"
+01624: 371  notearg
+01625: 371  call 2
+01628: 371  setlocal 14
+01631: 371  pop
+01632: 373  name "cc"
+01637: 373  getprop "RotateBy"
+01642: 373  dup
+01643: 373  callprop "create"
+01648: 373  swap
+01649: 373  notearg
+01650: 374  getlocal 5
+01653: 374  notearg
+01654: 375  getlocal 14
+01657: 375  notearg
+01658: 375  call 2
+01661: 375  setlocal 6
+01664: 375  pop
+01665: 378  null
+01666: 378  setlocal 14
+01669: 378  pop
+01670: 378  goto 2744 (+1074)
+01675: 382  string "DelayTime|FadeIn|FadeOut"
+01680: 382  dup
+01681: 382  callprop "indexOf"
+01686: 382  swap
+01687: 382  notearg
+01688: 382  getlocal 0
+01691: 382  getprop "type"
+01696: 382  notearg
+01697: 382  call 1
+01700: 382  zero
+01701: 382  ge
+01702: 382  ifeq 1741 (+39)
+01707: 383  this
+01708: 383  dup
+01709: 383  callprop "createNormalAction"
+01714: 383  swap
+01715: 383  notearg
+01716: 383  getlocal 0
+01719: 383  getprop "type"
+01724: 383  notearg
+01725: 383  getlocal 5
+01728: 383  notearg
+01729: 383  call 2
+01732: 383  setlocal 6
+01735: 383  pop
+01736: 383  goto 2744 (+1008)
+01741: 385  string "ScaleBy|ScaleTo|MoveBy|MoveTo|DelayTime|TintBy|TintTo|RotateBy|RotateTo|FadeTo"
+01746: 385  dup
+01747: 385  callprop "indexOf"
+01752: 385  swap
+01753: 385  notearg
+01754: 385  getlocal 0
+01757: 385  getprop "type"
+01762: 385  notearg
+01763: 385  call 1
+01766: 385  zero
+01767: 385  ge
+01768: 385  ifeq 2092 (+324)
+01773: 386  name "xs"
+01778: 386  dup
+01779: 386  callprop "assert"
+01784: 386  swap
+01785: 386  notearg
+01786: 386  getlocal 5
+01789: 386  notearg
+01790: 386  string "miss dp"
+01795: 386  notearg
+01796: 386  getlocal 0
+01799: 386  notearg
+01800: 386  call 3
+01803: 386  pop
+01804: 388  getlocal 0
+01807: 388  getprop "type"
+01812: 388  string "MoveTo"
+01817: 388  stricteq
+01818: 388  and 1832 (+14)
+01823: 388  pop
+01824: 388  getlocal 0
+01827: 388  getprop "dst_pos"
+01832: 388  ifeq 1913 (+81)
+01837: 389  this
+01838: 389  dup
+01839: 389  callprop "makePos"
+01844: 389  swap
+01845: 389  notearg
+01846: 389  getarg 0
+01849: 389  notearg
+01850: 389  getlocal 0
+01853: 389  getprop "dst_pos"
+01858: 389  notearg
+01859: 389  call 2
+01862: 389  setlocal 17
+01865: 389  pop
+01866: 393  this
+01867: 393  dup
+01868: 393  callprop "createNormalAction"
+01873: 393  swap
+01874: 393  notearg
+01875: 393  getlocal 0
+01878: 393  getprop "type"
+01883: 393  notearg
+01884: 393  getlocal 5
+01887: 393  notearg
+01888: 393  newarray 1
+01892: 393  getlocal 17
+01895: 393  initelem_array 0
+01899: 393  endinit
+01900: 393  notearg
+01901: 393  call 3
+01904: 393  setlocal 6
+01907: 393  pop
+01908: 393  goto 2087 (+179)
+01913: 395  getlocal 0
+01916: 395  getprop "type"
+01921: 395  string "ScaleTo"
+01926: 395  stricteq
+01927: 395  and 1941 (+14)
+01932: 395  pop
+01933: 395  getlocal 0
+01936: 395  getprop "dst"
+01941: 395  ifeq 2013 (+72)
+01946: 396  this
+01947: 396  dup
+01948: 396  callprop "makeScaleArgsArray"
+01953: 396  swap
+01954: 396  notearg
+01955: 396  getarg 0
+01958: 396  notearg
+01959: 396  getlocal 0
+01962: 396  getprop "dst"
+01967: 396  notearg
+01968: 396  call 2
+01971: 396  setlocal 18
+01974: 396  pop
+01975: 400  this
+01976: 400  dup
+01977: 400  callprop "createNormalAction"
+01982: 400  swap
+01983: 400  notearg
+01984: 400  getlocal 0
+01987: 400  getprop "type"
+01992: 400  notearg
+01993: 400  getlocal 5
+01996: 400  notearg
+01997: 400  getlocal 18
+02000: 400  notearg
+02001: 400  call 3
+02004: 400  setlocal 6
+02007: 400  pop
+02008: 400  goto 2087 (+79)
+02013: 403  name "xs"
+02018: 403  dup
+02019: 403  callprop "assert"
+02024: 403  swap
+02025: 403  notearg
+02026: 403  getlocal 0
+02029: 403  getprop "args"
+02034: 403  notearg
+02035: 403  string "need args"
+02040: 403  notearg
+02041: 403  getlocal 0
+02044: 403  notearg
+02045: 403  call 3
+02048: 403  pop
+02049: 404  this
+02050: 404  dup
+02051: 404  callprop "createNormalAction"
+02056: 404  swap
+02057: 404  notearg
+02058: 404  getlocal 0
+02061: 404  getprop "type"
+02066: 404  notearg
+02067: 404  getlocal 5
+02070: 404  notearg
+02071: 404  getlocal 0
+02074: 404  getprop "args"
+02079: 404  notearg
+02080: 404  call 3
+02083: 404  setlocal 6
+02086: 404  pop
+02087: 404  goto 2744 (+657)
+02092: 409  string "JumpBy"
+02097: 409  dup
+02098: 409  callprop "indexOf"
+02103: 409  swap
+02104: 409  notearg
+02105: 409  getlocal 0
+02108: 409  getprop "type"
+02113: 409  notearg
+02114: 409  call 1
+02117: 409  zero
+02118: 409  ge
+02119: 409  ifeq 2259 (+140)
+02124: 410  name "xs"
+02129: 410  dup
+02130: 410  callprop "assert"
+02135: 410  swap
+02136: 410  notearg
+02137: 410  getlocal 5
+02140: 410  notearg
+02141: 410  string "miss dp"
+02146: 410  notearg
+02147: 410  getlocal 0
+02150: 410  notearg
+02151: 410  call 3
+02154: 410  pop
+02155: 411  getlocal 0
+02158: 411  getprop "args"
+02163: 411  dup
+02164: 411  callprop "concat"
+02169: 411  swap
+02170: 411  notearg
+02171: 411  call 0
+02174: 411  setlocal 19
+02177: 411  pop
+02178: 413  getlocal 0
+02181: 413  getprop "loop"
+02186: 413  or 2193 (+7)
+02191: 413  pop
+02192: 413  one
+02193: 413  setlocal 20
+02196: 413  pop
+02197: 414  getlocal 19
+02200: 414  dup
+02201: 414  callprop "push"
+02206: 414  swap
+02207: 414  notearg
+02208: 414  getlocal 20
+02211: 414  notearg
+02212: 414  call 1
+02215: 414  pop
+02216: 415  this
+02217: 415  dup
+02218: 415  callprop "createNormalAction"
+02223: 415  swap
+02224: 415  notearg
+02225: 415  getlocal 0
+02228: 415  getprop "type"
+02233: 415  notearg
+02234: 415  getlocal 5
+02237: 415  notearg
+02238: 415  getlocal 19
+02241: 415  notearg
+02242: 415  call 3
+02245: 415  setlocal 6
+02248: 415  pop
+02249: 416  null
+02250: 416  setlocal 19
+02253: 416  pop
+02254: 416  goto 2744 (+490)
+02259: 418  string "Show|Hide"
+02264: 418  dup
+02265: 418  callprop "indexOf"
+02270: 418  swap
+02271: 418  notearg
+02272: 418  getlocal 0
+02275: 418  getprop "type"
+02280: 418  notearg
+02281: 418  call 1
+02284: 418  zero
+02285: 418  ge
+02286: 418  ifeq 2396 (+110)
+02291: 419  string "Show|Hide"
+02296: 419  dup
+02297: 419  callprop "indexOf"
+02302: 419  swap
+02303: 419  notearg
+02304: 419  getlocal 0
+02307: 419  getprop "type"
+02312: 419  notearg
+02313: 419  call 1
+02316: 419  zero
+02317: 419  ge
+02318: 419  ifeq 2328 (+10)
+02323: 419  goto 2362 (+39)
+02328: 423  name "xs"
+02333: 423  dup
+02334: 423  callprop "assert"
+02339: 423  swap
+02340: 423  notearg
+02341: 423  null
+02342: 423  notearg
+02343: 423  string "unkown _tl.type"
+02348: 423  notearg
+02349: 423  getlocal 0
+02352: 423  getprop "type"
+02357: 423  notearg
+02358: 423  call 3
+02361: 423  pop
+02362: 425  name "cc"
+02367: 425  getlocal 0
+02370: 425  getprop "type"
+02375: 425  getelem
+02376: 425  dup
+02377: 425  callprop "create"
+02382: 425  swap
+02383: 425  notearg
+02384: 425  call 0
+02387: 425  setlocal 6
+02390: 425  pop
+02391: 425  goto 2744 (+353)
+02396: 428  getlocal 0
+02399: 428  getprop "type"
+02404: 428  dup
+02405: 428  callprop "indexOf"
+02410: 428  swap
+02411: 428  notearg
+02412: 428  string "Reverse"
+02417: 428  notearg
+02418: 428  call 1
+02421: 428  zero
+02422: 428  ge
+02423: 428  ifeq 2505 (+82)
+02428: 430  name "xs"
+02433: 430  dup
+02434: 430  callprop "assert"
+02439: 430  swap
+02440: 430  notearg
+02441: 430  getarg 3
+02444: 430  notearg
+02445: 430  string "_lastAction error "
+02450: 430  notearg
+02451: 430  getarg 0
+02454: 430  notearg
+02455: 430  getarg 3
+02458: 430  notearg
+02459: 430  call 4
+02462: 430  pop
+02463: 432  getarg 3
+02466: 432  dup
+02467: 432  callprop "reverse"
+02472: 432  swap
+02473: 432  notearg
+02474: 432  call 0
+02477: 432  setlocal 6
+02480: 432  pop
+02481: 434  getlocal 6
+02484: 434  dup
+02485: 434  callprop "setDuration"
+02490: 434  swap
+02491: 434  notearg
+02492: 434  getlocal 5
+02495: 434  notearg
+02496: 434  call 1
+02499: 434  pop
+02500: 434  goto 2744 (+244)
+02505: 438  string "createAction"
+02510: 438  getarg 1
+02513: 438  getprop "type"
+02518: 438  stricteq
+02519: 438  ifeq 2715 (+196)
+02524: 440  name "xs"
+02529: 440  dup
+02530: 440  callprop "assert"
+02535: 440  swap
+02536: 440  notearg
+02537: 440  getlocal 0
+02540: 440  getprop "name"
+02545: 440  notearg
+02546: 440  string "need _tl.name"
+02551: 440  notearg
+02552: 440  getlocal 0
+02555: 440  notearg
+02556: 440  call 3
+02559: 440  pop
+02560: 441  getarg 0
+02563: 441  getprop "itemView"
+02568: 441  getlocal 0
+02571: 441  getprop "name"
+02576: 441  getelem
+02577: 441  setlocal 21
+02580: 441  pop
+02581: 442  name "xs"
+02586: 442  dup
+02587: 442  callprop "assert"
+02592: 442  swap
+02593: 442  notearg
+02594: 442  getlocal 21
+02597: 442  notearg
+02598: 442  string "createActions error,need _func "
+02603: 442  notearg
+02604: 442  getlocal 0
+02607: 442  notearg
+02608: 442  call 3
+02611: 442  pop
+02612: 443  this
+02613: 443  dup
+02614: 443  callprop "log"
+02619: 443  swap
+02620: 443  notearg
+02621: 443  getlocal 2
+02624: 443  notearg
+02625: 443  getlocal 0
+02628: 443  getprop "name"
+02633: 443  notearg
+02634: 443  call 2
+02637: 443  pop
+02638: 446  getlocal 21
+02641: 446  dup
+02642: 446  callprop "apply"
+02647: 446  swap
+02648: 446  notearg
+02649: 447  getarg 0
+02652: 447  getprop "itemView"
+02657: 447  notearg
+02658: 448  newarray 1
+02662: 449  newinit 1
+02667: 450  getlocal 0
+02670: 450  getprop "data"
+02675: 450  initprop "data"
+02680: 451  getarg 0
+02683: 451  initprop "input"
+02688: 452  getlocal 5
+02691: 452  initprop "dp"
+02696: 452  endinit
+02697: 452  initelem_array 0
+02701: 452  endinit
+02702: 452  notearg
+02703: 452  funapply 2
+02706: 452  setlocal 6
+02709: 452  pop
+02710: 452  goto 2744 (+34)
+02715: 479  name "xs"
+02720: 479  dup
+02721: 479  callprop "assert"
+02726: 479  swap
+02727: 479  notearg
+02728: 479  false
+02729: 479  notearg
+02730: 479  string "unknow tl type"
+02735: 479  notearg
+02736: 479  getlocal 0
+02739: 479  notearg
+02740: 479  call 3
+02743: 479  pop
+02744: 485  null
+02745: 485  setlocal 22
+02748: 485  pop
+02749: 486  getlocal 6
+02752: 486  null
+02753: 486  strictne
+02754: 486  and 2769 (+15)
+02759: 486  pop
+02760: 486  getlocal 6
+02763: 486  name "undefined"
+02768: 486  strictne
+02769: 486  ifeq 2813 (+44)
+02774: 487  this
+02775: 487  dup
+02776: 487  callprop "createExtraAction"
+02781: 487  swap
+02782: 487  notearg
+02783: 487  getlocal 6
+02786: 487  notearg
+02787: 487  getlocal 0
+02790: 487  getprop "extra"
+02795: 487  notearg
+02796: 487  call 2
+02799: 487  setlocal 22
+02802: 487  pop
+02803: 488  null
+02804: 488  setlocal 6
+02807: 488  pop
+02808: 488  goto 2820 (+12)
+02813: 491  getlocal 6
+02816: 491  setlocal 22
+02819: 491  pop
+02820: 495  getlocal 7
+02823: 495  null
+02824: 495  strictne
+02825: 495  and 2840 (+15)
+02830: 495  pop
+02831: 495  getlocal 7
+02834: 495  name "undefined"
+02839: 495  strictne
+02840: 495  ifeq 2883 (+43)
+02845: 497  name "cc"
+02850: 497  getprop "TargetedAction"
+02855: 497  dup
+02856: 497  callprop "create"
+02861: 497  swap
+02862: 497  notearg
+02863: 497  getlocal 7
+02866: 497  notearg
+02867: 497  getlocal 22
+02870: 497  notearg
+02871: 497  call 2
+02874: 497  setlocal 22
+02877: 497  pop
+02878: 499  null
+02879: 499  setlocal 7
+02882: 499  pop
+02883: 502  this
+02884: 502  dup
+02885: 502  callprop "markFuncEnd"
+02890: 502  swap
+02891: 502  notearg
+02892: 502  string "createTlActionByParams"
+02897: 502  notearg
+02898: 502  string "end"
+02903: 502  notearg
+02904: 502  call 2
+02907: 502  pop
+02908: 518  getlocal 22
+02911: 518  return
+02912: 518  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:156 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=2 bindings=7
+;; arg[0] sender
+;; arg[1] __data
+;; local[0] _this
+;; local[1] _animation
+;; local[2] _speed
+;; local[3] _loop
+;; local[4] _durationTo
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:271 ---
+loc   line  op
+----- ----  --
+main:
+00000: 273  this
+00001: 273  setlocal 0
+00004: 273  pop
+00005: 276  getarg 0
+00008: 276  dup
+00009: 276  callprop "getAnimation"
+00014: 276  swap
+00015: 276  notearg
+00016: 276  call 0
+00019: 276  setlocal 1
+00022: 276  pop
+00023: 278  getlocal 0
+00026: 278  getprop "speed"
+00031: 278  or 38 (+7)
+00036: 278  pop
+00037: 278  one
+00038: 278  setlocal 2
+00041: 278  pop
+00042: 280  getlocal 1
+00045: 280  dup
+00046: 280  callprop "setSpeedScale"
+00051: 280  swap
+00052: 280  notearg
+00053: 280  name "xs"
+00058: 280  getprop "ani_scale"
+00063: 280  getlocal 2
+00066: 280  div
+00067: 280  notearg
+00068: 280  call 1
+00071: 280  pop
+00072: 285  getlocal 0
+00075: 285  getprop "loop"
+00080: 285  true
+00081: 285  stricteq
+00082: 285  ifeq 93 (+11)
+00087: 285  one
+00088: 285  goto 94 (+6)
+00093: 285  zero
+00094: 285  setlocal 3
+00097: 285  pop
+00098: 287  int8 -1
+00100: 287  setlocal 4
+00103: 287  pop
+00104: 289  getlocal 0
+00107: 289  getprop "name"
+00112: 289  null
+00113: 289  ne
+00114: 289  and 134 (+20)
+00119: 289  pop
+00120: 289  getlocal 0
+00123: 289  getprop "name"
+00128: 289  name "undefined"
+00133: 289  ne
+00134: 289  ifeq 179 (+45)
+00139: 290  getlocal 1
+00142: 290  dup
+00143: 290  callprop "play"
+00148: 290  swap
+00149: 290  notearg
+00150: 290  getlocal 0
+00153: 290  getprop "name"
+00158: 290  notearg
+00159: 290  getlocal 4
+00162: 290  notearg
+00163: 290  int8 -1
+00165: 290  notearg
+00166: 290  getlocal 3
+00169: 290  notearg
+00170: 290  call 4
+00173: 290  pop
+00174: 290  goto 283 (+109)
+00179: 292  getlocal 0
+00182: 292  getprop "idx"
+00187: 292  null
+00188: 292  ne
+00189: 292  and 209 (+20)
+00194: 292  pop
+00195: 292  getlocal 0
+00198: 292  getprop "idx"
+00203: 292  name "undefined"
+00208: 292  ne
+00209: 292  ifeq 254 (+45)
+00214: 293  getlocal 1
+00217: 293  dup
+00218: 293  callprop "playByIndex"
+00223: 293  swap
+00224: 293  notearg
+00225: 293  getlocal 0
+00228: 293  getprop "idx"
+00233: 293  notearg
+00234: 293  getlocal 4
+00237: 293  notearg
+00238: 293  int8 -1
+00240: 293  notearg
+00241: 293  getlocal 3
+00244: 293  notearg
+00245: 293  call 4
+00248: 293  pop
+00249: 293  goto 283 (+34)
+00254: 296  name "xs"
+00259: 296  dup
+00260: 296  callprop "assert"
+00265: 296  swap
+00266: 296  notearg
+00267: 296  false
+00268: 296  notearg
+00269: 296  string "play animation need idx or name"
+00274: 296  notearg
+00275: 296  getlocal 0
+00278: 296  notearg
+00279: 296  call 3
+00282: 296  pop
+00283: 297  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:271 ---
+;; function object[5] _makePos_use_creater
+;; function metadata object[5] nargs=3 bindings=4
+;; arg[0] input
+;; arg[1] posCfg
+;; arg[2] _needRevertX
+;; local[0] _creater
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:532 ---
+loc   line  op
+----- ----  --
+main:
+00000: 534  name "xs"
+00005: 534  getprop "Skill"
+00010: 534  getprop "Impl"
+00015: 534  getprop "Creater"
+00020: 534  getarg 1
+00023: 534  getprop "creater"
+00028: 534  getelem
+00029: 534  setlocal 0
+00032: 534  pop
+00033: 536  this
+00034: 536  dup
+00035: 536  callprop "assert"
+00040: 536  swap
+00041: 536  notearg
+00042: 536  getlocal 0
+00045: 536  notearg
+00046: 536  string "find creater failed"
+00051: 536  notearg
+00052: 536  getarg 1
+00055: 536  notearg
+00056: 536  call 3
+00059: 536  pop
+00060: 538  getlocal 0
+00063: 538  ifeq 117 (+54)
+00068: 539  getlocal 0
+00071: 539  dup
+00072: 539  callprop "apply"
+00077: 539  swap
+00078: 539  notearg
+00079: 540  this
+00080: 540  notearg
+00081: 541  newarray 1
+00085: 542  newinit 1
+00090: 543  getarg 0
+00093: 543  initprop "input"
+00098: 544  getarg 2
+00101: 544  initprop "needRevertX"
+00106: 544  endinit
+00107: 544  initelem_array 0
+00111: 544  endinit
+00112: 544  notearg
+00113: 544  funapply 2
+00116: 544  return
+00117: 549  name "cc"
+00122: 549  dup
+00123: 549  callprop "p"
+00128: 549  swap
+00129: 549  notearg
+00130: 549  zero
+00131: 549  notearg
+00132: 549  zero
+00133: 549  notearg
+00134: 549  call 2
+00137: 549  return
+00138: 549  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:532 ---
+;; function object[6] makePos
+;; function metadata object[6] nargs=2 bindings=10
+;; arg[0] input
+;; arg[1] posCfg
+;; local[0] _posCfg
+;; local[1] _ret
+;; local[2] _needRevertX
+;; local[3] _baseView
+;; local[4] _toView
+;; local[5] _fromView
+;; local[6] _distance
+;; local[7] _offset
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:552 ---
+loc   line  op
+----- ----  --
+main:
+00000: 554  this
+00001: 554  dup
+00002: 554  callprop "log"
+00007: 554  swap
+00008: 554  notearg
+00009: 555  string "makePos"
+00014: 555  notearg
+00015: 555  string "begin"
+00020: 555  notearg
+00021: 555  call 2
+00024: 555  pop
+00025: 558  getarg 1
+00028: 558  setlocal 0
+00031: 558  pop
+00032: 559  getlocal 1
+00035: 559  pop
+00036: 561  getlocal 0
+00039: 561  or 55 (+16)
+00044: 561  pop
+00045: 561  name "cc"
+00050: 561  getprop "POINT_ZERO"
+00055: 561  setlocal 0
+00058: 561  pop
+00059: 565  name "xs"
+00064: 565  getprop "Factorys"
+00069: 565  getprop "Skill"
+00074: 565  getprop "Item"
+00079: 565  dup
+00080: 565  callprop "needRevertX"
+00085: 565  swap
+00086: 565  notearg
+00087: 565  getarg 0
+00090: 565  notearg
+00091: 565  call 1
+00094: 565  setlocal 2
+00097: 565  pop
+00098: 567  getlocal 0
+00101: 567  getprop "creater"
+00106: 567  ifeq 144 (+38)
+00111: 569  this
+00112: 569  dup
+00113: 569  callprop "_makePos_use_creater"
+00118: 569  swap
+00119: 569  notearg
+00120: 569  getarg 0
+00123: 569  notearg
+00124: 569  getarg 1
+00127: 569  notearg
+00128: 569  getlocal 2
+00131: 569  notearg
+00132: 569  call 3
+00135: 569  setlocal 1
+00138: 569  pop
+00139: 569  goto 1138 (+999)
+00144: 573  getlocal 0
+00147: 573  getprop "base"
+00152: 573  ifeq 993 (+841)
+00157: 575  getlocal 0
+00160: 575  getprop "base"
+00165: 575  string "from_ori"
+00170: 575  stricteq
+00171: 575  ifeq 265 (+94)
+00176: 576  name "xs"
+00181: 576  getprop "Factorys"
+00186: 576  getprop "Skill"
+00191: 576  dup
+00192: 576  callprop "getViewByName"
+00197: 576  swap
+00198: 576  notearg
+00199: 576  getarg 0
+00202: 576  notearg
+00203: 576  string "from"
+00208: 576  notearg
+00209: 576  call 2
+00212: 576  setlocal 3
+00215: 576  pop
+00216: 577  name "xs"
+00221: 577  dup
+00222: 577  callprop "assert"
+00227: 577  swap
+00228: 577  notearg
+00229: 577  getlocal 3
+00232: 577  notearg
+00233: 577  string "_baseView is null,from_ori"
+00238: 577  notearg
+00239: 577  call 2
+00242: 577  pop
+00243: 578  getlocal 3
+00246: 578  getprop "original"
+00251: 578  getprop "pos"
+00256: 578  setlocal 1
+00259: 578  pop
+00260: 578  goto 861 (+601)
+00265: 580  getlocal 0
+00268: 580  getprop "base"
+00273: 580  string "to_ori"
+00278: 580  stricteq
+00279: 580  ifeq 373 (+94)
+00284: 581  name "xs"
+00289: 581  getprop "Factorys"
+00294: 581  getprop "Skill"
+00299: 581  dup
+00300: 581  callprop "getViewByName"
+00305: 581  swap
+00306: 581  notearg
+00307: 581  getarg 0
+00310: 581  notearg
+00311: 581  string "to"
+00316: 581  notearg
+00317: 581  call 2
+00320: 581  setlocal 3
+00323: 581  pop
+00324: 582  name "xs"
+00329: 582  dup
+00330: 582  callprop "assert"
+00335: 582  swap
+00336: 582  notearg
+00337: 582  getlocal 3
+00340: 582  notearg
+00341: 582  string "_baseView is null,to_ori"
+00346: 582  notearg
+00347: 582  call 2
+00350: 582  pop
+00351: 583  getlocal 3
+00354: 583  getprop "original"
+00359: 583  getprop "pos"
+00364: 583  setlocal 1
+00367: 583  pop
+00368: 583  goto 861 (+493)
+00373: 587  getlocal 0
+00376: 587  getprop "base"
+00381: 587  string "c"
+00386: 587  stricteq
+00387: 587  ifeq 468 (+81)
+00392: 589  name "xs"
+00397: 589  dup
+00398: 589  callprop "assert"
+00403: 589  swap
+00404: 589  notearg
+00405: 589  getarg 0
+00408: 589  getprop "parentView"
+00413: 589  notearg
+00414: 589  string "c need parent"
+00419: 589  notearg
+00420: 589  call 2
+00423: 589  pop
+00424: 591  name "xs"
+00429: 591  getprop "Utils"
+00434: 591  getprop "Node"
+00439: 591  dup
+00440: 591  callprop "getPointOfNodeCenter"
+00445: 591  swap
+00446: 591  notearg
+00447: 591  getarg 0
+00450: 591  getprop "parentView"
+00455: 591  notearg
+00456: 591  call 1
+00459: 591  setlocal 1
+00462: 591  pop
+00463: 591  goto 861 (+398)
+00468: 593  getlocal 0
+00471: 593  getprop "base"
+00476: 593  string "from_touch"
+00481: 593  stricteq
+00482: 593  ifeq 735 (+253)
+00487: 596  name "xs"
+00492: 596  getprop "Factorys"
+00497: 596  getprop "Skill"
+00502: 596  dup
+00503: 596  callprop "getViewByName"
+00508: 596  swap
+00509: 596  notearg
+00510: 596  getarg 0
+00513: 596  notearg
+00514: 596  string "to"
+00519: 596  notearg
+00520: 596  call 2
+00523: 596  setlocal 4
+00526: 596  pop
+00527: 597  name "xs"
+00532: 597  getprop "Factorys"
+00537: 597  getprop "Skill"
+00542: 597  dup
+00543: 597  callprop "getViewByName"
+00548: 597  swap
+00549: 597  notearg
+00550: 597  getarg 0
+00553: 597  notearg
+00554: 597  string "from"
+00559: 597  notearg
+00560: 597  call 2
+00563: 597  setlocal 5
+00566: 597  pop
+00567: 600  name "xs"
+00572: 600  dup
+00573: 600  callprop "assert"
+00578: 600  swap
+00579: 600  notearg
+00580: 600  getlocal 4
+00583: 600  and 592 (+9)
+00588: 600  pop
+00589: 600  getlocal 5
+00592: 600  notearg
+00593: 600  string "from_touch is null"
+00598: 600  notearg
+00599: 600  call 2
+00602: 600  pop
+00603: 602  getlocal 5
+00606: 602  dup
+00607: 602  callprop "getBodySize"
+00612: 602  swap
+00613: 602  notearg
+00614: 602  call 0
+00617: 602  getprop "width"
+00622: 602  getlocal 4
+00625: 602  dup
+00626: 602  callprop "getBodySize"
+00631: 602  swap
+00632: 602  notearg
+00633: 602  call 0
+00636: 602  getprop "width"
+00641: 602  add
+00642: 602  int8 2
+00644: 602  div
+00645: 602  setlocal 6
+00648: 602  pop
+00649: 606  name "cc"
+00654: 606  dup
+00655: 606  callprop "p"
+00660: 606  swap
+00661: 606  notearg
+00662: 606  getlocal 4
+00665: 606  dup
+00666: 606  callprop "getPosition"
+00671: 606  swap
+00672: 606  notearg
+00673: 606  call 0
+00676: 606  getprop "x"
+00681: 606  getlocal 2
+00684: 606  ifeq 695 (+11)
+00689: 606  one
+00690: 606  goto 697 (+7)
+00695: 606  int8 -1
+00697: 606  getlocal 6
+00700: 606  mul
+00701: 606  add
+00702: 606  notearg
+00703: 606  getlocal 4
+00706: 606  dup
+00707: 606  callprop "getPosition"
+00712: 606  swap
+00713: 606  notearg
+00714: 606  call 0
+00717: 606  getprop "y"
+00722: 606  notearg
+00723: 606  call 2
+00726: 606  setlocal 1
+00729: 606  pop
+00730: 606  goto 861 (+131)
+00735: 610  name "xs"
+00740: 610  getprop "Factorys"
+00745: 610  getprop "Skill"
+00750: 610  dup
+00751: 610  callprop "getViewByName"
+00756: 610  swap
+00757: 610  notearg
+00758: 610  getarg 0
+00761: 610  notearg
+00762: 610  getlocal 0
+00765: 610  getprop "base"
+00770: 610  notearg
+00771: 610  call 2
+00774: 610  setlocal 3
+00777: 610  pop
+00778: 612  getlocal 3
+00781: 612  not
+00782: 612  ifeq 812 (+30)
+00787: 614  name "cc"
+00792: 614  dup
+00793: 614  callprop "p"
+00798: 614  swap
+00799: 614  notearg
+00800: 614  uint16 3000
+00803: 614  notearg
+00804: 614  uint16 3000
+00807: 614  notearg
+00808: 614  call 2
+00811: 614  return
+00812: 617  name "xs"
+00817: 617  dup
+00818: 617  callprop "assert"
+00823: 617  swap
+00824: 617  notearg
+00825: 617  getlocal 3
+00828: 617  notearg
+00829: 617  string "unknow _baseView"
+00834: 617  notearg
+00835: 617  getlocal 0
+00838: 617  notearg
+00839: 617  call 3
+00842: 617  pop
+00843: 618  getlocal 3
+00846: 618  dup
+00847: 618  callprop "getPosition"
+00852: 618  swap
+00853: 618  notearg
+00854: 618  call 0
+00857: 618  setlocal 1
+00860: 618  pop
+00861: 625  getlocal 0
+00864: 625  getprop "offset"
+00869: 625  ifeq 988 (+119)
+00874: 627  null
+00875: 627  setlocal 7
+00878: 627  pop
+00879: 629  getlocal 2
+00882: 629  ifeq 943 (+61)
+00887: 630  name "cc"
+00892: 630  dup
+00893: 630  callprop "p"
+00898: 630  swap
+00899: 630  notearg
+00900: 630  getlocal 0
+00903: 630  getprop "offset"
+00908: 630  getprop "x"
+00913: 630  int8 -1
+00915: 630  mul
+00916: 630  notearg
+00917: 630  getlocal 0
+00920: 630  getprop "offset"
+00925: 630  getprop "y"
+00930: 630  notearg
+00931: 630  call 2
+00934: 630  setlocal 7
+00937: 630  pop
+00938: 630  goto 955 (+17)
+00943: 633  getlocal 0
+00946: 633  getprop "offset"
+00951: 633  setlocal 7
+00954: 633  pop
+00955: 635  name "cc"
+00960: 635  dup
+00961: 635  callprop "pAdd"
+00966: 635  swap
+00967: 635  notearg
+00968: 635  getlocal 1
+00971: 635  notearg
+00972: 635  getlocal 7
+00975: 635  notearg
+00976: 635  call 2
+00979: 635  setlocal 1
+00982: 635  pop
+00983: 635  goto 988 (+5)
+00988: 637  goto 1138 (+150)
+00993: 643  name "xs"
+00998: 643  dup
+00999: 643  callprop "assert"
+01004: 643  swap
+01005: 643  notearg
+01006: 643  getlocal 0
+01009: 643  getprop "x"
+01014: 643  name "undefined"
+01019: 643  strictne
+01020: 643  notearg
+01021: 643  string "not a pos"
+01026: 643  notearg
+01027: 643  getlocal 0
+01030: 643  notearg
+01031: 643  call 3
+01034: 643  pop
+01035: 644  name "xs"
+01040: 644  dup
+01041: 644  callprop "assert"
+01046: 644  swap
+01047: 644  notearg
+01048: 644  getlocal 0
+01051: 644  getprop "y"
+01056: 644  name "undefined"
+01061: 644  strictne
+01062: 644  notearg
+01063: 644  string "not a pos"
+01068: 644  notearg
+01069: 644  getlocal 0
+01072: 644  notearg
+01073: 644  call 3
+01076: 644  pop
+01077: 646  getlocal 2
+01080: 646  ifeq 1131 (+51)
+01085: 647  name "cc"
+01090: 647  dup
+01091: 647  callprop "p"
+01096: 647  swap
+01097: 647  notearg
+01098: 647  getlocal 0
+01101: 647  getprop "x"
+01106: 647  int8 -1
+01108: 647  mul
+01109: 647  notearg
+01110: 647  getlocal 0
+01113: 647  getprop "y"
+01118: 647  notearg
+01119: 647  call 2
+01122: 647  setlocal 1
+01125: 647  pop
+01126: 647  goto 1138 (+12)
+01131: 650  getlocal 0
+01134: 650  setlocal 1
+01137: 650  pop
+01138: 657  this
+01139: 657  dup
+01140: 657  callprop "log"
+01145: 657  swap
+01146: 657  notearg
+01147: 657  string "makePos"
+01152: 657  notearg
+01153: 657  string "end"
+01158: 657  notearg
+01159: 657  call 2
+01162: 657  pop
+01163: 659  getlocal 1
+01166: 659  return
+01167: 659  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:552 ---
+;; function object[7] makeScaleArgsArray
+;; function metadata object[7] nargs=2 bindings=5
+;; arg[0] input
+;; arg[1] dst
+;; local[0] _dstCfg
+;; local[1] _ret
+;; local[2] _baseView
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:663 ---
+loc   line  op
+----- ----  --
+main:
+00000: 664  getarg 1
+00003: 664  or 15 (+12)
+00008: 664  pop
+00009: 664  newinit 1
+00014: 664  endinit
+00015: 664  setlocal 0
+00018: 664  pop
+00019: 665  newarray 2
+00023: 665  one
+00024: 665  initelem_array 0
+00028: 665  one
+00029: 665  initelem_array 1
+00033: 665  endinit
+00034: 665  setlocal 1
+00037: 665  pop
+00038: 667  getlocal 0
+00041: 667  getprop "base"
+00046: 667  ifeq 302 (+256)
+00051: 669  null
+00052: 669  setlocal 2
+00055: 669  pop
+00056: 671  getlocal 0
+00059: 671  getprop "base"
+00064: 671  string "from_ori"
+00069: 671  stricteq
+00070: 671  ifeq 120 (+50)
+00075: 672  name "xs"
+00080: 672  getprop "Factorys"
+00085: 672  getprop "Skill"
+00090: 672  dup
+00091: 672  callprop "getViewByName"
+00096: 672  swap
+00097: 672  notearg
+00098: 672  getarg 0
+00101: 672  notearg
+00102: 672  string "from"
+00107: 672  notearg
+00108: 672  call 2
+00111: 672  setlocal 2
+00114: 672  pop
+00115: 672  goto 232 (+117)
+00120: 674  getlocal 0
+00123: 674  getprop "base"
+00128: 674  string "to_ori"
+00133: 674  stricteq
+00134: 674  ifeq 184 (+50)
+00139: 675  name "xs"
+00144: 675  getprop "Factorys"
+00149: 675  getprop "Skill"
+00154: 675  dup
+00155: 675  callprop "getViewByName"
+00160: 675  swap
+00161: 675  notearg
+00162: 675  getarg 0
+00165: 675  notearg
+00166: 675  string "to"
+00171: 675  notearg
+00172: 675  call 2
+00175: 675  setlocal 2
+00178: 675  pop
+00179: 675  goto 232 (+53)
+00184: 677  getlocal 0
+00187: 677  getprop "base"
+00192: 677  string "c"
+00197: 677  stricteq
+00198: 677  ifeq 208 (+10)
+00203: 677  goto 232 (+29)
+00208: 680  getlocal 0
+00211: 680  getprop "base"
+00216: 680  string "from_touch"
+00221: 680  stricteq
+00222: 680  ifeq 232 (+10)
+00227: 680  goto 232 (+5)
+00232: 687  name "xs"
+00237: 687  dup
+00238: 687  callprop "assert"
+00243: 687  swap
+00244: 687  notearg
+00245: 687  getlocal 2
+00248: 687  notearg
+00249: 687  string "_baseView 2334123"
+00254: 687  notearg
+00255: 687  call 2
+00258: 687  pop
+00259: 691  getlocal 1
+00262: 691  zero
+00263: 691  getlocal 2
+00266: 691  getprop "original"
+00271: 691  getprop "scaleX"
+00276: 691  setelem
+00277: 691  pop
+00278: 692  getlocal 1
+00281: 692  one
+00282: 692  getlocal 2
+00285: 692  getprop "original"
+00290: 692  getprop "scaleY"
+00295: 692  setelem
+00296: 692  pop
+00297: 692  goto 414 (+117)
+00302: 697  name "xs"
+00307: 697  dup
+00308: 697  callprop "assert"
+00313: 697  swap
+00314: 697  notearg
+00315: 697  getlocal 0
+00318: 697  getprop "scaleX"
+00323: 697  name "undefined"
+00328: 697  strictne
+00329: 697  notearg
+00330: 697  string "not a scale"
+00335: 697  notearg
+00336: 697  getlocal 0
+00339: 697  notearg
+00340: 697  call 3
+00343: 697  pop
+00344: 698  name "xs"
+00349: 698  dup
+00350: 698  callprop "assert"
+00355: 698  swap
+00356: 698  notearg
+00357: 698  getlocal 0
+00360: 698  getprop "scaleY"
+00365: 698  name "undefined"
+00370: 698  strictne
+00371: 698  notearg
+00372: 698  string "not a scale"
+00377: 698  notearg
+00378: 698  getlocal 0
+00381: 698  notearg
+00382: 698  call 3
+00385: 698  pop
+00386: 699  getlocal 1
+00389: 699  zero
+00390: 699  getlocal 0
+00393: 699  getprop "scaleX"
+00398: 699  setelem
+00399: 699  pop
+00400: 700  getlocal 1
+00403: 700  one
+00404: 700  getlocal 0
+00407: 700  getprop "scaleY"
+00412: 700  setelem
+00413: 700  pop
+00414: 704  getlocal 1
+00417: 704  return
+00418: 704  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:663 ---
+;; function object[8] makeRotateAngleByParams
+;; function metadata object[8] nargs=2 bindings=4
+;; arg[0] input
+;; arg[1] rotCfg
+;; local[0] _needRevertX
+;; local[1] _angle
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:713 ---
+loc   line  op
+----- ----  --
+main:
+00000: 715  name "xs"
+00005: 715  getprop "Factorys"
+00010: 715  getprop "Skill"
+00015: 715  getprop "Item"
+00020: 715  dup
+00021: 715  callprop "needRevertX"
+00026: 715  swap
+00027: 715  notearg
+00028: 715  getarg 0
+00031: 715  notearg
+00032: 715  call 1
+00035: 715  setlocal 0
+00038: 715  pop
+00039: 717  getlocal 1
+00042: 717  pop
+00043: 718  getlocal 0
+00046: 718  ifeq 66 (+20)
+00051: 719  getarg 1
+00054: 719  int8 -1
+00056: 719  mul
+00057: 719  setlocal 1
+00060: 719  pop
+00061: 719  goto 73 (+12)
+00066: 722  getarg 1
+00069: 722  setlocal 1
+00072: 722  pop
+00073: 725  getlocal 1
+00076: 725  return
+00077: 725  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:713 ---
+;; function object[9] makeMovePositionByParams
+;; function metadata object[9] nargs=2 bindings=4
+;; arg[0] input
+;; arg[1] posCfg
+;; local[0] _dstPoint
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:728 ---
+loc   line  op
+----- ----  --
+main:
+00000: 730  this
+00001: 730  dup
+00002: 730  callprop "log"
+00007: 730  swap
+00008: 730  notearg
+00009: 730  string "makeMovePositionByParams"
+00014: 730  notearg
+00015: 730  string "begin"
+00020: 730  notearg
+00021: 730  call 2
+00024: 730  pop
+00025: 731  this
+00026: 731  dup
+00027: 731  callprop "makePos"
+00032: 731  swap
+00033: 731  notearg
+00034: 731  getarg 0
+00037: 731  notearg
+00038: 731  getarg 1
+00041: 731  notearg
+00042: 731  call 2
+00045: 731  setlocal 0
+00048: 731  pop
+00049: 735  name "cc"
+00054: 735  dup
+00055: 735  callprop "pSub"
+00060: 735  swap
+00061: 735  notearg
+00062: 735  getlocal 0
+00065: 735  notearg
+00066: 735  getarg 0
+00069: 735  getprop "itemView"
+00074: 735  dup
+00075: 735  callprop "getPosition"
+00080: 735  swap
+00081: 735  notearg
+00082: 735  call 0
+00085: 735  notearg
+00086: 735  call 2
+00089: 735  setlocal 1
+00092: 735  pop
+00093: 737  null
+00094: 737  setlocal 0
+00097: 737  pop
+00098: 739  this
+00099: 739  dup
+00100: 739  callprop "log"
+00105: 739  swap
+00106: 739  notearg
+00107: 739  string "makeMovePositionByParams"
+00112: 739  notearg
+00113: 739  string "end"
+00118: 739  notearg
+00119: 739  call 2
+00122: 739  pop
+00123: 741  getlocal 1
+00126: 741  return
+00127: 741  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:728 ---
+;; function object[10] createTlAction
+;; function metadata object[10] nargs=5 bindings=12
+;; arg[0] input
+;; arg[1] tls
+;; arg[2] tag
+;; arg[3] lastAction
+;; arg[4] baseDuration
+;; local[0] _ret
+;; local[1] _lastAction
+;; local[2] _arrActions
+;; local[3] _j
+;; local[4] _tl
+;; local[5] _tlTag
+;; local[6] _type
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=159 length=275 stackDepth=1 target=434
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:758 ---
+loc   line  op
+----- ----  --
+main:
+00000: 760  this
+00001: 760  dup
+00002: 760  callprop "log"
+00007: 760  swap
+00008: 760  notearg
+00009: 760  getarg 2
+00012: 760  string "-createTlAction"
+00017: 760  add
+00018: 760  notearg
+00019: 760  string "begin"
+00024: 760  notearg
+00025: 760  call 2
+00028: 760  pop
+00029: 762  getlocal 0
+00032: 762  pop
+00033: 763  getarg 3
+00036: 763  setlocal 1
+00039: 763  pop
+00040: 765  getarg 1
+00043: 765  getprop "type"
+00048: 765  name "undefined"
+00053: 765  strictne
+00054: 765  and 94 (+40)
+00059: 765  pop
+00060: 766  getarg 1
+00063: 766  getprop "type"
+00068: 766  string "Sequence"
+00073: 766  strictne
+00074: 766  and 94 (+20)
+00079: 766  pop
+00080: 767  getarg 1
+00083: 767  getprop "type"
+00088: 767  string "Spawn"
+00093: 767  strictne
+00094: 767  ifeq 140 (+46)
+00099: 768  this
+00100: 768  dup
+00101: 768  callprop "createTlActionByParams"
+00106: 768  swap
+00107: 768  notearg
+00108: 768  getarg 0
+00111: 768  notearg
+00112: 768  getarg 1
+00115: 768  notearg
+00116: 768  getarg 2
+00119: 768  notearg
+00120: 768  getlocal 1
+00123: 768  notearg
+00124: 768  getarg 4
+00127: 768  notearg
+00128: 768  call 5
+00131: 768  setlocal 0
+00134: 768  pop
+00135: 768  goto 507 (+372)
+00140: 772  newarray 0
+00144: 772  endinit
+00145: 772  setlocal 2
+00148: 772  pop
+00149: 774  getarg 1
+00152: 774  iter 1
+00154: 774  goto 427 (+273)
+00159: 774  loophead
+00160: 774  iternext
+00161: 774  setlocal 3
+00164: 774  pop
+00165: 776  getlocal 3
+00168: 776  and 220 (+52)
+00173: 776  pop
+00174: 776  string "type|repeat"
+00179: 776  dup
+00180: 776  callprop "indexOf"
+00185: 776  swap
+00186: 776  notearg
+00187: 776  getlocal 3
+00190: 776  notearg
+00191: 776  call 1
+00194: 776  zero
+00195: 776  lt
+00196: 776  and 220 (+24)
+00201: 776  pop
+00202: 776  getarg 1
+00205: 776  dup
+00206: 776  callprop "hasOwnProperty"
+00211: 776  swap
+00212: 776  notearg
+00213: 776  getlocal 3
+00216: 776  notearg
+00217: 776  call 1
+00220: 776  ifeq 427 (+207)
+00225: 778  name "xs"
+00230: 778  dup
+00231: 778  callprop "assert"
+00236: 778  swap
+00237: 778  notearg
+00238: 778  getlocal 3
+00241: 778  string "hasItemString"
+00246: 778  ne
+00247: 778  notearg
+00248: 778  string "hasItemString found"
+00253: 778  notearg
+00254: 778  getarg 1
+00257: 778  notearg
+00258: 778  call 3
+00261: 778  pop
+00262: 779  name "xs"
+00267: 779  dup
+00268: 779  callprop "assert"
+00273: 779  swap
+00274: 779  notearg
+00275: 779  getlocal 3
+00278: 779  string "prototype"
+00283: 779  ne
+00284: 779  notearg
+00285: 779  string "prototype found"
+00290: 779  notearg
+00291: 779  getarg 1
+00294: 779  notearg
+00295: 779  call 3
+00298: 779  pop
+00299: 782  getarg 1
+00302: 782  getlocal 3
+00305: 782  getelem
+00306: 782  setlocal 4
+00309: 782  pop
+00310: 786  getlocal 4
+00313: 786  null
+00314: 786  stricteq
+00315: 786  ifeq 325 (+10)
+00320: 786  goto 427 (+107)
+00325: 788  getarg 2
+00328: 788  string "."
+00333: 788  add
+00334: 788  getlocal 3
+00337: 788  add
+00338: 788  setlocal 5
+00341: 788  pop
+00342: 792  this
+00343: 792  dup
+00344: 792  callprop "createTlAction"
+00349: 792  swap
+00350: 792  notearg
+00351: 793  getarg 0
+00354: 793  notearg
+00355: 794  getlocal 4
+00358: 794  notearg
+00359: 795  getlocal 5
+00362: 795  notearg
+00363: 796  getlocal 1
+00366: 796  notearg
+00367: 797  getarg 4
+00370: 797  notearg
+00371: 797  call 5
+00374: 797  setlocal 1
+00377: 797  pop
+00378: 801  getlocal 1
+00381: 801  null
+00382: 801  ne
+00383: 801  and 398 (+15)
+00388: 801  pop
+00389: 801  getlocal 1
+00392: 801  name "undefined"
+00397: 801  ne
+00398: 801  ifeq 422 (+24)
+00403: 802  getlocal 2
+00406: 802  dup
+00407: 802  callprop "push"
+00412: 802  swap
+00413: 802  notearg
+00414: 802  getlocal 1
+00417: 802  notearg
+00418: 802  call 1
+00421: 802  pop
+00422: 802  goto 427 (+5)
+00427: 806  loopentry
+00428: 806  moreiter
+00429: 806  ifne 159 (-270)
+00434: 806  enditer
+00435: 812  name "xs"
+00440: 812  getprop "Factorys"
+00445: 812  getprop "Skill"
+00450: 812  dup
+00451: 812  callprop "makeValidSetType"
+00456: 812  swap
+00457: 812  notearg
+00458: 812  getarg 1
+00461: 812  notearg
+00462: 812  call 1
+00465: 812  setlocal 6
+00468: 812  pop
+00469: 814  name "xs"
+00474: 814  getprop "Utils"
+00479: 814  getprop "Action"
+00484: 814  dup
+00485: 814  callprop "combine"
+00490: 814  swap
+00491: 814  notearg
+00492: 814  getlocal 2
+00495: 814  notearg
+00496: 814  getlocal 6
+00499: 814  notearg
+00500: 814  call 2
+00503: 814  setlocal 0
+00506: 814  pop
+00507: 824  getlocal 0
+00510: 824  and 527 (+17)
+00515: 824  pop
+00516: 824  getarg 1
+00519: 824  getprop "repeat"
+00524: 824  int8 2
+00526: 824  ge
+00527: 824  ifeq 570 (+43)
+00532: 825  name "cc"
+00537: 825  getprop "Repeat"
+00542: 825  dup
+00543: 825  callprop "create"
+00548: 825  swap
+00549: 825  notearg
+00550: 825  getlocal 0
+00553: 825  notearg
+00554: 825  getarg 1
+00557: 825  getprop "repeat"
+00562: 825  notearg
+00563: 825  call 2
+00566: 825  setlocal 0
+00569: 825  pop
+00570: 828  this
+00571: 828  dup
+00572: 828  callprop "log"
+00577: 828  swap
+00578: 828  notearg
+00579: 828  getarg 2
+00582: 828  string "-createTlAction"
+00587: 828  add
+00588: 828  notearg
+00589: 828  string "end "
+00594: 828  getlocal 0
+00597: 828  add
+00598: 828  notearg
+00599: 828  call 2
+00602: 828  pop
+00603: 829  getlocal 0
+00606: 829  return
+00607: 829  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Skill/Item/Timeline.js:758 ---

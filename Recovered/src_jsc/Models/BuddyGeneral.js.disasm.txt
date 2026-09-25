@@ -1,0 +1,236 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/BuddyGeneral.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=38 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=58 object[2]
+;; FUNCTION-MAP kind=lambda offset=68 object[3]
+;; FUNCTION-MAP kind=lambda offset=78 object[4]
+;; FUNCTION-MAP kind=lambda offset=114 object[5]
+;; FUNCTION-MAP kind=lambda offset=140 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "Models"
+00010:   7  name "xs"
+00015:   7  getprop "Models"
+00020:   7  getprop "Base"
+00025:   7  dup
+00026:   7  callprop "extend"
+00031:   7  swap
+00032:   7  notearg
+00033:   7  newinit 1
+00038:  10  lambda (function () {
+    [sourceless code]
+})
+00043:  10  initprop "init"
+00048:  17  lambda (function () {
+    [sourceless code]
+})
+00053:  17  initprop "loadJson"
+00058:  24  lambda (function () {
+    [sourceless code]
+})
+00063:  24  initprop "getGeneralPkId"
+00068:  29  lambda (function () {
+    [sourceless code]
+})
+00073:  29  initprop "getGeneralPos"
+00078:  34  lambda (function () {
+    [sourceless code]
+})
+00083:  34  initprop "getIdxInTeam"
+00088:  34  endinit
+00089:  34  notearg
+00090:  34  call 1
+00093:  34  setprop "BuddyGeneral"
+00098:  34  popv
+00099:  40  name "xs"
+00104:  40  getprop "Models"
+00109:  40  getprop "BuddyGeneral"
+00114:  40  lambda (function () {
+    [sourceless code]
+})
+00119:  40  setprop "createWithJson"
+00124:  40  popv
+00125:  49  name "xs"
+00130:  49  getprop "Models"
+00135:  49  getprop "BuddyGeneral"
+00140:  49  lambda (function () {
+    [sourceless code]
+})
+00145:  49  setprop "createWithBase"
+00150:  49  popv
+00151:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  null
+00002:  12  setprop "general_pk_id"
+00007:  12  pop
+00008:  13  this
+00009:  13  null
+00010:  13  setprop "general_position"
+00015:  13  pop
+00016:  15  true
+00017:  15  return
+00018:  15  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:10 ---
+;; function object[1] loadJson
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] json
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  this
+00001:  19  getarg 0
+00004:  19  getprop "pk_id"
+00009:  19  setprop "general_pk_id"
+00014:  19  pop
+00015:  20  this
+00016:  20  name "xs"
+00021:  20  getprop "Utils"
+00026:  20  dup
+00027:  20  callprop "parseIntSafe"
+00032:  20  swap
+00033:  20  notearg
+00034:  20  getarg 0
+00037:  20  getprop "position"
+00042:  20  notearg
+00043:  20  call 1
+00046:  20  setprop "general_position"
+00051:  20  pop
+00052:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:17 ---
+;; function object[2] getGeneralPkId
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:24 ---
+loc   line  op
+----- ----  --
+main:
+00000:  25  this
+00001:  25  getprop "general_pk_id"
+00006:  25  return
+00007:  25  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:24 ---
+;; function object[3] getGeneralPos
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  this
+00001:  30  getprop "general_position"
+00006:  30  return
+00007:  30  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:29 ---
+;; function object[4] getIdxInTeam
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  this
+00001:  35  getprop "general_position"
+00006:  35  one
+00007:  35  sub
+00008:  35  return
+00009:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:34 ---
+;; function object[5] createWithJson
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] json
+;; local[0] team
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:40 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  name "xs"
+00005:  41  getprop "Models"
+00010:  41  getprop "BuddyGeneral"
+00015:  41  undefined
+00016:  41  notearg
+00017:  41  new 0
+00020:  41  setlocal 0
+00023:  41  pop
+00024:  42  getlocal 0
+00027:  42  and 47 (+20)
+00032:  42  pop
+00033:  42  getlocal 0
+00036:  42  dup
+00037:  42  callprop "init"
+00042:  42  swap
+00043:  42  notearg
+00044:  42  call 0
+00047:  42  ifeq 75 (+28)
+00052:  43  getlocal 0
+00055:  43  dup
+00056:  43  callprop "loadJson"
+00061:  43  swap
+00062:  43  notearg
+00063:  43  getarg 0
+00066:  43  notearg
+00067:  43  call 1
+00070:  43  pop
+00071:  44  getlocal 0
+00074:  44  return
+00075:  46  null
+00076:  46  return
+00077:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:40 ---
+;; function object[6] createWithBase
+;; function metadata object[6] nargs=0 bindings=1
+;; local[0] team
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  name "xs"
+00005:  50  getprop "Models"
+00010:  50  getprop "BuddyGeneral"
+00015:  50  undefined
+00016:  50  notearg
+00017:  50  new 0
+00020:  50  setlocal 0
+00023:  50  pop
+00024:  51  getlocal 0
+00027:  51  and 47 (+20)
+00032:  51  pop
+00033:  51  getlocal 0
+00036:  51  dup
+00037:  51  callprop "init"
+00042:  51  swap
+00043:  51  notearg
+00044:  51  call 0
+00047:  51  ifeq 56 (+9)
+00052:  52  getlocal 0
+00055:  52  return
+00056:  54  null
+00057:  54  return
+00058:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BuddyGeneral.js:49 ---

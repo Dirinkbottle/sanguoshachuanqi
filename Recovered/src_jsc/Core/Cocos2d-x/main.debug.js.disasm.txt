@@ -1,0 +1,77 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Cocos2d-x/main.debug.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; TRY-NOTE kind=iter start=128 length=49 stackDepth=1 target=177
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/main.debug.js:1 ---
+loc   line  op
+----- ----  --
+00000:   9  defvar "files"
+00005:  15  defvar "i"
+main:
+00010:   9  bindname "files"
+00015:   9  newarray 1
+00019:   9  string "MoonWarriors-jsb.js"
+00024:   9  initelem_array 0
+00028:   9  endinit
+00029:   9  setname "files"
+00034:   9  pop
+00035:  10  name "startDebugger"
+00040:  10  typeof
+00041:  10  string "undefined"
+00046:  10  strictne
+00047:  10  ifeq 103 (+56)
+00052:  11  name "cc"
+00057:  11  dup
+00058:  11  callprop "log"
+00063:  11  swap
+00064:  11  notearg
+00065:  11  string "**** will start debugger ****"
+00070:  11  notearg
+00071:  11  call 1
+00074:  11  popv
+00075:  12  callname "startDebugger"
+00080:  12  implicitthis "startDebugger"
+00085:  12  notearg
+00086:  12  this
+00087:  12  notearg
+00088:  12  name "files"
+00093:  12  notearg
+00094:  12  call 2
+00097:  12  popv
+00098:  12  goto 188 (+90)
+00103:  14  name "cc"
+00108:  14  dup
+00109:  14  callprop "log"
+00114:  14  swap
+00115:  14  notearg
+00116:  14  string "**** no debugger loaded ****"
+00121:  14  notearg
+00122:  14  call 1
+00125:  14  popv
+00126:  15  name "files"
+00131:  15  iter 1
+00133:  15  goto 180 (+47)
+00138:  15  loophead
+00139:  15  iternext
+00140:  15  bindname "i"
+00145:  15  pick 1
+00147:  15  setname "i"
+00152:  15  pop
+00153:  16  callname "require"
+00158:  16  implicitthis "require"
+00163:  16  notearg
+00164:  16  name "files"
+00169:  16  name "i"
+00174:  16  getelem
+00175:  16  notearg
+00176:  16  call 1
+00179:  16  popv
+00180:  16  loopentry
+00181:  16  moreiter
+00182:  16  ifne 138 (-44)
+00187:  16  enditer
+00188:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/main.debug.js:1 ---

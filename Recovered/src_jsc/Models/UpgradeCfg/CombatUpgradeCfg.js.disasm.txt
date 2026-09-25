@@ -1,0 +1,269 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=63 object[0]
+;; FUNCTION-MAP kind=lambda offset=73 object[1]
+;; FUNCTION-MAP kind=lambda offset=83 object[2]
+;; FUNCTION-MAP kind=lambda offset=119 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  name "xs"
+00005:  12  getprop "Models"
+00010:  12  name "xs"
+00015:  12  getprop "Models"
+00020:  12  getprop "BaseUpgradeCfg"
+00025:  12  dup
+00026:  12  callprop "extend"
+00031:  12  swap
+00032:  12  notearg
+00033:  12  newinit 1
+00038:  14  name "xs"
+00043:  14  getprop "Constant_CfgDataType_CombatLevel"
+00048:  14  initprop "CfgDataType"
+00053:  16  string "CombatUpgradeCfg"
+00058:  16  initprop "name"
+00063:  18  lambda (function () {
+    [sourceless code]
+})
+00068:  18  initprop "getExtraBuff"
+00073:  26  lambda (function () {
+    [sourceless code]
+})
+00078:  26  initprop "getNum"
+00083:  31  lambda (function () {
+    [sourceless code]
+})
+00088:  31  initprop "getNumTotal"
+00093:  31  endinit
+00094:  31  notearg
+00095:  31  call 1
+00098:  31  setprop "CombatUpgradeCfg"
+00103:  31  popv
+00104:  44  name "xs"
+00109:  44  getprop "Models"
+00114:  44  getprop "CombatUpgradeCfg"
+00119:  44  lambda (function () {
+    [sourceless code]
+})
+00124:  44  setprop "createWithBase"
+00129:  44  popv
+00130:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.js:1 ---
+;; function object[0] getExtraBuff
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.js:18 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  name "xs"
+00005:  22  getprop "Utils"
+00010:  22  dup
+00011:  22  callprop "parseIntSafe"
+00016:  22  swap
+00017:  22  notearg
+00018:  22  this
+00019:  22  dup
+00020:  22  callprop "getLevelDataRef"
+00025:  22  swap
+00026:  22  notearg
+00027:  22  call 0
+00030:  22  getprop "extra_buff"
+00035:  22  notearg
+00036:  22  call 1
+00039:  22  return
+00040:  22  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.js:18 ---
+;; function object[1] getNum
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  name "xs"
+00005:  27  getprop "Utils"
+00010:  27  dup
+00011:  27  callprop "parseFloatSafe"
+00016:  27  swap
+00017:  27  notearg
+00018:  27  this
+00019:  27  dup
+00020:  27  callprop "getLevelDataRef"
+00025:  27  swap
+00026:  27  notearg
+00027:  27  call 0
+00030:  27  getprop "exp_need"
+00035:  27  notearg
+00036:  27  call 1
+00039:  27  return
+00040:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.js:26 ---
+;; function object[2] getNumTotal
+;; function metadata object[2] nargs=0 bindings=3
+;; local[0] _arr_obj
+;; local[1] num_total
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.js:31 ---
+loc   line  op
+----- ----  --
+main:
+00000:  32  this
+00001:  32  dup
+00002:  32  callprop "getTypeDataRef"
+00007:  32  swap
+00008:  32  notearg
+00009:  32  call 0
+00012:  32  setlocal 0
+00015:  32  pop
+00016:  33  zero
+00017:  33  setlocal 1
+00020:  33  pop
+00021:  34  zero
+00022:  34  setlocal 2
+00025:  34  pop
+00026:  34  goto 112 (+86)
+00031:  34  loophead
+00032:  34  this
+00033:  34  dup
+00034:  34  callprop "getLevel"
+00039:  34  swap
+00040:  34  notearg
+00041:  34  call 0
+00044:  34  one
+00045:  34  sub
+00046:  34  getlocal 2
+00049:  34  gt
+00050:  34  ifeq 97 (+47)
+00055:  35  getlocal 1
+00058:  35  name "xs"
+00063:  35  getprop "Utils"
+00068:  35  dup
+00069:  35  callprop "parseFloatSafe"
+00074:  35  swap
+00075:  35  notearg
+00076:  35  getlocal 0
+00079:  35  getlocal 2
+00082:  35  getelem
+00083:  35  getprop "exp_need"
+00088:  35  notearg
+00089:  35  call 1
+00092:  35  add
+00093:  35  setlocal 1
+00096:  35  pop
+00097:  34  localinc 11
+00100:  34  getlocal 2
+00103:  34  pos
+00104:  34  dup
+00105:  34  one
+00106:  34  add
+00107:  34  setlocal 2
+00110:  34  pop
+00111:  34  pop
+00112:  34  loopentry
+00113:  34  getlocal 2
+00116:  34  getlocal 0
+00119:  34  length "length"
+00124:  34  lt
+00125:  34  ifne 31 (-94)
+00130:  38  this
+00131:  38  dup
+00132:  38  callprop "dump"
+00137:  38  swap
+00138:  38  notearg
+00139:  38  string "get num total level:"
+00144:  38  this
+00145:  38  dup
+00146:  38  callprop "getLevel"
+00151:  38  swap
+00152:  38  notearg
+00153:  38  call 0
+00156:  38  add
+00157:  38  string "num_total:"
+00162:  38  add
+00163:  38  getlocal 1
+00166:  38  add
+00167:  38  notearg
+00168:  38  call 1
+00171:  38  pop
+00172:  39  getlocal 1
+00175:  39  return
+00176:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.js:31 ---
+;; function object[3] createWithBase
+;; function metadata object[3] nargs=2 bindings=3
+;; arg[0] type
+;; arg[1] level
+;; local[0] cfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  name "xs"
+00005:  46  dup
+00006:  46  callprop "assert"
+00011:  46  swap
+00012:  46  notearg
+00013:  46  getarg 1
+00016:  46  one
+00017:  46  ge
+00018:  46  notearg
+00019:  46  string "level >=1"
+00024:  46  notearg
+00025:  46  call 2
+00028:  46  pop
+00029:  48  name "xs"
+00034:  48  getprop "Models"
+00039:  48  getprop "CombatUpgradeCfg"
+00044:  48  undefined
+00045:  48  notearg
+00046:  48  new 0
+00049:  48  setlocal 0
+00052:  48  pop
+00053:  49  getlocal 0
+00056:  49  and 76 (+20)
+00061:  49  pop
+00062:  49  getlocal 0
+00065:  49  dup
+00066:  49  callprop "init"
+00071:  49  swap
+00072:  49  notearg
+00073:  49  call 0
+00076:  49  ifeq 108 (+32)
+00081:  50  getlocal 0
+00084:  50  dup
+00085:  50  callprop "readBaseData"
+00090:  50  swap
+00091:  50  notearg
+00092:  50  getarg 0
+00095:  50  notearg
+00096:  50  getarg 1
+00099:  50  notearg
+00100:  50  call 2
+00103:  50  pop
+00104:  51  getlocal 0
+00107:  51  return
+00108:  53  this
+00109:  53  dup
+00110:  53  callprop "error"
+00115:  53  swap
+00116:  53  notearg
+00117:  53  string "CombatUpgradeCfg.createWithBase"
+00122:  53  notearg
+00123:  53  call 1
+00126:  53  pop
+00127:  54  null
+00128:  54  return
+00129:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UpgradeCfg/CombatUpgradeCfg.js:44 ---

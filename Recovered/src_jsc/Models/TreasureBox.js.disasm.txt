@@ -1,0 +1,1650 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/TreasureBox.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=93 object[5]
+;; FUNCTION-MAP kind=lambda offset=103 object[6]
+;; FUNCTION-MAP kind=lambda offset=113 object[7]
+;; FUNCTION-MAP kind=lambda offset=123 object[8]
+;; FUNCTION-MAP kind=lambda offset=133 object[9]
+;; FUNCTION-MAP kind=lambda offset=143 object[10]
+;; FUNCTION-MAP kind=lambda offset=153 object[11]
+;; FUNCTION-MAP kind=lambda offset=163 object[12]
+;; FUNCTION-MAP kind=lambda offset=173 object[13]
+;; FUNCTION-MAP kind=lambda offset=183 object[14]
+;; FUNCTION-MAP kind=lambda offset=219 object[15]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Models"
+00010:   6  name "cc"
+00015:   6  getprop "Class"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  string "xs.Models.TreasureBox"
+00038:   7  initprop "name"
+00043:   9  lambda (function () {
+    [sourceless code]
+})
+00048:   9  initprop "init"
+00053:  25  lambda (function () {
+    [sourceless code]
+})
+00058:  25  initprop "createView"
+00063:  79  lambda (function () {
+    [sourceless code]
+})
+00068:  79  initprop "createBoxView"
+00073: 116  lambda (function () {
+    [sourceless code]
+})
+00078: 116  initprop "createHeadeIcon"
+00083: 153  lambda (function () {
+    [sourceless code]
+})
+00088: 153  initprop "createRoadAni"
+00093: 191  lambda (function () {
+    [sourceless code]
+})
+00098: 191  initprop "getStarStatusLabel"
+00103: 208  lambda (function () {
+    [sourceless code]
+})
+00108: 208  initprop "getPos"
+00113: 212  lambda (function () {
+    [sourceless code]
+})
+00118: 212  initprop "getType"
+00123: 216  lambda (function () {
+    [sourceless code]
+})
+00128: 216  initprop "getBoxStatus"
+00133: 220  lambda (function () {
+    [sourceless code]
+})
+00138: 220  initprop "setBoxStatus"
+00143: 224  lambda (function () {
+    [sourceless code]
+})
+00148: 224  initprop "isCanIn"
+00153: 233  lambda (function () {
+    [sourceless code]
+})
+00158: 233  initprop "getTreasureName"
+00163: 237  lambda (function () {
+    [sourceless code]
+})
+00168: 237  initprop "getModelName"
+00173: 241  lambda (function () {
+    [sourceless code]
+})
+00178: 241  initprop "getItemId"
+00183: 245  lambda (function () {
+    [sourceless code]
+})
+00188: 245  initprop "getId"
+00193: 245  endinit
+00194: 245  notearg
+00195: 245  call 1
+00198: 245  setprop "TreasureBox"
+00203: 245  popv
+00204: 251  name "xs"
+00209: 251  getprop "Models"
+00214: 251  getprop "TreasureBox"
+00219: 251  lambda (function () {
+    [sourceless code]
+})
+00224: 251  setprop "create"
+00229: 251  popv
+00230: 257  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] TreasureInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  this
+00001:  10  getarg 0
+00004:  10  getprop "type"
+00009:  10  string "dungeon"
+00014:  10  stricteq
+00015:  10  ifeq 40 (+25)
+00020:  10  name "xs"
+00025:  10  getprop "Models"
+00030:  10  getprop "Chapter_Type_Dungeon"
+00035:  10  goto 55 (+20)
+00040:  10  name "xs"
+00045:  10  getprop "Models"
+00050:  10  getprop "Chapter_Type_TreasureBox"
+00055:  10  setprop "type"
+00060:  10  pop
+00061:  11  this
+00062:  11  getarg 0
+00065:  11  getprop "name"
+00070:  11  setprop "treasureName"
+00075:  11  pop
+00076:  12  this
+00077:  12  name "xs"
+00082:  12  getprop "Utils"
+00087:  12  dup
+00088:  12  callprop "parseIntSafe"
+00093:  12  swap
+00094:  12  notearg
+00095:  12  getarg 0
+00098:  12  getprop "position"
+00103:  12  notearg
+00104:  12  call 1
+00107:  12  setprop "pos"
+00112:  12  pop
+00113:  13  this
+00114:  13  getarg 0
+00117:  13  getprop "open_need_star"
+00122:  13  setprop "open_need_star"
+00127:  13  pop
+00128:  14  this
+00129:  14  getarg 0
+00132:  14  getprop "has_star"
+00137:  14  setprop "hasStar"
+00142:  14  pop
+00143:  15  this
+00144:  15  getarg 0
+00147:  15  getprop "direction"
+00152:  15  setprop "direction"
+00157:  15  pop
+00158:  16  this
+00159:  16  name "xs"
+00164:  16  getprop "Utils"
+00169:  16  dup
+00170:  16  callprop "parseIntSafe"
+00175:  16  swap
+00176:  16  notearg
+00177:  16  getarg 0
+00180:  16  getprop "can_open"
+00185:  16  notearg
+00186:  16  call 1
+00189:  16  setprop "boxStatus"
+00194:  16  pop
+00195:  17  this
+00196:  17  getarg 0
+00199:  17  getprop "item_id"
+00204:  17  setprop "itemId"
+00209:  17  pop
+00210:  18  this
+00211:  18  getarg 0
+00214:  18  getprop "box_id"
+00219:  18  setprop "boxId"
+00224:  18  pop
+00225:  21  true
+00226:  21  return
+00227:  21  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:9 ---
+;; function object[1] createView
+;; function metadata object[1] nargs=0 bindings=3
+;; local[0] styleModel
+;; local[1] i
+;; local[2] animation
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  this
+00001:  29  name "xs"
+00006:  29  getprop "Profile"
+00011:  29  getprop "GameData"
+00016:  29  getprop "Mgr"
+00021:  29  dup
+00022:  29  callprop "getInstance"
+00027:  29  swap
+00028:  29  notearg
+00029:  29  call 0
+00032:  29  getprop "Items"
+00037:  29  dup
+00038:  29  callprop "createWithBase"
+00043:  29  swap
+00044:  29  notearg
+00045:  29  this
+00046:  29  getprop "itemId"
+00051:  29  notearg
+00052:  29  call 1
+00055:  29  setprop "obj_item"
+00060:  29  pop
+00061:  32  this
+00062:  32  getprop "obj_item"
+00067:  32  dup
+00068:  32  callprop "getStyleModel"
+00073:  32  swap
+00074:  32  notearg
+00075:  32  call 0
+00078:  32  setlocal 0
+00081:  32  pop
+00082:  48  this
+00083:  48  this
+00084:  48  dup
+00085:  48  callprop "createBoxView"
+00090:  48  swap
+00091:  48  notearg
+00092:  48  getlocal 0
+00095:  48  notearg
+00096:  48  call 1
+00099:  48  setprop "boxView"
+00104:  48  pop
+00105:  54  this
+00106:  54  this
+00107:  54  getprop "boxView"
+00112:  54  setprop "borderImage"
+00117:  54  pop
+00118:  56  zero
+00119:  56  setlocal 1
+00122:  56  pop
+00123:  56  goto 324 (+201)
+00128:  58  loophead
+00129:  58  this
+00130:  58  dup
+00131:  58  callprop "createRoadAni"
+00136:  58  swap
+00137:  58  notearg
+00138:  58  this
+00139:  58  getprop "direction"
+00144:  58  getlocal 1
+00147:  58  getelem
+00148:  58  notearg
+00149:  58  call 1
+00152:  58  setlocal 2
+00155:  58  pop
+00156:  59  name "xs"
+00161:  59  getprop "Utils"
+00166:  59  getprop "Node"
+00171:  59  dup
+00172:  59  callprop "attachNodes"
+00177:  59  swap
+00178:  59  notearg
+00179:  59  this
+00180:  59  getprop "borderImage"
+00185:  59  notearg
+00186:  59  getlocal 2
+00189:  59  getprop "sprite"
+00194:  59  notearg
+00195:  60  newinit 1
+00200:  60  string "c"
+00205:  60  initprop "desc"
+00210:  60  getlocal 2
+00213:  60  getprop "offset"
+00218:  60  initprop "offset"
+00223:  60  false
+00224:  60  initprop "sc"
+00229:  60  endinit
+00230:  60  notearg
+00231:  60  call 3
+00234:  60  pop
+00235:  62  this
+00236:  62  dup
+00237:  62  callprop "getBoxStatus"
+00242:  62  swap
+00243:  62  notearg
+00244:  62  call 0
+00247:  62  name "xs"
+00252:  62  getprop "TreasureBox_Status_Closed"
+00257:  62  stricteq
+00258:  62  ifeq 309 (+51)
+00263:  63  getlocal 2
+00266:  63  getprop "sprite"
+00271:  63  dup
+00272:  63  callprop "playAniById"
+00277:  63  swap
+00278:  63  notearg
+00279:  63  string "disableAnimation"
+00284:  63  notearg
+00285:  63  newinit 1
+00290:  63  true
+00291:  63  initprop "loop"
+00296:  63  int8 4
+00298:  63  initprop "speed"
+00303:  63  endinit
+00304:  63  notearg
+00305:  63  call 2
+00308:  63  pop
+00309:  56  localinc 11
+00312:  56  getlocal 1
+00315:  56  pos
+00316:  56  dup
+00317:  56  one
+00318:  56  add
+00319:  56  setlocal 1
+00322:  56  pop
+00323:  56  pop
+00324:  56  loopentry
+00325:  56  getlocal 1
+00328:  56  this
+00329:  56  getprop "direction"
+00334:  56  length "length"
+00339:  56  lt
+00340:  56  ifne 128 (-212)
+00345:  68  name "xs"
+00350:  68  getprop "Utils"
+00355:  68  getprop "Node"
+00360:  68  dup
+00361:  68  callprop "attachNodes"
+00366:  68  swap
+00367:  68  notearg
+00368:  68  this
+00369:  68  getprop "borderImage"
+00374:  68  notearg
+00375:  68  this
+00376:  68  dup
+00377:  68  callprop "getStarStatusLabel"
+00382:  68  swap
+00383:  68  notearg
+00384:  68  call 0
+00387:  68  notearg
+00388:  68  newinit 1
+00393:  68  string "cb"
+00398:  68  initprop "desc"
+00403:  68  name "cc"
+00408:  68  dup
+00409:  68  callprop "p"
+00414:  68  swap
+00415:  68  notearg
+00416:  68  zero
+00417:  68  notearg
+00418:  68  int8 25
+00420:  68  notearg
+00421:  68  call 2
+00424:  68  initprop "offset"
+00429:  68  false
+00430:  68  initprop "sc"
+00435:  68  endinit
+00436:  68  notearg
+00437:  68  call 3
+00440:  68  pop
+00441:  70  this
+00442:  70  getprop "borderImage"
+00447:  70  dup
+00448:  70  callprop "setAnchorPoint"
+00453:  70  swap
+00454:  70  notearg
+00455:  70  name "cc"
+00460:  70  dup
+00461:  70  callprop "p"
+00466:  70  swap
+00467:  70  notearg
+00468:  70  double 0.5
+00473:  70  notearg
+00474:  70  double 0.5
+00479:  70  notearg
+00480:  70  call 2
+00483:  70  notearg
+00484:  70  call 1
+00487:  70  pop
+00488:  71  this
+00489:  71  getprop "borderImage"
+00494:  71  dup
+00495:  71  callprop "setContentSize"
+00500:  71  swap
+00501:  71  notearg
+00502:  71  name "cc"
+00507:  71  dup
+00508:  71  callprop "size"
+00513:  71  swap
+00514:  71  notearg
+00515:  71  int8 99
+00517:  71  notearg
+00518:  71  int8 118
+00520:  71  notearg
+00521:  71  call 2
+00524:  71  notearg
+00525:  71  call 1
+00528:  71  pop
+00529:  72  this
+00530:  72  name "xs"
+00535:  72  getprop "Views"
+00540:  72  getprop "Btn"
+00545:  72  dup
+00546:  72  callprop "createInvisibleWithChild"
+00551:  72  swap
+00552:  72  notearg
+00553:  72  this
+00554:  72  getprop "borderImage"
+00559:  72  notearg
+00560:  72  call 1
+00563:  72  setprop "touchBtn"
+00568:  72  pop
+00569:  73  this
+00570:  73  getprop "touchBtn"
+00575:  73  dup
+00576:  73  callprop "setTouchPriority"
+00581:  73  swap
+00582:  73  notearg
+00583:  73  int8 -1
+00585:  73  notearg
+00586:  73  call 1
+00589:  73  pop
+00590:  74  this
+00591:  74  getprop "touchBtn"
+00596:  74  dup
+00597:  74  callprop "setZoomOnTouchDown"
+00602:  74  swap
+00603:  74  notearg
+00604:  74  false
+00605:  74  notearg
+00606:  74  call 1
+00609:  74  pop
+00610:  76  this
+00611:  76  getprop "touchBtn"
+00616:  76  return
+00617:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:25 ---
+;; function object[2] createBoxView
+;; function metadata object[2] nargs=1 bindings=6
+;; arg[0] styleModel
+;; local[0] head1Sprite
+;; local[1] boxBtm
+;; local[2] boxTop
+;; local[3] light
+;; local[4] particleAction
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:79 ---
+loc   line  op
+----- ----  --
+main:
+00000:  80  this
+00001:  80  dup
+00002:  80  callprop "createHeadeIcon"
+00007:  80  swap
+00008:  80  notearg
+00009:  80  getarg 0
+00012:  80  notearg
+00013:  80  call 1
+00016:  80  setlocal 0
+00019:  80  pop
+00020:  82  name "xs"
+00025:  82  getprop "Factorys"
+00030:  82  getprop "Sprite"
+00035:  82  dup
+00036:  82  callprop "create"
+00041:  82  swap
+00042:  82  notearg
+00043:  82  string "DungeonView_baoxiangb"
+00048:  82  notearg
+00049:  82  string "DungeonView"
+00054:  82  notearg
+00055:  82  call 2
+00058:  82  setlocal 1
+00061:  82  pop
+00062:  83  name "xs"
+00067:  83  getprop "Factorys"
+00072:  83  getprop "Sprite"
+00077:  83  dup
+00078:  83  callprop "create"
+00083:  83  swap
+00084:  83  notearg
+00085:  83  string "DungeonView_baoxiangf"
+00090:  83  notearg
+00091:  83  string "DungeonView"
+00096:  83  notearg
+00097:  83  call 2
+00100:  83  setlocal 2
+00103:  83  pop
+00104:  85  this
+00105:  85  dup
+00106:  85  callprop "getBoxStatus"
+00111:  85  swap
+00112:  85  notearg
+00113:  85  call 0
+00116:  85  name "xs"
+00121:  85  getprop "TreasureBox_Status_Closed"
+00126:  85  stricteq
+00127:  85  ifeq 265 (+138)
+00132:  87  name "xs"
+00137:  87  getprop "Utils"
+00142:  87  getprop "Node"
+00147:  87  dup
+00148:  87  callprop "attachNodes"
+00153:  87  swap
+00154:  87  notearg
+00155:  87  getlocal 1
+00158:  87  notearg
+00159:  87  getlocal 0
+00162:  87  notearg
+00163:  87  newinit 1
+00168:  87  string "c"
+00173:  87  initprop "desc"
+00178:  87  newinit 1
+00183:  87  zero
+00184:  87  initprop "x"
+00189:  87  int8 20
+00191:  87  initprop "y"
+00196:  87  endinit
+00197:  87  initprop "offset"
+00202:  87  endinit
+00203:  87  notearg
+00204:  87  call 3
+00207:  87  pop
+00208:  88  name "xs"
+00213:  88  getprop "Utils"
+00218:  88  getprop "Node"
+00223:  88  dup
+00224:  88  callprop "attachNodes"
+00229:  88  swap
+00230:  88  notearg
+00231:  88  getlocal 1
+00234:  88  notearg
+00235:  88  getlocal 2
+00238:  88  notearg
+00239:  88  newinit 1
+00244:  88  string "c"
+00249:  88  initprop "desc"
+00254:  88  endinit
+00255:  88  notearg
+00256:  88  call 3
+00259:  88  pop
+00260:  88  goto 872 (+612)
+00265:  90  this
+00266:  90  dup
+00267:  90  callprop "getBoxStatus"
+00272:  90  swap
+00273:  90  notearg
+00274:  90  call 0
+00277:  90  name "xs"
+00282:  90  getprop "TreasureBox_Status_Open"
+00287:  90  stricteq
+00288:  90  ifeq 792 (+504)
+00293:  93  name "xs"
+00298:  93  getprop "Factorys"
+00303:  93  getprop "Sprite"
+00308:  93  dup
+00309:  93  callprop "create"
+00314:  93  swap
+00315:  93  notearg
+00316:  93  string "DungeonView_finish_light"
+00321:  93  notearg
+00322:  93  string "DungeonView"
+00327:  93  notearg
+00328:  93  call 2
+00331:  93  setlocal 3
+00334:  93  pop
+00335:  94  name "xs"
+00340:  94  getprop "Utils"
+00345:  94  getprop "Node"
+00350:  94  dup
+00351:  94  callprop "attachNodes"
+00356:  94  swap
+00357:  94  notearg
+00358:  94  getlocal 1
+00361:  94  notearg
+00362:  94  getlocal 0
+00365:  94  notearg
+00366:  94  newinit 1
+00371:  94  string "c"
+00376:  94  initprop "desc"
+00381:  94  newinit 1
+00386:  94  zero
+00387:  94  initprop "x"
+00392:  94  int8 20
+00394:  94  initprop "y"
+00399:  94  endinit
+00400:  94  initprop "offset"
+00405:  94  endinit
+00406:  94  notearg
+00407:  94  call 3
+00410:  94  pop
+00411:  95  name "xs"
+00416:  95  getprop "Utils"
+00421:  95  getprop "Node"
+00426:  95  dup
+00427:  95  callprop "attachNodes"
+00432:  95  swap
+00433:  95  notearg
+00434:  95  getlocal 1
+00437:  95  notearg
+00438:  95  getlocal 3
+00441:  95  notearg
+00442:  95  newinit 1
+00447:  95  string "c"
+00452:  95  initprop "desc"
+00457:  95  newinit 1
+00462:  95  zero
+00463:  95  initprop "x"
+00468:  95  int8 25
+00470:  95  initprop "y"
+00475:  95  endinit
+00476:  95  initprop "offset"
+00481:  95  endinit
+00482:  95  notearg
+00483:  95  call 3
+00486:  95  pop
+00487:  96  name "xs"
+00492:  96  getprop "Utils"
+00497:  96  getprop "Node"
+00502:  96  dup
+00503:  96  callprop "attachNodes"
+00508:  96  swap
+00509:  96  notearg
+00510:  96  getlocal 1
+00513:  96  notearg
+00514:  96  getlocal 2
+00517:  96  notearg
+00518:  96  newinit 1
+00523:  96  string "c"
+00528:  96  initprop "desc"
+00533:  96  endinit
+00534:  96  notearg
+00535:  96  call 3
+00538:  96  pop
+00539:  98  getlocal 3
+00542:  98  dup
+00543:  98  callprop "runAction"
+00548:  98  swap
+00549:  98  notearg
+00550:  98  name "cc"
+00555:  98  getprop "RepeatForever"
+00560:  98  dup
+00561:  98  callprop "create"
+00566:  98  swap
+00567:  98  notearg
+00568:  98  name "cc"
+00573:  98  getprop "Sequence"
+00578:  98  dup
+00579:  98  callprop "create"
+00584:  98  swap
+00585:  98  notearg
+00586:  99  name "cc"
+00591:  99  getprop "FadeIn"
+00596:  99  dup
+00597:  99  callprop "create"
+00602:  99  swap
+00603:  99  notearg
+00604:  99  one
+00605:  99  notearg
+00606:  99  call 1
+00609:  99  notearg
+00610: 100  name "cc"
+00615: 100  getprop "FadeOut"
+00620: 100  dup
+00621: 100  callprop "create"
+00626: 100  swap
+00627: 100  notearg
+00628: 100  one
+00629: 100  notearg
+00630: 100  call 1
+00633: 100  notearg
+00634: 100  call 2
+00637: 100  notearg
+00638: 100  call 1
+00641: 100  notearg
+00642: 100  call 1
+00645: 100  pop
+00646: 104  name "xs"
+00651: 104  getprop "Factorys"
+00656: 104  getprop "Particle"
+00661: 104  dup
+00662: 104  callprop "create"
+00667: 104  swap
+00668: 104  notearg
+00669: 104  string "ParticleTreasureBox"
+00674: 104  notearg
+00675: 104  call 1
+00678: 104  setlocal 4
+00681: 104  pop
+00682: 105  name "xs"
+00687: 105  getprop "Utils"
+00692: 105  getprop "Node"
+00697: 105  dup
+00698: 105  callprop "attachNodes"
+00703: 105  swap
+00704: 105  notearg
+00705: 105  getlocal 1
+00708: 105  notearg
+00709: 105  getlocal 4
+00712: 105  notearg
+00713: 105  newinit 1
+00718: 106  string "lb"
+00723: 106  initprop "desc"
+00728: 106  name "cc"
+00733: 106  dup
+00734: 106  callprop "p"
+00739: 106  swap
+00740: 106  notearg
+00741: 106  getlocal 1
+00744: 106  dup
+00745: 106  callprop "getContentSize"
+00750: 106  swap
+00751: 106  notearg
+00752: 106  call 0
+00755: 106  getprop "width"
+00760: 106  int8 2
+00762: 106  div
+00763: 106  notearg
+00764: 106  int8 30
+00766: 106  notearg
+00767: 106  call 2
+00770: 106  initprop "offset"
+00775: 106  true
+00776: 106  initprop "sc"
+00781: 106  endinit
+00782: 106  notearg
+00783: 106  call 3
+00786: 106  pop
+00787: 106  goto 872 (+85)
+00792: 108  this
+00793: 108  dup
+00794: 108  callprop "getBoxStatus"
+00799: 108  swap
+00800: 108  notearg
+00801: 108  call 0
+00804: 108  name "xs"
+00809: 108  getprop "TreasureBox_Status_Getted"
+00814: 108  stricteq
+00815: 108  ifeq 872 (+57)
+00820: 110  name "xs"
+00825: 110  getprop "Utils"
+00830: 110  getprop "Node"
+00835: 110  dup
+00836: 110  callprop "attachNodes"
+00841: 110  swap
+00842: 110  notearg
+00843: 110  getlocal 1
+00846: 110  notearg
+00847: 110  getlocal 2
+00850: 110  notearg
+00851: 110  newinit 1
+00856: 110  string "c"
+00861: 110  initprop "desc"
+00866: 110  endinit
+00867: 110  notearg
+00868: 110  call 3
+00871: 110  pop
+00872: 113  getlocal 1
+00875: 113  return
+00876: 113  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:79 ---
+;; function object[3] createHeadeIcon
+;; function metadata object[3] nargs=1 bindings=4
+;; arg[0] styleModel
+;; local[0] head1Sp
+;; local[1] headBtm
+;; local[2] mask
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:116 ---
+loc   line  op
+----- ----  --
+main:
+00000: 117  getarg 0
+00003: 117  dup
+00004: 117  callprop "createPartView"
+00009: 117  swap
+00010: 117  notearg
+00011: 117  string "head1"
+00016: 117  notearg
+00017: 117  call 1
+00020: 117  setlocal 0
+00023: 117  pop
+00024: 118  getlocal 1
+00027: 118  pop
+00028: 119  getarg 0
+00031: 119  dup
+00032: 119  callprop "getGrade"
+00037: 119  swap
+00038: 119  notearg
+00039: 119  call 0
+00042: 119  tableswitch defaultOffset 217 low 1 high 4
+	1: 29
+	2: 76
+	3: 123
+	4: 170
+00071: 121  name "xs"
+00076: 121  getprop "Factorys"
+00081: 121  getprop "Sprite"
+00086: 121  dup
+00087: 121  callprop "create"
+00092: 121  swap
+00093: 121  notearg
+00094: 121  string "DungeonView_equ_1"
+00099: 121  notearg
+00100: 121  string "DungeonView"
+00105: 121  notearg
+00106: 121  call 2
+00109: 121  setlocal 1
+00112: 121  pop
+00113: 122  goto 287 (+174)
+00118: 124  name "xs"
+00123: 124  getprop "Factorys"
+00128: 124  getprop "Sprite"
+00133: 124  dup
+00134: 124  callprop "create"
+00139: 124  swap
+00140: 124  notearg
+00141: 124  string "DungeonView_equ_2"
+00146: 124  notearg
+00147: 124  string "DungeonView"
+00152: 124  notearg
+00153: 124  call 2
+00156: 124  setlocal 1
+00159: 124  pop
+00160: 125  goto 287 (+127)
+00165: 127  name "xs"
+00170: 127  getprop "Factorys"
+00175: 127  getprop "Sprite"
+00180: 127  dup
+00181: 127  callprop "create"
+00186: 127  swap
+00187: 127  notearg
+00188: 127  string "DungeonView_equ_3"
+00193: 127  notearg
+00194: 127  string "DungeonView"
+00199: 127  notearg
+00200: 127  call 2
+00203: 127  setlocal 1
+00206: 127  pop
+00207: 128  goto 287 (+80)
+00212: 130  name "xs"
+00217: 130  getprop "Factorys"
+00222: 130  getprop "Sprite"
+00227: 130  dup
+00228: 130  callprop "create"
+00233: 130  swap
+00234: 130  notearg
+00235: 130  string "DungeonView_equ_4"
+00240: 130  notearg
+00241: 130  string "DungeonView"
+00246: 130  notearg
+00247: 130  call 2
+00250: 130  setlocal 1
+00253: 130  pop
+00254: 131  goto 287 (+33)
+00259: 133  name "xs"
+00264: 133  dup
+00265: 133  callprop "log"
+00270: 133  swap
+00271: 133  notearg
+00272: 133  string "getGrade err"
+00277: 133  notearg
+00278: 133  call 1
+00281: 133  pop
+00282: 134  goto 287 (+5)
+00287: 138  this
+00288: 138  getprop "obj_item"
+00293: 138  dup
+00294: 138  callprop "getStyleId"
+00299: 138  swap
+00300: 138  notearg
+00301: 138  call 0
+00304: 138  name "xs"
+00309: 138  getprop "Const_Item_Style_Item"
+00314: 138  eq
+00315: 138  ifeq 377 (+62)
+00320: 140  name "xs"
+00325: 140  getprop "Utils"
+00330: 140  getprop "Node"
+00335: 140  dup
+00336: 140  callprop "attachNodes"
+00341: 140  swap
+00342: 140  notearg
+00343: 140  getlocal 1
+00346: 140  notearg
+00347: 140  getlocal 0
+00350: 140  notearg
+00351: 140  newinit 1
+00356: 140  string "c"
+00361: 140  initprop "desc"
+00366: 140  endinit
+00367: 140  notearg
+00368: 140  call 3
+00371: 140  pop
+00372: 140  goto 622 (+250)
+00377: 143  name "xs"
+00382: 143  getprop "Utils"
+00387: 143  getprop "Node"
+00392: 143  dup
+00393: 143  callprop "createCircleSprite"
+00398: 143  swap
+00399: 143  notearg
+00400: 143  getlocal 0
+00403: 143  notearg
+00404: 143  string "DungeonView_mask"
+00409: 143  notearg
+00410: 143  string "DungeonView"
+00415: 143  notearg
+00416: 143  name "xs"
+00421: 143  getprop "Cfg"
+00426: 143  getprop "Resource"
+00431: 143  getprop "TreasureBox"
+00436: 143  notearg
+00437: 143  call 4
+00440: 143  setlocal 0
+00443: 143  pop
+00444: 144  name "xs"
+00449: 144  getprop "Factorys"
+00454: 144  getprop "Sprite"
+00459: 144  dup
+00460: 144  callprop "create"
+00465: 144  swap
+00466: 144  notearg
+00467: 144  string "Cmn01_Dungeon_border_mask"
+00472: 144  notearg
+00473: 144  string "Cmn01"
+00478: 144  notearg
+00479: 144  call 2
+00482: 144  setlocal 2
+00485: 144  pop
+00486: 145  name "xs"
+00491: 145  getprop "Utils"
+00496: 145  getprop "Node"
+00501: 145  dup
+00502: 145  callprop "attachNodes"
+00507: 145  swap
+00508: 145  notearg
+00509: 145  getlocal 1
+00512: 145  notearg
+00513: 145  getlocal 0
+00516: 145  notearg
+00517: 145  newinit 1
+00522: 145  string "c"
+00527: 145  initprop "desc"
+00532: 145  endinit
+00533: 145  notearg
+00534: 145  call 3
+00537: 145  pop
+00538: 146  name "xs"
+00543: 146  getprop "Utils"
+00548: 146  getprop "Node"
+00553: 146  dup
+00554: 146  callprop "attachNodes"
+00559: 146  swap
+00560: 146  notearg
+00561: 146  getlocal 1
+00564: 146  notearg
+00565: 146  getlocal 2
+00568: 146  notearg
+00569: 146  newinit 1
+00574: 146  string "c"
+00579: 146  initprop "desc"
+00584: 146  name "cc"
+00589: 146  dup
+00590: 146  callprop "p"
+00595: 146  swap
+00596: 146  notearg
+00597: 146  zero
+00598: 146  notearg
+00599: 146  int8 10
+00601: 146  notearg
+00602: 146  call 2
+00605: 146  initprop "offset"
+00610: 146  false
+00611: 146  initprop "sc"
+00616: 146  endinit
+00617: 146  notearg
+00618: 146  call 3
+00621: 146  pop
+00622: 149  getlocal 1
+00625: 149  return
+00626: 149  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:116 ---
+;; function object[4] createRoadAni
+;; function metadata object[4] nargs=1 bindings=6
+;; arg[0] dir
+;; local[0] ani
+;; local[1] toUp
+;; local[2] toDown
+;; local[3] toLeft
+;; local[4] toRight
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:153 ---
+loc   line  op
+----- ----  --
+main:
+00000: 154  newinit 1
+00005: 154  null
+00006: 154  initprop "sprite"
+00011: 154  null
+00012: 154  initprop "offset"
+00017: 154  endinit
+00018: 154  setlocal 0
+00021: 154  pop
+00022: 155  getarg 0
+00025: 155  condswitch
+00026: 156  string "1"
+00031: 156  case 71 (+40)
+00036: 164  string "2"
+00041: 164  case 235 (+194)
+00046: 172  string "3"
+00051: 172  case 399 (+348)
+00056: 180  string "4"
+00061: 180  case 568 (+507)
+00066: 180  default 718 (+652)
+00071: 157  name "xs"
+00076: 157  getprop "Views"
+00081: 157  getprop "Armature"
+00086: 157  getprop "AutoAudioArmature"
+00091: 157  dup
+00092: 157  callprop "create"
+00097: 157  swap
+00098: 157  notearg
+00099: 157  string "Arm_DungeonRoad"
+00104: 157  notearg
+00105: 157  call 1
+00108: 157  setlocal 1
+00111: 157  pop
+00112: 158  getlocal 1
+00115: 158  dup
+00116: 158  callprop "setRotation"
+00121: 158  swap
+00122: 158  notearg
+00123: 158  int8 -90
+00125: 158  notearg
+00126: 158  call 1
+00129: 158  pop
+00130: 159  getlocal 1
+00133: 159  dup
+00134: 159  callprop "setZOrder"
+00139: 159  swap
+00140: 159  notearg
+00141: 159  int8 -1
+00143: 159  notearg
+00144: 159  call 1
+00147: 159  pop
+00148: 160  getlocal 1
+00151: 160  dup
+00152: 160  callprop "playAniById"
+00157: 160  swap
+00158: 160  notearg
+00159: 160  string "normalAnimation"
+00164: 160  notearg
+00165: 160  newinit 1
+00170: 160  false
+00171: 160  initprop "loop"
+00176: 160  one
+00177: 160  initprop "speed"
+00182: 160  endinit
+00183: 160  notearg
+00184: 160  call 2
+00187: 160  pop
+00188: 161  getlocal 0
+00191: 161  getlocal 1
+00194: 161  setprop "sprite"
+00199: 161  pop
+00200: 162  getlocal 0
+00203: 162  name "cc"
+00208: 162  dup
+00209: 162  callprop "p"
+00214: 162  swap
+00215: 162  notearg
+00216: 162  zero
+00217: 162  notearg
+00218: 162  int8 -40
+00220: 162  notearg
+00221: 162  call 2
+00224: 162  setprop "offset"
+00229: 162  pop
+00230: 163  goto 718 (+488)
+00235: 165  name "xs"
+00240: 165  getprop "Views"
+00245: 165  getprop "Armature"
+00250: 165  getprop "AutoAudioArmature"
+00255: 165  dup
+00256: 165  callprop "create"
+00261: 165  swap
+00262: 165  notearg
+00263: 165  string "Arm_DungeonRoad"
+00268: 165  notearg
+00269: 165  call 1
+00272: 165  setlocal 2
+00275: 165  pop
+00276: 166  getlocal 2
+00279: 166  dup
+00280: 166  callprop "setRotation"
+00285: 166  swap
+00286: 166  notearg
+00287: 166  int8 90
+00289: 166  notearg
+00290: 166  call 1
+00293: 166  pop
+00294: 167  getlocal 2
+00297: 167  dup
+00298: 167  callprop "setZOrder"
+00303: 167  swap
+00304: 167  notearg
+00305: 167  int8 -1
+00307: 167  notearg
+00308: 167  call 1
+00311: 167  pop
+00312: 168  getlocal 2
+00315: 168  dup
+00316: 168  callprop "playAniById"
+00321: 168  swap
+00322: 168  notearg
+00323: 168  string "normalAnimation"
+00328: 168  notearg
+00329: 168  newinit 1
+00334: 168  false
+00335: 168  initprop "loop"
+00340: 168  one
+00341: 168  initprop "speed"
+00346: 168  endinit
+00347: 168  notearg
+00348: 168  call 2
+00351: 168  pop
+00352: 169  getlocal 0
+00355: 169  getlocal 2
+00358: 169  setprop "sprite"
+00363: 169  pop
+00364: 170  getlocal 0
+00367: 170  name "cc"
+00372: 170  dup
+00373: 170  callprop "p"
+00378: 170  swap
+00379: 170  notearg
+00380: 170  zero
+00381: 170  notearg
+00382: 170  int8 -40
+00384: 170  notearg
+00385: 170  call 2
+00388: 170  setprop "offset"
+00393: 170  pop
+00394: 171  goto 718 (+324)
+00399: 173  name "xs"
+00404: 173  getprop "Views"
+00409: 173  getprop "Armature"
+00414: 173  getprop "AutoAudioArmature"
+00419: 173  dup
+00420: 173  callprop "create"
+00425: 173  swap
+00426: 173  notearg
+00427: 173  string "Arm_DungeonRoad"
+00432: 173  notearg
+00433: 173  call 1
+00436: 173  setlocal 3
+00439: 173  pop
+00440: 174  getlocal 3
+00443: 174  dup
+00444: 174  callprop "setRotation"
+00449: 174  swap
+00450: 174  notearg
+00451: 174  uint16 180
+00454: 174  notearg
+00455: 174  call 1
+00458: 174  pop
+00459: 175  getlocal 3
+00462: 175  dup
+00463: 175  callprop "setZOrder"
+00468: 175  swap
+00469: 175  notearg
+00470: 175  int8 -1
+00472: 175  notearg
+00473: 175  call 1
+00476: 175  pop
+00477: 176  getlocal 3
+00480: 176  dup
+00481: 176  callprop "playAniById"
+00486: 176  swap
+00487: 176  notearg
+00488: 176  string "normalAnimation"
+00493: 176  notearg
+00494: 176  newinit 1
+00499: 176  false
+00500: 176  initprop "loop"
+00505: 176  one
+00506: 176  initprop "speed"
+00511: 176  endinit
+00512: 176  notearg
+00513: 176  call 2
+00516: 176  pop
+00517: 177  getlocal 0
+00520: 177  getlocal 3
+00523: 177  setprop "sprite"
+00528: 177  pop
+00529: 178  getlocal 0
+00532: 178  name "cc"
+00537: 178  dup
+00538: 178  callprop "p"
+00543: 178  swap
+00544: 178  notearg
+00545: 178  int8 75
+00547: 178  notearg
+00548: 178  double -0
+00553: 178  notearg
+00554: 178  call 2
+00557: 178  setprop "offset"
+00562: 178  pop
+00563: 179  goto 718 (+155)
+00568: 181  name "xs"
+00573: 181  getprop "Views"
+00578: 181  getprop "Armature"
+00583: 181  getprop "AutoAudioArmature"
+00588: 181  dup
+00589: 181  callprop "create"
+00594: 181  swap
+00595: 181  notearg
+00596: 181  string "Arm_DungeonRoad"
+00601: 181  notearg
+00602: 181  call 1
+00605: 181  setlocal 4
+00608: 181  pop
+00609: 182  getlocal 4
+00612: 182  dup
+00613: 182  callprop "setZOrder"
+00618: 182  swap
+00619: 182  notearg
+00620: 182  int8 -1
+00622: 182  notearg
+00623: 182  call 1
+00626: 182  pop
+00627: 183  getlocal 4
+00630: 183  dup
+00631: 183  callprop "playAniById"
+00636: 183  swap
+00637: 183  notearg
+00638: 183  string "normalAnimation"
+00643: 183  notearg
+00644: 183  newinit 1
+00649: 183  false
+00650: 183  initprop "loop"
+00655: 183  one
+00656: 183  initprop "speed"
+00661: 183  endinit
+00662: 183  notearg
+00663: 183  call 2
+00666: 183  pop
+00667: 184  getlocal 0
+00670: 184  getlocal 4
+00673: 184  setprop "sprite"
+00678: 184  pop
+00679: 185  getlocal 0
+00682: 185  name "cc"
+00687: 185  dup
+00688: 185  callprop "p"
+00693: 185  swap
+00694: 185  notearg
+00695: 185  int8 75
+00697: 185  notearg
+00698: 185  double -0
+00703: 185  notearg
+00704: 185  call 2
+00707: 185  setprop "offset"
+00712: 185  pop
+00713: 186  goto 718 (+5)
+00718: 188  getlocal 0
+00721: 188  return
+00722: 188  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:153 ---
+;; function object[5] getStarStatusLabel
+;; function metadata object[5] nargs=0 bindings=5
+;; local[0] node
+;; local[1] starBg
+;; local[2] star
+;; local[3] starNum
+;; local[4] label
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:191 ---
+loc   line  op
+----- ----  --
+main:
+00000: 192  name "cc"
+00005: 192  getprop "Node"
+00010: 192  dup
+00011: 192  callprop "create"
+00016: 192  swap
+00017: 192  notearg
+00018: 192  call 0
+00021: 192  setlocal 0
+00024: 192  pop
+00025: 193  name "xs"
+00030: 193  getprop "Factorys"
+00035: 193  getprop "Sprite"
+00040: 193  dup
+00041: 193  callprop "create"
+00046: 193  swap
+00047: 193  notearg
+00048: 193  string "Cmn01_Dungeon_TreasureBoxStarBg"
+00053: 193  notearg
+00054: 193  string "Cmn01"
+00059: 193  notearg
+00060: 193  call 2
+00063: 193  setlocal 1
+00066: 193  pop
+00067: 194  name "xs"
+00072: 194  getprop "Factorys"
+00077: 194  getprop "Sprite"
+00082: 194  dup
+00083: 194  callprop "create"
+00088: 194  swap
+00089: 194  notearg
+00090: 194  string "Cmn01_Dungeon_GradeStar"
+00095: 194  notearg
+00096: 194  string "Cmn01"
+00101: 194  notearg
+00102: 194  call 2
+00105: 194  setlocal 2
+00108: 194  pop
+00109: 195  getlocal 2
+00112: 195  dup
+00113: 195  callprop "setScale"
+00118: 195  swap
+00119: 195  notearg
+00120: 195  double 0.4
+00125: 195  notearg
+00126: 195  call 1
+00129: 195  pop
+00130: 196  name "xs"
+00135: 196  getprop "Utils"
+00140: 196  getprop "Node"
+00145: 196  dup
+00146: 196  callprop "attachNodes"
+00151: 196  swap
+00152: 196  notearg
+00153: 196  getlocal 0
+00156: 196  notearg
+00157: 196  getlocal 1
+00160: 196  notearg
+00161: 196  newinit 1
+00166: 196  string "c"
+00171: 196  initprop "desc"
+00176: 196  name "cc"
+00181: 196  dup
+00182: 196  callprop "p"
+00187: 196  swap
+00188: 196  notearg
+00189: 196  zero
+00190: 196  notearg
+00191: 196  zero
+00192: 196  notearg
+00193: 196  call 2
+00196: 196  initprop "offset"
+00201: 196  false
+00202: 196  initprop "sc"
+00207: 196  endinit
+00208: 196  notearg
+00209: 196  call 3
+00212: 196  pop
+00213: 197  name "xs"
+00218: 197  getprop "Utils"
+00223: 197  getprop "Node"
+00228: 197  dup
+00229: 197  callprop "attachNodes"
+00234: 197  swap
+00235: 197  notearg
+00236: 197  getlocal 1
+00239: 197  notearg
+00240: 197  getlocal 2
+00243: 197  notearg
+00244: 197  newinit 1
+00249: 197  string "cl"
+00254: 197  initprop "desc"
+00259: 197  name "cc"
+00264: 197  dup
+00265: 197  callprop "p"
+00270: 197  swap
+00271: 197  notearg
+00272: 197  int8 15
+00274: 197  notearg
+00275: 197  zero
+00276: 197  notearg
+00277: 197  call 2
+00280: 197  initprop "offset"
+00285: 197  false
+00286: 197  initprop "sc"
+00291: 197  endinit
+00292: 197  notearg
+00293: 197  call 3
+00296: 197  pop
+00297: 199  this
+00298: 199  getprop "hasStar"
+00303: 199  string "/"
+00308: 199  add
+00309: 199  this
+00310: 199  getprop "open_need_star"
+00315: 199  add
+00316: 199  setlocal 3
+00319: 199  pop
+00320: 200  name "xs"
+00325: 200  getprop "Views"
+00330: 200  getprop "Label"
+00335: 200  getprop "LabelExt"
+00340: 200  dup
+00341: 200  callprop "createWithStyles"
+00346: 200  swap
+00347: 200  notearg
+00348: 200  newarray 1
+00352: 200  string "LS_Nomb1"
+00357: 200  initelem_array 0
+00361: 200  endinit
+00362: 200  notearg
+00363: 200  call 1
+00366: 200  setlocal 4
+00369: 200  pop
+00370: 201  getlocal 4
+00373: 201  dup
+00374: 201  callprop "setString"
+00379: 201  swap
+00380: 201  notearg
+00381: 201  getlocal 3
+00384: 201  notearg
+00385: 201  call 1
+00388: 201  pop
+00389: 203  name "xs"
+00394: 203  getprop "Utils"
+00399: 203  getprop "Node"
+00404: 203  dup
+00405: 203  callprop "attachNodes"
+00410: 203  swap
+00411: 203  notearg
+00412: 203  getlocal 1
+00415: 203  notearg
+00416: 203  getlocal 4
+00419: 203  notearg
+00420: 203  newinit 1
+00425: 203  string "lb"
+00430: 203  initprop "desc"
+00435: 203  name "cc"
+00440: 203  dup
+00441: 203  callprop "p"
+00446: 203  swap
+00447: 203  notearg
+00448: 203  int8 22
+00450: 203  notearg
+00451: 203  zero
+00452: 203  notearg
+00453: 203  call 2
+00456: 203  initprop "offset"
+00461: 203  false
+00462: 203  initprop "sc"
+00467: 203  endinit
+00468: 203  notearg
+00469: 203  call 3
+00472: 203  pop
+00473: 205  getlocal 0
+00476: 205  return
+00477: 205  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:191 ---
+;; function object[6] getPos
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:208 ---
+loc   line  op
+----- ----  --
+main:
+00000: 209  this
+00001: 209  getprop "pos"
+00006: 209  return
+00007: 209  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:208 ---
+;; function object[7] getType
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:212 ---
+loc   line  op
+----- ----  --
+main:
+00000: 213  this
+00001: 213  getprop "type"
+00006: 213  return
+00007: 213  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:212 ---
+;; function object[8] getBoxStatus
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:216 ---
+loc   line  op
+----- ----  --
+main:
+00000: 217  this
+00001: 217  getprop "boxStatus"
+00006: 217  return
+00007: 217  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:216 ---
+;; function object[9] setBoxStatus
+;; function metadata object[9] nargs=1 bindings=1
+;; arg[0] status
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:220 ---
+loc   line  op
+----- ----  --
+main:
+00000: 221  this
+00001: 221  getarg 0
+00004: 221  setprop "boxStatus"
+00009: 221  pop
+00010: 221  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:220 ---
+;; function object[10] isCanIn
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:224 ---
+loc   line  op
+----- ----  --
+main:
+00000: 225  this
+00001: 225  getprop "boxStatus"
+00006: 225  int8 2
+00008: 225  eq
+00009: 225  ifeq 21 (+12)
+00014: 226  true
+00015: 226  return
+00016: 226  goto 23 (+7)
+00021: 228  false
+00022: 228  return
+00023: 229  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:224 ---
+;; function object[11] getTreasureName
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:233 ---
+loc   line  op
+----- ----  --
+main:
+00000: 234  name "xs"
+00005: 234  getprop "Tools"
+00010: 234  getprop "Ml"
+00015: 234  dup
+00016: 234  callprop "createString"
+00021: 234  swap
+00022: 234  notearg
+00023: 234  this
+00024: 234  getprop "treasureName"
+00029: 234  notearg
+00030: 234  call 1
+00033: 234  return
+00034: 234  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:233 ---
+;; function object[12] getModelName
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:237 ---
+loc   line  op
+----- ----  --
+main:
+00000: 238  this
+00001: 238  getprop "name"
+00006: 238  return
+00007: 238  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:237 ---
+;; function object[13] getItemId
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:241 ---
+loc   line  op
+----- ----  --
+main:
+00000: 242  this
+00001: 242  getprop "itemId"
+00006: 242  return
+00007: 242  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:241 ---
+;; function object[14] getId
+;; function metadata object[14] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:245 ---
+loc   line  op
+----- ----  --
+main:
+00000: 246  this
+00001: 246  getprop "boxId"
+00006: 246  return
+00007: 246  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:245 ---
+;; function object[15] create
+;; function metadata object[15] nargs=1 bindings=2
+;; arg[0] TreasureInfo
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:251 ---
+loc   line  op
+----- ----  --
+main:
+00000: 252  name "xs"
+00005: 252  getprop "Models"
+00010: 252  getprop "TreasureBox"
+00015: 252  undefined
+00016: 252  notearg
+00017: 252  new 0
+00020: 252  setlocal 0
+00023: 252  pop
+00024: 253  getlocal 0
+00027: 253  and 51 (+24)
+00032: 253  pop
+00033: 253  getlocal 0
+00036: 253  dup
+00037: 253  callprop "init"
+00042: 253  swap
+00043: 253  notearg
+00044: 253  getarg 0
+00047: 253  notearg
+00048: 253  call 1
+00051: 253  ifeq 60 (+9)
+00056: 254  getlocal 0
+00059: 254  return
+00060: 256  null
+00061: 256  return
+00062: 256  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/TreasureBox.js:251 ---

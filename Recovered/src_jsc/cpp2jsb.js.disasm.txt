@@ -1,0 +1,2528 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/cpp2jsb.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=48 object[0]
+;; FUNCTION-MAP kind=lambda offset=58 object[1]
+;; FUNCTION-MAP kind=lambda offset=68 object[2]
+;; FUNCTION-MAP kind=lambda offset=90 object[3]
+;; FUNCTION-MAP kind=lambda offset=106 object[4]
+;; FUNCTION-MAP kind=lambda offset=122 object[5]
+;; FUNCTION-MAP kind=lambda offset=138 object[6]
+;; FUNCTION-MAP kind=lambda offset=154 object[7]
+;; FUNCTION-MAP kind=lambda offset=170 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  name "xs"
+00010:   9  getprop "Cpp2Jsb"
+00015:   9  or 79 (+64)
+00020:   9  pop
+00021:   9  newinit 1
+00026:  12  newinit 1
+00031:  13  newinit 1
+00036:  13  endinit
+00037:  13  initprop "default"
+00042:  13  endinit
+00043:  13  initprop "registerMap"
+00048:  16  lambda (function () {
+    [sourceless code]
+})
+00053:  16  initprop "registerCallBack"
+00058:  29  lambda (function () {
+    [sourceless code]
+})
+00063:  29  initprop "registerCallBackByFuncName"
+00068:  37  lambda (function () {
+    [sourceless code]
+})
+00073:  37  initprop "onCmnMsg"
+00078:  37  endinit
+00079:  37  setprop "Cpp2Jsb"
+00084:  37  popv
+00085:  60  name "xs"
+00090:  60  lambda (function () {
+    [sourceless code]
+})
+00095:  60  setprop "onCpp2Jsb"
+00100:  60  popv
+00101:  71  name "xs"
+00106:  71  lambda (function () {
+    [sourceless code]
+})
+00111:  71  setprop "onCmnSuccess"
+00116:  71  popv
+00117: 294  name "xs"
+00122: 294  lambda (function () {
+    [sourceless code]
+})
+00127: 294  setprop "onCmnFail"
+00132: 294  popv
+00133: 501  name "xs"
+00138: 501  lambda (function () {
+    [sourceless code]
+})
+00143: 501  setprop "onNotify"
+00148: 501  popv
+00149: 508  name "xs"
+00154: 508  lambda (function () {
+    [sourceless code]
+})
+00159: 508  setprop "onTestSuccess"
+00164: 508  popv
+00165: 511  name "xs"
+00170: 511  lambda (function () {
+    [sourceless code]
+})
+00175: 511  setprop "onTestFail"
+00180: 511  popv
+00181: 513  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:1 ---
+;; function object[0] registerCallBack
+;; function metadata object[0] nargs=3 bindings=4
+;; arg[0] modelName
+;; arg[1] funcName
+;; arg[2] callback
+;; local[0] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:16 ---
+loc   line  op
+----- ----  --
+00000:  16  arguments
+00001:  16  setlocal 0
+00004:  16  pop
+main:
+00005:  18  name "xs"
+00010:  18  dup
+00011:  18  callprop "dump"
+00016:  18  swap
+00017:  18  notearg
+00018:  18  string "Cpp2Jsb registerCallBack"
+00023:  18  notearg
+00024:  18  getlocal 0
+00027:  18  notearg
+00028:  18  call 2
+00031:  18  pop
+00032:  19  this
+00033:  19  getprop "registerMap"
+00038:  19  getarg 0
+00041:  19  getelem
+00042:  19  not
+00043:  19  ifeq 65 (+22)
+00048:  20  this
+00049:  20  getprop "registerMap"
+00054:  20  getarg 0
+00057:  20  newinit 1
+00062:  20  endinit
+00063:  20  setelem
+00064:  20  pop
+00065:  26  this
+00066:  26  getprop "registerMap"
+00071:  26  getarg 0
+00074:  26  getelem
+00075:  26  getarg 1
+00078:  26  getarg 2
+00081:  26  setelem
+00082:  26  pop
+00083:  26  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:16 ---
+;; function object[1] registerCallBackByFuncName
+;; function metadata object[1] nargs=2 bindings=3
+;; arg[0] arrayNames
+;; arg[1] callback
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  zero
+00001:  30  setlocal 0
+00004:  30  pop
+00005:  30  goto 57 (+52)
+00010:  31  loophead
+00011:  31  this
+00012:  31  dup
+00013:  31  callprop "registerCallBack"
+00018:  31  swap
+00019:  31  notearg
+00020:  31  string "default"
+00025:  31  notearg
+00026:  31  getarg 0
+00029:  31  getlocal 0
+00032:  31  getelem
+00033:  31  notearg
+00034:  31  getarg 1
+00037:  31  notearg
+00038:  31  call 3
+00041:  31  pop
+00042:  30  localinc 11
+00045:  30  getlocal 0
+00048:  30  pos
+00049:  30  dup
+00050:  30  one
+00051:  30  add
+00052:  30  setlocal 0
+00055:  30  pop
+00056:  30  pop
+00057:  30  loopentry
+00058:  30  getlocal 0
+00061:  30  getarg 0
+00064:  30  length "length"
+00069:  30  lt
+00070:  30  ifne 10 (-60)
+00075:  32  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:29 ---
+;; function object[2] onCmnMsg
+;; function metadata object[2] nargs=4 bindings=6
+;; arg[0] moduleName
+;; arg[1] funcName
+;; arg[2] other1
+;; arg[3] other2
+;; local[0] _func
+;; local[1] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:37 ---
+loc   line  op
+----- ----  --
+00000:  37  arguments
+00001:  37  setlocal 1
+00004:  37  pop
+main:
+00005:  39  name "xs"
+00010:  39  dup
+00011:  39  callprop "dump"
+00016:  39  swap
+00017:  39  notearg
+00018:  39  string "onCmnMsg"
+00023:  39  notearg
+00024:  39  getlocal 1
+00027:  39  notearg
+00028:  39  call 2
+00031:  39  pop
+00032:  40  name "xs"
+00037:  40  dup
+00038:  40  callprop "dump"
+00043:  40  swap
+00044:  40  notearg
+00045:  40  string "onCmnMsg-registerMap"
+00050:  40  notearg
+00051:  40  this
+00052:  40  getprop "registerMap"
+00057:  40  notearg
+00058:  40  call 2
+00061:  40  pop
+00062:  42  this
+00063:  42  getprop "registerMap"
+00068:  42  getarg 0
+00071:  42  getelem
+00072:  42  ifeq 168 (+96)
+00077:  44  this
+00078:  44  getprop "registerMap"
+00083:  44  getarg 0
+00086:  44  getelem
+00087:  44  getarg 1
+00090:  44  getelem
+00091:  44  setlocal 0
+00094:  44  pop
+00095:  45  getlocal 0
+00098:  45  ifeq 129 (+31)
+00103:  46  getlocal 0
+00106:  46  dup
+00107:  46  callprop "apply"
+00112:  46  swap
+00113:  46  notearg
+00114:  46  null
+00115:  46  notearg
+00116:  46  getlocal 1
+00119:  46  notearg
+00120:  46  funapply 2
+00123:  46  pop
+00124:  46  goto 163 (+39)
+00129:  49  name "xs"
+00134:  49  dup
+00135:  49  callprop "error"
+00140:  49  swap
+00141:  49  notearg
+00142:  49  string "funcName err"
+00147:  49  notearg
+00148:  49  getlocal 1
+00151:  49  notearg
+00152:  49  this
+00153:  49  getprop "registerMap"
+00158:  49  notearg
+00159:  49  call 3
+00162:  49  pop
+00163:  49  goto 168 (+5)
+00168:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:37 ---
+;; function object[3] onCpp2Jsb
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:60 ---
+loc   line  op
+----- ----  --
+00000:  60  arguments
+00001:  60  setlocal 0
+00004:  60  pop
+main:
+00005:  62  name "xs"
+00010:  62  dup
+00011:  62  callprop "dump"
+00016:  62  swap
+00017:  62  notearg
+00018:  62  string "onCpp2Jsb"
+00023:  62  notearg
+00024:  62  getlocal 0
+00027:  62  notearg
+00028:  62  call 2
+00031:  62  pop
+00032:  64  name "xs"
+00037:  64  getprop "Cpp2Jsb"
+00042:  64  getprop "onCmnMsg"
+00047:  64  dup
+00048:  64  callprop "apply"
+00053:  64  swap
+00054:  64  notearg
+00055:  64  name "xs"
+00060:  64  getprop "Cpp2Jsb"
+00065:  64  notearg
+00066:  64  getlocal 0
+00069:  64  notearg
+00070:  64  funapply 2
+00073:  64  pop
+00074:  64  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:60 ---
+;; function object[4] onCmnSuccess
+;; function metadata object[4] nargs=0 bindings=8
+;; local[0] sessionId
+;; local[1] str
+;; local[2] jsonStr
+;; local[3] transactionId
+;; local[4] transactionReceipt
+;; local[5] player
+;; local[6] userInfoArgs
+;; local[7] arguments
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=526 object[0]
+;; FUNCTION-MAP kind=lambda offset=733 object[1]
+;; FUNCTION-MAP kind=lambda offset=969 object[2]
+;; FUNCTION-MAP kind=lambda offset=1102 object[3]
+;; FUNCTION-MAP kind=lambda offset=1604 object[4]
+;; FUNCTION-MAP kind=lambda offset=1737 object[5]
+;; FUNCTION-MAP kind=lambda offset=1889 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:71 ---
+loc   line  op
+----- ----  --
+00000:  71  arguments
+00001:  71  setlocal 7
+00004:  71  pop
+main:
+00005:  72  name "xs"
+00010:  72  dup
+00011:  72  callprop "log_cmn"
+00016:  72  swap
+00017:  72  notearg
+00018:  72  string "onCmnSuccess"
+00023:  72  notearg
+00024:  72  getlocal 7
+00027:  72  notearg
+00028:  72  call 2
+00031:  72  pop
+00032:  74  getlocal 7
+00035:  74  zero
+00036:  74  getelem
+00037:  74  condswitch
+00038:  78  string "ios_bfsdk_login"
+00043:  78  case 352 (+309)
+00048:  79  string "and_bfsdk_login"
+00053:  79  case 352 (+299)
+00058: 101  string "and_Thirdsdk_login"
+00063: 101  case 586 (+523)
+00068: 121  string "errorDialog"
+00073: 121  case 793 (+720)
+00078: 126  string "ios_bfsdk_register"
+00083: 126  case 849 (+766)
+00088: 127  string "and_bfsdk_register"
+00093: 127  case 849 (+756)
+00098: 156  string "ali_pay"
+00103: 156  case 997 (+894)
+00108: 157  string "and_ali_pay"
+00113: 157  case 997 (+884)
+00118: 158  string "ios_ali_pay"
+00123: 158  case 997 (+874)
+00128: 159  string "anysdk_paySuccess"
+00133: 159  case 997 (+864)
+00138: 160  string "google_paySuccess"
+00143: 160  case 997 (+854)
+00148: 179  string "anysdk_logoutSuccess"
+00153: 179  case 1130 (+977)
+00158: 184  string "3rd_logoutSuccess"
+00163: 184  case 1185 (+1022)
+00168: 187  string "anysdk_accountSwitchSuccess"
+00173: 187  case 1240 (+1067)
+00178: 193  string "anysdk_loginCancel"
+00183: 193  case 1347 (+1164)
+00188: 203  string "ios_getSmsCaptchaSuccess"
+00193: 203  case 1499 (+1306)
+00198: 204  string "getSmsCaptchaSuccess"
+00203: 204  case 1499 (+1296)
+00208: 218  string "ios_BFbindMobileSucess"
+00213: 218  case 1632 (+1419)
+00218: 219  string "BFbindMobileSucess"
+00223: 219  case 1632 (+1409)
+00228: 233  string "appStore_checkTransaction"
+00233: 233  case 1765 (+1532)
+00238: 263  string "anySdk_onClickExit"
+00243: 263  case 1951 (+1708)
+00248: 273  string "anySdk_onDestroy"
+00253: 273  case 2122 (+1869)
+00258: 276  string "logoutSuccessAndShowTipsSuccess"
+00263: 276  case 2154 (+1891)
+00268: 281  string "game_exit"
+00273: 281  case 2199 (+1926)
+00278: 281  default 283 (+5)
+00283:  76  name "xs"
+00288:  76  getprop "Cpp2Jsb"
+00293:  76  getprop "onCmnMsg"
+00298:  76  dup
+00299:  76  callprop "apply"
+00304:  76  swap
+00305:  76  notearg
+00306:  76  name "xs"
+00311:  76  getprop "Cpp2Jsb"
+00316:  76  notearg
+00317:  76  newarray 1
+00321:  76  true
+00322:  76  initelem_array 0
+00326:  76  endinit
+00327:  76  dup
+00328:  76  callprop "concat"
+00333:  76  swap
+00334:  76  notearg
+00335:  76  getlocal 7
+00338:  76  notearg
+00339:  76  call 1
+00342:  76  notearg
+00343:  76  funapply 2
+00346:  76  pop
+00347:  77  goto 2473 (+2126)
+00352:  81  getlocal 7
+00355:  81  one
+00356:  81  getelem
+00357:  81  setaliasedvar "sessionId" (hops = 0, slot = 2)
+00366:  81  pop
+00367:  83  name "xs"
+00372:  83  getprop "Tools"
+00377:  83  getprop "Statistic"
+00382:  83  dup
+00383:  83  callprop "bfSdkLoginSuccessEvent"
+00388:  83  swap
+00389:  83  notearg
+00390:  83  call 0
+00393:  83  pop
+00394:  84  name "xs"
+00399:  84  getprop "Tools"
+00404:  84  getprop "Statistic"
+00409:  84  dup
+00410:  84  callprop "bfSdkLoginEnterSuccessEvent"
+00415:  84  swap
+00416:  84  notearg
+00417:  84  call 0
+00420:  84  pop
+00421:  86  name "xs"
+00426:  86  getprop "director"
+00431:  86  dup
+00432:  86  callprop "getRunningScene"
+00437:  86  swap
+00438:  86  notearg
+00439:  86  call 0
+00442:  86  dup
+00443:  86  callprop "runAction"
+00448:  86  swap
+00449:  86  notearg
+00450:  87  name "xs"
+00455:  87  getprop "Utils"
+00460:  87  getprop "Action"
+00465:  87  dup
+00466:  87  callprop "combineSequence"
+00471:  87  swap
+00472:  87  notearg
+00473:  88  newarray 2
+00477:  89  name "cc"
+00482:  89  getprop "DelayTime"
+00487:  89  dup
+00488:  89  callprop "create"
+00493:  89  swap
+00494:  89  notearg
+00495:  89  double 0.5
+00500:  89  notearg
+00501:  89  call 1
+00504:  89  initelem_array 0
+00508:  90  name "cc"
+00513:  90  getprop "CallFunc"
+00518:  90  dup
+00519:  90  callprop "create"
+00524:  90  swap
+00525:  90  notearg
+00526:  91  lambda (function () {
+    [sourceless code]
+})
+00531:  91  dup
+00532:  91  callprop "bind"
+00537:  91  swap
+00538:  91  notearg
+00539:  94  newinit 1
+00544:  94  getaliasedvar "sessionId" (hops = 0, slot = 2)
+00553:  94  initprop "sessionId"
+00558:  94  endinit
+00559:  94  notearg
+00560:  94  call 1
+00563:  94  notearg
+00564:  94  call 1
+00567:  94  initelem_array 1
+00571:  94  endinit
+00572:  94  notearg
+00573:  94  call 1
+00576:  94  notearg
+00577:  94  call 1
+00580:  94  pop
+00581: 100  goto 2473 (+1892)
+00586: 103  name "xs"
+00591: 103  getprop "Tools"
+00596: 103  getprop "Statistic"
+00601: 103  dup
+00602: 103  callprop "thirdSdkLoginEnterSuccessEvent"
+00607: 103  swap
+00608: 103  notearg
+00609: 103  call 0
+00612: 103  pop
+00613: 104  getlocal 7
+00616: 104  one
+00617: 104  getelem
+00618: 104  setaliasedvar "sessionId" (hops = 0, slot = 2)
+00627: 104  pop
+00628: 105  name "xs"
+00633: 105  getprop "director"
+00638: 105  dup
+00639: 105  callprop "getRunningScene"
+00644: 105  swap
+00645: 105  notearg
+00646: 105  call 0
+00649: 105  dup
+00650: 105  callprop "runAction"
+00655: 105  swap
+00656: 105  notearg
+00657: 106  name "xs"
+00662: 106  getprop "Utils"
+00667: 106  getprop "Action"
+00672: 106  dup
+00673: 106  callprop "combineSequence"
+00678: 106  swap
+00679: 106  notearg
+00680: 107  newarray 2
+00684: 108  name "cc"
+00689: 108  getprop "DelayTime"
+00694: 108  dup
+00695: 108  callprop "create"
+00700: 108  swap
+00701: 108  notearg
+00702: 108  double 0.5
+00707: 108  notearg
+00708: 108  call 1
+00711: 108  initelem_array 0
+00715: 109  name "cc"
+00720: 109  getprop "CallFunc"
+00725: 109  dup
+00726: 109  callprop "create"
+00731: 109  swap
+00732: 109  notearg
+00733: 110  lambda (function () {
+    [sourceless code]
+})
+00738: 110  dup
+00739: 110  callprop "bind"
+00744: 110  swap
+00745: 110  notearg
+00746: 113  newinit 1
+00751: 113  getaliasedvar "sessionId" (hops = 0, slot = 2)
+00760: 113  initprop "sessionId"
+00765: 113  endinit
+00766: 113  notearg
+00767: 113  call 1
+00770: 113  notearg
+00771: 113  call 1
+00774: 113  initelem_array 1
+00778: 113  endinit
+00779: 113  notearg
+00780: 113  call 1
+00783: 113  notearg
+00784: 113  call 1
+00787: 113  pop
+00788: 120  goto 2473 (+1685)
+00793: 123  string ""
+00798: 123  getlocal 7
+00801: 123  one
+00802: 123  getelem
+00803: 123  add
+00804: 123  setlocal 1
+00807: 123  pop
+00808: 124  name "xs"
+00813: 124  getprop "Views"
+00818: 124  getprop "Dialog"
+00823: 124  getprop "ErrorDialog"
+00828: 124  dup
+00829: 124  callprop "show"
+00834: 124  swap
+00835: 124  notearg
+00836: 124  getlocal 1
+00839: 124  notearg
+00840: 124  call 1
+00843: 124  pop
+00844: 125  goto 2473 (+1629)
+00849: 128  getlocal 7
+00852: 128  one
+00853: 128  getelem
+00854: 128  setaliasedvar "sessionId" (hops = 0, slot = 2)
+00863: 128  pop
+00864: 129  name "xs"
+00869: 129  getprop "director"
+00874: 129  dup
+00875: 129  callprop "getRunningScene"
+00880: 129  swap
+00881: 129  notearg
+00882: 129  call 0
+00885: 129  dup
+00886: 129  callprop "runAction"
+00891: 129  swap
+00892: 129  notearg
+00893: 130  name "xs"
+00898: 130  getprop "Utils"
+00903: 130  getprop "Action"
+00908: 130  dup
+00909: 130  callprop "combineSequence"
+00914: 130  swap
+00915: 130  notearg
+00916: 131  newarray 2
+00920: 132  name "cc"
+00925: 132  getprop "DelayTime"
+00930: 132  dup
+00931: 132  callprop "create"
+00936: 132  swap
+00937: 132  notearg
+00938: 132  double 0.5
+00943: 132  notearg
+00944: 132  call 1
+00947: 132  initelem_array 0
+00951: 133  name "cc"
+00956: 133  getprop "CallFunc"
+00961: 133  dup
+00962: 133  callprop "create"
+00967: 133  swap
+00968: 133  notearg
+00969: 134  lambda (function () {
+    [sourceless code]
+})
+00974: 134  notearg
+00975: 134  call 1
+00978: 134  initelem_array 1
+00982: 134  endinit
+00983: 134  notearg
+00984: 134  call 1
+00987: 134  notearg
+00988: 134  call 1
+00991: 134  pop
+00992: 155  goto 2473 (+1481)
+00997: 161  name "xs"
+01002: 161  getprop "director"
+01007: 161  dup
+01008: 161  callprop "getRunningScene"
+01013: 161  swap
+01014: 161  notearg
+01015: 161  call 0
+01018: 161  dup
+01019: 161  callprop "runAction"
+01024: 161  swap
+01025: 161  notearg
+01026: 162  name "xs"
+01031: 162  getprop "Utils"
+01036: 162  getprop "Action"
+01041: 162  dup
+01042: 162  callprop "combineSequence"
+01047: 162  swap
+01048: 162  notearg
+01049: 163  newarray 2
+01053: 164  name "cc"
+01058: 164  getprop "DelayTime"
+01063: 164  dup
+01064: 164  callprop "create"
+01069: 164  swap
+01070: 164  notearg
+01071: 164  double 0.5
+01076: 164  notearg
+01077: 164  call 1
+01080: 164  initelem_array 0
+01084: 165  name "cc"
+01089: 165  getprop "CallFunc"
+01094: 165  dup
+01095: 165  callprop "create"
+01100: 165  swap
+01101: 165  notearg
+01102: 166  lambda (function () {
+    [sourceless code]
+})
+01107: 166  notearg
+01108: 166  call 1
+01111: 166  initelem_array 1
+01115: 166  endinit
+01116: 166  notearg
+01117: 166  call 1
+01120: 166  notearg
+01121: 166  call 1
+01124: 166  pop
+01125: 178  goto 2473 (+1348)
+01130: 181  name "xs"
+01135: 181  getprop "Scene"
+01140: 181  getprop "Mgr"
+01145: 181  dup
+01146: 181  callprop "changeSceneByName"
+01151: 181  swap
+01152: 181  notearg
+01153: 181  string "LoginScene"
+01158: 181  notearg
+01159: 181  newinit 1
+01164: 181  string "login"
+01169: 181  initprop "funTypeStr"
+01174: 181  endinit
+01175: 181  notearg
+01176: 181  call 2
+01179: 181  pop
+01180: 183  goto 2473 (+1293)
+01185: 185  name "xs"
+01190: 185  getprop "Scene"
+01195: 185  getprop "Mgr"
+01200: 185  dup
+01201: 185  callprop "changeSceneByName"
+01206: 185  swap
+01207: 185  notearg
+01208: 185  string "LoginScene"
+01213: 185  notearg
+01214: 185  newinit 1
+01219: 185  string "login"
+01224: 185  initprop "funTypeStr"
+01229: 185  endinit
+01230: 185  notearg
+01231: 185  call 2
+01234: 185  pop
+01235: 186  goto 2473 (+1238)
+01240: 188  string ""
+01245: 188  getlocal 7
+01248: 188  one
+01249: 188  getelem
+01250: 188  add
+01251: 188  setlocal 1
+01254: 188  pop
+01255: 189  name "JSON"
+01260: 189  dup
+01261: 189  callprop "parse"
+01266: 189  swap
+01267: 189  notearg
+01268: 189  getlocal 1
+01271: 189  notearg
+01272: 189  call 1
+01275: 189  setlocal 2
+01278: 189  pop
+01279: 190  name "xs"
+01284: 190  getprop "Scene"
+01289: 190  getprop "Mgr"
+01294: 190  dup
+01295: 190  callprop "changeSceneByName"
+01300: 190  swap
+01301: 190  notearg
+01302: 190  string "LoginScene"
+01307: 190  notearg
+01308: 190  newinit 1
+01313: 190  string "accountSwitchSuccess"
+01318: 190  initprop "funTypeStr"
+01323: 190  getlocal 2
+01326: 190  getprop "uid"
+01331: 190  initprop "uidKey"
+01336: 190  endinit
+01337: 190  notearg
+01338: 190  call 2
+01341: 190  pop
+01342: 192  goto 2473 (+1131)
+01347: 194  name "xs"
+01352: 194  getprop "director"
+01357: 194  dup
+01358: 194  callprop "getRunningScene"
+01363: 194  swap
+01364: 194  notearg
+01365: 194  call 0
+01368: 194  null
+01369: 194  ne
+01370: 194  and 1434 (+64)
+01375: 194  pop
+01376: 194  name "xs"
+01381: 194  getprop "director"
+01386: 194  dup
+01387: 194  callprop "getRunningScene"
+01392: 194  swap
+01393: 194  notearg
+01394: 194  call 0
+01397: 194  dup
+01398: 194  callprop "getTag"
+01403: 194  swap
+01404: 194  notearg
+01405: 194  call 0
+01408: 194  name "xs"
+01413: 194  getprop "Cfg"
+01418: 194  getprop "Scene"
+01423: 194  getprop "LoginScene"
+01428: 194  getprop "tag"
+01433: 194  eq
+01434: 194  ifeq 1444 (+10)
+01439: 194  goto 1494 (+55)
+01444: 199  name "xs"
+01449: 199  getprop "Scene"
+01454: 199  getprop "Mgr"
+01459: 199  dup
+01460: 199  callprop "changeSceneByName"
+01465: 199  swap
+01466: 199  notearg
+01467: 199  string "LoginScene"
+01472: 199  notearg
+01473: 199  newinit 1
+01478: 199  string "login"
+01483: 199  initprop "funTypeStr"
+01488: 199  endinit
+01489: 199  notearg
+01490: 199  call 2
+01493: 199  pop
+01494: 201  goto 2473 (+979)
+01499: 205  name "xs"
+01504: 205  getprop "director"
+01509: 205  dup
+01510: 205  callprop "getRunningScene"
+01515: 205  swap
+01516: 205  notearg
+01517: 205  call 0
+01520: 205  dup
+01521: 205  callprop "runAction"
+01526: 205  swap
+01527: 205  notearg
+01528: 206  name "xs"
+01533: 206  getprop "Utils"
+01538: 206  getprop "Action"
+01543: 206  dup
+01544: 206  callprop "combineSequence"
+01549: 206  swap
+01550: 206  notearg
+01551: 207  newarray 2
+01555: 208  name "cc"
+01560: 208  getprop "DelayTime"
+01565: 208  dup
+01566: 208  callprop "create"
+01571: 208  swap
+01572: 208  notearg
+01573: 208  double 0.5
+01578: 208  notearg
+01579: 208  call 1
+01582: 208  initelem_array 0
+01586: 209  name "cc"
+01591: 209  getprop "CallFunc"
+01596: 209  dup
+01597: 209  callprop "create"
+01602: 209  swap
+01603: 209  notearg
+01604: 210  lambda (function () {
+    [sourceless code]
+})
+01609: 210  notearg
+01610: 210  call 1
+01613: 210  initelem_array 1
+01617: 210  endinit
+01618: 210  notearg
+01619: 210  call 1
+01622: 210  notearg
+01623: 210  call 1
+01626: 210  pop
+01627: 217  goto 2473 (+846)
+01632: 220  name "xs"
+01637: 220  getprop "director"
+01642: 220  dup
+01643: 220  callprop "getRunningScene"
+01648: 220  swap
+01649: 220  notearg
+01650: 220  call 0
+01653: 220  dup
+01654: 220  callprop "runAction"
+01659: 220  swap
+01660: 220  notearg
+01661: 221  name "xs"
+01666: 221  getprop "Utils"
+01671: 221  getprop "Action"
+01676: 221  dup
+01677: 221  callprop "combineSequence"
+01682: 221  swap
+01683: 221  notearg
+01684: 222  newarray 2
+01688: 223  name "cc"
+01693: 223  getprop "DelayTime"
+01698: 223  dup
+01699: 223  callprop "create"
+01704: 223  swap
+01705: 223  notearg
+01706: 223  double 0.5
+01711: 223  notearg
+01712: 223  call 1
+01715: 223  initelem_array 0
+01719: 224  name "cc"
+01724: 224  getprop "CallFunc"
+01729: 224  dup
+01730: 224  callprop "create"
+01735: 224  swap
+01736: 224  notearg
+01737: 225  lambda (function () {
+    [sourceless code]
+})
+01742: 225  notearg
+01743: 225  call 1
+01746: 225  initelem_array 1
+01750: 225  endinit
+01751: 225  notearg
+01752: 225  call 1
+01755: 225  notearg
+01756: 225  call 1
+01759: 225  pop
+01760: 232  goto 2473 (+713)
+01765: 234  getlocal 7
+01768: 234  one
+01769: 234  getelem
+01770: 234  setlocal 3
+01773: 234  pop
+01774: 235  getlocal 7
+01777: 235  int8 2
+01779: 235  getelem
+01780: 235  setlocal 4
+01783: 235  pop
+01784: 236  name "xs"
+01789: 236  getprop "director"
+01794: 236  dup
+01795: 236  callprop "getRunningScene"
+01800: 236  swap
+01801: 236  notearg
+01802: 236  call 0
+01805: 236  dup
+01806: 236  callprop "runAction"
+01811: 236  swap
+01812: 236  notearg
+01813: 237  name "xs"
+01818: 237  getprop "Utils"
+01823: 237  getprop "Action"
+01828: 237  dup
+01829: 237  callprop "combineSequence"
+01834: 237  swap
+01835: 237  notearg
+01836: 238  newarray 2
+01840: 239  name "cc"
+01845: 239  getprop "DelayTime"
+01850: 239  dup
+01851: 239  callprop "create"
+01856: 239  swap
+01857: 239  notearg
+01858: 239  double 0.5
+01863: 239  notearg
+01864: 239  call 1
+01867: 239  initelem_array 0
+01871: 240  name "cc"
+01876: 240  getprop "CallFunc"
+01881: 240  dup
+01882: 240  callprop "create"
+01887: 240  swap
+01888: 240  notearg
+01889: 241  lambda (function () {
+    [sourceless code]
+})
+01894: 241  dup
+01895: 241  callprop "bind"
+01900: 241  swap
+01901: 241  notearg
+01902: 248  newinit 1
+01907: 249  getlocal 3
+01910: 249  initprop "transactionId"
+01915: 250  getlocal 4
+01918: 250  initprop "transactionReceipt"
+01923: 250  endinit
+01924: 250  notearg
+01925: 250  call 1
+01928: 250  notearg
+01929: 250  call 1
+01932: 250  initelem_array 1
+01936: 250  endinit
+01937: 250  notearg
+01938: 250  call 1
+01941: 250  notearg
+01942: 250  call 1
+01945: 250  pop
+01946: 262  goto 2473 (+527)
+01951: 264  name "xs"
+01956: 264  getprop "AnySdk"
+01961: 264  getprop "AnySdkHelp_js"
+01966: 264  dup
+01967: 264  callprop "isFunctionSupported"
+01972: 264  swap
+01973: 264  notearg
+01974: 264  string "exit"
+01979: 264  notearg
+01980: 264  call 1
+01983: 264  ifeq 2043 (+60)
+01988: 265  name "xs"
+01993: 265  dup
+01994: 265  callprop "log"
+01999: 265  swap
+02000: 265  notearg
+02001: 265  string "\u8C03\u7528sdk\u9000\u51FA\u529F\u80FD"
+02006: 265  notearg
+02007: 265  call 1
+02010: 265  pop
+02011: 266  name "xs"
+02016: 266  getprop "AnySdk"
+02021: 266  getprop "AnySdkHelp_js"
+02026: 266  dup
+02027: 266  callprop "exit"
+02032: 266  swap
+02033: 266  notearg
+02034: 266  call 0
+02037: 266  pop
+02038: 266  goto 2117 (+79)
+02043: 269  name "xs"
+02048: 269  dup
+02049: 269  callprop "log"
+02054: 269  swap
+02055: 269  notearg
+02056: 269  string "sdk\u672A\u63D0\u4F9B\u9000\u51FA\u529F\u80FD,\u8C03\u7528bf\u9000\u51FA"
+02061: 269  notearg
+02062: 269  call 1
+02065: 269  pop
+02066: 270  name "xs"
+02071: 270  getprop "JsbConnecter"
+02076: 270  dup
+02077: 270  callprop "getInstance"
+02082: 270  swap
+02083: 270  notearg
+02084: 270  call 0
+02087: 270  dup
+02088: 270  callprop "invoke"
+02093: 270  swap
+02094: 270  notearg
+02095: 270  string "GlobalMethod"
+02100: 270  notearg
+02101: 270  string "exitGameWithUserClick"
+02106: 270  notearg
+02107: 270  string ""
+02112: 270  notearg
+02113: 270  call 3
+02116: 270  pop
+02117: 272  goto 2473 (+356)
+02122: 274  name "xs"
+02127: 274  getprop "AnySdk"
+02132: 274  getprop "AnySdkHelp_js"
+02137: 274  dup
+02138: 274  callprop "destroy"
+02143: 274  swap
+02144: 274  notearg
+02145: 274  call 0
+02148: 274  pop
+02149: 275  goto 2473 (+324)
+02154: 277  getlocal 7
+02157: 277  one
+02158: 277  getelem
+02159: 277  setlocal 1
+02162: 277  pop
+02163: 278  name "xs"
+02168: 278  getprop "Views"
+02173: 278  getprop "Mgr"
+02178: 278  dup
+02179: 278  callprop "showToast"
+02184: 278  swap
+02185: 278  notearg
+02186: 278  getlocal 1
+02189: 278  notearg
+02190: 278  call 1
+02193: 278  pop
+02194: 279  goto 2473 (+279)
+02199: 282  name "xs"
+02204: 282  getprop "Profile"
+02209: 282  getprop "GameData"
+02214: 282  getprop "Mgr"
+02219: 282  dup
+02220: 282  callprop "getInstance"
+02225: 282  swap
+02226: 282  notearg
+02227: 282  call 0
+02230: 282  getprop "Player"
+02235: 282  dup
+02236: 282  callprop "getPlayer"
+02241: 282  swap
+02242: 282  notearg
+02243: 282  call 0
+02246: 282  setlocal 5
+02249: 282  pop
+02250: 283  getlocal 5
+02253: 283  dup
+02254: 283  callprop "getPlayerId"
+02259: 283  swap
+02260: 283  notearg
+02261: 283  call 0
+02264: 283  string "|"
+02269: 283  add
+02270: 284  getlocal 5
+02273: 284  dup
+02274: 284  callprop "getPlayerName"
+02279: 284  swap
+02280: 284  notearg
+02281: 284  call 0
+02284: 284  add
+02285: 284  string "|"
+02290: 284  add
+02291: 285  getlocal 5
+02294: 285  dup
+02295: 285  callprop "getPlayerLevel"
+02300: 285  swap
+02301: 285  notearg
+02302: 285  call 0
+02305: 285  add
+02306: 285  string "|"
+02311: 285  add
+02312: 286  name "xs"
+02317: 286  getprop "Profile"
+02322: 286  getprop "UserCfg"
+02327: 286  dup
+02328: 286  callprop "getGameAddr"
+02333: 286  swap
+02334: 286  notearg
+02335: 286  call 0
+02338: 286  getprop "id"
+02343: 286  add
+02344: 286  string "|"
+02349: 286  add
+02350: 287  name "xs"
+02355: 287  getprop "Profile"
+02360: 287  getprop "UserCfg"
+02365: 287  dup
+02366: 287  callprop "getGameAddr"
+02371: 287  swap
+02372: 287  notearg
+02373: 287  call 0
+02376: 287  getprop "name"
+02381: 287  add
+02382: 287  string "|"
+02387: 287  add
+02388: 288  string "exitServer"
+02393: 288  add
+02394: 288  string "|"
+02399: 288  add
+02400: 289  getlocal 5
+02403: 289  dup
+02404: 289  callprop "getPlayerVipLevel"
+02409: 289  swap
+02410: 289  notearg
+02411: 289  call 0
+02414: 289  add
+02415: 289  setlocal 6
+02418: 289  pop
+02419: 290  name "xs"
+02424: 290  getprop "JsbConnecter"
+02429: 290  dup
+02430: 290  callprop "getInstance"
+02435: 290  swap
+02436: 290  notearg
+02437: 290  call 0
+02440: 290  dup
+02441: 290  callprop "invoke"
+02446: 290  swap
+02447: 290  notearg
+02448: 290  string "UserInfo"
+02453: 290  notearg
+02454: 290  string ""
+02459: 290  notearg
+02460: 290  getlocal 6
+02463: 290  notearg
+02464: 290  call 3
+02467: 290  pop
+02468: 291  goto 2473 (+5)
+02473: 292  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:71 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] sessionId
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:91 ---
+loc   line  op
+----- ----  --
+main:
+00000:  92  this
+00001:  92  getprop "sessionId"
+00006:  92  setlocal 0
+00009:  92  pop
+00010:  93  name "xs"
+00015:  93  getprop "Utils"
+00020:  93  getprop "Notify"
+00025:  93  dup
+00026:  93  callprop "postNotification"
+00031:  93  swap
+00032:  93  notearg
+00033:  93  name "xs"
+00038:  93  getprop "Constant_Notify_Event_BfLoginSucess"
+00043:  93  notearg
+00044:  93  newinit 1
+00049:  93  getlocal 0
+00052:  93  initprop "sessionKey"
+00057:  93  endinit
+00058:  93  notearg
+00059:  93  call 2
+00062:  93  pop
+00063:  93  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:91 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=1
+;; local[0] sessionId
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:110 ---
+loc   line  op
+----- ----  --
+main:
+00000: 111  this
+00001: 111  getprop "sessionId"
+00006: 111  setlocal 0
+00009: 111  pop
+00010: 112  name "xs"
+00015: 112  getprop "Utils"
+00020: 112  getprop "Notify"
+00025: 112  dup
+00026: 112  callprop "postNotification"
+00031: 112  swap
+00032: 112  notearg
+00033: 112  name "xs"
+00038: 112  getprop "Constant_Notify_Event_ThirdSdkLoginSucess"
+00043: 112  notearg
+00044: 112  newinit 1
+00049: 112  getlocal 0
+00052: 112  initprop "sessionKey"
+00057: 112  endinit
+00058: 112  notearg
+00059: 112  call 2
+00062: 112  pop
+00063: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:110 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:134 ---
+loc   line  op
+----- ----  --
+main:
+00000: 136  name "xs"
+00005: 136  getprop "Tools"
+00010: 136  getprop "Statistic"
+00015: 136  dup
+00016: 136  callprop "event"
+00021: 136  swap
+00022: 136  notearg
+00023: 136  string "1700006"
+00028: 136  notearg
+00029: 136  call 1
+00032: 136  pop
+00033: 137  name "xs"
+00038: 137  getprop "_event_once_each_launch_register_success"
+00043: 137  not
+00044: 137  ifeq 94 (+50)
+00049: 138  name "xs"
+00054: 138  true
+00055: 138  setprop "_event_once_each_launch_register_success"
+00060: 138  pop
+00061: 139  name "xs"
+00066: 139  getprop "Tools"
+00071: 139  getprop "Statistic"
+00076: 139  dup
+00077: 139  callprop "event"
+00082: 139  swap
+00083: 139  notearg
+00084: 139  string "1700016"
+00089: 139  notearg
+00090: 139  call 1
+00093: 139  pop
+00094: 141  name "xs"
+00099: 141  getprop "Views"
+00104: 141  getprop "Mgr"
+00109: 141  dup
+00110: 141  callprop "dismissLoadingLayer"
+00115: 141  swap
+00116: 141  notearg
+00117: 141  call 0
+00120: 141  pop
+00121: 143  name "xs"
+00126: 143  getprop "Views"
+00131: 143  getprop "Mgr"
+00136: 143  dup
+00137: 143  callprop "showToast"
+00142: 143  swap
+00143: 143  notearg
+00144: 143  name "xs"
+00149: 143  getprop "Tools"
+00154: 143  getprop "String"
+00159: 143  dup
+00160: 143  callprop "createString"
+00165: 143  swap
+00166: 143  notearg
+00167: 143  string "registeredSuccessfully"
+00172: 143  notearg
+00173: 143  call 1
+00176: 143  notearg
+00177: 143  call 1
+00180: 143  pop
+00181: 144  name "xs"
+00186: 144  getprop "Utils"
+00191: 144  getprop "Notify"
+00196: 144  dup
+00197: 144  callprop "postNotification"
+00202: 144  swap
+00203: 144  notearg
+00204: 144  name "xs"
+00209: 144  getprop "Constant_Notify_Event_BfRegisterSucess"
+00214: 144  notearg
+00215: 144  newinit 1
+00220: 144  getaliasedvar "sessionId" (hops = 0, slot = 2)
+00229: 144  initprop "sessionKey"
+00234: 144  endinit
+00235: 144  notearg
+00236: 144  call 2
+00239: 144  pop
+00240: 144  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:134 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] arguments
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:166 ---
+loc   line  op
+----- ----  --
+00000: 166  arguments
+00001: 166  setlocal 0
+00004: 166  pop
+main:
+00005: 167  name "xs"
+00010: 167  getprop "Views"
+00015: 167  getprop "Mgr"
+00020: 167  dup
+00021: 167  callprop "showDialogByName"
+00026: 167  swap
+00027: 167  notearg
+00028: 167  string "CheckOrderDialog"
+00033: 167  notearg
+00034: 168  newinit 1
+00039: 168  name "xs"
+00044: 168  getprop "app_account_sys"
+00049: 168  initprop "channelId"
+00054: 169  getlocal 0
+00057: 169  one
+00058: 169  getelem
+00059: 169  initprop "jsonString"
+00064: 169  endinit
+00065: 169  notearg
+00066: 169  call 2
+00069: 169  pop
+00070: 170  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:166 ---
+;; function object[4] <anonymous>
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:210 ---
+loc   line  op
+----- ----  --
+main:
+00000: 211  name "xs"
+00005: 211  getprop "Views"
+00010: 211  getprop "Mgr"
+00015: 211  dup
+00016: 211  callprop "showToast"
+00021: 211  swap
+00022: 211  notearg
+00023: 211  name "xs"
+00028: 211  getprop "Tools"
+00033: 211  getprop "String"
+00038: 211  dup
+00039: 211  callprop "createString"
+00044: 211  swap
+00045: 211  notearg
+00046: 211  string "toast_VerificationCodeSuc"
+00051: 211  notearg
+00052: 211  call 1
+00055: 211  notearg
+00056: 211  call 1
+00059: 211  pop
+00060: 211  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:210 ---
+;; function object[5] <anonymous>
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:225 ---
+loc   line  op
+----- ----  --
+main:
+00000: 226  name "xs"
+00005: 226  getprop "Views"
+00010: 226  getprop "Mgr"
+00015: 226  dup
+00016: 226  callprop "showToast"
+00021: 226  swap
+00022: 226  notearg
+00023: 226  name "xs"
+00028: 226  getprop "Tools"
+00033: 226  getprop "String"
+00038: 226  dup
+00039: 226  callprop "createString"
+00044: 226  swap
+00045: 226  notearg
+00046: 226  string "toast_MobilePhoneBinding"
+00051: 226  notearg
+00052: 226  call 1
+00055: 226  notearg
+00056: 226  call 1
+00059: 226  pop
+00060: 226  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:225 ---
+;; function object[6] <anonymous>
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:241 ---
+loc   line  op
+----- ----  --
+main:
+00000: 242  name "xs"
+00005: 242  getprop "Views"
+00010: 242  getprop "Mgr"
+00015: 242  dup
+00016: 242  callprop "showDialogByName"
+00021: 242  swap
+00022: 242  notearg
+00023: 242  string "CheckOrderDialog"
+00028: 242  notearg
+00029: 243  newinit 1
+00034: 244  name "xs"
+00039: 244  getprop "Constant_Pay_Source_AppStore"
+00044: 244  initprop "channelId"
+00049: 245  this
+00050: 245  getprop "transactionId"
+00055: 245  initprop "transactionId"
+00060: 246  this
+00061: 246  getprop "transactionReceipt"
+00066: 246  initprop "transactionReceipt"
+00071: 246  endinit
+00072: 246  notearg
+00073: 246  call 2
+00076: 246  pop
+00077: 247  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:241 ---
+;; function object[5] onCmnFail
+;; function metadata object[5] nargs=0 bindings=4
+;; local[0] _errorMsg
+;; local[1] errorCode
+;; local[2] _str
+;; local[3] arguments
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=323 object[0]
+;; FUNCTION-MAP kind=lambda offset=638 object[1]
+;; FUNCTION-MAP kind=lambda offset=806 object[2]
+;; FUNCTION-MAP kind=lambda offset=974 object[3]
+;; FUNCTION-MAP kind=lambda offset=1142 object[4]
+;; FUNCTION-MAP kind=lambda offset=1349 object[5]
+;; FUNCTION-MAP kind=lambda offset=1497 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:294 ---
+loc   line  op
+----- ----  --
+00000: 294  arguments
+00001: 294  setlocal 3
+00004: 294  pop
+main:
+00005: 295  name "xs"
+00010: 295  dup
+00011: 295  callprop "dump"
+00016: 295  swap
+00017: 295  notearg
+00018: 295  string "onCmnFail"
+00023: 295  notearg
+00024: 295  getlocal 3
+00027: 295  notearg
+00028: 295  call 2
+00031: 295  pop
+00032: 296  getlocal 3
+00035: 296  zero
+00036: 296  getelem
+00037: 296  condswitch
+00038: 297  string "ios_bfsdk_login"
+00043: 297  case 193 (+150)
+00048: 298  string "and_bfsdk_login"
+00053: 298  case 193 (+140)
+00058: 340  string "anysdk_loginFail"
+00063: 340  case 377 (+314)
+00068: 373  string "and_Thirdsdk_login"
+00073: 373  case 692 (+619)
+00078: 407  string "ios_bfsdk_register"
+00083: 407  case 860 (+777)
+00088: 408  string "and_bfsdk_register"
+00093: 408  case 860 (+767)
+00098: 431  string "ali_pay"
+00103: 431  case 1028 (+925)
+00108: 432  string "and_ali_pay"
+00113: 432  case 1028 (+915)
+00118: 433  string "ios_ali_pay"
+00123: 433  case 1028 (+905)
+00128: 434  string "anysdk_payFaild"
+00133: 434  case 1028 (+895)
+00138: 435  string "google_payFaild"
+00143: 435  case 1028 (+885)
+00148: 458  string "ios_getSmsCaptchaFail"
+00153: 458  case 1229 (+1076)
+00158: 459  string "getSmsCaptchaFail"
+00163: 459  case 1229 (+1066)
+00168: 477  string "ios_BFbindMobileFail"
+00173: 477  case 1377 (+1204)
+00178: 478  string "BFbindMobileFail"
+00183: 478  case 1377 (+1194)
+00188: 478  default 1525 (+1337)
+00193: 300  getlocal 3
+00196: 300  one
+00197: 300  getelem
+00198: 300  setlocal 0
+00201: 300  pop
+00202: 301  getlocal 3
+00205: 301  int8 2
+00207: 301  getelem
+00208: 301  setaliasedvar "errorCode" (hops = 0, slot = 2)
+00217: 301  pop
+00218: 302  name "xs"
+00223: 302  getprop "director"
+00228: 302  dup
+00229: 302  callprop "getRunningScene"
+00234: 302  swap
+00235: 302  notearg
+00236: 302  call 0
+00239: 302  dup
+00240: 302  callprop "runAction"
+00245: 302  swap
+00246: 302  notearg
+00247: 303  name "xs"
+00252: 303  getprop "Utils"
+00257: 303  getprop "Action"
+00262: 303  dup
+00263: 303  callprop "combineSequence"
+00268: 303  swap
+00269: 303  notearg
+00270: 304  newarray 2
+00274: 306  name "cc"
+00279: 306  getprop "DelayTime"
+00284: 306  dup
+00285: 306  callprop "create"
+00290: 306  swap
+00291: 306  notearg
+00292: 306  double 0.5
+00297: 306  notearg
+00298: 306  call 1
+00301: 306  initelem_array 0
+00305: 308  name "cc"
+00310: 308  getprop "CallFunc"
+00315: 308  dup
+00316: 308  callprop "create"
+00321: 308  swap
+00322: 308  notearg
+00323: 309  lambda (function () {
+    [sourceless code]
+})
+00328: 309  dup
+00329: 309  callprop "bind"
+00334: 309  swap
+00335: 309  notearg
+00336: 331  newinit 1
+00341: 331  getlocal 0
+00344: 331  initprop "msg"
+00349: 331  endinit
+00350: 331  notearg
+00351: 331  call 1
+00354: 331  notearg
+00355: 331  call 1
+00358: 331  initelem_array 1
+00362: 331  endinit
+00363: 331  notearg
+00364: 331  call 1
+00367: 331  notearg
+00368: 331  call 1
+00371: 331  pop
+00372: 339  goto 1548 (+1176)
+00377: 341  name "xs"
+00382: 341  getprop "director"
+00387: 341  dup
+00388: 341  callprop "getRunningScene"
+00393: 341  swap
+00394: 341  notearg
+00395: 341  call 0
+00398: 341  null
+00399: 341  ne
+00400: 341  and 464 (+64)
+00405: 341  pop
+00406: 341  name "xs"
+00411: 341  getprop "director"
+00416: 341  dup
+00417: 341  callprop "getRunningScene"
+00422: 341  swap
+00423: 341  notearg
+00424: 341  call 0
+00427: 341  dup
+00428: 341  callprop "getTag"
+00433: 341  swap
+00434: 341  notearg
+00435: 341  call 0
+00438: 341  name "xs"
+00443: 341  getprop "Cfg"
+00448: 341  getprop "Scene"
+00453: 341  getprop "LoginScene"
+00458: 341  getprop "tag"
+00463: 341  eq
+00464: 341  ifeq 474 (+10)
+00469: 341  goto 524 (+55)
+00474: 346  name "xs"
+00479: 346  getprop "Scene"
+00484: 346  getprop "Mgr"
+00489: 346  dup
+00490: 346  callprop "changeSceneByName"
+00495: 346  swap
+00496: 346  notearg
+00497: 346  string "LoginScene"
+00502: 346  notearg
+00503: 346  newinit 1
+00508: 346  string "login"
+00513: 346  initprop "funTypeStr"
+00518: 346  endinit
+00519: 346  notearg
+00520: 346  call 2
+00523: 346  pop
+00524: 350  getlocal 3
+00527: 350  one
+00528: 350  getelem
+00529: 350  setlocal 0
+00532: 350  pop
+00533: 351  name "xs"
+00538: 351  getprop "director"
+00543: 351  dup
+00544: 351  callprop "getRunningScene"
+00549: 351  swap
+00550: 351  notearg
+00551: 351  call 0
+00554: 351  dup
+00555: 351  callprop "runAction"
+00560: 351  swap
+00561: 351  notearg
+00562: 352  name "xs"
+00567: 352  getprop "Utils"
+00572: 352  getprop "Action"
+00577: 352  dup
+00578: 352  callprop "combineSequence"
+00583: 352  swap
+00584: 352  notearg
+00585: 353  newarray 2
+00589: 354  name "cc"
+00594: 354  getprop "DelayTime"
+00599: 354  dup
+00600: 354  callprop "create"
+00605: 354  swap
+00606: 354  notearg
+00607: 354  double 0.1
+00612: 354  notearg
+00613: 354  call 1
+00616: 354  initelem_array 0
+00620: 355  name "cc"
+00625: 355  getprop "CallFunc"
+00630: 355  dup
+00631: 355  callprop "create"
+00636: 355  swap
+00637: 355  notearg
+00638: 356  lambda (function () {
+    [sourceless code]
+})
+00643: 356  dup
+00644: 356  callprop "bind"
+00649: 356  swap
+00650: 356  notearg
+00651: 364  newinit 1
+00656: 364  getlocal 0
+00659: 364  initprop "msg"
+00664: 364  endinit
+00665: 364  notearg
+00666: 364  call 1
+00669: 364  notearg
+00670: 364  call 1
+00673: 364  initelem_array 1
+00677: 364  endinit
+00678: 364  notearg
+00679: 364  call 1
+00682: 364  notearg
+00683: 364  call 1
+00686: 364  pop
+00687: 372  goto 1548 (+861)
+00692: 377  getlocal 3
+00695: 377  one
+00696: 377  getelem
+00697: 377  setlocal 0
+00700: 377  pop
+00701: 378  name "xs"
+00706: 378  getprop "director"
+00711: 378  dup
+00712: 378  callprop "getRunningScene"
+00717: 378  swap
+00718: 378  notearg
+00719: 378  call 0
+00722: 378  dup
+00723: 378  callprop "runAction"
+00728: 378  swap
+00729: 378  notearg
+00730: 379  name "xs"
+00735: 379  getprop "Utils"
+00740: 379  getprop "Action"
+00745: 379  dup
+00746: 379  callprop "combineSequence"
+00751: 379  swap
+00752: 379  notearg
+00753: 380  newarray 2
+00757: 381  name "cc"
+00762: 381  getprop "DelayTime"
+00767: 381  dup
+00768: 381  callprop "create"
+00773: 381  swap
+00774: 381  notearg
+00775: 381  double 0.1
+00780: 381  notearg
+00781: 381  call 1
+00784: 381  initelem_array 0
+00788: 382  name "cc"
+00793: 382  getprop "CallFunc"
+00798: 382  dup
+00799: 382  callprop "create"
+00804: 382  swap
+00805: 382  notearg
+00806: 383  lambda (function () {
+    [sourceless code]
+})
+00811: 383  dup
+00812: 383  callprop "bind"
+00817: 383  swap
+00818: 383  notearg
+00819: 400  newinit 1
+00824: 400  getlocal 0
+00827: 400  initprop "msg"
+00832: 400  endinit
+00833: 400  notearg
+00834: 400  call 1
+00837: 400  notearg
+00838: 400  call 1
+00841: 400  initelem_array 1
+00845: 400  endinit
+00846: 400  notearg
+00847: 400  call 1
+00850: 400  notearg
+00851: 400  call 1
+00854: 400  pop
+00855: 406  goto 1548 (+693)
+00860: 409  getlocal 3
+00863: 409  one
+00864: 409  getelem
+00865: 409  setlocal 0
+00868: 409  pop
+00869: 410  name "xs"
+00874: 410  getprop "director"
+00879: 410  dup
+00880: 410  callprop "getRunningScene"
+00885: 410  swap
+00886: 410  notearg
+00887: 410  call 0
+00890: 410  dup
+00891: 410  callprop "runAction"
+00896: 410  swap
+00897: 410  notearg
+00898: 411  name "xs"
+00903: 411  getprop "Utils"
+00908: 411  getprop "Action"
+00913: 411  dup
+00914: 411  callprop "combineSequence"
+00919: 411  swap
+00920: 411  notearg
+00921: 412  newarray 2
+00925: 413  name "cc"
+00930: 413  getprop "DelayTime"
+00935: 413  dup
+00936: 413  callprop "create"
+00941: 413  swap
+00942: 413  notearg
+00943: 413  double 0.5
+00948: 413  notearg
+00949: 413  call 1
+00952: 413  initelem_array 0
+00956: 414  name "cc"
+00961: 414  getprop "CallFunc"
+00966: 414  dup
+00967: 414  callprop "create"
+00972: 414  swap
+00973: 414  notearg
+00974: 415  lambda (function () {
+    [sourceless code]
+})
+00979: 415  dup
+00980: 415  callprop "bind"
+00985: 415  swap
+00986: 415  notearg
+00987: 423  newinit 1
+00992: 423  getlocal 0
+00995: 423  initprop "msg"
+01000: 423  endinit
+01001: 423  notearg
+01002: 423  call 1
+01005: 423  notearg
+01006: 423  call 1
+01009: 423  initelem_array 1
+01013: 423  endinit
+01014: 423  notearg
+01015: 423  call 1
+01018: 423  notearg
+01019: 423  call 1
+01022: 423  pop
+01023: 430  goto 1548 (+525)
+01028: 436  getlocal 3
+01031: 436  one
+01032: 436  getelem
+01033: 436  setlocal 0
+01036: 436  pop
+01037: 438  name "xs"
+01042: 438  getprop "director"
+01047: 438  dup
+01048: 438  callprop "getRunningScene"
+01053: 438  swap
+01054: 438  notearg
+01055: 438  call 0
+01058: 438  dup
+01059: 438  callprop "runAction"
+01064: 438  swap
+01065: 438  notearg
+01066: 439  name "xs"
+01071: 439  getprop "Utils"
+01076: 439  getprop "Action"
+01081: 439  dup
+01082: 439  callprop "combineSequence"
+01087: 439  swap
+01088: 439  notearg
+01089: 440  newarray 2
+01093: 441  name "cc"
+01098: 441  getprop "DelayTime"
+01103: 441  dup
+01104: 441  callprop "create"
+01109: 441  swap
+01110: 441  notearg
+01111: 441  double 0.5
+01116: 441  notearg
+01117: 441  call 1
+01120: 441  initelem_array 0
+01124: 442  name "cc"
+01129: 442  getprop "CallFunc"
+01134: 442  dup
+01135: 442  callprop "create"
+01140: 442  swap
+01141: 442  notearg
+01142: 443  lambda (function () {
+    [sourceless code]
+})
+01147: 443  dup
+01148: 443  callprop "bind"
+01153: 443  swap
+01154: 443  notearg
+01155: 449  newinit 1
+01160: 449  getlocal 0
+01163: 449  initprop "msg"
+01168: 449  endinit
+01169: 449  notearg
+01170: 449  call 1
+01173: 449  notearg
+01174: 449  call 1
+01177: 449  initelem_array 1
+01181: 449  endinit
+01182: 449  notearg
+01183: 449  call 1
+01186: 449  notearg
+01187: 449  call 1
+01190: 449  pop
+01191: 456  name "xs"
+01196: 456  getprop "Tools"
+01201: 456  getprop "Statistic"
+01206: 456  dup
+01207: 456  callprop "event"
+01212: 456  swap
+01213: 456  notearg
+01214: 456  string "1700014"
+01219: 456  notearg
+01220: 456  call 1
+01223: 456  pop
+01224: 457  goto 1548 (+324)
+01229: 460  getlocal 3
+01232: 460  one
+01233: 460  getelem
+01234: 460  setaliasedvar "_str" (hops = 0, slot = 3)
+01243: 460  pop
+01244: 461  name "xs"
+01249: 461  getprop "director"
+01254: 461  dup
+01255: 461  callprop "getRunningScene"
+01260: 461  swap
+01261: 461  notearg
+01262: 461  call 0
+01265: 461  dup
+01266: 461  callprop "runAction"
+01271: 461  swap
+01272: 461  notearg
+01273: 462  name "xs"
+01278: 462  getprop "Utils"
+01283: 462  getprop "Action"
+01288: 462  dup
+01289: 462  callprop "combineSequence"
+01294: 462  swap
+01295: 462  notearg
+01296: 463  newarray 2
+01300: 464  name "cc"
+01305: 464  getprop "DelayTime"
+01310: 464  dup
+01311: 464  callprop "create"
+01316: 464  swap
+01317: 464  notearg
+01318: 464  double 0.5
+01323: 464  notearg
+01324: 464  call 1
+01327: 464  initelem_array 0
+01331: 465  name "cc"
+01336: 465  getprop "CallFunc"
+01341: 465  dup
+01342: 465  callprop "create"
+01347: 465  swap
+01348: 465  notearg
+01349: 466  lambda (function () {
+    [sourceless code]
+})
+01354: 466  notearg
+01355: 466  call 1
+01358: 466  initelem_array 1
+01362: 466  endinit
+01363: 466  notearg
+01364: 466  call 1
+01367: 466  notearg
+01368: 466  call 1
+01371: 466  pop
+01372: 476  goto 1548 (+176)
+01377: 479  getlocal 3
+01380: 479  one
+01381: 479  getelem
+01382: 479  setaliasedvar "_str" (hops = 0, slot = 3)
+01391: 479  pop
+01392: 480  name "xs"
+01397: 480  getprop "director"
+01402: 480  dup
+01403: 480  callprop "getRunningScene"
+01408: 480  swap
+01409: 480  notearg
+01410: 480  call 0
+01413: 480  dup
+01414: 480  callprop "runAction"
+01419: 480  swap
+01420: 480  notearg
+01421: 481  name "xs"
+01426: 481  getprop "Utils"
+01431: 481  getprop "Action"
+01436: 481  dup
+01437: 481  callprop "combineSequence"
+01442: 481  swap
+01443: 481  notearg
+01444: 482  newarray 2
+01448: 483  name "cc"
+01453: 483  getprop "DelayTime"
+01458: 483  dup
+01459: 483  callprop "create"
+01464: 483  swap
+01465: 483  notearg
+01466: 483  double 0.5
+01471: 483  notearg
+01472: 483  call 1
+01475: 483  initelem_array 0
+01479: 484  name "cc"
+01484: 484  getprop "CallFunc"
+01489: 484  dup
+01490: 484  callprop "create"
+01495: 484  swap
+01496: 484  notearg
+01497: 485  lambda (function () {
+    [sourceless code]
+})
+01502: 485  notearg
+01503: 485  call 1
+01506: 485  initelem_array 1
+01510: 485  endinit
+01511: 485  notearg
+01512: 485  call 1
+01515: 485  notearg
+01516: 485  call 1
+01519: 485  pop
+01520: 494  goto 1548 (+28)
+01525: 496  name "xs"
+01530: 496  dup
+01531: 496  callprop "warn"
+01536: 496  swap
+01537: 496  notearg
+01538: 496  string "xs.onCmnFail error!"
+01543: 496  notearg
+01544: 496  call 1
+01547: 496  pop
+01548: 497  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:294 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=2
+;; local[0] _errorMsg
+;; local[1] arguments
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:309 ---
+loc   line  op
+----- ----  --
+00000: 309  arguments
+00001: 309  setlocal 1
+00004: 309  pop
+main:
+00005: 311  name "xs"
+00010: 311  getprop "Tools"
+00015: 311  getprop "Statistic"
+00020: 311  dup
+00021: 311  callprop "bfSdkLoginFailEvent"
+00026: 311  swap
+00027: 311  notearg
+00028: 311  call 0
+00031: 311  pop
+00032: 313  name "xs"
+00037: 313  getprop "Views"
+00042: 313  getprop "Mgr"
+00047: 313  dup
+00048: 313  callprop "dismissLoadingLayer"
+00053: 313  swap
+00054: 313  notearg
+00055: 313  call 0
+00058: 313  pop
+00059: 315  getlocal 1
+00062: 315  zero
+00063: 315  getelem
+00064: 315  string "ios_bfsdk_login"
+00069: 315  stricteq
+00070: 315  ifeq 170 (+100)
+00075: 316  getaliasedvar "errorCode" (hops = 0, slot = 2)
+00084: 316  string "-10801099"
+00089: 316  stricteq
+00090: 316  ifeq 122 (+32)
+00095: 317  name "xs"
+00100: 317  getprop "Tools"
+00105: 317  getprop "Statistic"
+00110: 317  dup
+00111: 317  callprop "bfSdkInitFailEvent"
+00116: 317  swap
+00117: 317  notearg
+00118: 317  call 0
+00121: 317  pop
+00122: 319  name "xs"
+00127: 319  getprop "Tools"
+00132: 319  getprop "Statistic"
+00137: 319  dup
+00138: 319  callprop "bfSdkLoginFail_ErrCodeEvent"
+00143: 319  swap
+00144: 319  notearg
+00145: 319  string "bfsdk_ios_ec_"
+00150: 319  getaliasedvar "errorCode" (hops = 0, slot = 2)
+00159: 319  add
+00160: 319  notearg
+00161: 319  call 1
+00164: 319  pop
+00165: 319  goto 276 (+111)
+00170: 320  getlocal 1
+00173: 320  zero
+00174: 320  getelem
+00175: 320  string "and_bfsdk_login"
+00180: 320  stricteq
+00181: 320  ifeq 276 (+95)
+00186: 321  getaliasedvar "errorCode" (hops = 0, slot = 2)
+00195: 321  string "702"
+00200: 321  stricteq
+00201: 321  ifeq 233 (+32)
+00206: 322  name "xs"
+00211: 322  getprop "Tools"
+00216: 322  getprop "Statistic"
+00221: 322  dup
+00222: 322  callprop "bfSdkInitFailEvent"
+00227: 322  swap
+00228: 322  notearg
+00229: 322  call 0
+00232: 322  pop
+00233: 324  name "xs"
+00238: 324  getprop "Tools"
+00243: 324  getprop "Statistic"
+00248: 324  dup
+00249: 324  callprop "bfSdkLoginFail_ErrCodeEvent"
+00254: 324  swap
+00255: 324  notearg
+00256: 324  string "bfsdk_android_ec_"
+00261: 324  getaliasedvar "errorCode" (hops = 0, slot = 2)
+00270: 324  add
+00271: 324  notearg
+00272: 324  call 1
+00275: 324  pop
+00276: 327  this
+00277: 327  getprop "msg"
+00282: 327  setlocal 0
+00285: 327  pop
+00286: 328  name "xs"
+00291: 328  getprop "Utils"
+00296: 328  getprop "Notify"
+00301: 328  dup
+00302: 328  callprop "postNotification"
+00307: 328  swap
+00308: 328  notearg
+00309: 328  name "xs"
+00314: 328  getprop "Constant_Notify_Event_BfLoginFail"
+00319: 328  notearg
+00320: 328  newinit 1
+00325: 328  getlocal 0
+00328: 328  initprop "errorMsg"
+00333: 328  endinit
+00334: 328  notearg
+00335: 328  call 2
+00338: 328  pop
+00339: 328  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:309 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=1
+;; local[0] _errorMsg
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:356 ---
+loc   line  op
+----- ----  --
+main:
+00000: 357  name "xs"
+00005: 357  getprop "Tools"
+00010: 357  getprop "Statistic"
+00015: 357  dup
+00016: 357  callprop "event"
+00021: 357  swap
+00022: 357  notearg
+00023: 357  string "1700010"
+00028: 357  notearg
+00029: 357  call 1
+00032: 357  pop
+00033: 359  name "xs"
+00038: 359  getprop "Views"
+00043: 359  getprop "Mgr"
+00048: 359  dup
+00049: 359  callprop "dismissLoadingLayer"
+00054: 359  swap
+00055: 359  notearg
+00056: 359  call 0
+00059: 359  pop
+00060: 361  this
+00061: 361  getprop "msg"
+00066: 361  setlocal 0
+00069: 361  pop
+00070: 362  name "xs"
+00075: 362  getprop "Utils"
+00080: 362  getprop "Notify"
+00085: 362  dup
+00086: 362  callprop "postNotification"
+00091: 362  swap
+00092: 362  notearg
+00093: 362  name "xs"
+00098: 362  getprop "Constant_Notify_Event_AnySdkLoginFail"
+00103: 362  notearg
+00104: 363  newinit 1
+00109: 363  name "xs"
+00114: 363  getprop "Tools"
+00119: 363  getprop "String"
+00124: 363  dup
+00125: 363  callprop "createString"
+00130: 363  swap
+00131: 363  notearg
+00132: 363  string "toast_LandingFailure"
+00137: 363  notearg
+00138: 363  call 1
+00141: 363  initprop "errorMsg"
+00146: 363  endinit
+00147: 363  notearg
+00148: 363  call 2
+00151: 363  pop
+00152: 363  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:356 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] _errorMsg
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:383 ---
+loc   line  op
+----- ----  --
+main:
+00000: 385  name "xs"
+00005: 385  getprop "Views"
+00010: 385  getprop "Mgr"
+00015: 385  dup
+00016: 385  callprop "dismissLoadingLayer"
+00021: 385  swap
+00022: 385  notearg
+00023: 385  call 0
+00026: 385  pop
+00027: 387  name "xs"
+00032: 387  getprop "director"
+00037: 387  dup
+00038: 387  callprop "getRunningScene"
+00043: 387  swap
+00044: 387  notearg
+00045: 387  call 0
+00048: 387  null
+00049: 387  ne
+00050: 387  and 114 (+64)
+00055: 387  pop
+00056: 387  name "xs"
+00061: 387  getprop "director"
+00066: 387  dup
+00067: 387  callprop "getRunningScene"
+00072: 387  swap
+00073: 387  notearg
+00074: 387  call 0
+00077: 387  dup
+00078: 387  callprop "getTag"
+00083: 387  swap
+00084: 387  notearg
+00085: 387  call 0
+00088: 387  name "xs"
+00093: 387  getprop "Cfg"
+00098: 387  getprop "Scene"
+00103: 387  getprop "LoginScene"
+00108: 387  getprop "tag"
+00113: 387  eq
+00114: 387  ifeq 124 (+10)
+00119: 387  goto 174 (+55)
+00124: 393  name "xs"
+00129: 393  getprop "Scene"
+00134: 393  getprop "Mgr"
+00139: 393  dup
+00140: 393  callprop "changeSceneByName"
+00145: 393  swap
+00146: 393  notearg
+00147: 393  string "LoginScene"
+00152: 393  notearg
+00153: 393  newinit 1
+00158: 393  string "login"
+00163: 393  initprop "funTypeStr"
+00168: 393  endinit
+00169: 393  notearg
+00170: 393  call 2
+00173: 393  pop
+00174: 397  this
+00175: 397  getprop "msg"
+00180: 397  setlocal 0
+00183: 397  pop
+00184: 398  name "xs"
+00189: 398  getprop "Utils"
+00194: 398  getprop "Notify"
+00199: 398  dup
+00200: 398  callprop "postNotification"
+00205: 398  swap
+00206: 398  notearg
+00207: 398  name "xs"
+00212: 398  getprop "Constant_Notify_Event_ThirdSdkLoginFail"
+00217: 398  notearg
+00218: 399  newinit 1
+00223: 399  name "xs"
+00228: 399  getprop "Tools"
+00233: 399  getprop "String"
+00238: 399  dup
+00239: 399  callprop "createString"
+00244: 399  swap
+00245: 399  notearg
+00246: 399  string "toast_LandingFailure"
+00251: 399  notearg
+00252: 399  call 1
+00255: 399  initprop "errorMsg"
+00260: 399  endinit
+00261: 399  notearg
+00262: 399  call 2
+00265: 399  pop
+00266: 399  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:383 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] _errorMsg
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:415 ---
+loc   line  op
+----- ----  --
+main:
+00000: 417  name "xs"
+00005: 417  getprop "Tools"
+00010: 417  getprop "Statistic"
+00015: 417  dup
+00016: 417  callprop "event"
+00021: 417  swap
+00022: 417  notearg
+00023: 417  string "1700007"
+00028: 417  notearg
+00029: 417  call 1
+00032: 417  pop
+00033: 419  name "xs"
+00038: 419  getprop "Views"
+00043: 419  getprop "Mgr"
+00048: 419  dup
+00049: 419  callprop "dismissLoadingLayer"
+00054: 419  swap
+00055: 419  notearg
+00056: 419  call 0
+00059: 419  pop
+00060: 421  this
+00061: 421  getprop "msg"
+00066: 421  setlocal 0
+00069: 421  pop
+00070: 422  name "xs"
+00075: 422  getprop "Utils"
+00080: 422  getprop "Notify"
+00085: 422  dup
+00086: 422  callprop "postNotification"
+00091: 422  swap
+00092: 422  notearg
+00093: 422  name "xs"
+00098: 422  getprop "Constant_Notify_Event_BfRegisterFail"
+00103: 422  notearg
+00104: 422  newinit 1
+00109: 422  getlocal 0
+00112: 422  initprop "errorMsg"
+00117: 422  endinit
+00118: 422  notearg
+00119: 422  call 2
+00122: 422  pop
+00123: 422  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:415 ---
+;; function object[4] <anonymous>
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] _errorMsg
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:443 ---
+loc   line  op
+----- ----  --
+main:
+00000: 445  name "xs"
+00005: 445  getprop "Views"
+00010: 445  getprop "Mgr"
+00015: 445  dup
+00016: 445  callprop "dismissLoadingLayer"
+00021: 445  swap
+00022: 445  notearg
+00023: 445  call 0
+00026: 445  pop
+00027: 447  this
+00028: 447  getprop "msg"
+00033: 447  setlocal 0
+00036: 447  pop
+00037: 448  name "xs"
+00042: 448  getprop "Views"
+00047: 448  getprop "Mgr"
+00052: 448  dup
+00053: 448  callprop "showToast"
+00058: 448  swap
+00059: 448  notearg
+00060: 448  getlocal 0
+00063: 448  notearg
+00064: 448  call 1
+00067: 448  pop
+00068: 448  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:443 ---
+;; function object[5] <anonymous>
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:466 ---
+loc   line  op
+----- ----  --
+main:
+00000: 468  name "xs"
+00005: 468  getprop "Views"
+00010: 468  getprop "Mgr"
+00015: 468  dup
+00016: 468  callprop "dismissLoadingLayer"
+00021: 468  swap
+00022: 468  notearg
+00023: 468  call 0
+00026: 468  pop
+00027: 469  name "xs"
+00032: 469  getprop "Views"
+00037: 469  getprop "Mgr"
+00042: 469  dup
+00043: 469  callprop "showToast"
+00048: 469  swap
+00049: 469  notearg
+00050: 469  name "xs"
+00055: 469  getprop "Tools"
+00060: 469  getprop "String"
+00065: 469  dup
+00066: 469  callprop "createString"
+00071: 469  swap
+00072: 469  notearg
+00073: 469  string "toast_VerificationCodeSucFailure"
+00078: 469  notearg
+00079: 469  call 1
+00082: 469  getaliasedvar "_str" (hops = 0, slot = 3)
+00091: 469  add
+00092: 469  notearg
+00093: 469  call 1
+00096: 469  pop
+00097: 469  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:466 ---
+;; function object[6] <anonymous>
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:485 ---
+loc   line  op
+----- ----  --
+main:
+00000: 486  name "xs"
+00005: 486  getprop "Views"
+00010: 486  getprop "Mgr"
+00015: 486  dup
+00016: 486  callprop "dismissLoadingLayer"
+00021: 486  swap
+00022: 486  notearg
+00023: 486  call 0
+00026: 486  pop
+00027: 487  name "xs"
+00032: 487  getprop "Views"
+00037: 487  getprop "Mgr"
+00042: 487  dup
+00043: 487  callprop "showToast"
+00048: 487  swap
+00049: 487  notearg
+00050: 487  name "xs"
+00055: 487  getprop "Tools"
+00060: 487  getprop "String"
+00065: 487  dup
+00066: 487  callprop "createString"
+00071: 487  swap
+00072: 487  notearg
+00073: 487  string "toast_MobilePhoneBindingFailure"
+00078: 487  notearg
+00079: 487  call 1
+00082: 487  getaliasedvar "_str" (hops = 0, slot = 3)
+00091: 487  add
+00092: 487  notearg
+00093: 487  call 1
+00096: 487  pop
+00097: 487  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:485 ---
+;; function object[6] onNotify
+;; function metadata object[6] nargs=0 bindings=1
+;; local[0] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:501 ---
+loc   line  op
+----- ----  --
+00000: 501  arguments
+00001: 501  setlocal 0
+00004: 501  pop
+main:
+00005: 502  name "xs"
+00010: 502  dup
+00011: 502  callprop "dump"
+00016: 502  swap
+00017: 502  notearg
+00018: 502  string "onNotify"
+00023: 502  notearg
+00024: 502  getlocal 0
+00027: 502  notearg
+00028: 502  call 2
+00031: 502  pop
+00032: 502  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:501 ---
+;; function object[7] onTestSuccess
+;; function metadata object[7] nargs=0 bindings=1
+;; local[0] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:508 ---
+loc   line  op
+----- ----  --
+00000: 508  arguments
+00001: 508  setlocal 0
+00004: 508  pop
+main:
+00005: 509  name "xs"
+00010: 509  dup
+00011: 509  callprop "dump"
+00016: 509  swap
+00017: 509  notearg
+00018: 509  string "onTestSuccess"
+00023: 509  notearg
+00024: 509  getlocal 0
+00027: 509  notearg
+00028: 509  call 2
+00031: 509  pop
+00032: 509  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:508 ---
+;; function object[8] onTestFail
+;; function metadata object[8] nargs=0 bindings=1
+;; local[0] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:511 ---
+loc   line  op
+----- ----  --
+00000: 511  arguments
+00001: 511  setlocal 0
+00004: 511  pop
+main:
+00005: 512  name "xs"
+00010: 512  dup
+00011: 512  callprop "dump"
+00016: 512  swap
+00017: 512  notearg
+00018: 512  string "onTestFail"
+00023: 512  notearg
+00024: 512  getlocal 0
+00027: 512  notearg
+00028: 512  call 2
+00031: 512  pop
+00032: 512  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/cpp2jsb.js:511 ---

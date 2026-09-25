@@ -1,0 +1,576 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/InterService/InterServiceWorshipScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=93 object[5]
+;; FUNCTION-MAP kind=lambda offset=129 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Scene"
+00010:   6  name "cc"
+00015:   6  getprop "Scene"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  string "xs.Scene.InterServiceWorshipScene"
+00038:   7  initprop "name"
+00043:   8  lambda (function () {
+    [sourceless code]
+})
+00048:   8  initprop "ctor"
+00053:  12  lambda (function () {
+    [sourceless code]
+})
+00058:  12  initprop "init"
+00063:  57  lambda (function () {
+    [sourceless code]
+})
+00068:  57  initprop "onEnter"
+00073:  61  lambda (function () {
+    [sourceless code]
+})
+00078:  61  initprop "onExit"
+00083:  65  lambda (function () {
+    [sourceless code]
+})
+00088:  65  initprop "closeBtnCallback"
+00093:  69  lambda (function () {
+    [sourceless code]
+})
+00098:  69  initprop "setBaseTouchPriority"
+00103:  69  endinit
+00104:  69  notearg
+00105:  69  call 1
+00108:  69  setprop "InterServiceWorshipScene"
+00113:  69  popv
+00114:  77  name "xs"
+00119:  77  getprop "Scene"
+00124:  77  getprop "InterServiceWorshipScene"
+00129:  77  lambda (function () {
+    [sourceless code]
+})
+00134:  77  setprop "create"
+00139:  77  popv
+00140:  87  name "xs"
+00145:  87  getprop "Scene"
+00150:  87  getprop "Mgr"
+00155:  87  dup
+00156:  87  callprop "registerScene"
+00161:  87  swap
+00162:  87  notearg
+00163:  87  string "InterServiceWorshipScene"
+00168:  87  notearg
+00169:  87  newinit 1
+00174:  88  name "xs"
+00179:  88  getprop "Scene"
+00184:  88  getprop "InterServiceWorshipScene"
+00189:  88  initprop "class"
+00194:  89  name "xs"
+00199:  89  getprop "Constant_SceneType_Challenge"
+00204:  89  initprop "type"
+00209:  90  newarray 1
+00213:  90  string "InterServiceLadderWar"
+00218:  90  initelem_array 0
+00222:  90  endinit
+00223:  90  initprop "area"
+00228:  90  endinit
+00229:  90  notearg
+00230:  90  call 2
+00233:  90  popv
+00234:  91  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  call 0
+00012:   9  pop
+00013:  10  name "cc"
+00018:  10  dup
+00019:  10  callprop "associateWithNative"
+00024:  10  swap
+00025:  10  notearg
+00026:  10  this
+00027:  10  notearg
+00028:  10  name "cc"
+00033:  10  getprop "Scene"
+00038:  10  notearg
+00039:  10  call 2
+00042:  10  pop
+00043:  10  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:8 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] _data
+;; local[0] visibleSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "_super"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  call 0
+00012:  13  not
+00013:  13  ifeq 20 (+7)
+00018:  14  false
+00019:  14  return
+00020:  17  name "xs"
+00025:  17  getprop "director"
+00030:  17  dup
+00031:  17  callprop "getVisibleSize"
+00036:  17  swap
+00037:  17  notearg
+00038:  17  call 0
+00041:  17  setlocal 0
+00044:  17  pop
+00045:  20  name "xs"
+00050:  20  getprop "Tools"
+00055:  20  getprop "UI"
+00060:  20  dup
+00061:  20  callprop "addBgByType"
+00066:  20  swap
+00067:  20  notearg
+00068:  20  this
+00069:  20  notearg
+00070:  20  name "xs"
+00075:  20  getprop "Constant_BgType_Ladder"
+00080:  20  notearg
+00081:  20  call 2
+00084:  20  pop
+00085:  21  name "xs"
+00090:  21  getprop "Tools"
+00095:  21  getprop "UI"
+00100:  21  dup
+00101:  21  callprop "addContentBg"
+00106:  21  swap
+00107:  21  notearg
+00108:  21  this
+00109:  21  notearg
+00110:  21  true
+00111:  21  notearg
+00112:  21  call 2
+00115:  21  pop
+00116:  24  this
+00117:  24  name "xs"
+00122:  24  getprop "Views"
+00127:  24  getprop "Btn"
+00132:  24  dup
+00133:  24  callprop "create"
+00138:  24  swap
+00139:  24  notearg
+00140:  24  string "Btn_CircleRedBack"
+00145:  24  notearg
+00146:  24  call 1
+00149:  24  setprop "m_closeBtn"
+00154:  24  pop
+00155:  25  this
+00156:  25  getprop "m_closeBtn"
+00161:  25  dup
+00162:  25  callprop "setOnClickCallBack"
+00167:  25  swap
+00168:  25  notearg
+00169:  25  this
+00170:  25  getprop "closeBtnCallback"
+00175:  25  dup
+00176:  25  callprop "bind"
+00181:  25  swap
+00182:  25  notearg
+00183:  25  this
+00184:  25  notearg
+00185:  25  call 1
+00188:  25  notearg
+00189:  25  call 1
+00192:  25  pop
+00193:  26  name "xs"
+00198:  26  getprop "Utils"
+00203:  26  getprop "Node"
+00208:  26  dup
+00209:  26  callprop "attachNodes"
+00214:  26  swap
+00215:  26  notearg
+00216:  26  this
+00217:  26  notearg
+00218:  26  this
+00219:  26  getprop "m_closeBtn"
+00224:  26  notearg
+00225:  26  newinit 1
+00230:  26  string "rt"
+00235:  26  initprop "desc"
+00240:  26  true
+00241:  26  initprop "sc"
+00246:  26  newinit 1
+00251:  26  int8 -55
+00253:  26  initprop "x"
+00258:  26  int8 -55
+00260:  26  initprop "y"
+00265:  26  endinit
+00266:  26  initprop "offset"
+00271:  26  endinit
+00272:  26  notearg
+00273:  26  call 3
+00276:  26  pop
+00277:  29  this
+00278:  29  name "xs"
+00283:  29  getprop "Views"
+00288:  29  getprop "PlayerInfoBannerSimpleView"
+00293:  29  dup
+00294:  29  callprop "create"
+00299:  29  swap
+00300:  29  notearg
+00301:  29  call 0
+00304:  29  setprop "m_infoBar"
+00309:  29  pop
+00310:  30  this
+00311:  30  getprop "m_infoBar"
+00316:  30  dup
+00317:  30  callprop "setAnchorPoint"
+00322:  30  swap
+00323:  30  notearg
+00324:  30  name "cc"
+00329:  30  dup
+00330:  30  callprop "p"
+00335:  30  swap
+00336:  30  notearg
+00337:  30  zero
+00338:  30  notearg
+00339:  30  one
+00340:  30  notearg
+00341:  30  call 2
+00344:  30  notearg
+00345:  30  call 1
+00348:  30  pop
+00349:  31  name "xs"
+00354:  31  getprop "Utils"
+00359:  31  getprop "Node"
+00364:  31  dup
+00365:  31  callprop "attachNodes"
+00370:  31  swap
+00371:  31  notearg
+00372:  31  this
+00373:  31  notearg
+00374:  31  this
+00375:  31  getprop "m_infoBar"
+00380:  31  notearg
+00381:  31  newinit 1
+00386:  32  string "lt"
+00391:  32  initprop "desc"
+00396:  33  true
+00397:  33  initprop "sc"
+00402:  33  endinit
+00403:  33  notearg
+00404:  33  call 3
+00407:  33  pop
+00408:  37  this
+00409:  37  name "xs"
+00414:  37  getprop "Views"
+00419:  37  getprop "TablePage"
+00424:  37  dup
+00425:  37  callprop "create"
+00430:  37  swap
+00431:  37  notearg
+00432:  37  name "cc"
+00437:  37  dup
+00438:  37  callprop "size"
+00443:  37  swap
+00444:  37  notearg
+00445:  37  getlocal 0
+00448:  37  getprop "width"
+00453:  37  name "xs"
+00458:  37  getprop "Views"
+00463:  37  getprop "MainMenuView"
+00468:  37  getprop "Width"
+00473:  37  sub
+00474:  37  notearg
+00475:  37  getlocal 0
+00478:  37  getprop "height"
+00483:  37  int8 50
+00485:  37  sub
+00486:  37  notearg
+00487:  37  call 2
+00490:  37  notearg
+00491:  37  call 1
+00494:  37  setprop "m_pageView"
+00499:  37  pop
+00500:  38  this
+00501:  38  getprop "m_pageView"
+00506:  38  dup
+00507:  38  callprop "setListener"
+00512:  38  swap
+00513:  38  notearg
+00514:  38  this
+00515:  38  notearg
+00516:  38  call 1
+00519:  38  pop
+00520:  39  this
+00521:  39  getprop "m_pageView"
+00526:  39  dup
+00527:  39  callprop "addPageWhitConstruct"
+00532:  39  swap
+00533:  39  notearg
+00534:  40  name "xs"
+00539:  40  getprop "Tools"
+00544:  40  getprop "String"
+00549:  40  dup
+00550:  40  callprop "createString"
+00555:  40  swap
+00556:  40  notearg
+00557:  40  string "interService_worship"
+00562:  40  notearg
+00563:  40  call 1
+00566:  40  notearg
+00567:  41  name "xs"
+00572:  41  getprop "Views"
+00577:  41  getprop "InterServiceWorshipView"
+00582:  41  notearg
+00583:  42  newinit 1
+00588:  42  getarg 0
+00591:  42  initprop "param"
+00596:  42  endinit
+00597:  42  notearg
+00598:  42  call 3
+00601:  42  pop
+00602:  44  name "xs"
+00607:  44  getprop "Utils"
+00612:  44  getprop "Node"
+00617:  44  dup
+00618:  44  callprop "attachNodes"
+00623:  44  swap
+00624:  44  notearg
+00625:  44  this
+00626:  44  notearg
+00627:  44  this
+00628:  44  getprop "m_pageView"
+00633:  44  notearg
+00634:  44  newinit 1
+00639:  45  string "lb"
+00644:  45  initprop "desc"
+00649:  46  true
+00650:  46  initprop "sc"
+00655:  46  endinit
+00656:  46  notearg
+00657:  46  call 3
+00660:  46  pop
+00661:  49  getarg 0
+00664:  49  getprop "local"
+00669:  49  ifeq 730 (+61)
+00674:  50  this
+00675:  50  getprop "m_pageView"
+00680:  50  dup
+00681:  50  callprop "setHintIcon"
+00686:  50  swap
+00687:  50  notearg
+00688:  50  newarray 1
+00692:  50  one
+00693:  50  initelem_array 0
+00697:  50  endinit
+00698:  50  notearg
+00699:  50  newarray 1
+00703:  50  name "xs"
+00708:  50  getprop "Constant_HintType_Pvp_LocalLadderWar_worship"
+00713:  50  initelem_array 0
+00717:  50  endinit
+00718:  50  notearg
+00719:  50  true
+00720:  50  notearg
+00721:  50  call 3
+00724:  50  pop
+00725:  50  goto 781 (+56)
+00730:  52  this
+00731:  52  getprop "m_pageView"
+00736:  52  dup
+00737:  52  callprop "setHintIcon"
+00742:  52  swap
+00743:  52  notearg
+00744:  52  newarray 1
+00748:  52  one
+00749:  52  initelem_array 0
+00753:  52  endinit
+00754:  52  notearg
+00755:  52  newarray 1
+00759:  52  name "xs"
+00764:  52  getprop "Constant_HintType_Pvp_LadderWar_worship"
+00769:  52  initelem_array 0
+00773:  52  endinit
+00774:  52  notearg
+00775:  52  true
+00776:  52  notearg
+00777:  52  call 3
+00780:  52  pop
+00781:  55  true
+00782:  55  return
+00783:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:12 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:57 ---
+loc   line  op
+----- ----  --
+main:
+00000:  58  this
+00001:  58  dup
+00002:  58  callprop "_super"
+00007:  58  swap
+00008:  58  notearg
+00009:  58  call 0
+00012:  58  pop
+00013:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:57 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:61 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  this
+00001:  62  dup
+00002:  62  callprop "_super"
+00007:  62  swap
+00008:  62  notearg
+00009:  62  call 0
+00012:  62  pop
+00013:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:61 ---
+;; function object[4] closeBtnCallback
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:65 ---
+loc   line  op
+----- ----  --
+main:
+00000:  66  name "xs"
+00005:  66  getprop "Scene"
+00010:  66  getprop "Mgr"
+00015:  66  dup
+00016:  66  callprop "gotoLastScene"
+00021:  66  swap
+00022:  66  notearg
+00023:  66  call 0
+00026:  66  pop
+00027:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:65 ---
+;; function object[5] setBaseTouchPriority
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:69 ---
+loc   line  op
+----- ----  --
+main:
+00000:  70  this
+00001:  70  getarg 0
+00004:  70  setprop "m_baseTouchPriority"
+00009:  70  pop
+00010:  72  this
+00011:  72  getprop "m_pageView"
+00016:  72  dup
+00017:  72  callprop "setBaseTouchPriority"
+00022:  72  swap
+00023:  72  notearg
+00024:  72  this
+00025:  72  getprop "m_baseTouchPriority"
+00030:  72  notearg
+00031:  72  call 1
+00034:  72  pop
+00035:  73  this
+00036:  73  getprop "m_closeBtn"
+00041:  73  dup
+00042:  73  callprop "setTouchPriority"
+00047:  73  swap
+00048:  73  notearg
+00049:  73  this
+00050:  73  getprop "m_baseTouchPriority"
+00055:  73  int8 100
+00057:  73  sub
+00058:  73  notearg
+00059:  73  call 1
+00062:  73  pop
+00063:  73  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:69 ---
+;; function object[6] create
+;; function metadata object[6] nargs=1 bindings=2
+;; arg[0] _data
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:77 ---
+loc   line  op
+----- ----  --
+main:
+00000:  78  name "xs"
+00005:  78  getprop "Scene"
+00010:  78  getprop "InterServiceWorshipScene"
+00015:  78  undefined
+00016:  78  notearg
+00017:  78  new 0
+00020:  78  setlocal 0
+00023:  78  pop
+00024:  79  getlocal 0
+00027:  79  and 51 (+24)
+00032:  79  pop
+00033:  79  getlocal 0
+00036:  79  dup
+00037:  79  callprop "init"
+00042:  79  swap
+00043:  79  notearg
+00044:  79  getarg 0
+00047:  79  notearg
+00048:  79  call 1
+00051:  79  ifeq 78 (+27)
+00056:  80  getlocal 0
+00059:  80  dup
+00060:  80  callprop "setBaseTouchPriority"
+00065:  80  swap
+00066:  80  notearg
+00067:  80  int8 -1
+00069:  80  notearg
+00070:  80  call 1
+00073:  80  pop
+00074:  81  getlocal 0
+00077:  81  return
+00078:  83  name "xs"
+00083:  83  dup
+00084:  83  callprop "assert"
+00089:  83  swap
+00090:  83  notearg
+00091:  83  false
+00092:  83  notearg
+00093:  83  string "xs.Scene.InterServiceWorshipScene.create error!"
+00098:  83  notearg
+00099:  83  call 2
+00102:  83  pop
+00103:  84  null
+00104:  84  return
+00105:  84  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceWorshipScene.js:77 ---

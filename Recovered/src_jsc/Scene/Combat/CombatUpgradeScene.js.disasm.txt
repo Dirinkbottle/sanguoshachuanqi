@@ -1,0 +1,3744 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Combat/CombatUpgradeScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=79 object[0]
+;; FUNCTION-MAP kind=lambda offset=89 object[1]
+;; FUNCTION-MAP kind=lambda offset=99 object[2]
+;; FUNCTION-MAP kind=lambda offset=109 object[3]
+;; FUNCTION-MAP kind=lambda offset=119 object[4]
+;; FUNCTION-MAP kind=lambda offset=129 object[5]
+;; FUNCTION-MAP kind=lambda offset=139 object[6]
+;; FUNCTION-MAP kind=lambda offset=149 object[7]
+;; FUNCTION-MAP kind=lambda offset=159 object[8]
+;; FUNCTION-MAP kind=lambda offset=169 object[9]
+;; FUNCTION-MAP kind=lambda offset=179 object[10]
+;; FUNCTION-MAP kind=lambda offset=189 object[11]
+;; FUNCTION-MAP kind=lambda offset=199 object[12]
+;; FUNCTION-MAP kind=lambda offset=209 object[13]
+;; FUNCTION-MAP kind=lambda offset=219 object[14]
+;; FUNCTION-MAP kind=lambda offset=229 object[15]
+;; FUNCTION-MAP kind=lambda offset=239 object[16]
+;; FUNCTION-MAP kind=lambda offset=249 object[17]
+;; FUNCTION-MAP kind=lambda offset=259 object[18]
+;; FUNCTION-MAP kind=lambda offset=269 object[19]
+;; FUNCTION-MAP kind=lambda offset=279 object[20]
+;; FUNCTION-MAP kind=lambda offset=633 object[21]
+;; FUNCTION-MAP kind=lambda offset=677 object[22]
+;; FUNCTION-MAP kind=lambda offset=687 object[23]
+;; FUNCTION-MAP kind=lambda offset=723 object[24]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Views"
+00010:   9  int8 100
+00012:   9  setprop "CombatUpgradeView_Notify_GeneralSelectChange"
+00017:   9  popv
+00018:  10  name "xs"
+00023:  10  getprop "Views"
+00028:  10  int8 101
+00030:  10  setprop "CombatUpgradeView_Notify_SoulSelectChange"
+00035:  10  popv
+00036:  12  name "xs"
+00041:  12  getprop "Views"
+00046:  12  name "cc"
+00051:  12  getprop "Layer"
+00056:  12  dup
+00057:  12  callprop "extend"
+00062:  12  swap
+00063:  12  notearg
+00064:  12  newinit 1
+00069:  14  string "CombatUpgradeView"
+00074:  14  initprop "name"
+00079:  16  lambda (function () {
+    [sourceless code]
+})
+00084:  16  initprop "ctor"
+00089:  21  lambda (function () {
+    [sourceless code]
+})
+00094:  21  initprop "init"
+00099: 105  lambda (function () {
+    [sourceless code]
+})
+00104: 105  initprop "onEnter"
+00109: 117  lambda (function () {
+    [sourceless code]
+})
+00114: 117  initprop "onExit"
+00119: 127  lambda (function () {
+    [sourceless code]
+})
+00124: 127  initprop "getSelGeneralExp"
+00129: 137  lambda (function () {
+    [sourceless code]
+})
+00134: 137  initprop "getSelSoulExp"
+00139: 148  lambda (function () {
+    [sourceless code]
+})
+00144: 148  initprop "onGeneralOrSoulSelect"
+00149: 155  lambda (function () {
+    [sourceless code]
+})
+00154: 155  initprop "updateUpgradeCard_General"
+00159: 172  lambda (function () {
+    [sourceless code]
+})
+00164: 172  initprop "updateUpgradeCard_Soul"
+00169: 190  lambda (function () {
+    [sourceless code]
+})
+00174: 190  initprop "updateCombatInfo"
+00179: 196  lambda (function () {
+    [sourceless code]
+})
+00184: 196  initprop "getMaxNeedNum"
+00189: 209  lambda (function () {
+    [sourceless code]
+})
+00194: 209  initprop "isToMaxLevel"
+00199: 218  lambda (function () {
+    [sourceless code]
+})
+00204: 218  initprop "onLongTimeTouch"
+00209: 233  lambda (function () {
+    [sourceless code]
+})
+00214: 233  initprop "onBtnClicked"
+00219: 278  lambda (function () {
+    [sourceless code]
+})
+00224: 278  initprop "showConfirmDialog"
+00229: 297  lambda (function () {
+    [sourceless code]
+})
+00234: 297  initprop "confirmUpgrade"
+00239: 341  lambda (function () {
+    [sourceless code]
+})
+00244: 341  initprop "selectAll"
+00249: 373  lambda (function () {
+    [sourceless code]
+})
+00254: 373  initprop "selectAllOnce"
+00259: 402  lambda (function () {
+    [sourceless code]
+})
+00264: 402  initprop "clearSelect"
+00269: 419  lambda (function () {
+    [sourceless code]
+})
+00274: 419  initprop "getNotify"
+00279: 423  lambda (function () {
+    [sourceless code]
+})
+00284: 423  initprop "setBaseTouchPriority"
+00289: 433  newinit 1
+00294: 435  newarray 5
+00298: 436  newinit 1
+00303: 436  int8 11
+00305: 436  initprop "tag"
+00310: 436  string "ls"
+00315: 436  initprop "type"
+00320: 436  string "m_effectVal"
+00325: 436  initprop "name"
+00330: 436  string "LS_mainUI4"
+00335: 436  initprop "id"
+00340: 436  endinit
+00341: 436  initelem_array 0
+00345: 437  newinit 1
+00350: 437  int8 12
+00352: 437  initprop "tag"
+00357: 437  string "btn"
+00362: 437  initprop "type"
+00367: 437  string "m_btn_allCopper"
+00372: 437  initprop "name"
+00377: 437  string "Btn_All_Copper"
+00382: 437  initprop "id"
+00387: 437  endinit
+00388: 437  initelem_array 1
+00392: 438  newinit 1
+00397: 438  int8 13
+00399: 438  initprop "tag"
+00404: 438  string "btn"
+00409: 438  initprop "type"
+00414: 438  string "m_btn_allSilver"
+00419: 438  initprop "name"
+00424: 438  string "Btn_All_Silver"
+00429: 438  initprop "id"
+00434: 438  endinit
+00435: 438  initelem_array 2
+00439: 439  newinit 1
+00444: 439  int8 14
+00446: 439  initprop "tag"
+00451: 439  string "btn"
+00456: 439  initprop "type"
+00461: 439  string "m_btn_allGold"
+00466: 439  initprop "name"
+00471: 439  string "Btn_All_Gold"
+00476: 439  initprop "id"
+00481: 439  endinit
+00482: 439  initelem_array 3
+00486: 441  newinit 1
+00491: 441  int8 15
+00493: 441  initprop "tag"
+00498: 441  string "btn"
+00503: 441  initprop "type"
+00508: 441  string "m_btn_confirm"
+00513: 441  initprop "name"
+00518: 441  string "Btn_Confirm"
+00523: 441  initprop "id"
+00528: 441  endinit
+00529: 441  initelem_array 4
+00533: 441  endinit
+00534: 441  initprop "ccbCfg"
+00539: 441  endinit
+00540: 441  initprop "cfg"
+00545: 441  endinit
+00546: 441  notearg
+00547: 441  call 1
+00550: 441  setprop "CombatUpgradeView"
+00555: 441  popv
+00556: 446  name "xs"
+00561: 446  getprop "Views"
+00566: 446  getprop "CombatUpgradeView"
+00571: 446  newinit 1
+00576: 447  int8 13
+00578: 447  initprop "levelValue_tag"
+00583: 448  int8 14
+00585: 448  initprop "buffStr_tag"
+00590: 449  int8 15
+00592: 449  initprop "buffValue_tag"
+00597: 450  int8 17
+00599: 450  initprop "buffStr2_tag"
+00604: 451  int8 18
+00606: 451  initprop "buffValue2_tag"
+00611: 451  endinit
+00612: 451  setprop "InfoBarCfg"
+00617: 451  popv
+00618: 454  name "xs"
+00623: 454  getprop "Views"
+00628: 454  getprop "CombatUpgradeView"
+00633: 454  lambda (function () {
+    [sourceless code]
+})
+00638: 454  setprop "create"
+00643: 454  popv
+00644: 464  name "xs"
+00649: 464  getprop "Scene"
+00654: 464  name "cc"
+00659: 464  getprop "Scene"
+00664: 464  dup
+00665: 464  callprop "extend"
+00670: 464  swap
+00671: 464  notearg
+00672: 464  newinit 1
+00677: 465  lambda (function () {
+    [sourceless code]
+})
+00682: 465  initprop "ctor"
+00687: 470  lambda (function () {
+    [sourceless code]
+})
+00692: 470  initprop "init"
+00697: 470  endinit
+00698: 470  notearg
+00699: 470  call 1
+00702: 470  setprop "CombatUpgradeScene"
+00707: 470  popv
+00708: 495  name "xs"
+00713: 495  getprop "Scene"
+00718: 495  getprop "CombatUpgradeScene"
+00723: 495  lambda (function () {
+    [sourceless code]
+})
+00728: 495  setprop "create"
+00733: 495  popv
+00734: 504  name "xs"
+00739: 504  getprop "Scene"
+00744: 504  getprop "Mgr"
+00749: 504  dup
+00750: 504  callprop "registerScene"
+00755: 504  swap
+00756: 504  notearg
+00757: 504  string "CombatUpgradeScene"
+00762: 504  notearg
+00763: 504  newinit 1
+00768: 505  name "xs"
+00773: 505  getprop "Scene"
+00778: 505  getprop "CombatUpgradeScene"
+00783: 505  initprop "class"
+00788: 506  newarray 1
+00792: 506  string "CombatScene"
+00797: 506  initelem_array 0
+00801: 506  endinit
+00802: 506  initprop "area"
+00807: 507  name "xs"
+00812: 507  getprop "Constant_SceneType_General"
+00817: 507  initprop "type"
+00822: 507  endinit
+00823: 507  notearg
+00824: 507  call 2
+00827: 507  popv
+00828: 508  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  dup
+00002:  17  callprop "_super"
+00007:  17  swap
+00008:  17  notearg
+00009:  17  call 0
+00012:  17  pop
+00013:  18  name "cc"
+00018:  18  dup
+00019:  18  callprop "associateWithNative"
+00024:  18  swap
+00025:  18  notearg
+00026:  18  this
+00027:  18  notearg
+00028:  18  name "cc"
+00033:  18  getprop "Layer"
+00038:  18  notearg
+00039:  18  call 2
+00042:  18  pop
+00043:  18  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:16 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=6
+;; arg[0] combatInfo
+;; local[0] visibleSize
+;; local[1] offset_x
+;; local[2] controlBar
+;; local[3] offset_y
+;; local[4] combatIcon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  this
+00001:  22  dup
+00002:  22  callprop "_super"
+00007:  22  swap
+00008:  22  notearg
+00009:  22  call 0
+00012:  22  not
+00013:  22  ifeq 20 (+7)
+00018:  23  false
+00019:  23  return
+00020:  25  name "cc"
+00025:  25  getprop "Director"
+00030:  25  dup
+00031:  25  callprop "getInstance"
+00036:  25  swap
+00037:  25  notearg
+00038:  25  call 0
+00041:  25  dup
+00042:  25  callprop "getVisibleSize"
+00047:  25  swap
+00048:  25  notearg
+00049:  25  call 0
+00052:  25  setlocal 0
+00055:  25  pop
+00056:  27  this
+00057:  27  name "xs"
+00062:  27  getprop "Profile"
+00067:  27  getprop "GameData"
+00072:  27  getprop "Mgr"
+00077:  27  dup
+00078:  27  callprop "getInstance"
+00083:  27  swap
+00084:  27  notearg
+00085:  27  call 0
+00088:  27  getprop "Combat"
+00093:  27  dup
+00094:  27  callprop "getCombatByType"
+00099:  27  swap
+00100:  27  notearg
+00101:  27  getarg 0
+00104:  27  dup
+00105:  27  callprop "getType"
+00110:  27  swap
+00111:  27  notearg
+00112:  27  call 0
+00115:  27  notearg
+00116:  27  call 1
+00119:  27  setprop "combatInfo"
+00124:  27  pop
+00125:  30  this
+00126:  30  name "xs"
+00131:  30  getprop "Views"
+00136:  30  getprop "CombatUpgradeCard"
+00141:  30  dup
+00142:  30  callprop "create"
+00147:  30  swap
+00148:  30  notearg
+00149:  30  this
+00150:  30  getprop "combatInfo"
+00155:  30  notearg
+00156:  30  call 1
+00159:  30  setprop "upgradeCard"
+00164:  30  pop
+00165:  31  this
+00166:  31  getprop "upgradeCard"
+00171:  31  dup
+00172:  31  callprop "setAnchorPoint"
+00177:  31  swap
+00178:  31  notearg
+00179:  31  name "cc"
+00184:  31  dup
+00185:  31  callprop "p"
+00190:  31  swap
+00191:  31  notearg
+00192:  31  zero
+00193:  31  notearg
+00194:  31  double 0.5
+00199:  31  notearg
+00200:  31  call 2
+00203:  31  notearg
+00204:  31  call 1
+00207:  31  pop
+00208:  32  this
+00209:  32  getprop "upgradeCard"
+00214:  32  dup
+00215:  32  callprop "setCurPercentage"
+00220:  32  swap
+00221:  32  notearg
+00222:  32  this
+00223:  32  getprop "combatInfo"
+00228:  32  dup
+00229:  32  callprop "getCurLevelExpPer"
+00234:  32  swap
+00235:  32  notearg
+00236:  32  call 0
+00239:  32  notearg
+00240:  32  call 1
+00243:  32  pop
+00244:  36  this
+00245:  36  name "xs"
+00250:  36  getprop "Profile"
+00255:  36  getprop "GameData"
+00260:  36  getprop "Mgr"
+00265:  36  dup
+00266:  36  callprop "getInstance"
+00271:  36  swap
+00272:  36  notearg
+00273:  36  call 0
+00276:  36  getprop "CardShowData"
+00281:  36  dup
+00282:  36  callprop "getGeneralShowData"
+00287:  36  swap
+00288:  36  notearg
+00289:  36  false
+00290:  36  notearg
+00291:  36  call 1
+00294:  36  setprop "generals"
+00299:  36  pop
+00300:  37  this
+00301:  37  name "xs"
+00306:  37  getprop "Profile"
+00311:  37  getprop "GameData"
+00316:  37  getprop "Mgr"
+00321:  37  dup
+00322:  37  callprop "getInstance"
+00327:  37  swap
+00328:  37  notearg
+00329:  37  call 0
+00332:  37  getprop "CardShowData"
+00337:  37  dup
+00338:  37  callprop "getSoulShowData"
+00343:  37  swap
+00344:  37  notearg
+00345:  37  call 0
+00348:  37  setprop "soulsClone"
+00353:  37  pop
+00354:  39  this
+00355:  39  name "xs"
+00360:  39  getprop "Views"
+00365:  39  getprop "MiniTablePage"
+00370:  39  dup
+00371:  39  callprop "create"
+00376:  39  swap
+00377:  39  notearg
+00378:  39  call 0
+00381:  39  setprop "miniPageView"
+00386:  39  pop
+00387:  40  getlocal 0
+00390:  40  getprop "width"
+00395:  40  this
+00396:  40  getprop "upgradeCard"
+00401:  40  dup
+00402:  40  callprop "getContentSize"
+00407:  40  swap
+00408:  40  notearg
+00409:  40  call 0
+00412:  40  getprop "width"
+00417:  40  sub
+00418:  40  name "xs"
+00423:  40  getprop "Views"
+00428:  40  getprop "MainMenuView"
+00433:  40  getprop "Width"
+00438:  40  sub
+00439:  40  int8 2
+00441:  40  div
+00442:  41  this
+00443:  41  getprop "upgradeCard"
+00448:  41  dup
+00449:  41  callprop "getContentSize"
+00454:  41  swap
+00455:  41  notearg
+00456:  41  call 0
+00459:  41  getprop "width"
+00464:  41  add
+00465:  41  setlocal 1
+00468:  41  pop
+00469:  42  this
+00470:  42  name "xs"
+00475:  42  getprop "Views"
+00480:  42  getprop "Table"
+00485:  42  getprop "CombatTableView"
+00490:  42  dup
+00491:  42  callprop "create"
+00496:  42  swap
+00497:  42  notearg
+00498:  42  name "xs"
+00503:  42  getprop "Views"
+00508:  42  getprop "Table"
+00513:  42  getprop "CombatTableView_General"
+00518:  42  notearg
+00519:  42  this
+00520:  42  getprop "generals"
+00525:  42  notearg
+00526:  42  call 2
+00529:  42  setprop "generalTableView"
+00534:  42  pop
+00535:  43  this
+00536:  43  getprop "generalTableView"
+00541:  43  dup
+00542:  43  callprop "setListener"
+00547:  43  swap
+00548:  43  notearg
+00549:  43  this
+00550:  43  notearg
+00551:  43  call 1
+00554:  43  pop
+00555:  44  this
+00556:  44  name "xs"
+00561:  44  getprop "Views"
+00566:  44  getprop "Table"
+00571:  44  getprop "CombatTableView"
+00576:  44  dup
+00577:  44  callprop "create"
+00582:  44  swap
+00583:  44  notearg
+00584:  44  name "xs"
+00589:  44  getprop "Views"
+00594:  44  getprop "Table"
+00599:  44  getprop "CombatTableView_Soul"
+00604:  44  notearg
+00605:  44  this
+00606:  44  getprop "soulsClone"
+00611:  44  notearg
+00612:  44  call 2
+00615:  44  setprop "soulTableView"
+00620:  44  pop
+00621:  45  this
+00622:  45  getprop "soulTableView"
+00627:  45  dup
+00628:  45  callprop "setListener"
+00633:  45  swap
+00634:  45  notearg
+00635:  45  this
+00636:  45  notearg
+00637:  45  call 1
+00640:  45  pop
+00641:  47  this
+00642:  47  getprop "miniPageView"
+00647:  47  dup
+00648:  47  callprop "addPage"
+00653:  47  swap
+00654:  47  notearg
+00655:  47  name "xs"
+00660:  47  getprop "Tools"
+00665:  47  getprop "String"
+00670:  47  dup
+00671:  47  callprop "createString"
+00676:  47  swap
+00677:  47  notearg
+00678:  47  string "soul"
+00683:  47  notearg
+00684:  47  call 1
+00687:  47  notearg
+00688:  47  this
+00689:  47  getprop "soulTableView"
+00694:  47  notearg
+00695:  47  call 2
+00698:  47  pop
+00699:  48  this
+00700:  48  getprop "miniPageView"
+00705:  48  dup
+00706:  48  callprop "addPage"
+00711:  48  swap
+00712:  48  notearg
+00713:  48  name "xs"
+00718:  48  getprop "Tools"
+00723:  48  getprop "String"
+00728:  48  dup
+00729:  48  callprop "createString"
+00734:  48  swap
+00735:  48  notearg
+00736:  48  string "general"
+00741:  48  notearg
+00742:  48  call 1
+00745:  48  notearg
+00746:  48  this
+00747:  48  getprop "generalTableView"
+00752:  48  notearg
+00753:  48  call 2
+00756:  48  pop
+00757:  49  name "xs"
+00762:  49  getprop "Utils"
+00767:  49  getprop "Node"
+00772:  49  dup
+00773:  49  callprop "attachNodes"
+00778:  49  swap
+00779:  49  notearg
+00780:  49  this
+00781:  49  notearg
+00782:  49  this
+00783:  49  getprop "miniPageView"
+00788:  49  notearg
+00789:  49  newinit 1
+00794:  49  string "cl"
+00799:  49  initprop "desc"
+00804:  49  name "cc"
+00809:  49  dup
+00810:  49  callprop "p"
+00815:  49  swap
+00816:  49  notearg
+00817:  49  getlocal 1
+00820:  49  notearg
+00821:  49  zero
+00822:  49  notearg
+00823:  49  call 2
+00826:  49  initprop "offset"
+00831:  49  true
+00832:  49  initprop "sc"
+00837:  49  endinit
+00838:  49  notearg
+00839:  49  call 3
+00842:  49  pop
+00843:  50  name "xs"
+00848:  50  getprop "Utils"
+00853:  50  getprop "Node"
+00858:  50  dup
+00859:  50  callprop "attachNodes"
+00864:  50  swap
+00865:  50  notearg
+00866:  50  this
+00867:  50  notearg
+00868:  50  this
+00869:  50  getprop "upgradeCard"
+00874:  50  notearg
+00875:  50  newinit 1
+00880:  50  string "cl"
+00885:  50  initprop "desc"
+00890:  50  name "cc"
+00895:  50  dup
+00896:  50  callprop "p"
+00901:  50  swap
+00902:  50  notearg
+00903:  50  this
+00904:  50  getprop "miniPageView"
+00909:  50  dup
+00910:  50  callprop "getPositionX"
+00915:  50  swap
+00916:  50  notearg
+00917:  50  call 0
+00920:  51  this
+00921:  51  getprop "miniPageView"
+00926:  51  dup
+00927:  51  callprop "getContentSize"
+00932:  51  swap
+00933:  51  notearg
+00934:  51  call 0
+00937:  51  getprop "width"
+00942:  51  sub
+00943:  51  this
+00944:  51  getprop "upgradeCard"
+00949:  51  dup
+00950:  51  callprop "getContentSize"
+00955:  51  swap
+00956:  51  notearg
+00957:  51  call 0
+00960:  51  getprop "width"
+00965:  51  int8 2
+00967:  51  div
+00968:  51  sub
+00969:  51  int8 40
+00971:  51  add
+00972:  51  notearg
+00973:  51  zero
+00974:  51  notearg
+00975:  51  call 2
+00978:  51  initprop "offset"
+00983:  51  true
+00984:  51  initprop "sc"
+00989:  51  endinit
+00990:  51  notearg
+00991:  51  call 3
+00994:  51  pop
+00995:  54  this
+00996:  54  name "xs"
+01001:  54  getprop "Views"
+01006:  54  getprop "EventLayer"
+01011:  54  dup
+01012:  54  callprop "create"
+01017:  54  swap
+01018:  54  notearg
+01019:  54  call 0
+01022:  54  setprop "m_listBg"
+01027:  54  pop
+01028:  55  this
+01029:  55  getprop "m_listBg"
+01034:  55  dup
+01035:  55  callprop "setSize"
+01040:  55  swap
+01041:  55  notearg
+01042:  55  name "cc"
+01047:  55  dup
+01048:  55  callprop "size"
+01053:  55  swap
+01054:  55  notearg
+01055:  55  uint16 413
+01058:  55  notearg
+01059:  55  int8 79
+01061:  55  notearg
+01062:  55  call 2
+01065:  55  notearg
+01066:  55  call 1
+01069:  55  pop
+01070:  58  name "xs"
+01075:  58  getprop "ccb_reader"
+01080:  58  dup
+01081:  58  callprop "load"
+01086:  58  swap
+01087:  58  notearg
+01088:  58  string "ccb3/0_7_13_BottomBar.ccbi"
+01093:  58  notearg
+01094:  58  this
+01095:  58  notearg
+01096:  58  call 2
+01099:  58  setlocal 2
+01102:  58  pop
+01103:  59  getlocal 2
+01106:  59  dup
+01107:  59  callprop "setContentSize"
+01112:  59  swap
+01113:  59  notearg
+01114:  59  name "cc"
+01119:  59  dup
+01120:  59  callprop "size"
+01125:  59  swap
+01126:  59  notearg
+01127:  59  uint16 827
+01130:  59  notearg
+01131:  59  int8 79
+01133:  59  notearg
+01134:  59  call 2
+01137:  59  notearg
+01138:  59  call 1
+01141:  59  pop
+01142:  60  getlocal 2
+01145:  60  dup
+01146:  60  callprop "setAnchorPoint"
+01151:  60  swap
+01152:  60  notearg
+01153:  60  name "cc"
+01158:  60  dup
+01159:  60  callprop "p"
+01164:  60  swap
+01165:  60  notearg
+01166:  60  double 0.5
+01171:  60  notearg
+01172:  60  zero
+01173:  60  notearg
+01174:  60  call 2
+01177:  60  notearg
+01178:  60  call 1
+01181:  60  pop
+01182:  61  double 0.03125
+01187:  61  getlocal 0
+01190:  61  getprop "height"
+01195:  61  mul
+01196:  61  setlocal 3
+01199:  61  pop
+01200:  63  name "xs"
+01205:  63  getprop "Utils"
+01210:  63  getprop "Node"
+01215:  63  dup
+01216:  63  callprop "attachNodes"
+01221:  63  swap
+01222:  63  notearg
+01223:  63  this
+01224:  63  getprop "m_listBg"
+01229:  63  notearg
+01230:  63  getlocal 2
+01233:  63  notearg
+01234:  63  newinit 1
+01239:  63  string "lb"
+01244:  63  initprop "desc"
+01249:  63  endinit
+01250:  63  notearg
+01251:  63  call 3
+01254:  63  pop
+01255:  65  name "xs"
+01260:  65  getprop "Utils"
+01265:  65  getprop "Node"
+01270:  65  dup
+01271:  65  callprop "attachNodes"
+01276:  65  swap
+01277:  65  notearg
+01278:  65  this
+01279:  65  notearg
+01280:  65  this
+01281:  65  getprop "m_listBg"
+01286:  65  notearg
+01287:  65  newinit 1
+01292:  65  string "lb"
+01297:  65  initprop "desc"
+01302:  66  name "cc"
+01307:  66  dup
+01308:  66  callprop "p"
+01313:  66  swap
+01314:  66  notearg
+01315:  66  getlocal 0
+01318:  66  getprop "width"
+01323:  66  name "xs"
+01328:  66  getprop "Views"
+01333:  66  getprop "MainMenuView"
+01338:  66  getprop "Width"
+01343:  66  sub
+01344:  66  int8 2
+01346:  66  div
+01347:  66  notearg
+01348:  66  getlocal 3
+01351:  66  notearg
+01352:  66  call 2
+01355:  66  initprop "offset"
+01360:  66  true
+01361:  66  initprop "sc"
+01366:  66  endinit
+01367:  66  notearg
+01368:  66  call 3
+01371:  66  pop
+01372:  68  this
+01373:  68  null
+01374:  68  setprop "m_effectVal"
+01379:  68  pop
+01380:  69  this
+01381:  69  null
+01382:  69  setprop "m_btn_allGold"
+01387:  69  pop
+01388:  70  this
+01389:  70  null
+01390:  70  setprop "m_btn_allSilver"
+01395:  70  pop
+01396:  71  this
+01397:  71  null
+01398:  71  setprop "m_btn_allCopper"
+01403:  71  pop
+01404:  73  this
+01405:  73  null
+01406:  73  setprop "m_btn_confirm"
+01411:  73  pop
+01412:  75  name "xs"
+01417:  75  getprop "Utils"
+01422:  75  getprop "UI"
+01427:  75  dup
+01428:  75  callprop "replaceCcbByCfg"
+01433:  75  swap
+01434:  75  notearg
+01435:  75  getlocal 2
+01438:  75  notearg
+01439:  75  this
+01440:  75  getprop "cfg"
+01445:  75  getprop "ccbCfg"
+01450:  75  notearg
+01451:  75  this
+01452:  75  notearg
+01453:  75  call 3
+01456:  75  pop
+01457:  77  this
+01458:  77  getlocal 2
+01461:  77  dup
+01462:  77  callprop "getChildByTag"
+01467:  77  swap
+01468:  77  notearg
+01469:  77  int8 10
+01471:  77  notearg
+01472:  77  call 1
+01475:  77  setprop "controlBar_icon"
+01480:  77  pop
+01481:  78  this
+01482:  78  getprop "combatInfo"
+01487:  78  dup
+01488:  78  callprop "createTypeIcon"
+01493:  78  swap
+01494:  78  notearg
+01495:  78  call 0
+01498:  78  setlocal 4
+01501:  78  pop
+01502:  79  getlocal 4
+01505:  79  dup
+01506:  79  callprop "setPosition"
+01511:  79  swap
+01512:  79  notearg
+01513:  79  this
+01514:  79  getprop "controlBar_icon"
+01519:  79  dup
+01520:  79  callprop "getPosition"
+01525:  79  swap
+01526:  79  notearg
+01527:  79  call 0
+01530:  79  notearg
+01531:  79  call 1
+01534:  79  pop
+01535:  80  this
+01536:  80  getprop "controlBar_icon"
+01541:  80  dup
+01542:  80  callprop "getParent"
+01547:  80  swap
+01548:  80  notearg
+01549:  80  call 0
+01552:  80  dup
+01553:  80  callprop "addChild"
+01558:  80  swap
+01559:  80  notearg
+01560:  80  getlocal 4
+01563:  80  notearg
+01564:  80  call 1
+01567:  80  pop
+01568:  81  this
+01569:  81  getprop "controlBar_icon"
+01574:  81  dup
+01575:  81  callprop "removeFromParent"
+01580:  81  swap
+01581:  81  notearg
+01582:  81  true
+01583:  81  notearg
+01584:  81  call 1
+01587:  81  pop
+01588:  82  this
+01589:  82  getlocal 4
+01592:  82  setprop "controlBar_icon"
+01597:  82  pop
+01598:  84  this
+01599:  84  getprop "m_effectVal"
+01604:  84  dup
+01605:  84  callprop "setString"
+01610:  84  swap
+01611:  84  notearg
+01612:  84  string "+"
+01617:  84  this
+01618:  84  getprop "combatInfo"
+01623:  84  dup
+01624:  84  callprop "getNextLevelExtraBuff"
+01629:  84  swap
+01630:  84  notearg
+01631:  84  call 0
+01634:  84  add
+01635:  84  notearg
+01636:  84  call 1
+01639:  84  pop
+01640:  86  this
+01641:  86  getprop "m_btn_allGold"
+01646:  86  dup
+01647:  86  callprop "setOnClickCallBack"
+01652:  86  swap
+01653:  86  notearg
+01654:  86  this
+01655:  86  getprop "onBtnClicked"
+01660:  86  dup
+01661:  86  callprop "bind"
+01666:  86  swap
+01667:  86  notearg
+01668:  86  this
+01669:  86  notearg
+01670:  86  call 1
+01673:  86  notearg
+01674:  86  call 1
+01677:  86  pop
+01678:  88  this
+01679:  88  getprop "m_btn_allSilver"
+01684:  88  dup
+01685:  88  callprop "setOnClickCallBack"
+01690:  88  swap
+01691:  88  notearg
+01692:  88  this
+01693:  88  getprop "onBtnClicked"
+01698:  88  dup
+01699:  88  callprop "bind"
+01704:  88  swap
+01705:  88  notearg
+01706:  88  this
+01707:  88  notearg
+01708:  88  call 1
+01711:  88  notearg
+01712:  88  call 1
+01715:  88  pop
+01716:  90  this
+01717:  90  getprop "m_btn_allCopper"
+01722:  90  dup
+01723:  90  callprop "setOnClickCallBack"
+01728:  90  swap
+01729:  90  notearg
+01730:  90  this
+01731:  90  getprop "onBtnClicked"
+01736:  90  dup
+01737:  90  callprop "bind"
+01742:  90  swap
+01743:  90  notearg
+01744:  90  this
+01745:  90  notearg
+01746:  90  call 1
+01749:  90  notearg
+01750:  90  call 1
+01753:  90  pop
+01754:  92  this
+01755:  92  getprop "m_btn_allGold"
+01760:  92  dup
+01761:  92  callprop "setLongTimeTouchCallBack"
+01766:  92  swap
+01767:  92  notearg
+01768:  92  this
+01769:  92  getprop "onLongTimeTouch"
+01774:  92  dup
+01775:  92  callprop "bind"
+01780:  92  swap
+01781:  92  notearg
+01782:  92  this
+01783:  92  notearg
+01784:  92  call 1
+01787:  92  notearg
+01788:  92  call 1
+01791:  92  pop
+01792:  94  this
+01793:  94  getprop "m_btn_allSilver"
+01798:  94  dup
+01799:  94  callprop "setLongTimeTouchCallBack"
+01804:  94  swap
+01805:  94  notearg
+01806:  94  this
+01807:  94  getprop "onLongTimeTouch"
+01812:  94  dup
+01813:  94  callprop "bind"
+01818:  94  swap
+01819:  94  notearg
+01820:  94  this
+01821:  94  notearg
+01822:  94  call 1
+01825:  94  notearg
+01826:  94  call 1
+01829:  94  pop
+01830:  96  this
+01831:  96  getprop "m_btn_allCopper"
+01836:  96  dup
+01837:  96  callprop "setLongTimeTouchCallBack"
+01842:  96  swap
+01843:  96  notearg
+01844:  96  this
+01845:  96  getprop "onLongTimeTouch"
+01850:  96  dup
+01851:  96  callprop "bind"
+01856:  96  swap
+01857:  96  notearg
+01858:  96  this
+01859:  96  notearg
+01860:  96  call 1
+01863:  96  notearg
+01864:  96  call 1
+01867:  96  pop
+01868: 100  this
+01869: 100  getprop "m_btn_confirm"
+01874: 100  dup
+01875: 100  callprop "setOnClickCallBack"
+01880: 100  swap
+01881: 100  notearg
+01882: 100  this
+01883: 100  getprop "onBtnClicked"
+01888: 100  dup
+01889: 100  callprop "bind"
+01894: 100  swap
+01895: 100  notearg
+01896: 100  this
+01897: 100  notearg
+01898: 100  call 1
+01901: 100  notearg
+01902: 100  call 1
+01905: 100  pop
+01906: 102  true
+01907: 102  return
+01908: 102  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:21 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:105 ---
+loc   line  op
+----- ----  --
+main:
+00000: 106  this
+00001: 106  dup
+00002: 106  callprop "_super"
+00007: 106  swap
+00008: 106  notearg
+00009: 106  call 0
+00012: 106  pop
+00013: 107  name "xs"
+00018: 107  getprop "Utils"
+00023: 107  getprop "Notify"
+00028: 107  dup
+00029: 107  callprop "addObserver"
+00034: 107  swap
+00035: 107  notearg
+00036: 107  this
+00037: 107  notearg
+00038: 107  this
+00039: 107  getprop "updateUpgradeCard_General"
+00044: 107  notearg
+00045: 107  name "xs"
+00050: 107  getprop "Constant_Notify_ModelChange_General"
+00055: 107  notearg
+00056: 107  call 3
+00059: 107  pop
+00060: 108  name "xs"
+00065: 108  getprop "Utils"
+00070: 108  getprop "Notify"
+00075: 108  dup
+00076: 108  callprop "addObserver"
+00081: 108  swap
+00082: 108  notearg
+00083: 108  this
+00084: 108  notearg
+00085: 108  this
+00086: 108  getprop "updateUpgradeCard_Soul"
+00091: 108  notearg
+00092: 108  name "xs"
+00097: 108  getprop "Constant_Notify_ModelChange_GeneralSoul"
+00102: 108  notearg
+00103: 108  call 3
+00106: 108  pop
+00107: 109  name "xs"
+00112: 109  getprop "Utils"
+00117: 109  getprop "Notify"
+00122: 109  dup
+00123: 109  callprop "addObserver"
+00128: 109  swap
+00129: 109  notearg
+00130: 109  this
+00131: 109  notearg
+00132: 109  this
+00133: 109  getprop "updateCombatInfo"
+00138: 109  notearg
+00139: 109  name "xs"
+00144: 109  getprop "Constant_Notify_ModelChange_Combat"
+00149: 109  notearg
+00150: 109  call 3
+00153: 109  pop
+00154: 112  this
+00155: 112  name "xs"
+00160: 112  getprop "Profile"
+00165: 112  getprop "GameData"
+00170: 112  getprop "Mgr"
+00175: 112  dup
+00176: 112  callprop "getInstance"
+00181: 112  swap
+00182: 112  notearg
+00183: 112  call 0
+00186: 112  getprop "Combat"
+00191: 112  dup
+00192: 112  callprop "getNotify"
+00197: 112  swap
+00198: 112  notearg
+00199: 112  call 0
+00202: 112  setprop "notify"
+00207: 112  pop
+00208: 113  this
+00209: 113  getprop "notify"
+00214: 113  dup
+00215: 113  callprop "addObserver"
+00220: 113  swap
+00221: 113  notearg
+00222: 113  this
+00223: 113  notearg
+00224: 113  this
+00225: 113  getprop "onGeneralOrSoulSelect"
+00230: 113  notearg
+00231: 113  name "xs"
+00236: 113  getprop "Views"
+00241: 113  getprop "CombatUpgradeView_Notify_GeneralSelectChange"
+00246: 113  notearg
+00247: 113  call 3
+00250: 113  pop
+00251: 114  this
+00252: 114  getprop "notify"
+00257: 114  dup
+00258: 114  callprop "addObserver"
+00263: 114  swap
+00264: 114  notearg
+00265: 114  this
+00266: 114  notearg
+00267: 114  this
+00268: 114  getprop "onGeneralOrSoulSelect"
+00273: 114  notearg
+00274: 114  name "xs"
+00279: 114  getprop "Views"
+00284: 114  getprop "CombatUpgradeView_Notify_SoulSelectChange"
+00289: 114  notearg
+00290: 114  call 3
+00293: 114  pop
+00294: 114  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:105 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:117 ---
+loc   line  op
+----- ----  --
+main:
+00000: 118  this
+00001: 118  dup
+00002: 118  callprop "_super"
+00007: 118  swap
+00008: 118  notearg
+00009: 118  call 0
+00012: 118  pop
+00013: 119  name "xs"
+00018: 119  getprop "Utils"
+00023: 119  getprop "Notify"
+00028: 119  dup
+00029: 119  callprop "removeObserver"
+00034: 119  swap
+00035: 119  notearg
+00036: 119  this
+00037: 119  notearg
+00038: 119  name "xs"
+00043: 119  getprop "Constant_Notify_ModelChange_General"
+00048: 119  notearg
+00049: 119  call 2
+00052: 119  pop
+00053: 120  name "xs"
+00058: 120  getprop "Utils"
+00063: 120  getprop "Notify"
+00068: 120  dup
+00069: 120  callprop "removeObserver"
+00074: 120  swap
+00075: 120  notearg
+00076: 120  this
+00077: 120  notearg
+00078: 120  name "xs"
+00083: 120  getprop "Constant_Notify_ModelChange_GeneralSoul"
+00088: 120  notearg
+00089: 120  call 2
+00092: 120  pop
+00093: 121  name "xs"
+00098: 121  getprop "Utils"
+00103: 121  getprop "Notify"
+00108: 121  dup
+00109: 121  callprop "removeObserver"
+00114: 121  swap
+00115: 121  notearg
+00116: 121  this
+00117: 121  notearg
+00118: 121  name "xs"
+00123: 121  getprop "Constant_Notify_ModelChange_Combat"
+00128: 121  notearg
+00129: 121  call 2
+00132: 121  pop
+00133: 123  this
+00134: 123  getprop "notify"
+00139: 123  dup
+00140: 123  callprop "removeObserver"
+00145: 123  swap
+00146: 123  notearg
+00147: 123  this
+00148: 123  notearg
+00149: 123  name "xs"
+00154: 123  getprop "Views"
+00159: 123  getprop "CombatUpgradeView_Notify_GeneralSelectChange"
+00164: 123  notearg
+00165: 123  call 2
+00168: 123  pop
+00169: 124  this
+00170: 124  getprop "notify"
+00175: 124  dup
+00176: 124  callprop "removeObserver"
+00181: 124  swap
+00182: 124  notearg
+00183: 124  this
+00184: 124  notearg
+00185: 124  name "xs"
+00190: 124  getprop "Views"
+00195: 124  getprop "CombatUpgradeView_Notify_SoulSelectChange"
+00200: 124  notearg
+00201: 124  call 2
+00204: 124  pop
+00205: 124  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:117 ---
+;; function object[4] getSelGeneralExp
+;; function metadata object[4] nargs=0 bindings=2
+;; local[0] totalExp
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:127 ---
+loc   line  op
+----- ----  --
+main:
+00000: 128  zero
+00001: 128  setlocal 0
+00004: 128  pop
+00005: 129  zero
+00006: 129  setlocal 1
+00009: 129  pop
+00010: 129  goto 97 (+87)
+00015: 130  loophead
+00016: 130  this
+00017: 130  getprop "generals"
+00022: 130  getlocal 1
+00025: 130  getelem
+00026: 130  dup
+00027: 130  callprop "isSelected"
+00032: 130  swap
+00033: 130  notearg
+00034: 130  call 0
+00037: 130  ifeq 82 (+45)
+00042: 131  getlocal 0
+00045: 131  this
+00046: 131  getprop "generals"
+00051: 131  getlocal 1
+00054: 131  getelem
+00055: 131  dup
+00056: 131  callprop "getModel"
+00061: 131  swap
+00062: 131  notearg
+00063: 131  call 0
+00066: 131  dup
+00067: 131  callprop "getProCombatExp"
+00072: 131  swap
+00073: 131  notearg
+00074: 131  call 0
+00077: 131  add
+00078: 131  setlocal 0
+00081: 131  pop
+00082: 129  localinc 11
+00085: 129  getlocal 1
+00088: 129  pos
+00089: 129  dup
+00090: 129  one
+00091: 129  add
+00092: 129  setlocal 1
+00095: 129  pop
+00096: 129  pop
+00097: 129  loopentry
+00098: 129  getlocal 1
+00101: 129  this
+00102: 129  getprop "generals"
+00107: 129  length "length"
+00112: 129  lt
+00113: 129  ifne 15 (-98)
+00118: 134  getlocal 0
+00121: 134  return
+00122: 134  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:127 ---
+;; function object[5] getSelSoulExp
+;; function metadata object[5] nargs=0 bindings=2
+;; local[0] totalExp
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:137 ---
+loc   line  op
+----- ----  --
+main:
+00000: 138  zero
+00001: 138  setlocal 0
+00004: 138  pop
+00005: 139  zero
+00006: 139  setlocal 1
+00009: 139  pop
+00010: 139  goto 119 (+109)
+00015: 140  loophead
+00016: 140  this
+00017: 140  getprop "soulsClone"
+00022: 140  getlocal 1
+00025: 140  getelem
+00026: 140  dup
+00027: 140  callprop "isSelected"
+00032: 140  swap
+00033: 140  notearg
+00034: 140  call 0
+00037: 140  ifeq 104 (+67)
+00042: 141  getlocal 0
+00045: 141  this
+00046: 141  getprop "soulsClone"
+00051: 141  getlocal 1
+00054: 141  getelem
+00055: 141  dup
+00056: 141  callprop "getModel"
+00061: 141  swap
+00062: 141  notearg
+00063: 141  call 0
+00066: 141  dup
+00067: 141  callprop "getProCombatExp"
+00072: 141  swap
+00073: 141  notearg
+00074: 141  call 0
+00077: 142  this
+00078: 142  getprop "soulsClone"
+00083: 142  getlocal 1
+00086: 142  getelem
+00087: 142  dup
+00088: 142  callprop "getSelectNum"
+00093: 142  swap
+00094: 142  notearg
+00095: 142  call 0
+00098: 142  mul
+00099: 142  add
+00100: 142  setlocal 0
+00103: 142  pop
+00104: 139  localinc 11
+00107: 139  getlocal 1
+00110: 139  pos
+00111: 139  dup
+00112: 139  one
+00113: 139  add
+00114: 139  setlocal 1
+00117: 139  pop
+00118: 139  pop
+00119: 139  loopentry
+00120: 139  getlocal 1
+00123: 139  this
+00124: 139  getprop "soulsClone"
+00129: 139  length "length"
+00134: 139  lt
+00135: 139  ifne 15 (-120)
+00140: 145  getlocal 0
+00143: 145  return
+00144: 145  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:137 ---
+;; function object[6] onGeneralOrSoulSelect
+;; function metadata object[6] nargs=0 bindings=1
+;; local[0] cureLev
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:148 ---
+loc   line  op
+----- ----  --
+main:
+00000: 149  this
+00001: 149  getprop "upgradeCard"
+00006: 149  dup
+00007: 149  callprop "updateExp"
+00012: 149  swap
+00013: 149  notearg
+00014: 149  this
+00015: 149  dup
+00016: 149  callprop "getSelGeneralExp"
+00021: 149  swap
+00022: 149  notearg
+00023: 149  call 0
+00026: 149  this
+00027: 149  dup
+00028: 149  callprop "getSelSoulExp"
+00033: 149  swap
+00034: 149  notearg
+00035: 149  call 0
+00038: 149  add
+00039: 149  notearg
+00040: 149  this
+00041: 149  getprop "combatInfo"
+00046: 149  notearg
+00047: 149  call 2
+00050: 149  pop
+00051: 151  this
+00052: 151  getprop "upgradeCard"
+00057: 151  dup
+00058: 151  callprop "getPreLevel"
+00063: 151  swap
+00064: 151  notearg
+00065: 151  call 0
+00068: 151  setlocal 0
+00071: 151  pop
+00072: 152  this
+00073: 152  getprop "m_effectVal"
+00078: 152  dup
+00079: 152  callprop "setString"
+00084: 152  swap
+00085: 152  notearg
+00086: 152  string "+"
+00091: 152  this
+00092: 152  getprop "combatInfo"
+00097: 152  dup
+00098: 152  callprop "getUpgradeCfgByLevel"
+00103: 152  swap
+00104: 152  notearg
+00105: 152  getlocal 0
+00108: 152  one
+00109: 152  add
+00110: 152  notearg
+00111: 152  call 1
+00114: 152  dup
+00115: 152  callprop "getExtraBuff"
+00120: 152  swap
+00121: 152  notearg
+00122: 152  call 0
+00125: 152  add
+00126: 152  notearg
+00127: 152  call 1
+00130: 152  pop
+00131: 152  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:148 ---
+;; function object[7] updateUpgradeCard_General
+;; function metadata object[7] nargs=0 bindings=1
+;; local[0] posArray
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:155 ---
+loc   line  op
+----- ----  --
+main:
+00000: 156  this
+00001: 156  name "xs"
+00006: 156  getprop "Profile"
+00011: 156  getprop "GameData"
+00016: 156  getprop "Mgr"
+00021: 156  dup
+00022: 156  callprop "getInstance"
+00027: 156  swap
+00028: 156  notearg
+00029: 156  call 0
+00032: 156  getprop "CardShowData"
+00037: 156  dup
+00038: 156  callprop "getGeneralShowData"
+00043: 156  swap
+00044: 156  notearg
+00045: 156  false
+00046: 156  notearg
+00047: 156  call 1
+00050: 156  setprop "generals"
+00055: 156  pop
+00056: 157  this
+00057: 157  getprop "generalTableView"
+00062: 157  dup
+00063: 157  callprop "setData"
+00068: 157  swap
+00069: 157  notearg
+00070: 157  this
+00071: 157  getprop "generals"
+00076: 157  notearg
+00077: 157  call 1
+00080: 157  pop
+00081: 160  this
+00082: 160  getprop "miniPageView"
+00087: 160  dup
+00088: 160  callprop "getCurSelPage"
+00093: 160  swap
+00094: 160  notearg
+00095: 160  call 0
+00098: 160  zero
+00099: 160  stricteq
+00100: 160  ifeq 153 (+53)
+00105: 161  this
+00106: 161  getprop "soulTableView"
+00111: 161  dup
+00112: 161  callprop "getSelectIconPosArray"
+00117: 161  swap
+00118: 161  notearg
+00119: 161  call 0
+00122: 161  setlocal 0
+00125: 161  pop
+00126: 162  this
+00127: 162  getprop "upgradeCard"
+00132: 162  dup
+00133: 162  callprop "playEatCardAction"
+00138: 162  swap
+00139: 162  notearg
+00140: 162  getlocal 0
+00143: 162  notearg
+00144: 162  call 1
+00147: 162  pop
+00148: 162  goto 196 (+48)
+00153: 164  this
+00154: 164  getprop "generalTableView"
+00159: 164  dup
+00160: 164  callprop "getSelectIconPosArray"
+00165: 164  swap
+00166: 164  notearg
+00167: 164  call 0
+00170: 164  setlocal 0
+00173: 164  pop
+00174: 165  this
+00175: 165  getprop "upgradeCard"
+00180: 165  dup
+00181: 165  callprop "playEatCardAction"
+00186: 165  swap
+00187: 165  notearg
+00188: 165  getlocal 0
+00191: 165  notearg
+00192: 165  call 1
+00195: 165  pop
+00196: 169  this
+00197: 169  getprop "generalTableView"
+00202: 169  dup
+00203: 169  callprop "refreshDataAndReload"
+00208: 169  swap
+00209: 169  notearg
+00210: 169  call 0
+00213: 169  pop
+00214: 169  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:155 ---
+;; function object[8] updateUpgradeCard_Soul
+;; function metadata object[8] nargs=0 bindings=1
+;; local[0] posArray
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:172 ---
+loc   line  op
+----- ----  --
+main:
+00000: 173  this
+00001: 173  name "xs"
+00006: 173  getprop "Profile"
+00011: 173  getprop "GameData"
+00016: 173  getprop "Mgr"
+00021: 173  dup
+00022: 173  callprop "getInstance"
+00027: 173  swap
+00028: 173  notearg
+00029: 173  call 0
+00032: 173  getprop "CardShowData"
+00037: 173  dup
+00038: 173  callprop "getSoulShowData"
+00043: 173  swap
+00044: 173  notearg
+00045: 173  call 0
+00048: 173  setprop "soulsClone"
+00053: 173  pop
+00054: 174  this
+00055: 174  getprop "soulTableView"
+00060: 174  dup
+00061: 174  callprop "setData"
+00066: 174  swap
+00067: 174  notearg
+00068: 174  this
+00069: 174  getprop "soulsClone"
+00074: 174  notearg
+00075: 174  call 1
+00078: 174  pop
+00079: 177  this
+00080: 177  getprop "miniPageView"
+00085: 177  dup
+00086: 177  callprop "getCurSelPage"
+00091: 177  swap
+00092: 177  notearg
+00093: 177  call 0
+00096: 177  zero
+00097: 177  stricteq
+00098: 177  ifeq 151 (+53)
+00103: 178  this
+00104: 178  getprop "soulTableView"
+00109: 178  dup
+00110: 178  callprop "getSelectIconPosArray"
+00115: 178  swap
+00116: 178  notearg
+00117: 178  call 0
+00120: 178  setlocal 0
+00123: 178  pop
+00124: 179  this
+00125: 179  getprop "upgradeCard"
+00130: 179  dup
+00131: 179  callprop "playEatCardAction"
+00136: 179  swap
+00137: 179  notearg
+00138: 179  getlocal 0
+00141: 179  notearg
+00142: 179  call 1
+00145: 179  pop
+00146: 179  goto 194 (+48)
+00151: 181  this
+00152: 181  getprop "generalTableView"
+00157: 181  dup
+00158: 181  callprop "getSelectIconPosArray"
+00163: 181  swap
+00164: 181  notearg
+00165: 181  call 0
+00168: 181  setlocal 0
+00171: 181  pop
+00172: 182  this
+00173: 182  getprop "upgradeCard"
+00178: 182  dup
+00179: 182  callprop "playEatCardAction"
+00184: 182  swap
+00185: 182  notearg
+00186: 182  getlocal 0
+00189: 182  notearg
+00190: 182  call 1
+00193: 182  pop
+00194: 186  this
+00195: 186  getprop "soulTableView"
+00200: 186  dup
+00201: 186  callprop "refreshDataAndReload"
+00206: 186  swap
+00207: 186  notearg
+00208: 186  call 0
+00211: 186  pop
+00212: 186  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:172 ---
+;; function object[9] updateCombatInfo
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:190 ---
+loc   line  op
+----- ----  --
+main:
+00000: 191  this
+00001: 191  name "xs"
+00006: 191  getprop "Profile"
+00011: 191  getprop "GameData"
+00016: 191  getprop "Mgr"
+00021: 191  dup
+00022: 191  callprop "getInstance"
+00027: 191  swap
+00028: 191  notearg
+00029: 191  call 0
+00032: 191  getprop "Combat"
+00037: 191  dup
+00038: 191  callprop "getCombatByType"
+00043: 191  swap
+00044: 191  notearg
+00045: 191  this
+00046: 191  getprop "combatInfo"
+00051: 191  dup
+00052: 191  callprop "getType"
+00057: 191  swap
+00058: 191  notearg
+00059: 191  call 0
+00062: 191  notearg
+00063: 191  call 1
+00066: 191  setprop "combatInfo"
+00071: 191  pop
+00072: 192  this
+00073: 192  getprop "upgradeCard"
+00078: 192  dup
+00079: 192  callprop "setCurPercentage"
+00084: 192  swap
+00085: 192  notearg
+00086: 192  this
+00087: 192  getprop "combatInfo"
+00092: 192  dup
+00093: 192  callprop "getCurLevelExpPer"
+00098: 192  swap
+00099: 192  notearg
+00100: 192  call 0
+00103: 192  notearg
+00104: 192  call 1
+00107: 192  pop
+00108: 192  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:190 ---
+;; function object[10] getMaxNeedNum
+;; function metadata object[10] nargs=1 bindings=7
+;; arg[0] param
+;; local[0] player
+;; local[1] totalExp
+;; local[2] maxExp
+;; local[3] needExp
+;; local[4] ExpNum
+;; local[5] maxNum
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:196 ---
+loc   line  op
+----- ----  --
+main:
+00000: 197  name "xs"
+00005: 197  getprop "Profile"
+00010: 197  getprop "GameData"
+00015: 197  getprop "Mgr"
+00020: 197  dup
+00021: 197  callprop "getInstance"
+00026: 197  swap
+00027: 197  notearg
+00028: 197  call 0
+00031: 197  getprop "Player"
+00036: 197  dup
+00037: 197  callprop "getPlayer"
+00042: 197  swap
+00043: 197  notearg
+00044: 197  call 0
+00047: 197  setlocal 0
+00050: 197  pop
+00051: 198  this
+00052: 198  dup
+00053: 198  callprop "getSelGeneralExp"
+00058: 198  swap
+00059: 198  notearg
+00060: 198  call 0
+00063: 198  this
+00064: 198  dup
+00065: 198  callprop "getSelSoulExp"
+00070: 198  swap
+00071: 198  notearg
+00072: 198  call 0
+00075: 198  add
+00076: 198  this
+00077: 198  getprop "combatInfo"
+00082: 198  dup
+00083: 198  callprop "getTotalExp"
+00088: 198  swap
+00089: 198  notearg
+00090: 198  call 0
+00093: 198  add
+00094: 198  setlocal 1
+00097: 198  pop
+00098: 199  this
+00099: 199  getprop "combatInfo"
+00104: 199  dup
+00105: 199  callprop "getTotalExpByLevel"
+00110: 199  swap
+00111: 199  notearg
+00112: 199  getlocal 0
+00115: 199  dup
+00116: 199  callprop "getPlayerCombatMaxLevel"
+00121: 199  swap
+00122: 199  notearg
+00123: 199  call 0
+00126: 199  notearg
+00127: 199  call 1
+00130: 199  setlocal 2
+00133: 199  pop
+00134: 200  getlocal 2
+00137: 200  getlocal 1
+00140: 200  sub
+00141: 200  setlocal 3
+00144: 200  pop
+00145: 201  name "Math"
+00150: 201  dup
+00151: 201  callprop "ceil"
+00156: 201  swap
+00157: 201  notearg
+00158: 201  getlocal 3
+00161: 201  getarg 0
+00164: 201  dup
+00165: 201  callprop "getModel"
+00170: 201  swap
+00171: 201  notearg
+00172: 201  call 0
+00175: 201  dup
+00176: 201  callprop "getProCombatExp"
+00181: 201  swap
+00182: 201  notearg
+00183: 201  call 0
+00186: 201  div
+00187: 201  notearg
+00188: 201  call 1
+00191: 201  setlocal 4
+00194: 201  pop
+00195: 202  getarg 0
+00198: 202  dup
+00199: 202  callprop "getMaxNum"
+00204: 202  swap
+00205: 202  notearg
+00206: 202  call 0
+00209: 202  setlocal 5
+00212: 202  pop
+00213: 203  name "xs"
+00218: 203  dup
+00219: 203  callprop "log_zhz"
+00224: 203  swap
+00225: 203  notearg
+00226: 203  string "needExp"
+00231: 203  notearg
+00232: 203  getlocal 3
+00235: 203  notearg
+00236: 203  call 2
+00239: 203  pop
+00240: 204  name "xs"
+00245: 204  dup
+00246: 204  callprop "log_zhz"
+00251: 204  swap
+00252: 204  notearg
+00253: 204  string "maxNum"
+00258: 204  notearg
+00259: 204  getlocal 5
+00262: 204  notearg
+00263: 204  call 2
+00266: 204  pop
+00267: 205  name "xs"
+00272: 205  dup
+00273: 205  callprop "log_zhz"
+00278: 205  swap
+00279: 205  notearg
+00280: 205  string "ExpNum"
+00285: 205  notearg
+00286: 205  getlocal 4
+00289: 205  notearg
+00290: 205  call 2
+00293: 205  pop
+00294: 206  getlocal 5
+00297: 206  getlocal 4
+00300: 206  lt
+00301: 206  ifeq 314 (+13)
+00306: 206  getlocal 5
+00309: 206  goto 317 (+8)
+00314: 206  getlocal 4
+00317: 206  return
+00318: 206  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:196 ---
+;; function object[11] isToMaxLevel
+;; function metadata object[11] nargs=0 bindings=3
+;; local[0] player
+;; local[1] totalExp
+;; local[2] maxLevel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:209 ---
+loc   line  op
+----- ----  --
+main:
+00000: 210  name "xs"
+00005: 210  getprop "Profile"
+00010: 210  getprop "GameData"
+00015: 210  getprop "Mgr"
+00020: 210  dup
+00021: 210  callprop "getInstance"
+00026: 210  swap
+00027: 210  notearg
+00028: 210  call 0
+00031: 210  getprop "Player"
+00036: 210  dup
+00037: 210  callprop "getPlayer"
+00042: 210  swap
+00043: 210  notearg
+00044: 210  call 0
+00047: 210  setlocal 0
+00050: 210  pop
+00051: 211  this
+00052: 211  dup
+00053: 211  callprop "getSelGeneralExp"
+00058: 211  swap
+00059: 211  notearg
+00060: 211  call 0
+00063: 211  this
+00064: 211  dup
+00065: 211  callprop "getSelSoulExp"
+00070: 211  swap
+00071: 211  notearg
+00072: 211  call 0
+00075: 211  add
+00076: 211  setlocal 1
+00079: 211  pop
+00080: 212  getlocal 0
+00083: 212  dup
+00084: 212  callprop "getPlayerCombatMaxLevel"
+00089: 212  swap
+00090: 212  notearg
+00091: 212  call 0
+00094: 212  setlocal 2
+00097: 212  pop
+00098: 213  getlocal 1
+00101: 213  this
+00102: 213  getprop "combatInfo"
+00107: 213  dup
+00108: 213  callprop "getTotalExp"
+00113: 213  swap
+00114: 213  notearg
+00115: 213  call 0
+00118: 213  add
+00119: 213  this
+00120: 213  getprop "combatInfo"
+00125: 213  dup
+00126: 213  callprop "getTotalExpByLevel"
+00131: 213  swap
+00132: 213  notearg
+00133: 213  getlocal 2
+00136: 213  notearg
+00137: 213  call 1
+00140: 213  ge
+00141: 213  ifeq 148 (+7)
+00146: 214  true
+00147: 214  return
+00148: 216  false
+00149: 216  return
+00150: 216  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:209 ---
+;; function object[12] onLongTimeTouch
+;; function metadata object[12] nargs=1 bindings=1
+;; arg[0] sender
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:218 ---
+loc   line  op
+----- ----  --
+main:
+00000: 219  name "xs"
+00005: 219  dup
+00006: 219  callprop "log_zhz"
+00011: 219  swap
+00012: 219  notearg
+00013: 219  string "onLongTimeTouch"
+00018: 219  notearg
+00019: 219  getarg 0
+00022: 219  notearg
+00023: 219  call 2
+00026: 219  pop
+00027: 220  getarg 0
+00030: 220  condswitch
+00031: 221  this
+00032: 221  getprop "m_btn_allGold"
+00037: 221  case 69 (+32)
+00042: 224  this
+00043: 224  getprop "m_btn_allSilver"
+00048: 224  case 98 (+50)
+00053: 227  this
+00054: 227  getprop "m_btn_allCopper"
+00059: 227  case 127 (+68)
+00064: 227  default 156 (+92)
+00069: 222  this
+00070: 222  dup
+00071: 222  callprop "selectAll"
+00076: 222  swap
+00077: 222  notearg
+00078: 222  name "xs"
+00083: 222  getprop "Constant_Grade_Gold"
+00088: 222  notearg
+00089: 222  call 1
+00092: 222  pop
+00093: 223  goto 156 (+63)
+00098: 225  this
+00099: 225  dup
+00100: 225  callprop "selectAll"
+00105: 225  swap
+00106: 225  notearg
+00107: 225  name "xs"
+00112: 225  getprop "Constant_Grade_Silver"
+00117: 225  notearg
+00118: 225  call 1
+00121: 225  pop
+00122: 226  goto 156 (+34)
+00127: 228  this
+00128: 228  dup
+00129: 228  callprop "selectAll"
+00134: 228  swap
+00135: 228  notearg
+00136: 228  name "xs"
+00141: 228  getprop "Constant_Grade_Copper"
+00146: 228  notearg
+00147: 228  call 1
+00150: 228  pop
+00151: 229  goto 156 (+5)
+00156: 230  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:218 ---
+;; function object[13] onBtnClicked
+;; function metadata object[13] nargs=1 bindings=4
+;; arg[0] sender
+;; local[0] combatUpgradScene_str
+;; local[1] grade
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:233 ---
+loc   line  op
+----- ----  --
+main:
+00000: 234  name "xs"
+00005: 234  dup
+00006: 234  callprop "log_zhz"
+00011: 234  swap
+00012: 234  notearg
+00013: 234  string "onBtnClicked"
+00018: 234  notearg
+00019: 234  getarg 0
+00022: 234  notearg
+00023: 234  call 2
+00026: 234  pop
+00027: 235  getarg 0
+00030: 235  condswitch
+00031: 236  this
+00032: 236  getprop "m_btn_allGold"
+00037: 236  case 80 (+43)
+00042: 239  this
+00043: 239  getprop "m_btn_allSilver"
+00048: 239  case 109 (+61)
+00053: 242  this
+00054: 242  getprop "m_btn_allCopper"
+00059: 242  case 138 (+79)
+00064: 245  this
+00065: 245  getprop "m_btn_confirm"
+00070: 245  case 167 (+97)
+00075: 245  default 670 (+595)
+00080: 237  this
+00081: 237  dup
+00082: 237  callprop "selectAllOnce"
+00087: 237  swap
+00088: 237  notearg
+00089: 237  name "xs"
+00094: 237  getprop "Constant_Grade_Gold"
+00099: 237  notearg
+00100: 237  call 1
+00103: 237  pop
+00104: 238  goto 670 (+566)
+00109: 240  this
+00110: 240  dup
+00111: 240  callprop "selectAllOnce"
+00116: 240  swap
+00117: 240  notearg
+00118: 240  name "xs"
+00123: 240  getprop "Constant_Grade_Silver"
+00128: 240  notearg
+00129: 240  call 1
+00132: 240  pop
+00133: 241  goto 670 (+537)
+00138: 243  this
+00139: 243  dup
+00140: 243  callprop "selectAllOnce"
+00145: 243  swap
+00146: 243  notearg
+00147: 243  name "xs"
+00152: 243  getprop "Constant_Grade_Copper"
+00157: 243  notearg
+00158: 243  call 1
+00161: 243  pop
+00162: 244  goto 670 (+508)
+00167: 246  null
+00168: 246  setlocal 0
+00171: 246  pop
+00172: 247  name "xs"
+00177: 247  getprop "Constant_Grade_God"
+00182: 247  setlocal 1
+00185: 247  pop
+00186: 248  zero
+00187: 248  setlocal 2
+00190: 248  pop
+00191: 248  goto 382 (+191)
+00196: 249  loophead
+00197: 249  this
+00198: 249  getprop "generals"
+00203: 249  getlocal 2
+00206: 249  getelem
+00207: 249  dup
+00208: 249  callprop "isSelected"
+00213: 249  swap
+00214: 249  notearg
+00215: 249  call 0
+00218: 249  ifeq 367 (+149)
+00223: 250  this
+00224: 250  getprop "generals"
+00229: 250  getlocal 2
+00232: 250  getelem
+00233: 250  dup
+00234: 250  callprop "getModel"
+00239: 250  swap
+00240: 250  notearg
+00241: 250  call 0
+00244: 250  dup
+00245: 250  callprop "getGrade"
+00250: 250  swap
+00251: 250  notearg
+00252: 250  call 0
+00255: 250  getlocal 1
+00258: 250  stricteq
+00259: 250  and 348 (+89)
+00264: 250  pop
+00265: 251  this
+00266: 251  getprop "generals"
+00271: 251  getlocal 2
+00274: 251  getelem
+00275: 251  dup
+00276: 251  callprop "getModel"
+00281: 251  swap
+00282: 251  notearg
+00283: 251  call 0
+00286: 251  dup
+00287: 251  callprop "getId"
+00292: 251  swap
+00293: 251  notearg
+00294: 251  call 0
+00297: 251  string "191005"
+00302: 251  stricteq
+00303: 251  or 347 (+44)
+00308: 251  pop
+00309: 251  this
+00310: 251  getprop "generals"
+00315: 251  getlocal 2
+00318: 251  getelem
+00319: 251  dup
+00320: 251  callprop "getModel"
+00325: 251  swap
+00326: 251  notearg
+00327: 251  call 0
+00330: 251  dup
+00331: 251  callprop "getId"
+00336: 251  swap
+00337: 251  notearg
+00338: 251  call 0
+00341: 251  string "191006"
+00346: 251  stricteq
+00347: 251  not
+00348: 251  ifeq 367 (+19)
+00353: 252  string "combatUpgradScene_str_2"
+00358: 252  setlocal 0
+00361: 252  pop
+00362: 253  goto 403 (+41)
+00367: 248  localinc 11
+00370: 248  getlocal 2
+00373: 248  pos
+00374: 248  dup
+00375: 248  one
+00376: 248  add
+00377: 248  setlocal 2
+00380: 248  pop
+00381: 248  pop
+00382: 248  loopentry
+00383: 248  getlocal 2
+00386: 248  this
+00387: 248  getprop "generals"
+00392: 248  length "length"
+00397: 248  lt
+00398: 248  ifne 196 (-202)
+00403: 258  zero
+00404: 258  setlocal 2
+00407: 258  pop
+00408: 258  goto 599 (+191)
+00413: 259  loophead
+00414: 259  this
+00415: 259  getprop "soulsClone"
+00420: 259  getlocal 2
+00423: 259  getelem
+00424: 259  dup
+00425: 259  callprop "isSelected"
+00430: 259  swap
+00431: 259  notearg
+00432: 259  call 0
+00435: 259  ifeq 584 (+149)
+00440: 260  this
+00441: 260  getprop "soulsClone"
+00446: 260  getlocal 2
+00449: 260  getelem
+00450: 260  dup
+00451: 260  callprop "getModel"
+00456: 260  swap
+00457: 260  notearg
+00458: 260  call 0
+00461: 260  dup
+00462: 260  callprop "getGrade"
+00467: 260  swap
+00468: 260  notearg
+00469: 260  call 0
+00472: 260  getlocal 1
+00475: 260  stricteq
+00476: 260  and 565 (+89)
+00481: 260  pop
+00482: 261  this
+00483: 261  getprop "soulsClone"
+00488: 261  getlocal 2
+00491: 261  getelem
+00492: 261  dup
+00493: 261  callprop "getModel"
+00498: 261  swap
+00499: 261  notearg
+00500: 261  call 0
+00503: 261  dup
+00504: 261  callprop "getId"
+00509: 261  swap
+00510: 261  notearg
+00511: 261  call 0
+00514: 261  string "191005"
+00519: 261  stricteq
+00520: 261  or 564 (+44)
+00525: 261  pop
+00526: 261  this
+00527: 261  getprop "soulsClone"
+00532: 261  getlocal 2
+00535: 261  getelem
+00536: 261  dup
+00537: 261  callprop "getModel"
+00542: 261  swap
+00543: 261  notearg
+00544: 261  call 0
+00547: 261  dup
+00548: 261  callprop "getId"
+00553: 261  swap
+00554: 261  notearg
+00555: 261  call 0
+00558: 261  string "191006"
+00563: 261  stricteq
+00564: 261  not
+00565: 261  ifeq 584 (+19)
+00570: 262  string "combatUpgradScene_str_1"
+00575: 262  setlocal 0
+00578: 262  pop
+00579: 263  goto 620 (+41)
+00584: 258  localinc 11
+00587: 258  getlocal 2
+00590: 258  pos
+00591: 258  dup
+00592: 258  one
+00593: 258  add
+00594: 258  setlocal 2
+00597: 258  pop
+00598: 258  pop
+00599: 258  loopentry
+00600: 258  getlocal 2
+00603: 258  this
+00604: 258  getprop "soulsClone"
+00609: 258  length "length"
+00614: 258  lt
+00615: 258  ifne 413 (-202)
+00620: 267  getlocal 0
+00623: 267  null
+00624: 267  ne
+00625: 267  ifeq 652 (+27)
+00630: 268  this
+00631: 268  dup
+00632: 268  callprop "showConfirmDialog"
+00637: 268  swap
+00638: 268  notearg
+00639: 268  getlocal 0
+00642: 268  notearg
+00643: 268  call 1
+00646: 268  pop
+00647: 268  goto 665 (+18)
+00652: 274  this
+00653: 274  dup
+00654: 274  callprop "confirmUpgrade"
+00659: 274  swap
+00660: 274  notearg
+00661: 274  call 0
+00664: 274  pop
+00665: 275  goto 670 (+5)
+00670: 276  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:233 ---
+;; function object[14] showConfirmDialog
+;; function metadata object[14] nargs=1 bindings=2
+;; arg[0] combatUpgradScene_str
+;; local[0] dialog
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=126 object[0]
+;; FUNCTION-MAP kind=lambda offset=149 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:278 ---
+loc   line  op
+----- ----  --
+main:
+00000: 280  name "xs"
+00005: 280  getprop "Views"
+00010: 280  getprop "Mgr"
+00015: 280  dup
+00016: 280  callprop "showDialogByName"
+00021: 280  swap
+00022: 280  notearg
+00023: 280  string "common"
+00028: 280  notearg
+00029: 280  newinit 1
+00034: 281  string "combatUpgradScene_title"
+00039: 281  initprop "title"
+00044: 282  getarg 0
+00047: 282  initprop "content"
+00052: 283  name "xs"
+00057: 283  getprop "Tools"
+00062: 283  getprop "String"
+00067: 283  dup
+00068: 283  callprop "createString"
+00073: 283  swap
+00074: 283  notearg
+00075: 283  string "1070610006"
+00080: 283  notearg
+00081: 283  call 1
+00084: 283  initprop "leftText"
+00089: 284  name "xs"
+00094: 284  getprop "Tools"
+00099: 284  getprop "String"
+00104: 284  dup
+00105: 284  callprop "createString"
+00110: 284  swap
+00111: 284  notearg
+00112: 284  string "auto_name_76"
+00117: 284  notearg
+00118: 284  call 1
+00121: 284  initprop "rightText"
+00126: 285  lambda (function () {
+    [sourceless code]
+})
+00131: 285  dup
+00132: 285  callprop "bind"
+00137: 285  swap
+00138: 285  notearg
+00139: 289  this
+00140: 289  notearg
+00141: 289  call 1
+00144: 289  initprop "leftCB"
+00149: 290  lambda (function () {
+    [sourceless code]
+})
+00154: 290  dup
+00155: 290  callprop "bind"
+00160: 290  swap
+00161: 290  notearg
+00162: 293  this
+00163: 293  notearg
+00164: 293  call 1
+00167: 293  initprop "rightCB"
+00172: 293  endinit
+00173: 293  notearg
+00174: 293  call 2
+00177: 293  setlocal 0
+00180: 293  pop
+00181: 293  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:278 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:285 ---
+loc   line  op
+----- ----  --
+main:
+00000: 286  this
+00001: 286  dup
+00002: 286  callprop "clearSelect"
+00007: 286  swap
+00008: 286  notearg
+00009: 286  call 0
+00012: 286  pop
+00013: 287  this
+00014: 287  getprop "upgradeCard"
+00019: 287  dup
+00020: 287  callprop "updateExp"
+00025: 287  swap
+00026: 287  notearg
+00027: 287  zero
+00028: 287  notearg
+00029: 287  this
+00030: 287  getprop "combatInfo"
+00035: 287  notearg
+00036: 287  call 2
+00039: 287  pop
+00040: 288  name "xs"
+00045: 288  getprop "Views"
+00050: 288  getprop "Mgr"
+00055: 288  dup
+00056: 288  callprop "hideDialog"
+00061: 288  swap
+00062: 288  notearg
+00063: 288  call 0
+00066: 288  pop
+00067: 288  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:285 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:290 ---
+loc   line  op
+----- ----  --
+main:
+00000: 291  name "xs"
+00005: 291  getprop "Views"
+00010: 291  getprop "Mgr"
+00015: 291  dup
+00016: 291  callprop "hideDialog"
+00021: 291  swap
+00022: 291  notearg
+00023: 291  call 0
+00026: 291  pop
+00027: 292  this
+00028: 292  dup
+00029: 292  callprop "confirmUpgrade"
+00034: 292  swap
+00035: 292  notearg
+00036: 292  call 0
+00039: 292  pop
+00040: 292  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:290 ---
+;; function object[15] confirmUpgrade
+;; function metadata object[15] nargs=0 bindings=5
+;; local[0] combatId
+;; local[1] _gids
+;; local[2] _sids
+;; local[3] _sidNums
+;; local[4] i
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=456 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:297 ---
+loc   line  op
+----- ----  --
+main:
+00000: 298  this
+00001: 298  getprop "combatInfo"
+00006: 298  getprop "pk_id"
+00011: 298  setlocal 0
+00014: 298  pop
+00015: 299  newarray 0
+00019: 299  endinit
+00020: 299  setlocal 1
+00023: 299  pop
+00024: 300  newarray 0
+00028: 300  endinit
+00029: 300  setlocal 2
+00032: 300  pop
+00033: 301  newarray 0
+00037: 301  endinit
+00038: 301  setlocal 3
+00041: 301  pop
+00042: 303  zero
+00043: 303  setlocal 4
+00046: 303  pop
+00047: 303  goto 142 (+95)
+00052: 304  loophead
+00053: 304  this
+00054: 304  getprop "generals"
+00059: 304  getlocal 4
+00062: 304  getelem
+00063: 304  dup
+00064: 304  callprop "isSelected"
+00069: 304  swap
+00070: 304  notearg
+00071: 304  call 0
+00074: 304  ifeq 127 (+53)
+00079: 305  getlocal 1
+00082: 305  dup
+00083: 305  callprop "push"
+00088: 305  swap
+00089: 305  notearg
+00090: 305  this
+00091: 305  getprop "generals"
+00096: 305  getlocal 4
+00099: 305  getelem
+00100: 305  dup
+00101: 305  callprop "getModel"
+00106: 305  swap
+00107: 305  notearg
+00108: 305  call 0
+00111: 305  dup
+00112: 305  callprop "getPkId"
+00117: 305  swap
+00118: 305  notearg
+00119: 305  call 0
+00122: 305  notearg
+00123: 305  call 1
+00126: 305  pop
+00127: 303  localinc 11
+00130: 303  getlocal 4
+00133: 303  pos
+00134: 303  dup
+00135: 303  one
+00136: 303  add
+00137: 303  setlocal 4
+00140: 303  pop
+00141: 303  pop
+00142: 303  loopentry
+00143: 303  getlocal 4
+00146: 303  this
+00147: 303  getprop "generals"
+00152: 303  length "length"
+00157: 303  lt
+00158: 303  ifne 52 (-106)
+00163: 309  zero
+00164: 309  setlocal 4
+00167: 309  pop
+00168: 309  goto 300 (+132)
+00173: 310  loophead
+00174: 310  this
+00175: 310  getprop "soulsClone"
+00180: 310  getlocal 4
+00183: 310  getelem
+00184: 310  dup
+00185: 310  callprop "isSelected"
+00190: 310  swap
+00191: 310  notearg
+00192: 310  call 0
+00195: 310  ifeq 285 (+90)
+00200: 311  getlocal 2
+00203: 311  dup
+00204: 311  callprop "push"
+00209: 311  swap
+00210: 311  notearg
+00211: 311  this
+00212: 311  getprop "soulsClone"
+00217: 311  getlocal 4
+00220: 311  getelem
+00221: 311  dup
+00222: 311  callprop "getModel"
+00227: 311  swap
+00228: 311  notearg
+00229: 311  call 0
+00232: 311  dup
+00233: 311  callprop "getPkId"
+00238: 311  swap
+00239: 311  notearg
+00240: 311  call 0
+00243: 311  notearg
+00244: 311  call 1
+00247: 311  pop
+00248: 312  getlocal 3
+00251: 312  dup
+00252: 312  callprop "push"
+00257: 312  swap
+00258: 312  notearg
+00259: 312  this
+00260: 312  getprop "soulsClone"
+00265: 312  getlocal 4
+00268: 312  getelem
+00269: 312  dup
+00270: 312  callprop "getSelectNum"
+00275: 312  swap
+00276: 312  notearg
+00277: 312  call 0
+00280: 312  notearg
+00281: 312  call 1
+00284: 312  pop
+00285: 309  localinc 11
+00288: 309  getlocal 4
+00291: 309  pos
+00292: 309  dup
+00293: 309  one
+00294: 309  add
+00295: 309  setlocal 4
+00298: 309  pop
+00299: 309  pop
+00300: 309  loopentry
+00301: 309  getlocal 4
+00304: 309  this
+00305: 309  getprop "soulsClone"
+00310: 309  length "length"
+00315: 309  lt
+00316: 309  ifne 173 (-143)
+00321: 316  getlocal 1
+00324: 316  length "length"
+00329: 316  zero
+00330: 316  stricteq
+00331: 316  and 347 (+16)
+00336: 316  pop
+00337: 316  getlocal 2
+00340: 316  length "length"
+00345: 316  zero
+00346: 316  stricteq
+00347: 316  ifeq 354 (+7)
+00352: 317  undefined
+00353: 317  return
+00354: 321  name "xs"
+00359: 321  getprop "Utils"
+00364: 321  getprop "Notify"
+00369: 321  dup
+00370: 321  callprop "postNotification"
+00375: 321  swap
+00376: 321  notearg
+00377: 321  name "xs"
+00382: 321  getprop "Constant_Notify_Generals_Change"
+00387: 321  notearg
+00388: 321  this
+00389: 321  notearg
+00390: 321  call 2
+00393: 321  pop
+00394: 323  name "xs"
+00399: 323  getprop "Tools"
+00404: 323  getprop "Net"
+00409: 323  dup
+00410: 323  callprop "requestCombatUpgrade"
+00415: 323  swap
+00416: 323  notearg
+00417: 323  newinit 1
+00422: 324  getlocal 0
+00425: 324  initprop "combat_id"
+00430: 325  getlocal 1
+00433: 325  initprop "gids"
+00438: 326  getlocal 2
+00441: 326  initprop "sids"
+00446: 327  getlocal 3
+00449: 327  initprop "num"
+00454: 327  endinit
+00455: 327  notearg
+00456: 328  lambda (function () {
+    [sourceless code]
+})
+00461: 328  notearg
+00462: 338  this
+00463: 338  notearg
+00464: 338  call 3
+00467: 338  pop
+00468: 338  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:297 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] jsonObj
+
+;; nested bytecode depth=2
+;; FUNCTION-MAP kind=lambda offset=69 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:328 ---
+loc   line  op
+----- ----  --
+main:
+00000: 329  this
+00001: 329  dup
+00002: 329  callprop "runAction"
+00007: 329  swap
+00008: 329  notearg
+00009: 329  name "cc"
+00014: 329  getprop "Sequence"
+00019: 329  dup
+00020: 329  callprop "create"
+00025: 329  swap
+00026: 329  notearg
+00027: 329  name "cc"
+00032: 329  getprop "DelayTime"
+00037: 329  dup
+00038: 329  callprop "create"
+00043: 329  swap
+00044: 329  notearg
+00045: 329  one
+00046: 329  notearg
+00047: 329  call 1
+00050: 329  notearg
+00051: 329  name "cc"
+00056: 329  getprop "CallFunc"
+00061: 329  dup
+00062: 329  callprop "create"
+00067: 329  swap
+00068: 329  notearg
+00069: 329  lambda (function () {
+    [sourceless code]
+})
+00074: 329  dup
+00075: 329  callprop "bind"
+00080: 329  swap
+00081: 329  notearg
+00082: 337  this
+00083: 337  notearg
+00084: 337  call 1
+00087: 337  notearg
+00088: 337  call 1
+00091: 337  notearg
+00092: 337  call 2
+00095: 337  notearg
+00096: 337  call 1
+00099: 337  pop
+00100: 337  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:328 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] combatInfo
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:329 ---
+loc   line  op
+----- ----  --
+main:
+00000: 330  name "xs"
+00005: 330  getprop "Profile"
+00010: 330  getprop "GameData"
+00015: 330  getprop "Mgr"
+00020: 330  dup
+00021: 330  callprop "getInstance"
+00026: 330  swap
+00027: 330  notearg
+00028: 330  call 0
+00031: 330  getprop "Combat"
+00036: 330  dup
+00037: 330  callprop "getCombatByType"
+00042: 330  swap
+00043: 330  notearg
+00044: 330  this
+00045: 330  getprop "combatInfo"
+00050: 330  dup
+00051: 330  callprop "getType"
+00056: 330  swap
+00057: 330  notearg
+00058: 330  call 0
+00061: 330  notearg
+00062: 330  call 1
+00065: 330  setlocal 0
+00068: 330  pop
+00069: 332  getlocal 0
+00072: 332  dup
+00073: 332  callprop "getLevelUpStatus"
+00078: 332  swap
+00079: 332  notearg
+00080: 332  call 0
+00083: 332  ifeq 121 (+38)
+00088: 333  name "xs"
+00093: 333  getprop "Views"
+00098: 333  getprop "Mgr"
+00103: 333  dup
+00104: 333  callprop "showToastByStringId"
+00109: 333  swap
+00110: 333  notearg
+00111: 333  string "1070310004"
+00116: 333  notearg
+00117: 333  call 1
+00120: 333  pop
+00121: 336  this
+00122: 336  getprop "m_effectVal"
+00127: 336  dup
+00128: 336  callprop "setString"
+00133: 336  swap
+00134: 336  notearg
+00135: 336  string "+"
+00140: 336  getlocal 0
+00143: 336  dup
+00144: 336  callprop "getNextLevelExtraBuff"
+00149: 336  swap
+00150: 336  notearg
+00151: 336  call 0
+00154: 336  add
+00155: 336  notearg
+00156: 336  call 1
+00159: 336  pop
+00160: 336  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:329 ---
+;; function object[16] selectAll
+;; function metadata object[16] nargs=1 bindings=2
+;; arg[0] grade
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:341 ---
+loc   line  op
+----- ----  --
+main:
+00000: 342  name "xs"
+00005: 342  dup
+00006: 342  callprop "log_zhz"
+00011: 342  swap
+00012: 342  notearg
+00013: 342  string "selectAll"
+00018: 342  notearg
+00019: 342  getarg 0
+00022: 342  notearg
+00023: 342  call 2
+00026: 342  pop
+00027: 344  this
+00028: 344  getprop "miniPageView"
+00033: 344  dup
+00034: 344  callprop "getCurSelPage"
+00039: 344  swap
+00040: 344  notearg
+00041: 344  call 0
+00044: 344  zero
+00045: 344  stricteq
+00046: 344  ifeq 297 (+251)
+00051: 346  zero
+00052: 346  setlocal 0
+00055: 346  pop
+00056: 346  goto 219 (+163)
+00061: 347  loophead
+00062: 347  this
+00063: 347  getprop "soulsClone"
+00068: 347  getlocal 0
+00071: 347  getelem
+00072: 347  dup
+00073: 347  callprop "getModel"
+00078: 347  swap
+00079: 347  notearg
+00080: 347  call 0
+00083: 347  dup
+00084: 347  callprop "getGrade"
+00089: 347  swap
+00090: 347  notearg
+00091: 347  call 0
+00094: 347  getarg 0
+00097: 347  stricteq
+00098: 347  ifeq 204 (+106)
+00103: 348  this
+00104: 348  dup
+00105: 348  callprop "isToMaxLevel"
+00110: 348  swap
+00111: 348  notearg
+00112: 348  call 0
+00115: 348  ifeq 158 (+43)
+00120: 349  name "xs"
+00125: 349  getprop "Views"
+00130: 349  getprop "Mgr"
+00135: 349  dup
+00136: 349  callprop "showToastByStringKey"
+00141: 349  swap
+00142: 349  notearg
+00143: 349  string "str_combat_max"
+00148: 349  notearg
+00149: 349  call 1
+00152: 349  pop
+00153: 350  goto 240 (+87)
+00158: 352  this
+00159: 352  getprop "soulsClone"
+00164: 352  getlocal 0
+00167: 352  getelem
+00168: 352  dup
+00169: 352  callprop "setSelectNum"
+00174: 352  swap
+00175: 352  notearg
+00176: 352  this
+00177: 352  dup
+00178: 352  callprop "getMaxNeedNum"
+00183: 352  swap
+00184: 352  notearg
+00185: 352  this
+00186: 352  getprop "soulsClone"
+00191: 352  getlocal 0
+00194: 352  getelem
+00195: 352  notearg
+00196: 352  call 1
+00199: 352  notearg
+00200: 352  call 1
+00203: 352  pop
+00204: 346  localinc 11
+00207: 346  getlocal 0
+00210: 346  pos
+00211: 346  dup
+00212: 346  one
+00213: 346  add
+00214: 346  setlocal 0
+00217: 346  pop
+00218: 346  pop
+00219: 346  loopentry
+00220: 346  getlocal 0
+00223: 346  this
+00224: 346  getprop "soulsClone"
+00229: 346  length "length"
+00234: 346  lt
+00235: 346  ifne 61 (-174)
+00240: 355  this
+00241: 355  getprop "soulTableView"
+00246: 355  dup
+00247: 355  callprop "refreshDataAndReload"
+00252: 355  swap
+00253: 355  notearg
+00254: 355  call 0
+00257: 355  pop
+00258: 356  this
+00259: 356  getprop "notify"
+00264: 356  dup
+00265: 356  callprop "postNotification"
+00270: 356  swap
+00271: 356  notearg
+00272: 356  name "xs"
+00277: 356  getprop "Views"
+00282: 356  getprop "CombatUpgradeView_Notify_SoulSelectChange"
+00287: 356  notearg
+00288: 356  call 1
+00291: 356  pop
+00292: 356  goto 562 (+270)
+00297: 357  this
+00298: 357  getprop "miniPageView"
+00303: 357  dup
+00304: 357  callprop "getCurSelPage"
+00309: 357  swap
+00310: 357  notearg
+00311: 357  call 0
+00314: 357  one
+00315: 357  stricteq
+00316: 357  ifeq 562 (+246)
+00321: 359  zero
+00322: 359  setlocal 0
+00325: 359  pop
+00326: 359  goto 489 (+163)
+00331: 360  loophead
+00332: 360  this
+00333: 360  getprop "generals"
+00338: 360  getlocal 0
+00341: 360  getelem
+00342: 360  dup
+00343: 360  callprop "getModel"
+00348: 360  swap
+00349: 360  notearg
+00350: 360  call 0
+00353: 360  dup
+00354: 360  callprop "getGrade"
+00359: 360  swap
+00360: 360  notearg
+00361: 360  call 0
+00364: 360  getarg 0
+00367: 360  stricteq
+00368: 360  ifeq 474 (+106)
+00373: 361  this
+00374: 361  dup
+00375: 361  callprop "isToMaxLevel"
+00380: 361  swap
+00381: 361  notearg
+00382: 361  call 0
+00385: 361  ifeq 428 (+43)
+00390: 362  name "xs"
+00395: 362  getprop "Views"
+00400: 362  getprop "Mgr"
+00405: 362  dup
+00406: 362  callprop "showToastByStringKey"
+00411: 362  swap
+00412: 362  notearg
+00413: 362  string "str_combat_max"
+00418: 362  notearg
+00419: 362  call 1
+00422: 362  pop
+00423: 363  goto 510 (+87)
+00428: 365  this
+00429: 365  getprop "generals"
+00434: 365  getlocal 0
+00437: 365  getelem
+00438: 365  dup
+00439: 365  callprop "setSelectNum"
+00444: 365  swap
+00445: 365  notearg
+00446: 365  this
+00447: 365  dup
+00448: 365  callprop "getMaxNeedNum"
+00453: 365  swap
+00454: 365  notearg
+00455: 365  this
+00456: 365  getprop "generals"
+00461: 365  getlocal 0
+00464: 365  getelem
+00465: 365  notearg
+00466: 365  call 1
+00469: 365  notearg
+00470: 365  call 1
+00473: 365  pop
+00474: 359  localinc 11
+00477: 359  getlocal 0
+00480: 359  pos
+00481: 359  dup
+00482: 359  one
+00483: 359  add
+00484: 359  setlocal 0
+00487: 359  pop
+00488: 359  pop
+00489: 359  loopentry
+00490: 359  getlocal 0
+00493: 359  this
+00494: 359  getprop "generals"
+00499: 359  length "length"
+00504: 359  lt
+00505: 359  ifne 331 (-174)
+00510: 368  this
+00511: 368  getprop "generalTableView"
+00516: 368  dup
+00517: 368  callprop "refreshDataAndReload"
+00522: 368  swap
+00523: 368  notearg
+00524: 368  call 0
+00527: 368  pop
+00528: 369  this
+00529: 369  getprop "notify"
+00534: 369  dup
+00535: 369  callprop "postNotification"
+00540: 369  swap
+00541: 369  notearg
+00542: 369  name "xs"
+00547: 369  getprop "Views"
+00552: 369  getprop "CombatUpgradeView_Notify_GeneralSelectChange"
+00557: 369  notearg
+00558: 369  call 1
+00561: 369  pop
+00562: 370  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:341 ---
+;; function object[17] selectAllOnce
+;; function metadata object[17] nargs=1 bindings=2
+;; arg[0] grade
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:373 ---
+loc   line  op
+----- ----  --
+main:
+00000: 375  this
+00001: 375  dup
+00002: 375  callprop "isToMaxLevel"
+00007: 375  swap
+00008: 375  notearg
+00009: 375  call 0
+00012: 375  ifeq 52 (+40)
+00017: 376  name "xs"
+00022: 376  getprop "Views"
+00027: 376  getprop "Mgr"
+00032: 376  dup
+00033: 376  callprop "showToastByStringKey"
+00038: 376  swap
+00039: 376  notearg
+00040: 376  string "str_combat_max"
+00045: 376  notearg
+00046: 376  call 1
+00049: 376  pop
+00050: 377  undefined
+00051: 377  return
+00052: 380  this
+00053: 380  getprop "miniPageView"
+00058: 380  dup
+00059: 380  callprop "getCurSelPage"
+00064: 380  swap
+00065: 380  notearg
+00066: 380  call 0
+00069: 380  zero
+00070: 380  stricteq
+00071: 380  ifeq 243 (+172)
+00076: 382  zero
+00077: 382  setlocal 0
+00080: 382  pop
+00081: 382  goto 165 (+84)
+00086: 383  loophead
+00087: 383  this
+00088: 383  getprop "soulsClone"
+00093: 383  getlocal 0
+00096: 383  getelem
+00097: 383  dup
+00098: 383  callprop "getModel"
+00103: 383  swap
+00104: 383  notearg
+00105: 383  call 0
+00108: 383  dup
+00109: 383  callprop "getGrade"
+00114: 383  swap
+00115: 383  notearg
+00116: 383  call 0
+00119: 383  getarg 0
+00122: 383  stricteq
+00123: 383  ifeq 150 (+27)
+00128: 384  this
+00129: 384  getprop "soulsClone"
+00134: 384  getlocal 0
+00137: 384  getelem
+00138: 384  dup
+00139: 384  callprop "addSelectNum"
+00144: 384  swap
+00145: 384  notearg
+00146: 384  call 0
+00149: 384  pop
+00150: 382  localinc 11
+00153: 382  getlocal 0
+00156: 382  pos
+00157: 382  dup
+00158: 382  one
+00159: 382  add
+00160: 382  setlocal 0
+00163: 382  pop
+00164: 382  pop
+00165: 382  loopentry
+00166: 382  getlocal 0
+00169: 382  this
+00170: 382  getprop "soulsClone"
+00175: 382  length "length"
+00180: 382  lt
+00181: 382  ifne 86 (-95)
+00186: 387  this
+00187: 387  getprop "soulTableView"
+00192: 387  dup
+00193: 387  callprop "refreshDataAndReload"
+00198: 387  swap
+00199: 387  notearg
+00200: 387  call 0
+00203: 387  pop
+00204: 388  this
+00205: 388  getprop "notify"
+00210: 388  dup
+00211: 388  callprop "postNotification"
+00216: 388  swap
+00217: 388  notearg
+00218: 388  name "xs"
+00223: 388  getprop "Views"
+00228: 388  getprop "CombatUpgradeView_Notify_SoulSelectChange"
+00233: 388  notearg
+00234: 388  call 1
+00237: 388  pop
+00238: 388  goto 429 (+191)
+00243: 389  this
+00244: 389  getprop "miniPageView"
+00249: 389  dup
+00250: 389  callprop "getCurSelPage"
+00255: 389  swap
+00256: 389  notearg
+00257: 389  call 0
+00260: 389  one
+00261: 389  stricteq
+00262: 389  ifeq 429 (+167)
+00267: 391  zero
+00268: 391  setlocal 0
+00271: 391  pop
+00272: 391  goto 356 (+84)
+00277: 392  loophead
+00278: 392  this
+00279: 392  getprop "generals"
+00284: 392  getlocal 0
+00287: 392  getelem
+00288: 392  dup
+00289: 392  callprop "getModel"
+00294: 392  swap
+00295: 392  notearg
+00296: 392  call 0
+00299: 392  dup
+00300: 392  callprop "getGrade"
+00305: 392  swap
+00306: 392  notearg
+00307: 392  call 0
+00310: 392  getarg 0
+00313: 392  stricteq
+00314: 392  ifeq 341 (+27)
+00319: 393  this
+00320: 393  getprop "generals"
+00325: 393  getlocal 0
+00328: 393  getelem
+00329: 393  dup
+00330: 393  callprop "addSelectNum"
+00335: 393  swap
+00336: 393  notearg
+00337: 393  call 0
+00340: 393  pop
+00341: 391  localinc 11
+00344: 391  getlocal 0
+00347: 391  pos
+00348: 391  dup
+00349: 391  one
+00350: 391  add
+00351: 391  setlocal 0
+00354: 391  pop
+00355: 391  pop
+00356: 391  loopentry
+00357: 391  getlocal 0
+00360: 391  this
+00361: 391  getprop "generals"
+00366: 391  length "length"
+00371: 391  lt
+00372: 391  ifne 277 (-95)
+00377: 396  this
+00378: 396  getprop "generalTableView"
+00383: 396  dup
+00384: 396  callprop "refreshDataAndReload"
+00389: 396  swap
+00390: 396  notearg
+00391: 396  call 0
+00394: 396  pop
+00395: 397  this
+00396: 397  getprop "notify"
+00401: 397  dup
+00402: 397  callprop "postNotification"
+00407: 397  swap
+00408: 397  notearg
+00409: 397  name "xs"
+00414: 397  getprop "Views"
+00419: 397  getprop "CombatUpgradeView_Notify_GeneralSelectChange"
+00424: 397  notearg
+00425: 397  call 1
+00428: 397  pop
+00429: 398  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:373 ---
+;; function object[18] clearSelect
+;; function metadata object[18] nargs=0 bindings=1
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:402 ---
+loc   line  op
+----- ----  --
+main:
+00000: 404  zero
+00001: 404  setlocal 0
+00004: 404  pop
+00005: 404  goto 48 (+43)
+00010: 405  loophead
+00011: 405  this
+00012: 405  getprop "generals"
+00017: 405  getlocal 0
+00020: 405  getelem
+00021: 405  dup
+00022: 405  callprop "reset"
+00027: 405  swap
+00028: 405  notearg
+00029: 405  call 0
+00032: 405  pop
+00033: 404  localinc 11
+00036: 404  getlocal 0
+00039: 404  pos
+00040: 404  dup
+00041: 404  one
+00042: 404  add
+00043: 404  setlocal 0
+00046: 404  pop
+00047: 404  pop
+00048: 404  loopentry
+00049: 404  getlocal 0
+00052: 404  this
+00053: 404  getprop "generals"
+00058: 404  length "length"
+00063: 404  lt
+00064: 404  ifne 10 (-54)
+00069: 408  zero
+00070: 408  setlocal 0
+00073: 408  pop
+00074: 408  goto 117 (+43)
+00079: 409  loophead
+00080: 409  this
+00081: 409  getprop "soulsClone"
+00086: 409  getlocal 0
+00089: 409  getelem
+00090: 409  dup
+00091: 409  callprop "reset"
+00096: 409  swap
+00097: 409  notearg
+00098: 409  call 0
+00101: 409  pop
+00102: 408  localinc 11
+00105: 408  getlocal 0
+00108: 408  pos
+00109: 408  dup
+00110: 408  one
+00111: 408  add
+00112: 408  setlocal 0
+00115: 408  pop
+00116: 408  pop
+00117: 408  loopentry
+00118: 408  getlocal 0
+00121: 408  this
+00122: 408  getprop "soulsClone"
+00127: 408  length "length"
+00132: 408  lt
+00133: 408  ifne 79 (-54)
+00138: 412  this
+00139: 412  getprop "miniPageView"
+00144: 412  dup
+00145: 412  callprop "getCurSelPage"
+00150: 412  swap
+00151: 412  notearg
+00152: 412  call 0
+00155: 412  zero
+00156: 412  stricteq
+00157: 412  ifeq 185 (+28)
+00162: 413  this
+00163: 413  getprop "soulTableView"
+00168: 413  dup
+00169: 413  callprop "refreshDataAndReload"
+00174: 413  swap
+00175: 413  notearg
+00176: 413  call 0
+00179: 413  pop
+00180: 413  goto 227 (+47)
+00185: 414  this
+00186: 414  getprop "miniPageView"
+00191: 414  dup
+00192: 414  callprop "getCurSelPage"
+00197: 414  swap
+00198: 414  notearg
+00199: 414  call 0
+00202: 414  one
+00203: 414  stricteq
+00204: 414  ifeq 227 (+23)
+00209: 415  this
+00210: 415  getprop "generalTableView"
+00215: 415  dup
+00216: 415  callprop "refreshDataAndReload"
+00221: 415  swap
+00222: 415  notearg
+00223: 415  call 0
+00226: 415  pop
+00227: 416  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:402 ---
+;; function object[19] getNotify
+;; function metadata object[19] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:419 ---
+loc   line  op
+----- ----  --
+main:
+00000: 420  this
+00001: 420  getprop "notify"
+00006: 420  return
+00007: 420  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:419 ---
+;; function object[20] setBaseTouchPriority
+;; function metadata object[20] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:423 ---
+loc   line  op
+----- ----  --
+main:
+00000: 424  this
+00001: 424  getarg 0
+00004: 424  setprop "m_baseTouchPriority"
+00009: 424  pop
+00010: 425  this
+00011: 425  getprop "m_btn_allGold"
+00016: 425  dup
+00017: 425  callprop "setTouchPriority"
+00022: 425  swap
+00023: 425  notearg
+00024: 425  this
+00025: 425  getprop "m_baseTouchPriority"
+00030: 425  int8 20
+00032: 425  sub
+00033: 425  notearg
+00034: 425  call 1
+00037: 425  pop
+00038: 426  this
+00039: 426  getprop "m_btn_allSilver"
+00044: 426  dup
+00045: 426  callprop "setTouchPriority"
+00050: 426  swap
+00051: 426  notearg
+00052: 426  this
+00053: 426  getprop "m_baseTouchPriority"
+00058: 426  int8 20
+00060: 426  sub
+00061: 426  notearg
+00062: 426  call 1
+00065: 426  pop
+00066: 427  this
+00067: 427  getprop "m_btn_allCopper"
+00072: 427  dup
+00073: 427  callprop "setTouchPriority"
+00078: 427  swap
+00079: 427  notearg
+00080: 427  this
+00081: 427  getprop "m_baseTouchPriority"
+00086: 427  int8 20
+00088: 427  sub
+00089: 427  notearg
+00090: 427  call 1
+00093: 427  pop
+00094: 429  this
+00095: 429  getprop "m_btn_confirm"
+00100: 429  dup
+00101: 429  callprop "setTouchPriority"
+00106: 429  swap
+00107: 429  notearg
+00108: 429  this
+00109: 429  getprop "m_baseTouchPriority"
+00114: 429  int8 20
+00116: 429  sub
+00117: 429  notearg
+00118: 429  call 1
+00121: 429  pop
+00122: 430  this
+00123: 430  getprop "m_listBg"
+00128: 430  dup
+00129: 430  callprop "setTouchPriority"
+00134: 430  swap
+00135: 430  notearg
+00136: 430  this
+00137: 430  getprop "m_baseTouchPriority"
+00142: 430  int8 19
+00144: 430  sub
+00145: 430  notearg
+00146: 430  call 1
+00149: 430  pop
+00150: 430  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:423 ---
+;; function object[21] create
+;; function metadata object[21] nargs=1 bindings=2
+;; arg[0] combatInfo
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:454 ---
+loc   line  op
+----- ----  --
+main:
+00000: 455  name "xs"
+00005: 455  getprop "Views"
+00010: 455  getprop "CombatUpgradeView"
+00015: 455  undefined
+00016: 455  notearg
+00017: 455  new 0
+00020: 455  setlocal 0
+00023: 455  pop
+00024: 456  getlocal 0
+00027: 456  and 51 (+24)
+00032: 456  pop
+00033: 456  getlocal 0
+00036: 456  dup
+00037: 456  callprop "init"
+00042: 456  swap
+00043: 456  notearg
+00044: 456  getarg 0
+00047: 456  notearg
+00048: 456  call 1
+00051: 456  ifeq 60 (+9)
+00056: 457  getlocal 0
+00059: 457  return
+00060: 459  null
+00061: 459  return
+00062: 459  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:454 ---
+;; function object[22] ctor
+;; function metadata object[22] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:465 ---
+loc   line  op
+----- ----  --
+main:
+00000: 466  this
+00001: 466  dup
+00002: 466  callprop "_super"
+00007: 466  swap
+00008: 466  notearg
+00009: 466  call 0
+00012: 466  pop
+00013: 467  name "cc"
+00018: 467  dup
+00019: 467  callprop "associateWithNative"
+00024: 467  swap
+00025: 467  notearg
+00026: 467  this
+00027: 467  notearg
+00028: 467  name "cc"
+00033: 467  getprop "Scene"
+00038: 467  notearg
+00039: 467  call 2
+00042: 467  pop
+00043: 467  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:465 ---
+;; function object[23] init
+;; function metadata object[23] nargs=1 bindings=5
+;; arg[0] combatInfo
+;; local[0] visibleSize
+;; local[1] playerInfo
+;; local[2] pageView
+;; local[3] combatUpgradeView
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:470 ---
+loc   line  op
+----- ----  --
+main:
+00000: 472  name "cc"
+00005: 472  getprop "Director"
+00010: 472  dup
+00011: 472  callprop "getInstance"
+00016: 472  swap
+00017: 472  notearg
+00018: 472  call 0
+00021: 472  dup
+00022: 472  callprop "getVisibleSize"
+00027: 472  swap
+00028: 472  notearg
+00029: 472  call 0
+00032: 472  setlocal 0
+00035: 472  pop
+00036: 474  name "xs"
+00041: 474  getprop "Tools"
+00046: 474  getprop "UI"
+00051: 474  dup
+00052: 474  callprop "addCommonBg"
+00057: 474  swap
+00058: 474  notearg
+00059: 474  this
+00060: 474  notearg
+00061: 474  true
+00062: 474  notearg
+00063: 474  true
+00064: 474  notearg
+00065: 474  call 3
+00068: 474  pop
+00069: 477  name "xs"
+00074: 477  getprop "Views"
+00079: 477  getprop "PlayerInfoBannerSimpleView"
+00084: 477  dup
+00085: 477  callprop "create"
+00090: 477  swap
+00091: 477  notearg
+00092: 477  call 0
+00095: 477  setlocal 1
+00098: 477  pop
+00099: 478  getlocal 1
+00102: 478  dup
+00103: 478  callprop "setAnchorPoint"
+00108: 478  swap
+00109: 478  notearg
+00110: 478  name "cc"
+00115: 478  dup
+00116: 478  callprop "p"
+00121: 478  swap
+00122: 478  notearg
+00123: 478  zero
+00124: 478  notearg
+00125: 478  one
+00126: 478  notearg
+00127: 478  call 2
+00130: 478  notearg
+00131: 478  call 1
+00134: 478  pop
+00135: 479  name "xs"
+00140: 479  getprop "Utils"
+00145: 479  getprop "Node"
+00150: 479  dup
+00151: 479  callprop "attachNodes"
+00156: 479  swap
+00157: 479  notearg
+00158: 479  this
+00159: 479  notearg
+00160: 479  getlocal 1
+00163: 479  notearg
+00164: 479  newinit 1
+00169: 479  string "lt"
+00174: 479  initprop "desc"
+00179: 479  true
+00180: 479  initprop "sc"
+00185: 479  endinit
+00186: 479  notearg
+00187: 479  call 3
+00190: 479  pop
+00191: 482  name "xs"
+00196: 482  getprop "Views"
+00201: 482  getprop "TablePage"
+00206: 482  dup
+00207: 482  callprop "create"
+00212: 482  swap
+00213: 482  notearg
+00214: 482  name "cc"
+00219: 482  dup
+00220: 482  callprop "size"
+00225: 482  swap
+00226: 482  notearg
+00227: 482  uint16 846
+00230: 482  notearg
+00231: 482  getlocal 0
+00234: 482  getprop "height"
+00239: 482  int8 56
+00241: 482  sub
+00242: 482  notearg
+00243: 482  call 2
+00246: 482  notearg
+00247: 482  call 1
+00250: 482  setlocal 2
+00253: 482  pop
+00254: 483  name "xs"
+00259: 483  getprop "Views"
+00264: 483  getprop "CombatUpgradeView"
+00269: 483  dup
+00270: 483  callprop "create"
+00275: 483  swap
+00276: 483  notearg
+00277: 483  getarg 0
+00280: 483  notearg
+00281: 483  call 1
+00284: 483  setlocal 3
+00287: 483  pop
+00288: 484  getlocal 2
+00291: 484  dup
+00292: 484  callprop "addPage"
+00297: 484  swap
+00298: 484  notearg
+00299: 484  name "xs"
+00304: 484  getprop "Tools"
+00309: 484  getprop "String"
+00314: 484  dup
+00315: 484  callprop "createString"
+00320: 484  swap
+00321: 484  notearg
+00322: 484  string "combatUpgrade"
+00327: 484  notearg
+00328: 484  call 1
+00331: 484  notearg
+00332: 484  getlocal 3
+00335: 484  notearg
+00336: 484  call 2
+00339: 484  pop
+00340: 485  name "xs"
+00345: 485  getprop "Utils"
+00350: 485  getprop "Node"
+00355: 485  dup
+00356: 485  callprop "attachNodes"
+00361: 485  swap
+00362: 485  notearg
+00363: 485  this
+00364: 485  notearg
+00365: 485  getlocal 2
+00368: 485  notearg
+00369: 485  newinit 1
+00374: 485  string "lb"
+00379: 485  initprop "desc"
+00384: 485  true
+00385: 485  initprop "sc"
+00390: 485  endinit
+00391: 485  notearg
+00392: 485  name "xs"
+00397: 485  getprop "Cfg"
+00402: 485  getprop "Scene"
+00407: 485  getprop "SkillScene"
+00412: 485  getprop "pageView"
+00417: 485  notearg
+00418: 485  call 4
+00421: 485  pop
+00422: 489  this
+00423: 489  name "xs"
+00428: 489  getprop "Tools"
+00433: 489  getprop "UI"
+00438: 489  dup
+00439: 489  callprop "addShortcutBoard"
+00444: 489  swap
+00445: 489  notearg
+00446: 489  this
+00447: 489  notearg
+00448: 489  true
+00449: 489  notearg
+00450: 489  call 2
+00453: 489  setprop "sideMenu"
+00458: 489  pop
+00459: 491  true
+00460: 491  return
+00461: 491  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:470 ---
+;; function object[24] create
+;; function metadata object[24] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:495 ---
+loc   line  op
+----- ----  --
+main:
+00000: 496  name "xs"
+00005: 496  getprop "Scene"
+00010: 496  getprop "CombatUpgradeScene"
+00015: 496  undefined
+00016: 496  notearg
+00017: 496  new 0
+00020: 496  setlocal 0
+00023: 496  pop
+00024: 497  getlocal 0
+00027: 497  and 56 (+29)
+00032: 497  pop
+00033: 497  getlocal 0
+00036: 497  dup
+00037: 497  callprop "init"
+00042: 497  swap
+00043: 497  notearg
+00044: 497  getarg 0
+00047: 497  getprop "combatInfo"
+00052: 497  notearg
+00053: 497  call 1
+00056: 497  ifeq 65 (+9)
+00061: 498  getlocal 0
+00064: 498  return
+00065: 500  null
+00066: 500  return
+00067: 500  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatUpgradeScene.js:495 ---

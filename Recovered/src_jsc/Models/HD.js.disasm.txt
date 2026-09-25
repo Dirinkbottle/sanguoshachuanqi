@@ -1,0 +1,900 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/HD.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=93 object[5]
+;; FUNCTION-MAP kind=lambda offset=103 object[6]
+;; FUNCTION-MAP kind=lambda offset=113 object[7]
+;; FUNCTION-MAP kind=lambda offset=123 object[8]
+;; FUNCTION-MAP kind=lambda offset=133 object[9]
+;; FUNCTION-MAP kind=lambda offset=169 object[10]
+;; FUNCTION-MAP kind=lambda offset=195 object[11]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   1  name "xs"
+00005:   1  getprop "Models"
+00010:   1  name "cc"
+00015:   1  getprop "Class"
+00020:   1  dup
+00021:   1  callprop "extend"
+00026:   1  swap
+00027:   1  notearg
+00028:   1  newinit 1
+00033:   2  string "HDModel"
+00038:   2  initprop "name"
+00043:   3  lambda (function () {
+    [sourceless code]
+})
+00048:   3  initprop "ctor"
+00053:   6  lambda (function () {
+    [sourceless code]
+})
+00058:   6  initprop "init"
+00063:  19  lambda (function () {
+    [sourceless code]
+})
+00068:  19  initprop "addQuery"
+00073:  45  lambda (function () {
+    [sourceless code]
+})
+00078:  45  initprop "dequery"
+00083:  52  lambda (function () {
+    [sourceless code]
+})
+00088:  52  initprop "dequeryAll"
+00093:  57  lambda (function () {
+    [sourceless code]
+})
+00098:  57  initprop "_postNotify"
+00103:  70  lambda (function () {
+    [sourceless code]
+})
+00108:  70  initprop "addObserver"
+00113:  76  lambda (function () {
+    [sourceless code]
+})
+00118:  76  initprop "_addObserver"
+00123:  86  lambda (function () {
+    [sourceless code]
+})
+00128:  86  initprop "_observerExisted"
+00133: 104  lambda (function () {
+    [sourceless code]
+})
+00138: 104  initprop "_removeObserver"
+00143: 104  endinit
+00144: 104  notearg
+00145: 104  call 1
+00148: 104  setprop "HDModel"
+00153: 104  popv
+00154: 123  name "xs"
+00159: 123  getprop "Models"
+00164: 123  getprop "HDModel"
+00169: 123  lambda (function () {
+    [sourceless code]
+})
+00174: 123  setprop "create"
+00179: 123  popv
+00180: 131  name "xs"
+00185: 131  getprop "Models"
+00190: 131  getprop "HDModel"
+00195: 131  lambda (function () {
+    [sourceless code]
+})
+00200: 131  setprop "getInstance"
+00205: 131  popv
+00206: 140  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:3 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  dup
+00006:   4  callprop "log"
+00011:   4  swap
+00012:   4  notearg
+00013:   4  string "HDModel ctor"
+00018:   4  notearg
+00019:   4  call 1
+00022:   4  pop
+00023:   4  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:3 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] directoryPath
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  dup
+00006:   7  callprop "log"
+00011:   7  swap
+00012:   7  notearg
+00013:   7  string "HDModel init"
+00018:   7  notearg
+00019:   7  call 1
+00022:   7  pop
+00023:   8  getarg 0
+00026:   8  getprop "directoryName"
+00031:   8  null
+00032:   8  ne
+00033:   8  ifeq 148 (+115)
+00038:  10  name "cc"
+00043:  10  getprop "FileUtils"
+00048:  10  dup
+00049:  10  callprop "getInstance"
+00054:  10  swap
+00055:  10  notearg
+00056:  10  call 0
+00059:  10  dup
+00060:  10  callprop "getWritablePath"
+00065:  10  swap
+00066:  10  notearg
+00067:  10  call 0
+00070:  10  getarg 0
+00073:  10  getprop "directoryName"
+00078:  10  add
+00079:  10  setlocal 0
+00082:  10  pop
+00083:  11  name "xs"
+00088:  11  getprop "JsbConnecter"
+00093:  11  dup
+00094:  11  callprop "getInstance"
+00099:  11  swap
+00100:  11  notearg
+00101:  11  call 0
+00104:  11  dup
+00105:  11  callprop "invoke"
+00110:  11  swap
+00111:  11  notearg
+00112:  11  string "Cfg"
+00117:  11  notearg
+00118:  11  string "mkdir"
+00123:  11  notearg
+00124:  11  getlocal 0
+00127:  11  notearg
+00128:  11  call 3
+00131:  11  pop
+00132:  12  this
+00133:  12  getlocal 0
+00136:  12  string "/"
+00141:  12  add
+00142:  12  setprop "_rootDir"
+00147:  12  pop
+00148:  14  this
+00149:  14  name "buckets"
+00154:  14  getprop "LinkedList"
+00159:  14  undefined
+00160:  14  notearg
+00161:  14  new 0
+00164:  14  setprop "_readyObserver"
+00169:  14  pop
+00170:  15  this
+00171:  15  name "buckets"
+00176:  15  getprop "LinkedList"
+00181:  15  undefined
+00182:  15  notearg
+00183:  15  new 0
+00186:  15  setprop "_unreadyObserver"
+00191:  15  pop
+00192:  16  true
+00193:  16  return
+00194:  16  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:6 ---
+;; function object[2] addQuery
+;; function metadata object[2] nargs=4 bindings=7
+;; arg[0] FileName
+;; arg[1] target
+;; arg[2] readyFunc
+;; arg[3] unreadyFunc
+;; local[0] filepath
+;; local[1] url
+;; local[2] _readyFunc
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=224 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:19 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  this
+00001:  23  dup
+00002:  23  callprop "addObserver"
+00007:  23  swap
+00008:  23  notearg
+00009:  23  getaliasedvar "FileName" (hops = 0, slot = 2)
+00018:  23  notearg
+00019:  23  getarg 1
+00022:  23  notearg
+00023:  23  getarg 2
+00026:  23  notearg
+00027:  23  getarg 3
+00030:  23  notearg
+00031:  23  call 4
+00034:  23  pop
+00035:  25  this
+00036:  25  getprop "_rootDir"
+00041:  25  getaliasedvar "FileName" (hops = 0, slot = 2)
+00050:  25  add
+00051:  25  setlocal 0
+00054:  25  pop
+00055:  26  name "cc"
+00060:  26  getprop "FileUtils"
+00065:  26  dup
+00066:  26  callprop "getInstance"
+00071:  26  swap
+00072:  26  notearg
+00073:  26  call 0
+00076:  26  dup
+00077:  26  callprop "isFileExist"
+00082:  26  swap
+00083:  26  notearg
+00084:  26  getlocal 0
+00087:  26  notearg
+00088:  26  call 1
+00091:  26  true
+00092:  26  eq
+00093:  26  ifeq 133 (+40)
+00098:  27  this
+00099:  27  dup
+00100:  27  callprop "_postNotify"
+00105:  27  swap
+00106:  27  notearg
+00107:  27  getaliasedvar "FileName" (hops = 0, slot = 2)
+00116:  27  notearg
+00117:  27  this
+00118:  27  getprop "_readyObserver"
+00123:  27  notearg
+00124:  27  call 2
+00127:  27  pop
+00128:  27  goto 281 (+153)
+00133:  30  this
+00134:  30  dup
+00135:  30  callprop "_postNotify"
+00140:  30  swap
+00141:  30  notearg
+00142:  30  getaliasedvar "FileName" (hops = 0, slot = 2)
+00151:  30  notearg
+00152:  30  this
+00153:  30  getprop "_unreadyObserver"
+00158:  30  notearg
+00159:  30  call 2
+00162:  30  pop
+00163:  32  name "xs"
+00168:  32  getprop "Cfg"
+00173:  32  getprop "Url"
+00178:  32  getprop "DownloadAddr"
+00183:  32  getaliasedvar "FileName" (hops = 0, slot = 2)
+00192:  32  add
+00193:  32  setlocal 1
+00196:  32  pop
+00197:  33  name "xs"
+00202:  33  dup
+00203:  33  callprop "log"
+00208:  33  swap
+00209:  33  notearg
+00210:  33  string "Download Url is:"
+00215:  33  getlocal 1
+00218:  33  add
+00219:  33  notearg
+00220:  33  call 1
+00223:  33  pop
+00224:  34  lambda (function () {
+    [sourceless code]
+})
+00229:  34  setlocal 2
+00232:  34  pop
+00233:  41  name "xs"
+00238:  41  getprop "Views"
+00243:  41  getprop "Mgr"
+00248:  41  dup
+00249:  41  callprop "reqDownload"
+00254:  41  swap
+00255:  41  notearg
+00256:  41  getlocal 1
+00259:  41  notearg
+00260:  41  getlocal 2
+00263:  41  dup
+00264:  41  callprop "bind"
+00269:  41  swap
+00270:  41  notearg
+00271:  41  this
+00272:  41  notearg
+00273:  41  call 1
+00276:  41  notearg
+00277:  41  call 2
+00280:  41  pop
+00281:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:19 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] filepath
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  name "xs"
+00005:  35  dup
+00006:  35  callprop "log"
+00011:  35  swap
+00012:  35  notearg
+00013:  35  string "Download is all right"
+00018:  35  notearg
+00019:  35  call 1
+00022:  35  pop
+00023:  36  this
+00024:  36  getprop "_rootDir"
+00029:  36  getaliasedvar "FileName" (hops = 0, slot = 2)
+00038:  36  add
+00039:  36  setlocal 0
+00042:  36  pop
+00043:  38  getarg 0
+00046:  38  dup
+00047:  38  callprop "writeDataToFile"
+00052:  38  swap
+00053:  38  notearg
+00054:  38  getlocal 0
+00057:  38  notearg
+00058:  38  call 1
+00061:  38  pop
+00062:  39  this
+00063:  39  dup
+00064:  39  callprop "_postNotify"
+00069:  39  swap
+00070:  39  notearg
+00071:  39  getaliasedvar "FileName" (hops = 0, slot = 2)
+00080:  39  notearg
+00081:  39  this
+00082:  39  getprop "_readyObserver"
+00087:  39  notearg
+00088:  39  call 2
+00091:  39  pop
+00092:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:34 ---
+;; function object[3] dequery
+;; function metadata object[3] nargs=4 bindings=4
+;; arg[0] FileName
+;; arg[1] target
+;; arg[2] readyFunc
+;; arg[3] unreadyFunc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  this
+00001:  47  dup
+00002:  47  callprop "_removeObserver"
+00007:  47  swap
+00008:  47  notearg
+00009:  47  getarg 0
+00012:  47  notearg
+00013:  47  getarg 1
+00016:  47  notearg
+00017:  47  getarg 2
+00020:  47  notearg
+00021:  47  this
+00022:  47  getprop "_readyObserver"
+00027:  47  notearg
+00028:  47  call 4
+00031:  47  pop
+00032:  49  this
+00033:  49  dup
+00034:  49  callprop "_removeObserver"
+00039:  49  swap
+00040:  49  notearg
+00041:  49  getarg 0
+00044:  49  notearg
+00045:  49  getarg 1
+00048:  49  notearg
+00049:  49  getarg 3
+00052:  49  notearg
+00053:  49  this
+00054:  49  getprop "_unreadyObserver"
+00059:  49  notearg
+00060:  49  call 4
+00063:  49  pop
+00064:  49  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:45 ---
+;; function object[4] dequeryAll
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:52 ---
+loc   line  op
+----- ----  --
+main:
+00000:  53  name "xs"
+00005:  53  dup
+00006:  53  callprop "log"
+00011:  53  swap
+00012:  53  notearg
+00013:  53  string "dequeryAll"
+00018:  53  notearg
+00019:  53  call 1
+00022:  53  pop
+00023:  54  this
+00024:  54  getprop "_readyObserver"
+00029:  54  dup
+00030:  54  callprop "clear"
+00035:  54  swap
+00036:  54  notearg
+00037:  54  call 0
+00040:  54  pop
+00041:  55  this
+00042:  55  getprop "_unreadyObserver"
+00047:  55  dup
+00048:  55  callprop "clear"
+00053:  55  swap
+00054:  55  notearg
+00055:  55  call 0
+00058:  55  pop
+00059:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:52 ---
+;; function object[5] _postNotify
+;; function metadata object[5] nargs=2 bindings=3
+;; arg[0] FileName
+;; arg[1] observerCenter
+;; local[0] callback
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=0 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:57 ---
+loc   line  op
+----- ----  --
+main:
+00000:  58  lambda (function () {
+    [sourceless code]
+})
+00005:  58  setlocal 0
+00008:  58  pop
+00009:  68  getarg 1
+00012:  68  dup
+00013:  68  callprop "forEach"
+00018:  68  swap
+00019:  68  notearg
+00020:  68  getlocal 0
+00023:  68  dup
+00024:  68  callprop "bind"
+00029:  68  swap
+00030:  68  notearg
+00031:  68  this
+00032:  68  notearg
+00033:  68  call 1
+00036:  68  notearg
+00037:  68  call 1
+00040:  68  pop
+00041:  68  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:57 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] obj
+;; local[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  getarg 0
+00003:  59  getprop "FileName"
+00008:  59  getaliasedvar "FileName" (hops = 0, slot = 2)
+00017:  59  eq
+00018:  59  ifeq 112 (+94)
+00023:  60  newinit 1
+00028:  60  endinit
+00029:  60  setlocal 0
+00032:  60  pop
+00033:  61  getlocal 0
+00036:  61  getaliasedvar "FileName" (hops = 0, slot = 2)
+00045:  61  setprop "FileName"
+00050:  61  pop
+00051:  62  getlocal 0
+00054:  62  this
+00055:  62  getprop "_rootDir"
+00060:  62  getaliasedvar "FileName" (hops = 0, slot = 2)
+00069:  62  add
+00070:  62  setprop "absoluteFilePath"
+00075:  62  pop
+00076:  63  getlocal 0
+00079:  63  getarg 0
+00082:  63  getprop "target"
+00087:  63  setprop "target"
+00092:  63  pop
+00093:  64  getarg 0
+00096:  64  dup
+00097:  64  callprop "notifyfunc"
+00102:  64  swap
+00103:  64  notearg
+00104:  64  getlocal 0
+00107:  64  notearg
+00108:  64  call 1
+00111:  64  pop
+00112:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:58 ---
+;; function object[6] addObserver
+;; function metadata object[6] nargs=4 bindings=4
+;; arg[0] FileName
+;; arg[1] target
+;; arg[2] readyFunc
+;; arg[3] unreadyFunc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:70 ---
+loc   line  op
+----- ----  --
+main:
+00000:  72  this
+00001:  72  dup
+00002:  72  callprop "_addObserver"
+00007:  72  swap
+00008:  72  notearg
+00009:  72  getarg 0
+00012:  72  notearg
+00013:  72  getarg 1
+00016:  72  notearg
+00017:  72  getarg 2
+00020:  72  notearg
+00021:  72  this
+00022:  72  getprop "_readyObserver"
+00027:  72  notearg
+00028:  72  call 4
+00031:  72  pop
+00032:  74  this
+00033:  74  dup
+00034:  74  callprop "_addObserver"
+00039:  74  swap
+00040:  74  notearg
+00041:  74  getarg 0
+00044:  74  notearg
+00045:  74  getarg 1
+00048:  74  notearg
+00049:  74  getarg 3
+00052:  74  notearg
+00053:  74  this
+00054:  74  getprop "_unreadyObserver"
+00059:  74  notearg
+00060:  74  call 4
+00063:  74  pop
+00064:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:70 ---
+;; function object[7] _addObserver
+;; function metadata object[7] nargs=4 bindings=5
+;; arg[0] FileName
+;; arg[1] target
+;; arg[2] notifyfunc
+;; arg[3] observerCenter
+;; local[0] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:76 ---
+loc   line  op
+----- ----  --
+main:
+00000:  77  this
+00001:  77  dup
+00002:  77  callprop "_observerExisted"
+00007:  77  swap
+00008:  77  notearg
+00009:  77  getarg 0
+00012:  77  notearg
+00013:  77  getarg 1
+00016:  77  notearg
+00017:  77  getarg 2
+00020:  77  notearg
+00021:  77  getarg 3
+00024:  77  notearg
+00025:  77  call 4
+00028:  77  not
+00029:  77  ifeq 99 (+70)
+00034:  78  newinit 1
+00039:  78  endinit
+00040:  78  setlocal 0
+00043:  78  pop
+00044:  79  getlocal 0
+00047:  79  getarg 0
+00050:  79  setprop "FileName"
+00055:  79  pop
+00056:  80  getlocal 0
+00059:  80  getarg 1
+00062:  80  setprop "target"
+00067:  80  pop
+00068:  81  getlocal 0
+00071:  81  getarg 2
+00074:  81  setprop "notifyfunc"
+00079:  81  pop
+00080:  82  getarg 3
+00083:  82  dup
+00084:  82  callprop "add"
+00089:  82  swap
+00090:  82  notearg
+00091:  82  getlocal 0
+00094:  82  notearg
+00095:  82  call 1
+00098:  82  pop
+00099:  84  name "xs"
+00104:  84  dup
+00105:  84  callprop "log"
+00110:  84  swap
+00111:  84  notearg
+00112:  84  string "observerCenter size is:"
+00117:  84  getarg 3
+00120:  84  dup
+00121:  84  callprop "size"
+00126:  84  swap
+00127:  84  notearg
+00128:  84  call 0
+00131:  84  add
+00132:  84  notearg
+00133:  84  call 1
+00136:  84  pop
+00137:  84  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:76 ---
+;; function object[8] _observerExisted
+;; function metadata object[8] nargs=4 bindings=6
+;; arg[0] FileName
+;; arg[1] target
+;; arg[2] notifyfunc
+;; arg[3] observerCenter
+;; local[0] result
+;; local[1] callback
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=11 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:86 ---
+loc   line  op
+----- ----  --
+main:
+00000:  87  false
+00001:  87  setaliasedvar "result" (hops = 0, slot = 4)
+00010:  87  pop
+00011:  88  lambda (function () {
+    [sourceless code]
+})
+00016:  88  setlocal 1
+00019:  88  pop
+00020: 100  getarg 3
+00023: 100  dup
+00024: 100  callprop "forEach"
+00029: 100  swap
+00030: 100  notearg
+00031: 100  getlocal 1
+00034: 100  notearg
+00035: 100  call 1
+00038: 100  pop
+00039: 102  getaliasedvar "result" (hops = 0, slot = 4)
+00048: 102  return
+00049: 102  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:86 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] obj
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:88 ---
+loc   line  op
+----- ----  --
+main:
+00000:  92  getarg 0
+00003:  92  getprop "FileName"
+00008:  92  getaliasedvar "FileName" (hops = 0, slot = 2)
+00017:  92  eq
+00018:  92  and 42 (+24)
+00023:  92  pop
+00024:  93  getarg 0
+00027:  93  getprop "target"
+00032:  93  getaliasedvar "target" (hops = 0, slot = 3)
+00041:  93  eq
+00042:  93  ifeq 60 (+18)
+00047:  94  true
+00048:  94  setaliasedvar "result" (hops = 0, slot = 4)
+00057:  94  pop
+00058:  97  false
+00059:  97  return
+00060:  98  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:88 ---
+;; function object[9] _removeObserver
+;; function metadata object[9] nargs=4 bindings=6
+;; arg[0] FileName
+;; arg[1] target
+;; arg[2] notifyfunc
+;; arg[3] observerCenter
+;; local[0] item
+;; local[1] equalsFunction
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=69 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:104 ---
+loc   line  op
+----- ----  --
+main:
+00000: 105  name "xs"
+00005: 105  dup
+00006: 105  callprop "log"
+00011: 105  swap
+00012: 105  notearg
+00013: 105  string "_removeObserver: function"
+00018: 105  notearg
+00019: 105  call 1
+00022: 105  pop
+00023: 106  newinit 1
+00028: 106  endinit
+00029: 106  setlocal 0
+00032: 106  pop
+00033: 107  getlocal 0
+00036: 107  getarg 0
+00039: 107  setprop "FileName"
+00044: 107  pop
+00045: 108  getlocal 0
+00048: 108  getarg 1
+00051: 108  setprop "target"
+00056: 108  pop
+00057: 109  getlocal 0
+00060: 109  getarg 2
+00063: 109  setprop "notifyfunc"
+00068: 109  pop
+00069: 110  lambda (function () {
+    [sourceless code]
+})
+00074: 110  setlocal 1
+00077: 110  pop
+00078: 120  getarg 3
+00081: 120  dup
+00082: 120  callprop "remove"
+00087: 120  swap
+00088: 120  notearg
+00089: 120  getlocal 0
+00092: 120  notearg
+00093: 120  getlocal 1
+00096: 120  notearg
+00097: 120  call 2
+00100: 120  pop
+00101: 120  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:104 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=2 bindings=2
+;; arg[0] element
+;; arg[1] srcItem
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:110 ---
+loc   line  op
+----- ----  --
+main:
+00000: 114  getarg 0
+00003: 114  getprop "FileName"
+00008: 114  getarg 1
+00011: 114  getprop "FileName"
+00016: 114  eq
+00017: 114  and 63 (+46)
+00022: 114  pop
+00023: 115  getarg 0
+00026: 115  getprop "target"
+00031: 115  getarg 1
+00034: 115  getprop "target"
+00039: 115  eq
+00040: 115  and 63 (+23)
+00045: 115  pop
+00046: 116  getarg 0
+00049: 116  getprop "notifyfunc"
+00054: 116  getarg 1
+00057: 116  getprop "notifyfunc"
+00062: 116  eq
+00063: 116  ifeq 70 (+7)
+00068: 117  true
+00069: 117  return
+00070: 118  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:110 ---
+;; function object[10] create
+;; function metadata object[10] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:123 ---
+loc   line  op
+----- ----  --
+main:
+00000: 124  name "xs"
+00005: 124  getprop "Models"
+00010: 124  getprop "HDModel"
+00015: 124  undefined
+00016: 124  notearg
+00017: 124  new 0
+00020: 124  setlocal 0
+00023: 124  pop
+00024: 125  getlocal 0
+00027: 125  and 51 (+24)
+00032: 125  pop
+00033: 125  getlocal 0
+00036: 125  dup
+00037: 125  callprop "init"
+00042: 125  swap
+00043: 125  notearg
+00044: 125  getarg 0
+00047: 125  notearg
+00048: 125  call 1
+00051: 125  ifeq 60 (+9)
+00056: 126  getlocal 0
+00059: 126  return
+00060: 128  name "xs"
+00065: 128  dup
+00066: 128  callprop "log"
+00071: 128  swap
+00072: 128  notearg
+00073: 128  string "Create xs.Models.HDModel error"
+00078: 128  notearg
+00079: 128  call 1
+00082: 128  pop
+00083: 129  null
+00084: 129  return
+00085: 129  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:123 ---
+;; function object[11] getInstance
+;; function metadata object[11] nargs=0 bindings=1
+;; local[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:131 ---
+loc   line  op
+----- ----  --
+main:
+00000: 133  name "xs"
+00005: 133  getprop "Models"
+00010: 133  getprop "HDModel"
+00015: 133  getprop "s_HDModel"
+00020: 133  null
+00021: 133  eq
+00022: 133  ifeq 102 (+80)
+00027: 134  newinit 1
+00032: 134  endinit
+00033: 134  setlocal 0
+00036: 134  pop
+00037: 136  getlocal 0
+00040: 136  string "HD"
+00045: 136  setprop "directoryName"
+00050: 136  pop
+00051: 137  name "xs"
+00056: 137  getprop "Models"
+00061: 137  getprop "HDModel"
+00066: 137  name "xs"
+00071: 137  getprop "Models"
+00076: 137  getprop "HDModel"
+00081: 137  dup
+00082: 137  callprop "create"
+00087: 137  swap
+00088: 137  notearg
+00089: 137  getlocal 0
+00092: 137  notearg
+00093: 137  call 1
+00096: 137  setprop "s_HDModel"
+00101: 137  pop
+00102: 139  name "xs"
+00107: 139  getprop "Models"
+00112: 139  getprop "HDModel"
+00117: 139  getprop "s_HDModel"
+00122: 139  return
+00123: 139  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/HD.js:131 ---

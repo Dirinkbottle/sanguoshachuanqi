@@ -1,0 +1,313 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/TemplateItemHp.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/TemplateItemHp.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Utils"
+00010:   8  dup
+00011:   8  callprop "extendScope"
+00016:   8  swap
+00017:   8  notearg
+00018:   9  name "xs"
+00023:   9  getprop "Cfg"
+00028:   9  getprop "Skill"
+00033:   9  getprop "template"
+00038:   9  getprop "item"
+00043:   9  notearg
+00044:  10  newinit 1
+00049:  14  newinit 1
+00054:  15  newinit 1
+00059:  16  string "to"
+00064:  16  initprop "type"
+00069:  17  string "to"
+00074:  17  initprop "belong"
+00079:  18  newarray 1
+00083:  18  string "miss"
+00088:  18  initelem_array 0
+00092:  18  endinit
+00093:  18  initprop "ignore"
+00098:  18  endinit
+00099:  18  initprop "property"
+00104:  20  newinit 1
+00109:  21  newinit 1
+00114:  21  string "DelayTime"
+00119:  21  initprop "type"
+00124:  21  one
+00125:  21  name "xs"
+00130:  21  getprop "ani_fps"
+00135:  21  div
+00136:  21  initprop "dp"
+00141:  21  endinit
+00142:  21  initprop "delay"
+00147:  22  newinit 1
+00152:  22  string "createAction"
+00157:  22  initprop "type"
+00162:  22  zero
+00163:  22  name "xs"
+00168:  22  getprop "fps"
+00173:  22  div
+00174:  22  initprop "dp"
+00179:  22  string "createUpdateHpActions"
+00184:  22  initprop "name"
+00189:  22  newinit 1
+00194:  22  string "top"
+00199:  22  initprop "type"
+00204:  22  true
+00205:  22  initprop "useStack"
+00210:  22  endinit
+00211:  22  initprop "data"
+00216:  22  endinit
+00217:  22  initprop "_update"
+00222:  22  endinit
+00223:  22  initprop "timelines"
+00228:  22  endinit
+00229:  22  initprop "TI_Hp_Sub_Top_To"
+00234:  25  newinit 1
+00239:  26  newinit 1
+00244:  27  string "to"
+00249:  27  initprop "type"
+00254:  28  string "to"
+00259:  28  initprop "belong"
+00264:  29  newarray 2
+00268:  29  string "miss"
+00273:  29  initelem_array 0
+00277:  29  string "backup"
+00282:  29  initelem_array 1
+00286:  29  endinit
+00287:  29  initprop "ignore"
+00292:  29  endinit
+00293:  29  initprop "property"
+00298:  31  newinit 1
+00303:  32  newinit 1
+00308:  32  string "DelayTime"
+00313:  32  initprop "type"
+00318:  32  int8 4
+00320:  32  name "xs"
+00325:  32  getprop "fps"
+00330:  32  div
+00331:  32  initprop "dp"
+00336:  32  endinit
+00337:  32  initprop "delay"
+00342:  33  newinit 1
+00347:  33  string "createAction"
+00352:  33  initprop "type"
+00357:  33  int8 7
+00359:  33  name "xs"
+00364:  33  getprop "fps"
+00369:  33  div
+00370:  33  initprop "dp"
+00375:  33  string "createUpdateHpActions"
+00380:  33  initprop "name"
+00385:  33  newinit 1
+00390:  33  string "bot"
+00395:  33  initprop "type"
+00400:  33  endinit
+00401:  33  initprop "data"
+00406:  33  endinit
+00407:  33  initprop "_update"
+00412:  33  endinit
+00413:  33  initprop "timelines"
+00418:  33  endinit
+00419:  33  initprop "TI_Hp_Sub_Bot_To"
+00424:  36  newinit 1
+00429:  37  string "template.item.TI_Hp_Sub_Top_To"
+00434:  37  initprop "extend"
+00439:  38  newinit 1
+00444:  39  newinit 1
+00449:  39  string "createAction"
+00454:  39  initprop "type"
+00459:  39  zero
+00460:  39  name "xs"
+00465:  39  getprop "fps"
+00470:  39  div
+00471:  39  initprop "dp"
+00476:  39  string "createUpdateHpActions"
+00481:  39  initprop "name"
+00486:  39  newinit 1
+00491:  39  string "top"
+00496:  39  initprop "type"
+00501:  39  true
+00502:  39  initprop "useStack"
+00507:  39  true
+00508:  39  initprop "add"
+00513:  39  endinit
+00514:  39  initprop "data"
+00519:  39  endinit
+00520:  39  initprop "_update"
+00525:  39  endinit
+00526:  39  initprop "timelines"
+00531:  39  endinit
+00532:  39  initprop "TI_Hp_Add_Top_To"
+00537:  42  newinit 1
+00542:  43  string "template.item.TI_Hp_Sub_Bot_To"
+00547:  43  initprop "extend"
+00552:  44  newinit 1
+00557:  45  newinit 1
+00562:  45  string "createAction"
+00567:  45  initprop "type"
+00572:  45  zero
+00573:  45  name "xs"
+00578:  45  getprop "fps"
+00583:  45  div
+00584:  45  initprop "dp"
+00589:  45  string "createUpdateHpActions"
+00594:  45  initprop "name"
+00599:  45  newinit 1
+00604:  45  string "bot"
+00609:  45  initprop "type"
+00614:  45  true
+00615:  45  initprop "add"
+00620:  45  endinit
+00621:  45  initprop "data"
+00626:  45  endinit
+00627:  45  initprop "_update"
+00632:  45  endinit
+00633:  45  initprop "timelines"
+00638:  45  endinit
+00639:  45  initprop "TI_Hp_Add_Bot_To"
+00644:  50  newinit 1
+00649:  51  string "template.item.TI_Hp_Sub_Top_To"
+00654:  51  initprop "extend"
+00659:  52  newinit 1
+00664:  53  string "from"
+00669:  53  initprop "type"
+00674:  54  string "from"
+00679:  54  initprop "belong"
+00684:  54  endinit
+00685:  54  initprop "property"
+00690:  54  endinit
+00691:  54  initprop "TI_Hp_Sub_Top_From"
+00696:  57  newinit 1
+00701:  58  string "template.item.TI_Hp_Sub_Bot_To"
+00706:  58  initprop "extend"
+00711:  59  newinit 1
+00716:  60  string "from"
+00721:  60  initprop "type"
+00726:  61  string "from"
+00731:  61  initprop "belong"
+00736:  61  endinit
+00737:  61  initprop "property"
+00742:  61  endinit
+00743:  61  initprop "TI_Hp_Sub_Bot_From"
+00748:  64  newinit 1
+00753:  65  string "template.item.TI_Hp_Add_Top_To"
+00758:  65  initprop "extend"
+00763:  66  newinit 1
+00768:  67  newinit 1
+00773:  67  newinit 1
+00778:  67  string "top"
+00783:  67  initprop "type"
+00788:  67  false
+00789:  67  initprop "useStack"
+00794:  67  true
+00795:  67  initprop "add"
+00800:  67  endinit
+00801:  67  initprop "data"
+00806:  67  endinit
+00807:  67  initprop "_update"
+00812:  67  endinit
+00813:  67  initprop "timelines"
+00818:  69  newinit 1
+00823:  70  string "from"
+00828:  70  initprop "type"
+00833:  71  string "from"
+00838:  71  initprop "belong"
+00843:  71  endinit
+00844:  71  initprop "property"
+00849:  71  endinit
+00850:  71  initprop "TI_Hp_Add_Top_From"
+00855:  75  newinit 1
+00860:  76  string "template.item.TI_Hp_Add_Bot_To"
+00865:  76  initprop "extend"
+00870:  77  newinit 1
+00875:  78  string "from"
+00880:  78  initprop "type"
+00885:  79  string "from"
+00890:  79  initprop "belong"
+00895:  79  endinit
+00896:  79  initprop "property"
+00901:  79  endinit
+00902:  79  initprop "TI_Hp_Add_Bot_From"
+00907:  87  newinit 1
+00912:  88  newinit 1
+00917:  89  string "to_hp"
+00922:  89  initprop "type"
+00927:  90  string "to"
+00932:  90  initprop "belong"
+00937:  91  newarray 2
+00941:  91  string "death"
+00946:  91  initelem_array 0
+00950:  91  string "ghost"
+00955:  91  initelem_array 1
+00959:  91  endinit
+00960:  91  initprop "trigger"
+00965:  91  endinit
+00966:  91  initprop "property"
+00971:  93  newarray 2
+00975:  94  newinit 1
+00980:  94  string "DelayTime"
+00985:  94  initprop "type"
+00990:  94  int8 34
+00992:  94  name "xs"
+00997:  94  getprop "fps"
+01002:  94  div
+01003:  94  initprop "dp"
+01008:  94  endinit
+01009:  94  initelem_array 0
+01013:  95  newinit 1
+01018:  95  string "Hide"
+01023:  95  initprop "type"
+01028:  95  endinit
+01029:  95  initelem_array 1
+01033:  95  endinit
+01034:  95  initprop "timelines"
+01039:  95  endinit
+01040:  95  initprop "TI_Hp_Hide_To"
+01045:  98  newinit 1
+01050:  99  newinit 1
+01055: 100  string "to_hp"
+01060: 100  initprop "type"
+01065: 101  string "to"
+01070: 101  initprop "belong"
+01075: 101  endinit
+01076: 101  initprop "property"
+01081: 103  newarray 1
+01085: 104  newinit 1
+01090: 104  string "Show"
+01095: 104  initprop "type"
+01100: 104  endinit
+01101: 104  initelem_array 0
+01105: 104  endinit
+01106: 104  initprop "timelines"
+01111: 104  endinit
+01112: 104  initprop "TI_Hp_Show_To"
+01117: 107  newinit 1
+01122: 108  newinit 1
+01127: 109  string "from_hp"
+01132: 109  initprop "type"
+01137: 110  string "from"
+01142: 110  initprop "belong"
+01147: 110  endinit
+01148: 110  initprop "property"
+01153: 112  newarray 1
+01157: 113  newinit 1
+01162: 113  string "Show"
+01167: 113  initprop "type"
+01172: 113  endinit
+01173: 113  initelem_array 0
+01177: 113  endinit
+01178: 113  initprop "timelines"
+01183: 113  endinit
+01184: 113  initprop "TI_Hp_Show_From"
+01189: 113  endinit
+01190: 113  notearg
+01191: 113  call 2
+01194: 113  popv
+01195: 116  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/TemplateItemHp.js:1 ---

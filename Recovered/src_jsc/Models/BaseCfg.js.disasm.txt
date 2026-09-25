@@ -1,0 +1,450 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/BaseCfg.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=48 object[0]
+;; FUNCTION-MAP kind=lambda offset=58 object[1]
+;; FUNCTION-MAP kind=lambda offset=68 object[2]
+;; FUNCTION-MAP kind=lambda offset=78 object[3]
+;; FUNCTION-MAP kind=lambda offset=88 object[4]
+;; FUNCTION-MAP kind=lambda offset=98 object[5]
+;; FUNCTION-MAP kind=lambda offset=108 object[6]
+;; FUNCTION-MAP kind=lambda offset=118 object[7]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  name "xs"
+00005:  12  getprop "Models"
+00010:  12  name "xs"
+00015:  12  getprop "Models"
+00020:  12  getprop "Base"
+00025:  12  dup
+00026:  12  callprop "extend"
+00031:  12  swap
+00032:  12  notearg
+00033:  12  newinit 1
+00038:  14  string "BaseCfg"
+00043:  14  initprop "name"
+00048:  16  lambda (function () {
+    [sourceless code]
+})
+00053:  16  initprop "init"
+00058:  28  lambda (function () {
+    [sourceless code]
+})
+00063:  28  initprop "setId"
+00068:  39  lambda (function () {
+    [sourceless code]
+})
+00073:  39  initprop "getId"
+00078:  47  lambda (function () {
+    [sourceless code]
+})
+00083:  47  initprop "readBaseData"
+00088:  60  lambda (function () {
+    [sourceless code]
+})
+00093:  60  initprop "loadJson"
+00098:  79  lambda (function () {
+    [sourceless code]
+})
+00103:  79  initprop "getBaseDataRef"
+00108:  94  lambda (function () {
+    [sourceless code]
+})
+00113:  94  initprop "getNameString"
+00118: 105  lambda (function () {
+    [sourceless code]
+})
+00123: 105  initprop "getDescString"
+00128: 105  endinit
+00129: 105  notearg
+00130: 105  call 1
+00133: 105  setprop "BaseCfg"
+00138: 105  popv
+00139: 114  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  this
+00001:  18  dup
+00002:  18  callprop "_super"
+00007:  18  swap
+00008:  18  notearg
+00009:  18  call 0
+00012:  18  pop
+00013:  21  this
+00014:  21  null
+00015:  21  setprop "id"
+00020:  21  pop
+00021:  24  true
+00022:  24  return
+00023:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:16 ---
+;; function object[1] setId
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] id
+;; local[0] _id
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  32  getarg 0
+00003:  32  or 14 (+11)
+00008:  32  pop
+00009:  32  string "empty"
+00014:  32  setlocal 0
+00017:  32  pop
+00018:  33  this
+00019:  33  dup
+00020:  33  callprop "assert"
+00025:  33  swap
+00026:  33  notearg
+00027:  33  name "xs"
+00032:  33  getprop "Utils"
+00037:  33  dup
+00038:  33  callprop "isString"
+00043:  33  swap
+00044:  33  notearg
+00045:  33  getlocal 0
+00048:  33  notearg
+00049:  33  call 1
+00052:  33  notearg
+00053:  33  string "id must be string"
+00058:  33  notearg
+00059:  33  getlocal 0
+00062:  33  notearg
+00063:  33  call 3
+00066:  33  pop
+00067:  35  this
+00068:  35  getlocal 0
+00071:  35  setprop "id"
+00076:  35  pop
+00077:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:28 ---
+;; function object[2] getId
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  name "xs"
+00005:  40  dup
+00006:  40  callprop "assert"
+00011:  40  swap
+00012:  40  notearg
+00013:  40  this
+00014:  40  getprop "id"
+00019:  40  notearg
+00020:  40  string "this.id error"
+00025:  40  notearg
+00026:  40  this
+00027:  40  getprop "name"
+00032:  40  notearg
+00033:  40  call 3
+00036:  40  pop
+00037:  41  this
+00038:  41  getprop "id"
+00043:  41  return
+00044:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:39 ---
+;; function object[3] readBaseData
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] id
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:47 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  name "xs"
+00005:  50  dup
+00006:  50  callprop "assert"
+00011:  50  swap
+00012:  50  notearg
+00013:  50  this
+00014:  50  getprop "CfgDataType"
+00019:  50  notearg
+00020:  50  string "need override CfgDataType"
+00025:  50  notearg
+00026:  50  this
+00027:  50  getprop "name"
+00032:  50  notearg
+00033:  50  call 3
+00036:  50  pop
+00037:  51  name "xs"
+00042:  51  dup
+00043:  51  callprop "assert"
+00048:  51  swap
+00049:  51  notearg
+00050:  51  getarg 0
+00053:  51  notearg
+00054:  51  string "readBaseData id error"
+00059:  51  notearg
+00060:  51  getarg 0
+00063:  51  notearg
+00064:  51  this
+00065:  51  notearg
+00066:  51  call 4
+00069:  51  pop
+00070:  53  name "xs"
+00075:  53  dup
+00076:  53  callprop "assert"
+00081:  53  swap
+00082:  53  notearg
+00083:  53  this
+00084:  53  getprop "name"
+00089:  53  notearg
+00090:  53  string "need override name"
+00095:  53  notearg
+00096:  53  this
+00097:  53  getprop "name"
+00102:  53  notearg
+00103:  53  call 3
+00106:  53  pop
+00107:  55  this
+00108:  55  dup
+00109:  55  callprop "setId"
+00114:  55  swap
+00115:  55  notearg
+00116:  55  getarg 0
+00119:  55  notearg
+00120:  55  call 1
+00123:  55  pop
+00124:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:47 ---
+;; function object[4] loadJson
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  this
+00001:  62  dup
+00002:  62  callprop "_super"
+00007:  62  swap
+00008:  62  notearg
+00009:  62  getarg 0
+00012:  62  notearg
+00013:  62  call 1
+00016:  62  pop
+00017:  68  name "xs"
+00022:  68  dup
+00023:  68  callprop "assert"
+00028:  68  swap
+00029:  68  notearg
+00030:  68  this
+00031:  68  getprop "name"
+00036:  68  notearg
+00037:  68  string "need override name"
+00042:  68  notearg
+00043:  68  this
+00044:  68  getprop "name"
+00049:  68  notearg
+00050:  68  call 3
+00053:  68  pop
+00054:  71  this
+00055:  71  dup
+00056:  71  callprop "setId"
+00061:  71  swap
+00062:  71  notearg
+00063:  71  getarg 0
+00066:  71  getprop "id"
+00071:  71  notearg
+00072:  71  call 1
+00075:  71  pop
+00076:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:60 ---
+;; function object[5] getBaseDataRef
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:79 ---
+loc   line  op
+----- ----  --
+main:
+00000:  81  name "xs"
+00005:  81  dup
+00006:  81  callprop "assert"
+00011:  81  swap
+00012:  81  notearg
+00013:  81  this
+00014:  81  getprop "id"
+00019:  81  notearg
+00020:  81  string "need id"
+00025:  81  notearg
+00026:  81  this
+00027:  81  getprop "name"
+00032:  81  notearg
+00033:  81  call 3
+00036:  81  pop
+00037:  83  this
+00038:  83  getprop "baseDataRef"
+00043:  83  not
+00044:  83  ifeq 96 (+52)
+00049:  84  this
+00050:  84  name "xs"
+00055:  84  getprop "Tools"
+00060:  84  getprop "CfgData"
+00065:  84  dup
+00066:  84  callprop "readRecordByTypeAndKey"
+00071:  84  swap
+00072:  84  notearg
+00073:  85  this
+00074:  85  getprop "CfgDataType"
+00079:  85  notearg
+00080:  86  this
+00081:  86  getprop "id"
+00086:  86  notearg
+00087:  86  call 2
+00090:  86  setprop "baseDataRef"
+00095:  86  pop
+00096:  90  this
+00097:  90  getprop "baseDataRef"
+00102:  90  return
+00103:  90  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:79 ---
+;; function object[6] getNameString
+;; function metadata object[6] nargs=0 bindings=1
+;; local[0] _nameId
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:94 ---
+loc   line  op
+----- ----  --
+main:
+00000:  96  this
+00001:  96  getprop "_nameString"
+00006:  96  not
+00007:  96  ifeq 124 (+117)
+00012:  97  this
+00013:  97  dup
+00014:  97  callprop "getBaseDataRef"
+00019:  97  swap
+00020:  97  notearg
+00021:  97  call 0
+00024:  97  getprop "name"
+00029:  97  setlocal 0
+00032:  97  pop
+00033:  98  name "xs"
+00038:  98  dup
+00039:  98  callprop "assert"
+00044:  98  swap
+00045:  98  notearg
+00046:  98  getlocal 0
+00049:  98  notearg
+00050:  98  string "_nameId error"
+00055:  98  notearg
+00056:  98  this
+00057:  98  dup
+00058:  98  callprop "getBaseDataRef"
+00063:  98  swap
+00064:  98  notearg
+00065:  98  call 0
+00068:  98  notearg
+00069:  98  call 3
+00072:  98  pop
+00073:  99  this
+00074:  99  name "xs"
+00079:  99  getprop "Tools"
+00084:  99  getprop "Ml"
+00089:  99  dup
+00090:  99  callprop "createString"
+00095:  99  swap
+00096:  99  notearg
+00097:  99  this
+00098:  99  dup
+00099:  99  callprop "getBaseDataRef"
+00104:  99  swap
+00105:  99  notearg
+00106:  99  call 0
+00109:  99  getprop "name"
+00114:  99  notearg
+00115:  99  call 1
+00118:  99  setprop "_nameString"
+00123:  99  pop
+00124: 101  this
+00125: 101  getprop "_nameString"
+00130: 101  return
+00131: 101  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:94 ---
+;; function object[7] getDescString
+;; function metadata object[7] nargs=0 bindings=1
+;; local[0] _descId
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:105 ---
+loc   line  op
+----- ----  --
+main:
+00000: 107  this
+00001: 107  getprop "_descString"
+00006: 107  not
+00007: 107  ifeq 124 (+117)
+00012: 108  this
+00013: 108  dup
+00014: 108  callprop "getBaseDataRef"
+00019: 108  swap
+00020: 108  notearg
+00021: 108  call 0
+00024: 108  getprop "desc"
+00029: 108  setlocal 0
+00032: 108  pop
+00033: 109  name "xs"
+00038: 109  dup
+00039: 109  callprop "assert"
+00044: 109  swap
+00045: 109  notearg
+00046: 109  getlocal 0
+00049: 109  notearg
+00050: 109  string "_descId error"
+00055: 109  notearg
+00056: 109  this
+00057: 109  dup
+00058: 109  callprop "getBaseDataRef"
+00063: 109  swap
+00064: 109  notearg
+00065: 109  call 0
+00068: 109  notearg
+00069: 109  call 3
+00072: 109  pop
+00073: 110  this
+00074: 110  name "xs"
+00079: 110  getprop "Tools"
+00084: 110  getprop "Ml"
+00089: 110  dup
+00090: 110  callprop "createString"
+00095: 110  swap
+00096: 110  notearg
+00097: 110  this
+00098: 110  dup
+00099: 110  callprop "getBaseDataRef"
+00104: 110  swap
+00105: 110  notearg
+00106: 110  call 0
+00109: 110  getprop "desc"
+00114: 110  notearg
+00115: 110  call 1
+00118: 110  setprop "_descString"
+00123: 110  pop
+00124: 112  this
+00125: 112  getprop "_descString"
+00130: 112  return
+00131: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/BaseCfg.js:105 ---

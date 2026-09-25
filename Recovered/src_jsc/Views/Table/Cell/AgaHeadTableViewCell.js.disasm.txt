@@ -1,0 +1,291 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=73 object[4]
+;; FUNCTION-MAP kind=lambda offset=109 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "cc"
+00015:   6  getprop "TableViewCell"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  lambda (function () {
+    [sourceless code]
+})
+00038:   7  initprop "draw"
+00043:  11  lambda (function () {
+    [sourceless code]
+})
+00048:  11  initprop "ctor"
+00053:  16  lambda (function () {
+    [sourceless code]
+})
+00058:  16  initprop "init"
+00063:  26  lambda (function () {
+    [sourceless code]
+})
+00068:  26  initprop "updateCell"
+00073:  32  lambda (function () {
+    [sourceless code]
+})
+00078:  32  initprop "addSelectedIcon"
+00083:  32  endinit
+00084:  32  notearg
+00085:  32  call 1
+00088:  32  setprop "AgaHeadTableViewCell"
+00093:  32  popv
+00094:  37  name "xs"
+00099:  37  getprop "Views"
+00104:  37  getprop "AgaHeadTableViewCell"
+00109:  37  lambda (function () {
+    [sourceless code]
+})
+00114:  37  setprop "create"
+00119:  37  popv
+00120:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:1 ---
+;; function object[0] draw
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] ctx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  dup
+00002:   8  callprop "_super"
+00007:   8  swap
+00008:   8  notearg
+00009:   8  getarg 0
+00012:   8  notearg
+00013:   8  call 1
+00016:   8  pop
+00017:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:7 ---
+;; function object[1] ctor
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  call 0
+00012:  12  pop
+00013:  13  name "cc"
+00018:  13  dup
+00019:  13  callprop "associateWithNative"
+00024:  13  swap
+00025:  13  notearg
+00026:  13  this
+00027:  13  notearg
+00028:  13  name "cc"
+00033:  13  getprop "TableViewCell"
+00038:  13  notearg
+00039:  13  call 2
+00042:  13  pop
+00043:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:11 ---
+;; function object[2] init
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] model
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  dup
+00002:  17  callprop "_super"
+00007:  17  swap
+00008:  17  notearg
+00009:  17  call 0
+00012:  17  not
+00013:  17  ifeq 20 (+7)
+00018:  18  false
+00019:  18  return
+00020:  20  this
+00021:  20  false
+00022:  20  setprop "isSelected"
+00027:  20  pop
+00028:  21  this
+00029:  21  dup
+00030:  21  callprop "updateCell"
+00035:  21  swap
+00036:  21  notearg
+00037:  21  getarg 0
+00040:  21  notearg
+00041:  21  call 1
+00044:  21  pop
+00045:  23  true
+00046:  23  return
+00047:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:16 ---
+;; function object[3] updateCell
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] model
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  this
+00001:  27  dup
+00002:  27  callprop "removeAllChildren"
+00007:  27  swap
+00008:  27  notearg
+00009:  27  call 0
+00012:  27  pop
+00013:  28  this
+00014:  28  getarg 0
+00017:  28  dup
+00018:  28  callprop "createIcon_Grade"
+00023:  28  swap
+00024:  28  notearg
+00025:  28  call 0
+00028:  28  setprop "m_headIcon"
+00033:  28  pop
+00034:  29  name "xs"
+00039:  29  getprop "Utils"
+00044:  29  getprop "Node"
+00049:  29  dup
+00050:  29  callprop "attachNodes"
+00055:  29  swap
+00056:  29  notearg
+00057:  29  this
+00058:  29  notearg
+00059:  29  this
+00060:  29  getprop "m_headIcon"
+00065:  29  notearg
+00066:  29  newinit 1
+00071:  29  string "lb"
+00076:  29  initprop "desc"
+00081:  29  name "cc"
+00086:  29  dup
+00087:  29  callprop "p"
+00092:  29  swap
+00093:  29  notearg
+00094:  29  double 57.5
+00099:  29  notearg
+00100:  29  int8 45
+00102:  29  notearg
+00103:  29  call 2
+00106:  29  initprop "offset"
+00111:  29  endinit
+00112:  29  notearg
+00113:  29  call 3
+00116:  29  pop
+00117:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:26 ---
+;; function object[4] addSelectedIcon
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] icon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  33  name "xs"
+00005:  33  getprop "Utils"
+00010:  33  getprop "Node"
+00015:  33  dup
+00016:  33  callprop "attachNodes"
+00021:  33  swap
+00022:  33  notearg
+00023:  33  this
+00024:  33  notearg
+00025:  33  getarg 0
+00028:  33  notearg
+00029:  33  newinit 1
+00034:  33  string "lb"
+00039:  33  initprop "desc"
+00044:  33  name "cc"
+00049:  33  dup
+00050:  33  callprop "p"
+00055:  33  swap
+00056:  33  notearg
+00057:  33  double 57.5
+00062:  33  notearg
+00063:  33  int8 45
+00065:  33  notearg
+00066:  33  call 2
+00069:  33  initprop "offset"
+00074:  33  endinit
+00075:  33  notearg
+00076:  33  call 3
+00079:  33  pop
+00080:  33  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:32 ---
+;; function object[5] create
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] model
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  name "xs"
+00005:  38  getprop "Views"
+00010:  38  getprop "AgaHeadTableViewCell"
+00015:  38  undefined
+00016:  38  notearg
+00017:  38  new 0
+00020:  38  setlocal 0
+00023:  38  pop
+00024:  39  getlocal 0
+00027:  39  and 51 (+24)
+00032:  39  pop
+00033:  39  getlocal 0
+00036:  39  dup
+00037:  39  callprop "init"
+00042:  39  swap
+00043:  39  notearg
+00044:  39  getarg 0
+00047:  39  notearg
+00048:  39  call 1
+00051:  39  ifeq 60 (+9)
+00056:  40  getlocal 0
+00059:  40  return
+00060:  43  name "xs"
+00065:  43  dup
+00066:  43  callprop "assert"
+00071:  43  swap
+00072:  43  notearg
+00073:  43  false
+00074:  43  notearg
+00075:  43  string "xs.Views.AgaHeadTableViewCell.create fail!"
+00080:  43  notearg
+00081:  43  getlocal 0
+00084:  43  notearg
+00085:  43  call 3
+00088:  43  pop
+00089:  44  null
+00090:  44  return
+00091:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/AgaHeadTableViewCell.js:37 ---

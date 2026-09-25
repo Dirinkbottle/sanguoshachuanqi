@@ -1,0 +1,75 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+import os
+import sys
+# 自定义
+import build
+
+Import('PRO','sgscqEnv')
+
+if ARGUMENTS.get('platform') == 'android':
+	# 对资源的预处理
+	build.build_pause(ARGUMENTS.get('debug'),"图片与脚本资源处理完成")
+	pass
+
+
+
+
+
+
+
+
+
+
+
+# import os
+# import sys
+# # 处理src文件夹,在workdir下的正确位置生成src_jsc文件夹
+# Import('ARGUMENTS','PRO','sgscq')
+# # 平台
+# _platform = str(ARGUMENTS.get('platform'))
+# # 工程目录
+# _workdir = str(PRO['dirpathandname'])
+# # # 模式
+# # _mode = str(ARGUMENTS.get('mode'))
+# # # 得到当前目录位置
+# # _onPath = sys.path[0]
+# # # 创建相应目录
+# # _targetDir = _workdir+'/assets/'
+# # if not(os.path.exists(_targetDir)):
+# # 	os.mkdir(_targetDir)
+# # if _mode == 'RELEASE':
+# # 	# 创建相应目录
+# # 	_targetDir = _workdir+'/assets/src_jsc'
+# # 	if not(os.path.exists(_targetDir)):
+# # 		os.mkdir(_targetDir)
+# # 	# 得到cocos2d.py console 的位置
+# # 	_cocos2dpyPath = os.path.split(os.path.split(os.path.split(_workdir)[0])[0])[0]+"/tools/cocos2d-console/console/cocos2d.py"
+# # 	_command = 'python %s jscompile -s src -d %s'%(_cocos2dpyPath,_targetDir)
+# # 	os.system(_command)
+# # else:
+# # 	_targetDir = _workdir+'/assets/src_js'
+# # 	if not(os.path.exists(_targetDir)):
+# # 		os.mkdir(_targetDir)
+# # 	_command = 'cp -frv src %s'%(_targetDir)
+# # 	os.system(_command)
+
+
+
+# # 需要单独拷贝的文件.ourttf.ttf
+# if _platform == 'android':
+# 	_usefulFileList = []
+# 	_usefulFileList.append('ourttf.ttf')
+# 	_targetDir = _workdir+'/assets/'
+# 	for fileName in _usefulFileList:
+# 		_targetPath = ''.join([_targetDir,'/',fileName])
+# 		sgscq.cp(_targetPath,fileName)
+# 	# 拷贝jsc文件
+# 	for rootPath, directory, files in os.walk('src_jsc/'):
+# 		for fileName in files:
+# 			_sourceFile = ''.join([rootPath,'/',fileName])
+# 			_targetFile = ''.join([_targetDir,_sourceFile])
+# 			sgscq.cp(_targetFile,_sourceFile)
+# 		pass
+
+# SConscript(['res_n_main/SConscript'])	

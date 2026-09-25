@@ -1,0 +1,277 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SceneTitleView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=89 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SceneTitleView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  name "xs"
+00005:  11  getprop "Views"
+00010:  11  name "cc"
+00015:  11  getprop "Node"
+00020:  11  dup
+00021:  11  callprop "extend"
+00026:  11  swap
+00027:  11  notearg
+00028:  11  newinit 1
+00033:  12  lambda (function () {
+    [sourceless code]
+})
+00038:  12  initprop "ctor"
+00043:  16  lambda (function () {
+    [sourceless code]
+})
+00048:  16  initprop "init"
+00053:  34  lambda (function () {
+    [sourceless code]
+})
+00058:  34  initprop "setTitle"
+00063:  34  endinit
+00064:  34  notearg
+00065:  34  call 1
+00068:  34  setprop "SceneTitleView"
+00073:  34  popv
+00074:  39  name "xs"
+00079:  39  getprop "Views"
+00084:  39  getprop "SceneTitleView"
+00089:  39  lambda (function () {
+    [sourceless code]
+})
+00094:  39  setprop "create"
+00099:  39  popv
+00100:  48  name "xs"
+00105:  48  getprop "Views"
+00110:  48  getprop "SceneTitleView"
+00115:  48  newinit 1
+00120:  49  newinit 1
+00125:  50  int8 10
+00127:  50  initprop "tag"
+00132:  50  endinit
+00133:  50  initprop "m_titleLab"
+00138:  50  endinit
+00139:  50  setprop "cfg"
+00144:  50  popv
+00145:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SceneTitleView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SceneTitleView.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "_super"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  call 0
+00012:  13  pop
+00013:  14  name "cc"
+00018:  14  dup
+00019:  14  callprop "associateWithNative"
+00024:  14  swap
+00025:  14  notearg
+00026:  14  this
+00027:  14  notearg
+00028:  14  name "cc"
+00033:  14  getprop "Node"
+00038:  14  notearg
+00039:  14  call 2
+00042:  14  pop
+00043:  14  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SceneTitleView.js:12 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SceneTitleView.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  dup
+00002:  17  callprop "_super"
+00007:  17  swap
+00008:  17  notearg
+00009:  17  call 0
+00012:  17  not
+00013:  17  ifeq 20 (+7)
+00018:  18  false
+00019:  18  return
+00020:  20  this
+00021:  20  null
+00022:  20  setprop "m_ccbNode"
+00027:  20  pop
+00028:  21  this
+00029:  21  null
+00030:  21  setprop "m_titleLab"
+00035:  21  pop
+00036:  23  this
+00037:  23  name "xs"
+00042:  23  getprop "ccb_reader"
+00047:  23  dup
+00048:  23  callprop "load"
+00053:  23  swap
+00054:  23  notearg
+00055:  23  name "xs"
+00060:  23  getprop "Cfg"
+00065:  23  getprop "CCBI"
+00070:  23  getprop "SceneTitleView"
+00075:  23  notearg
+00076:  23  this
+00077:  23  notearg
+00078:  23  call 2
+00081:  23  setprop "m_ccbNode"
+00086:  23  pop
+00087:  24  this
+00088:  24  getprop "m_ccbNode"
+00093:  24  dup
+00094:  24  callprop "setAnchorPoint"
+00099:  24  swap
+00100:  24  notearg
+00101:  24  name "cc"
+00106:  24  dup
+00107:  24  callprop "p"
+00112:  24  swap
+00113:  24  notearg
+00114:  24  zero
+00115:  24  notearg
+00116:  24  zero
+00117:  24  notearg
+00118:  24  call 2
+00121:  24  notearg
+00122:  24  call 1
+00125:  24  pop
+00126:  25  name "xs"
+00131:  25  getprop "Utils"
+00136:  25  getprop "Node"
+00141:  25  dup
+00142:  25  callprop "attachNodes"
+00147:  25  swap
+00148:  25  notearg
+00149:  25  this
+00150:  25  notearg
+00151:  25  this
+00152:  25  getprop "m_ccbNode"
+00157:  25  notearg
+00158:  25  call 2
+00161:  25  pop
+00162:  27  this
+00163:  27  dup
+00164:  27  callprop "setContentSize"
+00169:  27  swap
+00170:  27  notearg
+00171:  27  name "cc"
+00176:  27  dup
+00177:  27  callprop "size"
+00182:  27  swap
+00183:  27  notearg
+00184:  27  uint16 174
+00187:  27  notearg
+00188:  27  int8 36
+00190:  27  notearg
+00191:  27  call 2
+00194:  27  notearg
+00195:  27  call 1
+00198:  27  pop
+00199:  29  this
+00200:  29  this
+00201:  29  getprop "m_ccbNode"
+00206:  29  dup
+00207:  29  callprop "getChildByTag"
+00212:  29  swap
+00213:  29  notearg
+00214:  29  name "xs"
+00219:  29  getprop "Views"
+00224:  29  getprop "SceneTitleView"
+00229:  29  getprop "cfg"
+00234:  29  getprop "m_titleLab"
+00239:  29  getprop "tag"
+00244:  29  notearg
+00245:  29  call 1
+00248:  29  setprop "m_titleLab"
+00253:  29  pop
+00254:  30  this
+00255:  30  getprop "m_titleLab"
+00260:  30  dup
+00261:  30  callprop "setFontName"
+00266:  30  swap
+00267:  30  notearg
+00268:  30  name "xsc"
+00273:  30  getprop "Tools"
+00278:  30  getprop "ProductSys"
+00283:  30  dup
+00284:  30  callprop "getOurttf"
+00289:  30  swap
+00290:  30  notearg
+00291:  30  call 0
+00294:  30  notearg
+00295:  30  call 1
+00298:  30  pop
+00299:  32  true
+00300:  32  return
+00301:  32  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SceneTitleView.js:16 ---
+;; function object[2] setTitle
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] title
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SceneTitleView.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  this
+00001:  35  getprop "m_titleLab"
+00006:  35  dup
+00007:  35  callprop "setString"
+00012:  35  swap
+00013:  35  notearg
+00014:  35  getarg 0
+00017:  35  notearg
+00018:  35  call 1
+00021:  35  pop
+00022:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SceneTitleView.js:34 ---
+;; function object[3] create
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SceneTitleView.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  name "xs"
+00005:  40  getprop "Views"
+00010:  40  getprop "SceneTitleView"
+00015:  40  undefined
+00016:  40  notearg
+00017:  40  new 0
+00020:  40  setlocal 0
+00023:  40  pop
+00024:  41  getlocal 0
+00027:  41  and 47 (+20)
+00032:  41  pop
+00033:  41  getlocal 0
+00036:  41  dup
+00037:  41  callprop "init"
+00042:  41  swap
+00043:  41  notearg
+00044:  41  call 0
+00047:  41  ifeq 56 (+9)
+00052:  42  getlocal 0
+00055:  42  return
+00056:  44  null
+00057:  44  return
+00058:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SceneTitleView.js:39 ---

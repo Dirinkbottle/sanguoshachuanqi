@@ -1,0 +1,317 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/UnionSearchTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+;; FUNCTION-MAP kind=lambda offset=68 object[1]
+;; FUNCTION-MAP kind=lambda offset=78 object[2]
+;; FUNCTION-MAP kind=lambda offset=88 object[3]
+;; FUNCTION-MAP kind=lambda offset=98 object[4]
+;; FUNCTION-MAP kind=lambda offset=108 object[5]
+;; FUNCTION-MAP kind=lambda offset=149 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   1  name "xs"
+00005:   1  getprop "Views"
+00010:   1  getprop "Table"
+00015:   1  name "xs"
+00020:   1  getprop "Views"
+00025:   1  getprop "Table"
+00030:   1  getprop "BaseTableView"
+00035:   1  dup
+00036:   1  callprop "extend"
+00041:   1  swap
+00042:   1  notearg
+00043:   1  newinit 1
+00048:   2  string "UnionSearchTableView"
+00053:   2  initprop "name"
+00058:   4  lambda (function () {
+    [sourceless code]
+})
+00063:   4  initprop "refreshData"
+00068:   8  lambda (function () {
+    [sourceless code]
+})
+00073:   8  initprop "createCell"
+00078:  16  lambda (function () {
+    [sourceless code]
+})
+00083:  16  initprop "makeViewSize"
+00088:  19  lambda (function () {
+    [sourceless code]
+})
+00093:  19  initprop "makeCellSize"
+00098:  22  lambda (function () {
+    [sourceless code]
+})
+00103:  22  initprop "initWithData"
+00108:  28  lambda (function () {
+    [sourceless code]
+})
+00113:  28  initprop "setBaseTouchPriority"
+00118:  28  endinit
+00119:  28  notearg
+00120:  28  call 1
+00123:  28  setprop "UnionSearchTableView"
+00128:  28  popv
+00129:  34  name "xs"
+00134:  34  getprop "Views"
+00139:  34  getprop "Table"
+00144:  34  getprop "UnionSearchTableView"
+00149:  34  lambda (function () {
+    [sourceless code]
+})
+00154:  34  setprop "create"
+00159:  34  popv
+00160:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:1 ---
+;; function object[0] refreshData
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:4 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  dup
+00006:   5  callprop "log"
+00011:   5  swap
+00012:   5  notearg
+00013:   5  string "UnionSearchTableView refreshData"
+00018:   5  notearg
+00019:   5  call 1
+00022:   5  pop
+00023:   5  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:4 ---
+;; function object[1] createCell
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  null
+00001:   9  setlocal 0
+00004:   9  pop
+00005:  10  name "xs"
+00010:  10  dup
+00011:  10  callprop "log"
+00016:  10  swap
+00017:  10  notearg
+00018:  10  string "UnionSearchTableView createCell "
+00023:  10  this
+00024:  10  getprop "parent"
+00029:  10  getprop "m_baseTouchPriority"
+00034:  10  add
+00035:  10  notearg
+00036:  10  call 1
+00039:  10  pop
+00040:  11  name "xs"
+00045:  11  getprop "Views"
+00050:  11  getprop "Table"
+00055:  11  getprop "Cell"
+00060:  11  getprop "UnionSearchTableViewCell"
+00065:  11  dup
+00066:  11  callprop "create"
+00071:  11  swap
+00072:  11  notearg
+00073:  11  this
+00074:  11  getprop "arrayModel"
+00079:  11  getarg 0
+00082:  11  getelem
+00083:  11  notearg
+00084:  11  this
+00085:  11  getprop "parent"
+00090:  11  notearg
+00091:  11  call 2
+00094:  11  setlocal 0
+00097:  11  pop
+00098:  12  getlocal 0
+00101:  12  dup
+00102:  12  callprop "setBaseTouchPriority"
+00107:  12  swap
+00108:  12  notearg
+00109:  12  this
+00110:  12  getprop "parent"
+00115:  12  getprop "m_baseTouchPriority"
+00120:  12  notearg
+00121:  12  call 1
+00124:  12  pop
+00125:  13  getlocal 0
+00128:  13  return
+00129:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:8 ---
+;; function object[2] makeViewSize
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  name "cc"
+00005:  17  dup
+00006:  17  callprop "size"
+00011:  17  swap
+00012:  17  notearg
+00013:  17  uint16 900
+00016:  17  notearg
+00017:  17  uint16 415
+00020:  17  notearg
+00021:  17  call 2
+00024:  17  return
+00025:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:16 ---
+;; function object[3] makeCellSize
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:19 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  name "cc"
+00005:  20  dup
+00006:  20  callprop "size"
+00011:  20  swap
+00012:  20  notearg
+00013:  20  uint16 882
+00016:  20  notearg
+00017:  20  int8 110
+00019:  20  notearg
+00020:  20  call 2
+00023:  20  return
+00024:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:19 ---
+;; function object[4] initWithData
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:22 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  name "xs"
+00005:  24  dup
+00006:  24  callprop "log"
+00011:  24  swap
+00012:  24  notearg
+00013:  24  string "UnionSearchTableView initWithData"
+00018:  24  notearg
+00019:  24  call 1
+00022:  24  pop
+00023:  25  this
+00024:  25  getarg 0
+00027:  25  setprop "arrayModel"
+00032:  25  pop
+00033:  26  this
+00034:  26  dup
+00035:  26  callprop "setContentSize"
+00040:  26  swap
+00041:  26  notearg
+00042:  26  name "cc"
+00047:  26  dup
+00048:  26  callprop "size"
+00053:  26  swap
+00054:  26  notearg
+00055:  26  uint16 900
+00058:  26  notearg
+00059:  26  uint16 415
+00062:  26  notearg
+00063:  26  call 2
+00066:  26  notearg
+00067:  26  call 1
+00070:  26  pop
+00071:  26  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:22 ---
+;; function object[5] setBaseTouchPriority
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  name "xs"
+00005:  29  dup
+00006:  29  callprop "log"
+00011:  29  swap
+00012:  29  notearg
+00013:  29  string "UnionSearchTableView setBaseTouchPriority "
+00018:  29  notearg
+00019:  29  call 1
+00022:  29  pop
+00023:  30  this
+00024:  30  getarg 0
+00027:  30  setprop "m_baseTouchPriority"
+00032:  30  pop
+00033:  30  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:28 ---
+;; function object[6] create
+;; function metadata object[6] nargs=2 bindings=3
+;; arg[0] data
+;; arg[1] parent
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  name "xs"
+00005:  35  getprop "Views"
+00010:  35  getprop "Table"
+00015:  35  getprop "UnionSearchTableView"
+00020:  35  undefined
+00021:  35  notearg
+00022:  35  new 0
+00025:  35  setlocal 0
+00028:  35  pop
+00029:  36  getlocal 0
+00032:  36  and 52 (+20)
+00037:  36  pop
+00038:  36  getlocal 0
+00041:  36  dup
+00042:  36  callprop "init"
+00047:  36  swap
+00048:  36  notearg
+00049:  36  call 0
+00052:  36  ifeq 92 (+40)
+00057:  37  getlocal 0
+00060:  37  getarg 1
+00063:  37  setprop "parent"
+00068:  37  pop
+00069:  38  getlocal 0
+00072:  38  dup
+00073:  38  callprop "initWithData"
+00078:  38  swap
+00079:  38  notearg
+00080:  38  getarg 0
+00083:  38  notearg
+00084:  38  call 1
+00087:  38  pop
+00088:  39  getlocal 0
+00091:  39  return
+00092:  41  this
+00093:  41  dup
+00094:  41  callprop "error"
+00099:  41  swap
+00100:  41  notearg
+00101:  41  string "UnionSearchTableView.create:"
+00106:  41  notearg
+00107:  41  call 1
+00110:  41  pop
+00111:  42  null
+00112:  42  return
+00113:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/UnionSearchTableView.js:34 ---

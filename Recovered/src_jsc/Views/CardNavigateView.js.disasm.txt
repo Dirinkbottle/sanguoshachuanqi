@@ -1,0 +1,823 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/CardNavigateView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=119 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "cc"
+00015:   6  getprop "Node"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  string "CardNavigateView"
+00038:   7  initprop "name"
+00043:   9  lambda (function () {
+    [sourceless code]
+})
+00048:   9  initprop "ctor"
+00053:  18  lambda (function () {
+    [sourceless code]
+})
+00058:  18  initprop "init"
+00063:  73  lambda (function () {
+    [sourceless code]
+})
+00068:  73  initprop "tableCellAtIndex"
+00073: 111  lambda (function () {
+    [sourceless code]
+})
+00078: 111  initprop "numberOfCellsInTableView"
+00083: 115  lambda (function () {
+    [sourceless code]
+})
+00088: 115  initprop "tableCellSizeForIndex"
+00093: 115  endinit
+00094: 115  notearg
+00095: 115  call 1
+00098: 115  setprop "CardNavigateView"
+00103: 115  popv
+00104: 120  name "xs"
+00109: 120  getprop "Views"
+00114: 120  getprop "CardNavigateView"
+00119: 120  lambda (function () {
+    [sourceless code]
+})
+00124: 120  setprop "create"
+00129: 120  popv
+00130: 126  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  this
+00001:  10  dup
+00002:  10  callprop "_super"
+00007:  10  swap
+00008:  10  notearg
+00009:  10  call 0
+00012:  10  pop
+00013:  11  name "cc"
+00018:  11  dup
+00019:  11  callprop "associateWithNative"
+00024:  11  swap
+00025:  11  notearg
+00026:  11  this
+00027:  11  notearg
+00028:  11  name "cc"
+00033:  11  getprop "Node"
+00038:  11  notearg
+00039:  11  call 2
+00042:  11  pop
+00043:  11  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:9 ---
+;; function object[1] init
+;; function metadata object[1] nargs=2 bindings=6
+;; arg[0] cardData
+;; arg[1] param
+;; local[0] sliderBg
+;; local[1] processBg
+;; local[2] thumbImg
+;; local[3] bfControlSlider
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:18 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  this
+00001:  19  dup
+00002:  19  callprop "_super"
+00007:  19  swap
+00008:  19  notearg
+00009:  19  call 0
+00012:  19  not
+00013:  19  ifeq 20 (+7)
+00018:  20  false
+00019:  20  return
+00020:  23  this
+00021:  23  false
+00022:  23  setprop "markShowFengyin"
+00027:  23  pop
+00028:  24  getarg 1
+00031:  24  ifeq 66 (+35)
+00036:  26  getarg 1
+00039:  26  getprop "markShowFengyin"
+00044:  26  null
+00045:  26  ne
+00046:  26  ifeq 66 (+20)
+00051:  27  this
+00052:  27  getarg 1
+00055:  27  getprop "markShowFengyin"
+00060:  27  setprop "markShowFengyin"
+00065:  27  pop
+00066:  30  this
+00067:  30  getarg 0
+00070:  30  setprop "cardData"
+00075:  30  pop
+00076:  32  this
+00077:  32  name "cc"
+00082:  32  getprop "Director"
+00087:  32  dup
+00088:  32  callprop "getInstance"
+00093:  32  swap
+00094:  32  notearg
+00095:  32  call 0
+00098:  32  dup
+00099:  32  callprop "getVisibleSize"
+00104:  32  swap
+00105:  32  notearg
+00106:  32  call 0
+00109:  32  setprop "visibleSize"
+00114:  32  pop
+00115:  34  this
+00116:  34  name "cc"
+00121:  34  dup
+00122:  34  callprop "size"
+00127:  34  swap
+00128:  34  notearg
+00129:  34  this
+00130:  34  getprop "visibleSize"
+00135:  34  getprop "width"
+00140:  34  name "xs"
+00145:  34  getprop "Views"
+00150:  34  getprop "MainMenuView"
+00155:  34  getprop "Width"
+00160:  34  sub
+00161:  34  notearg
+00162:  34  this
+00163:  34  getprop "visibleSize"
+00168:  34  getprop "height"
+00173:  34  int8 80
+00175:  34  sub
+00176:  34  notearg
+00177:  34  call 2
+00180:  34  setprop "tableViewSize"
+00185:  34  pop
+00186:  36  this
+00187:  36  one
+00188:  36  setprop "cardBigScale"
+00193:  36  pop
+00194:  37  this
+00195:  37  double 0.4
+00200:  37  setprop "cardSmlScale"
+00205:  37  pop
+00206:  38  this
+00207:  38  name "xs"
+00212:  38  getprop "Cfg"
+00217:  38  getprop "Resource"
+00222:  38  getprop "Card"
+00227:  38  getprop "w"
+00232:  38  this
+00233:  38  getprop "cardSmlScale"
+00238:  38  double 0.1
+00243:  38  add
+00244:  38  mul
+00245:  38  setprop "normalCellWid"
+00250:  38  pop
+00251:  39  this
+00252:  39  name "xs"
+00257:  39  getprop "Cfg"
+00262:  39  getprop "Resource"
+00267:  39  getprop "Card"
+00272:  39  getprop "w"
+00277:  39  this
+00278:  39  getprop "cardBigScale"
+00283:  39  mul
+00284:  39  setprop "bigCellWid"
+00289:  39  pop
+00290:  42  name "xs"
+00295:  42  getprop "Factorys"
+00300:  42  getprop "Sprite"
+00305:  42  dup
+00306:  42  callprop "create"
+00311:  42  swap
+00312:  42  notearg
+00313:  42  string "sliderBar"
+00318:  42  notearg
+00319:  42  string "WujiangScene01"
+00324:  42  notearg
+00325:  42  call 2
+00328:  42  setlocal 0
+00331:  42  pop
+00332:  43  name "xs"
+00337:  43  getprop "Factorys"
+00342:  43  getprop "Sprite"
+00347:  43  dup
+00348:  43  callprop "create"
+00353:  43  swap
+00354:  43  notearg
+00355:  43  string "sliderBar"
+00360:  43  notearg
+00361:  43  string "WujiangScene01"
+00366:  43  notearg
+00367:  43  call 2
+00370:  43  setlocal 1
+00373:  43  pop
+00374:  44  name "xs"
+00379:  44  getprop "Factorys"
+00384:  44  getprop "Sprite"
+00389:  44  dup
+00390:  44  callprop "create"
+00395:  44  swap
+00396:  44  notearg
+00397:  44  string "thumb"
+00402:  44  notearg
+00403:  44  string "WujiangScene01"
+00408:  44  notearg
+00409:  44  call 2
+00412:  44  setlocal 2
+00415:  44  pop
+00416:  45  name "xs"
+00421:  45  getprop "BFControlSlider"
+00426:  45  dup
+00427:  45  callprop "create"
+00432:  45  swap
+00433:  45  notearg
+00434:  45  getlocal 0
+00437:  45  notearg
+00438:  45  getlocal 1
+00441:  45  notearg
+00442:  45  getlocal 2
+00445:  45  notearg
+00446:  45  call 3
+00449:  45  setlocal 3
+00452:  45  pop
+00453:  46  getlocal 3
+00456:  46  dup
+00457:  46  callprop "setAnchorPoint"
+00462:  46  swap
+00463:  46  notearg
+00464:  46  name "cc"
+00469:  46  dup
+00470:  46  callprop "p"
+00475:  46  swap
+00476:  46  notearg
+00477:  46  zero
+00478:  46  notearg
+00479:  46  zero
+00480:  46  notearg
+00481:  46  call 2
+00484:  46  notearg
+00485:  46  call 1
+00488:  46  pop
+00489:  48  getlocal 3
+00492:  48  dup
+00493:  48  callprop "setMaximumValue"
+00498:  48  swap
+00499:  48  notearg
+00500:  48  int8 100
+00502:  48  notearg
+00503:  48  call 1
+00506:  48  pop
+00507:  50  getlocal 3
+00510:  50  dup
+00511:  50  callprop "setMinimumValue"
+00516:  50  swap
+00517:  50  notearg
+00518:  50  zero
+00519:  50  notearg
+00520:  50  call 1
+00523:  50  pop
+00524:  52  name "xs"
+00529:  52  getprop "Utils"
+00534:  52  getprop "Node"
+00539:  52  dup
+00540:  52  callprop "attachNodes"
+00545:  52  swap
+00546:  52  notearg
+00547:  52  this
+00548:  52  notearg
+00549:  52  getlocal 3
+00552:  52  notearg
+00553:  52  newinit 1
+00558:  52  string "lb"
+00563:  52  initprop "desc"
+00568:  52  name "cc"
+00573:  52  dup
+00574:  52  callprop "p"
+00579:  52  swap
+00580:  52  notearg
+00581:  52  int8 50
+00583:  52  notearg
+00584:  52  int8 5
+00586:  52  notearg
+00587:  52  call 2
+00590:  52  initprop "offset"
+00595:  52  false
+00596:  52  initprop "sc"
+00601:  52  endinit
+00602:  52  notearg
+00603:  53  name "xs"
+00608:  53  getprop "Cfg"
+00613:  53  getprop "Scene"
+00618:  53  getprop "AgaScene"
+00623:  53  getprop "tablePage"
+00628:  53  getprop "slider"
+00633:  53  notearg
+00634:  53  call 4
+00637:  53  pop
+00638:  56  this
+00639:  56  name "xs"
+00644:  56  getprop "BFCardView"
+00649:  56  dup
+00650:  56  callprop "create"
+00655:  56  swap
+00656:  56  notearg
+00657:  56  this
+00658:  56  notearg
+00659:  56  this
+00660:  56  getprop "tableViewSize"
+00665:  56  notearg
+00666:  56  call 2
+00669:  56  setprop "bfCardView"
+00674:  56  pop
+00675:  57  this
+00676:  57  getprop "bfCardView"
+00681:  57  dup
+00682:  57  callprop "setObserver"
+00687:  57  swap
+00688:  57  notearg
+00689:  57  getlocal 3
+00692:  57  notearg
+00693:  57  call 1
+00696:  57  pop
+00697:  58  this
+00698:  58  getprop "bfCardView"
+00703:  58  dup
+00704:  58  callprop "setDelegate"
+00709:  58  swap
+00710:  58  notearg
+00711:  58  this
+00712:  58  notearg
+00713:  58  call 1
+00716:  58  pop
+00717:  59  this
+00718:  59  getprop "bfCardView"
+00723:  59  dup
+00724:  59  callprop "setCardViewDelegate"
+00729:  59  swap
+00730:  59  notearg
+00731:  59  this
+00732:  59  notearg
+00733:  59  call 1
+00736:  59  pop
+00737:  60  this
+00738:  60  getprop "bfCardView"
+00743:  60  dup
+00744:  60  callprop "setDirection"
+00749:  60  swap
+00750:  60  notearg
+00751:  60  name "cc"
+00756:  60  getprop "SCROLLVIEW_DIRECTION_HORIZONTAL"
+00761:  60  notearg
+00762:  60  call 1
+00765:  60  pop
+00766:  61  this
+00767:  61  getprop "bfCardView"
+00772:  61  dup
+00773:  61  callprop "setCellScaleValue"
+00778:  61  swap
+00779:  61  notearg
+00780:  61  this
+00781:  61  getprop "cardBigScale"
+00786:  61  notearg
+00787:  61  this
+00788:  61  getprop "cardSmlScale"
+00793:  61  notearg
+00794:  61  call 2
+00797:  61  pop
+00798:  62  this
+00799:  62  getprop "bfCardView"
+00804:  62  dup
+00805:  62  callprop "setAnchorPoint"
+00810:  62  swap
+00811:  62  notearg
+00812:  62  name "cc"
+00817:  62  dup
+00818:  62  callprop "p"
+00823:  62  swap
+00824:  62  notearg
+00825:  62  zero
+00826:  62  notearg
+00827:  62  zero
+00828:  62  notearg
+00829:  62  call 2
+00832:  62  notearg
+00833:  62  call 1
+00836:  62  pop
+00837:  63  this
+00838:  63  getprop "bfCardView"
+00843:  63  dup
+00844:  63  callprop "setNormalCellWidth"
+00849:  63  swap
+00850:  63  notearg
+00851:  63  this
+00852:  63  getprop "normalCellWid"
+00857:  63  notearg
+00858:  63  call 1
+00861:  63  pop
+00862:  64  this
+00863:  64  getprop "bfCardView"
+00868:  64  dup
+00869:  64  callprop "reloadData"
+00874:  64  swap
+00875:  64  notearg
+00876:  64  call 0
+00879:  64  pop
+00880:  65  this
+00881:  65  getprop "bfCardView"
+00886:  65  dup
+00887:  65  callprop "setTouchPriority"
+00892:  65  swap
+00893:  65  notearg
+00894:  65  this
+00895:  65  getprop "cfg"
+00900:  65  getprop "tableView"
+00905:  65  getprop "priority"
+00910:  65  notearg
+00911:  65  call 1
+00914:  65  pop
+00915:  67  getlocal 3
+00918:  67  dup
+00919:  67  callprop "setObserver"
+00924:  67  swap
+00925:  67  notearg
+00926:  67  this
+00927:  67  getprop "bfCardView"
+00932:  67  notearg
+00933:  67  call 1
+00936:  67  pop
+00937:  68  name "xs"
+00942:  68  getprop "Utils"
+00947:  68  getprop "Node"
+00952:  68  dup
+00953:  68  callprop "attachNodes"
+00958:  68  swap
+00959:  68  notearg
+00960:  68  this
+00961:  68  notearg
+00962:  68  this
+00963:  68  getprop "bfCardView"
+00968:  68  notearg
+00969:  68  newinit 1
+00974:  68  string "lb"
+00979:  68  initprop "desc"
+00984:  68  name "cc"
+00989:  68  dup
+00990:  68  callprop "p"
+00995:  68  swap
+00996:  68  notearg
+00997:  68  int8 10
+00999:  68  notearg
+01000:  68  int8 80
+01002:  68  notearg
+01003:  68  call 2
+01006:  68  initprop "offset"
+01011:  68  false
+01012:  68  initprop "sc"
+01017:  68  endinit
+01018:  68  notearg
+01019:  68  call 3
+01022:  68  pop
+01023:  70  true
+01024:  70  return
+01025:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:18 ---
+;; function object[2] tableCellAtIndex
+;; function metadata object[2] nargs=2 bindings=5
+;; arg[0] table
+;; arg[1] idx
+;; local[0] cell
+;; local[1] card
+;; local[2] generalData
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=catch start=1 length=539 stackDepth=0 target=540
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:73 ---
+loc   line  op
+----- ----  --
+main:
+00000:  74  try 540 (+540)
+00001:  75  getarg 0
+00004:  75  dup
+00005:  75  callprop "dequeueCell"
+00010:  75  swap
+00011:  75  notearg
+00012:  75  call 0
+00015:  75  setlocal 0
+00018:  75  pop
+00019:  76  null
+00020:  76  setlocal 1
+00023:  76  pop
+00024:  77  getlocal 0
+00027:  77  not
+00028:  77  ifeq 217 (+189)
+00033:  78  name "cc"
+00038:  78  getprop "TableViewCell"
+00043:  78  undefined
+00044:  78  notearg
+00045:  78  new 0
+00048:  78  setlocal 0
+00051:  78  pop
+00052:  79  this
+00053:  79  getprop "cardData"
+00058:  79  getarg 1
+00061:  79  getelem
+00062:  79  dup
+00063:  79  callprop "createCard_General"
+00068:  79  swap
+00069:  79  notearg
+00070:  79  newinit 1
+00075:  79  name "cc"
+00080:  79  dup
+00081:  79  callprop "p"
+00086:  79  swap
+00087:  79  notearg
+00088:  79  name "xs"
+00093:  79  getprop "Cfg"
+00098:  79  getprop "Resource"
+00103:  79  getprop "Card"
+00108:  79  getprop "w"
+00113:  79  int8 2
+00115:  79  div
+00116:  79  notearg
+00117:  80  name "xs"
+00122:  80  getprop "Cfg"
+00127:  80  getprop "Resource"
+00132:  80  getprop "Card"
+00137:  80  getprop "h"
+00142:  80  int8 2
+00144:  80  div
+00145:  80  notearg
+00146:  80  call 2
+00149:  80  initprop "pos"
+00154:  81  this
+00155:  81  getprop "markShowFengyin"
+00160:  81  initprop "markShowFengyin"
+00165:  81  endinit
+00166:  81  notearg
+00167:  81  call 1
+00170:  81  setlocal 1
+00173:  81  pop
+00174:  83  getlocal 0
+00177:  83  dup
+00178:  83  callprop "addChild"
+00183:  83  swap
+00184:  83  notearg
+00185:  83  getlocal 1
+00188:  83  notearg
+00189:  83  this
+00190:  83  getprop "cardData"
+00195:  83  length "length"
+00200:  83  getarg 1
+00203:  83  sub
+00204:  83  notearg
+00205:  83  int8 15
+00207:  83  notearg
+00208:  83  call 3
+00211:  83  pop
+00212:  83  goto 400 (+188)
+00217:  85  getlocal 0
+00220:  85  dup
+00221:  85  callprop "getChildByTag"
+00226:  85  swap
+00227:  85  notearg
+00228:  85  int8 15
+00230:  85  notearg
+00231:  85  call 1
+00234:  85  setlocal 1
+00237:  85  pop
+00238:  86  this
+00239:  86  getprop "cardData"
+00244:  86  getarg 1
+00247:  86  getelem
+00248:  86  getprop "name"
+00253:  86  string "xs.Models.GeneralSoul"
+00258:  86  stricteq
+00259:  86  ifeq 306 (+47)
+00264:  87  getlocal 1
+00267:  87  dup
+00268:  87  callprop "reloadData"
+00273:  87  swap
+00274:  87  notearg
+00275:  87  this
+00276:  87  getprop "cardData"
+00281:  87  getarg 1
+00284:  87  getelem
+00285:  87  dup
+00286:  87  callprop "getBaseGeneralModel"
+00291:  87  swap
+00292:  87  notearg
+00293:  87  call 0
+00296:  87  notearg
+00297:  87  call 1
+00300:  87  pop
+00301:  87  goto 400 (+99)
+00306:  88  this
+00307:  88  getprop "cardData"
+00312:  88  getarg 1
+00315:  88  getelem
+00316:  88  getprop "name"
+00321:  88  string "xs.Models.EvolutionInfo"
+00326:  88  stricteq
+00327:  88  ifeq 374 (+47)
+00332:  89  getlocal 1
+00335:  89  dup
+00336:  89  callprop "reloadData"
+00341:  89  swap
+00342:  89  notearg
+00343:  89  this
+00344:  89  getprop "cardData"
+00349:  89  getarg 1
+00352:  89  getelem
+00353:  89  dup
+00354:  89  callprop "getCacheGeneralModel"
+00359:  89  swap
+00360:  89  notearg
+00361:  89  call 0
+00364:  89  notearg
+00365:  89  call 1
+00368:  89  pop
+00369:  89  goto 400 (+31)
+00374:  91  getlocal 1
+00377:  91  dup
+00378:  91  callprop "reloadData"
+00383:  91  swap
+00384:  91  notearg
+00385:  91  this
+00386:  91  getprop "cardData"
+00391:  91  getarg 1
+00394:  91  getelem
+00395:  91  notearg
+00396:  91  call 1
+00399:  91  pop
+00400:  96  this
+00401:  96  getprop "cardData"
+00406:  96  getarg 1
+00409:  96  getelem
+00410:  96  getprop "name"
+00415:  96  string "xs.Models.General"
+00420:  96  stricteq
+00421:  96  ifeq 535 (+114)
+00426:  97  this
+00427:  97  getprop "cardData"
+00432:  97  getarg 1
+00435:  97  getelem
+00436:  97  setlocal 2
+00439:  97  pop
+00440:  98  name "xs"
+00445:  98  getprop "Profile"
+00450:  98  getprop "GameData"
+00455:  98  getprop "Mgr"
+00460:  98  dup
+00461:  98  callprop "getInstance"
+00466:  98  swap
+00467:  98  notearg
+00468:  98  call 0
+00471:  98  getprop "Generals"
+00476:  98  dup
+00477:  98  callprop "isSurrender"
+00482:  98  swap
+00483:  98  notearg
+00484:  98  getlocal 2
+00487:  98  notearg
+00488:  98  call 1
+00491:  98  ifeq 518 (+27)
+00496:  99  getlocal 1
+00499:  99  dup
+00500:  99  callprop "setSurrender"
+00505:  99  swap
+00506:  99  notearg
+00507:  99  true
+00508:  99  notearg
+00509:  99  call 1
+00512:  99  pop
+00513:  99  goto 535 (+22)
+00518: 101  getlocal 1
+00521: 101  dup
+00522: 101  callprop "setSurrender"
+00527: 101  swap
+00528: 101  notearg
+00529: 101  false
+00530: 101  notearg
+00531: 101  call 1
+00534: 101  pop
+00535: 101  goto 586 (+51)
+00540: 105  enterblock depth 0 {e: 0}
+00545: 105  exception
+00546: 105  setlocal 3
+00549: 105  pop
+00550: 106  name "xs"
+00555: 106  dup
+00556: 106  callprop "warnException"
+00561: 106  swap
+00562: 106  notearg
+00563: 106  string "AgaCardView-tableCellAtIndex"
+00568: 106  notearg
+00569: 106  getlocal 3
+00572: 106  notearg
+00573: 106  call 2
+00576: 106  pop
+00577: 106  leaveblock 1
+00580: 106  goto 586 (+6)
+00585: 106  nop
+00586: 108  getlocal 0
+00589: 108  return
+00590: 108  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:73 ---
+;; function object[3] numberOfCellsInTableView
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] table
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:111 ---
+loc   line  op
+----- ----  --
+main:
+00000: 112  this
+00001: 112  getprop "cardData"
+00006: 112  length "length"
+00011: 112  return
+00012: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:111 ---
+;; function object[4] tableCellSizeForIndex
+;; function metadata object[4] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:115 ---
+loc   line  op
+----- ----  --
+main:
+00000: 116  name "cc"
+00005: 116  dup
+00006: 116  callprop "size"
+00011: 116  swap
+00012: 116  notearg
+00013: 116  this
+00014: 116  getprop "normalCellWid"
+00019: 116  notearg
+00020: 116  this
+00021: 116  getprop "tableViewSize"
+00026: 116  getprop "height"
+00031: 116  notearg
+00032: 116  call 2
+00035: 116  return
+00036: 116  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:115 ---
+;; function object[5] create
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] cardData
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:120 ---
+loc   line  op
+----- ----  --
+main:
+00000: 121  name "xs"
+00005: 121  getprop "Views"
+00010: 121  getprop "CardNavigateView"
+00015: 121  undefined
+00016: 121  notearg
+00017: 121  new 0
+00020: 121  setlocal 0
+00023: 121  pop
+00024: 122  getlocal 0
+00027: 122  and 51 (+24)
+00032: 122  pop
+00033: 122  getlocal 0
+00036: 122  dup
+00037: 122  callprop "init"
+00042: 122  swap
+00043: 122  notearg
+00044: 122  getarg 0
+00047: 122  notearg
+00048: 122  call 1
+00051: 122  ifeq 60 (+9)
+00056: 123  getlocal 0
+00059: 123  return
+00060: 125  null
+00061: 125  return
+00062: 125  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardNavigateView.js:120 ---

@@ -1,0 +1,4755 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Update/UpdateScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=370 object[0]
+;; FUNCTION-MAP kind=lambda offset=581 object[1]
+;; FUNCTION-MAP kind=lambda offset=591 object[2]
+;; FUNCTION-MAP kind=lambda offset=601 object[3]
+;; FUNCTION-MAP kind=lambda offset=611 object[4]
+;; FUNCTION-MAP kind=lambda offset=621 object[5]
+;; FUNCTION-MAP kind=lambda offset=631 object[6]
+;; FUNCTION-MAP kind=lambda offset=641 object[7]
+;; FUNCTION-MAP kind=lambda offset=651 object[8]
+;; FUNCTION-MAP kind=lambda offset=661 object[9]
+;; FUNCTION-MAP kind=lambda offset=671 object[10]
+;; FUNCTION-MAP kind=lambda offset=681 object[11]
+;; FUNCTION-MAP kind=lambda offset=691 object[12]
+;; FUNCTION-MAP kind=lambda offset=701 object[13]
+;; FUNCTION-MAP kind=lambda offset=711 object[14]
+;; FUNCTION-MAP kind=lambda offset=721 object[15]
+;; FUNCTION-MAP kind=lambda offset=731 object[16]
+;; FUNCTION-MAP kind=lambda offset=741 object[17]
+;; FUNCTION-MAP kind=lambda offset=751 object[18]
+;; FUNCTION-MAP kind=lambda offset=761 object[19]
+;; FUNCTION-MAP kind=lambda offset=771 object[20]
+;; FUNCTION-MAP kind=lambda offset=781 object[21]
+;; FUNCTION-MAP kind=lambda offset=791 object[22]
+;; FUNCTION-MAP kind=lambda offset=801 object[23]
+;; FUNCTION-MAP kind=lambda offset=811 object[24]
+;; FUNCTION-MAP kind=lambda offset=821 object[25]
+;; FUNCTION-MAP kind=lambda offset=831 object[26]
+;; FUNCTION-MAP kind=lambda offset=841 object[27]
+;; FUNCTION-MAP kind=lambda offset=851 object[28]
+;; FUNCTION-MAP kind=lambda offset=861 object[29]
+;; FUNCTION-MAP kind=lambda offset=871 object[30]
+;; FUNCTION-MAP kind=lambda offset=881 object[31]
+;; FUNCTION-MAP kind=lambda offset=912 object[32]
+;; FUNCTION-MAP kind=lambda offset=933 object[33]
+;; FUNCTION-MAP kind=lambda offset=954 object[34]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  name "xs"
+00010:   7  getprop "UpdateScene"
+00015:   7  or 27 (+12)
+00020:   7  pop
+00021:   7  newinit 1
+00026:   7  endinit
+00027:   7  setprop "UpdateScene"
+00032:   7  popv
+00033:   9  name "xs"
+00038:   9  getprop "UpdateScene"
+00043:   9  name "cc"
+00048:   9  getprop "Layer"
+00053:   9  dup
+00054:   9  callprop "extend"
+00059:   9  swap
+00060:   9  notearg
+00061:   9  newinit 1
+00066:  11  string "UpdateSceneLayer"
+00071:  11  initprop "name"
+00076:  13  name "xsc"
+00081:  13  getprop "Debug"
+00086:  13  getprop "log"
+00091:  13  initprop "log"
+00096:  14  name "xsc"
+00101:  14  getprop "Debug"
+00106:  14  getprop "dump"
+00111:  14  initprop "dump"
+00116:  15  name "xsc"
+00121:  15  getprop "Debug"
+00126:  15  getprop "error"
+00131:  15  initprop "error"
+00136:  17  zero
+00137:  17  initprop "Step_Init"
+00142:  18  one
+00143:  18  initprop "Step_Check_Version"
+00148:  19  int8 2
+00150:  19  initprop "Step_Clear_Writeable_Dir"
+00155:  20  int8 3
+00157:  20  initprop "Step_Request_Update_Info"
+00162:  21  int8 4
+00164:  21  initprop "Step_Request_Update_Info_Waiting"
+00169:  22  int8 5
+00171:  22  initprop "Step_Check_Update"
+00176:  24  int8 100
+00178:  24  initprop "Step_Update_Cpp"
+00183:  26  int8 101
+00185:  26  initprop "Step_Update_Cpp_Confirm_Waiting"
+00190:  32  uint16 200
+00193:  32  initprop "Step_Update_Js"
+00198:  34  uint16 201
+00201:  34  initprop "Step_Update_Js_Confirm_Waiting"
+00206:  39  uint16 250
+00209:  39  initprop "Step_Download_New"
+00214:  41  uint16 251
+00217:  41  initprop "Step_Downloading"
+00222:  44  uint16 300
+00225:  44  initprop "Step_Download_MD5check"
+00230:  46  uint16 400
+00233:  46  initprop "Step_Uncompress_Begin"
+00238:  47  uint16 401
+00241:  47  initprop "Step_Uncompressing"
+00246:  50  uint16 1000
+00249:  50  initprop "Step_Update_EnterLogin"
+00254:  51  uint16 1500
+00257:  51  initprop "Step_Reset"
+00262:  52  uint16 2000
+00265:  52  initprop "Step_None"
+00270:  55  zero
+00271:  55  initprop "Const_CppUpdateType_Unknow"
+00276:  56  one
+00277:  56  initprop "Const_CppUpdateType_Tip"
+00282:  57  int8 2
+00284:  57  initprop "Const_CppUpdateType_BySelf"
+00289:  58  int8 3
+00291:  58  initprop "Const_CppUpdateType_WebView"
+00296:  61  zero
+00297:  61  initprop "Const_Task_ErrorCode_None"
+00302:  62  one
+00303:  62  initprop "Const_Task_ErrorCode_CreateFile"
+00308:  63  int8 2
+00310:  63  initprop "Const_Task_ErrorCode_Download"
+00315:  64  int8 3
+00317:  64  initprop "Const_Task_ErrorCode_Uncompress"
+00322:  65  int8 4
+00324:  65  initprop "Const_Task_ErrorCode_Download_Operation_Timeout"
+00329:  67  one
+00330:  67  initprop "Event_Msg"
+00335:  68  int8 2
+00337:  68  initprop "Event_ServerTip"
+00342:  69  int8 3
+00344:  69  initprop "Event_Progress"
+00349:  71  int8 4
+00351:  71  initprop "Event_DownloadSuccess"
+00356:  72  int8 5
+00358:  72  initprop "Event_UncompressSuccess"
+00363:  73  int8 6
+00365:  73  initprop "Event_Error"
+00370:  80  lambda (function () {
+    [sourceless code]
+})
+00375:  80  initprop "ctor"
+00380:  85  newinit 1
+00385:  86  newinit 1
+00390:  88  newinit 1
+00395:  89  newinit 1
+00400:  90  string "tex/scene_bg/MainMorning_bg.png"
+00405:  90  initprop "fileName"
+00410:  90  endinit
+00411:  90  initprop "MainMorning_bg"
+00416:  92  newinit 1
+00421:  93  string "tex/scene_bg/MainNightfall_bg.png"
+00426:  93  initprop "fileName"
+00431:  93  endinit
+00432:  93  initprop "MainNightfall_bg"
+00437:  95  newinit 1
+00442:  96  string "tex/scene_bg/MainNight_bg.png"
+00447:  96  initprop "fileName"
+00452:  96  endinit
+00453:  96  initprop "MainNight_bg"
+00458:  96  endinit
+00459:  96  initprop "Single01"
+00464: 100  newinit 1
+00469: 101  string "tex/Update.plist"
+00474: 101  initprop "plist"
+00479: 103  newinit 1
+00484: 104  string "Update_ProgressBG01.png"
+00489: 104  initprop "frameName"
+00494: 104  endinit
+00495: 104  initprop "Update_PrgBg"
+00500: 107  newinit 1
+00505: 108  string "Update_ProgressBG02.png"
+00510: 108  initprop "frameName"
+00515: 108  endinit
+00516: 108  initprop "Update_PrgFrame"
+00521: 111  newinit 1
+00526: 112  string "Update_ProgressStatus.png"
+00531: 112  initprop "frameName"
+00536: 112  endinit
+00537: 112  initprop "Update_PrgMid"
+00542: 115  newinit 1
+00547: 116  string "Update_ProgressPoint.png"
+00552: 116  initprop "frameName"
+00557: 116  endinit
+00558: 116  initprop "Update_PrgLight"
+00563: 116  endinit
+00564: 116  initprop "Update"
+00569: 116  endinit
+00570: 116  initprop "Sprite"
+00575: 116  endinit
+00576: 116  initprop "Cfg"
+00581: 124  lambda (function () {
+    [sourceless code]
+})
+00586: 124  initprop "_addIndexBgSprite"
+00591: 155  lambda (function () {
+    [sourceless code]
+})
+00596: 155  initprop "init"
+00601: 387  lambda (function () {
+    [sourceless code]
+})
+00606: 387  initprop "_onEvent_Msg"
+00611: 394  lambda (function () {
+    [sourceless code]
+})
+00616: 394  initprop "_onEvent_ServerTip"
+00621: 404  lambda (function () {
+    [sourceless code]
+})
+00626: 404  initprop "_onEvent_Progress"
+00631: 445  lambda (function () {
+    [sourceless code]
+})
+00636: 445  initprop "_onEvent_DownloadSuccess"
+00641: 453  lambda (function () {
+    [sourceless code]
+})
+00646: 453  initprop "_onEvent_UncompressSuccess"
+00651: 464  lambda (function () {
+    [sourceless code]
+})
+00656: 464  initprop "onEnterTransitionDidFinish"
+00661: 481  lambda (function () {
+    [sourceless code]
+})
+00666: 481  initprop "onExitTransitionDidStart"
+00671: 494  lambda (function () {
+    [sourceless code]
+})
+00676: 494  initprop "_setStep0"
+00681: 568  lambda (function () {
+    [sourceless code]
+})
+00686: 568  initprop "_setCheckCode"
+00691: 572  lambda (function () {
+    [sourceless code]
+})
+00696: 572  initprop "_getCheckCode"
+00701: 576  lambda (function () {
+    [sourceless code]
+})
+00706: 576  initprop "_clear_writable_dir"
+00711: 587  lambda (function () {
+    [sourceless code]
+})
+00716: 587  initprop "_clear_download_dir"
+00721: 598  lambda (function () {
+    [sourceless code]
+})
+00726: 598  initprop "_getUpdateCheckUrl"
+00731: 707  lambda (function () {
+    [sourceless code]
+})
+00736: 707  initprop "onTouchBegan"
+00741: 711  lambda (function () {
+    [sourceless code]
+})
+00746: 711  initprop "onTouchMoved"
+00751: 715  lambda (function () {
+    [sourceless code]
+})
+00756: 715  initprop "onTouchEnded"
+00761: 737  lambda (function () {
+    [sourceless code]
+})
+00766: 737  initprop "_update_Step_Check_Version"
+00771: 787  lambda (function () {
+    [sourceless code]
+})
+00776: 787  initprop "update"
+00781:1111  lambda (function () {
+    [sourceless code]
+})
+00786:1111  initprop "_getUpdateDownloadDir"
+00791:1135  lambda (function () {
+    [sourceless code]
+})
+00796:1135  initprop "_getUpdateResourcesDir"
+00801:1149  lambda (function () {
+    [sourceless code]
+})
+00806:1149  initprop "_getUpdateDir"
+00811:1166  lambda (function () {
+    [sourceless code]
+})
+00816:1166  initprop "_gotoLogin"
+00821:1173  lambda (function () {
+    [sourceless code]
+})
+00826:1173  initprop "_postNotifyMsg"
+00831:1177  lambda (function () {
+    [sourceless code]
+})
+00836:1177  initprop "_postNotifyServerTip"
+00841:1181  lambda (function () {
+    [sourceless code]
+})
+00846:1181  initprop "_postNotifyProgress"
+00851:1185  lambda (function () {
+    [sourceless code]
+})
+00856:1185  initprop "_postNotify"
+00861:1190  lambda (function () {
+    [sourceless code]
+})
+00866:1190  initprop "_startUpdate"
+00871:1205  lambda (function () {
+    [sourceless code]
+})
+00876:1205  initprop "_stopUpdate"
+00881:1213  lambda (function () {
+    [sourceless code]
+})
+00886:1213  initprop "onExit"
+00891:1213  endinit
+00892:1213  notearg
+00893:1213  call 1
+00896:1213  setprop "UpdateSceneLayer"
+00901:1213  popv
+00902:1218  name "xs"
+00907:1218  getprop "UpdateScene"
+00912:1218  lambda (function () {
+    [sourceless code]
+})
+00917:1218  setprop "load"
+00922:1218  popv
+00923:1224  name "xs"
+00928:1224  getprop "UpdateScene"
+00933:1224  lambda (function () {
+    [sourceless code]
+})
+00938:1224  setprop "unload"
+00943:1224  popv
+00944:1230  name "xs"
+00949:1230  getprop "UpdateScene"
+00954:1230  lambda (function () {
+    [sourceless code]
+})
+00959:1230  setprop "create"
+00964:1230  popv
+00965:1244  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:80 ---
+loc   line  op
+----- ----  --
+main:
+00000:  81  this
+00001:  81  dup
+00002:  81  callprop "_super"
+00007:  81  swap
+00008:  81  notearg
+00009:  81  call 0
+00012:  81  pop
+00013:  82  name "cc"
+00018:  82  dup
+00019:  82  callprop "associateWithNative"
+00024:  82  swap
+00025:  82  notearg
+00026:  82  this
+00027:  82  notearg
+00028:  82  name "cc"
+00033:  82  getprop "Layer"
+00038:  82  notearg
+00039:  82  call 2
+00042:  82  pop
+00043:  82  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:80 ---
+;; function object[1] _addIndexBgSprite
+;; function metadata object[1] nargs=1 bindings=6
+;; arg[0] parent
+;; local[0] date
+;; local[1] hour
+;; local[2] _fileName
+;; local[3] _bgView
+;; local[4] scaleBg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:124 ---
+loc   line  op
+----- ----  --
+main:
+00000: 126  name "Date"
+00005: 126  undefined
+00006: 126  notearg
+00007: 126  new 0
+00010: 126  setlocal 0
+00013: 126  pop
+00014: 127  getlocal 0
+00017: 127  dup
+00018: 127  callprop "getHours"
+00023: 127  swap
+00024: 127  notearg
+00025: 127  call 0
+00028: 127  setlocal 1
+00031: 127  pop
+00032: 129  getlocal 2
+00035: 129  pop
+00036: 130  getlocal 1
+00039: 130  int8 5
+00041: 130  ge
+00042: 130  and 54 (+12)
+00047: 130  pop
+00048: 130  getlocal 1
+00051: 130  int8 17
+00053: 130  lt
+00054: 130  ifeq 94 (+40)
+00059: 131  this
+00060: 131  getprop "Cfg"
+00065: 131  getprop "Sprite"
+00070: 131  getprop "Single01"
+00075: 131  getprop "MainMorning_bg"
+00080: 131  getprop "fileName"
+00085: 131  setlocal 2
+00088: 131  pop
+00089: 131  goto 182 (+93)
+00094: 132  getlocal 1
+00097: 132  int8 17
+00099: 132  ge
+00100: 132  and 112 (+12)
+00105: 132  pop
+00106: 132  getlocal 1
+00109: 132  int8 19
+00111: 132  lt
+00112: 132  ifeq 152 (+40)
+00117: 133  this
+00118: 133  getprop "Cfg"
+00123: 133  getprop "Sprite"
+00128: 133  getprop "Single01"
+00133: 133  getprop "MainNightfall_bg"
+00138: 133  getprop "fileName"
+00143: 133  setlocal 2
+00146: 133  pop
+00147: 133  goto 182 (+35)
+00152: 135  this
+00153: 135  getprop "Cfg"
+00158: 135  getprop "Sprite"
+00163: 135  getprop "Single01"
+00168: 135  getprop "MainNight_bg"
+00173: 135  getprop "fileName"
+00178: 135  setlocal 2
+00181: 135  pop
+00182: 138  name "xsc"
+00187: 138  getprop "Factorys"
+00192: 138  getprop "Sprite"
+00197: 138  dup
+00198: 138  callprop "createWithFileName"
+00203: 138  swap
+00204: 138  notearg
+00205: 138  getlocal 2
+00208: 138  notearg
+00209: 138  call 1
+00212: 138  setlocal 3
+00215: 138  pop
+00216: 140  uint16 1136
+00219: 140  getlocal 3
+00222: 140  dup
+00223: 140  callprop "getContentSize"
+00228: 140  swap
+00229: 140  notearg
+00230: 140  call 0
+00233: 140  getprop "width"
+00238: 140  div
+00239: 140  setlocal 4
+00242: 140  pop
+00243: 141  getlocal 3
+00246: 141  dup
+00247: 141  callprop "setScale"
+00252: 141  swap
+00253: 141  notearg
+00254: 141  getlocal 4
+00257: 141  notearg
+00258: 141  call 1
+00261: 141  pop
+00262: 142  getlocal 3
+00265: 142  dup
+00266: 142  callprop "setAnchorPoint"
+00271: 142  swap
+00272: 142  notearg
+00273: 142  name "xsc"
+00278: 142  getprop "ap_bc"
+00283: 142  notearg
+00284: 142  call 1
+00287: 142  pop
+00288: 144  name "xsc"
+00293: 144  dup
+00294: 144  callprop "attachNodes"
+00299: 144  swap
+00300: 144  notearg
+00301: 144  getarg 0
+00304: 144  notearg
+00305: 144  getlocal 3
+00308: 144  notearg
+00309: 144  newinit 1
+00314: 145  string "bc"
+00319: 145  initprop "desc"
+00324: 146  newinit 1
+00329: 147  int32 -347
+00334: 147  initprop "y"
+00339: 147  endinit
+00340: 147  initprop "offset"
+00345: 149  true
+00346: 149  initprop "sc"
+00351: 149  endinit
+00352: 149  notearg
+00353: 149  call 3
+00356: 149  pop
+00357: 152  getlocal 3
+00360: 152  return
+00361: 152  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:124 ---
+;; function object[2] init
+;; function metadata object[2] nargs=0 bindings=7
+;; local[0] _gameNameView
+;; local[1] _sprite_bg
+;; local[2] _sprite_mid
+;; local[3] _prgTimer
+;; local[4] _sprite_light
+;; local[5] _sprite_frame
+;; local[6] _labelVerDesc
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=1964 object[0]
+;; FUNCTION-MAP kind=lambda offset=2026 object[1]
+;; FUNCTION-MAP kind=lambda offset=2088 object[2]
+;; FUNCTION-MAP kind=lambda offset=2150 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:155 ---
+loc   line  op
+----- ----  --
+main:
+00000: 157  this
+00001: 157  dup
+00002: 157  callprop "_super"
+00007: 157  swap
+00008: 157  notearg
+00009: 157  call 0
+00012: 157  not
+00013: 157  ifeq 20 (+7)
+00018: 158  false
+00019: 158  return
+00020: 161  this
+00021: 161  null
+00022: 161  setprop "m_ver_code_new"
+00027: 161  pop
+00028: 162  this
+00029: 162  null
+00030: 162  setprop "m_download_url"
+00035: 162  pop
+00036: 163  this
+00037: 163  null
+00038: 163  setprop "m_filesize"
+00043: 163  pop
+00044: 164  this
+00045: 164  null
+00046: 164  setprop "m_filemd5"
+00051: 164  pop
+00052: 165  this
+00053: 165  null
+00054: 165  setprop "m_download_tips"
+00059: 165  pop
+00060: 166  this
+00061: 166  null
+00062: 166  setprop "m_is_cpp_update"
+00067: 166  pop
+00068: 167  this
+00069: 167  newinit 1
+00074: 168  null
+00075: 168  initprop "type"
+00080: 169  null
+00081: 169  initprop "msg"
+00086: 169  endinit
+00087: 169  setprop "m_cpp_update"
+00092: 169  pop
+00093: 174  this
+00094: 174  dup
+00095: 174  callprop "_addIndexBgSprite"
+00100: 174  swap
+00101: 174  notearg
+00102: 174  this
+00103: 174  notearg
+00104: 174  call 1
+00107: 174  pop
+00108: 177  name "xsc"
+00113: 177  getprop "Factorys"
+00118: 177  getprop "Sprite"
+00123: 177  dup
+00124: 177  callprop "createWithFileName"
+00129: 177  swap
+00130: 177  notearg
+00131: 177  string "tex/logo/logo_title5_2.png"
+00136: 177  notearg
+00137: 177  call 1
+00140: 177  setlocal 0
+00143: 177  pop
+00144: 178  getlocal 0
+00147: 178  dup
+00148: 178  callprop "setAnchorPoint"
+00153: 178  swap
+00154: 178  notearg
+00155: 178  name "xsc"
+00160: 178  getprop "ap_c"
+00165: 178  notearg
+00166: 178  call 1
+00169: 178  pop
+00170: 179  name "xsc"
+00175: 179  getprop "Utils"
+00180: 179  getprop "Node"
+00185: 179  dup
+00186: 179  callprop "attachNodes"
+00191: 179  swap
+00192: 179  notearg
+00193: 179  this
+00194: 179  notearg
+00195: 179  getlocal 0
+00198: 179  notearg
+00199: 179  newinit 1
+00204: 180  string "c"
+00209: 180  initprop "desc"
+00214: 182  true
+00215: 182  initprop "sc"
+00220: 182  endinit
+00221: 182  notearg
+00222: 182  call 3
+00225: 182  pop
+00226: 186  this
+00227: 186  name "cc"
+00232: 186  getprop "LabelTTF"
+00237: 186  dup
+00238: 186  callprop "create"
+00243: 186  swap
+00244: 186  notearg
+00245: 186  string ""
+00250: 186  notearg
+00251: 186  name "xsc"
+00256: 186  getprop "Tools"
+00261: 186  getprop "ProductSys"
+00266: 186  dup
+00267: 186  callprop "getOurttf"
+00272: 186  swap
+00273: 186  notearg
+00274: 186  call 0
+00277: 186  notearg
+00278: 186  int8 34
+00280: 186  notearg
+00281: 186  call 3
+00284: 186  setprop "m_label_msg"
+00289: 186  pop
+00290: 187  this
+00291: 187  getprop "m_label_msg"
+00296: 187  dup
+00297: 187  callprop "setColor"
+00302: 187  swap
+00303: 187  notearg
+00304: 187  name "cc"
+00309: 187  dup
+00310: 187  callprop "c3b"
+00315: 187  swap
+00316: 187  notearg
+00317: 187  uint16 255
+00320: 187  notearg
+00321: 187  uint16 229
+00324: 187  notearg
+00325: 187  int8 8
+00327: 187  notearg
+00328: 187  call 3
+00331: 187  notearg
+00332: 187  call 1
+00335: 187  pop
+00336: 188  this
+00337: 188  getprop "m_label_msg"
+00342: 188  dup
+00343: 188  callprop "enableStroke"
+00348: 188  swap
+00349: 188  notearg
+00350: 188  name "cc"
+00355: 188  dup
+00356: 188  callprop "c3b"
+00361: 188  swap
+00362: 188  notearg
+00363: 188  zero
+00364: 188  notearg
+00365: 188  zero
+00366: 188  notearg
+00367: 188  zero
+00368: 188  notearg
+00369: 188  call 3
+00372: 188  notearg
+00373: 188  int8 2
+00375: 188  notearg
+00376: 188  call 2
+00379: 188  pop
+00380: 189  this
+00381: 189  getprop "m_label_msg"
+00386: 189  dup
+00387: 189  callprop "runAction"
+00392: 189  swap
+00393: 189  notearg
+00394: 190  name "cc"
+00399: 190  getprop "RepeatForever"
+00404: 190  dup
+00405: 190  callprop "create"
+00410: 190  swap
+00411: 190  notearg
+00412: 191  name "cc"
+00417: 191  getprop "Sequence"
+00422: 191  dup
+00423: 191  callprop "create"
+00428: 191  swap
+00429: 191  notearg
+00430: 192  name "cc"
+00435: 192  getprop "DelayTime"
+00440: 192  dup
+00441: 192  callprop "create"
+00446: 192  swap
+00447: 192  notearg
+00448: 192  int8 10
+00450: 192  notearg
+00451: 192  call 1
+00454: 192  notearg
+00455: 195  name "cc"
+00460: 195  getprop "JumpBy"
+00465: 195  dup
+00466: 195  callprop "create"
+00471: 195  swap
+00472: 195  notearg
+00473: 195  double 0.5
+00478: 195  notearg
+00479: 195  name "cc"
+00484: 195  getprop "POINT_ZERO"
+00489: 195  notearg
+00490: 195  int8 60
+00492: 195  notearg
+00493: 195  one
+00494: 195  notearg
+00495: 195  call 4
+00498: 195  notearg
+00499: 195  call 2
+00502: 195  notearg
+00503: 195  call 1
+00506: 195  notearg
+00507: 195  call 1
+00510: 195  pop
+00511: 199  name "xsc"
+00516: 199  dup
+00517: 199  callprop "attachNodes"
+00522: 199  swap
+00523: 199  notearg
+00524: 200  this
+00525: 200  notearg
+00526: 200  this
+00527: 200  getprop "m_label_msg"
+00532: 200  notearg
+00533: 201  newinit 1
+00538: 202  string "c"
+00543: 202  initprop "desc"
+00548: 203  newinit 1
+00553: 204  int8 -100
+00555: 204  initprop "y"
+00560: 204  endinit
+00561: 204  initprop "offset"
+00566: 206  true
+00567: 206  initprop "sc"
+00572: 206  endinit
+00573: 206  notearg
+00574: 206  call 3
+00577: 206  pop
+00578: 211  this
+00579: 211  name "cc"
+00584: 211  getprop "LabelTTF"
+00589: 211  dup
+00590: 211  callprop "create"
+00595: 211  swap
+00596: 211  notearg
+00597: 211  string ""
+00602: 211  notearg
+00603: 211  name "xsc"
+00608: 211  getprop "Tools"
+00613: 211  getprop "ProductSys"
+00618: 211  dup
+00619: 211  callprop "getOurttf"
+00624: 211  swap
+00625: 211  notearg
+00626: 211  call 0
+00629: 211  notearg
+00630: 211  int8 34
+00632: 211  notearg
+00633: 211  call 3
+00636: 211  setprop "m_label_tip"
+00641: 211  pop
+00642: 212  this
+00643: 212  getprop "m_label_tip"
+00648: 212  dup
+00649: 212  callprop "setColor"
+00654: 212  swap
+00655: 212  notearg
+00656: 212  name "cc"
+00661: 212  dup
+00662: 212  callprop "c3b"
+00667: 212  swap
+00668: 212  notearg
+00669: 212  uint16 255
+00672: 212  notearg
+00673: 212  uint16 229
+00676: 212  notearg
+00677: 212  int8 8
+00679: 212  notearg
+00680: 212  call 3
+00683: 212  notearg
+00684: 212  call 1
+00687: 212  pop
+00688: 213  this
+00689: 213  getprop "m_label_tip"
+00694: 213  dup
+00695: 213  callprop "enableStroke"
+00700: 213  swap
+00701: 213  notearg
+00702: 213  name "cc"
+00707: 213  dup
+00708: 213  callprop "c3b"
+00713: 213  swap
+00714: 213  notearg
+00715: 213  zero
+00716: 213  notearg
+00717: 213  zero
+00718: 213  notearg
+00719: 213  zero
+00720: 213  notearg
+00721: 213  call 3
+00724: 213  notearg
+00725: 213  int8 2
+00727: 213  notearg
+00728: 213  call 2
+00731: 213  pop
+00732: 214  name "xsc"
+00737: 214  dup
+00738: 214  callprop "attachNodes"
+00743: 214  swap
+00744: 214  notearg
+00745: 215  this
+00746: 215  notearg
+00747: 215  this
+00748: 215  getprop "m_label_tip"
+00753: 215  notearg
+00754: 216  newinit 1
+00759: 217  string "c"
+00764: 217  initprop "desc"
+00769: 218  newinit 1
+00774: 219  int32 -230
+00779: 219  initprop "y"
+00784: 219  endinit
+00785: 219  initprop "offset"
+00790: 221  true
+00791: 221  initprop "sc"
+00796: 221  endinit
+00797: 221  notearg
+00798: 221  call 3
+00801: 221  pop
+00802: 226  name "xsc"
+00807: 226  getprop "Factorys"
+00812: 226  getprop "Sprite"
+00817: 226  dup
+00818: 226  callprop "createWithSpriteFrameName"
+00823: 226  swap
+00824: 226  notearg
+00825: 226  this
+00826: 226  getprop "Cfg"
+00831: 226  getprop "Sprite"
+00836: 226  getprop "Update"
+00841: 226  getprop "Update_PrgBg"
+00846: 226  getprop "frameName"
+00851: 226  notearg
+00852: 226  call 1
+00855: 226  setlocal 1
+00858: 226  pop
+00859: 227  name "xsc"
+00864: 227  dup
+00865: 227  callprop "attachNodes"
+00870: 227  swap
+00871: 227  notearg
+00872: 228  this
+00873: 228  notearg
+00874: 228  getlocal 1
+00877: 228  notearg
+00878: 229  newinit 1
+00883: 230  string "c"
+00888: 230  initprop "desc"
+00893: 231  newinit 1
+00898: 232  int32 -134
+00903: 232  initprop "y"
+00908: 232  endinit
+00909: 232  initprop "offset"
+00914: 234  true
+00915: 234  initprop "sc"
+00920: 234  endinit
+00921: 234  notearg
+00922: 234  call 3
+00925: 234  pop
+00926: 237  this
+00927: 237  getlocal 1
+00930: 237  setprop "m_sprite_prg_bg"
+00935: 237  pop
+00936: 238  this
+00937: 238  getprop "m_sprite_prg_bg"
+00942: 238  dup
+00943: 238  callprop "setVisible"
+00948: 238  swap
+00949: 238  notearg
+00950: 238  false
+00951: 238  notearg
+00952: 238  call 1
+00955: 238  pop
+00956: 240  name "xsc"
+00961: 240  getprop "Factorys"
+00966: 240  getprop "Sprite"
+00971: 240  dup
+00972: 240  callprop "createWithSpriteFrameName"
+00977: 240  swap
+00978: 240  notearg
+00979: 240  this
+00980: 240  getprop "Cfg"
+00985: 240  getprop "Sprite"
+00990: 240  getprop "Update"
+00995: 240  getprop "Update_PrgMid"
+01000: 240  getprop "frameName"
+01005: 240  notearg
+01006: 240  call 1
+01009: 240  setlocal 2
+01012: 240  pop
+01013: 242  name "cc"
+01018: 242  getprop "ProgressTimer"
+01023: 242  dup
+01024: 242  callprop "create"
+01029: 242  swap
+01030: 242  notearg
+01031: 242  getlocal 2
+01034: 242  notearg
+01035: 242  call 1
+01038: 242  setlocal 3
+01041: 242  pop
+01042: 243  getlocal 3
+01045: 243  dup
+01046: 243  callprop "setType"
+01051: 243  swap
+01052: 243  notearg
+01053: 243  name "cc"
+01058: 243  getprop "PROGRESS_TIMER_TYPE_BAR"
+01063: 243  notearg
+01064: 243  call 1
+01067: 243  pop
+01068: 244  getlocal 3
+01071: 244  dup
+01072: 244  callprop "setMidpoint"
+01077: 244  swap
+01078: 244  notearg
+01079: 244  name "cc"
+01084: 244  dup
+01085: 244  callprop "p"
+01090: 244  swap
+01091: 244  notearg
+01092: 244  zero
+01093: 244  notearg
+01094: 244  zero
+01095: 244  notearg
+01096: 244  call 2
+01099: 244  notearg
+01100: 244  call 1
+01103: 244  pop
+01104: 245  getlocal 3
+01107: 245  dup
+01108: 245  callprop "setBarChangeRate"
+01113: 245  swap
+01114: 245  notearg
+01115: 245  name "cc"
+01120: 245  dup
+01121: 245  callprop "p"
+01126: 245  swap
+01127: 245  notearg
+01128: 245  one
+01129: 245  notearg
+01130: 245  zero
+01131: 245  notearg
+01132: 245  call 2
+01135: 245  notearg
+01136: 245  call 1
+01139: 245  pop
+01140: 246  name "xsc"
+01145: 246  dup
+01146: 246  callprop "attachNodes"
+01151: 246  swap
+01152: 246  notearg
+01153: 247  this
+01154: 247  notearg
+01155: 247  getlocal 3
+01158: 247  notearg
+01159: 248  newinit 1
+01164: 249  string "c"
+01169: 249  initprop "desc"
+01174: 250  newinit 1
+01179: 251  int32 -134
+01184: 251  initprop "y"
+01189: 251  endinit
+01190: 251  initprop "offset"
+01195: 253  true
+01196: 253  initprop "sc"
+01201: 253  endinit
+01202: 253  notearg
+01203: 253  call 3
+01206: 253  pop
+01207: 256  this
+01208: 256  getlocal 3
+01211: 256  setprop "m_prg"
+01216: 256  pop
+01217: 258  name "xsc"
+01222: 258  getprop "Factorys"
+01227: 258  getprop "Sprite"
+01232: 258  dup
+01233: 258  callprop "createWithSpriteFrameName"
+01238: 258  swap
+01239: 258  notearg
+01240: 258  this
+01241: 258  getprop "Cfg"
+01246: 258  getprop "Sprite"
+01251: 258  getprop "Update"
+01256: 258  getprop "Update_PrgLight"
+01261: 258  getprop "frameName"
+01266: 258  notearg
+01267: 258  call 1
+01270: 258  setlocal 4
+01273: 258  pop
+01274: 259  getlocal 4
+01277: 259  dup
+01278: 259  callprop "setPosition"
+01283: 259  swap
+01284: 259  notearg
+01285: 259  name "cc"
+01290: 259  dup
+01291: 259  callprop "p"
+01296: 259  swap
+01297: 259  notearg
+01298: 259  int8 20
+01300: 259  notearg
+01301: 259  getlocal 4
+01304: 259  dup
+01305: 259  callprop "getContentSize"
+01310: 259  swap
+01311: 259  notearg
+01312: 259  call 0
+01315: 259  getprop "height"
+01320: 259  int8 2
+01322: 259  div
+01323: 259  int8 5
+01325: 259  sub
+01326: 259  notearg
+01327: 259  call 2
+01330: 259  notearg
+01331: 259  call 1
+01334: 259  pop
+01335: 261  name "xsc"
+01340: 261  getprop "Factorys"
+01345: 261  getprop "Sprite"
+01350: 261  dup
+01351: 261  callprop "createWithSpriteFrameName"
+01356: 261  swap
+01357: 261  notearg
+01358: 261  this
+01359: 261  getprop "Cfg"
+01364: 261  getprop "Sprite"
+01369: 261  getprop "Update"
+01374: 261  getprop "Update_PrgFrame"
+01379: 261  getprop "frameName"
+01384: 261  notearg
+01385: 261  call 1
+01388: 261  setlocal 5
+01391: 261  pop
+01392: 262  name "xsc"
+01397: 262  dup
+01398: 262  callprop "attachNodes"
+01403: 262  swap
+01404: 262  notearg
+01405: 263  this
+01406: 263  notearg
+01407: 263  getlocal 5
+01410: 263  notearg
+01411: 264  newinit 1
+01416: 265  string "c"
+01421: 265  initprop "desc"
+01426: 266  newinit 1
+01431: 267  int32 -134
+01436: 267  initprop "y"
+01441: 267  endinit
+01442: 267  initprop "offset"
+01447: 269  true
+01448: 269  initprop "sc"
+01453: 269  endinit
+01454: 269  notearg
+01455: 269  call 3
+01458: 269  pop
+01459: 272  name "xsc"
+01464: 272  dup
+01465: 272  callprop "attachNodes"
+01470: 272  swap
+01471: 272  notearg
+01472: 273  getlocal 5
+01475: 273  notearg
+01476: 273  getlocal 4
+01479: 273  notearg
+01480: 274  newinit 1
+01485: 275  string "c"
+01490: 275  initprop "desc"
+01495: 276  newinit 1
+01500: 277  int32 -134
+01505: 277  initprop "y"
+01510: 277  endinit
+01511: 277  initprop "offset"
+01516: 279  true
+01517: 279  initprop "sc"
+01522: 279  endinit
+01523: 279  notearg
+01524: 279  call 3
+01527: 279  pop
+01528: 283  this
+01529: 283  getlocal 5
+01532: 283  setprop "m_sprite_prg_frame"
+01537: 283  pop
+01538: 284  this
+01539: 284  getprop "m_sprite_prg_frame"
+01544: 284  dup
+01545: 284  callprop "setVisible"
+01550: 284  swap
+01551: 284  notearg
+01552: 284  false
+01553: 284  notearg
+01554: 284  call 1
+01557: 284  pop
+01558: 287  name "cc"
+01563: 287  getprop "LabelTTF"
+01568: 287  dup
+01569: 287  callprop "create"
+01574: 287  swap
+01575: 287  notearg
+01576: 287  string ""
+01581: 287  notearg
+01582: 287  name "xsc"
+01587: 287  getprop "Tools"
+01592: 287  getprop "ProductSys"
+01597: 287  dup
+01598: 287  callprop "getOurttf"
+01603: 287  swap
+01604: 287  notearg
+01605: 287  call 0
+01608: 287  notearg
+01609: 287  int8 25
+01611: 287  notearg
+01612: 287  call 3
+01615: 287  setlocal 6
+01618: 287  pop
+01619: 288  getlocal 6
+01622: 288  dup
+01623: 288  callprop "setFontFillColor"
+01628: 288  swap
+01629: 288  notearg
+01630: 288  name "cc"
+01635: 288  dup
+01636: 288  callprop "c3b"
+01641: 288  swap
+01642: 288  notearg
+01643: 288  uint16 255
+01646: 288  notearg
+01647: 288  uint16 232
+01650: 288  notearg
+01651: 288  uint16 186
+01654: 288  notearg
+01655: 288  call 3
+01658: 288  notearg
+01659: 288  true
+01660: 288  notearg
+01661: 288  call 2
+01664: 288  pop
+01665: 300  getlocal 6
+01668: 300  dup
+01669: 300  callprop "setString"
+01674: 300  swap
+01675: 300  notearg
+01676: 300  name "xs"
+01681: 300  getprop "Core"
+01686: 300  getprop "Tools"
+01691: 300  getprop "String"
+01696: 300  dup
+01697: 300  callprop "createString"
+01702: 300  swap
+01703: 300  notearg
+01704: 300  string "auto_name_version"
+01709: 300  notearg
+01710: 300  call 1
+01713: 300  name "xsc"
+01718: 300  getprop "Tools"
+01723: 300  getprop "Jsb"
+01728: 300  dup
+01729: 300  callprop "getOriResCode"
+01734: 300  swap
+01735: 300  notearg
+01736: 300  call 0
+01739: 300  add
+01740: 300  notearg
+01741: 300  call 1
+01744: 300  pop
+01745: 301  getlocal 6
+01748: 301  dup
+01749: 301  callprop "setHorizontalAlignment"
+01754: 301  swap
+01755: 301  notearg
+01756: 301  name "xsc"
+01761: 301  getprop "AlignH_Left"
+01766: 301  notearg
+01767: 301  call 1
+01770: 301  pop
+01771: 302  getlocal 6
+01774: 302  dup
+01775: 302  callprop "setVerticalAlignment"
+01780: 302  swap
+01781: 302  notearg
+01782: 302  name "xsc"
+01787: 302  getprop "AlignV_Bottom"
+01792: 302  notearg
+01793: 302  call 1
+01796: 302  pop
+01797: 303  getlocal 6
+01800: 303  dup
+01801: 303  callprop "setAnchorPoint"
+01806: 303  swap
+01807: 303  notearg
+01808: 303  name "xsc"
+01813: 303  getprop "ap_lb"
+01818: 303  notearg
+01819: 303  call 1
+01822: 303  pop
+01823: 305  name "xsc"
+01828: 305  dup
+01829: 305  callprop "attachNodes"
+01834: 305  swap
+01835: 305  notearg
+01836: 305  this
+01837: 305  notearg
+01838: 305  getlocal 6
+01841: 305  notearg
+01842: 305  newinit 1
+01847: 305  true
+01848: 305  initprop "sc"
+01853: 305  string "lb"
+01858: 305  initprop "desc"
+01863: 305  newinit 1
+01868: 305  zero
+01869: 305  initprop "x"
+01874: 305  zero
+01875: 305  initprop "y"
+01880: 305  endinit
+01881: 305  initprop "offset"
+01886: 305  endinit
+01887: 305  notearg
+01888: 305  call 3
+01891: 305  pop
+01892: 307  this
+01893: 307  name "xsc"
+01898: 307  getprop "Utils"
+01903: 307  getprop "Notify"
+01908: 307  dup
+01909: 307  callprop "create"
+01914: 307  swap
+01915: 307  notearg
+01916: 307  call 0
+01919: 307  setprop "m_notify"
+01924: 307  pop
+01925: 309  name "xsc"
+01930: 309  getprop "Cpp2Jsb"
+01935: 309  dup
+01936: 309  callprop "registerCallBack"
+01941: 309  swap
+01942: 309  notearg
+01943: 310  newarray 1
+01947: 310  string "AssetsMgr"
+01952: 310  initelem_array 0
+01956: 310  endinit
+01957: 310  notearg
+01958: 311  string "onDownloadProgress"
+01963: 311  notearg
+01964: 312  lambda (function () {
+    [sourceless code]
+})
+01969: 312  dup
+01970: 312  callprop "bind"
+01975: 312  swap
+01976: 312  notearg
+01977: 314  this
+01978: 314  notearg
+01979: 314  call 1
+01982: 314  notearg
+01983: 314  call 3
+01986: 314  pop
+01987: 317  name "xsc"
+01992: 317  getprop "Cpp2Jsb"
+01997: 317  dup
+01998: 317  callprop "registerCallBack"
+02003: 317  swap
+02004: 317  notearg
+02005: 318  newarray 1
+02009: 318  string "AssetsMgr"
+02014: 318  initelem_array 0
+02018: 318  endinit
+02019: 318  notearg
+02020: 319  string "onDownloadSuccess"
+02025: 319  notearg
+02026: 320  lambda (function () {
+    [sourceless code]
+})
+02031: 320  dup
+02032: 320  callprop "bind"
+02037: 320  swap
+02038: 320  notearg
+02039: 322  this
+02040: 322  notearg
+02041: 322  call 1
+02044: 322  notearg
+02045: 322  call 3
+02048: 322  pop
+02049: 325  name "xsc"
+02054: 325  getprop "Cpp2Jsb"
+02059: 325  dup
+02060: 325  callprop "registerCallBack"
+02065: 325  swap
+02066: 325  notearg
+02067: 326  newarray 1
+02071: 326  string "AssetsMgr"
+02076: 326  initelem_array 0
+02080: 326  endinit
+02081: 326  notearg
+02082: 327  string "onUncompressSuccess"
+02087: 327  notearg
+02088: 328  lambda (function () {
+    [sourceless code]
+})
+02093: 328  dup
+02094: 328  callprop "bind"
+02099: 328  swap
+02100: 328  notearg
+02101: 330  this
+02102: 330  notearg
+02103: 330  call 1
+02106: 330  notearg
+02107: 330  call 3
+02110: 330  pop
+02111: 333  name "xsc"
+02116: 333  getprop "Cpp2Jsb"
+02121: 333  dup
+02122: 333  callprop "registerCallBack"
+02127: 333  swap
+02128: 333  notearg
+02129: 334  newarray 1
+02133: 334  string "AssetsMgr"
+02138: 334  initelem_array 0
+02142: 334  endinit
+02143: 334  notearg
+02144: 335  string "onError"
+02149: 335  notearg
+02150: 336  lambda (function () {
+    [sourceless code]
+})
+02155: 336  dup
+02156: 336  callprop "bind"
+02161: 336  swap
+02162: 336  notearg
+02163: 371  this
+02164: 371  notearg
+02165: 371  call 1
+02168: 371  notearg
+02169: 371  call 3
+02172: 371  pop
+02173: 375  this
+02174: 375  dup
+02175: 375  callprop "setTouchEnabled"
+02180: 375  swap
+02181: 375  notearg
+02182: 375  true
+02183: 375  notearg
+02184: 375  call 1
+02187: 375  pop
+02188: 376  this
+02189: 376  dup
+02190: 376  callprop "setTouchMode"
+02195: 376  swap
+02196: 376  notearg
+02197: 376  name "cc"
+02202: 376  getprop "TOUCH_ONE_BY_ONE"
+02207: 376  notearg
+02208: 376  call 1
+02211: 376  pop
+02212: 382  true
+02213: 382  return
+02214: 382  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:155 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] arguments
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:312 ---
+loc   line  op
+----- ----  --
+00000: 312  arguments
+00001: 312  setlocal 0
+00004: 312  pop
+main:
+00005: 313  this
+00006: 313  getprop "m_notify"
+00011: 313  dup
+00012: 313  callprop "postNotification"
+00017: 313  swap
+00018: 313  notearg
+00019: 313  this
+00020: 313  getprop "Event_Progress"
+00025: 313  notearg
+00026: 313  newinit 1
+00031: 313  getlocal 0
+00034: 313  int8 2
+00036: 313  getelem
+00037: 313  initprop "cur"
+00042: 313  int8 100
+00044: 313  initprop "max"
+00049: 313  endinit
+00050: 313  notearg
+00051: 313  call 2
+00054: 313  pop
+00055: 313  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:312 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:320 ---
+loc   line  op
+----- ----  --
+main:
+00000: 321  this
+00001: 321  getprop "m_notify"
+00006: 321  dup
+00007: 321  callprop "postNotification"
+00012: 321  swap
+00013: 321  notearg
+00014: 321  this
+00015: 321  getprop "Event_DownloadSuccess"
+00020: 321  notearg
+00021: 321  null
+00022: 321  notearg
+00023: 321  call 2
+00026: 321  pop
+00027: 321  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:320 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:328 ---
+loc   line  op
+----- ----  --
+main:
+00000: 329  this
+00001: 329  getprop "m_notify"
+00006: 329  dup
+00007: 329  callprop "postNotification"
+00012: 329  swap
+00013: 329  notearg
+00014: 329  this
+00015: 329  getprop "Event_UncompressSuccess"
+00020: 329  notearg
+00021: 329  null
+00022: 329  notearg
+00023: 329  call 2
+00026: 329  pop
+00027: 329  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:328 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=3 bindings=4
+;; arg[0] nameClass
+;; arg[1] nameFunc
+;; arg[2] codeErr
+;; local[0] _err_code
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:336 ---
+loc   line  op
+----- ----  --
+main:
+00000: 337  name "xsc"
+00005: 337  dup
+00006: 337  callprop "parseInt"
+00011: 337  swap
+00012: 337  notearg
+00013: 337  getarg 2
+00016: 337  notearg
+00017: 337  call 1
+00020: 337  setlocal 0
+00023: 337  pop
+00024: 344  getlocal 0
+00027: 344  condswitch
+00028: 346  this
+00029: 346  getprop "Const_Task_ErrorCode_None"
+00034: 346  case 88 (+54)
+00039: 349  this
+00040: 349  getprop "Const_Task_ErrorCode_CreateFile"
+00045: 349  case 120 (+75)
+00050: 352  this
+00051: 352  getprop "Const_Task_ErrorCode_Download"
+00056: 352  case 145 (+89)
+00061: 361  this
+00062: 361  getprop "Const_Task_ErrorCode_Uncompress"
+00067: 361  case 230 (+163)
+00072: 364  this
+00073: 364  getprop "Const_Task_ErrorCode_Download_Operation_Timeout"
+00078: 364  case 255 (+177)
+00083: 364  default 88 (+5)
+00088: 347  name "xsc"
+00093: 347  dup
+00094: 347  callprop "error"
+00099: 347  swap
+00100: 347  notearg
+00101: 347  string "onError"
+00106: 347  notearg
+00107: 347  getlocal 0
+00110: 347  notearg
+00111: 347  call 2
+00114: 347  pop
+00115: 348  goto 280 (+165)
+00120: 350  this
+00121: 350  dup
+00122: 350  callprop "_setStep0"
+00127: 350  swap
+00128: 350  notearg
+00129: 350  this
+00130: 350  getprop "Step_Update_EnterLogin"
+00135: 350  notearg
+00136: 350  call 1
+00139: 350  pop
+00140: 351  goto 280 (+140)
+00145: 355  this
+00146: 355  getprop "m_sprite_prg_bg"
+00151: 355  dup
+00152: 355  callprop "setVisible"
+00157: 355  swap
+00158: 355  notearg
+00159: 355  false
+00160: 355  notearg
+00161: 355  call 1
+00164: 355  pop
+00165: 356  this
+00166: 356  getprop "m_sprite_prg_frame"
+00171: 356  dup
+00172: 356  callprop "setVisible"
+00177: 356  swap
+00178: 356  notearg
+00179: 356  false
+00180: 356  notearg
+00181: 356  call 1
+00184: 356  pop
+00185: 357  this
+00186: 357  getprop "m_prg"
+00191: 357  dup
+00192: 357  callprop "setPercentage"
+00197: 357  swap
+00198: 357  notearg
+00199: 357  zero
+00200: 357  notearg
+00201: 357  call 1
+00204: 357  pop
+00205: 358  this
+00206: 358  dup
+00207: 358  callprop "_setStep0"
+00212: 358  swap
+00213: 358  notearg
+00214: 358  this
+00215: 358  getprop "Step_Update_Js_Confirm_Waiting"
+00220: 358  notearg
+00221: 358  call 1
+00224: 358  pop
+00225: 360  goto 280 (+55)
+00230: 362  this
+00231: 362  dup
+00232: 362  callprop "_setStep0"
+00237: 362  swap
+00238: 362  notearg
+00239: 362  this
+00240: 362  getprop "Step_Update_EnterLogin"
+00245: 362  notearg
+00246: 362  call 1
+00249: 362  pop
+00250: 363  goto 280 (+30)
+00255: 365  this
+00256: 365  dup
+00257: 365  callprop "_setStep0"
+00262: 365  swap
+00263: 365  notearg
+00264: 365  this
+00265: 365  getprop "Step_Download_New"
+00270: 365  notearg
+00271: 365  call 1
+00274: 365  pop
+00275: 366  goto 280 (+5)
+00280: 367  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:336 ---
+;; function object[3] _onEvent_Msg
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] msg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:387 ---
+loc   line  op
+----- ----  --
+main:
+00000: 391  this
+00001: 391  getprop "m_label_msg"
+00006: 391  dup
+00007: 391  callprop "setString"
+00012: 391  swap
+00013: 391  notearg
+00014: 391  getarg 0
+00017: 391  notearg
+00018: 391  call 1
+00021: 391  pop
+00022: 391  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:387 ---
+;; function object[4] _onEvent_ServerTip
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] msg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:394 ---
+loc   line  op
+----- ----  --
+main:
+00000: 395  this
+00001: 395  dup
+00002: 395  callprop "dump"
+00007: 395  swap
+00008: 395  notearg
+00009: 395  string "_onEvent_ServerTip"
+00014: 395  notearg
+00015: 395  getarg 0
+00018: 395  notearg
+00019: 395  call 2
+00022: 395  pop
+00023: 396  this
+00024: 396  getprop "m_label_tip"
+00029: 396  dup
+00030: 396  callprop "setString"
+00035: 396  swap
+00036: 396  notearg
+00037: 396  getarg 0
+00040: 396  notearg
+00041: 396  call 1
+00044: 396  pop
+00045: 396  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:394 ---
+;; function object[5] _onEvent_Progress
+;; function metadata object[5] nargs=1 bindings=6
+;; arg[0] obj
+;; local[0] _s
+;; local[1] _s_all
+;; local[2] _prg
+;; local[3] _str0
+;; local[4] _str1
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:404 ---
+loc   line  op
+----- ----  --
+main:
+00000: 415  this
+00001: 415  getprop "m_filesize_downloaded"
+00006: 415  this
+00007: 415  getprop "m_filesize_need_download"
+00012: 415  getarg 0
+00015: 415  getprop "cur"
+00020: 415  getarg 0
+00023: 415  getprop "max"
+00028: 415  div
+00029: 415  mul
+00030: 415  add
+00031: 417  uint16 1024
+00034: 417  div
+00035: 417  uint16 1024
+00038: 417  div
+00039: 417  string ""
+00044: 417  add
+00045: 417  setlocal 0
+00048: 417  pop
+00049: 418  this
+00050: 418  getprop "m_filesize"
+00055: 418  uint16 1024
+00058: 418  div
+00059: 418  uint16 1024
+00062: 418  div
+00063: 418  string ""
+00068: 418  add
+00069: 418  setlocal 1
+00072: 418  pop
+00073: 431  getlocal 0
+00076: 431  getlocal 1
+00079: 431  div
+00080: 431  int8 100
+00082: 431  mul
+00083: 431  setlocal 2
+00086: 431  pop
+00087: 432  this
+00088: 432  getprop "m_prg"
+00093: 432  dup
+00094: 432  callprop "setPercentage"
+00099: 432  swap
+00100: 432  notearg
+00101: 432  getlocal 2
+00104: 432  notearg
+00105: 432  call 1
+00108: 432  pop
+00109: 434  name "xsc"
+00114: 434  getprop "Utils"
+00119: 434  dup
+00120: 434  callprop "parseFloatDotLimit"
+00125: 434  swap
+00126: 434  notearg
+00127: 434  getlocal 0
+00130: 434  notearg
+00131: 434  int8 100
+00133: 434  notearg
+00134: 434  call 2
+00137: 434  setlocal 3
+00140: 434  pop
+00141: 435  name "xsc"
+00146: 435  getprop "Utils"
+00151: 435  dup
+00152: 435  callprop "parseFloatDotLimit"
+00157: 435  swap
+00158: 435  notearg
+00159: 435  getlocal 1
+00162: 435  notearg
+00163: 435  int8 100
+00165: 435  notearg
+00166: 435  call 2
+00169: 435  setlocal 4
+00172: 435  pop
+00173: 437  this
+00174: 437  dup
+00175: 437  callprop "_postNotifyMsg"
+00180: 437  swap
+00181: 437  notearg
+00182: 437  name "xs"
+00187: 437  getprop "Core"
+00192: 437  getprop "Tools"
+00197: 437  getprop "String"
+00202: 437  dup
+00203: 437  callprop "createString"
+00208: 437  swap
+00209: 437  notearg
+00210: 437  string "auto_name_238"
+00215: 437  notearg
+00216: 437  call 1
+00219: 438  getlocal 3
+00222: 438  add
+00223: 439  name "xs"
+00228: 439  getprop "Core"
+00233: 439  getprop "Tools"
+00238: 439  getprop "String"
+00243: 439  dup
+00244: 439  callprop "createString"
+00249: 439  swap
+00250: 439  notearg
+00251: 439  string "auto_name_239"
+00256: 439  notearg
+00257: 439  call 1
+00260: 439  add
+00261: 440  getlocal 4
+00264: 440  add
+00265: 441  string "M"
+00270: 441  add
+00271: 441  notearg
+00272: 441  call 1
+00275: 441  pop
+00276: 442  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:404 ---
+;; function object[6] _onEvent_DownloadSuccess
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:445 ---
+loc   line  op
+----- ----  --
+main:
+00000: 446  this
+00001: 446  dup
+00002: 446  callprop "log"
+00007: 446  swap
+00008: 446  notearg
+00009: 446  string "_onEvent_DownloadSuccess"
+00014: 446  notearg
+00015: 446  string "begin"
+00020: 446  notearg
+00021: 446  call 2
+00024: 446  pop
+00025: 448  this
+00026: 448  dup
+00027: 448  callprop "_setStep0"
+00032: 448  swap
+00033: 448  notearg
+00034: 448  this
+00035: 448  getprop "Step_Download_MD5check"
+00040: 448  notearg
+00041: 448  call 1
+00044: 448  pop
+00045: 450  this
+00046: 450  dup
+00047: 450  callprop "log"
+00052: 450  swap
+00053: 450  notearg
+00054: 450  string "_onEvent_DownloadSuccess"
+00059: 450  notearg
+00060: 450  string "end"
+00065: 450  notearg
+00066: 450  call 2
+00069: 450  pop
+00070: 450  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:445 ---
+;; function object[7] _onEvent_UncompressSuccess
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:453 ---
+loc   line  op
+----- ----  --
+main:
+00000: 454  this
+00001: 454  dup
+00002: 454  callprop "log"
+00007: 454  swap
+00008: 454  notearg
+00009: 454  string "_onEvent_UncompressSuccess"
+00014: 454  notearg
+00015: 454  string "begin"
+00020: 454  notearg
+00021: 454  call 2
+00024: 454  pop
+00025: 456  this
+00026: 456  dup
+00027: 456  callprop "log"
+00032: 456  swap
+00033: 456  notearg
+00034: 456  string "_onEvent_UncompressSuccess"
+00039: 456  notearg
+00040: 456  string "new res version is:"
+00045: 456  this
+00046: 456  getprop "m_ver_code_new"
+00051: 456  add
+00052: 456  notearg
+00053: 456  call 2
+00056: 456  pop
+00057: 458  name "xsc"
+00062: 458  getprop "Utils"
+00067: 458  getprop "LocalStore"
+00072: 458  dup
+00073: 458  callprop "writeCurResCode"
+00078: 458  swap
+00079: 458  notearg
+00080: 458  this
+00081: 458  getprop "m_ver_code_new"
+00086: 458  notearg
+00087: 458  call 1
+00090: 458  pop
+00091: 460  this
+00092: 460  dup
+00093: 460  callprop "_setStep0"
+00098: 460  swap
+00099: 460  notearg
+00100: 460  this
+00101: 460  getprop "Step_Update_EnterLogin"
+00106: 460  notearg
+00107: 460  call 1
+00110: 460  pop
+00111: 461  this
+00112: 461  dup
+00113: 461  callprop "log"
+00118: 461  swap
+00119: 461  notearg
+00120: 461  string "_onEvent_UncompressSuccess"
+00125: 461  notearg
+00126: 461  string "end"
+00131: 461  notearg
+00132: 461  call 2
+00135: 461  pop
+00136: 461  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:453 ---
+;; function object[8] onEnterTransitionDidFinish
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:464 ---
+loc   line  op
+----- ----  --
+main:
+00000: 465  this
+00001: 465  dup
+00002: 465  callprop "_super"
+00007: 465  swap
+00008: 465  notearg
+00009: 465  call 0
+00012: 465  pop
+00013: 468  this
+00014: 468  getprop "m_notify"
+00019: 468  dup
+00020: 468  callprop "addObserver"
+00025: 468  swap
+00026: 468  notearg
+00027: 468  this
+00028: 468  notearg
+00029: 468  this
+00030: 468  getprop "_onEvent_Msg"
+00035: 468  notearg
+00036: 468  this
+00037: 468  getprop "Event_Msg"
+00042: 468  notearg
+00043: 468  call 3
+00046: 468  pop
+00047: 469  this
+00048: 469  getprop "m_notify"
+00053: 469  dup
+00054: 469  callprop "addObserver"
+00059: 469  swap
+00060: 469  notearg
+00061: 469  this
+00062: 469  notearg
+00063: 469  this
+00064: 469  getprop "_onEvent_ServerTip"
+00069: 469  notearg
+00070: 469  this
+00071: 469  getprop "Event_ServerTip"
+00076: 469  notearg
+00077: 469  call 3
+00080: 469  pop
+00081: 470  this
+00082: 470  getprop "m_notify"
+00087: 470  dup
+00088: 470  callprop "addObserver"
+00093: 470  swap
+00094: 470  notearg
+00095: 470  this
+00096: 470  notearg
+00097: 470  this
+00098: 470  getprop "_onEvent_Progress"
+00103: 470  notearg
+00104: 470  this
+00105: 470  getprop "Event_Progress"
+00110: 470  notearg
+00111: 470  call 3
+00114: 470  pop
+00115: 471  this
+00116: 471  getprop "m_notify"
+00121: 471  dup
+00122: 471  callprop "addObserver"
+00127: 471  swap
+00128: 471  notearg
+00129: 471  this
+00130: 471  notearg
+00131: 471  this
+00132: 471  getprop "_onEvent_DownloadSuccess"
+00137: 471  notearg
+00138: 471  this
+00139: 471  getprop "Event_DownloadSuccess"
+00144: 471  notearg
+00145: 471  call 3
+00148: 471  pop
+00149: 472  this
+00150: 472  getprop "m_notify"
+00155: 472  dup
+00156: 472  callprop "addObserver"
+00161: 472  swap
+00162: 472  notearg
+00163: 472  this
+00164: 472  notearg
+00165: 472  this
+00166: 472  getprop "_onEvent_UncompressSuccess"
+00171: 472  notearg
+00172: 472  this
+00173: 472  getprop "Event_UncompressSuccess"
+00178: 472  notearg
+00179: 472  call 3
+00182: 472  pop
+00183: 475  this
+00184: 475  this
+00185: 475  getprop "Step_Init"
+00190: 475  setprop "m_step0"
+00195: 475  pop
+00196: 476  this
+00197: 476  dup
+00198: 476  callprop "_startUpdate"
+00203: 476  swap
+00204: 476  notearg
+00205: 476  call 0
+00208: 476  pop
+00209: 476  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:464 ---
+;; function object[9] onExitTransitionDidStart
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:481 ---
+loc   line  op
+----- ----  --
+main:
+00000: 483  this
+00001: 483  dup
+00002: 483  callprop "log"
+00007: 483  swap
+00008: 483  notearg
+00009: 483  string "onExitTransitionDidStart"
+00014: 483  notearg
+00015: 483  string "begin"
+00020: 483  notearg
+00021: 483  call 2
+00024: 483  pop
+00025: 485  this
+00026: 485  getprop "m_notify"
+00031: 485  dup
+00032: 485  callprop "removeObserver"
+00037: 485  swap
+00038: 485  notearg
+00039: 485  this
+00040: 485  notearg
+00041: 485  this
+00042: 485  getprop "Event_Msg"
+00047: 485  notearg
+00048: 485  call 2
+00051: 485  pop
+00052: 486  this
+00053: 486  getprop "m_notify"
+00058: 486  dup
+00059: 486  callprop "removeObserver"
+00064: 486  swap
+00065: 486  notearg
+00066: 486  this
+00067: 486  notearg
+00068: 486  this
+00069: 486  getprop "Event_ServerTip"
+00074: 486  notearg
+00075: 486  call 2
+00078: 486  pop
+00079: 487  this
+00080: 487  getprop "m_notify"
+00085: 487  dup
+00086: 487  callprop "removeObserver"
+00091: 487  swap
+00092: 487  notearg
+00093: 487  this
+00094: 487  notearg
+00095: 487  this
+00096: 487  getprop "Event_Progress"
+00101: 487  notearg
+00102: 487  call 2
+00105: 487  pop
+00106: 488  this
+00107: 488  getprop "m_notify"
+00112: 488  dup
+00113: 488  callprop "removeObserver"
+00118: 488  swap
+00119: 488  notearg
+00120: 488  this
+00121: 488  notearg
+00122: 488  this
+00123: 488  getprop "Event_DownloadSuccess"
+00128: 488  notearg
+00129: 488  call 2
+00132: 488  pop
+00133: 489  this
+00134: 489  getprop "m_notify"
+00139: 489  dup
+00140: 489  callprop "removeObserver"
+00145: 489  swap
+00146: 489  notearg
+00147: 489  this
+00148: 489  notearg
+00149: 489  this
+00150: 489  getprop "Event_UncompressSuccess"
+00155: 489  notearg
+00156: 489  call 2
+00159: 489  pop
+00160: 491  this
+00161: 491  dup
+00162: 491  callprop "log"
+00167: 491  swap
+00168: 491  notearg
+00169: 491  string "onExitTransitionDidStart"
+00174: 491  notearg
+00175: 491  string "end"
+00180: 491  notearg
+00181: 491  call 2
+00184: 491  pop
+00185: 491  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:481 ---
+;; function object[10] _setStep0
+;; function metadata object[10] nargs=1 bindings=2
+;; arg[0] step
+;; local[0] _msg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:494 ---
+loc   line  op
+----- ----  --
+main:
+00000: 495  this
+00001: 495  getarg 0
+00004: 495  setprop "m_step0"
+00009: 495  pop
+00010: 497  name "xsc"
+00015: 497  getprop "Tools"
+00020: 497  getprop "Statistic"
+00025: 497  dup
+00026: 497  callprop "event"
+00031: 497  swap
+00032: 497  notearg
+00033: 497  string "update_step_"
+00038: 497  this
+00039: 497  getprop "m_step0"
+00044: 497  add
+00045: 497  notearg
+00046: 497  call 1
+00049: 497  pop
+00050: 499  null
+00051: 499  setlocal 0
+00054: 499  pop
+00055: 502  getarg 0
+00058: 502  condswitch
+00059: 503  this
+00060: 503  getprop "Step_Init"
+00065: 503  case 251 (+186)
+00070: 506  this
+00071: 506  getprop "Step_Check_Version"
+00076: 506  case 297 (+221)
+00081: 509  this
+00082: 509  getprop "Step_Clear_Writeable_Dir"
+00087: 509  case 343 (+256)
+00092: 512  this
+00093: 512  getprop "Step_Request_Update_Info"
+00098: 512  case 389 (+291)
+00103: 515  this
+00104: 515  getprop "Step_Request_Update_Info_Waiting"
+00109: 515  case 435 (+326)
+00114: 518  this
+00115: 518  getprop "Step_Check_Update"
+00120: 518  case 481 (+361)
+00125: 521  this
+00126: 521  getprop "Step_Update_Cpp"
+00131: 521  case 527 (+396)
+00136: 524  this
+00137: 524  getprop "Step_Update_Js"
+00142: 524  case 573 (+431)
+00147: 527  this
+00148: 527  getprop "Step_Download_New"
+00153: 527  case 619 (+466)
+00158: 530  this
+00159: 530  getprop "Step_Downloading"
+00164: 530  case 665 (+501)
+00169: 533  this
+00170: 533  getprop "Step_Download_MD5check"
+00175: 533  case 711 (+536)
+00180: 536  this
+00181: 536  getprop "Step_Uncompress_Begin"
+00186: 536  case 757 (+571)
+00191: 539  this
+00192: 539  getprop "Step_Uncompressing"
+00197: 539  case 803 (+606)
+00202: 542  this
+00203: 542  getprop "Step_Update_EnterLogin"
+00208: 542  case 849 (+641)
+00213: 545  this
+00214: 545  getprop "Step_Reset"
+00219: 545  case 895 (+676)
+00224: 546  this
+00225: 546  getprop "Step_Update_Js_Confirm_Waiting"
+00230: 546  case 895 (+665)
+00235: 547  this
+00236: 547  getprop "Step_Update_Cpp_Confirm_Waiting"
+00241: 547  case 895 (+654)
+00246: 547  default 900 (+654)
+00251: 504  name "xs"
+00256: 504  getprop "Core"
+00261: 504  getprop "Tools"
+00266: 504  getprop "String"
+00271: 504  dup
+00272: 504  callprop "createString"
+00277: 504  swap
+00278: 504  notearg
+00279: 504  string "auto_name_240"
+00284: 504  notearg
+00285: 504  call 1
+00288: 504  setlocal 0
+00291: 504  pop
+00292: 505  goto 950 (+658)
+00297: 507  name "xs"
+00302: 507  getprop "Core"
+00307: 507  getprop "Tools"
+00312: 507  getprop "String"
+00317: 507  dup
+00318: 507  callprop "createString"
+00323: 507  swap
+00324: 507  notearg
+00325: 507  string "auto_name_241"
+00330: 507  notearg
+00331: 507  call 1
+00334: 507  setlocal 0
+00337: 507  pop
+00338: 508  goto 950 (+612)
+00343: 510  name "xs"
+00348: 510  getprop "Core"
+00353: 510  getprop "Tools"
+00358: 510  getprop "String"
+00363: 510  dup
+00364: 510  callprop "createString"
+00369: 510  swap
+00370: 510  notearg
+00371: 510  string "auto_name_242"
+00376: 510  notearg
+00377: 510  call 1
+00380: 510  setlocal 0
+00383: 510  pop
+00384: 511  goto 950 (+566)
+00389: 513  name "xs"
+00394: 513  getprop "Core"
+00399: 513  getprop "Tools"
+00404: 513  getprop "String"
+00409: 513  dup
+00410: 513  callprop "createString"
+00415: 513  swap
+00416: 513  notearg
+00417: 513  string "auto_name_243"
+00422: 513  notearg
+00423: 513  call 1
+00426: 513  setlocal 0
+00429: 513  pop
+00430: 514  goto 950 (+520)
+00435: 516  name "xs"
+00440: 516  getprop "Core"
+00445: 516  getprop "Tools"
+00450: 516  getprop "String"
+00455: 516  dup
+00456: 516  callprop "createString"
+00461: 516  swap
+00462: 516  notearg
+00463: 516  string "auto_name_244"
+00468: 516  notearg
+00469: 516  call 1
+00472: 516  setlocal 0
+00475: 516  pop
+00476: 517  goto 950 (+474)
+00481: 519  name "xs"
+00486: 519  getprop "Core"
+00491: 519  getprop "Tools"
+00496: 519  getprop "String"
+00501: 519  dup
+00502: 519  callprop "createString"
+00507: 519  swap
+00508: 519  notearg
+00509: 519  string "auto_name_245"
+00514: 519  notearg
+00515: 519  call 1
+00518: 519  setlocal 0
+00521: 519  pop
+00522: 520  goto 950 (+428)
+00527: 522  name "xs"
+00532: 522  getprop "Core"
+00537: 522  getprop "Tools"
+00542: 522  getprop "String"
+00547: 522  dup
+00548: 522  callprop "createString"
+00553: 522  swap
+00554: 522  notearg
+00555: 522  string "auto_name_246"
+00560: 522  notearg
+00561: 522  call 1
+00564: 522  setlocal 0
+00567: 522  pop
+00568: 523  goto 950 (+382)
+00573: 525  name "xs"
+00578: 525  getprop "Core"
+00583: 525  getprop "Tools"
+00588: 525  getprop "String"
+00593: 525  dup
+00594: 525  callprop "createString"
+00599: 525  swap
+00600: 525  notearg
+00601: 525  string "auto_name_240"
+00606: 525  notearg
+00607: 525  call 1
+00610: 525  setlocal 0
+00613: 525  pop
+00614: 526  goto 950 (+336)
+00619: 528  name "xs"
+00624: 528  getprop "Core"
+00629: 528  getprop "Tools"
+00634: 528  getprop "String"
+00639: 528  dup
+00640: 528  callprop "createString"
+00645: 528  swap
+00646: 528  notearg
+00647: 528  string "auto_name_247"
+00652: 528  notearg
+00653: 528  call 1
+00656: 528  setlocal 0
+00659: 528  pop
+00660: 529  goto 950 (+290)
+00665: 531  name "xs"
+00670: 531  getprop "Core"
+00675: 531  getprop "Tools"
+00680: 531  getprop "String"
+00685: 531  dup
+00686: 531  callprop "createString"
+00691: 531  swap
+00692: 531  notearg
+00693: 531  string "auto_name_248"
+00698: 531  notearg
+00699: 531  call 1
+00702: 531  setlocal 0
+00705: 531  pop
+00706: 532  goto 950 (+244)
+00711: 534  name "xs"
+00716: 534  getprop "Core"
+00721: 534  getprop "Tools"
+00726: 534  getprop "String"
+00731: 534  dup
+00732: 534  callprop "createString"
+00737: 534  swap
+00738: 534  notearg
+00739: 534  string "auto_name_249"
+00744: 534  notearg
+00745: 534  call 1
+00748: 534  setlocal 0
+00751: 534  pop
+00752: 535  goto 950 (+198)
+00757: 537  name "xs"
+00762: 537  getprop "Core"
+00767: 537  getprop "Tools"
+00772: 537  getprop "String"
+00777: 537  dup
+00778: 537  callprop "createString"
+00783: 537  swap
+00784: 537  notearg
+00785: 537  string "auto_name_250"
+00790: 537  notearg
+00791: 537  call 1
+00794: 537  setlocal 0
+00797: 537  pop
+00798: 538  goto 950 (+152)
+00803: 540  name "xs"
+00808: 540  getprop "Core"
+00813: 540  getprop "Tools"
+00818: 540  getprop "String"
+00823: 540  dup
+00824: 540  callprop "createString"
+00829: 540  swap
+00830: 540  notearg
+00831: 540  string "auto_name_251"
+00836: 540  notearg
+00837: 540  call 1
+00840: 540  setlocal 0
+00843: 540  pop
+00844: 541  goto 950 (+106)
+00849: 543  name "xs"
+00854: 543  getprop "Core"
+00859: 543  getprop "Tools"
+00864: 543  getprop "String"
+00869: 543  dup
+00870: 543  callprop "createString"
+00875: 543  swap
+00876: 543  notearg
+00877: 543  string "auto_name_252"
+00882: 543  notearg
+00883: 543  call 1
+00886: 543  setlocal 0
+00889: 543  pop
+00890: 544  goto 950 (+60)
+00895: 548  goto 950 (+55)
+00900: 550  name "xs"
+00905: 550  getprop "Core"
+00910: 550  getprop "Tools"
+00915: 550  getprop "String"
+00920: 550  dup
+00921: 550  callprop "createString"
+00926: 550  swap
+00927: 550  notearg
+00928: 550  string "auto_name_253"
+00933: 550  notearg
+00934: 550  call 1
+00937: 550  getarg 0
+00940: 550  add
+00941: 550  setlocal 0
+00944: 550  pop
+00945: 551  goto 950 (+5)
+00950: 554  getlocal 0
+00953: 554  null
+00954: 554  stricteq
+00955: 554  ifeq 975 (+20)
+00960: 555  this
+00961: 555  getprop "m_last_msg"
+00966: 555  setlocal 0
+00969: 555  pop
+00970: 555  goto 985 (+15)
+00975: 558  this
+00976: 558  getlocal 0
+00979: 558  setprop "m_last_msg"
+00984: 558  pop
+00985: 560  this
+00986: 560  dup
+00987: 560  callprop "_postNotifyMsg"
+00992: 560  swap
+00993: 560  notearg
+00994: 560  getlocal 0
+00997: 560  notearg
+00998: 560  call 1
+01001: 560  pop
+01002: 560  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:494 ---
+;; function object[11] _setCheckCode
+;; function metadata object[11] nargs=1 bindings=1
+;; arg[0] code
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:568 ---
+loc   line  op
+----- ----  --
+main:
+00000: 569  this
+00001: 569  getarg 0
+00004: 569  setprop "m_check_code"
+00009: 569  pop
+00010: 569  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:568 ---
+;; function object[12] _getCheckCode
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:572 ---
+loc   line  op
+----- ----  --
+main:
+00000: 573  this
+00001: 573  getprop "m_check_code"
+00006: 573  return
+00007: 573  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:572 ---
+;; function object[13] _clear_writable_dir
+;; function metadata object[13] nargs=0 bindings=1
+;; local[0] _dir_update_res
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:576 ---
+loc   line  op
+----- ----  --
+main:
+00000: 580  this
+00001: 580  dup
+00002: 580  callprop "_getUpdateResourcesDir"
+00007: 580  swap
+00008: 580  notearg
+00009: 580  call 0
+00012: 580  setlocal 0
+00015: 580  pop
+00016: 582  name "xsc"
+00021: 582  getprop "Utils"
+00026: 582  getprop "FileSys"
+00031: 582  dup
+00032: 582  callprop "isFileExist"
+00037: 582  swap
+00038: 582  notearg
+00039: 582  getlocal 0
+00042: 582  notearg
+00043: 582  call 1
+00046: 582  ifeq 82 (+36)
+00051: 583  name "xsc"
+00056: 583  getprop "Utils"
+00061: 583  getprop "FileSys"
+00066: 583  dup
+00067: 583  callprop "deleteDir"
+00072: 583  swap
+00073: 583  notearg
+00074: 583  getlocal 0
+00077: 583  notearg
+00078: 583  call 1
+00081: 583  pop
+00082: 584  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:576 ---
+;; function object[14] _clear_download_dir
+;; function metadata object[14] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:587 ---
+loc   line  op
+----- ----  --
+main:
+00000: 590  name "xsc"
+00005: 590  dup
+00006: 590  callprop "log"
+00011: 590  swap
+00012: 590  notearg
+00013: 590  string "_clear_download_dir"
+00018: 590  notearg
+00019: 590  call 1
+00022: 590  pop
+00023: 592  name "xsc"
+00028: 592  getprop "Utils"
+00033: 592  getprop "FileSys"
+00038: 592  dup
+00039: 592  callprop "deleteDir"
+00044: 592  swap
+00045: 592  notearg
+00046: 592  this
+00047: 592  dup
+00048: 592  callprop "_getUpdateDownloadDir"
+00053: 592  swap
+00054: 592  notearg
+00055: 592  call 0
+00058: 592  notearg
+00059: 592  call 1
+00062: 592  pop
+00063: 595  name "xsc"
+00068: 595  getprop "Tools"
+00073: 595  getprop "Jsb"
+00078: 595  dup
+00079: 595  callprop "mkdir"
+00084: 595  swap
+00085: 595  notearg
+00086: 595  this
+00087: 595  dup
+00088: 595  callprop "_getUpdateDownloadDir"
+00093: 595  swap
+00094: 595  notearg
+00095: 595  call 0
+00098: 595  notearg
+00099: 595  call 1
+00102: 595  pop
+00103: 595  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:587 ---
+;; function object[15] _getUpdateCheckUrl
+;; function metadata object[15] nargs=1 bindings=5
+;; arg[0] obj
+;; local[0] _value
+;; local[1] _updateAddr
+;; local[2] _verApiName
+;; local[3] _tmp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:598 ---
+loc   line  op
+----- ----  --
+main:
+00000: 601  name "xsc"
+00005: 601  getprop "app_indentify"
+00010: 601  setlocal 0
+00013: 601  pop
+00014: 604  string "xxxxx"
+00019: 604  setlocal 1
+00022: 604  pop
+00023: 605  getlocal 2
+00026: 605  pop
+00027: 607  getlocal 0
+00030: 607  name "xsc"
+00035: 607  getprop "Const_Proj_Code_Channel_Normal_Android"
+00040: 607  eq
+00041: 607  or 61 (+20)
+00046: 607  pop
+00047: 608  getlocal 0
+00050: 608  name "xsc"
+00055: 608  getprop "Const_Proj_Code_Channel_Normal_Android2"
+00060: 608  eq
+00061: 608  ifeq 89 (+28)
+00066: 609  string "cqzj.sanguosha.com/sanguosha_anysdk"
+00071: 609  setlocal 1
+00074: 609  pop
+00075: 610  string "version"
+00080: 610  setlocal 2
+00083: 610  pop
+00084: 610  goto 860 (+776)
+00089: 612  getlocal 0
+00092: 612  name "xsc"
+00097: 612  getprop "Const_Proj_Code_AppStore_Ios"
+00102: 612  eq
+00103: 612  ifeq 131 (+28)
+00108: 613  string "cqzj.sanguosha.com/sanguosha_ios"
+00113: 613  setlocal 1
+00116: 613  pop
+00117: 614  string "version"
+00122: 614  setlocal 2
+00125: 614  pop
+00126: 614  goto 860 (+734)
+00131: 616  getlocal 0
+00134: 616  name "xsc"
+00139: 616  getprop "Const_Proj_Code_Official_Fst"
+00144: 616  eq
+00145: 616  or 185 (+40)
+00150: 616  pop
+00151: 617  getlocal 0
+00154: 617  name "xsc"
+00159: 617  getprop "Const_Proj_Code_Official_Fst_Ios"
+00164: 617  eq
+00165: 617  or 185 (+20)
+00170: 617  pop
+00171: 618  getlocal 0
+00174: 618  name "xsc"
+00179: 618  getprop "Const_Proj_Code_Official_Fst_Android"
+00184: 618  eq
+00185: 618  ifeq 213 (+28)
+00190: 619  string "cqzj.sanguosha.com/sanguosha_new"
+00195: 619  setlocal 1
+00198: 619  pop
+00199: 620  string "version"
+00204: 620  setlocal 2
+00207: 620  pop
+00208: 620  goto 860 (+652)
+00213: 622  getlocal 0
+00216: 622  name "xsc"
+00221: 622  getprop "Const_Proj_Code_TestOnline"
+00226: 622  eq
+00227: 622  ifeq 255 (+28)
+00232: 624  string "cqzj.sanguosha.com/sanguosha_testonline"
+00237: 624  setlocal 1
+00240: 624  pop
+00241: 625  string "version"
+00246: 625  setlocal 2
+00249: 625  pop
+00250: 625  goto 860 (+610)
+00255: 629  getlocal 0
+00258: 629  name "xsc"
+00263: 629  getprop "Const_Proj_Code_226_Official_Ios"
+00268: 629  eq
+00269: 629  or 289 (+20)
+00274: 629  pop
+00275: 630  getlocal 0
+00278: 630  name "xsc"
+00283: 630  getprop "Const_Proj_Code_226_Official_Android"
+00288: 630  eq
+00289: 630  ifeq 317 (+28)
+00294: 632  string "cqzj.sanguosha.com/sanguosha_new_2.2.6"
+00299: 632  setlocal 1
+00302: 632  pop
+00303: 633  string "versionPlus"
+00308: 633  setlocal 2
+00311: 633  pop
+00312: 633  goto 860 (+548)
+00317: 635  getlocal 0
+00320: 635  name "xsc"
+00325: 635  getprop "Const_Proj_Code_226_Channel_Ios"
+00330: 635  eq
+00331: 635  or 351 (+20)
+00336: 635  pop
+00337: 636  getlocal 0
+00340: 636  name "xsc"
+00345: 636  getprop "Const_Proj_Code_226_Channel_Android"
+00350: 636  eq
+00351: 636  ifeq 379 (+28)
+00356: 638  string "cqzj.sanguosha.com/sanguosha_anysdk_2.2.6"
+00361: 638  setlocal 1
+00364: 638  pop
+00365: 639  string "versionPlus"
+00370: 639  setlocal 2
+00373: 639  pop
+00374: 639  goto 860 (+486)
+00379: 641  getlocal 0
+00382: 641  name "xsc"
+00387: 641  getprop "Const_Proj_Code_226_AppStore_Ios"
+00392: 641  eq
+00393: 641  ifeq 421 (+28)
+00398: 643  string "cqzj.sanguosha.com/sanguosha_ios_2.2.6"
+00403: 643  setlocal 1
+00406: 643  pop
+00407: 644  string "versionPlus"
+00412: 644  setlocal 2
+00415: 644  pop
+00416: 644  goto 860 (+444)
+00421: 646  getlocal 0
+00424: 646  name "xsc"
+00429: 646  getprop "Const_Proj_Code_226_AppStore_IosAsylum"
+00434: 646  eq
+00435: 646  ifeq 463 (+28)
+00440: 648  string "cqzj.sanguosha.com/sanguosha_iosAsylum_2.2.6"
+00445: 648  setlocal 1
+00448: 648  pop
+00449: 649  string "versionPlus"
+00454: 649  setlocal 2
+00457: 649  pop
+00458: 649  goto 860 (+402)
+00463: 651  getlocal 0
+00466: 651  name "xsc"
+00471: 651  getprop "Const_Proj_Code_226_Pioneer_Ios"
+00476: 651  eq
+00477: 651  or 497 (+20)
+00482: 651  pop
+00483: 652  getlocal 0
+00486: 652  name "xsc"
+00491: 652  getprop "Const_Proj_Code_226_Pioneer_Android"
+00496: 652  eq
+00497: 652  ifeq 525 (+28)
+00502: 654  string "cqzj.sanguosha.com/sanguosha_pioneer_2.2.6"
+00507: 654  setlocal 1
+00510: 654  pop
+00511: 655  string "versionPlus"
+00516: 655  setlocal 2
+00519: 655  pop
+00520: 655  goto 860 (+340)
+00525: 657  getlocal 0
+00528: 657  name "xsc"
+00533: 657  getprop "Const_Proj_Code_226_TestOnline"
+00538: 657  eq
+00539: 657  ifeq 567 (+28)
+00544: 659  string "cqzj.sanguosha.com/sanguosha_testonline_2.2.6"
+00549: 659  setlocal 1
+00552: 659  pop
+00553: 660  string "versionPlus"
+00558: 660  setlocal 2
+00561: 660  pop
+00562: 660  goto 860 (+298)
+00567: 662  getlocal 0
+00570: 662  name "xsc"
+00575: 662  getprop "Const_Proj_Code_226Small_Channel_Android"
+00580: 662  eq
+00581: 662  or 601 (+20)
+00586: 662  pop
+00587: 663  getlocal 0
+00590: 663  name "xsc"
+00595: 663  getprop "Const_Proj_Code_226Small_Channel_Ios"
+00600: 663  eq
+00601: 663  ifeq 629 (+28)
+00606: 665  string "cqzj.sanguosha.com/sanguosha_small_2.2.6"
+00611: 665  setlocal 1
+00614: 665  pop
+00615: 666  string "versionPlus"
+00620: 666  setlocal 2
+00623: 666  pop
+00624: 666  goto 860 (+236)
+00629: 668  getlocal 0
+00632: 668  name "xsc"
+00637: 668  getprop "Const_Proj_Code_226_ApplicationOfTreasure_Ios"
+00642: 668  eq
+00643: 668  or 663 (+20)
+00648: 668  pop
+00649: 669  getlocal 0
+00652: 669  name "xsc"
+00657: 669  getprop "Const_Proj_Code_226_ApplicationOfTreasure_Android"
+00662: 669  eq
+00663: 669  ifeq 691 (+28)
+00668: 671  string "cqzj.sanguosha.com/sanguosha_yyb_2.2.6"
+00673: 671  setlocal 1
+00676: 671  pop
+00677: 672  string "versionPlus"
+00682: 672  setlocal 2
+00685: 672  pop
+00686: 672  goto 860 (+174)
+00691: 675  getlocal 0
+00694: 675  name "xsc"
+00699: 675  getprop "Const_Proj_Code_226_TW_TestOnline"
+00704: 675  eq
+00705: 675  ifeq 733 (+28)
+00710: 677  string "cqoverdownload.sanguosha.com/upd/sanguosha_testonline"
+00715: 677  setlocal 1
+00718: 677  pop
+00719: 678  string "versionPlus"
+00724: 678  setlocal 2
+00727: 678  pop
+00728: 678  goto 860 (+132)
+00733: 680  getlocal 0
+00736: 680  name "xsc"
+00741: 680  getprop "Const_Proj_Code_226_TW_Ios"
+00746: 680  eq
+00747: 680  or 767 (+20)
+00752: 680  pop
+00753: 681  getlocal 0
+00756: 681  name "xsc"
+00761: 681  getprop "Const_Proj_Code_226_TW_Android"
+00766: 681  eq
+00767: 681  ifeq 795 (+28)
+00772: 683  string "cqoverdownload.sanguosha.com/upd/sanguosha_traditional"
+00777: 683  setlocal 1
+00780: 683  pop
+00781: 684  string "versionPlus"
+00786: 684  setlocal 2
+00789: 684  pop
+00790: 684  goto 860 (+70)
+00795: 686  getlocal 0
+00798: 686  name "xsc"
+00803: 686  getprop "Const_Proj_Code_226Small_TW_Android"
+00808: 686  eq
+00809: 686  ifeq 837 (+28)
+00814: 690  string "cqoverdownload.sanguosha.com/upd/sanguosha_traditional_small"
+00819: 690  setlocal 1
+00822: 690  pop
+00823: 691  string "versionPlus"
+00828: 691  setlocal 2
+00831: 691  pop
+00832: 691  goto 860 (+28)
+00837: 695  name "xsc"
+00842: 695  dup
+00843: 695  callprop "error"
+00848: 695  swap
+00849: 695  notearg
+00850: 695  string "not support yet"
+00855: 695  notearg
+00856: 695  call 1
+00859: 695  pop
+00860: 698  string "http://"
+00865: 698  setlocal 3
+00868: 698  pop
+00869: 699  getlocal 3
+00872: 699  getlocal 1
+00875: 699  add
+00876: 699  setlocal 3
+00879: 699  pop
+00880: 700  getlocal 3
+00883: 700  string "/index.php?do="
+00888: 700  getlocal 2
+00891: 700  add
+00892: 700  string ".check&data="
+00897: 700  add
+00898: 700  add
+00899: 700  setlocal 3
+00902: 700  pop
+00903: 701  getlocal 3
+00906: 701  name "JSON"
+00911: 701  dup
+00912: 701  callprop "stringify"
+00917: 701  swap
+00918: 701  notearg
+00919: 701  getarg 0
+00922: 701  notearg
+00923: 701  call 1
+00926: 701  add
+00927: 701  setlocal 3
+00930: 701  pop
+00931: 702  getlocal 3
+00934: 702  string "&client_update_ver=2"
+00939: 702  add
+00940: 702  setlocal 3
+00943: 702  pop
+00944: 704  getlocal 3
+00947: 704  return
+00948: 704  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:598 ---
+;; function object[16] onTouchBegan
+;; function metadata object[16] nargs=2 bindings=2
+;; arg[0] touch
+;; arg[1] e
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:707 ---
+loc   line  op
+----- ----  --
+main:
+00000: 708  name "xsc"
+00005: 708  dup
+00006: 708  callprop "log"
+00011: 708  swap
+00012: 708  notearg
+00013: 708  string "onTouchBegan"
+00018: 708  notearg
+00019: 708  call 1
+00022: 708  pop
+00023: 709  true
+00024: 709  return
+00025: 709  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:707 ---
+;; function object[17] onTouchMoved
+;; function metadata object[17] nargs=2 bindings=2
+;; arg[0] touch
+;; arg[1] e
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:711 ---
+loc   line  op
+----- ----  --
+main:
+00000: 711  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:711 ---
+;; function object[18] onTouchEnded
+;; function metadata object[18] nargs=2 bindings=2
+;; arg[0] touch
+;; arg[1] e
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:715 ---
+loc   line  op
+----- ----  --
+main:
+00000: 716  name "xsc"
+00005: 716  dup
+00006: 716  callprop "log"
+00011: 716  swap
+00012: 716  notearg
+00013: 716  string "onTouchEnded"
+00018: 716  notearg
+00019: 716  this
+00020: 716  getprop "m_step0"
+00025: 716  notearg
+00026: 716  call 2
+00029: 716  pop
+00030: 718  this
+00031: 718  getprop "m_step0"
+00036: 718  this
+00037: 718  getprop "Step_Update_Js_Confirm_Waiting"
+00042: 718  eq
+00043: 718  ifeq 93 (+50)
+00048: 719  this
+00049: 719  dup
+00050: 719  callprop "_postNotifyServerTip"
+00055: 719  swap
+00056: 719  notearg
+00057: 719  this
+00058: 719  getprop "m_download_tips"
+00063: 719  notearg
+00064: 719  call 1
+00067: 719  pop
+00068: 720  this
+00069: 720  dup
+00070: 720  callprop "_setStep0"
+00075: 720  swap
+00076: 720  notearg
+00077: 720  this
+00078: 720  getprop "Step_Download_New"
+00083: 720  notearg
+00084: 720  call 1
+00087: 720  pop
+00088: 720  goto 278 (+190)
+00093: 722  this
+00094: 722  getprop "m_step0"
+00099: 722  this
+00100: 722  getprop "Step_Update_Cpp_Confirm_Waiting"
+00105: 722  eq
+00106: 722  ifeq 278 (+172)
+00111: 724  this
+00112: 724  getprop "m_cpp_update"
+00117: 724  getprop "type"
+00122: 724  this
+00123: 724  getprop "Const_CppUpdateType_BySelf"
+00128: 724  eq
+00129: 724  ifeq 191 (+62)
+00134: 725  this
+00135: 725  dup
+00136: 725  callprop "_postNotifyServerTip"
+00141: 725  swap
+00142: 725  notearg
+00143: 725  this
+00144: 725  getprop "m_cpp_update"
+00149: 725  getprop "msg"
+00154: 725  notearg
+00155: 725  call 1
+00158: 725  pop
+00159: 726  name "xsc"
+00164: 726  getprop "Tools"
+00169: 726  getprop "Jsb"
+00174: 726  dup
+00175: 726  callprop "visitStore"
+00180: 726  swap
+00181: 726  notearg
+00182: 726  call 0
+00185: 726  pop
+00186: 726  goto 278 (+92)
+00191: 728  this
+00192: 728  getprop "m_cpp_update"
+00197: 728  getprop "type"
+00202: 728  this
+00203: 728  getprop "Const_CppUpdateType_WebView"
+00208: 728  eq
+00209: 728  ifeq 278 (+69)
+00214: 729  this
+00215: 729  dup
+00216: 729  callprop "_postNotifyServerTip"
+00221: 729  swap
+00222: 729  notearg
+00223: 729  this
+00224: 729  getprop "m_cpp_update"
+00229: 729  getprop "msg"
+00234: 729  notearg
+00235: 729  call 1
+00238: 729  pop
+00239: 730  name "xsc"
+00244: 730  getprop "Tools"
+00249: 730  getprop "Jsb"
+00254: 730  dup
+00255: 730  callprop "visitUrl"
+00260: 730  swap
+00261: 730  notearg
+00262: 730  this
+00263: 730  getprop "m_cpp_update"
+00268: 730  getprop "url"
+00273: 730  notearg
+00274: 730  call 1
+00277: 730  pop
+00278: 734  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:715 ---
+;; function object[19] _update_Step_Check_Version
+;; function metadata object[19] nargs=0 bindings=4
+;; local[0] _res_code
+;; local[1] _ori_code
+;; local[2] _code
+;; local[3] _needClear
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:737 ---
+loc   line  op
+----- ----  --
+main:
+00000: 739  name "xsc"
+00005: 739  dup
+00006: 739  callprop "parseInt"
+00011: 739  swap
+00012: 739  notearg
+00013: 739  name "xsc"
+00018: 739  getprop "Utils"
+00023: 739  getprop "LocalStore"
+00028: 739  dup
+00029: 739  callprop "readCurResCode"
+00034: 739  swap
+00035: 739  notearg
+00036: 739  call 0
+00039: 739  notearg
+00040: 739  call 1
+00043: 739  or 50 (+7)
+00048: 739  pop
+00049: 739  zero
+00050: 739  setlocal 0
+00053: 739  pop
+00054: 741  name "xsc"
+00059: 741  getprop "Tools"
+00064: 741  getprop "Jsb"
+00069: 741  dup
+00070: 741  callprop "getOriResCode"
+00075: 741  swap
+00076: 741  notearg
+00077: 741  call 0
+00080: 741  setlocal 1
+00083: 741  pop
+00084: 744  name "xsc"
+00089: 744  dup
+00090: 744  callprop "dump"
+00095: 744  swap
+00096: 744  notearg
+00097: 744  string "check_code"
+00102: 744  notearg
+00103: 744  newinit 1
+00108: 745  getlocal 1
+00111: 745  initprop "ori"
+00116: 746  getlocal 0
+00119: 746  initprop "res"
+00124: 746  endinit
+00125: 746  notearg
+00126: 746  call 2
+00129: 746  pop
+00130: 749  getlocal 2
+00133: 749  pop
+00134: 751  false
+00135: 751  setlocal 3
+00138: 751  pop
+00139: 753  getlocal 0
+00142: 753  null
+00143: 753  strictne
+00144: 753  and 174 (+30)
+00149: 753  pop
+00150: 753  getlocal 0
+00153: 753  name "undefined"
+00158: 753  strictne
+00159: 753  and 174 (+15)
+00164: 753  pop
+00165: 753  getlocal 0
+00168: 753  string ""
+00173: 753  strictne
+00174: 753  ifeq 353 (+179)
+00179: 755  name "xsc"
+00184: 755  dup
+00185: 755  callprop "parseInt"
+00190: 755  swap
+00191: 755  notearg
+00192: 755  getlocal 0
+00195: 755  notearg
+00196: 755  call 1
+00199: 755  name "xsc"
+00204: 755  dup
+00205: 755  callprop "parseInt"
+00210: 755  swap
+00211: 755  notearg
+00212: 755  getlocal 1
+00215: 755  notearg
+00216: 755  call 1
+00219: 755  gt
+00220: 755  ifeq 237 (+17)
+00225: 756  getlocal 0
+00228: 756  setlocal 2
+00231: 756  pop
+00232: 756  goto 348 (+116)
+00237: 758  name "xsc"
+00242: 758  dup
+00243: 758  callprop "parseInt"
+00248: 758  swap
+00249: 758  notearg
+00250: 758  getlocal 0
+00253: 758  notearg
+00254: 758  call 1
+00257: 758  name "xsc"
+00262: 758  dup
+00263: 758  callprop "parseInt"
+00268: 758  swap
+00269: 758  notearg
+00270: 758  getlocal 1
+00273: 758  notearg
+00274: 758  call 1
+00277: 758  lt
+00278: 758  ifeq 341 (+63)
+00283: 760  getlocal 1
+00286: 760  setlocal 2
+00289: 760  pop
+00290: 761  true
+00291: 761  setlocal 3
+00294: 761  pop
+00295: 763  getlocal 0
+00298: 763  zero
+00299: 763  eq
+00300: 763  ifeq 336 (+36)
+00305: 765  name "xsc"
+00310: 765  getprop "Utils"
+00315: 765  getprop "LocalStore"
+00320: 765  dup
+00321: 765  callprop "writeCurResCode"
+00326: 765  swap
+00327: 765  notearg
+00328: 765  getlocal 1
+00331: 765  notearg
+00332: 765  call 1
+00335: 765  pop
+00336: 765  goto 348 (+12)
+00341: 769  getlocal 1
+00344: 769  setlocal 2
+00347: 769  pop
+00348: 769  goto 360 (+12)
+00353: 774  getlocal 1
+00356: 774  setlocal 2
+00359: 774  pop
+00360: 777  this
+00361: 777  dup
+00362: 777  callprop "_setCheckCode"
+00367: 777  swap
+00368: 777  notearg
+00369: 777  getlocal 2
+00372: 777  notearg
+00373: 777  call 1
+00376: 777  pop
+00377: 779  getlocal 3
+00380: 779  ifeq 410 (+30)
+00385: 780  this
+00386: 780  dup
+00387: 780  callprop "_setStep0"
+00392: 780  swap
+00393: 780  notearg
+00394: 780  this
+00395: 780  getprop "Step_Clear_Writeable_Dir"
+00400: 780  notearg
+00401: 780  call 1
+00404: 780  pop
+00405: 780  goto 430 (+25)
+00410: 783  this
+00411: 783  dup
+00412: 783  callprop "_setStep0"
+00417: 783  swap
+00418: 783  notearg
+00419: 783  this
+00420: 783  getprop "Step_Request_Update_Info"
+00425: 783  notearg
+00426: 783  call 1
+00429: 783  pop
+00430: 784  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:737 ---
+;; function object[20] update
+;; function metadata object[20] nargs=1 bindings=8
+;; arg[0] fDelta
+;; local[0] _step0
+;; local[1] _url
+;; local[2] _file_path
+;; local[3] _file_name
+;; local[4] _file_full_name
+;; local[5] _size_m_need_dl
+;; local[6] _md5
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=579 object[0]
+;; FUNCTION-MAP kind=lambda offset=598 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:787 ---
+loc   line  op
+----- ----  --
+main:
+00000: 789  this
+00001: 789  getprop "m_step0"
+00006: 789  this
+00007: 789  getprop "Step_Reset"
+00012: 789  strictne
+00013: 789  and 32 (+19)
+00018: 789  pop
+00019: 790  this
+00020: 790  getprop "m_step0"
+00025: 790  this
+00026: 790  getprop "Step_Request_Update_Info_Waiting"
+00031: 790  strictne
+00032: 790  ifeq 68 (+36)
+00037: 793  this
+00038: 793  getprop "m_step0"
+00043: 793  this
+00044: 793  getprop "m_step0_last"
+00049: 793  strictne
+00050: 793  ifeq 68 (+18)
+00055: 795  this
+00056: 795  this
+00057: 795  getprop "m_step0"
+00062: 795  setprop "m_step0_last"
+00067: 795  pop
+00068: 800  this
+00069: 800  getprop "m_step0"
+00074: 800  setlocal 0
+00077: 800  pop
+00078: 802  name "xsc"
+00083: 802  dup
+00084: 802  callprop "log"
+00089: 802  swap
+00090: 802  notearg
+00091: 802  string "_step0:"
+00096: 802  getlocal 0
+00099: 802  add
+00100: 802  notearg
+00101: 802  call 1
+00104: 802  pop
+00105: 804  getlocal 0
+00108: 804  condswitch
+00109: 805  this
+00110: 805  getprop "Step_Init"
+00115: 805  case 312 (+197)
+00120: 808  this
+00121: 808  getprop "Step_Check_Version"
+00126: 808  case 337 (+211)
+00131: 811  this
+00132: 811  getprop "Step_Clear_Writeable_Dir"
+00137: 811  case 355 (+218)
+00142: 816  this
+00143: 816  getprop "Step_Request_Update_Info"
+00148: 816  case 393 (+245)
+00153: 885  this
+00154: 885  getprop "Step_Check_Update"
+00159: 885  case 646 (+487)
+00164: 896  this
+00165: 896  getprop "Step_Update_Js_Confirm_Waiting"
+00170: 896  case 752 (+582)
+00175: 903  this
+00176: 903  getprop "Step_Update_Cpp"
+00181: 903  case 837 (+656)
+00186: 927  this
+00187: 927  getprop "Step_Update_Cpp_Confirm_Waiting"
+00192: 927  case 1079 (+887)
+00197: 930  this
+00198: 930  getprop "Step_Update_Js"
+00203: 930  case 1084 (+881)
+00208: 992  this
+00209: 992  getprop "Step_Download_New"
+00214: 992  case 1653 (+1439)
+00219:1052  this
+00220:1052  getprop "Step_Downloading"
+00225:1052  case 2111 (+1886)
+00230:1056  this
+00231:1056  getprop "Step_Download_MD5check"
+00236:1056  case 2116 (+1880)
+00241:1079  this
+00242:1079  getprop "Step_Uncompress_Begin"
+00247:1079  case 2326 (+2079)
+00252:1087  this
+00253:1087  getprop "Step_Uncompressing"
+00258:1087  case 2403 (+2145)
+00263:1090  this
+00264:1090  getprop "Step_Update_EnterLogin"
+00269:1090  case 2408 (+2139)
+00274:1097  this
+00275:1097  getprop "Step_Request_Update_Info_Waiting"
+00280:1097  case 2458 (+2178)
+00285:1100  this
+00286:1100  getprop "Step_Reset"
+00291:1100  case 2463 (+2172)
+00296:1105  this
+00297:1105  getprop "Step_None"
+00302:1105  case 2468 (+2166)
+00307:1105  default 2468 (+2161)
+00312: 806  this
+00313: 806  dup
+00314: 806  callprop "_setStep0"
+00319: 806  swap
+00320: 806  notearg
+00321: 806  this
+00322: 806  getprop "Step_Check_Version"
+00327: 806  notearg
+00328: 806  call 1
+00331: 806  pop
+00332: 807  goto 2502 (+2170)
+00337: 809  this
+00338: 809  dup
+00339: 809  callprop "_update_Step_Check_Version"
+00344: 809  swap
+00345: 809  notearg
+00346: 809  call 0
+00349: 809  pop
+00350: 810  goto 2502 (+2152)
+00355: 812  this
+00356: 812  dup
+00357: 812  callprop "_clear_writable_dir"
+00362: 812  swap
+00363: 812  notearg
+00364: 812  call 0
+00367: 812  pop
+00368: 814  this
+00369: 814  dup
+00370: 814  callprop "_setStep0"
+00375: 814  swap
+00376: 814  notearg
+00377: 814  this
+00378: 814  getprop "Step_Request_Update_Info"
+00383: 814  notearg
+00384: 814  call 1
+00387: 814  pop
+00388: 815  goto 2502 (+2114)
+00393: 819  this
+00394: 819  dup
+00395: 819  callprop "_getUpdateCheckUrl"
+00400: 819  swap
+00401: 819  notearg
+00402: 820  newinit 1
+00407: 821  name "xsc"
+00412: 821  getprop "Tools"
+00417: 821  getprop "Jsb"
+00422: 821  dup
+00423: 821  callprop "getOriResCode"
+00428: 821  swap
+00429: 821  notearg
+00430: 821  call 0
+00433: 821  initprop "cpp_version"
+00438: 822  name "xsc"
+00443: 822  getprop "app_indentify"
+00448: 822  initprop "app_indentify"
+00453: 823  this
+00454: 823  dup
+00455: 823  callprop "_getCheckCode"
+00460: 823  swap
+00461: 823  notearg
+00462: 823  call 0
+00465: 823  initprop "resource_version"
+00470: 824  name "xsc"
+00475: 824  getprop "app_channel"
+00480: 824  initprop "channel"
+00485: 825  name "xsc"
+00490: 825  getprop "Tools"
+00495: 825  getprop "Jsb"
+00500: 825  dup
+00501: 825  callprop "getDeviceId"
+00506: 825  swap
+00507: 825  notearg
+00508: 825  call 0
+00511: 825  initprop "deviceId"
+00516: 825  endinit
+00517: 825  notearg
+00518: 825  call 1
+00521: 825  setlocal 1
+00524: 825  pop
+00525: 830  name "xsc"
+00530: 830  dup
+00531: 830  callprop "log"
+00536: 830  swap
+00537: 830  notearg
+00538: 830  string "url:"
+00543: 830  notearg
+00544: 830  getlocal 1
+00547: 830  notearg
+00548: 830  call 2
+00551: 830  pop
+00552: 833  name "xsc"
+00557: 833  getprop "Utils"
+00562: 833  getprop "Net"
+00567: 833  dup
+00568: 833  callprop "reqAsync"
+00573: 833  swap
+00574: 833  notearg
+00575: 834  getlocal 1
+00578: 834  notearg
+00579: 835  lambda (function () {
+    [sourceless code]
+})
+00584: 835  dup
+00585: 835  callprop "bind"
+00590: 835  swap
+00591: 835  notearg
+00592: 875  this
+00593: 875  notearg
+00594: 875  call 1
+00597: 875  notearg
+00598: 876  lambda (function () {
+    [sourceless code]
+})
+00603: 876  dup
+00604: 876  callprop "bind"
+00609: 876  swap
+00610: 876  notearg
+00611: 880  this
+00612: 880  notearg
+00613: 880  call 1
+00616: 880  notearg
+00617: 880  call 3
+00620: 880  pop
+00621: 882  this
+00622: 882  dup
+00623: 882  callprop "_setStep0"
+00628: 882  swap
+00629: 882  notearg
+00630: 882  this
+00631: 882  getprop "Step_Request_Update_Info_Waiting"
+00636: 882  notearg
+00637: 882  call 1
+00640: 882  pop
+00641: 883  goto 2502 (+1861)
+00646: 886  this
+00647: 886  getprop "m_is_cpp_update"
+00652: 886  ifeq 707 (+55)
+00657: 887  this
+00658: 887  dup
+00659: 887  callprop "_postNotifyServerTip"
+00664: 887  swap
+00665: 887  notearg
+00666: 887  this
+00667: 887  getprop "m_cpp_update"
+00672: 887  getprop "msg"
+00677: 887  notearg
+00678: 887  call 1
+00681: 887  pop
+00682: 888  this
+00683: 888  dup
+00684: 888  callprop "_setStep0"
+00689: 888  swap
+00690: 888  notearg
+00691: 888  this
+00692: 888  getprop "Step_Update_Cpp"
+00697: 888  notearg
+00698: 888  call 1
+00701: 888  pop
+00702: 888  goto 747 (+45)
+00707: 891  this
+00708: 891  dup
+00709: 891  callprop "_postNotifyServerTip"
+00714: 891  swap
+00715: 891  notearg
+00716: 891  this
+00717: 891  getprop "m_download_tips"
+00722: 891  notearg
+00723: 891  call 1
+00726: 891  pop
+00727: 892  this
+00728: 892  dup
+00729: 892  callprop "_setStep0"
+00734: 892  swap
+00735: 892  notearg
+00736: 892  this
+00737: 892  getprop "Step_Update_Js"
+00742: 892  notearg
+00743: 892  call 1
+00746: 892  pop
+00747: 894  goto 2502 (+1755)
+00752: 898  this
+00753: 898  getprop "m_label_msg"
+00758: 898  dup
+00759: 898  callprop "setString"
+00764: 898  swap
+00765: 898  notearg
+00766: 899  name "xs"
+00771: 899  getprop "Core"
+00776: 899  getprop "Tools"
+00781: 899  getprop "String"
+00786: 899  dup
+00787: 899  callprop "createString"
+00792: 899  swap
+00793: 899  notearg
+00794: 899  string "auto_name_254"
+00799: 899  notearg
+00800: 899  call 1
+00803: 899  dup
+00804: 899  callprop "replace"
+00809: 899  swap
+00810: 899  notearg
+00811: 899  string "$1"
+00816: 899  notearg
+00817: 899  this
+00818: 899  getprop "_str_size_m_need_dl"
+00823: 899  notearg
+00824: 899  call 2
+00827: 899  notearg
+00828: 899  call 1
+00831: 899  pop
+00832: 901  goto 2502 (+1670)
+00837: 905  this
+00838: 905  getprop "m_cpp_update"
+00843: 905  getprop "type"
+00848: 905  condswitch
+00849: 906  this
+00850: 906  getprop "Const_CppUpdateType_Tip"
+00855: 906  case 898 (+43)
+00860: 911  this
+00861: 911  getprop "Const_CppUpdateType_BySelf"
+00866: 911  case 948 (+82)
+00871: 914  this
+00872: 914  getprop "Const_CppUpdateType_WebView"
+00877: 914  case 973 (+96)
+00882: 918  this
+00883: 918  getprop "Const_CppUpdateType_Unknow"
+00888: 918  case 998 (+110)
+00893: 918  default 998 (+105)
+00898: 908  this
+00899: 908  dup
+00900: 908  callprop "_postNotifyServerTip"
+00905: 908  swap
+00906: 908  notearg
+00907: 908  this
+00908: 908  getprop "m_cpp_update"
+00913: 908  getprop "msg"
+00918: 908  notearg
+00919: 908  call 1
+00922: 908  pop
+00923: 909  this
+00924: 909  dup
+00925: 909  callprop "_setStep0"
+00930: 909  swap
+00931: 909  notearg
+00932: 909  this
+00933: 909  getprop "Step_Reset"
+00938: 909  notearg
+00939: 909  call 1
+00942: 909  pop
+00943: 910  goto 1074 (+131)
+00948: 912  this
+00949: 912  dup
+00950: 912  callprop "_setStep0"
+00955: 912  swap
+00956: 912  notearg
+00957: 912  this
+00958: 912  getprop "Step_Update_Cpp_Confirm_Waiting"
+00963: 912  notearg
+00964: 912  call 1
+00967: 912  pop
+00968: 913  goto 1074 (+106)
+00973: 915  this
+00974: 915  dup
+00975: 915  callprop "_setStep0"
+00980: 915  swap
+00981: 915  notearg
+00982: 915  this
+00983: 915  getprop "Step_Update_Cpp_Confirm_Waiting"
+00988: 915  notearg
+00989: 915  call 1
+00992: 915  pop
+00993: 916  goto 1074 (+81)
+00998: 920  this
+00999: 920  dup
+01000: 920  callprop "_postNotifyServerTip"
+01005: 920  swap
+01006: 920  notearg
+01007: 920  name "xs"
+01012: 920  getprop "Core"
+01017: 920  getprop "Tools"
+01022: 920  getprop "String"
+01027: 920  dup
+01028: 920  callprop "createString"
+01033: 920  swap
+01034: 920  notearg
+01035: 920  string "auto_name_255"
+01040: 920  notearg
+01041: 920  call 1
+01044: 920  notearg
+01045: 920  call 1
+01048: 920  pop
+01049: 921  this
+01050: 921  dup
+01051: 921  callprop "_setStep0"
+01056: 921  swap
+01057: 921  notearg
+01058: 921  this
+01059: 921  getprop "Step_Reset"
+01064: 921  notearg
+01065: 921  call 1
+01068: 921  pop
+01069: 922  goto 1074 (+5)
+01074: 925  goto 2502 (+1428)
+01079: 928  goto 2502 (+1423)
+01084: 937  name "xsc"
+01089: 937  getprop "Tools"
+01094: 937  getprop "Jsb"
+01099: 937  dup
+01100: 937  callprop "mkdir"
+01105: 937  swap
+01106: 937  notearg
+01107: 937  this
+01108: 937  dup
+01109: 937  callprop "_getUpdateDir"
+01114: 937  swap
+01115: 937  notearg
+01116: 937  call 0
+01119: 937  notearg
+01120: 937  call 1
+01123: 937  pop
+01124: 938  name "xsc"
+01129: 938  getprop "Tools"
+01134: 938  getprop "Jsb"
+01139: 938  dup
+01140: 938  callprop "mkdir"
+01145: 938  swap
+01146: 938  notearg
+01147: 938  this
+01148: 938  dup
+01149: 938  callprop "_getUpdateDownloadDir"
+01154: 938  swap
+01155: 938  notearg
+01156: 938  call 0
+01159: 938  notearg
+01160: 938  call 1
+01163: 938  pop
+01164: 939  name "xsc"
+01169: 939  getprop "Tools"
+01174: 939  getprop "Jsb"
+01179: 939  dup
+01180: 939  callprop "mkdir"
+01185: 939  swap
+01186: 939  notearg
+01187: 939  this
+01188: 939  dup
+01189: 939  callprop "_getUpdateResourcesDir"
+01194: 939  swap
+01195: 939  notearg
+01196: 939  call 0
+01199: 939  notearg
+01200: 939  call 1
+01203: 939  pop
+01204: 941  this
+01205: 941  dup
+01206: 941  callprop "_getUpdateDownloadDir"
+01211: 941  swap
+01212: 941  notearg
+01213: 941  call 0
+01216: 941  setlocal 2
+01219: 941  pop
+01220: 944  string ""
+01225: 944  this
+01226: 944  getprop "m_check_code"
+01231: 944  add
+01232: 944  string "_"
+01237: 944  add
+01238: 944  this
+01239: 944  getprop "m_ver_code_new"
+01244: 944  add
+01245: 944  string "_"
+01250: 944  add
+01251: 945  this
+01252: 945  getprop "m_filemd5"
+01257: 945  add
+01258: 946  this
+01259: 946  getprop "m_dl_file_name_short"
+01264: 946  add
+01265: 946  setlocal 3
+01268: 946  pop
+01269: 948  getlocal 2
+01272: 948  getlocal 3
+01275: 948  add
+01276: 948  setlocal 4
+01279: 948  pop
+01280: 953  this
+01281: 953  getlocal 2
+01284: 953  setprop "m_filePath"
+01289: 953  pop
+01290: 954  this
+01291: 954  getlocal 3
+01294: 954  setprop "m_fileName"
+01299: 954  pop
+01300: 955  this
+01301: 955  getlocal 2
+01304: 955  getlocal 3
+01307: 955  add
+01308: 955  setprop "m_file_full_name"
+01313: 955  pop
+01314: 958  this
+01315: 958  name "xsc"
+01320: 958  getprop "Utils"
+01325: 958  getprop "FileSys"
+01330: 958  dup
+01331: 958  callprop "getFileDataSize"
+01336: 958  swap
+01337: 958  notearg
+01338: 958  this
+01339: 958  getprop "m_file_full_name"
+01344: 958  notearg
+01345: 958  call 1
+01348: 958  setprop "m_filesize_downloaded"
+01353: 958  pop
+01354: 959  this
+01355: 959  this
+01356: 959  getprop "m_filesize"
+01361: 959  this
+01362: 959  getprop "m_filesize_downloaded"
+01367: 959  sub
+01368: 959  setprop "m_filesize_need_download"
+01373: 959  pop
+01374: 961  name "xsc"
+01379: 961  dup
+01380: 961  callprop "dump"
+01385: 961  swap
+01386: 961  notearg
+01387: 962  string "range"
+01392: 962  notearg
+01393: 963  newinit 1
+01398: 964  this
+01399: 964  getprop "m_filesize_downloaded"
+01404: 964  initprop "m_filesize_downloaded"
+01409: 965  this
+01410: 965  getprop "m_filesize"
+01415: 965  initprop "m_filesize"
+01420: 966  this
+01421: 966  getprop "m_filesize_need_download"
+01426: 966  initprop "m_filesize_need_download"
+01431: 966  endinit
+01432: 966  notearg
+01433: 966  call 2
+01436: 966  pop
+01437: 971  this
+01438: 971  getprop "m_filesize_need_download"
+01443: 971  uint16 1024
+01446: 971  div
+01447: 971  uint16 1024
+01450: 971  div
+01451: 971  string ""
+01456: 971  add
+01457: 971  setlocal 5
+01460: 971  pop
+01461: 972  this
+01462: 972  name "xsc"
+01467: 972  getprop "Utils"
+01472: 972  dup
+01473: 972  callprop "parseFloatDotLimit"
+01478: 972  swap
+01479: 972  notearg
+01480: 972  getlocal 5
+01483: 972  notearg
+01484: 972  int8 100
+01486: 972  notearg
+01487: 972  call 2
+01490: 972  setprop "_str_size_m_need_dl"
+01495: 972  pop
+01496: 974  name "xsc"
+01501: 974  getprop "Tools"
+01506: 974  getprop "Jsb"
+01511: 974  getprop "AssetsMgr"
+01516: 974  dup
+01517: 974  callprop "init"
+01522: 974  swap
+01523: 974  notearg
+01524: 975  this
+01525: 975  getprop "m_download_url"
+01530: 975  notearg
+01531: 976  this
+01532: 976  getprop "m_filePath"
+01537: 976  notearg
+01538: 977  this
+01539: 977  getprop "m_fileName"
+01544: 977  notearg
+01545: 978  this
+01546: 978  dup
+01547: 978  callprop "_getUpdateResourcesDir"
+01552: 978  swap
+01553: 978  notearg
+01554: 978  call 0
+01557: 978  notearg
+01558: 978  call 4
+01561: 978  pop
+01562: 981  name "cc"
+01567: 981  getprop "FileUtils"
+01572: 981  dup
+01573: 981  callprop "getInstance"
+01578: 981  swap
+01579: 981  notearg
+01580: 981  call 0
+01583: 981  dup
+01584: 981  callprop "isFileExist"
+01589: 981  swap
+01590: 981  notearg
+01591: 981  getlocal 4
+01594: 981  notearg
+01595: 981  call 1
+01598: 981  ifeq 1628 (+30)
+01603: 984  this
+01604: 984  dup
+01605: 984  callprop "_setStep0"
+01610: 984  swap
+01611: 984  notearg
+01612: 984  this
+01613: 984  getprop "Step_Update_Js_Confirm_Waiting"
+01618: 984  notearg
+01619: 984  call 1
+01622: 984  pop
+01623: 984  goto 1648 (+25)
+01628: 988  this
+01629: 988  dup
+01630: 988  callprop "_setStep0"
+01635: 988  swap
+01636: 988  notearg
+01637: 988  this
+01638: 988  getprop "Step_Update_Js_Confirm_Waiting"
+01643: 988  notearg
+01644: 988  call 1
+01647: 988  pop
+01648: 991  goto 2502 (+854)
+01653: 994  this
+01654: 994  getprop "m_sprite_prg_frame"
+01659: 994  dup
+01660: 994  callprop "setVisible"
+01665: 994  swap
+01666: 994  notearg
+01667: 994  true
+01668: 994  notearg
+01669: 994  call 1
+01672: 994  pop
+01673: 995  this
+01674: 995  getprop "m_sprite_prg_bg"
+01679: 995  dup
+01680: 995  callprop "setVisible"
+01685: 995  swap
+01686: 995  notearg
+01687: 995  true
+01688: 995  notearg
+01689: 995  call 1
+01692: 995  pop
+01693: 997  this
+01694: 997  name "xsc"
+01699: 997  getprop "Utils"
+01704: 997  getprop "FileSys"
+01709: 997  dup
+01710: 997  callprop "getFileDataSize"
+01715: 997  swap
+01716: 997  notearg
+01717: 997  this
+01718: 997  getprop "m_file_full_name"
+01723: 997  notearg
+01724: 997  call 1
+01727: 997  setprop "m_filesize_downloaded"
+01732: 997  pop
+01733: 998  this
+01734: 998  this
+01735: 998  getprop "m_filesize"
+01740: 998  this
+01741: 998  getprop "m_filesize_downloaded"
+01746: 998  sub
+01747: 998  setprop "m_filesize_need_download"
+01752: 998  pop
+01753:1000  name "xsc"
+01758:1000  dup
+01759:1000  callprop "dump"
+01764:1000  swap
+01765:1000  notearg
+01766:1001  string "range"
+01771:1001  notearg
+01772:1002  newinit 1
+01777:1003  this
+01778:1003  getprop "m_filesize_downloaded"
+01783:1003  initprop "m_filesize_downloaded"
+01788:1004  this
+01789:1004  getprop "m_filesize"
+01794:1004  initprop "m_filesize"
+01799:1005  this
+01800:1005  getprop "m_filesize_need_download"
+01805:1005  initprop "m_filesize_need_download"
+01810:1005  endinit
+01811:1005  notearg
+01812:1005  call 2
+01815:1005  pop
+01816:1010  this
+01817:1010  getprop "m_filesize_need_download"
+01822:1010  zero
+01823:1010  eq
+01824:1010  ifeq 1854 (+30)
+01829:1012  this
+01830:1012  dup
+01831:1012  callprop "_setStep0"
+01836:1012  swap
+01837:1012  notearg
+01838:1012  this
+01839:1012  getprop "Step_Download_MD5check"
+01844:1012  notearg
+01845:1012  call 1
+01848:1012  pop
+01849:1012  goto 2106 (+257)
+01854:1014  this
+01855:1014  getprop "m_filesize_need_download"
+01860:1014  zero
+01861:1014  lt
+01862:1014  ifeq 1905 (+43)
+01867:1018  this
+01868:1018  dup
+01869:1018  callprop "_clear_download_dir"
+01874:1018  swap
+01875:1018  notearg
+01876:1018  call 0
+01879:1018  pop
+01880:1021  this
+01881:1021  dup
+01882:1021  callprop "_setStep0"
+01887:1021  swap
+01888:1021  notearg
+01889:1021  this
+01890:1021  getprop "Step_Download_New"
+01895:1021  notearg
+01896:1021  call 1
+01899:1021  pop
+01900:1021  goto 2106 (+206)
+01905:1029  name "xsc"
+01910:1029  getprop "Tools"
+01915:1029  getprop "Jsb"
+01920:1029  getprop "AssetsMgr"
+01925:1029  dup
+01926:1029  callprop "setDownloadRange"
+01931:1029  swap
+01932:1029  notearg
+01933:1030  this
+01934:1030  getprop "m_filesize_downloaded"
+01939:1030  notearg
+01940:1031  this
+01941:1031  getprop "m_filesize"
+01946:1031  notearg
+01947:1031  call 2
+01950:1031  pop
+01951:1034  name "xsc"
+01956:1034  getprop "Tools"
+01961:1034  getprop "Jsb"
+01966:1034  getprop "AssetsMgr"
+01971:1034  dup
+01972:1034  callprop "setConnectionTimeout"
+01977:1034  swap
+01978:1034  notearg
+01979:1035  int8 15
+01981:1035  notearg
+01982:1035  call 1
+01985:1035  pop
+01986:1041  name "xsc"
+01991:1041  getprop "Tools"
+01996:1041  getprop "Jsb"
+02001:1041  getprop "AssetsMgr"
+02006:1041  dup
+02007:1041  callprop "setOperationTimeout"
+02012:1041  swap
+02013:1041  notearg
+02014:1042  name "xsc"
+02019:1042  getprop "app_indentify"
+02024:1042  name "xsc"
+02029:1042  getprop "Const_Proj_Code_226_TestOnline"
+02034:1042  eq
+02035:1042  ifeq 2047 (+12)
+02040:1042  int8 5
+02042:1042  goto 2049 (+7)
+02047:1042  int8 120
+02049:1042  notearg
+02050:1042  call 1
+02053:1042  pop
+02054:1046  name "xsc"
+02059:1046  getprop "Tools"
+02064:1046  getprop "Jsb"
+02069:1046  getprop "AssetsMgr"
+02074:1046  dup
+02075:1046  callprop "startDownloadThread"
+02080:1046  swap
+02081:1046  notearg
+02082:1046  call 0
+02085:1046  pop
+02086:1047  this
+02087:1047  dup
+02088:1047  callprop "_setStep0"
+02093:1047  swap
+02094:1047  notearg
+02095:1047  this
+02096:1047  getprop "Step_Downloading"
+02101:1047  notearg
+02102:1047  call 1
+02105:1047  pop
+02106:1051  goto 2502 (+396)
+02111:1054  goto 2502 (+391)
+02116:1058  name "xsc"
+02121:1058  getprop "Tools"
+02126:1058  getprop "Jsb"
+02131:1058  getprop "Utils"
+02136:1058  dup
+02137:1058  callprop "md5file"
+02142:1058  swap
+02143:1058  notearg
+02144:1058  this
+02145:1058  getprop "m_file_full_name"
+02150:1058  notearg
+02151:1058  call 1
+02154:1058  setlocal 6
+02157:1058  pop
+02158:1060  this
+02159:1060  dup
+02160:1060  callprop "log"
+02165:1060  swap
+02166:1060  notearg
+02167:1060  string "this.m_filemd5"
+02172:1060  notearg
+02173:1060  this
+02174:1060  getprop "m_filemd5"
+02179:1060  notearg
+02180:1060  call 2
+02183:1060  pop
+02184:1061  this
+02185:1061  dup
+02186:1061  callprop "log"
+02191:1061  swap
+02192:1061  notearg
+02193:1061  string "_md5 - download - "
+02198:1061  this
+02199:1061  getprop "m_file_full_name"
+02204:1061  add
+02205:1061  notearg
+02206:1061  getlocal 6
+02209:1061  notearg
+02210:1061  call 2
+02213:1061  pop
+02214:1063  getlocal 6
+02217:1063  this
+02218:1063  getprop "m_filemd5"
+02223:1063  stricteq
+02224:1063  ifeq 2254 (+30)
+02229:1066  this
+02230:1066  dup
+02231:1066  callprop "_setStep0"
+02236:1066  swap
+02237:1066  notearg
+02238:1066  this
+02239:1066  getprop "Step_Uncompress_Begin"
+02244:1066  notearg
+02245:1066  call 1
+02248:1066  pop
+02249:1066  goto 2321 (+72)
+02254:1070  name "xsc"
+02259:1070  dup
+02260:1070  callprop "error"
+02265:1070  swap
+02266:1070  notearg
+02267:1070  string "md5 check err,skip update"
+02272:1070  notearg
+02273:1070  this
+02274:1070  getprop "m_fileName"
+02279:1070  notearg
+02280:1070  getlocal 6
+02283:1070  notearg
+02284:1070  call 3
+02287:1070  pop
+02288:1073  this
+02289:1073  dup
+02290:1073  callprop "_clear_download_dir"
+02295:1073  swap
+02296:1073  notearg
+02297:1073  call 0
+02300:1073  pop
+02301:1075  this
+02302:1075  dup
+02303:1075  callprop "_setStep0"
+02308:1075  swap
+02309:1075  notearg
+02310:1075  this
+02311:1075  getprop "Step_Update_EnterLogin"
+02316:1075  notearg
+02317:1075  call 1
+02320:1075  pop
+02321:1077  goto 2502 (+181)
+02326:1080  name "xsc"
+02331:1080  getprop "Tools"
+02336:1080  getprop "Jsb"
+02341:1080  getprop "AssetsMgr"
+02346:1080  dup
+02347:1080  callprop "startUncompressThread"
+02352:1080  swap
+02353:1080  notearg
+02354:1081  this
+02355:1081  getprop "m_file_full_name"
+02360:1081  notearg
+02361:1082  this
+02362:1082  dup
+02363:1082  callprop "_getUpdateResourcesDir"
+02368:1082  swap
+02369:1082  notearg
+02370:1082  call 0
+02373:1082  notearg
+02374:1082  call 2
+02377:1082  pop
+02378:1084  this
+02379:1084  dup
+02380:1084  callprop "_setStep0"
+02385:1084  swap
+02386:1084  notearg
+02387:1084  this
+02388:1084  getprop "Step_Uncompressing"
+02393:1084  notearg
+02394:1084  call 1
+02397:1084  pop
+02398:1085  goto 2502 (+104)
+02403:1088  goto 2502 (+99)
+02408:1092  name "xsc"
+02413:1092  getprop "Tools"
+02418:1092  getprop "Jsb"
+02423:1092  getprop "AssetsMgr"
+02428:1092  dup
+02429:1092  callprop "release"
+02434:1092  swap
+02435:1092  notearg
+02436:1092  call 0
+02439:1092  pop
+02440:1094  this
+02441:1094  dup
+02442:1094  callprop "_gotoLogin"
+02447:1094  swap
+02448:1094  notearg
+02449:1094  call 0
+02452:1094  pop
+02453:1095  goto 2502 (+49)
+02458:1098  goto 2502 (+44)
+02463:1102  goto 2502 (+39)
+02468:1106  this
+02469:1106  dup
+02470:1106  callprop "error"
+02475:1106  swap
+02476:1106  notearg
+02477:1106  string "step err"
+02482:1106  notearg
+02483:1106  getlocal 0
+02486:1106  notearg
+02487:1106  string "test"
+02492:1106  notearg
+02493:1106  call 3
+02496:1106  pop
+02497:1107  goto 2502 (+5)
+02502:1108  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:787 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] responseText
+;; local[0] _data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:835 ---
+loc   line  op
+----- ----  --
+main:
+00000: 836  name "JSON"
+00005: 836  dup
+00006: 836  callprop "parse"
+00011: 836  swap
+00012: 836  notearg
+00013: 836  getarg 0
+00016: 836  notearg
+00017: 836  call 1
+00020: 836  setlocal 0
+00023: 836  pop
+00024: 837  this
+00025: 837  dup
+00026: 837  callprop "dump"
+00031: 837  swap
+00032: 837  notearg
+00033: 837  string "checkUpdate resp"
+00038: 837  notearg
+00039: 837  getlocal 0
+00042: 837  notearg
+00043: 837  call 2
+00046: 837  pop
+00047: 840  this
+00048: 840  getlocal 0
+00051: 840  getprop "resource_version"
+00056: 840  setprop "m_ver_code_new"
+00061: 840  pop
+00062: 841  this
+00063: 841  getlocal 0
+00066: 841  getprop "resource_version_show"
+00071: 841  setprop "m_ver_name_new"
+00076: 841  pop
+00077: 842  this
+00078: 842  getlocal 0
+00081: 842  getprop "download_url"
+00086: 842  setprop "m_download_url"
+00091: 842  pop
+00092: 843  this
+00093: 843  name "xsc"
+00098: 843  dup
+00099: 843  callprop "parseInt"
+00104: 843  swap
+00105: 843  notearg
+00106: 843  getlocal 0
+00109: 843  getprop "filesize"
+00114: 843  notearg
+00115: 843  call 1
+00118: 843  setprop "m_filesize"
+00123: 843  pop
+00124: 844  this
+00125: 844  getlocal 0
+00128: 844  getprop "md5"
+00133: 844  setprop "m_filemd5"
+00138: 844  pop
+00139: 845  this
+00140: 845  getlocal 0
+00143: 845  getprop "tips"
+00148: 845  setprop "m_download_tips"
+00153: 845  pop
+00154: 846  this
+00155: 846  getlocal 0
+00158: 846  getprop "is_cpp_update"
+00163: 846  setprop "m_is_cpp_update"
+00168: 846  pop
+00169: 847  this
+00170: 847  getlocal 0
+00173: 847  getprop "file_name"
+00178: 847  or 189 (+11)
+00183: 847  pop
+00184: 847  string "unknow"
+00189: 847  setprop "m_dl_file_name_short"
+00194: 847  pop
+00195: 848  this
+00196: 848  getlocal 0
+00199: 848  setprop "m_resp"
+00204: 848  pop
+00205: 850  this
+00206: 850  getprop "m_is_cpp_update"
+00211: 850  ifeq 347 (+136)
+00216: 852  this
+00217: 852  newinit 1
+00222: 853  name "xsc"
+00227: 853  dup
+00228: 853  callprop "parseInt"
+00233: 853  swap
+00234: 853  notearg
+00235: 853  getlocal 0
+00238: 853  getprop "cpp_update_fun"
+00243: 853  getprop "type"
+00248: 853  notearg
+00249: 853  call 1
+00252: 853  initprop "type"
+00257: 854  getlocal 0
+00260: 854  getprop "cpp_update_fun"
+00265: 854  getprop "val"
+00270: 854  or 281 (+11)
+00275: 854  pop
+00276: 854  string ""
+00281: 854  initprop "msg"
+00286: 855  getlocal 0
+00289: 855  getprop "cpp_update_fun"
+00294: 855  getprop "url"
+00299: 855  or 310 (+11)
+00304: 855  pop
+00305: 855  string ""
+00310: 855  initprop "url"
+00315: 855  endinit
+00316: 855  setprop "m_cpp_update"
+00321: 855  pop
+00322: 858  this
+00323: 858  dup
+00324: 858  callprop "_setStep0"
+00329: 858  swap
+00330: 858  notearg
+00331: 858  this
+00332: 858  getprop "Step_Check_Update"
+00337: 858  notearg
+00338: 858  call 1
+00341: 858  pop
+00342: 858  goto 407 (+65)
+00347: 863  getlocal 0
+00350: 863  getprop "result"
+00355: 863  true
+00356: 863  eq
+00357: 863  ifeq 387 (+30)
+00362: 866  this
+00363: 866  dup
+00364: 866  callprop "_setStep0"
+00369: 866  swap
+00370: 866  notearg
+00371: 866  this
+00372: 866  getprop "Step_Check_Update"
+00377: 866  notearg
+00378: 866  call 1
+00381: 866  pop
+00382: 866  goto 407 (+25)
+00387: 871  this
+00388: 871  dup
+00389: 871  callprop "_setStep0"
+00394: 871  swap
+00395: 871  notearg
+00396: 871  this
+00397: 871  getprop "Step_Update_EnterLogin"
+00402: 871  notearg
+00403: 871  call 1
+00406: 871  pop
+00407: 873  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:835 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] responseText
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:876 ---
+loc   line  op
+----- ----  --
+main:
+00000: 878  name "xsc"
+00005: 878  dup
+00006: 878  callprop "error"
+00011: 878  swap
+00012: 878  notearg
+00013: 878  string "checkUpdateFail"
+00018: 878  notearg
+00019: 878  getarg 0
+00022: 878  notearg
+00023: 878  call 2
+00026: 878  pop
+00027: 879  this
+00028: 879  dup
+00029: 879  callprop "_setStep0"
+00034: 879  swap
+00035: 879  notearg
+00036: 879  this
+00037: 879  getprop "Step_Update_EnterLogin"
+00042: 879  notearg
+00043: 879  call 1
+00046: 879  pop
+00047: 879  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:876 ---
+;; function object[21] _getUpdateDownloadDir
+;; function metadata object[21] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1111 ---
+loc   line  op
+----- ----  --
+main:
+00000:1112  getlocal 0
+00003:1112  pop
+00004:1114  this
+00005:1114  dup
+00006:1114  callprop "_getUpdateDir"
+00011:1114  swap
+00012:1114  notearg
+00013:1114  call 0
+00016:1114  setlocal 0
+00019:1114  pop
+00020:1115  getlocal 0
+00023:1115  string "/Download/"
+00028:1115  add
+00029:1115  setlocal 0
+00032:1115  pop
+00033:1118  getlocal 0
+00036:1118  return
+00037:1118  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1111 ---
+;; function object[22] _getUpdateResourcesDir
+;; function metadata object[22] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1135 ---
+loc   line  op
+----- ----  --
+main:
+00000:1136  getlocal 0
+00003:1136  pop
+00004:1137  this
+00005:1137  dup
+00006:1137  callprop "_getUpdateDir"
+00011:1137  swap
+00012:1137  notearg
+00013:1137  call 0
+00016:1137  setlocal 0
+00019:1137  pop
+00020:1141  getlocal 0
+00023:1141  string "/ExcuteDir"
+00028:1141  add
+00029:1141  setlocal 0
+00032:1141  pop
+00033:1142  getlocal 0
+00036:1142  name "xsc"
+00041:1142  getprop "Tools"
+00046:1142  getprop "Jsb"
+00051:1142  dup
+00052:1142  callprop "getOriResCode"
+00057:1142  swap
+00058:1142  notearg
+00059:1142  call 0
+00062:1142  add
+00063:1142  setlocal 0
+00066:1142  pop
+00067:1144  getlocal 0
+00070:1144  string "/"
+00075:1144  add
+00076:1144  setlocal 0
+00079:1144  pop
+00080:1146  getlocal 0
+00083:1146  return
+00084:1146  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1135 ---
+;; function object[23] _getUpdateDir
+;; function metadata object[23] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1149 ---
+loc   line  op
+----- ----  --
+main:
+00000:1150  getlocal 0
+00003:1150  pop
+00004:1153  name "cc"
+00009:1153  getprop "FileUtils"
+00014:1153  dup
+00015:1153  callprop "getInstance"
+00020:1153  swap
+00021:1153  notearg
+00022:1153  call 0
+00025:1153  dup
+00026:1153  callprop "getWritablePath"
+00031:1153  swap
+00032:1153  notearg
+00033:1153  call 0
+00036:1153  setlocal 0
+00039:1153  pop
+00040:1159  getlocal 0
+00043:1159  string "Sanguosha"
+00048:1159  add
+00049:1159  setlocal 0
+00052:1159  pop
+00053:1163  getlocal 0
+00056:1163  return
+00057:1163  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1149 ---
+;; function object[24] _gotoLogin
+;; function metadata object[24] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1166 ---
+loc   line  op
+----- ----  --
+main:
+00000:1168  name "xs"
+00005:1168  getprop "UpdateScene"
+00010:1168  dup
+00011:1168  callprop "unload"
+00016:1168  swap
+00017:1168  notearg
+00018:1168  call 0
+00021:1168  pop
+00022:1170  name "xs"
+00027:1170  dup
+00028:1170  callprop "main_game"
+00033:1170  swap
+00034:1170  notearg
+00035:1170  call 0
+00038:1170  pop
+00039:1170  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1166 ---
+;; function object[25] _postNotifyMsg
+;; function metadata object[25] nargs=1 bindings=1
+;; arg[0] strMsg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1173 ---
+loc   line  op
+----- ----  --
+main:
+00000:1174  this
+00001:1174  dup
+00002:1174  callprop "_postNotify"
+00007:1174  swap
+00008:1174  notearg
+00009:1174  this
+00010:1174  getprop "Event_Msg"
+00015:1174  notearg
+00016:1174  getarg 0
+00019:1174  notearg
+00020:1174  call 2
+00023:1174  pop
+00024:1174  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1173 ---
+;; function object[26] _postNotifyServerTip
+;; function metadata object[26] nargs=1 bindings=1
+;; arg[0] strMsg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1177 ---
+loc   line  op
+----- ----  --
+main:
+00000:1178  this
+00001:1178  dup
+00002:1178  callprop "_postNotify"
+00007:1178  swap
+00008:1178  notearg
+00009:1178  this
+00010:1178  getprop "Event_ServerTip"
+00015:1178  notearg
+00016:1178  getarg 0
+00019:1178  notearg
+00020:1178  call 2
+00023:1178  pop
+00024:1178  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1177 ---
+;; function object[27] _postNotifyProgress
+;; function metadata object[27] nargs=1 bindings=1
+;; arg[0] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1181 ---
+loc   line  op
+----- ----  --
+main:
+00000:1182  this
+00001:1182  dup
+00002:1182  callprop "_postNotify"
+00007:1182  swap
+00008:1182  notearg
+00009:1182  this
+00010:1182  getprop "Event_Progress"
+00015:1182  notearg
+00016:1182  getarg 0
+00019:1182  notearg
+00020:1182  call 2
+00023:1182  pop
+00024:1182  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1181 ---
+;; function object[28] _postNotify
+;; function metadata object[28] nargs=2 bindings=2
+;; arg[0] event
+;; arg[1] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1185 ---
+loc   line  op
+----- ----  --
+main:
+00000:1186  this
+00001:1186  getprop "m_notify"
+00006:1186  dup
+00007:1186  callprop "postNotification"
+00012:1186  swap
+00013:1186  notearg
+00014:1186  getarg 0
+00017:1186  notearg
+00018:1186  getarg 1
+00021:1186  notearg
+00022:1186  call 2
+00025:1186  pop
+00026:1186  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1185 ---
+;; function object[29] _startUpdate
+;; function metadata object[29] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1190 ---
+loc   line  op
+----- ----  --
+main:
+00000:1193  this
+00001:1193  getprop "m_is_update_running"
+00006:1193  not
+00007:1193  ifeq 33 (+26)
+00012:1198  this
+00013:1198  dup
+00014:1198  callprop "scheduleUpdate"
+00019:1198  swap
+00020:1198  notearg
+00021:1198  call 0
+00024:1198  pop
+00025:1199  this
+00026:1199  true
+00027:1199  setprop "m_is_update_running"
+00032:1199  pop
+00033:1200  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1190 ---
+;; function object[30] _stopUpdate
+;; function metadata object[30] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1205 ---
+loc   line  op
+----- ----  --
+main:
+00000:1207  this
+00001:1207  dup
+00002:1207  callprop "unscheduleUpdate"
+00007:1207  swap
+00008:1207  notearg
+00009:1207  call 0
+00012:1207  pop
+00013:1208  this
+00014:1208  false
+00015:1208  setprop "m_is_update_running"
+00020:1208  pop
+00021:1208  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1205 ---
+;; function object[31] onExit
+;; function metadata object[31] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1213 ---
+loc   line  op
+----- ----  --
+main:
+00000:1214  this
+00001:1214  dup
+00002:1214  callprop "_super"
+00007:1214  swap
+00008:1214  notearg
+00009:1214  call 0
+00012:1214  pop
+00013:1214  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1213 ---
+;; function object[32] load
+;; function metadata object[32] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1218 ---
+loc   line  op
+----- ----  --
+main:
+00000:1220  name "xsc"
+00005:1220  getprop "Factorys"
+00010:1220  getprop "Sprite"
+00015:1220  dup
+00016:1220  callprop "load"
+00021:1220  swap
+00022:1220  notearg
+00023:1220  string "Update.plist"
+00028:1220  notearg
+00029:1220  call 1
+00032:1220  pop
+00033:1221  name "xsc"
+00038:1221  getprop "Factorys"
+00043:1221  getprop "Sprite"
+00048:1221  dup
+00049:1221  callprop "load"
+00054:1221  swap
+00055:1221  notearg
+00056:1221  string "0_6_4_DengluScene01.plist"
+00061:1221  notearg
+00062:1221  call 1
+00065:1221  pop
+00066:1221  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1218 ---
+;; function object[33] unload
+;; function metadata object[33] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1224 ---
+loc   line  op
+----- ----  --
+main:
+00000:1226  name "xsc"
+00005:1226  getprop "Factorys"
+00010:1226  getprop "Sprite"
+00015:1226  dup
+00016:1226  callprop "unload"
+00021:1226  swap
+00022:1226  notearg
+00023:1226  string "Update.plist"
+00028:1226  notearg
+00029:1226  call 1
+00032:1226  pop
+00033:1227  name "xsc"
+00038:1227  getprop "Factorys"
+00043:1227  getprop "Sprite"
+00048:1227  dup
+00049:1227  callprop "unload"
+00054:1227  swap
+00055:1227  notearg
+00056:1227  string "0_6_4_DengluScene01.plist"
+00061:1227  notearg
+00062:1227  call 1
+00065:1227  pop
+00066:1227  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1224 ---
+;; function object[34] create
+;; function metadata object[34] nargs=0 bindings=2
+;; local[0] _layer
+;; local[1] _scene
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1230 ---
+loc   line  op
+----- ----  --
+main:
+00000:1233  name "xs"
+00005:1233  getprop "UpdateScene"
+00010:1233  dup
+00011:1233  callprop "load"
+00016:1233  swap
+00017:1233  notearg
+00018:1233  call 0
+00021:1233  pop
+00022:1235  name "xs"
+00027:1235  getprop "UpdateScene"
+00032:1235  getprop "UpdateSceneLayer"
+00037:1235  undefined
+00038:1235  notearg
+00039:1235  new 0
+00042:1235  setlocal 0
+00045:1235  pop
+00046:1237  getlocal 0
+00049:1237  and 69 (+20)
+00054:1237  pop
+00055:1237  getlocal 0
+00058:1237  dup
+00059:1237  callprop "init"
+00064:1237  swap
+00065:1237  notearg
+00066:1237  call 0
+00069:1237  ifeq 116 (+47)
+00074:1238  name "cc"
+00079:1238  getprop "Scene"
+00084:1238  undefined
+00085:1238  notearg
+00086:1238  new 0
+00089:1238  setlocal 1
+00092:1238  pop
+00093:1240  getlocal 1
+00096:1240  dup
+00097:1240  callprop "addChild"
+00102:1240  swap
+00103:1240  notearg
+00104:1240  getlocal 0
+00107:1240  notearg
+00108:1240  call 1
+00111:1240  pop
+00112:1241  getlocal 1
+00115:1241  return
+00116:1243  null
+00117:1243  return
+00118:1243  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Update/UpdateScene.js:1230 ---

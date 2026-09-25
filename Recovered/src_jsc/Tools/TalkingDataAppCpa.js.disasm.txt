@@ -1,0 +1,259 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/TalkingDataAppCpa.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=36 object[0]
+;; FUNCTION-MAP kind=lambda offset=46 object[1]
+;; FUNCTION-MAP kind=lambda offset=56 object[2]
+;; FUNCTION-MAP kind=lambda offset=66 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TalkingDataAppCpa.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Tools"
+00010:   5  name "xs"
+00015:   5  getprop "Tools"
+00020:   5  getprop "TalkingDataAppCpa"
+00025:   5  or 77 (+52)
+00030:   5  pop
+00031:   5  newinit 1
+00036:   8  lambda (function () {
+    [sourceless code]
+})
+00041:   8  initprop "onRegister"
+00046:  15  lambda (function () {
+    [sourceless code]
+})
+00051:  15  initprop "onLogin"
+00056:  22  lambda (function () {
+    [sourceless code]
+})
+00061:  22  initprop "onPay"
+00066:  37  lambda (function () {
+    [sourceless code]
+})
+00071:  37  initprop "onCustEventWithIdx"
+00076:  37  endinit
+00077:  37  setprop "TalkingDataAppCpa"
+00082:  37  popv
+00083:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TalkingDataAppCpa.js:1 ---
+;; function object[0] onRegister
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] account
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TalkingDataAppCpa.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  getarg 0
+00003:   9  null
+00004:   9  eq
+00005:   9  or 20 (+15)
+00010:   9  pop
+00011:   9  getarg 0
+00014:   9  string ""
+00019:   9  eq
+00020:   9  ifeq 55 (+35)
+00025:  10  name "xs"
+00030:  10  getprop "Tools"
+00035:  10  getprop "Jsb"
+00040:  10  dup
+00041:  10  callprop "getDeviceId"
+00046:  10  swap
+00047:  10  notearg
+00048:  10  call 0
+00051:  10  setarg 0
+00054:  10  pop
+00055:  12  name "xs"
+00060:  12  getprop "JsbConnecter"
+00065:  12  dup
+00066:  12  callprop "getInstance"
+00071:  12  swap
+00072:  12  notearg
+00073:  12  call 0
+00076:  12  dup
+00077:  12  callprop "invoke"
+00082:  12  swap
+00083:  12  notearg
+00084:  12  string "TalkingDataAppCpaHelp"
+00089:  12  notearg
+00090:  12  string "onRegister"
+00095:  12  notearg
+00096:  12  string ""
+00101:  12  getarg 0
+00104:  12  add
+00105:  12  notearg
+00106:  12  call 3
+00109:  12  pop
+00110:  12  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TalkingDataAppCpa.js:8 ---
+;; function object[1] onLogin
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] account
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TalkingDataAppCpa.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  getarg 0
+00003:  16  null
+00004:  16  eq
+00005:  16  or 35 (+30)
+00010:  16  pop
+00011:  16  getarg 0
+00014:  16  string ""
+00019:  16  eq
+00020:  16  or 35 (+15)
+00025:  16  pop
+00026:  16  getarg 0
+00029:  16  name "undefined"
+00034:  16  eq
+00035:  16  ifeq 70 (+35)
+00040:  17  name "xs"
+00045:  17  getprop "Tools"
+00050:  17  getprop "Jsb"
+00055:  17  dup
+00056:  17  callprop "getDeviceId"
+00061:  17  swap
+00062:  17  notearg
+00063:  17  call 0
+00066:  17  setarg 0
+00069:  17  pop
+00070:  19  name "xs"
+00075:  19  getprop "JsbConnecter"
+00080:  19  dup
+00081:  19  callprop "getInstance"
+00086:  19  swap
+00087:  19  notearg
+00088:  19  call 0
+00091:  19  dup
+00092:  19  callprop "invoke"
+00097:  19  swap
+00098:  19  notearg
+00099:  19  string "TalkingDataAppCpaHelp"
+00104:  19  notearg
+00105:  19  string "onLogin"
+00110:  19  notearg
+00111:  19  string ""
+00116:  19  getarg 0
+00119:  19  add
+00120:  19  notearg
+00121:  19  call 3
+00124:  19  pop
+00125:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TalkingDataAppCpa.js:15 ---
+;; function object[2] onPay
+;; function metadata object[2] nargs=5 bindings=6
+;; arg[0] account
+;; arg[1] orderId
+;; arg[2] amount
+;; arg[3] currencyType
+;; arg[4] payType
+;; local[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TalkingDataAppCpa.js:22 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  getarg 0
+00003:  23  null
+00004:  23  eq
+00005:  23  or 20 (+15)
+00010:  23  pop
+00011:  23  getarg 0
+00014:  23  string ""
+00019:  23  eq
+00020:  23  ifeq 55 (+35)
+00025:  24  name "xs"
+00030:  24  getprop "Tools"
+00035:  24  getprop "Jsb"
+00040:  24  dup
+00041:  24  callprop "getDeviceId"
+00046:  24  swap
+00047:  24  notearg
+00048:  24  call 0
+00051:  24  setarg 0
+00054:  24  pop
+00055:  27  string ""
+00060:  27  getarg 0
+00063:  27  add
+00064:  27  string "|"
+00069:  27  add
+00070:  28  getarg 1
+00073:  28  add
+00074:  28  string "|"
+00079:  28  add
+00080:  29  getarg 2
+00083:  29  add
+00084:  29  string "|"
+00089:  29  add
+00090:  30  getarg 3
+00093:  30  add
+00094:  30  string "|"
+00099:  30  add
+00100:  31  getarg 4
+00103:  31  add
+00104:  31  setlocal 0
+00107:  31  pop
+00108:  33  name "xs"
+00113:  33  getprop "JsbConnecter"
+00118:  33  dup
+00119:  33  callprop "getInstance"
+00124:  33  swap
+00125:  33  notearg
+00126:  33  call 0
+00129:  33  dup
+00130:  33  callprop "invoke"
+00135:  33  swap
+00136:  33  notearg
+00137:  33  string "TalkingDataAppCpaHelp"
+00142:  33  notearg
+00143:  33  string "onPay"
+00148:  33  notearg
+00149:  33  string ""
+00154:  33  getlocal 0
+00157:  33  add
+00158:  33  notearg
+00159:  33  call 3
+00162:  33  pop
+00163:  33  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TalkingDataAppCpa.js:22 ---
+;; function object[3] onCustEventWithIdx
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TalkingDataAppCpa.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  name "xs"
+00005:  38  getprop "JsbConnecter"
+00010:  38  dup
+00011:  38  callprop "getInstance"
+00016:  38  swap
+00017:  38  notearg
+00018:  38  call 0
+00021:  38  dup
+00022:  38  callprop "invoke"
+00027:  38  swap
+00028:  38  notearg
+00029:  38  string "TalkingDataAppCpaHelp"
+00034:  38  notearg
+00035:  38  string "onCustEventWithIdx"
+00040:  38  notearg
+00041:  38  string ""
+00046:  38  getarg 0
+00049:  38  add
+00050:  38  notearg
+00051:  38  call 3
+00054:  38  pop
+00055:  38  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TalkingDataAppCpa.js:37 ---

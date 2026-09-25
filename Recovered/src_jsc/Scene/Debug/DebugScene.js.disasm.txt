@@ -1,0 +1,2599 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Debug/DebugScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=38 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=58 object[2]
+;; FUNCTION-MAP kind=lambda offset=94 object[3]
+;; FUNCTION-MAP kind=lambda offset=1168 object[4]
+;; FUNCTION-MAP kind=lambda offset=1178 object[5]
+;; FUNCTION-MAP kind=lambda offset=1188 object[6]
+;; FUNCTION-MAP kind=lambda offset=1198 object[7]
+;; FUNCTION-MAP kind=lambda offset=1208 object[8]
+;; FUNCTION-MAP kind=lambda offset=1218 object[9]
+;; FUNCTION-MAP kind=lambda offset=1228 object[10]
+;; FUNCTION-MAP kind=lambda offset=1238 object[11]
+;; FUNCTION-MAP kind=lambda offset=1248 object[12]
+;; FUNCTION-MAP kind=lambda offset=1258 object[13]
+;; FUNCTION-MAP kind=lambda offset=1268 object[14]
+;; FUNCTION-MAP kind=lambda offset=1278 object[15]
+;; FUNCTION-MAP kind=lambda offset=1314 object[16]
+;; FUNCTION-MAP kind=lambda offset=1368 object[17]
+;; FUNCTION-MAP kind=lambda offset=1378 object[18]
+;; FUNCTION-MAP kind=lambda offset=1432 object[19]
+;; FUNCTION-MAP kind=lambda offset=1442 object[20]
+;; FUNCTION-MAP kind=lambda offset=1478 object[21]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  name "xs"
+00005:  11  getprop "Views"
+00010:  11  name "xs"
+00015:  11  getprop "Views"
+00020:  11  getprop "ItemCell"
+00025:  11  dup
+00026:  11  callprop "extend"
+00031:  11  swap
+00032:  11  notearg
+00033:  11  newinit 1
+00038:  12  lambda (function () {
+    [sourceless code]
+})
+00043:  12  initprop "init"
+00048:  30  lambda (function () {
+    [sourceless code]
+})
+00053:  30  initprop "update"
+00058:  99  lambda (function () {
+    [sourceless code]
+})
+00063:  99  initprop "onTouchCallBack"
+00068:  99  endinit
+00069:  99  notearg
+00070:  99  call 1
+00073:  99  setprop "DebugItemCell"
+00078:  99  popv
+00079: 134  name "xs"
+00084: 134  getprop "Views"
+00089: 134  getprop "DebugItemCell"
+00094: 134  lambda (function () {
+    [sourceless code]
+})
+00099: 134  setprop "create"
+00104: 134  popv
+00105: 143  name "xs"
+00110: 143  getprop "Scene"
+00115: 143  name "cc"
+00120: 143  getprop "Layer"
+00125: 143  dup
+00126: 143  callprop "extend"
+00131: 143  swap
+00132: 143  notearg
+00133: 143  newinit 1
+00138: 144  newarray 23
+00142: 145  newinit 1
+00147: 145  false
+00148: 145  initprop "changeAble"
+00153: 145  string "Cocos2d_Debug"
+00158: 145  initprop "key"
+00163: 145  string ""
+00168: 145  name "xs"
+00173: 145  getprop "Tools"
+00178: 145  getprop "Jsb"
+00183: 145  dup
+00184: 145  callprop "getCocos2dDebugLevel"
+00189: 145  swap
+00190: 145  notearg
+00191: 145  call 0
+00194: 145  add
+00195: 145  initprop "desc"
+00200: 145  endinit
+00201: 145  initelem_array 0
+00205: 146  newinit 1
+00210: 146  false
+00211: 146  initprop "changeAble"
+00216: 146  string "ChannelID"
+00221: 146  initprop "key"
+00226: 146  string "CID:"
+00231: 146  name "xs"
+00236: 146  getprop "Tools"
+00241: 146  getprop "Jsb"
+00246: 146  dup
+00247: 146  callprop "getChannelId"
+00252: 146  swap
+00253: 146  notearg
+00254: 146  call 0
+00257: 146  add
+00258: 146  initprop "desc"
+00263: 146  endinit
+00264: 146  initelem_array 1
+00268: 147  newinit 1
+00273: 147  false
+00274: 147  initprop "changeAble"
+00279: 147  string "ApkInfo"
+00284: 147  initprop "key"
+00289: 147  string ""
+00294: 147  initprop "desc"
+00299: 147  endinit
+00300: 147  initelem_array 2
+00304: 148  newinit 1
+00309: 148  false
+00310: 148  initprop "changeAble"
+00315: 148  string "ClientCfgVer"
+00320: 148  initprop "key"
+00325: 148  string ""
+00330: 148  initprop "desc"
+00335: 148  endinit
+00336: 148  initelem_array 3
+00340: 149  newinit 1
+00345: 149  false
+00346: 149  initprop "changeAble"
+00351: 149  string "ServerApp"
+00356: 149  initprop "key"
+00361: 149  string ""
+00366: 149  initprop "desc"
+00371: 149  endinit
+00372: 149  initelem_array 4
+00376: 150  newinit 1
+00381: 150  false
+00382: 150  initprop "changeAble"
+00387: 150  string "ServerCfg"
+00392: 150  initprop "key"
+00397: 150  string ""
+00402: 150  initprop "desc"
+00407: 150  endinit
+00408: 150  initelem_array 5
+00412: 151  newinit 1
+00417: 151  false
+00418: 151  initprop "changeAble"
+00423: 151  string "ServerOptCfg"
+00428: 151  initprop "key"
+00433: 151  string ""
+00438: 151  initprop "desc"
+00443: 151  endinit
+00444: 151  initelem_array 6
+00448: 152  newinit 1
+00453: 152  false
+00454: 152  initprop "changeAble"
+00459: 152  string "TKAppKey"
+00464: 152  initprop "key"
+00469: 152  string ""
+00474: 152  initprop "desc"
+00479: 152  endinit
+00480: 152  initelem_array 7
+00484: 153  newinit 1
+00489: 153  false
+00490: 153  initprop "changeAble"
+00495: 153  string "app_macroStr"
+00500: 153  initprop "key"
+00505: 153  string ""
+00510: 153  initprop "desc"
+00515: 153  endinit
+00516: 153  initelem_array 8
+00520: 154  newinit 1
+00525: 154  false
+00526: 154  initprop "changeAble"
+00531: 154  string "EasySdkInfo"
+00536: 154  initprop "key"
+00541: 154  string ""
+00546: 154  initprop "desc"
+00551: 154  endinit
+00552: 154  initelem_array 9
+00556: 156  newinit 1
+00561: 156  string "release"
+00566: 156  initprop "key"
+00571: 156  string ""
+00576: 156  initprop "desc"
+00581: 156  endinit
+00582: 156  initelem_array 10
+00586: 157  newinit 1
+00591: 157  string "useLog"
+00596: 157  initprop "key"
+00601: 157  string ""
+00606: 157  initprop "desc"
+00611: 157  endinit
+00612: 157  initelem_array 11
+00616: 158  newinit 1
+00621: 158  string "useMark"
+00626: 158  initprop "key"
+00631: 158  string ""
+00636: 158  initprop "desc"
+00641: 158  endinit
+00642: 158  initelem_array 12
+00646: 159  newinit 1
+00651: 159  string "useDebugBoundRect"
+00656: 159  initprop "key"
+00661: 159  string ""
+00666: 159  initprop "desc"
+00671: 159  endinit
+00672: 159  initelem_array 13
+00676: 160  newinit 1
+00681: 160  string "useDebugPoint"
+00686: 160  initprop "key"
+00691: 160  string ""
+00696: 160  initprop "desc"
+00701: 160  endinit
+00702: 160  initelem_array 14
+00706: 161  newinit 1
+00711: 161  string "useDlgEffect"
+00716: 161  initprop "key"
+00721: 161  name "xs"
+00726: 161  getprop "Tools"
+00731: 161  getprop "String"
+00736: 161  dup
+00737: 161  callprop "createString"
+00742: 161  swap
+00743: 161  notearg
+00744: 161  string "auto_name_67"
+00749: 161  notearg
+00750: 161  call 1
+00753: 161  initprop "desc"
+00758: 161  endinit
+00759: 161  initelem_array 15
+00763: 162  newinit 1
+00768: 162  string "testLogin"
+00773: 162  initprop "key"
+00778: 162  name "xs"
+00783: 162  getprop "Tools"
+00788: 162  getprop "String"
+00793: 162  dup
+00794: 162  callprop "createString"
+00799: 162  swap
+00800: 162  notearg
+00801: 162  string "auto_name_68"
+00806: 162  notearg
+00807: 162  call 1
+00810: 162  initprop "desc"
+00815: 162  endinit
+00816: 162  initelem_array 16
+00820: 163  newinit 1
+00825: 163  string "fightSkipAlways"
+00830: 163  initprop "key"
+00835: 163  name "xs"
+00840: 163  getprop "Tools"
+00845: 163  getprop "String"
+00850: 163  dup
+00851: 163  callprop "createString"
+00856: 163  swap
+00857: 163  notearg
+00858: 163  string "auto_name_69"
+00863: 163  notearg
+00864: 163  call 1
+00867: 163  initprop "desc"
+00872: 163  endinit
+00873: 163  initelem_array 17
+00877: 164  newinit 1
+00882: 164  string "dungeonPlotAlways"
+00887: 164  initprop "key"
+00892: 164  name "xs"
+00897: 164  getprop "Tools"
+00902: 164  getprop "String"
+00907: 164  dup
+00908: 164  callprop "createString"
+00913: 164  swap
+00914: 164  notearg
+00915: 164  string "auto_name_70"
+00920: 164  notearg
+00921: 164  call 1
+00924: 164  initprop "desc"
+00929: 164  endinit
+00930: 164  initelem_array 18
+00934: 165  newinit 1
+00939: 165  string "dungeonPlot_skip"
+00944: 165  initprop "key"
+00949: 165  name "xs"
+00954: 165  getprop "Tools"
+00959: 165  getprop "String"
+00964: 165  dup
+00965: 165  callprop "createString"
+00970: 165  swap
+00971: 165  notearg
+00972: 165  string "auto_name_71"
+00977: 165  notearg
+00978: 165  call 1
+00981: 165  initprop "desc"
+00986: 165  endinit
+00987: 165  initelem_array 19
+00991: 166  newinit 1
+00996: 166  string "guideOpen"
+01001: 166  initprop "key"
+01006: 166  name "xs"
+01011: 166  getprop "Tools"
+01016: 166  getprop "String"
+01021: 166  dup
+01022: 166  callprop "createString"
+01027: 166  swap
+01028: 166  notearg
+01029: 166  string "auto_name_72"
+01034: 166  notearg
+01035: 166  call 1
+01038: 166  initprop "desc"
+01043: 166  endinit
+01044: 166  initelem_array 20
+01048: 167  newinit 1
+01053: 167  string "dog_check"
+01058: 167  initprop "key"
+01063: 167  name "xs"
+01068: 167  getprop "Tools"
+01073: 167  getprop "String"
+01078: 167  dup
+01079: 167  callprop "createString"
+01084: 167  swap
+01085: 167  notearg
+01086: 167  string "auto_name_73"
+01091: 167  notearg
+01092: 167  call 1
+01095: 167  initprop "desc"
+01100: 167  endinit
+01101: 167  initelem_array 21
+01105: 168  newinit 1
+01110: 168  string "useToken"
+01115: 168  initprop "key"
+01120: 168  name "xs"
+01125: 168  getprop "Tools"
+01130: 168  getprop "String"
+01135: 168  dup
+01136: 168  callprop "createString"
+01141: 168  swap
+01142: 168  notearg
+01143: 168  string "auto_name_74"
+01148: 168  notearg
+01149: 168  call 1
+01152: 168  initprop "desc"
+01157: 168  endinit
+01158: 168  initelem_array 22
+01162: 168  endinit
+01163: 168  initprop "cfg"
+01168: 171  lambda (function () {
+    [sourceless code]
+})
+01173: 171  initprop "ctor"
+01178: 176  lambda (function () {
+    [sourceless code]
+})
+01183: 176  initprop "init"
+01188: 193  lambda (function () {
+    [sourceless code]
+})
+01193: 193  initprop "toExtensionsMainLayer"
+01198: 198  lambda (function () {
+    [sourceless code]
+})
+01203: 198  initprop "scrollViewDidScroll"
+01208: 201  lambda (function () {
+    [sourceless code]
+})
+01213: 201  initprop "scrollViewDidZoom"
+01218: 204  lambda (function () {
+    [sourceless code]
+})
+01223: 204  initprop "tableCellTouched"
+01228: 208  lambda (function () {
+    [sourceless code]
+})
+01233: 208  initprop "tableCellSizeForIndex"
+01238: 215  lambda (function () {
+    [sourceless code]
+})
+01243: 215  initprop "tableCellAtIndex"
+01248: 229  lambda (function () {
+    [sourceless code]
+})
+01253: 229  initprop "numberOfCellsInTableView"
+01258: 233  lambda (function () {
+    [sourceless code]
+})
+01263: 233  initprop "scrollViewDidScroll"
+01268: 237  lambda (function () {
+    [sourceless code]
+})
+01273: 237  initprop "scrollViewDidZoom"
+01278: 241  lambda (function () {
+    [sourceless code]
+})
+01283: 241  initprop "tableCellTouched"
+01288: 241  endinit
+01289: 241  notearg
+01290: 241  call 1
+01293: 241  setprop "TableViewTestLayer"
+01298: 241  popv
+01299: 247  name "xs"
+01304: 247  getprop "Scene"
+01309: 247  getprop "TableViewTestLayer"
+01314: 247  lambda (function () {
+    [sourceless code]
+})
+01319: 247  setprop "create"
+01324: 247  popv
+01325: 255  name "xs"
+01330: 255  getprop "Scene"
+01335: 255  name "cc"
+01340: 255  getprop "Layer"
+01345: 255  dup
+01346: 255  callprop "extend"
+01351: 255  swap
+01352: 255  notearg
+01353: 255  newinit 1
+01358: 256  string "DebugLayer"
+01363: 256  initprop "name"
+01368: 258  lambda (function () {
+    [sourceless code]
+})
+01373: 258  initprop "ctor"
+01378: 264  lambda (function () {
+    [sourceless code]
+})
+01383: 264  initprop "init"
+01388: 264  endinit
+01389: 264  notearg
+01390: 264  call 1
+01393: 264  setprop "DebugLayer"
+01398: 264  popv
+01399: 393  name "xs"
+01404: 393  getprop "Scene"
+01409: 393  name "cc"
+01414: 393  getprop "Scene"
+01419: 393  dup
+01420: 393  callprop "extend"
+01425: 393  swap
+01426: 393  notearg
+01427: 393  newinit 1
+01432: 394  lambda (function () {
+    [sourceless code]
+})
+01437: 394  initprop "ctor"
+01442: 399  lambda (function () {
+    [sourceless code]
+})
+01447: 399  initprop "onEnter"
+01452: 399  endinit
+01453: 399  notearg
+01454: 399  call 1
+01457: 399  setprop "DebugScene"
+01462: 399  popv
+01463: 408  name "xs"
+01468: 408  getprop "Scene"
+01473: 408  getprop "DebugScene"
+01478: 408  lambda (function () {
+    [sourceless code]
+})
+01483: 408  setprop "create"
+01488: 408  popv
+01489: 413  name "xs"
+01494: 413  getprop "Scene"
+01499: 413  getprop "Mgr"
+01504: 413  dup
+01505: 413  callprop "registerScene"
+01510: 413  swap
+01511: 413  notearg
+01512: 413  string "DebugScene"
+01517: 413  notearg
+01518: 413  newinit 1
+01523: 414  name "xs"
+01528: 414  getprop "Scene"
+01533: 414  getprop "DebugScene"
+01538: 414  initprop "class"
+01543: 415  name "xs"
+01548: 415  getprop "Constant_SceneType_Main"
+01553: 415  initprop "type"
+01558: 415  endinit
+01559: 415  notearg
+01560: 415  call 2
+01563: 415  popv
+01564: 416  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "_super"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  call 0
+00012:  13  not
+00013:  13  ifeq 20 (+7)
+00018:  14  false
+00019:  14  return
+00020:  17  this
+00021:  17  null
+00022:  17  setprop "m_itemData"
+00027:  17  pop
+00028:  18  this
+00029:  18  int8 -1
+00031:  18  setprop "m_spGuideTag"
+00036:  18  pop
+00037:  20  this
+00038:  20  getprop "m_fastBtn"
+00043:  20  dup
+00044:  20  callprop "setVisible"
+00049:  20  swap
+00050:  20  notearg
+00051:  20  false
+00052:  20  notearg
+00053:  20  call 1
+00056:  20  pop
+00057:  21  this
+00058:  21  getprop "m_centerBtn"
+00063:  21  dup
+00064:  21  callprop "setString"
+00069:  21  swap
+00070:  21  notearg
+00071:  21  string "onTouch"
+00076:  21  notearg
+00077:  21  call 1
+00080:  21  pop
+00081:  22  this
+00082:  22  getprop "m_centerBtn"
+00087:  22  dup
+00088:  22  callprop "setOnClickCallBack"
+00093:  22  swap
+00094:  22  notearg
+00095:  22  this
+00096:  22  getprop "onTouchCallBack"
+00101:  22  dup
+00102:  22  callprop "bind"
+00107:  22  swap
+00108:  22  notearg
+00109:  22  this
+00110:  22  notearg
+00111:  22  call 1
+00114:  22  notearg
+00115:  22  call 1
+00118:  22  pop
+00119:  24  this
+00120:  24  zero
+00121:  24  setprop "num"
+00126:  24  pop
+00127:  25  this
+00128:  25  null
+00129:  25  setprop "par"
+00134:  25  pop
+00135:  27  true
+00136:  27  return
+00137:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:12 ---
+;; function object[1] update
+;; function metadata object[1] nargs=2 bindings=2
+;; arg[0] par
+;; arg[1] num
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  this
+00001:  31  getarg 0
+00004:  31  setprop "par"
+00009:  31  pop
+00010:  32  this
+00011:  32  getarg 1
+00014:  32  setprop "num"
+00019:  32  pop
+00020:  34  this
+00021:  34  getprop "par"
+00026:  34  getprop "cfg"
+00031:  34  this
+00032:  34  getprop "num"
+00037:  34  getelem
+00038:  34  getprop "key"
+00043:  34  string "ChannelID"
+00048:  34  eq
+00049:  34  ifeq 107 (+58)
+00054:  35  this
+00055:  35  getprop "m_descLab"
+00060:  35  dup
+00061:  35  callprop "setString"
+00066:  35  swap
+00067:  35  notearg
+00068:  35  string "ChannelID:"
+00073:  35  name "xs"
+00078:  35  getprop "Tools"
+00083:  35  getprop "Jsb"
+00088:  35  dup
+00089:  35  callprop "getChannelId"
+00094:  35  swap
+00095:  35  notearg
+00096:  35  call 0
+00099:  35  add
+00100:  35  notearg
+00101:  35  call 1
+00104:  35  pop
+00105:  36  undefined
+00106:  36  return
+00107:  38  this
+00108:  38  getprop "par"
+00113:  38  getprop "cfg"
+00118:  38  this
+00119:  38  getprop "num"
+00124:  38  getelem
+00125:  38  getprop "key"
+00130:  38  string "Cocos2d_Debug"
+00135:  38  eq
+00136:  38  ifeq 194 (+58)
+00141:  39  this
+00142:  39  getprop "m_descLab"
+00147:  39  dup
+00148:  39  callprop "setString"
+00153:  39  swap
+00154:  39  notearg
+00155:  39  string "Cocos2d_Debug:"
+00160:  39  name "xs"
+00165:  39  getprop "Tools"
+00170:  39  getprop "Jsb"
+00175:  39  dup
+00176:  39  callprop "getCocos2dDebugLevel"
+00181:  39  swap
+00182:  39  notearg
+00183:  39  call 0
+00186:  39  add
+00187:  39  notearg
+00188:  39  call 1
+00191:  39  pop
+00192:  40  undefined
+00193:  40  return
+00194:  42  this
+00195:  42  getprop "par"
+00200:  42  getprop "cfg"
+00205:  42  this
+00206:  42  getprop "num"
+00211:  42  getelem
+00212:  42  getprop "key"
+00217:  42  string "ApkInfo"
+00222:  42  eq
+00223:  42  ifeq 320 (+97)
+00228:  43  this
+00229:  43  getprop "m_descLab"
+00234:  43  dup
+00235:  43  callprop "setString"
+00240:  43  swap
+00241:  43  notearg
+00242:  44  string "VersionName:"
+00247:  44  name "xs"
+00252:  44  getprop "Tools"
+00257:  44  getprop "Jsb"
+00262:  44  dup
+00263:  44  callprop "getVersionName"
+00268:  44  swap
+00269:  44  notearg
+00270:  44  call 0
+00273:  44  add
+00274:  44  string " --- "
+00279:  44  add
+00280:  44  string "VersionCode:"
+00285:  44  add
+00286:  44  name "xs"
+00291:  44  getprop "Tools"
+00296:  44  getprop "Jsb"
+00301:  44  dup
+00302:  44  callprop "getVersionCode"
+00307:  44  swap
+00308:  44  notearg
+00309:  44  call 0
+00312:  44  add
+00313:  44  notearg
+00314:  44  call 1
+00317:  44  pop
+00318:  46  undefined
+00319:  46  return
+00320:  48  this
+00321:  48  getprop "par"
+00326:  48  getprop "cfg"
+00331:  48  this
+00332:  48  getprop "num"
+00337:  48  getelem
+00338:  48  getprop "key"
+00343:  48  string "ServerApp"
+00348:  48  eq
+00349:  48  ifeq 418 (+69)
+00354:  49  this
+00355:  49  getprop "m_descLab"
+00360:  49  dup
+00361:  49  callprop "setString"
+00366:  49  swap
+00367:  49  notearg
+00368:  50  name "xs"
+00373:  50  getprop "Tools"
+00378:  50  getprop "String"
+00383:  50  dup
+00384:  50  callprop "createString"
+00389:  50  swap
+00390:  50  notearg
+00391:  50  string "auto_name_63"
+00396:  50  notearg
+00397:  50  call 1
+00400:  50  name "xs"
+00405:  50  getprop "sinfo_game_ver"
+00410:  50  add
+00411:  50  notearg
+00412:  50  call 1
+00415:  50  pop
+00416:  52  undefined
+00417:  52  return
+00418:  55  this
+00419:  55  getprop "par"
+00424:  55  getprop "cfg"
+00429:  55  this
+00430:  55  getprop "num"
+00435:  55  getelem
+00436:  55  getprop "key"
+00441:  55  string "ServerCfg"
+00446:  55  eq
+00447:  55  ifeq 516 (+69)
+00452:  56  this
+00453:  56  getprop "m_descLab"
+00458:  56  dup
+00459:  56  callprop "setString"
+00464:  56  swap
+00465:  56  notearg
+00466:  57  name "xs"
+00471:  57  getprop "Tools"
+00476:  57  getprop "String"
+00481:  57  dup
+00482:  57  callprop "createString"
+00487:  57  swap
+00488:  57  notearg
+00489:  57  string "auto_name_64"
+00494:  57  notearg
+00495:  57  call 1
+00498:  57  name "xs"
+00503:  57  getprop "sinfo_cfg_ver"
+00508:  57  add
+00509:  57  notearg
+00510:  57  call 1
+00513:  57  pop
+00514:  59  undefined
+00515:  59  return
+00516:  62  this
+00517:  62  getprop "par"
+00522:  62  getprop "cfg"
+00527:  62  this
+00528:  62  getprop "num"
+00533:  62  getelem
+00534:  62  getprop "key"
+00539:  62  string "ServerOptCfg"
+00544:  62  eq
+00545:  62  ifeq 614 (+69)
+00550:  63  this
+00551:  63  getprop "m_descLab"
+00556:  63  dup
+00557:  63  callprop "setString"
+00562:  63  swap
+00563:  63  notearg
+00564:  64  name "xs"
+00569:  64  getprop "Tools"
+00574:  64  getprop "String"
+00579:  64  dup
+00580:  64  callprop "createString"
+00585:  64  swap
+00586:  64  notearg
+00587:  64  string "auto_name_65"
+00592:  64  notearg
+00593:  64  call 1
+00596:  64  name "xs"
+00601:  64  getprop "sinfo_optcfg_ver"
+00606:  64  add
+00607:  64  notearg
+00608:  64  call 1
+00611:  64  pop
+00612:  66  undefined
+00613:  66  return
+00614:  69  this
+00615:  69  getprop "par"
+00620:  69  getprop "cfg"
+00625:  69  this
+00626:  69  getprop "num"
+00631:  69  getelem
+00632:  69  getprop "key"
+00637:  69  string "ClientCfgVer"
+00642:  69  eq
+00643:  69  ifeq 701 (+58)
+00648:  70  this
+00649:  70  getprop "m_descLab"
+00654:  70  dup
+00655:  70  callprop "setString"
+00660:  70  swap
+00661:  70  notearg
+00662:  70  string "ClientCfgVer:"
+00667:  70  name "xs"
+00672:  70  getprop "Tools"
+00677:  70  getprop "Jsb"
+00682:  70  dup
+00683:  70  callprop "getCfgVersion"
+00688:  70  swap
+00689:  70  notearg
+00690:  70  call 0
+00693:  70  add
+00694:  70  notearg
+00695:  70  call 1
+00698:  70  pop
+00699:  71  undefined
+00700:  71  return
+00701:  74  this
+00702:  74  getprop "par"
+00707:  74  getprop "cfg"
+00712:  74  this
+00713:  74  getprop "num"
+00718:  74  getelem
+00719:  74  getprop "key"
+00724:  74  string "TKAppKey"
+00729:  74  eq
+00730:  74  ifeq 788 (+58)
+00735:  75  this
+00736:  75  getprop "m_descLab"
+00741:  75  dup
+00742:  75  callprop "setString"
+00747:  75  swap
+00748:  75  notearg
+00749:  75  string "TKAppKey:"
+00754:  75  name "xs"
+00759:  75  getprop "Tools"
+00764:  75  getprop "Jsb"
+00769:  75  dup
+00770:  75  callprop "getTKAppKey"
+00775:  75  swap
+00776:  75  notearg
+00777:  75  call 0
+00780:  75  add
+00781:  75  notearg
+00782:  75  call 1
+00785:  75  pop
+00786:  76  undefined
+00787:  76  return
+00788:  78  this
+00789:  78  getprop "par"
+00794:  78  getprop "cfg"
+00799:  78  this
+00800:  78  getprop "num"
+00805:  78  getelem
+00806:  78  getprop "key"
+00811:  78  string "app_macroStr"
+00816:  78  eq
+00817:  78  ifeq 848 (+31)
+00822:  79  this
+00823:  79  getprop "m_descLab"
+00828:  79  dup
+00829:  79  callprop "setString"
+00834:  79  swap
+00835:  79  notearg
+00836:  79  string "hong ding yi: \u70B9\u51FB\u53F3\u4FA7\u6309\u94AE"
+00841:  79  notearg
+00842:  79  call 1
+00845:  79  pop
+00846:  80  undefined
+00847:  80  return
+00848:  83  this
+00849:  83  getprop "par"
+00854:  83  getprop "cfg"
+00859:  83  this
+00860:  83  getprop "num"
+00865:  83  getelem
+00866:  83  getprop "key"
+00871:  83  string "EasySdkInfo"
+00876:  83  eq
+00877:  83  ifeq 908 (+31)
+00882:  84  this
+00883:  84  getprop "m_descLab"
+00888:  84  dup
+00889:  84  callprop "setString"
+00894:  84  swap
+00895:  84  notearg
+00896:  84  string "EasySdk info"
+00901:  84  notearg
+00902:  84  call 1
+00905:  84  pop
+00906:  87  undefined
+00907:  87  return
+00908:  90  this
+00909:  90  getprop "m_descLab"
+00914:  90  dup
+00915:  90  callprop "setString"
+00920:  90  swap
+00921:  90  notearg
+00922:  91  string "xs."
+00927:  91  this
+00928:  91  getprop "par"
+00933:  91  getprop "cfg"
+00938:  91  this
+00939:  91  getprop "num"
+00944:  91  getelem
+00945:  91  getprop "key"
+00950:  91  add
+00951:  91  string ":"
+00956:  91  add
+00957:  92  name "xs"
+00962:  92  this
+00963:  92  getprop "par"
+00968:  92  getprop "cfg"
+00973:  92  this
+00974:  92  getprop "num"
+00979:  92  getelem
+00980:  92  getprop "key"
+00985:  92  getelem
+00986:  92  add
+00987:  93  string "("
+00992:  93  add
+00993:  94  this
+00994:  94  getprop "par"
+00999:  94  getprop "cfg"
+01004:  94  this
+01005:  94  getprop "num"
+01010:  94  getelem
+01011:  94  getprop "desc"
+01016:  94  add
+01017:  95  string ")"
+01022:  95  add
+01023:  95  notearg
+01024:  95  call 1
+01027:  95  pop
+01028:  96  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:30 ---
+;; function object[2] onTouchCallBack
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:99 ---
+loc   line  op
+----- ----  --
+main:
+00000: 100  this
+00001: 100  getprop "par"
+00006: 100  getprop "cfg"
+00011: 100  this
+00012: 100  getprop "num"
+00017: 100  getelem
+00018: 100  getprop "key"
+00023: 100  string "app_macroStr"
+00028: 100  eq
+00029: 100  ifeq 131 (+102)
+00034: 101  name "xs"
+00039: 101  getprop "Views"
+00044: 101  getprop "Mgr"
+00049: 101  dup
+00050: 101  callprop "showDialogByName"
+00055: 101  swap
+00056: 101  notearg
+00057: 101  string "InstructionDialog"
+00062: 101  notearg
+00063: 101  newinit 1
+00068: 101  name "xs"
+00073: 101  getprop "JsbConnecter"
+00078: 101  dup
+00079: 101  callprop "getInstance"
+00084: 101  swap
+00085: 101  notearg
+00086: 101  call 0
+00089: 101  dup
+00090: 101  callprop "invoke"
+00095: 101  swap
+00096: 101  notearg
+00097: 101  string "Cfg"
+00102: 101  notearg
+00103: 101  string "getMacroStr"
+00108: 101  notearg
+00109: 101  string ""
+00114: 101  notearg
+00115: 101  call 3
+00118: 101  initprop "string"
+00123: 101  endinit
+00124: 101  notearg
+00125: 101  call 2
+00128: 101  pop
+00129: 102  undefined
+00130: 102  return
+00131: 105  this
+00132: 105  getprop "par"
+00137: 105  getprop "cfg"
+00142: 105  this
+00143: 105  getprop "num"
+00148: 105  getelem
+00149: 105  getprop "key"
+00154: 105  string "EasySdkInfo"
+00159: 105  eq
+00160: 105  ifeq 311 (+151)
+00165: 106  name "xs"
+00170: 106  getprop "Views"
+00175: 106  getprop "Mgr"
+00180: 106  dup
+00181: 106  callprop "showDialogByName"
+00186: 106  swap
+00187: 106  notearg
+00188: 106  string "InstructionDialog"
+00193: 106  notearg
+00194: 106  newinit 1
+00199: 107  string "  getBuildDesc: "
+00204: 107  name "xs"
+00209: 107  getprop "Tools"
+00214: 107  getprop "Jsb"
+00219: 107  getprop "EasySdk"
+00224: 107  dup
+00225: 107  callprop "callFunctionIfSupported"
+00230: 107  swap
+00231: 107  notearg
+00232: 107  string "EasySdk"
+00237: 107  notearg
+00238: 107  string "getBuildDesc"
+00243: 107  notearg
+00244: 107  call 2
+00247: 107  add
+00248: 108  string "\n  getCfgDesc: "
+00253: 108  add
+00254: 108  name "xs"
+00259: 108  getprop "Tools"
+00264: 108  getprop "Jsb"
+00269: 108  getprop "EasySdk"
+00274: 108  dup
+00275: 108  callprop "callFunctionIfSupported"
+00280: 108  swap
+00281: 108  notearg
+00282: 108  string "EasySdk"
+00287: 108  notearg
+00288: 108  string "getCfgDesc"
+00293: 108  notearg
+00294: 108  call 2
+00297: 108  add
+00298: 108  initprop "string"
+00303: 108  endinit
+00304: 108  notearg
+00305: 108  call 2
+00308: 108  pop
+00309: 110  undefined
+00310: 110  return
+00311: 113  this
+00312: 113  getprop "par"
+00317: 113  getprop "cfg"
+00322: 113  this
+00323: 113  getprop "num"
+00328: 113  getelem
+00329: 113  getprop "changeAble"
+00334: 113  false
+00335: 113  stricteq
+00336: 113  ifeq 403 (+67)
+00341: 114  name "xs"
+00346: 114  getprop "Views"
+00351: 114  getprop "Mgr"
+00356: 114  dup
+00357: 114  callprop "showToast"
+00362: 114  swap
+00363: 114  notearg
+00364: 114  name "xs"
+00369: 114  getprop "Tools"
+00374: 114  getprop "String"
+00379: 114  dup
+00380: 114  callprop "createString"
+00385: 114  swap
+00386: 114  notearg
+00387: 114  string "auto_name_66"
+00392: 114  notearg
+00393: 114  call 1
+00396: 114  notearg
+00397: 114  call 1
+00400: 114  pop
+00401: 115  undefined
+00402: 115  return
+00403: 118  name "xs"
+00408: 118  this
+00409: 118  getprop "par"
+00414: 118  getprop "cfg"
+00419: 118  this
+00420: 118  getprop "num"
+00425: 118  getelem
+00426: 118  getprop "key"
+00431: 118  name "xs"
+00436: 118  this
+00437: 118  getprop "par"
+00442: 118  getprop "cfg"
+00447: 118  this
+00448: 118  getprop "num"
+00453: 118  getelem
+00454: 118  getprop "key"
+00459: 118  getelem
+00460: 118  not
+00461: 118  setelem
+00462: 118  pop
+00463: 119  this
+00464: 119  getprop "par"
+00469: 119  getprop "cfg"
+00474: 119  this
+00475: 119  getprop "num"
+00480: 119  getelem
+00481: 119  getprop "key"
+00486: 119  string "channel"
+00491: 119  eq
+00492: 119  or 562 (+70)
+00497: 119  pop
+00498: 119  this
+00499: 119  getprop "par"
+00504: 119  getprop "cfg"
+00509: 119  this
+00510: 119  getprop "num"
+00515: 119  getelem
+00516: 119  getprop "key"
+00521: 119  string "version"
+00526: 119  eq
+00527: 119  or 562 (+35)
+00532: 119  pop
+00533: 119  this
+00534: 119  getprop "par"
+00539: 119  getprop "cfg"
+00544: 119  this
+00545: 119  getprop "num"
+00550: 119  getelem
+00551: 119  getprop "key"
+00556: 119  string "SDKChannel"
+00561: 119  eq
+00562: 119  ifeq 611 (+49)
+00567: 120  this
+00568: 120  getprop "m_descLab"
+00573: 120  dup
+00574: 120  callprop "setString"
+00579: 120  swap
+00580: 120  notearg
+00581: 120  this
+00582: 120  getprop "par"
+00587: 120  getprop "cfg"
+00592: 120  this
+00593: 120  getprop "num"
+00598: 120  getelem
+00599: 120  getprop "desc"
+00604: 120  notearg
+00605: 120  call 1
+00608: 120  pop
+00609: 121  undefined
+00610: 121  return
+00611: 126  this
+00612: 126  getprop "m_descLab"
+00617: 126  dup
+00618: 126  callprop "setString"
+00623: 126  swap
+00624: 126  notearg
+00625: 127  string "key "
+00630: 127  this
+00631: 127  getprop "par"
+00636: 127  getprop "cfg"
+00641: 127  this
+00642: 127  getprop "num"
+00647: 127  getelem
+00648: 127  getprop "key"
+00653: 127  add
+00654: 128  string " desc "
+00659: 128  add
+00660: 128  this
+00661: 128  getprop "par"
+00666: 128  getprop "cfg"
+00671: 128  this
+00672: 128  getprop "num"
+00677: 128  getelem
+00678: 128  getprop "desc"
+00683: 128  add
+00684: 129  string " value "
+00689: 129  add
+00690: 129  name "xs"
+00695: 129  this
+00696: 129  getprop "par"
+00701: 129  getprop "cfg"
+00706: 129  this
+00707: 129  getprop "num"
+00712: 129  getelem
+00713: 129  getprop "key"
+00718: 129  getelem
+00719: 129  add
+00720: 129  notearg
+00721: 129  call 1
+00724: 129  pop
+00725: 130  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:99 ---
+;; function object[3] create
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:134 ---
+loc   line  op
+----- ----  --
+main:
+00000: 135  name "xs"
+00005: 135  getprop "Views"
+00010: 135  getprop "DebugItemCell"
+00015: 135  undefined
+00016: 135  notearg
+00017: 135  new 0
+00020: 135  setlocal 0
+00023: 135  pop
+00024: 136  getlocal 0
+00027: 136  and 47 (+20)
+00032: 136  pop
+00033: 136  getlocal 0
+00036: 136  dup
+00037: 136  callprop "init"
+00042: 136  swap
+00043: 136  notearg
+00044: 136  call 0
+00047: 136  ifeq 56 (+9)
+00052: 137  getlocal 0
+00055: 137  return
+00056: 140  null
+00057: 140  return
+00058: 140  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:134 ---
+;; function object[4] ctor
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:171 ---
+loc   line  op
+----- ----  --
+main:
+00000: 172  this
+00001: 172  dup
+00002: 172  callprop "_super"
+00007: 172  swap
+00008: 172  notearg
+00009: 172  call 0
+00012: 172  pop
+00013: 173  name "cc"
+00018: 173  dup
+00019: 173  callprop "associateWithNative"
+00024: 173  swap
+00025: 173  notearg
+00026: 173  this
+00027: 173  notearg
+00028: 173  name "cc"
+00033: 173  getprop "Layer"
+00038: 173  notearg
+00039: 173  call 2
+00042: 173  pop
+00043: 173  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:171 ---
+;; function object[5] init
+;; function metadata object[5] nargs=0 bindings=2
+;; local[0] winSize
+;; local[1] tableView
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:176 ---
+loc   line  op
+----- ----  --
+main:
+00000: 177  this
+00001: 177  dup
+00002: 177  callprop "_super"
+00007: 177  swap
+00008: 177  notearg
+00009: 177  call 0
+00012: 177  pop
+00013: 179  name "xs"
+00018: 179  getprop "director"
+00023: 179  dup
+00024: 179  callprop "getVisibleSize"
+00029: 179  swap
+00030: 179  notearg
+00031: 179  call 0
+00034: 179  setlocal 0
+00037: 179  pop
+00038: 182  name "cc"
+00043: 182  getprop "TableView"
+00048: 182  dup
+00049: 182  callprop "create"
+00054: 182  swap
+00055: 182  notearg
+00056: 182  this
+00057: 182  notearg
+00058: 182  name "cc"
+00063: 182  dup
+00064: 182  callprop "size"
+00069: 182  swap
+00070: 182  notearg
+00071: 182  getlocal 0
+00074: 182  getprop "width"
+00079: 182  double 0.9
+00084: 182  mul
+00085: 182  notearg
+00086: 182  getlocal 0
+00089: 182  getprop "height"
+00094: 182  double 0.7
+00099: 182  mul
+00100: 182  notearg
+00101: 182  call 2
+00104: 182  notearg
+00105: 182  call 2
+00108: 182  setlocal 1
+00111: 182  pop
+00112: 183  getlocal 1
+00115: 183  dup
+00116: 183  callprop "setDirection"
+00121: 183  swap
+00122: 183  notearg
+00123: 183  name "cc"
+00128: 183  getprop "SCROLLVIEW_DIRECTION_VERTICAL"
+00133: 183  notearg
+00134: 183  call 1
+00137: 183  pop
+00138: 184  getlocal 1
+00141: 184  dup
+00142: 184  callprop "setPosition"
+00147: 184  swap
+00148: 184  notearg
+00149: 184  name "cc"
+00154: 184  dup
+00155: 184  callprop "p"
+00160: 184  swap
+00161: 184  notearg
+00162: 184  getlocal 0
+00165: 184  getprop "width"
+00170: 184  double 0.1
+00175: 184  mul
+00176: 184  notearg
+00177: 184  getlocal 0
+00180: 184  getprop "height"
+00185: 184  double 0.1
+00190: 184  mul
+00191: 184  notearg
+00192: 184  call 2
+00195: 184  notearg
+00196: 184  call 1
+00199: 184  pop
+00200: 185  getlocal 1
+00203: 185  dup
+00204: 185  callprop "setDelegate"
+00209: 185  swap
+00210: 185  notearg
+00211: 185  this
+00212: 185  notearg
+00213: 185  call 1
+00216: 185  pop
+00217: 186  getlocal 1
+00220: 186  dup
+00221: 186  callprop "setVerticalFillOrder"
+00226: 186  swap
+00227: 186  notearg
+00228: 186  name "cc"
+00233: 186  getprop "TABLEVIEW_FILL_TOPDOWN"
+00238: 186  notearg
+00239: 186  call 1
+00242: 186  pop
+00243: 187  this
+00244: 187  dup
+00245: 187  callprop "addChild"
+00250: 187  swap
+00251: 187  notearg
+00252: 187  getlocal 1
+00255: 187  notearg
+00256: 187  call 1
+00259: 187  pop
+00260: 188  getlocal 1
+00263: 188  dup
+00264: 188  callprop "reloadData"
+00269: 188  swap
+00270: 188  notearg
+00271: 188  call 0
+00274: 188  pop
+00275: 190  true
+00276: 190  return
+00277: 190  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:176 ---
+;; function object[6] toExtensionsMainLayer
+;; function metadata object[6] nargs=1 bindings=2
+;; arg[0] sender
+;; local[0] scene
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:193 ---
+loc   line  op
+----- ----  --
+main:
+00000: 194  name "ExtensionsTestScene"
+00005: 194  undefined
+00006: 194  notearg
+00007: 194  new 0
+00010: 194  setlocal 0
+00013: 194  pop
+00014: 195  getlocal 0
+00017: 195  dup
+00018: 195  callprop "runThisTest"
+00023: 195  swap
+00024: 195  notearg
+00025: 195  call 0
+00028: 195  pop
+00029: 195  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:193 ---
+;; function object[7] scrollViewDidScroll
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:198 ---
+loc   line  op
+----- ----  --
+main:
+00000: 198  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:198 ---
+;; function object[8] scrollViewDidZoom
+;; function metadata object[8] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:201 ---
+loc   line  op
+----- ----  --
+main:
+00000: 201  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:201 ---
+;; function object[9] tableCellTouched
+;; function metadata object[9] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:204 ---
+loc   line  op
+----- ----  --
+main:
+00000: 204  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:204 ---
+;; function object[10] tableCellSizeForIndex
+;; function metadata object[10] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:208 ---
+loc   line  op
+----- ----  --
+main:
+00000: 209  name "cc"
+00005: 209  dup
+00006: 209  callprop "size"
+00011: 209  swap
+00012: 209  notearg
+00013: 209  uint16 860
+00016: 209  notearg
+00017: 209  int8 120
+00019: 209  notearg
+00020: 209  call 2
+00023: 209  return
+00024: 209  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:208 ---
+;; function object[11] tableCellAtIndex
+;; function metadata object[11] nargs=2 bindings=3
+;; arg[0] table
+;; arg[1] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:215 ---
+loc   line  op
+----- ----  --
+main:
+00000: 216  name "cc"
+00005: 216  dup
+00006: 216  callprop "log"
+00011: 216  swap
+00012: 216  notearg
+00013: 216  getarg 1
+00016: 216  string "-----"
+00021: 216  add
+00022: 216  notearg
+00023: 216  call 1
+00026: 216  pop
+00027: 218  getarg 0
+00030: 218  dup
+00031: 218  callprop "dequeueCell"
+00036: 218  swap
+00037: 218  notearg
+00038: 218  call 0
+00041: 218  setlocal 0
+00044: 218  pop
+00045: 219  getlocal 0
+00048: 219  not
+00049: 219  ifeq 84 (+35)
+00054: 220  name "xs"
+00059: 220  getprop "Views"
+00064: 220  getprop "DebugItemCell"
+00069: 220  dup
+00070: 220  callprop "create"
+00075: 220  swap
+00076: 220  notearg
+00077: 220  call 0
+00080: 220  setlocal 0
+00083: 220  pop
+00084: 223  getlocal 0
+00087: 223  dup
+00088: 223  callprop "update"
+00093: 223  swap
+00094: 223  notearg
+00095: 223  this
+00096: 223  notearg
+00097: 223  getarg 1
+00100: 223  notearg
+00101: 223  call 2
+00104: 223  pop
+00105: 226  getlocal 0
+00108: 226  return
+00109: 226  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:215 ---
+;; function object[12] numberOfCellsInTableView
+;; function metadata object[12] nargs=1 bindings=1
+;; arg[0] table
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:229 ---
+loc   line  op
+----- ----  --
+main:
+00000: 230  this
+00001: 230  getprop "cfg"
+00006: 230  length "length"
+00011: 230  return
+00012: 230  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:229 ---
+;; function object[13] scrollViewDidScroll
+;; function metadata object[13] nargs=1 bindings=1
+;; arg[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:233 ---
+loc   line  op
+----- ----  --
+main:
+00000: 233  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:233 ---
+;; function object[14] scrollViewDidZoom
+;; function metadata object[14] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:237 ---
+loc   line  op
+----- ----  --
+main:
+00000: 238  name "xs"
+00005: 238  getprop "Views"
+00010: 238  getprop "Mgr"
+00015: 238  dup
+00016: 238  callprop "showToast"
+00021: 238  swap
+00022: 238  notearg
+00023: 238  string "scrollViewDidZoom"
+00028: 238  notearg
+00029: 238  call 1
+00032: 238  pop
+00033: 238  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:237 ---
+;; function object[15] tableCellTouched
+;; function metadata object[15] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:241 ---
+loc   line  op
+----- ----  --
+main:
+00000: 242  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:241 ---
+;; function object[16] create
+;; function metadata object[16] nargs=0 bindings=1
+;; local[0] retObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:247 ---
+loc   line  op
+----- ----  --
+main:
+00000: 248  name "xs"
+00005: 248  getprop "Scene"
+00010: 248  getprop "TableViewTestLayer"
+00015: 248  undefined
+00016: 248  notearg
+00017: 248  new 0
+00020: 248  setlocal 0
+00023: 248  pop
+00024: 249  getlocal 0
+00027: 249  and 47 (+20)
+00032: 249  pop
+00033: 249  getlocal 0
+00036: 249  dup
+00037: 249  callprop "init"
+00042: 249  swap
+00043: 249  notearg
+00044: 249  call 0
+00047: 249  ifeq 56 (+9)
+00052: 250  getlocal 0
+00055: 250  return
+00056: 252  null
+00057: 252  return
+00058: 252  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:247 ---
+;; function object[17] ctor
+;; function metadata object[17] nargs=0 bindings=1
+;; local[0] conList
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:258 ---
+loc   line  op
+----- ----  --
+main:
+00000: 259  this
+00001: 259  dup
+00002: 259  callprop "_super"
+00007: 259  swap
+00008: 259  notearg
+00009: 259  call 0
+00012: 259  pop
+00013: 260  name "cc"
+00018: 260  dup
+00019: 260  callprop "associateWithNative"
+00024: 260  swap
+00025: 260  notearg
+00026: 260  this
+00027: 260  notearg
+00028: 260  name "xs"
+00033: 260  getprop "Scene"
+00038: 260  getprop "BaseTestCaseLayer"
+00043: 260  notearg
+00044: 260  call 2
+00047: 260  pop
+00048: 261  newarray 2
+00052: 261  name "xs"
+00057: 261  getprop "m_release"
+00062: 261  initelem_array 0
+00066: 261  name "xs"
+00071: 261  getprop "m_loadTest"
+00076: 261  initelem_array 1
+00080: 261  endinit
+00081: 261  setlocal 0
+00084: 261  pop
+00085: 261  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:258 ---
+;; function object[18] init
+;; function metadata object[18] nargs=0 bindings=6
+;; local[0] winSize
+;; local[1] layer
+;; local[2] _btnBack
+;; local[3] m_defaultSize
+;; local[4] bgsprite
+;; local[5] _btnBack2
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=401 object[0]
+;; FUNCTION-MAP kind=lambda offset=633 object[1]
+;; FUNCTION-MAP kind=lambda offset=1471 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:264 ---
+loc   line  op
+----- ----  --
+main:
+00000: 265  this
+00001: 265  dup
+00002: 265  callprop "_super"
+00007: 265  swap
+00008: 265  notearg
+00009: 265  call 0
+00012: 265  pop
+00013: 266  this
+00014: 266  null
+00015: 266  setprop "_productId"
+00020: 266  pop
+00021: 267  name "xs"
+00026: 267  getprop "director"
+00031: 267  dup
+00032: 267  callprop "getVisibleSize"
+00037: 267  swap
+00038: 267  notearg
+00039: 267  call 0
+00042: 267  setlocal 0
+00045: 267  pop
+00046: 268  name "xs"
+00051: 268  getprop "Tools"
+00056: 268  getprop "UI"
+00061: 268  dup
+00062: 268  callprop "addCommonBg"
+00067: 268  swap
+00068: 268  notearg
+00069: 268  this
+00070: 268  notearg
+00071: 268  true
+00072: 268  notearg
+00073: 268  true
+00074: 268  notearg
+00075: 268  call 3
+00078: 268  pop
+00079: 270  name "xs"
+00084: 270  getprop "Scene"
+00089: 270  getprop "TableViewTestLayer"
+00094: 270  dup
+00095: 270  callprop "create"
+00100: 270  swap
+00101: 270  notearg
+00102: 270  call 0
+00105: 270  setlocal 1
+00108: 270  pop
+00109: 271  this
+00110: 271  dup
+00111: 271  callprop "addChild"
+00116: 271  swap
+00117: 271  notearg
+00118: 271  getlocal 1
+00121: 271  notearg
+00122: 271  int8 4
+00124: 271  notearg
+00125: 271  call 2
+00128: 271  pop
+00129: 272  getlocal 1
+00132: 272  dup
+00133: 272  callprop "setPosition"
+00138: 272  swap
+00139: 272  notearg
+00140: 272  name "cc"
+00145: 272  dup
+00146: 272  callprop "p"
+00151: 272  swap
+00152: 272  notearg
+00153: 272  zero
+00154: 272  notearg
+00155: 272  zero
+00156: 272  notearg
+00157: 272  call 2
+00160: 272  notearg
+00161: 272  call 1
+00164: 272  pop
+00165: 273  getlocal 1
+00168: 273  dup
+00169: 273  callprop "setAnchorPoint"
+00174: 273  swap
+00175: 273  notearg
+00176: 273  name "cc"
+00181: 273  dup
+00182: 273  callprop "p"
+00187: 273  swap
+00188: 273  notearg
+00189: 273  zero
+00190: 273  notearg
+00191: 273  zero
+00192: 273  notearg
+00193: 273  call 2
+00196: 273  notearg
+00197: 273  call 1
+00200: 273  pop
+00201: 276  name "xs"
+00206: 276  getprop "Views"
+00211: 276  getprop "Btn"
+00216: 276  dup
+00217: 276  callprop "create"
+00222: 276  swap
+00223: 276  notearg
+00224: 276  string "Default"
+00229: 276  notearg
+00230: 276  call 1
+00233: 276  setlocal 2
+00236: 276  pop
+00237: 277  getlocal 2
+00240: 277  dup
+00241: 277  callprop "setEffectMap"
+00246: 277  swap
+00247: 277  notearg
+00248: 278  name "xs"
+00253: 278  getprop "Constant_NodeEffectEvent_Disappear"
+00258: 278  notearg
+00259: 279  name "xs"
+00264: 279  getprop "Constant_NodeEffectType_Hide"
+00269: 279  notearg
+00270: 279  call 2
+00273: 279  pop
+00274: 281  getlocal 2
+00277: 281  dup
+00278: 281  callprop "setString"
+00283: 281  swap
+00284: 281  notearg
+00285: 281  name "xs"
+00290: 281  getprop "Tools"
+00295: 281  getprop "String"
+00300: 281  dup
+00301: 281  callprop "createString"
+00306: 281  swap
+00307: 281  notearg
+00308: 281  string "auto_name_75"
+00313: 281  notearg
+00314: 281  call 1
+00317: 281  notearg
+00318: 281  int8 30
+00320: 281  notearg
+00321: 281  call 2
+00324: 281  pop
+00325: 282  getlocal 2
+00328: 282  dup
+00329: 282  callprop "setButtonSize"
+00334: 282  swap
+00335: 282  notearg
+00336: 282  name "cc"
+00341: 282  dup
+00342: 282  callprop "size"
+00347: 282  swap
+00348: 282  notearg
+00349: 282  uint16 220
+00352: 282  notearg
+00353: 282  int8 50
+00355: 282  notearg
+00356: 282  call 2
+00359: 282  notearg
+00360: 282  call 1
+00363: 282  pop
+00364: 283  getlocal 2
+00367: 283  dup
+00368: 283  callprop "setAnchorPoint"
+00373: 283  swap
+00374: 283  notearg
+00375: 283  name "xs"
+00380: 283  getprop "ap_rb"
+00385: 283  notearg
+00386: 283  call 1
+00389: 283  pop
+00390: 284  getlocal 2
+00393: 284  dup
+00394: 284  callprop "setOnClickCallBack"
+00399: 284  swap
+00400: 284  notearg
+00401: 285  lambda (function () {
+    [sourceless code]
+})
+00406: 285  dup
+00407: 285  callprop "bind"
+00412: 285  swap
+00413: 285  notearg
+00414: 295  this
+00415: 295  notearg
+00416: 295  call 1
+00419: 295  notearg
+00420: 295  call 1
+00423: 295  pop
+00424: 298  name "xs"
+00429: 298  getprop "Utils"
+00434: 298  getprop "Node"
+00439: 298  dup
+00440: 298  callprop "attachNodes"
+00445: 298  swap
+00446: 298  notearg
+00447: 298  this
+00448: 298  notearg
+00449: 298  getlocal 2
+00452: 298  notearg
+00453: 298  newinit 1
+00458: 299  string "rb"
+00463: 299  initprop "desc"
+00468: 300  true
+00469: 300  initprop "sc"
+00474: 300  endinit
+00475: 300  notearg
+00476: 301  newinit 1
+00481: 301  int8 121
+00483: 301  initprop "tag"
+00488: 301  int8 10
+00490: 301  initprop "zOrder"
+00495: 301  endinit
+00496: 301  notearg
+00497: 301  call 4
+00500: 301  pop
+00501: 306  name "xs"
+00506: 306  getprop "Views"
+00511: 306  getprop "Btn"
+00516: 306  dup
+00517: 306  callprop "create"
+00522: 306  swap
+00523: 306  notearg
+00524: 306  string "Btn_btn1"
+00529: 306  notearg
+00530: 306  call 1
+00533: 306  setlocal 2
+00536: 306  pop
+00537: 307  getlocal 2
+00540: 307  dup
+00541: 307  callprop "setEffectMap"
+00546: 307  swap
+00547: 307  notearg
+00548: 308  name "xs"
+00553: 308  getprop "Constant_NodeEffectEvent_Disappear"
+00558: 308  notearg
+00559: 309  name "xs"
+00564: 309  getprop "Constant_NodeEffectType_Hide"
+00569: 309  notearg
+00570: 309  call 2
+00573: 309  pop
+00574: 311  getlocal 2
+00577: 311  dup
+00578: 311  callprop "setString"
+00583: 311  swap
+00584: 311  notearg
+00585: 311  name "xs"
+00590: 311  getprop "Tools"
+00595: 311  getprop "String"
+00600: 311  dup
+00601: 311  callprop "createString"
+00606: 311  swap
+00607: 311  notearg
+00608: 311  string "auto_name_76"
+00613: 311  notearg
+00614: 311  call 1
+00617: 311  notearg
+00618: 311  call 1
+00621: 311  pop
+00622: 312  getlocal 2
+00625: 312  dup
+00626: 312  callprop "setOnClickCallBack"
+00631: 312  swap
+00632: 312  notearg
+00633: 313  lambda (function () {
+    [sourceless code]
+})
+00638: 313  dup
+00639: 313  callprop "bind"
+00644: 313  swap
+00645: 313  notearg
+00646: 320  this
+00647: 320  notearg
+00648: 320  call 1
+00651: 320  notearg
+00652: 320  call 1
+00655: 320  pop
+00656: 323  name "xs"
+00661: 323  getprop "Utils"
+00666: 323  getprop "Node"
+00671: 323  dup
+00672: 323  callprop "attachNodes"
+00677: 323  swap
+00678: 323  notearg
+00679: 323  this
+00680: 323  notearg
+00681: 323  getlocal 2
+00684: 323  notearg
+00685: 323  newinit 1
+00690: 324  string "c"
+00695: 324  initprop "desc"
+00700: 325  name "cc"
+00705: 325  dup
+00706: 325  callprop "p"
+00711: 325  swap
+00712: 325  notearg
+00713: 325  int8 100
+00715: 325  notearg
+00716: 325  uint16 265
+00719: 325  notearg
+00720: 325  call 2
+00723: 325  initprop "offset"
+00728: 326  true
+00729: 326  initprop "sc"
+00734: 326  endinit
+00735: 326  notearg
+00736: 327  newinit 1
+00741: 327  int8 122
+00743: 327  initprop "tag"
+00748: 327  int8 10
+00750: 327  initprop "zOrder"
+00755: 327  endinit
+00756: 327  notearg
+00757: 327  call 4
+00760: 327  pop
+00761: 331  name "cc"
+00766: 331  dup
+00767: 331  callprop "size"
+00772: 331  swap
+00773: 331  notearg
+00774: 331  uint16 470
+00777: 331  notearg
+00778: 331  int8 45
+00780: 331  notearg
+00781: 331  call 2
+00784: 331  setlocal 3
+00787: 331  pop
+00788: 332  name "cc"
+00793: 332  getprop "Scale9Sprite"
+00798: 332  dup
+00799: 332  callprop "createWithSpriteFrameName"
+00804: 332  swap
+00805: 332  notearg
+00806: 332  name "xs"
+00811: 332  getprop "Cfg"
+00816: 332  getprop "Sprite"
+00821: 332  getprop "Cmn01"
+00826: 332  getprop "popView_contentBg02"
+00831: 332  getprop "frameName"
+00836: 332  notearg
+00837: 332  call 1
+00840: 332  setlocal 4
+00843: 332  pop
+00844: 333  getlocal 4
+00847: 333  dup
+00848: 333  callprop "setContentSize"
+00853: 333  swap
+00854: 333  notearg
+00855: 333  getlocal 3
+00858: 333  notearg
+00859: 333  call 1
+00862: 333  pop
+00863: 336  this
+00864: 336  name "cc"
+00869: 336  getprop "EditBox"
+00874: 336  dup
+00875: 336  callprop "create"
+00880: 336  swap
+00881: 336  notearg
+00882: 336  getlocal 3
+00885: 336  notearg
+00886: 336  getlocal 4
+00889: 336  notearg
+00890: 336  call 2
+00893: 336  setprop "m_EditBox_Account"
+00898: 336  pop
+00899: 337  this
+00900: 337  getprop "m_EditBox_Account"
+00905: 337  dup
+00906: 337  callprop "setAnchorPoint"
+00911: 337  swap
+00912: 337  notearg
+00913: 337  name "cc"
+00918: 337  dup
+00919: 337  callprop "p"
+00924: 337  swap
+00925: 337  notearg
+00926: 337  zero
+00927: 337  notearg
+00928: 337  zero
+00929: 337  notearg
+00930: 337  call 2
+00933: 337  notearg
+00934: 337  call 1
+00937: 337  pop
+00938: 338  this
+00939: 338  getprop "m_EditBox_Account"
+00944: 338  dup
+00945: 338  callprop "setZOrder"
+00950: 338  swap
+00951: 338  notearg
+00952: 338  zero
+00953: 338  notearg
+00954: 338  call 1
+00957: 338  pop
+00958: 340  this
+00959: 340  getprop "m_EditBox_Account"
+00964: 340  dup
+00965: 340  callprop "setPlaceholderFontColor"
+00970: 340  swap
+00971: 340  notearg
+00972: 340  name "cc"
+00977: 340  dup
+00978: 340  callprop "c3b"
+00983: 340  swap
+00984: 340  notearg
+00985: 340  uint16 255
+00988: 340  notearg
+00989: 340  uint16 255
+00992: 340  notearg
+00993: 340  uint16 255
+00996: 340  notearg
+00997: 340  call 3
+01000: 340  notearg
+01001: 340  call 1
+01004: 340  pop
+01005: 341  this
+01006: 341  getprop "m_EditBox_Account"
+01011: 341  dup
+01012: 341  callprop "setFontColor"
+01017: 341  swap
+01018: 341  notearg
+01019: 341  name "cc"
+01024: 341  dup
+01025: 341  callprop "c3b"
+01030: 341  swap
+01031: 341  notearg
+01032: 341  uint16 255
+01035: 341  notearg
+01036: 341  uint16 255
+01039: 341  notearg
+01040: 341  uint16 255
+01043: 341  notearg
+01044: 341  call 3
+01047: 341  notearg
+01048: 341  call 1
+01051: 341  pop
+01052: 342  this
+01053: 342  getprop "m_EditBox_Account"
+01058: 342  dup
+01059: 342  callprop "setPlaceholderFontSize"
+01064: 342  swap
+01065: 342  notearg
+01066: 342  int8 22
+01068: 342  notearg
+01069: 342  call 1
+01072: 342  pop
+01073: 343  this
+01074: 343  getprop "m_EditBox_Account"
+01079: 343  dup
+01080: 343  callprop "setFont"
+01085: 343  swap
+01086: 343  notearg
+01087: 343  string ""
+01092: 343  notearg
+01093: 343  int8 22
+01095: 343  notearg
+01096: 343  call 2
+01099: 343  pop
+01100: 344  this
+01101: 344  getprop "m_EditBox_Account"
+01106: 344  dup
+01107: 344  callprop "setPlaceHolder"
+01112: 344  swap
+01113: 344  notearg
+01114: 344  name "xs"
+01119: 344  getprop "Tools"
+01124: 344  getprop "String"
+01129: 344  dup
+01130: 344  callprop "createString"
+01135: 344  swap
+01136: 344  notearg
+01137: 344  string "auto_name_78"
+01142: 344  notearg
+01143: 344  call 1
+01146: 344  notearg
+01147: 344  call 1
+01150: 344  pop
+01151: 345  this
+01152: 345  getprop "m_EditBox_Account"
+01157: 345  dup
+01158: 345  callprop "setInputMode"
+01163: 345  swap
+01164: 345  notearg
+01165: 345  name "cc"
+01170: 345  getprop "EDITBOX_INPUT_MODE_SINGLELINE"
+01175: 345  notearg
+01176: 345  call 1
+01179: 345  pop
+01180: 346  this
+01181: 346  getprop "m_EditBox_Account"
+01186: 346  dup
+01187: 346  callprop "setInputFlag"
+01192: 346  swap
+01193: 346  notearg
+01194: 346  name "cc"
+01199: 346  getprop "EDITBOX_INPUT_FLAG_SENSITIVE"
+01204: 346  notearg
+01205: 346  call 1
+01208: 346  pop
+01209: 347  this
+01210: 347  getprop "m_EditBox_Account"
+01215: 347  dup
+01216: 347  callprop "setReturnType"
+01221: 347  swap
+01222: 347  notearg
+01223: 347  name "cc"
+01228: 347  getprop "KEYBOARD_RETURNTYPE_DONE"
+01233: 347  notearg
+01234: 347  call 1
+01237: 347  pop
+01238: 348  this
+01239: 348  getprop "m_EditBox_Account"
+01244: 348  dup
+01245: 348  callprop "setDelegate"
+01250: 348  swap
+01251: 348  notearg
+01252: 348  this
+01253: 348  notearg
+01254: 348  call 1
+01257: 348  pop
+01258: 349  this
+01259: 349  getprop "m_EditBox_Account"
+01264: 349  dup
+01265: 349  callprop "setText"
+01270: 349  swap
+01271: 349  notearg
+01272: 349  string ""
+01277: 349  notearg
+01278: 349  call 1
+01281: 349  pop
+01282: 350  name "xs"
+01287: 350  getprop "Utils"
+01292: 350  getprop "Node"
+01297: 350  dup
+01298: 350  callprop "attachNodes"
+01303: 350  swap
+01304: 350  notearg
+01305: 350  this
+01306: 350  notearg
+01307: 351  this
+01308: 351  getprop "m_EditBox_Account"
+01313: 351  notearg
+01314: 351  newinit 1
+01319: 352  string "c"
+01324: 352  initprop "desc"
+01329: 353  name "cc"
+01334: 353  dup
+01335: 353  callprop "p"
+01340: 353  swap
+01341: 353  notearg
+01342: 353  int32 -450
+01347: 353  notearg
+01348: 353  uint16 243
+01351: 353  notearg
+01352: 353  call 2
+01355: 353  initprop "offset"
+01360: 353  endinit
+01361: 353  notearg
+01362: 353  call 3
+01365: 353  pop
+01366: 359  name "xs"
+01371: 359  getprop "Views"
+01376: 359  getprop "Btn"
+01381: 359  dup
+01382: 359  callprop "create"
+01387: 359  swap
+01388: 359  notearg
+01389: 359  string "Btn_btn1"
+01394: 359  notearg
+01395: 359  call 1
+01398: 359  setlocal 5
+01401: 359  pop
+01402: 360  getlocal 5
+01405: 360  dup
+01406: 360  callprop "setEffectMap"
+01411: 360  swap
+01412: 360  notearg
+01413: 361  name "xs"
+01418: 361  getprop "Constant_NodeEffectEvent_Disappear"
+01423: 361  notearg
+01424: 362  name "xs"
+01429: 362  getprop "Constant_NodeEffectType_Hide"
+01434: 362  notearg
+01435: 362  call 2
+01438: 362  pop
+01439: 364  getlocal 5
+01442: 364  dup
+01443: 364  callprop "setString"
+01448: 364  swap
+01449: 364  notearg
+01450: 364  string "account_uid"
+01455: 364  notearg
+01456: 364  call 1
+01459: 364  pop
+01460: 365  getlocal 5
+01463: 365  dup
+01464: 365  callprop "setOnClickCallBack"
+01469: 365  swap
+01470: 365  notearg
+01471: 366  lambda (function () {
+    [sourceless code]
+})
+01476: 366  dup
+01477: 366  callprop "bind"
+01482: 366  swap
+01483: 366  notearg
+01484: 378  this
+01485: 378  notearg
+01486: 378  call 1
+01489: 378  notearg
+01490: 378  call 1
+01493: 378  pop
+01494: 381  name "xs"
+01499: 381  getprop "Utils"
+01504: 381  getprop "Node"
+01509: 381  dup
+01510: 381  callprop "attachNodes"
+01515: 381  swap
+01516: 381  notearg
+01517: 381  this
+01518: 381  notearg
+01519: 381  getlocal 5
+01522: 381  notearg
+01523: 381  newinit 1
+01528: 382  string "c"
+01533: 382  initprop "desc"
+01538: 383  name "cc"
+01543: 383  dup
+01544: 383  callprop "p"
+01549: 383  swap
+01550: 383  notearg
+01551: 383  uint16 300
+01554: 383  notearg
+01555: 383  uint16 265
+01558: 383  notearg
+01559: 383  call 2
+01562: 383  initprop "offset"
+01567: 384  true
+01568: 384  initprop "sc"
+01573: 384  endinit
+01574: 384  notearg
+01575: 385  newinit 1
+01580: 385  int8 122
+01582: 385  initprop "tag"
+01587: 385  int8 10
+01589: 385  initprop "zOrder"
+01594: 385  endinit
+01595: 385  notearg
+01596: 385  call 4
+01599: 385  pop
+01600: 388  true
+01601: 388  return
+01602: 388  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:264 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+;; FUNCTION-MAP kind=lambda offset=20 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:285 ---
+loc   line  op
+----- ----  --
+main:
+00000: 287  this
+00001: 287  dup
+00002: 287  callprop "runEffectAction"
+00007: 287  swap
+00008: 287  notearg
+00009: 288  name "xs"
+00014: 288  getprop "Constant_NodeEffectEvent_Disappear"
+00019: 288  notearg
+00020: 289  lambda (function () {
+    [sourceless code]
+})
+00025: 289  notearg
+00026: 289  call 2
+00029: 289  pop
+00030: 292  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:285 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:289 ---
+loc   line  op
+----- ----  --
+main:
+00000: 290  name "xs"
+00005: 290  getprop "Scene"
+00010: 290  getprop "Mgr"
+00015: 290  dup
+00016: 290  callprop "gotoLastSceneSafe"
+00021: 290  swap
+00022: 290  notearg
+00023: 290  call 0
+00026: 290  pop
+00027: 290  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:289 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:313 ---
+loc   line  op
+----- ----  --
+main:
+00000: 314  this
+00001: 314  getprop "m_EditBox_Account"
+00006: 314  dup
+00007: 314  callprop "getText"
+00012: 314  swap
+00013: 314  notearg
+00014: 314  call 0
+00017: 314  ifeq 151 (+134)
+00022: 316  name "xs"
+00027: 316  getprop "Profile"
+00032: 316  getprop "UserCfg"
+00037: 316  dup
+00038: 316  callprop "setProductIdSql"
+00043: 316  swap
+00044: 316  notearg
+00045: 316  this
+00046: 316  getprop "m_EditBox_Account"
+00051: 316  dup
+00052: 316  callprop "getText"
+00057: 316  swap
+00058: 316  notearg
+00059: 316  call 0
+00062: 316  notearg
+00063: 316  call 1
+00066: 316  pop
+00067: 317  name "xs"
+00072: 317  getprop "Views"
+00077: 317  getprop "Mgr"
+00082: 317  dup
+00083: 317  callprop "showToast"
+00088: 317  swap
+00089: 317  notearg
+00090: 317  name "xs"
+00095: 317  getprop "Tools"
+00100: 317  getprop "String"
+00105: 317  dup
+00106: 317  callprop "createString"
+00111: 317  swap
+00112: 317  notearg
+00113: 317  string "auto_name_77"
+00118: 317  notearg
+00119: 317  call 1
+00122: 317  this
+00123: 317  getprop "m_EditBox_Account"
+00128: 317  dup
+00129: 317  callprop "getText"
+00134: 317  swap
+00135: 317  notearg
+00136: 317  call 0
+00139: 317  add
+00140: 317  string "!"
+00145: 317  add
+00146: 317  notearg
+00147: 317  call 1
+00150: 317  pop
+00151: 319  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:313 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] _text
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:366 ---
+loc   line  op
+----- ----  --
+main:
+00000: 367  this
+00001: 367  getprop "m_EditBox_Account"
+00006: 367  dup
+00007: 367  callprop "getText"
+00012: 367  swap
+00013: 367  notearg
+00014: 367  call 0
+00017: 367  ifeq 156 (+139)
+00022: 369  this
+00023: 369  getprop "m_EditBox_Account"
+00028: 369  dup
+00029: 369  callprop "getText"
+00034: 369  swap
+00035: 369  notearg
+00036: 369  call 0
+00039: 369  setlocal 0
+00042: 369  pop
+00043: 370  getlocal 0
+00046: 370  int8 -1
+00048: 370  eq
+00049: 370  ifeq 63 (+14)
+00054: 371  string ""
+00059: 371  setlocal 0
+00062: 371  pop
+00063: 373  name "xs"
+00068: 373  getprop "Profile"
+00073: 373  getprop "UserCfg"
+00078: 373  dup
+00079: 373  callprop "setDebugAccountUid"
+00084: 373  swap
+00085: 373  notearg
+00086: 373  getlocal 0
+00089: 373  notearg
+00090: 373  call 1
+00093: 373  pop
+00094: 374  name "xs"
+00099: 374  getprop "Views"
+00104: 374  getprop "Mgr"
+00109: 374  dup
+00110: 374  callprop "showToast"
+00115: 374  swap
+00116: 374  notearg
+00117: 374  string "account_uid\u8BBE\u7F6E\u4E3A:"
+00122: 374  this
+00123: 374  getprop "m_EditBox_Account"
+00128: 374  dup
+00129: 374  callprop "getText"
+00134: 374  swap
+00135: 374  notearg
+00136: 374  call 0
+00139: 374  add
+00140: 374  string "!"
+00145: 374  add
+00146: 374  notearg
+00147: 374  call 1
+00150: 374  pop
+00151: 374  goto 189 (+38)
+00156: 376  name "xs"
+00161: 376  getprop "Views"
+00166: 376  getprop "Mgr"
+00171: 376  dup
+00172: 376  callprop "showToast"
+00177: 376  swap
+00178: 376  notearg
+00179: 376  string "\u8F93\u5165\u4F60\u8981\u767B\u9646\u7684account_uid \u8981\u6E05\u7A7A\u586B-1"
+00184: 376  notearg
+00185: 376  call 1
+00188: 376  pop
+00189: 377  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:366 ---
+;; function object[19] ctor
+;; function metadata object[19] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:394 ---
+loc   line  op
+----- ----  --
+main:
+00000: 395  this
+00001: 395  dup
+00002: 395  callprop "_super"
+00007: 395  swap
+00008: 395  notearg
+00009: 395  call 0
+00012: 395  pop
+00013: 396  name "cc"
+00018: 396  dup
+00019: 396  callprop "associateWithNative"
+00024: 396  swap
+00025: 396  notearg
+00026: 396  this
+00027: 396  notearg
+00028: 396  name "cc"
+00033: 396  getprop "Scene"
+00038: 396  notearg
+00039: 396  call 2
+00042: 396  pop
+00043: 396  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:394 ---
+;; function object[20] onEnter
+;; function metadata object[20] nargs=0 bindings=1
+;; local[0] layer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:399 ---
+loc   line  op
+----- ----  --
+main:
+00000: 400  this
+00001: 400  dup
+00002: 400  callprop "_super"
+00007: 400  swap
+00008: 400  notearg
+00009: 400  call 0
+00012: 400  pop
+00013: 401  name "xs"
+00018: 401  getprop "Scene"
+00023: 401  getprop "DebugLayer"
+00028: 401  undefined
+00029: 401  notearg
+00030: 401  new 0
+00033: 401  setlocal 0
+00036: 401  pop
+00037: 402  getlocal 0
+00040: 402  dup
+00041: 402  callprop "init"
+00046: 402  swap
+00047: 402  notearg
+00048: 402  call 0
+00051: 402  pop
+00052: 403  this
+00053: 403  dup
+00054: 403  callprop "addChild"
+00059: 403  swap
+00060: 403  notearg
+00061: 403  getlocal 0
+00064: 403  notearg
+00065: 403  call 1
+00068: 403  pop
+00069: 403  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:399 ---
+;; function object[21] create
+;; function metadata object[21] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:408 ---
+loc   line  op
+----- ----  --
+main:
+00000: 409  name "xs"
+00005: 409  getprop "Scene"
+00010: 409  getprop "DebugScene"
+00015: 409  undefined
+00016: 409  notearg
+00017: 409  new 0
+00020: 409  return
+00021: 409  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Debug/DebugScene.js:408 ---

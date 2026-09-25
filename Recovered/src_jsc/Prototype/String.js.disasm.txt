@@ -1,0 +1,289 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Prototype/String.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=19 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=77 object[2]
+;; FUNCTION-MAP kind=lambda offset=106 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/String.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  name "String"
+00005:  13  dup
+00006:  13  callprop "method"
+00011:  13  swap
+00012:  13  notearg
+00013:  13  string "convWithArgs"
+00018:  13  notearg
+00019:  13  lambda (function () {
+    [sourceless code]
+})
+00024:  13  notearg
+00025:  13  call 2
+00028:  13  popv
+00029:  43  name "String"
+00034:  43  dup
+00035:  43  callprop "method"
+00040:  43  swap
+00041:  43  notearg
+00042:  43  string "toWordBreak"
+00047:  43  notearg
+00048:  43  lambda (function () {
+    [sourceless code]
+})
+00053:  43  notearg
+00054:  43  call 2
+00057:  43  popv
+00058:  58  name "String"
+00063:  58  dup
+00064:  58  callprop "method"
+00069:  58  swap
+00070:  58  notearg
+00071:  58  string "toJson"
+00076:  58  notearg
+00077:  58  lambda (function () {
+    [sourceless code]
+})
+00082:  58  notearg
+00083:  58  call 2
+00086:  58  popv
+00087:  62  name "String"
+00092:  62  dup
+00093:  62  callprop "method"
+00098:  62  swap
+00099:  62  notearg
+00100:  62  string "removeSlash"
+00105:  62  notearg
+00106:  62  lambda (function () {
+    [sourceless code]
+})
+00111:  62  notearg
+00112:  62  call 2
+00115:  62  popv
+00116:  64  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/String.js:1 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=4
+;; arg[0] argsArray
+;; local[0] _ret
+;; local[1] i
+;; local[2] _arg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/String.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  14  name "xs"
+00005:  14  dup
+00006:  14  callprop "assert"
+00011:  14  swap
+00012:  14  notearg
+00013:  14  name "xs"
+00018:  14  getprop "Utils"
+00023:  14  dup
+00024:  14  callprop "isArray"
+00029:  14  swap
+00030:  14  notearg
+00031:  14  getarg 0
+00034:  14  notearg
+00035:  14  call 1
+00038:  14  true
+00039:  14  stricteq
+00040:  14  notearg
+00041:  14  string "argsArray must be array"
+00046:  14  notearg
+00047:  14  call 2
+00050:  14  pop
+00051:  17  this
+00052:  17  setlocal 0
+00055:  17  pop
+00056:  20  getlocal 0
+00059:  20  string ""
+00064:  20  eq
+00065:  20  ifeq 84 (+19)
+00070:  21  getarg 0
+00073:  21  zero
+00074:  21  getelem
+00075:  21  setlocal 0
+00078:  21  pop
+00079:  21  goto 235 (+156)
+00084:  24  zero
+00085:  24  setlocal 1
+00088:  24  pop
+00089:  24  goto 155 (+66)
+00094:  25  loophead
+00095:  25  getarg 0
+00098:  25  getlocal 1
+00101:  25  getelem
+00102:  25  setlocal 2
+00105:  25  pop
+00106:  26  getlocal 0
+00109:  26  dup
+00110:  26  callprop "replace"
+00115:  26  swap
+00116:  26  notearg
+00117:  26  string "$"
+00122:  26  getlocal 1
+00125:  26  one
+00126:  26  add
+00127:  26  add
+00128:  26  notearg
+00129:  26  getlocal 2
+00132:  26  notearg
+00133:  26  call 2
+00136:  26  setlocal 0
+00139:  26  pop
+00140:  24  localinc 11
+00143:  24  getlocal 1
+00146:  24  pos
+00147:  24  dup
+00148:  24  one
+00149:  24  add
+00150:  24  setlocal 1
+00153:  24  pop
+00154:  24  pop
+00155:  24  loopentry
+00156:  24  getlocal 1
+00159:  24  getarg 0
+00162:  24  length "length"
+00167:  24  lt
+00168:  24  ifne 94 (-74)
+00173:  29  getlocal 0
+00176:  29  dup
+00177:  29  callprop "indexOf"
+00182:  29  swap
+00183:  29  notearg
+00184:  29  string "$"
+00189:  29  notearg
+00190:  29  call 1
+00193:  29  zero
+00194:  29  ge
+00195:  29  ifeq 235 (+40)
+00200:  30  name "xs"
+00205:  30  dup
+00206:  30  callprop "warn"
+00211:  30  swap
+00212:  30  notearg
+00213:  30  string "String"
+00218:  30  notearg
+00219:  30  string "convWithArgs need more args:"
+00224:  30  this
+00225:  30  add
+00226:  30  getarg 0
+00229:  30  add
+00230:  30  notearg
+00231:  30  call 2
+00234:  30  pop
+00235:  40  getlocal 0
+00238:  40  return
+00239:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/String.js:13 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=2
+;; local[0] _ret
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/String.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  string ""
+00005:  44  setlocal 0
+00008:  44  pop
+00009:  46  zero
+00010:  46  setlocal 1
+00013:  46  pop
+00014:  46  goto 89 (+75)
+00019:  47  loophead
+00020:  47  getlocal 0
+00023:  47  this
+00024:  47  dup
+00025:  47  callprop "charAt"
+00030:  47  swap
+00031:  47  notearg
+00032:  47  getlocal 1
+00035:  47  notearg
+00036:  47  call 1
+00039:  47  add
+00040:  47  setlocal 0
+00043:  47  pop
+00044:  49  getlocal 1
+00047:  49  this
+00048:  49  length "length"
+00053:  49  one
+00054:  49  sub
+00055:  49  strictne
+00056:  49  ifeq 74 (+18)
+00061:  50  getlocal 0
+00064:  50  string "\n"
+00069:  50  add
+00070:  50  setlocal 0
+00073:  50  pop
+00074:  46  localinc 11
+00077:  46  getlocal 1
+00080:  46  pos
+00081:  46  dup
+00082:  46  one
+00083:  46  add
+00084:  46  setlocal 1
+00087:  46  pop
+00088:  46  pop
+00089:  46  loopentry
+00090:  46  getlocal 1
+00093:  46  this
+00094:  46  length "length"
+00099:  46  lt
+00100:  46  ifne 19 (-81)
+00105:  54  getlocal 0
+00108:  54  return
+00109:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/String.js:43 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/String.js:58 ---
+loc   line  op
+----- ----  --
+00000:  58  arguments
+00001:  58  setaliasedvar "arguments" (hops = 0, slot = 2)
+00010:  58  pop
+main:
+00011:  59  callname "eval"
+00016:  59  implicitthis "eval"
+00021:  59  notearg
+00022:  59  this
+00023:  59  notearg
+00024:  59  eval 1
+00027:  59  lineno 59
+00030:  59  return
+00031:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/String.js:58 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/String.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  this
+00001:  63  dup
+00002:  63  callprop "replace"
+00007:  63  swap
+00008:  63  notearg
+00009:  63  regexp /\|/gi
+00014:  63  notearg
+00015:  63  string ""
+00020:  63  notearg
+00021:  63  call 2
+00024:  63  return
+00025:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Prototype/String.js:62 ---

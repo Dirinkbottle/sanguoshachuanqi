@@ -1,0 +1,326 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=48 object[0]
+;; FUNCTION-MAP kind=lambda offset=58 object[1]
+;; FUNCTION-MAP kind=lambda offset=68 object[2]
+;; FUNCTION-MAP kind=lambda offset=78 object[3]
+;; FUNCTION-MAP kind=lambda offset=119 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   2  name "xs"
+00005:   2  getprop "Views"
+00010:   2  getprop "Table"
+00015:   2  name "cc"
+00020:   2  getprop "TableViewCell"
+00025:   2  dup
+00026:   2  callprop "extend"
+00031:   2  swap
+00032:   2  notearg
+00033:   2  newinit 1
+00038:   3  string "MultiColumnTableViewCell"
+00043:   3  initprop "name"
+00048:   4  lambda (function () {
+    [sourceless code]
+})
+00053:   4  initprop "ctor"
+00058:   7  lambda (function () {
+    [sourceless code]
+})
+00063:   7  initprop "initWithData"
+00068:  19  lambda (function () {
+    [sourceless code]
+})
+00073:  19  initprop "updateCell"
+00078:  41  lambda (function () {
+    [sourceless code]
+})
+00083:  41  initprop "_createIcon"
+00088:  41  endinit
+00089:  41  notearg
+00090:  41  call 1
+00093:  41  setprop "MultiColumnTableViewCell"
+00098:  41  popv
+00099:  52  name "xs"
+00104:  52  getprop "Views"
+00109:  52  getprop "Table"
+00114:  52  getprop "MultiColumnTableViewCell"
+00119:  52  lambda (function () {
+    [sourceless code]
+})
+00124:  52  setprop "create"
+00129:  52  popv
+00130:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:4 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  this
+00001:   5  dup
+00002:   5  callprop "_super"
+00007:   5  swap
+00008:   5  notearg
+00009:   5  call 0
+00012:   5  pop
+00013:   5  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:4 ---
+;; function object[1] initWithData
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  newarray 0
+00005:   8  endinit
+00006:   8  setprop "iconArray"
+00011:   8  pop
+00012:  10  this
+00013:  10  dup
+00014:  10  callprop "init"
+00019:  10  swap
+00020:  10  notearg
+00021:  10  call 0
+00024:  10  pop
+00025:  12  this
+00026:  12  getarg 0
+00029:  12  setprop "data"
+00034:  12  pop
+00035:  13  this
+00036:  13  dup
+00037:  13  callprop "updateCell"
+00042:  13  swap
+00043:  13  notearg
+00044:  13  this
+00045:  13  getprop "data"
+00050:  13  notearg
+00051:  13  call 1
+00054:  13  pop
+00055:  15  true
+00056:  15  return
+00057:  15  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:7 ---
+;; function object[2] updateCell
+;; function metadata object[2] nargs=1 bindings=3
+;; arg[0] data
+;; local[0] i
+;; local[1] icon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:19 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  zero
+00001:  20  setlocal 0
+00004:  20  pop
+00005:  20  goto 50 (+45)
+00010:  21  loophead
+00011:  21  this
+00012:  21  getprop "iconArray"
+00017:  21  getlocal 0
+00020:  21  getelem
+00021:  21  dup
+00022:  21  callprop "removeFromParent"
+00027:  21  swap
+00028:  21  notearg
+00029:  21  true
+00030:  21  notearg
+00031:  21  call 1
+00034:  21  pop
+00035:  20  localinc 11
+00038:  20  getlocal 0
+00041:  20  pos
+00042:  20  dup
+00043:  20  one
+00044:  20  add
+00045:  20  setlocal 0
+00048:  20  pop
+00049:  20  pop
+00050:  20  loopentry
+00051:  20  getlocal 0
+00054:  20  this
+00055:  20  getprop "iconArray"
+00060:  20  length "length"
+00065:  20  lt
+00066:  20  ifne 10 (-56)
+00071:  24  this
+00072:  24  newarray 0
+00076:  24  endinit
+00077:  24  setprop "iconArray"
+00082:  24  pop
+00083:  26  zero
+00084:  26  setlocal 0
+00087:  26  pop
+00088:  26  goto 239 (+151)
+00093:  27  loophead
+00094:  27  this
+00095:  27  dup
+00096:  27  callprop "_createIcon"
+00101:  27  swap
+00102:  27  notearg
+00103:  27  getlocal 0
+00106:  27  notearg
+00107:  27  call 1
+00110:  27  setlocal 1
+00113:  27  pop
+00114:  28  this
+00115:  28  getprop "iconArray"
+00120:  28  dup
+00121:  28  callprop "push"
+00126:  28  swap
+00127:  28  notearg
+00128:  28  getlocal 1
+00131:  28  notearg
+00132:  28  call 1
+00135:  28  pop
+00136:  29  name "xs"
+00141:  29  getprop "Utils"
+00146:  29  getprop "Node"
+00151:  29  dup
+00152:  29  callprop "attachNodes"
+00157:  29  swap
+00158:  29  notearg
+00159:  29  this
+00160:  29  notearg
+00161:  29  getlocal 1
+00164:  29  notearg
+00165:  29  newinit 1
+00170:  30  string "lb"
+00175:  30  initprop "desc"
+00180:  31  true
+00181:  31  initprop "sc"
+00186:  32  newinit 1
+00191:  33  int8 53
+00193:  33  int8 104
+00195:  33  getlocal 0
+00198:  33  mul
+00199:  33  add
+00200:  33  initprop "x"
+00205:  34  int8 52
+00207:  34  initprop "y"
+00212:  34  endinit
+00213:  34  initprop "offset"
+00218:  34  endinit
+00219:  34  notearg
+00220:  34  call 3
+00223:  34  pop
+00224:  26  localinc 11
+00227:  26  getlocal 0
+00230:  26  pos
+00231:  26  dup
+00232:  26  one
+00233:  26  add
+00234:  26  setlocal 0
+00237:  26  pop
+00238:  26  pop
+00239:  26  loopentry
+00240:  26  getlocal 0
+00243:  26  getarg 0
+00246:  26  length "length"
+00251:  26  lt
+00252:  26  ifne 93 (-159)
+00257:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:19 ---
+;; function object[3] _createIcon
+;; function metadata object[3] nargs=1 bindings=2
+;; arg[0] index
+;; local[0] m_endButton
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  42  name "xs"
+00005:  42  getprop "Libs"
+00010:  42  getprop "Views"
+00015:  42  getprop "Button"
+00020:  42  dup
+00021:  42  callprop "createWithSpriteFrame"
+00026:  42  swap
+00027:  42  notearg
+00028:  42  name "xs"
+00033:  42  getprop "Cfg"
+00038:  42  getprop "Sprite"
+00043:  42  getprop "Cmn01"
+00048:  42  getprop "mainMenuView_0"
+00053:  42  getprop "frameName"
+00058:  42  notearg
+00059:  42  call 1
+00062:  42  setlocal 0
+00065:  42  pop
+00066:  44  getlocal 0
+00069:  44  return
+00070:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:41 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] object
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:52 ---
+loc   line  op
+----- ----  --
+main:
+00000:  53  name "xs"
+00005:  53  dup
+00006:  53  callprop "log"
+00011:  53  swap
+00012:  53  notearg
+00013:  53  string "xs.Views.Table.MultiColumnTableViewCell"
+00018:  53  notearg
+00019:  53  call 1
+00022:  53  pop
+00023:  54  name "xs"
+00028:  54  getprop "Views"
+00033:  54  getprop "Table"
+00038:  54  getprop "MultiColumnTableViewCell"
+00043:  54  undefined
+00044:  54  notearg
+00045:  54  new 0
+00048:  54  setlocal 0
+00051:  54  pop
+00052:  55  getlocal 0
+00055:  55  and 79 (+24)
+00060:  55  pop
+00061:  55  getlocal 0
+00064:  55  dup
+00065:  55  callprop "initWithData"
+00070:  55  swap
+00071:  55  notearg
+00072:  55  getarg 0
+00075:  55  notearg
+00076:  55  call 1
+00079:  55  ifeq 88 (+9)
+00084:  56  getlocal 0
+00087:  56  return
+00088:  58  name "xs"
+00093:  58  dup
+00094:  58  callprop "assert"
+00099:  58  swap
+00100:  58  notearg
+00101:  58  false
+00102:  58  notearg
+00103:  58  string "xs.Views.Table.MultiColumnTableViewCell.create error"
+00108:  58  notearg
+00109:  58  call 2
+00112:  58  pop
+00113:  59  null
+00114:  59  return
+00115:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/MultiColumnTableViewCell.js:52 ---

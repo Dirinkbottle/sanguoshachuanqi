@@ -1,0 +1,554 @@
+{
+  "input": "Recovered/src_jsc/Cfg/headers.js.disasm.txt",
+  "outline": "Recovered/src_jsc/Cfg/headers.js.structure.md",
+  "sourceTextRecovered": false,
+  "output": "src_jsc/Cfg/headers.js",
+  "scriptBodies": 1,
+  "instructions": 434,
+  "translatedOpcodeInstructions": 434,
+  "recoveryRate": 1.0,
+  "structuredForInLoops": 0,
+  "structuredTryCatchBlocks": 0,
+  "structuredDoWhileLoops": 0,
+  "structuredConditionalSwitches": 0,
+  "sharedDefaultSwitchJoins": 0,
+  "sharedDefaultConditionalSwitchJoins": 0,
+  "sharedDefaultTableSwitchJoins": 0,
+  "unresolvedOpcodes": {},
+  "emittedTodoMarkersByOpcode": {},
+  "approximateOpcodes": {},
+  "functionLinksMissing": 0,
+  "detachedFunctionBodies": 0,
+  "cfg": {
+    "blocks": 12,
+    "edges": 16,
+    "stackMergeConflicts": 0,
+    "unreachableBlocks": 0,
+    "anomalies": []
+  },
+  "expressionSimulation": {
+    "stackUnderflows": 0,
+    "stackUnknownEffects": 0,
+    "residualValues": 0,
+    "stackMergeConflicts": 0
+  },
+  "sourceLineRange": [
+    11,
+    139
+  ],
+  "startupOrder": 64,
+  "dependencies": [
+    {
+      "to": "data_cn_jsc/plan/sgs_combat_level_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_combat_level_conf.js",
+      "line": "123"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_config_btn.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_config_btn.js",
+      "line": "127"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_config_label.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_config_label.js",
+      "line": "131"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_dungeon_plot_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_dungeon_plot_conf.js",
+      "line": "135"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_dungeon_plot_dialog.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_dungeon_plot_dialog.js",
+      "line": "139"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_eated_exp_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_eated_exp_conf.js",
+      "line": "143"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_equipments.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_equipments.js",
+      "line": "147"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_fates.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_fates.js",
+      "line": "151"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_general_surrender.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_general_surrender.js",
+      "line": "155"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_generals.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_generals.js",
+      "line": "159"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_global_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_global_conf.js",
+      "line": "163"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_i18n.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_i18n.js",
+      "line": "167"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_insight_grow_type.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_insight_grow_type.js",
+      "line": "171"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_item.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_item.js",
+      "line": "175"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_map_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_map_conf.js",
+      "line": "179"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_random_name.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_random_name.js",
+      "line": "183"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_refine_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_refine_conf.js",
+      "line": "187"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_resource.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_resource.js",
+      "line": "191"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_sell_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_sell_conf.js",
+      "line": "195"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_skill_effect.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_skill_effect.js",
+      "line": "199"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_skills.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_skills.js",
+      "line": "203"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_surrender.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_surrender.js",
+      "line": "207"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_upgrade_coin_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_upgrade_coin_conf.js",
+      "line": "211"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_upgrade_exp_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_upgrade_exp_conf.js",
+      "line": "215"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_user_level_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_user_level_conf.js",
+      "line": "219"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_vip_level_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_vip_level_conf.js",
+      "line": "223"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_lieutenant_skill.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_lieutenant_skill.js",
+      "line": "227"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_buddy_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_buddy_conf.js",
+      "line": "231"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_dungeon_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_dungeon_conf.js",
+      "line": "235"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_union_war_battle_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_union_war_battle_conf.js",
+      "line": "239"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_gem.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_gem.js",
+      "line": "243"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_skill_advanced_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_skill_advanced_conf.js",
+      "line": "247"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_magic_buff_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_magic_buff_conf.js",
+      "line": "251"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_world_war_schedule.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_world_war_schedule.js",
+      "line": "255"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_godness.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_godness.js",
+      "line": "259"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_godness_skin.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_godness_skin.js",
+      "line": "263"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_hulao_reward_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_hulao_reward_conf.js",
+      "line": "267"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_melt_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_melt_conf.js",
+      "line": "271"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_function_level_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_function_level_conf.js",
+      "line": "275"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_meridian_top_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_meridian_top_conf.js",
+      "line": "279"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_meridian_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_meridian_conf.js",
+      "line": "283"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_meridian_point_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_meridian_point_conf.js",
+      "line": "287"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_godness_fates.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_godness_fates.js",
+      "line": "291"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_skill_melt_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_skill_melt_conf.js",
+      "line": "295"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_evolution.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_evolution.js",
+      "line": "299"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_evolution_open_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_evolution_open_conf.js",
+      "line": "303"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_evolution_buff_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_evolution_buff_conf.js",
+      "line": "307"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_evolution_surrender.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_evolution_surrender.js",
+      "line": "311"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_beauty_conf_detail.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_beauty_conf_detail.js",
+      "line": "315"
+    },
+    {
+      "to": "data_cn_jsc/plan/sgs_skill_refine_conf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_skill_refine_conf.js",
+      "line": "319"
+    },
+    {
+      "to": "data_cn_jsc/art/sgs_config_ttf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_config_ttf.js",
+      "line": "330"
+    },
+    {
+      "to": "data_cn_jsc/art/sgs_config_ls.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_config_ls.js",
+      "line": "334"
+    },
+    {
+      "to": "data_cn_jsc/art/sgs_config_bmf.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "/sgs_config_bmf.js",
+      "line": "338"
+    },
+    {
+      "to": "src_jsc/Cfg/Constant.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Constant.js",
+      "line": "377"
+    },
+    {
+      "to": "src_jsc/Cfg/Label.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Label.js",
+      "line": "379"
+    },
+    {
+      "to": "src_jsc/Cfg/Meta.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Meta.js",
+      "line": "381"
+    },
+    {
+      "to": "src_jsc/Cfg/Resource/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Resource/headers.js",
+      "line": "383"
+    },
+    {
+      "to": "src_jsc/Cfg/Langage.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Langage.js",
+      "line": "385"
+    },
+    {
+      "to": "src_jsc/Cfg/Scene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Scene.js",
+      "line": "387"
+    },
+    {
+      "to": "src_jsc/Cfg/Animate.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Animate.js",
+      "line": "389"
+    },
+    {
+      "to": "src_jsc/Cfg/Sprite.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Sprite.js",
+      "line": "391"
+    },
+    {
+      "to": "src_jsc/Cfg/Armature.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Armature.js",
+      "line": "393"
+    },
+    {
+      "to": "src_jsc/Cfg/Audio.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Audio.js",
+      "line": "395"
+    },
+    {
+      "to": "src_jsc/Cfg/Font.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Font.js",
+      "line": "397"
+    },
+    {
+      "to": "src_jsc/Cfg/BMFont.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/BMFont.js",
+      "line": "399"
+    },
+    {
+      "to": "src_jsc/Cfg/String.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/String.js",
+      "line": "401"
+    },
+    {
+      "to": "src_jsc/Cfg/Url.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Url.js",
+      "line": "403"
+    },
+    {
+      "to": "src_jsc/Cfg/Particle.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Particle.js",
+      "line": "405"
+    },
+    {
+      "to": "src_jsc/Cfg/CCBI.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/CCBI.js",
+      "line": "407"
+    },
+    {
+      "to": "src_jsc/Cfg/Btn.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Btn.js",
+      "line": "409"
+    },
+    {
+      "to": "src_jsc/Cfg/Guide.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Guide.js",
+      "line": "411"
+    },
+    {
+      "to": "src_jsc/Cfg/Fight/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/Fight/headers.js",
+      "line": "413"
+    },
+    {
+      "to": "src_jsc/Cfg/alias.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Cfg/alias.js",
+      "line": "415"
+    }
+  ],
+  "manualReviewRecommended": false
+}

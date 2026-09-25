@@ -1,0 +1,437 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/SkillEffect.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=84 object[0]
+;; FUNCTION-MAP kind=lambda offset=94 object[1]
+;; FUNCTION-MAP kind=lambda offset=104 object[2]
+;; FUNCTION-MAP kind=lambda offset=114 object[3]
+;; FUNCTION-MAP kind=lambda offset=124 object[4]
+;; FUNCTION-MAP kind=lambda offset=134 object[5]
+;; FUNCTION-MAP kind=lambda offset=144 object[6]
+;; FUNCTION-MAP kind=lambda offset=154 object[7]
+;; FUNCTION-MAP kind=lambda offset=164 object[8]
+;; FUNCTION-MAP kind=lambda offset=200 object[9]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  name "xs"
+00005:  20  getprop "Models"
+00010:  20  name "xs"
+00015:  20  getprop "Models"
+00020:  20  getprop "SkillEffect"
+00025:  20  or 179 (+154)
+00030:  20  pop
+00031:  20  name "xs"
+00036:  20  getprop "Models"
+00041:  20  getprop "BaseCfg"
+00046:  20  dup
+00047:  20  callprop "extend"
+00052:  20  swap
+00053:  20  notearg
+00054:  20  newinit 1
+00059:  22  string "SkillEffect"
+00064:  22  initprop "name"
+00069:  24  name "xs"
+00074:  24  getprop "Constant_CfgDataType_SkillEffect"
+00079:  24  initprop "CfgDataType"
+00084:  27  lambda (function () {
+    [sourceless code]
+})
+00089:  27  initprop "init"
+00094:  40  lambda (function () {
+    [sourceless code]
+})
+00099:  40  initprop "getValueBase"
+00104:  44  lambda (function () {
+    [sourceless code]
+})
+00109:  44  initprop "getValueStep"
+00114:  50  lambda (function () {
+    [sourceless code]
+})
+00119:  50  initprop "getSkillEffectTarget"
+00124:  55  lambda (function () {
+    [sourceless code]
+})
+00129:  55  initprop "getAttrType"
+00134:  60  lambda (function () {
+    [sourceless code]
+})
+00139:  60  initprop "getValueByLevel"
+00144:  68  lambda (function () {
+    [sourceless code]
+})
+00149:  68  initprop "getValueOffset"
+00154:  97  lambda (function () {
+    [sourceless code]
+})
+00159:  97  initprop "getValueType"
+00164: 102  lambda (function () {
+    [sourceless code]
+})
+00169: 102  initprop "isGain"
+00174: 102  endinit
+00175: 102  notearg
+00176: 102  call 1
+00179: 102  setprop "SkillEffect"
+00184: 102  popv
+00185: 107  name "xs"
+00190: 107  getprop "Models"
+00195: 107  getprop "SkillEffect"
+00200: 107  lambda (function () {
+    [sourceless code]
+})
+00205: 107  setprop "createWithBase"
+00210: 107  popv
+00211: 115  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] caches
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  28  this
+00001:  28  dup
+00002:  28  callprop "_super"
+00007:  28  swap
+00008:  28  notearg
+00009:  28  call 0
+00012:  28  not
+00013:  28  ifeq 20 (+7)
+00018:  29  false
+00019:  29  return
+00020:  32  newarray 0
+00024:  32  endinit
+00025:  32  setlocal 0
+00028:  32  pop
+00029:  35  this
+00030:  35  dup
+00031:  35  callprop "registerCaches"
+00036:  35  swap
+00037:  35  notearg
+00038:  35  getlocal 0
+00041:  35  notearg
+00042:  35  call 1
+00045:  35  pop
+00046:  37  true
+00047:  37  return
+00048:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:27 ---
+;; function object[1] getValueBase
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:40 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  name "xs"
+00005:  41  getprop "Utils"
+00010:  41  dup
+00011:  41  callprop "parseFloatSafe"
+00016:  41  swap
+00017:  41  notearg
+00018:  41  this
+00019:  41  dup
+00020:  41  callprop "getBaseDataRef"
+00025:  41  swap
+00026:  41  notearg
+00027:  41  call 0
+00030:  41  getprop "effect_value"
+00035:  41  notearg
+00036:  41  call 1
+00039:  41  return
+00040:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:40 ---
+;; function object[2] getValueStep
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  name "xs"
+00005:  45  getprop "Utils"
+00010:  45  dup
+00011:  45  callprop "parseFloatSafe"
+00016:  45  swap
+00017:  45  notearg
+00018:  45  this
+00019:  45  dup
+00020:  45  callprop "getBaseDataRef"
+00025:  45  swap
+00026:  45  notearg
+00027:  45  call 0
+00030:  45  getprop "effect_value_step"
+00035:  45  notearg
+00036:  45  call 1
+00039:  45  return
+00040:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:44 ---
+;; function object[3] getSkillEffectTarget
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:50 ---
+loc   line  op
+----- ----  --
+main:
+00000:  51  this
+00001:  51  dup
+00002:  51  callprop "getBaseDataRef"
+00007:  51  swap
+00008:  51  notearg
+00009:  51  call 0
+00012:  51  getprop "effect_target"
+00017:  51  return
+00018:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:50 ---
+;; function object[4] getAttrType
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:55 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  this
+00001:  56  dup
+00002:  56  callprop "getBaseDataRef"
+00007:  56  swap
+00008:  56  notearg
+00009:  56  call 0
+00012:  56  getprop "attr_type"
+00017:  56  return
+00018:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:55 ---
+;; function object[5] getValueByLevel
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] level
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  61  this
+00001:  61  dup
+00002:  61  callprop "getValueBase"
+00007:  61  swap
+00008:  61  notearg
+00009:  61  call 0
+00012:  61  getarg 0
+00015:  61  one
+00016:  61  sub
+00017:  61  this
+00018:  61  dup
+00019:  61  callprop "getValueStep"
+00024:  61  swap
+00025:  61  notearg
+00026:  61  call 0
+00029:  61  mul
+00030:  61  add
+00031:  61  return
+00032:  61  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:60 ---
+;; function object[6] getValueOffset
+;; function metadata object[6] nargs=3 bindings=5
+;; arg[0] attrType
+;; arg[1] level
+;; arg[2] srcGeneralModel
+;; local[0] _value
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  70  getarg 0
+00003:  70  this
+00004:  70  dup
+00005:  70  callprop "getAttrType"
+00010:  70  swap
+00011:  70  notearg
+00012:  70  call 0
+00015:  70  strictne
+00016:  70  ifeq 23 (+7)
+00021:  71  zero
+00022:  71  return
+00023:  75  this
+00024:  75  dup
+00025:  75  callprop "getValueByLevel"
+00030:  75  swap
+00031:  75  notearg
+00032:  75  getarg 1
+00035:  75  notearg
+00036:  75  call 1
+00039:  75  setlocal 0
+00042:  75  pop
+00043:  77  zero
+00044:  77  setlocal 1
+00047:  77  pop
+00048:  78  this
+00049:  78  dup
+00050:  78  callprop "getValueType"
+00055:  78  swap
+00056:  78  notearg
+00057:  78  call 0
+00060:  78  name "xs"
+00065:  78  getprop "Constant_ValueType_Normal"
+00070:  78  stricteq
+00071:  78  ifeq 88 (+17)
+00076:  79  getlocal 0
+00079:  79  setlocal 1
+00082:  79  pop
+00083:  79  goto 169 (+86)
+00088:  81  this
+00089:  81  dup
+00090:  81  callprop "getValueType"
+00095:  81  swap
+00096:  81  notearg
+00097:  81  call 0
+00100:  81  name "xs"
+00105:  81  getprop "Constant_ValueType_Percent100"
+00110:  81  stricteq
+00111:  81  ifeq 150 (+39)
+00116:  82  getarg 2
+00119:  82  dup
+00120:  82  callprop "getAttrNaked"
+00125:  82  swap
+00126:  82  notearg
+00127:  82  getarg 0
+00130:  82  notearg
+00131:  82  call 1
+00134:  82  getlocal 0
+00137:  82  mul
+00138:  82  int8 100
+00140:  82  div
+00141:  82  setlocal 1
+00144:  82  pop
+00145:  82  goto 169 (+24)
+00150:  85  this
+00151:  85  dup
+00152:  85  callprop "error"
+00157:  85  swap
+00158:  85  notearg
+00159:  85  string "this.getValueType"
+00164:  85  notearg
+00165:  85  call 1
+00168:  85  pop
+00169:  88  this
+00170:  88  dup
+00171:  88  callprop "isGain"
+00176:  88  swap
+00177:  88  notearg
+00178:  88  call 0
+00181:  88  false
+00182:  88  stricteq
+00183:  88  ifeq 198 (+15)
+00188:  89  getlocal 1
+00191:  89  int8 -1
+00193:  89  mul
+00194:  89  setlocal 1
+00197:  89  pop
+00198:  92  getlocal 1
+00201:  92  return
+00202:  92  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:68 ---
+;; function object[7] getValueType
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:97 ---
+loc   line  op
+----- ----  --
+main:
+00000:  98  this
+00001:  98  dup
+00002:  98  callprop "getBaseDataRef"
+00007:  98  swap
+00008:  98  notearg
+00009:  98  call 0
+00012:  98  getprop "value_type"
+00017:  98  return
+00018:  98  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:97 ---
+;; function object[8] isGain
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:102 ---
+loc   line  op
+----- ----  --
+main:
+00000: 103  this
+00001: 103  dup
+00002: 103  callprop "getBaseDataRef"
+00007: 103  swap
+00008: 103  notearg
+00009: 103  call 0
+00012: 103  getprop "is_gain"
+00017: 103  one
+00018: 103  stricteq
+00019: 103  return
+00020: 103  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:102 ---
+;; function object[9] createWithBase
+;; function metadata object[9] nargs=1 bindings=2
+;; arg[0] id
+;; local[0] skill
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:107 ---
+loc   line  op
+----- ----  --
+main:
+00000: 108  name "xs"
+00005: 108  getprop "Models"
+00010: 108  getprop "SkillEffect"
+00015: 108  undefined
+00016: 108  notearg
+00017: 108  new 0
+00020: 108  setlocal 0
+00023: 108  pop
+00024: 109  getlocal 0
+00027: 109  and 47 (+20)
+00032: 109  pop
+00033: 109  getlocal 0
+00036: 109  dup
+00037: 109  callprop "init"
+00042: 109  swap
+00043: 109  notearg
+00044: 109  call 0
+00047: 109  ifeq 75 (+28)
+00052: 110  getlocal 0
+00055: 110  dup
+00056: 110  callprop "readBaseData"
+00061: 110  swap
+00062: 110  notearg
+00063: 110  getarg 0
+00066: 110  notearg
+00067: 110  call 1
+00070: 110  pop
+00071: 111  getlocal 0
+00074: 111  return
+00075: 113  this
+00076: 113  dup
+00077: 113  callprop "error"
+00082: 113  swap
+00083: 113  notearg
+00084: 113  string "SkillEffect.createWithBase"
+00089: 113  notearg
+00090: 113  call 1
+00093: 113  pop
+00094: 114  null
+00095: 114  return
+00096: 114  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/SkillEffect.js:107 ---

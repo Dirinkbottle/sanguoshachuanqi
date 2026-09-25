@@ -1,0 +1,920 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/TeamGeneralFightAndStrikeView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=73 object[4]
+;; FUNCTION-MAP kind=lambda offset=195 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Views"
+00010:  10  name "cc"
+00015:  10  getprop "Node"
+00020:  10  dup
+00021:  10  callprop "extend"
+00026:  10  swap
+00027:  10  notearg
+00028:  10  newinit 1
+00033:  11  lambda (function () {
+    [sourceless code]
+})
+00038:  11  initprop "ctor"
+00043:  15  lambda (function () {
+    [sourceless code]
+})
+00048:  15  initprop "init"
+00053:  37  lambda (function () {
+    [sourceless code]
+})
+00058:  37  initprop "setGeneralData"
+00063:  41  lambda (function () {
+    [sourceless code]
+})
+00068:  41  initprop "updateView"
+00073:  77  lambda (function () {
+    [sourceless code]
+})
+00078:  77  initprop "getFightPoint"
+00083: 135  newinit 1
+00088: 136  newinit 1
+00093: 136  int8 11
+00095: 136  initprop "tag"
+00100: 136  endinit
+00101: 136  initprop "breachStar"
+00106: 137  newarray 1
+00110: 138  newinit 1
+00115: 138  string "m_fightLab"
+00120: 138  initprop "name"
+00125: 138  int8 10
+00127: 138  initprop "tag"
+00132: 138  string "ls"
+00137: 138  initprop "type"
+00142: 138  string "LS_mainUI4"
+00147: 138  initprop "id"
+00152: 138  endinit
+00153: 138  initelem_array 0
+00157: 138  endinit
+00158: 138  initprop "ccbCfg"
+00163: 138  endinit
+00164: 138  initprop "cfg"
+00169: 138  endinit
+00170: 138  notearg
+00171: 138  call 1
+00174: 138  setprop "TeamGeneralFightAndStrikeView"
+00179: 138  popv
+00180: 143  name "xs"
+00185: 143  getprop "Views"
+00190: 143  getprop "TeamGeneralFightAndStrikeView"
+00195: 143  lambda (function () {
+    [sourceless code]
+})
+00200: 143  setprop "create"
+00205: 143  popv
+00206: 150  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  call 0
+00012:  12  pop
+00013:  13  name "cc"
+00018:  13  dup
+00019:  13  callprop "associateWithNative"
+00024:  13  swap
+00025:  13  notearg
+00026:  13  this
+00027:  13  notearg
+00028:  13  name "cc"
+00033:  13  getprop "Node"
+00038:  13  notearg
+00039:  13  call 2
+00042:  13  pop
+00043:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:11 ---
+;; function object[1] init
+;; function metadata object[1] nargs=2 bindings=2
+;; arg[0] playerId
+;; arg[1] playerData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  dup
+00002:  16  callprop "_super"
+00007:  16  swap
+00008:  16  notearg
+00009:  16  call 0
+00012:  16  not
+00013:  16  ifeq 20 (+7)
+00018:  17  false
+00019:  17  return
+00020:  20  this
+00021:  20  null
+00022:  20  setprop "m_ccbNode"
+00027:  20  pop
+00028:  21  this
+00029:  21  null
+00030:  21  setprop "m_generalData"
+00035:  21  pop
+00036:  23  this
+00037:  23  null
+00038:  23  setprop "m_fightLab"
+00043:  23  pop
+00044:  25  this
+00045:  25  getarg 0
+00048:  25  setprop "m_playerId"
+00053:  25  pop
+00054:  26  this
+00055:  26  getarg 1
+00058:  26  setprop "m_playerData"
+00063:  26  pop
+00064:  28  this
+00065:  28  dup
+00066:  28  callprop "setContentSize"
+00071:  28  swap
+00072:  28  notearg
+00073:  28  name "cc"
+00078:  28  dup
+00079:  28  callprop "size"
+00084:  28  swap
+00085:  28  notearg
+00086:  28  int8 126
+00088:  28  notearg
+00089:  28  int8 68
+00091:  28  notearg
+00092:  28  call 2
+00095:  28  notearg
+00096:  28  call 1
+00099:  28  pop
+00100:  30  this
+00101:  30  name "xs"
+00106:  30  getprop "ccb_reader"
+00111:  30  dup
+00112:  30  callprop "load"
+00117:  30  swap
+00118:  30  notearg
+00119:  30  name "xs"
+00124:  30  getprop "Cfg"
+00129:  30  getprop "CCBI"
+00134:  30  getprop "TeamBuild_FightAndStrikeInfo"
+00139:  30  notearg
+00140:  30  this
+00141:  30  notearg
+00142:  30  call 2
+00145:  30  setprop "m_ccbNode"
+00150:  30  pop
+00151:  31  name "xs"
+00156:  31  getprop "Utils"
+00161:  31  getprop "Node"
+00166:  31  dup
+00167:  31  callprop "attachNodes"
+00172:  31  swap
+00173:  31  notearg
+00174:  31  this
+00175:  31  notearg
+00176:  31  this
+00177:  31  getprop "m_ccbNode"
+00182:  31  notearg
+00183:  31  call 2
+00186:  31  pop
+00187:  33  name "xs"
+00192:  33  getprop "Utils"
+00197:  33  getprop "UI"
+00202:  33  dup
+00203:  33  callprop "replaceCcbByCfg"
+00208:  33  swap
+00209:  33  notearg
+00210:  33  this
+00211:  33  getprop "m_ccbNode"
+00216:  33  notearg
+00217:  33  this
+00218:  33  getprop "cfg"
+00223:  33  getprop "ccbCfg"
+00228:  33  notearg
+00229:  33  this
+00230:  33  notearg
+00231:  33  call 3
+00234:  33  pop
+00235:  35  true
+00236:  35  return
+00237:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:15 ---
+;; function object[2] setGeneralData
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  this
+00001:  38  getarg 0
+00004:  38  setprop "m_generalData"
+00009:  38  pop
+00010:  39  this
+00011:  39  dup
+00012:  39  callprop "updateView"
+00017:  39  swap
+00018:  39  notearg
+00019:  39  call 0
+00022:  39  pop
+00023:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:37 ---
+;; function object[3] updateView
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] teamGeneralInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  42  this
+00001:  42  getprop "m_generalData"
+00006:  42  ifeq 390 (+384)
+00011:  43  this
+00012:  43  dup
+00013:  43  callprop "isVisible"
+00018:  43  swap
+00019:  43  notearg
+00020:  43  call 0
+00023:  43  not
+00024:  43  ifeq 44 (+20)
+00029:  44  this
+00030:  44  dup
+00031:  44  callprop "setVisible"
+00036:  44  swap
+00037:  44  notearg
+00038:  44  true
+00039:  44  notearg
+00040:  44  call 1
+00043:  44  pop
+00044:  47  this
+00045:  47  getprop "m_fightLab"
+00050:  47  dup
+00051:  47  callprop "setString"
+00056:  47  swap
+00057:  47  notearg
+00058:  47  name "xs"
+00063:  47  getprop "Profile"
+00068:  47  getprop "GameData"
+00073:  47  getprop "Mgr"
+00078:  47  dup
+00079:  47  callprop "getInstance"
+00084:  47  swap
+00085:  47  notearg
+00086:  47  this
+00087:  47  getprop "m_playerId"
+00092:  47  notearg
+00093:  47  this
+00094:  47  getprop "m_playerData"
+00099:  47  notearg
+00100:  47  call 2
+00103:  47  getprop "Generals"
+00108:  47  dup
+00109:  47  callprop "getAttr"
+00114:  47  swap
+00115:  47  notearg
+00116:  47  this
+00117:  47  getprop "m_generalData"
+00122:  47  notearg
+00123:  47  name "xs"
+00128:  47  getprop "Constant_AttrType_FightPoint"
+00133:  47  notearg
+00134:  47  call 2
+00137:  47  notearg
+00138:  47  call 1
+00141:  47  pop
+00142:  55  name "xs"
+00147:  55  getprop "Profile"
+00152:  55  getprop "GameData"
+00157:  55  getprop "Mgr"
+00162:  55  dup
+00163:  55  callprop "getInstance"
+00168:  55  swap
+00169:  55  notearg
+00170:  55  this
+00171:  55  getprop "m_playerId"
+00176:  55  notearg
+00177:  55  this
+00178:  55  getprop "m_playerData"
+00183:  55  notearg
+00184:  55  call 2
+00187:  55  getprop "Team"
+00192:  55  dup
+00193:  55  callprop "getTeamGeneralByPkId"
+00198:  55  swap
+00199:  55  notearg
+00200:  56  this
+00201:  56  getprop "m_generalData"
+00206:  56  dup
+00207:  56  callprop "getPkId"
+00212:  56  swap
+00213:  56  notearg
+00214:  56  call 0
+00217:  56  notearg
+00218:  56  call 1
+00221:  56  setlocal 0
+00224:  56  pop
+00225:  59  getlocal 0
+00228:  59  ifeq 295 (+67)
+00233:  61  name "xs"
+00238:  61  dup
+00239:  61  callprop "log_ck"
+00244:  61  swap
+00245:  61  notearg
+00246:  61  string "\u5F53\u524D\u7684\u7528\u6237IDthis.m_playerId:"
+00251:  61  this
+00252:  61  getprop "m_playerId"
+00257:  61  add
+00258:  61  notearg
+00259:  61  call 1
+00262:  61  pop
+00263:  62  this
+00264:  62  getprop "m_fightLab"
+00269:  62  dup
+00270:  62  callprop "setString"
+00275:  62  swap
+00276:  62  notearg
+00277:  62  getlocal 0
+00280:  62  getprop "fighting"
+00285:  62  notearg
+00286:  62  call 1
+00289:  62  pop
+00290:  62  goto 315 (+25)
+00295:  65  this
+00296:  65  getprop "m_fightLab"
+00301:  65  dup
+00302:  65  callprop "setString"
+00307:  65  swap
+00308:  65  notearg
+00309:  65  zero
+00310:  65  notearg
+00311:  65  call 1
+00314:  65  pop
+00315:  68  this
+00316:  68  name "xs"
+00321:  68  getprop "Utils"
+00326:  68  dup
+00327:  68  callprop "replaceNode"
+00332:  68  swap
+00333:  68  notearg
+00334:  68  this
+00335:  68  getprop "m_ccbNode"
+00340:  68  notearg
+00341:  68  this
+00342:  68  getprop "cfg"
+00347:  68  getprop "breachStar"
+00352:  68  getprop "tag"
+00357:  68  notearg
+00358:  69  this
+00359:  69  getprop "m_generalData"
+00364:  69  dup
+00365:  69  callprop "getBreachStar"
+00370:  69  swap
+00371:  69  notearg
+00372:  69  call 0
+00375:  69  notearg
+00376:  69  call 3
+00379:  69  setprop "m_strikeLab"
+00384:  69  pop
+00385:  69  goto 446 (+61)
+00390:  71  this
+00391:  71  dup
+00392:  71  callprop "isVisible"
+00397:  71  swap
+00398:  71  notearg
+00399:  71  call 0
+00402:  71  ifeq 422 (+20)
+00407:  72  this
+00408:  72  dup
+00409:  72  callprop "setVisible"
+00414:  72  swap
+00415:  72  notearg
+00416:  72  false
+00417:  72  notearg
+00418:  72  call 1
+00421:  72  pop
+00422:  74  this
+00423:  74  getprop "m_fightLab"
+00428:  74  dup
+00429:  74  callprop "setString"
+00434:  74  swap
+00435:  74  notearg
+00436:  74  string ""
+00441:  74  notearg
+00442:  74  call 1
+00445:  74  pop
+00446:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:41 ---
+;; function object[4] getFightPoint
+;; function metadata object[4] nargs=0 bindings=15
+;; local[0] _fight_point
+;; local[1] generalModle
+;; local[2] magicalModle
+;; local[3] meridianModel
+;; local[4] _Atk
+;; local[5] _Def
+;; local[6] _Hp
+;; local[7] _Int
+;; local[8] _obj_magicalEqu
+;; local[9] _obj_meridianTopModel
+;; local[10] valueModel
+;; local[11] lieutenantArray
+;; local[12] i
+;; local[13] magicalEqu
+;; local[14] _arr_general_skill_all
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:77 ---
+loc   line  op
+----- ----  --
+main:
+00000:  79  zero
+00001:  79  setlocal 0
+00004:  79  pop
+00005:  81  name "xs"
+00010:  81  getprop "Profile"
+00015:  81  getprop "GameData"
+00020:  81  getprop "Mgr"
+00025:  81  dup
+00026:  81  callprop "getInstance"
+00031:  81  swap
+00032:  81  notearg
+00033:  81  this
+00034:  81  getprop "m_playerId"
+00039:  81  notearg
+00040:  81  this
+00041:  81  getprop "m_playerData"
+00046:  81  notearg
+00047:  81  call 2
+00050:  81  getprop "Generals"
+00055:  81  setlocal 1
+00058:  81  pop
+00059:  82  name "xs"
+00064:  82  getprop "Profile"
+00069:  82  getprop "GameData"
+00074:  82  getprop "Mgr"
+00079:  82  dup
+00080:  82  callprop "getInstance"
+00085:  82  swap
+00086:  82  notearg
+00087:  82  this
+00088:  82  getprop "m_playerId"
+00093:  82  notearg
+00094:  82  this
+00095:  82  getprop "m_playerData"
+00100:  82  notearg
+00101:  82  call 2
+00104:  82  getprop "MagicalEqus"
+00109:  82  setlocal 2
+00112:  82  pop
+00113:  83  name "xs"
+00118:  83  getprop "Profile"
+00123:  83  getprop "GameData"
+00128:  83  getprop "Mgr"
+00133:  83  dup
+00134:  83  callprop "getInstance"
+00139:  83  swap
+00140:  83  notearg
+00141:  83  this
+00142:  83  getprop "m_playerId"
+00147:  83  notearg
+00148:  83  this
+00149:  83  getprop "m_playerData"
+00154:  83  notearg
+00155:  83  call 2
+00158:  83  getprop "MeridianTops"
+00163:  83  setlocal 3
+00166:  83  pop
+00167:  85  zero
+00168:  85  setlocal 4
+00171:  85  pop
+00172:  86  zero
+00173:  86  setlocal 5
+00176:  86  pop
+00177:  87  zero
+00178:  87  setlocal 6
+00181:  87  pop
+00182:  88  zero
+00183:  88  setlocal 7
+00186:  88  pop
+00187:  90  getlocal 2
+00190:  90  dup
+00191:  90  callprop "getByGeneralId"
+00196:  90  swap
+00197:  90  notearg
+00198:  90  this
+00199:  90  getprop "m_generalData"
+00204:  90  dup
+00205:  90  callprop "getId"
+00210:  90  swap
+00211:  90  notearg
+00212:  90  call 0
+00215:  90  notearg
+00216:  90  call 1
+00219:  90  setlocal 8
+00222:  90  pop
+00223:  91  getlocal 8
+00226:  91  ifeq 347 (+121)
+00231:  92  getlocal 8
+00234:  92  dup
+00235:  92  callprop "getPointEffectValAllByType"
+00240:  92  swap
+00241:  92  notearg
+00242:  92  name "xs"
+00247:  92  getprop "Constant_AttrType_Atk"
+00252:  92  notearg
+00253:  92  call 1
+00256:  92  setlocal 4
+00259:  92  pop
+00260:  93  getlocal 8
+00263:  93  dup
+00264:  93  callprop "getPointEffectValAllByType"
+00269:  93  swap
+00270:  93  notearg
+00271:  93  name "xs"
+00276:  93  getprop "Constant_AttrType_Def"
+00281:  93  notearg
+00282:  93  call 1
+00285:  93  setlocal 5
+00288:  93  pop
+00289:  94  getlocal 8
+00292:  94  dup
+00293:  94  callprop "getPointEffectValAllByType"
+00298:  94  swap
+00299:  94  notearg
+00300:  94  name "xs"
+00305:  94  getprop "Constant_AttrType_Hp"
+00310:  94  notearg
+00311:  94  call 1
+00314:  94  setlocal 6
+00317:  94  pop
+00318:  95  getlocal 8
+00321:  95  dup
+00322:  95  callprop "getPointEffectValAllByType"
+00327:  95  swap
+00328:  95  notearg
+00329:  95  name "xs"
+00334:  95  getprop "Constant_AttrType_Int"
+00339:  95  notearg
+00340:  95  call 1
+00343:  95  setlocal 7
+00346:  95  pop
+00347:  97  getlocal 3
+00350:  97  dup
+00351:  97  callprop "getByGeneralPkId"
+00356:  97  swap
+00357:  97  notearg
+00358:  97  this
+00359:  97  getprop "m_generalData"
+00364:  97  dup
+00365:  97  callprop "getPkId"
+00370:  97  swap
+00371:  97  notearg
+00372:  97  call 0
+00375:  97  notearg
+00376:  97  call 1
+00379:  97  setlocal 9
+00382:  97  pop
+00383:  98  getlocal 9
+00386:  98  ifeq 473 (+87)
+00391:  99  getlocal 9
+00394:  99  dup
+00395:  99  callprop "getMeridianAndMeridianPointBuffValAll"
+00400:  99  swap
+00401:  99  notearg
+00402:  99  call 0
+00405:  99  setlocal 10
+00408:  99  pop
+00409: 100  getlocal 4
+00412: 100  getlocal 10
+00415: 100  getprop "gong"
+00420: 100  add
+00421: 100  setlocal 4
+00424: 100  pop
+00425: 101  getlocal 5
+00428: 101  getlocal 10
+00431: 101  getprop "fang"
+00436: 101  add
+00437: 101  setlocal 5
+00440: 101  pop
+00441: 102  getlocal 6
+00444: 102  getlocal 10
+00447: 102  getprop "xue"
+00452: 102  add
+00453: 102  setlocal 6
+00456: 102  pop
+00457: 103  getlocal 7
+00460: 103  getlocal 10
+00463: 103  getprop "zhi"
+00468: 103  add
+00469: 103  setlocal 7
+00472: 103  pop
+00473: 106  getlocal 1
+00476: 106  dup
+00477: 106  callprop "getLieutenantByPkId"
+00482: 106  swap
+00483: 106  notearg
+00484: 106  this
+00485: 106  getprop "m_generalData"
+00490: 106  dup
+00491: 106  callprop "getPkId"
+00496: 106  swap
+00497: 106  notearg
+00498: 106  call 0
+00501: 106  notearg
+00502: 106  call 1
+00505: 106  setlocal 11
+00508: 106  pop
+00509: 107  zero
+00510: 107  setlocal 12
+00513: 107  pop
+00514: 107  goto 712 (+198)
+00519: 108  loophead
+00520: 108  getlocal 2
+00523: 108  dup
+00524: 108  callprop "getByGeneralId"
+00529: 108  swap
+00530: 108  notearg
+00531: 108  getlocal 11
+00534: 108  getlocal 12
+00537: 108  getelem
+00538: 108  dup
+00539: 108  callprop "getId"
+00544: 108  swap
+00545: 108  notearg
+00546: 108  call 0
+00549: 108  notearg
+00550: 108  call 1
+00553: 108  setlocal 13
+00556: 108  pop
+00557: 109  getlocal 13
+00560: 109  ifeq 697 (+137)
+00565: 110  getlocal 4
+00568: 110  getlocal 13
+00571: 110  dup
+00572: 110  callprop "getPointEffectValAllByType"
+00577: 110  swap
+00578: 110  notearg
+00579: 110  name "xs"
+00584: 110  getprop "Constant_AttrType_Atk"
+00589: 110  notearg
+00590: 110  call 1
+00593: 110  add
+00594: 110  setlocal 4
+00597: 110  pop
+00598: 111  getlocal 5
+00601: 111  getlocal 13
+00604: 111  dup
+00605: 111  callprop "getPointEffectValAllByType"
+00610: 111  swap
+00611: 111  notearg
+00612: 111  name "xs"
+00617: 111  getprop "Constant_AttrType_Def"
+00622: 111  notearg
+00623: 111  call 1
+00626: 111  add
+00627: 111  setlocal 5
+00630: 111  pop
+00631: 112  getlocal 6
+00634: 112  getlocal 13
+00637: 112  dup
+00638: 112  callprop "getPointEffectValAllByType"
+00643: 112  swap
+00644: 112  notearg
+00645: 112  name "xs"
+00650: 112  getprop "Constant_AttrType_Hp"
+00655: 112  notearg
+00656: 112  call 1
+00659: 112  add
+00660: 112  setlocal 6
+00663: 112  pop
+00664: 113  getlocal 7
+00667: 113  getlocal 13
+00670: 113  dup
+00671: 113  callprop "getPointEffectValAllByType"
+00676: 113  swap
+00677: 113  notearg
+00678: 113  name "xs"
+00683: 113  getprop "Constant_AttrType_Int"
+00688: 113  notearg
+00689: 113  call 1
+00692: 113  add
+00693: 113  setlocal 7
+00696: 113  pop
+00697: 107  localinc 11
+00700: 107  getlocal 12
+00703: 107  pos
+00704: 107  dup
+00705: 107  one
+00706: 107  add
+00707: 107  setlocal 12
+00710: 107  pop
+00711: 107  pop
+00712: 107  loopentry
+00713: 107  getlocal 12
+00716: 107  getlocal 11
+00719: 107  length "length"
+00724: 107  lt
+00725: 107  ifne 519 (-206)
+00730: 118  getlocal 0
+00733: 118  name "xs"
+00738: 118  getprop "Tools"
+00743: 118  getprop "Card"
+00748: 118  dup
+00749: 118  callprop "calculateAttrType_FightPoint"
+00754: 118  swap
+00755: 118  notearg
+00756: 119  getlocal 1
+00759: 119  dup
+00760: 119  callprop "getAttr"
+00765: 119  swap
+00766: 119  notearg
+00767: 119  this
+00768: 119  getprop "m_generalData"
+00773: 119  notearg
+00774: 119  name "xs"
+00779: 119  getprop "Constant_AttrType_Atk"
+00784: 119  notearg
+00785: 119  call 2
+00788: 119  getlocal 4
+00791: 119  add
+00792: 119  notearg
+00793: 120  getlocal 1
+00796: 120  dup
+00797: 120  callprop "getAttr"
+00802: 120  swap
+00803: 120  notearg
+00804: 120  this
+00805: 120  getprop "m_generalData"
+00810: 120  notearg
+00811: 120  name "xs"
+00816: 120  getprop "Constant_AttrType_Def"
+00821: 120  notearg
+00822: 120  call 2
+00825: 120  getlocal 5
+00828: 120  add
+00829: 120  notearg
+00830: 121  getlocal 1
+00833: 121  dup
+00834: 121  callprop "getAttr"
+00839: 121  swap
+00840: 121  notearg
+00841: 121  this
+00842: 121  getprop "m_generalData"
+00847: 121  notearg
+00848: 121  name "xs"
+00853: 121  getprop "Constant_AttrType_Hp"
+00858: 121  notearg
+00859: 121  call 2
+00862: 121  getlocal 6
+00865: 121  add
+00866: 121  notearg
+00867: 122  getlocal 1
+00870: 122  dup
+00871: 122  callprop "getAttr"
+00876: 122  swap
+00877: 122  notearg
+00878: 122  this
+00879: 122  getprop "m_generalData"
+00884: 122  notearg
+00885: 122  name "xs"
+00890: 122  getprop "Constant_AttrType_Int"
+00895: 122  notearg
+00896: 122  call 2
+00899: 122  getlocal 7
+00902: 122  add
+00903: 122  notearg
+00904: 122  call 4
+00907: 122  add
+00908: 122  setlocal 0
+00911: 122  pop
+00912: 126  getlocal 1
+00915: 126  dup
+00916: 126  callprop "getAllSkillsAndLieutenantSkills"
+00921: 126  swap
+00922: 126  notearg
+00923: 126  this
+00924: 126  getprop "m_generalData"
+00929: 126  notearg
+00930: 126  call 1
+00933: 126  setlocal 14
+00936: 126  pop
+00937: 127  zero
+00938: 127  setlocal 12
+00941: 127  pop
+00942: 127  goto 1000 (+58)
+00947: 128  loophead
+00948: 128  getlocal 0
+00951: 128  getlocal 14
+00954: 128  getlocal 12
+00957: 128  getelem
+00958: 128  dup
+00959: 128  callprop "getAttrNaked"
+00964: 128  swap
+00965: 128  notearg
+00966: 128  name "xs"
+00971: 128  getprop "Constant_AttrType_FightPoint"
+00976: 128  notearg
+00977: 128  call 1
+00980: 128  add
+00981: 128  setlocal 0
+00984: 128  pop
+00985: 127  localinc 11
+00988: 127  getlocal 12
+00991: 127  pos
+00992: 127  dup
+00993: 127  one
+00994: 127  add
+00995: 127  setlocal 12
+00998: 127  pop
+00999: 127  pop
+01000: 127  loopentry
+01001: 127  getlocal 12
+01004: 127  getlocal 14
+01007: 127  length "length"
+01012: 127  lt
+01013: 127  ifne 947 (-66)
+01018: 131  name "xs"
+01023: 131  getprop "Utils"
+01028: 131  dup
+01029: 131  callprop "parseIntSafe"
+01034: 131  swap
+01035: 131  notearg
+01036: 131  getlocal 0
+01039: 131  notearg
+01040: 131  call 1
+01043: 131  return
+01044: 131  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:77 ---
+;; function object[5] create
+;; function metadata object[5] nargs=2 bindings=3
+;; arg[0] playerId
+;; arg[1] playerData
+;; local[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:143 ---
+loc   line  op
+----- ----  --
+main:
+00000: 144  name "xs"
+00005: 144  getprop "Views"
+00010: 144  getprop "TeamGeneralFightAndStrikeView"
+00015: 144  undefined
+00016: 144  notearg
+00017: 144  new 0
+00020: 144  setlocal 0
+00023: 144  pop
+00024: 145  getlocal 0
+00027: 145  and 55 (+28)
+00032: 145  pop
+00033: 145  getlocal 0
+00036: 145  dup
+00037: 145  callprop "init"
+00042: 145  swap
+00043: 145  notearg
+00044: 145  getarg 0
+00047: 145  notearg
+00048: 145  getarg 1
+00051: 145  notearg
+00052: 145  call 2
+00055: 145  ifeq 64 (+9)
+00060: 146  getlocal 0
+00063: 146  return
+00064: 148  name "xs"
+00069: 148  dup
+00070: 148  callprop "warn"
+00075: 148  swap
+00076: 148  notearg
+00077: 148  string "xs.Views.TeamGeneralFightAndStrikeView.create error!"
+00082: 148  notearg
+00083: 148  call 1
+00086: 148  pop
+00087: 149  null
+00088: 149  return
+00089: 149  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/TeamGeneralFightAndStrikeView.js:143 ---

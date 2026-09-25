@@ -1,0 +1,383 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/SkillRefining/SkillRefiningScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=109 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Scene"
+00010:   4  name "cc"
+00015:   4  getprop "Scene"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  string "xs.Scene.SkillRefiningScene"
+00038:   5  initprop "name"
+00043:   6  lambda (function () {
+    [sourceless code]
+})
+00048:   6  initprop "ctor"
+00053:  10  lambda (function () {
+    [sourceless code]
+})
+00058:  10  initprop "init"
+00063:  42  lambda (function () {
+    [sourceless code]
+})
+00068:  42  initprop "onEnter"
+00073:  45  lambda (function () {
+    [sourceless code]
+})
+00078:  45  initprop "onExit"
+00083:  45  endinit
+00084:  45  notearg
+00085:  45  call 1
+00088:  45  setprop "SkillRefiningScene"
+00093:  45  popv
+00094:  49  name "xs"
+00099:  49  getprop "Scene"
+00104:  49  getprop "SkillRefiningScene"
+00109:  49  lambda (function () {
+    [sourceless code]
+})
+00114:  49  setprop "create"
+00119:  49  popv
+00120:  59  name "xs"
+00125:  59  getprop "Scene"
+00130:  59  getprop "Mgr"
+00135:  59  dup
+00136:  59  callprop "registerScene"
+00141:  59  swap
+00142:  59  notearg
+00143:  59  string "SkillRefiningScene"
+00148:  59  notearg
+00149:  59  newinit 1
+00154:  60  name "xs"
+00159:  60  getprop "Scene"
+00164:  60  getprop "SkillRefiningScene"
+00169:  60  initprop "class"
+00174:  61  name "xs"
+00179:  61  getprop "Constant_SceneType_Challenge"
+00184:  61  initprop "type"
+00189:  62  newarray 1
+00193:  62  string "MiracleWeaponsScene"
+00198:  62  initelem_array 0
+00202:  62  endinit
+00203:  62  initprop "area"
+00208:  62  endinit
+00209:  62  notearg
+00210:  62  call 2
+00213:  62  popv
+00214:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "Scene"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] skillRefiningLayer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  15  name "xs"
+00025:  15  getprop "Tools"
+00030:  15  getprop "UI"
+00035:  15  dup
+00036:  15  callprop "addCommonBg"
+00041:  15  swap
+00042:  15  notearg
+00043:  15  this
+00044:  15  notearg
+00045:  15  true
+00046:  15  notearg
+00047:  15  true
+00048:  15  notearg
+00049:  15  call 3
+00052:  15  pop
+00053:  16  this
+00054:  16  name "xs"
+00059:  16  getprop "Factorys"
+00064:  16  getprop "Sprite"
+00069:  16  dup
+00070:  16  callprop "create"
+00075:  16  swap
+00076:  16  notearg
+00077:  16  string "MiracleWeapons_beijing"
+00082:  16  notearg
+00083:  16  string "MiracleWeaponsScene"
+00088:  16  notearg
+00089:  16  call 2
+00092:  16  setprop "m_GeneralBg"
+00097:  16  pop
+00098:  17  name "xs"
+00103:  17  getprop "Tools"
+00108:  17  getprop "UI"
+00113:  17  dup
+00114:  17  callprop "addSpriteAsBg"
+00119:  17  swap
+00120:  17  notearg
+00121:  17  this
+00122:  17  notearg
+00123:  17  this
+00124:  17  getprop "m_GeneralBg"
+00129:  17  notearg
+00130:  17  call 2
+00133:  17  pop
+00134:  20  this
+00135:  20  name "xs"
+00140:  20  getprop "Tools"
+00145:  20  getprop "UI"
+00150:  20  dup
+00151:  20  callprop "addShortcutBoard"
+00156:  20  swap
+00157:  20  notearg
+00158:  20  this
+00159:  20  notearg
+00160:  20  true
+00161:  20  notearg
+00162:  20  name "xs"
+00167:  20  getprop "Cfg"
+00172:  20  getprop "Scene"
+00177:  20  getprop "SkillScene"
+00182:  20  getprop "mainmenu"
+00187:  20  notearg
+00188:  20  call 3
+00191:  20  setprop "m_mainMenu"
+00196:  20  pop
+00197:  23  name "xs"
+00202:  23  getprop "Views"
+00207:  23  getprop "SkillRefiningLayer"
+00212:  23  dup
+00213:  23  callprop "create"
+00218:  23  swap
+00219:  23  notearg
+00220:  23  getarg 0
+00223:  23  notearg
+00224:  23  call 1
+00227:  23  setlocal 0
+00230:  23  pop
+00231:  24  getlocal 0
+00234:  24  dup
+00235:  24  callprop "setAnchorPoint"
+00240:  24  swap
+00241:  24  notearg
+00242:  24  name "cc"
+00247:  24  dup
+00248:  24  callprop "p"
+00253:  24  swap
+00254:  24  notearg
+00255:  24  zero
+00256:  24  notearg
+00257:  24  zero
+00258:  24  notearg
+00259:  24  call 2
+00262:  24  notearg
+00263:  24  call 1
+00266:  24  pop
+00267:  25  name "xs"
+00272:  25  getprop "Utils"
+00277:  25  getprop "Node"
+00282:  25  dup
+00283:  25  callprop "attachNodes"
+00288:  25  swap
+00289:  25  notearg
+00290:  25  this
+00291:  25  notearg
+00292:  25  getlocal 0
+00295:  25  notearg
+00296:  25  newinit 1
+00301:  26  string "lb"
+00306:  26  initprop "desc"
+00311:  27  true
+00312:  27  initprop "sc"
+00317:  27  endinit
+00318:  27  notearg
+00319:  27  call 3
+00322:  27  pop
+00323:  32  this
+00324:  32  name "xs"
+00329:  32  getprop "Views"
+00334:  32  getprop "PlayerInfoBannerSimpleView"
+00339:  32  dup
+00340:  32  callprop "create"
+00345:  32  swap
+00346:  32  notearg
+00347:  32  call 0
+00350:  32  setprop "m_infoBar"
+00355:  32  pop
+00356:  33  this
+00357:  33  getprop "m_infoBar"
+00362:  33  dup
+00363:  33  callprop "setAnchorPoint"
+00368:  33  swap
+00369:  33  notearg
+00370:  33  name "cc"
+00375:  33  dup
+00376:  33  callprop "p"
+00381:  33  swap
+00382:  33  notearg
+00383:  33  zero
+00384:  33  notearg
+00385:  33  one
+00386:  33  notearg
+00387:  33  call 2
+00390:  33  notearg
+00391:  33  call 1
+00394:  33  pop
+00395:  34  name "xs"
+00400:  34  getprop "Utils"
+00405:  34  getprop "Node"
+00410:  34  dup
+00411:  34  callprop "attachNodes"
+00416:  34  swap
+00417:  34  notearg
+00418:  34  this
+00419:  34  notearg
+00420:  34  this
+00421:  34  getprop "m_infoBar"
+00426:  34  notearg
+00427:  34  newinit 1
+00432:  35  string "lt"
+00437:  35  initprop "desc"
+00442:  36  true
+00443:  36  initprop "sc"
+00448:  36  endinit
+00449:  36  notearg
+00450:  36  call 3
+00453:  36  pop
+00454:  40  true
+00455:  40  return
+00456:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:10 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:42 ---
+loc   line  op
+----- ----  --
+main:
+00000:  43  this
+00001:  43  dup
+00002:  43  callprop "_super"
+00007:  43  swap
+00008:  43  notearg
+00009:  43  call 0
+00012:  43  pop
+00013:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:42 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  this
+00001:  46  dup
+00002:  46  callprop "_super"
+00007:  46  swap
+00008:  46  notearg
+00009:  46  call 0
+00012:  46  pop
+00013:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:45 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  name "xs"
+00005:  50  getprop "Scene"
+00010:  50  getprop "SkillRefiningScene"
+00015:  50  undefined
+00016:  50  notearg
+00017:  50  new 0
+00020:  50  setlocal 0
+00023:  50  pop
+00024:  52  getlocal 0
+00027:  52  and 51 (+24)
+00032:  52  pop
+00033:  52  getlocal 0
+00036:  52  dup
+00037:  52  callprop "init"
+00042:  52  swap
+00043:  52  notearg
+00044:  52  getarg 0
+00047:  52  notearg
+00048:  52  call 1
+00051:  52  ifeq 60 (+9)
+00056:  53  getlocal 0
+00059:  53  return
+00060:  55  name "xs"
+00065:  55  dup
+00066:  55  callprop "assert"
+00071:  55  swap
+00072:  55  notearg
+00073:  55  false
+00074:  55  notearg
+00075:  55  string "xs.Scene.SkillRefiningScene.create error!"
+00080:  55  notearg
+00081:  55  call 2
+00084:  55  pop
+00085:  56  null
+00086:  56  return
+00087:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/SkillRefining/SkillRefiningScene.js:49 ---

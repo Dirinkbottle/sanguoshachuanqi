@@ -1,0 +1,1599 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/AnySdk/AnySdkCallback.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=36 object[0]
+;; FUNCTION-MAP kind=lambda offset=46 object[1]
+;; FUNCTION-MAP kind=lambda offset=56 object[2]
+;; FUNCTION-MAP kind=lambda offset=66 object[3]
+;; FUNCTION-MAP kind=lambda offset=76 object[4]
+;; FUNCTION-MAP kind=lambda offset=86 object[5]
+;; FUNCTION-MAP kind=lambda offset=96 object[6]
+;; FUNCTION-MAP kind=lambda offset=106 object[7]
+;; FUNCTION-MAP kind=lambda offset=116 object[8]
+;; FUNCTION-MAP kind=lambda offset=126 object[9]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "AnySdk"
+00010:   5  name "xs"
+00015:   5  getprop "AnySdk"
+00020:   5  getprop "AnySdkCallback"
+00025:   5  or 137 (+112)
+00030:   5  pop
+00031:   5  newinit 1
+00036:   9  lambda (function () {
+    [sourceless code]
+})
+00041:   9  initprop "onUserPluginCallBack"
+00046:  96  lambda (function () {
+    [sourceless code]
+})
+00051:  96  initprop "onPayResult"
+00056: 145  lambda (function () {
+    [sourceless code]
+})
+00061: 145  initprop "onInitSuccess"
+00066: 153  lambda (function () {
+    [sourceless code]
+})
+00071: 153  initprop "onLoginSuccess"
+00076: 186  lambda (function () {
+    [sourceless code]
+})
+00081: 186  initprop "onLoginFail"
+00086: 199  lambda (function () {
+    [sourceless code]
+})
+00091: 199  initprop "onLoginCancel"
+00096: 210  lambda (function () {
+    [sourceless code]
+})
+00101: 210  initprop "onLogoutSuccess"
+00106: 226  lambda (function () {
+    [sourceless code]
+})
+00111: 226  initprop "onAccountSwitchSuccess"
+00116: 262  lambda (function () {
+    [sourceless code]
+})
+00121: 262  initprop "onPaySuccess"
+00126: 278  lambda (function () {
+    [sourceless code]
+})
+00131: 278  initprop "onPayNowPaying"
+00136: 278  endinit
+00137: 278  setprop "AnySdkCallback"
+00142: 278  popv
+00143: 282  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:1 ---
+;; function object[0] onUserPluginCallBack
+;; function metadata object[0] nargs=3 bindings=3
+;; arg[0] plugin
+;; arg[1] code
+;; arg[2] msg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "cc"
+00005:  10  dup
+00006:  10  callprop "log"
+00011:  10  swap
+00012:  10  notearg
+00013:  10  string "onUserPluginCallBack->>> plugin = "
+00018:  10  getarg 0
+00021:  10  add
+00022:  10  string ",code = "
+00027:  10  add
+00028:  10  getarg 1
+00031:  10  add
+00032:  10  string ",msg = "
+00037:  10  add
+00038:  10  getarg 2
+00041:  10  add
+00042:  10  notearg
+00043:  10  call 1
+00046:  10  pop
+00047:  12  getarg 1
+00050:  12  name "UserActionResultCode"
+00055:  12  getprop "kInitSuccess"
+00060:  12  ne
+00061:  12  and 81 (+20)
+00066:  12  pop
+00067:  12  getarg 1
+00070:  12  name "UserActionResultCode"
+00075:  12  getprop "kInitFail"
+00080:  12  ne
+00081:  12  ifeq 113 (+32)
+00086:  13  name "xs"
+00091:  13  getprop "Views"
+00096:  13  getprop "Mgr"
+00101:  13  dup
+00102:  13  callprop "dismissLoadingLayer"
+00107:  13  swap
+00108:  13  notearg
+00109:  13  call 0
+00112:  13  pop
+00113:  16  getarg 1
+00116:  16  condswitch
+00117:  17  name "UserActionResultCode"
+00122:  17  getprop "kInitSuccess"
+00127:  17  case 392 (+265)
+00132:  22  name "UserActionResultCode"
+00137:  22  getprop "kInitFail"
+00142:  22  case 433 (+291)
+00147:  28  name "UserActionResultCode"
+00152:  28  getprop "kLoginSuccess"
+00157:  28  case 545 (+388)
+00162:  33  name "UserActionResultCode"
+00167:  33  getprop "kLoginNetworkError"
+00172:  33  case 590 (+418)
+00177:  38  name "UserActionResultCode"
+00182:  38  getprop "kLoginNoNeed"
+00187:  38  case 733 (+546)
+00192:  40  name "UserActionResultCode"
+00197:  40  getprop "kLoginFail"
+00202:  40  case 738 (+536)
+00207:  45  name "UserActionResultCode"
+00212:  45  getprop "kLoginCancel"
+00217:  45  case 824 (+607)
+00222:  49  name "UserActionResultCode"
+00227:  49  getprop "kLogoutSuccess"
+00232:  49  case 869 (+637)
+00237:  53  name "UserActionResultCode"
+00242:  53  getprop "kLogoutFail"
+00247:  53  case 910 (+663)
+00252:  57  name "UserActionResultCode"
+00257:  57  getprop "kPlatformEnter"
+00262:  57  case 975 (+713)
+00267:  60  name "UserActionResultCode"
+00272:  60  getprop "kPlatformBack"
+00277:  60  case 1003 (+726)
+00282:  63  name "UserActionResultCode"
+00287:  63  getprop "kPausePage"
+00292:  63  case 1031 (+739)
+00297:  65  name "UserActionResultCode"
+00302:  65  getprop "kExitPage"
+00307:  65  case 1036 (+729)
+00312:  69  name "UserActionResultCode"
+00317:  69  getprop "kAntiAddictionQuery"
+00322:  69  case 1115 (+793)
+00327:  71  name "UserActionResultCode"
+00332:  71  getprop "kRealNameRegister"
+00337:  71  case 1120 (+783)
+00342:  73  name "UserActionResultCode"
+00347:  73  getprop "kAccountSwitchSuccess"
+00352:  73  case 1125 (+773)
+00357:  77  name "UserActionResultCode"
+00362:  77  getprop "kAccountSwitchFail"
+00367:  77  case 1170 (+803)
+00372:  84  name "UserActionResultCode"
+00377:  84  getprop "kOpenShop"
+00382:  84  case 1281 (+899)
+00387:  84  default 1286 (+899)
+00392:  18  name "xs"
+00397:  18  dup
+00398:  18  callprop "log"
+00403:  18  swap
+00404:  18  notearg
+00405:  18  string "sdk\u521D\u59CB\u5316\u6210\u529F"
+00410:  18  notearg
+00411:  18  call 1
+00414:  18  pop
+00415:  19  this
+00416:  19  dup
+00417:  19  callprop "onInitSuccess"
+00422:  19  swap
+00423:  19  notearg
+00424:  19  call 0
+00427:  19  pop
+00428:  20  goto 1359 (+931)
+00433:  23  name "xs"
+00438:  23  dup
+00439:  23  callprop "log"
+00444:  23  swap
+00445:  23  notearg
+00446:  23  string "\u521D\u59CB\u5316\u5931\u8D25"
+00451:  23  notearg
+00452:  23  call 1
+00455:  23  pop
+00456:  24  name "xs"
+00461:  24  getprop "Tools"
+00466:  24  getprop "Statistic"
+00471:  24  dup
+00472:  24  callprop "anySdk_ErrCodeEvent"
+00477:  24  swap
+00478:  24  notearg
+00479:  24  string "anySdk_userInitFail"
+00484:  24  notearg
+00485:  24  call 1
+00488:  24  pop
+00489:  25  name "xs"
+00494:  25  getprop "JsbConnecter"
+00499:  25  dup
+00500:  25  callprop "getInstance"
+00505:  25  swap
+00506:  25  notearg
+00507:  25  call 0
+00510:  25  dup
+00511:  25  callprop "invoke"
+00516:  25  swap
+00517:  25  notearg
+00518:  25  string "GlobalMethod"
+00523:  25  notearg
+00524:  25  string "exitGame"
+00529:  25  notearg
+00530:  25  string ""
+00535:  25  notearg
+00536:  25  call 3
+00539:  25  pop
+00540:  26  goto 1359 (+819)
+00545:  29  name "xs"
+00550:  29  dup
+00551:  29  callprop "log"
+00556:  29  swap
+00557:  29  notearg
+00558:  29  string "\u767B\u5F55\u6210\u529F"
+00563:  29  notearg
+00564:  29  call 1
+00567:  29  pop
+00568:  30  this
+00569:  30  dup
+00570:  30  callprop "onLoginSuccess"
+00575:  30  swap
+00576:  30  notearg
+00577:  30  getarg 2
+00580:  30  notearg
+00581:  30  call 1
+00584:  30  pop
+00585:  31  goto 1359 (+774)
+00590:  34  name "xs"
+00595:  34  dup
+00596:  34  callprop "log"
+00601:  34  swap
+00602:  34  notearg
+00603:  34  string "\u767B\u5F55\u5931\u8D25,\u7F51\u7EDC\u9519\u8BEF"
+00608:  34  notearg
+00609:  34  call 1
+00612:  34  pop
+00613:  35  name "xs"
+00618:  35  getprop "Tools"
+00623:  35  getprop "Statistic"
+00628:  35  dup
+00629:  35  callprop "anySdk_ErrCodeEvent"
+00634:  35  swap
+00635:  35  notearg
+00636:  35  string "anySdk_loginFail"
+00641:  35  notearg
+00642:  35  getarg 1
+00645:  35  notearg
+00646:  35  call 2
+00649:  35  pop
+00650:  36  name "xs"
+00655:  36  getprop "JsbConnecter"
+00660:  36  dup
+00661:  36  callprop "getInstance"
+00666:  36  swap
+00667:  36  notearg
+00668:  36  call 0
+00671:  36  dup
+00672:  36  callprop "invoke"
+00677:  36  swap
+00678:  36  notearg
+00679:  36  string "GlobalMethod"
+00684:  36  notearg
+00685:  36  string "showMessageBox_Android"
+00690:  36  notearg
+00691:  36  name "xs"
+00696:  36  getprop "Tools"
+00701:  36  getprop "String"
+00706:  36  dup
+00707:  36  callprop "createString"
+00712:  36  swap
+00713:  36  notearg
+00714:  36  string "toast_CheckNetwork"
+00719:  36  notearg
+00720:  36  call 1
+00723:  36  notearg
+00724:  36  call 3
+00727:  36  pop
+00728:  37  goto 1359 (+631)
+00733:  39  goto 1359 (+626)
+00738:  41  name "xs"
+00743:  41  dup
+00744:  41  callprop "log"
+00749:  41  swap
+00750:  41  notearg
+00751:  41  string "\u767B\u5F55\u5931\u8D25"
+00756:  41  notearg
+00757:  41  call 1
+00760:  41  pop
+00761:  42  name "xs"
+00766:  42  getprop "Tools"
+00771:  42  getprop "Statistic"
+00776:  42  dup
+00777:  42  callprop "anySdk_ErrCodeEvent"
+00782:  42  swap
+00783:  42  notearg
+00784:  42  string "anySdk_loginFail"
+00789:  42  notearg
+00790:  42  getarg 1
+00793:  42  notearg
+00794:  42  getarg 2
+00797:  42  notearg
+00798:  42  call 3
+00801:  42  pop
+00802:  43  this
+00803:  43  dup
+00804:  43  callprop "onLoginFail"
+00809:  43  swap
+00810:  43  notearg
+00811:  43  getarg 2
+00814:  43  notearg
+00815:  43  call 1
+00818:  43  pop
+00819:  44  goto 1359 (+540)
+00824:  46  name "xs"
+00829:  46  dup
+00830:  46  callprop "log"
+00835:  46  swap
+00836:  46  notearg
+00837:  46  string "\u767B\u5F55\u53D6\u6D88"
+00842:  46  notearg
+00843:  46  call 1
+00846:  46  pop
+00847:  47  this
+00848:  47  dup
+00849:  47  callprop "onLoginCancel"
+00854:  47  swap
+00855:  47  notearg
+00856:  47  getarg 2
+00859:  47  notearg
+00860:  47  call 1
+00863:  47  pop
+00864:  48  goto 1359 (+495)
+00869:  50  name "xs"
+00874:  50  dup
+00875:  50  callprop "log"
+00880:  50  swap
+00881:  50  notearg
+00882:  50  string "\u767B\u51FA\u6210\u529F"
+00887:  50  notearg
+00888:  50  call 1
+00891:  50  pop
+00892:  51  this
+00893:  51  dup
+00894:  51  callprop "onLogoutSuccess"
+00899:  51  swap
+00900:  51  notearg
+00901:  51  call 0
+00904:  51  pop
+00905:  52  goto 1359 (+454)
+00910:  54  name "xs"
+00915:  54  getprop "Tools"
+00920:  54  getprop "Statistic"
+00925:  54  dup
+00926:  54  callprop "anySdk_ErrCodeEvent"
+00931:  54  swap
+00932:  54  notearg
+00933:  54  string "anySdk_logoutFail"
+00938:  54  notearg
+00939:  54  getarg 1
+00942:  54  notearg
+00943:  54  call 2
+00946:  54  pop
+00947:  55  name "xs"
+00952:  55  dup
+00953:  55  callprop "log"
+00958:  55  swap
+00959:  55  notearg
+00960:  55  string "\u767B\u51FA\u5931\u8D25"
+00965:  55  notearg
+00966:  55  call 1
+00969:  55  pop
+00970:  56  goto 1359 (+389)
+00975:  58  name "xs"
+00980:  58  dup
+00981:  58  callprop "log"
+00986:  58  swap
+00987:  58  notearg
+00988:  58  string "\u6253\u5F00\u7528\u6237\u4E2D\u5FC3"
+00993:  58  notearg
+00994:  58  call 1
+00997:  58  pop
+00998:  59  goto 1359 (+361)
+01003:  61  name "xs"
+01008:  61  dup
+01009:  61  callprop "log"
+01014:  61  swap
+01015:  61  notearg
+01016:  61  string "\u5173\u95ED\u7528\u6237\u4E2D\u5FC3"
+01021:  61  notearg
+01022:  61  call 1
+01025:  61  pop
+01026:  62  goto 1359 (+333)
+01031:  64  goto 1359 (+328)
+01036:  66  name "xs"
+01041:  66  dup
+01042:  66  callprop "log"
+01047:  66  swap
+01048:  66  notearg
+01049:  66  string "\u9000\u51FA\u6E38\u620F"
+01054:  66  notearg
+01055:  66  call 1
+01058:  66  pop
+01059:  67  name "xs"
+01064:  67  getprop "JsbConnecter"
+01069:  67  dup
+01070:  67  callprop "getInstance"
+01075:  67  swap
+01076:  67  notearg
+01077:  67  call 0
+01080:  67  dup
+01081:  67  callprop "invoke"
+01086:  67  swap
+01087:  67  notearg
+01088:  67  string "GlobalMethod"
+01093:  67  notearg
+01094:  67  string "exitGame"
+01099:  67  notearg
+01100:  67  string ""
+01105:  67  notearg
+01106:  67  call 3
+01109:  67  pop
+01110:  68  goto 1359 (+249)
+01115:  70  goto 1359 (+244)
+01120:  72  goto 1359 (+239)
+01125:  74  name "xs"
+01130:  74  dup
+01131:  74  callprop "log"
+01136:  74  swap
+01137:  74  notearg
+01138:  74  string "\u5207\u6362\u5E10\u53F7\u6210\u529F"
+01143:  74  notearg
+01144:  74  call 1
+01147:  74  pop
+01148:  75  this
+01149:  75  dup
+01150:  75  callprop "onAccountSwitchSuccess"
+01155:  75  swap
+01156:  75  notearg
+01157:  75  getarg 2
+01160:  75  notearg
+01161:  75  call 1
+01164:  75  pop
+01165:  76  goto 1359 (+194)
+01170:  78  name "xs"
+01175:  78  getprop "AnySdk"
+01180:  78  getprop "AnySdkHelp_js"
+01185:  78  dup
+01186:  78  callprop "getChannelId"
+01191:  78  swap
+01192:  78  notearg
+01193:  78  call 0
+01196:  78  string "000054"
+01201:  78  eq
+01202:  78  ifeq 1220 (+18)
+01207:  79  this
+01208:  79  dup
+01209:  79  callprop "onLogoutSuccess"
+01214:  79  swap
+01215:  79  notearg
+01216:  79  call 0
+01219:  79  pop
+01220:  81  name "xs"
+01225:  81  getprop "Tools"
+01230:  81  getprop "Statistic"
+01235:  81  dup
+01236:  81  callprop "anySdk_ErrCodeEvent"
+01241:  81  swap
+01242:  81  notearg
+01243:  81  string "anySdk_switchFail"
+01248:  81  notearg
+01249:  81  call 1
+01252:  81  pop
+01253:  82  name "xs"
+01258:  82  dup
+01259:  82  callprop "log"
+01264:  82  swap
+01265:  82  notearg
+01266:  82  string "\u5207\u6362\u5E10\u53F7\u5931\u8D25"
+01271:  82  notearg
+01272:  82  call 1
+01275:  82  pop
+01276:  83  goto 1359 (+83)
+01281:  85  goto 1359 (+78)
+01286:  87  name "xs"
+01291:  87  dup
+01292:  87  callprop "log"
+01297:  87  swap
+01298:  87  notearg
+01299:  87  string "\u672A\u77E5\u56DE\u8C03,code = "
+01304:  87  getarg 1
+01307:  87  add
+01308:  87  notearg
+01309:  87  call 1
+01312:  87  pop
+01313:  88  name "xs"
+01318:  88  getprop "Tools"
+01323:  88  getprop "Statistic"
+01328:  88  dup
+01329:  88  callprop "anySdk_ErrCodeEvent"
+01334:  88  swap
+01335:  88  notearg
+01336:  88  string "anySdk_unKnowUserSys"
+01341:  88  notearg
+01342:  88  getarg 1
+01345:  88  notearg
+01346:  88  getarg 2
+01349:  88  notearg
+01350:  88  call 3
+01353:  88  pop
+01354:  89  goto 1359 (+5)
+01359:  90  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:9 ---
+;; function object[1] onPayResult
+;; function metadata object[1] nargs=3 bindings=3
+;; arg[0] code
+;; arg[1] msg
+;; arg[2] info
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:96 ---
+loc   line  op
+----- ----  --
+main:
+00000:  97  name "cc"
+00005:  97  dup
+00006:  97  callprop "log"
+00011:  97  swap
+00012:  97  notearg
+00013:  97  string "onIapPluginCallback->>>code = "
+00018:  97  getarg 0
+00021:  97  add
+00022:  97  string ", msg = "
+00027:  97  add
+00028:  97  getarg 1
+00031:  97  add
+00032:  97  string ", info = "
+00037:  97  add
+00038:  97  getarg 2
+00041:  97  add
+00042:  97  notearg
+00043:  97  call 1
+00046:  97  pop
+00047: 100  getarg 0
+00050: 100  name "PayResultCode"
+00055: 100  getprop "kPayInitSuccess"
+00060: 100  ne
+00061: 100  and 81 (+20)
+00066: 100  pop
+00067: 100  getarg 0
+00070: 100  name "PayResultCode"
+00075: 100  getprop "kPayInitFail"
+00080: 100  ne
+00081: 100  ifeq 113 (+32)
+00086: 101  name "xs"
+00091: 101  getprop "Views"
+00096: 101  getprop "Mgr"
+00101: 101  dup
+00102: 101  callprop "dismissLoadingLayer_ext"
+00107: 101  swap
+00108: 101  notearg
+00109: 101  call 0
+00112: 101  pop
+00113: 104  getarg 0
+00116: 104  condswitch
+00117: 105  name "PayResultCode"
+00122: 105  getprop "kPaySuccess"
+00127: 105  case 257 (+130)
+00132: 109  name "PayResultCode"
+00137: 109  getprop "kPayFail"
+00142: 109  case 298 (+156)
+00147: 113  name "PayResultCode"
+00152: 113  getprop "kPayCancel"
+00157: 113  case 367 (+210)
+00162: 116  name "PayResultCode"
+00167: 116  getprop "kPayNetworkError"
+00172: 116  case 395 (+223)
+00177: 121  name "PayResultCode"
+00182: 121  getprop "kPayProductionInforIncomplete"
+00187: 121  case 538 (+351)
+00192: 125  name "PayResultCode"
+00197: 125  getprop "kPayInitSuccess"
+00202: 125  case 658 (+456)
+00207: 128  name "PayResultCode"
+00212: 128  getprop "kPayInitFail"
+00217: 128  case 686 (+469)
+00222: 132  name "PayResultCode"
+00227: 132  getprop "kPayNowPaying"
+00232: 132  case 747 (+515)
+00237: 136  name "PayResultCode"
+00242: 136  getprop "kPayRechareSuccess"
+00247: 136  case 788 (+541)
+00252: 136  default 793 (+541)
+00257: 106  name "xs"
+00262: 106  dup
+00263: 106  callprop "log"
+00268: 106  swap
+00269: 106  notearg
+00270: 106  string "\u652F\u4ED8\u6210\u529F"
+00275: 106  notearg
+00276: 106  call 1
+00279: 106  pop
+00280: 107  this
+00281: 107  dup
+00282: 107  callprop "onPaySuccess"
+00287: 107  swap
+00288: 107  notearg
+00289: 107  call 0
+00292: 107  pop
+00293: 108  goto 866 (+573)
+00298: 110  name "xs"
+00303: 110  dup
+00304: 110  callprop "log"
+00309: 110  swap
+00310: 110  notearg
+00311: 110  string "\u652F\u4ED8\u5931\u8D25"
+00316: 110  notearg
+00317: 110  call 1
+00320: 110  pop
+00321: 111  name "xs"
+00326: 111  getprop "Tools"
+00331: 111  getprop "Statistic"
+00336: 111  dup
+00337: 111  callprop "anySdk_ErrCodeEvent"
+00342: 111  swap
+00343: 111  notearg
+00344: 111  string "anySdk_PayFail"
+00349: 111  notearg
+00350: 111  getarg 0
+00353: 111  notearg
+00354: 111  getarg 1
+00357: 111  notearg
+00358: 111  call 3
+00361: 111  pop
+00362: 112  goto 866 (+504)
+00367: 114  name "xs"
+00372: 114  dup
+00373: 114  callprop "log"
+00378: 114  swap
+00379: 114  notearg
+00380: 114  string "\u652F\u4ED8\u53D6\u6D88"
+00385: 114  notearg
+00386: 114  call 1
+00389: 114  pop
+00390: 115  goto 866 (+476)
+00395: 117  name "xs"
+00400: 117  dup
+00401: 117  callprop "log"
+00406: 117  swap
+00407: 117  notearg
+00408: 117  string "\u652F\u4ED8\u5931\u8D25,\u7F51\u7EDC\u9519\u8BEF"
+00413: 117  notearg
+00414: 117  call 1
+00417: 117  pop
+00418: 118  name "xs"
+00423: 118  getprop "JsbConnecter"
+00428: 118  dup
+00429: 118  callprop "getInstance"
+00434: 118  swap
+00435: 118  notearg
+00436: 118  call 0
+00439: 118  dup
+00440: 118  callprop "invoke"
+00445: 118  swap
+00446: 118  notearg
+00447: 118  string "GlobalMethod"
+00452: 118  notearg
+00453: 118  string "showMessageBox_Android"
+00458: 118  notearg
+00459: 118  name "xs"
+00464: 118  getprop "Tools"
+00469: 118  getprop "String"
+00474: 118  dup
+00475: 118  callprop "createString"
+00480: 118  swap
+00481: 118  notearg
+00482: 118  string "toast_CheckNetwork_pay"
+00487: 118  notearg
+00488: 118  call 1
+00491: 118  notearg
+00492: 118  call 3
+00495: 118  pop
+00496: 119  name "xs"
+00501: 119  getprop "Tools"
+00506: 119  getprop "Statistic"
+00511: 119  dup
+00512: 119  callprop "anySdk_ErrCodeEvent"
+00517: 119  swap
+00518: 119  notearg
+00519: 119  string "anySdk_PayFail"
+00524: 119  notearg
+00525: 119  getarg 0
+00528: 119  notearg
+00529: 119  call 2
+00532: 119  pop
+00533: 120  goto 866 (+333)
+00538: 122  name "xs"
+00543: 122  getprop "JsbConnecter"
+00548: 122  dup
+00549: 122  callprop "getInstance"
+00554: 122  swap
+00555: 122  notearg
+00556: 122  call 0
+00559: 122  dup
+00560: 122  callprop "invoke"
+00565: 122  swap
+00566: 122  notearg
+00567: 122  string "GlobalMethod"
+00572: 122  notearg
+00573: 122  string "showMessageBox_Android"
+00578: 122  notearg
+00579: 122  name "xs"
+00584: 122  getprop "Tools"
+00589: 122  getprop "String"
+00594: 122  dup
+00595: 122  callprop "createString"
+00600: 122  swap
+00601: 122  notearg
+00602: 122  string "toast_OrderInformation"
+00607: 122  notearg
+00608: 122  call 1
+00611: 122  notearg
+00612: 122  call 3
+00615: 122  pop
+00616: 123  name "xs"
+00621: 123  getprop "Tools"
+00626: 123  getprop "Statistic"
+00631: 123  dup
+00632: 123  callprop "anySdk_ErrCodeEvent"
+00637: 123  swap
+00638: 123  notearg
+00639: 123  string "anySdk_PayFail"
+00644: 123  notearg
+00645: 123  getarg 0
+00648: 123  notearg
+00649: 123  call 2
+00652: 123  pop
+00653: 124  goto 866 (+213)
+00658: 126  name "xs"
+00663: 126  dup
+00664: 126  callprop "log"
+00669: 126  swap
+00670: 126  notearg
+00671: 126  string "\u652F\u4ED8\u7CFB\u7EDF\u521D\u59CB\u5316\u6210\u529F"
+00676: 126  notearg
+00677: 126  call 1
+00680: 126  pop
+00681: 127  goto 866 (+185)
+00686: 129  name "xs"
+00691: 129  dup
+00692: 129  callprop "log"
+00697: 129  swap
+00698: 129  notearg
+00699: 129  string "\u652F\u4ED8\u7CFB\u7EDF\u521D\u59CB\u5316\u5931\u8D25"
+00704: 129  notearg
+00705: 129  call 1
+00708: 129  pop
+00709: 130  name "xs"
+00714: 130  getprop "Tools"
+00719: 130  getprop "Statistic"
+00724: 130  dup
+00725: 130  callprop "anySdk_ErrCodeEvent"
+00730: 130  swap
+00731: 130  notearg
+00732: 130  string "anySdk_PayInitFail"
+00737: 130  notearg
+00738: 130  call 1
+00741: 130  pop
+00742: 131  goto 866 (+124)
+00747: 133  name "xs"
+00752: 133  dup
+00753: 133  callprop "log"
+00758: 133  swap
+00759: 133  notearg
+00760: 133  string "\u6B63\u5728\u652F\u4ED8\u4E2D"
+00765: 133  notearg
+00766: 133  call 1
+00769: 133  pop
+00770: 134  this
+00771: 134  dup
+00772: 134  callprop "onPayNowPaying"
+00777: 134  swap
+00778: 134  notearg
+00779: 134  call 0
+00782: 134  pop
+00783: 135  goto 866 (+83)
+00788: 137  goto 866 (+78)
+00793: 139  name "xs"
+00798: 139  dup
+00799: 139  callprop "log"
+00804: 139  swap
+00805: 139  notearg
+00806: 139  string "\u672A\u77E5\u56DE\u8C03,code = "
+00811: 139  getarg 0
+00814: 139  add
+00815: 139  notearg
+00816: 139  call 1
+00819: 139  pop
+00820: 140  name "xs"
+00825: 140  getprop "Tools"
+00830: 140  getprop "Statistic"
+00835: 140  dup
+00836: 140  callprop "anySdk_ErrCodeEvent"
+00841: 140  swap
+00842: 140  notearg
+00843: 140  string "anySdk_unKnowPaySys"
+00848: 140  notearg
+00849: 140  getarg 0
+00852: 140  notearg
+00853: 140  getarg 1
+00856: 140  notearg
+00857: 140  call 3
+00860: 140  pop
+00861: 141  goto 866 (+5)
+00866: 142  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:96 ---
+;; function object[2] onInitSuccess
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:145 ---
+loc   line  op
+----- ----  --
+main:
+00000: 146  name "xs"
+00005: 146  getprop "AnySdk"
+00010: 146  getprop "AnySdkHelp_js"
+00015: 146  dup
+00016: 146  callprop "setInitState"
+00021: 146  swap
+00022: 146  notearg
+00023: 146  true
+00024: 146  notearg
+00025: 146  call 1
+00028: 146  pop
+00029: 147  name "xs"
+00034: 147  getprop "director"
+00039: 147  dup
+00040: 147  callprop "getRunningScene"
+00045: 147  swap
+00046: 147  notearg
+00047: 147  call 0
+00050: 147  null
+00051: 147  ne
+00052: 147  and 116 (+64)
+00057: 147  pop
+00058: 147  name "xs"
+00063: 147  getprop "director"
+00068: 147  dup
+00069: 147  callprop "getRunningScene"
+00074: 147  swap
+00075: 147  notearg
+00076: 147  call 0
+00079: 147  dup
+00080: 147  callprop "getTag"
+00085: 147  swap
+00086: 147  notearg
+00087: 147  call 0
+00090: 147  name "xs"
+00095: 147  getprop "Cfg"
+00100: 147  getprop "Scene"
+00105: 147  getprop "LoginScene"
+00110: 147  getprop "tag"
+00115: 147  eq
+00116: 147  ifeq 148 (+32)
+00121: 148  name "xs"
+00126: 148  getprop "AnySdk"
+00131: 148  getprop "AnySdkHelp_js"
+00136: 148  dup
+00137: 148  callprop "login"
+00142: 148  swap
+00143: 148  notearg
+00144: 148  call 0
+00147: 148  pop
+00148: 149  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:145 ---
+;; function object[3] onLoginSuccess
+;; function metadata object[3] nargs=1 bindings=3
+;; arg[0] msg
+;; local[0] str
+;; local[1] jsonStr
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=201 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:153 ---
+loc   line  op
+----- ----  --
+main:
+00000: 155  name "xs"
+00005: 155  getprop "Tools"
+00010: 155  getprop "Statistic"
+00015: 155  dup
+00016: 155  callprop "anySdkLoginEnterSuccessEvent"
+00021: 155  swap
+00022: 155  notearg
+00023: 155  call 0
+00026: 155  pop
+00027: 157  string ""
+00032: 157  getarg 0
+00035: 157  add
+00036: 157  setlocal 0
+00039: 157  pop
+00040: 158  name "JSON"
+00045: 158  dup
+00046: 158  callprop "parse"
+00051: 158  swap
+00052: 158  notearg
+00053: 158  getlocal 0
+00056: 158  notearg
+00057: 158  call 1
+00060: 158  setlocal 1
+00063: 158  pop
+00064: 159  name "xs"
+00069: 159  dup
+00070: 159  callprop "log"
+00075: 159  swap
+00076: 159  notearg
+00077: 159  string "uid = "
+00082: 159  getlocal 1
+00085: 159  getprop "uid"
+00090: 159  add
+00091: 159  notearg
+00092: 159  call 1
+00095: 159  pop
+00096: 161  name "xs"
+00101: 161  getprop "director"
+00106: 161  dup
+00107: 161  callprop "getRunningScene"
+00112: 161  swap
+00113: 161  notearg
+00114: 161  call 0
+00117: 161  dup
+00118: 161  callprop "runAction"
+00123: 161  swap
+00124: 161  notearg
+00125: 162  name "xs"
+00130: 162  getprop "Utils"
+00135: 162  getprop "Action"
+00140: 162  dup
+00141: 162  callprop "combineSequence"
+00146: 162  swap
+00147: 162  notearg
+00148: 163  newarray 2
+00152: 164  name "cc"
+00157: 164  getprop "DelayTime"
+00162: 164  dup
+00163: 164  callprop "create"
+00168: 164  swap
+00169: 164  notearg
+00170: 164  double 0.5
+00175: 164  notearg
+00176: 164  call 1
+00179: 164  initelem_array 0
+00183: 165  name "cc"
+00188: 165  getprop "CallFunc"
+00193: 165  dup
+00194: 165  callprop "create"
+00199: 165  swap
+00200: 165  notearg
+00201: 166  lambda (function () {
+    [sourceless code]
+})
+00206: 166  dup
+00207: 166  callprop "bind"
+00212: 166  swap
+00213: 166  notearg
+00214: 177  newinit 1
+00219: 178  getlocal 1
+00222: 178  getprop "uid"
+00227: 178  initprop "uid"
+00232: 178  endinit
+00233: 178  notearg
+00234: 178  call 1
+00237: 178  notearg
+00238: 178  call 1
+00241: 178  initelem_array 1
+00245: 178  endinit
+00246: 178  notearg
+00247: 178  call 1
+00250: 178  notearg
+00251: 178  call 1
+00254: 178  pop
+00255: 183  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:153 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:166 ---
+loc   line  op
+----- ----  --
+main:
+00000: 167  name "xs"
+00005: 167  getprop "AnySdk"
+00010: 167  getprop "AnySdkHelp_js"
+00015: 167  dup
+00016: 167  callprop "showToolBar"
+00021: 167  swap
+00022: 167  notearg
+00023: 167  call 0
+00026: 167  pop
+00027: 169  name "xs"
+00032: 169  getprop "director"
+00037: 169  dup
+00038: 169  callprop "getRunningScene"
+00043: 169  swap
+00044: 169  notearg
+00045: 169  call 0
+00048: 169  null
+00049: 169  ne
+00050: 169  and 114 (+64)
+00055: 169  pop
+00056: 169  name "xs"
+00061: 169  getprop "director"
+00066: 169  dup
+00067: 169  callprop "getRunningScene"
+00072: 169  swap
+00073: 169  notearg
+00074: 169  call 0
+00077: 169  dup
+00078: 169  callprop "getTag"
+00083: 169  swap
+00084: 169  notearg
+00085: 169  call 0
+00088: 169  name "xs"
+00093: 169  getprop "Cfg"
+00098: 169  getprop "Scene"
+00103: 169  getprop "LoginScene"
+00108: 169  getprop "tag"
+00113: 169  eq
+00114: 169  ifeq 180 (+66)
+00119: 171  name "xs"
+00124: 171  getprop "Utils"
+00129: 171  getprop "Notify"
+00134: 171  dup
+00135: 171  callprop "postNotification"
+00140: 171  swap
+00141: 171  notearg
+00142: 171  name "xs"
+00147: 171  getprop "Constant_Notify_Event_AnySdkLoginSucess"
+00152: 171  notearg
+00153: 171  newinit 1
+00158: 171  this
+00159: 171  getprop "uid"
+00164: 171  initprop "uidKey"
+00169: 171  endinit
+00170: 171  notearg
+00171: 171  call 2
+00174: 171  pop
+00175: 171  goto 241 (+66)
+00180: 175  name "xs"
+00185: 175  getprop "Scene"
+00190: 175  getprop "Mgr"
+00195: 175  dup
+00196: 175  callprop "changeSceneByName"
+00201: 175  swap
+00202: 175  notearg
+00203: 175  string "LoginScene"
+00208: 175  notearg
+00209: 175  newinit 1
+00214: 175  string "accountSwitchSuccess"
+00219: 175  initprop "funTypeStr"
+00224: 175  this
+00225: 175  getprop "uid"
+00230: 175  initprop "uidKey"
+00235: 175  endinit
+00236: 175  notearg
+00237: 175  call 2
+00240: 175  pop
+00241: 176  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:166 ---
+;; function object[4] onLoginFail
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] msg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:186 ---
+loc   line  op
+----- ----  --
+main:
+00000: 187  getarg 0
+00003: 187  string "login invalid, please try again"
+00008: 187  eq
+00009: 187  ifeq 48 (+39)
+00014: 189  name "xs"
+00019: 189  getprop "AnySdk"
+00024: 189  getprop "AnySdkHelp_js"
+00029: 189  dup
+00030: 189  callprop "logout"
+00035: 189  swap
+00036: 189  notearg
+00037: 189  call 0
+00040: 189  pop
+00041: 190  one
+00042: 190  return
+00043: 190  goto 108 (+65)
+00048: 193  name "xs"
+00053: 193  getprop "Views"
+00058: 193  getprop "Mgr"
+00063: 193  dup
+00064: 193  callprop "showToast"
+00069: 193  swap
+00070: 193  notearg
+00071: 193  name "xs"
+00076: 193  getprop "Tools"
+00081: 193  getprop "String"
+00086: 193  dup
+00087: 193  callprop "createString"
+00092: 193  swap
+00093: 193  notearg
+00094: 193  string "toast_LandingFailure"
+00099: 193  notearg
+00100: 193  call 1
+00103: 193  notearg
+00104: 193  call 1
+00107: 193  pop
+00108: 196  this
+00109: 196  dup
+00110: 196  callprop "onLoginCancel"
+00115: 196  swap
+00116: 196  notearg
+00117: 196  getarg 0
+00120: 196  notearg
+00121: 196  call 1
+00124: 196  pop
+00125: 196  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:186 ---
+;; function object[5] onLoginCancel
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] msg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:199 ---
+loc   line  op
+----- ----  --
+main:
+00000: 200  name "xs"
+00005: 200  getprop "director"
+00010: 200  dup
+00011: 200  callprop "getRunningScene"
+00016: 200  swap
+00017: 200  notearg
+00018: 200  call 0
+00021: 200  null
+00022: 200  ne
+00023: 200  and 87 (+64)
+00028: 200  pop
+00029: 200  name "xs"
+00034: 200  getprop "director"
+00039: 200  dup
+00040: 200  callprop "getRunningScene"
+00045: 200  swap
+00046: 200  notearg
+00047: 200  call 0
+00050: 200  dup
+00051: 200  callprop "getTag"
+00056: 200  swap
+00057: 200  notearg
+00058: 200  call 0
+00061: 200  name "xs"
+00066: 200  getprop "Cfg"
+00071: 200  getprop "Scene"
+00076: 200  getprop "LoginScene"
+00081: 200  getprop "tag"
+00086: 200  eq
+00087: 200  ifeq 97 (+10)
+00092: 200  goto 147 (+55)
+00097: 205  name "xs"
+00102: 205  getprop "Scene"
+00107: 205  getprop "Mgr"
+00112: 205  dup
+00113: 205  callprop "changeSceneByName"
+00118: 205  swap
+00119: 205  notearg
+00120: 205  string "LoginScene"
+00125: 205  notearg
+00126: 205  newinit 1
+00131: 205  string "login"
+00136: 205  initprop "funTypeStr"
+00141: 205  endinit
+00142: 205  notearg
+00143: 205  call 2
+00146: 205  pop
+00147: 206  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:199 ---
+;; function object[6] onLogoutSuccess
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=105 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:210 ---
+loc   line  op
+----- ----  --
+main:
+00000: 211  name "xs"
+00005: 211  getprop "director"
+00010: 211  dup
+00011: 211  callprop "getRunningScene"
+00016: 211  swap
+00017: 211  notearg
+00018: 211  call 0
+00021: 211  dup
+00022: 211  callprop "runAction"
+00027: 211  swap
+00028: 211  notearg
+00029: 212  name "xs"
+00034: 212  getprop "Utils"
+00039: 212  getprop "Action"
+00044: 212  dup
+00045: 212  callprop "combineSequence"
+00050: 212  swap
+00051: 212  notearg
+00052: 213  newarray 2
+00056: 214  name "cc"
+00061: 214  getprop "DelayTime"
+00066: 214  dup
+00067: 214  callprop "create"
+00072: 214  swap
+00073: 214  notearg
+00074: 214  double 0.5
+00079: 214  notearg
+00080: 214  call 1
+00083: 214  initelem_array 0
+00087: 215  name "cc"
+00092: 215  getprop "CallFunc"
+00097: 215  dup
+00098: 215  callprop "create"
+00103: 215  swap
+00104: 215  notearg
+00105: 216  lambda (function () {
+    [sourceless code]
+})
+00110: 216  notearg
+00111: 216  call 1
+00114: 216  initelem_array 1
+00118: 216  endinit
+00119: 216  notearg
+00120: 216  call 1
+00123: 216  notearg
+00124: 216  call 1
+00127: 216  pop
+00128: 222  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:210 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:216 ---
+loc   line  op
+----- ----  --
+main:
+00000: 217  name "xs"
+00005: 217  getprop "Scene"
+00010: 217  getprop "Mgr"
+00015: 217  dup
+00016: 217  callprop "changeSceneByName"
+00021: 217  swap
+00022: 217  notearg
+00023: 217  string "LoginScene"
+00028: 217  notearg
+00029: 217  newinit 1
+00034: 217  string "login"
+00039: 217  initprop "funTypeStr"
+00044: 217  endinit
+00045: 217  notearg
+00046: 217  call 2
+00049: 217  pop
+00050: 217  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:216 ---
+;; function object[7] onAccountSwitchSuccess
+;; function metadata object[7] nargs=1 bindings=3
+;; arg[0] msg
+;; local[0] str
+;; local[1] jsonStr
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=323 object[1]
+;; TRY-NOTE kind=catch start=160 length=29 stackDepth=0 target=189
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:226 ---
+loc   line  op
+----- ----  --
+main:
+00000: 227  name "xs"
+00005: 227  getprop "AnySdk"
+00010: 227  getprop "AnySdkHelp_js"
+00015: 227  dup
+00016: 227  callprop "getChannelId"
+00021: 227  swap
+00022: 227  notearg
+00023: 227  call 0
+00026: 227  string "110000"
+00031: 227  eq
+00032: 227  or 108 (+76)
+00037: 227  pop
+00038: 228  name "xs"
+00043: 228  getprop "AnySdk"
+00048: 228  getprop "AnySdkHelp_js"
+00053: 228  dup
+00054: 228  callprop "getChannelId"
+00059: 228  swap
+00060: 228  notearg
+00061: 228  call 0
+00064: 228  string "000007"
+00069: 228  eq
+00070: 228  or 108 (+38)
+00075: 228  pop
+00076: 229  name "xs"
+00081: 229  getprop "AnySdk"
+00086: 229  getprop "AnySdkHelp_js"
+00091: 229  dup
+00092: 229  callprop "getChannelId"
+00097: 229  swap
+00098: 229  notearg
+00099: 229  call 0
+00102: 229  string "000215"
+00107: 229  eq
+00108: 229  ifeq 142 (+34)
+00113: 231  name "xs"
+00118: 231  getprop "AnySdk"
+00123: 231  getprop "AnySdkHelp_js"
+00128: 231  dup
+00129: 231  callprop "logout"
+00134: 231  swap
+00135: 231  notearg
+00136: 231  call 0
+00139: 231  pop
+00140: 232  one
+00141: 232  return
+00142: 236  string ""
+00147: 236  getarg 0
+00150: 236  add
+00151: 236  setlocal 0
+00154: 236  pop
+00155: 237  getlocal 1
+00158: 237  pop
+00159: 238  try 189 (+30)
+00160: 239  name "JSON"
+00165: 239  dup
+00166: 239  callprop "parse"
+00171: 239  swap
+00172: 239  notearg
+00173: 239  getlocal 0
+00176: 239  notearg
+00177: 239  call 1
+00180: 239  setlocal 1
+00183: 239  pop
+00184: 239  goto 218 (+34)
+00189: 241  enterblock depth 0 {e: 0}
+00194: 241  exception
+00195: 241  setlocal 2
+00198: 241  pop
+00199: 242  newinit 1
+00204: 242  endinit
+00205: 242  setlocal 1
+00208: 242  pop
+00209: 242  leaveblock 1
+00212: 242  goto 218 (+6)
+00217: 242  nop
+00218: 245  name "xs"
+00223: 245  getprop "director"
+00228: 245  dup
+00229: 245  callprop "getRunningScene"
+00234: 245  swap
+00235: 245  notearg
+00236: 245  call 0
+00239: 245  dup
+00240: 245  callprop "runAction"
+00245: 245  swap
+00246: 245  notearg
+00247: 246  name "xs"
+00252: 246  getprop "Utils"
+00257: 246  getprop "Action"
+00262: 246  dup
+00263: 246  callprop "combineSequence"
+00268: 246  swap
+00269: 246  notearg
+00270: 247  newarray 2
+00274: 248  name "cc"
+00279: 248  getprop "DelayTime"
+00284: 248  dup
+00285: 248  callprop "create"
+00290: 248  swap
+00291: 248  notearg
+00292: 248  double 0.5
+00297: 248  notearg
+00298: 248  call 1
+00301: 248  initelem_array 0
+00305: 249  name "cc"
+00310: 249  getprop "CallFunc"
+00315: 249  dup
+00316: 249  callprop "create"
+00321: 249  swap
+00322: 249  notearg
+00323: 250  lambda (function () {
+    [sourceless code]
+})
+00328: 250  dup
+00329: 250  callprop "bind"
+00334: 250  swap
+00335: 250  notearg
+00336: 252  newinit 1
+00341: 253  getlocal 1
+00344: 253  getprop "uid"
+00349: 253  initprop "uid"
+00354: 253  endinit
+00355: 253  notearg
+00356: 253  call 1
+00359: 253  notearg
+00360: 253  call 1
+00363: 253  initelem_array 1
+00367: 253  endinit
+00368: 253  notearg
+00369: 253  call 1
+00372: 253  notearg
+00373: 253  call 1
+00376: 253  pop
+00377: 258  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:226 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:250 ---
+loc   line  op
+----- ----  --
+main:
+00000: 251  name "xs"
+00005: 251  getprop "Scene"
+00010: 251  getprop "Mgr"
+00015: 251  dup
+00016: 251  callprop "changeSceneByName"
+00021: 251  swap
+00022: 251  notearg
+00023: 251  string "LoginScene"
+00028: 251  notearg
+00029: 251  newinit 1
+00034: 251  string "accountSwitchSuccess"
+00039: 251  initprop "funTypeStr"
+00044: 251  this
+00045: 251  getprop "uid"
+00050: 251  initprop "uidKey"
+00055: 251  endinit
+00056: 251  notearg
+00057: 251  call 2
+00060: 251  pop
+00061: 251  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:250 ---
+;; function object[8] onPaySuccess
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=105 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:262 ---
+loc   line  op
+----- ----  --
+main:
+00000: 263  name "xs"
+00005: 263  getprop "director"
+00010: 263  dup
+00011: 263  callprop "getRunningScene"
+00016: 263  swap
+00017: 263  notearg
+00018: 263  call 0
+00021: 263  dup
+00022: 263  callprop "runAction"
+00027: 263  swap
+00028: 263  notearg
+00029: 264  name "xs"
+00034: 264  getprop "Utils"
+00039: 264  getprop "Action"
+00044: 264  dup
+00045: 264  callprop "combineSequence"
+00050: 264  swap
+00051: 264  notearg
+00052: 265  newarray 2
+00056: 266  name "cc"
+00061: 266  getprop "DelayTime"
+00066: 266  dup
+00067: 266  callprop "create"
+00072: 266  swap
+00073: 266  notearg
+00074: 266  double 0.5
+00079: 266  notearg
+00080: 266  call 1
+00083: 266  initelem_array 0
+00087: 267  name "cc"
+00092: 267  getprop "CallFunc"
+00097: 267  dup
+00098: 267  callprop "create"
+00103: 267  swap
+00104: 267  notearg
+00105: 268  lambda (function () {
+    [sourceless code]
+})
+00110: 268  notearg
+00111: 268  call 1
+00114: 268  initelem_array 1
+00118: 268  endinit
+00119: 268  notearg
+00120: 268  call 1
+00123: 268  notearg
+00124: 268  call 1
+00127: 268  pop
+00128: 275  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:262 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:268 ---
+loc   line  op
+----- ----  --
+main:
+00000: 269  name "xs"
+00005: 269  getprop "Views"
+00010: 269  getprop "Mgr"
+00015: 269  dup
+00016: 269  callprop "showDialogByName"
+00021: 269  swap
+00022: 269  notearg
+00023: 269  string "CheckOrderDialog"
+00028: 269  notearg
+00029: 270  newinit 1
+00034: 270  name "xs"
+00039: 270  getprop "Constant_Pay_Source_Zhifubao"
+00044: 270  initprop "channelId"
+00049: 270  endinit
+00050: 270  notearg
+00051: 270  call 2
+00054: 270  pop
+00055: 270  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:268 ---
+;; function object[9] onPayNowPaying
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:278 ---
+loc   line  op
+----- ----  --
+main:
+00000: 279  name "xs"
+00005: 279  getprop "AnySdk"
+00010: 279  getprop "AnySdkHelp_js"
+00015: 279  dup
+00016: 279  callprop "resetPayState"
+00021: 279  swap
+00022: 279  notearg
+00023: 279  call 0
+00026: 279  pop
+00027: 280  name "xs"
+00032: 280  getprop "Views"
+00037: 280  getprop "Mgr"
+00042: 280  dup
+00043: 280  callprop "showToast"
+00048: 280  swap
+00049: 280  notearg
+00050: 280  name "xs"
+00055: 280  getprop "Tools"
+00060: 280  getprop "String"
+00065: 280  dup
+00066: 280  callprop "createString"
+00071: 280  swap
+00072: 280  notearg
+00073: 280  string "toast_PaymentStatusRefresh"
+00078: 280  notearg
+00079: 280  call 1
+00082: 280  notearg
+00083: 280  call 1
+00086: 280  pop
+00087: 280  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/AnySdk/AnySdkCallback.js:278 ---

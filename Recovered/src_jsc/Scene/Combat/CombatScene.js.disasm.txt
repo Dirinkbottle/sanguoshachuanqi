@@ -1,0 +1,385 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Combat/CombatScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=79 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Scene"
+00010:   8  name "cc"
+00015:   8  getprop "Scene"
+00020:   8  dup
+00021:   8  callprop "extend"
+00026:   8  swap
+00027:   8  notearg
+00028:   8  newinit 1
+00033:   9  lambda (function () {
+    [sourceless code]
+})
+00038:   9  initprop "ctor"
+00043:  14  lambda (function () {
+    [sourceless code]
+})
+00048:  14  initprop "init"
+00053:  14  endinit
+00054:  14  notearg
+00055:  14  call 1
+00058:  14  setprop "CombatScene"
+00063:  14  popv
+00064:  46  name "xs"
+00069:  46  getprop "Scene"
+00074:  46  getprop "CombatScene"
+00079:  46  lambda (function () {
+    [sourceless code]
+})
+00084:  46  setprop "create"
+00089:  46  popv
+00090:  55  name "xs"
+00095:  55  getprop "Scene"
+00100:  55  getprop "Mgr"
+00105:  55  dup
+00106:  55  callprop "registerScene"
+00111:  55  swap
+00112:  55  notearg
+00113:  55  string "CombatScene"
+00118:  55  notearg
+00119:  55  newinit 1
+00124:  56  name "xs"
+00129:  56  getprop "Scene"
+00134:  56  getprop "CombatScene"
+00139:  56  initprop "class"
+00144:  57  newarray 1
+00148:  57  string "CombatScene"
+00153:  57  initelem_array 0
+00157:  57  endinit
+00158:  57  initprop "area"
+00163:  58  name "xs"
+00168:  58  getprop "Constant_SceneType_General"
+00173:  58  initprop "type"
+00178:  58  endinit
+00179:  58  notearg
+00180:  58  call 2
+00183:  58  popv
+00184:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatScene.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  this
+00001:  10  dup
+00002:  10  callprop "_super"
+00007:  10  swap
+00008:  10  notearg
+00009:  10  call 0
+00012:  10  pop
+00013:  11  name "cc"
+00018:  11  dup
+00019:  11  callprop "associateWithNative"
+00024:  11  swap
+00025:  11  notearg
+00026:  11  this
+00027:  11  notearg
+00028:  11  name "cc"
+00033:  11  getprop "Scene"
+00038:  11  notearg
+00039:  11  call 2
+00042:  11  pop
+00043:  11  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatScene.js:9 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=3
+;; local[0] visibleSize
+;; local[1] playerInfo
+;; local[2] pageView
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatScene.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  name "xs"
+00005:  15  getprop "director"
+00010:  15  dup
+00011:  15  callprop "getVisibleSize"
+00016:  15  swap
+00017:  15  notearg
+00018:  15  call 0
+00021:  15  setlocal 0
+00024:  15  pop
+00025:  18  name "xs"
+00030:  18  getprop "Tools"
+00035:  18  getprop "UI"
+00040:  18  dup
+00041:  18  callprop "addCommonBg"
+00046:  18  swap
+00047:  18  notearg
+00048:  18  this
+00049:  18  notearg
+00050:  18  true
+00051:  18  notearg
+00052:  18  true
+00053:  18  notearg
+00054:  18  call 3
+00057:  18  pop
+00058:  21  name "xs"
+00063:  21  getprop "Views"
+00068:  21  getprop "PlayerInfoBannerSimpleView"
+00073:  21  dup
+00074:  21  callprop "create"
+00079:  21  swap
+00080:  21  notearg
+00081:  21  call 0
+00084:  21  setlocal 1
+00087:  21  pop
+00088:  22  getlocal 1
+00091:  22  dup
+00092:  22  callprop "setAnchorPoint"
+00097:  22  swap
+00098:  22  notearg
+00099:  22  name "cc"
+00104:  22  dup
+00105:  22  callprop "p"
+00110:  22  swap
+00111:  22  notearg
+00112:  22  zero
+00113:  22  notearg
+00114:  22  one
+00115:  22  notearg
+00116:  22  call 2
+00119:  22  notearg
+00120:  22  call 1
+00123:  22  pop
+00124:  23  name "xs"
+00129:  23  getprop "Utils"
+00134:  23  getprop "Node"
+00139:  23  dup
+00140:  23  callprop "attachNodes"
+00145:  23  swap
+00146:  23  notearg
+00147:  23  this
+00148:  23  notearg
+00149:  23  getlocal 1
+00152:  23  notearg
+00153:  23  newinit 1
+00158:  23  string "lt"
+00163:  23  initprop "desc"
+00168:  23  true
+00169:  23  initprop "sc"
+00174:  23  endinit
+00175:  23  notearg
+00176:  23  call 3
+00179:  23  pop
+00180:  26  this
+00181:  26  name "xs"
+00186:  26  getprop "Views"
+00191:  26  getprop "CombatCardView"
+00196:  26  dup
+00197:  26  callprop "create"
+00202:  26  swap
+00203:  26  notearg
+00204:  26  call 0
+00207:  26  setprop "combatCardsView"
+00212:  26  pop
+00213:  29  name "xs"
+00218:  29  getprop "Views"
+00223:  29  getprop "TablePage"
+00228:  29  dup
+00229:  29  callprop "create"
+00234:  29  swap
+00235:  29  notearg
+00236:  29  name "cc"
+00241:  29  dup
+00242:  29  callprop "size"
+00247:  29  swap
+00248:  29  notearg
+00249:  29  uint16 846
+00252:  29  notearg
+00253:  29  getlocal 0
+00256:  29  getprop "height"
+00261:  29  int8 56
+00263:  29  sub
+00264:  29  notearg
+00265:  29  call 2
+00268:  29  notearg
+00269:  29  call 1
+00272:  29  setlocal 2
+00275:  29  pop
+00276:  30  getlocal 2
+00279:  30  dup
+00280:  30  callprop "addPage"
+00285:  30  swap
+00286:  30  notearg
+00287:  30  name "xs"
+00292:  30  getprop "Factorys"
+00297:  30  getprop "String"
+00302:  30  dup
+00303:  30  callprop "create"
+00308:  30  swap
+00309:  30  notearg
+00310:  30  string "1071010001"
+00315:  30  notearg
+00316:  30  call 1
+00319:  30  notearg
+00320:  30  this
+00321:  30  getprop "combatCardsView"
+00326:  30  notearg
+00327:  30  call 2
+00330:  30  pop
+00331:  31  name "xs"
+00336:  31  getprop "Utils"
+00341:  31  getprop "Node"
+00346:  31  dup
+00347:  31  callprop "attachNodes"
+00352:  31  swap
+00353:  31  notearg
+00354:  31  this
+00355:  31  notearg
+00356:  31  getlocal 2
+00359:  31  notearg
+00360:  31  newinit 1
+00365:  31  string "lb"
+00370:  31  initprop "desc"
+00375:  31  true
+00376:  31  initprop "sc"
+00381:  31  endinit
+00382:  31  notearg
+00383:  31  name "xs"
+00388:  31  getprop "Cfg"
+00393:  31  getprop "Scene"
+00398:  31  getprop "SkillScene"
+00403:  31  getprop "pageView"
+00408:  31  notearg
+00409:  31  call 4
+00412:  31  pop
+00413:  34  this
+00414:  34  name "xs"
+00419:  34  getprop "Tools"
+00424:  34  getprop "Views"
+00429:  34  getprop "Btn"
+00434:  34  dup
+00435:  34  callprop "createInstruction"
+00440:  34  swap
+00441:  34  notearg
+00442:  34  string "combat_Instruction"
+00447:  34  notearg
+00448:  34  call 1
+00451:  34  setprop "m_instructionBtn"
+00456:  34  pop
+00457:  35  name "xs"
+00462:  35  getprop "Utils"
+00467:  35  getprop "Node"
+00472:  35  dup
+00473:  35  callprop "attachNodes"
+00478:  35  swap
+00479:  35  notearg
+00480:  35  this
+00481:  35  notearg
+00482:  35  this
+00483:  35  getprop "m_instructionBtn"
+00488:  35  notearg
+00489:  35  newinit 1
+00494:  35  string "rt"
+00499:  35  initprop "desc"
+00504:  35  name "cc"
+00509:  35  dup
+00510:  35  callprop "p"
+00515:  35  swap
+00516:  35  notearg
+00517:  35  int32 -180
+00522:  35  notearg
+00523:  35  int8 -60
+00525:  35  notearg
+00526:  35  call 2
+00529:  35  initprop "offset"
+00534:  35  true
+00535:  35  initprop "sc"
+00540:  35  endinit
+00541:  35  notearg
+00542:  35  null
+00543:  35  notearg
+00544:  35  call 4
+00547:  35  pop
+00548:  36  this
+00549:  36  getprop "m_instructionBtn"
+00554:  36  dup
+00555:  36  callprop "setTouchPriority"
+00560:  36  swap
+00561:  36  notearg
+00562:  36  int8 -3
+00564:  36  notearg
+00565:  36  call 1
+00568:  36  pop
+00569:  39  this
+00570:  39  name "xs"
+00575:  39  getprop "Tools"
+00580:  39  getprop "UI"
+00585:  39  dup
+00586:  39  callprop "addShortcutBoard"
+00591:  39  swap
+00592:  39  notearg
+00593:  39  this
+00594:  39  notearg
+00595:  39  true
+00596:  39  notearg
+00597:  39  call 2
+00600:  39  setprop "sideMenu"
+00605:  39  pop
+00606:  40  this
+00607:  40  getprop "sideMenu"
+00612:  40  dup
+00613:  40  callprop "setBaseTouchPriority"
+00618:  40  swap
+00619:  40  notearg
+00620:  40  int8 -2
+00622:  40  notearg
+00623:  40  call 1
+00626:  40  pop
+00627:  42  true
+00628:  42  return
+00629:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatScene.js:14 ---
+;; function object[2] create
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatScene.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  name "xs"
+00005:  47  getprop "Scene"
+00010:  47  getprop "CombatScene"
+00015:  47  undefined
+00016:  47  notearg
+00017:  47  new 0
+00020:  47  setlocal 0
+00023:  47  pop
+00024:  48  getlocal 0
+00027:  48  and 47 (+20)
+00032:  48  pop
+00033:  48  getlocal 0
+00036:  48  dup
+00037:  48  callprop "init"
+00042:  48  swap
+00043:  48  notearg
+00044:  48  call 0
+00047:  48  ifeq 56 (+9)
+00052:  49  getlocal 0
+00055:  49  return
+00056:  51  null
+00057:  51  return
+00058:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Combat/CombatScene.js:46 ---

@@ -1,0 +1,454 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/InterService/PopularityRewardScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=93 object[5]
+;; FUNCTION-MAP kind=lambda offset=129 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Scene"
+00010:   6  name "cc"
+00015:   6  getprop "Scene"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  string "xs.Scene.PopularityRewardScene"
+00038:   7  initprop "name"
+00043:   8  lambda (function () {
+    [sourceless code]
+})
+00048:   8  initprop "ctor"
+00053:  12  lambda (function () {
+    [sourceless code]
+})
+00058:  12  initprop "init"
+00063:  43  lambda (function () {
+    [sourceless code]
+})
+00068:  43  initprop "onEnter"
+00073:  47  lambda (function () {
+    [sourceless code]
+})
+00078:  47  initprop "onExit"
+00083:  51  lambda (function () {
+    [sourceless code]
+})
+00088:  51  initprop "closeBtnCallback"
+00093:  55  lambda (function () {
+    [sourceless code]
+})
+00098:  55  initprop "setBaseTouchPriority"
+00103:  55  endinit
+00104:  55  notearg
+00105:  55  call 1
+00108:  55  setprop "PopularityRewardScene"
+00113:  55  popv
+00114:  62  name "xs"
+00119:  62  getprop "Scene"
+00124:  62  getprop "PopularityRewardScene"
+00129:  62  lambda (function () {
+    [sourceless code]
+})
+00134:  62  setprop "create"
+00139:  62  popv
+00140:  72  name "xs"
+00145:  72  getprop "Scene"
+00150:  72  getprop "Mgr"
+00155:  72  dup
+00156:  72  callprop "registerScene"
+00161:  72  swap
+00162:  72  notearg
+00163:  72  string "PopularityRewardScene"
+00168:  72  notearg
+00169:  72  newinit 1
+00174:  73  name "xs"
+00179:  73  getprop "Scene"
+00184:  73  getprop "PopularityRewardScene"
+00189:  73  initprop "class"
+00194:  74  name "xs"
+00199:  74  getprop "Constant_SceneType_Challenge"
+00204:  74  initprop "type"
+00209:  74  endinit
+00210:  74  notearg
+00211:  74  call 2
+00214:  74  popv
+00215:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  call 0
+00012:   9  pop
+00013:  10  name "cc"
+00018:  10  dup
+00019:  10  callprop "associateWithNative"
+00024:  10  swap
+00025:  10  notearg
+00026:  10  this
+00027:  10  notearg
+00028:  10  name "cc"
+00033:  10  getprop "Scene"
+00038:  10  notearg
+00039:  10  call 2
+00042:  10  pop
+00043:  10  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:8 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] _data
+;; local[0] visibleSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "_super"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  call 0
+00012:  13  not
+00013:  13  ifeq 20 (+7)
+00018:  14  false
+00019:  14  return
+00020:  17  name "xs"
+00025:  17  getprop "director"
+00030:  17  dup
+00031:  17  callprop "getVisibleSize"
+00036:  17  swap
+00037:  17  notearg
+00038:  17  call 0
+00041:  17  setlocal 0
+00044:  17  pop
+00045:  20  name "xs"
+00050:  20  getprop "Tools"
+00055:  20  getprop "UI"
+00060:  20  dup
+00061:  20  callprop "addBgByType"
+00066:  20  swap
+00067:  20  notearg
+00068:  20  this
+00069:  20  notearg
+00070:  20  name "xs"
+00075:  20  getprop "Constant_BgType_InterServiceFight"
+00080:  20  notearg
+00081:  20  call 2
+00084:  20  pop
+00085:  23  this
+00086:  23  name "xs"
+00091:  23  getprop "Views"
+00096:  23  getprop "Btn"
+00101:  23  dup
+00102:  23  callprop "create"
+00107:  23  swap
+00108:  23  notearg
+00109:  23  string "Btn_CircleRedBack"
+00114:  23  notearg
+00115:  23  call 1
+00118:  23  setprop "m_closeBtn"
+00123:  23  pop
+00124:  24  this
+00125:  24  getprop "m_closeBtn"
+00130:  24  dup
+00131:  24  callprop "setOnClickCallBack"
+00136:  24  swap
+00137:  24  notearg
+00138:  24  this
+00139:  24  getprop "closeBtnCallback"
+00144:  24  dup
+00145:  24  callprop "bind"
+00150:  24  swap
+00151:  24  notearg
+00152:  24  this
+00153:  24  notearg
+00154:  24  call 1
+00157:  24  notearg
+00158:  24  call 1
+00161:  24  pop
+00162:  25  name "xs"
+00167:  25  getprop "Utils"
+00172:  25  getprop "Node"
+00177:  25  dup
+00178:  25  callprop "attachNodes"
+00183:  25  swap
+00184:  25  notearg
+00185:  25  this
+00186:  25  notearg
+00187:  25  this
+00188:  25  getprop "m_closeBtn"
+00193:  25  notearg
+00194:  25  newinit 1
+00199:  25  string "rt"
+00204:  25  initprop "desc"
+00209:  25  true
+00210:  25  initprop "sc"
+00215:  25  newinit 1
+00220:  25  int8 -55
+00222:  25  initprop "x"
+00227:  25  int8 -55
+00229:  25  initprop "y"
+00234:  25  endinit
+00235:  25  initprop "offset"
+00240:  25  endinit
+00241:  25  notearg
+00242:  25  call 3
+00245:  25  pop
+00246:  28  this
+00247:  28  name "xs"
+00252:  28  getprop "Views"
+00257:  28  getprop "TablePage"
+00262:  28  dup
+00263:  28  callprop "create"
+00268:  28  swap
+00269:  28  notearg
+00270:  28  name "cc"
+00275:  28  dup
+00276:  28  callprop "size"
+00281:  28  swap
+00282:  28  notearg
+00283:  28  getlocal 0
+00286:  28  getprop "width"
+00291:  28  notearg
+00292:  28  getlocal 0
+00295:  28  getprop "height"
+00300:  28  notearg
+00301:  28  call 2
+00304:  28  notearg
+00305:  28  call 1
+00308:  28  setprop "m_pageView"
+00313:  28  pop
+00314:  29  this
+00315:  29  getprop "m_pageView"
+00320:  29  dup
+00321:  29  callprop "setListener"
+00326:  29  swap
+00327:  29  notearg
+00328:  29  this
+00329:  29  notearg
+00330:  29  call 1
+00333:  29  pop
+00334:  30  this
+00335:  30  getprop "m_pageView"
+00340:  30  dup
+00341:  30  callprop "addPageWhitConstruct"
+00346:  30  swap
+00347:  30  notearg
+00348:  31  name "xs"
+00353:  31  getprop "Tools"
+00358:  31  getprop "String"
+00363:  31  dup
+00364:  31  callprop "createString"
+00369:  31  swap
+00370:  31  notearg
+00371:  31  string "interService_popularity"
+00376:  31  notearg
+00377:  31  call 1
+00380:  31  notearg
+00381:  32  name "xs"
+00386:  32  getprop "Views"
+00391:  32  getprop "PopularityRewardView"
+00396:  32  notearg
+00397:  33  newinit 1
+00402:  33  getarg 0
+00405:  33  initprop "param"
+00410:  33  endinit
+00411:  33  notearg
+00412:  33  call 3
+00415:  33  pop
+00416:  35  name "xs"
+00421:  35  getprop "Utils"
+00426:  35  getprop "Node"
+00431:  35  dup
+00432:  35  callprop "attachNodes"
+00437:  35  swap
+00438:  35  notearg
+00439:  35  this
+00440:  35  notearg
+00441:  35  this
+00442:  35  getprop "m_pageView"
+00447:  35  notearg
+00448:  35  newinit 1
+00453:  36  string "lb"
+00458:  36  initprop "desc"
+00463:  37  true
+00464:  37  initprop "sc"
+00469:  37  endinit
+00470:  37  notearg
+00471:  37  call 3
+00474:  37  pop
+00475:  40  true
+00476:  40  return
+00477:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:12 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  this
+00001:  44  dup
+00002:  44  callprop "_super"
+00007:  44  swap
+00008:  44  notearg
+00009:  44  call 0
+00012:  44  pop
+00013:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:43 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:47 ---
+loc   line  op
+----- ----  --
+main:
+00000:  48  this
+00001:  48  dup
+00002:  48  callprop "_super"
+00007:  48  swap
+00008:  48  notearg
+00009:  48  call 0
+00012:  48  pop
+00013:  48  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:47 ---
+;; function object[4] closeBtnCallback
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:51 ---
+loc   line  op
+----- ----  --
+main:
+00000:  52  name "xs"
+00005:  52  getprop "Scene"
+00010:  52  getprop "Mgr"
+00015:  52  dup
+00016:  52  callprop "gotoLastScene"
+00021:  52  swap
+00022:  52  notearg
+00023:  52  call 0
+00026:  52  pop
+00027:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:51 ---
+;; function object[5] setBaseTouchPriority
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:55 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  this
+00001:  56  getarg 0
+00004:  56  setprop "m_baseTouchPriority"
+00009:  56  pop
+00010:  57  this
+00011:  57  getprop "m_pageView"
+00016:  57  dup
+00017:  57  callprop "setBaseTouchPriority"
+00022:  57  swap
+00023:  57  notearg
+00024:  57  this
+00025:  57  getprop "m_baseTouchPriority"
+00030:  57  notearg
+00031:  57  call 1
+00034:  57  pop
+00035:  58  this
+00036:  58  getprop "m_closeBtn"
+00041:  58  dup
+00042:  58  callprop "setTouchPriority"
+00047:  58  swap
+00048:  58  notearg
+00049:  58  this
+00050:  58  getprop "m_baseTouchPriority"
+00055:  58  int8 100
+00057:  58  sub
+00058:  58  notearg
+00059:  58  call 1
+00062:  58  pop
+00063:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:55 ---
+;; function object[6] create
+;; function metadata object[6] nargs=1 bindings=2
+;; arg[0] _data
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  name "xs"
+00005:  63  getprop "Scene"
+00010:  63  getprop "PopularityRewardScene"
+00015:  63  undefined
+00016:  63  notearg
+00017:  63  new 0
+00020:  63  setlocal 0
+00023:  63  pop
+00024:  64  getlocal 0
+00027:  64  and 51 (+24)
+00032:  64  pop
+00033:  64  getlocal 0
+00036:  64  dup
+00037:  64  callprop "init"
+00042:  64  swap
+00043:  64  notearg
+00044:  64  getarg 0
+00047:  64  notearg
+00048:  64  call 1
+00051:  64  ifeq 78 (+27)
+00056:  65  getlocal 0
+00059:  65  dup
+00060:  65  callprop "setBaseTouchPriority"
+00065:  65  swap
+00066:  65  notearg
+00067:  65  int8 -1
+00069:  65  notearg
+00070:  65  call 1
+00073:  65  pop
+00074:  66  getlocal 0
+00077:  66  return
+00078:  68  name "xs"
+00083:  68  dup
+00084:  68  callprop "assert"
+00089:  68  swap
+00090:  68  notearg
+00091:  68  false
+00092:  68  notearg
+00093:  68  string "xs.Scene.PopularityRewardScene.create error!"
+00098:  68  notearg
+00099:  68  call 2
+00102:  68  pop
+00103:  69  null
+00104:  69  return
+00105:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/PopularityRewardScene.js:62 ---

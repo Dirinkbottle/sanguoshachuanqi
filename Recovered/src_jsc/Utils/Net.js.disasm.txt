@@ -1,0 +1,211 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Utils/Net.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Net.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Utils"
+00010:   9  name "xs"
+00015:   9  getprop "Utils"
+00020:   9  getprop "Net"
+00025:   9  or 37 (+12)
+00030:   9  pop
+00031:   9  newinit 1
+00036:   9  endinit
+00037:   9  setprop "Net"
+00042:   9  popv
+00043:  19  name "xs"
+00048:  19  getprop "Utils"
+00053:  19  getprop "Net"
+00058:  19  lambda (function () {
+    [sourceless code]
+})
+00063:  19  setprop "reqAsync"
+00068:  19  popv
+00069:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Net.js:1 ---
+;; function object[0] reqAsync
+;; function metadata object[0] nargs=5 bindings=8
+;; arg[0] url
+;; arg[1] readyFunc
+;; arg[2] errFunc
+;; arg[3] type
+;; arg[4] responseType
+;; local[0] _type
+;; local[1] _responseType
+;; local[2] _request
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=144 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Net.js:19 ---
+loc   line  op
+----- ----  --
+main:
+00000:  21  getarg 3
+00003:  21  or 14 (+11)
+00008:  21  pop
+00009:  21  string "GET"
+00014:  21  setlocal 0
+00017:  21  pop
+00018:  22  getarg 4
+00021:  22  or 32 (+11)
+00026:  22  pop
+00027:  22  string "text"
+00032:  22  setaliasedvar "_responseType" (hops = 0, slot = 2)
+00041:  22  pop
+00042:  28  name "xs"
+00047:  28  name "XMLHttpRequest"
+00052:  28  undefined
+00053:  28  notearg
+00054:  28  new 0
+00057:  28  setprop "net_instance"
+00062:  28  pop
+00063:  32  name "xs"
+00068:  32  getprop "net_instance"
+00073:  32  setaliasedvar "_request" (hops = 0, slot = 3)
+00082:  32  pop
+00083:  34  getaliasedvar "_request" (hops = 0, slot = 3)
+00092:  34  dup
+00093:  34  callprop "open"
+00098:  34  swap
+00099:  34  notearg
+00100:  34  getlocal 0
+00103:  34  notearg
+00104:  34  getarg 0
+00107:  34  notearg
+00108:  34  true
+00109:  34  notearg
+00110:  34  call 3
+00113:  34  pop
+00114:  35  getaliasedvar "_request" (hops = 0, slot = 3)
+00123:  35  dup
+00124:  35  callprop "send"
+00129:  35  swap
+00130:  35  notearg
+00131:  35  call 0
+00134:  35  pop
+00135:  36  getaliasedvar "_request" (hops = 0, slot = 3)
+00144:  36  lambda (function () {
+    [sourceless code]
+})
+00149:  36  setprop "func"
+00154:  36  pop
+00155:  71  getaliasedvar "_request" (hops = 0, slot = 3)
+00164:  71  getaliasedvar "_request" (hops = 0, slot = 3)
+00173:  71  getprop "func"
+00178:  71  dup
+00179:  71  callprop "bind"
+00184:  71  swap
+00185:  71  notearg
+00186:  71  newinit 1
+00191:  72  getarg 1
+00194:  72  initprop "ready"
+00199:  73  getarg 2
+00202:  73  initprop "error"
+00207:  73  endinit
+00208:  73  notearg
+00209:  73  call 1
+00212:  73  setprop "onreadystatechange"
+00217:  73  pop
+00218:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Net.js:19 ---
+;; function object[0] func
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Net.js:36 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  getaliasedvar "_request" (hops = 0, slot = 3)
+00009:  37  getprop "readyState"
+00014:  37  int8 4
+00016:  37  eq
+00017:  37  and 41 (+24)
+00022:  37  pop
+00023:  37  getaliasedvar "_request" (hops = 0, slot = 3)
+00032:  37  getprop "status"
+00037:  37  uint16 200
+00040:  37  eq
+00041:  37  ifeq 147 (+106)
+00046:  43  getaliasedvar "_responseType" (hops = 0, slot = 2)
+00055:  43  string "text"
+00060:  43  eq
+00061:  43  ifeq 99 (+38)
+00066:  44  this
+00067:  44  dup
+00068:  44  callprop "ready"
+00073:  44  swap
+00074:  44  notearg
+00075:  44  getaliasedvar "_request" (hops = 0, slot = 3)
+00084:  44  getprop "responseText"
+00089:  44  notearg
+00090:  44  call 1
+00093:  44  pop
+00094:  44  goto 142 (+48)
+00099:  46  getaliasedvar "_responseType" (hops = 0, slot = 2)
+00108:  46  string "arraybuffer"
+00113:  46  eq
+00114:  46  ifeq 142 (+28)
+00119:  47  this
+00120:  47  dup
+00121:  47  callprop "ready"
+00126:  47  swap
+00127:  47  notearg
+00128:  47  getaliasedvar "_request" (hops = 0, slot = 3)
+00137:  47  notearg
+00138:  47  call 1
+00141:  47  pop
+00142:  47  goto 285 (+143)
+00147:  57  getaliasedvar "_responseType" (hops = 0, slot = 2)
+00156:  57  string "text"
+00161:  57  eq
+00162:  57  ifeq 200 (+38)
+00167:  58  this
+00168:  58  dup
+00169:  58  callprop "error"
+00174:  58  swap
+00175:  58  notearg
+00176:  58  getaliasedvar "_request" (hops = 0, slot = 3)
+00185:  58  getprop "responseText"
+00190:  58  notearg
+00191:  58  call 1
+00194:  58  pop
+00195:  58  goto 285 (+90)
+00200:  61  getaliasedvar "_responseType" (hops = 0, slot = 2)
+00209:  61  string "arraybuffer"
+00214:  61  eq
+00215:  61  ifeq 266 (+51)
+00220:  62  this
+00221:  62  getprop "error"
+00226:  62  null
+00227:  62  ne
+00228:  62  ifeq 261 (+33)
+00233:  63  this
+00234:  63  dup
+00235:  63  callprop "error"
+00240:  63  swap
+00241:  63  notearg
+00242:  63  getaliasedvar "_request" (hops = 0, slot = 3)
+00251:  63  getprop "response"
+00256:  63  notearg
+00257:  63  call 1
+00260:  63  pop
+00261:  63  goto 285 (+24)
+00266:  66  this
+00267:  66  dup
+00268:  66  callprop "log"
+00273:  66  swap
+00274:  66  notearg
+00275:  66  string "err_000"
+00280:  66  notearg
+00281:  66  call 1
+00284:  66  pop
+00285:  68  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Net.js:36 ---

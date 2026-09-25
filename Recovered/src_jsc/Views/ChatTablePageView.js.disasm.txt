@@ -1,0 +1,393 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/ChatTablePageView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=38 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=58 object[2]
+;; FUNCTION-MAP kind=lambda offset=94 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ChatTablePageView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Views"
+00010:   5  name "xs"
+00015:   5  getprop "Views"
+00020:   5  getprop "TablePage"
+00025:   5  dup
+00026:   5  callprop "extend"
+00031:   5  swap
+00032:   5  notearg
+00033:   5  newinit 1
+00038:   8  lambda (function () {
+    [sourceless code]
+})
+00043:   8  initprop "addPageButton"
+00048:  29  lambda (function () {
+    [sourceless code]
+})
+00053:  29  initprop "getAdjustPos"
+00058:  40  lambda (function () {
+    [sourceless code]
+})
+00063:  40  initprop "getAdjustPosForHintIcon"
+00068:  40  endinit
+00069:  40  notearg
+00070:  40  call 1
+00073:  40  setprop "ChatTablePageView"
+00078:  40  popv
+00079:  57  name "xs"
+00084:  57  getprop "Views"
+00089:  57  getprop "ChatTablePageView"
+00094:  57  lambda (function () {
+    [sourceless code]
+})
+00099:  57  setprop "create"
+00104:  57  popv
+00105:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ChatTablePageView.js:1 ---
+;; function object[0] addPageButton
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] pageName
+;; local[0] pageBtn
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ChatTablePageView.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Views"
+00010:   9  getprop "Btn"
+00015:   9  dup
+00016:   9  callprop "createWithString"
+00021:   9  swap
+00022:   9  notearg
+00023:   9  string "Btn_TableChat"
+00028:   9  notearg
+00029:   9  getarg 0
+00032:   9  notearg
+00033:   9  call 2
+00036:   9  setlocal 0
+00039:   9  pop
+00040:  10  getlocal 0
+00043:  10  dup
+00044:  10  callprop "setAnchorPoint"
+00049:  10  swap
+00050:  10  notearg
+00051:  10  name "cc"
+00056:  10  dup
+00057:  10  callprop "p"
+00062:  10  swap
+00063:  10  notearg
+00064:  10  zero
+00065:  10  notearg
+00066:  10  one
+00067:  10  notearg
+00068:  10  call 2
+00071:  10  notearg
+00072:  10  call 1
+00075:  10  pop
+00076:  11  getlocal 0
+00079:  11  dup
+00080:  11  callprop "setZoomOnTouchDown"
+00085:  11  swap
+00086:  11  notearg
+00087:  11  false
+00088:  11  notearg
+00089:  11  call 1
+00092:  11  pop
+00093:  12  getlocal 0
+00096:  12  dup
+00097:  12  callprop "setOnClickCallBack"
+00102:  12  swap
+00103:  12  notearg
+00104:  12  this
+00105:  12  getprop "touchDownAction"
+00110:  12  dup
+00111:  12  callprop "bind"
+00116:  12  swap
+00117:  12  notearg
+00118:  12  this
+00119:  12  notearg
+00120:  12  call 1
+00123:  12  notearg
+00124:  12  call 1
+00127:  12  pop
+00128:  13  getlocal 0
+00131:  13  dup
+00132:  13  callprop "setTouchPriority"
+00137:  13  swap
+00138:  13  notearg
+00139:  13  this
+00140:  13  getprop "m_baseTouchPriority"
+00145:  13  name "xs"
+00150:  13  getprop "Views"
+00155:  13  getprop "TablePage"
+00160:  13  getprop "cfg"
+00165:  13  getprop "btn"
+00170:  13  getprop "priority"
+00175:  13  add
+00176:  13  notearg
+00177:  13  call 1
+00180:  13  pop
+00181:  14  name "xs"
+00186:  14  getprop "Utils"
+00191:  14  getprop "Node"
+00196:  14  dup
+00197:  14  callprop "attachNodes"
+00202:  14  swap
+00203:  14  notearg
+00204:  14  this
+00205:  14  notearg
+00206:  14  getlocal 0
+00209:  14  notearg
+00210:  14  newinit 1
+00215:  15  string "lb"
+00220:  15  initprop "desc"
+00225:  16  this
+00226:  16  dup
+00227:  16  callprop "getAdjustPos"
+00232:  16  swap
+00233:  16  notearg
+00234:  16  this
+00235:  16  getprop "pageButtons"
+00240:  16  length "length"
+00245:  16  notearg
+00246:  16  call 1
+00249:  16  initprop "offset"
+00254:  17  false
+00255:  17  initprop "sc"
+00260:  17  endinit
+00261:  17  notearg
+00262:  19  newinit 1
+00267:  20  int8 -1
+00269:  20  initprop "zOrder"
+00274:  21  int8 -1
+00276:  21  initprop "tag"
+00281:  22  int8 -30
+00283:  22  initprop "priority"
+00288:  22  endinit
+00289:  22  notearg
+00290:  22  call 4
+00293:  22  pop
+00294:  25  this
+00295:  25  getprop "pageButtons"
+00300:  25  dup
+00301:  25  callprop "push"
+00306:  25  swap
+00307:  25  notearg
+00308:  25  getlocal 0
+00311:  25  notearg
+00312:  25  call 1
+00315:  25  pop
+00316:  26  this
+00317:  26  getprop "pageButtonsEnabled"
+00322:  26  dup
+00323:  26  callprop "push"
+00328:  26  swap
+00329:  26  notearg
+00330:  26  newinit 1
+00335:  26  true
+00336:  26  initprop "canUse"
+00341:  26  endinit
+00342:  26  notearg
+00343:  26  call 1
+00346:  26  pop
+00347:  26  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ChatTablePageView.js:8 ---
+;; function object[1] getAdjustPos
+;; function metadata object[1] nargs=1 bindings=4
+;; arg[0] idx
+;; local[0] frontPos
+;; local[1] frontSize
+;; local[2] pos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ChatTablePageView.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  getarg 0
+00003:  30  zero
+00004:  30  stricteq
+00005:  30  ifeq 53 (+48)
+00010:  31  name "cc"
+00015:  31  dup
+00016:  31  callprop "p"
+00021:  31  swap
+00022:  31  notearg
+00023:  31  int8 20
+00025:  31  notearg
+00026:  31  this
+00027:  31  dup
+00028:  31  callprop "getContentSize"
+00033:  31  swap
+00034:  31  notearg
+00035:  31  call 0
+00038:  31  getprop "height"
+00043:  31  notearg
+00044:  31  call 2
+00047:  31  return
+00048:  31  goto 170 (+122)
+00053:  33  this
+00054:  33  getprop "pageButtons"
+00059:  33  getarg 0
+00062:  33  one
+00063:  33  sub
+00064:  33  getelem
+00065:  33  dup
+00066:  33  callprop "getPosition"
+00071:  33  swap
+00072:  33  notearg
+00073:  33  call 0
+00076:  33  setlocal 0
+00079:  33  pop
+00080:  34  this
+00081:  34  getprop "pageButtons"
+00086:  34  getarg 0
+00089:  34  one
+00090:  34  sub
+00091:  34  getelem
+00092:  34  dup
+00093:  34  callprop "getContentSize"
+00098:  34  swap
+00099:  34  notearg
+00100:  34  call 0
+00103:  34  setlocal 1
+00106:  34  pop
+00107:  35  name "cc"
+00112:  35  dup
+00113:  35  callprop "p"
+00118:  35  swap
+00119:  35  notearg
+00120:  35  getlocal 0
+00123:  35  getprop "x"
+00128:  35  getlocal 1
+00131:  35  getprop "width"
+00136:  35  add
+00137:  35  int8 10
+00139:  35  add
+00140:  35  notearg
+00141:  35  this
+00142:  35  dup
+00143:  35  callprop "getContentSize"
+00148:  35  swap
+00149:  35  notearg
+00150:  35  call 0
+00153:  35  getprop "height"
+00158:  35  notearg
+00159:  35  call 2
+00162:  35  setlocal 2
+00165:  35  pop
+00166:  36  getlocal 2
+00169:  36  return
+00170:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ChatTablePageView.js:29 ---
+;; function object[2] getAdjustPosForHintIcon
+;; function metadata object[2] nargs=1 bindings=4
+;; arg[0] idx
+;; local[0] frontPos
+;; local[1] frontSize
+;; local[2] pos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ChatTablePageView.js:40 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  this
+00001:  50  getprop "pageButtons"
+00006:  50  getarg 0
+00009:  50  one
+00010:  50  sub
+00011:  50  getelem
+00012:  50  dup
+00013:  50  callprop "getPosition"
+00018:  50  swap
+00019:  50  notearg
+00020:  50  call 0
+00023:  50  setlocal 0
+00026:  50  pop
+00027:  51  this
+00028:  51  getprop "pageButtons"
+00033:  51  getarg 0
+00036:  51  one
+00037:  51  sub
+00038:  51  getelem
+00039:  51  dup
+00040:  51  callprop "getContentSize"
+00045:  51  swap
+00046:  51  notearg
+00047:  51  call 0
+00050:  51  setlocal 1
+00053:  51  pop
+00054:  52  name "cc"
+00059:  52  dup
+00060:  52  callprop "p"
+00065:  52  swap
+00066:  52  notearg
+00067:  52  getlocal 0
+00070:  52  getprop "x"
+00075:  52  getlocal 1
+00078:  52  getprop "width"
+00083:  52  add
+00084:  52  int8 10
+00086:  52  sub
+00087:  52  notearg
+00088:  52  int8 -15
+00090:  52  notearg
+00091:  52  call 2
+00094:  52  setlocal 2
+00097:  52  pop
+00098:  53  getlocal 2
+00101:  53  return
+00102:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ChatTablePageView.js:40 ---
+;; function object[3] create
+;; function metadata object[3] nargs=1 bindings=2
+;; arg[0] contentSize
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ChatTablePageView.js:57 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  name "xs"
+00005:  59  getprop "Views"
+00010:  59  getprop "ChatTablePageView"
+00015:  59  undefined
+00016:  59  notearg
+00017:  59  new 0
+00020:  59  setlocal 0
+00023:  59  pop
+00024:  60  getlocal 0
+00027:  60  and 47 (+20)
+00032:  60  pop
+00033:  60  getlocal 0
+00036:  60  dup
+00037:  60  callprop "init"
+00042:  60  swap
+00043:  60  notearg
+00044:  60  call 0
+00047:  60  ifeq 80 (+33)
+00052:  61  getlocal 0
+00055:  61  dup
+00056:  61  callprop "setContentSize"
+00061:  61  swap
+00062:  61  notearg
+00063:  61  getarg 0
+00066:  61  notearg
+00067:  61  call 1
+00070:  61  pop
+00071:  62  getlocal 0
+00074:  62  return
+00075:  62  goto 82 (+7)
+00080:  64  null
+00081:  64  return
+00082:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/ChatTablePageView.js:57 ---

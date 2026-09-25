@@ -1,0 +1,232 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/CmdShell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=46 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CmdShell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Tools"
+00010:   8  name "xs"
+00015:   8  getprop "Tools"
+00020:   8  getprop "CmdShell"
+00025:   8  or 57 (+32)
+00030:   8  pop
+00031:   8  newinit 1
+00036:  10  string "xs.Tools.CmdShell "
+00041:  10  initprop "name"
+00046:  13  lambda (function () {
+    [sourceless code]
+})
+00051:  13  initprop "doShell"
+00056:  13  endinit
+00057:  13  setprop "CmdShell"
+00062:  13  popv
+00063:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CmdShell.js:1 ---
+;; function object[0] doShell
+;; function metadata object[0] nargs=1 bindings=3
+;; arg[0] cmd_string
+;; local[0] _str_shell
+;; local[1] skillName
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=394 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CmdShell.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  getarg 0
+00003:  15  not
+00004:  15  ifeq 11 (+7)
+00009:  16  false
+00010:  16  return
+00011:  19  getarg 0
+00014:  19  dup
+00015:  19  callprop "indexOf"
+00020:  19  swap
+00021:  19  notearg
+00022:  19  string "cmd "
+00027:  19  notearg
+00028:  19  call 1
+00031:  19  zero
+00032:  19  eq
+00033:  19  or 61 (+28)
+00038:  19  pop
+00039:  20  getarg 0
+00042:  20  dup
+00043:  20  callprop "indexOf"
+00048:  20  swap
+00049:  20  notearg
+00050:  20  string "Cmd "
+00055:  20  notearg
+00056:  20  call 1
+00059:  20  zero
+00060:  20  eq
+00061:  20  ifeq 406 (+345)
+00066:  23  getarg 0
+00069:  23  dup
+00070:  23  callprop "slice"
+00075:  23  swap
+00076:  23  notearg
+00077:  23  int8 4
+00079:  23  notearg
+00080:  23  call 1
+00083:  23  setlocal 0
+00086:  23  pop
+00087:  25  name "xs"
+00092:  25  dup
+00093:  25  callprop "log"
+00098:  25  swap
+00099:  25  notearg
+00100:  25  string "Shell"
+00105:  25  notearg
+00106:  25  getlocal 0
+00109:  25  notearg
+00110:  25  call 2
+00113:  25  pop
+00114:  27  getlocal 0
+00117:  27  dup
+00118:  27  callprop "indexOf"
+00123:  27  swap
+00124:  27  notearg
+00125:  27  string "debug"
+00130:  27  notearg
+00131:  27  call 1
+00134:  27  zero
+00135:  27  ge
+00136:  27  ifeq 176 (+40)
+00141:  28  name "xs"
+00146:  28  getprop "Scene"
+00151:  28  getprop "Mgr"
+00156:  28  dup
+00157:  28  callprop "changeSceneByName"
+00162:  28  swap
+00163:  28  notearg
+00164:  28  string "DebugScene"
+00169:  28  notearg
+00170:  28  call 1
+00173:  28  pop
+00174:  29  true
+00175:  29  return
+00176:  32  getlocal 0
+00179:  32  dup
+00180:  32  callprop "indexOf"
+00185:  32  swap
+00186:  32  notearg
+00187:  32  string "error"
+00192:  32  notearg
+00193:  32  call 1
+00196:  32  zero
+00197:  32  ge
+00198:  32  ifeq 228 (+30)
+00203:  33  name "xs"
+00208:  33  dup
+00209:  33  callprop "error"
+00214:  33  swap
+00215:  33  notearg
+00216:  33  string "error test"
+00221:  33  notearg
+00222:  33  call 1
+00225:  33  pop
+00226:  34  true
+00227:  34  return
+00228:  37  getlocal 0
+00231:  37  dup
+00232:  37  callprop "indexOf"
+00237:  37  swap
+00238:  37  notearg
+00239:  37  string "update cfg"
+00244:  37  notearg
+00245:  37  call 1
+00248:  37  zero
+00249:  37  ge
+00250:  37  ifeq 284 (+34)
+00255:  42  name "xs"
+00260:  42  getprop "Tools"
+00265:  42  getprop "Net"
+00270:  42  dup
+00271:  42  callprop "requestSGSConfig"
+00276:  42  swap
+00277:  42  notearg
+00278:  42  call 0
+00281:  42  pop
+00282:  43  true
+00283:  43  return
+00284:  46  getlocal 0
+00287:  46  dup
+00288:  46  callprop "indexOf"
+00293:  46  swap
+00294:  46  notearg
+00295:  46  string "skill "
+00300:  46  notearg
+00301:  46  call 1
+00304:  46  zero
+00305:  46  ge
+00306:  46  ifeq 406 (+100)
+00311:  51  getlocal 0
+00314:  51  dup
+00315:  51  callprop "slice"
+00320:  51  swap
+00321:  51  notearg
+00322:  51  string "skill "
+00327:  51  length "length"
+00332:  51  notearg
+00333:  51  call 1
+00336:  51  setlocal 1
+00339:  51  pop
+00340:  53  name "xs"
+00345:  53  dup
+00346:  53  callprop "log"
+00351:  53  swap
+00352:  53  notearg
+00353:  53  string "skillName"
+00358:  53  notearg
+00359:  53  getlocal 1
+00362:  53  notearg
+00363:  53  call 2
+00366:  53  pop
+00367:  55  name "xs"
+00372:  55  getprop "Tools"
+00377:  55  getprop "Scene"
+00382:  55  dup
+00383:  55  callprop "gotoSkillPreviewFight"
+00388:  55  swap
+00389:  55  notearg
+00390:  56  getlocal 1
+00393:  56  notearg
+00394:  57  lambda (function () {
+    [sourceless code]
+})
+00399:  57  notearg
+00400:  57  call 2
+00403:  57  pop
+00404:  61  true
+00405:  61  return
+00406:  68  false
+00407:  68  return
+00408:  68  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CmdShell.js:13 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CmdShell.js:57 ---
+loc   line  op
+----- ----  --
+main:
+00000:  58  name "xs"
+00005:  58  getprop "Scene"
+00010:  58  getprop "Mgr"
+00015:  58  dup
+00016:  58  callprop "gotoLastSceneSafe"
+00021:  58  swap
+00022:  58  notearg
+00023:  58  call 0
+00026:  58  pop
+00027:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/CmdShell.js:57 ---

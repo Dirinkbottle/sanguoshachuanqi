@@ -1,0 +1,4851 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Cocos2d-x/jsb_cocos2d.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=1522 object[0]
+;; FUNCTION-MAP kind=lambda offset=1538 object[1]
+;; FUNCTION-MAP kind=lambda offset=1554 object[2]
+;; FUNCTION-MAP kind=lambda offset=1570 object[3]
+;; FUNCTION-MAP kind=lambda offset=1586 object[4]
+;; FUNCTION-MAP kind=lambda offset=1602 object[5]
+;; FUNCTION-MAP kind=lambda offset=1618 object[6]
+;; FUNCTION-MAP kind=lambda offset=1634 object[7]
+;; FUNCTION-MAP kind=lambda offset=1650 object[8]
+;; FUNCTION-MAP kind=lambda offset=1666 object[9]
+;; FUNCTION-MAP kind=lambda offset=1682 object[10]
+;; FUNCTION-MAP kind=lambda offset=1698 object[11]
+;; FUNCTION-MAP kind=lambda offset=1714 object[12]
+;; FUNCTION-MAP kind=lambda offset=1730 object[13]
+;; FUNCTION-MAP kind=lambda offset=1746 object[14]
+;; FUNCTION-MAP kind=lambda offset=1804 object[15]
+;; FUNCTION-MAP kind=lambda offset=1820 object[16]
+;; FUNCTION-MAP kind=lambda offset=1836 object[17]
+;; FUNCTION-MAP kind=lambda offset=1852 object[18]
+;; FUNCTION-MAP kind=lambda offset=1868 object[19]
+;; FUNCTION-MAP kind=lambda offset=1884 object[20]
+;; FUNCTION-MAP kind=lambda offset=1900 object[21]
+;; FUNCTION-MAP kind=lambda offset=1916 object[22]
+;; FUNCTION-MAP kind=lambda offset=1932 object[23]
+;; FUNCTION-MAP kind=lambda offset=1948 object[24]
+;; FUNCTION-MAP kind=lambda offset=1964 object[25]
+;; FUNCTION-MAP kind=lambda offset=1980 object[26]
+;; FUNCTION-MAP kind=lambda offset=1996 object[27]
+;; FUNCTION-MAP kind=lambda offset=2012 object[28]
+;; FUNCTION-MAP kind=lambda offset=2028 object[29]
+;; FUNCTION-MAP kind=lambda offset=2044 object[30]
+;; FUNCTION-MAP kind=lambda offset=2060 object[31]
+;; FUNCTION-MAP kind=lambda offset=2076 object[32]
+;; FUNCTION-MAP kind=lambda offset=2092 object[33]
+;; FUNCTION-MAP kind=lambda offset=2108 object[34]
+;; FUNCTION-MAP kind=lambda offset=2124 object[35]
+;; FUNCTION-MAP kind=lambda offset=2140 object[36]
+;; FUNCTION-MAP kind=lambda offset=2156 object[37]
+;; FUNCTION-MAP kind=lambda offset=2172 object[38]
+;; FUNCTION-MAP kind=lambda offset=2188 object[39]
+;; FUNCTION-MAP kind=lambda offset=2204 object[40]
+;; FUNCTION-MAP kind=lambda offset=2220 object[41]
+;; FUNCTION-MAP kind=lambda offset=2236 object[42]
+;; FUNCTION-MAP kind=lambda offset=2252 object[43]
+;; FUNCTION-MAP kind=lambda offset=2268 object[44]
+;; FUNCTION-MAP kind=lambda offset=2526 object[45]
+;; FUNCTION-MAP kind=lambda offset=2536 object[46]
+;; FUNCTION-MAP kind=lambda offset=2546 object[47]
+;; FUNCTION-MAP kind=lambda offset=2556 object[48]
+;; FUNCTION-MAP kind=lambda offset=2566 object[49]
+;; FUNCTION-MAP kind=lambda offset=2576 object[50]
+;; FUNCTION-MAP kind=lambda offset=2586 object[51]
+;; FUNCTION-MAP kind=lambda offset=2596 object[52]
+;; FUNCTION-MAP kind=lambda offset=2606 object[53]
+;; FUNCTION-MAP kind=lambda offset=2616 object[54]
+;; FUNCTION-MAP kind=lambda offset=2626 object[55]
+;; FUNCTION-MAP kind=lambda offset=2636 object[56]
+;; FUNCTION-MAP kind=lambda offset=2658 object[57]
+;; FUNCTION-MAP kind=lambda offset=2674 object[58]
+;; FUNCTION-MAP kind=lambda offset=2690 object[59]
+;; FUNCTION-MAP kind=lambda offset=2706 object[60]
+;; FUNCTION-MAP kind=lambda offset=2749 object[61]
+;; FUNCTION-MAP kind=lambda offset=2770 object[62]
+;; FUNCTION-MAP kind=lambda offset=2791 object[63]
+;; FUNCTION-MAP kind=lambda offset=2838 object[64]
+;; FUNCTION-MAP kind=lambda offset=2854 object[65]
+;; FUNCTION-MAP kind=lambda offset=2870 object[66]
+;; FUNCTION-MAP kind=lambda offset=2886 object[67]
+;; FUNCTION-MAP kind=lambda offset=2907 object[68]
+;; FUNCTION-MAP kind=lambda offset=3194 object[69]
+;; FUNCTION-MAP kind=lambda offset=3225 object[70]
+;; FUNCTION-MAP kind=lambda offset=3291 object[71]
+;; FUNCTION-MAP kind=lambda offset=3555 object[72]
+;; FUNCTION-MAP kind=lambda offset=3565 object[73]
+;; FUNCTION-MAP kind=lambda offset=3575 object[74]
+;; FUNCTION-MAP kind=lambda offset=3585 object[75]
+;; FUNCTION-MAP kind=lambda offset=3595 object[76]
+;; FUNCTION-MAP kind=lambda offset=3605 object[77]
+;; FUNCTION-MAP kind=lambda offset=3615 object[78]
+;; FUNCTION-MAP kind=lambda offset=3625 object[79]
+;; FUNCTION-MAP kind=lambda offset=3635 object[80]
+;; FUNCTION-MAP kind=lambda offset=3645 object[81]
+;; FUNCTION-MAP kind=lambda offset=3655 object[82]
+;; FUNCTION-MAP kind=lambda offset=3665 object[83]
+;; FUNCTION-MAP kind=lambda offset=3675 object[84]
+;; FUNCTION-MAP kind=lambda offset=3761 object[85]
+;; FUNCTION-MAP kind=lambda offset=3771 object[86]
+;; FUNCTION-MAP kind=lambda offset=3797 object[87]
+;; FUNCTION-MAP kind=lambda offset=3813 object[88]
+;; FUNCTION-MAP kind=lambda offset=3829 object[89]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:1 ---
+loc   line  op
+----- ----  --
+00000:   5  defvar "cc"
+00005:   6  defvar "window"
+00010: 531  defvar "sys"
+00015: 734  defvar "ConfigType"
+00020: 739  defvar "__onParseConfig"
+00025: 851  defvar "_windowTimeIntervalId"
+00030: 852  defvar "_windowTimeFunHash"
+00035: 853  defvar "WindowTimeFun"
+00040: 878  defvar "setTimeout"
+00045: 891  defvar "setInterval"
+00050: 902  defvar "clearInterval"
+00055: 909  defvar "clearTimeout"
+main:
+00060:   5  bindname "cc"
+00065:   5  name "cc"
+00070:   5  or 82 (+12)
+00075:   5  pop
+00076:   5  newinit 1
+00081:   5  endinit
+00082:   5  setname "cc"
+00087:   5  pop
+00088:   6  bindname "window"
+00093:   6  name "window"
+00098:   6  or 105 (+7)
+00103:   6  pop
+00104:   6  this
+00105:   6  setname "window"
+00110:   6  pop
+00111:  12  name "cc"
+00116:  12  newinit 1
+00121:  13  zero
+00122:  13  initprop "WINDOWS"
+00127:  14  one
+00128:  14  initprop "LINUX"
+00133:  15  int8 2
+00135:  15  initprop "MACOS"
+00140:  16  int8 3
+00142:  16  initprop "ANDROID"
+00147:  17  int8 4
+00149:  17  initprop "IPHONE"
+00154:  18  int8 5
+00156:  18  initprop "IPAD"
+00161:  19  int8 6
+00163:  19  initprop "BLACKBERRY"
+00168:  20  int8 7
+00170:  20  initprop "NACL"
+00175:  21  int8 8
+00177:  21  initprop "EMSCRIPTEN"
+00182:  22  int8 100
+00184:  22  initprop "MOBILE_BROWSER"
+00189:  23  int8 101
+00191:  23  initprop "PC_BROWSER"
+00196:  23  endinit
+00197:  23  setprop "TARGET_PLATFORM"
+00202:  23  popv
+00203:  26  name "cc"
+00208:  26  zero
+00209:  26  setprop "LANGUAGE_ENGLISH"
+00214:  26  popv
+00215:  27  name "cc"
+00220:  27  one
+00221:  27  setprop "LANGUAGE_CHINESE"
+00226:  27  popv
+00227:  28  name "cc"
+00232:  28  int8 2
+00234:  28  setprop "LANGUAGE_FRENCH"
+00239:  28  popv
+00240:  29  name "cc"
+00245:  29  int8 3
+00247:  29  setprop "LANGUAGE_ITALIAN"
+00252:  29  popv
+00253:  30  name "cc"
+00258:  30  int8 4
+00260:  30  setprop "LANGUAGE_GERMAN"
+00265:  30  popv
+00266:  31  name "cc"
+00271:  31  int8 5
+00273:  31  setprop "LANGUAGE_SPANISH"
+00278:  31  popv
+00279:  32  name "cc"
+00284:  32  int8 6
+00286:  32  setprop "LANGUAGE_RUSSIAN"
+00291:  32  popv
+00292:  33  name "cc"
+00297:  33  int8 7
+00299:  33  setprop "LANGUAGE_KOREAN"
+00304:  33  popv
+00305:  34  name "cc"
+00310:  34  int8 8
+00312:  34  setprop "LANGUAGE_JAPANESE"
+00317:  34  popv
+00318:  35  name "cc"
+00323:  35  int8 9
+00325:  35  setprop "LANGUAGE_HUNGARIAN"
+00330:  35  popv
+00331:  36  name "cc"
+00336:  36  int8 10
+00338:  36  setprop "LANGUAGE_PORTUGUESE"
+00343:  36  popv
+00344:  37  name "cc"
+00349:  37  int8 11
+00351:  37  setprop "LANGUAGE_ARABIC"
+00356:  37  popv
+00357:  39  name "cc"
+00362:  39  zero
+00363:  39  setprop "DIRECTOR_PROJECTION_2D"
+00368:  39  popv
+00369:  40  name "cc"
+00374:  40  one
+00375:  40  setprop "DIRECTOR_PROJECTION_3D"
+00380:  40  popv
+00381:  42  name "cc"
+00386:  42  zero
+00387:  42  setprop "TEXTURE_PIXELFORMAT_RGBA8888"
+00392:  42  popv
+00393:  43  name "cc"
+00398:  43  one
+00399:  43  setprop "TEXTURE_PIXELFORMAT_RGB888"
+00404:  43  popv
+00405:  44  name "cc"
+00410:  44  int8 2
+00412:  44  setprop "TEXTURE_PIXELFORMAT_RGB565"
+00417:  44  popv
+00418:  45  name "cc"
+00423:  45  int8 3
+00425:  45  setprop "TEXTURE_PIXELFORMAT_A8"
+00430:  45  popv
+00431:  46  name "cc"
+00436:  46  int8 4
+00438:  46  setprop "TEXTURE_PIXELFORMAT_I8"
+00443:  46  popv
+00444:  47  name "cc"
+00449:  47  int8 5
+00451:  47  setprop "TEXTURE_PIXELFORMAT_AI88"
+00456:  47  popv
+00457:  48  name "cc"
+00462:  48  int8 6
+00464:  48  setprop "TEXTURE_PIXELFORMAT_RGBA4444"
+00469:  48  popv
+00470:  49  name "cc"
+00475:  49  int8 7
+00477:  49  setprop "TEXTURE_PIXELFORMAT_RGB5A1"
+00482:  49  popv
+00483:  50  name "cc"
+00488:  50  int8 8
+00490:  50  setprop "TEXTURE_PIXELFORMAT_PVRTC4"
+00495:  50  popv
+00496:  51  name "cc"
+00501:  51  int8 9
+00503:  51  setprop "TEXTURE_PIXELFORMAT_PVRTC4"
+00508:  51  popv
+00509:  52  name "cc"
+00514:  52  name "cc"
+00519:  52  getprop "TEXTURE_PIXELFORMAT_RGBA8888"
+00524:  52  setprop "TEXTURE_PIXELFORMAT_DEFAULT"
+00529:  52  popv
+00530:  54  name "cc"
+00535:  54  zero
+00536:  54  setprop "TEXT_ALIGNMENT_LEFT"
+00541:  54  popv
+00542:  55  name "cc"
+00547:  55  one
+00548:  55  setprop "TEXT_ALIGNMENT_CENTER"
+00553:  55  popv
+00554:  56  name "cc"
+00559:  56  int8 2
+00561:  56  setprop "TEXT_ALIGNMENT_RIGHT"
+00566:  56  popv
+00567:  58  name "cc"
+00572:  58  zero
+00573:  58  setprop "VERTICAL_TEXT_ALIGNMENT_TOP"
+00578:  58  popv
+00579:  59  name "cc"
+00584:  59  one
+00585:  59  setprop "VERTICAL_TEXT_ALIGNMENT_CENTER"
+00590:  59  popv
+00591:  60  name "cc"
+00596:  60  int8 2
+00598:  60  setprop "VERTICAL_TEXT_ALIGNMENT_BOTTOM"
+00603:  60  popv
+00604:  62  name "cc"
+00609:  62  zero
+00610:  62  setprop "IMAGE_FORMAT_JPEG"
+00615:  62  popv
+00616:  63  name "cc"
+00621:  63  zero
+00622:  63  setprop "IMAGE_FORMAT_PNG"
+00627:  63  popv
+00628:  65  name "cc"
+00633:  65  zero
+00634:  65  setprop "PROGRESS_TIMER_TYPE_RADIAL"
+00639:  65  popv
+00640:  66  name "cc"
+00645:  66  one
+00646:  66  setprop "PROGRESS_TIMER_TYPE_BAR"
+00651:  66  popv
+00652:  68  name "cc"
+00657:  68  zero
+00658:  68  setprop "PARTICLE_TYPE_FREE"
+00663:  68  popv
+00664:  69  name "cc"
+00669:  69  one
+00670:  69  setprop "PARTICLE_TYPE_RELATIVE"
+00675:  69  popv
+00676:  70  name "cc"
+00681:  70  int8 2
+00683:  70  setprop "PARTICLE_TYPE_GROUPED"
+00688:  70  popv
+00689:  71  name "cc"
+00694:  71  int8 -1
+00696:  71  setprop "PARTICLE_DURATION_INFINITY"
+00701:  71  popv
+00702:  72  name "cc"
+00707:  72  zero
+00708:  72  setprop "PARTICLE_MODE_GRAVITY"
+00713:  72  popv
+00714:  73  name "cc"
+00719:  73  one
+00720:  73  setprop "PARTICLE_MODE_RADIUS"
+00725:  73  popv
+00726:  74  name "cc"
+00731:  74  int8 -1
+00733:  74  setprop "PARTICLE_START_SIZE_EQUAL_TO_END_SIZE"
+00738:  74  popv
+00739:  75  name "cc"
+00744:  75  int8 -1
+00746:  75  setprop "PARTICLE_START_RADIUS_EQUAL_TO_END_RADIUS"
+00751:  75  popv
+00752:  77  name "cc"
+00757:  77  zero
+00758:  77  setprop "TOUCH_ALL_AT_ONCE"
+00763:  77  popv
+00764:  78  name "cc"
+00769:  78  one
+00770:  78  setprop "TOUCH_ONE_BY_ONE"
+00775:  78  popv
+00776:  80  name "cc"
+00781:  80  double 2147483648
+00786:  80  setprop "TMX_TILE_HORIZONTAL_FLAG"
+00791:  80  popv
+00792:  81  name "cc"
+00797:  81  int32 1073741824
+00802:  81  setprop "TMX_TILE_VERTICAL_FLAG"
+00807:  81  popv
+00808:  82  name "cc"
+00813:  82  int32 536870912
+00818:  82  setprop "TMX_TILE_DIAGONAL_FLAG"
+00823:  82  popv
+00824:  84  name "cc"
+00829:  84  zero
+00830:  84  setprop "TRANSITION_ORIENTATION_LEFT_OVER"
+00835:  84  popv
+00836:  85  name "cc"
+00841:  85  one
+00842:  85  setprop "TRANSITION_ORIENTATION_RIGHT_OVER"
+00847:  85  popv
+00848:  86  name "cc"
+00853:  86  zero
+00854:  86  setprop "TRANSITION_ORIENTATION_UP_OVER"
+00859:  86  popv
+00860:  87  name "cc"
+00865:  87  one
+00866:  87  setprop "TRANSITION_ORIENTATION_DOWN_OVER"
+00871:  87  popv
+00872:  89  name "cc"
+00877:  89  newinit 1
+00882:  89  uint16 255
+00885:  89  initprop "r"
+00890:  89  zero
+00891:  89  initprop "g"
+00896:  89  zero
+00897:  89  initprop "b"
+00902:  89  endinit
+00903:  89  setprop "RED"
+00908:  89  popv
+00909:  90  name "cc"
+00914:  90  newinit 1
+00919:  90  zero
+00920:  90  initprop "r"
+00925:  90  uint16 255
+00928:  90  initprop "g"
+00933:  90  zero
+00934:  90  initprop "b"
+00939:  90  endinit
+00940:  90  setprop "GREEN"
+00945:  90  popv
+00946:  91  name "cc"
+00951:  91  newinit 1
+00956:  91  zero
+00957:  91  initprop "r"
+00962:  91  zero
+00963:  91  initprop "g"
+00968:  91  uint16 255
+00971:  91  initprop "b"
+00976:  91  endinit
+00977:  91  setprop "BLUE"
+00982:  91  popv
+00983:  92  name "cc"
+00988:  92  newinit 1
+00993:  92  zero
+00994:  92  initprop "r"
+00999:  92  zero
+01000:  92  initprop "g"
+01005:  92  zero
+01006:  92  initprop "b"
+01011:  92  endinit
+01012:  92  setprop "BLACK"
+01017:  92  popv
+01018:  93  name "cc"
+01023:  93  newinit 1
+01028:  93  uint16 255
+01031:  93  initprop "r"
+01036:  93  uint16 255
+01039:  93  initprop "g"
+01044:  93  uint16 255
+01047:  93  initprop "b"
+01052:  93  endinit
+01053:  93  setprop "WHITE"
+01058:  93  popv
+01059:  94  name "cc"
+01064:  94  newinit 1
+01069:  94  uint16 255
+01072:  94  initprop "r"
+01077:  94  uint16 255
+01080:  94  initprop "g"
+01085:  94  zero
+01086:  94  initprop "b"
+01091:  94  endinit
+01092:  94  setprop "YELLOW"
+01097:  94  popv
+01098:  96  name "cc"
+01103:  96  newinit 1
+01108:  96  zero
+01109:  96  initprop "x"
+01114:  96  zero
+01115:  96  initprop "y"
+01120:  96  endinit
+01121:  96  setprop "POINT_ZERO"
+01126:  96  popv
+01127: 105  name "cc"
+01132: 105  double 4294967295
+01137: 105  setprop "REPEAT_FOREVER"
+01142: 105  popv
+01143: 107  name "cc"
+01148: 107  zero
+01149: 107  setprop "MENU_STATE_WAITING"
+01154: 107  popv
+01155: 108  name "cc"
+01160: 108  one
+01161: 108  setprop "MENU_STATE_TRACKING_TOUCH"
+01166: 108  popv
+01167: 109  name "cc"
+01172: 109  int8 -128
+01174: 109  setprop "MENU_HANDLER_PRIORITY"
+01179: 109  popv
+01180: 110  name "cc"
+01185: 110  int8 5
+01187: 110  setprop "DEFAULT_PADDING"
+01192: 110  popv
+01193: 113  name "cc"
+01198: 113  newarray 4
+01202: 113  newinit 1
+01207: 113  zero
+01208: 113  initprop "x"
+01213: 113  zero
+01214: 113  initprop "y"
+01219: 113  endinit
+01220: 113  initelem_array 0
+01224: 113  newinit 1
+01229: 113  zero
+01230: 113  initprop "x"
+01235: 113  zero
+01236: 113  initprop "y"
+01241: 113  endinit
+01242: 113  initelem_array 1
+01246: 113  newinit 1
+01251: 113  zero
+01252: 113  initprop "x"
+01257: 113  zero
+01258: 113  initprop "y"
+01263: 113  endinit
+01264: 113  initelem_array 2
+01268: 113  newinit 1
+01273: 113  zero
+01274: 113  initprop "x"
+01279: 113  zero
+01280: 113  initprop "y"
+01285: 113  endinit
+01286: 113  initelem_array 3
+01290: 113  endinit
+01291: 113  setprop "_reuse_p"
+01296: 113  popv
+01297: 114  name "cc"
+01302: 114  zero
+01303: 114  setprop "_reuse_p_index"
+01308: 114  popv
+01309: 115  name "cc"
+01314: 115  newinit 1
+01319: 115  zero
+01320: 115  initprop "width"
+01325: 115  zero
+01326: 115  initprop "height"
+01331: 115  endinit
+01332: 115  setprop "_reuse_size"
+01337: 115  popv
+01338: 116  name "cc"
+01343: 116  newinit 1
+01348: 116  zero
+01349: 116  initprop "x"
+01354: 116  zero
+01355: 116  initprop "y"
+01360: 116  zero
+01361: 116  initprop "width"
+01366: 116  zero
+01367: 116  initprop "height"
+01372: 116  endinit
+01373: 116  setprop "_reuse_rect"
+01378: 116  popv
+01379: 117  name "cc"
+01384: 117  newinit 1
+01389: 117  uint16 255
+01392: 117  initprop "r"
+01397: 117  uint16 255
+01400: 117  initprop "g"
+01405: 117  uint16 255
+01408: 117  initprop "b"
+01413: 117  endinit
+01414: 117  setprop "_reuse_color3b"
+01419: 117  popv
+01420: 118  name "cc"
+01425: 118  newinit 1
+01430: 118  uint16 255
+01433: 118  initprop "r"
+01438: 118  uint16 255
+01441: 118  initprop "g"
+01446: 118  uint16 255
+01449: 118  initprop "b"
+01454: 118  uint16 255
+01457: 118  initprop "a"
+01462: 118  endinit
+01463: 118  setprop "_reuse_color4b"
+01468: 118  popv
+01469: 119  name "cc"
+01474: 119  name "cc"
+01479: 119  getprop "_cocosplayerLog"
+01484: 119  or 1511 (+27)
+01489: 119  pop
+01490: 119  name "cc"
+01495: 119  getprop "log"
+01500: 119  or 1511 (+11)
+01505: 119  pop
+01506: 119  name "log"
+01511: 119  setprop "log"
+01516: 119  popv
+01517: 124  name "cc"
+01522: 124  lambda (function () {
+    [sourceless code]
+})
+01527: 124  setprop "c3b"
+01532: 124  popv
+01533: 143  name "cc"
+01538: 143  lambda (function () {
+    [sourceless code]
+})
+01543: 143  setprop "integerToColor3B"
+01548: 143  popv
+01549: 154  name "cc"
+01554: 154  lambda (function () {
+    [sourceless code]
+})
+01559: 154  setprop "_c3b"
+01564: 154  popv
+01565: 162  name "cc"
+01570: 162  lambda (function () {
+    [sourceless code]
+})
+01575: 162  setprop "c3BEqual"
+01580: 162  popv
+01581: 166  name "cc"
+01586: 166  lambda (function () {
+    [sourceless code]
+})
+01591: 166  setprop "white"
+01596: 166  popv
+01597: 170  name "cc"
+01602: 170  lambda (function () {
+    [sourceless code]
+})
+01607: 170  setprop "yellow"
+01612: 170  popv
+01613: 174  name "cc"
+01618: 174  lambda (function () {
+    [sourceless code]
+})
+01623: 174  setprop "blue"
+01628: 174  popv
+01629: 178  name "cc"
+01634: 178  lambda (function () {
+    [sourceless code]
+})
+01639: 178  setprop "green"
+01644: 178  popv
+01645: 182  name "cc"
+01650: 182  lambda (function () {
+    [sourceless code]
+})
+01655: 182  setprop "red"
+01660: 182  popv
+01661: 186  name "cc"
+01666: 186  lambda (function () {
+    [sourceless code]
+})
+01671: 186  setprop "magenta"
+01676: 186  popv
+01677: 190  name "cc"
+01682: 190  lambda (function () {
+    [sourceless code]
+})
+01687: 190  setprop "black"
+01692: 190  popv
+01693: 194  name "cc"
+01698: 194  lambda (function () {
+    [sourceless code]
+})
+01703: 194  setprop "orange"
+01708: 194  popv
+01709: 198  name "cc"
+01714: 198  lambda (function () {
+    [sourceless code]
+})
+01719: 198  setprop "gray"
+01724: 198  popv
+01725: 205  name "cc"
+01730: 205  lambda (function () {
+    [sourceless code]
+})
+01735: 205  setprop "c4b"
+01740: 205  popv
+01741: 209  name "cc"
+01746: 209  lambda (function () {
+    [sourceless code]
+})
+01751: 209  setprop "_c4b"
+01756: 209  popv
+01757: 218  name "cc"
+01762: 218  name "cc"
+01767: 218  getprop "c4b"
+01772: 218  setprop "c4"
+01777: 218  popv
+01778: 219  name "cc"
+01783: 219  name "cc"
+01788: 219  getprop "_c4b"
+01793: 219  setprop "_c4"
+01798: 219  popv
+01799: 221  name "cc"
+01804: 221  lambda (function () {
+    [sourceless code]
+})
+01809: 221  setprop "c4f"
+01814: 221  popv
+01815: 225  name "cc"
+01820: 225  lambda (function () {
+    [sourceless code]
+})
+01825: 225  setprop "c4FFromccc3B"
+01830: 225  popv
+01831: 229  name "cc"
+01836: 229  lambda (function () {
+    [sourceless code]
+})
+01841: 229  setprop "c4FFromccc4B"
+01846: 229  popv
+01847: 233  name "cc"
+01852: 233  lambda (function () {
+    [sourceless code]
+})
+01857: 233  setprop "c4BFromccc4F"
+01862: 233  popv
+01863: 237  name "cc"
+01868: 237  lambda (function () {
+    [sourceless code]
+})
+01873: 237  setprop "c4FEqual"
+01878: 237  popv
+01879: 247  name "cc"
+01884: 247  lambda (function () {
+    [sourceless code]
+})
+01889: 247  setprop "convertColor3BtoHexString"
+01894: 247  popv
+01895: 258  name "cc"
+01900: 258  lambda (function () {
+    [sourceless code]
+})
+01905: 258  setprop "p"
+01910: 258  popv
+01911: 262  name "cc"
+01916: 262  lambda (function () {
+    [sourceless code]
+})
+01921: 262  setprop "_p"
+01926: 262  popv
+01927: 274  name "cc"
+01932: 274  lambda (function () {
+    [sourceless code]
+})
+01937: 274  setprop "pointEqualToPoint"
+01942: 274  popv
+01943: 278  name "cc"
+01948: 278  lambda (function () {
+    [sourceless code]
+})
+01953: 278  setprop "PointZero"
+01958: 278  popv
+01959: 285  name "cc"
+01964: 285  lambda (function () {
+    [sourceless code]
+})
+01969: 285  setprop "_g"
+01974: 285  popv
+01975: 295  name "cc"
+01980: 295  lambda (function () {
+    [sourceless code]
+})
+01985: 295  setprop "size"
+01990: 295  popv
+01991: 299  name "cc"
+01996: 299  lambda (function () {
+    [sourceless code]
+})
+02001: 299  setprop "_size"
+02006: 299  popv
+02007: 305  name "cc"
+02012: 305  lambda (function () {
+    [sourceless code]
+})
+02017: 305  setprop "sizeEqualToSize"
+02022: 305  popv
+02023: 309  name "cc"
+02028: 309  lambda (function () {
+    [sourceless code]
+})
+02033: 309  setprop "SizeZero"
+02038: 309  popv
+02039: 316  name "cc"
+02044: 316  lambda (function () {
+    [sourceless code]
+})
+02049: 316  setprop "rect"
+02054: 316  popv
+02055: 320  name "cc"
+02060: 320  lambda (function () {
+    [sourceless code]
+})
+02065: 320  setprop "_rect"
+02070: 320  popv
+02071: 328  name "cc"
+02076: 328  lambda (function () {
+    [sourceless code]
+})
+02081: 328  setprop "rectEqualToRect"
+02086: 328  popv
+02087: 332  name "cc"
+02092: 332  lambda (function () {
+    [sourceless code]
+})
+02097: 332  setprop "rectContainsRect"
+02102: 332  popv
+02103: 340  name "cc"
+02108: 340  lambda (function () {
+    [sourceless code]
+})
+02113: 340  setprop "rectGetMaxX"
+02118: 340  popv
+02119: 344  name "cc"
+02124: 344  lambda (function () {
+    [sourceless code]
+})
+02129: 344  setprop "rectGetMidX"
+02134: 344  popv
+02135: 348  name "cc"
+02140: 348  lambda (function () {
+    [sourceless code]
+})
+02145: 348  setprop "rectGetMinX"
+02150: 348  popv
+02151: 352  name "cc"
+02156: 352  lambda (function () {
+    [sourceless code]
+})
+02161: 352  setprop "rectGetMaxY"
+02166: 352  popv
+02167: 356  name "cc"
+02172: 356  lambda (function () {
+    [sourceless code]
+})
+02177: 356  setprop "rectGetMidY"
+02182: 356  popv
+02183: 360  name "cc"
+02188: 360  lambda (function () {
+    [sourceless code]
+})
+02193: 360  setprop "rectGetMinY"
+02198: 360  popv
+02199: 364  name "cc"
+02204: 364  lambda (function () {
+    [sourceless code]
+})
+02209: 364  setprop "rectContainsPoint"
+02214: 364  popv
+02215: 373  name "cc"
+02220: 373  lambda (function () {
+    [sourceless code]
+})
+02225: 373  setprop "rectIntersectsRect"
+02230: 373  popv
+02231: 383  name "cc"
+02236: 383  lambda (function () {
+    [sourceless code]
+})
+02241: 383  setprop "rectUnion"
+02246: 383  popv
+02247: 392  name "cc"
+02252: 392  lambda (function () {
+    [sourceless code]
+})
+02257: 392  setprop "rectIntersection"
+02262: 392  popv
+02263: 403  name "cc"
+02268: 403  lambda (function () {
+    [sourceless code]
+})
+02273: 403  setprop "RectZero"
+02278: 403  popv
+02279: 407  name "cc"
+02284: 407  newinit 1
+02289: 408  name "cc"
+02294: 408  dup
+02295: 408  callprop "p"
+02300: 408  swap
+02301: 408  notearg
+02302: 408  zero
+02303: 408  notearg
+02304: 408  zero
+02305: 408  notearg
+02306: 408  call 2
+02309: 408  initprop "_topLeft"
+02314: 409  name "cc"
+02319: 409  dup
+02320: 409  callprop "p"
+02325: 409  swap
+02326: 409  notearg
+02327: 409  zero
+02328: 409  notearg
+02329: 409  zero
+02330: 409  notearg
+02331: 409  call 2
+02334: 409  initprop "_topRight"
+02339: 410  name "cc"
+02344: 410  dup
+02345: 410  callprop "p"
+02350: 410  swap
+02351: 410  notearg
+02352: 410  zero
+02353: 410  notearg
+02354: 410  zero
+02355: 410  notearg
+02356: 410  call 2
+02359: 410  initprop "_top"
+02364: 411  name "cc"
+02369: 411  dup
+02370: 411  callprop "p"
+02375: 411  swap
+02376: 411  notearg
+02377: 411  zero
+02378: 411  notearg
+02379: 411  zero
+02380: 411  notearg
+02381: 411  call 2
+02384: 411  initprop "_bottomLeft"
+02389: 412  name "cc"
+02394: 412  dup
+02395: 412  callprop "p"
+02400: 412  swap
+02401: 412  notearg
+02402: 412  zero
+02403: 412  notearg
+02404: 412  zero
+02405: 412  notearg
+02406: 412  call 2
+02409: 412  initprop "_bottomRight"
+02414: 413  name "cc"
+02419: 413  dup
+02420: 413  callprop "p"
+02425: 413  swap
+02426: 413  notearg
+02427: 413  zero
+02428: 413  notearg
+02429: 413  zero
+02430: 413  notearg
+02431: 413  call 2
+02434: 413  initprop "_bottom"
+02439: 414  name "cc"
+02444: 414  dup
+02445: 414  callprop "p"
+02450: 414  swap
+02451: 414  notearg
+02452: 414  zero
+02453: 414  notearg
+02454: 414  zero
+02455: 414  notearg
+02456: 414  call 2
+02459: 414  initprop "_center"
+02464: 415  name "cc"
+02469: 415  dup
+02470: 415  callprop "p"
+02475: 415  swap
+02476: 415  notearg
+02477: 415  zero
+02478: 415  notearg
+02479: 415  zero
+02480: 415  notearg
+02481: 415  call 2
+02484: 415  initprop "_left"
+02489: 416  name "cc"
+02494: 416  dup
+02495: 416  callprop "p"
+02500: 416  swap
+02501: 416  notearg
+02502: 416  zero
+02503: 416  notearg
+02504: 416  zero
+02505: 416  notearg
+02506: 416  call 2
+02509: 416  initprop "_right"
+02514: 417  zero
+02515: 417  initprop "_width"
+02520: 418  zero
+02521: 418  initprop "_height"
+02526: 419  lambda (function () {
+    [sourceless code]
+})
+02531: 419  initprop "init"
+02536: 448  lambda (function () {
+    [sourceless code]
+})
+02541: 448  initprop "getWidth"
+02546: 451  lambda (function () {
+    [sourceless code]
+})
+02551: 451  initprop "getHeight"
+02556: 454  lambda (function () {
+    [sourceless code]
+})
+02561: 454  initprop "topLeft"
+02566: 457  lambda (function () {
+    [sourceless code]
+})
+02571: 457  initprop "topRight"
+02576: 460  lambda (function () {
+    [sourceless code]
+})
+02581: 460  initprop "top"
+02586: 463  lambda (function () {
+    [sourceless code]
+})
+02591: 463  initprop "bottomLeft"
+02596: 466  lambda (function () {
+    [sourceless code]
+})
+02601: 466  initprop "bottomRight"
+02606: 469  lambda (function () {
+    [sourceless code]
+})
+02611: 469  initprop "bottom"
+02616: 472  lambda (function () {
+    [sourceless code]
+})
+02621: 472  initprop "center"
+02626: 475  lambda (function () {
+    [sourceless code]
+})
+02631: 475  initprop "left"
+02636: 478  lambda (function () {
+    [sourceless code]
+})
+02641: 478  initprop "right"
+02646: 478  endinit
+02647: 478  setprop "VisibleRect"
+02652: 478  popv
+02653: 494  name "cc"
+02658: 494  lambda (function () {
+    [sourceless code]
+})
+02663: 494  setprop "ArrayGetIndexOfObject"
+02668: 494  popv
+02669: 509  name "cc"
+02674: 509  lambda (function () {
+    [sourceless code]
+})
+02679: 509  setprop "ArrayContainsObject"
+02684: 509  popv
+02685: 513  name "cc"
+02690: 513  lambda (function () {
+    [sourceless code]
+})
+02695: 513  setprop "ArrayRemoveObject"
+02700: 513  popv
+02701: 524  name "cc"
+02706: 524  lambda (function () {
+    [sourceless code]
+})
+02711: 524  setprop "dump"
+02716: 524  popv
+02717: 531  bindname "sys"
+02722: 531  name "sys"
+02727: 531  or 2738 (+11)
+02732: 531  pop
+02733: 531  name "undefined"
+02738: 531  setname "sys"
+02743: 531  pop
+02744: 532  name "cc"
+02749: 532  lambda (function () {
+    [sourceless code]
+})
+02754: 532  setprop "dumpConfig"
+02759: 532  popv
+02760: 544  name "cc"
+02765: 544  getprop "MenuItemToggle"
+02770: 544  lambda (function () {
+    [sourceless code]
+})
+02775: 544  setprop "create"
+02780: 544  popv
+02781: 571  name "cc"
+02786: 571  getprop "LabelAtlas"
+02791: 571  lambda (function () {
+    [sourceless code]
+})
+02796: 571  setprop "create"
+02801: 571  popv
+02802: 582  name "cc"
+02807: 582  getprop "LayerMultiplex"
+02812: 582  name "cc"
+02817: 582  getprop "LayerMultiplex"
+02822: 582  getprop "createWithArray"
+02827: 582  setprop "create"
+02832: 582  popv
+02833: 591  name "cc"
+02838: 591  lambda (function () {
+    [sourceless code]
+})
+02843: 591  setprop "associateWithNative"
+02848: 591  popv
+02849: 599  name "cc"
+02854: 599  lambda (function () {
+    [sourceless code]
+})
+02859: 599  setprop "inherits"
+02864: 599  popv
+02865: 612  name "cc"
+02870: 612  lambda (function () {
+    [sourceless code]
+})
+02875: 612  setprop "base"
+02880: 612  popv
+02881: 649  name "cc"
+02886: 649  lambda (function () {
+    [sourceless code]
+})
+02891: 649  setprop "Class"
+02896: 649  popv
+02897: 650  name "cc"
+02902: 650  getprop "Class"
+02907: 650  lambda (function () {
+    [sourceless code]
+})
+02912: 650  setprop "extend"
+02917: 650  popv
+02918: 703  name "cc"
+02923: 703  getprop "Node"
+02928: 703  name "cc"
+02933: 703  getprop "Class"
+02938: 703  getprop "extend"
+02943: 703  setprop "extend"
+02948: 703  popv
+02949: 704  name "cc"
+02954: 704  getprop "Layer"
+02959: 704  name "cc"
+02964: 704  getprop "Class"
+02969: 704  getprop "extend"
+02974: 704  setprop "extend"
+02979: 704  popv
+02980: 705  name "cc"
+02985: 705  getprop "LayerGradient"
+02990: 705  name "cc"
+02995: 705  getprop "Class"
+03000: 705  getprop "extend"
+03005: 705  setprop "extend"
+03010: 705  popv
+03011: 706  name "cc"
+03016: 706  getprop "LayerColor"
+03021: 706  name "cc"
+03026: 706  getprop "Class"
+03031: 706  getprop "extend"
+03036: 706  setprop "extend"
+03041: 706  popv
+03042: 707  name "cc"
+03047: 707  getprop "Sprite"
+03052: 707  name "cc"
+03057: 707  getprop "Class"
+03062: 707  getprop "extend"
+03067: 707  setprop "extend"
+03072: 707  popv
+03073: 708  name "cc"
+03078: 708  getprop "MenuItemFont"
+03083: 708  name "cc"
+03088: 708  getprop "Class"
+03093: 708  getprop "extend"
+03098: 708  setprop "extend"
+03103: 708  popv
+03104: 709  name "cc"
+03109: 709  getprop "Scene"
+03114: 709  name "cc"
+03119: 709  getprop "Class"
+03124: 709  getprop "extend"
+03129: 709  setprop "extend"
+03134: 709  popv
+03135: 710  name "cc"
+03140: 710  getprop "DrawNode"
+03145: 710  name "cc"
+03150: 710  getprop "Class"
+03155: 710  getprop "extend"
+03160: 710  setprop "extend"
+03165: 710  popv
+03166: 714  name "cc"
+03171: 714  name "cc"
+03176: 714  getprop "Class"
+03181: 714  dup
+03182: 714  callprop "extend"
+03187: 714  swap
+03188: 714  notearg
+03189: 714  newinit 1
+03194: 715  lambda (function () {
+    [sourceless code]
+})
+03199: 715  initprop "initWith"
+03204: 715  endinit
+03205: 715  notearg
+03206: 715  call 1
+03209: 715  setprop "Loader"
+03214: 715  popv
+03215: 724  name "cc"
+03220: 724  getprop "Loader"
+03225: 724  lambda (function () {
+    [sourceless code]
+})
+03230: 724  setprop "preload"
+03235: 724  popv
+03236: 732  name "cc"
+03241: 732  name "cc"
+03246: 732  getprop "Loader"
+03251: 732  setprop "LoaderScene"
+03256: 732  popv
+03257: 734  bindname "ConfigType"
+03262: 734  newinit 1
+03267: 735  zero
+03268: 735  initprop "NONE"
+03273: 736  one
+03274: 736  initprop "COCOSTUDIO"
+03279: 736  endinit
+03280: 736  setname "ConfigType"
+03285: 736  pop
+03286: 739  bindname "__onParseConfig"
+03291: 739  lambda (function () {
+    [sourceless code]
+})
+03296: 739  setname "__onParseConfig"
+03301: 739  pop
+03302: 745  name "cc"
+03307: 745  newinit 1
+03312: 746  name "cc"
+03317: 746  dup
+03318: 746  callprop "p"
+03323: 746  swap
+03324: 746  notearg
+03325: 746  zero
+03326: 746  notearg
+03327: 746  zero
+03328: 746  notearg
+03329: 746  call 2
+03332: 746  initprop "_topLeft"
+03337: 747  name "cc"
+03342: 747  dup
+03343: 747  callprop "p"
+03348: 747  swap
+03349: 747  notearg
+03350: 747  zero
+03351: 747  notearg
+03352: 747  zero
+03353: 747  notearg
+03354: 747  call 2
+03357: 747  initprop "_topRight"
+03362: 748  name "cc"
+03367: 748  dup
+03368: 748  callprop "p"
+03373: 748  swap
+03374: 748  notearg
+03375: 748  zero
+03376: 748  notearg
+03377: 748  zero
+03378: 748  notearg
+03379: 748  call 2
+03382: 748  initprop "_top"
+03387: 749  name "cc"
+03392: 749  dup
+03393: 749  callprop "p"
+03398: 749  swap
+03399: 749  notearg
+03400: 749  zero
+03401: 749  notearg
+03402: 749  zero
+03403: 749  notearg
+03404: 749  call 2
+03407: 749  initprop "_bottomLeft"
+03412: 750  name "cc"
+03417: 750  dup
+03418: 750  callprop "p"
+03423: 750  swap
+03424: 750  notearg
+03425: 750  zero
+03426: 750  notearg
+03427: 750  zero
+03428: 750  notearg
+03429: 750  call 2
+03432: 750  initprop "_bottomRight"
+03437: 751  name "cc"
+03442: 751  dup
+03443: 751  callprop "p"
+03448: 751  swap
+03449: 751  notearg
+03450: 751  zero
+03451: 751  notearg
+03452: 751  zero
+03453: 751  notearg
+03454: 751  call 2
+03457: 751  initprop "_bottom"
+03462: 752  name "cc"
+03467: 752  dup
+03468: 752  callprop "p"
+03473: 752  swap
+03474: 752  notearg
+03475: 752  zero
+03476: 752  notearg
+03477: 752  zero
+03478: 752  notearg
+03479: 752  call 2
+03482: 752  initprop "_center"
+03487: 753  name "cc"
+03492: 753  dup
+03493: 753  callprop "p"
+03498: 753  swap
+03499: 753  notearg
+03500: 753  zero
+03501: 753  notearg
+03502: 753  zero
+03503: 753  notearg
+03504: 753  call 2
+03507: 753  initprop "_left"
+03512: 754  name "cc"
+03517: 754  dup
+03518: 754  callprop "p"
+03523: 754  swap
+03524: 754  notearg
+03525: 754  zero
+03526: 754  notearg
+03527: 754  zero
+03528: 754  notearg
+03529: 754  call 2
+03532: 754  initprop "_right"
+03537: 755  zero
+03538: 755  initprop "_width"
+03543: 756  zero
+03544: 756  initprop "_height"
+03549: 757  false
+03550: 757  initprop "_isInitialized"
+03555: 758  lambda (function () {
+    [sourceless code]
+})
+03560: 758  initprop "init"
+03565: 799  lambda (function () {
+    [sourceless code]
+})
+03570: 799  initprop "lazyInit"
+03575: 805  lambda (function () {
+    [sourceless code]
+})
+03580: 805  initprop "getWidth"
+03585: 809  lambda (function () {
+    [sourceless code]
+})
+03590: 809  initprop "getHeight"
+03595: 813  lambda (function () {
+    [sourceless code]
+})
+03600: 813  initprop "topLeft"
+03605: 817  lambda (function () {
+    [sourceless code]
+})
+03610: 817  initprop "topRight"
+03615: 821  lambda (function () {
+    [sourceless code]
+})
+03620: 821  initprop "top"
+03625: 825  lambda (function () {
+    [sourceless code]
+})
+03630: 825  initprop "bottomLeft"
+03635: 829  lambda (function () {
+    [sourceless code]
+})
+03640: 829  initprop "bottomRight"
+03645: 833  lambda (function () {
+    [sourceless code]
+})
+03650: 833  initprop "bottom"
+03655: 837  lambda (function () {
+    [sourceless code]
+})
+03660: 837  initprop "center"
+03665: 841  lambda (function () {
+    [sourceless code]
+})
+03670: 841  initprop "left"
+03675: 845  lambda (function () {
+    [sourceless code]
+})
+03680: 845  initprop "right"
+03685: 845  endinit
+03686: 845  setprop "VisibleRect"
+03691: 845  popv
+03692: 851  bindname "_windowTimeIntervalId"
+03697: 851  zero
+03698: 851  setname "_windowTimeIntervalId"
+03703: 851  pop
+03704: 852  bindname "_windowTimeFunHash"
+03709: 852  newinit 1
+03714: 852  endinit
+03715: 852  setname "_windowTimeFunHash"
+03720: 852  pop
+03721: 853  bindname "WindowTimeFun"
+03726: 853  name "cc"
+03731: 853  getprop "Class"
+03736: 853  dup
+03737: 853  callprop "extend"
+03742: 853  swap
+03743: 853  notearg
+03744: 853  newinit 1
+03749: 854  null
+03750: 854  initprop "_code"
+03755: 855  zero
+03756: 855  initprop "_intervalId"
+03761: 856  lambda (function () {
+    [sourceless code]
+})
+03766: 856  initprop "ctor"
+03771: 860  lambda (function () {
+    [sourceless code]
+})
+03776: 860  initprop "fun"
+03781: 860  endinit
+03782: 860  notearg
+03783: 860  call 1
+03786: 860  setname "WindowTimeFun"
+03791: 860  pop
+03792: 878  bindname "setTimeout"
+03797: 878  lambda (function () {
+    [sourceless code]
+})
+03802: 878  setname "setTimeout"
+03807: 878  pop
+03808: 891  bindname "setInterval"
+03813: 891  lambda (function () {
+    [sourceless code]
+})
+03818: 891  setname "setInterval"
+03823: 891  pop
+03824: 902  bindname "clearInterval"
+03829: 902  lambda (function () {
+    [sourceless code]
+})
+03834: 902  setname "clearInterval"
+03839: 902  pop
+03840: 909  bindname "clearTimeout"
+03845: 909  name "clearInterval"
+03850: 909  setname "clearTimeout"
+03855: 909  pop
+03856: 909  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:1 ---
+;; function object[0] c3b
+;; function metadata object[0] nargs=3 bindings=4
+;; arg[0] r
+;; arg[1] g
+;; arg[2] b
+;; local[0] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:124 ---
+loc   line  op
+----- ----  --
+00000: 124  arguments
+00001: 124  setlocal 0
+00004: 124  pop
+main:
+00005: 126  getlocal 0
+00008: 126  length "length"
+00013: 126  tableswitch defaultOffset 189 low 0 high 3
+	0: 29
+	1: 54
+	2: 0
+	3: 158
+00042: 128  newinit 1
+00047: 128  zero
+00048: 128  initprop "r"
+00053: 128  zero
+00054: 128  initprop "g"
+00059: 128  zero
+00060: 128  initprop "b"
+00065: 128  endinit
+00066: 128  return
+00067: 130  getarg 0
+00070: 130  and 90 (+20)
+00075: 130  pop
+00076: 130  getarg 0
+00079: 130  name "cc"
+00084: 130  getprop "c3b"
+00089: 130  instanceof
+00090: 130  ifeq 146 (+56)
+00095: 131  newinit 1
+00100: 131  getarg 0
+00103: 131  getprop "r"
+00108: 131  initprop "r"
+00113: 131  getarg 0
+00116: 131  getprop "g"
+00121: 131  initprop "g"
+00126: 131  getarg 0
+00129: 131  getprop "b"
+00134: 131  initprop "b"
+00139: 131  endinit
+00140: 131  return
+00141: 131  goto 171 (+30)
+00146: 133  newinit 1
+00151: 133  zero
+00152: 133  initprop "r"
+00157: 133  zero
+00158: 133  initprop "g"
+00163: 133  zero
+00164: 133  initprop "b"
+00169: 133  endinit
+00170: 133  return
+00171: 136  newinit 1
+00176: 136  getarg 0
+00179: 136  initprop "r"
+00184: 136  getarg 1
+00187: 136  initprop "g"
+00192: 136  getarg 2
+00195: 136  initprop "b"
+00200: 136  endinit
+00201: 136  return
+00202: 138  string "unknown argument type"
+00207: 138  throw
+00208: 139  goto 213 (+5)
+00213: 140  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:124 ---
+;; function object[1] integerToColor3B
+;; function metadata object[1] nargs=1 bindings=3
+;; arg[0] intValue
+;; local[0] offset
+;; local[1] retColor
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:143 ---
+loc   line  op
+----- ----  --
+main:
+00000: 144  getarg 0
+00003: 144  or 10 (+7)
+00008: 144  pop
+00009: 144  zero
+00010: 144  setarg 0
+00013: 144  pop
+00014: 146  uint16 255
+00017: 146  setlocal 0
+00020: 146  pop
+00021: 147  newinit 1
+00026: 147  zero
+00027: 147  initprop "r"
+00032: 147  zero
+00033: 147  initprop "g"
+00038: 147  zero
+00039: 147  initprop "b"
+00044: 147  endinit
+00045: 147  setlocal 1
+00048: 147  pop
+00049: 148  getlocal 1
+00052: 148  getarg 0
+00055: 148  getlocal 0
+00058: 148  bitand
+00059: 148  setprop "r"
+00064: 148  pop
+00065: 149  getlocal 1
+00068: 149  getarg 0
+00071: 149  int8 8
+00073: 149  rsh
+00074: 149  getlocal 0
+00077: 149  bitand
+00078: 149  setprop "g"
+00083: 149  pop
+00084: 150  getlocal 1
+00087: 150  getarg 0
+00090: 150  int8 16
+00092: 150  rsh
+00093: 150  getlocal 0
+00096: 150  bitand
+00097: 150  setprop "b"
+00102: 150  pop
+00103: 151  getlocal 1
+00106: 151  return
+00107: 151  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:143 ---
+;; function object[2] _c3b
+;; function metadata object[2] nargs=3 bindings=3
+;; arg[0] r
+;; arg[1] g
+;; arg[2] b
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:154 ---
+loc   line  op
+----- ----  --
+main:
+00000: 156  name "cc"
+00005: 156  getprop "_reuse_color3b"
+00010: 156  getarg 0
+00013: 156  setprop "r"
+00018: 156  pop
+00019: 157  name "cc"
+00024: 157  getprop "_reuse_color3b"
+00029: 157  getarg 1
+00032: 157  setprop "g"
+00037: 157  pop
+00038: 158  name "cc"
+00043: 158  getprop "_reuse_color3b"
+00048: 158  getarg 2
+00051: 158  setprop "b"
+00056: 158  pop
+00057: 159  name "cc"
+00062: 159  getprop "_reuse_color3b"
+00067: 159  return
+00068: 159  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:154 ---
+;; function object[3] c3BEqual
+;; function metadata object[3] nargs=2 bindings=2
+;; arg[0] color1
+;; arg[1] color2
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:162 ---
+loc   line  op
+----- ----  --
+main:
+00000: 163  getarg 0
+00003: 163  getprop "r"
+00008: 163  getarg 1
+00011: 163  getprop "r"
+00016: 163  stricteq
+00017: 163  and 63 (+46)
+00022: 163  pop
+00023: 163  getarg 0
+00026: 163  getprop "g"
+00031: 163  getarg 1
+00034: 163  getprop "g"
+00039: 163  stricteq
+00040: 163  and 63 (+23)
+00045: 163  pop
+00046: 163  getarg 0
+00049: 163  getprop "b"
+00054: 163  getarg 1
+00057: 163  getprop "b"
+00062: 163  stricteq
+00063: 163  return
+00064: 163  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:162 ---
+;; function object[4] white
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:166 ---
+loc   line  op
+----- ----  --
+main:
+00000: 167  name "cc"
+00005: 167  dup
+00006: 167  callprop "c3b"
+00011: 167  swap
+00012: 167  notearg
+00013: 167  uint16 255
+00016: 167  notearg
+00017: 167  uint16 255
+00020: 167  notearg
+00021: 167  uint16 255
+00024: 167  notearg
+00025: 167  call 3
+00028: 167  return
+00029: 167  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:166 ---
+;; function object[5] yellow
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:170 ---
+loc   line  op
+----- ----  --
+main:
+00000: 171  name "cc"
+00005: 171  dup
+00006: 171  callprop "c3b"
+00011: 171  swap
+00012: 171  notearg
+00013: 171  uint16 255
+00016: 171  notearg
+00017: 171  uint16 255
+00020: 171  notearg
+00021: 171  zero
+00022: 171  notearg
+00023: 171  call 3
+00026: 171  return
+00027: 171  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:170 ---
+;; function object[6] blue
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:174 ---
+loc   line  op
+----- ----  --
+main:
+00000: 175  name "cc"
+00005: 175  dup
+00006: 175  callprop "c3b"
+00011: 175  swap
+00012: 175  notearg
+00013: 175  zero
+00014: 175  notearg
+00015: 175  zero
+00016: 175  notearg
+00017: 175  uint16 255
+00020: 175  notearg
+00021: 175  call 3
+00024: 175  return
+00025: 175  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:174 ---
+;; function object[7] green
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:178 ---
+loc   line  op
+----- ----  --
+main:
+00000: 179  name "cc"
+00005: 179  dup
+00006: 179  callprop "c3b"
+00011: 179  swap
+00012: 179  notearg
+00013: 179  zero
+00014: 179  notearg
+00015: 179  uint16 255
+00018: 179  notearg
+00019: 179  zero
+00020: 179  notearg
+00021: 179  call 3
+00024: 179  return
+00025: 179  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:178 ---
+;; function object[8] red
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:182 ---
+loc   line  op
+----- ----  --
+main:
+00000: 183  name "cc"
+00005: 183  dup
+00006: 183  callprop "c3b"
+00011: 183  swap
+00012: 183  notearg
+00013: 183  uint16 255
+00016: 183  notearg
+00017: 183  zero
+00018: 183  notearg
+00019: 183  zero
+00020: 183  notearg
+00021: 183  call 3
+00024: 183  return
+00025: 183  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:182 ---
+;; function object[9] magenta
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:186 ---
+loc   line  op
+----- ----  --
+main:
+00000: 187  name "cc"
+00005: 187  dup
+00006: 187  callprop "c3b"
+00011: 187  swap
+00012: 187  notearg
+00013: 187  uint16 255
+00016: 187  notearg
+00017: 187  zero
+00018: 187  notearg
+00019: 187  uint16 255
+00022: 187  notearg
+00023: 187  call 3
+00026: 187  return
+00027: 187  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:186 ---
+;; function object[10] black
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:190 ---
+loc   line  op
+----- ----  --
+main:
+00000: 191  name "cc"
+00005: 191  dup
+00006: 191  callprop "c3b"
+00011: 191  swap
+00012: 191  notearg
+00013: 191  zero
+00014: 191  notearg
+00015: 191  zero
+00016: 191  notearg
+00017: 191  zero
+00018: 191  notearg
+00019: 191  call 3
+00022: 191  return
+00023: 191  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:190 ---
+;; function object[11] orange
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:194 ---
+loc   line  op
+----- ----  --
+main:
+00000: 195  name "cc"
+00005: 195  dup
+00006: 195  callprop "c3b"
+00011: 195  swap
+00012: 195  notearg
+00013: 195  uint16 255
+00016: 195  notearg
+00017: 195  int8 127
+00019: 195  notearg
+00020: 195  zero
+00021: 195  notearg
+00022: 195  call 3
+00025: 195  return
+00026: 195  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:194 ---
+;; function object[12] gray
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:198 ---
+loc   line  op
+----- ----  --
+main:
+00000: 199  name "cc"
+00005: 199  dup
+00006: 199  callprop "c3b"
+00011: 199  swap
+00012: 199  notearg
+00013: 199  uint16 166
+00016: 199  notearg
+00017: 199  uint16 166
+00020: 199  notearg
+00021: 199  uint16 166
+00024: 199  notearg
+00025: 199  call 3
+00028: 199  return
+00029: 199  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:198 ---
+;; function object[13] c4b
+;; function metadata object[13] nargs=4 bindings=4
+;; arg[0] r
+;; arg[1] g
+;; arg[2] b
+;; arg[3] a
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:205 ---
+loc   line  op
+----- ----  --
+main:
+00000: 206  newinit 1
+00005: 206  getarg 0
+00008: 206  initprop "r"
+00013: 206  getarg 1
+00016: 206  initprop "g"
+00021: 206  getarg 2
+00024: 206  initprop "b"
+00029: 206  getarg 3
+00032: 206  initprop "a"
+00037: 206  endinit
+00038: 206  return
+00039: 206  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:205 ---
+;; function object[14] _c4b
+;; function metadata object[14] nargs=4 bindings=4
+;; arg[0] r
+;; arg[1] g
+;; arg[2] b
+;; arg[3] a
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:209 ---
+loc   line  op
+----- ----  --
+main:
+00000: 211  name "cc"
+00005: 211  getprop "_reuse_color4b"
+00010: 211  getarg 0
+00013: 211  setprop "r"
+00018: 211  pop
+00019: 212  name "cc"
+00024: 212  getprop "_reuse_color4b"
+00029: 212  getarg 1
+00032: 212  setprop "g"
+00037: 212  pop
+00038: 213  name "cc"
+00043: 213  getprop "_reuse_color4b"
+00048: 213  getarg 2
+00051: 213  setprop "b"
+00056: 213  pop
+00057: 214  name "cc"
+00062: 214  getprop "_reuse_color4b"
+00067: 214  getarg 3
+00070: 214  setprop "a"
+00075: 214  pop
+00076: 215  name "cc"
+00081: 215  getprop "_reuse_color4b"
+00086: 215  return
+00087: 215  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:209 ---
+;; function object[15] c4f
+;; function metadata object[15] nargs=4 bindings=4
+;; arg[0] r
+;; arg[1] g
+;; arg[2] b
+;; arg[3] a
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:221 ---
+loc   line  op
+----- ----  --
+main:
+00000: 222  newinit 1
+00005: 222  getarg 0
+00008: 222  initprop "r"
+00013: 222  getarg 1
+00016: 222  initprop "g"
+00021: 222  getarg 2
+00024: 222  initprop "b"
+00029: 222  getarg 3
+00032: 222  initprop "a"
+00037: 222  endinit
+00038: 222  return
+00039: 222  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:221 ---
+;; function object[16] c4FFromccc3B
+;; function metadata object[16] nargs=1 bindings=1
+;; arg[0] c
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:225 ---
+loc   line  op
+----- ----  --
+main:
+00000: 226  name "cc"
+00005: 226  dup
+00006: 226  callprop "c4f"
+00011: 226  swap
+00012: 226  notearg
+00013: 226  getarg 0
+00016: 226  getprop "r"
+00021: 226  uint16 255
+00024: 226  div
+00025: 226  notearg
+00026: 226  getarg 0
+00029: 226  getprop "g"
+00034: 226  uint16 255
+00037: 226  div
+00038: 226  notearg
+00039: 226  getarg 0
+00042: 226  getprop "b"
+00047: 226  uint16 255
+00050: 226  div
+00051: 226  notearg
+00052: 226  one
+00053: 226  notearg
+00054: 226  call 4
+00057: 226  return
+00058: 226  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:225 ---
+;; function object[17] c4FFromccc4B
+;; function metadata object[17] nargs=1 bindings=1
+;; arg[0] c
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:229 ---
+loc   line  op
+----- ----  --
+main:
+00000: 230  name "cc"
+00005: 230  dup
+00006: 230  callprop "c4f"
+00011: 230  swap
+00012: 230  notearg
+00013: 230  getarg 0
+00016: 230  getprop "r"
+00021: 230  uint16 255
+00024: 230  div
+00025: 230  notearg
+00026: 230  getarg 0
+00029: 230  getprop "g"
+00034: 230  uint16 255
+00037: 230  div
+00038: 230  notearg
+00039: 230  getarg 0
+00042: 230  getprop "b"
+00047: 230  uint16 255
+00050: 230  div
+00051: 230  notearg
+00052: 230  getarg 0
+00055: 230  getprop "a"
+00060: 230  uint16 255
+00063: 230  div
+00064: 230  notearg
+00065: 230  call 4
+00068: 230  return
+00069: 230  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:229 ---
+;; function object[18] c4BFromccc4F
+;; function metadata object[18] nargs=1 bindings=1
+;; arg[0] c
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:233 ---
+loc   line  op
+----- ----  --
+main:
+00000: 234  name "cc"
+00005: 234  dup
+00006: 234  callprop "c4f"
+00011: 234  swap
+00012: 234  notearg
+00013: 234  zero
+00014: 234  getarg 0
+00017: 234  getprop "r"
+00022: 234  uint16 255
+00025: 234  mul
+00026: 234  bitor
+00027: 234  notearg
+00028: 234  zero
+00029: 234  getarg 0
+00032: 234  getprop "g"
+00037: 234  uint16 255
+00040: 234  mul
+00041: 234  bitor
+00042: 234  notearg
+00043: 234  zero
+00044: 234  getarg 0
+00047: 234  getprop "b"
+00052: 234  uint16 255
+00055: 234  mul
+00056: 234  bitor
+00057: 234  notearg
+00058: 234  zero
+00059: 234  getarg 0
+00062: 234  getprop "a"
+00067: 234  uint16 255
+00070: 234  mul
+00071: 234  bitor
+00072: 234  notearg
+00073: 234  call 4
+00076: 234  return
+00077: 234  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:233 ---
+;; function object[19] c4FEqual
+;; function metadata object[19] nargs=2 bindings=2
+;; arg[0] a
+;; arg[1] b
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:237 ---
+loc   line  op
+----- ----  --
+main:
+00000: 238  getarg 0
+00003: 238  getprop "r"
+00008: 238  getarg 1
+00011: 238  getprop "r"
+00016: 238  eq
+00017: 238  and 86 (+69)
+00022: 238  pop
+00023: 238  getarg 0
+00026: 238  getprop "g"
+00031: 238  getarg 1
+00034: 238  getprop "g"
+00039: 238  eq
+00040: 238  and 86 (+46)
+00045: 238  pop
+00046: 238  getarg 0
+00049: 238  getprop "b"
+00054: 238  getarg 1
+00057: 238  getprop "b"
+00062: 238  eq
+00063: 238  and 86 (+23)
+00068: 238  pop
+00069: 238  getarg 0
+00072: 238  getprop "a"
+00077: 238  getarg 1
+00080: 238  getprop "a"
+00085: 238  eq
+00086: 238  return
+00087: 238  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:237 ---
+;; function object[20] convertColor3BtoHexString
+;; function metadata object[20] nargs=1 bindings=5
+;; arg[0] clr
+;; local[0] hR
+;; local[1] hG
+;; local[2] hB
+;; local[3] stClr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:247 ---
+loc   line  op
+----- ----  --
+main:
+00000: 248  getarg 0
+00003: 248  getprop "r"
+00008: 248  dup
+00009: 248  callprop "toString"
+00014: 248  swap
+00015: 248  notearg
+00016: 248  int8 16
+00018: 248  notearg
+00019: 248  call 1
+00022: 248  setlocal 0
+00025: 248  pop
+00026: 249  getarg 0
+00029: 249  getprop "g"
+00034: 249  dup
+00035: 249  callprop "toString"
+00040: 249  swap
+00041: 249  notearg
+00042: 249  int8 16
+00044: 249  notearg
+00045: 249  call 1
+00048: 249  setlocal 1
+00051: 249  pop
+00052: 250  getarg 0
+00055: 250  getprop "b"
+00060: 250  dup
+00061: 250  callprop "toString"
+00066: 250  swap
+00067: 250  notearg
+00068: 250  int8 16
+00070: 250  notearg
+00071: 250  call 1
+00074: 250  setlocal 2
+00077: 250  pop
+00078: 251  string "#"
+00083: 251  getarg 0
+00086: 251  getprop "r"
+00091: 251  int8 16
+00093: 251  lt
+00094: 251  ifeq 113 (+19)
+00099: 251  string "0"
+00104: 251  getlocal 0
+00107: 251  add
+00108: 251  goto 116 (+8)
+00113: 251  getlocal 0
+00116: 251  add
+00117: 251  getarg 0
+00120: 251  getprop "g"
+00125: 251  int8 16
+00127: 251  lt
+00128: 251  ifeq 147 (+19)
+00133: 251  string "0"
+00138: 251  getlocal 1
+00141: 251  add
+00142: 251  goto 150 (+8)
+00147: 251  getlocal 1
+00150: 251  add
+00151: 251  getarg 0
+00154: 251  getprop "b"
+00159: 251  int8 16
+00161: 251  lt
+00162: 251  ifeq 181 (+19)
+00167: 251  string "0"
+00172: 251  getlocal 2
+00175: 251  add
+00176: 251  goto 184 (+8)
+00181: 251  getlocal 2
+00184: 251  add
+00185: 251  setlocal 3
+00188: 251  pop
+00189: 252  getlocal 3
+00192: 252  return
+00193: 252  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:247 ---
+;; function object[21] p
+;; function metadata object[21] nargs=2 bindings=2
+;; arg[0] x
+;; arg[1] y
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:258 ---
+loc   line  op
+----- ----  --
+main:
+00000: 260  newinit 1
+00005: 260  getarg 0
+00008: 260  initprop "x"
+00013: 260  getarg 1
+00016: 260  initprop "y"
+00021: 260  endinit
+00022: 260  return
+00023: 260  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:258 ---
+;; function object[22] _p
+;; function metadata object[22] nargs=2 bindings=3
+;; arg[0] x
+;; arg[1] y
+;; local[0] p
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:262 ---
+loc   line  op
+----- ----  --
+main:
+00000: 264  name "cc"
+00005: 264  getprop "_reuse_p_index"
+00010: 264  name "cc"
+00015: 264  getprop "_reuse_p"
+00020: 264  length "length"
+00025: 264  eq
+00026: 264  ifeq 43 (+17)
+00031: 265  name "cc"
+00036: 265  zero
+00037: 265  setprop "_reuse_p_index"
+00042: 265  pop
+00043: 267  name "cc"
+00048: 267  getprop "_reuse_p"
+00053: 267  name "cc"
+00058: 267  getprop "_reuse_p_index"
+00063: 267  getelem
+00064: 267  setlocal 0
+00067: 267  pop
+00068: 268  name "cc"
+00073: 268  propinc "_reuse_p_index"
+00079: 268  dup
+00080: 268  getprop "_reuse_p_index"
+00085: 268  pos
+00086: 268  dup
+00087: 268  one
+00088: 268  add
+00089: 268  pick 2
+00091: 268  swap
+00092: 268  setprop "_reuse_p_index"
+00097: 268  pop
+00098: 268  pop
+00099: 269  getlocal 0
+00102: 269  getarg 0
+00105: 269  setprop "x"
+00110: 269  pop
+00111: 270  getlocal 0
+00114: 270  getarg 1
+00117: 270  setprop "y"
+00122: 270  pop
+00123: 271  getlocal 0
+00126: 271  return
+00127: 271  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:262 ---
+;; function object[23] pointEqualToPoint
+;; function metadata object[23] nargs=2 bindings=2
+;; arg[0] point1
+;; arg[1] point2
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:274 ---
+loc   line  op
+----- ----  --
+main:
+00000: 275  getarg 0
+00003: 275  getprop "x"
+00008: 275  getarg 1
+00011: 275  getprop "x"
+00016: 275  eq
+00017: 275  and 40 (+23)
+00022: 275  pop
+00023: 275  getarg 0
+00026: 275  getprop "y"
+00031: 275  getarg 1
+00034: 275  getprop "y"
+00039: 275  eq
+00040: 275  return
+00041: 275  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:274 ---
+;; function object[24] PointZero
+;; function metadata object[24] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:278 ---
+loc   line  op
+----- ----  --
+main:
+00000: 279  name "cc"
+00005: 279  dup
+00006: 279  callprop "p"
+00011: 279  swap
+00012: 279  notearg
+00013: 279  zero
+00014: 279  notearg
+00015: 279  zero
+00016: 279  notearg
+00017: 279  call 2
+00020: 279  return
+00021: 279  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:278 ---
+;; function object[25] _g
+;; function metadata object[25] nargs=2 bindings=2
+;; arg[0] x
+;; arg[1] y
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:285 ---
+loc   line  op
+----- ----  --
+main:
+00000: 287  name "cc"
+00005: 287  getprop "_reuse_grid"
+00010: 287  getarg 0
+00013: 287  setprop "x"
+00018: 287  pop
+00019: 288  name "cc"
+00024: 288  getprop "_reuse_grid"
+00029: 288  getarg 1
+00032: 288  setprop "y"
+00037: 288  pop
+00038: 289  name "cc"
+00043: 289  getprop "_reuse_grid"
+00048: 289  return
+00049: 289  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:285 ---
+;; function object[26] size
+;; function metadata object[26] nargs=2 bindings=2
+;; arg[0] w
+;; arg[1] h
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:295 ---
+loc   line  op
+----- ----  --
+main:
+00000: 297  newinit 1
+00005: 297  getarg 0
+00008: 297  initprop "width"
+00013: 297  getarg 1
+00016: 297  initprop "height"
+00021: 297  endinit
+00022: 297  return
+00023: 297  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:295 ---
+;; function object[27] _size
+;; function metadata object[27] nargs=2 bindings=2
+;; arg[0] w
+;; arg[1] h
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:299 ---
+loc   line  op
+----- ----  --
+main:
+00000: 301  name "cc"
+00005: 301  getprop "_reuse_size"
+00010: 301  getarg 0
+00013: 301  setprop "width"
+00018: 301  pop
+00019: 302  name "cc"
+00024: 302  getprop "_reuse_size"
+00029: 302  getarg 1
+00032: 302  setprop "height"
+00037: 302  pop
+00038: 303  name "cc"
+00043: 303  getprop "_reuse_size"
+00048: 303  return
+00049: 303  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:299 ---
+;; function object[28] sizeEqualToSize
+;; function metadata object[28] nargs=2 bindings=2
+;; arg[0] size1
+;; arg[1] size2
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:305 ---
+loc   line  op
+----- ----  --
+main:
+00000: 307  getarg 0
+00003: 307  getprop "width"
+00008: 307  getarg 1
+00011: 307  getprop "width"
+00016: 307  eq
+00017: 307  and 40 (+23)
+00022: 307  pop
+00023: 307  getarg 0
+00026: 307  getprop "height"
+00031: 307  getarg 1
+00034: 307  getprop "height"
+00039: 307  eq
+00040: 307  return
+00041: 307  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:305 ---
+;; function object[29] SizeZero
+;; function metadata object[29] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:309 ---
+loc   line  op
+----- ----  --
+main:
+00000: 310  name "cc"
+00005: 310  dup
+00006: 310  callprop "size"
+00011: 310  swap
+00012: 310  notearg
+00013: 310  zero
+00014: 310  notearg
+00015: 310  zero
+00016: 310  notearg
+00017: 310  call 2
+00020: 310  return
+00021: 310  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:309 ---
+;; function object[30] rect
+;; function metadata object[30] nargs=4 bindings=4
+;; arg[0] x
+;; arg[1] y
+;; arg[2] w
+;; arg[3] h
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:316 ---
+loc   line  op
+----- ----  --
+main:
+00000: 318  newinit 1
+00005: 318  getarg 0
+00008: 318  initprop "x"
+00013: 318  getarg 1
+00016: 318  initprop "y"
+00021: 318  getarg 2
+00024: 318  initprop "width"
+00029: 318  getarg 3
+00032: 318  initprop "height"
+00037: 318  endinit
+00038: 318  return
+00039: 318  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:316 ---
+;; function object[31] _rect
+;; function metadata object[31] nargs=4 bindings=4
+;; arg[0] x
+;; arg[1] y
+;; arg[2] w
+;; arg[3] h
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:320 ---
+loc   line  op
+----- ----  --
+main:
+00000: 322  name "cc"
+00005: 322  getprop "_reuse_rect"
+00010: 322  getarg 0
+00013: 322  setprop "x"
+00018: 322  pop
+00019: 323  name "cc"
+00024: 323  getprop "_reuse_rect"
+00029: 323  getarg 1
+00032: 323  setprop "y"
+00037: 323  pop
+00038: 324  name "cc"
+00043: 324  getprop "_reuse_rect"
+00048: 324  getarg 2
+00051: 324  setprop "width"
+00056: 324  pop
+00057: 325  name "cc"
+00062: 325  getprop "_reuse_rect"
+00067: 325  getarg 3
+00070: 325  setprop "height"
+00075: 325  pop
+00076: 326  name "cc"
+00081: 326  getprop "_reuse_rect"
+00086: 326  return
+00087: 326  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:320 ---
+;; function object[32] rectEqualToRect
+;; function metadata object[32] nargs=2 bindings=2
+;; arg[0] rect1
+;; arg[1] rect2
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:328 ---
+loc   line  op
+----- ----  --
+main:
+00000: 329  getarg 0
+00003: 329  getprop "x"
+00008: 329  getarg 1
+00011: 329  getprop "x"
+00016: 329  eq
+00017: 329  and 86 (+69)
+00022: 329  pop
+00023: 329  getarg 0
+00026: 329  getprop "y"
+00031: 329  getarg 1
+00034: 329  getprop "y"
+00039: 329  eq
+00040: 329  and 86 (+46)
+00045: 329  pop
+00046: 329  getarg 0
+00049: 329  getprop "width"
+00054: 329  getarg 1
+00057: 329  getprop "width"
+00062: 329  eq
+00063: 329  and 86 (+23)
+00068: 329  pop
+00069: 329  getarg 0
+00072: 329  getprop "height"
+00077: 329  getarg 1
+00080: 329  getprop "height"
+00085: 329  eq
+00086: 329  return
+00087: 329  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:328 ---
+;; function object[33] rectContainsRect
+;; function metadata object[33] nargs=2 bindings=2
+;; arg[0] rect1
+;; arg[1] rect2
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:332 ---
+loc   line  op
+----- ----  --
+main:
+00000: 333  getarg 0
+00003: 333  getprop "x"
+00008: 333  getarg 1
+00011: 333  getprop "x"
+00016: 333  ge
+00017: 333  or 122 (+105)
+00022: 333  pop
+00023: 333  getarg 0
+00026: 333  getprop "y"
+00031: 333  getarg 1
+00034: 333  getprop "y"
+00039: 333  ge
+00040: 333  or 122 (+82)
+00045: 333  pop
+00046: 334  getarg 0
+00049: 334  getprop "x"
+00054: 334  getarg 0
+00057: 334  getprop "width"
+00062: 334  add
+00063: 334  getarg 1
+00066: 334  getprop "x"
+00071: 334  getarg 1
+00074: 334  getprop "width"
+00079: 334  add
+00080: 334  le
+00081: 334  or 122 (+41)
+00086: 334  pop
+00087: 335  getarg 0
+00090: 335  getprop "y"
+00095: 335  getarg 0
+00098: 335  getprop "height"
+00103: 335  add
+00104: 335  getarg 1
+00107: 335  getprop "y"
+00112: 335  getarg 1
+00115: 335  getprop "height"
+00120: 335  add
+00121: 335  le
+00122: 335  ifeq 129 (+7)
+00127: 336  false
+00128: 336  return
+00129: 337  true
+00130: 337  return
+00131: 337  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:332 ---
+;; function object[34] rectGetMaxX
+;; function metadata object[34] nargs=1 bindings=1
+;; arg[0] rect
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:340 ---
+loc   line  op
+----- ----  --
+main:
+00000: 341  getarg 0
+00003: 341  getprop "x"
+00008: 341  getarg 0
+00011: 341  getprop "width"
+00016: 341  add
+00017: 341  return
+00018: 341  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:340 ---
+;; function object[35] rectGetMidX
+;; function metadata object[35] nargs=1 bindings=1
+;; arg[0] rect
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:344 ---
+loc   line  op
+----- ----  --
+main:
+00000: 345  getarg 0
+00003: 345  getprop "x"
+00008: 345  getarg 0
+00011: 345  getprop "width"
+00016: 345  int8 2
+00018: 345  div
+00019: 345  add
+00020: 345  return
+00021: 345  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:344 ---
+;; function object[36] rectGetMinX
+;; function metadata object[36] nargs=1 bindings=1
+;; arg[0] rect
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:348 ---
+loc   line  op
+----- ----  --
+main:
+00000: 349  getarg 0
+00003: 349  getprop "x"
+00008: 349  return
+00009: 349  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:348 ---
+;; function object[37] rectGetMaxY
+;; function metadata object[37] nargs=1 bindings=1
+;; arg[0] rect
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:352 ---
+loc   line  op
+----- ----  --
+main:
+00000: 353  getarg 0
+00003: 353  getprop "y"
+00008: 353  getarg 0
+00011: 353  getprop "height"
+00016: 353  add
+00017: 353  return
+00018: 353  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:352 ---
+;; function object[38] rectGetMidY
+;; function metadata object[38] nargs=1 bindings=1
+;; arg[0] rect
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:356 ---
+loc   line  op
+----- ----  --
+main:
+00000: 357  getarg 0
+00003: 357  getprop "y"
+00008: 357  getarg 0
+00011: 357  getprop "height"
+00016: 357  int8 2
+00018: 357  div
+00019: 357  add
+00020: 357  return
+00021: 357  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:356 ---
+;; function object[39] rectGetMinY
+;; function metadata object[39] nargs=1 bindings=1
+;; arg[0] rect
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:360 ---
+loc   line  op
+----- ----  --
+main:
+00000: 361  getarg 0
+00003: 361  getprop "y"
+00008: 361  return
+00009: 361  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:360 ---
+;; function object[40] rectContainsPoint
+;; function metadata object[40] nargs=2 bindings=3
+;; arg[0] rect
+;; arg[1] point
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:364 ---
+loc   line  op
+----- ----  --
+main:
+00000: 365  false
+00001: 365  setlocal 0
+00004: 365  pop
+00005: 366  getarg 1
+00008: 366  getprop "x"
+00013: 366  getarg 0
+00016: 366  getprop "x"
+00021: 366  ge
+00022: 366  and 109 (+87)
+00027: 366  pop
+00028: 366  getarg 1
+00031: 366  getprop "x"
+00036: 366  getarg 0
+00039: 366  getprop "x"
+00044: 366  getarg 0
+00047: 366  getprop "width"
+00052: 366  add
+00053: 366  le
+00054: 366  and 109 (+55)
+00059: 366  pop
+00060: 367  getarg 1
+00063: 367  getprop "y"
+00068: 367  getarg 0
+00071: 367  getprop "y"
+00076: 367  ge
+00077: 367  and 109 (+32)
+00082: 367  pop
+00083: 367  getarg 1
+00086: 367  getprop "y"
+00091: 367  getarg 0
+00094: 367  getprop "y"
+00099: 367  getarg 0
+00102: 367  getprop "height"
+00107: 367  add
+00108: 367  le
+00109: 367  ifeq 119 (+10)
+00114: 368  true
+00115: 368  setlocal 0
+00118: 368  pop
+00119: 370  getlocal 0
+00122: 370  return
+00123: 370  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:364 ---
+;; function object[41] rectIntersectsRect
+;; function metadata object[41] nargs=2 bindings=3
+;; arg[0] rectA
+;; arg[1] rectB
+;; local[0] bool
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:373 ---
+loc   line  op
+----- ----  --
+main:
+00000: 375  getarg 0
+00003: 375  getprop "x"
+00008: 375  getarg 1
+00011: 375  getprop "x"
+00016: 375  getarg 1
+00019: 375  getprop "width"
+00024: 375  add
+00025: 375  gt
+00026: 375  or 122 (+96)
+00031: 375  pop
+00032: 376  getarg 0
+00035: 376  getprop "x"
+00040: 376  getarg 0
+00043: 376  getprop "width"
+00048: 376  add
+00049: 376  getarg 1
+00052: 376  getprop "x"
+00057: 376  lt
+00058: 376  or 122 (+64)
+00063: 376  pop
+00064: 377  getarg 0
+00067: 377  getprop "y"
+00072: 377  getarg 1
+00075: 377  getprop "y"
+00080: 377  getarg 1
+00083: 377  getprop "height"
+00088: 377  add
+00089: 377  gt
+00090: 377  or 122 (+32)
+00095: 377  pop
+00096: 378  getarg 0
+00099: 378  getprop "y"
+00104: 378  getarg 0
+00107: 378  getprop "height"
+00112: 378  add
+00113: 378  getarg 1
+00116: 378  getprop "y"
+00121: 378  lt
+00122: 378  not
+00123: 378  setlocal 0
+00126: 378  pop
+00127: 380  getlocal 0
+00130: 380  return
+00131: 380  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:373 ---
+;; function object[42] rectUnion
+;; function metadata object[42] nargs=2 bindings=3
+;; arg[0] rectA
+;; arg[1] rectB
+;; local[0] rect
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:383 ---
+loc   line  op
+----- ----  --
+main:
+00000: 384  name "cc"
+00005: 384  dup
+00006: 384  callprop "rect"
+00011: 384  swap
+00012: 384  notearg
+00013: 384  zero
+00014: 384  notearg
+00015: 384  zero
+00016: 384  notearg
+00017: 384  zero
+00018: 384  notearg
+00019: 384  zero
+00020: 384  notearg
+00021: 384  call 4
+00024: 384  setlocal 0
+00027: 384  pop
+00028: 385  getlocal 0
+00031: 385  name "Math"
+00036: 385  dup
+00037: 385  callprop "min"
+00042: 385  swap
+00043: 385  notearg
+00044: 385  getarg 0
+00047: 385  getprop "x"
+00052: 385  notearg
+00053: 385  getarg 1
+00056: 385  getprop "x"
+00061: 385  notearg
+00062: 385  call 2
+00065: 385  setprop "x"
+00070: 385  pop
+00071: 386  getlocal 0
+00074: 386  name "Math"
+00079: 386  dup
+00080: 386  callprop "min"
+00085: 386  swap
+00086: 386  notearg
+00087: 386  getarg 0
+00090: 386  getprop "y"
+00095: 386  notearg
+00096: 386  getarg 1
+00099: 386  getprop "y"
+00104: 386  notearg
+00105: 386  call 2
+00108: 386  setprop "y"
+00113: 386  pop
+00114: 387  getlocal 0
+00117: 387  name "Math"
+00122: 387  dup
+00123: 387  callprop "max"
+00128: 387  swap
+00129: 387  notearg
+00130: 387  getarg 0
+00133: 387  getprop "x"
+00138: 387  getarg 0
+00141: 387  getprop "width"
+00146: 387  add
+00147: 387  notearg
+00148: 387  getarg 1
+00151: 387  getprop "x"
+00156: 387  getarg 1
+00159: 387  getprop "width"
+00164: 387  add
+00165: 387  notearg
+00166: 387  call 2
+00169: 387  getlocal 0
+00172: 387  getprop "x"
+00177: 387  sub
+00178: 387  setprop "width"
+00183: 387  pop
+00184: 388  getlocal 0
+00187: 388  name "Math"
+00192: 388  dup
+00193: 388  callprop "max"
+00198: 388  swap
+00199: 388  notearg
+00200: 388  getarg 0
+00203: 388  getprop "y"
+00208: 388  getarg 0
+00211: 388  getprop "height"
+00216: 388  add
+00217: 388  notearg
+00218: 388  getarg 1
+00221: 388  getprop "y"
+00226: 388  getarg 1
+00229: 388  getprop "height"
+00234: 388  add
+00235: 388  notearg
+00236: 388  call 2
+00239: 388  getlocal 0
+00242: 388  getprop "y"
+00247: 388  sub
+00248: 388  setprop "height"
+00253: 388  pop
+00254: 389  getlocal 0
+00257: 389  return
+00258: 389  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:383 ---
+;; function object[43] rectIntersection
+;; function metadata object[43] nargs=2 bindings=3
+;; arg[0] rectA
+;; arg[1] rectB
+;; local[0] intersection
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:392 ---
+loc   line  op
+----- ----  --
+main:
+00000: 393  name "cc"
+00005: 393  dup
+00006: 393  callprop "rect"
+00011: 393  swap
+00012: 393  notearg
+00013: 394  name "Math"
+00018: 394  dup
+00019: 394  callprop "max"
+00024: 394  swap
+00025: 394  notearg
+00026: 394  getarg 0
+00029: 394  getprop "x"
+00034: 394  notearg
+00035: 394  getarg 1
+00038: 394  getprop "x"
+00043: 394  notearg
+00044: 394  call 2
+00047: 394  notearg
+00048: 395  name "Math"
+00053: 395  dup
+00054: 395  callprop "max"
+00059: 395  swap
+00060: 395  notearg
+00061: 395  getarg 0
+00064: 395  getprop "y"
+00069: 395  notearg
+00070: 395  getarg 1
+00073: 395  getprop "y"
+00078: 395  notearg
+00079: 395  call 2
+00082: 395  notearg
+00083: 396  zero
+00084: 396  notearg
+00085: 396  zero
+00086: 396  notearg
+00087: 396  call 4
+00090: 396  setlocal 0
+00093: 396  pop
+00094: 398  getlocal 0
+00097: 398  name "Math"
+00102: 398  dup
+00103: 398  callprop "min"
+00108: 398  swap
+00109: 398  notearg
+00110: 398  getarg 0
+00113: 398  getprop "x"
+00118: 398  getarg 0
+00121: 398  getprop "width"
+00126: 398  add
+00127: 398  notearg
+00128: 398  getarg 1
+00131: 398  getprop "x"
+00136: 398  getarg 1
+00139: 398  getprop "width"
+00144: 398  add
+00145: 398  notearg
+00146: 398  call 2
+00149: 398  getlocal 0
+00152: 398  getprop "x"
+00157: 398  sub
+00158: 398  setprop "width"
+00163: 398  pop
+00164: 399  getlocal 0
+00167: 399  name "Math"
+00172: 399  dup
+00173: 399  callprop "min"
+00178: 399  swap
+00179: 399  notearg
+00180: 399  getarg 0
+00183: 399  getprop "y"
+00188: 399  getarg 0
+00191: 399  getprop "height"
+00196: 399  add
+00197: 399  notearg
+00198: 399  getarg 1
+00201: 399  getprop "y"
+00206: 399  getarg 1
+00209: 399  getprop "height"
+00214: 399  add
+00215: 399  notearg
+00216: 399  call 2
+00219: 399  getlocal 0
+00222: 399  getprop "y"
+00227: 399  sub
+00228: 399  setprop "height"
+00233: 399  pop
+00234: 400  getlocal 0
+00237: 400  return
+00238: 400  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:392 ---
+;; function object[44] RectZero
+;; function metadata object[44] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:403 ---
+loc   line  op
+----- ----  --
+main:
+00000: 404  name "cc"
+00005: 404  dup
+00006: 404  callprop "rect"
+00011: 404  swap
+00012: 404  notearg
+00013: 404  zero
+00014: 404  notearg
+00015: 404  zero
+00016: 404  notearg
+00017: 404  zero
+00018: 404  notearg
+00019: 404  zero
+00020: 404  notearg
+00021: 404  call 4
+00024: 404  return
+00025: 404  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:403 ---
+;; function object[45] init
+;; function metadata object[45] nargs=1 bindings=3
+;; arg[0] size
+;; local[0] w
+;; local[1] h
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:419 ---
+loc   line  op
+----- ----  --
+main:
+00000: 420  this
+00001: 420  getarg 0
+00004: 420  getprop "width"
+00009: 420  setprop "_width"
+00014: 420  pop
+00015: 421  this
+00016: 421  getarg 0
+00019: 421  getprop "height"
+00024: 421  setprop "_height"
+00029: 421  pop
+00030: 423  this
+00031: 423  getprop "_width"
+00036: 423  setlocal 0
+00039: 423  pop
+00040: 424  this
+00041: 424  getprop "_height"
+00046: 424  setlocal 1
+00049: 424  pop
+00050: 427  this
+00051: 427  getprop "_topLeft"
+00056: 427  getlocal 1
+00059: 427  setprop "y"
+00064: 427  pop
+00065: 428  this
+00066: 428  getprop "_topRight"
+00071: 428  getlocal 0
+00074: 428  setprop "x"
+00079: 428  pop
+00080: 429  this
+00081: 429  getprop "_topRight"
+00086: 429  getlocal 1
+00089: 429  setprop "y"
+00094: 429  pop
+00095: 430  this
+00096: 430  getprop "_top"
+00101: 430  getlocal 0
+00104: 430  int8 2
+00106: 430  div
+00107: 430  setprop "x"
+00112: 430  pop
+00113: 431  this
+00114: 431  getprop "_top"
+00119: 431  getlocal 1
+00122: 431  setprop "y"
+00127: 431  pop
+00128: 434  this
+00129: 434  getprop "_bottomRight"
+00134: 434  getlocal 0
+00137: 434  setprop "x"
+00142: 434  pop
+00143: 435  this
+00144: 435  getprop "_bottom"
+00149: 435  getlocal 0
+00152: 435  int8 2
+00154: 435  div
+00155: 435  setprop "x"
+00160: 435  pop
+00161: 438  this
+00162: 438  getprop "_center"
+00167: 438  getlocal 0
+00170: 438  int8 2
+00172: 438  div
+00173: 438  setprop "x"
+00178: 438  pop
+00179: 439  this
+00180: 439  getprop "_center"
+00185: 439  getlocal 1
+00188: 439  int8 2
+00190: 439  div
+00191: 439  setprop "y"
+00196: 439  pop
+00197: 442  this
+00198: 442  getprop "_left"
+00203: 442  getlocal 1
+00206: 442  int8 2
+00208: 442  div
+00209: 442  setprop "y"
+00214: 442  pop
+00215: 445  this
+00216: 445  getprop "_right"
+00221: 445  getlocal 0
+00224: 445  setprop "x"
+00229: 445  pop
+00230: 446  this
+00231: 446  getprop "_right"
+00236: 446  getlocal 1
+00239: 446  int8 2
+00241: 446  div
+00242: 446  setprop "y"
+00247: 446  pop
+00248: 446  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:419 ---
+;; function object[46] getWidth
+;; function metadata object[46] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:448 ---
+loc   line  op
+----- ----  --
+main:
+00000: 449  this
+00001: 449  getprop "_width"
+00006: 449  return
+00007: 449  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:448 ---
+;; function object[47] getHeight
+;; function metadata object[47] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:451 ---
+loc   line  op
+----- ----  --
+main:
+00000: 452  this
+00001: 452  getprop "_height"
+00006: 452  return
+00007: 452  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:451 ---
+;; function object[48] topLeft
+;; function metadata object[48] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:454 ---
+loc   line  op
+----- ----  --
+main:
+00000: 455  this
+00001: 455  getprop "_topLeft"
+00006: 455  return
+00007: 455  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:454 ---
+;; function object[49] topRight
+;; function metadata object[49] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:457 ---
+loc   line  op
+----- ----  --
+main:
+00000: 458  this
+00001: 458  getprop "_topRight"
+00006: 458  return
+00007: 458  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:457 ---
+;; function object[50] top
+;; function metadata object[50] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:460 ---
+loc   line  op
+----- ----  --
+main:
+00000: 461  this
+00001: 461  getprop "_top"
+00006: 461  return
+00007: 461  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:460 ---
+;; function object[51] bottomLeft
+;; function metadata object[51] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:463 ---
+loc   line  op
+----- ----  --
+main:
+00000: 464  this
+00001: 464  getprop "_bottomLeft"
+00006: 464  return
+00007: 464  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:463 ---
+;; function object[52] bottomRight
+;; function metadata object[52] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:466 ---
+loc   line  op
+----- ----  --
+main:
+00000: 467  this
+00001: 467  getprop "_bottomRight"
+00006: 467  return
+00007: 467  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:466 ---
+;; function object[53] bottom
+;; function metadata object[53] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:469 ---
+loc   line  op
+----- ----  --
+main:
+00000: 470  this
+00001: 470  getprop "_bottom"
+00006: 470  return
+00007: 470  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:469 ---
+;; function object[54] center
+;; function metadata object[54] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:472 ---
+loc   line  op
+----- ----  --
+main:
+00000: 473  this
+00001: 473  getprop "_center"
+00006: 473  return
+00007: 473  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:472 ---
+;; function object[55] left
+;; function metadata object[55] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:475 ---
+loc   line  op
+----- ----  --
+main:
+00000: 476  this
+00001: 476  getprop "_left"
+00006: 476  return
+00007: 476  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:475 ---
+;; function object[56] right
+;; function metadata object[56] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:478 ---
+loc   line  op
+----- ----  --
+main:
+00000: 479  this
+00001: 479  getprop "_right"
+00006: 479  return
+00007: 479  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:478 ---
+;; function object[57] ArrayGetIndexOfObject
+;; function metadata object[57] nargs=2 bindings=3
+;; arg[0] arr
+;; arg[1] findObj
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:494 ---
+loc   line  op
+----- ----  --
+main:
+00000: 495  zero
+00001: 495  setlocal 0
+00004: 495  pop
+00005: 495  goto 46 (+41)
+00010: 496  loophead
+00011: 496  getarg 0
+00014: 496  getlocal 0
+00017: 496  getelem
+00018: 496  getarg 1
+00021: 496  eq
+00022: 496  ifeq 31 (+9)
+00027: 497  getlocal 0
+00030: 497  return
+00031: 495  localinc 11
+00034: 495  getlocal 0
+00037: 495  pos
+00038: 495  dup
+00039: 495  one
+00040: 495  add
+00041: 495  setlocal 0
+00044: 495  pop
+00045: 495  pop
+00046: 495  loopentry
+00047: 495  getlocal 0
+00050: 495  getarg 0
+00053: 495  length "length"
+00058: 495  lt
+00059: 495  ifne 10 (-49)
+00064: 499  int8 -1
+00066: 499  return
+00067: 499  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:494 ---
+;; function object[58] ArrayContainsObject
+;; function metadata object[58] nargs=2 bindings=2
+;; arg[0] arr
+;; arg[1] findObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:509 ---
+loc   line  op
+----- ----  --
+main:
+00000: 510  name "cc"
+00005: 510  dup
+00006: 510  callprop "ArrayGetIndexOfObject"
+00011: 510  swap
+00012: 510  notearg
+00013: 510  getarg 0
+00016: 510  notearg
+00017: 510  getarg 1
+00020: 510  notearg
+00021: 510  call 2
+00024: 510  int8 -1
+00026: 510  ne
+00027: 510  return
+00028: 510  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:509 ---
+;; function object[59] ArrayRemoveObject
+;; function metadata object[59] nargs=2 bindings=3
+;; arg[0] arr
+;; arg[1] delObj
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:513 ---
+loc   line  op
+----- ----  --
+main:
+00000: 514  zero
+00001: 514  setlocal 0
+00004: 514  pop
+00005: 514  goto 63 (+58)
+00010: 515  loophead
+00011: 515  getarg 0
+00014: 515  getlocal 0
+00017: 515  getelem
+00018: 515  getarg 1
+00021: 515  eq
+00022: 515  ifeq 48 (+26)
+00027: 516  getarg 0
+00030: 516  dup
+00031: 516  callprop "splice"
+00036: 516  swap
+00037: 516  notearg
+00038: 516  getlocal 0
+00041: 516  notearg
+00042: 516  one
+00043: 516  notearg
+00044: 516  call 2
+00047: 516  pop
+00048: 514  localinc 11
+00051: 514  getlocal 0
+00054: 514  pos
+00055: 514  dup
+00056: 514  one
+00057: 514  add
+00058: 514  setlocal 0
+00061: 514  pop
+00062: 514  pop
+00063: 514  loopentry
+00064: 514  getlocal 0
+00067: 514  getarg 0
+00070: 514  length "length"
+00075: 514  lt
+00076: 514  ifne 10 (-66)
+00081: 518  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:513 ---
+;; function object[60] dump
+;; function metadata object[60] nargs=1 bindings=2
+;; arg[0] obj
+;; local[0] i
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=10 length=48 stackDepth=1 target=58
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:524 ---
+loc   line  op
+----- ----  --
+main:
+00000: 526  getarg 0
+00003: 526  iter 1
+00005: 526  goto 51 (+46)
+00010: 526  loophead
+00011: 526  iternext
+00012: 526  setlocal 0
+00015: 526  pop
+00016: 527  name "cc"
+00021: 527  dup
+00022: 527  callprop "log"
+00027: 527  swap
+00028: 527  notearg
+00029: 527  getlocal 0
+00032: 527  string " = "
+00037: 527  add
+00038: 527  getarg 0
+00041: 527  getlocal 0
+00044: 527  getelem
+00045: 527  add
+00046: 527  notearg
+00047: 527  call 1
+00050: 527  pop
+00051: 527  loopentry
+00052: 527  moreiter
+00053: 527  ifne 10 (-43)
+00058: 527  enditer
+00059: 527  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:524 ---
+;; function object[61] dumpConfig
+;; function metadata object[61] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:532 ---
+loc   line  op
+----- ----  --
+main:
+00000: 534  name "sys"
+00005: 534  ifeq 61 (+56)
+00010: 535  name "cc"
+00015: 535  dup
+00016: 535  callprop "dump"
+00021: 535  swap
+00022: 535  notearg
+00023: 535  name "sys"
+00028: 535  notearg
+00029: 535  call 1
+00032: 535  pop
+00033: 536  name "cc"
+00038: 536  dup
+00039: 536  callprop "dump"
+00044: 536  swap
+00045: 536  notearg
+00046: 536  name "sys"
+00051: 536  getprop "capabilities"
+00056: 536  notearg
+00057: 536  call 1
+00060: 536  pop
+00061: 537  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:532 ---
+;; function object[62] create
+;; function metadata object[62] nargs=0 bindings=6
+;; local[0] n
+;; local[1] args
+;; local[2] obj
+;; local[3] func
+;; local[4] item
+;; local[5] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:544 ---
+loc   line  op
+----- ----  --
+00000: 544  arguments
+00001: 544  setlocal 5
+00004: 544  pop
+main:
+00005: 546  getlocal 5
+00008: 546  length "length"
+00013: 546  setlocal 0
+00016: 546  pop
+00017: 548  getlocal 5
+00020: 548  getlocal 0
+00023: 548  int8 2
+00025: 548  sub
+00026: 548  getelem
+00027: 548  typeofexpr
+00028: 548  string "function"
+00033: 548  stricteq
+00034: 548  or 56 (+22)
+00039: 548  pop
+00040: 548  getlocal 5
+00043: 548  getlocal 0
+00046: 548  one
+00047: 548  sub
+00048: 548  getelem
+00049: 548  typeofexpr
+00050: 548  string "function"
+00055: 548  stricteq
+00056: 548  ifeq 260 (+204)
+00061: 549  name "Array"
+00066: 549  getprop "prototype"
+00071: 549  getprop "slice"
+00076: 549  dup
+00077: 549  callprop "call"
+00082: 549  swap
+00083: 549  notearg
+00084: 549  getlocal 5
+00087: 549  notearg
+00088: 549  funcall 1
+00091: 549  setlocal 1
+00094: 549  pop
+00095: 550  null
+00096: 550  setlocal 2
+00099: 550  pop
+00100: 551  getlocal 5
+00103: 551  getlocal 0
+00106: 551  int8 2
+00108: 551  sub
+00109: 551  getelem
+00110: 551  typeofexpr
+00111: 551  string "function"
+00116: 551  stricteq
+00117: 551  ifeq 140 (+23)
+00122: 552  getlocal 1
+00125: 552  dup
+00126: 552  callprop "pop"
+00131: 552  swap
+00132: 552  notearg
+00133: 552  call 0
+00136: 552  setlocal 2
+00139: 552  pop
+00140: 554  getlocal 1
+00143: 554  dup
+00144: 554  callprop "pop"
+00149: 554  swap
+00150: 554  notearg
+00151: 554  call 0
+00154: 554  setlocal 3
+00157: 554  pop
+00158: 557  name "cc"
+00163: 557  getprop "MenuItemToggle"
+00168: 557  getprop "_create"
+00173: 557  dup
+00174: 557  callprop "apply"
+00179: 557  swap
+00180: 557  notearg
+00181: 557  this
+00182: 557  notearg
+00183: 557  getlocal 1
+00186: 557  notearg
+00187: 557  funapply 2
+00190: 557  setlocal 4
+00193: 557  pop
+00194: 560  getlocal 2
+00197: 560  null
+00198: 560  strictne
+00199: 560  ifeq 232 (+33)
+00204: 561  getlocal 4
+00207: 561  dup
+00208: 561  callprop "setCallback"
+00213: 561  swap
+00214: 561  notearg
+00215: 561  getlocal 3
+00218: 561  notearg
+00219: 561  getlocal 2
+00222: 561  notearg
+00223: 561  call 2
+00226: 561  pop
+00227: 561  goto 251 (+24)
+00232: 563  getlocal 4
+00235: 563  dup
+00236: 563  callprop "setCallback"
+00241: 563  swap
+00242: 563  notearg
+00243: 563  getlocal 3
+00246: 563  notearg
+00247: 563  call 1
+00250: 563  pop
+00251: 564  getlocal 4
+00254: 564  return
+00255: 564  goto 293 (+38)
+00260: 566  name "cc"
+00265: 566  getprop "MenuItemToggle"
+00270: 566  getprop "_create"
+00275: 566  dup
+00276: 566  callprop "apply"
+00281: 566  swap
+00282: 566  notearg
+00283: 566  this
+00284: 566  notearg
+00285: 566  getlocal 5
+00288: 566  notearg
+00289: 566  funapply 2
+00292: 566  return
+00293: 567  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:544 ---
+;; function object[63] create
+;; function metadata object[63] nargs=5 bindings=7
+;; arg[0] a
+;; arg[1] b
+;; arg[2] c
+;; arg[3] d
+;; arg[4] e
+;; local[0] n
+;; local[1] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:571 ---
+loc   line  op
+----- ----  --
+00000: 571  arguments
+00001: 571  setlocal 1
+00004: 571  pop
+main:
+00005: 573  getlocal 1
+00008: 573  length "length"
+00013: 573  setlocal 0
+00016: 573  pop
+00017: 575  getlocal 0
+00020: 575  int8 5
+00022: 575  eq
+00023: 575  ifeq 88 (+65)
+00028: 576  name "cc"
+00033: 576  getprop "LabelAtlas"
+00038: 576  dup
+00039: 576  callprop "_create"
+00044: 576  swap
+00045: 576  notearg
+00046: 576  getarg 0
+00049: 576  notearg
+00050: 576  getarg 1
+00053: 576  notearg
+00054: 576  getarg 2
+00057: 576  notearg
+00058: 576  getarg 3
+00061: 576  notearg
+00062: 576  getarg 4
+00065: 576  dup
+00066: 576  callprop "charCodeAt"
+00071: 576  swap
+00072: 576  notearg
+00073: 576  zero
+00074: 576  notearg
+00075: 576  call 1
+00078: 576  notearg
+00079: 576  call 5
+00082: 576  return
+00083: 576  goto 121 (+38)
+00088: 578  name "cc"
+00093: 578  getprop "LabelAtlas"
+00098: 578  getprop "_create"
+00103: 578  dup
+00104: 578  callprop "apply"
+00109: 578  swap
+00110: 578  notearg
+00111: 578  this
+00112: 578  notearg
+00113: 578  getlocal 1
+00116: 578  notearg
+00117: 578  funapply 2
+00120: 578  return
+00121: 579  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:571 ---
+;; function object[64] associateWithNative
+;; function metadata object[64] nargs=2 bindings=2
+;; arg[0] jsobj
+;; arg[1] superclass_or_instance
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:591 ---
+loc   line  op
+----- ----  --
+main:
+00000: 591  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:591 ---
+;; function object[65] inherits
+;; function metadata object[65] nargs=2 bindings=3
+;; arg[0] childCtor
+;; arg[1] parentCtor
+;; local[0] tempCtor
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=0 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:599 ---
+loc   line  op
+----- ----  --
+main:
+00000: 601  lambda function tempCtor() {
+    [sourceless code]
+}
+00005: 601  setlocal 0
+00008: 601  pop
+00009: 602  getlocal 0
+00012: 602  getarg 1
+00015: 602  getprop "prototype"
+00020: 602  setprop "prototype"
+00025: 602  pop
+00026: 603  getarg 0
+00029: 603  getarg 1
+00032: 603  getprop "prototype"
+00037: 603  setprop "superClass_"
+00042: 603  pop
+00043: 604  getarg 0
+00046: 604  getlocal 0
+00049: 604  undefined
+00050: 604  notearg
+00051: 604  new 0
+00054: 604  setprop "prototype"
+00059: 604  pop
+00060: 605  getarg 0
+00063: 605  getprop "prototype"
+00068: 605  getarg 0
+00071: 605  setprop "constructor"
+00076: 605  pop
+00077: 605  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:599 ---
+;; function object[0] tempCtor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:601 ---
+loc   line  op
+----- ----  --
+main:
+00000: 601  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:601 ---
+;; function object[66] base
+;; function metadata object[66] nargs=3 bindings=8
+;; arg[0] me
+;; arg[1] opt_methodName
+;; arg[2] var_args
+;; local[0] caller
+;; local[1] args
+;; local[2] foundCaller
+;; local[3] ctor
+;; local[4] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:612 ---
+loc   line  op
+----- ----  --
+00000: 612  arguments
+00001: 612  setlocal 4
+00004: 612  pop
+main:
+00005: 613  getlocal 4
+00008: 613  getprop "callee"
+00013: 613  getprop "caller"
+00018: 613  setlocal 0
+00021: 613  pop
+00022: 614  getlocal 0
+00025: 614  getprop "superClass_"
+00030: 614  ifeq 113 (+83)
+00035: 616  bindname "ret"
+00040: 616  getlocal 0
+00043: 616  getprop "superClass_"
+00048: 616  getprop "constructor"
+00053: 616  dup
+00054: 616  callprop "apply"
+00059: 616  swap
+00060: 616  notearg
+00061: 616  getarg 0
+00064: 616  notearg
+00065: 616  name "Array"
+00070: 616  getprop "prototype"
+00075: 616  getprop "slice"
+00080: 616  dup
+00081: 616  callprop "call"
+00086: 616  swap
+00087: 616  notearg
+00088: 616  getlocal 4
+00091: 616  notearg
+00092: 616  one
+00093: 616  notearg
+00094: 616  funcall 2
+00097: 616  notearg
+00098: 616  funapply 2
+00101: 616  setname "ret"
+00106: 616  pop
+00107: 617  name "ret"
+00112: 617  return
+00113: 620  name "Array"
+00118: 620  getprop "prototype"
+00123: 620  getprop "slice"
+00128: 620  dup
+00129: 620  callprop "call"
+00134: 620  swap
+00135: 620  notearg
+00136: 620  getlocal 4
+00139: 620  notearg
+00140: 620  int8 2
+00142: 620  notearg
+00143: 620  funcall 2
+00146: 620  setlocal 1
+00149: 620  pop
+00150: 621  false
+00151: 621  setlocal 2
+00154: 621  pop
+00155: 622  getarg 0
+00158: 622  getprop "constructor"
+00163: 622  setlocal 3
+00166: 622  pop
+00167: 622  goto 275 (+108)
+00172: 624  loophead
+00173: 624  getlocal 3
+00176: 624  getprop "prototype"
+00181: 624  getarg 1
+00184: 624  getelem
+00185: 624  getlocal 0
+00188: 624  stricteq
+00189: 624  ifeq 204 (+15)
+00194: 625  true
+00195: 625  setlocal 2
+00198: 625  pop
+00199: 625  goto 244 (+45)
+00204: 626  getlocal 2
+00207: 626  ifeq 244 (+37)
+00212: 627  getlocal 3
+00215: 627  getprop "prototype"
+00220: 627  getarg 1
+00223: 627  getelem
+00224: 627  dup
+00225: 627  callprop "apply"
+00230: 627  swap
+00231: 627  notearg
+00232: 627  getarg 0
+00235: 627  notearg
+00236: 627  getlocal 1
+00239: 627  notearg
+00240: 627  funapply 2
+00243: 627  return
+00244: 623  getlocal 3
+00247: 623  getprop "superClass_"
+00252: 623  and 271 (+19)
+00257: 623  pop
+00258: 623  getlocal 3
+00261: 623  getprop "superClass_"
+00266: 623  getprop "constructor"
+00271: 623  setlocal 3
+00274: 623  pop
+00275: 623  loopentry
+00276: 623  getlocal 3
+00279: 623  ifne 172 (-107)
+00284: 635  getarg 0
+00287: 635  getarg 1
+00290: 635  getelem
+00291: 635  getlocal 0
+00294: 635  stricteq
+00295: 635  ifeq 342 (+47)
+00300: 636  getarg 0
+00303: 636  getprop "constructor"
+00308: 636  getprop "prototype"
+00313: 636  getarg 1
+00316: 636  getelem
+00317: 636  dup
+00318: 636  callprop "apply"
+00323: 636  swap
+00324: 636  notearg
+00325: 636  getarg 0
+00328: 636  notearg
+00329: 636  getlocal 1
+00332: 636  notearg
+00333: 636  funapply 2
+00336: 636  return
+00337: 636  goto 363 (+26)
+00342: 638  callname "Error"
+00347: 638  implicitthis "Error"
+00352: 638  notearg
+00353: 639  string "cc.base called from a method of one name to a method of a different name"
+00358: 639  notearg
+00359: 639  call 1
+00362: 639  throw
+00363: 641  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:612 ---
+;; function object[67] Class
+;; function metadata object[67] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:649 ---
+loc   line  op
+----- ----  --
+main:
+00000: 649  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:649 ---
+;; function object[68] extend
+;; function metadata object[68] nargs=1 bindings=6
+;; arg[0] prop
+;; local[0] _super
+;; local[1] prototype
+;; local[2] name
+;; local[3] Class
+;; local[4] arguments
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=5 object[0]
+;; FUNCTION-MAP kind=lambda offset=82 object[1]
+;; FUNCTION-MAP kind=lambda offset=214 object[2]
+;; TRY-NOTE kind=iter start=122 length=130 stackDepth=1 target=252
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:650 ---
+loc   line  op
+----- ----  --
+00000: 650  arguments
+00001: 650  setlocal 4
+00004: 650  pop
+main:
+00005: 685  lambda function Class() {
+    [sourceless code]
+}
+00010: 685  setlocal 3
+00013: 685  pop
+00014: 651  this
+00015: 651  getprop "prototype"
+00020: 651  setaliasedvar "_super" (hops = 0, slot = 2)
+00029: 651  pop
+00030: 655  bindname "initializing"
+00035: 655  true
+00036: 655  setname "initializing"
+00041: 655  pop
+00042: 656  this
+00043: 656  undefined
+00044: 656  notearg
+00045: 656  new 0
+00048: 656  setlocal 1
+00051: 656  pop
+00052: 657  bindname "initializing"
+00057: 657  false
+00058: 657  setname "initializing"
+00063: 657  pop
+00064: 658  bindname "fnTest"
+00069: 658  regexp /xyz/
+00074: 658  dup
+00075: 658  callprop "test"
+00080: 658  swap
+00081: 658  notearg
+00082: 658  lambda (function () {
+    [sourceless code]
+})
+00087: 658  notearg
+00088: 658  call 1
+00091: 658  ifeq 106 (+15)
+00096: 658  regexp /\b_super\b/
+00101: 658  goto 111 (+10)
+00106: 658  regexp /.*/
+00111: 658  setname "fnTest"
+00116: 658  pop
+00117: 661  getarg 0
+00120: 661  iter 1
+00122: 661  goto 250 (+128)
+00127: 661  loophead
+00128: 661  iternext
+00129: 661  setlocal 2
+00132: 661  pop
+00133: 663  getlocal 1
+00136: 663  getlocal 2
+00139: 663  getarg 0
+00142: 663  getlocal 2
+00145: 663  getelem
+00146: 663  typeofexpr
+00147: 663  string "function"
+00152: 663  eq
+00153: 663  and 209 (+56)
+00158: 663  pop
+00159: 664  getaliasedvar "_super" (hops = 0, slot = 2)
+00168: 664  getlocal 2
+00171: 664  getelem
+00172: 664  typeofexpr
+00173: 664  string "function"
+00178: 664  eq
+00179: 664  and 209 (+30)
+00184: 664  pop
+00185: 664  name "fnTest"
+00190: 664  dup
+00191: 664  callprop "test"
+00196: 664  swap
+00197: 664  notearg
+00198: 664  getarg 0
+00201: 664  getlocal 2
+00204: 664  getelem
+00205: 664  notearg
+00206: 664  call 1
+00209: 664  ifeq 241 (+32)
+00214: 665  lambda (function () {
+    [sourceless code]
+})
+00219: 665  undefined
+00220: 665  notearg
+00221: 680  getlocal 2
+00224: 680  notearg
+00225: 680  getarg 0
+00228: 680  getlocal 2
+00231: 680  getelem
+00232: 680  notearg
+00233: 680  call 2
+00236: 680  goto 248 (+12)
+00241: 681  getarg 0
+00244: 681  getlocal 2
+00247: 681  getelem
+00248: 681  setelem
+00249: 681  pop
+00250: 681  loopentry
+00251: 681  moreiter
+00252: 681  ifne 127 (-125)
+00257: 681  enditer
+00258: 692  getlocal 3
+00261: 692  getlocal 1
+00264: 692  setprop "prototype"
+00269: 692  pop
+00270: 695  getlocal 3
+00273: 695  getprop "prototype"
+00278: 695  getlocal 3
+00281: 695  setprop "constructor"
+00286: 695  pop
+00287: 698  getlocal 3
+00290: 698  getlocal 4
+00293: 698  getprop "callee"
+00298: 698  setprop "extend"
+00303: 698  pop
+00304: 700  getlocal 3
+00307: 700  return
+00308: 700  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:650 ---
+;; function object[0] Class
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] arguments
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:685 ---
+loc   line  op
+----- ----  --
+00000: 685  arguments
+00001: 685  setlocal 0
+00004: 685  pop
+main:
+00005: 687  name "initializing"
+00010: 687  not
+00011: 687  and 23 (+12)
+00016: 687  pop
+00017: 687  this
+00018: 687  getprop "ctor"
+00023: 687  ifeq 52 (+29)
+00028: 688  this
+00029: 688  getprop "ctor"
+00034: 688  dup
+00035: 688  callprop "apply"
+00040: 688  swap
+00041: 688  notearg
+00042: 688  this
+00043: 688  notearg
+00044: 688  getlocal 0
+00047: 688  notearg
+00048: 688  funapply 2
+00051: 688  pop
+00052: 688  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:685 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:658 ---
+loc   line  op
+----- ----  --
+main:
+00000: 658  name "xyz"
+00005: 658  pop
+00006: 658  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:658 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=2 bindings=2
+;; arg[0] name
+;; arg[1] fn
+
+;; nested bytecode depth=2
+;; FUNCTION-MAP kind=lambda offset=0 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:665 ---
+loc   line  op
+----- ----  --
+main:
+00000: 666  lambda (function () {
+    [sourceless code]
+})
+00005: 666  return
+00006: 679  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:665 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=3
+;; local[0] tmp
+;; local[1] ret
+;; local[2] arguments
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:666 ---
+loc   line  op
+----- ----  --
+00000: 666  arguments
+00001: 666  setlocal 2
+00004: 666  pop
+main:
+00005: 667  this
+00006: 667  getprop "_super"
+00011: 667  setlocal 0
+00014: 667  pop
+00015: 671  this
+00016: 671  getaliasedvar "_super" (hops = 1, slot = 2)
+00025: 671  getaliasedvar "name" (hops = 0, slot = 2)
+00034: 671  getelem
+00035: 671  setprop "_super"
+00040: 671  pop
+00041: 675  getaliasedvar "fn" (hops = 0, slot = 3)
+00050: 675  dup
+00051: 675  callprop "apply"
+00056: 675  swap
+00057: 675  notearg
+00058: 675  this
+00059: 675  notearg
+00060: 675  getlocal 2
+00063: 675  notearg
+00064: 675  funapply 2
+00067: 675  setlocal 1
+00070: 675  pop
+00071: 676  this
+00072: 676  getlocal 0
+00075: 676  setprop "_super"
+00080: 676  pop
+00081: 678  getlocal 1
+00084: 678  return
+00085: 678  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:666 ---
+;; function object[69] initWith
+;; function metadata object[69] nargs=3 bindings=3
+;; arg[0] resources
+;; arg[1] selector
+;; arg[2] target
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:715 ---
+loc   line  op
+----- ----  --
+main:
+00000: 716  getarg 1
+00003: 716  ifeq 28 (+25)
+00008: 717  this
+00009: 717  getarg 1
+00012: 717  setprop "_selector"
+00017: 717  pop
+00018: 718  this
+00019: 718  getarg 2
+00022: 718  setprop "_target"
+00027: 718  pop
+00028: 720  this
+00029: 720  getprop "_selector"
+00034: 720  dup
+00035: 720  callprop "call"
+00040: 720  swap
+00041: 720  notearg
+00042: 720  this
+00043: 720  getprop "_target"
+00048: 720  notearg
+00049: 720  funcall 1
+00052: 720  pop
+00053: 720  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:715 ---
+;; function object[70] preload
+;; function metadata object[70] nargs=3 bindings=3
+;; arg[0] resources
+;; arg[1] selector
+;; arg[2] target
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:724 ---
+loc   line  op
+----- ----  --
+main:
+00000: 725  this
+00001: 725  getprop "_instance"
+00006: 725  not
+00007: 725  ifeq 34 (+27)
+00012: 726  this
+00013: 726  name "cc"
+00018: 726  getprop "Loader"
+00023: 726  undefined
+00024: 726  notearg
+00025: 726  new 0
+00028: 726  setprop "_instance"
+00033: 726  pop
+00034: 728  this
+00035: 728  getprop "_instance"
+00040: 728  dup
+00041: 728  callprop "initWith"
+00046: 728  swap
+00047: 728  notearg
+00048: 728  getarg 0
+00051: 728  notearg
+00052: 728  getarg 1
+00055: 728  notearg
+00056: 728  getarg 2
+00059: 728  notearg
+00060: 728  call 3
+00063: 728  pop
+00064: 729  this
+00065: 729  getprop "_instance"
+00070: 729  return
+00071: 729  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:724 ---
+;; function object[71] __onParseConfig
+;; function metadata object[71] nargs=2 bindings=2
+;; arg[0] type
+;; arg[1] str
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:739 ---
+loc   line  op
+----- ----  --
+main:
+00000: 740  getarg 0
+00003: 740  name "ConfigType"
+00008: 740  getprop "COCOSTUDIO"
+00013: 740  stricteq
+00014: 740  ifeq 73 (+59)
+00019: 741  name "ccs"
+00024: 741  getprop "TriggerMng"
+00029: 741  dup
+00030: 741  callprop "getInstance"
+00035: 741  swap
+00036: 741  notearg
+00037: 741  call 0
+00040: 741  dup
+00041: 741  callprop "parse"
+00046: 741  swap
+00047: 741  notearg
+00048: 741  name "JSON"
+00053: 741  dup
+00054: 741  callprop "parse"
+00059: 741  swap
+00060: 741  notearg
+00061: 741  getarg 1
+00064: 741  notearg
+00065: 741  call 1
+00068: 741  notearg
+00069: 741  call 1
+00072: 741  pop
+00073: 742  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:739 ---
+;; function object[72] init
+;; function metadata object[72] nargs=0 bindings=10
+;; local[0] director
+;; local[1] origin
+;; local[2] size
+;; local[3] x
+;; local[4] y
+;; local[5] w
+;; local[6] h
+;; local[7] left
+;; local[8] right
+;; local[9] middle
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:758 ---
+loc   line  op
+----- ----  --
+main:
+00000: 759  name "cc"
+00005: 759  getprop "Director"
+00010: 759  dup
+00011: 759  callprop "getInstance"
+00016: 759  swap
+00017: 759  notearg
+00018: 759  call 0
+00021: 759  setlocal 0
+00024: 759  pop
+00025: 760  getlocal 0
+00028: 760  dup
+00029: 760  callprop "getVisibleOrigin"
+00034: 760  swap
+00035: 760  notearg
+00036: 760  call 0
+00039: 760  setlocal 1
+00042: 760  pop
+00043: 761  getlocal 0
+00046: 761  dup
+00047: 761  callprop "getVisibleSize"
+00052: 761  swap
+00053: 761  notearg
+00054: 761  call 0
+00057: 761  setlocal 2
+00060: 761  pop
+00061: 763  this
+00062: 763  getlocal 2
+00065: 763  getprop "width"
+00070: 763  setprop "_width"
+00075: 763  pop
+00076: 764  this
+00077: 764  getlocal 2
+00080: 764  getprop "height"
+00085: 764  setprop "_height"
+00090: 764  pop
+00091: 766  getlocal 1
+00094: 766  getprop "x"
+00099: 766  setlocal 3
+00102: 766  pop
+00103: 767  getlocal 1
+00106: 767  getprop "y"
+00111: 767  setlocal 4
+00114: 767  pop
+00115: 768  this
+00116: 768  getprop "_width"
+00121: 768  setlocal 5
+00124: 768  pop
+00125: 769  this
+00126: 769  getprop "_height"
+00131: 769  setlocal 6
+00134: 769  pop
+00135: 771  getlocal 1
+00138: 771  getprop "x"
+00143: 771  setlocal 7
+00146: 771  pop
+00147: 772  getlocal 1
+00150: 772  getprop "x"
+00155: 772  getlocal 2
+00158: 772  getprop "width"
+00163: 772  add
+00164: 772  setlocal 8
+00167: 772  pop
+00168: 773  getlocal 1
+00171: 773  getprop "x"
+00176: 773  getlocal 2
+00179: 773  getprop "width"
+00184: 773  int8 2
+00186: 773  div
+00187: 773  add
+00188: 773  setlocal 9
+00191: 773  pop
+00192: 776  this
+00193: 776  getprop "_top"
+00198: 776  this
+00199: 776  getprop "_topLeft"
+00204: 776  this
+00205: 776  getprop "_topRight"
+00210: 776  getlocal 4
+00213: 776  getlocal 6
+00216: 776  add
+00217: 776  setprop "y"
+00222: 776  setprop "y"
+00227: 776  setprop "y"
+00232: 776  pop
+00233: 777  this
+00234: 777  getprop "_topLeft"
+00239: 777  getlocal 7
+00242: 777  setprop "x"
+00247: 777  pop
+00248: 778  this
+00249: 778  getprop "_top"
+00254: 778  getlocal 9
+00257: 778  setprop "x"
+00262: 778  pop
+00263: 779  this
+00264: 779  getprop "_topRight"
+00269: 779  getlocal 8
+00272: 779  setprop "x"
+00277: 779  pop
+00278: 783  this
+00279: 783  getprop "_bottom"
+00284: 783  this
+00285: 783  getprop "_bottomRight"
+00290: 783  this
+00291: 783  getprop "_bottomLeft"
+00296: 783  getlocal 4
+00299: 783  setprop "y"
+00304: 783  setprop "y"
+00309: 783  setprop "y"
+00314: 783  pop
+00315: 784  this
+00316: 784  getprop "_bottomLeft"
+00321: 784  getlocal 7
+00324: 784  setprop "x"
+00329: 784  pop
+00330: 785  this
+00331: 785  getprop "_bottom"
+00336: 785  getlocal 9
+00339: 785  setprop "x"
+00344: 785  pop
+00345: 786  this
+00346: 786  getprop "_bottomRight"
+00351: 786  getlocal 8
+00354: 786  setprop "x"
+00359: 786  pop
+00360: 789  this
+00361: 789  getprop "_right"
+00366: 789  this
+00367: 789  getprop "_left"
+00372: 789  this
+00373: 789  getprop "_center"
+00378: 789  getlocal 4
+00381: 789  getlocal 6
+00384: 789  int8 2
+00386: 789  div
+00387: 789  add
+00388: 789  setprop "y"
+00393: 789  setprop "y"
+00398: 789  setprop "y"
+00403: 789  pop
+00404: 790  this
+00405: 790  getprop "_center"
+00410: 790  getlocal 9
+00413: 790  setprop "x"
+00418: 790  pop
+00419: 793  this
+00420: 793  getprop "_left"
+00425: 793  getlocal 7
+00428: 793  setprop "x"
+00433: 793  pop
+00434: 796  this
+00435: 796  getprop "_right"
+00440: 796  getlocal 8
+00443: 796  setprop "x"
+00448: 796  pop
+00449: 796  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:758 ---
+;; function object[73] lazyInit
+;; function metadata object[73] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:799 ---
+loc   line  op
+----- ----  --
+main:
+00000: 800  this
+00001: 800  getprop "_isInitialized"
+00006: 800  not
+00007: 800  ifeq 33 (+26)
+00012: 801  this
+00013: 801  dup
+00014: 801  callprop "init"
+00019: 801  swap
+00020: 801  notearg
+00021: 801  call 0
+00024: 801  pop
+00025: 802  this
+00026: 802  true
+00027: 802  setprop "_isInitialized"
+00032: 802  pop
+00033: 803  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:799 ---
+;; function object[74] getWidth
+;; function metadata object[74] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:805 ---
+loc   line  op
+----- ----  --
+main:
+00000: 806  this
+00001: 806  dup
+00002: 806  callprop "lazyInit"
+00007: 806  swap
+00008: 806  notearg
+00009: 806  call 0
+00012: 806  pop
+00013: 807  this
+00014: 807  getprop "_width"
+00019: 807  return
+00020: 807  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:805 ---
+;; function object[75] getHeight
+;; function metadata object[75] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:809 ---
+loc   line  op
+----- ----  --
+main:
+00000: 810  this
+00001: 810  dup
+00002: 810  callprop "lazyInit"
+00007: 810  swap
+00008: 810  notearg
+00009: 810  call 0
+00012: 810  pop
+00013: 811  this
+00014: 811  getprop "_height"
+00019: 811  return
+00020: 811  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:809 ---
+;; function object[76] topLeft
+;; function metadata object[76] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:813 ---
+loc   line  op
+----- ----  --
+main:
+00000: 814  this
+00001: 814  dup
+00002: 814  callprop "lazyInit"
+00007: 814  swap
+00008: 814  notearg
+00009: 814  call 0
+00012: 814  pop
+00013: 815  this
+00014: 815  getprop "_topLeft"
+00019: 815  return
+00020: 815  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:813 ---
+;; function object[77] topRight
+;; function metadata object[77] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:817 ---
+loc   line  op
+----- ----  --
+main:
+00000: 818  this
+00001: 818  dup
+00002: 818  callprop "lazyInit"
+00007: 818  swap
+00008: 818  notearg
+00009: 818  call 0
+00012: 818  pop
+00013: 819  this
+00014: 819  getprop "_topRight"
+00019: 819  return
+00020: 819  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:817 ---
+;; function object[78] top
+;; function metadata object[78] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:821 ---
+loc   line  op
+----- ----  --
+main:
+00000: 822  this
+00001: 822  dup
+00002: 822  callprop "lazyInit"
+00007: 822  swap
+00008: 822  notearg
+00009: 822  call 0
+00012: 822  pop
+00013: 823  this
+00014: 823  getprop "_top"
+00019: 823  return
+00020: 823  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:821 ---
+;; function object[79] bottomLeft
+;; function metadata object[79] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:825 ---
+loc   line  op
+----- ----  --
+main:
+00000: 826  this
+00001: 826  dup
+00002: 826  callprop "lazyInit"
+00007: 826  swap
+00008: 826  notearg
+00009: 826  call 0
+00012: 826  pop
+00013: 827  this
+00014: 827  getprop "_bottomLeft"
+00019: 827  return
+00020: 827  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:825 ---
+;; function object[80] bottomRight
+;; function metadata object[80] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:829 ---
+loc   line  op
+----- ----  --
+main:
+00000: 830  this
+00001: 830  dup
+00002: 830  callprop "lazyInit"
+00007: 830  swap
+00008: 830  notearg
+00009: 830  call 0
+00012: 830  pop
+00013: 831  this
+00014: 831  getprop "_bottomRight"
+00019: 831  return
+00020: 831  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:829 ---
+;; function object[81] bottom
+;; function metadata object[81] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:833 ---
+loc   line  op
+----- ----  --
+main:
+00000: 834  this
+00001: 834  dup
+00002: 834  callprop "lazyInit"
+00007: 834  swap
+00008: 834  notearg
+00009: 834  call 0
+00012: 834  pop
+00013: 835  this
+00014: 835  getprop "_bottom"
+00019: 835  return
+00020: 835  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:833 ---
+;; function object[82] center
+;; function metadata object[82] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:837 ---
+loc   line  op
+----- ----  --
+main:
+00000: 838  this
+00001: 838  dup
+00002: 838  callprop "lazyInit"
+00007: 838  swap
+00008: 838  notearg
+00009: 838  call 0
+00012: 838  pop
+00013: 839  this
+00014: 839  getprop "_center"
+00019: 839  return
+00020: 839  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:837 ---
+;; function object[83] left
+;; function metadata object[83] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:841 ---
+loc   line  op
+----- ----  --
+main:
+00000: 842  this
+00001: 842  dup
+00002: 842  callprop "lazyInit"
+00007: 842  swap
+00008: 842  notearg
+00009: 842  call 0
+00012: 842  pop
+00013: 843  this
+00014: 843  getprop "_left"
+00019: 843  return
+00020: 843  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:841 ---
+;; function object[84] right
+;; function metadata object[84] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:845 ---
+loc   line  op
+----- ----  --
+main:
+00000: 846  this
+00001: 846  dup
+00002: 846  callprop "lazyInit"
+00007: 846  swap
+00008: 846  notearg
+00009: 846  call 0
+00012: 846  pop
+00013: 847  this
+00014: 847  getprop "_right"
+00019: 847  return
+00020: 847  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:845 ---
+;; function object[85] ctor
+;; function metadata object[85] nargs=1 bindings=1
+;; arg[0] code
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:856 ---
+loc   line  op
+----- ----  --
+main:
+00000: 857  this
+00001: 857  nameinc "_windowTimeIntervalId"
+00007: 857  bindname "_windowTimeIntervalId"
+00012: 857  name "_windowTimeIntervalId"
+00017: 857  pos
+00018: 857  dup
+00019: 857  one
+00020: 857  add
+00021: 857  pick 2
+00023: 857  swap
+00024: 857  setname "_windowTimeIntervalId"
+00029: 857  pop
+00030: 857  setprop "_intervalId"
+00035: 857  pop
+00036: 858  this
+00037: 858  getarg 0
+00040: 858  setprop "_code"
+00045: 858  pop
+00046: 858  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:856 ---
+;; function object[86] fun
+;; function metadata object[86] nargs=0 bindings=1
+;; local[0] code
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:860 ---
+loc   line  op
+----- ----  --
+main:
+00000: 861  this
+00001: 861  getprop "_code"
+00006: 861  not
+00007: 861  ifeq 14 (+7)
+00012: 861  undefined
+00013: 861  return
+00014: 862  this
+00015: 862  getprop "_code"
+00020: 862  setlocal 0
+00023: 862  pop
+00024: 863  getlocal 0
+00027: 863  typeof
+00028: 863  string "string"
+00033: 863  eq
+00034: 863  ifeq 68 (+34)
+00039: 864  callname "Function"
+00044: 864  implicitthis "Function"
+00049: 864  notearg
+00050: 864  getlocal 0
+00053: 864  notearg
+00054: 864  call 1
+00057: 864  undefined
+00058: 864  notearg
+00059: 864  call 0
+00062: 864  pop
+00063: 864  goto 92 (+29)
+00068: 866  getlocal 0
+00071: 866  typeof
+00072: 866  string "function"
+00077: 866  eq
+00078: 866  ifeq 92 (+14)
+00083: 867  calllocal 0
+00086: 867  undefined
+00087: 867  notearg
+00088: 867  call 0
+00091: 867  pop
+00092: 868  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:860 ---
+;; function object[87] setTimeout
+;; function metadata object[87] nargs=2 bindings=3
+;; arg[0] code
+;; arg[1] delay
+;; local[0] target
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:878 ---
+loc   line  op
+----- ----  --
+main:
+00000: 879  name "WindowTimeFun"
+00005: 879  undefined
+00006: 879  notearg
+00007: 879  getarg 0
+00010: 879  notearg
+00011: 879  new 1
+00014: 879  setlocal 0
+00017: 879  pop
+00018: 880  name "cc"
+00023: 880  getprop "Director"
+00028: 880  dup
+00029: 880  callprop "getInstance"
+00034: 880  swap
+00035: 880  notearg
+00036: 880  call 0
+00039: 880  dup
+00040: 880  callprop "getScheduler"
+00045: 880  swap
+00046: 880  notearg
+00047: 880  call 0
+00050: 880  dup
+00051: 880  callprop "scheduleCallbackForTarget"
+00056: 880  swap
+00057: 880  notearg
+00058: 880  getlocal 0
+00061: 880  notearg
+00062: 880  getlocal 0
+00065: 880  getprop "fun"
+00070: 880  notearg
+00071: 880  getarg 1
+00074: 880  uint16 1000
+00077: 880  div
+00078: 880  notearg
+00079: 880  zero
+00080: 880  notearg
+00081: 880  zero
+00082: 880  notearg
+00083: 880  false
+00084: 880  notearg
+00085: 880  call 6
+00088: 880  pop
+00089: 881  name "_windowTimeFunHash"
+00094: 881  getlocal 0
+00097: 881  getprop "_intervalId"
+00102: 881  getlocal 0
+00105: 881  setelem
+00106: 881  pop
+00107: 882  getlocal 0
+00110: 882  getprop "_intervalId"
+00115: 882  return
+00116: 882  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:878 ---
+;; function object[88] setInterval
+;; function metadata object[88] nargs=2 bindings=3
+;; arg[0] code
+;; arg[1] delay
+;; local[0] target
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:891 ---
+loc   line  op
+----- ----  --
+main:
+00000: 892  name "WindowTimeFun"
+00005: 892  undefined
+00006: 892  notearg
+00007: 892  getarg 0
+00010: 892  notearg
+00011: 892  new 1
+00014: 892  setlocal 0
+00017: 892  pop
+00018: 893  name "cc"
+00023: 893  getprop "Director"
+00028: 893  dup
+00029: 893  callprop "getInstance"
+00034: 893  swap
+00035: 893  notearg
+00036: 893  call 0
+00039: 893  dup
+00040: 893  callprop "getScheduler"
+00045: 893  swap
+00046: 893  notearg
+00047: 893  call 0
+00050: 893  dup
+00051: 893  callprop "scheduleCallbackForTarget"
+00056: 893  swap
+00057: 893  notearg
+00058: 893  getlocal 0
+00061: 893  notearg
+00062: 893  getlocal 0
+00065: 893  getprop "fun"
+00070: 893  notearg
+00071: 893  getarg 1
+00074: 893  uint16 1000
+00077: 893  div
+00078: 893  notearg
+00079: 893  name "cc"
+00084: 893  getprop "REPEAT_FOREVER"
+00089: 893  notearg
+00090: 893  zero
+00091: 893  notearg
+00092: 893  false
+00093: 893  notearg
+00094: 893  call 6
+00097: 893  pop
+00098: 894  name "_windowTimeFunHash"
+00103: 894  getlocal 0
+00106: 894  getprop "_intervalId"
+00111: 894  getlocal 0
+00114: 894  setelem
+00115: 894  pop
+00116: 895  getlocal 0
+00119: 895  getprop "_intervalId"
+00124: 895  return
+00125: 895  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:891 ---
+;; function object[89] clearInterval
+;; function metadata object[89] nargs=1 bindings=2
+;; arg[0] intervalId
+;; local[0] target
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:902 ---
+loc   line  op
+----- ----  --
+main:
+00000: 903  name "_windowTimeFunHash"
+00005: 903  getarg 0
+00008: 903  getelem
+00009: 903  setlocal 0
+00012: 903  pop
+00013: 904  getlocal 0
+00016: 904  ifeq 88 (+72)
+00021: 905  name "cc"
+00026: 905  getprop "Director"
+00031: 905  dup
+00032: 905  callprop "getInstance"
+00037: 905  swap
+00038: 905  notearg
+00039: 905  call 0
+00042: 905  dup
+00043: 905  callprop "getScheduler"
+00048: 905  swap
+00049: 905  notearg
+00050: 905  call 0
+00053: 905  dup
+00054: 905  callprop "unscheduleCallbackForTarget"
+00059: 905  swap
+00060: 905  notearg
+00061: 905  getlocal 0
+00064: 905  notearg
+00065: 905  getlocal 0
+00068: 905  getprop "fun"
+00073: 905  notearg
+00074: 905  call 2
+00077: 905  pop
+00078: 906  name "_windowTimeFunHash"
+00083: 906  getarg 0
+00086: 906  delelem
+00087: 906  pop
+00088: 907  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js:902 ---

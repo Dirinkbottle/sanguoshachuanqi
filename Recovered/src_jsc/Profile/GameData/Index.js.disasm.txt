@@ -1,0 +1,471 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/Index.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=48 object[0]
+;; FUNCTION-MAP kind=lambda offset=58 object[1]
+;; FUNCTION-MAP kind=lambda offset=68 object[2]
+;; FUNCTION-MAP kind=lambda offset=78 object[3]
+;; FUNCTION-MAP kind=lambda offset=88 object[4]
+;; FUNCTION-MAP kind=lambda offset=98 object[5]
+;; FUNCTION-MAP kind=lambda offset=108 object[6]
+;; FUNCTION-MAP kind=lambda offset=118 object[7]
+;; FUNCTION-MAP kind=lambda offset=159 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Profile"
+00010:   8  getprop "GameData"
+00015:   8  name "cc"
+00020:   8  getprop "Class"
+00025:   8  dup
+00026:   8  callprop "extend"
+00031:   8  swap
+00032:   8  notearg
+00033:   8  newinit 1
+00038:  10  string "xs.Profile.GameData.Index"
+00043:  10  initprop "name"
+00048:  14  lambda (function () {
+    [sourceless code]
+})
+00053:  14  initprop "init"
+00058:  21  lambda (function () {
+    [sourceless code]
+})
+00063:  21  initprop "createIndexAll"
+00068:  27  lambda (function () {
+    [sourceless code]
+})
+00073:  27  initprop "createIndex"
+00078:  53  lambda (function () {
+    [sourceless code]
+})
+00083:  53  initprop "updateIndex"
+00088:  58  lambda (function () {
+    [sourceless code]
+})
+00093:  58  initprop "findWithIndex"
+00098:  72  lambda (function () {
+    [sourceless code]
+})
+00103:  72  initprop "deleteIndex"
+00108:  78  lambda (function () {
+    [sourceless code]
+})
+00113:  78  initprop "deleteIndexAll"
+00118:  84  lambda (function () {
+    [sourceless code]
+})
+00123:  84  initprop "flush"
+00128:  84  endinit
+00129:  84  notearg
+00130:  84  call 1
+00133:  84  setprop "Index"
+00138:  84  popv
+00139:  93  name "xs"
+00144:  93  getprop "Profile"
+00149:  93  getprop "GameData"
+00154:  93  getprop "Index"
+00159:  93  lambda (function () {
+    [sourceless code]
+})
+00164:  93  setprop "create"
+00169:  93  popv
+00170: 100  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] originalData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  this
+00001:  15  getarg 0
+00004:  15  setprop "originalData"
+00009:  15  pop
+00010:  16  this
+00011:  16  newinit 1
+00016:  16  endinit
+00017:  16  setprop "index"
+00022:  16  pop
+00023:  17  this
+00024:  17  newinit 1
+00029:  17  endinit
+00030:  17  setprop "isIndexValid"
+00035:  17  pop
+00036:  18  true
+00037:  18  return
+00038:  18  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:14 ---
+;; function object[1] createIndexAll
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] arrIndexKey
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  zero
+00001:  22  setlocal 0
+00004:  22  pop
+00005:  22  goto 47 (+42)
+00010:  23  loophead
+00011:  23  this
+00012:  23  dup
+00013:  23  callprop "createIndex"
+00018:  23  swap
+00019:  23  notearg
+00020:  23  getarg 0
+00023:  23  getlocal 0
+00026:  23  getelem
+00027:  23  notearg
+00028:  23  call 1
+00031:  23  pop
+00032:  22  localinc 11
+00035:  22  getlocal 0
+00038:  22  pos
+00039:  22  dup
+00040:  22  one
+00041:  22  add
+00042:  22  setlocal 0
+00045:  22  pop
+00046:  22  pop
+00047:  22  loopentry
+00048:  22  getlocal 0
+00051:  22  getarg 0
+00054:  22  length "length"
+00059:  22  lt
+00060:  22  ifne 10 (-50)
+00065:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:21 ---
+;; function object[2] createIndex
+;; function metadata object[2] nargs=1 bindings=5
+;; arg[0] indexKey
+;; local[0] _modelsMap
+;; local[1] _index
+;; local[2] key_pk_id
+;; local[3] _tmpModel
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=47 length=184 stackDepth=1 target=231
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  28  this
+00001:  28  getprop "isIndexValid"
+00006:  28  getarg 0
+00009:  28  getelem
+00010:  28  ifeq 17 (+7)
+00015:  28  undefined
+00016:  28  return
+00017:  30  this
+00018:  30  getprop "originalData"
+00023:  30  setlocal 0
+00026:  30  pop
+00027:  32  newinit 1
+00032:  32  endinit
+00033:  32  setlocal 1
+00036:  32  pop
+00037:  33  getlocal 0
+00040:  33  iter 1
+00042:  33  goto 224 (+182)
+00047:  33  loophead
+00048:  33  iternext
+00049:  33  setlocal 2
+00052:  33  pop
+00053:  33  getlocal 0
+00056:  33  dup
+00057:  33  callprop "hasOwnProperty"
+00062:  33  swap
+00063:  33  notearg
+00064:  33  getlocal 2
+00067:  33  notearg
+00068:  33  call 1
+00071:  33  ifeq 224 (+153)
+00076:  35  getlocal 0
+00079:  35  getlocal 2
+00082:  35  getelem
+00083:  35  setlocal 3
+00086:  35  pop
+00087:  38  getlocal 3
+00090:  38  getarg 0
+00093:  38  getelem
+00094:  38  not
+00095:  38  ifeq 123 (+28)
+00100:  39  this
+00101:  39  dup
+00102:  39  callprop "error"
+00107:  39  swap
+00108:  39  notearg
+00109:  39  string "create the index error"
+00114:  39  getarg 0
+00117:  39  add
+00118:  39  notearg
+00119:  39  call 1
+00122:  39  pop
+00123:  42  name "xs"
+00128:  42  getprop "Utils"
+00133:  42  dup
+00134:  42  callprop "isSet"
+00139:  42  swap
+00140:  42  notearg
+00141:  42  getlocal 1
+00144:  42  getlocal 3
+00147:  42  dup
+00148:  42  getarg 0
+00151:  42  callelem
+00152:  42  swap
+00153:  42  notearg
+00154:  42  call 0
+00157:  42  getelem
+00158:  42  notearg
+00159:  42  call 1
+00162:  42  or 190 (+28)
+00167:  42  pop
+00168:  42  getlocal 1
+00171:  42  getlocal 3
+00174:  42  dup
+00175:  42  getarg 0
+00178:  42  callelem
+00179:  42  swap
+00180:  42  notearg
+00181:  42  call 0
+00184:  42  newarray 0
+00188:  42  endinit
+00189:  42  setelem
+00190:  42  pop
+00191:  44  getlocal 1
+00194:  44  getlocal 3
+00197:  44  dup
+00198:  44  getarg 0
+00201:  44  callelem
+00202:  44  swap
+00203:  44  notearg
+00204:  44  call 0
+00207:  44  getelem
+00208:  44  dup
+00209:  44  callprop "push"
+00214:  44  swap
+00215:  44  notearg
+00216:  44  getlocal 2
+00219:  44  notearg
+00220:  44  call 1
+00223:  44  pop
+00224:  44  loopentry
+00225:  44  moreiter
+00226:  44  ifne 47 (-179)
+00231:  44  enditer
+00232:  48  this
+00233:  48  getprop "index"
+00238:  48  getarg 0
+00241:  48  getlocal 1
+00244:  48  setelem
+00245:  48  pop
+00246:  50  this
+00247:  50  getprop "isIndexValid"
+00252:  50  getarg 0
+00255:  50  true
+00256:  50  setelem
+00257:  50  pop
+00258:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:27 ---
+;; function object[3] updateIndex
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:53 ---
+loc   line  op
+----- ----  --
+main:
+00000:  55  this
+00001:  55  dup
+00002:  55  callprop "error"
+00007:  55  swap
+00008:  55  notearg
+00009:  55  string "error update index!!!"
+00014:  55  notearg
+00015:  55  call 1
+00018:  55  pop
+00019:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:53 ---
+;; function object[4] findWithIndex
+;; function metadata object[4] nargs=2 bindings=2
+;; arg[0] indexKey
+;; arg[1] indexValue
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  this
+00001:  59  dup
+00002:  59  callprop "createIndex"
+00007:  59  swap
+00008:  59  notearg
+00009:  59  getarg 0
+00012:  59  notearg
+00013:  59  call 1
+00016:  59  pop
+00017:  61  this
+00018:  61  getprop "isIndexValid"
+00023:  61  getarg 0
+00026:  61  getelem
+00027:  61  false
+00028:  61  eq
+00029:  61  ifeq 37 (+8)
+00034:  63  int8 -1
+00036:  63  return
+00037:  66  name "xs"
+00042:  66  getprop "Utils"
+00047:  66  dup
+00048:  66  callprop "isEmpty"
+00053:  66  swap
+00054:  66  notearg
+00055:  66  this
+00056:  66  getprop "index"
+00061:  66  getarg 0
+00064:  66  getelem
+00065:  66  getarg 1
+00068:  66  getelem
+00069:  66  notearg
+00070:  66  call 1
+00073:  66  not
+00074:  66  ifeq 98 (+24)
+00079:  67  this
+00080:  67  getprop "index"
+00085:  67  getarg 0
+00088:  67  getelem
+00089:  67  getarg 1
+00092:  67  getelem
+00093:  67  goto 103 (+10)
+00098:  68  newarray 0
+00102:  68  endinit
+00103:  68  return
+00104:  68  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:58 ---
+;; function object[5] deleteIndex
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] indexKey
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:72 ---
+loc   line  op
+----- ----  --
+main:
+00000:  74  this
+00001:  74  getprop "index"
+00006:  74  getarg 0
+00009:  74  delelem
+00010:  74  pop
+00011:  75  this
+00012:  75  getprop "isIndexValid"
+00017:  75  getarg 0
+00020:  75  false
+00021:  75  setelem
+00022:  75  pop
+00023:  75  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:72 ---
+;; function object[6] deleteIndexAll
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:78 ---
+loc   line  op
+----- ----  --
+main:
+00000:  80  this
+00001:  80  newinit 1
+00006:  80  endinit
+00007:  80  setprop "index"
+00012:  80  pop
+00013:  81  this
+00014:  81  newinit 1
+00019:  81  endinit
+00020:  81  setprop "isIndexValid"
+00025:  81  pop
+00026:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:78 ---
+;; function object[7] flush
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] arrIndexKey
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:84 ---
+loc   line  op
+----- ----  --
+main:
+00000:  85  this
+00001:  85  dup
+00002:  85  callprop "deleteIndexAll"
+00007:  85  swap
+00008:  85  notearg
+00009:  85  call 0
+00012:  85  pop
+00013:  86  this
+00014:  86  dup
+00015:  86  callprop "createIndexAll"
+00020:  86  swap
+00021:  86  notearg
+00022:  86  getarg 0
+00025:  86  notearg
+00026:  86  call 1
+00029:  86  pop
+00030:  86  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:84 ---
+;; function object[8] create
+;; function metadata object[8] nargs=1 bindings=2
+;; arg[0] originalData
+;; local[0] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:93 ---
+loc   line  op
+----- ----  --
+main:
+00000:  94  name "xs"
+00005:  94  getprop "Profile"
+00010:  94  getprop "GameData"
+00015:  94  getprop "Index"
+00020:  94  undefined
+00021:  94  notearg
+00022:  94  new 0
+00025:  94  setlocal 0
+00028:  94  pop
+00029:  95  getlocal 0
+00032:  95  and 56 (+24)
+00037:  95  pop
+00038:  95  getlocal 0
+00041:  95  dup
+00042:  95  callprop "init"
+00047:  95  swap
+00048:  95  notearg
+00049:  95  getarg 0
+00052:  95  notearg
+00053:  95  call 1
+00056:  95  ifeq 65 (+9)
+00061:  96  getlocal 0
+00064:  96  return
+00065:  98  name "xs"
+00070:  98  dup
+00071:  98  callprop "error"
+00076:  98  swap
+00077:  98  notearg
+00078:  98  string "xs.Profile.GameData.Index.create failed"
+00083:  98  notearg
+00084:  98  call 1
+00087:  98  pop
+00088:  99  null
+00089:  99  return
+00090:  99  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Index.js:93 ---

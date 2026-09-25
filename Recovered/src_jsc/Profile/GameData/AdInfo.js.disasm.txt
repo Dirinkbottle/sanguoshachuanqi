@@ -1,0 +1,69 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/AdInfo.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=56 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/AdInfo.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Profile"
+00010:  10  getprop "GameData"
+00015:  10  name "xs"
+00020:  10  getprop "Profile"
+00025:  10  getprop "GameData"
+00030:  10  getprop "AdInfo"
+00035:  10  or 67 (+32)
+00040:  10  pop
+00041:  10  newinit 1
+00046:  12  string "xs.Profile.GameData.AdInfo"
+00051:  12  initprop "name"
+00056:  15  lambda (function () {
+    [sourceless code]
+})
+00061:  15  initprop "getInstance"
+00066:  15  endinit
+00067:  15  setprop "AdInfo"
+00072:  15  popv
+00073:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/AdInfo.js:1 ---
+;; function object[0] getInstance
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/AdInfo.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  name "xs"
+00005:  17  getprop "Profile"
+00010:  17  getprop "GameData"
+00015:  17  getprop "Mgr"
+00020:  17  dup
+00021:  17  callprop "getInstance"
+00026:  17  swap
+00027:  17  notearg
+00028:  17  call 0
+00031:  17  dup
+00032:  17  callprop "getDataRef"
+00037:  17  swap
+00038:  17  notearg
+00039:  17  call 0
+00042:  17  dup
+00043:  17  callprop "getDataByNameType"
+00048:  17  swap
+00049:  17  notearg
+00050:  17  name "xs"
+00055:  17  getprop "Constant_GameData_Ad"
+00060:  17  notearg
+00061:  17  call 1
+00064:  17  setlocal 0
+00067:  17  pop
+00068:  19  getlocal 0
+00071:  19  return
+00072:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/AdInfo.js:15 ---

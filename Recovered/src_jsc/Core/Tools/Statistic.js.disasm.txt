@@ -1,0 +1,78 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Tools/Statistic.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=20 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/Statistic.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Core"
+00010:   6  getprop "Tools"
+00015:   6  newinit 1
+00020:   7  lambda (function () {
+    [sourceless code]
+})
+00025:   7  initprop "event"
+00030:   7  endinit
+00031:   7  setprop "Statistic"
+00036:   7  popv
+00037:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/Statistic.js:1 ---
+;; function object[0] event
+;; function metadata object[0] nargs=2 bindings=4
+;; arg[0] eventID
+;; arg[1] label
+;; local[0] _label
+;; local[1] _params
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/Statistic.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  getarg 1
+00003:   9  or 14 (+11)
+00008:   9  pop
+00009:   9  string ""
+00014:   9  setlocal 0
+00017:   9  pop
+00018:  11  string ""
+00023:  11  setlocal 1
+00026:  11  pop
+00027:  12  getlocal 1
+00030:  12  getarg 0
+00033:  12  string "|"
+00038:  12  add
+00039:  12  add
+00040:  12  setlocal 1
+00043:  12  pop
+00044:  13  getlocal 1
+00047:  13  getlocal 0
+00050:  13  add
+00051:  13  setlocal 1
+00054:  13  pop
+00055:  15  name "xs"
+00060:  15  getprop "JsbConnecter"
+00065:  15  dup
+00066:  15  callprop "getInstance"
+00071:  15  swap
+00072:  15  notearg
+00073:  15  call 0
+00076:  15  dup
+00077:  15  callprop "invoke"
+00082:  15  swap
+00083:  15  notearg
+00084:  15  string "StatisticV2"
+00089:  15  notearg
+00090:  15  string "event"
+00095:  15  notearg
+00096:  15  getlocal 1
+00099:  15  notearg
+00100:  15  call 3
+00103:  15  pop
+00104:  15  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Tools/Statistic.js:7 ---

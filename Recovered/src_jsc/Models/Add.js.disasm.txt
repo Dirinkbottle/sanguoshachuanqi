@@ -1,0 +1,2361 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/Add.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=532 object[0]
+;; FUNCTION-MAP kind=lambda offset=542 object[1]
+;; FUNCTION-MAP kind=lambda offset=552 object[2]
+;; FUNCTION-MAP kind=lambda offset=562 object[3]
+;; FUNCTION-MAP kind=lambda offset=572 object[4]
+;; FUNCTION-MAP kind=lambda offset=582 object[5]
+;; FUNCTION-MAP kind=lambda offset=592 object[6]
+;; FUNCTION-MAP kind=lambda offset=602 object[7]
+;; FUNCTION-MAP kind=lambda offset=612 object[8]
+;; FUNCTION-MAP kind=lambda offset=622 object[9]
+;; FUNCTION-MAP kind=lambda offset=632 object[10]
+;; FUNCTION-MAP kind=lambda offset=642 object[11]
+;; FUNCTION-MAP kind=lambda offset=652 object[12]
+;; FUNCTION-MAP kind=lambda offset=662 object[13]
+;; FUNCTION-MAP kind=lambda offset=672 object[14]
+;; FUNCTION-MAP kind=lambda offset=731 object[15]
+;; FUNCTION-MAP kind=lambda offset=767 object[16]
+;; FUNCTION-MAP kind=lambda offset=816 object[17]
+;; FUNCTION-MAP kind=lambda offset=826 object[18]
+;; FUNCTION-MAP kind=lambda offset=862 object[19]
+;; FUNCTION-MAP kind=lambda offset=911 object[20]
+;; FUNCTION-MAP kind=lambda offset=921 object[21]
+;; FUNCTION-MAP kind=lambda offset=931 object[22]
+;; FUNCTION-MAP kind=lambda offset=967 object[23]
+;; FUNCTION-MAP kind=lambda offset=1016 object[24]
+;; FUNCTION-MAP kind=lambda offset=1026 object[25]
+;; FUNCTION-MAP kind=lambda offset=1062 object[26]
+;; FUNCTION-MAP kind=lambda offset=1111 object[27]
+;; FUNCTION-MAP kind=lambda offset=1121 object[28]
+;; FUNCTION-MAP kind=lambda offset=1131 object[29]
+;; FUNCTION-MAP kind=lambda offset=1167 object[30]
+;; FUNCTION-MAP kind=lambda offset=1216 object[31]
+;; FUNCTION-MAP kind=lambda offset=1226 object[32]
+;; FUNCTION-MAP kind=lambda offset=1262 object[33]
+;; FUNCTION-MAP kind=lambda offset=1311 object[34]
+;; FUNCTION-MAP kind=lambda offset=1321 object[35]
+;; FUNCTION-MAP kind=lambda offset=1357 object[36]
+;; FUNCTION-MAP kind=lambda offset=1406 object[37]
+;; FUNCTION-MAP kind=lambda offset=1416 object[38]
+;; FUNCTION-MAP kind=lambda offset=1426 object[39]
+;; FUNCTION-MAP kind=lambda offset=1436 object[40]
+;; FUNCTION-MAP kind=lambda offset=1446 object[41]
+;; FUNCTION-MAP kind=lambda offset=1456 object[42]
+;; FUNCTION-MAP kind=lambda offset=1466 object[43]
+;; FUNCTION-MAP kind=lambda offset=1476 object[44]
+;; FUNCTION-MAP kind=lambda offset=1486 object[45]
+;; FUNCTION-MAP kind=lambda offset=1496 object[46]
+;; FUNCTION-MAP kind=lambda offset=1532 object[47]
+;; FUNCTION-MAP kind=lambda offset=1581 object[48]
+;; FUNCTION-MAP kind=lambda offset=1617 object[49]
+;; FUNCTION-MAP kind=lambda offset=1666 object[50]
+;; FUNCTION-MAP kind=lambda offset=1702 object[51]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  name "xs"
+00005:  13  getprop "Models"
+00010:  13  name "xs"
+00015:  13  getprop "Constant_ObjType_General"
+00020:  13  setprop "AddType_General"
+00025:  13  popv
+00026:  15  name "xs"
+00031:  15  getprop "Models"
+00036:  15  name "xs"
+00041:  15  getprop "Constant_ObjType_Equipment"
+00046:  15  setprop "AddType_Equipment"
+00051:  15  popv
+00052:  16  name "xs"
+00057:  16  getprop "Models"
+00062:  16  name "xs"
+00067:  16  getprop "Constant_ObjType_Skill"
+00072:  16  setprop "AddType_Skill"
+00077:  16  popv
+00078:  17  name "xs"
+00083:  17  getprop "Models"
+00088:  17  name "xs"
+00093:  17  getprop "Constant_ObjType_Item"
+00098:  17  setprop "AddType_Item"
+00103:  17  popv
+00104:  18  name "xs"
+00109:  18  getprop "Models"
+00114:  18  name "xs"
+00119:  18  getprop "Constant_ObjType_GeneralSoul"
+00124:  18  setprop "AddType_GeneralSoul"
+00129:  18  popv
+00130:  19  name "xs"
+00135:  19  getprop "Models"
+00140:  19  name "xs"
+00145:  19  getprop "Constant_ObjType_SkillPiece"
+00150:  19  setprop "AddType_SkillFragment"
+00155:  19  popv
+00156:  20  name "xs"
+00161:  20  getprop "Models"
+00166:  20  name "xs"
+00171:  20  getprop "Constant_ObjType_EquipmentPiece"
+00176:  20  setprop "AddType_EquipmentPiece"
+00181:  20  popv
+00182:  21  name "xs"
+00187:  21  getprop "Models"
+00192:  21  name "xs"
+00197:  21  getprop "Constant_ObjType_Gems"
+00202:  21  setprop "AddType_Gems"
+00207:  21  popv
+00208:  22  name "xs"
+00213:  22  getprop "Models"
+00218:  22  name "xs"
+00223:  22  getprop "Constant_ObjType_PlayerAttr"
+00228:  22  setprop "AddType_PlayerAttr"
+00233:  22  popv
+00234:  27  name "xs"
+00239:  27  getprop "Models"
+00244:  27  one
+00245:  27  setprop "AddPlayerInfoType_TiLi"
+00250:  27  popv
+00251:  28  name "xs"
+00256:  28  getprop "Models"
+00261:  28  int8 2
+00263:  28  setprop "AddPlayerInfoType_JingLi"
+00268:  28  popv
+00269:  29  name "xs"
+00274:  29  getprop "Models"
+00279:  29  int8 3
+00281:  29  setprop "AddPlayerInfoType_TongQian"
+00286:  29  popv
+00287:  30  name "xs"
+00292:  30  getprop "Models"
+00297:  30  int8 4
+00299:  30  setprop "AddPlayerInfoType_YuanBao"
+00304:  30  popv
+00305:  31  name "xs"
+00310:  31  getprop "Models"
+00315:  31  int8 5
+00317:  31  setprop "AddPlayerInfoType_GoldSoul"
+00322:  31  popv
+00323:  32  name "xs"
+00328:  32  getprop "Models"
+00333:  32  int8 6
+00335:  32  setprop "AddPlayerInfoType_SilverSoul"
+00340:  32  popv
+00341:  33  name "xs"
+00346:  33  getprop "Models"
+00351:  33  int8 7
+00353:  33  setprop "AddPlayerInfoType_Salary"
+00358:  33  popv
+00359:  34  name "xs"
+00364:  34  getprop "Models"
+00369:  34  int8 8
+00371:  34  setprop "AddPlayerInfoType_Fragment"
+00376:  34  popv
+00377:  35  name "xs"
+00382:  35  getprop "Models"
+00387:  35  int8 9
+00389:  35  setprop "AddPlayerInfoType_Battle"
+00394:  35  popv
+00395:  36  name "xs"
+00400:  36  getprop "Models"
+00405:  36  int8 10
+00407:  36  setprop "AddPlayerInfoType_TeamPoint"
+00412:  36  popv
+00413:  37  name "xs"
+00418:  37  getprop "Models"
+00423:  37  int8 12
+00425:  37  setprop "AddPlayerInfoType_Exp"
+00430:  37  popv
+00431:  38  name "xs"
+00436:  38  getprop "Models"
+00441:  38  int8 13
+00443:  38  setprop "AddPlayerInfoType_UnionScore"
+00448:  38  popv
+00449:  44  name "xs"
+00454:  44  getprop "Models"
+00459:  44  name "cc"
+00464:  44  getprop "Class"
+00469:  44  dup
+00470:  44  callprop "extend"
+00475:  44  swap
+00476:  44  notearg
+00477:  44  newinit 1
+00482:  46  string "xs.Models.Add"
+00487:  46  initprop "name"
+00492:  48  name "xs"
+00497:  48  getprop "Debug"
+00502:  48  getprop "emptyFunc"
+00507:  48  initprop "log"
+00512:  49  name "xs"
+00517:  49  getprop "Debug"
+00522:  49  getprop "emptyFunc"
+00527:  49  initprop "dump"
+00532:  51  lambda (function () {
+    [sourceless code]
+})
+00537:  51  initprop "init"
+00542:  59  lambda (function () {
+    [sourceless code]
+})
+00547:  59  initprop "loadJson"
+00552:  70  lambda (function () {
+    [sourceless code]
+})
+00557:  70  initprop "_createModel"
+00562:  82  lambda (function () {
+    [sourceless code]
+})
+00567:  82  initprop "createHeadView"
+00572:  86  lambda (function () {
+    [sourceless code]
+})
+00577:  86  initprop "createIcon_NumAndName"
+00582:  90  lambda (function () {
+    [sourceless code]
+})
+00587:  90  initprop "getNameString"
+00592:  94  lambda (function () {
+    [sourceless code]
+})
+00597:  94  initprop "getTxtLabString"
+00602:  98  lambda (function () {
+    [sourceless code]
+})
+00607:  98  initprop "getShowNumString"
+00612: 104  lambda (function () {
+    [sourceless code]
+})
+00617: 104  initprop "getAddType"
+00622: 108  lambda (function () {
+    [sourceless code]
+})
+00627: 108  initprop "getAddNum"
+00632: 112  lambda (function () {
+    [sourceless code]
+})
+00637: 112  initprop "getAddLevel"
+00642: 117  lambda (function () {
+    [sourceless code]
+})
+00647: 117  initprop "getAddId"
+00652: 121  lambda (function () {
+    [sourceless code]
+})
+00657: 121  initprop "getCreateViewObj"
+00662: 126  lambda (function () {
+    [sourceless code]
+})
+00667: 126  initprop "getGradeForSort"
+00672: 137  lambda (function () {
+    [sourceless code]
+})
+00677: 137  initprop "getTypeSort"
+00682: 137  endinit
+00683: 137  notearg
+00684: 137  call 1
+00687: 137  setprop "Add"
+00692: 137  popv
+00693: 157  name "xs"
+00698: 157  getprop "Models"
+00703: 157  name "xs"
+00708: 157  getprop "Models"
+00713: 157  getprop "Add"
+00718: 157  dup
+00719: 157  callprop "extend"
+00724: 157  swap
+00725: 157  notearg
+00726: 157  newinit 1
+00731: 159  lambda (function () {
+    [sourceless code]
+})
+00736: 159  initprop "getGradeForSort"
+00741: 159  endinit
+00742: 159  notearg
+00743: 159  call 1
+00746: 159  setprop "AddItem"
+00751: 159  popv
+00752: 169  name "xs"
+00757: 169  getprop "Models"
+00762: 169  getprop "AddItem"
+00767: 169  lambda (function () {
+    [sourceless code]
+})
+00772: 169  setprop "create"
+00777: 169  popv
+00778: 183  name "xs"
+00783: 183  getprop "Models"
+00788: 183  name "xs"
+00793: 183  getprop "Models"
+00798: 183  getprop "Add"
+00803: 183  dup
+00804: 183  callprop "extend"
+00809: 183  swap
+00810: 183  notearg
+00811: 183  newinit 1
+00816: 185  lambda (function () {
+    [sourceless code]
+})
+00821: 185  initprop "createHeadView"
+00826: 198  lambda (function () {
+    [sourceless code]
+})
+00831: 198  initprop "getGradeForSort"
+00836: 198  endinit
+00837: 198  notearg
+00838: 198  call 1
+00841: 198  setprop "AddEquipment"
+00846: 198  popv
+00847: 230  name "xs"
+00852: 230  getprop "Models"
+00857: 230  getprop "AddEquipment"
+00862: 230  lambda (function () {
+    [sourceless code]
+})
+00867: 230  setprop "create"
+00872: 230  popv
+00873: 244  name "xs"
+00878: 244  getprop "Models"
+00883: 244  name "xs"
+00888: 244  getprop "Models"
+00893: 244  getprop "Add"
+00898: 244  dup
+00899: 244  callprop "extend"
+00904: 244  swap
+00905: 244  notearg
+00906: 244  newinit 1
+00911: 246  lambda (function () {
+    [sourceless code]
+})
+00916: 246  initprop "createHeadView"
+00921: 250  lambda (function () {
+    [sourceless code]
+})
+00926: 250  initprop "getNameString"
+00931: 253  lambda (function () {
+    [sourceless code]
+})
+00936: 253  initprop "getGradeForSort"
+00941: 253  endinit
+00942: 253  notearg
+00943: 253  call 1
+00946: 253  setprop "AddEquipmentPiece"
+00951: 253  popv
+00952: 263  name "xs"
+00957: 263  getprop "Models"
+00962: 263  getprop "AddEquipmentPiece"
+00967: 263  lambda (function () {
+    [sourceless code]
+})
+00972: 263  setprop "create"
+00977: 263  popv
+00978: 277  name "xs"
+00983: 277  getprop "Models"
+00988: 277  name "xs"
+00993: 277  getprop "Models"
+00998: 277  getprop "Add"
+01003: 277  dup
+01004: 277  callprop "extend"
+01009: 277  swap
+01010: 277  notearg
+01011: 277  newinit 1
+01016: 279  lambda (function () {
+    [sourceless code]
+})
+01021: 279  initprop "createHeadView"
+01026: 292  lambda (function () {
+    [sourceless code]
+})
+01031: 292  initprop "getGradeForSort"
+01036: 292  endinit
+01037: 292  notearg
+01038: 292  call 1
+01041: 292  setprop "AddSkill"
+01046: 292  popv
+01047: 302  name "xs"
+01052: 302  getprop "Models"
+01057: 302  getprop "AddSkill"
+01062: 302  lambda (function () {
+    [sourceless code]
+})
+01067: 302  setprop "create"
+01072: 302  popv
+01073: 315  name "xs"
+01078: 315  getprop "Models"
+01083: 315  name "xs"
+01088: 315  getprop "Models"
+01093: 315  getprop "Add"
+01098: 315  dup
+01099: 315  callprop "extend"
+01104: 315  swap
+01105: 315  notearg
+01106: 315  newinit 1
+01111: 316  lambda (function () {
+    [sourceless code]
+})
+01116: 316  initprop "createHeadView"
+01121: 320  lambda (function () {
+    [sourceless code]
+})
+01126: 320  initprop "getNameString"
+01131: 323  lambda (function () {
+    [sourceless code]
+})
+01136: 323  initprop "getGradeForSort"
+01141: 323  endinit
+01142: 323  notearg
+01143: 323  call 1
+01146: 323  setprop "AddSkillFragment"
+01151: 323  popv
+01152: 332  name "xs"
+01157: 332  getprop "Models"
+01162: 332  getprop "AddSkillFragment"
+01167: 332  lambda (function () {
+    [sourceless code]
+})
+01172: 332  setprop "create"
+01177: 332  popv
+01178: 347  name "xs"
+01183: 347  getprop "Models"
+01188: 347  name "xs"
+01193: 347  getprop "Models"
+01198: 347  getprop "Add"
+01203: 347  dup
+01204: 347  callprop "extend"
+01209: 347  swap
+01210: 347  notearg
+01211: 347  newinit 1
+01216: 349  lambda (function () {
+    [sourceless code]
+})
+01221: 349  initprop "createHeadView"
+01226: 362  lambda (function () {
+    [sourceless code]
+})
+01231: 362  initprop "getGradeForSort"
+01236: 362  endinit
+01237: 362  notearg
+01238: 362  call 1
+01241: 362  setprop "AddGeneral"
+01246: 362  popv
+01247: 371  name "xs"
+01252: 371  getprop "Models"
+01257: 371  getprop "AddGeneral"
+01262: 371  lambda (function () {
+    [sourceless code]
+})
+01267: 371  setprop "create"
+01272: 371  popv
+01273: 385  name "xs"
+01278: 385  getprop "Models"
+01283: 385  name "xs"
+01288: 385  getprop "Models"
+01293: 385  getprop "Add"
+01298: 385  dup
+01299: 385  callprop "extend"
+01304: 385  swap
+01305: 385  notearg
+01306: 385  newinit 1
+01311: 386  lambda (function () {
+    [sourceless code]
+})
+01316: 386  initprop "getNameString"
+01321: 389  lambda (function () {
+    [sourceless code]
+})
+01326: 389  initprop "getGradeForSort"
+01331: 389  endinit
+01332: 389  notearg
+01333: 389  call 1
+01336: 389  setprop "AddGeneralSoul"
+01341: 389  popv
+01342: 398  name "xs"
+01347: 398  getprop "Models"
+01352: 398  getprop "AddGeneralSoul"
+01357: 398  lambda (function () {
+    [sourceless code]
+})
+01362: 398  setprop "create"
+01367: 398  popv
+01368: 408  name "xs"
+01373: 408  getprop "Models"
+01378: 408  name "xs"
+01383: 408  getprop "Models"
+01388: 408  getprop "Add"
+01393: 408  dup
+01394: 408  callprop "extend"
+01399: 408  swap
+01400: 408  notearg
+01401: 408  newinit 1
+01406: 409  lambda (function () {
+    [sourceless code]
+})
+01411: 409  initprop "init"
+01416: 417  lambda (function () {
+    [sourceless code]
+})
+01421: 417  initprop "loadJson"
+01426: 422  lambda (function () {
+    [sourceless code]
+})
+01431: 422  initprop "_createModel"
+01436: 426  lambda (function () {
+    [sourceless code]
+})
+01441: 426  initprop "createHeadView"
+01446: 430  lambda (function () {
+    [sourceless code]
+})
+01451: 430  initprop "getNameString"
+01456: 434  lambda (function () {
+    [sourceless code]
+})
+01461: 434  initprop "getTxtLabString"
+01466: 437  lambda (function () {
+    [sourceless code]
+})
+01471: 437  initprop "getShowNumString"
+01476: 441  lambda (function () {
+    [sourceless code]
+})
+01481: 441  initprop "_createView"
+01486: 476  lambda (function () {
+    [sourceless code]
+})
+01491: 476  initprop "getCreateViewObj"
+01496: 484  lambda (function () {
+    [sourceless code]
+})
+01501: 484  initprop "getGradeForSort"
+01506: 484  endinit
+01507: 484  notearg
+01508: 484  call 1
+01511: 484  setprop "AddPlayerInfo"
+01516: 484  popv
+01517: 489  name "xs"
+01522: 489  getprop "Models"
+01527: 489  getprop "AddPlayerInfo"
+01532: 489  lambda (function () {
+    [sourceless code]
+})
+01537: 489  setprop "create"
+01542: 489  popv
+01543: 503  name "xs"
+01548: 503  getprop "Models"
+01553: 503  name "xs"
+01558: 503  getprop "Models"
+01563: 503  getprop "Add"
+01568: 503  dup
+01569: 503  callprop "extend"
+01574: 503  swap
+01575: 503  notearg
+01576: 503  newinit 1
+01581: 505  lambda (function () {
+    [sourceless code]
+})
+01586: 505  initprop "getGradeForSort"
+01591: 505  endinit
+01592: 505  notearg
+01593: 505  call 1
+01596: 505  setprop "AddGems"
+01601: 505  popv
+01602: 514  name "xs"
+01607: 514  getprop "Models"
+01612: 514  getprop "AddGems"
+01617: 514  lambda (function () {
+    [sourceless code]
+})
+01622: 514  setprop "create"
+01627: 514  popv
+01628: 528  name "xs"
+01633: 528  getprop "Models"
+01638: 528  name "xs"
+01643: 528  getprop "Models"
+01648: 528  getprop "Add"
+01653: 528  dup
+01654: 528  callprop "extend"
+01659: 528  swap
+01660: 528  notearg
+01661: 528  newinit 1
+01666: 530  lambda (function () {
+    [sourceless code]
+})
+01671: 530  initprop "getGradeForSort"
+01676: 530  endinit
+01677: 530  notearg
+01678: 530  call 1
+01681: 530  setprop "AddGoddess"
+01686: 530  popv
+01687: 539  name "xs"
+01692: 539  getprop "Models"
+01697: 539  getprop "AddGoddess"
+01702: 539  lambda (function () {
+    [sourceless code]
+})
+01707: 539  setprop "create"
+01712: 539  popv
+01713: 547  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:51 ---
+loc   line  op
+----- ----  --
+main:
+00000:  52  this
+00001:  52  zero
+00002:  52  setprop "m_addType"
+00007:  52  pop
+00008:  53  this
+00009:  53  one
+00010:  53  setprop "m_addNum"
+00015:  53  pop
+00016:  54  this
+00017:  54  one
+00018:  54  setprop "m_addLevel"
+00023:  54  pop
+00024:  55  this
+00025:  55  zero
+00026:  55  setprop "m_id"
+00031:  55  pop
+00032:  56  this
+00033:  56  null
+00034:  56  setprop "m_createViewObj"
+00039:  56  pop
+00040:  57  true
+00041:  57  return
+00042:  57  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:51 ---
+;; function object[1] loadJson
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:59 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  this
+00001:  63  name "xs"
+00006:  63  getprop "Utils"
+00011:  63  dup
+00012:  63  callprop "parseIntSafe"
+00017:  63  swap
+00018:  63  notearg
+00019:  63  getarg 0
+00022:  63  getprop "type"
+00027:  63  notearg
+00028:  63  call 1
+00031:  63  setprop "m_addType"
+00036:  63  pop
+00037:  64  this
+00038:  64  name "xs"
+00043:  64  getprop "Utils"
+00048:  64  dup
+00049:  64  callprop "parseIntSafe"
+00054:  64  swap
+00055:  64  notearg
+00056:  64  getarg 0
+00059:  64  getprop "num"
+00064:  64  or 71 (+7)
+00069:  64  pop
+00070:  64  one
+00071:  64  notearg
+00072:  64  call 1
+00075:  64  setprop "m_addNum"
+00080:  64  pop
+00081:  65  this
+00082:  65  name "xs"
+00087:  65  getprop "Utils"
+00092:  65  dup
+00093:  65  callprop "parseIntSafe"
+00098:  65  swap
+00099:  65  notearg
+00100:  65  getarg 0
+00103:  65  getprop "level"
+00108:  65  or 115 (+7)
+00113:  65  pop
+00114:  65  one
+00115:  65  notearg
+00116:  65  call 1
+00119:  65  setprop "m_addLevel"
+00124:  65  pop
+00125:  66  this
+00126:  66  getarg 0
+00129:  66  getprop "id"
+00134:  66  setprop "m_id"
+00139:  66  pop
+00140:  67  this
+00141:  67  dup
+00142:  67  callprop "_createModel"
+00147:  67  swap
+00148:  67  notearg
+00149:  67  call 0
+00152:  67  pop
+00153:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:59 ---
+;; function object[2] _createModel
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:70 ---
+loc   line  op
+----- ----  --
+main:
+00000:  72  this
+00001:  72  name "xs"
+00006:  72  getprop "Tools"
+00011:  72  getprop "Model"
+00016:  72  dup
+00017:  72  callprop "createModelWithBase"
+00022:  72  swap
+00023:  72  notearg
+00024:  73  this
+00025:  73  dup
+00026:  73  callprop "getAddType"
+00031:  73  swap
+00032:  73  notearg
+00033:  73  call 0
+00036:  73  notearg
+00037:  74  this
+00038:  74  dup
+00039:  74  callprop "getAddId"
+00044:  74  swap
+00045:  74  notearg
+00046:  74  call 0
+00049:  74  notearg
+00050:  75  this
+00051:  75  dup
+00052:  75  callprop "getAddNum"
+00057:  75  swap
+00058:  75  notearg
+00059:  75  call 0
+00062:  75  notearg
+00063:  76  this
+00064:  76  dup
+00065:  76  callprop "getAddLevel"
+00070:  76  swap
+00071:  76  notearg
+00072:  76  call 0
+00075:  76  notearg
+00076:  76  call 4
+00079:  76  setprop "m_createViewObj"
+00084:  76  pop
+00085:  79  true
+00086:  79  return
+00087:  79  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:70 ---
+;; function object[3] createHeadView
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:82 ---
+loc   line  op
+----- ----  --
+main:
+00000:  83  this
+00001:  83  dup
+00002:  83  callprop "getCreateViewObj"
+00007:  83  swap
+00008:  83  notearg
+00009:  83  call 0
+00012:  83  dup
+00013:  83  callprop "createHeadView"
+00018:  83  swap
+00019:  83  notearg
+00020:  83  call 0
+00023:  83  return
+00024:  83  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:82 ---
+;; function object[4] createIcon_NumAndName
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] viewCfg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:86 ---
+loc   line  op
+----- ----  --
+main:
+00000:  87  this
+00001:  87  dup
+00002:  87  callprop "getCreateViewObj"
+00007:  87  swap
+00008:  87  notearg
+00009:  87  call 0
+00012:  87  dup
+00013:  87  callprop "createIcon_GradeAndNumAndName"
+00018:  87  swap
+00019:  87  notearg
+00020:  87  call 0
+00023:  87  return
+00024:  87  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:86 ---
+;; function object[5] getNameString
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:90 ---
+loc   line  op
+----- ----  --
+main:
+00000:  91  this
+00001:  91  dup
+00002:  91  callprop "getCreateViewObj"
+00007:  91  swap
+00008:  91  notearg
+00009:  91  call 0
+00012:  91  dup
+00013:  91  callprop "getNameString"
+00018:  91  swap
+00019:  91  notearg
+00020:  91  call 0
+00023:  91  return
+00024:  91  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:90 ---
+;; function object[6] getTxtLabString
+;; function metadata object[6] nargs=0 bindings=1
+;; local[0] _txt_lab
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:94 ---
+loc   line  op
+----- ----  --
+main:
+00000:  95  name "xs"
+00005:  95  getprop "Tools"
+00010:  95  getprop "String"
+00015:  95  dup
+00016:  95  callprop "createString"
+00021:  95  swap
+00022:  95  notearg
+00023:  95  string "str_Worship_num"
+00028:  95  notearg
+00029:  95  call 1
+00032:  95  setlocal 0
+00035:  95  pop
+00036:  96  getlocal 0
+00039:  96  return
+00040:  96  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:94 ---
+;; function object[7] getShowNumString
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:98 ---
+loc   line  op
+----- ----  --
+main:
+00000:  99  name "xs"
+00005:  99  getprop "Utils"
+00010:  99  dup
+00011:  99  callprop "parseStringSafe"
+00016:  99  swap
+00017:  99  notearg
+00018:  99  this
+00019:  99  dup
+00020:  99  callprop "getAddNum"
+00025:  99  swap
+00026:  99  notearg
+00027:  99  call 0
+00030:  99  notearg
+00031:  99  call 1
+00034:  99  return
+00035:  99  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:98 ---
+;; function object[8] getAddType
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:104 ---
+loc   line  op
+----- ----  --
+main:
+00000: 105  this
+00001: 105  getprop "m_addType"
+00006: 105  return
+00007: 105  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:104 ---
+;; function object[9] getAddNum
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:108 ---
+loc   line  op
+----- ----  --
+main:
+00000: 109  this
+00001: 109  getprop "m_addNum"
+00006: 109  return
+00007: 109  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:108 ---
+;; function object[10] getAddLevel
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:112 ---
+loc   line  op
+----- ----  --
+main:
+00000: 113  this
+00001: 113  getprop "m_addLevel"
+00006: 113  return
+00007: 113  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:112 ---
+;; function object[11] getAddId
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:117 ---
+loc   line  op
+----- ----  --
+main:
+00000: 118  this
+00001: 118  getprop "m_id"
+00006: 118  return
+00007: 118  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:117 ---
+;; function object[12] getCreateViewObj
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:121 ---
+loc   line  op
+----- ----  --
+main:
+00000: 122  this
+00001: 122  getprop "m_createViewObj"
+00006: 122  return
+00007: 122  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:121 ---
+;; function object[13] getGradeForSort
+;; function metadata object[13] nargs=0 bindings=1
+;; local[0] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:126 ---
+loc   line  op
+----- ----  --
+main:
+00000: 127  this
+00001: 127  dup
+00002: 127  callprop "getCreateViewObj"
+00007: 127  swap
+00008: 127  notearg
+00009: 127  call 0
+00012: 127  setlocal 0
+00015: 127  pop
+00016: 128  getlocal 0
+00019: 128  getprop "getSortGrade"
+00024: 128  not
+00025: 128  ifeq 34 (+9)
+00030: 129  uint16 1000
+00033: 129  return
+00034: 131  getlocal 0
+00037: 131  dup
+00038: 131  callprop "getSortGrade"
+00043: 131  swap
+00044: 131  notearg
+00045: 131  call 0
+00048: 131  return
+00049: 131  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:126 ---
+;; function object[14] getTypeSort
+;; function metadata object[14] nargs=0 bindings=1
+;; local[0] _type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:137 ---
+loc   line  op
+----- ----  --
+main:
+00000: 138  this
+00001: 138  dup
+00002: 138  callprop "getCreateViewObj"
+00007: 138  swap
+00008: 138  notearg
+00009: 138  call 0
+00012: 138  ifeq 39 (+27)
+00017: 138  this
+00018: 138  dup
+00019: 138  callprop "getCreateViewObj"
+00024: 138  swap
+00025: 138  notearg
+00026: 138  call 0
+00029: 138  getprop "name"
+00034: 138  goto 44 (+10)
+00039: 138  string "null"
+00044: 138  setlocal 0
+00047: 138  pop
+00048: 139  getlocal 0
+00051: 139  string "xs.Models.Equipment"
+00056: 139  eq
+00057: 139  ifeq 69 (+12)
+00062: 140  zero
+00063: 140  return
+00064: 140  goto 137 (+73)
+00069: 141  getlocal 0
+00072: 141  string "EquipmentPiece"
+00077: 141  eq
+00078: 141  ifeq 90 (+12)
+00083: 142  one
+00084: 142  return
+00085: 142  goto 137 (+52)
+00090: 143  getlocal 0
+00093: 143  string "Skill"
+00098: 143  eq
+00099: 143  ifeq 112 (+13)
+00104: 144  int8 2
+00106: 144  return
+00107: 144  goto 137 (+30)
+00112: 145  getlocal 0
+00115: 145  string "xs.Models.Item"
+00120: 145  eq
+00121: 145  ifeq 134 (+13)
+00126: 146  int8 3
+00128: 146  return
+00129: 146  goto 137 (+8)
+00134: 148  int8 100
+00136: 148  return
+00137: 149  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:137 ---
+;; function object[15] getGradeForSort
+;; function metadata object[15] nargs=0 bindings=1
+;; local[0] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:159 ---
+loc   line  op
+----- ----  --
+main:
+00000: 160  this
+00001: 160  dup
+00002: 160  callprop "getCreateViewObj"
+00007: 160  swap
+00008: 160  notearg
+00009: 160  call 0
+00012: 160  setlocal 0
+00015: 160  pop
+00016: 161  getlocal 0
+00019: 161  getprop "getSortGrade"
+00024: 161  not
+00025: 161  ifeq 34 (+9)
+00030: 162  uint16 1000
+00033: 162  return
+00034: 164  getlocal 0
+00037: 164  dup
+00038: 164  callprop "getSortGrade"
+00043: 164  swap
+00044: 164  notearg
+00045: 164  call 0
+00048: 164  return
+00049: 164  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:159 ---
+;; function object[16] create
+;; function metadata object[16] nargs=0 bindings=1
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:169 ---
+loc   line  op
+----- ----  --
+main:
+00000: 170  name "xs"
+00005: 170  getprop "Models"
+00010: 170  getprop "AddItem"
+00015: 170  undefined
+00016: 170  notearg
+00017: 170  new 0
+00020: 170  setlocal 0
+00023: 170  pop
+00024: 171  getlocal 0
+00027: 171  and 47 (+20)
+00032: 171  pop
+00033: 171  getlocal 0
+00036: 171  dup
+00037: 171  callprop "init"
+00042: 171  swap
+00043: 171  notearg
+00044: 171  call 0
+00047: 171  ifeq 56 (+9)
+00052: 172  getlocal 0
+00055: 172  return
+00056: 175  name "xs"
+00061: 175  dup
+00062: 175  callprop "assert"
+00067: 175  swap
+00068: 175  notearg
+00069: 175  false
+00070: 175  notearg
+00071: 175  string "xs.Models.AddItem.create "
+00076: 175  notearg
+00077: 175  call 2
+00080: 175  pop
+00081: 176  null
+00082: 176  return
+00083: 176  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:169 ---
+;; function object[17] createHeadView
+;; function metadata object[17] nargs=0 bindings=2
+;; local[0] _model
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:185 ---
+loc   line  op
+----- ----  --
+main:
+00000: 187  this
+00001: 187  dup
+00002: 187  callprop "getCreateViewObj"
+00007: 187  swap
+00008: 187  notearg
+00009: 187  call 0
+00012: 187  setlocal 0
+00015: 187  pop
+00016: 189  name "xs"
+00021: 189  getprop "Views"
+00026: 189  getprop "Icon"
+00031: 189  getprop "IconStyleA"
+00036: 189  dup
+00037: 189  callprop "create"
+00042: 189  swap
+00043: 189  notearg
+00044: 189  newinit 1
+00049: 190  true
+00050: 190  initprop "grade"
+00055: 191  true
+00056: 191  initprop "lv"
+00061: 191  endinit
+00062: 191  notearg
+00063: 193  null
+00064: 193  notearg
+00065: 193  call 2
+00068: 193  setlocal 1
+00071: 193  pop
+00072: 195  getlocal 1
+00075: 195  dup
+00076: 195  callprop "reloadData"
+00081: 195  swap
+00082: 195  notearg
+00083: 195  getlocal 0
+00086: 195  notearg
+00087: 195  call 1
+00090: 195  pop
+00091: 196  getlocal 1
+00094: 196  return
+00095: 196  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:185 ---
+;; function object[18] getGradeForSort
+;; function metadata object[18] nargs=0 bindings=1
+;; local[0] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:198 ---
+loc   line  op
+----- ----  --
+main:
+00000: 199  this
+00001: 199  dup
+00002: 199  callprop "getCreateViewObj"
+00007: 199  swap
+00008: 199  notearg
+00009: 199  call 0
+00012: 199  setlocal 0
+00015: 199  pop
+00016: 200  getlocal 0
+00019: 200  getprop "getSortGrade"
+00024: 200  not
+00025: 200  ifeq 34 (+9)
+00030: 201  uint16 1000
+00033: 201  return
+00034: 203  getlocal 0
+00037: 203  dup
+00038: 203  callprop "getSortGrade"
+00043: 203  swap
+00044: 203  notearg
+00045: 203  call 0
+00048: 203  return
+00049: 203  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:198 ---
+;; function object[19] create
+;; function metadata object[19] nargs=0 bindings=1
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:230 ---
+loc   line  op
+----- ----  --
+main:
+00000: 231  name "xs"
+00005: 231  getprop "Models"
+00010: 231  getprop "AddEquipment"
+00015: 231  undefined
+00016: 231  notearg
+00017: 231  new 0
+00020: 231  setlocal 0
+00023: 231  pop
+00024: 232  getlocal 0
+00027: 232  and 47 (+20)
+00032: 232  pop
+00033: 232  getlocal 0
+00036: 232  dup
+00037: 232  callprop "init"
+00042: 232  swap
+00043: 232  notearg
+00044: 232  call 0
+00047: 232  ifeq 56 (+9)
+00052: 233  getlocal 0
+00055: 233  return
+00056: 236  name "xs"
+00061: 236  dup
+00062: 236  callprop "assert"
+00067: 236  swap
+00068: 236  notearg
+00069: 236  false
+00070: 236  notearg
+00071: 236  string "xs.Models.AddEquipment.create "
+00076: 236  notearg
+00077: 236  call 2
+00080: 236  pop
+00081: 237  null
+00082: 237  return
+00083: 237  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:230 ---
+;; function object[20] createHeadView
+;; function metadata object[20] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:246 ---
+loc   line  op
+----- ----  --
+main:
+00000: 247  this
+00001: 247  dup
+00002: 247  callprop "getCreateViewObj"
+00007: 247  swap
+00008: 247  notearg
+00009: 247  call 0
+00012: 247  dup
+00013: 247  callprop "createIcon_Grade"
+00018: 247  swap
+00019: 247  notearg
+00020: 247  call 0
+00023: 247  return
+00024: 247  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:246 ---
+;; function object[21] getNameString
+;; function metadata object[21] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:250 ---
+loc   line  op
+----- ----  --
+main:
+00000: 251  this
+00001: 251  dup
+00002: 251  callprop "getCreateViewObj"
+00007: 251  swap
+00008: 251  notearg
+00009: 251  call 0
+00012: 251  dup
+00013: 251  callprop "getNameString"
+00018: 251  swap
+00019: 251  notearg
+00020: 251  call 0
+00023: 251  name "xs"
+00028: 251  getprop "Tools"
+00033: 251  getprop "String"
+00038: 251  dup
+00039: 251  callprop "createString"
+00044: 251  swap
+00045: 251  notearg
+00046: 251  string "auto_name_10"
+00051: 251  notearg
+00052: 251  call 1
+00055: 251  add
+00056: 251  return
+00057: 251  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:250 ---
+;; function object[22] getGradeForSort
+;; function metadata object[22] nargs=0 bindings=1
+;; local[0] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:253 ---
+loc   line  op
+----- ----  --
+main:
+00000: 254  this
+00001: 254  dup
+00002: 254  callprop "getCreateViewObj"
+00007: 254  swap
+00008: 254  notearg
+00009: 254  call 0
+00012: 254  setlocal 0
+00015: 254  pop
+00016: 255  getlocal 0
+00019: 255  getprop "getSortGrade"
+00024: 255  not
+00025: 255  ifeq 34 (+9)
+00030: 256  uint16 1000
+00033: 256  return
+00034: 258  getlocal 0
+00037: 258  dup
+00038: 258  callprop "getSortGrade"
+00043: 258  swap
+00044: 258  notearg
+00045: 258  call 0
+00048: 258  return
+00049: 258  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:253 ---
+;; function object[23] create
+;; function metadata object[23] nargs=0 bindings=1
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:263 ---
+loc   line  op
+----- ----  --
+main:
+00000: 264  name "xs"
+00005: 264  getprop "Models"
+00010: 264  getprop "AddEquipmentPiece"
+00015: 264  undefined
+00016: 264  notearg
+00017: 264  new 0
+00020: 264  setlocal 0
+00023: 264  pop
+00024: 265  getlocal 0
+00027: 265  and 47 (+20)
+00032: 265  pop
+00033: 265  getlocal 0
+00036: 265  dup
+00037: 265  callprop "init"
+00042: 265  swap
+00043: 265  notearg
+00044: 265  call 0
+00047: 265  ifeq 56 (+9)
+00052: 266  getlocal 0
+00055: 266  return
+00056: 269  name "xs"
+00061: 269  dup
+00062: 269  callprop "assert"
+00067: 269  swap
+00068: 269  notearg
+00069: 269  false
+00070: 269  notearg
+00071: 269  string "xs.Models.AddEquipmentPiece.create "
+00076: 269  notearg
+00077: 269  call 2
+00080: 269  pop
+00081: 270  null
+00082: 270  return
+00083: 270  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:263 ---
+;; function object[24] createHeadView
+;; function metadata object[24] nargs=0 bindings=2
+;; local[0] _model
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:279 ---
+loc   line  op
+----- ----  --
+main:
+00000: 281  this
+00001: 281  dup
+00002: 281  callprop "getCreateViewObj"
+00007: 281  swap
+00008: 281  notearg
+00009: 281  call 0
+00012: 281  setlocal 0
+00015: 281  pop
+00016: 283  name "xs"
+00021: 283  getprop "Views"
+00026: 283  getprop "Icon"
+00031: 283  getprop "IconStyleA"
+00036: 283  dup
+00037: 283  callprop "create"
+00042: 283  swap
+00043: 283  notearg
+00044: 283  newinit 1
+00049: 284  true
+00050: 284  initprop "grade"
+00055: 285  true
+00056: 285  initprop "lv"
+00061: 285  endinit
+00062: 285  notearg
+00063: 287  null
+00064: 287  notearg
+00065: 287  call 2
+00068: 287  setlocal 1
+00071: 287  pop
+00072: 289  getlocal 1
+00075: 289  dup
+00076: 289  callprop "reloadData"
+00081: 289  swap
+00082: 289  notearg
+00083: 289  getlocal 0
+00086: 289  notearg
+00087: 289  call 1
+00090: 289  pop
+00091: 290  getlocal 1
+00094: 290  return
+00095: 290  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:279 ---
+;; function object[25] getGradeForSort
+;; function metadata object[25] nargs=0 bindings=1
+;; local[0] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:292 ---
+loc   line  op
+----- ----  --
+main:
+00000: 293  this
+00001: 293  dup
+00002: 293  callprop "getCreateViewObj"
+00007: 293  swap
+00008: 293  notearg
+00009: 293  call 0
+00012: 293  setlocal 0
+00015: 293  pop
+00016: 294  getlocal 0
+00019: 294  getprop "getSortGrade"
+00024: 294  not
+00025: 294  ifeq 34 (+9)
+00030: 295  uint16 1000
+00033: 295  return
+00034: 297  getlocal 0
+00037: 297  dup
+00038: 297  callprop "getSortGrade"
+00043: 297  swap
+00044: 297  notearg
+00045: 297  call 0
+00048: 297  return
+00049: 297  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:292 ---
+;; function object[26] create
+;; function metadata object[26] nargs=0 bindings=1
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:302 ---
+loc   line  op
+----- ----  --
+main:
+00000: 303  name "xs"
+00005: 303  getprop "Models"
+00010: 303  getprop "AddSkill"
+00015: 303  undefined
+00016: 303  notearg
+00017: 303  new 0
+00020: 303  setlocal 0
+00023: 303  pop
+00024: 304  getlocal 0
+00027: 304  and 47 (+20)
+00032: 304  pop
+00033: 304  getlocal 0
+00036: 304  dup
+00037: 304  callprop "init"
+00042: 304  swap
+00043: 304  notearg
+00044: 304  call 0
+00047: 304  ifeq 56 (+9)
+00052: 305  getlocal 0
+00055: 305  return
+00056: 307  name "xs"
+00061: 307  dup
+00062: 307  callprop "assert"
+00067: 307  swap
+00068: 307  notearg
+00069: 307  false
+00070: 307  notearg
+00071: 307  string "xs.Models.AddSkill.create "
+00076: 307  notearg
+00077: 307  call 2
+00080: 307  pop
+00081: 308  null
+00082: 308  return
+00083: 308  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:302 ---
+;; function object[27] createHeadView
+;; function metadata object[27] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:316 ---
+loc   line  op
+----- ----  --
+main:
+00000: 318  this
+00001: 318  dup
+00002: 318  callprop "getCreateViewObj"
+00007: 318  swap
+00008: 318  notearg
+00009: 318  call 0
+00012: 318  dup
+00013: 318  callprop "createIcon_Grade"
+00018: 318  swap
+00019: 318  notearg
+00020: 318  call 0
+00023: 318  return
+00024: 318  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:316 ---
+;; function object[28] getNameString
+;; function metadata object[28] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:320 ---
+loc   line  op
+----- ----  --
+main:
+00000: 321  this
+00001: 321  dup
+00002: 321  callprop "getCreateViewObj"
+00007: 321  swap
+00008: 321  notearg
+00009: 321  call 0
+00012: 321  dup
+00013: 321  callprop "getNameString"
+00018: 321  swap
+00019: 321  notearg
+00020: 321  call 0
+00023: 321  name "xs"
+00028: 321  getprop "Tools"
+00033: 321  getprop "String"
+00038: 321  dup
+00039: 321  callprop "createString"
+00044: 321  swap
+00045: 321  notearg
+00046: 321  string "auto_name_10"
+00051: 321  notearg
+00052: 321  call 1
+00055: 321  add
+00056: 321  return
+00057: 321  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:320 ---
+;; function object[29] getGradeForSort
+;; function metadata object[29] nargs=0 bindings=1
+;; local[0] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:323 ---
+loc   line  op
+----- ----  --
+main:
+00000: 324  this
+00001: 324  dup
+00002: 324  callprop "getCreateViewObj"
+00007: 324  swap
+00008: 324  notearg
+00009: 324  call 0
+00012: 324  setlocal 0
+00015: 324  pop
+00016: 325  getlocal 0
+00019: 325  getprop "getSortGrade"
+00024: 325  not
+00025: 325  ifeq 34 (+9)
+00030: 326  uint16 1000
+00033: 326  return
+00034: 328  getlocal 0
+00037: 328  dup
+00038: 328  callprop "getSortGrade"
+00043: 328  swap
+00044: 328  notearg
+00045: 328  call 0
+00048: 328  return
+00049: 328  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:323 ---
+;; function object[30] create
+;; function metadata object[30] nargs=0 bindings=1
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:332 ---
+loc   line  op
+----- ----  --
+main:
+00000: 333  name "xs"
+00005: 333  getprop "Models"
+00010: 333  getprop "AddSkillFragment"
+00015: 333  undefined
+00016: 333  notearg
+00017: 333  new 0
+00020: 333  setlocal 0
+00023: 333  pop
+00024: 334  getlocal 0
+00027: 334  and 47 (+20)
+00032: 334  pop
+00033: 334  getlocal 0
+00036: 334  dup
+00037: 334  callprop "init"
+00042: 334  swap
+00043: 334  notearg
+00044: 334  call 0
+00047: 334  ifeq 56 (+9)
+00052: 335  getlocal 0
+00055: 335  return
+00056: 339  name "xs"
+00061: 339  dup
+00062: 339  callprop "assert"
+00067: 339  swap
+00068: 339  notearg
+00069: 339  false
+00070: 339  notearg
+00071: 339  string "xs.Models.AddSkillFragment.create "
+00076: 339  notearg
+00077: 339  call 2
+00080: 339  pop
+00081: 340  null
+00082: 340  return
+00083: 340  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:332 ---
+;; function object[31] createHeadView
+;; function metadata object[31] nargs=0 bindings=2
+;; local[0] _model
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:349 ---
+loc   line  op
+----- ----  --
+main:
+00000: 351  this
+00001: 351  dup
+00002: 351  callprop "getCreateViewObj"
+00007: 351  swap
+00008: 351  notearg
+00009: 351  call 0
+00012: 351  setlocal 0
+00015: 351  pop
+00016: 353  name "xs"
+00021: 353  getprop "Views"
+00026: 353  getprop "Icon"
+00031: 353  getprop "IconStyleA"
+00036: 353  dup
+00037: 353  callprop "create"
+00042: 353  swap
+00043: 353  notearg
+00044: 353  newinit 1
+00049: 354  true
+00050: 354  initprop "grade"
+00055: 355  true
+00056: 355  initprop "lv"
+00061: 355  endinit
+00062: 355  notearg
+00063: 357  null
+00064: 357  notearg
+00065: 357  call 2
+00068: 357  setlocal 1
+00071: 357  pop
+00072: 359  getlocal 1
+00075: 359  dup
+00076: 359  callprop "reloadData"
+00081: 359  swap
+00082: 359  notearg
+00083: 359  getlocal 0
+00086: 359  notearg
+00087: 359  call 1
+00090: 359  pop
+00091: 360  getlocal 1
+00094: 360  return
+00095: 360  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:349 ---
+;; function object[32] getGradeForSort
+;; function metadata object[32] nargs=0 bindings=1
+;; local[0] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:362 ---
+loc   line  op
+----- ----  --
+main:
+00000: 363  this
+00001: 363  dup
+00002: 363  callprop "getCreateViewObj"
+00007: 363  swap
+00008: 363  notearg
+00009: 363  call 0
+00012: 363  setlocal 0
+00015: 363  pop
+00016: 364  getlocal 0
+00019: 364  getprop "getSortGrade"
+00024: 364  not
+00025: 364  ifeq 34 (+9)
+00030: 365  uint16 1000
+00033: 365  return
+00034: 367  getlocal 0
+00037: 367  dup
+00038: 367  callprop "getSortGrade"
+00043: 367  swap
+00044: 367  notearg
+00045: 367  call 0
+00048: 367  return
+00049: 367  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:362 ---
+;; function object[33] create
+;; function metadata object[33] nargs=0 bindings=1
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:371 ---
+loc   line  op
+----- ----  --
+main:
+00000: 372  name "xs"
+00005: 372  getprop "Models"
+00010: 372  getprop "AddGeneral"
+00015: 372  undefined
+00016: 372  notearg
+00017: 372  new 0
+00020: 372  setlocal 0
+00023: 372  pop
+00024: 373  getlocal 0
+00027: 373  and 47 (+20)
+00032: 373  pop
+00033: 373  getlocal 0
+00036: 373  dup
+00037: 373  callprop "init"
+00042: 373  swap
+00043: 373  notearg
+00044: 373  call 0
+00047: 373  ifeq 56 (+9)
+00052: 374  getlocal 0
+00055: 374  return
+00056: 377  name "xs"
+00061: 377  dup
+00062: 377  callprop "assert"
+00067: 377  swap
+00068: 377  notearg
+00069: 377  false
+00070: 377  notearg
+00071: 377  string "xs.Models.AddGeneral.create "
+00076: 377  notearg
+00077: 377  call 2
+00080: 377  pop
+00081: 378  null
+00082: 378  return
+00083: 378  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:371 ---
+;; function object[34] getNameString
+;; function metadata object[34] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:386 ---
+loc   line  op
+----- ----  --
+main:
+00000: 387  this
+00001: 387  dup
+00002: 387  callprop "getCreateViewObj"
+00007: 387  swap
+00008: 387  notearg
+00009: 387  call 0
+00012: 387  dup
+00013: 387  callprop "getNameString"
+00018: 387  swap
+00019: 387  notearg
+00020: 387  call 0
+00023: 387  name "xs"
+00028: 387  getprop "Tools"
+00033: 387  getprop "String"
+00038: 387  dup
+00039: 387  callprop "createString"
+00044: 387  swap
+00045: 387  notearg
+00046: 387  string "soul"
+00051: 387  notearg
+00052: 387  call 1
+00055: 387  add
+00056: 387  return
+00057: 387  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:386 ---
+;; function object[35] getGradeForSort
+;; function metadata object[35] nargs=0 bindings=1
+;; local[0] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:389 ---
+loc   line  op
+----- ----  --
+main:
+00000: 390  this
+00001: 390  dup
+00002: 390  callprop "getCreateViewObj"
+00007: 390  swap
+00008: 390  notearg
+00009: 390  call 0
+00012: 390  setlocal 0
+00015: 390  pop
+00016: 391  getlocal 0
+00019: 391  getprop "getSortGrade"
+00024: 391  not
+00025: 391  ifeq 34 (+9)
+00030: 392  uint16 1000
+00033: 392  return
+00034: 394  getlocal 0
+00037: 394  dup
+00038: 394  callprop "getSortGrade"
+00043: 394  swap
+00044: 394  notearg
+00045: 394  call 0
+00048: 394  return
+00049: 394  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:389 ---
+;; function object[36] create
+;; function metadata object[36] nargs=0 bindings=1
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:398 ---
+loc   line  op
+----- ----  --
+main:
+00000: 399  name "xs"
+00005: 399  getprop "Models"
+00010: 399  getprop "AddGeneralSoul"
+00015: 399  undefined
+00016: 399  notearg
+00017: 399  new 0
+00020: 399  setlocal 0
+00023: 399  pop
+00024: 400  getlocal 0
+00027: 400  and 47 (+20)
+00032: 400  pop
+00033: 400  getlocal 0
+00036: 400  dup
+00037: 400  callprop "init"
+00042: 400  swap
+00043: 400  notearg
+00044: 400  call 0
+00047: 400  ifeq 56 (+9)
+00052: 401  getlocal 0
+00055: 401  return
+00056: 404  name "xs"
+00061: 404  dup
+00062: 404  callprop "assert"
+00067: 404  swap
+00068: 404  notearg
+00069: 404  false
+00070: 404  notearg
+00071: 404  string "xs.Models.AddGeneralSoul.create "
+00076: 404  notearg
+00077: 404  call 2
+00080: 404  pop
+00081: 405  null
+00082: 405  return
+00083: 405  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:398 ---
+;; function object[37] init
+;; function metadata object[37] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:409 ---
+loc   line  op
+----- ----  --
+main:
+00000: 410  this
+00001: 410  dup
+00002: 410  callprop "_super"
+00007: 410  swap
+00008: 410  notearg
+00009: 410  call 0
+00012: 410  not
+00013: 410  ifeq 20 (+7)
+00018: 411  false
+00019: 411  return
+00020: 415  true
+00021: 415  return
+00022: 415  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:409 ---
+;; function object[38] loadJson
+;; function metadata object[38] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:417 ---
+loc   line  op
+----- ----  --
+main:
+00000: 418  this
+00001: 418  dup
+00002: 418  callprop "_super"
+00007: 418  swap
+00008: 418  notearg
+00009: 418  getarg 0
+00012: 418  notearg
+00013: 418  call 1
+00016: 418  pop
+00017: 418  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:417 ---
+;; function object[39] _createModel
+;; function metadata object[39] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:422 ---
+loc   line  op
+----- ----  --
+main:
+00000: 423  null
+00001: 423  return
+00002: 423  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:422 ---
+;; function object[40] createHeadView
+;; function metadata object[40] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:426 ---
+loc   line  op
+----- ----  --
+main:
+00000: 427  this
+00001: 427  dup
+00002: 427  callprop "_createView"
+00007: 427  swap
+00008: 427  notearg
+00009: 427  call 0
+00012: 427  getprop "iconSp"
+00017: 427  return
+00018: 427  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:426 ---
+;; function object[41] getNameString
+;; function metadata object[41] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:430 ---
+loc   line  op
+----- ----  --
+main:
+00000: 431  this
+00001: 431  dup
+00002: 431  callprop "_createView"
+00007: 431  swap
+00008: 431  notearg
+00009: 431  call 0
+00012: 431  getprop "name"
+00017: 431  return
+00018: 431  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:430 ---
+;; function object[42] getTxtLabString
+;; function metadata object[42] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:434 ---
+loc   line  op
+----- ----  --
+main:
+00000: 435  this
+00001: 435  dup
+00002: 435  callprop "_createView"
+00007: 435  swap
+00008: 435  notearg
+00009: 435  call 0
+00012: 435  getprop "labTxt"
+00017: 435  return
+00018: 435  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:434 ---
+;; function object[43] getShowNumString
+;; function metadata object[43] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:437 ---
+loc   line  op
+----- ----  --
+main:
+00000: 438  this
+00001: 438  dup
+00002: 438  callprop "_createView"
+00007: 438  swap
+00008: 438  notearg
+00009: 438  call 0
+00012: 438  getprop "preNum"
+00017: 438  name "xs"
+00022: 438  getprop "Utils"
+00027: 438  dup
+00028: 438  callprop "parseStringSafe"
+00033: 438  swap
+00034: 438  notearg
+00035: 438  this
+00036: 438  dup
+00037: 438  callprop "getAddNum"
+00042: 438  swap
+00043: 438  notearg
+00044: 438  call 0
+00047: 438  notearg
+00048: 438  call 1
+00051: 438  add
+00052: 438  return
+00053: 438  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:437 ---
+;; function object[44] _createView
+;; function metadata object[44] nargs=0 bindings=3
+;; local[0] _obj
+;; local[1] _id
+;; local[2] _model
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:441 ---
+loc   line  op
+----- ----  --
+main:
+00000: 442  newinit 1
+00005: 442  endinit
+00006: 442  setlocal 0
+00009: 442  pop
+00010: 443  callname "parseInt"
+00015: 443  implicitthis "parseInt"
+00020: 443  notearg
+00021: 443  this
+00022: 443  dup
+00023: 443  callprop "getAddId"
+00028: 443  swap
+00029: 443  notearg
+00030: 443  call 0
+00033: 443  notearg
+00034: 443  call 1
+00037: 443  setlocal 1
+00040: 443  pop
+00041: 444  getlocal 1
+00044: 444  condswitch
+00045: 446  name "xs"
+00050: 446  getprop "Models"
+00055: 446  getprop "AddPlayerInfoType_TiLi"
+00060: 446  case 210 (+150)
+00065: 447  name "xs"
+00070: 447  getprop "Models"
+00075: 447  getprop "AddPlayerInfoType_JingLi"
+00080: 447  case 210 (+130)
+00085: 448  name "xs"
+00090: 448  getprop "Models"
+00095: 448  getprop "AddPlayerInfoType_Battle"
+00100: 448  case 210 (+110)
+00105: 449  name "xs"
+00110: 449  getprop "Models"
+00115: 449  getprop "AddPlayerInfoType_TongQian"
+00120: 449  case 210 (+90)
+00125: 450  name "xs"
+00130: 450  getprop "Models"
+00135: 450  getprop "AddPlayerInfoType_YuanBao"
+00140: 450  case 210 (+70)
+00145: 451  name "xs"
+00150: 451  getprop "Models"
+00155: 451  getprop "AddPlayerInfoType_TeamPoint"
+00160: 451  case 210 (+50)
+00165: 452  name "xs"
+00170: 452  getprop "Models"
+00175: 452  getprop "AddPlayerInfoType_Exp"
+00180: 452  case 210 (+30)
+00185: 453  name "xs"
+00190: 453  getprop "Models"
+00195: 453  getprop "AddPlayerInfoType_UnionScore"
+00200: 453  case 210 (+10)
+00205: 453  default 378 (+173)
+00210: 455  name "xs"
+00215: 455  getprop "Models"
+00220: 455  getprop "PlayerAttr"
+00225: 455  dup
+00226: 455  callprop "createWithJson"
+00231: 455  swap
+00232: 455  notearg
+00233: 455  newinit 1
+00238: 455  this
+00239: 455  dup
+00240: 455  callprop "getAddId"
+00245: 455  swap
+00246: 455  notearg
+00247: 455  call 0
+00250: 455  initprop "id"
+00255: 455  this
+00256: 455  dup
+00257: 455  callprop "getAddNum"
+00262: 455  swap
+00263: 455  notearg
+00264: 455  call 0
+00267: 455  initprop "num"
+00272: 455  endinit
+00273: 455  notearg
+00274: 455  call 1
+00277: 455  setlocal 2
+00280: 455  pop
+00281: 456  getlocal 0
+00284: 456  getlocal 2
+00287: 456  dup
+00288: 456  callprop "createIcon_Grade"
+00293: 456  swap
+00294: 456  notearg
+00295: 456  call 0
+00298: 456  setprop "iconSp"
+00303: 456  pop
+00304: 457  getlocal 0
+00307: 457  getlocal 2
+00310: 457  dup
+00311: 457  callprop "getNameString"
+00316: 457  swap
+00317: 457  notearg
+00318: 457  call 0
+00321: 457  setprop "name"
+00326: 457  pop
+00327: 458  getlocal 0
+00330: 458  getlocal 2
+00333: 458  dup
+00334: 458  callprop "getTxtLabString"
+00339: 458  swap
+00340: 458  notearg
+00341: 458  call 0
+00344: 458  setprop "labTxt"
+00349: 458  pop
+00350: 459  getlocal 0
+00353: 459  getlocal 2
+00356: 459  dup
+00357: 459  callprop "getNumPreString"
+00362: 459  swap
+00363: 459  notearg
+00364: 459  call 0
+00367: 459  setprop "preNum"
+00372: 459  pop
+00373: 460  goto 440 (+67)
+00378: 466  name "xs"
+00383: 466  dup
+00384: 466  callprop "assert"
+00389: 466  swap
+00390: 466  notearg
+00391: 466  false
+00392: 466  notearg
+00393: 466  string "info type error__createView!"
+00398: 466  this
+00399: 466  dup
+00400: 466  callprop "getAddId"
+00405: 466  swap
+00406: 466  notearg
+00407: 466  call 0
+00410: 466  add
+00411: 466  string "_"
+00416: 466  add
+00417: 466  this
+00418: 466  dup
+00419: 466  callprop "getAddType"
+00424: 466  swap
+00425: 466  notearg
+00426: 466  call 0
+00429: 466  add
+00430: 466  notearg
+00431: 466  call 2
+00434: 466  pop
+00435: 467  goto 440 (+5)
+00440: 473  getlocal 0
+00443: 473  return
+00444: 473  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:441 ---
+;; function object[45] getCreateViewObj
+;; function metadata object[45] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:476 ---
+loc   line  op
+----- ----  --
+main:
+00000: 477  null
+00001: 477  return
+00002: 477  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:476 ---
+;; function object[46] getGradeForSort
+;; function metadata object[46] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:484 ---
+loc   line  op
+----- ----  --
+main:
+00000: 485  uint16 1000
+00003: 485  return
+00004: 485  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:484 ---
+;; function object[47] create
+;; function metadata object[47] nargs=0 bindings=1
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:489 ---
+loc   line  op
+----- ----  --
+main:
+00000: 490  name "xs"
+00005: 490  getprop "Models"
+00010: 490  getprop "AddPlayerInfo"
+00015: 490  undefined
+00016: 490  notearg
+00017: 490  new 0
+00020: 490  setlocal 0
+00023: 490  pop
+00024: 491  getlocal 0
+00027: 491  and 47 (+20)
+00032: 491  pop
+00033: 491  getlocal 0
+00036: 491  dup
+00037: 491  callprop "init"
+00042: 491  swap
+00043: 491  notearg
+00044: 491  call 0
+00047: 491  ifeq 56 (+9)
+00052: 492  getlocal 0
+00055: 492  return
+00056: 495  null
+00057: 495  return
+00058: 495  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:489 ---
+;; function object[48] getGradeForSort
+;; function metadata object[48] nargs=0 bindings=1
+;; local[0] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:505 ---
+loc   line  op
+----- ----  --
+main:
+00000: 506  this
+00001: 506  dup
+00002: 506  callprop "getCreateViewObj"
+00007: 506  swap
+00008: 506  notearg
+00009: 506  call 0
+00012: 506  setlocal 0
+00015: 506  pop
+00016: 507  getlocal 0
+00019: 507  getprop "getSortGrade"
+00024: 507  not
+00025: 507  ifeq 34 (+9)
+00030: 508  uint16 1000
+00033: 508  return
+00034: 510  getlocal 0
+00037: 510  dup
+00038: 510  callprop "getSortGrade"
+00043: 510  swap
+00044: 510  notearg
+00045: 510  call 0
+00048: 510  return
+00049: 510  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:505 ---
+;; function object[49] create
+;; function metadata object[49] nargs=0 bindings=1
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:514 ---
+loc   line  op
+----- ----  --
+main:
+00000: 515  name "xs"
+00005: 515  getprop "Models"
+00010: 515  getprop "AddGems"
+00015: 515  undefined
+00016: 515  notearg
+00017: 515  new 0
+00020: 515  setlocal 0
+00023: 515  pop
+00024: 516  getlocal 0
+00027: 516  and 47 (+20)
+00032: 516  pop
+00033: 516  getlocal 0
+00036: 516  dup
+00037: 516  callprop "init"
+00042: 516  swap
+00043: 516  notearg
+00044: 516  call 0
+00047: 516  ifeq 56 (+9)
+00052: 517  getlocal 0
+00055: 517  return
+00056: 520  name "xs"
+00061: 520  dup
+00062: 520  callprop "assert"
+00067: 520  swap
+00068: 520  notearg
+00069: 520  false
+00070: 520  notearg
+00071: 520  string "xs.Models.AddGems.create "
+00076: 520  notearg
+00077: 520  call 2
+00080: 520  pop
+00081: 521  null
+00082: 521  return
+00083: 521  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:514 ---
+;; function object[50] getGradeForSort
+;; function metadata object[50] nargs=0 bindings=1
+;; local[0] _obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:530 ---
+loc   line  op
+----- ----  --
+main:
+00000: 531  this
+00001: 531  dup
+00002: 531  callprop "getCreateViewObj"
+00007: 531  swap
+00008: 531  notearg
+00009: 531  call 0
+00012: 531  setlocal 0
+00015: 531  pop
+00016: 532  getlocal 0
+00019: 532  getprop "getSortGrade"
+00024: 532  not
+00025: 532  ifeq 34 (+9)
+00030: 533  uint16 1000
+00033: 533  return
+00034: 535  getlocal 0
+00037: 535  dup
+00038: 535  callprop "getSortGrade"
+00043: 535  swap
+00044: 535  notearg
+00045: 535  call 0
+00048: 535  return
+00049: 535  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:530 ---
+;; function object[51] create
+;; function metadata object[51] nargs=0 bindings=1
+;; local[0] add
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:539 ---
+loc   line  op
+----- ----  --
+main:
+00000: 540  name "xs"
+00005: 540  getprop "Models"
+00010: 540  getprop "AddGoddess"
+00015: 540  undefined
+00016: 540  notearg
+00017: 540  new 0
+00020: 540  setlocal 0
+00023: 540  pop
+00024: 541  getlocal 0
+00027: 541  and 47 (+20)
+00032: 541  pop
+00033: 541  getlocal 0
+00036: 541  dup
+00037: 541  callprop "init"
+00042: 541  swap
+00043: 541  notearg
+00044: 541  call 0
+00047: 541  ifeq 56 (+9)
+00052: 542  getlocal 0
+00055: 542  return
+00056: 545  name "xs"
+00061: 545  dup
+00062: 545  callprop "assert"
+00067: 545  swap
+00068: 545  notearg
+00069: 545  false
+00070: 545  notearg
+00071: 545  string "xs.Models.AddGoddess.create "
+00076: 545  notearg
+00077: 545  call 2
+00080: 545  pop
+00081: 546  null
+00082: 546  return
+00083: 546  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Add.js:539 ---

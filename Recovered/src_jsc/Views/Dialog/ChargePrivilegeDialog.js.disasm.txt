@@ -1,0 +1,1117 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Dialog/ChargePrivilegeDialog.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=526 object[0]
+;; FUNCTION-MAP kind=lambda offset=536 object[1]
+;; FUNCTION-MAP kind=lambda offset=546 object[2]
+;; FUNCTION-MAP kind=lambda offset=556 object[3]
+;; FUNCTION-MAP kind=lambda offset=566 object[4]
+;; FUNCTION-MAP kind=lambda offset=576 object[5]
+;; FUNCTION-MAP kind=lambda offset=617 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Views"
+00010:   5  getprop "Dialog"
+00015:   5  name "xs"
+00020:   5  getprop "Views"
+00025:   5  getprop "HungerLayer"
+00030:   5  dup
+00031:   5  callprop "extend"
+00036:   5  swap
+00037:   5  notearg
+00038:   5  newinit 1
+00043:   6  string "ChargePrivilegeDialog"
+00048:   6  initprop "name"
+00053:   8  newinit 1
+00058:   9  one
+00059:   9  initprop "previous"
+00064:  10  int8 2
+00066:  10  initprop "next"
+00071:  10  endinit
+00072:  10  initprop "clickType"
+00077:  13  newinit 1
+00082:  14  newinit 1
+00087:  14  int8 -1
+00089:  14  initprop "priority"
+00094:  14  endinit
+00095:  14  initprop "btnClose"
+00100:  15  newinit 1
+00105:  15  int8 -1
+00107:  15  initprop "priority"
+00112:  15  endinit
+00113:  15  initprop "btnPreviousPage"
+00118:  16  newinit 1
+00123:  16  int8 -1
+00125:  16  initprop "priority"
+00130:  16  endinit
+00131:  16  initprop "btnNextPage"
+00136:  17  newinit 1
+00141:  17  int8 -1
+00143:  17  initprop "priority"
+00148:  17  endinit
+00149:  17  initprop "btnViewGiftBag"
+00154:  20  newarray 7
+00158:  22  newinit 1
+00163:  22  int8 12
+00165:  22  initprop "tag"
+00170:  22  string "ls"
+00175:  22  initprop "type"
+00180:  22  string "lblVipTitle"
+00185:  22  initprop "name"
+00190:  22  string "LS_qianghua_done"
+00195:  22  initprop "id"
+00200:  22  endinit
+00201:  22  initelem_array 0
+00205:  23  newinit 1
+00210:  23  int8 13
+00212:  23  initprop "tag"
+00217:  23  string "ls_ext"
+00222:  23  initprop "type"
+00227:  23  string "lblVipGiftBag"
+00232:  23  initprop "name"
+00237:  23  newarray 3
+00241:  23  string "LS_wujiangName1"
+00246:  23  initelem_array 0
+00250:  23  string "LS_qianghua_done"
+00255:  23  initelem_array 1
+00259:  23  string "LS_wujiangName1"
+00264:  23  initelem_array 2
+00268:  23  endinit
+00269:  23  initprop "ids"
+00274:  23  endinit
+00275:  23  initelem_array 1
+00279:  24  newinit 1
+00284:  24  int8 14
+00286:  24  initprop "tag"
+00291:  24  string "ls"
+00296:  24  initprop "type"
+00301:  24  string "lblDesc"
+00306:  24  initprop "name"
+00311:  24  string "LS_popUI2"
+00316:  24  initprop "id"
+00321:  24  endinit
+00322:  24  initelem_array 2
+00326:  25  newinit 1
+00331:  25  int8 20
+00333:  25  initprop "tag"
+00338:  25  string "btn"
+00343:  25  initprop "type"
+00348:  25  string "btnClose"
+00353:  25  initprop "name"
+00358:  25  string "Btn_Close"
+00363:  25  initprop "id"
+00368:  25  endinit
+00369:  25  initelem_array 3
+00373:  26  newinit 1
+00378:  26  int8 21
+00380:  26  initprop "tag"
+00385:  26  string "btn"
+00390:  26  initprop "type"
+00395:  26  string "btnViewGiftBag"
+00400:  26  initprop "name"
+00405:  26  string "Btn_ViewGiftBag"
+00410:  26  initprop "id"
+00415:  26  endinit
+00416:  26  initelem_array 4
+00420:  27  newinit 1
+00425:  27  int8 22
+00427:  27  initprop "tag"
+00432:  27  string "btn"
+00437:  27  initprop "type"
+00442:  27  string "btnPreviousPage"
+00447:  27  initprop "name"
+00452:  27  string "Btn_PreviousePage"
+00457:  27  initprop "id"
+00462:  27  endinit
+00463:  27  initelem_array 5
+00467:  28  newinit 1
+00472:  28  int8 23
+00474:  28  initprop "tag"
+00479:  28  string "btn"
+00484:  28  initprop "type"
+00489:  28  string "btnNextPage"
+00494:  28  initprop "name"
+00499:  28  string "Btn_NextPage"
+00504:  28  initprop "id"
+00509:  28  endinit
+00510:  28  initelem_array 6
+00514:  28  endinit
+00515:  28  initprop "ccbCfg"
+00520:  28  endinit
+00521:  28  initprop "cfg"
+00526:  32  lambda (function () {
+    [sourceless code]
+})
+00531:  32  initprop "init"
+00536: 102  lambda (function () {
+    [sourceless code]
+})
+00541: 102  initprop "getMaxVip"
+00546: 115  lambda (function () {
+    [sourceless code]
+})
+00551: 115  initprop "onEnter"
+00556: 119  lambda (function () {
+    [sourceless code]
+})
+00561: 119  initprop "setBaseTouchPriority"
+00566: 127  lambda (function () {
+    [sourceless code]
+})
+00571: 127  initprop "changeView"
+00576: 139  lambda (function () {
+    [sourceless code]
+})
+00581: 139  initprop "refreshView"
+00586: 139  endinit
+00587: 139  notearg
+00588: 139  call 1
+00591: 139  setprop "ChargePrivilegeDialog"
+00596: 139  popv
+00597: 161  name "xs"
+00602: 161  getprop "Views"
+00607: 161  getprop "Dialog"
+00612: 161  getprop "ChargePrivilegeDialog"
+00617: 161  lambda (function () {
+    [sourceless code]
+})
+00622: 161  setprop "create"
+00627: 161  popv
+00628: 169  name "xs"
+00633: 169  getprop "Views"
+00638: 169  getprop "Mgr"
+00643: 169  dup
+00644: 169  callprop "registerDialog"
+00649: 169  swap
+00650: 169  notearg
+00651: 169  string "ChargePrivilegeDialog"
+00656: 169  notearg
+00657: 169  newinit 1
+00662: 170  name "xs"
+00667: 170  getprop "Views"
+00672: 170  getprop "Dialog"
+00677: 170  getprop "ChargePrivilegeDialog"
+00682: 170  initprop "class"
+00687: 171  name "xs"
+00692: 171  getprop "Constant_DlgStyleType_Large"
+00697: 171  initprop "styleType"
+00702: 172  string "DlgCmn"
+00707: 172  initprop "area"
+00712: 172  endinit
+00713: 172  notearg
+00714: 172  call 2
+00717: 172  popv
+00718: 173  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=4
+;; arg[0] vipLevel
+;; local[0] i
+;; local[1] cfgData
+;; local[2] titleSprite
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=674 object[0]
+;; FUNCTION-MAP kind=lambda offset=748 object[1]
+;; FUNCTION-MAP kind=lambda offset=785 object[2]
+;; FUNCTION-MAP kind=lambda offset=822 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  33  this
+00001:  33  dup
+00002:  33  callprop "_super"
+00007:  33  swap
+00008:  33  notearg
+00009:  33  call 0
+00012:  33  not
+00013:  33  ifeq 20 (+7)
+00018:  34  false
+00019:  34  return
+00020:  38  this
+00021:  38  getarg 0
+00024:  38  setprop "vipLevel"
+00029:  38  pop
+00030:  39  this
+00031:  39  this
+00032:  39  dup
+00033:  39  callprop "getMaxVip"
+00038:  39  swap
+00039:  39  notearg
+00040:  39  call 0
+00043:  39  setprop "maxVipLevel"
+00048:  39  pop
+00049:  40  this
+00050:  40  newarray 0
+00054:  40  endinit
+00055:  40  setprop "dataSource"
+00060:  40  pop
+00061:  42  this
+00062:  42  null
+00063:  42  setprop "btnClose"
+00068:  42  pop
+00069:  43  this
+00070:  43  null
+00071:  43  setprop "btnPreviousPage"
+00076:  43  pop
+00077:  44  this
+00078:  44  null
+00079:  44  setprop "btnNextPage"
+00084:  44  pop
+00085:  45  this
+00086:  45  null
+00087:  45  setprop "btnViewGiftBag"
+00092:  45  pop
+00093:  46  this
+00094:  46  null
+00095:  46  setprop "lblVipTitle"
+00100:  46  pop
+00101:  47  this
+00102:  47  null
+00103:  47  setprop "lblVipGiftBag"
+00108:  47  pop
+00109:  48  this
+00110:  48  null
+00111:  48  setprop "dialogTitle"
+00116:  48  pop
+00117:  49  this
+00118:  49  null
+00119:  49  setprop "lblDesc"
+00124:  49  pop
+00125:  52  zero
+00126:  52  setlocal 0
+00129:  52  pop
+00130:  52  goto 213 (+83)
+00135:  53  loophead
+00136:  53  name "xs"
+00141:  53  getprop "Models"
+00146:  53  getprop "VipCfg"
+00151:  53  dup
+00152:  53  callprop "createWithBase"
+00157:  53  swap
+00158:  53  notearg
+00159:  53  getlocal 0
+00162:  53  one
+00163:  53  sub
+00164:  53  string ""
+00169:  53  add
+00170:  53  notearg
+00171:  53  call 1
+00174:  53  setlocal 1
+00177:  53  pop
+00178:  55  this
+00179:  55  getprop "dataSource"
+00184:  55  dup
+00185:  55  callprop "push"
+00190:  55  swap
+00191:  55  notearg
+00192:  55  getlocal 1
+00195:  55  notearg
+00196:  55  call 1
+00199:  55  pop
+00200:  52  inclocal 9
+00203:  52  getlocal 0
+00206:  52  pos
+00207:  52  one
+00208:  52  add
+00209:  52  setlocal 0
+00212:  52  pop
+00213:  52  loopentry
+00214:  52  getlocal 0
+00217:  52  this
+00218:  52  getprop "maxVipLevel"
+00223:  52  one
+00224:  52  add
+00225:  52  lt
+00226:  52  ifne 135 (-91)
+00231:  58  this
+00232:  58  name "cc"
+00237:  58  getprop "BuilderReader"
+00242:  58  dup
+00243:  58  callprop "load"
+00248:  58  swap
+00249:  58  notearg
+00250:  58  string "ccb3/ChargePrivilege.ccbi"
+00255:  58  notearg
+00256:  58  this
+00257:  58  notearg
+00258:  58  call 2
+00261:  58  setprop "ccbNode"
+00266:  58  pop
+00267:  59  this
+00268:  59  getprop "ccbNode"
+00273:  59  dup
+00274:  59  callprop "setContentSize"
+00279:  59  swap
+00280:  59  notearg
+00281:  59  name "cc"
+00286:  59  dup
+00287:  59  callprop "size"
+00292:  59  swap
+00293:  59  notearg
+00294:  59  uint16 862
+00297:  59  notearg
+00298:  59  uint16 619
+00301:  59  notearg
+00302:  59  call 2
+00305:  59  notearg
+00306:  59  call 1
+00309:  59  pop
+00310:  60  this
+00311:  60  getprop "ccbNode"
+00316:  60  dup
+00317:  60  callprop "setAnchorPoint"
+00322:  60  swap
+00323:  60  notearg
+00324:  60  name "cc"
+00329:  60  dup
+00330:  60  callprop "p"
+00335:  60  swap
+00336:  60  notearg
+00337:  60  double 0.5
+00342:  60  notearg
+00343:  60  double 0.5
+00348:  60  notearg
+00349:  60  call 2
+00352:  60  notearg
+00353:  60  call 1
+00356:  60  pop
+00357:  61  name "xs"
+00362:  61  getprop "Utils"
+00367:  61  getprop "Node"
+00372:  61  dup
+00373:  61  callprop "attachNodes"
+00378:  61  swap
+00379:  61  notearg
+00380:  61  this
+00381:  61  notearg
+00382:  61  this
+00383:  61  getprop "ccbNode"
+00388:  61  notearg
+00389:  61  newinit 1
+00394:  61  string "c"
+00399:  61  initprop "desc"
+00404:  61  endinit
+00405:  61  notearg
+00406:  61  call 3
+00409:  61  pop
+00410:  64  name "xs"
+00415:  64  getprop "Utils"
+00420:  64  getprop "UI"
+00425:  64  dup
+00426:  64  callprop "replaceCcbByCfg"
+00431:  64  swap
+00432:  64  notearg
+00433:  64  this
+00434:  64  getprop "ccbNode"
+00439:  64  notearg
+00440:  64  this
+00441:  64  getprop "cfg"
+00446:  64  getprop "ccbCfg"
+00451:  64  notearg
+00452:  64  this
+00453:  64  notearg
+00454:  64  call 3
+00457:  64  pop
+00458:  66  this
+00459:  66  getprop "ccbNode"
+00464:  66  dup
+00465:  66  callprop "getChildByTag"
+00470:  66  swap
+00471:  66  notearg
+00472:  66  int8 11
+00474:  66  notearg
+00475:  66  call 1
+00478:  66  setlocal 2
+00481:  66  pop
+00482:  67  this
+00483:  67  name "xs"
+00488:  67  getprop "Factorys"
+00493:  67  getprop "Label"
+00498:  67  dup
+00499:  67  callprop "createByStyleIdWithString"
+00504:  67  swap
+00505:  67  notearg
+00506:  67  string "LS_huodong_title"
+00511:  67  notearg
+00512:  67  name "xs"
+00517:  67  getprop "Tools"
+00522:  67  getprop "String"
+00527:  67  dup
+00528:  67  callprop "createString"
+00533:  67  swap
+00534:  67  notearg
+00535:  67  string "auto_name_220"
+00540:  67  notearg
+00541:  67  call 1
+00544:  67  notearg
+00545:  67  call 2
+00548:  67  setprop "dialogTitle"
+00553:  67  pop
+00554:  68  this
+00555:  68  getprop "dialogTitle"
+00560:  68  dup
+00561:  68  callprop "setPosition"
+00566:  68  swap
+00567:  68  notearg
+00568:  68  name "cc"
+00573:  68  dup
+00574:  68  callprop "p"
+00579:  68  swap
+00580:  68  notearg
+00581:  68  getlocal 2
+00584:  68  dup
+00585:  68  callprop "getContentSize"
+00590:  68  swap
+00591:  68  notearg
+00592:  68  call 0
+00595:  68  getprop "width"
+00600:  68  int8 2
+00602:  68  div
+00603:  68  notearg
+00604:  69  getlocal 2
+00607:  69  dup
+00608:  69  callprop "getContentSize"
+00613:  69  swap
+00614:  69  notearg
+00615:  69  call 0
+00618:  69  getprop "height"
+00623:  69  double 0.6
+00628:  69  mul
+00629:  69  notearg
+00630:  69  call 2
+00633:  69  notearg
+00634:  69  call 1
+00637:  69  pop
+00638:  70  getlocal 2
+00641:  70  dup
+00642:  70  callprop "addChild"
+00647:  70  swap
+00648:  70  notearg
+00649:  70  this
+00650:  70  getprop "dialogTitle"
+00655:  70  notearg
+00656:  70  call 1
+00659:  70  pop
+00660:  73  this
+00661:  73  getprop "btnClose"
+00666:  73  dup
+00667:  73  callprop "setOnClickCallBack"
+00672:  73  swap
+00673:  73  notearg
+00674:  73  lambda (function () {
+    [sourceless code]
+})
+00679:  73  notearg
+00680:  73  call 1
+00683:  73  pop
+00684:  77  this
+00685:  77  getprop "lblVipTitle"
+00690:  77  dup
+00691:  77  callprop "setScale"
+00696:  77  swap
+00697:  77  notearg
+00698:  77  double 0.7
+00703:  77  notearg
+00704:  77  call 1
+00707:  77  pop
+00708:  78  this
+00709:  78  getprop "lblVipGiftBag"
+00714:  78  dup
+00715:  78  callprop "setFontScaleAtIndex"
+00720:  78  swap
+00721:  78  notearg
+00722:  78  one
+00723:  78  notearg
+00724:  78  double 0.5
+00729:  78  notearg
+00730:  78  call 2
+00733:  78  pop
+00734:  81  this
+00735:  81  getprop "btnPreviousPage"
+00740:  81  dup
+00741:  81  callprop "setOnClickCallBack"
+00746:  81  swap
+00747:  81  notearg
+00748:  81  lambda (function () {
+    [sourceless code]
+})
+00753:  81  dup
+00754:  81  callprop "bind"
+00759:  81  swap
+00760:  81  notearg
+00761:  83  this
+00762:  83  notearg
+00763:  83  call 1
+00766:  83  notearg
+00767:  83  call 1
+00770:  83  pop
+00771:  86  this
+00772:  86  getprop "btnNextPage"
+00777:  86  dup
+00778:  86  callprop "setOnClickCallBack"
+00783:  86  swap
+00784:  86  notearg
+00785:  86  lambda (function () {
+    [sourceless code]
+})
+00790:  86  dup
+00791:  86  callprop "bind"
+00796:  86  swap
+00797:  86  notearg
+00798:  88  this
+00799:  88  notearg
+00800:  88  call 1
+00803:  88  notearg
+00804:  88  call 1
+00807:  88  pop
+00808:  91  this
+00809:  91  getprop "btnViewGiftBag"
+00814:  91  dup
+00815:  91  callprop "setOnClickCallBack"
+00820:  91  swap
+00821:  91  notearg
+00822:  91  lambda (function () {
+    [sourceless code]
+})
+00827:  91  dup
+00828:  91  callprop "bind"
+00833:  91  swap
+00834:  91  notearg
+00835:  94  this
+00836:  94  notearg
+00837:  94  call 1
+00840:  94  notearg
+00841:  94  call 1
+00844:  94  pop
+00845:  97  this
+00846:  97  dup
+00847:  97  callprop "refreshView"
+00852:  97  swap
+00853:  97  notearg
+00854:  97  getarg 0
+00857:  97  notearg
+00858:  97  call 1
+00861:  97  pop
+00862:  99  true
+00863:  99  return
+00864:  99  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:32 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:73 ---
+loc   line  op
+----- ----  --
+main:
+00000:  74  name "xs"
+00005:  74  getprop "Views"
+00010:  74  getprop "Mgr"
+00015:  74  dup
+00016:  74  callprop "hideDialog"
+00021:  74  swap
+00022:  74  notearg
+00023:  74  call 0
+00026:  74  pop
+00027:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:73 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:81 ---
+loc   line  op
+----- ----  --
+main:
+00000:  82  this
+00001:  82  dup
+00002:  82  callprop "changeView"
+00007:  82  swap
+00008:  82  notearg
+00009:  82  this
+00010:  82  getprop "clickType"
+00015:  82  getprop "previous"
+00020:  82  notearg
+00021:  82  call 1
+00024:  82  pop
+00025:  82  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:81 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:86 ---
+loc   line  op
+----- ----  --
+main:
+00000:  87  this
+00001:  87  dup
+00002:  87  callprop "changeView"
+00007:  87  swap
+00008:  87  notearg
+00009:  87  this
+00010:  87  getprop "clickType"
+00015:  87  getprop "next"
+00020:  87  notearg
+00021:  87  call 1
+00024:  87  pop
+00025:  87  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:86 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] cfgData
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:91 ---
+loc   line  op
+----- ----  --
+main:
+00000:  92  this
+00001:  92  getprop "dataSource"
+00006:  92  this
+00007:  92  getprop "vipLevel"
+00012:  92  getelem
+00013:  92  setlocal 0
+00016:  92  pop
+00017:  93  name "xs"
+00022:  93  getprop "Views"
+00027:  93  getprop "Mgr"
+00032:  93  dup
+00033:  93  callprop "showDialogByName"
+00038:  93  swap
+00039:  93  notearg
+00040:  93  string "priviewGiftPackDialog"
+00045:  93  notearg
+00046:  93  getlocal 0
+00049:  93  dup
+00050:  93  callprop "getGiftId"
+00055:  93  swap
+00056:  93  notearg
+00057:  93  call 0
+00060:  93  notearg
+00061:  93  call 2
+00064:  93  pop
+00065:  93  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:91 ---
+;; function object[1] getMaxVip
+;; function metadata object[1] nargs=0 bindings=3
+;; local[0] starIdx
+;; local[1] mVipCfg
+;; local[2] maxVip
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:102 ---
+loc   line  op
+----- ----  --
+main:
+00000: 103  string "-1"
+00005: 103  setlocal 0
+00008: 103  pop
+00009: 104  name "xs"
+00014: 104  getprop "Tools"
+00019: 104  getprop "CfgData"
+00024: 104  dup
+00025: 104  callprop "getCfgDataByType"
+00030: 104  swap
+00031: 104  notearg
+00032: 104  name "xs"
+00037: 104  getprop "Constant_CfgDataType_Vip"
+00042: 104  notearg
+00043: 104  call 1
+00046: 104  setlocal 1
+00049: 104  pop
+00050: 105  int8 -1
+00052: 105  setlocal 2
+00055: 105  pop
+00056: 106  goto 101 (+45)
+00061: 107  loophead
+00062: 107  callname "parseInt"
+00067: 107  implicitthis "parseInt"
+00072: 107  notearg
+00073: 107  getlocal 0
+00076: 107  notearg
+00077: 107  call 1
+00080: 107  one
+00081: 107  add
+00082: 107  string ""
+00087: 107  add
+00088: 107  setlocal 0
+00091: 107  pop
+00092: 109  getlocal 2
+00095: 109  one
+00096: 109  add
+00097: 109  setlocal 2
+00100: 109  pop
+00101: 106  loopentry
+00102: 106  getlocal 1
+00105: 106  getlocal 0
+00108: 106  getelem
+00109: 106  ifne 61 (-48)
+00114: 111  getlocal 2
+00117: 111  return
+00118: 111  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:102 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:115 ---
+loc   line  op
+----- ----  --
+main:
+00000: 116  this
+00001: 116  dup
+00002: 116  callprop "_super"
+00007: 116  swap
+00008: 116  notearg
+00009: 116  call 0
+00012: 116  pop
+00013: 116  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:115 ---
+;; function object[3] setBaseTouchPriority
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:119 ---
+loc   line  op
+----- ----  --
+main:
+00000: 120  this
+00001: 120  getarg 0
+00004: 120  setprop "m_baseTouchPriority"
+00009: 120  pop
+00010: 121  this
+00011: 121  getprop "btnClose"
+00016: 121  dup
+00017: 121  callprop "setTouchPriority"
+00022: 121  swap
+00023: 121  notearg
+00024: 121  this
+00025: 121  getprop "m_baseTouchPriority"
+00030: 121  this
+00031: 121  getprop "cfg"
+00036: 121  getprop "btnClose"
+00041: 121  getprop "priority"
+00046: 121  add
+00047: 121  notearg
+00048: 121  call 1
+00051: 121  pop
+00052: 122  this
+00053: 122  getprop "btnPreviousPage"
+00058: 122  dup
+00059: 122  callprop "setTouchPriority"
+00064: 122  swap
+00065: 122  notearg
+00066: 122  this
+00067: 122  getprop "m_baseTouchPriority"
+00072: 122  this
+00073: 122  getprop "cfg"
+00078: 122  getprop "btnPreviousPage"
+00083: 122  getprop "priority"
+00088: 122  add
+00089: 122  notearg
+00090: 122  call 1
+00093: 122  pop
+00094: 123  this
+00095: 123  getprop "btnNextPage"
+00100: 123  dup
+00101: 123  callprop "setTouchPriority"
+00106: 123  swap
+00107: 123  notearg
+00108: 123  this
+00109: 123  getprop "m_baseTouchPriority"
+00114: 123  this
+00115: 123  getprop "cfg"
+00120: 123  getprop "btnNextPage"
+00125: 123  getprop "priority"
+00130: 123  add
+00131: 123  notearg
+00132: 123  call 1
+00135: 123  pop
+00136: 124  this
+00137: 124  getprop "btnViewGiftBag"
+00142: 124  dup
+00143: 124  callprop "setTouchPriority"
+00148: 124  swap
+00149: 124  notearg
+00150: 124  this
+00151: 124  getprop "m_baseTouchPriority"
+00156: 124  this
+00157: 124  getprop "cfg"
+00162: 124  getprop "btnViewGiftBag"
+00167: 124  getprop "priority"
+00172: 124  add
+00173: 124  notearg
+00174: 124  call 1
+00177: 124  pop
+00178: 124  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:119 ---
+;; function object[4] changeView
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] playerClickType
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:127 ---
+loc   line  op
+----- ----  --
+main:
+00000: 128  getarg 0
+00003: 128  this
+00004: 128  getprop "clickType"
+00009: 128  getprop "previous"
+00014: 128  eq
+00015: 128  ifeq 64 (+49)
+00020: 130  this
+00021: 130  this
+00022: 130  getprop "vipLevel"
+00027: 130  zero
+00028: 130  gt
+00029: 130  ifeq 47 (+18)
+00034: 130  this
+00035: 130  getprop "vipLevel"
+00040: 130  one
+00041: 130  sub
+00042: 130  goto 53 (+11)
+00047: 130  this
+00048: 130  getprop "vipLevel"
+00053: 130  setprop "vipLevel"
+00058: 130  pop
+00059: 130  goto 108 (+49)
+00064: 134  this
+00065: 134  this
+00066: 134  getprop "vipLevel"
+00071: 134  this
+00072: 134  getprop "maxVipLevel"
+00077: 134  lt
+00078: 134  ifeq 96 (+18)
+00083: 134  this
+00084: 134  getprop "vipLevel"
+00089: 134  one
+00090: 134  add
+00091: 134  goto 102 (+11)
+00096: 134  this
+00097: 134  getprop "vipLevel"
+00102: 134  setprop "vipLevel"
+00107: 134  pop
+00108: 136  this
+00109: 136  dup
+00110: 136  callprop "refreshView"
+00115: 136  swap
+00116: 136  notearg
+00117: 136  this
+00118: 136  getprop "vipLevel"
+00123: 136  notearg
+00124: 136  call 1
+00127: 136  pop
+00128: 136  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:127 ---
+;; function object[5] refreshView
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] vipLevel
+;; local[0] cfgData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:139 ---
+loc   line  op
+----- ----  --
+main:
+00000: 140  getarg 0
+00003: 140  zero
+00004: 140  eq
+00005: 140  ifeq 35 (+30)
+00010: 141  this
+00011: 141  getprop "btnPreviousPage"
+00016: 141  dup
+00017: 141  callprop "setVisible"
+00022: 141  swap
+00023: 141  notearg
+00024: 141  false
+00025: 141  notearg
+00026: 141  call 1
+00029: 141  pop
+00030: 141  goto 115 (+85)
+00035: 143  getarg 0
+00038: 143  this
+00039: 143  getprop "maxVipLevel"
+00044: 143  eq
+00045: 143  ifeq 75 (+30)
+00050: 144  this
+00051: 144  getprop "btnNextPage"
+00056: 144  dup
+00057: 144  callprop "setVisible"
+00062: 144  swap
+00063: 144  notearg
+00064: 144  false
+00065: 144  notearg
+00066: 144  call 1
+00069: 144  pop
+00070: 144  goto 115 (+45)
+00075: 147  this
+00076: 147  getprop "btnPreviousPage"
+00081: 147  dup
+00082: 147  callprop "setVisible"
+00087: 147  swap
+00088: 147  notearg
+00089: 147  true
+00090: 147  notearg
+00091: 147  call 1
+00094: 147  pop
+00095: 148  this
+00096: 148  getprop "btnNextPage"
+00101: 148  dup
+00102: 148  callprop "setVisible"
+00107: 148  swap
+00108: 148  notearg
+00109: 148  true
+00110: 148  notearg
+00111: 148  call 1
+00114: 148  pop
+00115: 152  this
+00116: 152  getprop "lblVipTitle"
+00121: 152  dup
+00122: 152  callprop "setString"
+00127: 152  swap
+00128: 152  notearg
+00129: 152  name "xs"
+00134: 152  getprop "Tools"
+00139: 152  getprop "String"
+00144: 152  dup
+00145: 152  callprop "createString"
+00150: 152  swap
+00151: 152  notearg
+00152: 152  string "auto_name_vip"
+00157: 152  notearg
+00158: 152  call 1
+00161: 152  string " "
+00166: 152  add
+00167: 152  getarg 0
+00170: 152  add
+00171: 152  name "xs"
+00176: 152  getprop "Tools"
+00181: 152  getprop "String"
+00186: 152  dup
+00187: 152  callprop "createString"
+00192: 152  swap
+00193: 152  notearg
+00194: 152  string "auto_name_335"
+00199: 152  notearg
+00200: 152  call 1
+00203: 152  add
+00204: 152  notearg
+00205: 152  call 1
+00208: 152  pop
+00209: 154  this
+00210: 154  getprop "lblVipGiftBag"
+00215: 154  dup
+00216: 154  callprop "setStringByStrings"
+00221: 154  swap
+00222: 154  notearg
+00223: 154  newarray 3
+00227: 154  name "xs"
+00232: 154  getprop "Tools"
+00237: 154  getprop "String"
+00242: 154  dup
+00243: 154  callprop "createString"
+00248: 154  swap
+00249: 154  notearg
+00250: 154  string "str_Vip_CanBuy"
+00255: 154  notearg
+00256: 154  call 1
+00259: 154  initelem_array 0
+00263: 154  name "xs"
+00268: 154  getprop "Tools"
+00273: 154  getprop "String"
+00278: 154  dup
+00279: 154  callprop "createString"
+00284: 154  swap
+00285: 154  notearg
+00286: 154  string "auto_name_vip"
+00291: 154  notearg
+00292: 154  call 1
+00295: 154  getarg 0
+00298: 154  add
+00299: 154  initelem_array 1
+00303: 154  name "xs"
+00308: 154  getprop "Tools"
+00313: 154  getprop "String"
+00318: 154  dup
+00319: 154  callprop "createString"
+00324: 154  swap
+00325: 154  notearg
+00326: 154  string "str_Vip_Gift"
+00331: 154  notearg
+00332: 154  call 1
+00335: 154  initelem_array 2
+00339: 154  endinit
+00340: 154  notearg
+00341: 154  call 1
+00344: 154  pop
+00345: 156  this
+00346: 156  getprop "dataSource"
+00351: 156  getarg 0
+00354: 156  getelem
+00355: 156  setlocal 0
+00358: 156  pop
+00359: 157  this
+00360: 157  getprop "lblDesc"
+00365: 157  dup
+00366: 157  callprop "setStringById"
+00371: 157  swap
+00372: 157  notearg
+00373: 157  getlocal 0
+00376: 157  dup
+00377: 157  callprop "getDescStringId"
+00382: 157  swap
+00383: 157  notearg
+00384: 157  call 0
+00387: 157  notearg
+00388: 157  call 1
+00391: 157  pop
+00392: 157  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:139 ---
+;; function object[6] create
+;; function metadata object[6] nargs=1 bindings=2
+;; arg[0] vipLevel
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:161 ---
+loc   line  op
+----- ----  --
+main:
+00000: 162  name "xs"
+00005: 162  getprop "Views"
+00010: 162  getprop "Dialog"
+00015: 162  getprop "ChargePrivilegeDialog"
+00020: 162  undefined
+00021: 162  notearg
+00022: 162  new 0
+00025: 162  setlocal 0
+00028: 162  pop
+00029: 163  getlocal 0
+00032: 163  and 56 (+24)
+00037: 163  pop
+00038: 163  getlocal 0
+00041: 163  dup
+00042: 163  callprop "init"
+00047: 163  swap
+00048: 163  notearg
+00049: 163  getarg 0
+00052: 163  notearg
+00053: 163  call 1
+00056: 163  ifeq 65 (+9)
+00061: 164  getlocal 0
+00064: 164  return
+00065: 166  null
+00066: 166  return
+00067: 166  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Dialog/ChargePrivilegeDialog.js:161 ---

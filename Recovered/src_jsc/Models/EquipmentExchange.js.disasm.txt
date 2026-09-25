@@ -1,0 +1,267 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/EquipmentExchange.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=73 object[4]
+;; FUNCTION-MAP kind=lambda offset=109 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Models"
+00010:  10  name "cc"
+00015:  10  getprop "Class"
+00020:  10  dup
+00021:  10  callprop "extend"
+00026:  10  swap
+00027:  10  notearg
+00028:  10  newinit 1
+00033:  11  lambda (function () {
+    [sourceless code]
+})
+00038:  11  initprop "init"
+00043:  21  lambda (function () {
+    [sourceless code]
+})
+00048:  21  initprop "loadJson"
+00053:  36  lambda (function () {
+    [sourceless code]
+})
+00058:  36  initprop "getItem"
+00063:  46  lambda (function () {
+    [sourceless code]
+})
+00068:  46  initprop "getDiscountGoldSoul"
+00073:  50  lambda (function () {
+    [sourceless code]
+})
+00078:  50  initprop "getDiscountSilverSoul"
+00083:  50  endinit
+00084:  50  notearg
+00085:  50  call 1
+00088:  50  setprop "EquipmentExchange"
+00093:  50  popv
+00094:  56  name "xs"
+00099:  56  getprop "Models"
+00104:  56  getprop "EquipmentExchange"
+00109:  56  lambda (function () {
+    [sourceless code]
+})
+00114:  56  setprop "createWithJson"
+00119:  56  popv
+00120:  64  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  this
+00001:  15  null
+00002:  15  setprop "pk_id"
+00007:  15  pop
+00008:  16  this
+00009:  16  null
+00010:  16  setprop "item_id"
+00015:  16  pop
+00016:  17  this
+00017:  17  zero
+00018:  17  setprop "discount_gold_soul"
+00023:  17  pop
+00024:  18  this
+00025:  18  zero
+00026:  18  setprop "discount_silver_soul"
+00031:  18  pop
+00032:  19  true
+00033:  19  return
+00034:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:11 ---
+;; function object[1] loadJson
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  this
+00001:  23  getprop "_super"
+00006:  23  ifeq 24 (+18)
+00011:  23  this
+00012:  23  dup
+00013:  23  callprop "_super"
+00018:  23  swap
+00019:  23  notearg
+00020:  23  call 0
+00023:  23  pop
+00024:  25  this
+00025:  25  getarg 0
+00028:  25  getprop "pk_id"
+00033:  25  setprop "pk_id"
+00038:  25  pop
+00039:  27  name "xs"
+00044:  27  dup
+00045:  27  callprop "dump"
+00050:  27  swap
+00051:  27  notearg
+00052:  27  string "EquipmentExchange"
+00057:  27  notearg
+00058:  27  getarg 0
+00061:  27  notearg
+00062:  27  call 2
+00065:  27  pop
+00066:  29  this
+00067:  29  getarg 0
+00070:  29  getprop "item_id"
+00075:  29  setprop "item_id"
+00080:  29  pop
+00081:  31  this
+00082:  31  name "xs"
+00087:  31  getprop "Utils"
+00092:  31  dup
+00093:  31  callprop "parseIntSafe"
+00098:  31  swap
+00099:  31  notearg
+00100:  31  getarg 0
+00103:  31  getprop "discount_gold_soul"
+00108:  31  notearg
+00109:  31  call 1
+00112:  31  setprop "discount_gold_soul"
+00117:  31  pop
+00118:  32  this
+00119:  32  name "xs"
+00124:  32  getprop "Utils"
+00129:  32  dup
+00130:  32  callprop "parseIntSafe"
+00135:  32  swap
+00136:  32  notearg
+00137:  32  getarg 0
+00140:  32  getprop "discount_silver_soul"
+00145:  32  notearg
+00146:  32  call 1
+00149:  32  setprop "discount_silver_soul"
+00154:  32  pop
+00155:  32  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:21 ---
+;; function object[2] getItem
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:36 ---
+loc   line  op
+----- ----  --
+main:
+00000:  39  this
+00001:  39  getprop "_item"
+00006:  39  not
+00007:  39  ifeq 52 (+45)
+00012:  40  this
+00013:  40  name "xs"
+00018:  40  getprop "Models"
+00023:  40  getprop "Item"
+00028:  40  dup
+00029:  40  callprop "createWithBase"
+00034:  40  swap
+00035:  40  notearg
+00036:  40  this
+00037:  40  getprop "item_id"
+00042:  40  notearg
+00043:  40  call 1
+00046:  40  setprop "_item"
+00051:  40  pop
+00052:  43  this
+00053:  43  getprop "_item"
+00058:  43  return
+00059:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:36 ---
+;; function object[3] getDiscountGoldSoul
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  this
+00001:  47  getprop "discount_gold_soul"
+00006:  47  return
+00007:  47  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:46 ---
+;; function object[4] getDiscountSilverSoul
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:50 ---
+loc   line  op
+----- ----  --
+main:
+00000:  51  this
+00001:  51  getprop "discount_silver_soul"
+00006:  51  return
+00007:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:50 ---
+;; function object[5] createWithJson
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] model
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  57  name "xs"
+00005:  57  getprop "Models"
+00010:  57  getprop "EquipmentExchange"
+00015:  57  undefined
+00016:  57  notearg
+00017:  57  new 0
+00020:  57  setlocal 0
+00023:  57  pop
+00024:  58  getlocal 0
+00027:  58  and 47 (+20)
+00032:  58  pop
+00033:  58  getlocal 0
+00036:  58  dup
+00037:  58  callprop "init"
+00042:  58  swap
+00043:  58  notearg
+00044:  58  call 0
+00047:  58  ifeq 75 (+28)
+00052:  59  getlocal 0
+00055:  59  dup
+00056:  59  callprop "loadJson"
+00061:  59  swap
+00062:  59  notearg
+00063:  59  getarg 0
+00066:  59  notearg
+00067:  59  call 1
+00070:  59  pop
+00071:  60  getlocal 0
+00074:  60  return
+00075:  62  name "xs"
+00080:  62  dup
+00081:  62  callprop "assert"
+00086:  62  swap
+00087:  62  notearg
+00088:  62  false
+00089:  62  notearg
+00090:  62  string "xs.Models.EquipmentExchange.create error!"
+00095:  62  notearg
+00096:  62  call 2
+00099:  62  pop
+00100:  63  null
+00101:  63  return
+00102:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/EquipmentExchange.js:56 ---

@@ -1,0 +1,1784 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/Cell/RankTableViewCell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=753 object[0]
+;; FUNCTION-MAP kind=lambda offset=763 object[1]
+;; FUNCTION-MAP kind=lambda offset=773 object[2]
+;; FUNCTION-MAP kind=lambda offset=783 object[3]
+;; FUNCTION-MAP kind=lambda offset=793 object[4]
+;; FUNCTION-MAP kind=lambda offset=803 object[5]
+;; FUNCTION-MAP kind=lambda offset=813 object[6]
+;; FUNCTION-MAP kind=lambda offset=823 object[7]
+;; FUNCTION-MAP kind=lambda offset=859 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Views"
+00010:   4  name "cc"
+00015:   4  getprop "TableViewCell"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  newarray 18
+00037:   6  newinit 1
+00042:   6  int8 2
+00044:   6  initprop "tag"
+00049:   6  string "ls"
+00054:   6  initprop "type"
+00059:   6  string "LS_Lv"
+00064:   6  initprop "id"
+00069:   6  int8 5
+00071:   6  initprop "zOrder"
+00076:   6  endinit
+00077:   6  initelem_array 0
+00081:   7  newinit 1
+00086:   7  int8 3
+00088:   7  initprop "tag"
+00093:   7  string "ls"
+00098:   7  initprop "type"
+00103:   7  string "LS_Lv"
+00108:   7  initprop "id"
+00113:   7  int8 5
+00115:   7  initprop "zOrder"
+00120:   7  endinit
+00121:   7  initelem_array 1
+00125:   8  newinit 1
+00130:   8  int8 6
+00132:   8  initprop "tag"
+00137:   8  string "ls"
+00142:   8  initprop "type"
+00147:   8  string "LS_liebiaoInf2"
+00152:   8  initprop "id"
+00157:   8  int8 5
+00159:   8  initprop "zOrder"
+00164:   8  endinit
+00165:   8  initelem_array 2
+00169:   9  newinit 1
+00174:   9  int8 21
+00176:   9  initprop "tag"
+00181:   9  string "ls"
+00186:   9  initprop "type"
+00191:   9  string "m_cellIntro"
+00196:   9  initprop "name"
+00201:   9  string "LS_liebiaoInf"
+00206:   9  initprop "id"
+00211:   9  int8 5
+00213:   9  initprop "zOrder"
+00218:   9  endinit
+00219:   9  initelem_array 3
+00223:  10  newinit 1
+00228:  10  int8 24
+00230:  10  initprop "tag"
+00235:  10  string "ls"
+00240:  10  initprop "type"
+00245:  10  string "LS_liebiaoInf"
+00250:  10  initprop "id"
+00255:  10  int8 5
+00257:  10  initprop "zOrder"
+00262:  10  endinit
+00263:  10  initelem_array 4
+00267:  11  newinit 1
+00272:  11  int8 100
+00274:  11  initprop "tag"
+00279:  11  string "ls"
+00284:  11  initprop "type"
+00289:  11  string "LS_TTPHnomb"
+00294:  11  initprop "id"
+00299:  11  int8 5
+00301:  11  initprop "zOrder"
+00306:  11  endinit
+00307:  11  initelem_array 5
+00311:  12  newinit 1
+00316:  12  int8 31
+00318:  12  initprop "tag"
+00323:  12  string "sprite"
+00328:  12  initprop "type"
+00333:  12  one
+00334:  12  initprop "zOrder"
+00339:  12  endinit
+00340:  12  initelem_array 6
+00344:  13  newinit 1
+00349:  13  int8 32
+00351:  13  initprop "tag"
+00356:  13  string "sprite"
+00361:  13  initprop "type"
+00366:  13  int8 2
+00368:  13  initprop "zOrder"
+00373:  13  endinit
+00374:  13  initelem_array 7
+00378:  14  newinit 1
+00383:  14  int8 12
+00385:  14  initprop "tag"
+00390:  14  string "sprite"
+00395:  14  initprop "type"
+00400:  14  int8 4
+00402:  14  initprop "zOrder"
+00407:  14  endinit
+00408:  14  initelem_array 8
+00412:  15  newinit 1
+00417:  15  int8 13
+00419:  15  initprop "tag"
+00424:  15  string "sprite"
+00429:  15  initprop "type"
+00434:  15  int8 4
+00436:  15  initprop "zOrder"
+00441:  15  endinit
+00442:  15  initelem_array 9
+00446:  16  newinit 1
+00451:  16  int8 14
+00453:  16  initprop "tag"
+00458:  16  string "sprite"
+00463:  16  initprop "type"
+00468:  16  int8 5
+00470:  16  initprop "zOrder"
+00475:  16  endinit
+00476:  16  initelem_array 10
+00480:  17  newinit 1
+00485:  17  int8 11
+00487:  17  initprop "tag"
+00492:  17  string "sprite"
+00497:  17  initprop "type"
+00502:  17  int8 3
+00504:  17  initprop "zOrder"
+00509:  17  endinit
+00510:  17  initelem_array 11
+00514:  18  newinit 1
+00519:  18  int8 33
+00521:  18  initprop "tag"
+00526:  18  string "sprite"
+00531:  18  initprop "type"
+00536:  18  int8 5
+00538:  18  initprop "zOrder"
+00543:  18  endinit
+00544:  18  initelem_array 12
+00548:  19  newinit 1
+00553:  19  int8 35
+00555:  19  initprop "tag"
+00560:  19  string "sprite"
+00565:  19  initprop "type"
+00570:  19  int8 5
+00572:  19  initprop "zOrder"
+00577:  19  endinit
+00578:  19  initelem_array 13
+00582:  20  newinit 1
+00587:  20  int8 8
+00589:  20  initprop "tag"
+00594:  20  string "ls"
+00599:  20  initprop "type"
+00604:  20  string "LS_liebiaoInf2"
+00609:  20  initprop "id"
+00614:  20  int8 5
+00616:  20  initprop "zOrder"
+00621:  20  endinit
+00622:  20  initelem_array 14
+00626:  21  newinit 1
+00631:  21  one
+00632:  21  initprop "tag"
+00637:  21  string "sprite"
+00642:  21  initprop "type"
+00647:  21  int8 5
+00649:  21  initprop "zOrder"
+00654:  21  endinit
+00655:  21  initelem_array 15
+00659:  23  newinit 1
+00664:  23  int8 38
+00666:  23  initprop "tag"
+00671:  23  string "sprite"
+00676:  23  initprop "type"
+00681:  23  int8 5
+00683:  23  initprop "zOrder"
+00688:  23  endinit
+00689:  23  initelem_array 16
+00693:  24  newinit 1
+00698:  24  string "m_btn"
+00703:  24  initprop "name"
+00708:  24  string "btn"
+00713:  24  initprop "type"
+00718:  24  int8 7
+00720:  24  initprop "tag"
+00725:  24  string "Btn_Zan"
+00730:  24  initprop "id"
+00735:  24  int8 5
+00737:  24  initprop "zOrder"
+00742:  24  endinit
+00743:  24  initelem_array 17
+00747:  24  endinit
+00748:  24  initprop "ccbCfg"
+00753:  27  lambda (function () {
+    [sourceless code]
+})
+00758:  27  initprop "draw"
+00763:  31  lambda (function () {
+    [sourceless code]
+})
+00768:  31  initprop "ctor"
+00773:  36  lambda (function () {
+    [sourceless code]
+})
+00778:  36  initprop "init"
+00783:  54  lambda (function () {
+    [sourceless code]
+})
+00788:  54  initprop "_initCcbi"
+00793: 102  lambda (function () {
+    [sourceless code]
+})
+00798: 102  initprop "updateCell"
+00803: 218  lambda (function () {
+    [sourceless code]
+})
+00808: 218  initprop "onResponse"
+00813: 229  lambda (function () {
+    [sourceless code]
+})
+00818: 229  initprop "setBaseTouchPriority"
+00823: 236  lambda (function () {
+    [sourceless code]
+})
+00828: 236  initprop "setRankTitle"
+00833: 236  endinit
+00834: 236  notearg
+00835: 236  call 1
+00838: 236  setprop "RankTableViewCell"
+00843: 236  popv
+00844: 289  name "xs"
+00849: 289  getprop "Views"
+00854: 289  getprop "RankTableViewCell"
+00859: 289  lambda (function () {
+    [sourceless code]
+})
+00864: 289  setprop "create"
+00869: 289  popv
+00870: 297  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:1 ---
+;; function object[0] draw
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] ctx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  28  this
+00001:  28  dup
+00002:  28  callprop "_super"
+00007:  28  swap
+00008:  28  notearg
+00009:  28  getarg 0
+00012:  28  notearg
+00013:  28  call 1
+00016:  28  pop
+00017:  28  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:27 ---
+;; function object[1] ctor
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:31 ---
+loc   line  op
+----- ----  --
+main:
+00000:  32  this
+00001:  32  dup
+00002:  32  callprop "_super"
+00007:  32  swap
+00008:  32  notearg
+00009:  32  call 0
+00012:  32  pop
+00013:  33  name "cc"
+00018:  33  dup
+00019:  33  callprop "associateWithNative"
+00024:  33  swap
+00025:  33  notearg
+00026:  33  this
+00027:  33  notearg
+00028:  33  name "cc"
+00033:  33  getprop "TableViewCell"
+00038:  33  notearg
+00039:  33  call 2
+00042:  33  pop
+00043:  33  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:31 ---
+;; function object[2] init
+;; function metadata object[2] nargs=3 bindings=3
+;; arg[0] type
+;; arg[1] model
+;; arg[2] index
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:36 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  this
+00001:  37  dup
+00002:  37  callprop "_super"
+00007:  37  swap
+00008:  37  notearg
+00009:  37  call 0
+00012:  37  not
+00013:  37  ifeq 20 (+7)
+00018:  38  false
+00019:  38  return
+00020:  41  this
+00021:  41  null
+00022:  41  setprop "m_cellIntro"
+00027:  41  pop
+00028:  42  this
+00029:  42  getarg 0
+00032:  42  setprop "m_cellType"
+00037:  42  pop
+00038:  44  this
+00039:  44  dup
+00040:  44  callprop "_initCcbi"
+00045:  44  swap
+00046:  44  notearg
+00047:  44  call 0
+00050:  44  pop
+00051:  46  this
+00052:  46  getarg 1
+00055:  46  setprop "m_model"
+00060:  46  pop
+00061:  47  this
+00062:  47  getarg 2
+00065:  47  setprop "m_index"
+00070:  47  pop
+00071:  51  true
+00072:  51  return
+00073:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:36 ---
+;; function object[3] _initCcbi
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:54 ---
+loc   line  op
+----- ----  --
+main:
+00000:  55  this
+00001:  55  getprop "ccbNode"
+00006:  55  ifeq 31 (+25)
+00011:  56  this
+00012:  56  getprop "ccbNode"
+00017:  56  dup
+00018:  56  callprop "setVisible"
+00023:  56  swap
+00024:  56  notearg
+00025:  56  false
+00026:  56  notearg
+00027:  56  call 1
+00030:  56  pop
+00031:  58  this
+00032:  58  name "xs"
+00037:  58  getprop "ccb_reader"
+00042:  58  dup
+00043:  58  callprop "load"
+00048:  58  swap
+00049:  58  notearg
+00050:  58  name "xs"
+00055:  58  getprop "Cfg"
+00060:  58  getprop "CCBI"
+00065:  58  getprop "RankList"
+00070:  58  notearg
+00071:  58  this
+00072:  58  notearg
+00073:  58  call 2
+00076:  58  setprop "ccbNode"
+00081:  58  pop
+00082:  59  this
+00083:  59  getprop "ccbNode"
+00088:  59  dup
+00089:  59  callprop "setContentSize"
+00094:  59  swap
+00095:  59  notearg
+00096:  59  name "cc"
+00101:  59  dup
+00102:  59  callprop "size"
+00107:  59  swap
+00108:  59  notearg
+00109:  59  uint16 246
+00112:  59  notearg
+00113:  59  uint16 564
+00116:  59  notearg
+00117:  59  call 2
+00120:  59  notearg
+00121:  59  call 1
+00124:  59  pop
+00125:  60  this
+00126:  60  getprop "ccbNode"
+00131:  60  dup
+00132:  60  callprop "setAnchorPoint"
+00137:  60  swap
+00138:  60  notearg
+00139:  60  name "cc"
+00144:  60  dup
+00145:  60  callprop "p"
+00150:  60  swap
+00151:  60  notearg
+00152:  60  zero
+00153:  60  notearg
+00154:  60  zero
+00155:  60  notearg
+00156:  60  call 2
+00159:  60  notearg
+00160:  60  call 1
+00163:  60  pop
+00164:  61  name "xs"
+00169:  61  getprop "Utils"
+00174:  61  getprop "Node"
+00179:  61  dup
+00180:  61  callprop "attachNodes"
+00185:  61  swap
+00186:  61  notearg
+00187:  61  this
+00188:  61  notearg
+00189:  61  this
+00190:  61  getprop "ccbNode"
+00195:  61  notearg
+00196:  61  newinit 1
+00201:  62  string "lb"
+00206:  62  initprop "desc"
+00211:  63  name "cc"
+00216:  63  dup
+00217:  63  callprop "p"
+00222:  63  swap
+00223:  63  notearg
+00224:  63  zero
+00225:  63  notearg
+00226:  63  zero
+00227:  63  notearg
+00228:  63  call 2
+00231:  63  initprop "offset"
+00236:  64  true
+00237:  64  initprop "sc"
+00242:  64  endinit
+00243:  64  notearg
+00244:  64  call 3
+00247:  64  pop
+00248:  67  name "xs"
+00253:  67  getprop "Utils"
+00258:  67  getprop "UI"
+00263:  67  dup
+00264:  67  callprop "replaceCcbByCfg"
+00269:  67  swap
+00270:  67  notearg
+00271:  67  this
+00272:  67  getprop "ccbNode"
+00277:  67  notearg
+00278:  67  this
+00279:  67  getprop "ccbCfg"
+00284:  67  notearg
+00285:  67  this
+00286:  67  notearg
+00287:  67  call 3
+00290:  67  pop
+00291:  69  this
+00292:  69  this
+00293:  69  getprop "ccbNode"
+00298:  69  dup
+00299:  69  callprop "getChildByTag"
+00304:  69  swap
+00305:  69  notearg
+00306:  69  int8 31
+00308:  69  notearg
+00309:  69  call 1
+00312:  69  setprop "m_cellBg"
+00317:  69  pop
+00318:  70  this
+00319:  70  this
+00320:  70  getprop "ccbNode"
+00325:  70  dup
+00326:  70  callprop "getChildByTag"
+00331:  70  swap
+00332:  70  notearg
+00333:  70  int8 32
+00335:  70  notearg
+00336:  70  call 1
+00339:  70  setprop "m_cellFrame"
+00344:  70  pop
+00345:  71  this
+00346:  71  this
+00347:  71  getprop "ccbNode"
+00352:  71  dup
+00353:  71  callprop "getChildByTag"
+00358:  71  swap
+00359:  71  notearg
+00360:  71  int8 12
+00362:  71  notearg
+00363:  71  call 1
+00366:  71  setprop "m_topPic"
+00371:  71  pop
+00372:  72  this
+00373:  72  this
+00374:  72  getprop "ccbNode"
+00379:  72  dup
+00380:  72  callprop "getChildByTag"
+00385:  72  swap
+00386:  72  notearg
+00387:  72  int8 13
+00389:  72  notearg
+00390:  72  call 1
+00393:  72  setprop "m_downPic"
+00398:  72  pop
+00399:  74  this
+00400:  74  this
+00401:  74  getprop "m_btn"
+00406:  74  dup
+00407:  74  callprop "getPosition"
+00412:  74  swap
+00413:  74  notearg
+00414:  74  call 0
+00417:  74  setprop "centerPos"
+00422:  74  pop
+00423:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:54 ---
+;; function object[4] updateCell
+;; function metadata object[4] nargs=2 bindings=6
+;; arg[0] model
+;; arg[1] index
+;; local[0] hero
+;; local[1] guan
+;; local[2] zhang
+;; local[3] centerPos
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=1475 object[0]
+;; FUNCTION-MAP kind=lambda offset=1875 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:102 ---
+loc   line  op
+----- ----  --
+main:
+00000: 103  getarg 0
+00003: 103  null
+00004: 103  eq
+00005: 103  ifeq 66 (+61)
+00010: 104  this
+00011: 104  getprop "ccbNode"
+00016: 104  dup
+00017: 104  callprop "setVisible"
+00022: 104  swap
+00023: 104  notearg
+00024: 104  false
+00025: 104  notearg
+00026: 104  call 1
+00029: 104  pop
+00030: 105  this
+00031: 105  getprop "lineUpBtn"
+00036: 105  ifeq 61 (+25)
+00041: 107  this
+00042: 107  getprop "lineUpBtn"
+00047: 107  dup
+00048: 107  callprop "setVisible"
+00053: 107  swap
+00054: 107  notearg
+00055: 107  false
+00056: 107  notearg
+00057: 107  call 1
+00060: 107  pop
+00061: 107  goto 1898 (+1837)
+00066: 117  this
+00067: 117  getprop "ccbNode"
+00072: 117  dup
+00073: 117  callprop "setVisible"
+00078: 117  swap
+00079: 117  notearg
+00080: 117  true
+00081: 117  notearg
+00082: 117  call 1
+00085: 117  pop
+00086: 118  this
+00087: 118  getprop "lineUpBtn"
+00092: 118  ifeq 117 (+25)
+00097: 120  this
+00098: 120  getprop "lineUpBtn"
+00103: 120  dup
+00104: 120  callprop "setVisible"
+00109: 120  swap
+00110: 120  notearg
+00111: 120  true
+00112: 120  notearg
+00113: 120  call 1
+00116: 120  pop
+00117: 123  this
+00118: 123  getprop "ccbNode"
+00123: 123  dup
+00124: 123  callprop "getChildByTag"
+00129: 123  swap
+00130: 123  notearg
+00131: 123  int8 38
+00133: 123  notearg
+00134: 123  call 1
+00137: 123  dup
+00138: 123  callprop "setVisible"
+00143: 123  swap
+00144: 123  notearg
+00145: 123  false
+00146: 123  notearg
+00147: 123  call 1
+00150: 123  pop
+00151: 124  this
+00152: 124  getprop "m_cellIntro"
+00157: 124  dup
+00158: 124  callprop "setStringById"
+00163: 124  swap
+00164: 124  notearg
+00165: 124  string "ls_guoguan_zhanji"
+00170: 124  notearg
+00171: 124  call 1
+00174: 124  pop
+00175: 125  this
+00176: 125  getprop "ccbNode"
+00181: 125  dup
+00182: 125  callprop "getChildByTag"
+00187: 125  swap
+00188: 125  notearg
+00189: 125  one
+00190: 125  notearg
+00191: 125  call 1
+00194: 125  dup
+00195: 125  callprop "setString"
+00200: 125  swap
+00201: 125  notearg
+00202: 125  getarg 0
+00205: 125  getprop "user_nickname"
+00210: 125  notearg
+00211: 125  call 1
+00214: 125  pop
+00215: 128  this
+00216: 128  dup
+00217: 128  callprop "setRankTitle"
+00222: 128  swap
+00223: 128  notearg
+00224: 128  getarg 1
+00227: 128  one
+00228: 128  add
+00229: 128  notearg
+00230: 128  int8 100
+00232: 128  notearg
+00233: 128  call 2
+00236: 128  pop
+00237: 130  name "xs"
+00242: 130  getprop "Utils"
+00247: 130  getprop "Node"
+00252: 130  dup
+00253: 130  callprop "safeRemoveChild"
+00258: 130  swap
+00259: 130  notearg
+00260: 130  this
+00261: 130  getprop "_generalView"
+00266: 130  notearg
+00267: 130  call 1
+00270: 130  pop
+00271: 131  this
+00272: 131  null
+00273: 131  setprop "_generalView"
+00278: 131  pop
+00279: 133  getarg 0
+00282: 133  getprop "user_general_skin"
+00287: 133  ifeq 418 (+131)
+00292: 134  this
+00293: 134  name "xs"
+00298: 134  getprop "Views"
+00303: 134  getprop "Card"
+00308: 134  getprop "OtherPlayer"
+00313: 134  dup
+00314: 134  callprop "create"
+00319: 134  swap
+00320: 134  notearg
+00321: 134  call 0
+00324: 134  setprop "_generalView"
+00329: 134  pop
+00330: 135  this
+00331: 135  getprop "_generalView"
+00336: 135  dup
+00337: 135  callprop "reloadData_ChartWithGeneralId"
+00342: 135  swap
+00343: 135  notearg
+00344: 135  string ""
+00349: 135  getarg 0
+00352: 135  getprop "user_general_skin"
+00357: 135  add
+00358: 135  notearg
+00359: 135  call 1
+00362: 135  pop
+00363: 136  name "xs"
+00368: 136  getprop "Utils"
+00373: 136  getprop "Node"
+00378: 136  dup
+00379: 136  callprop "attachNodes"
+00384: 136  swap
+00385: 136  notearg
+00386: 136  this
+00387: 136  getprop "ccbNode"
+00392: 136  dup
+00393: 136  callprop "getChildByTag"
+00398: 136  swap
+00399: 136  notearg
+00400: 136  int8 11
+00402: 136  notearg
+00403: 136  call 1
+00406: 136  notearg
+00407: 136  this
+00408: 136  getprop "_generalView"
+00413: 136  notearg
+00414: 136  call 2
+00417: 136  pop
+00418: 145  this
+00419: 145  getprop "ccbNode"
+00424: 145  dup
+00425: 145  callprop "getChildByTag"
+00430: 145  swap
+00431: 145  notearg
+00432: 145  int8 2
+00434: 145  notearg
+00435: 145  call 1
+00438: 145  dup
+00439: 145  callprop "setString"
+00444: 145  swap
+00445: 145  notearg
+00446: 145  getarg 0
+00449: 145  getprop "user_vip_level"
+00454: 145  string ""
+00459: 145  add
+00460: 145  notearg
+00461: 145  call 1
+00464: 145  pop
+00465: 146  this
+00466: 146  getprop "ccbNode"
+00471: 146  dup
+00472: 146  callprop "getChildByTag"
+00477: 146  swap
+00478: 146  notearg
+00479: 146  int8 3
+00481: 146  notearg
+00482: 146  call 1
+00485: 146  dup
+00486: 146  callprop "setString"
+00491: 146  swap
+00492: 146  notearg
+00493: 146  getarg 0
+00496: 146  getprop "user_level"
+00501: 146  string ""
+00506: 146  add
+00507: 146  notearg
+00508: 146  call 1
+00511: 146  pop
+00512: 147  this
+00513: 147  getprop "ccbNode"
+00518: 147  dup
+00519: 147  callprop "getChildByTag"
+00524: 147  swap
+00525: 147  notearg
+00526: 147  int8 8
+00528: 147  notearg
+00529: 147  call 1
+00532: 147  dup
+00533: 147  callprop "setString"
+00538: 147  swap
+00539: 147  notearg
+00540: 147  string "X"
+00545: 147  getarg 0
+00548: 147  getprop "liked_num"
+00553: 147  add
+00554: 147  notearg
+00555: 147  call 1
+00558: 147  pop
+00559: 149  this
+00560: 149  getprop "m_cellType"
+00565: 149  tableswitch defaultOffset 886 low 0 high 4
+	0: 33
+	1: 170
+	2: 379
+	3: 516
+	4: 749
+00598: 152  this
+00599: 152  getprop "m_cellIntro"
+00604: 152  dup
+00605: 152  callprop "setVisible"
+00610: 152  swap
+00611: 152  notearg
+00612: 152  false
+00613: 152  notearg
+00614: 152  call 1
+00617: 152  pop
+00618: 153  this
+00619: 153  getprop "ccbNode"
+00624: 153  dup
+00625: 153  callprop "getChildByTag"
+00630: 153  swap
+00631: 153  notearg
+00632: 153  int8 24
+00634: 153  notearg
+00635: 153  call 1
+00638: 153  dup
+00639: 153  callprop "setString"
+00644: 153  swap
+00645: 153  notearg
+00646: 153  name "xs"
+00651: 153  getprop "Tools"
+00656: 153  getprop "String"
+00661: 153  dup
+00662: 153  callprop "createString"
+00667: 153  swap
+00668: 153  notearg
+00669: 153  string "rank_txt_zhanli"
+00674: 153  notearg
+00675: 153  call 1
+00678: 153  notearg
+00679: 153  call 1
+00682: 153  pop
+00683: 154  this
+00684: 154  getprop "ccbNode"
+00689: 154  dup
+00690: 154  callprop "getChildByTag"
+00695: 154  swap
+00696: 154  notearg
+00697: 154  int8 6
+00699: 154  notearg
+00700: 154  call 1
+00703: 154  dup
+00704: 154  callprop "setString"
+00709: 154  swap
+00710: 154  notearg
+00711: 154  string ""
+00716: 154  getarg 0
+00719: 154  getprop "record_data"
+00724: 154  add
+00725: 154  notearg
+00726: 154  call 1
+00729: 154  pop
+00730: 155  goto 1451 (+721)
+00735: 157  name "xs"
+00740: 157  getprop "Models"
+00745: 157  getprop "General"
+00750: 157  dup
+00751: 157  callprop "createWithBase"
+00756: 157  swap
+00757: 157  notearg
+00758: 157  getarg 0
+00761: 157  getprop "general_id"
+00766: 157  notearg
+00767: 157  call 1
+00770: 157  setlocal 0
+00773: 157  pop
+00774: 158  this
+00775: 158  getprop "m_cellIntro"
+00780: 158  dup
+00781: 158  callprop "setVisible"
+00786: 158  swap
+00787: 158  notearg
+00788: 158  true
+00789: 158  notearg
+00790: 158  call 1
+00793: 158  pop
+00794: 159  this
+00795: 159  getprop "m_cellIntro"
+00800: 159  dup
+00801: 159  callprop "setString"
+00806: 159  swap
+00807: 159  notearg
+00808: 159  getlocal 0
+00811: 159  dup
+00812: 159  callprop "getNameString"
+00817: 159  swap
+00818: 159  notearg
+00819: 159  call 0
+00822: 159  notearg
+00823: 159  call 1
+00826: 159  pop
+00827: 160  this
+00828: 160  getprop "ccbNode"
+00833: 160  dup
+00834: 160  callprop "getChildByTag"
+00839: 160  swap
+00840: 160  notearg
+00841: 160  int8 24
+00843: 160  notearg
+00844: 160  call 1
+00847: 160  dup
+00848: 160  callprop "setString"
+00853: 160  swap
+00854: 160  notearg
+00855: 160  name "xs"
+00860: 160  getprop "Tools"
+00865: 160  getprop "String"
+00870: 160  dup
+00871: 160  callprop "createString"
+00876: 160  swap
+00877: 160  notearg
+00878: 160  string "rank_txt_zhanli"
+00883: 160  notearg
+00884: 160  call 1
+00887: 160  notearg
+00888: 160  call 1
+00891: 160  pop
+00892: 161  this
+00893: 161  getprop "ccbNode"
+00898: 161  dup
+00899: 161  callprop "getChildByTag"
+00904: 161  swap
+00905: 161  notearg
+00906: 161  int8 6
+00908: 161  notearg
+00909: 161  call 1
+00912: 161  dup
+00913: 161  callprop "setString"
+00918: 161  swap
+00919: 161  notearg
+00920: 161  string ""
+00925: 161  getarg 0
+00928: 161  getprop "record_data"
+00933: 161  add
+00934: 161  notearg
+00935: 161  call 1
+00938: 161  pop
+00939: 162  goto 1451 (+512)
+00944: 164  this
+00945: 164  getprop "m_cellIntro"
+00950: 164  dup
+00951: 164  callprop "setVisible"
+00956: 164  swap
+00957: 164  notearg
+00958: 164  false
+00959: 164  notearg
+00960: 164  call 1
+00963: 164  pop
+00964: 165  this
+00965: 165  getprop "ccbNode"
+00970: 165  dup
+00971: 165  callprop "getChildByTag"
+00976: 165  swap
+00977: 165  notearg
+00978: 165  int8 24
+00980: 165  notearg
+00981: 165  call 1
+00984: 165  dup
+00985: 165  callprop "setString"
+00990: 165  swap
+00991: 165  notearg
+00992: 165  name "xs"
+00997: 165  getprop "Tools"
+01002: 165  getprop "String"
+01007: 165  dup
+01008: 165  callprop "createString"
+01013: 165  swap
+01014: 165  notearg
+01015: 165  string "rank_txt_dengji"
+01020: 165  notearg
+01021: 165  call 1
+01024: 165  notearg
+01025: 165  call 1
+01028: 165  pop
+01029: 166  this
+01030: 166  getprop "ccbNode"
+01035: 166  dup
+01036: 166  callprop "getChildByTag"
+01041: 166  swap
+01042: 166  notearg
+01043: 166  int8 6
+01045: 166  notearg
+01046: 166  call 1
+01049: 166  dup
+01050: 166  callprop "setString"
+01055: 166  swap
+01056: 166  notearg
+01057: 166  string ""
+01062: 166  getarg 0
+01065: 166  getprop "record_data"
+01070: 166  add
+01071: 166  notearg
+01072: 166  call 1
+01075: 166  pop
+01076: 167  goto 1451 (+375)
+01081: 169  this
+01082: 169  getprop "m_cellIntro"
+01087: 169  dup
+01088: 169  callprop "setVisible"
+01093: 169  swap
+01094: 169  notearg
+01095: 169  false
+01096: 169  notearg
+01097: 169  call 1
+01100: 169  pop
+01101: 170  this
+01102: 170  getprop "ccbNode"
+01107: 170  dup
+01108: 170  callprop "getChildByTag"
+01113: 170  swap
+01114: 170  notearg
+01115: 170  int8 24
+01117: 170  notearg
+01118: 170  call 1
+01121: 170  dup
+01122: 170  callprop "setString"
+01127: 170  swap
+01128: 170  notearg
+01129: 170  name "xs"
+01134: 170  getprop "Tools"
+01139: 170  getprop "String"
+01144: 170  dup
+01145: 170  callprop "createString"
+01150: 170  swap
+01151: 170  notearg
+01152: 170  string "rank_txt_guanka"
+01157: 170  notearg
+01158: 170  call 1
+01161: 170  notearg
+01162: 170  call 1
+01165: 170  pop
+01166: 171  getarg 0
+01169: 171  getprop "record_data"
+01174: 171  int8 100
+01176: 171  mod
+01177: 171  setlocal 1
+01180: 171  pop
+01181: 172  getarg 0
+01184: 172  getprop "record_data"
+01189: 172  getlocal 1
+01192: 172  sub
+01193: 172  int8 100
+01195: 172  div
+01196: 172  int8 100
+01198: 172  mod
+01199: 172  setlocal 2
+01202: 172  pop
+01203: 173  this
+01204: 173  getprop "ccbNode"
+01209: 173  dup
+01210: 173  callprop "getChildByTag"
+01215: 173  swap
+01216: 173  notearg
+01217: 173  int8 6
+01219: 173  notearg
+01220: 173  call 1
+01223: 173  dup
+01224: 173  callprop "setString"
+01229: 173  swap
+01230: 173  notearg
+01231: 173  getlocal 2
+01234: 173  name "xs"
+01239: 173  getprop "Tools"
+01244: 173  getprop "String"
+01249: 173  dup
+01250: 173  callprop "createString"
+01255: 173  swap
+01256: 173  notearg
+01257: 173  string "rank_txt_zhang"
+01262: 173  notearg
+01263: 173  call 1
+01266: 173  add
+01267: 173  getlocal 1
+01270: 173  add
+01271: 173  name "xs"
+01276: 173  getprop "Tools"
+01281: 173  getprop "String"
+01286: 173  dup
+01287: 173  callprop "createString"
+01292: 173  swap
+01293: 173  notearg
+01294: 173  string "rank_txt_guan"
+01299: 173  notearg
+01300: 173  call 1
+01303: 173  add
+01304: 173  notearg
+01305: 173  call 1
+01308: 173  pop
+01309: 174  goto 1451 (+142)
+01314: 176  this
+01315: 176  getprop "m_cellIntro"
+01320: 176  dup
+01321: 176  callprop "setVisible"
+01326: 176  swap
+01327: 176  notearg
+01328: 176  false
+01329: 176  notearg
+01330: 176  call 1
+01333: 176  pop
+01334: 177  this
+01335: 177  getprop "ccbNode"
+01340: 177  dup
+01341: 177  callprop "getChildByTag"
+01346: 177  swap
+01347: 177  notearg
+01348: 177  int8 24
+01350: 177  notearg
+01351: 177  call 1
+01354: 177  dup
+01355: 177  callprop "setString"
+01360: 177  swap
+01361: 177  notearg
+01362: 177  name "xs"
+01367: 177  getprop "Tools"
+01372: 177  getprop "String"
+01377: 177  dup
+01378: 177  callprop "createString"
+01383: 177  swap
+01384: 177  notearg
+01385: 177  string "rank_txt_tongyu"
+01390: 177  notearg
+01391: 177  call 1
+01394: 177  notearg
+01395: 177  call 1
+01398: 177  pop
+01399: 178  this
+01400: 178  getprop "ccbNode"
+01405: 178  dup
+01406: 178  callprop "getChildByTag"
+01411: 178  swap
+01412: 178  notearg
+01413: 178  int8 6
+01415: 178  notearg
+01416: 178  call 1
+01419: 178  dup
+01420: 178  callprop "setString"
+01425: 178  swap
+01426: 178  notearg
+01427: 178  string ""
+01432: 178  getarg 0
+01435: 178  getprop "record_data"
+01440: 178  add
+01441: 178  notearg
+01442: 178  call 1
+01445: 178  pop
+01446: 179  goto 1451 (+5)
+01451: 183  this
+01452: 183  getprop "centerPos"
+01457: 183  setlocal 3
+01460: 183  pop
+01461: 184  this
+01462: 184  getprop "m_btn"
+01467: 184  dup
+01468: 184  callprop "setOnClickCallBack"
+01473: 184  swap
+01474: 184  notearg
+01475: 184  lambda (function () {
+    [sourceless code]
+})
+01480: 184  dup
+01481: 184  callprop "bind"
+01486: 184  swap
+01487: 184  notearg
+01488: 190  this
+01489: 190  notearg
+01490: 190  call 1
+01493: 190  notearg
+01494: 190  call 1
+01497: 190  pop
+01498: 191  this
+01499: 191  getprop "m_btn"
+01504: 191  dup
+01505: 191  callprop "setString"
+01510: 191  swap
+01511: 191  notearg
+01512: 191  string "\u8D5E"
+01517: 191  notearg
+01518: 191  call 1
+01521: 191  pop
+01522: 192  this
+01523: 192  getprop "m_btn"
+01528: 192  dup
+01529: 192  callprop "setPosition"
+01534: 192  swap
+01535: 192  notearg
+01536: 192  name "cc"
+01541: 192  dup
+01542: 192  callprop "p"
+01547: 192  swap
+01548: 192  notearg
+01549: 192  getlocal 3
+01552: 192  getprop "x"
+01557: 192  int8 50
+01559: 192  add
+01560: 192  notearg
+01561: 192  getlocal 3
+01564: 192  getprop "y"
+01569: 192  notearg
+01570: 192  call 2
+01573: 192  notearg
+01574: 192  call 1
+01577: 192  pop
+01578: 194  this
+01579: 194  getprop "lineUpBtn"
+01584: 194  null
+01585: 194  eq
+01586: 194  ifeq 1861 (+275)
+01591: 196  this
+01592: 196  name "xs"
+01597: 196  getprop "Views"
+01602: 196  getprop "Btn"
+01607: 196  dup
+01608: 196  callprop "create"
+01613: 196  swap
+01614: 196  notearg
+01615: 196  string "Btn_Zan"
+01620: 196  notearg
+01621: 196  call 1
+01624: 196  setprop "lineUpBtn"
+01629: 196  pop
+01630: 197  this
+01631: 197  getprop "lineUpBtn"
+01636: 197  dup
+01637: 197  callprop "setAnchorPoint"
+01642: 197  swap
+01643: 197  notearg
+01644: 197  name "cc"
+01649: 197  dup
+01650: 197  callprop "p"
+01655: 197  swap
+01656: 197  notearg
+01657: 197  double 0.5
+01662: 197  notearg
+01663: 197  double 0.5
+01668: 197  notearg
+01669: 197  call 2
+01672: 197  notearg
+01673: 197  call 1
+01676: 197  pop
+01677: 198  this
+01678: 198  getprop "lineUpBtn"
+01683: 198  dup
+01684: 198  callprop "setZOrder"
+01689: 198  swap
+01690: 198  notearg
+01691: 198  this
+01692: 198  getprop "m_btn"
+01697: 198  dup
+01698: 198  callprop "getZOrder"
+01703: 198  swap
+01704: 198  notearg
+01705: 198  call 0
+01708: 198  notearg
+01709: 198  call 1
+01712: 198  pop
+01713: 199  this
+01714: 199  getprop "m_baseTouchPriority"
+01719: 199  ifeq 1760 (+41)
+01724: 200  this
+01725: 200  getprop "lineUpBtn"
+01730: 200  dup
+01731: 200  callprop "setTouchPriority"
+01736: 200  swap
+01737: 200  notearg
+01738: 200  this
+01739: 200  getprop "m_btn"
+01744: 200  dup
+01745: 200  callprop "getTouchPriority"
+01750: 200  swap
+01751: 200  notearg
+01752: 200  call 0
+01755: 200  notearg
+01756: 200  call 1
+01759: 200  pop
+01760: 202  name "xs"
+01765: 202  getprop "Utils"
+01770: 202  getprop "Node"
+01775: 202  dup
+01776: 202  callprop "attachNodes"
+01781: 202  swap
+01782: 202  notearg
+01783: 202  this
+01784: 202  notearg
+01785: 202  this
+01786: 202  getprop "lineUpBtn"
+01791: 202  notearg
+01792: 202  newinit 1
+01797: 203  string "c"
+01802: 203  initprop "desc"
+01807: 204  name "cc"
+01812: 204  dup
+01813: 204  callprop "p"
+01818: 204  swap
+01819: 204  notearg
+01820: 204  getlocal 3
+01823: 204  getprop "x"
+01828: 204  int8 50
+01830: 204  sub
+01831: 204  notearg
+01832: 204  getlocal 3
+01835: 204  getprop "y"
+01840: 204  notearg
+01841: 204  call 2
+01844: 204  initprop "offset"
+01849: 205  false
+01850: 205  initprop "sc"
+01855: 205  endinit
+01856: 205  notearg
+01857: 205  call 3
+01860: 205  pop
+01861: 209  this
+01862: 209  getprop "lineUpBtn"
+01867: 209  dup
+01868: 209  callprop "setOnClickCallBack"
+01873: 209  swap
+01874: 209  notearg
+01875: 209  lambda (function () {
+    [sourceless code]
+})
+01880: 209  dup
+01881: 209  callprop "bind"
+01886: 209  swap
+01887: 209  notearg
+01888: 213  this
+01889: 213  notearg
+01890: 213  call 1
+01893: 213  notearg
+01894: 213  call 1
+01897: 213  pop
+01898: 216  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:102 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] params
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:184 ---
+loc   line  op
+----- ----  --
+main:
+00000: 185  newinit 1
+00005: 185  endinit
+00006: 185  setlocal 0
+00009: 185  pop
+00010: 186  getlocal 0
+00013: 186  this
+00014: 186  getprop "m_index"
+00019: 186  setprop "rank"
+00024: 186  pop
+00025: 187  getlocal 0
+00028: 187  this
+00029: 187  getprop "m_model"
+00034: 187  getprop "user_id"
+00039: 187  setprop "like_user_id"
+00044: 187  pop
+00045: 188  getlocal 0
+00048: 188  this
+00049: 188  getprop "m_cellType"
+00054: 188  setprop "type"
+00059: 188  pop
+00060: 189  name "xs"
+00065: 189  getprop "Tools"
+00070: 189  getprop "Net"
+00075: 189  dup
+00076: 189  callprop "requestLikeRank"
+00081: 189  swap
+00082: 189  notearg
+00083: 189  getlocal 0
+00086: 189  notearg
+00087: 189  this
+00088: 189  getprop "onResponse"
+00093: 189  notearg
+00094: 189  this
+00095: 189  notearg
+00096: 189  call 3
+00099: 189  pop
+00100: 189  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:184 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:209 ---
+loc   line  op
+----- ----  --
+main:
+00000: 210  name "xs"
+00005: 210  getprop "Tools"
+00010: 210  getprop "Net"
+00015: 210  dup
+00016: 210  callprop "getInstance"
+00021: 210  swap
+00022: 210  notearg
+00023: 210  call 0
+00026: 210  dup
+00027: 210  callprop "displayOtherTeamInfo"
+00032: 210  swap
+00033: 210  notearg
+00034: 210  newinit 1
+00039: 211  this
+00040: 211  getprop "m_model"
+00045: 211  getprop "user_id"
+00050: 211  initprop "other_user_id"
+00055: 211  endinit
+00056: 211  notearg
+00057: 211  call 1
+00060: 211  pop
+00061: 212  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:209 ---
+;; function object[5] onResponse
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] json
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:218 ---
+loc   line  op
+----- ----  --
+main:
+00000: 219  getarg 0
+00003: 219  ifeq 176 (+173)
+00008: 221  this
+00009: 221  getprop "m_model"
+00014: 221  this
+00015: 221  getprop "m_model"
+00020: 221  getprop "liked_num"
+00025: 221  one
+00026: 221  add
+00027: 221  setprop "liked_num"
+00032: 221  pop
+00033: 222  this
+00034: 222  dup
+00035: 222  callprop "updateCell"
+00040: 222  swap
+00041: 222  notearg
+00042: 222  this
+00043: 222  getprop "m_model"
+00048: 222  notearg
+00049: 222  this
+00050: 222  getprop "m_index"
+00055: 222  notearg
+00056: 222  call 2
+00059: 222  pop
+00060: 223  name "xs"
+00065: 223  getprop "Utils"
+00070: 223  getprop "Notify"
+00075: 223  dup
+00076: 223  callprop "postNotification"
+00081: 223  swap
+00082: 223  notearg
+00083: 223  name "xs"
+00088: 223  getprop "Constant_Notify_Rank_lick_cnt_down"
+00093: 223  notearg
+00094: 223  call 1
+00097: 223  pop
+00098: 225  name "xs"
+00103: 225  getprop "Views"
+00108: 225  getprop "Mgr"
+00113: 225  dup
+00114: 225  callprop "showToast"
+00119: 225  swap
+00120: 225  notearg
+00121: 225  name "xs"
+00126: 225  getprop "Tools"
+00131: 225  getprop "String"
+00136: 225  dup
+00137: 225  callprop "createStringWithArgsArray"
+00142: 225  swap
+00143: 225  notearg
+00144: 225  string "rank_like_callback_tosat"
+00149: 225  notearg
+00150: 225  newarray 1
+00154: 225  getarg 0
+00157: 225  getprop "gold_num"
+00162: 225  initelem_array 0
+00166: 225  endinit
+00167: 225  notearg
+00168: 225  call 2
+00171: 225  notearg
+00172: 225  call 1
+00175: 225  pop
+00176: 227  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:218 ---
+;; function object[6] setBaseTouchPriority
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:229 ---
+loc   line  op
+----- ----  --
+main:
+00000: 230  this
+00001: 230  getarg 0
+00004: 230  setprop "m_baseTouchPriority"
+00009: 230  pop
+00010: 231  this
+00011: 231  getprop "m_btn"
+00016: 231  ifeq 48 (+32)
+00021: 233  this
+00022: 233  getprop "m_btn"
+00027: 233  dup
+00028: 233  callprop "setTouchPriority"
+00033: 233  swap
+00034: 233  notearg
+00035: 233  this
+00036: 233  getprop "m_baseTouchPriority"
+00041: 233  one
+00042: 233  sub
+00043: 233  notearg
+00044: 233  call 1
+00047: 233  pop
+00048: 234  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:229 ---
+;; function object[7] setRankTitle
+;; function metadata object[7] nargs=2 bindings=4
+;; arg[0] rank
+;; arg[1] tag
+;; local[0] ranking
+;; local[1] labelPos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:236 ---
+loc   line  op
+----- ----  --
+main:
+00000: 237  name "xs"
+00005: 237  getprop "Utils"
+00010: 237  dup
+00011: 237  callprop "parseIntSafe"
+00016: 237  swap
+00017: 237  notearg
+00018: 237  getarg 0
+00021: 237  notearg
+00022: 237  call 1
+00025: 237  setlocal 0
+00028: 237  pop
+00029: 238  this
+00030: 238  this
+00031: 238  getprop "ccbNode"
+00036: 238  dup
+00037: 238  callprop "getChildByTag"
+00042: 238  swap
+00043: 238  notearg
+00044: 238  getarg 1
+00047: 238  notearg
+00048: 238  call 1
+00051: 238  setprop "m_ranking"
+00056: 238  pop
+00057: 239  getlocal 0
+00060: 239  int8 3
+00062: 239  le
+00063: 239  ifeq 441 (+378)
+00068: 240  this
+00069: 240  getprop "m_ranking"
+00074: 240  dup
+00075: 240  callprop "setVisible"
+00080: 240  swap
+00081: 240  notearg
+00082: 240  false
+00083: 240  notearg
+00084: 240  call 1
+00087: 240  pop
+00088: 241  this
+00089: 241  getprop "m_ranking"
+00094: 241  dup
+00095: 241  callprop "getPosition"
+00100: 241  swap
+00101: 241  notearg
+00102: 241  call 0
+00105: 241  setlocal 1
+00108: 241  pop
+00109: 242  this
+00110: 242  getprop "m_rankingSprite"
+00115: 242  ifeq 154 (+39)
+00120: 243  name "xs"
+00125: 243  getprop "Utils"
+00130: 243  getprop "Node"
+00135: 243  dup
+00136: 243  callprop "safeRemoveChild"
+00141: 243  swap
+00142: 243  notearg
+00143: 243  this
+00144: 243  getprop "m_rankingSprite"
+00149: 243  notearg
+00150: 243  call 1
+00153: 243  pop
+00154: 245  getlocal 0
+00157: 245  tableswitch defaultOffset 175 low 1 high 3
+	1: 25
+	2: 75
+	3: 125
+00182: 247  this
+00183: 247  name "xs"
+00188: 247  getprop "Factorys"
+00193: 247  getprop "Sprite"
+00198: 247  dup
+00199: 247  callprop "create"
+00204: 247  swap
+00205: 247  notearg
+00206: 247  string "Cmn01_Ladder_First"
+00211: 247  notearg
+00212: 247  string "Cmn01"
+00217: 247  notearg
+00218: 247  call 2
+00221: 247  setprop "m_rankingSprite"
+00226: 247  pop
+00227: 248  goto 366 (+139)
+00232: 250  this
+00233: 250  name "xs"
+00238: 250  getprop "Factorys"
+00243: 250  getprop "Sprite"
+00248: 250  dup
+00249: 250  callprop "create"
+00254: 250  swap
+00255: 250  notearg
+00256: 250  string "Cmn01_Ladder_Second"
+00261: 250  notearg
+00262: 250  string "Cmn01"
+00267: 250  notearg
+00268: 250  call 2
+00271: 250  setprop "m_rankingSprite"
+00276: 250  pop
+00277: 251  goto 366 (+89)
+00282: 253  this
+00283: 253  name "xs"
+00288: 253  getprop "Factorys"
+00293: 253  getprop "Sprite"
+00298: 253  dup
+00299: 253  callprop "create"
+00304: 253  swap
+00305: 253  notearg
+00306: 253  string "Cmn01_Ladder_Third"
+00311: 253  notearg
+00312: 253  string "Cmn01"
+00317: 253  notearg
+00318: 253  call 2
+00321: 253  setprop "m_rankingSprite"
+00326: 253  pop
+00327: 254  goto 366 (+39)
+00332: 256  name "xs"
+00337: 256  dup
+00338: 256  callprop "assert"
+00343: 256  swap
+00344: 256  notearg
+00345: 256  false
+00346: 256  notearg
+00347: 256  string "ranking is error!"
+00352: 256  notearg
+00353: 256  getlocal 0
+00356: 256  notearg
+00357: 256  call 3
+00360: 256  pop
+00361: 257  goto 366 (+5)
+00366: 259  this
+00367: 259  getprop "m_rankingSprite"
+00372: 259  dup
+00373: 259  callprop "setPosition"
+00378: 259  swap
+00379: 259  notearg
+00380: 259  getlocal 1
+00383: 259  notearg
+00384: 259  call 1
+00387: 259  pop
+00388: 260  this
+00389: 260  getprop "m_rankingSprite"
+00394: 260  dup
+00395: 260  callprop "setVisible"
+00400: 260  swap
+00401: 260  notearg
+00402: 260  true
+00403: 260  notearg
+00404: 260  call 1
+00407: 260  pop
+00408: 261  this
+00409: 261  getprop "ccbNode"
+00414: 261  dup
+00415: 261  callprop "addChild"
+00420: 261  swap
+00421: 261  notearg
+00422: 261  this
+00423: 261  getprop "m_rankingSprite"
+00428: 261  notearg
+00429: 261  int8 5
+00431: 261  notearg
+00432: 261  call 2
+00435: 261  pop
+00436: 261  goto 520 (+84)
+00441: 263  this
+00442: 263  getprop "m_ranking"
+00447: 263  dup
+00448: 263  callprop "setVisible"
+00453: 263  swap
+00454: 263  notearg
+00455: 263  true
+00456: 263  notearg
+00457: 263  call 1
+00460: 263  pop
+00461: 264  this
+00462: 264  getprop "m_rankingSprite"
+00467: 264  ifeq 492 (+25)
+00472: 265  this
+00473: 265  getprop "m_rankingSprite"
+00478: 265  dup
+00479: 265  callprop "setVisible"
+00484: 265  swap
+00485: 265  notearg
+00486: 265  false
+00487: 265  notearg
+00488: 265  call 1
+00491: 265  pop
+00492: 267  this
+00493: 267  getprop "m_ranking"
+00498: 267  dup
+00499: 267  callprop "setString"
+00504: 267  swap
+00505: 267  notearg
+00506: 267  getarg 0
+00509: 267  string ""
+00514: 267  add
+00515: 267  notearg
+00516: 267  call 1
+00519: 267  pop
+00520: 268  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:236 ---
+;; function object[8] create
+;; function metadata object[8] nargs=3 bindings=4
+;; arg[0] type
+;; arg[1] model
+;; arg[2] index
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:289 ---
+loc   line  op
+----- ----  --
+main:
+00000: 290  name "xs"
+00005: 290  getprop "Views"
+00010: 290  getprop "RankTableViewCell"
+00015: 290  undefined
+00016: 290  notearg
+00017: 290  new 0
+00020: 290  setlocal 0
+00023: 290  pop
+00024: 291  getlocal 0
+00027: 291  and 59 (+32)
+00032: 291  pop
+00033: 291  getlocal 0
+00036: 291  dup
+00037: 291  callprop "init"
+00042: 291  swap
+00043: 291  notearg
+00044: 291  getarg 0
+00047: 291  notearg
+00048: 291  getarg 1
+00051: 291  notearg
+00052: 291  getarg 2
+00055: 291  notearg
+00056: 291  call 3
+00059: 291  ifeq 68 (+9)
+00064: 292  getlocal 0
+00067: 292  return
+00068: 295  name "xs"
+00073: 295  dup
+00074: 295  callprop "assert"
+00079: 295  swap
+00080: 295  notearg
+00081: 295  false
+00082: 295  notearg
+00083: 295  string "xs.Views.RankTableViewCell.create fail!"
+00088: 295  notearg
+00089: 295  getlocal 0
+00092: 295  notearg
+00093: 295  call 3
+00096: 295  pop
+00097: 296  null
+00098: 296  return
+00099: 296  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/RankTableViewCell.js:289 ---

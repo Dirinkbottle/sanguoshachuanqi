@@ -1,0 +1,654 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Cocos2d-x/CCNotificationCenter.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=40 object[0]
+;; FUNCTION-MAP kind=lambda offset=50 object[1]
+;; FUNCTION-MAP kind=lambda offset=60 object[2]
+;; FUNCTION-MAP kind=lambda offset=70 object[3]
+;; FUNCTION-MAP kind=lambda offset=80 object[4]
+;; FUNCTION-MAP kind=lambda offset=90 object[5]
+;; FUNCTION-MAP kind=lambda offset=127 object[6]
+;; FUNCTION-MAP kind=lambda offset=166 object[7]
+;; FUNCTION-MAP kind=lambda offset=176 object[8]
+;; FUNCTION-MAP kind=lambda offset=210 object[9]
+;; FUNCTION-MAP kind=lambda offset=220 object[10]
+;; FUNCTION-MAP kind=lambda offset=230 object[11]
+;; FUNCTION-MAP kind=lambda offset=240 object[12]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  name "cc"
+00005:  31  null
+00006:  31  setprop "s_sharedNotificationCenter"
+00011:  31  popv
+00012:  33  name "cc"
+00017:  33  name "cc"
+00022:  33  getprop "Class"
+00027:  33  dup
+00028:  33  callprop "extend"
+00033:  33  swap
+00034:  33  notearg
+00035:  33  newinit 1
+00040:  34  lambda (function () {
+    [sourceless code]
+})
+00045:  34  initprop "ctor"
+00050:  44  lambda (function () {
+    [sourceless code]
+})
+00055:  44  initprop "addObserver"
+00060:  60  lambda (function () {
+    [sourceless code]
+})
+00065:  60  initprop "removeObserver"
+00070:  77  lambda (function () {
+    [sourceless code]
+})
+00075:  77  initprop "removeAllObservers"
+00080:  92  lambda (function () {
+    [sourceless code]
+})
+00085:  92  initprop "postNotification"
+00090: 112  lambda (function () {
+    [sourceless code]
+})
+00095: 112  initprop "_observerExisted"
+00100: 122  null
+00101: 122  initprop "_observers"
+00106: 122  endinit
+00107: 122  notearg
+00108: 122  call 1
+00111: 122  setprop "NotificationCenter"
+00116: 122  popv
+00117: 128  name "cc"
+00122: 128  getprop "NotificationCenter"
+00127: 128  lambda (function () {
+    [sourceless code]
+})
+00132: 128  setprop "getInstance"
+00137: 128  popv
+00138: 135  name "cc"
+00143: 135  name "cc"
+00148: 135  getprop "Class"
+00153: 135  dup
+00154: 135  callprop "extend"
+00159: 135  swap
+00160: 135  notearg
+00161: 135  newinit 1
+00166: 142  lambda (function () {
+    [sourceless code]
+})
+00171: 142  initprop "ctor"
+00176: 152  lambda (function () {
+    [sourceless code]
+})
+00181: 152  initprop "performSelector"
+00186: 162  null
+00187: 162  initprop "_target"
+00192: 163  null
+00193: 163  initprop "_selector"
+00198: 164  null
+00199: 164  initprop "_name"
+00204: 165  null
+00205: 165  initprop "_object"
+00210: 170  lambda (function () {
+    [sourceless code]
+})
+00215: 170  initprop "getTarget"
+00220: 177  lambda (function () {
+    [sourceless code]
+})
+00225: 177  initprop "getSelector"
+00230: 184  lambda (function () {
+    [sourceless code]
+})
+00235: 184  initprop "getName"
+00240: 191  lambda (function () {
+    [sourceless code]
+})
+00245: 191  initprop "getObject"
+00250: 191  endinit
+00251: 191  notearg
+00252: 191  call 1
+00255: 191  setprop "NotificationObserver"
+00260: 191  popv
+00261: 194  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  this
+00001:  35  newarray 0
+00005:  35  endinit
+00006:  35  setprop "_observers"
+00011:  35  pop
+00012:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:34 ---
+;; function object[1] addObserver
+;; function metadata object[1] nargs=4 bindings=5
+;; arg[0] target
+;; arg[1] selector
+;; arg[2] name
+;; arg[3] obj
+;; local[0] observer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  this
+00001:  45  dup
+00002:  45  callprop "_observerExisted"
+00007:  45  swap
+00008:  45  notearg
+00009:  45  getarg 0
+00012:  45  notearg
+00013:  45  getarg 2
+00016:  45  notearg
+00017:  45  call 2
+00020:  45  ifeq 27 (+7)
+00025:  46  undefined
+00026:  46  return
+00027:  48  name "cc"
+00032:  48  getprop "NotificationObserver"
+00037:  48  undefined
+00038:  48  notearg
+00039:  48  getarg 0
+00042:  48  notearg
+00043:  48  getarg 1
+00046:  48  notearg
+00047:  48  getarg 2
+00050:  48  notearg
+00051:  48  getarg 3
+00054:  48  notearg
+00055:  48  new 4
+00058:  48  setlocal 0
+00061:  48  pop
+00062:  49  getlocal 0
+00065:  49  not
+00066:  49  ifeq 73 (+7)
+00071:  50  undefined
+00072:  50  return
+00073:  52  this
+00074:  52  getprop "_observers"
+00079:  52  dup
+00080:  52  callprop "push"
+00085:  52  swap
+00086:  52  notearg
+00087:  52  getlocal 0
+00090:  52  notearg
+00091:  52  call 1
+00094:  52  pop
+00095:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:44 ---
+;; function object[2] removeObserver
+;; function metadata object[2] nargs=2 bindings=4
+;; arg[0] target
+;; arg[1] name
+;; local[0] i
+;; local[1] observer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  61  zero
+00001:  61  setlocal 0
+00004:  61  pop
+00005:  61  goto 127 (+122)
+00010:  62  loophead
+00011:  62  this
+00012:  62  getprop "_observers"
+00017:  62  getlocal 0
+00020:  62  getelem
+00021:  62  setlocal 1
+00024:  62  pop
+00025:  63  getlocal 1
+00028:  63  not
+00029:  63  ifeq 39 (+10)
+00034:  64  goto 112 (+78)
+00039:  65  getlocal 1
+00042:  65  dup
+00043:  65  callprop "getName"
+00048:  65  swap
+00049:  65  notearg
+00050:  65  call 0
+00053:  65  getarg 1
+00056:  65  eq
+00057:  65  and 81 (+24)
+00062:  65  pop
+00063:  65  getlocal 1
+00066:  65  dup
+00067:  65  callprop "getTarget"
+00072:  65  swap
+00073:  65  notearg
+00074:  65  call 0
+00077:  65  getarg 0
+00080:  65  eq
+00081:  65  ifeq 112 (+31)
+00086:  66  this
+00087:  66  getprop "_observers"
+00092:  66  dup
+00093:  66  callprop "splice"
+00098:  66  swap
+00099:  66  notearg
+00100:  66  getlocal 0
+00103:  66  notearg
+00104:  66  one
+00105:  66  notearg
+00106:  66  call 2
+00109:  66  pop
+00110:  67  undefined
+00111:  67  return
+00112:  61  localinc 11
+00115:  61  getlocal 0
+00118:  61  pos
+00119:  61  dup
+00120:  61  one
+00121:  61  add
+00122:  61  setlocal 0
+00125:  61  pop
+00126:  61  pop
+00127:  61  loopentry
+00128:  61  getlocal 0
+00131:  61  this
+00132:  61  getprop "_observers"
+00137:  61  length "length"
+00142:  61  lt
+00143:  61  ifne 10 (-133)
+00148:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:60 ---
+;; function object[3] removeAllObservers
+;; function metadata object[3] nargs=1 bindings=4
+;; arg[0] target
+;; local[0] removes
+;; local[1] i
+;; local[2] selObserver
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:77 ---
+loc   line  op
+----- ----  --
+main:
+00000:  78  newarray 0
+00004:  78  endinit
+00005:  78  setlocal 0
+00008:  78  pop
+00009:  79  zero
+00010:  79  setlocal 1
+00013:  79  pop
+00014:  79  goto 91 (+77)
+00019:  80  loophead
+00020:  80  this
+00021:  80  getprop "_observers"
+00026:  80  getlocal 1
+00029:  80  getelem
+00030:  80  setlocal 2
+00033:  80  pop
+00034:  81  getlocal 2
+00037:  81  dup
+00038:  81  callprop "getTarget"
+00043:  81  swap
+00044:  81  notearg
+00045:  81  call 0
+00048:  81  getarg 0
+00051:  81  eq
+00052:  81  ifeq 76 (+24)
+00057:  82  getlocal 0
+00060:  82  dup
+00061:  82  callprop "push"
+00066:  82  swap
+00067:  82  notearg
+00068:  82  getlocal 2
+00071:  82  notearg
+00072:  82  call 1
+00075:  82  pop
+00076:  79  localinc 11
+00079:  79  getlocal 1
+00082:  79  pos
+00083:  79  dup
+00084:  79  one
+00085:  79  add
+00086:  79  setlocal 1
+00089:  79  pop
+00090:  79  pop
+00091:  79  loopentry
+00092:  79  getlocal 1
+00095:  79  this
+00096:  79  getprop "_observers"
+00101:  79  length "length"
+00106:  79  lt
+00107:  79  ifne 19 (-88)
+00112:  84  name "cc"
+00117:  84  dup
+00118:  84  callprop "ArrayRemoveArray"
+00123:  84  swap
+00124:  84  notearg
+00125:  84  this
+00126:  84  getprop "_observers"
+00131:  84  notearg
+00132:  84  getlocal 0
+00135:  84  notearg
+00136:  84  call 2
+00139:  84  pop
+00140:  85  getlocal 0
+00143:  85  length "length"
+00148:  85  return
+00149:  85  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:77 ---
+;; function object[4] postNotification
+;; function metadata object[4] nargs=2 bindings=4
+;; arg[0] name
+;; arg[1] object
+;; local[0] i
+;; local[1] observer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:92 ---
+loc   line  op
+----- ----  --
+main:
+00000:  93  zero
+00001:  93  setlocal 0
+00004:  93  pop
+00005:  93  goto 96 (+91)
+00010:  94  loophead
+00011:  94  this
+00012:  94  getprop "_observers"
+00017:  94  getlocal 0
+00020:  94  getelem
+00021:  94  setlocal 1
+00024:  94  pop
+00025:  95  getlocal 1
+00028:  95  not
+00029:  95  ifeq 39 (+10)
+00034:  96  goto 81 (+47)
+00039:  97  getlocal 1
+00042:  97  dup
+00043:  97  callprop "getName"
+00048:  97  swap
+00049:  97  notearg
+00050:  97  call 0
+00053:  97  getarg 0
+00056:  97  eq
+00057:  97  ifeq 81 (+24)
+00062:  98  getlocal 1
+00065:  98  dup
+00066:  98  callprop "performSelector"
+00071:  98  swap
+00072:  98  notearg
+00073:  98  getarg 1
+00076:  98  notearg
+00077:  98  call 1
+00080:  98  pop
+00081:  93  localinc 11
+00084:  93  getlocal 0
+00087:  93  pos
+00088:  93  dup
+00089:  93  one
+00090:  93  add
+00091:  93  setlocal 0
+00094:  93  pop
+00095:  93  pop
+00096:  93  loopentry
+00097:  93  getlocal 0
+00100:  93  this
+00101:  93  getprop "_observers"
+00106:  93  length "length"
+00111:  93  lt
+00112:  93  ifne 10 (-102)
+00117: 103  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:92 ---
+;; function object[5] _observerExisted
+;; function metadata object[5] nargs=2 bindings=4
+;; arg[0] target
+;; arg[1] name
+;; local[0] i
+;; local[1] observer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:112 ---
+loc   line  op
+----- ----  --
+main:
+00000: 113  zero
+00001: 113  setlocal 0
+00004: 113  pop
+00005: 113  goto 103 (+98)
+00010: 114  loophead
+00011: 114  this
+00012: 114  getprop "_observers"
+00017: 114  getlocal 0
+00020: 114  getelem
+00021: 114  setlocal 1
+00024: 114  pop
+00025: 115  getlocal 1
+00028: 115  not
+00029: 115  ifeq 39 (+10)
+00034: 116  goto 88 (+54)
+00039: 117  getlocal 1
+00042: 117  dup
+00043: 117  callprop "getName"
+00048: 117  swap
+00049: 117  notearg
+00050: 117  call 0
+00053: 117  getarg 1
+00056: 117  eq
+00057: 117  and 81 (+24)
+00062: 117  pop
+00063: 117  getlocal 1
+00066: 117  dup
+00067: 117  callprop "getTarget"
+00072: 117  swap
+00073: 117  notearg
+00074: 117  call 0
+00077: 117  getarg 0
+00080: 117  eq
+00081: 117  ifeq 88 (+7)
+00086: 118  true
+00087: 118  return
+00088: 113  localinc 11
+00091: 113  getlocal 0
+00094: 113  pos
+00095: 113  dup
+00096: 113  one
+00097: 113  add
+00098: 113  setlocal 0
+00101: 113  pop
+00102: 113  pop
+00103: 113  loopentry
+00104: 113  getlocal 0
+00107: 113  this
+00108: 113  getprop "_observers"
+00113: 113  length "length"
+00118: 113  lt
+00119: 113  ifne 10 (-109)
+00124: 120  false
+00125: 120  return
+00126: 120  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:112 ---
+;; function object[6] getInstance
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:128 ---
+loc   line  op
+----- ----  --
+main:
+00000: 129  name "cc"
+00005: 129  getprop "s_sharedNotificationCenter"
+00010: 129  not
+00011: 129  ifeq 42 (+31)
+00016: 130  name "cc"
+00021: 130  name "cc"
+00026: 130  getprop "NotificationCenter"
+00031: 130  undefined
+00032: 130  notearg
+00033: 130  new 0
+00036: 130  setprop "s_sharedNotificationCenter"
+00041: 130  pop
+00042: 132  name "cc"
+00047: 132  getprop "s_sharedNotificationCenter"
+00052: 132  return
+00053: 132  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:128 ---
+;; function object[7] ctor
+;; function metadata object[7] nargs=4 bindings=4
+;; arg[0] target
+;; arg[1] selector
+;; arg[2] name
+;; arg[3] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:142 ---
+loc   line  op
+----- ----  --
+main:
+00000: 143  this
+00001: 143  getarg 0
+00004: 143  setprop "_target"
+00009: 143  pop
+00010: 144  this
+00011: 144  getarg 1
+00014: 144  setprop "_selector"
+00019: 144  pop
+00020: 145  this
+00021: 145  getarg 2
+00024: 145  setprop "_name"
+00029: 145  pop
+00030: 146  this
+00031: 146  getarg 3
+00034: 146  setprop "_object"
+00039: 146  pop
+00040: 146  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:142 ---
+;; function object[8] performSelector
+;; function metadata object[8] nargs=1 bindings=1
+;; arg[0] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:152 ---
+loc   line  op
+----- ----  --
+main:
+00000: 153  this
+00001: 153  getprop "_target"
+00006: 153  and 25 (+19)
+00011: 153  pop
+00012: 153  this
+00013: 153  getprop "_selector"
+00018: 153  typeofexpr
+00019: 153  string "string"
+00024: 153  eq
+00025: 153  ifeq 59 (+34)
+00030: 154  this
+00031: 154  getprop "_target"
+00036: 154  dup
+00037: 154  this
+00038: 154  getprop "_selector"
+00043: 154  callelem
+00044: 154  swap
+00045: 154  notearg
+00046: 154  getarg 0
+00049: 154  notearg
+00050: 154  call 1
+00053: 154  pop
+00054: 154  goto 140 (+86)
+00059: 155  this
+00060: 155  getprop "_target"
+00065: 155  and 84 (+19)
+00070: 155  pop
+00071: 155  this
+00072: 155  getprop "_selector"
+00077: 155  typeofexpr
+00078: 155  string "function"
+00083: 155  eq
+00084: 155  ifeq 123 (+39)
+00089: 156  this
+00090: 156  getprop "_selector"
+00095: 156  dup
+00096: 156  callprop "call"
+00101: 156  swap
+00102: 156  notearg
+00103: 156  this
+00104: 156  getprop "_target"
+00109: 156  notearg
+00110: 156  getarg 0
+00113: 156  notearg
+00114: 156  funcall 2
+00117: 156  pop
+00118: 156  goto 140 (+22)
+00123: 158  this
+00124: 158  dup
+00125: 158  callprop "_selector"
+00130: 158  swap
+00131: 158  notearg
+00132: 158  getarg 0
+00135: 158  notearg
+00136: 158  call 1
+00139: 158  pop
+00140: 159  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:152 ---
+;; function object[9] getTarget
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:170 ---
+loc   line  op
+----- ----  --
+main:
+00000: 171  this
+00001: 171  getprop "_target"
+00006: 171  return
+00007: 171  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:170 ---
+;; function object[10] getSelector
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:177 ---
+loc   line  op
+----- ----  --
+main:
+00000: 178  this
+00001: 178  getprop "_selector"
+00006: 178  return
+00007: 178  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:177 ---
+;; function object[11] getName
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:184 ---
+loc   line  op
+----- ----  --
+main:
+00000: 185  this
+00001: 185  getprop "_name"
+00006: 185  return
+00007: 185  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:184 ---
+;; function object[12] getObject
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:191 ---
+loc   line  op
+----- ----  --
+main:
+00000: 192  this
+00001: 192  getprop "_object"
+00006: 192  return
+00007: 192  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Cocos2d-x/CCNotificationCenter.js:191 ---

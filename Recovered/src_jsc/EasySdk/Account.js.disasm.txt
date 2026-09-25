@@ -1,0 +1,592 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/EasySdk/Account.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=180 object[0]
+;; FUNCTION-MAP kind=lambda offset=190 object[1]
+;; FUNCTION-MAP kind=lambda offset=222 object[2]
+;; FUNCTION-MAP kind=lambda offset=248 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  name "xs"
+00005:   7  getprop "EasySdk"
+00010:   7  name "xs"
+00015:   7  getprop "EasySdk"
+00020:   7  getprop "Account"
+00025:   7  or 201 (+176)
+00030:   7  pop
+00031:   7  newinit 1
+00036:  10  newinit 1
+00041:  12  string "10000"
+00046:  12  initprop "Const_Account_Login_Exception"
+00051:  13  string "10001"
+00056:  13  initprop "Const_Account_Login_Success"
+00061:  14  string "10002"
+00066:  14  initprop "Const_Account_Login_Fail"
+00071:  15  string "10004"
+00076:  15  initprop "Const_Account_Login_Timeout"
+00081:  16  string "10005"
+00086:  16  initprop "Const_Account_Login_NoNeed"
+00091:  17  string "10006"
+00096:  17  initprop "Const_Account_Login_Cancel"
+00101:  19  string "10100"
+00106:  19  initprop "Const_Account_Logout_Exception"
+00111:  20  string "10101"
+00116:  20  initprop "Const_Account_Logout_Success"
+00121:  21  string "10102"
+00126:  21  initprop "Const_Account_Logout_Fail"
+00131:  21  endinit
+00132:  21  initprop "Protocol"
+00137:  25  newinit 1
+00142:  26  newinit 1
+00147:  27  newinit 1
+00152:  28  string "CmnAccount"
+00157:  28  initprop "CmnAccount"
+00162:  28  endinit
+00163:  28  initprop "Easy"
+00168:  28  endinit
+00169:  28  initprop "Notify_Event"
+00174:  28  endinit
+00175:  28  initprop "Const"
+00180:  35  lambda (function () {
+    [sourceless code]
+})
+00185:  35  initprop "registerCallBack"
+00190:  54  lambda (function () {
+    [sourceless code]
+})
+00195:  54  initprop "onEasySdkAccountCallBack"
+00200:  54  endinit
+00201:  54  setprop "Account"
+00206:  54  popv
+00207: 129  name "xs"
+00212: 129  getprop "EasySdk"
+00217: 129  getprop "Account"
+00222: 129  lambda (function () {
+    [sourceless code]
+})
+00227: 129  setprop "setAccountInfo"
+00232: 129  popv
+00233: 134  name "xs"
+00238: 134  getprop "EasySdk"
+00243: 134  getprop "Account"
+00248: 134  lambda (function () {
+    [sourceless code]
+})
+00253: 134  setprop "getAccountInfo"
+00258: 134  popv
+00259: 136  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:1 ---
+;; function object[0] registerCallBack
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=93 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:35 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  name "xsc"
+00005:  37  getprop "Tools"
+00010:  37  getprop "AccountSys"
+00015:  37  dup
+00016:  37  callprop "isUsingEasySdk"
+00021:  37  swap
+00022:  37  notearg
+00023:  37  call 0
+00026:  37  ifeq 116 (+90)
+00031:  38  name "xs"
+00036:  38  dup
+00037:  38  callprop "log_zj"
+00042:  38  swap
+00043:  38  notearg
+00044:  38  string "registerCallBack"
+00049:  38  notearg
+00050:  38  call 1
+00053:  38  pop
+00054:  40  name "xs"
+00059:  40  getprop "Cpp2Jsb"
+00064:  40  dup
+00065:  40  callprop "registerCallBack"
+00070:  40  swap
+00071:  40  notearg
+00072:  41  newarray 1
+00076:  41  string "EasySdk"
+00081:  41  initelem_array 0
+00085:  41  endinit
+00086:  41  notearg
+00087:  42  string "Account"
+00092:  42  notearg
+00093:  43  lambda (function () {
+    [sourceless code]
+})
+00098:  43  dup
+00099:  43  callprop "bind"
+00104:  43  swap
+00105:  43  notearg
+00106:  47  this
+00107:  47  notearg
+00108:  47  call 1
+00111:  47  notearg
+00112:  47  call 3
+00115:  47  pop
+00116:  51  name "xs"
+00121:  51  getprop "Utils"
+00126:  51  getprop "Notify"
+00131:  51  dup
+00132:  51  callprop "addObserver"
+00137:  51  swap
+00138:  51  notearg
+00139:  51  this
+00140:  51  notearg
+00141:  51  this
+00142:  51  getprop "onEasySdkAccountCallBack"
+00147:  51  notearg
+00148:  51  this
+00149:  51  getprop "Const"
+00154:  51  getprop "Notify_Event"
+00159:  51  getprop "Easy"
+00164:  51  getprop "CmnAccount"
+00169:  51  notearg
+00170:  51  call 3
+00173:  51  pop
+00174:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:35 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=6 bindings=7
+;; arg[0] system
+;; arg[1] module
+;; arg[2] version
+;; arg[3] codeAction
+;; arg[4] msg0
+;; arg[5] msg1
+;; local[0] arguments
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:43 ---
+loc   line  op
+----- ----  --
+00000:  43  arguments
+00001:  43  setlocal 0
+00004:  43  pop
+main:
+00005:  44  name "xs"
+00010:  44  dup
+00011:  44  callprop "dump"
+00016:  44  swap
+00017:  44  notearg
+00018:  44  string "EasySdk-onCallBack"
+00023:  44  notearg
+00024:  44  getlocal 0
+00027:  44  notearg
+00028:  44  call 2
+00031:  44  pop
+00032:  45  name "xs"
+00037:  45  getprop "Utils"
+00042:  45  getprop "Notify"
+00047:  45  dup
+00048:  45  callprop "postNotification"
+00053:  45  swap
+00054:  45  notearg
+00055:  45  this
+00056:  45  getprop "Const"
+00061:  45  getprop "Notify_Event"
+00066:  45  getprop "Easy"
+00071:  45  getprop "CmnAccount"
+00076:  45  notearg
+00077:  45  newinit 1
+00082:  45  getarg 3
+00085:  45  initprop "code"
+00090:  45  getarg 4
+00093:  45  initprop "msg"
+00098:  45  endinit
+00099:  45  notearg
+00100:  45  call 2
+00103:  45  pop
+00104:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:43 ---
+;; function object[1] onEasySdkAccountCallBack
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] _jsonSuccessMsg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:54 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  name "xs"
+00005:  56  dup
+00006:  56  callprop "log_zj"
+00011:  56  swap
+00012:  56  notearg
+00013:  56  string "onEasySdkCallBack"
+00018:  56  notearg
+00019:  56  getarg 0
+00022:  56  notearg
+00023:  56  call 2
+00026:  56  pop
+00027:  58  getarg 0
+00030:  58  getprop "code"
+00035:  58  condswitch
+00036:  59  name "xs"
+00041:  59  getprop "EasySdk"
+00046:  59  getprop "Protocol"
+00051:  59  getprop "Const_Init_Success"
+00056:  59  case 386 (+330)
+00061:  61  name "xs"
+00066:  61  getprop "EasySdk"
+00071:  61  getprop "Protocol"
+00076:  61  getprop "Const_Init_Fail"
+00081:  61  case 391 (+310)
+00086:  63  name "xs"
+00091:  63  getprop "EasySdk"
+00096:  63  getprop "Protocol"
+00101:  63  getprop "Const_Exception"
+00106:  63  case 396 (+290)
+00111:  67  name "xs"
+00116:  67  getprop "EasySdk"
+00121:  67  getprop "Account"
+00126:  67  getprop "Protocol"
+00131:  67  getprop "Const_Account_Login_Success"
+00136:  67  case 428 (+292)
+00141:  85  name "xs"
+00146:  85  getprop "EasySdk"
+00151:  85  getprop "Account"
+00156:  85  getprop "Protocol"
+00161:  85  getprop "Const_Account_Login_Cancel"
+00166:  85  case 664 (+498)
+00171:  89  name "xs"
+00176:  89  getprop "EasySdk"
+00181:  89  getprop "Account"
+00186:  89  getprop "Protocol"
+00191:  89  getprop "Const_Account_Login_NoNeed"
+00196:  89  case 692 (+496)
+00201:  93  name "xs"
+00206:  93  getprop "EasySdk"
+00211:  93  getprop "Account"
+00216:  93  getprop "Protocol"
+00221:  93  getprop "Const_Account_Login_Timeout"
+00226:  93  case 720 (+494)
+00231:  98  name "xs"
+00236:  98  getprop "EasySdk"
+00241:  98  getprop "Account"
+00246:  98  getprop "Protocol"
+00251:  98  getprop "Const_Account_Login_Fail"
+00256:  98  case 808 (+552)
+00261: 103  name "xs"
+00266: 103  getprop "EasySdk"
+00271: 103  getprop "Account"
+00276: 103  getprop "Protocol"
+00281: 103  getprop "Const_Account_Login_Exception"
+00286: 103  case 896 (+610)
+00291: 108  name "xs"
+00296: 108  getprop "EasySdk"
+00301: 108  getprop "Account"
+00306: 108  getprop "Protocol"
+00311: 108  getprop "Const_Account_Logout_Success"
+00316: 108  case 984 (+668)
+00321: 116  name "xs"
+00326: 116  getprop "EasySdk"
+00331: 116  getprop "Account"
+00336: 116  getprop "Protocol"
+00341: 116  getprop "Const_Account_Logout_Fail"
+00346: 116  case 1082 (+736)
+00351: 117  name "xs"
+00356: 117  getprop "EasySdk"
+00361: 117  getprop "Account"
+00366: 117  getprop "Protocol"
+00371: 117  getprop "Const_Account_Logout_Exception"
+00376: 117  case 1082 (+706)
+00381: 117  default 1110 (+729)
+00386:  60  goto 1151 (+765)
+00391:  62  goto 1151 (+760)
+00396:  64  name "xs"
+00401:  64  dup
+00402:  64  callprop "error"
+00407:  64  swap
+00408:  64  notearg
+00409:  64  string "\u5F02\u5E38"
+00414:  64  notearg
+00415:  64  getarg 0
+00418:  64  notearg
+00419:  64  call 2
+00422:  64  pop
+00423:  65  goto 1151 (+728)
+00428:  69  name "JSON"
+00433:  69  dup
+00434:  69  callprop "parse"
+00439:  69  swap
+00440:  69  notearg
+00441:  69  getarg 0
+00444:  69  getprop "msg"
+00449:  69  notearg
+00450:  69  call 1
+00453:  69  setlocal 0
+00456:  69  pop
+00457:  71  name "xs"
+00462:  71  getprop "EasySdk"
+00467:  71  getprop "Account"
+00472:  71  dup
+00473:  71  callprop "setAccountInfo"
+00478:  71  swap
+00479:  71  notearg
+00480:  71  getlocal 0
+00483:  71  notearg
+00484:  71  call 1
+00487:  71  pop
+00488:  73  name "xs"
+00493:  73  getprop "director"
+00498:  73  dup
+00499:  73  callprop "getRunningScene"
+00504:  73  swap
+00505:  73  notearg
+00506:  73  call 0
+00509:  73  null
+00510:  73  ne
+00511:  73  and 575 (+64)
+00516:  73  pop
+00517:  73  name "xs"
+00522:  73  getprop "director"
+00527:  73  dup
+00528:  73  callprop "getRunningScene"
+00533:  73  swap
+00534:  73  notearg
+00535:  73  call 0
+00538:  73  dup
+00539:  73  callprop "getTag"
+00544:  73  swap
+00545:  73  notearg
+00546:  73  call 0
+00549:  73  name "xs"
+00554:  73  getprop "Cfg"
+00559:  73  getprop "Scene"
+00564:  73  getprop "LoginScene"
+00569:  73  getprop "tag"
+00574:  73  eq
+00575:  73  ifeq 585 (+10)
+00580:  73  goto 659 (+79)
+00585:  79  name "xs"
+00590:  79  getprop "Scene"
+00595:  79  getprop "Mgr"
+00600:  79  dup
+00601:  79  callprop "getCurSceneName"
+00606:  79  swap
+00607:  79  notearg
+00608:  79  call 0
+00611:  79  string "SettingScene"
+00616:  79  strictne
+00617:  79  ifeq 659 (+42)
+00622:  80  name "xs"
+00627:  80  getprop "Scene"
+00632:  80  getprop "Mgr"
+00637:  80  dup
+00638:  80  callprop "changeSceneByName"
+00643:  80  swap
+00644:  80  notearg
+00645:  80  string "LoginScene"
+00650:  80  notearg
+00651:  80  getarg 0
+00654:  80  notearg
+00655:  80  call 2
+00658:  80  pop
+00659:  83  goto 1151 (+492)
+00664:  86  name "xs"
+00669:  86  dup
+00670:  86  callprop "log"
+00675:  86  swap
+00676:  86  notearg
+00677:  86  string "\u767B\u5F55\u53D6\u6D88"
+00682:  86  notearg
+00683:  86  call 1
+00686:  86  pop
+00687:  87  goto 1151 (+464)
+00692:  90  name "xs"
+00697:  90  dup
+00698:  90  callprop "log"
+00703:  90  swap
+00704:  90  notearg
+00705:  90  string "\u65E0\u9700\u767B\u5F55"
+00710:  90  notearg
+00711:  90  call 1
+00714:  90  pop
+00715:  91  goto 1151 (+436)
+00720:  94  name "xs"
+00725:  94  dup
+00726:  94  callprop "log"
+00731:  94  swap
+00732:  94  notearg
+00733:  94  string "\u767B\u5F55\u8D85\u65F6"
+00738:  94  notearg
+00739:  94  call 1
+00742:  94  pop
+00743:  95  name "xs"
+00748:  95  getprop "Views"
+00753:  95  getprop "Mgr"
+00758:  95  dup
+00759:  95  callprop "showToast"
+00764:  95  swap
+00765:  95  notearg
+00766:  95  name "xs"
+00771:  95  getprop "Tools"
+00776:  95  getprop "String"
+00781:  95  dup
+00782:  95  callprop "createString"
+00787:  95  swap
+00788:  95  notearg
+00789:  95  string "easy_loginFail_Timeout"
+00794:  95  notearg
+00795:  95  call 1
+00798:  95  notearg
+00799:  95  call 1
+00802:  95  pop
+00803:  96  goto 1151 (+348)
+00808:  99  name "xs"
+00813:  99  dup
+00814:  99  callprop "log"
+00819:  99  swap
+00820:  99  notearg
+00821:  99  string "\u767B\u5F55\u5931\u8D25"
+00826:  99  notearg
+00827:  99  call 1
+00830:  99  pop
+00831: 100  name "xs"
+00836: 100  getprop "Views"
+00841: 100  getprop "Mgr"
+00846: 100  dup
+00847: 100  callprop "showToast"
+00852: 100  swap
+00853: 100  notearg
+00854: 100  name "xs"
+00859: 100  getprop "Tools"
+00864: 100  getprop "String"
+00869: 100  dup
+00870: 100  callprop "createString"
+00875: 100  swap
+00876: 100  notearg
+00877: 100  string "easy_loginFail"
+00882: 100  notearg
+00883: 100  call 1
+00886: 100  notearg
+00887: 100  call 1
+00890: 100  pop
+00891: 101  goto 1151 (+260)
+00896: 104  name "xs"
+00901: 104  dup
+00902: 104  callprop "log"
+00907: 104  swap
+00908: 104  notearg
+00909: 104  string "\u767B\u5F55\u5F02\u5E38"
+00914: 104  notearg
+00915: 104  call 1
+00918: 104  pop
+00919: 105  name "xs"
+00924: 105  getprop "Views"
+00929: 105  getprop "Mgr"
+00934: 105  dup
+00935: 105  callprop "showToast"
+00940: 105  swap
+00941: 105  notearg
+00942: 105  name "xs"
+00947: 105  getprop "Tools"
+00952: 105  getprop "String"
+00957: 105  dup
+00958: 105  callprop "createString"
+00963: 105  swap
+00964: 105  notearg
+00965: 105  string "easy_loginFail_Exception"
+00970: 105  notearg
+00971: 105  call 1
+00974: 105  notearg
+00975: 105  call 1
+00978: 105  pop
+00979: 106  goto 1151 (+172)
+00984: 109  name "xs"
+00989: 109  dup
+00990: 109  callprop "log"
+00995: 109  swap
+00996: 109  notearg
+00997: 109  string "\u767B\u51FA\u6210\u529F"
+01002: 109  notearg
+01003: 109  call 1
+01006: 109  pop
+01007: 111  name "xs"
+01012: 111  getprop "Scene"
+01017: 111  getprop "Mgr"
+01022: 111  dup
+01023: 111  callprop "getCurSceneName"
+01028: 111  swap
+01029: 111  notearg
+01030: 111  call 0
+01033: 111  string "SettingScene"
+01038: 111  strictne
+01039: 111  ifeq 1077 (+38)
+01044: 112  name "xs"
+01049: 112  getprop "Scene"
+01054: 112  getprop "Mgr"
+01059: 112  dup
+01060: 112  callprop "changeSceneByName"
+01065: 112  swap
+01066: 112  notearg
+01067: 112  string "LoginScene"
+01072: 112  notearg
+01073: 112  call 1
+01076: 112  pop
+01077: 114  goto 1151 (+74)
+01082: 118  name "xs"
+01087: 118  dup
+01088: 118  callprop "log"
+01093: 118  swap
+01094: 118  notearg
+01095: 118  string "\u767B\u51FA\u5931\u8D25"
+01100: 118  notearg
+01101: 118  call 1
+01104: 118  pop
+01105: 119  goto 1151 (+46)
+01110: 122  name "xs"
+01115: 122  getprop "Views"
+01120: 122  getprop "Mgr"
+01125: 122  dup
+01126: 122  callprop "showToast"
+01131: 122  swap
+01132: 122  notearg
+01133: 122  getarg 0
+01136: 122  getprop "msg"
+01141: 122  notearg
+01142: 122  call 1
+01145: 122  pop
+01146: 123  goto 1151 (+5)
+01151: 124  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:54 ---
+;; function object[2] setAccountInfo
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] info
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:129 ---
+loc   line  op
+----- ----  --
+main:
+00000: 130  this
+00001: 130  getarg 0
+00004: 130  setprop "account_info"
+00009: 130  pop
+00010: 130  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:129 ---
+;; function object[3] getAccountInfo
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:134 ---
+loc   line  op
+----- ----  --
+main:
+00000: 135  this
+00001: 135  getprop "account_info"
+00006: 135  return
+00007: 135  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Account.js:134 ---

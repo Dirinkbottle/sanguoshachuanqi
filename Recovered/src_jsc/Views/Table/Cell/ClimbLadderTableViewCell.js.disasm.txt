@@ -1,0 +1,1913 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=939 object[0]
+;; FUNCTION-MAP kind=lambda offset=949 object[1]
+;; FUNCTION-MAP kind=lambda offset=959 object[2]
+;; FUNCTION-MAP kind=lambda offset=969 object[3]
+;; FUNCTION-MAP kind=lambda offset=979 object[4]
+;; FUNCTION-MAP kind=lambda offset=989 object[5]
+;; FUNCTION-MAP kind=lambda offset=999 object[6]
+;; FUNCTION-MAP kind=lambda offset=1009 object[7]
+;; FUNCTION-MAP kind=lambda offset=1019 object[8]
+;; FUNCTION-MAP kind=lambda offset=1029 object[9]
+;; FUNCTION-MAP kind=lambda offset=1238 object[10]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "cc"
+00015:   6  getprop "TableViewCell"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  newarray 22
+00037:   8  newinit 1
+00042:   8  int8 2
+00044:   8  initprop "tag"
+00049:   8  string "ls"
+00054:   8  initprop "type"
+00059:   8  string "LS_Lv"
+00064:   8  initprop "id"
+00069:   8  int8 5
+00071:   8  initprop "zOrder"
+00076:   8  endinit
+00077:   8  initelem_array 0
+00081:   9  newinit 1
+00086:   9  int8 3
+00088:   9  initprop "tag"
+00093:   9  string "ls"
+00098:   9  initprop "type"
+00103:   9  string "LS_Lv"
+00108:   9  initprop "id"
+00113:   9  int8 5
+00115:   9  initprop "zOrder"
+00120:   9  endinit
+00121:   9  initelem_array 1
+00125:  10  newinit 1
+00130:  10  int8 4
+00132:  10  initprop "tag"
+00137:  10  string "ls"
+00142:  10  initprop "type"
+00147:  10  string "LS_liebiaoInf2"
+00152:  10  initprop "id"
+00157:  10  int8 5
+00159:  10  initprop "zOrder"
+00164:  10  endinit
+00165:  10  initelem_array 2
+00169:  11  newinit 1
+00174:  11  int8 5
+00176:  11  initprop "tag"
+00181:  11  string "ls"
+00186:  11  initprop "type"
+00191:  11  string "LS_liebiaoInf2"
+00196:  11  initprop "id"
+00201:  11  int8 5
+00203:  11  initprop "zOrder"
+00208:  11  endinit
+00209:  11  initelem_array 3
+00213:  12  newinit 1
+00218:  12  int8 6
+00220:  12  initprop "tag"
+00225:  12  string "ls"
+00230:  12  initprop "type"
+00235:  12  string "LS_liebiaoInf2"
+00240:  12  initprop "id"
+00245:  12  int8 5
+00247:  12  initprop "zOrder"
+00252:  12  endinit
+00253:  12  initelem_array 4
+00257:  13  newinit 1
+00262:  13  int8 21
+00264:  13  initprop "tag"
+00269:  13  string "ls"
+00274:  13  initprop "type"
+00279:  13  string "m_cellIntro"
+00284:  13  initprop "name"
+00289:  13  string "LS_liebiaoInf"
+00294:  13  initprop "id"
+00299:  13  string "auto_name_493"
+00304:  13  initprop "stringId"
+00309:  13  int8 5
+00311:  13  initprop "zOrder"
+00316:  13  endinit
+00317:  13  initelem_array 5
+00321:  14  newinit 1
+00326:  14  int8 22
+00328:  14  initprop "tag"
+00333:  14  string "ls"
+00338:  14  initprop "type"
+00343:  14  string "LS_liebiaoInf"
+00348:  14  initprop "id"
+00353:  14  string "auto_name_266"
+00358:  14  initprop "stringId"
+00363:  14  int8 5
+00365:  14  initprop "zOrder"
+00370:  14  endinit
+00371:  14  initelem_array 6
+00375:  15  newinit 1
+00380:  15  int8 23
+00382:  15  initprop "tag"
+00387:  15  string "ls"
+00392:  15  initprop "type"
+00397:  15  string "LS_liebiaoInf"
+00402:  15  initprop "id"
+00407:  15  string "auto_name_494"
+00412:  15  initprop "stringId"
+00417:  15  int8 5
+00419:  15  initprop "zOrder"
+00424:  15  endinit
+00425:  15  initelem_array 7
+00429:  16  newinit 1
+00434:  16  int8 24
+00436:  16  initprop "tag"
+00441:  16  string "ls"
+00446:  16  initprop "type"
+00451:  16  string "LS_liebiaoInf"
+00456:  16  initprop "id"
+00461:  16  string "auto_name_495"
+00466:  16  initprop "stringId"
+00471:  16  int8 5
+00473:  16  initprop "zOrder"
+00478:  16  endinit
+00479:  16  initelem_array 8
+00483:  17  newinit 1
+00488:  17  int8 100
+00490:  17  initprop "tag"
+00495:  17  string "ls"
+00500:  17  initprop "type"
+00505:  17  string "LS_TTPHnomb"
+00510:  17  initprop "id"
+00515:  17  int8 5
+00517:  17  initprop "zOrder"
+00522:  17  endinit
+00523:  17  initelem_array 9
+00527:  18  newinit 1
+00532:  18  int8 31
+00534:  18  initprop "tag"
+00539:  18  string "sprite"
+00544:  18  initprop "type"
+00549:  18  one
+00550:  18  initprop "zOrder"
+00555:  18  endinit
+00556:  18  initelem_array 10
+00560:  19  newinit 1
+00565:  19  int8 32
+00567:  19  initprop "tag"
+00572:  19  string "sprite"
+00577:  19  initprop "type"
+00582:  19  int8 2
+00584:  19  initprop "zOrder"
+00589:  19  endinit
+00590:  19  initelem_array 11
+00594:  20  newinit 1
+00599:  20  int8 12
+00601:  20  initprop "tag"
+00606:  20  string "sprite"
+00611:  20  initprop "type"
+00616:  20  int8 4
+00618:  20  initprop "zOrder"
+00623:  20  endinit
+00624:  20  initelem_array 12
+00628:  21  newinit 1
+00633:  21  int8 13
+00635:  21  initprop "tag"
+00640:  21  string "sprite"
+00645:  21  initprop "type"
+00650:  21  int8 4
+00652:  21  initprop "zOrder"
+00657:  21  endinit
+00658:  21  initelem_array 13
+00662:  22  newinit 1
+00667:  22  int8 14
+00669:  22  initprop "tag"
+00674:  22  string "sprite"
+00679:  22  initprop "type"
+00684:  22  int8 5
+00686:  22  initprop "zOrder"
+00691:  22  endinit
+00692:  22  initelem_array 14
+00696:  23  newinit 1
+00701:  23  int8 11
+00703:  23  initprop "tag"
+00708:  23  string "sprite"
+00713:  23  initprop "type"
+00718:  23  int8 3
+00720:  23  initprop "zOrder"
+00725:  23  endinit
+00726:  23  initelem_array 15
+00730:  24  newinit 1
+00735:  24  int8 33
+00737:  24  initprop "tag"
+00742:  24  string "sprite"
+00747:  24  initprop "type"
+00752:  24  int8 5
+00754:  24  initprop "zOrder"
+00759:  24  endinit
+00760:  24  initelem_array 16
+00764:  25  newinit 1
+00769:  25  int8 34
+00771:  25  initprop "tag"
+00776:  25  string "sprite"
+00781:  25  initprop "type"
+00786:  25  int8 5
+00788:  25  initprop "zOrder"
+00793:  25  endinit
+00794:  25  initelem_array 17
+00798:  26  newinit 1
+00803:  26  int8 35
+00805:  26  initprop "tag"
+00810:  26  string "sprite"
+00815:  26  initprop "type"
+00820:  26  int8 5
+00822:  26  initprop "zOrder"
+00827:  26  endinit
+00828:  26  initelem_array 18
+00832:  27  newinit 1
+00837:  27  int8 8
+00839:  27  initprop "tag"
+00844:  27  string "sprite"
+00849:  27  initprop "type"
+00854:  27  int8 5
+00856:  27  initprop "zOrder"
+00861:  27  endinit
+00862:  27  initelem_array 19
+00866:  28  newinit 1
+00871:  28  one
+00872:  28  initprop "tag"
+00877:  28  string "sprite"
+00882:  28  initprop "type"
+00887:  28  int8 5
+00889:  28  initprop "zOrder"
+00894:  28  endinit
+00895:  28  initelem_array 20
+00899:  29  newinit 1
+00904:  29  int8 7
+00906:  29  initprop "tag"
+00911:  29  string "sprite"
+00916:  29  initprop "type"
+00921:  29  int8 5
+00923:  29  initprop "zOrder"
+00928:  29  endinit
+00929:  29  initelem_array 21
+00933:  29  endinit
+00934:  29  initprop "ccbCfg"
+00939:  32  lambda (function () {
+    [sourceless code]
+})
+00944:  32  initprop "draw"
+00949:  36  lambda (function () {
+    [sourceless code]
+})
+00954:  36  initprop "ctor"
+00959:  41  lambda (function () {
+    [sourceless code]
+})
+00964:  41  initprop "init"
+00969:  58  lambda (function () {
+    [sourceless code]
+})
+00974:  58  initprop "_initCcbi"
+00979:  80  lambda (function () {
+    [sourceless code]
+})
+00984:  80  initprop "replaceCellNode"
+00989: 102  lambda (function () {
+    [sourceless code]
+})
+00994: 102  initprop "reductionCell"
+00999: 125  lambda (function () {
+    [sourceless code]
+})
+01004: 125  initprop "updateCell"
+01009: 191  lambda (function () {
+    [sourceless code]
+})
+01014: 191  initprop "setRankTitle"
+01019: 225  lambda (function () {
+    [sourceless code]
+})
+01024: 225  initprop "_updateCellBlank"
+01029: 246  lambda (function () {
+    [sourceless code]
+})
+01034: 246  initprop "_setCellBlankVisibleFalse"
+01039: 255  newinit 1
+01044: 256  newinit 1
+01049: 257  int8 10
+01051: 257  initprop "tag"
+01056: 257  endinit
+01057: 257  initprop "title"
+01062: 259  newinit 1
+01067: 260  int8 11
+01069: 260  initprop "tag"
+01074: 260  endinit
+01075: 260  initprop "card"
+01080: 262  newinit 1
+01085: 263  int8 12
+01087: 263  initprop "tag"
+01092: 263  endinit
+01093: 263  initprop "topBorder"
+01098: 265  newinit 1
+01103: 266  int8 13
+01105: 266  initprop "tag"
+01110: 266  endinit
+01111: 266  initprop "bottomBorder"
+01116: 268  newinit 1
+01121: 269  int8 14
+01123: 269  initprop "tag"
+01128: 269  endinit
+01129: 269  initprop "vipStr"
+01134: 271  newinit 1
+01139: 272  int8 15
+01141: 272  initprop "tag"
+01146: 272  endinit
+01147: 272  initprop "vipLevel"
+01152: 274  newinit 1
+01157: 275  int8 16
+01159: 275  initprop "tag"
+01164: 275  endinit
+01165: 275  initprop "rank"
+01170: 277  newinit 1
+01175: 278  int8 17
+01177: 278  initprop "tag"
+01182: 278  endinit
+01183: 278  initprop "salary"
+01188: 280  newinit 1
+01193: 281  int8 18
+01195: 281  initprop "tag"
+01200: 281  endinit
+01201: 281  initprop "lineUpBtn"
+01206: 281  endinit
+01207: 281  initprop "cfg"
+01212: 281  endinit
+01213: 281  notearg
+01214: 281  call 1
+01217: 281  setprop "ClimbLadderTableViewCell"
+01222: 281  popv
+01223: 286  name "xs"
+01228: 286  getprop "Views"
+01233: 286  getprop "ClimbLadderTableViewCell"
+01238: 286  lambda (function () {
+    [sourceless code]
+})
+01243: 286  setprop "create"
+01248: 286  popv
+01249: 294  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:1 ---
+;; function object[0] draw
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] ctx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  33  this
+00001:  33  dup
+00002:  33  callprop "_super"
+00007:  33  swap
+00008:  33  notearg
+00009:  33  getarg 0
+00012:  33  notearg
+00013:  33  call 1
+00016:  33  pop
+00017:  33  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:32 ---
+;; function object[1] ctor
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:36 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  this
+00001:  37  dup
+00002:  37  callprop "_super"
+00007:  37  swap
+00008:  37  notearg
+00009:  37  call 0
+00012:  37  pop
+00013:  38  name "cc"
+00018:  38  dup
+00019:  38  callprop "associateWithNative"
+00024:  38  swap
+00025:  38  notearg
+00026:  38  this
+00027:  38  notearg
+00028:  38  name "cc"
+00033:  38  getprop "TableViewCell"
+00038:  38  notearg
+00039:  38  call 2
+00042:  38  pop
+00043:  38  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:36 ---
+;; function object[2] init
+;; function metadata object[2] nargs=2 bindings=2
+;; arg[0] model
+;; arg[1] index
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  42  this
+00001:  42  dup
+00002:  42  callprop "_super"
+00007:  42  swap
+00008:  42  notearg
+00009:  42  call 0
+00012:  42  not
+00013:  42  ifeq 20 (+7)
+00018:  43  false
+00019:  43  return
+00020:  46  this
+00021:  46  null
+00022:  46  setprop "m_cellIntro"
+00027:  46  pop
+00028:  50  this
+00029:  50  dup
+00030:  50  callprop "_initCcbi"
+00035:  50  swap
+00036:  50  notearg
+00037:  50  call 0
+00040:  50  pop
+00041:  53  this
+00042:  53  dup
+00043:  53  callprop "updateCell"
+00048:  53  swap
+00049:  53  notearg
+00050:  53  getarg 0
+00053:  53  notearg
+00054:  53  getarg 1
+00057:  53  notearg
+00058:  53  call 2
+00061:  53  pop
+00062:  55  true
+00063:  55  return
+00064:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:41 ---
+;; function object[3] _initCcbi
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  this
+00001:  59  getprop "ccbNode"
+00006:  59  ifeq 31 (+25)
+00011:  60  this
+00012:  60  getprop "ccbNode"
+00017:  60  dup
+00018:  60  callprop "setVisible"
+00023:  60  swap
+00024:  60  notearg
+00025:  60  false
+00026:  60  notearg
+00027:  60  call 1
+00030:  60  pop
+00031:  62  this
+00032:  62  name "xs"
+00037:  62  getprop "ccb_reader"
+00042:  62  dup
+00043:  62  callprop "load"
+00048:  62  swap
+00049:  62  notearg
+00050:  62  name "xs"
+00055:  62  getprop "Cfg"
+00060:  62  getprop "CCBI"
+00065:  62  getprop "PaihangCell"
+00070:  62  notearg
+00071:  62  this
+00072:  62  notearg
+00073:  62  call 2
+00076:  62  setprop "ccbNode"
+00081:  62  pop
+00082:  63  this
+00083:  63  getprop "ccbNode"
+00088:  63  dup
+00089:  63  callprop "setContentSize"
+00094:  63  swap
+00095:  63  notearg
+00096:  63  name "cc"
+00101:  63  dup
+00102:  63  callprop "size"
+00107:  63  swap
+00108:  63  notearg
+00109:  63  uint16 247
+00112:  63  notearg
+00113:  63  uint16 517
+00116:  63  notearg
+00117:  63  call 2
+00120:  63  notearg
+00121:  63  call 1
+00124:  63  pop
+00125:  64  this
+00126:  64  getprop "ccbNode"
+00131:  64  dup
+00132:  64  callprop "setAnchorPoint"
+00137:  64  swap
+00138:  64  notearg
+00139:  64  name "cc"
+00144:  64  dup
+00145:  64  callprop "p"
+00150:  64  swap
+00151:  64  notearg
+00152:  64  zero
+00153:  64  notearg
+00154:  64  zero
+00155:  64  notearg
+00156:  64  call 2
+00159:  64  notearg
+00160:  64  call 1
+00163:  64  pop
+00164:  65  name "xs"
+00169:  65  getprop "Utils"
+00174:  65  getprop "Node"
+00179:  65  dup
+00180:  65  callprop "attachNodes"
+00185:  65  swap
+00186:  65  notearg
+00187:  65  this
+00188:  65  notearg
+00189:  65  this
+00190:  65  getprop "ccbNode"
+00195:  65  notearg
+00196:  65  newinit 1
+00201:  66  string "lb"
+00206:  66  initprop "desc"
+00211:  67  name "cc"
+00216:  67  dup
+00217:  67  callprop "p"
+00222:  67  swap
+00223:  67  notearg
+00224:  67  zero
+00225:  67  notearg
+00226:  67  zero
+00227:  67  notearg
+00228:  67  call 2
+00231:  67  initprop "offset"
+00236:  68  true
+00237:  68  initprop "sc"
+00242:  68  endinit
+00243:  68  notearg
+00244:  68  call 3
+00247:  68  pop
+00248:  71  name "xs"
+00253:  71  getprop "Utils"
+00258:  71  getprop "UI"
+00263:  71  dup
+00264:  71  callprop "replaceCcbByCfg"
+00269:  71  swap
+00270:  71  notearg
+00271:  71  this
+00272:  71  getprop "ccbNode"
+00277:  71  notearg
+00278:  71  this
+00279:  71  getprop "ccbCfg"
+00284:  71  notearg
+00285:  71  this
+00286:  71  notearg
+00287:  71  call 3
+00290:  71  pop
+00291:  73  this
+00292:  73  this
+00293:  73  getprop "ccbNode"
+00298:  73  dup
+00299:  73  callprop "getChildByTag"
+00304:  73  swap
+00305:  73  notearg
+00306:  73  int8 31
+00308:  73  notearg
+00309:  73  call 1
+00312:  73  setprop "m_cellBg"
+00317:  73  pop
+00318:  74  this
+00319:  74  this
+00320:  74  getprop "ccbNode"
+00325:  74  dup
+00326:  74  callprop "getChildByTag"
+00331:  74  swap
+00332:  74  notearg
+00333:  74  int8 32
+00335:  74  notearg
+00336:  74  call 1
+00339:  74  setprop "m_cellFrame"
+00344:  74  pop
+00345:  75  this
+00346:  75  this
+00347:  75  getprop "ccbNode"
+00352:  75  dup
+00353:  75  callprop "getChildByTag"
+00358:  75  swap
+00359:  75  notearg
+00360:  75  int8 12
+00362:  75  notearg
+00363:  75  call 1
+00366:  75  setprop "m_topPic"
+00371:  75  pop
+00372:  76  this
+00373:  76  this
+00374:  76  getprop "ccbNode"
+00379:  76  dup
+00380:  76  callprop "getChildByTag"
+00385:  76  swap
+00386:  76  notearg
+00387:  76  int8 13
+00389:  76  notearg
+00390:  76  call 1
+00393:  76  setprop "m_downPic"
+00398:  76  pop
+00399:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:58 ---
+;; function object[4] replaceCellNode
+;; function metadata object[4] nargs=0 bindings=4
+;; local[0] cellBg
+;; local[1] cellFrame
+;; local[2] topPic
+;; local[3] downPic
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:80 ---
+loc   line  op
+----- ----  --
+main:
+00000:  82  name "xs"
+00005:  82  getprop "Factorys"
+00010:  82  getprop "Sprite"
+00015:  82  dup
+00016:  82  callprop "create"
+00021:  82  swap
+00022:  82  notearg
+00023:  82  string "TiantixitongScene01_qizhidi2"
+00028:  82  notearg
+00029:  82  string "TiantixitongScene01"
+00034:  82  notearg
+00035:  82  call 2
+00038:  82  setlocal 0
+00041:  82  pop
+00042:  83  name "xs"
+00047:  83  getprop "Utils"
+00052:  83  getprop "Node"
+00057:  83  dup
+00058:  83  callprop "replaceChildSafe"
+00063:  83  swap
+00064:  83  notearg
+00065:  83  this
+00066:  83  getprop "ccbNode"
+00071:  83  notearg
+00072:  83  this
+00073:  83  getprop "m_cellBg"
+00078:  83  notearg
+00079:  83  getlocal 0
+00082:  83  notearg
+00083:  83  call 3
+00086:  83  pop
+00087:  84  this
+00088:  84  getlocal 0
+00091:  84  setprop "m_cellBg"
+00096:  84  pop
+00097:  86  name "xs"
+00102:  86  getprop "Factorys"
+00107:  86  getprop "Sprite"
+00112:  86  dup
+00113:  86  callprop "create"
+00118:  86  swap
+00119:  86  notearg
+00120:  86  string "TiantixitongScene01_qizhidizhong2"
+00125:  86  notearg
+00126:  86  string "TiantixitongScene01"
+00131:  86  notearg
+00132:  86  call 2
+00135:  86  setlocal 1
+00138:  86  pop
+00139:  87  name "xs"
+00144:  87  getprop "Utils"
+00149:  87  getprop "Node"
+00154:  87  dup
+00155:  87  callprop "replaceChildSafe"
+00160:  87  swap
+00161:  87  notearg
+00162:  87  this
+00163:  87  getprop "ccbNode"
+00168:  87  notearg
+00169:  87  this
+00170:  87  getprop "m_cellFrame"
+00175:  87  notearg
+00176:  87  getlocal 1
+00179:  87  notearg
+00180:  87  call 3
+00183:  87  pop
+00184:  88  this
+00185:  88  getlocal 1
+00188:  88  setprop "m_cellFrame"
+00193:  88  pop
+00194:  91  name "xs"
+00199:  91  getprop "Factorys"
+00204:  91  getprop "Sprite"
+00209:  91  dup
+00210:  91  callprop "create"
+00215:  91  swap
+00216:  91  notearg
+00217:  91  string "TiantixitongScene01_tupianzhuangshi2"
+00222:  91  notearg
+00223:  91  string "TiantixitongScene01"
+00228:  91  notearg
+00229:  91  call 2
+00232:  91  setlocal 2
+00235:  91  pop
+00236:  92  name "xs"
+00241:  92  getprop "Utils"
+00246:  92  getprop "Node"
+00251:  92  dup
+00252:  92  callprop "replaceChildSafe"
+00257:  92  swap
+00258:  92  notearg
+00259:  92  this
+00260:  92  getprop "ccbNode"
+00265:  92  notearg
+00266:  92  this
+00267:  92  getprop "m_topPic"
+00272:  92  notearg
+00273:  92  getlocal 2
+00276:  92  notearg
+00277:  92  call 3
+00280:  92  pop
+00281:  93  this
+00282:  93  getlocal 2
+00285:  93  setprop "m_topPic"
+00290:  93  pop
+00291:  96  name "xs"
+00296:  96  getprop "Factorys"
+00301:  96  getprop "Sprite"
+00306:  96  dup
+00307:  96  callprop "create"
+00312:  96  swap
+00313:  96  notearg
+00314:  96  string "TiantixitongScene01_tupianzhuangshi2"
+00319:  96  notearg
+00320:  96  string "TiantixitongScene01"
+00325:  96  notearg
+00326:  96  call 2
+00329:  96  setlocal 3
+00332:  96  pop
+00333:  97  getlocal 3
+00336:  97  dup
+00337:  97  callprop "setRotation"
+00342:  97  swap
+00343:  97  notearg
+00344:  97  uint16 180
+00347:  97  notearg
+00348:  97  call 1
+00351:  97  pop
+00352:  98  name "xs"
+00357:  98  getprop "Utils"
+00362:  98  getprop "Node"
+00367:  98  dup
+00368:  98  callprop "replaceChildSafe"
+00373:  98  swap
+00374:  98  notearg
+00375:  98  this
+00376:  98  getprop "ccbNode"
+00381:  98  notearg
+00382:  98  this
+00383:  98  getprop "m_downPic"
+00388:  98  notearg
+00389:  98  getlocal 3
+00392:  98  notearg
+00393:  98  call 3
+00396:  98  pop
+00397:  99  this
+00398:  99  getlocal 3
+00401:  99  setprop "m_downPic"
+00406:  99  pop
+00407:  99  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:80 ---
+;; function object[5] reductionCell
+;; function metadata object[5] nargs=0 bindings=4
+;; local[0] cellBg
+;; local[1] cellFrame
+;; local[2] topPic
+;; local[3] downPic
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:102 ---
+loc   line  op
+----- ----  --
+main:
+00000: 103  name "xs"
+00005: 103  getprop "Factorys"
+00010: 103  getprop "Sprite"
+00015: 103  dup
+00016: 103  callprop "create"
+00021: 103  swap
+00022: 103  notearg
+00023: 103  string "TiantixitongScene01_qizhidi"
+00028: 103  notearg
+00029: 103  string "TiantixitongScene01"
+00034: 103  notearg
+00035: 103  call 2
+00038: 103  setlocal 0
+00041: 103  pop
+00042: 104  name "xs"
+00047: 104  getprop "Utils"
+00052: 104  getprop "Node"
+00057: 104  dup
+00058: 104  callprop "replaceChildSafe"
+00063: 104  swap
+00064: 104  notearg
+00065: 104  this
+00066: 104  getprop "ccbNode"
+00071: 104  notearg
+00072: 104  this
+00073: 104  getprop "m_cellBg"
+00078: 104  notearg
+00079: 104  getlocal 0
+00082: 104  notearg
+00083: 104  call 3
+00086: 104  pop
+00087: 105  this
+00088: 105  getlocal 0
+00091: 105  setprop "m_cellBg"
+00096: 105  pop
+00097: 107  name "xs"
+00102: 107  getprop "Factorys"
+00107: 107  getprop "Sprite"
+00112: 107  dup
+00113: 107  callprop "create"
+00118: 107  swap
+00119: 107  notearg
+00120: 107  string "TiantixitongScene01_qizhidizhong"
+00125: 107  notearg
+00126: 107  string "TiantixitongScene01"
+00131: 107  notearg
+00132: 107  call 2
+00135: 107  setlocal 1
+00138: 107  pop
+00139: 108  name "xs"
+00144: 108  getprop "Utils"
+00149: 108  getprop "Node"
+00154: 108  dup
+00155: 108  callprop "replaceChildSafe"
+00160: 108  swap
+00161: 108  notearg
+00162: 108  this
+00163: 108  getprop "ccbNode"
+00168: 108  notearg
+00169: 108  this
+00170: 108  getprop "m_cellFrame"
+00175: 108  notearg
+00176: 108  getlocal 1
+00179: 108  notearg
+00180: 108  call 3
+00183: 108  pop
+00184: 109  this
+00185: 109  getlocal 1
+00188: 109  setprop "m_cellFrame"
+00193: 109  pop
+00194: 112  name "xs"
+00199: 112  getprop "Factorys"
+00204: 112  getprop "Sprite"
+00209: 112  dup
+00210: 112  callprop "create"
+00215: 112  swap
+00216: 112  notearg
+00217: 112  string "TiantixitongScene01_tupianzhuangshi"
+00222: 112  notearg
+00223: 112  string "TiantixitongScene01"
+00228: 112  notearg
+00229: 112  call 2
+00232: 112  setlocal 2
+00235: 112  pop
+00236: 113  name "xs"
+00241: 113  getprop "Utils"
+00246: 113  getprop "Node"
+00251: 113  dup
+00252: 113  callprop "replaceChildSafe"
+00257: 113  swap
+00258: 113  notearg
+00259: 113  this
+00260: 113  getprop "ccbNode"
+00265: 113  notearg
+00266: 113  this
+00267: 113  getprop "m_topPic"
+00272: 113  notearg
+00273: 113  getlocal 2
+00276: 113  notearg
+00277: 113  call 3
+00280: 113  pop
+00281: 114  this
+00282: 114  getlocal 2
+00285: 114  setprop "m_topPic"
+00290: 114  pop
+00291: 117  name "xs"
+00296: 117  getprop "Factorys"
+00301: 117  getprop "Sprite"
+00306: 117  dup
+00307: 117  callprop "create"
+00312: 117  swap
+00313: 117  notearg
+00314: 117  string "TiantixitongScene01_tupianzhuangshi"
+00319: 117  notearg
+00320: 117  string "TiantixitongScene01"
+00325: 117  notearg
+00326: 117  call 2
+00329: 117  setlocal 3
+00332: 117  pop
+00333: 118  getlocal 3
+00336: 118  dup
+00337: 118  callprop "setRotation"
+00342: 118  swap
+00343: 118  notearg
+00344: 118  uint16 180
+00347: 118  notearg
+00348: 118  call 1
+00351: 118  pop
+00352: 119  name "xs"
+00357: 119  getprop "Utils"
+00362: 119  getprop "Node"
+00367: 119  dup
+00368: 119  callprop "replaceChildSafe"
+00373: 119  swap
+00374: 119  notearg
+00375: 119  this
+00376: 119  getprop "ccbNode"
+00381: 119  notearg
+00382: 119  this
+00383: 119  getprop "m_downPic"
+00388: 119  notearg
+00389: 119  getlocal 3
+00392: 119  notearg
+00393: 119  call 3
+00396: 119  pop
+00397: 120  this
+00398: 120  getlocal 3
+00401: 120  setprop "m_downPic"
+00406: 120  pop
+00407: 120  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:102 ---
+;; function object[6] updateCell
+;; function metadata object[6] nargs=2 bindings=7
+;; arg[0] model
+;; arg[1] index
+;; local[0] _data
+;; local[1] _model
+;; local[2] pointProgressStr
+;; local[3] num
+;; local[4] pos
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=961 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:125 ---
+loc   line  op
+----- ----  --
+main:
+00000: 126  getarg 0
+00003: 126  null
+00004: 126  eq
+00005: 126  ifeq 28 (+23)
+00010: 127  this
+00011: 127  dup
+00012: 127  callprop "_updateCellBlank"
+00017: 127  swap
+00018: 127  notearg
+00019: 127  call 0
+00022: 127  pop
+00023: 127  goto 1050 (+1027)
+00028: 129  getarg 0
+00031: 129  or 43 (+12)
+00036: 129  pop
+00037: 129  newinit 1
+00042: 129  endinit
+00043: 129  setlocal 0
+00046: 129  pop
+00047: 130  name "xs"
+00052: 130  dup
+00053: 130  callprop "dump"
+00058: 130  swap
+00059: 130  notearg
+00060: 130  string "updateCell"
+00065: 130  notearg
+00066: 130  getlocal 0
+00069: 130  notearg
+00070: 130  call 2
+00073: 130  pop
+00074: 131  name "xs"
+00079: 131  getprop "Models"
+00084: 131  getprop "OtherPlayerInfo"
+00089: 131  dup
+00090: 131  callprop "create"
+00095: 131  swap
+00096: 131  notearg
+00097: 131  getlocal 0
+00100: 131  notearg
+00101: 131  call 1
+00104: 131  setlocal 1
+00107: 131  pop
+00108: 134  getlocal 0
+00111: 134  getprop "point_progress"
+00116: 134  setlocal 2
+00119: 134  pop
+00120: 135  callname "parseInt"
+00125: 135  implicitthis "parseInt"
+00130: 135  notearg
+00131: 135  getlocal 2
+00134: 135  notearg
+00135: 135  call 1
+00138: 135  uint16 1000
+00141: 135  ge
+00142: 135  ifeq 233 (+91)
+00147: 136  this
+00148: 136  getprop "m_cellIntro"
+00153: 136  dup
+00154: 136  callprop "setStringById"
+00159: 136  swap
+00160: 136  notearg
+00161: 136  string "climbPrompt_9"
+00166: 136  notearg
+00167: 136  call 1
+00170: 136  pop
+00171: 137  this
+00172: 137  dup
+00173: 137  callprop "replaceCellNode"
+00178: 137  swap
+00179: 137  notearg
+00180: 137  call 0
+00183: 137  pop
+00184: 138  callname "parseInt"
+00189: 138  implicitthis "parseInt"
+00194: 138  notearg
+00195: 138  getlocal 2
+00198: 138  notearg
+00199: 138  call 1
+00202: 138  uint16 1000
+00205: 138  sub
+00206: 138  setlocal 3
+00209: 138  pop
+00210: 139  getlocal 3
+00213: 139  dup
+00214: 139  callprop "toString"
+00219: 139  swap
+00220: 139  notearg
+00221: 139  call 0
+00224: 139  setlocal 2
+00227: 139  pop
+00228: 139  goto 270 (+42)
+00233: 143  this
+00234: 143  dup
+00235: 143  callprop "reductionCell"
+00240: 143  swap
+00241: 143  notearg
+00242: 143  call 0
+00245: 143  pop
+00246: 144  this
+00247: 144  getprop "m_cellIntro"
+00252: 144  dup
+00253: 144  callprop "setStringById"
+00258: 144  swap
+00259: 144  notearg
+00260: 144  string "ls_guoguan_zhanji"
+00265: 144  notearg
+00266: 144  call 1
+00269: 144  pop
+00270: 147  this
+00271: 147  getprop "ccbNode"
+00276: 147  dup
+00277: 147  callprop "getChildByTag"
+00282: 147  swap
+00283: 147  notearg
+00284: 147  one
+00285: 147  notearg
+00286: 147  call 1
+00289: 147  dup
+00290: 147  callprop "setString"
+00295: 147  swap
+00296: 147  notearg
+00297: 147  getlocal 0
+00300: 147  getprop "user_name"
+00305: 147  notearg
+00306: 147  call 1
+00309: 147  pop
+00310: 149  this
+00311: 149  dup
+00312: 149  callprop "setRankTitle"
+00317: 149  swap
+00318: 149  notearg
+00319: 149  getlocal 0
+00322: 149  getprop "rank"
+00327: 149  notearg
+00328: 149  int8 100
+00330: 149  notearg
+00331: 149  call 2
+00334: 149  pop
+00335: 152  this
+00336: 152  getprop "ccbNode"
+00341: 152  dup
+00342: 152  callprop "getChildByTag"
+00347: 152  swap
+00348: 152  notearg
+00349: 152  int8 2
+00351: 152  notearg
+00352: 152  call 1
+00355: 152  dup
+00356: 152  callprop "setString"
+00361: 152  swap
+00362: 152  notearg
+00363: 152  getlocal 0
+00366: 152  getprop "user_vip_level"
+00371: 152  string ""
+00376: 152  add
+00377: 152  notearg
+00378: 152  call 1
+00381: 152  pop
+00382: 154  this
+00383: 154  getprop "ccbNode"
+00388: 154  dup
+00389: 154  callprop "getChildByTag"
+00394: 154  swap
+00395: 154  notearg
+00396: 154  int8 3
+00398: 154  notearg
+00399: 154  call 1
+00402: 154  dup
+00403: 154  callprop "setString"
+00408: 154  swap
+00409: 154  notearg
+00410: 154  getlocal 0
+00413: 154  getprop "user_level"
+00418: 154  string ""
+00423: 154  add
+00424: 154  notearg
+00425: 154  call 1
+00428: 154  pop
+00429: 156  this
+00430: 156  getprop "ccbNode"
+00435: 156  dup
+00436: 156  callprop "getChildByTag"
+00441: 156  swap
+00442: 156  notearg
+00443: 156  int8 4
+00445: 156  notearg
+00446: 156  call 1
+00449: 156  dup
+00450: 156  callprop "setString"
+00455: 156  swap
+00456: 156  notearg
+00457: 156  getlocal 2
+00460: 156  string ""
+00465: 156  add
+00466: 156  notearg
+00467: 156  call 1
+00470: 156  pop
+00471: 158  this
+00472: 158  getprop "ccbNode"
+00477: 158  dup
+00478: 158  callprop "getChildByTag"
+00483: 158  swap
+00484: 158  notearg
+00485: 158  int8 5
+00487: 158  notearg
+00488: 158  call 1
+00491: 158  dup
+00492: 158  callprop "setString"
+00497: 158  swap
+00498: 158  notearg
+00499: 158  getlocal 0
+00502: 158  getprop "total_integration"
+00507: 158  string ""
+00512: 158  add
+00513: 158  notearg
+00514: 158  call 1
+00517: 158  pop
+00518: 160  this
+00519: 160  getprop "ccbNode"
+00524: 160  dup
+00525: 160  callprop "getChildByTag"
+00530: 160  swap
+00531: 160  notearg
+00532: 160  int8 6
+00534: 160  notearg
+00535: 160  call 1
+00538: 160  dup
+00539: 160  callprop "setString"
+00544: 160  swap
+00545: 160  notearg
+00546: 160  getlocal 0
+00549: 160  getprop "reward_gold"
+00554: 160  string ""
+00559: 160  add
+00560: 160  notearg
+00561: 160  call 1
+00564: 160  pop
+00565: 161  this
+00566: 161  getprop "ccbNode"
+00571: 161  dup
+00572: 161  callprop "getChildByTag"
+00577: 161  swap
+00578: 161  notearg
+00579: 161  int8 8
+00581: 161  notearg
+00582: 161  call 1
+00585: 161  dup
+00586: 161  callprop "setString"
+00591: 161  swap
+00592: 161  notearg
+00593: 161  getlocal 0
+00596: 161  getprop "reward_point"
+00601: 161  string ""
+00606: 161  add
+00607: 161  notearg
+00608: 161  call 1
+00611: 161  pop
+00612: 169  this
+00613: 169  getprop "ccbNode"
+00618: 169  dup
+00619: 169  callprop "getChildByTag"
+00624: 169  swap
+00625: 169  notearg
+00626: 169  int8 6
+00628: 169  notearg
+00629: 169  call 1
+00632: 169  dup
+00633: 169  callprop "setString"
+00638: 169  swap
+00639: 169  notearg
+00640: 169  getlocal 0
+00643: 169  getprop "reward_gold"
+00648: 169  string ""
+00653: 169  add
+00654: 169  notearg
+00655: 169  call 1
+00658: 169  pop
+00659: 170  name "xs"
+00664: 170  getprop "Utils"
+00669: 170  getprop "Node"
+00674: 170  dup
+00675: 170  callprop "safeRemoveChild"
+00680: 170  swap
+00681: 170  notearg
+00682: 170  this
+00683: 170  getprop "_generalView"
+00688: 170  notearg
+00689: 170  call 1
+00692: 170  pop
+00693: 172  getlocal 0
+00696: 172  getprop "general_id"
+00701: 172  ifeq 817 (+116)
+00706: 174  this
+00707: 174  getprop "ccbNode"
+00712: 174  dup
+00713: 174  callprop "getChildByTag"
+00718: 174  swap
+00719: 174  notearg
+00720: 174  int8 11
+00722: 174  notearg
+00723: 174  call 1
+00726: 174  dup
+00727: 174  callprop "getPosition"
+00732: 174  swap
+00733: 174  notearg
+00734: 174  call 0
+00737: 174  setlocal 4
+00740: 174  pop
+00741: 175  this
+00742: 175  getlocal 1
+00745: 175  dup
+00746: 175  callprop "createCardView_Chart"
+00751: 175  swap
+00752: 175  notearg
+00753: 175  call 0
+00756: 175  setprop "_generalView"
+00761: 175  pop
+00762: 176  name "xs"
+00767: 176  getprop "Utils"
+00772: 176  getprop "Node"
+00777: 176  dup
+00778: 176  callprop "attachNodes"
+00783: 176  swap
+00784: 176  notearg
+00785: 176  this
+00786: 176  getprop "ccbNode"
+00791: 176  dup
+00792: 176  callprop "getChildByTag"
+00797: 176  swap
+00798: 176  notearg
+00799: 176  int8 11
+00801: 176  notearg
+00802: 176  call 1
+00805: 176  notearg
+00806: 176  this
+00807: 176  getprop "_generalView"
+00812: 176  notearg
+00813: 176  call 2
+00816: 176  pop
+00817: 178  this
+00818: 178  getprop "ccbNode"
+00823: 178  dup
+00824: 178  callprop "getChildByTag"
+00829: 178  swap
+00830: 178  notearg
+00831: 178  int8 7
+00833: 178  notearg
+00834: 178  call 1
+00837: 178  dup
+00838: 178  callprop "getPosition"
+00843: 178  swap
+00844: 178  notearg
+00845: 178  call 0
+00848: 178  setlocal 4
+00851: 178  pop
+00852: 179  this
+00853: 179  getprop "ccbNode"
+00858: 179  dup
+00859: 179  callprop "getChildByTag"
+00864: 179  swap
+00865: 179  notearg
+00866: 179  int8 7
+00868: 179  notearg
+00869: 179  call 1
+00872: 179  dup
+00873: 179  callprop "setVisible"
+00878: 179  swap
+00879: 179  notearg
+00880: 179  false
+00881: 179  notearg
+00882: 179  call 1
+00885: 179  pop
+00886: 180  this
+00887: 180  name "xs"
+00892: 180  getprop "Views"
+00897: 180  getprop "Btn"
+00902: 180  dup
+00903: 180  callprop "create"
+00908: 180  swap
+00909: 180  notearg
+00910: 180  string "Btn_LineUp"
+00915: 180  notearg
+00916: 180  call 1
+00919: 180  setprop "_btn"
+00924: 180  pop
+00925: 181  this
+00926: 181  getprop "_btn"
+00931: 181  dup
+00932: 181  callprop "setPosition"
+00937: 181  swap
+00938: 181  notearg
+00939: 181  getlocal 4
+00942: 181  notearg
+00943: 181  call 1
+00946: 181  pop
+00947: 182  this
+00948: 182  getprop "_btn"
+00953: 182  dup
+00954: 182  callprop "setOnClickCallBack"
+00959: 182  swap
+00960: 182  notearg
+00961: 182  lambda (function () {
+    [sourceless code]
+})
+00966: 182  dup
+00967: 182  callprop "bind"
+00972: 182  swap
+00973: 182  notearg
+00974: 187  getlocal 0
+00977: 187  notearg
+00978: 187  call 1
+00981: 187  notearg
+00982: 187  call 1
+00985: 187  pop
+00986: 188  name "xs"
+00991: 188  getprop "Utils"
+00996: 188  getprop "Node"
+01001: 188  dup
+01002: 188  callprop "attachNodes"
+01007: 188  swap
+01008: 188  notearg
+01009: 188  this
+01010: 188  getprop "ccbNode"
+01015: 188  notearg
+01016: 188  this
+01017: 188  getprop "_btn"
+01022: 188  notearg
+01023: 188  false
+01024: 188  notearg
+01025: 188  newinit 1
+01030: 188  int8 6
+01032: 188  initprop "zOrder"
+01037: 188  int8 7
+01039: 188  initprop "tag"
+01044: 188  endinit
+01045: 188  notearg
+01046: 188  call 4
+01049: 188  pop
+01050: 189  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:125 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:182 ---
+loc   line  op
+----- ----  --
+main:
+00000: 183  name "xs"
+00005: 183  getprop "Tools"
+00010: 183  getprop "Net"
+00015: 183  dup
+00016: 183  callprop "getInstance"
+00021: 183  swap
+00022: 183  notearg
+00023: 183  call 0
+00026: 183  dup
+00027: 183  callprop "displayOtherTeamInfo"
+00032: 183  swap
+00033: 183  notearg
+00034: 183  newinit 1
+00039: 184  this
+00040: 184  getprop "user_id"
+00045: 184  initprop "other_user_id"
+00050: 184  endinit
+00051: 184  notearg
+00052: 184  call 1
+00055: 184  pop
+00056: 185  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:182 ---
+;; function object[7] setRankTitle
+;; function metadata object[7] nargs=2 bindings=4
+;; arg[0] rank
+;; arg[1] tag
+;; local[0] ranking
+;; local[1] labelPos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:191 ---
+loc   line  op
+----- ----  --
+main:
+00000: 192  name "xs"
+00005: 192  getprop "Utils"
+00010: 192  dup
+00011: 192  callprop "parseIntSafe"
+00016: 192  swap
+00017: 192  notearg
+00018: 192  getarg 0
+00021: 192  notearg
+00022: 192  call 1
+00025: 192  setlocal 0
+00028: 192  pop
+00029: 193  this
+00030: 193  this
+00031: 193  getprop "ccbNode"
+00036: 193  dup
+00037: 193  callprop "getChildByTag"
+00042: 193  swap
+00043: 193  notearg
+00044: 193  getarg 1
+00047: 193  notearg
+00048: 193  call 1
+00051: 193  setprop "m_ranking"
+00056: 193  pop
+00057: 194  getlocal 0
+00060: 194  int8 3
+00062: 194  le
+00063: 194  ifeq 441 (+378)
+00068: 195  this
+00069: 195  getprop "m_ranking"
+00074: 195  dup
+00075: 195  callprop "setVisible"
+00080: 195  swap
+00081: 195  notearg
+00082: 195  false
+00083: 195  notearg
+00084: 195  call 1
+00087: 195  pop
+00088: 196  this
+00089: 196  getprop "m_ranking"
+00094: 196  dup
+00095: 196  callprop "getPosition"
+00100: 196  swap
+00101: 196  notearg
+00102: 196  call 0
+00105: 196  setlocal 1
+00108: 196  pop
+00109: 197  this
+00110: 197  getprop "m_rankingSprite"
+00115: 197  ifeq 154 (+39)
+00120: 198  name "xs"
+00125: 198  getprop "Utils"
+00130: 198  getprop "Node"
+00135: 198  dup
+00136: 198  callprop "safeRemoveChild"
+00141: 198  swap
+00142: 198  notearg
+00143: 198  this
+00144: 198  getprop "m_rankingSprite"
+00149: 198  notearg
+00150: 198  call 1
+00153: 198  pop
+00154: 200  getlocal 0
+00157: 200  tableswitch defaultOffset 175 low 1 high 3
+	1: 25
+	2: 75
+	3: 125
+00182: 202  this
+00183: 202  name "xs"
+00188: 202  getprop "Factorys"
+00193: 202  getprop "Sprite"
+00198: 202  dup
+00199: 202  callprop "create"
+00204: 202  swap
+00205: 202  notearg
+00206: 202  string "Cmn01_Ladder_First"
+00211: 202  notearg
+00212: 202  string "Cmn01"
+00217: 202  notearg
+00218: 202  call 2
+00221: 202  setprop "m_rankingSprite"
+00226: 202  pop
+00227: 203  goto 366 (+139)
+00232: 205  this
+00233: 205  name "xs"
+00238: 205  getprop "Factorys"
+00243: 205  getprop "Sprite"
+00248: 205  dup
+00249: 205  callprop "create"
+00254: 205  swap
+00255: 205  notearg
+00256: 205  string "Cmn01_Ladder_Second"
+00261: 205  notearg
+00262: 205  string "Cmn01"
+00267: 205  notearg
+00268: 205  call 2
+00271: 205  setprop "m_rankingSprite"
+00276: 205  pop
+00277: 206  goto 366 (+89)
+00282: 208  this
+00283: 208  name "xs"
+00288: 208  getprop "Factorys"
+00293: 208  getprop "Sprite"
+00298: 208  dup
+00299: 208  callprop "create"
+00304: 208  swap
+00305: 208  notearg
+00306: 208  string "Cmn01_Ladder_Third"
+00311: 208  notearg
+00312: 208  string "Cmn01"
+00317: 208  notearg
+00318: 208  call 2
+00321: 208  setprop "m_rankingSprite"
+00326: 208  pop
+00327: 209  goto 366 (+39)
+00332: 211  name "xs"
+00337: 211  dup
+00338: 211  callprop "assert"
+00343: 211  swap
+00344: 211  notearg
+00345: 211  false
+00346: 211  notearg
+00347: 211  string "ranking is error!"
+00352: 211  notearg
+00353: 211  getlocal 0
+00356: 211  notearg
+00357: 211  call 3
+00360: 211  pop
+00361: 212  goto 366 (+5)
+00366: 214  this
+00367: 214  getprop "m_rankingSprite"
+00372: 214  dup
+00373: 214  callprop "setPosition"
+00378: 214  swap
+00379: 214  notearg
+00380: 214  getlocal 1
+00383: 214  notearg
+00384: 214  call 1
+00387: 214  pop
+00388: 215  this
+00389: 215  getprop "m_rankingSprite"
+00394: 215  dup
+00395: 215  callprop "setVisible"
+00400: 215  swap
+00401: 215  notearg
+00402: 215  true
+00403: 215  notearg
+00404: 215  call 1
+00407: 215  pop
+00408: 216  this
+00409: 216  getprop "ccbNode"
+00414: 216  dup
+00415: 216  callprop "addChild"
+00420: 216  swap
+00421: 216  notearg
+00422: 216  this
+00423: 216  getprop "m_rankingSprite"
+00428: 216  notearg
+00429: 216  int8 5
+00431: 216  notearg
+00432: 216  call 2
+00435: 216  pop
+00436: 216  goto 520 (+84)
+00441: 218  this
+00442: 218  getprop "m_ranking"
+00447: 218  dup
+00448: 218  callprop "setVisible"
+00453: 218  swap
+00454: 218  notearg
+00455: 218  true
+00456: 218  notearg
+00457: 218  call 1
+00460: 218  pop
+00461: 219  this
+00462: 219  getprop "m_rankingSprite"
+00467: 219  ifeq 492 (+25)
+00472: 220  this
+00473: 220  getprop "m_rankingSprite"
+00478: 220  dup
+00479: 220  callprop "setVisible"
+00484: 220  swap
+00485: 220  notearg
+00486: 220  false
+00487: 220  notearg
+00488: 220  call 1
+00491: 220  pop
+00492: 222  this
+00493: 222  getprop "m_ranking"
+00498: 222  dup
+00499: 222  callprop "setString"
+00504: 222  swap
+00505: 222  notearg
+00506: 222  getarg 0
+00509: 222  string ""
+00514: 222  add
+00515: 222  notearg
+00516: 222  call 1
+00519: 222  pop
+00520: 223  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:191 ---
+;; function object[8] _updateCellBlank
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:225 ---
+loc   line  op
+----- ----  --
+main:
+00000: 226  name "xs"
+00005: 226  getprop "Utils"
+00010: 226  getprop "Node"
+00015: 226  dup
+00016: 226  callprop "safeRemoveChild"
+00021: 226  swap
+00022: 226  notearg
+00023: 226  this
+00024: 226  getprop "ccbNode"
+00029: 226  notearg
+00030: 226  call 1
+00033: 226  pop
+00034: 227  this
+00035: 227  name "xs"
+00040: 227  getprop "ccb_reader"
+00045: 227  dup
+00046: 227  callprop "load"
+00051: 227  swap
+00052: 227  notearg
+00053: 227  string "ccb3/0_8_2_LadderChartCell.ccbi"
+00058: 227  notearg
+00059: 227  this
+00060: 227  notearg
+00061: 227  call 2
+00064: 227  setprop "ccbNode"
+00069: 227  pop
+00070: 228  this
+00071: 228  getprop "ccbNode"
+00076: 228  dup
+00077: 228  callprop "setContentSize"
+00082: 228  swap
+00083: 228  notearg
+00084: 228  name "cc"
+00089: 228  dup
+00090: 228  callprop "size"
+00095: 228  swap
+00096: 228  notearg
+00097: 228  uint16 247
+00100: 228  notearg
+00101: 228  uint16 517
+00104: 228  notearg
+00105: 228  call 2
+00108: 228  notearg
+00109: 228  call 1
+00112: 228  pop
+00113: 229  this
+00114: 229  getprop "ccbNode"
+00119: 229  dup
+00120: 229  callprop "setAnchorPoint"
+00125: 229  swap
+00126: 229  notearg
+00127: 229  name "cc"
+00132: 229  dup
+00133: 229  callprop "p"
+00138: 229  swap
+00139: 229  notearg
+00140: 229  zero
+00141: 229  notearg
+00142: 229  zero
+00143: 229  notearg
+00144: 229  call 2
+00147: 229  notearg
+00148: 229  call 1
+00151: 229  pop
+00152: 230  name "xs"
+00157: 230  getprop "Utils"
+00162: 230  getprop "Node"
+00167: 230  dup
+00168: 230  callprop "attachNodes"
+00173: 230  swap
+00174: 230  notearg
+00175: 230  this
+00176: 230  notearg
+00177: 230  this
+00178: 230  getprop "ccbNode"
+00183: 230  notearg
+00184: 230  newinit 1
+00189: 231  string "lb"
+00194: 231  initprop "desc"
+00199: 232  name "cc"
+00204: 232  dup
+00205: 232  callprop "p"
+00210: 232  swap
+00211: 232  notearg
+00212: 232  zero
+00213: 232  notearg
+00214: 232  zero
+00215: 232  notearg
+00216: 232  call 2
+00219: 232  initprop "offset"
+00224: 233  true
+00225: 233  initprop "sc"
+00230: 233  endinit
+00231: 233  notearg
+00232: 233  call 3
+00235: 233  pop
+00236: 235  this
+00237: 235  dup
+00238: 235  callprop "_setCellBlankVisibleFalse"
+00243: 235  swap
+00244: 235  notearg
+00245: 235  this
+00246: 235  getprop "ccbNode"
+00251: 235  notearg
+00252: 235  call 1
+00255: 235  pop
+00256: 236  this
+00257: 236  dup
+00258: 236  callprop "setRankTitle"
+00263: 236  swap
+00264: 236  notearg
+00265: 236  one
+00266: 236  notearg
+00267: 236  int8 19
+00269: 236  notearg
+00270: 236  call 2
+00273: 236  pop
+00274: 236  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:225 ---
+;; function object[9] _setCellBlankVisibleFalse
+;; function metadata object[9] nargs=1 bindings=4
+;; arg[0] ccbnode
+;; local[0] _tagArray
+;; local[1] i
+;; local[2] _subNode
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:246 ---
+loc   line  op
+----- ----  --
+main:
+00000: 247  newarray 6
+00004: 247  int8 18
+00006: 247  initelem_array 0
+00010: 247  int8 10
+00012: 247  initelem_array 1
+00016: 247  int8 14
+00018: 247  initelem_array 2
+00022: 247  int8 15
+00024: 247  initelem_array 3
+00028: 247  int8 100
+00030: 247  initelem_array 4
+00034: 247  int8 101
+00036: 247  initelem_array 5
+00040: 247  endinit
+00041: 247  setlocal 0
+00044: 247  pop
+00045: 248  getlocal 0
+00048: 248  length "length"
+00053: 248  one
+00054: 248  sub
+00055: 248  setlocal 1
+00058: 248  pop
+00059: 248  goto 133 (+74)
+00064: 249  loophead
+00065: 249  getarg 0
+00068: 249  dup
+00069: 249  callprop "getChildByTag"
+00074: 249  swap
+00075: 249  notearg
+00076: 249  getlocal 0
+00079: 249  getlocal 1
+00082: 249  getelem
+00083: 249  notearg
+00084: 249  call 1
+00087: 249  setlocal 2
+00090: 249  pop
+00091: 250  getlocal 2
+00094: 250  null
+00095: 250  ne
+00096: 250  ifeq 118 (+22)
+00101: 251  getlocal 2
+00104: 251  dup
+00105: 251  callprop "setVisible"
+00110: 251  swap
+00111: 251  notearg
+00112: 251  false
+00113: 251  notearg
+00114: 251  call 1
+00117: 251  pop
+00118: 248  localdec 11
+00121: 248  getlocal 1
+00124: 248  pos
+00125: 248  dup
+00126: 248  one
+00127: 248  sub
+00128: 248  setlocal 1
+00131: 248  pop
+00132: 248  pop
+00133: 248  loopentry
+00134: 248  getlocal 1
+00137: 248  zero
+00138: 248  ge
+00139: 248  ifne 64 (-75)
+00144: 253  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:246 ---
+;; function object[10] create
+;; function metadata object[10] nargs=2 bindings=3
+;; arg[0] model
+;; arg[1] index
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:286 ---
+loc   line  op
+----- ----  --
+main:
+00000: 287  name "xs"
+00005: 287  getprop "Views"
+00010: 287  getprop "ClimbLadderTableViewCell"
+00015: 287  undefined
+00016: 287  notearg
+00017: 287  new 0
+00020: 287  setlocal 0
+00023: 287  pop
+00024: 288  getlocal 0
+00027: 288  and 55 (+28)
+00032: 288  pop
+00033: 288  getlocal 0
+00036: 288  dup
+00037: 288  callprop "init"
+00042: 288  swap
+00043: 288  notearg
+00044: 288  getarg 0
+00047: 288  notearg
+00048: 288  getarg 1
+00051: 288  notearg
+00052: 288  call 2
+00055: 288  ifeq 64 (+9)
+00060: 289  getlocal 0
+00063: 289  return
+00064: 292  name "xs"
+00069: 292  dup
+00070: 292  callprop "assert"
+00075: 292  swap
+00076: 292  notearg
+00077: 292  false
+00078: 292  notearg
+00079: 292  string "xs.Views.ClimbLadderTableViewCell.create fail!"
+00084: 292  notearg
+00085: 292  getlocal 0
+00088: 292  notearg
+00089: 292  call 3
+00092: 292  pop
+00093: 293  null
+00094: 293  return
+00095: 293  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/ClimbLadderTableViewCell.js:286 ---

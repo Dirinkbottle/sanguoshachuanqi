@@ -1,0 +1,554 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/EasySdk/Payment.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=160 object[0]
+;; FUNCTION-MAP kind=lambda offset=170 object[1]
+;; FUNCTION-MAP kind=lambda offset=202 object[2]
+;; FUNCTION-MAP kind=lambda offset=228 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "EasySdk"
+00010:   6  name "xs"
+00015:   6  getprop "EasySdk"
+00020:   6  getprop "Payment"
+00025:   6  or 181 (+156)
+00030:   6  pop
+00031:   6  newinit 1
+00036:   8  newinit 1
+00041:   9  string "20000"
+00046:   9  initprop "Const_PayResult_Exception"
+00051:  10  string "20001"
+00056:  10  initprop "Const_PayResult_Finish"
+00061:  11  string "20002"
+00066:  11  initprop "Const_PayResult_Fail"
+00071:  12  string "20003"
+00076:  12  initprop "Const_PayResult_Fail_NetworkErr"
+00081:  13  string "20004"
+00086:  13  initprop "Const_PayResult_Cancel"
+00091:  14  string "20005"
+00096:  14  initprop "Const_PayResult_Now_Paying"
+00101:  15  string "20006"
+00106:  15  initprop "Const_PayResult_Fail_ProductInfoErr"
+00111:  15  endinit
+00112:  15  initprop "Protocol"
+00117:  18  newinit 1
+00122:  19  newinit 1
+00127:  20  newinit 1
+00132:  21  string "CmnPayment"
+00137:  21  initprop "CmnPayment"
+00142:  21  endinit
+00143:  21  initprop "Easy"
+00148:  21  endinit
+00149:  21  initprop "Notify_Event"
+00154:  21  endinit
+00155:  21  initprop "Const"
+00160:  27  lambda (function () {
+    [sourceless code]
+})
+00165:  27  initprop "registerCallBack"
+00170:  45  lambda (function () {
+    [sourceless code]
+})
+00175:  45  initprop "onEasySdkPaymentCallBack"
+00180:  45  endinit
+00181:  45  setprop "Payment"
+00186:  45  popv
+00187: 105  name "xs"
+00192: 105  getprop "EasySdk"
+00197: 105  getprop "Payment"
+00202: 105  lambda (function () {
+    [sourceless code]
+})
+00207: 105  setprop "setEasyAppKeyBase64"
+00212: 105  popv
+00213: 113  name "xs"
+00218: 113  getprop "EasySdk"
+00223: 113  getprop "Payment"
+00228: 113  lambda (function () {
+    [sourceless code]
+})
+00233: 113  setprop "getEasyAppKeyBase64"
+00238: 113  popv
+00239: 118  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:1 ---
+;; function object[0] registerCallBack
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=70 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  name "xsc"
+00005:  29  getprop "Tools"
+00010:  29  getprop "AccountSys"
+00015:  29  dup
+00016:  29  callprop "isUsingEasySdk"
+00021:  29  swap
+00022:  29  notearg
+00023:  29  call 0
+00026:  29  ifeq 93 (+67)
+00031:  31  name "xs"
+00036:  31  getprop "Cpp2Jsb"
+00041:  31  dup
+00042:  31  callprop "registerCallBack"
+00047:  31  swap
+00048:  31  notearg
+00049:  32  newarray 1
+00053:  32  string "EasySdk"
+00058:  32  initelem_array 0
+00062:  32  endinit
+00063:  32  notearg
+00064:  33  string "Payment"
+00069:  33  notearg
+00070:  34  lambda (function () {
+    [sourceless code]
+})
+00075:  34  dup
+00076:  34  callprop "bind"
+00081:  34  swap
+00082:  34  notearg
+00083:  38  this
+00084:  38  notearg
+00085:  38  call 1
+00088:  38  notearg
+00089:  38  call 3
+00092:  38  pop
+00093:  42  name "xs"
+00098:  42  getprop "Utils"
+00103:  42  getprop "Notify"
+00108:  42  dup
+00109:  42  callprop "addObserver"
+00114:  42  swap
+00115:  42  notearg
+00116:  42  this
+00117:  42  notearg
+00118:  42  this
+00119:  42  getprop "onEasySdkPaymentCallBack"
+00124:  42  notearg
+00125:  42  this
+00126:  42  getprop "Const"
+00131:  42  getprop "Notify_Event"
+00136:  42  getprop "Easy"
+00141:  42  getprop "CmnPayment"
+00146:  42  notearg
+00147:  42  call 3
+00150:  42  pop
+00151:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:27 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=6 bindings=7
+;; arg[0] system
+;; arg[1] module
+;; arg[2] version
+;; arg[3] codeAction
+;; arg[4] msg0
+;; arg[5] msg1
+;; local[0] arguments
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:34 ---
+loc   line  op
+----- ----  --
+00000:  34  arguments
+00001:  34  setlocal 0
+00004:  34  pop
+main:
+00005:  35  name "xs"
+00010:  35  dup
+00011:  35  callprop "log_zj"
+00016:  35  swap
+00017:  35  notearg
+00018:  35  string "EasySdk-onCallBack"
+00023:  35  notearg
+00024:  35  getlocal 0
+00027:  35  notearg
+00028:  35  call 2
+00031:  35  pop
+00032:  36  name "xs"
+00037:  36  getprop "Utils"
+00042:  36  getprop "Notify"
+00047:  36  dup
+00048:  36  callprop "postNotification"
+00053:  36  swap
+00054:  36  notearg
+00055:  36  this
+00056:  36  getprop "Const"
+00061:  36  getprop "Notify_Event"
+00066:  36  getprop "Easy"
+00071:  36  getprop "CmnPayment"
+00076:  36  notearg
+00077:  36  newinit 1
+00082:  36  getarg 3
+00085:  36  initprop "code"
+00090:  36  getarg 4
+00093:  36  initprop "msg"
+00098:  36  endinit
+00099:  36  notearg
+00100:  36  call 2
+00103:  36  pop
+00104:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:34 ---
+;; function object[1] onEasySdkPaymentCallBack
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] params
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  name "xs"
+00005:  47  dup
+00006:  47  callprop "log_zj"
+00011:  47  swap
+00012:  47  notearg
+00013:  47  string "onEasySdkCallBack"
+00018:  47  notearg
+00019:  47  getarg 0
+00022:  47  notearg
+00023:  47  call 2
+00026:  47  pop
+00027:  50  getarg 0
+00030:  50  getprop "code"
+00035:  50  condswitch
+00036:  51  name "xs"
+00041:  51  getprop "EasySdk"
+00046:  51  getprop "Protocol"
+00051:  51  getprop "Const_Init_Success"
+00056:  51  case 326 (+270)
+00061:  54  name "xs"
+00066:  54  getprop "EasySdk"
+00071:  54  getprop "Protocol"
+00076:  54  getprop "Const_Init_Fail"
+00081:  54  case 354 (+273)
+00086:  57  name "xs"
+00091:  57  getprop "EasySdk"
+00096:  57  getprop "Protocol"
+00101:  57  getprop "Const_Exception"
+00106:  57  case 382 (+276)
+00111:  61  name "xs"
+00116:  61  getprop "EasySdk"
+00121:  61  getprop "Payment"
+00126:  61  getprop "Protocol"
+00131:  61  getprop "Const_PayResult_Finish"
+00136:  61  case 414 (+278)
+00141:  68  name "xs"
+00146:  68  getprop "EasySdk"
+00151:  68  getprop "Payment"
+00156:  68  getprop "Protocol"
+00161:  68  getprop "Const_PayResult_Cancel"
+00166:  68  case 497 (+331)
+00171:  72  name "xs"
+00176:  72  getprop "EasySdk"
+00181:  72  getprop "Payment"
+00186:  72  getprop "Protocol"
+00191:  72  getprop "Const_PayResult_Fail"
+00196:  72  case 525 (+329)
+00201:  77  name "xs"
+00206:  77  getprop "EasySdk"
+00211:  77  getprop "Payment"
+00216:  77  getprop "Protocol"
+00221:  77  getprop "Const_PayResult_Fail_NetworkErr"
+00226:  77  case 613 (+387)
+00231:  82  name "xs"
+00236:  82  getprop "EasySdk"
+00241:  82  getprop "Payment"
+00246:  82  getprop "Protocol"
+00251:  82  getprop "Const_PayResult_Fail_ProductInfoErr"
+00256:  82  case 701 (+445)
+00261:  87  name "xs"
+00266:  87  getprop "EasySdk"
+00271:  87  getprop "Payment"
+00276:  87  getprop "Protocol"
+00281:  87  getprop "Const_PayResult_Exception"
+00286:  87  case 789 (+503)
+00291:  92  name "xs"
+00296:  92  getprop "EasySdk"
+00301:  92  getprop "Payment"
+00306:  92  getprop "Protocol"
+00311:  92  getprop "Const_PayResult_Now_Paying"
+00316:  92  case 877 (+561)
+00321:  92  default 965 (+644)
+00326:  52  name "xs"
+00331:  52  dup
+00332:  52  callprop "log"
+00337:  52  swap
+00338:  52  notearg
+00339:  52  string "Const_Init_Success"
+00344:  52  notearg
+00345:  52  call 1
+00348:  52  pop
+00349:  53  goto 1006 (+657)
+00354:  55  name "xs"
+00359:  55  dup
+00360:  55  callprop "log"
+00365:  55  swap
+00366:  55  notearg
+00367:  55  string "Const_Init_Fail"
+00372:  55  notearg
+00373:  55  call 1
+00376:  55  pop
+00377:  56  goto 1006 (+629)
+00382:  58  name "xs"
+00387:  58  dup
+00388:  58  callprop "error"
+00393:  58  swap
+00394:  58  notearg
+00395:  58  string "\u5F02\u5E38"
+00400:  58  notearg
+00401:  58  getarg 0
+00404:  58  notearg
+00405:  58  call 2
+00408:  58  pop
+00409:  59  goto 1006 (+597)
+00414:  62  name "xs"
+00419:  62  dup
+00420:  62  callprop "log"
+00425:  62  swap
+00426:  62  notearg
+00427:  62  string "\u652F\u4ED8\u6210\u529F"
+00432:  62  notearg
+00433:  62  call 1
+00436:  62  pop
+00437:  64  name "xs"
+00442:  64  getprop "Views"
+00447:  64  getprop "Mgr"
+00452:  64  dup
+00453:  64  callprop "showDialogByName"
+00458:  64  swap
+00459:  64  notearg
+00460:  64  string "CheckOrderDialog"
+00465:  64  notearg
+00466:  65  newinit 1
+00471:  65  name "xs"
+00476:  65  getprop "Constant_Pay_Source_EasySdk"
+00481:  65  initprop "channelId"
+00486:  65  endinit
+00487:  65  notearg
+00488:  65  call 2
+00491:  65  pop
+00492:  66  goto 1006 (+514)
+00497:  69  name "xs"
+00502:  69  dup
+00503:  69  callprop "log"
+00508:  69  swap
+00509:  69  notearg
+00510:  69  string "\u652F\u4ED8\u53D6\u6D88"
+00515:  69  notearg
+00516:  69  call 1
+00519:  69  pop
+00520:  70  goto 1006 (+486)
+00525:  73  name "xs"
+00530:  73  dup
+00531:  73  callprop "log"
+00536:  73  swap
+00537:  73  notearg
+00538:  73  string "\u652F\u4ED8\u5931\u8D25"
+00543:  73  notearg
+00544:  73  call 1
+00547:  73  pop
+00548:  74  name "xs"
+00553:  74  getprop "Views"
+00558:  74  getprop "Mgr"
+00563:  74  dup
+00564:  74  callprop "showToast"
+00569:  74  swap
+00570:  74  notearg
+00571:  74  name "xs"
+00576:  74  getprop "Tools"
+00581:  74  getprop "String"
+00586:  74  dup
+00587:  74  callprop "createString"
+00592:  74  swap
+00593:  74  notearg
+00594:  74  string "easy_payFail"
+00599:  74  notearg
+00600:  74  call 1
+00603:  74  notearg
+00604:  74  call 1
+00607:  74  pop
+00608:  75  goto 1006 (+398)
+00613:  78  name "xs"
+00618:  78  dup
+00619:  78  callprop "log"
+00624:  78  swap
+00625:  78  notearg
+00626:  78  string "\u652F\u4ED8\u5931\u8D25,\u7F51\u7EDC\u9519\u8BEF"
+00631:  78  notearg
+00632:  78  call 1
+00635:  78  pop
+00636:  79  name "xs"
+00641:  79  getprop "Views"
+00646:  79  getprop "Mgr"
+00651:  79  dup
+00652:  79  callprop "showToast"
+00657:  79  swap
+00658:  79  notearg
+00659:  79  name "xs"
+00664:  79  getprop "Tools"
+00669:  79  getprop "String"
+00674:  79  dup
+00675:  79  callprop "createString"
+00680:  79  swap
+00681:  79  notearg
+00682:  79  string "easy_payFail_NetworkErr"
+00687:  79  notearg
+00688:  79  call 1
+00691:  79  notearg
+00692:  79  call 1
+00695:  79  pop
+00696:  80  goto 1006 (+310)
+00701:  83  name "xs"
+00706:  83  dup
+00707:  83  callprop "log"
+00712:  83  swap
+00713:  83  notearg
+00714:  83  string "\u652F\u4ED8\u5931\u8D25,\u8BA2\u5355\u4FE1\u606F\u9519\u8BEF"
+00719:  83  notearg
+00720:  83  call 1
+00723:  83  pop
+00724:  84  name "xs"
+00729:  84  getprop "Views"
+00734:  84  getprop "Mgr"
+00739:  84  dup
+00740:  84  callprop "showToast"
+00745:  84  swap
+00746:  84  notearg
+00747:  84  name "xs"
+00752:  84  getprop "Tools"
+00757:  84  getprop "String"
+00762:  84  dup
+00763:  84  callprop "createString"
+00768:  84  swap
+00769:  84  notearg
+00770:  84  string "easy_payFail_ProductInfoErr"
+00775:  84  notearg
+00776:  84  call 1
+00779:  84  notearg
+00780:  84  call 1
+00783:  84  pop
+00784:  85  goto 1006 (+222)
+00789:  88  name "xs"
+00794:  88  dup
+00795:  88  callprop "log"
+00800:  88  swap
+00801:  88  notearg
+00802:  88  string "\u652F\u4ED8\u5F02\u5E38"
+00807:  88  notearg
+00808:  88  call 1
+00811:  88  pop
+00812:  89  name "xs"
+00817:  89  getprop "Views"
+00822:  89  getprop "Mgr"
+00827:  89  dup
+00828:  89  callprop "showToast"
+00833:  89  swap
+00834:  89  notearg
+00835:  89  name "xs"
+00840:  89  getprop "Tools"
+00845:  89  getprop "String"
+00850:  89  dup
+00851:  89  callprop "createString"
+00856:  89  swap
+00857:  89  notearg
+00858:  89  string "easy_payFail_Exception"
+00863:  89  notearg
+00864:  89  call 1
+00867:  89  notearg
+00868:  89  call 1
+00871:  89  pop
+00872:  90  goto 1006 (+134)
+00877:  93  name "xs"
+00882:  93  dup
+00883:  93  callprop "log"
+00888:  93  swap
+00889:  93  notearg
+00890:  93  string "\u6B63\u5728\u652F\u4ED8\u4E2D"
+00895:  93  notearg
+00896:  93  call 1
+00899:  93  pop
+00900:  94  name "xs"
+00905:  94  getprop "Views"
+00910:  94  getprop "Mgr"
+00915:  94  dup
+00916:  94  callprop "showToast"
+00921:  94  swap
+00922:  94  notearg
+00923:  94  name "xs"
+00928:  94  getprop "Tools"
+00933:  94  getprop "String"
+00938:  94  dup
+00939:  94  callprop "createString"
+00944:  94  swap
+00945:  94  notearg
+00946:  94  string "easy_payFail_NowPaying"
+00951:  94  notearg
+00952:  94  call 1
+00955:  94  notearg
+00956:  94  call 1
+00959:  94  pop
+00960:  95  goto 1006 (+46)
+00965:  98  name "xs"
+00970:  98  getprop "Views"
+00975:  98  getprop "Mgr"
+00980:  98  dup
+00981:  98  callprop "showToast"
+00986:  98  swap
+00987:  98  notearg
+00988:  98  getarg 0
+00991:  98  getprop "msg"
+00996:  98  notearg
+00997:  98  call 1
+01000:  98  pop
+01001:  99  goto 1006 (+5)
+01006: 100  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:45 ---
+;; function object[2] setEasyAppKeyBase64
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] info
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:105 ---
+loc   line  op
+----- ----  --
+main:
+00000: 106  getarg 0
+00003: 106  ifeq 23 (+20)
+00008: 107  this
+00009: 107  getarg 0
+00012: 107  setprop "easy_appkey_base64"
+00017: 107  pop
+00018: 107  goto 35 (+17)
+00023: 109  this
+00024: 109  string ""
+00029: 109  setprop "easy_appkey_base64"
+00034: 109  pop
+00035: 109  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:105 ---
+;; function object[3] getEasyAppKeyBase64
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:113 ---
+loc   line  op
+----- ----  --
+main:
+00000: 114  this
+00001: 114  getprop "easy_appkey_base64"
+00006: 114  ifeq 23 (+17)
+00011: 115  this
+00012: 115  getprop "easy_appkey_base64"
+00017: 115  return
+00018: 115  goto 29 (+11)
+00023: 117  string ""
+00028: 117  return
+00029: 117  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/EasySdk/Payment.js:113 ---

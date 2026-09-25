@@ -1,0 +1,596 @@
+{
+  "input": "Recovered/src_jsc/Models/headers.js.disasm.txt",
+  "outline": "Recovered/src_jsc/Models/headers.js.structure.md",
+  "sourceTextRecovered": false,
+  "output": "src_jsc/Models/headers.js",
+  "scriptBodies": 1,
+  "instructions": 181,
+  "translatedOpcodeInstructions": 181,
+  "recoveryRate": 1.0,
+  "structuredForInLoops": 0,
+  "structuredTryCatchBlocks": 0,
+  "structuredDoWhileLoops": 0,
+  "structuredConditionalSwitches": 0,
+  "sharedDefaultSwitchJoins": 0,
+  "sharedDefaultConditionalSwitchJoins": 0,
+  "sharedDefaultTableSwitchJoins": 0,
+  "unresolvedOpcodes": {},
+  "emittedTodoMarkersByOpcode": {},
+  "approximateOpcodes": {},
+  "functionLinksMissing": 0,
+  "detachedFunctionBodies": 0,
+  "cfg": {
+    "blocks": 3,
+    "edges": 3,
+    "stackMergeConflicts": 0,
+    "unreachableBlocks": 0,
+    "anomalies": []
+  },
+  "expressionSimulation": {
+    "stackUnderflows": 0,
+    "stackUnknownEffects": 0,
+    "residualValues": 0,
+    "stackMergeConflicts": 0
+  },
+  "sourceLineRange": [
+    12,
+    138
+  ],
+  "startupOrder": 201,
+  "dependencies": [
+    {
+      "to": "src_jsc/Models/Base.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Base.js",
+      "line": "27"
+    },
+    {
+      "to": "src_jsc/Models/BaseCfg.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/BaseCfg.js",
+      "line": "29"
+    },
+    {
+      "to": "src_jsc/Models/UpgradeCfg/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/UpgradeCfg/headers.js",
+      "line": "31"
+    },
+    {
+      "to": "src_jsc/Models/Style/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Style/headers.js",
+      "line": "33"
+    },
+    {
+      "to": "src_jsc/Models/TmpInfo/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/TmpInfo/headers.js",
+      "line": "35"
+    },
+    {
+      "to": "src_jsc/Models/Res/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Res/headers.js",
+      "line": "37"
+    },
+    {
+      "to": "src_jsc/Models/Fight/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Fight/headers.js",
+      "line": "39"
+    },
+    {
+      "to": "src_jsc/Models/PartyEvent.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/PartyEvent.js",
+      "line": "41"
+    },
+    {
+      "to": "src_jsc/Models/Party.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Party.js",
+      "line": "43"
+    },
+    {
+      "to": "src_jsc/Models/Feast.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Feast.js",
+      "line": "45"
+    },
+    {
+      "to": "src_jsc/Models/PushInfo.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/PushInfo.js",
+      "line": "47"
+    },
+    {
+      "to": "src_jsc/Models/AdInfo.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/AdInfo.js",
+      "line": "49"
+    },
+    {
+      "to": "src_jsc/Models/Resource.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Resource.js",
+      "line": "51"
+    },
+    {
+      "to": "src_jsc/Models/Fate.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Fate.js",
+      "line": "53"
+    },
+    {
+      "to": "src_jsc/Models/Card.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Card.js",
+      "line": "55"
+    },
+    {
+      "to": "src_jsc/Models/Combat.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Combat.js",
+      "line": "57"
+    },
+    {
+      "to": "src_jsc/Models/Equipment.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Equipment.js",
+      "line": "59"
+    },
+    {
+      "to": "src_jsc/Models/EquipmentPiece.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/EquipmentPiece.js",
+      "line": "61"
+    },
+    {
+      "to": "src_jsc/Models/EquipmentExchange.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/EquipmentExchange.js",
+      "line": "63"
+    },
+    {
+      "to": "src_jsc/Models/SkillExpCfg.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/SkillExpCfg.js",
+      "line": "65"
+    },
+    {
+      "to": "src_jsc/Models/Skill.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Skill.js",
+      "line": "67"
+    },
+    {
+      "to": "src_jsc/Models/SkillEffect.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/SkillEffect.js",
+      "line": "69"
+    },
+    {
+      "to": "src_jsc/Models/General.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/General.js",
+      "line": "71"
+    },
+    {
+      "to": "src_jsc/Models/GeneralSoul.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/GeneralSoul.js",
+      "line": "73"
+    },
+    {
+      "to": "src_jsc/Models/TeamGeneral.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/TeamGeneral.js",
+      "line": "75"
+    },
+    {
+      "to": "src_jsc/Models/Good.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Good.js",
+      "line": "77"
+    },
+    {
+      "to": "src_jsc/Models/Item.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Item.js",
+      "line": "79"
+    },
+    {
+      "to": "src_jsc/Models/Add.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Add.js",
+      "line": "81"
+    },
+    {
+      "to": "src_jsc/Models/AddShowList.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/AddShowList.js",
+      "line": "83"
+    },
+    {
+      "to": "src_jsc/Models/Player.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Player.js",
+      "line": "85"
+    },
+    {
+      "to": "src_jsc/Models/VipCfg.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/VipCfg.js",
+      "line": "87"
+    },
+    {
+      "to": "src_jsc/Models/PlayerAttr.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/PlayerAttr.js",
+      "line": "89"
+    },
+    {
+      "to": "src_jsc/Models/Union.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Union.js",
+      "line": "91"
+    },
+    {
+      "to": "src_jsc/Models/UnionMember.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/UnionMember.js",
+      "line": "93"
+    },
+    {
+      "to": "src_jsc/Models/Game/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Game/headers.js",
+      "line": "95"
+    },
+    {
+      "to": "src_jsc/Models/FightStoryItem.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/FightStoryItem.js",
+      "line": "97"
+    },
+    {
+      "to": "src_jsc/Models/GeneralTraining.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/GeneralTraining.js",
+      "line": "99"
+    },
+    {
+      "to": "src_jsc/Models/CultureMedicine.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/CultureMedicine.js",
+      "line": "101"
+    },
+    {
+      "to": "src_jsc/Models/HD.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/HD.js",
+      "line": "103"
+    },
+    {
+      "to": "src_jsc/Models/Chapter.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Chapter.js",
+      "line": "107"
+    },
+    {
+      "to": "src_jsc/Models/Dungeon.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Dungeon.js",
+      "line": "109"
+    },
+    {
+      "to": "src_jsc/Models/TreasureBox.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/TreasureBox.js",
+      "line": "111"
+    },
+    {
+      "to": "src_jsc/Models/ToastModel.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/ToastModel.js",
+      "line": "113"
+    },
+    {
+      "to": "src_jsc/Models/ToastResult.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/ToastResult.js",
+      "line": "115"
+    },
+    {
+      "to": "src_jsc/Models/ShowData.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/ShowData.js",
+      "line": "117"
+    },
+    {
+      "to": "src_jsc/Models/DataWrapped.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/DataWrapped.js",
+      "line": "119"
+    },
+    {
+      "to": "src_jsc/Models/Atlas.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Atlas.js",
+      "line": "121"
+    },
+    {
+      "to": "src_jsc/Models/BreachModel.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/BreachModel.js",
+      "line": "123"
+    },
+    {
+      "to": "src_jsc/Models/TransmissionModel.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/TransmissionModel.js",
+      "line": "125"
+    },
+    {
+      "to": "src_jsc/Models/SellCfg.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/SellCfg.js",
+      "line": "127"
+    },
+    {
+      "to": "src_jsc/Models/LadderModel.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/LadderModel.js",
+      "line": "129"
+    },
+    {
+      "to": "src_jsc/Models/OtherPlayerInfo.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/OtherPlayerInfo.js",
+      "line": "131"
+    },
+    {
+      "to": "src_jsc/Models/SkillPiece.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/SkillPiece.js",
+      "line": "133"
+    },
+    {
+      "to": "src_jsc/Models/Surrender.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Surrender.js",
+      "line": "135"
+    },
+    {
+      "to": "src_jsc/Models/Mail.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Mail.js",
+      "line": "137"
+    },
+    {
+      "to": "src_jsc/Models/HintModel.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/HintModel.js",
+      "line": "139"
+    },
+    {
+      "to": "src_jsc/Models/Chat.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Chat.js",
+      "line": "141"
+    },
+    {
+      "to": "src_jsc/Models/ChatMessageManager.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/ChatMessageManager.js",
+      "line": "143"
+    },
+    {
+      "to": "src_jsc/Models/DailyAdventure.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/DailyAdventure.js",
+      "line": "145"
+    },
+    {
+      "to": "src_jsc/Models/Task.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Task.js",
+      "line": "147"
+    },
+    {
+      "to": "src_jsc/Models/BuddyGeneral.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/BuddyGeneral.js",
+      "line": "149"
+    },
+    {
+      "to": "src_jsc/Models/UnionWar.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/UnionWar.js",
+      "line": "151"
+    },
+    {
+      "to": "src_jsc/Models/UnionWarPlayer.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/UnionWarPlayer.js",
+      "line": "153"
+    },
+    {
+      "to": "src_jsc/Models/UnionWarBattleInfo.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/UnionWarBattleInfo.js",
+      "line": "155"
+    },
+    {
+      "to": "src_jsc/Models/UnionWarFightingProcess.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/UnionWarFightingProcess.js",
+      "line": "157"
+    },
+    {
+      "to": "src_jsc/Models/UnionWarBattleFightInfo.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/UnionWarBattleFightInfo.js",
+      "line": "159"
+    },
+    {
+      "to": "src_jsc/Models/Gems.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Gems.js",
+      "line": "161"
+    },
+    {
+      "to": "src_jsc/Models/WorshipEntry.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/WorshipEntry.js",
+      "line": "163"
+    },
+    {
+      "to": "src_jsc/Models/Account/AccountInfo.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Account/AccountInfo.js",
+      "line": "165"
+    },
+    {
+      "to": "src_jsc/Models/MagicalEqu.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/MagicalEqu.js",
+      "line": "167"
+    },
+    {
+      "to": "src_jsc/Models/MagicalEquPoint.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/MagicalEquPoint.js",
+      "line": "169"
+    },
+    {
+      "to": "src_jsc/Models/Goddess.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Goddess.js",
+      "line": "171"
+    },
+    {
+      "to": "src_jsc/Models/MeltCfg.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/MeltCfg.js",
+      "line": "173"
+    },
+    {
+      "to": "src_jsc/Models/MeridianTop.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/MeridianTop.js",
+      "line": "175"
+    },
+    {
+      "to": "src_jsc/Models/Meridian.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/Meridian.js",
+      "line": "177"
+    },
+    {
+      "to": "src_jsc/Models/MeridianPoint.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/MeridianPoint.js",
+      "line": "179"
+    },
+    {
+      "to": "src_jsc/Models/GoddessFate.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/GoddessFate.js",
+      "line": "181"
+    },
+    {
+      "to": "src_jsc/Models/EvolutionInfo.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/EvolutionInfo.js",
+      "line": "183"
+    },
+    {
+      "to": "src_jsc/Models/GeneralPreview.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Models/GeneralPreview.js",
+      "line": "185"
+    }
+  ],
+  "manualReviewRecommended": false
+}

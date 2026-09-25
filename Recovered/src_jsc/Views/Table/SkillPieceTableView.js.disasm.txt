@@ -1,0 +1,508 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/SkillPieceTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+;; FUNCTION-MAP kind=lambda offset=68 object[1]
+;; FUNCTION-MAP kind=lambda offset=78 object[2]
+;; FUNCTION-MAP kind=lambda offset=88 object[3]
+;; FUNCTION-MAP kind=lambda offset=98 object[4]
+;; FUNCTION-MAP kind=lambda offset=108 object[5]
+;; FUNCTION-MAP kind=lambda offset=118 object[6]
+;; FUNCTION-MAP kind=lambda offset=128 object[7]
+;; FUNCTION-MAP kind=lambda offset=138 object[8]
+;; FUNCTION-MAP kind=lambda offset=148 object[9]
+;; FUNCTION-MAP kind=lambda offset=189 object[10]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  getprop "Table"
+00015:   6  name "xs"
+00020:   6  getprop "Views"
+00025:   6  getprop "Table"
+00030:   6  getprop "BaseTableView"
+00035:   6  dup
+00036:   6  callprop "extend"
+00041:   6  swap
+00042:   6  notearg
+00043:   6  newinit 1
+00048:   8  string "SkillPieceTableView"
+00053:   8  initprop "name"
+00058:  10  lambda (function () {
+    [sourceless code]
+})
+00063:  10  initprop "init"
+00068:  29  lambda (function () {
+    [sourceless code]
+})
+00073:  29  initprop "refreshData"
+00078:  34  lambda (function () {
+    [sourceless code]
+})
+00083:  34  initprop "createCell"
+00088:  39  lambda (function () {
+    [sourceless code]
+})
+00093:  39  initprop "makeViewSize"
+00098:  44  lambda (function () {
+    [sourceless code]
+})
+00103:  44  initprop "makeCellSize"
+00108:  48  lambda (function () {
+    [sourceless code]
+})
+00113:  48  initprop "tableCellTouched"
+00118:  54  lambda (function () {
+    [sourceless code]
+})
+00123:  54  initprop "setIdx"
+00128:  67  lambda (function () {
+    [sourceless code]
+})
+00133:  67  initprop "next"
+00138:  74  lambda (function () {
+    [sourceless code]
+})
+00143:  74  initprop "prev"
+00148:  84  lambda (function () {
+    [sourceless code]
+})
+00153:  84  initprop "setListener"
+00158:  84  endinit
+00159:  84  notearg
+00160:  84  call 1
+00163:  84  setprop "SkillPieceTableView"
+00168:  84  popv
+00169:  90  name "xs"
+00174:  90  getprop "Views"
+00179:  90  getprop "Table"
+00184:  90  getprop "SkillPieceTableView"
+00189:  90  lambda (function () {
+    [sourceless code]
+})
+00194:  90  setprop "create"
+00199:  90  popv
+00200:  98  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=2 bindings=2
+;; arg[0] skillPieces
+;; arg[1] viewSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  getarg 1
+00004:  11  setprop "viewSize"
+00009:  11  pop
+00010:  12  this
+00011:  12  dup
+00012:  12  callprop "_super"
+00017:  12  swap
+00018:  12  notearg
+00019:  12  call 0
+00022:  12  not
+00023:  12  ifeq 30 (+7)
+00028:  13  false
+00029:  13  return
+00030:  15  this
+00031:  15  getarg 0
+00034:  15  setprop "arrayModel"
+00039:  15  pop
+00040:  17  this
+00041:  17  dup
+00042:  17  callprop "setDirection"
+00047:  17  swap
+00048:  17  notearg
+00049:  17  name "cc"
+00054:  17  getprop "SCROLLVIEW_DIRECTION_HORIZONTAL"
+00059:  17  notearg
+00060:  17  call 1
+00063:  17  pop
+00064:  18  this
+00065:  18  dup
+00066:  18  callprop "setVerticalFillOrder"
+00071:  18  swap
+00072:  18  notearg
+00073:  18  name "cc"
+00078:  18  getprop "TABLEVIEW_FILL_TOPDOWN"
+00083:  18  notearg
+00084:  18  call 1
+00087:  18  pop
+00088:  20  this
+00089:  20  zero
+00090:  20  setprop "selectedIdx"
+00095:  20  pop
+00096:  24  true
+00097:  24  return
+00098:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:10 ---
+;; function object[1] refreshData
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:29 ---
+;; function object[2] createCell
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  name "xs"
+00005:  35  getprop "Views"
+00010:  35  getprop "SkillPieceTableViewCell"
+00015:  35  dup
+00016:  35  callprop "create"
+00021:  35  swap
+00022:  35  notearg
+00023:  35  this
+00024:  35  getprop "arrayModel"
+00029:  35  getarg 0
+00032:  35  getelem
+00033:  35  notearg
+00034:  35  call 1
+00037:  35  return
+00038:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:34 ---
+;; function object[3] makeViewSize
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  this
+00001:  41  getprop "viewSize"
+00006:  41  return
+00007:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:39 ---
+;; function object[4] makeCellSize
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  name "cc"
+00005:  45  dup
+00006:  45  callprop "size"
+00011:  45  swap
+00012:  45  notearg
+00013:  45  int8 100
+00015:  45  notearg
+00016:  45  int8 94
+00018:  45  notearg
+00019:  45  call 2
+00022:  45  return
+00023:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:44 ---
+;; function object[5] tableCellTouched
+;; function metadata object[5] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:48 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  this
+00001:  50  getarg 1
+00004:  50  dup
+00005:  50  callprop "getIdx"
+00010:  50  swap
+00011:  50  notearg
+00012:  50  call 0
+00015:  50  setprop "selectedIdx"
+00020:  50  pop
+00021:  51  this
+00022:  51  getprop "m_listener"
+00027:  51  dup
+00028:  51  callprop "setCurSelectByIdx"
+00033:  51  swap
+00034:  51  notearg
+00035:  51  this
+00036:  51  getprop "selectedIdx"
+00041:  51  notearg
+00042:  51  call 1
+00045:  51  pop
+00046:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:48 ---
+;; function object[6] setIdx
+;; function metadata object[6] nargs=1 bindings=2
+;; arg[0] mIdx
+;; local[0] contentOffset_y
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:54 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  this
+00001:  56  dup
+00002:  56  callprop "getContentOffset"
+00007:  56  swap
+00008:  56  notearg
+00009:  56  call 0
+00012:  56  getprop "y"
+00017:  56  setlocal 0
+00020:  56  pop
+00021:  57  getarg 0
+00024:  57  zero
+00025:  57  ge
+00026:  57  and 47 (+21)
+00031:  57  pop
+00032:  57  getarg 0
+00035:  57  this
+00036:  57  getprop "arrayModel"
+00041:  57  length "length"
+00046:  57  lt
+00047:  57  ifeq 67 (+20)
+00052:  58  this
+00053:  58  getarg 0
+00056:  58  setprop "selectedIdx"
+00061:  58  pop
+00062:  58  goto 75 (+13)
+00067:  60  this
+00068:  60  zero
+00069:  60  setprop "selectedIdx"
+00074:  60  pop
+00075:  63  this
+00076:  63  dup
+00077:  63  callprop "setContentOffset"
+00082:  63  swap
+00083:  63  notearg
+00084:  63  name "cc"
+00089:  63  dup
+00090:  63  callprop "p"
+00095:  63  swap
+00096:  63  notearg
+00097:  63  int8 -100
+00099:  63  this
+00100:  63  getprop "selectedIdx"
+00105:  63  mul
+00106:  63  notearg
+00107:  63  getlocal 0
+00110:  63  notearg
+00111:  63  call 2
+00114:  63  notearg
+00115:  63  true
+00116:  63  notearg
+00117:  63  call 2
+00120:  63  pop
+00121:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:54 ---
+;; function object[7] next
+;; function metadata object[7] nargs=0 bindings=1
+;; local[0] contentOffset_y
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:67 ---
+loc   line  op
+----- ----  --
+main:
+00000:  68  this
+00001:  68  dup
+00002:  68  callprop "getContentOffset"
+00007:  68  swap
+00008:  68  notearg
+00009:  68  call 0
+00012:  68  getprop "y"
+00017:  68  setlocal 0
+00020:  68  pop
+00021:  69  this
+00022:  69  this
+00023:  69  incprop "selectedIdx"
+00029:  69  dup
+00030:  69  getprop "selectedIdx"
+00035:  69  pos
+00036:  69  one
+00037:  69  add
+00038:  69  setprop "selectedIdx"
+00043:  69  this
+00044:  69  getprop "arrayModel"
+00049:  69  length "length"
+00054:  69  mod
+00055:  69  setprop "selectedIdx"
+00060:  69  pop
+00061:  71  this
+00062:  71  dup
+00063:  71  callprop "setContentOffset"
+00068:  71  swap
+00069:  71  notearg
+00070:  71  name "cc"
+00075:  71  dup
+00076:  71  callprop "p"
+00081:  71  swap
+00082:  71  notearg
+00083:  71  int8 -100
+00085:  71  this
+00086:  71  getprop "selectedIdx"
+00091:  71  mul
+00092:  71  notearg
+00093:  71  getlocal 0
+00096:  71  notearg
+00097:  71  call 2
+00100:  71  notearg
+00101:  71  true
+00102:  71  notearg
+00103:  71  call 2
+00106:  71  pop
+00107:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:67 ---
+;; function object[8] prev
+;; function metadata object[8] nargs=0 bindings=1
+;; local[0] contentOffset_y
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:74 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  this
+00001:  75  dup
+00002:  75  callprop "getContentOffset"
+00007:  75  swap
+00008:  75  notearg
+00009:  75  call 0
+00012:  75  getprop "y"
+00017:  75  setlocal 0
+00020:  75  pop
+00021:  76  this
+00022:  76  getprop "selectedIdx"
+00027:  76  zero
+00028:  76  gt
+00029:  76  ifeq 66 (+37)
+00034:  77  this
+00035:  77  propdec "selectedIdx"
+00041:  77  dup
+00042:  77  getprop "selectedIdx"
+00047:  77  pos
+00048:  77  dup
+00049:  77  one
+00050:  77  sub
+00051:  77  pick 2
+00053:  77  swap
+00054:  77  setprop "selectedIdx"
+00059:  77  pop
+00060:  77  pop
+00061:  77  goto 86 (+25)
+00066:  79  this
+00067:  79  this
+00068:  79  getprop "arrayModel"
+00073:  79  length "length"
+00078:  79  one
+00079:  79  sub
+00080:  79  setprop "selectedIdx"
+00085:  79  pop
+00086:  81  this
+00087:  81  dup
+00088:  81  callprop "setContentOffset"
+00093:  81  swap
+00094:  81  notearg
+00095:  81  name "cc"
+00100:  81  dup
+00101:  81  callprop "p"
+00106:  81  swap
+00107:  81  notearg
+00108:  81  int8 -100
+00110:  81  this
+00111:  81  getprop "selectedIdx"
+00116:  81  mul
+00117:  81  notearg
+00118:  81  getlocal 0
+00121:  81  notearg
+00122:  81  call 2
+00125:  81  notearg
+00126:  81  true
+00127:  81  notearg
+00128:  81  call 2
+00131:  81  pop
+00132:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:74 ---
+;; function object[9] setListener
+;; function metadata object[9] nargs=1 bindings=1
+;; arg[0] listener
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:84 ---
+loc   line  op
+----- ----  --
+main:
+00000:  85  this
+00001:  85  getarg 0
+00004:  85  setprop "m_listener"
+00009:  85  pop
+00010:  85  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:84 ---
+;; function object[10] create
+;; function metadata object[10] nargs=2 bindings=3
+;; arg[0] skillPieces
+;; arg[1] viewSize
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:90 ---
+loc   line  op
+----- ----  --
+main:
+00000:  91  name "xs"
+00005:  91  getprop "Views"
+00010:  91  getprop "Table"
+00015:  91  getprop "SkillPieceTableView"
+00020:  91  undefined
+00021:  91  notearg
+00022:  91  new 0
+00025:  91  setlocal 0
+00028:  91  pop
+00029:  92  getlocal 0
+00032:  92  and 60 (+28)
+00037:  92  pop
+00038:  92  getlocal 0
+00041:  92  dup
+00042:  92  callprop "init"
+00047:  92  swap
+00048:  92  notearg
+00049:  92  getarg 0
+00052:  92  notearg
+00053:  92  getarg 1
+00056:  92  notearg
+00057:  92  call 2
+00060:  92  ifeq 69 (+9)
+00065:  93  getlocal 0
+00068:  93  return
+00069:  96  name "xs"
+00074:  96  dup
+00075:  96  callprop "assert"
+00080:  96  swap
+00081:  96  notearg
+00082:  96  false
+00083:  96  notearg
+00084:  96  string "xs.Views.Table.SkillPieceTableView.create fail"
+00089:  96  notearg
+00090:  96  getlocal 0
+00093:  96  notearg
+00094:  96  call 3
+00097:  96  pop
+00098:  97  null
+00099:  97  return
+00100:  97  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillPieceTableView.js:90 ---

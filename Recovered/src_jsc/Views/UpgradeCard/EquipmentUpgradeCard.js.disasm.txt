@@ -1,0 +1,429 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=38 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=58 object[2]
+;; FUNCTION-MAP kind=lambda offset=68 object[3]
+;; FUNCTION-MAP kind=lambda offset=180 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "xs"
+00015:   6  getprop "Views"
+00020:   6  getprop "CardUpdateView"
+00025:   6  dup
+00026:   6  callprop "extend"
+00031:   6  swap
+00032:   6  notearg
+00033:   6  newinit 1
+00038:   7  lambda (function () {
+    [sourceless code]
+})
+00043:   7  initprop "init"
+00048:  18  lambda (function () {
+    [sourceless code]
+})
+00053:  18  initprop "setLevelChangeCallBack"
+00058:  22  lambda (function () {
+    [sourceless code]
+})
+00063:  22  initprop "onLevelChange"
+00068:  27  lambda (function () {
+    [sourceless code]
+})
+00073:  27  initprop "updateExp"
+00078:  75  newinit 1
+00083:  76  newinit 1
+00088:  77  newinit 1
+00093:  78  int8 11
+00095:  78  initprop "tag"
+00100:  78  endinit
+00101:  78  initprop "level"
+00106:  80  newinit 1
+00111:  81  int8 12
+00113:  81  initprop "tag"
+00118:  81  endinit
+00119:  81  initprop "icon"
+00124:  83  newinit 1
+00129:  84  int8 13
+00131:  84  initprop "tag"
+00136:  84  endinit
+00137:  84  initprop "plusValue"
+00142:  84  endinit
+00143:  84  initprop "infoBar"
+00148:  84  endinit
+00149:  84  initprop "cfg"
+00154:  84  endinit
+00155:  84  notearg
+00156:  84  call 1
+00159:  84  setprop "EquipmentUpgradeCard"
+00164:  84  popv
+00165:  90  name "xs"
+00170:  90  getprop "Views"
+00175:  90  getprop "EquipmentUpgradeCard"
+00180:  90  lambda (function () {
+    [sourceless code]
+})
+00185:  90  setprop "create"
+00190:  90  popv
+00191:  97  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] equipModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  dup
+00002:   8  callprop "_super"
+00007:   8  swap
+00008:   8  notearg
+00009:   8  getarg 0
+00012:   8  notearg
+00013:   8  call 1
+00016:   8  not
+00017:   8  ifeq 24 (+7)
+00022:   9  false
+00023:   9  return
+00024:  12  this
+00025:  12  dup
+00026:  12  callprop "setLevelChangeCallBack"
+00031:  12  swap
+00032:  12  notearg
+00033:  12  this
+00034:  12  getprop "onLevelChange"
+00039:  12  dup
+00040:  12  callprop "bind"
+00045:  12  swap
+00046:  12  notearg
+00047:  12  this
+00048:  12  notearg
+00049:  12  call 1
+00052:  12  notearg
+00053:  12  call 1
+00056:  12  pop
+00057:  14  true
+00058:  14  return
+00059:  14  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:7 ---
+;; function object[1] setLevelChangeCallBack
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] fun
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:18 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  this
+00001:  19  getarg 0
+00004:  19  setprop "levelChangeCallBack"
+00009:  19  pop
+00010:  19  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:18 ---
+;; function object[2] onLevelChange
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] refineLevel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:22 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  this
+00001:  23  getprop "model"
+00006:  23  dup
+00007:  23  callprop "setRefineLevelForPreview"
+00012:  23  swap
+00013:  23  notearg
+00014:  23  getarg 0
+00017:  23  notearg
+00018:  23  call 1
+00021:  23  pop
+00022:  24  this
+00023:  24  getprop "m_card"
+00028:  24  dup
+00029:  24  callprop "reloadData"
+00034:  24  swap
+00035:  24  notearg
+00036:  24  this
+00037:  24  getprop "model"
+00042:  24  notearg
+00043:  24  call 1
+00046:  24  pop
+00047:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:22 ---
+;; function object[3] updateExp
+;; function metadata object[3] nargs=2 bindings=11
+;; arg[0] addExp
+;; arg[1] model
+;; local[0] levelUpValue
+;; local[1] percentage
+;; local[2] maxLevel
+;; local[3] _addvalue
+;; local[4] i
+;; local[5] _expbylevel
+;; local[6] _totalexpbylevel
+;; local[7] lostExp
+;; local[8] _nextExp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  this
+00001:  30  getarg 1
+00004:  30  setprop "model"
+00009:  30  pop
+00010:  31  this
+00011:  31  getprop "model"
+00016:  31  dup
+00017:  31  callprop "recoveryRefineLevel"
+00022:  31  swap
+00023:  31  notearg
+00024:  31  call 0
+00027:  31  pop
+00028:  33  this
+00029:  33  getprop "preLevelUp"
+00034:  33  name "undefined"
+00039:  33  stricteq
+00040:  33  ifeq 66 (+26)
+00045:  34  this
+00046:  34  getarg 1
+00049:  34  dup
+00050:  34  callprop "getRefineLevel"
+00055:  34  swap
+00056:  34  notearg
+00057:  34  call 0
+00060:  34  setprop "preLevelUp"
+00065:  34  pop
+00066:  37  one
+00067:  37  setlocal 0
+00070:  37  pop
+00071:  38  getarg 1
+00074:  38  dup
+00075:  38  callprop "getCurRefineLevelExpPer"
+00080:  38  swap
+00081:  38  notearg
+00082:  38  call 0
+00085:  38  setlocal 1
+00088:  38  pop
+00089:  40  getarg 1
+00092:  40  dup
+00093:  40  callprop "getMaxRefineLevel"
+00098:  40  swap
+00099:  40  notearg
+00100:  40  call 0
+00103:  40  setlocal 2
+00106:  40  pop
+00107:  41  getarg 0
+00110:  41  getarg 1
+00113:  41  dup
+00114:  41  callprop "getTotalRefineExp"
+00119:  41  swap
+00120:  41  notearg
+00121:  41  call 0
+00124:  41  add
+00125:  41  setlocal 3
+00128:  41  pop
+00129:  43  getarg 1
+00132:  43  dup
+00133:  43  callprop "getRefineLevel"
+00138:  43  swap
+00139:  43  notearg
+00140:  43  call 0
+00143:  43  setlocal 4
+00146:  43  pop
+00147:  43  goto 344 (+197)
+00152:  44  loophead
+00153:  44  getarg 1
+00156:  44  dup
+00157:  44  callprop "getTotalRefineExpByLevel"
+00162:  44  swap
+00163:  44  notearg
+00164:  44  getlocal 4
+00167:  44  notearg
+00168:  44  call 1
+00171:  44  getarg 1
+00174:  44  dup
+00175:  44  callprop "getUpgradeRefineExpNeed"
+00180:  44  swap
+00181:  44  notearg
+00182:  44  getlocal 4
+00185:  44  notearg
+00186:  44  call 1
+00189:  44  add
+00190:  44  setlocal 5
+00193:  44  pop
+00194:  47  getlocal 3
+00197:  47  getlocal 5
+00200:  47  ge
+00201:  47  ifeq 224 (+23)
+00206:  48  getlocal 4
+00209:  48  setlocal 0
+00212:  48  pop
+00213:  49  int8 100
+00215:  49  setlocal 1
+00218:  49  pop
+00219:  49  goto 329 (+110)
+00224:  51  getlocal 4
+00227:  51  setlocal 0
+00230:  51  pop
+00231:  52  getarg 1
+00234:  52  dup
+00235:  52  callprop "getTotalRefineExpByLevel"
+00240:  52  swap
+00241:  52  notearg
+00242:  52  getlocal 4
+00245:  52  notearg
+00246:  52  call 1
+00249:  52  setlocal 6
+00252:  52  pop
+00253:  53  getlocal 3
+00256:  53  getlocal 6
+00259:  53  sub
+00260:  53  setlocal 7
+00263:  53  pop
+00264:  54  getarg 1
+00267:  54  dup
+00268:  54  callprop "getUpgradeRefineExpNeed"
+00273:  54  swap
+00274:  54  notearg
+00275:  54  getlocal 4
+00278:  54  notearg
+00279:  54  call 1
+00282:  54  setlocal 8
+00285:  54  pop
+00286:  55  getlocal 7
+00289:  55  getlocal 8
+00292:  55  div
+00293:  55  int8 100
+00295:  55  mul
+00296:  55  setlocal 1
+00299:  55  pop
+00300:  56  name "Math"
+00305:  56  dup
+00306:  56  callprop "floor"
+00311:  56  swap
+00312:  56  notearg
+00313:  56  getlocal 1
+00316:  56  notearg
+00317:  56  call 1
+00320:  56  setlocal 1
+00323:  56  pop
+00324:  57  goto 357 (+33)
+00329:  43  localinc 11
+00332:  43  getlocal 4
+00335:  43  pos
+00336:  43  dup
+00337:  43  one
+00338:  43  add
+00339:  43  setlocal 4
+00342:  43  pop
+00343:  43  pop
+00344:  43  loopentry
+00345:  43  getlocal 4
+00348:  43  getlocal 2
+00351:  43  le
+00352:  43  ifne 152 (-200)
+00357:  63  getlocal 0
+00360:  63  this
+00361:  63  getprop "preLevelUp"
+00366:  63  ge
+00367:  63  ifeq 415 (+48)
+00372:  64  this
+00373:  64  true
+00374:  64  setprop "bAdd"
+00379:  64  pop
+00380:  65  this
+00381:  65  dup
+00382:  65  callprop "runPercentageAction"
+00387:  65  swap
+00388:  65  notearg
+00389:  65  getlocal 1
+00392:  65  notearg
+00393:  65  getlocal 0
+00396:  65  this
+00397:  65  getprop "preLevelUp"
+00402:  65  sub
+00403:  65  notearg
+00404:  65  true
+00405:  65  notearg
+00406:  65  call 3
+00409:  65  pop
+00410:  65  goto 449 (+39)
+00415:  67  this
+00416:  67  dup
+00417:  67  callprop "setCurPercentage"
+00422:  67  swap
+00423:  67  notearg
+00424:  67  getlocal 1
+00427:  67  notearg
+00428:  67  call 1
+00431:  67  pop
+00432:  68  this
+00433:  68  dup
+00434:  68  callprop "levelChangeCallBack"
+00439:  68  swap
+00440:  68  notearg
+00441:  68  getlocal 0
+00444:  68  notearg
+00445:  68  call 1
+00448:  68  pop
+00449:  70  this
+00450:  70  getlocal 0
+00453:  70  setprop "preLevelUp"
+00458:  70  pop
+00459:  72  this
+00460:  72  getprop "preLevelUp"
+00465:  72  return
+00466:  72  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:27 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] equipModel
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:90 ---
+loc   line  op
+----- ----  --
+main:
+00000:  91  name "xs"
+00005:  91  getprop "Views"
+00010:  91  getprop "EquipmentUpgradeCard"
+00015:  91  undefined
+00016:  91  notearg
+00017:  91  new 0
+00020:  91  setlocal 0
+00023:  91  pop
+00024:  92  getlocal 0
+00027:  92  and 51 (+24)
+00032:  92  pop
+00033:  92  getlocal 0
+00036:  92  dup
+00037:  92  callprop "init"
+00042:  92  swap
+00043:  92  notearg
+00044:  92  getarg 0
+00047:  92  notearg
+00048:  92  call 1
+00051:  92  ifeq 60 (+9)
+00056:  93  getlocal 0
+00059:  93  return
+00060:  96  null
+00061:  96  return
+00062:  96  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/EquipmentUpgradeCard.js:90 ---

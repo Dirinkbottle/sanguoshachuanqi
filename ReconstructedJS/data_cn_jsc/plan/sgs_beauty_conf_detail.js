@@ -1,0 +1,2496 @@
+// Approximate JavaScript reconstructed from SpiderMonkey v22 bytecode.
+// This is not the original source text; unresolved regions carry TODO_BYTECODE markers.
+// Embedded source: /Users/yoka_dobest/svn/PublishJsToJsc/src_jsc_2.2.6/data_cn/plan/sgs_beauty_conf_detail.js:1
+// source line 1, bytecode pc 21610
+(xs.Cfg.System.sgs_beauty_conf_detail = {
+    "1": [
+        [
+            {
+                id: "1",
+                beauty_id: "1",
+                talent_level: "0",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "0",
+                attr_defense: "0",
+                attr_hp: "0",
+                attr_wisdom: "0",
+                cruise_time: "28800",
+                beauty_experience: "500"
+            }
+        ],
+        [
+            {
+                id: "2",
+                beauty_id: "1",
+                talent_level: "1",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "64",
+                attr_defense: "64",
+                attr_hp: "150",
+                attr_wisdom: "64",
+                cruise_time: "28800",
+                beauty_experience: "500"
+            }
+        ],
+        [
+            {
+                id: "3",
+                beauty_id: "1",
+                talent_level: "2",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "65",
+                attr_defense: "65",
+                attr_hp: "152",
+                attr_wisdom: "65",
+                cruise_time: "28800",
+                beauty_experience: "510"
+            }
+        ],
+        [
+            {
+                id: "4",
+                beauty_id: "1",
+                talent_level: "3",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "66",
+                attr_defense: "66",
+                attr_hp: "154",
+                attr_wisdom: "66",
+                cruise_time: "28800",
+                beauty_experience: "521"
+            }
+        ],
+        [
+            {
+                id: "5",
+                beauty_id: "1",
+                talent_level: "4",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "66",
+                attr_defense: "66",
+                attr_hp: "155",
+                attr_wisdom: "66",
+                cruise_time: "28800",
+                beauty_experience: "531"
+            }
+        ],
+        [
+            {
+                id: "6",
+                beauty_id: "1",
+                talent_level: "5",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "67",
+                attr_defense: "67",
+                attr_hp: "157",
+                attr_wisdom: "67",
+                cruise_time: "28800",
+                beauty_experience: "542"
+            }
+        ],
+        [
+            {
+                id: "7",
+                beauty_id: "1",
+                talent_level: "6",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "68",
+                attr_defense: "68",
+                attr_hp: "158",
+                attr_wisdom: "68",
+                cruise_time: "28800",
+                beauty_experience: "553"
+            }
+        ],
+        [
+            {
+                id: "8",
+                beauty_id: "1",
+                talent_level: "7",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "68",
+                attr_defense: "68",
+                attr_hp: "160",
+                attr_wisdom: "68",
+                cruise_time: "28800",
+                beauty_experience: "564"
+            }
+        ],
+        [
+            {
+                id: "9",
+                beauty_id: "1",
+                talent_level: "8",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "69",
+                attr_defense: "69",
+                attr_hp: "161",
+                attr_wisdom: "69",
+                cruise_time: "28800",
+                beauty_experience: "575"
+            }
+        ],
+        [
+            {
+                id: "10",
+                beauty_id: "1",
+                talent_level: "9",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "70",
+                attr_defense: "70",
+                attr_hp: "163",
+                attr_wisdom: "70",
+                cruise_time: "28800",
+                beauty_experience: "586"
+            }
+        ],
+        [
+            {
+                id: "11",
+                beauty_id: "1",
+                talent_level: "10",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "70",
+                attr_defense: "70",
+                attr_hp: "165",
+                attr_wisdom: "70",
+                cruise_time: "28800",
+                beauty_experience: "598"
+            }
+        ],
+        [
+            {
+                id: "12",
+                beauty_id: "1",
+                talent_level: "11",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "71",
+                attr_defense: "71",
+                attr_hp: "166",
+                attr_wisdom: "71",
+                cruise_time: "28800",
+                beauty_experience: "610"
+            }
+        ],
+        [
+            {
+                id: "13",
+                beauty_id: "1",
+                talent_level: "12",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "72",
+                attr_defense: "72",
+                attr_hp: "168",
+                attr_wisdom: "72",
+                cruise_time: "28800",
+                beauty_experience: "622"
+            }
+        ],
+        [
+            {
+                id: "14",
+                beauty_id: "1",
+                talent_level: "13",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "72",
+                attr_defense: "72",
+                attr_hp: "170",
+                attr_wisdom: "72",
+                cruise_time: "28800",
+                beauty_experience: "635"
+            }
+        ],
+        [
+            {
+                id: "15",
+                beauty_id: "1",
+                talent_level: "14",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "73",
+                attr_defense: "73",
+                attr_hp: "171",
+                attr_wisdom: "73",
+                cruise_time: "28800",
+                beauty_experience: "647"
+            }
+        ],
+        [
+            {
+                id: "16",
+                beauty_id: "1",
+                talent_level: "15",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "74",
+                attr_defense: "74",
+                attr_hp: "173",
+                attr_wisdom: "74",
+                cruise_time: "28800",
+                beauty_experience: "660"
+            }
+        ],
+        [
+            {
+                id: "17",
+                beauty_id: "1",
+                talent_level: "16",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "75",
+                attr_defense: "75",
+                attr_hp: "175",
+                attr_wisdom: "75",
+                cruise_time: "28800",
+                beauty_experience: "673"
+            }
+        ],
+        [
+            {
+                id: "18",
+                beauty_id: "1",
+                talent_level: "17",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "75",
+                attr_defense: "75",
+                attr_hp: "176",
+                attr_wisdom: "75",
+                cruise_time: "28800",
+                beauty_experience: "687"
+            }
+        ],
+        [
+            {
+                id: "19",
+                beauty_id: "1",
+                talent_level: "18",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "76",
+                attr_defense: "76",
+                attr_hp: "178",
+                attr_wisdom: "76",
+                cruise_time: "28800",
+                beauty_experience: "701"
+            }
+        ],
+        [
+            {
+                id: "20",
+                beauty_id: "1",
+                talent_level: "19",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "77",
+                attr_defense: "77",
+                attr_hp: "180",
+                attr_wisdom: "77",
+                cruise_time: "28800",
+                beauty_experience: "715"
+            }
+        ],
+        [
+            {
+                id: "21",
+                beauty_id: "1",
+                talent_level: "20",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "78",
+                attr_defense: "78",
+                attr_hp: "182",
+                attr_wisdom: "78",
+                cruise_time: "28800",
+                beauty_experience: "729"
+            }
+        ],
+        [
+            {
+                id: "22",
+                beauty_id: "1",
+                talent_level: "21",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "78",
+                attr_defense: "78",
+                attr_hp: "184",
+                attr_wisdom: "78",
+                cruise_time: "28800",
+                beauty_experience: "743"
+            }
+        ],
+        [
+            {
+                id: "23",
+                beauty_id: "1",
+                talent_level: "22",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "79",
+                attr_defense: "79",
+                attr_hp: "185",
+                attr_wisdom: "79",
+                cruise_time: "28800",
+                beauty_experience: "758"
+            }
+        ],
+        [
+            {
+                id: "24",
+                beauty_id: "1",
+                talent_level: "23",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "80",
+                attr_defense: "80",
+                attr_hp: "187",
+                attr_wisdom: "80",
+                cruise_time: "28800",
+                beauty_experience: "773"
+            }
+        ],
+        [
+            {
+                id: "25",
+                beauty_id: "1",
+                talent_level: "24",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "81",
+                attr_defense: "81",
+                attr_hp: "189",
+                attr_wisdom: "81",
+                cruise_time: "28800",
+                beauty_experience: "789"
+            }
+        ],
+        [
+            {
+                id: "26",
+                beauty_id: "1",
+                talent_level: "25",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "82",
+                attr_defense: "82",
+                attr_hp: "191",
+                attr_wisdom: "82",
+                cruise_time: "28800",
+                beauty_experience: "805"
+            }
+        ],
+        [
+            {
+                id: "27",
+                beauty_id: "1",
+                talent_level: "26",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "82",
+                attr_defense: "82",
+                attr_hp: "193",
+                attr_wisdom: "82",
+                cruise_time: "28800",
+                beauty_experience: "821"
+            }
+        ],
+        [
+            {
+                id: "28",
+                beauty_id: "1",
+                talent_level: "27",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "83",
+                attr_defense: "83",
+                attr_hp: "195",
+                attr_wisdom: "83",
+                cruise_time: "28800",
+                beauty_experience: "837"
+            }
+        ],
+        [
+            {
+                id: "29",
+                beauty_id: "1",
+                talent_level: "28",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "84",
+                attr_defense: "84",
+                attr_hp: "197",
+                attr_wisdom: "84",
+                cruise_time: "28800",
+                beauty_experience: "854"
+            }
+        ],
+        [
+            {
+                id: "30",
+                beauty_id: "1",
+                talent_level: "29",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "85",
+                attr_defense: "85",
+                attr_hp: "199",
+                attr_wisdom: "85",
+                cruise_time: "28800",
+                beauty_experience: "871"
+            }
+        ],
+        [
+            {
+                id: "31",
+                beauty_id: "1",
+                talent_level: "30",
+                beauty_currency: "1",
+                box_num: "1",
+                box_detail: "1",
+                attr_attack: "86",
+                attr_defense: "86",
+                attr_hp: "201",
+                attr_wisdom: "86",
+                cruise_time: "28800",
+                beauty_experience: "888"
+            }
+        ]
+    ],
+    "2": [
+        [
+            {
+                id: "32",
+                beauty_id: "2",
+                talent_level: "0",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "0",
+                attr_defense: "0",
+                attr_hp: "0",
+                attr_wisdom: "0",
+                cruise_time: "36000",
+                beauty_experience: "1000"
+            }
+        ],
+        [
+            {
+                id: "33",
+                beauty_id: "2",
+                talent_level: "1",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "128",
+                attr_defense: "128",
+                attr_hp: "300",
+                attr_wisdom: "128",
+                cruise_time: "36000",
+                beauty_experience: "1000"
+            }
+        ],
+        [
+            {
+                id: "34",
+                beauty_id: "2",
+                talent_level: "2",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "130",
+                attr_defense: "130",
+                attr_hp: "303",
+                attr_wisdom: "130",
+                cruise_time: "36000",
+                beauty_experience: "1035"
+            }
+        ],
+        [
+            {
+                id: "35",
+                beauty_id: "2",
+                talent_level: "3",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "131",
+                attr_defense: "131",
+                attr_hp: "307",
+                attr_wisdom: "131",
+                cruise_time: "36000",
+                beauty_experience: "1072"
+            }
+        ],
+        [
+            {
+                id: "36",
+                beauty_id: "2",
+                talent_level: "4",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "132",
+                attr_defense: "132",
+                attr_hp: "310",
+                attr_wisdom: "132",
+                cruise_time: "36000",
+                beauty_experience: "1109"
+            }
+        ],
+        [
+            {
+                id: "37",
+                beauty_id: "2",
+                talent_level: "5",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "133",
+                attr_defense: "133",
+                attr_hp: "313",
+                attr_wisdom: "133",
+                cruise_time: "36000",
+                beauty_experience: "1148"
+            }
+        ],
+        [
+            {
+                id: "38",
+                beauty_id: "2",
+                talent_level: "6",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "135",
+                attr_defense: "135",
+                attr_hp: "316",
+                attr_wisdom: "135",
+                cruise_time: "36000",
+                beauty_experience: "1188"
+            }
+        ],
+        [
+            {
+                id: "39",
+                beauty_id: "2",
+                talent_level: "7",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "136",
+                attr_defense: "136",
+                attr_hp: "319",
+                attr_wisdom: "136",
+                cruise_time: "36000",
+                beauty_experience: "1230"
+            }
+        ],
+        [
+            {
+                id: "40",
+                beauty_id: "2",
+                talent_level: "8",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "137",
+                attr_defense: "137",
+                attr_hp: "322",
+                attr_wisdom: "137",
+                cruise_time: "36000",
+                beauty_experience: "1273"
+            }
+        ],
+        [
+            {
+                id: "41",
+                beauty_id: "2",
+                talent_level: "9",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "139",
+                attr_defense: "139",
+                attr_hp: "325",
+                attr_wisdom: "139",
+                cruise_time: "36000",
+                beauty_experience: "1317"
+            }
+        ],
+        [
+            {
+                id: "42",
+                beauty_id: "2",
+                talent_level: "10",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "140",
+                attr_defense: "140",
+                attr_hp: "329",
+                attr_wisdom: "140",
+                cruise_time: "36000",
+                beauty_experience: "1363"
+            }
+        ],
+        [
+            {
+                id: "43",
+                beauty_id: "2",
+                talent_level: "11",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "142",
+                attr_defense: "142",
+                attr_hp: "332",
+                attr_wisdom: "142",
+                cruise_time: "36000",
+                beauty_experience: "1411"
+            }
+        ],
+        [
+            {
+                id: "44",
+                beauty_id: "2",
+                talent_level: "12",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "143",
+                attr_defense: "143",
+                attr_hp: "335",
+                attr_wisdom: "143",
+                cruise_time: "36000",
+                beauty_experience: "1460"
+            }
+        ],
+        [
+            {
+                id: "45",
+                beauty_id: "2",
+                talent_level: "13",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "144",
+                attr_defense: "144",
+                attr_hp: "339",
+                attr_wisdom: "144",
+                cruise_time: "36000",
+                beauty_experience: "1512"
+            }
+        ],
+        [
+            {
+                id: "46",
+                beauty_id: "2",
+                talent_level: "14",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "146",
+                attr_defense: "146",
+                attr_hp: "342",
+                attr_wisdom: "146",
+                cruise_time: "36000",
+                beauty_experience: "1564"
+            }
+        ],
+        [
+            {
+                id: "47",
+                beauty_id: "2",
+                talent_level: "15",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "147",
+                attr_defense: "147",
+                attr_hp: "345",
+                attr_wisdom: "147",
+                cruise_time: "36000",
+                beauty_experience: "1619"
+            }
+        ],
+        [
+            {
+                id: "48",
+                beauty_id: "2",
+                talent_level: "16",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "149",
+                attr_defense: "149",
+                attr_hp: "349",
+                attr_wisdom: "149",
+                cruise_time: "36000",
+                beauty_experience: "1676"
+            }
+        ],
+        [
+            {
+                id: "49",
+                beauty_id: "2",
+                talent_level: "17",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "150",
+                attr_defense: "150",
+                attr_hp: "352",
+                attr_wisdom: "150",
+                cruise_time: "36000",
+                beauty_experience: "1734"
+            }
+        ],
+        [
+            {
+                id: "50",
+                beauty_id: "2",
+                talent_level: "18",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "152",
+                attr_defense: "152",
+                attr_hp: "356",
+                attr_wisdom: "152",
+                cruise_time: "36000",
+                beauty_experience: "1795"
+            }
+        ],
+        [
+            {
+                id: "51",
+                beauty_id: "2",
+                talent_level: "19",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "153",
+                attr_defense: "153",
+                attr_hp: "359",
+                attr_wisdom: "153",
+                cruise_time: "36000",
+                beauty_experience: "1858"
+            }
+        ],
+        [
+            {
+                id: "52",
+                beauty_id: "2",
+                talent_level: "20",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "155",
+                attr_defense: "155",
+                attr_hp: "363",
+                attr_wisdom: "155",
+                cruise_time: "36000",
+                beauty_experience: "1923"
+            }
+        ],
+        [
+            {
+                id: "53",
+                beauty_id: "2",
+                talent_level: "21",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "156",
+                attr_defense: "156",
+                attr_hp: "367",
+                attr_wisdom: "156",
+                cruise_time: "36000",
+                beauty_experience: "1990"
+            }
+        ],
+        [
+            {
+                id: "54",
+                beauty_id: "2",
+                talent_level: "22",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "158",
+                attr_defense: "158",
+                attr_hp: "370",
+                attr_wisdom: "158",
+                cruise_time: "36000",
+                beauty_experience: "2060"
+            }
+        ],
+        [
+            {
+                id: "55",
+                beauty_id: "2",
+                talent_level: "23",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "160",
+                attr_defense: "160",
+                attr_hp: "374",
+                attr_wisdom: "160",
+                cruise_time: "36000",
+                beauty_experience: "2132"
+            }
+        ],
+        [
+            {
+                id: "56",
+                beauty_id: "2",
+                talent_level: "24",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "161",
+                attr_defense: "161",
+                attr_hp: "378",
+                attr_wisdom: "161",
+                cruise_time: "36000",
+                beauty_experience: "2207"
+            }
+        ],
+        [
+            {
+                id: "57",
+                beauty_id: "2",
+                talent_level: "25",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "163",
+                attr_defense: "163",
+                attr_hp: "381",
+                attr_wisdom: "163",
+                cruise_time: "36000",
+                beauty_experience: "2284"
+            }
+        ],
+        [
+            {
+                id: "58",
+                beauty_id: "2",
+                talent_level: "26",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "164",
+                attr_defense: "164",
+                attr_hp: "385",
+                attr_wisdom: "164",
+                cruise_time: "36000",
+                beauty_experience: "2364"
+            }
+        ],
+        [
+            {
+                id: "59",
+                beauty_id: "2",
+                talent_level: "27",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "166",
+                attr_defense: "166",
+                attr_hp: "389",
+                attr_wisdom: "166",
+                cruise_time: "36000",
+                beauty_experience: "2446"
+            }
+        ],
+        [
+            {
+                id: "60",
+                beauty_id: "2",
+                talent_level: "28",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "168",
+                attr_defense: "168",
+                attr_hp: "393",
+                attr_wisdom: "168",
+                cruise_time: "36000",
+                beauty_experience: "2532"
+            }
+        ],
+        [
+            {
+                id: "61",
+                beauty_id: "2",
+                talent_level: "29",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "169",
+                attr_defense: "169",
+                attr_hp: "397",
+                attr_wisdom: "169",
+                cruise_time: "36000",
+                beauty_experience: "2621"
+            }
+        ],
+        [
+            {
+                id: "62",
+                beauty_id: "2",
+                talent_level: "30",
+                beauty_currency: "2",
+                box_num: "2",
+                box_detail: "2",
+                attr_attack: "171",
+                attr_defense: "171",
+                attr_hp: "401",
+                attr_wisdom: "171",
+                cruise_time: "36000",
+                beauty_experience: "2712"
+            }
+        ]
+    ],
+    "3": [
+        [
+            {
+                id: "63",
+                beauty_id: "3",
+                talent_level: "0",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "0",
+                attr_defense: "0",
+                attr_hp: "0",
+                attr_wisdom: "0",
+                cruise_time: "43200",
+                beauty_experience: "2888"
+            }
+        ],
+        [
+            {
+                id: "64",
+                beauty_id: "3",
+                talent_level: "1",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "192",
+                attr_defense: "192",
+                attr_hp: "450",
+                attr_wisdom: "192",
+                cruise_time: "43200",
+                beauty_experience: "2888"
+            }
+        ],
+        [
+            {
+                id: "65",
+                beauty_id: "3",
+                talent_level: "2",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "194",
+                attr_defense: "194",
+                attr_hp: "455",
+                attr_wisdom: "194",
+                cruise_time: "43200",
+                beauty_experience: "2978"
+            }
+        ],
+        [
+            {
+                id: "66",
+                beauty_id: "3",
+                talent_level: "3",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "196",
+                attr_defense: "196",
+                attr_hp: "460",
+                attr_wisdom: "196",
+                cruise_time: "43200",
+                beauty_experience: "3071"
+            }
+        ],
+        [
+            {
+                id: "67",
+                beauty_id: "3",
+                talent_level: "4",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "198",
+                attr_defense: "198",
+                attr_hp: "464",
+                attr_wisdom: "198",
+                cruise_time: "43200",
+                beauty_experience: "3166"
+            }
+        ],
+        [
+            {
+                id: "68",
+                beauty_id: "3",
+                talent_level: "5",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "200",
+                attr_defense: "200",
+                attr_hp: "469",
+                attr_wisdom: "200",
+                cruise_time: "43200",
+                beauty_experience: "3265"
+            }
+        ],
+        [
+            {
+                id: "69",
+                beauty_id: "3",
+                talent_level: "6",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "202",
+                attr_defense: "202",
+                attr_hp: "473",
+                attr_wisdom: "202",
+                cruise_time: "43200",
+                beauty_experience: "3366"
+            }
+        ],
+        [
+            {
+                id: "70",
+                beauty_id: "3",
+                talent_level: "7",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "204",
+                attr_defense: "204",
+                attr_hp: "478",
+                attr_wisdom: "204",
+                cruise_time: "43200",
+                beauty_experience: "3471"
+            }
+        ],
+        [
+            {
+                id: "71",
+                beauty_id: "3",
+                talent_level: "8",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "206",
+                attr_defense: "206",
+                attr_hp: "483",
+                attr_wisdom: "206",
+                cruise_time: "43200",
+                beauty_experience: "3579"
+            }
+        ],
+        [
+            {
+                id: "72",
+                beauty_id: "3",
+                talent_level: "9",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "208",
+                attr_defense: "208",
+                attr_hp: "488",
+                attr_wisdom: "208",
+                cruise_time: "43200",
+                beauty_experience: "3690"
+            }
+        ],
+        [
+            {
+                id: "73",
+                beauty_id: "3",
+                talent_level: "10",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "210",
+                attr_defense: "210",
+                attr_hp: "493",
+                attr_wisdom: "210",
+                cruise_time: "43200",
+                beauty_experience: "3805"
+            }
+        ],
+        [
+            {
+                id: "74",
+                beauty_id: "3",
+                talent_level: "11",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "212",
+                attr_defense: "212",
+                attr_hp: "498",
+                attr_wisdom: "212",
+                cruise_time: "43200",
+                beauty_experience: "3923"
+            }
+        ],
+        [
+            {
+                id: "75",
+                beauty_id: "3",
+                talent_level: "12",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "214",
+                attr_defense: "214",
+                attr_hp: "503",
+                attr_wisdom: "214",
+                cruise_time: "43200",
+                beauty_experience: "4045"
+            }
+        ],
+        [
+            {
+                id: "76",
+                beauty_id: "3",
+                talent_level: "13",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "216",
+                attr_defense: "216",
+                attr_hp: "508",
+                attr_wisdom: "216",
+                cruise_time: "43200",
+                beauty_experience: "4171"
+            }
+        ],
+        [
+            {
+                id: "77",
+                beauty_id: "3",
+                talent_level: "14",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "219",
+                attr_defense: "219",
+                attr_hp: "513",
+                attr_wisdom: "219",
+                cruise_time: "43200",
+                beauty_experience: "4301"
+            }
+        ],
+        [
+            {
+                id: "78",
+                beauty_id: "3",
+                talent_level: "15",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "221",
+                attr_defense: "221",
+                attr_hp: "518",
+                attr_wisdom: "221",
+                cruise_time: "43200",
+                beauty_experience: "4435"
+            }
+        ],
+        [
+            {
+                id: "79",
+                beauty_id: "3",
+                talent_level: "16",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "223",
+                attr_defense: "223",
+                attr_hp: "523",
+                attr_wisdom: "223",
+                cruise_time: "43200",
+                beauty_experience: "4573"
+            }
+        ],
+        [
+            {
+                id: "80",
+                beauty_id: "3",
+                talent_level: "17",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "225",
+                attr_defense: "225",
+                attr_hp: "528",
+                attr_wisdom: "225",
+                cruise_time: "43200",
+                beauty_experience: "4715"
+            }
+        ],
+        [
+            {
+                id: "81",
+                beauty_id: "3",
+                talent_level: "18",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "227",
+                attr_defense: "227",
+                attr_hp: "533",
+                attr_wisdom: "227",
+                cruise_time: "43200",
+                beauty_experience: "4861"
+            }
+        ],
+        [
+            {
+                id: "82",
+                beauty_id: "3",
+                talent_level: "19",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "230",
+                attr_defense: "230",
+                attr_hp: "539",
+                attr_wisdom: "230",
+                cruise_time: "43200",
+                beauty_experience: "5013"
+            }
+        ],
+        [
+            {
+                id: "83",
+                beauty_id: "3",
+                talent_level: "20",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "232",
+                attr_defense: "232",
+                attr_hp: "544",
+                attr_wisdom: "232",
+                cruise_time: "43200",
+                beauty_experience: "5168"
+            }
+        ],
+        [
+            {
+                id: "84",
+                beauty_id: "3",
+                talent_level: "21",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "234",
+                attr_defense: "234",
+                attr_hp: "550",
+                attr_wisdom: "234",
+                cruise_time: "43200",
+                beauty_experience: "5329"
+            }
+        ],
+        [
+            {
+                id: "85",
+                beauty_id: "3",
+                talent_level: "22",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "237",
+                attr_defense: "237",
+                attr_hp: "555",
+                attr_wisdom: "237",
+                cruise_time: "43200",
+                beauty_experience: "5495"
+            }
+        ],
+        [
+            {
+                id: "86",
+                beauty_id: "3",
+                talent_level: "23",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "239",
+                attr_defense: "239",
+                attr_hp: "561",
+                attr_wisdom: "239",
+                cruise_time: "43200",
+                beauty_experience: "5666"
+            }
+        ],
+        [
+            {
+                id: "87",
+                beauty_id: "3",
+                talent_level: "24",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "241",
+                attr_defense: "241",
+                attr_hp: "566",
+                attr_wisdom: "241",
+                cruise_time: "43200",
+                beauty_experience: "5842"
+            }
+        ],
+        [
+            {
+                id: "88",
+                beauty_id: "3",
+                talent_level: "25",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "244",
+                attr_defense: "244",
+                attr_hp: "572",
+                attr_wisdom: "244",
+                cruise_time: "43200",
+                beauty_experience: "6024"
+            }
+        ],
+        [
+            {
+                id: "89",
+                beauty_id: "3",
+                talent_level: "26",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "246",
+                attr_defense: "246",
+                attr_hp: "578",
+                attr_wisdom: "246",
+                cruise_time: "43200",
+                beauty_experience: "6211"
+            }
+        ],
+        [
+            {
+                id: "90",
+                beauty_id: "3",
+                talent_level: "27",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "249",
+                attr_defense: "249",
+                attr_hp: "583",
+                attr_wisdom: "249",
+                cruise_time: "43200",
+                beauty_experience: "6404"
+            }
+        ],
+        [
+            {
+                id: "91",
+                beauty_id: "3",
+                talent_level: "28",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "251",
+                attr_defense: "251",
+                attr_hp: "589",
+                attr_wisdom: "251",
+                cruise_time: "43200",
+                beauty_experience: "6603"
+            }
+        ],
+        [
+            {
+                id: "92",
+                beauty_id: "3",
+                talent_level: "29",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "254",
+                attr_defense: "254",
+                attr_hp: "595",
+                attr_wisdom: "254",
+                cruise_time: "43200",
+                beauty_experience: "6808"
+            }
+        ],
+        [
+            {
+                id: "93",
+                beauty_id: "3",
+                talent_level: "30",
+                beauty_currency: "3",
+                box_num: "3",
+                box_detail: "3",
+                attr_attack: "256",
+                attr_defense: "256",
+                attr_hp: "601",
+                attr_wisdom: "256",
+                cruise_time: "43200",
+                beauty_experience: "7020"
+            }
+        ]
+    ],
+    "4": [
+        [
+            {
+                id: "94",
+                beauty_id: "4",
+                talent_level: "0",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "0",
+                attr_defense: "0",
+                attr_hp: "0",
+                attr_wisdom: "0",
+                cruise_time: "43200",
+                beauty_experience: "7266"
+            }
+        ],
+        [
+            {
+                id: "95",
+                beauty_id: "4",
+                talent_level: "1",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "280",
+                attr_defense: "280",
+                attr_hp: "650",
+                attr_wisdom: "280",
+                cruise_time: "43200",
+                beauty_experience: "7266"
+            }
+        ],
+        [
+            {
+                id: "96",
+                beauty_id: "4",
+                talent_level: "2",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "283",
+                attr_defense: "283",
+                attr_hp: "657",
+                attr_wisdom: "283",
+                cruise_time: "43200",
+                beauty_experience: "7520"
+            }
+        ],
+        [
+            {
+                id: "97",
+                beauty_id: "4",
+                talent_level: "3",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "286",
+                attr_defense: "286",
+                attr_hp: "664",
+                attr_wisdom: "286",
+                cruise_time: "43200",
+                beauty_experience: "7783"
+            }
+        ],
+        [
+            {
+                id: "98",
+                beauty_id: "4",
+                talent_level: "4",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "289",
+                attr_defense: "289",
+                attr_hp: "670",
+                attr_wisdom: "289",
+                cruise_time: "43200",
+                beauty_experience: "8056"
+            }
+        ],
+        [
+            {
+                id: "99",
+                beauty_id: "4",
+                talent_level: "5",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "292",
+                attr_defense: "292",
+                attr_hp: "677",
+                attr_wisdom: "292",
+                cruise_time: "43200",
+                beauty_experience: "8338"
+            }
+        ],
+        [
+            {
+                id: "100",
+                beauty_id: "4",
+                talent_level: "6",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "295",
+                attr_defense: "295",
+                attr_hp: "684",
+                attr_wisdom: "295",
+                cruise_time: "43200",
+                beauty_experience: "8630"
+            }
+        ],
+        [
+            {
+                id: "101",
+                beauty_id: "4",
+                talent_level: "7",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "298",
+                attr_defense: "298",
+                attr_hp: "690",
+                attr_wisdom: "298",
+                cruise_time: "43200",
+                beauty_experience: "8932"
+            }
+        ],
+        [
+            {
+                id: "102",
+                beauty_id: "4",
+                talent_level: "8",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "301",
+                attr_defense: "301",
+                attr_hp: "697",
+                attr_wisdom: "301",
+                cruise_time: "43200",
+                beauty_experience: "9244"
+            }
+        ],
+        [
+            {
+                id: "103",
+                beauty_id: "4",
+                talent_level: "9",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "304",
+                attr_defense: "304",
+                attr_hp: "704",
+                attr_wisdom: "304",
+                cruise_time: "43200",
+                beauty_experience: "9568"
+            }
+        ],
+        [
+            {
+                id: "104",
+                beauty_id: "4",
+                talent_level: "10",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "307",
+                attr_defense: "307",
+                attr_hp: "711",
+                attr_wisdom: "307",
+                cruise_time: "43200",
+                beauty_experience: "9903"
+            }
+        ],
+        [
+            {
+                id: "105",
+                beauty_id: "4",
+                talent_level: "11",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "310",
+                attr_defense: "310",
+                attr_hp: "719",
+                attr_wisdom: "310",
+                cruise_time: "43200",
+                beauty_experience: "10249"
+            }
+        ],
+        [
+            {
+                id: "106",
+                beauty_id: "4",
+                talent_level: "12",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "313",
+                attr_defense: "313",
+                attr_hp: "726",
+                attr_wisdom: "313",
+                cruise_time: "43200",
+                beauty_experience: "10608"
+            }
+        ],
+        [
+            {
+                id: "107",
+                beauty_id: "4",
+                talent_level: "13",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "316",
+                attr_defense: "316",
+                attr_hp: "733",
+                attr_wisdom: "316",
+                cruise_time: "43200",
+                beauty_experience: "10979"
+            }
+        ],
+        [
+            {
+                id: "108",
+                beauty_id: "4",
+                talent_level: "14",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "319",
+                attr_defense: "319",
+                attr_hp: "740",
+                attr_wisdom: "319",
+                cruise_time: "43200",
+                beauty_experience: "11363"
+            }
+        ],
+        [
+            {
+                id: "109",
+                beauty_id: "4",
+                talent_level: "15",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "322",
+                attr_defense: "322",
+                attr_hp: "748",
+                attr_wisdom: "322",
+                cruise_time: "43200",
+                beauty_experience: "11761"
+            }
+        ],
+        [
+            {
+                id: "110",
+                beauty_id: "4",
+                talent_level: "16",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "326",
+                attr_defense: "326",
+                attr_hp: "755",
+                attr_wisdom: "326",
+                cruise_time: "43200",
+                beauty_experience: "12173"
+            }
+        ],
+        [
+            {
+                id: "111",
+                beauty_id: "4",
+                talent_level: "17",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "329",
+                attr_defense: "329",
+                attr_hp: "763",
+                attr_wisdom: "329",
+                cruise_time: "43200",
+                beauty_experience: "12599"
+            }
+        ],
+        [
+            {
+                id: "112",
+                beauty_id: "4",
+                talent_level: "18",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "332",
+                attr_defense: "332",
+                attr_hp: "770",
+                attr_wisdom: "332",
+                cruise_time: "43200",
+                beauty_experience: "13040"
+            }
+        ],
+        [
+            {
+                id: "113",
+                beauty_id: "4",
+                talent_level: "19",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "335",
+                attr_defense: "335",
+                attr_hp: "778",
+                attr_wisdom: "335",
+                cruise_time: "43200",
+                beauty_experience: "13496"
+            }
+        ],
+        [
+            {
+                id: "114",
+                beauty_id: "4",
+                talent_level: "20",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "339",
+                attr_defense: "339",
+                attr_hp: "786",
+                attr_wisdom: "339",
+                cruise_time: "43200",
+                beauty_experience: "13968"
+            }
+        ],
+        [
+            {
+                id: "115",
+                beauty_id: "4",
+                talent_level: "21",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "342",
+                attr_defense: "342",
+                attr_hp: "794",
+                attr_wisdom: "342",
+                cruise_time: "43200",
+                beauty_experience: "14457"
+            }
+        ],
+        [
+            {
+                id: "116",
+                beauty_id: "4",
+                talent_level: "22",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "346",
+                attr_defense: "346",
+                attr_hp: "802",
+                attr_wisdom: "346",
+                cruise_time: "43200",
+                beauty_experience: "14963"
+            }
+        ],
+        [
+            {
+                id: "117",
+                beauty_id: "4",
+                talent_level: "23",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "349",
+                attr_defense: "349",
+                attr_hp: "810",
+                attr_wisdom: "349",
+                cruise_time: "43200",
+                beauty_experience: "15487"
+            }
+        ],
+        [
+            {
+                id: "118",
+                beauty_id: "4",
+                talent_level: "24",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "353",
+                attr_defense: "353",
+                attr_hp: "818",
+                attr_wisdom: "353",
+                cruise_time: "43200",
+                beauty_experience: "16029"
+            }
+        ],
+        [
+            {
+                id: "119",
+                beauty_id: "4",
+                talent_level: "25",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "356",
+                attr_defense: "356",
+                attr_hp: "826",
+                attr_wisdom: "356",
+                cruise_time: "43200",
+                beauty_experience: "16590"
+            }
+        ],
+        [
+            {
+                id: "120",
+                beauty_id: "4",
+                talent_level: "26",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "360",
+                attr_defense: "360",
+                attr_hp: "834",
+                attr_wisdom: "360",
+                cruise_time: "43200",
+                beauty_experience: "17170"
+            }
+        ],
+        [
+            {
+                id: "121",
+                beauty_id: "4",
+                talent_level: "27",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "363",
+                attr_defense: "363",
+                attr_hp: "842",
+                attr_wisdom: "363",
+                cruise_time: "43200",
+                beauty_experience: "17771"
+            }
+        ],
+        [
+            {
+                id: "122",
+                beauty_id: "4",
+                talent_level: "28",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "367",
+                attr_defense: "367",
+                attr_hp: "851",
+                attr_wisdom: "367",
+                cruise_time: "43200",
+                beauty_experience: "18393"
+            }
+        ],
+        [
+            {
+                id: "123",
+                beauty_id: "4",
+                talent_level: "29",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "370",
+                attr_defense: "370",
+                attr_hp: "859",
+                attr_wisdom: "370",
+                cruise_time: "43200",
+                beauty_experience: "19037"
+            }
+        ],
+        [
+            {
+                id: "124",
+                beauty_id: "4",
+                talent_level: "30",
+                beauty_currency: "4",
+                box_num: "4",
+                box_detail: "4",
+                attr_attack: "374",
+                attr_defense: "374",
+                attr_hp: "868",
+                attr_wisdom: "374",
+                cruise_time: "43200",
+                beauty_experience: "19703"
+            }
+        ]
+    ],
+    "5": [
+        [
+            {
+                id: "125",
+                beauty_id: "5",
+                talent_level: "0",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "0",
+                attr_defense: "0",
+                attr_hp: "0",
+                attr_wisdom: "0",
+                cruise_time: "43200",
+                beauty_experience: "20196"
+            }
+        ],
+        [
+            {
+                id: "126",
+                beauty_id: "5",
+                talent_level: "1",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "400",
+                attr_defense: "400",
+                attr_hp: "900",
+                attr_wisdom: "400",
+                cruise_time: "43200",
+                beauty_experience: "20196"
+            }
+        ],
+        [
+            {
+                id: "127",
+                beauty_id: "5",
+                talent_level: "2",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "404",
+                attr_defense: "404",
+                attr_hp: "909",
+                attr_wisdom: "404",
+                cruise_time: "43200",
+                beauty_experience: "20701"
+            }
+        ],
+        [
+            {
+                id: "128",
+                beauty_id: "5",
+                talent_level: "3",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "409",
+                attr_defense: "409",
+                attr_hp: "919",
+                attr_wisdom: "409",
+                cruise_time: "43200",
+                beauty_experience: "21218"
+            }
+        ],
+        [
+            {
+                id: "129",
+                beauty_id: "5",
+                talent_level: "4",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "413",
+                attr_defense: "413",
+                attr_hp: "928",
+                attr_wisdom: "413",
+                cruise_time: "43200",
+                beauty_experience: "21749"
+            }
+        ],
+        [
+            {
+                id: "130",
+                beauty_id: "5",
+                talent_level: "5",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "417",
+                attr_defense: "417",
+                attr_hp: "937",
+                attr_wisdom: "417",
+                cruise_time: "43200",
+                beauty_experience: "22293"
+            }
+        ],
+        [
+            {
+                id: "131",
+                beauty_id: "5",
+                talent_level: "6",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "421",
+                attr_defense: "421",
+                attr_hp: "946",
+                attr_wisdom: "421",
+                cruise_time: "43200",
+                beauty_experience: "22850"
+            }
+        ],
+        [
+            {
+                id: "132",
+                beauty_id: "5",
+                talent_level: "7",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "425",
+                attr_defense: "425",
+                attr_hp: "956",
+                attr_wisdom: "425",
+                cruise_time: "43200",
+                beauty_experience: "23421"
+            }
+        ],
+        [
+            {
+                id: "133",
+                beauty_id: "5",
+                talent_level: "8",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "429",
+                attr_defense: "429",
+                attr_hp: "965",
+                attr_wisdom: "429",
+                cruise_time: "43200",
+                beauty_experience: "24007"
+            }
+        ],
+        [
+            {
+                id: "134",
+                beauty_id: "5",
+                talent_level: "9",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "434",
+                attr_defense: "434",
+                attr_hp: "975",
+                attr_wisdom: "434",
+                cruise_time: "43200",
+                beauty_experience: "24607"
+            }
+        ],
+        [
+            {
+                id: "135",
+                beauty_id: "5",
+                talent_level: "10",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "438",
+                attr_defense: "438",
+                attr_hp: "985",
+                attr_wisdom: "438",
+                cruise_time: "43200",
+                beauty_experience: "25222"
+            }
+        ],
+        [
+            {
+                id: "136",
+                beauty_id: "5",
+                talent_level: "11",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "442",
+                attr_defense: "442",
+                attr_hp: "995",
+                attr_wisdom: "442",
+                cruise_time: "43200",
+                beauty_experience: "25852"
+            }
+        ],
+        [
+            {
+                id: "137",
+                beauty_id: "5",
+                talent_level: "12",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "447",
+                attr_defense: "447",
+                attr_hp: "1005",
+                attr_wisdom: "447",
+                cruise_time: "43200",
+                beauty_experience: "26499"
+            }
+        ],
+        [
+            {
+                id: "138",
+                beauty_id: "5",
+                talent_level: "13",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "451",
+                attr_defense: "451",
+                attr_hp: "1015",
+                attr_wisdom: "451",
+                cruise_time: "43200",
+                beauty_experience: "27161"
+            }
+        ],
+        [
+            {
+                id: "139",
+                beauty_id: "5",
+                talent_level: "14",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "456",
+                attr_defense: "456",
+                attr_hp: "1025",
+                attr_wisdom: "456",
+                cruise_time: "43200",
+                beauty_experience: "27840"
+            }
+        ],
+        [
+            {
+                id: "140",
+                beauty_id: "5",
+                talent_level: "15",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "460",
+                attr_defense: "460",
+                attr_hp: "1035",
+                attr_wisdom: "460",
+                cruise_time: "43200",
+                beauty_experience: "28536"
+            }
+        ],
+        [
+            {
+                id: "141",
+                beauty_id: "5",
+                talent_level: "16",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "465",
+                attr_defense: "465",
+                attr_hp: "1045",
+                attr_wisdom: "465",
+                cruise_time: "43200",
+                beauty_experience: "29250"
+            }
+        ],
+        [
+            {
+                id: "142",
+                beauty_id: "5",
+                talent_level: "17",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "470",
+                attr_defense: "470",
+                attr_hp: "1056",
+                attr_wisdom: "470",
+                cruise_time: "43200",
+                beauty_experience: "29981"
+            }
+        ],
+        [
+            {
+                id: "143",
+                beauty_id: "5",
+                talent_level: "18",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "474",
+                attr_defense: "474",
+                attr_hp: "1066",
+                attr_wisdom: "474",
+                cruise_time: "43200",
+                beauty_experience: "30730"
+            }
+        ],
+        [
+            {
+                id: "144",
+                beauty_id: "5",
+                talent_level: "19",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "479",
+                attr_defense: "479",
+                attr_hp: "1077",
+                attr_wisdom: "479",
+                cruise_time: "43200",
+                beauty_experience: "31499"
+            }
+        ],
+        [
+            {
+                id: "145",
+                beauty_id: "5",
+                talent_level: "20",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "484",
+                attr_defense: "484",
+                attr_hp: "1088",
+                attr_wisdom: "484",
+                cruise_time: "43200",
+                beauty_experience: "32286"
+            }
+        ],
+        [
+            {
+                id: "146",
+                beauty_id: "5",
+                talent_level: "21",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "489",
+                attr_defense: "489",
+                attr_hp: "1099",
+                attr_wisdom: "489",
+                cruise_time: "43200",
+                beauty_experience: "33093"
+            }
+        ],
+        [
+            {
+                id: "147",
+                beauty_id: "5",
+                talent_level: "22",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "493",
+                attr_defense: "493",
+                attr_hp: "1110",
+                attr_wisdom: "493",
+                cruise_time: "43200",
+                beauty_experience: "33920"
+            }
+        ],
+        [
+            {
+                id: "148",
+                beauty_id: "5",
+                talent_level: "23",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "498",
+                attr_defense: "498",
+                attr_hp: "1121",
+                attr_wisdom: "498",
+                cruise_time: "43200",
+                beauty_experience: "34768"
+            }
+        ],
+        [
+            {
+                id: "149",
+                beauty_id: "5",
+                talent_level: "24",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "503",
+                attr_defense: "503",
+                attr_hp: "1132",
+                attr_wisdom: "503",
+                cruise_time: "43200",
+                beauty_experience: "35638"
+            }
+        ],
+        [
+            {
+                id: "150",
+                beauty_id: "5",
+                talent_level: "25",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "508",
+                attr_defense: "508",
+                attr_hp: "1143",
+                attr_wisdom: "508",
+                cruise_time: "43200",
+                beauty_experience: "36529"
+            }
+        ],
+        [
+            {
+                id: "151",
+                beauty_id: "5",
+                talent_level: "26",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "513",
+                attr_defense: "513",
+                attr_hp: "1155",
+                attr_wisdom: "513",
+                cruise_time: "43200",
+                beauty_experience: "37442"
+            }
+        ],
+        [
+            {
+                id: "152",
+                beauty_id: "5",
+                talent_level: "27",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "519",
+                attr_defense: "519",
+                attr_hp: "1166",
+                attr_wisdom: "519",
+                cruise_time: "43200",
+                beauty_experience: "38378"
+            }
+        ],
+        [
+            {
+                id: "153",
+                beauty_id: "5",
+                talent_level: "28",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "524",
+                attr_defense: "524",
+                attr_hp: "1178",
+                attr_wisdom: "524",
+                cruise_time: "43200",
+                beauty_experience: "39337"
+            }
+        ],
+        [
+            {
+                id: "154",
+                beauty_id: "5",
+                talent_level: "29",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "529",
+                attr_defense: "529",
+                attr_hp: "1190",
+                attr_wisdom: "529",
+                cruise_time: "43200",
+                beauty_experience: "40321"
+            }
+        ],
+        [
+            {
+                id: "155",
+                beauty_id: "5",
+                talent_level: "30",
+                beauty_currency: "5",
+                box_num: "5",
+                box_detail: "5",
+                attr_attack: "534",
+                attr_defense: "534",
+                attr_hp: "1202",
+                attr_wisdom: "534",
+                cruise_time: "43200",
+                beauty_experience: "41329"
+            }
+        ]
+    ]
+});

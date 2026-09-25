@@ -1,0 +1,321 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/EquipmentFragmentTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=93 object[0]
+;; FUNCTION-MAP kind=lambda offset=103 object[1]
+;; FUNCTION-MAP kind=lambda offset=113 object[2]
+;; FUNCTION-MAP kind=lambda offset=123 object[3]
+;; FUNCTION-MAP kind=lambda offset=164 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   1  name "xs"
+00005:   1  getprop "Views"
+00010:   1  getprop "Table"
+00015:   1  name "xs"
+00020:   1  getprop "Views"
+00025:   1  getprop "Table"
+00030:   1  getprop "BaseTableViewExtra"
+00035:   1  dup
+00036:   1  callprop "extend"
+00041:   1  swap
+00042:   1  notearg
+00043:   1  newinit 1
+00048:   3  string "EquipmentFragmentTableView"
+00053:   3  initprop "name"
+00058:   5  newinit 1
+00063:   6  newarray 1
+00067:   7  name "xs"
+00072:   7  getprop "Constant_Notify_ModelChange_EquPiece"
+00077:   7  initelem_array 0
+00081:   7  endinit
+00082:   7  initprop "modelTypes"
+00087:   7  endinit
+00088:   7  initprop "Cfg"
+00093:  11  lambda (function () {
+    [sourceless code]
+})
+00098:  11  initprop "refreshData"
+00103:  26  lambda (function () {
+    [sourceless code]
+})
+00108:  26  initprop "createCell"
+00113:  37  lambda (function () {
+    [sourceless code]
+})
+00118:  37  initprop "makeViewSize"
+00123:  40  lambda (function () {
+    [sourceless code]
+})
+00128:  40  initprop "onFilterChange"
+00133:  40  endinit
+00134:  40  notearg
+00135:  40  call 1
+00138:  40  setprop "EquipmentFragmentTableView"
+00143:  40  popv
+00144:  48  name "xs"
+00149:  48  getprop "Views"
+00154:  48  getprop "Table"
+00159:  48  getprop "EquipmentFragmentTableView"
+00164:  48  lambda (function () {
+    [sourceless code]
+})
+00169:  48  setprop "create"
+00174:  48  popv
+00175:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:1 ---
+;; function object[0] refreshData
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] params
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  getprop "_filterResult"
+00006:  13  null
+00007:  13  eq
+00008:  13  and 22 (+14)
+00013:  13  pop
+00014:  13  this
+00015:  13  getprop "_filterType"
+00020:  13  null
+00021:  13  eq
+00022:  13  ifeq 86 (+64)
+00027:  14  this
+00028:  14  name "xs"
+00033:  14  getprop "Profile"
+00038:  14  getprop "GameData"
+00043:  14  getprop "Mgr"
+00048:  14  dup
+00049:  14  callprop "getInstance"
+00054:  14  swap
+00055:  14  notearg
+00056:  14  call 0
+00059:  14  getprop "EquipmentPieces"
+00064:  14  dup
+00065:  14  callprop "getAll"
+00070:  14  swap
+00071:  14  notearg
+00072:  14  call 0
+00075:  14  setprop "arrayModel"
+00080:  14  pop
+00081:  14  goto 222 (+141)
+00086:  16  newinit 1
+00091:  17  name "xs"
+00096:  17  getprop "Profile"
+00101:  17  getprop "GameData"
+00106:  17  getprop "Mgr"
+00111:  17  dup
+00112:  17  callprop "getInstance"
+00117:  17  swap
+00118:  17  notearg
+00119:  17  call 0
+00122:  17  getprop "EquipmentPieces"
+00127:  17  dup
+00128:  17  callprop "getAll"
+00133:  17  swap
+00134:  17  notearg
+00135:  17  call 0
+00138:  17  initprop "data"
+00143:  18  this
+00144:  18  getprop "_filterResult"
+00149:  18  initprop "result"
+00154:  19  this
+00155:  19  getprop "_filterType"
+00160:  19  initprop "filterConditions"
+00165:  20  name "xs"
+00170:  20  getprop "Constant_SortType_EquipmentPiece_Default"
+00175:  20  initprop "sortConditions"
+00180:  20  endinit
+00181:  20  setlocal 0
+00184:  20  pop
+00185:  22  this
+00186:  22  name "xs"
+00191:  22  getprop "Tools"
+00196:  22  getprop "Filter"
+00201:  22  dup
+00202:  22  callprop "filterData"
+00207:  22  swap
+00208:  22  notearg
+00209:  22  getlocal 0
+00212:  22  notearg
+00213:  22  call 1
+00216:  22  setprop "arrayModel"
+00221:  22  pop
+00222:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:11 ---
+;; function object[1] createCell
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  28  null
+00001:  28  setlocal 0
+00004:  28  pop
+00005:  29  getarg 0
+00008:  29  this
+00009:  29  getprop "arrayModel"
+00014:  29  length "length"
+00019:  29  ge
+00020:  29  ifeq 70 (+50)
+00025:  30  name "xs"
+00030:  30  getprop "Views"
+00035:  30  getprop "Table"
+00040:  30  getprop "Cell"
+00045:  30  getprop "EquipmentFragmentTableViewCell"
+00050:  30  dup
+00051:  30  callprop "create"
+00056:  30  swap
+00057:  30  notearg
+00058:  30  call 0
+00061:  30  setlocal 0
+00064:  30  pop
+00065:  30  goto 121 (+56)
+00070:  32  name "xs"
+00075:  32  getprop "Views"
+00080:  32  getprop "Table"
+00085:  32  getprop "Cell"
+00090:  32  getprop "EquipmentFragmentTableViewCell"
+00095:  32  dup
+00096:  32  callprop "create"
+00101:  32  swap
+00102:  32  notearg
+00103:  32  this
+00104:  32  getprop "arrayModel"
+00109:  32  getarg 0
+00112:  32  getelem
+00113:  32  notearg
+00114:  32  call 1
+00117:  32  setlocal 0
+00120:  32  pop
+00121:  34  getlocal 0
+00124:  34  return
+00125:  34  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:26 ---
+;; function object[2] makeViewSize
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  name "xs"
+00005:  38  getprop "Views"
+00010:  38  getprop "TablePage"
+00015:  38  dup
+00016:  38  callprop "getTableViewSize"
+00021:  38  swap
+00022:  38  notearg
+00023:  38  call 0
+00026:  38  return
+00027:  38  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:37 ---
+;; function object[3] onFilterChange
+;; function metadata object[3] nargs=2 bindings=2
+;; arg[0] filterType
+;; arg[1] filterResult
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:40 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  name "xs"
+00005:  41  dup
+00006:  41  callprop "log"
+00011:  41  swap
+00012:  41  notearg
+00013:  41  string "EquipmentTableView onFilterChange "
+00018:  41  getarg 0
+00021:  41  add
+00022:  41  string ","
+00027:  41  add
+00028:  41  getarg 1
+00031:  41  add
+00032:  41  notearg
+00033:  41  call 1
+00036:  41  pop
+00037:  42  this
+00038:  42  getarg 0
+00041:  42  setprop "_filterType"
+00046:  42  pop
+00047:  43  this
+00048:  43  getarg 1
+00051:  43  setprop "_filterResult"
+00056:  43  pop
+00057:  44  this
+00058:  44  dup
+00059:  44  callprop "refreshDataAndReload"
+00064:  44  swap
+00065:  44  notearg
+00066:  44  call 0
+00069:  44  pop
+00070:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:40 ---
+;; function object[4] create
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:48 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  name "xs"
+00005:  49  getprop "Views"
+00010:  49  getprop "Table"
+00015:  49  getprop "EquipmentFragmentTableView"
+00020:  49  undefined
+00021:  49  notearg
+00022:  49  new 0
+00025:  49  setlocal 0
+00028:  49  pop
+00029:  50  name "xs"
+00034:  50  dup
+00035:  50  callprop "log"
+00040:  50  swap
+00041:  50  notearg
+00042:  50  string "xs.Views.Table.EquipmentFragmentTableView.create "
+00047:  50  getlocal 0
+00050:  50  add
+00051:  50  notearg
+00052:  50  call 1
+00055:  50  pop
+00056:  51  getlocal 0
+00059:  51  and 79 (+20)
+00064:  51  pop
+00065:  51  getlocal 0
+00068:  51  dup
+00069:  51  callprop "init"
+00074:  51  swap
+00075:  51  notearg
+00076:  51  call 0
+00079:  51  ifeq 88 (+9)
+00084:  52  getlocal 0
+00087:  52  return
+00088:  54  this
+00089:  54  dup
+00090:  54  callprop "error"
+00095:  54  swap
+00096:  54  notearg
+00097:  54  string "EquipmentFragmentTableView.create:"
+00102:  54  notearg
+00103:  54  call 1
+00106:  54  pop
+00107:  55  null
+00108:  55  return
+00109:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/EquipmentFragmentTableView.js:48 ---

@@ -1,0 +1,177 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/TimeTest.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=36 object[0]
+;; FUNCTION-MAP kind=lambda offset=46 object[1]
+;; FUNCTION-MAP kind=lambda offset=56 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TimeTest.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Tools"
+00010:   4  name "xs"
+00015:   4  getprop "Tools"
+00020:   4  getprop "TimeTest"
+00025:   4  or 67 (+42)
+00030:   4  pop
+00031:   4  newinit 1
+00036:   6  lambda (function () {
+    [sourceless code]
+})
+00041:   6  initprop "start"
+00046:  13  lambda (function () {
+    [sourceless code]
+})
+00051:  13  initprop "timing"
+00056:  21  lambda (function () {
+    [sourceless code]
+})
+00061:  21  initprop "stop"
+00066:  21  endinit
+00067:  21  setprop "TimeTest"
+00072:  21  popv
+00073:  25  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TimeTest.js:1 ---
+;; function object[0] start
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] strTag
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TimeTest.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  getarg 0
+00004:   7  or 15 (+11)
+00009:   7  pop
+00010:   7  string ""
+00015:   7  setprop "strTag"
+00020:   7  pop
+00021:   8  this
+00022:   8  name "Date"
+00027:   8  undefined
+00028:   8  notearg
+00029:   8  new 0
+00032:   8  dup
+00033:   8  callprop "getTime"
+00038:   8  swap
+00039:   8  notearg
+00040:   8  call 0
+00043:   8  setprop "startTime"
+00048:   8  pop
+00049:   9  this
+00050:   9  this
+00051:   9  getprop "startTime"
+00056:   9  setprop "lastTimingTime"
+00061:   9  pop
+00062:  10  name "xs"
+00067:  10  dup
+00068:  10  callprop "log"
+00073:  10  swap
+00074:  10  notearg
+00075:  10  string "\u5F00\u59CB\u7EDF\u8BA1! startTime = "
+00080:  10  this
+00081:  10  getprop "startTime"
+00086:  10  add
+00087:  10  notearg
+00088:  10  call 1
+00091:  10  pop
+00092:  10  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TimeTest.js:6 ---
+;; function object[1] timing
+;; function metadata object[1] nargs=1 bindings=3
+;; arg[0] stepTag
+;; local[0] timeNow
+;; local[1] t
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TimeTest.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  14  name "Date"
+00005:  14  undefined
+00006:  14  notearg
+00007:  14  new 0
+00010:  14  dup
+00011:  14  callprop "getTime"
+00016:  14  swap
+00017:  14  notearg
+00018:  14  call 0
+00021:  14  setlocal 0
+00024:  14  pop
+00025:  15  getlocal 0
+00028:  15  this
+00029:  15  getprop "lastTimingTime"
+00034:  15  sub
+00035:  15  setlocal 1
+00038:  15  pop
+00039:  16  this
+00040:  16  getlocal 0
+00043:  16  setprop "lastTimingTime"
+00048:  16  pop
+00049:  18  name "xs"
+00054:  18  dup
+00055:  18  callprop "log"
+00060:  18  swap
+00061:  18  notearg
+00062:  18  string "\u8BB0\u5F55!"
+00067:  18  this
+00068:  18  getprop "strTag"
+00073:  18  add
+00074:  18  string ",tag = "
+00079:  18  add
+00080:  18  getarg 0
+00083:  18  add
+00084:  18  string ",\u8DDD\u79BB\u4E0A\u6B21 "
+00089:  18  add
+00090:  18  getlocal 1
+00093:  18  add
+00094:  18  string " \u6BEB\u79D2"
+00099:  18  add
+00100:  18  notearg
+00101:  18  call 1
+00104:  18  pop
+00105:  18  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TimeTest.js:13 ---
+;; function object[2] stop
+;; function metadata object[2] nargs=0 bindings=1
+;; local[0] sumTime
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TimeTest.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  this
+00001:  22  getprop "lastTimingTime"
+00006:  22  this
+00007:  22  getprop "startTime"
+00012:  22  sub
+00013:  22  setlocal 0
+00016:  22  pop
+00017:  23  name "xs"
+00022:  23  dup
+00023:  23  callprop "log"
+00028:  23  swap
+00029:  23  notearg
+00030:  23  string "\u7ED3\u675F\u7EDF\u8BA1!"
+00035:  23  this
+00036:  23  getprop "strTag"
+00041:  23  add
+00042:  23  string ",\u603B\u65F6\u95F4 "
+00047:  23  add
+00048:  23  getlocal 0
+00051:  23  add
+00052:  23  string " \u6BEB\u79D2"
+00057:  23  add
+00058:  23  notearg
+00059:  23  call 1
+00062:  23  pop
+00063:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/TimeTest.js:21 ---

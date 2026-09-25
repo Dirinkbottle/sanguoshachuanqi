@@ -1,0 +1,929 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+;; FUNCTION-MAP kind=lambda offset=68 object[1]
+;; FUNCTION-MAP kind=lambda offset=78 object[2]
+;; FUNCTION-MAP kind=lambda offset=88 object[3]
+;; FUNCTION-MAP kind=lambda offset=98 object[4]
+;; FUNCTION-MAP kind=lambda offset=108 object[5]
+;; FUNCTION-MAP kind=lambda offset=149 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Views"
+00010:   5  getprop "Table"
+00015:   5  name "xs"
+00020:   5  getprop "Views"
+00025:   5  getprop "Table"
+00030:   5  getprop "MultiColumnTableViewCell"
+00035:   5  dup
+00036:   5  callprop "extend"
+00041:   5  swap
+00042:   5  notearg
+00043:   5  newinit 1
+00048:   6  string "EquipRefineTableViewCell"
+00053:   6  initprop "name"
+00058:   7  lambda (function () {
+    [sourceless code]
+})
+00063:   7  initprop "ctor"
+00068:  12  lambda (function () {
+    [sourceless code]
+})
+00073:  12  initprop "_createIcon"
+00078:  17  lambda (function () {
+    [sourceless code]
+})
+00083:  17  initprop "updateCell"
+00088: 100  lambda (function () {
+    [sourceless code]
+})
+00093: 100  initprop "setListener"
+00098: 103  lambda (function () {
+    [sourceless code]
+})
+00103: 103  initprop "getSelectIconPosArray"
+00108: 115  lambda (function () {
+    [sourceless code]
+})
+00113: 115  initprop "setBaseTouchPriority"
+00118: 115  endinit
+00119: 115  notearg
+00120: 115  call 1
+00123: 115  setprop "EquipRefineTableViewCell"
+00128: 115  popv
+00129: 123  name "xs"
+00134: 123  getprop "Views"
+00139: 123  getprop "Table"
+00144: 123  getprop "EquipRefineTableViewCell"
+00149: 123  lambda (function () {
+    [sourceless code]
+})
+00154: 123  setprop "create"
+00159: 123  popv
+00160: 130  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  dup
+00002:   8  callprop "_super"
+00007:   8  swap
+00008:   8  notearg
+00009:   8  call 0
+00012:   8  pop
+00013:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:7 ---
+;; function object[1] _createIcon
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] icon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  name "xs"
+00005:  13  getprop "Views"
+00010:  13  getprop "Icon"
+00015:  13  getprop "IconWrapped"
+00020:  13  dup
+00021:  13  callprop "create"
+00026:  13  swap
+00027:  13  notearg
+00028:  13  this
+00029:  13  getprop "data"
+00034:  13  getarg 0
+00037:  13  getelem
+00038:  13  notearg
+00039:  13  call 1
+00042:  13  setlocal 0
+00045:  13  pop
+00046:  14  getlocal 0
+00049:  14  return
+00050:  14  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:12 ---
+;; function object[2] updateCell
+;; function metadata object[2] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] i
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=307 object[0]
+;; FUNCTION-MAP kind=lambda offset=386 object[1]
+;; FUNCTION-MAP kind=lambda offset=465 object[2]
+;; FUNCTION-MAP kind=lambda offset=544 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  this
+00001:  18  getarg 0
+00004:  18  setprop "data"
+00009:  18  pop
+00010:  19  this
+00011:  19  dup
+00012:  19  callprop "removeAllChildren"
+00017:  19  swap
+00018:  19  notearg
+00019:  19  call 0
+00022:  19  pop
+00023:  20  this
+00024:  20  newarray 0
+00028:  20  endinit
+00029:  20  setprop "iconArray"
+00034:  20  pop
+00035:  22  zero
+00036:  22  setlocal 0
+00039:  22  pop
+00040:  22  goto 662 (+622)
+00045:  23  loophead
+00046:  23  name "xs"
+00051:  23  getprop "Utils"
+00056:  23  dup
+00057:  23  callprop "isEmpty"
+00062:  23  swap
+00063:  23  notearg
+00064:  23  this
+00065:  23  getprop "data"
+00070:  23  getlocal 0
+00073:  23  getelem
+00074:  23  notearg
+00075:  23  call 1
+00078:  23  true
+00079:  23  eq
+00080:  23  ifeq 90 (+10)
+00085:  24  goto 680 (+595)
+00090:  26  this
+00091:  26  getprop "iconArray"
+00096:  26  getlocal 0
+00099:  26  this
+00100:  26  dup
+00101:  26  callprop "_createIcon"
+00106:  26  swap
+00107:  26  notearg
+00108:  26  getlocal 0
+00111:  26  notearg
+00112:  26  call 1
+00115:  26  setelem
+00116:  26  pop
+00117:  27  name "xs"
+00122:  27  getprop "Utils"
+00127:  27  getprop "Node"
+00132:  27  dup
+00133:  27  callprop "attachNodes"
+00138:  27  swap
+00139:  27  notearg
+00140:  27  this
+00141:  27  notearg
+00142:  27  this
+00143:  27  getprop "iconArray"
+00148:  27  getlocal 0
+00151:  27  getelem
+00152:  27  notearg
+00153:  27  newinit 1
+00158:  27  string "lb"
+00163:  27  initprop "desc"
+00168:  27  true
+00169:  27  initprop "sc"
+00174:  28  newinit 1
+00179:  28  int8 54
+00181:  28  int8 114
+00183:  28  getlocal 0
+00186:  28  mul
+00187:  28  add
+00188:  28  initprop "x"
+00193:  28  int8 53
+00195:  28  initprop "y"
+00200:  28  endinit
+00201:  28  initprop "offset"
+00206:  28  endinit
+00207:  28  notearg
+00208:  28  call 3
+00211:  28  pop
+00212:  29  this
+00213:  29  getprop "iconArray"
+00218:  29  getlocal 0
+00221:  29  getelem
+00222:  29  dup
+00223:  29  callprop "reloadData"
+00228:  29  swap
+00229:  29  notearg
+00230:  29  getarg 0
+00233:  29  getlocal 0
+00236:  29  getelem
+00237:  29  notearg
+00238:  29  call 1
+00241:  29  pop
+00242:  30  this
+00243:  30  getprop "iconArray"
+00248:  30  getlocal 0
+00251:  30  getelem
+00252:  30  dup
+00253:  30  callprop "setSwallowTouch"
+00258:  30  swap
+00259:  30  notearg
+00260:  30  false
+00261:  30  notearg
+00262:  30  call 1
+00265:  30  pop
+00266:  32  name "xs"
+00271:  32  dup
+00272:  32  callprop "log"
+00277:  32  swap
+00278:  32  notearg
+00279:  32  string "xs.Views.Table.EquipRefineTableViewCell updateCell"
+00284:  32  notearg
+00285:  32  call 1
+00288:  32  pop
+00289:  33  this
+00290:  33  getprop "iconArray"
+00295:  33  getlocal 0
+00298:  33  getelem
+00299:  33  dup
+00300:  33  callprop "setOnClickCallBack"
+00305:  33  swap
+00306:  33  notearg
+00307:  34  lambda (function () {
+    [sourceless code]
+})
+00312:  34  dup
+00313:  34  callprop "bind"
+00318:  34  swap
+00319:  34  notearg
+00320:  45  newinit 1
+00325:  45  getarg 0
+00328:  45  getlocal 0
+00331:  45  getelem
+00332:  45  initprop "model"
+00337:  45  this
+00338:  45  initprop "self"
+00343:  45  this
+00344:  45  getprop "iconArray"
+00349:  45  getlocal 0
+00352:  45  getelem
+00353:  45  initprop "icon"
+00358:  45  endinit
+00359:  45  notearg
+00360:  45  call 1
+00363:  45  notearg
+00364:  45  call 1
+00367:  45  pop
+00368:  47  this
+00369:  47  getprop "iconArray"
+00374:  47  getlocal 0
+00377:  47  getelem
+00378:  47  dup
+00379:  47  callprop "setLongTimeTouchCallBack"
+00384:  47  swap
+00385:  47  notearg
+00386:  48  lambda (function () {
+    [sourceless code]
+})
+00391:  48  dup
+00392:  48  callprop "bind"
+00397:  48  swap
+00398:  48  notearg
+00399:  72  newinit 1
+00404:  72  getarg 0
+00407:  72  getlocal 0
+00410:  72  getelem
+00411:  72  initprop "model"
+00416:  72  this
+00417:  72  initprop "self"
+00422:  72  this
+00423:  72  getprop "iconArray"
+00428:  72  getlocal 0
+00431:  72  getelem
+00432:  72  initprop "icon"
+00437:  72  endinit
+00438:  72  notearg
+00439:  72  call 1
+00442:  72  notearg
+00443:  72  call 1
+00446:  72  pop
+00447:  75  this
+00448:  75  getprop "iconArray"
+00453:  75  getlocal 0
+00456:  75  getelem
+00457:  75  dup
+00458:  75  callprop "setOnClickCallBack_SubBtn"
+00463:  75  swap
+00464:  75  notearg
+00465:  76  lambda (function () {
+    [sourceless code]
+})
+00470:  76  dup
+00471:  76  callprop "bind"
+00476:  76  swap
+00477:  76  notearg
+00478:  82  newinit 1
+00483:  82  getarg 0
+00486:  82  getlocal 0
+00489:  82  getelem
+00490:  82  initprop "model"
+00495:  82  this
+00496:  82  initprop "self"
+00501:  82  this
+00502:  82  getprop "iconArray"
+00507:  82  getlocal 0
+00510:  82  getelem
+00511:  82  initprop "icon"
+00516:  82  endinit
+00517:  82  notearg
+00518:  82  call 1
+00521:  82  notearg
+00522:  82  call 1
+00525:  82  pop
+00526:  83  this
+00527:  83  getprop "iconArray"
+00532:  83  getlocal 0
+00535:  83  getelem
+00536:  83  dup
+00537:  83  callprop "setLongOnClickCallBack_SubBtn"
+00542:  83  swap
+00543:  83  notearg
+00544:  84  lambda (function () {
+    [sourceless code]
+})
+00549:  84  dup
+00550:  84  callprop "bind"
+00555:  84  swap
+00556:  84  notearg
+00557:  90  newinit 1
+00562:  90  getarg 0
+00565:  90  getlocal 0
+00568:  90  getelem
+00569:  90  initprop "model"
+00574:  90  this
+00575:  90  initprop "self"
+00580:  90  this
+00581:  90  getprop "iconArray"
+00586:  90  getlocal 0
+00589:  90  getelem
+00590:  90  initprop "icon"
+00595:  90  endinit
+00596:  90  notearg
+00597:  90  call 1
+00600:  90  notearg
+00601:  90  call 1
+00604:  90  pop
+00605:  93  this
+00606:  93  getprop "m_baseTouchPriority"
+00611:  93  ifeq 647 (+36)
+00616:  94  this
+00617:  94  getprop "iconArray"
+00622:  94  getlocal 0
+00625:  94  getelem
+00626:  94  dup
+00627:  94  callprop "setTouchPriority"
+00632:  94  swap
+00633:  94  notearg
+00634:  94  this
+00635:  94  getprop "m_baseTouchPriority"
+00640:  94  one
+00641:  94  sub
+00642:  94  notearg
+00643:  94  call 1
+00646:  94  pop
+00647:  22  localinc 11
+00650:  22  getlocal 0
+00653:  22  pos
+00654:  22  dup
+00655:  22  one
+00656:  22  add
+00657:  22  setlocal 0
+00660:  22  pop
+00661:  22  pop
+00662:  22  loopentry
+00663:  22  getlocal 0
+00666:  22  getarg 0
+00669:  22  length "length"
+00674:  22  lt
+00675:  22  ifne 45 (-630)
+00680:  97  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:17 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  name "xs"
+00005:  35  dup
+00006:  35  callprop "log"
+00011:  35  swap
+00012:  35  notearg
+00013:  35  string "xs.Views.Table.EquipRefineTableViewCell updateCell setOnClickCallBack"
+00018:  35  notearg
+00019:  35  call 1
+00022:  35  pop
+00023:  36  this
+00024:  36  getprop "self"
+00029:  36  getprop "_parent"
+00034:  36  dup
+00035:  36  callprop "IsMaxLevel"
+00040:  36  swap
+00041:  36  notearg
+00042:  36  call 0
+00045:  36  ifeq 112 (+67)
+00050:  37  name "xs"
+00055:  37  getprop "Views"
+00060:  37  getprop "Mgr"
+00065:  37  dup
+00066:  37  callprop "showToast"
+00071:  37  swap
+00072:  37  notearg
+00073:  37  name "xs"
+00078:  37  getprop "Tools"
+00083:  37  getprop "String"
+00088:  37  dup
+00089:  37  callprop "createString"
+00094:  37  swap
+00095:  37  notearg
+00096:  37  string "auto_name_422"
+00101:  37  notearg
+00102:  37  call 1
+00105:  37  notearg
+00106:  37  call 1
+00109:  37  pop
+00110:  38  undefined
+00111:  38  return
+00112:  40  this
+00113:  40  getprop "model"
+00118:  40  dup
+00119:  40  callprop "addSelectNum"
+00124:  40  swap
+00125:  40  notearg
+00126:  40  call 0
+00129:  40  pop
+00130:  41  this
+00131:  41  getprop "icon"
+00136:  41  dup
+00137:  41  callprop "reloadData"
+00142:  41  swap
+00143:  41  notearg
+00144:  41  this
+00145:  41  getprop "model"
+00150:  41  notearg
+00151:  41  call 1
+00154:  41  pop
+00155:  44  name "xs"
+00160:  44  getprop "Utils"
+00165:  44  getprop "Notify"
+00170:  44  dup
+00171:  44  callprop "postNotification"
+00176:  44  swap
+00177:  44  notearg
+00178:  44  name "xs"
+00183:  44  getprop "Constant_Notify_EquipSelectChange"
+00188:  44  notearg
+00189:  44  call 1
+00192:  44  pop
+00193:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:34 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=4
+;; local[0] subExp
+;; local[1] refineStonePiece
+;; local[2] subNum
+;; local[3] maxNum
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:48 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  name "xs"
+00005:  49  dup
+00006:  49  callprop "log"
+00011:  49  swap
+00012:  49  notearg
+00013:  49  string "xs.Views.Table.EquipRefineTableViewCell updateCell setOnClickCallBack"
+00018:  49  notearg
+00019:  49  call 1
+00022:  49  pop
+00023:  50  this
+00024:  50  getprop "self"
+00029:  50  getprop "_parent"
+00034:  50  dup
+00035:  50  callprop "IsMaxLevel"
+00040:  50  swap
+00041:  50  notearg
+00042:  50  call 0
+00045:  50  ifeq 112 (+67)
+00050:  51  name "xs"
+00055:  51  getprop "Views"
+00060:  51  getprop "Mgr"
+00065:  51  dup
+00066:  51  callprop "showToast"
+00071:  51  swap
+00072:  51  notearg
+00073:  51  name "xs"
+00078:  51  getprop "Tools"
+00083:  51  getprop "String"
+00088:  51  dup
+00089:  51  callprop "createString"
+00094:  51  swap
+00095:  51  notearg
+00096:  51  string "auto_name_422"
+00101:  51  notearg
+00102:  51  call 1
+00105:  51  notearg
+00106:  51  call 1
+00109:  51  pop
+00110:  52  undefined
+00111:  52  return
+00112:  55  this
+00113:  55  getprop "self"
+00118:  55  getprop "_parent"
+00123:  55  dup
+00124:  55  callprop "getSubMaxExp"
+00129:  55  swap
+00130:  55  notearg
+00131:  55  call 0
+00134:  55  setlocal 0
+00137:  55  pop
+00138:  56  this
+00139:  56  getprop "model"
+00144:  56  dup
+00145:  56  callprop "getOriModel"
+00150:  56  swap
+00151:  56  notearg
+00152:  56  call 0
+00155:  56  dup
+00156:  56  callprop "getEatedRefineExp"
+00161:  56  swap
+00162:  56  notearg
+00163:  56  call 0
+00166:  56  setlocal 1
+00169:  56  pop
+00170:  57  getlocal 0
+00173:  57  zero
+00174:  57  le
+00175:  57  or 188 (+13)
+00180:  57  pop
+00181:  57  getlocal 0
+00184:  57  getlocal 1
+00187:  57  lt
+00188:  57  ifeq 195 (+7)
+00193:  58  undefined
+00194:  58  return
+00195:  60  getlocal 0
+00198:  60  getlocal 1
+00201:  60  div
+00202:  60  setlocal 2
+00205:  60  pop
+00206:  61  this
+00207:  61  getprop "model"
+00212:  61  dup
+00213:  61  callprop "getMaxNum"
+00218:  61  swap
+00219:  61  notearg
+00220:  61  call 0
+00223:  61  setlocal 3
+00226:  61  pop
+00227:  62  getlocal 2
+00230:  62  getlocal 3
+00233:  62  gt
+00234:  62  ifeq 262 (+28)
+00239:  63  this
+00240:  63  getprop "model"
+00245:  63  dup
+00246:  63  callprop "setSelectMaxNum"
+00251:  63  swap
+00252:  63  notearg
+00253:  63  call 0
+00256:  63  pop
+00257:  63  goto 303 (+46)
+00262:  65  this
+00263:  65  getprop "model"
+00268:  65  dup
+00269:  65  callprop "setSelectNum"
+00274:  65  swap
+00275:  65  notearg
+00276:  65  callname "parseInt"
+00281:  65  implicitthis "parseInt"
+00286:  65  notearg
+00287:  65  getlocal 0
+00290:  65  getlocal 1
+00293:  65  div
+00294:  65  notearg
+00295:  65  call 1
+00298:  65  notearg
+00299:  65  call 1
+00302:  65  pop
+00303:  68  this
+00304:  68  getprop "icon"
+00309:  68  dup
+00310:  68  callprop "reloadData"
+00315:  68  swap
+00316:  68  notearg
+00317:  68  this
+00318:  68  getprop "model"
+00323:  68  notearg
+00324:  68  call 1
+00327:  68  pop
+00328:  71  name "xs"
+00333:  71  getprop "Utils"
+00338:  71  getprop "Notify"
+00343:  71  dup
+00344:  71  callprop "postNotification"
+00349:  71  swap
+00350:  71  notearg
+00351:  71  name "xs"
+00356:  71  getprop "Constant_Notify_EquipSelectChange"
+00361:  71  notearg
+00362:  71  call 1
+00365:  71  pop
+00366:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:48 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:76 ---
+loc   line  op
+----- ----  --
+main:
+00000:  77  this
+00001:  77  getprop "model"
+00006:  77  dup
+00007:  77  callprop "subSelectNum"
+00012:  77  swap
+00013:  77  notearg
+00014:  77  call 0
+00017:  77  pop
+00018:  78  this
+00019:  78  getprop "icon"
+00024:  78  dup
+00025:  78  callprop "reloadData"
+00030:  78  swap
+00031:  78  notearg
+00032:  78  this
+00033:  78  getprop "model"
+00038:  78  notearg
+00039:  78  call 1
+00042:  78  pop
+00043:  81  name "xs"
+00048:  81  getprop "Utils"
+00053:  81  getprop "Notify"
+00058:  81  dup
+00059:  81  callprop "postNotification"
+00064:  81  swap
+00065:  81  notearg
+00066:  81  name "xs"
+00071:  81  getprop "Constant_Notify_EquipSelectChange"
+00076:  81  notearg
+00077:  81  call 1
+00080:  81  pop
+00081:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:76 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:84 ---
+loc   line  op
+----- ----  --
+main:
+00000:  85  this
+00001:  85  getprop "model"
+00006:  85  dup
+00007:  85  callprop "setSelectMinNum"
+00012:  85  swap
+00013:  85  notearg
+00014:  85  call 0
+00017:  85  pop
+00018:  86  this
+00019:  86  getprop "icon"
+00024:  86  dup
+00025:  86  callprop "reloadData"
+00030:  86  swap
+00031:  86  notearg
+00032:  86  this
+00033:  86  getprop "model"
+00038:  86  notearg
+00039:  86  call 1
+00042:  86  pop
+00043:  89  name "xs"
+00048:  89  getprop "Utils"
+00053:  89  getprop "Notify"
+00058:  89  dup
+00059:  89  callprop "postNotification"
+00064:  89  swap
+00065:  89  notearg
+00066:  89  name "xs"
+00071:  89  getprop "Constant_Notify_EquipSelectChange"
+00076:  89  notearg
+00077:  89  call 1
+00080:  89  pop
+00081:  89  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:84 ---
+;; function object[3] setListener
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] listener
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:100 ---
+loc   line  op
+----- ----  --
+main:
+00000: 101  this
+00001: 101  getarg 0
+00004: 101  setprop "m_listener"
+00009: 101  pop
+00010: 101  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:100 ---
+;; function object[4] getSelectIconPosArray
+;; function metadata object[4] nargs=0 bindings=3
+;; local[0] posArray
+;; local[1] i
+;; local[2] worldPos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:103 ---
+loc   line  op
+----- ----  --
+main:
+00000: 104  newarray 0
+00004: 104  endinit
+00005: 104  setlocal 0
+00008: 104  pop
+00009: 105  zero
+00010: 105  setlocal 1
+00013: 105  pop
+00014: 105  goto 118 (+104)
+00019: 106  loophead
+00020: 106  this
+00021: 106  getprop "data"
+00026: 106  getlocal 1
+00029: 106  getelem
+00030: 106  dup
+00031: 106  callprop "isSelected"
+00036: 106  swap
+00037: 106  notearg
+00038: 106  call 0
+00041: 106  ifeq 103 (+62)
+00046: 107  this
+00047: 107  dup
+00048: 107  callprop "convertToWorldSpace"
+00053: 107  swap
+00054: 107  notearg
+00055: 107  this
+00056: 107  getprop "iconArray"
+00061: 107  getlocal 1
+00064: 107  getelem
+00065: 107  dup
+00066: 107  callprop "getPosition"
+00071: 107  swap
+00072: 107  notearg
+00073: 107  call 0
+00076: 107  notearg
+00077: 107  call 1
+00080: 107  setlocal 2
+00083: 107  pop
+00084: 109  getlocal 0
+00087: 109  dup
+00088: 109  callprop "push"
+00093: 109  swap
+00094: 109  notearg
+00095: 109  getlocal 2
+00098: 109  notearg
+00099: 109  call 1
+00102: 109  pop
+00103: 105  localinc 11
+00106: 105  getlocal 1
+00109: 105  pos
+00110: 105  dup
+00111: 105  one
+00112: 105  add
+00113: 105  setlocal 1
+00116: 105  pop
+00117: 105  pop
+00118: 105  loopentry
+00119: 105  getlocal 1
+00122: 105  this
+00123: 105  getprop "data"
+00128: 105  length "length"
+00133: 105  lt
+00134: 105  ifne 19 (-115)
+00139: 112  getlocal 0
+00142: 112  return
+00143: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:103 ---
+;; function object[5] setBaseTouchPriority
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] priority
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:115 ---
+loc   line  op
+----- ----  --
+main:
+00000: 116  this
+00001: 116  getarg 0
+00004: 116  setprop "m_baseTouchPriority"
+00009: 116  pop
+00010: 117  zero
+00011: 117  setlocal 0
+00014: 117  pop
+00015: 117  goto 67 (+52)
+00020: 118  loophead
+00021: 118  this
+00022: 118  getprop "iconArray"
+00027: 118  getlocal 0
+00030: 118  getelem
+00031: 118  dup
+00032: 118  callprop "setTouchPriority"
+00037: 118  swap
+00038: 118  notearg
+00039: 118  this
+00040: 118  getprop "m_baseTouchPriority"
+00045: 118  one
+00046: 118  sub
+00047: 118  notearg
+00048: 118  call 1
+00051: 118  pop
+00052: 117  localinc 11
+00055: 117  getlocal 0
+00058: 117  pos
+00059: 117  dup
+00060: 117  one
+00061: 117  add
+00062: 117  setlocal 0
+00065: 117  pop
+00066: 117  pop
+00067: 117  loopentry
+00068: 117  getlocal 0
+00071: 117  this
+00072: 117  getprop "iconArray"
+00077: 117  length "length"
+00082: 117  lt
+00083: 117  ifne 20 (-63)
+00088: 119  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:115 ---
+;; function object[6] create
+;; function metadata object[6] nargs=1 bindings=2
+;; arg[0] model
+;; local[0] object
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:123 ---
+loc   line  op
+----- ----  --
+main:
+00000: 124  name "xs"
+00005: 124  getprop "Views"
+00010: 124  getprop "Table"
+00015: 124  getprop "EquipRefineTableViewCell"
+00020: 124  undefined
+00021: 124  notearg
+00022: 124  new 0
+00025: 124  setlocal 0
+00028: 124  pop
+00029: 125  getlocal 0
+00032: 125  and 56 (+24)
+00037: 125  pop
+00038: 125  getlocal 0
+00041: 125  dup
+00042: 125  callprop "initWithData"
+00047: 125  swap
+00048: 125  notearg
+00049: 125  getarg 0
+00052: 125  notearg
+00053: 125  call 1
+00056: 125  ifeq 65 (+9)
+00061: 126  getlocal 0
+00064: 126  return
+00065: 128  name "xs"
+00070: 128  dup
+00071: 128  callprop "assert"
+00076: 128  swap
+00077: 128  notearg
+00078: 128  false
+00079: 128  notearg
+00080: 128  string "xs.Views.Table.EquipRefineTableViewCell.create error"
+00085: 128  notearg
+00086: 128  call 2
+00089: 128  pop
+00090: 129  null
+00091: 129  return
+00092: 129  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/EquipRefineTableViewCell.js:123 ---

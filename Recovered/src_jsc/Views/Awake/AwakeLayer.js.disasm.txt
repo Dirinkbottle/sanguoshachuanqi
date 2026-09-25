@@ -1,0 +1,3060 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Awake/AwakeLayer.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=578 object[0]
+;; FUNCTION-MAP kind=lambda offset=588 object[1]
+;; FUNCTION-MAP kind=lambda offset=598 object[2]
+;; FUNCTION-MAP kind=lambda offset=608 object[3]
+;; FUNCTION-MAP kind=lambda offset=618 object[4]
+;; FUNCTION-MAP kind=lambda offset=628 object[5]
+;; FUNCTION-MAP kind=lambda offset=638 object[6]
+;; FUNCTION-MAP kind=lambda offset=648 object[7]
+;; FUNCTION-MAP kind=lambda offset=658 object[8]
+;; FUNCTION-MAP kind=lambda offset=668 object[9]
+;; FUNCTION-MAP kind=lambda offset=678 object[10]
+;; FUNCTION-MAP kind=lambda offset=688 object[11]
+;; FUNCTION-MAP kind=lambda offset=698 object[12]
+;; FUNCTION-MAP kind=lambda offset=708 object[13]
+;; FUNCTION-MAP kind=lambda offset=718 object[14]
+;; FUNCTION-MAP kind=lambda offset=728 object[15]
+;; FUNCTION-MAP kind=lambda offset=738 object[16]
+;; FUNCTION-MAP kind=lambda offset=748 object[17]
+;; FUNCTION-MAP kind=lambda offset=784 object[18]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "cc"
+00015:   6  getprop "Layer"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   8  string "xs.Views.AwakeLayer"
+00038:   8  initprop "name"
+00043:  10  newarray 11
+00047:  12  newinit 1
+00052:  12  zero
+00053:  12  initprop "tag"
+00058:  12  string "ls"
+00063:  12  initprop "type"
+00068:  12  string "m_star_label"
+00073:  12  initprop "name"
+00078:  12  string "LS_yuanfenInf2"
+00083:  12  initprop "id"
+00088:  12  endinit
+00089:  12  initelem_array 0
+00093:  13  newinit 1
+00098:  13  one
+00099:  13  initprop "tag"
+00104:  13  string "ls"
+00109:  13  initprop "type"
+00114:  13  string "m_reward_label"
+00119:  13  initprop "name"
+00124:  13  string "LS_Lv"
+00129:  13  initprop "id"
+00134:  13  endinit
+00135:  13  initelem_array 1
+00139:  14  newinit 1
+00144:  14  int8 2
+00146:  14  initprop "tag"
+00151:  14  string "ls"
+00156:  14  initprop "type"
+00161:  14  string "m_effect_label"
+00166:  14  initprop "name"
+00171:  14  string "LS_qiangduo_time"
+00176:  14  initprop "id"
+00181:  14  endinit
+00182:  14  initelem_array 2
+00186:  15  newinit 1
+00191:  15  int8 3
+00193:  15  initprop "tag"
+00198:  15  string "ls"
+00203:  15  initprop "type"
+00208:  15  string "m_consume_label"
+00213:  15  initprop "name"
+00218:  15  string "LS_qiangduo_time"
+00223:  15  initprop "id"
+00228:  15  endinit
+00229:  15  initelem_array 3
+00233:  16  newinit 1
+00238:  16  int8 4
+00240:  16  initprop "tag"
+00245:  16  string "ls"
+00250:  16  initprop "type"
+00255:  16  string "m_level_label"
+00260:  16  initprop "name"
+00265:  16  string "LS_Lv"
+00270:  16  initprop "id"
+00275:  16  endinit
+00276:  16  initelem_array 4
+00280:  17  newinit 1
+00285:  17  int8 6
+00287:  17  initprop "tag"
+00292:  17  string "ls"
+00297:  17  initprop "type"
+00302:  17  string "m_first_Need"
+00307:  17  initprop "name"
+00312:  17  string "LS_EXPInf"
+00317:  17  initprop "id"
+00322:  17  endinit
+00323:  17  initelem_array 5
+00327:  18  newinit 1
+00332:  18  int8 7
+00334:  18  initprop "tag"
+00339:  18  string "ls"
+00344:  18  initprop "type"
+00349:  18  string "m_first_Have"
+00354:  18  initprop "name"
+00359:  18  string "LS_Lv"
+00364:  18  initprop "id"
+00369:  18  endinit
+00370:  18  initelem_array 6
+00374:  19  newinit 1
+00379:  19  int8 8
+00381:  19  initprop "tag"
+00386:  19  string "ls"
+00391:  19  initprop "type"
+00396:  19  string "m_second_Need"
+00401:  19  initprop "name"
+00406:  19  string "LS_EXPInf"
+00411:  19  initprop "id"
+00416:  19  endinit
+00417:  19  initelem_array 7
+00421:  20  newinit 1
+00426:  20  int8 9
+00428:  20  initprop "tag"
+00433:  20  string "ls"
+00438:  20  initprop "type"
+00443:  20  string "m_second_Have"
+00448:  20  initprop "name"
+00453:  20  string "LS_Lv"
+00458:  20  initprop "id"
+00463:  20  endinit
+00464:  20  initelem_array 8
+00468:  22  newinit 1
+00473:  22  int8 11
+00475:  22  initprop "tag"
+00480:  22  string "ls"
+00485:  22  initprop "type"
+00490:  22  string "m_nameLabel"
+00495:  22  initprop "name"
+00500:  22  string "LS_wujiangName1"
+00505:  22  initprop "id"
+00510:  22  endinit
+00511:  22  initelem_array 9
+00515:  24  newinit 1
+00520:  24  int8 24
+00522:  24  initprop "tag"
+00527:  24  string "btn"
+00532:  24  initprop "type"
+00537:  24  string "m_activateButton"
+00542:  24  initprop "name"
+00547:  24  string "Btn_btn1"
+00552:  24  initprop "id"
+00557:  24  string "AwakeActivateBtn"
+00562:  24  initprop "stringId"
+00567:  24  endinit
+00568:  24  initelem_array 10
+00572:  24  endinit
+00573:  24  initprop "ccbCfg_Infor"
+00578:  28  lambda (function () {
+    [sourceless code]
+})
+00583:  28  initprop "ctor"
+00588:  33  lambda (function () {
+    [sourceless code]
+})
+00593:  33  initprop "init"
+00598: 164  lambda (function () {
+    [sourceless code]
+})
+00603: 164  initprop "onEnter"
+00608: 168  lambda (function () {
+    [sourceless code]
+})
+00613: 168  initprop "onExit"
+00618: 172  lambda (function () {
+    [sourceless code]
+})
+00623: 172  initprop "setActiveButtonStatus"
+00628: 181  lambda (function () {
+    [sourceless code]
+})
+00633: 181  initprop "getNextGrade"
+00638: 203  lambda (function () {
+    [sourceless code]
+})
+00643: 203  initprop "getRewardStr"
+00648: 208  lambda (function () {
+    [sourceless code]
+})
+00653: 208  initprop "createItemIcon"
+00658: 243  lambda (function () {
+    [sourceless code]
+})
+00663: 243  initprop "createEquipmentFragmentIcon"
+00668: 286  lambda (function () {
+    [sourceless code]
+})
+00673: 286  initprop "createGeneralsSoulIcon"
+00678: 340  lambda (function () {
+    [sourceless code]
+})
+00683: 340  initprop "refreshData"
+00688: 378  lambda (function () {
+    [sourceless code]
+})
+00693: 378  initprop "updateUI"
+00698: 386  lambda (function () {
+    [sourceless code]
+})
+00703: 386  initprop "updateInfo"
+00708: 413  lambda (function () {
+    [sourceless code]
+})
+00713: 413  initprop "initStars"
+00718: 432  lambda (function () {
+    [sourceless code]
+})
+00723: 432  initprop "updateStars"
+00728: 450  lambda (function () {
+    [sourceless code]
+})
+00733: 450  initprop "ClickStarCallback"
+00738: 470  lambda (function () {
+    [sourceless code]
+})
+00743: 470  initprop "ActivateCallback"
+00748: 505  lambda (function () {
+    [sourceless code]
+})
+00753: 505  initprop "switchCreateIcon"
+00758: 505  endinit
+00759: 505  notearg
+00760: 505  call 1
+00763: 505  setprop "AwakeLayer"
+00768: 505  popv
+00769: 535  name "xs"
+00774: 535  getprop "Views"
+00779: 535  getprop "AwakeLayer"
+00784: 535  lambda (function () {
+    [sourceless code]
+})
+00789: 535  setprop "create"
+00794: 535  popv
+00795: 546  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  this
+00001:  29  dup
+00002:  29  callprop "_super"
+00007:  29  swap
+00008:  29  notearg
+00009:  29  call 0
+00012:  29  pop
+00013:  30  name "cc"
+00018:  30  dup
+00019:  30  callprop "associateWithNative"
+00024:  30  swap
+00025:  30  notearg
+00026:  30  this
+00027:  30  notearg
+00028:  30  name "cc"
+00033:  30  getprop "Layer"
+00038:  30  notearg
+00039:  30  call 2
+00042:  30  pop
+00043:  30  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:28 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=8
+;; arg[0] param
+;; local[0] grade
+;; local[1] visibleSize
+;; local[2] mainMenuWidth
+;; local[3] offset_x
+;; local[4] tt_width
+;; local[5] tt_height
+;; local[6] ccbiArr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:33 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  this
+00001:  34  dup
+00002:  34  callprop "_super"
+00007:  34  swap
+00008:  34  notearg
+00009:  34  call 0
+00012:  34  not
+00013:  34  ifeq 20 (+7)
+00018:  35  false
+00019:  35  return
+00020:  37  this
+00021:  37  getarg 0
+00024:  37  getprop "generalId"
+00029:  37  setprop "m_generalId"
+00034:  37  pop
+00035:  38  this
+00036:  38  null
+00037:  38  setprop "m_level_label"
+00042:  38  pop
+00043:  39  this
+00044:  39  null
+00045:  39  setprop "m_nameLabel"
+00050:  39  pop
+00051:  40  this
+00052:  40  null
+00053:  40  setprop "m_star_label"
+00058:  40  pop
+00059:  41  this
+00060:  41  null
+00061:  41  setprop "m_reward_label"
+00066:  41  pop
+00067:  42  this
+00068:  42  null
+00069:  42  setprop "m_effect_label"
+00074:  42  pop
+00075:  43  this
+00076:  43  null
+00077:  43  setprop "m_consume_label"
+00082:  43  pop
+00083:  45  this
+00084:  45  null
+00085:  45  setprop "m_first_Need"
+00090:  45  pop
+00091:  46  this
+00092:  46  null
+00093:  46  setprop "m_first_Have"
+00098:  46  pop
+00099:  47  this
+00100:  47  null
+00101:  47  setprop "m_second_Need"
+00106:  47  pop
+00107:  48  this
+00108:  48  null
+00109:  48  setprop "m_second_Have"
+00114:  48  pop
+00115:  50  this
+00116:  50  null
+00117:  50  setprop "m_first_icon"
+00122:  50  pop
+00123:  51  this
+00124:  51  null
+00125:  51  setprop "m_second_icon"
+00130:  51  pop
+00131:  53  this
+00132:  53  null
+00133:  53  setprop "m_activateButton"
+00138:  53  pop
+00139:  56  this
+00140:  56  newarray 0
+00144:  56  endinit
+00145:  56  setprop "m_conditionArray"
+00150:  56  pop
+00151:  57  this
+00152:  57  newarray 0
+00156:  57  endinit
+00157:  57  setprop "m_haveArray"
+00162:  57  pop
+00163:  59  this
+00164:  59  newarray 0
+00168:  59  endinit
+00169:  59  setprop "m_needList"
+00174:  59  pop
+00175:  60  this
+00176:  60  newarray 0
+00180:  60  endinit
+00181:  60  setprop "m_haveList"
+00186:  60  pop
+00187:  61  this
+00188:  61  newarray 0
+00192:  61  endinit
+00193:  61  setprop "m_iconsList"
+00198:  61  pop
+00199:  64  this
+00200:  64  name "xs"
+00205:  64  getprop "Profile"
+00210:  64  getprop "GameData"
+00215:  64  getprop "Mgr"
+00220:  64  dup
+00221:  64  callprop "getInstance"
+00226:  64  swap
+00227:  64  notearg
+00228:  64  call 0
+00231:  64  getprop "EquipmentPieces"
+00236:  64  dup
+00237:  64  callprop "getAll"
+00242:  64  swap
+00243:  64  notearg
+00244:  64  call 0
+00247:  64  setprop "arrayPieces"
+00252:  64  pop
+00253:  67  this
+00254:  67  newarray 0
+00258:  67  endinit
+00259:  67  setprop "m_lightStars"
+00264:  67  pop
+00265:  68  this
+00266:  68  newarray 0
+00270:  68  endinit
+00271:  68  setprop "m_darkStars"
+00276:  68  pop
+00277:  70  this
+00278:  70  name "xs"
+00283:  70  getprop "Profile"
+00288:  70  getprop "GameData"
+00293:  70  getprop "Mgr"
+00298:  70  dup
+00299:  70  callprop "getInstance"
+00304:  70  swap
+00305:  70  notearg
+00306:  70  call 0
+00309:  70  getprop "EvolutionInfos"
+00314:  70  dup
+00315:  70  callprop "getByGeneralId"
+00320:  70  swap
+00321:  70  notearg
+00322:  70  this
+00323:  70  getprop "m_generalId"
+00328:  70  notearg
+00329:  70  call 1
+00332:  70  setprop "evoInfo"
+00337:  70  pop
+00338:  71  this
+00339:  71  getprop "evoInfo"
+00344:  71  dup
+00345:  71  callprop "initCachePoint"
+00350:  71  swap
+00351:  71  notearg
+00352:  71  call 0
+00355:  71  pop
+00356:  73  this
+00357:  73  this
+00358:  73  getprop "evoInfo"
+00363:  73  getprop "evolution_id"
+00368:  73  setprop "evolution_id"
+00373:  73  pop
+00374:  74  this
+00375:  74  name "xs"
+00380:  74  getprop "Models"
+00385:  74  getprop "EvolutionInfo"
+00390:  74  dup
+00391:  74  callprop "createWithBase"
+00396:  74  swap
+00397:  74  notearg
+00398:  74  this
+00399:  74  getprop "m_generalId"
+00404:  74  notearg
+00405:  74  call 1
+00408:  74  dup
+00409:  74  callprop "getBuffInfo"
+00414:  74  swap
+00415:  74  notearg
+00416:  74  call 0
+00419:  74  setprop "buff_config"
+00424:  74  pop
+00425:  76  this
+00426:  76  name "xs"
+00431:  76  getprop "Models"
+00436:  76  getprop "General"
+00441:  76  dup
+00442:  76  callprop "createWithBase"
+00447:  76  swap
+00448:  76  notearg
+00449:  76  this
+00450:  76  getprop "m_generalId"
+00455:  76  notearg
+00456:  76  call 1
+00459:  76  setprop "generalModel"
+00464:  76  pop
+00465:  77  this
+00466:  77  this
+00467:  77  getprop "generalModel"
+00472:  77  dup
+00473:  77  callprop "getNameString"
+00478:  77  swap
+00479:  77  notearg
+00480:  77  this
+00481:  77  getprop "m_generalId"
+00486:  77  notearg
+00487:  77  call 1
+00490:  77  setprop "m_generalName"
+00495:  77  pop
+00496:  78  this
+00497:  78  this
+00498:  78  getprop "generalModel"
+00503:  78  dup
+00504:  78  callprop "getObrit"
+00509:  78  swap
+00510:  78  notearg
+00511:  78  call 0
+00514:  78  setprop "m_generalOrbit"
+00519:  78  pop
+00520:  81  this
+00521:  81  this
+00522:  81  getprop "evoInfo"
+00527:  81  dup
+00528:  81  callprop "getEvolutionLevel"
+00533:  81  swap
+00534:  81  notearg
+00535:  81  call 0
+00538:  81  setprop "m_evolution_level"
+00543:  81  pop
+00544:  82  this
+00545:  82  this
+00546:  82  getprop "evoInfo"
+00551:  82  dup
+00552:  82  callprop "getEvolutionSubLevel"
+00557:  82  swap
+00558:  82  notearg
+00559:  82  call 0
+00562:  82  setprop "m_evolution_sub_level"
+00567:  82  pop
+00568:  85  this
+00569:  85  getprop "m_evolution_level"
+00574:  85  int8 5
+00576:  85  eq
+00577:  85  and 592 (+15)
+00582:  85  pop
+00583:  85  this
+00584:  85  getprop "m_evolution_sub_level"
+00589:  85  int8 7
+00591:  85  eq
+00592:  85  ifeq 620 (+28)
+00597:  86  this
+00598:  86  int8 5
+00600:  86  setprop "m_fixLevel"
+00605:  86  pop
+00606:  87  this
+00607:  87  int8 8
+00609:  87  setprop "m_fixSubLevel"
+00614:  87  pop
+00615:  87  goto 680 (+65)
+00620:  89  this
+00621:  89  dup
+00622:  89  callprop "getNextGrade"
+00627:  89  swap
+00628:  89  notearg
+00629:  89  this
+00630:  89  getprop "m_evolution_level"
+00635:  89  notearg
+00636:  89  this
+00637:  89  getprop "m_evolution_sub_level"
+00642:  89  notearg
+00643:  89  call 2
+00646:  89  setlocal 0
+00649:  89  pop
+00650:  91  this
+00651:  91  getlocal 0
+00654:  91  getprop "level"
+00659:  91  setprop "m_fixLevel"
+00664:  91  pop
+00665:  92  this
+00666:  92  getlocal 0
+00669:  92  getprop "sub_level"
+00674:  92  setprop "m_fixSubLevel"
+00679:  92  pop
+00680:  96  name "cc"
+00685:  96  getprop "Director"
+00690:  96  dup
+00691:  96  callprop "getInstance"
+00696:  96  swap
+00697:  96  notearg
+00698:  96  call 0
+00701:  96  dup
+00702:  96  callprop "getVisibleSize"
+00707:  96  swap
+00708:  96  notearg
+00709:  96  call 0
+00712:  96  setlocal 1
+00715:  96  pop
+00716:  97  this
+00717:  97  dup
+00718:  97  callprop "setContentSize"
+00723:  97  swap
+00724:  97  notearg
+00725:  97  getlocal 1
+00728:  97  notearg
+00729:  97  call 1
+00732:  97  pop
+00733:  99  name "xs"
+00738:  99  getprop "Views"
+00743:  99  getprop "MainMenuView"
+00748:  99  getprop "Width"
+00753:  99  setlocal 2
+00756:  99  pop
+00757: 102  getlocal 2
+00760: 102  int8 2
+00762: 102  div
+00763: 102  setlocal 3
+00766: 102  pop
+00767: 104  uint16 520
+00770: 104  setlocal 4
+00773: 104  pop
+00774: 105  uint16 640
+00777: 105  setlocal 5
+00780: 105  pop
+00781: 109  this
+00782: 109  getprop "m_generalOrbit"
+00787: 109  int8 5
+00789: 109  gt
+00790: 109  ifeq 804 (+14)
+00795: 110  this
+00796: 110  int8 5
+00798: 110  setprop "m_generalOrbit"
+00803: 110  pop
+00804: 113  newarray 5
+00808: 113  name "xs"
+00813: 113  getprop "Cfg"
+00818: 113  getprop "CCBI"
+00823: 113  getprop "Evolution_1"
+00828: 113  initelem_array 0
+00832: 113  name "xs"
+00837: 113  getprop "Cfg"
+00842: 113  getprop "CCBI"
+00847: 113  getprop "Evolution_2"
+00852: 113  initelem_array 1
+00856: 113  name "xs"
+00861: 113  getprop "Cfg"
+00866: 113  getprop "CCBI"
+00871: 113  getprop "Evolution_3"
+00876: 113  initelem_array 2
+00880: 113  name "xs"
+00885: 113  getprop "Cfg"
+00890: 113  getprop "CCBI"
+00895: 113  getprop "Evolution_4"
+00900: 113  initelem_array 3
+00904: 113  name "xs"
+00909: 113  getprop "Cfg"
+00914: 113  getprop "CCBI"
+00919: 113  getprop "Evolution_5"
+00924: 113  initelem_array 4
+00928: 113  endinit
+00929: 113  setlocal 6
+00932: 113  pop
+00933: 114  this
+00934: 114  name "xs"
+00939: 114  getprop "ccb_reader"
+00944: 114  dup
+00945: 114  callprop "load"
+00950: 114  swap
+00951: 114  notearg
+00952: 114  getlocal 6
+00955: 114  this
+00956: 114  getprop "m_generalOrbit"
+00961: 114  one
+00962: 114  sub
+00963: 114  getelem
+00964: 114  notearg
+00965: 114  this
+00966: 114  notearg
+00967: 114  call 2
+00970: 114  setprop "ccbNodeTuTeng"
+00975: 114  pop
+00976: 118  name "xs"
+00981: 118  getprop "Utils"
+00986: 118  getprop "Node"
+00991: 118  dup
+00992: 118  callprop "attachNodes"
+00997: 118  swap
+00998: 118  notearg
+00999: 118  this
+01000: 118  notearg
+01001: 118  this
+01002: 118  getprop "ccbNodeTuTeng"
+01007: 118  notearg
+01008: 118  newinit 1
+01013: 118  string "c"
+01018: 118  initprop "desc"
+01023: 119  name "cc"
+01028: 119  dup
+01029: 119  callprop "p"
+01034: 119  swap
+01035: 119  notearg
+01036: 119  int8 20
+01038: 119  getlocal 4
+01041: 119  sub
+01042: 119  getlocal 3
+01045: 119  sub
+01046: 119  notearg
+01047: 119  getlocal 5
+01050: 119  neg
+01051: 119  int8 2
+01053: 119  div
+01054: 119  notearg
+01055: 119  call 2
+01058: 119  initprop "offset"
+01063: 119  true
+01064: 119  initprop "sc"
+01069: 119  endinit
+01070: 119  notearg
+01071: 120  newinit 1
+01076: 120  zero
+01077: 120  initprop "zOrder"
+01082: 120  one
+01083: 120  initprop "tag"
+01088: 120  endinit
+01089: 120  notearg
+01090: 120  call 4
+01093: 120  pop
+01094: 123  this
+01095: 123  name "xs"
+01100: 123  getprop "ccb_reader"
+01105: 123  dup
+01106: 123  callprop "load"
+01111: 123  swap
+01112: 123  notearg
+01113: 123  name "xs"
+01118: 123  getprop "Cfg"
+01123: 123  getprop "CCBI"
+01128: 123  getprop "EvolutionInfor"
+01133: 123  notearg
+01134: 123  this
+01135: 123  notearg
+01136: 123  call 2
+01139: 123  setprop "ccbNode_Infor"
+01144: 123  pop
+01145: 124  this
+01146: 124  getprop "ccbNode_Infor"
+01151: 124  dup
+01152: 124  callprop "setContentSize"
+01157: 124  swap
+01158: 124  notearg
+01159: 124  name "cc"
+01164: 124  dup
+01165: 124  callprop "size"
+01170: 124  swap
+01171: 124  notearg
+01172: 124  uint16 400
+01175: 124  notearg
+01176: 124  uint16 640
+01179: 124  notearg
+01180: 124  call 2
+01183: 124  notearg
+01184: 124  call 1
+01187: 124  pop
+01188: 125  this
+01189: 125  getprop "ccbNode_Infor"
+01194: 125  dup
+01195: 125  callprop "setAnchorPoint"
+01200: 125  swap
+01201: 125  notearg
+01202: 125  name "cc"
+01207: 125  dup
+01208: 125  callprop "p"
+01213: 125  swap
+01214: 125  notearg
+01215: 125  one
+01216: 125  notearg
+01217: 125  double 0.5
+01222: 125  notearg
+01223: 125  call 2
+01226: 125  notearg
+01227: 125  call 1
+01230: 125  pop
+01231: 126  name "xs"
+01236: 126  getprop "Utils"
+01241: 126  getprop "Node"
+01246: 126  dup
+01247: 126  callprop "attachNodes"
+01252: 126  swap
+01253: 126  notearg
+01254: 126  this
+01255: 126  notearg
+01256: 126  this
+01257: 126  getprop "ccbNode_Infor"
+01262: 126  notearg
+01263: 126  newinit 1
+01268: 126  string "lb"
+01273: 126  initprop "desc"
+01278: 127  newinit 1
+01283: 128  getlocal 1
+01286: 128  getprop "width"
+01291: 128  getlocal 2
+01294: 128  sub
+01295: 128  int8 20
+01297: 128  add
+01298: 128  initprop "x"
+01303: 129  getlocal 1
+01306: 129  getprop "height"
+01311: 129  int8 2
+01313: 129  div
+01314: 129  initprop "y"
+01319: 129  endinit
+01320: 129  initprop "offset"
+01325: 131  true
+01326: 131  initprop "sc"
+01331: 131  endinit
+01332: 131  notearg
+01333: 131  call 3
+01336: 131  pop
+01337: 133  name "xs"
+01342: 133  getprop "Utils"
+01347: 133  getprop "UI"
+01352: 133  dup
+01353: 133  callprop "replaceCcbByCfg"
+01358: 133  swap
+01359: 133  notearg
+01360: 133  this
+01361: 133  getprop "ccbNode_Infor"
+01366: 133  notearg
+01367: 133  this
+01368: 133  getprop "ccbCfg_Infor"
+01373: 133  notearg
+01374: 133  this
+01375: 133  notearg
+01376: 133  call 3
+01379: 133  pop
+01380: 135  this
+01381: 135  getprop "m_nameLabel"
+01386: 135  dup
+01387: 135  callprop "setString"
+01392: 135  swap
+01393: 135  notearg
+01394: 135  this
+01395: 135  getprop "m_generalName"
+01400: 135  notearg
+01401: 135  call 1
+01404: 135  pop
+01405: 136  name "xs"
+01410: 136  getprop "Utils"
+01415: 136  dup
+01416: 136  callprop "replaceGradeIcon"
+01421: 136  swap
+01422: 136  notearg
+01423: 136  this
+01424: 136  getprop "ccbNode_Infor"
+01429: 136  notearg
+01430: 136  int8 10
+01432: 136  notearg
+01433: 136  this
+01434: 136  getprop "generalModel"
+01439: 136  dup
+01440: 136  callprop "getGrade"
+01445: 136  swap
+01446: 136  notearg
+01447: 136  call 0
+01450: 136  notearg
+01451: 136  call 3
+01454: 136  pop
+01455: 138  this
+01456: 138  getprop "m_effect_label"
+01461: 138  dup
+01462: 138  callprop "setString"
+01467: 138  swap
+01468: 138  notearg
+01469: 138  string "\u6FC0\u6D3B\u7684\u4E0B\u4E00\u4E2A\u56FE\u817E\u6548\u679C\u4E3A:"
+01474: 138  notearg
+01475: 138  call 1
+01478: 138  pop
+01479: 139  this
+01480: 139  getprop "m_consume_label"
+01485: 139  dup
+01486: 139  callprop "setString"
+01491: 139  swap
+01492: 139  notearg
+01493: 139  string "\u6FC0\u6D3B\u4E0B\u4E00\u4E2A\u56FE\u817E\u6548\u679C\u9700\u6D88\u8017:"
+01498: 139  notearg
+01499: 139  call 1
+01502: 139  pop
+01503: 142  this
+01504: 142  this
+01505: 142  getprop "ccbNode_Infor"
+01510: 142  dup
+01511: 142  callprop "getChildByTag"
+01516: 142  swap
+01517: 142  notearg
+01518: 142  int8 21
+01520: 142  notearg
+01521: 142  call 1
+01524: 142  setprop "m_first_icon"
+01529: 142  pop
+01530: 143  this
+01531: 143  this
+01532: 143  getprop "ccbNode_Infor"
+01537: 143  dup
+01538: 143  callprop "getChildByTag"
+01543: 143  swap
+01544: 143  notearg
+01545: 143  int8 22
+01547: 143  notearg
+01548: 143  call 1
+01551: 143  setprop "m_second_icon"
+01556: 143  pop
+01557: 144  this
+01558: 144  getprop "m_iconsList"
+01563: 144  dup
+01564: 144  callprop "push"
+01569: 144  swap
+01570: 144  notearg
+01571: 144  this
+01572: 144  getprop "m_first_icon"
+01577: 144  notearg
+01578: 144  call 1
+01581: 144  pop
+01582: 145  this
+01583: 145  getprop "m_iconsList"
+01588: 145  dup
+01589: 145  callprop "push"
+01594: 145  swap
+01595: 145  notearg
+01596: 145  this
+01597: 145  getprop "m_second_icon"
+01602: 145  notearg
+01603: 145  call 1
+01606: 145  pop
+01607: 147  this
+01608: 147  getprop "m_needList"
+01613: 147  dup
+01614: 147  callprop "push"
+01619: 147  swap
+01620: 147  notearg
+01621: 147  this
+01622: 147  getprop "m_first_Need"
+01627: 147  notearg
+01628: 147  call 1
+01631: 147  pop
+01632: 148  this
+01633: 148  getprop "m_needList"
+01638: 148  dup
+01639: 148  callprop "push"
+01644: 148  swap
+01645: 148  notearg
+01646: 148  this
+01647: 148  getprop "m_second_Need"
+01652: 148  notearg
+01653: 148  call 1
+01656: 148  pop
+01657: 149  this
+01658: 149  getprop "m_haveList"
+01663: 149  dup
+01664: 149  callprop "push"
+01669: 149  swap
+01670: 149  notearg
+01671: 149  this
+01672: 149  getprop "m_first_Have"
+01677: 149  notearg
+01678: 149  call 1
+01681: 149  pop
+01682: 150  this
+01683: 150  getprop "m_haveList"
+01688: 150  dup
+01689: 150  callprop "push"
+01694: 150  swap
+01695: 150  notearg
+01696: 150  this
+01697: 150  getprop "m_second_Have"
+01702: 150  notearg
+01703: 150  call 1
+01706: 150  pop
+01707: 152  this
+01708: 152  getprop "m_activateButton"
+01713: 152  dup
+01714: 152  callprop "setOnClickCallBack"
+01719: 152  swap
+01720: 152  notearg
+01721: 152  this
+01722: 152  getprop "ActivateCallback"
+01727: 152  dup
+01728: 152  callprop "bind"
+01733: 152  swap
+01734: 152  notearg
+01735: 152  this
+01736: 152  notearg
+01737: 152  call 1
+01740: 152  notearg
+01741: 152  call 1
+01744: 152  pop
+01745: 153  this
+01746: 153  dup
+01747: 153  callprop "initStars"
+01752: 153  swap
+01753: 153  notearg
+01754: 153  call 0
+01757: 153  pop
+01758: 155  this
+01759: 155  dup
+01760: 155  callprop "updateInfo"
+01765: 155  swap
+01766: 155  notearg
+01767: 155  call 0
+01770: 155  pop
+01771: 157  this
+01772: 157  dup
+01773: 157  callprop "setActiveButtonStatus"
+01778: 157  swap
+01779: 157  notearg
+01780: 157  call 0
+01783: 157  pop
+01784: 160  true
+01785: 160  return
+01786: 160  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:33 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:164 ---
+loc   line  op
+----- ----  --
+main:
+00000: 165  this
+00001: 165  dup
+00002: 165  callprop "_super"
+00007: 165  swap
+00008: 165  notearg
+00009: 165  call 0
+00012: 165  pop
+00013: 165  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:164 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:168 ---
+loc   line  op
+----- ----  --
+main:
+00000: 169  this
+00001: 169  dup
+00002: 169  callprop "_super"
+00007: 169  swap
+00008: 169  notearg
+00009: 169  call 0
+00012: 169  pop
+00013: 169  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:168 ---
+;; function object[4] setActiveButtonStatus
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:172 ---
+loc   line  op
+----- ----  --
+main:
+00000: 173  this
+00001: 173  getprop "m_evolution_level"
+00006: 173  int8 5
+00008: 173  eq
+00009: 173  and 24 (+15)
+00014: 173  pop
+00015: 173  this
+00016: 173  getprop "m_evolution_sub_level"
+00021: 173  int8 7
+00023: 173  eq
+00024: 173  ifeq 54 (+30)
+00029: 174  this
+00030: 174  getprop "m_activateButton"
+00035: 174  dup
+00036: 174  callprop "setEnabled"
+00041: 174  swap
+00042: 174  notearg
+00043: 174  false
+00044: 174  notearg
+00045: 174  call 1
+00048: 174  pop
+00049: 174  goto 74 (+25)
+00054: 177  this
+00055: 177  getprop "m_activateButton"
+00060: 177  dup
+00061: 177  callprop "setEnabled"
+00066: 177  swap
+00067: 177  notearg
+00068: 177  true
+00069: 177  notearg
+00070: 177  call 1
+00073: 177  pop
+00074: 178  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:172 ---
+;; function object[5] getNextGrade
+;; function metadata object[5] nargs=2 bindings=3
+;; arg[0] level
+;; arg[1] sub_level
+;; local[0] grade
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:181 ---
+loc   line  op
+----- ----  --
+main:
+00000: 182  null
+00001: 182  setlocal 0
+00004: 182  pop
+00005: 184  getarg 1
+00008: 184  int8 7
+00010: 184  eq
+00011: 184  ifeq 52 (+41)
+00016: 185  getarg 0
+00019: 185  int8 7
+00021: 185  ne
+00022: 185  ifeq 47 (+25)
+00027: 186  arginc 11
+00030: 186  getarg 0
+00033: 186  pos
+00034: 186  dup
+00035: 186  one
+00036: 186  add
+00037: 186  setarg 0
+00040: 186  pop
+00041: 186  pop
+00042: 187  one
+00043: 187  setarg 1
+00046: 187  pop
+00047: 187  goto 67 (+20)
+00052: 191  arginc 11
+00055: 191  getarg 1
+00058: 191  pos
+00059: 191  dup
+00060: 191  one
+00061: 191  add
+00062: 191  setarg 1
+00065: 191  pop
+00066: 191  pop
+00067: 193  newinit 1
+00072: 194  getarg 0
+00075: 194  initprop "level"
+00080: 195  getarg 1
+00083: 195  initprop "sub_level"
+00088: 195  endinit
+00089: 195  setlocal 0
+00092: 195  pop
+00093: 199  getlocal 0
+00096: 199  return
+00097: 199  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:181 ---
+;; function object[6] getRewardStr
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] info
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:203 ---
+loc   line  op
+----- ----  --
+main:
+00000: 204  getarg 0
+00003: 204  getprop "buff_desc"
+00008: 204  return
+00009: 204  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:203 ---
+;; function object[7] createItemIcon
+;; function metadata object[7] nargs=2 bindings=11
+;; arg[0] data
+;; arg[1] idex
+;; local[0] model
+;; local[1] head
+;; local[2] array
+;; local[3] str
+;; local[4] introduction
+;; local[5] goodNum
+;; local[6] _array
+;; local[7] _str
+;; local[8] haveNum
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:208 ---
+loc   line  op
+----- ----  --
+main:
+00000: 210  this
+00001: 210  getprop "m_conditionArray"
+00006: 210  getarg 1
+00009: 210  getarg 0
+00012: 210  one
+00013: 210  getelem
+00014: 210  setelem
+00015: 210  pop
+00016: 213  name "xs"
+00021: 213  getprop "Models"
+00026: 213  getprop "Item"
+00031: 213  dup
+00032: 213  callprop "createWithBase"
+00037: 213  swap
+00038: 213  notearg
+00039: 213  getarg 0
+00042: 213  zero
+00043: 213  getelem
+00044: 213  notearg
+00045: 213  call 1
+00048: 213  setlocal 0
+00051: 213  pop
+00052: 215  getlocal 0
+00055: 215  dup
+00056: 215  callprop "createIcon_Grade"
+00061: 215  swap
+00062: 215  notearg
+00063: 215  call 0
+00066: 215  setlocal 1
+00069: 215  pop
+00070: 217  name "xs"
+00075: 217  getprop "Utils"
+00080: 217  getprop "Node"
+00085: 217  dup
+00086: 217  callprop "replaceChildSafe"
+00091: 217  swap
+00092: 217  notearg
+00093: 217  this
+00094: 217  getprop "ccbNode_Infor"
+00099: 217  notearg
+00100: 217  this
+00101: 217  getprop "m_iconsList"
+00106: 217  getarg 1
+00109: 217  getelem
+00110: 217  notearg
+00111: 217  getlocal 1
+00114: 217  notearg
+00115: 217  call 3
+00118: 217  pop
+00119: 218  this
+00120: 218  getprop "m_iconsList"
+00125: 218  getarg 1
+00128: 218  getlocal 1
+00131: 218  setelem
+00132: 218  pop
+00133: 221  newarray 0
+00137: 221  endinit
+00138: 221  setlocal 2
+00141: 221  pop
+00142: 222  getlocal 2
+00145: 222  zero
+00146: 222  getlocal 0
+00149: 222  dup
+00150: 222  callprop "getNameString"
+00155: 222  swap
+00156: 222  notearg
+00157: 222  call 0
+00160: 222  setelem
+00161: 222  pop
+00162: 223  getlocal 2
+00165: 223  one
+00166: 223  getarg 0
+00169: 223  one
+00170: 223  getelem
+00171: 223  setelem
+00172: 223  pop
+00173: 224  name "xs"
+00178: 224  getprop "Tools"
+00183: 224  getprop "String"
+00188: 224  dup
+00189: 224  callprop "createString"
+00194: 224  swap
+00195: 224  notearg
+00196: 224  string "MiracleWeapon_1"
+00201: 224  notearg
+00202: 224  call 1
+00205: 224  setlocal 3
+00208: 224  pop
+00209: 225  name "xs"
+00214: 225  getprop "Tools"
+00219: 225  getprop "String"
+00224: 225  dup
+00225: 225  callprop "replaceStringByArray"
+00230: 225  swap
+00231: 225  notearg
+00232: 225  getlocal 3
+00235: 225  notearg
+00236: 225  getlocal 2
+00239: 225  notearg
+00240: 225  call 2
+00243: 225  setlocal 4
+00246: 225  pop
+00247: 227  this
+00248: 227  getprop "m_needList"
+00253: 227  getarg 1
+00256: 227  getelem
+00257: 227  dup
+00258: 227  callprop "setString"
+00263: 227  swap
+00264: 227  notearg
+00265: 227  getlocal 4
+00268: 227  notearg
+00269: 227  call 1
+00272: 227  pop
+00273: 230  name "xs"
+00278: 230  getprop "Profile"
+00283: 230  getprop "GameData"
+00288: 230  getprop "Mgr"
+00293: 230  dup
+00294: 230  callprop "getInstance"
+00299: 230  swap
+00300: 230  notearg
+00301: 230  call 0
+00304: 230  getprop "Items"
+00309: 230  dup
+00310: 230  callprop "getTotalNumById"
+00315: 230  swap
+00316: 230  notearg
+00317: 230  getarg 0
+00320: 230  zero
+00321: 230  getelem
+00322: 230  notearg
+00323: 230  call 1
+00326: 230  setlocal 5
+00329: 230  pop
+00330: 232  this
+00331: 232  getprop "m_haveArray"
+00336: 232  getarg 1
+00339: 232  getlocal 5
+00342: 232  setelem
+00343: 232  pop
+00344: 234  newarray 0
+00348: 234  endinit
+00349: 234  setlocal 6
+00352: 234  pop
+00353: 235  getlocal 6
+00356: 235  zero
+00357: 235  getlocal 5
+00360: 235  dup
+00361: 235  callprop "toString"
+00366: 235  swap
+00367: 235  notearg
+00368: 235  call 0
+00371: 235  setelem
+00372: 235  pop
+00373: 236  name "xs"
+00378: 236  getprop "Tools"
+00383: 236  getprop "String"
+00388: 236  dup
+00389: 236  callprop "createString"
+00394: 236  swap
+00395: 236  notearg
+00396: 236  string "MiracleWeapon_have"
+00401: 236  notearg
+00402: 236  call 1
+00405: 236  setlocal 7
+00408: 236  pop
+00409: 237  name "xs"
+00414: 237  getprop "Tools"
+00419: 237  getprop "String"
+00424: 237  dup
+00425: 237  callprop "replaceStringByArray"
+00430: 237  swap
+00431: 237  notearg
+00432: 237  getlocal 7
+00435: 237  notearg
+00436: 237  getlocal 6
+00439: 237  notearg
+00440: 237  call 2
+00443: 237  setlocal 8
+00446: 237  pop
+00447: 239  this
+00448: 239  getprop "m_haveList"
+00453: 239  getarg 1
+00456: 239  getelem
+00457: 239  dup
+00458: 239  callprop "setString"
+00463: 239  swap
+00464: 239  notearg
+00465: 239  getlocal 8
+00468: 239  notearg
+00469: 239  call 1
+00472: 239  pop
+00473: 239  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:208 ---
+;; function object[8] createEquipmentFragmentIcon
+;; function metadata object[8] nargs=2 bindings=14
+;; arg[0] data
+;; arg[1] idex
+;; local[0] equipmentlId
+;; local[1] model
+;; local[2] equipData
+;; local[3] head
+;; local[4] array
+;; local[5] str
+;; local[6] introduction
+;; local[7] EquipmentPieceNum
+;; local[8] i
+;; local[9] _array
+;; local[10] _str
+;; local[11] haveNum
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:243 ---
+loc   line  op
+----- ----  --
+main:
+00000: 245  this
+00001: 245  getprop "m_conditionArray"
+00006: 245  getarg 1
+00009: 245  getarg 0
+00012: 245  one
+00013: 245  getelem
+00014: 245  setelem
+00015: 245  pop
+00016: 248  getarg 0
+00019: 248  zero
+00020: 248  getelem
+00021: 248  setlocal 0
+00024: 248  pop
+00025: 249  name "xs"
+00030: 249  getprop "Models"
+00035: 249  getprop "Equipment"
+00040: 249  dup
+00041: 249  callprop "createWithBase"
+00046: 249  swap
+00047: 249  notearg
+00048: 249  getlocal 0
+00051: 249  dup
+00052: 249  callprop "toString"
+00057: 249  swap
+00058: 249  notearg
+00059: 249  call 0
+00062: 249  notearg
+00063: 249  call 1
+00066: 249  setlocal 1
+00069: 249  pop
+00070: 250  name "xs"
+00075: 250  getprop "Models"
+00080: 250  getprop "EquipmentPiece"
+00085: 250  dup
+00086: 250  callprop "createWithBase"
+00091: 250  swap
+00092: 250  notearg
+00093: 250  getlocal 0
+00096: 250  dup
+00097: 250  callprop "toString"
+00102: 250  swap
+00103: 250  notearg
+00104: 250  call 0
+00107: 250  notearg
+00108: 250  call 1
+00111: 250  setlocal 2
+00114: 250  pop
+00115: 251  getlocal 2
+00118: 251  dup
+00119: 251  callprop "createIcon_Grade"
+00124: 251  swap
+00125: 251  notearg
+00126: 251  call 0
+00129: 251  setlocal 3
+00132: 251  pop
+00133: 253  name "xs"
+00138: 253  getprop "Utils"
+00143: 253  getprop "Node"
+00148: 253  dup
+00149: 253  callprop "replaceChildSafe"
+00154: 253  swap
+00155: 253  notearg
+00156: 253  this
+00157: 253  getprop "ccbNode_Infor"
+00162: 253  notearg
+00163: 253  this
+00164: 253  getprop "m_iconsList"
+00169: 253  getarg 1
+00172: 253  getelem
+00173: 253  notearg
+00174: 253  getlocal 3
+00177: 253  notearg
+00178: 253  call 3
+00181: 253  pop
+00182: 254  this
+00183: 254  getprop "m_iconsList"
+00188: 254  getarg 1
+00191: 254  getlocal 3
+00194: 254  setelem
+00195: 254  pop
+00196: 256  newarray 0
+00200: 256  endinit
+00201: 256  setlocal 4
+00204: 256  pop
+00205: 257  getlocal 4
+00208: 257  zero
+00209: 257  getlocal 2
+00212: 257  dup
+00213: 257  callprop "getNameString"
+00218: 257  swap
+00219: 257  notearg
+00220: 257  call 0
+00223: 257  setelem
+00224: 257  pop
+00225: 258  getlocal 4
+00228: 258  one
+00229: 258  getarg 0
+00232: 258  one
+00233: 258  getelem
+00234: 258  setelem
+00235: 258  pop
+00236: 259  name "xs"
+00241: 259  getprop "Tools"
+00246: 259  getprop "String"
+00251: 259  dup
+00252: 259  callprop "createString"
+00257: 259  swap
+00258: 259  notearg
+00259: 259  string "MiracleWeapon_3"
+00264: 259  notearg
+00265: 259  call 1
+00268: 259  setlocal 5
+00271: 259  pop
+00272: 260  name "xs"
+00277: 260  getprop "Tools"
+00282: 260  getprop "String"
+00287: 260  dup
+00288: 260  callprop "replaceStringByArray"
+00293: 260  swap
+00294: 260  notearg
+00295: 260  getlocal 5
+00298: 260  notearg
+00299: 260  getlocal 4
+00302: 260  notearg
+00303: 260  call 2
+00306: 260  setlocal 6
+00309: 260  pop
+00310: 261  this
+00311: 261  getprop "m_needList"
+00316: 261  getarg 1
+00319: 261  getelem
+00320: 261  dup
+00321: 261  callprop "setString"
+00326: 261  swap
+00327: 261  notearg
+00328: 261  getlocal 6
+00331: 261  notearg
+00332: 261  call 1
+00335: 261  pop
+00336: 264  zero
+00337: 264  setlocal 7
+00340: 264  pop
+00341: 265  zero
+00342: 265  setlocal 8
+00345: 265  pop
+00346: 265  goto 417 (+71)
+00351: 266  loophead
+00352: 266  this
+00353: 266  getprop "arrayPieces"
+00358: 266  getlocal 8
+00361: 266  getelem
+00362: 266  getprop "pk_id"
+00367: 266  getarg 0
+00370: 266  zero
+00371: 266  getelem
+00372: 266  eq
+00373: 266  ifeq 402 (+29)
+00378: 268  this
+00379: 268  getprop "arrayPieces"
+00384: 268  getlocal 8
+00387: 268  getelem
+00388: 268  getprop "num"
+00393: 268  setlocal 7
+00396: 268  pop
+00397: 269  goto 438 (+41)
+00402: 265  localinc 11
+00405: 265  getlocal 8
+00408: 265  pos
+00409: 265  dup
+00410: 265  one
+00411: 265  add
+00412: 265  setlocal 8
+00415: 265  pop
+00416: 265  pop
+00417: 265  loopentry
+00418: 265  getlocal 8
+00421: 265  this
+00422: 265  getprop "arrayPieces"
+00427: 265  length "length"
+00432: 265  lt
+00433: 265  ifne 351 (-82)
+00438: 273  this
+00439: 273  getprop "m_haveArray"
+00444: 273  getarg 1
+00447: 273  getlocal 7
+00450: 273  setelem
+00451: 273  pop
+00452: 275  newarray 0
+00456: 275  endinit
+00457: 275  setlocal 9
+00460: 275  pop
+00461: 276  getlocal 9
+00464: 276  zero
+00465: 276  getlocal 7
+00468: 276  dup
+00469: 276  callprop "toString"
+00474: 276  swap
+00475: 276  notearg
+00476: 276  call 0
+00479: 276  setelem
+00480: 276  pop
+00481: 277  name "xs"
+00486: 277  getprop "Tools"
+00491: 277  getprop "String"
+00496: 277  dup
+00497: 277  callprop "createString"
+00502: 277  swap
+00503: 277  notearg
+00504: 277  string "MiracleWeapon_have"
+00509: 277  notearg
+00510: 277  call 1
+00513: 277  setlocal 10
+00516: 277  pop
+00517: 278  name "xs"
+00522: 278  getprop "Tools"
+00527: 278  getprop "String"
+00532: 278  dup
+00533: 278  callprop "replaceStringByArray"
+00538: 278  swap
+00539: 278  notearg
+00540: 278  getlocal 10
+00543: 278  notearg
+00544: 278  getlocal 9
+00547: 278  notearg
+00548: 278  call 2
+00551: 278  setlocal 11
+00554: 278  pop
+00555: 279  this
+00556: 279  getprop "m_haveList"
+00561: 279  getarg 1
+00564: 279  getelem
+00565: 279  dup
+00566: 279  callprop "setString"
+00571: 279  swap
+00572: 279  notearg
+00573: 279  getlocal 11
+00576: 279  notearg
+00577: 279  call 1
+00580: 279  pop
+00581: 279  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:243 ---
+;; function object[9] createGeneralsSoulIcon
+;; function metadata object[9] nargs=2 bindings=14
+;; arg[0] data
+;; arg[1] idex
+;; local[0] generalId
+;; local[1] equipData
+;; local[2] model
+;; local[3] head
+;; local[4] array
+;; local[5] str
+;; local[6] introduction
+;; local[7] EquipmentPieceNum
+;; local[8] i
+;; local[9] _array
+;; local[10] _str
+;; local[11] haveNum
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=150 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:286 ---
+loc   line  op
+----- ----  --
+main:
+00000: 289  this
+00001: 289  getprop "m_conditionArray"
+00006: 289  getarg 1
+00009: 289  getarg 0
+00012: 289  one
+00013: 289  getelem
+00014: 289  setelem
+00015: 289  pop
+00016: 292  getarg 0
+00019: 292  zero
+00020: 292  getelem
+00021: 292  setlocal 0
+00024: 292  pop
+00025: 293  name "xs"
+00030: 293  getprop "Models"
+00035: 293  getprop "General"
+00040: 293  dup
+00041: 293  callprop "createWithBase"
+00046: 293  swap
+00047: 293  notearg
+00048: 293  getlocal 0
+00051: 293  dup
+00052: 293  callprop "toString"
+00057: 293  swap
+00058: 293  notearg
+00059: 293  call 0
+00062: 293  notearg
+00063: 293  call 1
+00066: 293  setaliasedvar "equipData" (hops = 0, slot = 2)
+00075: 293  pop
+00076: 294  name "xs"
+00081: 294  getprop "Models"
+00086: 294  getprop "GeneralSoul"
+00091: 294  dup
+00092: 294  callprop "createWithBase"
+00097: 294  swap
+00098: 294  notearg
+00099: 294  getlocal 0
+00102: 294  dup
+00103: 294  callprop "toString"
+00108: 294  swap
+00109: 294  notearg
+00110: 294  call 0
+00113: 294  notearg
+00114: 294  call 1
+00117: 294  setlocal 2
+00120: 294  pop
+00121: 295  getlocal 2
+00124: 295  dup
+00125: 295  callprop "createIcon_Grade"
+00130: 295  swap
+00131: 295  notearg
+00132: 295  call 0
+00135: 295  setlocal 3
+00138: 295  pop
+00139: 297  getlocal 3
+00142: 297  dup
+00143: 297  callprop "setOnClickCallBack"
+00148: 297  swap
+00149: 297  notearg
+00150: 297  lambda (function () {
+    [sourceless code]
+})
+00155: 297  dup
+00156: 297  callprop "bind"
+00161: 297  swap
+00162: 297  notearg
+00163: 302  this
+00164: 302  notearg
+00165: 302  call 1
+00168: 302  notearg
+00169: 302  call 1
+00172: 302  pop
+00173: 304  name "xs"
+00178: 304  getprop "Utils"
+00183: 304  getprop "Node"
+00188: 304  dup
+00189: 304  callprop "replaceChildSafe"
+00194: 304  swap
+00195: 304  notearg
+00196: 304  this
+00197: 304  getprop "ccbNode_Infor"
+00202: 304  notearg
+00203: 304  this
+00204: 304  getprop "m_iconsList"
+00209: 304  getarg 1
+00212: 304  getelem
+00213: 304  notearg
+00214: 304  getlocal 3
+00217: 304  notearg
+00218: 304  call 3
+00221: 304  pop
+00222: 305  this
+00223: 305  getprop "m_iconsList"
+00228: 305  getarg 1
+00231: 305  getlocal 3
+00234: 305  setelem
+00235: 305  pop
+00236: 308  newarray 0
+00240: 308  endinit
+00241: 308  setlocal 4
+00244: 308  pop
+00245: 309  getlocal 4
+00248: 309  zero
+00249: 309  getlocal 2
+00252: 309  dup
+00253: 309  callprop "getNameString"
+00258: 309  swap
+00259: 309  notearg
+00260: 309  call 0
+00263: 309  setelem
+00264: 309  pop
+00265: 310  getlocal 4
+00268: 310  one
+00269: 310  getarg 0
+00272: 310  one
+00273: 310  getelem
+00274: 310  setelem
+00275: 310  pop
+00276: 311  name "xs"
+00281: 311  getprop "Tools"
+00286: 311  getprop "String"
+00291: 311  dup
+00292: 311  callprop "createString"
+00297: 311  swap
+00298: 311  notearg
+00299: 311  string "MiracleWeapon_2"
+00304: 311  notearg
+00305: 311  call 1
+00308: 311  setlocal 5
+00311: 311  pop
+00312: 312  name "xs"
+00317: 312  getprop "Tools"
+00322: 312  getprop "String"
+00327: 312  dup
+00328: 312  callprop "replaceStringByArray"
+00333: 312  swap
+00334: 312  notearg
+00335: 312  getlocal 5
+00338: 312  notearg
+00339: 312  getlocal 4
+00342: 312  notearg
+00343: 312  call 2
+00346: 312  setlocal 6
+00349: 312  pop
+00350: 314  this
+00351: 314  getprop "m_needList"
+00356: 314  getarg 1
+00359: 314  getelem
+00360: 314  dup
+00361: 314  callprop "setString"
+00366: 314  swap
+00367: 314  notearg
+00368: 314  getlocal 6
+00371: 314  notearg
+00372: 314  call 1
+00375: 314  pop
+00376: 318  zero
+00377: 318  setlocal 7
+00380: 318  pop
+00381: 319  this
+00382: 319  name "xs"
+00387: 319  getprop "Profile"
+00392: 319  getprop "GameData"
+00397: 319  getprop "Mgr"
+00402: 319  dup
+00403: 319  callprop "getInstance"
+00408: 319  swap
+00409: 319  notearg
+00410: 319  call 0
+00413: 319  getprop "GeneralSouls"
+00418: 319  dup
+00419: 319  callprop "getAll"
+00424: 319  swap
+00425: 319  notearg
+00426: 319  call 0
+00429: 319  setprop "arraySouls"
+00434: 319  pop
+00435: 321  zero
+00436: 321  setlocal 8
+00439: 321  pop
+00440: 321  goto 511 (+71)
+00445: 322  loophead
+00446: 322  this
+00447: 322  getprop "arraySouls"
+00452: 322  getlocal 8
+00455: 322  getelem
+00456: 322  getprop "pk_id"
+00461: 322  getarg 0
+00464: 322  zero
+00465: 322  getelem
+00466: 322  eq
+00467: 322  ifeq 496 (+29)
+00472: 323  this
+00473: 323  getprop "arraySouls"
+00478: 323  getlocal 8
+00481: 323  getelem
+00482: 323  getprop "num"
+00487: 323  setlocal 7
+00490: 323  pop
+00491: 324  goto 532 (+41)
+00496: 321  localinc 11
+00499: 321  getlocal 8
+00502: 321  pos
+00503: 321  dup
+00504: 321  one
+00505: 321  add
+00506: 321  setlocal 8
+00509: 321  pop
+00510: 321  pop
+00511: 321  loopentry
+00512: 321  getlocal 8
+00515: 321  this
+00516: 321  getprop "arraySouls"
+00521: 321  length "length"
+00526: 321  lt
+00527: 321  ifne 445 (-82)
+00532: 329  this
+00533: 329  getprop "m_haveArray"
+00538: 329  getarg 1
+00541: 329  getlocal 7
+00544: 329  setelem
+00545: 329  pop
+00546: 331  newarray 0
+00550: 331  endinit
+00551: 331  setlocal 9
+00554: 331  pop
+00555: 332  getlocal 9
+00558: 332  zero
+00559: 332  getlocal 7
+00562: 332  dup
+00563: 332  callprop "toString"
+00568: 332  swap
+00569: 332  notearg
+00570: 332  call 0
+00573: 332  setelem
+00574: 332  pop
+00575: 334  name "xs"
+00580: 334  getprop "Tools"
+00585: 334  getprop "String"
+00590: 334  dup
+00591: 334  callprop "createString"
+00596: 334  swap
+00597: 334  notearg
+00598: 334  string "MiracleWeapon_have"
+00603: 334  notearg
+00604: 334  call 1
+00607: 334  setlocal 10
+00610: 334  pop
+00611: 335  name "xs"
+00616: 335  getprop "Tools"
+00621: 335  getprop "String"
+00626: 335  dup
+00627: 335  callprop "replaceStringByArray"
+00632: 335  swap
+00633: 335  notearg
+00634: 335  getlocal 10
+00637: 335  notearg
+00638: 335  getlocal 9
+00641: 335  notearg
+00642: 335  call 2
+00645: 335  setlocal 11
+00648: 335  pop
+00649: 336  this
+00650: 336  getprop "m_haveList"
+00655: 336  getarg 1
+00658: 336  getelem
+00659: 336  dup
+00660: 336  callprop "setString"
+00665: 336  swap
+00666: 336  notearg
+00667: 336  getlocal 11
+00670: 336  notearg
+00671: 336  call 1
+00674: 336  pop
+00675: 336  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:286 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:297 ---
+loc   line  op
+----- ----  --
+main:
+00000: 298  name "xs"
+00005: 298  getprop "Views"
+00010: 298  getprop "Mgr"
+00015: 298  dup
+00016: 298  callprop "showDialogByName"
+00021: 298  swap
+00022: 298  notearg
+00023: 298  string "DetailDialogGeneral"
+00028: 298  notearg
+00029: 298  newinit 1
+00034: 299  getaliasedvar "equipData" (hops = 0, slot = 2)
+00043: 299  initprop "generalData"
+00048: 300  string "achieve_nothave"
+00053: 300  initprop "type"
+00058: 300  endinit
+00059: 300  notearg
+00060: 300  call 2
+00063: 300  pop
+00064: 301  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:297 ---
+;; function object[10] refreshData
+;; function metadata object[10] nargs=0 bindings=1
+;; local[0] grade
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:340 ---
+loc   line  op
+----- ----  --
+main:
+00000: 342  this
+00001: 342  name "xs"
+00006: 342  getprop "Profile"
+00011: 342  getprop "GameData"
+00016: 342  getprop "Mgr"
+00021: 342  dup
+00022: 342  callprop "getInstance"
+00027: 342  swap
+00028: 342  notearg
+00029: 342  call 0
+00032: 342  getprop "EvolutionInfos"
+00037: 342  dup
+00038: 342  callprop "getByGeneralId"
+00043: 342  swap
+00044: 342  notearg
+00045: 342  this
+00046: 342  getprop "m_generalId"
+00051: 342  notearg
+00052: 342  call 1
+00055: 342  setprop "evoInfo"
+00060: 342  pop
+00061: 343  this
+00062: 343  getprop "evoInfo"
+00067: 343  dup
+00068: 343  callprop "initCachePoint"
+00073: 343  swap
+00074: 343  notearg
+00075: 343  call 0
+00078: 343  pop
+00079: 345  this
+00080: 345  this
+00081: 345  getprop "evoInfo"
+00086: 345  getprop "evolution_id"
+00091: 345  setprop "evolution_id"
+00096: 345  pop
+00097: 346  this
+00098: 346  name "xs"
+00103: 346  getprop "Models"
+00108: 346  getprop "EvolutionInfo"
+00113: 346  dup
+00114: 346  callprop "createWithBase"
+00119: 346  swap
+00120: 346  notearg
+00121: 346  this
+00122: 346  getprop "m_generalId"
+00127: 346  notearg
+00128: 346  call 1
+00131: 346  dup
+00132: 346  callprop "getBuffInfo"
+00137: 346  swap
+00138: 346  notearg
+00139: 346  call 0
+00142: 346  setprop "buff_config"
+00147: 346  pop
+00148: 348  this
+00149: 348  name "xs"
+00154: 348  getprop "Models"
+00159: 348  getprop "General"
+00164: 348  dup
+00165: 348  callprop "createWithBase"
+00170: 348  swap
+00171: 348  notearg
+00172: 348  this
+00173: 348  getprop "m_generalId"
+00178: 348  notearg
+00179: 348  call 1
+00182: 348  setprop "generalModel"
+00187: 348  pop
+00188: 349  this
+00189: 349  this
+00190: 349  getprop "generalModel"
+00195: 349  dup
+00196: 349  callprop "getNameString"
+00201: 349  swap
+00202: 349  notearg
+00203: 349  this
+00204: 349  getprop "m_generalId"
+00209: 349  notearg
+00210: 349  call 1
+00213: 349  setprop "m_generalName"
+00218: 349  pop
+00219: 351  this
+00220: 351  this
+00221: 351  getprop "evoInfo"
+00226: 351  dup
+00227: 351  callprop "getEvolutionLevel"
+00232: 351  swap
+00233: 351  notearg
+00234: 351  call 0
+00237: 351  setprop "m_evolution_level"
+00242: 351  pop
+00243: 352  this
+00244: 352  this
+00245: 352  getprop "evoInfo"
+00250: 352  dup
+00251: 352  callprop "getEvolutionSubLevel"
+00256: 352  swap
+00257: 352  notearg
+00258: 352  call 0
+00261: 352  setprop "m_evolution_sub_level"
+00266: 352  pop
+00267: 365  this
+00268: 365  getprop "m_evolution_level"
+00273: 365  int8 5
+00275: 365  eq
+00276: 365  and 291 (+15)
+00281: 365  pop
+00282: 365  this
+00283: 365  getprop "m_evolution_sub_level"
+00288: 365  int8 7
+00290: 365  eq
+00291: 365  ifeq 319 (+28)
+00296: 366  this
+00297: 366  int8 5
+00299: 366  setprop "m_fixLevel"
+00304: 366  pop
+00305: 367  this
+00306: 367  int8 8
+00308: 367  setprop "m_fixSubLevel"
+00313: 367  pop
+00314: 367  goto 379 (+65)
+00319: 369  this
+00320: 369  dup
+00321: 369  callprop "getNextGrade"
+00326: 369  swap
+00327: 369  notearg
+00328: 369  this
+00329: 369  getprop "m_evolution_level"
+00334: 369  notearg
+00335: 369  this
+00336: 369  getprop "m_evolution_sub_level"
+00341: 369  notearg
+00342: 369  call 2
+00345: 369  setlocal 0
+00348: 369  pop
+00349: 371  this
+00350: 371  getlocal 0
+00353: 371  getprop "level"
+00358: 371  setprop "m_fixLevel"
+00363: 371  pop
+00364: 372  this
+00365: 372  getlocal 0
+00368: 372  getprop "sub_level"
+00373: 372  setprop "m_fixSubLevel"
+00378: 372  pop
+00379: 373  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:340 ---
+;; function object[11] updateUI
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:378 ---
+loc   line  op
+----- ----  --
+main:
+00000: 379  this
+00001: 379  dup
+00002: 379  callprop "refreshData"
+00007: 379  swap
+00008: 379  notearg
+00009: 379  call 0
+00012: 379  pop
+00013: 381  this
+00014: 381  dup
+00015: 381  callprop "updateInfo"
+00020: 381  swap
+00021: 381  notearg
+00022: 381  call 0
+00025: 381  pop
+00026: 383  this
+00027: 383  dup
+00028: 383  callprop "updateStars"
+00033: 383  swap
+00034: 383  notearg
+00035: 383  call 0
+00038: 383  pop
+00039: 383  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:378 ---
+;; function object[12] updateInfo
+;; function metadata object[12] nargs=0 bindings=2
+;; local[0] info
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:386 ---
+loc   line  op
+----- ----  --
+main:
+00000: 387  name "xs"
+00005: 387  dup
+00006: 387  callprop "log"
+00011: 387  swap
+00012: 387  notearg
+00013: 387  string "---- this.m_evolution_level = "
+00018: 387  notearg
+00019: 387  this
+00020: 387  getprop "m_evolution_level"
+00025: 387  notearg
+00026: 387  call 2
+00029: 387  pop
+00030: 388  this
+00031: 388  getprop "m_level_label"
+00036: 388  dup
+00037: 388  callprop "setString"
+00042: 388  swap
+00043: 388  notearg
+00044: 388  this
+00045: 388  getprop "m_fixLevel"
+00050: 388  one
+00051: 388  sub
+00052: 388  notearg
+00053: 388  call 1
+00056: 388  pop
+00057: 389  this
+00058: 389  getprop "m_level_label"
+00063: 389  dup
+00064: 389  callprop "setFontSize"
+00069: 389  swap
+00070: 389  notearg
+00071: 389  int8 36
+00073: 389  notearg
+00074: 389  call 1
+00077: 389  pop
+00078: 390  null
+00079: 390  setlocal 0
+00082: 390  pop
+00083: 392  this
+00084: 392  getprop "m_fixSubLevel"
+00089: 392  int8 8
+00091: 392  ne
+00092: 392  ifeq 156 (+64)
+00097: 393  this
+00098: 393  getprop "buff_config"
+00103: 393  callname "String"
+00108: 393  implicitthis "String"
+00113: 393  notearg
+00114: 393  this
+00115: 393  getprop "m_fixLevel"
+00120: 393  notearg
+00121: 393  call 1
+00124: 393  getelem
+00125: 393  callname "String"
+00130: 393  implicitthis "String"
+00135: 393  notearg
+00136: 393  this
+00137: 393  getprop "m_fixSubLevel"
+00142: 393  notearg
+00143: 393  call 1
+00146: 393  getelem
+00147: 393  setlocal 0
+00150: 393  pop
+00151: 393  goto 210 (+59)
+00156: 395  this
+00157: 395  getprop "buff_config"
+00162: 395  callname "String"
+00167: 395  implicitthis "String"
+00172: 395  notearg
+00173: 395  this
+00174: 395  getprop "m_evolution_level"
+00179: 395  notearg
+00180: 395  call 1
+00183: 395  getelem
+00184: 395  callname "String"
+00189: 395  implicitthis "String"
+00194: 395  notearg
+00195: 395  this
+00196: 395  getprop "m_evolution_sub_level"
+00201: 395  notearg
+00202: 395  call 1
+00205: 395  getelem
+00206: 395  setlocal 0
+00209: 395  pop
+00210: 398  this
+00211: 398  getprop "m_star_label"
+00216: 398  dup
+00217: 398  callprop "setStringById"
+00222: 398  swap
+00223: 398  notearg
+00224: 398  getlocal 0
+00227: 398  zero
+00228: 398  getelem
+00229: 398  getprop "sub_name"
+00234: 398  notearg
+00235: 398  call 1
+00238: 398  pop
+00239: 399  this
+00240: 399  getprop "m_reward_label"
+00245: 399  dup
+00246: 399  callprop "setString"
+00251: 399  swap
+00252: 399  notearg
+00253: 399  this
+00254: 399  dup
+00255: 399  callprop "getRewardStr"
+00260: 399  swap
+00261: 399  notearg
+00262: 399  getlocal 0
+00265: 399  zero
+00266: 399  getelem
+00267: 399  notearg
+00268: 399  call 1
+00271: 399  notearg
+00272: 399  call 1
+00275: 399  pop
+00276: 402  zero
+00277: 402  setlocal 1
+00280: 402  pop
+00281: 402  goto 345 (+64)
+00286: 403  loophead
+00287: 403  this
+00288: 403  dup
+00289: 403  callprop "switchCreateIcon"
+00294: 403  swap
+00295: 403  notearg
+00296: 403  getlocal 0
+00299: 403  zero
+00300: 403  getelem
+00301: 403  getprop "item_list"
+00306: 403  getlocal 1
+00309: 403  dup
+00310: 403  callprop "toString"
+00315: 403  swap
+00316: 403  notearg
+00317: 403  call 0
+00320: 403  getelem
+00321: 403  notearg
+00322: 403  getlocal 1
+00325: 403  notearg
+00326: 403  call 2
+00329: 403  pop
+00330: 402  localinc 11
+00333: 402  getlocal 1
+00336: 402  pos
+00337: 402  dup
+00338: 402  one
+00339: 402  add
+00340: 402  setlocal 1
+00343: 402  pop
+00344: 402  pop
+00345: 402  loopentry
+00346: 402  getlocal 1
+00349: 402  int8 2
+00351: 402  lt
+00352: 402  ifne 286 (-66)
+00357: 406  this
+00358: 406  getprop "m_fixSubLevel"
+00363: 406  int8 8
+00365: 406  eq
+00366: 406  ifeq 437 (+71)
+00371: 407  this
+00372: 407  getprop "m_level_label"
+00377: 407  dup
+00378: 407  callprop "setString"
+00383: 407  swap
+00384: 407  notearg
+00385: 407  this
+00386: 407  getprop "m_evolution_level"
+00391: 407  notearg
+00392: 407  call 1
+00395: 407  pop
+00396: 408  this
+00397: 408  getprop "m_level_label"
+00402: 408  dup
+00403: 408  callprop "setFontSize"
+00408: 408  swap
+00409: 408  notearg
+00410: 408  int8 36
+00412: 408  notearg
+00413: 408  call 1
+00416: 408  pop
+00417: 409  this
+00418: 409  getprop "m_activateButton"
+00423: 409  dup
+00424: 409  callprop "setEnabled"
+00429: 409  swap
+00430: 409  notearg
+00431: 409  false
+00432: 409  notearg
+00433: 409  call 1
+00436: 409  pop
+00437: 410  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:386 ---
+;; function object[13] initStars
+;; function metadata object[13] nargs=0 bindings=2
+;; local[0] i
+;; local[1] starBtn
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:413 ---
+loc   line  op
+----- ----  --
+main:
+00000: 415  zero
+00001: 415  setlocal 0
+00004: 415  pop
+00005: 415  goto 282 (+277)
+00010: 417  loophead
+00011: 417  this
+00012: 417  getprop "m_lightStars"
+00017: 417  getlocal 0
+00020: 417  this
+00021: 417  getprop "ccbNodeTuTeng"
+00026: 417  dup
+00027: 417  callprop "getChildByTag"
+00032: 417  swap
+00033: 417  notearg
+00034: 417  int8 8
+00036: 417  getlocal 0
+00039: 417  add
+00040: 417  notearg
+00041: 417  call 1
+00044: 417  setelem
+00045: 417  pop
+00046: 418  this
+00047: 418  getprop "m_lightStars"
+00052: 418  getlocal 0
+00055: 418  getelem
+00056: 418  dup
+00057: 418  callprop "setZOrder"
+00062: 418  swap
+00063: 418  notearg
+00064: 418  int8 2
+00066: 418  notearg
+00067: 418  call 1
+00070: 418  pop
+00071: 420  getlocal 0
+00074: 420  this
+00075: 420  getprop "m_fixSubLevel"
+00080: 420  one
+00081: 420  sub
+00082: 420  ge
+00083: 420  ifeq 112 (+29)
+00088: 421  this
+00089: 421  getprop "m_lightStars"
+00094: 421  getlocal 0
+00097: 421  getelem
+00098: 421  dup
+00099: 421  callprop "setVisible"
+00104: 421  swap
+00105: 421  notearg
+00106: 421  false
+00107: 421  notearg
+00108: 421  call 1
+00111: 421  pop
+00112: 423  this
+00113: 423  getprop "m_darkStars"
+00118: 423  getlocal 0
+00121: 423  this
+00122: 423  getprop "ccbNodeTuTeng"
+00127: 423  dup
+00128: 423  callprop "getChildByTag"
+00133: 423  swap
+00134: 423  notearg
+00135: 423  one
+00136: 423  getlocal 0
+00139: 423  add
+00140: 423  notearg
+00141: 423  call 1
+00144: 423  setelem
+00145: 423  pop
+00146: 424  this
+00147: 424  getprop "m_darkStars"
+00152: 424  getlocal 0
+00155: 424  getelem
+00156: 424  dup
+00157: 424  callprop "setZOrder"
+00162: 424  swap
+00163: 424  notearg
+00164: 424  one
+00165: 424  notearg
+00166: 424  call 1
+00169: 424  pop
+00170: 426  name "xs"
+00175: 426  getprop "Views"
+00180: 426  getprop "Btn"
+00185: 426  dup
+00186: 426  callprop "createInvisibleWithParent"
+00191: 426  swap
+00192: 426  notearg
+00193: 426  this
+00194: 426  getprop "m_darkStars"
+00199: 426  getlocal 0
+00202: 426  getelem
+00203: 426  notearg
+00204: 426  call 1
+00207: 426  setlocal 1
+00210: 426  pop
+00211: 427  getlocal 1
+00214: 427  dup
+00215: 427  callprop "setOnClickCallBack"
+00220: 427  swap
+00221: 427  notearg
+00222: 427  this
+00223: 427  getprop "ClickStarCallback"
+00228: 427  dup
+00229: 427  callprop "bind"
+00234: 427  swap
+00235: 427  notearg
+00236: 427  newinit 1
+00241: 427  this
+00242: 427  initprop "self"
+00247: 427  getlocal 0
+00250: 427  one
+00251: 427  add
+00252: 427  initprop "tag"
+00257: 427  endinit
+00258: 427  notearg
+00259: 427  call 1
+00262: 427  notearg
+00263: 427  call 1
+00266: 427  pop
+00267: 415  localinc 11
+00270: 415  getlocal 0
+00273: 415  pos
+00274: 415  dup
+00275: 415  one
+00276: 415  add
+00277: 415  setlocal 0
+00280: 415  pop
+00281: 415  pop
+00282: 415  loopentry
+00283: 415  getlocal 0
+00286: 415  int8 7
+00288: 415  lt
+00289: 415  ifne 10 (-279)
+00294: 429  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:413 ---
+;; function object[14] updateStars
+;; function metadata object[14] nargs=0 bindings=1
+;; local[0] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:432 ---
+loc   line  op
+----- ----  --
+main:
+00000: 433  zero
+00001: 433  setlocal 0
+00004: 433  pop
+00005: 433  goto 50 (+45)
+00010: 434  loophead
+00011: 434  this
+00012: 434  getprop "m_lightStars"
+00017: 434  getlocal 0
+00020: 434  getelem
+00021: 434  dup
+00022: 434  callprop "setVisible"
+00027: 434  swap
+00028: 434  notearg
+00029: 434  true
+00030: 434  notearg
+00031: 434  call 1
+00034: 434  pop
+00035: 433  localinc 11
+00038: 433  getlocal 0
+00041: 433  pos
+00042: 433  dup
+00043: 433  one
+00044: 433  add
+00045: 433  setlocal 0
+00048: 433  pop
+00049: 433  pop
+00050: 433  loopentry
+00051: 433  getlocal 0
+00054: 433  int8 7
+00056: 433  lt
+00057: 433  ifne 10 (-47)
+00062: 437  zero
+00063: 437  setlocal 0
+00066: 437  pop
+00067: 437  goto 129 (+62)
+00072: 438  loophead
+00073: 438  getlocal 0
+00076: 438  this
+00077: 438  getprop "m_fixSubLevel"
+00082: 438  one
+00083: 438  sub
+00084: 438  ge
+00085: 438  ifeq 114 (+29)
+00090: 439  this
+00091: 439  getprop "m_lightStars"
+00096: 439  getlocal 0
+00099: 439  getelem
+00100: 439  dup
+00101: 439  callprop "setVisible"
+00106: 439  swap
+00107: 439  notearg
+00108: 439  false
+00109: 439  notearg
+00110: 439  call 1
+00113: 439  pop
+00114: 437  localinc 11
+00117: 437  getlocal 0
+00120: 437  pos
+00121: 437  dup
+00122: 437  one
+00123: 437  add
+00124: 437  setlocal 0
+00127: 437  pop
+00128: 437  pop
+00129: 437  loopentry
+00130: 437  getlocal 0
+00133: 437  int8 7
+00135: 437  lt
+00136: 437  ifne 72 (-64)
+00141: 443  this
+00142: 443  getprop "m_fixSubLevel"
+00147: 443  int8 8
+00149: 443  eq
+00150: 443  ifeq 217 (+67)
+00155: 444  zero
+00156: 444  setlocal 0
+00159: 444  pop
+00160: 444  goto 205 (+45)
+00165: 445  loophead
+00166: 445  this
+00167: 445  getprop "m_lightStars"
+00172: 445  getlocal 0
+00175: 445  getelem
+00176: 445  dup
+00177: 445  callprop "setVisible"
+00182: 445  swap
+00183: 445  notearg
+00184: 445  true
+00185: 445  notearg
+00186: 445  call 1
+00189: 445  pop
+00190: 444  localinc 11
+00193: 444  getlocal 0
+00196: 444  pos
+00197: 444  dup
+00198: 444  one
+00199: 444  add
+00200: 444  setlocal 0
+00203: 444  pop
+00204: 444  pop
+00205: 444  loopentry
+00206: 444  getlocal 0
+00209: 444  int8 7
+00211: 444  lt
+00212: 444  ifne 165 (-47)
+00217: 447  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:432 ---
+;; function object[15] ClickStarCallback
+;; function metadata object[15] nargs=0 bindings=4
+;; local[0] tag
+;; local[1] self
+;; local[2] info
+;; local[3] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:450 ---
+loc   line  op
+----- ----  --
+main:
+00000: 451  this
+00001: 451  getprop "tag"
+00006: 451  setlocal 0
+00009: 451  pop
+00010: 452  this
+00011: 452  getprop "self"
+00016: 452  setlocal 1
+00019: 452  pop
+00020: 454  getlocal 1
+00023: 454  getprop "buff_config"
+00028: 454  callname "String"
+00033: 454  implicitthis "String"
+00038: 454  notearg
+00039: 454  getlocal 1
+00042: 454  getprop "m_fixLevel"
+00047: 454  notearg
+00048: 454  call 1
+00051: 454  getelem
+00052: 454  callname "String"
+00057: 454  implicitthis "String"
+00062: 454  notearg
+00063: 454  getlocal 0
+00066: 454  notearg
+00067: 454  call 1
+00070: 454  getelem
+00071: 454  setlocal 2
+00074: 454  pop
+00075: 455  getlocal 1
+00078: 455  getprop "m_star_label"
+00083: 455  dup
+00084: 455  callprop "setStringById"
+00089: 455  swap
+00090: 455  notearg
+00091: 455  getlocal 2
+00094: 455  zero
+00095: 455  getelem
+00096: 455  getprop "sub_name"
+00101: 455  notearg
+00102: 455  call 1
+00105: 455  pop
+00106: 456  getlocal 1
+00109: 456  getprop "m_reward_label"
+00114: 456  dup
+00115: 456  callprop "setString"
+00120: 456  swap
+00121: 456  notearg
+00122: 456  getlocal 1
+00125: 456  dup
+00126: 456  callprop "getRewardStr"
+00131: 456  swap
+00132: 456  notearg
+00133: 456  getlocal 2
+00136: 456  zero
+00137: 456  getelem
+00138: 456  notearg
+00139: 456  call 1
+00142: 456  notearg
+00143: 456  call 1
+00146: 456  pop
+00147: 458  zero
+00148: 458  setlocal 3
+00151: 458  pop
+00152: 458  goto 218 (+66)
+00157: 459  loophead
+00158: 459  getlocal 1
+00161: 459  dup
+00162: 459  callprop "switchCreateIcon"
+00167: 459  swap
+00168: 459  notearg
+00169: 459  getlocal 2
+00172: 459  zero
+00173: 459  getelem
+00174: 459  getprop "item_list"
+00179: 459  getlocal 3
+00182: 459  dup
+00183: 459  callprop "toString"
+00188: 459  swap
+00189: 459  notearg
+00190: 459  call 0
+00193: 459  getelem
+00194: 459  notearg
+00195: 459  getlocal 3
+00198: 459  notearg
+00199: 459  call 2
+00202: 459  pop
+00203: 458  localinc 11
+00206: 458  getlocal 3
+00209: 458  pos
+00210: 458  dup
+00211: 458  one
+00212: 458  add
+00213: 458  setlocal 3
+00216: 458  pop
+00217: 458  pop
+00218: 458  loopentry
+00219: 458  getlocal 3
+00222: 458  int8 2
+00224: 458  lt
+00225: 458  ifne 157 (-68)
+00230: 462  getlocal 0
+00233: 462  getlocal 1
+00236: 462  getprop "m_fixSubLevel"
+00241: 462  ne
+00242: 462  ifeq 274 (+32)
+00247: 463  getlocal 1
+00250: 463  getprop "m_activateButton"
+00255: 463  dup
+00256: 463  callprop "setEnabled"
+00261: 463  swap
+00262: 463  notearg
+00263: 463  false
+00264: 463  notearg
+00265: 463  call 1
+00268: 463  pop
+00269: 463  goto 296 (+27)
+00274: 465  getlocal 1
+00277: 465  getprop "m_activateButton"
+00282: 465  dup
+00283: 465  callprop "setEnabled"
+00288: 465  swap
+00289: 465  notearg
+00290: 465  true
+00291: 465  notearg
+00292: 465  call 1
+00295: 465  pop
+00296: 466  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:450 ---
+;; function object[16] ActivateCallback
+;; function metadata object[16] nargs=0 bindings=2
+;; local[0] conditionNum
+;; local[1] i
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=199 object[0]
+;; FUNCTION-MAP kind=lambda offset=205 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:470 ---
+loc   line  op
+----- ----  --
+main:
+00000: 472  zero
+00001: 472  setlocal 0
+00004: 472  pop
+00005: 473  zero
+00006: 473  setlocal 1
+00009: 473  pop
+00010: 473  goto 72 (+62)
+00015: 475  loophead
+00016: 475  this
+00017: 475  getprop "m_haveArray"
+00022: 475  getlocal 1
+00025: 475  getelem
+00026: 475  this
+00027: 475  getprop "m_conditionArray"
+00032: 475  getlocal 1
+00035: 475  getelem
+00036: 475  ge
+00037: 475  ifeq 57 (+20)
+00042: 477  localinc 11
+00045: 477  getlocal 0
+00048: 477  pos
+00049: 477  dup
+00050: 477  one
+00051: 477  add
+00052: 477  setlocal 0
+00055: 477  pop
+00056: 477  pop
+00057: 473  localinc 11
+00060: 473  getlocal 1
+00063: 473  pos
+00064: 473  dup
+00065: 473  one
+00066: 473  add
+00067: 473  setlocal 1
+00070: 473  pop
+00071: 473  pop
+00072: 473  loopentry
+00073: 473  getlocal 1
+00076: 473  int8 2
+00078: 473  lt
+00079: 473  ifne 15 (-64)
+00084: 482  getlocal 0
+00087: 482  int8 2
+00089: 482  eq
+00090: 482  ifeq 222 (+132)
+00095: 484  name "xs"
+00100: 484  getprop "Tools"
+00105: 484  getprop "Net"
+00110: 484  dup
+00111: 484  callprop "requestEvolutionActive"
+00116: 484  swap
+00117: 484  notearg
+00118: 485  newinit 1
+00123: 486  name "xs"
+00128: 486  getprop "Profile"
+00133: 486  getprop "GameData"
+00138: 486  getprop "Mgr"
+00143: 486  dup
+00144: 486  callprop "getInstance"
+00149: 486  swap
+00150: 486  notearg
+00151: 486  call 0
+00154: 486  getprop "Player"
+00159: 486  dup
+00160: 486  callprop "getPlayer"
+00165: 486  swap
+00166: 486  notearg
+00167: 486  call 0
+00170: 486  dup
+00171: 486  callprop "getPlayerId"
+00176: 486  swap
+00177: 486  notearg
+00178: 486  call 0
+00181: 486  initprop "user_id"
+00186: 487  this
+00187: 487  getprop "evolution_id"
+00192: 487  initprop "evolution_id"
+00197: 487  endinit
+00198: 487  notearg
+00199: 489  lambda (function () {
+    [sourceless code]
+})
+00204: 489  notearg
+00205: 494  lambda (function () {
+    [sourceless code]
+})
+00210: 494  notearg
+00211: 496  this
+00212: 496  notearg
+00213: 496  call 4
+00216: 496  pop
+00217: 496  goto 282 (+65)
+00222: 500  name "xs"
+00227: 500  getprop "Views"
+00232: 500  getprop "Mgr"
+00237: 500  dup
+00238: 500  callprop "showToast"
+00243: 500  swap
+00244: 500  notearg
+00245: 500  name "xs"
+00250: 500  getprop "Tools"
+00255: 500  getprop "String"
+00260: 500  dup
+00261: 500  callprop "createString"
+00266: 500  swap
+00267: 500  notearg
+00268: 500  string "AwakeActiveDisable"
+00273: 500  notearg
+00274: 500  call 1
+00277: 500  notearg
+00278: 500  call 1
+00281: 500  pop
+00282: 501  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:470 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:489 ---
+loc   line  op
+----- ----  --
+main:
+00000: 490  getarg 0
+00003: 490  getprop "result"
+00008: 490  true
+00009: 490  eq
+00010: 490  ifeq 28 (+18)
+00015: 491  this
+00016: 491  dup
+00017: 491  callprop "updateUI"
+00022: 491  swap
+00023: 491  notearg
+00024: 491  call 0
+00027: 491  pop
+00028: 492  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:489 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:494 ---
+loc   line  op
+----- ----  --
+main:
+00000: 494  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:494 ---
+;; function object[17] switchCreateIcon
+;; function metadata object[17] nargs=2 bindings=3
+;; arg[0] data
+;; arg[1] i
+;; local[0] type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:505 ---
+loc   line  op
+----- ----  --
+main:
+00000: 506  name "xs"
+00005: 506  dup
+00006: 506  callprop "log"
+00011: 506  swap
+00012: 506  notearg
+00013: 506  string "------ 55555555555 ------"
+00018: 506  notearg
+00019: 506  call 1
+00022: 506  pop
+00023: 507  name "xs"
+00028: 507  dup
+00029: 507  callprop "dump"
+00034: 507  swap
+00035: 507  notearg
+00036: 507  getarg 0
+00039: 507  notearg
+00040: 507  call 1
+00043: 507  pop
+00044: 508  callname "Number"
+00049: 508  implicitthis "Number"
+00054: 508  notearg
+00055: 508  getarg 0
+00058: 508  int8 2
+00060: 508  getelem
+00061: 508  notearg
+00062: 508  call 1
+00065: 508  setlocal 0
+00068: 508  pop
+00069: 509  getlocal 0
+00072: 509  tableswitch defaultOffset 130 low 5 high 8
+	5: 29
+	6: 55
+	7: 0
+	8: 81
+00101: 512  this
+00102: 512  dup
+00103: 512  callprop "createItemIcon"
+00108: 512  swap
+00109: 512  notearg
+00110: 512  getarg 0
+00113: 512  notearg
+00114: 512  getarg 1
+00117: 512  notearg
+00118: 512  call 2
+00121: 512  pop
+00122: 513  goto 230 (+108)
+00127: 517  this
+00128: 517  dup
+00129: 517  callprop "createGeneralsSoulIcon"
+00134: 517  swap
+00135: 517  notearg
+00136: 517  getarg 0
+00139: 517  notearg
+00140: 517  getarg 1
+00143: 517  notearg
+00144: 517  call 2
+00147: 517  pop
+00148: 518  goto 230 (+82)
+00153: 521  name "xs"
+00158: 521  dup
+00159: 521  callprop "log"
+00164: 521  swap
+00165: 521  notearg
+00166: 521  string "----- \u788E\u7247 -----"
+00171: 521  notearg
+00172: 521  call 1
+00175: 521  pop
+00176: 522  this
+00177: 522  dup
+00178: 522  callprop "createEquipmentFragmentIcon"
+00183: 522  swap
+00184: 522  notearg
+00185: 522  getarg 0
+00188: 522  notearg
+00189: 522  getarg 1
+00192: 522  notearg
+00193: 522  call 2
+00196: 522  pop
+00197: 523  goto 230 (+33)
+00202: 526  name "xs"
+00207: 526  dup
+00208: 526  callprop "warn"
+00213: 526  swap
+00214: 526  notearg
+00215: 526  string "this.switchCreateIcon tag error! "
+00220: 526  notearg
+00221: 526  call 1
+00224: 526  pop
+00225: 527  goto 230 (+5)
+00230: 528  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:505 ---
+;; function object[18] create
+;; function metadata object[18] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:535 ---
+loc   line  op
+----- ----  --
+main:
+00000: 537  name "xs"
+00005: 537  getprop "Views"
+00010: 537  getprop "AwakeLayer"
+00015: 537  undefined
+00016: 537  notearg
+00017: 537  new 0
+00020: 537  setlocal 0
+00023: 537  pop
+00024: 539  getlocal 0
+00027: 539  and 51 (+24)
+00032: 539  pop
+00033: 539  getlocal 0
+00036: 539  dup
+00037: 539  callprop "init"
+00042: 539  swap
+00043: 539  notearg
+00044: 539  getarg 0
+00047: 539  notearg
+00048: 539  call 1
+00051: 539  ifeq 60 (+9)
+00056: 540  getlocal 0
+00059: 540  return
+00060: 543  name "xs"
+00065: 543  dup
+00066: 543  callprop "assert"
+00071: 543  swap
+00072: 543  notearg
+00073: 543  false
+00074: 543  notearg
+00075: 543  string "xs.Views.AwakeLayer.create error!"
+00080: 543  notearg
+00081: 543  call 2
+00084: 543  pop
+00085: 545  null
+00086: 545  return
+00087: 545  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Awake/AwakeLayer.js:535 ---

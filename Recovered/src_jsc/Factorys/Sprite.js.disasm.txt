@@ -1,0 +1,1248 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Factorys/Sprite.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=41 object[0]
+;; FUNCTION-MAP kind=lambda offset=51 object[1]
+;; FUNCTION-MAP kind=lambda offset=61 object[2]
+;; FUNCTION-MAP kind=lambda offset=71 object[3]
+;; FUNCTION-MAP kind=lambda offset=81 object[4]
+;; FUNCTION-MAP kind=lambda offset=91 object[5]
+;; FUNCTION-MAP kind=lambda offset=101 object[6]
+;; FUNCTION-MAP kind=lambda offset=111 object[7]
+;; FUNCTION-MAP kind=lambda offset=121 object[8]
+;; FUNCTION-MAP kind=lambda offset=131 object[9]
+;; FUNCTION-MAP kind=lambda offset=141 object[10]
+;; FUNCTION-MAP kind=lambda offset=151 object[11]
+;; FUNCTION-MAP kind=lambda offset=161 object[12]
+;; FUNCTION-MAP kind=lambda offset=171 object[13]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Factorys"
+00010:   8  newinit 1
+00015:  10  string ""
+00020:  10  initprop "path"
+00025:  11  null
+00026:  11  initprop "defAreas"
+00031:  13  string "xs.Factorys.Sprite"
+00036:  13  initprop "name"
+00041:  18  lambda (function () {
+    [sourceless code]
+})
+00046:  18  initprop "createDummy"
+00051:  35  lambda (function () {
+    [sourceless code]
+})
+00056:  35  initprop "createSpriteBatchNode"
+00061:  58  lambda (function () {
+    [sourceless code]
+})
+00066:  58  initprop "_createWithFileName"
+00071:  84  lambda (function () {
+    [sourceless code]
+})
+00076:  84  initprop "createWithFileName"
+00081:  99  lambda (function () {
+    [sourceless code]
+})
+00086:  99  initprop "setDefaultArea"
+00091: 105  lambda (function () {
+    [sourceless code]
+})
+00096: 105  initprop "createWithDefaultArea"
+00101: 123  lambda (function () {
+    [sourceless code]
+})
+00106: 123  initprop "getSpriteFrame"
+00111: 140  lambda (function () {
+    [sourceless code]
+})
+00116: 140  initprop "load"
+00121: 195  lambda (function () {
+    [sourceless code]
+})
+00126: 195  initprop "unload"
+00131: 258  lambda (function () {
+    [sourceless code]
+})
+00136: 258  initprop "removeSpriteFrames"
+00141: 272  lambda (function () {
+    [sourceless code]
+})
+00146: 272  initprop "addSpriteFrames"
+00151: 288  lambda (function () {
+    [sourceless code]
+})
+00156: 288  initprop "_getCfgByArea"
+00161: 298  lambda (function () {
+    [sourceless code]
+})
+00166: 298  initprop "_getCfgByName"
+00171: 309  lambda (function () {
+    [sourceless code]
+})
+00176: 309  initprop "create"
+00181: 309  endinit
+00182: 309  setprop "Sprite"
+00187: 309  popv
+00188: 359  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:1 ---
+;; function object[0] createDummy
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:18 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  this
+00001:  27  dup
+00002:  27  callprop "create"
+00007:  27  swap
+00008:  27  notearg
+00009:  27  string "dummy"
+00014:  27  notearg
+00015:  27  string "Cmn01"
+00020:  27  notearg
+00021:  27  call 2
+00024:  27  setlocal 0
+00027:  27  pop
+00028:  29  getlocal 0
+00031:  29  true
+00032:  29  setprop "isDummySprite"
+00037:  29  pop
+00038:  31  getlocal 0
+00041:  31  return
+00042:  31  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:18 ---
+;; function object[1] createSpriteBatchNode
+;; function metadata object[1] nargs=1 bindings=4
+;; arg[0] area
+;; local[0] _cfg_area
+;; local[1] _plist
+;; local[2] _idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:35 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  this
+00001:  37  dup
+00002:  37  callprop "_getCfgByArea"
+00007:  37  swap
+00008:  37  notearg
+00009:  37  getarg 0
+00012:  37  notearg
+00013:  37  call 1
+00016:  37  setlocal 0
+00019:  37  pop
+00020:  38  getlocal 0
+00023:  38  getprop "plist"
+00028:  38  setlocal 1
+00031:  38  pop
+00032:  40  getlocal 1
+00035:  40  dup
+00036:  40  callprop "indexOf"
+00041:  40  swap
+00042:  40  notearg
+00043:  40  string "tex/"
+00048:  40  notearg
+00049:  40  call 1
+00052:  40  zero
+00053:  40  stricteq
+00054:  40  ifeq 80 (+26)
+00059:  41  getlocal 1
+00062:  41  dup
+00063:  41  callprop "slice"
+00068:  41  swap
+00069:  41  notearg
+00070:  41  int8 4
+00072:  41  notearg
+00073:  41  call 1
+00076:  41  setlocal 1
+00079:  41  pop
+00080:  44  getlocal 1
+00083:  44  dup
+00084:  44  callprop "indexOf"
+00089:  44  swap
+00090:  44  notearg
+00091:  44  string ".plist"
+00096:  44  notearg
+00097:  44  call 1
+00100:  44  setlocal 2
+00103:  44  pop
+00104:  46  getlocal 2
+00107:  46  zero
+00108:  46  gt
+00109:  46  ifeq 151 (+42)
+00114:  47  getlocal 1
+00117:  47  dup
+00118:  47  callprop "slice"
+00123:  47  swap
+00124:  47  notearg
+00125:  47  zero
+00126:  47  notearg
+00127:  47  getlocal 2
+00130:  47  notearg
+00131:  47  call 2
+00134:  47  setlocal 1
+00137:  47  pop
+00138:  48  getlocal 1
+00141:  48  string ".png"
+00146:  48  add
+00147:  48  setlocal 1
+00150:  48  pop
+00151:  52  name "xs"
+00156:  52  dup
+00157:  52  callprop "log"
+00162:  52  swap
+00163:  52  notearg
+00164:  52  string "createSpriteBatchNode"
+00169:  52  notearg
+00170:  52  getlocal 1
+00173:  52  notearg
+00174:  52  call 2
+00177:  52  pop
+00178:  55  name "cc"
+00183:  55  getprop "SpriteBatchNode"
+00188:  55  dup
+00189:  55  callprop "create"
+00194:  55  swap
+00195:  55  notearg
+00196:  55  getlocal 1
+00199:  55  notearg
+00200:  55  call 1
+00203:  55  return
+00204:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:35 ---
+;; function object[2] _createWithFileName
+;; function metadata object[2] nargs=2 bindings=3
+;; arg[0] name
+;; arg[1] rect
+;; local[0] _sprite
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  null
+00001:  62  setlocal 0
+00004:  62  pop
+00005:  64  getarg 1
+00008:  64  ifeq 51 (+43)
+00013:  65  name "cc"
+00018:  65  getprop "Sprite"
+00023:  65  dup
+00024:  65  callprop "create"
+00029:  65  swap
+00030:  65  notearg
+00031:  65  getarg 0
+00034:  65  notearg
+00035:  65  getarg 1
+00038:  65  notearg
+00039:  65  call 2
+00042:  65  setlocal 0
+00045:  65  pop
+00046:  65  goto 80 (+34)
+00051:  68  name "cc"
+00056:  68  getprop "Sprite"
+00061:  68  dup
+00062:  68  callprop "create"
+00067:  68  swap
+00068:  68  notearg
+00069:  68  getarg 0
+00072:  68  notearg
+00073:  68  call 1
+00076:  68  setlocal 0
+00079:  68  pop
+00080:  76  getlocal 0
+00083:  76  null
+00084:  76  stricteq
+00085:  76  ifeq 117 (+32)
+00090:  78  name "xs"
+00095:  78  dup
+00096:  78  callprop "warn"
+00101:  78  swap
+00102:  78  notearg
+00103:  78  string "Sprite.createWithFileName is null"
+00108:  78  notearg
+00109:  78  getarg 0
+00112:  78  notearg
+00113:  78  call 2
+00116:  78  pop
+00117:  81  getlocal 0
+00120:  81  return
+00121:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:58 ---
+;; function object[3] createWithFileName
+;; function metadata object[3] nargs=2 bindings=3
+;; arg[0] name
+;; arg[1] rect
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:84 ---
+loc   line  op
+----- ----  --
+main:
+00000:  86  this
+00001:  86  dup
+00002:  86  callprop "_createWithFileName"
+00007:  86  swap
+00008:  86  notearg
+00009:  86  getarg 0
+00012:  86  notearg
+00013:  86  getarg 1
+00016:  86  notearg
+00017:  86  call 2
+00020:  86  setlocal 0
+00023:  86  pop
+00024:  88  getlocal 0
+00027:  88  null
+00028:  88  stricteq
+00029:  88  ifeq 50 (+21)
+00034:  89  this
+00035:  89  dup
+00036:  89  callprop "createDummy"
+00041:  89  swap
+00042:  89  notearg
+00043:  89  call 0
+00046:  89  setlocal 0
+00049:  89  pop
+00050:  94  name "xs"
+00055:  94  dup
+00056:  94  callprop "assert"
+00061:  94  swap
+00062:  94  notearg
+00063:  94  getlocal 0
+00066:  94  notearg
+00067:  94  string "createWithFileName failed"
+00072:  94  notearg
+00073:  94  call 2
+00076:  94  pop
+00077:  96  getlocal 0
+00080:  96  return
+00081:  96  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:84 ---
+;; function object[4] setDefaultArea
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] area
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:99 ---
+loc   line  op
+----- ----  --
+main:
+00000: 101  this
+00001: 101  getarg 0
+00004: 101  setprop "defAreas"
+00009: 101  pop
+00010: 101  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:99 ---
+;; function object[5] createWithDefaultArea
+;; function metadata object[5] nargs=1 bindings=3
+;; arg[0] name
+;; local[0] _areas
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:105 ---
+loc   line  op
+----- ----  --
+main:
+00000: 107  this
+00001: 107  getprop "defAreas"
+00006: 107  setlocal 0
+00009: 107  pop
+00010: 109  name "xs"
+00015: 109  dup
+00016: 109  callprop "assert"
+00021: 109  swap
+00022: 109  notearg
+00023: 109  name "xs"
+00028: 109  getprop "Utils"
+00033: 109  dup
+00034: 109  callprop "isArray"
+00039: 109  swap
+00040: 109  notearg
+00041: 109  getlocal 0
+00044: 109  notearg
+00045: 109  call 1
+00048: 109  notearg
+00049: 109  string "_areas is not array"
+00054: 109  notearg
+00055: 109  getlocal 0
+00058: 109  notearg
+00059: 109  getarg 0
+00062: 109  notearg
+00063: 109  call 4
+00066: 109  pop
+00067: 111  zero
+00068: 111  setlocal 1
+00071: 111  pop
+00072: 111  goto 184 (+112)
+00077: 112  loophead
+00078: 112  name "xs"
+00083: 112  getprop "Cfg"
+00088: 112  getprop "Sprite"
+00093: 112  getlocal 0
+00096: 112  getlocal 1
+00099: 112  getelem
+00100: 112  getelem
+00101: 112  and 134 (+33)
+00106: 112  pop
+00107: 112  name "xs"
+00112: 112  getprop "Cfg"
+00117: 112  getprop "Sprite"
+00122: 112  getlocal 0
+00125: 112  getlocal 1
+00128: 112  getelem
+00129: 112  getelem
+00130: 112  getarg 0
+00133: 112  getelem
+00134: 112  ifeq 169 (+35)
+00139: 113  this
+00140: 113  dup
+00141: 113  callprop "create"
+00146: 113  swap
+00147: 113  notearg
+00148: 113  getarg 0
+00151: 113  notearg
+00152: 113  getlocal 0
+00155: 113  getlocal 1
+00158: 113  getelem
+00159: 113  notearg
+00160: 113  call 2
+00163: 113  return
+00164: 113  goto 169 (+5)
+00169: 111  localinc 11
+00172: 111  getlocal 1
+00175: 111  pos
+00176: 111  dup
+00177: 111  one
+00178: 111  add
+00179: 111  setlocal 1
+00182: 111  pop
+00183: 111  pop
+00184: 111  loopentry
+00185: 111  getlocal 1
+00188: 111  getlocal 0
+00191: 111  length "length"
+00196: 111  lt
+00197: 111  ifne 77 (-120)
+00202: 119  name "xs"
+00207: 119  dup
+00208: 119  callprop "assert"
+00213: 119  swap
+00214: 119  notearg
+00215: 119  false
+00216: 119  notearg
+00217: 119  string "createWithDefaultArea failed"
+00222: 119  notearg
+00223: 119  getarg 0
+00226: 119  notearg
+00227: 119  getlocal 0
+00230: 119  notearg
+00231: 119  call 4
+00234: 119  pop
+00235: 119  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:105 ---
+;; function object[6] getSpriteFrame
+;; function metadata object[6] nargs=3 bindings=6
+;; arg[0] name
+;; arg[1] area
+;; arg[2] paramArray
+;; local[0] _cfg_area
+;; local[1] _cfg_name
+;; local[2] _frameName
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:123 ---
+loc   line  op
+----- ----  --
+main:
+00000: 125  this
+00001: 125  dup
+00002: 125  callprop "_getCfgByArea"
+00007: 125  swap
+00008: 125  notearg
+00009: 125  getarg 1
+00012: 125  notearg
+00013: 125  call 1
+00016: 125  setlocal 0
+00019: 125  pop
+00020: 126  this
+00021: 126  dup
+00022: 126  callprop "_getCfgByName"
+00027: 126  swap
+00028: 126  notearg
+00029: 126  getlocal 0
+00032: 126  notearg
+00033: 126  getarg 0
+00036: 126  notearg
+00037: 126  call 2
+00040: 126  setlocal 1
+00043: 126  pop
+00044: 128  getlocal 1
+00047: 128  getprop "frameName"
+00052: 128  setlocal 2
+00055: 128  pop
+00056: 130  getarg 2
+00059: 130  ifeq 86 (+27)
+00064: 131  getlocal 2
+00067: 131  dup
+00068: 131  callprop "convWithArgs"
+00073: 131  swap
+00074: 131  notearg
+00075: 131  getarg 2
+00078: 131  notearg
+00079: 131  call 1
+00082: 131  setlocal 2
+00085: 131  pop
+00086: 134  name "cc"
+00091: 134  getprop "SpriteFrameCache"
+00096: 134  dup
+00097: 134  callprop "getInstance"
+00102: 134  swap
+00103: 134  notearg
+00104: 134  call 0
+00107: 134  dup
+00108: 134  callprop "getSpriteFrame"
+00113: 134  swap
+00114: 134  notearg
+00115: 134  getlocal 2
+00118: 134  notearg
+00119: 134  call 1
+00122: 134  return
+00123: 134  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:123 ---
+;; function object[7] load
+;; function metadata object[7] nargs=2 bindings=3
+;; arg[0] area
+;; arg[1] bRetain
+;; local[0] _plist
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:140 ---
+loc   line  op
+----- ----  --
+main:
+00000: 142  this
+00001: 142  dup
+00002: 142  callprop "log"
+00007: 142  swap
+00008: 142  notearg
+00009: 142  string "111load:"
+00014: 142  getarg 0
+00017: 142  add
+00018: 142  string "|"
+00023: 142  add
+00024: 142  getarg 1
+00027: 142  add
+00028: 142  notearg
+00029: 142  call 1
+00032: 142  pop
+00033: 144  this
+00034: 144  getprop "m_cacheMap"
+00039: 144  not
+00040: 144  ifeq 58 (+18)
+00045: 145  this
+00046: 145  newinit 1
+00051: 145  endinit
+00052: 145  setprop "m_cacheMap"
+00057: 145  pop
+00058: 148  this
+00059: 148  getprop "m_cacheMap"
+00064: 148  getarg 0
+00067: 148  getelem
+00068: 148  zero
+00069: 148  gt
+00070: 148  ifeq 95 (+25)
+00075: 150  this
+00076: 150  getprop "m_cacheMap"
+00081: 150  getarg 0
+00084: 150  dup2
+00085: 150  getelem
+00086: 150  one
+00087: 150  add
+00088: 150  setelem
+00089: 150  pop
+00090: 150  goto 107 (+17)
+00095: 153  this
+00096: 153  getprop "m_cacheMap"
+00101: 153  getarg 0
+00104: 153  one
+00105: 153  setelem
+00106: 153  pop
+00107: 156  this
+00108: 156  dup
+00109: 156  callprop "log"
+00114: 156  swap
+00115: 156  notearg
+00116: 156  string "222load:"
+00121: 156  getarg 0
+00124: 156  add
+00125: 156  string "|"
+00130: 156  add
+00131: 156  getarg 1
+00134: 156  add
+00135: 156  notearg
+00136: 156  call 1
+00139: 156  pop
+00140: 159  getlocal 0
+00143: 159  pop
+00144: 161  getarg 0
+00147: 161  ifeq 354 (+207)
+00152: 163  name "xs"
+00157: 163  dup
+00158: 163  callprop "assert"
+00163: 163  swap
+00164: 163  notearg
+00165: 163  name "xs"
+00170: 163  getprop "Cfg"
+00175: 163  getprop "Sprite"
+00180: 163  getarg 0
+00183: 163  getelem
+00184: 163  notearg
+00185: 163  string "check area ,load"
+00190: 163  notearg
+00191: 163  getarg 0
+00194: 163  notearg
+00195: 163  call 3
+00198: 163  pop
+00199: 164  name "xs"
+00204: 164  getprop "Cfg"
+00209: 164  getprop "Sprite"
+00214: 164  getarg 0
+00217: 164  getelem
+00218: 164  getprop "plist"
+00223: 164  setlocal 0
+00226: 164  pop
+00227: 166  getlocal 0
+00230: 166  dup
+00231: 166  callprop "indexOf"
+00236: 166  swap
+00237: 166  notearg
+00238: 166  string "tex/"
+00243: 166  notearg
+00244: 166  call 1
+00247: 166  zero
+00248: 166  stricteq
+00249: 166  ifeq 275 (+26)
+00254: 167  getlocal 0
+00257: 167  dup
+00258: 167  callprop "slice"
+00263: 167  swap
+00264: 167  notearg
+00265: 167  int8 4
+00267: 167  notearg
+00268: 167  call 1
+00271: 167  setlocal 0
+00274: 167  pop
+00275: 170  this
+00276: 170  dup
+00277: 170  callprop "addSpriteFrames"
+00282: 170  swap
+00283: 170  notearg
+00284: 170  getlocal 0
+00287: 170  notearg
+00288: 170  call 1
+00291: 170  pop
+00292: 172  getarg 1
+00295: 172  ifeq 349 (+54)
+00300: 173  name "xs"
+00305: 173  getprop "JsbConnecter"
+00310: 173  dup
+00311: 173  callprop "getInstance"
+00316: 173  swap
+00317: 173  notearg
+00318: 173  call 0
+00321: 173  dup
+00322: 173  callprop "invoke"
+00327: 173  swap
+00328: 173  notearg
+00329: 174  string "SpriteFrameCache"
+00334: 174  notearg
+00335: 175  string "retainSpriteFramesWithFile"
+00340: 175  notearg
+00341: 176  getlocal 0
+00344: 176  notearg
+00345: 176  call 3
+00348: 176  pop
+00349: 176  goto 383 (+34)
+00354: 185  name "xs"
+00359: 185  dup
+00360: 185  callprop "assert"
+00365: 185  swap
+00366: 185  notearg
+00367: 185  false
+00368: 185  notearg
+00369: 185  string "load"
+00374: 185  notearg
+00375: 185  getarg 0
+00378: 185  notearg
+00379: 185  call 3
+00382: 185  pop
+00383: 186  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:140 ---
+;; function object[8] unload
+;; function metadata object[8] nargs=2 bindings=3
+;; arg[0] area
+;; arg[1] bRelease
+;; local[0] _plist
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:195 ---
+loc   line  op
+----- ----  --
+main:
+00000: 199  this
+00001: 199  getprop "m_cacheMap"
+00006: 199  not
+00007: 199  ifeq 25 (+18)
+00012: 200  this
+00013: 200  newinit 1
+00018: 200  endinit
+00019: 200  setprop "m_cacheMap"
+00024: 200  pop
+00025: 203  this
+00026: 203  getprop "m_cacheMap"
+00031: 203  getarg 0
+00034: 203  getelem
+00035: 203  zero
+00036: 203  gt
+00037: 203  ifeq 81 (+44)
+00042: 205  this
+00043: 205  getprop "m_cacheMap"
+00048: 205  getarg 0
+00051: 205  dup2
+00052: 205  getelem
+00053: 205  one
+00054: 205  sub
+00055: 205  setelem
+00056: 205  pop
+00057: 207  this
+00058: 207  getprop "m_cacheMap"
+00063: 207  getarg 0
+00066: 207  getelem
+00067: 207  zero
+00068: 207  gt
+00069: 207  ifeq 76 (+7)
+00074: 209  undefined
+00075: 209  return
+00076: 209  goto 83 (+7)
+00081: 213  undefined
+00082: 213  return
+00083: 219  name "xs"
+00088: 219  dup
+00089: 219  callprop "log_cmn"
+00094: 219  swap
+00095: 219  notearg
+00096: 219  string "unload:"
+00101: 219  getarg 0
+00104: 219  add
+00105: 219  string "|"
+00110: 219  add
+00111: 219  getarg 1
+00114: 219  add
+00115: 219  notearg
+00116: 219  call 1
+00119: 219  pop
+00120: 221  getlocal 0
+00123: 221  pop
+00124: 223  getarg 0
+00127: 223  ifeq 334 (+207)
+00132: 224  name "xs"
+00137: 224  dup
+00138: 224  callprop "assert"
+00143: 224  swap
+00144: 224  notearg
+00145: 224  name "xs"
+00150: 224  getprop "Cfg"
+00155: 224  getprop "Sprite"
+00160: 224  getarg 0
+00163: 224  getelem
+00164: 224  notearg
+00165: 224  string "check area ,load"
+00170: 224  notearg
+00171: 224  getarg 0
+00174: 224  notearg
+00175: 224  call 3
+00178: 224  pop
+00179: 225  name "xs"
+00184: 225  getprop "Cfg"
+00189: 225  getprop "Sprite"
+00194: 225  getarg 0
+00197: 225  getelem
+00198: 225  getprop "plist"
+00203: 225  setlocal 0
+00206: 225  pop
+00207: 227  getlocal 0
+00210: 227  dup
+00211: 227  callprop "indexOf"
+00216: 227  swap
+00217: 227  notearg
+00218: 227  string "tex/"
+00223: 227  notearg
+00224: 227  call 1
+00227: 227  zero
+00228: 227  stricteq
+00229: 227  ifeq 255 (+26)
+00234: 228  getlocal 0
+00237: 228  dup
+00238: 228  callprop "slice"
+00243: 228  swap
+00244: 228  notearg
+00245: 228  int8 4
+00247: 228  notearg
+00248: 228  call 1
+00251: 228  setlocal 0
+00254: 228  pop
+00255: 232  getarg 1
+00258: 232  ifeq 312 (+54)
+00263: 233  name "xs"
+00268: 233  getprop "JsbConnecter"
+00273: 233  dup
+00274: 233  callprop "getInstance"
+00279: 233  swap
+00280: 233  notearg
+00281: 233  call 0
+00284: 233  dup
+00285: 233  callprop "invoke"
+00290: 233  swap
+00291: 233  notearg
+00292: 234  string "SpriteFrameCache"
+00297: 234  notearg
+00298: 235  string "releaseSpriteFramesWithFile"
+00303: 235  notearg
+00304: 236  getlocal 0
+00307: 236  notearg
+00308: 236  call 3
+00311: 236  pop
+00312: 242  this
+00313: 242  dup
+00314: 242  callprop "removeSpriteFrames"
+00319: 242  swap
+00320: 242  notearg
+00321: 242  getlocal 0
+00324: 242  notearg
+00325: 242  call 1
+00328: 242  pop
+00329: 242  goto 363 (+34)
+00334: 253  name "xs"
+00339: 253  dup
+00340: 253  callprop "assert"
+00345: 253  swap
+00346: 253  notearg
+00347: 253  false
+00348: 253  notearg
+00349: 253  string "unload"
+00354: 253  notearg
+00355: 253  getarg 0
+00358: 253  notearg
+00359: 253  call 3
+00362: 253  pop
+00363: 254  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:195 ---
+;; function object[9] removeSpriteFrames
+;; function metadata object[9] nargs=1 bindings=2
+;; arg[0] filePlist
+;; local[0] _plist
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:258 ---
+loc   line  op
+----- ----  --
+main:
+00000: 260  getarg 0
+00003: 260  setlocal 0
+00006: 260  pop
+00007: 262  getlocal 0
+00010: 262  dup
+00011: 262  callprop "indexOf"
+00016: 262  swap
+00017: 262  notearg
+00018: 262  string "tex/"
+00023: 262  notearg
+00024: 262  call 1
+00027: 262  zero
+00028: 262  stricteq
+00029: 262  ifeq 55 (+26)
+00034: 263  getlocal 0
+00037: 263  dup
+00038: 263  callprop "slice"
+00043: 263  swap
+00044: 263  notearg
+00045: 263  int8 4
+00047: 263  notearg
+00048: 263  call 1
+00051: 263  setlocal 0
+00054: 263  pop
+00055: 267  this
+00056: 267  dup
+00057: 267  callprop "log"
+00062: 267  swap
+00063: 267  notearg
+00064: 267  string "removeSpriteFrames"
+00069: 267  notearg
+00070: 267  getlocal 0
+00073: 267  notearg
+00074: 267  call 2
+00077: 267  pop
+00078: 268  name "cc"
+00083: 268  getprop "SpriteFrameCache"
+00088: 268  dup
+00089: 268  callprop "getInstance"
+00094: 268  swap
+00095: 268  notearg
+00096: 268  call 0
+00099: 268  dup
+00100: 268  callprop "removeSpriteFramesFromFile"
+00105: 268  swap
+00106: 268  notearg
+00107: 268  getlocal 0
+00110: 268  notearg
+00111: 268  call 1
+00114: 268  pop
+00115: 268  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:258 ---
+;; function object[10] addSpriteFrames
+;; function metadata object[10] nargs=1 bindings=2
+;; arg[0] filePlist
+;; local[0] _plist
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:272 ---
+loc   line  op
+----- ----  --
+main:
+00000: 275  getarg 0
+00003: 275  setlocal 0
+00006: 275  pop
+00007: 277  getlocal 0
+00010: 277  dup
+00011: 277  callprop "indexOf"
+00016: 277  swap
+00017: 277  notearg
+00018: 277  string "tex/"
+00023: 277  notearg
+00024: 277  call 1
+00027: 277  zero
+00028: 277  stricteq
+00029: 277  ifeq 55 (+26)
+00034: 278  getlocal 0
+00037: 278  dup
+00038: 278  callprop "slice"
+00043: 278  swap
+00044: 278  notearg
+00045: 278  int8 4
+00047: 278  notearg
+00048: 278  call 1
+00051: 278  setlocal 0
+00054: 278  pop
+00055: 282  this
+00056: 282  dup
+00057: 282  callprop "log"
+00062: 282  swap
+00063: 282  notearg
+00064: 282  string "addSpriteFrames"
+00069: 282  notearg
+00070: 282  getlocal 0
+00073: 282  notearg
+00074: 282  call 2
+00077: 282  pop
+00078: 284  name "cc"
+00083: 284  getprop "SpriteFrameCache"
+00088: 284  dup
+00089: 284  callprop "getInstance"
+00094: 284  swap
+00095: 284  notearg
+00096: 284  call 0
+00099: 284  dup
+00100: 284  callprop "addSpriteFrames"
+00105: 284  swap
+00106: 284  notearg
+00107: 284  getlocal 0
+00110: 284  notearg
+00111: 284  call 1
+00114: 284  pop
+00115: 284  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:272 ---
+;; function object[11] _getCfgByArea
+;; function metadata object[11] nargs=1 bindings=4
+;; arg[0] area
+;; local[0] _ret
+;; local[1] _plist
+;; local[2] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:288 ---
+loc   line  op
+----- ----  --
+00000: 288  arguments
+00001: 288  setlocal 2
+00004: 288  pop
+main:
+00005: 290  name "xs"
+00010: 290  getprop "Cfg"
+00015: 290  getprop "Sprite"
+00020: 290  getarg 0
+00023: 290  getelem
+00024: 290  setlocal 0
+00027: 290  pop
+00028: 291  name "xs"
+00033: 291  dup
+00034: 291  callprop "assert"
+00039: 291  swap
+00040: 291  notearg
+00041: 291  getlocal 0
+00044: 291  notearg
+00045: 291  string "check area"
+00050: 291  notearg
+00051: 291  getarg 0
+00054: 291  notearg
+00055: 291  call 3
+00058: 291  pop
+00059: 292  name "xs"
+00064: 292  getprop "Cfg"
+00069: 292  getprop "Sprite"
+00074: 292  getarg 0
+00077: 292  getelem
+00078: 292  getprop "plist"
+00083: 292  setlocal 1
+00086: 292  pop
+00087: 293  name "xs"
+00092: 293  dup
+00093: 293  callprop "assert"
+00098: 293  swap
+00099: 293  notearg
+00100: 293  getlocal 1
+00103: 293  notearg
+00104: 293  string "need _plist"
+00109: 293  notearg
+00110: 293  getlocal 2
+00113: 293  notearg
+00114: 293  call 3
+00117: 293  pop
+00118: 295  getlocal 0
+00121: 295  return
+00122: 295  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:288 ---
+;; function object[12] _getCfgByName
+;; function metadata object[12] nargs=2 bindings=3
+;; arg[0] cfg
+;; arg[1] name
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:298 ---
+loc   line  op
+----- ----  --
+main:
+00000: 300  getarg 0
+00003: 300  getarg 1
+00006: 300  getelem
+00007: 300  setlocal 0
+00010: 300  pop
+00011: 301  name "xs"
+00016: 301  dup
+00017: 301  callprop "assert"
+00022: 301  swap
+00023: 301  notearg
+00024: 301  getlocal 0
+00027: 301  notearg
+00028: 301  string "check area and name"
+00033: 301  notearg
+00034: 301  getarg 1
+00037: 301  notearg
+00038: 301  call 3
+00041: 301  pop
+00042: 303  getlocal 0
+00045: 303  return
+00046: 303  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:298 ---
+;; function object[13] create
+;; function metadata object[13] nargs=4 bindings=10
+;; arg[0] name
+;; arg[1] area
+;; arg[2] paramArray
+;; arg[3] autoAp
+;; local[0] _cfg_area
+;; local[1] _cfg_name
+;; local[2] _plist
+;; local[3] _frameName
+;; local[4] _sprite
+;; local[5] _size
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:309 ---
+loc   line  op
+----- ----  --
+main:
+00000: 311  this
+00001: 311  dup
+00002: 311  callprop "_getCfgByArea"
+00007: 311  swap
+00008: 311  notearg
+00009: 311  getarg 1
+00012: 311  notearg
+00013: 311  call 1
+00016: 311  setlocal 0
+00019: 311  pop
+00020: 312  this
+00021: 312  dup
+00022: 312  callprop "_getCfgByName"
+00027: 312  swap
+00028: 312  notearg
+00029: 312  getlocal 0
+00032: 312  notearg
+00033: 312  getarg 0
+00036: 312  notearg
+00037: 312  call 2
+00040: 312  setlocal 1
+00043: 312  pop
+00044: 314  getlocal 0
+00047: 314  getprop "plist"
+00052: 314  setlocal 2
+00055: 314  pop
+00056: 315  getlocal 1
+00059: 315  getprop "frameName"
+00064: 315  setlocal 3
+00067: 315  pop
+00068: 317  getarg 2
+00071: 317  ifeq 98 (+27)
+00076: 318  getlocal 3
+00079: 318  dup
+00080: 318  callprop "convWithArgs"
+00085: 318  swap
+00086: 318  notearg
+00087: 318  getarg 2
+00090: 318  notearg
+00091: 318  call 1
+00094: 318  setlocal 3
+00097: 318  pop
+00098: 322  null
+00099: 322  setlocal 4
+00102: 322  pop
+00103: 323  getlocal 2
+00106: 323  ifeq 140 (+34)
+00111: 327  name "cc"
+00116: 327  getprop "Sprite"
+00121: 327  dup
+00122: 327  callprop "createWithSpriteFrameName"
+00127: 327  swap
+00128: 327  notearg
+00129: 327  getlocal 3
+00132: 327  notearg
+00133: 327  call 1
+00136: 327  setlocal 4
+00139: 327  pop
+00140: 331  name "xs"
+00145: 331  dup
+00146: 331  callprop "assert"
+00151: 331  swap
+00152: 331  notearg
+00153: 331  getlocal 4
+00156: 331  notearg
+00157: 331  string "create Sprite failed"
+00162: 331  notearg
+00163: 332  newinit 1
+00168: 332  getarg 0
+00171: 332  initprop "name"
+00176: 333  getarg 1
+00179: 333  initprop "area"
+00184: 334  getlocal 3
+00187: 334  initprop "frameName"
+00192: 335  getlocal 2
+00195: 335  initprop "plist"
+00200: 335  endinit
+00201: 335  notearg
+00202: 335  call 3
+00205: 335  pop
+00206: 339  getarg 3
+00209: 339  true
+00210: 339  stricteq
+00211: 339  ifeq 365 (+154)
+00216: 341  getlocal 1
+00219: 341  getprop "ap_x"
+00224: 341  null
+00225: 341  strictne
+00226: 341  and 282 (+56)
+00231: 341  pop
+00232: 342  getlocal 1
+00235: 342  getprop "ap_y"
+00240: 342  null
+00241: 342  strictne
+00242: 342  and 282 (+40)
+00247: 342  pop
+00248: 343  getlocal 1
+00251: 343  getprop "ap_x"
+00256: 343  name "undefined"
+00261: 343  strictne
+00262: 343  and 282 (+20)
+00267: 343  pop
+00268: 344  getlocal 1
+00271: 344  getprop "ap_y"
+00276: 344  name "undefined"
+00281: 344  strictne
+00282: 344  ifeq 365 (+83)
+00287: 346  getlocal 4
+00290: 346  dup
+00291: 346  callprop "getContentSize"
+00296: 346  swap
+00297: 346  notearg
+00298: 346  call 0
+00301: 346  setlocal 5
+00304: 346  pop
+00305: 347  getlocal 4
+00308: 347  dup
+00309: 347  callprop "setAnchorPoint"
+00314: 347  swap
+00315: 347  notearg
+00316: 348  getlocal 1
+00319: 348  getprop "ap_x"
+00324: 348  getlocal 5
+00327: 348  getprop "width"
+00332: 348  div
+00333: 348  notearg
+00334: 349  getlocal 5
+00337: 349  getprop "height"
+00342: 349  getlocal 1
+00345: 349  getprop "ap_y"
+00350: 349  sub
+00351: 349  getlocal 5
+00354: 349  getprop "height"
+00359: 349  div
+00360: 349  notearg
+00361: 349  call 2
+00364: 349  pop
+00365: 354  getlocal 4
+00368: 354  dup
+00369: 354  callprop "setCascadeOpacityEnabled"
+00374: 354  swap
+00375: 354  notearg
+00376: 354  true
+00377: 354  notearg
+00378: 354  call 1
+00381: 354  pop
+00382: 355  getlocal 4
+00385: 355  dup
+00386: 355  callprop "setCascadeColorEnabled"
+00391: 355  swap
+00392: 355  notearg
+00393: 355  true
+00394: 355  notearg
+00395: 355  call 1
+00398: 355  pop
+00399: 357  getlocal 4
+00402: 357  return
+00403: 357  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Sprite.js:309 ---

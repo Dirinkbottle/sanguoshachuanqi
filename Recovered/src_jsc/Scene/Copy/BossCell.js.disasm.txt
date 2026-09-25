@@ -1,0 +1,432 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Copy/BossCell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=73 object[4]
+;; FUNCTION-MAP kind=lambda offset=83 object[5]
+;; FUNCTION-MAP kind=lambda offset=119 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Views"
+00010:   5  name "cc"
+00015:   5  getprop "TableViewCell"
+00020:   5  dup
+00021:   5  callprop "extend"
+00026:   5  swap
+00027:   5  notearg
+00028:   5  newinit 1
+00033:   6  lambda (function () {
+    [sourceless code]
+})
+00038:   6  initprop "ctor"
+00043:  10  lambda (function () {
+    [sourceless code]
+})
+00048:  10  initprop "init"
+00053:  23  lambda (function () {
+    [sourceless code]
+})
+00058:  23  initprop "setIsSelected"
+00063:  30  lambda (function () {
+    [sourceless code]
+})
+00068:  30  initprop "setIsLocked"
+00073:  37  lambda (function () {
+    [sourceless code]
+})
+00078:  37  initprop "updateView"
+00083:  62  lambda (function () {
+    [sourceless code]
+})
+00088:  62  initprop "refresh"
+00093:  62  endinit
+00094:  62  notearg
+00095:  62  call 1
+00098:  62  setprop "BossCell"
+00103:  62  popv
+00104:  76  name "xs"
+00109:  76  getprop "Views"
+00114:  76  getprop "BossCell"
+00119:  76  lambda (function () {
+    [sourceless code]
+})
+00124:  76  setprop "create"
+00129:  76  popv
+00130:  82  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "TableViewCell"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  15  this
+00021:  15  false
+00022:  15  setprop "b_isSelected"
+00027:  15  pop
+00028:  16  this
+00029:  16  false
+00030:  16  setprop "b_isLocked"
+00035:  16  pop
+00036:  18  this
+00037:  18  dup
+00038:  18  callprop "setContentSize"
+00043:  18  swap
+00044:  18  notearg
+00045:  18  name "cc"
+00050:  18  dup
+00051:  18  callprop "size"
+00056:  18  swap
+00057:  18  notearg
+00058:  18  int8 106
+00060:  18  notearg
+00061:  18  int8 120
+00063:  18  notearg
+00064:  18  call 2
+00067:  18  notearg
+00068:  18  call 1
+00071:  18  pop
+00072:  20  true
+00073:  20  return
+00074:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:10 ---
+;; function object[2] setIsSelected
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] selected
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:23 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  this
+00001:  24  getprop "b_isSelected"
+00006:  24  getarg 0
+00009:  24  strictne
+00010:  24  ifeq 38 (+28)
+00015:  25  this
+00016:  25  getarg 0
+00019:  25  setprop "b_isSelected"
+00024:  25  pop
+00025:  26  this
+00026:  26  dup
+00027:  26  callprop "updateView"
+00032:  26  swap
+00033:  26  notearg
+00034:  26  call 0
+00037:  26  pop
+00038:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:23 ---
+;; function object[3] setIsLocked
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] locked
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  this
+00001:  31  getprop "b_isLocked"
+00006:  31  getarg 0
+00009:  31  strictne
+00010:  31  ifeq 38 (+28)
+00015:  32  this
+00016:  32  getarg 0
+00019:  32  setprop "b_isLocked"
+00024:  32  pop
+00025:  33  this
+00026:  33  dup
+00027:  33  callprop "updateView"
+00032:  33  swap
+00033:  33  notearg
+00034:  33  call 0
+00037:  33  pop
+00038:  34  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:30 ---
+;; function object[4] updateView
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  39  name "xs"
+00005:  39  getprop "Utils"
+00010:  39  getprop "Node"
+00015:  39  dup
+00016:  39  callprop "safeRemoveChild"
+00021:  39  swap
+00022:  39  notearg
+00023:  39  this
+00024:  39  getprop "m_selectedIcon"
+00029:  39  notearg
+00030:  39  call 1
+00033:  39  pop
+00034:  40  this
+00035:  40  null
+00036:  40  setprop "m_selectedIcon"
+00041:  40  pop
+00042:  42  this
+00043:  42  getprop "b_isSelected"
+00048:  42  ifeq 200 (+152)
+00053:  43  this
+00054:  43  name "xs"
+00059:  43  getprop "Factorys"
+00064:  43  getprop "Sprite"
+00069:  43  dup
+00070:  43  callprop "create"
+00075:  43  swap
+00076:  43  notearg
+00077:  43  string "head_select"
+00082:  43  notearg
+00083:  43  string "Cmn02"
+00088:  43  notearg
+00089:  43  call 2
+00092:  43  setprop "m_selectedIcon"
+00097:  43  pop
+00098:  44  this
+00099:  44  getprop "m_selectedIcon"
+00104:  44  dup
+00105:  44  callprop "setZOrder"
+00110:  44  swap
+00111:  44  notearg
+00112:  44  name "xs"
+00117:  44  getprop "Scene"
+00122:  44  getprop "TeamBuildListCell"
+00127:  44  getprop "cfg"
+00132:  44  getprop "m_selectedIcon"
+00137:  44  getprop "zOrder"
+00142:  44  notearg
+00143:  44  call 1
+00146:  44  pop
+00147:  45  name "xs"
+00152:  45  getprop "Utils"
+00157:  45  getprop "Node"
+00162:  45  dup
+00163:  45  callprop "attachNodes"
+00168:  45  swap
+00169:  45  notearg
+00170:  45  this
+00171:  45  notearg
+00172:  45  this
+00173:  45  getprop "m_selectedIcon"
+00178:  45  notearg
+00179:  45  newinit 1
+00184:  46  string "c"
+00189:  46  initprop "desc"
+00194:  46  endinit
+00195:  46  notearg
+00196:  46  call 3
+00199:  46  pop
+00200:  50  name "xs"
+00205:  50  getprop "Utils"
+00210:  50  getprop "Node"
+00215:  50  dup
+00216:  50  callprop "safeRemoveChild"
+00221:  50  swap
+00222:  50  notearg
+00223:  50  this
+00224:  50  getprop "m_lockIcon"
+00229:  50  notearg
+00230:  50  call 1
+00233:  50  pop
+00234:  51  this
+00235:  51  null
+00236:  51  setprop "m_lockIcon"
+00241:  51  pop
+00242:  54  this
+00243:  54  getprop "b_isLocked"
+00248:  54  ifeq 351 (+103)
+00253:  55  this
+00254:  55  name "xs"
+00259:  55  getprop "Factorys"
+00264:  55  getprop "Sprite"
+00269:  55  dup
+00270:  55  callprop "create"
+00275:  55  swap
+00276:  55  notearg
+00277:  55  string "icon_touxiangSuo"
+00282:  55  notearg
+00283:  55  string "Cmn01"
+00288:  55  notearg
+00289:  55  call 2
+00292:  55  setprop "m_lockIcon"
+00297:  55  pop
+00298:  56  name "xs"
+00303:  56  getprop "Utils"
+00308:  56  getprop "Node"
+00313:  56  dup
+00314:  56  callprop "attachNodes"
+00319:  56  swap
+00320:  56  notearg
+00321:  56  this
+00322:  56  notearg
+00323:  56  this
+00324:  56  getprop "m_lockIcon"
+00329:  56  notearg
+00330:  56  newinit 1
+00335:  57  string "c"
+00340:  57  initprop "desc"
+00345:  57  endinit
+00346:  57  notearg
+00347:  57  call 3
+00350:  57  pop
+00351:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:37 ---
+;; function object[5] refresh
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  63  name "xs"
+00005:  63  getprop "Utils"
+00010:  63  getprop "Node"
+00015:  63  dup
+00016:  63  callprop "safeRemoveChild"
+00021:  63  swap
+00022:  63  notearg
+00023:  63  this
+00024:  63  getprop "m_icon"
+00029:  63  notearg
+00030:  63  call 1
+00033:  63  pop
+00034:  64  this
+00035:  64  null
+00036:  64  setprop "m_icon"
+00041:  64  pop
+00042:  65  this
+00043:  65  getarg 0
+00046:  65  dup
+00047:  65  callprop "createIcon_Grade"
+00052:  65  swap
+00053:  65  notearg
+00054:  65  call 0
+00057:  65  setprop "m_icon"
+00062:  65  pop
+00063:  66  this
+00064:  66  getprop "m_icon"
+00069:  66  dup
+00070:  66  callprop "reloadData"
+00075:  66  swap
+00076:  66  notearg
+00077:  66  getarg 0
+00080:  66  notearg
+00081:  66  call 1
+00084:  66  pop
+00085:  67  name "xs"
+00090:  67  getprop "Utils"
+00095:  67  getprop "Node"
+00100:  67  dup
+00101:  67  callprop "attachNodes"
+00106:  67  swap
+00107:  67  notearg
+00108:  67  this
+00109:  67  notearg
+00110:  67  this
+00111:  67  getprop "m_icon"
+00116:  67  notearg
+00117:  67  newinit 1
+00122:  67  string "c"
+00127:  67  initprop "desc"
+00132:  67  newinit 1
+00137:  67  zero
+00138:  67  initprop "x"
+00143:  67  zero
+00144:  67  initprop "y"
+00149:  67  endinit
+00150:  67  initprop "offset"
+00155:  67  endinit
+00156:  67  notearg
+00157:  67  call 3
+00160:  67  pop
+00161:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:62 ---
+;; function object[6] create
+;; function metadata object[6] nargs=0 bindings=1
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:76 ---
+loc   line  op
+----- ----  --
+main:
+00000:  77  name "xs"
+00005:  77  getprop "Views"
+00010:  77  getprop "BossCell"
+00015:  77  undefined
+00016:  77  notearg
+00017:  77  new 0
+00020:  77  setlocal 0
+00023:  77  pop
+00024:  78  getlocal 0
+00027:  78  and 47 (+20)
+00032:  78  pop
+00033:  78  getlocal 0
+00036:  78  dup
+00037:  78  callprop "init"
+00042:  78  swap
+00043:  78  notearg
+00044:  78  call 0
+00047:  78  ifeq 56 (+9)
+00052:  79  getlocal 0
+00055:  79  return
+00056:  81  null
+00057:  81  return
+00058:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Copy/BossCell.js:76 ---

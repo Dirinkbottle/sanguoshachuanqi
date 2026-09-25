@@ -1,0 +1,808 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Mail/MailView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=73 object[4]
+;; FUNCTION-MAP kind=lambda offset=83 object[5]
+;; FUNCTION-MAP kind=lambda offset=93 object[6]
+;; FUNCTION-MAP kind=lambda offset=103 object[7]
+;; FUNCTION-MAP kind=lambda offset=113 object[8]
+;; FUNCTION-MAP kind=lambda offset=149 object[9]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "cc"
+00015:   6  getprop "Layer"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  lambda (function () {
+    [sourceless code]
+})
+00038:   7  initprop "ctor"
+00043:  12  lambda (function () {
+    [sourceless code]
+})
+00048:  12  initprop "init"
+00053:  32  lambda (function () {
+    [sourceless code]
+})
+00058:  32  initprop "onEnterTransitionDidFinish"
+00063:  37  lambda (function () {
+    [sourceless code]
+})
+00068:  37  initprop "onBtnClick"
+00073:  74  lambda (function () {
+    [sourceless code]
+})
+00078:  74  initprop "onGetMailAttchCb"
+00083:  83  lambda (function () {
+    [sourceless code]
+})
+00088:  83  initprop "onFriendApplyResponse"
+00093:  87  lambda (function () {
+    [sourceless code]
+})
+00098:  87  initprop "showNoMailMessage"
+00103:  93  lambda (function () {
+    [sourceless code]
+})
+00108:  93  initprop "showOrNotShow"
+00113: 103  lambda (function () {
+    [sourceless code]
+})
+00118: 103  initprop "reloadData"
+00123: 103  endinit
+00124: 103  notearg
+00125: 103  call 1
+00128: 103  setprop "MailView"
+00133: 103  popv
+00134: 132  name "xs"
+00139: 132  getprop "Views"
+00144: 132  getprop "MailView"
+00149: 132  lambda (function () {
+    [sourceless code]
+})
+00154: 132  setprop "create"
+00159: 132  popv
+00160: 138  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  dup
+00002:   8  callprop "_super"
+00007:   8  swap
+00008:   8  notearg
+00009:   8  call 0
+00012:   8  pop
+00013:   9  name "cc"
+00018:   9  dup
+00019:   9  callprop "associateWithNative"
+00024:   9  swap
+00025:   9  notearg
+00026:   9  this
+00027:   9  notearg
+00028:   9  name "cc"
+00033:   9  getprop "Layer"
+00038:   9  notearg
+00039:   9  call 2
+00042:   9  pop
+00043:   9  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:7 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] viewType
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "_super"
+00007:  13  swap
+00008:  13  notearg
+00009:  13  call 0
+00012:  13  not
+00013:  13  ifeq 20 (+7)
+00018:  14  false
+00019:  14  return
+00020:  17  this
+00021:  17  getarg 0
+00024:  17  setprop "viewType"
+00029:  17  pop
+00030:  19  this
+00031:  19  name "xs"
+00036:  19  getprop "Views"
+00041:  19  getprop "Table"
+00046:  19  getprop "MailTableView"
+00051:  19  dup
+00052:  19  callprop "create"
+00057:  19  swap
+00058:  19  notearg
+00059:  19  call 0
+00062:  19  setprop "mailTableView"
+00067:  19  pop
+00068:  21  name "xs"
+00073:  21  getprop "Utils"
+00078:  21  getprop "Node"
+00083:  21  dup
+00084:  21  callprop "attachNodes"
+00089:  21  swap
+00090:  21  notearg
+00091:  21  this
+00092:  21  notearg
+00093:  21  this
+00094:  21  getprop "mailTableView"
+00099:  21  notearg
+00100:  21  newinit 1
+00105:  22  string "lb"
+00110:  22  initprop "desc"
+00115:  23  name "xs"
+00120:  23  getprop "Views"
+00125:  23  getprop "TablePage"
+00130:  23  dup
+00131:  23  callprop "getTableViewOffset"
+00136:  23  swap
+00137:  23  notearg
+00138:  23  call 0
+00141:  23  initprop "offset"
+00146:  24  true
+00147:  24  initprop "sc"
+00152:  24  endinit
+00153:  24  notearg
+00154:  24  call 3
+00157:  24  pop
+00158:  28  this
+00159:  28  dup
+00160:  28  callprop "showNoMailMessage"
+00165:  28  swap
+00166:  28  notearg
+00167:  28  call 0
+00170:  28  pop
+00171:  29  true
+00172:  29  return
+00173:  29  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:12 ---
+;; function object[2] onEnterTransitionDidFinish
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:32 ---
+loc   line  op
+----- ----  --
+main:
+00000:  33  this
+00001:  33  dup
+00002:  33  callprop "_super"
+00007:  33  swap
+00008:  33  notearg
+00009:  33  call 0
+00012:  33  pop
+00013:  34  this
+00014:  34  getprop "mailTableView"
+00019:  34  dup
+00020:  34  callprop "reloadData"
+00025:  34  swap
+00026:  34  notearg
+00027:  34  call 0
+00030:  34  pop
+00031:  34  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:32 ---
+;; function object[3] onBtnClick
+;; function metadata object[3] nargs=2 bindings=3
+;; arg[0] idx
+;; arg[1] btnType
+;; local[0] emailId
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  38  this
+00001:  38  getprop "mailData"
+00006:  38  getprop "type"
+00011:  38  condswitch
+00012:  39  name "xs"
+00017:  39  getprop "Constant_MailType_Report"
+00022:  39  case 62 (+40)
+00027:  46  name "xs"
+00032:  46  getprop "Constant_MailType_Award"
+00037:  46  case 184 (+147)
+00042:  56  name "xs"
+00047:  56  getprop "Constant_MailType_Friend"
+00052:  56  case 376 (+324)
+00057:  56  default 545 (+488)
+00062:  40  this
+00063:  40  getprop "mailData"
+00068:  40  getarg 0
+00071:  40  getelem
+00072:  40  getprop "email_event_scene"
+00077:  40  string "1"
+00082:  40  stricteq
+00083:  40  ifeq 126 (+43)
+00088:  41  name "xs"
+00093:  41  getprop "Scene"
+00098:  41  getprop "Mgr"
+00103:  41  dup
+00104:  41  callprop "changeSceneByName"
+00109:  41  swap
+00110:  41  notearg
+00111:  41  string "LadderScene"
+00116:  41  notearg
+00117:  41  call 1
+00120:  41  pop
+00121:  41  goto 179 (+58)
+00126:  42  this
+00127:  42  getprop "mailData"
+00132:  42  getarg 0
+00135:  42  getelem
+00136:  42  getprop "email_event_scene"
+00141:  42  string "2"
+00146:  42  stricteq
+00147:  42  ifeq 179 (+32)
+00152:  43  name "xs"
+00157:  43  getprop "Tools"
+00162:  43  getprop "Scene"
+00167:  43  dup
+00168:  43  callprop "gotoChaos"
+00173:  43  swap
+00174:  43  notearg
+00175:  43  call 0
+00178:  43  pop
+00179:  45  goto 545 (+366)
+00184:  47  this
+00185:  47  getprop "mailData"
+00190:  47  getarg 0
+00193:  47  getelem
+00194:  47  getprop "is_attach_get"
+00199:  47  string "0"
+00204:  47  stricteq
+00205:  47  ifeq 285 (+80)
+00210:  48  this
+00211:  48  getprop "mailData"
+00216:  48  getarg 0
+00219:  48  getelem
+00220:  48  getprop "pk_id"
+00225:  48  setlocal 0
+00228:  48  pop
+00229:  49  name "xs"
+00234:  49  getprop "Tools"
+00239:  49  getprop "Net"
+00244:  49  dup
+00245:  49  callprop "requestMailAttach"
+00250:  49  swap
+00251:  49  notearg
+00252:  49  newinit 1
+00257:  50  getlocal 0
+00260:  50  initprop "email_id"
+00265:  50  endinit
+00266:  50  notearg
+00267:  51  this
+00268:  51  getprop "onGetMailAttchCb"
+00273:  51  notearg
+00274:  51  this
+00275:  51  notearg
+00276:  51  call 3
+00279:  51  pop
+00280:  51  goto 371 (+91)
+00285:  52  this
+00286:  52  getprop "mailData"
+00291:  52  getarg 0
+00294:  52  getelem
+00295:  52  getprop "is_attach_get"
+00300:  52  string "1"
+00305:  52  stricteq
+00306:  52  ifeq 371 (+65)
+00311:  53  name "xs"
+00316:  53  getprop "Views"
+00321:  53  getprop "Mgr"
+00326:  53  dup
+00327:  53  callprop "showToast"
+00332:  53  swap
+00333:  53  notearg
+00334:  53  name "xs"
+00339:  53  getprop "Tools"
+00344:  53  getprop "String"
+00349:  53  dup
+00350:  53  callprop "createString"
+00355:  53  swap
+00356:  53  notearg
+00357:  53  string "auto_name_100"
+00362:  53  notearg
+00363:  53  call 1
+00366:  53  notearg
+00367:  53  call 1
+00370:  53  pop
+00371:  55  goto 545 (+174)
+00376:  57  getarg 1
+00379:  57  zero
+00380:  57  stricteq
+00381:  57  ifeq 460 (+79)
+00386:  58  name "xs"
+00391:  58  getprop "Tools"
+00396:  58  getprop "Net"
+00401:  58  dup
+00402:  58  callprop "requestFriendApply"
+00407:  58  swap
+00408:  58  notearg
+00409:  58  newinit 1
+00414:  59  this
+00415:  59  getprop "mailData"
+00420:  59  getarg 0
+00423:  59  getelem
+00424:  59  getprop "email_sender"
+00429:  59  initprop "other_id"
+00434:  60  one
+00435:  60  initprop "type"
+00440:  60  endinit
+00441:  60  notearg
+00442:  62  this
+00443:  62  getprop "onFriendApplyResponse"
+00448:  62  notearg
+00449:  62  this
+00450:  62  notearg
+00451:  62  call 3
+00454:  62  pop
+00455:  62  goto 540 (+85)
+00460:  63  getarg 1
+00463:  63  one
+00464:  63  stricteq
+00465:  63  ifeq 540 (+75)
+00470:  64  name "xs"
+00475:  64  getprop "Tools"
+00480:  64  getprop "Net"
+00485:  64  dup
+00486:  64  callprop "requestFriendApply"
+00491:  64  swap
+00492:  64  notearg
+00493:  64  newinit 1
+00498:  65  this
+00499:  65  getprop "mailData"
+00504:  65  getarg 0
+00507:  65  getelem
+00508:  65  getprop "email_sender"
+00513:  65  initprop "other_id"
+00518:  66  int8 2
+00520:  66  initprop "type"
+00525:  66  endinit
+00526:  66  notearg
+00527:  68  this
+00528:  68  getprop "onFriendApplyResponse"
+00533:  68  notearg
+00534:  68  this
+00535:  68  notearg
+00536:  68  call 3
+00539:  68  pop
+00540:  70  goto 545 (+5)
+00545:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:37 ---
+;; function object[4] onGetMailAttchCb
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] jsonObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:74 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  this
+00001:  75  int8 -1
+00003:  75  setprop "m_baseTouchPriority"
+00008:  75  pop
+00009:  76  name "xs"
+00014:  76  getprop "Tools"
+00019:  76  getprop "Net"
+00024:  76  dup
+00025:  76  callprop "getInstance"
+00030:  76  swap
+00031:  76  notearg
+00032:  76  call 0
+00035:  76  dup
+00036:  76  callprop "UseItemSuccess"
+00041:  76  swap
+00042:  76  notearg
+00043:  76  getarg 0
+00046:  76  notearg
+00047:  76  call 1
+00050:  76  pop
+00051:  78  name "xs"
+00056:  78  getprop "Utils"
+00061:  78  getprop "Notify"
+00066:  78  dup
+00067:  78  callprop "postNotification"
+00072:  78  swap
+00073:  78  notearg
+00074:  78  name "xs"
+00079:  78  getprop "Constant_Notify_ModelChange_Mail"
+00084:  78  notearg
+00085:  78  call 1
+00088:  78  pop
+00089:  78  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:74 ---
+;; function object[5] onFriendApplyResponse
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] jsonObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:83 ---
+loc   line  op
+----- ----  --
+main:
+00000:  85  name "xs"
+00005:  85  getprop "Utils"
+00010:  85  getprop "Notify"
+00015:  85  dup
+00016:  85  callprop "postNotification"
+00021:  85  swap
+00022:  85  notearg
+00023:  85  name "xs"
+00028:  85  getprop "Constant_Notify_ModelChange_Mail"
+00033:  85  notearg
+00034:  85  call 1
+00037:  85  pop
+00038:  85  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:83 ---
+;; function object[6] showNoMailMessage
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:87 ---
+loc   line  op
+----- ----  --
+main:
+00000:  88  this
+00001:  88  name "xs"
+00006:  88  getprop "Factorys"
+00011:  88  getprop "Label"
+00016:  88  dup
+00017:  88  callprop "createByStyleId"
+00022:  88  swap
+00023:  88  notearg
+00024:  88  string "LS_danyao"
+00029:  88  notearg
+00030:  88  call 1
+00033:  88  setprop "noMailTip"
+00038:  88  pop
+00039:  89  this
+00040:  89  getprop "noMailTip"
+00045:  89  dup
+00046:  89  callprop "setString"
+00051:  89  swap
+00052:  89  notearg
+00053:  89  name "xs"
+00058:  89  getprop "Tools"
+00063:  89  getprop "String"
+00068:  89  dup
+00069:  89  callprop "createString"
+00074:  89  swap
+00075:  89  notearg
+00076:  89  string "noMailTip"
+00081:  89  notearg
+00082:  89  call 1
+00085:  89  notearg
+00086:  89  call 1
+00089:  89  pop
+00090:  90  name "xs"
+00095:  90  getprop "Utils"
+00100:  90  getprop "Node"
+00105:  90  dup
+00106:  90  callprop "attachNodes"
+00111:  90  swap
+00112:  90  notearg
+00113:  90  this
+00114:  90  notearg
+00115:  90  this
+00116:  90  getprop "noMailTip"
+00121:  90  notearg
+00122:  90  newinit 1
+00127:  90  string "c"
+00132:  90  initprop "desc"
+00137:  90  true
+00138:  90  initprop "sc"
+00143:  90  endinit
+00144:  90  notearg
+00145:  90  call 3
+00148:  90  pop
+00149:  91  this
+00150:  91  getprop "noMailTip"
+00155:  91  dup
+00156:  91  callprop "setVisible"
+00161:  91  swap
+00162:  91  notearg
+00163:  91  true
+00164:  91  notearg
+00165:  91  call 1
+00168:  91  pop
+00169:  91  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:87 ---
+;; function object[7] showOrNotShow
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:93 ---
+loc   line  op
+----- ----  --
+main:
+00000:  94  name "xs"
+00005:  94  dup
+00006:  94  callprop "log_zhz"
+00011:  94  swap
+00012:  94  notearg
+00013:  94  string "data"
+00018:  94  notearg
+00019:  94  getarg 0
+00022:  94  notearg
+00023:  94  call 2
+00026:  94  pop
+00027:  95  name "xs"
+00032:  95  getprop "Utils"
+00037:  95  dup
+00038:  95  callprop "isEmpty"
+00043:  95  swap
+00044:  95  notearg
+00045:  95  getarg 0
+00048:  95  notearg
+00049:  95  call 1
+00052:  95  not
+00053:  95  ifeq 106 (+53)
+00058:  96  name "xs"
+00063:  96  dup
+00064:  96  callprop "log_zhz"
+00069:  96  swap
+00070:  96  notearg
+00071:  96  string "setVisible(false)"
+00076:  96  notearg
+00077:  96  call 1
+00080:  96  pop
+00081:  97  this
+00082:  97  getprop "noMailTip"
+00087:  97  dup
+00088:  97  callprop "setVisible"
+00093:  97  swap
+00094:  97  notearg
+00095:  97  false
+00096:  97  notearg
+00097:  97  call 1
+00100:  97  pop
+00101:  97  goto 149 (+48)
+00106:  99  name "xs"
+00111:  99  dup
+00112:  99  callprop "log_zhz"
+00117:  99  swap
+00118:  99  notearg
+00119:  99  string "setVisible(true)"
+00124:  99  notearg
+00125:  99  call 1
+00128:  99  pop
+00129: 100  this
+00130: 100  getprop "noMailTip"
+00135: 100  dup
+00136: 100  callprop "setVisible"
+00141: 100  swap
+00142: 100  notearg
+00143: 100  true
+00144: 100  notearg
+00145: 100  call 1
+00148: 100  pop
+00149: 101  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:93 ---
+;; function object[8] reloadData
+;; function metadata object[8] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:103 ---
+loc   line  op
+----- ----  --
+main:
+00000: 104  this
+00001: 104  getarg 0
+00004: 104  setprop "mailData"
+00009: 104  pop
+00010: 105  this
+00011: 105  getprop "viewType"
+00016: 105  condswitch
+00017: 106  name "xs"
+00022: 106  getprop "Constant_MailType_System"
+00027: 106  case 97 (+70)
+00032: 110  name "xs"
+00037: 110  getprop "Constant_MailType_Friend"
+00042: 110  case 157 (+115)
+00047: 114  name "xs"
+00052: 114  getprop "Constant_MailType_Award"
+00057: 114  case 217 (+160)
+00062: 118  name "xs"
+00067: 118  getprop "Constant_MailType_Report"
+00072: 118  case 277 (+205)
+00077: 122  name "xs"
+00082: 122  getprop "Constant_MailType_Charge"
+00087: 122  case 337 (+250)
+00092: 122  default 397 (+305)
+00097: 107  this
+00098: 107  getprop "mailTableView"
+00103: 107  dup
+00104: 107  callprop "setData"
+00109: 107  swap
+00110: 107  notearg
+00111: 107  this
+00112: 107  getprop "mailData"
+00117: 107  getprop "systemMail"
+00122: 107  notearg
+00123: 107  call 1
+00126: 107  pop
+00127: 108  this
+00128: 108  dup
+00129: 108  callprop "showOrNotShow"
+00134: 108  swap
+00135: 108  notearg
+00136: 108  this
+00137: 108  getprop "mailData"
+00142: 108  getprop "systemMail"
+00147: 108  notearg
+00148: 108  call 1
+00151: 108  pop
+00152: 109  goto 397 (+245)
+00157: 111  this
+00158: 111  getprop "mailTableView"
+00163: 111  dup
+00164: 111  callprop "setData"
+00169: 111  swap
+00170: 111  notearg
+00171: 111  this
+00172: 111  getprop "mailData"
+00177: 111  getprop "friendMail"
+00182: 111  notearg
+00183: 111  call 1
+00186: 111  pop
+00187: 112  this
+00188: 112  dup
+00189: 112  callprop "showOrNotShow"
+00194: 112  swap
+00195: 112  notearg
+00196: 112  this
+00197: 112  getprop "mailData"
+00202: 112  getprop "friendMail"
+00207: 112  notearg
+00208: 112  call 1
+00211: 112  pop
+00212: 113  goto 397 (+185)
+00217: 115  this
+00218: 115  getprop "mailTableView"
+00223: 115  dup
+00224: 115  callprop "setData"
+00229: 115  swap
+00230: 115  notearg
+00231: 115  this
+00232: 115  getprop "mailData"
+00237: 115  getprop "awardMail"
+00242: 115  notearg
+00243: 115  call 1
+00246: 115  pop
+00247: 116  this
+00248: 116  dup
+00249: 116  callprop "showOrNotShow"
+00254: 116  swap
+00255: 116  notearg
+00256: 116  this
+00257: 116  getprop "mailData"
+00262: 116  getprop "awardMail"
+00267: 116  notearg
+00268: 116  call 1
+00271: 116  pop
+00272: 117  goto 397 (+125)
+00277: 119  this
+00278: 119  getprop "mailTableView"
+00283: 119  dup
+00284: 119  callprop "setData"
+00289: 119  swap
+00290: 119  notearg
+00291: 119  this
+00292: 119  getprop "mailData"
+00297: 119  getprop "reportMail"
+00302: 119  notearg
+00303: 119  call 1
+00306: 119  pop
+00307: 120  this
+00308: 120  dup
+00309: 120  callprop "showOrNotShow"
+00314: 120  swap
+00315: 120  notearg
+00316: 120  this
+00317: 120  getprop "mailData"
+00322: 120  getprop "reportMail"
+00327: 120  notearg
+00328: 120  call 1
+00331: 120  pop
+00332: 121  goto 397 (+65)
+00337: 123  this
+00338: 123  getprop "mailTableView"
+00343: 123  dup
+00344: 123  callprop "setData"
+00349: 123  swap
+00350: 123  notearg
+00351: 123  this
+00352: 123  getprop "mailData"
+00357: 123  getprop "chargeMail"
+00362: 123  notearg
+00363: 123  call 1
+00366: 123  pop
+00367: 124  this
+00368: 124  dup
+00369: 124  callprop "showOrNotShow"
+00374: 124  swap
+00375: 124  notearg
+00376: 124  this
+00377: 124  getprop "mailData"
+00382: 124  getprop "chargeMail"
+00387: 124  notearg
+00388: 124  call 1
+00391: 124  pop
+00392: 125  goto 397 (+5)
+00397: 128  this
+00398: 128  getprop "mailTableView"
+00403: 128  dup
+00404: 128  callprop "reloadData"
+00409: 128  swap
+00410: 128  notearg
+00411: 128  call 0
+00414: 128  pop
+00415: 128  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:103 ---
+;; function object[9] create
+;; function metadata object[9] nargs=1 bindings=2
+;; arg[0] viewType
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:132 ---
+loc   line  op
+----- ----  --
+main:
+00000: 133  name "xs"
+00005: 133  getprop "Views"
+00010: 133  getprop "MailView"
+00015: 133  undefined
+00016: 133  notearg
+00017: 133  new 0
+00020: 133  setlocal 0
+00023: 133  pop
+00024: 134  getlocal 0
+00027: 134  and 51 (+24)
+00032: 134  pop
+00033: 134  getlocal 0
+00036: 134  dup
+00037: 134  callprop "init"
+00042: 134  swap
+00043: 134  notearg
+00044: 134  getarg 0
+00047: 134  notearg
+00048: 134  call 1
+00051: 134  ifeq 60 (+9)
+00056: 135  getlocal 0
+00059: 135  return
+00060: 137  null
+00061: 137  return
+00062: 137  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Mail/MailView.js:132 ---

@@ -1,0 +1,2251 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/Cell/TaskCell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+;; FUNCTION-MAP kind=lambda offset=529 object[1]
+;; FUNCTION-MAP kind=lambda offset=539 object[2]
+;; FUNCTION-MAP kind=lambda offset=549 object[3]
+;; FUNCTION-MAP kind=lambda offset=559 object[4]
+;; FUNCTION-MAP kind=lambda offset=569 object[5]
+;; FUNCTION-MAP kind=lambda offset=579 object[6]
+;; FUNCTION-MAP kind=lambda offset=589 object[7]
+;; FUNCTION-MAP kind=lambda offset=599 object[8]
+;; FUNCTION-MAP kind=lambda offset=609 object[9]
+;; FUNCTION-MAP kind=lambda offset=655 object[10]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Views"
+00010:   4  getprop "Table"
+00015:   4  getprop "Cell"
+00020:   4  name "xs"
+00025:   4  getprop "Views"
+00030:   4  getprop "Table"
+00035:   4  getprop "Cell"
+00040:   4  getprop "BaseCell"
+00045:   4  dup
+00046:   4  callprop "extend"
+00051:   4  swap
+00052:   4  notearg
+00053:   4  newinit 1
+00058:   5  lambda (function () {
+    [sourceless code]
+})
+00063:   5  initprop "draw"
+00068:   8  newinit 1
+00073:   9  uint16 190
+00076:   9  initprop "icon1_x"
+00081:  10  uint16 130
+00084:  10  initprop "step"
+00089:  10  endinit
+00090:  10  initprop "posCfg"
+00095:  13  newarray 7
+00099:  14  newinit 1
+00104:  14  one
+00105:  14  initprop "tag"
+00110:  14  string "ls"
+00115:  14  initprop "type"
+00120:  14  string "m_taskTitleLabel"
+00125:  14  initprop "name"
+00130:  14  string "LS_wujiangInf1"
+00135:  14  initprop "id"
+00140:  14  string "auto_name_509"
+00145:  14  initprop "stringId"
+00150:  14  endinit
+00151:  14  initelem_array 0
+00155:  15  newinit 1
+00160:  15  int8 2
+00162:  15  initprop "tag"
+00167:  15  string "ls"
+00172:  15  initprop "type"
+00177:  15  string "m_taskDescLabel"
+00182:  15  initprop "name"
+00187:  15  string "LS_jinengInf1"
+00192:  15  initprop "id"
+00197:  15  string "auto_name_510"
+00202:  15  initprop "stringId"
+00207:  15  endinit
+00208:  15  initelem_array 1
+00212:  16  newinit 1
+00217:  16  int8 3
+00219:  16  initprop "tag"
+00224:  16  string "ls"
+00229:  16  initprop "type"
+00234:  16  string "m_taskRewardLabel"
+00239:  16  initprop "name"
+00244:  16  string "LS_jinengInf1"
+00249:  16  initprop "id"
+00254:  16  string "auto_name_511"
+00259:  16  initprop "stringId"
+00264:  16  endinit
+00265:  16  initelem_array 2
+00269:  17  newinit 1
+00274:  17  int8 5
+00276:  17  initprop "tag"
+00281:  17  string "ls"
+00286:  17  initprop "type"
+00291:  17  string "m_taskRewardNumLabel_1"
+00296:  17  initprop "name"
+00301:  17  string "LS_Lv"
+00306:  17  initprop "id"
+00311:  17  string "100"
+00316:  17  initprop "string"
+00321:  17  endinit
+00322:  17  initelem_array 3
+00326:  18  newinit 1
+00331:  18  int8 7
+00333:  18  initprop "tag"
+00338:  18  string "ls"
+00343:  18  initprop "type"
+00348:  18  string "m_taskRewardNumLabel_2"
+00353:  18  initprop "name"
+00358:  18  string "LS_Lv"
+00363:  18  initprop "id"
+00368:  18  string "200"
+00373:  18  initprop "string"
+00378:  18  endinit
+00379:  18  initelem_array 4
+00383:  19  newinit 1
+00388:  19  int8 8
+00390:  19  initprop "tag"
+00395:  19  string "ls"
+00400:  19  initprop "type"
+00405:  19  string "m_taskProgressLabel"
+00410:  19  initprop "name"
+00415:  19  string "LS_liebiaoInf2"
+00420:  19  initprop "id"
+00425:  19  string "1/10"
+00430:  19  initprop "string"
+00435:  19  name "cc"
+00440:  19  dup
+00441:  19  callprop "p"
+00446:  19  swap
+00447:  19  notearg
+00448:  19  int8 70
+00450:  19  notearg
+00451:  19  zero
+00452:  19  notearg
+00453:  19  call 2
+00456:  19  initprop "offset"
+00461:  19  endinit
+00462:  19  initelem_array 5
+00466:  20  newinit 1
+00471:  20  int8 21
+00473:  20  initprop "tag"
+00478:  20  string "btn"
+00483:  20  initprop "type"
+00488:  20  string "m_taskBtn"
+00493:  20  initprop "name"
+00498:  20  string "Btn_btn3"
+00503:  20  initprop "id"
+00508:  20  string "auto_name_101"
+00513:  20  initprop "stringId"
+00518:  20  endinit
+00519:  20  initelem_array 6
+00523:  20  endinit
+00524:  20  initprop "ccbCfg"
+00529:  23  lambda (function () {
+    [sourceless code]
+})
+00534:  23  initprop "init"
+00539:  64  lambda (function () {
+    [sourceless code]
+})
+00544:  64  initprop "onEnter"
+00549:  69  lambda (function () {
+    [sourceless code]
+})
+00554:  69  initprop "onExit"
+00559:  74  lambda (function () {
+    [sourceless code]
+})
+00564:  74  initprop "updateCell"
+00569: 188  lambda (function () {
+    [sourceless code]
+})
+00574: 188  initprop "taskBtnClick"
+00579: 210  lambda (function () {
+    [sourceless code]
+})
+00584: 210  initprop "requestTaskRecieve"
+00589: 243  lambda (function () {
+    [sourceless code]
+})
+00594: 243  initprop "setBaseTouchPriority"
+00599: 249  lambda (function () {
+    [sourceless code]
+})
+00604: 249  initprop "changeSceneWithTag"
+00609: 368  lambda (function () {
+    [sourceless code]
+})
+00614: 368  initprop "goToMeridianScene"
+00619: 368  endinit
+00620: 368  notearg
+00621: 368  call 1
+00624: 368  setprop "TaskCell"
+00629: 368  popv
+00630: 386  name "xs"
+00635: 386  getprop "Views"
+00640: 386  getprop "Table"
+00645: 386  getprop "Cell"
+00650: 386  getprop "TaskCell"
+00655: 386  lambda (function () {
+    [sourceless code]
+})
+00660: 386  setprop "create"
+00665: 386  popv
+00666: 393  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:1 ---
+;; function object[0] draw
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] ctx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:5 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  this
+00001:   6  dup
+00002:   6  callprop "_super"
+00007:   6  swap
+00008:   6  notearg
+00009:   6  getarg 0
+00012:   6  notearg
+00013:   6  call 1
+00016:   6  pop
+00017:   6  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:5 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:23 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  this
+00001:  24  dup
+00002:  24  callprop "_super"
+00007:  24  swap
+00008:  24  notearg
+00009:  24  call 0
+00012:  24  not
+00013:  24  ifeq 20 (+7)
+00018:  25  false
+00019:  25  return
+00020:  28  this
+00021:  28  getarg 0
+00024:  28  setprop "taskData"
+00029:  28  pop
+00030:  30  this
+00031:  30  null
+00032:  30  setprop "m_taskTitleLabel"
+00037:  30  pop
+00038:  31  this
+00039:  31  null
+00040:  31  setprop "m_taskDescLabel"
+00045:  31  pop
+00046:  32  this
+00047:  32  null
+00048:  32  setprop "m_taskRewardLabel"
+00053:  32  pop
+00054:  33  this
+00055:  33  null
+00056:  33  setprop "m_taskRewardIcon_1"
+00061:  33  pop
+00062:  34  this
+00063:  34  null
+00064:  34  setprop "m_taskRewardIcon_2"
+00069:  34  pop
+00070:  35  this
+00071:  35  null
+00072:  35  setprop "m_taskRewardNumLabel_1"
+00077:  35  pop
+00078:  36  this
+00079:  36  null
+00080:  36  setprop "m_taskRewardNumLabel_2"
+00085:  36  pop
+00086:  37  this
+00087:  37  null
+00088:  37  setprop "m_taskProgressLabel"
+00093:  37  pop
+00094:  38  this
+00095:  38  null
+00096:  38  setprop "m_taskIcon"
+00101:  38  pop
+00102:  39  this
+00103:  39  null
+00104:  39  setprop "m_taskBtn"
+00109:  39  pop
+00110:  41  this
+00111:  41  name "cc"
+00116:  41  getprop "BuilderReader"
+00121:  41  dup
+00122:  41  callprop "load"
+00127:  41  swap
+00128:  41  notearg
+00129:  41  string "ccb3/TaskCell.ccbi"
+00134:  41  notearg
+00135:  41  this
+00136:  41  notearg
+00137:  41  call 2
+00140:  41  setprop "ccbNode"
+00145:  41  pop
+00146:  42  this
+00147:  42  getprop "ccbNode"
+00152:  42  dup
+00153:  42  callprop "setAnchorPoint"
+00158:  42  swap
+00159:  42  notearg
+00160:  42  name "cc"
+00165:  42  dup
+00166:  42  callprop "p"
+00171:  42  swap
+00172:  42  notearg
+00173:  42  zero
+00174:  42  notearg
+00175:  42  zero
+00176:  42  notearg
+00177:  42  call 2
+00180:  42  notearg
+00181:  42  call 1
+00184:  42  pop
+00185:  43  name "xs"
+00190:  43  getprop "Utils"
+00195:  43  getprop "Node"
+00200:  43  dup
+00201:  43  callprop "attachNodes"
+00206:  43  swap
+00207:  43  notearg
+00208:  43  this
+00209:  43  notearg
+00210:  43  this
+00211:  43  getprop "ccbNode"
+00216:  43  notearg
+00217:  43  newinit 1
+00222:  44  name "cc"
+00227:  44  dup
+00228:  44  callprop "p"
+00233:  44  swap
+00234:  44  notearg
+00235:  44  zero
+00236:  44  notearg
+00237:  44  zero
+00238:  44  notearg
+00239:  44  call 2
+00242:  44  initprop "offset"
+00247:  45  string "lb"
+00252:  45  initprop "desc"
+00257:  46  false
+00258:  46  initprop "sc"
+00263:  46  endinit
+00264:  46  notearg
+00265:  46  call 3
+00268:  46  pop
+00269:  48  name "xs"
+00274:  48  getprop "Utils"
+00279:  48  getprop "UI"
+00284:  48  dup
+00285:  48  callprop "replaceCcbByCfg"
+00290:  48  swap
+00291:  48  notearg
+00292:  48  this
+00293:  48  getprop "ccbNode"
+00298:  48  notearg
+00299:  48  this
+00300:  48  getprop "ccbCfg"
+00305:  48  notearg
+00306:  48  this
+00307:  48  notearg
+00308:  48  call 3
+00311:  48  pop
+00312:  50  this
+00313:  50  name "xs"
+00318:  50  getprop "Utils"
+00323:  50  dup
+00324:  50  callprop "getChildByTag"
+00329:  50  swap
+00330:  50  notearg
+00331:  50  this
+00332:  50  getprop "ccbNode"
+00337:  50  notearg
+00338:  50  int8 4
+00340:  50  notearg
+00341:  50  call 2
+00344:  50  setprop "m_taskRewardIcon_1"
+00349:  50  pop
+00350:  51  this
+00351:  51  name "xs"
+00356:  51  getprop "Utils"
+00361:  51  dup
+00362:  51  callprop "getChildByTag"
+00367:  51  swap
+00368:  51  notearg
+00369:  51  this
+00370:  51  getprop "ccbNode"
+00375:  51  notearg
+00376:  51  int8 6
+00378:  51  notearg
+00379:  51  call 2
+00382:  51  setprop "m_taskRewardIcon_2"
+00387:  51  pop
+00388:  52  this
+00389:  52  name "xs"
+00394:  52  getprop "Utils"
+00399:  52  dup
+00400:  52  callprop "getChildByTag"
+00405:  52  swap
+00406:  52  notearg
+00407:  52  this
+00408:  52  getprop "ccbNode"
+00413:  52  notearg
+00414:  52  int8 20
+00416:  52  notearg
+00417:  52  call 2
+00420:  52  setprop "m_taskIcon"
+00425:  52  pop
+00426:  54  this
+00427:  54  getprop "m_taskBtn"
+00432:  54  dup
+00433:  54  callprop "setSwallowTouch"
+00438:  54  swap
+00439:  54  notearg
+00440:  54  false
+00441:  54  notearg
+00442:  54  call 1
+00445:  54  pop
+00446:  55  this
+00447:  55  getprop "m_taskBtn"
+00452:  55  dup
+00453:  55  callprop "setZoomOnTouchDown"
+00458:  55  swap
+00459:  55  notearg
+00460:  55  false
+00461:  55  notearg
+00462:  55  call 1
+00465:  55  pop
+00466:  56  this
+00467:  56  getprop "m_taskBtn"
+00472:  56  dup
+00473:  56  callprop "setOnClickCallBack"
+00478:  56  swap
+00479:  56  notearg
+00480:  56  this
+00481:  56  getprop "taskBtnClick"
+00486:  56  dup
+00487:  56  callprop "bind"
+00492:  56  swap
+00493:  56  notearg
+00494:  56  this
+00495:  56  notearg
+00496:  56  call 1
+00499:  56  notearg
+00500:  56  call 1
+00503:  56  pop
+00504:  57  this
+00505:  57  getprop "m_taskProgressLabel"
+00510:  57  dup
+00511:  57  callprop "setAnchorPoint"
+00516:  57  swap
+00517:  57  notearg
+00518:  57  name "xs"
+00523:  57  getprop "ap_rc"
+00528:  57  notearg
+00529:  57  call 1
+00532:  57  pop
+00533:  61  true
+00534:  61  return
+00535:  61  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:23 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:64 ---
+loc   line  op
+----- ----  --
+main:
+00000:  65  this
+00001:  65  dup
+00002:  65  callprop "_super"
+00007:  65  swap
+00008:  65  notearg
+00009:  65  call 0
+00012:  65  pop
+00013:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:64 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:69 ---
+loc   line  op
+----- ----  --
+main:
+00000:  70  this
+00001:  70  dup
+00002:  70  callprop "_super"
+00007:  70  swap
+00008:  70  notearg
+00009:  70  call 0
+00012:  70  pop
+00013:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:69 ---
+;; function object[4] updateCell
+;; function metadata object[4] nargs=1 bindings=12
+;; arg[0] taskData
+;; local[0] add
+;; local[1] _iconView
+;; local[2] _model
+;; local[3] _btn_invisible
+;; local[4] i
+;; local[5] rewordDataView
+;; local[6] _tag
+;; local[7] p
+;; local[8] newP
+;; local[9] tmp
+;; local[10] newBtn
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=364 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:74 ---
+loc   line  op
+----- ----  --
+main:
+00000:  75  getarg 0
+00003:  75  ifeq 1825 (+1822)
+00008:  76  this
+00009:  76  getarg 0
+00012:  76  setprop "taskData"
+00017:  76  pop
+00018:  77  this
+00019:  77  getprop "m_taskTitleLabel"
+00024:  77  dup
+00025:  77  callprop "setString"
+00030:  77  swap
+00031:  77  notearg
+00032:  77  this
+00033:  77  getprop "taskData"
+00038:  77  dup
+00039:  77  callprop "getTitle"
+00044:  77  swap
+00045:  77  notearg
+00046:  77  call 0
+00049:  77  notearg
+00050:  77  call 1
+00053:  77  pop
+00054:  78  this
+00055:  78  getprop "m_taskDescLabel"
+00060:  78  dup
+00061:  78  callprop "setString"
+00066:  78  swap
+00067:  78  notearg
+00068:  78  this
+00069:  78  getprop "taskData"
+00074:  78  dup
+00075:  78  callprop "getDesc"
+00080:  78  swap
+00081:  78  notearg
+00082:  78  call 0
+00085:  78  notearg
+00086:  78  call 1
+00089:  78  pop
+00090:  80  name "xs"
+00095:  80  dup
+00096:  80  callprop "log_xjf"
+00101:  80  swap
+00102:  80  notearg
+00103:  80  string "this.taskData.icon = "
+00108:  80  this
+00109:  80  getprop "taskData"
+00114:  80  getprop "icon"
+00119:  80  add
+00120:  80  notearg
+00121:  80  call 1
+00124:  80  pop
+00125:  83  name "xs"
+00130:  83  getprop "Factorys"
+00135:  83  getprop "Add"
+00140:  83  dup
+00141:  83  callprop "createWithJson"
+00146:  83  swap
+00147:  83  notearg
+00148:  84  newinit 1
+00153:  85  this
+00154:  85  getprop "taskData"
+00159:  85  getprop "icon"
+00164:  85  initprop "id"
+00169:  86  this
+00170:  86  getprop "taskData"
+00175:  86  getprop "icon_type"
+00180:  86  initprop "type"
+00185:  86  endinit
+00186:  86  notearg
+00187:  86  call 1
+00190:  86  setlocal 0
+00193:  86  pop
+00194:  89  getlocal 0
+00197:  89  dup
+00198:  89  callprop "createHeadView"
+00203:  89  swap
+00204:  89  notearg
+00205:  89  call 0
+00208:  89  setlocal 1
+00211:  89  pop
+00212:  90  name "xs"
+00217:  90  getprop "Utils"
+00222:  90  getprop "Node"
+00227:  90  dup
+00228:  90  callprop "replaceChildSafe"
+00233:  90  swap
+00234:  90  notearg
+00235:  90  this
+00236:  90  notearg
+00237:  90  this
+00238:  90  getprop "m_taskIcon"
+00243:  90  notearg
+00244:  90  getlocal 1
+00247:  90  notearg
+00248:  90  call 3
+00251:  90  pop
+00252:  91  this
+00253:  91  getlocal 1
+00256:  91  setprop "m_taskIcon"
+00261:  91  pop
+00262:  94  name "xs"
+00267:  94  getprop "Models"
+00272:  94  getprop "Game"
+00277:  94  getprop "Package"
+00282:  94  dup
+00283:  94  callprop "createWithJson"
+00288:  94  swap
+00289:  94  notearg
+00290:  94  this
+00291:  94  getprop "taskData"
+00296:  94  getprop "reword_list"
+00301:  94  notearg
+00302:  94  call 1
+00305:  94  setlocal 2
+00308:  94  pop
+00309:  96  name "xs"
+00314:  96  getprop "Views"
+00319:  96  getprop "Button"
+00324:  96  getprop "Factory"
+00329:  96  getprop "Audio"
+00334:  96  dup
+00335:  96  callprop "createInvisibleWithParent"
+00340:  96  swap
+00341:  96  notearg
+00342:  96  getlocal 1
+00345:  96  notearg
+00346:  96  call 1
+00349:  96  setlocal 3
+00352:  96  pop
+00353:  97  getlocal 3
+00356:  97  dup
+00357:  97  callprop "setOnClickCallBack"
+00362:  97  swap
+00363:  97  notearg
+00364:  98  lambda (function () {
+    [sourceless code]
+})
+00369:  98  dup
+00370:  98  callprop "bind"
+00375:  98  swap
+00376:  98  notearg
+00377: 101  getlocal 2
+00380: 101  notearg
+00381: 101  call 1
+00384: 101  notearg
+00385: 101  call 1
+00388: 101  pop
+00389: 103  this
+00390: 103  getlocal 3
+00393: 103  setprop "m_taskIconBtn"
+00398: 103  pop
+00399: 106  zero
+00400: 106  setlocal 4
+00403: 106  pop
+00404: 106  goto 1010 (+606)
+00409: 107  loophead
+00410: 107  name "xs"
+00415: 107  getprop "Views"
+00420: 107  getprop "Icon"
+00425: 107  getprop "IconPackage"
+00430: 107  dup
+00431: 107  callprop "create"
+00436: 107  swap
+00437: 107  notearg
+00438: 107  call 0
+00441: 107  setlocal 5
+00444: 107  pop
+00445: 108  getlocal 5
+00448: 108  dup
+00449: 108  callprop "reloadRewordData"
+00454: 108  swap
+00455: 108  notearg
+00456: 108  getlocal 2
+00459: 108  notearg
+00460: 108  getlocal 4
+00463: 108  notearg
+00464: 108  double 0.38
+00469: 108  notearg
+00470: 108  call 3
+00473: 108  pop
+00474: 109  getlocal 5
+00477: 109  dup
+00478: 109  callprop "attr"
+00483: 109  swap
+00484: 109  notearg
+00485: 109  newinit 1
+00490: 110  name "xs"
+00495: 110  getprop "ap_c"
+00500: 110  initprop "ap"
+00505: 110  endinit
+00506: 110  notearg
+00507: 110  call 1
+00510: 110  pop
+00511: 112  getlocal 4
+00514: 112  one
+00515: 112  add
+00516: 112  setlocal 6
+00519: 112  pop
+00520: 113  name "xs"
+00525: 113  getprop "Utils"
+00530: 113  getprop "Node"
+00535: 113  dup
+00536: 113  callprop "replaceChildSafe"
+00541: 113  swap
+00542: 113  notearg
+00543: 113  this
+00544: 113  notearg
+00545: 113  this
+00546: 113  string "m_taskRewardIcon_"
+00551: 113  getlocal 6
+00554: 113  add
+00555: 113  getelem
+00556: 113  notearg
+00557: 113  getlocal 5
+00560: 113  notearg
+00561: 113  call 3
+00564: 113  pop
+00565: 114  this
+00566: 114  string "m_taskRewardIcon_"
+00571: 114  getlocal 6
+00574: 114  add
+00575: 114  getlocal 5
+00578: 114  setelem
+00579: 114  pop
+00580: 115  this
+00581: 115  string "m_taskRewardNumLabel_"
+00586: 115  getlocal 6
+00589: 115  add
+00590: 115  getelem
+00591: 115  dup
+00592: 115  callprop "setString"
+00597: 115  swap
+00598: 115  notearg
+00599: 115  string ""
+00604: 115  getlocal 2
+00607: 115  dup
+00608: 115  callprop "getData"
+00613: 115  swap
+00614: 115  notearg
+00615: 115  call 0
+00618: 115  getlocal 4
+00621: 115  getelem
+00622: 115  getprop "num"
+00627: 115  add
+00628: 115  notearg
+00629: 115  call 1
+00632: 115  pop
+00633: 118  getlocal 6
+00636: 118  int8 2
+00638: 118  ge
+00639: 118  ifeq 995 (+356)
+00644: 120  name "cc"
+00649: 120  dup
+00650: 120  callprop "p"
+00655: 120  swap
+00656: 120  notearg
+00657: 120  this
+00658: 120  string "m_taskRewardIcon_"
+00663: 120  getlocal 6
+00666: 120  one
+00667: 120  sub
+00668: 120  add
+00669: 120  getelem
+00670: 120  dup
+00671: 120  callprop "getPosition"
+00676: 120  swap
+00677: 120  notearg
+00678: 120  call 0
+00681: 120  getprop "x"
+00686: 120  int8 40
+00688: 120  add
+00689: 121  this
+00690: 121  string "m_taskRewardNumLabel_"
+00695: 121  getlocal 6
+00698: 121  one
+00699: 121  sub
+00700: 121  add
+00701: 121  getelem
+00702: 121  dup
+00703: 121  callprop "getContentSize"
+00708: 121  swap
+00709: 121  notearg
+00710: 121  call 0
+00713: 121  getprop "width"
+00718: 121  add
+00719: 121  notearg
+00720: 122  this
+00721: 122  string "m_taskRewardIcon_"
+00726: 122  getlocal 6
+00729: 122  add
+00730: 122  getelem
+00731: 122  dup
+00732: 122  callprop "getPosition"
+00737: 122  swap
+00738: 122  notearg
+00739: 122  call 0
+00742: 122  getprop "y"
+00747: 122  notearg
+00748: 122  call 2
+00751: 122  setlocal 7
+00754: 122  pop
+00755: 124  name "cc"
+00760: 124  dup
+00761: 124  callprop "p"
+00766: 124  swap
+00767: 124  notearg
+00768: 124  zero
+00769: 124  notearg
+00770: 124  getlocal 7
+00773: 124  getprop "y"
+00778: 124  notearg
+00779: 124  call 2
+00782: 124  setlocal 8
+00785: 124  pop
+00786: 125  one
+00787: 125  setlocal 9
+00790: 125  pop
+00791: 126  goto 865 (+74)
+00796: 127  loophead
+00797: 127  name "cc"
+00802: 127  dup
+00803: 127  callprop "p"
+00808: 127  swap
+00809: 127  notearg
+00810: 127  this
+00811: 127  getprop "posCfg"
+00816: 127  getprop "icon1_x"
+00821: 127  this
+00822: 127  getprop "posCfg"
+00827: 127  getprop "step"
+00832: 127  localinc 11
+00835: 127  getlocal 9
+00838: 127  pos
+00839: 127  dup
+00840: 127  one
+00841: 127  add
+00842: 127  setlocal 9
+00845: 127  pop
+00846: 127  mul
+00847: 127  add
+00848: 127  notearg
+00849: 127  getlocal 8
+00852: 127  getprop "y"
+00857: 127  notearg
+00858: 127  call 2
+00861: 127  setlocal 8
+00864: 127  pop
+00865: 126  loopentry
+00866: 126  getlocal 7
+00869: 126  getprop "x"
+00874: 126  getlocal 8
+00877: 126  getprop "x"
+00882: 126  ge
+00883: 126  ifne 796 (-87)
+00888: 130  this
+00889: 130  string "m_taskRewardIcon_"
+00894: 130  getlocal 6
+00897: 130  add
+00898: 130  getelem
+00899: 130  dup
+00900: 130  callprop "setPosition"
+00905: 130  swap
+00906: 130  notearg
+00907: 130  getlocal 8
+00910: 130  notearg
+00911: 130  call 1
+00914: 130  pop
+00915: 131  this
+00916: 131  string "m_taskRewardNumLabel_"
+00921: 131  getlocal 6
+00924: 131  add
+00925: 131  getelem
+00926: 131  dup
+00927: 131  callprop "setPosition"
+00932: 131  swap
+00933: 131  notearg
+00934: 132  name "cc"
+00939: 132  dup
+00940: 132  callprop "p"
+00945: 132  swap
+00946: 132  notearg
+00947: 132  getlocal 8
+00950: 132  getprop "x"
+00955: 132  int8 24
+00957: 132  add
+00958: 132  notearg
+00959: 133  this
+00960: 133  string "m_taskRewardNumLabel_"
+00965: 133  getlocal 6
+00968: 133  add
+00969: 133  getelem
+00970: 133  dup
+00971: 133  callprop "getPosition"
+00976: 133  swap
+00977: 133  notearg
+00978: 133  call 0
+00981: 133  getprop "y"
+00986: 133  notearg
+00987: 133  call 2
+00990: 133  notearg
+00991: 133  call 1
+00994: 133  pop
+00995: 106  localinc 11
+00998: 106  getlocal 4
+01001: 106  pos
+01002: 106  dup
+01003: 106  one
+01004: 106  add
+01005: 106  setlocal 4
+01008: 106  pop
+01009: 106  pop
+01010: 106  loopentry
+01011: 106  getlocal 4
+01014: 106  getlocal 2
+01017: 106  dup
+01018: 106  callprop "getData"
+01023: 106  swap
+01024: 106  notearg
+01025: 106  call 0
+01028: 106  length "length"
+01033: 106  lt
+01034: 106  ifne 409 (-625)
+01039: 139  this
+01040: 139  getprop "m_taskProgressLabel"
+01045: 139  dup
+01046: 139  callprop "setString"
+01051: 139  swap
+01052: 139  notearg
+01053: 139  string ""
+01058: 139  this
+01059: 139  getprop "taskData"
+01064: 139  dup
+01065: 139  callprop "getTaskValue"
+01070: 139  swap
+01071: 139  notearg
+01072: 139  call 0
+01075: 139  add
+01076: 139  string "/"
+01081: 139  add
+01082: 139  this
+01083: 139  getprop "taskData"
+01088: 139  dup
+01089: 139  callprop "getTaskObjectiveNum"
+01094: 139  swap
+01095: 139  notearg
+01096: 139  call 0
+01099: 139  add
+01100: 139  notearg
+01101: 139  call 1
+01104: 139  pop
+01105: 141  null
+01106: 141  setlocal 10
+01109: 141  pop
+01110: 143  this
+01111: 143  getprop "taskData"
+01116: 143  dup
+01117: 143  callprop "getStatus"
+01122: 143  swap
+01123: 143  notearg
+01124: 143  call 0
+01127: 143  condswitch
+01128: 144  name "xs"
+01133: 144  getprop "Constant_TaskStatus_UnFinished"
+01138: 144  case 1178 (+40)
+01143: 160  name "xs"
+01148: 160  getprop "Constant_TaskStatus_Finished_CanReceived"
+01153: 160  case 1400 (+247)
+01158: 166  name "xs"
+01163: 166  getprop "Constant_TaskStatus_Finished_Received"
+01168: 166  case 1506 (+338)
+01173: 166  default 1612 (+439)
+01178: 147  name "xs"
+01183: 147  getprop "Views"
+01188: 147  getprop "Btn"
+01193: 147  dup
+01194: 147  callprop "create"
+01199: 147  swap
+01200: 147  notearg
+01201: 147  string "Btn_btn3"
+01206: 147  notearg
+01207: 147  call 1
+01210: 147  setlocal 10
+01213: 147  pop
+01214: 148  name "xs"
+01219: 148  getprop "Utils"
+01224: 148  dup
+01225: 148  callprop "parseIntSafe"
+01230: 148  swap
+01231: 148  notearg
+01232: 148  this
+01233: 148  getprop "taskData"
+01238: 148  dup
+01239: 148  callprop "getScene"
+01244: 148  swap
+01245: 148  notearg
+01246: 148  call 0
+01249: 148  notearg
+01250: 148  call 1
+01253: 148  zero
+01254: 148  eq
+01255: 148  ifeq 1330 (+75)
+01260: 150  getlocal 10
+01263: 150  dup
+01264: 150  callprop "setString"
+01269: 150  swap
+01270: 150  notearg
+01271: 150  name "xs"
+01276: 150  getprop "Tools"
+01281: 150  getprop "String"
+01286: 150  dup
+01287: 150  callprop "createString"
+01292: 150  swap
+01293: 150  notearg
+01294: 150  string "auto_name_512"
+01299: 150  notearg
+01300: 150  call 1
+01303: 150  notearg
+01304: 150  call 1
+01307: 150  pop
+01308: 151  getlocal 10
+01311: 151  dup
+01312: 151  callprop "setEnabled"
+01317: 151  swap
+01318: 151  notearg
+01319: 151  false
+01320: 151  notearg
+01321: 151  call 1
+01324: 151  pop
+01325: 151  goto 1395 (+70)
+01330: 154  getlocal 10
+01333: 154  dup
+01334: 154  callprop "setString"
+01339: 154  swap
+01340: 154  notearg
+01341: 154  name "xs"
+01346: 154  getprop "Tools"
+01351: 154  getprop "String"
+01356: 154  dup
+01357: 154  callprop "createString"
+01362: 154  swap
+01363: 154  notearg
+01364: 154  string "auto_name_513"
+01369: 154  notearg
+01370: 154  call 1
+01373: 154  notearg
+01374: 154  call 1
+01377: 154  pop
+01378: 155  getlocal 10
+01381: 155  dup
+01382: 155  callprop "setEnabled"
+01387: 155  swap
+01388: 155  notearg
+01389: 155  true
+01390: 155  notearg
+01391: 155  call 1
+01394: 155  pop
+01395: 158  goto 1684 (+289)
+01400: 161  name "xs"
+01405: 161  getprop "Views"
+01410: 161  getprop "Btn"
+01415: 161  dup
+01416: 161  callprop "create"
+01421: 161  swap
+01422: 161  notearg
+01423: 161  string "Btn_TaskReceive"
+01428: 161  notearg
+01429: 161  call 1
+01432: 161  setlocal 10
+01435: 161  pop
+01436: 162  getlocal 10
+01439: 162  dup
+01440: 162  callprop "setString"
+01445: 162  swap
+01446: 162  notearg
+01447: 162  name "xs"
+01452: 162  getprop "Tools"
+01457: 162  getprop "String"
+01462: 162  dup
+01463: 162  callprop "createString"
+01468: 162  swap
+01469: 162  notearg
+01470: 162  string "auto_name_101"
+01475: 162  notearg
+01476: 162  call 1
+01479: 162  notearg
+01480: 162  call 1
+01483: 162  pop
+01484: 163  getlocal 10
+01487: 163  dup
+01488: 163  callprop "setEnabled"
+01493: 163  swap
+01494: 163  notearg
+01495: 163  true
+01496: 163  notearg
+01497: 163  call 1
+01500: 163  pop
+01501: 164  goto 1684 (+183)
+01506: 167  name "xs"
+01511: 167  getprop "Views"
+01516: 167  getprop "Btn"
+01521: 167  dup
+01522: 167  callprop "create"
+01527: 167  swap
+01528: 167  notearg
+01529: 167  string "Btn_btn3"
+01534: 167  notearg
+01535: 167  call 1
+01538: 167  setlocal 10
+01541: 167  pop
+01542: 168  getlocal 10
+01545: 168  dup
+01546: 168  callprop "setString"
+01551: 168  swap
+01552: 168  notearg
+01553: 168  name "xs"
+01558: 168  getprop "Tools"
+01563: 168  getprop "String"
+01568: 168  dup
+01569: 168  callprop "createString"
+01574: 168  swap
+01575: 168  notearg
+01576: 168  string "auto_name_100"
+01581: 168  notearg
+01582: 168  call 1
+01585: 168  notearg
+01586: 168  call 1
+01589: 168  pop
+01590: 169  getlocal 10
+01593: 169  dup
+01594: 169  callprop "setEnabled"
+01599: 169  swap
+01600: 169  notearg
+01601: 169  false
+01602: 169  notearg
+01603: 169  call 1
+01606: 169  pop
+01607: 170  goto 1684 (+77)
+01612: 173  name "xs"
+01617: 173  dup
+01618: 173  callprop "warn"
+01623: 173  swap
+01624: 173  notearg
+01625: 173  string "taskStatus err"
+01630: 173  notearg
+01631: 173  string "taskStatus err"
+01636: 173  notearg
+01637: 173  call 2
+01640: 173  pop
+01641: 174  getlocal 10
+01644: 174  dup
+01645: 174  callprop "setString"
+01650: 174  swap
+01651: 174  notearg
+01652: 174  string "err"
+01657: 174  notearg
+01658: 174  call 1
+01661: 174  pop
+01662: 175  getlocal 10
+01665: 175  dup
+01666: 175  callprop "setEnabled"
+01671: 175  swap
+01672: 175  notearg
+01673: 175  false
+01674: 175  notearg
+01675: 175  call 1
+01678: 175  pop
+01679: 176  goto 1684 (+5)
+01684: 178  getlocal 10
+01687: 178  ifeq 1825 (+138)
+01692: 179  name "xs"
+01697: 179  getprop "Utils"
+01702: 179  getprop "Node"
+01707: 179  dup
+01708: 179  callprop "replaceChildSafe"
+01713: 179  swap
+01714: 179  notearg
+01715: 179  this
+01716: 179  getprop "ccbNode"
+01721: 179  notearg
+01722: 179  this
+01723: 179  getprop "m_taskBtn"
+01728: 179  notearg
+01729: 179  getlocal 10
+01732: 179  notearg
+01733: 179  call 3
+01736: 179  pop
+01737: 180  this
+01738: 180  getlocal 10
+01741: 180  setprop "m_taskBtn"
+01746: 180  pop
+01747: 181  this
+01748: 181  getprop "m_taskBtn"
+01753: 181  dup
+01754: 181  callprop "setSwallowTouch"
+01759: 181  swap
+01760: 181  notearg
+01761: 181  false
+01762: 181  notearg
+01763: 181  call 1
+01766: 181  pop
+01767: 182  this
+01768: 182  getprop "m_taskBtn"
+01773: 182  dup
+01774: 182  callprop "setZoomOnTouchDown"
+01779: 182  swap
+01780: 182  notearg
+01781: 182  false
+01782: 182  notearg
+01783: 182  call 1
+01786: 182  pop
+01787: 183  this
+01788: 183  getprop "m_taskBtn"
+01793: 183  dup
+01794: 183  callprop "setOnClickCallBack"
+01799: 183  swap
+01800: 183  notearg
+01801: 183  this
+01802: 183  getprop "taskBtnClick"
+01807: 183  dup
+01808: 183  callprop "bind"
+01813: 183  swap
+01814: 183  notearg
+01815: 183  this
+01816: 183  notearg
+01817: 183  call 1
+01820: 183  notearg
+01821: 183  call 1
+01824: 183  pop
+01825: 185  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:74 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] _model_pack
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:98 ---
+loc   line  op
+----- ----  --
+main:
+00000:  99  this
+00001:  99  setlocal 0
+00004:  99  pop
+00005: 100  name "xs"
+00010: 100  getprop "Views"
+00015: 100  getprop "Mgr"
+00020: 100  dup
+00021: 100  callprop "showDialogByName"
+00026: 100  swap
+00027: 100  notearg
+00028: 100  string "GetPropsDialog"
+00033: 100  notearg
+00034: 100  getlocal 0
+00037: 100  dup
+00038: 100  callprop "getData"
+00043: 100  swap
+00044: 100  notearg
+00045: 100  call 0
+00048: 100  notearg
+00049: 100  call 2
+00052: 100  pop
+00053: 100  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:98 ---
+;; function object[5] taskBtnClick
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:188 ---
+loc   line  op
+----- ----  --
+main:
+00000: 189  this
+00001: 189  getprop "taskData"
+00006: 189  dup
+00007: 189  callprop "getStatus"
+00012: 189  swap
+00013: 189  notearg
+00014: 189  call 0
+00017: 189  condswitch
+00018: 190  name "xs"
+00023: 190  getprop "Constant_TaskStatus_UnFinished"
+00028: 190  case 68 (+40)
+00033: 195  name "xs"
+00038: 195  getprop "Constant_TaskStatus_Finished_CanReceived"
+00043: 195  case 104 (+61)
+00048: 200  name "xs"
+00053: 200  getprop "Constant_TaskStatus_Finished_Received"
+00058: 200  case 122 (+64)
+00063: 200  default 187 (+124)
+00068: 192  this
+00069: 192  dup
+00070: 192  callprop "changeSceneWithTag"
+00075: 192  swap
+00076: 192  notearg
+00077: 192  this
+00078: 192  getprop "taskData"
+00083: 192  dup
+00084: 192  callprop "getScene"
+00089: 192  swap
+00090: 192  notearg
+00091: 192  call 0
+00094: 192  notearg
+00095: 192  call 1
+00098: 192  pop
+00099: 193  goto 216 (+117)
+00104: 197  this
+00105: 197  dup
+00106: 197  callprop "requestTaskRecieve"
+00111: 197  swap
+00112: 197  notearg
+00113: 197  call 0
+00116: 197  pop
+00117: 198  goto 216 (+99)
+00122: 201  name "xs"
+00127: 201  getprop "Views"
+00132: 201  getprop "Mgr"
+00137: 201  dup
+00138: 201  callprop "showToast"
+00143: 201  swap
+00144: 201  notearg
+00145: 201  name "xs"
+00150: 201  getprop "Tools"
+00155: 201  getprop "String"
+00160: 201  dup
+00161: 201  callprop "createString"
+00166: 201  swap
+00167: 201  notearg
+00168: 201  string "auto_name_514"
+00173: 201  notearg
+00174: 201  call 1
+00177: 201  notearg
+00178: 201  call 1
+00181: 201  pop
+00182: 202  goto 216 (+34)
+00187: 205  name "xs"
+00192: 205  dup
+00193: 205  callprop "warn"
+00198: 205  swap
+00199: 205  notearg
+00200: 205  string "taskStatus err"
+00205: 205  notearg
+00206: 205  string "taskStatus err"
+00211: 205  notearg
+00212: 205  call 2
+00215: 205  pop
+00216: 206  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:188 ---
+;; function object[6] requestTaskRecieve
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=115 object[0]
+;; FUNCTION-MAP kind=lambda offset=134 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:210 ---
+loc   line  op
+----- ----  --
+main:
+00000: 211  name "xs"
+00005: 211  getprop "Tools"
+00010: 211  getprop "Net"
+00015: 211  dup
+00016: 211  callprop "requestTaskRecieve"
+00021: 211  swap
+00022: 211  notearg
+00023: 212  newinit 1
+00028: 213  name "xs"
+00033: 213  getprop "Profile"
+00038: 213  getprop "GameData"
+00043: 213  getprop "Mgr"
+00048: 213  dup
+00049: 213  callprop "getInstance"
+00054: 213  swap
+00055: 213  notearg
+00056: 213  call 0
+00059: 213  getprop "Player"
+00064: 213  dup
+00065: 213  callprop "getPlayer"
+00070: 213  swap
+00071: 213  notearg
+00072: 213  call 0
+00075: 213  dup
+00076: 213  callprop "getPlayerId"
+00081: 213  swap
+00082: 213  notearg
+00083: 213  call 0
+00086: 213  initprop "user_id"
+00091: 214  this
+00092: 214  getprop "taskData"
+00097: 214  getprop "pk_id"
+00102: 214  initprop "task_pk_id"
+00107: 215  true
+00108: 215  initprop "forcepush"
+00113: 215  endinit
+00114: 215  notearg
+00115: 217  lambda (function () {
+    [sourceless code]
+})
+00120: 217  dup
+00121: 217  callprop "bind"
+00126: 217  swap
+00127: 217  notearg
+00128: 235  this
+00129: 235  notearg
+00130: 235  call 1
+00133: 235  notearg
+00134: 236  lambda (function () {
+    [sourceless code]
+})
+00139: 236  notearg
+00140: 239  this
+00141: 239  notearg
+00142: 239  call 4
+00145: 239  pop
+00146: 240  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:210 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] param
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:217 ---
+loc   line  op
+----- ----  --
+main:
+00000: 225  getarg 0
+00003: 225  getprop "result"
+00008: 225  ifeq 130 (+122)
+00013: 226  newinit 1
+00018: 226  endinit
+00019: 226  setlocal 0
+00022: 226  pop
+00023: 227  getlocal 0
+00026: 227  getarg 0
+00029: 227  getprop "list"
+00034: 227  or 46 (+12)
+00039: 227  pop
+00040: 227  newinit 1
+00045: 227  endinit
+00046: 227  setprop "adds"
+00051: 227  pop
+00052: 228  getlocal 0
+00055: 228  name "xs"
+00060: 228  getprop "Tools"
+00065: 228  getprop "String"
+00070: 228  dup
+00071: 228  callprop "createString"
+00076: 228  swap
+00077: 228  notearg
+00078: 228  string "auto_name_128"
+00083: 228  notearg
+00084: 228  call 1
+00087: 228  setprop "title"
+00092: 228  pop
+00093: 229  name "xs"
+00098: 229  getprop "Views"
+00103: 229  getprop "Mgr"
+00108: 229  dup
+00109: 229  callprop "showDialogByName"
+00114: 229  swap
+00115: 229  notearg
+00116: 229  string "UseItemSuccessDialog"
+00121: 229  notearg
+00122: 229  getlocal 0
+00125: 229  notearg
+00126: 229  call 2
+00129: 229  pop
+00130: 232  name "xs"
+00135: 232  getprop "Utils"
+00140: 232  getprop "Notify"
+00145: 232  dup
+00146: 232  callprop "postNotification"
+00151: 232  swap
+00152: 232  notearg
+00153: 232  name "xs"
+00158: 232  getprop "Constant_Notify_TaskReceive"
+00163: 232  notearg
+00164: 232  newinit 1
+00169: 233  getarg 0
+00172: 233  getprop "task_list"
+00177: 233  initprop "list"
+00182: 233  endinit
+00183: 233  notearg
+00184: 233  call 2
+00187: 233  pop
+00188: 234  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:217 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:236 ---
+loc   line  op
+----- ----  --
+main:
+00000: 236  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:236 ---
+;; function object[7] setBaseTouchPriority
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:243 ---
+loc   line  op
+----- ----  --
+main:
+00000: 244  this
+00001: 244  getarg 0
+00004: 244  setprop "m_baseTouchPriority"
+00009: 244  pop
+00010: 245  this
+00011: 245  getprop "m_taskBtn"
+00016: 245  dup
+00017: 245  callprop "setTouchPriority"
+00022: 245  swap
+00023: 245  notearg
+00024: 245  this
+00025: 245  getprop "m_baseTouchPriority"
+00030: 245  one
+00031: 245  sub
+00032: 245  notearg
+00033: 245  call 1
+00036: 245  pop
+00037: 246  this
+00038: 246  getprop "m_taskIconBtn"
+00043: 246  dup
+00044: 246  callprop "setTouchPriority"
+00049: 246  swap
+00050: 246  notearg
+00051: 246  this
+00052: 246  getprop "m_baseTouchPriority"
+00057: 246  one
+00058: 246  sub
+00059: 246  notearg
+00060: 246  call 1
+00063: 246  pop
+00064: 246  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:243 ---
+;; function object[8] changeSceneWithTag
+;; function metadata object[8] nargs=1 bindings=5
+;; arg[0] tag
+;; local[0] intTag
+;; local[1] curHardMapId
+;; local[2] mapInfo
+;; local[3] m_bInHardChapter
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=1068 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:249 ---
+loc   line  op
+----- ----  --
+main:
+00000: 251  name "xs"
+00005: 251  getprop "Utils"
+00010: 251  dup
+00011: 251  callprop "parseIntSafe"
+00016: 251  swap
+00017: 251  notearg
+00018: 251  getarg 0
+00021: 251  notearg
+00022: 251  call 1
+00025: 251  setlocal 0
+00028: 251  pop
+00029: 253  name "xs"
+00034: 253  true
+00035: 253  setprop "isTaskGoScene"
+00040: 253  pop
+00041: 254  getlocal 0
+00044: 254  condswitch
+00045: 256  name "xs"
+00050: 256  getprop "Constant_SceneDef"
+00055: 256  getprop "ChaosScene"
+00060: 256  case 410 (+350)
+00065: 260  name "xs"
+00070: 260  getprop "Constant_SceneDef"
+00075: 260  getprop "LadderScene"
+00080: 260  case 448 (+368)
+00085: 264  name "xs"
+00090: 264  getprop "Constant_SceneDef"
+00095: 264  getprop "ClimbLadderScene"
+00100: 264  case 486 (+386)
+00105: 270  name "xs"
+00110: 270  getprop "Constant_SceneDef"
+00115: 270  getprop "TeamBuildScene"
+00120: 270  case 524 (+404)
+00125: 274  name "xs"
+00130: 274  getprop "Constant_SceneDef"
+00135: 274  getprop "AgaScene"
+00140: 274  case 562 (+422)
+00145: 278  name "xs"
+00150: 278  getprop "Constant_SceneDef"
+00155: 278  getprop "EquipmentScene"
+00160: 278  case 600 (+440)
+00165: 282  name "xs"
+00170: 282  getprop "Constant_SceneDef"
+00175: 282  getprop "SkillScene"
+00180: 282  case 638 (+458)
+00185: 286  name "xs"
+00190: 286  getprop "Constant_SceneDef"
+00195: 286  getprop "CombatScene"
+00200: 286  case 676 (+476)
+00205: 290  name "xs"
+00210: 290  getprop "Constant_SceneDef"
+00215: 290  getprop "BagScene"
+00220: 290  case 714 (+494)
+00225: 294  name "xs"
+00230: 294  getprop "Constant_SceneDef"
+00235: 294  getprop "MeridianScene"
+00240: 294  case 752 (+512)
+00245: 300  name "xs"
+00250: 300  getprop "Constant_SceneDef"
+00255: 300  getprop "FightChapters_nor"
+00260: 300  case 770 (+510)
+00265: 305  name "xs"
+00270: 305  getprop "Constant_SceneDef"
+00275: 305  getprop "FightChapters_hard"
+00280: 305  case 843 (+563)
+00285: 334  name "xs"
+00290: 334  getprop "Constant_SceneDef"
+00295: 334  getprop "PartyMenuScene"
+00300: 334  case 1158 (+858)
+00305: 338  name "xs"
+00310: 338  getprop "Constant_SceneDef"
+00315: 338  getprop "WishingScene"
+00320: 338  case 1196 (+876)
+00325: 344  name "xs"
+00330: 344  getprop "Constant_SceneDef"
+00335: 344  getprop "StoreScene_DuiJiu"
+00340: 344  case 1228 (+888)
+00345: 348  name "xs"
+00350: 348  getprop "Constant_SceneDef"
+00355: 348  getprop "StoreScene_DaoJu"
+00360: 348  case 1266 (+906)
+00365: 352  name "xs"
+00370: 352  getprop "Constant_SceneDef"
+00375: 352  getprop "StoreScene_LiBao"
+00380: 352  case 1317 (+937)
+00385: 358  name "xs"
+00390: 358  getprop "Constant_SceneDef"
+00395: 358  getprop "GuildDialog"
+00400: 358  case 1369 (+969)
+00405: 358  default 1407 (+1002)
+00410: 258  name "xs"
+00415: 258  getprop "Scene"
+00420: 258  getprop "Mgr"
+00425: 258  dup
+00426: 258  callprop "changeSceneByName"
+00431: 258  swap
+00432: 258  notearg
+00433: 258  string "ChaosScene"
+00438: 258  notearg
+00439: 258  call 1
+00442: 258  pop
+00443: 259  goto 1412 (+969)
+00448: 262  name "xs"
+00453: 262  getprop "Scene"
+00458: 262  getprop "Mgr"
+00463: 262  dup
+00464: 262  callprop "changeSceneByName"
+00469: 262  swap
+00470: 262  notearg
+00471: 262  string "LadderScene"
+00476: 262  notearg
+00477: 262  call 1
+00480: 262  pop
+00481: 263  goto 1412 (+931)
+00486: 266  name "xs"
+00491: 266  getprop "Scene"
+00496: 266  getprop "Mgr"
+00501: 266  dup
+00502: 266  callprop "changeSceneByName"
+00507: 266  swap
+00508: 266  notearg
+00509: 266  string "ClimbLadderScene"
+00514: 266  notearg
+00515: 266  call 1
+00518: 266  pop
+00519: 267  goto 1412 (+893)
+00524: 272  name "xs"
+00529: 272  getprop "Scene"
+00534: 272  getprop "Mgr"
+00539: 272  dup
+00540: 272  callprop "changeSceneByName"
+00545: 272  swap
+00546: 272  notearg
+00547: 272  string "TeamBuildScene"
+00552: 272  notearg
+00553: 272  call 1
+00556: 272  pop
+00557: 273  goto 1412 (+855)
+00562: 276  name "xs"
+00567: 276  getprop "Scene"
+00572: 276  getprop "Mgr"
+00577: 276  dup
+00578: 276  callprop "changeSceneByName"
+00583: 276  swap
+00584: 276  notearg
+00585: 276  string "AgaScene"
+00590: 276  notearg
+00591: 276  call 1
+00594: 276  pop
+00595: 277  goto 1412 (+817)
+00600: 280  name "xs"
+00605: 280  getprop "Scene"
+00610: 280  getprop "Mgr"
+00615: 280  dup
+00616: 280  callprop "changeSceneByName"
+00621: 280  swap
+00622: 280  notearg
+00623: 280  string "EquipmentScene"
+00628: 280  notearg
+00629: 280  call 1
+00632: 280  pop
+00633: 281  goto 1412 (+779)
+00638: 284  name "xs"
+00643: 284  getprop "Scene"
+00648: 284  getprop "Mgr"
+00653: 284  dup
+00654: 284  callprop "changeSceneByName"
+00659: 284  swap
+00660: 284  notearg
+00661: 284  string "SkillScene"
+00666: 284  notearg
+00667: 284  call 1
+00670: 284  pop
+00671: 285  goto 1412 (+741)
+00676: 288  name "xs"
+00681: 288  getprop "Scene"
+00686: 288  getprop "Mgr"
+00691: 288  dup
+00692: 288  callprop "changeSceneByName"
+00697: 288  swap
+00698: 288  notearg
+00699: 288  string "CombatScene"
+00704: 288  notearg
+00705: 288  call 1
+00708: 288  pop
+00709: 289  goto 1412 (+703)
+00714: 292  name "xs"
+00719: 292  getprop "Scene"
+00724: 292  getprop "Mgr"
+00729: 292  dup
+00730: 292  callprop "changeSceneByName"
+00735: 292  swap
+00736: 292  notearg
+00737: 292  string "BagScene"
+00742: 292  notearg
+00743: 292  call 1
+00746: 292  pop
+00747: 293  goto 1412 (+665)
+00752: 296  this
+00753: 296  dup
+00754: 296  callprop "goToMeridianScene"
+00759: 296  swap
+00760: 296  notearg
+00761: 296  call 0
+00764: 296  pop
+00765: 297  goto 1412 (+647)
+00770: 302  name "xs"
+00775: 302  getprop "Scene"
+00780: 302  getprop "Mgr"
+00785: 302  dup
+00786: 302  callprop "saveStatus"
+00791: 302  swap
+00792: 302  notearg
+00793: 302  string "m_bInHardChapter"
+00798: 302  notearg
+00799: 302  false
+00800: 302  notearg
+00801: 302  call 2
+00804: 302  pop
+00805: 303  name "xs"
+00810: 303  getprop "Scene"
+00815: 303  getprop "Mgr"
+00820: 303  dup
+00821: 303  callprop "changeSceneByName"
+00826: 303  swap
+00827: 303  notearg
+00828: 303  string "FightChapters"
+00833: 303  notearg
+00834: 303  call 1
+00837: 303  pop
+00838: 304  goto 1412 (+574)
+00843: 307  name "xs"
+00848: 307  getprop "Profile"
+00853: 307  getprop "GameData"
+00858: 307  getprop "Mgr"
+00863: 307  dup
+00864: 307  callprop "getInstance"
+00869: 307  swap
+00870: 307  notearg
+00871: 307  call 0
+00874: 307  getprop "Player"
+00879: 307  dup
+00880: 307  callprop "getPlayer"
+00885: 307  swap
+00886: 307  notearg
+00887: 307  call 0
+00890: 307  dup
+00891: 307  callprop "getPlayerEliteMapStep"
+00896: 307  swap
+00897: 307  notearg
+00898: 307  call 0
+00901: 307  setlocal 1
+00904: 307  pop
+00905: 308  name "xs"
+00910: 308  getprop "Profile"
+00915: 308  getprop "GameData"
+00920: 308  getprop "Mgr"
+00925: 308  dup
+00926: 308  callprop "getInstance"
+00931: 308  swap
+00932: 308  notearg
+00933: 308  call 0
+00936: 308  getprop "Map"
+00941: 308  dup
+00942: 308  callprop "getMapObjByMapId"
+00947: 308  swap
+00948: 308  notearg
+00949: 308  getlocal 1
+00952: 308  notearg
+00953: 308  call 1
+00956: 308  setlocal 2
+00959: 308  pop
+00960: 310  getlocal 2
+00963: 310  not
+00964: 310  ifeq 1085 (+121)
+00969: 311  true
+00970: 311  setlocal 3
+00973: 311  pop
+00974: 312  name "xs"
+00979: 312  getprop "Profile"
+00984: 312  getprop "GameData"
+00989: 312  getprop "Mgr"
+00994: 312  dup
+00995: 312  callprop "getInstance"
+01000: 312  swap
+01001: 312  notearg
+01002: 312  call 0
+01005: 312  getprop "Map"
+01010: 312  dup
+01011: 312  callprop "setCurMapId"
+01016: 312  swap
+01017: 312  notearg
+01018: 312  getlocal 1
+01021: 312  notearg
+01022: 312  getlocal 3
+01025: 312  notearg
+01026: 312  call 2
+01029: 312  pop
+01030: 314  name "xs"
+01035: 314  getprop "Tools"
+01040: 314  getprop "Net"
+01045: 314  dup
+01046: 314  callprop "requireChapterInfo"
+01051: 314  swap
+01052: 314  notearg
+01053: 315  newinit 1
+01058: 316  getlocal 1
+01061: 316  initprop "map_id"
+01066: 316  endinit
+01067: 316  notearg
+01068: 318  lambda (function () {
+    [sourceless code]
+})
+01073: 318  notearg
+01074: 324  this
+01075: 324  notearg
+01076: 324  call 3
+01079: 324  pop
+01080: 324  goto 1153 (+73)
+01085: 328  name "xs"
+01090: 328  getprop "Scene"
+01095: 328  getprop "Mgr"
+01100: 328  dup
+01101: 328  callprop "saveStatus"
+01106: 328  swap
+01107: 328  notearg
+01108: 328  string "m_bInHardChapter"
+01113: 328  notearg
+01114: 328  true
+01115: 328  notearg
+01116: 328  call 2
+01119: 328  pop
+01120: 329  name "xs"
+01125: 329  getprop "Scene"
+01130: 329  getprop "Mgr"
+01135: 329  dup
+01136: 329  callprop "changeSceneByName"
+01141: 329  swap
+01142: 329  notearg
+01143: 329  string "FightChapters"
+01148: 329  notearg
+01149: 329  call 1
+01152: 329  pop
+01153: 331  goto 1412 (+259)
+01158: 336  name "xs"
+01163: 336  getprop "Scene"
+01168: 336  getprop "Mgr"
+01173: 336  dup
+01174: 336  callprop "changeSceneByName"
+01179: 336  swap
+01180: 336  notearg
+01181: 336  string "PartyMenuScene"
+01186: 336  notearg
+01187: 336  call 1
+01190: 336  pop
+01191: 337  goto 1412 (+221)
+01196: 340  name "xs"
+01201: 340  getprop "Tools"
+01206: 340  getprop "Scene"
+01211: 340  dup
+01212: 340  callprop "gotoWishingScene"
+01217: 340  swap
+01218: 340  notearg
+01219: 340  call 0
+01222: 340  pop
+01223: 341  goto 1412 (+189)
+01228: 346  name "xs"
+01233: 346  getprop "Scene"
+01238: 346  getprop "Mgr"
+01243: 346  dup
+01244: 346  callprop "changeSceneByName"
+01249: 346  swap
+01250: 346  notearg
+01251: 346  string "StoreScene"
+01256: 346  notearg
+01257: 346  call 1
+01260: 346  pop
+01261: 347  goto 1412 (+151)
+01266: 350  name "xs"
+01271: 350  getprop "Scene"
+01276: 350  getprop "Mgr"
+01281: 350  dup
+01282: 350  callprop "changeSceneByName"
+01287: 350  swap
+01288: 350  notearg
+01289: 350  string "StoreScene"
+01294: 350  notearg
+01295: 350  newinit 1
+01300: 350  one
+01301: 350  initprop "pageIdx"
+01306: 350  endinit
+01307: 350  notearg
+01308: 350  call 2
+01311: 350  pop
+01312: 351  goto 1412 (+100)
+01317: 354  name "xs"
+01322: 354  getprop "Scene"
+01327: 354  getprop "Mgr"
+01332: 354  dup
+01333: 354  callprop "changeSceneByName"
+01338: 354  swap
+01339: 354  notearg
+01340: 354  string "StoreScene"
+01345: 354  notearg
+01346: 354  newinit 1
+01351: 354  int8 2
+01353: 354  initprop "pageIdx"
+01358: 354  endinit
+01359: 354  notearg
+01360: 354  call 2
+01363: 354  pop
+01364: 355  goto 1412 (+48)
+01369: 360  name "xs"
+01374: 360  getprop "Views"
+01379: 360  getprop "Mgr"
+01384: 360  dup
+01385: 360  callprop "showDialogByName"
+01390: 360  swap
+01391: 360  notearg
+01392: 360  string "GuildDialog"
+01397: 360  notearg
+01398: 360  call 1
+01401: 360  pop
+01402: 361  goto 1412 (+10)
+01407: 364  goto 1412 (+5)
+01412: 366  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:249 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] jsonObj
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:318 ---
+loc   line  op
+----- ----  --
+main:
+00000: 320  name "xs"
+00005: 320  getprop "Profile"
+00010: 320  getprop "GameData"
+00015: 320  getprop "Mgr"
+00020: 320  dup
+00021: 320  callprop "getInstance"
+00026: 320  swap
+00027: 320  notearg
+00028: 320  call 0
+00031: 320  getprop "Map"
+00036: 320  dup
+00037: 320  callprop "update"
+00042: 320  swap
+00043: 320  notearg
+00044: 320  getarg 0
+00047: 320  getprop "map_info"
+00052: 320  notearg
+00053: 320  call 1
+00056: 320  pop
+00057: 321  name "xs"
+00062: 321  getprop "Scene"
+00067: 321  getprop "Mgr"
+00072: 321  dup
+00073: 321  callprop "saveStatus"
+00078: 321  swap
+00079: 321  notearg
+00080: 321  string "m_bInHardChapter"
+00085: 321  notearg
+00086: 321  true
+00087: 321  notearg
+00088: 321  call 2
+00091: 321  pop
+00092: 322  name "xs"
+00097: 322  getprop "Scene"
+00102: 322  getprop "Mgr"
+00107: 322  dup
+00108: 322  callprop "changeSceneByName"
+00113: 322  swap
+00114: 322  notearg
+00115: 322  string "FightChapters"
+00120: 322  notearg
+00121: 322  call 1
+00124: 322  pop
+00125: 322  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:318 ---
+;; function object[9] goToMeridianScene
+;; function metadata object[9] nargs=0 bindings=3
+;; local[0] needLevel
+;; local[1] _level
+;; local[2] _data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:368 ---
+loc   line  op
+----- ----  --
+main:
+00000: 369  name "xs"
+00005: 369  getprop "Tools"
+00010: 369  getprop "CfgData"
+00015: 369  dup
+00016: 369  callprop "getGlobalConf"
+00021: 369  swap
+00022: 369  notearg
+00023: 369  string "MeridianConf"
+00028: 369  notearg
+00029: 369  call 1
+00032: 369  getprop "user_level"
+00037: 369  setlocal 0
+00040: 369  pop
+00041: 370  name "xs"
+00046: 370  getprop "Profile"
+00051: 370  getprop "GameData"
+00056: 370  getprop "Mgr"
+00061: 370  dup
+00062: 370  callprop "getInstance"
+00067: 370  swap
+00068: 370  notearg
+00069: 370  call 0
+00072: 370  getprop "Player"
+00077: 370  dup
+00078: 370  callprop "getPlayer"
+00083: 370  swap
+00084: 370  notearg
+00085: 370  call 0
+00088: 370  dup
+00089: 370  callprop "getPlayerLevel"
+00094: 370  swap
+00095: 370  notearg
+00096: 370  call 0
+00099: 370  setlocal 1
+00102: 370  pop
+00103: 371  getlocal 1
+00106: 371  getlocal 0
+00109: 371  lt
+00110: 371  ifeq 204 (+94)
+00115: 372  name "xs"
+00120: 372  getprop "Views"
+00125: 372  getprop "Mgr"
+00130: 372  dup
+00131: 372  callprop "showToast"
+00136: 372  swap
+00137: 372  notearg
+00138: 372  name "xs"
+00143: 372  getprop "Tools"
+00148: 372  getprop "String"
+00153: 372  dup
+00154: 372  callprop "createStringWithArgsArray"
+00159: 372  swap
+00160: 372  notearg
+00161: 372  string "auto_name_52"
+00166: 372  notearg
+00167: 372  newarray 1
+00171: 372  getlocal 0
+00174: 372  dup
+00175: 372  callprop "toString"
+00180: 372  swap
+00181: 372  notearg
+00182: 372  call 0
+00185: 372  initelem_array 0
+00189: 372  endinit
+00190: 372  notearg
+00191: 372  call 2
+00194: 372  notearg
+00195: 372  call 1
+00198: 372  pop
+00199: 372  goto 384 (+185)
+00204: 374  name "xs"
+00209: 374  getprop "Profile"
+00214: 374  getprop "GameData"
+00219: 374  getprop "Mgr"
+00224: 374  dup
+00225: 374  callprop "getInstance"
+00230: 374  swap
+00231: 374  notearg
+00232: 374  call 0
+00235: 374  getprop "MeridianTops"
+00240: 374  dup
+00241: 374  callprop "getAllMeridianTopModel"
+00246: 374  swap
+00247: 374  notearg
+00248: 374  call 0
+00251: 374  setlocal 2
+00254: 374  pop
+00255: 375  name "xs"
+00260: 375  getprop "Utils"
+00265: 375  dup
+00266: 375  callprop "isEmpty"
+00271: 375  swap
+00272: 375  notearg
+00273: 375  getlocal 2
+00276: 375  notearg
+00277: 375  call 1
+00280: 375  ifeq 347 (+67)
+00285: 376  name "xs"
+00290: 376  getprop "Views"
+00295: 376  getprop "Mgr"
+00300: 376  dup
+00301: 376  callprop "showToast"
+00306: 376  swap
+00307: 376  notearg
+00308: 376  name "xs"
+00313: 376  getprop "Tools"
+00318: 376  getprop "String"
+00323: 376  dup
+00324: 376  callprop "createString"
+00329: 376  swap
+00330: 376  notearg
+00331: 376  string "MeridiansMain_21"
+00336: 376  notearg
+00337: 376  call 1
+00340: 376  notearg
+00341: 376  call 1
+00344: 376  pop
+00345: 377  undefined
+00346: 377  return
+00347: 379  name "xs"
+00352: 379  getprop "Scene"
+00357: 379  getprop "Mgr"
+00362: 379  dup
+00363: 379  callprop "changeSceneByName"
+00368: 379  swap
+00369: 379  notearg
+00370: 379  string "MeridiansMainScene"
+00375: 379  notearg
+00376: 379  getlocal 2
+00379: 379  notearg
+00380: 379  call 2
+00383: 379  pop
+00384: 380  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:368 ---
+;; function object[10] create
+;; function metadata object[10] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:386 ---
+loc   line  op
+----- ----  --
+main:
+00000: 387  name "xs"
+00005: 387  getprop "Views"
+00010: 387  getprop "Table"
+00015: 387  getprop "Cell"
+00020: 387  getprop "TaskCell"
+00025: 387  undefined
+00026: 387  notearg
+00027: 387  new 0
+00030: 387  setlocal 0
+00033: 387  pop
+00034: 388  getlocal 0
+00037: 388  and 61 (+24)
+00042: 388  pop
+00043: 388  getlocal 0
+00046: 388  dup
+00047: 388  callprop "init"
+00052: 388  swap
+00053: 388  notearg
+00054: 388  getarg 0
+00057: 388  notearg
+00058: 388  call 1
+00061: 388  ifeq 70 (+9)
+00066: 389  getlocal 0
+00069: 389  return
+00070: 391  name "xs"
+00075: 391  dup
+00076: 391  callprop "assert"
+00081: 391  swap
+00082: 391  notearg
+00083: 391  false
+00084: 391  notearg
+00085: 391  string "xs.Views.TaskCell.create fail!"
+00090: 391  notearg
+00091: 391  getlocal 0
+00094: 391  notearg
+00095: 391  call 3
+00098: 391  pop
+00099: 392  null
+00100: 392  return
+00101: 392  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/TaskCell.js:386 ---

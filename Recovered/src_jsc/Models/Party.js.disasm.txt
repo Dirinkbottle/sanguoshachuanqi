@@ -1,0 +1,468 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/Party.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=88 object[0]
+;; FUNCTION-MAP kind=lambda offset=98 object[1]
+;; FUNCTION-MAP kind=lambda offset=108 object[2]
+;; FUNCTION-MAP kind=lambda offset=118 object[3]
+;; FUNCTION-MAP kind=lambda offset=128 object[4]
+;; FUNCTION-MAP kind=lambda offset=138 object[5]
+;; FUNCTION-MAP kind=lambda offset=148 object[6]
+;; FUNCTION-MAP kind=lambda offset=158 object[7]
+;; FUNCTION-MAP kind=lambda offset=194 object[8]
+;; FUNCTION-MAP kind=lambda offset=220 object[9]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Models"
+00010:   8  name "xs"
+00015:   8  getprop "Models"
+00020:   8  getprop "Base"
+00025:   8  dup
+00026:   8  callprop "extend"
+00031:   8  swap
+00032:   8  notearg
+00033:   8  newinit 1
+00038:  10  string "xs.Models.Party"
+00043:  10  initprop "name"
+00048:  12  name "xs"
+00053:  12  getprop "Debug"
+00058:  12  getprop "emptyFunc"
+00063:  12  initprop "dump"
+00068:  13  name "xs"
+00073:  13  getprop "Debug"
+00078:  13  getprop "emptyFunc"
+00083:  13  initprop "log"
+00088:  15  lambda (function () {
+    [sourceless code]
+})
+00093:  15  initprop "init"
+00098:  27  lambda (function () {
+    [sourceless code]
+})
+00103:  27  initprop "loadJson"
+00108:  48  lambda (function () {
+    [sourceless code]
+})
+00113:  48  initprop "getPartyEventNum"
+00118:  52  lambda (function () {
+    [sourceless code]
+})
+00123:  52  initprop "getPartyEventByIdx"
+00128:  56  lambda (function () {
+    [sourceless code]
+})
+00133:  56  initprop "removePartyByIdx"
+00138:  60  lambda (function () {
+    [sourceless code]
+})
+00143:  60  initprop "isStartTime"
+00148:  69  lambda (function () {
+    [sourceless code]
+})
+00153:  69  initprop "getContinueTime"
+00158:  73  lambda (function () {
+    [sourceless code]
+})
+00163:  73  initprop "adPresentTime"
+00168:  73  endinit
+00169:  73  notearg
+00170:  73  call 1
+00173:  73  setprop "Party"
+00178:  73  popv
+00179:  93  name "xs"
+00184:  93  getprop "Models"
+00189:  93  getprop "Party"
+00194:  93  lambda (function () {
+    [sourceless code]
+})
+00199:  93  setprop "create"
+00204:  93  popv
+00205: 102  name "xs"
+00210: 102  getprop "Models"
+00215: 102  getprop "Party"
+00220: 102  lambda (function () {
+    [sourceless code]
+})
+00225: 102  setprop "createWithJson"
+00230: 102  popv
+00231: 109  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  dup
+00002:  16  callprop "_super"
+00007:  16  swap
+00008:  16  notearg
+00009:  16  call 0
+00012:  16  pop
+00013:  22  this
+00014:  22  newarray 0
+00018:  22  endinit
+00019:  22  setprop "m_arrParty"
+00024:  22  pop
+00025:  24  true
+00026:  24  return
+00027:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:15 ---
+;; function object[1] loadJson
+;; function metadata object[1] nargs=1 bindings=3
+;; arg[0] arrayParty
+;; local[0] i
+;; local[1] _tmpPartyEvent
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  32  getarg 0
+00003:  32  ifeq 135 (+132)
+00008:  33  this
+00009:  33  newarray 0
+00013:  33  endinit
+00014:  33  setprop "m_arrParty"
+00019:  33  pop
+00020:  34  zero
+00021:  34  setlocal 0
+00024:  34  pop
+00025:  34  goto 117 (+92)
+00030:  35  loophead
+00031:  35  name "xs"
+00036:  35  getprop "Models"
+00041:  35  getprop "PartyEventBase"
+00046:  35  dup
+00047:  35  callprop "createWithJson"
+00052:  35  swap
+00053:  35  notearg
+00054:  35  getarg 0
+00057:  35  getlocal 0
+00060:  35  getelem
+00061:  35  notearg
+00062:  35  call 1
+00065:  35  setlocal 1
+00068:  35  pop
+00069:  36  this
+00070:  36  getprop "m_arrParty"
+00075:  36  getlocal 0
+00078:  36  getlocal 1
+00081:  36  setelem
+00082:  36  pop
+00083:  37  getlocal 1
+00086:  37  dup
+00087:  37  callprop "isReceiveAble"
+00092:  37  swap
+00093:  37  notearg
+00094:  37  call 0
+00097:  37  ifeq 102 (+5)
+00102:  34  localinc 11
+00105:  34  getlocal 0
+00108:  34  pos
+00109:  34  dup
+00110:  34  one
+00111:  34  add
+00112:  34  setlocal 0
+00115:  34  pop
+00116:  34  pop
+00117:  34  loopentry
+00118:  34  getlocal 0
+00121:  34  getarg 0
+00124:  34  length "length"
+00129:  34  lt
+00130:  34  ifne 30 (-100)
+00135:  43  this
+00136:  43  name "Date"
+00141:  43  undefined
+00142:  43  notearg
+00143:  43  new 0
+00146:  43  dup
+00147:  43  callprop "getTime"
+00152:  43  swap
+00153:  43  notearg
+00154:  43  call 0
+00157:  43  setprop "m_time_begin"
+00162:  43  pop
+00163:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:27 ---
+;; function object[2] getPartyEventNum
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:48 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  this
+00001:  49  getprop "m_arrParty"
+00006:  49  length "length"
+00011:  49  return
+00012:  49  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:48 ---
+;; function object[3] getPartyEventByIdx
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:52 ---
+loc   line  op
+----- ----  --
+main:
+00000:  53  this
+00001:  53  getprop "m_arrParty"
+00006:  53  getarg 0
+00009:  53  getelem
+00010:  53  return
+00011:  53  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:52 ---
+;; function object[4] removePartyByIdx
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  57  this
+00001:  57  getprop "m_arrParty"
+00006:  57  dup
+00007:  57  callprop "splice"
+00012:  57  swap
+00013:  57  notearg
+00014:  57  getarg 0
+00017:  57  notearg
+00018:  57  one
+00019:  57  notearg
+00020:  57  call 2
+00023:  57  pop
+00024:  57  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:56 ---
+;; function object[5] isStartTime
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  61  this
+00001:  61  getprop "m_arrParty"
+00006:  61  getarg 0
+00009:  61  getelem
+00010:  61  getprop "instance_interval"
+00015:  61  ifeq 52 (+37)
+00020:  62  this
+00021:  62  getprop "m_arrParty"
+00026:  62  getarg 0
+00029:  62  getelem
+00030:  62  getprop "instance_countdown"
+00035:  62  this
+00036:  62  getprop "m_arrParty"
+00041:  62  getarg 0
+00044:  62  getelem
+00045:  62  getprop "instance_interval"
+00050:  62  le
+00051:  62  return
+00052:  65  false
+00053:  65  return
+00054:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:60 ---
+;; function object[6] getContinueTime
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:69 ---
+loc   line  op
+----- ----  --
+main:
+00000:  70  this
+00001:  70  getprop "m_arrParty"
+00006:  70  getarg 0
+00009:  70  getelem
+00010:  70  getprop "instance_interval"
+00015:  70  return
+00016:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:69 ---
+;; function object[7] adPresentTime
+;; function metadata object[7] nargs=1 bindings=4
+;; arg[0] idx
+;; local[0] _time_now
+;; local[1] m_time
+;; local[2] _offset
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:73 ---
+loc   line  op
+----- ----  --
+main:
+00000:  74  name "Date"
+00005:  74  undefined
+00006:  74  notearg
+00007:  74  new 0
+00010:  74  dup
+00011:  74  callprop "getTime"
+00016:  74  swap
+00017:  74  notearg
+00018:  74  call 0
+00021:  74  setlocal 0
+00024:  74  pop
+00025:  77  this
+00026:  77  getprop "m_arrParty"
+00031:  77  getarg 0
+00034:  77  getelem
+00035:  77  getprop "instance_countdown"
+00040:  77  setlocal 1
+00043:  77  pop
+00044:  79  getlocal 0
+00047:  79  this
+00048:  79  getprop "m_time_begin"
+00053:  79  sub
+00054:  79  uint16 1000
+00057:  79  div
+00058:  79  setlocal 2
+00061:  79  pop
+00062:  81  name "xs"
+00067:  81  dup
+00068:  81  callprop "dump"
+00073:  81  swap
+00074:  81  notearg
+00075:  81  string "offsetTime"
+00080:  81  notearg
+00081:  81  getlocal 2
+00084:  81  notearg
+00085:  81  call 2
+00088:  81  pop
+00089:  82  name "xs"
+00094:  82  dup
+00095:  82  callprop "dump"
+00100:  82  swap
+00101:  82  notearg
+00102:  82  string "mTime"
+00107:  82  notearg
+00108:  82  getlocal 1
+00111:  82  notearg
+00112:  82  call 2
+00115:  82  pop
+00116:  83  getlocal 1
+00119:  83  name "Math"
+00124:  83  dup
+00125:  83  callprop "round"
+00130:  83  swap
+00131:  83  notearg
+00132:  83  getlocal 2
+00135:  83  notearg
+00136:  83  call 1
+00139:  83  sub
+00140:  83  setlocal 1
+00143:  83  pop
+00144:  84  name "xs"
+00149:  84  dup
+00150:  84  callprop "dump"
+00155:  84  swap
+00156:  84  notearg
+00157:  84  string "mTime"
+00162:  84  notearg
+00163:  84  getlocal 1
+00166:  84  notearg
+00167:  84  call 2
+00170:  84  pop
+00171:  85  getlocal 1
+00174:  85  zero
+00175:  85  gt
+00176:  85  ifeq 185 (+9)
+00181:  86  getlocal 1
+00184:  86  return
+00185:  88  zero
+00186:  88  return
+00187:  88  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:73 ---
+;; function object[8] create
+;; function metadata object[8] nargs=0 bindings=1
+;; local[0] item
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:93 ---
+loc   line  op
+----- ----  --
+main:
+00000:  94  name "xs"
+00005:  94  getprop "Models"
+00010:  94  getprop "Party"
+00015:  94  undefined
+00016:  94  notearg
+00017:  94  new 0
+00020:  94  setlocal 0
+00023:  94  pop
+00024:  95  getlocal 0
+00027:  95  and 47 (+20)
+00032:  95  pop
+00033:  95  getlocal 0
+00036:  95  dup
+00037:  95  callprop "init"
+00042:  95  swap
+00043:  95  notearg
+00044:  95  call 0
+00047:  95  ifeq 56 (+9)
+00052:  96  getlocal 0
+00055:  96  return
+00056:  98  null
+00057:  98  return
+00058:  98  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:93 ---
+;; function object[9] createWithJson
+;; function metadata object[9] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] item
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:102 ---
+loc   line  op
+----- ----  --
+main:
+00000: 103  name "xs"
+00005: 103  getprop "Models"
+00010: 103  getprop "Party"
+00015: 103  undefined
+00016: 103  notearg
+00017: 103  new 0
+00020: 103  setlocal 0
+00023: 103  pop
+00024: 104  getlocal 0
+00027: 104  and 47 (+20)
+00032: 104  pop
+00033: 104  getlocal 0
+00036: 104  dup
+00037: 104  callprop "init"
+00042: 104  swap
+00043: 104  notearg
+00044: 104  call 0
+00047: 104  ifeq 75 (+28)
+00052: 105  getlocal 0
+00055: 105  dup
+00056: 105  callprop "loadJson"
+00061: 105  swap
+00062: 105  notearg
+00063: 105  getarg 0
+00066: 105  notearg
+00067: 105  call 1
+00070: 105  pop
+00071: 106  getlocal 0
+00074: 106  return
+00075: 108  null
+00076: 108  return
+00077: 108  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Party.js:102 ---

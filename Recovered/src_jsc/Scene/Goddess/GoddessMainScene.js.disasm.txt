@@ -1,0 +1,426 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Goddess/GoddessMainScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=109 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Scene"
+00010:   4  name "cc"
+00015:   4  getprop "Scene"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  string "xs.Scene.GoddessMainScene"
+00038:   5  initprop "name"
+00043:   6  lambda (function () {
+    [sourceless code]
+})
+00048:   6  initprop "ctor"
+00053:  10  lambda (function () {
+    [sourceless code]
+})
+00058:  10  initprop "init"
+00063:  44  lambda (function () {
+    [sourceless code]
+})
+00068:  44  initprop "onEnter"
+00073:  47  lambda (function () {
+    [sourceless code]
+})
+00078:  47  initprop "onExit"
+00083:  47  endinit
+00084:  47  notearg
+00085:  47  call 1
+00088:  47  setprop "GoddessMainScene"
+00093:  47  popv
+00094:  51  name "xs"
+00099:  51  getprop "Scene"
+00104:  51  getprop "GoddessMainScene"
+00109:  51  lambda (function () {
+    [sourceless code]
+})
+00114:  51  setprop "create"
+00119:  51  popv
+00120:  61  name "xs"
+00125:  61  getprop "Scene"
+00130:  61  getprop "Mgr"
+00135:  61  dup
+00136:  61  callprop "registerScene"
+00141:  61  swap
+00142:  61  notearg
+00143:  61  string "GoddessMainScene"
+00148:  61  notearg
+00149:  61  newinit 1
+00154:  62  name "xs"
+00159:  62  getprop "Scene"
+00164:  62  getprop "GoddessMainScene"
+00169:  62  initprop "class"
+00174:  63  name "xs"
+00179:  63  getprop "Constant_SceneType_Cmn"
+00184:  63  initprop "type"
+00189:  64  newarray 2
+00193:  64  string "GemsScene"
+00198:  64  initelem_array 0
+00202:  64  string "ZuiduiMenuScene01"
+00207:  64  initelem_array 1
+00211:  64  endinit
+00212:  64  initprop "area"
+00217:  64  endinit
+00218:  64  notearg
+00219:  64  call 2
+00222:  64  popv
+00223:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "Scene"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=1
+;; local[0] visibleSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  15  name "xs"
+00025:  15  getprop "director"
+00030:  15  dup
+00031:  15  callprop "getVisibleSize"
+00036:  15  swap
+00037:  15  notearg
+00038:  15  call 0
+00041:  15  setlocal 0
+00044:  15  pop
+00045:  17  name "xs"
+00050:  17  getprop "Tools"
+00055:  17  getprop "UI"
+00060:  17  dup
+00061:  17  callprop "addBgByType"
+00066:  17  swap
+00067:  17  notearg
+00068:  17  this
+00069:  17  notearg
+00070:  17  name "xs"
+00075:  17  getprop "Constant_BgType_MeridiansMainView_Bg"
+00080:  17  notearg
+00081:  17  call 2
+00084:  17  pop
+00085:  20  this
+00086:  20  name "xs"
+00091:  20  getprop "Views"
+00096:  20  getprop "PlayerInfoBannerSimpleView"
+00101:  20  dup
+00102:  20  callprop "create"
+00107:  20  swap
+00108:  20  notearg
+00109:  20  call 0
+00112:  20  setprop "m_infoBar"
+00117:  20  pop
+00118:  21  this
+00119:  21  getprop "m_infoBar"
+00124:  21  dup
+00125:  21  callprop "setAnchorPoint"
+00130:  21  swap
+00131:  21  notearg
+00132:  21  name "cc"
+00137:  21  dup
+00138:  21  callprop "p"
+00143:  21  swap
+00144:  21  notearg
+00145:  21  zero
+00146:  21  notearg
+00147:  21  one
+00148:  21  notearg
+00149:  21  call 2
+00152:  21  notearg
+00153:  21  call 1
+00156:  21  pop
+00157:  22  name "xs"
+00162:  22  getprop "Utils"
+00167:  22  getprop "Node"
+00172:  22  dup
+00173:  22  callprop "attachNodes"
+00178:  22  swap
+00179:  22  notearg
+00180:  22  this
+00181:  22  notearg
+00182:  22  this
+00183:  22  getprop "m_infoBar"
+00188:  22  notearg
+00189:  22  newinit 1
+00194:  23  string "lt"
+00199:  23  initprop "desc"
+00204:  24  true
+00205:  24  initprop "sc"
+00210:  24  endinit
+00211:  24  notearg
+00212:  24  call 3
+00215:  24  pop
+00216:  28  this
+00217:  28  name "xs"
+00222:  28  getprop "Views"
+00227:  28  getprop "TablePage"
+00232:  28  dup
+00233:  28  callprop "create"
+00238:  28  swap
+00239:  28  notearg
+00240:  28  name "cc"
+00245:  28  dup
+00246:  28  callprop "size"
+00251:  28  swap
+00252:  28  notearg
+00253:  28  getlocal 0
+00256:  28  getprop "width"
+00261:  28  name "xs"
+00266:  28  getprop "Views"
+00271:  28  getprop "MainMenuView"
+00276:  28  getprop "Width"
+00281:  28  sub
+00282:  28  notearg
+00283:  28  getlocal 0
+00286:  28  getprop "height"
+00291:  28  int8 50
+00293:  28  sub
+00294:  28  notearg
+00295:  28  call 2
+00298:  28  notearg
+00299:  28  call 1
+00302:  28  setprop "m_pageView"
+00307:  28  pop
+00308:  29  this
+00309:  29  getprop "m_pageView"
+00314:  29  dup
+00315:  29  callprop "setBaseTouchPriority"
+00320:  29  swap
+00321:  29  notearg
+00322:  29  int8 -1
+00324:  29  notearg
+00325:  29  call 1
+00328:  29  pop
+00329:  30  this
+00330:  30  getprop "m_pageView"
+00335:  30  dup
+00336:  30  callprop "setListener"
+00341:  30  swap
+00342:  30  notearg
+00343:  30  this
+00344:  30  notearg
+00345:  30  call 1
+00348:  30  pop
+00349:  31  this
+00350:  31  getprop "m_pageView"
+00355:  31  dup
+00356:  31  callprop "addPageWhitConstruct"
+00361:  31  swap
+00362:  31  notearg
+00363:  31  name "xs"
+00368:  31  getprop "Tools"
+00373:  31  getprop "String"
+00378:  31  dup
+00379:  31  callprop "createString"
+00384:  31  swap
+00385:  31  notearg
+00386:  31  string "goddess_goddess"
+00391:  31  notearg
+00392:  31  call 1
+00395:  31  notearg
+00396:  31  name "xs"
+00401:  31  getprop "Views"
+00406:  31  getprop "GoddessMainView"
+00411:  31  notearg
+00412:  31  call 2
+00415:  31  pop
+00416:  32  name "xs"
+00421:  32  getprop "Utils"
+00426:  32  getprop "Node"
+00431:  32  dup
+00432:  32  callprop "attachNodes"
+00437:  32  swap
+00438:  32  notearg
+00439:  32  this
+00440:  32  notearg
+00441:  32  this
+00442:  32  getprop "m_pageView"
+00447:  32  notearg
+00448:  32  newinit 1
+00453:  33  string "lb"
+00458:  33  initprop "desc"
+00463:  34  true
+00464:  34  initprop "sc"
+00469:  34  endinit
+00470:  34  notearg
+00471:  34  call 3
+00474:  34  pop
+00475:  36  this
+00476:  36  getprop "m_pageView"
+00481:  36  dup
+00482:  36  callprop "setHintIcon"
+00487:  36  swap
+00488:  36  notearg
+00489:  36  newarray 1
+00493:  36  zero
+00494:  36  initelem_array 0
+00498:  36  endinit
+00499:  36  notearg
+00500:  36  newarray 1
+00504:  36  name "xs"
+00509:  36  getprop "Constant_HintType_Pvp_GoddessFight"
+00514:  36  initelem_array 0
+00518:  36  endinit
+00519:  36  notearg
+00520:  36  true
+00521:  36  notearg
+00522:  36  call 3
+00525:  36  pop
+00526:  39  this
+00527:  39  name "xs"
+00532:  39  getprop "Tools"
+00537:  39  getprop "UI"
+00542:  39  dup
+00543:  39  callprop "addShortcutBoard"
+00548:  39  swap
+00549:  39  notearg
+00550:  39  this
+00551:  39  notearg
+00552:  39  true
+00553:  39  notearg
+00554:  39  name "xs"
+00559:  39  getprop "Cfg"
+00564:  39  getprop "Scene"
+00569:  39  getprop "SkillScene"
+00574:  39  getprop "mainmenu"
+00579:  39  notearg
+00580:  39  call 3
+00583:  39  setprop "m_mainMenu"
+00588:  39  pop
+00589:  42  true
+00590:  42  return
+00591:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:10 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  this
+00001:  45  dup
+00002:  45  callprop "_super"
+00007:  45  swap
+00008:  45  notearg
+00009:  45  call 0
+00012:  45  pop
+00013:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:44 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:47 ---
+loc   line  op
+----- ----  --
+main:
+00000:  48  this
+00001:  48  dup
+00002:  48  callprop "_super"
+00007:  48  swap
+00008:  48  notearg
+00009:  48  call 0
+00012:  48  pop
+00013:  48  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:47 ---
+;; function object[4] create
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:51 ---
+loc   line  op
+----- ----  --
+main:
+00000:  53  name "xs"
+00005:  53  getprop "Scene"
+00010:  53  getprop "GoddessMainScene"
+00015:  53  undefined
+00016:  53  notearg
+00017:  53  new 0
+00020:  53  setlocal 0
+00023:  53  pop
+00024:  54  getlocal 0
+00027:  54  and 47 (+20)
+00032:  54  pop
+00033:  54  getlocal 0
+00036:  54  dup
+00037:  54  callprop "init"
+00042:  54  swap
+00043:  54  notearg
+00044:  54  call 0
+00047:  54  ifeq 56 (+9)
+00052:  55  getlocal 0
+00055:  55  return
+00056:  57  name "xs"
+00061:  57  dup
+00062:  57  callprop "assert"
+00067:  57  swap
+00068:  57  notearg
+00069:  57  false
+00070:  57  notearg
+00071:  57  string "xs.Scene.GoddessMainScene.create error!"
+00076:  57  notearg
+00077:  57  call 2
+00080:  57  pop
+00081:  58  null
+00082:  58  return
+00083:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Goddess/GoddessMainScene.js:51 ---

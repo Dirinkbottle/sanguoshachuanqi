@@ -1,0 +1,378 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/UnionWarBattleInfo.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=59 object[0]
+;; FUNCTION-MAP kind=lambda offset=69 object[1]
+;; FUNCTION-MAP kind=lambda offset=79 object[2]
+;; FUNCTION-MAP kind=lambda offset=89 object[3]
+;; FUNCTION-MAP kind=lambda offset=99 object[4]
+;; FUNCTION-MAP kind=lambda offset=109 object[5]
+;; FUNCTION-MAP kind=lambda offset=119 object[6]
+;; FUNCTION-MAP kind=lambda offset=129 object[7]
+;; FUNCTION-MAP kind=lambda offset=165 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Models"
+00010:   5  name "xs"
+00015:   5  getprop "Models"
+00020:   5  getprop "Base"
+00025:   5  dup
+00026:   5  callprop "extend"
+00031:   5  swap
+00032:   5  notearg
+00033:   5  newinit 1
+00038:   7  string "xs.Models.UnionWarBattleInfo"
+00043:   7  initprop "name"
+00048:   9  newinit 1
+00053:   9  endinit
+00054:   9  initprop "Cfg"
+00059:  13  lambda (function () {
+    [sourceless code]
+})
+00064:  13  initprop "init"
+00069:  28  lambda (function () {
+    [sourceless code]
+})
+00074:  28  initprop "loadConfig"
+00079:  45  lambda (function () {
+    [sourceless code]
+})
+00084:  45  initprop "getBattleId"
+00089:  49  lambda (function () {
+    [sourceless code]
+})
+00094:  49  initprop "getBattleTitle"
+00099:  53  lambda (function () {
+    [sourceless code]
+})
+00104:  53  initprop "getBattleDesc"
+00109:  57  lambda (function () {
+    [sourceless code]
+})
+00114:  57  initprop "getBattleIntegral"
+00119:  61  lambda (function () {
+    [sourceless code]
+})
+00124:  61  initprop "getBattleMaxMemberNum"
+00129:  65  lambda (function () {
+    [sourceless code]
+})
+00134:  65  initprop "getBattleSort"
+00139:  65  endinit
+00140:  65  notearg
+00141:  65  call 1
+00144:  65  setprop "UnionWarBattleInfo"
+00149:  65  popv
+00150:  70  name "xs"
+00155:  70  getprop "Models"
+00160:  70  getprop "UnionWarBattleInfo"
+00165:  70  lambda (function () {
+    [sourceless code]
+})
+00170:  70  setprop "createWithBattleId"
+00175:  70  popv
+00176:  80  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  this
+00001:  15  dup
+00002:  15  callprop "_super"
+00007:  15  swap
+00008:  15  notearg
+00009:  15  call 0
+00012:  15  pop
+00013:  17  this
+00014:  17  zero
+00015:  17  setprop "battle_id"
+00020:  17  pop
+00021:  18  this
+00022:  18  null
+00023:  18  setprop "battle_title"
+00028:  18  pop
+00029:  19  this
+00030:  19  null
+00031:  19  setprop "battle_desc"
+00036:  19  pop
+00037:  20  this
+00038:  20  zero
+00039:  20  setprop "battle_integral"
+00044:  20  pop
+00045:  21  this
+00046:  21  zero
+00047:  21  setprop "battle_number"
+00052:  21  pop
+00053:  22  this
+00054:  22  zero
+00055:  22  setprop "battle_sort"
+00060:  22  pop
+00061:  24  true
+00062:  24  return
+00063:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:13 ---
+;; function object[1] loadConfig
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] battleId
+;; local[0] _dataObj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  name "xs"
+00005:  29  getprop "Tools"
+00010:  29  getprop "CfgData"
+00015:  29  dup
+00016:  29  callprop "readRecordByTypeAndKey"
+00021:  29  swap
+00022:  29  notearg
+00023:  30  name "xs"
+00028:  30  getprop "Constant_CfgDataType_UnionWar_Battle"
+00033:  30  notearg
+00034:  31  name "xs"
+00039:  31  getprop "Utils"
+00044:  31  dup
+00045:  31  callprop "parseStringSafe"
+00050:  31  swap
+00051:  31  notearg
+00052:  31  getarg 0
+00055:  31  notearg
+00056:  31  call 1
+00059:  31  notearg
+00060:  31  call 2
+00063:  31  setlocal 0
+00066:  31  pop
+00067:  34  this
+00068:  34  name "xs"
+00073:  34  getprop "Utils"
+00078:  34  dup
+00079:  34  callprop "parseIntSafe"
+00084:  34  swap
+00085:  34  notearg
+00086:  34  getlocal 0
+00089:  34  getprop "battle_id"
+00094:  34  notearg
+00095:  34  call 1
+00098:  34  setprop "battle_id"
+00103:  34  pop
+00104:  35  this
+00105:  35  name "xs"
+00110:  35  getprop "Utils"
+00115:  35  dup
+00116:  35  callprop "parseStringSafe"
+00121:  35  swap
+00122:  35  notearg
+00123:  35  getlocal 0
+00126:  35  getprop "battle_title"
+00131:  35  notearg
+00132:  35  call 1
+00135:  35  setprop "battle_title"
+00140:  35  pop
+00141:  36  this
+00142:  36  name "xs"
+00147:  36  getprop "Utils"
+00152:  36  dup
+00153:  36  callprop "parseStringSafe"
+00158:  36  swap
+00159:  36  notearg
+00160:  36  getlocal 0
+00163:  36  getprop "battle_desc"
+00168:  36  notearg
+00169:  36  call 1
+00172:  36  setprop "battle_desc"
+00177:  36  pop
+00178:  37  this
+00179:  37  name "xs"
+00184:  37  getprop "Utils"
+00189:  37  dup
+00190:  37  callprop "parseIntSafe"
+00195:  37  swap
+00196:  37  notearg
+00197:  37  getlocal 0
+00200:  37  getprop "battle_integral"
+00205:  37  notearg
+00206:  37  call 1
+00209:  37  setprop "battle_integral"
+00214:  37  pop
+00215:  38  this
+00216:  38  name "xs"
+00221:  38  getprop "Utils"
+00226:  38  dup
+00227:  38  callprop "parseIntSafe"
+00232:  38  swap
+00233:  38  notearg
+00234:  38  getlocal 0
+00237:  38  getprop "battle_number"
+00242:  38  notearg
+00243:  38  call 1
+00246:  38  setprop "battle_number"
+00251:  38  pop
+00252:  39  this
+00253:  39  name "xs"
+00258:  39  getprop "Utils"
+00263:  39  dup
+00264:  39  callprop "parseIntSafe"
+00269:  39  swap
+00270:  39  notearg
+00271:  39  getlocal 0
+00274:  39  getprop "battle_sort"
+00279:  39  notearg
+00280:  39  call 1
+00283:  39  setprop "battle_sort"
+00288:  39  pop
+00289:  41  this
+00290:  41  dup
+00291:  41  callprop "clearCache"
+00296:  41  swap
+00297:  41  notearg
+00298:  41  call 0
+00301:  41  pop
+00302:  42  true
+00303:  42  return
+00304:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:28 ---
+;; function object[2] getBattleId
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  this
+00001:  46  getprop "battle_id"
+00006:  46  return
+00007:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:45 ---
+;; function object[3] getBattleTitle
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  this
+00001:  50  getprop "battle_title"
+00006:  50  return
+00007:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:49 ---
+;; function object[4] getBattleDesc
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:53 ---
+loc   line  op
+----- ----  --
+main:
+00000:  54  this
+00001:  54  getprop "battle_desc"
+00006:  54  return
+00007:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:53 ---
+;; function object[5] getBattleIntegral
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:57 ---
+loc   line  op
+----- ----  --
+main:
+00000:  58  this
+00001:  58  getprop "battle_integral"
+00006:  58  return
+00007:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:57 ---
+;; function object[6] getBattleMaxMemberNum
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:61 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  this
+00001:  62  getprop "battle_number"
+00006:  62  return
+00007:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:61 ---
+;; function object[7] getBattleSort
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:65 ---
+loc   line  op
+----- ----  --
+main:
+00000:  66  this
+00001:  66  getprop "battle_sort"
+00006:  66  return
+00007:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:65 ---
+;; function object[8] createWithBattleId
+;; function metadata object[8] nargs=1 bindings=2
+;; arg[0] battleId
+;; local[0] battleInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:70 ---
+loc   line  op
+----- ----  --
+main:
+00000:  72  name "xs"
+00005:  72  getprop "Models"
+00010:  72  getprop "UnionWarBattleInfo"
+00015:  72  undefined
+00016:  72  notearg
+00017:  72  new 0
+00020:  72  setlocal 0
+00023:  72  pop
+00024:  74  getlocal 0
+00027:  74  and 47 (+20)
+00032:  74  pop
+00033:  74  getlocal 0
+00036:  74  dup
+00037:  74  callprop "init"
+00042:  74  swap
+00043:  74  notearg
+00044:  74  call 0
+00047:  74  ifeq 75 (+28)
+00052:  75  getlocal 0
+00055:  75  dup
+00056:  75  callprop "loadConfig"
+00061:  75  swap
+00062:  75  notearg
+00063:  75  getarg 0
+00066:  75  notearg
+00067:  75  call 1
+00070:  75  pop
+00071:  76  getlocal 0
+00074:  76  return
+00075:  78  name "xs"
+00080:  78  dup
+00081:  78  callprop "assert"
+00086:  78  swap
+00087:  78  notearg
+00088:  78  false
+00089:  78  notearg
+00090:  78  string "xs.Models.UnionWarBattleInfo.createWithJson failed"
+00095:  78  notearg
+00096:  78  call 2
+00099:  78  pop
+00100:  79  null
+00101:  79  return
+00102:  79  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/UnionWarBattleInfo.js:70 ---

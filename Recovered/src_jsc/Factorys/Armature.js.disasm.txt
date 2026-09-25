@@ -1,0 +1,1193 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Factorys/Armature.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=95 object[0]
+;; FUNCTION-MAP kind=lambda offset=105 object[1]
+;; FUNCTION-MAP kind=lambda offset=115 object[2]
+;; FUNCTION-MAP kind=lambda offset=125 object[3]
+;; FUNCTION-MAP kind=lambda offset=135 object[4]
+;; FUNCTION-MAP kind=lambda offset=145 object[5]
+;; FUNCTION-MAP kind=lambda offset=155 object[6]
+;; FUNCTION-MAP kind=lambda offset=165 object[7]
+;; FUNCTION-MAP kind=lambda offset=187 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Factorys"
+00010:   8  newinit 1
+00015:  10  name "xs"
+00020:  10  getprop "Debug"
+00025:  10  getprop "emptyFunc"
+00030:  10  initprop "log"
+00035:  11  name "xs"
+00040:  11  getprop "Debug"
+00045:  11  getprop "emptyFunc"
+00050:  11  initprop "dump"
+00055:  13  string "cs1/armature/"
+00060:  13  initprop "jsonPath"
+00065:  15  string ".ExportJson"
+00070:  15  initprop "jsonExt"
+00075:  17  string ""
+00080:  17  initprop "texPath"
+00085:  19  string "xs.Factorys.Armature"
+00090:  19  initprop "name"
+00095:  28  lambda (function () {
+    [sourceless code]
+})
+00100:  28  initprop "loadArmatureFileInfoById"
+00105:  81  lambda (function () {
+    [sourceless code]
+})
+00110:  81  initprop "unloadArmatureFileInfos"
+00115: 122  lambda (function () {
+    [sourceless code]
+})
+00120: 122  initprop "_getArmCfg"
+00125: 132  lambda (function () {
+    [sourceless code]
+})
+00130: 132  initprop "create"
+00135: 153  lambda (function () {
+    [sourceless code]
+})
+00140: 153  initprop "playByAnimationId"
+00145: 179  lambda (function () {
+    [sourceless code]
+})
+00150: 179  initprop "createPlayActions"
+00155: 300  lambda (function () {
+    [sourceless code]
+})
+00160: 300  initprop "callFunc_frameEvent"
+00165: 325  lambda (function () {
+    [sourceless code]
+})
+00170: 325  initprop "callFunc_movementEvent"
+00175: 325  endinit
+00176: 325  setprop "Armature"
+00181: 325  popv
+00182: 339  bindname "callFunc_frameEvent"
+00187: 339  lambda (function () {
+    [sourceless code]
+})
+00192: 339  setname "callFunc_frameEvent"
+00197: 339  popv
+00198: 359  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:1 ---
+;; function object[0] loadArmatureFileInfoById
+;; function metadata object[0] nargs=1 bindings=8
+;; arg[0] armId
+;; local[0] _armCfg
+;; local[1] _plist
+;; local[2] _fileName
+;; local[3] i
+;; local[4] _prefix
+;; local[5] _plistFile
+;; local[6] _pngFile
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  this
+00001:  31  getprop "m_cacheArm"
+00006:  31  not
+00007:  31  ifeq 25 (+18)
+00012:  32  this
+00013:  32  newinit 1
+00018:  32  endinit
+00019:  32  setprop "m_cacheArm"
+00024:  32  pop
+00025:  37  this
+00026:  37  getprop "m_cacheArm"
+00031:  37  getarg 0
+00034:  37  getelem
+00035:  37  zero
+00036:  37  ge
+00037:  37  ifeq 72 (+35)
+00042:  40  this
+00043:  40  dup
+00044:  40  callprop "log"
+00049:  40  swap
+00050:  40  notearg
+00051:  40  string "loadArmatureFileInfoById ignore "
+00056:  40  getarg 0
+00059:  40  add
+00060:  40  notearg
+00061:  40  call 1
+00064:  40  pop
+00065:  41  undefined
+00066:  41  return
+00067:  41  goto 113 (+46)
+00072:  45  this
+00073:  45  getprop "m_cacheArm"
+00078:  45  getarg 0
+00081:  45  one
+00082:  45  setelem
+00083:  45  pop
+00084:  46  this
+00085:  46  dup
+00086:  46  callprop "log"
+00091:  46  swap
+00092:  46  notearg
+00093:  46  string "xs.Factorys.Armature"
+00098:  46  notearg
+00099:  46  string "loadArmatureFileInfoById load "
+00104:  46  getarg 0
+00107:  46  add
+00108:  46  notearg
+00109:  46  call 2
+00112:  46  pop
+00113:  49  this
+00114:  49  dup
+00115:  49  callprop "_getArmCfg"
+00120:  49  swap
+00121:  49  notearg
+00122:  49  getarg 0
+00125:  49  notearg
+00126:  49  call 1
+00129:  49  setlocal 0
+00132:  49  pop
+00133:  54  getlocal 0
+00136:  54  getprop "plists"
+00141:  54  or 152 (+11)
+00146:  54  pop
+00147:  54  newarray 0
+00151:  54  endinit
+00152:  54  setlocal 1
+00155:  54  pop
+00156:  56  this
+00157:  56  getprop "jsonPath"
+00162:  56  getlocal 0
+00165:  56  getprop "name"
+00170:  56  add
+00171:  56  this
+00172:  56  getprop "jsonExt"
+00177:  56  add
+00178:  56  setlocal 2
+00181:  56  pop
+00182:  58  getlocal 1
+00185:  58  length "length"
+00190:  58  zero
+00191:  58  stricteq
+00192:  58  ifeq 251 (+59)
+00197:  59  name "cc"
+00202:  59  getprop "ArmatureDataManager"
+00207:  59  dup
+00208:  59  callprop "getInstance"
+00213:  59  swap
+00214:  59  notearg
+00215:  59  call 0
+00218:  59  dup
+00219:  59  callprop "addArmatureFileInfo"
+00224:  59  swap
+00225:  59  notearg
+00226:  60  string ""
+00231:  60  notearg
+00232:  61  string ""
+00237:  61  notearg
+00238:  62  getlocal 2
+00241:  62  notearg
+00242:  62  call 3
+00245:  62  pop
+00246:  62  goto 384 (+138)
+00251:  66  zero
+00252:  66  setlocal 3
+00255:  66  pop
+00256:  66  goto 366 (+110)
+00261:  68  loophead
+00262:  68  this
+00263:  68  getprop "texPath"
+00268:  68  getlocal 1
+00271:  68  getlocal 3
+00274:  68  getelem
+00275:  68  add
+00276:  68  setlocal 4
+00279:  68  pop
+00280:  69  getlocal 4
+00283:  69  string ".plist"
+00288:  69  add
+00289:  69  setlocal 5
+00292:  69  pop
+00293:  70  getlocal 4
+00296:  70  string ".png"
+00301:  70  add
+00302:  70  setlocal 6
+00305:  70  pop
+00306:  72  name "cc"
+00311:  72  getprop "ArmatureDataManager"
+00316:  72  dup
+00317:  72  callprop "getInstance"
+00322:  72  swap
+00323:  72  notearg
+00324:  72  call 0
+00327:  72  dup
+00328:  72  callprop "addArmatureFileInfo"
+00333:  72  swap
+00334:  72  notearg
+00335:  73  getlocal 6
+00338:  73  notearg
+00339:  74  getlocal 5
+00342:  74  notearg
+00343:  75  getlocal 2
+00346:  75  notearg
+00347:  75  call 3
+00350:  75  pop
+00351:  66  localinc 11
+00354:  66  getlocal 3
+00357:  66  pos
+00358:  66  dup
+00359:  66  one
+00360:  66  add
+00361:  66  setlocal 3
+00364:  66  pop
+00365:  66  pop
+00366:  66  loopentry
+00367:  66  getlocal 3
+00370:  66  getlocal 1
+00373:  66  length "length"
+00378:  66  lt
+00379:  66  ifne 261 (-118)
+00384:  78  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:28 ---
+;; function object[1] unloadArmatureFileInfos
+;; function metadata object[1] nargs=0 bindings=6
+;; local[0] tmp
+;; local[1] _armCfg
+;; local[2] _plist
+;; local[3] i
+;; local[4] _prefix
+;; local[5] _plistFile
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=38 length=283 stackDepth=1 target=321
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:81 ---
+loc   line  op
+----- ----  --
+main:
+00000:  83  this
+00001:  83  getprop "m_cacheArm"
+00006:  83  not
+00007:  83  ifeq 25 (+18)
+00012:  84  this
+00013:  84  newinit 1
+00018:  84  endinit
+00019:  84  setprop "m_cacheArm"
+00024:  84  pop
+00025:  87  this
+00026:  87  getprop "m_cacheArm"
+00031:  87  iter 1
+00033:  87  goto 314 (+281)
+00038:  87  loophead
+00039:  87  iternext
+00040:  87  setlocal 0
+00043:  87  pop
+00044:  88  this
+00045:  88  getprop "m_cacheArm"
+00050:  88  dup
+00051:  88  callprop "hasOwnProperty"
+00056:  88  swap
+00057:  88  notearg
+00058:  88  getlocal 0
+00061:  88  notearg
+00062:  88  call 1
+00065:  88  ifeq 314 (+249)
+00070:  91  this
+00071:  91  dup
+00072:  91  callprop "log"
+00077:  91  swap
+00078:  91  notearg
+00079:  91  string "xs.Factorys.Armature"
+00084:  91  notearg
+00085:  91  string "unloadArmatureFileInfoById remove "
+00090:  91  getlocal 0
+00093:  91  add
+00094:  91  notearg
+00095:  91  call 2
+00098:  91  pop
+00099:  93  name "cc"
+00104:  93  getprop "ArmatureDataManager"
+00109:  93  dup
+00110:  93  callprop "getInstance"
+00115:  93  swap
+00116:  93  notearg
+00117:  93  call 0
+00120:  93  dup
+00121:  93  callprop "removeArmatureFileInfo"
+00126:  93  swap
+00127:  93  notearg
+00128:  93  getlocal 0
+00131:  93  notearg
+00132:  93  call 1
+00135:  93  pop
+00136:  95  this
+00137:  95  dup
+00138:  95  callprop "_getArmCfg"
+00143:  95  swap
+00144:  95  notearg
+00145:  95  getlocal 0
+00148:  95  notearg
+00149:  95  call 1
+00152:  95  setlocal 1
+00155:  95  pop
+00156: 100  getlocal 1
+00159: 100  getprop "plists"
+00164: 100  or 175 (+11)
+00169: 100  pop
+00170: 100  newarray 0
+00174: 100  endinit
+00175: 100  setlocal 2
+00178: 100  pop
+00179: 102  this
+00180: 102  dup
+00181: 102  callprop "dump"
+00186: 102  swap
+00187: 102  notearg
+00188: 102  string "_plist1111"
+00193: 102  notearg
+00194: 102  getlocal 2
+00197: 102  notearg
+00198: 102  call 2
+00201: 102  pop
+00202: 106  zero
+00203: 106  setlocal 3
+00206: 106  pop
+00207: 106  goto 296 (+89)
+00212: 107  loophead
+00213: 107  this
+00214: 107  getprop "texPath"
+00219: 107  getlocal 2
+00222: 107  getlocal 3
+00225: 107  getelem
+00226: 107  add
+00227: 107  setlocal 4
+00230: 107  pop
+00231: 108  getlocal 4
+00234: 108  string ".plist"
+00239: 108  add
+00240: 108  setlocal 5
+00243: 108  pop
+00244: 114  name "cc"
+00249: 114  getprop "SpriteFrameCache"
+00254: 114  dup
+00255: 114  callprop "getInstance"
+00260: 114  swap
+00261: 114  notearg
+00262: 114  call 0
+00265: 114  dup
+00266: 114  callprop "removeSpriteFramesFromFile"
+00271: 114  swap
+00272: 114  notearg
+00273: 114  getlocal 5
+00276: 114  notearg
+00277: 114  call 1
+00280: 114  pop
+00281: 106  localinc 11
+00284: 106  getlocal 3
+00287: 106  pos
+00288: 106  dup
+00289: 106  one
+00290: 106  add
+00291: 106  setlocal 3
+00294: 106  pop
+00295: 106  pop
+00296: 106  loopentry
+00297: 106  getlocal 3
+00300: 106  getlocal 2
+00303: 106  length "length"
+00308: 106  lt
+00309: 106  ifne 212 (-97)
+00314: 106  loopentry
+00315: 106  moreiter
+00316: 106  ifne 38 (-278)
+00321: 106  enditer
+00322: 119  this
+00323: 119  newinit 1
+00328: 119  endinit
+00329: 119  setprop "m_cacheArm"
+00334: 119  pop
+00335: 119  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:81 ---
+;; function object[2] _getArmCfg
+;; function metadata object[2] nargs=1 bindings=2
+;; arg[0] armId
+;; local[0] _armInfo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:122 ---
+loc   line  op
+----- ----  --
+main:
+00000: 124  name "xs"
+00005: 124  getprop "Cfg"
+00010: 124  getprop "Armature"
+00015: 124  getarg 0
+00018: 124  getelem
+00019: 124  setlocal 0
+00022: 124  pop
+00023: 126  this
+00024: 126  dup
+00025: 126  callprop "assert"
+00030: 126  swap
+00031: 126  notearg
+00032: 126  getlocal 0
+00035: 126  notearg
+00036: 126  string "need armId"
+00041: 126  notearg
+00042: 126  call 2
+00045: 126  pop
+00046: 128  getlocal 0
+00049: 128  return
+00050: 128  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:122 ---
+;; function object[3] create
+;; function metadata object[3] nargs=1 bindings=3
+;; arg[0] armatureId
+;; local[0] _info
+;; local[1] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:132 ---
+loc   line  op
+----- ----  --
+main:
+00000: 135  this
+00001: 135  dup
+00002: 135  callprop "log"
+00007: 135  swap
+00008: 135  notearg
+00009: 135  string "Armature/create"
+00014: 135  notearg
+00015: 135  string "begin"
+00020: 135  notearg
+00021: 135  call 2
+00024: 135  pop
+00025: 137  name "xs"
+00030: 137  getprop "Cfg"
+00035: 137  getprop "Armature"
+00040: 137  getarg 0
+00043: 137  getelem
+00044: 137  setlocal 0
+00047: 137  pop
+00048: 139  name "xs"
+00053: 139  dup
+00054: 139  callprop "assert"
+00059: 139  swap
+00060: 139  notearg
+00061: 139  getlocal 0
+00064: 139  notearg
+00065: 139  string " armatureId not exist"
+00070: 139  notearg
+00071: 139  getarg 0
+00074: 139  notearg
+00075: 139  call 3
+00078: 139  pop
+00079: 141  name "xs"
+00084: 141  getprop "Factorys"
+00089: 141  getprop "Armature"
+00094: 141  dup
+00095: 141  callprop "loadArmatureFileInfoById"
+00100: 141  swap
+00101: 141  notearg
+00102: 141  getarg 0
+00105: 141  notearg
+00106: 141  call 1
+00109: 141  pop
+00110: 144  getlocal 1
+00113: 144  pop
+00114: 146  name "cc"
+00119: 146  getprop "Armature"
+00124: 146  dup
+00125: 146  callprop "create"
+00130: 146  swap
+00131: 146  notearg
+00132: 146  getlocal 0
+00135: 146  getprop "name"
+00140: 146  notearg
+00141: 146  call 1
+00144: 146  setlocal 1
+00147: 146  pop
+00148: 148  this
+00149: 148  dup
+00150: 148  callprop "log"
+00155: 148  swap
+00156: 148  notearg
+00157: 148  string "Armature/create"
+00162: 148  notearg
+00163: 148  string "end"
+00168: 148  notearg
+00169: 148  call 2
+00172: 148  pop
+00173: 150  getlocal 1
+00176: 150  return
+00177: 150  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:132 ---
+;; function object[4] playByAnimationId
+;; function metadata object[4] nargs=4 bindings=10
+;; arg[0] armature
+;; arg[1] armatureId
+;; arg[2] animationId
+;; arg[3] control
+;; local[0] _armInfo
+;; local[1] _aniInfo
+;; local[2] _loop
+;; local[3] _speed
+;; local[4] _animation
+;; local[5] _durationTo
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:153 ---
+loc   line  op
+----- ----  --
+main:
+00000: 155  this
+00001: 155  dup
+00002: 155  callprop "log"
+00007: 155  swap
+00008: 155  notearg
+00009: 155  string "playByAnimationId"
+00014: 155  notearg
+00015: 155  string "begin"
+00020: 155  notearg
+00021: 155  call 2
+00024: 155  pop
+00025: 157  name "xs"
+00030: 157  getprop "Cfg"
+00035: 157  getprop "Armature"
+00040: 157  getarg 1
+00043: 157  getelem
+00044: 157  setlocal 0
+00047: 157  pop
+00048: 159  getlocal 0
+00051: 159  getprop "animations"
+00056: 159  getarg 2
+00059: 159  getelem
+00060: 159  setlocal 1
+00063: 159  pop
+00064: 161  getarg 3
+00067: 161  getprop "loop"
+00072: 161  true
+00073: 161  stricteq
+00074: 161  ifeq 85 (+11)
+00079: 161  one
+00080: 161  goto 86 (+6)
+00085: 161  zero
+00086: 161  setlocal 2
+00089: 161  pop
+00090: 163  getarg 3
+00093: 163  getprop "speed"
+00098: 163  or 105 (+7)
+00103: 163  pop
+00104: 163  one
+00105: 163  setlocal 3
+00108: 163  pop
+00109: 165  getarg 0
+00112: 165  dup
+00113: 165  callprop "getAnimation"
+00118: 165  swap
+00119: 165  notearg
+00120: 165  call 0
+00123: 165  setlocal 4
+00126: 165  pop
+00127: 167  getlocal 4
+00130: 167  dup
+00131: 167  callprop "setSpeedScale"
+00136: 167  swap
+00137: 167  notearg
+00138: 167  name "xs"
+00143: 167  getprop "ani_scale"
+00148: 167  getlocal 3
+00151: 167  div
+00152: 167  notearg
+00153: 167  call 1
+00156: 167  pop
+00157: 171  int8 -1
+00159: 171  setlocal 5
+00162: 171  pop
+00163: 173  getlocal 4
+00166: 173  dup
+00167: 173  callprop "play"
+00172: 173  swap
+00173: 173  notearg
+00174: 173  getlocal 1
+00177: 173  getprop "name"
+00182: 173  notearg
+00183: 173  getlocal 5
+00186: 173  notearg
+00187: 173  int8 -1
+00189: 173  notearg
+00190: 173  getlocal 2
+00193: 173  notearg
+00194: 173  call 4
+00197: 173  pop
+00198: 176  this
+00199: 176  dup
+00200: 176  callprop "log"
+00205: 176  swap
+00206: 176  notearg
+00207: 176  string "playByAnimationId"
+00212: 176  notearg
+00213: 176  string "end"
+00218: 176  notearg
+00219: 176  call 2
+00222: 176  pop
+00223: 176  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:153 ---
+;; function object[5] createPlayActions
+;; function metadata object[5] nargs=5 bindings=14
+;; arg[0] armature
+;; arg[1] armatureId
+;; arg[2] animationId
+;; arg[3] control
+;; arg[4] dp
+;; local[0] _actions
+;; local[1] _armInfo
+;; local[2] _aniInfo
+;; local[3] _animation
+;; local[4] _control
+;; local[5] _dp
+;; local[6] _speed
+;; local[7] _tmpDp
+;; local[8] _ret
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=258 object[0]
+;; FUNCTION-MAP kind=lambda offset=327 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:179 ---
+loc   line  op
+----- ----  --
+main:
+00000: 181  this
+00001: 181  dup
+00002: 181  callprop "log"
+00007: 181  swap
+00008: 181  notearg
+00009: 181  string "createPlayActions"
+00014: 181  notearg
+00015: 181  string "begin"
+00020: 181  notearg
+00021: 181  call 2
+00024: 181  pop
+00025: 184  newarray 0
+00029: 184  endinit
+00030: 184  setlocal 0
+00033: 184  pop
+00034: 186  name "xs"
+00039: 186  getprop "Cfg"
+00044: 186  getprop "Armature"
+00049: 186  getarg 1
+00052: 186  getelem
+00053: 186  setlocal 1
+00056: 186  pop
+00057: 188  name "xs"
+00062: 188  dup
+00063: 188  callprop "assert"
+00068: 188  swap
+00069: 188  notearg
+00070: 188  getlocal 1
+00073: 188  notearg
+00074: 188  string "need _armInfo"
+00079: 188  notearg
+00080: 188  getarg 1
+00083: 188  notearg
+00084: 188  call 3
+00087: 188  pop
+00088: 190  getlocal 1
+00091: 190  getprop "animations"
+00096: 190  getarg 2
+00099: 190  getelem
+00100: 190  setaliasedvar "_aniInfo" (hops = 0, slot = 2)
+00109: 190  pop
+00110: 192  name "xs"
+00115: 192  dup
+00116: 192  callprop "assert"
+00121: 192  swap
+00122: 192  notearg
+00123: 192  getaliasedvar "_aniInfo" (hops = 0, slot = 2)
+00132: 192  notearg
+00133: 192  string "need _aniInfo"
+00138: 192  notearg
+00139: 192  getarg 1
+00142: 192  notearg
+00143: 192  getarg 2
+00146: 192  notearg
+00147: 192  call 4
+00150: 192  pop
+00151: 194  getarg 0
+00154: 194  dup
+00155: 194  callprop "getAnimation"
+00160: 194  swap
+00161: 194  notearg
+00162: 194  call 0
+00165: 194  setlocal 3
+00168: 194  pop
+00169: 196  getarg 3
+00172: 196  or 184 (+12)
+00177: 196  pop
+00178: 196  newinit 1
+00183: 196  endinit
+00184: 196  setlocal 4
+00187: 196  pop
+00188: 197  getarg 4
+00191: 197  or 198 (+7)
+00196: 197  pop
+00197: 197  one
+00198: 197  setlocal 5
+00201: 197  pop
+00202: 206  name "xs"
+00207: 206  dup
+00208: 206  callprop "assert"
+00213: 206  swap
+00214: 206  notearg
+00215: 206  getlocal 3
+00218: 206  notearg
+00219: 206  string "_animation error"
+00224: 206  notearg
+00225: 206  call 2
+00228: 206  pop
+00229: 208  getlocal 0
+00232: 208  dup
+00233: 208  callprop "push"
+00238: 208  swap
+00239: 208  notearg
+00240: 209  name "cc"
+00245: 209  getprop "CallFunc"
+00250: 209  dup
+00251: 209  callprop "create"
+00256: 209  swap
+00257: 209  notearg
+00258: 210  lambda (function () {
+    [sourceless code]
+})
+00263: 210  dup
+00264: 210  callprop "bind"
+00269: 210  swap
+00270: 210  notearg
+00271: 215  getarg 0
+00274: 215  notearg
+00275: 215  call 1
+00278: 215  notearg
+00279: 217  name "xs"
+00284: 217  getprop "unuse_this"
+00289: 217  notearg
+00290: 217  call 2
+00293: 217  notearg
+00294: 217  call 1
+00297: 217  pop
+00298: 221  getlocal 0
+00301: 221  dup
+00302: 221  callprop "push"
+00307: 221  swap
+00308: 221  notearg
+00309: 222  name "cc"
+00314: 222  getprop "CallFunc"
+00319: 222  dup
+00320: 222  callprop "create"
+00325: 222  swap
+00326: 222  notearg
+00327: 223  lambda (function () {
+    [sourceless code]
+})
+00332: 223  dup
+00333: 223  callprop "bind"
+00338: 223  swap
+00339: 223  notearg
+00340: 250  newinit 1
+00345: 251  getlocal 3
+00348: 251  initprop "animation"
+00353: 252  getarg 3
+00356: 252  initprop "control"
+00361: 253  getarg 4
+00364: 253  initprop "baseDp"
+00369: 253  endinit
+00370: 253  notearg
+00371: 253  call 1
+00374: 253  notearg
+00375: 256  name "xs"
+00380: 256  getprop "unuse_this"
+00385: 256  notearg
+00386: 256  call 2
+00389: 256  notearg
+00390: 256  call 1
+00393: 256  pop
+00394: 260  getlocal 4
+00397: 260  getprop "speed"
+00402: 260  or 409 (+7)
+00407: 260  pop
+00408: 260  one
+00409: 260  setlocal 6
+00412: 260  pop
+00413: 262  name "xs"
+00418: 262  dup
+00419: 262  callprop "assert"
+00424: 262  swap
+00425: 262  notearg
+00426: 262  getaliasedvar "_aniInfo" (hops = 0, slot = 2)
+00435: 262  getprop "fc"
+00440: 262  notearg
+00441: 262  string "_aniInfo.fc need"
+00446: 262  notearg
+00447: 262  getaliasedvar "_aniInfo" (hops = 0, slot = 2)
+00456: 262  notearg
+00457: 262  call 3
+00460: 262  pop
+00461: 265  getlocal 4
+00464: 265  getprop "loop"
+00469: 265  true
+00470: 265  stricteq
+00471: 265  ifeq 481 (+10)
+00476: 265  goto 559 (+83)
+00481: 269  getaliasedvar "_aniInfo" (hops = 0, slot = 2)
+00490: 269  getprop "fc"
+00495: 269  getlocal 6
+00498: 269  div
+00499: 269  name "xs"
+00504: 269  getprop "app_fps"
+00509: 269  div
+00510: 269  getlocal 5
+00513: 269  mul
+00514: 269  setlocal 7
+00517: 269  pop
+00518: 273  getlocal 0
+00521: 273  dup
+00522: 273  callprop "push"
+00527: 273  swap
+00528: 273  notearg
+00529: 274  name "cc"
+00534: 274  getprop "DelayTime"
+00539: 274  dup
+00540: 274  callprop "create"
+00545: 274  swap
+00546: 274  notearg
+00547: 274  getlocal 7
+00550: 274  notearg
+00551: 274  call 1
+00554: 274  notearg
+00555: 274  call 1
+00558: 274  pop
+00559: 279  name "xs"
+00564: 279  getprop "Utils"
+00569: 279  getprop "Action"
+00574: 279  dup
+00575: 279  callprop "combineSequence"
+00580: 279  swap
+00581: 279  notearg
+00582: 279  getlocal 0
+00585: 279  notearg
+00586: 279  call 1
+00589: 279  setlocal 8
+00592: 279  pop
+00593: 281  this
+00594: 281  dup
+00595: 281  callprop "log"
+00600: 281  swap
+00601: 281  notearg
+00602: 281  string "createPlayActions"
+00607: 281  notearg
+00608: 281  string "end"
+00613: 281  notearg
+00614: 281  call 2
+00617: 281  pop
+00618: 283  getlocal 8
+00621: 283  return
+00622: 283  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:179 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=2 bindings=3
+;; arg[0] sender
+;; arg[1] ___param
+;; local[0] _param
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:210 ---
+loc   line  op
+----- ----  --
+main:
+00000: 211  this
+00001: 211  setlocal 0
+00004: 211  pop
+00005: 212  getlocal 0
+00008: 212  dup
+00009: 212  callprop "setVisible"
+00014: 212  swap
+00015: 212  notearg
+00016: 212  true
+00017: 212  notearg
+00018: 212  call 1
+00021: 212  pop
+00022: 212  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:210 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=2 bindings=9
+;; arg[0] sender
+;; arg[1] ___param
+;; local[0] _param
+;; local[1] _control
+;; local[2] _dp
+;; local[3] _loop
+;; local[4] _durationTo
+;; local[5] _animation
+;; local[6] _speed
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:223 ---
+loc   line  op
+----- ----  --
+main:
+00000: 225  this
+00001: 225  setlocal 0
+00004: 225  pop
+00005: 227  getlocal 0
+00008: 227  getprop "control"
+00013: 227  or 25 (+12)
+00018: 227  pop
+00019: 227  newinit 1
+00024: 227  endinit
+00025: 227  setlocal 1
+00028: 227  pop
+00029: 229  getlocal 0
+00032: 229  getprop "baseDp"
+00037: 229  or 44 (+7)
+00042: 229  pop
+00043: 229  one
+00044: 229  setlocal 2
+00047: 229  pop
+00048: 231  getlocal 1
+00051: 231  getprop "loop"
+00056: 231  true
+00057: 231  stricteq
+00058: 231  ifeq 69 (+11)
+00063: 231  one
+00064: 231  goto 70 (+6)
+00069: 231  zero
+00070: 231  setlocal 3
+00073: 231  pop
+00074: 233  getlocal 1
+00077: 233  getprop "durationTo"
+00082: 233  or 90 (+8)
+00087: 233  pop
+00088: 233  int8 -1
+00090: 233  setlocal 4
+00093: 233  pop
+00094: 235  getlocal 0
+00097: 235  getprop "animation"
+00102: 235  setlocal 5
+00105: 235  pop
+00106: 237  name "xs"
+00111: 237  dup
+00112: 237  callprop "assert"
+00117: 237  swap
+00118: 237  notearg
+00119: 237  getlocal 5
+00122: 237  notearg
+00123: 237  string "_animation error 222"
+00128: 237  notearg
+00129: 237  call 2
+00132: 237  pop
+00133: 239  getlocal 1
+00136: 239  getprop "speed"
+00141: 239  or 148 (+7)
+00146: 239  pop
+00147: 239  one
+00148: 239  setlocal 6
+00151: 239  pop
+00152: 241  getlocal 6
+00155: 241  getlocal 2
+00158: 241  mul
+00159: 241  setlocal 6
+00162: 241  pop
+00163: 243  getlocal 5
+00166: 243  dup
+00167: 243  callprop "setSpeedScale"
+00172: 243  swap
+00173: 243  notearg
+00174: 243  name "xs"
+00179: 243  getprop "ani_scale"
+00184: 243  getlocal 6
+00187: 243  div
+00188: 243  notearg
+00189: 243  call 1
+00192: 243  pop
+00193: 247  getlocal 5
+00196: 247  dup
+00197: 247  callprop "play"
+00202: 247  swap
+00203: 247  notearg
+00204: 247  getaliasedvar "_aniInfo" (hops = 0, slot = 2)
+00213: 247  getprop "name"
+00218: 247  notearg
+00219: 247  getlocal 4
+00222: 247  notearg
+00223: 247  int8 -1
+00225: 247  notearg
+00226: 247  getlocal 3
+00229: 247  notearg
+00230: 247  call 4
+00233: 247  pop
+00234: 247  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:223 ---
+;; function object[6] callFunc_frameEvent
+;; function metadata object[6] nargs=4 bindings=6
+;; arg[0] bone
+;; arg[1] frameEventName
+;; arg[2] originFrameIndex
+;; arg[3] currentFrameIndex
+;; local[0] _param
+;; local[1] _eventAction
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:300 ---
+loc   line  op
+----- ----  --
+main:
+00000: 304  this
+00001: 304  setlocal 0
+00004: 304  pop
+00005: 312  getlocal 0
+00008: 312  getprop "listeners"
+00013: 312  getarg 1
+00016: 312  getelem
+00017: 312  setlocal 1
+00020: 312  pop
+00021: 314  getlocal 1
+00024: 314  ifeq 69 (+45)
+00029: 316  getlocal 0
+00032: 316  getprop "who"
+00037: 316  dup
+00038: 316  callprop "runAction"
+00043: 316  swap
+00044: 316  notearg
+00045: 317  getlocal 1
+00048: 317  dup
+00049: 317  callprop "clone"
+00054: 317  swap
+00055: 317  notearg
+00056: 317  call 0
+00059: 317  notearg
+00060: 317  call 1
+00063: 317  pop
+00064: 317  goto 102 (+38)
+00069: 321  name "xs"
+00074: 321  dup
+00075: 321  callprop "warn"
+00080: 321  swap
+00081: 321  notearg
+00082: 321  string "frameEventName"
+00087: 321  notearg
+00088: 321  string "need listener :"
+00093: 321  getarg 1
+00096: 321  add
+00097: 321  notearg
+00098: 321  call 2
+00101: 321  pop
+00102: 322  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:300 ---
+;; function object[7] callFunc_movementEvent
+;; function metadata object[7] nargs=3 bindings=3
+;; arg[0] armature
+;; arg[1] eventType
+;; arg[2] name
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:325 ---
+loc   line  op
+----- ----  --
+main:
+00000: 325  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:325 ---
+;; function object[8] callFunc_frameEvent
+;; function metadata object[8] nargs=4 bindings=8
+;; arg[0] bone
+;; arg[1] frameEventName
+;; arg[2] originFrameIndex
+;; arg[3] currentFrameIndex
+;; local[0] _param
+;; local[1] _event
+;; local[2] _actions
+;; local[3] _i
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=50 length=71 stackDepth=1 target=121
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:339 ---
+loc   line  op
+----- ----  --
+main:
+00000: 341  undefined
+00001: 341  return
+00002: 343  this
+00003: 343  setlocal 0
+00006: 343  pop
+00007: 345  getlocal 0
+00010: 345  getprop "events"
+00015: 345  getarg 1
+00018: 345  getelem
+00019: 345  setlocal 1
+00022: 345  pop
+00023: 347  getlocal 1
+00026: 347  ifeq 173 (+147)
+00031: 348  newarray 0
+00035: 348  endinit
+00036: 348  setlocal 2
+00039: 348  pop
+00040: 349  getlocal 1
+00043: 349  iter 1
+00045: 349  goto 114 (+69)
+00050: 349  loophead
+00051: 349  iternext
+00052: 349  setlocal 3
+00055: 349  pop
+00056: 349  getlocal 1
+00059: 349  dup
+00060: 349  callprop "hasOwnProperty"
+00065: 349  swap
+00066: 349  notearg
+00067: 349  getlocal 3
+00070: 349  notearg
+00071: 349  call 1
+00074: 349  ifeq 114 (+40)
+00079: 350  getlocal 1
+00082: 350  getlocal 3
+00085: 350  getelem
+00086: 350  ifeq 114 (+28)
+00091: 351  getlocal 2
+00094: 351  dup
+00095: 351  callprop "push"
+00100: 351  swap
+00101: 351  notearg
+00102: 351  getlocal 1
+00105: 351  getlocal 3
+00108: 351  getelem
+00109: 351  notearg
+00110: 351  call 1
+00113: 351  pop
+00114: 351  loopentry
+00115: 351  moreiter
+00116: 351  ifne 50 (-66)
+00121: 351  enditer
+00122: 355  getlocal 0
+00125: 355  getprop "who"
+00130: 355  dup
+00131: 355  callprop "runAction"
+00136: 355  swap
+00137: 355  notearg
+00138: 356  name "xs"
+00143: 356  getprop "Utils"
+00148: 356  getprop "Action"
+00153: 356  dup
+00154: 356  callprop "combineSpawn"
+00159: 356  swap
+00160: 356  notearg
+00161: 356  getlocal 2
+00164: 356  notearg
+00165: 356  call 1
+00168: 356  notearg
+00169: 356  call 1
+00172: 356  pop
+00173: 358  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/Armature.js:339 ---

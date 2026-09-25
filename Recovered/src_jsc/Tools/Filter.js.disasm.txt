@@ -1,0 +1,1228 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/Filter.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=56 object[0]
+;; FUNCTION-MAP kind=lambda offset=66 object[1]
+;; FUNCTION-MAP kind=lambda offset=76 object[2]
+;; FUNCTION-MAP kind=lambda offset=86 object[3]
+;; FUNCTION-MAP kind=lambda offset=96 object[4]
+;; FUNCTION-MAP kind=lambda offset=106 object[5]
+;; FUNCTION-MAP kind=lambda offset=116 object[6]
+;; FUNCTION-MAP kind=lambda offset=126 object[7]
+;; FUNCTION-MAP kind=lambda offset=136 object[8]
+;; FUNCTION-MAP kind=lambda offset=146 object[9]
+;; FUNCTION-MAP kind=lambda offset=156 object[10]
+;; FUNCTION-MAP kind=lambda offset=166 object[11]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Tools"
+00010:   9  name "xs"
+00015:   9  getprop "Tools"
+00020:   9  getprop "Filter"
+00025:   9  or 177 (+152)
+00030:   9  pop
+00031:   9  newinit 1
+00036:  11  name "xs"
+00041:  11  getprop "Debug"
+00046:  11  getprop "emptyFunc"
+00051:  11  initprop "dump"
+00056:  14  lambda (function () {
+    [sourceless code]
+})
+00061:  14  initprop "generalByType"
+00066:  27  lambda (function () {
+    [sourceless code]
+})
+00071:  27  initprop "generalByGrade"
+00076:  42  lambda (function () {
+    [sourceless code]
+})
+00081:  42  initprop "generalSurrenderStatus"
+00086:  54  lambda (function () {
+    [sourceless code]
+})
+00091:  54  initprop "equipmentByPos"
+00096:  65  lambda (function () {
+    [sourceless code]
+})
+00101:  65  initprop "skillByType"
+00106:  78  lambda (function () {
+    [sourceless code]
+})
+00111:  78  initprop "generalAtlasByType"
+00116:  89  lambda (function () {
+    [sourceless code]
+})
+00121:  89  initprop "equipmentAtlasByPos"
+00126: 102  lambda (function () {
+    [sourceless code]
+})
+00131: 102  initprop "skillAtlasByType"
+00136: 118  lambda (function () {
+    [sourceless code]
+})
+00141: 118  initprop "skillCanBeSet"
+00146: 132  lambda (function () {
+    [sourceless code]
+})
+00151: 132  initprop "lieutenantCanBeSet"
+00156: 146  lambda (function () {
+    [sourceless code]
+})
+00161: 146  initprop "battleAtlasByType"
+00166: 169  lambda (function () {
+    [sourceless code]
+})
+00171: 169  initprop "filterData"
+00176: 169  endinit
+00177: 169  setprop "Filter"
+00182: 169  popv
+00183: 245  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:1 ---
+;; function object[0] generalByType
+;; function metadata object[0] nargs=2 bindings=4
+;; arg[0] originalData
+;; arg[1] type
+;; local[0] _arr_rs
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  newarray 0
+00004:  17  endinit
+00005:  17  setlocal 0
+00008:  17  pop
+00009:  18  zero
+00010:  18  setlocal 1
+00013:  18  pop
+00014:  18  goto 85 (+71)
+00019:  20  loophead
+00020:  20  getarg 0
+00023:  20  getlocal 1
+00026:  20  getelem
+00027:  20  dup
+00028:  20  callprop "getNaturalSkillType"
+00033:  20  swap
+00034:  20  notearg
+00035:  20  call 0
+00038:  20  getarg 1
+00041:  20  eq
+00042:  20  ifeq 70 (+28)
+00047:  21  getlocal 0
+00050:  21  dup
+00051:  21  callprop "push"
+00056:  21  swap
+00057:  21  notearg
+00058:  21  getarg 0
+00061:  21  getlocal 1
+00064:  21  getelem
+00065:  21  notearg
+00066:  21  call 1
+00069:  21  pop
+00070:  18  localinc 11
+00073:  18  getlocal 1
+00076:  18  pos
+00077:  18  dup
+00078:  18  one
+00079:  18  add
+00080:  18  setlocal 1
+00083:  18  pop
+00084:  18  pop
+00085:  18  loopentry
+00086:  18  getlocal 1
+00089:  18  getarg 0
+00092:  18  length "length"
+00097:  18  lt
+00098:  18  ifne 19 (-79)
+00103:  24  getlocal 0
+00106:  24  return
+00107:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:14 ---
+;; function object[1] generalByGrade
+;; function metadata object[1] nargs=2 bindings=4
+;; arg[0] originalData
+;; arg[1] grade
+;; local[0] _arr_rs
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  newarray 0
+00004:  30  endinit
+00005:  30  setlocal 0
+00008:  30  pop
+00009:  31  zero
+00010:  31  setlocal 1
+00013:  31  pop
+00014:  31  goto 85 (+71)
+00019:  33  loophead
+00020:  33  getarg 0
+00023:  33  getlocal 1
+00026:  33  getelem
+00027:  33  dup
+00028:  33  callprop "getGrade"
+00033:  33  swap
+00034:  33  notearg
+00035:  33  call 0
+00038:  33  getarg 1
+00041:  33  eq
+00042:  33  ifeq 70 (+28)
+00047:  34  getlocal 0
+00050:  34  dup
+00051:  34  callprop "push"
+00056:  34  swap
+00057:  34  notearg
+00058:  34  getarg 0
+00061:  34  getlocal 1
+00064:  34  getelem
+00065:  34  notearg
+00066:  34  call 1
+00069:  34  pop
+00070:  31  localinc 11
+00073:  31  getlocal 1
+00076:  31  pos
+00077:  31  dup
+00078:  31  one
+00079:  31  add
+00080:  31  setlocal 1
+00083:  31  pop
+00084:  31  pop
+00085:  31  loopentry
+00086:  31  getlocal 1
+00089:  31  getarg 0
+00092:  31  length "length"
+00097:  31  lt
+00098:  31  ifne 19 (-79)
+00103:  37  getlocal 0
+00106:  37  return
+00107:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:27 ---
+;; function object[2] generalSurrenderStatus
+;; function metadata object[2] nargs=2 bindings=4
+;; arg[0] originalData
+;; arg[1] type
+;; local[0] _arr_rs
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:42 ---
+loc   line  op
+----- ----  --
+main:
+00000:  43  newarray 0
+00004:  43  endinit
+00005:  43  setlocal 0
+00008:  43  pop
+00009:  44  zero
+00010:  44  setlocal 1
+00013:  44  pop
+00014:  44  goto 122 (+108)
+00019:  46  loophead
+00020:  46  name "xs"
+00025:  46  getprop "Profile"
+00030:  46  getprop "GameData"
+00035:  46  getprop "Mgr"
+00040:  46  dup
+00041:  46  callprop "getInstance"
+00046:  46  swap
+00047:  46  notearg
+00048:  46  call 0
+00051:  46  getprop "Generals"
+00056:  46  dup
+00057:  46  callprop "isSurrender"
+00062:  46  swap
+00063:  46  notearg
+00064:  46  getarg 0
+00067:  46  getlocal 1
+00070:  46  getelem
+00071:  46  notearg
+00072:  46  call 1
+00075:  46  getarg 1
+00078:  46  eq
+00079:  46  ifeq 107 (+28)
+00084:  47  getlocal 0
+00087:  47  dup
+00088:  47  callprop "push"
+00093:  47  swap
+00094:  47  notearg
+00095:  47  getarg 0
+00098:  47  getlocal 1
+00101:  47  getelem
+00102:  47  notearg
+00103:  47  call 1
+00106:  47  pop
+00107:  44  localinc 11
+00110:  44  getlocal 1
+00113:  44  pos
+00114:  44  dup
+00115:  44  one
+00116:  44  add
+00117:  44  setlocal 1
+00120:  44  pop
+00121:  44  pop
+00122:  44  loopentry
+00123:  44  getlocal 1
+00126:  44  getarg 0
+00129:  44  length "length"
+00134:  44  lt
+00135:  44  ifne 19 (-116)
+00140:  50  getlocal 0
+00143:  50  return
+00144:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:42 ---
+;; function object[3] equipmentByPos
+;; function metadata object[3] nargs=2 bindings=4
+;; arg[0] originalData
+;; arg[1] pos
+;; local[0] _arr_rs
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:54 ---
+loc   line  op
+----- ----  --
+main:
+00000:  55  newarray 0
+00004:  55  endinit
+00005:  55  setlocal 0
+00008:  55  pop
+00009:  56  zero
+00010:  56  setlocal 1
+00013:  56  pop
+00014:  56  goto 85 (+71)
+00019:  57  loophead
+00020:  57  getarg 0
+00023:  57  getlocal 1
+00026:  57  getelem
+00027:  57  dup
+00028:  57  callprop "getPosType"
+00033:  57  swap
+00034:  57  notearg
+00035:  57  call 0
+00038:  57  getarg 1
+00041:  57  eq
+00042:  57  ifeq 70 (+28)
+00047:  58  getlocal 0
+00050:  58  dup
+00051:  58  callprop "push"
+00056:  58  swap
+00057:  58  notearg
+00058:  58  getarg 0
+00061:  58  getlocal 1
+00064:  58  getelem
+00065:  58  notearg
+00066:  58  call 1
+00069:  58  pop
+00070:  56  localinc 11
+00073:  56  getlocal 1
+00076:  56  pos
+00077:  56  dup
+00078:  56  one
+00079:  56  add
+00080:  56  setlocal 1
+00083:  56  pop
+00084:  56  pop
+00085:  56  loopentry
+00086:  56  getlocal 1
+00089:  56  getarg 0
+00092:  56  length "length"
+00097:  56  lt
+00098:  56  ifne 19 (-79)
+00103:  61  getlocal 0
+00106:  61  return
+00107:  61  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:54 ---
+;; function object[4] skillByType
+;; function metadata object[4] nargs=2 bindings=4
+;; arg[0] originalData
+;; arg[1] type
+;; local[0] _arr_rs
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:65 ---
+loc   line  op
+----- ----  --
+main:
+00000:  68  newarray 0
+00004:  68  endinit
+00005:  68  setlocal 0
+00008:  68  pop
+00009:  69  zero
+00010:  69  setlocal 1
+00013:  69  pop
+00014:  69  goto 85 (+71)
+00019:  70  loophead
+00020:  70  getarg 0
+00023:  70  getlocal 1
+00026:  70  getelem
+00027:  70  dup
+00028:  70  callprop "getSkillType"
+00033:  70  swap
+00034:  70  notearg
+00035:  70  call 0
+00038:  70  getarg 1
+00041:  70  eq
+00042:  70  ifeq 70 (+28)
+00047:  71  getlocal 0
+00050:  71  dup
+00051:  71  callprop "push"
+00056:  71  swap
+00057:  71  notearg
+00058:  71  getarg 0
+00061:  71  getlocal 1
+00064:  71  getelem
+00065:  71  notearg
+00066:  71  call 1
+00069:  71  pop
+00070:  69  localinc 11
+00073:  69  getlocal 1
+00076:  69  pos
+00077:  69  dup
+00078:  69  one
+00079:  69  add
+00080:  69  setlocal 1
+00083:  69  pop
+00084:  69  pop
+00085:  69  loopentry
+00086:  69  getlocal 1
+00089:  69  getarg 0
+00092:  69  length "length"
+00097:  69  lt
+00098:  69  ifne 19 (-79)
+00103:  74  getlocal 0
+00106:  74  return
+00107:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:65 ---
+;; function object[5] generalAtlasByType
+;; function metadata object[5] nargs=2 bindings=4
+;; arg[0] originalData
+;; arg[1] type
+;; local[0] _arr_rs
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:78 ---
+loc   line  op
+----- ----  --
+main:
+00000:  79  newarray 0
+00004:  79  endinit
+00005:  79  setlocal 0
+00008:  79  pop
+00009:  80  zero
+00010:  80  setlocal 1
+00013:  80  pop
+00014:  80  goto 96 (+82)
+00019:  81  loophead
+00020:  81  getarg 0
+00023:  81  getlocal 1
+00026:  81  getelem
+00027:  81  dup
+00028:  81  callprop "getModel"
+00033:  81  swap
+00034:  81  notearg
+00035:  81  call 0
+00038:  81  dup
+00039:  81  callprop "getNaturalSkillType"
+00044:  81  swap
+00045:  81  notearg
+00046:  81  call 0
+00049:  81  getarg 1
+00052:  81  eq
+00053:  81  ifeq 81 (+28)
+00058:  82  getlocal 0
+00061:  82  dup
+00062:  82  callprop "push"
+00067:  82  swap
+00068:  82  notearg
+00069:  82  getarg 0
+00072:  82  getlocal 1
+00075:  82  getelem
+00076:  82  notearg
+00077:  82  call 1
+00080:  82  pop
+00081:  80  localinc 11
+00084:  80  getlocal 1
+00087:  80  pos
+00088:  80  dup
+00089:  80  one
+00090:  80  add
+00091:  80  setlocal 1
+00094:  80  pop
+00095:  80  pop
+00096:  80  loopentry
+00097:  80  getlocal 1
+00100:  80  getarg 0
+00103:  80  length "length"
+00108:  80  lt
+00109:  80  ifne 19 (-90)
+00114:  85  getlocal 0
+00117:  85  return
+00118:  85  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:78 ---
+;; function object[6] equipmentAtlasByPos
+;; function metadata object[6] nargs=2 bindings=4
+;; arg[0] originalData
+;; arg[1] type
+;; local[0] _arr_rs
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:89 ---
+loc   line  op
+----- ----  --
+main:
+00000:  90  newarray 0
+00004:  90  endinit
+00005:  90  setlocal 0
+00008:  90  pop
+00009:  91  zero
+00010:  91  setlocal 1
+00013:  91  pop
+00014:  91  goto 96 (+82)
+00019:  94  loophead
+00020:  94  getarg 0
+00023:  94  getlocal 1
+00026:  94  getelem
+00027:  94  dup
+00028:  94  callprop "getModel"
+00033:  94  swap
+00034:  94  notearg
+00035:  94  call 0
+00038:  94  dup
+00039:  94  callprop "getPosType"
+00044:  94  swap
+00045:  94  notearg
+00046:  94  call 0
+00049:  94  getarg 1
+00052:  94  eq
+00053:  94  ifeq 81 (+28)
+00058:  95  getlocal 0
+00061:  95  dup
+00062:  95  callprop "push"
+00067:  95  swap
+00068:  95  notearg
+00069:  95  getarg 0
+00072:  95  getlocal 1
+00075:  95  getelem
+00076:  95  notearg
+00077:  95  call 1
+00080:  95  pop
+00081:  91  localinc 11
+00084:  91  getlocal 1
+00087:  91  pos
+00088:  91  dup
+00089:  91  one
+00090:  91  add
+00091:  91  setlocal 1
+00094:  91  pop
+00095:  91  pop
+00096:  91  loopentry
+00097:  91  getlocal 1
+00100:  91  getarg 0
+00103:  91  length "length"
+00108:  91  lt
+00109:  91  ifne 19 (-90)
+00114:  98  getlocal 0
+00117:  98  return
+00118:  98  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:89 ---
+;; function object[7] skillAtlasByType
+;; function metadata object[7] nargs=2 bindings=4
+;; arg[0] originalData
+;; arg[1] type
+;; local[0] _arr_rs
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:102 ---
+loc   line  op
+----- ----  --
+main:
+00000: 103  newarray 0
+00004: 103  endinit
+00005: 103  setlocal 0
+00008: 103  pop
+00009: 104  zero
+00010: 104  setlocal 1
+00013: 104  pop
+00014: 104  goto 96 (+82)
+00019: 106  loophead
+00020: 106  getarg 0
+00023: 106  getlocal 1
+00026: 106  getelem
+00027: 106  dup
+00028: 106  callprop "getModel"
+00033: 106  swap
+00034: 106  notearg
+00035: 106  call 0
+00038: 106  dup
+00039: 106  callprop "getSkillType"
+00044: 106  swap
+00045: 106  notearg
+00046: 106  call 0
+00049: 106  getarg 1
+00052: 106  eq
+00053: 106  ifeq 81 (+28)
+00058: 107  getlocal 0
+00061: 107  dup
+00062: 107  callprop "push"
+00067: 107  swap
+00068: 107  notearg
+00069: 107  getarg 0
+00072: 107  getlocal 1
+00075: 107  getelem
+00076: 107  notearg
+00077: 107  call 1
+00080: 107  pop
+00081: 104  localinc 11
+00084: 104  getlocal 1
+00087: 104  pos
+00088: 104  dup
+00089: 104  one
+00090: 104  add
+00091: 104  setlocal 1
+00094: 104  pop
+00095: 104  pop
+00096: 104  loopentry
+00097: 104  getlocal 1
+00100: 104  getarg 0
+00103: 104  length "length"
+00108: 104  lt
+00109: 104  ifne 19 (-90)
+00114: 110  getlocal 0
+00117: 110  return
+00118: 110  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:102 ---
+;; function object[8] skillCanBeSet
+;; function metadata object[8] nargs=4 bindings=7
+;; arg[0] originalData
+;; arg[1] general_pk_id
+;; arg[2] pos
+;; arg[3] type
+;; local[0] _arr_rs
+;; local[1] obj_general
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:118 ---
+loc   line  op
+----- ----  --
+main:
+00000: 119  newarray 0
+00004: 119  endinit
+00005: 119  setlocal 0
+00008: 119  pop
+00009: 120  name "xs"
+00014: 120  getprop "Profile"
+00019: 120  getprop "GameData"
+00024: 120  getprop "Mgr"
+00029: 120  dup
+00030: 120  callprop "getInstance"
+00035: 120  swap
+00036: 120  notearg
+00037: 120  call 0
+00040: 120  getprop "Generals"
+00045: 120  dup
+00046: 120  callprop "getByPkId"
+00051: 120  swap
+00052: 120  notearg
+00053: 120  getarg 1
+00056: 120  notearg
+00057: 120  call 1
+00060: 120  setlocal 1
+00063: 120  pop
+00064: 121  zero
+00065: 121  setlocal 2
+00068: 121  pop
+00069: 121  goto 196 (+127)
+00074: 124  loophead
+00075: 124  name "xs"
+00080: 124  getprop "Profile"
+00085: 124  getprop "GameData"
+00090: 124  getprop "Mgr"
+00095: 124  dup
+00096: 124  callprop "getInstance"
+00101: 124  swap
+00102: 124  notearg
+00103: 124  call 0
+00106: 124  getprop "Generals"
+00111: 124  dup
+00112: 124  callprop "isThisSkillCanBeSet"
+00117: 124  swap
+00118: 124  notearg
+00119: 124  getlocal 1
+00122: 124  notearg
+00123: 124  getarg 0
+00126: 124  getlocal 2
+00129: 124  getelem
+00130: 124  dup
+00131: 124  callprop "getPkId"
+00136: 124  swap
+00137: 124  notearg
+00138: 124  call 0
+00141: 124  notearg
+00142: 124  getarg 2
+00145: 124  notearg
+00146: 124  call 3
+00149: 124  getarg 3
+00152: 124  stricteq
+00153: 124  ifeq 181 (+28)
+00158: 125  getlocal 0
+00161: 125  dup
+00162: 125  callprop "push"
+00167: 125  swap
+00168: 125  notearg
+00169: 125  getarg 0
+00172: 125  getlocal 2
+00175: 125  getelem
+00176: 125  notearg
+00177: 125  call 1
+00180: 125  pop
+00181: 121  localinc 11
+00184: 121  getlocal 2
+00187: 121  pos
+00188: 121  dup
+00189: 121  one
+00190: 121  add
+00191: 121  setlocal 2
+00194: 121  pop
+00195: 121  pop
+00196: 121  loopentry
+00197: 121  getlocal 2
+00200: 121  getarg 0
+00203: 121  length "length"
+00208: 121  lt
+00209: 121  ifne 74 (-135)
+00214: 128  getlocal 0
+00217: 128  return
+00218: 128  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:118 ---
+;; function object[9] lieutenantCanBeSet
+;; function metadata object[9] nargs=4 bindings=7
+;; arg[0] originalData
+;; arg[1] general_pk_id
+;; arg[2] pos
+;; arg[3] type
+;; local[0] _arr_rs
+;; local[1] obj_general
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:132 ---
+loc   line  op
+----- ----  --
+main:
+00000: 133  newarray 0
+00004: 133  endinit
+00005: 133  setlocal 0
+00008: 133  pop
+00009: 134  name "xs"
+00014: 134  getprop "Profile"
+00019: 134  getprop "GameData"
+00024: 134  getprop "Mgr"
+00029: 134  dup
+00030: 134  callprop "getInstance"
+00035: 134  swap
+00036: 134  notearg
+00037: 134  call 0
+00040: 134  getprop "Generals"
+00045: 134  dup
+00046: 134  callprop "getByPkId"
+00051: 134  swap
+00052: 134  notearg
+00053: 134  getarg 1
+00056: 134  notearg
+00057: 134  call 1
+00060: 134  setlocal 1
+00063: 134  pop
+00064: 135  zero
+00065: 135  setlocal 2
+00068: 135  pop
+00069: 135  goto 196 (+127)
+00074: 138  loophead
+00075: 138  name "xs"
+00080: 138  getprop "Profile"
+00085: 138  getprop "GameData"
+00090: 138  getprop "Mgr"
+00095: 138  dup
+00096: 138  callprop "getInstance"
+00101: 138  swap
+00102: 138  notearg
+00103: 138  call 0
+00106: 138  getprop "Generals"
+00111: 138  dup
+00112: 138  callprop "isThisLieutenantCanBeSet"
+00117: 138  swap
+00118: 138  notearg
+00119: 138  getlocal 1
+00122: 138  notearg
+00123: 138  getarg 0
+00126: 138  getlocal 2
+00129: 138  getelem
+00130: 138  dup
+00131: 138  callprop "getPkId"
+00136: 138  swap
+00137: 138  notearg
+00138: 138  call 0
+00141: 138  notearg
+00142: 138  getarg 2
+00145: 138  notearg
+00146: 138  call 3
+00149: 138  getarg 3
+00152: 138  stricteq
+00153: 138  ifeq 181 (+28)
+00158: 139  getlocal 0
+00161: 139  dup
+00162: 139  callprop "push"
+00167: 139  swap
+00168: 139  notearg
+00169: 139  getarg 0
+00172: 139  getlocal 2
+00175: 139  getelem
+00176: 139  notearg
+00177: 139  call 1
+00180: 139  pop
+00181: 135  localinc 11
+00184: 135  getlocal 2
+00187: 135  pos
+00188: 135  dup
+00189: 135  one
+00190: 135  add
+00191: 135  setlocal 2
+00194: 135  pop
+00195: 135  pop
+00196: 135  loopentry
+00197: 135  getlocal 2
+00200: 135  getarg 0
+00203: 135  length "length"
+00208: 135  lt
+00209: 135  ifne 74 (-135)
+00214: 142  getlocal 0
+00217: 142  return
+00218: 142  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:132 ---
+;; function object[10] battleAtlasByType
+;; function metadata object[10] nargs=2 bindings=4
+;; arg[0] originalData
+;; arg[1] type
+;; local[0] _arr_rs
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:146 ---
+loc   line  op
+----- ----  --
+main:
+00000: 147  name "xs"
+00005: 147  dup
+00006: 147  callprop "log_xjf"
+00011: 147  swap
+00012: 147  notearg
+00013: 147  string "battleAtlasByType,type = "
+00018: 147  getarg 1
+00021: 147  add
+00022: 147  notearg
+00023: 147  call 1
+00026: 147  pop
+00027: 148  newarray 0
+00031: 148  endinit
+00032: 148  setlocal 0
+00035: 148  pop
+00036: 149  zero
+00037: 149  setlocal 1
+00040: 149  pop
+00041: 149  goto 154 (+113)
+00046: 150  loophead
+00047: 150  name "xs"
+00052: 150  dup
+00053: 150  callprop "log_xjf"
+00058: 150  swap
+00059: 150  notearg
+00060: 150  string "originalData[i].getBattleId() = "
+00065: 150  getarg 0
+00068: 150  getlocal 1
+00071: 150  getelem
+00072: 150  dup
+00073: 150  callprop "getBattleId"
+00078: 150  swap
+00079: 150  notearg
+00080: 150  call 0
+00083: 150  add
+00084: 150  notearg
+00085: 150  call 1
+00088: 150  pop
+00089: 151  getarg 0
+00092: 151  getlocal 1
+00095: 151  getelem
+00096: 151  dup
+00097: 151  callprop "getBattleId"
+00102: 151  swap
+00103: 151  notearg
+00104: 151  call 0
+00107: 151  getarg 1
+00110: 151  eq
+00111: 151  ifeq 139 (+28)
+00116: 152  getlocal 0
+00119: 152  dup
+00120: 152  callprop "push"
+00125: 152  swap
+00126: 152  notearg
+00127: 152  getarg 0
+00130: 152  getlocal 1
+00133: 152  getelem
+00134: 152  notearg
+00135: 152  call 1
+00138: 152  pop
+00139: 149  localinc 11
+00142: 149  getlocal 1
+00145: 149  pos
+00146: 149  dup
+00147: 149  one
+00148: 149  add
+00149: 149  setlocal 1
+00152: 149  pop
+00153: 149  pop
+00154: 149  loopentry
+00155: 149  getlocal 1
+00158: 149  getarg 0
+00161: 149  length "length"
+00166: 149  lt
+00167: 149  ifne 46 (-121)
+00172: 157  getlocal 0
+00175: 157  return
+00176: 157  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:146 ---
+;; function object[11] filterData
+;; function metadata object[11] nargs=1 bindings=8
+;; arg[0] params
+;; local[0] originalData
+;; local[1] filterConditions
+;; local[2] result
+;; local[3] _rs
+;; local[4] general_pk_id
+;; local[5] pos
+;; local[6] sortConditions
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:169 ---
+loc   line  op
+----- ----  --
+main:
+00000: 171  getarg 0
+00003: 171  getprop "data"
+00008: 171  setlocal 0
+00011: 171  pop
+00012: 172  getarg 0
+00015: 172  getprop "filterConditions"
+00020: 172  setlocal 1
+00023: 172  pop
+00024: 173  getarg 0
+00027: 173  getprop "result"
+00032: 173  setlocal 2
+00035: 173  pop
+00036: 174  newarray 0
+00040: 174  endinit
+00041: 174  setlocal 3
+00044: 174  pop
+00045: 176  getlocal 2
+00048: 176  name "xs"
+00053: 176  getprop "Constant_FilterResult_All"
+00058: 176  eq
+00059: 176  ifeq 76 (+17)
+00064: 177  getlocal 0
+00067: 177  setlocal 3
+00070: 177  pop
+00071: 177  goto 829 (+758)
+00076: 179  getlocal 1
+00079: 179  condswitch
+00080: 180  name "xs"
+00085: 180  getprop "Constant_FilterType_Skill_Type"
+00090: 180  case 265 (+175)
+00095: 184  name "xs"
+00100: 184  getprop "Constant_FilterType_GeneralLieutenant_Type"
+00105: 184  case 308 (+203)
+00110: 185  name "xs"
+00115: 185  getprop "Constant_FilterType_General_Type"
+00120: 185  case 308 (+188)
+00125: 189  name "xs"
+00130: 189  getprop "Constant_FilterType_Equipment_Pos"
+00135: 189  case 351 (+216)
+00140: 193  name "xs"
+00145: 193  getprop "Constant_FilterType_Skill_IsCanBeSet"
+00150: 193  case 394 (+244)
+00155: 202  name "xs"
+00160: 202  getprop "Constant_FilterType_GeneralAtlas_Type"
+00165: 202  case 469 (+304)
+00170: 206  name "xs"
+00175: 206  getprop "Constant_FilterType_EquipmentAtLas_Pos"
+00180: 206  case 512 (+332)
+00185: 210  name "xs"
+00190: 210  getprop "Constant_FilterType_SkillAtlas_Type"
+00195: 210  case 555 (+360)
+00200: 214  name "xs"
+00205: 214  getprop "Constant_FilterType_GeneralLieutenant_IsCanBeSet"
+00210: 214  case 598 (+388)
+00215: 220  name "xs"
+00220: 220  getprop "Constant_FilterType_GeneralAtlas_IsSurrender"
+00225: 220  case 673 (+448)
+00230: 223  name "xs"
+00235: 223  getprop "Constant_FilterType_Battle_Id"
+00240: 223  case 716 (+476)
+00245: 226  name "xs"
+00250: 226  getprop "Constant_FilterType_General_Grade"
+00255: 226  case 759 (+504)
+00260: 226  default 824 (+564)
+00265: 181  name "xs"
+00270: 181  getprop "Tools"
+00275: 181  getprop "Filter"
+00280: 181  dup
+00281: 181  callprop "skillByType"
+00286: 181  swap
+00287: 181  notearg
+00288: 181  getlocal 0
+00291: 181  notearg
+00292: 181  getlocal 2
+00295: 181  notearg
+00296: 181  call 2
+00299: 181  setlocal 3
+00302: 181  pop
+00303: 182  goto 829 (+526)
+00308: 186  name "xs"
+00313: 186  getprop "Tools"
+00318: 186  getprop "Filter"
+00323: 186  dup
+00324: 186  callprop "generalByType"
+00329: 186  swap
+00330: 186  notearg
+00331: 186  getlocal 0
+00334: 186  notearg
+00335: 186  getlocal 2
+00338: 186  notearg
+00339: 186  call 2
+00342: 186  setlocal 3
+00345: 186  pop
+00346: 187  goto 829 (+483)
+00351: 190  name "xs"
+00356: 190  getprop "Tools"
+00361: 190  getprop "Filter"
+00366: 190  dup
+00367: 190  callprop "equipmentByPos"
+00372: 190  swap
+00373: 190  notearg
+00374: 190  getlocal 0
+00377: 190  notearg
+00378: 190  getlocal 2
+00381: 190  notearg
+00382: 190  call 2
+00385: 190  setlocal 3
+00388: 190  pop
+00389: 191  goto 829 (+440)
+00394: 194  getarg 0
+00397: 194  getprop "general_pk_id"
+00402: 194  setlocal 4
+00405: 194  pop
+00406: 195  getarg 0
+00409: 195  getprop "pos"
+00414: 195  setlocal 5
+00417: 195  pop
+00418: 199  name "xs"
+00423: 199  getprop "Tools"
+00428: 199  getprop "Filter"
+00433: 199  dup
+00434: 199  callprop "skillCanBeSet"
+00439: 199  swap
+00440: 199  notearg
+00441: 199  getlocal 0
+00444: 199  notearg
+00445: 199  getlocal 4
+00448: 199  notearg
+00449: 199  getlocal 5
+00452: 199  notearg
+00453: 199  getlocal 2
+00456: 199  notearg
+00457: 199  call 4
+00460: 199  setlocal 3
+00463: 199  pop
+00464: 200  goto 829 (+365)
+00469: 203  name "xs"
+00474: 203  getprop "Tools"
+00479: 203  getprop "Filter"
+00484: 203  dup
+00485: 203  callprop "generalAtlasByType"
+00490: 203  swap
+00491: 203  notearg
+00492: 203  getlocal 0
+00495: 203  notearg
+00496: 203  getlocal 2
+00499: 203  notearg
+00500: 203  call 2
+00503: 203  setlocal 3
+00506: 203  pop
+00507: 204  goto 829 (+322)
+00512: 207  name "xs"
+00517: 207  getprop "Tools"
+00522: 207  getprop "Filter"
+00527: 207  dup
+00528: 207  callprop "equipmentAtlasByPos"
+00533: 207  swap
+00534: 207  notearg
+00535: 207  getlocal 0
+00538: 207  notearg
+00539: 207  getlocal 2
+00542: 207  notearg
+00543: 207  call 2
+00546: 207  setlocal 3
+00549: 207  pop
+00550: 208  goto 829 (+279)
+00555: 211  name "xs"
+00560: 211  getprop "Tools"
+00565: 211  getprop "Filter"
+00570: 211  dup
+00571: 211  callprop "skillAtlasByType"
+00576: 211  swap
+00577: 211  notearg
+00578: 211  getlocal 0
+00581: 211  notearg
+00582: 211  getlocal 2
+00585: 211  notearg
+00586: 211  call 2
+00589: 211  setlocal 3
+00592: 211  pop
+00593: 212  goto 829 (+236)
+00598: 215  getarg 0
+00601: 215  getprop "general_pk_id"
+00606: 215  setlocal 4
+00609: 215  pop
+00610: 216  getarg 0
+00613: 216  getprop "pos"
+00618: 216  setlocal 5
+00621: 216  pop
+00622: 217  name "xs"
+00627: 217  getprop "Tools"
+00632: 217  getprop "Filter"
+00637: 217  dup
+00638: 217  callprop "lieutenantCanBeSet"
+00643: 217  swap
+00644: 217  notearg
+00645: 217  getlocal 0
+00648: 217  notearg
+00649: 217  getlocal 4
+00652: 217  notearg
+00653: 217  getlocal 5
+00656: 217  notearg
+00657: 217  getlocal 2
+00660: 217  notearg
+00661: 217  call 4
+00664: 217  setlocal 3
+00667: 217  pop
+00668: 218  goto 829 (+161)
+00673: 221  name "xs"
+00678: 221  getprop "Tools"
+00683: 221  getprop "Filter"
+00688: 221  dup
+00689: 221  callprop "generalSurrenderStatus"
+00694: 221  swap
+00695: 221  notearg
+00696: 221  getlocal 0
+00699: 221  notearg
+00700: 221  getlocal 2
+00703: 221  notearg
+00704: 221  call 2
+00707: 221  setlocal 3
+00710: 221  pop
+00711: 222  goto 829 (+118)
+00716: 224  name "xs"
+00721: 224  getprop "Tools"
+00726: 224  getprop "Filter"
+00731: 224  dup
+00732: 224  callprop "battleAtlasByType"
+00737: 224  swap
+00738: 224  notearg
+00739: 224  getlocal 0
+00742: 224  notearg
+00743: 224  getlocal 2
+00746: 224  notearg
+00747: 224  call 2
+00750: 224  setlocal 3
+00753: 224  pop
+00754: 225  goto 829 (+75)
+00759: 227  name "xs"
+00764: 227  dup
+00765: 227  callprop "log_zhz"
+00770: 227  swap
+00771: 227  notearg
+00772: 227  string "result"
+00777: 227  notearg
+00778: 227  getlocal 2
+00781: 227  notearg
+00782: 227  call 2
+00785: 227  pop
+00786: 228  name "xs"
+00791: 228  getprop "Tools"
+00796: 228  getprop "Filter"
+00801: 228  dup
+00802: 228  callprop "generalByGrade"
+00807: 228  swap
+00808: 228  notearg
+00809: 228  getlocal 0
+00812: 228  notearg
+00813: 228  getlocal 2
+00816: 228  notearg
+00817: 228  call 2
+00820: 228  setlocal 3
+00823: 228  pop
+00824: 230  goto 829 (+5)
+00829: 235  getarg 0
+00832: 235  getprop "sortConditions"
+00837: 235  or 844 (+7)
+00842: 235  pop
+00843: 235  null
+00844: 235  setlocal 6
+00847: 235  pop
+00848: 236  name "xs"
+00853: 236  getprop "Utils"
+00858: 236  dup
+00859: 236  callprop "isEmpty"
+00864: 236  swap
+00865: 236  notearg
+00866: 236  getlocal 6
+00869: 236  notearg
+00870: 236  call 1
+00873: 236  not
+00874: 236  ifeq 925 (+51)
+00879: 239  getlocal 3
+00882: 239  dup
+00883: 239  callprop "sort"
+00888: 239  swap
+00889: 239  notearg
+00890: 239  name "xs"
+00895: 239  getprop "Tools"
+00900: 239  getprop "Sort"
+00905: 239  dup
+00906: 239  callprop "by"
+00911: 239  swap
+00912: 239  notearg
+00913: 239  getlocal 6
+00916: 239  notearg
+00917: 239  call 1
+00920: 239  notearg
+00921: 239  call 1
+00924: 239  pop
+00925: 242  getlocal 3
+00928: 242  return
+00929: 242  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Filter.js:169 ---

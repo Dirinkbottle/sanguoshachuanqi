@@ -1,0 +1,1040 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/Cell/CombatTableViewCell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+;; FUNCTION-MAP kind=lambda offset=68 object[1]
+;; FUNCTION-MAP kind=lambda offset=78 object[2]
+;; FUNCTION-MAP kind=lambda offset=88 object[3]
+;; FUNCTION-MAP kind=lambda offset=98 object[4]
+;; FUNCTION-MAP kind=lambda offset=108 object[5]
+;; FUNCTION-MAP kind=lambda offset=149 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  getprop "Table"
+00015:   6  name "xs"
+00020:   6  getprop "Views"
+00025:   6  getprop "Table"
+00030:   6  getprop "MultiColumnTableViewCell"
+00035:   6  dup
+00036:   6  callprop "extend"
+00041:   6  swap
+00042:   6  notearg
+00043:   6  newinit 1
+00048:   7  string "CombatTableViewCell"
+00053:   7  initprop "name"
+00058:   8  lambda (function () {
+    [sourceless code]
+})
+00063:   8  initprop "ctor"
+00068:  13  lambda (function () {
+    [sourceless code]
+})
+00073:  13  initprop "_createIcon"
+00078:  20  lambda (function () {
+    [sourceless code]
+})
+00083:  20  initprop "updateCell"
+00088: 111  lambda (function () {
+    [sourceless code]
+})
+00093: 111  initprop "setModelType"
+00098: 115  lambda (function () {
+    [sourceless code]
+})
+00103: 115  initprop "setListener"
+00108: 119  lambda (function () {
+    [sourceless code]
+})
+00113: 119  initprop "getSelectIconPosArray"
+00118: 119  endinit
+00119: 119  notearg
+00120: 119  call 1
+00123: 119  setprop "CombatTableViewCell"
+00128: 119  popv
+00129: 132  name "xs"
+00134: 132  getprop "Views"
+00139: 132  getprop "Table"
+00144: 132  getprop "CombatTableViewCell"
+00149: 132  lambda (function () {
+    [sourceless code]
+})
+00154: 132  setprop "create"
+00159: 132  popv
+00160: 140  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  dup
+00002:   9  callprop "_super"
+00007:   9  swap
+00008:   9  notearg
+00009:   9  call 0
+00012:   9  pop
+00013:   9  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:8 ---
+;; function object[1] _createIcon
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] icon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  name "xs"
+00005:  15  getprop "Views"
+00010:  15  getprop "Icon"
+00015:  15  getprop "IconWrapped"
+00020:  15  dup
+00021:  15  callprop "create"
+00026:  15  swap
+00027:  15  notearg
+00028:  15  this
+00029:  15  getprop "data"
+00034:  15  getarg 0
+00037:  15  getelem
+00038:  15  notearg
+00039:  15  call 1
+00042:  15  setlocal 0
+00045:  15  pop
+00046:  16  getlocal 0
+00049:  16  return
+00050:  16  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:13 ---
+;; function object[2] updateCell
+;; function metadata object[2] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] i
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=416 object[0]
+;; FUNCTION-MAP kind=lambda offset=495 object[1]
+;; FUNCTION-MAP kind=lambda offset=574 object[2]
+;; FUNCTION-MAP kind=lambda offset=653 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:20 ---
+loc   line  op
+----- ----  --
+main:
+00000:  21  this
+00001:  21  getarg 0
+00004:  21  setprop "data"
+00009:  21  pop
+00010:  23  this
+00011:  23  getprop "iconArray"
+00016:  23  not
+00017:  23  ifeq 53 (+36)
+00022:  24  this
+00023:  24  name "Array"
+00028:  24  undefined
+00029:  24  notearg
+00030:  24  getarg 0
+00033:  24  length "length"
+00038:  24  notearg
+00039:  24  new 1
+00042:  24  setprop "iconArray"
+00047:  24  pop
+00048:  24  goto 170 (+122)
+00053:  26  zero
+00054:  26  setlocal 0
+00057:  26  pop
+00058:  26  goto 149 (+91)
+00063:  27  loophead
+00064:  27  getlocal 0
+00067:  27  this
+00068:  27  getprop "data"
+00073:  27  length "length"
+00078:  27  ge
+00079:  27  ifeq 134 (+55)
+00084:  29  name "xs"
+00089:  29  getprop "Utils"
+00094:  29  getprop "Node"
+00099:  29  dup
+00100:  29  callprop "removeChildSafe"
+00105:  29  swap
+00106:  29  notearg
+00107:  29  this
+00108:  29  getprop "iconArray"
+00113:  29  getlocal 0
+00116:  29  getelem
+00117:  29  notearg
+00118:  29  call 1
+00121:  29  pop
+00122:  30  this
+00123:  30  getprop "iconArray"
+00128:  30  getlocal 0
+00131:  30  null
+00132:  30  setelem
+00133:  30  pop
+00134:  26  localinc 11
+00137:  26  getlocal 0
+00140:  26  pos
+00141:  26  dup
+00142:  26  one
+00143:  26  add
+00144:  26  setlocal 0
+00147:  26  pop
+00148:  26  pop
+00149:  26  loopentry
+00150:  26  getlocal 0
+00153:  26  this
+00154:  26  getprop "iconArray"
+00159:  26  length "length"
+00164:  26  lt
+00165:  26  ifne 63 (-102)
+00170:  35  zero
+00171:  35  setlocal 0
+00174:  35  pop
+00175:  35  goto 729 (+554)
+00180:  36  loophead
+00181:  36  this
+00182:  36  getprop "iconArray"
+00187:  36  getlocal 0
+00190:  36  getelem
+00191:  36  not
+00192:  36  ifeq 319 (+127)
+00197:  37  this
+00198:  37  getprop "iconArray"
+00203:  37  getlocal 0
+00206:  37  this
+00207:  37  dup
+00208:  37  callprop "_createIcon"
+00213:  37  swap
+00214:  37  notearg
+00215:  37  getlocal 0
+00218:  37  notearg
+00219:  37  call 1
+00222:  37  setelem
+00223:  37  pop
+00224:  38  name "xs"
+00229:  38  getprop "Utils"
+00234:  38  getprop "Node"
+00239:  38  dup
+00240:  38  callprop "attachNodes"
+00245:  38  swap
+00246:  38  notearg
+00247:  38  this
+00248:  38  notearg
+00249:  38  this
+00250:  38  getprop "iconArray"
+00255:  38  getlocal 0
+00258:  38  getelem
+00259:  38  notearg
+00260:  38  newinit 1
+00265:  38  string "lb"
+00270:  38  initprop "desc"
+00275:  38  true
+00276:  38  initprop "sc"
+00281:  39  newinit 1
+00286:  39  int8 52
+00288:  39  int8 104
+00290:  39  getlocal 0
+00293:  39  mul
+00294:  39  add
+00295:  39  initprop "x"
+00300:  39  int8 53
+00302:  39  initprop "y"
+00307:  39  endinit
+00308:  39  initprop "offset"
+00313:  39  endinit
+00314:  39  notearg
+00315:  39  call 3
+00318:  39  pop
+00319:  41  this
+00320:  41  getprop "iconArray"
+00325:  41  getlocal 0
+00328:  41  getelem
+00329:  41  dup
+00330:  41  callprop "reloadData"
+00335:  41  swap
+00336:  41  notearg
+00337:  41  getarg 0
+00340:  41  getlocal 0
+00343:  41  getelem
+00344:  41  notearg
+00345:  41  call 1
+00348:  41  pop
+00349:  42  this
+00350:  42  getprop "iconArray"
+00355:  42  getlocal 0
+00358:  42  getelem
+00359:  42  dup
+00360:  42  callprop "setSwallowTouch"
+00365:  42  swap
+00366:  42  notearg
+00367:  42  false
+00368:  42  notearg
+00369:  42  call 1
+00372:  42  pop
+00373:  43  this
+00374:  43  getprop "iconArray"
+00379:  43  getlocal 0
+00382:  43  getelem
+00383:  43  dup
+00384:  43  callprop "setTouchPriority"
+00389:  43  swap
+00390:  43  notearg
+00391:  43  int8 -1
+00393:  43  notearg
+00394:  43  call 1
+00397:  43  pop
+00398:  45  this
+00399:  45  getprop "iconArray"
+00404:  45  getlocal 0
+00407:  45  getelem
+00408:  45  dup
+00409:  45  callprop "setOnClickCallBack"
+00414:  45  swap
+00415:  45  notearg
+00416:  46  lambda (function () {
+    [sourceless code]
+})
+00421:  46  dup
+00422:  46  callprop "bind"
+00427:  46  swap
+00428:  46  notearg
+00429:  60  newinit 1
+00434:  60  getarg 0
+00437:  60  getlocal 0
+00440:  60  getelem
+00441:  60  initprop "model"
+00446:  60  this
+00447:  60  initprop "self"
+00452:  60  this
+00453:  60  getprop "iconArray"
+00458:  60  getlocal 0
+00461:  60  getelem
+00462:  60  initprop "icon"
+00467:  60  endinit
+00468:  60  notearg
+00469:  60  call 1
+00472:  60  notearg
+00473:  60  call 1
+00476:  60  pop
+00477:  63  this
+00478:  63  getprop "iconArray"
+00483:  63  getlocal 0
+00486:  63  getelem
+00487:  63  dup
+00488:  63  callprop "setLongTimeTouchCallBack"
+00493:  63  swap
+00494:  63  notearg
+00495:  64  lambda (function () {
+    [sourceless code]
+})
+00500:  64  dup
+00501:  64  callprop "bind"
+00506:  64  swap
+00507:  64  notearg
+00508:  78  newinit 1
+00513:  78  getarg 0
+00516:  78  getlocal 0
+00519:  78  getelem
+00520:  78  initprop "model"
+00525:  78  this
+00526:  78  initprop "self"
+00531:  78  this
+00532:  78  getprop "iconArray"
+00537:  78  getlocal 0
+00540:  78  getelem
+00541:  78  initprop "icon"
+00546:  78  endinit
+00547:  78  notearg
+00548:  78  call 1
+00551:  78  notearg
+00552:  78  call 1
+00555:  78  pop
+00556:  81  this
+00557:  81  getprop "iconArray"
+00562:  81  getlocal 0
+00565:  81  getelem
+00566:  81  dup
+00567:  81  callprop "setOnClickCallBack_SubBtn"
+00572:  81  swap
+00573:  81  notearg
+00574:  82  lambda (function () {
+    [sourceless code]
+})
+00579:  82  dup
+00580:  82  callprop "bind"
+00585:  82  swap
+00586:  82  notearg
+00587:  93  newinit 1
+00592:  93  getarg 0
+00595:  93  getlocal 0
+00598:  93  getelem
+00599:  93  initprop "model"
+00604:  93  this
+00605:  93  initprop "self"
+00610:  93  this
+00611:  93  getprop "iconArray"
+00616:  93  getlocal 0
+00619:  93  getelem
+00620:  93  initprop "icon"
+00625:  93  endinit
+00626:  93  notearg
+00627:  93  call 1
+00630:  93  notearg
+00631:  93  call 1
+00634:  93  pop
+00635:  94  this
+00636:  94  getprop "iconArray"
+00641:  94  getlocal 0
+00644:  94  getelem
+00645:  94  dup
+00646:  94  callprop "setLongOnClickCallBack_SubBtn"
+00651:  94  swap
+00652:  94  notearg
+00653:  95  lambda (function () {
+    [sourceless code]
+})
+00658:  95  dup
+00659:  95  callprop "bind"
+00664:  95  swap
+00665:  95  notearg
+00666: 106  newinit 1
+00671: 106  getarg 0
+00674: 106  getlocal 0
+00677: 106  getelem
+00678: 106  initprop "model"
+00683: 106  this
+00684: 106  initprop "self"
+00689: 106  this
+00690: 106  getprop "iconArray"
+00695: 106  getlocal 0
+00698: 106  getelem
+00699: 106  initprop "icon"
+00704: 106  endinit
+00705: 106  notearg
+00706: 106  call 1
+00709: 106  notearg
+00710: 106  call 1
+00713: 106  pop
+00714:  35  localinc 11
+00717:  35  getlocal 0
+00720:  35  pos
+00721:  35  dup
+00722:  35  one
+00723:  35  add
+00724:  35  setlocal 0
+00727:  35  pop
+00728:  35  pop
+00729:  35  loopentry
+00730:  35  getlocal 0
+00733:  35  getarg 0
+00736:  35  length "length"
+00741:  35  lt
+00742:  35  ifne 180 (-562)
+00747: 107  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:20 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  this
+00001:  47  getprop "self"
+00006:  47  getprop "m_listener"
+00011:  47  dup
+00012:  47  callprop "isToMaxLevel"
+00017:  47  swap
+00018:  47  notearg
+00019:  47  call 0
+00022:  47  ifeq 89 (+67)
+00027:  48  name "xs"
+00032:  48  getprop "Views"
+00037:  48  getprop "Mgr"
+00042:  48  dup
+00043:  48  callprop "showToast"
+00048:  48  swap
+00049:  48  notearg
+00050:  48  name "xs"
+00055:  48  getprop "Tools"
+00060:  48  getprop "String"
+00065:  48  dup
+00066:  48  callprop "createString"
+00071:  48  swap
+00072:  48  notearg
+00073:  48  string "auto_name_496"
+00078:  48  notearg
+00079:  48  call 1
+00082:  48  notearg
+00083:  48  call 1
+00086:  48  pop
+00087:  49  undefined
+00088:  49  return
+00089:  51  this
+00090:  51  getprop "model"
+00095:  51  dup
+00096:  51  callprop "addSelectNum"
+00101:  51  swap
+00102:  51  notearg
+00103:  51  call 0
+00106:  51  pop
+00107:  52  this
+00108:  52  getprop "icon"
+00113:  52  dup
+00114:  52  callprop "reloadData"
+00119:  52  swap
+00120:  52  notearg
+00121:  52  this
+00122:  52  getprop "model"
+00127:  52  notearg
+00128:  52  call 1
+00131:  52  pop
+00132:  53  this
+00133:  53  getprop "self"
+00138:  53  getprop "modelType"
+00143:  53  name "xs"
+00148:  53  getprop "Views"
+00153:  53  getprop "Table"
+00158:  53  getprop "CombatTableView_General"
+00163:  53  stricteq
+00164:  53  ifeq 249 (+85)
+00169:  55  name "xs"
+00174:  55  getprop "Profile"
+00179:  55  getprop "GameData"
+00184:  55  getprop "Mgr"
+00189:  55  dup
+00190:  55  callprop "getInstance"
+00195:  55  swap
+00196:  55  notearg
+00197:  55  call 0
+00200:  55  getprop "Combat"
+00205:  55  dup
+00206:  55  callprop "getNotify"
+00211:  55  swap
+00212:  55  notearg
+00213:  55  call 0
+00216:  55  dup
+00217:  55  callprop "postNotification"
+00222:  55  swap
+00223:  55  notearg
+00224:  55  name "xs"
+00229:  55  getprop "Views"
+00234:  55  getprop "CombatUpgradeView_Notify_GeneralSelectChange"
+00239:  55  notearg
+00240:  55  call 1
+00243:  55  pop
+00244:  55  goto 324 (+80)
+00249:  58  name "xs"
+00254:  58  getprop "Profile"
+00259:  58  getprop "GameData"
+00264:  58  getprop "Mgr"
+00269:  58  dup
+00270:  58  callprop "getInstance"
+00275:  58  swap
+00276:  58  notearg
+00277:  58  call 0
+00280:  58  getprop "Combat"
+00285:  58  dup
+00286:  58  callprop "getNotify"
+00291:  58  swap
+00292:  58  notearg
+00293:  58  call 0
+00296:  58  dup
+00297:  58  callprop "postNotification"
+00302:  58  swap
+00303:  58  notearg
+00304:  58  name "xs"
+00309:  58  getprop "Views"
+00314:  58  getprop "CombatUpgradeView_Notify_SoulSelectChange"
+00319:  58  notearg
+00320:  58  call 1
+00323:  58  pop
+00324:  59  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:46 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:64 ---
+loc   line  op
+----- ----  --
+main:
+00000:  65  this
+00001:  65  getprop "self"
+00006:  65  getprop "m_listener"
+00011:  65  dup
+00012:  65  callprop "isToMaxLevel"
+00017:  65  swap
+00018:  65  notearg
+00019:  65  call 0
+00022:  65  ifeq 89 (+67)
+00027:  66  name "xs"
+00032:  66  getprop "Views"
+00037:  66  getprop "Mgr"
+00042:  66  dup
+00043:  66  callprop "showToast"
+00048:  66  swap
+00049:  66  notearg
+00050:  66  name "xs"
+00055:  66  getprop "Tools"
+00060:  66  getprop "String"
+00065:  66  dup
+00066:  66  callprop "createString"
+00071:  66  swap
+00072:  66  notearg
+00073:  66  string "auto_name_496"
+00078:  66  notearg
+00079:  66  call 1
+00082:  66  notearg
+00083:  66  call 1
+00086:  66  pop
+00087:  67  undefined
+00088:  67  return
+00089:  69  this
+00090:  69  getprop "model"
+00095:  69  dup
+00096:  69  callprop "setSelectNum"
+00101:  69  swap
+00102:  69  notearg
+00103:  69  this
+00104:  69  getprop "self"
+00109:  69  getprop "m_listener"
+00114:  69  dup
+00115:  69  callprop "getMaxNeedNum"
+00120:  69  swap
+00121:  69  notearg
+00122:  69  this
+00123:  69  getprop "model"
+00128:  69  notearg
+00129:  69  call 1
+00132:  69  notearg
+00133:  69  call 1
+00136:  69  pop
+00137:  70  this
+00138:  70  getprop "icon"
+00143:  70  dup
+00144:  70  callprop "reloadData"
+00149:  70  swap
+00150:  70  notearg
+00151:  70  this
+00152:  70  getprop "model"
+00157:  70  notearg
+00158:  70  call 1
+00161:  70  pop
+00162:  71  this
+00163:  71  getprop "self"
+00168:  71  getprop "modelType"
+00173:  71  name "xs"
+00178:  71  getprop "Views"
+00183:  71  getprop "Table"
+00188:  71  getprop "CombatTableView_General"
+00193:  71  stricteq
+00194:  71  ifeq 279 (+85)
+00199:  73  name "xs"
+00204:  73  getprop "Profile"
+00209:  73  getprop "GameData"
+00214:  73  getprop "Mgr"
+00219:  73  dup
+00220:  73  callprop "getInstance"
+00225:  73  swap
+00226:  73  notearg
+00227:  73  call 0
+00230:  73  getprop "Combat"
+00235:  73  dup
+00236:  73  callprop "getNotify"
+00241:  73  swap
+00242:  73  notearg
+00243:  73  call 0
+00246:  73  dup
+00247:  73  callprop "postNotification"
+00252:  73  swap
+00253:  73  notearg
+00254:  73  name "xs"
+00259:  73  getprop "Views"
+00264:  73  getprop "CombatUpgradeView_Notify_GeneralSelectChange"
+00269:  73  notearg
+00270:  73  call 1
+00273:  73  pop
+00274:  73  goto 354 (+80)
+00279:  76  name "xs"
+00284:  76  getprop "Profile"
+00289:  76  getprop "GameData"
+00294:  76  getprop "Mgr"
+00299:  76  dup
+00300:  76  callprop "getInstance"
+00305:  76  swap
+00306:  76  notearg
+00307:  76  call 0
+00310:  76  getprop "Combat"
+00315:  76  dup
+00316:  76  callprop "getNotify"
+00321:  76  swap
+00322:  76  notearg
+00323:  76  call 0
+00326:  76  dup
+00327:  76  callprop "postNotification"
+00332:  76  swap
+00333:  76  notearg
+00334:  76  name "xs"
+00339:  76  getprop "Views"
+00344:  76  getprop "CombatUpgradeView_Notify_SoulSelectChange"
+00349:  76  notearg
+00350:  76  call 1
+00353:  76  pop
+00354:  77  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:64 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:82 ---
+loc   line  op
+----- ----  --
+main:
+00000:  83  this
+00001:  83  getprop "model"
+00006:  83  dup
+00007:  83  callprop "subSelectNum"
+00012:  83  swap
+00013:  83  notearg
+00014:  83  call 0
+00017:  83  pop
+00018:  84  this
+00019:  84  getprop "icon"
+00024:  84  dup
+00025:  84  callprop "reloadData"
+00030:  84  swap
+00031:  84  notearg
+00032:  84  this
+00033:  84  getprop "model"
+00038:  84  notearg
+00039:  84  call 1
+00042:  84  pop
+00043:  86  this
+00044:  86  getprop "self"
+00049:  86  getprop "modelType"
+00054:  86  name "xs"
+00059:  86  getprop "Views"
+00064:  86  getprop "Table"
+00069:  86  getprop "CombatTableView_General"
+00074:  86  stricteq
+00075:  86  ifeq 160 (+85)
+00080:  88  name "xs"
+00085:  88  getprop "Profile"
+00090:  88  getprop "GameData"
+00095:  88  getprop "Mgr"
+00100:  88  dup
+00101:  88  callprop "getInstance"
+00106:  88  swap
+00107:  88  notearg
+00108:  88  call 0
+00111:  88  getprop "Combat"
+00116:  88  dup
+00117:  88  callprop "getNotify"
+00122:  88  swap
+00123:  88  notearg
+00124:  88  call 0
+00127:  88  dup
+00128:  88  callprop "postNotification"
+00133:  88  swap
+00134:  88  notearg
+00135:  88  name "xs"
+00140:  88  getprop "Views"
+00145:  88  getprop "CombatUpgradeView_Notify_GeneralSelectChange"
+00150:  88  notearg
+00151:  88  call 1
+00154:  88  pop
+00155:  88  goto 235 (+80)
+00160:  91  name "xs"
+00165:  91  getprop "Profile"
+00170:  91  getprop "GameData"
+00175:  91  getprop "Mgr"
+00180:  91  dup
+00181:  91  callprop "getInstance"
+00186:  91  swap
+00187:  91  notearg
+00188:  91  call 0
+00191:  91  getprop "Combat"
+00196:  91  dup
+00197:  91  callprop "getNotify"
+00202:  91  swap
+00203:  91  notearg
+00204:  91  call 0
+00207:  91  dup
+00208:  91  callprop "postNotification"
+00213:  91  swap
+00214:  91  notearg
+00215:  91  name "xs"
+00220:  91  getprop "Views"
+00225:  91  getprop "CombatUpgradeView_Notify_SoulSelectChange"
+00230:  91  notearg
+00231:  91  call 1
+00234:  91  pop
+00235:  92  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:82 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:95 ---
+loc   line  op
+----- ----  --
+main:
+00000:  96  this
+00001:  96  getprop "model"
+00006:  96  dup
+00007:  96  callprop "setSelectNum"
+00012:  96  swap
+00013:  96  notearg
+00014:  96  zero
+00015:  96  notearg
+00016:  96  call 1
+00019:  96  pop
+00020:  97  this
+00021:  97  getprop "icon"
+00026:  97  dup
+00027:  97  callprop "reloadData"
+00032:  97  swap
+00033:  97  notearg
+00034:  97  this
+00035:  97  getprop "model"
+00040:  97  notearg
+00041:  97  call 1
+00044:  97  pop
+00045:  99  this
+00046:  99  getprop "self"
+00051:  99  getprop "modelType"
+00056:  99  name "xs"
+00061:  99  getprop "Views"
+00066:  99  getprop "Table"
+00071:  99  getprop "CombatTableView_General"
+00076:  99  stricteq
+00077:  99  ifeq 162 (+85)
+00082: 101  name "xs"
+00087: 101  getprop "Profile"
+00092: 101  getprop "GameData"
+00097: 101  getprop "Mgr"
+00102: 101  dup
+00103: 101  callprop "getInstance"
+00108: 101  swap
+00109: 101  notearg
+00110: 101  call 0
+00113: 101  getprop "Combat"
+00118: 101  dup
+00119: 101  callprop "getNotify"
+00124: 101  swap
+00125: 101  notearg
+00126: 101  call 0
+00129: 101  dup
+00130: 101  callprop "postNotification"
+00135: 101  swap
+00136: 101  notearg
+00137: 101  name "xs"
+00142: 101  getprop "Views"
+00147: 101  getprop "CombatUpgradeView_Notify_GeneralSelectChange"
+00152: 101  notearg
+00153: 101  call 1
+00156: 101  pop
+00157: 101  goto 237 (+80)
+00162: 104  name "xs"
+00167: 104  getprop "Profile"
+00172: 104  getprop "GameData"
+00177: 104  getprop "Mgr"
+00182: 104  dup
+00183: 104  callprop "getInstance"
+00188: 104  swap
+00189: 104  notearg
+00190: 104  call 0
+00193: 104  getprop "Combat"
+00198: 104  dup
+00199: 104  callprop "getNotify"
+00204: 104  swap
+00205: 104  notearg
+00206: 104  call 0
+00209: 104  dup
+00210: 104  callprop "postNotification"
+00215: 104  swap
+00216: 104  notearg
+00217: 104  name "xs"
+00222: 104  getprop "Views"
+00227: 104  getprop "CombatUpgradeView_Notify_SoulSelectChange"
+00232: 104  notearg
+00233: 104  call 1
+00236: 104  pop
+00237: 105  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:95 ---
+;; function object[3] setModelType
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] type
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:111 ---
+loc   line  op
+----- ----  --
+main:
+00000: 112  this
+00001: 112  getarg 0
+00004: 112  setprop "modelType"
+00009: 112  pop
+00010: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:111 ---
+;; function object[4] setListener
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] listener
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:115 ---
+loc   line  op
+----- ----  --
+main:
+00000: 116  this
+00001: 116  getarg 0
+00004: 116  setprop "m_listener"
+00009: 116  pop
+00010: 116  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:115 ---
+;; function object[5] getSelectIconPosArray
+;; function metadata object[5] nargs=0 bindings=3
+;; local[0] posArray
+;; local[1] i
+;; local[2] worldPos
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:119 ---
+loc   line  op
+----- ----  --
+main:
+00000: 120  newarray 0
+00004: 120  endinit
+00005: 120  setlocal 0
+00008: 120  pop
+00009: 121  zero
+00010: 121  setlocal 1
+00013: 121  pop
+00014: 121  goto 118 (+104)
+00019: 122  loophead
+00020: 122  this
+00021: 122  getprop "data"
+00026: 122  getlocal 1
+00029: 122  getelem
+00030: 122  dup
+00031: 122  callprop "isSelected"
+00036: 122  swap
+00037: 122  notearg
+00038: 122  call 0
+00041: 122  ifeq 103 (+62)
+00046: 123  this
+00047: 123  dup
+00048: 123  callprop "convertToWorldSpace"
+00053: 123  swap
+00054: 123  notearg
+00055: 123  this
+00056: 123  getprop "iconArray"
+00061: 123  getlocal 1
+00064: 123  getelem
+00065: 123  dup
+00066: 123  callprop "getPosition"
+00071: 123  swap
+00072: 123  notearg
+00073: 123  call 0
+00076: 123  notearg
+00077: 123  call 1
+00080: 123  setlocal 2
+00083: 123  pop
+00084: 125  getlocal 0
+00087: 125  dup
+00088: 125  callprop "push"
+00093: 125  swap
+00094: 125  notearg
+00095: 125  getlocal 2
+00098: 125  notearg
+00099: 125  call 1
+00102: 125  pop
+00103: 121  localinc 11
+00106: 121  getlocal 1
+00109: 121  pos
+00110: 121  dup
+00111: 121  one
+00112: 121  add
+00113: 121  setlocal 1
+00116: 121  pop
+00117: 121  pop
+00118: 121  loopentry
+00119: 121  getlocal 1
+00122: 121  this
+00123: 121  getprop "data"
+00128: 121  length "length"
+00133: 121  lt
+00134: 121  ifne 19 (-115)
+00139: 128  getlocal 0
+00142: 128  return
+00143: 128  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:119 ---
+;; function object[6] create
+;; function metadata object[6] nargs=2 bindings=3
+;; arg[0] data
+;; arg[1] type
+;; local[0] object
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:132 ---
+loc   line  op
+----- ----  --
+main:
+00000: 133  name "xs"
+00005: 133  getprop "Views"
+00010: 133  getprop "Table"
+00015: 133  getprop "CombatTableViewCell"
+00020: 133  undefined
+00021: 133  notearg
+00022: 133  new 0
+00025: 133  setlocal 0
+00028: 133  pop
+00029: 134  getlocal 0
+00032: 134  dup
+00033: 134  callprop "setModelType"
+00038: 134  swap
+00039: 134  notearg
+00040: 134  getarg 1
+00043: 134  notearg
+00044: 134  call 1
+00047: 134  pop
+00048: 135  getlocal 0
+00051: 135  and 75 (+24)
+00056: 135  pop
+00057: 135  getlocal 0
+00060: 135  dup
+00061: 135  callprop "initWithData"
+00066: 135  swap
+00067: 135  notearg
+00068: 135  getarg 0
+00071: 135  notearg
+00072: 135  call 1
+00075: 135  ifeq 84 (+9)
+00080: 136  getlocal 0
+00083: 136  return
+00084: 138  name "xs"
+00089: 138  dup
+00090: 138  callprop "assert"
+00095: 138  swap
+00096: 138  notearg
+00097: 138  false
+00098: 138  notearg
+00099: 138  string "xs.Views.Table.CombatTableViewCell.create error"
+00104: 138  notearg
+00105: 138  call 2
+00108: 138  pop
+00109: 139  null
+00110: 139  return
+00111: 139  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/CombatTableViewCell.js:132 ---

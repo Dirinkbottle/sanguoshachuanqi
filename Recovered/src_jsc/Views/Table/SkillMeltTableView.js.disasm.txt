@@ -1,0 +1,414 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/SkillMeltTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=109 object[0]
+;; FUNCTION-MAP kind=lambda offset=119 object[1]
+;; FUNCTION-MAP kind=lambda offset=129 object[2]
+;; FUNCTION-MAP kind=lambda offset=139 object[3]
+;; FUNCTION-MAP kind=lambda offset=149 object[4]
+;; FUNCTION-MAP kind=lambda offset=190 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   1  name "xs"
+00005:   1  string "SkillMeltTableView 123456"
+00010:   1  setprop "test_tt"
+00015:   1  popv
+00016:   2  name "xs"
+00021:   2  getprop "Views"
+00026:   2  getprop "Table"
+00031:   2  name "xs"
+00036:   2  getprop "Views"
+00041:   2  getprop "Table"
+00046:   2  getprop "BaseTableViewExtra"
+00051:   2  dup
+00052:   2  callprop "extend"
+00057:   2  swap
+00058:   2  notearg
+00059:   2  newinit 1
+00064:   4  string "SkillMeltTableView"
+00069:   4  initprop "name"
+00074:   6  newinit 1
+00079:   7  newarray 1
+00083:   8  name "xs"
+00088:   8  getprop "Constant_Notify_ModelChange_Skill"
+00093:   8  initelem_array 0
+00097:   8  endinit
+00098:   8  initprop "modelTypes"
+00103:   8  endinit
+00104:   8  initprop "Cfg"
+00109:  12  lambda (function () {
+    [sourceless code]
+})
+00114:  12  initprop "refreshData"
+00119:  28  lambda (function () {
+    [sourceless code]
+})
+00124:  28  initprop "createCell"
+00129:  44  lambda (function () {
+    [sourceless code]
+})
+00134:  44  initprop "makeViewSize"
+00139:  47  lambda (function () {
+    [sourceless code]
+})
+00144:  47  initprop "onFilterChange"
+00149:  53  lambda (function () {
+    [sourceless code]
+})
+00154:  53  initprop "setBaseTouchPriority"
+00159:  53  endinit
+00160:  53  notearg
+00161:  53  call 1
+00164:  53  setprop "SkillMeltTableView"
+00169:  53  popv
+00170:  59  name "xs"
+00175:  59  getprop "Views"
+00180:  59  getprop "Table"
+00185:  59  getprop "SkillMeltTableView"
+00190:  59  lambda (function () {
+    [sourceless code]
+})
+00195:  59  setprop "create"
+00200:  59  popv
+00201:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:1 ---
+;; function object[0] refreshData
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] params
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  name "xs"
+00005:  13  dup
+00006:  13  callprop "log_ck"
+00011:  13  swap
+00012:  13  notearg
+00013:  13  string "SkillMeltTableView refreshData"
+00018:  13  notearg
+00019:  13  call 1
+00022:  13  pop
+00023:  14  this
+00024:  14  getprop "_filterResult"
+00029:  14  null
+00030:  14  eq
+00031:  14  and 45 (+14)
+00036:  14  pop
+00037:  14  this
+00038:  14  getprop "_filterType"
+00043:  14  null
+00044:  14  eq
+00045:  14  ifeq 165 (+120)
+00050:  15  this
+00051:  15  name "xs"
+00056:  15  getprop "Profile"
+00061:  15  getprop "GameData"
+00066:  15  getprop "Mgr"
+00071:  15  dup
+00072:  15  callprop "getInstance"
+00077:  15  swap
+00078:  15  notearg
+00079:  15  call 0
+00082:  15  getprop "Skills"
+00087:  15  dup
+00088:  15  callprop "getAllWithDefaultSort"
+00093:  15  swap
+00094:  15  notearg
+00095:  15  call 0
+00098:  15  setprop "arrayModel"
+00103:  15  pop
+00104:  16  this
+00105:  16  getprop "arrayModel"
+00110:  16  dup
+00111:  16  callprop "sort"
+00116:  16  swap
+00117:  16  notearg
+00118:  16  name "xs"
+00123:  16  getprop "Tools"
+00128:  16  getprop "Sort"
+00133:  16  dup
+00134:  16  callprop "by"
+00139:  16  swap
+00140:  16  notearg
+00141:  16  name "xs"
+00146:  16  getprop "Constant_SortType_Skill_Default_Reverse"
+00151:  16  notearg
+00152:  16  call 1
+00155:  16  notearg
+00156:  16  call 1
+00159:  16  pop
+00160:  16  goto 301 (+141)
+00165:  18  newinit 1
+00170:  19  name "xs"
+00175:  19  getprop "Profile"
+00180:  19  getprop "GameData"
+00185:  19  getprop "Mgr"
+00190:  19  dup
+00191:  19  callprop "getInstance"
+00196:  19  swap
+00197:  19  notearg
+00198:  19  call 0
+00201:  19  getprop "Skills"
+00206:  19  dup
+00207:  19  callprop "getAllWithDefaultSort"
+00212:  19  swap
+00213:  19  notearg
+00214:  19  call 0
+00217:  19  initprop "data"
+00222:  20  this
+00223:  20  getprop "_filterResult"
+00228:  20  initprop "result"
+00233:  21  this
+00234:  21  getprop "_filterType"
+00239:  21  initprop "filterConditions"
+00244:  22  name "xs"
+00249:  22  getprop "Constant_SortType_Skill_Default_Reverse"
+00254:  22  initprop "sortConditions"
+00259:  22  endinit
+00260:  22  setlocal 0
+00263:  22  pop
+00264:  24  this
+00265:  24  name "xs"
+00270:  24  getprop "Tools"
+00275:  24  getprop "Filter"
+00280:  24  dup
+00281:  24  callprop "filterData"
+00286:  24  swap
+00287:  24  notearg
+00288:  24  getlocal 0
+00291:  24  notearg
+00292:  24  call 1
+00295:  24  setprop "arrayModel"
+00300:  24  pop
+00301:  25  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:12 ---
+;; function object[1] createCell
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  name "xs"
+00005:  29  dup
+00006:  29  callprop "log_ck"
+00011:  29  swap
+00012:  29  notearg
+00013:  29  string "SkillMeltTableView createCell"
+00018:  29  notearg
+00019:  29  call 1
+00022:  29  pop
+00023:  30  null
+00024:  30  setlocal 0
+00027:  30  pop
+00028:  31  getarg 0
+00031:  31  this
+00032:  31  getprop "arrayModel"
+00037:  31  length "length"
+00042:  31  ge
+00043:  31  ifeq 93 (+50)
+00048:  32  name "xs"
+00053:  32  getprop "Views"
+00058:  32  getprop "Table"
+00063:  32  getprop "Cell"
+00068:  32  getprop "SkillMeltTableCell"
+00073:  32  dup
+00074:  32  callprop "create"
+00079:  32  swap
+00080:  32  notearg
+00081:  32  call 0
+00084:  32  setlocal 0
+00087:  32  pop
+00088:  32  goto 144 (+56)
+00093:  34  name "xs"
+00098:  34  getprop "Views"
+00103:  34  getprop "Table"
+00108:  34  getprop "Cell"
+00113:  34  getprop "SkillMeltTableCell"
+00118:  34  dup
+00119:  34  callprop "create"
+00124:  34  swap
+00125:  34  notearg
+00126:  34  this
+00127:  34  getprop "arrayModel"
+00132:  34  getarg 0
+00135:  34  getelem
+00136:  34  notearg
+00137:  34  call 1
+00140:  34  setlocal 0
+00143:  34  pop
+00144:  36  getarg 0
+00147:  36  zero
+00148:  36  stricteq
+00149:  36  ifeq 178 (+29)
+00154:  37  getlocal 0
+00157:  37  dup
+00158:  37  callprop "setCellGuideTag"
+00163:  37  swap
+00164:  37  notearg
+00165:  37  uint16 4002
+00168:  37  notearg
+00169:  37  call 1
+00172:  37  pop
+00173:  37  goto 196 (+23)
+00178:  39  getlocal 0
+00181:  39  dup
+00182:  39  callprop "setCellGuideTag"
+00187:  39  swap
+00188:  39  notearg
+00189:  39  int8 -1
+00191:  39  notearg
+00192:  39  call 1
+00195:  39  pop
+00196:  41  getlocal 0
+00199:  41  return
+00200:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:28 ---
+;; function object[2] makeViewSize
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  name "xs"
+00005:  45  getprop "Views"
+00010:  45  getprop "TablePage"
+00015:  45  dup
+00016:  45  callprop "getTableViewSize"
+00021:  45  swap
+00022:  45  notearg
+00023:  45  call 0
+00026:  45  return
+00027:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:44 ---
+;; function object[3] onFilterChange
+;; function metadata object[3] nargs=2 bindings=2
+;; arg[0] filterType
+;; arg[1] filterResult
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:47 ---
+loc   line  op
+----- ----  --
+main:
+00000:  48  name "xs"
+00005:  48  dup
+00006:  48  callprop "log"
+00011:  48  swap
+00012:  48  notearg
+00013:  48  string "SkillMeltTableView onFilterChange "
+00018:  48  getarg 0
+00021:  48  add
+00022:  48  string ","
+00027:  48  add
+00028:  48  getarg 1
+00031:  48  add
+00032:  48  notearg
+00033:  48  call 1
+00036:  48  pop
+00037:  49  this
+00038:  49  getarg 0
+00041:  49  setprop "_filterType"
+00046:  49  pop
+00047:  50  this
+00048:  50  getarg 1
+00051:  50  setprop "_filterResult"
+00056:  50  pop
+00057:  51  this
+00058:  51  dup
+00059:  51  callprop "refreshDataAndReload"
+00064:  51  swap
+00065:  51  notearg
+00066:  51  call 0
+00069:  51  pop
+00070:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:47 ---
+;; function object[4] setBaseTouchPriority
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:53 ---
+loc   line  op
+----- ----  --
+main:
+00000:  54  this
+00001:  54  getarg 0
+00004:  54  setprop "m_baseTouchPriority"
+00009:  54  pop
+00010:  55  this
+00011:  55  dup
+00012:  55  callprop "setTouchPriority"
+00017:  55  swap
+00018:  55  notearg
+00019:  55  this
+00020:  55  getprop "m_baseTouchPriority"
+00025:  55  notearg
+00026:  55  call 1
+00029:  55  pop
+00030:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:53 ---
+;; function object[5] create
+;; function metadata object[5] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:59 ---
+loc   line  op
+----- ----  --
+main:
+00000:  60  name "xs"
+00005:  60  dup
+00006:  60  callprop "log_ck"
+00011:  60  swap
+00012:  60  notearg
+00013:  60  string "SkillMeltTableView create 789"
+00018:  60  notearg
+00019:  60  call 1
+00022:  60  pop
+00023:  61  name "xs"
+00028:  61  getprop "Views"
+00033:  61  getprop "Table"
+00038:  61  getprop "SkillMeltTableView"
+00043:  61  undefined
+00044:  61  notearg
+00045:  61  new 0
+00048:  61  setlocal 0
+00051:  61  pop
+00052:  62  getlocal 0
+00055:  62  and 75 (+20)
+00060:  62  pop
+00061:  62  getlocal 0
+00064:  62  dup
+00065:  62  callprop "init"
+00070:  62  swap
+00071:  62  notearg
+00072:  62  call 0
+00075:  62  ifeq 84 (+9)
+00080:  63  getlocal 0
+00083:  63  return
+00084:  65  this
+00085:  65  dup
+00086:  65  callprop "error"
+00091:  65  swap
+00092:  65  notearg
+00093:  65  string "SkillMeltTableView.create:"
+00098:  65  notearg
+00099:  65  call 1
+00102:  65  pop
+00103:  66  null
+00104:  66  return
+00105:  66  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillMeltTableView.js:59 ---

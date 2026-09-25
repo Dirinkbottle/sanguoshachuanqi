@@ -1,0 +1,682 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/Awake/AwakeBoxScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=99 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Scene"
+00010:   9  name "cc"
+00015:   9  getprop "Scene"
+00020:   9  dup
+00021:   9  callprop "extend"
+00026:   9  swap
+00027:   9  notearg
+00028:   9  newinit 1
+00033:  10  lambda (function () {
+    [sourceless code]
+})
+00038:  10  initprop "ctor"
+00043:  16  lambda (function () {
+    [sourceless code]
+})
+00048:  16  initprop "init"
+00053:  59  lambda (function () {
+    [sourceless code]
+})
+00058:  59  initprop "showOpenBoxResult"
+00063:  88  lambda (function () {
+    [sourceless code]
+})
+00068:  88  initprop "backFromOpenBoxResult"
+00073:  88  endinit
+00074:  88  notearg
+00075:  88  call 1
+00078:  88  setprop "AwakeBoxScene"
+00083:  88  popv
+00084: 115  name "xs"
+00089: 115  getprop "Scene"
+00094: 115  getprop "AwakeBoxScene"
+00099: 115  lambda (function () {
+    [sourceless code]
+})
+00104: 115  setprop "create"
+00109: 115  popv
+00110: 126  name "xs"
+00115: 126  getprop "Scene"
+00120: 126  getprop "Mgr"
+00125: 126  dup
+00126: 126  callprop "registerScene"
+00131: 126  swap
+00132: 126  notearg
+00133: 126  string "AwakeBoxScene"
+00138: 126  notearg
+00139: 126  newinit 1
+00144: 127  name "xs"
+00149: 127  getprop "Scene"
+00154: 127  getprop "AwakeBoxScene"
+00159: 127  initprop "class"
+00164: 128  newarray 3
+00168: 128  string "DuiJiuScene01"
+00173: 128  initelem_array 0
+00177: 128  string "SellTag"
+00182: 128  initelem_array 1
+00186: 128  string "SecretShop"
+00191: 128  initelem_array 2
+00195: 128  endinit
+00196: 128  initprop "area"
+00201: 130  name "xs"
+00206: 130  getprop "Constant_SceneType_Cmn"
+00211: 130  initprop "type"
+00216: 130  endinit
+00217: 130  notearg
+00218: 130  call 2
+00221: 130  popv
+00222: 131  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  pop
+00013:  12  name "cc"
+00018:  12  dup
+00019:  12  callprop "associateWithNative"
+00024:  12  swap
+00025:  12  notearg
+00026:  12  this
+00027:  12  notearg
+00028:  12  name "cc"
+00033:  12  getprop "Scene"
+00038:  12  notearg
+00039:  12  call 2
+00042:  12  pop
+00043:  12  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:10 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] visibleSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  this
+00001:  17  getarg 0
+00004:  17  setprop "params"
+00009:  17  pop
+00010:  20  name "cc"
+00015:  20  getprop "Director"
+00020:  20  dup
+00021:  20  callprop "getInstance"
+00026:  20  swap
+00027:  20  notearg
+00028:  20  call 0
+00031:  20  dup
+00032:  20  callprop "getVisibleSize"
+00037:  20  swap
+00038:  20  notearg
+00039:  20  call 0
+00042:  20  setlocal 0
+00045:  20  pop
+00046:  22  name "xs"
+00051:  22  getprop "Tools"
+00056:  22  getprop "UI"
+00061:  22  dup
+00062:  22  callprop "addBgByType"
+00067:  22  swap
+00068:  22  notearg
+00069:  22  this
+00070:  22  notearg
+00071:  22  name "xs"
+00076:  22  getprop "Constant_BgType_AwakeBox"
+00081:  22  notearg
+00082:  22  call 2
+00085:  22  pop
+00086:  25  this
+00087:  25  name "xs"
+00092:  25  getprop "Views"
+00097:  25  getprop "PlayerInfoBannerSimpleView"
+00102:  25  dup
+00103:  25  callprop "create"
+00108:  25  swap
+00109:  25  notearg
+00110:  25  call 0
+00113:  25  setprop "playerInfo"
+00118:  25  pop
+00119:  26  this
+00120:  26  getprop "playerInfo"
+00125:  26  dup
+00126:  26  callprop "setAnchorPoint"
+00131:  26  swap
+00132:  26  notearg
+00133:  26  name "cc"
+00138:  26  dup
+00139:  26  callprop "p"
+00144:  26  swap
+00145:  26  notearg
+00146:  26  zero
+00147:  26  notearg
+00148:  26  one
+00149:  26  notearg
+00150:  26  call 2
+00153:  26  notearg
+00154:  26  call 1
+00157:  26  pop
+00158:  27  name "xs"
+00163:  27  getprop "Utils"
+00168:  27  getprop "Node"
+00173:  27  dup
+00174:  27  callprop "attachNodes"
+00179:  27  swap
+00180:  27  notearg
+00181:  27  this
+00182:  27  notearg
+00183:  27  this
+00184:  27  getprop "playerInfo"
+00189:  27  notearg
+00190:  27  newinit 1
+00195:  27  string "lt"
+00200:  27  initprop "desc"
+00205:  27  true
+00206:  27  initprop "sc"
+00211:  27  endinit
+00212:  27  notearg
+00213:  27  call 3
+00216:  27  pop
+00217:  28  this
+00218:  28  getprop "playerInfo"
+00223:  28  dup
+00224:  28  callprop "setEffectMap"
+00229:  28  swap
+00230:  28  notearg
+00231:  29  name "xs"
+00236:  29  getprop "Constant_NodeEffectEvent_Disappear"
+00241:  29  notearg
+00242:  30  name "xs"
+00247:  30  getprop "Constant_NodeEffectType_MoveOut"
+00252:  30  notearg
+00253:  30  call 2
+00256:  30  pop
+00257:  34  this
+00258:  34  name "xs"
+00263:  34  getprop "Views"
+00268:  34  getprop "TablePage"
+00273:  34  dup
+00274:  34  callprop "create"
+00279:  34  swap
+00280:  34  notearg
+00281:  34  name "cc"
+00286:  34  dup
+00287:  34  callprop "size"
+00292:  34  swap
+00293:  34  notearg
+00294:  34  getlocal 0
+00297:  34  getprop "width"
+00302:  35  name "xs"
+00307:  35  getprop "Views"
+00312:  35  getprop "MainMenuView"
+00317:  35  getprop "Width"
+00322:  35  sub
+00323:  35  notearg
+00324:  35  getlocal 0
+00327:  35  getprop "height"
+00332:  35  int8 50
+00334:  35  sub
+00335:  35  notearg
+00336:  35  call 2
+00339:  35  notearg
+00340:  35  call 1
+00343:  35  setprop "pageView"
+00348:  35  pop
+00349:  36  this
+00350:  36  getprop "pageView"
+00355:  36  dup
+00356:  36  callprop "setEffectMap"
+00361:  36  swap
+00362:  36  notearg
+00363:  37  name "xs"
+00368:  37  getprop "Constant_NodeEffectEvent_Disappear"
+00373:  37  notearg
+00374:  38  name "xs"
+00379:  38  getprop "Constant_NodeEffectType_Hide"
+00384:  38  notearg
+00385:  38  call 2
+00388:  38  pop
+00389:  42  this
+00390:  42  getprop "pageView"
+00395:  42  dup
+00396:  42  callprop "addPageWhitConstruct"
+00401:  42  swap
+00402:  42  notearg
+00403:  42  name "xs"
+00408:  42  getprop "Factorys"
+00413:  42  getprop "String"
+00418:  42  dup
+00419:  42  callprop "create"
+00424:  42  swap
+00425:  42  notearg
+00426:  42  string "AwakeBoxPageTitle"
+00431:  42  notearg
+00432:  42  call 1
+00435:  42  notearg
+00436:  43  name "xs"
+00441:  43  getprop "Views"
+00446:  43  getprop "AwakeBoxView"
+00451:  43  notearg
+00452:  43  newinit 1
+00457:  43  this
+00458:  43  initprop "listener"
+00463:  43  endinit
+00464:  43  notearg
+00465:  43  call 3
+00468:  43  pop
+00469:  46  name "xs"
+00474:  46  getprop "Utils"
+00479:  46  getprop "Node"
+00484:  46  dup
+00485:  46  callprop "attachNodes"
+00490:  46  swap
+00491:  46  notearg
+00492:  46  this
+00493:  46  notearg
+00494:  46  this
+00495:  46  getprop "pageView"
+00500:  46  notearg
+00501:  46  newinit 1
+00506:  46  string "lb"
+00511:  46  initprop "desc"
+00516:  46  true
+00517:  46  initprop "sc"
+00522:  46  endinit
+00523:  46  notearg
+00524:  46  call 3
+00527:  46  pop
+00528:  50  this
+00529:  50  name "xs"
+00534:  50  getprop "Tools"
+00539:  50  getprop "UI"
+00544:  50  dup
+00545:  50  callprop "addShortcutBoard"
+00550:  50  swap
+00551:  50  notearg
+00552:  50  this
+00553:  50  notearg
+00554:  50  true
+00555:  50  notearg
+00556:  50  call 2
+00559:  50  setprop "sideMenu"
+00564:  50  pop
+00565:  51  this
+00566:  51  getprop "sideMenu"
+00571:  51  dup
+00572:  51  callprop "setEffectMap"
+00577:  51  swap
+00578:  51  notearg
+00579:  52  name "xs"
+00584:  52  getprop "Constant_NodeEffectEvent_Disappear"
+00589:  52  notearg
+00590:  53  name "xs"
+00595:  53  getprop "Constant_NodeEffectType_MoveOut"
+00600:  53  notearg
+00601:  53  call 2
+00604:  53  pop
+00605:  56  true
+00606:  56  return
+00607:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:16 ---
+;; function object[2] showOpenBoxResult
+;; function metadata object[2] nargs=2 bindings=3
+;; arg[0] type
+;; arg[1] param
+;; local[0] data
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=243 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:59 ---
+loc   line  op
+----- ----  --
+main:
+00000:  61  getarg 0
+00003:  61  one
+00004:  61  eq
+00005:  61  ifeq 52 (+47)
+00010:  62  this
+00011:  62  name "xs"
+00016:  62  getprop "Views"
+00021:  62  getprop "AwakeBoxResultView"
+00026:  62  dup
+00027:  62  callprop "create"
+00032:  62  swap
+00033:  62  notearg
+00034:  62  getarg 1
+00037:  62  notearg
+00038:  62  call 1
+00041:  62  setprop "boxResultView"
+00046:  62  pop
+00047:  62  goto 89 (+42)
+00052:  64  this
+00053:  64  name "xs"
+00058:  64  getprop "Views"
+00063:  64  getprop "AwakeBoxResultView_Ten"
+00068:  64  dup
+00069:  64  callprop "create"
+00074:  64  swap
+00075:  64  notearg
+00076:  64  getarg 1
+00079:  64  notearg
+00080:  64  call 1
+00083:  64  setprop "boxResultView"
+00088:  64  pop
+00089:  68  this
+00090:  68  getprop "boxResultView"
+00095:  68  dup
+00096:  68  callprop "setListener"
+00101:  68  swap
+00102:  68  notearg
+00103:  68  this
+00104:  68  notearg
+00105:  68  call 1
+00108:  68  pop
+00109:  69  this
+00110:  69  getprop "boxResultView"
+00115:  69  dup
+00116:  69  callprop "retain"
+00121:  69  swap
+00122:  69  notearg
+00123:  69  call 0
+00126:  69  pop
+00127:  73  newinit 1
+00132:  73  endinit
+00133:  73  setlocal 0
+00136:  73  pop
+00137:  74  getlocal 0
+00140:  74  name "cc"
+00145:  74  dup
+00146:  74  callprop "rect"
+00151:  74  swap
+00152:  74  notearg
+00153:  74  zero
+00154:  74  notearg
+00155:  74  zero
+00156:  74  notearg
+00157:  74  zero
+00158:  74  notearg
+00159:  74  zero
+00160:  74  notearg
+00161:  74  call 4
+00164:  74  setprop "rect"
+00169:  74  pop
+00170:  75  getlocal 0
+00173:  75  zero
+00174:  75  setprop "delay"
+00179:  75  pop
+00180:  76  getlocal 0
+00183:  76  false
+00184:  76  setprop "isClickHand"
+00189:  76  pop
+00190:  77  name "xs"
+00195:  77  getprop "Views"
+00200:  77  getprop "Mgr"
+00205:  77  dup
+00206:  77  callprop "showHollowOutLayer"
+00211:  77  swap
+00212:  77  notearg
+00213:  77  getlocal 0
+00216:  77  notearg
+00217:  77  this
+00218:  77  notearg
+00219:  77  call 2
+00222:  77  pop
+00223:  79  this
+00224:  79  dup
+00225:  79  callprop "runEffectAction"
+00230:  79  swap
+00231:  79  notearg
+00232:  79  name "xs"
+00237:  79  getprop "Constant_NodeEffectEvent_Disappear"
+00242:  79  notearg
+00243:  80  lambda (function () {
+    [sourceless code]
+})
+00248:  80  dup
+00249:  80  callprop "bind"
+00254:  80  swap
+00255:  80  notearg
+00256:  84  this
+00257:  84  notearg
+00258:  84  call 1
+00261:  84  notearg
+00262:  84  call 2
+00265:  84  pop
+00266:  84  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:59 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:80 ---
+loc   line  op
+----- ----  --
+main:
+00000:  81  name "xs"
+00005:  81  getprop "Views"
+00010:  81  getprop "Mgr"
+00015:  81  dup
+00016:  81  callprop "hideHollowOutLayer"
+00021:  81  swap
+00022:  81  notearg
+00023:  81  this
+00024:  81  notearg
+00025:  81  call 1
+00028:  81  pop
+00029:  82  this
+00030:  82  dup
+00031:  82  callprop "addChild"
+00036:  82  swap
+00037:  82  notearg
+00038:  82  this
+00039:  82  getprop "boxResultView"
+00044:  82  notearg
+00045:  82  call 1
+00048:  82  pop
+00049:  83  this
+00050:  83  getprop "boxResultView"
+00055:  83  dup
+00056:  83  callprop "release"
+00061:  83  swap
+00062:  83  notearg
+00063:  83  call 0
+00066:  83  pop
+00067:  83  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:80 ---
+;; function object[3] backFromOpenBoxResult
+;; function metadata object[3] nargs=0 bindings=2
+;; local[0] data
+;; local[1] _modelMap
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=116 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:88 ---
+loc   line  op
+----- ----  --
+main:
+00000:  90  newinit 1
+00005:  90  endinit
+00006:  90  setlocal 0
+00009:  90  pop
+00010:  91  getlocal 0
+00013:  91  name "cc"
+00018:  91  dup
+00019:  91  callprop "rect"
+00024:  91  swap
+00025:  91  notearg
+00026:  91  zero
+00027:  91  notearg
+00028:  91  zero
+00029:  91  notearg
+00030:  91  zero
+00031:  91  notearg
+00032:  91  zero
+00033:  91  notearg
+00034:  91  call 4
+00037:  91  setprop "rect"
+00042:  91  pop
+00043:  92  getlocal 0
+00046:  92  zero
+00047:  92  setprop "delay"
+00052:  92  pop
+00053:  93  getlocal 0
+00056:  93  false
+00057:  93  setprop "isClickHand"
+00062:  93  pop
+00063:  94  name "xs"
+00068:  94  getprop "Views"
+00073:  94  getprop "Mgr"
+00078:  94  dup
+00079:  94  callprop "showHollowOutLayer"
+00084:  94  swap
+00085:  94  notearg
+00086:  94  getlocal 0
+00089:  94  notearg
+00090:  94  this
+00091:  94  notearg
+00092:  94  call 2
+00095:  94  pop
+00096:  95  this
+00097:  95  dup
+00098:  95  callprop "runEffectAction"
+00103:  95  swap
+00104:  95  notearg
+00105:  95  name "xs"
+00110:  95  getprop "Constant_NodeEffectEvent_Revert"
+00115:  95  notearg
+00116:  96  lambda (function () {
+    [sourceless code]
+})
+00121:  96  dup
+00122:  96  callprop "bind"
+00127:  96  swap
+00128:  96  notearg
+00129:  98  this
+00130:  98  notearg
+00131:  98  call 1
+00134:  98  notearg
+00135:  98  call 2
+00138:  98  pop
+00139: 101  name "xs"
+00144: 101  getprop "Scene"
+00149: 101  getprop "Mgr"
+00154: 101  dup
+00155: 101  callprop "loadStatusAndClear"
+00160: 101  swap
+00161: 101  notearg
+00162: 101  string "Toast_RandEvent"
+00167: 101  notearg
+00168: 101  call 1
+00171: 101  setlocal 1
+00174: 101  pop
+00175: 102  getlocal 1
+00178: 102  ifeq 220 (+42)
+00183: 103  name "xs"
+00188: 103  getprop "Views"
+00193: 103  getprop "Mgr"
+00198: 103  dup
+00199: 103  callprop "showDialogByName"
+00204: 103  swap
+00205: 103  notearg
+00206: 103  string "RandEvent"
+00211: 103  notearg
+00212: 103  getlocal 1
+00215: 103  notearg
+00216: 103  call 2
+00219: 103  pop
+00220: 104  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:88 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:96 ---
+loc   line  op
+----- ----  --
+main:
+00000:  97  name "xs"
+00005:  97  getprop "Views"
+00010:  97  getprop "Mgr"
+00015:  97  dup
+00016:  97  callprop "hideHollowOutLayer"
+00021:  97  swap
+00022:  97  notearg
+00023:  97  this
+00024:  97  notearg
+00025:  97  call 1
+00028:  97  pop
+00029:  97  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:96 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] params
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:115 ---
+loc   line  op
+----- ----  --
+main:
+00000: 116  name "xs"
+00005: 116  getprop "Scene"
+00010: 116  getprop "AwakeBoxScene"
+00015: 116  undefined
+00016: 116  notearg
+00017: 116  new 0
+00020: 116  setlocal 0
+00023: 116  pop
+00024: 117  getlocal 0
+00027: 117  and 51 (+24)
+00032: 117  pop
+00033: 117  getlocal 0
+00036: 117  dup
+00037: 117  callprop "init"
+00042: 117  swap
+00043: 117  notearg
+00044: 117  getarg 0
+00047: 117  notearg
+00048: 117  call 1
+00051: 117  ifeq 87 (+36)
+00056: 118  name "xs"
+00061: 118  getprop "Views"
+00066: 118  getprop "Mgr"
+00071: 118  dup
+00072: 118  callprop "dismissLoadingLayer"
+00077: 118  swap
+00078: 118  notearg
+00079: 118  call 0
+00082: 118  pop
+00083: 119  getlocal 0
+00086: 119  return
+00087: 122  null
+00088: 122  return
+00089: 122  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/Awake/AwakeBoxScene.js:115 ---

@@ -1,0 +1,330 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/SkillTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=93 object[0]
+;; FUNCTION-MAP kind=lambda offset=103 object[1]
+;; FUNCTION-MAP kind=lambda offset=113 object[2]
+;; FUNCTION-MAP kind=lambda offset=123 object[3]
+;; FUNCTION-MAP kind=lambda offset=164 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   1  name "xs"
+00005:   1  getprop "Views"
+00010:   1  getprop "Table"
+00015:   1  name "xs"
+00020:   1  getprop "Views"
+00025:   1  getprop "Table"
+00030:   1  getprop "BaseTableViewExtra"
+00035:   1  dup
+00036:   1  callprop "extend"
+00041:   1  swap
+00042:   1  notearg
+00043:   1  newinit 1
+00048:   3  string "SkillTableView"
+00053:   3  initprop "name"
+00058:   5  newinit 1
+00063:   6  newarray 1
+00067:   7  name "xs"
+00072:   7  getprop "Constant_Notify_ModelChange_Skill"
+00077:   7  initelem_array 0
+00081:   7  endinit
+00082:   7  initprop "modelTypes"
+00087:   7  endinit
+00088:   7  initprop "Cfg"
+00093:  11  lambda (function () {
+    [sourceless code]
+})
+00098:  11  initprop "refreshData"
+00103:  35  lambda (function () {
+    [sourceless code]
+})
+00108:  35  initprop "createCell"
+00113:  45  lambda (function () {
+    [sourceless code]
+})
+00118:  45  initprop "makeViewSize"
+00123:  48  lambda (function () {
+    [sourceless code]
+})
+00128:  48  initprop "onFilterChange"
+00133:  48  endinit
+00134:  48  notearg
+00135:  48  call 1
+00138:  48  setprop "SkillTableView"
+00143:  48  popv
+00144:  56  name "xs"
+00149:  56  getprop "Views"
+00154:  56  getprop "Table"
+00159:  56  getprop "SkillTableView"
+00164:  56  lambda (function () {
+    [sourceless code]
+})
+00169:  56  setprop "create"
+00174:  56  popv
+00175:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:1 ---
+;; function object[0] refreshData
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] params
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  getprop "_filterResult"
+00006:  12  null
+00007:  12  eq
+00008:  12  and 22 (+14)
+00013:  12  pop
+00014:  12  this
+00015:  12  getprop "_filterType"
+00020:  12  null
+00021:  12  eq
+00022:  12  ifeq 142 (+120)
+00027:  14  this
+00028:  14  name "xs"
+00033:  14  getprop "Profile"
+00038:  14  getprop "GameData"
+00043:  14  getprop "Mgr"
+00048:  14  dup
+00049:  14  callprop "getInstance"
+00054:  14  swap
+00055:  14  notearg
+00056:  14  call 0
+00059:  14  getprop "Skills"
+00064:  14  dup
+00065:  14  callprop "getAllWithDefaultSort"
+00070:  14  swap
+00071:  14  notearg
+00072:  14  call 0
+00075:  14  setprop "arrayModel"
+00080:  14  pop
+00081:  15  this
+00082:  15  getprop "arrayModel"
+00087:  15  dup
+00088:  15  callprop "sort"
+00093:  15  swap
+00094:  15  notearg
+00095:  15  name "xs"
+00100:  15  getprop "Tools"
+00105:  15  getprop "Sort"
+00110:  15  dup
+00111:  15  callprop "by"
+00116:  15  swap
+00117:  15  notearg
+00118:  15  name "xs"
+00123:  15  getprop "Constant_SortType_Skill_DefaultWithIsOnGeneral"
+00128:  15  notearg
+00129:  15  call 1
+00132:  15  notearg
+00133:  15  call 1
+00136:  15  pop
+00137:  15  goto 278 (+141)
+00142:  17  newinit 1
+00147:  18  name "xs"
+00152:  18  getprop "Profile"
+00157:  18  getprop "GameData"
+00162:  18  getprop "Mgr"
+00167:  18  dup
+00168:  18  callprop "getInstance"
+00173:  18  swap
+00174:  18  notearg
+00175:  18  call 0
+00178:  18  getprop "Skills"
+00183:  18  dup
+00184:  18  callprop "getAllWithDefaultSort"
+00189:  18  swap
+00190:  18  notearg
+00191:  18  call 0
+00194:  18  initprop "data"
+00199:  19  this
+00200:  19  getprop "_filterResult"
+00205:  19  initprop "result"
+00210:  20  this
+00211:  20  getprop "_filterType"
+00216:  20  initprop "filterConditions"
+00221:  21  name "xs"
+00226:  21  getprop "Constant_SortType_Skill_DefaultWithIsOnGeneral"
+00231:  21  initprop "sortConditions"
+00236:  21  endinit
+00237:  21  setlocal 0
+00240:  21  pop
+00241:  23  this
+00242:  23  name "xs"
+00247:  23  getprop "Tools"
+00252:  23  getprop "Filter"
+00257:  23  dup
+00258:  23  callprop "filterData"
+00263:  23  swap
+00264:  23  notearg
+00265:  23  getlocal 0
+00268:  23  notearg
+00269:  23  call 1
+00272:  23  setprop "arrayModel"
+00277:  23  pop
+00278:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:11 ---
+;; function object[1] createCell
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:35 ---
+loc   line  op
+----- ----  --
+main:
+00000:  36  null
+00001:  36  setlocal 0
+00004:  36  pop
+00005:  37  getarg 0
+00008:  37  this
+00009:  37  getprop "arrayModel"
+00014:  37  length "length"
+00019:  37  ge
+00020:  37  ifeq 70 (+50)
+00025:  38  name "xs"
+00030:  38  getprop "Views"
+00035:  38  getprop "Table"
+00040:  38  getprop "Cell"
+00045:  38  getprop "SkillTableViewCell"
+00050:  38  dup
+00051:  38  callprop "create"
+00056:  38  swap
+00057:  38  notearg
+00058:  38  call 0
+00061:  38  setlocal 0
+00064:  38  pop
+00065:  38  goto 121 (+56)
+00070:  40  name "xs"
+00075:  40  getprop "Views"
+00080:  40  getprop "Table"
+00085:  40  getprop "Cell"
+00090:  40  getprop "SkillTableViewCell"
+00095:  40  dup
+00096:  40  callprop "create"
+00101:  40  swap
+00102:  40  notearg
+00103:  40  this
+00104:  40  getprop "arrayModel"
+00109:  40  getarg 0
+00112:  40  getelem
+00113:  40  notearg
+00114:  40  call 1
+00117:  40  setlocal 0
+00120:  40  pop
+00121:  42  getlocal 0
+00124:  42  return
+00125:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:35 ---
+;; function object[2] makeViewSize
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  name "xs"
+00005:  46  getprop "Views"
+00010:  46  getprop "TablePage"
+00015:  46  dup
+00016:  46  callprop "getTableViewSize"
+00021:  46  swap
+00022:  46  notearg
+00023:  46  call 0
+00026:  46  return
+00027:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:45 ---
+;; function object[3] onFilterChange
+;; function metadata object[3] nargs=2 bindings=2
+;; arg[0] filterType
+;; arg[1] filterResult
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:48 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  name "xs"
+00005:  49  dup
+00006:  49  callprop "log"
+00011:  49  swap
+00012:  49  notearg
+00013:  49  string "EquipmentTableView onFilterChange "
+00018:  49  getarg 0
+00021:  49  add
+00022:  49  string ","
+00027:  49  add
+00028:  49  getarg 1
+00031:  49  add
+00032:  49  notearg
+00033:  49  call 1
+00036:  49  pop
+00037:  50  this
+00038:  50  getarg 0
+00041:  50  setprop "_filterType"
+00046:  50  pop
+00047:  51  this
+00048:  51  getarg 1
+00051:  51  setprop "_filterResult"
+00056:  51  pop
+00057:  52  this
+00058:  52  dup
+00059:  52  callprop "refreshDataAndReload"
+00064:  52  swap
+00065:  52  notearg
+00066:  52  call 0
+00069:  52  pop
+00070:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:48 ---
+;; function object[4] create
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  57  name "xs"
+00005:  57  getprop "Views"
+00010:  57  getprop "Table"
+00015:  57  getprop "SkillTableView"
+00020:  57  undefined
+00021:  57  notearg
+00022:  57  new 0
+00025:  57  setlocal 0
+00028:  57  pop
+00029:  58  getlocal 0
+00032:  58  and 52 (+20)
+00037:  58  pop
+00038:  58  getlocal 0
+00041:  58  dup
+00042:  58  callprop "init"
+00047:  58  swap
+00048:  58  notearg
+00049:  58  call 0
+00052:  58  ifeq 61 (+9)
+00057:  59  getlocal 0
+00060:  59  return
+00061:  61  this
+00062:  61  dup
+00063:  61  callprop "error"
+00068:  61  swap
+00069:  61  notearg
+00070:  61  string "SkillTableView.create:"
+00075:  61  notearg
+00076:  61  call 1
+00079:  61  pop
+00080:  62  null
+00081:  62  return
+00082:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/SkillTableView.js:56 ---

@@ -1,0 +1,363 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/MagicalEqus.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=143 object[0]
+;; FUNCTION-MAP kind=lambda offset=153 object[1]
+;; FUNCTION-MAP kind=lambda offset=163 object[2]
+;; FUNCTION-MAP kind=lambda offset=173 object[3]
+;; FUNCTION-MAP kind=lambda offset=214 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Profile"
+00010:   5  getprop "GameData"
+00015:   5  name "xs"
+00020:   5  getprop "Profile"
+00025:   5  getprop "GameData"
+00030:   5  getprop "Base"
+00035:   5  dup
+00036:   5  callprop "extend"
+00041:   5  swap
+00042:   5  notearg
+00043:   5  newinit 1
+00048:   7  name "xs"
+00053:   7  getprop "Debug"
+00058:   7  getprop "emptyFunc"
+00063:   7  initprop "log"
+00068:   8  name "xs"
+00073:   8  getprop "Debug"
+00078:   8  getprop "emptyFunc"
+00083:   8  initprop "dump"
+00088:  10  string "xs.Profile.GameData.MagicalEqus"
+00093:  10  initprop "name"
+00098:  11  name "xs"
+00103:  11  getprop "Constant_GameData_MagicalEqu"
+00108:  11  initprop "nameType"
+00113:  12  name "xs"
+00118:  12  getprop "Models"
+00123:  12  getprop "MagicalEqu"
+00128:  12  initprop "modelName"
+00133:  14  string ""
+00138:  14  initprop "sortBy"
+00143:  20  lambda (function () {
+    [sourceless code]
+})
+00148:  20  initprop "init"
+00153:  28  lambda (function () {
+    [sourceless code]
+})
+00158:  28  initprop "getByGeneralId"
+00163:  40  lambda (function () {
+    [sourceless code]
+})
+00168:  40  initprop "_updateNotice"
+00173:  46  lambda (function () {
+    [sourceless code]
+})
+00178:  46  initprop "getIndexByGeneralId"
+00183:  46  endinit
+00184:  46  notearg
+00185:  46  call 1
+00188:  46  setprop "MagicalEqus"
+00193:  46  popv
+00194:  62  name "xs"
+00199:  62  getprop "Profile"
+00204:  62  getprop "GameData"
+00209:  62  getprop "MagicalEqus"
+00214:  62  lambda (function () {
+    [sourceless code]
+})
+00219:  62  setprop "create"
+00224:  62  popv
+00225:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:20 ---
+loc   line  op
+----- ----  --
+main:
+00000:  21  this
+00001:  21  dup
+00002:  21  callprop "_super"
+00007:  21  swap
+00008:  21  notearg
+00009:  21  getarg 0
+00012:  21  notearg
+00013:  21  call 1
+00016:  21  pop
+00017:  22  this
+00018:  22  getprop "dataRef"
+00023:  22  dup
+00024:  22  callprop "getNotifyCenter"
+00029:  22  swap
+00030:  22  notearg
+00031:  22  call 0
+00034:  22  dup
+00035:  22  callprop "addObserver"
+00040:  22  swap
+00041:  22  notearg
+00042:  22  this
+00043:  22  notearg
+00044:  22  this
+00045:  22  getprop "clearCache"
+00050:  22  notearg
+00051:  22  name "xs"
+00056:  22  getprop "Constant_Notify_ModelChange_MagicalEqus_SortChange"
+00061:  22  notearg
+00062:  22  call 3
+00065:  22  pop
+00066:  23  true
+00067:  23  return
+00068:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:20 ---
+;; function object[1] getByGeneralId
+;; function metadata object[1] nargs=1 bindings=3
+;; arg[0] general_id
+;; local[0] _obj_list
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  this
+00001:  29  dup
+00002:  29  callprop "getAllWithDefaultSort"
+00007:  29  swap
+00008:  29  notearg
+00009:  29  call 0
+00012:  29  setlocal 0
+00015:  29  pop
+00016:  30  zero
+00017:  30  setlocal 1
+00020:  30  pop
+00021:  30  goto 77 (+56)
+00026:  31  loophead
+00027:  31  getlocal 0
+00030:  31  getlocal 1
+00033:  31  getelem
+00034:  31  dup
+00035:  31  callprop "getGeneralId"
+00040:  31  swap
+00041:  31  notearg
+00042:  31  call 0
+00045:  31  getarg 0
+00048:  31  eq
+00049:  31  ifeq 62 (+13)
+00054:  32  getlocal 0
+00057:  32  getlocal 1
+00060:  32  getelem
+00061:  32  return
+00062:  30  localinc 11
+00065:  30  getlocal 1
+00068:  30  pos
+00069:  30  dup
+00070:  30  one
+00071:  30  add
+00072:  30  setlocal 1
+00075:  30  pop
+00076:  30  pop
+00077:  30  loopentry
+00078:  30  getlocal 1
+00081:  30  getlocal 0
+00084:  30  length "length"
+00089:  30  lt
+00090:  30  ifne 26 (-64)
+00095:  36  null
+00096:  36  return
+00097:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:28 ---
+;; function object[2] _updateNotice
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:40 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  name "xs"
+00005:  41  getprop "Utils"
+00010:  41  getprop "Notify"
+00015:  41  dup
+00016:  41  callprop "postNotification"
+00021:  41  swap
+00022:  41  notearg
+00023:  41  name "xs"
+00028:  41  getprop "Constant_Notify_EagicalEqus_Change"
+00033:  41  notearg
+00034:  41  this
+00035:  41  notearg
+00036:  41  call 2
+00039:  41  pop
+00040:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:40 ---
+;; function object[3] getIndexByGeneralId
+;; function metadata object[3] nargs=1 bindings=4
+;; arg[0] general_id
+;; local[0] index
+;; local[1] _obj_list
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  zero
+00001:  47  setlocal 0
+00004:  47  pop
+00005:  48  this
+00006:  48  dup
+00007:  48  callprop "getAllWithDefaultSort"
+00012:  48  swap
+00013:  48  notearg
+00014:  48  call 0
+00017:  48  setlocal 1
+00020:  48  pop
+00021:  49  zero
+00022:  49  setlocal 2
+00025:  49  pop
+00026:  49  goto 85 (+59)
+00031:  50  loophead
+00032:  50  getlocal 1
+00035:  50  getlocal 2
+00038:  50  getelem
+00039:  50  dup
+00040:  50  callprop "getGeneralId"
+00045:  50  swap
+00046:  50  notearg
+00047:  50  call 0
+00050:  50  getarg 0
+00053:  50  eq
+00054:  50  ifeq 70 (+16)
+00059:  51  getlocal 2
+00062:  51  setlocal 0
+00065:  51  pop
+00066:  52  getlocal 0
+00069:  52  return
+00070:  49  localinc 11
+00073:  49  getlocal 2
+00076:  49  pos
+00077:  49  dup
+00078:  49  one
+00079:  49  add
+00080:  49  setlocal 2
+00083:  49  pop
+00084:  49  pop
+00085:  49  loopentry
+00086:  49  getlocal 2
+00089:  49  getlocal 1
+00092:  49  length "length"
+00097:  49  lt
+00098:  49  ifne 31 (-67)
+00103:  56  getlocal 0
+00106:  56  return
+00107:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:46 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  64  name "xs"
+00005:  64  dup
+00006:  64  callprop "log_hsq"
+00011:  64  swap
+00012:  64  notearg
+00013:  64  string "param222"
+00018:  64  notearg
+00019:  64  call 1
+00022:  64  pop
+00023:  65  getarg 0
+00026:  65  getprop "play_id"
+00031:  65  setlocal 0
+00034:  65  pop
+00035:  66  name "xs"
+00040:  66  getprop "Profile"
+00045:  66  getprop "GameData"
+00050:  66  getprop "MagicalEqus"
+00055:  66  setlocal 1
+00058:  66  pop
+00059:  67  name "xs"
+00064:  67  getprop "Utils"
+00069:  67  dup
+00070:  67  callprop "isSet"
+00075:  67  swap
+00076:  67  notearg
+00077:  67  getlocal 1
+00080:  67  getprop "_instance"
+00085:  67  notearg
+00086:  67  call 1
+00089:  67  or 108 (+19)
+00094:  67  pop
+00095:  67  getlocal 1
+00098:  67  newarray 0
+00102:  67  endinit
+00103:  67  setprop "_instance"
+00108:  67  pop
+00109:  69  getlocal 1
+00112:  69  getprop "_instance"
+00117:  69  getlocal 0
+00120:  69  getelem
+00121:  69  ifeq 139 (+18)
+00126:  70  getlocal 1
+00129:  70  getprop "_instance"
+00134:  70  getlocal 0
+00137:  70  getelem
+00138:  70  return
+00139:  73  getlocal 1
+00142:  73  undefined
+00143:  73  notearg
+00144:  73  new 0
+00147:  73  setlocal 2
+00150:  73  pop
+00151:  74  getlocal 2
+00154:  74  and 178 (+24)
+00159:  74  pop
+00160:  74  getlocal 2
+00163:  74  dup
+00164:  74  callprop "init"
+00169:  74  swap
+00170:  74  notearg
+00171:  74  getarg 0
+00174:  74  notearg
+00175:  74  call 1
+00178:  74  ifeq 203 (+25)
+00183:  75  getlocal 1
+00186:  75  getprop "_instance"
+00191:  75  getlocal 0
+00194:  75  getlocal 2
+00197:  75  setelem
+00198:  75  pop
+00199:  76  getlocal 2
+00202:  76  return
+00203:  79  name "xs"
+00208:  79  dup
+00209:  79  callprop "error"
+00214:  79  swap
+00215:  79  notearg
+00216:  79  string "xs.Profile.GameData.MagicalEqus.create failed"
+00221:  79  notearg
+00222:  79  call 1
+00225:  79  pop
+00226:  80  null
+00227:  80  return
+00228:  80  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MagicalEqus.js:62 ---

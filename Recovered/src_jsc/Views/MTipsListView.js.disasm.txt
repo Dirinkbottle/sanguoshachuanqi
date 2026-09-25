@@ -1,0 +1,408 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/MTipsListView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=73 object[4]
+;; FUNCTION-MAP kind=lambda offset=83 object[5]
+;; FUNCTION-MAP kind=lambda offset=93 object[6]
+;; FUNCTION-MAP kind=lambda offset=103 object[7]
+;; FUNCTION-MAP kind=lambda offset=113 object[8]
+;; FUNCTION-MAP kind=lambda offset=149 object[9]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Views"
+00010:  10  name "cc"
+00015:  10  getprop "Layer"
+00020:  10  dup
+00021:  10  callprop "extend"
+00026:  10  swap
+00027:  10  notearg
+00028:  10  newinit 1
+00033:  11  lambda (function () {
+    [sourceless code]
+})
+00038:  11  initprop "ctor"
+00043:  15  lambda (function () {
+    [sourceless code]
+})
+00048:  15  initprop "init"
+00053:  39  lambda (function () {
+    [sourceless code]
+})
+00058:  39  initprop "setBaseTouchPriority"
+00063:  43  lambda (function () {
+    [sourceless code]
+})
+00068:  43  initprop "scrollViewDidScroll"
+00073:  45  lambda (function () {
+    [sourceless code]
+})
+00078:  45  initprop "scrollViewDidZoom"
+00083:  47  lambda (function () {
+    [sourceless code]
+})
+00088:  47  initprop "tableCellTouched"
+00093:  51  lambda (function () {
+    [sourceless code]
+})
+00098:  51  initprop "tableCellSizeForIndex"
+00103:  54  lambda (function () {
+    [sourceless code]
+})
+00108:  54  initprop "tableCellAtIndex"
+00113:  63  lambda (function () {
+    [sourceless code]
+})
+00118:  63  initprop "numberOfCellsInTableView"
+00123:  63  endinit
+00124:  63  notearg
+00125:  63  call 1
+00128:  63  setprop "MTipsListView"
+00133:  63  popv
+00134:  68  name "xs"
+00139:  68  getprop "Views"
+00144:  68  getprop "MTipsListView"
+00149:  68  lambda (function () {
+    [sourceless code]
+})
+00154:  68  setprop "create"
+00159:  68  popv
+00160:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  call 0
+00012:  12  pop
+00013:  13  name "cc"
+00018:  13  dup
+00019:  13  callprop "associateWithNative"
+00024:  13  swap
+00025:  13  notearg
+00026:  13  this
+00027:  13  notearg
+00028:  13  name "cc"
+00033:  13  getprop "Layer"
+00038:  13  notearg
+00039:  13  call 2
+00042:  13  pop
+00043:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:11 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=2
+;; local[0] visibleOrigin
+;; local[1] visibleSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  dup
+00002:  16  callprop "_super"
+00007:  16  swap
+00008:  16  notearg
+00009:  16  call 0
+00012:  16  not
+00013:  16  ifeq 20 (+7)
+00018:  17  false
+00019:  17  return
+00020:  21  this
+00021:  21  zero
+00022:  21  setprop "m_baseTouchPriority"
+00027:  21  pop
+00028:  22  this
+00029:  22  null
+00030:  22  setprop "m_tableViewSize"
+00035:  22  pop
+00036:  23  this
+00037:  23  null
+00038:  23  setprop "m_tableView"
+00043:  23  pop
+00044:  25  name "xs"
+00049:  25  getprop "director"
+00054:  25  dup
+00055:  25  callprop "getVisibleOrigin"
+00060:  25  swap
+00061:  25  notearg
+00062:  25  call 0
+00065:  25  setlocal 0
+00068:  25  pop
+00069:  26  name "xs"
+00074:  26  getprop "director"
+00079:  26  dup
+00080:  26  callprop "getVisibleSize"
+00085:  26  swap
+00086:  26  notearg
+00087:  26  call 0
+00090:  26  setlocal 1
+00093:  26  pop
+00094:  29  this
+00095:  29  name "cc"
+00100:  29  dup
+00101:  29  callprop "size"
+00106:  29  swap
+00107:  29  notearg
+00108:  29  uint16 840
+00111:  29  notearg
+00112:  29  getlocal 1
+00115:  29  getprop "height"
+00120:  29  uint16 140
+00123:  29  sub
+00124:  29  notearg
+00125:  29  call 2
+00128:  29  setprop "m_tableViewSize"
+00133:  29  pop
+00134:  30  this
+00135:  30  name "cc"
+00140:  30  getprop "TableView"
+00145:  30  dup
+00146:  30  callprop "create"
+00151:  30  swap
+00152:  30  notearg
+00153:  30  this
+00154:  30  notearg
+00155:  30  this
+00156:  30  getprop "m_tableViewSize"
+00161:  30  notearg
+00162:  30  call 2
+00165:  30  setprop "m_tableView"
+00170:  30  pop
+00171:  31  this
+00172:  31  getprop "m_tableView"
+00177:  31  dup
+00178:  31  callprop "setDirection"
+00183:  31  swap
+00184:  31  notearg
+00185:  31  name "cc"
+00190:  31  getprop "SCROLLVIEW_DIRECTION_VERTICAL"
+00195:  31  notearg
+00196:  31  call 1
+00199:  31  pop
+00200:  32  this
+00201:  32  getprop "m_tableView"
+00206:  32  dup
+00207:  32  callprop "setVerticalFillOrder"
+00212:  32  swap
+00213:  32  notearg
+00214:  32  name "cc"
+00219:  32  getprop "TABLEVIEW_FILL_TOPDOWN"
+00224:  32  notearg
+00225:  32  call 1
+00228:  32  pop
+00229:  33  this
+00230:  33  getprop "m_tableView"
+00235:  33  dup
+00236:  33  callprop "setDelegate"
+00241:  33  swap
+00242:  33  notearg
+00243:  33  this
+00244:  33  notearg
+00245:  33  call 1
+00248:  33  pop
+00249:  35  this
+00250:  35  dup
+00251:  35  callprop "addChild"
+00256:  35  swap
+00257:  35  notearg
+00258:  35  this
+00259:  35  getprop "m_tableView"
+00264:  35  notearg
+00265:  35  call 1
+00268:  35  pop
+00269:  37  true
+00270:  37  return
+00271:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:15 ---
+;; function object[2] setBaseTouchPriority
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  this
+00001:  40  getarg 0
+00004:  40  setprop "m_baseTouchPriority"
+00009:  40  pop
+00010:  40  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:39 ---
+;; function object[3] scrollViewDidScroll
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:43 ---
+;; function object[4] scrollViewDidZoom
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:45 ---
+;; function object[5] tableCellTouched
+;; function metadata object[5] nargs=2 bindings=3
+;; arg[0] table
+;; arg[1] cell
+;; local[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:47 ---
+loc   line  op
+----- ----  --
+main:
+00000:  48  getarg 1
+00003:  48  dup
+00004:  48  callprop "getIdx"
+00009:  48  swap
+00010:  48  notearg
+00011:  48  call 0
+00014:  48  setlocal 0
+00017:  48  pop
+00018:  49  name "xs"
+00023:  49  dup
+00024:  49  callprop "log"
+00029:  49  swap
+00030:  49  notearg
+00031:  49  string "tableCellTouched : "
+00036:  49  getlocal 0
+00039:  49  add
+00040:  49  notearg
+00041:  49  call 1
+00044:  49  pop
+00045:  49  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:47 ---
+;; function object[6] tableCellSizeForIndex
+;; function metadata object[6] nargs=2 bindings=2
+;; arg[0] table
+;; arg[1] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:51 ---
+loc   line  op
+----- ----  --
+main:
+00000:  52  name "cc"
+00005:  52  dup
+00006:  52  callprop "size"
+00011:  52  swap
+00012:  52  notearg
+00013:  52  uint16 860
+00016:  52  notearg
+00017:  52  int8 120
+00019:  52  notearg
+00020:  52  call 2
+00023:  52  return
+00024:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:51 ---
+;; function object[7] tableCellAtIndex
+;; function metadata object[7] nargs=2 bindings=3
+;; arg[0] table
+;; arg[1] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:54 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  getarg 0
+00003:  56  dup
+00004:  56  callprop "dequeueCell"
+00009:  56  swap
+00010:  56  notearg
+00011:  56  call 0
+00014:  56  setlocal 0
+00017:  56  pop
+00018:  57  getlocal 0
+00021:  57  not
+00022:  57  ifeq 57 (+35)
+00027:  58  name "xs"
+00032:  58  getprop "Views"
+00037:  58  getprop "MTipsCell"
+00042:  58  dup
+00043:  58  callprop "create"
+00048:  58  swap
+00049:  58  notearg
+00050:  58  call 0
+00053:  58  setlocal 0
+00056:  58  pop
+00057:  61  getlocal 0
+00060:  61  return
+00061:  61  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:54 ---
+;; function object[8] numberOfCellsInTableView
+;; function metadata object[8] nargs=1 bindings=1
+;; arg[0] table
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:63 ---
+loc   line  op
+----- ----  --
+main:
+00000:  64  int8 9
+00002:  64  return
+00003:  64  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:63 ---
+;; function object[9] create
+;; function metadata object[9] nargs=0 bindings=1
+;; local[0] layer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  69  name "xs"
+00005:  69  getprop "Views"
+00010:  69  getprop "MTipsListView"
+00015:  69  undefined
+00016:  69  notearg
+00017:  69  new 0
+00020:  69  setlocal 0
+00023:  69  pop
+00024:  70  getlocal 0
+00027:  70  and 47 (+20)
+00032:  70  pop
+00033:  70  getlocal 0
+00036:  70  dup
+00037:  70  callprop "init"
+00042:  70  swap
+00043:  70  notearg
+00044:  70  call 0
+00047:  70  ifeq 56 (+9)
+00052:  71  getlocal 0
+00055:  71  return
+00056:  73  null
+00057:  73  return
+00058:  73  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/MTipsListView.js:68 ---

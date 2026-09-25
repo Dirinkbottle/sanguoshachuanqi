@@ -1,0 +1,75 @@
+{
+  "input": "Recovered/src_jsc/main.js.disasm.txt",
+  "outline": "Recovered/src_jsc/main.js.structure.md",
+  "sourceTextRecovered": false,
+  "output": "src_jsc/main.js",
+  "scriptBodies": 10,
+  "instructions": 1235,
+  "translatedOpcodeInstructions": 1235,
+  "recoveryRate": 1.0,
+  "structuredForInLoops": 3,
+  "structuredTryCatchBlocks": 0,
+  "structuredDoWhileLoops": 0,
+  "structuredConditionalSwitches": 0,
+  "sharedDefaultSwitchJoins": 0,
+  "sharedDefaultConditionalSwitchJoins": 0,
+  "sharedDefaultTableSwitchJoins": 0,
+  "unresolvedOpcodes": {},
+  "emittedTodoMarkersByOpcode": {},
+  "approximateOpcodes": {},
+  "functionLinksMissing": 0,
+  "detachedFunctionBodies": 0,
+  "cfg": {
+    "blocks": 98,
+    "edges": 129,
+    "stackMergeConflicts": 0,
+    "unreachableBlocks": 4,
+    "anomalies": [
+      "pc 269: operand stack underflow (need 1, height 0)",
+      "pc 43: operand stack underflow (need 1, height 0)",
+      "pc 51: operand stack underflow (need 1, height 0)"
+    ]
+  },
+  "expressionSimulation": {
+    "stackUnderflows": 0,
+    "stackUnknownEffects": 0,
+    "residualValues": 0,
+    "stackMergeConflicts": 0
+  },
+  "sourceLineRange": [
+    9,
+    356
+  ],
+  "startupOrder": 1,
+  "dependencies": [
+    {
+      "to": "src_jsc/Core/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Core/headers.js",
+      "line": "24"
+    },
+    {
+      "to": "src_jsc/Update/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Update/headers.js",
+      "line": "43"
+    },
+    {
+      "to": "src_jsc/Core/headers.jsc",
+      "scope": "nested",
+      "function": "main_game",
+      "literal": "Core/headers.js",
+      "line": "1206"
+    },
+    {
+      "to": "src_jsc/headers.jsc",
+      "scope": "nested",
+      "function": "main_game",
+      "literal": "headers.js",
+      "line": "1213"
+    }
+  ],
+  "manualReviewRecommended": true
+}

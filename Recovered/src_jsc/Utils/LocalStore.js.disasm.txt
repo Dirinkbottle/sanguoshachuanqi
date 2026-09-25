@@ -1,0 +1,80 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Utils/LocalStore.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=46 object[0]
+;; FUNCTION-MAP kind=lambda offset=56 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/LocalStore.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Utils"
+00010:   8  name "xs"
+00015:   8  getprop "Utils"
+00020:   8  getprop "LocalStore"
+00025:   8  or 67 (+42)
+00030:   8  pop
+00031:   8  newinit 1
+00036:  10  string "xs.Utils.LocalStore "
+00041:  10  initprop "name"
+00046:  12  lambda (function () {
+    [sourceless code]
+})
+00051:  12  initprop "setItem"
+00056:  16  lambda (function () {
+    [sourceless code]
+})
+00061:  16  initprop "getItem"
+00066:  16  endinit
+00067:  16  setprop "LocalStore"
+00072:  16  popv
+00073:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/LocalStore.js:1 ---
+;; function object[0] setItem
+;; function metadata object[0] nargs=2 bindings=2
+;; arg[0] key
+;; arg[1] value
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/LocalStore.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  14  name "sys"
+00005:  14  getprop "localStorage"
+00010:  14  dup
+00011:  14  callprop "setItem"
+00016:  14  swap
+00017:  14  notearg
+00018:  14  getarg 0
+00021:  14  notearg
+00022:  14  getarg 1
+00025:  14  notearg
+00026:  14  call 2
+00029:  14  pop
+00030:  14  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/LocalStore.js:12 ---
+;; function object[1] getItem
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] key
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/LocalStore.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  name "sys"
+00005:  18  getprop "localStorage"
+00010:  18  dup
+00011:  18  callprop "getItem"
+00016:  18  swap
+00017:  18  notearg
+00018:  18  getarg 0
+00021:  18  notearg
+00022:  18  call 1
+00025:  18  return
+00026:  18  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/LocalStore.js:16 ---

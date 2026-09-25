@@ -1,0 +1,3508 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Goddess/GoddessMainView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=871 object[0]
+;; FUNCTION-MAP kind=lambda offset=881 object[1]
+;; FUNCTION-MAP kind=lambda offset=891 object[2]
+;; FUNCTION-MAP kind=lambda offset=901 object[3]
+;; FUNCTION-MAP kind=lambda offset=911 object[4]
+;; FUNCTION-MAP kind=lambda offset=921 object[5]
+;; FUNCTION-MAP kind=lambda offset=931 object[6]
+;; FUNCTION-MAP kind=lambda offset=941 object[7]
+;; FUNCTION-MAP kind=lambda offset=951 object[8]
+;; FUNCTION-MAP kind=lambda offset=961 object[9]
+;; FUNCTION-MAP kind=lambda offset=971 object[10]
+;; FUNCTION-MAP kind=lambda offset=981 object[11]
+;; FUNCTION-MAP kind=lambda offset=991 object[12]
+;; FUNCTION-MAP kind=lambda offset=1001 object[13]
+;; FUNCTION-MAP kind=lambda offset=1011 object[14]
+;; FUNCTION-MAP kind=lambda offset=1021 object[15]
+;; FUNCTION-MAP kind=lambda offset=1031 object[16]
+;; FUNCTION-MAP kind=lambda offset=1041 object[17]
+;; FUNCTION-MAP kind=lambda offset=1051 object[18]
+;; FUNCTION-MAP kind=lambda offset=1061 object[19]
+;; FUNCTION-MAP kind=lambda offset=1097 object[20]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Views"
+00010:   4  name "cc"
+00015:   4  getprop "Layer"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  string "xs.Views.GoddessMainView"
+00038:   5  initprop "name"
+00043:   7  newarray 1
+00047:   8  newinit 1
+00052:   8  int8 2
+00054:   8  initprop "tag"
+00059:   8  string "ls"
+00064:   8  initprop "type"
+00069:   8  string "m_noGoddess"
+00074:   8  initprop "name"
+00079:   8  string "LS_danyao"
+00084:   8  initprop "id"
+00089:   8  string "goddess_noSelect01"
+00094:   8  initprop "stringId"
+00099:   8  endinit
+00100:   8  initelem_array 0
+00104:   8  endinit
+00105:   8  initprop "ccbCfg_noSelect"
+00110:  11  newarray 16
+00114:  12  newinit 1
+00119:  12  one
+00120:  12  initprop "tag"
+00125:  12  string "ls"
+00130:  12  initprop "type"
+00135:  12  string "m_zhanli"
+00140:  12  initprop "name"
+00145:  12  string "LS_mainUI4"
+00150:  12  initprop "id"
+00155:  12  endinit
+00156:  12  initelem_array 0
+00160:  13  newinit 1
+00165:  13  int8 3
+00167:  13  initprop "tag"
+00172:  13  string "ls"
+00177:  13  initprop "type"
+00182:  13  string "m_goddessName"
+00187:  13  initprop "name"
+00192:  13  string "LS_wujiangName"
+00197:  13  initprop "id"
+00202:  13  endinit
+00203:  13  initelem_array 1
+00207:  14  newinit 1
+00212:  14  int8 7
+00214:  14  initprop "tag"
+00219:  14  string "ls"
+00224:  14  initprop "type"
+00229:  14  string "m_jiacheng_1"
+00234:  14  initprop "name"
+00239:  14  string "LS_mainUI4"
+00244:  14  initprop "id"
+00249:  14  endinit
+00250:  14  initelem_array 2
+00254:  15  newinit 1
+00259:  15  int8 20
+00261:  15  initprop "tag"
+00266:  15  string "ls"
+00271:  15  initprop "type"
+00276:  15  string "m_jiacheng_intro"
+00281:  15  initprop "name"
+00286:  15  string "LS_fightUI1"
+00291:  15  initprop "id"
+00296:  15  endinit
+00297:  15  initelem_array 3
+00301:  17  newinit 1
+00306:  17  int8 10
+00308:  17  initprop "tag"
+00313:  17  string "btn"
+00318:  17  initprop "type"
+00323:  17  string "m_changeSkinButton"
+00328:  17  initprop "name"
+00333:  17  string "Btn_btn1"
+00338:  17  initprop "id"
+00343:  17  endinit
+00344:  17  initelem_array 4
+00348:  18  newinit 1
+00353:  18  int8 11
+00355:  18  initprop "tag"
+00360:  18  string "btn"
+00365:  18  initprop "type"
+00370:  18  string "m_chuZhanButton"
+00375:  18  initprop "name"
+00380:  18  string "Btn_btn1"
+00385:  18  initprop "id"
+00390:  18  endinit
+00391:  18  initelem_array 5
+00395:  19  newinit 1
+00400:  19  string "m_1cntLab"
+00405:  19  initprop "name"
+00410:  19  int8 101
+00412:  19  initprop "tag"
+00417:  19  string "ls"
+00422:  19  initprop "type"
+00427:  19  string "LS_yuanfenInf2"
+00432:  19  initprop "id"
+00437:  19  endinit
+00438:  19  initelem_array 6
+00442:  20  newinit 1
+00447:  20  string "m_2cntLab"
+00452:  20  initprop "name"
+00457:  20  int8 102
+00459:  20  initprop "tag"
+00464:  20  string "ls"
+00469:  20  initprop "type"
+00474:  20  string "LS_yuanfenInf2"
+00479:  20  initprop "id"
+00484:  20  endinit
+00485:  20  initelem_array 7
+00489:  21  newinit 1
+00494:  21  string "m_3cntLab"
+00499:  21  initprop "name"
+00504:  21  int8 103
+00506:  21  initprop "tag"
+00511:  21  string "ls"
+00516:  21  initprop "type"
+00521:  21  string "LS_yuanfenInf2"
+00526:  21  initprop "id"
+00531:  21  endinit
+00532:  21  initelem_array 8
+00536:  22  newinit 1
+00541:  22  string "m_4cntLab"
+00546:  22  initprop "name"
+00551:  22  int8 104
+00553:  22  initprop "tag"
+00558:  22  string "ls"
+00563:  22  initprop "type"
+00568:  22  string "LS_yuanfenInf2"
+00573:  22  initprop "id"
+00578:  22  endinit
+00579:  22  initelem_array 9
+00583:  23  newinit 1
+00588:  23  string "m_5cntLab"
+00593:  23  initprop "name"
+00598:  23  int8 105
+00600:  23  initprop "tag"
+00605:  23  string "ls"
+00610:  23  initprop "type"
+00615:  23  string "LS_yuanfenInf2"
+00620:  23  initprop "id"
+00625:  23  endinit
+00626:  23  initelem_array 10
+00630:  24  newinit 1
+00635:  24  string "m_6cntLab"
+00640:  24  initprop "name"
+00645:  24  int8 106
+00647:  24  initprop "tag"
+00652:  24  string "ls"
+00657:  24  initprop "type"
+00662:  24  string "LS_yuanfenInf2"
+00667:  24  initprop "id"
+00672:  24  endinit
+00673:  24  initelem_array 11
+00677:  25  newinit 1
+00682:  25  string "m_7cntLab"
+00687:  25  initprop "name"
+00692:  25  int8 107
+00694:  25  initprop "tag"
+00699:  25  string "ls"
+00704:  25  initprop "type"
+00709:  25  string "LS_yuanfenInf2"
+00714:  25  initprop "id"
+00719:  25  endinit
+00720:  25  initelem_array 12
+00724:  26  newinit 1
+00729:  26  string "m_8cntLab"
+00734:  26  initprop "name"
+00739:  26  int8 108
+00741:  26  initprop "tag"
+00746:  26  string "ls"
+00751:  26  initprop "type"
+00756:  26  string "LS_yuanfenInf2"
+00761:  26  initprop "id"
+00766:  26  endinit
+00767:  26  initelem_array 13
+00771:  27  newinit 1
+00776:  27  string "m_9cntLab"
+00781:  27  initprop "name"
+00786:  27  int8 109
+00788:  27  initprop "tag"
+00793:  27  string "ls"
+00798:  27  initprop "type"
+00803:  27  string "LS_yuanfenInf2"
+00808:  27  initprop "id"
+00813:  27  endinit
+00814:  27  initelem_array 14
+00818:  28  newinit 1
+00823:  28  string "m_10cntLab"
+00828:  28  initprop "name"
+00833:  28  int8 110
+00835:  28  initprop "tag"
+00840:  28  string "ls"
+00845:  28  initprop "type"
+00850:  28  string "LS_yuanfenInf2"
+00855:  28  initprop "id"
+00860:  28  endinit
+00861:  28  initelem_array 15
+00865:  28  endinit
+00866:  28  initprop "ccbCfg_select"
+00871:  30  lambda (function () {
+    [sourceless code]
+})
+00876:  30  initprop "ctor"
+00881:  34  lambda (function () {
+    [sourceless code]
+})
+00886:  34  initprop "init"
+00891: 186  lambda (function () {
+    [sourceless code]
+})
+00896: 186  initprop "_amendCcbiPos"
+00901: 201  lambda (function () {
+    [sourceless code]
+})
+00906: 201  initprop "_ip4sPosTransform"
+00911: 209  lambda (function () {
+    [sourceless code]
+})
+00916: 209  initprop "updateView"
+00921: 343  lambda (function () {
+    [sourceless code]
+})
+00926: 343  initprop "showNoFatesMessage"
+00931: 351  lambda (function () {
+    [sourceless code]
+})
+00936: 351  initprop "getPositionByType"
+00941: 366  lambda (function () {
+    [sourceless code]
+})
+00946: 366  initprop "getJiaChangePicByType"
+00951: 400  lambda (function () {
+    [sourceless code]
+})
+00956: 400  initprop "onEnter"
+00961: 403  lambda (function () {
+    [sourceless code]
+})
+00966: 403  initprop "onExit"
+00971: 406  lambda (function () {
+    [sourceless code]
+})
+00976: 406  initprop "setBaseTouchPriority"
+00981: 423  lambda (function () {
+    [sourceless code]
+})
+00986: 423  initprop "IconSwapView_swapAtIndex"
+00991: 426  lambda (function () {
+    [sourceless code]
+})
+00996: 426  initprop "noSelectButtonCallBack"
+01001: 431  lambda (function () {
+    [sourceless code]
+})
+01006: 431  initprop "changeSkinCallBack"
+01011: 451  lambda (function () {
+    [sourceless code]
+})
+01016: 451  initprop "goToFight"
+01021: 509  lambda (function () {
+    [sourceless code]
+})
+01026: 509  initprop "rightCallBack"
+01031: 522  lambda (function () {
+    [sourceless code]
+})
+01036: 522  initprop "leftCallBack"
+01041: 534  lambda (function () {
+    [sourceless code]
+})
+01046: 534  initprop "rightButtonCallback"
+01051: 549  lambda (function () {
+    [sourceless code]
+})
+01056: 549  initprop "leftButtonCallback"
+01061: 564  lambda (function () {
+    [sourceless code]
+})
+01066: 564  initprop "_showFightChange"
+01071: 564  endinit
+01072: 564  notearg
+01073: 564  call 1
+01076: 564  setprop "GoddessMainView"
+01081: 564  popv
+01082: 590  name "xs"
+01087: 590  getprop "Views"
+01092: 590  getprop "GoddessMainView"
+01097: 590  lambda (function () {
+    [sourceless code]
+})
+01102: 590  setprop "create"
+01107: 590  popv
+01108: 597  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  this
+00001:  31  dup
+00002:  31  callprop "_super"
+00007:  31  swap
+00008:  31  notearg
+00009:  31  call 0
+00012:  31  pop
+00013:  32  name "cc"
+00018:  32  dup
+00019:  32  callprop "associateWithNative"
+00024:  32  swap
+00025:  32  notearg
+00026:  32  this
+00027:  32  notearg
+00028:  32  name "cc"
+00033:  32  getprop "Layer"
+00038:  32  notearg
+00039:  32  call 2
+00042:  32  pop
+00043:  32  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:30 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=6
+;; local[0] goddessBody_width
+;; local[1] goddessBody_height
+;; local[2] arm_left
+;; local[3] arm_right
+;; local[4] nextBtn
+;; local[5] lastBtn
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:34 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  this
+00001:  35  dup
+00002:  35  callprop "_super"
+00007:  35  swap
+00008:  35  notearg
+00009:  35  call 0
+00012:  35  not
+00013:  35  ifeq 20 (+7)
+00018:  36  false
+00019:  36  return
+00020:  38  this
+00021:  38  null
+00022:  38  setprop "m_ccbNode"
+00027:  38  pop
+00028:  39  this
+00029:  39  null
+00030:  39  setprop "m_noSelectLabel"
+00035:  39  pop
+00036:  40  this
+00037:  40  null
+00038:  40  setprop "m_noSelectPic"
+00043:  40  pop
+00044:  41  this
+00045:  41  null
+00046:  41  setprop "m_noSelectButton"
+00051:  41  pop
+00052:  42  this
+00053:  42  null
+00054:  42  setprop "m_goddessView"
+00059:  42  pop
+00060:  45  this
+00061:  45  null
+00062:  45  setprop "m_zhanli"
+00067:  45  pop
+00068:  46  this
+00069:  46  null
+00070:  46  setprop "m_goddessName"
+00075:  46  pop
+00076:  47  this
+00077:  47  null
+00078:  47  setprop "m_jiacheng_1"
+00083:  47  pop
+00084:  48  this
+00085:  48  null
+00086:  48  setprop "m_jiacheng01_pic"
+00091:  48  pop
+00092:  49  this
+00093:  49  null
+00094:  49  setprop "m_changeSkinButton"
+00099:  49  pop
+00100:  50  this
+00101:  50  null
+00102:  50  setprop "m_chuZhanButton"
+00107:  50  pop
+00108:  51  this
+00109:  51  null
+00110:  51  setprop "m_jiacheng_intro"
+00115:  51  pop
+00116:  53  this
+00117:  53  null
+00118:  53  setprop "m_chuZhanZhong"
+00123:  53  pop
+00124:  54  this
+00125:  54  null
+00126:  54  setprop "m_leftButton"
+00131:  54  pop
+00132:  55  this
+00133:  55  null
+00134:  55  setprop "m_rightButton"
+00139:  55  pop
+00140:  57  this
+00141:  57  null
+00142:  57  setprop "m_chuZhanButtonPositionX"
+00147:  57  pop
+00148:  58  this
+00149:  58  null
+00150:  58  setprop "m_jiacheng01Pic_position"
+00155:  58  pop
+00156:  59  this
+00157:  59  newarray 0
+00161:  59  endinit
+00162:  59  setprop "m_jiachengPicList"
+00167:  59  pop
+00168:  61  this
+00169:  61  null
+00170:  61  setprop "m_middleData"
+00175:  61  pop
+00176:  63  this
+00177:  63  name "xs"
+00182:  63  getprop "Profile"
+00187:  63  getprop "GameData"
+00192:  63  getprop "Mgr"
+00197:  63  dup
+00198:  63  callprop "getInstance"
+00203:  63  swap
+00204:  63  notearg
+00205:  63  call 0
+00208:  63  getprop "Goddess"
+00213:  63  dup
+00214:  63  callprop "getAll"
+00219:  63  swap
+00220:  63  notearg
+00221:  63  call 0
+00224:  63  setprop "m_data"
+00229:  63  pop
+00230:  64  this
+00231:  64  getprop "m_data"
+00236:  64  dup
+00237:  64  callprop "sort"
+00242:  64  swap
+00243:  64  notearg
+00244:  64  name "xs"
+00249:  64  getprop "Tools"
+00254:  64  getprop "Sort"
+00259:  64  dup
+00260:  64  callprop "by"
+00265:  64  swap
+00266:  64  notearg
+00267:  64  name "xs"
+00272:  64  getprop "Constant_SortType_Goddess_Default"
+00277:  64  notearg
+00278:  64  call 1
+00281:  64  notearg
+00282:  64  call 1
+00285:  64  pop
+00286:  66  this
+00287:  66  name "xs"
+00292:  66  getprop "director"
+00297:  66  dup
+00298:  66  callprop "getVisibleSize"
+00303:  66  swap
+00304:  66  notearg
+00305:  66  call 0
+00308:  66  setprop "m_visibleSize"
+00313:  66  pop
+00314:  68  this
+00315:  68  this
+00316:  68  getprop "m_data"
+00321:  68  length "length"
+00326:  68  setprop "m_goddessNum"
+00331:  68  pop
+00332:  69  this
+00333:  69  zero
+00334:  69  setprop "m_nowPage"
+00339:  69  pop
+00340:  71  this
+00341:  71  getprop "m_goddessNum"
+00346:  71  zero
+00347:  71  eq
+00348:  71  ifeq 957 (+609)
+00353:  73  this
+00354:  73  name "xs"
+00359:  73  getprop "ccb_reader"
+00364:  73  dup
+00365:  73  callprop "load"
+00370:  73  swap
+00371:  73  notearg
+00372:  73  name "xs"
+00377:  73  getprop "Cfg"
+00382:  73  getprop "CCBI"
+00387:  73  getprop "GoddessNoSelectView"
+00392:  73  notearg
+00393:  73  call 1
+00396:  73  setprop "m_ccbNode"
+00401:  73  pop
+00402:  74  this
+00403:  74  getprop "m_ccbNode"
+00408:  74  dup
+00409:  74  callprop "setContentSize"
+00414:  74  swap
+00415:  74  notearg
+00416:  74  name "cc"
+00421:  74  dup
+00422:  74  callprop "size"
+00427:  74  swap
+00428:  74  notearg
+00429:  74  uint16 600
+00432:  74  notearg
+00433:  74  uint16 520
+00436:  74  notearg
+00437:  74  call 2
+00440:  74  notearg
+00441:  74  call 1
+00444:  74  pop
+00445:  75  this
+00446:  75  getprop "m_ccbNode"
+00451:  75  dup
+00452:  75  callprop "setAnchorPoint"
+00457:  75  swap
+00458:  75  notearg
+00459:  75  name "xs"
+00464:  75  getprop "ap_c"
+00469:  75  notearg
+00470:  75  call 1
+00473:  75  pop
+00474:  77  name "xs"
+00479:  77  getprop "Utils"
+00484:  77  getprop "UI"
+00489:  77  dup
+00490:  77  callprop "replaceCcbByCfg"
+00495:  77  swap
+00496:  77  notearg
+00497:  77  this
+00498:  77  getprop "m_ccbNode"
+00503:  77  notearg
+00504:  77  this
+00505:  77  getprop "ccbCfg_noSelect"
+00510:  77  notearg
+00511:  77  this
+00512:  77  notearg
+00513:  77  call 3
+00516:  77  pop
+00517:  78  name "xs"
+00522:  78  getprop "Utils"
+00527:  78  getprop "Node"
+00532:  78  dup
+00533:  78  callprop "attachNodes"
+00538:  78  swap
+00539:  78  notearg
+00540:  78  this
+00541:  78  notearg
+00542:  78  this
+00543:  78  getprop "m_ccbNode"
+00548:  78  notearg
+00549:  78  newinit 1
+00554:  78  string "lb"
+00559:  78  initprop "desc"
+00564:  78  newinit 1
+00569:  79  this
+00570:  79  getprop "m_visibleSize"
+00575:  79  getprop "width"
+00580:  79  name "xs"
+00585:  79  getprop "Views"
+00590:  79  getprop "MainMenuView"
+00595:  79  getprop "Width"
+00600:  79  sub
+00601:  79  int8 2
+00603:  79  div
+00604:  79  initprop "x"
+00609:  80  this
+00610:  80  getprop "m_visibleSize"
+00615:  80  getprop "height"
+00620:  80  int8 2
+00622:  80  div
+00623:  80  initprop "y"
+00628:  80  endinit
+00629:  80  initprop "offset"
+00634:  80  endinit
+00635:  80  notearg
+00636:  80  call 3
+00639:  80  pop
+00640:  84  this
+00641:  84  name "xs"
+00646:  84  getprop "Factorys"
+00651:  84  getprop "Label"
+00656:  84  dup
+00657:  84  callprop "createByStyleId"
+00662:  84  swap
+00663:  84  notearg
+00664:  84  string "LS_danyao"
+00669:  84  notearg
+00670:  84  call 1
+00673:  84  setprop "m_noSelectLabel"
+00678:  84  pop
+00679:  85  this
+00680:  85  getprop "m_noSelectLabel"
+00685:  85  dup
+00686:  85  callprop "setString"
+00691:  85  swap
+00692:  85  notearg
+00693:  85  name "xs"
+00698:  85  getprop "Tools"
+00703:  85  getprop "String"
+00708:  85  dup
+00709:  85  callprop "createString"
+00714:  85  swap
+00715:  85  notearg
+00716:  85  string "goddess_noSelect02"
+00721:  85  notearg
+00722:  85  call 1
+00725:  85  notearg
+00726:  85  call 1
+00729:  85  pop
+00730:  86  name "xs"
+00735:  86  getprop "Utils"
+00740:  86  getprop "Node"
+00745:  86  dup
+00746:  86  callprop "attachNodes"
+00751:  86  swap
+00752:  86  notearg
+00753:  86  this
+00754:  86  notearg
+00755:  86  this
+00756:  86  getprop "m_noSelectLabel"
+00761:  86  notearg
+00762:  86  newinit 1
+00767:  87  string "lb"
+00772:  87  initprop "desc"
+00777:  88  true
+00778:  88  initprop "sc"
+00783:  89  newinit 1
+00788:  90  this
+00789:  90  getprop "m_visibleSize"
+00794:  90  getprop "width"
+00799:  90  name "xs"
+00804:  90  getprop "Views"
+00809:  90  getprop "MainMenuView"
+00814:  90  getprop "Width"
+00819:  90  sub
+00820:  90  int8 2
+00822:  90  div
+00823:  90  initprop "x"
+00828:  91  uint16 150
+00831:  91  initprop "y"
+00836:  91  endinit
+00837:  91  initprop "offset"
+00842:  91  endinit
+00843:  91  notearg
+00844:  91  call 3
+00847:  91  pop
+00848:  96  this
+00849:  96  this
+00850:  96  getprop "m_ccbNode"
+00855:  96  dup
+00856:  96  callprop "getChildByTag"
+00861:  96  swap
+00862:  96  notearg
+00863:  96  one
+00864:  96  notearg
+00865:  96  call 1
+00868:  96  setprop "m_noSelectPic"
+00873:  96  pop
+00874:  97  this
+00875:  97  name "xs"
+00880:  97  getprop "Views"
+00885:  97  getprop "Btn"
+00890:  97  dup
+00891:  97  callprop "createInvisibleWithParent"
+00896:  97  swap
+00897:  97  notearg
+00898:  97  this
+00899:  97  getprop "m_noSelectPic"
+00904:  97  notearg
+00905:  97  call 1
+00908:  97  setprop "m_noSelectButton"
+00913:  97  pop
+00914:  98  this
+00915:  98  getprop "m_noSelectButton"
+00920:  98  dup
+00921:  98  callprop "setOnClickCallBack"
+00926:  98  swap
+00927:  98  notearg
+00928:  98  this
+00929:  98  getprop "noSelectButtonCallBack"
+00934:  98  dup
+00935:  98  callprop "bind"
+00940:  98  swap
+00941:  98  notearg
+00942:  98  this
+00943:  98  notearg
+00944:  98  call 1
+00947:  98  notearg
+00948:  98  call 1
+00951:  98  pop
+00952:  98  goto 2486 (+1534)
+00957: 103  this
+00958: 103  getprop "m_visibleSize"
+00963: 103  getprop "width"
+00968: 103  uint16 400
+00971: 103  sub
+00972: 103  setlocal 0
+00975: 103  pop
+00976: 104  this
+00977: 104  getprop "m_visibleSize"
+00982: 104  getprop "height"
+00987: 104  setlocal 1
+00990: 104  pop
+00991: 107  this
+00992: 107  name "xs"
+00997: 107  getprop "Views"
+01002: 107  getprop "ThreeIconShowView"
+01007: 107  dup
+01008: 107  callprop "create"
+01013: 107  swap
+01014: 107  notearg
+01015: 107  name "cc"
+01020: 107  dup
+01021: 107  callprop "size"
+01026: 107  swap
+01027: 107  notearg
+01028: 107  getlocal 0
+01031: 107  notearg
+01032: 107  getlocal 1
+01035: 107  notearg
+01036: 107  call 2
+01039: 107  notearg
+01040: 107  call 1
+01043: 107  setprop "m_goddessView"
+01048: 107  pop
+01049: 109  this
+01050: 109  getprop "m_goddessView"
+01055: 109  dup
+01056: 109  callprop "setListener"
+01061: 109  swap
+01062: 109  notearg
+01063: 109  this
+01064: 109  notearg
+01065: 109  call 1
+01068: 109  pop
+01069: 110  this
+01070: 110  getprop "m_goddessView"
+01075: 110  dup
+01076: 110  callprop "setOffsetY"
+01081: 110  swap
+01082: 110  notearg
+01083: 110  getlocal 1
+01086: 110  int8 2
+01088: 110  div
+01089: 110  uint16 180
+01092: 110  sub
+01093: 110  notearg
+01094: 110  call 1
+01097: 110  pop
+01098: 111  this
+01099: 111  getprop "m_goddessView"
+01104: 111  dup
+01105: 111  callprop "setDataSource"
+01110: 111  swap
+01111: 111  notearg
+01112: 111  this
+01113: 111  getprop "m_data"
+01118: 111  notearg
+01119: 111  call 1
+01122: 111  pop
+01123: 112  this
+01124: 112  getprop "m_goddessView"
+01129: 112  dup
+01130: 112  callprop "setMaxScale"
+01135: 112  swap
+01136: 112  notearg
+01137: 112  double 0.86
+01142: 112  notearg
+01143: 112  call 1
+01146: 112  pop
+01147: 113  name "xs"
+01152: 113  getprop "Utils"
+01157: 113  getprop "Node"
+01162: 113  dup
+01163: 113  callprop "attachNodes"
+01168: 113  swap
+01169: 113  notearg
+01170: 113  this
+01171: 113  notearg
+01172: 113  this
+01173: 113  getprop "m_goddessView"
+01178: 113  notearg
+01179: 113  newinit 1
+01184: 114  string "lb"
+01189: 114  initprop "desc"
+01194: 115  true
+01195: 115  initprop "sc"
+01200: 116  newinit 1
+01205: 117  uint16 150
+01208: 117  initprop "x"
+01213: 118  zero
+01214: 118  initprop "y"
+01219: 118  endinit
+01220: 118  initprop "offset"
+01225: 118  endinit
+01226: 118  notearg
+01227: 118  call 3
+01230: 118  pop
+01231: 123  this
+01232: 123  name "xs"
+01237: 123  getprop "ccb_reader"
+01242: 123  dup
+01243: 123  callprop "load"
+01248: 123  swap
+01249: 123  notearg
+01250: 123  name "xs"
+01255: 123  getprop "Cfg"
+01260: 123  getprop "CCBI"
+01265: 123  getprop "GoddessSelectView"
+01270: 123  notearg
+01271: 123  call 1
+01274: 123  setprop "m_ccbNode"
+01279: 123  pop
+01280: 125  this
+01281: 125  getprop "m_ccbNode"
+01286: 125  dup
+01287: 125  callprop "setContentSize"
+01292: 125  swap
+01293: 125  notearg
+01294: 125  name "cc"
+01299: 125  dup
+01300: 125  callprop "size"
+01305: 125  swap
+01306: 125  notearg
+01307: 125  uint16 960
+01310: 125  notearg
+01311: 125  uint16 640
+01314: 125  notearg
+01315: 125  call 2
+01318: 125  notearg
+01319: 125  call 1
+01322: 125  pop
+01323: 127  name "xs"
+01328: 127  getprop "Utils"
+01333: 127  getprop "UI"
+01338: 127  dup
+01339: 127  callprop "replaceCcbByCfg"
+01344: 127  swap
+01345: 127  notearg
+01346: 127  this
+01347: 127  getprop "m_ccbNode"
+01352: 127  notearg
+01353: 127  this
+01354: 127  getprop "ccbCfg_select"
+01359: 127  notearg
+01360: 127  this
+01361: 127  notearg
+01362: 127  call 3
+01365: 127  pop
+01366: 128  name "xs"
+01371: 128  getprop "Utils"
+01376: 128  getprop "Node"
+01381: 128  dup
+01382: 128  callprop "attachNodes"
+01387: 128  swap
+01388: 128  notearg
+01389: 128  this
+01390: 128  notearg
+01391: 128  this
+01392: 128  getprop "m_ccbNode"
+01397: 128  notearg
+01398: 128  newinit 1
+01403: 128  string "lb"
+01408: 128  initprop "desc"
+01413: 128  name "cc"
+01418: 128  dup
+01419: 128  callprop "p"
+01424: 128  swap
+01425: 128  notearg
+01426: 128  zero
+01427: 128  notearg
+01428: 128  zero
+01429: 128  notearg
+01430: 128  call 2
+01433: 128  initprop "offset"
+01438: 128  endinit
+01439: 128  notearg
+01440: 128  call 3
+01443: 128  pop
+01444: 130  this
+01445: 130  dup
+01446: 130  callprop "_amendCcbiPos"
+01451: 130  swap
+01452: 130  notearg
+01453: 130  this
+01454: 130  getprop "m_ccbNode"
+01459: 130  notearg
+01460: 130  call 1
+01463: 130  pop
+01464: 132  this
+01465: 132  this
+01466: 132  getprop "m_ccbNode"
+01471: 132  dup
+01472: 132  callprop "getChildByTag"
+01477: 132  swap
+01478: 132  notearg
+01479: 132  int8 30
+01481: 132  notearg
+01482: 132  call 1
+01485: 132  setprop "m_jiacheng_bg"
+01490: 132  pop
+01491: 133  this
+01492: 133  getprop "m_jiacheng_intro"
+01497: 133  dup
+01498: 133  callprop "setString"
+01503: 133  swap
+01504: 133  notearg
+01505: 133  name "xs"
+01510: 133  getprop "Tools"
+01515: 133  getprop "String"
+01520: 133  dup
+01521: 133  callprop "createString"
+01526: 133  swap
+01527: 133  notearg
+01528: 133  string "goddess_jiacheng"
+01533: 133  notearg
+01534: 133  call 1
+01537: 133  notearg
+01538: 133  call 1
+01541: 133  pop
+01542: 134  this
+01543: 134  getprop "m_jiacheng_intro"
+01548: 134  dup
+01549: 134  callprop "setAnchorPoint"
+01554: 134  swap
+01555: 134  notearg
+01556: 134  name "xs"
+01561: 134  getprop "ap_lc"
+01566: 134  notearg
+01567: 134  call 1
+01570: 134  pop
+01571: 135  this
+01572: 135  getprop "m_jiacheng_intro"
+01577: 135  dup
+01578: 135  callprop "setPositionX"
+01583: 135  swap
+01584: 135  notearg
+01585: 135  this
+01586: 135  getprop "m_jiacheng_bg"
+01591: 135  dup
+01592: 135  callprop "getPositionX"
+01597: 135  swap
+01598: 135  notearg
+01599: 135  call 0
+01602: 135  this
+01603: 135  getprop "m_jiacheng_bg"
+01608: 135  dup
+01609: 135  callprop "getContentSize"
+01614: 135  swap
+01615: 135  notearg
+01616: 135  call 0
+01619: 135  getprop "width"
+01624: 135  int8 2
+01626: 135  div
+01627: 135  sub
+01628: 135  int8 20
+01630: 135  add
+01631: 135  notearg
+01632: 135  call 1
+01635: 135  pop
+01636: 137  this
+01637: 137  this
+01638: 137  getprop "m_ccbNode"
+01643: 137  dup
+01644: 137  callprop "getChildByTag"
+01649: 137  swap
+01650: 137  notearg
+01651: 137  int8 2
+01653: 137  notearg
+01654: 137  call 1
+01657: 137  setprop "m_chuZhanZhong"
+01662: 137  pop
+01663: 138  this
+01664: 138  this
+01665: 138  getprop "m_ccbNode"
+01670: 138  dup
+01671: 138  callprop "getChildByTag"
+01676: 138  swap
+01677: 138  notearg
+01678: 138  int8 4
+01680: 138  notearg
+01681: 138  call 1
+01684: 138  setprop "m_leftButton"
+01689: 138  pop
+01690: 139  this
+01691: 139  this
+01692: 139  getprop "m_ccbNode"
+01697: 139  dup
+01698: 139  callprop "getChildByTag"
+01703: 139  swap
+01704: 139  notearg
+01705: 139  int8 5
+01707: 139  notearg
+01708: 139  call 1
+01711: 139  setprop "m_rightButton"
+01716: 139  pop
+01717: 141  this
+01718: 141  this
+01719: 141  getprop "m_ccbNode"
+01724: 141  dup
+01725: 141  callprop "getChildByTag"
+01730: 141  swap
+01731: 141  notearg
+01732: 141  int8 61
+01734: 141  notearg
+01735: 141  call 1
+01738: 141  setprop "m_jiacheng01_pic"
+01743: 141  pop
+01744: 142  this
+01745: 142  this
+01746: 142  getprop "m_jiacheng01_pic"
+01751: 142  dup
+01752: 142  callprop "getPosition"
+01757: 142  swap
+01758: 142  notearg
+01759: 142  call 0
+01762: 142  setprop "m_jiacheng01Pic_position"
+01767: 142  pop
+01768: 145  name "xs"
+01773: 145  getprop "Views"
+01778: 145  getprop "Armature"
+01783: 145  getprop "AutoAudioArmature"
+01788: 145  dup
+01789: 145  callprop "create"
+01794: 145  swap
+01795: 145  notearg
+01796: 145  string "Arm_guideArrow"
+01801: 145  notearg
+01802: 145  call 1
+01805: 145  setlocal 2
+01808: 145  pop
+01809: 146  getlocal 2
+01812: 146  dup
+01813: 146  callprop "playAniById"
+01818: 146  swap
+01819: 146  notearg
+01820: 146  string "guide"
+01825: 146  notearg
+01826: 146  newinit 1
+01831: 146  true
+01832: 146  initprop "loop"
+01837: 146  one
+01838: 146  initprop "speed"
+01843: 146  endinit
+01844: 146  notearg
+01845: 146  call 2
+01848: 146  pop
+01849: 147  name "xs"
+01854: 147  getprop "Views"
+01859: 147  getprop "Armature"
+01864: 147  getprop "AutoAudioArmature"
+01869: 147  dup
+01870: 147  callprop "create"
+01875: 147  swap
+01876: 147  notearg
+01877: 147  string "Arm_guideArrow"
+01882: 147  notearg
+01883: 147  call 1
+01886: 147  setlocal 3
+01889: 147  pop
+01890: 148  getlocal 3
+01893: 148  dup
+01894: 148  callprop "playAniById"
+01899: 148  swap
+01900: 148  notearg
+01901: 148  string "guide"
+01906: 148  notearg
+01907: 148  newinit 1
+01912: 148  true
+01913: 148  initprop "loop"
+01918: 148  one
+01919: 148  initprop "speed"
+01924: 148  endinit
+01925: 148  notearg
+01926: 148  call 2
+01929: 148  pop
+01930: 149  name "xs"
+01935: 149  getprop "Views"
+01940: 149  getprop "Btn"
+01945: 149  dup
+01946: 149  callprop "createInvisibleWithChild"
+01951: 149  swap
+01952: 149  notearg
+01953: 149  getlocal 3
+01956: 149  notearg
+01957: 149  call 1
+01960: 149  setlocal 4
+01963: 149  pop
+01964: 150  getlocal 4
+01967: 150  dup
+01968: 150  callprop "setOnClickCallBack"
+01973: 150  swap
+01974: 150  notearg
+01975: 150  this
+01976: 150  getprop "rightButtonCallback"
+01981: 150  dup
+01982: 150  callprop "bind"
+01987: 150  swap
+01988: 150  notearg
+01989: 150  this
+01990: 150  notearg
+01991: 150  call 1
+01994: 150  notearg
+01995: 150  call 1
+01998: 150  pop
+01999: 151  name "xs"
+02004: 151  getprop "Views"
+02009: 151  getprop "Btn"
+02014: 151  dup
+02015: 151  callprop "createInvisibleWithChild"
+02020: 151  swap
+02021: 151  notearg
+02022: 151  getlocal 2
+02025: 151  notearg
+02026: 151  call 1
+02029: 151  setlocal 5
+02032: 151  pop
+02033: 152  getlocal 5
+02036: 152  dup
+02037: 152  callprop "setOnClickCallBack"
+02042: 152  swap
+02043: 152  notearg
+02044: 152  this
+02045: 152  getprop "leftButtonCallback"
+02050: 152  dup
+02051: 152  callprop "bind"
+02056: 152  swap
+02057: 152  notearg
+02058: 152  this
+02059: 152  notearg
+02060: 152  call 1
+02063: 152  notearg
+02064: 152  call 1
+02067: 152  pop
+02068: 153  getlocal 5
+02071: 153  dup
+02072: 153  callprop "setRotationY"
+02077: 153  swap
+02078: 153  notearg
+02079: 153  uint16 180
+02082: 153  notearg
+02083: 153  call 1
+02086: 153  pop
+02087: 154  name "xs"
+02092: 154  getprop "Utils"
+02097: 154  getprop "Node"
+02102: 154  dup
+02103: 154  callprop "replaceChildSafe"
+02108: 154  swap
+02109: 154  notearg
+02110: 154  this
+02111: 154  getprop "m_ccbNode"
+02116: 154  notearg
+02117: 154  this
+02118: 154  getprop "m_leftButton"
+02123: 154  notearg
+02124: 154  getlocal 5
+02127: 154  notearg
+02128: 154  call 3
+02131: 154  pop
+02132: 155  this
+02133: 155  getlocal 5
+02136: 155  setprop "m_leftButton"
+02141: 155  pop
+02142: 156  name "xs"
+02147: 156  getprop "Utils"
+02152: 156  getprop "Node"
+02157: 156  dup
+02158: 156  callprop "replaceChildSafe"
+02163: 156  swap
+02164: 156  notearg
+02165: 156  this
+02166: 156  getprop "m_ccbNode"
+02171: 156  notearg
+02172: 156  this
+02173: 156  getprop "m_rightButton"
+02178: 156  notearg
+02179: 156  getlocal 4
+02182: 156  notearg
+02183: 156  call 3
+02186: 156  pop
+02187: 157  this
+02188: 157  getlocal 4
+02191: 157  setprop "m_rightButton"
+02196: 157  pop
+02197: 160  this
+02198: 160  getprop "m_changeSkinButton"
+02203: 160  dup
+02204: 160  callprop "setOnClickCallBack"
+02209: 160  swap
+02210: 160  notearg
+02211: 160  this
+02212: 160  getprop "changeSkinCallBack"
+02217: 160  dup
+02218: 160  callprop "bind"
+02223: 160  swap
+02224: 160  notearg
+02225: 160  this
+02226: 160  notearg
+02227: 160  call 1
+02230: 160  notearg
+02231: 160  call 1
+02234: 160  pop
+02235: 161  this
+02236: 161  getprop "m_chuZhanButton"
+02241: 161  dup
+02242: 161  callprop "setOnClickCallBack"
+02247: 161  swap
+02248: 161  notearg
+02249: 161  this
+02250: 161  getprop "goToFight"
+02255: 161  dup
+02256: 161  callprop "bind"
+02261: 161  swap
+02262: 161  notearg
+02263: 161  this
+02264: 161  notearg
+02265: 161  call 1
+02268: 161  notearg
+02269: 161  call 1
+02272: 161  pop
+02273: 163  this
+02274: 163  getprop "m_changeSkinButton"
+02279: 163  dup
+02280: 163  callprop "setString"
+02285: 163  swap
+02286: 163  notearg
+02287: 163  name "xs"
+02292: 163  getprop "Tools"
+02297: 163  getprop "String"
+02302: 163  dup
+02303: 163  callprop "createString"
+02308: 163  swap
+02309: 163  notearg
+02310: 163  string "goddess_changeSkin"
+02315: 163  notearg
+02316: 163  call 1
+02319: 163  notearg
+02320: 163  call 1
+02323: 163  pop
+02324: 164  this
+02325: 164  this
+02326: 164  getprop "m_chuZhanButton"
+02331: 164  dup
+02332: 164  callprop "getPositionX"
+02337: 164  swap
+02338: 164  notearg
+02339: 164  call 0
+02342: 164  setprop "m_chuZhanButtonPositionX"
+02347: 164  pop
+02348: 168  this
+02349: 168  getprop "m_goddessNum"
+02354: 168  one
+02355: 168  eq
+02356: 168  ifeq 2406 (+50)
+02361: 169  this
+02362: 169  getprop "m_leftButton"
+02367: 169  dup
+02368: 169  callprop "setVisible"
+02373: 169  swap
+02374: 169  notearg
+02375: 169  false
+02376: 169  notearg
+02377: 169  call 1
+02380: 169  pop
+02381: 170  this
+02382: 170  getprop "m_rightButton"
+02387: 170  dup
+02388: 170  callprop "setVisible"
+02393: 170  swap
+02394: 170  notearg
+02395: 170  false
+02396: 170  notearg
+02397: 170  call 1
+02400: 170  pop
+02401: 170  goto 2446 (+45)
+02406: 172  this
+02407: 172  getprop "m_rightButton"
+02412: 172  dup
+02413: 172  callprop "setVisible"
+02418: 172  swap
+02419: 172  notearg
+02420: 172  true
+02421: 172  notearg
+02422: 172  call 1
+02425: 172  pop
+02426: 173  this
+02427: 173  getprop "m_leftButton"
+02432: 173  dup
+02433: 173  callprop "setVisible"
+02438: 173  swap
+02439: 173  notearg
+02440: 173  false
+02441: 173  notearg
+02442: 173  call 1
+02445: 173  pop
+02446: 175  this
+02447: 175  dup
+02448: 175  callprop "showNoFatesMessage"
+02453: 175  swap
+02454: 175  notearg
+02455: 175  call 0
+02458: 175  pop
+02459: 176  this
+02460: 176  dup
+02461: 176  callprop "updateView"
+02466: 176  swap
+02467: 176  notearg
+02468: 176  this
+02469: 176  getprop "m_data"
+02474: 176  this
+02475: 176  getprop "m_nowPage"
+02480: 176  getelem
+02481: 176  notearg
+02482: 176  call 1
+02485: 176  pop
+02486: 183  true
+02487: 183  return
+02488: 183  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:34 ---
+;; function object[2] _amendCcbiPos
+;; function metadata object[2] nargs=1 bindings=5
+;; arg[0] mCcbi
+;; local[0] mChilds
+;; local[1] mChildIdx
+;; local[2] mChild
+;; local[3] mOriginalPos
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=36 length=87 stackDepth=1 target=123
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:186 ---
+loc   line  op
+----- ----  --
+main:
+00000: 187  getarg 0
+00003: 187  dup
+00004: 187  callprop "getChildren"
+00009: 187  swap
+00010: 187  notearg
+00011: 187  call 0
+00014: 187  setlocal 0
+00017: 187  pop
+00018: 188  getlocal 0
+00021: 188  ifeq 124 (+103)
+00026: 189  getlocal 0
+00029: 189  iter 1
+00031: 189  goto 116 (+85)
+00036: 189  loophead
+00037: 189  iternext
+00038: 189  setlocal 1
+00041: 189  pop
+00042: 190  getlocal 0
+00045: 190  getlocal 1
+00048: 190  getelem
+00049: 190  setlocal 2
+00052: 190  pop
+00053: 191  getlocal 2
+00056: 191  getprop "getPosition"
+00061: 191  ifeq 116 (+55)
+00066: 192  getlocal 2
+00069: 192  dup
+00070: 192  callprop "getPosition"
+00075: 192  swap
+00076: 192  notearg
+00077: 192  call 0
+00080: 192  setlocal 3
+00083: 192  pop
+00084: 193  getlocal 2
+00087: 193  dup
+00088: 193  callprop "setPosition"
+00093: 193  swap
+00094: 193  notearg
+00095: 193  this
+00096: 193  dup
+00097: 193  callprop "_ip4sPosTransform"
+00102: 193  swap
+00103: 193  notearg
+00104: 193  getlocal 3
+00107: 193  notearg
+00108: 193  call 1
+00111: 193  notearg
+00112: 193  call 1
+00115: 193  pop
+00116: 193  loopentry
+00117: 193  moreiter
+00118: 193  ifne 36 (-82)
+00123: 193  enditer
+00124: 196  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:186 ---
+;; function object[3] _ip4sPosTransform
+;; function metadata object[3] nargs=1 bindings=4
+;; arg[0] mPos
+;; local[0] visibleSize
+;; local[1] mScaleW
+;; local[2] mScaleH
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:201 ---
+loc   line  op
+----- ----  --
+main:
+00000: 202  name "xs"
+00005: 202  getprop "director"
+00010: 202  dup
+00011: 202  callprop "getVisibleSize"
+00016: 202  swap
+00017: 202  notearg
+00018: 202  call 0
+00021: 202  setlocal 0
+00024: 202  pop
+00025: 203  getlocal 0
+00028: 203  getprop "width"
+00033: 203  uint16 960
+00036: 203  div
+00037: 203  setlocal 1
+00040: 203  pop
+00041: 204  getlocal 0
+00044: 204  getprop "height"
+00049: 204  uint16 640
+00052: 204  div
+00053: 204  setlocal 2
+00056: 204  pop
+00057: 205  name "cc"
+00062: 205  dup
+00063: 205  callprop "p"
+00068: 205  swap
+00069: 205  notearg
+00070: 205  getarg 0
+00073: 205  getprop "x"
+00078: 205  getlocal 1
+00081: 205  mul
+00082: 205  notearg
+00083: 205  getarg 0
+00086: 205  getprop "y"
+00091: 205  getlocal 2
+00094: 205  mul
+00095: 205  notearg
+00096: 205  call 2
+00099: 205  return
+00100: 205  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:201 ---
+;; function object[4] updateView
+;; function metadata object[4] nargs=1 bindings=10
+;; arg[0] data
+;; local[0] buffList
+;; local[1] firstPic
+;; local[2] i
+;; local[3] position
+;; local[4] iconPicBg
+;; local[5] iconPic
+;; local[6] label
+;; local[7] fates
+;; local[8] isLightedInGoddess
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:209 ---
+loc   line  op
+----- ----  --
+main:
+00000: 211  this
+00001: 211  getarg 0
+00004: 211  setprop "m_middleData"
+00009: 211  pop
+00010: 213  this
+00011: 213  getprop "m_zhanli"
+00016: 213  dup
+00017: 213  callprop "setString"
+00022: 213  swap
+00023: 213  notearg
+00024: 213  getarg 0
+00027: 213  dup
+00028: 213  callprop "getBigFighting"
+00033: 213  swap
+00034: 213  notearg
+00035: 213  call 0
+00038: 213  or 49 (+11)
+00043: 213  pop
+00044: 213  string "0"
+00049: 213  notearg
+00050: 213  call 1
+00053: 213  pop
+00054: 215  getarg 0
+00057: 215  dup
+00058: 215  callprop "getIsFight"
+00063: 215  swap
+00064: 215  notearg
+00065: 215  call 0
+00068: 215  ifeq 149 (+81)
+00073: 216  this
+00074: 216  getprop "m_chuZhanButton"
+00079: 216  dup
+00080: 216  callprop "setString"
+00085: 216  swap
+00086: 216  notearg
+00087: 216  name "xs"
+00092: 216  getprop "Tools"
+00097: 216  getprop "String"
+00102: 216  dup
+00103: 216  callprop "createString"
+00108: 216  swap
+00109: 216  notearg
+00110: 216  string "goddess_NotgoToFight"
+00115: 216  notearg
+00116: 216  call 1
+00119: 216  notearg
+00120: 216  call 1
+00123: 216  pop
+00124: 217  this
+00125: 217  getprop "m_chuZhanZhong"
+00130: 217  dup
+00131: 217  callprop "setVisible"
+00136: 217  swap
+00137: 217  notearg
+00138: 217  true
+00139: 217  notearg
+00140: 217  call 1
+00143: 217  pop
+00144: 217  goto 220 (+76)
+00149: 219  this
+00150: 219  getprop "m_chuZhanButton"
+00155: 219  dup
+00156: 219  callprop "setString"
+00161: 219  swap
+00162: 219  notearg
+00163: 219  name "xs"
+00168: 219  getprop "Tools"
+00173: 219  getprop "String"
+00178: 219  dup
+00179: 219  callprop "createString"
+00184: 219  swap
+00185: 219  notearg
+00186: 219  string "goddess_goToFight"
+00191: 219  notearg
+00192: 219  call 1
+00195: 219  notearg
+00196: 219  call 1
+00199: 219  pop
+00200: 220  this
+00201: 220  getprop "m_chuZhanZhong"
+00206: 220  dup
+00207: 220  callprop "setVisible"
+00212: 220  swap
+00213: 220  notearg
+00214: 220  false
+00215: 220  notearg
+00216: 220  call 1
+00219: 220  pop
+00220: 223  this
+00221: 223  getprop "m_goddessName"
+00226: 223  dup
+00227: 223  callprop "setString"
+00232: 223  swap
+00233: 223  notearg
+00234: 223  getarg 0
+00237: 223  dup
+00238: 223  callprop "getNameString"
+00243: 223  swap
+00244: 223  notearg
+00245: 223  call 0
+00248: 223  dup
+00249: 223  callprop "toWordBreak"
+00254: 223  swap
+00255: 223  notearg
+00256: 223  call 0
+00259: 223  notearg
+00260: 223  call 1
+00263: 223  pop
+00264: 226  getarg 0
+00267: 226  dup
+00268: 226  callprop "getBuffList"
+00273: 226  swap
+00274: 226  notearg
+00275: 226  call 0
+00278: 226  setlocal 0
+00281: 226  pop
+00282: 237  this
+00283: 237  dup
+00284: 237  callprop "getJiaChangePicByType"
+00289: 237  swap
+00290: 237  notearg
+00291: 237  callname "Number"
+00296: 237  implicitthis "Number"
+00301: 237  notearg
+00302: 237  getlocal 0
+00305: 237  zero
+00306: 237  getelem
+00307: 237  zero
+00308: 237  getelem
+00309: 237  notearg
+00310: 237  call 1
+00313: 237  notearg
+00314: 237  call 1
+00317: 237  setlocal 1
+00320: 237  pop
+00321: 238  name "xs"
+00326: 238  getprop "Utils"
+00331: 238  getprop "Node"
+00336: 238  dup
+00337: 238  callprop "replaceChildSafe"
+00342: 238  swap
+00343: 238  notearg
+00344: 238  this
+00345: 238  getprop "m_ccbNode"
+00350: 238  notearg
+00351: 238  this
+00352: 238  getprop "m_jiacheng01_pic"
+00357: 238  notearg
+00358: 238  getlocal 1
+00361: 238  notearg
+00362: 238  call 3
+00365: 238  pop
+00366: 239  this
+00367: 239  getlocal 1
+00370: 239  setprop "m_jiacheng01_pic"
+00375: 239  pop
+00376: 240  this
+00377: 240  getprop "m_jiacheng_1"
+00382: 240  dup
+00383: 240  callprop "setString"
+00388: 240  swap
+00389: 240  notearg
+00390: 240  string "+"
+00395: 240  getlocal 0
+00398: 240  zero
+00399: 240  getelem
+00400: 240  one
+00401: 240  getelem
+00402: 240  add
+00403: 240  notearg
+00404: 240  call 1
+00407: 240  pop
+00408: 244  zero
+00409: 244  setlocal 2
+00412: 244  pop
+00413: 244  goto 472 (+59)
+00418: 246  loophead
+00419: 246  name "xs"
+00424: 246  getprop "Utils"
+00429: 246  getprop "Node"
+00434: 246  dup
+00435: 246  callprop "safeRemoveChild"
+00440: 246  swap
+00441: 246  notearg
+00442: 246  this
+00443: 246  getprop "m_jiachengPicList"
+00448: 246  getlocal 2
+00451: 246  getelem
+00452: 246  notearg
+00453: 246  call 1
+00456: 246  pop
+00457: 244  localinc 11
+00460: 244  getlocal 2
+00463: 244  pos
+00464: 244  dup
+00465: 244  one
+00466: 244  add
+00467: 244  setlocal 2
+00470: 244  pop
+00471: 244  pop
+00472: 244  loopentry
+00473: 244  getlocal 2
+00476: 244  this
+00477: 244  getprop "m_jiachengPicList"
+00482: 244  length "length"
+00487: 244  lt
+00488: 244  ifne 418 (-70)
+00493: 249  this
+00494: 249  newarray 0
+00498: 249  endinit
+00499: 249  setprop "m_jiachengPicList"
+00504: 249  pop
+00505: 251  zero
+00506: 251  setlocal 2
+00509: 251  pop
+00510: 251  goto 1117 (+607)
+00515: 253  loophead
+00516: 253  getlocal 2
+00519: 253  zero
+00520: 253  gt
+00521: 253  ifeq 1102 (+581)
+00526: 254  this
+00527: 254  dup
+00528: 254  callprop "getPositionByType"
+00533: 254  swap
+00534: 254  notearg
+00535: 254  getlocal 2
+00538: 254  notearg
+00539: 254  call 1
+00542: 254  setlocal 3
+00545: 254  pop
+00546: 256  name "xs"
+00551: 256  getprop "Factorys"
+00556: 256  getprop "Sprite"
+00561: 256  dup
+00562: 256  callprop "create"
+00567: 256  swap
+00568: 256  notearg
+00569: 256  string "smallIcon_fp_bg"
+00574: 256  notearg
+00575: 256  string "Cmn01"
+00580: 256  notearg
+00581: 256  call 2
+00584: 256  setlocal 4
+00587: 256  pop
+00588: 257  name "xs"
+00593: 257  getprop "Utils"
+00598: 257  getprop "Node"
+00603: 257  dup
+00604: 257  callprop "attachNodes"
+00609: 257  swap
+00610: 257  notearg
+00611: 257  this
+00612: 257  getprop "m_ccbNode"
+00617: 257  notearg
+00618: 257  getlocal 4
+00621: 257  notearg
+00622: 257  newinit 1
+00627: 258  string "lb"
+00632: 258  initprop "desc"
+00637: 259  true
+00638: 259  initprop "sc"
+00643: 260  newinit 1
+00648: 261  getlocal 3
+00651: 261  getprop "x"
+00656: 261  int8 50
+00658: 261  add
+00659: 261  initprop "x"
+00664: 262  getlocal 3
+00667: 262  getprop "y"
+00672: 262  initprop "y"
+00677: 262  endinit
+00678: 262  initprop "offset"
+00683: 262  endinit
+00684: 262  notearg
+00685: 262  call 3
+00688: 262  pop
+00689: 266  this
+00690: 266  dup
+00691: 266  callprop "getJiaChangePicByType"
+00696: 266  swap
+00697: 266  notearg
+00698: 266  callname "Number"
+00703: 266  implicitthis "Number"
+00708: 266  notearg
+00709: 266  getlocal 0
+00712: 266  getlocal 2
+00715: 266  getelem
+00716: 266  zero
+00717: 266  getelem
+00718: 266  notearg
+00719: 266  call 1
+00722: 266  notearg
+00723: 266  call 1
+00726: 266  setlocal 5
+00729: 266  pop
+00730: 267  name "xs"
+00735: 267  getprop "Utils"
+00740: 267  getprop "Node"
+00745: 267  dup
+00746: 267  callprop "attachNodes"
+00751: 267  swap
+00752: 267  notearg
+00753: 267  this
+00754: 267  getprop "m_ccbNode"
+00759: 267  notearg
+00760: 267  getlocal 5
+00763: 267  notearg
+00764: 267  newinit 1
+00769: 268  string "lb"
+00774: 268  initprop "desc"
+00779: 269  true
+00780: 269  initprop "sc"
+00785: 270  newinit 1
+00790: 271  getlocal 3
+00793: 271  getprop "x"
+00798: 271  initprop "x"
+00803: 272  getlocal 3
+00806: 272  getprop "y"
+00811: 272  initprop "y"
+00816: 272  endinit
+00817: 272  initprop "offset"
+00822: 272  endinit
+00823: 272  notearg
+00824: 272  call 3
+00827: 272  pop
+00828: 277  name "xs"
+00833: 277  getprop "Factorys"
+00838: 277  getprop "Label"
+00843: 277  dup
+00844: 277  callprop "createByStyleId"
+00849: 277  swap
+00850: 277  notearg
+00851: 277  string "LS_mainUI4"
+00856: 277  notearg
+00857: 277  call 1
+00860: 277  setlocal 6
+00863: 277  pop
+00864: 278  getlocal 6
+00867: 278  dup
+00868: 278  callprop "setString"
+00873: 278  swap
+00874: 278  notearg
+00875: 278  string "+"
+00880: 278  getlocal 0
+00883: 278  getlocal 2
+00886: 278  getelem
+00887: 278  one
+00888: 278  getelem
+00889: 278  add
+00890: 278  notearg
+00891: 278  call 1
+00894: 278  pop
+00895: 279  getlocal 6
+00898: 279  dup
+00899: 279  callprop "setAnchorPoint"
+00904: 279  swap
+00905: 279  notearg
+00906: 279  name "cc"
+00911: 279  dup
+00912: 279  callprop "p"
+00917: 279  swap
+00918: 279  notearg
+00919: 279  zero
+00920: 279  notearg
+00921: 279  double 0.5
+00926: 279  notearg
+00927: 279  call 2
+00930: 279  notearg
+00931: 279  call 1
+00934: 279  pop
+00935: 280  name "xs"
+00940: 280  getprop "Utils"
+00945: 280  getprop "Node"
+00950: 280  dup
+00951: 280  callprop "attachNodes"
+00956: 280  swap
+00957: 280  notearg
+00958: 280  this
+00959: 280  getprop "m_ccbNode"
+00964: 280  notearg
+00965: 280  getlocal 6
+00968: 280  notearg
+00969: 280  newinit 1
+00974: 281  string "lb"
+00979: 281  initprop "desc"
+00984: 282  true
+00985: 282  initprop "sc"
+00990: 283  newinit 1
+00995: 284  getlocal 3
+00998: 284  getprop "x"
+01003: 284  int8 30
+01005: 284  add
+01006: 284  initprop "x"
+01011: 285  getlocal 3
+01014: 285  getprop "y"
+01019: 285  initprop "y"
+01024: 285  endinit
+01025: 285  initprop "offset"
+01030: 285  endinit
+01031: 285  notearg
+01032: 285  call 3
+01035: 285  pop
+01036: 290  this
+01037: 290  getprop "m_jiachengPicList"
+01042: 290  dup
+01043: 290  callprop "push"
+01048: 290  swap
+01049: 290  notearg
+01050: 290  getlocal 4
+01053: 290  notearg
+01054: 290  call 1
+01057: 290  pop
+01058: 291  this
+01059: 291  getprop "m_jiachengPicList"
+01064: 291  dup
+01065: 291  callprop "push"
+01070: 291  swap
+01071: 291  notearg
+01072: 291  getlocal 5
+01075: 291  notearg
+01076: 291  call 1
+01079: 291  pop
+01080: 292  this
+01081: 292  getprop "m_jiachengPicList"
+01086: 292  dup
+01087: 292  callprop "push"
+01092: 292  swap
+01093: 292  notearg
+01094: 292  getlocal 6
+01097: 292  notearg
+01098: 292  call 1
+01101: 292  pop
+01102: 251  localinc 11
+01105: 251  getlocal 2
+01108: 251  pos
+01109: 251  dup
+01110: 251  one
+01111: 251  add
+01112: 251  setlocal 2
+01115: 251  pop
+01116: 251  pop
+01117: 251  loopentry
+01118: 251  getlocal 2
+01121: 251  getlocal 0
+01124: 251  length "length"
+01129: 251  lt
+01130: 251  ifne 515 (-615)
+01135: 297  getarg 0
+01138: 297  dup
+01139: 297  callprop "getSkinList"
+01144: 297  swap
+01145: 297  notearg
+01146: 297  call 0
+01149: 297  length "length"
+01154: 297  zero
+01155: 297  eq
+01156: 297  ifeq 1240 (+84)
+01161: 299  this
+01162: 299  getprop "m_changeSkinButton"
+01167: 299  dup
+01168: 299  callprop "setVisible"
+01173: 299  swap
+01174: 299  notearg
+01175: 299  false
+01176: 299  notearg
+01177: 299  call 1
+01180: 299  pop
+01181: 301  this
+01182: 301  getprop "m_chuZhanButton"
+01187: 301  dup
+01188: 301  callprop "setPositionX"
+01193: 301  swap
+01194: 301  notearg
+01195: 301  this
+01196: 301  getprop "m_visibleSize"
+01201: 301  getprop "width"
+01206: 301  name "xs"
+01211: 301  getprop "Views"
+01216: 301  getprop "MainMenuView"
+01221: 301  getprop "Width"
+01226: 301  sub
+01227: 301  int8 2
+01229: 301  div
+01230: 301  notearg
+01231: 301  call 1
+01234: 301  pop
+01235: 301  goto 1285 (+50)
+01240: 305  this
+01241: 305  getprop "m_changeSkinButton"
+01246: 305  dup
+01247: 305  callprop "setVisible"
+01252: 305  swap
+01253: 305  notearg
+01254: 305  true
+01255: 305  notearg
+01256: 305  call 1
+01259: 305  pop
+01260: 307  this
+01261: 307  getprop "m_chuZhanButton"
+01266: 307  dup
+01267: 307  callprop "setPositionX"
+01272: 307  swap
+01273: 307  notearg
+01274: 307  this
+01275: 307  getprop "m_chuZhanButtonPositionX"
+01280: 307  notearg
+01281: 307  call 1
+01284: 307  pop
+01285: 310  getarg 0
+01288: 310  dup
+01289: 310  callprop "getFates"
+01294: 310  swap
+01295: 310  notearg
+01296: 310  call 0
+01299: 310  setlocal 7
+01302: 310  pop
+01303: 311  name "xs"
+01308: 311  getprop "Utils"
+01313: 311  dup
+01314: 311  callprop "isEmpty"
+01319: 311  swap
+01320: 311  notearg
+01321: 311  getlocal 7
+01324: 311  notearg
+01325: 311  call 1
+01328: 311  ifeq 1358 (+30)
+01333: 312  this
+01334: 312  getprop "noGoddessFateTip"
+01339: 312  dup
+01340: 312  callprop "setVisible"
+01345: 312  swap
+01346: 312  notearg
+01347: 312  true
+01348: 312  notearg
+01349: 312  call 1
+01352: 312  pop
+01353: 312  goto 1378 (+25)
+01358: 315  this
+01359: 315  getprop "noGoddessFateTip"
+01364: 315  dup
+01365: 315  callprop "setVisible"
+01370: 315  swap
+01371: 315  notearg
+01372: 315  false
+01373: 315  notearg
+01374: 315  call 1
+01377: 315  pop
+01378: 317  one
+01379: 317  setlocal 2
+01382: 317  pop
+01383: 317  goto 1776 (+393)
+01388: 318  loophead
+01389: 318  name "xs"
+01394: 318  getprop "Profile"
+01399: 318  getprop "GameData"
+01404: 318  getprop "Mgr"
+01409: 318  dup
+01410: 318  callprop "getInstance"
+01415: 318  swap
+01416: 318  notearg
+01417: 318  this
+01418: 318  getprop "m_playerId"
+01423: 318  notearg
+01424: 318  this
+01425: 318  getprop "m_playerData"
+01430: 318  notearg
+01431: 318  call 2
+01434: 318  getprop "GoddessFate"
+01439: 318  dup
+01440: 318  callprop "isLightedInGoddess"
+01445: 318  swap
+01446: 318  notearg
+01447: 318  getlocal 7
+01450: 318  getlocal 2
+01453: 318  one
+01454: 318  sub
+01455: 318  getelem
+01456: 318  notearg
+01457: 318  getarg 0
+01460: 318  notearg
+01461: 318  call 2
+01464: 318  setlocal 8
+01467: 318  pop
+01468: 319  getlocal 8
+01471: 319  ifeq 1597 (+126)
+01476: 320  name "xs"
+01481: 320  getprop "Utils"
+01486: 320  getprop "UI"
+01491: 320  dup
+01492: 320  callprop "replaceCcbByCfgEntity"
+01497: 320  swap
+01498: 320  notearg
+01499: 320  this
+01500: 320  getprop "m_ccbNode"
+01505: 320  notearg
+01506: 320  newinit 1
+01511: 321  string "m_"
+01516: 321  getlocal 2
+01519: 321  add
+01520: 321  string "cntLab"
+01525: 321  add
+01526: 321  initprop "name"
+01531: 322  this
+01532: 322  string "m_"
+01537: 322  getlocal 2
+01540: 322  add
+01541: 322  string "cntLab"
+01546: 322  add
+01547: 322  getelem
+01548: 322  dup
+01549: 322  callprop "getTag"
+01554: 322  swap
+01555: 322  notearg
+01556: 322  call 0
+01559: 322  initprop "tag"
+01564: 323  string "ls"
+01569: 323  initprop "type"
+01574: 323  string "LS_yuanfenInf2"
+01579: 323  initprop "id"
+01584: 323  endinit
+01585: 323  notearg
+01586: 324  this
+01587: 324  notearg
+01588: 324  call 3
+01591: 324  pop
+01592: 324  goto 1713 (+121)
+01597: 326  name "xs"
+01602: 326  getprop "Utils"
+01607: 326  getprop "UI"
+01612: 326  dup
+01613: 326  callprop "replaceCcbByCfgEntity"
+01618: 326  swap
+01619: 326  notearg
+01620: 326  this
+01621: 326  getprop "m_ccbNode"
+01626: 326  notearg
+01627: 326  newinit 1
+01632: 327  string "m_"
+01637: 327  getlocal 2
+01640: 327  add
+01641: 327  string "cntLab"
+01646: 327  add
+01647: 327  initprop "name"
+01652: 328  this
+01653: 328  string "m_"
+01658: 328  getlocal 2
+01661: 328  add
+01662: 328  string "cntLab"
+01667: 328  add
+01668: 328  getelem
+01669: 328  dup
+01670: 328  callprop "getTag"
+01675: 328  swap
+01676: 328  notearg
+01677: 328  call 0
+01680: 328  initprop "tag"
+01685: 329  string "ls"
+01690: 329  initprop "type"
+01695: 329  string "LS_yuanfenInf1"
+01700: 329  initprop "id"
+01705: 329  endinit
+01706: 329  notearg
+01707: 330  this
+01708: 330  notearg
+01709: 330  call 3
+01712: 330  pop
+01713: 332  this
+01714: 332  string "m_"
+01719: 332  getlocal 2
+01722: 332  add
+01723: 332  string "cntLab"
+01728: 332  add
+01729: 332  getelem
+01730: 332  dup
+01731: 332  callprop "setString"
+01736: 332  swap
+01737: 332  notearg
+01738: 332  getlocal 7
+01741: 332  getlocal 2
+01744: 332  one
+01745: 332  sub
+01746: 332  getelem
+01747: 332  dup
+01748: 332  callprop "getNameString"
+01753: 332  swap
+01754: 332  notearg
+01755: 332  call 0
+01758: 332  notearg
+01759: 332  call 1
+01762: 332  pop
+01763: 317  inclocal 9
+01766: 317  getlocal 2
+01769: 317  pos
+01770: 317  one
+01771: 317  add
+01772: 317  setlocal 2
+01775: 317  pop
+01776: 317  loopentry
+01777: 317  getlocal 2
+01780: 317  getlocal 7
+01783: 317  length "length"
+01788: 317  le
+01789: 317  ifne 1388 (-401)
+01794: 334  getlocal 7
+01797: 334  length "length"
+01802: 334  one
+01803: 334  add
+01804: 334  setlocal 2
+01807: 334  pop
+01808: 334  goto 1978 (+170)
+01813: 335  loophead
+01814: 335  name "xs"
+01819: 335  getprop "Utils"
+01824: 335  getprop "UI"
+01829: 335  dup
+01830: 335  callprop "replaceCcbByCfgEntity"
+01835: 335  swap
+01836: 335  notearg
+01837: 335  this
+01838: 335  getprop "m_ccbNode"
+01843: 335  notearg
+01844: 335  newinit 1
+01849: 336  string "m_"
+01854: 336  getlocal 2
+01857: 336  add
+01858: 336  string "cntLab"
+01863: 336  add
+01864: 336  initprop "name"
+01869: 337  this
+01870: 337  string "m_"
+01875: 337  getlocal 2
+01878: 337  add
+01879: 337  string "cntLab"
+01884: 337  add
+01885: 337  getelem
+01886: 337  dup
+01887: 337  callprop "getTag"
+01892: 337  swap
+01893: 337  notearg
+01894: 337  call 0
+01897: 337  initprop "tag"
+01902: 338  string "ls"
+01907: 338  initprop "type"
+01912: 338  string "LS_yuanfenInf1"
+01917: 338  initprop "id"
+01922: 338  endinit
+01923: 338  notearg
+01924: 339  this
+01925: 339  notearg
+01926: 339  call 3
+01929: 339  pop
+01930: 340  this
+01931: 340  string "m_"
+01936: 340  getlocal 2
+01939: 340  add
+01940: 340  string "cntLab"
+01945: 340  add
+01946: 340  getelem
+01947: 340  dup
+01948: 340  callprop "setString"
+01953: 340  swap
+01954: 340  notearg
+01955: 340  string ""
+01960: 340  notearg
+01961: 340  call 1
+01964: 340  pop
+01965: 334  inclocal 9
+01968: 334  getlocal 2
+01971: 334  pos
+01972: 334  one
+01973: 334  add
+01974: 334  setlocal 2
+01977: 334  pop
+01978: 334  loopentry
+01979: 334  getlocal 2
+01982: 334  int8 11
+01984: 334  lt
+01985: 334  ifne 1813 (-172)
+01990: 341  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:209 ---
+;; function object[5] showNoFatesMessage
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:343 ---
+loc   line  op
+----- ----  --
+main:
+00000: 344  this
+00001: 344  getprop "noGoddessFateTip"
+00006: 344  not
+00007: 344  ifeq 174 (+167)
+00012: 345  this
+00013: 345  name "xs"
+00018: 345  getprop "Factorys"
+00023: 345  getprop "Label"
+00028: 345  dup
+00029: 345  callprop "createByStyleId"
+00034: 345  swap
+00035: 345  notearg
+00036: 345  string "LS_danyao"
+00041: 345  notearg
+00042: 345  call 1
+00045: 345  setprop "noGoddessFateTip"
+00050: 345  pop
+00051: 346  this
+00052: 346  getprop "noGoddessFateTip"
+00057: 346  dup
+00058: 346  callprop "setString"
+00063: 346  swap
+00064: 346  notearg
+00065: 346  name "xs"
+00070: 346  getprop "Tools"
+00075: 346  getprop "String"
+00080: 346  dup
+00081: 346  callprop "createString"
+00086: 346  swap
+00087: 346  notearg
+00088: 346  string "noGoddessFateTip"
+00093: 346  notearg
+00094: 346  call 1
+00097: 346  notearg
+00098: 346  call 1
+00101: 346  pop
+00102: 347  this
+00103: 347  getprop "noGoddessFateTip"
+00108: 347  dup
+00109: 347  callprop "setPosition"
+00114: 347  swap
+00115: 347  notearg
+00116: 347  this
+00117: 347  getprop "m_jiacheng_bg"
+00122: 347  dup
+00123: 347  callprop "getPosition"
+00128: 347  swap
+00129: 347  notearg
+00130: 347  call 0
+00133: 347  notearg
+00134: 347  call 1
+00137: 347  pop
+00138: 348  name "xs"
+00143: 348  getprop "Utils"
+00148: 348  getprop "Node"
+00153: 348  dup
+00154: 348  callprop "attachNodes"
+00159: 348  swap
+00160: 348  notearg
+00161: 348  this
+00162: 348  notearg
+00163: 348  this
+00164: 348  getprop "noGoddessFateTip"
+00169: 348  notearg
+00170: 348  call 2
+00173: 348  pop
+00174: 349  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:343 ---
+;; function object[6] getPositionByType
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] idex
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:351 ---
+loc   line  op
+----- ----  --
+main:
+00000: 352  getarg 0
+00003: 352  one
+00004: 352  eq
+00005: 352  ifeq 60 (+55)
+00010: 354  name "cc"
+00015: 354  dup
+00016: 354  callprop "p"
+00021: 354  swap
+00022: 354  notearg
+00023: 354  this
+00024: 354  getprop "m_jiacheng01Pic_position"
+00029: 354  getprop "x"
+00034: 354  uint16 150
+00037: 354  add
+00038: 354  notearg
+00039: 355  this
+00040: 355  getprop "m_jiacheng01Pic_position"
+00045: 355  getprop "y"
+00050: 355  notearg
+00051: 355  call 2
+00054: 355  return
+00055: 355  goto 179 (+124)
+00060: 357  getarg 0
+00063: 357  int8 2
+00065: 357  eq
+00066: 357  ifeq 120 (+54)
+00071: 358  name "cc"
+00076: 358  dup
+00077: 358  callprop "p"
+00082: 358  swap
+00083: 358  notearg
+00084: 358  this
+00085: 358  getprop "m_jiacheng01Pic_position"
+00090: 358  getprop "x"
+00095: 358  notearg
+00096: 359  this
+00097: 359  getprop "m_jiacheng01Pic_position"
+00102: 359  getprop "y"
+00107: 359  int8 36
+00109: 359  sub
+00110: 359  notearg
+00111: 359  call 2
+00114: 359  return
+00115: 359  goto 179 (+64)
+00120: 361  getarg 0
+00123: 361  int8 3
+00125: 361  eq
+00126: 361  ifeq 179 (+53)
+00131: 362  name "cc"
+00136: 362  dup
+00137: 362  callprop "p"
+00142: 362  swap
+00143: 362  notearg
+00144: 362  this
+00145: 362  getprop "m_jiacheng01Pic_position"
+00150: 362  getprop "x"
+00155: 362  uint16 150
+00158: 362  add
+00159: 362  notearg
+00160: 363  this
+00161: 363  getprop "m_jiacheng01Pic_position"
+00166: 363  getprop "y"
+00171: 363  int8 36
+00173: 363  sub
+00174: 363  notearg
+00175: 363  call 2
+00178: 363  return
+00179: 364  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:351 ---
+;; function object[7] getJiaChangePicByType
+;; function metadata object[7] nargs=1 bindings=2
+;; arg[0] type
+;; local[0] iconPic
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:366 ---
+loc   line  op
+----- ----  --
+main:
+00000: 367  null
+00001: 367  setlocal 0
+00004: 367  pop
+00005: 368  getarg 0
+00008: 368  tableswitch defaultOffset 217 low 1 high 4
+	1: 29
+	2: 76
+	3: 123
+	4: 170
+00037: 371  name "xs"
+00042: 371  getprop "Factorys"
+00047: 371  getprop "Sprite"
+00052: 371  dup
+00053: 371  callprop "create"
+00058: 371  swap
+00059: 371  notearg
+00060: 371  string "icon_atk1"
+00065: 371  notearg
+00066: 371  string "Cmn01"
+00071: 371  notearg
+00072: 371  call 2
+00075: 371  setlocal 0
+00078: 371  pop
+00079: 372  goto 253 (+174)
+00084: 376  name "xs"
+00089: 376  getprop "Factorys"
+00094: 376  getprop "Sprite"
+00099: 376  dup
+00100: 376  callprop "create"
+00105: 376  swap
+00106: 376  notearg
+00107: 376  string "icon_def1"
+00112: 376  notearg
+00113: 376  string "Cmn01"
+00118: 376  notearg
+00119: 376  call 2
+00122: 376  setlocal 0
+00125: 376  pop
+00126: 377  goto 253 (+127)
+00131: 381  name "xs"
+00136: 381  getprop "Factorys"
+00141: 381  getprop "Sprite"
+00146: 381  dup
+00147: 381  callprop "create"
+00152: 381  swap
+00153: 381  notearg
+00154: 381  string "icon_hp1"
+00159: 381  notearg
+00160: 381  string "Cmn01"
+00165: 381  notearg
+00166: 381  call 2
+00169: 381  setlocal 0
+00172: 381  pop
+00173: 382  goto 253 (+80)
+00178: 386  name "xs"
+00183: 386  getprop "Factorys"
+00188: 386  getprop "Sprite"
+00193: 386  dup
+00194: 386  callprop "create"
+00199: 386  swap
+00200: 386  notearg
+00201: 386  string "icon_int1"
+00206: 386  notearg
+00207: 386  string "Cmn01"
+00212: 386  notearg
+00213: 386  call 2
+00216: 386  setlocal 0
+00219: 386  pop
+00220: 387  goto 253 (+33)
+00225: 391  this
+00226: 391  dup
+00227: 391  callprop "assert"
+00232: 391  swap
+00233: 391  notearg
+00234: 391  string "iconPic type erro"
+00239: 391  notearg
+00240: 391  getarg 0
+00243: 391  notearg
+00244: 391  call 2
+00247: 391  pop
+00248: 392  goto 253 (+5)
+00253: 396  getlocal 0
+00256: 396  return
+00257: 396  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:366 ---
+;; function object[8] onEnter
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:400 ---
+loc   line  op
+----- ----  --
+main:
+00000: 401  this
+00001: 401  dup
+00002: 401  callprop "_super"
+00007: 401  swap
+00008: 401  notearg
+00009: 401  call 0
+00012: 401  pop
+00013: 401  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:400 ---
+;; function object[9] onExit
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:403 ---
+loc   line  op
+----- ----  --
+main:
+00000: 404  this
+00001: 404  dup
+00002: 404  callprop "_super"
+00007: 404  swap
+00008: 404  notearg
+00009: 404  call 0
+00012: 404  pop
+00013: 404  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:403 ---
+;; function object[10] setBaseTouchPriority
+;; function metadata object[10] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:406 ---
+loc   line  op
+----- ----  --
+main:
+00000: 407  this
+00001: 407  getarg 0
+00004: 407  setprop "m_baseTouchPriority"
+00009: 407  pop
+00010: 408  this
+00011: 408  dup
+00012: 408  callprop "setTouchPriority"
+00017: 408  swap
+00018: 408  notearg
+00019: 408  this
+00020: 408  getprop "m_baseTouchPriority"
+00025: 408  one
+00026: 408  sub
+00027: 408  notearg
+00028: 408  call 1
+00031: 408  pop
+00032: 410  name "xs"
+00037: 410  getprop "Utils"
+00042: 410  dup
+00043: 410  callprop "isEmpty"
+00048: 410  swap
+00049: 410  notearg
+00050: 410  this
+00051: 410  getprop "m_data"
+00056: 410  notearg
+00057: 410  call 1
+00060: 410  ifeq 175 (+115)
+00065: 411  this
+00066: 411  name "xs"
+00071: 411  getprop "Profile"
+00076: 411  getprop "GameData"
+00081: 411  getprop "Mgr"
+00086: 411  dup
+00087: 411  callprop "getInstance"
+00092: 411  swap
+00093: 411  notearg
+00094: 411  call 0
+00097: 411  getprop "Goddess"
+00102: 411  dup
+00103: 411  callprop "getAll"
+00108: 411  swap
+00109: 411  notearg
+00110: 411  call 0
+00113: 411  setprop "m_data"
+00118: 411  pop
+00119: 412  this
+00120: 412  getprop "m_data"
+00125: 412  dup
+00126: 412  callprop "sort"
+00131: 412  swap
+00132: 412  notearg
+00133: 412  name "xs"
+00138: 412  getprop "Tools"
+00143: 412  getprop "Sort"
+00148: 412  dup
+00149: 412  callprop "by"
+00154: 412  swap
+00155: 412  notearg
+00156: 412  name "xs"
+00161: 412  getprop "Constant_SortType_Goddess_Default"
+00166: 412  notearg
+00167: 412  call 1
+00170: 412  notearg
+00171: 412  call 1
+00174: 412  pop
+00175: 414  this
+00176: 414  getprop "m_data"
+00181: 414  length "length"
+00186: 414  zero
+00187: 414  eq
+00188: 414  ifeq 225 (+37)
+00193: 415  this
+00194: 415  getprop "m_noSelectButton"
+00199: 415  dup
+00200: 415  callprop "setTouchPriority"
+00205: 415  swap
+00206: 415  notearg
+00207: 415  this
+00208: 415  getprop "m_baseTouchPriority"
+00213: 415  one
+00214: 415  sub
+00215: 415  notearg
+00216: 415  call 1
+00219: 415  pop
+00220: 415  goto 279 (+59)
+00225: 418  this
+00226: 418  getprop "m_changeSkinButton"
+00231: 418  dup
+00232: 418  callprop "setTouchPriority"
+00237: 418  swap
+00238: 418  notearg
+00239: 418  this
+00240: 418  getprop "m_baseTouchPriority"
+00245: 418  one
+00246: 418  sub
+00247: 418  notearg
+00248: 418  call 1
+00251: 418  pop
+00252: 419  this
+00253: 419  getprop "m_chuZhanButton"
+00258: 419  dup
+00259: 419  callprop "setTouchPriority"
+00264: 419  swap
+00265: 419  notearg
+00266: 419  this
+00267: 419  getprop "m_baseTouchPriority"
+00272: 419  one
+00273: 419  sub
+00274: 419  notearg
+00275: 419  call 1
+00278: 419  pop
+00279: 420  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:406 ---
+;; function object[11] IconSwapView_swapAtIndex
+;; function metadata object[11] nargs=1 bindings=1
+;; arg[0] idex
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:423 ---
+loc   line  op
+----- ----  --
+main:
+00000: 424  this
+00001: 424  dup
+00002: 424  callprop "updateView"
+00007: 424  swap
+00008: 424  notearg
+00009: 424  this
+00010: 424  getprop "m_data"
+00015: 424  getarg 0
+00018: 424  getelem
+00019: 424  notearg
+00020: 424  call 1
+00023: 424  pop
+00024: 424  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:423 ---
+;; function object[12] noSelectButtonCallBack
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:426 ---
+loc   line  op
+----- ----  --
+main:
+00000: 426  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:426 ---
+;; function object[13] changeSkinCallBack
+;; function metadata object[13] nargs=0 bindings=1
+;; local[0] skin_id
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=144 object[0]
+;; FUNCTION-MAP kind=lambda offset=150 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:431 ---
+loc   line  op
+----- ----  --
+main:
+00000: 432  this
+00001: 432  getprop "m_middleData"
+00006: 432  dup
+00007: 432  callprop "getNextSkinID"
+00012: 432  swap
+00013: 432  notearg
+00014: 432  call 0
+00017: 432  setlocal 0
+00020: 432  pop
+00021: 433  name "xs"
+00026: 433  getprop "Tools"
+00031: 433  getprop "Net"
+00036: 433  dup
+00037: 433  callprop "requestGoddessChangeSkin"
+00042: 433  swap
+00043: 433  notearg
+00044: 433  newinit 1
+00049: 434  name "xs"
+00054: 434  getprop "Profile"
+00059: 434  getprop "GameData"
+00064: 434  getprop "Mgr"
+00069: 434  dup
+00070: 434  callprop "getInstance"
+00075: 434  swap
+00076: 434  notearg
+00077: 434  call 0
+00080: 434  getprop "Player"
+00085: 434  dup
+00086: 434  callprop "getPlayer"
+00091: 434  swap
+00092: 434  notearg
+00093: 434  call 0
+00096: 434  dup
+00097: 434  callprop "getPlayerId"
+00102: 434  swap
+00103: 434  notearg
+00104: 434  call 0
+00107: 434  initprop "user_id"
+00112: 435  this
+00113: 435  getprop "m_middleData"
+00118: 435  dup
+00119: 435  callprop "getPkId"
+00124: 435  swap
+00125: 435  notearg
+00126: 435  call 0
+00129: 435  initprop "user_godness_id"
+00134: 436  getlocal 0
+00137: 436  initprop "godness_skin_id"
+00142: 436  endinit
+00143: 436  notearg
+00144: 438  lambda (function () {
+    [sourceless code]
+})
+00149: 438  notearg
+00150: 446  lambda (function () {
+    [sourceless code]
+})
+00155: 446  notearg
+00156: 448  this
+00157: 448  notearg
+00158: 448  call 4
+00161: 448  pop
+00162: 448  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:431 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:438 ---
+loc   line  op
+----- ----  --
+main:
+00000: 439  getarg 0
+00003: 439  getprop "result"
+00008: 439  ifeq 71 (+63)
+00013: 441  name "xs"
+00018: 441  getprop "Views"
+00023: 441  getprop "Mgr"
+00028: 441  dup
+00029: 441  callprop "showToastByStringKey"
+00034: 441  swap
+00035: 441  notearg
+00036: 441  string "goddess_skinSuccess"
+00041: 441  notearg
+00042: 441  call 1
+00045: 441  pop
+00046: 443  this
+00047: 443  getprop "m_goddessView"
+00052: 443  dup
+00053: 443  callprop "updataMiddleTile"
+00058: 443  swap
+00059: 443  notearg
+00060: 443  this
+00061: 443  getprop "m_data"
+00066: 443  notearg
+00067: 443  call 1
+00070: 443  pop
+00071: 444  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:438 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:446 ---
+loc   line  op
+----- ----  --
+main:
+00000: 446  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:446 ---
+;; function object[14] goToFight
+;; function metadata object[14] nargs=0 bindings=1
+;; local[0] _goddess
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=225 object[0]
+;; FUNCTION-MAP kind=lambda offset=231 object[1]
+;; FUNCTION-MAP kind=lambda offset=363 object[2]
+;; FUNCTION-MAP kind=lambda offset=369 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:451 ---
+loc   line  op
+----- ----  --
+main:
+00000: 452  this
+00001: 452  zero
+00002: 452  setprop "m_bef"
+00007: 452  pop
+00008: 453  name "xs"
+00013: 453  getprop "Profile"
+00018: 453  getprop "GameData"
+00023: 453  getprop "Mgr"
+00028: 453  dup
+00029: 453  callprop "getInstance"
+00034: 453  swap
+00035: 453  notearg
+00036: 453  call 0
+00039: 453  getprop "Goddess"
+00044: 453  dup
+00045: 453  callprop "getFightGoddess"
+00050: 453  swap
+00051: 453  notearg
+00052: 453  call 0
+00055: 453  setlocal 0
+00058: 453  pop
+00059: 454  getlocal 0
+00062: 454  ifeq 88 (+26)
+00067: 455  this
+00068: 455  getlocal 0
+00071: 455  dup
+00072: 455  callprop "getBigFighting"
+00077: 455  swap
+00078: 455  notearg
+00079: 455  call 0
+00082: 455  setprop "m_bef"
+00087: 455  pop
+00088: 457  this
+00089: 457  getprop "m_middleData"
+00094: 457  dup
+00095: 457  callprop "getIsFight"
+00100: 457  swap
+00101: 457  notearg
+00102: 457  call 0
+00105: 457  ifeq 248 (+143)
+00110: 458  name "xs"
+00115: 458  getprop "Tools"
+00120: 458  getprop "Net"
+00125: 458  dup
+00126: 458  callprop "requestGoddessCancelFight"
+00131: 458  swap
+00132: 458  notearg
+00133: 458  newinit 1
+00138: 459  name "xs"
+00143: 459  getprop "Profile"
+00148: 459  getprop "GameData"
+00153: 459  getprop "Mgr"
+00158: 459  dup
+00159: 459  callprop "getInstance"
+00164: 459  swap
+00165: 459  notearg
+00166: 459  call 0
+00169: 459  getprop "Player"
+00174: 459  dup
+00175: 459  callprop "getPlayer"
+00180: 459  swap
+00181: 459  notearg
+00182: 459  call 0
+00185: 459  dup
+00186: 459  callprop "getPlayerId"
+00191: 459  swap
+00192: 459  notearg
+00193: 459  call 0
+00196: 459  initprop "user_id"
+00201: 460  this
+00202: 460  getprop "m_middleData"
+00207: 460  dup
+00208: 460  callprop "getPkId"
+00213: 460  swap
+00214: 460  notearg
+00215: 460  call 0
+00218: 460  initprop "user_godness_id"
+00223: 460  endinit
+00224: 460  notearg
+00225: 462  lambda (function () {
+    [sourceless code]
+})
+00230: 462  notearg
+00231: 476  lambda (function () {
+    [sourceless code]
+})
+00236: 476  notearg
+00237: 478  this
+00238: 478  notearg
+00239: 478  call 4
+00242: 478  pop
+00243: 478  goto 381 (+138)
+00248: 482  name "xs"
+00253: 482  getprop "Tools"
+00258: 482  getprop "Net"
+00263: 482  dup
+00264: 482  callprop "requestGoddessGoToFight"
+00269: 482  swap
+00270: 482  notearg
+00271: 482  newinit 1
+00276: 483  name "xs"
+00281: 483  getprop "Profile"
+00286: 483  getprop "GameData"
+00291: 483  getprop "Mgr"
+00296: 483  dup
+00297: 483  callprop "getInstance"
+00302: 483  swap
+00303: 483  notearg
+00304: 483  call 0
+00307: 483  getprop "Player"
+00312: 483  dup
+00313: 483  callprop "getPlayer"
+00318: 483  swap
+00319: 483  notearg
+00320: 483  call 0
+00323: 483  dup
+00324: 483  callprop "getPlayerId"
+00329: 483  swap
+00330: 483  notearg
+00331: 483  call 0
+00334: 483  initprop "user_id"
+00339: 484  this
+00340: 484  getprop "m_middleData"
+00345: 484  dup
+00346: 484  callprop "getPkId"
+00351: 484  swap
+00352: 484  notearg
+00353: 484  call 0
+00356: 484  initprop "user_godness_id"
+00361: 484  endinit
+00362: 484  notearg
+00363: 486  lambda (function () {
+    [sourceless code]
+})
+00368: 486  notearg
+00369: 501  lambda (function () {
+    [sourceless code]
+})
+00374: 501  notearg
+00375: 503  this
+00376: 503  notearg
+00377: 503  call 4
+00380: 503  pop
+00381: 506  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:451 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:462 ---
+loc   line  op
+----- ----  --
+main:
+00000: 463  getarg 0
+00003: 463  getprop "result"
+00008: 463  ifeq 174 (+166)
+00013: 466  this
+00014: 466  this
+00015: 466  getprop "m_data"
+00020: 466  this
+00021: 466  getprop "m_nowPage"
+00026: 466  getelem
+00027: 466  setprop "m_middleData"
+00032: 466  pop
+00033: 469  name "xs"
+00038: 469  getprop "Profile"
+00043: 469  getprop "GameData"
+00048: 469  getprop "Mgr"
+00053: 469  dup
+00054: 469  callprop "getInstance"
+00059: 469  swap
+00060: 469  notearg
+00061: 469  call 0
+00064: 469  getprop "Hint"
+00069: 469  dup
+00070: 469  callprop "updateHintInfo"
+00075: 469  swap
+00076: 469  notearg
+00077: 469  call 0
+00080: 469  pop
+00081: 470  this
+00082: 470  dup
+00083: 470  callprop "_showFightChange"
+00088: 470  swap
+00089: 470  notearg
+00090: 470  this
+00091: 470  getprop "m_bef"
+00096: 470  notearg
+00097: 470  zero
+00098: 470  notearg
+00099: 470  call 2
+00102: 470  pop
+00103: 472  this
+00104: 472  getprop "m_chuZhanZhong"
+00109: 472  dup
+00110: 472  callprop "setVisible"
+00115: 472  swap
+00116: 472  notearg
+00117: 472  false
+00118: 472  notearg
+00119: 472  call 1
+00122: 472  pop
+00123: 473  this
+00124: 473  getprop "m_chuZhanButton"
+00129: 473  dup
+00130: 473  callprop "setString"
+00135: 473  swap
+00136: 473  notearg
+00137: 473  name "xs"
+00142: 473  getprop "Tools"
+00147: 473  getprop "String"
+00152: 473  dup
+00153: 473  callprop "createString"
+00158: 473  swap
+00159: 473  notearg
+00160: 473  string "goddess_goToFight"
+00165: 473  notearg
+00166: 473  call 1
+00169: 473  notearg
+00170: 473  call 1
+00173: 473  pop
+00174: 474  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:462 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:476 ---
+loc   line  op
+----- ----  --
+main:
+00000: 476  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:476 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:486 ---
+loc   line  op
+----- ----  --
+main:
+00000: 487  getarg 0
+00003: 487  getprop "result"
+00008: 487  ifeq 190 (+182)
+00013: 489  this
+00014: 489  this
+00015: 489  getprop "m_data"
+00020: 489  this
+00021: 489  getprop "m_nowPage"
+00026: 489  getelem
+00027: 489  setprop "m_middleData"
+00032: 489  pop
+00033: 492  name "xs"
+00038: 492  getprop "Profile"
+00043: 492  getprop "GameData"
+00048: 492  getprop "Mgr"
+00053: 492  dup
+00054: 492  callprop "getInstance"
+00059: 492  swap
+00060: 492  notearg
+00061: 492  call 0
+00064: 492  getprop "Hint"
+00069: 492  dup
+00070: 492  callprop "updateHintInfo"
+00075: 492  swap
+00076: 492  notearg
+00077: 492  call 0
+00080: 492  pop
+00081: 494  this
+00082: 494  dup
+00083: 494  callprop "_showFightChange"
+00088: 494  swap
+00089: 494  notearg
+00090: 494  this
+00091: 494  getprop "m_bef"
+00096: 494  notearg
+00097: 494  this
+00098: 494  getprop "m_middleData"
+00103: 494  dup
+00104: 494  callprop "getBigFighting"
+00109: 494  swap
+00110: 494  notearg
+00111: 494  call 0
+00114: 494  notearg
+00115: 494  call 2
+00118: 494  pop
+00119: 497  this
+00120: 497  getprop "m_chuZhanZhong"
+00125: 497  dup
+00126: 497  callprop "setVisible"
+00131: 497  swap
+00132: 497  notearg
+00133: 497  true
+00134: 497  notearg
+00135: 497  call 1
+00138: 497  pop
+00139: 498  this
+00140: 498  getprop "m_chuZhanButton"
+00145: 498  dup
+00146: 498  callprop "setString"
+00151: 498  swap
+00152: 498  notearg
+00153: 498  name "xs"
+00158: 498  getprop "Tools"
+00163: 498  getprop "String"
+00168: 498  dup
+00169: 498  callprop "createString"
+00174: 498  swap
+00175: 498  notearg
+00176: 498  string "goddess_NotgoToFight"
+00181: 498  notearg
+00182: 498  call 1
+00185: 498  notearg
+00186: 498  call 1
+00189: 498  pop
+00190: 499  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:486 ---
+;; function object[3] <anonymous>
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:501 ---
+loc   line  op
+----- ----  --
+main:
+00000: 501  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:501 ---
+;; function object[15] rightCallBack
+;; function metadata object[15] nargs=0 bindings=1
+;; local[0] maxPage
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:509 ---
+loc   line  op
+----- ----  --
+main:
+00000: 510  this
+00001: 510  propinc "m_nowPage"
+00007: 510  dup
+00008: 510  getprop "m_nowPage"
+00013: 510  pos
+00014: 510  dup
+00015: 510  one
+00016: 510  add
+00017: 510  pick 2
+00019: 510  swap
+00020: 510  setprop "m_nowPage"
+00025: 510  pop
+00026: 510  pop
+00027: 511  this
+00028: 511  getprop "m_goddessNum"
+00033: 511  one
+00034: 511  sub
+00035: 511  setlocal 0
+00038: 511  pop
+00039: 512  this
+00040: 512  getprop "m_nowPage"
+00045: 512  getlocal 0
+00048: 512  eq
+00049: 512  ifeq 99 (+50)
+00054: 513  this
+00055: 513  getprop "m_leftButton"
+00060: 513  dup
+00061: 513  callprop "setVisible"
+00066: 513  swap
+00067: 513  notearg
+00068: 513  true
+00069: 513  notearg
+00070: 513  call 1
+00073: 513  pop
+00074: 514  this
+00075: 514  getprop "m_rightButton"
+00080: 514  dup
+00081: 514  callprop "setVisible"
+00086: 514  swap
+00087: 514  notearg
+00088: 514  false
+00089: 514  notearg
+00090: 514  call 1
+00093: 514  pop
+00094: 514  goto 139 (+45)
+00099: 516  this
+00100: 516  getprop "m_leftButton"
+00105: 516  dup
+00106: 516  callprop "setVisible"
+00111: 516  swap
+00112: 516  notearg
+00113: 516  true
+00114: 516  notearg
+00115: 516  call 1
+00118: 516  pop
+00119: 517  this
+00120: 517  getprop "m_rightButton"
+00125: 517  dup
+00126: 517  callprop "setVisible"
+00131: 517  swap
+00132: 517  notearg
+00133: 517  true
+00134: 517  notearg
+00135: 517  call 1
+00138: 517  pop
+00139: 518  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:509 ---
+;; function object[16] leftCallBack
+;; function metadata object[16] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:522 ---
+loc   line  op
+----- ----  --
+main:
+00000: 524  this
+00001: 524  propdec "m_nowPage"
+00007: 524  dup
+00008: 524  getprop "m_nowPage"
+00013: 524  pos
+00014: 524  dup
+00015: 524  one
+00016: 524  sub
+00017: 524  pick 2
+00019: 524  swap
+00020: 524  setprop "m_nowPage"
+00025: 524  pop
+00026: 524  pop
+00027: 525  this
+00028: 525  getprop "m_nowPage"
+00033: 525  zero
+00034: 525  eq
+00035: 525  ifeq 85 (+50)
+00040: 526  this
+00041: 526  getprop "m_leftButton"
+00046: 526  dup
+00047: 526  callprop "setVisible"
+00052: 526  swap
+00053: 526  notearg
+00054: 526  false
+00055: 526  notearg
+00056: 526  call 1
+00059: 526  pop
+00060: 527  this
+00061: 527  getprop "m_rightButton"
+00066: 527  dup
+00067: 527  callprop "setVisible"
+00072: 527  swap
+00073: 527  notearg
+00074: 527  true
+00075: 527  notearg
+00076: 527  call 1
+00079: 527  pop
+00080: 527  goto 125 (+45)
+00085: 529  this
+00086: 529  getprop "m_leftButton"
+00091: 529  dup
+00092: 529  callprop "setVisible"
+00097: 529  swap
+00098: 529  notearg
+00099: 529  true
+00100: 529  notearg
+00101: 529  call 1
+00104: 529  pop
+00105: 530  this
+00106: 530  getprop "m_rightButton"
+00111: 530  dup
+00112: 530  callprop "setVisible"
+00117: 530  swap
+00118: 530  notearg
+00119: 530  true
+00120: 530  notearg
+00121: 530  call 1
+00124: 530  pop
+00125: 531  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:522 ---
+;; function object[17] rightButtonCallback
+;; function metadata object[17] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:534 ---
+loc   line  op
+----- ----  --
+main:
+00000: 546  this
+00001: 546  getprop "m_goddessView"
+00006: 546  dup
+00007: 546  callprop "nextTile"
+00012: 546  swap
+00013: 546  notearg
+00014: 546  call 0
+00017: 546  pop
+00018: 546  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:534 ---
+;; function object[18] leftButtonCallback
+;; function metadata object[18] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:549 ---
+loc   line  op
+----- ----  --
+main:
+00000: 559  this
+00001: 559  getprop "m_goddessView"
+00006: 559  dup
+00007: 559  callprop "lastTile"
+00012: 559  swap
+00013: 559  notearg
+00014: 559  call 0
+00017: 559  pop
+00018: 559  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:549 ---
+;; function object[19] _showFightChange
+;; function metadata object[19] nargs=2 bindings=4
+;; arg[0] bef
+;; arg[1] now
+;; local[0] change
+;; local[1] _style
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:564 ---
+loc   line  op
+----- ----  --
+main:
+00000: 565  getarg 1
+00003: 565  getarg 0
+00006: 565  sub
+00007: 565  setlocal 0
+00010: 565  pop
+00011: 566  getlocal 1
+00014: 566  pop
+00015: 567  getlocal 0
+00018: 567  zero
+00019: 567  gt
+00020: 567  ifeq 52 (+32)
+00025: 568  string "+"
+00030: 568  getlocal 0
+00033: 568  add
+00034: 568  setlocal 0
+00037: 568  pop
+00038: 569  string "LS_Fight_Cure"
+00043: 569  setlocal 1
+00046: 569  pop
+00047: 569  goto 71 (+24)
+00052: 571  getlocal 0
+00055: 571  zero
+00056: 571  lt
+00057: 571  ifeq 71 (+14)
+00062: 572  string "LS_Fight_Hurt"
+00067: 572  setlocal 1
+00070: 572  pop
+00071: 575  getlocal 0
+00074: 575  zero
+00075: 575  stricteq
+00076: 575  ifeq 146 (+70)
+00081: 576  name "xs"
+00086: 576  getprop "Views"
+00091: 576  getprop "Mgr"
+00096: 576  dup
+00097: 576  callprop "showFlutterView"
+00102: 576  swap
+00103: 576  notearg
+00104: 577  name "xs"
+00109: 577  getprop "Tools"
+00114: 577  getprop "String"
+00119: 577  dup
+00120: 577  callprop "createString"
+00125: 577  swap
+00126: 577  notearg
+00127: 577  string "auto_name_210"
+00132: 577  notearg
+00133: 577  call 1
+00136: 577  notearg
+00137: 577  call 1
+00140: 577  pop
+00141: 577  goto 214 (+73)
+00146: 581  name "xs"
+00151: 581  getprop "Views"
+00156: 581  getprop "Mgr"
+00161: 581  dup
+00162: 581  callprop "showFlutterView"
+00167: 581  swap
+00168: 581  notearg
+00169: 582  name "xs"
+00174: 582  getprop "Tools"
+00179: 582  getprop "String"
+00184: 582  dup
+00185: 582  callprop "createString"
+00190: 582  swap
+00191: 582  notearg
+00192: 582  string "auto_name_211"
+00197: 582  notearg
+00198: 582  call 1
+00201: 582  getlocal 0
+00204: 582  add
+00205: 582  notearg
+00206: 583  getlocal 1
+00209: 583  notearg
+00210: 583  call 2
+00213: 583  pop
+00214: 585  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:564 ---
+;; function object[20] create
+;; function metadata object[20] nargs=0 bindings=1
+;; local[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:590 ---
+loc   line  op
+----- ----  --
+main:
+00000: 591  name "xs"
+00005: 591  getprop "Views"
+00010: 591  getprop "GoddessMainView"
+00015: 591  undefined
+00016: 591  notearg
+00017: 591  new 0
+00020: 591  setlocal 0
+00023: 591  pop
+00024: 592  getlocal 0
+00027: 592  and 47 (+20)
+00032: 592  pop
+00033: 592  getlocal 0
+00036: 592  dup
+00037: 592  callprop "init"
+00042: 592  swap
+00043: 592  notearg
+00044: 592  call 0
+00047: 592  ifeq 56 (+9)
+00052: 593  getlocal 0
+00055: 593  return
+00056: 595  name "xs"
+00061: 595  dup
+00062: 595  callprop "assert"
+00067: 595  swap
+00068: 595  notearg
+00069: 595  false
+00070: 595  notearg
+00071: 595  string "xs.Views.GoddessMainView.create error!"
+00076: 595  notearg
+00077: 595  call 2
+00080: 595  pop
+00081: 596  null
+00082: 596  return
+00083: 596  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Goddess/GoddessMainView.js:590 ---

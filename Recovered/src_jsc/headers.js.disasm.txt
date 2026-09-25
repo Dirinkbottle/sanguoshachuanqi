@@ -1,0 +1,164 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/headers.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/headers.js:1 ---
+loc   line  op
+----- ----  --
+00000:  33  defvar "xs"
+00005: 109  defvar "i"
+main:
+00010:  30  name "cc"
+00015:  30  dup
+00016:  30  callprop "log"
+00021:  30  swap
+00022:  30  notearg
+00023:  30  string "main headers.js begin"
+00028:  30  notearg
+00029:  30  call 1
+00032:  30  popv
+00033:  33  bindname "xs"
+00038:  33  name "xs"
+00043:  33  or 55 (+12)
+00048:  33  pop
+00049:  33  newinit 1
+00054:  33  endinit
+00055:  33  setname "xs"
+00060:  33  pop
+00061:  36  callname "require"
+00066:  36  implicitthis "require"
+00071:  36  notearg
+00072:  36  string "cfg.js"
+00077:  36  notearg
+00078:  36  call 1
+00081:  36  popv
+00082:  38  name "xsc"
+00087:  38  dup
+00088:  38  callprop "dump"
+00093:  38  swap
+00094:  38  notearg
+00095:  39  string "main info"
+00100:  39  notearg
+00101:  40  newinit 1
+00106:  41  name "xs"
+00111:  41  getprop "release"
+00116:  41  initprop "release"
+00121:  42  name "xs"
+00126:  42  getprop "useObfuscate"
+00131:  42  initprop "useObfuscate"
+00136:  43  name "xs"
+00141:  43  getprop "resVersion"
+00146:  43  initprop "version"
+00151:  44  name "xs"
+00156:  44  getprop "loadTest"
+00161:  44  initprop "loadTest"
+00166:  45  name "xs"
+00171:  45  getprop "useAudio"
+00176:  45  initprop "useAudio"
+00181:  45  endinit
+00182:  45  notearg
+00183:  45  call 2
+00186:  45  popv
+00187:  49  name "xs"
+00192:  49  newarray 16
+00196:  53  string "Libs/headers.js"
+00201:  53  initelem_array 0
+00205:  56  string "Utils/headers.js"
+00210:  56  initelem_array 1
+00214:  59  string "Cfg/headers.js"
+00219:  59  initelem_array 2
+00223:  62  string "Debug/headers.js"
+00228:  62  initelem_array 3
+00232:  65  string "Prototype/headers.js"
+00237:  65  initelem_array 4
+00241:  68  string "Factorys/headers.js"
+00246:  68  initelem_array 5
+00250:  74  string "Tools/headers.js"
+00255:  74  initelem_array 6
+00259:  77  string "AnySdk/headers.js"
+00264:  77  initelem_array 7
+00268:  80  string "EasySdk/headers.js"
+00273:  80  initelem_array 8
+00277:  83  string "Models/headers.js"
+00282:  83  initelem_array 9
+00286:  86  string "Profile/headers.js"
+00291:  86  initelem_array 10
+00295:  89  string "Views/headers.js"
+00300:  89  initelem_array 11
+00304:  92  string "Audio/headers.js"
+00309:  92  initelem_array 12
+00313:  95  string "Skill/headers.js"
+00318:  95  initelem_array 13
+00322:  98  string "Scene/headers.js"
+00327:  98  initelem_array 14
+00331: 101  string "Guide/headers.js"
+00336: 101  initelem_array 15
+00340: 101  endinit
+00341: 101  setprop "appFiles"
+00346: 101  popv
+00347: 107  callname "require"
+00352: 107  implicitthis "require"
+00357: 107  notearg
+00358: 107  string "cpp2jsb.js"
+00363: 107  notearg
+00364: 107  call 1
+00367: 107  popv
+00368: 109  bindname "i"
+00373: 109  zero
+00374: 109  setname "i"
+00379: 109  pop
+00380: 109  goto 464 (+84)
+00385: 111  loophead
+00386: 111  name "xs"
+00391: 111  getprop "useObfuscate"
+00396: 111  not
+00397: 111  ifeq 434 (+37)
+00402: 111  callname "require"
+00407: 111  implicitthis "require"
+00412: 111  notearg
+00413: 111  name "xs"
+00418: 111  getprop "appFiles"
+00423: 111  name "i"
+00428: 111  getelem
+00429: 111  notearg
+00430: 111  call 1
+00433: 111  popv
+00434: 109  nameinc "i"
+00440: 109  bindname "i"
+00445: 109  name "i"
+00450: 109  pos
+00451: 109  dup
+00452: 109  one
+00453: 109  add
+00454: 109  pick 2
+00456: 109  swap
+00457: 109  setname "i"
+00462: 109  pop
+00463: 109  pop
+00464: 109  loopentry
+00465: 109  name "i"
+00470: 109  name "xs"
+00475: 109  getprop "appFiles"
+00480: 109  length "length"
+00485: 109  lt
+00486: 109  ifne 385 (-101)
+00491: 119  callname "require"
+00496: 119  implicitthis "require"
+00501: 119  notearg
+00502: 119  string "debug.js"
+00507: 119  notearg
+00508: 119  call 1
+00511: 119  popv
+00512: 122  name "cc"
+00517: 122  dup
+00518: 122  callprop "log"
+00523: 122  swap
+00524: 122  notearg
+00525: 122  string "main headers.js end"
+00530: 122  notearg
+00531: 122  call 1
+00534: 122  popv
+00535: 122  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/headers.js:1 ---

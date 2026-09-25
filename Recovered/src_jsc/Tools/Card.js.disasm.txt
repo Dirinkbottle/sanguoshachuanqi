@@ -1,0 +1,2743 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/Card.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=46 object[0]
+;; FUNCTION-MAP kind=lambda offset=56 object[1]
+;; FUNCTION-MAP kind=lambda offset=66 object[2]
+;; FUNCTION-MAP kind=lambda offset=76 object[3]
+;; FUNCTION-MAP kind=lambda offset=86 object[4]
+;; FUNCTION-MAP kind=lambda offset=96 object[5]
+;; FUNCTION-MAP kind=lambda offset=106 object[6]
+;; FUNCTION-MAP kind=lambda offset=116 object[7]
+;; FUNCTION-MAP kind=lambda offset=126 object[8]
+;; FUNCTION-MAP kind=lambda offset=136 object[9]
+;; FUNCTION-MAP kind=lambda offset=146 object[10]
+;; FUNCTION-MAP kind=lambda offset=156 object[11]
+;; FUNCTION-MAP kind=lambda offset=166 object[12]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Tools"
+00010:   8  name "xs"
+00015:   8  getprop "Tools"
+00020:   8  getprop "Card"
+00025:   8  or 177 (+152)
+00030:   8  pop
+00031:   8  newinit 1
+00036:   9  string "tools.card"
+00041:   9  initprop "name"
+00046:  12  lambda (function () {
+    [sourceless code]
+})
+00051:  12  initprop "createPartView_Cmn"
+00056:  44  lambda (function () {
+    [sourceless code]
+})
+00061:  44  initprop "createPartView_General"
+00066: 135  lambda (function () {
+    [sourceless code]
+})
+00071: 135  initprop "createPartView_Equ"
+00076: 209  lambda (function () {
+    [sourceless code]
+})
+00081: 209  initprop "createPartView_Skill"
+00086: 224  lambda (function () {
+    [sourceless code]
+})
+00091: 224  initprop "createPartView_PlayerAttr"
+00096: 284  lambda (function () {
+    [sourceless code]
+})
+00101: 284  initprop "createPartView_Item"
+00106: 323  lambda (function () {
+    [sourceless code]
+})
+00111: 323  initprop "createPartView_Gems"
+00116: 358  lambda (function () {
+    [sourceless code]
+})
+00121: 358  initprop "createPartView_Goddess"
+00126: 411  lambda (function () {
+    [sourceless code]
+})
+00131: 411  initprop "getImgFileName"
+00136: 470  lambda (function () {
+    [sourceless code]
+})
+00141: 470  initprop "createHeadView"
+00146: 505  lambda (function () {
+    [sourceless code]
+})
+00151: 505  initprop "createHeadView_General_Equ_Skill"
+00156: 575  lambda (function () {
+    [sourceless code]
+})
+00161: 575  initprop "createHeadView_Item"
+00166: 600  lambda (function () {
+    [sourceless code]
+})
+00171: 600  initprop "calculateAttrType_FightPoint"
+00176: 600  endinit
+00177: 600  setprop "Card"
+00182: 600  popv
+00183: 604  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:1 ---
+;; function object[0] createPartView_Cmn
+;; function metadata object[0] nargs=2 bindings=4
+;; arg[0] model
+;; arg[1] partName
+;; local[0] _ret
+;; local[1] _grade
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  null
+00001:  15  setlocal 0
+00004:  15  pop
+00005:  18  getarg 1
+00008:  18  string "head2"
+00013:  18  stricteq
+00014:  18  ifeq 185 (+171)
+00019:  21  getarg 0
+00022:  21  dup
+00023:  21  callprop "getGrade"
+00028:  21  swap
+00029:  21  notearg
+00030:  21  call 0
+00033:  21  setlocal 1
+00036:  21  pop
+00037:  23  getlocal 1
+00040:  23  zero
+00041:  23  stricteq
+00042:  23  ifeq 75 (+33)
+00047:  24  name "xs"
+00052:  24  dup
+00053:  24  callprop "warn"
+00058:  24  swap
+00059:  24  notearg
+00060:  24  string "_grade is 0 error !! 0 -> 1"
+00065:  24  notearg
+00066:  24  call 1
+00069:  24  pop
+00070:  26  one
+00071:  26  setlocal 1
+00074:  26  pop
+00075:  29  name "xs"
+00080:  29  getprop "Factorys"
+00085:  29  getprop "Sprite"
+00090:  29  dup
+00091:  29  callprop "create"
+00096:  29  swap
+00097:  29  notearg
+00098:  30  name "xs"
+00103:  30  getprop "Cfg"
+00108:  30  getprop "Resource"
+00113:  30  getprop "Path"
+00118:  30  getprop "Head2"
+00123:  30  getprop "key"
+00128:  30  notearg
+00129:  31  name "xs"
+00134:  31  getprop "Cfg"
+00139:  31  getprop "Resource"
+00144:  31  getprop "Path"
+00149:  31  getprop "Head2"
+00154:  31  getprop "area"
+00159:  31  notearg
+00160:  32  newarray 1
+00164:  32  getlocal 1
+00167:  32  initelem_array 0
+00171:  32  endinit
+00172:  32  notearg
+00173:  32  call 3
+00176:  32  setlocal 0
+00179:  32  pop
+00180:  32  goto 212 (+32)
+00185:  36  this
+00186:  36  dup
+00187:  36  callprop "assert"
+00192:  36  swap
+00193:  36  notearg
+00194:  36  getlocal 0
+00197:  36  notearg
+00198:  36  string "createPartView_Cmn partName err:"
+00203:  36  notearg
+00204:  36  getarg 1
+00207:  36  notearg
+00208:  36  call 3
+00211:  36  pop
+00212:  39  this
+00213:  39  dup
+00214:  39  callprop "assert"
+00219:  39  swap
+00220:  39  notearg
+00221:  39  getlocal 0
+00224:  39  notearg
+00225:  39  string "createPartView_Cmn _ret  err:"
+00230:  39  notearg
+00231:  39  getarg 1
+00234:  39  notearg
+00235:  39  call 3
+00238:  39  pop
+00239:  41  getlocal 0
+00242:  41  return
+00243:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:12 ---
+;; function object[1] createPartView_General
+;; function metadata object[1] nargs=2 bindings=11
+;; arg[0] model
+;; arg[1] partName
+;; local[0] _type
+;; local[1] _quality
+;; local[2] _paintId
+;; local[3] _ret
+;; local[4] _frameName
+;; local[5] headSprite
+;; local[6] _strName
+;; local[7] _file
+;; local[8] _filePath
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:44 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  this
+00001:  46  dup
+00002:  46  callprop "markFuncBegin"
+00007:  46  swap
+00008:  46  notearg
+00009:  46  string "createPartView_General"
+00014:  46  notearg
+00015:  46  getarg 1
+00018:  46  notearg
+00019:  46  call 2
+00022:  46  pop
+00023:  48  getarg 1
+00026:  48  not
+00027:  48  ifeq 59 (+32)
+00032:  49  this
+00033:  49  dup
+00034:  49  callprop "error"
+00039:  49  swap
+00040:  49  notearg
+00041:  49  string "createPartView"
+00046:  49  notearg
+00047:  49  string "partName is null"
+00052:  49  notearg
+00053:  49  call 2
+00056:  49  pop
+00057:  50  null
+00058:  50  return
+00059:  53  getarg 0
+00062:  53  dup
+00063:  53  callprop "getObrit"
+00068:  53  swap
+00069:  53  notearg
+00070:  53  call 0
+00073:  53  setlocal 0
+00076:  53  pop
+00077:  54  getarg 0
+00080:  54  dup
+00081:  54  callprop "getGrade"
+00086:  54  swap
+00087:  54  notearg
+00088:  54  call 0
+00091:  54  setlocal 1
+00094:  54  pop
+00095:  55  getarg 0
+00098:  55  dup
+00099:  55  callprop "getRes"
+00104:  55  swap
+00105:  55  notearg
+00106:  55  call 0
+00109:  55  dup
+00110:  55  callprop "getPaintingId"
+00115:  55  swap
+00116:  55  notearg
+00117:  55  call 0
+00120:  55  setlocal 2
+00123:  55  pop
+00124:  57  null
+00125:  57  setlocal 3
+00128:  57  pop
+00129:  59  getarg 1
+00132:  59  string "head0"
+00137:  59  stricteq
+00138:  59  ifeq 270 (+132)
+00143:  60  getlocal 0
+00146:  60  zero
+00147:  60  stricteq
+00148:  60  ifeq 181 (+33)
+00153:  61  name "xs"
+00158:  61  dup
+00159:  61  callprop "warn"
+00164:  61  swap
+00165:  61  notearg
+00166:  61  string "_type is 0 error !! 0 -> 1"
+00171:  61  notearg
+00172:  61  call 1
+00175:  61  pop
+00176:  63  one
+00177:  63  setlocal 0
+00180:  63  pop
+00181:  65  name "xs"
+00186:  65  getprop "Cfg"
+00191:  65  getprop "Resource"
+00196:  65  getprop "Path"
+00201:  65  getprop "Head0"
+00206:  65  getprop "framename_pre"
+00211:  65  string "_"
+00216:  65  add
+00217:  65  getlocal 0
+00220:  65  add
+00221:  65  setlocal 4
+00224:  65  pop
+00225:  66  name "xs"
+00230:  66  getprop "Factorys"
+00235:  66  getprop "Sprite"
+00240:  66  dup
+00241:  66  callprop "create"
+00246:  66  swap
+00247:  66  notearg
+00248:  66  getlocal 4
+00251:  66  notearg
+00252:  66  string "Cmn02"
+00257:  66  notearg
+00258:  66  call 2
+00261:  66  setlocal 3
+00264:  66  pop
+00265:  66  goto 1155 (+890)
+00270:  68  getarg 1
+00273:  68  string "head1"
+00278:  68  stricteq
+00279:  68  ifeq 318 (+39)
+00284:  69  getarg 0
+00287:  69  dup
+00288:  69  callprop "getRes"
+00293:  69  swap
+00294:  69  notearg
+00295:  69  call 0
+00298:  69  dup
+00299:  69  callprop "createHeadSprite"
+00304:  69  swap
+00305:  69  notearg
+00306:  69  call 0
+00309:  69  setlocal 3
+00312:  69  pop
+00313:  69  goto 1155 (+842)
+00318:  71  getarg 1
+00321:  71  string "head2"
+00326:  71  stricteq
+00327:  71  ifeq 361 (+34)
+00332:  72  this
+00333:  72  dup
+00334:  72  callprop "createPartView_Cmn"
+00339:  72  swap
+00340:  72  notearg
+00341:  72  getarg 0
+00344:  72  notearg
+00345:  72  getarg 1
+00348:  72  notearg
+00349:  72  call 2
+00352:  72  setlocal 3
+00355:  72  pop
+00356:  72  goto 1155 (+799)
+00361:  74  getarg 1
+00364:  74  string "circleHead"
+00369:  74  stricteq
+00370:  74  ifeq 443 (+73)
+00375:  75  getarg 0
+00378:  75  dup
+00379:  75  callprop "getRes"
+00384:  75  swap
+00385:  75  notearg
+00386:  75  call 0
+00389:  75  dup
+00390:  75  callprop "createChapterHeadSprite"
+00395:  75  swap
+00396:  75  notearg
+00397:  75  call 0
+00400:  75  setlocal 5
+00403:  75  pop
+00404:  77  name "xs"
+00409:  77  getprop "Utils"
+00414:  77  getprop "Node"
+00419:  77  dup
+00420:  77  callprop "createCircleSprite"
+00425:  77  swap
+00426:  77  notearg
+00427:  77  getlocal 5
+00430:  77  notearg
+00431:  77  call 1
+00434:  77  setlocal 3
+00437:  77  pop
+00438:  77  goto 1155 (+717)
+00443:  79  getarg 1
+00446:  79  string "normalskill"
+00451:  79  stricteq
+00452:  79  ifeq 486 (+34)
+00457:  80  getarg 0
+00460:  80  dup
+00461:  80  callprop "createPartView"
+00466:  80  swap
+00467:  80  notearg
+00468:  80  string "head1"
+00473:  80  notearg
+00474:  80  call 1
+00477:  80  setlocal 3
+00480:  80  pop
+00481:  80  goto 1155 (+674)
+00486:  82  getarg 1
+00489:  82  string "name"
+00494:  82  stricteq
+00495:  82  ifeq 647 (+152)
+00500:  83  getarg 0
+00503:  83  dup
+00504:  83  callprop "getNameString"
+00509:  83  swap
+00510:  83  notearg
+00511:  83  call 0
+00514:  83  setlocal 6
+00517:  83  pop
+00518:  85  name "xs"
+00523:  85  getprop "dog_check"
+00528:  85  true
+00529:  85  stricteq
+00530:  85  ifeq 576 (+46)
+00535:  86  name "xs"
+00540:  86  getprop "Factorys"
+00545:  86  getprop "Label"
+00550:  86  dup
+00551:  86  callprop "createByStyleId"
+00556:  86  swap
+00557:  86  notearg
+00558:  86  string "Default"
+00563:  86  notearg
+00564:  86  call 1
+00567:  86  setlocal 3
+00570:  86  pop
+00571:  86  goto 612 (+41)
+00576:  89  name "xs"
+00581:  89  getprop "Factorys"
+00586:  89  getprop "Label"
+00591:  89  dup
+00592:  89  callprop "createByStyleId"
+00597:  89  swap
+00598:  89  notearg
+00599:  89  string "LS_wujiangName2"
+00604:  89  notearg
+00605:  89  call 1
+00608:  89  setlocal 3
+00611:  89  pop
+00612:  92  getlocal 3
+00615:  92  dup
+00616:  92  callprop "setString"
+00621:  92  swap
+00622:  92  notearg
+00623:  92  getlocal 6
+00626:  92  dup
+00627:  92  callprop "toWordBreak"
+00632:  92  swap
+00633:  92  notearg
+00634:  92  call 0
+00637:  92  notearg
+00638:  92  call 1
+00641:  92  pop
+00642:  92  goto 1155 (+513)
+00647:  95  getarg 1
+00650:  95  dup
+00651:  95  callprop "indexOf"
+00656:  95  swap
+00657:  95  notearg
+00658:  95  string "card"
+00663:  95  notearg
+00664:  95  call 1
+00667:  95  zero
+00668:  95  ge
+00669:  95  ifeq 991 (+322)
+00674:  97  null
+00675:  97  setlocal 7
+00678:  97  pop
+00679:  99  getarg 1
+00682:  99  string "card0"
+00687:  99  stricteq
+00688:  99  ifeq 800 (+112)
+00693: 100  name "xs"
+00698: 100  getprop "Tools"
+00703: 100  getprop "Card"
+00708: 100  dup
+00709: 100  callprop "getImgFileName"
+00714: 100  swap
+00715: 100  notearg
+00716: 100  getarg 1
+00719: 100  notearg
+00720: 100  getlocal 2
+00723: 100  notearg
+00724: 100  getarg 0
+00727: 100  dup
+00728: 100  callprop "getObrit"
+00733: 100  swap
+00734: 100  notearg
+00735: 100  call 0
+00738: 100  notearg
+00739: 100  getarg 0
+00742: 100  dup
+00743: 100  callprop "getGrade"
+00748: 100  swap
+00749: 100  notearg
+00750: 100  call 0
+00753: 100  notearg
+00754: 100  call 4
+00757: 100  setlocal 7
+00760: 100  pop
+00761: 101  name "xs"
+00766: 101  getprop "Factorys"
+00771: 101  getprop "Sprite"
+00776: 101  dup
+00777: 101  callprop "createWithFileName"
+00782: 101  swap
+00783: 101  notearg
+00784: 101  getlocal 7
+00787: 101  notearg
+00788: 101  call 1
+00791: 101  setlocal 3
+00794: 101  pop
+00795: 101  goto 986 (+191)
+00800: 104  getarg 1
+00803: 104  string "v3_card1"
+00808: 104  stricteq
+00809: 104  ifeq 919 (+110)
+00814: 105  name "xs"
+00819: 105  getprop "Cfg"
+00824: 105  getprop "Resource"
+00829: 105  getprop "Path"
+00834: 105  getprop "Card1_V3"
+00839: 105  getprop "file_pre"
+00844: 105  getarg 0
+00847: 105  dup
+00848: 105  callprop "getRes"
+00853: 105  swap
+00854: 105  notearg
+00855: 105  call 0
+00858: 105  dup
+00859: 105  callprop "getPaintingId"
+00864: 105  swap
+00865: 105  notearg
+00866: 105  call 0
+00869: 105  add
+00870: 105  string ".png"
+00875: 105  add
+00876: 105  setlocal 8
+00879: 105  pop
+00880: 107  name "xs"
+00885: 107  getprop "Factorys"
+00890: 107  getprop "Sprite"
+00895: 107  dup
+00896: 107  callprop "createWithFileName"
+00901: 107  swap
+00902: 107  notearg
+00903: 107  getlocal 8
+00906: 107  notearg
+00907: 107  call 1
+00910: 107  setlocal 3
+00913: 107  pop
+00914: 107  goto 986 (+72)
+00919: 110  getarg 1
+00922: 110  string "card_chart"
+00927: 110  stricteq
+00928: 110  ifeq 967 (+39)
+00933: 111  getarg 0
+00936: 111  dup
+00937: 111  callprop "getRes"
+00942: 111  swap
+00943: 111  notearg
+00944: 111  call 0
+00947: 111  dup
+00948: 111  callprop "createCard_LadderChart"
+00953: 111  swap
+00954: 111  notearg
+00955: 111  call 0
+00958: 111  setlocal 3
+00961: 111  pop
+00962: 111  goto 986 (+24)
+00967: 114  this
+00968: 114  dup
+00969: 114  callprop "error"
+00974: 114  swap
+00975: 114  notearg
+00976: 114  string "1231"
+00981: 114  notearg
+00982: 114  call 1
+00985: 114  pop
+00986: 114  goto 1155 (+169)
+00991: 117  getarg 1
+00994: 117  string "icon_quality"
+00999: 117  stricteq
+01000: 117  ifeq 1065 (+65)
+01005: 118  name "xs"
+01010: 118  getprop "Factorys"
+01015: 118  getprop "Sprite"
+01020: 118  dup
+01021: 118  callprop "create"
+01026: 118  swap
+01027: 118  notearg
+01028: 118  string "Cmn02_quality"
+01033: 118  notearg
+01034: 118  string "Cmn02"
+01039: 118  notearg
+01040: 118  newarray 1
+01044: 118  getlocal 1
+01047: 118  initelem_array 0
+01051: 118  endinit
+01052: 118  notearg
+01053: 118  call 3
+01056: 118  setlocal 3
+01059: 118  pop
+01060: 118  goto 1155 (+95)
+01065: 120  getarg 1
+01068: 120  string "icon_country"
+01073: 120  stricteq
+01074: 120  ifeq 1130 (+56)
+01079: 121  name "xs"
+01084: 121  getprop "Factorys"
+01089: 121  getprop "Sprite"
+01094: 121  dup
+01095: 121  callprop "create"
+01100: 121  swap
+01101: 121  notearg
+01102: 121  string "Cmn02_country_"
+01107: 121  getlocal 0
+01110: 121  add
+01111: 121  notearg
+01112: 121  string "Cmn02"
+01117: 121  notearg
+01118: 121  call 2
+01121: 121  setlocal 3
+01124: 121  pop
+01125: 121  goto 1155 (+30)
+01130: 124  this
+01131: 124  dup
+01132: 124  callprop "error"
+01137: 124  swap
+01138: 124  notearg
+01139: 124  string "partName err"
+01144: 124  notearg
+01145: 124  getarg 1
+01148: 124  notearg
+01149: 124  this
+01150: 124  notearg
+01151: 124  call 3
+01154: 124  pop
+01155: 128  this
+01156: 128  dup
+01157: 128  callprop "assert"
+01162: 128  swap
+01163: 128  notearg
+01164: 128  getlocal 3
+01167: 128  notearg
+01168: 128  string "createPartView _ret  err:"
+01173: 128  notearg
+01174: 128  getarg 1
+01177: 128  notearg
+01178: 128  getarg 0
+01181: 128  dup
+01182: 128  callprop "getRes"
+01187: 128  swap
+01188: 128  notearg
+01189: 128  call 0
+01192: 128  notearg
+01193: 128  call 4
+01196: 128  pop
+01197: 130  this
+01198: 130  dup
+01199: 130  callprop "markFuncEnd"
+01204: 130  swap
+01205: 130  notearg
+01206: 130  string "createPartView_General"
+01211: 130  notearg
+01212: 130  getarg 1
+01215: 130  getlocal 3
+01218: 130  add
+01219: 130  notearg
+01220: 130  call 2
+01223: 130  pop
+01224: 132  getlocal 3
+01227: 132  return
+01228: 132  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:44 ---
+;; function object[2] createPartView_Equ
+;; function metadata object[2] nargs=2 bindings=7
+;; arg[0] model
+;; arg[1] partName
+;; local[0] _quality
+;; local[1] _paintId
+;; local[2] _ret
+;; local[3] _file
+;; local[4] _strName
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:135 ---
+loc   line  op
+----- ----  --
+main:
+00000: 139  getarg 1
+00003: 139  not
+00004: 139  ifeq 36 (+32)
+00009: 140  this
+00010: 140  dup
+00011: 140  callprop "error"
+00016: 140  swap
+00017: 140  notearg
+00018: 140  string "createPartView"
+00023: 140  notearg
+00024: 140  string "partName is null"
+00029: 140  notearg
+00030: 140  call 2
+00033: 140  pop
+00034: 141  null
+00035: 141  return
+00036: 144  getarg 0
+00039: 144  dup
+00040: 144  callprop "getGrade"
+00045: 144  swap
+00046: 144  notearg
+00047: 144  call 0
+00050: 144  setlocal 0
+00053: 144  pop
+00054: 145  getarg 0
+00057: 145  dup
+00058: 145  callprop "getRes"
+00063: 145  swap
+00064: 145  notearg
+00065: 145  call 0
+00068: 145  dup
+00069: 145  callprop "getPaintingId"
+00074: 145  swap
+00075: 145  notearg
+00076: 145  call 0
+00079: 145  setlocal 1
+00082: 145  pop
+00083: 147  null
+00084: 147  setlocal 2
+00087: 147  pop
+00088: 148  null
+00089: 148  setlocal 3
+00092: 148  pop
+00093: 150  getarg 1
+00096: 150  string "head0"
+00101: 150  stricteq
+00102: 150  ifeq 164 (+62)
+00107: 151  name "xs"
+00112: 151  getprop "Factorys"
+00117: 151  getprop "Sprite"
+00122: 151  dup
+00123: 151  callprop "create"
+00128: 151  swap
+00129: 151  notearg
+00130: 151  string "Cmn02_equ_head0"
+00135: 151  notearg
+00136: 151  string "Cmn02"
+00141: 151  notearg
+00142: 151  newarray 1
+00146: 151  getlocal 0
+00149: 151  initelem_array 0
+00153: 151  endinit
+00154: 151  notearg
+00155: 151  call 3
+00158: 151  return
+00159: 151  goto 875 (+716)
+00164: 153  getarg 1
+00167: 153  string "head1"
+00172: 153  stricteq
+00173: 153  ifeq 209 (+36)
+00178: 155  getarg 0
+00181: 155  dup
+00182: 155  callprop "getRes"
+00187: 155  swap
+00188: 155  notearg
+00189: 155  call 0
+00192: 155  dup
+00193: 155  callprop "createHeadSprite"
+00198: 155  swap
+00199: 155  notearg
+00200: 155  call 0
+00203: 155  return
+00204: 155  goto 875 (+671)
+00209: 157  getarg 1
+00212: 157  string "head2"
+00217: 157  stricteq
+00218: 157  ifeq 252 (+34)
+00223: 159  this
+00224: 159  dup
+00225: 159  callprop "createPartView_Cmn"
+00230: 159  swap
+00231: 159  notearg
+00232: 159  getarg 0
+00235: 159  notearg
+00236: 159  getarg 1
+00239: 159  notearg
+00240: 159  call 2
+00243: 159  setlocal 2
+00246: 159  pop
+00247: 159  goto 875 (+628)
+00252: 162  getarg 1
+00255: 162  string "name"
+00260: 162  stricteq
+00261: 162  ifeq 406 (+145)
+00266: 163  getarg 0
+00269: 163  dup
+00270: 163  callprop "getNameString"
+00275: 163  swap
+00276: 163  notearg
+00277: 163  call 0
+00280: 163  setlocal 4
+00283: 163  pop
+00284: 165  name "xs"
+00289: 165  getprop "dog_check"
+00294: 165  true
+00295: 165  stricteq
+00296: 165  ifeq 342 (+46)
+00301: 166  name "xs"
+00306: 166  getprop "Factorys"
+00311: 166  getprop "Label"
+00316: 166  dup
+00317: 166  callprop "createByStyleId"
+00322: 166  swap
+00323: 166  notearg
+00324: 166  string "Default"
+00329: 166  notearg
+00330: 166  call 1
+00333: 166  setlocal 2
+00336: 166  pop
+00337: 166  goto 378 (+41)
+00342: 169  name "xs"
+00347: 169  getprop "Factorys"
+00352: 169  getprop "Label"
+00357: 169  dup
+00358: 169  callprop "createByStyleId"
+00363: 169  swap
+00364: 169  notearg
+00365: 169  string "LS_zhuangbeiName"
+00370: 169  notearg
+00371: 169  call 1
+00374: 169  setlocal 2
+00377: 169  pop
+00378: 172  getlocal 2
+00381: 172  dup
+00382: 172  callprop "setString"
+00387: 172  swap
+00388: 172  notearg
+00389: 172  getlocal 4
+00392: 172  notearg
+00393: 172  call 1
+00396: 172  pop
+00397: 173  getlocal 2
+00400: 173  return
+00401: 173  goto 875 (+474)
+00406: 175  getarg 1
+00409: 175  string "equ0"
+00414: 175  stricteq
+00415: 175  ifeq 487 (+72)
+00420: 178  name "xs"
+00425: 178  getprop "Factorys"
+00430: 178  getprop "Sprite"
+00435: 178  dup
+00436: 178  callprop "createWithFileName"
+00441: 178  swap
+00442: 178  notearg
+00443: 179  getlocal 0
+00446: 179  name "xs"
+00451: 179  getprop "Constant_Grade_God"
+00456: 179  eq
+00457: 179  ifeq 472 (+15)
+00462: 179  string "equ_cmn/Cmn02_equ0_god.png"
+00467: 179  goto 477 (+10)
+00472: 179  string "equ_cmn/Cmn02_equ0_other.png"
+00477: 179  notearg
+00478: 179  call 1
+00481: 179  return
+00482: 179  goto 875 (+393)
+00487: 182  getarg 1
+00490: 182  string "equ1"
+00495: 182  stricteq
+00496: 182  ifeq 608 (+112)
+00501: 183  name "xs"
+00506: 183  getprop "Tools"
+00511: 183  getprop "Card"
+00516: 183  dup
+00517: 183  callprop "getImgFileName"
+00522: 183  swap
+00523: 183  notearg
+00524: 183  getarg 1
+00527: 183  notearg
+00528: 183  getlocal 1
+00531: 183  notearg
+00532: 183  getarg 0
+00535: 183  dup
+00536: 183  callprop "getObrit"
+00541: 183  swap
+00542: 183  notearg
+00543: 183  call 0
+00546: 183  notearg
+00547: 183  getarg 0
+00550: 183  dup
+00551: 183  callprop "getGrade"
+00556: 183  swap
+00557: 183  notearg
+00558: 183  call 0
+00561: 183  notearg
+00562: 183  call 4
+00565: 183  setlocal 3
+00568: 183  pop
+00569: 184  name "xs"
+00574: 184  getprop "Factorys"
+00579: 184  getprop "Sprite"
+00584: 184  dup
+00585: 184  callprop "createWithFileName"
+00590: 184  swap
+00591: 184  notearg
+00592: 184  getlocal 3
+00595: 184  notearg
+00596: 184  call 1
+00599: 184  setlocal 2
+00602: 184  pop
+00603: 184  goto 875 (+272)
+00608: 186  getarg 1
+00611: 186  string "equ2"
+00616: 186  stricteq
+00617: 186  ifeq 695 (+78)
+00622: 189  name "xs"
+00627: 189  getprop "Factorys"
+00632: 189  getprop "Sprite"
+00637: 189  dup
+00638: 189  callprop "createWithFileName"
+00643: 189  swap
+00644: 189  notearg
+00645: 190  name "xs"
+00650: 190  getprop "Cfg"
+00655: 190  getprop "Resource"
+00660: 190  getprop "Path"
+00665: 190  getprop "Equ2"
+00670: 190  getprop "file_pre"
+00675: 190  getlocal 0
+00678: 190  add
+00679: 190  string ".png"
+00684: 190  add
+00685: 190  notearg
+00686: 190  call 1
+00689: 190  return
+00690: 190  goto 875 (+185)
+00695: 193  getarg 1
+00698: 193  string "icon_quality"
+00703: 193  stricteq
+00704: 193  ifeq 766 (+62)
+00709: 194  name "xs"
+00714: 194  getprop "Factorys"
+00719: 194  getprop "Sprite"
+00724: 194  dup
+00725: 194  callprop "create"
+00730: 194  swap
+00731: 194  notearg
+00732: 194  string "Cmn02_quality"
+00737: 194  notearg
+00738: 194  string "Cmn02"
+00743: 194  notearg
+00744: 194  newarray 1
+00748: 194  getlocal 0
+00751: 194  initelem_array 0
+00755: 194  endinit
+00756: 194  notearg
+00757: 194  call 3
+00760: 194  return
+00761: 194  goto 875 (+114)
+00766: 196  getarg 1
+00769: 196  string "pos_type"
+00774: 196  stricteq
+00775: 196  ifeq 848 (+73)
+00780: 198  name "xs"
+00785: 198  getprop "Factorys"
+00790: 198  getprop "Sprite"
+00795: 198  dup
+00796: 198  callprop "create"
+00801: 198  swap
+00802: 198  notearg
+00803: 198  string "card_equ_pos"
+00808: 198  notearg
+00809: 198  string "Cmn02"
+00814: 198  notearg
+00815: 198  newarray 1
+00819: 198  getarg 0
+00822: 198  dup
+00823: 198  callprop "getPosType"
+00828: 198  swap
+00829: 198  notearg
+00830: 198  call 0
+00833: 198  initelem_array 0
+00837: 198  endinit
+00838: 198  notearg
+00839: 198  call 3
+00842: 198  return
+00843: 198  goto 875 (+32)
+00848: 201  this
+00849: 201  dup
+00850: 201  callprop "error"
+00855: 201  swap
+00856: 201  notearg
+00857: 201  string "partName err"
+00862: 201  notearg
+00863: 201  getarg 1
+00866: 201  notearg
+00867: 201  getarg 0
+00870: 201  notearg
+00871: 201  call 3
+00874: 201  pop
+00875: 204  name "xs"
+00880: 204  dup
+00881: 204  callprop "assert"
+00886: 204  swap
+00887: 204  notearg
+00888: 204  getlocal 2
+00891: 204  notearg
+00892: 204  string "createPartView _ret  err:"
+00897: 204  notearg
+00898: 204  getarg 1
+00901: 204  notearg
+00902: 204  getarg 0
+00905: 204  dup
+00906: 204  callprop "getRes"
+00911: 204  swap
+00912: 204  notearg
+00913: 204  call 0
+00916: 204  notearg
+00917: 204  call 4
+00920: 204  pop
+00921: 206  getlocal 2
+00924: 206  return
+00925: 206  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:135 ---
+;; function object[3] createPartView_Skill
+;; function metadata object[3] nargs=2 bindings=4
+;; arg[0] model
+;; arg[1] partName
+;; local[0] _paintId
+;; local[1] _file
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:209 ---
+loc   line  op
+----- ----  --
+main:
+00000: 213  getarg 1
+00003: 213  string "equ1"
+00008: 213  stricteq
+00009: 213  ifeq 149 (+140)
+00014: 214  getarg 0
+00017: 214  dup
+00018: 214  callprop "getRes"
+00023: 214  swap
+00024: 214  notearg
+00025: 214  call 0
+00028: 214  dup
+00029: 214  callprop "getPaintingId"
+00034: 214  swap
+00035: 214  notearg
+00036: 214  call 0
+00039: 214  setlocal 0
+00042: 214  pop
+00043: 216  name "xs"
+00048: 216  getprop "Tools"
+00053: 216  getprop "Card"
+00058: 216  dup
+00059: 216  callprop "getImgFileName"
+00064: 216  swap
+00065: 216  notearg
+00066: 216  string "skill1"
+00071: 216  notearg
+00072: 216  getlocal 0
+00075: 216  notearg
+00076: 216  getarg 0
+00079: 216  dup
+00080: 216  callprop "getObrit"
+00085: 216  swap
+00086: 216  notearg
+00087: 216  call 0
+00090: 216  notearg
+00091: 216  getarg 0
+00094: 216  dup
+00095: 216  callprop "getGrade"
+00100: 216  swap
+00101: 216  notearg
+00102: 216  call 0
+00105: 216  notearg
+00106: 216  call 4
+00109: 216  setlocal 1
+00112: 216  pop
+00113: 217  name "xs"
+00118: 217  getprop "Factorys"
+00123: 217  getprop "Sprite"
+00128: 217  dup
+00129: 217  callprop "createWithFileName"
+00134: 217  swap
+00135: 217  notearg
+00136: 217  getlocal 1
+00139: 217  notearg
+00140: 217  call 1
+00143: 217  return
+00144: 217  goto 170 (+26)
+00149: 220  this
+00150: 220  dup
+00151: 220  callprop "createPartView_Equ"
+00156: 220  swap
+00157: 220  notearg
+00158: 220  getarg 0
+00161: 220  notearg
+00162: 220  getarg 1
+00165: 220  notearg
+00166: 220  call 2
+00169: 220  return
+00170: 221  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:209 ---
+;; function object[4] createPartView_PlayerAttr
+;; function metadata object[4] nargs=2 bindings=2
+;; arg[0] model
+;; arg[1] partName
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:224 ---
+loc   line  op
+----- ----  --
+main:
+00000: 228  getarg 1
+00003: 228  string "head1"
+00008: 228  stricteq
+00009: 228  ifeq 731 (+722)
+00014: 230  name "xs"
+00019: 230  getprop "Utils"
+00024: 230  dup
+00025: 230  callprop "parseIntSafe"
+00030: 230  swap
+00031: 230  notearg
+00032: 230  getarg 0
+00035: 230  dup
+00036: 230  callprop "getId"
+00041: 230  swap
+00042: 230  notearg
+00043: 230  call 0
+00046: 230  notearg
+00047: 230  call 1
+00050: 230  condswitch
+00051: 231  name "xs"
+00056: 231  getprop "Models"
+00061: 231  getprop "AddPlayerInfoType_TiLi"
+00066: 231  case 296 (+230)
+00071: 236  name "xs"
+00076: 236  getprop "Models"
+00081: 236  getprop "AddPlayerInfoType_JingLi"
+00086: 236  case 340 (+254)
+00091: 241  name "xs"
+00096: 241  getprop "Models"
+00101: 241  getprop "AddPlayerInfoType_Battle"
+00106: 241  case 384 (+278)
+00111: 244  name "xs"
+00116: 244  getprop "Models"
+00121: 244  getprop "AddPlayerInfoType_TongQian"
+00126: 244  case 428 (+302)
+00131: 249  name "xs"
+00136: 249  getprop "Models"
+00141: 249  getprop "AddPlayerInfoType_YuanBao"
+00146: 249  case 472 (+326)
+00151: 254  name "xs"
+00156: 254  getprop "Models"
+00161: 254  getprop "AddPlayerInfoType_TeamPoint"
+00166: 254  case 516 (+350)
+00171: 257  name "xs"
+00176: 257  getprop "Models"
+00181: 257  getprop "AddPlayerInfoType_Exp"
+00186: 257  case 560 (+374)
+00191: 260  name "xs"
+00196: 260  getprop "Models"
+00201: 260  getprop "AddPlayerInfoType_UnionScore"
+00206: 260  case 604 (+398)
+00211: 265  name "xs"
+00216: 265  getprop "Models"
+00221: 265  getprop "AddPlayerInfoType_Salary"
+00226: 265  case 648 (+422)
+00231: 266  name "xs"
+00236: 266  getprop "Models"
+00241: 266  getprop "AddPlayerInfoType_Fragment"
+00246: 266  case 648 (+402)
+00251: 267  name "xs"
+00256: 267  getprop "Models"
+00261: 267  getprop "AddPlayerInfoType_GoldSoul"
+00266: 267  case 648 (+382)
+00271: 268  name "xs"
+00276: 268  getprop "Models"
+00281: 268  getprop "AddPlayerInfoType_SilverSoul"
+00286: 268  case 648 (+362)
+00291: 268  default 648 (+357)
+00296: 233  name "xs"
+00301: 233  getprop "Factorys"
+00306: 233  getprop "Sprite"
+00311: 233  dup
+00312: 233  callprop "create"
+00317: 233  swap
+00318: 233  notearg
+00319: 233  string "Cmn02_IconPlayerAttr_TiLi"
+00324: 233  notearg
+00325: 233  string "Cmn02"
+00330: 233  notearg
+00331: 233  call 2
+00334: 233  return
+00335: 234  goto 726 (+391)
+00340: 238  name "xs"
+00345: 238  getprop "Factorys"
+00350: 238  getprop "Sprite"
+00355: 238  dup
+00356: 238  callprop "create"
+00361: 238  swap
+00362: 238  notearg
+00363: 238  string "Cmn02_IconPlayerAttr_JingLi"
+00368: 238  notearg
+00369: 238  string "Cmn02"
+00374: 238  notearg
+00375: 238  call 2
+00378: 238  return
+00379: 239  goto 726 (+347)
+00384: 242  name "xs"
+00389: 242  getprop "Factorys"
+00394: 242  getprop "Sprite"
+00399: 242  dup
+00400: 242  callprop "create"
+00405: 242  swap
+00406: 242  notearg
+00407: 242  string "Cmn02_IconPlayerAttr_Battle"
+00412: 242  notearg
+00413: 242  string "Cmn02"
+00418: 242  notearg
+00419: 242  call 2
+00422: 242  return
+00423: 243  goto 726 (+303)
+00428: 246  name "xs"
+00433: 246  getprop "Factorys"
+00438: 246  getprop "Sprite"
+00443: 246  dup
+00444: 246  callprop "create"
+00449: 246  swap
+00450: 246  notearg
+00451: 246  string "Cmn02_IconPlayerAttr_TongQian"
+00456: 246  notearg
+00457: 246  string "Cmn02"
+00462: 246  notearg
+00463: 246  call 2
+00466: 246  return
+00467: 247  goto 726 (+259)
+00472: 251  name "xs"
+00477: 251  getprop "Factorys"
+00482: 251  getprop "Sprite"
+00487: 251  dup
+00488: 251  callprop "create"
+00493: 251  swap
+00494: 251  notearg
+00495: 251  string "Cmn02_IconPlayerAttr_YuanBao"
+00500: 251  notearg
+00501: 251  string "Cmn02"
+00506: 251  notearg
+00507: 251  call 2
+00510: 251  return
+00511: 252  goto 726 (+215)
+00516: 255  name "xs"
+00521: 255  getprop "Factorys"
+00526: 255  getprop "Sprite"
+00531: 255  dup
+00532: 255  callprop "create"
+00537: 255  swap
+00538: 255  notearg
+00539: 255  string "Cmn02_IconPlayerAttr_TeamPoint"
+00544: 255  notearg
+00545: 255  string "Cmn02"
+00550: 255  notearg
+00551: 255  call 2
+00554: 255  return
+00555: 256  goto 726 (+171)
+00560: 258  name "xs"
+00565: 258  getprop "Factorys"
+00570: 258  getprop "Sprite"
+00575: 258  dup
+00576: 258  callprop "create"
+00581: 258  swap
+00582: 258  notearg
+00583: 258  string "Cmn02_IconPlayerAttr_Exp"
+00588: 258  notearg
+00589: 258  string "Cmn02"
+00594: 258  notearg
+00595: 258  call 2
+00598: 258  return
+00599: 259  goto 726 (+127)
+00604: 262  name "xs"
+00609: 262  getprop "Factorys"
+00614: 262  getprop "Sprite"
+00619: 262  dup
+00620: 262  callprop "create"
+00625: 262  swap
+00626: 262  notearg
+00627: 262  string "Cmn02_IconPlayerAttr_TiLi"
+00632: 262  notearg
+00633: 262  string "Cmn02"
+00638: 262  notearg
+00639: 262  call 2
+00642: 262  return
+00643: 263  goto 726 (+83)
+00648: 272  this
+00649: 272  dup
+00650: 272  callprop "error"
+00655: 272  swap
+00656: 272  notearg
+00657: 272  string "createPartView_PlayerAttr:"
+00662: 272  getarg 0
+00665: 272  dup
+00666: 272  callprop "getId"
+00671: 272  swap
+00672: 272  notearg
+00673: 272  call 0
+00676: 272  add
+00677: 272  notearg
+00678: 272  call 1
+00681: 272  pop
+00682: 273  name "xs"
+00687: 273  getprop "Factorys"
+00692: 273  getprop "Sprite"
+00697: 273  dup
+00698: 273  callprop "create"
+00703: 273  swap
+00704: 273  notearg
+00705: 273  string "icon_yuanBao"
+00710: 273  notearg
+00711: 273  string "Cmn01"
+00716: 273  notearg
+00717: 273  call 2
+00720: 273  return
+00721: 274  goto 726 (+5)
+00726: 274  goto 752 (+26)
+00731: 280  this
+00732: 280  dup
+00733: 280  callprop "createPartView_Item"
+00738: 280  swap
+00739: 280  notearg
+00740: 280  getarg 0
+00743: 280  notearg
+00744: 280  getarg 1
+00747: 280  notearg
+00748: 280  call 2
+00751: 280  return
+00752: 281  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:224 ---
+;; function object[5] createPartView_Item
+;; function metadata object[5] nargs=2 bindings=6
+;; arg[0] model
+;; arg[1] partName
+;; local[0] _ret
+;; local[1] _quality
+;; local[2] _frameName
+;; local[3] _fileName
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:284 ---
+loc   line  op
+----- ----  --
+main:
+00000: 288  getarg 1
+00003: 288  not
+00004: 288  ifeq 36 (+32)
+00009: 289  this
+00010: 289  dup
+00011: 289  callprop "error"
+00016: 289  swap
+00017: 289  notearg
+00018: 289  string "createPartView"
+00023: 289  notearg
+00024: 289  string "partName is null"
+00029: 289  notearg
+00030: 289  call 2
+00033: 289  pop
+00034: 290  null
+00035: 290  return
+00036: 293  null
+00037: 293  setlocal 0
+00040: 293  pop
+00041: 295  getarg 0
+00044: 295  dup
+00045: 295  callprop "getGrade"
+00050: 295  swap
+00051: 295  notearg
+00052: 295  call 0
+00055: 295  setlocal 1
+00058: 295  pop
+00059: 296  name "xs"
+00064: 296  dup
+00065: 296  callprop "assert"
+00070: 296  swap
+00071: 296  notearg
+00072: 296  getlocal 1
+00075: 296  zero
+00076: 296  ne
+00077: 296  notearg
+00078: 296  string "Grade is 0"
+00083: 296  notearg
+00084: 296  call 2
+00087: 296  pop
+00088: 299  getarg 1
+00091: 299  string "head0"
+00096: 299  stricteq
+00097: 299  ifeq 191 (+94)
+00102: 300  name "xs"
+00107: 300  getprop "Cfg"
+00112: 300  getprop "Resource"
+00117: 300  getprop "Path"
+00122: 300  getprop "Head0"
+00127: 300  getprop "framename_pre"
+00132: 300  string "_"
+00137: 300  add
+00138: 300  getlocal 1
+00141: 300  add
+00142: 300  setlocal 2
+00145: 300  pop
+00146: 301  name "xs"
+00151: 301  getprop "Factorys"
+00156: 301  getprop "Sprite"
+00161: 301  dup
+00162: 301  callprop "create"
+00167: 301  swap
+00168: 301  notearg
+00169: 301  getlocal 2
+00172: 301  notearg
+00173: 301  string "Cmn02"
+00178: 301  notearg
+00179: 301  call 2
+00182: 301  setlocal 0
+00185: 301  pop
+00186: 301  goto 454 (+268)
+00191: 304  getarg 1
+00194: 304  string "head1"
+00199: 304  stricteq
+00200: 304  ifeq 310 (+110)
+00205: 305  name "xs"
+00210: 305  getprop "Cfg"
+00215: 305  getprop "Resource"
+00220: 305  getprop "Path"
+00225: 305  getprop "Item1"
+00230: 305  getprop "file_pre"
+00235: 305  getarg 0
+00238: 305  dup
+00239: 305  callprop "getRes"
+00244: 305  swap
+00245: 305  notearg
+00246: 305  call 0
+00249: 305  dup
+00250: 305  callprop "getPaintingId"
+00255: 305  swap
+00256: 305  notearg
+00257: 305  call 0
+00260: 305  add
+00261: 305  string ".png"
+00266: 305  add
+00267: 305  setlocal 3
+00270: 305  pop
+00271: 306  name "xs"
+00276: 306  getprop "Factorys"
+00281: 306  getprop "Sprite"
+00286: 306  dup
+00287: 306  callprop "createWithFileName"
+00292: 306  swap
+00293: 306  notearg
+00294: 306  getlocal 3
+00297: 306  notearg
+00298: 306  call 1
+00301: 306  setlocal 0
+00304: 306  pop
+00305: 306  goto 454 (+149)
+00310: 308  getarg 1
+00313: 308  string "head2"
+00318: 308  stricteq
+00319: 308  ifeq 353 (+34)
+00324: 309  this
+00325: 309  dup
+00326: 309  callprop "createPartView_Cmn"
+00331: 309  swap
+00332: 309  notearg
+00333: 309  getarg 0
+00336: 309  notearg
+00337: 309  getarg 1
+00340: 309  notearg
+00341: 309  call 2
+00344: 309  setlocal 0
+00347: 309  pop
+00348: 309  goto 454 (+106)
+00353: 311  getarg 1
+00356: 311  string "Equ_Head0"
+00361: 311  stricteq
+00362: 311  ifeq 427 (+65)
+00367: 312  name "xs"
+00372: 312  getprop "Factorys"
+00377: 312  getprop "Sprite"
+00382: 312  dup
+00383: 312  callprop "create"
+00388: 312  swap
+00389: 312  notearg
+00390: 312  string "Cmn02_equ_head0"
+00395: 312  notearg
+00396: 312  string "Cmn02"
+00401: 312  notearg
+00402: 312  newarray 1
+00406: 312  getlocal 1
+00409: 312  initelem_array 0
+00413: 312  endinit
+00414: 312  notearg
+00415: 312  call 3
+00418: 312  setlocal 0
+00421: 312  pop
+00422: 312  goto 454 (+32)
+00427: 315  this
+00428: 315  dup
+00429: 315  callprop "error"
+00434: 315  swap
+00435: 315  notearg
+00436: 315  string "partName err"
+00441: 315  notearg
+00442: 315  getarg 1
+00445: 315  notearg
+00446: 315  getarg 0
+00449: 315  notearg
+00450: 315  call 3
+00453: 315  pop
+00454: 318  name "xs"
+00459: 318  dup
+00460: 318  callprop "assert"
+00465: 318  swap
+00466: 318  notearg
+00467: 318  getlocal 0
+00470: 318  notearg
+00471: 318  string "createPartView _ret  err:"
+00476: 318  notearg
+00477: 318  getarg 1
+00480: 318  notearg
+00481: 318  call 3
+00484: 318  pop
+00485: 320  getlocal 0
+00488: 320  return
+00489: 320  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:284 ---
+;; function object[6] createPartView_Gems
+;; function metadata object[6] nargs=2 bindings=5
+;; arg[0] model
+;; arg[1] partName
+;; local[0] _ret
+;; local[1] _quality
+;; local[2] _fileName
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:323 ---
+loc   line  op
+----- ----  --
+main:
+00000: 327  getarg 1
+00003: 327  not
+00004: 327  ifeq 36 (+32)
+00009: 328  this
+00010: 328  dup
+00011: 328  callprop "error"
+00016: 328  swap
+00017: 328  notearg
+00018: 328  string "createPartView"
+00023: 328  notearg
+00024: 328  string "partName is null"
+00029: 328  notearg
+00030: 328  call 2
+00033: 328  pop
+00034: 329  null
+00035: 329  return
+00036: 332  null
+00037: 332  setlocal 0
+00040: 332  pop
+00041: 334  getarg 0
+00044: 334  dup
+00045: 334  callprop "getGrade"
+00050: 334  swap
+00051: 334  notearg
+00052: 334  call 0
+00055: 334  setlocal 1
+00058: 334  pop
+00059: 337  getarg 1
+00062: 337  string "head0"
+00067: 337  stricteq
+00068: 337  ifeq 133 (+65)
+00073: 339  name "xs"
+00078: 339  getprop "Factorys"
+00083: 339  getprop "Sprite"
+00088: 339  dup
+00089: 339  callprop "create"
+00094: 339  swap
+00095: 339  notearg
+00096: 339  string "Cmn02_equ_head0"
+00101: 339  notearg
+00102: 339  string "Cmn02"
+00107: 339  notearg
+00108: 339  newarray 1
+00112: 339  getlocal 1
+00115: 339  initelem_array 0
+00119: 339  endinit
+00120: 339  notearg
+00121: 339  call 3
+00124: 339  setlocal 0
+00127: 339  pop
+00128: 339  goto 322 (+194)
+00133: 342  getarg 1
+00136: 342  string "head1"
+00141: 342  stricteq
+00142: 342  ifeq 252 (+110)
+00147: 344  name "xs"
+00152: 344  getprop "Cfg"
+00157: 344  getprop "Resource"
+00162: 344  getprop "Path"
+00167: 344  getprop "Item1"
+00172: 344  getprop "file_pre"
+00177: 344  getarg 0
+00180: 344  dup
+00181: 344  callprop "getRes"
+00186: 344  swap
+00187: 344  notearg
+00188: 344  call 0
+00191: 344  dup
+00192: 344  callprop "getPaintingId"
+00197: 344  swap
+00198: 344  notearg
+00199: 344  call 0
+00202: 344  add
+00203: 344  string ".png"
+00208: 344  add
+00209: 344  setlocal 2
+00212: 344  pop
+00213: 345  name "xs"
+00218: 345  getprop "Factorys"
+00223: 345  getprop "Sprite"
+00228: 345  dup
+00229: 345  callprop "createWithFileName"
+00234: 345  swap
+00235: 345  notearg
+00236: 345  getlocal 2
+00239: 345  notearg
+00240: 345  call 1
+00243: 345  setlocal 0
+00246: 345  pop
+00247: 345  goto 322 (+75)
+00252: 347  getarg 1
+00255: 347  string "head2"
+00260: 347  stricteq
+00261: 347  ifeq 295 (+34)
+00266: 348  this
+00267: 348  dup
+00268: 348  callprop "createPartView_Cmn"
+00273: 348  swap
+00274: 348  notearg
+00275: 348  getarg 0
+00278: 348  notearg
+00279: 348  getarg 1
+00282: 348  notearg
+00283: 348  call 2
+00286: 348  setlocal 0
+00289: 348  pop
+00290: 348  goto 322 (+32)
+00295: 351  this
+00296: 351  dup
+00297: 351  callprop "error"
+00302: 351  swap
+00303: 351  notearg
+00304: 351  string "partName err"
+00309: 351  notearg
+00310: 351  getarg 1
+00313: 351  notearg
+00314: 351  getarg 0
+00317: 351  notearg
+00318: 351  call 3
+00321: 351  pop
+00322: 354  name "xs"
+00327: 354  dup
+00328: 354  callprop "assert"
+00333: 354  swap
+00334: 354  notearg
+00335: 354  getlocal 0
+00338: 354  notearg
+00339: 354  string "createPartView _ret  err:"
+00344: 354  notearg
+00345: 354  getarg 1
+00348: 354  notearg
+00349: 354  call 3
+00352: 354  pop
+00353: 356  getlocal 0
+00356: 356  return
+00357: 356  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:323 ---
+;; function object[7] createPartView_Goddess
+;; function metadata object[7] nargs=2 bindings=6
+;; arg[0] model
+;; arg[1] partName
+;; local[0] _ret
+;; local[1] _quality
+;; local[2] _strName
+;; local[3] _filePath
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:358 ---
+loc   line  op
+----- ----  --
+main:
+00000: 360  this
+00001: 360  dup
+00002: 360  callprop "markFuncBegin"
+00007: 360  swap
+00008: 360  notearg
+00009: 360  string "createPartView_General"
+00014: 360  notearg
+00015: 360  getarg 1
+00018: 360  notearg
+00019: 360  call 2
+00022: 360  pop
+00023: 362  getarg 1
+00026: 362  not
+00027: 362  ifeq 59 (+32)
+00032: 363  this
+00033: 363  dup
+00034: 363  callprop "error"
+00039: 363  swap
+00040: 363  notearg
+00041: 363  string "createPartView"
+00046: 363  notearg
+00047: 363  string "partName is null"
+00052: 363  notearg
+00053: 363  call 2
+00056: 363  pop
+00057: 364  null
+00058: 364  return
+00059: 367  null
+00060: 367  setlocal 0
+00063: 367  pop
+00064: 369  getarg 0
+00067: 369  dup
+00068: 369  callprop "getGrade"
+00073: 369  swap
+00074: 369  notearg
+00075: 369  call 0
+00078: 369  setlocal 1
+00081: 369  pop
+00082: 371  getarg 1
+00085: 371  string "head0"
+00090: 371  stricteq
+00091: 371  ifeq 155 (+64)
+00096: 372  name "xs"
+00101: 372  getprop "Factorys"
+00106: 372  getprop "Sprite"
+00111: 372  dup
+00112: 372  callprop "create"
+00117: 372  swap
+00118: 372  notearg
+00119: 372  string "Cmn02_equ_head0"
+00124: 372  notearg
+00125: 372  string "Cmn02"
+00130: 372  notearg
+00131: 372  newarray 1
+00135: 372  int8 4
+00137: 372  initelem_array 0
+00141: 372  endinit
+00142: 372  notearg
+00143: 372  call 3
+00146: 372  setlocal 0
+00149: 372  pop
+00150: 372  goto 735 (+585)
+00155: 373  getarg 1
+00158: 373  string "head1"
+00163: 373  stricteq
+00164: 373  ifeq 203 (+39)
+00169: 374  getarg 0
+00172: 374  dup
+00173: 374  callprop "getRes"
+00178: 374  swap
+00179: 374  notearg
+00180: 374  call 0
+00183: 374  dup
+00184: 374  callprop "createHeadSprite"
+00189: 374  swap
+00190: 374  notearg
+00191: 374  call 0
+00194: 374  setlocal 0
+00197: 374  pop
+00198: 374  goto 735 (+537)
+00203: 375  getarg 1
+00206: 375  string "head2"
+00211: 375  stricteq
+00212: 375  ifeq 325 (+113)
+00217: 376  name "xs"
+00222: 376  getprop "Factorys"
+00227: 376  getprop "Sprite"
+00232: 376  dup
+00233: 376  callprop "create"
+00238: 376  swap
+00239: 376  notearg
+00240: 377  name "xs"
+00245: 377  getprop "Cfg"
+00250: 377  getprop "Resource"
+00255: 377  getprop "Path"
+00260: 377  getprop "Head2"
+00265: 377  getprop "key"
+00270: 377  notearg
+00271: 378  name "xs"
+00276: 378  getprop "Cfg"
+00281: 378  getprop "Resource"
+00286: 378  getprop "Path"
+00291: 378  getprop "Head2"
+00296: 378  getprop "area"
+00301: 378  notearg
+00302: 379  newarray 1
+00306: 379  one
+00307: 379  initelem_array 0
+00311: 379  endinit
+00312: 379  notearg
+00313: 379  call 3
+00316: 379  setlocal 0
+00319: 379  pop
+00320: 379  goto 735 (+415)
+00325: 381  getarg 1
+00328: 381  string "name"
+00333: 381  stricteq
+00334: 381  ifeq 486 (+152)
+00339: 382  getarg 0
+00342: 382  dup
+00343: 382  callprop "getNameString"
+00348: 382  swap
+00349: 382  notearg
+00350: 382  call 0
+00353: 382  setlocal 2
+00356: 382  pop
+00357: 384  name "xs"
+00362: 384  getprop "dog_check"
+00367: 384  true
+00368: 384  stricteq
+00369: 384  ifeq 415 (+46)
+00374: 385  name "xs"
+00379: 385  getprop "Factorys"
+00384: 385  getprop "Label"
+00389: 385  dup
+00390: 385  callprop "createByStyleId"
+00395: 385  swap
+00396: 385  notearg
+00397: 385  string "Default"
+00402: 385  notearg
+00403: 385  call 1
+00406: 385  setlocal 0
+00409: 385  pop
+00410: 385  goto 451 (+41)
+00415: 388  name "xs"
+00420: 388  getprop "Factorys"
+00425: 388  getprop "Label"
+00430: 388  dup
+00431: 388  callprop "createByStyleId"
+00436: 388  swap
+00437: 388  notearg
+00438: 388  string "LS_wujiangName2"
+00443: 388  notearg
+00444: 388  call 1
+00447: 388  setlocal 0
+00450: 388  pop
+00451: 391  getlocal 0
+00454: 391  dup
+00455: 391  callprop "setString"
+00460: 391  swap
+00461: 391  notearg
+00462: 391  getlocal 2
+00465: 391  dup
+00466: 391  callprop "toWordBreak"
+00471: 391  swap
+00472: 391  notearg
+00473: 391  call 0
+00476: 391  notearg
+00477: 391  call 1
+00480: 391  pop
+00481: 391  goto 735 (+254)
+00486: 393  getarg 1
+00489: 393  string "v3_card1"
+00494: 393  stricteq
+00495: 393  ifeq 605 (+110)
+00500: 394  name "xs"
+00505: 394  getprop "Cfg"
+00510: 394  getprop "Resource"
+00515: 394  getprop "Path"
+00520: 394  getprop "Card1_V3"
+00525: 394  getprop "file_pre"
+00530: 394  getarg 0
+00533: 394  dup
+00534: 394  callprop "getRes"
+00539: 394  swap
+00540: 394  notearg
+00541: 394  call 0
+00544: 394  dup
+00545: 394  callprop "getPaintingId"
+00550: 394  swap
+00551: 394  notearg
+00552: 394  call 0
+00555: 394  add
+00556: 394  string ".png"
+00561: 394  add
+00562: 394  setlocal 3
+00565: 394  pop
+00566: 395  name "xs"
+00571: 395  getprop "Factorys"
+00576: 395  getprop "Sprite"
+00581: 395  dup
+00582: 395  callprop "createWithFileName"
+00587: 395  swap
+00588: 395  notearg
+00589: 395  getlocal 3
+00592: 395  notearg
+00593: 395  call 1
+00596: 395  setlocal 0
+00599: 395  pop
+00600: 395  goto 735 (+135)
+00605: 398  getarg 1
+00608: 398  string "Equ_Head0"
+00613: 398  stricteq
+00614: 398  ifeq 679 (+65)
+00619: 399  name "xs"
+00624: 399  getprop "Factorys"
+00629: 399  getprop "Sprite"
+00634: 399  dup
+00635: 399  callprop "create"
+00640: 399  swap
+00641: 399  notearg
+00642: 399  string "Cmn02_equ_head0"
+00647: 399  notearg
+00648: 399  string "Cmn02"
+00653: 399  notearg
+00654: 399  newarray 1
+00658: 399  getlocal 1
+00661: 399  initelem_array 0
+00665: 399  endinit
+00666: 399  notearg
+00667: 399  call 3
+00670: 399  setlocal 0
+00673: 399  pop
+00674: 399  goto 735 (+61)
+00679: 400  getarg 1
+00682: 400  string "icon_country"
+00687: 400  stricteq
+00688: 400  ifeq 735 (+47)
+00693: 401  name "xs"
+00698: 401  getprop "Factorys"
+00703: 401  getprop "Sprite"
+00708: 401  dup
+00709: 401  callprop "create"
+00714: 401  swap
+00715: 401  notearg
+00716: 401  string "Cmn02_country_5"
+00721: 401  notearg
+00722: 401  string "Cmn02"
+00727: 401  notearg
+00728: 401  call 2
+00731: 401  setlocal 0
+00734: 401  pop
+00735: 404  this
+00736: 404  dup
+00737: 404  callprop "assert"
+00742: 404  swap
+00743: 404  notearg
+00744: 404  getlocal 0
+00747: 404  notearg
+00748: 404  string "createPartView _ret  err:"
+00753: 404  notearg
+00754: 404  getarg 1
+00757: 404  notearg
+00758: 404  getarg 0
+00761: 404  dup
+00762: 404  callprop "getRes"
+00767: 404  swap
+00768: 404  notearg
+00769: 404  call 0
+00772: 404  notearg
+00773: 404  call 4
+00776: 404  pop
+00777: 406  this
+00778: 406  dup
+00779: 406  callprop "markFuncEnd"
+00784: 406  swap
+00785: 406  notearg
+00786: 406  string "createPartView_General"
+00791: 406  notearg
+00792: 406  getarg 1
+00795: 406  getlocal 0
+00798: 406  add
+00799: 406  notearg
+00800: 406  call 2
+00803: 406  pop
+00804: 408  getlocal 0
+00807: 408  return
+00808: 408  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:358 ---
+;; function object[8] getImgFileName
+;; function metadata object[8] nargs=4 bindings=7
+;; arg[0] partName
+;; arg[1] paintingId
+;; arg[2] obrit
+;; arg[3] quality
+;; local[0] _type
+;; local[1] _quality
+;; local[2] _file
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:411 ---
+loc   line  op
+----- ----  --
+main:
+00000: 413  getarg 2
+00003: 413  setlocal 0
+00006: 413  pop
+00007: 416  getarg 3
+00010: 416  setlocal 1
+00013: 416  pop
+00014: 418  getlocal 2
+00017: 418  pop
+00018: 419  getarg 0
+00021: 419  string "card0"
+00026: 419  stricteq
+00027: 419  ifeq 87 (+60)
+00032: 420  name "xs"
+00037: 420  getprop "Cfg"
+00042: 420  getprop "Resource"
+00047: 420  getprop "Path"
+00052: 420  getprop "Card0"
+00057: 420  getprop "file_pre"
+00062: 420  string "_"
+00067: 420  add
+00068: 420  getlocal 0
+00071: 420  add
+00072: 420  string ".png"
+00077: 420  add
+00078: 420  setlocal 2
+00081: 420  pop
+00082: 420  goto 242 (+160)
+00087: 422  getarg 0
+00090: 422  string "equ1"
+00095: 422  stricteq
+00096: 422  ifeq 150 (+54)
+00101: 423  name "xs"
+00106: 423  getprop "Cfg"
+00111: 423  getprop "Resource"
+00116: 423  getprop "Path"
+00121: 423  getprop "Equ1"
+00126: 423  getprop "file_pre"
+00131: 423  getarg 1
+00134: 423  add
+00135: 423  string ".png"
+00140: 423  add
+00141: 423  setlocal 2
+00144: 423  pop
+00145: 423  goto 242 (+97)
+00150: 425  getarg 0
+00153: 425  string "skill1"
+00158: 425  stricteq
+00159: 425  ifeq 213 (+54)
+00164: 426  name "xs"
+00169: 426  getprop "Cfg"
+00174: 426  getprop "Resource"
+00179: 426  getprop "Path"
+00184: 426  getprop "Skill1"
+00189: 426  getprop "file_pre"
+00194: 426  getarg 1
+00197: 426  add
+00198: 426  string ".png"
+00203: 426  add
+00204: 426  setlocal 2
+00207: 426  pop
+00208: 426  goto 242 (+34)
+00213: 429  name "xs"
+00218: 429  dup
+00219: 429  callprop "assert"
+00224: 429  swap
+00225: 429  notearg
+00226: 429  false
+00227: 429  notearg
+00228: 429  string "partName err"
+00233: 429  notearg
+00234: 429  getarg 0
+00237: 429  notearg
+00238: 429  call 3
+00241: 429  pop
+00242: 432  getlocal 2
+00245: 432  return
+00246: 432  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:411 ---
+;; function object[9] createHeadView
+;; function metadata object[9] nargs=3 bindings=4
+;; arg[0] model
+;; arg[1] type
+;; arg[2] type_sub
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:470 ---
+loc   line  op
+----- ----  --
+main:
+00000: 471  getlocal 0
+00003: 471  pop
+00004: 472  getarg 1
+00007: 472  condswitch
+00008: 473  name "xs"
+00013: 473  getprop "Const_Item_Style_General"
+00018: 473  case 163 (+145)
+00023: 474  name "xs"
+00028: 474  getprop "Const_Item_Style_Equ"
+00033: 474  case 163 (+130)
+00038: 475  name "xs"
+00043: 475  getprop "Const_Item_Style_Skill"
+00048: 475  case 163 (+115)
+00053: 476  name "xs"
+00058: 476  getprop "Const_Item_Style_GeneralSoul"
+00063: 476  case 163 (+100)
+00068: 477  name "xs"
+00073: 477  getprop "Const_Item_Style_SkillPiece"
+00078: 477  case 163 (+85)
+00083: 478  name "xs"
+00088: 478  getprop "Const_Item_Style_EquPiece"
+00093: 478  case 163 (+70)
+00098: 479  name "xs"
+00103: 479  getprop "Const_Item_Style_Goddess"
+00108: 479  case 163 (+55)
+00113: 480  name "xs"
+00118: 480  getprop "Const_Item_Style_GoddessSurface"
+00123: 480  case 163 (+40)
+00128: 483  name "xs"
+00133: 483  getprop "Const_Item_Style_Item"
+00138: 483  case 206 (+68)
+00143: 497  name "xs"
+00148: 497  getprop "Constant_ObjType_PlayerAttr"
+00153: 497  case 245 (+92)
+00158: 497  default 245 (+87)
+00163: 481  name "xs"
+00168: 481  getprop "Tools"
+00173: 481  getprop "Card"
+00178: 481  dup
+00179: 481  callprop "createHeadView_General_Equ_Skill"
+00184: 481  swap
+00185: 481  notearg
+00186: 481  getarg 0
+00189: 481  notearg
+00190: 481  getarg 1
+00193: 481  notearg
+00194: 481  call 2
+00197: 481  setlocal 0
+00200: 481  pop
+00201: 482  goto 277 (+76)
+00206: 484  name "xs"
+00211: 484  getprop "Tools"
+00216: 484  getprop "Card"
+00221: 484  dup
+00222: 484  callprop "createHeadView_Item"
+00227: 484  swap
+00228: 484  notearg
+00229: 484  getarg 0
+00232: 484  notearg
+00233: 484  call 1
+00236: 484  setlocal 0
+00239: 484  pop
+00240: 485  goto 277 (+37)
+00245: 498  name "xs"
+00250: 498  dup
+00251: 498  callprop "error"
+00256: 498  swap
+00257: 498  notearg
+00258: 498  string "createHeadView err"
+00263: 498  notearg
+00264: 498  getarg 1
+00267: 498  notearg
+00268: 498  call 2
+00271: 498  pop
+00272: 499  goto 277 (+5)
+00277: 501  getlocal 0
+00280: 501  return
+00281: 501  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:470 ---
+;; function object[10] createHeadView_General_Equ_Skill
+;; function metadata object[10] nargs=2 bindings=8
+;; arg[0] model
+;; arg[1] type
+;; local[0] _func
+;; local[1] _bgSprite0
+;; local[2] _bgSprite1
+;; local[3] _bgSprite2
+;; local[4] _view_lt
+;; local[5] _offset
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:505 ---
+loc   line  op
+----- ----  --
+main:
+00000: 507  getlocal 0
+00003: 507  pop
+00004: 508  getarg 1
+00007: 508  condswitch
+00008: 509  name "xs"
+00013: 509  getprop "Const_Item_Style_GeneralSoul"
+00018: 509  case 133 (+115)
+00023: 510  name "xs"
+00028: 510  getprop "Const_Item_Style_General"
+00033: 510  case 133 (+100)
+00038: 513  name "xs"
+00043: 513  getprop "Const_Item_Style_Equ"
+00048: 513  case 162 (+114)
+00053: 514  name "xs"
+00058: 514  getprop "Const_Item_Style_EquPiece"
+00063: 514  case 162 (+99)
+00068: 517  name "xs"
+00073: 517  getprop "Const_Item_Style_Skill"
+00078: 517  case 191 (+113)
+00083: 518  name "xs"
+00088: 518  getprop "Const_Item_Style_SkillPiece"
+00093: 518  case 191 (+98)
+00098: 521  name "xs"
+00103: 521  getprop "Const_Item_Style_Gems"
+00108: 521  case 220 (+112)
+00113: 524  name "xs"
+00118: 524  getprop "Const_Item_Style_Goddess"
+00123: 524  case 249 (+126)
+00128: 524  default 278 (+150)
+00133: 511  name "xs"
+00138: 511  getprop "Tools"
+00143: 511  getprop "Card"
+00148: 511  getprop "createPartView_General"
+00153: 511  setlocal 0
+00156: 511  pop
+00157: 512  goto 278 (+121)
+00162: 515  name "xs"
+00167: 515  getprop "Tools"
+00172: 515  getprop "Card"
+00177: 515  getprop "createPartView_Equ"
+00182: 515  setlocal 0
+00185: 515  pop
+00186: 516  goto 278 (+92)
+00191: 519  name "xs"
+00196: 519  getprop "Tools"
+00201: 519  getprop "Card"
+00206: 519  getprop "createPartView_Skill"
+00211: 519  setlocal 0
+00214: 519  pop
+00215: 520  goto 278 (+63)
+00220: 522  name "xs"
+00225: 522  getprop "Tools"
+00230: 522  getprop "Card"
+00235: 522  getprop "createPartView_Gems"
+00240: 522  setlocal 0
+00243: 522  pop
+00244: 523  goto 278 (+34)
+00249: 525  name "xs"
+00254: 525  getprop "Tools"
+00259: 525  getprop "Card"
+00264: 525  getprop "createPartView_Goddess"
+00269: 525  setlocal 0
+00272: 525  pop
+00273: 526  goto 278 (+5)
+00278: 529  getlocal 0
+00281: 529  dup
+00282: 529  callprop "apply"
+00287: 529  swap
+00288: 529  notearg
+00289: 529  this
+00290: 529  notearg
+00291: 529  newarray 2
+00295: 529  getarg 0
+00298: 529  initelem_array 0
+00302: 529  string "head0"
+00307: 529  initelem_array 1
+00311: 529  endinit
+00312: 529  notearg
+00313: 529  funapply 2
+00316: 529  setlocal 1
+00319: 529  pop
+00320: 530  getlocal 0
+00323: 530  dup
+00324: 530  callprop "apply"
+00329: 530  swap
+00330: 530  notearg
+00331: 530  this
+00332: 530  notearg
+00333: 530  newarray 2
+00337: 530  getarg 0
+00340: 530  initelem_array 0
+00344: 530  string "head1"
+00349: 530  initelem_array 1
+00353: 530  endinit
+00354: 530  notearg
+00355: 530  funapply 2
+00358: 530  setlocal 2
+00361: 530  pop
+00362: 531  getlocal 0
+00365: 531  dup
+00366: 531  callprop "apply"
+00371: 531  swap
+00372: 531  notearg
+00373: 531  this
+00374: 531  notearg
+00375: 531  newarray 2
+00379: 531  getarg 0
+00382: 531  initelem_array 0
+00386: 531  string "head2"
+00391: 531  initelem_array 1
+00395: 531  endinit
+00396: 531  notearg
+00397: 531  funapply 2
+00400: 531  setlocal 3
+00403: 531  pop
+00404: 534  getlocal 1
+00407: 534  dup
+00408: 534  callprop "setAnchorPoint"
+00413: 534  swap
+00414: 534  notearg
+00415: 534  name "xs"
+00420: 534  getprop "ap_c"
+00425: 534  notearg
+00426: 534  call 1
+00429: 534  pop
+00430: 535  getlocal 2
+00433: 535  dup
+00434: 535  callprop "setAnchorPoint"
+00439: 535  swap
+00440: 535  notearg
+00441: 535  name "xs"
+00446: 535  getprop "ap_c"
+00451: 535  notearg
+00452: 535  call 1
+00455: 535  pop
+00456: 536  getlocal 3
+00459: 536  dup
+00460: 536  callprop "setAnchorPoint"
+00465: 536  swap
+00466: 536  notearg
+00467: 536  name "xs"
+00472: 536  getprop "ap_c"
+00477: 536  notearg
+00478: 536  call 1
+00481: 536  pop
+00482: 538  name "xs"
+00487: 538  getprop "Utils"
+00492: 538  getprop "Node"
+00497: 538  dup
+00498: 538  callprop "attachNodes"
+00503: 538  swap
+00504: 538  notearg
+00505: 538  getlocal 2
+00508: 538  notearg
+00509: 538  getlocal 1
+00512: 538  notearg
+00513: 538  newinit 1
+00518: 538  string "c"
+00523: 538  initprop "base"
+00528: 538  endinit
+00529: 538  notearg
+00530: 538  call 3
+00533: 538  pop
+00534: 539  name "xs"
+00539: 539  getprop "Utils"
+00544: 539  getprop "Node"
+00549: 539  dup
+00550: 539  callprop "attachNodes"
+00555: 539  swap
+00556: 539  notearg
+00557: 539  getlocal 2
+00560: 539  notearg
+00561: 539  getlocal 3
+00564: 539  notearg
+00565: 539  newinit 1
+00570: 539  string "c"
+00575: 539  initprop "base"
+00580: 539  newinit 1
+00585: 539  one
+00586: 539  initprop "x"
+00591: 539  int8 -2
+00593: 539  initprop "y"
+00598: 539  endinit
+00599: 539  initprop "offset"
+00604: 539  endinit
+00605: 539  notearg
+00606: 539  call 3
+00609: 539  pop
+00610: 541  getlocal 1
+00613: 541  dup
+00614: 541  callprop "setZOrder"
+00619: 541  swap
+00620: 541  notearg
+00621: 541  int8 -1
+00623: 541  notearg
+00624: 541  call 1
+00627: 541  pop
+00628: 542  getlocal 3
+00631: 542  dup
+00632: 542  callprop "setZOrder"
+00637: 542  swap
+00638: 542  notearg
+00639: 542  one
+00640: 542  notearg
+00641: 542  call 1
+00644: 542  pop
+00645: 544  getlocal 1
+00648: 544  dup
+00649: 544  callprop "setCascadeOpacityEnabled"
+00654: 544  swap
+00655: 544  notearg
+00656: 544  true
+00657: 544  notearg
+00658: 544  call 1
+00661: 544  pop
+00662: 545  getlocal 2
+00665: 545  dup
+00666: 545  callprop "setCascadeOpacityEnabled"
+00671: 545  swap
+00672: 545  notearg
+00673: 545  true
+00674: 545  notearg
+00675: 545  call 1
+00678: 545  pop
+00679: 546  getlocal 3
+00682: 546  dup
+00683: 546  callprop "setCascadeOpacityEnabled"
+00688: 546  swap
+00689: 546  notearg
+00690: 546  true
+00691: 546  notearg
+00692: 546  call 1
+00695: 546  pop
+00696: 547  getlocal 1
+00699: 547  dup
+00700: 547  callprop "setCascadeColorEnabled"
+00705: 547  swap
+00706: 547  notearg
+00707: 547  true
+00708: 547  notearg
+00709: 547  call 1
+00712: 547  pop
+00713: 548  getlocal 2
+00716: 548  dup
+00717: 548  callprop "setCascadeColorEnabled"
+00722: 548  swap
+00723: 548  notearg
+00724: 548  true
+00725: 548  notearg
+00726: 548  call 1
+00729: 548  pop
+00730: 549  getlocal 3
+00733: 549  dup
+00734: 549  callprop "setCascadeColorEnabled"
+00739: 549  swap
+00740: 549  notearg
+00741: 549  true
+00742: 549  notearg
+00743: 549  call 1
+00746: 549  pop
+00747: 552  getlocal 4
+00750: 552  pop
+00751: 553  getlocal 5
+00754: 553  pop
+00755: 554  getarg 1
+00758: 554  condswitch
+00759: 555  name "xs"
+00764: 555  getprop "Const_Item_Style_GeneralSoul"
+00769: 555  case 809 (+40)
+00774: 559  name "xs"
+00779: 559  getprop "Const_Item_Style_EquPiece"
+00784: 559  case 882 (+98)
+00789: 560  name "xs"
+00794: 560  getprop "Const_Item_Style_SkillPiece"
+00799: 560  case 882 (+83)
+00804: 560  default 955 (+151)
+00809: 556  name "xs"
+00814: 556  getprop "Factorys"
+00819: 556  getprop "Sprite"
+00824: 556  dup
+00825: 556  callprop "create"
+00830: 556  swap
+00831: 556  notearg
+00832: 556  string "icon_lt_soul"
+00837: 556  notearg
+00838: 556  string "Cmn02"
+00843: 556  notearg
+00844: 556  call 2
+00847: 556  setlocal 4
+00850: 556  pop
+00851: 557  name "cc"
+00856: 557  dup
+00857: 557  callprop "p"
+00862: 557  swap
+00863: 557  notearg
+00864: 557  int8 -8
+00866: 557  notearg
+00867: 557  int8 6
+00869: 557  notearg
+00870: 557  call 2
+00873: 557  setlocal 5
+00876: 557  pop
+00877: 558  goto 955 (+78)
+00882: 561  name "xs"
+00887: 561  getprop "Factorys"
+00892: 561  getprop "Sprite"
+00897: 561  dup
+00898: 561  callprop "create"
+00903: 561  swap
+00904: 561  notearg
+00905: 561  string "icon_lt_piece"
+00910: 561  notearg
+00911: 561  string "Cmn02"
+00916: 561  notearg
+00917: 561  call 2
+00920: 561  setlocal 4
+00923: 561  pop
+00924: 562  name "cc"
+00929: 562  dup
+00930: 562  callprop "p"
+00935: 562  swap
+00936: 562  notearg
+00937: 562  int8 -8
+00939: 562  notearg
+00940: 562  int8 6
+00942: 562  notearg
+00943: 562  call 2
+00946: 562  setlocal 5
+00949: 562  pop
+00950: 563  goto 955 (+5)
+00955: 566  getlocal 4
+00958: 566  ifeq 1067 (+109)
+00963: 567  getlocal 4
+00966: 567  dup
+00967: 567  callprop "setAnchorPoint"
+00972: 567  swap
+00973: 567  notearg
+00974: 567  name "xs"
+00979: 567  getprop "ap_lt"
+00984: 567  notearg
+00985: 567  call 1
+00988: 567  pop
+00989: 568  getlocal 4
+00992: 568  dup
+00993: 568  callprop "setZOrder"
+00998: 568  swap
+00999: 568  notearg
+01000: 568  int8 10
+01002: 568  notearg
+01003: 568  call 1
+01006: 568  pop
+01007: 569  name "xs"
+01012: 569  getprop "Utils"
+01017: 569  getprop "Node"
+01022: 569  dup
+01023: 569  callprop "attachNodes"
+01028: 569  swap
+01029: 569  notearg
+01030: 569  getlocal 2
+01033: 569  notearg
+01034: 569  getlocal 4
+01037: 569  notearg
+01038: 569  newinit 1
+01043: 569  string "lt"
+01048: 569  initprop "desc"
+01053: 569  getlocal 5
+01056: 569  initprop "offset"
+01061: 569  endinit
+01062: 569  notearg
+01063: 569  call 3
+01066: 569  pop
+01067: 572  getlocal 2
+01070: 572  return
+01071: 572  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:505 ---
+;; function object[11] createHeadView_Item
+;; function metadata object[11] nargs=1 bindings=5
+;; arg[0] model
+;; local[0] _model
+;; local[1] _bgSprite0
+;; local[2] _bgSprite1
+;; local[3] _bgSprite2
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:575 ---
+loc   line  op
+----- ----  --
+main:
+00000: 577  getarg 0
+00003: 577  setlocal 0
+00006: 577  pop
+00007: 579  getlocal 0
+00010: 579  dup
+00011: 579  callprop "createPartView"
+00016: 579  swap
+00017: 579  notearg
+00018: 579  string "Equ_Head0"
+00023: 579  notearg
+00024: 579  call 1
+00027: 579  setlocal 1
+00030: 579  pop
+00031: 580  getlocal 0
+00034: 580  dup
+00035: 580  callprop "createPartView"
+00040: 580  swap
+00041: 580  notearg
+00042: 580  string "head1"
+00047: 580  notearg
+00048: 580  call 1
+00051: 580  setlocal 2
+00054: 580  pop
+00055: 581  getlocal 0
+00058: 581  dup
+00059: 581  callprop "createPartView"
+00064: 581  swap
+00065: 581  notearg
+00066: 581  string "head2"
+00071: 581  notearg
+00072: 581  call 1
+00075: 581  setlocal 3
+00078: 581  pop
+00079: 583  getlocal 1
+00082: 583  dup
+00083: 583  callprop "setAnchorPoint"
+00088: 583  swap
+00089: 583  notearg
+00090: 583  name "xs"
+00095: 583  getprop "ap_c"
+00100: 583  notearg
+00101: 583  call 1
+00104: 583  pop
+00105: 584  getlocal 2
+00108: 584  dup
+00109: 584  callprop "setAnchorPoint"
+00114: 584  swap
+00115: 584  notearg
+00116: 584  name "xs"
+00121: 584  getprop "ap_c"
+00126: 584  notearg
+00127: 584  call 1
+00130: 584  pop
+00131: 585  getlocal 3
+00134: 585  dup
+00135: 585  callprop "setAnchorPoint"
+00140: 585  swap
+00141: 585  notearg
+00142: 585  name "xs"
+00147: 585  getprop "ap_c"
+00152: 585  notearg
+00153: 585  call 1
+00156: 585  pop
+00157: 587  getlocal 2
+00160: 587  dup
+00161: 587  callprop "setZOrder"
+00166: 587  swap
+00167: 587  notearg
+00168: 587  int8 2
+00170: 587  notearg
+00171: 587  call 1
+00174: 587  pop
+00175: 588  getlocal 3
+00178: 588  dup
+00179: 588  callprop "setZOrder"
+00184: 588  swap
+00185: 588  notearg
+00186: 588  one
+00187: 588  notearg
+00188: 588  call 1
+00191: 588  pop
+00192: 591  name "xs"
+00197: 591  getprop "Utils"
+00202: 591  getprop "Node"
+00207: 591  dup
+00208: 591  callprop "attachNodes"
+00213: 591  swap
+00214: 591  notearg
+00215: 591  getlocal 1
+00218: 591  notearg
+00219: 591  getlocal 3
+00222: 591  notearg
+00223: 591  newinit 1
+00228: 591  string "c"
+00233: 591  initprop "base"
+00238: 591  newinit 1
+00243: 591  int8 3
+00245: 591  initprop "x"
+00250: 591  int8 -2
+00252: 591  initprop "y"
+00257: 591  endinit
+00258: 591  initprop "offset"
+00263: 591  endinit
+00264: 591  notearg
+00265: 591  call 3
+00268: 591  pop
+00269: 592  name "xs"
+00274: 592  getprop "Utils"
+00279: 592  getprop "Node"
+00284: 592  dup
+00285: 592  callprop "attachNodes"
+00290: 592  swap
+00291: 592  notearg
+00292: 592  getlocal 1
+00295: 592  notearg
+00296: 592  getlocal 2
+00299: 592  notearg
+00300: 592  newinit 1
+00305: 592  string "c"
+00310: 592  initprop "base"
+00315: 592  newinit 1
+00320: 592  int8 3
+00322: 592  initprop "x"
+00327: 592  endinit
+00328: 592  initprop "offset"
+00333: 592  endinit
+00334: 592  notearg
+00335: 592  call 3
+00338: 592  pop
+00339: 594  getlocal 1
+00342: 594  return
+00343: 594  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:575 ---
+;; function object[12] calculateAttrType_FightPoint
+;; function metadata object[12] nargs=4 bindings=4
+;; arg[0] atk
+;; arg[1] def
+;; arg[2] hp
+;; arg[3] wis
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:600 ---
+loc   line  op
+----- ----  --
+main:
+00000: 601  name "xs"
+00005: 601  getprop "Utils"
+00010: 601  dup
+00011: 601  callprop "floorSafe"
+00016: 601  swap
+00017: 601  notearg
+00018: 601  getarg 0
+00021: 601  getarg 1
+00024: 601  add
+00025: 601  getarg 2
+00028: 601  double 0.4
+00033: 601  mul
+00034: 601  add
+00035: 601  getarg 3
+00038: 601  add
+00039: 601  notearg
+00040: 601  call 1
+00043: 601  return
+00044: 601  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Card.js:600 ---

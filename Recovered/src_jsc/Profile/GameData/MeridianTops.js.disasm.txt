@@ -1,0 +1,735 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/MeridianTops.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=143 object[0]
+;; FUNCTION-MAP kind=lambda offset=153 object[1]
+;; FUNCTION-MAP kind=lambda offset=163 object[2]
+;; FUNCTION-MAP kind=lambda offset=173 object[3]
+;; FUNCTION-MAP kind=lambda offset=214 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Profile"
+00010:   5  getprop "GameData"
+00015:   5  name "xs"
+00020:   5  getprop "Profile"
+00025:   5  getprop "GameData"
+00030:   5  getprop "Base"
+00035:   5  dup
+00036:   5  callprop "extend"
+00041:   5  swap
+00042:   5  notearg
+00043:   5  newinit 1
+00048:   7  name "xs"
+00053:   7  getprop "Debug"
+00058:   7  getprop "emptyFunc"
+00063:   7  initprop "log"
+00068:   8  name "xs"
+00073:   8  getprop "Debug"
+00078:   8  getprop "emptyFunc"
+00083:   8  initprop "dump"
+00088:  10  string "xs.Profile.GameData.MeridianTops"
+00093:  10  initprop "name"
+00098:  11  name "xs"
+00103:  11  getprop "Constant_GameData_MeridianTops"
+00108:  11  initprop "nameType"
+00113:  12  name "xs"
+00118:  12  getprop "Models"
+00123:  12  getprop "MeridianTop"
+00128:  12  initprop "modelName"
+00133:  13  string ""
+00138:  13  initprop "sortBy"
+00143:  15  lambda (function () {
+    [sourceless code]
+})
+00148:  15  initprop "init"
+00153:  20  lambda (function () {
+    [sourceless code]
+})
+00158:  20  initprop "getIsInTeamByGeneralId"
+00163:  30  lambda (function () {
+    [sourceless code]
+})
+00168:  30  initprop "getAllMeridianTopModel"
+00173:  97  lambda (function () {
+    [sourceless code]
+})
+00178:  97  initprop "getByGeneralPkId"
+00183:  97  endinit
+00184:  97  notearg
+00185:  97  call 1
+00188:  97  setprop "MeridianTops"
+00193:  97  popv
+00194: 110  name "xs"
+00199: 110  getprop "Profile"
+00204: 110  getprop "GameData"
+00209: 110  getprop "MeridianTops"
+00214: 110  lambda (function () {
+    [sourceless code]
+})
+00219: 110  setprop "create"
+00224: 110  popv
+00225: 128  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  dup
+00002:  16  callprop "_super"
+00007:  16  swap
+00008:  16  notearg
+00009:  16  getarg 0
+00012:  16  notearg
+00013:  16  call 1
+00016:  16  pop
+00017:  17  this
+00018:  17  getprop "dataRef"
+00023:  17  dup
+00024:  17  callprop "getNotifyCenter"
+00029:  17  swap
+00030:  17  notearg
+00031:  17  call 0
+00034:  17  dup
+00035:  17  callprop "addObserver"
+00040:  17  swap
+00041:  17  notearg
+00042:  17  this
+00043:  17  notearg
+00044:  17  this
+00045:  17  getprop "clearCache"
+00050:  17  notearg
+00051:  17  name "xs"
+00056:  17  getprop "Constant_Notify_ModelChange_MeridianTop_SortChange"
+00061:  17  notearg
+00062:  17  call 3
+00065:  17  pop
+00066:  18  true
+00067:  18  return
+00068:  18  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:15 ---
+;; function object[1] getIsInTeamByGeneralId
+;; function metadata object[1] nargs=2 bindings=4
+;; arg[0] list
+;; arg[1] generalId
+;; local[0] _bool
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:20 ---
+loc   line  op
+----- ----  --
+main:
+00000:  21  true
+00001:  21  setlocal 0
+00004:  21  pop
+00005:  22  zero
+00006:  22  setlocal 1
+00009:  22  pop
+00010:  22  goto 52 (+42)
+00015:  23  loophead
+00016:  23  getarg 0
+00019:  23  getlocal 1
+00022:  23  getelem
+00023:  23  getarg 1
+00026:  23  eq
+00027:  23  ifeq 37 (+10)
+00032:  24  false
+00033:  24  setlocal 0
+00036:  24  pop
+00037:  22  localinc 11
+00040:  22  getlocal 1
+00043:  22  pos
+00044:  22  dup
+00045:  22  one
+00046:  22  add
+00047:  22  setlocal 1
+00050:  22  pop
+00051:  22  pop
+00052:  22  loopentry
+00053:  22  getlocal 1
+00056:  22  getarg 0
+00059:  22  length "length"
+00064:  22  lt
+00065:  22  ifne 15 (-50)
+00070:  27  getlocal 0
+00073:  27  return
+00074:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:20 ---
+;; function object[2] getAllMeridianTopModel
+;; function metadata object[2] nargs=0 bindings=16
+;; local[0] _obj_list
+;; local[1] _data
+;; local[2] teamModels
+;; local[3] i
+;; local[4] meridianTopModel
+;; local[5] generalLevel
+;; local[6] needGeneralLevel
+;; local[7] list_1
+;; local[8] list_2
+;; local[9] list_3
+;; local[10] teamGeneralModels
+;; local[11] teamGeneralPkid
+;; local[12] meridianModels
+;; local[13] idx
+;; local[14] _bool
+;; local[15] j
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  this
+00001:  31  dup
+00002:  31  callprop "getAllWithDefaultSort"
+00007:  31  swap
+00008:  31  notearg
+00009:  31  call 0
+00012:  31  setlocal 0
+00015:  31  pop
+00016:  32  name "xs"
+00021:  32  getprop "Utils"
+00026:  32  dup
+00027:  32  callprop "isEmpty"
+00032:  32  swap
+00033:  32  notearg
+00034:  32  getlocal 0
+00037:  32  notearg
+00038:  32  call 1
+00041:  32  ifeq 361 (+320)
+00046:  33  newarray 0
+00050:  33  endinit
+00051:  33  setlocal 1
+00054:  33  pop
+00055:  34  name "xs"
+00060:  34  getprop "Profile"
+00065:  34  getprop "GameData"
+00070:  34  getprop "Mgr"
+00075:  34  dup
+00076:  34  callprop "getInstance"
+00081:  34  swap
+00082:  34  notearg
+00083:  34  call 0
+00086:  34  getprop "Team"
+00091:  34  dup
+00092:  34  callprop "getGeneralsInTeam"
+00097:  34  swap
+00098:  34  notearg
+00099:  34  call 0
+00102:  34  setlocal 2
+00105:  34  pop
+00106:  35  zero
+00107:  35  setlocal 3
+00110:  35  pop
+00111:  35  goto 334 (+223)
+00116:  36  loophead
+00117:  36  name "xs"
+00122:  36  getprop "Models"
+00127:  36  getprop "MeridianTop"
+00132:  36  dup
+00133:  36  callprop "createWithJson"
+00138:  36  swap
+00139:  36  notearg
+00140:  36  newinit 1
+00145:  37  getlocal 2
+00148:  37  getlocal 3
+00151:  37  getelem
+00152:  37  dup
+00153:  37  callprop "getPkId"
+00158:  37  swap
+00159:  37  notearg
+00160:  37  call 0
+00163:  37  dup
+00164:  37  callprop "toString"
+00169:  37  swap
+00170:  37  notearg
+00171:  37  call 0
+00174:  37  initprop "user_general_id"
+00179:  38  string "1"
+00184:  38  initprop "top_level"
+00189:  39  string "1"
+00194:  39  initprop "meridian_level"
+00199:  40  string "0"
+00204:  40  initprop "point_level"
+00209:  40  endinit
+00210:  40  notearg
+00211:  40  call 1
+00214:  40  setlocal 4
+00217:  40  pop
+00218:  42  getlocal 2
+00221:  42  getlocal 3
+00224:  42  getelem
+00225:  42  dup
+00226:  42  callprop "getLevel"
+00231:  42  swap
+00232:  42  notearg
+00233:  42  call 0
+00236:  42  setlocal 5
+00239:  42  pop
+00240:  43  getlocal 4
+00243:  43  dup
+00244:  43  callprop "getMeridianTopGeneralLevel"
+00249:  43  swap
+00250:  43  notearg
+00251:  43  call 0
+00254:  43  setlocal 6
+00257:  43  pop
+00258:  44  callname "parseInt"
+00263:  44  implicitthis "parseInt"
+00268:  44  notearg
+00269:  44  getlocal 5
+00272:  44  notearg
+00273:  44  call 1
+00276:  44  callname "parseInt"
+00281:  44  implicitthis "parseInt"
+00286:  44  notearg
+00287:  44  getlocal 6
+00290:  44  notearg
+00291:  44  call 1
+00294:  44  ge
+00295:  44  ifeq 319 (+24)
+00300:  45  getlocal 1
+00303:  45  dup
+00304:  45  callprop "push"
+00309:  45  swap
+00310:  45  notearg
+00311:  45  getlocal 4
+00314:  45  notearg
+00315:  45  call 1
+00318:  45  pop
+00319:  35  localinc 11
+00322:  35  getlocal 3
+00325:  35  pos
+00326:  35  dup
+00327:  35  one
+00328:  35  add
+00329:  35  setlocal 3
+00332:  35  pop
+00333:  35  pop
+00334:  35  loopentry
+00335:  35  getlocal 3
+00338:  35  getlocal 2
+00341:  35  length "length"
+00346:  35  lt
+00347:  35  ifne 116 (-231)
+00352:  48  getlocal 1
+00355:  48  return
+00356:  48  goto 992 (+636)
+00361:  50  newarray 0
+00365:  50  endinit
+00366:  50  setlocal 7
+00369:  50  pop
+00370:  51  newarray 0
+00374:  51  endinit
+00375:  51  setlocal 8
+00378:  51  pop
+00379:  52  newarray 0
+00383:  52  endinit
+00384:  52  setlocal 9
+00387:  52  pop
+00388:  53  name "xs"
+00393:  53  getprop "Profile"
+00398:  53  getprop "GameData"
+00403:  53  getprop "Mgr"
+00408:  53  dup
+00409:  53  callprop "getInstance"
+00414:  53  swap
+00415:  53  notearg
+00416:  53  call 0
+00419:  53  getprop "Team"
+00424:  53  setlocal 2
+00427:  53  pop
+00428:  54  zero
+00429:  54  setlocal 3
+00432:  54  pop
+00433:  54  goto 543 (+110)
+00438:  55  loophead
+00439:  55  getlocal 2
+00442:  55  dup
+00443:  55  callprop "isInTeam"
+00448:  55  swap
+00449:  55  notearg
+00450:  55  getlocal 0
+00453:  55  getlocal 3
+00456:  55  getelem
+00457:  55  dup
+00458:  55  callprop "getUserGeneralPkid"
+00463:  55  swap
+00464:  55  notearg
+00465:  55  call 0
+00468:  55  notearg
+00469:  55  call 1
+00472:  55  ifeq 505 (+33)
+00477:  56  getlocal 7
+00480:  56  dup
+00481:  56  callprop "push"
+00486:  56  swap
+00487:  56  notearg
+00488:  56  getlocal 0
+00491:  56  getlocal 3
+00494:  56  getelem
+00495:  56  notearg
+00496:  56  call 1
+00499:  56  pop
+00500:  56  goto 528 (+28)
+00505:  58  getlocal 8
+00508:  58  dup
+00509:  58  callprop "push"
+00514:  58  swap
+00515:  58  notearg
+00516:  58  getlocal 0
+00519:  58  getlocal 3
+00522:  58  getelem
+00523:  58  notearg
+00524:  58  call 1
+00527:  58  pop
+00528:  54  localinc 11
+00531:  54  getlocal 3
+00534:  54  pos
+00535:  54  dup
+00536:  54  one
+00537:  54  add
+00538:  54  setlocal 3
+00541:  54  pop
+00542:  54  pop
+00543:  54  loopentry
+00544:  54  getlocal 3
+00547:  54  getlocal 0
+00550:  54  length "length"
+00555:  54  lt
+00556:  54  ifne 438 (-118)
+00561:  61  getlocal 2
+00564:  61  dup
+00565:  61  callprop "getGeneralsInTeam"
+00570:  61  swap
+00571:  61  notearg
+00572:  61  call 0
+00575:  61  setlocal 10
+00578:  61  pop
+00579:  62  zero
+00580:  62  setlocal 3
+00583:  62  pop
+00584:  62  goto 948 (+364)
+00589:  63  loophead
+00590:  63  getlocal 10
+00593:  63  getlocal 3
+00596:  63  getelem
+00597:  63  dup
+00598:  63  callprop "getPkId"
+00603:  63  swap
+00604:  63  notearg
+00605:  63  call 0
+00608:  63  dup
+00609:  63  callprop "toString"
+00614:  63  swap
+00615:  63  notearg
+00616:  63  call 0
+00619:  63  setlocal 11
+00622:  63  pop
+00623:  64  name "xs"
+00628:  64  getprop "Models"
+00633:  64  getprop "MeridianTop"
+00638:  64  dup
+00639:  64  callprop "createWithJson"
+00644:  64  swap
+00645:  64  notearg
+00646:  64  newinit 1
+00651:  65  getlocal 11
+00654:  65  initprop "user_general_id"
+00659:  66  string "1"
+00664:  66  initprop "top_level"
+00669:  67  string "1"
+00674:  67  initprop "meridian_level"
+00679:  68  string "0"
+00684:  68  initprop "point_level"
+00689:  68  endinit
+00690:  68  notearg
+00691:  68  call 1
+00694:  68  setlocal 12
+00697:  68  pop
+00698:  70  getlocal 10
+00701:  70  getlocal 3
+00704:  70  getelem
+00705:  70  dup
+00706:  70  callprop "getLevel"
+00711:  70  swap
+00712:  70  notearg
+00713:  70  call 0
+00716:  70  setlocal 5
+00719:  70  pop
+00720:  71  getlocal 12
+00723:  71  dup
+00724:  71  callprop "getMeridianTopGeneralLevel"
+00729:  71  swap
+00730:  71  notearg
+00731:  71  call 0
+00734:  71  setlocal 6
+00737:  71  pop
+00738:  72  callname "parseInt"
+00743:  72  implicitthis "parseInt"
+00748:  72  notearg
+00749:  72  getlocal 5
+00752:  72  notearg
+00753:  72  call 1
+00756:  72  callname "parseInt"
+00761:  72  implicitthis "parseInt"
+00766:  72  notearg
+00767:  72  getlocal 6
+00770:  72  notearg
+00771:  72  call 1
+00774:  72  ge
+00775:  72  ifeq 933 (+158)
+00780:  73  zero
+00781:  73  setlocal 13
+00784:  73  pop
+00785:  74  false
+00786:  74  setlocal 14
+00789:  74  pop
+00790:  75  zero
+00791:  75  setlocal 15
+00794:  75  pop
+00795:  75  goto 860 (+65)
+00800:  76  loophead
+00801:  76  getlocal 11
+00804:  76  getlocal 7
+00807:  76  getlocal 15
+00810:  76  getelem
+00811:  76  dup
+00812:  76  callprop "getUserGeneralPkid"
+00817:  76  swap
+00818:  76  notearg
+00819:  76  call 0
+00822:  76  eq
+00823:  76  ifeq 845 (+22)
+00828:  77  true
+00829:  77  setlocal 14
+00832:  77  pop
+00833:  78  getlocal 15
+00836:  78  setlocal 13
+00839:  78  pop
+00840:  79  goto 878 (+38)
+00845:  75  localinc 11
+00848:  75  getlocal 15
+00851:  75  pos
+00852:  75  dup
+00853:  75  one
+00854:  75  add
+00855:  75  setlocal 15
+00858:  75  pop
+00859:  75  pop
+00860:  75  loopentry
+00861:  75  getlocal 15
+00864:  75  getlocal 7
+00867:  75  length "length"
+00872:  75  lt
+00873:  75  ifne 800 (-73)
+00878:  83  getlocal 14
+00881:  83  ifeq 914 (+33)
+00886:  84  getlocal 9
+00889:  84  dup
+00890:  84  callprop "push"
+00895:  84  swap
+00896:  84  notearg
+00897:  84  getlocal 7
+00900:  84  getlocal 13
+00903:  84  getelem
+00904:  84  notearg
+00905:  84  call 1
+00908:  84  pop
+00909:  84  goto 933 (+24)
+00914:  86  getlocal 9
+00917:  86  dup
+00918:  86  callprop "push"
+00923:  86  swap
+00924:  86  notearg
+00925:  86  getlocal 12
+00928:  86  notearg
+00929:  86  call 1
+00932:  86  pop
+00933:  62  localinc 11
+00936:  62  getlocal 3
+00939:  62  pos
+00940:  62  dup
+00941:  62  one
+00942:  62  add
+00943:  62  setlocal 3
+00946:  62  pop
+00947:  62  pop
+00948:  62  loopentry
+00949:  62  getlocal 3
+00952:  62  getlocal 10
+00955:  62  length "length"
+00960:  62  lt
+00961:  62  ifne 589 (-372)
+00966:  91  getlocal 9
+00969:  91  dup
+00970:  91  callprop "concat"
+00975:  91  swap
+00976:  91  notearg
+00977:  91  getlocal 8
+00980:  91  notearg
+00981:  91  call 1
+00984:  91  setlocal 9
+00987:  91  pop
+00988:  92  getlocal 9
+00991:  92  return
+00992:  93  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:30 ---
+;; function object[3] getByGeneralPkId
+;; function metadata object[3] nargs=1 bindings=3
+;; arg[0] general_pkId
+;; local[0] _obj_list
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:97 ---
+loc   line  op
+----- ----  --
+main:
+00000:  98  this
+00001:  98  dup
+00002:  98  callprop "getAllMeridianTopModel"
+00007:  98  swap
+00008:  98  notearg
+00009:  98  call 0
+00012:  98  setlocal 0
+00015:  98  pop
+00016:  99  zero
+00017:  99  setlocal 1
+00020:  99  pop
+00021:  99  goto 77 (+56)
+00026: 100  loophead
+00027: 100  getlocal 0
+00030: 100  getlocal 1
+00033: 100  getelem
+00034: 100  dup
+00035: 100  callprop "getUserGeneralPkid"
+00040: 100  swap
+00041: 100  notearg
+00042: 100  call 0
+00045: 100  getarg 0
+00048: 100  eq
+00049: 100  ifeq 62 (+13)
+00054: 101  getlocal 0
+00057: 101  getlocal 1
+00060: 101  getelem
+00061: 101  return
+00062:  99  localinc 11
+00065:  99  getlocal 1
+00068:  99  pos
+00069:  99  dup
+00070:  99  one
+00071:  99  add
+00072:  99  setlocal 1
+00075:  99  pop
+00076:  99  pop
+00077:  99  loopentry
+00078:  99  getlocal 1
+00081:  99  getlocal 0
+00084:  99  length "length"
+00089:  99  lt
+00090:  99  ifne 26 (-64)
+00095: 104  null
+00096: 104  return
+00097: 104  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:97 ---
+;; function object[4] create
+;; function metadata object[4] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:110 ---
+loc   line  op
+----- ----  --
+main:
+00000: 112  getarg 0
+00003: 112  getprop "play_id"
+00008: 112  setlocal 0
+00011: 112  pop
+00012: 113  name "xs"
+00017: 113  getprop "Profile"
+00022: 113  getprop "GameData"
+00027: 113  getprop "MeridianTops"
+00032: 113  setlocal 1
+00035: 113  pop
+00036: 114  name "xs"
+00041: 114  getprop "Utils"
+00046: 114  dup
+00047: 114  callprop "isSet"
+00052: 114  swap
+00053: 114  notearg
+00054: 114  getlocal 1
+00057: 114  getprop "_instance"
+00062: 114  notearg
+00063: 114  call 1
+00066: 114  or 85 (+19)
+00071: 114  pop
+00072: 114  getlocal 1
+00075: 114  newarray 0
+00079: 114  endinit
+00080: 114  setprop "_instance"
+00085: 114  pop
+00086: 116  getlocal 1
+00089: 116  getprop "_instance"
+00094: 116  getlocal 0
+00097: 116  getelem
+00098: 116  ifeq 116 (+18)
+00103: 117  getlocal 1
+00106: 117  getprop "_instance"
+00111: 117  getlocal 0
+00114: 117  getelem
+00115: 117  return
+00116: 120  getlocal 1
+00119: 120  undefined
+00120: 120  notearg
+00121: 120  new 0
+00124: 120  setlocal 2
+00127: 120  pop
+00128: 121  getlocal 2
+00131: 121  and 155 (+24)
+00136: 121  pop
+00137: 121  getlocal 2
+00140: 121  dup
+00141: 121  callprop "init"
+00146: 121  swap
+00147: 121  notearg
+00148: 121  getarg 0
+00151: 121  notearg
+00152: 121  call 1
+00155: 121  ifeq 180 (+25)
+00160: 122  getlocal 1
+00163: 122  getprop "_instance"
+00168: 122  getlocal 0
+00171: 122  getlocal 2
+00174: 122  setelem
+00175: 122  pop
+00176: 123  getlocal 2
+00179: 123  return
+00180: 126  name "xs"
+00185: 126  dup
+00186: 126  callprop "error"
+00191: 126  swap
+00192: 126  notearg
+00193: 126  string "xs.Profile.GameData.MeridianTops.create failed"
+00198: 126  notearg
+00199: 126  call 1
+00202: 126  pop
+00203: 127  null
+00204: 127  return
+00205: 127  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/MeridianTops.js:110 ---

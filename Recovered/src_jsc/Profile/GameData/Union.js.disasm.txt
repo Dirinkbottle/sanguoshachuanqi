@@ -1,0 +1,186 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/Union.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+;; FUNCTION-MAP kind=lambda offset=68 object[1]
+;; FUNCTION-MAP kind=lambda offset=109 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Union.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  name "xs"
+00005:  12  getprop "Profile"
+00010:  12  getprop "GameData"
+00015:  12  name "xs"
+00020:  12  getprop "Profile"
+00025:  12  getprop "GameData"
+00030:  12  getprop "Base"
+00035:  12  dup
+00036:  12  callprop "extend"
+00041:  12  swap
+00042:  12  notearg
+00043:  12  newinit 1
+00048:  13  string "xs.Profile.GameData.Union"
+00053:  13  initprop "name"
+00058:  15  lambda (function () {
+    [sourceless code]
+})
+00063:  15  initprop "init"
+00068:  21  lambda (function () {
+    [sourceless code]
+})
+00073:  21  initprop "getUnion"
+00078:  21  endinit
+00079:  21  notearg
+00080:  21  call 1
+00083:  21  setprop "Union"
+00088:  21  popv
+00089:  29  name "xs"
+00094:  29  getprop "Profile"
+00099:  29  getprop "GameData"
+00104:  29  getprop "Union"
+00109:  29  lambda (function () {
+    [sourceless code]
+})
+00114:  29  setprop "create"
+00119:  29  popv
+00120:  45  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Union.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Union.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  dup
+00002:  16  callprop "_super"
+00007:  16  swap
+00008:  16  notearg
+00009:  16  getarg 0
+00012:  16  notearg
+00013:  16  call 1
+00016:  16  pop
+00017:  17  true
+00018:  17  return
+00019:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Union.js:15 ---
+;; function object[1] getUnion
+;; function metadata object[1] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Union.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  this
+00001:  22  getprop "dataRef"
+00006:  22  dup
+00007:  22  callprop "getDataByNameType"
+00012:  22  swap
+00013:  22  notearg
+00014:  22  name "xs"
+00019:  22  getprop "Constant_GameData_Union"
+00024:  22  notearg
+00025:  22  call 1
+00028:  22  setlocal 0
+00031:  22  pop
+00032:  23  getlocal 0
+00035:  23  return
+00036:  23  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Union.js:21 ---
+;; function object[2] create
+;; function metadata object[2] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Union.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  getarg 0
+00003:  30  getprop "play_id"
+00008:  30  setlocal 0
+00011:  30  pop
+00012:  31  name "xs"
+00017:  31  getprop "Profile"
+00022:  31  getprop "GameData"
+00027:  31  getprop "Union"
+00032:  31  setlocal 1
+00035:  31  pop
+00036:  32  name "xs"
+00041:  32  getprop "Utils"
+00046:  32  dup
+00047:  32  callprop "isSet"
+00052:  32  swap
+00053:  32  notearg
+00054:  32  getlocal 1
+00057:  32  getprop "_instance"
+00062:  32  notearg
+00063:  32  call 1
+00066:  32  or 85 (+19)
+00071:  32  pop
+00072:  32  getlocal 1
+00075:  32  newarray 0
+00079:  32  endinit
+00080:  32  setprop "_instance"
+00085:  32  pop
+00086:  34  getlocal 1
+00089:  34  getprop "_instance"
+00094:  34  getlocal 0
+00097:  34  getelem
+00098:  34  ifeq 116 (+18)
+00103:  35  getlocal 1
+00106:  35  getprop "_instance"
+00111:  35  getlocal 0
+00114:  35  getelem
+00115:  35  return
+00116:  38  getlocal 1
+00119:  38  undefined
+00120:  38  notearg
+00121:  38  new 0
+00124:  38  setlocal 2
+00127:  38  pop
+00128:  39  getlocal 2
+00131:  39  and 155 (+24)
+00136:  39  pop
+00137:  39  getlocal 2
+00140:  39  dup
+00141:  39  callprop "init"
+00146:  39  swap
+00147:  39  notearg
+00148:  39  getarg 0
+00151:  39  notearg
+00152:  39  call 1
+00155:  39  ifeq 180 (+25)
+00160:  40  getlocal 1
+00163:  40  getprop "_instance"
+00168:  40  getlocal 0
+00171:  40  getlocal 2
+00174:  40  setelem
+00175:  40  pop
+00176:  41  getlocal 2
+00179:  41  return
+00180:  43  name "xs"
+00185:  43  dup
+00186:  43  callprop "error"
+00191:  43  swap
+00192:  43  notearg
+00193:  43  string "xs.Profile.GameData.Union.create failed"
+00198:  43  notearg
+00199:  43  call 1
+00202:  43  pop
+00203:  44  null
+00204:  44  return
+00205:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Union.js:29 ---

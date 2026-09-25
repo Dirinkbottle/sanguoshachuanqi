@@ -1,0 +1,564 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/LoadingView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=48 object[0]
+;; FUNCTION-MAP kind=lambda offset=58 object[1]
+;; FUNCTION-MAP kind=lambda offset=68 object[2]
+;; FUNCTION-MAP kind=lambda offset=78 object[3]
+;; FUNCTION-MAP kind=lambda offset=88 object[4]
+;; FUNCTION-MAP kind=lambda offset=98 object[5]
+;; FUNCTION-MAP kind=lambda offset=108 object[6]
+;; FUNCTION-MAP kind=lambda offset=144 object[7]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Views"
+00010:  10  name "xs"
+00015:  10  getprop "Views"
+00020:  10  getprop "HungerLayer"
+00025:  10  dup
+00026:  10  callprop "extend"
+00031:  10  swap
+00032:  10  notearg
+00033:  10  newinit 1
+00038:  12  string "xs.Views.LoadingView"
+00043:  12  initprop "name"
+00048:  14  lambda (function () {
+    [sourceless code]
+})
+00053:  14  initprop "ctor"
+00058:  18  lambda (function () {
+    [sourceless code]
+})
+00063:  18  initprop "init"
+00068:  43  lambda (function () {
+    [sourceless code]
+})
+00073:  43  initprop "onEnter"
+00078:  49  lambda (function () {
+    [sourceless code]
+})
+00083:  49  initprop "play"
+00088:  53  lambda (function () {
+    [sourceless code]
+})
+00093:  53  initprop "playLoadingStartActions"
+00098:  79  lambda (function () {
+    [sourceless code]
+})
+00103:  79  initprop "dismissSelf"
+00108: 128  lambda (function () {
+    [sourceless code]
+})
+00113: 128  initprop "setBaseTouchPriority"
+00118: 128  endinit
+00119: 128  notearg
+00120: 128  call 1
+00123: 128  setprop "LoadingView"
+00128: 128  popv
+00129: 134  name "xs"
+00134: 134  getprop "Views"
+00139: 134  getprop "LoadingView"
+00144: 134  lambda (function () {
+    [sourceless code]
+})
+00149: 134  setprop "create"
+00154: 134  popv
+00155: 140  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  15  this
+00001:  15  dup
+00002:  15  callprop "_super"
+00007:  15  swap
+00008:  15  notearg
+00009:  15  call 0
+00012:  15  pop
+00013:  16  name "cc"
+00018:  16  dup
+00019:  16  callprop "associateWithNative"
+00024:  16  swap
+00025:  16  notearg
+00026:  16  this
+00027:  16  notearg
+00028:  16  name "xs"
+00033:  16  getprop "Views"
+00038:  16  getprop "HungerLayer"
+00043:  16  notearg
+00044:  16  call 2
+00047:  16  pop
+00048:  16  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:14 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=2
+;; local[0] visibleSize
+;; local[1] visibleOrigin
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:18 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  this
+00001:  19  dup
+00002:  19  callprop "_super"
+00007:  19  swap
+00008:  19  notearg
+00009:  19  call 0
+00012:  19  not
+00013:  19  ifeq 20 (+7)
+00018:  20  false
+00019:  20  return
+00020:  23  this
+00021:  23  zero
+00022:  23  setprop "m_baseTouchPriority"
+00027:  23  pop
+00028:  25  this
+00029:  25  dup
+00030:  25  callprop "setIsEatEvent"
+00035:  25  swap
+00036:  25  notearg
+00037:  25  true
+00038:  25  notearg
+00039:  25  call 1
+00042:  25  pop
+00043:  27  name "xs"
+00048:  27  getprop "director"
+00053:  27  dup
+00054:  27  callprop "getVisibleSize"
+00059:  27  swap
+00060:  27  notearg
+00061:  27  call 0
+00064:  27  setlocal 0
+00067:  27  pop
+00068:  28  name "xs"
+00073:  28  getprop "director"
+00078:  28  dup
+00079:  28  callprop "getVisibleOrigin"
+00084:  28  swap
+00085:  28  notearg
+00086:  28  call 0
+00089:  28  setlocal 1
+00092:  28  pop
+00093:  30  name "xs"
+00098:  30  getprop "Tools"
+00103:  30  getprop "UI"
+00108:  30  dup
+00109:  30  callprop "addTransparentBg"
+00114:  30  swap
+00115:  30  notearg
+00116:  30  this
+00117:  30  notearg
+00118:  30  call 1
+00121:  30  pop
+00122:  32  this
+00123:  32  name "xs"
+00128:  32  getprop "Views"
+00133:  32  getprop "Armature"
+00138:  32  getprop "AutoAudioArmature"
+00143:  32  dup
+00144:  32  callprop "create"
+00149:  32  swap
+00150:  32  notearg
+00151:  32  string "Arm_Loading"
+00156:  32  notearg
+00157:  32  call 1
+00160:  32  setprop "m_loadArm"
+00165:  32  pop
+00166:  33  name "xs"
+00171:  33  getprop "Utils"
+00176:  33  getprop "Node"
+00181:  33  dup
+00182:  33  callprop "attachNodes"
+00187:  33  swap
+00188:  33  notearg
+00189:  33  this
+00190:  33  notearg
+00191:  33  this
+00192:  33  getprop "m_loadArm"
+00197:  33  notearg
+00198:  33  newinit 1
+00203:  33  string "rb"
+00208:  33  initprop "desc"
+00213:  33  true
+00214:  33  initprop "sc"
+00219:  33  newinit 1
+00224:  33  int32 -222
+00229:  33  initprop "x"
+00234:  33  zero
+00235:  33  initprop "y"
+00240:  33  endinit
+00241:  33  initprop "offset"
+00246:  33  endinit
+00247:  33  notearg
+00248:  33  call 3
+00251:  33  pop
+00252:  35  this
+00253:  35  getprop "m_loadArm"
+00258:  35  dup
+00259:  35  callprop "setVisible"
+00264:  35  swap
+00265:  35  notearg
+00266:  35  false
+00267:  35  notearg
+00268:  35  call 1
+00271:  35  pop
+00272:  39  true
+00273:  39  return
+00274:  39  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:18 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  this
+00001:  44  dup
+00002:  44  callprop "_super"
+00007:  44  swap
+00008:  44  notearg
+00009:  44  call 0
+00012:  44  pop
+00013:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:43 ---
+;; function object[3] play
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  this
+00001:  50  getprop "m_loadArm"
+00006:  50  dup
+00007:  50  callprop "playAniById"
+00012:  50  swap
+00013:  50  notearg
+00014:  50  string "loading"
+00019:  50  notearg
+00020:  50  call 1
+00023:  50  pop
+00024:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:49 ---
+;; function object[4] playLoadingStartActions
+;; function metadata object[4] nargs=0 bindings=3
+;; local[0] beginAct
+;; local[1] loadAct
+;; local[2] actions
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:53 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  this
+00001:  56  getprop "m_loadArm"
+00006:  56  dup
+00007:  56  callprop "createPlayAction"
+00012:  56  swap
+00013:  56  notearg
+00014:  56  string "begin"
+00019:  56  notearg
+00020:  56  call 1
+00023:  56  setlocal 0
+00026:  56  pop
+00027:  57  this
+00028:  57  getprop "m_loadArm"
+00033:  57  dup
+00034:  57  callprop "createPlayAction"
+00039:  57  swap
+00040:  57  notearg
+00041:  57  string "loading"
+00046:  57  notearg
+00047:  57  newinit 1
+00052:  57  one
+00053:  57  initprop "speed"
+00058:  57  true
+00059:  57  initprop "loop"
+00064:  57  endinit
+00065:  57  notearg
+00066:  57  call 2
+00069:  57  setlocal 1
+00072:  57  pop
+00073:  59  this
+00074:  59  getprop "m_loadArm"
+00079:  59  dup
+00080:  59  callprop "setVisible"
+00085:  59  swap
+00086:  59  notearg
+00087:  59  false
+00088:  59  notearg
+00089:  59  call 1
+00092:  59  pop
+00093:  61  name "xs"
+00098:  61  getprop "Utils"
+00103:  61  getprop "Action"
+00108:  61  dup
+00109:  61  callprop "combineSequence"
+00114:  61  swap
+00115:  61  notearg
+00116:  61  newarray 2
+00120:  70  getlocal 0
+00123:  70  initelem_array 0
+00127:  71  getlocal 1
+00130:  71  initelem_array 1
+00134:  71  endinit
+00135:  71  notearg
+00136:  71  call 1
+00139:  71  setlocal 2
+00142:  71  pop
+00143:  74  name "xs"
+00148:  74  getprop "Scene"
+00153:  74  getprop "Mgr"
+00158:  74  dup
+00159:  74  callprop "getRunningScene"
+00164:  74  swap
+00165:  74  notearg
+00166:  74  call 0
+00169:  74  dup
+00170:  74  callprop "runAction"
+00175:  74  swap
+00176:  74  notearg
+00177:  74  getlocal 2
+00180:  74  notearg
+00181:  74  call 1
+00184:  74  pop
+00185:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:53 ---
+;; function object[5] dismissSelf
+;; function metadata object[5] nargs=0 bindings=2
+;; local[0] endAct
+;; local[1] actions
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=99 object[0]
+;; TRY-NOTE kind=catch start=1 length=180 stackDepth=0 target=181
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:79 ---
+loc   line  op
+----- ----  --
+main:
+00000:  84  try 181 (+181)
+00001:  85  this
+00002:  85  getprop "m_loadArm"
+00007:  85  dup
+00008:  85  callprop "createPlayAction"
+00013:  85  swap
+00014:  85  notearg
+00015:  85  string "end"
+00020:  85  notearg
+00021:  85  newinit 1
+00026:  85  one
+00027:  85  initprop "speed"
+00032:  85  false
+00033:  85  initprop "loop"
+00038:  85  endinit
+00039:  85  notearg
+00040:  85  call 2
+00043:  85  setlocal 0
+00046:  85  pop
+00047:  86  name "xs"
+00052:  86  getprop "Utils"
+00057:  86  getprop "Action"
+00062:  86  dup
+00063:  86  callprop "combineSequence"
+00068:  86  swap
+00069:  86  notearg
+00070:  86  newarray 2
+00074:  94  getlocal 0
+00077:  94  initelem_array 0
+00081:  95  name "cc"
+00086:  95  getprop "CallFunc"
+00091:  95  dup
+00092:  95  callprop "create"
+00097:  95  swap
+00098:  95  notearg
+00099:  96  lambda (function () {
+    [sourceless code]
+})
+00104:  96  dup
+00105:  96  callprop "bind"
+00110:  96  swap
+00111:  96  notearg
+00112: 114  this
+00113: 114  notearg
+00114: 114  call 1
+00117: 114  notearg
+00118: 114  call 1
+00121: 114  initelem_array 1
+00125: 114  endinit
+00126: 114  notearg
+00127: 114  call 1
+00130: 114  setlocal 1
+00133: 114  pop
+00134: 120  name "xs"
+00139: 120  getprop "Scene"
+00144: 120  getprop "Mgr"
+00149: 120  dup
+00150: 120  callprop "getRunningScene"
+00155: 120  swap
+00156: 120  notearg
+00157: 120  call 0
+00160: 120  dup
+00161: 120  callprop "runAction"
+00166: 120  swap
+00167: 120  notearg
+00168: 120  getlocal 1
+00171: 120  notearg
+00172: 120  call 1
+00175: 120  pop
+00176: 120  goto 221 (+45)
+00181: 122  enterblock depth 0 {e: 0}
+00186: 122  exception
+00187: 122  setlocal 2
+00190: 122  pop
+00191: 123  name "xs"
+00196: 123  dup
+00197: 123  callprop "warnException"
+00202: 123  swap
+00203: 123  notearg
+00204: 123  getlocal 2
+00207: 123  notearg
+00208: 123  call 1
+00211: 123  pop
+00212: 123  leaveblock 1
+00215: 123  goto 221 (+6)
+00220: 123  nop
+00221: 124  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:79 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=2
+;; local[0] scene
+;; local[1] loadingLayer
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:96 ---
+loc   line  op
+----- ----  --
+main:
+00000: 100  name "xs"
+00005: 100  getprop "Scene"
+00010: 100  getprop "Mgr"
+00015: 100  dup
+00016: 100  callprop "getRunningScene"
+00021: 100  swap
+00022: 100  notearg
+00023: 100  call 0
+00026: 100  setlocal 0
+00029: 100  pop
+00030: 101  getlocal 0
+00033: 101  null
+00034: 101  stricteq
+00035: 101  ifeq 65 (+30)
+00040: 102  name "xs"
+00045: 102  dup
+00046: 102  callprop "warn"
+00051: 102  swap
+00052: 102  notearg
+00053: 102  string "dismissSelf scene is null!"
+00058: 102  notearg
+00059: 102  call 1
+00062: 102  pop
+00063: 103  undefined
+00064: 103  return
+00065: 105  getlocal 0
+00068: 105  dup
+00069: 105  callprop "getChildByTag"
+00074: 105  swap
+00075: 105  notearg
+00076: 105  name "xs"
+00081: 105  getprop "Cfg"
+00086: 105  getprop "Scene"
+00091: 105  getprop "CommonScene"
+00096: 105  getprop "Loading"
+00101: 105  getprop "tag"
+00106: 105  notearg
+00107: 105  call 1
+00110: 105  setlocal 1
+00113: 105  pop
+00114: 107  getlocal 1
+00117: 107  ifeq 139 (+22)
+00122: 108  getlocal 1
+00125: 108  dup
+00126: 108  callprop "setVisible"
+00131: 108  swap
+00132: 108  notearg
+00133: 108  false
+00134: 108  notearg
+00135: 108  call 1
+00138: 108  pop
+00139: 110  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:96 ---
+;; function object[6] setBaseTouchPriority
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:128 ---
+loc   line  op
+----- ----  --
+main:
+00000: 129  this
+00001: 129  getarg 0
+00004: 129  setprop "m_baseTouchPriority"
+00009: 129  pop
+00010: 130  this
+00011: 130  dup
+00012: 130  callprop "setTouchPriority"
+00017: 130  swap
+00018: 130  notearg
+00019: 130  this
+00020: 130  getprop "m_baseTouchPriority"
+00025: 130  notearg
+00026: 130  call 1
+00029: 130  pop
+00030: 130  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:128 ---
+;; function object[7] create
+;; function metadata object[7] nargs=0 bindings=1
+;; local[0] layer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:134 ---
+loc   line  op
+----- ----  --
+main:
+00000: 135  name "xs"
+00005: 135  getprop "Views"
+00010: 135  getprop "LoadingView"
+00015: 135  undefined
+00016: 135  notearg
+00017: 135  new 0
+00020: 135  setlocal 0
+00023: 135  pop
+00024: 136  getlocal 0
+00027: 136  and 47 (+20)
+00032: 136  pop
+00033: 136  getlocal 0
+00036: 136  dup
+00037: 136  callprop "init"
+00042: 136  swap
+00043: 136  notearg
+00044: 136  call 0
+00047: 136  ifeq 56 (+9)
+00052: 137  getlocal 0
+00055: 137  return
+00056: 139  null
+00057: 139  return
+00058: 139  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/LoadingView.js:134 ---

@@ -1,0 +1,68 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Scene/headers.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=20 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Scene/headers.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Core"
+00010:   5  newinit 1
+00015:   6  newinit 1
+00020:   7  lambda (function () {
+    [sourceless code]
+})
+00025:   7  initprop "changeScene"
+00030:   7  endinit
+00031:   7  initprop "Mgr"
+00036:   7  endinit
+00037:   7  setprop "Scene"
+00042:   7  popv
+00043:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Scene/headers.js:1 ---
+;; function object[0] changeScene
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] scene
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Scene/headers.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xsc"
+00005:   8  getprop "director"
+00010:   8  dup
+00011:   8  callprop "getRunningScene"
+00016:   8  swap
+00017:   8  notearg
+00018:   8  call 0
+00021:   8  ifeq 57 (+36)
+00026:   9  name "xsc"
+00031:   9  getprop "director"
+00036:   9  dup
+00037:   9  callprop "replaceScene"
+00042:   9  swap
+00043:   9  notearg
+00044:   9  getarg 0
+00047:   9  notearg
+00048:   9  call 1
+00051:   9  pop
+00052:   9  goto 83 (+31)
+00057:  12  name "xsc"
+00062:  12  getprop "director"
+00067:  12  dup
+00068:  12  callprop "runWithScene"
+00073:  12  swap
+00074:  12  notearg
+00075:  12  getarg 0
+00078:  12  notearg
+00079:  12  call 1
+00082:  12  pop
+00083:  14  getarg 0
+00086:  14  return
+00087:  14  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Scene/headers.js:7 ---

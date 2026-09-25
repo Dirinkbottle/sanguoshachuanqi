@@ -1,0 +1,1162 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/ChatMessageManager.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=97 object[0]
+;; FUNCTION-MAP kind=lambda offset=107 object[1]
+;; FUNCTION-MAP kind=lambda offset=117 object[2]
+;; FUNCTION-MAP kind=lambda offset=127 object[3]
+;; FUNCTION-MAP kind=lambda offset=137 object[4]
+;; FUNCTION-MAP kind=lambda offset=147 object[5]
+;; FUNCTION-MAP kind=lambda offset=157 object[6]
+;; FUNCTION-MAP kind=lambda offset=167 object[7]
+;; FUNCTION-MAP kind=lambda offset=177 object[8]
+;; FUNCTION-MAP kind=lambda offset=187 object[9]
+;; FUNCTION-MAP kind=lambda offset=197 object[10]
+;; FUNCTION-MAP kind=lambda offset=207 object[11]
+;; FUNCTION-MAP kind=lambda offset=217 object[12]
+;; FUNCTION-MAP kind=lambda offset=275 object[13]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Models"
+00010:   5  name "cc"
+00015:   5  getprop "Class"
+00020:   5  dup
+00021:   5  callprop "extend"
+00026:   5  swap
+00027:   5  notearg
+00028:   5  newinit 1
+00033:   6  string "xs.Models.ChatMessageManager"
+00038:   6  initprop "name"
+00043:   7  newinit 1
+00048:   8  int8 40
+00050:   8  initprop "maxQueueCount"
+00055:   9  int8 5
+00057:   9  initprop "onceLanternShowTime"
+00062:  10  int8 30
+00064:  10  initprop "onceLanternRequestTime"
+00069:  11  int8 60
+00071:  11  initprop "onceLanternRequestTimeAdd"
+00076:  12  uint16 300
+00079:  12  initprop "onceLanternRequestTimeMax"
+00084:  13  int8 20
+00086:  13  initprop "requestLimit"
+00091:  13  endinit
+00092:  13  initprop "cfg"
+00097:  16  lambda (function () {
+    [sourceless code]
+})
+00102:  16  initprop "init"
+00107:  41  lambda (function () {
+    [sourceless code]
+})
+00112:  41  initprop "onExit"
+00117:  48  lambda (function () {
+    [sourceless code]
+})
+00122:  48  initprop "requestNewMsgFromServer"
+00127:  71  lambda (function () {
+    [sourceless code]
+})
+00132:  71  initprop "requestNewMsgFromServer_Success"
+00137: 132  lambda (function () {
+    [sourceless code]
+})
+00142: 132  initprop "checkQueueMax"
+00147: 150  lambda (function () {
+    [sourceless code]
+})
+00152: 150  initprop "removeAllQueue"
+00157: 158  lambda (function () {
+    [sourceless code]
+})
+00162: 158  initprop "showLanternMessage"
+00167: 166  lambda (function () {
+    [sourceless code]
+})
+00172: 166  initprop "getMessageAtIndex0"
+00177: 182  lambda (function () {
+    [sourceless code]
+})
+00182: 182  initprop "removeMessageAtIndex0"
+00187: 194  lambda (function () {
+    [sourceless code]
+})
+00192: 194  initprop "requestMsgFromLantern"
+00197: 200  lambda (function () {
+    [sourceless code]
+})
+00202: 200  initprop "_lanternCD_Over"
+00207: 205  lambda (function () {
+    [sourceless code]
+})
+00212: 205  initprop "getCanLanternRequest"
+00217: 209  lambda (function () {
+    [sourceless code]
+})
+00222: 209  initprop "getLastLanternMsg"
+00227: 209  endinit
+00228: 209  notearg
+00229: 209  call 1
+00232: 209  setprop "ChatMessageManager"
+00237: 209  popv
+00238: 218  name "xs"
+00243: 218  getprop "Models"
+00248: 218  getprop "ChatMessageManager"
+00253: 218  null
+00254: 218  setprop "_instance"
+00259: 218  popv
+00260: 219  name "xs"
+00265: 219  getprop "Models"
+00270: 219  getprop "ChatMessageManager"
+00275: 219  lambda (function () {
+    [sourceless code]
+})
+00280: 219  setprop "getInstance"
+00285: 219  popv
+00286: 225  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  this
+00001:  18  name "Array"
+00006:  18  undefined
+00007:  18  notearg
+00008:  18  new 0
+00011:  18  setprop "lanternMsgQueue"
+00016:  18  pop
+00017:  20  this
+00018:  20  name "Array"
+00023:  20  undefined
+00024:  20  notearg
+00025:  20  new 0
+00028:  20  setprop "worldMsgQueue"
+00033:  20  pop
+00034:  22  this
+00035:  22  name "Array"
+00040:  22  undefined
+00041:  22  notearg
+00042:  22  new 0
+00045:  22  setprop "guildMsgQueue"
+00050:  22  pop
+00051:  24  this
+00052:  24  name "Array"
+00057:  24  undefined
+00058:  24  notearg
+00059:  24  new 0
+00062:  24  setprop "privateMsgQueue"
+00067:  24  pop
+00068:  26  this
+00069:  26  name "Array"
+00074:  26  undefined
+00075:  26  notearg
+00076:  26  new 0
+00079:  26  setprop "duijiuMsgQueue"
+00084:  26  pop
+00085:  28  this
+00086:  28  true
+00087:  28  setprop "canLanternRequest"
+00092:  28  pop
+00093:  30  this
+00094:  30  string ""
+00099:  30  setprop "lastLanternMsg"
+00104:  30  pop
+00105:  32  this
+00106:  32  this
+00107:  32  getprop "cfg"
+00112:  32  getprop "onceLanternRequestTime"
+00117:  32  setprop "onceLanternRequestTime"
+00122:  32  pop
+00123:  35  name "xs"
+00128:  35  getprop "director"
+00133:  35  dup
+00134:  35  callprop "getScheduler"
+00139:  35  swap
+00140:  35  notearg
+00141:  35  call 0
+00144:  35  dup
+00145:  35  callprop "unscheduleCallbackForTarget"
+00150:  35  swap
+00151:  35  notearg
+00152:  35  this
+00153:  35  notearg
+00154:  35  this
+00155:  35  getprop "showLanternMessage"
+00160:  35  notearg
+00161:  35  call 2
+00164:  35  pop
+00165:  36  name "xs"
+00170:  36  getprop "director"
+00175:  36  dup
+00176:  36  callprop "getScheduler"
+00181:  36  swap
+00182:  36  notearg
+00183:  36  call 0
+00186:  36  dup
+00187:  36  callprop "scheduleCallbackForTarget"
+00192:  36  swap
+00193:  36  notearg
+00194:  36  this
+00195:  36  notearg
+00196:  36  this
+00197:  36  getprop "showLanternMessage"
+00202:  36  notearg
+00203:  36  this
+00204:  36  getprop "cfg"
+00209:  36  getprop "onceLanternShowTime"
+00214:  36  notearg
+00215:  36  name "cc"
+00220:  36  getprop "REPEAT_FOREVER"
+00225:  36  notearg
+00226:  36  call 4
+00229:  36  pop
+00230:  38  true
+00231:  38  return
+00232:  38  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:16 ---
+;; function object[1] onExit
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:41 ---
+loc   line  op
+----- ----  --
+main:
+00000:  42  name "xs"
+00005:  42  getprop "director"
+00010:  42  dup
+00011:  42  callprop "getScheduler"
+00016:  42  swap
+00017:  42  notearg
+00018:  42  call 0
+00021:  42  dup
+00022:  42  callprop "unscheduleCallbackForTarget"
+00027:  42  swap
+00028:  42  notearg
+00029:  42  this
+00030:  42  notearg
+00031:  42  this
+00032:  42  getprop "showLanternMessage"
+00037:  42  notearg
+00038:  42  call 2
+00041:  42  pop
+00042:  43  name "xs"
+00047:  43  getprop "director"
+00052:  43  dup
+00053:  43  callprop "getScheduler"
+00058:  43  swap
+00059:  43  notearg
+00060:  43  call 0
+00063:  43  dup
+00064:  43  callprop "unscheduleCallbackForTarget"
+00069:  43  swap
+00070:  43  notearg
+00071:  43  this
+00072:  43  notearg
+00073:  43  this
+00074:  43  getprop "_lanternCD_Over"
+00079:  43  notearg
+00080:  43  call 2
+00083:  43  pop
+00084:  44  this
+00085:  44  dup
+00086:  44  callprop "_super"
+00091:  44  swap
+00092:  44  notearg
+00093:  44  call 0
+00096:  44  pop
+00097:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:41 ---
+;; function object[2] requestNewMsgFromServer
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] isShowNow
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=140 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:48 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  name "xs"
+00005:  49  getprop "Views"
+00010:  49  getprop "Mgr"
+00015:  49  dup
+00016:  49  callprop "reqUrl"
+00021:  49  swap
+00022:  49  notearg
+00023:  50  name "xs"
+00028:  50  getprop "Cfg"
+00033:  50  getprop "Url"
+00038:  50  getprop "GetMessage"
+00043:  50  notearg
+00044:  51  newinit 1
+00049:  52  name "xs"
+00054:  52  getprop "Profile"
+00059:  52  getprop "GameData"
+00064:  52  getprop "Mgr"
+00069:  52  dup
+00070:  52  callprop "getInstance"
+00075:  52  swap
+00076:  52  notearg
+00077:  52  call 0
+00080:  52  getprop "Player"
+00085:  52  dup
+00086:  52  callprop "getPlayer"
+00091:  52  swap
+00092:  52  notearg
+00093:  52  call 0
+00096:  52  dup
+00097:  52  callprop "getPlayerId"
+00102:  52  swap
+00103:  52  notearg
+00104:  52  call 0
+00107:  52  initprop "user_id"
+00112:  53  this
+00113:  53  getprop "cfg"
+00118:  53  getprop "requestLimit"
+00123:  53  initprop "limit"
+00128:  54  string ""
+00133:  54  initprop "token"
+00138:  54  endinit
+00139:  54  notearg
+00140:  56  lambda (function () {
+    [sourceless code]
+})
+00145:  56  dup
+00146:  56  callprop "bind"
+00151:  56  swap
+00152:  56  notearg
+00153:  62  this
+00154:  62  notearg
+00155:  62  call 1
+00158:  62  notearg
+00159:  63  null
+00160:  63  notearg
+00161:  64  false
+00162:  64  notearg
+00163:  65  null
+00164:  65  notearg
+00165:  66  string "requestNewMsgFromServer"
+00170:  66  notearg
+00171:  66  call 7
+00174:  66  pop
+00175:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:48 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] resData
+;; local[0] _isShowNow
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  58  getarg 0
+00003:  58  ifeq 69 (+66)
+00008:  59  getaliasedvar "isShowNow" (hops = 0, slot = 2)
+00017:  59  null
+00018:  59  ne
+00019:  59  ifeq 38 (+19)
+00024:  59  getaliasedvar "isShowNow" (hops = 0, slot = 2)
+00033:  59  goto 39 (+6)
+00038:  59  false
+00039:  59  setlocal 0
+00042:  59  pop
+00043:  60  this
+00044:  60  dup
+00045:  60  callprop "requestNewMsgFromServer_Success"
+00050:  60  swap
+00051:  60  notearg
+00052:  60  getarg 0
+00055:  60  getprop "chat_msg"
+00060:  60  notearg
+00061:  60  getlocal 0
+00064:  60  notearg
+00065:  60  call 2
+00068:  60  pop
+00069:  61  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:56 ---
+;; function object[3] requestNewMsgFromServer_Success
+;; function metadata object[3] nargs=2 bindings=8
+;; arg[0] chat_msgArr
+;; arg[1] isShowNow
+;; local[0] tmpWorldArray
+;; local[1] tmpGuildArray
+;; local[2] tmpPrivateArray
+;; local[3] tmpDuijiuArray
+;; local[4] i
+;; local[5] chatModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:71 ---
+loc   line  op
+----- ----  --
+main:
+00000:  72  getarg 0
+00003:  72  null
+00004:  72  eq
+00005:  72  or 21 (+16)
+00010:  72  pop
+00011:  72  getarg 0
+00014:  72  length "length"
+00019:  72  zero
+00020:  72  eq
+00021:  72  ifeq 97 (+76)
+00026:  74  this
+00027:  74  dup
+00028:  74  getprop "onceLanternRequestTime"
+00033:  74  this
+00034:  74  getprop "cfg"
+00039:  74  getprop "onceLanternRequestTimeAdd"
+00044:  74  add
+00045:  74  setprop "onceLanternRequestTime"
+00050:  74  pop
+00051:  75  this
+00052:  75  getprop "onceLanternRequestTime"
+00057:  75  this
+00058:  75  getprop "cfg"
+00063:  75  getprop "onceLanternRequestTimeMax"
+00068:  75  gt
+00069:  75  ifeq 92 (+23)
+00074:  76  this
+00075:  76  this
+00076:  76  getprop "cfg"
+00081:  76  getprop "onceLanternRequestTimeMax"
+00086:  76  setprop "onceLanternRequestTime"
+00091:  76  pop
+00092:  76  goto 832 (+740)
+00097:  80  this
+00098:  80  this
+00099:  80  getprop "cfg"
+00104:  80  getprop "onceLanternRequestTime"
+00109:  80  setprop "onceLanternRequestTime"
+00114:  80  pop
+00115:  83  name "Array"
+00120:  83  undefined
+00121:  83  notearg
+00122:  83  new 0
+00125:  83  setlocal 0
+00128:  83  pop
+00129:  84  name "Array"
+00134:  84  undefined
+00135:  84  notearg
+00136:  84  new 0
+00139:  84  setlocal 1
+00142:  84  pop
+00143:  85  name "Array"
+00148:  85  undefined
+00149:  85  notearg
+00150:  85  new 0
+00153:  85  setlocal 2
+00156:  85  pop
+00157:  86  name "Array"
+00162:  86  undefined
+00163:  86  notearg
+00164:  86  new 0
+00167:  86  setlocal 3
+00170:  86  pop
+00171:  87  zero
+00172:  87  setlocal 4
+00175:  87  pop
+00176:  87  goto 385 (+209)
+00181:  88  loophead
+00182:  88  name "xs"
+00187:  88  getprop "Models"
+00192:  88  getprop "Chat"
+00197:  88  dup
+00198:  88  callprop "createWithData"
+00203:  88  swap
+00204:  88  notearg
+00205:  88  getarg 0
+00208:  88  getlocal 4
+00211:  88  getelem
+00212:  88  notearg
+00213:  88  call 1
+00216:  88  setlocal 5
+00219:  88  pop
+00220:  89  getlocal 5
+00223:  89  getprop "channel"
+00228:  89  tableswitch defaultOffset 137 low 1 high 7
+	1: 41
+	2: 65
+	3: 89
+	4: 41
+	5: 41
+	6: 0
+	7: 113
+00269:  93  getlocal 0
+00272:  93  dup
+00273:  93  callprop "push"
+00278:  93  swap
+00279:  93  notearg
+00280:  93  getlocal 5
+00283:  93  notearg
+00284:  93  call 1
+00287:  93  pop
+00288:  94  goto 370 (+82)
+00293:  96  getlocal 1
+00296:  96  dup
+00297:  96  callprop "push"
+00302:  96  swap
+00303:  96  notearg
+00304:  96  getlocal 5
+00307:  96  notearg
+00308:  96  call 1
+00311:  96  pop
+00312:  97  goto 370 (+58)
+00317:  99  getlocal 2
+00320:  99  dup
+00321:  99  callprop "push"
+00326:  99  swap
+00327:  99  notearg
+00328:  99  getlocal 5
+00331:  99  notearg
+00332:  99  call 1
+00335:  99  pop
+00336: 100  goto 370 (+34)
+00341: 102  getlocal 3
+00344: 102  dup
+00345: 102  callprop "push"
+00350: 102  swap
+00351: 102  notearg
+00352: 102  getlocal 5
+00355: 102  notearg
+00356: 102  call 1
+00359: 102  pop
+00360: 103  goto 370 (+10)
+00365: 105  goto 370 (+5)
+00370:  87  localinc 11
+00373:  87  getlocal 4
+00376:  87  pos
+00377:  87  dup
+00378:  87  one
+00379:  87  add
+00380:  87  setlocal 4
+00383:  87  pop
+00384:  87  pop
+00385:  87  loopentry
+00386:  87  getlocal 4
+00389:  87  getarg 0
+00392:  87  length "length"
+00397:  87  lt
+00398:  87  ifne 181 (-217)
+00403: 110  this
+00404: 110  this
+00405: 110  getprop "worldMsgQueue"
+00410: 110  dup
+00411: 110  callprop "concat"
+00416: 110  swap
+00417: 110  notearg
+00418: 110  getlocal 0
+00421: 110  notearg
+00422: 110  call 1
+00425: 110  setprop "worldMsgQueue"
+00430: 110  pop
+00431: 111  this
+00432: 111  this
+00433: 111  getprop "guildMsgQueue"
+00438: 111  dup
+00439: 111  callprop "concat"
+00444: 111  swap
+00445: 111  notearg
+00446: 111  getlocal 1
+00449: 111  notearg
+00450: 111  call 1
+00453: 111  setprop "guildMsgQueue"
+00458: 111  pop
+00459: 112  this
+00460: 112  this
+00461: 112  getprop "privateMsgQueue"
+00466: 112  dup
+00467: 112  callprop "concat"
+00472: 112  swap
+00473: 112  notearg
+00474: 112  getlocal 2
+00477: 112  notearg
+00478: 112  call 1
+00481: 112  setprop "privateMsgQueue"
+00486: 112  pop
+00487: 113  this
+00488: 113  this
+00489: 113  getprop "duijiuMsgQueue"
+00494: 113  dup
+00495: 113  callprop "concat"
+00500: 113  swap
+00501: 113  notearg
+00502: 113  getlocal 3
+00505: 113  notearg
+00506: 113  call 1
+00509: 113  setprop "duijiuMsgQueue"
+00514: 113  pop
+00515: 115  name "xs"
+00520: 115  getprop "Utils"
+00525: 115  getprop "Notify"
+00530: 115  dup
+00531: 115  callprop "postNotification"
+00536: 115  swap
+00537: 115  notearg
+00538: 115  name "xs"
+00543: 115  getprop "Constant_Notify_Event_WorldMessage"
+00548: 115  notearg
+00549: 115  newinit 1
+00554: 115  getlocal 0
+00557: 115  initprop "chatModelArray"
+00562: 115  getarg 1
+00565: 115  initprop "isShowNow"
+00570: 115  endinit
+00571: 115  notearg
+00572: 115  call 2
+00575: 115  pop
+00576: 116  name "xs"
+00581: 116  getprop "Utils"
+00586: 116  getprop "Notify"
+00591: 116  dup
+00592: 116  callprop "postNotification"
+00597: 116  swap
+00598: 116  notearg
+00599: 116  name "xs"
+00604: 116  getprop "Constant_Notify_Event_GuildMessage"
+00609: 116  notearg
+00610: 116  newinit 1
+00615: 116  getlocal 1
+00618: 116  initprop "chatModelArray"
+00623: 116  getarg 1
+00626: 116  initprop "isShowNow"
+00631: 116  endinit
+00632: 116  notearg
+00633: 116  call 2
+00636: 116  pop
+00637: 117  name "xs"
+00642: 117  getprop "Utils"
+00647: 117  getprop "Notify"
+00652: 117  dup
+00653: 117  callprop "postNotification"
+00658: 117  swap
+00659: 117  notearg
+00660: 117  name "xs"
+00665: 117  getprop "Constant_Notify_Event_PrivateMessage"
+00670: 117  notearg
+00671: 117  newinit 1
+00676: 117  getlocal 2
+00679: 117  initprop "chatModelArray"
+00684: 117  getarg 1
+00687: 117  initprop "isShowNow"
+00692: 117  endinit
+00693: 117  notearg
+00694: 117  call 2
+00697: 117  pop
+00698: 118  name "xs"
+00703: 118  getprop "Utils"
+00708: 118  getprop "Notify"
+00713: 118  dup
+00714: 118  callprop "postNotification"
+00719: 118  swap
+00720: 118  notearg
+00721: 118  name "xs"
+00726: 118  getprop "Constant_Notify_Event_DuijiuMessage"
+00731: 118  notearg
+00732: 118  newinit 1
+00737: 118  getlocal 3
+00740: 118  initprop "chatModelArray"
+00745: 118  getarg 1
+00748: 118  initprop "isShowNow"
+00753: 118  endinit
+00754: 118  notearg
+00755: 118  call 2
+00758: 118  pop
+00759: 121  name "xs"
+00764: 121  dup
+00765: 121  callprop "log"
+00770: 121  swap
+00771: 121  notearg
+00772: 121  string "chat list 7 :"
+00777: 121  getlocal 3
+00780: 121  length "length"
+00785: 121  add
+00786: 121  notearg
+00787: 121  call 1
+00790: 121  pop
+00791: 125  this
+00792: 125  this
+00793: 125  getprop "lanternMsgQueue"
+00798: 125  dup
+00799: 125  callprop "concat"
+00804: 125  swap
+00805: 125  notearg
+00806: 125  getlocal 0
+00809: 125  notearg
+00810: 125  call 1
+00813: 125  setprop "lanternMsgQueue"
+00818: 125  pop
+00819: 128  this
+00820: 128  dup
+00821: 128  callprop "checkQueueMax"
+00826: 128  swap
+00827: 128  notearg
+00828: 128  call 0
+00831: 128  pop
+00832: 129  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:71 ---
+;; function object[4] checkQueueMax
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:132 ---
+loc   line  op
+----- ----  --
+main:
+00000: 133  this
+00001: 133  getprop "worldMsgQueue"
+00006: 133  length "length"
+00011: 133  this
+00012: 133  getprop "cfg"
+00017: 133  getprop "maxQueueCount"
+00022: 133  gt
+00023: 133  ifeq 72 (+49)
+00028: 134  this
+00029: 134  getprop "worldMsgQueue"
+00034: 134  dup
+00035: 134  callprop "splice"
+00040: 134  swap
+00041: 134  notearg
+00042: 134  zero
+00043: 134  notearg
+00044: 134  this
+00045: 134  getprop "worldMsgQueue"
+00050: 134  length "length"
+00055: 134  this
+00056: 134  getprop "cfg"
+00061: 134  getprop "maxQueueCount"
+00066: 134  sub
+00067: 134  notearg
+00068: 134  call 2
+00071: 134  pop
+00072: 137  this
+00073: 137  getprop "guildMsgQueue"
+00078: 137  length "length"
+00083: 137  this
+00084: 137  getprop "cfg"
+00089: 137  getprop "maxQueueCount"
+00094: 137  gt
+00095: 137  ifeq 144 (+49)
+00100: 138  this
+00101: 138  getprop "guildMsgQueue"
+00106: 138  dup
+00107: 138  callprop "splice"
+00112: 138  swap
+00113: 138  notearg
+00114: 138  zero
+00115: 138  notearg
+00116: 138  this
+00117: 138  getprop "guildMsgQueue"
+00122: 138  length "length"
+00127: 138  this
+00128: 138  getprop "cfg"
+00133: 138  getprop "maxQueueCount"
+00138: 138  sub
+00139: 138  notearg
+00140: 138  call 2
+00143: 138  pop
+00144: 141  this
+00145: 141  getprop "privateMsgQueue"
+00150: 141  length "length"
+00155: 141  this
+00156: 141  getprop "cfg"
+00161: 141  getprop "maxQueueCount"
+00166: 141  gt
+00167: 141  ifeq 216 (+49)
+00172: 142  this
+00173: 142  getprop "privateMsgQueue"
+00178: 142  dup
+00179: 142  callprop "splice"
+00184: 142  swap
+00185: 142  notearg
+00186: 142  zero
+00187: 142  notearg
+00188: 142  this
+00189: 142  getprop "privateMsgQueue"
+00194: 142  length "length"
+00199: 142  this
+00200: 142  getprop "cfg"
+00205: 142  getprop "maxQueueCount"
+00210: 142  sub
+00211: 142  notearg
+00212: 142  call 2
+00215: 142  pop
+00216: 145  this
+00217: 145  getprop "duijiuMsgQueue"
+00222: 145  length "length"
+00227: 145  this
+00228: 145  getprop "cfg"
+00233: 145  getprop "maxQueueCount"
+00238: 145  gt
+00239: 145  ifeq 288 (+49)
+00244: 146  this
+00245: 146  getprop "duijiuMsgQueue"
+00250: 146  dup
+00251: 146  callprop "splice"
+00256: 146  swap
+00257: 146  notearg
+00258: 146  zero
+00259: 146  notearg
+00260: 146  this
+00261: 146  getprop "duijiuMsgQueue"
+00266: 146  length "length"
+00271: 146  this
+00272: 146  getprop "cfg"
+00277: 146  getprop "maxQueueCount"
+00282: 146  sub
+00283: 146  notearg
+00284: 146  call 2
+00287: 146  pop
+00288: 147  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:132 ---
+;; function object[5] removeAllQueue
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:150 ---
+loc   line  op
+----- ----  --
+main:
+00000: 151  this
+00001: 151  getprop "worldMsgQueue"
+00006: 151  dup
+00007: 151  callprop "splice"
+00012: 151  swap
+00013: 151  notearg
+00014: 151  zero
+00015: 151  notearg
+00016: 151  this
+00017: 151  getprop "worldMsgQueue"
+00022: 151  length "length"
+00027: 151  notearg
+00028: 151  call 2
+00031: 151  pop
+00032: 152  this
+00033: 152  getprop "guildMsgQueue"
+00038: 152  dup
+00039: 152  callprop "splice"
+00044: 152  swap
+00045: 152  notearg
+00046: 152  zero
+00047: 152  notearg
+00048: 152  this
+00049: 152  getprop "guildMsgQueue"
+00054: 152  length "length"
+00059: 152  notearg
+00060: 152  call 2
+00063: 152  pop
+00064: 153  this
+00065: 153  getprop "privateMsgQueue"
+00070: 153  dup
+00071: 153  callprop "splice"
+00076: 153  swap
+00077: 153  notearg
+00078: 153  zero
+00079: 153  notearg
+00080: 153  this
+00081: 153  getprop "privateMsgQueue"
+00086: 153  length "length"
+00091: 153  notearg
+00092: 153  call 2
+00095: 153  pop
+00096: 154  this
+00097: 154  getprop "duijiuMsgQueue"
+00102: 154  dup
+00103: 154  callprop "splice"
+00108: 154  swap
+00109: 154  notearg
+00110: 154  zero
+00111: 154  notearg
+00112: 154  this
+00113: 154  getprop "duijiuMsgQueue"
+00118: 154  length "length"
+00123: 154  notearg
+00124: 154  call 2
+00127: 154  pop
+00128: 154  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:150 ---
+;; function object[6] showLanternMessage
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:158 ---
+loc   line  op
+----- ----  --
+main:
+00000: 160  name "xs"
+00005: 160  getprop "Utils"
+00010: 160  getprop "Notify"
+00015: 160  dup
+00016: 160  callprop "postNotification"
+00021: 160  swap
+00022: 160  notearg
+00023: 160  name "xs"
+00028: 160  getprop "Constant_Notify_Event_LanternMessage"
+00033: 160  notearg
+00034: 160  this
+00035: 160  dup
+00036: 160  callprop "getMessageAtIndex0"
+00041: 160  swap
+00042: 160  notearg
+00043: 160  call 0
+00046: 160  notearg
+00047: 160  call 2
+00050: 160  pop
+00051: 162  this
+00052: 162  dup
+00053: 162  callprop "removeMessageAtIndex0"
+00058: 162  swap
+00059: 162  notearg
+00060: 162  call 0
+00063: 162  pop
+00064: 162  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:158 ---
+;; function object[7] getMessageAtIndex0
+;; function metadata object[7] nargs=0 bindings=2
+;; local[0] chatModel
+;; local[1] message
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:166 ---
+loc   line  op
+----- ----  --
+main:
+00000: 167  this
+00001: 167  getprop "lanternMsgQueue"
+00006: 167  length "length"
+00011: 167  zero
+00012: 167  gt
+00013: 167  ifeq 128 (+115)
+00018: 168  this
+00019: 168  getprop "lanternMsgQueue"
+00024: 168  zero
+00025: 168  getelem
+00026: 168  setlocal 0
+00029: 168  pop
+00030: 169  string "\u3010"
+00035: 169  getlocal 0
+00038: 169  getprop "channelName"
+00043: 169  add
+00044: 169  string "\u3011"
+00049: 169  add
+00050: 170  getlocal 0
+00053: 170  getprop "nickname"
+00058: 170  add
+00059: 171  getlocal 0
+00062: 171  getprop "channel"
+00067: 171  one
+00068: 171  eq
+00069: 171  ifeq 84 (+15)
+00074: 171  string ": "
+00079: 171  goto 89 (+10)
+00084: 171  string ""
+00089: 171  add
+00090: 172  getlocal 0
+00093: 172  getprop "message"
+00098: 172  add
+00099: 172  setlocal 1
+00102: 172  pop
+00103: 173  this
+00104: 173  string ""
+00109: 173  getlocal 1
+00112: 173  add
+00113: 173  setprop "lastLanternMsg"
+00118: 173  pop
+00119: 174  getlocal 1
+00122: 174  return
+00123: 174  goto 130 (+7)
+00128: 177  null
+00129: 177  return
+00130: 178  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:166 ---
+;; function object[8] removeMessageAtIndex0
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:182 ---
+loc   line  op
+----- ----  --
+main:
+00000: 183  this
+00001: 183  getprop "lanternMsgQueue"
+00006: 183  length "length"
+00011: 183  one
+00012: 183  ge
+00013: 183  ifeq 43 (+30)
+00018: 185  this
+00019: 185  getprop "lanternMsgQueue"
+00024: 185  dup
+00025: 185  callprop "shift"
+00030: 185  swap
+00031: 185  notearg
+00032: 185  call 0
+00035: 185  pop
+00036: 186  true
+00037: 186  return
+00038: 186  goto 45 (+7)
+00043: 189  false
+00044: 189  return
+00045: 190  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:182 ---
+;; function object[9] requestMsgFromLantern
+;; function metadata object[9] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:194 ---
+loc   line  op
+----- ----  --
+main:
+00000: 195  this
+00001: 195  dup
+00002: 195  callprop "requestNewMsgFromServer"
+00007: 195  swap
+00008: 195  notearg
+00009: 195  false
+00010: 195  notearg
+00011: 195  call 1
+00014: 195  pop
+00015: 196  this
+00016: 196  false
+00017: 196  setprop "canLanternRequest"
+00022: 196  pop
+00023: 197  name "xs"
+00028: 197  getprop "director"
+00033: 197  dup
+00034: 197  callprop "getScheduler"
+00039: 197  swap
+00040: 197  notearg
+00041: 197  call 0
+00044: 197  dup
+00045: 197  callprop "scheduleCallbackForTarget"
+00050: 197  swap
+00051: 197  notearg
+00052: 197  this
+00053: 197  notearg
+00054: 197  this
+00055: 197  getprop "_lanternCD_Over"
+00060: 197  notearg
+00061: 197  this
+00062: 197  getprop "onceLanternRequestTime"
+00067: 197  notearg
+00068: 197  name "cc"
+00073: 197  getprop "REPEAT_FOREVER"
+00078: 197  notearg
+00079: 197  call 4
+00082: 197  pop
+00083: 197  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:194 ---
+;; function object[10] _lanternCD_Over
+;; function metadata object[10] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:200 ---
+loc   line  op
+----- ----  --
+main:
+00000: 201  name "xs"
+00005: 201  getprop "director"
+00010: 201  dup
+00011: 201  callprop "getScheduler"
+00016: 201  swap
+00017: 201  notearg
+00018: 201  call 0
+00021: 201  dup
+00022: 201  callprop "unscheduleCallbackForTarget"
+00027: 201  swap
+00028: 201  notearg
+00029: 201  this
+00030: 201  notearg
+00031: 201  this
+00032: 201  getprop "_lanternCD_Over"
+00037: 201  notearg
+00038: 201  call 2
+00041: 201  pop
+00042: 202  this
+00043: 202  true
+00044: 202  setprop "canLanternRequest"
+00049: 202  pop
+00050: 202  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:200 ---
+;; function object[11] getCanLanternRequest
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:205 ---
+loc   line  op
+----- ----  --
+main:
+00000: 206  this
+00001: 206  getprop "canLanternRequest"
+00006: 206  return
+00007: 206  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:205 ---
+;; function object[12] getLastLanternMsg
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:209 ---
+loc   line  op
+----- ----  --
+main:
+00000: 210  this
+00001: 210  getprop "lastLanternMsg"
+00006: 210  return
+00007: 210  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:209 ---
+;; function object[13] getInstance
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:219 ---
+loc   line  op
+----- ----  --
+main:
+00000: 220  name "xs"
+00005: 220  getprop "Models"
+00010: 220  getprop "ChatMessageManager"
+00015: 220  getprop "_instance"
+00020: 220  null
+00021: 220  eq
+00022: 220  ifeq 100 (+78)
+00027: 221  name "xs"
+00032: 221  getprop "Models"
+00037: 221  getprop "ChatMessageManager"
+00042: 221  name "xs"
+00047: 221  getprop "Models"
+00052: 221  getprop "ChatMessageManager"
+00057: 221  undefined
+00058: 221  notearg
+00059: 221  new 0
+00062: 221  setprop "_instance"
+00067: 221  pop
+00068: 222  name "xs"
+00073: 222  getprop "Models"
+00078: 222  getprop "ChatMessageManager"
+00083: 222  getprop "_instance"
+00088: 222  dup
+00089: 222  callprop "init"
+00094: 222  swap
+00095: 222  notearg
+00096: 222  call 0
+00099: 222  pop
+00100: 224  name "xs"
+00105: 224  getprop "Models"
+00110: 224  getprop "ChatMessageManager"
+00115: 224  getprop "_instance"
+00120: 224  return
+00121: 224  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/ChatMessageManager.js:219 ---

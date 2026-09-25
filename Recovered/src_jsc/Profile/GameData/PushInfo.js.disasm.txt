@@ -1,0 +1,69 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/PushInfo.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=56 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/PushInfo.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Profile"
+00010:   8  getprop "GameData"
+00015:   8  name "xs"
+00020:   8  getprop "Profile"
+00025:   8  getprop "GameData"
+00030:   8  getprop "PushInfo"
+00035:   8  or 67 (+32)
+00040:   8  pop
+00041:   8  newinit 1
+00046:  10  string "xs.Profile.GameData.PushInfo"
+00051:  10  initprop "name"
+00056:  21  lambda (function () {
+    [sourceless code]
+})
+00061:  21  initprop "getInstance"
+00066:  21  endinit
+00067:  21  setprop "PushInfo"
+00072:  21  popv
+00073:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/PushInfo.js:1 ---
+;; function object[0] getInstance
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/PushInfo.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  name "xs"
+00005:  23  getprop "Profile"
+00010:  23  getprop "GameData"
+00015:  23  getprop "Mgr"
+00020:  23  dup
+00021:  23  callprop "getInstance"
+00026:  23  swap
+00027:  23  notearg
+00028:  23  call 0
+00031:  23  dup
+00032:  23  callprop "getDataRef"
+00037:  23  swap
+00038:  23  notearg
+00039:  23  call 0
+00042:  23  dup
+00043:  23  callprop "getDataByNameType"
+00048:  23  swap
+00049:  23  notearg
+00050:  23  name "xs"
+00055:  23  getprop "Constant_GameData_Push"
+00060:  23  notearg
+00061:  23  call 1
+00064:  23  setlocal 0
+00067:  23  pop
+00068:  25  getlocal 0
+00071:  25  return
+00072:  25  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/PushInfo.js:21 ---

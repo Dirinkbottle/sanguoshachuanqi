@@ -1,0 +1,298 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/Audio.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=76 object[0]
+;; FUNCTION-MAP kind=lambda offset=86 object[1]
+;; FUNCTION-MAP kind=lambda offset=96 object[2]
+;; FUNCTION-MAP kind=lambda offset=106 object[3]
+;; FUNCTION-MAP kind=lambda offset=116 object[4]
+;; FUNCTION-MAP kind=lambda offset=126 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Tools"
+00010:   8  name "xs"
+00015:   8  getprop "Tools"
+00020:   8  getprop "Audio"
+00025:   8  or 137 (+112)
+00030:   8  pop
+00031:   8  newinit 1
+00036:  10  name "xs"
+00041:  10  getprop "Debug"
+00046:  10  getprop "emptyFunc"
+00051:  10  initprop "log"
+00056:  11  name "xs"
+00061:  11  getprop "Debug"
+00066:  11  getprop "emptyFunc"
+00071:  11  initprop "dump"
+00076:  13  lambda (function () {
+    [sourceless code]
+})
+00081:  13  initprop "effect_frameEventCallFunc"
+00086:  25  lambda (function () {
+    [sourceless code]
+})
+00091:  25  initprop "effect_btnOnClickCallFunc"
+00096:  52  lambda (function () {
+    [sourceless code]
+})
+00101:  52  initprop "turnOn_Bg"
+00106:  61  lambda (function () {
+    [sourceless code]
+})
+00111:  61  initprop "turnOff_Bg"
+00116:  66  lambda (function () {
+    [sourceless code]
+})
+00121:  66  initprop "turnOn_Eff"
+00126:  72  lambda (function () {
+    [sourceless code]
+})
+00131:  72  initprop "turnOff_Eff"
+00136:  72  endinit
+00137:  72  setprop "Audio"
+00142:  72  popv
+00143:  77  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:1 ---
+;; function object[0] effect_frameEventCallFunc
+;; function metadata object[0] nargs=4 bindings=4
+;; arg[0] bone
+;; arg[1] frameEventName
+;; arg[2] originFrameIndex
+;; arg[3] currentFrameIndex
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  name "xs"
+00005:  16  getprop "audio"
+00010:  16  dup
+00011:  16  callprop "playEffectByFile"
+00016:  16  swap
+00017:  16  notearg
+00018:  16  getarg 1
+00021:  16  string ".mp3"
+00026:  16  add
+00027:  16  notearg
+00028:  16  call 1
+00031:  16  pop
+00032:  16  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:13 ---
+;; function object[1] effect_btnOnClickCallFunc
+;; function metadata object[1] nargs=0 bindings=2
+;; local[0] _type
+;; local[1] _idEff
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  26  this
+00001:  26  getprop "audioId"
+00006:  26  setlocal 0
+00009:  26  pop
+00010:  30  null
+00011:  30  setlocal 1
+00014:  30  pop
+00015:  32  getlocal 0
+00018:  32  name "xs"
+00023:  32  getprop "Constant_AudioType_Cancel"
+00028:  32  stricteq
+00029:  32  ifeq 48 (+19)
+00034:  33  string "Audio_EFF_Cancel"
+00039:  33  setlocal 1
+00042:  33  pop
+00043:  33  goto 123 (+80)
+00048:  35  getlocal 0
+00051:  35  name "xs"
+00056:  35  getprop "Constant_AudioType_Normal"
+00061:  35  stricteq
+00062:  35  ifeq 81 (+19)
+00067:  36  string "Audio_EFF_Confirm"
+00072:  36  setlocal 1
+00075:  36  pop
+00076:  36  goto 123 (+47)
+00081:  38  getlocal 0
+00084:  38  name "xs"
+00089:  38  getprop "Constant_AudioType_Shortcut"
+00094:  38  stricteq
+00095:  38  ifeq 114 (+19)
+00100:  39  string "Audio_EFF_Shortcut"
+00105:  39  setlocal 1
+00108:  39  pop
+00109:  39  goto 123 (+14)
+00114:  42  string "Audio_EFF_Confirm"
+00119:  42  setlocal 1
+00122:  42  pop
+00123:  47  getlocal 1
+00126:  47  null
+00127:  47  strictne
+00128:  47  ifeq 161 (+33)
+00133:  48  name "xs"
+00138:  48  getprop "audio"
+00143:  48  dup
+00144:  48  callprop "playEffect"
+00149:  48  swap
+00150:  48  notearg
+00151:  48  getlocal 1
+00154:  48  notearg
+00155:  48  false
+00156:  48  notearg
+00157:  48  call 2
+00160:  48  pop
+00161:  49  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:25 ---
+;; function object[2] turnOn_Bg
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:52 ---
+loc   line  op
+----- ----  --
+main:
+00000:  54  this
+00001:  54  dup
+00002:  54  callprop "log"
+00007:  54  swap
+00008:  54  notearg
+00009:  54  string "turnOn_Bg"
+00014:  54  notearg
+00015:  54  string "turnOn_Bg"
+00020:  54  notearg
+00021:  54  call 2
+00024:  54  pop
+00025:  55  name "xs"
+00030:  55  getprop "Profile"
+00035:  55  getprop "UserCfg"
+00040:  55  dup
+00041:  55  callprop "setVoiceOn_Bg"
+00046:  55  swap
+00047:  55  notearg
+00048:  55  true
+00049:  55  notearg
+00050:  55  call 1
+00053:  55  pop
+00054:  56  name "xs"
+00059:  56  getprop "audio"
+00064:  56  dup
+00065:  56  callprop "turnOn_Bg"
+00070:  56  swap
+00071:  56  notearg
+00072:  56  call 0
+00075:  56  pop
+00076:  58  name "xs"
+00081:  58  getprop "audio"
+00086:  58  dup
+00087:  58  callprop "playLastMusic"
+00092:  58  swap
+00093:  58  notearg
+00094:  58  call 0
+00097:  58  pop
+00098:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:52 ---
+;; function object[3] turnOff_Bg
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:61 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  name "xs"
+00005:  62  getprop "Profile"
+00010:  62  getprop "UserCfg"
+00015:  62  dup
+00016:  62  callprop "setVoiceOn_Bg"
+00021:  62  swap
+00022:  62  notearg
+00023:  62  false
+00024:  62  notearg
+00025:  62  call 1
+00028:  62  pop
+00029:  63  name "xs"
+00034:  63  getprop "audio"
+00039:  63  dup
+00040:  63  callprop "turnOff_Bg"
+00045:  63  swap
+00046:  63  notearg
+00047:  63  call 0
+00050:  63  pop
+00051:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:61 ---
+;; function object[4] turnOn_Eff
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:66 ---
+loc   line  op
+----- ----  --
+main:
+00000:  67  this
+00001:  67  dup
+00002:  67  callprop "log"
+00007:  67  swap
+00008:  67  notearg
+00009:  67  string "turnOn_Eff"
+00014:  67  notearg
+00015:  67  string "turnOn_Eff"
+00020:  67  notearg
+00021:  67  call 2
+00024:  67  pop
+00025:  68  name "xs"
+00030:  68  getprop "Profile"
+00035:  68  getprop "UserCfg"
+00040:  68  dup
+00041:  68  callprop "setVoiceOn_Eff"
+00046:  68  swap
+00047:  68  notearg
+00048:  68  true
+00049:  68  notearg
+00050:  68  call 1
+00053:  68  pop
+00054:  69  name "xs"
+00059:  69  getprop "audio"
+00064:  69  dup
+00065:  69  callprop "turnOn_Eff"
+00070:  69  swap
+00071:  69  notearg
+00072:  69  call 0
+00075:  69  pop
+00076:  69  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:66 ---
+;; function object[5] turnOff_Eff
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:72 ---
+loc   line  op
+----- ----  --
+main:
+00000:  73  name "xs"
+00005:  73  getprop "Profile"
+00010:  73  getprop "UserCfg"
+00015:  73  dup
+00016:  73  callprop "setVoiceOn_Eff"
+00021:  73  swap
+00022:  73  notearg
+00023:  73  false
+00024:  73  notearg
+00025:  73  call 1
+00028:  73  pop
+00029:  74  name "xs"
+00034:  74  getprop "audio"
+00039:  74  dup
+00040:  74  callprop "turnOff_Eff"
+00045:  74  swap
+00046:  74  notearg
+00047:  74  call 0
+00050:  74  pop
+00051:  74  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Audio.js:72 ---

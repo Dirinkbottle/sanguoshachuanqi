@@ -1,0 +1,1991 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/HulaoBattle/HulaoBattleMainView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=483 object[0]
+;; FUNCTION-MAP kind=lambda offset=493 object[1]
+;; FUNCTION-MAP kind=lambda offset=503 object[2]
+;; FUNCTION-MAP kind=lambda offset=513 object[3]
+;; FUNCTION-MAP kind=lambda offset=523 object[4]
+;; FUNCTION-MAP kind=lambda offset=533 object[5]
+;; FUNCTION-MAP kind=lambda offset=543 object[6]
+;; FUNCTION-MAP kind=lambda offset=553 object[7]
+;; FUNCTION-MAP kind=lambda offset=563 object[8]
+;; FUNCTION-MAP kind=lambda offset=573 object[9]
+;; FUNCTION-MAP kind=lambda offset=583 object[10]
+;; FUNCTION-MAP kind=lambda offset=593 object[11]
+;; FUNCTION-MAP kind=lambda offset=603 object[12]
+;; FUNCTION-MAP kind=lambda offset=613 object[13]
+;; FUNCTION-MAP kind=lambda offset=623 object[14]
+;; FUNCTION-MAP kind=lambda offset=659 object[15]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Views"
+00010:   4  name "cc"
+00015:   4  getprop "Layer"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  string "xs.Views.HulaoBattleMainView"
+00038:   5  initprop "name"
+00043:   7  newarray 9
+00047:   8  newinit 1
+00052:   8  one
+00053:   8  initprop "tag"
+00058:   8  string "ls"
+00063:   8  initprop "type"
+00068:   8  string "m_title_1"
+00073:   8  initprop "name"
+00078:   8  string "LS_danyao"
+00083:   8  initprop "id"
+00088:   8  string "HulaoBattle_title1"
+00093:   8  initprop "stringId"
+00098:   8  endinit
+00099:   8  initelem_array 0
+00103:   9  newinit 1
+00108:   9  int8 2
+00110:   9  initprop "tag"
+00115:   9  string "ls"
+00120:   9  initprop "type"
+00125:   9  string "m_title_2"
+00130:   9  initprop "name"
+00135:   9  string "LS_zhanchang_zi1"
+00140:   9  initprop "id"
+00145:   9  string "HulaoBattle_title2"
+00150:   9  initprop "stringId"
+00155:   9  endinit
+00156:   9  initelem_array 1
+00160:  10  newinit 1
+00165:  10  int8 3
+00167:  10  initprop "tag"
+00172:  10  string "ls"
+00177:  10  initprop "type"
+00182:  10  string "m_content_1"
+00187:  10  initprop "name"
+00192:  10  string "LS_mainUI3"
+00197:  10  initprop "id"
+00202:  10  string "HulaoBattle_content1"
+00207:  10  initprop "stringId"
+00212:  10  endinit
+00213:  10  initelem_array 2
+00217:  11  newinit 1
+00222:  11  int8 4
+00224:  11  initprop "tag"
+00229:  11  string "ls"
+00234:  11  initprop "type"
+00239:  11  string "m_title_3"
+00244:  11  initprop "name"
+00249:  11  string "LS_danyao"
+00254:  11  initprop "id"
+00259:  11  string "HulaoBattle_title3"
+00264:  11  initprop "stringId"
+00269:  11  endinit
+00270:  11  initelem_array 3
+00274:  12  newinit 1
+00279:  12  int8 5
+00281:  12  initprop "tag"
+00286:  12  string "ls"
+00291:  12  initprop "type"
+00296:  12  string "m_tips"
+00301:  12  initprop "name"
+00306:  12  string "LS_fightUI1"
+00311:  12  initprop "id"
+00316:  12  string "HulaoBattle_tips"
+00321:  12  initprop "stringId"
+00326:  12  endinit
+00327:  12  initelem_array 4
+00331:  14  newinit 1
+00336:  14  int8 20
+00338:  14  initprop "tag"
+00343:  14  string "btn"
+00348:  14  initprop "type"
+00353:  14  string "m_battleBtn"
+00358:  14  initprop "name"
+00363:  14  string "Btn_btn1"
+00368:  14  initprop "id"
+00373:  14  endinit
+00374:  14  initelem_array 5
+00378:  15  newinit 1
+00383:  15  int8 11
+00385:  15  initprop "tag"
+00390:  15  string "m_icon_1"
+00395:  15  initprop "name"
+00400:  15  endinit
+00401:  15  initelem_array 6
+00405:  16  newinit 1
+00410:  16  int8 12
+00412:  16  initprop "tag"
+00417:  16  string "m_icon_2"
+00422:  16  initprop "name"
+00427:  16  endinit
+00428:  16  initelem_array 7
+00432:  17  newinit 1
+00437:  17  int8 13
+00439:  17  initprop "tag"
+00444:  17  string "m_icon_3"
+00449:  17  initprop "name"
+00454:  17  endinit
+00455:  17  initelem_array 8
+00459:  17  endinit
+00460:  17  initprop "ccbCfg"
+00465:  19  newinit 1
+00470:  20  int8 12
+00472:  20  initprop "GemLightZOrder"
+00477:  20  endinit
+00478:  20  initprop "cfg"
+00483:  22  lambda (function () {
+    [sourceless code]
+})
+00488:  22  initprop "ctor"
+00493:  27  lambda (function () {
+    [sourceless code]
+})
+00498:  27  initprop "init"
+00503:  58  lambda (function () {
+    [sourceless code]
+})
+00508:  58  initprop "setHulaoData"
+00513: 114  lambda (function () {
+    [sourceless code]
+})
+00518: 114  initprop "goToGarrisonLayoutDialog"
+00523: 143  lambda (function () {
+    [sourceless code]
+})
+00528: 143  initprop "getTeamGeneralsData"
+00533: 167  lambda (function () {
+    [sourceless code]
+})
+00538: 167  initprop "showRewardAnimation"
+00543: 178  lambda (function () {
+    [sourceless code]
+})
+00548: 178  initprop "getHulaoBattleReward"
+00553: 201  lambda (function () {
+    [sourceless code]
+})
+00558: 201  initprop "setRewardData"
+00563: 215  lambda (function () {
+    [sourceless code]
+})
+00568: 215  initprop "setExchangeIcon"
+00573: 240  lambda (function () {
+    [sourceless code]
+})
+00578: 240  initprop "packeageDetailCallback"
+00583: 245  lambda (function () {
+    [sourceless code]
+})
+00588: 245  initprop "_amendCcbiPos"
+00593: 260  lambda (function () {
+    [sourceless code]
+})
+00598: 260  initprop "_ip4sPosTransform"
+00603: 268  lambda (function () {
+    [sourceless code]
+})
+00608: 268  initprop "onEnter"
+00613: 271  lambda (function () {
+    [sourceless code]
+})
+00618: 271  initprop "onExit"
+00623: 274  lambda (function () {
+    [sourceless code]
+})
+00628: 274  initprop "setBaseTouchPriority"
+00633: 274  endinit
+00634: 274  notearg
+00635: 274  call 1
+00638: 274  setprop "HulaoBattleMainView"
+00643: 274  popv
+00644: 282  name "xs"
+00649: 282  getprop "Views"
+00654: 282  getprop "HulaoBattleMainView"
+00659: 282  lambda (function () {
+    [sourceless code]
+})
+00664: 282  setprop "create"
+00669: 282  popv
+00670: 289  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:22 ---
+loc   line  op
+----- ----  --
+main:
+00000:  23  this
+00001:  23  dup
+00002:  23  callprop "_super"
+00007:  23  swap
+00008:  23  notearg
+00009:  23  call 0
+00012:  23  pop
+00013:  24  name "cc"
+00018:  24  dup
+00019:  24  callprop "associateWithNative"
+00024:  24  swap
+00025:  24  notearg
+00026:  24  this
+00027:  24  notearg
+00028:  24  name "cc"
+00033:  24  getprop "Layer"
+00038:  24  notearg
+00039:  24  call 2
+00042:  24  pop
+00043:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:22 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] visibleSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:27 ---
+loc   line  op
+----- ----  --
+main:
+00000:  28  name "xs"
+00005:  28  dup
+00006:  28  callprop "log_zhz"
+00011:  28  swap
+00012:  28  notearg
+00013:  28  string "HulaoBattleMainView-data"
+00018:  28  notearg
+00019:  28  getarg 0
+00022:  28  notearg
+00023:  28  call 2
+00026:  28  pop
+00027:  29  this
+00028:  29  dup
+00029:  29  callprop "_super"
+00034:  29  swap
+00035:  29  notearg
+00036:  29  call 0
+00039:  29  not
+00040:  29  ifeq 47 (+7)
+00045:  30  false
+00046:  30  return
+00047:  32  this
+00048:  32  null
+00049:  32  setprop "m_ccbNode"
+00054:  32  pop
+00055:  33  this
+00056:  33  null
+00057:  33  setprop "m_battleBtn"
+00062:  33  pop
+00063:  34  this
+00064:  34  null
+00065:  34  setprop "m_title_1"
+00070:  34  pop
+00071:  35  this
+00072:  35  null
+00073:  35  setprop "m_title_3"
+00078:  35  pop
+00079:  36  this
+00080:  36  null
+00081:  36  setprop "m_gemLightArm"
+00086:  36  pop
+00087:  37  name "xs"
+00092:  37  getprop "director"
+00097:  37  dup
+00098:  37  callprop "getVisibleSize"
+00103:  37  swap
+00104:  37  notearg
+00105:  37  call 0
+00108:  37  setlocal 0
+00111:  37  pop
+00112:  39  this
+00113:  39  name "xs"
+00118:  39  getprop "ccb_reader"
+00123:  39  dup
+00124:  39  callprop "load"
+00129:  39  swap
+00130:  39  notearg
+00131:  39  name "xs"
+00136:  39  getprop "Cfg"
+00141:  39  getprop "CCBI"
+00146:  39  getprop "HulaoBattleMainView"
+00151:  39  notearg
+00152:  39  call 1
+00155:  39  setprop "m_ccbNode"
+00160:  39  pop
+00161:  41  this
+00162:  41  getprop "m_ccbNode"
+00167:  41  dup
+00168:  41  callprop "setContentSize"
+00173:  41  swap
+00174:  41  notearg
+00175:  41  getlocal 0
+00178:  41  notearg
+00179:  41  call 1
+00182:  41  pop
+00183:  43  name "xs"
+00188:  43  getprop "Utils"
+00193:  43  getprop "UI"
+00198:  43  dup
+00199:  43  callprop "replaceCcbByCfg"
+00204:  43  swap
+00205:  43  notearg
+00206:  43  this
+00207:  43  getprop "m_ccbNode"
+00212:  43  notearg
+00213:  43  this
+00214:  43  getprop "ccbCfg"
+00219:  43  notearg
+00220:  43  this
+00221:  43  notearg
+00222:  43  call 3
+00225:  43  pop
+00226:  44  name "xs"
+00231:  44  getprop "Utils"
+00236:  44  getprop "Node"
+00241:  44  dup
+00242:  44  callprop "attachNodes"
+00247:  44  swap
+00248:  44  notearg
+00249:  44  this
+00250:  44  notearg
+00251:  44  this
+00252:  44  getprop "m_ccbNode"
+00257:  44  notearg
+00258:  44  newinit 1
+00263:  44  string "lb"
+00268:  44  initprop "desc"
+00273:  44  name "cc"
+00278:  44  dup
+00279:  44  callprop "p"
+00284:  44  swap
+00285:  44  notearg
+00286:  44  zero
+00287:  44  notearg
+00288:  44  zero
+00289:  44  notearg
+00290:  44  call 2
+00293:  44  initprop "offset"
+00298:  44  endinit
+00299:  44  notearg
+00300:  44  call 3
+00303:  44  pop
+00304:  48  this
+00305:  48  name "xs"
+00310:  48  getprop "Tools"
+00315:  48  getprop "Views"
+00320:  48  getprop "Btn"
+00325:  48  dup
+00326:  48  callprop "createInstruction"
+00331:  48  swap
+00332:  48  notearg
+00333:  48  string "HuLaoBattle_Instruction"
+00338:  48  notearg
+00339:  48  call 1
+00342:  48  setprop "m_instructionBtn"
+00347:  48  pop
+00348:  49  name "xs"
+00353:  49  getprop "Utils"
+00358:  49  getprop "Node"
+00363:  49  dup
+00364:  49  callprop "attachNodes"
+00369:  49  swap
+00370:  49  notearg
+00371:  49  this
+00372:  49  notearg
+00373:  49  this
+00374:  49  getprop "m_instructionBtn"
+00379:  49  notearg
+00380:  49  newinit 1
+00385:  49  string "rt"
+00390:  49  initprop "desc"
+00395:  49  name "cc"
+00400:  49  dup
+00401:  49  callprop "p"
+00406:  49  swap
+00407:  49  notearg
+00408:  49  name "xs"
+00413:  49  getprop "Views"
+00418:  49  getprop "MainMenuView"
+00423:  49  getprop "Width"
+00428:  49  neg
+00429:  49  int8 60
+00431:  49  sub
+00432:  49  notearg
+00433:  49  int8 -100
+00435:  49  notearg
+00436:  49  call 2
+00439:  49  initprop "offset"
+00444:  49  true
+00445:  49  initprop "sc"
+00450:  49  endinit
+00451:  49  notearg
+00452:  49  null
+00453:  49  notearg
+00454:  49  call 4
+00457:  49  pop
+00458:  52  this
+00459:  52  dup
+00460:  52  callprop "_amendCcbiPos"
+00465:  52  swap
+00466:  52  notearg
+00467:  52  this
+00468:  52  getprop "m_ccbNode"
+00473:  52  notearg
+00474:  52  call 1
+00477:  52  pop
+00478:  54  this
+00479:  54  dup
+00480:  54  callprop "setHulaoData"
+00485:  54  swap
+00486:  54  notearg
+00487:  54  getarg 0
+00490:  54  notearg
+00491:  54  call 1
+00494:  54  pop
+00495:  56  true
+00496:  56  return
+00497:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:27 ---
+;; function object[2] setHulaoData
+;; function metadata object[2] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] label
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=204 object[0]
+;; FUNCTION-MAP kind=lambda offset=337 object[1]
+;; FUNCTION-MAP kind=lambda offset=450 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  this
+00001:  59  getprop "m_gemLightArm"
+00006:  59  ifeq 37 (+31)
+00011:  60  this
+00012:  60  getprop "m_gemLightArm"
+00017:  60  dup
+00018:  60  callprop "removeFromParent"
+00023:  60  swap
+00024:  60  notearg
+00025:  60  call 0
+00028:  60  pop
+00029:  61  this
+00030:  61  null
+00031:  61  setprop "m_gemLightArm"
+00036:  61  pop
+00037:  64  this
+00038:  64  callname "parseInt"
+00043:  64  implicitthis "parseInt"
+00048:  64  notearg
+00049:  64  getarg 0
+00052:  64  getprop "stage"
+00057:  64  notearg
+00058:  64  call 1
+00061:  64  setprop "m_stage"
+00066:  64  pop
+00067:  66  this
+00068:  66  callname "parseInt"
+00073:  66  implicitthis "parseInt"
+00078:  66  notearg
+00079:  66  getarg 0
+00082:  66  getprop "mode"
+00087:  66  notearg
+00088:  66  call 1
+00091:  66  setprop "m_mode"
+00096:  66  pop
+00097:  68  this
+00098:  68  callname "parseInt"
+00103:  68  implicitthis "parseInt"
+00108:  68  notearg
+00109:  68  getarg 0
+00112:  68  getprop "status"
+00117:  68  notearg
+00118:  68  call 1
+00121:  68  setprop "m_status"
+00126:  68  pop
+00127:  70  this
+00128:  70  getprop "m_mode"
+00133:  70  not
+00134:  70  ifeq 232 (+98)
+00139:  71  this
+00140:  71  getprop "m_battleBtn"
+00145:  71  dup
+00146:  71  callprop "setString"
+00151:  71  swap
+00152:  71  notearg
+00153:  71  name "xs"
+00158:  71  getprop "Tools"
+00163:  71  getprop "String"
+00168:  71  dup
+00169:  71  callprop "createString"
+00174:  71  swap
+00175:  71  notearg
+00176:  71  string "HulaoBattle_btn_battle"
+00181:  71  notearg
+00182:  71  call 1
+00185:  71  notearg
+00186:  71  call 1
+00189:  71  pop
+00190:  72  this
+00191:  72  getprop "m_battleBtn"
+00196:  72  dup
+00197:  72  callprop "setOnClickCallBack"
+00202:  72  swap
+00203:  72  notearg
+00204:  72  lambda (function () {
+    [sourceless code]
+})
+00209:  72  dup
+00210:  72  callprop "bind"
+00215:  72  swap
+00216:  72  notearg
+00217:  74  this
+00218:  74  notearg
+00219:  74  call 1
+00222:  74  notearg
+00223:  74  call 1
+00226:  74  pop
+00227:  74  goto 643 (+416)
+00232:  76  this
+00233:  76  getprop "m_status"
+00238:  76  tableswitch defaultOffset 405 low 0 high 3
+	0: 29
+	1: 34
+	2: 127
+	3: 240
+00267:  78  goto 643 (+376)
+00272:  80  this
+00273:  80  getprop "m_battleBtn"
+00278:  80  dup
+00279:  80  callprop "setString"
+00284:  80  swap
+00285:  80  notearg
+00286:  80  name "xs"
+00291:  80  getprop "Tools"
+00296:  80  getprop "String"
+00301:  80  dup
+00302:  80  callprop "createString"
+00307:  80  swap
+00308:  80  notearg
+00309:  80  string "HulaoBattle_btn_battle"
+00314:  80  notearg
+00315:  80  call 1
+00318:  80  notearg
+00319:  80  call 1
+00322:  80  pop
+00323:  81  this
+00324:  81  getprop "m_battleBtn"
+00329:  81  dup
+00330:  81  callprop "setOnClickCallBack"
+00335:  81  swap
+00336:  81  notearg
+00337:  81  lambda (function () {
+    [sourceless code]
+})
+00342:  81  dup
+00343:  81  callprop "bind"
+00348:  81  swap
+00349:  81  notearg
+00350:  83  this
+00351:  83  notearg
+00352:  83  call 1
+00355:  83  notearg
+00356:  83  call 1
+00359:  83  pop
+00360:  84  goto 643 (+283)
+00365:  86  this
+00366:  86  getprop "m_battleBtn"
+00371:  86  dup
+00372:  86  callprop "setString"
+00377:  86  swap
+00378:  86  notearg
+00379:  86  name "xs"
+00384:  86  getprop "Tools"
+00389:  86  getprop "String"
+00394:  86  dup
+00395:  86  callprop "createString"
+00400:  86  swap
+00401:  86  notearg
+00402:  86  string "HulaoBattle_btn_reward"
+00407:  86  notearg
+00408:  86  call 1
+00411:  86  notearg
+00412:  86  call 1
+00415:  86  pop
+00416:  87  this
+00417:  87  dup
+00418:  87  callprop "showRewardAnimation"
+00423:  87  swap
+00424:  87  notearg
+00425:  87  this
+00426:  87  getprop "m_mode"
+00431:  87  notearg
+00432:  87  call 1
+00435:  87  pop
+00436:  88  this
+00437:  88  getprop "m_battleBtn"
+00442:  88  dup
+00443:  88  callprop "setOnClickCallBack"
+00448:  88  swap
+00449:  88  notearg
+00450:  88  lambda (function () {
+    [sourceless code]
+})
+00455:  88  dup
+00456:  88  callprop "bind"
+00461:  88  swap
+00462:  88  notearg
+00463:  90  this
+00464:  90  notearg
+00465:  90  call 1
+00468:  90  notearg
+00469:  90  call 1
+00472:  90  pop
+00473:  91  goto 643 (+170)
+00478:  93  name "xs"
+00483:  93  getprop "Factorys"
+00488:  93  getprop "Label"
+00493:  93  dup
+00494:  93  callprop "createByStyleIdWithString"
+00499:  93  swap
+00500:  93  notearg
+00501:  93  string "LS_SXJC"
+00506:  93  notearg
+00507:  93  name "xs"
+00512:  93  getprop "Tools"
+00517:  93  getprop "String"
+00522:  93  dup
+00523:  93  callprop "createString"
+00528:  93  swap
+00529:  93  notearg
+00530:  93  string "HulaoBattle_label_finish"
+00535:  93  notearg
+00536:  93  call 1
+00539:  93  notearg
+00540:  93  call 2
+00543:  93  setlocal 0
+00546:  93  pop
+00547:  94  getlocal 0
+00550:  94  dup
+00551:  94  callprop "setPosition"
+00556:  94  swap
+00557:  94  notearg
+00558:  94  this
+00559:  94  getprop "m_battleBtn"
+00564:  94  dup
+00565:  94  callprop "getPosition"
+00570:  94  swap
+00571:  94  notearg
+00572:  94  call 0
+00575:  94  notearg
+00576:  94  call 1
+00579:  94  pop
+00580:  95  this
+00581:  95  getprop "m_battleBtn"
+00586:  95  dup
+00587:  95  callprop "setVisible"
+00592:  95  swap
+00593:  95  notearg
+00594:  95  false
+00595:  95  notearg
+00596:  95  call 1
+00599:  95  pop
+00600:  96  name "xs"
+00605:  96  getprop "Utils"
+00610:  96  getprop "Node"
+00615:  96  dup
+00616:  96  callprop "attachNodes"
+00621:  96  swap
+00622:  96  notearg
+00623:  96  this
+00624:  96  getprop "m_ccbNode"
+00629:  96  notearg
+00630:  96  getlocal 0
+00633:  96  notearg
+00634:  96  call 2
+00637:  96  pop
+00638:  97  goto 643 (+5)
+00643: 103  this
+00644: 103  getprop "m_title_1"
+00649: 103  dup
+00650: 103  callprop "setString"
+00655: 103  swap
+00656: 103  notearg
+00657: 103  name "xs"
+00662: 103  getprop "Tools"
+00667: 103  getprop "String"
+00672: 103  dup
+00673: 103  callprop "createStringWithArgsArray"
+00678: 103  swap
+00679: 103  notearg
+00680: 104  string "HulaoBattle_title1"
+00685: 104  notearg
+00686: 105  newarray 1
+00690: 105  name "xs"
+00695: 105  getprop "Tools"
+00700: 105  getprop "String"
+00705: 105  dup
+00706: 105  callprop "convNumberString"
+00711: 105  swap
+00712: 105  notearg
+00713: 105  this
+00714: 105  getprop "m_stage"
+00719: 105  notearg
+00720: 105  call 1
+00723: 105  initelem_array 0
+00727: 105  endinit
+00728: 105  notearg
+00729: 105  call 2
+00732: 105  notearg
+00733: 105  call 1
+00736: 105  pop
+00737: 107  this
+00738: 107  getprop "m_title_3"
+00743: 107  dup
+00744: 107  callprop "setString"
+00749: 107  swap
+00750: 107  notearg
+00751: 107  name "xs"
+00756: 107  getprop "Tools"
+00761: 107  getprop "String"
+00766: 107  dup
+00767: 107  callprop "createStringWithArgsArray"
+00772: 107  swap
+00773: 107  notearg
+00774: 108  string "HulaoBattle_title3"
+00779: 108  notearg
+00780: 109  newarray 1
+00784: 109  name "xs"
+00789: 109  getprop "Tools"
+00794: 109  getprop "String"
+00799: 109  dup
+00800: 109  callprop "convNumberString"
+00805: 109  swap
+00806: 109  notearg
+00807: 109  this
+00808: 109  getprop "m_stage"
+00813: 109  notearg
+00814: 109  call 1
+00817: 109  initelem_array 0
+00821: 109  endinit
+00822: 109  notearg
+00823: 109  call 2
+00826: 109  notearg
+00827: 109  call 1
+00830: 109  pop
+00831: 112  this
+00832: 112  dup
+00833: 112  callprop "setRewardData"
+00838: 112  swap
+00839: 112  notearg
+00840: 112  this
+00841: 112  getprop "m_stage"
+00846: 112  notearg
+00847: 112  call 1
+00850: 112  pop
+00851: 112  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:58 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:72 ---
+loc   line  op
+----- ----  --
+main:
+00000:  73  name "xs"
+00005:  73  getprop "Views"
+00010:  73  getprop "Mgr"
+00015:  73  dup
+00016:  73  callprop "showDialogByName"
+00021:  73  swap
+00022:  73  notearg
+00023:  73  string "HulaoBattleSelectDifficulty"
+00028:  73  notearg
+00029:  73  this
+00030:  73  getprop "m_stage"
+00035:  73  notearg
+00036:  73  call 2
+00039:  73  pop
+00040:  73  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:72 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:81 ---
+loc   line  op
+----- ----  --
+main:
+00000:  82  this
+00001:  82  dup
+00002:  82  callprop "goToGarrisonLayoutDialog"
+00007:  82  swap
+00008:  82  notearg
+00009:  82  newinit 1
+00014:  82  this
+00015:  82  getprop "m_stage"
+00020:  82  initprop "stage"
+00025:  82  this
+00026:  82  getprop "m_mode"
+00031:  82  initprop "mode"
+00036:  82  endinit
+00037:  82  notearg
+00038:  82  call 1
+00041:  82  pop
+00042:  82  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:81 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:88 ---
+loc   line  op
+----- ----  --
+main:
+00000:  89  this
+00001:  89  dup
+00002:  89  callprop "getHulaoBattleReward"
+00007:  89  swap
+00008:  89  notearg
+00009:  89  this
+00010:  89  getprop "m_stage"
+00015:  89  notearg
+00016:  89  this
+00017:  89  getprop "m_mode"
+00022:  89  notearg
+00023:  89  call 2
+00026:  89  pop
+00027:  89  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:88 ---
+;; function object[3] goToGarrisonLayoutDialog
+;; function metadata object[3] nargs=1 bindings=1
+;; arg[0] _data
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=131 object[0]
+;; FUNCTION-MAP kind=lambda offset=137 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:114 ---
+loc   line  op
+----- ----  --
+main:
+00000: 116  name "xs"
+00005: 116  getprop "Tools"
+00010: 116  getprop "Net"
+00015: 116  dup
+00016: 116  callprop "requestHuLaoBattleLineUp"
+00021: 116  swap
+00022: 116  notearg
+00023: 116  newinit 1
+00028: 117  name "xs"
+00033: 117  getprop "Profile"
+00038: 117  getprop "GameData"
+00043: 117  getprop "Mgr"
+00048: 117  dup
+00049: 117  callprop "getInstance"
+00054: 117  swap
+00055: 117  notearg
+00056: 117  call 0
+00059: 117  getprop "Player"
+00064: 117  dup
+00065: 117  callprop "getPlayer"
+00070: 117  swap
+00071: 117  notearg
+00072: 117  call 0
+00075: 117  dup
+00076: 117  callprop "getPlayerId"
+00081: 117  swap
+00082: 117  notearg
+00083: 117  call 0
+00086: 117  initprop "user_id"
+00091: 118  getaliasedvar "_data" (hops = 0, slot = 2)
+00100: 118  getprop "stage"
+00105: 118  initprop "stage"
+00110: 119  getaliasedvar "_data" (hops = 0, slot = 2)
+00119: 119  getprop "mode"
+00124: 119  initprop "mode"
+00129: 119  endinit
+00130: 119  notearg
+00131: 121  lambda (function () {
+    [sourceless code]
+})
+00136: 121  notearg
+00137: 138  lambda (function () {
+    [sourceless code]
+})
+00142: 138  notearg
+00143: 141  this
+00144: 141  notearg
+00145: 141  call 4
+00148: 141  pop
+00149: 141  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:114 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] param
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:121 ---
+loc   line  op
+----- ----  --
+main:
+00000: 122  getarg 0
+00003: 122  getprop "return_info"
+00008: 122  ifeq 222 (+214)
+00013: 124  name "xs"
+00018: 124  getprop "Utils"
+00023: 124  dup
+00024: 124  callprop "isEmpty"
+00029: 124  swap
+00030: 124  notearg
+00031: 124  getarg 0
+00034: 124  getprop "return_info"
+00039: 124  getprop "left_info"
+00044: 124  notearg
+00045: 124  call 1
+00048: 124  ifeq 124 (+76)
+00053: 126  getarg 0
+00056: 126  getprop "return_info"
+00061: 126  getprop "left_info"
+00066: 126  this
+00067: 126  dup
+00068: 126  callprop "getTeamGeneralsData"
+00073: 126  swap
+00074: 126  notearg
+00075: 126  call 0
+00078: 126  setprop "general_list"
+00083: 126  pop
+00084: 127  getarg 0
+00087: 127  getprop "return_info"
+00092: 127  getprop "left_info"
+00097: 127  zero
+00098: 127  setprop "total_fortune"
+00103: 127  pop
+00104: 128  getarg 0
+00107: 128  getprop "return_info"
+00112: 128  getprop "left_info"
+00117: 128  one
+00118: 128  setprop "consume_fortune"
+00123: 128  pop
+00124: 130  newinit 1
+00129: 131  getarg 0
+00132: 131  getprop "return_info"
+00137: 131  initprop "data"
+00142: 132  getaliasedvar "_data" (hops = 0, slot = 2)
+00151: 132  getprop "stage"
+00156: 132  initprop "stage"
+00161: 133  getaliasedvar "_data" (hops = 0, slot = 2)
+00170: 133  getprop "mode"
+00175: 133  initprop "mode"
+00180: 133  endinit
+00181: 133  setlocal 0
+00184: 133  pop
+00185: 135  name "xs"
+00190: 135  getprop "Views"
+00195: 135  getprop "Mgr"
+00200: 135  dup
+00201: 135  callprop "showDialogByName"
+00206: 135  swap
+00207: 135  notearg
+00208: 135  string "GarrisonLayoutDialog"
+00213: 135  notearg
+00214: 135  getlocal 0
+00217: 135  notearg
+00218: 135  call 2
+00221: 135  pop
+00222: 136  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:121 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:138 ---
+loc   line  op
+----- ----  --
+main:
+00000: 138  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:138 ---
+;; function object[4] getTeamGeneralsData
+;; function metadata object[4] nargs=0 bindings=4
+;; local[0] general_list
+;; local[1] teamGeneralsData
+;; local[2] i
+;; local[3] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:143 ---
+loc   line  op
+----- ----  --
+main:
+00000: 145  newarray 0
+00004: 145  endinit
+00005: 145  setlocal 0
+00008: 145  pop
+00009: 146  name "xs"
+00014: 146  getprop "Profile"
+00019: 146  getprop "GameData"
+00024: 146  getprop "Mgr"
+00029: 146  dup
+00030: 146  callprop "getInstance"
+00035: 146  swap
+00036: 146  notearg
+00037: 146  call 0
+00040: 146  getprop "Team"
+00045: 146  dup
+00046: 146  callprop "getGeneralsInTeam"
+00051: 146  swap
+00052: 146  notearg
+00053: 146  call 0
+00056: 146  setlocal 1
+00059: 146  pop
+00060: 148  zero
+00061: 148  setlocal 2
+00064: 148  pop
+00065: 148  goto 275 (+210)
+00070: 150  loophead
+00071: 150  newinit 1
+00076: 151  getlocal 1
+00079: 151  getlocal 2
+00082: 151  getelem
+00083: 151  dup
+00084: 151  callprop "getPkId"
+00089: 151  swap
+00090: 151  notearg
+00091: 151  call 0
+00094: 151  initprop "pk_id"
+00099: 152  getlocal 1
+00102: 152  getlocal 2
+00105: 152  getelem
+00106: 152  dup
+00107: 152  callprop "getId"
+00112: 152  swap
+00113: 152  notearg
+00114: 152  call 0
+00117: 152  initprop "general_id"
+00122: 153  getlocal 1
+00125: 153  getlocal 2
+00128: 153  getelem
+00129: 153  dup
+00130: 153  callprop "getLevel"
+00135: 153  swap
+00136: 153  notearg
+00137: 153  call 0
+00140: 153  initprop "general_level"
+00145: 154  name "xs"
+00150: 154  getprop "Profile"
+00155: 154  getprop "GameData"
+00160: 154  getprop "Mgr"
+00165: 154  dup
+00166: 154  callprop "getInstance"
+00171: 154  swap
+00172: 154  notearg
+00173: 154  call 0
+00176: 154  getprop "Generals"
+00181: 154  dup
+00182: 154  callprop "getAttr"
+00187: 154  swap
+00188: 154  notearg
+00189: 154  getlocal 1
+00192: 154  getlocal 2
+00195: 154  getelem
+00196: 154  notearg
+00197: 154  name "xs"
+00202: 154  getprop "Constant_AttrType_FightPoint"
+00207: 154  notearg
+00208: 154  call 2
+00211: 154  initprop "fighting"
+00216: 155  zero
+00217: 155  initprop "fortune"
+00222: 156  int8 100
+00224: 156  initprop "hp"
+00229: 157  int8 100
+00231: 157  initprop "current_hp"
+00236: 157  endinit
+00237: 157  setlocal 3
+00240: 157  pop
+00241: 160  getlocal 0
+00244: 160  dup
+00245: 160  callprop "push"
+00250: 160  swap
+00251: 160  notearg
+00252: 160  getlocal 3
+00255: 160  notearg
+00256: 160  call 1
+00259: 160  pop
+00260: 148  localinc 11
+00263: 148  getlocal 2
+00266: 148  pos
+00267: 148  dup
+00268: 148  one
+00269: 148  add
+00270: 148  setlocal 2
+00273: 148  pop
+00274: 148  pop
+00275: 148  loopentry
+00276: 148  getlocal 2
+00279: 148  getlocal 1
+00282: 148  length "length"
+00287: 148  lt
+00288: 148  ifne 70 (-218)
+00293: 164  getlocal 0
+00296: 164  return
+00297: 164  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:143 ---
+;; function object[5] showRewardAnimation
+;; function metadata object[5] nargs=1 bindings=3
+;; arg[0] data
+;; local[0] m_iconTag
+;; local[1] m_icon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:167 ---
+loc   line  op
+----- ----  --
+main:
+00000: 168  int8 10
+00002: 168  callname "parseInt"
+00007: 168  implicitthis "parseInt"
+00012: 168  notearg
+00013: 168  getarg 0
+00016: 168  notearg
+00017: 168  call 1
+00020: 168  add
+00021: 168  setlocal 0
+00024: 168  pop
+00025: 169  this
+00026: 169  getprop "m_ccbNode"
+00031: 169  dup
+00032: 169  callprop "getChildByTag"
+00037: 169  swap
+00038: 169  notearg
+00039: 169  getlocal 0
+00042: 169  notearg
+00043: 169  call 1
+00046: 169  setlocal 1
+00049: 169  pop
+00050: 170  this
+00051: 170  getprop "m_gemLightArm"
+00056: 170  not
+00057: 170  ifeq 248 (+191)
+00062: 171  this
+00063: 171  name "xs"
+00068: 171  getprop "Views"
+00073: 171  getprop "Armature"
+00078: 171  getprop "AutoAudioArmature"
+00083: 171  dup
+00084: 171  callprop "create"
+00089: 171  swap
+00090: 171  notearg
+00091: 171  string "GemLight"
+00096: 171  notearg
+00097: 171  call 1
+00100: 171  setprop "m_gemLightArm"
+00105: 171  pop
+00106: 172  this
+00107: 172  getprop "m_gemLightArm"
+00112: 172  dup
+00113: 172  callprop "setPosition"
+00118: 172  swap
+00119: 172  notearg
+00120: 172  getlocal 1
+00123: 172  dup
+00124: 172  callprop "getPosition"
+00129: 172  swap
+00130: 172  notearg
+00131: 172  call 0
+00134: 172  notearg
+00135: 172  call 1
+00138: 172  pop
+00139: 173  this
+00140: 173  getprop "m_gemLightArm"
+00145: 173  dup
+00146: 173  callprop "setZOrder"
+00151: 173  swap
+00152: 173  notearg
+00153: 173  this
+00154: 173  getprop "cfg"
+00159: 173  getprop "GemLightZOrder"
+00164: 173  notearg
+00165: 173  call 1
+00168: 173  pop
+00169: 174  this
+00170: 174  getprop "m_gemLightArm"
+00175: 174  dup
+00176: 174  callprop "playAniById"
+00181: 174  swap
+00182: 174  notearg
+00183: 174  string "ani_gemlight"
+00188: 174  notearg
+00189: 174  newinit 1
+00194: 174  true
+00195: 174  initprop "loop"
+00200: 174  one
+00201: 174  initprop "speed"
+00206: 174  endinit
+00207: 174  notearg
+00208: 174  call 2
+00211: 174  pop
+00212: 175  name "xs"
+00217: 175  getprop "Utils"
+00222: 175  getprop "Node"
+00227: 175  dup
+00228: 175  callprop "attachNodes"
+00233: 175  swap
+00234: 175  notearg
+00235: 175  this
+00236: 175  notearg
+00237: 175  this
+00238: 175  getprop "m_gemLightArm"
+00243: 175  notearg
+00244: 175  call 2
+00247: 175  pop
+00248: 176  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:167 ---
+;; function object[6] getHulaoBattleReward
+;; function metadata object[6] nargs=2 bindings=2
+;; arg[0] stage
+;; arg[1] mode
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=109 object[0]
+;; FUNCTION-MAP kind=lambda offset=115 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:178 ---
+loc   line  op
+----- ----  --
+main:
+00000: 179  name "xs"
+00005: 179  getprop "Tools"
+00010: 179  getprop "Net"
+00015: 179  dup
+00016: 179  callprop "requestHulaoRecieve"
+00021: 179  swap
+00022: 179  notearg
+00023: 179  newinit 1
+00028: 180  name "xs"
+00033: 180  getprop "Profile"
+00038: 180  getprop "GameData"
+00043: 180  getprop "Mgr"
+00048: 180  dup
+00049: 180  callprop "getInstance"
+00054: 180  swap
+00055: 180  notearg
+00056: 180  call 0
+00059: 180  getprop "Player"
+00064: 180  dup
+00065: 180  callprop "getPlayer"
+00070: 180  swap
+00071: 180  notearg
+00072: 180  call 0
+00075: 180  dup
+00076: 180  callprop "getPlayerId"
+00081: 180  swap
+00082: 180  notearg
+00083: 180  call 0
+00086: 180  initprop "user_id"
+00091: 181  getarg 0
+00094: 181  initprop "stage"
+00099: 182  getarg 1
+00102: 182  initprop "mode"
+00107: 182  endinit
+00108: 182  notearg
+00109: 184  lambda (function () {
+    [sourceless code]
+})
+00114: 184  notearg
+00115: 196  lambda (function () {
+    [sourceless code]
+})
+00120: 196  notearg
+00121: 198  this
+00122: 198  notearg
+00123: 198  call 4
+00126: 198  pop
+00127: 198  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:178 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+;; FUNCTION-MAP kind=lambda offset=135 object[0]
+;; FUNCTION-MAP kind=lambda offset=141 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:184 ---
+loc   line  op
+----- ----  --
+main:
+00000: 185  name "xs"
+00005: 185  getprop "Views"
+00010: 185  getprop "Mgr"
+00015: 185  dup
+00016: 185  callprop "showDialogByName"
+00021: 185  swap
+00022: 185  notearg
+00023: 185  string "GetPropsDialog"
+00028: 185  notearg
+00029: 185  getarg 0
+00032: 185  getprop "add_list"
+00037: 185  notearg
+00038: 185  call 2
+00041: 185  pop
+00042: 186  name "xs"
+00047: 186  getprop "Tools"
+00052: 186  getprop "Net"
+00057: 186  dup
+00058: 186  callprop "requestHulaoMain"
+00063: 186  swap
+00064: 186  notearg
+00065: 186  newinit 1
+00070: 187  name "xs"
+00075: 187  getprop "Profile"
+00080: 187  getprop "GameData"
+00085: 187  getprop "Mgr"
+00090: 187  dup
+00091: 187  callprop "getInstance"
+00096: 187  swap
+00097: 187  notearg
+00098: 187  call 0
+00101: 187  getprop "Player"
+00106: 187  dup
+00107: 187  callprop "getPlayer"
+00112: 187  swap
+00113: 187  notearg
+00114: 187  call 0
+00117: 187  dup
+00118: 187  callprop "getPlayerId"
+00123: 187  swap
+00124: 187  notearg
+00125: 187  call 0
+00128: 187  initprop "user_id"
+00133: 187  endinit
+00134: 187  notearg
+00135: 189  lambda (function () {
+    [sourceless code]
+})
+00140: 189  notearg
+00141: 192  lambda (function () {
+    [sourceless code]
+})
+00146: 192  notearg
+00147: 194  this
+00148: 194  notearg
+00149: 194  call 4
+00152: 194  pop
+00153: 194  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:184 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:189 ---
+loc   line  op
+----- ----  --
+main:
+00000: 190  this
+00001: 190  dup
+00002: 190  callprop "setHulaoData"
+00007: 190  swap
+00008: 190  notearg
+00009: 190  getarg 0
+00012: 190  getprop "return_info"
+00017: 190  notearg
+00018: 190  call 1
+00021: 190  pop
+00022: 190  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:189 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:192 ---
+loc   line  op
+----- ----  --
+main:
+00000: 192  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:192 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:196 ---
+loc   line  op
+----- ----  --
+main:
+00000: 196  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:196 ---
+;; function object[7] setRewardData
+;; function metadata object[7] nargs=1 bindings=6
+;; arg[0] param
+;; local[0] data
+;; local[1] rewardList
+;; local[2] i
+;; local[3] _itemId
+;; local[4] _itemTag
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=76 length=95 stackDepth=1 target=171
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:201 ---
+loc   line  op
+----- ----  --
+main:
+00000: 202  name "xs"
+00005: 202  getprop "Cfg"
+00010: 202  getprop "System"
+00015: 202  getprop "sgs_hulao_reward_conf"
+00020: 202  setlocal 0
+00023: 202  pop
+00024: 203  getlocal 0
+00027: 203  getarg 0
+00030: 203  getelem
+00031: 203  setlocal 1
+00034: 203  pop
+00035: 204  name "xs"
+00040: 204  getprop "Utils"
+00045: 204  dup
+00046: 204  callprop "isEmpty"
+00051: 204  swap
+00052: 204  notearg
+00053: 204  getlocal 1
+00056: 204  notearg
+00057: 204  call 1
+00060: 204  not
+00061: 204  ifeq 172 (+111)
+00066: 205  getlocal 1
+00069: 205  iter 1
+00071: 205  goto 164 (+93)
+00076: 205  loophead
+00077: 205  iternext
+00078: 205  setlocal 2
+00081: 205  pop
+00082: 206  getlocal 1
+00085: 206  dup
+00086: 206  callprop "hasOwnProperty"
+00091: 206  swap
+00092: 206  notearg
+00093: 206  getlocal 2
+00096: 206  notearg
+00097: 206  call 1
+00100: 206  ifeq 164 (+64)
+00105: 207  getlocal 1
+00108: 207  getlocal 2
+00111: 207  getelem
+00112: 207  zero
+00113: 207  getelem
+00114: 207  setlocal 3
+00117: 207  pop
+00118: 208  int8 10
+00120: 208  callname "parseInt"
+00125: 208  implicitthis "parseInt"
+00130: 208  notearg
+00131: 208  getlocal 2
+00134: 208  notearg
+00135: 208  call 1
+00138: 208  add
+00139: 208  setlocal 4
+00142: 208  pop
+00143: 209  this
+00144: 209  dup
+00145: 209  callprop "setExchangeIcon"
+00150: 209  swap
+00151: 209  notearg
+00152: 209  getlocal 3
+00155: 209  notearg
+00156: 209  getlocal 4
+00159: 209  notearg
+00160: 209  call 2
+00163: 209  pop
+00164: 209  loopentry
+00165: 209  moreiter
+00166: 209  ifne 76 (-90)
+00171: 209  enditer
+00172: 212  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:201 ---
+;; function object[8] setExchangeIcon
+;; function metadata object[8] nargs=2 bindings=6
+;; arg[0] itemId
+;; arg[1] m_iconTag
+;; local[0] m_icon
+;; local[1] param
+;; local[2] head
+;; local[3] btn
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=170 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:215 ---
+loc   line  op
+----- ----  --
+main:
+00000: 216  this
+00001: 216  getprop "m_ccbNode"
+00006: 216  dup
+00007: 216  callprop "getChildByTag"
+00012: 216  swap
+00013: 216  notearg
+00014: 216  getarg 1
+00017: 216  notearg
+00018: 216  call 1
+00021: 216  setlocal 0
+00024: 216  pop
+00025: 217  name "xs"
+00030: 217  getprop "Models"
+00035: 217  getprop "Item"
+00040: 217  dup
+00041: 217  callprop "createWithBase"
+00046: 217  swap
+00047: 217  notearg
+00048: 217  getaliasedvar "itemId" (hops = 0, slot = 2)
+00057: 217  notearg
+00058: 217  call 1
+00061: 217  setaliasedvar "param" (hops = 0, slot = 3)
+00070: 217  pop
+00071: 218  getaliasedvar "param" (hops = 0, slot = 3)
+00080: 218  dup
+00081: 218  callprop "createIcon_GradeAndName"
+00086: 218  swap
+00087: 218  notearg
+00088: 218  call 0
+00091: 218  setlocal 2
+00094: 218  pop
+00095: 219  name "xs"
+00100: 219  getprop "Views"
+00105: 219  getprop "Btn"
+00110: 219  dup
+00111: 219  callprop "createInvisibleWithChild"
+00116: 219  swap
+00117: 219  notearg
+00118: 219  getlocal 2
+00121: 219  notearg
+00122: 219  call 1
+00125: 219  setlocal 3
+00128: 219  pop
+00129: 220  getlocal 3
+00132: 220  dup
+00133: 220  callprop "setPosition"
+00138: 220  swap
+00139: 220  notearg
+00140: 220  getlocal 0
+00143: 220  dup
+00144: 220  callprop "getPosition"
+00149: 220  swap
+00150: 220  notearg
+00151: 220  call 0
+00154: 220  notearg
+00155: 220  call 1
+00158: 220  pop
+00159: 221  getlocal 3
+00162: 221  dup
+00163: 221  callprop "setOnClickCallBack"
+00168: 221  swap
+00169: 221  notearg
+00170: 222  lambda (function () {
+    [sourceless code]
+})
+00175: 222  dup
+00176: 222  callprop "bind"
+00181: 222  swap
+00182: 222  notearg
+00183: 226  this
+00184: 226  notearg
+00185: 226  call 1
+00188: 226  notearg
+00189: 226  call 1
+00192: 226  pop
+00193: 227  getlocal 3
+00196: 227  dup
+00197: 227  callprop "setSwallowTouch"
+00202: 227  swap
+00203: 227  notearg
+00204: 227  false
+00205: 227  notearg
+00206: 227  call 1
+00209: 227  pop
+00210: 228  getlocal 3
+00213: 228  dup
+00214: 228  callprop "setZoomOnTouchDown"
+00219: 228  swap
+00220: 228  notearg
+00221: 228  false
+00222: 228  notearg
+00223: 228  call 1
+00226: 228  pop
+00227: 229  getlocal 3
+00230: 229  dup
+00231: 229  callprop "setTag"
+00236: 229  swap
+00237: 229  notearg
+00238: 229  getarg 1
+00241: 229  notearg
+00242: 229  call 1
+00245: 229  pop
+00246: 230  this
+00247: 230  getprop "m_ccbNode"
+00252: 230  dup
+00253: 230  callprop "getChildByTag"
+00258: 230  swap
+00259: 230  notearg
+00260: 230  getarg 1
+00263: 230  uint16 999
+00266: 230  add
+00267: 230  notearg
+00268: 230  call 1
+00271: 230  ifeq 329 (+58)
+00276: 232  name "xs"
+00281: 232  getprop "Utils"
+00286: 232  getprop "Node"
+00291: 232  dup
+00292: 232  callprop "safeRemoveChild"
+00297: 232  swap
+00298: 232  notearg
+00299: 232  this
+00300: 232  getprop "m_ccbNode"
+00305: 232  dup
+00306: 232  callprop "getChildByTag"
+00311: 232  swap
+00312: 232  notearg
+00313: 232  getarg 1
+00316: 232  uint16 999
+00319: 232  add
+00320: 232  notearg
+00321: 232  call 1
+00324: 232  notearg
+00325: 232  call 1
+00328: 232  pop
+00329: 234  name "xs"
+00334: 234  getprop "Utils"
+00339: 234  getprop "Node"
+00344: 234  dup
+00345: 234  callprop "attachNodes"
+00350: 234  swap
+00351: 234  notearg
+00352: 234  this
+00353: 234  getprop "m_ccbNode"
+00358: 234  notearg
+00359: 234  getlocal 3
+00362: 234  notearg
+00363: 234  call 2
+00366: 234  pop
+00367: 235  name "xs"
+00372: 235  getprop "Utils"
+00377: 235  getprop "Node"
+00382: 235  dup
+00383: 235  callprop "safeRemoveChild"
+00388: 235  swap
+00389: 235  notearg
+00390: 235  getlocal 0
+00393: 235  notearg
+00394: 235  call 1
+00397: 235  pop
+00398: 236  getlocal 3
+00401: 236  dup
+00402: 236  callprop "setTouchPriority"
+00407: 236  swap
+00408: 236  notearg
+00409: 236  int32 -1000
+00414: 236  notearg
+00415: 236  call 1
+00418: 236  pop
+00419: 236  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:215 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:222 ---
+loc   line  op
+----- ----  --
+main:
+00000: 223  getaliasedvar "param" (hops = 0, slot = 3)
+00009: 223  name "xs"
+00014: 223  getprop "Models"
+00019: 223  getprop "Item"
+00024: 223  instanceof
+00025: 223  ifeq 53 (+28)
+00030: 224  this
+00031: 224  dup
+00032: 224  callprop "packeageDetailCallback"
+00037: 224  swap
+00038: 224  notearg
+00039: 224  getaliasedvar "itemId" (hops = 0, slot = 2)
+00048: 224  notearg
+00049: 224  call 1
+00052: 224  pop
+00053: 225  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:222 ---
+;; function object[9] packeageDetailCallback
+;; function metadata object[9] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:240 ---
+loc   line  op
+----- ----  --
+main:
+00000: 241  name "xs"
+00005: 241  getprop "Views"
+00010: 241  getprop "Mgr"
+00015: 241  dup
+00016: 241  callprop "showDialogByName"
+00021: 241  swap
+00022: 241  notearg
+00023: 241  string "priviewGiftPackDialog"
+00028: 241  notearg
+00029: 241  getarg 0
+00032: 241  notearg
+00033: 241  call 2
+00036: 241  pop
+00037: 241  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:240 ---
+;; function object[10] _amendCcbiPos
+;; function metadata object[10] nargs=1 bindings=5
+;; arg[0] mCcbi
+;; local[0] mChilds
+;; local[1] mChildIdx
+;; local[2] mChild
+;; local[3] mOriginalPos
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=36 length=87 stackDepth=1 target=123
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:245 ---
+loc   line  op
+----- ----  --
+main:
+00000: 246  getarg 0
+00003: 246  dup
+00004: 246  callprop "getChildren"
+00009: 246  swap
+00010: 246  notearg
+00011: 246  call 0
+00014: 246  setlocal 0
+00017: 246  pop
+00018: 247  getlocal 0
+00021: 247  ifeq 124 (+103)
+00026: 248  getlocal 0
+00029: 248  iter 1
+00031: 248  goto 116 (+85)
+00036: 248  loophead
+00037: 248  iternext
+00038: 248  setlocal 1
+00041: 248  pop
+00042: 249  getlocal 0
+00045: 249  getlocal 1
+00048: 249  getelem
+00049: 249  setlocal 2
+00052: 249  pop
+00053: 250  getlocal 2
+00056: 250  getprop "getPosition"
+00061: 250  ifeq 116 (+55)
+00066: 251  getlocal 2
+00069: 251  dup
+00070: 251  callprop "getPosition"
+00075: 251  swap
+00076: 251  notearg
+00077: 251  call 0
+00080: 251  setlocal 3
+00083: 251  pop
+00084: 252  getlocal 2
+00087: 252  dup
+00088: 252  callprop "setPosition"
+00093: 252  swap
+00094: 252  notearg
+00095: 252  this
+00096: 252  dup
+00097: 252  callprop "_ip4sPosTransform"
+00102: 252  swap
+00103: 252  notearg
+00104: 252  getlocal 3
+00107: 252  notearg
+00108: 252  call 1
+00111: 252  notearg
+00112: 252  call 1
+00115: 252  pop
+00116: 252  loopentry
+00117: 252  moreiter
+00118: 252  ifne 36 (-82)
+00123: 252  enditer
+00124: 255  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:245 ---
+;; function object[11] _ip4sPosTransform
+;; function metadata object[11] nargs=1 bindings=4
+;; arg[0] mPos
+;; local[0] visibleSize
+;; local[1] mScaleW
+;; local[2] mScaleH
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:260 ---
+loc   line  op
+----- ----  --
+main:
+00000: 261  name "xs"
+00005: 261  getprop "director"
+00010: 261  dup
+00011: 261  callprop "getVisibleSize"
+00016: 261  swap
+00017: 261  notearg
+00018: 261  call 0
+00021: 261  setlocal 0
+00024: 261  pop
+00025: 262  getlocal 0
+00028: 262  getprop "width"
+00033: 262  uint16 960
+00036: 262  div
+00037: 262  setlocal 1
+00040: 262  pop
+00041: 263  getlocal 0
+00044: 263  getprop "height"
+00049: 263  uint16 640
+00052: 263  div
+00053: 263  setlocal 2
+00056: 263  pop
+00057: 264  name "cc"
+00062: 264  dup
+00063: 264  callprop "p"
+00068: 264  swap
+00069: 264  notearg
+00070: 264  getarg 0
+00073: 264  getprop "x"
+00078: 264  getlocal 1
+00081: 264  mul
+00082: 264  notearg
+00083: 264  getarg 0
+00086: 264  getprop "y"
+00091: 264  getlocal 2
+00094: 264  mul
+00095: 264  notearg
+00096: 264  call 2
+00099: 264  return
+00100: 264  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:260 ---
+;; function object[12] onEnter
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:268 ---
+loc   line  op
+----- ----  --
+main:
+00000: 269  this
+00001: 269  dup
+00002: 269  callprop "_super"
+00007: 269  swap
+00008: 269  notearg
+00009: 269  call 0
+00012: 269  pop
+00013: 269  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:268 ---
+;; function object[13] onExit
+;; function metadata object[13] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:271 ---
+loc   line  op
+----- ----  --
+main:
+00000: 272  this
+00001: 272  dup
+00002: 272  callprop "_super"
+00007: 272  swap
+00008: 272  notearg
+00009: 272  call 0
+00012: 272  pop
+00013: 272  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:271 ---
+;; function object[14] setBaseTouchPriority
+;; function metadata object[14] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:274 ---
+loc   line  op
+----- ----  --
+main:
+00000: 275  this
+00001: 275  getarg 0
+00004: 275  setprop "m_baseTouchPriority"
+00009: 275  pop
+00010: 276  this
+00011: 276  dup
+00012: 276  callprop "setTouchPriority"
+00017: 276  swap
+00018: 276  notearg
+00019: 276  this
+00020: 276  getprop "m_baseTouchPriority"
+00025: 276  one
+00026: 276  sub
+00027: 276  notearg
+00028: 276  call 1
+00031: 276  pop
+00032: 277  this
+00033: 277  getprop "m_battleBtn"
+00038: 277  dup
+00039: 277  callprop "setTouchPriority"
+00044: 277  swap
+00045: 277  notearg
+00046: 277  this
+00047: 277  getprop "m_baseTouchPriority"
+00052: 277  one
+00053: 277  sub
+00054: 277  notearg
+00055: 277  call 1
+00058: 277  pop
+00059: 277  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:274 ---
+;; function object[15] create
+;; function metadata object[15] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] view
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:282 ---
+loc   line  op
+----- ----  --
+main:
+00000: 283  name "xs"
+00005: 283  getprop "Views"
+00010: 283  getprop "HulaoBattleMainView"
+00015: 283  undefined
+00016: 283  notearg
+00017: 283  new 0
+00020: 283  setlocal 0
+00023: 283  pop
+00024: 284  getlocal 0
+00027: 284  and 51 (+24)
+00032: 284  pop
+00033: 284  getlocal 0
+00036: 284  dup
+00037: 284  callprop "init"
+00042: 284  swap
+00043: 284  notearg
+00044: 284  getarg 0
+00047: 284  notearg
+00048: 284  call 1
+00051: 284  ifeq 60 (+9)
+00056: 285  getlocal 0
+00059: 285  return
+00060: 287  name "xs"
+00065: 287  dup
+00066: 287  callprop "assert"
+00071: 287  swap
+00072: 287  notearg
+00073: 287  false
+00074: 287  notearg
+00075: 287  string "xs.Views.HulaoBattleMainView.create error!"
+00080: 287  notearg
+00081: 287  call 2
+00084: 287  pop
+00085: 288  null
+00086: 288  return
+00087: 288  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js:282 ---

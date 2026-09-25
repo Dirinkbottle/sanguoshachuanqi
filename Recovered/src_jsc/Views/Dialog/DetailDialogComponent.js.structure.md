@@ -1,0 +1,145 @@
+# `Views/Dialog/DetailDialogComponent.js`
+
+- Original embedded path: `/home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Dialog/DetailDialogComponent.jsc`
+- XDR decode: `ok`; bytecode scripts: 133; instructions: 5010
+- Full instruction listing: `src_jsc/Views/Dialog/DetailDialogComponent.js.disasm.txt`
+
+This is a navigation outline generated from names and line metadata
+retained in the compiled bytecode. It is not the original JavaScript text.
+
+## Function bodies
+
+| Original line | Object index | Recovered name |
+|---:|---:|---|
+| 7 | 0 | `CommonJumpCallback` |
+| 17 | 0 | `_callback` |
+| 38 | 1 | `<anonymous>` |
+| 44 | 2 | `<anonymous>` |
+| 50 | 3 | `<anonymous>` |
+| 61 | 4 | `_callback` |
+| 80 | 5 | `_callback` |
+| 89 | 6 | `_callback` |
+| 99 | 7 | `_callback` |
+| 113 | 8 | `_callback` |
+| 158 | 9 | `_callback` |
+| 208 | 10 | `_callback` |
+| 222 | 11 | `_callback` |
+| 236 | 12 | `_callback` |
+| 247 | 13 | `_callback` |
+| 263 | 14 | `_callback` |
+| 277 | 15 | `_callback` |
+| 290 | 16 | `_callback` |
+| 304 | 17 | `_callback` |
+| 319 | 18 | `_callback` |
+| 373 | 19 | `_callback` |
+| 404 | 20 | `_callback` |
+| 437 | 21 | `_callback` |
+| 453 | 22 | `_callback` |
+| 473 | 23 | `_callback` |
+| 485 | 24 | `<anonymous>` |
+| 491 | 25 | `_callback` |
+| 497 | 26 | `_callback` |
+| 509 | 27 | `_callback` |
+| 518 | 1 | `loadCCBI` |
+| 521 | 2 | `loadData` |
+| 524 | 3 | `initWithData` |
+| 531 | 4 | `getViewSize` |
+| 537 | 5 | `create` |
+| 548 | 6 | `updateCell` |
+| 567 | 7 | `create` |
+| 583 | 8 | `refreshData` |
+| 589 | 9 | `onSortChg` |
+| 591 | 10 | `createCell` |
+| 598 | 11 | `makeViewSize` |
+| 602 | 12 | `initWithData` |
+| 626 | 13 | `getViewSize` |
+| 630 | 14 | `create` |
+| 645 | 15 | `AlgorithmLT` |
+| 671 | 16 | `CNCSByDiffSize` |
+| 681 | 17 | `loadCCBI` |
+| 693 | 18 | `loadData` |
+| 714 | 19 | `getViewSize` |
+| 731 | 20 | `createDStyleA` |
+| 740 | 21 | `loadCCBI` |
+| 753 | 22 | `loadData` |
+| 763 | 0 | `<anonymous>` |
+| 817 | 23 | `createDStyleB` |
+| 839 | 24 | `loadCCBI` |
+| 851 | 25 | `loadData` |
+| 887 | 26 | `createDStyleC` |
+| 896 | 27 | `loadCCBI` |
+| 903 | 28 | `loadData` |
+| 915 | 29 | `createDStyleD` |
+| 924 | 30 | `loadCCBI` |
+| 931 | 31 | `loadData` |
+| 943 | 32 | `createDStyleE` |
+| 952 | 33 | `loadCCBI` |
+| 965 | 34 | `loadData` |
+| 996 | 35 | `createDStyleF` |
+| 1006 | 36 | `loadCCBI` |
+| 1021 | 37 | `loadData` |
+| 1028 | 0 | `<anonymous>` |
+| 1052 | 38 | `createDStyleG` |
+| 1061 | 39 | `loadCCBI` |
+| 1081 | 40 | `loadData` |
+| 1138 | 41 | `createDStyleH` |
+| 1147 | 42 | `loadCCBI` |
+| 1153 | 43 | `loadData` |
+| 1161 | 44 | `showWidget` |
+| 1179 | 45 | `changeCCBNodeSize` |
+| 1190 | 46 | `createDStyleI` |
+| 1199 | 47 | `loadCCBI` |
+| 1209 | 48 | `loadData` |
+| 1236 | 49 | `createDStyleJ` |
+| 1245 | 50 | `loadCCBI` |
+| 1265 | 51 | `loadData` |
+| 1267 | 0 | `<anonymous>` |
+| 1285 | 52 | `getButtonLeft` |
+| 1289 | 53 | `createDStyleK` |
+| 1298 | 54 | `loadCCBI` |
+| 1312 | 55 | `loadData` |
+| 1375 | 56 | `createDStyleL` |
+| 1384 | 57 | `loadCCBI` |
+| 1398 | 58 | `loadData` |
+| 1452 | 59 | `createDStyleM` |
+| 1461 | 60 | `loadCCBI` |
+| 1504 | 61 | `loadData` |
+| 1513 | 0 | `<anonymous>` |
+| 1514 | 1 | `<anonymous>` |
+| 1515 | 2 | `<anonymous>` |
+| 1516 | 3 | `<anonymous>` |
+| 1563 | 62 | `getButtonLeft` |
+| 1566 | 63 | `getButtonRight` |
+| 1569 | 64 | `getButtonMiddle` |
+| 1572 | 65 | `setButtonCallback` |
+| 1576 | 66 | `getButtonUnUse` |
+| 1580 | 67 | `createDStyleN` |
+| 1589 | 68 | `loadCCBI` |
+| 1609 | 69 | `loadData` |
+| 1684 | 0 | `<anonymous>` |
+| 1725 | 70 | `createDStyleO` |
+| 1734 | 71 | `loadCCBI` |
+| 1755 | 72 | `loadData` |
+| 1786 | 73 | `detailCallback` |
+| 1812 | 74 | `createDStyleP` |
+| 1823 | 75 | `loadCCBI` |
+| 1843 | 76 | `loadData` |
+| 1881 | 0 | `<anonymous>` |
+| 1912 | 77 | `createDStyleSwitch` |
+| 1922 | 78 | `loadCCBI` |
+| 1928 | 79 | `loadData` |
+| 1948 | 80 | `showWidget` |
+| 2036 | 81 | `changeCCBNodeSize` |
+| 2047 | 82 | `createDStyleQ` |
+| 2056 | 83 | `loadCCBI` |
+| 2061 | 84 | `loadData` |
+| 2071 | 85 | `showWidget` |
+| 2129 | 86 | `changeCCBNodeSize` |
+| 2140 | 87 | `createDStyleQ1` |
+| 2149 | 88 | `loadCCBI` |
+| 2155 | 89 | `loadData` |
+| 2218 | 90 | `getViewSize` |
+| 2271 | 91 | `createDStyleR` |
+| 2282 | 92 | `loadCCBI` |
+| 2288 | 93 | `loadData` |
+| 2339 | 94 | `createEStyleGemsEqu` |

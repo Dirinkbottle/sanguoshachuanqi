@@ -1,0 +1,176 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/AdInfo.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=69 object[0]
+;; FUNCTION-MAP kind=lambda offset=79 object[1]
+;; FUNCTION-MAP kind=lambda offset=89 object[2]
+;; FUNCTION-MAP kind=lambda offset=99 object[3]
+;; FUNCTION-MAP kind=lambda offset=135 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  name "xs"
+00005:  10  getprop "Models"
+00010:  10  name "xs"
+00015:  10  getprop "Models"
+00020:  10  getprop "AdInfo"
+00025:  10  or 114 (+89)
+00030:  10  pop
+00031:  10  name "xs"
+00036:  10  getprop "Models"
+00041:  10  getprop "Base"
+00046:  10  dup
+00047:  10  callprop "extend"
+00052:  10  swap
+00053:  10  notearg
+00054:  10  newinit 1
+00059:  12  string "xs.Models.AdInfo"
+00064:  12  initprop "name"
+00069:  17  lambda (function () {
+    [sourceless code]
+})
+00074:  17  initprop "init"
+00079:  28  lambda (function () {
+    [sourceless code]
+})
+00084:  28  initprop "update"
+00089:  51  lambda (function () {
+    [sourceless code]
+})
+00094:  51  initprop "getActivitiesShowList"
+00099:  55  lambda (function () {
+    [sourceless code]
+})
+00104:  55  initprop "gettips_list"
+00109:  55  endinit
+00110:  55  notearg
+00111:  55  call 1
+00114:  55  setprop "AdInfo"
+00119:  55  popv
+00120:  60  name "xs"
+00125:  60  getprop "Models"
+00130:  60  getprop "AdInfo"
+00135:  60  lambda (function () {
+    [sourceless code]
+})
+00140:  60  setprop "create"
+00145:  60  popv
+00146:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  19  this
+00001:  19  dup
+00002:  19  callprop "_super"
+00007:  19  swap
+00008:  19  notearg
+00009:  19  call 0
+00012:  19  pop
+00013:  21  this
+00014:  21  newarray 0
+00018:  21  endinit
+00019:  21  setprop "m_activitiesShowList"
+00024:  21  pop
+00025:  21  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:17 ---
+;; function object[1] update
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] json
+;; local[0] _flagChg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  false
+00001:  34  setlocal 0
+00004:  34  pop
+00005:  36  getarg 0
+00008:  36  getprop "ad_list"
+00013:  36  ifeq 38 (+25)
+00018:  37  this
+00019:  37  getarg 0
+00022:  37  getprop "ad_list"
+00027:  37  setprop "m_activitiesShowList"
+00032:  37  pop
+00033:  39  true
+00034:  39  setlocal 0
+00037:  39  pop
+00038:  42  getarg 0
+00041:  42  getprop "tips_list"
+00046:  42  ifeq 71 (+25)
+00051:  43  this
+00052:  43  getarg 0
+00055:  43  getprop "tips_list"
+00060:  43  setprop "tips_list"
+00065:  43  pop
+00066:  45  true
+00067:  45  setlocal 0
+00070:  45  pop
+00071:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:28 ---
+;; function object[2] getActivitiesShowList
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:51 ---
+loc   line  op
+----- ----  --
+main:
+00000:  52  this
+00001:  52  getprop "m_activitiesShowList"
+00006:  52  return
+00007:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:51 ---
+;; function object[3] gettips_list
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:55 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  this
+00001:  56  getprop "tips_list"
+00006:  56  return
+00007:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:55 ---
+;; function object[4] create
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:60 ---
+loc   line  op
+----- ----  --
+main:
+00000:  61  name "xs"
+00005:  61  getprop "Models"
+00010:  61  getprop "AdInfo"
+00015:  61  undefined
+00016:  61  notearg
+00017:  61  new 0
+00020:  61  setlocal 0
+00023:  61  pop
+00024:  62  getlocal 0
+00027:  62  dup
+00028:  62  callprop "init"
+00033:  62  swap
+00034:  62  notearg
+00035:  62  call 0
+00038:  62  pop
+00039:  64  getlocal 0
+00042:  64  return
+00043:  64  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/AdInfo.js:60 ---

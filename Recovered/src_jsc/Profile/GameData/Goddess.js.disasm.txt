@@ -1,0 +1,1038 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Profile/GameData/Goddess.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=143 object[0]
+;; FUNCTION-MAP kind=lambda offset=153 object[1]
+;; FUNCTION-MAP kind=lambda offset=163 object[2]
+;; FUNCTION-MAP kind=lambda offset=173 object[3]
+;; FUNCTION-MAP kind=lambda offset=183 object[4]
+;; FUNCTION-MAP kind=lambda offset=193 object[5]
+;; FUNCTION-MAP kind=lambda offset=203 object[6]
+;; FUNCTION-MAP kind=lambda offset=213 object[7]
+;; FUNCTION-MAP kind=lambda offset=223 object[8]
+;; FUNCTION-MAP kind=lambda offset=233 object[9]
+;; FUNCTION-MAP kind=lambda offset=243 object[10]
+;; FUNCTION-MAP kind=lambda offset=253 object[11]
+;; FUNCTION-MAP kind=lambda offset=263 object[12]
+;; FUNCTION-MAP kind=lambda offset=304 object[13]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Profile"
+00010:   4  getprop "GameData"
+00015:   4  name "xs"
+00020:   4  getprop "Profile"
+00025:   4  getprop "GameData"
+00030:   4  getprop "Base"
+00035:   4  dup
+00036:   4  callprop "extend"
+00041:   4  swap
+00042:   4  notearg
+00043:   4  newinit 1
+00048:   6  name "xs"
+00053:   6  getprop "Debug"
+00058:   6  getprop "emptyFunc"
+00063:   6  initprop "log"
+00068:   7  name "xs"
+00073:   7  getprop "Debug"
+00078:   7  getprop "emptyFunc"
+00083:   7  initprop "dump"
+00088:   9  string "xs.Profile.GameData.Goddess"
+00093:   9  initprop "name"
+00098:  10  name "xs"
+00103:  10  getprop "Constant_GameData_Goddess"
+00108:  10  initprop "nameType"
+00113:  11  name "xs"
+00118:  11  getprop "Models"
+00123:  11  getprop "Goddess"
+00128:  11  initprop "modelName"
+00133:  13  string ""
+00138:  13  initprop "sortBy"
+00143:  19  lambda (function () {
+    [sourceless code]
+})
+00148:  19  initprop "init"
+00153:  26  lambda (function () {
+    [sourceless code]
+})
+00158:  26  initprop "getHaveGoddessNum"
+00163:  30  lambda (function () {
+    [sourceless code]
+})
+00168:  30  initprop "isHaveGoddess_GoddessId"
+00173:  40  lambda (function () {
+    [sourceless code]
+})
+00178:  40  initprop "getHaveGoddessSkinNum"
+00183:  49  lambda (function () {
+    [sourceless code]
+})
+00188:  49  initprop "getGoddessSkinListByGoddessId"
+00193:  68  lambda (function () {
+    [sourceless code]
+})
+00198:  68  initprop "getHaveGoddessSkinList"
+00203:  80  lambda (function () {
+    [sourceless code]
+})
+00208:  80  initprop "isStrongestInFight"
+00213: 101  lambda (function () {
+    [sourceless code]
+})
+00218: 101  initprop "getNotFightGoddessNum"
+00223: 119  lambda (function () {
+    [sourceless code]
+})
+00228: 119  initprop "_updateNotice"
+00233: 124  lambda (function () {
+    [sourceless code]
+})
+00238: 124  initprop "getFightGoddessID"
+00243: 137  lambda (function () {
+    [sourceless code]
+})
+00248: 137  initprop "getFightGoddess"
+00253: 151  lambda (function () {
+    [sourceless code]
+})
+00258: 151  initprop "getFateGoddess"
+00263: 166  lambda (function () {
+    [sourceless code]
+})
+00268: 166  initprop "isHaveGoddessBySkinId"
+00273: 166  endinit
+00274: 166  notearg
+00275: 166  call 1
+00278: 166  setprop "Goddess"
+00283: 166  popv
+00284: 193  name "xs"
+00289: 193  getprop "Profile"
+00294: 193  getprop "GameData"
+00299: 193  getprop "Goddess"
+00304: 193  lambda (function () {
+    [sourceless code]
+})
+00309: 193  setprop "create"
+00314: 193  popv
+00315: 211  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:19 ---
+loc   line  op
+----- ----  --
+main:
+00000:  20  this
+00001:  20  dup
+00002:  20  callprop "_super"
+00007:  20  swap
+00008:  20  notearg
+00009:  20  getarg 0
+00012:  20  notearg
+00013:  20  call 1
+00016:  20  pop
+00017:  21  this
+00018:  21  getprop "dataRef"
+00023:  21  dup
+00024:  21  callprop "getNotifyCenter"
+00029:  21  swap
+00030:  21  notearg
+00031:  21  call 0
+00034:  21  dup
+00035:  21  callprop "addObserver"
+00040:  21  swap
+00041:  21  notearg
+00042:  21  this
+00043:  21  notearg
+00044:  21  this
+00045:  21  getprop "clearCache"
+00050:  21  notearg
+00051:  21  name "xs"
+00056:  21  getprop "Constant_Notify_ModelChange_Goddess_SortChange"
+00061:  21  notearg
+00062:  21  call 3
+00065:  21  pop
+00066:  22  true
+00067:  22  return
+00068:  22  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:19 ---
+;; function object[1] getHaveGoddessNum
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  this
+00001:  27  dup
+00002:  27  callprop "getAllWithDefaultSort"
+00007:  27  swap
+00008:  27  notearg
+00009:  27  call 0
+00012:  27  length "length"
+00017:  27  return
+00018:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:26 ---
+;; function object[2] isHaveGoddess_GoddessId
+;; function metadata object[2] nargs=1 bindings=3
+;; arg[0] goddessID
+;; local[0] goddessList
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  this
+00001:  31  dup
+00002:  31  callprop "getAllWithDefaultSort"
+00007:  31  swap
+00008:  31  notearg
+00009:  31  call 0
+00012:  31  setlocal 0
+00015:  31  pop
+00016:  32  zero
+00017:  32  setlocal 1
+00020:  32  pop
+00021:  32  goto 71 (+50)
+00026:  33  loophead
+00027:  33  getlocal 0
+00030:  33  getlocal 1
+00033:  33  getelem
+00034:  33  dup
+00035:  33  callprop "getId"
+00040:  33  swap
+00041:  33  notearg
+00042:  33  call 0
+00045:  33  getarg 0
+00048:  33  eq
+00049:  33  ifeq 56 (+7)
+00054:  34  true
+00055:  34  return
+00056:  32  localinc 11
+00059:  32  getlocal 1
+00062:  32  pos
+00063:  32  dup
+00064:  32  one
+00065:  32  add
+00066:  32  setlocal 1
+00069:  32  pop
+00070:  32  pop
+00071:  32  loopentry
+00072:  32  getlocal 1
+00075:  32  getlocal 0
+00078:  32  length "length"
+00083:  32  lt
+00084:  32  ifne 26 (-58)
+00089:  36  false
+00090:  36  return
+00091:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:30 ---
+;; function object[3] getHaveGoddessSkinNum
+;; function metadata object[3] nargs=0 bindings=3
+;; local[0] index
+;; local[1] _obj_list
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:40 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  zero
+00001:  41  setlocal 0
+00004:  41  pop
+00005:  42  this
+00006:  42  dup
+00007:  42  callprop "getAllWithDefaultSort"
+00012:  42  swap
+00013:  42  notearg
+00014:  42  call 0
+00017:  42  setlocal 1
+00020:  42  pop
+00021:  43  zero
+00022:  43  setlocal 2
+00025:  43  pop
+00026:  43  goto 78 (+52)
+00031:  44  loophead
+00032:  44  getlocal 0
+00035:  44  getlocal 1
+00038:  44  getlocal 2
+00041:  44  getelem
+00042:  44  dup
+00043:  44  callprop "getSkinList"
+00048:  44  swap
+00049:  44  notearg
+00050:  44  call 0
+00053:  44  length "length"
+00058:  44  add
+00059:  44  setlocal 0
+00062:  44  pop
+00063:  43  localinc 11
+00066:  43  getlocal 2
+00069:  43  pos
+00070:  43  dup
+00071:  43  one
+00072:  43  add
+00073:  43  setlocal 2
+00076:  43  pop
+00077:  43  pop
+00078:  43  loopentry
+00079:  43  getlocal 2
+00082:  43  getlocal 1
+00085:  43  length "length"
+00090:  43  lt
+00091:  43  ifne 31 (-60)
+00096:  47  getlocal 0
+00099:  47  return
+00100:  47  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:40 ---
+;; function object[4] getGoddessSkinListByGoddessId
+;; function metadata object[4] nargs=1 bindings=4
+;; arg[0] id
+;; local[0] skinModelList
+;; local[1] skinList
+;; local[2] key
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=64 length=131 stackDepth=1 target=195
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  51  newarray 0
+00004:  51  endinit
+00005:  51  setlocal 0
+00008:  51  pop
+00009:  52  name "xs"
+00014:  52  getprop "Tools"
+00019:  52  getprop "CfgData"
+00024:  52  dup
+00025:  52  callprop "readRecordByTypeAndKey"
+00030:  52  swap
+00031:  52  notearg
+00032:  53  name "xs"
+00037:  53  getprop "Constant_CfgDataType_GoddessSurface"
+00042:  53  notearg
+00043:  54  getarg 0
+00046:  54  notearg
+00047:  54  call 2
+00050:  54  setlocal 1
+00053:  54  pop
+00054:  57  getlocal 1
+00057:  57  iter 1
+00059:  57  goto 188 (+129)
+00064:  57  loophead
+00065:  57  iternext
+00066:  57  setlocal 2
+00069:  57  pop
+00070:  59  getlocal 1
+00073:  59  dup
+00074:  59  callprop "hasOwnProperty"
+00079:  59  swap
+00080:  59  notearg
+00081:  59  getlocal 2
+00084:  59  notearg
+00085:  59  call 1
+00088:  59  ifeq 188 (+100)
+00093:  60  name "xs"
+00098:  60  getprop "Utils"
+00103:  60  dup
+00104:  60  callprop "isEmpty"
+00109:  60  swap
+00110:  60  notearg
+00111:  60  getlocal 1
+00114:  60  getlocal 2
+00117:  60  getelem
+00118:  60  getprop "id"
+00123:  60  notearg
+00124:  60  call 1
+00127:  60  not
+00128:  60  ifeq 188 (+60)
+00133:  61  getlocal 0
+00136:  61  dup
+00137:  61  callprop "push"
+00142:  61  swap
+00143:  61  notearg
+00144:  61  name "xs"
+00149:  61  getprop "Models"
+00154:  61  getprop "Goddess"
+00159:  61  dup
+00160:  61  callprop "createWithBaseSurface"
+00165:  61  swap
+00166:  61  notearg
+00167:  61  getlocal 1
+00170:  61  getlocal 2
+00173:  61  getelem
+00174:  61  getprop "id"
+00179:  61  notearg
+00180:  61  call 1
+00183:  61  notearg
+00184:  61  call 1
+00187:  61  pop
+00188:  61  loopentry
+00189:  61  moreiter
+00190:  61  ifne 64 (-126)
+00195:  61  enditer
+00196:  65  getlocal 0
+00199:  65  return
+00200:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:49 ---
+;; function object[5] getHaveGoddessSkinList
+;; function metadata object[5] nargs=1 bindings=4
+;; arg[0] model
+;; local[0] skinModelList
+;; local[1] skinList
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  70  newarray 0
+00004:  70  endinit
+00005:  70  setlocal 0
+00008:  70  pop
+00009:  71  getarg 0
+00012:  71  dup
+00013:  71  callprop "getSkinList"
+00018:  71  swap
+00019:  71  notearg
+00020:  71  call 0
+00023:  71  setlocal 1
+00026:  71  pop
+00027:  73  zero
+00028:  73  setlocal 2
+00031:  73  pop
+00032:  73  goto 103 (+71)
+00037:  75  loophead
+00038:  75  getlocal 0
+00041:  75  dup
+00042:  75  callprop "push"
+00047:  75  swap
+00048:  75  notearg
+00049:  75  name "xs"
+00054:  75  getprop "Models"
+00059:  75  getprop "Goddess"
+00064:  75  dup
+00065:  75  callprop "createWithBaseSurface"
+00070:  75  swap
+00071:  75  notearg
+00072:  75  getlocal 1
+00075:  75  getlocal 2
+00078:  75  getelem
+00079:  75  notearg
+00080:  75  call 1
+00083:  75  notearg
+00084:  75  call 1
+00087:  75  pop
+00088:  73  localinc 11
+00091:  73  getlocal 2
+00094:  73  pos
+00095:  73  dup
+00096:  73  one
+00097:  73  add
+00098:  73  setlocal 2
+00101:  73  pop
+00102:  73  pop
+00103:  73  loopentry
+00104:  73  getlocal 2
+00107:  73  getlocal 1
+00110:  73  length "length"
+00115:  73  lt
+00116:  73  ifne 37 (-79)
+00121:  77  getlocal 0
+00124:  77  return
+00125:  77  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:68 ---
+;; function object[6] isStrongestInFight
+;; function metadata object[6] nargs=0 bindings=4
+;; local[0] goddessList
+;; local[1] fight
+;; local[2] fightList
+;; local[3] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:80 ---
+loc   line  op
+----- ----  --
+main:
+00000:  81  this
+00001:  81  dup
+00002:  81  callprop "getAllWithDefaultSort"
+00007:  81  swap
+00008:  81  notearg
+00009:  81  call 0
+00012:  81  setlocal 0
+00015:  81  pop
+00016:  82  zero
+00017:  82  setlocal 1
+00020:  82  pop
+00021:  83  newarray 0
+00025:  83  endinit
+00026:  83  setlocal 2
+00029:  83  pop
+00030:  84  zero
+00031:  84  setlocal 3
+00034:  84  pop
+00035:  84  goto 137 (+102)
+00040:  85  loophead
+00041:  85  getlocal 2
+00044:  85  dup
+00045:  85  callprop "push"
+00050:  85  swap
+00051:  85  notearg
+00052:  85  getlocal 0
+00055:  85  getlocal 3
+00058:  85  getelem
+00059:  85  dup
+00060:  85  callprop "getSmallFighting"
+00065:  85  swap
+00066:  85  notearg
+00067:  85  call 0
+00070:  85  notearg
+00071:  85  call 1
+00074:  85  pop
+00075:  86  getlocal 0
+00078:  86  getlocal 3
+00081:  86  getelem
+00082:  86  dup
+00083:  86  callprop "getIsFight"
+00088:  86  swap
+00089:  86  notearg
+00090:  86  call 0
+00093:  86  one
+00094:  86  eq
+00095:  86  ifeq 122 (+27)
+00100:  87  getlocal 0
+00103:  87  getlocal 3
+00106:  87  getelem
+00107:  87  dup
+00108:  87  callprop "getSmallFighting"
+00113:  87  swap
+00114:  87  notearg
+00115:  87  call 0
+00118:  87  setlocal 1
+00121:  87  pop
+00122:  84  localinc 11
+00125:  84  getlocal 3
+00128:  84  pos
+00129:  84  dup
+00130:  84  one
+00131:  84  add
+00132:  84  setlocal 3
+00135:  84  pop
+00136:  84  pop
+00137:  84  loopentry
+00138:  84  getlocal 3
+00141:  84  getlocal 0
+00144:  84  length "length"
+00149:  84  lt
+00150:  84  ifne 40 (-110)
+00155:  90  getlocal 1
+00158:  90  zero
+00159:  90  eq
+00160:  90  ifeq 167 (+7)
+00165:  91  false
+00166:  91  return
+00167:  94  zero
+00168:  94  setlocal 3
+00171:  94  pop
+00172:  94  goto 211 (+39)
+00177:  95  loophead
+00178:  95  getlocal 2
+00181:  95  getlocal 3
+00184:  95  getelem
+00185:  95  getlocal 1
+00188:  95  gt
+00189:  95  ifeq 196 (+7)
+00194:  96  false
+00195:  96  return
+00196:  94  localinc 11
+00199:  94  getlocal 3
+00202:  94  pos
+00203:  94  dup
+00204:  94  one
+00205:  94  add
+00206:  94  setlocal 3
+00209:  94  pop
+00210:  94  pop
+00211:  94  loopentry
+00212:  94  getlocal 3
+00215:  94  getlocal 2
+00218:  94  length "length"
+00223:  94  lt
+00224:  94  ifne 177 (-47)
+00229:  99  true
+00230:  99  return
+00231:  99  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:80 ---
+;; function object[7] getNotFightGoddessNum
+;; function metadata object[7] nargs=0 bindings=3
+;; local[0] num
+;; local[1] goddessList
+;; local[2] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:101 ---
+loc   line  op
+----- ----  --
+main:
+00000: 102  one
+00001: 102  setlocal 0
+00004: 102  pop
+00005: 103  this
+00006: 103  dup
+00007: 103  callprop "getAllWithDefaultSort"
+00012: 103  swap
+00013: 103  notearg
+00014: 103  call 0
+00017: 103  setlocal 1
+00020: 103  pop
+00021: 104  getlocal 1
+00024: 104  length "length"
+00029: 104  zero
+00030: 104  eq
+00031: 104  ifeq 41 (+10)
+00036: 105  zero
+00037: 105  setlocal 0
+00040: 105  pop
+00041: 108  zero
+00042: 108  setlocal 2
+00045: 108  pop
+00046: 108  goto 102 (+56)
+00051: 109  loophead
+00052: 109  getlocal 1
+00055: 109  getlocal 2
+00058: 109  getelem
+00059: 109  dup
+00060: 109  callprop "getIsFight"
+00065: 109  swap
+00066: 109  notearg
+00067: 109  call 0
+00070: 109  one
+00071: 109  eq
+00072: 109  ifeq 87 (+15)
+00077: 111  zero
+00078: 111  setlocal 0
+00081: 111  pop
+00082: 112  goto 120 (+38)
+00087: 108  localinc 11
+00090: 108  getlocal 2
+00093: 108  pos
+00094: 108  dup
+00095: 108  one
+00096: 108  add
+00097: 108  setlocal 2
+00100: 108  pop
+00101: 108  pop
+00102: 108  loopentry
+00103: 108  getlocal 2
+00106: 108  getlocal 1
+00109: 108  length "length"
+00114: 108  lt
+00115: 108  ifne 51 (-64)
+00120: 115  getlocal 0
+00123: 115  return
+00124: 115  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:101 ---
+;; function object[8] _updateNotice
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:119 ---
+loc   line  op
+----- ----  --
+main:
+00000: 120  name "xs"
+00005: 120  getprop "Utils"
+00010: 120  getprop "Notify"
+00015: 120  dup
+00016: 120  callprop "postNotification"
+00021: 120  swap
+00022: 120  notearg
+00023: 120  name "xs"
+00028: 120  getprop "Constant_Notify_Goddess_Change"
+00033: 120  notearg
+00034: 120  this
+00035: 120  notearg
+00036: 120  call 2
+00039: 120  pop
+00040: 120  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:119 ---
+;; function object[9] getFightGoddessID
+;; function metadata object[9] nargs=0 bindings=2
+;; local[0] goddessList
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:124 ---
+loc   line  op
+----- ----  --
+main:
+00000: 125  this
+00001: 125  dup
+00002: 125  callprop "getAllWithDefaultSort"
+00007: 125  swap
+00008: 125  notearg
+00009: 125  call 0
+00012: 125  setlocal 0
+00015: 125  pop
+00016: 126  getlocal 0
+00019: 126  length "length"
+00024: 126  zero
+00025: 126  eq
+00026: 126  ifeq 33 (+7)
+00031: 127  null
+00032: 127  return
+00033: 130  zero
+00034: 130  setlocal 1
+00037: 130  pop
+00038: 130  goto 103 (+65)
+00043: 131  loophead
+00044: 131  getlocal 0
+00047: 131  getlocal 1
+00050: 131  getelem
+00051: 131  dup
+00052: 131  callprop "getIsFight"
+00057: 131  swap
+00058: 131  notearg
+00059: 131  call 0
+00062: 131  one
+00063: 131  eq
+00064: 131  ifeq 88 (+24)
+00069: 132  getlocal 0
+00072: 132  getlocal 1
+00075: 132  getelem
+00076: 132  dup
+00077: 132  callprop "getId"
+00082: 132  swap
+00083: 132  notearg
+00084: 132  call 0
+00087: 132  return
+00088: 130  localinc 11
+00091: 130  getlocal 1
+00094: 130  pos
+00095: 130  dup
+00096: 130  one
+00097: 130  add
+00098: 130  setlocal 1
+00101: 130  pop
+00102: 130  pop
+00103: 130  loopentry
+00104: 130  getlocal 1
+00107: 130  getlocal 0
+00110: 130  length "length"
+00115: 130  lt
+00116: 130  ifne 43 (-73)
+00121: 134  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:124 ---
+;; function object[10] getFightGoddess
+;; function metadata object[10] nargs=0 bindings=2
+;; local[0] goddessList
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:137 ---
+loc   line  op
+----- ----  --
+main:
+00000: 138  this
+00001: 138  dup
+00002: 138  callprop "getAllWithDefaultSort"
+00007: 138  swap
+00008: 138  notearg
+00009: 138  call 0
+00012: 138  setlocal 0
+00015: 138  pop
+00016: 139  getlocal 0
+00019: 139  length "length"
+00024: 139  zero
+00025: 139  eq
+00026: 139  ifeq 33 (+7)
+00031: 140  null
+00032: 140  return
+00033: 143  zero
+00034: 143  setlocal 1
+00037: 143  pop
+00038: 143  goto 92 (+54)
+00043: 144  loophead
+00044: 144  getlocal 0
+00047: 144  getlocal 1
+00050: 144  getelem
+00051: 144  dup
+00052: 144  callprop "getIsFight"
+00057: 144  swap
+00058: 144  notearg
+00059: 144  call 0
+00062: 144  one
+00063: 144  eq
+00064: 144  ifeq 77 (+13)
+00069: 145  getlocal 0
+00072: 145  getlocal 1
+00075: 145  getelem
+00076: 145  return
+00077: 143  localinc 11
+00080: 143  getlocal 1
+00083: 143  pos
+00084: 143  dup
+00085: 143  one
+00086: 143  add
+00087: 143  setlocal 1
+00090: 143  pop
+00091: 143  pop
+00092: 143  loopentry
+00093: 143  getlocal 1
+00096: 143  getlocal 0
+00099: 143  length "length"
+00104: 143  lt
+00105: 143  ifne 43 (-62)
+00110: 147  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:137 ---
+;; function object[11] getFateGoddess
+;; function metadata object[11] nargs=0 bindings=2
+;; local[0] fightGoddess
+;; local[1] goddessList
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:151 ---
+loc   line  op
+----- ----  --
+main:
+00000: 152  this
+00001: 152  dup
+00002: 152  callprop "getFightGoddessID"
+00007: 152  swap
+00008: 152  notearg
+00009: 152  call 0
+00012: 152  setlocal 0
+00015: 152  pop
+00016: 153  this
+00017: 153  dup
+00018: 153  callprop "getAllWithDefaultSort"
+00023: 153  swap
+00024: 153  notearg
+00025: 153  call 0
+00028: 153  setlocal 1
+00031: 153  pop
+00032: 154  getlocal 1
+00035: 154  length "length"
+00040: 154  zero
+00041: 154  eq
+00042: 154  ifeq 49 (+7)
+00047: 155  null
+00048: 155  return
+00049: 163  getlocal 0
+00052: 163  return
+00053: 163  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:151 ---
+;; function object[12] isHaveGoddessBySkinId
+;; function metadata object[12] nargs=1 bindings=7
+;; arg[0] skinId
+;; local[0] result
+;; local[1] goddessList
+;; local[2] goddessSkinListData
+;; local[3] i
+;; local[4] skinList
+;; local[5] key
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=123 length=67 stackDepth=1 target=190
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:166 ---
+loc   line  op
+----- ----  --
+main:
+00000: 167  false
+00001: 167  setlocal 0
+00004: 167  pop
+00005: 168  this
+00006: 168  dup
+00007: 168  callprop "getAllWithDefaultSort"
+00012: 168  swap
+00013: 168  notearg
+00014: 168  call 0
+00017: 168  setlocal 1
+00020: 168  pop
+00021: 169  name "xs"
+00026: 169  getprop "Cfg"
+00031: 169  getprop "System"
+00036: 169  getprop "sgs_godness_skin"
+00041: 169  setlocal 2
+00044: 169  pop
+00045: 170  zero
+00046: 170  setlocal 3
+00049: 170  pop
+00050: 170  goto 206 (+156)
+00055: 171  loophead
+00056: 171  getlocal 2
+00059: 171  getlocal 1
+00062: 171  getlocal 3
+00065: 171  getelem
+00066: 171  dup
+00067: 171  callprop "getId"
+00072: 171  swap
+00073: 171  notearg
+00074: 171  call 0
+00077: 171  getelem
+00078: 171  setlocal 4
+00081: 171  pop
+00082: 172  name "xs"
+00087: 172  getprop "Utils"
+00092: 172  dup
+00093: 172  callprop "isEmpty"
+00098: 172  swap
+00099: 172  notearg
+00100: 172  getlocal 4
+00103: 172  notearg
+00104: 172  call 1
+00107: 172  not
+00108: 172  ifeq 191 (+83)
+00113: 173  getlocal 4
+00116: 173  iter 1
+00118: 173  goto 183 (+65)
+00123: 173  loophead
+00124: 173  iternext
+00125: 173  setlocal 5
+00128: 173  pop
+00129: 174  getlocal 4
+00132: 174  dup
+00133: 174  callprop "hasOwnProperty"
+00138: 174  swap
+00139: 174  notearg
+00140: 174  getlocal 5
+00143: 174  notearg
+00144: 174  call 1
+00147: 174  ifeq 183 (+36)
+00152: 175  getlocal 4
+00155: 175  getlocal 5
+00158: 175  getelem
+00159: 175  getprop "id"
+00164: 175  getarg 0
+00167: 175  eq
+00168: 175  ifeq 183 (+15)
+00173: 176  true
+00174: 176  setlocal 0
+00177: 176  pop
+00178: 177  goto 190 (+12)
+00183: 177  loopentry
+00184: 177  moreiter
+00185: 177  ifne 123 (-62)
+00190: 177  enditer
+00191: 170  localinc 11
+00194: 170  getlocal 3
+00197: 170  pos
+00198: 170  dup
+00199: 170  one
+00200: 170  add
+00201: 170  setlocal 3
+00204: 170  pop
+00205: 170  pop
+00206: 170  loopentry
+00207: 170  getlocal 3
+00210: 170  getlocal 1
+00213: 170  length "length"
+00218: 170  lt
+00219: 170  ifne 55 (-164)
+00224: 185  getlocal 0
+00227: 185  return
+00228: 185  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:166 ---
+;; function object[13] create
+;; function metadata object[13] nargs=1 bindings=4
+;; arg[0] param
+;; local[0] _str
+;; local[1] _cls_name
+;; local[2] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:193 ---
+loc   line  op
+----- ----  --
+main:
+00000: 195  getarg 0
+00003: 195  getprop "play_id"
+00008: 195  setlocal 0
+00011: 195  pop
+00012: 196  name "xs"
+00017: 196  getprop "Profile"
+00022: 196  getprop "GameData"
+00027: 196  getprop "Goddess"
+00032: 196  setlocal 1
+00035: 196  pop
+00036: 197  name "xs"
+00041: 197  getprop "Utils"
+00046: 197  dup
+00047: 197  callprop "isSet"
+00052: 197  swap
+00053: 197  notearg
+00054: 197  getlocal 1
+00057: 197  getprop "_instance"
+00062: 197  notearg
+00063: 197  call 1
+00066: 197  or 85 (+19)
+00071: 197  pop
+00072: 197  getlocal 1
+00075: 197  newarray 0
+00079: 197  endinit
+00080: 197  setprop "_instance"
+00085: 197  pop
+00086: 199  getlocal 1
+00089: 199  getprop "_instance"
+00094: 199  getlocal 0
+00097: 199  getelem
+00098: 199  ifeq 116 (+18)
+00103: 200  getlocal 1
+00106: 200  getprop "_instance"
+00111: 200  getlocal 0
+00114: 200  getelem
+00115: 200  return
+00116: 203  getlocal 1
+00119: 203  undefined
+00120: 203  notearg
+00121: 203  new 0
+00124: 203  setlocal 2
+00127: 203  pop
+00128: 204  getlocal 2
+00131: 204  and 155 (+24)
+00136: 204  pop
+00137: 204  getlocal 2
+00140: 204  dup
+00141: 204  callprop "init"
+00146: 204  swap
+00147: 204  notearg
+00148: 204  getarg 0
+00151: 204  notearg
+00152: 204  call 1
+00155: 204  ifeq 180 (+25)
+00160: 205  getlocal 1
+00163: 205  getprop "_instance"
+00168: 205  getlocal 0
+00171: 205  getlocal 2
+00174: 205  setelem
+00175: 205  pop
+00176: 206  getlocal 2
+00179: 206  return
+00180: 209  name "xs"
+00185: 209  dup
+00186: 209  callprop "error"
+00191: 209  swap
+00192: 209  notearg
+00193: 209  string "xs.Profile.GameData.Goddess.create failed"
+00198: 209  notearg
+00199: 209  call 1
+00202: 209  pop
+00203: 210  null
+00204: 210  return
+00205: 210  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Profile/GameData/Goddess.js:193 ---

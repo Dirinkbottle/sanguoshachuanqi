@@ -1,0 +1,2173 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/CardListView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=612 object[1]
+;; FUNCTION-MAP kind=lambda offset=813 object[2]
+;; FUNCTION-MAP kind=lambda offset=823 object[3]
+;; FUNCTION-MAP kind=lambda offset=833 object[4]
+;; FUNCTION-MAP kind=lambda offset=843 object[5]
+;; FUNCTION-MAP kind=lambda offset=853 object[6]
+;; FUNCTION-MAP kind=lambda offset=863 object[7]
+;; FUNCTION-MAP kind=lambda offset=905 object[8]
+;; FUNCTION-MAP kind=lambda offset=915 object[9]
+;; FUNCTION-MAP kind=lambda offset=951 object[10]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Views"
+00010:   8  name "cc"
+00015:   8  getprop "Layer"
+00020:   8  dup
+00021:   8  callprop "extend"
+00026:   8  swap
+00027:   8  notearg
+00028:   8  newinit 1
+00033:   9  lambda (function () {
+    [sourceless code]
+})
+00038:   9  initprop "ctor"
+00043:  14  newinit 1
+00048:  15  newarray 34
+00052:  16  uint24 110005
+00056:  16  initelem_array 0
+00060:  17  uint24 110006
+00064:  17  initelem_array 1
+00068:  19  uint24 110007
+00072:  19  initelem_array 2
+00076:  20  uint24 110008
+00080:  20  initelem_array 3
+00084:  21  uint24 110009
+00088:  21  initelem_array 4
+00092:  22  uint24 111007
+00096:  22  initelem_array 5
+00100:  23  uint24 120004
+00104:  23  initelem_array 6
+00108:  24  uint24 120006
+00112:  24  initelem_array 7
+00116:  25  uint24 120007
+00120:  25  initelem_array 8
+00124:  26  uint24 120008
+00128:  26  initelem_array 9
+00132:  27  uint24 120011
+00136:  27  initelem_array 10
+00140:  28  uint24 130005
+00144:  28  initelem_array 11
+00148:  29  uint24 130007
+00152:  29  initelem_array 12
+00156:  30  uint24 131005
+00160:  30  initelem_array 13
+00164:  31  uint24 140003
+00168:  31  initelem_array 14
+00172:  32  uint24 140004
+00176:  32  initelem_array 15
+00180:  33  uint24 140006
+00184:  33  initelem_array 16
+00188:  35  uint24 110005
+00192:  35  initelem_array 17
+00196:  36  uint24 110006
+00200:  36  initelem_array 18
+00204:  37  uint24 110007
+00208:  37  initelem_array 19
+00212:  38  uint24 110008
+00216:  38  initelem_array 20
+00220:  39  uint24 110009
+00224:  39  initelem_array 21
+00228:  40  uint24 111007
+00232:  40  initelem_array 22
+00236:  41  uint24 120004
+00240:  41  initelem_array 23
+00244:  42  uint24 120006
+00248:  42  initelem_array 24
+00252:  43  uint24 120007
+00256:  43  initelem_array 25
+00260:  44  uint24 120008
+00264:  44  initelem_array 26
+00268:  45  uint24 120011
+00272:  45  initelem_array 27
+00276:  46  uint24 130005
+00280:  46  initelem_array 28
+00284:  47  uint24 130007
+00288:  47  initelem_array 29
+00292:  48  uint24 131005
+00296:  48  initelem_array 30
+00300:  49  uint24 140003
+00304:  49  initelem_array 31
+00308:  50  uint24 140004
+00312:  50  initelem_array 32
+00316:  51  uint24 140006
+00320:  51  initelem_array 33
+00324:  51  endinit
+00325:  51  initprop "cardData"
+00330:  53  newarray 34
+00334:  54  uint24 110005
+00338:  54  initelem_array 0
+00342:  55  uint24 110006
+00346:  55  initelem_array 1
+00350:  56  uint24 110007
+00354:  56  initelem_array 2
+00358:  57  uint24 110008
+00362:  57  initelem_array 3
+00366:  58  uint24 110009
+00370:  58  initelem_array 4
+00374:  59  uint24 111007
+00378:  59  initelem_array 5
+00382:  60  uint24 120004
+00386:  60  initelem_array 6
+00390:  61  uint24 120006
+00394:  61  initelem_array 7
+00398:  62  uint24 120007
+00402:  62  initelem_array 8
+00406:  63  uint24 120008
+00410:  63  initelem_array 9
+00414:  64  uint24 120011
+00418:  64  initelem_array 10
+00422:  65  uint24 130005
+00426:  65  initelem_array 11
+00430:  66  uint24 130007
+00434:  66  initelem_array 12
+00438:  67  uint24 131005
+00442:  67  initelem_array 13
+00446:  68  uint24 140003
+00450:  68  initelem_array 14
+00454:  69  uint24 140004
+00458:  69  initelem_array 15
+00462:  70  uint24 140006
+00466:  70  initelem_array 16
+00470:  72  uint24 110005
+00474:  72  initelem_array 17
+00478:  73  uint24 110006
+00482:  73  initelem_array 18
+00486:  74  uint24 110007
+00490:  74  initelem_array 19
+00494:  75  uint24 110008
+00498:  75  initelem_array 20
+00502:  76  uint24 110009
+00506:  76  initelem_array 21
+00510:  77  uint24 111007
+00514:  77  initelem_array 22
+00518:  78  uint24 120004
+00522:  78  initelem_array 23
+00526:  79  uint24 120006
+00530:  79  initelem_array 24
+00534:  80  uint24 120007
+00538:  80  initelem_array 25
+00542:  81  uint24 120008
+00546:  81  initelem_array 26
+00550:  82  uint24 120011
+00554:  82  initelem_array 27
+00558:  83  uint24 130005
+00562:  83  initelem_array 28
+00566:  84  uint24 130007
+00570:  84  initelem_array 29
+00574:  85  uint24 131005
+00578:  85  initelem_array 30
+00582:  86  uint24 140003
+00586:  86  initelem_array 31
+00590:  87  uint24 140004
+00594:  87  initelem_array 32
+00598:  88  uint24 140006
+00602:  88  initelem_array 33
+00606:  88  endinit
+00607:  88  initprop "logicPos"
+00612:  91  lambda (function () {
+    [sourceless code]
+})
+00617:  91  initprop "getDataNum"
+00622:  91  endinit
+00623:  91  initprop "model"
+00628:  96  newinit 1
+00633:  97  newarray 0
+00637:  97  endinit
+00638:  97  initprop "cardViews"
+00643:  97  endinit
+00644:  97  initprop "view"
+00649: 100  newinit 1
+00654: 101  zero
+00655: 101  initprop "touchDirection"
+00660: 102  zero
+00661: 102  initprop "count"
+00666: 103  name "cc"
+00671: 103  dup
+00672: 103  callprop "p"
+00677: 103  swap
+00678: 103  notearg
+00679: 103  zero
+00680: 103  notearg
+00681: 103  zero
+00682: 103  notearg
+00683: 103  call 2
+00686: 103  initprop "beginTouchPoint"
+00691: 104  name "cc"
+00696: 104  dup
+00697: 104  callprop "p"
+00702: 104  swap
+00703: 104  notearg
+00704: 104  zero
+00705: 104  notearg
+00706: 104  zero
+00707: 104  notearg
+00708: 104  call 2
+00711: 104  initprop "endTouchPoint"
+00716: 105  zero
+00717: 105  initprop "fstIdx"
+00722: 105  endinit
+00723: 105  initprop "control"
+00728: 110  newinit 1
+00733: 113  uint16 310
+00736: 113  initprop "fst_item_width"
+00741: 114  uint16 430
+00744: 114  initprop "fst_item_height"
+00749: 115  double 0.5
+00754: 115  initprop "sec_item_scale"
+00759: 116  uint16 215
+00762: 116  initprop "sec_item_height"
+00767: 117  uint16 155
+00770: 117  initprop "move_x_right"
+00775: 119  int8 100
+00777: 119  initprop "sec_item_y"
+00782: 122  int8 6
+00784: 122  initprop "visible_num"
+00789: 124  double 0.25
+00794: 124  initprop "dpCushion"
+00799: 125  uint16 150
+00802: 125  initprop "dpX"
+00807: 125  endinit
+00808: 125  initprop "Cfg"
+00813: 128  lambda (function () {
+    [sourceless code]
+})
+00818: 128  initprop "init"
+00823: 185  lambda (function () {
+    [sourceless code]
+})
+00828: 185  initprop "onTouchBegan"
+00833: 201  lambda (function () {
+    [sourceless code]
+})
+00838: 201  initprop "updateViews"
+00843: 290  lambda (function () {
+    [sourceless code]
+})
+00848: 290  initprop "updateViewsAlign"
+00853: 333  lambda (function () {
+    [sourceless code]
+})
+00858: 333  initprop "onTouchMoved"
+00863: 347  lambda (function () {
+    [sourceless code]
+})
+00868: 347  initprop "onTouchEnded"
+00873: 356  one
+00874: 356  initprop "Constant_Cushion_Left"
+00879: 357  int8 2
+00881: 357  initprop "Constant_Cushion_Right"
+00886: 359  zero
+00887: 359  initprop "Constant_MoveType_None"
+00892: 360  one
+00893: 360  initprop "Constant_MoveType_Left"
+00898: 361  int8 2
+00900: 361  initprop "Constant_MoveType_Right"
+00905: 364  lambda (function () {
+    [sourceless code]
+})
+00910: 364  initprop "doScrollByIdx"
+00915: 513  lambda (function () {
+    [sourceless code]
+})
+00920: 513  initprop "onTouchCancelled"
+00925: 513  endinit
+00926: 513  notearg
+00927: 513  call 1
+00930: 513  setprop "CardListView"
+00935: 513  popv
+00936: 519  name "xs"
+00941: 519  getprop "Views"
+00946: 519  getprop "CardListView"
+00951: 519  lambda (function () {
+    [sourceless code]
+})
+00956: 519  setprop "create"
+00961: 519  popv
+00962: 527  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  10  this
+00001:  10  dup
+00002:  10  callprop "_super"
+00007:  10  swap
+00008:  10  notearg
+00009:  10  call 0
+00012:  10  pop
+00013:  11  name "cc"
+00018:  11  dup
+00019:  11  callprop "associateWithNative"
+00024:  11  swap
+00025:  11  notearg
+00026:  11  this
+00027:  11  notearg
+00028:  11  name "cc"
+00033:  11  getprop "Layer"
+00038:  11  notearg
+00039:  11  call 2
+00042:  11  pop
+00043:  11  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:9 ---
+;; function object[1] getDataNum
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:91 ---
+loc   line  op
+----- ----  --
+main:
+00000:  92  this
+00001:  92  getprop "cardData"
+00006:  92  length "length"
+00011:  92  return
+00012:  92  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:91 ---
+;; function object[2] init
+;; function metadata object[2] nargs=0 bindings=6
+;; local[0] _visibleSize
+;; local[1] i
+;; local[2] _begin
+;; local[3] _cardSprite
+;; local[4] _offsetX
+;; local[5] _offsetY
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:128 ---
+loc   line  op
+----- ----  --
+main:
+00000: 130  this
+00001: 130  dup
+00002: 130  callprop "_super"
+00007: 130  swap
+00008: 130  notearg
+00009: 130  call 0
+00012: 130  false
+00013: 130  stricteq
+00014: 130  ifeq 21 (+7)
+00019: 130  false
+00020: 130  return
+00021: 132  name "xs"
+00026: 132  getprop "director"
+00031: 132  dup
+00032: 132  callprop "getVisibleSize"
+00037: 132  swap
+00038: 132  notearg
+00039: 132  call 0
+00042: 132  setlocal 0
+00045: 132  pop
+00046: 134  zero
+00047: 134  setlocal 1
+00050: 134  pop
+00051: 134  goto 579 (+528)
+00056: 136  loophead
+00057: 136  name "Date"
+00062: 136  undefined
+00063: 136  notearg
+00064: 136  new 0
+00067: 136  dup
+00068: 136  callprop "getTime"
+00073: 136  swap
+00074: 136  notearg
+00075: 136  call 0
+00078: 136  setlocal 2
+00081: 136  pop
+00082: 138  name "xs"
+00087: 138  getprop "Views"
+00092: 138  getprop "Card"
+00097: 138  getprop "Fight"
+00102: 138  dup
+00103: 138  callprop "create"
+00108: 138  swap
+00109: 138  notearg
+00110: 139  newinit 1
+00115: 139  this
+00116: 139  getprop "model"
+00121: 139  getprop "cardData"
+00126: 139  getlocal 1
+00129: 139  getelem
+00130: 139  initprop "id"
+00135: 139  endinit
+00136: 139  notearg
+00137: 140  newinit 1
+00142: 140  endinit
+00143: 140  notearg
+00144: 140  call 2
+00147: 140  setlocal 3
+00150: 140  pop
+00151: 144  name "xs"
+00156: 144  dup
+00157: 144  callprop "log"
+00162: 144  swap
+00163: 144  notearg
+00164: 144  string "end"
+00169: 144  notearg
+00170: 144  name "Date"
+00175: 144  undefined
+00176: 144  notearg
+00177: 144  new 0
+00180: 144  dup
+00181: 144  callprop "getTime"
+00186: 144  swap
+00187: 144  notearg
+00188: 144  call 0
+00191: 144  getlocal 2
+00194: 144  sub
+00195: 144  notearg
+00196: 144  call 2
+00199: 144  pop
+00200: 147  null
+00201: 147  setlocal 4
+00204: 147  pop
+00205: 148  null
+00206: 148  setlocal 5
+00209: 148  pop
+00210: 151  this
+00211: 151  getprop "Cfg"
+00216: 151  getprop "move_x_right"
+00221: 151  int8 2
+00223: 151  div
+00224: 151  getlocal 1
+00227: 151  this
+00228: 151  getprop "Cfg"
+00233: 151  getprop "move_x_right"
+00238: 151  mul
+00239: 151  add
+00240: 151  setlocal 4
+00243: 151  pop
+00244: 153  this
+00245: 153  getprop "model"
+00250: 153  getprop "logicPos"
+00255: 153  getlocal 1
+00258: 153  getlocal 4
+00261: 153  setelem
+00262: 153  pop
+00263: 155  getlocal 1
+00266: 155  zero
+00267: 155  stricteq
+00268: 155  ifeq 318 (+50)
+00273: 156  zero
+00274: 156  this
+00275: 156  getprop "Cfg"
+00280: 156  getprop "fst_item_width"
+00285: 156  int8 2
+00287: 156  div
+00288: 156  add
+00289: 156  setlocal 4
+00292: 156  pop
+00293: 157  zero
+00294: 157  this
+00295: 157  getprop "Cfg"
+00300: 157  getprop "fst_item_height"
+00305: 157  int8 2
+00307: 157  div
+00308: 157  add
+00309: 157  setlocal 5
+00312: 157  pop
+00313: 157  goto 385 (+72)
+00318: 160  zero
+00319: 160  this
+00320: 160  getprop "Cfg"
+00325: 160  getprop "fst_item_width"
+00330: 160  add
+00331: 160  getlocal 1
+00334: 160  one
+00335: 160  sub
+00336: 160  this
+00337: 160  getprop "Cfg"
+00342: 160  getprop "sec_item_scale"
+00347: 160  add
+00348: 160  this
+00349: 160  getprop "Cfg"
+00354: 160  getprop "move_x_right"
+00359: 160  mul
+00360: 160  add
+00361: 160  setlocal 4
+00364: 160  pop
+00365: 161  zero
+00366: 161  this
+00367: 161  getprop "Cfg"
+00372: 161  getprop "sec_item_height"
+00377: 161  int8 2
+00379: 161  div
+00380: 161  add
+00381: 161  setlocal 5
+00384: 161  pop
+00385: 166  name "xs"
+00390: 166  getprop "Utils"
+00395: 166  getprop "Node"
+00400: 166  dup
+00401: 166  callprop "attachNodes"
+00406: 166  swap
+00407: 166  notearg
+00408: 166  this
+00409: 166  notearg
+00410: 166  getlocal 3
+00413: 166  notearg
+00414: 166  newinit 1
+00419: 166  string "lb"
+00424: 166  initprop "desc"
+00429: 166  newinit 1
+00434: 166  getlocal 4
+00437: 166  initprop "x"
+00442: 166  getlocal 5
+00445: 166  initprop "y"
+00450: 166  endinit
+00451: 166  initprop "offset"
+00456: 166  endinit
+00457: 166  notearg
+00458: 166  call 3
+00461: 166  pop
+00462: 168  name "xs"
+00467: 168  dup
+00468: 168  callprop "dump"
+00473: 168  swap
+00474: 168  notearg
+00475: 168  string "pos"
+00480: 168  notearg
+00481: 168  getlocal 3
+00484: 168  dup
+00485: 168  callprop "getPosition"
+00490: 168  swap
+00491: 168  notearg
+00492: 168  call 0
+00495: 168  notearg
+00496: 168  call 2
+00499: 168  pop
+00500: 170  this
+00501: 170  getprop "view"
+00506: 170  getprop "cardViews"
+00511: 170  dup
+00512: 170  callprop "push"
+00517: 170  swap
+00518: 170  notearg
+00519: 170  getlocal 3
+00522: 170  notearg
+00523: 170  call 1
+00526: 170  pop
+00527: 172  getlocal 1
+00530: 172  zero
+00531: 172  strictne
+00532: 172  ifeq 564 (+32)
+00537: 173  getlocal 3
+00540: 173  dup
+00541: 173  callprop "setScale"
+00546: 173  swap
+00547: 173  notearg
+00548: 173  this
+00549: 173  getprop "Cfg"
+00554: 173  getprop "sec_item_scale"
+00559: 173  notearg
+00560: 173  call 1
+00563: 173  pop
+00564: 134  localinc 11
+00567: 134  getlocal 1
+00570: 134  pos
+00571: 134  dup
+00572: 134  one
+00573: 134  add
+00574: 134  setlocal 1
+00577: 134  pop
+00578: 134  pop
+00579: 134  loopentry
+00580: 134  getlocal 1
+00583: 134  this
+00584: 134  getprop "model"
+00589: 134  getprop "cardData"
+00594: 134  length "length"
+00599: 134  lt
+00600: 134  ifne 56 (-544)
+00605: 178  this
+00606: 178  dup
+00607: 178  callprop "setTouchMode"
+00612: 178  swap
+00613: 178  notearg
+00614: 178  name "cc"
+00619: 178  getprop "TOUCH_ONE_BY_ONE"
+00624: 178  notearg
+00625: 178  call 1
+00628: 178  pop
+00629: 179  this
+00630: 179  dup
+00631: 179  callprop "setTouchEnabled"
+00636: 179  swap
+00637: 179  notearg
+00638: 179  true
+00639: 179  notearg
+00640: 179  call 1
+00643: 179  pop
+00644: 181  true
+00645: 181  return
+00646: 181  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:128 ---
+;; function object[3] onTouchBegan
+;; function metadata object[3] nargs=2 bindings=2
+;; arg[0] touch
+;; arg[1] event
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:185 ---
+loc   line  op
+----- ----  --
+main:
+00000: 189  this
+00001: 189  getprop "control"
+00006: 189  this
+00007: 189  dup
+00008: 189  callprop "convertTouchToNodeSpace"
+00013: 189  swap
+00014: 189  notearg
+00015: 189  getarg 0
+00018: 189  notearg
+00019: 189  call 1
+00022: 189  setprop "beginTouchPoint"
+00027: 189  pop
+00028: 190  this
+00029: 190  getprop "control"
+00034: 190  this
+00035: 190  dup
+00036: 190  callprop "convertTouchToNodeSpace"
+00041: 190  swap
+00042: 190  notearg
+00043: 190  getarg 0
+00046: 190  notearg
+00047: 190  call 1
+00050: 190  setprop "lastTouchPoint"
+00055: 190  pop
+00056: 192  this
+00057: 192  getprop "control"
+00062: 192  this
+00063: 192  getprop "control"
+00068: 192  getprop "beginTouchPoint"
+00073: 192  setprop "endTouchPoint"
+00078: 192  pop
+00079: 193  this
+00080: 193  getprop "control"
+00085: 193  zero
+00086: 193  setprop "count"
+00091: 193  pop
+00092: 195  this
+00093: 195  getprop "control"
+00098: 195  this
+00099: 195  getprop "view"
+00104: 195  getprop "cardViews"
+00109: 195  zero
+00110: 195  getelem
+00111: 195  dup
+00112: 195  callprop "getPosition"
+00117: 195  swap
+00118: 195  notearg
+00119: 195  call 0
+00122: 195  getprop "x"
+00127: 195  setprop "xFstItemBegin"
+00132: 195  pop
+00133: 197  true
+00134: 197  return
+00135: 197  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:185 ---
+;; function object[4] updateViews
+;; function metadata object[4] nargs=0 bindings=8
+;; local[0] i
+;; local[1] posFstItemX
+;; local[2] _fixOffsetX
+;; local[3] _dstPosX
+;; local[4] _distanceLogic
+;; local[5] _distanceDrawX
+;; local[6] _distanceDrawY
+;; local[7] _per
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:201 ---
+loc   line  op
+----- ----  --
+main:
+00000: 203  zero
+00001: 203  setlocal 0
+00004: 203  pop
+00005: 203  goto 1469 (+1464)
+00010: 205  loophead
+00011: 205  this
+00012: 205  getprop "Cfg"
+00017: 205  getprop "move_x_right"
+00022: 205  int8 2
+00024: 205  div
+00025: 205  this
+00026: 205  getprop "control"
+00031: 205  getprop "fstIdx"
+00036: 205  this
+00037: 205  getprop "Cfg"
+00042: 205  getprop "move_x_right"
+00047: 205  mul
+00048: 205  sub
+00049: 205  setlocal 1
+00052: 205  pop
+00053: 208  this
+00054: 208  getprop "control"
+00059: 208  getprop "offsetUniX"
+00064: 208  setlocal 2
+00067: 208  pop
+00068: 213  getlocal 1
+00071: 213  this
+00072: 213  getprop "Cfg"
+00077: 213  getprop "move_x_right"
+00082: 213  getlocal 0
+00085: 213  mul
+00086: 213  add
+00087: 213  getlocal 2
+00090: 213  add
+00091: 213  setlocal 3
+00094: 213  pop
+00095: 215  this
+00096: 215  getprop "model"
+00101: 215  getprop "logicPos"
+00106: 215  getlocal 0
+00109: 215  getlocal 3
+00112: 215  setelem
+00113: 215  pop
+00114: 220  name "xs"
+00119: 220  getprop "Utils"
+00124: 220  getprop "Math"
+00129: 220  dup
+00130: 220  callprop "abs"
+00135: 220  swap
+00136: 220  notearg
+00137: 220  this
+00138: 220  getprop "Cfg"
+00143: 220  getprop "move_x_right"
+00148: 220  notearg
+00149: 220  call 1
+00152: 220  setlocal 4
+00155: 220  pop
+00156: 221  name "xs"
+00161: 221  getprop "Utils"
+00166: 221  getprop "Math"
+00171: 221  dup
+00172: 221  callprop "abs"
+00177: 221  swap
+00178: 221  notearg
+00179: 221  this
+00180: 221  getprop "Cfg"
+00185: 221  getprop "move_x_right"
+00190: 221  int8 2
+00192: 221  div
+00193: 221  this
+00194: 221  getprop "Cfg"
+00199: 221  getprop "fst_item_width"
+00204: 221  int8 2
+00206: 221  div
+00207: 221  add
+00208: 221  notearg
+00209: 221  call 1
+00212: 221  setlocal 5
+00215: 221  pop
+00216: 222  name "xs"
+00221: 222  getprop "Utils"
+00226: 222  getprop "Math"
+00231: 222  dup
+00232: 222  callprop "abs"
+00237: 222  swap
+00238: 222  notearg
+00239: 222  this
+00240: 222  getprop "Cfg"
+00245: 222  getprop "fst_item_height"
+00250: 222  int8 2
+00252: 222  div
+00253: 222  this
+00254: 222  getprop "Cfg"
+00259: 222  getprop "sec_item_height"
+00264: 222  int8 2
+00266: 222  div
+00267: 222  sub
+00268: 222  notearg
+00269: 222  call 1
+00272: 222  setlocal 6
+00275: 222  pop
+00276: 224  getlocal 3
+00279: 224  this
+00280: 224  getprop "Cfg"
+00285: 224  getprop "move_x_right"
+00290: 224  neg
+00291: 224  int8 2
+00293: 224  div
+00294: 224  gt
+00295: 224  and 319 (+24)
+00300: 224  pop
+00301: 224  getlocal 3
+00304: 224  this
+00305: 224  getprop "Cfg"
+00310: 224  getprop "move_x_right"
+00315: 224  int8 2
+00317: 224  div
+00318: 224  lt
+00319: 224  ifeq 572 (+253)
+00324: 226  name "xs"
+00329: 226  getprop "Utils"
+00334: 226  getprop "Math"
+00339: 226  dup
+00340: 226  callprop "abs"
+00345: 226  swap
+00346: 226  notearg
+00347: 226  this
+00348: 226  getprop "Cfg"
+00353: 226  getprop "move_x_right"
+00358: 226  int8 2
+00360: 226  div
+00361: 226  getlocal 3
+00364: 226  sub
+00365: 226  notearg
+00366: 226  call 1
+00369: 226  getlocal 4
+00372: 226  div
+00373: 226  setlocal 7
+00376: 226  pop
+00377: 231  this
+00378: 231  getprop "view"
+00383: 231  getprop "cardViews"
+00388: 231  getlocal 0
+00391: 231  getelem
+00392: 231  dup
+00393: 231  callprop "setScale"
+00398: 231  swap
+00399: 231  notearg
+00400: 231  this
+00401: 231  getprop "Cfg"
+00406: 231  getprop "sec_item_scale"
+00411: 231  one
+00412: 231  this
+00413: 231  getprop "Cfg"
+00418: 231  getprop "sec_item_scale"
+00423: 231  sub
+00424: 231  one
+00425: 231  getlocal 7
+00428: 231  sub
+00429: 231  mul
+00430: 231  add
+00431: 231  notearg
+00432: 231  call 1
+00435: 231  pop
+00436: 233  this
+00437: 233  getprop "view"
+00442: 233  getprop "cardViews"
+00447: 233  getlocal 0
+00450: 233  getelem
+00451: 233  dup
+00452: 233  callprop "setPositionX"
+00457: 233  swap
+00458: 233  notearg
+00459: 233  this
+00460: 233  getprop "Cfg"
+00465: 233  getprop "fst_item_width"
+00470: 233  int8 2
+00472: 233  div
+00473: 233  getlocal 5
+00476: 233  getlocal 7
+00479: 233  mul
+00480: 233  sub
+00481: 233  notearg
+00482: 233  call 1
+00485: 233  pop
+00486: 234  this
+00487: 234  getprop "view"
+00492: 234  getprop "cardViews"
+00497: 234  getlocal 0
+00500: 234  getelem
+00501: 234  dup
+00502: 234  callprop "setPositionY"
+00507: 234  swap
+00508: 234  notearg
+00509: 234  this
+00510: 234  getprop "Cfg"
+00515: 234  getprop "sec_item_height"
+00520: 234  int8 2
+00522: 234  div
+00523: 234  getlocal 6
+00526: 234  one
+00527: 234  getlocal 7
+00530: 234  sub
+00531: 234  mul
+00532: 234  add
+00533: 234  notearg
+00534: 234  call 1
+00537: 234  pop
+00538: 236  this
+00539: 236  getprop "view"
+00544: 236  getprop "cardViews"
+00549: 236  getlocal 0
+00552: 236  getelem
+00553: 236  dup
+00554: 236  callprop "setVisible"
+00559: 236  swap
+00560: 236  notearg
+00561: 236  true
+00562: 236  notearg
+00563: 236  call 1
+00566: 236  pop
+00567: 236  goto 1394 (+827)
+00572: 238  getlocal 3
+00575: 238  this
+00576: 238  getprop "Cfg"
+00581: 238  getprop "move_x_right"
+00586: 238  int8 2
+00588: 238  div
+00589: 238  gt
+00590: 238  and 626 (+36)
+00595: 238  pop
+00596: 238  getlocal 3
+00599: 238  this
+00600: 238  getprop "Cfg"
+00605: 238  getprop "move_x_right"
+00610: 238  this
+00611: 238  getprop "Cfg"
+00616: 238  getprop "move_x_right"
+00621: 238  int8 2
+00623: 238  div
+00624: 238  add
+00625: 238  lt
+00626: 238  ifeq 889 (+263)
+00631: 240  name "xs"
+00636: 240  getprop "Utils"
+00641: 240  getprop "Math"
+00646: 240  dup
+00647: 240  callprop "abs"
+00652: 240  swap
+00653: 240  notearg
+00654: 240  this
+00655: 240  getprop "Cfg"
+00660: 240  getprop "move_x_right"
+00665: 240  this
+00666: 240  getprop "Cfg"
+00671: 240  getprop "move_x_right"
+00676: 240  int8 2
+00678: 240  div
+00679: 240  add
+00680: 240  getlocal 3
+00683: 240  sub
+00684: 240  notearg
+00685: 240  call 1
+00688: 240  getlocal 4
+00691: 240  div
+00692: 240  setlocal 7
+00695: 240  pop
+00696: 246  this
+00697: 246  getprop "view"
+00702: 246  getprop "cardViews"
+00707: 246  getlocal 0
+00710: 246  getelem
+00711: 246  dup
+00712: 246  callprop "setScale"
+00717: 246  swap
+00718: 246  notearg
+00719: 246  this
+00720: 246  getprop "Cfg"
+00725: 246  getprop "sec_item_scale"
+00730: 246  one
+00731: 246  this
+00732: 246  getprop "Cfg"
+00737: 246  getprop "sec_item_scale"
+00742: 246  sub
+00743: 246  getlocal 7
+00746: 246  mul
+00747: 246  add
+00748: 246  notearg
+00749: 246  call 1
+00752: 246  pop
+00753: 248  this
+00754: 248  getprop "view"
+00759: 248  getprop "cardViews"
+00764: 248  getlocal 0
+00767: 248  getelem
+00768: 248  dup
+00769: 248  callprop "setPositionX"
+00774: 248  swap
+00775: 248  notearg
+00776: 248  this
+00777: 248  getprop "Cfg"
+00782: 248  getprop "fst_item_width"
+00787: 248  int8 2
+00789: 248  div
+00790: 248  getlocal 5
+00793: 248  one
+00794: 248  getlocal 7
+00797: 248  sub
+00798: 248  mul
+00799: 248  add
+00800: 248  notearg
+00801: 248  call 1
+00804: 248  pop
+00805: 249  this
+00806: 249  getprop "view"
+00811: 249  getprop "cardViews"
+00816: 249  getlocal 0
+00819: 249  getelem
+00820: 249  dup
+00821: 249  callprop "setPositionY"
+00826: 249  swap
+00827: 249  notearg
+00828: 249  this
+00829: 249  getprop "Cfg"
+00834: 249  getprop "sec_item_height"
+00839: 249  int8 2
+00841: 249  div
+00842: 249  getlocal 6
+00845: 249  getlocal 7
+00848: 249  mul
+00849: 249  add
+00850: 249  notearg
+00851: 249  call 1
+00854: 249  pop
+00855: 251  this
+00856: 251  getprop "view"
+00861: 251  getprop "cardViews"
+00866: 251  getlocal 0
+00869: 251  getelem
+00870: 251  dup
+00871: 251  callprop "setVisible"
+00876: 251  swap
+00877: 251  notearg
+00878: 251  true
+00879: 251  notearg
+00880: 251  call 1
+00883: 251  pop
+00884: 251  goto 1394 (+510)
+00889: 253  getlocal 3
+00892: 253  this
+00893: 253  getprop "Cfg"
+00898: 253  getprop "move_x_right"
+00903: 253  int8 2
+00905: 253  div
+00906: 253  stricteq
+00907: 253  ifeq 1059 (+152)
+00912: 255  this
+00913: 255  getprop "view"
+00918: 255  getprop "cardViews"
+00923: 255  getlocal 0
+00926: 255  getelem
+00927: 255  dup
+00928: 255  callprop "setScale"
+00933: 255  swap
+00934: 255  notearg
+00935: 255  one
+00936: 255  notearg
+00937: 255  call 1
+00940: 255  pop
+00941: 257  this
+00942: 257  getprop "view"
+00947: 257  getprop "cardViews"
+00952: 257  getlocal 0
+00955: 257  getelem
+00956: 257  dup
+00957: 257  callprop "setPositionX"
+00962: 257  swap
+00963: 257  notearg
+00964: 257  this
+00965: 257  getprop "Cfg"
+00970: 257  getprop "fst_item_width"
+00975: 257  int8 2
+00977: 257  div
+00978: 257  notearg
+00979: 257  call 1
+00982: 257  pop
+00983: 258  this
+00984: 258  getprop "view"
+00989: 258  getprop "cardViews"
+00994: 258  getlocal 0
+00997: 258  getelem
+00998: 258  dup
+00999: 258  callprop "setPositionY"
+01004: 258  swap
+01005: 258  notearg
+01006: 258  this
+01007: 258  getprop "Cfg"
+01012: 258  getprop "fst_item_height"
+01017: 258  int8 2
+01019: 258  div
+01020: 258  notearg
+01021: 258  call 1
+01024: 258  pop
+01025: 260  this
+01026: 260  getprop "view"
+01031: 260  getprop "cardViews"
+01036: 260  getlocal 0
+01039: 260  getelem
+01040: 260  dup
+01041: 260  callprop "setVisible"
+01046: 260  swap
+01047: 260  notearg
+01048: 260  true
+01049: 260  notearg
+01050: 260  call 1
+01053: 260  pop
+01054: 260  goto 1394 (+340)
+01059: 262  getlocal 3
+01062: 262  this
+01063: 262  getprop "Cfg"
+01068: 262  getprop "move_x_right"
+01073: 262  neg
+01074: 262  int8 2
+01076: 262  div
+01077: 262  le
+01078: 262  ifeq 1229 (+151)
+01083: 264  this
+01084: 264  getprop "view"
+01089: 264  getprop "cardViews"
+01094: 264  getlocal 0
+01097: 264  getelem
+01098: 264  dup
+01099: 264  callprop "setScale"
+01104: 264  swap
+01105: 264  notearg
+01106: 264  this
+01107: 264  getprop "Cfg"
+01112: 264  getprop "sec_item_scale"
+01117: 264  notearg
+01118: 264  call 1
+01121: 264  pop
+01122: 266  this
+01123: 266  getprop "view"
+01128: 266  getprop "cardViews"
+01133: 266  getlocal 0
+01136: 266  getelem
+01137: 266  dup
+01138: 266  callprop "setPositionX"
+01143: 266  swap
+01144: 266  notearg
+01145: 266  getlocal 3
+01148: 266  notearg
+01149: 266  call 1
+01152: 266  pop
+01153: 267  this
+01154: 267  getprop "view"
+01159: 267  getprop "cardViews"
+01164: 267  getlocal 0
+01167: 267  getelem
+01168: 267  dup
+01169: 267  callprop "setPositionY"
+01174: 267  swap
+01175: 267  notearg
+01176: 267  this
+01177: 267  getprop "Cfg"
+01182: 267  getprop "sec_item_height"
+01187: 267  int8 2
+01189: 267  div
+01190: 267  notearg
+01191: 267  call 1
+01194: 267  pop
+01195: 269  this
+01196: 269  getprop "view"
+01201: 269  getprop "cardViews"
+01206: 269  getlocal 0
+01209: 269  getelem
+01210: 269  dup
+01211: 269  callprop "setVisible"
+01216: 269  swap
+01217: 269  notearg
+01218: 269  true
+01219: 269  notearg
+01220: 269  call 1
+01223: 269  pop
+01224: 269  goto 1394 (+170)
+01229: 273  this
+01230: 273  getprop "view"
+01235: 273  getprop "cardViews"
+01240: 273  getlocal 0
+01243: 273  getelem
+01244: 273  dup
+01245: 273  callprop "setScale"
+01250: 273  swap
+01251: 273  notearg
+01252: 273  this
+01253: 273  getprop "Cfg"
+01258: 273  getprop "sec_item_scale"
+01263: 273  notearg
+01264: 273  call 1
+01267: 273  pop
+01268: 275  this
+01269: 275  getprop "view"
+01274: 275  getprop "cardViews"
+01279: 275  getlocal 0
+01282: 275  getelem
+01283: 275  dup
+01284: 275  callprop "setPositionX"
+01289: 275  swap
+01290: 275  notearg
+01291: 275  this
+01292: 275  getprop "Cfg"
+01297: 275  getprop "fst_item_width"
+01302: 275  this
+01303: 275  getprop "Cfg"
+01308: 275  getprop "move_x_right"
+01313: 275  sub
+01314: 275  getlocal 3
+01317: 275  add
+01318: 275  notearg
+01319: 275  call 1
+01322: 275  pop
+01323: 276  this
+01324: 276  getprop "view"
+01329: 276  getprop "cardViews"
+01334: 276  getlocal 0
+01337: 276  getelem
+01338: 276  dup
+01339: 276  callprop "setPositionY"
+01344: 276  swap
+01345: 276  notearg
+01346: 276  this
+01347: 276  getprop "Cfg"
+01352: 276  getprop "sec_item_height"
+01357: 276  int8 2
+01359: 276  div
+01360: 276  notearg
+01361: 276  call 1
+01364: 276  pop
+01365: 278  this
+01366: 278  getprop "view"
+01371: 278  getprop "cardViews"
+01376: 278  getlocal 0
+01379: 278  getelem
+01380: 278  dup
+01381: 278  callprop "setVisible"
+01386: 278  swap
+01387: 278  notearg
+01388: 278  true
+01389: 278  notearg
+01390: 278  call 1
+01393: 278  pop
+01394: 281  getlocal 0
+01397: 281  zero
+01398: 281  stricteq
+01399: 281  ifeq 1454 (+55)
+01404: 282  name "xs"
+01409: 282  dup
+01410: 282  callprop "dump"
+01415: 282  swap
+01416: 282  notearg
+01417: 282  string "000"
+01422: 282  notearg
+01423: 282  this
+01424: 282  getprop "view"
+01429: 282  getprop "cardViews"
+01434: 282  getlocal 0
+01437: 282  getelem
+01438: 282  dup
+01439: 282  callprop "getPositionX"
+01444: 282  swap
+01445: 282  notearg
+01446: 282  call 0
+01449: 282  notearg
+01450: 282  call 2
+01453: 282  pop
+01454: 203  localinc 11
+01457: 203  getlocal 0
+01460: 203  pos
+01461: 203  dup
+01462: 203  one
+01463: 203  add
+01464: 203  setlocal 0
+01467: 203  pop
+01468: 203  pop
+01469: 203  loopentry
+01470: 203  getlocal 0
+01473: 203  this
+01474: 203  getprop "view"
+01479: 203  getprop "cardViews"
+01484: 203  length "length"
+01489: 203  lt
+01490: 203  ifne 10 (-1480)
+01495: 287  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:201 ---
+;; function object[5] updateViewsAlign
+;; function metadata object[5] nargs=0 bindings=4
+;; local[0] _moveDirection
+;; local[1] _vX
+;; local[2] _tmp
+;; local[3] _time
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:290 ---
+loc   line  op
+----- ----  --
+main:
+00000: 292  this
+00001: 292  dup
+00002: 292  callprop "dump"
+00007: 292  swap
+00008: 292  notearg
+00009: 292  string "this.control.count"
+00014: 292  notearg
+00015: 292  this
+00016: 292  getprop "control"
+00021: 292  propinc "count"
+00027: 292  dup
+00028: 292  getprop "count"
+00033: 292  pos
+00034: 292  dup
+00035: 292  one
+00036: 292  add
+00037: 292  pick 2
+00039: 292  swap
+00040: 292  setprop "count"
+00045: 292  pop
+00046: 292  notearg
+00047: 292  call 2
+00050: 292  pop
+00051: 306  this
+00052: 306  getprop "Constant_MoveType_None"
+00057: 306  setlocal 0
+00060: 306  pop
+00061: 308  getlocal 1
+00064: 308  zero
+00065: 308  gt
+00066: 308  ifeq 86 (+20)
+00071: 309  this
+00072: 309  getprop "Constant_MoveType_Right"
+00077: 309  setlocal 0
+00080: 309  pop
+00081: 309  goto 106 (+25)
+00086: 311  getlocal 1
+00089: 311  zero
+00090: 311  lt
+00091: 311  ifeq 106 (+15)
+00096: 312  this
+00097: 312  getprop "Constant_MoveType_Left"
+00102: 312  setlocal 0
+00105: 312  pop
+00106: 315  this
+00107: 315  getprop "control"
+00112: 315  getprop "endTouchPoint"
+00117: 315  getprop "x"
+00122: 315  this
+00123: 315  getprop "control"
+00128: 315  getprop "beginTouchPoint"
+00133: 315  getprop "x"
+00138: 315  sub
+00139: 315  setlocal 1
+00142: 315  pop
+00143: 317  getlocal 1
+00146: 317  this
+00147: 317  getprop "Cfg"
+00152: 317  getprop "move_x_right"
+00157: 317  div
+00158: 317  setlocal 2
+00161: 317  pop
+00162: 319  getlocal 2
+00165: 319  zero
+00166: 319  lt
+00167: 319  ifeq 187 (+20)
+00172: 320  getlocal 2
+00175: 320  int8 -1
+00177: 320  add
+00178: 320  setlocal 2
+00181: 320  pop
+00182: 320  goto 196 (+14)
+00187: 323  getlocal 2
+00190: 323  one
+00191: 323  add
+00192: 323  setlocal 2
+00195: 323  pop
+00196: 326  name "xs"
+00201: 326  getprop "Utils"
+00206: 326  dup
+00207: 326  callprop "floorSafe"
+00212: 326  swap
+00213: 326  notearg
+00214: 326  this
+00215: 326  getprop "control"
+00220: 326  getprop "count"
+00225: 326  int8 3
+00227: 326  div
+00228: 326  notearg
+00229: 326  call 1
+00232: 326  name "xs"
+00237: 326  getprop "Utils"
+00242: 326  dup
+00243: 326  callprop "floorSafe"
+00248: 326  swap
+00249: 326  notearg
+00250: 326  getlocal 2
+00253: 326  notearg
+00254: 326  call 1
+00257: 326  add
+00258: 326  setlocal 3
+00261: 326  pop
+00262: 328  name "xs"
+00267: 328  dup
+00268: 328  callprop "dump"
+00273: 328  swap
+00274: 328  notearg
+00275: 328  string "this.control2"
+00280: 328  notearg
+00281: 328  newarray 2
+00285: 328  this
+00286: 328  getprop "control"
+00291: 328  initelem_array 0
+00295: 328  getlocal 3
+00298: 328  initelem_array 1
+00302: 328  endinit
+00303: 328  notearg
+00304: 328  call 2
+00307: 328  pop
+00308: 329  this
+00309: 329  dup
+00310: 329  callprop "doScrollByIdx"
+00315: 329  swap
+00316: 329  notearg
+00317: 329  true
+00318: 329  notearg
+00319: 329  int8 -1
+00321: 329  getlocal 3
+00324: 329  mul
+00325: 329  notearg
+00326: 329  call 2
+00329: 329  pop
+00330: 330  this
+00331: 330  dup
+00332: 330  callprop "setTouchEnabled"
+00337: 330  swap
+00338: 330  notearg
+00339: 330  false
+00340: 330  notearg
+00341: 330  call 1
+00344: 330  pop
+00345: 330  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:290 ---
+;; function object[6] onTouchMoved
+;; function metadata object[6] nargs=2 bindings=3
+;; arg[0] touch
+;; arg[1] event
+;; local[0] _pointTouch
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:333 ---
+loc   line  op
+----- ----  --
+main:
+00000: 336  this
+00001: 336  dup
+00002: 336  callprop "convertTouchToNodeSpace"
+00007: 336  swap
+00008: 336  notearg
+00009: 336  getarg 0
+00012: 336  notearg
+00013: 336  call 1
+00016: 336  setlocal 0
+00019: 336  pop
+00020: 339  this
+00021: 339  getprop "control"
+00026: 339  getlocal 0
+00029: 339  getprop "x"
+00034: 339  this
+00035: 339  getprop "control"
+00040: 339  getprop "beginTouchPoint"
+00045: 339  getprop "x"
+00050: 339  sub
+00051: 339  setprop "offsetUniX"
+00056: 339  pop
+00057: 341  this
+00058: 341  dup
+00059: 341  callprop "updateViews"
+00064: 341  swap
+00065: 341  notearg
+00066: 341  call 0
+00069: 341  pop
+00070: 343  undefined
+00071: 343  return
+00072: 343  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:333 ---
+;; function object[7] onTouchEnded
+;; function metadata object[7] nargs=2 bindings=2
+;; arg[0] touch
+;; arg[1] event
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:347 ---
+loc   line  op
+----- ----  --
+main:
+00000: 350  this
+00001: 350  getprop "control"
+00006: 350  this
+00007: 350  dup
+00008: 350  callprop "convertTouchToNodeSpace"
+00013: 350  swap
+00014: 350  notearg
+00015: 350  getarg 0
+00018: 350  notearg
+00019: 350  call 1
+00022: 350  setprop "endTouchPoint"
+00027: 350  pop
+00028: 351  this
+00029: 351  dup
+00030: 351  callprop "updateViewsAlign"
+00035: 351  swap
+00036: 351  notearg
+00037: 351  call 0
+00040: 351  pop
+00041: 351  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:347 ---
+;; function object[8] doScrollByIdx
+;; function metadata object[8] nargs=2 bindings=20
+;; arg[0] useCushion
+;; arg[1] moveIdx
+;; local[0] _dp
+;; local[1] _cushion
+;; local[2] _actionMoves
+;; local[3] _actionScales
+;; local[4] _actions
+;; local[5] i
+;; local[6] posFstItemX
+;; local[7] _fixOffsetX
+;; local[8] _dstPosX
+;; local[9] _distanceLogic
+;; local[10] _distanceDraw
+;; local[11] _actionMove
+;; local[12] _actionScale
+;; local[13] _moveX
+;; local[14] _scaleX
+;; local[15] _actionCushion
+;; local[16] _dpCushion
+;; local[17] _actionOpenTouch
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=1118 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:364 ---
+loc   line  op
+----- ----  --
+main:
+00000: 367  name "xs"
+00005: 367  dup
+00006: 367  callprop "dump"
+00011: 367  swap
+00012: 367  notearg
+00013: 367  string "moveIdx"
+00018: 367  notearg
+00019: 367  newarray 1
+00023: 367  getarg 1
+00026: 367  initelem_array 0
+00030: 367  endinit
+00031: 367  notearg
+00032: 367  call 2
+00035: 367  pop
+00036: 371  double 0.2
+00041: 371  setlocal 0
+00044: 371  pop
+00045: 377  null
+00046: 377  setlocal 1
+00049: 377  pop
+00050: 379  this
+00051: 379  getprop "control"
+00056: 379  dup
+00057: 379  getprop "fstIdx"
+00062: 379  getarg 1
+00065: 379  add
+00066: 379  setprop "fstIdx"
+00071: 379  pop
+00072: 381  this
+00073: 381  getprop "control"
+00078: 381  getprop "fstIdx"
+00083: 381  this
+00084: 381  getprop "model"
+00089: 381  dup
+00090: 381  callprop "getDataNum"
+00095: 381  swap
+00096: 381  notearg
+00097: 381  call 0
+00100: 381  this
+00101: 381  getprop "Cfg"
+00106: 381  getprop "visible_num"
+00111: 381  sub
+00112: 381  ge
+00113: 381  ifeq 169 (+56)
+00118: 382  this
+00119: 382  getprop "control"
+00124: 382  this
+00125: 382  getprop "model"
+00130: 382  dup
+00131: 382  callprop "getDataNum"
+00136: 382  swap
+00137: 382  notearg
+00138: 382  call 0
+00141: 382  this
+00142: 382  getprop "Cfg"
+00147: 382  getprop "visible_num"
+00152: 382  sub
+00153: 382  setprop "fstIdx"
+00158: 382  pop
+00159: 383  this
+00160: 383  getprop "Constant_Cushion_Right"
+00165: 383  setlocal 1
+00168: 383  pop
+00169: 385  this
+00170: 385  getprop "control"
+00175: 385  getprop "fstIdx"
+00180: 385  zero
+00181: 385  le
+00182: 385  ifeq 210 (+28)
+00187: 386  this
+00188: 386  getprop "control"
+00193: 386  zero
+00194: 386  setprop "fstIdx"
+00199: 386  pop
+00200: 387  this
+00201: 387  getprop "Constant_Cushion_Left"
+00206: 387  setlocal 1
+00209: 387  pop
+00210: 391  name "xs"
+00215: 391  dup
+00216: 391  callprop "dump"
+00221: 391  swap
+00222: 391  notearg
+00223: 391  string "beforeAction"
+00228: 391  notearg
+00229: 391  newinit 1
+00234: 392  this
+00235: 392  getprop "control"
+00240: 392  getprop "fstIdx"
+00245: 392  initprop "this.control.fstIdx"
+00250: 392  endinit
+00251: 392  notearg
+00252: 392  call 2
+00255: 392  pop
+00256: 396  newarray 0
+00260: 396  endinit
+00261: 396  setlocal 2
+00264: 396  pop
+00265: 397  newarray 0
+00269: 397  endinit
+00270: 397  setlocal 3
+00273: 397  pop
+00274: 398  newarray 0
+00278: 398  endinit
+00279: 398  setlocal 4
+00282: 398  pop
+00283: 400  zero
+00284: 400  setlocal 5
+00287: 400  pop
+00288: 400  goto 1044 (+756)
+00293: 403  loophead
+00294: 403  this
+00295: 403  getprop "Cfg"
+00300: 403  getprop "fst_item_width"
+00305: 403  int8 2
+00307: 403  div
+00308: 403  setlocal 6
+00311: 403  pop
+00312: 406  this
+00313: 406  getprop "control"
+00318: 406  getprop "offsetUniX"
+00323: 406  setlocal 7
+00326: 406  pop
+00327: 411  getlocal 6
+00330: 411  this
+00331: 411  getprop "Cfg"
+00336: 411  getprop "move_x_right"
+00341: 411  getlocal 5
+00344: 411  mul
+00345: 411  add
+00346: 411  getlocal 7
+00349: 411  add
+00350: 411  setlocal 8
+00353: 411  pop
+00354: 413  this
+00355: 413  getprop "model"
+00360: 413  getprop "logicPos"
+00365: 413  getlocal 5
+00368: 413  getlocal 8
+00371: 413  setelem
+00372: 413  pop
+00373: 418  name "xs"
+00378: 418  getprop "Utils"
+00383: 418  getprop "Math"
+00388: 418  dup
+00389: 418  callprop "abs"
+00394: 418  swap
+00395: 418  notearg
+00396: 418  this
+00397: 418  getprop "Cfg"
+00402: 418  getprop "move_x_right"
+00407: 418  notearg
+00408: 418  call 1
+00411: 418  setlocal 9
+00414: 418  pop
+00415: 419  name "xs"
+00420: 419  getprop "Utils"
+00425: 419  getprop "Math"
+00430: 419  dup
+00431: 419  callprop "abs"
+00436: 419  swap
+00437: 419  notearg
+00438: 419  this
+00439: 419  getprop "Cfg"
+00444: 419  getprop "move_x_right"
+00449: 419  int8 2
+00451: 419  div
+00452: 419  this
+00453: 419  getprop "Cfg"
+00458: 419  getprop "fst_item_width"
+00463: 419  int8 2
+00465: 419  div
+00466: 419  add
+00467: 419  notearg
+00468: 419  call 1
+00471: 419  setlocal 10
+00474: 419  pop
+00475: 421  null
+00476: 421  setlocal 11
+00479: 421  pop
+00480: 422  null
+00481: 422  setlocal 12
+00484: 422  pop
+00485: 426  this
+00486: 426  getprop "Cfg"
+00491: 426  getprop "fst_item_width"
+00496: 426  int8 2
+00498: 426  div
+00499: 426  setlocal 6
+00502: 426  pop
+00503: 427  null
+00504: 427  setlocal 13
+00507: 427  pop
+00508: 428  null
+00509: 428  setlocal 14
+00512: 428  pop
+00513: 430  getlocal 5
+00516: 430  this
+00517: 430  getprop "control"
+00522: 430  getprop "fstIdx"
+00527: 430  lt
+00528: 430  ifeq 588 (+60)
+00533: 431  getlocal 6
+00536: 431  this
+00537: 431  getprop "control"
+00542: 431  getprop "fstIdx"
+00547: 431  getlocal 5
+00550: 431  sub
+00551: 431  this
+00552: 431  getprop "Cfg"
+00557: 431  getprop "move_x_right"
+00562: 431  mul
+00563: 431  sub
+00564: 431  setlocal 13
+00567: 431  pop
+00568: 432  this
+00569: 432  getprop "Cfg"
+00574: 432  getprop "sec_item_scale"
+00579: 432  setlocal 14
+00582: 432  pop
+00583: 432  goto 675 (+92)
+00588: 434  getlocal 5
+00591: 434  this
+00592: 434  getprop "control"
+00597: 434  getprop "fstIdx"
+00602: 434  gt
+00603: 434  ifeq 663 (+60)
+00608: 435  getlocal 6
+00611: 435  getlocal 5
+00614: 435  this
+00615: 435  getprop "control"
+00620: 435  getprop "fstIdx"
+00625: 435  sub
+00626: 435  this
+00627: 435  getprop "Cfg"
+00632: 435  getprop "move_x_right"
+00637: 435  mul
+00638: 435  add
+00639: 435  setlocal 13
+00642: 435  pop
+00643: 436  this
+00644: 436  getprop "Cfg"
+00649: 436  getprop "sec_item_scale"
+00654: 436  setlocal 14
+00657: 436  pop
+00658: 436  goto 675 (+17)
+00663: 439  getlocal 6
+00666: 439  setlocal 13
+00669: 439  pop
+00670: 440  one
+00671: 440  setlocal 14
+00674: 440  pop
+00675: 443  getlocal 5
+00678: 443  zero
+00679: 443  stricteq
+00680: 443  ifeq 762 (+82)
+00685: 444  name "xs"
+00690: 444  dup
+00691: 444  callprop "dump"
+00696: 444  swap
+00697: 444  notearg
+00698: 444  string "111"
+00703: 444  notearg
+00704: 444  newinit 1
+00709: 445  getlocal 13
+00712: 445  initprop "_moveX"
+00717: 446  getlocal 14
+00720: 446  initprop "_scaleX"
+00725: 447  this
+00726: 447  getprop "view"
+00731: 447  getprop "cardViews"
+00736: 447  getlocal 5
+00739: 447  getelem
+00740: 447  dup
+00741: 447  callprop "getPositionX"
+00746: 447  swap
+00747: 447  notearg
+00748: 447  call 0
+00751: 447  initprop "_posX"
+00756: 447  endinit
+00757: 447  notearg
+00758: 447  call 2
+00761: 447  pop
+00762: 452  name "cc"
+00767: 452  getprop "MoveTo"
+00772: 452  dup
+00773: 452  callprop "create"
+00778: 452  swap
+00779: 452  notearg
+00780: 452  getlocal 0
+00783: 452  notearg
+00784: 452  name "cc"
+00789: 452  dup
+00790: 452  callprop "p"
+00795: 452  swap
+00796: 452  notearg
+00797: 452  getlocal 13
+00800: 452  notearg
+00801: 452  this
+00802: 452  getprop "view"
+00807: 452  getprop "cardViews"
+00812: 452  getlocal 5
+00815: 452  getelem
+00816: 452  dup
+00817: 452  callprop "getPosition"
+00822: 452  swap
+00823: 452  notearg
+00824: 452  call 0
+00827: 452  getprop "y"
+00832: 452  notearg
+00833: 452  call 2
+00836: 452  notearg
+00837: 452  call 2
+00840: 452  setlocal 11
+00843: 452  pop
+00844: 453  name "cc"
+00849: 453  getprop "ScaleTo"
+00854: 453  dup
+00855: 453  callprop "create"
+00860: 453  swap
+00861: 453  notearg
+00862: 453  getlocal 0
+00865: 453  notearg
+00866: 453  getlocal 14
+00869: 453  notearg
+00870: 453  call 2
+00873: 453  setlocal 12
+00876: 453  pop
+00877: 455  name "cc"
+00882: 455  getprop "TargetedAction"
+00887: 455  dup
+00888: 455  callprop "create"
+00893: 455  swap
+00894: 455  notearg
+00895: 455  this
+00896: 455  getprop "view"
+00901: 455  getprop "cardViews"
+00906: 455  getlocal 5
+00909: 455  getelem
+00910: 455  notearg
+00911: 455  getlocal 11
+00914: 455  notearg
+00915: 455  call 2
+00918: 455  setlocal 11
+00921: 455  pop
+00922: 456  name "cc"
+00927: 456  getprop "TargetedAction"
+00932: 456  dup
+00933: 456  callprop "create"
+00938: 456  swap
+00939: 456  notearg
+00940: 456  this
+00941: 456  getprop "view"
+00946: 456  getprop "cardViews"
+00951: 456  getlocal 5
+00954: 456  getelem
+00955: 456  notearg
+00956: 456  getlocal 12
+00959: 456  notearg
+00960: 456  call 2
+00963: 456  setlocal 12
+00966: 456  pop
+00967: 464  getlocal 4
+00970: 464  dup
+00971: 464  callprop "push"
+00976: 464  swap
+00977: 464  notearg
+00978: 465  name "xs"
+00983: 465  getprop "Utils"
+00988: 465  getprop "Action"
+00993: 465  dup
+00994: 465  callprop "combineSpawn"
+00999: 465  swap
+01000: 465  notearg
+01001: 466  newarray 2
+01005: 466  getlocal 11
+01008: 466  initelem_array 0
+01012: 466  getlocal 12
+01015: 466  initelem_array 1
+01019: 466  endinit
+01020: 466  notearg
+01021: 466  call 1
+01024: 466  notearg
+01025: 466  call 1
+01028: 466  pop
+01029: 400  localinc 11
+01032: 400  getlocal 5
+01035: 400  pos
+01036: 400  dup
+01037: 400  one
+01038: 400  add
+01039: 400  setlocal 5
+01042: 400  pop
+01043: 400  pop
+01044: 400  loopentry
+01045: 400  getlocal 5
+01048: 400  this
+01049: 400  getprop "view"
+01054: 400  getprop "cardViews"
+01059: 400  length "length"
+01064: 400  lt
+01065: 400  ifne 293 (-772)
+01070: 473  null
+01071: 473  setlocal 15
+01074: 473  pop
+01075: 474  this
+01076: 474  getprop "Cfg"
+01081: 474  getprop "dpCushion"
+01086: 474  setlocal 16
+01089: 474  pop
+01090: 475  getlocal 1
+01093: 475  null
+01094: 475  strictne
+01095: 475  ifeq 1100 (+5)
+01100: 481  name "cc"
+01105: 481  getprop "CallFunc"
+01110: 481  dup
+01111: 481  callprop "create"
+01116: 481  swap
+01117: 481  notearg
+01118: 482  lambda (function () {
+    [sourceless code]
+})
+01123: 482  dup
+01124: 482  callprop "bind"
+01129: 482  swap
+01130: 482  notearg
+01131: 495  this
+01132: 495  notearg
+01133: 495  call 1
+01136: 495  notearg
+01137: 495  call 1
+01140: 495  setlocal 17
+01143: 495  pop
+01144: 499  this
+01145: 499  dup
+01146: 499  callprop "runAction"
+01151: 499  swap
+01152: 499  notearg
+01153: 500  name "xs"
+01158: 500  getprop "Utils"
+01163: 500  getprop "Action"
+01168: 500  dup
+01169: 500  callprop "combineSequenceWithTarget"
+01174: 500  swap
+01175: 500  notearg
+01176: 501  newarray 2
+01180: 502  name "xs"
+01185: 502  getprop "Utils"
+01190: 502  getprop "Action"
+01195: 502  dup
+01196: 502  callprop "combineSpawn"
+01201: 502  swap
+01202: 502  notearg
+01203: 502  getlocal 4
+01206: 502  notearg
+01207: 502  call 1
+01210: 502  initelem_array 0
+01214: 503  getlocal 17
+01217: 503  initelem_array 1
+01221: 503  endinit
+01222: 503  notearg
+01223: 505  this
+01224: 505  notearg
+01225: 505  call 2
+01228: 505  notearg
+01229: 505  call 1
+01232: 505  pop
+01233: 510  this
+01234: 510  true
+01235: 510  setprop "ignore"
+01240: 510  pop
+01241: 510  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:364 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=1
+;; local[0] i
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:482 ---
+loc   line  op
+----- ----  --
+main:
+00000: 483  this
+00001: 483  dup
+00002: 483  callprop "setTouchEnabled"
+00007: 483  swap
+00008: 483  notearg
+00009: 483  true
+00010: 483  notearg
+00011: 483  call 1
+00014: 483  pop
+00015: 485  this
+00016: 485  false
+00017: 485  setprop "ignore"
+00022: 485  pop
+00023: 487  zero
+00024: 487  setlocal 0
+00027: 487  pop
+00028: 487  goto 118 (+90)
+00033: 488  loophead
+00034: 488  getlocal 0
+00037: 488  zero
+00038: 488  stricteq
+00039: 488  ifeq 103 (+64)
+00044: 489  name "xs"
+00049: 489  dup
+00050: 489  callprop "dump"
+00055: 489  swap
+00056: 489  notearg
+00057: 489  string "222"
+00062: 489  notearg
+00063: 489  newarray 1
+00067: 489  this
+00068: 489  getprop "view"
+00073: 489  getprop "cardViews"
+00078: 489  getlocal 0
+00081: 489  getelem
+00082: 489  dup
+00083: 489  callprop "getPositionX"
+00088: 489  swap
+00089: 489  notearg
+00090: 489  call 0
+00093: 489  initelem_array 0
+00097: 489  endinit
+00098: 489  notearg
+00099: 489  call 2
+00102: 489  pop
+00103: 487  localinc 11
+00106: 487  getlocal 0
+00109: 487  pos
+00110: 487  dup
+00111: 487  one
+00112: 487  add
+00113: 487  setlocal 0
+00116: 487  pop
+00117: 487  pop
+00118: 487  loopentry
+00119: 487  getlocal 0
+00122: 487  this
+00123: 487  getprop "view"
+00128: 487  getprop "cardViews"
+00133: 487  length "length"
+00138: 487  lt
+00139: 487  ifne 33 (-106)
+00144: 491  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:482 ---
+;; function object[9] onTouchCancelled
+;; function metadata object[9] nargs=2 bindings=2
+;; arg[0] touch
+;; arg[1] event
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:513 ---
+loc   line  op
+----- ----  --
+main:
+00000: 514  this
+00001: 514  dup
+00002: 514  callprop "dump"
+00007: 514  swap
+00008: 514  notearg
+00009: 514  string "onTouchCancelled"
+00014: 514  notearg
+00015: 514  this
+00016: 514  dup
+00017: 514  callprop "convertTouchToNodeSpace"
+00022: 514  swap
+00023: 514  notearg
+00024: 514  getarg 0
+00027: 514  notearg
+00028: 514  call 1
+00031: 514  notearg
+00032: 514  call 2
+00035: 514  pop
+00036: 514  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:513 ---
+;; function object[10] create
+;; function metadata object[10] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:519 ---
+loc   line  op
+----- ----  --
+main:
+00000: 520  name "xs"
+00005: 520  getprop "Views"
+00010: 520  getprop "CardListView"
+00015: 520  undefined
+00016: 520  notearg
+00017: 520  new 0
+00020: 520  setlocal 0
+00023: 520  pop
+00024: 521  getlocal 0
+00027: 521  and 47 (+20)
+00032: 521  pop
+00033: 521  getlocal 0
+00036: 521  dup
+00037: 521  callprop "init"
+00042: 521  swap
+00043: 521  notearg
+00044: 521  call 0
+00047: 521  ifeq 56 (+9)
+00052: 522  getlocal 0
+00055: 522  return
+00056: 525  name "xs"
+00061: 525  dup
+00062: 525  callprop "assert"
+00067: 525  swap
+00068: 525  notearg
+00069: 525  false
+00070: 525  notearg
+00071: 525  string "xs.Views.CardListView.create err"
+00076: 525  notearg
+00077: 525  call 2
+00080: 525  pop
+00081: 526  null
+00082: 526  return
+00083: 526  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/CardListView.js:519 ---

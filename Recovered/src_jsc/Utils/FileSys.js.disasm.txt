@@ -1,0 +1,202 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Utils/FileSys.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=46 object[0]
+;; FUNCTION-MAP kind=lambda offset=56 object[1]
+;; FUNCTION-MAP kind=lambda offset=66 object[2]
+;; FUNCTION-MAP kind=lambda offset=76 object[3]
+;; FUNCTION-MAP kind=lambda offset=86 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Utils"
+00010:   9  name "xs"
+00015:   9  getprop "Utils"
+00020:   9  getprop "FileSys"
+00025:   9  or 97 (+72)
+00030:   9  pop
+00031:   9  newinit 1
+00036:  11  string "xs.Utils.FileSys"
+00041:  11  initprop "name"
+00046:  13  lambda (function () {
+    [sourceless code]
+})
+00051:  13  initprop "isFileExist"
+00056:  17  lambda (function () {
+    [sourceless code]
+})
+00061:  17  initprop "getSearchPaths"
+00066:  21  lambda (function () {
+    [sourceless code]
+})
+00071:  21  initprop "setSearchPaths"
+00076:  25  lambda (function () {
+    [sourceless code]
+})
+00081:  25  initprop "getFileDataSize"
+00086:  30  lambda (function () {
+    [sourceless code]
+})
+00091:  30  initprop "deleteDir"
+00096:  30  endinit
+00097:  30  setprop "FileSys"
+00102:  30  popv
+00103:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:1 ---
+;; function object[0] isFileExist
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:13 ---
+loc   line  op
+----- ----  --
+main:
+00000:  14  name "cc"
+00005:  14  getprop "FileUtils"
+00010:  14  dup
+00011:  14  callprop "getInstance"
+00016:  14  swap
+00017:  14  notearg
+00018:  14  call 0
+00021:  14  dup
+00022:  14  callprop "isFileExist"
+00027:  14  swap
+00028:  14  notearg
+00029:  14  getarg 0
+00032:  14  notearg
+00033:  14  call 1
+00036:  14  return
+00037:  14  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:13 ---
+;; function object[1] getSearchPaths
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:17 ---
+loc   line  op
+----- ----  --
+main:
+00000:  18  name "cc"
+00005:  18  getprop "FileUtils"
+00010:  18  dup
+00011:  18  callprop "getInstance"
+00016:  18  swap
+00017:  18  notearg
+00018:  18  call 0
+00021:  18  dup
+00022:  18  callprop "getSearchPaths"
+00027:  18  swap
+00028:  18  notearg
+00029:  18  call 0
+00032:  18  return
+00033:  18  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:17 ---
+;; function object[2] setSearchPaths
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] array
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:21 ---
+loc   line  op
+----- ----  --
+main:
+00000:  22  name "cc"
+00005:  22  getprop "FileUtils"
+00010:  22  dup
+00011:  22  callprop "getInstance"
+00016:  22  swap
+00017:  22  notearg
+00018:  22  call 0
+00021:  22  dup
+00022:  22  callprop "setSearchPaths"
+00027:  22  swap
+00028:  22  notearg
+00029:  22  getarg 0
+00032:  22  notearg
+00033:  22  call 1
+00036:  22  return
+00037:  22  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:21 ---
+;; function object[3] getFileDataSize
+;; function metadata object[3] nargs=1 bindings=2
+;; arg[0] fileNameFull
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  26  name "xs"
+00005:  26  getprop "JsbConnecter"
+00010:  26  dup
+00011:  26  callprop "getInstance"
+00016:  26  swap
+00017:  26  notearg
+00018:  26  call 0
+00021:  26  dup
+00022:  26  callprop "invoke"
+00027:  26  swap
+00028:  26  notearg
+00029:  26  string "Utils"
+00034:  26  notearg
+00035:  26  string "getFileDataSize"
+00040:  26  notearg
+00041:  26  getarg 0
+00044:  26  notearg
+00045:  26  call 3
+00048:  26  setlocal 0
+00051:  26  pop
+00052:  27  getlocal 0
+00055:  27  string "err"
+00060:  27  eq
+00061:  27  ifeq 72 (+11)
+00066:  27  zero
+00067:  27  goto 92 (+25)
+00072:  27  name "xs"
+00077:  27  dup
+00078:  27  callprop "parseInt"
+00083:  27  swap
+00084:  27  notearg
+00085:  27  getlocal 0
+00088:  27  notearg
+00089:  27  call 1
+00092:  27  return
+00093:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:25 ---
+;; function object[4] deleteDir
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] dirNameFull
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  31  name "xs"
+00005:  31  getprop "JsbConnecter"
+00010:  31  dup
+00011:  31  callprop "getInstance"
+00016:  31  swap
+00017:  31  notearg
+00018:  31  call 0
+00021:  31  dup
+00022:  31  callprop "invoke"
+00027:  31  swap
+00028:  31  notearg
+00029:  31  string "Utils"
+00034:  31  notearg
+00035:  31  string "deleteDir"
+00040:  31  notearg
+00041:  31  getarg 0
+00044:  31  notearg
+00045:  31  call 3
+00048:  31  pop
+00049:  31  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/FileSys.js:30 ---

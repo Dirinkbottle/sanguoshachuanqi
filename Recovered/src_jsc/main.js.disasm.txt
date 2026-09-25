@@ -1,0 +1,1378 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/main.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=882 object[0]
+;; FUNCTION-MAP kind=lambda offset=929 object[1]
+;; FUNCTION-MAP kind=lambda offset=939 object[2]
+;; FUNCTION-MAP kind=lambda offset=949 object[3]
+;; FUNCTION-MAP kind=lambda offset=959 object[4]
+;; FUNCTION-MAP kind=lambda offset=969 object[5]
+;; FUNCTION-MAP kind=lambda offset=979 object[6]
+;; FUNCTION-MAP kind=lambda offset=989 object[7]
+;; FUNCTION-MAP kind=lambda offset=1011 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:1 ---
+loc   line  op
+----- ----  --
+00000: 328  defvar "reStr"
+main:
+00005:   9  callname "require"
+00010:   9  implicitthis "require"
+00015:   9  notearg
+00016:   9  string "Core/headers.js"
+00021:   9  notearg
+00022:   9  call 1
+00025:   9  popv
+00026:  10  name "cc"
+00031:  10  dup
+00032:  10  callprop "log"
+00037:  10  swap
+00038:  10  notearg
+00039:  10  string "main.js begin"
+00044:  10  notearg
+00045:  10  call 1
+00048:  10  popv
+00049:  12  name "xsc"
+00054:  12  dup
+00055:  12  callprop "require"
+00060:  12  swap
+00061:  12  notearg
+00062:  12  newarray 1
+00066:  13  string "Update/headers.js"
+00071:  13  initelem_array 0
+00075:  13  endinit
+00076:  13  notearg
+00077:  13  call 1
+00080:  13  popv
+00081:  18  name "xsc"
+00086:  18  name "xs"
+00091:  18  getprop "JsbConnecter"
+00096:  18  dup
+00097:  18  callprop "getInstance"
+00102:  18  swap
+00103:  18  notearg
+00104:  18  call 0
+00107:  18  dup
+00108:  18  callprop "invoke"
+00113:  18  swap
+00114:  18  notearg
+00115:  18  string "Build"
+00120:  18  notearg
+00121:  18  string "getAccountSysCode"
+00126:  18  notearg
+00127:  18  string ""
+00132:  18  notearg
+00133:  18  call 3
+00136:  18  setprop "app_account_sys"
+00141:  18  popv
+00142:  19  name "xsc"
+00147:  19  name "xs"
+00152:  19  getprop "JsbConnecter"
+00157:  19  dup
+00158:  19  callprop "getInstance"
+00163:  19  swap
+00164:  19  notearg
+00165:  19  call 0
+00168:  19  dup
+00169:  19  callprop "invoke"
+00174:  19  swap
+00175:  19  notearg
+00176:  19  string "Build"
+00181:  19  notearg
+00182:  19  string "getProjCode"
+00187:  19  notearg
+00188:  19  string ""
+00193:  19  notearg
+00194:  19  call 3
+00197:  19  setprop "app_indentify"
+00202:  19  popv
+00203:  21  name "xsc"
+00208:  21  name "xs"
+00213:  21  getprop "JsbConnecter"
+00218:  21  dup
+00219:  21  callprop "getInstance"
+00224:  21  swap
+00225:  21  notearg
+00226:  21  call 0
+00229:  21  dup
+00230:  21  callprop "invoke"
+00235:  21  swap
+00236:  21  notearg
+00237:  21  string "Cfg"
+00242:  21  notearg
+00243:  21  string "getChannelId"
+00248:  21  notearg
+00249:  21  string ""
+00254:  21  notearg
+00255:  21  call 3
+00258:  21  setprop "app_channel"
+00263:  21  popv
+00264:  26  name "xsc"
+00269:  26  name "xs"
+00274:  26  getprop "JsbConnecter"
+00279:  26  dup
+00280:  26  callprop "getInstance"
+00285:  26  swap
+00286:  26  notearg
+00287:  26  call 0
+00290:  26  dup
+00291:  26  callprop "invoke"
+00296:  26  swap
+00297:  26  notearg
+00298:  26  string "Cfg"
+00303:  26  notearg
+00304:  26  string "getResScaleTag"
+00309:  26  notearg
+00310:  26  string ""
+00315:  26  notearg
+00316:  26  call 3
+00319:  26  setprop "res"
+00324:  26  popv
+00325:  27  name "xsc"
+00330:  27  name "xs"
+00335:  27  getprop "JsbConnecter"
+00340:  27  dup
+00341:  27  callprop "getInstance"
+00346:  27  swap
+00347:  27  notearg
+00348:  27  call 0
+00351:  27  dup
+00352:  27  callprop "invoke"
+00357:  27  swap
+00358:  27  notearg
+00359:  27  string "Director"
+00364:  27  notearg
+00365:  27  string "getFrameSize"
+00370:  27  notearg
+00371:  27  string ""
+00376:  27  notearg
+00377:  27  call 3
+00380:  27  setprop "frameSize"
+00385:  27  popv
+00386:  28  name "xsc"
+00391:  28  name "xsc"
+00396:  28  getprop "app_indentify"
+00401:  28  name "xsc"
+00406:  28  getprop "Const_Proj_Code_226Small_Channel_Android"
+00411:  28  eq
+00412:  28  or 439 (+27)
+00417:  28  pop
+00418:  29  name "xsc"
+00423:  29  getprop "app_indentify"
+00428:  29  name "xsc"
+00433:  29  getprop "Const_Proj_Code_226Small_Channel_Ios"
+00438:  29  eq
+00439:  29  setprop "weiduan"
+00444:  29  popv
+00445:  31  name "xsc"
+00450:  31  name "cc"
+00455:  31  dup
+00456:  31  callprop "size"
+00461:  31  swap
+00462:  31  notearg
+00463:  32  name "xsc"
+00468:  32  dup
+00469:  32  callprop "parseInt"
+00474:  32  swap
+00475:  32  notearg
+00476:  32  name "xsc"
+00481:  32  getprop "frameSize"
+00486:  32  dup
+00487:  32  callprop "split"
+00492:  32  swap
+00493:  32  notearg
+00494:  32  string "|"
+00499:  32  notearg
+00500:  32  call 1
+00503:  32  zero
+00504:  32  getelem
+00505:  32  notearg
+00506:  32  call 1
+00509:  32  notearg
+00510:  33  name "xsc"
+00515:  33  dup
+00516:  33  callprop "parseInt"
+00521:  33  swap
+00522:  33  notearg
+00523:  33  name "xsc"
+00528:  33  getprop "frameSize"
+00533:  33  dup
+00534:  33  callprop "split"
+00539:  33  swap
+00540:  33  notearg
+00541:  33  string "|"
+00546:  33  notearg
+00547:  33  call 1
+00550:  33  one
+00551:  33  getelem
+00552:  33  notearg
+00553:  33  call 1
+00556:  33  notearg
+00557:  33  call 2
+00560:  33  setprop "frameSize"
+00565:  33  popv
+00566:  37  name "xsc"
+00571:  37  getprop "app_indentify"
+00576:  37  name "xsc"
+00581:  37  getprop "Const_Proj_Code_Develop"
+00586:  37  eq
+00587:  37  or 668 (+81)
+00592:  37  pop
+00593:  38  name "xsc"
+00598:  38  getprop "app_indentify"
+00603:  38  name "xsc"
+00608:  38  getprop "Const_Proj_Code_TestOnline"
+00613:  38  eq
+00614:  38  or 668 (+54)
+00619:  38  pop
+00620:  39  name "xsc"
+00625:  39  getprop "app_indentify"
+00630:  39  name "xsc"
+00635:  39  getprop "Const_Proj_Code_226_TestOnline"
+00640:  39  eq
+00641:  39  or 668 (+27)
+00646:  39  pop
+00647:  40  name "xsc"
+00652:  40  getprop "app_indentify"
+00657:  40  name "xsc"
+00662:  40  getprop "Const_Proj_Code_226_TW_TestOnline"
+00667:  40  eq
+00668:  40  ifeq 702 (+34)
+00673:  43  name "xsc"
+00678:  43  getprop "director"
+00683:  43  dup
+00684:  43  callprop "setDisplayStats"
+00689:  43  swap
+00690:  43  notearg
+00691:  43  true
+00692:  43  notearg
+00693:  43  call 1
+00696:  43  popv
+00697:  43  goto 726 (+29)
+00702:  45  name "xsc"
+00707:  45  getprop "director"
+00712:  45  dup
+00713:  45  callprop "setDisplayStats"
+00718:  45  swap
+00719:  45  notearg
+00720:  45  false
+00721:  45  notearg
+00722:  45  call 1
+00725:  45  popv
+00726:  50  name "xsc"
+00731:  50  name "xs"
+00736:  50  getprop "JsbConnecter"
+00741:  50  dup
+00742:  50  callprop "getInstance"
+00747:  50  swap
+00748:  50  notearg
+00749:  50  call 0
+00752:  50  dup
+00753:  50  callprop "invoke"
+00758:  50  swap
+00759:  50  notearg
+00760:  50  string "Cfg"
+00765:  50  notearg
+00766:  50  string "getResPath"
+00771:  50  notearg
+00772:  50  string ""
+00777:  50  notearg
+00778:  50  call 3
+00781:  50  setprop "searchPathRoot"
+00786:  50  popv
+00787:  51  name "xsc"
+00792:  51  dup
+00793:  51  callprop "dump"
+00798:  51  swap
+00799:  51  notearg
+00800:  51  string "getResPath"
+00805:  51  notearg
+00806:  51  name "xsc"
+00811:  51  getprop "searchPathRoot"
+00816:  51  notearg
+00817:  51  call 2
+00820:  51  popv
+00821:  53  name "xsc"
+00826:  53  dup
+00827:  53  callprop "dump"
+00832:  53  swap
+00833:  53  notearg
+00834:  53  string "getSearchPaths"
+00839:  53  notearg
+00840:  53  name "cc"
+00845:  53  getprop "FileUtils"
+00850:  53  dup
+00851:  53  callprop "getInstance"
+00856:  53  swap
+00857:  53  notearg
+00858:  53  call 0
+00861:  53  dup
+00862:  53  callprop "getSearchPaths"
+00867:  53  swap
+00868:  53  notearg
+00869:  53  call 0
+00872:  53  notearg
+00873:  53  call 2
+00876:  53  popv
+00877:  56  name "xs"
+00882:  56  lambda (function () {
+    [sourceless code]
+})
+00887:  56  undefined
+00888:  56  notearg
+00889:  56  call 0
+00892:  56  setprop "invoke_setDesignResolutionSize_once"
+00897:  56  popv
+00898: 148  name "xs"
+00903: 148  newinit 1
+00908: 149  newinit 1
+00913: 150  string ""
+00918: 150  initprop "retainListForStr"
+00923: 150  endinit
+00924: 150  initprop "cfg"
+00929: 153  lambda (function () {
+    [sourceless code]
+})
+00934: 153  initprop "_getWeiduanStr"
+00939: 159  lambda (function () {
+    [sourceless code]
+})
+00944: 159  initprop "isUpdateWeiduan"
+00949: 178  lambda (function () {
+    [sourceless code]
+})
+00954: 178  initprop "setWeiduanUpSql"
+00959: 186  lambda (function () {
+    [sourceless code]
+})
+00964: 186  initprop "setItem"
+00969: 191  lambda (function () {
+    [sourceless code]
+})
+00974: 191  initprop "getItem"
+00979: 196  lambda (function () {
+    [sourceless code]
+})
+00984: 196  initprop "isInList"
+00989: 212  lambda (function () {
+    [sourceless code]
+})
+00994: 212  initprop "clearXS"
+00999: 212  endinit
+01000: 212  setprop "readAndWriteSqlByWeiduan"
+01005: 212  popv
+01006: 251  name "xs"
+01011: 251  lambda (function () {
+    [sourceless code]
+})
+01016: 251  setprop "main_game"
+01021: 251  popv
+01022: 320  name "xsc"
+01027: 320  getprop "app_indentify"
+01032: 320  name "xsc"
+01037: 320  getprop "Const_Proj_Code_Develop"
+01042: 320  eq
+01043: 320  ifeq 1070 (+27)
+01048: 324  name "xs"
+01053: 324  dup
+01054: 324  callprop "main_game"
+01059: 324  swap
+01060: 324  notearg
+01061: 324  call 0
+01064: 324  popv
+01065: 324  goto 1492 (+427)
+01070: 325  name "xsc"
+01075: 325  getprop "weiduan"
+01080: 325  and 1129 (+49)
+01085: 325  pop
+01086: 325  name "xs"
+01091: 325  getprop "readAndWriteSqlByWeiduan"
+01096: 325  ifeq 1128 (+32)
+01101: 325  name "xs"
+01106: 325  getprop "readAndWriteSqlByWeiduan"
+01111: 325  dup
+01112: 325  callprop "isUpdateWeiduan"
+01117: 325  swap
+01118: 325  notearg
+01119: 325  call 0
+01122: 325  not
+01123: 325  goto 1129 (+6)
+01128: 325  false
+01129: 325  ifeq 1233 (+104)
+01134: 328  bindname "reStr"
+01139: 328  name "xs"
+01144: 328  getprop "JsbConnecter"
+01149: 328  dup
+01150: 328  callprop "getInstance"
+01155: 328  swap
+01156: 328  notearg
+01157: 328  call 0
+01160: 328  dup
+01161: 328  callprop "invoke"
+01166: 328  swap
+01167: 328  notearg
+01168: 328  string "Kefu"
+01173: 328  notearg
+01174: 328  string "onActionWithService"
+01179: 328  notearg
+01180: 328  string "11111|testname"
+01185: 328  notearg
+01186: 328  call 3
+01189: 328  setname "reStr"
+01194: 328  pop
+01195: 329  name "reStr"
+01200: 329  string "err"
+01205: 329  eq
+01206: 329  ifeq 1228 (+22)
+01211: 330  name "xs"
+01216: 330  dup
+01217: 330  callprop "main_game"
+01222: 330  swap
+01223: 330  notearg
+01224: 330  call 0
+01227: 330  popv
+01228: 330  goto 1492 (+264)
+01233: 335  name "xsc"
+01238: 335  getprop "app_indentify"
+01243: 335  name "xsc"
+01248: 335  getprop "Const_Proj_Code_TestOnline"
+01253: 335  eq
+01254: 335  or 1416 (+162)
+01259: 335  pop
+01260: 336  name "xsc"
+01265: 336  getprop "app_indentify"
+01270: 336  name "xsc"
+01275: 336  getprop "Const_Proj_Code_Official_Fst"
+01280: 336  eq
+01281: 336  or 1416 (+135)
+01286: 336  pop
+01287: 337  name "xsc"
+01292: 337  getprop "app_indentify"
+01297: 337  name "xsc"
+01302: 337  getprop "Const_Proj_Code_Official_Fst_Ios"
+01307: 337  eq
+01308: 337  or 1416 (+108)
+01313: 337  pop
+01314: 338  name "xsc"
+01319: 338  getprop "app_indentify"
+01324: 338  name "xsc"
+01329: 338  getprop "Const_Proj_Code_Official_Fst_Android"
+01334: 338  eq
+01335: 338  or 1416 (+81)
+01340: 338  pop
+01341: 339  name "xsc"
+01346: 339  getprop "app_indentify"
+01351: 339  name "xsc"
+01356: 339  getprop "Const_Proj_Code_Channel_Normal_Android"
+01361: 339  eq
+01362: 339  or 1416 (+54)
+01367: 339  pop
+01368: 340  name "xsc"
+01373: 340  getprop "app_indentify"
+01378: 340  name "xsc"
+01383: 340  getprop "Const_Proj_Code_Channel_Normal_Android2"
+01388: 340  eq
+01389: 340  or 1416 (+27)
+01394: 340  pop
+01395: 341  name "xsc"
+01400: 341  getprop "app_indentify"
+01405: 341  name "xsc"
+01410: 341  getprop "Const_Proj_Code_AppStore_Ios"
+01415: 341  eq
+01416: 341  ifeq 1443 (+27)
+01421: 347  name "xs"
+01426: 347  dup
+01427: 347  callprop "main_game"
+01432: 347  swap
+01433: 347  notearg
+01434: 347  call 0
+01437: 347  popv
+01438: 347  goto 1492 (+54)
+01443: 352  name "xsc"
+01448: 352  getprop "Scene"
+01453: 352  getprop "Mgr"
+01458: 352  dup
+01459: 352  callprop "changeScene"
+01464: 352  swap
+01465: 352  notearg
+01466: 352  name "xs"
+01471: 352  getprop "UpdateScene"
+01476: 352  dup
+01477: 352  callprop "create"
+01482: 352  swap
+01483: 352  notearg
+01484: 352  call 0
+01487: 352  notearg
+01488: 352  call 1
+01491: 352  popv
+01492: 356  name "cc"
+01497: 356  dup
+01498: 356  callprop "log"
+01503: 356  swap
+01504: 356  notearg
+01505: 356  string "main.js end"
+01510: 356  notearg
+01511: 356  call 1
+01514: 356  popv
+01515: 356  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:1 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=7
+;; local[0] _winSize
+;; local[1] _radio
+;; local[2] _policy
+;; local[3] _policyName
+;; local[4] _scaleX
+;; local[5] _scaleY
+;; local[6] _fixScale
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  58  name "xsc"
+00005:  58  getprop "frameSize"
+00010:  58  setlocal 0
+00013:  58  pop
+00014:  60  getlocal 0
+00017:  60  getprop "width"
+00022:  60  getlocal 0
+00025:  60  getprop "height"
+00030:  60  div
+00031:  60  setlocal 1
+00034:  60  pop
+00035:  63  name "xsc"
+00040:  63  dup
+00041:  63  callprop "dump"
+00046:  63  swap
+00047:  63  notearg
+00048:  63  string "radio and size"
+00053:  63  notearg
+00054:  63  newinit 1
+00059:  64  getlocal 1
+00062:  64  initprop "radio"
+00067:  65  name "JSON"
+00072:  65  dup
+00073:  65  callprop "stringify"
+00078:  65  swap
+00079:  65  notearg
+00080:  65  getlocal 0
+00083:  65  notearg
+00084:  65  call 1
+00087:  65  initprop "winSize"
+00092:  65  endinit
+00093:  65  notearg
+00094:  65  call 2
+00097:  65  pop
+00098:  69  null
+00099:  69  setlocal 2
+00102:  69  pop
+00103:  70  getlocal 3
+00106:  70  pop
+00107:  72  name "xsc"
+00112:  72  getprop "sw_min"
+00117:  72  name "xsc"
+00122:  72  getprop "sh_max"
+00127:  72  div
+00128:  72  getlocal 1
+00131:  72  le
+00132:  72  and 163 (+31)
+00137:  72  pop
+00138:  72  getlocal 1
+00141:  72  name "xsc"
+00146:  72  getprop "sw_max"
+00151:  72  name "xsc"
+00156:  72  getprop "sh_min"
+00161:  72  div
+00162:  72  le
+00163:  72  ifeq 629 (+466)
+00168:  74  name "cc"
+00173:  74  getprop "RESOLUTION_POLICY"
+00178:  74  getprop "NOBORDER"
+00183:  74  setlocal 2
+00186:  74  pop
+00187:  75  string "NOBORDER"
+00192:  75  setlocal 3
+00195:  75  pop
+00196:  77  name "xsc"
+00201:  77  getprop "sw_max"
+00206:  77  getlocal 0
+00209:  77  getprop "width"
+00214:  77  div
+00215:  77  setlocal 4
+00218:  77  pop
+00219:  78  name "xsc"
+00224:  78  getprop "sh_max"
+00229:  78  getlocal 0
+00232:  78  getprop "height"
+00237:  78  div
+00238:  78  setlocal 5
+00241:  78  pop
+00242:  81  getlocal 5
+00245:  81  getlocal 4
+00248:  81  lt
+00249:  81  ifeq 262 (+13)
+00254:  81  getlocal 5
+00257:  81  goto 265 (+8)
+00262:  81  getlocal 4
+00265:  81  setlocal 6
+00268:  81  pop
+00269:  84  getlocal 0
+00272:  84  getprop "width"
+00277:  84  name "xsc"
+00282:  84  getprop "sw_min"
+00287:  84  lt
+00288:  84  or 313 (+25)
+00293:  84  pop
+00294:  84  getlocal 0
+00297:  84  getprop "height"
+00302:  84  name "xsc"
+00307:  84  getprop "sh_min"
+00312:  84  lt
+00313:  84  ifeq 323 (+10)
+00318:  84  goto 392 (+74)
+00323:  87  getlocal 0
+00326:  87  getprop "width"
+00331:  87  name "xsc"
+00336:  87  getprop "sw_max"
+00341:  87  gt
+00342:  87  or 367 (+25)
+00347:  87  pop
+00348:  87  getlocal 0
+00351:  87  getprop "height"
+00356:  87  name "xsc"
+00361:  87  getprop "sh_max"
+00366:  87  gt
+00367:  87  ifeq 377 (+10)
+00372:  87  goto 392 (+20)
+00377:  92  getlocal 6
+00380:  92  one
+00381:  92  gt
+00382:  92  ifeq 392 (+10)
+00387:  92  one
+00388:  92  setlocal 6
+00391:  92  pop
+00392:  97  name "xsc"
+00397:  97  getlocal 0
+00400:  97  getprop "width"
+00405:  97  getlocal 6
+00408:  97  mul
+00409:  97  setprop "sw"
+00414:  97  pop
+00415:  98  name "xsc"
+00420:  98  getlocal 0
+00423:  98  getprop "height"
+00428:  98  getlocal 6
+00431:  98  mul
+00432:  98  setprop "sh"
+00437:  98  pop
+00438: 101  name "xsc"
+00443: 101  getprop "res"
+00448: 101  string "s"
+00453: 101  stricteq
+00454: 101  ifeq 515 (+61)
+00459: 102  name "xsc"
+00464: 102  getprop "director"
+00469: 102  dup
+00470: 102  callprop "setContentScaleFactor"
+00475: 102  swap
+00476: 102  notearg
+00477: 102  double 0.75
+00482: 102  notearg
+00483: 102  call 1
+00486: 102  pop
+00487: 103  name "xsc"
+00492: 103  dup
+00493: 103  callprop "log"
+00498: 103  swap
+00499: 103  notearg
+00500: 103  string "setContentScaleFactor 0.75"
+00505: 103  notearg
+00506: 103  call 1
+00509: 103  pop
+00510: 103  goto 624 (+114)
+00515: 104  name "xsc"
+00520: 104  getprop "res"
+00525: 104  string "n"
+00530: 104  stricteq
+00531: 104  ifeq 588 (+57)
+00536: 105  name "xsc"
+00541: 105  getprop "director"
+00546: 105  dup
+00547: 105  callprop "setContentScaleFactor"
+00552: 105  swap
+00553: 105  notearg
+00554: 105  one
+00555: 105  notearg
+00556: 105  call 1
+00559: 105  pop
+00560: 106  name "xsc"
+00565: 106  dup
+00566: 106  callprop "log"
+00571: 106  swap
+00572: 106  notearg
+00573: 106  string "setContentScaleFactor 1"
+00578: 106  notearg
+00579: 106  call 1
+00582: 106  pop
+00583: 106  goto 624 (+41)
+00588: 108  name "xsc"
+00593: 108  dup
+00594: 108  callprop "assert"
+00599: 108  swap
+00600: 108  notearg
+00601: 108  false
+00602: 108  notearg
+00603: 108  string "xsc.res error"
+00608: 108  notearg
+00609: 108  name "xsc"
+00614: 108  getprop "res"
+00619: 108  notearg
+00620: 108  call 3
+00623: 108  pop
+00624: 108  goto 776 (+152)
+00629: 113  name "cc"
+00634: 113  getprop "RESOLUTION_POLICY"
+00639: 113  getprop "SHOW_ALL"
+00644: 113  setlocal 2
+00647: 113  pop
+00648: 114  string "SHOW_ALL"
+00653: 114  setlocal 3
+00656: 114  pop
+00657: 117  name "xsc"
+00662: 117  getprop "sw_min"
+00667: 117  name "xsc"
+00672: 117  getprop "sh_max"
+00677: 117  div
+00678: 117  getlocal 1
+00681: 117  gt
+00682: 117  ifeq 734 (+52)
+00687: 119  name "xsc"
+00692: 119  name "xsc"
+00697: 119  getprop "sw_min"
+00702: 119  setprop "sw"
+00707: 119  pop
+00708: 120  name "xsc"
+00713: 120  name "xsc"
+00718: 120  getprop "sh_max"
+00723: 120  setprop "sh"
+00728: 120  pop
+00729: 120  goto 776 (+47)
+00734: 124  name "xsc"
+00739: 124  name "xsc"
+00744: 124  getprop "sw_max"
+00749: 124  setprop "sw"
+00754: 124  pop
+00755: 125  name "xsc"
+00760: 125  name "xsc"
+00765: 125  getprop "sh_min"
+00770: 125  setprop "sh"
+00775: 125  pop
+00776: 131  name "xsc"
+00781: 131  dup
+00782: 131  callprop "dump"
+00787: 131  swap
+00788: 131  notearg
+00789: 131  string "setDesignResolutionSize"
+00794: 131  notearg
+00795: 131  newinit 1
+00800: 132  getlocal 3
+00803: 132  initprop "_policyName"
+00808: 133  name "xsc"
+00813: 133  getprop "sw"
+00818: 133  initprop "sw"
+00823: 134  name "xsc"
+00828: 134  getprop "sh"
+00833: 134  initprop "sh"
+00838: 134  endinit
+00839: 134  notearg
+00840: 134  call 2
+00843: 134  pop
+00844: 137  name "xsc"
+00849: 137  getprop "eglview"
+00854: 137  dup
+00855: 137  callprop "setDesignResolutionSize"
+00860: 137  swap
+00861: 137  notearg
+00862: 138  name "xsc"
+00867: 138  getprop "sw"
+00872: 138  notearg
+00873: 139  name "xsc"
+00878: 139  getprop "sh"
+00883: 139  notearg
+00884: 140  getlocal 2
+00887: 140  notearg
+00888: 140  call 3
+00891: 140  pop
+00892: 141  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:56 ---
+;; function object[1] _getWeiduanStr
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:153 ---
+loc   line  op
+----- ----  --
+main:
+00000: 155  string "weiDuanFirst"
+00005: 155  return
+00006: 155  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:153 ---
+;; function object[2] isUpdateWeiduan
+;; function metadata object[2] nargs=0 bindings=3
+;; local[0] _result
+;; local[1] _data
+;; local[2] _empty
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:159 ---
+loc   line  op
+----- ----  --
+main:
+00000: 161  null
+00001: 161  setlocal 0
+00004: 161  pop
+00005: 162  this
+00006: 162  dup
+00007: 162  callprop "getItem"
+00012: 162  swap
+00013: 162  notearg
+00014: 162  this
+00015: 162  dup
+00016: 162  callprop "_getWeiduanStr"
+00021: 162  swap
+00022: 162  notearg
+00023: 162  call 0
+00026: 162  notearg
+00027: 162  call 1
+00030: 162  setlocal 1
+00033: 162  pop
+00034: 164  getlocal 1
+00037: 164  string ""
+00042: 164  eq
+00043: 164  ifeq 94 (+51)
+00048: 166  string "no"
+00053: 166  setlocal 2
+00056: 166  pop
+00057: 168  this
+00058: 168  dup
+00059: 168  callprop "setItem"
+00064: 168  swap
+00065: 168  notearg
+00066: 168  this
+00067: 168  dup
+00068: 168  callprop "_getWeiduanStr"
+00073: 168  swap
+00074: 168  notearg
+00075: 168  call 0
+00078: 168  notearg
+00079: 168  getlocal 2
+00082: 168  notearg
+00083: 168  call 2
+00086: 168  pop
+00087: 169  getlocal 2
+00090: 169  setlocal 1
+00093: 169  pop
+00094: 174  getlocal 1
+00097: 174  string "ok"
+00102: 174  eq
+00103: 174  return
+00104: 174  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:159 ---
+;; function object[3] setWeiduanUpSql
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] mStr
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:178 ---
+loc   line  op
+----- ----  --
+main:
+00000: 180  string "ok"
+00005: 180  setlocal 0
+00008: 180  pop
+00009: 182  this
+00010: 182  dup
+00011: 182  callprop "setItem"
+00016: 182  swap
+00017: 182  notearg
+00018: 182  this
+00019: 182  dup
+00020: 182  callprop "_getWeiduanStr"
+00025: 182  swap
+00026: 182  notearg
+00027: 182  call 0
+00030: 182  notearg
+00031: 182  getlocal 0
+00034: 182  notearg
+00035: 182  call 2
+00038: 182  pop
+00039: 182  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:178 ---
+;; function object[4] setItem
+;; function metadata object[4] nargs=2 bindings=2
+;; arg[0] key
+;; arg[1] value
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:186 ---
+loc   line  op
+----- ----  --
+main:
+00000: 188  name "sys"
+00005: 188  getprop "localStorage"
+00010: 188  dup
+00011: 188  callprop "setItem"
+00016: 188  swap
+00017: 188  notearg
+00018: 188  getarg 0
+00021: 188  notearg
+00022: 188  getarg 1
+00025: 188  notearg
+00026: 188  call 2
+00029: 188  pop
+00030: 188  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:186 ---
+;; function object[5] getItem
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] key
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:191 ---
+loc   line  op
+----- ----  --
+main:
+00000: 193  name "sys"
+00005: 193  getprop "localStorage"
+00010: 193  dup
+00011: 193  callprop "getItem"
+00016: 193  swap
+00017: 193  notearg
+00018: 193  getarg 0
+00021: 193  notearg
+00022: 193  call 1
+00025: 193  return
+00026: 193  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:191 ---
+;; function object[6] isInList
+;; function metadata object[6] nargs=2 bindings=3
+;; arg[0] mChil
+;; arg[1] mList
+;; local[0] x
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=10 length=33 stackDepth=1 target=43
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:196 ---
+loc   line  op
+----- ----  --
+main:
+00000: 197  getarg 1
+00003: 197  iter 1
+00005: 197  goto 36 (+31)
+00010: 197  loophead
+00011: 197  iternext
+00012: 197  setlocal 0
+00015: 197  pop
+00016: 201  getarg 0
+00019: 201  getarg 1
+00022: 201  getlocal 0
+00025: 201  getelem
+00026: 201  eq
+00027: 201  ifeq 36 (+9)
+00032: 202  true
+00033: 202  setrval
+00034: 202  enditer
+00035: 202  retrval
+00036: 202  loopentry
+00037: 202  moreiter
+00038: 202  ifne 10 (-28)
+00043: 202  enditer
+00044: 206  false
+00045: 206  return
+00046: 206  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:196 ---
+;; function object[7] clearXS
+;; function metadata object[7] nargs=0 bindings=4
+;; local[0] mStr
+;; local[1] i
+;; local[2] retainStr
+;; local[3] retainList
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=21 length=30 stackDepth=1 target=51
+;; TRY-NOTE kind=iter start=192 length=77 stackDepth=1 target=269
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:212 ---
+loc   line  op
+----- ----  --
+main:
+00000: 213  string ""
+00005: 213  setlocal 0
+00008: 213  pop
+00009: 214  name "xs"
+00014: 214  iter 1
+00016: 214  goto 44 (+28)
+00021: 214  loophead
+00022: 214  iternext
+00023: 214  setlocal 1
+00026: 214  pop
+00027: 217  getlocal 0
+00030: 217  getlocal 1
+00033: 217  string ","
+00038: 217  add
+00039: 217  add
+00040: 217  setlocal 0
+00043: 217  pop
+00044: 217  loopentry
+00045: 217  moreiter
+00046: 217  ifne 21 (-25)
+00051: 217  enditer
+00052: 222  getlocal 0
+00055: 222  dup
+00056: 222  callprop "substring"
+00061: 222  swap
+00062: 222  notearg
+00063: 222  zero
+00064: 222  notearg
+00065: 222  getlocal 0
+00068: 222  length "length"
+00073: 222  one
+00074: 222  sub
+00075: 222  notearg
+00076: 222  call 2
+00079: 222  setlocal 0
+00082: 222  pop
+00083: 224  string ""
+00088: 224  setlocal 2
+00091: 224  pop
+00092: 225  this
+00093: 225  getprop "cfg"
+00098: 225  getprop "retainListForStr"
+00103: 225  string ""
+00108: 225  eq
+00109: 225  ifeq 141 (+32)
+00114: 226  getlocal 0
+00117: 226  setlocal 2
+00120: 226  pop
+00121: 227  this
+00122: 227  getprop "cfg"
+00127: 227  getlocal 2
+00130: 227  setprop "retainListForStr"
+00135: 227  pop
+00136: 227  goto 156 (+20)
+00141: 230  this
+00142: 230  getprop "cfg"
+00147: 230  getprop "retainListForStr"
+00152: 230  setlocal 2
+00155: 230  pop
+00156: 234  getlocal 2
+00159: 234  dup
+00160: 234  callprop "split"
+00165: 234  swap
+00166: 234  notearg
+00167: 234  string ","
+00172: 234  notearg
+00173: 234  call 1
+00176: 234  setlocal 3
+00179: 234  pop
+00180: 236  name "xs"
+00185: 236  iter 1
+00187: 236  goto 262 (+75)
+00192: 236  loophead
+00193: 236  iternext
+00194: 236  setlocal 1
+00197: 236  pop
+00198: 239  this
+00199: 239  dup
+00200: 239  callprop "isInList"
+00205: 239  swap
+00206: 239  notearg
+00207: 239  getlocal 1
+00210: 239  notearg
+00211: 239  getlocal 3
+00214: 239  notearg
+00215: 239  call 2
+00218: 239  not
+00219: 239  ifeq 262 (+43)
+00224: 240  name "cc"
+00229: 240  dup
+00230: 240  callprop "log"
+00235: 240  swap
+00236: 240  notearg
+00237: 240  string "delObj:"
+00242: 240  getlocal 1
+00245: 240  add
+00246: 240  notearg
+00247: 240  call 1
+00250: 240  pop
+00251: 241  name "xs"
+00256: 241  getlocal 1
+00259: 241  null
+00260: 241  setelem
+00261: 241  pop
+00262: 241  loopentry
+00263: 241  moreiter
+00264: 241  ifne 192 (-72)
+00269: 241  enditer
+00270: 244  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:212 ---
+;; function object[8] main_game
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:251 ---
+loc   line  op
+----- ----  --
+main:
+00000: 252  name "xsc"
+00005: 252  getprop "weiduan"
+00010: 252  and 26 (+16)
+00015: 252  pop
+00016: 252  name "xs"
+00021: 252  getprop "readAndWriteSqlByWeiduan"
+00026: 252  ifeq 53 (+27)
+00031: 253  name "xs"
+00036: 253  getprop "readAndWriteSqlByWeiduan"
+00041: 253  dup
+00042: 253  callprop "clearXS"
+00047: 253  swap
+00048: 253  notearg
+00049: 253  call 0
+00052: 253  pop
+00053: 259  name "xs"
+00058: 259  name "xsc"
+00063: 259  getprop "sw"
+00068: 259  setprop "sw"
+00073: 259  pop
+00074: 260  name "xs"
+00079: 260  name "xsc"
+00084: 260  getprop "sh"
+00089: 260  setprop "sh"
+00094: 260  pop
+00095: 262  name "xs"
+00100: 262  name "xsc"
+00105: 262  getprop "app_account_sys"
+00110: 262  setprop "app_account_sys"
+00115: 262  pop
+00116: 263  name "xs"
+00121: 263  name "xsc"
+00126: 263  getprop "app_indentify"
+00131: 263  setprop "app_indentify"
+00136: 263  pop
+00137: 265  name "xs"
+00142: 265  name "xsc"
+00147: 265  getprop "res"
+00152: 265  setprop "res"
+00157: 265  pop
+00158: 266  name "xs"
+00163: 266  name "xsc"
+00168: 266  getprop "frameSize"
+00173: 266  setprop "frameSize"
+00178: 266  pop
+00179: 267  name "xs"
+00184: 267  name "xsc"
+00189: 267  getprop "weiduan"
+00194: 267  setprop "weiduan"
+00199: 267  pop
+00200: 269  name "xs"
+00205: 269  false
+00206: 269  setprop "isAdult"
+00211: 269  pop
+00212: 271  name "xs"
+00217: 271  int8 3
+00219: 271  setprop "adultNum"
+00224: 271  pop
+00225: 272  name "xs"
+00230: 272  zero
+00231: 272  setprop "adultShowTime"
+00236: 272  pop
+00237: 273  name "xs"
+00242: 273  uint16 3600
+00245: 273  setprop "adultIntervalTime"
+00250: 273  pop
+00251: 275  name "xs"
+00256: 275  false
+00257: 275  setprop "isMobile"
+00262: 275  pop
+00263: 277  name "xs"
+00268: 277  false
+00269: 277  setprop "isTaskGoScene"
+00274: 277  pop
+00275: 280  callname "require"
+00280: 280  implicitthis "require"
+00285: 280  notearg
+00286: 280  string "Core/headers.js"
+00291: 280  notearg
+00292: 280  call 1
+00295: 280  pop
+00296: 284  callname "require"
+00301: 284  implicitthis "require"
+00306: 284  notearg
+00307: 284  string "headers.js"
+00312: 284  notearg
+00313: 284  call 1
+00316: 284  pop
+00317: 286  name "xs"
+00322: 286  getprop "Debug"
+00327: 286  getprop "Logger"
+00332: 286  dup
+00333: 286  callprop "SendLog"
+00338: 286  swap
+00339: 286  notearg
+00340: 286  call 0
+00343: 286  pop
+00344: 289  name "xs"
+00349: 289  getprop "Factorys"
+00354: 289  getprop "Sprite"
+00359: 289  dup
+00360: 289  callprop "load"
+00365: 289  swap
+00366: 289  notearg
+00367: 289  string "Cmn01"
+00372: 289  notearg
+00373: 289  true
+00374: 289  notearg
+00375: 289  call 2
+00378: 289  pop
+00379: 290  name "xs"
+00384: 290  getprop "Factorys"
+00389: 290  getprop "Sprite"
+00394: 290  dup
+00395: 290  callprop "load"
+00400: 290  swap
+00401: 290  notearg
+00402: 290  string "Cmn02"
+00407: 290  notearg
+00408: 290  true
+00409: 290  notearg
+00410: 290  call 2
+00413: 290  pop
+00414: 291  name "xs"
+00419: 291  getprop "Factorys"
+00424: 291  getprop "Sprite"
+00429: 291  dup
+00430: 291  callprop "load"
+00435: 291  swap
+00436: 291  notearg
+00437: 291  string "Cmn03"
+00442: 291  notearg
+00443: 291  true
+00444: 291  notearg
+00445: 291  call 2
+00448: 291  pop
+00449: 295  name "xs"
+00454: 295  getprop "Profile"
+00459: 295  getprop "UserCfg"
+00464: 295  dup
+00465: 295  callprop "isVoiceOn_Bg"
+00470: 295  swap
+00471: 295  notearg
+00472: 295  call 0
+00475: 295  true
+00476: 295  stricteq
+00477: 295  ifeq 509 (+32)
+00482: 296  name "xs"
+00487: 296  getprop "Tools"
+00492: 296  getprop "Audio"
+00497: 296  dup
+00498: 296  callprop "turnOn_Bg"
+00503: 296  swap
+00504: 296  notearg
+00505: 296  call 0
+00508: 296  pop
+00509: 298  name "xs"
+00514: 298  getprop "Profile"
+00519: 298  getprop "UserCfg"
+00524: 298  dup
+00525: 298  callprop "isVoiceOn_Eff"
+00530: 298  swap
+00531: 298  notearg
+00532: 298  call 0
+00535: 298  true
+00536: 298  stricteq
+00537: 298  ifeq 569 (+32)
+00542: 299  name "xs"
+00547: 299  getprop "Tools"
+00552: 299  getprop "Audio"
+00557: 299  dup
+00558: 299  callprop "turnOn_Eff"
+00563: 299  swap
+00564: 299  notearg
+00565: 299  call 0
+00568: 299  pop
+00569: 301  name "xs"
+00574: 301  getprop "Profile"
+00579: 301  getprop "UserCfg"
+00584: 301  dup
+00585: 301  callprop "isMemMode_UseMoreMem"
+00590: 301  swap
+00591: 301  notearg
+00592: 301  call 0
+00595: 301  true
+00596: 301  stricteq
+00597: 301  ifeq 634 (+37)
+00602: 302  name "xs"
+00607: 302  getprop "Tools"
+00612: 302  getprop "Sys"
+00617: 302  dup
+00618: 302  callprop "turnOn_UseMoreMem"
+00623: 302  swap
+00624: 302  notearg
+00625: 302  call 0
+00628: 302  pop
+00629: 302  goto 661 (+32)
+00634: 305  name "xs"
+00639: 305  getprop "Tools"
+00644: 305  getprop "Sys"
+00649: 305  dup
+00650: 305  callprop "turnOff_UseMoreMem"
+00655: 305  swap
+00656: 305  notearg
+00657: 305  call 0
+00660: 305  pop
+00661: 309  name "xs"
+00666: 309  getprop "loadTest"
+00671: 309  true
+00672: 309  stricteq
+00673: 309  ifeq 727 (+54)
+00678: 310  name "cc"
+00683: 310  dup
+00684: 310  callprop "log"
+00689: 310  swap
+00690: 310  notearg
+00691: 310  string "xs.loadTest === true, use main_test.js "
+00696: 310  notearg
+00697: 310  call 1
+00700: 310  pop
+00701: 311  callname "require"
+00706: 311  implicitthis "require"
+00711: 311  notearg
+00712: 311  string "test/main_test.js"
+00717: 311  notearg
+00718: 311  call 1
+00721: 311  pop
+00722: 311  goto 783 (+61)
+00727: 314  name "cc"
+00732: 314  dup
+00733: 314  callprop "log"
+00738: 314  swap
+00739: 314  notearg
+00740: 314  string "xs.loadTest === false,goto LoginScene "
+00745: 314  notearg
+00746: 314  call 1
+00749: 314  pop
+00750: 315  name "xs"
+00755: 315  getprop "Scene"
+00760: 315  getprop "Mgr"
+00765: 315  dup
+00766: 315  callprop "changeSceneByName"
+00771: 315  swap
+00772: 315  notearg
+00773: 315  string "LoginScene"
+00778: 315  notearg
+00779: 315  call 1
+00782: 315  pop
+00783: 316  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/main.js:251 ---

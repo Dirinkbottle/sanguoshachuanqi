@@ -1,0 +1,176 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/Impl.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=15 object[0]
+;; FUNCTION-MAP kind=lambda offset=25 object[1]
+;; FUNCTION-MAP kind=lambda offset=40 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/Impl.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Skill"
+00010:   9  newinit 1
+00015:  11  lambda (function () {
+    [sourceless code]
+})
+00020:  11  initprop "init"
+00025:  15  lambda (function () {
+    [sourceless code]
+})
+00030:  15  initprop "updateParams"
+00035:  21  newinit 1
+00040:  23  lambda (function () {
+    [sourceless code]
+})
+00045:  23  initprop "HitTextPos"
+00050:  23  endinit
+00051:  23  initprop "Creater"
+00056:  23  endinit
+00057:  23  setprop "Impl"
+00062:  23  popv
+00063:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/Impl.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/Impl.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  zero
+00002:  12  setprop "m_idx"
+00007:  12  pop
+00008:  12  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/Impl.js:11 ---
+;; function object[1] updateParams
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] params
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/Impl.js:15 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  getarg 0
+00003:  16  ifeq 36 (+33)
+00008:  17  getarg 0
+00011:  17  getprop "idx"
+00016:  17  ifeq 36 (+20)
+00021:  17  this
+00022:  17  getarg 0
+00025:  17  getprop "idx"
+00030:  17  setprop "m_idx"
+00035:  17  pop
+00036:  18  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/Impl.js:15 ---
+;; function object[2] HitTextPos
+;; function metadata object[2] nargs=1 bindings=7
+;; arg[0] params
+;; local[0] _input
+;; local[1] _needRevertX
+;; local[2] _idx
+;; local[3] _baseView
+;; local[4] _offset_ori
+;; local[5] _offset
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/Impl.js:23 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  getarg 0
+00003:  27  getprop "input"
+00008:  27  setlocal 0
+00011:  27  pop
+00012:  28  getarg 0
+00015:  28  getprop "needRevertX"
+00020:  28  setlocal 1
+00023:  28  pop
+00024:  29  name "xs"
+00029:  29  getprop "Skill"
+00034:  29  getprop "Impl"
+00039:  29  getprop "m_idx"
+00044:  29  or 51 (+7)
+00049:  29  pop
+00050:  29  zero
+00051:  29  setlocal 2
+00054:  29  pop
+00055:  31  name "xs"
+00060:  31  getprop "Factorys"
+00065:  31  getprop "Skill"
+00070:  31  dup
+00071:  31  callprop "getViewByName"
+00076:  31  swap
+00077:  31  notearg
+00078:  31  getlocal 0
+00081:  31  notearg
+00082:  31  string "to"
+00087:  31  notearg
+00088:  31  call 2
+00091:  31  setlocal 3
+00094:  31  pop
+00095:  40  name "cc"
+00100:  40  dup
+00101:  40  callprop "p"
+00106:  40  swap
+00107:  40  notearg
+00108:  40  zero
+00109:  40  notearg
+00110:  40  int8 120
+00112:  40  getlocal 2
+00115:  40  int8 20
+00117:  40  mul
+00118:  40  add
+00119:  40  notearg
+00120:  40  call 2
+00123:  40  setlocal 4
+00126:  40  pop
+00127:  41  null
+00128:  41  setlocal 5
+00131:  41  pop
+00132:  42  getlocal 1
+00135:  42  ifeq 186 (+51)
+00140:  43  name "cc"
+00145:  43  dup
+00146:  43  callprop "p"
+00151:  43  swap
+00152:  43  notearg
+00153:  43  getlocal 4
+00156:  43  getprop "x"
+00161:  43  int8 -1
+00163:  43  mul
+00164:  43  notearg
+00165:  43  getlocal 4
+00168:  43  getprop "y"
+00173:  43  notearg
+00174:  43  call 2
+00177:  43  setlocal 5
+00180:  43  pop
+00181:  43  goto 193 (+12)
+00186:  46  getlocal 4
+00189:  46  setlocal 5
+00192:  46  pop
+00193:  49  name "cc"
+00198:  49  dup
+00199:  49  callprop "pAdd"
+00204:  49  swap
+00205:  49  notearg
+00206:  50  getlocal 3
+00209:  50  dup
+00210:  50  callprop "getPosition"
+00215:  50  swap
+00216:  50  notearg
+00217:  50  call 0
+00220:  50  notearg
+00221:  51  getlocal 5
+00224:  51  notearg
+00225:  51  call 2
+00228:  51  return
+00229:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/Impl.js:23 ---

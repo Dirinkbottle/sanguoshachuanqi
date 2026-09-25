@@ -1,0 +1,934 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SkillPieceIconShow.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=73 object[4]
+;; FUNCTION-MAP kind=lambda offset=83 object[5]
+;; FUNCTION-MAP kind=lambda offset=93 object[6]
+;; FUNCTION-MAP kind=lambda offset=103 object[7]
+;; FUNCTION-MAP kind=lambda offset=113 object[8]
+;; FUNCTION-MAP kind=lambda offset=123 object[9]
+;; FUNCTION-MAP kind=lambda offset=224 object[10]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "cc"
+00015:   6  getprop "Node"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  lambda (function () {
+    [sourceless code]
+})
+00038:   7  initprop "ctor"
+00043:  12  lambda (function () {
+    [sourceless code]
+})
+00048:  12  initprop "init"
+00053:  66  lambda (function () {
+    [sourceless code]
+})
+00058:  66  initprop "onEnter"
+00063:  72  lambda (function () {
+    [sourceless code]
+})
+00068:  72  initprop "onEnterTransitionDidFinish"
+00073:  84  lambda (function () {
+    [sourceless code]
+})
+00078:  84  initprop "next"
+00083:  95  lambda (function () {
+    [sourceless code]
+})
+00088:  95  initprop "prev"
+00093: 106  lambda (function () {
+    [sourceless code]
+})
+00098: 106  initprop "setCurSelectByIdx"
+00103: 112  lambda (function () {
+    [sourceless code]
+})
+00108: 112  initprop "getCurSelect"
+00113: 116  lambda (function () {
+    [sourceless code]
+})
+00118: 116  initprop "getIconShowBounding"
+00123: 120  lambda (function () {
+    [sourceless code]
+})
+00128: 120  initprop "setBaseTouchPriority"
+00133: 124  newinit 1
+00138: 125  newinit 1
+00143: 126  int8 10
+00145: 126  initprop "tag"
+00150: 126  endinit
+00151: 126  initprop "leftArrow"
+00156: 128  newinit 1
+00161: 129  int8 11
+00163: 129  initprop "tag"
+00168: 129  endinit
+00169: 129  initprop "rightArrow"
+00174: 131  newinit 1
+00179: 132  int8 12
+00181: 132  initprop "tag"
+00186: 132  endinit
+00187: 132  initprop "bg"
+00192: 132  endinit
+00193: 132  initprop "cfg"
+00198: 132  endinit
+00199: 132  notearg
+00200: 132  call 1
+00203: 132  setprop "SkillPieceIconShow"
+00208: 132  popv
+00209: 137  name "xs"
+00214: 137  getprop "Views"
+00219: 137  getprop "SkillPieceIconShow"
+00224: 137  lambda (function () {
+    [sourceless code]
+})
+00229: 137  setprop "create"
+00234: 137  popv
+00235: 146  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  dup
+00002:   8  callprop "_super"
+00007:   8  swap
+00008:   8  notearg
+00009:   8  call 0
+00012:   8  pop
+00013:   9  name "cc"
+00018:   9  dup
+00019:   9  callprop "associateWithNative"
+00024:   9  swap
+00025:   9  notearg
+00026:   9  this
+00027:   9  notearg
+00028:   9  name "cc"
+00033:   9  getprop "Node"
+00038:   9  notearg
+00039:   9  call 2
+00042:   9  pop
+00043:   9  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:7 ---
+;; function object[1] init
+;; function metadata object[1] nargs=2 bindings=8
+;; arg[0] skillPieceArray
+;; arg[1] teachers
+;; local[0] visibleSize
+;; local[1] speakWords
+;; local[2] i
+;; local[3] str
+;; local[4] iconBarBg
+;; local[5] iconBarArrowRight
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  getarg 0
+00004:  13  setprop "skillPieceArray"
+00009:  13  pop
+00010:  14  name "xs"
+00015:  14  getprop "director"
+00020:  14  dup
+00021:  14  callprop "getVisibleSize"
+00026:  14  swap
+00027:  14  notearg
+00028:  14  call 0
+00031:  14  setlocal 0
+00034:  14  pop
+00035:  16  this
+00036:  16  name "xs"
+00041:  16  getprop "Views"
+00046:  16  getprop "Table"
+00051:  16  getprop "SkillPieceTableView"
+00056:  16  dup
+00057:  16  callprop "create"
+00062:  16  swap
+00063:  16  notearg
+00064:  16  getarg 0
+00067:  16  notearg
+00068:  17  name "cc"
+00073:  17  dup
+00074:  17  callprop "size"
+00079:  17  swap
+00080:  17  notearg
+00081:  17  getlocal 0
+00084:  17  getprop "width"
+00089:  17  uint16 130
+00092:  17  sub
+00093:  17  int8 100
+00095:  17  sub
+00096:  17  notearg
+00097:  17  int8 107
+00099:  17  notearg
+00100:  17  call 2
+00103:  17  notearg
+00104:  17  call 2
+00107:  17  setprop "tableView"
+00112:  17  pop
+00113:  18  this
+00114:  18  getprop "tableView"
+00119:  18  dup
+00120:  18  callprop "setListener"
+00125:  18  swap
+00126:  18  notearg
+00127:  18  this
+00128:  18  notearg
+00129:  18  call 1
+00132:  18  pop
+00133:  20  this
+00134:  20  getarg 0
+00137:  20  length "length"
+00142:  20  setprop "skillPieceCount"
+00147:  20  pop
+00148:  21  this
+00149:  21  getarg 1
+00152:  21  length "length"
+00157:  21  one
+00158:  21  sub
+00159:  21  setprop "focusIdx"
+00164:  21  pop
+00165:  24  name "Array"
+00170:  24  undefined
+00171:  24  notearg
+00172:  24  getarg 1
+00175:  24  length "length"
+00180:  24  notearg
+00181:  24  new 1
+00184:  24  setlocal 1
+00187:  24  pop
+00188:  25  zero
+00189:  25  setlocal 2
+00192:  25  pop
+00193:  25  goto 344 (+151)
+00198:  26  loophead
+00199:  26  name "xs"
+00204:  26  getprop "Tools"
+00209:  26  getprop "String"
+00214:  26  dup
+00215:  26  callprop "createString"
+00220:  26  swap
+00221:  26  notearg
+00222:  26  string "1071310030"
+00227:  26  notearg
+00228:  26  call 1
+00231:  26  dup
+00232:  26  callprop "convWithArgs"
+00237:  26  swap
+00238:  26  notearg
+00239:  26  newarray 2
+00243:  27  getarg 0
+00246:  27  getlocal 1
+00249:  27  length "length"
+00254:  27  one
+00255:  27  sub
+00256:  27  getlocal 2
+00259:  27  sub
+00260:  27  getelem
+00261:  27  dup
+00262:  27  callprop "getComposePieceNum"
+00267:  27  swap
+00268:  27  notearg
+00269:  27  call 0
+00272:  27  initelem_array 0
+00276:  28  getarg 0
+00279:  28  getlocal 1
+00282:  28  length "length"
+00287:  28  one
+00288:  28  sub
+00289:  28  getlocal 2
+00292:  28  sub
+00293:  28  getelem
+00294:  28  dup
+00295:  28  callprop "getNameString"
+00300:  28  swap
+00301:  28  notearg
+00302:  28  call 0
+00305:  28  initelem_array 1
+00309:  28  endinit
+00310:  28  notearg
+00311:  28  call 1
+00314:  28  setlocal 3
+00317:  28  pop
+00318:  30  getlocal 1
+00321:  30  getlocal 2
+00324:  30  getlocal 3
+00327:  30  setelem
+00328:  30  pop
+00329:  25  localinc 11
+00332:  25  getlocal 2
+00335:  25  pos
+00336:  25  dup
+00337:  25  one
+00338:  25  add
+00339:  25  setlocal 2
+00342:  25  pop
+00343:  25  pop
+00344:  25  loopentry
+00345:  25  getlocal 2
+00348:  25  getlocal 1
+00351:  25  length "length"
+00356:  25  lt
+00357:  25  ifne 198 (-159)
+00362:  36  this
+00363:  36  name "xs"
+00368:  36  getprop "Views"
+00373:  36  getprop "GeneralPlayView"
+00378:  36  dup
+00379:  36  callprop "create"
+00384:  36  swap
+00385:  36  notearg
+00386:  37  name "xs"
+00391:  37  getprop "Views"
+00396:  37  getprop "GeneralPlayViewType_Foot"
+00401:  37  notearg
+00402:  38  getarg 1
+00405:  38  notearg
+00406:  38  call 2
+00409:  38  setprop "generalShow"
+00414:  38  pop
+00415:  42  this
+00416:  42  getprop "generalShow"
+00421:  42  dup
+00422:  42  callprop "setWords"
+00427:  42  swap
+00428:  42  notearg
+00429:  42  getlocal 1
+00432:  42  notearg
+00433:  42  call 1
+00436:  42  pop
+00437:  43  this
+00438:  43  getprop "generalShow"
+00443:  43  dup
+00444:  43  callprop "setNeedAutoDismissSpeak"
+00449:  43  swap
+00450:  43  notearg
+00451:  43  false
+00452:  43  notearg
+00453:  43  call 1
+00456:  43  pop
+00457:  44  this
+00458:  44  getprop "generalShow"
+00463:  44  dup
+00464:  44  callprop "setNeedAutoPlay"
+00469:  44  swap
+00470:  44  notearg
+00471:  44  false
+00472:  44  notearg
+00473:  44  call 1
+00476:  44  pop
+00477:  45  this
+00478:  45  getprop "generalShow"
+00483:  45  dup
+00484:  45  callprop "setEnabled"
+00489:  45  swap
+00490:  45  notearg
+00491:  45  false
+00492:  45  notearg
+00493:  45  call 1
+00496:  45  pop
+00497:  46  this
+00498:  46  getprop "generalShow"
+00503:  46  dup
+00504:  46  callprop "setSpeakSpeed"
+00509:  46  swap
+00510:  46  notearg
+00511:  46  double 0.6
+00516:  46  notearg
+00517:  46  call 1
+00520:  46  pop
+00521:  47  this
+00522:  47  getprop "generalShow"
+00527:  47  dup
+00528:  47  callprop "setIndex"
+00533:  47  swap
+00534:  47  notearg
+00535:  47  this
+00536:  47  getprop "focusIdx"
+00541:  47  notearg
+00542:  47  call 1
+00545:  47  pop
+00546:  48  name "xs"
+00551:  48  getprop "Utils"
+00556:  48  getprop "Node"
+00561:  48  dup
+00562:  48  callprop "attachNodes"
+00567:  48  swap
+00568:  48  notearg
+00569:  48  this
+00570:  48  notearg
+00571:  48  this
+00572:  48  getprop "generalShow"
+00577:  48  notearg
+00578:  48  newinit 1
+00583:  48  string "lb"
+00588:  48  initprop "desc"
+00593:  48  newinit 1
+00598:  48  uint16 200
+00601:  48  initprop "x"
+00606:  48  int8 -20
+00608:  48  initprop "y"
+00613:  48  endinit
+00614:  48  initprop "offset"
+00619:  48  true
+00620:  48  initprop "sc"
+00625:  48  endinit
+00626:  48  notearg
+00627:  48  call 3
+00630:  48  pop
+00631:  51  this
+00632:  51  name "xs"
+00637:  51  getprop "ccb_reader"
+00642:  51  dup
+00643:  51  callprop "load"
+00648:  51  swap
+00649:  51  notearg
+00650:  51  string "ccb3/0_8_3_SkillIconShow.ccbi"
+00655:  51  notearg
+00656:  51  this
+00657:  51  notearg
+00658:  51  call 2
+00661:  51  setprop "ccbNode_IconBar"
+00666:  51  pop
+00667:  52  this
+00668:  52  getprop "ccbNode_IconBar"
+00673:  52  dup
+00674:  52  callprop "getChildByTag"
+00679:  52  swap
+00680:  52  notearg
+00681:  52  this
+00682:  52  getprop "cfg"
+00687:  52  getprop "bg"
+00692:  52  getprop "tag"
+00697:  52  notearg
+00698:  52  call 1
+00701:  52  setlocal 4
+00704:  52  pop
+00705:  53  getlocal 4
+00708:  53  dup
+00709:  53  callprop "setPreferredSize"
+00714:  53  swap
+00715:  53  notearg
+00716:  53  name "cc"
+00721:  53  dup
+00722:  53  callprop "size"
+00727:  53  swap
+00728:  53  notearg
+00729:  53  getlocal 0
+00732:  53  getprop "width"
+00737:  53  uint16 130
+00740:  53  sub
+00741:  53  notearg
+00742:  53  int8 107
+00744:  53  notearg
+00745:  53  call 2
+00748:  53  notearg
+00749:  53  call 1
+00752:  53  pop
+00753:  54  this
+00754:  54  getprop "ccbNode_IconBar"
+00759:  54  dup
+00760:  54  callprop "setContentSize"
+00765:  54  swap
+00766:  54  notearg
+00767:  54  name "cc"
+00772:  54  dup
+00773:  54  callprop "size"
+00778:  54  swap
+00779:  54  notearg
+00780:  54  getlocal 0
+00783:  54  getprop "width"
+00788:  54  uint16 130
+00791:  54  sub
+00792:  54  notearg
+00793:  54  int8 107
+00795:  54  notearg
+00796:  54  call 2
+00799:  54  notearg
+00800:  54  call 1
+00803:  54  pop
+00804:  55  this
+00805:  55  getprop "ccbNode_IconBar"
+00810:  55  dup
+00811:  55  callprop "setAnchorPoint"
+00816:  55  swap
+00817:  55  notearg
+00818:  55  name "cc"
+00823:  55  dup
+00824:  55  callprop "p"
+00829:  55  swap
+00830:  55  notearg
+00831:  55  zero
+00832:  55  notearg
+00833:  55  one
+00834:  55  notearg
+00835:  55  call 2
+00838:  55  notearg
+00839:  55  call 1
+00842:  55  pop
+00843:  56  name "xs"
+00848:  56  getprop "Utils"
+00853:  56  getprop "Node"
+00858:  56  dup
+00859:  56  callprop "attachNodes"
+00864:  56  swap
+00865:  56  notearg
+00866:  56  this
+00867:  56  notearg
+00868:  56  this
+00869:  56  getprop "ccbNode_IconBar"
+00874:  56  notearg
+00875:  57  newinit 1
+00880:  57  string "lb"
+00885:  57  initprop "desc"
+00890:  57  name "cc"
+00895:  57  dup
+00896:  57  callprop "p"
+00901:  57  swap
+00902:  57  notearg
+00903:  57  zero
+00904:  57  notearg
+00905:  57  getlocal 0
+00908:  57  getprop "height"
+00913:  57  int8 108
+00915:  57  sub
+00916:  57  notearg
+00917:  57  call 2
+00920:  57  initprop "offset"
+00925:  57  false
+00926:  57  initprop "sc"
+00931:  57  endinit
+00932:  57  notearg
+00933:  57  call 3
+00936:  57  pop
+00937:  59  this
+00938:  59  getprop "ccbNode_IconBar"
+00943:  59  dup
+00944:  59  callprop "getChildByTag"
+00949:  59  swap
+00950:  59  notearg
+00951:  59  this
+00952:  59  getprop "cfg"
+00957:  59  getprop "rightArrow"
+00962:  59  getprop "tag"
+00967:  59  notearg
+00968:  59  call 1
+00971:  59  setlocal 5
+00974:  59  pop
+00975:  60  getlocal 5
+00978:  60  dup
+00979:  60  callprop "setPositionX"
+00984:  60  swap
+00985:  60  notearg
+00986:  60  getlocal 0
+00989:  60  getprop "width"
+00994:  60  uint16 130
+00997:  60  sub
+00998:  60  int8 30
+01000:  60  sub
+01001:  60  notearg
+01002:  60  call 1
+01005:  60  pop
+01006:  63  true
+01007:  63  return
+01008:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:12 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:66 ---
+loc   line  op
+----- ----  --
+main:
+00000:  67  this
+00001:  67  dup
+00002:  67  callprop "_super"
+00007:  67  swap
+00008:  67  notearg
+00009:  67  call 0
+00012:  67  pop
+00013:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:66 ---
+;; function object[3] onEnterTransitionDidFinish
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:72 ---
+loc   line  op
+----- ----  --
+main:
+00000:  74  name "xs"
+00005:  74  dup
+00006:  74  callprop "log"
+00011:  74  swap
+00012:  74  notearg
+00013:  74  string "onEnterTransitionDidFinish-SkillPieceIconShow"
+00018:  74  notearg
+00019:  74  string "begin"
+00024:  74  notearg
+00025:  74  call 2
+00028:  74  pop
+00029:  75  this
+00030:  75  dup
+00031:  75  callprop "_super"
+00036:  75  swap
+00037:  75  notearg
+00038:  75  call 0
+00041:  75  pop
+00042:  77  this
+00043:  77  getprop "tableView"
+00048:  77  dup
+00049:  77  callprop "setTouchPriority"
+00054:  77  swap
+00055:  77  notearg
+00056:  77  this
+00057:  77  getprop "m_baseTouchPriority"
+00062:  77  notearg
+00063:  77  call 1
+00066:  77  pop
+00067:  78  name "xs"
+00072:  78  getprop "Utils"
+00077:  78  getprop "Node"
+00082:  78  dup
+00083:  78  callprop "attachNodes"
+00088:  78  swap
+00089:  78  notearg
+00090:  78  this
+00091:  78  getprop "ccbNode_IconBar"
+00096:  78  notearg
+00097:  78  this
+00098:  78  getprop "tableView"
+00103:  78  notearg
+00104:  78  newinit 1
+00109:  78  string "lb"
+00114:  78  initprop "desc"
+00119:  78  name "cc"
+00124:  78  dup
+00125:  78  callprop "p"
+00130:  78  swap
+00131:  78  notearg
+00132:  78  int8 50
+00134:  78  notearg
+00135:  78  int8 -3
+00137:  78  notearg
+00138:  78  call 2
+00141:  78  initprop "offset"
+00146:  78  false
+00147:  78  initprop "sc"
+00152:  78  endinit
+00153:  78  notearg
+00154:  78  call 3
+00157:  78  pop
+00158:  80  name "xs"
+00163:  80  dup
+00164:  80  callprop "log"
+00169:  80  swap
+00170:  80  notearg
+00171:  80  string "onEnterTransitionDidFinish-SkillPieceIconShow"
+00176:  80  notearg
+00177:  80  string "end"
+00182:  80  notearg
+00183:  80  call 2
+00186:  80  pop
+00187:  80  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:72 ---
+;; function object[4] next
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:84 ---
+loc   line  op
+----- ----  --
+main:
+00000:  85  this
+00001:  85  propinc "focusIdx"
+00007:  85  dup
+00008:  85  getprop "focusIdx"
+00013:  85  pos
+00014:  85  dup
+00015:  85  one
+00016:  85  add
+00017:  85  pick 2
+00019:  85  swap
+00020:  85  setprop "focusIdx"
+00025:  85  pop
+00026:  85  pop
+00027:  86  this
+00028:  86  getprop "focusIdx"
+00033:  86  this
+00034:  86  getprop "skillPieceCount"
+00039:  86  ge
+00040:  86  ifeq 74 (+34)
+00045:  87  this
+00046:  87  propdec "focusIdx"
+00052:  87  dup
+00053:  87  getprop "focusIdx"
+00058:  87  pos
+00059:  87  dup
+00060:  87  one
+00061:  87  sub
+00062:  87  pick 2
+00064:  87  swap
+00065:  87  setprop "focusIdx"
+00070:  87  pop
+00071:  87  pop
+00072:  88  undefined
+00073:  88  return
+00074:  90  this
+00075:  90  getprop "generalShow"
+00080:  90  dup
+00081:  90  callprop "nextTile"
+00086:  90  swap
+00087:  90  notearg
+00088:  90  call 0
+00091:  90  pop
+00092:  91  this
+00093:  91  getprop "tableView"
+00098:  91  dup
+00099:  91  callprop "prev"
+00104:  91  swap
+00105:  91  notearg
+00106:  91  call 0
+00109:  91  pop
+00110:  91  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:84 ---
+;; function object[5] prev
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:95 ---
+loc   line  op
+----- ----  --
+main:
+00000:  96  this
+00001:  96  propdec "focusIdx"
+00007:  96  dup
+00008:  96  getprop "focusIdx"
+00013:  96  pos
+00014:  96  dup
+00015:  96  one
+00016:  96  sub
+00017:  96  pick 2
+00019:  96  swap
+00020:  96  setprop "focusIdx"
+00025:  96  pop
+00026:  96  pop
+00027:  97  this
+00028:  97  getprop "focusIdx"
+00033:  97  zero
+00034:  97  lt
+00035:  97  ifeq 69 (+34)
+00040:  98  this
+00041:  98  propinc "focusIdx"
+00047:  98  dup
+00048:  98  getprop "focusIdx"
+00053:  98  pos
+00054:  98  dup
+00055:  98  one
+00056:  98  add
+00057:  98  pick 2
+00059:  98  swap
+00060:  98  setprop "focusIdx"
+00065:  98  pop
+00066:  98  pop
+00067:  99  undefined
+00068:  99  return
+00069: 102  this
+00070: 102  getprop "generalShow"
+00075: 102  dup
+00076: 102  callprop "lastTile"
+00081: 102  swap
+00082: 102  notearg
+00083: 102  call 0
+00086: 102  pop
+00087: 103  this
+00088: 103  getprop "tableView"
+00093: 103  dup
+00094: 103  callprop "next"
+00099: 103  swap
+00100: 103  notearg
+00101: 103  call 0
+00104: 103  pop
+00105: 103  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:95 ---
+;; function object[6] setCurSelectByIdx
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:106 ---
+loc   line  op
+----- ----  --
+main:
+00000: 107  this
+00001: 107  this
+00002: 107  getprop "skillPieceCount"
+00007: 107  one
+00008: 107  sub
+00009: 107  getarg 0
+00012: 107  sub
+00013: 107  setprop "focusIdx"
+00018: 107  pop
+00019: 108  this
+00020: 108  getprop "generalShow"
+00025: 108  dup
+00026: 108  callprop "setIndex"
+00031: 108  swap
+00032: 108  notearg
+00033: 108  this
+00034: 108  getprop "focusIdx"
+00039: 108  notearg
+00040: 108  call 1
+00043: 108  pop
+00044: 109  this
+00045: 109  dup
+00046: 109  callprop "getParent"
+00051: 109  swap
+00052: 109  notearg
+00053: 109  call 0
+00056: 109  dup
+00057: 109  callprop "updateSkillPiece"
+00062: 109  swap
+00063: 109  notearg
+00064: 109  this
+00065: 109  dup
+00066: 109  callprop "getCurSelect"
+00071: 109  swap
+00072: 109  notearg
+00073: 109  call 0
+00076: 109  notearg
+00077: 109  call 1
+00080: 109  pop
+00081: 109  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:106 ---
+;; function object[7] getCurSelect
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:112 ---
+loc   line  op
+----- ----  --
+main:
+00000: 113  this
+00001: 113  getprop "skillPieceArray"
+00006: 113  this
+00007: 113  getprop "skillPieceArray"
+00012: 113  length "length"
+00017: 113  one
+00018: 113  sub
+00019: 113  this
+00020: 113  getprop "focusIdx"
+00025: 113  sub
+00026: 113  getelem
+00027: 113  return
+00028: 113  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:112 ---
+;; function object[8] getIconShowBounding
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:116 ---
+loc   line  op
+----- ----  --
+main:
+00000: 117  this
+00001: 117  getprop "ccbNode_IconBar"
+00006: 117  dup
+00007: 117  callprop "getBoundingBox"
+00012: 117  swap
+00013: 117  notearg
+00014: 117  call 0
+00017: 117  return
+00018: 117  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:116 ---
+;; function object[9] setBaseTouchPriority
+;; function metadata object[9] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:120 ---
+loc   line  op
+----- ----  --
+main:
+00000: 121  this
+00001: 121  getarg 0
+00004: 121  setprop "m_baseTouchPriority"
+00009: 121  pop
+00010: 121  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:120 ---
+;; function object[10] create
+;; function metadata object[10] nargs=2 bindings=3
+;; arg[0] skillPieceArray
+;; arg[1] teachers
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:137 ---
+loc   line  op
+----- ----  --
+main:
+00000: 138  name "xs"
+00005: 138  getprop "Views"
+00010: 138  getprop "SkillPieceIconShow"
+00015: 138  undefined
+00016: 138  notearg
+00017: 138  new 0
+00020: 138  setlocal 0
+00023: 138  pop
+00024: 139  getlocal 0
+00027: 139  and 55 (+28)
+00032: 139  pop
+00033: 139  getlocal 0
+00036: 139  dup
+00037: 139  callprop "init"
+00042: 139  swap
+00043: 139  notearg
+00044: 139  getarg 0
+00047: 139  notearg
+00048: 139  getarg 1
+00051: 139  notearg
+00052: 139  call 2
+00055: 139  ifeq 64 (+9)
+00060: 140  getlocal 0
+00063: 140  return
+00064: 143  name "xs"
+00069: 143  dup
+00070: 143  callprop "assert"
+00075: 143  swap
+00076: 143  notearg
+00077: 143  false
+00078: 143  notearg
+00079: 143  string "xs.Views.SkillPieceIconShow create fail"
+00084: 143  notearg
+00085: 143  getlocal 0
+00088: 143  notearg
+00089: 143  call 3
+00092: 143  pop
+00093: 145  null
+00094: 145  return
+00095: 145  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillPieceIconShow.js:137 ---

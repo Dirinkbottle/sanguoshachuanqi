@@ -1,0 +1,219 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Core/Factorys/headers.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=20 object[0]
+;; FUNCTION-MAP kind=lambda offset=30 object[1]
+;; FUNCTION-MAP kind=lambda offset=40 object[2]
+;; FUNCTION-MAP kind=lambda offset=50 object[3]
+;; FUNCTION-MAP kind=lambda offset=60 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Core"
+00010:   6  newinit 1
+00015:   7  newinit 1
+00020:   9  lambda (function () {
+    [sourceless code]
+})
+00025:   9  initprop "load"
+00030:  23  lambda (function () {
+    [sourceless code]
+})
+00035:  23  initprop "unload"
+00040:  37  lambda (function () {
+    [sourceless code]
+})
+00045:  37  initprop "_createWithFileName"
+00050:  55  lambda (function () {
+    [sourceless code]
+})
+00055:  55  initprop "createWithFileName"
+00060:  61  lambda (function () {
+    [sourceless code]
+})
+00065:  61  initprop "createWithSpriteFrameName"
+00070:  61  endinit
+00071:  61  initprop "Sprite"
+00076:  61  endinit
+00077:  61  setprop "Factorys"
+00082:  61  popv
+00083:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:1 ---
+;; function object[0] load
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] plist
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:9 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  name "cc"
+00005:  11  getprop "SpriteFrameCache"
+00010:  11  dup
+00011:  11  callprop "getInstance"
+00016:  11  swap
+00017:  11  notearg
+00018:  11  call 0
+00021:  11  dup
+00022:  11  callprop "addSpriteFrames"
+00027:  11  swap
+00028:  11  notearg
+00029:  11  getarg 0
+00032:  11  notearg
+00033:  11  call 1
+00036:  11  pop
+00037:  11  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:9 ---
+;; function object[1] unload
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] plist
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:23 ---
+loc   line  op
+----- ----  --
+main:
+00000:  34  name "cc"
+00005:  34  getprop "SpriteFrameCache"
+00010:  34  dup
+00011:  34  callprop "getInstance"
+00016:  34  swap
+00017:  34  notearg
+00018:  34  call 0
+00021:  34  dup
+00022:  34  callprop "removeSpriteFramesFromFile"
+00027:  34  swap
+00028:  34  notearg
+00029:  34  getarg 0
+00032:  34  notearg
+00033:  34  call 1
+00036:  34  pop
+00037:  34  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:23 ---
+;; function object[2] _createWithFileName
+;; function metadata object[2] nargs=2 bindings=3
+;; arg[0] name
+;; arg[1] rect
+;; local[0] _sprite
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:37 ---
+loc   line  op
+----- ----  --
+main:
+00000:  39  null
+00001:  39  setlocal 0
+00004:  39  pop
+00005:  41  getarg 1
+00008:  41  ifeq 51 (+43)
+00013:  42  name "cc"
+00018:  42  getprop "Sprite"
+00023:  42  dup
+00024:  42  callprop "create"
+00029:  42  swap
+00030:  42  notearg
+00031:  42  getarg 0
+00034:  42  notearg
+00035:  42  getarg 1
+00038:  42  notearg
+00039:  42  call 2
+00042:  42  setlocal 0
+00045:  42  pop
+00046:  42  goto 80 (+34)
+00051:  45  name "cc"
+00056:  45  getprop "Sprite"
+00061:  45  dup
+00062:  45  callprop "create"
+00067:  45  swap
+00068:  45  notearg
+00069:  45  getarg 0
+00072:  45  notearg
+00073:  45  call 1
+00076:  45  setlocal 0
+00079:  45  pop
+00080:  48  getlocal 0
+00083:  48  null
+00084:  48  stricteq
+00085:  48  ifeq 122 (+37)
+00090:  49  name "xsc"
+00095:  49  getprop "Debug"
+00100:  49  dup
+00101:  49  callprop "log"
+00106:  49  swap
+00107:  49  notearg
+00108:  49  string "warning,Sprite.createWithFileName is null"
+00113:  49  notearg
+00114:  49  getarg 0
+00117:  49  notearg
+00118:  49  call 2
+00121:  49  pop
+00122:  52  getlocal 0
+00125:  52  return
+00126:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:37 ---
+;; function object[3] createWithFileName
+;; function metadata object[3] nargs=2 bindings=3
+;; arg[0] name
+;; arg[1] rect
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:55 ---
+loc   line  op
+----- ----  --
+main:
+00000:  56  this
+00001:  56  dup
+00002:  56  callprop "_createWithFileName"
+00007:  56  swap
+00008:  56  notearg
+00009:  56  getarg 0
+00012:  56  notearg
+00013:  56  getarg 1
+00016:  56  notearg
+00017:  56  call 2
+00020:  56  setlocal 0
+00023:  56  pop
+00024:  57  name "xsc"
+00029:  57  getprop "Debug"
+00034:  57  dup
+00035:  57  callprop "assert"
+00040:  57  swap
+00041:  57  notearg
+00042:  57  getlocal 0
+00045:  57  notearg
+00046:  57  string "createWithFileName failed"
+00051:  57  notearg
+00052:  57  call 2
+00055:  57  pop
+00056:  58  getlocal 0
+00059:  58  return
+00060:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:55 ---
+;; function object[4] createWithSpriteFrameName
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] frameName
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:61 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  name "cc"
+00005:  62  getprop "Sprite"
+00010:  62  dup
+00011:  62  callprop "createWithSpriteFrameName"
+00016:  62  swap
+00017:  62  notearg
+00018:  62  getarg 0
+00021:  62  notearg
+00022:  62  call 1
+00025:  62  return
+00026:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Core/Factorys/headers.js:61 ---

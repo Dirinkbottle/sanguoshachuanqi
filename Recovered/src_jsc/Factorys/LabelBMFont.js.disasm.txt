@@ -1,0 +1,807 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Factorys/LabelBMFont.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=87 object[0]
+;; FUNCTION-MAP kind=lambda offset=97 object[1]
+;; FUNCTION-MAP kind=lambda offset=107 object[2]
+;; FUNCTION-MAP kind=lambda offset=117 object[3]
+;; FUNCTION-MAP kind=lambda offset=127 object[4]
+;; FUNCTION-MAP kind=lambda offset=137 object[5]
+;; FUNCTION-MAP kind=lambda offset=147 object[6]
+;; FUNCTION-MAP kind=lambda offset=157 object[7]
+;; FUNCTION-MAP kind=lambda offset=167 object[8]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  name "xs"
+00005:  13  getprop "Factorys"
+00010:  13  name "xs"
+00015:  13  getprop "Factorys"
+00020:  13  getprop "LabelBMFont"
+00025:  13  or 178 (+153)
+00030:  13  pop
+00031:  13  newinit 1
+00036:  15  name "xs"
+00041:  15  getprop "Debug"
+00046:  15  getprop "emptyFunc"
+00051:  15  initprop "log"
+00056:  16  name "xs"
+00061:  16  getprop "Debug"
+00066:  16  getprop "emptyFunc"
+00071:  16  initprop "dump"
+00076:  18  newinit 1
+00081:  18  endinit
+00082:  18  initprop "preload_map"
+00087:  20  lambda (function () {
+    [sourceless code]
+})
+00092:  20  initprop "_create"
+00097:  69  lambda (function () {
+    [sourceless code]
+})
+00102:  69  initprop "_setNext"
+00107:  91  lambda (function () {
+    [sourceless code]
+})
+00112:  91  initprop "_setLast"
+00117: 113  lambda (function () {
+    [sourceless code]
+})
+00122: 113  initprop "_refreshLayout"
+00127: 141  lambda (function () {
+    [sourceless code]
+})
+00132: 141  initprop "_getCfg"
+00137: 151  lambda (function () {
+    [sourceless code]
+})
+00142: 151  initprop "getFileName"
+00147: 157  lambda (function () {
+    [sourceless code]
+})
+00152: 157  initprop "preload"
+00157: 174  lambda (function () {
+    [sourceless code]
+})
+00162: 174  initprop "unload_preload"
+00167: 178  lambda (function () {
+    [sourceless code]
+})
+00172: 178  initprop "create"
+00177: 178  endinit
+00178: 178  setprop "LabelBMFont"
+00183: 178  popv
+00184: 197  name "xs"
+00189: 197  getprop "Factorys"
+00194: 197  getprop "LabelBMFont"
+00199: 197  name "xs"
+00204: 197  getprop "Factorys"
+00209: 197  getprop "BaseLabel"
+00214: 197  setprop "prototype"
+00219: 197  popv
+00220: 197  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:1 ---
+;; function object[0] _create
+;; function metadata object[0] nargs=4 bindings=9
+;; arg[0] str
+;; arg[1] file
+;; arg[2] alignment
+;; arg[3] width
+;; local[0] _beginTime
+;; local[1] _ret
+;; local[2] _endTime
+;; local[3] _useTime
+;; local[4] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:20 ---
+loc   line  op
+----- ----  --
+00000:  20  arguments
+00001:  20  setlocal 4
+00004:  20  pop
+main:
+00005:  22  this
+00006:  22  dup
+00007:  22  callprop "log"
+00012:  22  swap
+00013:  22  notearg
+00014:  22  string "LabelBMFont/_create"
+00019:  22  notearg
+00020:  22  string "begin"
+00025:  22  notearg
+00026:  22  call 2
+00029:  22  pop
+00030:  23  this
+00031:  23  dup
+00032:  23  callprop "dump"
+00037:  23  swap
+00038:  23  notearg
+00039:  23  string "LabelBMFont/_create"
+00044:  23  notearg
+00045:  23  getlocal 4
+00048:  23  notearg
+00049:  23  call 2
+00052:  23  pop
+00053:  26  name "Date"
+00058:  26  undefined
+00059:  26  notearg
+00060:  26  new 0
+00063:  26  dup
+00064:  26  callprop "getTime"
+00069:  26  swap
+00070:  26  notearg
+00071:  26  call 0
+00074:  26  setlocal 0
+00077:  26  pop
+00078:  27  name "cc"
+00083:  27  getprop "LabelBMFont"
+00088:  27  dup
+00089:  27  callprop "create"
+00094:  27  swap
+00095:  27  notearg
+00096:  28  getarg 0
+00099:  28  notearg
+00100:  28  string "fnt/"
+00105:  28  getarg 1
+00108:  28  add
+00109:  28  string ".fnt"
+00114:  28  add
+00115:  28  notearg
+00116:  28  call 2
+00119:  28  setlocal 1
+00122:  28  pop
+00123:  30  name "Date"
+00128:  30  undefined
+00129:  30  notearg
+00130:  30  new 0
+00133:  30  dup
+00134:  30  callprop "getTime"
+00139:  30  swap
+00140:  30  notearg
+00141:  30  call 0
+00144:  30  setlocal 2
+00147:  30  pop
+00148:  32  getlocal 2
+00151:  32  getlocal 0
+00154:  32  sub
+00155:  32  setlocal 3
+00158:  32  pop
+00159:  34  getlocal 3
+00162:  34  int8 100
+00164:  34  gt
+00165:  34  ifeq 207 (+42)
+00170:  35  name "xs"
+00175:  35  dup
+00176:  35  callprop "warn"
+00181:  35  swap
+00182:  35  notearg
+00183:  35  string "LabelBMFont load > 100:"
+00188:  35  notearg
+00189:  35  getarg 1
+00192:  35  string "|"
+00197:  35  add
+00198:  35  getlocal 3
+00201:  35  add
+00202:  35  notearg
+00203:  35  call 2
+00206:  35  pop
+00207:  38  getarg 2
+00210:  38  name "undefined"
+00215:  38  strictne
+00216:  38  and 227 (+11)
+00221:  38  pop
+00222:  38  getarg 2
+00225:  38  null
+00226:  38  strictne
+00227:  38  ifeq 251 (+24)
+00232:  39  getlocal 1
+00235:  39  dup
+00236:  39  callprop "setAlignment"
+00241:  39  swap
+00242:  39  notearg
+00243:  39  getarg 2
+00246:  39  notearg
+00247:  39  call 1
+00250:  39  pop
+00251:  42  getarg 3
+00254:  42  name "undefined"
+00259:  42  strictne
+00260:  42  and 271 (+11)
+00265:  42  pop
+00266:  42  getarg 3
+00269:  42  null
+00270:  42  strictne
+00271:  42  ifeq 295 (+24)
+00276:  44  getlocal 1
+00279:  44  dup
+00280:  44  callprop "setWidth"
+00285:  44  swap
+00286:  44  notearg
+00287:  44  getarg 3
+00290:  44  notearg
+00291:  44  call 1
+00294:  44  pop
+00295:  50  name "xs"
+00300:  50  getprop "Factorys"
+00305:  50  getprop "BaseLabel"
+00310:  50  dup
+00311:  50  callprop "_wrapperExt"
+00316:  50  swap
+00317:  50  notearg
+00318:  50  getlocal 1
+00321:  50  notearg
+00322:  50  this
+00323:  50  notearg
+00324:  50  call 2
+00327:  50  pop
+00328:  54  this
+00329:  54  dup
+00330:  54  callprop "log"
+00335:  54  swap
+00336:  54  notearg
+00337:  54  string "LabelBMFont/_create"
+00342:  54  notearg
+00343:  54  string "end"
+00348:  54  notearg
+00349:  54  call 2
+00352:  54  pop
+00353:  56  getlocal 1
+00356:  56  return
+00357:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:20 ---
+;; function object[1] _setNext
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] nextLabel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:69 ---
+loc   line  op
+----- ----  --
+main:
+00000:  71  this
+00001:  71  dup
+00002:  71  callprop "assert"
+00007:  71  swap
+00008:  71  notearg
+00009:  71  this
+00010:  71  getprop "m_nextLabel"
+00015:  71  not
+00016:  71  notearg
+00017:  71  string "nextlabel is already exist"
+00022:  71  notearg
+00023:  71  call 2
+00026:  71  pop
+00027:  73  this
+00028:  73  getarg 0
+00031:  73  setprop "m_nextLabel"
+00036:  73  pop
+00037:  76  getarg 0
+00040:  76  dup
+00041:  76  callprop "setAligns"
+00046:  76  swap
+00047:  76  notearg
+00048:  76  name "xs"
+00053:  76  getprop "AlignH_Left"
+00058:  76  notearg
+00059:  76  name "xs"
+00064:  76  getprop "AlignV_Center"
+00069:  76  notearg
+00070:  76  call 2
+00073:  76  pop
+00074:  80  name "xs"
+00079:  80  getprop "Utils"
+00084:  80  getprop "Node"
+00089:  80  dup
+00090:  80  callprop "attachNodes"
+00095:  80  swap
+00096:  80  notearg
+00097:  80  this
+00098:  80  dup
+00099:  80  callprop "getParent"
+00104:  80  swap
+00105:  80  notearg
+00106:  80  call 0
+00109:  80  notearg
+00110:  80  this
+00111:  80  getprop "m_nextLabel"
+00116:  80  notearg
+00117:  80  call 2
+00120:  80  pop
+00121:  82  this
+00122:  82  getprop "m_nextLabel"
+00127:  82  dup
+00128:  82  callprop "setPosition"
+00133:  82  swap
+00134:  82  notearg
+00135:  83  name "cc"
+00140:  83  dup
+00141:  83  callprop "p"
+00146:  83  swap
+00147:  83  notearg
+00148:  84  this
+00149:  84  dup
+00150:  84  callprop "getPosition"
+00155:  84  swap
+00156:  84  notearg
+00157:  84  call 0
+00160:  84  getprop "x"
+00165:  84  this
+00166:  84  dup
+00167:  84  callprop "getContentSize"
+00172:  84  swap
+00173:  84  notearg
+00174:  84  call 0
+00177:  84  getprop "width"
+00182:  84  add
+00183:  84  notearg
+00184:  85  this
+00185:  85  dup
+00186:  85  callprop "getPosition"
+00191:  85  swap
+00192:  85  notearg
+00193:  85  call 0
+00196:  85  getprop "y"
+00201:  85  notearg
+00202:  85  call 2
+00205:  85  notearg
+00206:  85  call 1
+00209:  85  pop
+00210:  89  getarg 0
+00213:  89  return
+00214:  89  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:69 ---
+;; function object[2] _setLast
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] lastLabel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:91 ---
+loc   line  op
+----- ----  --
+main:
+00000:  93  this
+00001:  93  dup
+00002:  93  callprop "assert"
+00007:  93  swap
+00008:  93  notearg
+00009:  93  this
+00010:  93  getprop "m_lastLabel"
+00015:  93  not
+00016:  93  notearg
+00017:  93  string "lastLabel is already exist"
+00022:  93  notearg
+00023:  93  call 2
+00026:  93  pop
+00027:  95  this
+00028:  95  getarg 0
+00031:  95  setprop "m_lastLabel"
+00036:  95  pop
+00037:  99  getarg 0
+00040:  99  dup
+00041:  99  callprop "setAligns"
+00046:  99  swap
+00047:  99  notearg
+00048:  99  name "xs"
+00053:  99  getprop "AlignH_Right"
+00058:  99  notearg
+00059:  99  name "xs"
+00064:  99  getprop "AlignV_Center"
+00069:  99  notearg
+00070:  99  call 2
+00073:  99  pop
+00074: 102  name "xs"
+00079: 102  getprop "Utils"
+00084: 102  getprop "Node"
+00089: 102  dup
+00090: 102  callprop "attachNodes"
+00095: 102  swap
+00096: 102  notearg
+00097: 102  this
+00098: 102  dup
+00099: 102  callprop "getParent"
+00104: 102  swap
+00105: 102  notearg
+00106: 102  call 0
+00109: 102  notearg
+00110: 102  this
+00111: 102  getprop "m_lastLabel"
+00116: 102  notearg
+00117: 102  call 2
+00120: 102  pop
+00121: 104  this
+00122: 104  getprop "m_lastLabel"
+00127: 104  dup
+00128: 104  callprop "setPosition"
+00133: 104  swap
+00134: 104  notearg
+00135: 105  name "cc"
+00140: 105  dup
+00141: 105  callprop "p"
+00146: 105  swap
+00147: 105  notearg
+00148: 106  this
+00149: 106  dup
+00150: 106  callprop "getPosition"
+00155: 106  swap
+00156: 106  notearg
+00157: 106  call 0
+00160: 106  getprop "x"
+00165: 106  this
+00166: 106  dup
+00167: 106  callprop "getContentSize"
+00172: 106  swap
+00173: 106  notearg
+00174: 106  call 0
+00177: 106  getprop "width"
+00182: 106  sub
+00183: 106  notearg
+00184: 107  this
+00185: 107  dup
+00186: 107  callprop "getPosition"
+00191: 107  swap
+00192: 107  notearg
+00193: 107  call 0
+00196: 107  getprop "y"
+00201: 107  notearg
+00202: 107  call 2
+00205: 107  notearg
+00206: 107  call 1
+00209: 107  pop
+00210: 111  getarg 0
+00213: 111  return
+00214: 111  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:91 ---
+;; function object[3] _refreshLayout
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:113 ---
+loc   line  op
+----- ----  --
+main:
+00000: 115  this
+00001: 115  getprop "m_nextLabel"
+00006: 115  ifeq 118 (+112)
+00011: 117  this
+00012: 117  getprop "m_nextLabel"
+00017: 117  dup
+00018: 117  callprop "setPosition"
+00023: 117  swap
+00024: 117  notearg
+00025: 118  name "cc"
+00030: 118  dup
+00031: 118  callprop "p"
+00036: 118  swap
+00037: 118  notearg
+00038: 119  this
+00039: 119  dup
+00040: 119  callprop "getPosition"
+00045: 119  swap
+00046: 119  notearg
+00047: 119  call 0
+00050: 119  getprop "x"
+00055: 119  this
+00056: 119  dup
+00057: 119  callprop "getContentSize"
+00062: 119  swap
+00063: 119  notearg
+00064: 119  call 0
+00067: 119  getprop "width"
+00072: 119  add
+00073: 119  notearg
+00074: 120  this
+00075: 120  dup
+00076: 120  callprop "getPosition"
+00081: 120  swap
+00082: 120  notearg
+00083: 120  call 0
+00086: 120  getprop "y"
+00091: 120  notearg
+00092: 120  call 2
+00095: 120  notearg
+00096: 120  call 1
+00099: 120  pop
+00100: 124  this
+00101: 124  getprop "m_nextLabel"
+00106: 124  dup
+00107: 124  callprop "refreshLayout"
+00112: 124  swap
+00113: 124  notearg
+00114: 124  call 0
+00117: 124  pop
+00118: 127  this
+00119: 127  getprop "m_lastLabel"
+00124: 127  ifeq 236 (+112)
+00129: 129  this
+00130: 129  getprop "m_lastLabel"
+00135: 129  dup
+00136: 129  callprop "setPosition"
+00141: 129  swap
+00142: 129  notearg
+00143: 130  name "cc"
+00148: 130  dup
+00149: 130  callprop "p"
+00154: 130  swap
+00155: 130  notearg
+00156: 131  this
+00157: 131  dup
+00158: 131  callprop "getPosition"
+00163: 131  swap
+00164: 131  notearg
+00165: 131  call 0
+00168: 131  getprop "x"
+00173: 131  this
+00174: 131  dup
+00175: 131  callprop "getContentSize"
+00180: 131  swap
+00181: 131  notearg
+00182: 131  call 0
+00185: 131  getprop "width"
+00190: 131  sub
+00191: 131  notearg
+00192: 132  this
+00193: 132  dup
+00194: 132  callprop "getPosition"
+00199: 132  swap
+00200: 132  notearg
+00201: 132  call 0
+00204: 132  getprop "y"
+00209: 132  notearg
+00210: 132  call 2
+00213: 132  notearg
+00214: 132  call 1
+00217: 132  pop
+00218: 136  this
+00219: 136  getprop "m_lastLabel"
+00224: 136  dup
+00225: 136  callprop "refreshLayout"
+00230: 136  swap
+00231: 136  notearg
+00232: 136  call 0
+00235: 136  pop
+00236: 137  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:113 ---
+;; function object[4] _getCfg
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] fontId
+;; local[0] _info
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:141 ---
+loc   line  op
+----- ----  --
+main:
+00000: 142  name "xs"
+00005: 142  getprop "Cfg"
+00010: 142  getprop "System"
+00015: 142  getprop "sgs_config_bmf"
+00020: 142  getarg 0
+00023: 142  getelem
+00024: 142  setlocal 0
+00027: 142  pop
+00028: 143  getlocal 0
+00031: 143  not
+00032: 143  ifeq 60 (+28)
+00037: 144  name "xs"
+00042: 144  getprop "Cfg"
+00047: 144  getprop "BMF"
+00052: 144  getarg 0
+00055: 144  getelem
+00056: 144  setlocal 0
+00059: 144  pop
+00060: 146  name "xs"
+00065: 146  dup
+00066: 146  callprop "assert"
+00071: 146  swap
+00072: 146  notearg
+00073: 146  getlocal 0
+00076: 146  notearg
+00077: 146  string "createWithBMFontId ,need _info"
+00082: 146  notearg
+00083: 146  getarg 0
+00086: 146  notearg
+00087: 146  call 3
+00090: 146  pop
+00091: 147  getlocal 0
+00094: 147  return
+00095: 147  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:141 ---
+;; function object[5] getFileName
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] fontId
+;; local[0] _info
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:151 ---
+loc   line  op
+----- ----  --
+main:
+00000: 152  this
+00001: 152  dup
+00002: 152  callprop "_getCfg"
+00007: 152  swap
+00008: 152  notearg
+00009: 152  getarg 0
+00012: 152  notearg
+00013: 152  call 1
+00016: 152  setlocal 0
+00019: 152  pop
+00020: 153  string "fnt/"
+00025: 153  getlocal 0
+00028: 153  getprop "file"
+00033: 153  add
+00034: 153  string ".fnt"
+00039: 153  add
+00040: 153  return
+00041: 153  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:151 ---
+;; function object[6] preload
+;; function metadata object[6] nargs=1 bindings=3
+;; arg[0] fontId
+;; local[0] _fileName
+;; local[1] _tmp
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:157 ---
+loc   line  op
+----- ----  --
+main:
+00000: 162  this
+00001: 162  dup
+00002: 162  callprop "getFileName"
+00007: 162  swap
+00008: 162  notearg
+00009: 162  getarg 0
+00012: 162  notearg
+00013: 162  call 1
+00016: 162  setlocal 0
+00019: 162  pop
+00020: 164  name "cc"
+00025: 164  getprop "LabelBMFont"
+00030: 164  dup
+00031: 164  callprop "create"
+00036: 164  swap
+00037: 164  notearg
+00038: 165  string ""
+00043: 165  notearg
+00044: 165  getlocal 0
+00047: 165  notearg
+00048: 165  call 2
+00051: 165  setlocal 1
+00054: 165  pop
+00055: 168  this
+00056: 168  getprop "preload_map"
+00061: 168  getarg 0
+00064: 168  getlocal 1
+00067: 168  setelem
+00068: 168  pop
+00069: 169  getlocal 1
+00072: 169  dup
+00073: 169  callprop "retain"
+00078: 169  swap
+00079: 169  notearg
+00080: 169  call 0
+00083: 169  pop
+00084: 169  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:157 ---
+;; function object[7] unload_preload
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] fontId
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:174 ---
+loc   line  op
+----- ----  --
+main:
+00000: 175  this
+00001: 175  getprop "preload_map"
+00006: 175  getarg 0
+00009: 175  getelem
+00010: 175  dup
+00011: 175  callprop "release"
+00016: 175  swap
+00017: 175  notearg
+00018: 175  call 0
+00021: 175  pop
+00022: 175  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:174 ---
+;; function object[8] create
+;; function metadata object[8] nargs=4 bindings=7
+;; arg[0] str
+;; arg[1] fontId
+;; arg[2] alignment
+;; arg[3] width
+;; local[0] _info
+;; local[1] _ret
+;; local[2] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:178 ---
+loc   line  op
+----- ----  --
+00000: 178  arguments
+00001: 178  setlocal 2
+00004: 178  pop
+main:
+00005: 180  this
+00006: 180  dup
+00007: 180  callprop "log"
+00012: 180  swap
+00013: 180  notearg
+00014: 180  string "LabelBMFont/create"
+00019: 180  notearg
+00020: 180  string "begin"
+00025: 180  notearg
+00026: 180  call 2
+00029: 180  pop
+00030: 181  this
+00031: 181  dup
+00032: 181  callprop "dump"
+00037: 181  swap
+00038: 181  notearg
+00039: 181  string "LabelBMFont/create"
+00044: 181  notearg
+00045: 181  getlocal 2
+00048: 181  notearg
+00049: 181  call 2
+00052: 181  pop
+00053: 183  this
+00054: 183  dup
+00055: 183  callprop "_getCfg"
+00060: 183  swap
+00061: 183  notearg
+00062: 183  getarg 1
+00065: 183  notearg
+00066: 183  call 1
+00069: 183  setlocal 0
+00072: 183  pop
+00073: 185  name "xs"
+00078: 185  dup
+00079: 185  callprop "assert"
+00084: 185  swap
+00085: 185  notearg
+00086: 185  getlocal 0
+00089: 185  notearg
+00090: 185  string "createWithBMFontId ,need _info"
+00095: 185  notearg
+00096: 185  getarg 1
+00099: 185  notearg
+00100: 185  call 3
+00103: 185  pop
+00104: 187  this
+00105: 187  dup
+00106: 187  callprop "_create"
+00111: 187  swap
+00112: 187  notearg
+00113: 187  getarg 0
+00116: 187  notearg
+00117: 187  getlocal 0
+00120: 187  getprop "file"
+00125: 187  notearg
+00126: 187  getarg 2
+00129: 187  notearg
+00130: 187  getarg 3
+00133: 187  notearg
+00134: 187  call 4
+00137: 187  setlocal 1
+00140: 187  pop
+00141: 191  this
+00142: 191  dup
+00143: 191  callprop "log"
+00148: 191  swap
+00149: 191  notearg
+00150: 191  string "LabelBMFont/create"
+00155: 191  notearg
+00156: 191  string "end"
+00161: 191  notearg
+00162: 191  call 2
+00165: 191  pop
+00166: 193  getlocal 1
+00169: 193  return
+00170: 193  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Factorys/LabelBMFont.js:178 ---

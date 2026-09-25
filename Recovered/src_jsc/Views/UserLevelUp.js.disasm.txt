@@ -1,0 +1,170 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/UserLevelUp.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=38 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=58 object[2]
+;; FUNCTION-MAP kind=lambda offset=94 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UserLevelUp.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Views"
+00010:   5  name "xs"
+00015:   5  getprop "Views"
+00020:   5  getprop "HungerLayer"
+00025:   5  dup
+00026:   5  callprop "extend"
+00031:   5  swap
+00032:   5  notearg
+00033:   5  newinit 1
+00038:   6  lambda (function () {
+    [sourceless code]
+})
+00043:   6  initprop "ctor"
+00048:  11  lambda (function () {
+    [sourceless code]
+})
+00053:  11  initprop "init"
+00058:  16  lambda (function () {
+    [sourceless code]
+})
+00063:  16  initprop "layerTouched"
+00068:  16  endinit
+00069:  16  notearg
+00070:  16  call 1
+00073:  16  setprop "UserLevelUpView"
+00078:  16  popv
+00079:  25  name "xs"
+00084:  25  getprop "Views"
+00089:  25  getprop "UserLevelUpView"
+00094:  25  lambda (function () {
+    [sourceless code]
+})
+00099:  25  setprop "checkLevelUp"
+00104:  25  popv
+00105:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UserLevelUp.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UserLevelUp.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "Layer"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UserLevelUp.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UserLevelUp.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  true
+00001:  13  return
+00002:  13  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UserLevelUp.js:11 ---
+;; function object[2] layerTouched
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UserLevelUp.js:16 ---
+loc   line  op
+----- ----  --
+main:
+00000:  17  name "xs"
+00005:  17  dup
+00006:  17  callprop "log"
+00011:  17  swap
+00012:  17  notearg
+00013:  17  string "UserLevelUpView->layerTouched"
+00018:  17  notearg
+00019:  17  call 1
+00022:  17  pop
+00023:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UserLevelUp.js:16 ---
+;; function object[3] checkLevelUp
+;; function metadata object[3] nargs=1 bindings=3
+;; arg[0] userInfo
+;; local[0] curLevel
+;; local[1] playerInfoHandle
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UserLevelUp.js:25 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  callname "parseInt"
+00005:  27  implicitthis "parseInt"
+00010:  27  notearg
+00011:  27  getarg 0
+00014:  27  getprop "user_level"
+00019:  27  notearg
+00020:  27  call 1
+00023:  27  setlocal 0
+00026:  27  pop
+00027:  28  name "xs"
+00032:  28  getprop "Models"
+00037:  28  getprop "Player"
+00042:  28  dup
+00043:  28  callprop "getInstance"
+00048:  28  swap
+00049:  28  notearg
+00050:  28  call 0
+00053:  28  setlocal 1
+00056:  28  pop
+00057:  29  getlocal 1
+00060:  29  dup
+00061:  29  callprop "getPlayerLevel"
+00066:  29  swap
+00067:  29  notearg
+00068:  29  call 0
+00071:  29  getlocal 0
+00074:  29  lt
+00075:  29  ifeq 103 (+28)
+00080:  30  name "xs"
+00085:  30  dup
+00086:  30  callprop "log"
+00091:  30  swap
+00092:  30  notearg
+00093:  30  string "\u606D\u559C\u4F60\uFF01\u5347\u7EA7\u4E86\uFF01"
+00098:  30  notearg
+00099:  30  call 1
+00102:  30  pop
+00103:  36  getlocal 1
+00106:  36  dup
+00107:  36  callprop "updateNormalUserInfo"
+00112:  36  swap
+00113:  36  notearg
+00114:  36  getarg 0
+00117:  36  notearg
+00118:  36  call 1
+00121:  36  pop
+00122:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UserLevelUp.js:25 ---

@@ -1,0 +1,782 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Models/Chat.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=109 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Models"
+00010:   5  name "cc"
+00015:   5  getprop "Class"
+00020:   5  dup
+00021:   5  callprop "extend"
+00026:   5  swap
+00027:   5  notearg
+00028:   5  newinit 1
+00033:   6  string "xs.Models.Chat"
+00038:   6  initprop "name"
+00043:   8  lambda (function () {
+    [sourceless code]
+})
+00048:   8  initprop "init"
+00053:  23  lambda (function () {
+    [sourceless code]
+})
+00058:  23  initprop "load"
+00063:  58  lambda (function () {
+    [sourceless code]
+})
+00068:  58  initprop "getCellHeight"
+00073:  69  lambda (function () {
+    [sourceless code]
+})
+00078:  69  initprop "refresh"
+00083:  69  endinit
+00084:  69  notearg
+00085:  69  call 1
+00088:  69  setprop "Chat"
+00093:  69  popv
+00094: 132  name "xs"
+00099: 132  getprop "Models"
+00104: 132  getprop "Chat"
+00109: 132  lambda (function () {
+    [sourceless code]
+})
+00114: 132  setprop "createWithData"
+00119: 132  popv
+00120: 141  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:8 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  this
+00001:   9  null
+00002:   9  setprop "user_id"
+00007:   9  pop
+00008:  10  this
+00009:  10  null
+00010:  10  setprop "channel"
+00015:  10  pop
+00016:  11  this
+00017:  11  null
+00018:  11  setprop "channelName"
+00023:  11  pop
+00024:  12  this
+00025:  12  zero
+00026:  12  setprop "vip_level"
+00031:  12  pop
+00032:  13  this
+00033:  13  null
+00034:  13  setprop "nickname"
+00039:  13  pop
+00040:  14  this
+00041:  14  null
+00042:  14  setprop "message"
+00047:  14  pop
+00048:  16  this
+00049:  16  uint16 780
+00052:  16  setprop "cellWidth"
+00057:  16  pop
+00058:  17  this
+00059:  17  zero
+00060:  17  setprop "cellHeight"
+00065:  17  pop
+00066:  18  this
+00067:  18  int8 10
+00069:  18  setprop "lineDistance"
+00074:  18  pop
+00075:  20  true
+00076:  20  return
+00077:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:8 ---
+;; function object[1] load
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] jsonData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:23 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  this
+00001:  24  getarg 0
+00004:  24  getprop "user_id"
+00009:  24  setprop "user_id"
+00014:  24  pop
+00015:  25  this
+00016:  25  getarg 0
+00019:  25  getprop "channel"
+00024:  25  setprop "channel"
+00029:  25  pop
+00030:  26  this
+00031:  26  getarg 0
+00034:  26  getprop "vip_level"
+00039:  26  setprop "vip_level"
+00044:  26  pop
+00045:  27  this
+00046:  27  getarg 0
+00049:  27  getprop "nickname"
+00054:  27  setprop "nickname"
+00059:  27  pop
+00060:  28  this
+00061:  28  getarg 0
+00064:  28  getprop "message"
+00069:  28  setprop "message"
+00074:  28  pop
+00075:  30  this
+00076:  30  getprop "channel"
+00081:  30  tableswitch defaultOffset 305 low 1 high 7
+	1: 41
+	2: 85
+	3: 129
+	4: 173
+	5: 217
+	6: 0
+	7: 261
+00122:  32  this
+00123:  32  name "xs"
+00128:  32  getprop "Tools"
+00133:  32  getprop "String"
+00138:  32  dup
+00139:  32  callprop "createString"
+00144:  32  swap
+00145:  32  notearg
+00146:  32  string "auto_name_12"
+00151:  32  notearg
+00152:  32  call 1
+00155:  32  setprop "channelName"
+00160:  32  pop
+00161:  33  goto 430 (+269)
+00166:  35  this
+00167:  35  name "xs"
+00172:  35  getprop "Tools"
+00177:  35  getprop "String"
+00182:  35  dup
+00183:  35  callprop "createString"
+00188:  35  swap
+00189:  35  notearg
+00190:  35  string "btnStr_union"
+00195:  35  notearg
+00196:  35  call 1
+00199:  35  setprop "channelName"
+00204:  35  pop
+00205:  36  goto 430 (+225)
+00210:  38  this
+00211:  38  name "xs"
+00216:  38  getprop "Tools"
+00221:  38  getprop "String"
+00226:  38  dup
+00227:  38  callprop "createString"
+00232:  38  swap
+00233:  38  notearg
+00234:  38  string "btnStr_prvChar"
+00239:  38  notearg
+00240:  38  call 1
+00243:  38  setprop "channelName"
+00248:  38  pop
+00249:  39  goto 430 (+181)
+00254:  41  this
+00255:  41  name "xs"
+00260:  41  getprop "Tools"
+00265:  41  getprop "String"
+00270:  41  dup
+00271:  41  callprop "createString"
+00276:  41  swap
+00277:  41  notearg
+00278:  41  string "auto_name_13"
+00283:  41  notearg
+00284:  41  call 1
+00287:  41  setprop "channelName"
+00292:  41  pop
+00293:  42  goto 430 (+137)
+00298:  44  this
+00299:  44  name "xs"
+00304:  44  getprop "Tools"
+00309:  44  getprop "String"
+00314:  44  dup
+00315:  44  callprop "createString"
+00320:  44  swap
+00321:  44  notearg
+00322:  44  string "titleStr_Notice"
+00327:  44  notearg
+00328:  44  call 1
+00331:  44  setprop "channelName"
+00336:  44  pop
+00337:  45  goto 430 (+93)
+00342:  47  this
+00343:  47  name "xs"
+00348:  47  getprop "Tools"
+00353:  47  getprop "String"
+00358:  47  dup
+00359:  47  callprop "createString"
+00364:  47  swap
+00365:  47  notearg
+00366:  47  string "titleStr_duiJiu"
+00371:  47  notearg
+00372:  47  call 1
+00375:  47  setprop "channelName"
+00380:  47  pop
+00381:  48  goto 430 (+49)
+00386:  50  this
+00387:  50  name "xs"
+00392:  50  getprop "Tools"
+00397:  50  getprop "String"
+00402:  50  dup
+00403:  50  callprop "createString"
+00408:  50  swap
+00409:  50  notearg
+00410:  50  string "auto_name_14"
+00415:  50  notearg
+00416:  50  call 1
+00419:  50  setprop "channelName"
+00424:  50  pop
+00425:  51  goto 430 (+5)
+00430:  55  this
+00431:  55  int8 -1
+00433:  55  setprop "cellHeight"
+00438:  55  pop
+00439:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:23 ---
+;; function object[2] getCellHeight
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:58 ---
+loc   line  op
+----- ----  --
+main:
+00000:  59  this
+00001:  59  getprop "cellHeight"
+00006:  59  int8 -1
+00008:  59  ne
+00009:  59  ifeq 26 (+17)
+00014:  60  this
+00015:  60  getprop "cellHeight"
+00020:  60  return
+00021:  60  goto 54 (+33)
+00026:  63  this
+00027:  63  this
+00028:  63  dup
+00029:  63  callprop "refresh"
+00034:  63  swap
+00035:  63  notearg
+00036:  63  null
+00037:  63  notearg
+00038:  63  call 1
+00041:  63  setprop "cellHeight"
+00046:  63  pop
+00047:  64  this
+00048:  64  getprop "cellHeight"
+00053:  64  return
+00054:  65  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:58 ---
+;; function object[3] refresh
+;; function metadata object[3] nargs=1 bindings=5
+;; arg[0] cell
+;; local[0] cellHeight
+;; local[1] contentLabel
+;; local[2] bqBG
+;; local[3] bq
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:69 ---
+loc   line  op
+----- ----  --
+main:
+00000:  70  zero
+00001:  70  setlocal 0
+00004:  70  pop
+00005:  72  getlocal 1
+00008:  72  pop
+00009:  73  this
+00010:  73  getprop "channel"
+00015:  73  int8 4
+00017:  73  eq
+00018:  73  ifeq 71 (+53)
+00023:  75  name "xs"
+00028:  75  getprop "Factorys"
+00033:  75  getprop "Label"
+00038:  75  dup
+00039:  75  callprop "createByStyleIdWithString"
+00044:  75  swap
+00045:  75  notearg
+00046:  75  string "LS_liaotian_xitonghua"
+00051:  75  notearg
+00052:  75  this
+00053:  75  getprop "message"
+00058:  75  notearg
+00059:  75  call 2
+00062:  75  setlocal 1
+00065:  75  pop
+00066:  75  goto 114 (+48)
+00071:  79  name "xs"
+00076:  79  getprop "Factorys"
+00081:  79  getprop "Label"
+00086:  79  dup
+00087:  79  callprop "createByStyleIdWithString"
+00092:  79  swap
+00093:  79  notearg
+00094:  79  string "LS_liaotian_5"
+00099:  79  notearg
+00100:  79  this
+00101:  79  getprop "message"
+00106:  79  notearg
+00107:  79  call 2
+00110:  79  setlocal 1
+00113:  79  pop
+00114:  82  getlocal 1
+00117:  82  dup
+00118:  82  callprop "setDimensions"
+00123:  82  swap
+00124:  82  notearg
+00125:  82  name "cc"
+00130:  82  dup
+00131:  82  callprop "size"
+00136:  82  swap
+00137:  82  notearg
+00138:  82  uint16 680
+00141:  82  notearg
+00142:  82  zero
+00143:  82  notearg
+00144:  82  call 2
+00147:  82  notearg
+00148:  82  call 1
+00151:  82  pop
+00152:  83  getlocal 1
+00155:  83  dup
+00156:  83  callprop "setHorizontalAlignment"
+00161:  83  swap
+00162:  83  notearg
+00163:  83  name "cc"
+00168:  83  getprop "TEXT_ALIGNMENT_LEFT"
+00173:  83  notearg
+00174:  83  call 1
+00177:  83  pop
+00178:  84  getlocal 1
+00181:  84  dup
+00182:  84  callprop "setAnchorPoint"
+00187:  84  swap
+00188:  84  notearg
+00189:  84  name "cc"
+00194:  84  dup
+00195:  84  callprop "p"
+00200:  84  swap
+00201:  84  notearg
+00202:  84  zero
+00203:  84  notearg
+00204:  84  zero
+00205:  84  notearg
+00206:  84  call 2
+00209:  84  notearg
+00210:  84  call 1
+00213:  84  pop
+00214:  85  getlocal 1
+00217:  85  dup
+00218:  85  callprop "setPosition"
+00223:  85  swap
+00224:  85  notearg
+00225:  85  name "cc"
+00230:  85  dup
+00231:  85  callprop "p"
+00236:  85  swap
+00237:  85  notearg
+00238:  85  int8 100
+00240:  85  notearg
+00241:  85  zero
+00242:  85  this
+00243:  85  getprop "lineDistance"
+00248:  85  add
+00249:  85  notearg
+00250:  85  call 2
+00253:  85  notearg
+00254:  85  call 1
+00257:  85  pop
+00258:  87  getarg 0
+00261:  87  null
+00262:  87  ne
+00263:  87  ifeq 303 (+40)
+00268:  88  name "xs"
+00273:  88  getprop "Utils"
+00278:  88  getprop "Node"
+00283:  88  dup
+00284:  88  callprop "attachNodes"
+00289:  88  swap
+00290:  88  notearg
+00291:  88  getarg 0
+00294:  88  notearg
+00295:  88  getlocal 1
+00298:  88  notearg
+00299:  88  call 2
+00302:  88  pop
+00303:  90  getlocal 0
+00306:  90  getlocal 1
+00309:  90  dup
+00310:  90  callprop "getContentSize"
+00315:  90  swap
+00316:  90  notearg
+00317:  90  call 0
+00320:  90  getprop "height"
+00325:  90  this
+00326:  90  getprop "lineDistance"
+00331:  90  add
+00332:  90  this
+00333:  90  getprop "lineDistance"
+00338:  90  add
+00339:  90  add
+00340:  90  setlocal 0
+00343:  90  pop
+00344:  93  name "xs"
+00349:  93  getprop "Factorys"
+00354:  93  getprop "Sprite"
+00359:  93  dup
+00360:  93  callprop "create"
+00365:  93  swap
+00366:  93  notearg
+00367:  93  string "DlgCmn_liaotianhengtiao"
+00372:  93  notearg
+00373:  93  string "DlgCmn"
+00378:  93  notearg
+00379:  93  call 2
+00382:  93  setlocal 2
+00385:  93  pop
+00386:  94  getlocal 2
+00389:  94  dup
+00390:  94  callprop "setAnchorPoint"
+00395:  94  swap
+00396:  94  notearg
+00397:  94  name "cc"
+00402:  94  dup
+00403:  94  callprop "p"
+00408:  94  swap
+00409:  94  notearg
+00410:  94  zero
+00411:  94  notearg
+00412:  94  double 0.5
+00417:  94  notearg
+00418:  94  call 2
+00421:  94  notearg
+00422:  94  call 1
+00425:  94  pop
+00426:  95  getlocal 2
+00429:  95  dup
+00430:  95  callprop "setPosition"
+00435:  95  swap
+00436:  95  notearg
+00437:  95  name "cc"
+00442:  95  dup
+00443:  95  callprop "p"
+00448:  95  swap
+00449:  95  notearg
+00450:  95  int8 10
+00452:  95  notearg
+00453:  95  getlocal 0
+00456:  95  getlocal 2
+00459:  95  dup
+00460:  95  callprop "getContentSize"
+00465:  95  swap
+00466:  95  notearg
+00467:  95  call 0
+00470:  95  getprop "height"
+00475:  95  int8 2
+00477:  95  div
+00478:  95  add
+00479:  95  notearg
+00480:  95  call 2
+00483:  95  notearg
+00484:  95  call 1
+00487:  95  pop
+00488:  96  getarg 0
+00491:  96  null
+00492:  96  ne
+00493:  96  ifeq 533 (+40)
+00498:  97  name "xs"
+00503:  97  getprop "Utils"
+00508:  97  getprop "Node"
+00513:  97  dup
+00514:  97  callprop "attachNodes"
+00519:  97  swap
+00520:  97  notearg
+00521:  97  getarg 0
+00524:  97  notearg
+00525:  97  getlocal 2
+00528:  97  notearg
+00529:  97  call 2
+00532:  97  pop
+00533: 100  getlocal 3
+00536: 100  pop
+00537: 101  this
+00538: 101  getprop "channel"
+00543: 101  int8 4
+00545: 101  eq
+00546: 101  ifeq 624 (+78)
+00551: 103  name "xs"
+00556: 103  getprop "Views"
+00561: 103  getprop "Label"
+00566: 103  getprop "LabelExt"
+00571: 103  dup
+00572: 103  callprop "createWithStyles"
+00577: 103  swap
+00578: 103  notearg
+00579: 103  newarray 3
+00583: 103  string "LS_liaotian_3"
+00588: 103  initelem_array 0
+00592: 103  string "LS_qianghua_done"
+00597: 103  initelem_array 1
+00601: 103  string "LS_liaotian_4"
+00606: 103  initelem_array 2
+00610: 103  endinit
+00611: 103  notearg
+00612: 103  call 1
+00615: 103  setlocal 3
+00618: 103  pop
+00619: 103  goto 778 (+159)
+00624: 105  this
+00625: 105  getprop "channel"
+00630: 105  one
+00631: 105  eq
+00632: 105  ifeq 710 (+78)
+00637: 107  name "xs"
+00642: 107  getprop "Views"
+00647: 107  getprop "Label"
+00652: 107  getprop "LabelExt"
+00657: 107  dup
+00658: 107  callprop "createWithStyles"
+00663: 107  swap
+00664: 107  notearg
+00665: 107  newarray 3
+00669: 107  string "LS_liaotian_shijie"
+00674: 107  initelem_array 0
+00678: 107  string "LS_qianghua_done"
+00683: 107  initelem_array 1
+00687: 107  string "LS_liaotian_4"
+00692: 107  initelem_array 2
+00696: 107  endinit
+00697: 107  notearg
+00698: 107  call 1
+00701: 107  setlocal 3
+00704: 107  pop
+00705: 107  goto 778 (+73)
+00710: 111  name "xs"
+00715: 111  getprop "Views"
+00720: 111  getprop "Label"
+00725: 111  getprop "LabelExt"
+00730: 111  dup
+00731: 111  callprop "createWithStyles"
+00736: 111  swap
+00737: 111  notearg
+00738: 111  newarray 3
+00742: 111  string "LS_liaotian_3"
+00747: 111  initelem_array 0
+00751: 111  string "LS_qianghua_done"
+00756: 111  initelem_array 1
+00760: 111  string "LS_liaotian_4"
+00765: 111  initelem_array 2
+00769: 111  endinit
+00770: 111  notearg
+00771: 111  call 1
+00774: 111  setlocal 3
+00777: 111  pop
+00778: 114  getlocal 3
+00781: 114  dup
+00782: 114  callprop "setAnchorPoint"
+00787: 114  swap
+00788: 114  notearg
+00789: 114  name "cc"
+00794: 114  dup
+00795: 114  callprop "p"
+00800: 114  swap
+00801: 114  notearg
+00802: 114  zero
+00803: 114  notearg
+00804: 114  double 0.5
+00809: 114  notearg
+00810: 114  call 2
+00813: 114  notearg
+00814: 114  call 1
+00817: 114  pop
+00818: 115  getlocal 3
+00821: 115  dup
+00822: 115  callprop "setPosition"
+00827: 115  swap
+00828: 115  notearg
+00829: 115  name "cc"
+00834: 115  dup
+00835: 115  callprop "p"
+00840: 115  swap
+00841: 115  notearg
+00842: 115  int8 10
+00844: 115  notearg
+00845: 115  getlocal 0
+00848: 115  getlocal 2
+00851: 115  dup
+00852: 115  callprop "getContentSize"
+00857: 115  swap
+00858: 115  notearg
+00859: 115  call 0
+00862: 115  getprop "height"
+00867: 115  int8 2
+00869: 115  div
+00870: 115  add
+00871: 115  notearg
+00872: 115  call 2
+00875: 115  notearg
+00876: 115  call 1
+00879: 115  pop
+00880: 116  getlocal 3
+00883: 116  dup
+00884: 116  callprop "setStringByStrings"
+00889: 116  swap
+00890: 116  notearg
+00891: 116  newarray 3
+00895: 116  string "\u3010"
+00900: 116  this
+00901: 116  getprop "channelName"
+00906: 116  add
+00907: 116  string "\u3011"
+00912: 116  add
+00913: 116  initelem_array 0
+00917: 117  this
+00918: 117  getprop "vip_level"
+00923: 117  zero
+00924: 117  eq
+00925: 117  ifeq 940 (+15)
+00930: 117  string ""
+00935: 117  goto 979 (+44)
+00940: 117  name "xs"
+00945: 117  getprop "Tools"
+00950: 117  getprop "String"
+00955: 117  dup
+00956: 117  callprop "createString"
+00961: 117  swap
+00962: 117  notearg
+00963: 117  string "auto_name_vip"
+00968: 117  notearg
+00969: 117  call 1
+00972: 117  this
+00973: 117  getprop "vip_level"
+00978: 117  add
+00979: 117  initelem_array 1
+00983: 118  this
+00984: 118  getprop "channel"
+00989: 118  int8 5
+00991: 118  eq
+00992: 118  ifeq 1007 (+15)
+00997: 118  string ""
+01002: 118  goto 1025 (+23)
+01007: 118  string "\u3010"
+01012: 118  this
+01013: 118  getprop "nickname"
+01018: 118  add
+01019: 118  string "\u3011:"
+01024: 118  add
+01025: 118  initelem_array 2
+01029: 118  endinit
+01030: 118  notearg
+01031: 118  call 1
+01034: 118  pop
+01035: 119  getlocal 3
+01038: 119  dup
+01039: 119  callprop "setFontScaleAtIndex"
+01044: 119  swap
+01045: 119  notearg
+01046: 119  one
+01047: 119  notearg
+01048: 119  double 0.5
+01053: 119  notearg
+01054: 119  call 2
+01057: 119  pop
+01058: 120  getarg 0
+01061: 120  null
+01062: 120  ne
+01063: 120  ifeq 1103 (+40)
+01068: 121  name "xs"
+01073: 121  getprop "Utils"
+01078: 121  getprop "Node"
+01083: 121  dup
+01084: 121  callprop "attachNodes"
+01089: 121  swap
+01090: 121  notearg
+01091: 121  getarg 0
+01094: 121  notearg
+01095: 121  getlocal 3
+01098: 121  notearg
+01099: 121  call 2
+01102: 121  pop
+01103: 123  getlocal 0
+01106: 123  getlocal 2
+01109: 123  dup
+01110: 123  callprop "getContentSize"
+01115: 123  swap
+01116: 123  notearg
+01117: 123  call 0
+01120: 123  getprop "height"
+01125: 123  add
+01126: 123  setlocal 0
+01129: 123  pop
+01130: 125  getarg 0
+01133: 125  null
+01134: 125  eq
+01135: 125  ifeq 1144 (+9)
+01140: 126  getlocal 0
+01143: 126  return
+01144: 127  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:69 ---
+;; function object[4] createWithData
+;; function metadata object[4] nargs=1 bindings=2
+;; arg[0] jsonData
+;; local[0] _ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:132 ---
+loc   line  op
+----- ----  --
+main:
+00000: 133  name "xs"
+00005: 133  getprop "Models"
+00010: 133  getprop "Chat"
+00015: 133  undefined
+00016: 133  notearg
+00017: 133  new 0
+00020: 133  setlocal 0
+00023: 133  pop
+00024: 134  getlocal 0
+00027: 134  and 47 (+20)
+00032: 134  pop
+00033: 134  getlocal 0
+00036: 134  dup
+00037: 134  callprop "init"
+00042: 134  swap
+00043: 134  notearg
+00044: 134  call 0
+00047: 134  ifeq 83 (+36)
+00052: 135  getarg 0
+00055: 135  ifeq 79 (+24)
+00060: 136  getlocal 0
+00063: 136  dup
+00064: 136  callprop "load"
+00069: 136  swap
+00070: 136  notearg
+00071: 136  getarg 0
+00074: 136  notearg
+00075: 136  call 1
+00078: 136  pop
+00079: 138  getlocal 0
+00082: 138  return
+00083: 140  null
+00084: 140  return
+00085: 140  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Models/Chat.js:132 ---

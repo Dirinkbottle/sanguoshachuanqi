@@ -1,0 +1,442 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/InterService/InterServiceFightScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=119 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   5  name "xs"
+00005:   5  getprop "Scene"
+00010:   5  name "cc"
+00015:   5  getprop "Scene"
+00020:   5  dup
+00021:   5  callprop "extend"
+00026:   5  swap
+00027:   5  notearg
+00028:   5  newinit 1
+00033:   6  string "xs.Scene.InterServiceFightScene"
+00038:   6  initprop "name"
+00043:   7  lambda (function () {
+    [sourceless code]
+})
+00048:   7  initprop "ctor"
+00053:  11  lambda (function () {
+    [sourceless code]
+})
+00058:  11  initprop "init"
+00063:  45  lambda (function () {
+    [sourceless code]
+})
+00068:  45  initprop "onEnter"
+00073:  48  lambda (function () {
+    [sourceless code]
+})
+00078:  48  initprop "onEnterTransitionDidFinish"
+00083:  51  lambda (function () {
+    [sourceless code]
+})
+00088:  51  initprop "onExit"
+00093:  51  endinit
+00094:  51  notearg
+00095:  51  call 1
+00098:  51  setprop "InterServiceFightScene"
+00103:  51  popv
+00104:  56  name "xs"
+00109:  56  getprop "Scene"
+00114:  56  getprop "InterServiceFightScene"
+00119:  56  lambda (function () {
+    [sourceless code]
+})
+00124:  56  setprop "create"
+00129:  56  popv
+00130:  65  name "xs"
+00135:  65  getprop "Scene"
+00140:  65  getprop "Mgr"
+00145:  65  dup
+00146:  65  callprop "registerScene"
+00151:  65  swap
+00152:  65  notearg
+00153:  65  string "InterServiceFightScene"
+00158:  65  notearg
+00159:  65  newinit 1
+00164:  66  name "xs"
+00169:  66  getprop "Scene"
+00174:  66  getprop "InterServiceFightScene"
+00179:  66  initprop "class"
+00184:  67  name "xs"
+00189:  67  getprop "Constant_SceneType_Challenge"
+00194:  67  initprop "type"
+00199:  68  newarray 1
+00203:  68  string "InterServiceLadderWar"
+00208:  68  initelem_array 0
+00212:  68  endinit
+00213:  68  initprop "area"
+00218:  68  endinit
+00219:  68  notearg
+00220:  68  call 2
+00223:  68  popv
+00224:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  dup
+00002:   8  callprop "_super"
+00007:   8  swap
+00008:   8  notearg
+00009:   8  call 0
+00012:   8  pop
+00013:   9  name "cc"
+00018:   9  dup
+00019:   9  callprop "associateWithNative"
+00024:   9  swap
+00025:   9  notearg
+00026:   9  this
+00027:   9  notearg
+00028:   9  name "cc"
+00033:   9  getprop "Scene"
+00038:   9  notearg
+00039:   9  call 2
+00042:   9  pop
+00043:   9  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:7 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] visibleSize
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:11 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  dup
+00002:  12  callprop "_super"
+00007:  12  swap
+00008:  12  notearg
+00009:  12  call 0
+00012:  12  not
+00013:  12  ifeq 20 (+7)
+00018:  13  false
+00019:  13  return
+00020:  15  this
+00021:  15  zero
+00022:  15  setprop "m_baseTouchPriority"
+00027:  15  pop
+00028:  16  this
+00029:  16  null
+00030:  16  setprop "fightlayer"
+00035:  16  pop
+00036:  18  name "xs"
+00041:  18  getprop "director"
+00046:  18  dup
+00047:  18  callprop "getVisibleSize"
+00052:  18  swap
+00053:  18  notearg
+00054:  18  call 0
+00057:  18  setlocal 0
+00060:  18  pop
+00061:  21  name "xs"
+00066:  21  getprop "Tools"
+00071:  21  getprop "UI"
+00076:  21  dup
+00077:  21  callprop "addBgByType"
+00082:  21  swap
+00083:  21  notearg
+00084:  21  this
+00085:  21  notearg
+00086:  21  name "xs"
+00091:  21  getprop "Constant_BgType_InterServiceFight"
+00096:  21  notearg
+00097:  21  call 2
+00100:  21  pop
+00101:  24  this
+00102:  24  name "xs"
+00107:  24  getprop "Views"
+00112:  24  getprop "PlayerInfoBannerSimpleView"
+00117:  24  dup
+00118:  24  callprop "create"
+00123:  24  swap
+00124:  24  notearg
+00125:  24  call 0
+00128:  24  setprop "m_infoBar"
+00133:  24  pop
+00134:  25  this
+00135:  25  getprop "m_infoBar"
+00140:  25  dup
+00141:  25  callprop "setAnchorPoint"
+00146:  25  swap
+00147:  25  notearg
+00148:  25  name "cc"
+00153:  25  dup
+00154:  25  callprop "p"
+00159:  25  swap
+00160:  25  notearg
+00161:  25  zero
+00162:  25  notearg
+00163:  25  one
+00164:  25  notearg
+00165:  25  call 2
+00168:  25  notearg
+00169:  25  call 1
+00172:  25  pop
+00173:  26  name "xs"
+00178:  26  getprop "Utils"
+00183:  26  getprop "Node"
+00188:  26  dup
+00189:  26  callprop "attachNodes"
+00194:  26  swap
+00195:  26  notearg
+00196:  26  this
+00197:  26  notearg
+00198:  26  this
+00199:  26  getprop "m_infoBar"
+00204:  26  notearg
+00205:  26  newinit 1
+00210:  27  string "lt"
+00215:  27  initprop "desc"
+00220:  28  true
+00221:  28  initprop "sc"
+00226:  28  endinit
+00227:  28  notearg
+00228:  28  call 3
+00231:  28  pop
+00232:  32  this
+00233:  32  name "xs"
+00238:  32  getprop "Views"
+00243:  32  getprop "TablePage"
+00248:  32  dup
+00249:  32  callprop "create"
+00254:  32  swap
+00255:  32  notearg
+00256:  32  name "cc"
+00261:  32  dup
+00262:  32  callprop "size"
+00267:  32  swap
+00268:  32  notearg
+00269:  32  getlocal 0
+00272:  32  getprop "width"
+00277:  32  name "xs"
+00282:  32  getprop "Views"
+00287:  32  getprop "MainMenuView"
+00292:  32  getprop "Width"
+00297:  32  sub
+00298:  32  notearg
+00299:  32  getlocal 0
+00302:  32  getprop "height"
+00307:  32  int8 50
+00309:  32  sub
+00310:  32  notearg
+00311:  32  call 2
+00314:  32  notearg
+00315:  32  call 1
+00318:  32  setprop "m_pageView"
+00323:  32  pop
+00324:  33  this
+00325:  33  getprop "m_pageView"
+00330:  33  dup
+00331:  33  callprop "setBaseTouchPriority"
+00336:  33  swap
+00337:  33  notearg
+00338:  33  int8 -1
+00340:  33  notearg
+00341:  33  call 1
+00344:  33  pop
+00345:  34  this
+00346:  34  getprop "m_pageView"
+00351:  34  dup
+00352:  34  callprop "setListener"
+00357:  34  swap
+00358:  34  notearg
+00359:  34  this
+00360:  34  notearg
+00361:  34  call 1
+00364:  34  pop
+00365:  35  this
+00366:  35  getprop "m_pageView"
+00371:  35  dup
+00372:  35  callprop "addPageWhitConstruct"
+00377:  35  swap
+00378:  35  notearg
+00379:  35  name "xs"
+00384:  35  getprop "Tools"
+00389:  35  getprop "String"
+00394:  35  dup
+00395:  35  callprop "createString"
+00400:  35  swap
+00401:  35  notearg
+00402:  35  string "interService_name"
+00407:  35  notearg
+00408:  35  call 1
+00411:  35  notearg
+00412:  35  name "xs"
+00417:  35  getprop "Views"
+00422:  35  getprop "InterServiceFightView"
+00427:  35  notearg
+00428:  35  newinit 1
+00433:  35  getarg 0
+00436:  35  initprop "param"
+00441:  35  endinit
+00442:  35  notearg
+00443:  35  call 3
+00446:  35  pop
+00447:  36  name "xs"
+00452:  36  getprop "Utils"
+00457:  36  getprop "Node"
+00462:  36  dup
+00463:  36  callprop "attachNodes"
+00468:  36  swap
+00469:  36  notearg
+00470:  36  this
+00471:  36  notearg
+00472:  36  this
+00473:  36  getprop "m_pageView"
+00478:  36  notearg
+00479:  36  newinit 1
+00484:  37  string "lb"
+00489:  37  initprop "desc"
+00494:  38  true
+00495:  38  initprop "sc"
+00500:  38  endinit
+00501:  38  notearg
+00502:  38  call 3
+00505:  38  pop
+00506:  42  this
+00507:  42  name "xs"
+00512:  42  getprop "Tools"
+00517:  42  getprop "UI"
+00522:  42  dup
+00523:  42  callprop "addShortcutBoard"
+00528:  42  swap
+00529:  42  notearg
+00530:  42  this
+00531:  42  notearg
+00532:  42  true
+00533:  42  notearg
+00534:  42  name "xs"
+00539:  42  getprop "Cfg"
+00544:  42  getprop "Scene"
+00549:  42  getprop "SkillScene"
+00554:  42  getprop "mainmenu"
+00559:  42  notearg
+00560:  42  call 3
+00563:  42  setprop "m_mainMenu"
+00568:  42  pop
+00569:  43  true
+00570:  43  return
+00571:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:11 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  this
+00001:  46  dup
+00002:  46  callprop "_super"
+00007:  46  swap
+00008:  46  notearg
+00009:  46  call 0
+00012:  46  pop
+00013:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:45 ---
+;; function object[3] onEnterTransitionDidFinish
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:48 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  this
+00001:  49  dup
+00002:  49  callprop "_super"
+00007:  49  swap
+00008:  49  notearg
+00009:  49  call 0
+00012:  49  pop
+00013:  49  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:48 ---
+;; function object[4] onExit
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:51 ---
+loc   line  op
+----- ----  --
+main:
+00000:  52  this
+00001:  52  dup
+00002:  52  callprop "_super"
+00007:  52  swap
+00008:  52  notearg
+00009:  52  call 0
+00012:  52  pop
+00013:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:51 ---
+;; function object[5] create
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] data
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  57  name "xs"
+00005:  57  getprop "Scene"
+00010:  57  getprop "InterServiceFightScene"
+00015:  57  undefined
+00016:  57  notearg
+00017:  57  new 0
+00020:  57  setlocal 0
+00023:  57  pop
+00024:  58  getlocal 0
+00027:  58  and 51 (+24)
+00032:  58  pop
+00033:  58  getlocal 0
+00036:  58  dup
+00037:  58  callprop "init"
+00042:  58  swap
+00043:  58  notearg
+00044:  58  getarg 0
+00047:  58  notearg
+00048:  58  call 1
+00051:  58  ifeq 60 (+9)
+00056:  59  getlocal 0
+00059:  59  return
+00060:  61  name "xs"
+00065:  61  dup
+00066:  61  callprop "assert"
+00071:  61  swap
+00072:  61  notearg
+00073:  61  false
+00074:  61  notearg
+00075:  61  string "xs.Scene.InterServiceFightScene.create error!"
+00080:  61  notearg
+00081:  61  call 2
+00084:  61  pop
+00085:  62  null
+00086:  62  return
+00087:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/InterService/InterServiceFightScene.js:56 ---

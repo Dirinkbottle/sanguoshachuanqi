@@ -1,0 +1,454 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/SkillBuff.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/SkillBuff.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Utils"
+00010:   8  dup
+00011:   8  callprop "extendScope"
+00016:   8  swap
+00017:   8  notearg
+00018:   9  name "xs"
+00023:   9  getprop "Cfg"
+00028:   9  getprop "Skill"
+00033:   9  notearg
+00034:  10  newinit 1
+00039:  13  newinit 1
+00044:  14  string "template.T_Buff_Normal"
+00049:  14  initprop "extend"
+00054:  15  newinit 1
+00059:  16  string "Spawn"
+00064:  16  initprop "type"
+00069:  17  newinit 1
+00074:  18  string "P_BuffAdd_Effect_From"
+00079:  18  initprop "_type"
+00084:  18  endinit
+00085:  18  initprop "_effect_from"
+00090:  20  newinit 1
+00095:  21  string "P_Delay_Frame_2"
+00100:  21  initprop "_delay"
+00105:  22  string "P_Atk_Add_From"
+00110:  22  initprop "_type"
+00115:  22  endinit
+00116:  22  initprop "_buff_from"
+00121:  22  endinit
+00122:  22  initprop "_main"
+00127:  22  endinit
+00128:  22  initprop "fuhun"
+00133:  27  newinit 1
+00138:  28  string "template.T_Buff_Normal"
+00143:  28  initprop "extend"
+00148:  29  newinit 1
+00153:  30  string "Spawn"
+00158:  30  initprop "type"
+00163:  31  newinit 1
+00168:  32  string "P_BuffSub_Effect_To"
+00173:  32  initprop "_type"
+00178:  32  endinit
+00179:  32  initprop "_effect_to"
+00184:  34  newinit 1
+00189:  35  string "P_Def_Sub_To"
+00194:  35  initprop "_type"
+00199:  35  endinit
+00200:  35  initprop "_buff_to"
+00205:  35  endinit
+00206:  35  initprop "_main"
+00211:  35  endinit
+00212:  35  initprop "suzheng"
+00217:  39  newinit 1
+00222:  40  string "suzheng"
+00227:  40  initprop "extend"
+00232:  40  endinit
+00233:  40  initprop "xiansi"
+00238:  44  newinit 1
+00243:  45  string "template.T_Buff_Normal"
+00248:  45  initprop "extend"
+00253:  46  newinit 1
+00258:  47  string "Spawn"
+00263:  47  initprop "type"
+00268:  48  newinit 1
+00273:  49  string "P_BuffSub_Effect_To"
+00278:  49  initprop "_type"
+00283:  50  string "P_Absorb_Tmp_To2From"
+00288:  50  initprop "_absorb"
+00293:  50  endinit
+00294:  50  initprop "_effect_to"
+00299:  52  newinit 1
+00304:  53  string "P_Atk_Sub_To"
+00309:  53  initprop "_type"
+00314:  53  endinit
+00315:  53  initprop "_buff_to"
+00320:  53  endinit
+00321:  53  initprop "_main"
+00326:  56  newinit 1
+00331:  57  string "Spawn"
+00336:  57  initprop "type"
+00341:  58  newinit 1
+00346:  59  string "P_BuffAdd_Effect_From"
+00351:  59  initprop "_type"
+00356:  59  endinit
+00357:  59  initprop "_effect_from"
+00362:  61  newinit 1
+00367:  62  string "P_Delay_Frame_2"
+00372:  62  initprop "_delay"
+00377:  63  string "P_Atk_Add_From"
+00382:  63  initprop "_type"
+00387:  63  endinit
+00388:  63  initprop "_buff_from"
+00393:  63  endinit
+00394:  63  initprop "_main_after"
+00399:  63  endinit
+00400:  63  initprop "duodao"
+00405:  68  newinit 1
+00410:  69  string "template.T_Buff_Normal"
+00415:  69  initprop "extend"
+00420:  70  newinit 1
+00425:  71  string "Spawn"
+00430:  71  initprop "type"
+00435:  72  newinit 1
+00440:  73  string "P_BuffSub_Effect_To"
+00445:  73  initprop "_type"
+00450:  74  string "P_Absorb_Tmp_To2From"
+00455:  74  initprop "_absorb"
+00460:  74  endinit
+00461:  74  initprop "_effect_to"
+00466:  76  newinit 1
+00471:  77  string "P_Int_Sub_To"
+00476:  77  initprop "_type"
+00481:  77  endinit
+00482:  77  initprop "_buff_to"
+00487:  77  endinit
+00488:  77  initprop "_main"
+00493:  80  newinit 1
+00498:  81  string "Spawn"
+00503:  81  initprop "type"
+00508:  82  newinit 1
+00513:  83  string "P_BuffAdd_Effect_From"
+00518:  83  initprop "_type"
+00523:  83  endinit
+00524:  83  initprop "_effect_from"
+00529:  85  newinit 1
+00534:  86  string "P_Delay_Frame_2"
+00539:  86  initprop "_delay"
+00544:  87  string "P_Int_Add_From"
+00549:  87  initprop "_type"
+00554:  87  endinit
+00555:  87  initprop "_buff_from"
+00560:  87  endinit
+00561:  87  initprop "_main_after"
+00566:  87  endinit
+00567:  87  initprop "guijue"
+00572:  92  newinit 1
+00577:  93  string "template.T_Buff_Normal"
+00582:  93  initprop "extend"
+00587:  94  string "P_Normal_Skill_Yellow"
+00592:  94  initprop "_name"
+00597:  96  newinit 1
+00602:  97  string "Spawn"
+00607:  97  initprop "type"
+00612:  98  newinit 1
+00617:  99  string "P_BuffAdd_Effect_From"
+00622:  99  initprop "_type"
+00627:  99  endinit
+00628:  99  initprop "_effect_to"
+00633: 101  newinit 1
+00638: 102  string "P_Delay_Frame_2"
+00643: 102  initprop "_delay"
+00648: 103  string "P_Def_Add_From"
+00653: 103  initprop "_type"
+00658: 103  endinit
+00659: 103  initprop "_buff_to"
+00664: 103  endinit
+00665: 103  initprop "_main"
+00670: 103  endinit
+00671: 103  initprop "bupo"
+00676: 110  newinit 1
+00681: 111  string "template.T_Buff_Normal"
+00686: 111  initprop "extend"
+00691: 112  newinit 1
+00696: 113  string "Spawn"
+00701: 113  initprop "type"
+00706: 114  newinit 1
+00711: 115  string "P_BuffAdd_Effect_To"
+00716: 115  initprop "_type"
+00721: 115  endinit
+00722: 115  initprop "_effect_to"
+00727: 117  newinit 1
+00732: 118  string "P_Delay_Frame_2"
+00737: 118  initprop "_delay"
+00742: 119  string "P_Def_Add_To"
+00747: 119  initprop "_type"
+00752: 119  endinit
+00753: 119  initprop "_buff_to"
+00758: 119  endinit
+00759: 119  initprop "_main"
+00764: 119  endinit
+00765: 119  initprop "zhongyong"
+00770: 123  newinit 1
+00775: 124  string "zhongyong"
+00780: 124  initprop "extend"
+00785: 124  endinit
+00786: 124  initprop "shouye"
+00791: 128  newinit 1
+00796: 129  string "template.T_Buff_Normal"
+00801: 129  initprop "extend"
+00806: 130  newinit 1
+00811: 131  string "Spawn"
+00816: 131  initprop "type"
+00821: 132  newinit 1
+00826: 133  string "P_BuffAdd_Effect_To"
+00831: 133  initprop "_type"
+00836: 133  endinit
+00837: 133  initprop "_effect_to"
+00842: 135  newinit 1
+00847: 136  string "P_Delay_Frame_2"
+00852: 136  initprop "_delay"
+00857: 137  string "P_Atk_Add_To"
+00862: 137  initprop "_type"
+00867: 137  endinit
+00868: 137  initprop "_buff_to"
+00873: 137  endinit
+00874: 137  initprop "_main"
+00879: 137  endinit
+00880: 137  initprop "zhongyan"
+00885: 143  newinit 1
+00890: 144  string "template.T_Buff_Normal"
+00895: 144  initprop "extend"
+00900: 145  newinit 1
+00905: 146  string "Spawn"
+00910: 146  initprop "type"
+00915: 147  newinit 1
+00920: 148  string "P_BuffSub_Effect_To"
+00925: 148  initprop "_type"
+00930: 148  endinit
+00931: 148  initprop "_effect_to"
+00936: 150  newinit 1
+00941: 151  string "P_Atk_Sub_To"
+00946: 151  initprop "_type"
+00951: 151  endinit
+00952: 151  initprop "_buff_to"
+00957: 151  endinit
+00958: 151  initprop "_main"
+00963: 151  endinit
+00964: 151  initprop "yinbing"
+00969: 155  newinit 1
+00974: 156  string "yinbing"
+00979: 156  initprop "extend"
+00984: 156  endinit
+00985: 156  initprop "junxing"
+00990: 160  newinit 1
+00995: 161  string "template.T_Buff_Normal"
+01000: 161  initprop "extend"
+01005: 162  newinit 1
+01010: 163  string "Spawn"
+01015: 163  initprop "type"
+01020: 164  newinit 1
+01025: 165  string "P_BuffSub_Effect_To"
+01030: 165  initprop "_type"
+01035: 165  endinit
+01036: 165  initprop "_effect_to"
+01041: 167  newinit 1
+01046: 168  string "P_Int_Sub_To"
+01051: 168  initprop "_type"
+01056: 168  endinit
+01057: 168  initprop "_buff_to"
+01062: 168  endinit
+01063: 168  initprop "_main"
+01068: 168  endinit
+01069: 168  initprop "jiaodou"
+01074: 173  newinit 1
+01079: 174  string "template.T_Buff_Normal"
+01084: 174  initprop "extend"
+01089: 175  string "P_Cure_To"
+01094: 175  initprop "_main"
+01099: 175  endinit
+01100: 175  initprop "fuzhou"
+01105: 178  newinit 1
+01110: 179  string "template.T_Buff_Normal"
+01115: 179  initprop "extend"
+01120: 180  string "P_Cure_To"
+01125: 180  initprop "_main"
+01130: 180  endinit
+01131: 180  initprop "yuanhu"
+01136: 183  newinit 1
+01141: 184  string "template.T_Buff_Normal"
+01146: 184  initprop "extend"
+01151: 185  newinit 1
+01156: 186  string "Spawn"
+01161: 186  initprop "type"
+01166: 187  newinit 1
+01171: 188  string "P_BuffAdd_Effect_To"
+01176: 188  initprop "_type"
+01181: 188  endinit
+01182: 188  initprop "_effect_to"
+01187: 190  newinit 1
+01192: 191  string "P_Def_Add_To"
+01197: 191  initprop "_type"
+01202: 191  endinit
+01203: 191  initprop "_buff_to"
+01208: 191  endinit
+01209: 191  initprop "_main"
+01214: 191  endinit
+01215: 191  initprop "juequan"
+01220: 233  newinit 1
+01225: 234  string "template.T_Super"
+01230: 234  initprop "extend"
+01235: 235  newinit 1
+01240: 236  string "Spawn"
+01245: 236  initprop "type"
+01250: 237  newarray 3
+01254: 237  string "P_Delay_Frame_30"
+01259: 237  initelem_array 0
+01263: 237  string "P_Delay_Frame_2"
+01268: 237  initelem_array 1
+01272: 237  string "P_Hp_Add_From"
+01277: 237  initelem_array 2
+01281: 237  endinit
+01282: 237  initprop "_hp_add_from"
+01287: 238  newarray 3
+01291: 238  string "P_Delay_Frame_30"
+01296: 238  initelem_array 0
+01300: 238  string "P_Delay_Frame_2"
+01305: 238  initelem_array 1
+01309: 238  string "P_Atk_Add_To"
+01314: 238  initelem_array 2
+01318: 238  endinit
+01319: 238  initprop "_buff_add_to"
+01324: 239  string "P_RenDe_Effect_To_Mid"
+01329: 239  initprop "_effect_to_mid"
+01334: 239  endinit
+01335: 239  initprop "_main"
+01340: 239  endinit
+01341: 239  initprop "rende"
+01346: 244  newinit 1
+01351: 245  string "template.T_Buff_Super"
+01356: 245  initprop "extend"
+01361: 246  newinit 1
+01366: 248  newinit 1
+01371: 249  string "P_Haoshi_Effect_Far_Mid_From0"
+01376: 249  initprop "_type"
+01381: 249  endinit
+01382: 249  initprop "_effect_from0"
+01387: 252  newinit 1
+01392: 253  string "P_Haoshi_Effect_Near_Mid_From1"
+01397: 253  initprop "_type"
+01402: 253  endinit
+01403: 253  initprop "_effect_from1"
+01408: 256  newinit 1
+01413: 257  newarray 1
+01417: 257  string "P_Delay_Frame_37"
+01422: 257  initelem_array 0
+01426: 257  endinit
+01427: 257  initprop "_delay"
+01432: 258  string "P_Def_Add_To"
+01437: 258  initprop "_type"
+01442: 258  endinit
+01443: 258  initprop "_buff_to"
+01448: 258  endinit
+01449: 258  initprop "_attack"
+01454: 258  endinit
+01455: 258  initprop "haoshi"
+01460: 266  newinit 1
+01465: 267  string "template.T_Buff_Super"
+01470: 267  initprop "extend"
+01475: 268  newinit 1
+01480: 269  newinit 1
+01485: 270  string "P_JieYin_Effect_To"
+01490: 270  initprop "_type"
+01495: 270  endinit
+01496: 270  initprop "_effect_to"
+01501: 273  newinit 1
+01506: 274  string "P_Delay_Frame_30"
+01511: 274  initprop "_delay"
+01516: 275  string "P_Hp_Add_To"
+01521: 275  initprop "_type"
+01526: 275  endinit
+01527: 275  initprop "_buff_to"
+01532: 275  endinit
+01533: 275  initprop "_attack"
+01538: 275  endinit
+01539: 275  initprop "jieyin"
+01544: 282  newinit 1
+01549: 283  string "template.T_Buff_Super"
+01554: 283  initprop "extend"
+01559: 284  newinit 1
+01564: 285  newinit 1
+01569: 286  string "P_HuJia_Effect_To"
+01574: 286  initprop "_type"
+01579: 286  endinit
+01580: 286  initprop "_effect_to"
+01585: 289  newinit 1
+01590: 290  newarray 2
+01594: 290  string "P_Delay_Frame_30"
+01599: 290  initelem_array 0
+01603: 290  string "P_Delay_Frame_4"
+01608: 290  initelem_array 1
+01612: 290  endinit
+01613: 290  initprop "_delay"
+01618: 291  string "P_Atk_Sub_To"
+01623: 291  initprop "_type"
+01628: 291  endinit
+01629: 291  initprop "_buff_to"
+01634: 293  newinit 1
+01639: 294  string "P_HuJia_Effect_From0"
+01644: 294  initprop "_type"
+01649: 294  endinit
+01650: 294  initprop "_effect_from0"
+01655: 296  newinit 1
+01660: 297  string "P_HuJia_Effect_From1"
+01665: 297  initprop "_type"
+01670: 297  endinit
+01671: 297  initprop "_effect_from1"
+01676: 297  endinit
+01677: 297  initprop "_attack"
+01682: 297  endinit
+01683: 297  initprop "hujia"
+01688: 304  newinit 1
+01693: 305  string "jieyin"
+01698: 305  initprop "extend"
+01703: 306  newinit 1
+01708: 308  newinit 1
+01713: 309  string "P_Delay_Frame_50"
+01718: 309  initprop "_delay"
+01723: 310  string "P_Atk_Add_To_JieYin"
+01728: 310  initprop "_type"
+01733: 310  endinit
+01734: 310  initprop "_buff_to1"
+01739: 310  endinit
+01740: 310  initprop "_attack"
+01745: 310  endinit
+01746: 310  initprop "jieyin_v2"
+01751: 316  newinit 1
+01756: 317  string "jieyin_v2"
+01761: 317  initprop "extend"
+01766: 318  newinit 1
+01771: 320  newinit 1
+01776: 321  newarray 3
+01780: 321  string "P_Delay_Frame_68"
+01785: 321  initelem_array 0
+01789: 321  string "P_Delay_Frame_5"
+01794: 321  initelem_array 1
+01798: 321  string "P_Delay_Frame_4"
+01803: 321  initelem_array 2
+01807: 321  endinit
+01808: 321  initprop "_delay"
+01813: 322  string "P_JieYinV5_Effect_From"
+01818: 322  initprop "_type"
+01823: 322  endinit
+01824: 322  initprop "_effect_from"
+01829: 322  endinit
+01830: 322  initprop "_attack"
+01835: 322  endinit
+01836: 322  initprop "jieyin_v5"
+01841: 322  endinit
+01842: 322  notearg
+01843: 322  call 2
+01846: 322  popv
+01847: 332  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/SkillBuff.js:1 ---

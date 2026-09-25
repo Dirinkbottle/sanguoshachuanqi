@@ -1,0 +1,342 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SkillRefining/RefiningSkillTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=93 object[0]
+;; FUNCTION-MAP kind=lambda offset=103 object[1]
+;; FUNCTION-MAP kind=lambda offset=113 object[2]
+;; FUNCTION-MAP kind=lambda offset=123 object[3]
+;; FUNCTION-MAP kind=lambda offset=164 object[4]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   1  name "xs"
+00005:   1  getprop "Views"
+00010:   1  getprop "Table"
+00015:   1  name "xs"
+00020:   1  getprop "Views"
+00025:   1  getprop "Table"
+00030:   1  getprop "BaseTableView"
+00035:   1  dup
+00036:   1  callprop "extend"
+00041:   1  swap
+00042:   1  notearg
+00043:   1  newinit 1
+00048:   3  string "RefiningSkillTableView"
+00053:   3  initprop "name"
+00058:   4  newinit 1
+00063:   5  newarray 1
+00067:   6  name "xs"
+00072:   6  getprop "Constant_Notify_ModelChange_Skill"
+00077:   6  initelem_array 0
+00081:   6  endinit
+00082:   6  initprop "modelTypes"
+00087:   6  endinit
+00088:   6  initprop "Cfg"
+00093:  10  lambda (function () {
+    [sourceless code]
+})
+00098:  10  initprop "refreshData"
+00103:  29  lambda (function () {
+    [sourceless code]
+})
+00108:  29  initprop "createCell"
+00113:  36  lambda (function () {
+    [sourceless code]
+})
+00118:  36  initprop "getAllCanRefineSkills"
+00123:  43  lambda (function () {
+    [sourceless code]
+})
+00128:  43  initprop "makeViewSize"
+00133:  43  endinit
+00134:  43  notearg
+00135:  43  call 1
+00138:  43  setprop "RefiningSkillTableView"
+00143:  43  popv
+00144:  48  name "xs"
+00149:  48  getprop "Views"
+00154:  48  getprop "Table"
+00159:  48  getprop "RefiningSkillTableView"
+00164:  48  lambda (function () {
+    [sourceless code]
+})
+00169:  48  setprop "create"
+00174:  48  popv
+00175:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:1 ---
+;; function object[0] refreshData
+;; function metadata object[0] nargs=0 bindings=2
+;; local[0] skills
+;; local[1] key
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=151 length=98 stackDepth=1 target=249
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  newarray 0
+00005:  12  endinit
+00006:  12  setprop "arrayModel"
+00011:  12  pop
+00012:  14  this
+00013:  14  newarray 0
+00017:  14  endinit
+00018:  14  setprop "canRefineSkills"
+00023:  14  pop
+00024:  15  this
+00025:  15  dup
+00026:  15  callprop "getAllCanRefineSkills"
+00031:  15  swap
+00032:  15  notearg
+00033:  15  call 0
+00036:  15  pop
+00037:  17  name "xs"
+00042:  17  getprop "Profile"
+00047:  17  getprop "GameData"
+00052:  17  getprop "Mgr"
+00057:  17  dup
+00058:  17  callprop "getInstance"
+00063:  17  swap
+00064:  17  notearg
+00065:  17  call 0
+00068:  17  getprop "Skills"
+00073:  17  dup
+00074:  17  callprop "getAllWithDefaultSort"
+00079:  17  swap
+00080:  17  notearg
+00081:  17  call 0
+00084:  17  setlocal 0
+00087:  17  pop
+00088:  18  getlocal 0
+00091:  18  dup
+00092:  18  callprop "sort"
+00097:  18  swap
+00098:  18  notearg
+00099:  18  name "xs"
+00104:  18  getprop "Tools"
+00109:  18  getprop "Sort"
+00114:  18  dup
+00115:  18  callprop "by"
+00120:  18  swap
+00121:  18  notearg
+00122:  18  name "xs"
+00127:  18  getprop "Constant_SortType_Skill_DefaultWithIsOnGeneral"
+00132:  18  notearg
+00133:  18  call 1
+00136:  18  notearg
+00137:  18  call 1
+00140:  18  pop
+00141:  20  getlocal 0
+00144:  20  iter 1
+00146:  20  goto 242 (+96)
+00151:  20  loophead
+00152:  20  iternext
+00153:  20  setlocal 1
+00156:  20  pop
+00157:  21  this
+00158:  21  getprop "canRefineSkills"
+00163:  21  dup
+00164:  21  callprop "inArray"
+00169:  21  swap
+00170:  21  notearg
+00171:  21  getlocal 0
+00174:  21  getlocal 1
+00177:  21  getelem
+00178:  21  getprop "id"
+00183:  21  notearg
+00184:  21  call 1
+00187:  21  and 211 (+24)
+00192:  21  pop
+00193:  21  getlocal 0
+00196:  21  getlocal 1
+00199:  21  getelem
+00200:  21  getprop "pos"
+00205:  21  string "1"
+00210:  21  ne
+00211:  21  ifeq 242 (+31)
+00216:  22  this
+00217:  22  getprop "arrayModel"
+00222:  22  dup
+00223:  22  callprop "push"
+00228:  22  swap
+00229:  22  notearg
+00230:  22  getlocal 0
+00233:  22  getlocal 1
+00236:  22  getelem
+00237:  22  notearg
+00238:  22  call 1
+00241:  22  pop
+00242:  22  loopentry
+00243:  22  moreiter
+00244:  22  ifne 151 (-93)
+00249:  22  enditer
+00250:  24  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:10 ---
+;; function object[1] createCell
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] idx
+;; local[0] cell
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  null
+00001:  30  setlocal 0
+00004:  30  pop
+00005:  31  getarg 0
+00008:  31  this
+00009:  31  getprop "arrayModel"
+00014:  31  length "length"
+00019:  31  lt
+00020:  31  ifeq 76 (+56)
+00025:  32  name "xs"
+00030:  32  getprop "Views"
+00035:  32  getprop "Table"
+00040:  32  getprop "Cell"
+00045:  32  getprop "RefiningSkillTableViewCell"
+00050:  32  dup
+00051:  32  callprop "create"
+00056:  32  swap
+00057:  32  notearg
+00058:  32  this
+00059:  32  getprop "arrayModel"
+00064:  32  getarg 0
+00067:  32  getelem
+00068:  32  notearg
+00069:  32  call 1
+00072:  32  setlocal 0
+00075:  32  pop
+00076:  34  getlocal 0
+00079:  34  return
+00080:  34  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:29 ---
+;; function object[2] getAllCanRefineSkills
+;; function metadata object[2] nargs=0 bindings=2
+;; local[0] alldata
+;; local[1] key
+
+;; nested bytecode depth=1
+;; TRY-NOTE kind=iter start=63 length=59 stackDepth=1 target=122
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:36 ---
+loc   line  op
+----- ----  --
+main:
+00000:  37  this
+00001:  37  newarray 0
+00005:  37  endinit
+00006:  37  setprop "canRefineSkills"
+00011:  37  pop
+00012:  38  name "xs"
+00017:  38  getprop "Tools"
+00022:  38  getprop "CfgData"
+00027:  38  dup
+00028:  38  callprop "readRecordByType"
+00033:  38  swap
+00034:  38  notearg
+00035:  38  name "xs"
+00040:  38  getprop "Constant_CfgDataType_Skill_refine_conf"
+00045:  38  notearg
+00046:  38  call 1
+00049:  38  setlocal 0
+00052:  38  pop
+00053:  39  getlocal 0
+00056:  39  iter 1
+00058:  39  goto 115 (+57)
+00063:  39  loophead
+00064:  39  iternext
+00065:  39  setlocal 1
+00068:  39  pop
+00069:  40  callname "isNaN"
+00074:  40  implicitthis "isNaN"
+00079:  40  notearg
+00080:  40  getlocal 1
+00083:  40  notearg
+00084:  40  call 1
+00087:  40  not
+00088:  40  ifeq 115 (+27)
+00093:  40  this
+00094:  40  getprop "canRefineSkills"
+00099:  40  dup
+00100:  40  callprop "push"
+00105:  40  swap
+00106:  40  notearg
+00107:  40  getlocal 1
+00110:  40  notearg
+00111:  40  call 1
+00114:  40  pop
+00115:  40  loopentry
+00116:  40  moreiter
+00117:  40  ifne 63 (-54)
+00122:  40  enditer
+00123:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:36 ---
+;; function object[3] makeViewSize
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  name "xs"
+00005:  44  getprop "Views"
+00010:  44  getprop "TablePage"
+00015:  44  dup
+00016:  44  callprop "getTableViewSize"
+00021:  44  swap
+00022:  44  notearg
+00023:  44  call 0
+00026:  44  return
+00027:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:43 ---
+;; function object[4] create
+;; function metadata object[4] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:48 ---
+loc   line  op
+----- ----  --
+main:
+00000:  49  name "xs"
+00005:  49  getprop "Views"
+00010:  49  getprop "Table"
+00015:  49  getprop "RefiningSkillTableView"
+00020:  49  undefined
+00021:  49  notearg
+00022:  49  new 0
+00025:  49  setlocal 0
+00028:  49  pop
+00029:  50  getlocal 0
+00032:  50  and 52 (+20)
+00037:  50  pop
+00038:  50  getlocal 0
+00041:  50  dup
+00042:  50  callprop "init"
+00047:  50  swap
+00048:  50  notearg
+00049:  50  call 0
+00052:  50  ifeq 61 (+9)
+00057:  51  getlocal 0
+00060:  51  return
+00061:  53  this
+00062:  53  dup
+00063:  53  callprop "error"
+00068:  53  swap
+00069:  53  notearg
+00070:  53  string "SkillTableView.create:"
+00075:  53  notearg
+00076:  53  call 1
+00079:  53  pop
+00080:  54  null
+00081:  54  return
+00082:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SkillRefining/RefiningSkillTableView.js:48 ---

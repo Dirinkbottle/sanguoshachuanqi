@@ -1,0 +1,255 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Utils/Rc4.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=10 object[0]
+;; FUNCTION-MAP kind=lambda offset=31 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Rc4.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   1  name "xs"
+00005:   1  getprop "Utils"
+00010:   1  lambda (function () {
+    [sourceless code]
+})
+00015:   1  setprop "RC4"
+00020:   1  popv
+00021:  30  name "xs"
+00026:  30  getprop "Utils"
+00031:  30  lambda (function () {
+    [sourceless code]
+})
+00036:  30  setprop "rc4"
+00041:  30  popv
+00042:  56  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Rc4.js:1 ---
+;; function object[0] RC4
+;; function metadata object[0] nargs=2 bindings=2
+;; arg[0] key
+;; arg[1] str
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Rc4.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  name "xs"
+00005:  27  getprop "Utils"
+00010:  27  dup
+00011:  27  callprop "rc4"
+00016:  27  swap
+00017:  27  notearg
+00018:  27  getarg 0
+00021:  27  notearg
+00022:  27  getarg 1
+00025:  27  notearg
+00026:  27  call 2
+00029:  27  return
+00030:  27  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Rc4.js:1 ---
+;; function object[1] rc4
+;; function metadata object[1] nargs=2 bindings=8
+;; arg[0] key
+;; arg[1] str
+;; local[0] s
+;; local[1] j
+;; local[2] x
+;; local[3] res
+;; local[4] i
+;; local[5] y
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Rc4.js:30 ---
+loc   line  op
+----- ----  --
+main:
+00000:  32  newarray 0
+00004:  32  endinit
+00005:  32  setlocal 0
+00008:  32  pop
+00009:  33  zero
+00010:  33  setlocal 1
+00013:  33  pop
+00014:  34  getlocal 2
+00017:  34  pop
+00018:  35  string ""
+00023:  35  setlocal 3
+00026:  35  pop
+00027:  36  zero
+00028:  36  setlocal 4
+00031:  36  pop
+00032:  36  goto 64 (+32)
+00037:  37  loophead
+00038:  37  getlocal 0
+00041:  37  getlocal 4
+00044:  37  getlocal 4
+00047:  37  setelem
+00048:  37  pop
+00049:  36  localinc 11
+00052:  36  getlocal 4
+00055:  36  pos
+00056:  36  dup
+00057:  36  one
+00058:  36  add
+00059:  36  setlocal 4
+00062:  36  pop
+00063:  36  pop
+00064:  36  loopentry
+00065:  36  getlocal 4
+00068:  36  uint16 256
+00071:  36  lt
+00072:  36  ifne 37 (-35)
+00077:  39  zero
+00078:  39  setlocal 4
+00081:  39  pop
+00082:  39  goto 187 (+105)
+00087:  40  loophead
+00088:  40  getlocal 1
+00091:  40  getlocal 0
+00094:  40  getlocal 4
+00097:  40  getelem
+00098:  40  add
+00099:  40  getarg 0
+00102:  40  dup
+00103:  40  callprop "charCodeAt"
+00108:  40  swap
+00109:  40  notearg
+00110:  40  getlocal 4
+00113:  40  getarg 0
+00116:  40  length "length"
+00121:  40  mod
+00122:  40  notearg
+00123:  40  call 1
+00126:  40  add
+00127:  40  uint16 256
+00130:  40  mod
+00131:  40  setlocal 1
+00134:  40  pop
+00135:  41  getlocal 0
+00138:  41  getlocal 4
+00141:  41  getelem
+00142:  41  setlocal 2
+00145:  41  pop
+00146:  42  getlocal 0
+00149:  42  getlocal 4
+00152:  42  getlocal 0
+00155:  42  getlocal 1
+00158:  42  getelem
+00159:  42  setelem
+00160:  42  pop
+00161:  43  getlocal 0
+00164:  43  getlocal 1
+00167:  43  getlocal 2
+00170:  43  setelem
+00171:  43  pop
+00172:  39  localinc 11
+00175:  39  getlocal 4
+00178:  39  pos
+00179:  39  dup
+00180:  39  one
+00181:  39  add
+00182:  39  setlocal 4
+00185:  39  pop
+00186:  39  pop
+00187:  39  loopentry
+00188:  39  getlocal 4
+00191:  39  uint16 256
+00194:  39  lt
+00195:  39  ifne 87 (-108)
+00200:  45  zero
+00201:  45  setlocal 4
+00204:  45  pop
+00205:  46  zero
+00206:  46  setlocal 1
+00209:  46  pop
+00210:  47  zero
+00211:  47  setlocal 5
+00214:  47  pop
+00215:  47  goto 372 (+157)
+00220:  48  loophead
+00221:  48  getlocal 4
+00224:  48  one
+00225:  48  add
+00226:  48  uint16 256
+00229:  48  mod
+00230:  48  setlocal 4
+00233:  48  pop
+00234:  49  getlocal 1
+00237:  49  getlocal 0
+00240:  49  getlocal 4
+00243:  49  getelem
+00244:  49  add
+00245:  49  uint16 256
+00248:  49  mod
+00249:  49  setlocal 1
+00252:  49  pop
+00253:  50  getlocal 0
+00256:  50  getlocal 4
+00259:  50  getelem
+00260:  50  setlocal 2
+00263:  50  pop
+00264:  51  getlocal 0
+00267:  51  getlocal 4
+00270:  51  getlocal 0
+00273:  51  getlocal 1
+00276:  51  getelem
+00277:  51  setelem
+00278:  51  pop
+00279:  52  getlocal 0
+00282:  52  getlocal 1
+00285:  52  getlocal 2
+00288:  52  setelem
+00289:  52  pop
+00290:  53  getlocal 3
+00293:  53  name "String"
+00298:  53  dup
+00299:  53  callprop "fromCharCode"
+00304:  53  swap
+00305:  53  notearg
+00306:  53  getarg 1
+00309:  53  dup
+00310:  53  callprop "charCodeAt"
+00315:  53  swap
+00316:  53  notearg
+00317:  53  getlocal 5
+00320:  53  notearg
+00321:  53  call 1
+00324:  53  getlocal 0
+00327:  53  getlocal 0
+00330:  53  getlocal 4
+00333:  53  getelem
+00334:  53  getlocal 0
+00337:  53  getlocal 1
+00340:  53  getelem
+00341:  53  add
+00342:  53  uint16 256
+00345:  53  mod
+00346:  53  getelem
+00347:  53  bitxor
+00348:  53  notearg
+00349:  53  call 1
+00352:  53  add
+00353:  53  setlocal 3
+00356:  53  pop
+00357:  47  localinc 11
+00360:  47  getlocal 5
+00363:  47  pos
+00364:  47  dup
+00365:  47  one
+00366:  47  add
+00367:  47  setlocal 5
+00370:  47  pop
+00371:  47  pop
+00372:  47  loopentry
+00373:  47  getlocal 5
+00376:  47  getarg 1
+00379:  47  length "length"
+00384:  47  lt
+00385:  47  ifne 220 (-165)
+00390:  55  getlocal 3
+00393:  55  return
+00394:  55  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Utils/Rc4.js:30 ---

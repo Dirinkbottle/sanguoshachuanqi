@@ -1,0 +1,666 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/Model.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=66 object[0]
+;; FUNCTION-MAP kind=lambda offset=76 object[1]
+;; FUNCTION-MAP kind=lambda offset=86 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Model.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  name "xs"
+00005:   8  getprop "Tools"
+00010:   8  name "xs"
+00015:   8  getprop "Tools"
+00020:   8  getprop "Model"
+00025:   8  or 97 (+72)
+00030:   8  pop
+00031:   8  newinit 1
+00036:   9  string "xs.tools.Model"
+00041:   9  initprop "name"
+00046:  10  name "xs"
+00051:  10  getprop "Debug"
+00056:  10  getprop "emptyFunc"
+00061:  10  initprop "dump"
+00066:  12  lambda (function () {
+    [sourceless code]
+})
+00071:  12  initprop "createModel"
+00076:  24  lambda (function () {
+    [sourceless code]
+})
+00081:  24  initprop "createModelWithBase"
+00086: 112  lambda (function () {
+    [sourceless code]
+})
+00091: 112  initprop "getRandomName"
+00096: 112  endinit
+00097: 112  setprop "Model"
+00102: 112  popv
+00103: 128  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Model.js:1 ---
+;; function object[0] createModel
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] obj
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Model.js:12 ---
+loc   line  op
+----- ----  --
+main:
+00000:  13  this
+00001:  13  dup
+00002:  13  callprop "createModelWithBase"
+00007:  13  swap
+00008:  13  notearg
+00009:  14  name "xs"
+00014:  14  getprop "Utils"
+00019:  14  dup
+00020:  14  callprop "parseIntSafe"
+00025:  14  swap
+00026:  14  notearg
+00027:  14  getarg 0
+00030:  14  getprop "type"
+00035:  14  notearg
+00036:  14  call 1
+00039:  14  notearg
+00040:  15  getarg 0
+00043:  15  getprop "id"
+00048:  15  notearg
+00049:  16  getarg 0
+00052:  16  getprop "num"
+00057:  16  notearg
+00058:  16  call 3
+00061:  16  return
+00062:  17  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Model.js:12 ---
+;; function object[1] createModelWithBase
+;; function metadata object[1] nargs=4 bindings=7
+;; arg[0] obj_type
+;; arg[1] id
+;; arg[2] num
+;; arg[3] lv
+;; local[0] _lv
+;; local[1] _res_obj
+;; local[2] arguments
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Model.js:24 ---
+loc   line  op
+----- ----  --
+00000:  24  arguments
+00001:  24  setlocal 2
+00004:  24  pop
+main:
+00005:  25  getarg 2
+00008:  25  or 15 (+7)
+00013:  25  pop
+00014:  25  one
+00015:  25  setarg 2
+00018:  25  pop
+00019:  26  getarg 3
+00022:  26  or 29 (+7)
+00027:  26  pop
+00028:  26  one
+00029:  26  setlocal 0
+00032:  26  pop
+00033:  27  newinit 1
+00038:  27  endinit
+00039:  27  setlocal 1
+00042:  27  pop
+00043:  31  getarg 0
+00046:  31  condswitch
+00047:  33  name "xs"
+00052:  33  getprop "Constant_AddType_General"
+00057:  33  case 247 (+190)
+00062:  39  name "xs"
+00067:  39  getprop "Constant_AddType_Equipment"
+00072:  39  case 324 (+252)
+00077:  45  name "xs"
+00082:  45  getprop "Constant_AddType_Skill"
+00087:  45  case 401 (+314)
+00092:  51  name "xs"
+00097:  51  getprop "Constant_AddType_Item"
+00102:  51  case 478 (+376)
+00107:  57  name "xs"
+00112:  57  getprop "Constant_AddType_GeneralSoul"
+00117:  57  case 555 (+438)
+00122:  62  name "xs"
+00127:  62  getprop "Constant_AddType_EquipmentPiece"
+00132:  62  case 613 (+481)
+00137:  67  name "xs"
+00142:  67  getprop "Constant_AddType_SkillPiece"
+00147:  67  case 671 (+524)
+00152:  72  name "xs"
+00157:  72  getprop "Constant_AddType_General_Obj"
+00162:  72  case 729 (+567)
+00167:  77  name "xs"
+00172:  77  getprop "Constant_AddType_Equipment_Obj"
+00177:  77  case 798 (+621)
+00182:  81  name "xs"
+00187:  81  getprop "Constant_AddType_Skill_Obj"
+00192:  81  case 867 (+675)
+00197:  86  name "xs"
+00202:  86  getprop "Constant_AddType_Gems"
+00207:  86  case 936 (+729)
+00212:  91  name "xs"
+00217:  91  getprop "Constant_AddType_Goddess"
+00222:  91  case 975 (+753)
+00227:  96  name "xs"
+00232:  96  getprop "Constant_AddType_GoddessSurface"
+00237:  96  case 1033 (+796)
+00242:  96  default 1091 (+849)
+00247:  34  name "xs"
+00252:  34  getprop "Models"
+00257:  34  getprop "General"
+00262:  34  dup
+00263:  34  callprop "createWithBase"
+00268:  34  swap
+00269:  34  notearg
+00270:  34  getarg 1
+00273:  34  notearg
+00274:  34  call 1
+00277:  34  setlocal 1
+00280:  34  pop
+00281:  35  getlocal 1
+00284:  35  dup
+00285:  35  callprop "setNum"
+00290:  35  swap
+00291:  35  notearg
+00292:  35  getarg 2
+00295:  35  notearg
+00296:  35  call 1
+00299:  35  pop
+00300:  36  getlocal 1
+00303:  36  dup
+00304:  36  callprop "setLevel"
+00309:  36  swap
+00310:  36  notearg
+00311:  36  getlocal 0
+00314:  36  notearg
+00315:  36  call 1
+00318:  36  pop
+00319:  37  goto 1119 (+800)
+00324:  40  name "xs"
+00329:  40  getprop "Models"
+00334:  40  getprop "Equipment"
+00339:  40  dup
+00340:  40  callprop "createWithBase"
+00345:  40  swap
+00346:  40  notearg
+00347:  40  getarg 1
+00350:  40  notearg
+00351:  40  call 1
+00354:  40  setlocal 1
+00357:  40  pop
+00358:  41  getlocal 1
+00361:  41  dup
+00362:  41  callprop "setNum"
+00367:  41  swap
+00368:  41  notearg
+00369:  41  getarg 2
+00372:  41  notearg
+00373:  41  call 1
+00376:  41  pop
+00377:  42  getlocal 1
+00380:  42  dup
+00381:  42  callprop "setLevel"
+00386:  42  swap
+00387:  42  notearg
+00388:  42  getlocal 0
+00391:  42  notearg
+00392:  42  call 1
+00395:  42  pop
+00396:  43  goto 1119 (+723)
+00401:  46  name "xs"
+00406:  46  getprop "Models"
+00411:  46  getprop "Skill"
+00416:  46  dup
+00417:  46  callprop "createWithBase"
+00422:  46  swap
+00423:  46  notearg
+00424:  46  getarg 1
+00427:  46  notearg
+00428:  46  call 1
+00431:  46  setlocal 1
+00434:  46  pop
+00435:  47  getlocal 1
+00438:  47  dup
+00439:  47  callprop "setNum"
+00444:  47  swap
+00445:  47  notearg
+00446:  47  getarg 2
+00449:  47  notearg
+00450:  47  call 1
+00453:  47  pop
+00454:  48  getlocal 1
+00457:  48  dup
+00458:  48  callprop "setLevel"
+00463:  48  swap
+00464:  48  notearg
+00465:  48  getlocal 0
+00468:  48  notearg
+00469:  48  call 1
+00472:  48  pop
+00473:  49  goto 1119 (+646)
+00478:  52  name "xs"
+00483:  52  getprop "Models"
+00488:  52  getprop "Item"
+00493:  52  dup
+00494:  52  callprop "createWithBase"
+00499:  52  swap
+00500:  52  notearg
+00501:  52  getarg 1
+00504:  52  notearg
+00505:  52  call 1
+00508:  52  setlocal 1
+00511:  52  pop
+00512:  53  getlocal 1
+00515:  53  dup
+00516:  53  callprop "addItemNum"
+00521:  53  swap
+00522:  53  notearg
+00523:  53  getarg 2
+00526:  53  notearg
+00527:  53  call 1
+00530:  53  pop
+00531:  54  getlocal 1
+00534:  54  dup
+00535:  54  callprop "setNum"
+00540:  54  swap
+00541:  54  notearg
+00542:  54  getarg 2
+00545:  54  notearg
+00546:  54  call 1
+00549:  54  pop
+00550:  55  goto 1119 (+569)
+00555:  58  name "xs"
+00560:  58  getprop "Models"
+00565:  58  getprop "GeneralSoul"
+00570:  58  dup
+00571:  58  callprop "createWithBase"
+00576:  58  swap
+00577:  58  notearg
+00578:  58  getarg 1
+00581:  58  notearg
+00582:  58  call 1
+00585:  58  setlocal 1
+00588:  58  pop
+00589:  59  getlocal 1
+00592:  59  dup
+00593:  59  callprop "setNum"
+00598:  59  swap
+00599:  59  notearg
+00600:  59  getarg 2
+00603:  59  notearg
+00604:  59  call 1
+00607:  59  pop
+00608:  60  goto 1119 (+511)
+00613:  63  name "xs"
+00618:  63  getprop "Models"
+00623:  63  getprop "EquipmentPiece"
+00628:  63  dup
+00629:  63  callprop "createWithBase"
+00634:  63  swap
+00635:  63  notearg
+00636:  63  getarg 1
+00639:  63  notearg
+00640:  63  call 1
+00643:  63  setlocal 1
+00646:  63  pop
+00647:  64  getlocal 1
+00650:  64  dup
+00651:  64  callprop "setNum"
+00656:  64  swap
+00657:  64  notearg
+00658:  64  getarg 2
+00661:  64  notearg
+00662:  64  call 1
+00665:  64  pop
+00666:  65  goto 1119 (+453)
+00671:  68  name "xs"
+00676:  68  getprop "Models"
+00681:  68  getprop "SkillPiece"
+00686:  68  dup
+00687:  68  callprop "createWithBase"
+00692:  68  swap
+00693:  68  notearg
+00694:  68  getarg 1
+00697:  68  notearg
+00698:  68  call 1
+00701:  68  setlocal 1
+00704:  68  pop
+00705:  69  getlocal 1
+00708:  69  dup
+00709:  69  callprop "setNum"
+00714:  69  swap
+00715:  69  notearg
+00716:  69  getarg 2
+00719:  69  notearg
+00720:  69  call 1
+00723:  69  pop
+00724:  70  goto 1119 (+395)
+00729:  73  name "xs"
+00734:  73  getprop "gd_mgr"
+00739:  73  dup
+00740:  73  callprop "getInstance"
+00745:  73  swap
+00746:  73  notearg
+00747:  73  call 0
+00750:  73  getprop "Generals"
+00755:  73  dup
+00756:  73  callprop "getByPkId"
+00761:  73  swap
+00762:  73  notearg
+00763:  73  getarg 1
+00766:  73  notearg
+00767:  73  call 1
+00770:  73  setlocal 1
+00773:  73  pop
+00774:  74  getlocal 1
+00777:  74  dup
+00778:  74  callprop "setNum"
+00783:  74  swap
+00784:  74  notearg
+00785:  74  getarg 2
+00788:  74  notearg
+00789:  74  call 1
+00792:  74  pop
+00793:  75  goto 1119 (+326)
+00798:  78  name "xs"
+00803:  78  getprop "gd_mgr"
+00808:  78  dup
+00809:  78  callprop "getInstance"
+00814:  78  swap
+00815:  78  notearg
+00816:  78  call 0
+00819:  78  getprop "Equipments"
+00824:  78  dup
+00825:  78  callprop "getByPkId"
+00830:  78  swap
+00831:  78  notearg
+00832:  78  getarg 1
+00835:  78  notearg
+00836:  78  call 1
+00839:  78  setlocal 1
+00842:  78  pop
+00843:  79  getlocal 1
+00846:  79  dup
+00847:  79  callprop "setNum"
+00852:  79  swap
+00853:  79  notearg
+00854:  79  getarg 2
+00857:  79  notearg
+00858:  79  call 1
+00861:  79  pop
+00862:  80  goto 1119 (+257)
+00867:  82  name "xs"
+00872:  82  getprop "gd_mgr"
+00877:  82  dup
+00878:  82  callprop "getInstance"
+00883:  82  swap
+00884:  82  notearg
+00885:  82  call 0
+00888:  82  getprop "Skills"
+00893:  82  dup
+00894:  82  callprop "getByPkId"
+00899:  82  swap
+00900:  82  notearg
+00901:  82  getarg 1
+00904:  82  notearg
+00905:  82  call 1
+00908:  82  setlocal 1
+00911:  82  pop
+00912:  83  getlocal 1
+00915:  83  dup
+00916:  83  callprop "setNum"
+00921:  83  swap
+00922:  83  notearg
+00923:  83  getarg 2
+00926:  83  notearg
+00927:  83  call 1
+00930:  83  pop
+00931:  84  goto 1119 (+188)
+00936:  87  name "xs"
+00941:  87  getprop "Models"
+00946:  87  getprop "Gems"
+00951:  87  dup
+00952:  87  callprop "createWithBase"
+00957:  87  swap
+00958:  87  notearg
+00959:  87  getarg 1
+00962:  87  notearg
+00963:  87  call 1
+00966:  87  setlocal 1
+00969:  87  pop
+00970:  89  goto 1119 (+149)
+00975:  92  name "xs"
+00980:  92  getprop "Models"
+00985:  92  getprop "Goddess"
+00990:  92  dup
+00991:  92  callprop "createWithBase"
+00996:  92  swap
+00997:  92  notearg
+00998:  92  getarg 1
+01001:  92  notearg
+01002:  92  call 1
+01005:  92  setlocal 1
+01008:  92  pop
+01009:  93  getlocal 1
+01012:  93  dup
+01013:  93  callprop "setNum"
+01018:  93  swap
+01019:  93  notearg
+01020:  93  getarg 2
+01023:  93  notearg
+01024:  93  call 1
+01027:  93  pop
+01028:  94  goto 1119 (+91)
+01033:  97  name "xs"
+01038:  97  getprop "Models"
+01043:  97  getprop "Goddess"
+01048:  97  dup
+01049:  97  callprop "createWithBaseSurface"
+01054:  97  swap
+01055:  97  notearg
+01056:  97  getarg 1
+01059:  97  notearg
+01060:  97  call 1
+01063:  97  setlocal 1
+01066:  97  pop
+01067:  98  getlocal 1
+01070:  98  dup
+01071:  98  callprop "setNum"
+01076:  98  swap
+01077:  98  notearg
+01078:  98  getarg 2
+01081:  98  notearg
+01082:  98  call 1
+01085:  98  pop
+01086:  99  goto 1119 (+33)
+01091: 102  this
+01092: 102  dup
+01093: 102  callprop "error"
+01098: 102  swap
+01099: 102  notearg
+01100: 102  string "the obj_type is not allow to create "
+01105: 102  notearg
+01106: 102  getlocal 2
+01109: 102  notearg
+01110: 102  call 2
+01113: 102  pop
+01114: 103  goto 1119 (+5)
+01119: 106  this
+01120: 106  dup
+01121: 106  callprop "dump"
+01126: 106  swap
+01127: 106  notearg
+01128: 106  string "createModelWithBase"
+01133: 106  notearg
+01134: 106  getlocal 1
+01137: 106  notearg
+01138: 106  call 2
+01141: 106  pop
+01142: 107  getlocal 1
+01145: 107  return
+01146: 107  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Model.js:24 ---
+;; function object[2] getRandomName
+;; function metadata object[2] nargs=0 bindings=6
+;; local[0] _first_name_cfg
+;; local[1] _first_name_num
+;; local[2] _first_name
+;; local[3] _second_name_cfg
+;; local[4] _second_name_num
+;; local[5] _second_name
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Model.js:112 ---
+loc   line  op
+----- ----  --
+main:
+00000: 114  name "xs"
+00005: 114  getprop "Tools"
+00010: 114  getprop "CfgData"
+00015: 114  dup
+00016: 114  callprop "readRecordByTypeAndKey"
+00021: 114  swap
+00022: 114  notearg
+00023: 114  name "xs"
+00028: 114  getprop "Constant_CfgDataType_Random_Name"
+00033: 114  notearg
+00034: 114  string "first_name"
+00039: 114  notearg
+00040: 114  call 2
+00043: 114  setlocal 0
+00046: 114  pop
+00047: 115  this
+00048: 115  dup
+00049: 115  callprop "assert"
+00054: 115  swap
+00055: 115  notearg
+00056: 115  getlocal 0
+00059: 115  length "length"
+00064: 115  notearg
+00065: 115  string "the config first name is error"
+00070: 115  notearg
+00071: 115  call 2
+00074: 115  pop
+00075: 116  callname "parseInt"
+00080: 116  implicitthis "parseInt"
+00085: 116  notearg
+00086: 116  name "Math"
+00091: 116  dup
+00092: 116  callprop "random"
+00097: 116  swap
+00098: 116  notearg
+00099: 116  call 0
+00102: 116  getlocal 0
+00105: 116  length "length"
+00110: 116  mul
+00111: 116  notearg
+00112: 116  call 1
+00115: 116  setlocal 1
+00118: 116  pop
+00119: 117  this
+00120: 117  dup
+00121: 117  callprop "log"
+00126: 117  swap
+00127: 117  notearg
+00128: 117  string "first"
+00133: 117  getlocal 1
+00136: 117  add
+00137: 117  notearg
+00138: 117  call 1
+00141: 117  pop
+00142: 118  getlocal 0
+00145: 118  getlocal 1
+00148: 118  getelem
+00149: 118  setlocal 2
+00152: 118  pop
+00153: 120  name "xs"
+00158: 120  getprop "Tools"
+00163: 120  getprop "CfgData"
+00168: 120  dup
+00169: 120  callprop "readRecordByTypeAndKey"
+00174: 120  swap
+00175: 120  notearg
+00176: 120  name "xs"
+00181: 120  getprop "Constant_CfgDataType_Random_Name"
+00186: 120  notearg
+00187: 120  string "second_name"
+00192: 120  notearg
+00193: 120  call 2
+00196: 120  setlocal 3
+00199: 120  pop
+00200: 121  this
+00201: 121  dup
+00202: 121  callprop "assert"
+00207: 121  swap
+00208: 121  notearg
+00209: 121  getlocal 3
+00212: 121  length "length"
+00217: 121  notearg
+00218: 121  string "the config first name is error"
+00223: 121  notearg
+00224: 121  call 2
+00227: 121  pop
+00228: 122  callname "parseInt"
+00233: 122  implicitthis "parseInt"
+00238: 122  notearg
+00239: 122  name "Math"
+00244: 122  dup
+00245: 122  callprop "random"
+00250: 122  swap
+00251: 122  notearg
+00252: 122  call 0
+00255: 122  getlocal 3
+00258: 122  length "length"
+00263: 122  mul
+00264: 122  notearg
+00265: 122  call 1
+00268: 122  setlocal 4
+00271: 122  pop
+00272: 123  this
+00273: 123  dup
+00274: 123  callprop "log"
+00279: 123  swap
+00280: 123  notearg
+00281: 123  string "second"
+00286: 123  getlocal 4
+00289: 123  add
+00290: 123  notearg
+00291: 123  call 1
+00294: 123  pop
+00295: 124  getlocal 3
+00298: 124  getlocal 4
+00301: 124  getelem
+00302: 124  setlocal 5
+00305: 124  pop
+00306: 126  name "xs"
+00311: 126  getprop "Tools"
+00316: 126  getprop "Ml"
+00321: 126  dup
+00322: 126  callprop "createString"
+00327: 126  swap
+00328: 126  notearg
+00329: 126  getlocal 2
+00332: 126  notearg
+00333: 126  call 1
+00336: 126  name "xs"
+00341: 126  getprop "Tools"
+00346: 126  getprop "Ml"
+00351: 126  dup
+00352: 126  callprop "createString"
+00357: 126  swap
+00358: 126  notearg
+00359: 126  getlocal 5
+00362: 126  notearg
+00363: 126  call 1
+00366: 126  add
+00367: 126  return
+00368: 126  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Model.js:112 ---

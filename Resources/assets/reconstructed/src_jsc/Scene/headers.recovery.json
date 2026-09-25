@@ -1,0 +1,617 @@
+{
+  "input": "Recovered/src_jsc/Scene/headers.js.disasm.txt",
+  "outline": "Recovered/src_jsc/Scene/headers.js.structure.md",
+  "sourceTextRecovered": false,
+  "output": "src_jsc/Scene/headers.js",
+  "scriptBodies": 1,
+  "instructions": 882,
+  "translatedOpcodeInstructions": 882,
+  "recoveryRate": 1.0,
+  "structuredForInLoops": 0,
+  "structuredTryCatchBlocks": 0,
+  "structuredDoWhileLoops": 0,
+  "structuredConditionalSwitches": 0,
+  "sharedDefaultSwitchJoins": 0,
+  "sharedDefaultConditionalSwitchJoins": 0,
+  "sharedDefaultTableSwitchJoins": 0,
+  "unresolvedOpcodes": {},
+  "emittedTodoMarkersByOpcode": {},
+  "approximateOpcodes": {},
+  "functionLinksMissing": 0,
+  "detachedFunctionBodies": 0,
+  "cfg": {
+    "blocks": 3,
+    "edges": 3,
+    "stackMergeConflicts": 0,
+    "unreachableBlocks": 0,
+    "anomalies": []
+  },
+  "expressionSimulation": {
+    "stackUnderflows": 0,
+    "stackUnknownEffects": 0,
+    "residualValues": 0,
+    "stackMergeConflicts": 0
+  },
+  "sourceLineRange": [
+    12,
+    305
+  ],
+  "startupOrder": 700,
+  "dependencies": [
+    {
+      "to": "src_jsc/Scene/SceneMgr.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/SceneMgr.js",
+      "line": "27"
+    },
+    {
+      "to": "src_jsc/Scene/TeamBuild/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/TeamBuild/headers.js",
+      "line": "29"
+    },
+    {
+      "to": "src_jsc/Scene/Skill/SkillScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Skill/SkillScene.js",
+      "line": "31"
+    },
+    {
+      "to": "src_jsc/Scene/Buddy/BuddyScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Buddy/BuddyScene.js",
+      "line": "33"
+    },
+    {
+      "to": "src_jsc/Scene/Buddy/BuddyView.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Buddy/BuddyView.js",
+      "line": "35"
+    },
+    {
+      "to": "src_jsc/Scene/UnionWar/UnionWarBattleScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/UnionWar/UnionWarBattleScene.js",
+      "line": "37"
+    },
+    {
+      "to": "src_jsc/Scene/UnionWar/UnionWarChangeFormationScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/UnionWar/UnionWarChangeFormationScene.js",
+      "line": "39"
+    },
+    {
+      "to": "src_jsc/Scene/UnionWar/UnionWarFightScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/UnionWar/UnionWarFightScene.js",
+      "line": "41"
+    },
+    {
+      "to": "src_jsc/Scene/Gems/GemsScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Gems/GemsScene.js",
+      "line": "43"
+    },
+    {
+      "to": "src_jsc/Scene/Goddess/GoddessMainScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Goddess/GoddessMainScene.js",
+      "line": "45"
+    },
+    {
+      "to": "src_jsc/Scene/HulaoBattle/HulaoBattleMainScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/HulaoBattle/HulaoBattleMainScene.js",
+      "line": "47"
+    },
+    {
+      "to": "src_jsc/Scene/Party/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Party/headers.js",
+      "line": "49"
+    },
+    {
+      "to": "src_jsc/Scene/Debug/DebugScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Debug/DebugScene.js",
+      "line": "79"
+    },
+    {
+      "to": "src_jsc/Scene/Social/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Social/headers.js",
+      "line": "93"
+    },
+    {
+      "to": "src_jsc/Scene/Mail/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Mail/headers.js",
+      "line": "107"
+    },
+    {
+      "to": "src_jsc/Scene/Login/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Login/headers.js",
+      "line": "121"
+    },
+    {
+      "to": "src_jsc/Scene/Ladder/LadderScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Ladder/LadderScene.js",
+      "line": "136"
+    },
+    {
+      "to": "src_jsc/Scene/Ladder/LadderGiftView.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Ladder/LadderGiftView.js",
+      "line": "138"
+    },
+    {
+      "to": "src_jsc/Scene/Ladder/LadderGiftView_Honor.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Ladder/LadderGiftView_Honor.js",
+      "line": "140"
+    },
+    {
+      "to": "src_jsc/Scene/Ladder/LadderView.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Ladder/LadderView.js",
+      "line": "142"
+    },
+    {
+      "to": "src_jsc/Scene/Ladder/LadderCardShow.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Ladder/LadderCardShow.js",
+      "line": "144"
+    },
+    {
+      "to": "src_jsc/Scene/Ladder/LadderTenFightResultDialog.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Ladder/LadderTenFightResultDialog.js",
+      "line": "146"
+    },
+    {
+      "to": "src_jsc/Scene/Ladder/LadderChartScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Ladder/LadderChartScene.js",
+      "line": "163"
+    },
+    {
+      "to": "src_jsc/Scene/Ladder/LadderChartView.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Ladder/LadderChartView.js",
+      "line": "165"
+    },
+    {
+      "to": "src_jsc/Scene/GeneralSelect/GeneralSelectScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/GeneralSelect/GeneralSelectScene.js",
+      "line": "181"
+    },
+    {
+      "to": "src_jsc/Scene/Achievement/AchievementScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Achievement/AchievementScene.js",
+      "line": "195"
+    },
+    {
+      "to": "src_jsc/Scene/Worship/WorshipScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Worship/WorshipScene.js",
+      "line": "209"
+    },
+    {
+      "to": "src_jsc/Scene/Bag/BagScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Bag/BagScene.js",
+      "line": "223"
+    },
+    {
+      "to": "src_jsc/Scene/Main/MainMenuScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Main/MainMenuScene.js",
+      "line": "237"
+    },
+    {
+      "to": "src_jsc/Scene/Party/WishingScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Party/WishingScene.js",
+      "line": "251"
+    },
+    {
+      "to": "src_jsc/Scene/Chaos/ChaosScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Chaos/ChaosScene.js",
+      "line": "266"
+    },
+    {
+      "to": "src_jsc/Scene/Chaos/ChaosFight.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Chaos/ChaosFight.js",
+      "line": "268"
+    },
+    {
+      "to": "src_jsc/Scene/Chaos/ChaosHomeView.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Chaos/ChaosHomeView.js",
+      "line": "270"
+    },
+    {
+      "to": "src_jsc/Scene/Chaos/ChaosFightScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Chaos/ChaosFightScene.js",
+      "line": "287"
+    },
+    {
+      "to": "src_jsc/Scene/Combat/CombatScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Combat/CombatScene.js",
+      "line": "304"
+    },
+    {
+      "to": "src_jsc/Scene/Combat/CombatUpgradeScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Combat/CombatUpgradeScene.js",
+      "line": "306"
+    },
+    {
+      "to": "src_jsc/Scene/Combat/CombatCardView.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Combat/CombatCardView.js",
+      "line": "308"
+    },
+    {
+      "to": "src_jsc/Scene/Develop/DevelopScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Develop/DevelopScene.js",
+      "line": "325"
+    },
+    {
+      "to": "src_jsc/Scene/Develop/AlchemyView.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Develop/AlchemyView.js",
+      "line": "327"
+    },
+    {
+      "to": "src_jsc/Scene/Store/StoreScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Store/StoreScene.js",
+      "line": "344"
+    },
+    {
+      "to": "src_jsc/Scene/Store/ToastView.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Store/ToastView.js",
+      "line": "346"
+    },
+    {
+      "to": "src_jsc/Scene/FightChapter/FightChapters.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/FightChapter/FightChapters.js",
+      "line": "363"
+    },
+    {
+      "to": "src_jsc/Scene/FightChapter/DungeonView.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/FightChapter/DungeonView.js",
+      "line": "365"
+    },
+    {
+      "to": "src_jsc/Scene/Aga/AgaScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Aga/AgaScene.js",
+      "line": "382"
+    },
+    {
+      "to": "src_jsc/Scene/Awake/AwakeBoxScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Awake/AwakeBoxScene.js",
+      "line": "399"
+    },
+    {
+      "to": "src_jsc/Scene/Awake/AwakeBoxView.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Awake/AwakeBoxView.js",
+      "line": "401"
+    },
+    {
+      "to": "src_jsc/Scene/Awake/AwakeScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Awake/AwakeScene.js",
+      "line": "418"
+    },
+    {
+      "to": "src_jsc/Scene/Copy/BossCell.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Copy/BossCell.js",
+      "line": "435"
+    },
+    {
+      "to": "src_jsc/Scene/Copy/CopyScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Copy/CopyScene.js",
+      "line": "437"
+    },
+    {
+      "to": "src_jsc/Scene/Copy/PlantCopyScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Copy/PlantCopyScene.js",
+      "line": "456"
+    },
+    {
+      "to": "src_jsc/Scene/Copy/MemorialCopyScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Copy/MemorialCopyScene.js",
+      "line": "475"
+    },
+    {
+      "to": "src_jsc/Scene/Copy/LabourlCopyScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Copy/LabourlCopyScene.js",
+      "line": "494"
+    },
+    {
+      "to": "src_jsc/Scene/Copy/DuanWuCopyScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Copy/DuanWuCopyScene.js",
+      "line": "513"
+    },
+    {
+      "to": "src_jsc/Scene/Copy/PublicCopyScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Copy/PublicCopyScene.js",
+      "line": "532"
+    },
+    {
+      "to": "src_jsc/Scene/Training/GeneralTraningScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Training/GeneralTraningScene.js",
+      "line": "549"
+    },
+    {
+      "to": "src_jsc/Scene/Equ/EquipmentScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Equ/EquipmentScene.js",
+      "line": "566"
+    },
+    {
+      "to": "src_jsc/Scene/Setting/SettingScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Setting/SettingScene.js",
+      "line": "583"
+    },
+    {
+      "to": "src_jsc/Scene/Setting/ContactGMScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Setting/ContactGMScene.js",
+      "line": "585"
+    },
+    {
+      "to": "src_jsc/Scene/Fight/headers.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Fight/headers.js",
+      "line": "615"
+    },
+    {
+      "to": "src_jsc/Scene/SubMenu/MenuMenuScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/SubMenu/MenuMenuScene.js",
+      "line": "643"
+    },
+    {
+      "to": "src_jsc/Scene/SubMenu/ChallengeMenuScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/SubMenu/ChallengeMenuScene.js",
+      "line": "657"
+    },
+    {
+      "to": "src_jsc/Scene/SubMenu/GeneralMenuScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/SubMenu/GeneralMenuScene.js",
+      "line": "671"
+    },
+    {
+      "to": "src_jsc/Scene/SubMenu/PartyMenuScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/SubMenu/PartyMenuScene.js",
+      "line": "686"
+    },
+    {
+      "to": "src_jsc/Scene/Climb/ClimbLadderScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Climb/ClimbLadderScene.js",
+      "line": "703"
+    },
+    {
+      "to": "src_jsc/Scene/Climb/StartBattleScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Climb/StartBattleScene.js",
+      "line": "705"
+    },
+    {
+      "to": "src_jsc/Scene/Climb/ClimbLadderRankListScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Climb/ClimbLadderRankListScene.js",
+      "line": "722"
+    },
+    {
+      "to": "src_jsc/Scene/Rank/RankScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Rank/RankScene.js",
+      "line": "739"
+    },
+    {
+      "to": "src_jsc/Scene/NewPlayer/NewPlayerScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/NewPlayer/NewPlayerScene.js",
+      "line": "755"
+    },
+    {
+      "to": "src_jsc/Scene/InterService/InterServiceRegistrationScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/InterService/InterServiceRegistrationScene.js",
+      "line": "770"
+    },
+    {
+      "to": "src_jsc/Scene/InterService/InterServiceFightScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/InterService/InterServiceFightScene.js",
+      "line": "772"
+    },
+    {
+      "to": "src_jsc/Scene/InterService/PopularityRewardScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/InterService/PopularityRewardScene.js",
+      "line": "774"
+    },
+    {
+      "to": "src_jsc/Scene/InterService/InterServiceWorshipScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/InterService/InterServiceWorshipScene.js",
+      "line": "776"
+    },
+    {
+      "to": "src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/MiracleWeapons/SelectMiracleWeaponsScene.js",
+      "line": "793"
+    },
+    {
+      "to": "src_jsc/Scene/MiracleWeapons/MiracleWeaponScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/MiracleWeapons/MiracleWeaponScene.js",
+      "line": "795"
+    },
+    {
+      "to": "src_jsc/Scene/DecisiveBattle/DecisiveBattleMainScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/DecisiveBattle/DecisiveBattleMainScene.js",
+      "line": "812"
+    },
+    {
+      "to": "src_jsc/Scene/DecisiveBattle/SupportAwardScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/DecisiveBattle/SupportAwardScene.js",
+      "line": "814"
+    },
+    {
+      "to": "src_jsc/Scene/DecisiveBattle/DecisiveBattlePreviewScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/DecisiveBattle/DecisiveBattlePreviewScene.js",
+      "line": "816"
+    },
+    {
+      "to": "src_jsc/Scene/Meridians/MeridiansMainScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Meridians/MeridiansMainScene.js",
+      "line": "833"
+    },
+    {
+      "to": "src_jsc/Scene/Meridians/PracticeMeridiansMainScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Meridians/PracticeMeridiansMainScene.js",
+      "line": "850"
+    },
+    {
+      "to": "src_jsc/Scene/Beauty/BeautyCell.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Beauty/BeautyCell.js",
+      "line": "867"
+    },
+    {
+      "to": "src_jsc/Scene/Beauty/BeautyScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/Beauty/BeautyScene.js",
+      "line": "869"
+    },
+    {
+      "to": "src_jsc/Scene/SkillRefining/SkillRefiningScene.jsc",
+      "scope": "top-level",
+      "function": "",
+      "literal": "Scene/SkillRefining/SkillRefiningScene.js",
+      "line": "886"
+    }
+  ],
+  "manualReviewRecommended": false
+}

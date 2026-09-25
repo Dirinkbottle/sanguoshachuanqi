@@ -1,0 +1,430 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=43 object[0]
+;; FUNCTION-MAP kind=lambda offset=53 object[1]
+;; FUNCTION-MAP kind=lambda offset=63 object[2]
+;; FUNCTION-MAP kind=lambda offset=73 object[3]
+;; FUNCTION-MAP kind=lambda offset=83 object[4]
+;; FUNCTION-MAP kind=lambda offset=119 object[5]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   4  name "xs"
+00005:   4  getprop "Scene"
+00010:   4  name "cc"
+00015:   4  getprop "Scene"
+00020:   4  dup
+00021:   4  callprop "extend"
+00026:   4  swap
+00027:   4  notearg
+00028:   4  newinit 1
+00033:   5  string "xs.Scene.SelectMiracleWeaponsScene"
+00038:   5  initprop "name"
+00043:   6  lambda (function () {
+    [sourceless code]
+})
+00048:   6  initprop "ctor"
+00053:  10  lambda (function () {
+    [sourceless code]
+})
+00058:  10  initprop "init"
+00063:  43  lambda (function () {
+    [sourceless code]
+})
+00068:  43  initprop "onEnter"
+00073:  46  lambda (function () {
+    [sourceless code]
+})
+00078:  46  initprop "onExit"
+00083:  49  lambda (function () {
+    [sourceless code]
+})
+00088:  49  initprop "setBaseTouchPriority"
+00093:  49  endinit
+00094:  49  notearg
+00095:  49  call 1
+00098:  49  setprop "SelectMiracleWeaponsScene"
+00103:  49  popv
+00104:  56  name "xs"
+00109:  56  getprop "Scene"
+00114:  56  getprop "SelectMiracleWeaponsScene"
+00119:  56  lambda (function () {
+    [sourceless code]
+})
+00124:  56  setprop "create"
+00129:  56  popv
+00130:  65  name "xs"
+00135:  65  getprop "Scene"
+00140:  65  getprop "Mgr"
+00145:  65  dup
+00146:  65  callprop "registerScene"
+00151:  65  swap
+00152:  65  notearg
+00153:  65  string "SelectMiracleWeaponsScene"
+00158:  65  notearg
+00159:  65  newinit 1
+00164:  66  name "xs"
+00169:  66  getprop "Scene"
+00174:  66  getprop "SelectMiracleWeaponsScene"
+00179:  66  initprop "class"
+00184:  67  name "xs"
+00189:  67  getprop "Constant_SceneType_Challenge"
+00194:  67  initprop "type"
+00199:  68  newarray 1
+00203:  68  string "MiracleWeaponsScene"
+00208:  68  initelem_array 0
+00212:  68  endinit
+00213:  68  initprop "area"
+00218:  68  endinit
+00219:  68  notearg
+00220:  68  call 2
+00223:  68  popv
+00224:  70  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:6 ---
+loc   line  op
+----- ----  --
+main:
+00000:   7  this
+00001:   7  dup
+00002:   7  callprop "_super"
+00007:   7  swap
+00008:   7  notearg
+00009:   7  call 0
+00012:   7  pop
+00013:   8  name "cc"
+00018:   8  dup
+00019:   8  callprop "associateWithNative"
+00024:   8  swap
+00025:   8  notearg
+00026:   8  this
+00027:   8  notearg
+00028:   8  name "cc"
+00033:   8  getprop "Scene"
+00038:   8  notearg
+00039:   8  call 2
+00042:   8  pop
+00043:   8  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:6 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] selectLayer
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  15  this
+00021:  15  null
+00022:  15  setprop "m_mainMenu"
+00027:  15  pop
+00028:  18  name "xs"
+00033:  18  getprop "Tools"
+00038:  18  getprop "UI"
+00043:  18  dup
+00044:  18  callprop "addCommonBg"
+00049:  18  swap
+00050:  18  notearg
+00051:  18  this
+00052:  18  notearg
+00053:  18  true
+00054:  18  notearg
+00055:  18  true
+00056:  18  notearg
+00057:  18  call 3
+00060:  18  pop
+00061:  19  this
+00062:  19  name "xs"
+00067:  19  getprop "Factorys"
+00072:  19  getprop "Sprite"
+00077:  19  dup
+00078:  19  callprop "create"
+00083:  19  swap
+00084:  19  notearg
+00085:  19  string "MiracleWeapons_beijing"
+00090:  19  notearg
+00091:  19  string "MiracleWeaponsScene"
+00096:  19  notearg
+00097:  19  call 2
+00100:  19  setprop "m_GeneralBg"
+00105:  19  pop
+00106:  20  name "xs"
+00111:  20  getprop "Tools"
+00116:  20  getprop "UI"
+00121:  20  dup
+00122:  20  callprop "addSpriteAsBg"
+00127:  20  swap
+00128:  20  notearg
+00129:  20  this
+00130:  20  notearg
+00131:  20  this
+00132:  20  getprop "m_GeneralBg"
+00137:  20  notearg
+00138:  20  call 2
+00141:  20  pop
+00142:  24  this
+00143:  24  name "xs"
+00148:  24  getprop "Tools"
+00153:  24  getprop "UI"
+00158:  24  dup
+00159:  24  callprop "addShortcutBoard"
+00164:  24  swap
+00165:  24  notearg
+00166:  24  this
+00167:  24  notearg
+00168:  24  true
+00169:  24  notearg
+00170:  24  name "xs"
+00175:  24  getprop "Cfg"
+00180:  24  getprop "Scene"
+00185:  24  getprop "SkillScene"
+00190:  24  getprop "mainmenu"
+00195:  24  notearg
+00196:  24  call 3
+00199:  24  setprop "m_mainMenu"
+00204:  24  pop
+00205:  27  this
+00206:  27  name "xs"
+00211:  27  getprop "Views"
+00216:  27  getprop "PlayerInfoBannerSimpleView"
+00221:  27  dup
+00222:  27  callprop "create"
+00227:  27  swap
+00228:  27  notearg
+00229:  27  call 0
+00232:  27  setprop "m_infoBar"
+00237:  27  pop
+00238:  28  this
+00239:  28  getprop "m_infoBar"
+00244:  28  dup
+00245:  28  callprop "setAnchorPoint"
+00250:  28  swap
+00251:  28  notearg
+00252:  28  name "cc"
+00257:  28  dup
+00258:  28  callprop "p"
+00263:  28  swap
+00264:  28  notearg
+00265:  28  zero
+00266:  28  notearg
+00267:  28  one
+00268:  28  notearg
+00269:  28  call 2
+00272:  28  notearg
+00273:  28  call 1
+00276:  28  pop
+00277:  29  name "xs"
+00282:  29  getprop "Utils"
+00287:  29  getprop "Node"
+00292:  29  dup
+00293:  29  callprop "attachNodes"
+00298:  29  swap
+00299:  29  notearg
+00300:  29  this
+00301:  29  notearg
+00302:  29  this
+00303:  29  getprop "m_infoBar"
+00308:  29  notearg
+00309:  29  newinit 1
+00314:  30  string "lt"
+00319:  30  initprop "desc"
+00324:  31  true
+00325:  31  initprop "sc"
+00330:  31  endinit
+00331:  31  notearg
+00332:  31  call 3
+00335:  31  pop
+00336:  34  name "xs"
+00341:  34  getprop "Views"
+00346:  34  getprop "SelectMiracleWeaponLayer"
+00351:  34  dup
+00352:  34  callprop "create"
+00357:  34  swap
+00358:  34  notearg
+00359:  34  getarg 0
+00362:  34  notearg
+00363:  34  call 1
+00366:  34  setlocal 0
+00369:  34  pop
+00370:  35  getlocal 0
+00373:  35  dup
+00374:  35  callprop "setAnchorPoint"
+00379:  35  swap
+00380:  35  notearg
+00381:  35  name "cc"
+00386:  35  dup
+00387:  35  callprop "p"
+00392:  35  swap
+00393:  35  notearg
+00394:  35  zero
+00395:  35  notearg
+00396:  35  zero
+00397:  35  notearg
+00398:  35  call 2
+00401:  35  notearg
+00402:  35  call 1
+00405:  35  pop
+00406:  36  name "xs"
+00411:  36  getprop "Utils"
+00416:  36  getprop "Node"
+00421:  36  dup
+00422:  36  callprop "attachNodes"
+00427:  36  swap
+00428:  36  notearg
+00429:  36  this
+00430:  36  notearg
+00431:  36  getlocal 0
+00434:  36  notearg
+00435:  36  newinit 1
+00440:  37  string "lb"
+00445:  37  initprop "desc"
+00450:  38  true
+00451:  38  initprop "sc"
+00456:  38  endinit
+00457:  38  notearg
+00458:  38  call 3
+00461:  38  pop
+00462:  41  true
+00463:  41  return
+00464:  41  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:10 ---
+;; function object[2] onEnter
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:43 ---
+loc   line  op
+----- ----  --
+main:
+00000:  44  this
+00001:  44  dup
+00002:  44  callprop "_super"
+00007:  44  swap
+00008:  44  notearg
+00009:  44  call 0
+00012:  44  pop
+00013:  44  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:43 ---
+;; function object[3] onExit
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:46 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  this
+00001:  47  dup
+00002:  47  callprop "_super"
+00007:  47  swap
+00008:  47  notearg
+00009:  47  call 0
+00012:  47  pop
+00013:  47  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:46 ---
+;; function object[4] setBaseTouchPriority
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:49 ---
+loc   line  op
+----- ----  --
+main:
+00000:  50  this
+00001:  50  getarg 0
+00004:  50  setprop "m_baseTouchPriority"
+00009:  50  pop
+00010:  51  this
+00011:  51  dup
+00012:  51  callprop "setTouchPriority"
+00017:  51  swap
+00018:  51  notearg
+00019:  51  this
+00020:  51  getprop "m_baseTouchPriority"
+00025:  51  notearg
+00026:  51  call 1
+00029:  51  pop
+00030:  52  this
+00031:  52  getprop "m_mainMenu"
+00036:  52  dup
+00037:  52  callprop "setBaseTouchPriority"
+00042:  52  swap
+00043:  52  notearg
+00044:  52  this
+00045:  52  getprop "m_baseTouchPriority"
+00050:  52  one
+00051:  52  sub
+00052:  52  notearg
+00053:  52  call 1
+00056:  52  pop
+00057:  52  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:49 ---
+;; function object[5] create
+;; function metadata object[5] nargs=1 bindings=2
+;; arg[0] param
+;; local[0] sc
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:56 ---
+loc   line  op
+----- ----  --
+main:
+00000:  57  name "xs"
+00005:  57  getprop "Scene"
+00010:  57  getprop "SelectMiracleWeaponsScene"
+00015:  57  undefined
+00016:  57  notearg
+00017:  57  new 0
+00020:  57  setlocal 0
+00023:  57  pop
+00024:  58  getlocal 0
+00027:  58  and 51 (+24)
+00032:  58  pop
+00033:  58  getlocal 0
+00036:  58  dup
+00037:  58  callprop "init"
+00042:  58  swap
+00043:  58  notearg
+00044:  58  getarg 0
+00047:  58  notearg
+00048:  58  call 1
+00051:  58  ifeq 60 (+9)
+00056:  59  getlocal 0
+00059:  59  return
+00060:  61  name "xs"
+00065:  61  dup
+00066:  61  callprop "assert"
+00071:  61  swap
+00072:  61  notearg
+00073:  61  false
+00074:  61  notearg
+00075:  61  string "xs.Scene.SelectMiracleWeaponsScene.create error!"
+00080:  61  notearg
+00081:  61  call 2
+00084:  61  pop
+00085:  62  null
+00086:  62  return
+00087:  62  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Scene/MiracleWeapons/SelectMiracleWeaponsScene.js:56 ---

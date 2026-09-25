@@ -1,0 +1,804 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=265 object[0]
+;; FUNCTION-MAP kind=lambda offset=275 object[1]
+;; FUNCTION-MAP kind=lambda offset=285 object[2]
+;; FUNCTION-MAP kind=lambda offset=295 object[3]
+;; FUNCTION-MAP kind=lambda offset=305 object[4]
+;; FUNCTION-MAP kind=lambda offset=315 object[5]
+;; FUNCTION-MAP kind=lambda offset=361 object[6]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   2  name "xs"
+00005:   2  getprop "Views"
+00010:   2  getprop "Table"
+00015:   2  getprop "Cell"
+00020:   2  name "xs"
+00025:   2  getprop "Views"
+00030:   2  getprop "Table"
+00035:   2  getprop "Cell"
+00040:   2  getprop "BaseTableViewExtraCell"
+00045:   2  dup
+00046:   2  callprop "extend"
+00051:   2  swap
+00052:   2  notearg
+00053:   2  newinit 1
+00058:   3  string "UnionSearchTableViewCell"
+00063:   3  initprop "name"
+00068:   4  newarray 4
+00072:   5  newinit 1
+00077:   5  string "m_nameLab"
+00082:   5  initprop "name"
+00087:   5  one
+00088:   5  initprop "tag"
+00093:   5  string "ls"
+00098:   5  initprop "type"
+00103:   5  string "LS_yuanfenInf2"
+00108:   5  initprop "id"
+00113:   5  endinit
+00114:   5  initelem_array 0
+00118:   6  newinit 1
+00123:   6  string "m_presidentName"
+00128:   6  initprop "name"
+00133:   6  int8 5
+00135:   6  initprop "tag"
+00140:   6  string "ls"
+00145:   6  initprop "type"
+00150:   6  string "LS_liebiaoInf"
+00155:   6  initprop "id"
+00160:   6  endinit
+00161:   6  initelem_array 1
+00165:   7  newinit 1
+00170:   7  string "m_unionLevel"
+00175:   7  initprop "name"
+00180:   7  int8 3
+00182:   7  initprop "tag"
+00187:   7  string "ls"
+00192:   7  initprop "type"
+00197:   7  string "LS_huodong_title"
+00202:   7  initprop "id"
+00207:   7  endinit
+00208:   7  initelem_array 2
+00212:   8  newinit 1
+00217:   8  string "m_unionMemberNum"
+00222:   8  initprop "name"
+00227:   8  int8 4
+00229:   8  initprop "tag"
+00234:   8  string "ls"
+00239:   8  initprop "type"
+00244:   8  string "LS_paihangNomb"
+00249:   8  initprop "id"
+00254:   8  endinit
+00255:   8  initelem_array 3
+00259:   8  endinit
+00260:   8  initprop "ccbCfg"
+00265:  10  lambda (function () {
+    [sourceless code]
+})
+00270:  10  initprop "initWithData"
+00275:  29  lambda (function () {
+    [sourceless code]
+})
+00280:  29  initprop "updateCell"
+00285:  39  lambda (function () {
+    [sourceless code]
+})
+00290:  39  initprop "setJoinBtn"
+00295:  62  lambda (function () {
+    [sourceless code]
+})
+00300:  62  initprop "btnCallback"
+00305:  75  lambda (function () {
+    [sourceless code]
+})
+00310:  75  initprop "updateCellEx"
+00315:  78  lambda (function () {
+    [sourceless code]
+})
+00320:  78  initprop "setBaseTouchPriority"
+00325:  78  endinit
+00326:  78  notearg
+00327:  78  call 1
+00330:  78  setprop "UnionSearchTableViewCell"
+00335:  78  popv
+00336:  83  name "xs"
+00341:  83  getprop "Views"
+00346:  83  getprop "Table"
+00351:  83  getprop "Cell"
+00356:  83  getprop "UnionSearchTableViewCell"
+00361:  83  lambda (function () {
+    [sourceless code]
+})
+00366:  83  setprop "create"
+00371:  83  popv
+00372:  91  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:1 ---
+;; function object[0] initWithData
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  this
+00001:  12  name "cc"
+00006:  12  getprop "BuilderReader"
+00011:  12  dup
+00012:  12  callprop "load"
+00017:  12  swap
+00018:  12  notearg
+00019:  12  string "ccb3/join_guild_01.ccbi"
+00024:  12  notearg
+00025:  12  this
+00026:  12  notearg
+00027:  12  call 2
+00030:  12  setprop "_bgCCBNode"
+00035:  12  pop
+00036:  13  this
+00037:  13  getprop "_bgCCBNode"
+00042:  13  dup
+00043:  13  callprop "setPosition"
+00048:  13  swap
+00049:  13  notearg
+00050:  13  name "cc"
+00055:  13  dup
+00056:  13  callprop "p"
+00061:  13  swap
+00062:  13  notearg
+00063:  13  int8 10
+00065:  13  notearg
+00066:  13  zero
+00067:  13  notearg
+00068:  13  call 2
+00071:  13  notearg
+00072:  13  call 1
+00075:  13  pop
+00076:  14  this
+00077:  14  dup
+00078:  14  callprop "addChild"
+00083:  14  swap
+00084:  14  notearg
+00085:  14  this
+00086:  14  getprop "_bgCCBNode"
+00091:  14  notearg
+00092:  14  call 1
+00095:  14  pop
+00096:  17  this
+00097:  17  name "xs"
+00102:  17  getprop "Views"
+00107:  17  getprop "Btn"
+00112:  17  dup
+00113:  17  callprop "createByStyleId"
+00118:  17  swap
+00119:  17  notearg
+00120:  17  string "BS_Btn_longGold"
+00125:  17  notearg
+00126:  17  call 1
+00129:  17  setprop "_joinBtn"
+00134:  17  pop
+00135:  18  bindname "pos"
+00140:  18  this
+00141:  18  getprop "_bgCCBNode"
+00146:  18  dup
+00147:  18  callprop "getChildByTag"
+00152:  18  swap
+00153:  18  notearg
+00154:  18  int8 6
+00156:  18  notearg
+00157:  18  call 1
+00160:  18  dup
+00161:  18  callprop "getPosition"
+00166:  18  swap
+00167:  18  notearg
+00168:  18  call 0
+00171:  18  setname "pos"
+00176:  18  pop
+00177:  19  this
+00178:  19  getprop "_joinBtn"
+00183:  19  dup
+00184:  19  callprop "setPosition"
+00189:  19  swap
+00190:  19  notearg
+00191:  19  name "pos"
+00196:  19  notearg
+00197:  19  call 1
+00200:  19  pop
+00201:  20  this
+00202:  20  getprop "_bgCCBNode"
+00207:  20  dup
+00208:  20  callprop "addChild"
+00213:  20  swap
+00214:  20  notearg
+00215:  20  this
+00216:  20  getprop "_joinBtn"
+00221:  20  notearg
+00222:  20  call 1
+00225:  20  pop
+00226:  21  this
+00227:  21  dup
+00228:  21  callprop "setJoinBtn"
+00233:  21  swap
+00234:  21  notearg
+00235:  21  getarg 0
+00238:  21  notearg
+00239:  21  call 1
+00242:  21  pop
+00243:  22  this
+00244:  22  getprop "_joinBtn"
+00249:  22  dup
+00250:  22  callprop "setEnabled"
+00255:  22  swap
+00256:  22  notearg
+00257:  22  false
+00258:  22  notearg
+00259:  22  call 1
+00262:  22  pop
+00263:  24  name "xs"
+00268:  24  getprop "Utils"
+00273:  24  getprop "UI"
+00278:  24  dup
+00279:  24  callprop "replaceCcbByCfg"
+00284:  24  swap
+00285:  24  notearg
+00286:  24  this
+00287:  24  getprop "_bgCCBNode"
+00292:  24  notearg
+00293:  24  this
+00294:  24  getprop "ccbCfg"
+00299:  24  notearg
+00300:  24  this
+00301:  24  notearg
+00302:  24  call 3
+00305:  24  pop
+00306:  26  true
+00307:  26  return
+00308:  26  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:10 ---
+;; function object[1] updateCell
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:29 ---
+loc   line  op
+----- ----  --
+main:
+00000:  30  name "xs"
+00005:  30  dup
+00006:  30  callprop "log"
+00011:  30  swap
+00012:  30  notearg
+00013:  30  string "UnionSearchTableViewCell updateCell"
+00018:  30  notearg
+00019:  30  call 1
+00022:  30  pop
+00023:  31  name "xs"
+00028:  31  dup
+00029:  31  callprop "dump"
+00034:  31  swap
+00035:  31  notearg
+00036:  31  string "data "
+00041:  31  notearg
+00042:  31  getarg 0
+00045:  31  notearg
+00046:  31  call 2
+00049:  31  pop
+00050:  32  this
+00051:  32  getarg 0
+00054:  32  setprop "_data"
+00059:  32  pop
+00060:  33  this
+00061:  33  getprop "m_nameLab"
+00066:  33  dup
+00067:  33  callprop "setString"
+00072:  33  swap
+00073:  33  notearg
+00074:  33  getarg 0
+00077:  33  getprop "union_name"
+00082:  33  notearg
+00083:  33  call 1
+00086:  33  pop
+00087:  34  this
+00088:  34  getprop "m_unionLevel"
+00093:  34  dup
+00094:  34  callprop "setString"
+00099:  34  swap
+00100:  34  notearg
+00101:  34  getarg 0
+00104:  34  getprop "union_level"
+00109:  34  notearg
+00110:  34  call 1
+00113:  34  pop
+00114:  35  this
+00115:  35  getprop "m_unionMemberNum"
+00120:  35  dup
+00121:  35  callprop "setString"
+00126:  35  swap
+00127:  35  notearg
+00128:  35  getarg 0
+00131:  35  getprop "user_num"
+00136:  35  string "/"
+00141:  35  add
+00142:  35  getarg 0
+00145:  35  getprop "user_limit"
+00150:  35  add
+00151:  35  notearg
+00152:  35  call 1
+00155:  35  pop
+00156:  36  this
+00157:  36  getprop "m_presidentName"
+00162:  36  dup
+00163:  36  callprop "setString"
+00168:  36  swap
+00169:  36  notearg
+00170:  36  getarg 0
+00173:  36  getprop "union_sign"
+00178:  36  notearg
+00179:  36  call 1
+00182:  36  pop
+00183:  37  this
+00184:  37  dup
+00185:  37  callprop "setJoinBtn"
+00190:  37  swap
+00191:  37  notearg
+00192:  37  getarg 0
+00195:  37  notearg
+00196:  37  call 1
+00199:  37  pop
+00200:  37  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:29 ---
+;; function object[2] setJoinBtn
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=120 object[0]
+;; FUNCTION-MAP kind=lambda offset=229 object[1]
+;; FUNCTION-MAP kind=lambda offset=378 object[2]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  40  getarg 0
+00003:  40  getprop "apply_state"
+00008:  40  one
+00009:  40  eq
+00010:  40  ifeq 148 (+138)
+00015:  42  this
+00016:  42  getprop "_joinBtn"
+00021:  42  dup
+00022:  42  callprop "setString"
+00027:  42  swap
+00028:  42  notearg
+00029:  42  name "xs"
+00034:  42  getprop "Tools"
+00039:  42  getprop "String"
+00044:  42  dup
+00045:  42  callprop "createString"
+00050:  42  swap
+00051:  42  notearg
+00052:  42  string "auto_name_515"
+00057:  42  notearg
+00058:  42  call 1
+00061:  42  notearg
+00062:  42  call 1
+00065:  42  pop
+00066:  43  this
+00067:  43  getprop "_joinBtn"
+00072:  43  dup
+00073:  43  callprop "setEventOnDisable"
+00078:  43  swap
+00079:  43  notearg
+00080:  43  true
+00081:  43  notearg
+00082:  43  call 1
+00085:  43  pop
+00086:  44  this
+00087:  44  getprop "_joinBtn"
+00092:  44  dup
+00093:  44  callprop "setEnabled"
+00098:  44  swap
+00099:  44  notearg
+00100:  44  true
+00101:  44  notearg
+00102:  44  call 1
+00105:  44  pop
+00106:  45  this
+00107:  45  getprop "_joinBtn"
+00112:  45  dup
+00113:  45  callprop "setOnClickCallBack"
+00118:  45  swap
+00119:  45  notearg
+00120:  45  lambda (function () {
+    [sourceless code]
+})
+00125:  45  dup
+00126:  45  callprop "bind"
+00131:  45  swap
+00132:  45  notearg
+00133:  47  this
+00134:  47  notearg
+00135:  47  call 1
+00138:  47  notearg
+00139:  47  call 1
+00142:  47  pop
+00143:  47  goto 441 (+298)
+00148:  48  getarg 0
+00151:  48  getprop "apply_state"
+00156:  48  int8 2
+00158:  48  eq
+00159:  48  ifeq 297 (+138)
+00164:  50  this
+00165:  50  getprop "_joinBtn"
+00170:  50  dup
+00171:  50  callprop "setString"
+00176:  50  swap
+00177:  50  notearg
+00178:  50  name "xs"
+00183:  50  getprop "Tools"
+00188:  50  getprop "String"
+00193:  50  dup
+00194:  50  callprop "createString"
+00199:  50  swap
+00200:  50  notearg
+00201:  50  string "auto_name_516"
+00206:  50  notearg
+00207:  50  call 1
+00210:  50  notearg
+00211:  50  call 1
+00214:  50  pop
+00215:  51  this
+00216:  51  getprop "_joinBtn"
+00221:  51  dup
+00222:  51  callprop "setOnClickCallBack"
+00227:  51  swap
+00228:  51  notearg
+00229:  51  lambda (function () {
+    [sourceless code]
+})
+00234:  51  dup
+00235:  51  callprop "bind"
+00240:  51  swap
+00241:  51  notearg
+00242:  51  this
+00243:  51  notearg
+00244:  51  call 1
+00247:  51  notearg
+00248:  51  call 1
+00251:  51  pop
+00252:  52  this
+00253:  52  getprop "_joinBtn"
+00258:  52  dup
+00259:  52  callprop "setEventOnDisable"
+00264:  52  swap
+00265:  52  notearg
+00266:  52  false
+00267:  52  notearg
+00268:  52  call 1
+00271:  52  pop
+00272:  53  this
+00273:  53  getprop "_joinBtn"
+00278:  53  dup
+00279:  53  callprop "setEnabled"
+00284:  53  swap
+00285:  53  notearg
+00286:  53  false
+00287:  53  notearg
+00288:  53  call 1
+00291:  53  pop
+00292:  53  goto 441 (+149)
+00297:  54  getarg 0
+00300:  54  getprop "apply_state"
+00305:  54  int8 3
+00307:  54  eq
+00308:  54  ifeq 441 (+133)
+00313:  56  this
+00314:  56  getprop "_joinBtn"
+00319:  56  dup
+00320:  56  callprop "setString"
+00325:  56  swap
+00326:  56  notearg
+00327:  56  name "xs"
+00332:  56  getprop "Tools"
+00337:  56  getprop "String"
+00342:  56  dup
+00343:  56  callprop "createString"
+00348:  56  swap
+00349:  56  notearg
+00350:  56  string "auto_name_517"
+00355:  56  notearg
+00356:  56  call 1
+00359:  56  notearg
+00360:  56  call 1
+00363:  56  pop
+00364:  57  this
+00365:  57  getprop "_joinBtn"
+00370:  57  dup
+00371:  57  callprop "setOnClickCallBack"
+00376:  57  swap
+00377:  57  notearg
+00378:  57  lambda (function () {
+    [sourceless code]
+})
+00383:  57  dup
+00384:  57  callprop "bind"
+00389:  57  swap
+00390:  57  notearg
+00391:  57  this
+00392:  57  notearg
+00393:  57  call 1
+00396:  57  notearg
+00397:  57  call 1
+00400:  57  pop
+00401:  58  this
+00402:  58  getprop "_joinBtn"
+00407:  58  dup
+00408:  58  callprop "setEventOnDisable"
+00413:  58  swap
+00414:  58  notearg
+00415:  58  false
+00416:  58  notearg
+00417:  58  call 1
+00420:  58  pop
+00421:  59  this
+00422:  59  getprop "_joinBtn"
+00427:  59  dup
+00428:  59  callprop "setEnabled"
+00433:  59  swap
+00434:  59  notearg
+00435:  59  false
+00436:  59  notearg
+00437:  59  call 1
+00440:  59  pop
+00441:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:39 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  46  this
+00001:  46  dup
+00002:  46  callprop "btnCallback"
+00007:  46  swap
+00008:  46  notearg
+00009:  46  call 0
+00012:  46  pop
+00013:  46  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:45 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:51 ---
+loc   line  op
+----- ----  --
+main:
+00000:  51  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:51 ---
+;; function object[2] <anonymous>
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:57 ---
+loc   line  op
+----- ----  --
+main:
+00000:  57  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:57 ---
+;; function object[3] btnCallback
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=135 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  64  this
+00001:  64  getprop "parent"
+00006:  64  dup
+00007:  64  callprop "requestApply"
+00012:  64  swap
+00013:  64  notearg
+00014:  64  this
+00015:  64  getprop "_data"
+00020:  64  getprop "union_id"
+00025:  64  notearg
+00026:  64  call 1
+00029:  64  pop
+00030:  65  this
+00031:  65  getprop "_joinBtn"
+00036:  65  dup
+00037:  65  callprop "setString"
+00042:  65  swap
+00043:  65  notearg
+00044:  65  name "xs"
+00049:  65  getprop "Tools"
+00054:  65  getprop "String"
+00059:  65  dup
+00060:  65  callprop "createString"
+00065:  65  swap
+00066:  65  notearg
+00067:  65  string "auto_name_517"
+00072:  65  notearg
+00073:  65  call 1
+00076:  65  notearg
+00077:  65  call 1
+00080:  65  pop
+00081:  66  this
+00082:  66  getprop "_joinBtn"
+00087:  66  dup
+00088:  66  callprop "setTouchEnabled"
+00093:  66  swap
+00094:  66  notearg
+00095:  66  false
+00096:  66  notearg
+00097:  66  call 1
+00100:  66  pop
+00101:  67  this
+00102:  67  getprop "_joinBtn"
+00107:  67  dup
+00108:  67  callprop "setEnabled"
+00113:  67  swap
+00114:  67  notearg
+00115:  67  false
+00116:  67  notearg
+00117:  67  call 1
+00120:  67  pop
+00121:  68  this
+00122:  68  getprop "_joinBtn"
+00127:  68  dup
+00128:  68  callprop "setOnClickCallBack"
+00133:  68  swap
+00134:  68  notearg
+00135:  68  lambda (function () {
+    [sourceless code]
+})
+00140:  68  dup
+00141:  68  callprop "bind"
+00146:  68  swap
+00147:  68  notearg
+00148:  70  this
+00149:  70  notearg
+00150:  70  call 1
+00153:  70  notearg
+00154:  70  call 1
+00157:  70  pop
+00158:  71  this
+00159:  71  getprop "_data"
+00164:  71  int8 3
+00166:  71  setprop "apply_state"
+00171:  71  pop
+00172:  72  name "xs"
+00177:  72  getprop "Tools"
+00182:  72  getprop "Statistic"
+00187:  72  dup
+00188:  72  callprop "UnionApplyEvent"
+00193:  72  swap
+00194:  72  notearg
+00195:  72  call 0
+00198:  72  pop
+00199:  72  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:62 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  68  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:68 ---
+;; function object[4] updateCellEx
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:75 ---
+loc   line  op
+----- ----  --
+main:
+00000:  76  name "xs"
+00005:  76  dup
+00006:  76  callprop "log"
+00011:  76  swap
+00012:  76  notearg
+00013:  76  string "UnionSearchTableViewCell updateCellEx"
+00018:  76  notearg
+00019:  76  call 1
+00022:  76  pop
+00023:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:75 ---
+;; function object[5] setBaseTouchPriority
+;; function metadata object[5] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:78 ---
+loc   line  op
+----- ----  --
+main:
+00000:  79  this
+00001:  79  getarg 0
+00004:  79  setprop "m_baseTouchPriority"
+00009:  79  pop
+00010:  80  this
+00011:  80  getprop "_joinBtn"
+00016:  80  dup
+00017:  80  callprop "setTouchPriority"
+00022:  80  swap
+00023:  80  notearg
+00024:  80  this
+00025:  80  getprop "m_baseTouchPriority"
+00030:  80  one
+00031:  80  sub
+00032:  80  notearg
+00033:  80  call 1
+00036:  80  pop
+00037:  80  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:78 ---
+;; function object[6] create
+;; function metadata object[6] nargs=2 bindings=3
+;; arg[0] data
+;; arg[1] parent
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:83 ---
+loc   line  op
+----- ----  --
+main:
+00000:  84  name "xs"
+00005:  84  getprop "Views"
+00010:  84  getprop "Table"
+00015:  84  getprop "Cell"
+00020:  84  getprop "UnionSearchTableViewCell"
+00025:  84  undefined
+00026:  84  notearg
+00027:  84  new 0
+00030:  84  setlocal 0
+00033:  84  pop
+00034:  85  getlocal 0
+00037:  85  and 61 (+24)
+00042:  85  pop
+00043:  85  getlocal 0
+00046:  85  dup
+00047:  85  callprop "initWithData"
+00052:  85  swap
+00053:  85  notearg
+00054:  85  getarg 0
+00057:  85  notearg
+00058:  85  call 1
+00061:  85  ifeq 82 (+21)
+00066:  86  getlocal 0
+00069:  86  getarg 1
+00072:  86  setprop "parent"
+00077:  86  pop
+00078:  87  getlocal 0
+00081:  87  return
+00082:  89  this
+00083:  89  dup
+00084:  89  callprop "error"
+00089:  89  swap
+00090:  89  notearg
+00091:  89  string "UnionSearchTableViewCell.create:"
+00096:  89  notearg
+00097:  89  call 1
+00100:  89  pop
+00101:  90  null
+00102:  90  return
+00103:  90  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/Cell/UnionSearchTableViewCell.js:83 ---

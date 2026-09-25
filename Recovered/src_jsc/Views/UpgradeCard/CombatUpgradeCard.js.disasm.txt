@@ -1,0 +1,333 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/UpgradeCard/CombatUpgradeCard.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=38 object[0]
+;; FUNCTION-MAP kind=lambda offset=48 object[1]
+;; FUNCTION-MAP kind=lambda offset=58 object[2]
+;; FUNCTION-MAP kind=lambda offset=170 object[3]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/CombatUpgradeCard.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "xs"
+00015:   6  getprop "Views"
+00020:   6  getprop "CardUpdateView"
+00025:   6  dup
+00026:   6  callprop "extend"
+00031:   6  swap
+00032:   6  notearg
+00033:   6  newinit 1
+00038:   7  lambda (function () {
+    [sourceless code]
+})
+00043:   7  initprop "init"
+00048:  26  lambda (function () {
+    [sourceless code]
+})
+00053:  26  initprop "updateInfoBar"
+00058:  38  lambda (function () {
+    [sourceless code]
+})
+00063:  38  initprop "onLevelChange"
+00068:  46  newinit 1
+00073:  47  newinit 1
+00078:  48  newinit 1
+00083:  49  int8 11
+00085:  49  initprop "tag"
+00090:  49  endinit
+00091:  49  initprop "level"
+00096:  51  newinit 1
+00101:  52  int8 12
+00103:  52  initprop "tag"
+00108:  52  endinit
+00109:  52  initprop "icon"
+00114:  54  newinit 1
+00119:  55  int8 13
+00121:  55  initprop "tag"
+00126:  55  endinit
+00127:  55  initprop "plusValue"
+00132:  55  endinit
+00133:  55  initprop "infoBar"
+00138:  55  endinit
+00139:  55  initprop "cfg"
+00144:  55  endinit
+00145:  55  notearg
+00146:  55  call 1
+00149:  55  setprop "CombatUpgradeCard"
+00154:  55  popv
+00155:  61  name "xs"
+00160:  61  getprop "Views"
+00165:  61  getprop "CombatUpgradeCard"
+00170:  61  lambda (function () {
+    [sourceless code]
+})
+00175:  61  setprop "create"
+00180:  61  popv
+00181:  68  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/CombatUpgradeCard.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=1 bindings=1
+;; arg[0] combatModel
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/CombatUpgradeCard.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  dup
+00002:   8  callprop "_super"
+00007:   8  swap
+00008:   8  notearg
+00009:   8  getarg 0
+00012:   8  notearg
+00013:   8  call 1
+00016:   8  not
+00017:   8  ifeq 24 (+7)
+00022:   9  false
+00023:   9  return
+00024:  13  this
+00025:  13  name "xs"
+00030:  13  getprop "ccb_reader"
+00035:  13  dup
+00036:  13  callprop "load"
+00041:  13  swap
+00042:  13  notearg
+00043:  13  string "ccb3/0_7_13_Combat_InfoBar.ccbi"
+00048:  13  notearg
+00049:  13  this
+00050:  13  notearg
+00051:  13  call 2
+00054:  13  setprop "ccbNode_InfoBar"
+00059:  13  pop
+00060:  16  name "xs"
+00065:  16  getprop "Utils"
+00070:  16  getprop "Node"
+00075:  16  dup
+00076:  16  callprop "attachNodes"
+00081:  16  swap
+00082:  16  notearg
+00083:  16  this
+00084:  16  notearg
+00085:  16  this
+00086:  16  getprop "ccbNode_InfoBar"
+00091:  16  notearg
+00092:  16  newinit 1
+00097:  16  string "lb"
+00102:  16  initprop "desc"
+00107:  16  name "cc"
+00112:  16  dup
+00113:  16  callprop "p"
+00118:  16  swap
+00119:  16  notearg
+00120:  16  int8 20
+00122:  16  notearg
+00123:  16  int8 40
+00125:  16  notearg
+00126:  16  call 2
+00129:  16  initprop "offset"
+00134:  16  false
+00135:  16  initprop "sc"
+00140:  16  endinit
+00141:  16  notearg
+00142:  16  call 3
+00145:  16  pop
+00146:  18  this
+00147:  18  dup
+00148:  18  callprop "updateInfoBar"
+00153:  18  swap
+00154:  18  notearg
+00155:  18  getarg 0
+00158:  18  notearg
+00159:  18  call 1
+00162:  18  pop
+00163:  20  this
+00164:  20  dup
+00165:  20  callprop "setLevelChangeCallBack"
+00170:  20  swap
+00171:  20  notearg
+00172:  20  this
+00173:  20  getprop "onLevelChange"
+00178:  20  dup
+00179:  20  callprop "bind"
+00184:  20  swap
+00185:  20  notearg
+00186:  20  this
+00187:  20  notearg
+00188:  20  call 1
+00191:  20  notearg
+00192:  20  call 1
+00195:  20  pop
+00196:  22  true
+00197:  22  return
+00198:  22  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/CombatUpgradeCard.js:7 ---
+;; function object[1] updateInfoBar
+;; function metadata object[1] nargs=2 bindings=3
+;; arg[0] combatModel
+;; arg[1] combatLevel
+;; local[0] combatIcon
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/CombatUpgradeCard.js:26 ---
+loc   line  op
+----- ----  --
+main:
+00000:  27  this
+00001:  27  getarg 0
+00004:  27  setprop "model"
+00009:  27  pop
+00010:  28  this
+00011:  28  dup
+00012:  28  callprop "onLevelChange"
+00017:  28  swap
+00018:  28  notearg
+00019:  28  getarg 0
+00022:  28  dup
+00023:  28  callprop "getLevel"
+00028:  28  swap
+00029:  28  notearg
+00030:  28  call 0
+00033:  28  notearg
+00034:  28  call 1
+00037:  28  pop
+00038:  30  getarg 0
+00041:  30  dup
+00042:  30  callprop "createTypeIcon"
+00047:  30  swap
+00048:  30  notearg
+00049:  30  call 0
+00052:  30  setlocal 0
+00055:  30  pop
+00056:  31  getlocal 0
+00059:  31  not
+00060:  31  ifeq 67 (+7)
+00065:  32  undefined
+00066:  32  return
+00067:  35  this
+00068:  35  name "xs"
+00073:  35  getprop "Utils"
+00078:  35  dup
+00079:  35  callprop "replaceIcon"
+00084:  35  swap
+00085:  35  notearg
+00086:  35  this
+00087:  35  getprop "ccbNode_InfoBar"
+00092:  35  notearg
+00093:  35  this
+00094:  35  getprop "cfg"
+00099:  35  getprop "infoBar"
+00104:  35  getprop "icon"
+00109:  35  getprop "tag"
+00114:  35  notearg
+00115:  35  getlocal 0
+00118:  35  notearg
+00119:  35  call 3
+00122:  35  setprop "combatIcon"
+00127:  35  pop
+00128:  35  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/CombatUpgradeCard.js:26 ---
+;; function object[2] onLevelChange
+;; function metadata object[2] nargs=1 bindings=1
+;; arg[0] level
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/CombatUpgradeCard.js:38 ---
+loc   line  op
+----- ----  --
+main:
+00000:  39  this
+00001:  39  name "xs"
+00006:  39  getprop "Utils"
+00011:  39  dup
+00012:  39  callprop "setCcbLabel"
+00017:  39  swap
+00018:  39  notearg
+00019:  39  this
+00020:  39  getprop "ccbNode_InfoBar"
+00025:  39  notearg
+00026:  40  this
+00027:  40  getprop "cfg"
+00032:  40  getprop "infoBar"
+00037:  40  getprop "level"
+00042:  40  getprop "tag"
+00047:  40  notearg
+00048:  40  getarg 0
+00051:  40  notearg
+00052:  40  call 3
+00055:  40  setprop "combatLevel"
+00060:  40  pop
+00061:  42  this
+00062:  42  name "xs"
+00067:  42  getprop "Utils"
+00072:  42  dup
+00073:  42  callprop "setCcbLabel"
+00078:  42  swap
+00079:  42  notearg
+00080:  42  this
+00081:  42  getprop "ccbNode_InfoBar"
+00086:  42  notearg
+00087:  42  this
+00088:  42  getprop "cfg"
+00093:  42  getprop "infoBar"
+00098:  42  getprop "plusValue"
+00103:  42  getprop "tag"
+00108:  42  notearg
+00109:  43  string "+"
+00114:  43  this
+00115:  43  getprop "model"
+00120:  43  dup
+00121:  43  callprop "getExtraBuff"
+00126:  43  swap
+00127:  43  notearg
+00128:  43  getarg 0
+00131:  43  notearg
+00132:  43  call 1
+00135:  43  add
+00136:  43  notearg
+00137:  43  call 3
+00140:  43  setprop "combatPlusValue"
+00145:  43  pop
+00146:  43  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/CombatUpgradeCard.js:38 ---
+;; function object[3] create
+;; function metadata object[3] nargs=1 bindings=2
+;; arg[0] combatModel
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/CombatUpgradeCard.js:61 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  name "xs"
+00005:  62  getprop "Views"
+00010:  62  getprop "CombatUpgradeCard"
+00015:  62  undefined
+00016:  62  notearg
+00017:  62  new 0
+00020:  62  setlocal 0
+00023:  62  pop
+00024:  63  getlocal 0
+00027:  63  and 51 (+24)
+00032:  63  pop
+00033:  63  getlocal 0
+00036:  63  dup
+00037:  63  callprop "init"
+00042:  63  swap
+00043:  63  notearg
+00044:  63  getarg 0
+00047:  63  notearg
+00048:  63  call 1
+00051:  63  ifeq 60 (+9)
+00056:  64  getlocal 0
+00059:  64  return
+00060:  67  null
+00061:  67  return
+00062:  67  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/UpgradeCard/CombatUpgradeCard.js:61 ---

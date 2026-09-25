@@ -1,0 +1,2017 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/SortController.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=33 object[0]
+;; FUNCTION-MAP kind=lambda offset=43 object[1]
+;; FUNCTION-MAP kind=lambda offset=53 object[2]
+;; FUNCTION-MAP kind=lambda offset=63 object[3]
+;; FUNCTION-MAP kind=lambda offset=73 object[4]
+;; FUNCTION-MAP kind=lambda offset=83 object[5]
+;; FUNCTION-MAP kind=lambda offset=93 object[6]
+;; FUNCTION-MAP kind=lambda offset=103 object[7]
+;; FUNCTION-MAP kind=lambda offset=113 object[8]
+;; FUNCTION-MAP kind=lambda offset=123 object[9]
+;; FUNCTION-MAP kind=lambda offset=133 object[10]
+;; FUNCTION-MAP kind=lambda offset=143 object[11]
+;; FUNCTION-MAP kind=lambda offset=153 object[12]
+;; FUNCTION-MAP kind=lambda offset=163 object[13]
+;; FUNCTION-MAP kind=lambda offset=173 object[14]
+;; FUNCTION-MAP kind=lambda offset=3896 object[15]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  name "cc"
+00015:   6  getprop "Layer"
+00020:   6  dup
+00021:   6  callprop "extend"
+00026:   6  swap
+00027:   6  notearg
+00028:   6  newinit 1
+00033:   7  lambda (function () {
+    [sourceless code]
+})
+00038:   7  initprop "ctor"
+00043:  14  lambda (function () {
+    [sourceless code]
+})
+00048:  14  initprop "init"
+00053:  39  lambda (function () {
+    [sourceless code]
+})
+00058:  39  initprop "_getLazyInit_SortView"
+00063:  53  lambda (function () {
+    [sourceless code]
+})
+00068:  53  initprop "onEnter"
+00073:  57  lambda (function () {
+    [sourceless code]
+})
+00078:  57  initprop "onExit"
+00083:  62  lambda (function () {
+    [sourceless code]
+})
+00088:  62  initprop "_initPullList"
+00093: 124  lambda (function () {
+    [sourceless code]
+})
+00098: 124  initprop "showPullList"
+00103: 139  lambda (function () {
+    [sourceless code]
+})
+00108: 139  initprop "setSelected"
+00113: 145  lambda (function () {
+    [sourceless code]
+})
+00118: 145  initprop "onTouchBegan"
+00123: 160  lambda (function () {
+    [sourceless code]
+})
+00128: 160  initprop "onSelectCell"
+00133: 173  lambda (function () {
+    [sourceless code]
+})
+00138: 173  initprop "setSortChgCallBack"
+00143: 177  lambda (function () {
+    [sourceless code]
+})
+00148: 177  initprop "getDefaultFilter"
+00153: 181  lambda (function () {
+    [sourceless code]
+})
+00158: 181  initprop "getCurFilter"
+00163: 188  lambda (function () {
+    [sourceless code]
+})
+00168: 188  initprop "getIdxForFilterIdx"
+00173: 200  lambda (function () {
+    [sourceless code]
+})
+00178: 200  initprop "setBaseTouchPriority"
+00183: 211  newinit 1
+00188: 212  newinit 1
+00193: 212  int8 2
+00195: 212  initprop "zOrder"
+00200: 212  int8 -1
+00202: 212  initprop "tag"
+00207: 212  int8 -1
+00209: 212  initprop "priority"
+00214: 212  endinit
+00215: 212  initprop "base"
+00220: 213  newinit 1
+00225: 213  int8 2
+00227: 213  initprop "zOrder"
+00232: 213  int8 -1
+00234: 213  initprop "tag"
+00239: 213  int8 -2
+00241: 213  initprop "priority"
+00246: 213  endinit
+00247: 213  initprop "sortBtn"
+00252: 214  newinit 1
+00257: 214  int8 2
+00259: 214  initprop "zOrder"
+00264: 214  int8 -1
+00266: 214  initprop "tag"
+00271: 214  zero
+00272: 214  initprop "priority"
+00277: 214  endinit
+00278: 214  initprop "sortWidget"
+00283: 216  newinit 1
+00288: 219  newarray 5
+00292: 220  newinit 1
+00297: 220  name "xs"
+00302: 220  getprop "Constant_FilterIdx_All"
+00307: 220  initprop "idx"
+00312: 220  name "xs"
+00317: 220  getprop "Constant_FilterType_General_Type"
+00322: 220  initprop "type"
+00327: 220  endinit
+00328: 220  initelem_array 0
+00332: 221  newinit 1
+00337: 221  name "xs"
+00342: 221  getprop "Constant_FilterIdx_passive"
+00347: 221  initprop "idx"
+00352: 221  name "xs"
+00357: 221  getprop "Constant_FilterType_General_Type"
+00362: 221  initprop "type"
+00367: 221  endinit
+00368: 221  initelem_array 1
+00372: 222  newinit 1
+00377: 222  name "xs"
+00382: 222  getprop "Constant_FilterIdx_burst"
+00387: 222  initprop "idx"
+00392: 222  name "xs"
+00397: 222  getprop "Constant_FilterType_General_Type"
+00402: 222  initprop "type"
+00407: 222  endinit
+00408: 222  initelem_array 2
+00412: 223  newinit 1
+00417: 223  name "xs"
+00422: 223  getprop "Constant_FilterIdx_attack"
+00427: 223  initprop "idx"
+00432: 223  name "xs"
+00437: 223  getprop "Constant_FilterType_General_Type"
+00442: 223  initprop "type"
+00447: 223  endinit
+00448: 223  initelem_array 3
+00452: 224  newinit 1
+00457: 224  name "xs"
+00462: 224  getprop "Constant_FilterIdx_blood"
+00467: 224  initprop "idx"
+00472: 224  name "xs"
+00477: 224  getprop "Constant_FilterType_General_Type"
+00482: 224  initprop "type"
+00487: 224  endinit
+00488: 224  initelem_array 4
+00492: 224  endinit
+00493: 224  initprop "general"
+00498: 228  newarray 5
+00502: 229  newinit 1
+00507: 229  name "xs"
+00512: 229  getprop "Constant_FilterIdx_All"
+00517: 229  initprop "idx"
+00522: 229  name "xs"
+00527: 229  getprop "Constant_FilterType_Equipment_Pos"
+00532: 229  initprop "type"
+00537: 229  endinit
+00538: 229  initelem_array 0
+00542: 230  newinit 1
+00547: 230  name "xs"
+00552: 230  getprop "Constant_FilterIdx_weapon"
+00557: 230  initprop "idx"
+00562: 230  name "xs"
+00567: 230  getprop "Constant_FilterType_Equipment_Pos"
+00572: 230  initprop "type"
+00577: 230  endinit
+00578: 230  initelem_array 1
+00582: 231  newinit 1
+00587: 231  name "xs"
+00592: 231  getprop "Constant_FilterIdx_armor"
+00597: 231  initprop "idx"
+00602: 231  name "xs"
+00607: 231  getprop "Constant_FilterType_Equipment_Pos"
+00612: 231  initprop "type"
+00617: 231  endinit
+00618: 231  initelem_array 2
+00622: 232  newinit 1
+00627: 232  name "xs"
+00632: 232  getprop "Constant_FilterIdx_mount"
+00637: 232  initprop "idx"
+00642: 232  name "xs"
+00647: 232  getprop "Constant_FilterType_Equipment_Pos"
+00652: 232  initprop "type"
+00657: 232  endinit
+00658: 232  initelem_array 3
+00662: 233  newinit 1
+00667: 233  name "xs"
+00672: 233  getprop "Constant_FilterIdx_kit"
+00677: 233  initprop "idx"
+00682: 233  name "xs"
+00687: 233  getprop "Constant_FilterType_Equipment_Pos"
+00692: 233  initprop "type"
+00697: 233  endinit
+00698: 233  initelem_array 4
+00702: 233  endinit
+00703: 233  initprop "equipMent"
+00708: 237  newarray 6
+00712: 238  newinit 1
+00717: 238  name "xs"
+00722: 238  getprop "Constant_FilterIdx_All"
+00727: 238  initprop "idx"
+00732: 238  name "xs"
+00737: 238  getprop "Constant_FilterType_Skill_Type"
+00742: 238  initprop "type"
+00747: 238  endinit
+00748: 238  initelem_array 0
+00752: 239  newinit 1
+00757: 239  name "xs"
+00762: 239  getprop "Constant_FilterIdx_attack"
+00767: 239  initprop "idx"
+00772: 239  name "xs"
+00777: 239  getprop "Constant_FilterType_Skill_Type"
+00782: 239  initprop "type"
+00787: 239  endinit
+00788: 239  initelem_array 1
+00792: 240  newinit 1
+00797: 240  name "xs"
+00802: 240  getprop "Constant_FilterIdx_blood"
+00807: 240  initprop "idx"
+00812: 240  name "xs"
+00817: 240  getprop "Constant_FilterType_Skill_Type"
+00822: 240  initprop "type"
+00827: 240  endinit
+00828: 240  initelem_array 2
+00832: 241  newinit 1
+00837: 241  name "xs"
+00842: 241  getprop "Constant_FilterIdx_burst"
+00847: 241  initprop "idx"
+00852: 241  name "xs"
+00857: 241  getprop "Constant_FilterType_Skill_Type"
+00862: 241  initprop "type"
+00867: 241  endinit
+00868: 241  initelem_array 3
+00872: 242  newinit 1
+00877: 242  name "xs"
+00882: 242  getprop "Constant_FilterIdx_passive"
+00887: 242  initprop "idx"
+00892: 242  name "xs"
+00897: 242  getprop "Constant_FilterType_Skill_Type"
+00902: 242  initprop "type"
+00907: 242  endinit
+00908: 242  initelem_array 4
+00912: 243  newinit 1
+00917: 243  name "xs"
+00922: 243  getprop "Constant_FilterIdx_canUse"
+00927: 243  initprop "idx"
+00932: 243  name "xs"
+00937: 243  getprop "Constant_FilterType_Skill_IsCanBeSet"
+00942: 243  initprop "type"
+00947: 243  endinit
+00948: 243  initelem_array 5
+00952: 243  endinit
+00953: 243  initprop "changeSkill"
+00958: 248  newarray 5
+00962: 249  newinit 1
+00967: 249  name "xs"
+00972: 249  getprop "Constant_FilterIdx_All"
+00977: 249  initprop "idx"
+00982: 249  name "xs"
+00987: 249  getprop "Constant_FilterType_Skill_Type"
+00992: 249  initprop "type"
+00997: 249  endinit
+00998: 249  initelem_array 0
+01002: 250  newinit 1
+01007: 250  name "xs"
+01012: 250  getprop "Constant_FilterIdx_attack"
+01017: 250  initprop "idx"
+01022: 250  name "xs"
+01027: 250  getprop "Constant_FilterType_Skill_Type"
+01032: 250  initprop "type"
+01037: 250  endinit
+01038: 250  initelem_array 1
+01042: 251  newinit 1
+01047: 251  name "xs"
+01052: 251  getprop "Constant_FilterIdx_blood"
+01057: 251  initprop "idx"
+01062: 251  name "xs"
+01067: 251  getprop "Constant_FilterType_Skill_Type"
+01072: 251  initprop "type"
+01077: 251  endinit
+01078: 251  initelem_array 2
+01082: 252  newinit 1
+01087: 252  name "xs"
+01092: 252  getprop "Constant_FilterIdx_burst"
+01097: 252  initprop "idx"
+01102: 252  name "xs"
+01107: 252  getprop "Constant_FilterType_Skill_Type"
+01112: 252  initprop "type"
+01117: 252  endinit
+01118: 252  initelem_array 3
+01122: 253  newinit 1
+01127: 253  name "xs"
+01132: 253  getprop "Constant_FilterIdx_passive"
+01137: 253  initprop "idx"
+01142: 253  name "xs"
+01147: 253  getprop "Constant_FilterType_Skill_Type"
+01152: 253  initprop "type"
+01157: 253  endinit
+01158: 253  initelem_array 4
+01162: 253  endinit
+01163: 253  initprop "skill"
+01168: 257  newarray 7
+01172: 258  newinit 1
+01177: 258  name "xs"
+01182: 258  getprop "Constant_FilterIdx_All"
+01187: 258  initprop "idx"
+01192: 258  name "xs"
+01197: 258  getprop "Constant_FilterType_GeneralAtlas_Type"
+01202: 258  initprop "type"
+01207: 258  endinit
+01208: 258  initelem_array 0
+01212: 259  newinit 1
+01217: 259  name "xs"
+01222: 259  getprop "Constant_FilterIdx_passive"
+01227: 259  initprop "idx"
+01232: 259  name "xs"
+01237: 259  getprop "Constant_FilterType_GeneralAtlas_Type"
+01242: 259  initprop "type"
+01247: 259  endinit
+01248: 259  initelem_array 1
+01252: 260  newinit 1
+01257: 260  name "xs"
+01262: 260  getprop "Constant_FilterIdx_burst"
+01267: 260  initprop "idx"
+01272: 260  name "xs"
+01277: 260  getprop "Constant_FilterType_GeneralAtlas_Type"
+01282: 260  initprop "type"
+01287: 260  endinit
+01288: 260  initelem_array 2
+01292: 261  newinit 1
+01297: 261  name "xs"
+01302: 261  getprop "Constant_FilterIdx_attack"
+01307: 261  initprop "idx"
+01312: 261  name "xs"
+01317: 261  getprop "Constant_FilterType_GeneralAtlas_Type"
+01322: 261  initprop "type"
+01327: 261  endinit
+01328: 261  initelem_array 3
+01332: 262  newinit 1
+01337: 262  name "xs"
+01342: 262  getprop "Constant_FilterIdx_blood"
+01347: 262  initprop "idx"
+01352: 262  name "xs"
+01357: 262  getprop "Constant_FilterType_GeneralAtlas_Type"
+01362: 262  initprop "type"
+01367: 262  endinit
+01368: 262  initelem_array 4
+01372: 263  newinit 1
+01377: 263  name "xs"
+01382: 263  getprop "Constant_FilterIdx_surrender"
+01387: 263  initprop "idx"
+01392: 263  name "xs"
+01397: 263  getprop "Constant_FilterType_GeneralAtlas_IsSurrender"
+01402: 263  initprop "type"
+01407: 263  endinit
+01408: 263  initelem_array 5
+01412: 264  newinit 1
+01417: 264  name "xs"
+01422: 264  getprop "Constant_FilterIdx_notSurrender"
+01427: 264  initprop "idx"
+01432: 264  name "xs"
+01437: 264  getprop "Constant_FilterType_GeneralAtlas_IsSurrender"
+01442: 264  initprop "type"
+01447: 264  endinit
+01448: 264  initelem_array 6
+01452: 264  endinit
+01453: 264  initprop "generalAtlas"
+01458: 268  newarray 5
+01462: 269  newinit 1
+01467: 269  name "xs"
+01472: 269  getprop "Constant_FilterIdx_All"
+01477: 269  initprop "idx"
+01482: 269  name "xs"
+01487: 269  getprop "Constant_FilterType_EquipmentAtLas_Pos"
+01492: 269  initprop "type"
+01497: 269  endinit
+01498: 269  initelem_array 0
+01502: 270  newinit 1
+01507: 270  name "xs"
+01512: 270  getprop "Constant_FilterIdx_weapon"
+01517: 270  initprop "idx"
+01522: 270  name "xs"
+01527: 270  getprop "Constant_FilterType_EquipmentAtLas_Pos"
+01532: 270  initprop "type"
+01537: 270  endinit
+01538: 270  initelem_array 1
+01542: 271  newinit 1
+01547: 271  name "xs"
+01552: 271  getprop "Constant_FilterIdx_armor"
+01557: 271  initprop "idx"
+01562: 271  name "xs"
+01567: 271  getprop "Constant_FilterType_EquipmentAtLas_Pos"
+01572: 271  initprop "type"
+01577: 271  endinit
+01578: 271  initelem_array 2
+01582: 272  newinit 1
+01587: 272  name "xs"
+01592: 272  getprop "Constant_FilterIdx_mount"
+01597: 272  initprop "idx"
+01602: 272  name "xs"
+01607: 272  getprop "Constant_FilterType_EquipmentAtLas_Pos"
+01612: 272  initprop "type"
+01617: 272  endinit
+01618: 272  initelem_array 3
+01622: 273  newinit 1
+01627: 273  name "xs"
+01632: 273  getprop "Constant_FilterIdx_kit"
+01637: 273  initprop "idx"
+01642: 273  name "xs"
+01647: 273  getprop "Constant_FilterType_EquipmentAtLas_Pos"
+01652: 273  initprop "type"
+01657: 273  endinit
+01658: 273  initelem_array 4
+01662: 273  endinit
+01663: 273  initprop "equipMentAtlas"
+01668: 277  newarray 5
+01672: 278  newinit 1
+01677: 278  name "xs"
+01682: 278  getprop "Constant_FilterIdx_All"
+01687: 278  initprop "idx"
+01692: 278  name "xs"
+01697: 278  getprop "Constant_FilterType_SkillAtlas_Type"
+01702: 278  initprop "type"
+01707: 278  endinit
+01708: 278  initelem_array 0
+01712: 279  newinit 1
+01717: 279  name "xs"
+01722: 279  getprop "Constant_FilterIdx_attack"
+01727: 279  initprop "idx"
+01732: 279  name "xs"
+01737: 279  getprop "Constant_FilterType_SkillAtlas_Type"
+01742: 279  initprop "type"
+01747: 279  endinit
+01748: 279  initelem_array 1
+01752: 280  newinit 1
+01757: 280  name "xs"
+01762: 280  getprop "Constant_FilterIdx_blood"
+01767: 280  initprop "idx"
+01772: 280  name "xs"
+01777: 280  getprop "Constant_FilterType_SkillAtlas_Type"
+01782: 280  initprop "type"
+01787: 280  endinit
+01788: 280  initelem_array 2
+01792: 281  newinit 1
+01797: 281  name "xs"
+01802: 281  getprop "Constant_FilterIdx_burst"
+01807: 281  initprop "idx"
+01812: 281  name "xs"
+01817: 281  getprop "Constant_FilterType_SkillAtlas_Type"
+01822: 281  initprop "type"
+01827: 281  endinit
+01828: 281  initelem_array 3
+01832: 282  newinit 1
+01837: 282  name "xs"
+01842: 282  getprop "Constant_FilterIdx_passive"
+01847: 282  initprop "idx"
+01852: 282  name "xs"
+01857: 282  getprop "Constant_FilterType_SkillAtlas_Type"
+01862: 282  initprop "type"
+01867: 282  endinit
+01868: 282  initelem_array 4
+01872: 282  endinit
+01873: 282  initprop "skillAtlas"
+01878: 286  newarray 6
+01882: 287  newinit 1
+01887: 287  name "xs"
+01892: 287  getprop "Constant_FilterIdx_All"
+01897: 287  initprop "idx"
+01902: 287  name "xs"
+01907: 287  getprop "Constant_FilterType_GeneralLieutenant_Type"
+01912: 287  initprop "type"
+01917: 287  endinit
+01918: 287  initelem_array 0
+01922: 288  newinit 1
+01927: 288  name "xs"
+01932: 288  getprop "Constant_FilterIdx_attack"
+01937: 288  initprop "idx"
+01942: 288  name "xs"
+01947: 288  getprop "Constant_FilterType_GeneralLieutenant_Type"
+01952: 288  initprop "type"
+01957: 288  endinit
+01958: 288  initelem_array 1
+01962: 289  newinit 1
+01967: 289  name "xs"
+01972: 289  getprop "Constant_FilterIdx_blood"
+01977: 289  initprop "idx"
+01982: 289  name "xs"
+01987: 289  getprop "Constant_FilterType_GeneralLieutenant_Type"
+01992: 289  initprop "type"
+01997: 289  endinit
+01998: 289  initelem_array 2
+02002: 290  newinit 1
+02007: 290  name "xs"
+02012: 290  getprop "Constant_FilterIdx_burst"
+02017: 290  initprop "idx"
+02022: 290  name "xs"
+02027: 290  getprop "Constant_FilterType_GeneralLieutenant_Type"
+02032: 290  initprop "type"
+02037: 290  endinit
+02038: 290  initelem_array 3
+02042: 291  newinit 1
+02047: 291  name "xs"
+02052: 291  getprop "Constant_FilterIdx_passive"
+02057: 291  initprop "idx"
+02062: 291  name "xs"
+02067: 291  getprop "Constant_FilterType_GeneralLieutenant_Type"
+02072: 291  initprop "type"
+02077: 291  endinit
+02078: 291  initelem_array 4
+02082: 292  newinit 1
+02087: 292  name "xs"
+02092: 292  getprop "Constant_FilterIdx_canUse"
+02097: 292  initprop "idx"
+02102: 292  name "xs"
+02107: 292  getprop "Constant_FilterType_GeneralLieutenant_IsCanBeSet"
+02112: 292  initprop "type"
+02117: 292  endinit
+02118: 292  initelem_array 5
+02122: 292  endinit
+02123: 292  initprop "generalLieutenant"
+02128: 296  newarray 1
+02132: 297  newinit 1
+02137: 297  name "xs"
+02142: 297  getprop "Constant_FilterIdx_All"
+02147: 297  initprop "idx"
+02152: 297  name "xs"
+02157: 297  getprop "Constant_FilterType_Equipment_Pos"
+02162: 297  initprop "type"
+02167: 297  endinit
+02168: 297  initelem_array 0
+02172: 297  endinit
+02173: 297  initprop "changeEquipMent"
+02178: 301  newarray 7
+02182: 302  newinit 1
+02187: 302  name "xs"
+02192: 302  getprop "Constant_FilterIdx_All"
+02197: 302  initprop "idx"
+02202: 302  name "xs"
+02207: 302  getprop "Constant_FilterType_Battle_Id"
+02212: 302  initprop "type"
+02217: 302  endinit
+02218: 302  initelem_array 0
+02222: 303  newinit 1
+02227: 303  name "xs"
+02232: 303  getprop "Constant_FilterIdx_chiBi"
+02237: 303  initprop "idx"
+02242: 303  name "xs"
+02247: 303  getprop "Constant_FilterType_Battle_Id"
+02252: 303  initprop "type"
+02257: 303  endinit
+02258: 303  initelem_array 1
+02262: 304  newinit 1
+02267: 304  name "xs"
+02272: 304  getprop "Constant_FilterIdx_guanDu"
+02277: 304  initprop "idx"
+02282: 304  name "xs"
+02287: 304  getprop "Constant_FilterType_Battle_Id"
+02292: 304  initprop "type"
+02297: 304  endinit
+02298: 304  initelem_array 2
+02302: 305  newinit 1
+02307: 305  name "xs"
+02312: 305  getprop "Constant_FilterIdx_yiLing"
+02317: 305  initprop "idx"
+02322: 305  name "xs"
+02327: 305  getprop "Constant_FilterType_Battle_Id"
+02332: 305  initprop "type"
+02337: 305  endinit
+02338: 305  initelem_array 3
+02342: 306  newinit 1
+02347: 306  name "xs"
+02352: 306  getprop "Constant_FilterIdx_huaRong"
+02357: 306  initprop "idx"
+02362: 306  name "xs"
+02367: 306  getprop "Constant_FilterType_Battle_Id"
+02372: 306  initprop "type"
+02377: 306  endinit
+02378: 306  initelem_array 4
+02382: 307  newinit 1
+02387: 307  name "xs"
+02392: 307  getprop "Constant_FilterIdx_changBan"
+02397: 307  initprop "idx"
+02402: 307  name "xs"
+02407: 307  getprop "Constant_FilterType_Battle_Id"
+02412: 307  initprop "type"
+02417: 307  endinit
+02418: 307  initelem_array 5
+02422: 308  newinit 1
+02427: 308  name "xs"
+02432: 308  getprop "Constant_FilterIdx_boWang"
+02437: 308  initprop "idx"
+02442: 308  name "xs"
+02447: 308  getprop "Constant_FilterType_Battle_Id"
+02452: 308  initprop "type"
+02457: 308  endinit
+02458: 308  initelem_array 6
+02462: 308  endinit
+02463: 308  initprop "battleAtlas"
+02468: 312  newarray 1
+02472: 313  newinit 1
+02477: 313  name "xs"
+02482: 313  getprop "Constant_FilterIdx_All"
+02487: 313  initprop "idx"
+02492: 313  name "xs"
+02497: 313  getprop "Constant_FilterType_Equipment_Pos"
+02502: 313  initprop "type"
+02507: 313  endinit
+02508: 313  initelem_array 0
+02512: 313  endinit
+02513: 313  initprop "gemsEpsScreen"
+02518: 317  newarray 4
+02522: 318  newinit 1
+02527: 318  name "xs"
+02532: 318  getprop "Constant_FilterIdx_All"
+02537: 318  initprop "idx"
+02542: 318  name "xs"
+02547: 318  getprop "Constant_FilterType_Train_Id"
+02552: 318  initprop "type"
+02557: 318  endinit
+02558: 318  initelem_array 0
+02562: 319  newinit 1
+02567: 319  name "xs"
+02572: 319  getprop "Constant_FilterIdx_sunJian"
+02577: 319  initprop "idx"
+02582: 319  name "xs"
+02587: 319  getprop "Constant_FilterType_Train_Id"
+02592: 319  initprop "type"
+02597: 319  endinit
+02598: 319  initelem_array 1
+02602: 320  newinit 1
+02607: 320  name "xs"
+02612: 320  getprop "Constant_FilterIdx_zhaoYun"
+02617: 320  initprop "idx"
+02622: 320  name "xs"
+02627: 320  getprop "Constant_FilterType_Train_Id"
+02632: 320  initprop "type"
+02637: 320  endinit
+02638: 320  initelem_array 2
+02642: 321  newinit 1
+02647: 321  name "xs"
+02652: 321  getprop "Constant_FilterIdx_lvBu"
+02657: 321  initprop "idx"
+02662: 321  name "xs"
+02667: 321  getprop "Constant_FilterType_Train_Id"
+02672: 321  initprop "type"
+02677: 321  endinit
+02678: 321  initelem_array 3
+02682: 321  endinit
+02683: 321  initprop "trainAtlas"
+02688: 325  newarray 6
+02692: 326  newinit 1
+02697: 326  name "xs"
+02702: 326  getprop "Constant_FilterIdx_All"
+02707: 326  initprop "idx"
+02712: 326  name "xs"
+02717: 326  getprop "Constant_FilterType_General_Grade"
+02722: 326  initprop "type"
+02727: 326  endinit
+02728: 326  initelem_array 0
+02732: 327  newinit 1
+02737: 327  name "xs"
+02742: 327  getprop "Constant_FilterIdx_God"
+02747: 327  initprop "idx"
+02752: 327  name "xs"
+02757: 327  getprop "Constant_FilterType_General_Grade"
+02762: 327  initprop "type"
+02767: 327  endinit
+02768: 327  initelem_array 1
+02772: 328  newinit 1
+02777: 328  name "xs"
+02782: 328  getprop "Constant_FilterIdx_Gold"
+02787: 328  initprop "idx"
+02792: 328  name "xs"
+02797: 328  getprop "Constant_FilterType_General_Grade"
+02802: 328  initprop "type"
+02807: 328  endinit
+02808: 328  initelem_array 2
+02812: 329  newinit 1
+02817: 329  name "xs"
+02822: 329  getprop "Constant_FilterIdx_Silver"
+02827: 329  initprop "idx"
+02832: 329  name "xs"
+02837: 329  getprop "Constant_FilterType_General_Grade"
+02842: 329  initprop "type"
+02847: 329  endinit
+02848: 329  initelem_array 3
+02852: 330  newinit 1
+02857: 330  name "xs"
+02862: 330  getprop "Constant_FilterIdx_Copper"
+02867: 330  initprop "idx"
+02872: 330  name "xs"
+02877: 330  getprop "Constant_FilterType_General_Grade"
+02882: 330  initprop "type"
+02887: 330  endinit
+02888: 330  initelem_array 4
+02892: 331  newinit 1
+02897: 331  name "xs"
+02902: 331  getprop "Constant_FilterIdx_Demon"
+02907: 331  initprop "idx"
+02912: 331  name "xs"
+02917: 331  getprop "Constant_FilterType_General_Grade"
+02922: 331  initprop "type"
+02927: 331  endinit
+02928: 331  initelem_array 5
+02932: 331  endinit
+02933: 331  initprop "display"
+02938: 331  endinit
+02939: 331  initprop "filterList"
+02944: 336  newarray 26
+02948: 337  newinit 1
+02953: 337  name "xs"
+02958: 337  getprop "Constant_FilterResult_All"
+02963: 337  initprop "filterResult"
+02968: 337  string "filter_all"
+02973: 337  initprop "stringKey"
+02978: 337  endinit
+02979: 337  initelem_array 0
+02983: 338  newinit 1
+02988: 338  name "xs"
+02993: 338  getprop "Constant_FilterResult_Passive"
+02998: 338  initprop "filterResult"
+03003: 338  string "filter_passive"
+03008: 338  initprop "stringKey"
+03013: 338  endinit
+03014: 338  initelem_array 1
+03018: 339  newinit 1
+03023: 339  name "xs"
+03028: 339  getprop "Constant_FilterResult_burst"
+03033: 339  initprop "filterResult"
+03038: 339  string "filter_burst"
+03043: 339  initprop "stringKey"
+03048: 339  endinit
+03049: 339  initelem_array 2
+03053: 340  newinit 1
+03058: 340  name "xs"
+03063: 340  getprop "Constant_FilterResult_attack"
+03068: 340  initprop "filterResult"
+03073: 340  string "filter_attack"
+03078: 340  initprop "stringKey"
+03083: 340  endinit
+03084: 340  initelem_array 3
+03088: 341  newinit 1
+03093: 341  name "xs"
+03098: 341  getprop "Constant_FilterResult_blood"
+03103: 341  initprop "filterResult"
+03108: 341  string "filter_blood"
+03113: 341  initprop "stringKey"
+03118: 341  endinit
+03119: 341  initelem_array 4
+03123: 342  newinit 1
+03128: 342  name "xs"
+03133: 342  getprop "Constant_FilterResult_Weapon"
+03138: 342  initprop "filterResult"
+03143: 342  string "filter_weapon"
+03148: 342  initprop "stringKey"
+03153: 342  endinit
+03154: 342  initelem_array 5
+03158: 343  newinit 1
+03163: 343  name "xs"
+03168: 343  getprop "Constant_FilterResult_Armor"
+03173: 343  initprop "filterResult"
+03178: 343  string "filter_armor"
+03183: 343  initprop "stringKey"
+03188: 343  endinit
+03189: 343  initelem_array 6
+03193: 344  newinit 1
+03198: 344  name "xs"
+03203: 344  getprop "Constant_FilterResult_Mount"
+03208: 344  initprop "filterResult"
+03213: 344  string "filter_mount"
+03218: 344  initprop "stringKey"
+03223: 344  endinit
+03224: 344  initelem_array 7
+03228: 345  newinit 1
+03233: 345  name "xs"
+03238: 345  getprop "Constant_FilterResult_Kit"
+03243: 345  initprop "filterResult"
+03248: 345  string "filter_kit"
+03253: 345  initprop "stringKey"
+03258: 345  endinit
+03259: 345  initelem_array 8
+03263: 346  newinit 1
+03268: 346  name "xs"
+03273: 346  getprop "Constant_FilterResult_Surrender"
+03278: 346  initprop "filterResult"
+03283: 346  string "filter_surrender"
+03288: 346  initprop "stringKey"
+03293: 346  endinit
+03294: 346  initelem_array 9
+03298: 347  newinit 1
+03303: 347  name "xs"
+03308: 347  getprop "Constant_FilterResult_NotSurrender"
+03313: 347  initprop "filterResult"
+03318: 347  string "filter_notSurrender"
+03323: 347  initprop "stringKey"
+03328: 347  endinit
+03329: 347  initelem_array 10
+03333: 348  newinit 1
+03338: 348  name "xs"
+03343: 348  getprop "Constant_FilterResult_CanUse"
+03348: 348  initprop "filterResult"
+03353: 348  string "filter_canUse"
+03358: 348  initprop "stringKey"
+03363: 348  endinit
+03364: 348  initelem_array 11
+03368: 350  newinit 1
+03373: 350  name "xs"
+03378: 350  getprop "Constant_FilterResult_Battle_ChiBi"
+03383: 350  initprop "filterResult"
+03388: 350  string "unionWar_battleName_chiBi"
+03393: 350  initprop "stringKey"
+03398: 350  endinit
+03399: 350  initelem_array 12
+03403: 351  newinit 1
+03408: 351  name "xs"
+03413: 351  getprop "Constant_FilterResult_Battle_GuanDu"
+03418: 351  initprop "filterResult"
+03423: 351  string "unionWar_battleName_guanDu"
+03428: 351  initprop "stringKey"
+03433: 351  endinit
+03434: 351  initelem_array 13
+03438: 352  newinit 1
+03443: 352  name "xs"
+03448: 352  getprop "Constant_FilterResult_Battle_YiLing"
+03453: 352  initprop "filterResult"
+03458: 352  string "unionWar_battleName_yiLing"
+03463: 352  initprop "stringKey"
+03468: 352  endinit
+03469: 352  initelem_array 14
+03473: 353  newinit 1
+03478: 353  name "xs"
+03483: 353  getprop "Constant_FilterResult_Battle_HuaRong"
+03488: 353  initprop "filterResult"
+03493: 353  string "unionWar_battleName_huaRongDao"
+03498: 353  initprop "stringKey"
+03503: 353  endinit
+03504: 353  initelem_array 15
+03508: 354  newinit 1
+03513: 354  name "xs"
+03518: 354  getprop "Constant_FilterResult_Battle_ChangBan"
+03523: 354  initprop "filterResult"
+03528: 354  string "unionWar_battleName_changBanPo"
+03533: 354  initprop "stringKey"
+03538: 354  endinit
+03539: 354  initelem_array 16
+03543: 355  newinit 1
+03548: 355  name "xs"
+03553: 355  getprop "Constant_FilterResult_Battle_BoWang"
+03558: 355  initprop "filterResult"
+03563: 355  string "unionWar_battleName_boWangPo"
+03568: 355  initprop "stringKey"
+03573: 355  endinit
+03574: 355  initelem_array 17
+03578: 357  newinit 1
+03583: 357  name "xs"
+03588: 357  getprop "Constant_FilterResult_Train_SunJian"
+03593: 357  initprop "filterResult"
+03598: 357  string "TrainSunJian"
+03603: 357  initprop "stringKey"
+03608: 357  endinit
+03609: 357  initelem_array 18
+03613: 358  newinit 1
+03618: 358  name "xs"
+03623: 358  getprop "Constant_FilterResult_Train_ZhaoYun"
+03628: 358  initprop "filterResult"
+03633: 358  string "TrainZhaoYun"
+03638: 358  initprop "stringKey"
+03643: 358  endinit
+03644: 358  initelem_array 19
+03648: 359  newinit 1
+03653: 359  name "xs"
+03658: 359  getprop "Constant_FilterResult_Train_LvBu"
+03663: 359  initprop "filterResult"
+03668: 359  string "TrainLvBu"
+03673: 359  initprop "stringKey"
+03678: 359  endinit
+03679: 359  initelem_array 20
+03683: 361  newinit 1
+03688: 361  name "xs"
+03693: 361  getprop "Constant_FilterIdx_God"
+03698: 361  initprop "filterResult"
+03703: 361  string "str_Filter_God"
+03708: 361  initprop "stringKey"
+03713: 361  endinit
+03714: 361  initelem_array 21
+03718: 362  newinit 1
+03723: 362  name "xs"
+03728: 362  getprop "Constant_FilterIdx_Gold"
+03733: 362  initprop "filterResult"
+03738: 362  string "str_Filter_Gold"
+03743: 362  initprop "stringKey"
+03748: 362  endinit
+03749: 362  initelem_array 22
+03753: 363  newinit 1
+03758: 363  name "xs"
+03763: 363  getprop "Constant_FilterIdx_Silver"
+03768: 363  initprop "filterResult"
+03773: 363  string "str_Filter_Silver"
+03778: 363  initprop "stringKey"
+03783: 363  endinit
+03784: 363  initelem_array 23
+03788: 364  newinit 1
+03793: 364  name "xs"
+03798: 364  getprop "Constant_FilterIdx_Copper"
+03803: 364  initprop "filterResult"
+03808: 364  string "str_Filter_Copper"
+03813: 364  initprop "stringKey"
+03818: 364  endinit
+03819: 364  initelem_array 24
+03823: 365  newinit 1
+03828: 365  name "xs"
+03833: 365  getprop "Constant_FilterIdx_Demon"
+03838: 365  initprop "filterResult"
+03843: 365  string "str_Filter_Demon"
+03848: 365  initprop "stringKey"
+03853: 365  endinit
+03854: 365  initelem_array 25
+03858: 365  endinit
+03859: 365  initprop "filterResults"
+03864: 365  endinit
+03865: 365  initprop "cfg"
+03870: 365  endinit
+03871: 365  notearg
+03872: 365  call 1
+03875: 365  setprop "SortController"
+03880: 365  popv
+03881: 372  name "xs"
+03886: 372  getprop "Views"
+03891: 372  getprop "SortController"
+03896: 372  lambda (function () {
+    [sourceless code]
+})
+03901: 372  setprop "create"
+03906: 372  popv
+03907: 381  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:1 ---
+;; function object[0] ctor
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:7 ---
+loc   line  op
+----- ----  --
+main:
+00000:   8  this
+00001:   8  dup
+00002:   8  callprop "_super"
+00007:   8  swap
+00008:   8  notearg
+00009:   8  call 0
+00012:   8  pop
+00013:   9  name "cc"
+00018:   9  dup
+00019:   9  callprop "associateWithNative"
+00024:   9  swap
+00025:   9  notearg
+00026:   9  this
+00027:   9  notearg
+00028:   9  name "cc"
+00033:   9  getprop "Layer"
+00038:   9  notearg
+00039:   9  call 2
+00042:   9  pop
+00043:  11  this
+00044:  11  false
+00045:  11  setprop "bScrollView"
+00050:  11  pop
+00051:  11  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:7 ---
+;; function object[1] init
+;; function metadata object[1] nargs=1 bindings=1
+;; arg[0] filterType
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:14 ---
+loc   line  op
+----- ----  --
+main:
+00000:  16  this
+00001:  16  dup
+00002:  16  callprop "setTouchMode"
+00007:  16  swap
+00008:  16  notearg
+00009:  16  name "cc"
+00014:  16  getprop "TOUCH_ONE_BY_ONE"
+00019:  16  notearg
+00020:  16  call 1
+00023:  16  pop
+00024:  17  this
+00025:  17  dup
+00026:  17  callprop "setTouchEnabled"
+00031:  17  swap
+00032:  17  notearg
+00033:  17  true
+00034:  17  notearg
+00035:  17  call 1
+00038:  17  pop
+00039:  19  this
+00040:  19  name "xs"
+00045:  19  getprop "Views"
+00050:  19  getprop "Btn"
+00055:  19  dup
+00056:  19  callprop "create"
+00061:  19  swap
+00062:  19  notearg
+00063:  19  string "Btn_PullList"
+00068:  19  notearg
+00069:  19  call 1
+00072:  19  setprop "sortBtn"
+00077:  19  pop
+00078:  21  this
+00079:  21  getprop "sortBtn"
+00084:  21  dup
+00085:  21  callprop "setTitleForState"
+00090:  21  swap
+00091:  21  notearg
+00092:  21  string ""
+00097:  21  notearg
+00098:  21  name "cc"
+00103:  21  getprop "CONTROL_STATE_NORMAL"
+00108:  21  notearg
+00109:  21  call 2
+00112:  21  pop
+00113:  22  this
+00114:  22  getprop "sortBtn"
+00119:  22  dup
+00120:  22  callprop "setZoomOnTouchDown"
+00125:  22  swap
+00126:  22  notearg
+00127:  22  false
+00128:  22  notearg
+00129:  22  call 1
+00132:  22  pop
+00133:  24  this
+00134:  24  getprop "sortBtn"
+00139:  24  dup
+00140:  24  callprop "setPreferredSize"
+00145:  24  swap
+00146:  24  notearg
+00147:  24  name "cc"
+00152:  24  dup
+00153:  24  callprop "size"
+00158:  24  swap
+00159:  24  notearg
+00160:  24  uint16 212
+00163:  24  notearg
+00164:  24  int8 62
+00166:  24  notearg
+00167:  24  call 2
+00170:  24  notearg
+00171:  24  call 1
+00174:  24  pop
+00175:  25  this
+00176:  25  getprop "sortBtn"
+00181:  25  dup
+00182:  25  callprop "setAnchorPoint"
+00187:  25  swap
+00188:  25  notearg
+00189:  25  name "cc"
+00194:  25  dup
+00195:  25  callprop "p"
+00200:  25  swap
+00201:  25  notearg
+00202:  25  zero
+00203:  25  notearg
+00204:  25  zero
+00205:  25  notearg
+00206:  25  call 2
+00209:  25  notearg
+00210:  25  call 1
+00213:  25  pop
+00214:  26  this
+00215:  26  getprop "sortBtn"
+00220:  26  dup
+00221:  26  callprop "setPosition"
+00226:  26  swap
+00227:  26  notearg
+00228:  26  name "cc"
+00233:  26  dup
+00234:  26  callprop "p"
+00239:  26  swap
+00240:  26  notearg
+00241:  26  zero
+00242:  26  notearg
+00243:  26  zero
+00244:  26  notearg
+00245:  26  call 2
+00248:  26  notearg
+00249:  26  call 1
+00252:  26  pop
+00253:  27  this
+00254:  27  getprop "sortBtn"
+00259:  27  dup
+00260:  27  callprop "addTargetWithActionForControlEvents"
+00265:  27  swap
+00266:  27  notearg
+00267:  27  this
+00268:  27  notearg
+00269:  27  this
+00270:  27  getprop "showPullList"
+00275:  27  notearg
+00276:  27  name "cc"
+00281:  27  getprop "CONTROL_EVENT_TOUCH_UP_INSIDE"
+00286:  27  notearg
+00287:  27  call 3
+00290:  27  pop
+00291:  28  this
+00292:  28  dup
+00293:  28  callprop "addChild"
+00298:  28  swap
+00299:  28  notearg
+00300:  28  this
+00301:  28  getprop "sortBtn"
+00306:  28  notearg
+00307:  28  call 1
+00310:  28  pop
+00311:  31  this
+00312:  31  dup
+00313:  31  callprop "_initPullList"
+00318:  31  swap
+00319:  31  notearg
+00320:  31  getarg 0
+00323:  31  notearg
+00324:  31  call 1
+00327:  31  pop
+00328:  34  this
+00329:  34  int8 -1
+00331:  34  setprop "curSortIdx"
+00336:  34  pop
+00337:  36  true
+00338:  36  return
+00339:  36  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:14 ---
+;; function object[2] _getLazyInit_SortView
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:39 ---
+loc   line  op
+----- ----  --
+main:
+00000:  41  this
+00001:  41  getprop "m_sortWidget"
+00006:  41  not
+00007:  41  ifeq 210 (+203)
+00012:  42  this
+00013:  42  name "xs"
+00018:  42  getprop "BFSortTableWidget"
+00023:  42  dup
+00024:  42  callprop "create"
+00029:  42  swap
+00030:  42  notearg
+00031:  42  call 0
+00034:  42  setprop "m_sortWidget"
+00039:  42  pop
+00040:  43  this
+00041:  43  getprop "m_sortWidget"
+00046:  43  dup
+00047:  43  callprop "setAnchorPoint"
+00052:  43  swap
+00053:  43  notearg
+00054:  43  name "cc"
+00059:  43  dup
+00060:  43  callprop "p"
+00065:  43  swap
+00066:  43  notearg
+00067:  43  zero
+00068:  43  notearg
+00069:  43  zero
+00070:  43  notearg
+00071:  43  call 2
+00074:  43  notearg
+00075:  43  call 1
+00078:  43  pop
+00079:  44  this
+00080:  44  getprop "m_sortWidget"
+00085:  44  dup
+00086:  44  callprop "setPosition"
+00091:  44  swap
+00092:  44  notearg
+00093:  44  name "cc"
+00098:  44  dup
+00099:  44  callprop "p"
+00104:  44  swap
+00105:  44  notearg
+00106:  44  int8 -10
+00108:  44  notearg
+00109:  44  int32 -288
+00114:  44  notearg
+00115:  44  call 2
+00118:  44  notearg
+00119:  44  call 1
+00122:  44  pop
+00123:  45  this
+00124:  45  getprop "m_sortWidget"
+00129:  45  dup
+00130:  45  callprop "setData"
+00135:  45  swap
+00136:  45  notearg
+00137:  45  this
+00138:  45  getprop "sortStrs"
+00143:  45  notearg
+00144:  45  call 1
+00147:  45  pop
+00148:  46  this
+00149:  46  getprop "m_sortWidget"
+00154:  46  dup
+00155:  46  callprop "setDelegate"
+00160:  46  swap
+00161:  46  notearg
+00162:  46  this
+00163:  46  notearg
+00164:  46  call 1
+00167:  46  pop
+00168:  47  this
+00169:  47  getprop "m_sortWidget"
+00174:  47  dup
+00175:  47  callprop "setTouchPriority"
+00180:  47  swap
+00181:  47  notearg
+00182:  47  this
+00183:  47  getprop "m_baseTouchPriority"
+00188:  47  this
+00189:  47  getprop "cfg"
+00194:  47  getprop "sortWidget"
+00199:  47  getprop "priority"
+00204:  47  add
+00205:  47  notearg
+00206:  47  call 1
+00209:  47  pop
+00210:  50  this
+00211:  50  getprop "m_sortWidget"
+00216:  50  return
+00217:  50  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:39 ---
+;; function object[3] onEnter
+;; function metadata object[3] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:53 ---
+loc   line  op
+----- ----  --
+main:
+00000:  54  this
+00001:  54  dup
+00002:  54  callprop "_super"
+00007:  54  swap
+00008:  54  notearg
+00009:  54  call 0
+00012:  54  pop
+00013:  54  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:53 ---
+;; function object[4] onExit
+;; function metadata object[4] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:57 ---
+loc   line  op
+----- ----  --
+main:
+00000:  58  this
+00001:  58  dup
+00002:  58  callprop "_super"
+00007:  58  swap
+00008:  58  notearg
+00009:  58  call 0
+00012:  58  pop
+00013:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:57 ---
+;; function object[5] _initPullList
+;; function metadata object[5] nargs=1 bindings=5
+;; arg[0] filterStyle
+;; local[0] listStrings
+;; local[1] i
+;; local[2] idx
+;; local[3] strKey
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:62 ---
+loc   line  op
+----- ----  --
+main:
+00000:  64  newarray 0
+00004:  64  endinit
+00005:  64  setlocal 0
+00008:  64  pop
+00009:  65  this
+00010:  65  null
+00011:  65  setprop "filterList"
+00016:  65  pop
+00017:  66  this
+00018:  66  newarray 0
+00022:  66  endinit
+00023:  66  setprop "sortStrs"
+00028:  66  pop
+00029:  68  getarg 0
+00032:  68  condswitch
+00033:  70  name "xs"
+00038:  70  getprop "Constant_FilterStyle_General"
+00043:  70  case 218 (+175)
+00048:  73  name "xs"
+00053:  73  getprop "Constant_FilterStyle_Equipment"
+00058:  73  case 246 (+188)
+00063:  76  name "xs"
+00068:  76  getprop "Constant_FilterStyle_ChangeSkill"
+00073:  76  case 274 (+201)
+00078:  79  name "xs"
+00083:  79  getprop "Constant_FilterStyle_GeneralAtlas"
+00088:  79  case 302 (+214)
+00093:  82  name "xs"
+00098:  82  getprop "Constant_FilterStyle_EquipmentAtLas"
+00103:  82  case 330 (+227)
+00108:  85  name "xs"
+00113:  85  getprop "Constant_FilterStyle_SkillAtlas"
+00118:  85  case 358 (+240)
+00123:  88  name "xs"
+00128:  88  getprop "Constant_FilterStyle_ChangeGeneralLieutenant"
+00133:  88  case 386 (+253)
+00138:  91  name "xs"
+00143:  91  getprop "Constant_FilterStyle_Skill"
+00148:  91  case 414 (+266)
+00153:  94  name "xs"
+00158:  94  getprop "Constant_FilterStyle_ChangeEquipMent"
+00163:  94  case 442 (+279)
+00168:  97  name "xs"
+00173:  97  getprop "Constant_FilterStyle_ChangeBattlePlayer"
+00178:  97  case 470 (+292)
+00183: 100  name "xs"
+00188: 100  getprop "Constant_FilterStyle_TrainGenerals"
+00193: 100  case 498 (+305)
+00198: 103  name "xs"
+00203: 103  getprop "Constant_FilterStyle_DisplayGenerals"
+00208: 103  case 526 (+318)
+00213: 103  default 554 (+341)
+00218:  71  this
+00219:  71  this
+00220:  71  getprop "cfg"
+00225:  71  getprop "filterList"
+00230:  71  getprop "general"
+00235:  71  setprop "filterList"
+00240:  71  pop
+00241:  72  goto 554 (+313)
+00246:  74  this
+00247:  74  this
+00248:  74  getprop "cfg"
+00253:  74  getprop "filterList"
+00258:  74  getprop "equipMent"
+00263:  74  setprop "filterList"
+00268:  74  pop
+00269:  75  goto 554 (+285)
+00274:  77  this
+00275:  77  this
+00276:  77  getprop "cfg"
+00281:  77  getprop "filterList"
+00286:  77  getprop "changeSkill"
+00291:  77  setprop "filterList"
+00296:  77  pop
+00297:  78  goto 554 (+257)
+00302:  80  this
+00303:  80  this
+00304:  80  getprop "cfg"
+00309:  80  getprop "filterList"
+00314:  80  getprop "generalAtlas"
+00319:  80  setprop "filterList"
+00324:  80  pop
+00325:  81  goto 554 (+229)
+00330:  83  this
+00331:  83  this
+00332:  83  getprop "cfg"
+00337:  83  getprop "filterList"
+00342:  83  getprop "equipMentAtlas"
+00347:  83  setprop "filterList"
+00352:  83  pop
+00353:  84  goto 554 (+201)
+00358:  86  this
+00359:  86  this
+00360:  86  getprop "cfg"
+00365:  86  getprop "filterList"
+00370:  86  getprop "skillAtlas"
+00375:  86  setprop "filterList"
+00380:  86  pop
+00381:  87  goto 554 (+173)
+00386:  89  this
+00387:  89  this
+00388:  89  getprop "cfg"
+00393:  89  getprop "filterList"
+00398:  89  getprop "generalLieutenant"
+00403:  89  setprop "filterList"
+00408:  89  pop
+00409:  90  goto 554 (+145)
+00414:  92  this
+00415:  92  this
+00416:  92  getprop "cfg"
+00421:  92  getprop "filterList"
+00426:  92  getprop "skill"
+00431:  92  setprop "filterList"
+00436:  92  pop
+00437:  93  goto 554 (+117)
+00442:  95  this
+00443:  95  this
+00444:  95  getprop "cfg"
+00449:  95  getprop "filterList"
+00454:  95  getprop "changeEquipMent"
+00459:  95  setprop "filterList"
+00464:  95  pop
+00465:  96  goto 554 (+89)
+00470:  98  this
+00471:  98  this
+00472:  98  getprop "cfg"
+00477:  98  getprop "filterList"
+00482:  98  getprop "battleAtlas"
+00487:  98  setprop "filterList"
+00492:  98  pop
+00493:  99  goto 554 (+61)
+00498: 101  this
+00499: 101  this
+00500: 101  getprop "cfg"
+00505: 101  getprop "filterList"
+00510: 101  getprop "trainAtlas"
+00515: 101  setprop "filterList"
+00520: 101  pop
+00521: 102  goto 554 (+33)
+00526: 104  this
+00527: 104  this
+00528: 104  getprop "cfg"
+00533: 104  getprop "filterList"
+00538: 104  getprop "display"
+00543: 104  setprop "filterList"
+00548: 104  pop
+00549: 105  goto 554 (+5)
+00554: 111  zero
+00555: 111  setlocal 1
+00558: 111  pop
+00559: 111  goto 672 (+113)
+00564: 112  loophead
+00565: 112  this
+00566: 112  getprop "filterList"
+00571: 112  getlocal 1
+00574: 112  getelem
+00575: 112  getprop "idx"
+00580: 112  setlocal 2
+00583: 112  pop
+00584: 113  this
+00585: 113  getprop "cfg"
+00590: 113  getprop "filterResults"
+00595: 113  getlocal 2
+00598: 113  getelem
+00599: 113  getprop "stringKey"
+00604: 113  setlocal 3
+00607: 113  pop
+00608: 114  this
+00609: 114  getprop "sortStrs"
+00614: 114  dup
+00615: 114  callprop "push"
+00620: 114  swap
+00621: 114  notearg
+00622: 114  name "xs"
+00627: 114  getprop "Tools"
+00632: 114  getprop "String"
+00637: 114  dup
+00638: 114  callprop "createString"
+00643: 114  swap
+00644: 114  notearg
+00645: 114  getlocal 3
+00648: 114  notearg
+00649: 114  call 1
+00652: 114  notearg
+00653: 114  call 1
+00656: 114  pop
+00657: 111  localinc 11
+00660: 111  getlocal 1
+00663: 111  pos
+00664: 111  dup
+00665: 111  one
+00666: 111  add
+00667: 111  setlocal 1
+00670: 111  pop
+00671: 111  pop
+00672: 111  loopentry
+00673: 111  getlocal 1
+00676: 111  this
+00677: 111  getprop "filterList"
+00682: 111  length "length"
+00687: 111  lt
+00688: 111  ifne 564 (-124)
+00693: 119  this
+00694: 119  dup
+00695: 119  callprop "setSelected"
+00700: 119  swap
+00701: 119  notearg
+00702: 119  zero
+00703: 119  notearg
+00704: 119  call 1
+00707: 119  pop
+00708: 119  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:62 ---
+;; function object[6] showPullList
+;; function metadata object[6] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:124 ---
+loc   line  op
+----- ----  --
+main:
+00000: 125  this
+00001: 125  getprop "bScrollView"
+00006: 125  not
+00007: 125  ifeq 51 (+44)
+00012: 126  this
+00013: 126  dup
+00014: 126  callprop "addChild"
+00019: 126  swap
+00020: 126  notearg
+00021: 126  this
+00022: 126  dup
+00023: 126  callprop "_getLazyInit_SortView"
+00028: 126  swap
+00029: 126  notearg
+00030: 126  call 0
+00033: 126  notearg
+00034: 126  call 1
+00037: 126  pop
+00038: 127  this
+00039: 127  true
+00040: 127  setprop "bScrollView"
+00045: 127  pop
+00046: 127  goto 100 (+54)
+00051: 129  this
+00052: 129  getprop "m_sortWidget"
+00057: 129  ifeq 84 (+27)
+00062: 130  this
+00063: 130  dup
+00064: 130  callprop "removeChild"
+00069: 130  swap
+00070: 130  notearg
+00071: 130  this
+00072: 130  getprop "m_sortWidget"
+00077: 130  notearg
+00078: 130  true
+00079: 130  notearg
+00080: 130  call 2
+00083: 130  pop
+00084: 133  this
+00085: 133  null
+00086: 133  setprop "m_sortWidget"
+00091: 133  pop
+00092: 134  this
+00093: 134  false
+00094: 134  setprop "bScrollView"
+00099: 134  pop
+00100: 135  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:124 ---
+;; function object[7] setSelected
+;; function metadata object[7] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:139 ---
+loc   line  op
+----- ----  --
+main:
+00000: 140  this
+00001: 140  getprop "sortBtn"
+00006: 140  dup
+00007: 140  callprop "setString"
+00012: 140  swap
+00013: 140  notearg
+00014: 140  this
+00015: 140  getprop "sortStrs"
+00020: 140  getarg 0
+00023: 140  getelem
+00024: 140  notearg
+00025: 140  call 1
+00028: 140  pop
+00029: 141  this
+00030: 141  this
+00031: 141  getprop "filterList"
+00036: 141  getarg 0
+00039: 141  getelem
+00040: 141  getprop "type"
+00045: 141  setprop "filterType"
+00050: 141  pop
+00051: 142  this
+00052: 142  this
+00053: 142  getprop "cfg"
+00058: 142  getprop "filterResults"
+00063: 142  this
+00064: 142  getprop "filterList"
+00069: 142  getarg 0
+00072: 142  getelem
+00073: 142  getprop "idx"
+00078: 142  getelem
+00079: 142  getprop "filterResult"
+00084: 142  setprop "filterResult"
+00089: 142  pop
+00090: 142  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:139 ---
+;; function object[8] onTouchBegan
+;; function metadata object[8] nargs=2 bindings=5
+;; arg[0] touch
+;; arg[1] e
+;; local[0] location
+;; local[1] locationInView
+;; local[2] boundingRect
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:145 ---
+loc   line  op
+----- ----  --
+main:
+00000: 146  getarg 0
+00003: 146  dup
+00004: 146  callprop "getLocation"
+00009: 146  swap
+00010: 146  notearg
+00011: 146  call 0
+00014: 146  setlocal 0
+00017: 146  pop
+00018: 147  this
+00019: 147  dup
+00020: 147  callprop "convertToNodeSpace"
+00025: 147  swap
+00026: 147  notearg
+00027: 147  getlocal 0
+00030: 147  notearg
+00031: 147  call 1
+00034: 147  setlocal 1
+00037: 147  pop
+00038: 148  name "cc"
+00043: 148  dup
+00044: 148  callprop "rect"
+00049: 148  swap
+00050: 148  notearg
+00051: 148  int8 -10
+00053: 148  notearg
+00054: 148  int32 -288
+00059: 148  notearg
+00060: 148  uint16 245
+00063: 148  notearg
+00064: 148  uint16 282
+00067: 148  notearg
+00068: 148  call 4
+00071: 148  setlocal 2
+00074: 148  pop
+00075: 149  name "cc"
+00080: 149  dup
+00081: 149  callprop "rectContainsPoint"
+00086: 149  swap
+00087: 149  notearg
+00088: 149  getlocal 2
+00091: 149  notearg
+00092: 149  getlocal 1
+00095: 149  notearg
+00096: 149  call 2
+00099: 149  true
+00100: 149  strictne
+00101: 149  and 115 (+14)
+00106: 149  pop
+00107: 149  this
+00108: 149  getprop "bScrollView"
+00113: 149  true
+00114: 149  stricteq
+00115: 149  ifeq 146 (+31)
+00120: 150  this
+00121: 150  true
+00122: 150  setprop "dispatchByTouchBegan"
+00127: 150  pop
+00128: 151  this
+00129: 151  dup
+00130: 151  callprop "showPullList"
+00135: 151  swap
+00136: 151  notearg
+00137: 151  call 0
+00140: 151  pop
+00141: 151  goto 154 (+13)
+00146: 153  this
+00147: 153  false
+00148: 153  setprop "dispatchByTouchBegan"
+00153: 153  pop
+00154: 156  false
+00155: 156  return
+00156: 156  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:145 ---
+;; function object[9] onSelectCell
+;; function metadata object[9] nargs=2 bindings=2
+;; arg[0] idx
+;; arg[1] no_manual
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:160 ---
+loc   line  op
+----- ----  --
+main:
+00000: 161  this
+00001: 161  getarg 0
+00004: 161  setprop "curSortIdx"
+00009: 161  pop
+00010: 162  this
+00011: 162  dup
+00012: 162  callprop "setSelected"
+00017: 162  swap
+00018: 162  notearg
+00019: 162  getarg 0
+00022: 162  notearg
+00023: 162  call 1
+00026: 162  pop
+00027: 164  getarg 1
+00030: 164  name "undefined"
+00035: 164  stricteq
+00036: 164  ifeq 85 (+49)
+00041: 165  this
+00042: 165  dup
+00043: 165  callprop "runAction"
+00048: 165  swap
+00049: 165  notearg
+00050: 165  name "cc"
+00055: 165  getprop "CallFunc"
+00060: 165  dup
+00061: 165  callprop "create"
+00066: 165  swap
+00067: 165  notearg
+00068: 165  this
+00069: 165  getprop "showPullList"
+00074: 165  notearg
+00075: 165  this
+00076: 165  notearg
+00077: 165  call 2
+00080: 165  notearg
+00081: 165  call 1
+00084: 165  pop
+00085: 168  this
+00086: 168  getprop "notifyChange"
+00091: 168  ifeq 123 (+32)
+00096: 169  this
+00097: 169  dup
+00098: 169  callprop "notifyChange"
+00103: 169  swap
+00104: 169  notearg
+00105: 169  this
+00106: 169  getprop "filterType"
+00111: 169  notearg
+00112: 169  this
+00113: 169  getprop "filterResult"
+00118: 169  notearg
+00119: 169  call 2
+00122: 169  pop
+00123: 170  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:160 ---
+;; function object[10] setSortChgCallBack
+;; function metadata object[10] nargs=1 bindings=1
+;; arg[0] callBack
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:173 ---
+loc   line  op
+----- ----  --
+main:
+00000: 174  this
+00001: 174  getarg 0
+00004: 174  setprop "notifyChange"
+00009: 174  pop
+00010: 174  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:173 ---
+;; function object[11] getDefaultFilter
+;; function metadata object[11] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:177 ---
+loc   line  op
+----- ----  --
+main:
+00000: 178  newinit 1
+00005: 178  this
+00006: 178  getprop "filterList"
+00011: 178  zero
+00012: 178  getelem
+00013: 178  getprop "type"
+00018: 178  initprop "filterType"
+00023: 178  this
+00024: 178  getprop "cfg"
+00029: 178  getprop "filterResults"
+00034: 178  zero
+00035: 178  getelem
+00036: 178  getprop "filterResult"
+00041: 178  initprop "filterResult"
+00046: 178  endinit
+00047: 178  return
+00048: 178  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:177 ---
+;; function object[12] getCurFilter
+;; function metadata object[12] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:181 ---
+loc   line  op
+----- ----  --
+main:
+00000: 182  this
+00001: 182  getprop "filterType"
+00006: 182  and 18 (+12)
+00011: 182  pop
+00012: 182  this
+00013: 182  getprop "filterResult"
+00018: 182  ifeq 52 (+34)
+00023: 183  newinit 1
+00028: 183  this
+00029: 183  getprop "filterType"
+00034: 183  initprop "filterType"
+00039: 183  this
+00040: 183  getprop "filterResult"
+00045: 183  initprop "filterResult"
+00050: 183  endinit
+00051: 183  return
+00052: 185  null
+00053: 185  return
+00054: 185  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:181 ---
+;; function object[13] getIdxForFilterIdx
+;; function metadata object[13] nargs=1 bindings=3
+;; arg[0] filterIdx
+;; local[0] realIdx
+;; local[1] i
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:188 ---
+loc   line  op
+----- ----  --
+main:
+00000: 189  int8 -1
+00002: 189  setlocal 0
+00005: 189  pop
+00006: 190  zero
+00007: 190  setlocal 1
+00010: 190  pop
+00011: 190  goto 68 (+57)
+00016: 191  loophead
+00017: 191  this
+00018: 191  getprop "filterList"
+00023: 191  getlocal 1
+00026: 191  getelem
+00027: 191  getprop "idx"
+00032: 191  getarg 0
+00035: 191  eq
+00036: 191  ifeq 53 (+17)
+00041: 192  getlocal 1
+00044: 192  setlocal 0
+00047: 192  pop
+00048: 193  goto 89 (+41)
+00053: 190  localinc 11
+00056: 190  getlocal 1
+00059: 190  pos
+00060: 190  dup
+00061: 190  one
+00062: 190  add
+00063: 190  setlocal 1
+00066: 190  pop
+00067: 190  pop
+00068: 190  loopentry
+00069: 190  getlocal 1
+00072: 190  this
+00073: 190  getprop "filterList"
+00078: 190  length "length"
+00083: 190  lt
+00084: 190  ifne 16 (-68)
+00089: 196  name "xs"
+00094: 196  dup
+00095: 196  callprop "log"
+00100: 196  swap
+00101: 196  notearg
+00102: 196  string "canbeset ="
+00107: 196  getlocal 0
+00110: 196  add
+00111: 196  notearg
+00112: 196  call 1
+00115: 196  pop
+00116: 197  getlocal 0
+00119: 197  return
+00120: 197  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:188 ---
+;; function object[14] setBaseTouchPriority
+;; function metadata object[14] nargs=1 bindings=1
+;; arg[0] priority
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:200 ---
+loc   line  op
+----- ----  --
+main:
+00000: 201  this
+00001: 201  getarg 0
+00004: 201  setprop "m_baseTouchPriority"
+00009: 201  pop
+00010: 202  this
+00011: 202  dup
+00012: 202  callprop "setTouchPriority"
+00017: 202  swap
+00018: 202  notearg
+00019: 202  this
+00020: 202  getprop "m_baseTouchPriority"
+00025: 202  this
+00026: 202  getprop "cfg"
+00031: 202  getprop "base"
+00036: 202  getprop "priority"
+00041: 202  add
+00042: 202  notearg
+00043: 202  call 1
+00046: 202  pop
+00047: 203  this
+00048: 203  getprop "sortBtn"
+00053: 203  dup
+00054: 203  callprop "setTouchPriority"
+00059: 203  swap
+00060: 203  notearg
+00061: 203  this
+00062: 203  getprop "m_baseTouchPriority"
+00067: 203  this
+00068: 203  getprop "cfg"
+00073: 203  getprop "sortBtn"
+00078: 203  getprop "priority"
+00083: 203  add
+00084: 203  notearg
+00085: 203  call 1
+00088: 203  pop
+00089: 205  this
+00090: 205  getprop "m_sortWidget"
+00095: 205  ifeq 142 (+47)
+00100: 206  this
+00101: 206  getprop "m_sortWidget"
+00106: 206  dup
+00107: 206  callprop "setTouchPriority"
+00112: 206  swap
+00113: 206  notearg
+00114: 206  this
+00115: 206  getprop "m_baseTouchPriority"
+00120: 206  this
+00121: 206  getprop "cfg"
+00126: 206  getprop "sortWidget"
+00131: 206  getprop "priority"
+00136: 206  add
+00137: 206  notearg
+00138: 206  call 1
+00141: 206  pop
+00142: 207  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:200 ---
+;; function object[15] create
+;; function metadata object[15] nargs=1 bindings=2
+;; arg[0] filterType
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:372 ---
+loc   line  op
+----- ----  --
+main:
+00000: 373  name "xs"
+00005: 373  getprop "Views"
+00010: 373  getprop "SortController"
+00015: 373  undefined
+00016: 373  notearg
+00017: 373  new 0
+00020: 373  setlocal 0
+00023: 373  pop
+00024: 374  getlocal 0
+00027: 374  and 51 (+24)
+00032: 374  pop
+00033: 374  getlocal 0
+00036: 374  dup
+00037: 374  callprop "init"
+00042: 374  swap
+00043: 374  notearg
+00044: 374  getarg 0
+00047: 374  notearg
+00048: 374  call 1
+00051: 374  ifeq 60 (+9)
+00056: 375  getlocal 0
+00059: 375  return
+00060: 378  name "xs"
+00065: 378  dup
+00066: 378  callprop "assert"
+00071: 378  swap
+00072: 378  notearg
+00073: 378  false
+00074: 378  notearg
+00075: 378  string "xs.Views.SortController.create"
+00080: 378  notearg
+00081: 378  getlocal 0
+00084: 378  notearg
+00085: 378  call 3
+00088: 378  pop
+00089: 380  null
+00090: 380  return
+00091: 380  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/SortController.js:372 ---

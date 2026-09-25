@@ -1,0 +1,2296 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Views/Table/ChargeItemTableView.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=58 object[0]
+;; FUNCTION-MAP kind=lambda offset=68 object[1]
+;; FUNCTION-MAP kind=lambda offset=78 object[2]
+;; FUNCTION-MAP kind=lambda offset=88 object[3]
+;; FUNCTION-MAP kind=lambda offset=98 object[4]
+;; FUNCTION-MAP kind=lambda offset=108 object[5]
+;; FUNCTION-MAP kind=lambda offset=118 object[6]
+;; FUNCTION-MAP kind=lambda offset=128 object[7]
+;; FUNCTION-MAP kind=lambda offset=138 object[8]
+;; FUNCTION-MAP kind=lambda offset=148 object[9]
+;; FUNCTION-MAP kind=lambda offset=158 object[10]
+;; FUNCTION-MAP kind=lambda offset=168 object[11]
+;; FUNCTION-MAP kind=lambda offset=209 object[12]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   6  name "xs"
+00005:   6  getprop "Views"
+00010:   6  getprop "Table"
+00015:   6  name "xs"
+00020:   6  getprop "Views"
+00025:   6  getprop "Table"
+00030:   6  getprop "BaseTableView"
+00035:   6  dup
+00036:   6  callprop "extend"
+00041:   6  swap
+00042:   6  notearg
+00043:   6  newinit 1
+00048:   8  string "ChargeItemTableView"
+00053:   8  initprop "name"
+00058:  10  lambda (function () {
+    [sourceless code]
+})
+00063:  10  initprop "init"
+00068:  23  lambda (function () {
+    [sourceless code]
+})
+00073:  23  initprop "onEnter"
+00078:  28  lambda (function () {
+    [sourceless code]
+})
+00083:  28  initprop "onExit"
+00088:  33  lambda (function () {
+    [sourceless code]
+})
+00093:  33  initprop "getProductList"
+00098:  61  lambda (function () {
+    [sourceless code]
+})
+00103:  61  initprop "onResponse"
+00108:  68  lambda (function () {
+    [sourceless code]
+})
+00113:  68  initprop "refreshData"
+00118:  75  lambda (function () {
+    [sourceless code]
+})
+00123:  75  initprop "createCell"
+00128:  80  lambda (function () {
+    [sourceless code]
+})
+00133:  80  initprop "makeViewSize"
+00138:  84  lambda (function () {
+    [sourceless code]
+})
+00143:  84  initprop "makeCellSize"
+00148:  88  lambda (function () {
+    [sourceless code]
+})
+00153:  88  initprop "tableCellTouched"
+00158: 180  lambda (function () {
+    [sourceless code]
+})
+00163: 180  initprop "onResponse_CreateOrder"
+00168: 399  lambda (function () {
+    [sourceless code]
+})
+00173: 399  initprop "onResponse_Error"
+00178: 399  endinit
+00179: 399  notearg
+00180: 399  call 1
+00183: 399  setprop "ChargeItemTableView"
+00188: 399  popv
+00189: 416  name "xs"
+00194: 416  getprop "Views"
+00199: 416  getprop "Table"
+00204: 416  getprop "ChargeItemTableView"
+00209: 416  lambda (function () {
+    [sourceless code]
+})
+00214: 416  setprop "create"
+00219: 416  popv
+00220: 424  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:1 ---
+;; function object[0] init
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  this
+00001:  11  dup
+00002:  11  callprop "_super"
+00007:  11  swap
+00008:  11  notearg
+00009:  11  call 0
+00012:  11  not
+00013:  11  ifeq 20 (+7)
+00018:  12  false
+00019:  12  return
+00020:  15  this
+00021:  15  dup
+00022:  15  callprop "setDirection"
+00027:  15  swap
+00028:  15  notearg
+00029:  15  name "cc"
+00034:  15  getprop "SCROLLVIEW_DIRECTION_VERTICAL"
+00039:  15  notearg
+00040:  15  call 1
+00043:  15  pop
+00044:  16  this
+00045:  16  dup
+00046:  16  callprop "setVerticalFillOrder"
+00051:  16  swap
+00052:  16  notearg
+00053:  16  name "cc"
+00058:  16  getprop "TABLEVIEW_FILL_TOPDOWN"
+00063:  16  notearg
+00064:  16  call 1
+00067:  16  pop
+00068:  18  this
+00069:  18  dup
+00070:  18  callprop "getProductList"
+00075:  18  swap
+00076:  18  notearg
+00077:  18  call 0
+00080:  18  pop
+00081:  20  true
+00082:  20  return
+00083:  20  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:10 ---
+;; function object[1] onEnter
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:23 ---
+loc   line  op
+----- ----  --
+main:
+00000:  24  this
+00001:  24  dup
+00002:  24  callprop "_super"
+00007:  24  swap
+00008:  24  notearg
+00009:  24  call 0
+00012:  24  pop
+00013:  25  name "xs"
+00018:  25  getprop "Utils"
+00023:  25  getprop "Notify"
+00028:  25  dup
+00029:  25  callprop "addObserver"
+00034:  25  swap
+00035:  25  notearg
+00036:  25  this
+00037:  25  notearg
+00038:  25  this
+00039:  25  getprop "getProductList"
+00044:  25  notearg
+00045:  25  name "xs"
+00050:  25  getprop "Constant_Notify_Event_ChargeSucess"
+00055:  25  notearg
+00056:  25  call 3
+00059:  25  pop
+00060:  25  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:23 ---
+;; function object[2] onExit
+;; function metadata object[2] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:28 ---
+loc   line  op
+----- ----  --
+main:
+00000:  29  this
+00001:  29  dup
+00002:  29  callprop "_super"
+00007:  29  swap
+00008:  29  notearg
+00009:  29  call 0
+00012:  29  pop
+00013:  30  name "xs"
+00018:  30  getprop "Utils"
+00023:  30  getprop "Notify"
+00028:  30  dup
+00029:  30  callprop "removeObserver"
+00034:  30  swap
+00035:  30  notearg
+00036:  30  this
+00037:  30  notearg
+00038:  30  name "xs"
+00043:  30  getprop "Constant_Notify_Event_ChargeSucess"
+00048:  30  notearg
+00049:  30  call 2
+00052:  30  pop
+00053:  30  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:28 ---
+;; function object[3] getProductList
+;; function metadata object[3] nargs=0 bindings=1
+;; local[0] param
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:33 ---
+loc   line  op
+----- ----  --
+main:
+00000:  35  newinit 1
+00005:  35  endinit
+00006:  35  setlocal 0
+00009:  35  pop
+00010:  36  name "xsc"
+00015:  36  getprop "Tools"
+00020:  36  getprop "PaySys"
+00025:  36  dup
+00026:  36  callprop "isUsingAppStore"
+00031:  36  swap
+00032:  36  notearg
+00033:  36  call 0
+00036:  36  ifeq 81 (+45)
+00041:  37  getlocal 0
+00044:  37  name "xs"
+00049:  37  getprop "Tools"
+00054:  37  getprop "Jsb"
+00059:  37  dup
+00060:  37  callprop "getChannelId"
+00065:  37  swap
+00066:  37  notearg
+00067:  37  call 0
+00070:  37  setprop "special_channel"
+00075:  37  pop
+00076:  37  goto 454 (+378)
+00081:  39  name "xsc"
+00086:  39  getprop "Tools"
+00091:  39  getprop "PaySys"
+00096:  39  dup
+00097:  39  callprop "isUsingAnySdk"
+00102:  39  swap
+00103:  39  notearg
+00104:  39  call 0
+00107:  39  ifeq 152 (+45)
+00112:  40  getlocal 0
+00115:  40  name "xs"
+00120:  40  getprop "AnySdk"
+00125:  40  getprop "AnySdkHelp_js"
+00130:  40  dup
+00131:  40  callprop "getChannelId"
+00136:  40  swap
+00137:  40  notearg
+00138:  40  call 0
+00141:  40  setprop "special_channel"
+00146:  40  pop
+00147:  40  goto 454 (+307)
+00152:  42  name "xsc"
+00157:  42  getprop "Tools"
+00162:  42  getprop "PaySys"
+00167:  42  dup
+00168:  42  callprop "isUsing3rdSdk"
+00173:  42  swap
+00174:  42  notearg
+00175:  42  call 0
+00178:  42  ifeq 247 (+69)
+00183:  43  getlocal 0
+00186:  43  name "xs"
+00191:  43  getprop "JsbConnecter"
+00196:  43  dup
+00197:  43  callprop "getInstance"
+00202:  43  swap
+00203:  43  notearg
+00204:  43  call 0
+00207:  43  dup
+00208:  43  callprop "invoke"
+00213:  43  swap
+00214:  43  notearg
+00215:  43  string "Get3rdChName"
+00220:  43  notearg
+00221:  43  string "Get3rdChName"
+00226:  43  notearg
+00227:  43  string "|"
+00232:  43  notearg
+00233:  43  call 3
+00236:  43  setprop "special_channel"
+00241:  43  pop
+00242:  43  goto 454 (+212)
+00247:  45  name "xsc"
+00252:  45  getprop "Tools"
+00257:  45  getprop "PaySys"
+00262:  45  dup
+00263:  45  callprop "isUsingEasySdk"
+00268:  45  swap
+00269:  45  notearg
+00270:  45  call 0
+00273:  45  ifeq 454 (+181)
+00278:  46  name "xs"
+00283:  46  getprop "Tools"
+00288:  46  getprop "Jsb"
+00293:  46  getprop "EasySdk"
+00298:  46  getprop "Payment"
+00303:  46  dup
+00304:  46  callprop "getPlatformId"
+00309:  46  swap
+00310:  46  notearg
+00311:  46  call 0
+00314:  46  string "appstore"
+00319:  46  eq
+00320:  46  ifeq 344 (+24)
+00325:  47  getlocal 0
+00328:  47  string "210016"
+00333:  47  setprop "special_channel"
+00338:  47  pop
+00339:  47  goto 454 (+115)
+00344:  49  getlocal 0
+00347:  49  name "xs"
+00352:  49  getprop "Tools"
+00357:  49  getprop "Jsb"
+00362:  49  getprop "EasySdk"
+00367:  49  getprop "Payment"
+00372:  49  dup
+00373:  49  callprop "getPlatformIds"
+00378:  49  swap
+00379:  49  notearg
+00380:  49  call 0
+00383:  49  setprop "special_channel"
+00388:  49  pop
+00389:  50  name "cc"
+00394:  50  dup
+00395:  50  callprop "log"
+00400:  50  swap
+00401:  50  notearg
+00402:  50  string "param.special_channel "
+00407:  50  getlocal 0
+00410:  50  getprop "special_channel"
+00415:  50  add
+00416:  50  notearg
+00417:  50  call 1
+00420:  50  pop
+00421:  51  getlocal 0
+00424:  51  getprop "special_channel"
+00429:  51  string "googlepay"
+00434:  51  eq
+00435:  51  ifeq 454 (+19)
+00440:  53  getlocal 0
+00443:  53  string "FacebookGooglePay"
+00448:  53  setprop "special_channel"
+00453:  53  pop
+00454:  58  name "xs"
+00459:  58  getprop "Tools"
+00464:  58  getprop "Net"
+00469:  58  dup
+00470:  58  callprop "requestChargeItemList"
+00475:  58  swap
+00476:  58  notearg
+00477:  58  getlocal 0
+00480:  58  notearg
+00481:  58  this
+00482:  58  getprop "onResponse"
+00487:  58  notearg
+00488:  58  this
+00489:  58  notearg
+00490:  58  call 3
+00493:  58  pop
+00494:  58  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:33 ---
+;; function object[4] onResponse
+;; function metadata object[4] nargs=1 bindings=1
+;; arg[0] jsonData
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:61 ---
+loc   line  op
+----- ----  --
+main:
+00000:  62  this
+00001:  62  getarg 0
+00004:  62  getprop "product_list"
+00009:  62  setprop "itemDataList"
+00014:  62  pop
+00015:  63  this
+00016:  63  dup
+00017:  63  callprop "refreshDataAndReload"
+00022:  63  swap
+00023:  63  notearg
+00024:  63  call 0
+00027:  63  pop
+00028:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:61 ---
+;; function object[5] refreshData
+;; function metadata object[5] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:68 ---
+loc   line  op
+----- ----  --
+main:
+00000:  69  this
+00001:  69  getprop "itemDataList"
+00006:  69  ifeq 24 (+18)
+00011:  70  this
+00012:  70  this
+00013:  70  getprop "itemDataList"
+00018:  70  setprop "arrayModel"
+00023:  70  pop
+00024:  71  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:68 ---
+;; function object[6] createCell
+;; function metadata object[6] nargs=1 bindings=1
+;; arg[0] idx
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:75 ---
+loc   line  op
+----- ----  --
+main:
+00000:  76  name "xs"
+00005:  76  getprop "Views"
+00010:  76  getprop "ChargeItemCell"
+00015:  76  dup
+00016:  76  callprop "create"
+00021:  76  swap
+00022:  76  notearg
+00023:  76  this
+00024:  76  getprop "arrayModel"
+00029:  76  getarg 0
+00032:  76  getelem
+00033:  76  notearg
+00034:  76  call 1
+00037:  76  return
+00038:  76  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:75 ---
+;; function object[7] makeViewSize
+;; function metadata object[7] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:80 ---
+loc   line  op
+----- ----  --
+main:
+00000:  81  name "cc"
+00005:  81  dup
+00006:  81  callprop "size"
+00011:  81  swap
+00012:  81  notearg
+00013:  81  uint16 512
+00016:  81  notearg
+00017:  81  uint16 470
+00020:  81  notearg
+00021:  81  call 2
+00024:  81  return
+00025:  81  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:80 ---
+;; function object[8] makeCellSize
+;; function metadata object[8] nargs=0 bindings=0
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:84 ---
+loc   line  op
+----- ----  --
+main:
+00000:  85  name "cc"
+00005:  85  dup
+00006:  85  callprop "size"
+00011:  85  swap
+00012:  85  notearg
+00013:  85  uint16 495
+00016:  85  notearg
+00017:  85  int8 110
+00019:  85  notearg
+00020:  85  call 2
+00023:  85  return
+00024:  85  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:84 ---
+;; function object[9] tableCellTouched
+;; function metadata object[9] nargs=2 bindings=4
+;; arg[0] table
+;; arg[1] cell
+;; local[0] idx
+;; local[1] param
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=57 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:88 ---
+loc   line  op
+----- ----  --
+main:
+00000:  90  name "xs"
+00005:  90  getprop "isVersionForPublish"
+00010:  90  and 27 (+17)
+00015:  90  pop
+00016:  90  name "xs"
+00021:  90  getprop "temp_3rd"
+00026:  90  not
+00027:  90  ifeq 86 (+59)
+00032:  91  name "xs"
+00037:  91  getprop "isAdult"
+00042:  91  not
+00043:  91  ifeq 86 (+43)
+00048:  92  this
+00049:  92  dup
+00050:  92  callprop "schedule"
+00055:  92  swap
+00056:  92  notearg
+00057:  92  lambda (function () {
+    [sourceless code]
+})
+00062:  92  dup
+00063:  92  callprop "bind"
+00068:  92  swap
+00069:  92  notearg
+00070: 117  this
+00071: 117  notearg
+00072: 117  call 1
+00075: 117  notearg
+00076: 117  one
+00077: 117  notearg
+00078: 117  false
+00079: 117  notearg
+00080: 117  call 3
+00083: 117  pop
+00084: 118  undefined
+00085: 118  return
+00086: 123  getarg 1
+00089: 123  dup
+00090: 123  callprop "getIdx"
+00095: 123  swap
+00096: 123  notearg
+00097: 123  call 0
+00100: 123  setlocal 0
+00103: 123  pop
+00104: 125  name "xsc"
+00109: 125  getprop "app_channel"
+00114: 125  name "xsc"
+00119: 125  getprop "Const_Proj_channel_BF40003"
+00124: 125  eq
+00125: 125  ifeq 192 (+67)
+00130: 126  name "xs"
+00135: 126  getprop "Views"
+00140: 126  getprop "Mgr"
+00145: 126  dup
+00146: 126  callprop "showToast"
+00151: 126  swap
+00152: 126  notearg
+00153: 126  name "xs"
+00158: 126  getprop "Tools"
+00163: 126  getprop "String"
+00168: 126  dup
+00169: 126  callprop "createString"
+00174: 126  swap
+00175: 126  notearg
+00176: 126  string "str_chongzhi_tips_nochongzhi"
+00181: 126  notearg
+00182: 126  call 1
+00185: 126  notearg
+00186: 126  call 1
+00189: 126  pop
+00190: 127  undefined
+00191: 127  return
+00192: 129  this
+00193: 129  this
+00194: 129  getprop "arrayModel"
+00199: 129  getlocal 0
+00202: 129  getelem
+00203: 129  setprop "selectedItemData"
+00208: 129  pop
+00209: 130  this
+00210: 130  this
+00211: 130  getprop "arrayModel"
+00216: 130  getlocal 0
+00219: 130  getelem
+00220: 130  getprop "pk_id"
+00225: 130  setprop "selectedPkId"
+00230: 130  pop
+00231: 132  this
+00232: 132  name "xs"
+00237: 132  getprop "Models"
+00242: 132  getprop "Item"
+00247: 132  dup
+00248: 132  callprop "createWithBase"
+00253: 132  swap
+00254: 132  notearg
+00255: 132  this
+00256: 132  getprop "arrayModel"
+00261: 132  getlocal 0
+00264: 132  getelem
+00265: 132  getprop "item_id"
+00270: 132  notearg
+00271: 132  call 1
+00274: 132  setprop "item"
+00279: 132  pop
+00280: 134  name "xs"
+00285: 134  dup
+00286: 134  callprop "dump"
+00291: 134  swap
+00292: 134  notearg
+00293: 134  string "this.arrayModel"
+00298: 134  notearg
+00299: 134  this
+00300: 134  getprop "arrayModel"
+00305: 134  getlocal 0
+00308: 134  getelem
+00309: 134  notearg
+00310: 134  call 2
+00313: 134  pop
+00314: 135  name "xs"
+00319: 135  dup
+00320: 135  callprop "log"
+00325: 135  swap
+00326: 135  notearg
+00327: 135  string "xs.app_account_sys = "
+00332: 135  name "xs"
+00337: 135  getprop "app_account_sys"
+00342: 135  add
+00343: 135  notearg
+00344: 135  call 1
+00347: 135  pop
+00348: 137  name "xsc"
+00353: 137  getprop "Tools"
+00358: 137  getprop "PaySys"
+00363: 137  dup
+00364: 137  callprop "isUsingAppStore"
+00369: 137  swap
+00370: 137  notearg
+00371: 137  call 0
+00374: 137  ifeq 451 (+77)
+00379: 140  name "xs"
+00384: 140  getprop "JsbConnecter"
+00389: 140  dup
+00390: 140  callprop "getInstance"
+00395: 140  swap
+00396: 140  notearg
+00397: 140  call 0
+00400: 140  dup
+00401: 140  callprop "invoke"
+00406: 140  swap
+00407: 140  notearg
+00408: 141  string "AppStore"
+00413: 141  notearg
+00414: 141  string "pay"
+00419: 141  notearg
+00420: 141  string ""
+00425: 141  this
+00426: 141  getprop "arrayModel"
+00431: 141  getlocal 0
+00434: 141  getelem
+00435: 141  getprop "pk_id"
+00440: 141  add
+00441: 141  notearg
+00442: 141  call 3
+00445: 141  pop
+00446: 141  goto 980 (+534)
+00451: 147  newinit 1
+00456: 147  endinit
+00457: 147  setlocal 1
+00460: 147  pop
+00461: 148  getlocal 1
+00464: 148  this
+00465: 148  getprop "arrayModel"
+00470: 148  getlocal 0
+00473: 148  getelem
+00474: 148  getprop "pk_id"
+00479: 148  setprop "product_id"
+00484: 148  pop
+00485: 151  name "xsc"
+00490: 151  getprop "Tools"
+00495: 151  getprop "PaySys"
+00500: 151  dup
+00501: 151  callprop "isUsingAnySdk"
+00506: 151  swap
+00507: 151  notearg
+00508: 151  call 0
+00511: 151  ifeq 581 (+70)
+00516: 152  getlocal 1
+00519: 152  string ""
+00524: 152  name "xs"
+00529: 152  getprop "app_indentify"
+00534: 152  add
+00535: 152  setprop "s_type"
+00540: 152  pop
+00541: 153  getlocal 1
+00544: 153  name "xs"
+00549: 153  getprop "AnySdk"
+00554: 153  getprop "AnySdkHelp_js"
+00559: 153  dup
+00560: 153  callprop "getChannelId"
+00565: 153  swap
+00566: 153  notearg
+00567: 153  call 0
+00570: 153  setprop "special_channel"
+00575: 153  pop
+00576: 153  goto 933 (+357)
+00581: 155  name "xsc"
+00586: 155  getprop "Tools"
+00591: 155  getprop "PaySys"
+00596: 155  dup
+00597: 155  callprop "isUsing3rdSdk"
+00602: 155  swap
+00603: 155  notearg
+00604: 155  call 0
+00607: 155  ifeq 676 (+69)
+00612: 156  getlocal 1
+00615: 156  name "xs"
+00620: 156  getprop "JsbConnecter"
+00625: 156  dup
+00626: 156  callprop "getInstance"
+00631: 156  swap
+00632: 156  notearg
+00633: 156  call 0
+00636: 156  dup
+00637: 156  callprop "invoke"
+00642: 156  swap
+00643: 156  notearg
+00644: 156  string "Get3rdChName"
+00649: 156  notearg
+00650: 156  string "Get3rdChName"
+00655: 156  notearg
+00656: 156  string "|"
+00661: 156  notearg
+00662: 156  call 3
+00665: 156  setprop "special_channel"
+00670: 156  pop
+00671: 156  goto 933 (+262)
+00676: 158  name "xsc"
+00681: 158  getprop "Tools"
+00686: 158  getprop "PaySys"
+00691: 158  dup
+00692: 158  callprop "isUsingEasySdk"
+00697: 158  swap
+00698: 158  notearg
+00699: 158  call 0
+00702: 158  ifeq 888 (+186)
+00707: 159  name "xs"
+00712: 159  getprop "Tools"
+00717: 159  getprop "Jsb"
+00722: 159  getprop "EasySdk"
+00727: 159  getprop "Payment"
+00732: 159  dup
+00733: 159  callprop "getPlatformId"
+00738: 159  swap
+00739: 159  notearg
+00740: 159  call 0
+00743: 159  string "appstore"
+00748: 159  eq
+00749: 159  ifeq 773 (+24)
+00754: 160  getlocal 1
+00757: 160  string "210016"
+00762: 160  setprop "special_channel"
+00767: 160  pop
+00768: 160  goto 883 (+115)
+00773: 162  getlocal 1
+00776: 162  name "xs"
+00781: 162  getprop "Tools"
+00786: 162  getprop "Jsb"
+00791: 162  getprop "EasySdk"
+00796: 162  getprop "Payment"
+00801: 162  dup
+00802: 162  callprop "getPlatformIds"
+00807: 162  swap
+00808: 162  notearg
+00809: 162  call 0
+00812: 162  setprop "special_channel"
+00817: 162  pop
+00818: 163  name "cc"
+00823: 163  dup
+00824: 163  callprop "log"
+00829: 163  swap
+00830: 163  notearg
+00831: 163  string "param.special_channel "
+00836: 163  getlocal 1
+00839: 163  getprop "special_channel"
+00844: 163  add
+00845: 163  notearg
+00846: 163  call 1
+00849: 163  pop
+00850: 164  getlocal 1
+00853: 164  getprop "special_channel"
+00858: 164  string "googlepay"
+00863: 164  eq
+00864: 164  ifeq 883 (+19)
+00869: 166  getlocal 1
+00872: 166  string "FacebookGooglePay"
+00877: 166  setprop "special_channel"
+00882: 166  pop
+00883: 166  goto 933 (+50)
+00888: 170  name "xsc"
+00893: 170  getprop "Tools"
+00898: 170  getprop "PaySys"
+00903: 170  dup
+00904: 170  callprop "isUsingAliPay"
+00909: 170  swap
+00910: 170  notearg
+00911: 170  call 0
+00914: 170  ifeq 933 (+19)
+00919: 171  getlocal 1
+00922: 171  string "1001"
+00927: 171  setprop "order_type"
+00932: 171  pop
+00933: 173  name "xs"
+00938: 173  getprop "Tools"
+00943: 173  getprop "Net"
+00948: 173  dup
+00949: 173  callprop "requestCreateOrder"
+00954: 173  swap
+00955: 173  notearg
+00956: 173  getlocal 1
+00959: 173  notearg
+00960: 173  this
+00961: 173  getprop "onResponse_CreateOrder"
+00966: 173  notearg
+00967: 173  this
+00968: 173  getprop "onResponse_Error"
+00973: 173  notearg
+00974: 173  this
+00975: 173  notearg
+00976: 173  call 4
+00979: 173  pop
+00980: 175  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:88 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+;; FUNCTION-MAP kind=lambda offset=179 object[0]
+;; FUNCTION-MAP kind=lambda offset=202 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:92 ---
+loc   line  op
+----- ----  --
+main:
+00000:  93  this
+00001:  93  dup
+00002:  93  callprop "unschedule"
+00007:  93  swap
+00008:  93  notearg
+00009:  93  call 0
+00012:  93  pop
+00013:  94  name "xs"
+00018:  94  getprop "Views"
+00023:  94  getprop "Mgr"
+00028:  94  dup
+00029:  94  callprop "_myreleaseViewByType"
+00034:  94  swap
+00035:  94  notearg
+00036:  94  name "xs"
+00041:  94  getprop "Constant_ViewType_Dlg"
+00046:  94  notearg
+00047:  94  call 1
+00050:  94  pop
+00051:  95  name "xs"
+00056:  95  getprop "Views"
+00061:  95  getprop "Mgr"
+00066:  95  dup
+00067:  95  callprop "showDialogByName"
+00072:  95  swap
+00073:  95  notearg
+00074:  95  string "common"
+00079:  95  notearg
+00080:  95  newinit 1
+00085:  96  string "IdCardBinding_10"
+00090:  96  initprop "title"
+00095:  97  string "IdCardBinding_11"
+00100:  97  initprop "content"
+00105:  98  name "xs"
+00110:  98  getprop "Tools"
+00115:  98  getprop "String"
+00120:  98  dup
+00121:  98  callprop "createString"
+00126:  98  swap
+00127:  98  notearg
+00128:  98  string "1070610006"
+00133:  98  notearg
+00134:  98  call 1
+00137:  98  initprop "leftText"
+00142:  99  name "xs"
+00147:  99  getprop "Tools"
+00152:  99  getprop "String"
+00157:  99  dup
+00158:  99  callprop "createString"
+00163:  99  swap
+00164:  99  notearg
+00165:  99  string "IdCardBinding_18"
+00170:  99  notearg
+00171:  99  call 1
+00174:  99  initprop "rightText"
+00179: 100  lambda (function () {
+    [sourceless code]
+})
+00184: 100  dup
+00185: 100  callprop "bind"
+00190: 100  swap
+00191: 100  notearg
+00192: 102  this
+00193: 102  notearg
+00194: 102  call 1
+00197: 102  initprop "leftCB"
+00202: 103  lambda (function () {
+    [sourceless code]
+})
+00207: 103  dup
+00208: 103  callprop "bind"
+00213: 103  swap
+00214: 103  notearg
+00215: 114  this
+00216: 114  notearg
+00217: 114  call 1
+00220: 114  initprop "rightCB"
+00225: 114  endinit
+00226: 114  notearg
+00227: 114  call 2
+00230: 114  pop
+00231: 115  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:92 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:100 ---
+loc   line  op
+----- ----  --
+main:
+00000: 101  name "xs"
+00005: 101  getprop "Views"
+00010: 101  getprop "Mgr"
+00015: 101  dup
+00016: 101  callprop "hideDialog"
+00021: 101  swap
+00022: 101  notearg
+00023: 101  call 0
+00026: 101  pop
+00027: 101  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:100 ---
+;; function object[1] <anonymous>
+;; function metadata object[1] nargs=0 bindings=0
+
+;; nested bytecode depth=3
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:103 ---
+loc   line  op
+----- ----  --
+main:
+00000: 104  name "xs"
+00005: 104  getprop "Views"
+00010: 104  getprop "Mgr"
+00015: 104  dup
+00016: 104  callprop "hideDialog"
+00021: 104  swap
+00022: 104  notearg
+00023: 104  call 0
+00026: 104  pop
+00027: 105  name "xs"
+00032: 105  getprop "Profile"
+00037: 105  getprop "UserCfg"
+00042: 105  dup
+00043: 105  callprop "getLoginType"
+00048: 105  swap
+00049: 105  notearg
+00050: 105  call 0
+00053: 105  name "xs"
+00058: 105  getprop "Constant_LoginType_Visitor"
+00063: 105  stricteq
+00064: 105  ifeq 107 (+43)
+00069: 106  name "xs"
+00074: 106  getprop "Views"
+00079: 106  getprop "Mgr"
+00084: 106  dup
+00085: 106  callprop "showToastByStringId"
+00090: 106  swap
+00091: 106  notearg
+00092: 106  string "IdCardBinding_9"
+00097: 106  notearg
+00098: 106  call 1
+00101: 106  pop
+00102: 106  goto 193 (+91)
+00107: 108  name "xs"
+00112: 108  getprop "isAdult"
+00117: 108  ifeq 160 (+43)
+00122: 109  name "xs"
+00127: 109  getprop "Views"
+00132: 109  getprop "Mgr"
+00137: 109  dup
+00138: 109  callprop "showToastByStringId"
+00143: 109  swap
+00144: 109  notearg
+00145: 109  string "IdCardBinding_7"
+00150: 109  notearg
+00151: 109  call 1
+00154: 109  pop
+00155: 109  goto 193 (+38)
+00160: 111  name "xs"
+00165: 111  getprop "Views"
+00170: 111  getprop "Mgr"
+00175: 111  dup
+00176: 111  callprop "showDialogByName"
+00181: 111  swap
+00182: 111  notearg
+00183: 111  string "IdCardBindingDialog"
+00188: 111  notearg
+00189: 111  call 1
+00192: 111  pop
+00193: 113  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:103 ---
+;; function object[10] onResponse_CreateOrder
+;; function metadata object[10] nargs=1 bindings=7
+;; arg[0] jsonData
+;; local[0] order
+;; local[1] _platform
+;; local[2] _paramStr
+;; local[3] _req_url0
+;; local[4] mPlayerName
+;; local[5] _ext
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:180 ---
+loc   line  op
+----- ----  --
+main:
+00000: 181  name "xs"
+00005: 181  dup
+00006: 181  callprop "dump"
+00011: 181  swap
+00012: 181  notearg
+00013: 181  string "onResponse_CreateOrder"
+00018: 181  notearg
+00019: 181  getarg 0
+00022: 181  notearg
+00023: 181  call 2
+00026: 181  pop
+00027: 183  newinit 1
+00032: 183  endinit
+00033: 183  setlocal 0
+00036: 183  pop
+00037: 184  getlocal 0
+00040: 184  this
+00041: 184  getprop "selectedPkId"
+00046: 184  setprop "pk_id"
+00051: 184  pop
+00052: 185  getlocal 0
+00055: 185  getarg 0
+00058: 185  getprop "return_info"
+00063: 185  getprop "order_id"
+00068: 185  setprop "tradeno"
+00073: 185  pop
+00074: 186  getlocal 0
+00077: 186  getarg 0
+00080: 186  getprop "return_info"
+00085: 186  getprop "user_id"
+00090: 186  setprop "uid"
+00095: 186  pop
+00096: 187  getlocal 0
+00099: 187  getarg 0
+00102: 187  getprop "return_info"
+00107: 187  getprop "user_id"
+00112: 187  setprop "user_id"
+00117: 187  pop
+00118: 188  getlocal 0
+00121: 188  getarg 0
+00124: 188  getprop "return_info"
+00129: 188  getprop "product_price"
+00134: 188  setprop "amount"
+00139: 188  pop
+00140: 189  getlocal 0
+00143: 189  this
+00144: 189  getprop "selectedItemData"
+00149: 189  getprop "product_title"
+00154: 189  string ""
+00159: 189  eq
+00160: 189  ifeq 187 (+27)
+00165: 189  this
+00166: 189  getprop "item"
+00171: 189  dup
+00172: 189  callprop "getNameString"
+00177: 189  swap
+00178: 189  notearg
+00179: 189  call 0
+00182: 189  goto 198 (+16)
+00187: 189  this
+00188: 189  getprop "selectedItemData"
+00193: 189  getprop "product_title"
+00198: 189  setprop "title"
+00203: 189  pop
+00204: 190  getlocal 0
+00207: 190  this
+00208: 190  getprop "selectedItemData"
+00213: 190  getprop "product_desc"
+00218: 190  string ""
+00223: 190  eq
+00224: 190  ifeq 251 (+27)
+00229: 190  this
+00230: 190  getprop "item"
+00235: 190  dup
+00236: 190  callprop "getDescString"
+00241: 190  swap
+00242: 190  notearg
+00243: 190  call 0
+00246: 190  goto 262 (+16)
+00251: 190  this
+00252: 190  getprop "selectedItemData"
+00257: 190  getprop "product_desc"
+00262: 190  setprop "desc"
+00267: 190  pop
+00268: 191  getlocal 0
+00271: 191  uint16 1001
+00274: 191  setprop "paytype"
+00279: 191  pop
+00280: 194  name "xs"
+00285: 194  getprop "Scene"
+00290: 194  getprop "Mgr"
+00295: 194  dup
+00296: 194  callprop "saveStatus"
+00301: 194  swap
+00302: 194  notearg
+00303: 194  string "CurrentOrder"
+00308: 194  notearg
+00309: 194  getlocal 0
+00312: 194  notearg
+00313: 194  call 2
+00316: 194  pop
+00317: 198  name "xs"
+00322: 198  getprop "Tools"
+00327: 198  getprop "Jsb"
+00332: 198  dup
+00333: 198  callprop "getPlatform"
+00338: 198  swap
+00339: 198  notearg
+00340: 198  call 0
+00343: 198  setlocal 1
+00346: 198  pop
+00347: 200  name "JSON"
+00352: 200  dup
+00353: 200  callprop "stringify"
+00358: 200  swap
+00359: 200  notearg
+00360: 200  getlocal 0
+00363: 200  notearg
+00364: 200  call 1
+00367: 200  setlocal 2
+00370: 200  pop
+00371: 202  name "xs"
+00376: 202  dup
+00377: 202  callprop "log"
+00382: 202  swap
+00383: 202  notearg
+00384: 202  string "xs.Profile.UserCfg.getGameAddr().domain"
+00389: 202  notearg
+00390: 202  name "xs"
+00395: 202  getprop "Profile"
+00400: 202  getprop "UserCfg"
+00405: 202  dup
+00406: 202  callprop "getGameAddr"
+00411: 202  swap
+00412: 202  notearg
+00413: 202  call 0
+00416: 202  getprop "domain"
+00421: 202  notearg
+00422: 202  call 2
+00425: 202  pop
+00426: 205  string "http://"
+00431: 205  name "xs"
+00436: 205  getprop "Profile"
+00441: 205  getprop "UserCfg"
+00446: 205  dup
+00447: 205  callprop "getGameAddr"
+00452: 205  swap
+00453: 205  notearg
+00454: 205  call 0
+00457: 205  getprop "domain"
+00462: 205  add
+00463: 205  string "/?do=pay.createTrade"
+00468: 205  add
+00469: 205  setlocal 3
+00472: 205  pop
+00473: 210  name "xsc"
+00478: 210  getprop "Tools"
+00483: 210  getprop "PaySys"
+00488: 210  dup
+00489: 210  callprop "isUsingEasySdk"
+00494: 210  swap
+00495: 210  notearg
+00496: 210  call 0
+00499: 210  ifeq 1456 (+957)
+00504: 212  name "xs"
+00509: 212  getprop "Profile"
+00514: 212  getprop "UserCfg"
+00519: 212  dup
+00520: 212  callprop "getLoginType"
+00525: 212  swap
+00526: 212  notearg
+00527: 212  call 0
+00530: 212  name "xs"
+00535: 212  getprop "Constant_LoginType_Visitor"
+00540: 212  ne
+00541: 212  ifeq 1034 (+493)
+00546: 214  name "xs"
+00551: 214  getprop "Tools"
+00556: 214  getprop "Jsb"
+00561: 214  getprop "EasySdk"
+00566: 214  getprop "Payment"
+00571: 214  dup
+00572: 214  callprop "pay"
+00577: 214  swap
+00578: 214  notearg
+00579: 214  newinit 1
+00584: 216  name "xs"
+00589: 216  getprop "gd_mgr"
+00594: 216  dup
+00595: 216  callprop "getInstance"
+00600: 216  swap
+00601: 216  notearg
+00602: 216  call 0
+00605: 216  getprop "Player"
+00610: 216  dup
+00611: 216  callprop "getPlayer"
+00616: 216  swap
+00617: 216  notearg
+00618: 216  call 0
+00621: 216  dup
+00622: 216  callprop "getPlayerId"
+00627: 216  swap
+00628: 216  notearg
+00629: 216  call 0
+00632: 216  initprop "app_role_id"
+00637: 217  name "xs"
+00642: 217  getprop "gd_mgr"
+00647: 217  dup
+00648: 217  callprop "getInstance"
+00653: 217  swap
+00654: 217  notearg
+00655: 217  call 0
+00658: 217  getprop "Player"
+00663: 217  dup
+00664: 217  callprop "getPlayer"
+00669: 217  swap
+00670: 217  notearg
+00671: 217  call 0
+00674: 217  dup
+00675: 217  callprop "getPlayerName"
+00680: 217  swap
+00681: 217  notearg
+00682: 217  call 0
+00685: 217  initprop "role_name"
+00690: 219  getlocal 0
+00693: 219  getprop "tradeno"
+00698: 219  initprop "app_order_id"
+00703: 220  getlocal 0
+00706: 220  getprop "pk_id"
+00711: 220  initprop "product_id"
+00716: 221  getlocal 0
+00719: 221  getprop "amount"
+00724: 221  initprop "product_price"
+00729: 222  one
+00730: 222  initprop "product_count"
+00735: 223  getlocal 0
+00738: 223  getprop "title"
+00743: 223  initprop "product_name"
+00748: 224  string ""
+00753: 224  name "xs"
+00758: 224  getprop "Profile"
+00763: 224  getprop "UserCfg"
+00768: 224  dup
+00769: 224  callprop "getGameAddr"
+00774: 224  swap
+00775: 224  notearg
+00776: 224  call 0
+00779: 224  getprop "id"
+00784: 224  add
+00785: 224  initprop "server_id"
+00790: 226  int8 10
+00792: 226  initprop "game_currency_rate"
+00797: 227  string "RMB"
+00802: 227  initprop "app_currency_type"
+00807: 229  name "xs"
+00812: 229  getprop "EasySdk"
+00817: 229  getprop "Account"
+00822: 229  dup
+00823: 229  callprop "getAccountInfo"
+00828: 229  swap
+00829: 229  notearg
+00830: 229  call 0
+00833: 229  getprop "easy_uid"
+00838: 229  initprop "easy_uid"
+00843: 230  name "xs"
+00848: 230  getprop "EasySdk"
+00853: 230  getprop "Account"
+00858: 230  dup
+00859: 230  callprop "getAccountInfo"
+00864: 230  swap
+00865: 230  notearg
+00866: 230  call 0
+00869: 230  getprop "easy_session"
+00874: 230  initprop "easy_session"
+00879: 231  name "xs"
+00884: 231  getprop "EasySdk"
+00889: 231  getprop "Account"
+00894: 231  dup
+00895: 231  callprop "getAccountInfo"
+00900: 231  swap
+00901: 231  notearg
+00902: 231  call 0
+00905: 231  getprop "platform_uid"
+00910: 231  initprop "platform_uid"
+00915: 232  name "xs"
+00920: 232  getprop "EasySdk"
+00925: 232  getprop "Account"
+00930: 232  dup
+00931: 232  callprop "getAccountInfo"
+00936: 232  swap
+00937: 232  notearg
+00938: 232  call 0
+00941: 232  getprop "platform_session"
+00946: 232  initprop "platform_session"
+00951: 234  string ""
+00956: 234  initprop "app_uid"
+00961: 236  string ""
+00966: 236  initprop "app_ext1"
+00971: 237  string ""
+00976: 237  initprop "app_ext2"
+00981: 238  name "xs"
+00986: 238  getprop "EasySdk"
+00991: 238  getprop "Payment"
+00996: 238  dup
+00997: 238  callprop "getEasyAppKeyBase64"
+01002: 238  swap
+01003: 238  notearg
+01004: 238  call 0
+01007: 238  or 1018 (+11)
+01012: 238  pop
+01013: 238  string "easy_appkey_base64_is_null"
+01018: 238  initprop "easy_appkey_base64"
+01023: 238  endinit
+01024: 238  notearg
+01025: 238  call 1
+01028: 238  pop
+01029: 238  goto 1451 (+422)
+01034: 244  name "xs"
+01039: 244  getprop "Tools"
+01044: 244  getprop "Jsb"
+01049: 244  getprop "EasySdk"
+01054: 244  getprop "Payment"
+01059: 244  dup
+01060: 244  callprop "pay"
+01065: 244  swap
+01066: 244  notearg
+01067: 244  newinit 1
+01072: 246  name "xs"
+01077: 246  getprop "gd_mgr"
+01082: 246  dup
+01083: 246  callprop "getInstance"
+01088: 246  swap
+01089: 246  notearg
+01090: 246  call 0
+01093: 246  getprop "Player"
+01098: 246  dup
+01099: 246  callprop "getPlayer"
+01104: 246  swap
+01105: 246  notearg
+01106: 246  call 0
+01109: 246  dup
+01110: 246  callprop "getPlayerId"
+01115: 246  swap
+01116: 246  notearg
+01117: 246  call 0
+01120: 246  initprop "app_role_id"
+01125: 247  name "xs"
+01130: 247  getprop "gd_mgr"
+01135: 247  dup
+01136: 247  callprop "getInstance"
+01141: 247  swap
+01142: 247  notearg
+01143: 247  call 0
+01146: 247  getprop "Player"
+01151: 247  dup
+01152: 247  callprop "getPlayer"
+01157: 247  swap
+01158: 247  notearg
+01159: 247  call 0
+01162: 247  dup
+01163: 247  callprop "getPlayerName"
+01168: 247  swap
+01169: 247  notearg
+01170: 247  call 0
+01173: 247  initprop "role_name"
+01178: 249  getlocal 0
+01181: 249  getprop "tradeno"
+01186: 249  initprop "app_order_id"
+01191: 250  getlocal 0
+01194: 250  getprop "pk_id"
+01199: 250  initprop "product_id"
+01204: 251  getlocal 0
+01207: 251  getprop "amount"
+01212: 251  initprop "product_price"
+01217: 252  one
+01218: 252  initprop "product_count"
+01223: 253  getlocal 0
+01226: 253  getprop "title"
+01231: 253  initprop "product_name"
+01236: 254  string ""
+01241: 254  name "xs"
+01246: 254  getprop "Profile"
+01251: 254  getprop "UserCfg"
+01256: 254  dup
+01257: 254  callprop "getGameAddr"
+01262: 254  swap
+01263: 254  notearg
+01264: 254  call 0
+01267: 254  getprop "id"
+01272: 254  add
+01273: 254  initprop "server_id"
+01278: 256  int8 10
+01280: 256  initprop "game_currency_rate"
+01285: 257  string "RMB"
+01290: 257  initprop "app_currency_type"
+01295: 259  name "xs"
+01300: 259  getprop "Scene"
+01305: 259  getprop "Mgr"
+01310: 259  dup
+01311: 259  callprop "loadStatus"
+01316: 259  swap
+01317: 259  notearg
+01318: 259  string "AccountInfo"
+01323: 259  notearg
+01324: 259  call 1
+01327: 259  dup
+01328: 259  callprop "getAccountId"
+01333: 259  swap
+01334: 259  notearg
+01335: 259  call 0
+01338: 259  initprop "app_uid"
+01343: 261  string ""
+01348: 261  initprop "easy_uid"
+01353: 262  string ""
+01358: 262  initprop "easy_session"
+01363: 263  string ""
+01368: 263  initprop "platform_uid"
+01373: 264  string ""
+01378: 264  initprop "platform_session"
+01383: 266  string ""
+01388: 266  initprop "app_ext1"
+01393: 267  string ""
+01398: 267  initprop "app_ext2"
+01403: 269  name "xs"
+01408: 269  getprop "EasySdk"
+01413: 269  getprop "Payment"
+01418: 269  dup
+01419: 269  callprop "getEasyAppKeyBase64"
+01424: 269  swap
+01425: 269  notearg
+01426: 269  call 0
+01429: 269  or 1440 (+11)
+01434: 269  pop
+01435: 269  string "easy_appkey_base64_is_null"
+01440: 269  initprop "easy_appkey_base64"
+01445: 269  endinit
+01446: 269  notearg
+01447: 269  call 1
+01450: 269  pop
+01451: 269  goto 3379 (+1928)
+01456: 275  getlocal 1
+01459: 275  string "ios"
+01464: 275  stricteq
+01465: 275  ifeq 2121 (+656)
+01470: 276  name "xsc"
+01475: 276  getprop "Tools"
+01480: 276  getprop "PaySys"
+01485: 276  dup
+01486: 276  callprop "isUsingAliPay"
+01491: 276  swap
+01492: 276  notearg
+01493: 276  call 0
+01496: 276  ifeq 1565 (+69)
+01501: 278  name "xs"
+01506: 278  getprop "JsbConnecter"
+01511: 278  dup
+01512: 278  callprop "getInstance"
+01517: 278  swap
+01518: 278  notearg
+01519: 278  call 0
+01522: 278  dup
+01523: 278  callprop "invoke"
+01528: 278  swap
+01529: 278  notearg
+01530: 279  string "Alipay"
+01535: 279  notearg
+01536: 279  string "pay"
+01541: 279  notearg
+01542: 279  getlocal 3
+01545: 279  string "|"
+01550: 279  add
+01551: 279  getlocal 2
+01554: 279  add
+01555: 279  notearg
+01556: 279  call 3
+01559: 279  pop
+01560: 279  goto 2116 (+556)
+01565: 282  name "xsc"
+01570: 282  getprop "Tools"
+01575: 282  getprop "PaySys"
+01580: 282  dup
+01581: 282  callprop "isUsing3rdSdk"
+01586: 282  swap
+01587: 282  notearg
+01588: 282  call 0
+01591: 282  ifeq 2116 (+525)
+01596: 284  name "xs"
+01601: 284  getprop "gd_mgr"
+01606: 284  dup
+01607: 284  callprop "getInstance"
+01612: 284  swap
+01613: 284  notearg
+01614: 284  call 0
+01617: 284  getprop "Player"
+01622: 284  dup
+01623: 284  callprop "getPlayer"
+01628: 284  swap
+01629: 284  notearg
+01630: 284  call 0
+01633: 284  dup
+01634: 284  callprop "getPlayerName"
+01639: 284  swap
+01640: 284  notearg
+01641: 284  call 0
+01644: 284  setlocal 4
+01647: 284  pop
+01648: 285  getlocal 4
+01651: 285  dup
+01652: 285  callprop "removeSlash"
+01657: 285  swap
+01658: 285  notearg
+01659: 285  call 0
+01662: 285  setlocal 4
+01665: 285  pop
+01666: 287  name "xs"
+01671: 287  getprop "JsbConnecter"
+01676: 287  dup
+01677: 287  callprop "getInstance"
+01682: 287  swap
+01683: 287  notearg
+01684: 287  call 0
+01687: 287  dup
+01688: 287  callprop "invoke"
+01693: 287  swap
+01694: 287  notearg
+01695: 288  string "Thirdpay"
+01700: 288  notearg
+01701: 289  string "third_pay"
+01706: 289  notearg
+01707: 290  string ""
+01712: 290  getlocal 0
+01715: 290  getprop "pk_id"
+01720: 290  add
+01721: 290  string "|"
+01726: 290  add
+01727: 291  getlocal 0
+01730: 291  getprop "title"
+01735: 291  add
+01736: 291  string "|"
+01741: 291  add
+01742: 292  callname "parseInt"
+01747: 292  implicitthis "parseInt"
+01752: 292  notearg
+01753: 292  getlocal 0
+01756: 292  getprop "amount"
+01761: 292  notearg
+01762: 292  call 1
+01765: 292  add
+01766: 292  string "|"
+01771: 292  add
+01772: 293  one
+01773: 293  add
+01774: 293  string "|"
+01779: 293  add
+01780: 294  name "xs"
+01785: 294  getprop "gd_mgr"
+01790: 294  dup
+01791: 294  callprop "getInstance"
+01796: 294  swap
+01797: 294  notearg
+01798: 294  call 0
+01801: 294  getprop "Player"
+01806: 294  dup
+01807: 294  callprop "getPlayer"
+01812: 294  swap
+01813: 294  notearg
+01814: 294  call 0
+01817: 294  dup
+01818: 294  callprop "getPlayerId"
+01823: 294  swap
+01824: 294  notearg
+01825: 294  call 0
+01828: 294  add
+01829: 294  string "|"
+01834: 294  add
+01835: 295  getlocal 4
+01838: 295  add
+01839: 295  string "|"
+01844: 295  add
+01845: 296  name "xs"
+01850: 296  getprop "gd_mgr"
+01855: 296  dup
+01856: 296  callprop "getInstance"
+01861: 296  swap
+01862: 296  notearg
+01863: 296  call 0
+01866: 296  getprop "Player"
+01871: 296  dup
+01872: 296  callprop "getPlayer"
+01877: 296  swap
+01878: 296  notearg
+01879: 296  call 0
+01882: 296  dup
+01883: 296  callprop "getPlayerLevel"
+01888: 296  swap
+01889: 296  notearg
+01890: 296  call 0
+01893: 296  add
+01894: 296  string "|"
+01899: 296  add
+01900: 297  name "xs"
+01905: 297  getprop "gd_mgr"
+01910: 297  dup
+01911: 297  callprop "getInstance"
+01916: 297  swap
+01917: 297  notearg
+01918: 297  call 0
+01921: 297  getprop "Player"
+01926: 297  dup
+01927: 297  callprop "getPlayer"
+01932: 297  swap
+01933: 297  notearg
+01934: 297  call 0
+01937: 297  dup
+01938: 297  callprop "getPlayerYuanBao"
+01943: 297  swap
+01944: 297  notearg
+01945: 297  call 0
+01948: 297  add
+01949: 297  string "|"
+01954: 297  add
+01955: 298  name "xs"
+01960: 298  getprop "Profile"
+01965: 298  getprop "UserCfg"
+01970: 298  dup
+01971: 298  callprop "getGameAddr"
+01976: 298  swap
+01977: 298  notearg
+01978: 298  call 0
+01981: 298  getprop "id"
+01986: 298  add
+01987: 298  string "|"
+01992: 298  add
+01993: 299  name "JSON"
+01998: 299  dup
+01999: 299  callprop "stringify"
+02004: 299  swap
+02005: 299  notearg
+02006: 299  newinit 1
+02011: 300  string ""
+02016: 300  getlocal 0
+02019: 300  getprop "tradeno"
+02024: 300  add
+02025: 300  initprop "bf_orderId"
+02030: 301  string ""
+02035: 301  name "xs"
+02040: 301  getprop "Profile"
+02045: 301  getprop "UserCfg"
+02050: 301  dup
+02051: 301  callprop "getGameAddr"
+02056: 301  swap
+02057: 301  notearg
+02058: 301  call 0
+02061: 301  getprop "id"
+02066: 301  add
+02067: 301  initprop "bf_serverId"
+02072: 302  string ""
+02077: 302  name "xs"
+02082: 302  getprop "app_indentify"
+02087: 302  add
+02088: 302  initprop "s_type"
+02093: 302  endinit
+02094: 302  notearg
+02095: 302  call 1
+02098: 302  add
+02099: 303  string "|"
+02104: 303  add
+02105: 304  string "|"
+02110: 304  add
+02111: 304  notearg
+02112: 304  call 3
+02115: 304  pop
+02116: 304  goto 3379 (+1263)
+02121: 309  getlocal 1
+02124: 309  string "android"
+02129: 309  stricteq
+02130: 309  ifeq 3379 (+1249)
+02135: 310  name "xsc"
+02140: 310  getprop "Tools"
+02145: 310  getprop "PaySys"
+02150: 310  dup
+02151: 310  callprop "isUsingAliPay"
+02156: 310  swap
+02157: 310  notearg
+02158: 310  call 0
+02161: 310  ifeq 2313 (+152)
+02166: 321  name "xs"
+02171: 321  getprop "JsbConnecter"
+02176: 321  dup
+02177: 321  callprop "getInstance"
+02182: 321  swap
+02183: 321  notearg
+02184: 321  call 0
+02187: 321  dup
+02188: 321  callprop "invoke"
+02193: 321  swap
+02194: 321  notearg
+02195: 322  string "Alipay"
+02200: 322  notearg
+02201: 323  string "pay_ext"
+02206: 323  notearg
+02207: 324  string ""
+02212: 324  getlocal 0
+02215: 324  getprop "tradeno"
+02220: 324  add
+02221: 324  string "|"
+02226: 324  add
+02227: 325  getlocal 0
+02230: 325  getprop "uid"
+02235: 325  add
+02236: 325  string "|"
+02241: 325  add
+02242: 326  string "UNUSE_NOW"
+02247: 326  add
+02248: 326  string "|"
+02253: 326  add
+02254: 327  getlocal 0
+02257: 327  getprop "title"
+02262: 327  add
+02263: 327  string "|"
+02268: 327  add
+02269: 328  getlocal 0
+02272: 328  getprop "desc"
+02277: 328  add
+02278: 328  string "|"
+02283: 328  add
+02284: 329  getlocal 0
+02287: 329  getprop "amount"
+02292: 329  add
+02293: 329  string "|"
+02298: 329  add
+02299: 330  getlocal 3
+02302: 330  add
+02303: 330  notearg
+02304: 330  call 3
+02307: 330  pop
+02308: 330  goto 3379 (+1071)
+02313: 333  name "xsc"
+02318: 333  getprop "Tools"
+02323: 333  getprop "PaySys"
+02328: 333  dup
+02329: 333  callprop "isUsingAnySdk"
+02334: 333  swap
+02335: 333  notearg
+02336: 333  call 0
+02339: 333  ifeq 2818 (+479)
+02344: 347  getlocal 5
+02347: 347  pop
+02348: 348  getarg 0
+02351: 348  getprop "return_info"
+02356: 348  getprop "ext"
+02361: 348  null
+02362: 348  eq
+02363: 348  ifeq 2482 (+119)
+02368: 349  name "JSON"
+02373: 349  dup
+02374: 349  callprop "stringify"
+02379: 349  swap
+02380: 349  notearg
+02381: 349  newinit 1
+02386: 350  string ""
+02391: 350  getlocal 0
+02394: 350  getprop "tradeno"
+02399: 350  add
+02400: 350  initprop "bf_orderId"
+02405: 351  string ""
+02410: 351  name "xs"
+02415: 351  getprop "Profile"
+02420: 351  getprop "UserCfg"
+02425: 351  dup
+02426: 351  callprop "getGameAddr"
+02431: 351  swap
+02432: 351  notearg
+02433: 351  call 0
+02436: 351  getprop "id"
+02441: 351  add
+02442: 351  initprop "bf_serverId"
+02447: 352  string ""
+02452: 352  name "xs"
+02457: 352  getprop "app_indentify"
+02462: 352  add
+02463: 352  initprop "s_type"
+02468: 352  endinit
+02469: 352  notearg
+02470: 352  call 1
+02473: 352  setlocal 5
+02476: 352  pop
+02477: 352  goto 2499 (+22)
+02482: 355  getarg 0
+02485: 355  getprop "return_info"
+02490: 355  getprop "ext"
+02495: 355  setlocal 5
+02498: 355  pop
+02499: 357  name "xs"
+02504: 357  getprop "AnySdk"
+02509: 357  getprop "AnySdkHelp_js"
+02514: 357  dup
+02515: 357  callprop "pay"
+02520: 357  swap
+02521: 357  notearg
+02522: 357  getlocal 0
+02525: 357  getprop "pk_id"
+02530: 357  notearg
+02531: 357  getlocal 0
+02534: 357  getprop "title"
+02539: 357  notearg
+02540: 357  callname "parseInt"
+02545: 357  implicitthis "parseInt"
+02550: 357  notearg
+02551: 357  getlocal 0
+02554: 357  getprop "amount"
+02559: 357  notearg
+02560: 357  call 1
+02563: 357  notearg
+02564: 357  one
+02565: 357  notearg
+02566: 358  name "xs"
+02571: 358  getprop "gd_mgr"
+02576: 358  dup
+02577: 358  callprop "getInstance"
+02582: 358  swap
+02583: 358  notearg
+02584: 358  call 0
+02587: 358  getprop "Player"
+02592: 358  dup
+02593: 358  callprop "getPlayer"
+02598: 358  swap
+02599: 358  notearg
+02600: 358  call 0
+02603: 358  dup
+02604: 358  callprop "getPlayerId"
+02609: 358  swap
+02610: 358  notearg
+02611: 358  call 0
+02614: 358  notearg
+02615: 359  name "xs"
+02620: 359  getprop "gd_mgr"
+02625: 359  dup
+02626: 359  callprop "getInstance"
+02631: 359  swap
+02632: 359  notearg
+02633: 359  call 0
+02636: 359  getprop "Player"
+02641: 359  dup
+02642: 359  callprop "getPlayer"
+02647: 359  swap
+02648: 359  notearg
+02649: 359  call 0
+02652: 359  dup
+02653: 359  callprop "getPlayerName"
+02658: 359  swap
+02659: 359  notearg
+02660: 359  call 0
+02663: 359  dup
+02664: 359  callprop "removeSlash"
+02669: 359  swap
+02670: 359  notearg
+02671: 359  call 0
+02674: 359  notearg
+02675: 360  name "xs"
+02680: 360  getprop "gd_mgr"
+02685: 360  dup
+02686: 360  callprop "getInstance"
+02691: 360  swap
+02692: 360  notearg
+02693: 360  call 0
+02696: 360  getprop "Player"
+02701: 360  dup
+02702: 360  callprop "getPlayer"
+02707: 360  swap
+02708: 360  notearg
+02709: 360  call 0
+02712: 360  dup
+02713: 360  callprop "getPlayerLevel"
+02718: 360  swap
+02719: 360  notearg
+02720: 360  call 0
+02723: 360  notearg
+02724: 361  name "xs"
+02729: 361  getprop "gd_mgr"
+02734: 361  dup
+02735: 361  callprop "getInstance"
+02740: 361  swap
+02741: 361  notearg
+02742: 361  call 0
+02745: 361  getprop "Player"
+02750: 361  dup
+02751: 361  callprop "getPlayer"
+02756: 361  swap
+02757: 361  notearg
+02758: 361  call 0
+02761: 361  dup
+02762: 361  callprop "getPlayerYuanBao"
+02767: 361  swap
+02768: 361  notearg
+02769: 361  call 0
+02772: 361  notearg
+02773: 362  name "xs"
+02778: 362  getprop "Profile"
+02783: 362  getprop "UserCfg"
+02788: 362  dup
+02789: 362  callprop "getGameAddr"
+02794: 362  swap
+02795: 362  notearg
+02796: 362  call 0
+02799: 362  getprop "id"
+02804: 362  notearg
+02805: 363  getlocal 5
+02808: 363  notearg
+02809: 363  call 10
+02812: 363  pop
+02813: 363  goto 3379 (+566)
+02818: 366  name "xsc"
+02823: 366  getprop "Tools"
+02828: 366  getprop "PaySys"
+02833: 366  dup
+02834: 366  callprop "isUsing3rdSdk"
+02839: 366  swap
+02840: 366  notearg
+02841: 366  call 0
+02844: 366  ifeq 3360 (+516)
+02849: 367  name "xs"
+02854: 367  getprop "JsbConnecter"
+02859: 367  dup
+02860: 367  callprop "getInstance"
+02865: 367  swap
+02866: 367  notearg
+02867: 367  call 0
+02870: 367  dup
+02871: 367  callprop "invoke"
+02876: 367  swap
+02877: 367  notearg
+02878: 368  string "Thirdpay"
+02883: 368  notearg
+02884: 369  string "third_pay"
+02889: 369  notearg
+02890: 370  string ""
+02895: 370  getlocal 0
+02898: 370  getprop "pk_id"
+02903: 370  add
+02904: 370  string "|"
+02909: 370  add
+02910: 371  getlocal 0
+02913: 371  getprop "title"
+02918: 371  add
+02919: 371  string "|"
+02924: 371  add
+02925: 372  callname "parseInt"
+02930: 372  implicitthis "parseInt"
+02935: 372  notearg
+02936: 372  getlocal 0
+02939: 372  getprop "amount"
+02944: 372  notearg
+02945: 372  call 1
+02948: 372  add
+02949: 372  string "|"
+02954: 372  add
+02955: 373  one
+02956: 373  add
+02957: 373  string "|"
+02962: 373  add
+02963: 374  name "xs"
+02968: 374  getprop "gd_mgr"
+02973: 374  dup
+02974: 374  callprop "getInstance"
+02979: 374  swap
+02980: 374  notearg
+02981: 374  call 0
+02984: 374  getprop "Player"
+02989: 374  dup
+02990: 374  callprop "getPlayer"
+02995: 374  swap
+02996: 374  notearg
+02997: 374  call 0
+03000: 374  dup
+03001: 374  callprop "getPlayerId"
+03006: 374  swap
+03007: 374  notearg
+03008: 374  call 0
+03011: 374  add
+03012: 374  string "|"
+03017: 374  add
+03018: 375  name "xs"
+03023: 375  getprop "gd_mgr"
+03028: 375  dup
+03029: 375  callprop "getInstance"
+03034: 375  swap
+03035: 375  notearg
+03036: 375  call 0
+03039: 375  getprop "Player"
+03044: 375  dup
+03045: 375  callprop "getPlayer"
+03050: 375  swap
+03051: 375  notearg
+03052: 375  call 0
+03055: 375  dup
+03056: 375  callprop "getPlayerName"
+03061: 375  swap
+03062: 375  notearg
+03063: 375  call 0
+03066: 375  dup
+03067: 375  callprop "removeSlash"
+03072: 375  swap
+03073: 375  notearg
+03074: 375  call 0
+03077: 375  add
+03078: 375  string "|"
+03083: 375  add
+03084: 376  name "xs"
+03089: 376  getprop "gd_mgr"
+03094: 376  dup
+03095: 376  callprop "getInstance"
+03100: 376  swap
+03101: 376  notearg
+03102: 376  call 0
+03105: 376  getprop "Player"
+03110: 376  dup
+03111: 376  callprop "getPlayer"
+03116: 376  swap
+03117: 376  notearg
+03118: 376  call 0
+03121: 376  dup
+03122: 376  callprop "getPlayerLevel"
+03127: 376  swap
+03128: 376  notearg
+03129: 376  call 0
+03132: 376  add
+03133: 376  string "|"
+03138: 376  add
+03139: 377  name "xs"
+03144: 377  getprop "gd_mgr"
+03149: 377  dup
+03150: 377  callprop "getInstance"
+03155: 377  swap
+03156: 377  notearg
+03157: 377  call 0
+03160: 377  getprop "Player"
+03165: 377  dup
+03166: 377  callprop "getPlayer"
+03171: 377  swap
+03172: 377  notearg
+03173: 377  call 0
+03176: 377  dup
+03177: 377  callprop "getPlayerYuanBao"
+03182: 377  swap
+03183: 377  notearg
+03184: 377  call 0
+03187: 377  add
+03188: 377  string "|"
+03193: 377  add
+03194: 378  name "xs"
+03199: 378  getprop "Profile"
+03204: 378  getprop "UserCfg"
+03209: 378  dup
+03210: 378  callprop "getGameAddr"
+03215: 378  swap
+03216: 378  notearg
+03217: 378  call 0
+03220: 378  getprop "id"
+03225: 378  add
+03226: 378  string "|"
+03231: 378  add
+03232: 379  name "JSON"
+03237: 379  dup
+03238: 379  callprop "stringify"
+03243: 379  swap
+03244: 379  notearg
+03245: 379  newinit 1
+03250: 380  string ""
+03255: 380  getlocal 0
+03258: 380  getprop "tradeno"
+03263: 380  add
+03264: 380  initprop "bf_orderId"
+03269: 381  string ""
+03274: 381  name "xs"
+03279: 381  getprop "Profile"
+03284: 381  getprop "UserCfg"
+03289: 381  dup
+03290: 381  callprop "getGameAddr"
+03295: 381  swap
+03296: 381  notearg
+03297: 381  call 0
+03300: 381  getprop "id"
+03305: 381  add
+03306: 381  initprop "bf_serverId"
+03311: 382  string ""
+03316: 382  name "xs"
+03321: 382  getprop "app_indentify"
+03326: 382  add
+03327: 382  initprop "s_type"
+03332: 382  endinit
+03333: 382  notearg
+03334: 382  call 1
+03337: 382  add
+03338: 383  string "|"
+03343: 383  add
+03344: 384  string "|"
+03349: 384  add
+03350: 384  notearg
+03351: 384  call 3
+03354: 384  pop
+03355: 384  goto 3379 (+24)
+03360: 388  this
+03361: 388  dup
+03362: 388  callprop "error"
+03367: 388  swap
+03368: 388  notearg
+03369: 388  string "_build err"
+03374: 388  notearg
+03375: 388  call 1
+03378: 388  pop
+03379: 397  name "xs"
+03384: 397  getprop "Tools"
+03389: 397  getprop "Statistic"
+03394: 397  dup
+03395: 397  callprop "event"
+03400: 397  swap
+03401: 397  notearg
+03402: 397  string "1700011"
+03407: 397  notearg
+03408: 397  call 1
+03411: 397  pop
+03412: 397  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:180 ---
+;; function object[11] onResponse_Error
+;; function metadata object[11] nargs=1 bindings=1
+;; arg[0] data
+
+;; nested bytecode depth=1
+;; FUNCTION-MAP kind=lambda offset=164 object[0]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:399 ---
+loc   line  op
+----- ----  --
+main:
+00000: 400  getarg 0
+00003: 400  getprop "error_code"
+00008: 400  string "e_20002"
+00013: 400  eq
+00014: 400  ifeq 193 (+179)
+00019: 401  name "xs"
+00024: 401  getprop "Views"
+00029: 401  getprop "Mgr"
+00034: 401  dup
+00035: 401  callprop "showDialogByName"
+00040: 401  swap
+00041: 401  notearg
+00042: 401  string "OneBtnDialog"
+00047: 401  notearg
+00048: 401  newinit 1
+00053: 402  name "xs"
+00058: 402  getprop "Tools"
+00063: 402  getprop "String"
+00068: 402  dup
+00069: 402  callprop "createString"
+00074: 402  swap
+00075: 402  notearg
+00076: 402  string "IdCardBinding_104"
+00081: 402  notearg
+00082: 402  call 1
+00085: 402  initprop "titleText"
+00090: 403  name "xs"
+00095: 403  getprop "Tools"
+00100: 403  getprop "String"
+00105: 403  dup
+00106: 403  callprop "createString"
+00111: 403  swap
+00112: 403  notearg
+00113: 403  string "IdCardBinding_105"
+00118: 403  notearg
+00119: 403  call 1
+00122: 403  initprop "contentText"
+00127: 404  name "xs"
+00132: 404  getprop "Tools"
+00137: 404  getprop "String"
+00142: 404  dup
+00143: 404  callprop "createString"
+00148: 404  swap
+00149: 404  notearg
+00150: 404  string "auto_name_76"
+00155: 404  notearg
+00156: 404  call 1
+00159: 404  initprop "btnText"
+00164: 405  lambda (function () {
+    [sourceless code]
+})
+00169: 405  dup
+00170: 405  callprop "bind"
+00175: 405  swap
+00176: 405  notearg
+00177: 407  this
+00178: 407  notearg
+00179: 407  call 1
+00182: 407  initprop "btnCallback"
+00187: 407  endinit
+00188: 407  notearg
+00189: 407  call 2
+00192: 407  pop
+00193: 410  true
+00194: 410  return
+00195: 410  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:399 ---
+;; function object[0] <anonymous>
+;; function metadata object[0] nargs=0 bindings=0
+
+;; nested bytecode depth=2
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:405 ---
+loc   line  op
+----- ----  --
+main:
+00000: 406  name "xs"
+00005: 406  getprop "Views"
+00010: 406  getprop "Mgr"
+00015: 406  dup
+00016: 406  callprop "hideDialog"
+00021: 406  swap
+00022: 406  notearg
+00023: 406  call 0
+00026: 406  pop
+00027: 406  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:405 ---
+;; function object[12] create
+;; function metadata object[12] nargs=0 bindings=1
+;; local[0] ret
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:416 ---
+loc   line  op
+----- ----  --
+main:
+00000: 417  name "xs"
+00005: 417  getprop "Views"
+00010: 417  getprop "Table"
+00015: 417  getprop "ChargeItemTableView"
+00020: 417  undefined
+00021: 417  notearg
+00022: 417  new 0
+00025: 417  setlocal 0
+00028: 417  pop
+00029: 418  getlocal 0
+00032: 418  and 52 (+20)
+00037: 418  pop
+00038: 418  getlocal 0
+00041: 418  dup
+00042: 418  callprop "init"
+00047: 418  swap
+00048: 418  notearg
+00049: 418  call 0
+00052: 418  ifeq 61 (+9)
+00057: 419  getlocal 0
+00060: 419  return
+00061: 422  name "xs"
+00066: 422  dup
+00067: 422  callprop "assert"
+00072: 422  swap
+00073: 422  notearg
+00074: 422  false
+00075: 422  notearg
+00076: 422  string "xs.Views.Table.ChargeItemTableView.create fail"
+00081: 422  notearg
+00082: 422  getlocal 0
+00085: 422  notearg
+00086: 422  call 3
+00089: 422  pop
+00090: 423  null
+00091: 423  return
+00092: 423  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Views/Table/ChargeItemTableView.js:416 ---

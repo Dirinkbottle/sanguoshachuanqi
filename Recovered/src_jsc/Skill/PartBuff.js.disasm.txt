@@ -1,0 +1,938 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Skill/PartBuff.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/PartBuff.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:  11  name "xs"
+00005:  11  getprop "Cfg"
+00010:  11  getprop "Skill"
+00015:  11  getprop "part"
+00020:  11  newinit 1
+00025:  12  newarray 1
+00029:  13  string "template.part.TP_Cure_To"
+00034:  13  initelem_array 0
+00038:  13  endinit
+00039:  13  initprop "extend"
+00044:  13  endinit
+00045:  13  setprop "P_Cure_To"
+00050:  13  popv
+00051:  17  name "xs"
+00056:  17  getprop "Cfg"
+00061:  17  getprop "Skill"
+00066:  17  getprop "part"
+00071:  17  newinit 1
+00076:  18  newarray 1
+00080:  19  string "template.part.TP_Cure_From"
+00085:  19  initelem_array 0
+00089:  19  endinit
+00090:  19  initprop "extend"
+00095:  19  endinit
+00096:  19  setprop "P_Cure_From"
+00101:  19  popv
+00102:  23  name "xs"
+00107:  23  getprop "Cfg"
+00112:  23  getprop "Skill"
+00117:  23  getprop "part"
+00122:  23  newinit 1
+00127:  24  newarray 1
+00131:  24  string "fs"
+00136:  24  initelem_array 0
+00140:  24  endinit
+00141:  24  initprop "trigger"
+00146:  25  newarray 1
+00150:  26  string "template.part.TP_Cure_From"
+00155:  26  initelem_array 0
+00159:  26  endinit
+00160:  26  initprop "extend"
+00165:  26  endinit
+00166:  26  setprop "P_Cure_From_Fs"
+00171:  26  popv
+00172:  30  name "xs"
+00177:  30  getprop "Cfg"
+00182:  30  getprop "Skill"
+00187:  30  getprop "part"
+00192:  30  newinit 1
+00197:  31  string "template.part.TP_Buff_Add_From"
+00202:  31  initprop "extend"
+00207:  31  endinit
+00208:  31  setprop "P_BuffAdd_Effect_From"
+00213:  31  popv
+00214:  33  name "xs"
+00219:  33  getprop "Cfg"
+00224:  33  getprop "Skill"
+00229:  33  getprop "part"
+00234:  33  newinit 1
+00239:  34  string "template.part.TP_Buff_Add_To"
+00244:  34  initprop "extend"
+00249:  34  endinit
+00250:  34  setprop "P_BuffAdd_Effect_To"
+00255:  34  popv
+00256:  36  name "xs"
+00261:  36  getprop "Cfg"
+00266:  36  getprop "Skill"
+00271:  36  getprop "part"
+00276:  36  newinit 1
+00281:  36  endinit
+00282:  36  setprop "P_BuffSub_Effect_From"
+00287:  36  popv
+00288:  39  name "xs"
+00293:  39  getprop "Cfg"
+00298:  39  getprop "Skill"
+00303:  39  getprop "part"
+00308:  39  newinit 1
+00313:  40  string "template.part.TP_Buff_Sub_To"
+00318:  40  initprop "extend"
+00323:  40  endinit
+00324:  40  setprop "P_BuffSub_Effect_To"
+00329:  40  popv
+00330:  43  name "xs"
+00335:  43  getprop "Cfg"
+00340:  43  getprop "Skill"
+00345:  43  getprop "part"
+00350:  43  newinit 1
+00355:  44  string "template.part.TP_Buff_Sub_ToByNo"
+00360:  44  initprop "extend"
+00365:  44  endinit
+00366:  44  setprop "P_BuffSub_Effect_ToByNo"
+00371:  44  popv
+00372:  49  name "xs"
+00377:  49  getprop "Cfg"
+00382:  49  getprop "Skill"
+00387:  49  getprop "part"
+00392:  49  newinit 1
+00397:  50  string "template.part.TP_Buff_From"
+00402:  50  initprop "extend"
+00407:  51  newinit 1
+00412:  52  newinit 1
+00417:  53  newinit 1
+00422:  54  newinit 1
+00427:  54  string "ani_buff_atk_add"
+00432:  54  initprop "aniId"
+00437:  54  endinit
+00438:  54  initprop "_play"
+00443:  54  endinit
+00444:  54  initprop "timelines"
+00449:  54  endinit
+00450:  54  initprop "_buff"
+00455:  54  endinit
+00456:  54  initprop "items"
+00461:  54  endinit
+00462:  54  setprop "P_Atk_Add_From"
+00467:  54  popv
+00468:  61  name "xs"
+00473:  61  getprop "Cfg"
+00478:  61  getprop "Skill"
+00483:  61  getprop "part"
+00488:  61  newinit 1
+00493:  62  string "template.part.TP_Buff_From"
+00498:  62  initprop "extend"
+00503:  63  newinit 1
+00508:  64  newinit 1
+00513:  65  newinit 1
+00518:  66  newarray 1
+00522:  66  string "noatk"
+00527:  66  initelem_array 0
+00531:  66  endinit
+00532:  66  initprop "ignore"
+00537:  66  endinit
+00538:  66  initprop "property"
+00543:  68  newinit 1
+00548:  69  newinit 1
+00553:  69  string "ani_buff_atk_add"
+00558:  69  initprop "aniId"
+00563:  69  endinit
+00564:  69  initprop "_play"
+00569:  69  endinit
+00570:  69  initprop "timelines"
+00575:  69  endinit
+00576:  69  initprop "_buff"
+00581:  69  endinit
+00582:  69  initprop "items"
+00587:  69  endinit
+00588:  69  setprop "P_Atk_Add_From_Noatk"
+00593:  69  popv
+00594:  76  name "xs"
+00599:  76  getprop "Cfg"
+00604:  76  getprop "Skill"
+00609:  76  getprop "part"
+00614:  76  newinit 1
+00619:  78  string "template.part.TP_Buff_To"
+00624:  78  initprop "extend"
+00629:  80  newinit 1
+00634:  81  newinit 1
+00639:  82  newinit 1
+00644:  83  newinit 1
+00649:  83  string "ani_buff_atk_add"
+00654:  83  initprop "aniId"
+00659:  83  endinit
+00660:  83  initprop "_play"
+00665:  83  endinit
+00666:  83  initprop "timelines"
+00671:  83  endinit
+00672:  83  initprop "_buff"
+00677:  83  endinit
+00678:  83  initprop "items"
+00683:  83  endinit
+00684:  83  setprop "P_Atk_Add_To"
+00689:  83  popv
+00690:  89  name "xs"
+00695:  89  getprop "Cfg"
+00700:  89  getprop "Skill"
+00705:  89  getprop "part"
+00710:  89  newinit 1
+00715:  91  string "template.part.TP_Buff_To"
+00720:  91  initprop "extend"
+00725:  92  newinit 1
+00730:  93  newarray 1
+00734:  93  string "self"
+00739:  93  initelem_array 0
+00743:  93  endinit
+00744:  93  initprop "ignore"
+00749:  93  endinit
+00750:  93  initprop "property"
+00755:  96  newinit 1
+00760:  97  newinit 1
+00765:  98  newinit 1
+00770:  99  newinit 1
+00775:  99  string "ani_buff_atk_add"
+00780:  99  initprop "aniId"
+00785:  99  endinit
+00786:  99  initprop "_play"
+00791:  99  endinit
+00792:  99  initprop "timelines"
+00797:  99  endinit
+00798:  99  initprop "_buff"
+00803:  99  endinit
+00804:  99  initprop "items"
+00809:  99  endinit
+00810:  99  setprop "P_Atk_Add_To_JieYin"
+00815:  99  popv
+00816: 105  name "xs"
+00821: 105  getprop "Cfg"
+00826: 105  getprop "Skill"
+00831: 105  getprop "part"
+00836: 105  newinit 1
+00841: 106  string "part.P_Atk_Add_To"
+00846: 106  initprop "extend"
+00851: 107  newinit 1
+00856: 108  newinit 1
+00861: 109  newinit 1
+00866: 110  newinit 1
+00871: 110  string "ani_buff_int_add"
+00876: 110  initprop "aniId"
+00881: 110  endinit
+00882: 110  initprop "_play"
+00887: 110  endinit
+00888: 110  initprop "timelines"
+00893: 110  endinit
+00894: 110  initprop "_buff"
+00899: 110  endinit
+00900: 110  initprop "items"
+00905: 110  endinit
+00906: 110  setprop "P_Int_Add_To"
+00911: 110  popv
+00912: 116  name "xs"
+00917: 116  getprop "Cfg"
+00922: 116  getprop "Skill"
+00927: 116  getprop "part"
+00932: 116  newinit 1
+00937: 117  string "part.P_Atk_Add_From"
+00942: 117  initprop "extend"
+00947: 118  newinit 1
+00952: 119  newinit 1
+00957: 120  newinit 1
+00962: 121  newinit 1
+00967: 121  string "ani_buff_int_add"
+00972: 121  initprop "aniId"
+00977: 121  endinit
+00978: 121  initprop "_play"
+00983: 121  endinit
+00984: 121  initprop "timelines"
+00989: 121  endinit
+00990: 121  initprop "_buff"
+00995: 121  endinit
+00996: 121  initprop "items"
+01001: 121  endinit
+01002: 121  setprop "P_Int_Add_From"
+01007: 121  popv
+01008: 129  name "xs"
+01013: 129  getprop "Cfg"
+01018: 129  getprop "Skill"
+01023: 129  getprop "part"
+01028: 129  newinit 1
+01033: 130  string "part.P_Atk_Add_From"
+01038: 130  initprop "extend"
+01043: 131  newinit 1
+01048: 132  newinit 1
+01053: 133  newinit 1
+01058: 134  newarray 1
+01062: 134  string "nowis"
+01067: 134  initelem_array 0
+01071: 134  endinit
+01072: 134  initprop "ignore"
+01077: 134  endinit
+01078: 134  initprop "property"
+01083: 136  newinit 1
+01088: 137  newinit 1
+01093: 137  string "ani_buff_int_add"
+01098: 137  initprop "aniId"
+01103: 137  endinit
+01104: 137  initprop "_play"
+01109: 137  endinit
+01110: 137  initprop "timelines"
+01115: 137  endinit
+01116: 137  initprop "_buff"
+01121: 137  endinit
+01122: 137  initprop "items"
+01127: 137  endinit
+01128: 137  setprop "P_Int_Add_From_Nowis"
+01133: 137  popv
+01134: 143  name "xs"
+01139: 143  getprop "Cfg"
+01144: 143  getprop "Skill"
+01149: 143  getprop "part"
+01154: 143  newinit 1
+01159: 145  string "template.part.TP_Buff_From"
+01164: 145  initprop "extend"
+01169: 147  newinit 1
+01174: 148  newinit 1
+01179: 149  newinit 1
+01184: 150  newinit 1
+01189: 150  string "ani_buff_def_add"
+01194: 150  initprop "aniId"
+01199: 150  endinit
+01200: 150  initprop "_play"
+01205: 150  endinit
+01206: 150  initprop "timelines"
+01211: 150  endinit
+01212: 150  initprop "_buff"
+01217: 150  endinit
+01218: 150  initprop "items"
+01223: 150  endinit
+01224: 150  setprop "P_Def_Add_From"
+01229: 150  popv
+01230: 156  name "xs"
+01235: 156  getprop "Cfg"
+01240: 156  getprop "Skill"
+01245: 156  getprop "part"
+01250: 156  newinit 1
+01255: 158  string "template.part.TP_Buff_To"
+01260: 158  initprop "extend"
+01265: 160  newinit 1
+01270: 161  newinit 1
+01275: 162  newinit 1
+01280: 163  newinit 1
+01285: 163  string "ani_buff_def_add"
+01290: 163  initprop "aniId"
+01295: 163  endinit
+01296: 163  initprop "_play"
+01301: 163  endinit
+01302: 163  initprop "timelines"
+01307: 163  endinit
+01308: 163  initprop "_buff"
+01313: 163  endinit
+01314: 163  initprop "items"
+01319: 163  endinit
+01320: 163  setprop "P_Def_Add_To"
+01325: 163  popv
+01326: 172  name "xs"
+01331: 172  getprop "Cfg"
+01336: 172  getprop "Skill"
+01341: 172  getprop "part"
+01346: 172  newinit 1
+01351: 174  string "template.part.TP_Buff_To"
+01356: 174  initprop "extend"
+01361: 176  newinit 1
+01366: 178  newinit 1
+01371: 179  newinit 1
+01376: 180  newinit 1
+01381: 180  string "ani_buff_def_sub"
+01386: 180  initprop "aniId"
+01391: 180  endinit
+01392: 180  initprop "_play"
+01397: 180  endinit
+01398: 180  initprop "timelines"
+01403: 180  endinit
+01404: 180  initprop "_buff"
+01409: 180  endinit
+01410: 180  initprop "items"
+01415: 180  endinit
+01416: 180  setprop "P_Def_Sub_To"
+01421: 180  popv
+01422: 196  name "xs"
+01427: 196  getprop "Cfg"
+01432: 196  getprop "Skill"
+01437: 196  getprop "part"
+01442: 196  newinit 1
+01447: 198  string "template.part.TP_Buff_From"
+01452: 198  initprop "extend"
+01457: 200  newinit 1
+01462: 202  newinit 1
+01467: 203  newinit 1
+01472: 204  newinit 1
+01477: 204  string "ani_buff_def_sub"
+01482: 204  initprop "aniId"
+01487: 204  endinit
+01488: 204  initprop "_play"
+01493: 204  endinit
+01494: 204  initprop "timelines"
+01499: 204  endinit
+01500: 204  initprop "_buff"
+01505: 204  endinit
+01506: 204  initprop "items"
+01511: 204  endinit
+01512: 204  setprop "P_Def_Sub_From"
+01517: 204  popv
+01518: 221  name "xs"
+01523: 221  getprop "Cfg"
+01528: 221  getprop "Skill"
+01533: 221  getprop "part"
+01538: 221  newinit 1
+01543: 224  string "template.part.TP_Buff_To"
+01548: 224  initprop "extend"
+01553: 227  newinit 1
+01558: 230  newinit 1
+01563: 231  newinit 1
+01568: 232  newarray 2
+01572: 232  string "death"
+01577: 232  initelem_array 0
+01581: 232  string "nodef"
+01586: 232  initelem_array 1
+01590: 232  endinit
+01591: 232  initprop "ignore"
+01596: 232  endinit
+01597: 232  initprop "property"
+01602: 235  newinit 1
+01607: 236  newinit 1
+01612: 236  string "ani_buff_def_sub"
+01617: 236  initprop "aniId"
+01622: 236  endinit
+01623: 236  initprop "_play"
+01628: 236  endinit
+01629: 236  initprop "timelines"
+01634: 236  endinit
+01635: 236  initprop "_buff"
+01640: 236  endinit
+01641: 236  initprop "items"
+01646: 236  endinit
+01647: 236  setprop "P_Def_Sub_ToByDef"
+01652: 236  popv
+01653: 246  name "xs"
+01658: 246  getprop "Cfg"
+01663: 246  getprop "Skill"
+01668: 246  getprop "part"
+01673: 246  newinit 1
+01678: 248  string "template.part.TP_Buff_To"
+01683: 248  initprop "extend"
+01688: 250  newinit 1
+01693: 252  newinit 1
+01698: 253  newinit 1
+01703: 254  newinit 1
+01708: 254  string "ani_buff_atk_sub"
+01713: 254  initprop "aniId"
+01718: 254  endinit
+01719: 254  initprop "_play"
+01724: 254  endinit
+01725: 254  initprop "timelines"
+01730: 254  endinit
+01731: 254  initprop "_buff"
+01736: 254  endinit
+01737: 254  initprop "items"
+01742: 254  endinit
+01743: 254  setprop "P_Atk_Sub_To"
+01748: 254  popv
+01749: 261  name "xs"
+01754: 261  getprop "Cfg"
+01759: 261  getprop "Skill"
+01764: 261  getprop "part"
+01769: 261  newinit 1
+01774: 263  string "template.part.TP_Buff_To_NoBak"
+01779: 263  initprop "extend"
+01784: 265  newinit 1
+01789: 267  newinit 1
+01794: 268  newinit 1
+01799: 269  newinit 1
+01804: 269  string "ani_buff_atk_sub"
+01809: 269  initprop "aniId"
+01814: 269  endinit
+01815: 269  initprop "_play"
+01820: 269  endinit
+01821: 269  initprop "timelines"
+01826: 269  endinit
+01827: 269  initprop "_buff"
+01832: 269  endinit
+01833: 269  initprop "items"
+01838: 269  endinit
+01839: 269  setprop "P_Atk_Sub_To_NoBak"
+01844: 269  popv
+01845: 275  name "xs"
+01850: 275  getprop "Cfg"
+01855: 275  getprop "Skill"
+01860: 275  getprop "part"
+01865: 275  newinit 1
+01870: 277  string "template.part.TP_Buff_To"
+01875: 277  initprop "extend"
+01880: 279  newinit 1
+01885: 281  newinit 1
+01890: 282  newinit 1
+01895: 283  newinit 1
+01900: 283  string "ani_buff_treat_sub"
+01905: 283  initprop "aniId"
+01910: 283  endinit
+01911: 283  initprop "_play"
+01916: 283  endinit
+01917: 283  initprop "timelines"
+01922: 283  endinit
+01923: 283  initprop "_buff"
+01928: 283  endinit
+01929: 283  initprop "items"
+01934: 283  endinit
+01935: 283  setprop "P_Treat_Sub_To"
+01940: 283  popv
+01941: 289  name "xs"
+01946: 289  getprop "Cfg"
+01951: 289  getprop "Skill"
+01956: 289  getprop "part"
+01961: 289  newinit 1
+01966: 290  newinit 1
+01971: 291  newinit 1
+01976: 292  newinit 1
+01981: 293  string "to"
+01986: 293  initprop "parent"
+01991: 294  string "armature"
+01996: 294  initprop "type"
+02001: 295  string "Arm_Fight_Status_Nuyan"
+02006: 295  initprop "armatureId"
+02011: 296  string "to_tmp"
+02016: 296  initprop "belong"
+02021: 298  newarray 2
+02025: 298  string "death"
+02030: 298  initelem_array 0
+02034: 298  string "ghost"
+02039: 298  initelem_array 1
+02043: 298  endinit
+02044: 298  initprop "ignore"
+02049: 298  endinit
+02050: 298  initprop "property"
+02055: 300  newinit 1
+02060: 301  null
+02061: 301  initprop "_delay"
+02066: 302  newinit 1
+02071: 302  string "AddWeiWuFlag"
+02076: 302  initprop "type"
+02081: 302  endinit
+02082: 302  initprop "_play"
+02087: 302  endinit
+02088: 302  initprop "timelines"
+02093: 302  endinit
+02094: 302  initprop "_effect"
+02099: 302  endinit
+02100: 302  initprop "items"
+02105: 302  endinit
+02106: 302  setprop "P_NuYan_Backup_Add"
+02111: 302  popv
+02112: 310  name "xs"
+02117: 310  getprop "Cfg"
+02122: 310  getprop "Skill"
+02127: 310  getprop "part"
+02132: 310  newinit 1
+02137: 311  newinit 1
+02142: 312  newinit 1
+02147: 313  newinit 1
+02152: 314  string "to"
+02157: 314  initprop "parent"
+02162: 315  string "armature"
+02167: 315  initprop "type"
+02172: 316  string "Arm_Fight_Status_Nuyan"
+02177: 316  initprop "armatureId"
+02182: 317  string "to_tmp"
+02187: 317  initprop "belong"
+02192: 318  newarray 2
+02196: 318  string "death"
+02201: 318  initelem_array 0
+02205: 318  string "ghost"
+02210: 318  initelem_array 1
+02214: 318  endinit
+02215: 318  initprop "ignore"
+02220: 318  endinit
+02221: 318  initprop "property"
+02226: 320  newinit 1
+02231: 321  null
+02232: 321  initprop "_delay"
+02237: 322  newinit 1
+02242: 322  string "RemoveWeiWuFlag"
+02247: 322  initprop "type"
+02252: 322  endinit
+02253: 322  initprop "_play"
+02258: 322  endinit
+02259: 322  initprop "timelines"
+02264: 322  endinit
+02265: 322  initprop "_effect"
+02270: 322  endinit
+02271: 322  initprop "items"
+02276: 322  endinit
+02277: 322  setprop "P_NuYan_Backup_Remove"
+02282: 322  popv
+02283: 329  name "xs"
+02288: 329  getprop "Cfg"
+02293: 329  getprop "Skill"
+02298: 329  getprop "part"
+02303: 329  newinit 1
+02308: 331  string "template.part.TP_Buff_To"
+02313: 331  initprop "extend"
+02318: 333  newinit 1
+02323: 335  newinit 1
+02328: 336  newinit 1
+02333: 337  newinit 1
+02338: 337  string "ani_buff_int_sub"
+02343: 337  initprop "aniId"
+02348: 337  endinit
+02349: 337  initprop "_play"
+02354: 337  endinit
+02355: 337  initprop "timelines"
+02360: 337  endinit
+02361: 337  initprop "_buff"
+02366: 337  endinit
+02367: 337  initprop "items"
+02372: 337  endinit
+02373: 337  setprop "P_Int_Sub_To"
+02378: 337  popv
+02379: 342  name "xs"
+02384: 342  getprop "Cfg"
+02389: 342  getprop "Skill"
+02394: 342  getprop "part"
+02399: 342  newinit 1
+02404: 344  string "template.part.TP_Buff_From"
+02409: 344  initprop "extend"
+02414: 346  newinit 1
+02419: 348  newinit 1
+02424: 349  newinit 1
+02429: 350  newinit 1
+02434: 350  string "ani_buff_int_sub"
+02439: 350  initprop "aniId"
+02444: 350  endinit
+02445: 350  initprop "_play"
+02450: 350  endinit
+02451: 350  initprop "timelines"
+02456: 350  endinit
+02457: 350  initprop "_buff"
+02462: 350  endinit
+02463: 350  initprop "items"
+02468: 350  endinit
+02469: 350  setprop "P_Int_Sub_From"
+02474: 350  popv
+02475: 356  name "xs"
+02480: 356  getprop "Cfg"
+02485: 356  getprop "Skill"
+02490: 356  getprop "part"
+02495: 356  newinit 1
+02500: 358  string "template.part.TP_Buff_To"
+02505: 358  initprop "extend"
+02510: 360  newinit 1
+02515: 362  newinit 1
+02520: 363  newinit 1
+02525: 364  newinit 1
+02530: 364  string "ani_buff_atkdef_sub"
+02535: 364  initprop "aniId"
+02540: 364  endinit
+02541: 364  initprop "_play"
+02546: 364  endinit
+02547: 364  initprop "timelines"
+02552: 364  endinit
+02553: 364  initprop "_buff"
+02558: 364  endinit
+02559: 364  initprop "items"
+02564: 364  endinit
+02565: 364  setprop "P_AtkDef_Sub_To"
+02570: 364  popv
+02571: 371  name "xs"
+02576: 371  getprop "Cfg"
+02581: 371  getprop "Skill"
+02586: 371  getprop "part"
+02591: 371  newinit 1
+02596: 372  newinit 1
+02601: 373  newinit 1
+02606: 374  string "template.item.TI_Text_Cure_To"
+02611: 374  initprop "extend"
+02616: 374  endinit
+02617: 374  initprop "_text"
+02622: 376  newinit 1
+02627: 376  string "template.item.TI_Hp_Add_Top_To"
+02632: 376  initprop "extend"
+02637: 376  endinit
+02638: 376  initprop "_to_hp_top"
+02643: 377  newinit 1
+02648: 377  string "template.item.TI_Hp_Add_Bot_To"
+02653: 377  initprop "extend"
+02658: 377  endinit
+02659: 377  initprop "_to_hp_bot"
+02664: 377  endinit
+02665: 377  initprop "items"
+02670: 377  endinit
+02671: 377  setprop "P_Hp_Add_To"
+02676: 377  popv
+02677: 381  name "xs"
+02682: 381  getprop "Cfg"
+02687: 381  getprop "Skill"
+02692: 381  getprop "part"
+02697: 381  newinit 1
+02702: 382  newinit 1
+02707: 383  newinit 1
+02712: 384  string "fs"
+02717: 384  initprop "trigger"
+02722: 384  endinit
+02723: 384  initprop "property"
+02728: 386  newinit 1
+02733: 387  string "template.item.TI_Text_Cure_To"
+02738: 387  initprop "extend"
+02743: 387  endinit
+02744: 387  initprop "_text"
+02749: 389  newinit 1
+02754: 389  string "template.item.TI_Hp_Add_Top_To"
+02759: 389  initprop "extend"
+02764: 389  endinit
+02765: 389  initprop "_to_hp_top"
+02770: 390  newinit 1
+02775: 390  string "template.item.TI_Hp_Add_Bot_To"
+02780: 390  initprop "extend"
+02785: 390  endinit
+02786: 390  initprop "_to_hp_bot"
+02791: 390  endinit
+02792: 390  initprop "items"
+02797: 390  endinit
+02798: 390  setprop "P_Hp_Add_To_FS"
+02803: 390  popv
+02804: 394  name "xs"
+02809: 394  getprop "Cfg"
+02814: 394  getprop "Skill"
+02819: 394  getprop "part"
+02824: 394  newinit 1
+02829: 395  newinit 1
+02834: 396  newarray 1
+02838: 396  string "fs"
+02843: 396  initelem_array 0
+02847: 396  endinit
+02848: 396  initprop "ignore"
+02853: 396  endinit
+02854: 396  initprop "property"
+02859: 398  newinit 1
+02864: 399  newinit 1
+02869: 400  string "template.item.TI_Text_Cure_To"
+02874: 400  initprop "extend"
+02879: 400  endinit
+02880: 400  initprop "_text"
+02885: 402  newinit 1
+02890: 402  string "template.item.TI_Hp_Add_Top_To"
+02895: 402  initprop "extend"
+02900: 402  endinit
+02901: 402  initprop "_to_hp_top"
+02906: 403  newinit 1
+02911: 403  string "template.item.TI_Hp_Add_Bot_To"
+02916: 403  initprop "extend"
+02921: 403  endinit
+02922: 403  initprop "_to_hp_bot"
+02927: 403  endinit
+02928: 403  initprop "items"
+02933: 403  endinit
+02934: 403  setprop "P_Hp_Add_To_NOFS"
+02939: 403  popv
+02940: 407  name "xs"
+02945: 407  getprop "Cfg"
+02950: 407  getprop "Skill"
+02955: 407  getprop "part"
+02960: 407  newinit 1
+02965: 408  newinit 1
+02970: 409  newinit 1
+02975: 410  string "template.item.TI_Text_Cure_From"
+02980: 410  initprop "extend"
+02985: 410  endinit
+02986: 410  initprop "_text"
+02991: 412  newinit 1
+02996: 412  string "template.item.TI_Hp_Add_Top_From"
+03001: 412  initprop "extend"
+03006: 412  endinit
+03007: 412  initprop "_to_hp_top"
+03012: 413  newinit 1
+03017: 413  string "template.item.TI_Hp_Add_Bot_From"
+03022: 413  initprop "extend"
+03027: 413  endinit
+03028: 413  initprop "_to_hp_bot"
+03033: 413  endinit
+03034: 413  initprop "items"
+03039: 413  endinit
+03040: 413  setprop "P_Hp_Add_From"
+03045: 413  popv
+03046: 418  name "xs"
+03051: 418  getprop "Cfg"
+03056: 418  getprop "Skill"
+03061: 418  getprop "part"
+03066: 418  newinit 1
+03071: 419  newinit 1
+03076: 420  newinit 1
+03081: 421  string "template.item.TI_Text_Cure_From_ByCure"
+03086: 421  initprop "extend"
+03091: 421  endinit
+03092: 421  initprop "_text"
+03097: 423  newinit 1
+03102: 423  string "template.item.TI_Hp_Add_Top_From"
+03107: 423  initprop "extend"
+03112: 423  endinit
+03113: 423  initprop "_to_hp_top"
+03118: 424  newinit 1
+03123: 424  string "template.item.TI_Hp_Add_Bot_From"
+03128: 424  initprop "extend"
+03133: 424  endinit
+03134: 424  initprop "_to_hp_bot"
+03139: 424  endinit
+03140: 424  initprop "items"
+03145: 424  endinit
+03146: 424  setprop "P_Hp_Add_From_By_Cure"
+03151: 424  popv
+03152: 428  name "xs"
+03157: 428  getprop "Cfg"
+03162: 428  getprop "Skill"
+03167: 428  getprop "part"
+03172: 428  newinit 1
+03177: 429  newinit 1
+03182: 430  newinit 1
+03187: 431  string "template.item.TI_Text_Hurt_From"
+03192: 431  initprop "extend"
+03197: 431  endinit
+03198: 431  initprop "_text"
+03203: 433  newinit 1
+03208: 433  string "template.item.TI_Hp_Sub_Top_From"
+03213: 433  initprop "extend"
+03218: 433  endinit
+03219: 433  initprop "_to_hp_top"
+03224: 434  newinit 1
+03229: 434  string "template.item.TI_Hp_Sub_Bot_From"
+03234: 434  initprop "extend"
+03239: 434  endinit
+03240: 434  initprop "_to_hp_bot"
+03245: 434  endinit
+03246: 434  initprop "items"
+03251: 434  endinit
+03252: 434  setprop "P_Hp_Sub_From"
+03257: 434  popv
+03258: 439  name "xs"
+03263: 439  getprop "Cfg"
+03268: 439  getprop "Skill"
+03273: 439  getprop "part"
+03278: 439  newinit 1
+03283: 440  string "part.P_Atk_Add_From"
+03288: 440  initprop "extend"
+03293: 441  newinit 1
+03298: 442  newinit 1
+03303: 443  newinit 1
+03308: 444  newarray 1
+03312: 444  string "fail"
+03317: 444  initelem_array 0
+03321: 444  endinit
+03322: 444  initprop "ignore"
+03327: 444  endinit
+03328: 444  initprop "property"
+03333: 446  newinit 1
+03338: 447  newinit 1
+03343: 447  string "ani_buff_int_add"
+03348: 447  initprop "aniId"
+03353: 447  endinit
+03354: 447  initprop "_play"
+03359: 447  endinit
+03360: 447  initprop "timelines"
+03365: 447  endinit
+03366: 447  initprop "_buff"
+03371: 447  endinit
+03372: 447  initprop "items"
+03377: 447  endinit
+03378: 447  setprop "P_Int_Add_From_NoFail"
+03383: 447  popv
+03384: 455  name "xs"
+03389: 455  getprop "Cfg"
+03394: 455  getprop "Skill"
+03399: 455  getprop "part"
+03404: 455  newinit 1
+03409: 456  string "part.P_Int_Add_From"
+03414: 456  initprop "extend"
+03419: 456  endinit
+03420: 456  setprop "P_LuoShen_Buff_Text_Loop"
+03425: 456  popv
+03426: 464  name "xs"
+03431: 464  getprop "Cfg"
+03436: 464  getprop "Skill"
+03441: 464  getprop "part"
+03446: 464  newinit 1
+03451: 466  string "part.P_Def_Add_To"
+03456: 466  initprop "extend"
+03461: 467  newinit 1
+03466: 468  newinit 1
+03471: 469  newinit 1
+03476: 470  string "dimeng_a"
+03481: 470  initprop "trigger"
+03486: 470  endinit
+03487: 470  initprop "property"
+03492: 470  endinit
+03493: 470  initprop "_buff"
+03498: 474  newinit 1
+03503: 475  newinit 1
+03508: 476  string "dimeng_a"
+03513: 476  initprop "trigger"
+03518: 476  endinit
+03519: 476  initprop "property"
+03524: 476  endinit
+03525: 476  initprop "_text"
+03530: 476  endinit
+03531: 476  initprop "items"
+03536: 476  endinit
+03537: 476  setprop "P_DiMeng_a"
+03542: 476  popv
+03543: 481  name "xs"
+03548: 481  getprop "Cfg"
+03553: 481  getprop "Skill"
+03558: 481  getprop "part"
+03563: 481  newinit 1
+03568: 483  string "part.P_Def_Sub_To"
+03573: 483  initprop "extend"
+03578: 484  newinit 1
+03583: 485  newinit 1
+03588: 486  newinit 1
+03593: 487  string "dimeng_b"
+03598: 487  initprop "trigger"
+03603: 487  endinit
+03604: 487  initprop "property"
+03609: 487  endinit
+03610: 487  initprop "_buff"
+03615: 491  newinit 1
+03620: 492  newinit 1
+03625: 493  string "dimeng_b"
+03630: 493  initprop "trigger"
+03635: 493  endinit
+03636: 493  initprop "property"
+03641: 493  endinit
+03642: 493  initprop "_text"
+03647: 493  endinit
+03648: 493  initprop "items"
+03653: 493  endinit
+03654: 493  setprop "P_DiMeng_b"
+03659: 493  popv
+03660: 499  name "xs"
+03665: 499  getprop "Cfg"
+03670: 499  getprop "Skill"
+03675: 499  getprop "part"
+03680: 499  newinit 1
+03685: 500  string "part.P_Cure_From"
+03690: 500  initprop "extend"
+03695: 501  newinit 1
+03700: 502  string "nohurt"
+03705: 502  initprop "ignore"
+03710: 502  endinit
+03711: 502  initprop "property"
+03716: 502  endinit
+03717: 502  setprop "P_JianYing_Cure_From"
+03722: 502  popv
+03723: 505  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Skill/PartBuff.js:1 ---

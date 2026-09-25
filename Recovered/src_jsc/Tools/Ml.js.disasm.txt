@@ -1,0 +1,267 @@
+;; Input: /home/inkbottle/othersrc/android_playground/sgscq-reconstruction/Resources/assets/src_jsc/Tools/Ml.jsc
+;; XDR magic: 0xb973c051
+;; SpiderMonkey v22 bytecode disassembly (debug build)
+
+
+;; nested bytecode depth=0
+;; FUNCTION-MAP kind=lambda offset=15 object[0]
+;; FUNCTION-MAP kind=lambda offset=25 object[1]
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Ml.js:1 ---
+loc   line  op
+----- ----  --
+main:
+00000:   9  name "xs"
+00005:   9  getprop "Tools"
+00010:   9  newinit 1
+00015:  10  lambda (function () {
+    [sourceless code]
+})
+00020:  10  initprop "createString"
+00025:  45  lambda (function () {
+    [sourceless code]
+})
+00030:  45  initprop "createStringWithArgsArray"
+00035:  45  endinit
+00036:  45  setprop "Ml"
+00041:  45  popv
+00042:  63  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Ml.js:1 ---
+;; function object[0] createString
+;; function metadata object[0] nargs=2 bindings=8
+;; arg[0] stringId
+;; arg[1] language
+;; local[0] _language
+;; local[1] _dataCfg
+;; local[2] _record
+;; local[3] _result
+;; local[4] defaultKey
+;; local[5] valueDef
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Ml.js:10 ---
+loc   line  op
+----- ----  --
+main:
+00000:  12  getarg 1
+00003:  12  or 24 (+21)
+00008:  12  pop
+00009:  12  name "xs"
+00014:  12  getprop "Cfg"
+00019:  12  getprop "ClientLanguage"
+00024:  12  setlocal 0
+00027:  12  pop
+00028:  15  name "xs"
+00033:  15  getprop "Tools"
+00038:  15  getprop "CfgData"
+00043:  15  dup
+00044:  15  callprop "getCfgDataByType"
+00049:  15  swap
+00050:  15  notearg
+00051:  15  name "xs"
+00056:  15  getprop "Constant_CfgDataType_i18n"
+00061:  15  notearg
+00062:  15  call 1
+00065:  15  setlocal 1
+00068:  15  pop
+00069:  18  getlocal 1
+00072:  18  getarg 0
+00075:  18  getelem
+00076:  18  setlocal 2
+00079:  18  pop
+00080:  20  string ""
+00085:  20  setlocal 3
+00088:  20  pop
+00089:  25  getlocal 2
+00092:  25  ifeq 113 (+21)
+00097:  26  getlocal 2
+00100:  26  getlocal 0
+00103:  26  getelem
+00104:  26  setlocal 3
+00107:  26  pop
+00108:  26  goto 305 (+197)
+00113:  27  name "xs"
+00118:  27  getprop "Cfg"
+00123:  27  getprop "String"
+00128:  27  getarg 0
+00131:  27  getelem
+00132:  27  ifeq 170 (+38)
+00137:  28  name "xs"
+00142:  28  getprop "Cfg"
+00147:  28  getprop "String"
+00152:  28  getarg 0
+00155:  28  getelem
+00156:  28  getprop "format"
+00161:  28  setlocal 3
+00164:  28  pop
+00165:  28  goto 305 (+140)
+00170:  30  name "xs"
+00175:  30  getprop "Tools"
+00180:  30  getprop "CfgData"
+00185:  30  dup
+00186:  30  callprop "getDefaultKey"
+00191:  30  swap
+00192:  30  notearg
+00193:  30  name "xs"
+00198:  30  getprop "Constant_CfgDataType_i18n"
+00203:  30  notearg
+00204:  30  call 1
+00207:  30  setlocal 4
+00210:  30  pop
+00211:  31  getlocal 1
+00214:  31  getlocal 4
+00217:  31  getelem
+00218:  31  setlocal 5
+00221:  31  pop
+00222:  33  name "xs"
+00227:  33  dup
+00228:  33  callprop "warn"
+00233:  33  swap
+00234:  33  notearg
+00235:  33  string "_record not found! type="
+00240:  33  name "xs"
+00245:  33  getprop "Constant_CfgDataType_i18n"
+00250:  33  add
+00251:  33  string " key="
+00256:  33  add
+00257:  33  getarg 0
+00260:  33  add
+00261:  33  string " use defaultKey="
+00266:  33  add
+00267:  33  getlocal 4
+00270:  33  add
+00271:  33  notearg
+00272:  33  call 1
+00275:  33  pop
+00276:  34  getlocal 5
+00279:  34  ifeq 296 (+17)
+00284:  34  getlocal 5
+00287:  34  getlocal 0
+00290:  34  getelem
+00291:  34  goto 301 (+10)
+00296:  34  string " "
+00301:  34  setlocal 3
+00304:  34  pop
+00305:  37  getlocal 3
+00308:  37  not
+00309:  37  and 324 (+15)
+00314:  37  pop
+00315:  37  getlocal 3
+00318:  37  string ""
+00323:  37  ne
+00324:  37  ifeq 372 (+48)
+00329:  39  name "xs"
+00334:  39  dup
+00335:  39  callprop "warn"
+00340:  39  swap
+00341:  39  notearg
+00342:  39  string "xs.Tools.Ml"
+00347:  39  notearg
+00348:  39  getarg 0
+00351:  39  string "|"
+00356:  39  add
+00357:  39  getlocal 0
+00360:  39  add
+00361:  39  notearg
+00362:  39  call 2
+00365:  39  pop
+00366:  40  string "DefaultString"
+00371:  40  return
+00372:  42  getlocal 3
+00375:  42  return
+00376:  42  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Ml.js:10 ---
+;; function object[1] createStringWithArgsArray
+;; function metadata object[1] nargs=2 bindings=6
+;; arg[0] stringId
+;; arg[1] argsArray
+;; local[0] _argsArray
+;; local[1] _ret
+;; local[2] i
+;; local[3] _arg
+
+;; nested bytecode depth=1
+--- SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Ml.js:45 ---
+loc   line  op
+----- ----  --
+main:
+00000:  47  getarg 1
+00003:  47  or 14 (+11)
+00008:  47  pop
+00009:  47  newarray 0
+00013:  47  endinit
+00014:  47  setlocal 0
+00017:  47  pop
+00018:  49  name "xs"
+00023:  49  dup
+00024:  49  callprop "assert"
+00029:  49  swap
+00030:  49  notearg
+00031:  49  name "xs"
+00036:  49  getprop "Utils"
+00041:  49  dup
+00042:  49  callprop "isArray"
+00047:  49  swap
+00048:  49  notearg
+00049:  49  getlocal 0
+00052:  49  notearg
+00053:  49  call 1
+00056:  49  notearg
+00057:  49  string "createWithArgs need array"
+00062:  49  notearg
+00063:  49  call 2
+00066:  49  pop
+00067:  51  this
+00068:  51  dup
+00069:  51  callprop "createString"
+00074:  51  swap
+00075:  51  notearg
+00076:  51  getarg 0
+00079:  51  notearg
+00080:  51  call 1
+00083:  51  setlocal 1
+00086:  51  pop
+00087:  53  zero
+00088:  53  setlocal 2
+00091:  53  pop
+00092:  53  goto 158 (+66)
+00097:  54  loophead
+00098:  54  getlocal 0
+00101:  54  getlocal 2
+00104:  54  getelem
+00105:  54  setlocal 3
+00108:  54  pop
+00109:  56  getlocal 1
+00112:  56  dup
+00113:  56  callprop "replace"
+00118:  56  swap
+00119:  56  notearg
+00120:  56  string "$"
+00125:  56  getlocal 2
+00128:  56  one
+00129:  56  add
+00130:  56  add
+00131:  56  notearg
+00132:  56  getlocal 3
+00135:  56  notearg
+00136:  56  call 2
+00139:  56  setlocal 1
+00142:  56  pop
+00143:  53  localinc 11
+00146:  53  getlocal 2
+00149:  53  pos
+00150:  53  dup
+00151:  53  one
+00152:  53  add
+00153:  53  setlocal 2
+00156:  53  pop
+00157:  53  pop
+00158:  53  loopentry
+00159:  53  getlocal 2
+00162:  53  getlocal 0
+00165:  53  length "length"
+00170:  53  lt
+00171:  53  ifne 97 (-74)
+00176:  60  getlocal 1
+00179:  60  return
+00180:  60  stop
+--- END SCRIPT /Users/zhanglinsen/workspace/bianfeng/sgscq1-china-client/projects/sgscq/Resources/src_jsc/Tools/Ml.js:45 ---
