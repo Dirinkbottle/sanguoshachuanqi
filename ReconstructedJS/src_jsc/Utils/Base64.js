@@ -23,18 +23,17 @@
     // source line 19, bytecode pc 61
     (input = this._utf8_encode(input));
     while ((i < input.length)) {
+        // 原句是 chr1 = input.charCodeAt(i++); —— 后缀自增必须先取旧值再自增。
+        // 恢复时曾把自增提到取值之前，等于丢掉第一个字符并按错位读取。
         // source line 21, bytecode pc 92
-        (i = (+i + 1));
-        // source line 21, bytecode pc 100
         (chr1 = input.charCodeAt(+i));
+        (i = (+i + 1));
         // source line 22, bytecode pc 125
-        (i = (+i + 1));
-        // source line 22, bytecode pc 133
         (chr2 = input.charCodeAt(+i));
-        // source line 23, bytecode pc 158
         (i = (+i + 1));
-        // source line 23, bytecode pc 166
+        // source line 23, bytecode pc 158
         (chr3 = input.charCodeAt(+i));
+        (i = (+i + 1));
         // source line 24, bytecode pc 176
         (enc1 = (chr1 >> 2));
         // source line 25, bytecode pc 196
@@ -64,26 +63,22 @@
     (output = "");
     // source line 45, bytecode pc 41
     (i = 0);
-    /* TODO_BYTECODE pc=53 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 46, bytecode pc 71
-    (input = input.replace(undefined /* TODO_BYTECODE pc=53 opcode=regexp reason=regexp_object_literal_not_dumped */, ""));
+    (input = input.replace(/[^A-Za-z0-9+/=]/g, ""));
     while ((i < input.length)) {
+        // 同 encode：后缀自增必须在取值之后。
         // source line 48, bytecode pc 116
-        (i = (+i + 1));
-        // source line 48, bytecode pc 128
         (enc1 = this._keyStr.indexOf(input.charAt(+i)));
+        (i = (+i + 1));
         // source line 49, bytecode pc 167
-        (i = (+i + 1));
-        // source line 49, bytecode pc 179
         (enc2 = this._keyStr.indexOf(input.charAt(+i)));
+        (i = (+i + 1));
         // source line 50, bytecode pc 218
-        (i = (+i + 1));
-        // source line 50, bytecode pc 230
         (enc3 = this._keyStr.indexOf(input.charAt(+i)));
-        // source line 51, bytecode pc 269
         (i = (+i + 1));
-        // source line 51, bytecode pc 281
+        // source line 51, bytecode pc 269
         (enc4 = this._keyStr.indexOf(input.charAt(+i)));
+        (i = (+i + 1));
         // source line 52, bytecode pc 298
         (chr1 = ((enc1 << 2) | (enc2 >> 4)));
         // source line 53, bytecode pc 318
@@ -108,9 +103,8 @@
 },
     _utf8_encode: function(string) {
     var utftext, n, c;
-    /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 69, bytecode pc 29
-    (string = string.replace(undefined /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */, "\n"));
+    (string = string.replace(/\r\n/g, "\n"));
     // source line 70, bytecode pc 38
     (utftext = "");
     // source line 71, bytecode pc 43
@@ -192,18 +186,16 @@
     // source line 121, bytecode pc 41
     (i = 0);
     while ((i < input.length)) {
+        // 后缀自增必须先取旧值再自增；见 Base64WithUtf8.encode 的说明。
         // source line 123, bytecode pc 72
-        (i = (+i + 1));
-        // source line 123, bytecode pc 80
         (chr1 = input.charCodeAt(+i));
+        (i = (+i + 1));
         // source line 124, bytecode pc 105
-        (i = (+i + 1));
-        // source line 124, bytecode pc 113
         (chr2 = input.charCodeAt(+i));
-        // source line 125, bytecode pc 138
         (i = (+i + 1));
-        // source line 125, bytecode pc 146
+        // source line 125, bytecode pc 138
         (chr3 = input.charCodeAt(+i));
+        (i = (+i + 1));
         // source line 126, bytecode pc 156
         (enc1 = (chr1 >> 2));
         // source line 127, bytecode pc 176
@@ -233,26 +225,22 @@
     (output = "");
     // source line 147, bytecode pc 41
     (i = 0);
-    /* TODO_BYTECODE pc=53 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 148, bytecode pc 71
-    (input = input.replace(undefined /* TODO_BYTECODE pc=53 opcode=regexp reason=regexp_object_literal_not_dumped */, ""));
+    (input = input.replace(/[^A-Za-z0-9+/=]/g, ""));
     while ((i < input.length)) {
+        // 同 encode。
         // source line 150, bytecode pc 116
-        (i = (+i + 1));
-        // source line 150, bytecode pc 128
         (enc1 = this._keyStr.indexOf(input.charAt(+i)));
+        (i = (+i + 1));
         // source line 151, bytecode pc 167
-        (i = (+i + 1));
-        // source line 151, bytecode pc 179
         (enc2 = this._keyStr.indexOf(input.charAt(+i)));
+        (i = (+i + 1));
         // source line 152, bytecode pc 218
-        (i = (+i + 1));
-        // source line 152, bytecode pc 230
         (enc3 = this._keyStr.indexOf(input.charAt(+i)));
-        // source line 153, bytecode pc 269
         (i = (+i + 1));
-        // source line 153, bytecode pc 281
+        // source line 153, bytecode pc 269
         (enc4 = this._keyStr.indexOf(input.charAt(+i)));
+        (i = (+i + 1));
         // source line 154, bytecode pc 298
         (chr1 = ((enc1 << 2) | (enc2 >> 4)));
         // source line 155, bytecode pc 318
@@ -279,9 +267,8 @@
     _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
     utf8_encode: function(string) {
     var utftext, n, c;
-    /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 175, bytecode pc 29
-    (string = string.replace(undefined /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */, "\n"));
+    (string = string.replace(/\r\n/g, "\n"));
     // source line 176, bytecode pc 38
     (utftext = "");
     // source line 177, bytecode pc 43

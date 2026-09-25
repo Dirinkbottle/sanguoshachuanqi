@@ -34,3 +34,8 @@ gift_coin = 1000
 # 见 src/logging.rs 的 SENSITIVE_KEYS。
 [log]
 level = "summary"
+
+# 把 /auth/register 与 /auth/login 的账号密码原样打进日志。
+# 打开后这两个接口的请求体在任何级别都会打印（否则只有 full 级别打）。
+# token / user_auth / sessionId 不受影响，始终是 ***。
+show_credentials = true

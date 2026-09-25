@@ -23,6 +23,9 @@ use std::{
     time::{Instant, SystemTime, UNIX_EPOCH},
 };
 
+/// 口令字段。`show_credentials` 为真时这几个键**不脱敏**。
+const PASSWORD_KEYS: &[&str] = &["password", "passwd", "pwd"];
+
 /// 打印前必须替换成 `***` 的键（比较时忽略大小写）。
 ///
 /// 覆盖三类：口令、会话凭据、可识别到人的信息。宁可多脱一点，
@@ -50,20 +53,25 @@ static REQUEST_ID: AtomicU64 = AtomicU64::new(1);
 /// 递归把敏感键的值替换掉。
 ///
 /// 会走进嵌套对象和数组，所以 `extra.sessionId` 这种嵌套位置也盖得到。
-pub fn redact(value: &mut Value) {
+/// `show_credentials` 只放行 `PASSWORD_KEYS`；会话令牌始终是 `***`。
+pub fn redact_with(value: &mut Value, show_credentials: bool) {
     match value {
         Value::Object(map) => {
             for (key, item) in map.iter_mut() {
-                if SENSITIVE_KEYS.contains(&key.to_ascii_lowercase().as_str()) {
+                let lowered = key.to_ascii_lowercase();
+                if SENSITIVE_KEYS.contains(&lowered.as_str()) {
+                    if show_credentials && PASSWORD_KEYS.contains(&lowered.as_str()) {
+                        continue;
+                    }
                     *item = Value::String("***".to_string());
                 } else {
-                    redact(item);
+                    redact_with(item, show_credentials);
                 }
             }
         }
         Value::Array(items) => {
             for item in items.iter_mut() {
-                redact(item);
+                redact_with(item, show_credentials);
             }
         }
         _ => {}
@@ -153,14 +161,17 @@ pub async fn log_requests(
     let request_body = serde_json::from_slice::<Value>(&body_bytes).ok();
     let request = Request::from_parts(parts, Body::from(body_bytes));
 
-    if level == LogLevel::Full {
+    // 开关打开时，账号服的请求体在任何级别都打出来——那正是这个开关的用途。
+    let auth_route = uri.path().starts_with("/auth/");
+    let show_credentials = state.config.log.show_credentials;
+    if level == LogLevel::Full || (show_credentials && auth_route) {
         let mut detail = String::new();
         if let Some(mut data) = request_data.clone() {
-            redact(&mut data);
+            redact_with(&mut data, show_credentials);
             detail.push_str(&format!("\n    data {}", compact(&data, 2000)));
         }
         if let Some(mut body) = request_body.clone() {
-            redact(&mut body);
+            redact_with(&mut body, show_credentials);
             detail.push_str(&format!("\n    body {}", compact(&body, 2000)));
         }
         // 只打路径，绝不打原始查询串：data= 里含会话令牌，打出来就把
@@ -220,15 +231,13 @@ pub async fn log_requests(
     if let Some(message) = message {
         line.push_str(&format!(" msg={message}"));
     }
-    if level == LogLevel::Full {
-        if let Some(mut value) = parsed {
-            redact(&mut value);
-            line.push_str(&format!("\n    resp {}", compact(&value, 2000)));
-        }
-        println!("{line}");
-    } else {
-        println!("{line}");
+    if level == LogLevel::Full
+        && let Some(mut value) = parsed
+    {
+        redact_with(&mut value, show_credentials);
+        line.push_str(&format!("\n    resp {}", compact(&value, 2000)));
     }
+    println!("{line}");
 
     Response::from_parts(parts, Body::from(bytes))
 }
@@ -295,7 +304,7 @@ mod tests {
             "extra": {"sessionId": "cafe", "keep": "ok"},
             "list": [{"user_auth": "x"}, {"pwd": "y"}]
         });
-        redact(&mut value);
+        redact_with(&mut value, false);
         assert_eq!(value["account_uid"], "1");
         assert_eq!(value["token"], "***");
         assert_eq!(value["password"], "***");
@@ -303,6 +312,24 @@ mod tests {
         assert_eq!(value["extra"]["keep"], "ok");
         assert_eq!(value["list"][0]["user_auth"], "***");
         assert_eq!(value["list"][1]["pwd"], "***");
+    }
+
+    /// 打开开关只放行口令；会话令牌仍然必须脱敏。
+    #[test]
+    fn credential_switch_only_exempts_passwords() {
+        let mut value = json!({
+            "username": "alice",
+            "password": "hunter2",
+            "token": "deadbeef",
+            "extra": {"sessionId": "cafe", "pwd": "s3cret"}
+        });
+        redact_with(&mut value, true);
+        assert_eq!(value["username"], "alice");
+        assert_eq!(value["password"], "hunter2");
+        assert_eq!(value["extra"]["pwd"], "s3cret");
+        // 会话凭据不受开关影响。
+        assert_eq!(value["token"], "***");
+        assert_eq!(value["extra"]["sessionId"], "***");
     }
 
     /// 时间格式化要能对上已知时刻。

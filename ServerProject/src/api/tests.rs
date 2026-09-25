@@ -59,6 +59,7 @@ fn test_config(database: std::path::PathBuf, tmp: &tempfile::TempDir, guest: boo
         // 测试里关掉日志，免得每个用例都往 stdout 刷请求行。
         log: crate::config::LogConfig {
             level: crate::config::LogLevel::Off,
+            show_credentials: false,
         },
     }
 }

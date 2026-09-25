@@ -126,6 +126,27 @@ http://cqzj.sanguosha.com/sanguosha_anysdk_2.2.6/index.php?do=versionPlus.check&
 （见 `src/logging.rs` 的 `SENSITIVE_KEYS`）。**原始查询串从不打印**——`data=` 里含会话令牌，
 打出来等于绕过脱敏。日志装在最外层中间件上，所以 404 和非法 JSON 也会留痕。
 
+另有 `show_credentials` 开关，用于本机调试账号流程：
+
+```toml
+[log]
+level = "summary"
+show_credentials = true
+```
+
+打开后 `/auth/register` 与 `/auth/login` 的请求体**在任何级别**都会打印，口令为明文：
+
+```text
+[2026-09-25T15:17:17.996Z] #1 --> POST /auth/register
+    body {"password":"MySecret-123","username":"cred_user"}
+```
+
+`username` 本来就不脱敏，所以这个开关实际只影响 `password` / `pwd` / `passwd`。
+`token` / `user_auth` / `sessionId` **不受影响，始终是 `***`**：那是运行中会话的凭据，
+和调试用的一次性口令不是一回事。进程启动时会打印一行警告，避免开关被长期遗忘。
+
+开关默认 `false`；仓库内的 `config.toml` 为调试方便设成了 `true`。
+
 把服务端和 `adb logcat` 的时间轴对齐，就能看出客户端在两边各自走到哪一步：
 
 ```sh

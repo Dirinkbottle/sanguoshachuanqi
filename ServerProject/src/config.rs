@@ -31,6 +31,14 @@ pub enum LogLevel {
 #[derive(Clone, Deserialize)]
 pub struct LogConfig {
     pub level: LogLevel,
+    /// 是否把 `password` 字段原文写进日志（`username` 本来就不脱敏）。
+    ///
+    /// 打开后 `/auth/register` 与 `/auth/login` 的请求体在任何级别都会打印，
+    /// 否则只有 `full` 级别才看得到。**这是本机调试用的开关**：日志一旦被复制、
+    /// 上传或贴到别处，这些口令就等于泄漏。`token` / `user_auth` 不受它影响，
+    /// 始终脱敏——那是运行中会话的凭据，和一次性调试口令不是一回事。
+    #[serde(default)]
+    pub show_credentials: bool,
 }
 
 impl Default for LogConfig {
@@ -38,6 +46,7 @@ impl Default for LogConfig {
         // 本地重建服务默认打摘要：出问题时第一眼就能看到客户端在打哪些接口。
         Self {
             level: LogLevel::Summary,
+            show_credentials: false,
         }
     }
 }

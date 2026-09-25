@@ -48,6 +48,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         zones.len(),
         config.guest_enabled
     );
+    if config.log.show_credentials {
+        println!("[log] show_credentials 已启用：账号服请求的口令会以明文写入日志，仅限本机调试。");
+    }
     axum::serve(listener, api::router(api::AppState { config, zones })).await?;
     Ok(())
 }
