@@ -1,0 +1,200 @@
+diff --git a/cocos2dx/Android.mk b/cocos2dx/Android.mk
+index cf308a6..2077850 100644
+--- a/cocos2dx/Android.mk
++++ b/cocos2dx/Android.mk
+@@ -162,7 +162,8 @@ LOCAL_EXPORT_LDLIBS := -lGLESv2 \
+ 
+ LOCAL_WHOLE_STATIC_LIBRARIES := cocos_libpng_static
+ LOCAL_WHOLE_STATIC_LIBRARIES += cocos_jpeg_static
+-LOCAL_WHOLE_STATIC_LIBRARIES += cocos_libxml2_static
++# CCTMXXMLParser's libxml implementation is commented out in this tag; the
++# active parser uses the bundled tinyxml2 source above.
+ LOCAL_WHOLE_STATIC_LIBRARIES += cocos_libtiff_static
+ LOCAL_WHOLE_STATIC_LIBRARIES += cocos_libwebp_static
+ 
+diff --git a/cocos2dx/platform/android/CCApplication.cpp b/cocos2dx/platform/android/CCApplication.cpp
+index 0702a82..31af486 100644
+--- a/cocos2dx/platform/android/CCApplication.cpp
++++ b/cocos2dx/platform/android/CCApplication.cpp
+@@ -61,6 +61,11 @@ CCApplication* CCApplication::sharedApplication()
+     return sm_pSharedApplication;
+ }
+ 
++CCApplication* CCApplication::sharedApplicationIfExists()
++{
++    return sm_pSharedApplication;
++}
++
+ ccLanguageType CCApplication::getCurrentLanguage()
+ {
+     std::string languageName = getCurrentLanguageJNI();
+diff --git a/cocos2dx/platform/android/CCApplication.h b/cocos2dx/platform/android/CCApplication.h
+index f5e6940..bf9ccc4 100644
+--- a/cocos2dx/platform/android/CCApplication.h
++++ b/cocos2dx/platform/android/CCApplication.h
+@@ -31,6 +31,12 @@ public:
+     */
+     static CCApplication* sharedApplication();
+ 
++    /**
++     * Return the current application instance without asserting when Android
++     * delivers a lifecycle callback before nativeInit() has created it.
++     */
++    static CCApplication* sharedApplicationIfExists();
++
+     /**
+     @brief Get current language config
+     @return Current language config
+diff --git a/cocos2dx/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp b/cocos2dx/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp
+index 93916ad..1fd1d69 100644
+--- a/cocos2dx/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp
++++ b/cocos2dx/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp
+@@ -15,14 +15,22 @@ extern "C" {
+     }
+ 
+     JNIEXPORT void JNICALL Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnPause() {
+-        CCApplication::sharedApplication()->applicationDidEnterBackground();
++        CCApplication* application = CCApplication::sharedApplicationIfExists();
++        if (!application) {
++            // A locked/covered activity can pause the GL thread before the
++            // first surface callback reaches nativeInit(). There is no app
++            // state to suspend yet.
++            return;
++        }
++        application->applicationDidEnterBackground();
+ 
+         CCNotificationCenter::sharedNotificationCenter()->postNotification(EVENT_COME_TO_BACKGROUND, NULL);
+     }
+ 
+     JNIEXPORT void JNICALL Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnResume() {
+-        if (CCDirector::sharedDirector()->getOpenGLView()) {
+-            CCApplication::sharedApplication()->applicationWillEnterForeground();
++        CCApplication* application = CCApplication::sharedApplicationIfExists();
++        if (application && CCDirector::sharedDirector()->getOpenGLView()) {
++            application->applicationWillEnterForeground();
+         }
+     }
+ 
+diff --git a/extensions/Android.mk b/extensions/Android.mk
+index 7927a4d..f846f27 100644
+--- a/extensions/Android.mk
++++ b/extensions/Android.mk
+@@ -103,7 +103,7 @@ CocoStudio/ActionTimeline/CCActionTimeline.cpp \
+ CocoStudio/ActionTimeline/CCActionTimelineCache.cpp \
+ CocoStudio/ActionTimeline/CCFrame.cpp \
+ CocoStudio/ActionTimeline/CCNodeReader.cpp \
+-CocoStudio/ActionTimeline/CCTimeline.cpp \
++CocoStudio/ActionTimeline/CCTimeLine.cpp \
+ CocoStudio/Reader/SceneReader.cpp \
+ CocoStudio/Reader/GUIReader.cpp \
+ CocoStudio/Reader/WidgetReader/WidgetReader.cpp \
+@@ -178,7 +178,7 @@ include $(BUILD_STATIC_LIBRARY)
+ 
+ $(call import-module,cocos2dx)
+ $(call import-module,CocosDenshion/android)
+-$(call import-module,cocos2dx/platform/third_party/android/prebuilt/libcurl)
++$(call import-module,curl)
+ $(call import-module,external/Box2D)
+ $(call import-module,external/chipmunk)
+-$(call import-module,external/libwebsockets/android)
++$(call import-module,websockets)
+diff --git a/scripting/javascript/bindings/XMLHTTPRequest.cpp b/scripting/javascript/bindings/XMLHTTPRequest.cpp
+index 2a867d4..93276c1 100644
+--- a/scripting/javascript/bindings/XMLHTTPRequest.cpp
++++ b/scripting/javascript/bindings/XMLHTTPRequest.cpp
+@@ -178,10 +178,55 @@ void MinXmlHttpRequest::handle_requestResponse(cocos2d::extension::CCHttpClient
+     char statusString[64] = {};
+     sprintf(statusString, "HTTP Status Code: %d, tag = %s", statusCode, response->getHttpRequest()->getTag());
+     
+-    if (!response->isSucceed())
++    const bool requestSucceeded = response->isSucceed() && statusCode == 200;
++    if (!requestSucceeded)
+     {
+-        CCLOG("response failed");
+-        CCLOG("error buffer: %s", response->getErrorBuffer());
++        const char* requestUrl = response->getHttpRequest()->getUrl();
++        const std::string safeUrl = requestUrl ? std::string(requestUrl).substr(0, std::string(requestUrl).find('?')) : "";
++        const char* errorBuffer = response->getErrorBuffer();
++        std::vector<char> *responseBuffer = response->getResponseData();
++        std::string responseBody(responseBuffer->begin(), responseBuffer->end());
++        std::string errorText;
++
++        // Prefer the transport error, but preserve an HTTP error body (often
++        // the server's JSON message) when libcurl itself reports no detail.
++        if (errorBuffer && errorBuffer[0] != '\0') {
++            errorText = errorBuffer;
++        } else if (!responseBody.empty()) {
++            errorText = responseBody;
++        } else if (statusCode > 0) {
++            char httpError[64] = {};
++            sprintf(httpError, "HTTP %d", statusCode);
++            errorText = httpError;
++        } else {
++            errorText = "network request failed";
++        }
++
++        CCLOG("XHR failed: url=%s status=%d tag=%s", safeUrl.c_str(), statusCode,
++              response->getHttpRequest()->getTag());
++        CCLOG("XHR error: %s", errorText.c_str());
++        if (!responseBody.empty() && responseBody != errorText) {
++            CCLOG("XHR response: %s", responseBody.c_str());
++        }
++
++        // The old implementation returned here, leaving the JS state machine
++        // in its waiting step forever. Expose a terminal failed response so
++        // JS can log it and show the normal NetConnectErr dialog.
++        status = response->isSucceed() && statusCode > 0 ? statusCode : 0;
++        statusText = errorText;
++        readyState = DONE;
++        data.str("");
++        data.clear();
++        data << errorText;
++        dataSize = data.str().size();
++
++        js_proxy_t *p = jsb_get_native_proxy((void*)this);
++        if (p && onreadystateCallback) {
++            JSContext* callbackContext = ScriptingCore::getInstance()->getGlobalContext();
++            jsval callbackValue = OBJECT_TO_JSVAL(onreadystateCallback);
++            jsval callbackResult;
++            JS_CallFunctionValue(callbackContext, NULL, callbackValue, 0, NULL, &callbackResult);
++        }
+         return;
+     }
+     
+@@ -210,6 +255,8 @@ void MinXmlHttpRequest::handle_requestResponse(cocos2d::extension::CCHttpClient
+         //Succeeded
+         status = 200;
+         readyState = DONE;
++        data.str("");
++        data.clear();
+         data << concatenated;
+         dataSize = buffer->size();
+     }
+@@ -254,11 +301,13 @@ void MinXmlHttpRequest::_sendRequest(JSContext *cx) {
+  * @brief  Constructor initializes cchttprequest and stuff
+  *
+  */
+-MinXmlHttpRequest::MinXmlHttpRequest() : onreadystateCallback(NULL), isNetwork(true) {
++MinXmlHttpRequest::MinXmlHttpRequest()
++    : onreadystateCallback(NULL), dataSize(0), readyState(UNSENT), status(0),
++      responseType(kRequestResponseTypeString), timeout(0), isAsync(true),
++      isNetwork(true), withCredentialsValue(true) {
+     
+     http_header.clear();
+     request_header.clear();
+-    withCredentialsValue = true;
+     cx = ScriptingCore::getInstance()->getGlobalContext();
+     cc_request = new cocos2d::extension::CCHttpRequest();
+ }
+@@ -819,4 +868,3 @@ void MinXmlHttpRequest::_js_register(JSContext *cx, JSObject *global) {
+     MinXmlHttpRequest::js_proto = JS_InitClass(cx, global, NULL, &MinXmlHttpRequest::js_class , MinXmlHttpRequest::_js_constructor, 0, props, funcs, NULL, NULL);
+     
+ }
+-
+diff --git a/scripting/javascript/bindings/generated b/scripting/javascript/bindings/generated
+index cfbd4d1..0e511fd 160000
+--- a/scripting/javascript/bindings/generated
++++ b/scripting/javascript/bindings/generated
+@@ -1 +1 @@
+-Subproject commit cfbd4d1e703b695c4897d818c9a4231bca0fa24b
++Subproject commit 0e511fd6d1f9ff3117b27c4ebc40c4b01f296437-dirty
