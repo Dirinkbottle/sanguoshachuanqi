@@ -226,7 +226,7 @@
 |---|---|---|---|
 | `Constant_CfgDataType_Vip` | `sgs_vip_level_conf` | 7 | `Views/Dialog/ChargeDialog.js:166` |
 | `Constant_CfgDataType_Global` | `sgs_global_conf` | 7 | `Views/Gems/GemsSophisticationView.js:237` |
-| `Constant_CfgDataType_Plot_Dialog` | `sgs_dungeon_plot_dialog` | 5 | `Models/Dungeon.js:554` |
+| `Constant_CfgDataType_Plot_Dialog` | `sgs_dungeon_plot_dialog` | 5 | `Models/Dungeon.js:556` |
 | `Constant_CfgDataType_Player_Upgrade` | `sgs_user_level_conf` | 5 | `Models/Player.js:604` |
 | `Constant_CfgDataType_SkillMelt` | `sgs_skill_melt_conf` | 4 | `Views/Table/Cell/SkillMeltTableCell.js:295` |
 | `Constant_CfgDataType_Skill_refine_conf` | `sgs_skill_refine_conf` | 3 | `Views/SkillRefining/RefiningSkillShowTableView.js:33` |
@@ -234,7 +234,7 @@
 | `Constant_CfgDataType_Decisive` | `sgs_world_war_schedule` | 2 | `Views/DecisiveBattle/DecisiveBattlePreviewView.js:251` |
 | `Constant_CfgDataType_Gem` | `sgs_gem` | 2 | `Views/Gems/GemsComposeView.js:87` |
 | `Constant_CfgDataType_Buddy` | `sgs_buddy_conf` | 2 | `Profile/GameData/Buddy.js:26` |
-| `Constant_CfgDataType_Plot_Conf` | `sgs_dungeon_plot_conf` | 2 | `Models/Dungeon.js:538` |
+| `Constant_CfgDataType_Plot_Conf` | `sgs_dungeon_plot_conf` | 2 | `Models/Dungeon.js:540` |
 | `Constant_CfgDataType_Skill_Advanced` | `sgs_skill_advanced_conf` | 2 | `Models/Skill.js:516` |
 | `Constant_CfgDataType_Surrender` | `sgs_surrender` | 2 | `Models/TmpInfo/Achieve.js:40` |
 | `Constant_CfgDataType_i18n` | `sgs_i18n` | 2 | `Tools/Ml.js:11` |

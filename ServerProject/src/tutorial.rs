@@ -63,7 +63,11 @@ pub fn guest_principal(account_uid: &str) -> String {
 ///
 /// "0" 是客户端能理解的"还没开始"——`GuideMgr.setServerStep` 拿到它之后
 /// 会从本地步骤继续，而不是判定教程已结束。
-pub fn tutorial_step(db: &Connection, principal: &str, server_id: &str) -> rusqlite::Result<String> {
+pub fn tutorial_step(
+    db: &Connection,
+    principal: &str,
+    server_id: &str,
+) -> rusqlite::Result<String> {
     db.query_row(
         "SELECT freshman_step FROM tutorial_progress
          WHERE principal=?1 AND server_id=?2",

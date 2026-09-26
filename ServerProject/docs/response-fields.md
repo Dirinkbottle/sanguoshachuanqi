@@ -25,7 +25,7 @@
 | `add_list.num` | `activity.gamble`, `equipment.refine` | `Views/Dialog/SlotMachinesActivities.js:351` |
 | `add_list.talentLevel` | `beauty.addBeautyExperience` | `Scene/Beauty/BeautyScene.js:1086` |
 | `add_list.wisdom` | `beauty.addBeautyExperience` | `Scene/Beauty/BeautyScene.js:1086` |
-| `attr_info` | `general.autoCultivate` | `Views/Dialog/AutoPracticeDialog.js:424` |
+| `attr_info` | `general.autoCultivate` | `Views/Dialog/AutoPracticeDialog.js:423` |
 | `beauty_cruise_info` | `beauty.beautyCruiseOver` | `Scene/Beauty/BeautyScene.js:985` |
 | `beauty_info.end_time` | `beauty.beautyCruise` | `Scene/Beauty/BeautyScene.js:866` |
 | `chargeInfo` | `payIos.iosCharge` | `Views/Dialog/CheckOrderDialog.js:78` |
@@ -44,7 +44,7 @@
 | `fight_result.drop_info` | `ladder.repeatedlyFight` | `Scene/Ladder/LadderCardShow.js:276` |
 | `free_times` | `evolutionChest.open`, `evolutionChest.openTen` | `Scene/Awake/AwakeBoxView.js:199` |
 | `gamble` | `activity.gamble` | `Views/Dialog/SlotMachinesActivities.js:351` |
-| `gold_num` | `rank.like` | `Views/Table/Cell/RankTableViewCell.js:187` |
+| `gold_num` | `rank.like` | `Views/Table/Cell/RankTableViewCell.js:189` |
 | `goods_list` | `worldWar.goodsList`, `worldWarLocal.goodsList` | `Views/DecisiveBattle/SupportPointsExchangeView.js:85` |
 | `info` | `general.getOverview`, `ladderWar.getOverview`, `ladderWarLocal.getOverview`, `magic.getOverview`, `training.multiTraining`, `training.training` … | `Scene/Training/GeneralTraningScene.js:904` |
 | `isAdult` | `user.login` | `Profile/GameData/Mgr.js (via init_Login)` |
@@ -85,10 +85,10 @@
 | `return_info.has_joined` | `union.info` | `Views/MainMenuBtnView.js:215` |
 | `return_info.item_index` | `wish.get` | `Scene/Party/WishingScene.js:433` |
 | `return_info.item_list` | `wish.get` | `Scene/Party/WishingScene.js:433` |
-| `return_info.left_info` | `hulao.lineup` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
-| `return_info.left_info.consume_fortune` | `hulao.lineup` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
-| `return_info.left_info.general_list` | `hulao.lineup` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
-| `return_info.left_info.total_fortune` | `hulao.lineup` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
+| `return_info.left_info` | `hulao.lineup` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
+| `return_info.left_info.consume_fortune` | `hulao.lineup` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
+| `return_info.left_info.general_list` | `hulao.lineup` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
+| `return_info.left_info.total_fortune` | `hulao.lineup` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
 | `return_info.log_content` | `union.allotDepot`, `union.chgNotice`, `union.chgSign`, `union.manage` | `Views/Union/UnionMemberLayer.js:365` |
 | `return_info.order_id` | `product.createOrder` | `Views/Table/ChargeItemTableView.js:195` |
 | `return_info.ordinary_price` | `dungeon.multiKillSpecialInfo` | `Views/Dialog/AutoMultiKillSelectDialog.js:199` |

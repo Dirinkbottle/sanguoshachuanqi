@@ -28,7 +28,8 @@
 | [data-model.md](data-model.md) | `cmn` 数据模型全集、81 个模型的字段表、30 个 `Profile/GameData` 管理器 |
 | [request-fields.md](request-fields.md) | 全部显式请求字段总表 |
 | [response-fields.md](response-fields.md) | 全部响应根字段总表 |
-| [ref/](ref/) | 按业务域拆分的 49 个端点参考页 |
+| [ref/](ref/) | 按业务域拆分的 52 个端点参考页 |
+| [implementation-matrix.csv](implementation-matrix.csv) | 服务端状态、类别、测试、风险与后续步骤的 244 动作总账 |
 | [config-domains.json](config-domains.json) | 机器可读配置域清单 |
 | [protocol-inventory.json](protocol-inventory.json) | 机器可读协议清单（含每条证据的 `文件:行号`） |
 
@@ -37,6 +38,8 @@
 - [../PROTOCOL.md](../PROTOCOL.md)：登录前流程与本重建工程的服务端说明（偏叙述，含本地新增接口）。
 - [../GAME_PROTOCOL.md](../GAME_PROTOCOL.md)：新手教程、首个副本、招募、编队、装备的逐步流程分析。
 - 本目录：**以端点为单位**的全量协议参考，以及模块化的机制说明。
+- [server-implementation-progress.md](server-implementation-progress.md)：本地服务端已经实现的玩家流程、矩阵统计和验证状态。
+- [server-data-model.md](server-data-model.md)：SQLite 表、schema 迁移与事务/幂等边界。
 
 两份既有文档保留其叙述价值；本目录是它们的机器可核对底座。
 
@@ -47,7 +50,8 @@
 | `do=` 动作 | 244（240 来自 `Cfg/Url.js`，4 个内联拼接 URL） |
 | `Cfg/Url.js` URL 键 | 243 |
 | `Tools/Net.js` 请求封装 | 236 |
-| 静态可解析调用点 | 392 |
+| `Tools/Net.js` 符号调用点（含辅助方法） | 642 |
+| 端点归属记录 / 去重后的源码位置 | 392 / 374 |
 | `cmn` 数据描述符 | 21 |
 | 提取出字段表的模型 | 81 |
 | `Profile/GameData` 管理器 | 30 |
@@ -63,6 +67,8 @@ python3 tools/extract_protocol.py        # ReconstructedJS/src_jsc -> docs/proto
 python3 tools/build_protocol_docs.py     # inventory -> docs/ref/*.md, docs/*.md
 python3 tools/extract_config_domains.py  # data_cn_jsc/plan -> docs/config-domains.json, docs/08-config-domains.md
 python3 tools/check_protocol_docs.py     # 校验全部相对链接与锚点
+python3 tools/build_server_implementation_matrix.py       # protocol inventory + current Rust dispatch -> matrix
+python3 tools/build_server_implementation_matrix.py --check # 矩阵必须含全部动作且无重复
 ```
 
 自动生成的文件带页首说明；不要手工编辑它们，改提取器后重新生成。
@@ -72,13 +78,15 @@ python3 tools/check_protocol_docs.py     # 校验全部相对链接与锚点
 
 | 项 | 数量 | 说明 |
 |---|---|---|
-| 调用点 | 392 | 全部带 `文件:行号` |
-| 能解析出请求字段的调用点 | 360 | 其余 32 个按原因分类，见下 |
-| 能解析出响应读取的调用点 | 260 | 其余 127 个的处理器确实不读响应根字段（状态走 `cmn`），5 个封装没有回调参数 |
+| Net 符号调用点扫描 | 642 | 匹配 `Tools/Net.js` 函数名的全部调用，含内部辅助函数 |
+| 端点归属记录 | 392 | 同一全局 / 本地决战调用位置会归属两个动作 |
+| 去重后的端点调用位置 | 374 | 以源文件、行号、外层函数去重；每项带 `文件:行号` |
+| 能解析出请求字段的端点归属记录 | 360 | 其余 32 个按原因分类，见下 |
+| 能解析出响应读取的端点归属记录 | 260 | 其余 127 个处理器不读响应根字段（状态走 `cmn`），5 个封装没有回调参数 |
 | 处理器解析失败 | 0 | 5 个封装没有回调参数，不是解析失败 |
-| 请求字段无法确定的调用点 | 0 | 见下表 |
+| 请求字段无法确定的端点归属记录 | 0 | 见下表 |
 
-32 个「无请求字段」的调用点，全部有可核对的原因：
+32 条「无请求字段」的端点归属记录，全部有可核对的原因：
 
 | 原因 | 数量 | 含义 |
 |---|---|---|

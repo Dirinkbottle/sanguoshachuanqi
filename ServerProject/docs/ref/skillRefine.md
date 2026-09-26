@@ -22,14 +22,14 @@
 
 | 字段 | 证据 |
 |---|---|
-| `user_id` | `Views/SkillRefining/SkillRefiningLayer.js:619` |
-| `user_skill_id` | `Views/SkillRefining/SkillRefiningLayer.js:619` |
+| `user_id` | `Views/SkillRefining/SkillRefiningLayer.js:617` |
+| `user_skill_id` | `Views/SkillRefining/SkillRefiningLayer.js:617` |
 
 **响应字段**
 
 | 字段 | 证据 |
 |---|---|
-| `result` | `Views/SkillRefining/SkillRefiningLayer.js:619` |
+| `result` | `Views/SkillRefining/SkillRefiningLayer.js:617` |
 
 **URL 字面量出现位置**
 
@@ -41,4 +41,4 @@
 
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
-| `Views/SkillRefining/SkillRefiningLayer.js:619` | `lianhuaCallback` | `user_id`, `user_skill_id` | `inline` |
+| `Views/SkillRefining/SkillRefiningLayer.js:617` | `lianhuaCallback` | `user_id`, `user_skill_id` | `inline` |

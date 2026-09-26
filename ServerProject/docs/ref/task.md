@@ -95,17 +95,17 @@
 
 | 字段 | 证据 |
 |---|---|
-| `user_id` | `Views/Table/Cell/TaskCell.js:241` |
-| `task_pk_id` | `Views/Table/Cell/TaskCell.js:241` |
-| `forcepush` | `Views/Table/Cell/TaskCell.js:241` |
+| `user_id` | `Views/Table/Cell/TaskCell.js:239` |
+| `task_pk_id` | `Views/Table/Cell/TaskCell.js:239` |
+| `forcepush` | `Views/Table/Cell/TaskCell.js:239` |
 
 **响应字段**
 
 | 字段 | 证据 |
 |---|---|
-| `result` | `Views/Table/Cell/TaskCell.js:241` |
-| `list` | `Views/Table/Cell/TaskCell.js:241` |
-| `task_list` | `Views/Table/Cell/TaskCell.js:241` |
+| `result` | `Views/Table/Cell/TaskCell.js:239` |
+| `list` | `Views/Table/Cell/TaskCell.js:239` |
+| `task_list` | `Views/Table/Cell/TaskCell.js:239` |
 
 **URL 字面量出现位置**
 
@@ -117,4 +117,4 @@
 
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
-| `Views/Table/Cell/TaskCell.js:241` | `requestTaskRecieve` | `user_id`, `task_pk_id`, `forcepush` | `inline` |
+| `Views/Table/Cell/TaskCell.js:239` | `requestTaskRecieve` | `user_id`, `task_pk_id`, `forcepush` | `inline` |

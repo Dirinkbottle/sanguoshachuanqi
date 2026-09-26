@@ -11,6 +11,7 @@ use axum::{
     http::Uri,
 };
 use serde_json::Value;
+use sha2::{Digest, Sha256};
 use std::collections::HashMap;
 
 /// 游戏服业务失败的统一类型。
@@ -29,6 +30,18 @@ fn value_text(data: &Value, key: &str) -> Result<Option<String>, GameFailure> {
         Value::Number(value) => Ok(Some(value.to_string())),
         _ => Err(game_failure("invalid_data", "字段格式错误")),
     }
+}
+
+/// Fingerprint the canonical JSON payload without storing tokens or player IDs in the dedup table.
+fn request_fingerprint(action: &str, data: &Value) -> String {
+    let mut hash = Sha256::new();
+    hash.update(action.as_bytes());
+    hash.update([0]);
+    hash.update(data.to_string().as_bytes());
+    hash.finalize()
+        .iter()
+        .map(|byte| format!("{byte:02x}"))
+        .collect()
 }
 
 /// 判断账号服下发的本地游客 UID 是否符合本服务生成的形状。
@@ -136,14 +149,15 @@ pub async fn game_api(
     let database = state.config.database.clone();
     let guest_enabled = state.config.guest_enabled;
     let tutorial = state.config.tutorial.clone();
+    let game_data = state.game_data.clone();
     let request_data = data.clone();
     let action_owned = action.to_owned();
     let route_server_id_for_db = route_server_id.clone();
     let account_uid_for_db = account_uid.clone();
     let user_id_for_db = user_id.clone();
     let result = tokio::task::spawn_blocking(move || -> Result<Value, GameFailure> {
-        let db = db::open(&database)
-            .map_err(|_| game_failure("internal_error", "数据库不可用"))?;
+        let mut db =
+            db::open(&database).map_err(|_| game_failure("internal_error", "数据库不可用"))?;
 
         let (principal, auth) = if !session_token.is_empty() {
             let account_id = accounts::account_for_session(&db, &session_token)
@@ -189,44 +203,109 @@ pub async fn game_api(
                 tutorial::tutorial_step(&db, &principal, &route_server_id_for_db)
                     .map_err(|_| game_failure("internal_error", "无法读取新手进度"))?
             };
-            let uid = account_uid_for_db
+            let _uid = account_uid_for_db
                 .as_deref()
                 .or_else(|| principal.strip_prefix("guest:"))
                 .ok_or_else(|| game_failure("invalid_account", "缺少账号标识"))?;
-            let snapshot = player::snapshot(&db, &principal, &route_server_id_for_db)
+            let snapshot = player::snapshot(&db, &principal, &route_server_id_for_db, &tutorial)
                 .map_err(|_| game_failure("internal_error", "无法读取玩家数据"))?;
-            let clears: Vec<i64> = protocol::TUTORIAL_DUNGEONS
-                .iter()
-                .map(|(id, _)| player::dungeon_clears(&db, &principal, &route_server_id_for_db, id))
-                .collect();
+            let clears = player::all_dungeon_clears(&db, &principal, &route_server_id_for_db)
+                .map_err(|_| game_failure("internal_error", "无法读取关卡进度"))?;
             return Ok(protocol::login_response_with_auth(
-                uid,
-                &route_server_id_for_db,
                 &freshman_step,
                 &auth,
                 &snapshot,
                 &clears,
+                &tutorial,
+                &game_data,
             ));
         }
 
-        // The business handler mutates player state, so the milestone is written
-        // only after it reports success. A refused endpoint therefore cannot
-        // advance the tutorial.
-        let response = business::apply_business(
-            &db,
+        // Snapshot reads don't need a write transaction or retry cache. They
+        // must be fresh because another request may have changed player state.
+        if matches!(
+            action_owned.as_str(),
+            "user.getPushData"
+                | "map.getUserMap"
+                | "chapter.getChapterInfo"
+                | "dungeon.fightBefore"
+        ) {
+            return business::apply_business(
+                &db,
+                &action_owned,
+                &principal,
+                &route_server_id_for_db,
+                &request_data,
+                &tutorial,
+                &game_data,
+            );
+        }
+
+        // Old client requests have no explicit idempotency key. Their serialized
+        // payload includes `time`; hashing action + payload makes transport
+        // retries replay the committed response while distinct taps get new keys.
+        // Identical payloads without `time` are indistinguishable and share the
+        // same bounded 24-hour retry window.
+        let fingerprint = request_fingerprint(&action_owned, &request_data);
+        let tx = db
+            .transaction_with_behavior(rusqlite::TransactionBehavior::Immediate)
+            .map_err(|_| game_failure("internal_error", "无法开始业务事务"))?;
+        if let Some(response) = db::cached_response(
+            &tx,
+            &principal,
+            &route_server_id_for_db,
+            &action_owned,
+            &fingerprint,
+        )
+        .map_err(|_| game_failure("internal_error", "无法读取请求去重记录"))?
+        {
+            tx.commit()
+                .map_err(|_| game_failure("internal_error", "无法完成业务事务"))?;
+            return Ok(response);
+        }
+
+        // Player state, tutorial milestone, and replay response commit together.
+        let mut response = business::apply_business(
+            &tx,
             &action_owned,
             &principal,
             &route_server_id_for_db,
             &request_data,
             &tutorial,
+            &game_data,
         )?;
         if response.get("result") != Some(&Value::Bool(true)) {
             return Err(game_failure("business_failed", "业务请求未成功"));
         }
         if let Some((step, rank)) = requested_step {
-            tutorial::record_tutorial_step(&db, &principal, &route_server_id_for_db, &step, rank)
-                .map_err(|_| game_failure("internal_error", "无法保存新手进度"))?;
+            let stored_step = tutorial::record_tutorial_step(
+                &tx,
+                &principal,
+                &route_server_id_for_db,
+                &step,
+                rank,
+            )
+            .map_err(|_| game_failure("internal_error", "无法保存新手进度"))?;
+            // Business handlers may return a full Player snapshot. Keep its
+            // tutorial milestone consistent with the state committed below.
+            if let Some(user_info) = response
+                .pointer_mut("/cmn/user_info")
+                .and_then(Value::as_object_mut)
+            {
+                user_info.insert("freshman_step".to_string(), Value::String(stored_step));
+            }
         }
+        db::store_response(
+            &tx,
+            &principal,
+            &route_server_id_for_db,
+            &action_owned,
+            &fingerprint,
+            &response,
+        )
+        .map_err(|_| game_failure("internal_error", "无法保存请求去重记录"))?;
+        tx.commit()
+            .map_err(|_| game_failure("internal_error", "无法完成业务事务"))?;
         Ok(response)
     })
     .await
@@ -237,5 +316,3 @@ pub async fn game_api(
         Err(failure) => Ok(AsciiJson(protocol::error(failure.code, failure.message))),
     }
 }
-
-

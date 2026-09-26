@@ -612,9 +612,9 @@ updateOtherData 在 cmn 之外直接读取下列根字段（仅在 result:true �
 | `num` | `ReconstructedJS/src_jsc/Models/Item.js:277 (loadJson)` |
 | `effect_time` | `ReconstructedJS/src_jsc/Models/Item.js:277 (loadJson)` |
 | `tag_id` | `ReconstructedJS/src_jsc/Models/Item.js:277 (loadJson)` |
-| `grade` | `ReconstructedJS/src_jsc/Models/Item.js:586 (createIcon)` |
-| `name` | `ReconstructedJS/src_jsc/Models/Item.js:586 (createIcon)` |
-| `lv` | `ReconstructedJS/src_jsc/Models/Item.js:586 (createIcon)` |
+| `grade` | `ReconstructedJS/src_jsc/Models/Item.js:590 (createIcon)` |
+| `name` | `ReconstructedJS/src_jsc/Models/Item.js:590 (createIcon)` |
+| `lv` | `ReconstructedJS/src_jsc/Models/Item.js:590 (createIcon)` |
 
 ### `xs.Models.LadderModel`
 
@@ -1110,11 +1110,11 @@ updateOtherData 在 cmn 之外直接读取下列根字段（仅在 result:true �
 
 | 字段 | 证据 |
 |---|---|
+| `length` | `ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)` |
 | `rank_list` | `ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)` |
 | `award_list` | `ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)` |
 | `is_inlist` | `ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)` |
 | `status` | `ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)` |
-| `length` | `ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)` |
 
 ## Profile/GameData 管理器读取的字段
 

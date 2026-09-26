@@ -29,7 +29,7 @@
 | `bore_id` | `gem.gemInset`, `gem.gemRemove`, `gem.lock`, `gem.unlock` | `Views/Gems/GemsSophisticationView.js:800` |
 | `boss_dungeon_id` | `festival.goFight` | `Scene/Copy/CopyScene.js:229` |
 | `boss_id` | `festival.goFight` | `Scene/Copy/CopyScene.js:229` |
-| `box_id` | `dungeon.openBox` | `Views/Dialog/Dialog.js:503` |
+| `box_id` | `dungeon.openBox` | `Views/Dialog/Dialog.js:481` |
 | `cdkey_string` | `menu.userCdkey` | `Views/Dialog/ExchangeCDKey.js:73` |
 | `cfg_version` | `user.login` | `Scene/Login/LoginScene_AnySdk.js:318` |
 | `channel` | `chat.send` | `Views/ChatContentLayer.js:204` |
@@ -44,8 +44,8 @@
 | `content` | `email.send` | `Views/Dialog/SendMessageDialog.js:121` |
 | `cooperator` | `activity.receive` | `Scene/Party/MonthLegendDialog.js:96` |
 | `cooperator_server_id` | `activity.receive` | `Scene/Party/MonthLegendDialog.js:96` |
-| `cultivate_num` | `general.autoCultivate` | `Views/Dialog/AutoPracticeDialog.js:424` |
-| `cultivate_rule` | `general.autoCultivate` | `Views/Dialog/AutoPracticeDialog.js:424` |
+| `cultivate_num` | `general.autoCultivate` | `Views/Dialog/AutoPracticeDialog.js:423` |
+| `cultivate_rule` | `general.autoCultivate` | `Views/Dialog/AutoPracticeDialog.js:423` |
 | `currency_type` | `item.buy`, `item.quickBuy` | `Views/Table/Cell/AvoidWarTableViewCell.js:109` |
 | `data_id` | `union.donate` | `Views/Union/UnionDonationLayer.js:310` |
 | `disCountPrice` | `item.quickBuy` | `Views/Dialog/SpecificDialog.js:263` |
@@ -88,7 +88,7 @@
 | `is_gift` | `item.getList` | `Views/StoreItemView.js:79` |
 | `is_main` | `ladderWar.match`, `ladderWarLocal.match` | `Views/InterService/InterServiceFightView.js:234` |
 | `is_multi` | `general.autoCultivate`, `general.culture`, `wine.wine` | `Scene/Store/ToastView.js:178` |
-| `is_need_talent` | `general.autoCultivate` | `Views/Dialog/AutoPracticeDialog.js:424` |
+| `is_need_talent` | `general.autoCultivate` | `Views/Dialog/AutoPracticeDialog.js:423` |
 | `is_take` | `general.takeCultureItem` | `Scene/Develop/AlchemyView.js:171` |
 | `is_vip` | `magic.forge` | `Views/MiracleWeapons/MiracleWeaponLayer.js:716` |
 | `item_advanced_id` | `item.buy`, `item.buyPlusUse` | `Views/Table/Cell/AvoidWarTableViewCell.js:103` |
@@ -97,18 +97,18 @@
 | `ladder_push` | `item.buy`, `item.buyPlusUse` | `ReconstructedJS/src_jsc/Tools/Net.js:815 (wrapper-literal = true)` |
 | `ladder_rank` | `ladder.repeatedlyFight` | `Scene/Ladder/LadderCardShow.js:276` |
 | `lieutenant_user_general_id` | `general.setLieutenant` | `Scene/TeamBuild/TeamBuildScene.js:1274` |
-| `like_user_id` | `rank.like` | `Views/Table/Cell/RankTableViewCell.js:183` |
+| `like_user_id` | `rank.like` | `Views/Table/Cell/RankTableViewCell.js:185` |
 | `limit` | `chat.getMessage`, `relationship.searchUser` | `Scene/Social/SocialView.js:245` |
 | `logintype` | `account.index` | `Scene/Login/LoginScene_AnySdk.js:440` |
 | `magic_id` | `magic.forge`, `magic.open` | `Views/MiracleWeapons/SelectMiracleWeaponLayer.js:185` |
 | `major_user_general_id` | `general.setLieutenant` | `Scene/TeamBuild/TeamBuildScene.js:1272` |
-| `map_id` | `map.getUserMap` | `Views/Table/Cell/TaskCell.js:335` |
+| `map_id` | `map.getUserMap` | `Views/Table/Cell/TaskCell.js:333` |
 | `member_id` | `union.allotDepot` | `Views/Dialog/UnionDepotNumChooseDialog.js:150` |
 | `message` | `chat.send`, `user.leaveMsg` | `Views/FeedBack.js:51` |
 | `mobile` | `idcard.getCode`, `idcard.saveMobile` | `Views/Dialog/VerificationTelDialog.js:114` |
 | `mobile_code` | `idcard.saveMobile` | `Views/Dialog/VerificationTelDialog.js:136` |
 | `mobile_num` | `account.chgAccountInfo` | `Views/Dialog/BindingTelDialog.js:131` |
-| `mode` | `hulao.fight`, `hulao.lineup`, `hulao.recieve` | `Views/HulaoBattle/HulaoBattleMainView.js:171` |
+| `mode` | `hulao.fight`, `hulao.lineup`, `hulao.recieve` | `Views/HulaoBattle/HulaoBattleMainView.js:205` |
 | `multi` | `gem.gemCompose` | `Views/Gems/GemsComposeView.js:276` |
 | `new_equipment_id` | `general.setEquipment` | `Scene/TeamBuild/TeamBuildScene.js:1249` |
 | `new_skill_id` | `general.setSkill` | `Scene/TeamBuild/TeamBuildScene.js:1226` |
@@ -132,7 +132,7 @@
 | `pulse_count` | `pulse.practicePulse`, `pulse.pulseCollect` | `Views/Meridians/PracticeMeridiansMainView.js:212` |
 | `pulse_num` | `pulse.practicePulse` | `Views/Meridians/PracticeMeridiansMainView.js:212` |
 | `quick` | `equipment.upgrade` | `Views/Dialog/EquipmentStrengthenDialog.js:247` |
-| `rank` | `rank.like` | `Views/Table/Cell/RankTableViewCell.js:181` |
+| `rank` | `rank.like` | `Views/Table/Cell/RankTableViewCell.js:183` |
 | `receipt_data` | `payIos.iosCharge` | `Views/Dialog/CheckOrderDialog.js:78` |
 | `refreshData` | `item.getQuickList` | `Views/Table/AvoidWarTableView.js:47` |
 | `refreshGeneralTrainingInfoSuccess` | `training.trainingInfo` | `Scene/Training/GeneralTraningScene.js:781` |
@@ -151,19 +151,19 @@
 | `server_id` | `menu.notice`, `user.login` | `ReconstructedJS/src_jsc/Tools/Net.js:338 (wrapper-injected = xs.Profile.GameData.Player.g_serverId)` |
 | `server_params` | `user.login` | `Scene/Login/LoginScene_AnySdk.js:318` |
 | `session` | `account.index`, `worldWar.getFightDetail`, `worldWar.supportPlayer`, `worldWarLocal.getFightDetail`, `worldWarLocal.supportPlayer` | `Scene/Login/LoginScene_EasyGuestSdk.js:391` |
-| `sessionId` | `account.bindWithBf`, `account.bindWithFacebook`, `account.index` | `Scene/Login/LoginScene_AnySdk.js:701` |
+| `sessionId` | `account.bindWithBf`, `account.bindWithFacebook`, `account.index` | `Scene/Login/LoginScene_AnySdk.js:710` |
 | `session_id` | `account.bindWithEasysdk` | `Scene/Setting/SettingScene.js:259` |
 | `sids` | `combat.upgradeCombatLevel`, `skill.melt` | `Views/Table/Cell/SkillMeltTableCell.js:173` |
-| `sign` | `user.chgSign` | `Views/Dialog/SpecificDialog.js:696` |
+| `sign` | `user.chgSign` | `Views/Dialog/SpecificDialog.js:697` |
 | `skill_id` | `warlord.warlord`, `warlord.warlordExchangeSkill`, `warlord.warlordInfo` | `Scene/Chaos/ChaosFight.js:92` |
 | `skill_ids` | `warlord.warlordBatchExchangeSkill` | `Scene/Chaos/ChaosHomeView.js:60` |
 | `skill_pos` | `general.setSkill` | `Scene/TeamBuild/TeamBuildScene.js:1224` |
 | `special_channel` | `payIos.iosCharge`, `product.createOrder`, `product.getList` | `Views/Table/ChargeItemTableView.js:39` |
-| `stage` | `hulao.fight`, `hulao.lineup`, `hulao.recieve` | `Views/HulaoBattle/HulaoBattleMainView.js:171` |
+| `stage` | `hulao.fight`, `hulao.lineup`, `hulao.recieve` | `Views/HulaoBattle/HulaoBattleMainView.js:205` |
 | `tag` | `unionWar.getFightingDetails`, `unionWar.getFightingProcess` | `Views/Dialog/UnionEncounterMapDialog.js:863` |
 | `talent_level` | `beauty.beautyCruise` | `Scene/Beauty/BeautyScene.js:864` |
 | `target_id` | `union.manage` | `Views/Union/UnionMemberLayer.js:365` |
-| `task_pk_id` | `task.recieve` | `Views/Table/Cell/TaskCell.js:241` |
+| `task_pk_id` | `task.recieve` | `Views/Table/Cell/TaskCell.js:239` |
 | `team` | `team.chgTeam` | `Views/QueueTeamView.js:486` |
 | `team_id` | `team.addTeamInfo`, `team.chgBattleTeam`, `team.chgTeam`, `team.loadTeamInfo`, `team.saveTeamInfo`, `training.multiTraining` … | `Views/QueueTeamView.js:484` |
 | `team_position` | `team.chgBattleTeam` | `Scene/TeamBuild/TeamBuildScene.js:1172` |

@@ -1,7 +1,7 @@
 //! HTTP 传输层：路由表、共享状态和响应编码。
 //!
-//! account 处理账号服端点，game 处理游戏服端点，business 是游戏服里真正改玩家
-//! 状态的七个教程动作，tests 把路由当真实客户端来打。
+//! account 处理账号服端点，game 处理游戏服端点，business 处理首个可玩纵向链及
+//! 地图/红点查询；tests 把路由当真实客户端来打。
 
 pub mod account;
 pub mod business;
@@ -10,13 +10,14 @@ pub mod game;
 mod tests;
 
 use crate::{
-    api::account::{account_api, login, register},
+    api::account::{account_api, login, logout, register},
     api::game::game_api,
     config::{Config, Zone},
     protocol,
 };
 use axum::{
     Router,
+    extract::DefaultBodyLimit,
     http::{StatusCode, header},
     middleware,
     response::{IntoResponse, Response},
@@ -33,13 +34,17 @@ use std::sync::Arc;
 pub struct AppState {
     pub config: Config,
     pub zones: Vec<Zone>,
+    /// gameconfig/ 的静态数据（章节布局 / 敌将映射 / 对酒奖池）。
+    /// 启动时由 main 装好，运行期只读；缺数据启动就失败，没有回退。
+    pub game_data: std::sync::Arc<crate::gamedata::GameData>,
 }
 
 /// 组装路由表。
 ///
 /// 账号服的三个路径要分别注册：更新检查走 /sanguosha_anysdk_2.2.6/，而公告与取服
 /// 走 /public/sanguosha_account/，两者都在 Cfg/Url.js 的 ServerAddrsMap 里。
-/// /game/{server_id} 带与不带尾斜杠都注册，因为客户端两处拼法都出现过。
+/// 游戏服同时接受设备真实使用的 `/game/{server_id}/index.php` 与早期本地工具
+/// 使用的短路径；尾斜杠也保留兼容。
 pub fn router(state: AppState) -> Router {
     let shared = Arc::new(state);
     Router::new()
@@ -47,8 +52,11 @@ pub fn router(state: AppState) -> Router {
         .route("/public/sanguosha_account/index.php", get(account_api))
         .route("/game/{server_id}", get(game_api))
         .route("/game/{server_id}/", get(game_api))
+        .route("/game/{server_id}/index.php", get(game_api))
         .route("/auth/register", post(register))
         .route("/auth/login", post(login))
+        .route("/auth/logout", post(logout))
+        .layer(DefaultBodyLimit::max(32 * 1024))
         // 日志装在最外层：未匹配路由和非法 JSON 也要留下痕迹。
         .layer(middleware::from_fn_with_state(
             shared.clone(),

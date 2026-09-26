@@ -6,7 +6,8 @@
 
 use serde_json::{Value, json};
 
-use crate::config::Zone;
+use crate::config::{Tutorial, Zone};
+use crate::gamedata::GameData;
 
 /// `add_list` 的元素类型，取自 ReconstructedJS/src_jsc/Cfg/Constant.js 的
 /// `Constant_ObjType_*`。客户端按这个值决定用什么模型渲染奖励条目。
@@ -16,16 +17,12 @@ pub const ADD_TYPE_PLAYER_ATTR: i64 = 100;
 /// `Models/AddPlayerInfoType_TongQian`：`type = 100` 时的属性子类型。
 pub const ATTR_TONGQIAN: i64 = 3;
 
-/// 重建的第一章里两个关卡：`(关卡 ID, 显示名)`。
-///
-/// `sgs_map_conf.js` 在包内是空数组且在服务端下发清单里，所以章节与关卡 ID
-/// 本来就由服务端提供。选 `500001` 的依据是 `Views/Dialog/DungeonView.js`
-/// 把教程引导标签绑定在该 map id 上（见 GAME_PROTOCOL.md）。
-pub const TUTORIAL_DUNGEONS: [(&str, &str); 2] =
-    [("50000101", "赤壁之战"), ("50000102", "虎牢关")];
-
-/// 这个关卡的首次通关会发放礼包与装备，让后面的背包和装备步骤有东西可操作。
-pub const REWARD_DUNGEON: &str = "50000102";
+/// Client's fallback map id from `Tools/CfgData.js` (`Constant_CfgDataType_Map`).
+pub const NEWBIE_MAP_ID: &str = "500001";
+/// 已解锁真·第一章的章节 id（`chapter_battle_layouts.json` 的 key `501`）。
+pub const REAL_MAP_ID: &str = "501";
+/// `FreshmanChooseGeneralId` from the shipped `sgs_global_conf.js` table.
+pub const TUTORIAL_STARTER_GENERALS: [&str; 4] = ["121018", "131006", "141007", "121013"];
 
 /// 回答 `versionPlus.check`。
 ///
@@ -120,81 +117,72 @@ pub fn cmn_map(updates: Vec<Value>, deletes: Vec<Value>) -> Value {
     json!({"update_list": updates, "del_list": deletes})
 }
 
-/// 构造一个关卡节点，`user_dungeon_times` 反映本账号在该关的通关次数。
-///
-/// 字段名逐条对应 `Models/Dungeon.js` 的读取；`star_level` 在通关后置 "1"，
-/// 客户端据此显示星级。
-fn map_entry(dungeon_id: &str, name: &str, clears: i64) -> Value {
-    json!({
-        "type": "dungeon",
-        "dungeon_id": dungeon_id,
-        "dungeon_position": if dungeon_id.ends_with("01") { "1" } else { "2" },
-        "dungeon_name": name,
-        "dungeon_card": "000001",
-        "dungeon_grade": "1",
-        "dungeon_suggest_level": "1",
-        "dungeon_power": "5",
-        "dungeon_user_exp": "10",
-        "dungeon_general_exp": "10",
-        "dungeon_coin": "100",
-        "dungeon_times": "100",
-        "user_dungeon_times": clears.to_string(),
-        "num_item_price": "0",
-        "can_show": 1,
-        "can_in": 1,
-        "star_level": if clears > 0 { "1" } else { "0" },
-        "direction": [],
-        "is_newest": true,
-        "unlocked_id": [],
-        "elite_buy_times": "0",
-        "dungeon_drop": []
-    })
+/// 章节列表、关卡、宝箱统一由离线服配置构建。客户端地图 ID 只在协议边界映射。
+pub fn map_info(
+    clears: &crate::map::Clears,
+    requested_map_id: Option<&str>,
+    user_level: i64,
+    gamedata: &GameData,
+) -> Value {
+    crate::map::build(gamedata, clears, requested_map_id, user_level)
 }
 
-/// `map_info`：一个章节 + 两个关卡。
+/// `wine_info`：酒馆各档位的价格、免费次数与保底进度。
 ///
-/// 客户端在登录和每次副本成功后都会调用 `GameData.Map.update(map_info)`，
-/// 所以形状必须一致。章节 ID `500001` 的原因见 `TUTORIAL_DUNGEONS`。
-pub fn map_info(clears: &[i64]) -> Value {
-    let nodes: Vec<Value> = TUTORIAL_DUNGEONS
+/// 结构与价格来自离线服 `wine.wineInfo` 的实现（handler/x0.java:117-119 C()
+/// 与 :2160-2213）。离线服里并存着两套价格：登录响应的简化快照用
+/// 100/50/20/多抽 900（handler/d.java:522），正式 `wine.wineInfo` 用本函数
+/// 的 268/100/10/多抽 2680——我们按正式接口的那套下发。
+///
+/// 冷却规则（x0.java:2165-2167）：金 1800s、银 600s、铜 300s。金酒免费抽的
+/// 剩余秒数来自 `wine_state`，初始可用时 `free_end_time = 0`；银/铜没有抽取端点，
+/// 因而保持本地初始可用。保底（x0.java:2184-2195）：
+/// `gold_guarantee_phase <= 1` 时
+/// 每 4 抽必出金（need_times=4），否则每 10 抽。`first_time_consume_gold` 由本地
+/// 酒馆状态记录首次金酒抽取，和原服 `first_gold_wine` 标记对应。
+pub fn wine_info(
+    gold_free_times: i64,
+    gold_free_end_time: i64,
+    first_time_consume_gold: i64,
+    tutorial: &Tutorial,
+    gamedata: &GameData,
+) -> Value {
+    // GeneralCardShow draws a card carousel as soon as StoreScene opens. An
+    // empty list makes getCardDataByIndexOffset return undefined, so the pool
+    // must be non-empty — guaranteed at startup by `GameData::load`.
+    // x0.f1032g 是混合奖励表；GameData 已筛出 type=6 的武将供卡片轮播展示。
+    let pool: Vec<String> = gamedata.wine_general_ids().to_vec();
+    let show_general_list: Vec<Value> = pool
         .iter()
-        .enumerate()
-        .map(|(index, (id, name))| map_entry(id, name, clears.get(index).copied().unwrap_or(0)))
+        .map(|id| {
+            json!({
+                "general_id": id,
+                "tag_id": "0",
+                "show_time": "0",
+                "disappear_time": "0"
+            })
+        })
         .collect();
+    let need_times = if tutorial.gold_guarantee_phase <= 1 {
+        4
+    } else {
+        10
+    };
     json!({
-        "chapter_list": [{
-            "map_id": "500001",
-            "map_name": "初入三国",
-            "map_type": "1",
-            "can_show": 1,
-            "can_in": 1
-        }],
-        "chapter_details": [{
-            "map_id": "500001",
-            "map_name": "初入三国",
-            "map_bgimage": "",
-            "can_in": 1,
-            "dungeon_info": nodes
-        }]
-    })
-}
-
-/// `wine_info`：酒馆各档位的价格与免费次数。
-///
-/// 客户端在 `ToastView.updateDesk` 里读 `gold_info.free_times` 等字段
-/// 决定按钮状态；这里填的数值是重建设计，不是原服的酒馆配置。
-pub fn wine_info() -> Value {
-    json!({
-        "gold_info": {"free_end_time": 0, "free_times": 1},
-        "gold_price": 50,
-        "silver_info": {"free_end_time": 0, "free_times": 1},
-        "silver_price": 1000,
-        "copper_info": {"free_end_time": 0, "free_times": 1},
-        "copper_price": 100,
-        "need_times": 10,
-        "first_time_consume_gold": 50,
-        "multi_price": 450,
-        "show_general_list": []
+        "toast": [],
+        "list": [],
+        "gold_info": {"free_end_time": gold_free_end_time, "free_times": gold_free_times, "price": 268},
+        "gold_price": 268,
+        "silver_info": {"free_end_time": 0, "free_times": tutorial.silver_free_draws, "price": 100},
+        "silver_price": 100,
+        "copper_info": {"free_end_time": 0, "free_times": tutorial.copper_free_draws, "price": 10},
+        "copper_price": 10,
+        "need_times": need_times,
+        "first_time_consume_gold": first_time_consume_gold,
+        "multi_price": 2680,
+        "next_guarantee": need_times,
+        "guarantee_interval": need_times,
+        "show_general_list": show_general_list
     })
 }
 
@@ -208,61 +196,19 @@ pub fn wine_info() -> Value {
 /// 省略即保持默认，所以这里不发——这是重建设计，不代表原服不发。
 /// `cmn.push` 则是必须的，原因见 `push()`。
 pub fn login_response_with_auth(
-    account_uid: &str,
-    server_id: &str,
     freshman_step: &str,
     user_auth: &str,
     snapshot: &crate::player::Snapshot,
-    clears: &[i64],
+    clears: &crate::map::Clears,
+    tutorial: &Tutorial,
+    gamedata: &GameData,
 ) -> Value {
-    let player_id = format!("{account_uid}-{server_id}");
-    let team_size = snapshot.team.len() as i64;
-    let user_info = json!({
-        "user_id": player_id,
-        "account_uid": account_uid,
-        "user_nickname": "主公",
-        "user_level": 1,
-        "user_charge_count": 1,
-        "user_vip_level": 0,
-        "user_experience": 0,
-        "user_coin": 1000,
-        "user_gold": 100,
-        "user_sign": "",
-        "item_count": {},
-        "user_power": 20 + team_size * 10,
-        "user_power_date": 0,
-        "user_energy": 20,
-        "user_energy_date": 0,
-        "gold_soul": 0,
-        "sliver_soul": 0,
-        "user_last_login_time": 0,
-        "user_ability": 0,
-        "user_map_step": "500001",
-        "user_position_step": "50000101",
-        "user_elite_map_step": "",
-        "user_elite_position_step": "",
-        "dungeon_cold_time": 0,
-        "cd_item_price": 0,
-        "base_cold_time": 0,
-        "to_danger_time": 0,
-        "current_charge_gold": 0,
-        "count_charge_gold": 0,
-        "freshman_step": freshman_step,
-        "first_choose_general": if snapshot.generals.is_empty() { "" } else { "1" },
-        "first_wine_general": if snapshot.generals.len() > 1 { "1" } else { "" },
-        "triple_speed": false,
-        "triple_speed_vip_level": 0,
-        "ladder_rank_salary": 0,
-        "user_honor": 0,
-        "ladder_challenging_num": 0,
-        "union_id": 0,
-        "union_name": "",
-        "user_role": 0,
-        "user_donate": 0,
-        "donate_state": false,
-        "donate_num": 0,
-        "union_war_sign_up": false
-    });
+    let mut user_info = snapshot.user_info.clone();
+    user_info["freshman_step"] = Value::String(freshman_step.to_string());
+    let (current_map, current_dungeon) = crate::map::progress(gamedata, clears);
+    user_info["user_map_step"] = Value::String(current_map);
+    user_info["user_position_step"] = Value::String(current_dungeon);
+    let user_level = user_info["user_level"].as_i64().unwrap_or(1);
 
     json!({
         "result": true,
@@ -285,18 +231,41 @@ pub fn login_response_with_auth(
             "combat_info": [],
             "team_info": snapshot.team.clone(),
             "buddy_info": [],
+            // 能否下发一个 cmn 键，取决于对应模型有没有 update：
+            // 分发器（Profile/GameData/common.js:530）对 SingletonType 模型调用的是
+            // .update(_info)，不是 loadJson。
+            // AdInfo.update 存在，可以发；Union 与 UnionWar 只定义了 loadJson，
+            // 一旦它们出现在响应里，客户端会调用一个不存在的方法抛 TypeError，
+            // 整个登录响应处理中断（症状就是进不去剧情），所以这两个键不能发在 cmn 里。
+            "adInfo": {
+                "ad_list": [],
+                "tips_list": []
+            },
             // 必须在第一个成功响应里出现，理由见 push()。
             "push": push()
         },
-        "map_info": map_info(clears),
-        "wine_info": wine_info()
+        "map_info": map_info(clears, None, user_level, gamedata),
+        "wine_info": wine_info(
+            snapshot.wine_gold_free_times,
+            snapshot.wine_gold_free_end_time,
+            snapshot.wine_first_time_consume_gold,
+            tutorial,
+            gamedata
+        )
     })
 }
 
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::map::{Clears, path_layout};
     use crate::player::Snapshot;
+
+    /// 每个测试都使用真实的 `gameconfig/` 数据——协议层已没有本地回退实现，
+    /// 配置一旦缺失，测试本身就应该失败（与启动 fail-fast 同一原则）。
+    fn game_data() -> GameData {
+        GameData::load(&crate::gamedata::default_dir()).expect("load gameconfig")
+    }
 
     fn empty_snapshot() -> Snapshot {
         Snapshot {
@@ -304,24 +273,154 @@ mod tests {
             items: Vec::new(),
             equipment: Vec::new(),
             team: Vec::new(),
+            user_info: json!({"user_id":"7-1001","account_uid":"7","user_nickname":"主公"}),
+            wine_gold_free_times: 1,
+            wine_gold_free_end_time: 0,
+            wine_first_time_consume_gold: 0,
         }
     }
 
     #[test]
-    fn login_snapshot_contains_client_required_tutorial_fields() {
-        let response =
-            login_response_with_auth("7", "1001", "30000", "auth", &empty_snapshot(), &[0, 0]);
+    fn login_snapshot_serves_real_chapter_one_and_wine_pool() {
+        let tutorial = Tutorial::default();
+        let gd = game_data();
+        let response = login_response_with_auth(
+            "30000",
+            "auth",
+            &empty_snapshot(),
+            &Clears::new(),
+            &tutorial,
+            &gd,
+        );
         assert_eq!(response["result"], true);
         assert_eq!(response["cmn"]["user_info"]["freshman_step"], "30000");
-        assert_eq!(response["map_info"]["chapter_list"][0]["map_id"], "500001");
-        assert_eq!(response["wine_info"]["gold_info"]["free_times"], 1);
+
+        // 客户端进度使用兼容 ID 500001；静态布局来自真实章节 501。
+        // 两个新手关卡 ID 与登录位置/业务接口一致，名称仍指向原配置。
+        assert_eq!(
+            response["map_info"]["chapter_list"][0]["map_id"],
+            NEWBIE_MAP_ID
+        );
+        assert_eq!(
+            response["map_info"]["chapter_details"][0]["map_id"],
+            NEWBIE_MAP_ID
+        );
+        assert_eq!(
+            response["map_info"]["chapter_details"][0]["map_bgimage"],
+            "920001"
+        );
+        assert_eq!(
+            response["map_info"]["chapter_details"][0]["map_name"],
+            tutorial.chapter_name
+        );
         assert_eq!(
             response["map_info"]["chapter_details"][0]["dungeon_info"]
                 .as_array()
                 .unwrap()
                 .len(),
-            2
+            7
         );
+
+        // 新手关卡对外 ID 与客户端玩家位置及 `dungeon.fight` 入参一致，名称
+        // 保留对原版 sgs_dungeon_conf 的映射；后续新手关仍用真实章节 ID。
+        let d0 = &response["map_info"]["chapter_details"][0]["dungeon_info"][0];
+        assert_eq!(d0["dungeon_id"], tutorial.first_dungeon_id());
+        assert_eq!(d0["dungeon_name"], "50100101");
+        assert_eq!(d0["dungeon_card"], "164051");
+        assert_eq!(d0["dungeon_coin"], 100);
+        assert_eq!(d0["dungeon_power"], 5);
+        assert_eq!(d0["dungeon_times"], 50);
+        assert_eq!(d0["dungeon_position"], 2);
+        assert_eq!(d0["direction"], json!(["4"]));
+
+        let d1 = &response["map_info"]["chapter_details"][0]["dungeon_info"][1];
+        assert_eq!(d1["dungeon_id"], tutorial.dungeons()[1].0);
+        assert_eq!(d1["dungeon_name"], tutorial.dungeons()[1].1);
+        assert_eq!(d1["dungeon_card"], "164051");
+        assert_eq!(d1["dungeon_position"], 6);
+
+        // boss 节点仍保留教程本地设计的消耗/次数；掉落结构来自布局表。
+        let boss = response["map_info"]["chapter_details"][0]["dungeon_info"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .find(|node| node["dungeon_id"] == "501006")
+            .unwrap();
+        assert_eq!(boss["dungeon_id"], "501006");
+        assert_eq!(boss["dungeon_power"], 5);
+        assert_eq!(boss["dungeon_times"], 50);
+        assert_eq!(
+            boss["dungeon_drop"],
+            json!([{ "type": 3, "id": "214001", "num": 1 }])
+        );
+
+        // 对酒：真实价格（268/100/10、多抽 2680）与保底字段。
+        assert_eq!(response["wine_info"]["gold_info"]["free_times"], 1);
+        assert_eq!(response["wine_info"]["gold_info"]["free_end_time"], 0);
+        assert_eq!(response["wine_info"]["gold_info"]["price"], 268);
+        assert_eq!(response["wine_info"]["silver_info"]["price"], 100);
+        assert_eq!(response["wine_info"]["copper_info"]["price"], 10);
+        assert_eq!(response["wine_info"]["silver_info"]["free_times"], 1);
+        assert_eq!(response["wine_info"]["copper_info"]["free_times"], 1);
+        assert_eq!(response["wine_info"]["multi_price"], 2680);
+        assert_eq!(response["wine_info"]["need_times"], 4);
+        assert_eq!(response["wine_info"]["next_guarantee"], 4);
+        assert_eq!(response["wine_info"]["guarantee_interval"], 4);
+        assert_eq!(response["wine_info"]["first_time_consume_gold"], 0);
+        assert_eq!(
+            response["wine_info"]["show_general_list"]
+                .as_array()
+                .unwrap()
+                .len(),
+            gd.wine_general_ids().len()
+        );
+        assert!(
+            !response["wine_info"]["show_general_list"]
+                .as_array()
+                .unwrap()
+                .is_empty(),
+            "carousel must be non-empty"
+        );
+    }
+
+    #[test]
+    fn wine_guarantee_uses_ten_draws_after_phase_one() {
+        let gd = game_data();
+        let mut tutorial = Tutorial::default();
+        tutorial.gold_guarantee_phase = 2;
+        let wine = wine_info(1, 0, 0, &tutorial, &gd);
+        assert_eq!(wine["need_times"], 10);
+        assert_eq!(wine["next_guarantee"], 10);
+        assert_eq!(wine["guarantee_interval"], 10);
+    }
+
+    /// 离线服 w1.x0：start=[1,2]，横向跨四格，纵向跨一格。
+    #[test]
+    fn path_layout_matches_the_chapter_501_grid() {
+        let gd = game_data();
+        let chapter = gd.chapter(REAL_MAP_ID).expect("chapter 501");
+        assert_eq!(chapter.path, "RRRDR");
+        let layout = path_layout(&chapter.start, &chapter.path, chapter.nodes.len());
+        assert_eq!(
+            layout.iter().map(|node| node.0).collect::<Vec<_>>(),
+            vec![2, 6, 10, 14, 15, 19]
+        );
+        assert_eq!(layout[0].1, vec!["4"]);
+        assert_eq!(layout[3].1, vec!["2"]);
+        assert_eq!(layout[4].1, vec!["4"]);
+        assert!(layout[5].1.is_empty(), "终点关没有连线");
+    }
+
+    #[test]
+    fn reverse_path_segments_are_drawn_from_the_destination_node() {
+        let layout = path_layout(&[2, 2], "LU", 3);
+        assert_eq!(
+            layout.iter().map(|node| node.0).collect::<Vec<_>>(),
+            vec![6, 2, 1]
+        );
+        assert!(layout[0].1.is_empty());
+        assert_eq!(layout[1].1, vec!["3"]);
+        assert_eq!(layout[2].1, vec!["1"]);
     }
 
     /// `cmn.push` 必须在第一个成功响应里。
@@ -331,8 +430,14 @@ mod tests {
     /// 抛异常，屏幕停在黑色。
     #[test]
     fn login_snapshot_carries_the_push_model_the_main_menu_needs() {
-        let response =
-            login_response_with_auth("7", "1001", "0", "auth", &empty_snapshot(), &[0, 0]);
+        let response = login_response_with_auth(
+            "0",
+            "auth",
+            &empty_snapshot(),
+            &Clears::new(),
+            &Tutorial::default(),
+            &game_data(),
+        );
         let push = &response["cmn"]["push"];
         assert!(push.is_object(), "cmn.push must be an object");
         // 这四个读取在 Models/PushInfo.js 里没有守卫，且模型默认值为 null。

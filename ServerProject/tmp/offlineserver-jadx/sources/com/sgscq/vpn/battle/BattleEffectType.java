@@ -1,0 +1,24 @@
+package com.sgscq.vpn.battle;
+
+/* JADX INFO: loaded from: classes.dex */
+public enum BattleEffectType {
+    ATTRIBUTE_DAMAGE,
+    HEAL,
+    NEXT_DAMAGE_BONUS,
+    NEXT_DAMAGE_DEALT_REDUCTION,
+    NEXT_DAMAGE_TAKEN_BONUS,
+    NEXT_DAMAGE_TAKEN_REDUCTION,
+    SEAL,
+    STUN,
+    HEAL_REDUCTION,
+    ATTRIBUTE_GAIN,
+    ATTRIBUTE_STEAL,
+    REVIVE,
+    IMMUNE_DAMAGE,
+    COUNTER_DAMAGE,
+    IMMEDIATE_ACTION,
+    EXTRA_NORMAL_ATTACK,
+    MARK,
+    COPY_SKILL,
+    NEEDS_MANUAL_IMPLEMENTATION
+}

@@ -80,7 +80,7 @@
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
 | `Views/ChangeName.js:99` | `editBoxReturn` | `nickname` | `this.requestCallback` |
-| `Views/Dialog/SpecificDialog.js:904` | `createPlayerChangeNameDialog` | `nickname` | `tmpfunc (local function literal)` |
+| `Views/Dialog/SpecificDialog.js:905` | `createPlayerChangeNameDialog` | `nickname` | `tmpfunc (local function literal)` |
 
 ### user.chgSign
 
@@ -94,7 +94,7 @@
 
 | 字段 | 证据 |
 |---|---|
-| `sign` | `Views/Dialog/SpecificDialog.js:696` |
+| `sign` | `Views/Dialog/SpecificDialog.js:697` |
 
 **响应字段**：调用点没有直接读取响应根字段；状态经由 cmn 落地。
 
@@ -108,7 +108,7 @@
 
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
-| `Views/Dialog/SpecificDialog.js:717` | `createEditSignatureDialog` | `sign` | `tmpfunc (local function literal)` |
+| `Views/Dialog/SpecificDialog.js:718` | `createEditSignatureDialog` | `sign` | `tmpfunc (local function literal)` |
 
 ### user.chooseTeam
 

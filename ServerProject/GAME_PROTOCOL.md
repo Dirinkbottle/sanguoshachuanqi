@@ -1,6 +1,6 @@
 # 游戏内协议与新手流程分析（版本 723 / 资源号 775）
 
-模块化的全量协议参考在 [docs/](docs/README.md)：全部 240 个端点、
+模块化的全量协议参考在 [docs/](docs/README.md)：全部 244 个端点、
 逐字段带 `文件:行号` 证据、`cmn` 数据模型全集、战斗与引导机制说明。
 本文的流程叙述与 docs/ 的端点参考互补。
 
@@ -180,6 +180,8 @@ map_type 的字符串值 "1" 表示普通，"2" 表示精英。章节详情至�
     direction[], can_open, item_id, box_id
 
 客户端 DungeonView 对 map_id == "500001" 分配教程引导标签，因此离线兼容的第一普通章节应优先使用 500001，除非后续资源分析证明其他值。
+
+资源字段已按客户端消费语义区分：`Models/Player.js:445-463` 中，`getPlayerCurTiLi()` 返回 `user_power`，`getPlayerCurQiLi()` 返回 `user_energy`；`Models/Dungeon.js:41` 把 `dungeon_power` 读作关卡体力消耗。客户端等级 1 配置 `sgs_user_level_conf.js` 的上限为 `max_power=150`、`max_energy=12`。因此本地默认新角色从这两个等级 1 上限开始，副本只扣 `user_power`；原服新角色实际起始余额仍无法从客户端静态资料证明。副本消耗及其他回包经济数值在 `config.toml` 的 `[tutorial]`，属于本地兼容规则。
 
 ## 首次招募：wine.wine
 

@@ -212,8 +212,8 @@
 
 | 字段 | 证据 |
 |---|---|
-| `info` | `Views/DecisiveBattle/DecisiveBattleMainView.js:266` |
 | `time` | `Views/DecisiveBattle/DecisiveBattleMainView.js:266` |
+| `info` | `Views/DecisiveBattle/DecisiveBattleMainView.js:266` |
 
 **URL 字面量出现位置**
 

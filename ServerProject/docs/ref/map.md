@@ -44,13 +44,13 @@
 
 | 字段 | 证据 |
 |---|---|
-| `map_id` | `Views/Table/Cell/TaskCell.js:335` |
+| `map_id` | `Views/Table/Cell/TaskCell.js:333` |
 
 **响应字段**
 
 | 字段 | 证据 |
 |---|---|
-| `map_info` | `Views/Table/Cell/TaskCell.js:335` |
+| `map_info` | `Views/Table/Cell/TaskCell.js:333` |
 
 > 响应整体（或部分）交给 `GameData.Map.update` 解析，其字段表见 [data-model.md](../data-model.md)。
 
@@ -64,7 +64,7 @@
 
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
-| `Views/Table/Cell/TaskCell.js:335` | `changeSceneWithTag` | `map_id` | `inline` |
+| `Views/Table/Cell/TaskCell.js:333` | `changeSceneWithTag` | `map_id` | `inline` |
 | `Views/Dialog/BecomeStrongerDialog.js:427` | `rightCB` | `map_id` | `inline` |
 | `Views/Dialog/DetailDialogComponent.js:61` | `CommonJumpCallback` | `map_id` | `_updateMapInfo (local function literal)` |
 | `Views/Dialog/DungeonDetailB.js:142` | `init` | `map_id` | `_updateMapInfo (local function literal)` |

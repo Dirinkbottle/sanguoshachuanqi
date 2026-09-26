@@ -202,7 +202,7 @@
 
 | 字段 | 证据 |
 |---|---|
-| `box_id` | `Views/Dialog/Dialog.js:503` |
+| `box_id` | `Views/Dialog/Dialog.js:481` |
 
 **响应字段**：调用点没有直接读取响应根字段；状态经由 cmn 落地。
 
@@ -216,4 +216,4 @@
 
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
-| `Views/Dialog/Dialog.js:503` | `centerBtnCallback` | `box_id` | `inline` |
+| `Views/Dialog/Dialog.js:481` | `centerBtnCallback` | `box_id` | `inline` |

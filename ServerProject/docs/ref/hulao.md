@@ -82,7 +82,7 @@
 | `Views/HulaoBattle/GarrisonLayoutDialog.js:861` | `funcFinish` | `user_id` | `inline` |
 | `Views/HulaoBattle/GarrisonLayoutDialog.js:908` | `funcFinish` | `user_id` | `inline` |
 | `Views/HulaoBattle/GarrisonLayoutDialog.js:948` | `funcFinish` | `user_id` | `inline` |
-| `Views/HulaoBattle/HulaoBattleMainView.js:179` | `getHulaoBattleReward` | `user_id` | `inline` |
+| `Views/HulaoBattle/HulaoBattleMainView.js:213` | `getHulaoBattleReward` | `user_id` | `inline` |
 | `Tools/Scene.js:116` | `gotoWorldBoss` | `user_id` | `inline` |
 
 ### hulao.lineup
@@ -97,19 +97,19 @@
 
 | 字段 | 证据 |
 |---|---|
-| `user_id` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
-| `stage` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
-| `mode` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
+| `user_id` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
+| `stage` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
+| `mode` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
 
 **响应字段**
 
 | 字段 | 证据 |
 |---|---|
-| `return_info` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
-| `return_info.left_info` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
-| `return_info.left_info.general_list` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
-| `return_info.left_info.total_fortune` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
-| `return_info.left_info.consume_fortune` | `Views/HulaoBattle/HulaoBattleMainView.js:100` |
+| `return_info` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
+| `return_info.left_info` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
+| `return_info.left_info.general_list` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
+| `return_info.left_info.total_fortune` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
+| `return_info.left_info.consume_fortune` | `Views/HulaoBattle/HulaoBattleMainView.js:134` |
 
 **URL 字面量出现位置**
 
@@ -121,7 +121,7 @@
 
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
-| `Views/HulaoBattle/HulaoBattleMainView.js:100` | `goToGarrisonLayoutDialog` | `user_id`, `stage`, `mode` | `inline` |
+| `Views/HulaoBattle/HulaoBattleMainView.js:134` | `goToGarrisonLayoutDialog` | `user_id`, `stage`, `mode` | `inline` |
 | `Views/HulaoBattle/HulaoBattleSelectDifficulty.js:96` | `setDifficultyRequest` | `user_id`, `stage`, `mode` | `inline` |
 
 ### hulao.recieve
@@ -136,16 +136,16 @@
 
 | 字段 | 证据 |
 |---|---|
-| `user_id` | `Views/HulaoBattle/HulaoBattleMainView.js:171` |
-| `stage` | `Views/HulaoBattle/HulaoBattleMainView.js:171` |
-| `mode` | `Views/HulaoBattle/HulaoBattleMainView.js:171` |
+| `user_id` | `Views/HulaoBattle/HulaoBattleMainView.js:205` |
+| `stage` | `Views/HulaoBattle/HulaoBattleMainView.js:205` |
+| `mode` | `Views/HulaoBattle/HulaoBattleMainView.js:205` |
 
 **响应字段**
 
 | 字段 | 证据 |
 |---|---|
-| `add_list` | `Views/HulaoBattle/HulaoBattleMainView.js:171` |
-| `return_info` | `Views/HulaoBattle/HulaoBattleMainView.js:171` |
+| `add_list` | `Views/HulaoBattle/HulaoBattleMainView.js:205` |
+| `return_info` | `Views/HulaoBattle/HulaoBattleMainView.js:205` |
 
 **URL 字面量出现位置**
 
@@ -157,4 +157,4 @@
 
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
-| `Views/HulaoBattle/HulaoBattleMainView.js:171` | `getHulaoBattleReward` | `user_id`, `stage`, `mode` | `inline` |
+| `Views/HulaoBattle/HulaoBattleMainView.js:205` | `getHulaoBattleReward` | `user_id`, `stage`, `mode` | `inline` |

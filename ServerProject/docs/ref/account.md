@@ -149,20 +149,20 @@
 | `logintype` | `Scene/Login/LoginScene_AnySdk.js:440` |
 | `app_indentify` | `Scene/Login/LoginScene_AnySdk.js:440` |
 | `extra` | `Scene/Login/LoginScene_AnySdk.js:440` |
-| `sessionId` | `Scene/Login/LoginScene_AnySdk.js:701` |
+| `sessionId` | `Scene/Login/LoginScene_AnySdk.js:710` |
 | `session` | `Scene/Login/LoginScene_EasyGuestSdk.js:391` |
 
 **响应字段**
 
 | 字段 | 证据 |
 |---|---|
-| `account_info.account_uid` | `Scene/Login/LoginScene_AnySdk.js:440` |
-| `server_params` | `Scene/Login/LoginScene_AnySdk.js:440` |
-| `token` | `Scene/Login/LoginScene_AnySdk.js:440` |
 | `server_list` | `Scene/Login/LoginScene_AnySdk.js:440` |
 | `server_logined_list` | `Scene/Login/LoginScene_AnySdk.js:440` |
 | `server_list.length` | `Scene/Login/LoginScene_AnySdk.js:440` |
-| `user_auth` | `Scene/Login/LoginScene_BfSdk.js:573` |
+| `account_info.account_uid` | `Scene/Login/LoginScene_AnySdk.js:440` |
+| `server_params` | `Scene/Login/LoginScene_AnySdk.js:440` |
+| `token` | `Scene/Login/LoginScene_AnySdk.js:440` |
+| `user_auth` | `Scene/Login/LoginScene_BfSdk.js:588` |
 
 **URL 字面量出现位置**
 
@@ -175,11 +175,11 @@
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
 | `Scene/Login/LoginScene_AnySdk.js:440` | `onAnySdkLoginSucess` | `uid`, `logintype`, `app_indentify`, `extra` | `this.onResponse_GetServerList` |
-| `Scene/Login/LoginScene_AnySdk.js:685` | `onVisitorBtnClick` | `uid`, `logintype`, `app_indentify`, `extra` | `this.onResponse_GetServerList_Visitor` |
-| `Scene/Login/LoginScene_AnySdk.js:701` | `onBfSdkLoginSucess` | `uid`, `logintype`, `app_indentify`, `extra`, `sessionId` | `this.onResponse_GetServerList` |
-| `Scene/Login/LoginScene_BfSdk.js:573` | `onVisitorBtnClick` | `uid`, `logintype`, `app_indentify`, `extra` | `this.onResponse_GetServerList_Visitor` |
-| `Scene/Login/LoginScene_BfSdk.js:598` | `checkGetOpenUDID` | `uid`, `logintype`, `app_indentify`, `extra` | `this.onResponse_GetServerList_Visitor` |
-| `Scene/Login/LoginScene_BfSdk.js:619` | `onBfSdkLoginSucess` | `uid`, `logintype`, `app_indentify`, `extra`, `sessionId` | `this.onResponse_GetServerList` |
+| `Scene/Login/LoginScene_AnySdk.js:694` | `onVisitorBtnClick` | `uid`, `logintype`, `app_indentify`, `extra` | `this.onResponse_GetServerList_Visitor` |
+| `Scene/Login/LoginScene_AnySdk.js:710` | `onBfSdkLoginSucess` | `uid`, `logintype`, `app_indentify`, `extra`, `sessionId` | `this.onResponse_GetServerList` |
+| `Scene/Login/LoginScene_BfSdk.js:588` | `onVisitorBtnClick` | `uid`, `logintype`, `app_indentify`, `extra` | `this.onResponse_GetServerList_Visitor` |
+| `Scene/Login/LoginScene_BfSdk.js:613` | `checkGetOpenUDID` | `uid`, `logintype`, `app_indentify`, `extra` | `this.onResponse_GetServerList_Visitor` |
+| `Scene/Login/LoginScene_BfSdk.js:634` | `onBfSdkLoginSucess` | `uid`, `logintype`, `app_indentify`, `extra`, `sessionId` | `this.onResponse_GetServerList` |
 | `Scene/Login/LoginScene_EasyGuestSdk.js:190` | `_onVisitorBtnClick` | `uid`, `logintype`, `app_indentify`, `extra` | `this.onResp_GetServerList` |
 | `Scene/Login/LoginScene_EasyGuestSdk.js:391` | `onEasySdkLoginSuccess` | `uid`, `logintype`, `app_indentify`, `session` | `this.onResp_GetServerList` |
 | `Scene/Login/LoginScene_EasySdk.js:292` | `onEasySdkLoginSuccess` | `uid`, `logintype`, `app_indentify`, `session` | `this.onResp_GetServerList` |

@@ -32,19 +32,19 @@
 
 | 字段 | 证据 |
 |---|---|
-| `user_id` | `Views/Dialog/AutoPracticeDialog.js:424` |
-| `user_general_id` | `Views/Dialog/AutoPracticeDialog.js:424` |
-| `is_gain` | `Views/Dialog/AutoPracticeDialog.js:424` |
-| `is_multi` | `Views/Dialog/AutoPracticeDialog.js:424` |
-| `cultivate_num` | `Views/Dialog/AutoPracticeDialog.js:424` |
-| `is_need_talent` | `Views/Dialog/AutoPracticeDialog.js:424` |
-| `cultivate_rule` | `Views/Dialog/AutoPracticeDialog.js:424` |
+| `user_id` | `Views/Dialog/AutoPracticeDialog.js:423` |
+| `user_general_id` | `Views/Dialog/AutoPracticeDialog.js:423` |
+| `is_gain` | `Views/Dialog/AutoPracticeDialog.js:423` |
+| `is_multi` | `Views/Dialog/AutoPracticeDialog.js:423` |
+| `cultivate_num` | `Views/Dialog/AutoPracticeDialog.js:423` |
+| `is_need_talent` | `Views/Dialog/AutoPracticeDialog.js:423` |
+| `cultivate_rule` | `Views/Dialog/AutoPracticeDialog.js:423` |
 
 **响应字段**
 
 | 字段 | 证据 |
 |---|---|
-| `attr_info` | `Views/Dialog/AutoPracticeDialog.js:424` |
+| `attr_info` | `Views/Dialog/AutoPracticeDialog.js:423` |
 
 **URL 字面量出现位置**
 
@@ -56,7 +56,7 @@
 
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
-| `Views/Dialog/AutoPracticeDialog.js:424` | `_requestAutoPractice` | `user_id`, `user_general_id`, `is_gain`, `is_multi`, `cultivate_num`, `is_need_talent`, `cultivate_rule` | `inline` |
+| `Views/Dialog/AutoPracticeDialog.js:423` | `_requestAutoPractice` | `user_id`, `user_general_id`, `is_gain`, `is_multi`, `cultivate_num`, `is_need_talent`, `cultivate_rule` | `inline` |
 
 ### general.culture
 

@@ -90,7 +90,6 @@ pub async fn account_api(
     }
 }
 
-
 /// 本地注册/登录接口的请求体。
 ///
 /// 这是本重建工程新增的接口，不是原版协议：原版把账号交给渠道 SDK，
@@ -99,6 +98,12 @@ pub async fn account_api(
 pub struct Credentials {
     pub username: String,
     pub password: String,
+}
+
+#[derive(Deserialize)]
+pub struct LogoutInput {
+    #[serde(rename = "sessionKey", alias = "session_key")]
+    pub session_key: String,
 }
 
 /// 注册一个本地账号。
@@ -141,5 +146,25 @@ pub async fn login(
     match result {
         Ok(session) => Ok(AsciiJson(json!({"result":true,"sessionKey":session}))),
         Err(msg) => Ok(AsciiJson(protocol::error("login_failed", msg))),
+    }
+}
+
+/// Revoke a local account session. Repeating logout is safe and returns success.
+pub async fn logout(
+    State(state): State<Shared>,
+    Json(input): Json<LogoutInput>,
+) -> Result<AsciiJson, ApiError> {
+    let path = state.config.database.clone();
+    let token = input.session_key;
+    let result = tokio::task::spawn_blocking(move || {
+        let db = db::open(&path).map_err(|_| ())?;
+        accounts::logout(&db, &token).map_err(|_| ())?;
+        Ok::<(), ()>(())
+    })
+    .await
+    .map_err(|_| internal_error())?;
+    match result {
+        Ok(()) => Ok(AsciiJson(json!({"result":true}))),
+        Err(()) => Err(internal_error()),
     }
 }

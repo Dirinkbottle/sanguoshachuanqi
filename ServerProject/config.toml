@@ -6,16 +6,22 @@ servers = "servers.json"
 guest_enabled = false
 session_ttl_seconds = 86400
 
-# First-time-player grants used by this reconstruction.
+# Serving data directory: the sole input of map_info / wine_info.
+# Missing files make startup fail; there is no built-in fallback.
+game_data = "gameconfig"
+
+# First-time-player slice used by this reconstruction.
 #
 # These are LOCAL DESIGN VALUES, not recovered original server rules: the closed
 # service's recruit pool, drop tables and starter grants cannot be observed from
-# the client. Each id below is checked against the shipped plan tables at test
-# time (see tests::tutorial_ids_exist_in_shipped_config).
+# the client. The map payload exposes chapter 501 through the client's legacy
+# first-chapter ID 500001; starter-choice IDs are read from the shipped global
+# config. IDs and values are checked against client package data where possible
+# (see tests::tutorial_ids_exist_in_shipped_config).
 #
 #   recruit_general_id  121018 131006 141007 121013 are the four the client
 #                       itself offers at step 10000 (FreshmanChooseGeneralId);
-#                       100000 is used here as the first recruit result.
+#                       100000 is a local first recruit result.
 #   gift_item_id        410001, sgs_item.js item_type = "1" (gift).
 #   equipment_id        200000, sgs_equipments.js entry.
 [tutorial]
@@ -23,19 +29,57 @@ recruit_general_id = "100000"
 gift_item_id = "410001"
 equipment_id = "200000"
 gift_coin = 1000
+starting_coin = 1000
+starting_gold = 100
+starting_power = 150
+starting_energy = 12
+
+first_dungeon_id = "501001"
+first_dungeon_name = "50100101"
+first_enemy_general_id = "111007"
+second_dungeon_id = "501002"
+second_dungeon_name = "50100201"
+second_enemy_general_id = "121006"
+chapter_name = "50000101"
+dungeon_card_id = "111007"
+dungeon_grade = 1
+dungeon_suggest_level = 1
+dungeon_item_price = 0
+dungeon_times = 100
+
+# Local economy and rewards. `user_power` is client stamina; `user_energy` is
+# a separate client resource and is not spent by this dungeon implementation.
+dungeon_power_cost = 5
+dungeon_coin_reward = 100
+dungeon_user_exp_reward = 10
+dungeon_general_exp_reward = 10
+
+# Only the gold single draw is implemented. Other price/free fields keep the
+# client-facing wine_info internally consistent and are local compatibility
+# defaults, not recovered shop terms.
+gold_free_draws = 1
+gold_single_price = 50
+silver_free_draws = 1
+silver_single_price = 1000
+copper_free_draws = 1
+copper_single_price = 100
+recruit_multi_count = 10
+gold_multi_price = 450
+gold_guarantee_phase = 1
+
+# Deterministic local animation values. These do not reproduce the original
+# server's battle algorithm or balance.
+fight_player_hp = 20000
+fight_enemy_hp = 10000
+fight_player_team_points = 30
+fight_enemy_team_points = 20
+fight_star_level = 1
+fight_rule_version = "tutorial-dungeon-v1"
 
 # 请求/响应日志。
 #
 #   off      不打请求日志
 #   summary  每个请求一行：时间、请求号、状态码、result、error_code、耗时
-#   full     额外打出脱敏后的请求 data / body 与响应体（各截断 2000 字符）
-#
-# 无论哪个级别都会把 password / token / user_auth / sessionId 等键替换成 ***，
-# 见 src/logging.rs 的 SENSITIVE_KEYS。
+#   full     原样打印请求 data / body 与完整响应体
 [log]
-level = "summary"
-
-# 把 /auth/register 与 /auth/login 的账号密码原样打进日志。
-# 打开后这两个接口的请求体在任何级别都会打印（否则只有 full 级别打）。
-# token / user_auth / sessionId 不受影响，始终是 ***。
-show_credentials = true
+level = "full"

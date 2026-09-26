@@ -66,6 +66,8 @@
   "actions": 244,
   "net_functions": 236,
   "call_sites": 642,
+  "action_callsite_attributions": 392,
+  "unique_action_call_sites": 374,
   "models": 81
  },
  "actions": {
@@ -1651,7 +1653,7 @@
    "call_sites": [
     {
      "file": "Views/Table/Cell/TaskCell.js",
-     "line": 335,
+     "line": 333,
      "function": "changeSceneWithTag",
      "net_function": "requireChapterInfo",
      "arg_role": "request-object",
@@ -1661,15 +1663,15 @@
       "map_id"
      ],
      "request_field_evidence": {
-      "map_id": "Views/Table/Cell/TaskCell.js:335"
+      "map_id": "Views/Table/Cell/TaskCell.js:333"
      },
      "handler": "inline",
-     "handler_evidence": "Views/Table/Cell/TaskCell.js:335",
+     "handler_evidence": "Views/Table/Cell/TaskCell.js:333",
      "response_fields": [
       "map_info"
      ],
      "response_field_evidence": {
-      "map_info": "Views/Table/Cell/TaskCell.js:335"
+      "map_info": "Views/Table/Cell/TaskCell.js:333"
      },
      "model_hops": [
       "GameData.Map.update"
@@ -1883,10 +1885,10 @@
     }
    ],
    "request_fields": {
-    "map_id": "Views/Table/Cell/TaskCell.js:335"
+    "map_id": "Views/Table/Cell/TaskCell.js:333"
    },
    "response_fields": {
-    "map_info": "Views/Table/Cell/TaskCell.js:335"
+    "map_info": "Views/Table/Cell/TaskCell.js:333"
    },
    "model_hops": [
     "GameData.Map.update"
@@ -2916,7 +2918,7 @@
    "call_sites": [
     {
      "file": "Views/Dialog/Dialog.js",
-     "line": 503,
+     "line": 481,
      "function": "centerBtnCallback",
      "net_function": "requireOpenTreasureBox",
      "arg_role": "request-object",
@@ -2926,10 +2928,10 @@
       "box_id"
      ],
      "request_field_evidence": {
-      "box_id": "Views/Dialog/Dialog.js:503"
+      "box_id": "Views/Dialog/Dialog.js:481"
      },
      "handler": "inline",
-     "handler_evidence": "Views/Dialog/Dialog.js:503",
+     "handler_evidence": "Views/Dialog/Dialog.js:481",
      "response_fields": [],
      "response_field_evidence": {},
      "model_hops": [],
@@ -2939,7 +2941,7 @@
     }
    ],
    "request_fields": {
-    "box_id": "Views/Dialog/Dialog.js:503"
+    "box_id": "Views/Dialog/Dialog.js:481"
    },
    "response_fields": {},
    "model_hops": [],
@@ -5123,12 +5125,12 @@
      "handler": "inline",
      "handler_evidence": "Views/Union/UnionDepotLayer.js:254",
      "response_fields": [
-      "depot_list",
-      "length"
+      "length",
+      "depot_list"
      ],
      "response_field_evidence": {
-      "depot_list": "Views/Union/UnionDepotLayer.js:254",
-      "length": "Views/Union/UnionDepotLayer.js:254"
+      "length": "Views/Union/UnionDepotLayer.js:254",
+      "depot_list": "Views/Union/UnionDepotLayer.js:254"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -5140,8 +5142,8 @@
     "user_id": "Views/Union/UnionDepotLayer.js:254"
    },
    "response_fields": {
-    "depot_list": "Views/Union/UnionDepotLayer.js:254",
-    "length": "Views/Union/UnionDepotLayer.js:254"
+    "length": "Views/Union/UnionDepotLayer.js:254",
+    "depot_list": "Views/Union/UnionDepotLayer.js:254"
    },
    "model_hops": [],
    "error_codes": [],
@@ -6004,7 +6006,7 @@
     },
     {
      "file": "Views/Dialog/Dialog.js",
-     "line": 191,
+     "line": 169,
      "function": "init",
      "net_function": "requestBuyGood",
      "arg_role": "request-object",
@@ -6025,7 +6027,7 @@
       "currency_type": "Scene/Ladder/LadderGiftView.js:161"
      },
      "handler": "inline",
-     "handler_evidence": "Views/Dialog/Dialog.js:191",
+     "handler_evidence": "Views/Dialog/Dialog.js:169",
      "response_fields": [],
      "response_field_evidence": {},
      "model_hops": [],
@@ -8248,7 +8250,7 @@
    "call_sites": [
     {
      "file": "Views/Dialog/SpecificDialog.js",
-     "line": 717,
+     "line": 718,
      "function": "createEditSignatureDialog",
      "net_function": "requestSaveUserSign",
      "arg_role": "request-object",
@@ -8258,10 +8260,10 @@
       "sign"
      ],
      "request_field_evidence": {
-      "sign": "Views/Dialog/SpecificDialog.js:696"
+      "sign": "Views/Dialog/SpecificDialog.js:697"
      },
      "handler": "tmpfunc (local function literal)",
-     "handler_evidence": "Views/Dialog/SpecificDialog.js:717",
+     "handler_evidence": "Views/Dialog/SpecificDialog.js:718",
      "response_fields": [],
      "response_field_evidence": {},
      "model_hops": [],
@@ -8271,7 +8273,7 @@
     }
    ],
    "request_fields": {
-    "sign": "Views/Dialog/SpecificDialog.js:696"
+    "sign": "Views/Dialog/SpecificDialog.js:697"
    },
    "response_fields": {},
    "model_hops": [],
@@ -8330,7 +8332,7 @@
     },
     {
      "file": "Views/Dialog/SpecificDialog.js",
-     "line": 904,
+     "line": 905,
      "function": "createPlayerChangeNameDialog",
      "net_function": "requestSaveUserNewName",
      "arg_role": "request-object",
@@ -8340,10 +8342,10 @@
       "nickname"
      ],
      "request_field_evidence": {
-      "nickname": "Views/Dialog/SpecificDialog.js:885"
+      "nickname": "Views/Dialog/SpecificDialog.js:886"
      },
      "handler": "tmpfunc (local function literal)",
-     "handler_evidence": "Views/Dialog/SpecificDialog.js:904",
+     "handler_evidence": "Views/Dialog/SpecificDialog.js:905",
      "response_fields": [],
      "response_field_evidence": {},
      "model_hops": [],
@@ -9100,18 +9102,18 @@
      "handler": "this.onResponse",
      "handler_evidence": "this.onResponse (defined in Scene/Social/SocialView.js)",
      "response_fields": [
-      "length",
-      "Clone",
       "return_info.user_make_friends",
       "return_info.friends",
-      "return_info.enemys"
+      "return_info.enemys",
+      "length",
+      "Clone"
      ],
      "response_field_evidence": {
-      "length": "Scene/Social/SocialView.js:101",
-      "Clone": "Scene/Social/SocialView.js:101",
       "return_info.user_make_friends": "Scene/Social/SocialView.js:101",
       "return_info.friends": "Scene/Social/SocialView.js:101",
-      "return_info.enemys": "Scene/Social/SocialView.js:101"
+      "return_info.enemys": "Scene/Social/SocialView.js:101",
+      "length": "Scene/Social/SocialView.js:101",
+      "Clone": "Scene/Social/SocialView.js:101"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -9131,18 +9133,18 @@
      "handler": "this.onResponse",
      "handler_evidence": "this.onResponse (defined in Scene/Social/SocialView.js)",
      "response_fields": [
-      "length",
-      "Clone",
       "return_info.user_make_friends",
       "return_info.friends",
-      "return_info.enemys"
+      "return_info.enemys",
+      "length",
+      "Clone"
      ],
      "response_field_evidence": {
-      "length": "Scene/Social/SocialView.js:231",
-      "Clone": "Scene/Social/SocialView.js:231",
       "return_info.user_make_friends": "Scene/Social/SocialView.js:231",
       "return_info.friends": "Scene/Social/SocialView.js:231",
-      "return_info.enemys": "Scene/Social/SocialView.js:231"
+      "return_info.enemys": "Scene/Social/SocialView.js:231",
+      "length": "Scene/Social/SocialView.js:231",
+      "Clone": "Scene/Social/SocialView.js:231"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -9162,18 +9164,18 @@
      "handler": "this.onResponse",
      "handler_evidence": "this.onResponse (defined in Scene/Social/SocialView.js)",
      "response_fields": [
-      "length",
-      "Clone",
       "return_info.user_make_friends",
       "return_info.friends",
-      "return_info.enemys"
+      "return_info.enemys",
+      "length",
+      "Clone"
      ],
      "response_field_evidence": {
-      "length": "Scene/Social/SocialView.js:320",
-      "Clone": "Scene/Social/SocialView.js:320",
       "return_info.user_make_friends": "Scene/Social/SocialView.js:320",
       "return_info.friends": "Scene/Social/SocialView.js:320",
-      "return_info.enemys": "Scene/Social/SocialView.js:320"
+      "return_info.enemys": "Scene/Social/SocialView.js:320",
+      "length": "Scene/Social/SocialView.js:320",
+      "Clone": "Scene/Social/SocialView.js:320"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -9183,11 +9185,11 @@
    ],
    "request_fields": {},
    "response_fields": {
-    "length": "Scene/Social/SocialView.js:101",
-    "Clone": "Scene/Social/SocialView.js:101",
     "return_info.user_make_friends": "Scene/Social/SocialView.js:101",
     "return_info.friends": "Scene/Social/SocialView.js:101",
-    "return_info.enemys": "Scene/Social/SocialView.js:101"
+    "return_info.enemys": "Scene/Social/SocialView.js:101",
+    "length": "Scene/Social/SocialView.js:101",
+    "Clone": "Scene/Social/SocialView.js:101"
    },
    "model_hops": [],
    "error_codes": [],
@@ -9229,18 +9231,18 @@
      "handler": "this.onResponse",
      "handler_evidence": "this.onResponse (defined in Scene/Social/SocialView.js)",
      "response_fields": [
-      "length",
-      "Clone",
       "return_info.user_make_friends",
       "return_info.friends",
-      "return_info.enemys"
+      "return_info.enemys",
+      "length",
+      "Clone"
      ],
      "response_field_evidence": {
-      "length": "Scene/Social/SocialView.js:109",
-      "Clone": "Scene/Social/SocialView.js:109",
       "return_info.user_make_friends": "Scene/Social/SocialView.js:109",
       "return_info.friends": "Scene/Social/SocialView.js:109",
-      "return_info.enemys": "Scene/Social/SocialView.js:109"
+      "return_info.enemys": "Scene/Social/SocialView.js:109",
+      "length": "Scene/Social/SocialView.js:109",
+      "Clone": "Scene/Social/SocialView.js:109"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -9260,18 +9262,18 @@
      "handler": "this.onResponse",
      "handler_evidence": "this.onResponse (defined in Scene/Social/SocialView.js)",
      "response_fields": [
-      "length",
-      "Clone",
       "return_info.user_make_friends",
       "return_info.friends",
-      "return_info.enemys"
+      "return_info.enemys",
+      "length",
+      "Clone"
      ],
      "response_field_evidence": {
-      "length": "Scene/Social/SocialView.js:325",
-      "Clone": "Scene/Social/SocialView.js:325",
       "return_info.user_make_friends": "Scene/Social/SocialView.js:325",
       "return_info.friends": "Scene/Social/SocialView.js:325",
-      "return_info.enemys": "Scene/Social/SocialView.js:325"
+      "return_info.enemys": "Scene/Social/SocialView.js:325",
+      "length": "Scene/Social/SocialView.js:325",
+      "Clone": "Scene/Social/SocialView.js:325"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -9281,11 +9283,11 @@
    ],
    "request_fields": {},
    "response_fields": {
-    "length": "Scene/Social/SocialView.js:109",
-    "Clone": "Scene/Social/SocialView.js:109",
     "return_info.user_make_friends": "Scene/Social/SocialView.js:109",
     "return_info.friends": "Scene/Social/SocialView.js:109",
-    "return_info.enemys": "Scene/Social/SocialView.js:109"
+    "return_info.enemys": "Scene/Social/SocialView.js:109",
+    "length": "Scene/Social/SocialView.js:109",
+    "Clone": "Scene/Social/SocialView.js:109"
    },
    "model_hops": [],
    "error_codes": [],
@@ -9327,18 +9329,18 @@
      "handler": "this.onResponse",
      "handler_evidence": "this.onResponse (defined in Scene/Social/SocialView.js)",
      "response_fields": [
-      "length",
-      "Clone",
       "return_info.user_make_friends",
       "return_info.friends",
-      "return_info.enemys"
+      "return_info.enemys",
+      "length",
+      "Clone"
      ],
      "response_field_evidence": {
-      "length": "Scene/Social/SocialView.js:115",
-      "Clone": "Scene/Social/SocialView.js:115",
       "return_info.user_make_friends": "Scene/Social/SocialView.js:115",
       "return_info.friends": "Scene/Social/SocialView.js:115",
-      "return_info.enemys": "Scene/Social/SocialView.js:115"
+      "return_info.enemys": "Scene/Social/SocialView.js:115",
+      "length": "Scene/Social/SocialView.js:115",
+      "Clone": "Scene/Social/SocialView.js:115"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -9358,18 +9360,18 @@
      "handler": "this.onResponse",
      "handler_evidence": "this.onResponse (defined in Scene/Social/SocialView.js)",
      "response_fields": [
-      "length",
-      "Clone",
       "return_info.user_make_friends",
       "return_info.friends",
-      "return_info.enemys"
+      "return_info.enemys",
+      "length",
+      "Clone"
      ],
      "response_field_evidence": {
-      "length": "Scene/Social/SocialView.js:329",
-      "Clone": "Scene/Social/SocialView.js:329",
       "return_info.user_make_friends": "Scene/Social/SocialView.js:329",
       "return_info.friends": "Scene/Social/SocialView.js:329",
-      "return_info.enemys": "Scene/Social/SocialView.js:329"
+      "return_info.enemys": "Scene/Social/SocialView.js:329",
+      "length": "Scene/Social/SocialView.js:329",
+      "Clone": "Scene/Social/SocialView.js:329"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -9379,11 +9381,11 @@
    ],
    "request_fields": {},
    "response_fields": {
-    "length": "Scene/Social/SocialView.js:115",
-    "Clone": "Scene/Social/SocialView.js:115",
     "return_info.user_make_friends": "Scene/Social/SocialView.js:115",
     "return_info.friends": "Scene/Social/SocialView.js:115",
-    "return_info.enemys": "Scene/Social/SocialView.js:115"
+    "return_info.enemys": "Scene/Social/SocialView.js:115",
+    "length": "Scene/Social/SocialView.js:115",
+    "Clone": "Scene/Social/SocialView.js:115"
    },
    "model_hops": [],
    "error_codes": [],
@@ -9682,20 +9684,20 @@
      "handler": "this.onResponse_GetServerList",
      "handler_evidence": "this.onResponse_GetServerList (defined in Scene/Login/LoginScene_AnySdk.js)",
      "response_fields": [
-      "account_info.account_uid",
-      "server_params",
-      "token",
       "server_list",
       "server_logined_list",
-      "server_list.length"
+      "server_list.length",
+      "account_info.account_uid",
+      "server_params",
+      "token"
      ],
      "response_field_evidence": {
-      "account_info.account_uid": "Scene/Login/LoginScene_AnySdk.js:440",
-      "server_params": "Scene/Login/LoginScene_AnySdk.js:440",
-      "token": "Scene/Login/LoginScene_AnySdk.js:440",
       "server_list": "Scene/Login/LoginScene_AnySdk.js:440",
       "server_logined_list": "Scene/Login/LoginScene_AnySdk.js:440",
-      "server_list.length": "Scene/Login/LoginScene_AnySdk.js:440"
+      "server_list.length": "Scene/Login/LoginScene_AnySdk.js:440",
+      "account_info.account_uid": "Scene/Login/LoginScene_AnySdk.js:440",
+      "server_params": "Scene/Login/LoginScene_AnySdk.js:440",
+      "token": "Scene/Login/LoginScene_AnySdk.js:440"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -9704,7 +9706,7 @@
     },
     {
      "file": "Scene/Login/LoginScene_AnySdk.js",
-     "line": 685,
+     "line": 694,
      "function": "onVisitorBtnClick",
      "net_function": "requestGetServerList",
      "arg_role": "request-object",
@@ -9717,26 +9719,26 @@
       "extra"
      ],
      "request_field_evidence": {
-      "uid": "Scene/Login/LoginScene_AnySdk.js:685",
-      "logintype": "Scene/Login/LoginScene_AnySdk.js:685",
-      "app_indentify": "Scene/Login/LoginScene_AnySdk.js:685",
-      "extra": "Scene/Login/LoginScene_AnySdk.js:685"
+      "uid": "Scene/Login/LoginScene_AnySdk.js:694",
+      "logintype": "Scene/Login/LoginScene_AnySdk.js:694",
+      "app_indentify": "Scene/Login/LoginScene_AnySdk.js:694",
+      "extra": "Scene/Login/LoginScene_AnySdk.js:694"
      },
      "handler": "this.onResponse_GetServerList_Visitor",
      "handler_evidence": "this.onResponse_GetServerList_Visitor (defined in Scene/Login/LoginScene_AnySdk.js)",
      "response_fields": [
+      "server_list",
+      "server_logined_list",
       "account_info.account_uid",
       "server_params",
-      "token",
-      "server_list",
-      "server_logined_list"
+      "token"
      ],
      "response_field_evidence": {
-      "account_info.account_uid": "Scene/Login/LoginScene_AnySdk.js:685",
-      "server_params": "Scene/Login/LoginScene_AnySdk.js:685",
-      "token": "Scene/Login/LoginScene_AnySdk.js:685",
-      "server_list": "Scene/Login/LoginScene_AnySdk.js:685",
-      "server_logined_list": "Scene/Login/LoginScene_AnySdk.js:685"
+      "server_list": "Scene/Login/LoginScene_AnySdk.js:694",
+      "server_logined_list": "Scene/Login/LoginScene_AnySdk.js:694",
+      "account_info.account_uid": "Scene/Login/LoginScene_AnySdk.js:694",
+      "server_params": "Scene/Login/LoginScene_AnySdk.js:694",
+      "token": "Scene/Login/LoginScene_AnySdk.js:694"
      },
      "model_hops": [],
      "delegates_to": [
@@ -9752,7 +9754,7 @@
     },
     {
      "file": "Scene/Login/LoginScene_AnySdk.js",
-     "line": 701,
+     "line": 710,
      "function": "onBfSdkLoginSucess",
      "net_function": "requestGetServerList",
      "arg_role": "request-object",
@@ -9766,29 +9768,29 @@
       "sessionId"
      ],
      "request_field_evidence": {
-      "uid": "Scene/Login/LoginScene_AnySdk.js:701",
-      "logintype": "Scene/Login/LoginScene_AnySdk.js:701",
-      "app_indentify": "Scene/Login/LoginScene_AnySdk.js:701",
-      "extra": "Scene/Login/LoginScene_AnySdk.js:701",
-      "sessionId": "Scene/Login/LoginScene_AnySdk.js:701"
+      "uid": "Scene/Login/LoginScene_AnySdk.js:710",
+      "logintype": "Scene/Login/LoginScene_AnySdk.js:710",
+      "app_indentify": "Scene/Login/LoginScene_AnySdk.js:710",
+      "extra": "Scene/Login/LoginScene_AnySdk.js:710",
+      "sessionId": "Scene/Login/LoginScene_AnySdk.js:710"
      },
      "handler": "this.onResponse_GetServerList",
      "handler_evidence": "this.onResponse_GetServerList (defined in Scene/Login/LoginScene_AnySdk.js)",
      "response_fields": [
-      "account_info.account_uid",
-      "server_params",
-      "token",
       "server_list",
       "server_logined_list",
-      "server_list.length"
+      "server_list.length",
+      "account_info.account_uid",
+      "server_params",
+      "token"
      ],
      "response_field_evidence": {
-      "account_info.account_uid": "Scene/Login/LoginScene_AnySdk.js:701",
-      "server_params": "Scene/Login/LoginScene_AnySdk.js:701",
-      "token": "Scene/Login/LoginScene_AnySdk.js:701",
-      "server_list": "Scene/Login/LoginScene_AnySdk.js:701",
-      "server_logined_list": "Scene/Login/LoginScene_AnySdk.js:701",
-      "server_list.length": "Scene/Login/LoginScene_AnySdk.js:701"
+      "server_list": "Scene/Login/LoginScene_AnySdk.js:710",
+      "server_logined_list": "Scene/Login/LoginScene_AnySdk.js:710",
+      "server_list.length": "Scene/Login/LoginScene_AnySdk.js:710",
+      "account_info.account_uid": "Scene/Login/LoginScene_AnySdk.js:710",
+      "server_params": "Scene/Login/LoginScene_AnySdk.js:710",
+      "token": "Scene/Login/LoginScene_AnySdk.js:710"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -9797,7 +9799,7 @@
     },
     {
      "file": "Scene/Login/LoginScene_BfSdk.js",
-     "line": 573,
+     "line": 588,
      "function": "onVisitorBtnClick",
      "net_function": "requestGetServerList",
      "arg_role": "request-object",
@@ -9810,30 +9812,30 @@
       "extra"
      ],
      "request_field_evidence": {
-      "uid": "Scene/Login/LoginScene_BfSdk.js:573",
-      "logintype": "Scene/Login/LoginScene_BfSdk.js:573",
-      "app_indentify": "Scene/Login/LoginScene_BfSdk.js:573",
-      "extra": "Scene/Login/LoginScene_BfSdk.js:573"
+      "uid": "Scene/Login/LoginScene_BfSdk.js:588",
+      "logintype": "Scene/Login/LoginScene_BfSdk.js:588",
+      "app_indentify": "Scene/Login/LoginScene_BfSdk.js:588",
+      "extra": "Scene/Login/LoginScene_BfSdk.js:588"
      },
      "handler": "this.onResponse_GetServerList_Visitor",
      "handler_evidence": "this.onResponse_GetServerList_Visitor (defined in Scene/Login/LoginScene_BfSdk.js)",
      "response_fields": [
+      "server_list",
+      "server_logined_list",
+      "server_list.length",
       "account_info.account_uid",
       "server_params",
       "token",
-      "user_auth",
-      "server_list",
-      "server_logined_list",
-      "server_list.length"
+      "user_auth"
      ],
      "response_field_evidence": {
-      "account_info.account_uid": "Scene/Login/LoginScene_BfSdk.js:573",
-      "server_params": "Scene/Login/LoginScene_BfSdk.js:573",
-      "token": "Scene/Login/LoginScene_BfSdk.js:573",
-      "user_auth": "Scene/Login/LoginScene_BfSdk.js:573",
-      "server_list": "Scene/Login/LoginScene_BfSdk.js:573",
-      "server_logined_list": "Scene/Login/LoginScene_BfSdk.js:573",
-      "server_list.length": "Scene/Login/LoginScene_BfSdk.js:573"
+      "server_list": "Scene/Login/LoginScene_BfSdk.js:588",
+      "server_logined_list": "Scene/Login/LoginScene_BfSdk.js:588",
+      "server_list.length": "Scene/Login/LoginScene_BfSdk.js:588",
+      "account_info.account_uid": "Scene/Login/LoginScene_BfSdk.js:588",
+      "server_params": "Scene/Login/LoginScene_BfSdk.js:588",
+      "token": "Scene/Login/LoginScene_BfSdk.js:588",
+      "user_auth": "Scene/Login/LoginScene_BfSdk.js:588"
      },
      "model_hops": [],
      "delegates_to": [
@@ -9849,7 +9851,7 @@
     },
     {
      "file": "Scene/Login/LoginScene_BfSdk.js",
-     "line": 598,
+     "line": 613,
      "function": "checkGetOpenUDID",
      "net_function": "requestGetServerList",
      "arg_role": "request-object",
@@ -9862,30 +9864,30 @@
       "extra"
      ],
      "request_field_evidence": {
-      "uid": "Scene/Login/LoginScene_BfSdk.js:598",
-      "logintype": "Scene/Login/LoginScene_BfSdk.js:598",
-      "app_indentify": "Scene/Login/LoginScene_BfSdk.js:598",
-      "extra": "Scene/Login/LoginScene_BfSdk.js:598"
+      "uid": "Scene/Login/LoginScene_BfSdk.js:613",
+      "logintype": "Scene/Login/LoginScene_BfSdk.js:613",
+      "app_indentify": "Scene/Login/LoginScene_BfSdk.js:613",
+      "extra": "Scene/Login/LoginScene_BfSdk.js:613"
      },
      "handler": "this.onResponse_GetServerList_Visitor",
      "handler_evidence": "this.onResponse_GetServerList_Visitor (defined in Scene/Login/LoginScene_BfSdk.js)",
      "response_fields": [
+      "server_list",
+      "server_logined_list",
+      "server_list.length",
       "account_info.account_uid",
       "server_params",
       "token",
-      "user_auth",
-      "server_list",
-      "server_logined_list",
-      "server_list.length"
+      "user_auth"
      ],
      "response_field_evidence": {
-      "account_info.account_uid": "Scene/Login/LoginScene_BfSdk.js:598",
-      "server_params": "Scene/Login/LoginScene_BfSdk.js:598",
-      "token": "Scene/Login/LoginScene_BfSdk.js:598",
-      "user_auth": "Scene/Login/LoginScene_BfSdk.js:598",
-      "server_list": "Scene/Login/LoginScene_BfSdk.js:598",
-      "server_logined_list": "Scene/Login/LoginScene_BfSdk.js:598",
-      "server_list.length": "Scene/Login/LoginScene_BfSdk.js:598"
+      "server_list": "Scene/Login/LoginScene_BfSdk.js:613",
+      "server_logined_list": "Scene/Login/LoginScene_BfSdk.js:613",
+      "server_list.length": "Scene/Login/LoginScene_BfSdk.js:613",
+      "account_info.account_uid": "Scene/Login/LoginScene_BfSdk.js:613",
+      "server_params": "Scene/Login/LoginScene_BfSdk.js:613",
+      "token": "Scene/Login/LoginScene_BfSdk.js:613",
+      "user_auth": "Scene/Login/LoginScene_BfSdk.js:613"
      },
      "model_hops": [],
      "delegates_to": [
@@ -9901,7 +9903,7 @@
     },
     {
      "file": "Scene/Login/LoginScene_BfSdk.js",
-     "line": 619,
+     "line": 634,
      "function": "onBfSdkLoginSucess",
      "net_function": "requestGetServerList",
      "arg_role": "request-object",
@@ -9915,29 +9917,29 @@
       "sessionId"
      ],
      "request_field_evidence": {
-      "uid": "Scene/Login/LoginScene_BfSdk.js:619",
-      "logintype": "Scene/Login/LoginScene_BfSdk.js:619",
-      "app_indentify": "Scene/Login/LoginScene_BfSdk.js:619",
-      "extra": "Scene/Login/LoginScene_BfSdk.js:619",
-      "sessionId": "Scene/Login/LoginScene_BfSdk.js:619"
+      "uid": "Scene/Login/LoginScene_BfSdk.js:634",
+      "logintype": "Scene/Login/LoginScene_BfSdk.js:634",
+      "app_indentify": "Scene/Login/LoginScene_BfSdk.js:634",
+      "extra": "Scene/Login/LoginScene_BfSdk.js:634",
+      "sessionId": "Scene/Login/LoginScene_BfSdk.js:634"
      },
      "handler": "this.onResponse_GetServerList",
      "handler_evidence": "this.onResponse_GetServerList (defined in Scene/Login/LoginScene_BfSdk.js)",
      "response_fields": [
-      "account_info.account_uid",
-      "server_params",
-      "token",
       "server_list",
       "server_logined_list",
-      "server_list.length"
+      "server_list.length",
+      "account_info.account_uid",
+      "server_params",
+      "token"
      ],
      "response_field_evidence": {
-      "account_info.account_uid": "Scene/Login/LoginScene_BfSdk.js:619",
-      "server_params": "Scene/Login/LoginScene_BfSdk.js:619",
-      "token": "Scene/Login/LoginScene_BfSdk.js:619",
-      "server_list": "Scene/Login/LoginScene_BfSdk.js:619",
-      "server_logined_list": "Scene/Login/LoginScene_BfSdk.js:619",
-      "server_list.length": "Scene/Login/LoginScene_BfSdk.js:619"
+      "server_list": "Scene/Login/LoginScene_BfSdk.js:634",
+      "server_logined_list": "Scene/Login/LoginScene_BfSdk.js:634",
+      "server_list.length": "Scene/Login/LoginScene_BfSdk.js:634",
+      "account_info.account_uid": "Scene/Login/LoginScene_BfSdk.js:634",
+      "server_params": "Scene/Login/LoginScene_BfSdk.js:634",
+      "token": "Scene/Login/LoginScene_BfSdk.js:634"
      },
      "model_hops": [],
      "delegates_to": [
@@ -10100,18 +10102,18 @@
      "handler": "this.onResponse_GetServerList_Visitor",
      "handler_evidence": "this.onResponse_GetServerList_Visitor (defined in Scene/Login/LoginScene_ThirdGuestSdk.js)",
      "response_fields": [
+      "server_list",
+      "server_logined_list",
       "account_info.account_uid",
       "server_params",
-      "token",
-      "server_list",
-      "server_logined_list"
+      "token"
      ],
      "response_field_evidence": {
+      "server_list": "Scene/Login/LoginScene_ThirdGuestSdk.js:385",
+      "server_logined_list": "Scene/Login/LoginScene_ThirdGuestSdk.js:385",
       "account_info.account_uid": "Scene/Login/LoginScene_ThirdGuestSdk.js:385",
       "server_params": "Scene/Login/LoginScene_ThirdGuestSdk.js:385",
-      "token": "Scene/Login/LoginScene_ThirdGuestSdk.js:385",
-      "server_list": "Scene/Login/LoginScene_ThirdGuestSdk.js:385",
-      "server_logined_list": "Scene/Login/LoginScene_ThirdGuestSdk.js:385"
+      "token": "Scene/Login/LoginScene_ThirdGuestSdk.js:385"
      },
      "model_hops": [],
      "delegates_to": [
@@ -10148,20 +10150,20 @@
      "handler": "this.onResponse_GetServerList",
      "handler_evidence": "this.onResponse_GetServerList (defined in Scene/Login/LoginScene_ThirdGuestSdk.js)",
      "response_fields": [
-      "account_info.account_uid",
-      "server_params",
-      "token",
       "server_list",
       "server_logined_list",
-      "server_list.length"
+      "server_list.length",
+      "account_info.account_uid",
+      "server_params",
+      "token"
      ],
      "response_field_evidence": {
-      "account_info.account_uid": "Scene/Login/LoginScene_ThirdGuestSdk.js:493",
-      "server_params": "Scene/Login/LoginScene_ThirdGuestSdk.js:493",
-      "token": "Scene/Login/LoginScene_ThirdGuestSdk.js:493",
       "server_list": "Scene/Login/LoginScene_ThirdGuestSdk.js:493",
       "server_logined_list": "Scene/Login/LoginScene_ThirdGuestSdk.js:493",
-      "server_list.length": "Scene/Login/LoginScene_ThirdGuestSdk.js:493"
+      "server_list.length": "Scene/Login/LoginScene_ThirdGuestSdk.js:493",
+      "account_info.account_uid": "Scene/Login/LoginScene_ThirdGuestSdk.js:493",
+      "server_params": "Scene/Login/LoginScene_ThirdGuestSdk.js:493",
+      "token": "Scene/Login/LoginScene_ThirdGuestSdk.js:493"
      },
      "model_hops": [],
      "delegates_to": [
@@ -10198,20 +10200,20 @@
      "handler": "this.onResponse_GetServerList",
      "handler_evidence": "this.onResponse_GetServerList (defined in Scene/Login/LoginScene_ThirdSdk.js)",
      "response_fields": [
-      "account_info.account_uid",
-      "server_params",
-      "token",
       "server_list",
       "server_logined_list",
-      "server_list.length"
+      "server_list.length",
+      "account_info.account_uid",
+      "server_params",
+      "token"
      ],
      "response_field_evidence": {
-      "account_info.account_uid": "Scene/Login/LoginScene_ThirdSdk.js:416",
-      "server_params": "Scene/Login/LoginScene_ThirdSdk.js:416",
-      "token": "Scene/Login/LoginScene_ThirdSdk.js:416",
       "server_list": "Scene/Login/LoginScene_ThirdSdk.js:416",
       "server_logined_list": "Scene/Login/LoginScene_ThirdSdk.js:416",
-      "server_list.length": "Scene/Login/LoginScene_ThirdSdk.js:416"
+      "server_list.length": "Scene/Login/LoginScene_ThirdSdk.js:416",
+      "account_info.account_uid": "Scene/Login/LoginScene_ThirdSdk.js:416",
+      "server_params": "Scene/Login/LoginScene_ThirdSdk.js:416",
+      "token": "Scene/Login/LoginScene_ThirdSdk.js:416"
      },
      "model_hops": [],
      "delegates_to": [
@@ -10231,17 +10233,17 @@
     "logintype": "Scene/Login/LoginScene_AnySdk.js:440",
     "app_indentify": "Scene/Login/LoginScene_AnySdk.js:440",
     "extra": "Scene/Login/LoginScene_AnySdk.js:440",
-    "sessionId": "Scene/Login/LoginScene_AnySdk.js:701",
+    "sessionId": "Scene/Login/LoginScene_AnySdk.js:710",
     "session": "Scene/Login/LoginScene_EasyGuestSdk.js:391"
    },
    "response_fields": {
-    "account_info.account_uid": "Scene/Login/LoginScene_AnySdk.js:440",
-    "server_params": "Scene/Login/LoginScene_AnySdk.js:440",
-    "token": "Scene/Login/LoginScene_AnySdk.js:440",
     "server_list": "Scene/Login/LoginScene_AnySdk.js:440",
     "server_logined_list": "Scene/Login/LoginScene_AnySdk.js:440",
     "server_list.length": "Scene/Login/LoginScene_AnySdk.js:440",
-    "user_auth": "Scene/Login/LoginScene_BfSdk.js:573"
+    "account_info.account_uid": "Scene/Login/LoginScene_AnySdk.js:440",
+    "server_params": "Scene/Login/LoginScene_AnySdk.js:440",
+    "token": "Scene/Login/LoginScene_AnySdk.js:440",
+    "user_auth": "Scene/Login/LoginScene_BfSdk.js:588"
    },
    "model_hops": [],
    "error_codes": [],
@@ -10440,7 +10442,7 @@
     },
     {
      "file": "Views/Dialog/SpecificDialog.js",
-     "line": 633,
+     "line": 634,
      "function": "createChallengeNotEnough",
      "net_function": "requestQuickBuy",
      "arg_role": "request-object",
@@ -10454,14 +10456,14 @@
       "disCountPrice"
      ],
      "request_field_evidence": {
-      "item_id": "Views/Dialog/SpecificDialog.js:633",
-      "item_num": "Views/Dialog/SpecificDialog.js:633",
-      "extra_param": "Views/Dialog/SpecificDialog.js:633",
-      "currency_type": "Views/Dialog/SpecificDialog.js:633",
-      "disCountPrice": "Views/Dialog/SpecificDialog.js:633"
+      "item_id": "Views/Dialog/SpecificDialog.js:634",
+      "item_num": "Views/Dialog/SpecificDialog.js:634",
+      "extra_param": "Views/Dialog/SpecificDialog.js:634",
+      "currency_type": "Views/Dialog/SpecificDialog.js:634",
+      "disCountPrice": "Views/Dialog/SpecificDialog.js:634"
      },
      "handler": "inline",
-     "handler_evidence": "Views/Dialog/SpecificDialog.js:633",
+     "handler_evidence": "Views/Dialog/SpecificDialog.js:634",
      "response_fields": [],
      "response_field_evidence": {},
      "model_hops": [],
@@ -12329,16 +12331,16 @@
      "handler": "inline",
      "handler_evidence": "Views/Union/UnionDonationLayer.js:201",
      "response_fields": [
-      "union_info",
-      "donate_records",
       "result",
-      "return_info"
+      "return_info",
+      "union_info",
+      "donate_records"
      ],
      "response_field_evidence": {
-      "union_info": "Views/Union/UnionDonationLayer.js:201",
-      "donate_records": "Views/Union/UnionDonationLayer.js:201",
       "result": "Views/Union/UnionDonationLayer.js:201",
-      "return_info": "Views/Union/UnionDonationLayer.js:201"
+      "return_info": "Views/Union/UnionDonationLayer.js:201",
+      "union_info": "Views/Union/UnionDonationLayer.js:201",
+      "donate_records": "Views/Union/UnionDonationLayer.js:201"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -12351,10 +12353,10 @@
     "union_id": "Views/Union/UnionDonationLayer.js:201"
    },
    "response_fields": {
-    "union_info": "Views/Union/UnionDonationLayer.js:201",
-    "donate_records": "Views/Union/UnionDonationLayer.js:201",
     "result": "Views/Union/UnionDonationLayer.js:201",
-    "return_info": "Views/Union/UnionDonationLayer.js:201"
+    "return_info": "Views/Union/UnionDonationLayer.js:201",
+    "union_info": "Views/Union/UnionDonationLayer.js:201",
+    "donate_records": "Views/Union/UnionDonationLayer.js:201"
    },
    "model_hops": [],
    "error_codes": [],
@@ -12596,7 +12598,7 @@
    "call_sites": [
     {
      "file": "Views/Table/Cell/TaskCell.js",
-     "line": 241,
+     "line": 239,
      "function": "requestTaskRecieve",
      "net_function": "requestTaskRecieve",
      "arg_role": "request-object",
@@ -12608,21 +12610,21 @@
       "forcepush"
      ],
      "request_field_evidence": {
-      "user_id": "Views/Table/Cell/TaskCell.js:241",
-      "task_pk_id": "Views/Table/Cell/TaskCell.js:241",
-      "forcepush": "Views/Table/Cell/TaskCell.js:241"
+      "user_id": "Views/Table/Cell/TaskCell.js:239",
+      "task_pk_id": "Views/Table/Cell/TaskCell.js:239",
+      "forcepush": "Views/Table/Cell/TaskCell.js:239"
      },
      "handler": "inline",
-     "handler_evidence": "Views/Table/Cell/TaskCell.js:241",
+     "handler_evidence": "Views/Table/Cell/TaskCell.js:239",
      "response_fields": [
       "result",
       "list",
       "task_list"
      ],
      "response_field_evidence": {
-      "result": "Views/Table/Cell/TaskCell.js:241",
-      "list": "Views/Table/Cell/TaskCell.js:241",
-      "task_list": "Views/Table/Cell/TaskCell.js:241"
+      "result": "Views/Table/Cell/TaskCell.js:239",
+      "list": "Views/Table/Cell/TaskCell.js:239",
+      "task_list": "Views/Table/Cell/TaskCell.js:239"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -12631,14 +12633,14 @@
     }
    ],
    "request_fields": {
-    "user_id": "Views/Table/Cell/TaskCell.js:241",
-    "task_pk_id": "Views/Table/Cell/TaskCell.js:241",
-    "forcepush": "Views/Table/Cell/TaskCell.js:241"
+    "user_id": "Views/Table/Cell/TaskCell.js:239",
+    "task_pk_id": "Views/Table/Cell/TaskCell.js:239",
+    "forcepush": "Views/Table/Cell/TaskCell.js:239"
    },
    "response_fields": {
-    "result": "Views/Table/Cell/TaskCell.js:241",
-    "list": "Views/Table/Cell/TaskCell.js:241",
-    "task_list": "Views/Table/Cell/TaskCell.js:241"
+    "result": "Views/Table/Cell/TaskCell.js:239",
+    "list": "Views/Table/Cell/TaskCell.js:239",
+    "task_list": "Views/Table/Cell/TaskCell.js:239"
    },
    "model_hops": [],
    "error_codes": [],
@@ -15488,12 +15490,12 @@
      "handler": "inline",
      "handler_evidence": "Views/DecisiveBattle/DecisiveBattleMainView.js:266",
      "response_fields": [
-      "info",
-      "time"
+      "time",
+      "info"
      ],
      "response_field_evidence": {
-      "info": "Views/DecisiveBattle/DecisiveBattleMainView.js:266",
-      "time": "Views/DecisiveBattle/DecisiveBattleMainView.js:266"
+      "time": "Views/DecisiveBattle/DecisiveBattleMainView.js:266",
+      "info": "Views/DecisiveBattle/DecisiveBattleMainView.js:266"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -15563,8 +15565,8 @@
     "user_id": "Views/DecisiveBattle/DecisiveBattleMainView.js:266"
    },
    "response_fields": {
-    "info": "Views/DecisiveBattle/DecisiveBattleMainView.js:266",
-    "time": "Views/DecisiveBattle/DecisiveBattleMainView.js:266"
+    "time": "Views/DecisiveBattle/DecisiveBattleMainView.js:266",
+    "info": "Views/DecisiveBattle/DecisiveBattleMainView.js:266"
    },
    "model_hops": [],
    "error_codes": [],
@@ -15610,12 +15612,12 @@
      "handler": "inline",
      "handler_evidence": "Views/DecisiveBattle/DecisiveBattleMainView.js:266",
      "response_fields": [
-      "info",
-      "time"
+      "time",
+      "info"
      ],
      "response_field_evidence": {
-      "info": "Views/DecisiveBattle/DecisiveBattleMainView.js:266",
-      "time": "Views/DecisiveBattle/DecisiveBattleMainView.js:266"
+      "time": "Views/DecisiveBattle/DecisiveBattleMainView.js:266",
+      "info": "Views/DecisiveBattle/DecisiveBattleMainView.js:266"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -15685,8 +15687,8 @@
     "user_id": "Views/DecisiveBattle/DecisiveBattleMainView.js:266"
    },
    "response_fields": {
-    "info": "Views/DecisiveBattle/DecisiveBattleMainView.js:266",
-    "time": "Views/DecisiveBattle/DecisiveBattleMainView.js:266"
+    "time": "Views/DecisiveBattle/DecisiveBattleMainView.js:266",
+    "info": "Views/DecisiveBattle/DecisiveBattleMainView.js:266"
    },
    "model_hops": [],
    "error_codes": [],
@@ -17589,7 +17591,7 @@
     },
     {
      "file": "Views/HulaoBattle/HulaoBattleMainView.js",
-     "line": 179,
+     "line": 213,
      "function": "getHulaoBattleReward",
      "net_function": "requestHulaoMain",
      "arg_role": "request-object",
@@ -17599,15 +17601,15 @@
       "user_id"
      ],
      "request_field_evidence": {
-      "user_id": "Views/HulaoBattle/HulaoBattleMainView.js:179"
+      "user_id": "Views/HulaoBattle/HulaoBattleMainView.js:213"
      },
      "handler": "inline",
-     "handler_evidence": "Views/HulaoBattle/HulaoBattleMainView.js:179",
+     "handler_evidence": "Views/HulaoBattle/HulaoBattleMainView.js:213",
      "response_fields": [
       "return_info"
      ],
      "response_field_evidence": {
-      "return_info": "Views/HulaoBattle/HulaoBattleMainView.js:179"
+      "return_info": "Views/HulaoBattle/HulaoBattleMainView.js:213"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -17677,7 +17679,7 @@
    "call_sites": [
     {
      "file": "Views/HulaoBattle/HulaoBattleMainView.js",
-     "line": 171,
+     "line": 205,
      "function": "getHulaoBattleReward",
      "net_function": "requestHulaoRecieve",
      "arg_role": "request-object",
@@ -17689,19 +17691,19 @@
       "mode"
      ],
      "request_field_evidence": {
-      "user_id": "Views/HulaoBattle/HulaoBattleMainView.js:171",
-      "stage": "Views/HulaoBattle/HulaoBattleMainView.js:171",
-      "mode": "Views/HulaoBattle/HulaoBattleMainView.js:171"
+      "user_id": "Views/HulaoBattle/HulaoBattleMainView.js:205",
+      "stage": "Views/HulaoBattle/HulaoBattleMainView.js:205",
+      "mode": "Views/HulaoBattle/HulaoBattleMainView.js:205"
      },
      "handler": "inline",
-     "handler_evidence": "Views/HulaoBattle/HulaoBattleMainView.js:171",
+     "handler_evidence": "Views/HulaoBattle/HulaoBattleMainView.js:205",
      "response_fields": [
       "add_list",
       "return_info"
      ],
      "response_field_evidence": {
-      "add_list": "Views/HulaoBattle/HulaoBattleMainView.js:171",
-      "return_info": "Views/HulaoBattle/HulaoBattleMainView.js:171"
+      "add_list": "Views/HulaoBattle/HulaoBattleMainView.js:205",
+      "return_info": "Views/HulaoBattle/HulaoBattleMainView.js:205"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -17710,13 +17712,13 @@
     }
    ],
    "request_fields": {
-    "user_id": "Views/HulaoBattle/HulaoBattleMainView.js:171",
-    "stage": "Views/HulaoBattle/HulaoBattleMainView.js:171",
-    "mode": "Views/HulaoBattle/HulaoBattleMainView.js:171"
+    "user_id": "Views/HulaoBattle/HulaoBattleMainView.js:205",
+    "stage": "Views/HulaoBattle/HulaoBattleMainView.js:205",
+    "mode": "Views/HulaoBattle/HulaoBattleMainView.js:205"
    },
    "response_fields": {
-    "add_list": "Views/HulaoBattle/HulaoBattleMainView.js:171",
-    "return_info": "Views/HulaoBattle/HulaoBattleMainView.js:171"
+    "add_list": "Views/HulaoBattle/HulaoBattleMainView.js:205",
+    "return_info": "Views/HulaoBattle/HulaoBattleMainView.js:205"
    },
    "model_hops": [],
    "error_codes": [],
@@ -17747,7 +17749,7 @@
    "call_sites": [
     {
      "file": "Views/HulaoBattle/HulaoBattleMainView.js",
-     "line": 100,
+     "line": 134,
      "function": "goToGarrisonLayoutDialog",
      "net_function": "requestHuLaoBattleLineUp",
      "arg_role": "request-object",
@@ -17759,12 +17761,12 @@
       "mode"
      ],
      "request_field_evidence": {
-      "user_id": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-      "stage": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-      "mode": "Views/HulaoBattle/HulaoBattleMainView.js:100"
+      "user_id": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+      "stage": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+      "mode": "Views/HulaoBattle/HulaoBattleMainView.js:134"
      },
      "handler": "inline",
-     "handler_evidence": "Views/HulaoBattle/HulaoBattleMainView.js:100",
+     "handler_evidence": "Views/HulaoBattle/HulaoBattleMainView.js:134",
      "response_fields": [
       "return_info",
       "return_info.left_info",
@@ -17773,11 +17775,11 @@
       "return_info.left_info.consume_fortune"
      ],
      "response_field_evidence": {
-      "return_info": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-      "return_info.left_info": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-      "return_info.left_info.general_list": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-      "return_info.left_info.total_fortune": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-      "return_info.left_info.consume_fortune": "Views/HulaoBattle/HulaoBattleMainView.js:100"
+      "return_info": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+      "return_info.left_info": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+      "return_info.left_info.general_list": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+      "return_info.left_info.total_fortune": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+      "return_info.left_info.consume_fortune": "Views/HulaoBattle/HulaoBattleMainView.js:134"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -17825,16 +17827,16 @@
     }
    ],
    "request_fields": {
-    "user_id": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-    "stage": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-    "mode": "Views/HulaoBattle/HulaoBattleMainView.js:100"
+    "user_id": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+    "stage": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+    "mode": "Views/HulaoBattle/HulaoBattleMainView.js:134"
    },
    "response_fields": {
-    "return_info": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-    "return_info.left_info": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-    "return_info.left_info.general_list": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-    "return_info.left_info.total_fortune": "Views/HulaoBattle/HulaoBattleMainView.js:100",
-    "return_info.left_info.consume_fortune": "Views/HulaoBattle/HulaoBattleMainView.js:100"
+    "return_info": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+    "return_info.left_info": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+    "return_info.left_info.general_list": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+    "return_info.left_info.total_fortune": "Views/HulaoBattle/HulaoBattleMainView.js:134",
+    "return_info.left_info.consume_fortune": "Views/HulaoBattle/HulaoBattleMainView.js:134"
    },
    "model_hops": [],
    "error_codes": [],
@@ -18735,7 +18737,7 @@
    "call_sites": [
     {
      "file": "Views/Dialog/AutoPracticeDialog.js",
-     "line": 424,
+     "line": 423,
      "function": "_requestAutoPractice",
      "net_function": "requestAutoPractice",
      "arg_role": "request-object",
@@ -18751,21 +18753,21 @@
       "cultivate_rule"
      ],
      "request_field_evidence": {
-      "user_id": "Views/Dialog/AutoPracticeDialog.js:424",
-      "user_general_id": "Views/Dialog/AutoPracticeDialog.js:424",
-      "is_gain": "Views/Dialog/AutoPracticeDialog.js:424",
-      "is_multi": "Views/Dialog/AutoPracticeDialog.js:424",
-      "cultivate_num": "Views/Dialog/AutoPracticeDialog.js:424",
-      "is_need_talent": "Views/Dialog/AutoPracticeDialog.js:424",
-      "cultivate_rule": "Views/Dialog/AutoPracticeDialog.js:424"
+      "user_id": "Views/Dialog/AutoPracticeDialog.js:423",
+      "user_general_id": "Views/Dialog/AutoPracticeDialog.js:423",
+      "is_gain": "Views/Dialog/AutoPracticeDialog.js:423",
+      "is_multi": "Views/Dialog/AutoPracticeDialog.js:423",
+      "cultivate_num": "Views/Dialog/AutoPracticeDialog.js:423",
+      "is_need_talent": "Views/Dialog/AutoPracticeDialog.js:423",
+      "cultivate_rule": "Views/Dialog/AutoPracticeDialog.js:423"
      },
      "handler": "inline",
-     "handler_evidence": "Views/Dialog/AutoPracticeDialog.js:424",
+     "handler_evidence": "Views/Dialog/AutoPracticeDialog.js:423",
      "response_fields": [
       "attr_info"
      ],
      "response_field_evidence": {
-      "attr_info": "Views/Dialog/AutoPracticeDialog.js:424"
+      "attr_info": "Views/Dialog/AutoPracticeDialog.js:423"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -18774,16 +18776,16 @@
     }
    ],
    "request_fields": {
-    "user_id": "Views/Dialog/AutoPracticeDialog.js:424",
-    "user_general_id": "Views/Dialog/AutoPracticeDialog.js:424",
-    "is_gain": "Views/Dialog/AutoPracticeDialog.js:424",
-    "is_multi": "Views/Dialog/AutoPracticeDialog.js:424",
-    "cultivate_num": "Views/Dialog/AutoPracticeDialog.js:424",
-    "is_need_talent": "Views/Dialog/AutoPracticeDialog.js:424",
-    "cultivate_rule": "Views/Dialog/AutoPracticeDialog.js:424"
+    "user_id": "Views/Dialog/AutoPracticeDialog.js:423",
+    "user_general_id": "Views/Dialog/AutoPracticeDialog.js:423",
+    "is_gain": "Views/Dialog/AutoPracticeDialog.js:423",
+    "is_multi": "Views/Dialog/AutoPracticeDialog.js:423",
+    "cultivate_num": "Views/Dialog/AutoPracticeDialog.js:423",
+    "is_need_talent": "Views/Dialog/AutoPracticeDialog.js:423",
+    "cultivate_rule": "Views/Dialog/AutoPracticeDialog.js:423"
    },
    "response_fields": {
-    "attr_info": "Views/Dialog/AutoPracticeDialog.js:424"
+    "attr_info": "Views/Dialog/AutoPracticeDialog.js:423"
    },
    "model_hops": [],
    "error_codes": [],
@@ -20083,7 +20085,7 @@
    "call_sites": [
     {
      "file": "Views/Table/Cell/RankTableViewCell.js",
-     "line": 187,
+     "line": 189,
      "function": "updateCell",
      "net_function": "requestLikeRank",
      "arg_role": "request-object",
@@ -20095,9 +20097,9 @@
       "type"
      ],
      "request_field_evidence": {
-      "rank": "Views/Table/Cell/RankTableViewCell.js:181",
-      "like_user_id": "Views/Table/Cell/RankTableViewCell.js:183",
-      "type": "Views/Table/Cell/RankTableViewCell.js:185"
+      "rank": "Views/Table/Cell/RankTableViewCell.js:183",
+      "like_user_id": "Views/Table/Cell/RankTableViewCell.js:185",
+      "type": "Views/Table/Cell/RankTableViewCell.js:187"
      },
      "handler": "this.onResponse",
      "handler_evidence": "this.onResponse (defined in Views/Table/Cell/RankTableViewCell.js)",
@@ -20105,7 +20107,7 @@
       "gold_num"
      ],
      "response_field_evidence": {
-      "gold_num": "Views/Table/Cell/RankTableViewCell.js:187"
+      "gold_num": "Views/Table/Cell/RankTableViewCell.js:189"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -20114,12 +20116,12 @@
     }
    ],
    "request_fields": {
-    "rank": "Views/Table/Cell/RankTableViewCell.js:181",
-    "like_user_id": "Views/Table/Cell/RankTableViewCell.js:183",
-    "type": "Views/Table/Cell/RankTableViewCell.js:185"
+    "rank": "Views/Table/Cell/RankTableViewCell.js:183",
+    "like_user_id": "Views/Table/Cell/RankTableViewCell.js:185",
+    "type": "Views/Table/Cell/RankTableViewCell.js:187"
    },
    "response_fields": {
-    "gold_num": "Views/Table/Cell/RankTableViewCell.js:187"
+    "gold_num": "Views/Table/Cell/RankTableViewCell.js:189"
    },
    "model_hops": [],
    "error_codes": [],
@@ -20647,7 +20649,7 @@
    "call_sites": [
     {
      "file": "Views/SkillRefining/SkillRefiningLayer.js",
-     "line": 619,
+     "line": 617,
      "function": "lianhuaCallback",
      "net_function": "requestSkillRefine",
      "arg_role": "request-object",
@@ -20658,16 +20660,16 @@
       "user_skill_id"
      ],
      "request_field_evidence": {
-      "user_id": "Views/SkillRefining/SkillRefiningLayer.js:619",
-      "user_skill_id": "Views/SkillRefining/SkillRefiningLayer.js:619"
+      "user_id": "Views/SkillRefining/SkillRefiningLayer.js:617",
+      "user_skill_id": "Views/SkillRefining/SkillRefiningLayer.js:617"
      },
      "handler": "inline",
-     "handler_evidence": "Views/SkillRefining/SkillRefiningLayer.js:619",
+     "handler_evidence": "Views/SkillRefining/SkillRefiningLayer.js:617",
      "response_fields": [
       "result"
      ],
      "response_field_evidence": {
-      "result": "Views/SkillRefining/SkillRefiningLayer.js:619"
+      "result": "Views/SkillRefining/SkillRefiningLayer.js:617"
      },
      "model_hops": [],
      "delegates_to": [],
@@ -20678,11 +20680,11 @@
     }
    ],
    "request_fields": {
-    "user_id": "Views/SkillRefining/SkillRefiningLayer.js:619",
-    "user_skill_id": "Views/SkillRefining/SkillRefiningLayer.js:619"
+    "user_id": "Views/SkillRefining/SkillRefiningLayer.js:617",
+    "user_skill_id": "Views/SkillRefining/SkillRefiningLayer.js:617"
    },
    "response_fields": {
-    "result": "Views/SkillRefining/SkillRefiningLayer.js:619"
+    "result": "Views/SkillRefining/SkillRefiningLayer.js:617"
    },
    "model_hops": [],
    "error_codes": [],
@@ -23339,9 +23341,9 @@
     "num": "ReconstructedJS/src_jsc/Models/Item.js:277 (loadJson)",
     "effect_time": "ReconstructedJS/src_jsc/Models/Item.js:277 (loadJson)",
     "tag_id": "ReconstructedJS/src_jsc/Models/Item.js:277 (loadJson)",
-    "grade": "ReconstructedJS/src_jsc/Models/Item.js:586 (createIcon)",
-    "name": "ReconstructedJS/src_jsc/Models/Item.js:586 (createIcon)",
-    "lv": "ReconstructedJS/src_jsc/Models/Item.js:586 (createIcon)"
+    "grade": "ReconstructedJS/src_jsc/Models/Item.js:590 (createIcon)",
+    "name": "ReconstructedJS/src_jsc/Models/Item.js:590 (createIcon)",
+    "lv": "ReconstructedJS/src_jsc/Models/Item.js:590 (createIcon)"
    },
    "getters": [
     "getItemNum",
@@ -25278,18 +25280,18 @@
     "createWithJson"
    ],
    "payload_fields": [
+    "length",
     "rank_list",
     "award_list",
     "is_inlist",
-    "status",
-    "length"
+    "status"
    ],
    "payload_field_evidence": {
+    "length": "ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)",
     "rank_list": "ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)",
     "award_list": "ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)",
     "is_inlist": "ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)",
-    "status": "ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)",
-    "length": "ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)"
+    "status": "ReconstructedJS/src_jsc/Models/WorshipEntry.js:21 (loadJson)"
    },
    "getters": [
     "getRankList",

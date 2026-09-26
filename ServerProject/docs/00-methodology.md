@@ -68,6 +68,11 @@ python3 tools/check_protocol_docs.py
 
 重建 JS 本身的重跑方式见 [../../README.md](../../README.md)。
 
+计数口径需区分：642 是扫描到的 `Tools/Net.js` 函数符号调用位置，包含
+`getInstance`、`addBaseParam` 等内部辅助方法；按 `do=` 动作归属的是 392 条记录，
+全局 / 本地决战共用调用位置会各记一次。按源文件、行号和外层函数去重后为
+374 个端点调用位置。请求 / 响应字段覆盖统计以 392 条归属记录为分母。
+
 ## 提取器做什么
 
 `tools/extract_protocol.py` 是一个纯静态、确定性的扫描器：

@@ -3,17 +3,17 @@
 //! 客户端的全部业务参数都放在查询串里（`?do=动作&data=JSON`），响应是 JSON，
 //! 所以中间件只做三件事：解析查询串、缓冲响应体读出 `result`、按级别打印。
 //!
-//! **脱敏是强制的**：`/auth/register` 与 `/auth/login` 的请求体里有明文密码，
-//! `account.index` 带会话令牌，游戏请求带 `token` / `user_auth`。
-//! 这些键在打印前一律替换成 `***`，`full` 级别也不例外。
+//! `full` 级别记录请求参数、请求体和响应体；`summary` 只记录状态摘要，
+//! `off` 不记录请求或响应内容。
 
 use crate::api::Shared;
 use crate::config::LogLevel;
 use axum::{
-    body::Body,
+    body::{Body, to_bytes},
     extract::{Request, State},
-    http::Response,
+    http::{Response, StatusCode},
     middleware::Next,
+    response::IntoResponse,
 };
 use http_body_util::BodyExt;
 use serde_json::Value;
@@ -23,60 +23,10 @@ use std::{
     time::{Instant, SystemTime, UNIX_EPOCH},
 };
 
-/// 口令字段。`show_credentials` 为真时这几个键**不脱敏**。
-const PASSWORD_KEYS: &[&str] = &["password", "passwd", "pwd"];
-
-/// 打印前必须替换成 `***` 的键（比较时忽略大小写）。
-///
-/// 覆盖三类：口令、会话凭据、可识别到人的信息。宁可多脱一点，
-/// 也不要把能直接拿去登录的东西写进日志文件。
-const SENSITIVE_KEYS: &[&str] = &[
-    "password",
-    "passwd",
-    "pwd",
-    "token",
-    "user_auth",
-    "session",
-    "sessionid",
-    "session_id",
-    "sessionkey",
-    "receipt_data",
-    "idcard",
-    "mobile",
-    "mobile_num",
-    "easy_uid",
-];
-
 /// 给每个请求编号，方便把请求行和响应行对上。
 static REQUEST_ID: AtomicU64 = AtomicU64::new(1);
-
-/// 递归把敏感键的值替换掉。
-///
-/// 会走进嵌套对象和数组，所以 `extra.sessionId` 这种嵌套位置也盖得到。
-/// `show_credentials` 只放行 `PASSWORD_KEYS`；会话令牌始终是 `***`。
-pub fn redact_with(value: &mut Value, show_credentials: bool) {
-    match value {
-        Value::Object(map) => {
-            for (key, item) in map.iter_mut() {
-                let lowered = key.to_ascii_lowercase();
-                if SENSITIVE_KEYS.contains(&lowered.as_str()) {
-                    if show_credentials && PASSWORD_KEYS.contains(&lowered.as_str()) {
-                        continue;
-                    }
-                    *item = Value::String("***".to_string());
-                } else {
-                    redact_with(item, show_credentials);
-                }
-            }
-        }
-        Value::Array(items) => {
-            for item in items.iter_mut() {
-                redact_with(item, show_credentials);
-            }
-        }
-        _ => {}
-    }
-}
+const MAX_LOGGED_BODY_BYTES: usize = 32 * 1024;
+const MAX_REQUEST_URI_BYTES: usize = 32 * 1024;
 
 /// 把 Unix 毫秒格式化成 `YYYY-MM-DDTHH:MM:SS.mmmZ`（UTC）。
 ///
@@ -110,14 +60,14 @@ fn now_millis() -> i64 {
         .unwrap_or(0)
 }
 
-/// 把 JSON 压成一行并截断，避免一条日志刷满屏幕。
-fn compact(value: &Value, limit: usize) -> String {
-    let text = value.to_string();
-    if text.chars().count() <= limit {
-        return text;
-    }
-    let head: String = text.chars().take(limit).collect();
-    format!("{head}…<截断>")
+/// 将完整响应体原样写入日志。
+fn full_response_line(id: u64, action: &str, status: u16, bytes: &[u8]) -> String {
+    let detail = String::from_utf8_lossy(bytes);
+    format!(
+        "[{}] #{id} <== response status={status} do={}\n{detail}",
+        format_utc(now_millis()),
+        if action.is_empty() { "-" } else { action }
+    )
 }
 
 /// 请求/响应日志中间件。
@@ -129,6 +79,14 @@ pub async fn log_requests(
     request: Request,
     next: Next,
 ) -> Response<Body> {
+    if request.uri().to_string().len() > MAX_REQUEST_URI_BYTES {
+        return (
+            StatusCode::URI_TOO_LONG,
+            crate::api::AsciiJson(crate::protocol::error("request_too_large", "请求地址过长")),
+        )
+            .into_response();
+    }
+
     let level = state.config.log.level;
     if level == LogLevel::Off {
         return next.run(request).await;
@@ -140,47 +98,47 @@ pub async fn log_requests(
     let uri = request.uri().clone();
 
     // 业务参数在查询串里：do=动作&data=<JSON>。
-    let query: HashMap<String, String> = uri
-        .query()
-        .map(|raw| {
-            url_decode_pairs(raw)
-        })
-        .unwrap_or_default();
+    let query: HashMap<String, String> = uri.query().map(url_decode_pairs).unwrap_or_default();
     let action = query.get("do").cloned().unwrap_or_default();
-    let request_data = query.get("data").and_then(|raw| {
-        serde_json::from_str::<Value>(raw).ok()
-    });
+    let request_data = query.get("data").cloned();
 
-    // 请求体只有 /auth/* 用得到，里面是明文口令，脱敏之后再考虑打印。
+    // 摘要日志不读取或缓冲请求体。完整日志只收有限大小，供日志与请求重放。
     let (parts, body) = request.into_parts();
-    let body_bytes = body
-        .collect()
-        .await
-        .map(|collected| collected.to_bytes())
-        .unwrap_or_default();
-    let request_body = serde_json::from_slice::<Value>(&body_bytes).ok();
-    let request = Request::from_parts(parts, Body::from(body_bytes));
+    let (body, request_body) = if level == LogLevel::Full {
+        let body_bytes = match to_bytes(body, MAX_LOGGED_BODY_BYTES).await {
+            Ok(bytes) => bytes,
+            Err(_) => {
+                return (
+                    StatusCode::PAYLOAD_TOO_LARGE,
+                    crate::api::AsciiJson(crate::protocol::error(
+                        "request_too_large",
+                        "请求内容过长",
+                    )),
+                )
+                    .into_response();
+            }
+        };
+        let logged_body = String::from_utf8_lossy(&body_bytes).into_owned();
+        (Body::from(body_bytes), Some(logged_body))
+    } else {
+        (body, None)
+    };
+    let request = Request::from_parts(parts, body);
 
-    // 开关打开时，账号服的请求体在任何级别都打出来——那正是这个开关的用途。
     let auth_route = uri.path().starts_with("/auth/");
-    let show_credentials = state.config.log.show_credentials;
-    if level == LogLevel::Full || (show_credentials && auth_route) {
+    if level == LogLevel::Full {
         let mut detail = String::new();
-        if let Some(mut data) = request_data.clone() {
-            redact_with(&mut data, show_credentials);
-            detail.push_str(&format!("\n    data {}", compact(&data, 2000)));
+        if let Some(data) = request_data.as_deref() {
+            detail.push_str(&format!("\n    data {data}"));
         }
-        if let Some(mut body) = request_body.clone() {
-            redact_with(&mut body, show_credentials);
-            detail.push_str(&format!("\n    body {}", compact(&body, 2000)));
+        if let Some(body) = request_body.as_deref() {
+            detail.push_str(&format!("\n    body {body}"));
         }
-        // 只打路径，绝不打原始查询串：data= 里含会话令牌，打出来就把
-        // 下面那行脱敏整个绕过了。参数走 data 那行（已脱敏）。
         println!(
             "[{}] #{id} --> {method} {}{}{}",
             format_utc(now_millis()),
             uri.path(),
-            match action.is_empty() {
+            match action.is_empty() || auth_route {
                 true => String::new(),
                 false => format!(" do={action}"),
             },
@@ -196,6 +154,12 @@ pub async fn log_requests(
         .map(|collected| collected.to_bytes())
         .unwrap_or_default();
     let parsed = serde_json::from_slice::<Value>(&bytes).ok();
+    if level == LogLevel::Full {
+        println!(
+            "{}",
+            full_response_line(id, &action, parts.status.as_u16(), &bytes)
+        );
+    }
 
     let status = parts.status.as_u16();
     let result = parsed
@@ -230,12 +194,6 @@ pub async fn log_requests(
     }
     if let Some(message) = message {
         line.push_str(&format!(" msg={message}"));
-    }
-    if level == LogLevel::Full
-        && let Some(mut value) = parsed
-    {
-        redact_with(&mut value, show_credentials);
-        line.push_str(&format!("\n    resp {}", compact(&value, 2000)));
     }
     println!("{line}");
 
@@ -292,44 +250,24 @@ fn percent_decode(input: &str) -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use serde_json::json;
 
-    /// 口令与会话凭据必须被替换，嵌套位置也要盖到。
+    /// `full` 响应详情原样记录，不截断。
     #[test]
-    fn redaction_masks_credentials_everywhere() {
-        let mut value = json!({
-            "account_uid": "1",
-            "token": "deadbeef",
-            "password": "hunter2",
-            "extra": {"sessionId": "cafe", "keep": "ok"},
-            "list": [{"user_auth": "x"}, {"pwd": "y"}]
-        });
-        redact_with(&mut value, false);
-        assert_eq!(value["account_uid"], "1");
-        assert_eq!(value["token"], "***");
-        assert_eq!(value["password"], "***");
-        assert_eq!(value["extra"]["sessionId"], "***");
-        assert_eq!(value["extra"]["keep"], "ok");
-        assert_eq!(value["list"][0]["user_auth"], "***");
-        assert_eq!(value["list"][1]["pwd"], "***");
-    }
+    fn full_response_details_are_raw_and_complete() {
+        let body =
+            br#"{"result":true,"user_auth":"tok-123","cmn":{"user_info":{"user_id":"7-1001"}}}"#;
+        let line = full_response_line(7, "user.login", 200, body);
+        assert!(line.contains("tok-123"));
+        assert!(line.contains("7-1001"));
+        assert!(line.contains("do=user.login"));
+        assert!(line.contains("status=200"));
 
-    /// 打开开关只放行口令；会话令牌仍然必须脱敏。
-    #[test]
-    fn credential_switch_only_exempts_passwords() {
-        let mut value = json!({
-            "username": "alice",
-            "password": "hunter2",
-            "token": "deadbeef",
-            "extra": {"sessionId": "cafe", "pwd": "s3cret"}
-        });
-        redact_with(&mut value, true);
-        assert_eq!(value["username"], "alice");
-        assert_eq!(value["password"], "hunter2");
-        assert_eq!(value["extra"]["pwd"], "s3cret");
-        // 会话凭据不受开关影响。
-        assert_eq!(value["token"], "***");
-        assert_eq!(value["extra"]["sessionId"], "***");
+        let large = serde_json::json!({"payload":"x".repeat(4000)});
+        let line = full_response_line(8, "user.login", 200, large.to_string().as_bytes());
+        assert!(line.len() > 4000);
+        assert!(line.ends_with('}'));
+        let line = full_response_line(9, "", 404, b"not found");
+        assert!(line.contains("not found"));
     }
 
     /// 时间格式化要能对上已知时刻。

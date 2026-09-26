@@ -157,6 +157,18 @@ pub fn account_for_session(db: &Connection, token: &str) -> Option<i64> {
     .flatten()
 }
 
+/// Revoke one raw session token. Only its digest is compared with stored data.
+pub fn logout(db: &Connection, token: &str) -> rusqlite::Result<bool> {
+    if token.len() != 64 || !token.bytes().all(|byte| byte.is_ascii_hexdigit()) {
+        return Ok(false);
+    }
+    let digest = Sha256::digest(token.as_bytes());
+    Ok(db.execute(
+        "DELETE FROM sessions WHERE token_hash = ?1",
+        [digest.as_slice()],
+    )? == 1)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -176,5 +188,20 @@ mod tests {
         let db = open(&path).unwrap();
         assert!(account_for_session(&db, &token).is_some());
         assert!(account_for_session(&db, "invalid").is_none());
+    }
+
+    #[test]
+    fn expired_and_revoked_sessions_stop_authenticating() {
+        let directory = tempfile::tempdir().unwrap();
+        let path = directory.path().join("accounts.sqlite3");
+        let mut db = open(&path).unwrap();
+        register(&mut db, "user_456", "passphrase-456").unwrap();
+        let expired = login(&mut db, "user_456", "passphrase-456", 0).unwrap();
+        assert!(account_for_session(&db, &expired).is_none());
+        let token = login(&mut db, "user_456", "passphrase-456", 3600).unwrap();
+        assert!(account_for_session(&db, &token).is_some());
+        assert!(logout(&db, &token).unwrap());
+        assert!(account_for_session(&db, &token).is_none());
+        assert!(!logout(&db, &token).unwrap());
     }
 }

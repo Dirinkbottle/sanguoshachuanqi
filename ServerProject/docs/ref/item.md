@@ -55,7 +55,7 @@
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
 | `Views/Table/Cell/AvoidWarTableViewCell.js:111` | `buyItemCallback` | `item_advanced_id`, `discount_price`, `item_num`, `currency_type` | `inline` |
-| `Views/Dialog/Dialog.js:191` | `init` | `item_advanced_id`, `discount_price`, `item_num`, `addNum`, `currency_type` | `inline` |
+| `Views/Dialog/Dialog.js:169` | `init` | `item_advanced_id`, `discount_price`, `item_num`, `addNum`, `currency_type` | `inline` |
 | `Scene/Ladder/LadderGiftView.js:150` | `onExchangeBtn` | `item_advanced_id`, `discount_price`, `item_num`, `currency_type`, `forcepush` | `inline` |
 | `Scene/Ladder/LadderGiftView_Honor.js:207` | `onExchangeBtn` | `item_advanced_id`, `discount_price`, `item_num`, `currency_type`, `forcepush` | `inline` |
 | `Tools/Net.js:42` | `BuyGood` | `item_advanced_id`, `discount_price`, `item_num`, `currency_type`, `forcepush` | `this.BuyGoodSuccessCallback` |
@@ -242,7 +242,7 @@
 | `Views/Dialog/SpecificDialog.js:378` | `init` | `item_id`, `item_num`, `currency_type`, `disCountPrice` | `inline` |
 | `Views/Dialog/SpecificDialog.js:443` | `init` | `item_id`, `item_num`, `currency_type`, `disCountPrice` | `inline` |
 | `Views/Dialog/SpecificDialog.js:496` | `init` | `item_id`, `item_num`, `currency_type`, `disCountPrice`, `extra_param` | `inline` |
-| `Views/Dialog/SpecificDialog.js:633` | `createChallengeNotEnough` | `item_id`, `item_num`, `extra_param`, `currency_type`, `disCountPrice` | `inline` |
+| `Views/Dialog/SpecificDialog.js:634` | `createChallengeNotEnough` | `item_id`, `item_num`, `extra_param`, `currency_type`, `disCountPrice` | `inline` |
 
 ### item.resolveItem
 

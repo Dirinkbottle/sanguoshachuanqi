@@ -51,15 +51,15 @@
 
 | 字段 | 证据 |
 |---|---|
-| `rank` | `Views/Table/Cell/RankTableViewCell.js:181` |
-| `like_user_id` | `Views/Table/Cell/RankTableViewCell.js:183` |
-| `type` | `Views/Table/Cell/RankTableViewCell.js:185` |
+| `rank` | `Views/Table/Cell/RankTableViewCell.js:183` |
+| `like_user_id` | `Views/Table/Cell/RankTableViewCell.js:185` |
+| `type` | `Views/Table/Cell/RankTableViewCell.js:187` |
 
 **响应字段**
 
 | 字段 | 证据 |
 |---|---|
-| `gold_num` | `Views/Table/Cell/RankTableViewCell.js:187` |
+| `gold_num` | `Views/Table/Cell/RankTableViewCell.js:189` |
 
 **URL 字面量出现位置**
 
@@ -71,4 +71,4 @@
 
 | 调用位置 | 所在函数 | 显式请求字段 | 响应处理 |
 |---|---|---|---|
-| `Views/Table/Cell/RankTableViewCell.js:187` | `updateCell` | `rank`, `like_user_id`, `type` | `this.onResponse` |
+| `Views/Table/Cell/RankTableViewCell.js:189` | `updateCell` | `rank`, `like_user_id`, `type` | `this.onResponse` |
