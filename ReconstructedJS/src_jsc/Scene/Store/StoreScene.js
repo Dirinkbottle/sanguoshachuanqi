@@ -11,6 +11,7 @@
 },
     init: function(params) {
     var visibleSize, visibleOrigin;
+    cc.log("SGSCQ_STORE_TRACE scene.init.begin");
     if (!this._super()) {
         // source line 18, bytecode pc 19
         return false;
@@ -31,24 +32,30 @@
     this.setContentSize(visibleSize);
     // source line 33, bytecode pc 160
     xs.Tools.UI.addBgByType(this, xs.Constant_BgType_Toast);
+    cc.log("SGSCQ_STORE_TRACE scene.bg.ready");
     // source line 36, bytecode pc 193
     (this.playerInfo = xs.Views.PlayerInfoBannerSimpleView.create());
     // source line 37, bytecode pc 232
     this.playerInfo.setAnchorPoint(cc.p(0, 1));
     // source line 38, bytecode pc 291
     xs.Utils.Node.attachNodes(this, this.playerInfo, { desc: "lt", sc: true });
+    cc.log("SGSCQ_STORE_TRACE scene.player.ready");
     // source line 41, bytecode pc 331
     this.playerInfo.setEffectMap(xs.Constant_NodeEffectEvent_Disappear, xs.Constant_NodeEffectType_MoveOut);
     // source line 45, bytecode pc 423
     (this.pageView = xs.Views.TablePage.create(cc.size((visibleSize.width - xs.Views.MainMenuView.Width), (visibleSize.height - 50))));
+    cc.log("SGSCQ_STORE_TRACE scene.pages.created");
     // source line 48, bytecode pc 463
     this.pageView.setEffectMap(xs.Constant_NodeEffectEvent_Disappear, xs.Constant_NodeEffectType_Hide);
     // source line 53, bytecode pc 543
     this.pageView.addPageWhitConstruct(xs.Factorys.String.create("1071010003"), xs.Views.ToastView, { listener: this });
+    cc.log("SGSCQ_STORE_TRACE scene.toast.page.ready");
     // source line 56, bytecode pc 643
     this.pageView.addPageWhitConstruct(xs.Factorys.String.create("1071010004"), xs.Views.StoreItemView, { listener: this, param: xs.Views.StoreItemViewType_Item });
+    cc.log("SGSCQ_STORE_TRACE scene.item.page.ready");
     // source line 59, bytecode pc 743
     this.pageView.addPageWhitConstruct(xs.Factorys.String.create("1071010005"), xs.Views.StoreItemView, { listener: this, param: xs.Views.StoreItemViewType_Gift });
+    cc.log("SGSCQ_STORE_TRACE scene.gift.page.ready");
     // source line 61, bytecode pc 802
     xs.Utils.Node.attachNodes(this, this.pageView, { desc: "lb", sc: true });
     // source line 63, bytecode pc 873
@@ -109,6 +116,7 @@
 });
     // source line 128, bytecode pc 1796
     this.setBaseTouchPriority(-1);
+    cc.log("SGSCQ_STORE_TRACE scene.init.done");
     // source line 130, bytecode pc 1798
     return true;
 },

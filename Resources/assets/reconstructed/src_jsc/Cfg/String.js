@@ -61,7 +61,7 @@ var mString;
     ActivityNotOpen: { format: "不在活动时间内" },
     Lianhua: { format: "炼化" },
     SelectSkill: { format: "技能选择" },
-    RefiningSkill_title: { format: "\\u70BC\\u5316$0\\u9636\\xB7$1" },
+    RefiningSkill_title: { format: "炼化$0阶·$1" },
     refine_jiacheng: { format: "炼化加成" },
     refine_uptext: { format: "技能炼化进阶一阶" },
     refine_xuqiu: { format: "炼化需求" },
@@ -78,6 +78,11 @@ var mString;
     str_specialtime: { format: "此功能暂时关闭，感谢您的支持与理解。" },
     test: { format: "" }
 });
-/* TODO_BYTECODE pc=1492 opcode=try reason=control_or_scope_semantics_not_structured */
-// source line 2485, bytecode pc 1513
-(xs.Cfg.String = mString);
+try {
+    // source line 2485, bytecode pc 1513
+    (xs.Cfg.String = mString);
+} catch (e) {
+    // source line 2489, bytecode pc 1549
+    (module.exports.String = mString);
+    /* TODO_BYTECODE pc=1550 opcode=leaveblock reason=control_or_scope_semantics_not_structured */
+}

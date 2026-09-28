@@ -141,9 +141,7 @@ pub fn map_info(
 /// 每 4 抽必出金（need_times=4），否则每 10 抽。`first_time_consume_gold` 由本地
 /// 酒馆状态记录首次金酒抽取，和原服 `first_gold_wine` 标记对应。
 pub fn wine_info(
-    gold_free_times: i64,
-    gold_free_end_time: i64,
-    first_time_consume_gold: i64,
+    wine: &crate::player::WineStatus,
     tutorial: &Tutorial,
     gamedata: &GameData,
 ) -> Value {
@@ -163,25 +161,29 @@ pub fn wine_info(
             })
         })
         .collect();
-    let need_times = if tutorial.gold_guarantee_phase <= 1 {
-        4
+    let interval = if wine.gold_guarantee_phase <= 1 {
+        4_i64
     } else {
-        10
+        10_i64
     };
+    let mut need_times = interval - ((wine.gold_wine_count + 1) % interval);
+    if need_times == interval {
+        need_times = 0;
+    }
     json!({
         "toast": [],
         "list": [],
-        "gold_info": {"free_end_time": gold_free_end_time, "free_times": gold_free_times, "price": 268},
+        "gold_info": {"free_end_time": wine.gold_free_end_time, "free_times": wine.gold_free_times, "price": 268},
         "gold_price": 268,
-        "silver_info": {"free_end_time": 0, "free_times": tutorial.silver_free_draws, "price": 100},
+        "silver_info": {"free_end_time": wine.silver_free_end_time, "free_times": wine.silver_free_times, "price": 100},
         "silver_price": 100,
-        "copper_info": {"free_end_time": 0, "free_times": tutorial.copper_free_draws, "price": 10},
+        "copper_info": {"free_end_time": wine.copper_free_end_time, "free_times": 1, "price": 10},
         "copper_price": 10,
         "need_times": need_times,
-        "first_time_consume_gold": first_time_consume_gold,
+        "first_time_consume_gold": wine.first_gold_consumed,
         "multi_price": 2680,
         "next_guarantee": need_times,
-        "guarantee_interval": need_times,
+        "guarantee_interval": interval,
         "show_general_list": show_general_list
     })
 }
@@ -216,7 +218,7 @@ pub fn login_response_with_auth(
         "cmn": {
             "user_info": user_info,
             "general_info": cmn_map(snapshot.generals.clone(), Vec::new()),
-            "general_soul_info": cmn_map(Vec::new(), Vec::new()),
+            "general_soul_info": cmn_map(snapshot.general_souls.clone(), Vec::new()),
             "skill_info": cmn_map(Vec::new(), Vec::new()),
             "equipment_info": cmn_map(snapshot.equipment.clone(), Vec::new()),
             "item_info": cmn_map(snapshot.items.clone(), Vec::new()),
@@ -246,9 +248,17 @@ pub fn login_response_with_auth(
         },
         "map_info": map_info(clears, None, user_level, gamedata),
         "wine_info": wine_info(
-            snapshot.wine_gold_free_times,
-            snapshot.wine_gold_free_end_time,
-            snapshot.wine_first_time_consume_gold,
+            &crate::player::WineStatus {
+                gold_free_times: snapshot.wine_gold_free_times,
+                gold_free_end_time: snapshot.wine_gold_free_end_time,
+                silver_free_times: snapshot.wine_silver_free_times,
+                silver_free_end_time: snapshot.wine_silver_free_end_time,
+                copper_free_end_time: snapshot.wine_copper_free_end_time,
+                first_gold_consumed: snapshot.wine_first_time_consume_gold,
+                first_silver_consumed: 0,
+                gold_wine_count: snapshot.wine_gold_count,
+                gold_guarantee_phase: snapshot.wine_gold_guarantee_phase,
+            },
             tutorial,
             gamedata
         )
@@ -270,6 +280,7 @@ mod tests {
     fn empty_snapshot() -> Snapshot {
         Snapshot {
             generals: Vec::new(),
+            general_souls: Vec::new(),
             items: Vec::new(),
             equipment: Vec::new(),
             team: Vec::new(),
@@ -277,6 +288,11 @@ mod tests {
             wine_gold_free_times: 1,
             wine_gold_free_end_time: 0,
             wine_first_time_consume_gold: 0,
+            wine_silver_free_times: 1,
+            wine_silver_free_end_time: 0,
+            wine_copper_free_end_time: 0,
+            wine_gold_count: 0,
+            wine_gold_guarantee_phase: 0,
         }
     }
 
@@ -388,7 +404,21 @@ mod tests {
         let gd = game_data();
         let mut tutorial = Tutorial::default();
         tutorial.gold_guarantee_phase = 2;
-        let wine = wine_info(1, 0, 0, &tutorial, &gd);
+        let wine = wine_info(
+            &crate::player::WineStatus {
+                gold_free_times: 1,
+                gold_free_end_time: 0,
+                silver_free_times: 1,
+                silver_free_end_time: 0,
+                copper_free_end_time: 0,
+                first_gold_consumed: 0,
+                first_silver_consumed: 0,
+                gold_wine_count: 0,
+                gold_guarantee_phase: 2,
+            },
+            &tutorial,
+            &gd,
+        );
         assert_eq!(wine["need_times"], 10);
         assert_eq!(wine["next_guarantee"], 10);
         assert_eq!(wine["guarantee_interval"], 10);

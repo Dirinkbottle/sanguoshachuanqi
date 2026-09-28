@@ -87,9 +87,6 @@
             (chatModel = xs.Models.Chat.createWithData(chat_msgArr[i]));
             // source line 89, bytecode pc 228
             switch (chatModel.channel) {
-                case 6:
-                /* TODO_BYTECODE pc=228 opcode=tableswitch reason=tableswitch_target_invalid */
-                break;
                 case 1:
                 case 4:
                 case 5:
@@ -108,6 +105,7 @@
                 // source line 102, bytecode pc 359
                 tmpDuijiuArray.push(chatModel);
                 break;
+                case 6:
                 default:
                 break;
             }

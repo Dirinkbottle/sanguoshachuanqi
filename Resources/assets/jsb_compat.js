@@ -10,8 +10,10 @@ var xs = (typeof xs !== "undefined" && xs) ? xs : {};
     var versionCode = "723";
     var resourceCode = "775";
     var projectCode = "50004";
-    var channelId = "120009";
-    var channelName = "Main";
+    // Keep legacy channel attribution empty; game identity and Android
+    // platform metadata are supplied independently.
+    var channelId = "";
+    var channelName = "";
 
     // Network endpoint for this local reconstruction. The original scenes and
     // request payloads still run; only their HTTP destination is changed.
@@ -55,6 +57,14 @@ var xs = (typeof xs !== "undefined" && xs) ? xs : {};
     }
 
     function invoke(className, methodName, params) {
+        if (className === "SpriteFrameCache") {
+            if (methodName === "retainSpriteFramesWithFile") {
+                return xs.retainSpriteFramesWithFile(params) ? "true" : "false";
+            }
+            if (methodName === "releaseSpriteFramesWithFile") {
+                return xs.releaseSpriteFramesWithFile(params) ? "true" : "false";
+            }
+        }
         if (className === "BfSdk" && (methodName === "login" || methodName === "regis")) {
             return accountRequest(methodName, params);
         }

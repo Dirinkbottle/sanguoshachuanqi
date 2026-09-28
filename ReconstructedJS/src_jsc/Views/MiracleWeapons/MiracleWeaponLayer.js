@@ -995,9 +995,6 @@
     (type = Number(data.type));
     // source line 897, bytecode pc 30
     switch (type) {
-        case 7:
-        /* TODO_BYTECODE pc=30 opcode=tableswitch reason=tableswitch_target_invalid */
-        break;
         case 5:
         // source line 900, bytecode pc 79
         this.createItemIcon(data, i);
@@ -1010,6 +1007,7 @@
         // source line 910, bytecode pc 131
         this.createEquipmentFragmentIcon(data, i);
         break;
+        case 7:
         default:
         // source line 914, bytecode pc 159
         xs.warn("this.switchCreateIcon tag error! ");

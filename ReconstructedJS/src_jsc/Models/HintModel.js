@@ -148,9 +148,14 @@
             if (!equipMent) {
                 // source line 136, bytecode pc 1451
                 (equipMents_enabled = xs.Profile.GameData.Mgr.getInstance().Equipments.getEquipEnabledEps(pos));
-                /* TODO_BYTECODE pc=1462 opcode=ifeq reason=conditional_target_outside_region */
-                // source line 138, bytecode pc 1486
-                (epHintInfo[i] = { equipEnable: true });
+                if ((equipMents_enabled.length > 0)) {
+                    // source line 138, bytecode pc 1486
+                    (epHintInfo[i] = { equipEnable: true });
+                } else {
+                    // source line 142, bytecode pc 1511
+                    (epHintInfo[i] = { equipEnable: false });
+                    break;
+                }
             } else {
                 // source line 142, bytecode pc 1511
                 (epHintInfo[i] = { equipEnable: false });

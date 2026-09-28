@@ -22,9 +22,8 @@ var debugObject;
 // source line 6, bytecode pc 95
 (textCommandProcessor["break"] = function(str) {
     var md, scripts, tmpScript, breakLine, off, n;
-    /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 7, bytecode pc 23
-    (md = str.match(undefined /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */));
+    (md = str.match(/^b(reak)?\s+([^:]+):(\d+)/));
     if (!md) {
         // source line 12, bytecode pc 65
         return { commandname: "break", success: false, stringResult: "command could not be parsed" }
@@ -72,9 +71,8 @@ var debugObject;
     var report, md;
     // source line 48, bytecode pc 8
     (report = "");
-    /* TODO_BYTECODE pc=20 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 50, bytecode pc 32
-    (md = str.match(undefined /* TODO_BYTECODE pc=20 opcode=regexp reason=regexp_object_literal_not_dumped */));
+    (md = str.match(/^info\s+(\S+)/));
     if (md) {
         // source line 52, bytecode pc 53
         (report = (report + "info - NYI"));
@@ -154,18 +152,21 @@ var debugObject;
     var md, devalReturn, stringreport, arguments;
     // source line 119, bytecode pc 10
     (arguments = arguments);
-    /* TODO_BYTECODE pc=28 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 121, bytecode pc 46
-    (md = str.match(undefined /* TODO_BYTECODE pc=28 opcode=regexp reason=regexp_object_literal_not_dumped */));
+    (md = str.match(/^deval\s+(.+)/));
     if (md[1]) {
-        /* TODO_BYTECODE pc=63 opcode=try reason=control_or_scope_semantics_not_structured */
-        // source line 124, bytecode pc 102
-        (devalReturn = eval(md[1]));
-        if (devalReturn) {
-            // source line 126, bytecode pc 152
-            (stringreport = debugObject(devalReturn, true));
-            // source line 129, bytecode pc 189
-            return { commandname: "deval", success: true, stringResult: stringreport }
+        try {
+            // source line 124, bytecode pc 102
+            (devalReturn = eval(md[1]));
+            if (devalReturn) {
+                // source line 126, bytecode pc 152
+                (stringreport = debugObject(devalReturn, true));
+                // source line 129, bytecode pc 189
+                return { commandname: "deval", success: true, stringResult: stringreport }
+            }
+        } catch (e) {
+            // source line 134, bytecode pc 258
+            return { commandname: "deval", success: false, stringResult: ("exception:\n" + e.message) }
         }
     } else {
         // source line 139, bytecode pc 309
@@ -250,9 +251,8 @@ var debugObject;
 // source line 219, bytecode pc 255
 (textCommandProcessor.uiresponse = function(str) {
     var subcommandstring, response;
-    /* TODO_BYTECODE pc=33 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 220, bytecode pc 51
-    (subcommandstring = str.substring("uiresponse".length).replace(undefined /* TODO_BYTECODE pc=33 opcode=regexp reason=regexp_object_literal_not_dumped */, ""));
+    (subcommandstring = str.substring("uiresponse".length).replace(/\s+/g, ""));
     // source line 221, bytecode pc 60
     (response = "");
     // source line 222, bytecode pc 64
@@ -285,9 +285,8 @@ var debugObject;
 // source line 248, bytecode pc 287
 (textCommandProcessor.getCommandProcessor = function(str) {
     var md;
-    /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 250, bytecode pc 23
-    (md = str.match(undefined /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */));
+    (md = str.match(/[a-z]*/));
     if (!md) {
         // source line 252, bytecode pc 34
         return null;
@@ -603,9 +602,8 @@ var debugObject;
         // source line 498, bytecode pc 35
         return void 0;
     }
-    /* TODO_BYTECODE pc=47 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 502, bytecode pc 65
-    (inputstr = inputstr.replace(undefined /* TODO_BYTECODE pc=47 opcode=regexp reason=regexp_object_literal_not_dumped */, ""));
+    (inputstr = inputstr.replace(/\r+/, ""));
     // source line 505, bytecode pc 89
     (commands_array = inputstr.split("\n"));
     // source line 516, bytecode pc 94

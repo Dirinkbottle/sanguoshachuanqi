@@ -39,9 +39,6 @@
     (this.message = jsonData.message);
     // source line 30, bytecode pc 81
     switch (this.channel) {
-        case 6:
-        /* TODO_BYTECODE pc=81 opcode=tableswitch reason=tableswitch_target_invalid */
-        break;
         case 1:
         // source line 32, bytecode pc 160
         (this.channelName = xs.Tools.String.createString("auto_name_12"));
@@ -66,6 +63,7 @@
         // source line 47, bytecode pc 380
         (this.channelName = xs.Tools.String.createString("titleStr_duiJiu"));
         break;
+        case 6:
         default:
         // source line 50, bytecode pc 424
         (this.channelName = xs.Tools.String.createString("auto_name_14"));

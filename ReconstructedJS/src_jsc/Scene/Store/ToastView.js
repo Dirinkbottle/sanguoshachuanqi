@@ -12,6 +12,7 @@
 },
     init: function() {
     var disappearTimeLabelBg;
+    cc.log("SGSCQ_STORE_TRACE toast.init.begin");
     // source line 16, bytecode pc 12
     this._super();
     // source line 18, bytecode pc 36
@@ -36,6 +37,7 @@
     this.disappearTimeLabel.addChild(disappearTimeLabelBg, -1);
     // source line 44, bytecode pc 550
     (this.generalShowNode = xs.Views.GeneralCardShow.create(xs.Profile.GameData.Mgr.getInstance().ToastInfo.getToastInfo().getShowGenerals()));
+    cc.log("SGSCQ_STORE_TRACE toast.cards.ready");
     // source line 45, bytecode pc 570
     this.generalShowNode.setListener(this);
     // source line 46, bytecode pc 655
@@ -48,6 +50,7 @@
     }
     // source line 62, bytecode pc 745
     this.updateDesk();
+    cc.log("SGSCQ_STORE_TRACE toast.desk.ready");
     // source line 65, bytecode pc 753
     (this.m_bToastByPay = false);
     // source line 67, bytecode pc 755

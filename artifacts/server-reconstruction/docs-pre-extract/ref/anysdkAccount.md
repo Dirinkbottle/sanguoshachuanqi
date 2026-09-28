@@ -1,0 +1,34 @@
+# 协议参考：AnySDK 账号（anysdkAccount.*）
+
+第三方 SDK 的 OAuth 取服地址，内联拼接
+
+> 本页由 `tools/build_protocol_docs.py` 从 `protocol-inventory.json` 生成，后者由 `tools/extract_protocol.py` 从 `ReconstructedJS/src_jsc` 静态提取。
+> 每一行字段都带 `文件:行号` 证据；没有证据的内容不会出现在这里。原版运营服务器已停服，**不存在任何原服抓包**，本页不包含原服报文。
+
+
+本域共 **1** 个动作。
+
+| 动作 | 路径 | 封装 | 调用点 |
+|---|---|---|---|
+| [`anysdkAccount.index`](#anysdkAccountindex) | `(内联拼接，不含固定前缀)` | `—` | 0 |
+
+### anysdkAccount.index
+
+| 项 | 值 | 证据 |
+|---|---|---|
+| 相对路径 | `(内联拼接，不含固定前缀)` | `AnySdk/AnySdkHelp_js.js:23` |
+| 请求构造 | 不在 `Cfg/Url.js`，由代码内联拼接完整 URL | `AnySdk/AnySdkHelp_js.js:23` |
+| 客户端封装 | 无独立封装 | — |
+
+**请求字段**：没有调用点，无法从调用方确定。
+
+**响应字段**：没有调用点，无法从调用方确定。
+
+**URL 字面量出现位置**
+
+| 位置 | 所在函数 |
+|---|---|
+| `AnySdk/AnySdkHelp_js.js:23` | `loadAllPlugin` |
+| `AnySdk/AnySdkHelp_js.js:32` | `loadAllPlugin` |
+
+**调用点**：该动作没有独立的请求封装，URL 在代码里就地拼接；调用点即上面的字面量位置。

@@ -571,24 +571,33 @@
     }
     // source line 680, bytecode pc 136
     (_dlg = null);
-    /* TODO_BYTECODE pc=137 opcode=try reason=control_or_scope_semantics_not_structured */
-    if (_cfg["class"].load) {
-        // source line 685, bytecode pc 175
-        _cfg["class"].load();
+    try {
+        if (_cfg["class"].load) {
+            // source line 685, bytecode pc 175
+            _cfg["class"].load();
+        }
+        // source line 687, bytecode pc 192
+        (_createFunc = _cfg["class"].create);
+        if (_createFunc) {
+            // source line 689, bytecode pc 226
+            (_dlg = _createFunc.apply(_dlg, args));
+        } else {
+            // source line 692, bytecode pc 248
+            (_dlg = new _cfg["class"]());
+            // source line 693, bytecode pc 276
+            _dlg.init.apply(_dlg, args);
+        }
+        // source line 697, bytecode pc 298
+        (_dlg.callfunc_unload = _cfg["class"].unload);
+    } catch (e) {
+        // source line 701, bytecode pc 339
+        xs.Debug.warnException(e);
+        // source line 702, bytecode pc 352
+        this.hideDialog();
+        // source line 703, bytecode pc 365
+        this.hideRandEventDialog();
+        /* TODO_BYTECODE pc=366 opcode=leaveblock reason=control_or_scope_semantics_not_structured */
     }
-    // source line 687, bytecode pc 192
-    (_createFunc = _cfg["class"].create);
-    if (_createFunc) {
-        // source line 689, bytecode pc 226
-        (_dlg = _createFunc.apply(_dlg, args));
-    } else {
-        // source line 692, bytecode pc 248
-        (_dlg = new _cfg["class"]());
-        // source line 693, bytecode pc 276
-        _dlg.init.apply(_dlg, args);
-    }
-    // source line 697, bytecode pc 298
-    (_dlg.callfunc_unload = _cfg["class"].unload);
     if (xs.Utils.isEmpty(_dlg)) {
         // source line 708, bytecode pc 406
         return null;

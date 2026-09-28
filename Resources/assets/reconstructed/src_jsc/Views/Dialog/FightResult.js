@@ -341,23 +341,24 @@
         this.m_rounds.setString((this.infoModel.getRounds() + ""));
         // source line 312, bytecode pc 4118
         this.m_dropCoin.setString((this.infoModel.getDropCoin() + ""));
-        /* TODO_BYTECODE pc=4125 opcode=ifeq reason=conditional_target_outside_region */
-        // source line 315, bytecode pc 4142
-        this.hideDropIcon();
-        // source line 316, bytecode pc 4163
-        (dropItems = this.infoModel.getDropItems());
-        // source line 317, bytecode pc 4168
-        (i = 0);
+        if (this.sucess) {
+            // source line 315, bytecode pc 4142
+            this.hideDropIcon();
+            // source line 316, bytecode pc 4163
+            (dropItems = this.infoModel.getDropItems());
+            // source line 317, bytecode pc 4168
+            (i = 0);
+            while ((i < dropItems.length)) {
+                // source line 319, bytecode pc 4264
+                (icon = xs.Utils.replaceIcon_direct(this.ccbNode.getChildByTag(this.cfg.ccbCfg_win.Booty_tag), this.m_drop[i], dropItems[i].createIcon_GradeAndNumAndName()));
+                // source line 320, bytecode pc 4281
+                icon.setVisible(true);
+                // source line 317, bytecode pc 4296
+                i++;
+            }
+        }
         break;
     }
-    do {
-        // source line 319, bytecode pc 4264
-        (icon = xs.Utils.replaceIcon_direct(this.ccbNode.getChildByTag(this.cfg.ccbCfg_win.Booty_tag), this.m_drop[i], dropItems[i].createIcon_GradeAndNumAndName()));
-        // source line 320, bytecode pc 4281
-        icon.setVisible(true);
-        // source line 317, bytecode pc 4296
-        i++;
-    } while ((i < dropItems.length));
     if (!this.sucess) {
         if (((this.infoModel.getFightType() === xs.Constant_FightType_Climb) || (this.infoModel.getFightType() === xs.Constant_FightType_UnionWar))) {
             // source line 329, bytecode pc 4411
@@ -408,7 +409,6 @@
     }
     // source line 412, bytecode pc 4658
     return true;
-    /* TODO_BYTECODE pc=end reason=unconsumed_operand_stack */
 },
     onEnterTransitionDidFinish: function() {
     // source line 416, bytecode pc 12

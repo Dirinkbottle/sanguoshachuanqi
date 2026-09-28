@@ -1,0 +1,116 @@
+Recorded: 2026-09-26
+Commit: 3cc74ae5dbaad086a6fe35c6a20a08d70a8981fd
+
+Initial git status --short --untracked-files=all:
+ M ClientProject/Classes/Native/sgscq_custom_jsb.cpp
+ M ClientProject/proj.android/build-apk.sh
+ M ClientProject/proj.android/jni/Android.mk
+ M ClientProject/tools/verify_client_apk.py
+ M ReconstructedJS/data_cn_jsc/plan/sgs_generals.js
+ M ReconstructedJS/data_cn_jsc/plan/sgs_i18n.js
+ M ReconstructedJS/manual_review_modules.csv
+ M ReconstructedJS/reconstruction_summary.json
+ M ReconstructedJS/src_jsc/Cfg/String.js
+ M ReconstructedJS/src_jsc/Cfg/String.recovery.json
+ M ReconstructedJS/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js
+ M ReconstructedJS/src_jsc/Core/Cocos2d-x/jsb_cocos2d.recovery.json
+ M ReconstructedJS/src_jsc/Core/Cocos2d-x/jsb_debugger.js
+ M ReconstructedJS/src_jsc/Core/Cocos2d-x/jsb_debugger.recovery.json
+ M ReconstructedJS/src_jsc/Models/Chat.js
+ M ReconstructedJS/src_jsc/Models/Chat.recovery.json
+ M ReconstructedJS/src_jsc/Models/ChatMessageManager.js
+ M ReconstructedJS/src_jsc/Models/ChatMessageManager.recovery.json
+ M ReconstructedJS/src_jsc/Models/HintModel.js
+ M ReconstructedJS/src_jsc/Models/HintModel.recovery.json
+ M ReconstructedJS/src_jsc/Models/Item.js
+ M ReconstructedJS/src_jsc/Models/Item.recovery.json
+ M ReconstructedJS/src_jsc/Prototype/String.js
+ M ReconstructedJS/src_jsc/Prototype/String.recovery.json
+ M ReconstructedJS/src_jsc/Scene/Beauty/BeautyScene.js
+ M ReconstructedJS/src_jsc/Scene/Beauty/BeautyScene.recovery.json
+ M ReconstructedJS/src_jsc/Scene/Copy/CopyScene.js
+ M ReconstructedJS/src_jsc/Scene/Copy/CopyScene.recovery.json
+ M ReconstructedJS/src_jsc/Scene/Copy/DuanWuCopyScene.js
+ M ReconstructedJS/src_jsc/Scene/Copy/DuanWuCopyScene.recovery.json
+ M ReconstructedJS/src_jsc/Scene/Copy/LabourlCopyScene.js
+ M ReconstructedJS/src_jsc/Scene/Copy/LabourlCopyScene.recovery.json
+ M ReconstructedJS/src_jsc/Scene/Copy/MemorialCopyScene.js
+ M ReconstructedJS/src_jsc/Scene/Copy/MemorialCopyScene.recovery.json
+ M ReconstructedJS/src_jsc/Scene/Copy/PlantCopyScene.js
+ M ReconstructedJS/src_jsc/Scene/Copy/PlantCopyScene.recovery.json
+ M ReconstructedJS/src_jsc/Scene/Copy/PublicCopyScene.js
+ M ReconstructedJS/src_jsc/Scene/Copy/PublicCopyScene.recovery.json
+ M ReconstructedJS/src_jsc/Scene/SubMenu/GeneralMenuScene.js
+ M ReconstructedJS/src_jsc/Scene/SubMenu/GeneralMenuScene.recovery.json
+ M ReconstructedJS/src_jsc/Tools/UI.js
+ M ReconstructedJS/src_jsc/Tools/UI.recovery.json
+ M ReconstructedJS/src_jsc/Utils/Base64.js
+ M ReconstructedJS/src_jsc/Utils/Base64.recovery.json
+ M ReconstructedJS/src_jsc/Utils/Md5.js
+ M ReconstructedJS/src_jsc/Utils/Md5.recovery.json
+ M ReconstructedJS/src_jsc/Views/Awake/AwakeLayer.js
+ M ReconstructedJS/src_jsc/Views/Awake/AwakeLayer.recovery.json
+ M ReconstructedJS/src_jsc/Views/Dialog/FightResult.js
+ M ReconstructedJS/src_jsc/Views/Dialog/FightResult.recovery.json
+ M ReconstructedJS/src_jsc/Views/HulaoBattle/HulaoBattleMainView.js
+ M ReconstructedJS/src_jsc/Views/HulaoBattle/HulaoBattleMainView.recovery.json
+ M ReconstructedJS/src_jsc/Views/Mgr.js
+ M ReconstructedJS/src_jsc/Views/Mgr.recovery.json
+ M ReconstructedJS/src_jsc/Views/MiracleWeapons/MiracleWeaponLayer.js
+ M ReconstructedJS/src_jsc/Views/MiracleWeapons/MiracleWeaponLayer.recovery.json
+ M ReconstructedJS/src_jsc/Views/SkillRefining/SkillRefiningLayer.js
+ M ReconstructedJS/src_jsc/Views/SkillRefining/SkillRefiningLayer.recovery.json
+ M ReconstructedJS/validation_report.json
+ M Resources/assets/jsb_compat.js
+ M Resources/assets/reconstructed/data_cn_jsc/plan/sgs_generals.js
+ M Resources/assets/reconstructed/data_cn_jsc/plan/sgs_i18n.js
+ M Resources/assets/reconstructed/src_jsc/Cfg/String.js
+ M Resources/assets/reconstructed/src_jsc/Core/Cocos2d-x/jsb_cocos2d.js
+ M Resources/assets/reconstructed/src_jsc/Core/Cocos2d-x/jsb_cocos2d.recovery.json
+ M Resources/assets/reconstructed/src_jsc/Core/Cocos2d-x/jsb_debugger.js
+ M Resources/assets/reconstructed/src_jsc/Core/Cocos2d-x/jsb_debugger.recovery.json
+ M Resources/assets/reconstructed/src_jsc/Prototype/String.js
+ M Resources/assets/reconstructed/src_jsc/Prototype/String.recovery.json
+ M Resources/assets/reconstructed/src_jsc/Scene/Login/LoginScene_AnySdk.js
+ M Resources/assets/reconstructed/src_jsc/Scene/Login/LoginScene_BfSdk.js
+ M Resources/assets/reconstructed/src_jsc/Tools/UI.js
+ M Resources/assets/reconstructed/src_jsc/Tools/UI.recovery.json
+ M Resources/assets/reconstructed/src_jsc/Utils/Base64.js
+ M Resources/assets/reconstructed/src_jsc/Utils/Base64.recovery.json
+ M Resources/assets/reconstructed/src_jsc/Utils/Md5.js
+ M Resources/assets/reconstructed/src_jsc/Utils/Md5.recovery.json
+ M artifacts/blackscreen-investigation.md
+ m toolchain/SpiderMonkey-v22
+ m toolchain/cocos2d-x-2.2.6
+ m toolchain/cocos2d-x-3rd-party-libs-src-v2
+ M tools/reconstruct_js.py
+?? ClientProject/Classes/Native/SpriteFrameRetention.cpp
+?? ClientProject/Classes/Native/SpriteFrameRetention.h
+?? artifacts/native-extension-port-prompt.md
+?? artifacts/native-vendor-inventory.md
+?? artifacts/reconstructor-defects-round2-fix.md
+?? artifacts/reconstructor-semantic-scan.md
+?? docs/reconstruction/01-operand-order.md
+?? docs/reconstruction/02-postfix-incdec.md
+?? docs/reconstruction/03-unimplemented-opcodes.md
+?? docs/reconstruction/04-stack-effect-mismatch.md
+?? docs/reconstruction/05-verification.md
+?? docs/reconstruction/06-source-patches.md
+?? docs/reconstruction/07-runtime-overlays.md
+?? docs/reconstruction/README.md
+?? tools/check_regexp_literals.js
+
+Initial submodule status:
+-2624a987bf60543b34d31be70fab39b6cf7dcc49 toolchain/SpiderMonkey-v22
+-1fc007df0ed6f01ef458083504260d0752d19049 toolchain/cocos2d-x-2.2.6
+-782bf10c82993242caa167ea23fc6e0d600220f1 toolchain/cocos2d-x-3rd-party-libs-src-v2
+
+APK and shared-library SHA-256:
+6a1b3fade3833b00d5ff65673c7f71cc9e9b7626f987cb9fcfc511089d8438ac  reference-apks/sgscq-original-patched.apk
+6c8464c32fb8289d686007b5c7d01ae48a0bb4cd9de3623707352f5476ffa630  ClientProject/proj.android/libs/armeabi-v7a/libcocos2djs.so
+6c8464c32fb8289d686007b5c7d01ae48a0bb4cd9de3623707352f5476ffa630  ClientProject/proj.android/build/zip/lib/armeabi-v7a/libcocos2djs.so
+25fe43c8269098890f8dfc40c6f5b636ebc461f9a08a816b978f9b45e86d5646  ClientProject/proj.android/build/sgscq-rebuilt-aligned.apk
+95a2ef94088dd48f0dc142896eece1d99e2ee7d38989b63a215d46046482bcc9  ClientProject/proj.android/build/app-unsigned.apk
+8f3ef9d41b44ad87dcbdbbd92bf812f1332fffd27c85848c4e547badec7ddc8b  ClientProject/proj.android/sgscq-rebuilt.apk
+b1af00c175e3b999d2f5199135d1fb1ad60610f348523961a3016fc25475e347  ClientProject/proj.android/obj/local/armeabi-v7a/libcocos2djs.so
+37ad971c5cda4a69e2b175e7c50737edafffe448802fadbc9a6bc8d02c141c89  artifacts/native-port/work/oracle-libcocos2djs.so

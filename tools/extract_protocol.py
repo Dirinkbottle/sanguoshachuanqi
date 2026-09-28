@@ -959,6 +959,12 @@ def main():
             table["in_cmn"] = name in cmn_models
             models[name] = table
 
+    action_callsite_keys = {
+        (site["file"], site["line"], site["function"])
+        for rec in by_action.values()
+        for site in rec["call_sites"]
+    }
+    action_callsite_attributions = sum(len(rec["call_sites"]) for rec in by_action.values())
     out = {
         "generated_from": "ReconstructedJS/src_jsc (approximate bytecode reconstruction, not original source)",
         "provenance": {
@@ -982,7 +988,9 @@ def main():
         },
         "base_params": ["user_id", "time", "token", "user_auth", "step (guide milestones only)"],
         "counts": {"url_keys": len(url_keys), "actions": len(by_action), "net_functions": len(net_functions),
-                   "call_sites": sum(len(v) for v in sites.values()), "models": len(models)},
+                   "call_sites": sum(len(v) for v in sites.values()),
+                   "action_callsite_attributions": action_callsite_attributions,
+                   "unique_action_call_sites": len(action_callsite_keys), "models": len(models)},
         "actions": by_action,
         "cmn_envelope": {
             "data_descs": descs,
@@ -1000,12 +1008,14 @@ def main():
     dest = os.path.join(OUT_DIR, "protocol-inventory.json")
     with open(dest, "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
-    print("actions: %d  url keys: %d  net functions: %d  call sites: %d  models: %d"
+    print("actions: %d  url keys: %d  net functions: %d  Net symbol call sites: %d  models: %d"
           % (len(by_action), len(url_keys), len(net_functions), sum(len(v) for v in sites.values()), len(models)))
+    print("action attribution rows: %d ; unique action call locations: %d"
+          % (action_callsite_attributions, len(action_callsite_keys)))
     print("wrote", dest)
     nf = sum(1 for r in by_action.values() for c in r["call_sites"] if not c["request_fields"])
     nh = sum(1 for r in by_action.values() for c in r["call_sites"] if not c["response_fields"])
-    print("call sites with no request fields: %d ; with no response fields: %d ; total %d"
+    print("action attributions with no request fields: %d ; with no response fields: %d ; total %d"
           % (nf, nh, sum(len(r["call_sites"]) for r in by_action.values())))
 
 

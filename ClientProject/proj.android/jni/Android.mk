@@ -10,6 +10,7 @@ LOCAL_SRC_FILES := hellojavascript/main.cpp \
                    ../../Classes/AppDelegate.cpp \
                    ../../Classes/LogoScene.cpp \
                    ../../Classes/Native/BFButton.cpp \
+                   ../../Classes/Native/SpriteFrameRetention.cpp \
                    ../../Classes/Native/sgscq_custom_jsb.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes

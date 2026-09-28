@@ -22,8 +22,8 @@
     "12101701": { i18n_id: "12101701", i18n_sb: "庞统" },
     "11101801": { i18n_id: "11101801", i18n_sb: "徐晃" },
     "14100601": { i18n_id: "14100601", i18n_sb: "董卓" },
-    "13100201": { i18n_id: "13100201", i18n_sb: "\\u795E\\xB7\\u5415\\u8499" },
-    "18100201": { i18n_id: "18100201", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749" },
+    "13100201": { i18n_id: "13100201", i18n_sb: "神·吕蒙" },
+    "18100201": { i18n_id: "18100201", i18n_sb: "魔·貂蝉" },
     "17100501": { i18n_id: "17100501", i18n_sb: "射手黄忠" },
     "12201101": { i18n_id: "12201101", i18n_sb: "孟获" },
     "17101001": { i18n_id: "17101001", i18n_sb: "天使尚香" },
@@ -246,10 +246,7 @@
         i18n_sb: "【激昂】小霸王孙策独创霸业之心，可秒掉敌方脆皮，属攻击技能，主攻。行动时易触发，有几率连续对敌方单体造成攻击伤害，同时增加自身下一次造成的伤害。"
     },
     "10000102": { i18n_id: "10000102", i18n_sb: "【狂骨】魏延可在攻击的同时吸血，属攻击技能，主攻。行动时一般概率触发，可对敌方单体造成攻击伤害，同时吸收其血量。" },
-    "38100502": {
-        i18n_id: "38100502",
-        i18n_sb: "\\u3010\\u9B54\\u5D29\\u574F\\u3011\\u9B54\\xB7\\u8463\\u5353\\u901A\\u8FC7\\u9152\\u6C60\\u8089\\u6797\\u63D0\\u5347\\u5DF1\\u65B9\\u5BFF\\u547D\\uFF0C\\u5C5E\\u88AB\\u52A8\\u6280\\u80FD\\uFF0C\\u4E3B\\u8840\\u3002\\u88C5\\u5907\\u540E\\uFF0C\\u53EF\\u589E\\u52A0\\u5DF1\\u65B9\\u5168\\u4F53\\u8840\\u91CF\\u3002\\u9B54\\xB7\\u8463\\u5353\\u4F5C\\u4E3A\\u4F19\\u4F34\\u65F6\\u4E5F\\u80FD\\u89E6\\u53D1\\u6280\\u80FD\\u6548\\u679C\\u3002"
-    },
+    "38100502": { i18n_id: "38100502", i18n_sb: "【魔崩坏】魔·董卓通过酒池肉林提升己方寿命，属被动技能，主血。装备后，可增加己方全体血量。魔·董卓作为伙伴时也能触发技能效果。" },
     "32201102": { i18n_id: "32201102", i18n_sb: "【祸首】南蛮王孟获祸起南中的好战与自负，属被动技能，主攻和防。装备后，可提升自身的攻击与防御。" },
     "33101102": {
         i18n_id: "33101102",
@@ -506,7 +503,7 @@
     itemname9121018: { i18n_id: "itemname9121018", i18n_sb: "关银屏魂魄" },
     itemname9122020: { i18n_id: "itemname9122020", i18n_sb: "刘封魂魄" },
     itemname9123016: { i18n_id: "itemname9123016", i18n_sb: "伊籍魂魄" },
-    itemname9131001: { i18n_id: "itemname9131001", i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44" },
+    itemname9131001: { i18n_id: "itemname9131001", i18n_sb: "神·周瑜魂魄" },
     itemname9132012: { i18n_id: "itemname9132012", i18n_sb: "韩当魂魄" },
     itemname9133007: { i18n_id: "itemname9133007", i18n_sb: "全琮魂魄" },
     itemname9164049: { i18n_id: "itemname9164049", i18n_sb: "江东重水兵魂魄" },
@@ -574,14 +571,14 @@
     itemname112019: { i18n_id: "itemname112019", i18n_sb: "曹昂" },
     itemname113020: { i18n_id: "itemname113020", i18n_sb: "孟达" },
     itemname164036: { i18n_id: "itemname164036", i18n_sb: "青州长枪兵" },
-    itemname121014: { i18n_id: "itemname121014", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999" },
+    itemname121014: { i18n_id: "itemname121014", i18n_sb: "蜀·孙尚香" },
     itemname122016: { i18n_id: "itemname122016", i18n_sb: "夏侯氏" },
     itemname123014: { i18n_id: "itemname123014", i18n_sb: "孙乾" },
     itemname164015: { i18n_id: "itemname164015", i18n_sb: "巴蜀长枪兵" },
     itemname132012: { i18n_id: "itemname132012", i18n_sb: "韩当" },
     itemname133009: { i18n_id: "itemname133009", i18n_sb: "陆绩" },
     itemname164012: { i18n_id: "itemname164012", i18n_sb: "江东长弓兵" },
-    itemname141011: { i18n_id: "itemname141011", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC" },
+    itemname141011: { i18n_id: "itemname141011", i18n_sb: "群·蔡文姬" },
     itemname142021: { i18n_id: "itemname142021", i18n_sb: "田丰" },
     itemname164007: { i18n_id: "itemname164007", i18n_sb: "黄巾弩兵" },
     itemname164057: { i18n_id: "itemname164057", i18n_sb: "冀州骑兵" },
@@ -664,10 +661,7 @@
     itemname88121009: { i18n_id: "itemname88121009", i18n_sb: "黄忠道具（20级）" },
     itemname88122009: { i18n_id: "itemname88122009", i18n_sb: "关平道具（20级）" },
     itemname88131015: { i18n_id: "itemname88131015", i18n_sb: "周泰道具（20级）" },
-    itemname88141011: {
-        i18n_id: "itemname88141011",
-        i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u9053\\u5177\\uFF0820\\u7EA7\\uFF09"
-    },
+    itemname88141011: { i18n_id: "itemname88141011", i18n_sb: "群·蔡文姬道具（20级）" },
     itemname790308: { i18n_id: "itemname790308", i18n_sb: "20级曹丕礼包" },
     itemname790318: { i18n_id: "itemname790318", i18n_sb: "20级马超礼包" },
     itemname790328: { i18n_id: "itemname790328", i18n_sb: "20级关索礼包" },
@@ -680,7 +674,7 @@
     itemname87142002: { i18n_id: "itemname87142002", i18n_sb: "高顺道具（1级）" },
     itemname790359: { i18n_id: "itemname790359", i18n_sb: "1级典韦礼包" },
     itemname790369: { i18n_id: "itemname790369", i18n_sb: "1级张星彩礼包" },
-    itemname790379: { i18n_id: "itemname790379", i18n_sb: "1\\u7EA7\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u793C\\u5305" },
+    itemname790379: { i18n_id: "itemname790379", i18n_sb: "1级吴·孙尚香礼包" },
     itemname790389: { i18n_id: "itemname790389", i18n_sb: "1级吕布礼包" },
     itemname790399: { i18n_id: "itemname790399", i18n_sb: "1级李儒礼包" },
     itemname790409: { i18n_id: "itemname790409", i18n_sb: "崩坏礼包" },
@@ -694,10 +688,7 @@
     itemname6200013: { i18n_id: "itemname6200013", i18n_sb: "诸葛连弩宝箱(兵长陆逊缘分神级武器)" },
     itemname6200023: { i18n_id: "itemname6200023", i18n_sb: "白虎胄宝箱(张飞缘分神级防具)" },
     itemname6200033: { i18n_id: "itemname6200033", i18n_sb: "顺手牵羊宝箱(陆逊缘分神级锦囊)" },
-    itemname6200043: {
-        i18n_id: "itemname6200043",
-        i18n_sb: "\\u60CA\\u5E06\\u5B9D\\u7BB1(\\u795E\\xB7\\u5468\\u745C\\u7F18\\u5206\\u795E\\u7EA7\\u5750\\u9A91)"
-    },
+    itemname6200043: { i18n_id: "itemname6200043", i18n_sb: "惊帆宝箱(神·周瑜缘分神级坐骑)" },
     itemname6200053: { i18n_id: "itemname6200053", i18n_sb: "骅骝宝箱(张角缘分神级坐骑)" },
     itemname790420: { i18n_id: "itemname790420", i18n_sb: "500灵芝" },
     itemname791415: { i18n_id: "itemname791415", i18n_sb: "凌操魂魄礼包" },
@@ -726,10 +717,7 @@
     itemname791508: { i18n_id: "itemname791508", i18n_sb: "黑铁戟礼包" },
     itemname791518: { i18n_id: "itemname791518", i18n_sb: "灰影礼包" },
     itemname791528: { i18n_id: "itemname791528", i18n_sb: "水淹七军礼包" },
-    itemname791537: {
-        i18n_id: "itemname791537",
-        i18n_sb: "\\u8FFD\\u98CE\\u5B9D\\u7BB1\\uFF08\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u7F18\\u5206\\u91D1\\u5750\\u9A91\\uFF09"
-    },
+    itemname791537: { i18n_id: "itemname791537", i18n_sb: "追风宝箱（群·蔡文姬缘分金坐骑）" },
     itemname791547: { i18n_id: "itemname791547", i18n_sb: "沙里飞宝箱（张星彩缘分金坐骑）" },
     itemname6300007: { i18n_id: "itemname6300007", i18n_sb: "龙胆枪礼盒(马超缘分神级武器)" },
     itemname6300017: { i18n_id: "itemname6300017", i18n_sb: "无双铠礼盒(吕布缘分神级防具)" },
@@ -745,17 +733,14 @@
     itemname6300126: { i18n_id: "itemname6300126", i18n_sb: "绿沉枪礼盒(姜维缘分神级武器)" },
     itemname6300136: { i18n_id: "itemname6300136", i18n_sb: "飞景三剑礼盒（程昱缘分神武器）" },
     itemname6300146: { i18n_id: "itemname6300146", i18n_sb: "惊帆礼盒（步练师缘分神坐骑）" },
-    itemname6300156: {
-        i18n_id: "itemname6300156",
-        i18n_sb: "\\u8FDC\\u4EA4\\u8FD1\\u653B\\u793C\\u76D2\\uFF08\\u795E\\xB7\\u5415\\u8499\\u7F18\\u5206\\u795E\\u9526\\u56CA\\uFF09"
-    },
+    itemname6300156: { i18n_id: "itemname6300156", i18n_sb: "远交近攻礼盒（神·吕蒙缘分神锦囊）" },
     itemname791567: { i18n_id: "itemname791567", i18n_sb: "感恩节礼包" },
     itemname791577: { i18n_id: "itemname791577", i18n_sb: "燎原火" },
     itemname791587: { i18n_id: "itemname791587", i18n_sb: "关索礼包" },
     itemname791597: { i18n_id: "itemname791597", i18n_sb: "360礼包" },
     itemname791607: { i18n_id: "itemname791607", i18n_sb: "魔张飞补" },
     itemname791610: { i18n_id: "itemname791610", i18n_sb: "『灵芝』*500" },
-    itemname791620: { i18n_id: "itemname791620", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*2" },
+    itemname791620: { i18n_id: "itemname791620", i18n_sb: "魔·张飞魂魄*2" },
     itemname791630: { i18n_id: "itemname791630", i18n_sb: "论坛礼包G" },
     itemname791640: { i18n_id: "itemname791640", i18n_sb: "6月微信礼包档次一" },
     itemname6300084: { i18n_id: "itemname6300084", i18n_sb: "青龙铠礼盒（张辽缘分神级防具）" },
@@ -774,12 +759,12 @@
     itemname600076: { i18n_id: "itemname600076", i18n_sb: "打孔石" },
     itemname600086: { i18n_id: "itemname600086", i18n_sb: "9级宝石箱" },
     itemname791721: { i18n_id: "itemname791721", i18n_sb: "1000万银两" },
-    itemname791731: { i18n_id: "itemname791731", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*1" },
+    itemname791731: { i18n_id: "itemname791731", i18n_sb: "魔·黄盖魂魄*1" },
     itemname791739: { i18n_id: "itemname791739", i18n_sb: "勾玉*10、经验神书*10" },
     itemname791749: { i18n_id: "itemname791749", i18n_sb: "巅峰之战650积分礼包" },
-    itemname791759: { i18n_id: "itemname791759", i18n_sb: "\\u7075\\u829D\\xD7100" },
+    itemname791759: { i18n_id: "itemname791759", i18n_sb: "灵芝×100" },
     itemname791769: { i18n_id: "itemname791769", i18n_sb: "98元宝" },
-    itemname791779: { i18n_id: "itemname791779", i18n_sb: "\\u7075\\u829D\\xD7150" },
+    itemname791779: { i18n_id: "itemname791779", i18n_sb: "灵芝×150" },
     itemname11100005: { i18n_id: "itemname11100005", i18n_sb: "女神祝融" },
     itemname21100006: { i18n_id: "itemname21100006", i18n_sb: "女神春华皮肤" },
     itemname791786: { i18n_id: "itemname791786", i18n_sb: "女神甄姬礼包" },
@@ -791,18 +776,12 @@
     itemname791815: { i18n_id: "itemname791815", i18n_sb: "谢礼1(普通)" },
     itemname791825: { i18n_id: "itemname791825", i18n_sb: "谢礼4(困难)" },
     itemname600096: { i18n_id: "itemname600096", i18n_sb: "初级精炼石" },
-    itemname600104: { i18n_id: "itemname600104", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD71680" },
-    itemname7710001: {
-        i18n_id: "itemname7710001",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*1"
-    },
+    itemname600104: { i18n_id: "itemname600104", i18n_sb: "主公经验×1680" },
+    itemname7710001: { i18n_id: "itemname7710001", i18n_sb: "神秘商品之魔·张飞魂魄*1" },
     itemname7710011: { i18n_id: "itemname7710011", i18n_sb: "神秘商品之曹操魂魄*1" },
     itemname7710021: { i18n_id: "itemname7710021", i18n_sb: "神秘商品之华佗魂魄*1" },
     itemname7710031: { i18n_id: "itemname7710031", i18n_sb: "神秘商品之曹丕魂魄*1" },
-    itemname7710041: {
-        i18n_id: "itemname7710041",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*1"
-    },
+    itemname7710041: { i18n_id: "itemname7710041", i18n_sb: "神秘商品之蜀·孙尚香魂魄*1" },
     itemname7710051: { i18n_id: "itemname7710051", i18n_sb: "神秘商品之射手黄忠魂魄*1" },
     itemname7710061: { i18n_id: "itemname7710061", i18n_sb: "神秘商品之曹植魂魄*1" },
     itemname7710071: { i18n_id: "itemname7710071", i18n_sb: "神秘商品之7710071" },
@@ -850,10 +829,7 @@
     itemdesc710002: { i18n_id: "itemdesc710002", i18n_sb: "打开可获得：10把铜钥匙， 5万银子， 6块勾玉" },
     itemdesc710024: { i18n_id: "itemdesc710024", i18n_sb: "打开可获得:黑铁戟1个，三尖两刃刀1个，奔雷1个，西极1个" },
     itemdesc710032: { i18n_id: "itemdesc710032", i18n_sb: "打开可获得：10000灵芝" },
-    itemdesc710019: {
-        i18n_id: "itemdesc710019",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u9A85\\u9A9D\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
+    itemdesc710019: { i18n_id: "itemdesc710019", i18n_sb: "打开可获得：骅骝碎片×1，神装碎片礼盒×2，金装礼盒×3" },
     itemdesc730001: { i18n_id: "itemdesc730001", i18n_sb: "10元宝,1000银子" },
     itemdesc730011: { i18n_id: "itemdesc730011", i18n_sb: "10元宝,3000银子" },
     itemdesc730021: { i18n_id: "itemdesc730021", i18n_sb: "10元宝,5000银子" },
@@ -1015,125 +991,38 @@
     itemdesc164058: { i18n_id: "itemdesc164058", i18n_sb: "冀州长枪兵" },
     itemdesc164029: { i18n_id: "itemdesc164029", i18n_sb: "西凉重弩兵" },
     itemdesc131010: { i18n_id: "itemdesc131010", i18n_sb: "鲁肃" },
-    itemdesc79111004: {
-        i18n_id: "itemdesc79111004",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79112016: {
-        i18n_id: "itemdesc79112016",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD72"
-    },
-    itemdesc79113017: {
-        i18n_id: "itemdesc79113017",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u66F9\\u64CD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164014: {
-        i18n_id: "itemdesc79164014",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u91CD\\u6C34\\u5175\\xD71,\\u5434\\u516D\\u5251\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121010: {
-        i18n_id: "itemdesc79121010",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79122009: {
-        i18n_id: "itemdesc79122009",
-        i18n_sb: "\\u5175\\u7CAE\\u5BF8\\u65AD\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79123008: {
-        i18n_id: "itemdesc79123008",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5218\\u5907\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164005: {
-        i18n_id: "itemdesc79164005",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5DF4\\u8700\\u621F\\u5175\\xD71,\\u9752\\u9CDE\\u76D4\\u788E\\u7247\\xD71"
-    },
-    itemdesc79131009: {
-        i18n_id: "itemdesc79131009",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79132019: {
-        i18n_id: "itemdesc79132019",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u66F9\\u64CD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164044: {
-        i18n_id: "itemdesc79164044",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C5F\\u4E1C\\u957F\\u5F13\\u5175\\xD71,\\u767D\\u9B03\\u788E\\u7247\\xD71"
-    },
-    itemdesc79141007: {
-        i18n_id: "itemdesc79141007",
-        i18n_sb: "\\u5175\\u7CAE\\u5BF8\\u65AD\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79142017: {
-        i18n_id: "itemdesc79142017",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u9A6C\\u8D85\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79143016: {
-        i18n_id: "itemdesc79143016",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u8881\\u7ECD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164054: {
-        i18n_id: "itemdesc79164054",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C34\\u6DF9\\u4E03\\u519B\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164024: {
-        i18n_id: "itemdesc79164024",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u897F\\u51C9\\u5927\\u5200\\u5175\\xD71,\\u5434\\u516D\\u5251\\u788E\\u7247\\xD71"
-    },
-    itemdesc79143021: {
-        i18n_id: "itemdesc79143021",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5B59\\u6743\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79171002: {
-        i18n_id: "itemdesc79171002",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79192003: {
-        i18n_id: "itemdesc79192003",
-        i18n_sb: "\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7200"
-    },
-    itemdesc79171006: {
-        i18n_id: "itemdesc79171006",
-        i18n_sb: "\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79141010: { i18n_id: "itemdesc79141010", i18n_sb: "\\u5B8C\\u66B4\\xD71,\\u7075\\u829D\\xD71000" },
-    itemdesc79122011: {
-        i18n_id: "itemdesc79122011",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79111010: {
-        i18n_id: "itemdesc79111010",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
+    itemdesc79111004: { i18n_id: "itemdesc79111004", i18n_sb: "神·诸葛亮魂魄×3,灵芝×1000" },
+    itemdesc79112016: { i18n_id: "itemdesc79112016", i18n_sb: "元宝×60,木牛流马碎片×2" },
+    itemdesc79113017: { i18n_id: "itemdesc79113017", i18n_sb: "元宝×40,曹操魂魄×3" },
+    itemdesc79164014: { i18n_id: "itemdesc79164014", i18n_sb: "元宝×20,青州重水兵×1,吴六剑碎片×1" },
+    itemdesc79121010: { i18n_id: "itemdesc79121010", i18n_sb: "神·诸葛亮魂魄×2,灵芝×1000" },
+    itemdesc79122009: { i18n_id: "itemdesc79122009", i18n_sb: "兵粮寸断碎片×3,灵芝×500" },
+    itemdesc79123008: { i18n_id: "itemdesc79123008", i18n_sb: "元宝×40,刘备魂魄×3" },
+    itemdesc79164005: { i18n_id: "itemdesc79164005", i18n_sb: "元宝×20,巴蜀戟兵×1,青鳞盔碎片×1" },
+    itemdesc79131009: { i18n_id: "itemdesc79131009", i18n_sb: "神·周瑜魂魄×3,灵芝×1000" },
+    itemdesc79132019: { i18n_id: "itemdesc79132019", i18n_sb: "元宝×60,曹操魂魄×3" },
+    itemdesc79164044: { i18n_id: "itemdesc79164044", i18n_sb: "元宝×20,江东长弓兵×1,白鬃碎片×1" },
+    itemdesc79141007: { i18n_id: "itemdesc79141007", i18n_sb: "兵粮寸断碎片×3,灵芝×500" },
+    itemdesc79142017: { i18n_id: "itemdesc79142017", i18n_sb: "元宝×60,马超魂魄×4" },
+    itemdesc79143016: { i18n_id: "itemdesc79143016", i18n_sb: "元宝×40,袁绍魂魄×3" },
+    itemdesc79164054: { i18n_id: "itemdesc79164054", i18n_sb: "元宝×20,水淹七军碎片×1" },
+    itemdesc79164024: { i18n_id: "itemdesc79164024", i18n_sb: "元宝×20,西凉大刀兵×1,吴六剑碎片×1" },
+    itemdesc79143021: { i18n_id: "itemdesc79143021", i18n_sb: "元宝×40,孙权魂魄×3" },
+    itemdesc79171002: { i18n_id: "itemdesc79171002", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79192003: { i18n_id: "itemdesc79192003", i18n_sb: "木牛流马碎片×3,灵芝×200" },
+    itemdesc79171006: { i18n_id: "itemdesc79171006", i18n_sb: "爪黄飞电碎片×3,灵芝×1000" },
+    itemdesc79141010: { i18n_id: "itemdesc79141010", i18n_sb: "完暴×1,灵芝×1000" },
+    itemdesc79122011: { i18n_id: "itemdesc79122011", i18n_sb: "神·吕布魂魄×2,灵芝×1000" },
+    itemdesc79111010: { i18n_id: "itemdesc79111010", i18n_sb: "神·吕蒙魂魄×3,灵芝×1000" },
     itemdesc790215: { i18n_id: "itemdesc790215", i18n_sb: "有大量机会获得雌雄双股剑碎片以及其他稀有道具" },
-    itemdesc790228: {
-        i18n_id: "itemdesc790228",
-        i18n_sb: "\\u5185\\u542B\\u9752\\u9F99\\u5043\\u6708\\u5200\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790238: {
-        i18n_id: "itemdesc790238",
-        i18n_sb: "\\u5185\\u542B\\u5BD2\\u51B0\\u5251\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790248: {
-        i18n_id: "itemdesc790248",
-        i18n_sb: "\\u5185\\u542B\\u65E0\\u53CC\\u94E0\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790258: {
-        i18n_id: "itemdesc790258",
-        i18n_sb: "\\u5185\\u542B\\u9A85\\u9A9D\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790268: {
-        i18n_id: "itemdesc790268",
-        i18n_sb: "\\u5185\\u542B\\u51B3\\u6597\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790278: {
-        i18n_id: "itemdesc790278",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u7075\\u829D\\xD7200"
-    },
-    itemdesc790288: {
-        i18n_id: "itemdesc790288",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u94F6\\u4E24\\xD720000"
-    },
-    itemdesc790298: { i18n_id: "itemdesc790298", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7300" },
+    itemdesc790228: { i18n_id: "itemdesc790228", i18n_sb: "内含青龙偃月刀碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790238: { i18n_id: "itemdesc790238", i18n_sb: "内含寒冰剑碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790248: { i18n_id: "itemdesc790248", i18n_sb: "内含无双铠碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790258: { i18n_id: "itemdesc790258", i18n_sb: "内含骅骝碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790268: { i18n_id: "itemdesc790268", i18n_sb: "内含决斗碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790278: { i18n_id: "itemdesc790278", i18n_sb: "打开可获得：灵芝×200" },
+    itemdesc790288: { i18n_id: "itemdesc790288", i18n_sb: "打开可获得：银两×20000" },
+    itemdesc790298: { i18n_id: "itemdesc790298", i18n_sb: "内含灵芝×300" },
     itemdesc791008: { i18n_id: "itemdesc791008", i18n_sb: "首充双倍,续充另送元宝" },
     itemdesc791012: { i18n_id: "itemdesc791012", i18n_sb: "内含 20个铜宝箱 10个铜钥匙" },
     itemdesc791022: { i18n_id: "itemdesc791022", i18n_sb: "有大量机会获得倚天剑碎片以及其他稀有道具" },
@@ -1187,17 +1076,11 @@
     itemdesc790349: { i18n_id: "itemdesc790349", i18n_sb: "内含：20级高顺一个" },
     itemdesc87111016: { i18n_id: "itemdesc87111016", i18n_sb: "典韦道具（1级）" },
     itemdesc87121013: { i18n_id: "itemdesc87121013", i18n_sb: "张星彩道具（1级）" },
-    itemdesc87131006: {
-        i18n_id: "itemdesc87131006",
-        i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u9053\\u5177\\uFF081\\u7EA7\\uFF09"
-    },
+    itemdesc87131006: { i18n_id: "itemdesc87131006", i18n_sb: "吴·孙尚香道具（1级）" },
     itemdesc87141002: { i18n_id: "itemdesc87141002", i18n_sb: "吕布道具（1级）" },
     itemdesc87142007: { i18n_id: "itemdesc87142007", i18n_sb: "李儒道具（1级）" },
     itemdesc790360: { i18n_id: "itemdesc790360", i18n_sb: "内含：1级王异一个" },
-    itemdesc790370: {
-        i18n_id: "itemdesc790370",
-        i18n_sb: "\\u5185\\u542B\\uFF1A1\\u7EA7\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u4E00\\u4E2A"
-    },
+    itemdesc790370: { i18n_id: "itemdesc790370", i18n_sb: "内含：1级蜀·孙尚香一个" },
     itemdesc790380: { i18n_id: "itemdesc790380", i18n_sb: "内含：1级大乔一个" },
     itemdesc790390: { i18n_id: "itemdesc790390", i18n_sb: "内含：1级貂蝉一个" },
     itemdesc790400: { i18n_id: "itemdesc790400", i18n_sb: "内含：1级兵长陆逊一个" },
@@ -1218,40 +1101,16 @@
     itemdesc791416: { i18n_id: "itemdesc791416", i18n_sb: "于禁魂魄礼包" },
     itemdesc791426: { i18n_id: "itemdesc791426", i18n_sb: "至尊会员灵芝大礼包" },
     itemdesc791436: { i18n_id: "itemdesc791436", i18n_sb: "三国杀活动6" },
-    itemdesc790436: {
-        i18n_id: "itemdesc790436",
-        i18n_sb: "\\u5185\\u542B\\u6731\\u96C0\\u7FBD\\u6247\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790446: {
-        i18n_id: "itemdesc790446",
-        i18n_sb: "\\u5185\\u542B\\u767D\\u864E\\u80C4\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790456: {
-        i18n_id: "itemdesc790456",
-        i18n_sb: "\\u5185\\u542B\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790466: {
-        i18n_id: "itemdesc790466",
-        i18n_sb: "\\u5185\\u542B\\u987A\\u624B\\u7275\\u7F8A\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790476: {
-        i18n_id: "itemdesc790476",
-        i18n_sb: "\\u5185\\u542B\\u71CE\\u539F\\u706B\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
+    itemdesc790436: { i18n_id: "itemdesc790436", i18n_sb: "内含朱雀羽扇碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790446: { i18n_id: "itemdesc790446", i18n_sb: "内含白虎胄碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790456: { i18n_id: "itemdesc790456", i18n_sb: "内含爪黄飞电碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790466: { i18n_id: "itemdesc790466", i18n_sb: "内含顺手牵羊碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790476: { i18n_id: "itemdesc790476", i18n_sb: "内含燎原火碎片×1，神装碎片礼盒×2，金装礼盒×3" },
     itemdesc790479: { i18n_id: "itemdesc790479", i18n_sb: "内含：1级陈宫一个" },
-    itemdesc791444: {
-        i18n_id: "itemdesc791444",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A50\\u7075\\u829D  \\u5468\\u4ED3\\u9B42\\u9B44\\xD710"
-    },
-    itemdesc791454: {
-        i18n_id: "itemdesc791454",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5415\\u73B2\\u7EEE\\u9B42\\u9B44\\xD730"
-    },
+    itemdesc791444: { i18n_id: "itemdesc791444", i18n_sb: "打开可获得：50灵芝  周仓魂魄×10" },
+    itemdesc791454: { i18n_id: "itemdesc791454", i18n_sb: "打开可获得：吕玲绮魂魄×30" },
     itemdesc791462: { i18n_id: "itemdesc791462", i18n_sb: "10个灵芝" },
-    itemdesc791472: {
-        i18n_id: "itemdesc791472",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u71CE\\u539F\\u706B\\xD71"
-    },
+    itemdesc791472: { i18n_id: "itemdesc791472", i18n_sb: "打开可获得：燎原火×1" },
     itemdesc791482: { i18n_id: "itemdesc791482", i18n_sb: "包子*1 经验金书*1" },
     itemdesc40111009: { i18n_id: "itemdesc40111009", i18n_sb: "111009" },
     itemdesc40111007: { i18n_id: "itemdesc40111007", i18n_sb: "111007" },
@@ -1285,23 +1144,14 @@
     itemdesc791568: { i18n_id: "itemdesc791568", i18n_sb: "L1SR" },
     itemdesc791578: { i18n_id: "itemdesc791578", i18n_sb: "L1LA" },
     itemdesc791588: { i18n_id: "itemdesc791588", i18n_sb: "L1CJ" },
-    itemdesc791598: {
-        i18n_id: "itemdesc791598",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5143\\u5B9D\\xD7150\\uFF0C\\u94F6\\u4E24\\xD7200000\\uFF0C\\u91D1\\u7BB1\\xD720\\uFF0C\\u91D1\\u94A5\\xD720\\uFF0C\\u94F6\\u7BB1\\xD720\\uFF0C\\u94F6\\u94A5\\xD720\\uFF0C\\u94F6\\u6708\\u67AA\\u788E\\u7247\\xD73"
-    },
-    itemdesc9181003: { i18n_id: "itemdesc9181003", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44" },
+    itemdesc791598: { i18n_id: "itemdesc791598", i18n_sb: "打开可获得：元宝×150，银两×200000，金箱×20，金钥×20，银箱×20，银钥×20，银月枪碎片×3" },
+    itemdesc9181003: { i18n_id: "itemdesc9181003", i18n_sb: "魔·马超魂魄" },
     itemdesc791611: { i18n_id: "itemdesc791611", i18n_sb: "内含壕国神将兵长陆逊*1" },
     itemdesc791621: { i18n_id: "itemdesc791621", i18n_sb: "内含灵芝*50" },
     itemdesc791631: { i18n_id: "itemdesc791631", i18n_sb: "300元宝 200灵芝 2超级传承符" },
-    itemdesc791641: {
-        i18n_id: "itemdesc791641",
-        i18n_sb: "\\u91D1\\u7BB1\\xD710\\uFF0C\\u94F6\\u7BB1\\xD710\\uFF0C\\u94DC\\u7BB1\\xD710\\uFF0C\\u5587\\u53ED\\xD710\\uFF0C\\u5143\\u5B9D\\xD730"
-    },
+    itemdesc791641: { i18n_id: "itemdesc791641", i18n_sb: "金箱×10，银箱×10，铜箱×10，喇叭×10，元宝×30" },
     itemdesc6300085: { i18n_id: "itemdesc6300085", i18n_sb: "可以获得绝影碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
-    itemdesc791652: {
-        i18n_id: "itemdesc791652",
-        i18n_sb: "400\\u5143\\u5B9D\\u3001100\\u7075\\u829D\\u3001\\u5305\\u5B50\\xD72"
-    },
+    itemdesc791652: { i18n_id: "itemdesc791652", i18n_sb: "400元宝、100灵芝、包子×2" },
     itemdesc791662: { i18n_id: "itemdesc791662", i18n_sb: "内含许愿流星*2" },
     itemdesc791672: { i18n_id: "itemdesc791672", i18n_sb: "内含神级坐骑赤兔*1" },
     itemdesc191006: { i18n_id: "itemdesc191006", i18n_sb: "至尊小宝" },
@@ -1316,40 +1166,25 @@
     itemdesc600077: { i18n_id: "itemdesc600077", i18n_sb: "可以为装备改变宝石孔位属性" },
     itemdesc791712: { i18n_id: "itemdesc791712", i18n_sb: "膜拜赏赐，悬挂后，膜拜过您的人都可获得1个包子。" },
     itemdesc791722: { i18n_id: "itemdesc791722", i18n_sb: "打开可获得8个1级宝石箱" },
-    itemdesc791732: { i18n_id: "itemdesc791732", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*2" },
+    itemdesc791732: { i18n_id: "itemdesc791732", i18n_sb: "内含魔·黄盖魂魄*2" },
     itemdesc791740: { i18n_id: "itemdesc791740", i18n_sb: "内含神兵铸铁*10" },
-    itemdesc791750: {
-        i18n_id: "itemdesc791750",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5173\\u7FBD\\u9B42\\u9B44\\xD730\\u3001\\u7CBE\\u70BC\\u6750\\u6599\\u9752\\u51A5\\xD718\\u3001\\u7075\\u829D\\xD7500\\u3001\\u7ECF\\u9A8C\\u795E\\u4E66\\xD715"
-    },
-    itemdesc791760: { i18n_id: "itemdesc791760", i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD7500" },
+    itemdesc791750: { i18n_id: "itemdesc791750", i18n_sb: "打开可获得关羽魂魄×30、精炼材料青冥×18、灵芝×500、经验神书×15" },
+    itemdesc791760: { i18n_id: "itemdesc791760", i18n_sb: "打开可获得灵芝×500" },
     itemdesc791770: { i18n_id: "itemdesc791770", i18n_sb: "累计登录送神将第6天108元宝" },
-    itemdesc791780: { i18n_id: "itemdesc791780", i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD7600" },
+    itemdesc791780: { i18n_id: "itemdesc791780", i18n_sb: "打开可获得灵芝×600" },
     itemdesc11100006: { i18n_id: "itemdesc11100006", i18n_sb: "女神春华" },
     itemdesc21100007: { i18n_id: "itemdesc21100007", i18n_sb: "女神文姬皮肤" },
-    itemdesc791787: {
-        i18n_id: "itemdesc791787",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u5927\\u4E54\\xD71"
-    },
-    itemdesc791797: {
-        i18n_id: "itemdesc791797",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u5C0F\\u4E54\\u76AE\\u80A4\\xD71"
-    },
-    itemdesc791805: { i18n_id: "itemdesc791805", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\xD71" },
+    itemdesc791787: { i18n_id: "itemdesc791787", i18n_sb: "打开可获得女神大乔×1" },
+    itemdesc791797: { i18n_id: "itemdesc791797", i18n_sb: "打开可获得女神小乔皮肤×1" },
+    itemdesc791805: { i18n_id: "itemdesc791805", i18n_sb: "魔·张飞×1" },
     itemdesc545021: { i18n_id: "itemdesc545021", i18n_sb: "第40章第1个宝箱" },
     itemdesc548022: { i18n_id: "itemdesc548022", i18n_sb: "第43章第2个宝箱" },
     itemdesc10547010: { i18n_id: "itemdesc10547010", i18n_sb: "第42章隐藏宝箱" },
-    itemdesc791816: {
-        i18n_id: "itemdesc791816",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD710\\u3001\\u52FE\\u7389\\xD72\\u3001\\u864E\\u775B\\u77F3\\xD72"
-    },
-    itemdesc791826: {
-        i18n_id: "itemdesc791826",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD735\\u3001\\u52FE\\u7389\\xD76\\u3001\\u864E\\u775B\\u77F3\\xD712"
-    },
+    itemdesc791816: { i18n_id: "itemdesc791816", i18n_sb: "打开可获得灵芝×10、勾玉×2、虎睛石×2" },
+    itemdesc791826: { i18n_id: "itemdesc791826", i18n_sb: "打开可获得灵芝×35、勾玉×6、虎睛石×12" },
     itemdesc600097: { i18n_id: "itemdesc600097", i18n_sb: "熔炼装备可获得，可作为精炼材料，提供中量精炼经验。" },
     itemdesc600105: { i18n_id: "itemdesc600105", i18n_sb: "使用后主公经验可提升1886" },
-    itemdesc7710002: { i18n_id: "itemdesc7710002", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*1" },
+    itemdesc7710002: { i18n_id: "itemdesc7710002", i18n_sb: "魔·马超魂魄*1" },
     itemdesc7710012: { i18n_id: "itemdesc7710012", i18n_sb: "孙权魂魄*1" },
     itemdesc7710022: { i18n_id: "itemdesc7710022", i18n_sb: "张角魂魄*1" },
     itemdesc7710032: { i18n_id: "itemdesc7710032", i18n_sb: "甄姬魂魄*1" },
@@ -1358,7 +1193,7 @@
     itemdesc7710062: { i18n_id: "itemdesc7710062", i18n_sb: "大圣孙坚魂魄*1" },
     itemdesc7710072: { i18n_id: "itemdesc7710072", i18n_sb: "华佗魂魄*1" },
     itemdesc7710082: { i18n_id: "itemdesc7710082", i18n_sb: "曹丕魂魄*1" },
-    itemdesc7710092: { i18n_id: "itemdesc7710092", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*1" },
+    itemdesc7710092: { i18n_id: "itemdesc7710092", i18n_sb: "蜀·孙尚香魂魄*1" },
     itemdesc7710102: { i18n_id: "itemdesc7710102", i18n_sb: "射手黄忠魂魄*1" },
     itemdesc7710112: { i18n_id: "itemdesc7710112", i18n_sb: "陆逊魂魄*3" },
     itemdesc7710122: { i18n_id: "itemdesc7710122", i18n_sb: "孟获魂魄*3" },
@@ -1592,7 +1427,7 @@
     dialogname507011022: { i18n_id: "dialogname507011022", i18n_sb: "$UserName(暴走)" },
     dialogname507012026: { i18n_id: "dialogname507012026", i18n_sb: "$UserName" },
     dialogname508004021: { i18n_id: "dialogname508004021", i18n_sb: "张昭" },
-    dialogname508008021: { i18n_id: "dialogname508008021", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname508008021: { i18n_id: "dialogname508008021", i18n_sb: "吴·孙尚香" },
     dialogname508010022: { i18n_id: "dialogname508010022", i18n_sb: "陆延" },
     dialogname508012024: { i18n_id: "dialogname508012024", i18n_sb: "$UserName" },
     dialogname509004011: { i18n_id: "dialogname509004011", i18n_sb: "$UserName" },
@@ -1705,7 +1540,7 @@
     dialogname530008021: { i18n_id: "dialogname530008021", i18n_sb: "步练师" },
     dialogname530012021: { i18n_id: "dialogname530012021", i18n_sb: "侍女队长" },
     dialogname530018013: { i18n_id: "dialogname530018013", i18n_sb: "$UserName" },
-    dialogname530019022: { i18n_id: "dialogname530019022", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname530019022: { i18n_id: "dialogname530019022", i18n_sb: "吴·孙尚香" },
     dialogname531004013: { i18n_id: "dialogname531004013", i18n_sb: "$UserName" },
     dialogname531008011: { i18n_id: "dialogname531008011", i18n_sb: "$UserName" },
     dialogname531012015: { i18n_id: "dialogname531012015", i18n_sb: "$UserName" },
@@ -1797,7 +1632,7 @@
     dialogname549008014: { i18n_id: "dialogname549008014", i18n_sb: "$UserName" },
     dialogname549016012: { i18n_id: "dialogname549016012", i18n_sb: "$UserName" },
     dialogname549019014: { i18n_id: "dialogname549019014", i18n_sb: "魏延" },
-    dialogname549020023: { i18n_id: "dialogname549020023", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE" },
+    dialogname549020023: { i18n_id: "dialogname549020023", i18n_sb: "神·诸葛亮" },
     dialogdesc501003023: { i18n_id: "dialogdesc501003023", i18n_sb: "一战灭双雄，英雄你武功这么高，眼光这么好，将来必大有作为，我们后会有期，来日江湖再见。" },
     dialogdesc501004013: { i18n_id: "dialogdesc501004013", i18n_sb: "苍天已死，黄天当立。岁在甲子，天下大吉。" },
     dialogdesc501005021: { i18n_id: "dialogdesc501005021", i18n_sb: "主公，我看前方强敌如云，不如容我下山，观星知天意后再做打算？" },
@@ -2003,10 +1838,7 @@
     dialogdesc540020012: { i18n_id: "dialogdesc540020012", i18n_sb: "你是野心家？" },
     dialogdesc541004013: { i18n_id: "dialogdesc541004013", i18n_sb: "你也太不负责了吧！把我弄到这个世界，既死不掉，又不能好好活，这半死不活的时候你又跑了，你什么意思！" },
     dialogdesc541008013: { i18n_id: "dialogdesc541008013", i18n_sb: "何人擅闯广陵战营？" },
-    dialogdesc541016012: {
-        i18n_id: "dialogdesc541016012",
-        i18n_sb: "\\u5C31\\u7B97\\xA0\\u6253\\u8D77\\u6765\\u4E86\\uFF0C\\u6211\\u4EEC\\u4E5F\\u6709\\u5929\\u9669\\u5C4F\\u969C\\uFF0C\\u4E00\\u65F6\\u4E09\\u523B\\uFF0C\\u4ED6\\u4EEC\\u4E5F\\u4E0D\\u80FD\\u628A\\u6211\\u4EEC\\u600E\\u4E48\\u6837"
-    },
+    dialogdesc541016012: { i18n_id: "dialogdesc541016012", i18n_sb: "就算 打起来了，我们也有天险屏障，一时三刻，他们也不能把我们怎么样" },
     dialogdesc541019012: { i18n_id: "dialogdesc541019012", i18n_sb: "对啊，不如早点退兵回朝，我就能去找司马懿了" },
     dialogdesc541020022: { i18n_id: "dialogdesc541020022", i18n_sb: "这是不可能的事，我们就此别过。" },
     dialogdesc542004024: { i18n_id: "dialogdesc542004024", i18n_sb: "强强强，那你还算到什么？" },
@@ -2140,7 +1972,7 @@
     "8230080101": { i18n_id: "8230080101", i18n_sb: "进击的霸主" },
     "8230150101": { i18n_id: "8230150101", i18n_sb: "简雍的心愿" },
     "8640090101": { i18n_id: "8640090101", i18n_sb: "斩将万人敌" },
-    "8310060201": { i18n_id: "8310060201", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u7684\\u5FC3\\u613F" },
+    "8310060201": { i18n_id: "8310060201", i18n_sb: "吴·孙尚香的心愿" },
     "8310080401": { i18n_id: "8310080401", i18n_sb: "天梯的霸主" },
     "8310150201": { i18n_id: "8310150201", i18n_sb: "周泰的心愿" },
     "8320120201": { i18n_id: "8320120201", i18n_sb: "天梯的勇士" },
@@ -3072,10 +2904,7 @@
     auto_name_178: { i18n_id: "auto_name_178", i18n_sb: "主公请稍候" },
     paihang: { i18n_id: "paihang", i18n_sb: "排行:" },
     reject: { i18n_id: "reject", i18n_sb: "拒绝" },
-    auto_name_256: {
-        i18n_id: "auto_name_256",
-        i18n_sb: "\\u6362\\u4E2A\\u66F4\\u725B\\xD7\\u6EF4\\u540D\\u5B57\\uFF0C\\u5413\\u5C3F\\u4ED6\\u4EEC\\uFF5E"
-    },
+    auto_name_256: { i18n_id: "auto_name_256", i18n_sb: "换个更牛×滴名字，吓尿他们～" },
     auto_name_467: { i18n_id: "auto_name_467", i18n_sb: "请输入新公告" },
     auto_name_506: { i18n_id: "auto_name_506", i18n_sb: "去闯关获得技能" },
     auto_name_18: { i18n_id: "auto_name_18", i18n_sb: "集齐" },
@@ -3255,7 +3084,7 @@
     item_id791715: { i18n_id: "item_id791715", i18n_sb: "金钥匙" },
     goods_desc791717: { i18n_id: "goods_desc791717", i18n_sb: "膜拜赏赐，悬挂后，膜拜过您的人都可获得1块勾玉。" },
     shenbing_desc_800004: { i18n_id: "shenbing_desc_800004", i18n_sb: "貂蝉神兵" },
-    shenbing_desc_800006: { i18n_id: "shenbing_desc_800006", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u795E\\u5175" },
+    shenbing_desc_800006: { i18n_id: "shenbing_desc_800006", i18n_sb: "蜀·孙尚香神兵" },
     item_id_df791744: { i18n_id: "item_id_df791744", i18n_sb: "巅峰之战450积分礼包" },
     goods_desc_df791745: { i18n_id: "goods_desc_df791745", i18n_sb: "打开可获得196个1级宝石箱" },
     world_war_name6: { i18n_id: "world_war_name6", i18n_sb: "通天组淘汰赛" },
@@ -3267,12 +3096,12 @@
     },
     union_war_reward_title8: { i18n_id: "union_war_reward_title8", i18n_sb: "跨服公会战4强入围奖励" },
     union_war_reward_desc8: { i18n_id: "union_war_reward_desc8", i18n_sb: "跨服公会战4强入围奖励：贡献礼盒*1,雪国之宝匣*30，可获得流星、装备、技能、银两以及稀有武将。" },
-    mystery_name_107710002: { i18n_id: "mystery_name_107710002", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*1" },
+    mystery_name_107710002: { i18n_id: "mystery_name_107710002", i18n_sb: "魔·马超魂魄*1" },
     mystery_name_107710012: { i18n_id: "mystery_name_107710012", i18n_sb: "孙权魂魄*1" },
     mystery_name_107710022: { i18n_id: "mystery_name_107710022", i18n_sb: "张角魂魄*1" },
     mystery_name_107710032: { i18n_id: "mystery_name_107710032", i18n_sb: "甄姬魂魄*1" },
     mystery_name_107710042: { i18n_id: "mystery_name_107710042", i18n_sb: "司马懿魂魄*1" },
-    mystery_name_107710058: { i18n_id: "mystery_name_107710058", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*1" },
+    mystery_name_107710058: { i18n_id: "mystery_name_107710058", i18n_sb: "魔·张角魂魄*1" },
     mystery_name_107710068: { i18n_id: "mystery_name_107710068", i18n_sb: "小乔魂魄*1" },
     mystery_name_107710078: { i18n_id: "mystery_name_107710078", i18n_sb: "李典魂魄*1" },
     mystery_name_107710088: { i18n_id: "mystery_name_107710088", i18n_sb: "张郃魂魄*1" },
@@ -3337,10 +3166,10 @@
     IdCardBinding_13: { i18n_id: "IdCardBinding_13", i18n_sb: "您累计时间已满" },
     auto_name_Lv: { i18n_id: "auto_name_Lv", i18n_sb: "等级" },
     itemname9194001: { i18n_id: "itemname9194001", i18n_sb: "倒霉呆呆魂魄" },
-    itemname9165002: { i18n_id: "itemname9165002", i18n_sb: "\\u795E\\xB7\\u91CD\\u9A91\\u5175\\u9B42\\u9B44" },
+    itemname9165002: { i18n_id: "itemname9165002", i18n_sb: "神·重骑兵魂魄" },
     itemname141020: { i18n_id: "itemname141020", i18n_sb: "刘协" },
     itemname131004: { i18n_id: "itemname131004", i18n_sb: "周瑜" },
-    itemname181001: { i18n_id: "itemname181001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE" },
+    itemname181001: { i18n_id: "itemname181001", i18n_sb: "魔·张飞" },
     itemname122011: { i18n_id: "itemname122011", i18n_sb: "孟获" },
     itemname131019: { i18n_id: "itemname131019", i18n_sb: "诸葛瑾" },
     itemname7750006: { i18n_id: "itemname7750006", i18n_sb: "神秘商品之爪黄飞电碎片*3" },
@@ -3362,7 +3191,7 @@
     itemname792068: { i18n_id: "itemname792068", i18n_sb: "冀州重斧兵礼包" },
     itemname792078: { i18n_id: "itemname792078", i18n_sb: "张辽礼包" },
     itemname792088: { i18n_id: "itemname792088", i18n_sb: "周瑜礼包" },
-    itemname792098: { i18n_id: "itemname792098", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u793C\\u5305" },
+    itemname792098: { i18n_id: "itemname792098", i18n_sb: "魔·张飞礼包" },
     itemname792108: { i18n_id: "itemname792108", i18n_sb: "射手黄忠礼包" },
     itemname792118: { i18n_id: "itemname792118", i18n_sb: "孟获礼包" },
     itemname792128: { i18n_id: "itemname792128", i18n_sb: "诸葛瑾礼包" },
@@ -3384,16 +3213,13 @@
     itemname792288: { i18n_id: "itemname792288", i18n_sb: "冀州重骑兵魂魄礼包" },
     itemname792298: { i18n_id: "itemname792298", i18n_sb: "张星彩魂魄礼包" },
     itemname792308: { i18n_id: "itemname792308", i18n_sb: "黄月英魂魄礼包" },
-    itemname792318: { i18n_id: "itemname792318", i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\u793C\\u5305" },
-    itemname792328: { i18n_id: "itemname792328", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname792318: { i18n_id: "itemname792318", i18n_sb: "神·关羽魂魄礼包" },
+    itemname792328: { i18n_id: "itemname792328", i18n_sb: "魔·张飞魂魄礼包" },
     itemname792338: { i18n_id: "itemname792338", i18n_sb: "射手黄忠魂魄礼包" },
     itemname792348: { i18n_id: "itemname792348", i18n_sb: "孟获魂魄礼包" },
     itemname792358: { i18n_id: "itemname792358", i18n_sb: "诸葛瑾魂魄礼包" },
     itemname792368: { i18n_id: "itemname792368", i18n_sb: "吴大帝魂魄礼包" },
-    itemname7740005: {
-        i18n_id: "itemname7740005",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*3"
-    },
+    itemname7740005: { i18n_id: "itemname7740005", i18n_sb: "神秘商品之魔·黄盖魂魄*3" },
     itemname7740015: { i18n_id: "itemname7740015", i18n_sb: "神秘商品之张飞魂魄*3" },
     itemname7740025: { i18n_id: "itemname7740025", i18n_sb: "神秘商品之吕蒙魂魄*3" },
     itemname7740035: { i18n_id: "itemname7740035", i18n_sb: "神秘商品之张辽魂魄*3" },
@@ -3402,9 +3228,9 @@
     itemdesc9171008: { i18n_id: "itemdesc9171008", i18n_sb: "公主宪英魂魄" },
     itemdesc171014: { i18n_id: "itemdesc171014", i18n_sb: "德古拉魏延" },
     itemdesc111017: { i18n_id: "itemdesc111017", i18n_sb: "张郃" },
-    itemdesc121001: { i18n_id: "itemdesc121001", i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD" },
+    itemdesc121001: { i18n_id: "itemdesc121001", i18n_sb: "神·关羽" },
     itemdesc171004: { i18n_id: "itemdesc171004", i18n_sb: "冰雪春华" },
-    itemdesc151001: { i18n_id: "itemdesc151001", i18n_sb: "\\u795E\\xB7\\u6307\\u7EB9" },
+    itemdesc151001: { i18n_id: "itemdesc151001", i18n_sb: "神·指纹" },
     itemdesc7750002: { i18n_id: "itemdesc7750002", i18n_sb: "惊帆碎片*3" },
     itemdesc7750012: { i18n_id: "itemdesc7750012", i18n_sb: "青釭剑碎片*3" },
     itemdesc7750022: { i18n_id: "itemdesc7750022", i18n_sb: "麒麟弓碎片*3" },
@@ -3424,25 +3250,16 @@
     itemdesc792064: { i18n_id: "itemdesc792064", i18n_sb: "打开可获得冀州枪兵*1" },
     itemdesc792074: { i18n_id: "itemdesc792074", i18n_sb: "打开可获得西凉大刀兵*1" },
     itemdesc792084: { i18n_id: "itemdesc792084", i18n_sb: "打开可获得张郃*1" },
-    itemdesc792094: {
-        i18n_id: "itemdesc792094",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u5173\\u7FBD*1"
-    },
+    itemdesc792094: { i18n_id: "itemdesc792094", i18n_sb: "打开可获得神·关羽*1" },
     itemdesc792104: { i18n_id: "itemdesc792104", i18n_sb: "打开可获得兵长陆逊*1" },
     itemdesc792114: { i18n_id: "itemdesc792114", i18n_sb: "打开可获得至尊小宝*1" },
-    itemdesc792124: {
-        i18n_id: "itemdesc792124",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u6307\\u7EB9*1"
-    },
+    itemdesc792124: { i18n_id: "itemdesc792124", i18n_sb: "打开可获得神·指纹*1" },
     itemdesc792134: { i18n_id: "itemdesc792134", i18n_sb: "打开可获得芽间月英*1" },
     itemdesc792144: { i18n_id: "itemdesc792144", i18n_sb: "打开可获得许褚魂魄*1" },
     itemdesc792154: { i18n_id: "itemdesc792154", i18n_sb: "打开可获得辛宪英魂魄*1" },
     itemdesc792164: { i18n_id: "itemdesc792164", i18n_sb: "打开可获得典满魂魄*1" },
     itemdesc792174: { i18n_id: "itemdesc792174", i18n_sb: "打开可获得青州长枪兵魂魄*1" },
-    itemdesc792184: {
-        i18n_id: "itemdesc792184",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*1"
-    },
+    itemdesc792184: { i18n_id: "itemdesc792184", i18n_sb: "打开可获得蜀·孙尚香魂魄*1" },
     itemdesc792194: { i18n_id: "itemdesc792194", i18n_sb: "打开可获得夏侯氏魂魄*1" },
     itemdesc792204: { i18n_id: "itemdesc792204", i18n_sb: "打开可获得孙乾魂魄*1" },
     itemdesc792214: { i18n_id: "itemdesc792214", i18n_sb: "打开可获得巴蜀长枪兵魂魄*1" },
@@ -3459,16 +3276,13 @@
     itemdesc792324: { i18n_id: "itemdesc792324", i18n_sb: "打开可获得孙策魂魄*1" },
     itemdesc792334: { i18n_id: "itemdesc792334", i18n_sb: "打开可获得兵长陆逊魂魄*1" },
     itemdesc792344: { i18n_id: "itemdesc792344", i18n_sb: "打开可获得至尊小宝魂魄*1" },
-    itemdesc792354: {
-        i18n_id: "itemdesc792354",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u6307\\u7EB9\\u9B42\\u9B44*1"
-    },
+    itemdesc792354: { i18n_id: "itemdesc792354", i18n_sb: "打开可获得神·指纹魂魄*1" },
     itemdesc792364: { i18n_id: "itemdesc792364", i18n_sb: "打开可获得芽间月英魂魄*1" },
-    itemdesc7740001: { i18n_id: "itemdesc7740001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*3" },
+    itemdesc7740001: { i18n_id: "itemdesc7740001", i18n_sb: "魔·张飞魂魄*3" },
     itemdesc7740011: { i18n_id: "itemdesc7740011", i18n_sb: "曹操魂魄*3" },
     itemdesc7740021: { i18n_id: "itemdesc7740021", i18n_sb: "华佗魂魄*3" },
     itemdesc7740031: { i18n_id: "itemdesc7740031", i18n_sb: "曹丕魂魄*3" },
-    itemdesc7740041: { i18n_id: "itemdesc7740041", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*3" },
+    itemdesc7740041: { i18n_id: "itemdesc7740041", i18n_sb: "蜀·孙尚香魂魄*3" },
     itemdesc7740051: { i18n_id: "itemdesc7740051", i18n_sb: "射手黄忠魂魄*3" },
     giftPrompt: { i18n_id: "giftPrompt", i18n_sb: "礼包提示" },
     useFortunePrompt_2: { i18n_id: "useFortunePrompt_2", i18n_sb: "您本轮还未使用运势，是否立即使用？" },
@@ -3476,20 +3290,20 @@
     queueTeam_9: { i18n_id: "queueTeam_9", i18n_sb: "点击“保存阵容”可将“当前阵容”保存至此阵容" },
     queueTeam_19: { i18n_id: "queueTeam_19", i18n_sb: "修改阵容成功" },
     MysteryStorePrompt_2: { i18n_id: "MysteryStorePrompt_2", i18n_sb: "是否确定花$1元宝兑换$2?" },
-    mystery_name_107700001: { i18n_id: "mystery_name_107700001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*1" },
+    mystery_name_107700001: { i18n_id: "mystery_name_107700001", i18n_sb: "魔·张飞魂魄*1" },
     mystery_name_107700011: { i18n_id: "mystery_name_107700011", i18n_sb: "曹操魂魄*1" },
     mystery_name_107700021: { i18n_id: "mystery_name_107700021", i18n_sb: "华佗魂魄*1" },
     mystery_name_107700031: { i18n_id: "mystery_name_107700031", i18n_sb: "曹丕魂魄*1" },
-    mystery_name_107700041: { i18n_id: "mystery_name_107700041", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*1" },
+    mystery_name_107700041: { i18n_id: "mystery_name_107700041", i18n_sb: "蜀·孙尚香魂魄*1" },
     mystery_name_107700051: { i18n_id: "mystery_name_107700051", i18n_sb: "射手黄忠魂魄*1" },
     mystery_name_107700061: { i18n_id: "mystery_name_107700061", i18n_sb: "曹植魂魄*1" },
-    mystery_name_107700071: { i18n_id: "mystery_name_107700071", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*1" },
+    mystery_name_107700071: { i18n_id: "mystery_name_107700071", i18n_sb: "魔·贾诩魂魄*1" },
     mystery_name_107700081: { i18n_id: "mystery_name_107700081", i18n_sb: "陆逊魂魄*1" },
     mystery_name_107700091: { i18n_id: "mystery_name_107700091", i18n_sb: "孟获魂魄*1" },
     mystery_name_107700101: { i18n_id: "mystery_name_107700101", i18n_sb: "贾诩魂魄*1" },
     mystery_name_107700111: { i18n_id: "mystery_name_107700111", i18n_sb: "孙策魂魄*1" },
     mystery_name_107700121: { i18n_id: "mystery_name_107700121", i18n_sb: "公孙瓒魂魄*1" },
-    mystery_name_107700131: { i18n_id: "mystery_name_107700131", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*3" },
+    mystery_name_107700131: { i18n_id: "mystery_name_107700131", i18n_sb: "魔·黄盖魂魄*3" },
     mystery_name_107700141: { i18n_id: "mystery_name_107700141", i18n_sb: "张飞魂魄*3" },
     mystery_name_107700151: { i18n_id: "mystery_name_107700151", i18n_sb: "吕蒙魂魄*3" },
     mystery_name_107700161: { i18n_id: "mystery_name_107700161", i18n_sb: "张辽魂魄*3" },
@@ -3531,10 +3345,7 @@
     itemname600095: { i18n_id: "itemname600095", i18n_sb: "脉力" },
     itemname79122012: { i18n_id: "itemname79122012", i18n_sb: "臣服奖励" },
     itemdesc600095: { i18n_id: "itemdesc600095", i18n_sb: "神奇的天地之气，能提升经脉的强度。" },
-    itemdesc79122012: {
-        i18n_id: "itemdesc79122012",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
+    itemdesc79122012: { i18n_id: "itemdesc79122012", i18n_sb: "神·吕蒙魂魄×2,灵芝×1000" },
     "8710150101": { i18n_id: "8710150101", i18n_sb: "勤劳的勇者" },
     "8120120301": { i18n_id: "8120120301", i18n_sb: "无聊的猎人" },
     "8120120102": { i18n_id: "8120120102", i18n_sb: "曹丕登基7（精英）累计攻打60次" },
@@ -3574,10 +3385,7 @@
     stage_29302: { i18n_id: "stage_29302", i18n_sb: "居庸关1-居庸关5" },
     robot_5933: { i18n_id: "robot_5933", i18n_sb: "孟获队" },
     itemname792702: { i18n_id: "itemname792702", i18n_sb: "女神大小乔礼包" },
-    itemdesc792702: {
-        i18n_id: "itemdesc792702",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u5927\\u5C0F\\u4E54\\xD71"
-    },
+    itemdesc792702: { i18n_id: "itemdesc792702", i18n_sb: "打开可获得女神大小乔×1" },
     meridian_6: { i18n_id: "meridian_6", i18n_sb: "阳跷脉" },
     meridian_1_8: { i18n_id: "meridian_1_8", i18n_sb: "神阙" },
     meridian_1_18: { i18n_id: "meridian_1_18", i18n_sb: "玉堂" },
@@ -3626,19 +3434,19 @@
     mystery_name_107700444: { i18n_id: "mystery_name_107700444", i18n_sb: "英姿残卷" },
     mystery_name_107700454: { i18n_id: "mystery_name_107700454", i18n_sb: "红颜残卷" },
     mystery_name_107700464: { i18n_id: "mystery_name_107700464", i18n_sb: "虎啸残卷" },
-    mystery_name_117710001: { i18n_id: "mystery_name_117710001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*1" },
+    mystery_name_117710001: { i18n_id: "mystery_name_117710001", i18n_sb: "魔·张飞魂魄*1" },
     mystery_name_117710011: { i18n_id: "mystery_name_117710011", i18n_sb: "曹操魂魄*1" },
     mystery_name_117710021: { i18n_id: "mystery_name_117710021", i18n_sb: "华佗魂魄*1" },
     mystery_name_117710031: { i18n_id: "mystery_name_117710031", i18n_sb: "曹丕魂魄*1" },
-    mystery_name_117710041: { i18n_id: "mystery_name_117710041", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*1" },
+    mystery_name_117710041: { i18n_id: "mystery_name_117710041", i18n_sb: "蜀·孙尚香魂魄*1" },
     mystery_name_117710051: { i18n_id: "mystery_name_117710051", i18n_sb: "射手黄忠魂魄*1" },
     mystery_name_117710061: { i18n_id: "mystery_name_117710061", i18n_sb: "曹植魂魄*1" },
-    mystery_name_107740008: { i18n_id: "mystery_name_107740008", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*3" },
+    mystery_name_107740008: { i18n_id: "mystery_name_107740008", i18n_sb: "魔·贾诩魂魄*3" },
     mystery_name_107740018: { i18n_id: "mystery_name_107740018", i18n_sb: "陆逊魂魄*3" },
     mystery_name_107740028: { i18n_id: "mystery_name_107740028", i18n_sb: "孟获魂魄*3" },
     mystery_name_107740038: { i18n_id: "mystery_name_107740038", i18n_sb: "贾诩魂魄*3" },
     mystery_name_107740048: { i18n_id: "mystery_name_107740048", i18n_sb: "孙策魂魄*3" },
-    mystery_name_117740002: { i18n_id: "mystery_name_117740002", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*3" },
+    mystery_name_117740002: { i18n_id: "mystery_name_117740002", i18n_sb: "魔·马超魂魄*3" },
     mystery_name_117740012: { i18n_id: "mystery_name_117740012", i18n_sb: "孙权魂魄*3" },
     mystery_name_117740022: { i18n_id: "mystery_name_117740022", i18n_sb: "张角魂魄*3" },
     mystery_name_117740032: { i18n_id: "mystery_name_117740032", i18n_sb: "甄姬魂魄*3" },
@@ -3753,9 +3561,9 @@
     dialogname552020011: { i18n_id: "dialogname552020011", i18n_sb: "$UserName" },
     dialogname553004013: { i18n_id: "dialogname553004013", i18n_sb: "$UserName" },
     dialogname553012012: { i18n_id: "dialogname553012012", i18n_sb: "$UserName" },
-    dialogname553018011: { i18n_id: "dialogname553018011", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    dialogname553018011: { i18n_id: "dialogname553018011", i18n_sb: "魔·马超" },
     dialogname553019013: { i18n_id: "dialogname553019013", i18n_sb: "$UserName" },
-    dialogname553020021: { i18n_id: "dialogname553020021", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    dialogname553020021: { i18n_id: "dialogname553020021", i18n_sb: "魔·马超" },
     dialogname554008013: { i18n_id: "dialogname554008013", i18n_sb: "典满" },
     dialogname554016012: { i18n_id: "dialogname554016012", i18n_sb: "$UserName" },
     dialogname554018015: { i18n_id: "dialogname554018015", i18n_sb: "$UserName" },
@@ -3845,18 +3653,12 @@
     surrunderdesc_545: { i18n_id: "surrunderdesc_545", i18n_sb: "0" },
     "31102704": { i18n_id: "31102704", i18n_sb: "敌方单体" },
     "4110010101": { i18n_id: "4110010101", i18n_sb: "飞影随形" },
-    itemdesc79111025: {
-        i18n_id: "itemdesc79111025",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x3,\\u7075\\u829Dx1000"
-    },
+    itemdesc79111025: { i18n_id: "itemdesc79111025", i18n_sb: "神·曹操魂魄x3,灵芝x1000" },
     "8110010401": { i18n_id: "8110010401", i18n_sb: "心悦诚服" },
     "8110010402": { i18n_id: "8110010402", i18n_sb: "臣服曹操" },
     synthetiseItem_content4: { i18n_id: "synthetiseItem_content4", i18n_sb: "合成道具" },
     itemname351037: { i18n_id: "itemname351037", i18n_sb: "飞影" },
-    itemname792715: {
-        i18n_id: "itemname792715",
-        i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44\\u793C\\u5305\\uFF082\\uFF09"
-    },
+    itemname792715: { i18n_id: "itemname792715", i18n_sb: "蜀·孙尚香魂魄礼包（2）" },
     itemname792725: { i18n_id: "itemname792725", i18n_sb: "VIP1大礼包" },
     itemname792735: { i18n_id: "itemname792735", i18n_sb: "VIP11大礼包" },
     itemdesc792712: { i18n_id: "itemdesc792712", i18n_sb: "打开可获得：灵芝*188" },
@@ -3897,7 +3699,7 @@
     },
     "4110251201": { i18n_id: "4110251201", i18n_sb: "魏武霸业" },
     "4410140401": { i18n_id: "4410140401", i18n_sb: "誓随主公" },
-    itemname111026: { i18n_id: "itemname111026", i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF" },
+    itemname111026: { i18n_id: "itemname111026", i18n_sb: "神·司马懿" },
     "8410140401": { i18n_id: "8410140401", i18n_sb: "最强属性" },
     "8410140402": { i18n_id: "8410140402", i18n_sb: "修炼武将攻属性至6000" },
     surrunderdesc_555: { i18n_id: "surrunderdesc_555", i18n_sb: "0" },
@@ -3914,10 +3716,7 @@
     "8110060801": { i18n_id: "8110060801", i18n_sb: "觉醒战斗" },
     "8110060602": { i18n_id: "8110060602", i18n_sb: "觉醒张辽升级图腾至2层2段" },
     juexing_shusunshangxiang_open04: { i18n_id: "juexing_shusunshangxiang_open04", i18n_sb: "拥有1个红绸伞" },
-    itemname87151002: {
-        i18n_id: "itemname87151002",
-        i18n_sb: "\\u795E\\xB7\\u8D5B\\u96F7\\u9053\\u5177\\uFF081\\u7EA7\\uFF09"
-    },
+    itemname87151002: { i18n_id: "itemname87151002", i18n_sb: "神·赛雷道具（1级）" },
     "31102804": { i18n_id: "31102804", i18n_sb: "自身" },
     "4340010801": { i18n_id: "4340010801", i18n_sb: "远交近攻" },
     "4340011801": { i18n_id: "4340011801", i18n_sb: "傲视天下" },
@@ -3928,10 +3727,7 @@
     "4310201301": { i18n_id: "4310201301", i18n_sb: "母仪天下" },
     "4410220501": { i18n_id: "4410220501", i18n_sb: "灭国之恨" },
     itemname79131021: { i18n_id: "itemname79131021", i18n_sb: "臣服奖励" },
-    itemdesc79131021: {
-        i18n_id: "itemdesc79131021",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79131021: { i18n_id: "itemdesc79131021", i18n_sb: "神·司马懿魂魄x2,灵芝x1000" },
     "8410220301": { i18n_id: "8410220301", i18n_sb: "无聊的杀手" },
     "8210100701": { i18n_id: "8210100701", i18n_sb: "觉醒图腾" },
     "8410220502": { i18n_id: "8410220502", i18n_sb: "颜良神兵锻造至10重10锻" },
@@ -3962,10 +3758,7 @@
     "8110290101": { i18n_id: "8110290101", i18n_sb: "天赋异禀" },
     surrunderdesc_569: { i18n_id: "surrunderdesc_569", i18n_sb: "0" },
     "4710142101": { i18n_id: "4710142101", i18n_sb: "马中赤兔" },
-    itemdesc791210111: {
-        i18n_id: "itemdesc791210111",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791210111: { i18n_id: "itemdesc791210111", i18n_sb: "神·司马懿魂魄x2,灵芝x1000" },
     "8710140501": { i18n_id: "8710140501", i18n_sb: "开启觉醒宝箱" },
     "8710140702": { i18n_id: "8710140702", i18n_sb: "觉醒德古拉魏延升级图腾至4层2段" },
     "15200201": { i18n_id: "15200201", i18n_sb: "卑弥呼" },
@@ -4005,10 +3798,7 @@
     },
     "4110300401": { i18n_id: "4110300401", i18n_sb: "子承父业" },
     shenbing_desc_800031: { i18n_id: "shenbing_desc_800031", i18n_sb: "步练师神兵" },
-    itemdesc79111030: {
-        i18n_id: "itemdesc79111030",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79111030: { i18n_id: "itemdesc79111030", i18n_sb: "神·司马懿魂魄x2,灵芝x1000" },
     "8110260401": { i18n_id: "8110260401", i18n_sb: "心悦诚服" },
     surrunderdesc_576: { i18n_id: "surrunderdesc_576", i18n_sb: "0" },
     festival_tree_kill_mail: {
@@ -4141,10 +3931,7 @@
     "32102404": { i18n_id: "32102404", i18n_sb: "敌方随机单体" },
     itemdesc79121021: { i18n_id: "itemdesc79121021", i18n_sb: "坐骑玉兰白龙驹,灵芝x1000" },
     surrunderdesc_599: { i18n_id: "surrunderdesc_599", i18n_sb: "0" },
-    itemdesc791340011: {
-        i18n_id: "itemdesc791340011",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791340011: { i18n_id: "itemdesc791340011", i18n_sb: "神·司马懿魂魄x2,灵芝x1000" },
     juexing_wudadi_open02: { i18n_id: "juexing_wudadi_open02", i18n_sb: "吴大帝神兵升至10重10锻" },
     juexing_zhaoyun_open04: { i18n_id: "juexing_zhaoyun_open04", i18n_sb: "拥有1个赵云觉醒道具" },
     "4240012201": { i18n_id: "4240012201", i18n_sb: "怒火攻心" },
@@ -4152,7 +3939,7 @@
     "8210080801": { i18n_id: "8210080801", i18n_sb: "觉醒战斗" },
     "8210080602": { i18n_id: "8210080602", i18n_sb: "觉醒赵云升级图腾至2层2段" },
     itemname9211018: { i18n_id: "itemname9211018", i18n_sb: "百鸟朝凤枪碎片" },
-    "16100101": { i18n_id: "16100101", i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD" },
+    "16100101": { i18n_id: "16100101", i18n_sb: "界·关羽" },
     "352002101": { i18n_id: "352002101", i18n_sb: "天照一阶" },
     "322011402": {
         i18n_id: "322011402",
@@ -4166,10 +3953,7 @@
     "4420132201": { i18n_id: "4420132201", i18n_sb: "咎由自取" },
     "4210240201": { i18n_id: "4210240201", i18n_sb: "燎原火" },
     itemname791420131: { i18n_id: "itemname791420131", i18n_sb: "臣服奖励" },
-    itemdesc79121024: {
-        i18n_id: "itemdesc79121024",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79121024: { i18n_id: "itemdesc79121024", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     "8420130901": { i18n_id: "8420130901", i18n_sb: "觉醒战斗" },
     "8420130702": { i18n_id: "8420130702", i18n_sb: "觉醒伏皇后升级图腾至2层2段" },
     "8210240402": { i18n_id: "8210240402", i18n_sb: "觉醒宝箱开启300次" },
@@ -4182,7 +3966,7 @@
     "331023103": { i18n_id: "331023103", i18n_sb: "行动后 易触发" },
     "331023105": { i18n_id: "331023105", i18n_sb: "造成智力伤害,伤害系数$1%；同时回复己方全体血量,回复值为发动者智力的$2%." },
     "4310011201": { i18n_id: "4310011201", i18n_sb: "众神国度" },
-    shenbing_desc_800042: { i18n_id: "shenbing_desc_800042", i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u795E\\u5175" },
+    shenbing_desc_800042: { i18n_id: "shenbing_desc_800042", i18n_sb: "神·周瑜神兵" },
     "30000205": { i18n_id: "30000205", i18n_sb: "增加$1%血" },
     "8110130602": { i18n_id: "8110130602", i18n_sb: "觉醒曹仁升级图腾至2层2段" },
     itemdesc792804: { i18n_id: "itemdesc792804", i18n_sb: "内含八卦炉*1" },
@@ -4198,10 +3982,7 @@
     juexing_wenchou_open03: { i18n_id: "juexing_wenchou_open03", i18n_sb: "拥有袁绍魂魄*30" },
     "4210021301": { i18n_id: "4210021301", i18n_sb: "北斗七星" },
     "4710170201": { i18n_id: "4710170201", i18n_sb: "舞马" },
-    itemdesc79171017: {
-        i18n_id: "itemdesc79171017",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x3,\\u7075\\u829Dx1000"
-    },
+    itemdesc79171017: { i18n_id: "itemdesc79171017", i18n_sb: "界·关羽魂魄x3,灵芝x1000" },
     "8710170402": { i18n_id: "8710170402", i18n_sb: "臣服曹丕" },
     itemdesc79165005: { i18n_id: "itemdesc79165005", i18n_sb: "毛驴碎片x1" },
     itemdesc141013: { i18n_id: "itemdesc141013", i18n_sb: "颜良" },
@@ -4216,10 +3997,7 @@
     "4410210901": { i18n_id: "4410210901", i18n_sb: "绝世宝马" },
     "4410240701": { i18n_id: "4410240701", i18n_sb: "银枪龙胆" },
     "4410241701": { i18n_id: "4410241701", i18n_sb: "五虎再临" },
-    itemdesc791410221: {
-        i18n_id: "itemdesc791410221",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791410221: { i18n_id: "itemdesc791410221", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     juexing_SPyuanshao_open03: { i18n_id: "juexing_SPyuanshao_open03", i18n_sb: "拥有华雄魂魄*30" },
     "16500603": { i18n_id: "16500603", i18n_sb: "智力高的药丸，最合我胃口了！" },
     itemdesc165006: { i18n_id: "itemdesc165006", i18n_sb: "圣诞貂蝉" },
@@ -4283,11 +4061,11 @@
     "14301701": { i18n_id: "14301701", i18n_sb: "波才" },
     "16402001": { i18n_id: "16402001", i18n_sb: "黄巾妖术兵" },
     "16402201": { i18n_id: "16402201", i18n_sb: "西凉锤兵" },
-    "13100601": { i18n_id: "13100601", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    "13100601": { i18n_id: "13100601", i18n_sb: "吴·孙尚香" },
     "11201201": { i18n_id: "11201201", i18n_sb: "曹植" },
     "14101001": { i18n_id: "14101001", i18n_sb: "贾诩" },
-    "14100101": { i18n_id: "14100101", i18n_sb: "\\u795E\\xB7\\u5415\\u5E03" },
-    "18100301": { i18n_id: "18100301", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    "14100101": { i18n_id: "14100101", i18n_sb: "神·吕布" },
+    "18100301": { i18n_id: "18100301", i18n_sb: "魔·马超" },
     "19400101": { i18n_id: "19400101", i18n_sb: "倒霉呆呆" },
     "12201201": { i18n_id: "12201201", i18n_sb: "祝融" },
     "12300501": { i18n_id: "12300501", i18n_sb: "马谡" },
@@ -4435,7 +4213,7 @@
     "23400102": { i18n_id: "23400102", i18n_sb: "经常帮自己洗头的马，所以此马拥有一头乌黑亮丽的长发，故此得名。" },
     "24100602": {
         i18n_id: "24100602",
-        i18n_sb: "\\u8BED\\u51FA\\u300A\\u793C\\u8BB0\\xB7\\u66F2\\u793C\\u4E0A\\u300B\\uFF1A\\u201C\\u6548\\u9A6C\\u6548\\u7F8A\\u8005\\u53F3\\u7275\\u4E4B\\u201D\\u3002\\u540E\\u4E16\\u56E0\\u4EE5\\u201C\\u987A\\u624B\\u7275\\u7F8A\\u201D\\u6BD4\\u55BB\\u987A\\u4FBF\\u884C\\u4E8B\\uFF0C\\u6BEB\\u4E0D\\u8D39\\u529B\\u3002 \\u987A\\u624B\\u7275\\u7F8A\\u4E5F\\u662F\\u300A\\u4E09\\u5341\\u516D\\u8BA1\\u300B\\u4E2D\\u7684\\u7B2C\\u5341\\u4E8C\\u8BA1\\u3002\\u4E09\\u56FD\\u65F6\\uFF0C\\u53F8\\u9A6C\\u61FF\\u5343\\u91CC\\u6025\\u884C\\u519B\\uFF0C\\u5728\\u5B5F\\u8FBE\\u5DE5\\u4E8B\\u672A\\u56FA\\u65F6\\uFF0C\\u6293\\u4F4F\\u673A\\u4F1A\\uFF0C\\u65A9\\u4E86\\u5B5F\\u8FBE\\uFF0C\\u5E73\\u606F\\u4E86\\u53DB\\u4E71\\u3002"
+        i18n_sb: "语出《礼记·曲礼上》：“效马效羊者右牵之”。后世因以“顺手牵羊”比喻顺便行事，毫不费力。 顺手牵羊也是《三十六计》中的第十二计。三国时，司马懿千里急行军，在孟达工事未固时，抓住机会，斩了孟达，平息了叛乱。"
     },
     "24200502": {
         i18n_id: "24200502",
@@ -4524,7 +4302,7 @@
     "10000202": { i18n_id: "10000202", i18n_sb: "【绝情】春哥能让敌人无法发动技能的绝技，属控场技能，主攻。行动前易触发，可对敌方单体造成攻击伤害，同时将其封印2回合。" },
     "34100102": {
         i18n_id: "34100102",
-        i18n_sb: "\\u3010\\u795E\\u6124\\u3011\\u5730\\u72F1\\u90AA\\u795E\\u5415\\u5E03\\u7684\\u795E\\u4E4B\\u6012\\u706B\\uFF0C\\u5C5E\\u653B\\u51FB\\u6280\\u80FD\\uFF0C\\u4E3B\\u653B\\u3002\\u88C5\\u5907\\u540E\\uFF0C\\u5BF9\\u654C\\u65B9\\u5168\\u4F53\\u9020\\u6210\\u4F24\\u5BB3\\uFF0C\\u540C\\u65F6\\u589E\\u52A0\\u654C\\u65B9\\u5168\\u4F53\\u4E0B\\u4E00\\u6B21\\u53D7\\u5230\\u7684\\u4F24\\u5BB3\\u3001\\u964D\\u4F4E\\u654C\\u65B9\\u5168\\u4F53\\u4E0B\\u4E00\\u6B21\\u9020\\u6210\\u7684\\u4F24\\u5BB3\\uFF0C\\u795E\\xB7\\u5415\\u5E03\\u81EA\\u8EAB\\u5219\\u7531\\u4E8E\\u53CD\\u566C\\u800C\\u5931\\u53BB\\u90E8\\u5206\\u8840\\u91CF\\u3002"
+        i18n_sb: "【神愤】地狱邪神吕布的神之怒火，属攻击技能，主攻。装备后，对敌方全体造成伤害，同时增加敌方全体下一次受到的伤害、降低敌方全体下一次造成的伤害，神·吕布自身则由于反噬而失去部分血量。"
     },
     "34200802": { i18n_id: "34200802", i18n_sb: "【影兵】人公将军张宝修习的妖术，能以不寻常之力增兵乱敌，属被动技能，主智和防。装备后，可提升自身的智力与防御。" },
     "37101402": {
@@ -4533,7 +4311,7 @@
     },
     "33100202": {
         i18n_id: "33100202",
-        i18n_sb: "\\u3010\\u653B\\u5FC3\\u3011\\u767D\\u8863\\u6E21\\u6C5F\\u540E\\u7684\\u795E\\xB7\\u5415\\u8499\\uFF0C\\u64C5\\u957F\\u5229\\u7528\\u653B\\u5FC3\\u6218\\u672F\\uFF0C\\u5229\\u7528\\u654C\\u4EBA\\u7684\\u52A3\\u52BF\\u51FB\\u6E83\\u654C\\u4EBA\\uFF0C\\u5C5E\\u653B\\u51FB\\u6280\\u80FD\\uFF0C\\u4E3B\\u667A\\u3002\\u884C\\u52A8\\u65F6\\u6613\\u89E6\\u53D1\\uFF0C\\u53EF\\u5BF9\\u654C\\u65B9\\u573A\\u4E0A\\u5168\\u4F53\\u9020\\u6210\\u667A\\u529B\\u4F24\\u5BB3\\uFF0C\\u8BE5\\u4F24\\u5BB3\\u65E0\\u89C6\\u90E8\\u5206\\u9632\\u5FA1\\uFF0C\\u4E14\\u654C\\u65B9\\u5DF2\\u9635\\u4EA1\\u4EBA\\u6570\\u8D8A\\u591A\\uFF0C\\u4F24\\u5BB3\\u8D8A\\u9AD8\\u3002"
+        i18n_sb: "【攻心】白衣渡江后的神·吕蒙，擅长利用攻心战术，利用敌人的劣势击溃敌人，属攻击技能，主智。行动时易触发，可对敌方场上全体造成智力伤害，该伤害无视部分防御，且敌方已阵亡人数越多，伤害越高。"
     },
     "35100403": { i18n_id: "35100403", i18n_sb: "装备后 " },
     "35100803": { i18n_id: "35100803", i18n_sb: "装备后 " },
@@ -4960,14 +4738,11 @@
     itemname790349: { i18n_id: "itemname790349", i18n_sb: "20级高顺礼包" },
     itemname87111016: { i18n_id: "itemname87111016", i18n_sb: "典韦道具（1级）" },
     itemname87121013: { i18n_id: "itemname87121013", i18n_sb: "张星彩道具（1级）" },
-    itemname87131006: {
-        i18n_id: "itemname87131006",
-        i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u9053\\u5177\\uFF081\\u7EA7\\uFF09"
-    },
+    itemname87131006: { i18n_id: "itemname87131006", i18n_sb: "吴·孙尚香道具（1级）" },
     itemname87141002: { i18n_id: "itemname87141002", i18n_sb: "吕布道具（1级）" },
     itemname87142007: { i18n_id: "itemname87142007", i18n_sb: "李儒道具（1级）" },
     itemname790360: { i18n_id: "itemname790360", i18n_sb: "1级王异礼包" },
-    itemname790370: { i18n_id: "itemname790370", i18n_sb: "1\\u7EA7\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u793C\\u5305" },
+    itemname790370: { i18n_id: "itemname790370", i18n_sb: "1级蜀·孙尚香礼包" },
     itemname790380: { i18n_id: "itemname790380", i18n_sb: "1级大乔礼包" },
     itemname790390: { i18n_id: "itemname790390", i18n_sb: "1级貂蝉礼包" },
     itemname790400: { i18n_id: "itemname790400", i18n_sb: "1级兵长陆逊礼包" },
@@ -5006,7 +4781,7 @@
     itemname40111005: { i18n_id: "itemname40111005", i18n_sb: "司马懿" },
     itemname40121008: { i18n_id: "itemname40121008", i18n_sb: "赵云" },
     itemname40131018: { i18n_id: "itemname40131018", i18n_sb: "孙策" },
-    itemname40121014: { i18n_id: "itemname40121014", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999" },
+    itemname40121014: { i18n_id: "itemname40121014", i18n_sb: "蜀·孙尚香" },
     itemname791499: { i18n_id: "itemname791499", i18n_sb: "金榜中级宝箱" },
     itemname791509: { i18n_id: "itemname791509", i18n_sb: "清风扇礼包" },
     itemname791519: { i18n_id: "itemname791519", i18n_sb: "追风礼包" },
@@ -5014,21 +4789,12 @@
     itemname791538: { i18n_id: "itemname791538", i18n_sb: "燎原火宝箱（黄盖缘分金坐骑）" },
     itemname791548: { i18n_id: "itemname791548", i18n_sb: "快航宝箱（周泰缘分金坐骑）" },
     itemname6300008: { i18n_id: "itemname6300008", i18n_sb: "龙胆枪礼盒(赵云缘分神级武器)" },
-    itemname6300018: {
-        i18n_id: "itemname6300018",
-        i18n_sb: "\\u6731\\u96C0\\u51A0\\u793C\\u76D2(\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u7F18\\u5206\\u795E\\u7EA7\\u9632\\u5177)"
-    },
-    itemname6300028: {
-        i18n_id: "itemname6300028",
-        i18n_sb: "\\u6731\\u96C0\\u51A0\\u793C\\u76D2(\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u7F18\\u5206\\u795E\\u7EA7\\u9632\\u5177)"
-    },
+    itemname6300018: { i18n_id: "itemname6300018", i18n_sb: "朱雀冠礼盒(蜀·孙尚香缘分神级防具)" },
+    itemname6300028: { i18n_id: "itemname6300028", i18n_sb: "朱雀冠礼盒(群·蔡文姬缘分神级防具)" },
     itemname6300038: { i18n_id: "itemname6300038", i18n_sb: "闪电礼盒(张角缘分神级锦囊)" },
     itemname6300048: { i18n_id: "itemname6300048", i18n_sb: "骅骝礼盒(华佗缘分神级坐骑)" },
     itemname6300058: { i18n_id: "itemname6300058", i18n_sb: "的卢礼盒(刘备缘分神级坐骑)" },
-    itemname6300068: {
-        i18n_id: "itemname6300068",
-        i18n_sb: "\\u8FFD\\u98CE\\u793C\\u76D2\\uFF08\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u7F18\\u5206\\u91D1\\u5750\\u9A91\\uFF09"
-    },
+    itemname6300068: { i18n_id: "itemname6300068", i18n_sb: "追风礼盒（群·蔡文姬缘分金坐骑）" },
     itemname6300078: { i18n_id: "itemname6300078", i18n_sb: "快航礼盒（周泰缘分金坐骑）" },
     itemname6300097: { i18n_id: "itemname6300097", i18n_sb: "丈八蛇矛礼盒（夜夜星彩缘分神级武器）" },
     itemname6300107: { i18n_id: "itemname6300107", i18n_sb: "绝影宝箱(贾诩缘分神级坐骑)" },
@@ -5041,7 +4807,7 @@
     itemname791578: { i18n_id: "itemname791578", i18n_sb: "普通礼包A" },
     itemname791588: { i18n_id: "itemname791588", i18n_sb: "春节论坛贴吧礼包码" },
     itemname791598: { i18n_id: "itemname791598", i18n_sb: "361礼包" },
-    itemname9181003: { i18n_id: "itemname9181003", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44" },
+    itemname9181003: { i18n_id: "itemname9181003", i18n_sb: "魔·马超魂魄" },
     itemname791611: { i18n_id: "itemname791611", i18n_sb: "『壕国兵长陆逊』*1" },
     itemname791621: { i18n_id: "itemname791621", i18n_sb: "灵芝*50" },
     itemname791631: { i18n_id: "itemname791631", i18n_sb: "白金公会礼包" },
@@ -5062,28 +4828,25 @@
     itemname600077: { i18n_id: "itemname600077", i18n_sb: "洗炼石" },
     itemname791712: { i18n_id: "itemname791712", i18n_sb: "一锅包子" },
     itemname791722: { i18n_id: "itemname791722", i18n_sb: "跨服天梯20积分礼包" },
-    itemname791732: { i18n_id: "itemname791732", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*2" },
+    itemname791732: { i18n_id: "itemname791732", i18n_sb: "魔·黄盖魂魄*2" },
     itemname791740: { i18n_id: "itemname791740", i18n_sb: "神兵铸铁*10" },
-    itemname791750: { i18n_id: "itemname791750", i18n_sb: "\\u5173\\u7FBD\\u9B42\\u9B44\\xD730" },
-    itemname791760: { i18n_id: "itemname791760", i18n_sb: "\\u7075\\u829D\\xD7500" },
+    itemname791750: { i18n_id: "itemname791750", i18n_sb: "关羽魂魄×30" },
+    itemname791760: { i18n_id: "itemname791760", i18n_sb: "灵芝×500" },
     itemname791770: { i18n_id: "itemname791770", i18n_sb: "108元宝" },
-    itemname791780: { i18n_id: "itemname791780", i18n_sb: "\\u7075\\u829D\\xD7600" },
+    itemname791780: { i18n_id: "itemname791780", i18n_sb: "灵芝×600" },
     itemname11100006: { i18n_id: "itemname11100006", i18n_sb: "女神春华" },
     itemname21100007: { i18n_id: "itemname21100007", i18n_sb: "女神文姬皮肤" },
     itemname791787: { i18n_id: "itemname791787", i18n_sb: "女神大乔礼包" },
     itemname791797: { i18n_id: "itemname791797", i18n_sb: "女神小乔皮肤礼包" },
-    itemname791805: { i18n_id: "itemname791805", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u793C\\u5305" },
+    itemname791805: { i18n_id: "itemname791805", i18n_sb: "魔·张飞礼包" },
     itemname545021: { i18n_id: "itemname545021", i18n_sb: "第45章第1个宝箱" },
     itemname548022: { i18n_id: "itemname548022", i18n_sb: "第48章第2个宝箱" },
     itemname10547010: { i18n_id: "itemname10547010", i18n_sb: "第47章隐藏宝箱" },
     itemname791816: { i18n_id: "itemname791816", i18n_sb: "谢礼1(困难)" },
     itemname791826: { i18n_id: "itemname791826", i18n_sb: "谢礼4(深渊)" },
     itemname600097: { i18n_id: "itemname600097", i18n_sb: "中级精炼石" },
-    itemname600105: { i18n_id: "itemname600105", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD71886" },
-    itemname7710002: {
-        i18n_id: "itemname7710002",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*1"
-    },
+    itemname600105: { i18n_id: "itemname600105", i18n_sb: "主公经验×1886" },
+    itemname7710002: { i18n_id: "itemname7710002", i18n_sb: "神秘商品之魔·马超魂魄*1" },
     itemname7710012: { i18n_id: "itemname7710012", i18n_sb: "神秘商品之孙权魂魄*1" },
     itemname7710022: { i18n_id: "itemname7710022", i18n_sb: "神秘商品之张角魂魄*1" },
     itemname7710032: { i18n_id: "itemname7710032", i18n_sb: "神秘商品之甄姬魂魄*1" },
@@ -5204,7 +4967,7 @@
     itemdesc9122007: { i18n_id: "itemdesc9122007", i18n_sb: "马岱魂魄" },
     itemdesc9122023: { i18n_id: "itemdesc9122023", i18n_sb: "关索魂魄" },
     itemdesc9164001: { i18n_id: "itemdesc9164001", i18n_sb: "巴蜀刀兵魂魄" },
-    itemdesc9131006: { i18n_id: "itemdesc9131006", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44" },
+    itemdesc9131006: { i18n_id: "itemdesc9131006", i18n_sb: "吴·孙尚香魂魄" },
     itemdesc9132016: { i18n_id: "itemdesc9132016", i18n_sb: "丁奉魂魄" },
     itemdesc9133011: { i18n_id: "itemdesc9133011", i18n_sb: "朱治魂魄" },
     itemdesc9141003: { i18n_id: "itemdesc9141003", i18n_sb: "貂蝉魂魄" },
@@ -5261,10 +5024,7 @@
     itemdesc303104: { i18n_id: "itemdesc303104", i18n_sb: "【箭雨】以武力取胜的方法之四，已在士兵中普及，属攻击技能，主攻。行动时较困难触发，可对敌方单体造成攻击伤害。" },
     itemdesc302104: { i18n_id: "itemdesc302104", i18n_sb: "【锋矢】能使人增加攻击力的阵法，属被动技能，主攻。装备后，可增加自身攻击力。" },
     itemdesc351014: { i18n_id: "itemdesc351014", i18n_sb: "【集智】黄月英天资聪慧的秘诀，属被动技能，主智。装备后，可增加自身的智力。" },
-    itemdesc351036: {
-        i18n_id: "itemdesc351036",
-        i18n_sb: "\\u3010\\u6D89\\u730E\\u3011\\u58EB\\u522B\\u4E09\\u65E5\\uFF0C\\u5373\\u66F4\\u522E\\u76EE\\u76F8\\u5F85\\uFF0C\\u5982\\u4ECA\\u7684\\u795E\\xB7\\u5415\\u8499\\u535A\\u5B66\\u6D3D\\u95FB\\u3001\\u6D89\\u730E\\u751A\\u5E7F\\u3002\\u8BE5\\u6280\\u80FD\\u4E3B\\u667A\\u548C\\u9632\\uFF0C\\u88C5\\u5907\\u540E\\uFF0C\\u53EF\\u63D0\\u5347\\u81EA\\u8EAB\\u7684\\u667A\\u529B\\u4E0E\\u9632\\u5FA1\\u3002"
-    },
+    itemdesc351036: { i18n_id: "itemdesc351036", i18n_sb: "【涉猎】士别三日，即更刮目相待，如今的神·吕蒙博学洽闻、涉猎甚广。该技能主智和防，装备后，可提升自身的智力与防御。" },
     itemdesc9312002: { i18n_id: "itemdesc9312002", i18n_sb: "奇策残卷" },
     itemdesc9312022: { i18n_id: "itemdesc9312022", i18n_sb: "宣烈残卷" },
     itemdesc9321013: { i18n_id: "itemdesc9321013", i18n_sb: "枪舞残卷" },
@@ -5297,122 +5057,38 @@
     itemdesc164059: { i18n_id: "itemdesc164059", i18n_sb: "冀州重斧兵" },
     itemdesc121013: { i18n_id: "itemdesc121013", i18n_sb: "张星彩" },
     itemdesc171012: { i18n_id: "itemdesc171012", i18n_sb: "英雄王关羽" },
-    itemdesc79111007: {
-        i18n_id: "itemdesc79111007",
-        i18n_sb: "\\u9E92\\u9E9F\\u888D\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79112017: {
-        i18n_id: "itemdesc79112017",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u66F9\\u64CD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79113018: {
-        i18n_id: "itemdesc79113018",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u66F9\\u64CD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164018: {
-        i18n_id: "itemdesc79164018",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u957F\\u67AA\\u5175\\xD71,\\u9752\\u9CDE\\u76D4\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121011: {
-        i18n_id: "itemdesc79121011",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD74,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79122010: {
-        i18n_id: "itemdesc79122010",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u90ED\\u5609\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79123009: {
-        i18n_id: "itemdesc79123009",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5218\\u5907\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164009: {
-        i18n_id: "itemdesc79164009",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5DF4\\u8700\\u5927\\u5200\\u5175\\xD71,\\u9752\\u9CDE\\u76D4\\u788E\\u7247\\xD71"
-    },
-    itemdesc79131012: {
-        i18n_id: "itemdesc79131012",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79132020: {
-        i18n_id: "itemdesc79132020",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u9A6C\\u8D85\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79164012: {
-        i18n_id: "itemdesc79164012",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C5F\\u4E1C\\u5927\\u5200\\u5175\\xD71,\\u767D\\u9B03\\u788E\\u7247\\xD71"
-    },
-    itemdesc79141008: {
-        i18n_id: "itemdesc79141008",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79142018: {
-        i18n_id: "itemdesc79142018",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u6C99\\u91CC\\u98DE\\u788E\\u7247\\xD72"
-    },
-    itemdesc79143017: {
-        i18n_id: "itemdesc79143017",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u8881\\u7ECD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164055: {
-        i18n_id: "itemdesc79164055",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5180\\u5DDE\\u65A7\\u5175\\xD71,\\u5434\\u516D\\u5251\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164026: {
-        i18n_id: "itemdesc79164026",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u897F\\u51C9\\u91CD\\u9524\\u5175\\xD71,\\u9752\\u9CDE\\u76D4\\u788E\\u7247\\xD71"
-    },
-    itemdesc79143022: {
-        i18n_id: "itemdesc79143022",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5B59\\u6743\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79181001: {
-        i18n_id: "itemdesc79181001",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79192004: {
-        i18n_id: "itemdesc79192004",
-        i18n_sb: "\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7200"
-    },
-    itemdesc79171004: { i18n_id: "itemdesc79171004", i18n_sb: "\\u4F24\\u901D\\xD71,\\u7075\\u829D\\xD71000" },
-    itemdesc79111005: {
-        i18n_id: "itemdesc79111005",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79171011: {
-        i18n_id: "itemdesc79171011",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79131011: {
-        i18n_id: "itemdesc79131011",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
+    itemdesc79111007: { i18n_id: "itemdesc79111007", i18n_sb: "麒麟袍碎片×3,灵芝×500" },
+    itemdesc79112017: { i18n_id: "itemdesc79112017", i18n_sb: "元宝×60,曹操魂魄×3" },
+    itemdesc79113018: { i18n_id: "itemdesc79113018", i18n_sb: "元宝×40,曹操魂魄×3" },
+    itemdesc79164018: { i18n_id: "itemdesc79164018", i18n_sb: "元宝×20,青州长枪兵×1,青鳞盔碎片×1" },
+    itemdesc79121011: { i18n_id: "itemdesc79121011", i18n_sb: "神·诸葛亮魂魄×4,灵芝×1000" },
+    itemdesc79122010: { i18n_id: "itemdesc79122010", i18n_sb: "元宝×60,郭嘉魂魄×4" },
+    itemdesc79123009: { i18n_id: "itemdesc79123009", i18n_sb: "元宝×40,刘备魂魄×3" },
+    itemdesc79164009: { i18n_id: "itemdesc79164009", i18n_sb: "元宝×20,巴蜀大刀兵×1,青鳞盔碎片×1" },
+    itemdesc79131012: { i18n_id: "itemdesc79131012", i18n_sb: "神·周瑜魂魄×3,灵芝×1000" },
+    itemdesc79132020: { i18n_id: "itemdesc79132020", i18n_sb: "元宝×60,马超魂魄×4" },
+    itemdesc79164012: { i18n_id: "itemdesc79164012", i18n_sb: "元宝×20,江东大刀兵×1,白鬃碎片×1" },
+    itemdesc79141008: { i18n_id: "itemdesc79141008", i18n_sb: "神·周瑜魂魄×2,灵芝×1000" },
+    itemdesc79142018: { i18n_id: "itemdesc79142018", i18n_sb: "元宝×60,沙里飞碎片×2" },
+    itemdesc79143017: { i18n_id: "itemdesc79143017", i18n_sb: "元宝×40,袁绍魂魄×3" },
+    itemdesc79164055: { i18n_id: "itemdesc79164055", i18n_sb: "元宝×20,冀州斧兵×1,吴六剑碎片×1" },
+    itemdesc79164026: { i18n_id: "itemdesc79164026", i18n_sb: "元宝×20,西凉重锤兵×1,青鳞盔碎片×1" },
+    itemdesc79143022: { i18n_id: "itemdesc79143022", i18n_sb: "元宝×40,孙权魂魄×3" },
+    itemdesc79181001: { i18n_id: "itemdesc79181001", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79192004: { i18n_id: "itemdesc79192004", i18n_sb: "木牛流马碎片×3,灵芝×200" },
+    itemdesc79171004: { i18n_id: "itemdesc79171004", i18n_sb: "伤逝×1,灵芝×1000" },
+    itemdesc79111005: { i18n_id: "itemdesc79111005", i18n_sb: "神·吕布魂魄×3,灵芝×1000" },
+    itemdesc79171011: { i18n_id: "itemdesc79171011", i18n_sb: "神·吕布魂魄×2,灵芝×1000" },
+    itemdesc79131011: { i18n_id: "itemdesc79131011", i18n_sb: "神·吕蒙魂魄×2,灵芝×1000" },
     itemdesc790216: { i18n_id: "itemdesc790216", i18n_sb: "打开后获得100元宝" },
-    itemdesc790229: {
-        i18n_id: "itemdesc790229",
-        i18n_sb: "\\u5185\\u542B\\u4E08\\u516B\\u86C7\\u77DB\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790239: {
-        i18n_id: "itemdesc790239",
-        i18n_sb: "\\u5185\\u542B\\u516B\\u5366\\u9635\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790249: {
-        i18n_id: "itemdesc790249",
-        i18n_sb: "\\u5185\\u542B\\u7EDD\\u5F71\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790259: {
-        i18n_id: "itemdesc790259",
-        i18n_sb: "\\u5185\\u542B\\u5357\\u86EE\\u5165\\u4FB5\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790269: {
-        i18n_id: "itemdesc790269",
-        i18n_sb: "\\u5185\\u542B\\u706B\\u653B\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790279: {
-        i18n_id: "itemdesc790279",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u7075\\u829D\\xD7500"
-    },
+    itemdesc790229: { i18n_id: "itemdesc790229", i18n_sb: "内含丈八蛇矛碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790239: { i18n_id: "itemdesc790239", i18n_sb: "内含八卦阵碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790249: { i18n_id: "itemdesc790249", i18n_sb: "内含绝影碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790259: { i18n_id: "itemdesc790259", i18n_sb: "内含南蛮入侵碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790269: { i18n_id: "itemdesc790269", i18n_sb: "内含火攻碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790279: { i18n_id: "itemdesc790279", i18n_sb: "打开可获得：灵芝×500" },
     itemdesc790289: { i18n_id: "itemdesc790289", i18n_sb: "含有诸葛亮*1" },
-    itemdesc790299: { i18n_id: "itemdesc790299", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7100" },
+    itemdesc790299: { i18n_id: "itemdesc790299", i18n_sb: "内含灵芝×100" },
     itemdesc791010: { i18n_id: "itemdesc791010", i18n_sb: "首充双倍,续充另送元宝" },
     itemdesc791013: { i18n_id: "itemdesc791013", i18n_sb: "内含 10个银宝箱 10个银钥匙" },
     itemdesc791023: { i18n_id: "itemdesc791023", i18n_sb: "有大量机会获得雌雄双股剑碎片以及其他稀有道具" },
@@ -5461,17 +5137,11 @@
     itemdesc88142002: { i18n_id: "itemdesc88142002", i18n_sb: "高顺道具（20级）" },
     itemdesc790310: { i18n_id: "itemdesc790310", i18n_sb: "内含：20级典韦一个" },
     itemdesc790320: { i18n_id: "itemdesc790320", i18n_sb: "内含：20级张星彩一个" },
-    itemdesc790330: {
-        i18n_id: "itemdesc790330",
-        i18n_sb: "\\u5185\\u542B\\uFF1A20\\u7EA7\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u4E00\\u4E2A"
-    },
+    itemdesc790330: { i18n_id: "itemdesc790330", i18n_sb: "内含：20级吴·孙尚香一个" },
     itemdesc790340: { i18n_id: "itemdesc790340", i18n_sb: "内含：20级吕布一个" },
     itemdesc790350: { i18n_id: "itemdesc790350", i18n_sb: "内含：20级李儒一个" },
     itemdesc87111021: { i18n_id: "itemdesc87111021", i18n_sb: "王异道具（1级）" },
-    itemdesc87121014: {
-        i18n_id: "itemdesc87121014",
-        i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9053\\u5177\\uFF081\\u7EA7\\uFF09"
-    },
+    itemdesc87121014: { i18n_id: "itemdesc87121014", i18n_sb: "蜀·孙尚香道具（1级）" },
     itemdesc87131007: { i18n_id: "itemdesc87131007", i18n_sb: "大乔道具（1级）" },
     itemdesc87141003: { i18n_id: "itemdesc87141003", i18n_sb: "貂蝉道具（1级）" },
     itemdesc87171001: { i18n_id: "itemdesc87171001", i18n_sb: "兵长陆逊道具（1级）" },
@@ -5481,7 +5151,7 @@
     itemdesc790391: { i18n_id: "itemdesc790391", i18n_sb: "内含：1级华佗一个" },
     itemdesc790401: { i18n_id: "itemdesc790401", i18n_sb: "内含：技能“天妒”一个" },
     itemdesc790411: { i18n_id: "itemdesc790411", i18n_sb: "内含：技能“帷幕”一个" },
-    itemdesc791407: { i18n_id: "itemdesc791407", i18n_sb: "360\\xD7\\xD7\\u793C\\u5305" },
+    itemdesc791407: { i18n_id: "itemdesc791407", i18n_sb: "360××礼包" },
     itemdesc531022: { i18n_id: "itemdesc531022", i18n_sb: "第31章第2个宝箱" },
     itemdesc534023: { i18n_id: "itemdesc534023", i18n_sb: "第34章第3个宝箱" },
     itemdesc538021: { i18n_id: "itemdesc538021", i18n_sb: "第38章第1个宝箱" },
@@ -5497,40 +5167,16 @@
     itemdesc791417: { i18n_id: "itemdesc791417", i18n_sb: "北斗礼包" },
     itemdesc791427: { i18n_id: "itemdesc791427", i18n_sb: "圣诞节个人礼包" },
     itemdesc791437: { i18n_id: "itemdesc791437", i18n_sb: "三国杀活动7" },
-    itemdesc790437: {
-        i18n_id: "itemdesc790437",
-        i18n_sb: "\\u5185\\u542B\\u8BF8\\u845B\\u8FDE\\u5F29\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790447: {
-        i18n_id: "itemdesc790447",
-        i18n_sb: "\\u5185\\u542B\\u7384\\u6B66\\u76FE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790457: {
-        i18n_id: "itemdesc790457",
-        i18n_sb: "\\u5185\\u542B\\u5927\\u5B9B\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790467: {
-        i18n_id: "itemdesc790467",
-        i18n_sb: "\\u5185\\u542B\\u4E07\\u7BAD\\u9F50\\u53D1\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790477: {
-        i18n_id: "itemdesc790477",
-        i18n_sb: "\\u5185\\u542B\\u6C99\\u91CC\\u98DE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
+    itemdesc790437: { i18n_id: "itemdesc790437", i18n_sb: "内含诸葛连弩碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790447: { i18n_id: "itemdesc790447", i18n_sb: "内含玄武盾碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790457: { i18n_id: "itemdesc790457", i18n_sb: "内含大宛碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790467: { i18n_id: "itemdesc790467", i18n_sb: "内含万箭齐发碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790477: { i18n_id: "itemdesc790477", i18n_sb: "内含沙里飞碎片×1，神装碎片礼盒×2，金装礼盒×3" },
     itemdesc790480: { i18n_id: "itemdesc790480", i18n_sb: "内含：1级于禁一个" },
-    itemdesc791445: {
-        i18n_id: "itemdesc791445",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A100\\u7075\\u829D \\u97E9\\u5F53\\u9B42\\u9B44\\xD710"
-    },
-    itemdesc791455: {
-        i18n_id: "itemdesc791455",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5173\\u5E73\\u9B42\\u9B44\\xD72\\uFF0C\\u91D1\\u7BB1\\u5B50\\xD75 \\u91D1\\u94A5\\u5319\\xD75"
-    },
+    itemdesc791445: { i18n_id: "itemdesc791445", i18n_sb: "打开可获得：100灵芝 韩当魂魄×10" },
+    itemdesc791455: { i18n_id: "itemdesc791455", i18n_sb: "打开可获得：关平魂魄×2，金箱子×5 金钥匙×5" },
     itemdesc791463: { i18n_id: "itemdesc791463", i18n_sb: "30个灵芝" },
-    itemdesc791473: {
-        i18n_id: "itemdesc791473",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5927\\u5B9B\\xD71"
-    },
+    itemdesc791473: { i18n_id: "itemdesc791473", i18n_sb: "打开可获得：大宛×1" },
     itemdesc791483: { i18n_id: "itemdesc791483", i18n_sb: "红茶*1 经验金书*1" },
     itemdesc40121018: { i18n_id: "itemdesc40121018", i18n_sb: "121018" },
     itemdesc40111016: { i18n_id: "itemdesc40111016", i18n_sb: "111016" },
@@ -5565,24 +5211,18 @@
     itemdesc791579: { i18n_id: "itemdesc791579", i18n_sb: "L1LB" },
     itemdesc791589: { i18n_id: "itemdesc791589", i18n_sb: "打开可获得：元宝宝箱*4" },
     itemdesc791599: { i18n_id: "itemdesc791599", i18n_sb: "打开可获得：包子*1 红茶*1 金钥匙*5 金钥匙*5" },
-    itemdesc9181002: { i18n_id: "itemdesc9181002", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44" },
+    itemdesc9181002: { i18n_id: "itemdesc9181002", i18n_sb: "魔·貂蝉魂魄" },
     itemdesc791612: { i18n_id: "itemdesc791612", i18n_sb: "内含神级锦囊顺手牵羊*1" },
-    itemdesc791622: { i18n_id: "itemdesc791622", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*1" },
+    itemdesc791622: { i18n_id: "itemdesc791622", i18n_sb: "内含魔·马超魂魄*1" },
     itemdesc791632: { i18n_id: "itemdesc791632", i18n_sb: "400元宝 300灵芝 5包子 5红茶" },
-    itemdesc791642: {
-        i18n_id: "itemdesc791642",
-        i18n_sb: "\\u91D1\\u7BB1\\xD715\\uFF0C\\u94F6\\u7BB1\\xD715\\uFF0C\\u94DC\\u7BB1\\xD715\\uFF0C\\u52FE\\u7389\\xD715\\uFF0C\\u5143\\u5B9D\\xD750"
-    },
+    itemdesc791642: { i18n_id: "itemdesc791642", i18n_sb: "金箱×15，银箱×15，铜箱×15，勾玉×15，元宝×50" },
     itemdesc6300086: { i18n_id: "itemdesc6300086", i18n_sb: "可以获得诸葛连弩碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
-    itemdesc791653: {
-        i18n_id: "itemdesc791653",
-        i18n_sb: "80\\u7075\\u829D\\u3001250\\u5143\\u5B9D\\u3001\\u91D1\\u7BB1\\u5B50\\xD710\\u3001\\u91D1\\u94A5\\u5319\\xD710"
-    },
+    itemdesc791653: { i18n_id: "itemdesc791653", i18n_sb: "80灵芝、250元宝、金箱子×10、金钥匙×10" },
     itemdesc791663: { i18n_id: "itemdesc791663", i18n_sb: "内含许愿流星*3" },
     itemdesc791673: { i18n_id: "itemdesc791673", i18n_sb: "内含神将刘备*1" },
     itemdesc791677: { i18n_id: "itemdesc791677", i18n_sb: "打开可获得倒霉呆呆" },
     itemdesc791687: { i18n_id: "itemdesc791687", i18n_sb: "城之宝匣*600" },
-    itemdesc791697: { i18n_id: "itemdesc791697", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*1" },
+    itemdesc791697: { i18n_id: "itemdesc791697", i18n_sb: "内含魔·凌统魂魄*1" },
     itemdesc791703: { i18n_id: "itemdesc791703", i18n_sb: "50元宝、5银宝箱、5银钥匙" },
     itemdesc541021: { i18n_id: "itemdesc541021", i18n_sb: "第41章第1个宝箱" },
     itemdesc544022: { i18n_id: "itemdesc544022", i18n_sb: "第44章第2个宝箱" },
@@ -5592,43 +5232,25 @@
     itemdesc600078: { i18n_id: "itemdesc600078", i18n_sb: "可以获得随机1级宝石一颗" },
     itemdesc791713: { i18n_id: "itemdesc791713", i18n_sb: "膜拜赏赐，悬挂后，膜拜过您的人都可获得1杯红茶。" },
     itemdesc791723: { i18n_id: "itemdesc791723", i18n_sb: "打开可获得10个1级宝石箱" },
-    itemdesc791733: { i18n_id: "itemdesc791733", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*1" },
+    itemdesc791733: { i18n_id: "itemdesc791733", i18n_sb: "内含魔·贾诩魂魄*1" },
     itemdesc791741: { i18n_id: "itemdesc791741", i18n_sb: "打开可获得112个1级宝石箱" },
-    itemdesc791751: {
-        i18n_id: "itemdesc791751",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u864E\\u5578\\xD71\\u3001\\u7075\\u829D\\xD7500\\u3001\\u7ECF\\u9A8C\\u795E\\u4E66\\xD715"
-    },
-    itemdesc791761: { i18n_id: "itemdesc791761", i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u66F9\\u64CD\\xD71" },
-    itemdesc791771: {
-        i18n_id: "itemdesc791771",
-        i18n_sb: "\\u7D2F\\u8BA1\\u767B\\u5F55\\u9001\\u795E\\u5C06\\u7B2C7\\u5929\\u5218\\u5907\\xD71"
-    },
-    itemdesc791781: { i18n_id: "itemdesc791781", i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD7750" },
+    itemdesc791751: { i18n_id: "itemdesc791751", i18n_sb: "打开可获得虎啸×1、灵芝×500、经验神书×15" },
+    itemdesc791761: { i18n_id: "itemdesc791761", i18n_sb: "打开可获得曹操×1" },
+    itemdesc791771: { i18n_id: "itemdesc791771", i18n_sb: "累计登录送神将第7天刘备×1" },
+    itemdesc791781: { i18n_id: "itemdesc791781", i18n_sb: "打开可获得灵芝×750" },
     itemdesc11100007: { i18n_id: "itemdesc11100007", i18n_sb: "女神文姬" },
     itemdesc21100008: { i18n_id: "itemdesc21100008", i18n_sb: "女神月英皮肤" },
-    itemdesc791788: {
-        i18n_id: "itemdesc791788",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u5C0F\\u4E54\\xD71"
-    },
-    itemdesc791798: {
-        i18n_id: "itemdesc791798",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u795D\\u878D\\u76AE\\u80A4\\xD71"
-    },
-    itemdesc791806: { i18n_id: "itemdesc791806", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\xD71" },
+    itemdesc791788: { i18n_id: "itemdesc791788", i18n_sb: "打开可获得女神小乔×1" },
+    itemdesc791798: { i18n_id: "itemdesc791798", i18n_sb: "打开可获得女神祝融皮肤×1" },
+    itemdesc791806: { i18n_id: "itemdesc791806", i18n_sb: "魔·马超×1" },
     itemdesc545022: { i18n_id: "itemdesc545022", i18n_sb: "第40章第2个宝箱" },
     itemdesc548023: { i18n_id: "itemdesc548023", i18n_sb: "第43章第3个宝箱" },
     itemdesc10548009: { i18n_id: "itemdesc10548009", i18n_sb: "第43章精英宝箱" },
-    itemdesc791817: {
-        i18n_id: "itemdesc791817",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD720\\u3001\\u52FE\\u7389\\xD73\\u3001\\u864E\\u775B\\u77F3\\xD73"
-    },
-    itemdesc791827: {
-        i18n_id: "itemdesc791827",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD710\\u3001\\u52FE\\u7389\\xD74\\u3001\\u864E\\u775B\\u77F3\\xD79"
-    },
+    itemdesc791817: { i18n_id: "itemdesc791817", i18n_sb: "打开可获得灵芝×20、勾玉×3、虎睛石×3" },
+    itemdesc791827: { i18n_id: "itemdesc791827", i18n_sb: "打开可获得灵芝×10、勾玉×4、虎睛石×9" },
     itemdesc600098: { i18n_id: "itemdesc600098", i18n_sb: "熔炼装备可获得，可作为精炼材料，提供大量精炼经验。" },
     itemdesc600106: { i18n_id: "itemdesc600106", i18n_sb: "使用后主公经验可提升3280" },
-    itemdesc7710003: { i18n_id: "itemdesc7710003", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*1" },
+    itemdesc7710003: { i18n_id: "itemdesc7710003", i18n_sb: "魔·貂蝉魂魄*1" },
     itemdesc7710013: { i18n_id: "itemdesc7710013", i18n_sb: "郭嘉魂魄*1" },
     itemdesc7710023: { i18n_id: "itemdesc7710023", i18n_sb: "曹仁魂魄*1" },
     itemdesc7710033: { i18n_id: "itemdesc7710033", i18n_sb: "诸葛亮魂魄*1" },
@@ -5870,7 +5492,7 @@
     dialogname507009014: { i18n_id: "dialogname507009014", i18n_sb: "陆延" },
     dialogname507012011: { i18n_id: "dialogname507012011", i18n_sb: "$UserName" },
     dialogname507012027: { i18n_id: "dialogname507012027", i18n_sb: "神秘人" },
-    dialogname508004022: { i18n_id: "dialogname508004022", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname508004022: { i18n_id: "dialogname508004022", i18n_sb: "吴·孙尚香" },
     dialogname508008022: { i18n_id: "dialogname508008022", i18n_sb: "$UserName" },
     dialogname508012011: { i18n_id: "dialogname508012011", i18n_sb: "$UserName" },
     dialogname508013011: { i18n_id: "dialogname508013011", i18n_sb: "孙策" },
@@ -5907,7 +5529,7 @@
     dialogname517004022: { i18n_id: "dialogname517004022", i18n_sb: "$UserName" },
     dialogname517012012: { i18n_id: "dialogname517012012", i18n_sb: "伏完" },
     dialogname517016011: { i18n_id: "dialogname517016011", i18n_sb: "吕玲绮" },
-    dialogname517017013: { i18n_id: "dialogname517017013", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC" },
+    dialogname517017013: { i18n_id: "dialogname517017013", i18n_sb: "群·蔡文姬" },
     dialogname518004015: { i18n_id: "dialogname518004015", i18n_sb: "$UserName" },
     dialogname518011012: { i18n_id: "dialogname518011012", i18n_sb: "$UserName" },
     dialogname518016012: { i18n_id: "dialogname518016012", i18n_sb: "诸葛亮" },
@@ -5928,7 +5550,7 @@
     dialogname521018017: { i18n_id: "dialogname521018017", i18n_sb: "$UserName(暴走)" },
     dialogname522005016: { i18n_id: "dialogname522005016", i18n_sb: "$UserName" },
     dialogname522010024: { i18n_id: "dialogname522010024", i18n_sb: "诸葛亮" },
-    dialogname522015023: { i18n_id: "dialogname522015023", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname522015023: { i18n_id: "dialogname522015023", i18n_sb: "吴·孙尚香" },
     dialogname522018013: { i18n_id: "dialogname522018013", i18n_sb: "张纮" },
     dialogname522019021: { i18n_id: "dialogname522019021", i18n_sb: "$UserName" },
     dialogname523010012: { i18n_id: "dialogname523010012", i18n_sb: "$UserName" },
@@ -6317,10 +5939,7 @@
     dialogdesc546012017: { i18n_id: "dialogdesc546012017", i18n_sb: "大胆蜀辈，竟敢偷袭祁山，还不快投降！" },
     dialogdesc546016023: { i18n_id: "dialogdesc546016023", i18n_sb: "（街亭守的那么顺利，看样子马谡不会死在这里啊，难道历史又一次要改变了……）" },
     dialogdesc546019021: { i18n_id: "dialogdesc546019021", i18n_sb: "我已经派兵火攻街亭，你们撑不了多久！" },
-    dialogdesc547004011: {
-        i18n_id: "dialogdesc547004011",
-        i18n_sb: "\\u9A6C\\u8C21\\u64C5\\u81EA\\u627E\\u4EC0\\u4E48\\u4E1C\\u897F\\u5BFC\\u81F4\\u8857\\u4EAD\\u5931\\u5B88\\xA0\\uFF0C\\u8FD9\\u4E8B\\u548C\\u5386\\u53F2\\u4E0D\\u4E00\\u6837\\uFF0C\\xA0\\u6211\\u8981\\u548C\\u8BF8\\u845B\\u4EAE\\u8BF4\\u8BF4"
-    },
+    dialogdesc547004011: { i18n_id: "dialogdesc547004011", i18n_sb: "马谡擅自找什么东西导致街亭失守 ，这事和历史不一样， 我要和诸葛亮说说" },
     dialogdesc547012011: { i18n_id: "dialogdesc547012011", i18n_sb: "军师让我劝你放弃替马谡将军翻案" },
     dialogdesc547016014: { i18n_id: "dialogdesc547016014", i18n_sb: "就凭你也想关住我？太可笑了！看我收拾你！" },
     dialogdesc547018024: { i18n_id: "dialogdesc547018024", i18n_sb: "我不相信你会这么荒唐的认输！" },
@@ -6478,10 +6097,7 @@
     "8210040202": { i18n_id: "8210040202", i18n_sb: "图鉴点亮[装备]雌雄双股剑" },
     "8210070402": { i18n_id: "8210070402", i18n_sb: "张飞突破至4星" },
     "8210110202": { i18n_id: "8210110202", i18n_sb: "图鉴点亮[装备]八卦阵" },
-    "8210140402": {
-        i18n_id: "8210140402",
-        i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u7A81\\u7834\\u81F34\\u661F"
-    },
+    "8210140402": { i18n_id: "8210140402", i18n_sb: "蜀·孙尚香突破至4星" },
     "8210180202": { i18n_id: "8210180202", i18n_sb: "图鉴点亮[武将]关羽" },
     "8220080102": { i18n_id: "8220080102", i18n_sb: "图鉴点亮[装备]青龙偃月刀" },
     "8220100302": { i18n_id: "8220100302", i18n_sb: "过关斩将神榜通过26关" },
@@ -7043,7 +6659,7 @@
     robot_4267: { i18n_id: "robot_4267", i18n_sb: "高级吴将队" },
     robot_4277: { i18n_id: "robot_4277", i18n_sb: "中级菜刀队" },
     robot_4287: { i18n_id: "robot_4287", i18n_sb: "夏侯惇队" },
-    robot_4297: { i18n_id: "robot_4297", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u961F" },
+    robot_4297: { i18n_id: "robot_4297", i18n_sb: "蜀·孙尚香队" },
     robot_4307: { i18n_id: "robot_4307", i18n_sb: "貂蝉队" },
     robot_4317: { i18n_id: "robot_4317", i18n_sb: "于吉队" },
     robot_4327: { i18n_id: "robot_4327", i18n_sb: "料事如神的黄悦迎" },
@@ -7549,19 +7165,19 @@
     },
     union_war_reward_title9: { i18n_id: "union_war_reward_title9", i18n_sb: "跨服公会战决赛入围奖励" },
     union_war_reward_desc9: { i18n_id: "union_war_reward_desc9", i18n_sb: "跨服公会战决赛入围奖励：贡献礼盒*1,雪国之宝匣*50，可获得流星、装备、技能、银两以及稀有武将。" },
-    mystery_name_107710003: { i18n_id: "mystery_name_107710003", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*1" },
+    mystery_name_107710003: { i18n_id: "mystery_name_107710003", i18n_sb: "魔·貂蝉魂魄*1" },
     mystery_name_107710013: { i18n_id: "mystery_name_107710013", i18n_sb: "郭嘉魂魄*1" },
     mystery_name_107710023: { i18n_id: "mystery_name_107710023", i18n_sb: "曹仁魂魄*1" },
     mystery_name_107710033: { i18n_id: "mystery_name_107710033", i18n_sb: "诸葛亮魂魄*1" },
     mystery_name_107710043: { i18n_id: "mystery_name_107710043", i18n_sb: "姜维魂魄*1" },
-    mystery_name_107710059: { i18n_id: "mystery_name_107710059", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*1" },
+    mystery_name_107710059: { i18n_id: "mystery_name_107710059", i18n_sb: "魔·贾诩魂魄*1" },
     mystery_name_107710069: { i18n_id: "mystery_name_107710069", i18n_sb: "陆逊魂魄*1" },
     mystery_name_107710079: { i18n_id: "mystery_name_107710079", i18n_sb: "孟获魂魄*1" },
     mystery_name_107710089: { i18n_id: "mystery_name_107710089", i18n_sb: "贾诩魂魄*1" },
     mystery_name_107710105: { i18n_id: "mystery_name_107710105", i18n_sb: "曹操魂魄*3" },
     mystery_name_107710115: { i18n_id: "mystery_name_107710115", i18n_sb: "华佗魂魄*3" },
     mystery_name_107710125: { i18n_id: "mystery_name_107710125", i18n_sb: "曹丕魂魄*3" },
-    mystery_name_107710135: { i18n_id: "mystery_name_107710135", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*3" },
+    mystery_name_107710135: { i18n_id: "mystery_name_107710135", i18n_sb: "蜀·孙尚香魂魄*3" },
     mystery_name_107710151: { i18n_id: "mystery_name_107710151", i18n_sb: "关羽魂魄*3" },
     mystery_name_107710161: { i18n_id: "mystery_name_107710161", i18n_sb: "黄月英魂魄*3" },
     mystery_name_107710171: { i18n_id: "mystery_name_107710171", i18n_sb: "吕布魂魄*3" },
@@ -7625,9 +7241,9 @@
     itemname142003: { i18n_id: "itemname142003", i18n_sb: "公孙瓒" },
     itemname111006: { i18n_id: "itemname111006", i18n_sb: "张辽" },
     itemname131005: { i18n_id: "itemname131005", i18n_sb: "吕蒙" },
-    itemname181002: { i18n_id: "itemname181002", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749" },
+    itemname181002: { i18n_id: "itemname181002", i18n_sb: "魔·貂蝉" },
     itemname122025: { i18n_id: "itemname122025", i18n_sb: "花鬘" },
-    itemname165001: { i18n_id: "itemname165001", i18n_sb: "\\u795E\\xB7\\u5927\\u5200\\u5175" },
+    itemname165001: { i18n_id: "itemname165001", i18n_sb: "神·大刀兵" },
     itemname7750007: { i18n_id: "itemname7750007", i18n_sb: "神秘商品之大宛碎片*3" },
     itemname7750017: { i18n_id: "itemname7750017", i18n_sb: "神秘商品之古锭刀碎片*3" },
     itemname7750027: { i18n_id: "itemname7750027", i18n_sb: "神秘商品之白银狮子碎片*3" },
@@ -7647,7 +7263,7 @@
     itemname792069: { i18n_id: "itemname792069", i18n_sb: "冀州重骑兵礼包" },
     itemname792079: { i18n_id: "itemname792079", i18n_sb: "庞统礼包" },
     itemname792089: { i18n_id: "itemname792089", i18n_sb: "吕蒙礼包" },
-    itemname792099: { i18n_id: "itemname792099", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u793C\\u5305" },
+    itemname792099: { i18n_id: "itemname792099", i18n_sb: "魔·貂蝉礼包" },
     itemname792109: { i18n_id: "itemname792109", i18n_sb: "倒霉呆呆礼包" },
     itemname792119: { i18n_id: "itemname792119", i18n_sb: "花鬘礼包" },
     itemname792129: { i18n_id: "itemname792129", i18n_sb: "英雄王关羽礼包" },
@@ -7669,16 +7285,13 @@
     itemname792289: { i18n_id: "itemname792289", i18n_sb: "西凉刀兵魂魄礼包" },
     itemname792299: { i18n_id: "itemname792299", i18n_sb: "庞统魂魄礼包" },
     itemname792309: { i18n_id: "itemname792309", i18n_sb: "徐庶魂魄礼包" },
-    itemname792319: { i18n_id: "itemname792319", i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\u793C\\u5305" },
-    itemname792329: { i18n_id: "itemname792329", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname792319: { i18n_id: "itemname792319", i18n_sb: "神·吕蒙魂魄礼包" },
+    itemname792329: { i18n_id: "itemname792329", i18n_sb: "魔·貂蝉魂魄礼包" },
     itemname792339: { i18n_id: "itemname792339", i18n_sb: "倒霉呆呆魂魄礼包" },
     itemname792349: { i18n_id: "itemname792349", i18n_sb: "花鬘魂魄礼包" },
     itemname792359: { i18n_id: "itemname792359", i18n_sb: "英雄王关羽魂魄礼包" },
     itemname792369: { i18n_id: "itemname792369", i18n_sb: "刘协魂魄礼包" },
-    itemname7740006: {
-        i18n_id: "itemname7740006",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*3"
-    },
+    itemname7740006: { i18n_id: "itemname7740006", i18n_sb: "神秘商品之魔·董卓魂魄*3" },
     itemname7740016: { i18n_id: "itemname7740016", i18n_sb: "神秘商品之马超魂魄*3" },
     itemname7740026: { i18n_id: "itemname7740026", i18n_sb: "神秘商品之甘宁魂魄*3" },
     itemname7740036: { i18n_id: "itemname7740036", i18n_sb: "神秘商品之庞统魂魄*3" },
@@ -7687,7 +7300,7 @@
     itemdesc9171009: { i18n_id: "itemdesc9171009", i18n_sb: "软妹袁姬魂魄" },
     itemdesc124001: { i18n_id: "itemdesc124001", i18n_sb: "昭烈帝" },
     itemdesc111018: { i18n_id: "itemdesc111018", i18n_sb: "徐晃" },
-    itemdesc131002: { i18n_id: "itemdesc131002", i18n_sb: "\\u795E\\xB7\\u5415\\u8499" },
+    itemdesc131002: { i18n_id: "itemdesc131002", i18n_sb: "神·吕蒙" },
     itemdesc171006: { i18n_id: "itemdesc171006", i18n_sb: "夜夜星彩" },
     itemdesc111023: { i18n_id: "itemdesc111023", i18n_sb: "程昱" },
     itemdesc7750003: { i18n_id: "itemdesc7750003", i18n_sb: "赤兔碎片*3" },
@@ -7709,10 +7322,7 @@
     itemdesc792065: { i18n_id: "itemdesc792065", i18n_sb: "打开可获得冀州斧兵*1" },
     itemdesc792075: { i18n_id: "itemdesc792075", i18n_sb: "打开可获得西凉重锤兵*1" },
     itemdesc792085: { i18n_id: "itemdesc792085", i18n_sb: "打开可获得徐晃*1" },
-    itemdesc792095: {
-        i18n_id: "itemdesc792095",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u5415\\u8499*1"
-    },
+    itemdesc792095: { i18n_id: "itemdesc792095", i18n_sb: "打开可获得神·吕蒙*1" },
     itemdesc792105: { i18n_id: "itemdesc792105", i18n_sb: "打开可获得跑男夏侯渊*1" },
     itemdesc792115: { i18n_id: "itemdesc792115", i18n_sb: "打开可获得夜夜星彩*1" },
     itemdesc792125: { i18n_id: "itemdesc792125", i18n_sb: "打开可获得程昱*1" },
@@ -7740,7 +7350,7 @@
     itemdesc792345: { i18n_id: "itemdesc792345", i18n_sb: "打开可获得夜夜星彩魂魄*1" },
     itemdesc792355: { i18n_id: "itemdesc792355", i18n_sb: "打开可获得程昱魂魄*1" },
     itemdesc792365: { i18n_id: "itemdesc792365", i18n_sb: "打开可获得德古拉魏延魂魄*1" },
-    itemdesc7740002: { i18n_id: "itemdesc7740002", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*3" },
+    itemdesc7740002: { i18n_id: "itemdesc7740002", i18n_sb: "魔·马超魂魄*3" },
     itemdesc7740012: { i18n_id: "itemdesc7740012", i18n_sb: "孙权魂魄*3" },
     itemdesc7740022: { i18n_id: "itemdesc7740022", i18n_sb: "张角魂魄*3" },
     itemdesc7740032: { i18n_id: "itemdesc7740032", i18n_sb: "甄姬魂魄*3" },
@@ -7752,7 +7362,7 @@
     queueTeam_10: { i18n_id: "queueTeam_10", i18n_sb: "保存阵容" },
     queueTeam_20: { i18n_id: "queueTeam_20", i18n_sb: "有变更" },
     MysteryStorePrompt_3: { i18n_id: "MysteryStorePrompt_3", i18n_sb: "是否确定花$1魂石兑换$2?" },
-    mystery_name_107700002: { i18n_id: "mystery_name_107700002", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*1" },
+    mystery_name_107700002: { i18n_id: "mystery_name_107700002", i18n_sb: "魔·马超魂魄*1" },
     mystery_name_107700012: { i18n_id: "mystery_name_107700012", i18n_sb: "孙权魂魄*1" },
     mystery_name_107700022: { i18n_id: "mystery_name_107700022", i18n_sb: "张角魂魄*1" },
     mystery_name_107700032: { i18n_id: "mystery_name_107700032", i18n_sb: "甄姬魂魄*1" },
@@ -7765,7 +7375,7 @@
     mystery_name_107700102: { i18n_id: "mystery_name_107700102", i18n_sb: "赵云魂魄*1" },
     mystery_name_107700112: { i18n_id: "mystery_name_107700112", i18n_sb: "兵长陆逊魂魄*1" },
     mystery_name_107700122: { i18n_id: "mystery_name_107700122", i18n_sb: "魏武帝魂魄*1" },
-    mystery_name_107700132: { i18n_id: "mystery_name_107700132", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*3" },
+    mystery_name_107700132: { i18n_id: "mystery_name_107700132", i18n_sb: "魔·董卓魂魄*3" },
     mystery_name_107700142: { i18n_id: "mystery_name_107700142", i18n_sb: "马超魂魄*3" },
     mystery_name_107700152: { i18n_id: "mystery_name_107700152", i18n_sb: "甘宁魂魄*3" },
     mystery_name_107700162: { i18n_id: "mystery_name_107700162", i18n_sb: "庞统魂魄*3" },
@@ -7807,10 +7417,7 @@
     itemname9171015: { i18n_id: "itemname9171015", i18n_sb: "大圣孙坚魂魄" },
     itemname79112012: { i18n_id: "itemname79112012", i18n_sb: "臣服奖励" },
     itemdesc9171015: { i18n_id: "itemdesc9171015", i18n_sb: "大圣孙坚魂魄" },
-    itemdesc79112012: {
-        i18n_id: "itemdesc79112012",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
+    itemdesc79112012: { i18n_id: "itemdesc79112012", i18n_sb: "神·吕蒙魂魄×2,灵芝×1000" },
     "8710150201": { i18n_id: "8710150201", i18n_sb: "天赋异禀" },
     "8120120401": { i18n_id: "8120120401", i18n_sb: "最强属性" },
     "8120120202": { i18n_id: "8120120202", i18n_sb: "天赋技能等级达到30级" },
@@ -7850,10 +7457,7 @@
     stage_29402: { i18n_id: "stage_29402", i18n_sb: "居庸关1-居庸关5" },
     robot_5934: { i18n_id: "robot_5934", i18n_sb: "君临天下队" },
     itemname792703: { i18n_id: "itemname792703", i18n_sb: "女神步练师皮肤礼包" },
-    itemdesc792703: {
-        i18n_id: "itemdesc792703",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u6B65\\u7EC3\\u5E08\\u76AE\\u80A4\\xD71"
-    },
+    itemdesc792703: { i18n_id: "itemdesc792703", i18n_sb: "打开可获得女神步练师皮肤×1" },
     meridian_7: { i18n_id: "meridian_7", i18n_sb: "阴维脉" },
     meridian_1_9: { i18n_id: "meridian_1_9", i18n_sb: "水分" },
     meridian_1_19: { i18n_id: "meridian_1_19", i18n_sb: "紫宫" },
@@ -7902,7 +7506,7 @@
     mystery_name_107700445: { i18n_id: "mystery_name_107700445", i18n_sb: "天香残卷" },
     mystery_name_107700455: { i18n_id: "mystery_name_107700455", i18n_sb: "英姿残卷" },
     mystery_name_107700465: { i18n_id: "mystery_name_107700465", i18n_sb: "红颜残卷" },
-    mystery_name_117710002: { i18n_id: "mystery_name_117710002", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*1" },
+    mystery_name_117710002: { i18n_id: "mystery_name_117710002", i18n_sb: "魔·马超魂魄*1" },
     mystery_name_117710012: { i18n_id: "mystery_name_117710012", i18n_sb: "孙权魂魄*1" },
     mystery_name_117710022: { i18n_id: "mystery_name_117710022", i18n_sb: "张角魂魄*1" },
     mystery_name_117710032: { i18n_id: "mystery_name_117710032", i18n_sb: "甄姬魂魄*1" },
@@ -7914,7 +7518,7 @@
     mystery_name_107740029: { i18n_id: "mystery_name_107740029", i18n_sb: "华雄魂魄*3" },
     mystery_name_107740039: { i18n_id: "mystery_name_107740039", i18n_sb: "赵云魂魄*3" },
     mystery_name_107740049: { i18n_id: "mystery_name_107740049", i18n_sb: "兵长陆逊魂魄*3" },
-    mystery_name_117740003: { i18n_id: "mystery_name_117740003", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*3" },
+    mystery_name_117740003: { i18n_id: "mystery_name_117740003", i18n_sb: "魔·貂蝉魂魄*3" },
     mystery_name_117740013: { i18n_id: "mystery_name_117740013", i18n_sb: "郭嘉魂魄*3" },
     mystery_name_117740023: { i18n_id: "mystery_name_117740023", i18n_sb: "曹仁魂魄*3" },
     mystery_name_117740033: { i18n_id: "mystery_name_117740033", i18n_sb: "诸葛亮魂魄*3" },
@@ -8031,7 +7635,7 @@
     dialogname552019014: { i18n_id: "dialogname552019014", i18n_sb: "$UserName" },
     dialogname552020012: { i18n_id: "dialogname552020012", i18n_sb: "司马懿" },
     dialogname553004014: { i18n_id: "dialogname553004014", i18n_sb: "吴兰" },
-    dialogname553012013: { i18n_id: "dialogname553012013", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    dialogname553012013: { i18n_id: "dialogname553012013", i18n_sb: "魔·马超" },
     dialogname553018012: { i18n_id: "dialogname553018012", i18n_sb: "$UserName" },
     dialogname553019014: { i18n_id: "dialogname553019014", i18n_sb: "王平" },
     dialogname553020022: { i18n_id: "dialogname553020022", i18n_sb: "$UserName" },
@@ -8143,10 +7747,7 @@
     "4710151201": { i18n_id: "4710151201", i18n_sb: "父子同德" },
     "4110241001": { i18n_id: "4110241001", i18n_sb: "亡国之恨" },
     "4410130201": { i18n_id: "4410130201", i18n_sb: "五折钢铠" },
-    itemdesc79141013: {
-        i18n_id: "itemdesc79141013",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79141013: { i18n_id: "itemdesc79141013", i18n_sb: "神·曹操魂魄x2,灵芝x1000" },
     "8410030601": { i18n_id: "8410030601", i18n_sb: "开启觉醒宝箱" },
     "8410130302": { i18n_id: "8410130302", i18n_sb: "累计击杀玩家队伍中的关羽60次" },
     "8310130802": { i18n_id: "8310130802", i18n_sb: "使用觉醒甘宁战斗500次" },
@@ -8184,7 +7785,7 @@
     "8510020101": { i18n_id: "8510020101", i18n_sb: "天赋异禀" },
     "8110060702": { i18n_id: "8110060702", i18n_sb: "觉醒张辽升级图腾至4层2段" },
     juexing_zhangliao_open01: { i18n_id: "juexing_zhangliao_open01", i18n_sb: "张辽突破至5星" },
-    itemname792744: { i18n_id: "itemname792744", i18n_sb: "1\\u7EA7\\u795E\\xB7\\u8D5B\\u96F7\\u793C\\u5305" },
+    itemname792744: { i18n_id: "itemname792744", i18n_sb: "1级神·赛雷礼包" },
     "35103804": { i18n_id: "35103804", i18n_sb: "自身" },
     "4340010901": { i18n_id: "4340010901", i18n_sb: "生存之道" },
     surrunderdesc_559: { i18n_id: "surrunderdesc_559", i18n_sb: "0" },
@@ -8195,10 +7796,7 @@
     "4310201401": { i18n_id: "4310201401", i18n_sb: "治国之道" },
     "4410220601": { i18n_id: "4410220601", i18n_sb: "骁勇善战" },
     itemname791210101: { i18n_id: "itemname791210101", i18n_sb: "臣服奖励" },
-    itemdesc791210101: {
-        i18n_id: "itemdesc791210101",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791210101: { i18n_id: "itemdesc791210101", i18n_sb: "神·司马懿魂魄x2,灵芝x1000" },
     "8410220401": { i18n_id: "8410220401", i18n_sb: "最强属性" },
     "8210100801": { i18n_id: "8210100801", i18n_sb: "觉醒战斗" },
     "8310210102": { i18n_id: "8310210102", i18n_sb: "3星通关纵横天下8（精英）" },
@@ -8229,10 +7827,7 @@
     "8110290201": { i18n_id: "8110290201", i18n_sb: "王元姬的心愿" },
     surrunderdesc_570: { i18n_id: "surrunderdesc_570", i18n_sb: "0" },
     "4710142201": { i18n_id: "4710142201", i18n_sb: "无所畏惧" },
-    itemdesc791710141: {
-        i18n_id: "itemdesc791710141",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791710141: { i18n_id: "itemdesc791710141", i18n_sb: "神·司马懿魂魄x2,灵芝x1000" },
     "8710140601": { i18n_id: "8710140601", i18n_sb: "觉醒图腾" },
     "8710140802": { i18n_id: "8710140802", i18n_sb: "使用觉醒德古拉魏延战斗1000次" },
     "15200202": { i18n_id: "15200202", i18n_sb: "日本弥生时代邪马台国的女王，是个极具神秘色彩的古代女性统治者，在三国时期曾向魏国派过使节。" },
@@ -8268,7 +7863,7 @@
     "31103001": { i18n_id: "31103001", i18n_sb: "昭心" },
     itemdesc351038: {
         i18n_id: "itemdesc351038",
-        i18n_sb: "\\u3010\\u8FDE\\u7834\\u3011\\u795E\\xB7\\u53F8\\u9A6C\\u8FDE\\u73AF\\u7834\\u654C\\uFF0C\\u58EB\\u6C14\\u9AD8\\u6DA8\\uFF0C\\u5C5E\\u88AB\\u52A8\\u6280\\u80FD\\uFF0C\\u4E3B\\u667A\\u3002\\u6BCF\\u6709\\u4E00\\u540D\\u654C\\u65B9\\u6B66\\u5C06\\u9635\\u4EA1\\uFF0C\\u83B7\\u5F97\\u4E00\\u679A\\u201C\\u5FCD\\u201D\\u6807\\u8BB0\\u3002\\u9635\\u4EA1\\u65F6\\u9650\\u4E00\\u6B21\\uFF0C\\u82E5\\u4F60\\u7684\\u201C\\u5FCD\\u201D\\u6807\\u8BB0\\u6570\\u91CF\\u4E3A4\\u6216\\u66F4\\u591A\\uFF0C\\u6E05\\u7A7A\\u6240\\u6709\\u6807\\u8BB0\\u5E76\\u5C06\\u8840\\u91CF\\u56DE\\u590D\\u81F350%\\u3002"
+        i18n_sb: "【连破】神·司马连环破敌，士气高涨，属被动技能，主智。每有一名敌方武将阵亡，获得一枚“忍”标记。阵亡时限一次，若你的“忍”标记数量为4或更多，清空所有标记并将血量回复至50%。"
     },
     "8110300102": { i18n_id: "8110300102", i18n_sb: "3星通关剑阁死战20" },
     surrunderdesc_577: { i18n_id: "surrunderdesc_577", i18n_sb: "0" },
@@ -8297,12 +7892,9 @@
     shenbing_desc_800032: { i18n_id: "shenbing_desc_800032", i18n_sb: "伏皇后神兵" },
     "351021904": { i18n_id: "351021904", i18n_sb: "自身" },
     itemdesc600245: { i18n_id: "itemdesc600245", i18n_sb: "太史慈觉醒升级材料" },
-    itemname9121021: { i18n_id: "itemname9121021", i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44" },
+    itemname9121021: { i18n_id: "itemname9121021", i18n_sb: "神·赵云魂魄" },
     "4310122301": { i18n_id: "4310122301", i18n_sb: "勇猛之将" },
-    itemdesc791310121: {
-        i18n_id: "itemdesc791310121",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791310121: { i18n_id: "itemdesc791310121", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8310120602": { i18n_id: "8310120602", i18n_sb: "觉醒宝箱开启200次" },
     juexing_taishici_open03: { i18n_id: "juexing_taishici_open03", i18n_sb: "拥有太史慈魂魄*30" },
     "12102203": { i18n_id: "12102203", i18n_sb: "攻击高的药丸，最合我胃口了！" },
@@ -8405,17 +7997,14 @@
         i18n_sb: "【SP铁骑】行动时易触发，可进行一次判定并根据判定结果：判定失败（20%概率），对敌方场上单体造成90%攻击伤害；判定成功（60%概率），对敌方场上单体造成180%攻击伤害；判定大成功（20%概率），对敌方场上单体造成360%攻击力伤害。"
     },
     itemname791340011: { i18n_id: "itemname791340011", i18n_sb: "臣服奖励" },
-    itemdesc791240011: {
-        i18n_id: "itemdesc791240011",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791240011: { i18n_id: "itemdesc791240011", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     juexing_wudadi_open03: { i18n_id: "juexing_wudadi_open03", i18n_sb: "拥有诸葛瑾魂魄*30" },
     "4210081901": { i18n_id: "4210081901", i18n_sb: "龙胆亮银" },
     "4240012301": { i18n_id: "4240012301", i18n_sb: "桃园结义" },
     "8340010701": { i18n_id: "8340010701", i18n_sb: "觉醒图腾" },
     "8340010502": { i18n_id: "8340010502", i18n_sb: "觉醒宝箱开启200次" },
     "8210080702": { i18n_id: "8210080702", i18n_sb: "觉醒赵云升级图腾至4层2段" },
-    itemname600278: { i18n_id: "itemname600278", i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u4F20\\u627F\\u7B26" },
+    itemname600278: { i18n_id: "itemname600278", i18n_sb: "神·赵云传承符" },
     "12102402": { i18n_id: "12102402", i18n_sb: "起初荆州牧刘表以其为中郎将，后随刘备入蜀，“勇毅冠三军”。建安二十四年自定军山大败夏侯渊，被封为征西将军，后又封为关内侯。 " },
     "352002201": { i18n_id: "352002201", i18n_sb: "天照二阶" },
     "322011502": {
@@ -8430,10 +8019,7 @@
     "4420132301": { i18n_id: "4420132301", i18n_sb: "铜雀春深" },
     "4210240301": { i18n_id: "4210240301", i18n_sb: "同仇敌忾" },
     itemname791310111: { i18n_id: "itemname791310111", i18n_sb: "臣服奖励" },
-    itemdesc791420131: {
-        i18n_id: "itemdesc791420131",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791420131: { i18n_id: "itemdesc791420131", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     "8310110501": { i18n_id: "8310110501", i18n_sb: "开启觉醒宝箱" },
     "8420130802": { i18n_id: "8420130802", i18n_sb: "觉醒伏皇后升级图腾至4层2段" },
     surrunderdesc_602: { i18n_id: "surrunderdesc_602", i18n_sb: "0" },
@@ -8462,10 +8048,7 @@
     juexing_wenchou_open04: { i18n_id: "juexing_wenchou_open04", i18n_sb: "拥有1个宿铁三叉矛" },
     "4210021401": { i18n_id: "4210021401", i18n_sb: "烈焰争飞" },
     "4710170301": { i18n_id: "4710170301", i18n_sb: "一统江山" },
-    itemdesc791410131: {
-        i18n_id: "itemdesc791410131",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791410131: { i18n_id: "itemdesc791410131", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     surrunderdesc_603: { i18n_id: "surrunderdesc_603", i18n_sb: "0" },
     surrunderdesc_604: { i18n_id: "surrunderdesc_604", i18n_sb: "0" },
     itemdesc141014: { i18n_id: "itemdesc141014", i18n_sb: "文丑" },
@@ -8480,10 +8063,7 @@
     "4410211001": { i18n_id: "4410211001", i18n_sb: "直言劝谏" },
     "4410240801": { i18n_id: "4410240801", i18n_sb: "白银狮子" },
     "4410241801": { i18n_id: "4410241801", i18n_sb: "涅磐重生" },
-    itemdesc791420081: {
-        i18n_id: "itemdesc791420081",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791420081: { i18n_id: "itemdesc791420081", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     juexing_SPyuanshao_open04: { i18n_id: "juexing_SPyuanshao_open04", i18n_sb: "拥有1个SP袁绍觉醒材料" },
     "16500703": { i18n_id: "16500703", i18n_sb: "加攻击的药丸，我最爱吃了！" },
     itemdesc165007: { i18n_id: "itemdesc165007", i18n_sb: "财神关羽" },
@@ -8507,7 +8087,7 @@
     "4610010601": { i18n_id: "4610010601", i18n_sb: "火借风势" },
     itemname231019: { i18n_id: "itemname231019", i18n_sb: "烈焰赤兔马" },
     itemname600301: { i18n_id: "itemname600301", i18n_sb: "凤冠霞帔碎片" },
-    itemdesc161002: { i18n_id: "itemdesc161002", i18n_sb: "\\u754C\\xB7\\u5218\\u5907" },
+    itemdesc161002: { i18n_id: "itemdesc161002", i18n_sb: "界·刘备" },
     itemdesc600304: { i18n_id: "itemdesc600304", i18n_sb: "用于兑换新年活动道具" },
     "84111029201": { i18n_id: "84111029201", i18n_sb: "觉醒图腾" },
     "8610010402": { i18n_id: "8610010402", i18n_sb: "图鉴点亮[武将]圣诞貂蝉" },
@@ -8539,7 +8119,7 @@
     "13101501": { i18n_id: "13101501", i18n_sb: "周泰" },
     "13202101": { i18n_id: "13202101", i18n_sb: "陆延" },
     "16401201": { i18n_id: "16401201", i18n_sb: "江东长弓兵" },
-    "14101101": { i18n_id: "14101101", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC" },
+    "14101101": { i18n_id: "14101101", i18n_sb: "群·蔡文姬" },
     "14202101": { i18n_id: "14202101", i18n_sb: "田丰" },
     "14301801": { i18n_id: "14301801", i18n_sb: "牛辅" },
     "16405301": { i18n_id: "16405301", i18n_sb: "黄巾大刀兵" },
@@ -8548,7 +8128,7 @@
     "12100501": { i18n_id: "12100501", i18n_sb: "黄月英" },
     "14200601": { i18n_id: "14200601", i18n_sb: "华雄" },
     "11101201": { i18n_id: "11101201", i18n_sb: "曹丕" },
-    "18100401": { i18n_id: "18100401", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF" },
+    "18100401": { i18n_id: "18100401", i18n_sb: "魔·凌统" },
     "19300201": { i18n_id: "19300201", i18n_sb: "小鸡哔哔" },
     "12202501": { i18n_id: "12202501", i18n_sb: "花鬘" },
     "17101101": { i18n_id: "17101101", i18n_sb: "采樵夏侯氏" },
@@ -8786,10 +8366,7 @@
         i18n_id: "371014102",
         i18n_sb: "【嗜血一阶】德古拉魏延可在攻击的同时吸血，且对血的共鸣会渐渐提升，属攻击技能，主攻。行动时易触发，可对敌方单体造成攻击伤害，同时吸收其血量，吸血量将随技能等级而提升。现一阶状态下，首次施放的回合将会提前。"
     },
-    "35103602": {
-        i18n_id: "35103602",
-        i18n_sb: "\\u3010\\u6D89\\u730E\\u3011\\u58EB\\u522B\\u4E09\\u65E5\\uFF0C\\u5373\\u66F4\\u522E\\u76EE\\u76F8\\u5F85\\uFF0C\\u5982\\u4ECA\\u7684\\u795E\\xB7\\u5415\\u8499\\u535A\\u5B66\\u6D3D\\u95FB\\u3001\\u6D89\\u730E\\u751A\\u5E7F\\u3002\\u8BE5\\u6280\\u80FD\\u4E3B\\u667A\\u548C\\u9632\\uFF0C\\u88C5\\u5907\\u540E\\uFF0C\\u53EF\\u63D0\\u5347\\u81EA\\u8EAB\\u7684\\u667A\\u529B\\u4E0E\\u9632\\u5FA1\\u3002"
-    },
+    "35103602": { i18n_id: "35103602", i18n_sb: "【涉猎】士别三日，即更刮目相待，如今的神·吕蒙博学洽闻、涉猎甚广。该技能主智和防，装备后，可提升自身的智力与防御。" },
     "31100703": { i18n_id: "31100703", i18n_sb: "受到普通伤害后 易触发" },
     "31200203": { i18n_id: "31200203", i18n_sb: "行动时 一般概率触发" },
     "31202203": { i18n_id: "31202203", i18n_sb: "阵亡时 " },
@@ -9046,7 +8623,7 @@
     itemname9122007: { i18n_id: "itemname9122007", i18n_sb: "马岱魂魄" },
     itemname9122023: { i18n_id: "itemname9122023", i18n_sb: "关索魂魄" },
     itemname9164001: { i18n_id: "itemname9164001", i18n_sb: "巴蜀刀兵魂魄" },
-    itemname9131006: { i18n_id: "itemname9131006", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44" },
+    itemname9131006: { i18n_id: "itemname9131006", i18n_sb: "吴·孙尚香魂魄" },
     itemname9132016: { i18n_id: "itemname9132016", i18n_sb: "丁奉魂魄" },
     itemname9133011: { i18n_id: "itemname9133011", i18n_sb: "朱治魂魄" },
     itemname9141003: { i18n_id: "itemname9141003", i18n_sb: "貂蝉魂魄" },
@@ -9207,14 +8784,11 @@
     itemname88142002: { i18n_id: "itemname88142002", i18n_sb: "高顺道具（20级）" },
     itemname790310: { i18n_id: "itemname790310", i18n_sb: "20级典韦礼包" },
     itemname790320: { i18n_id: "itemname790320", i18n_sb: "20级张星彩礼包" },
-    itemname790330: { i18n_id: "itemname790330", i18n_sb: "20\\u7EA7\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u793C\\u5305" },
+    itemname790330: { i18n_id: "itemname790330", i18n_sb: "20级吴·孙尚香礼包" },
     itemname790340: { i18n_id: "itemname790340", i18n_sb: "20级吕布礼包" },
     itemname790350: { i18n_id: "itemname790350", i18n_sb: "20级李儒礼包" },
     itemname87111021: { i18n_id: "itemname87111021", i18n_sb: "王异道具（1级）" },
-    itemname87121014: {
-        i18n_id: "itemname87121014",
-        i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9053\\u5177\\uFF081\\u7EA7\\uFF09"
-    },
+    itemname87121014: { i18n_id: "itemname87121014", i18n_sb: "蜀·孙尚香道具（1级）" },
     itemname87131007: { i18n_id: "itemname87131007", i18n_sb: "大乔道具（1级）" },
     itemname87141003: { i18n_id: "itemname87141003", i18n_sb: "貂蝉道具（1级）" },
     itemname87171001: { i18n_id: "itemname87171001", i18n_sb: "兵长陆逊道具（1级）" },
@@ -9224,7 +8798,7 @@
     itemname790391: { i18n_id: "itemname790391", i18n_sb: "1级华佗礼包" },
     itemname790401: { i18n_id: "itemname790401", i18n_sb: "天妒礼包" },
     itemname790411: { i18n_id: "itemname790411", i18n_sb: "帷幕礼包" },
-    itemname791407: { i18n_id: "itemname791407", i18n_sb: "360\\xD7\\xD7\\u793C\\u5305" },
+    itemname791407: { i18n_id: "itemname791407", i18n_sb: "360××礼包" },
     itemname531022: { i18n_id: "itemname531022", i18n_sb: "第31章第2个宝箱" },
     itemname534023: { i18n_id: "itemname534023", i18n_sb: "第34章第3个宝箱" },
     itemname538021: { i18n_id: "itemname538021", i18n_sb: "第38章第1个宝箱" },
@@ -9254,7 +8828,7 @@
     itemname40121018: { i18n_id: "itemname40121018", i18n_sb: "关银屏" },
     itemname40111016: { i18n_id: "itemname40111016", i18n_sb: "典韦" },
     itemname40111014: { i18n_id: "itemname40111014", i18n_sb: "夏侯渊" },
-    itemname40141011: { i18n_id: "itemname40141011", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC" },
+    itemname40141011: { i18n_id: "itemname40141011", i18n_sb: "群·蔡文姬" },
     itemname40111006: { i18n_id: "itemname40111006", i18n_sb: "张辽" },
     itemname40121010: { i18n_id: "itemname40121010", i18n_sb: "马超" },
     itemname40141004: { i18n_id: "itemname40141004", i18n_sb: "华佗" },
@@ -9264,10 +8838,7 @@
     itemname791520: { i18n_id: "itemname791520", i18n_sb: "快航礼包" },
     itemname791530: { i18n_id: "itemname791530", i18n_sb: "起死回生礼包" },
     itemname791539: { i18n_id: "itemname791539", i18n_sb: "追风宝箱（凌统缘分金坐骑）" },
-    itemname791549: {
-        i18n_id: "itemname791549",
-        i18n_sb: "\\u5FEB\\u822A\\u5B9D\\u7BB1\\uFF08\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u7F18\\u5206\\u91D1\\u5750\\u9A91\\uFF09"
-    },
+    itemname791549: { i18n_id: "itemname791549", i18n_sb: "快航宝箱（吴·孙尚香缘分金坐骑）" },
     itemname6300009: { i18n_id: "itemname6300009", i18n_sb: "青龙偃月刀礼盒(关羽缘分神级武器)" },
     itemname6300019: { i18n_id: "itemname6300019", i18n_sb: "青龙铠礼盒(关羽缘分神级防具)" },
     itemname6300029: { i18n_id: "itemname6300029", i18n_sb: "白虎胄礼盒(夏侯渊缘分神级防具)" },
@@ -9275,10 +8846,7 @@
     itemname6300049: { i18n_id: "itemname6300049", i18n_sb: "绝影礼盒(郭嘉缘分神级坐骑)" },
     itemname6300059: { i18n_id: "itemname6300059", i18n_sb: "惊帆礼盒(孙权缘分神级坐骑)" },
     itemname6300069: { i18n_id: "itemname6300069", i18n_sb: "燎原火礼盒（黄盖缘分金坐骑）" },
-    itemname6300079: {
-        i18n_id: "itemname6300079",
-        i18n_sb: "\\u5FEB\\u822A\\u793C\\u76D2\\uFF08\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u7F18\\u5206\\u91D1\\u5750\\u9A91\\uFF09"
-    },
+    itemname6300079: { i18n_id: "itemname6300079", i18n_sb: "快航礼盒（吴·孙尚香缘分金坐骑）" },
     itemname6300098: { i18n_id: "itemname6300098", i18n_sb: "乐不思蜀礼盒（夜夜星彩缘分神级锦囊）" },
     itemname6300108: { i18n_id: "itemname6300108", i18n_sb: "八卦阵宝箱(司马懿缘分神级防具)" },
     itemname6300118: { i18n_id: "itemname6300118", i18n_sb: "乌云踏雪礼盒(徐晃缘分神级坐骑)" },
@@ -9290,9 +8858,9 @@
     itemname791579: { i18n_id: "itemname791579", i18n_sb: "普通礼包B" },
     itemname791589: { i18n_id: "itemname791589", i18n_sb: "元宝宝箱*4" },
     itemname791599: { i18n_id: "itemname791599", i18n_sb: "UC礼包" },
-    itemname9181002: { i18n_id: "itemname9181002", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44" },
+    itemname9181002: { i18n_id: "itemname9181002", i18n_sb: "魔·貂蝉魂魄" },
     itemname791612: { i18n_id: "itemname791612", i18n_sb: "『顺手牵羊』*1" },
-    itemname791622: { i18n_id: "itemname791622", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*1" },
+    itemname791622: { i18n_id: "itemname791622", i18n_sb: "魔·马超魂魄*1" },
     itemname791632: { i18n_id: "itemname791632", i18n_sb: "钻石公会礼包" },
     itemname791642: { i18n_id: "itemname791642", i18n_sb: "6月微信礼包档次三" },
     itemname6300086: { i18n_id: "itemname6300086", i18n_sb: "诸葛连弩礼盒（曹仁缘分神级武器）" },
@@ -9301,7 +8869,7 @@
     itemname791673: { i18n_id: "itemname791673", i18n_sb: "『刘备』*1" },
     itemname791677: { i18n_id: "itemname791677", i18n_sb: "倒霉呆呆礼包" },
     itemname791687: { i18n_id: "itemname791687", i18n_sb: "城之宝匣*600" },
-    itemname791697: { i18n_id: "itemname791697", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*1" },
+    itemname791697: { i18n_id: "itemname791697", i18n_sb: "魔·凌统魂魄*1" },
     itemname791703: { i18n_id: "itemname791703", i18n_sb: "新手注册礼包" },
     itemname541021: { i18n_id: "itemname541021", i18n_sb: "第41章第1个宝箱" },
     itemname544022: { i18n_id: "itemname544022", i18n_sb: "第44章第2个宝箱" },
@@ -9311,28 +8879,25 @@
     itemname600078: { i18n_id: "itemname600078", i18n_sb: "1级宝石箱" },
     itemname791713: { i18n_id: "itemname791713", i18n_sb: "一壶红茶" },
     itemname791723: { i18n_id: "itemname791723", i18n_sb: "跨服天梯25积分礼包" },
-    itemname791733: { i18n_id: "itemname791733", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*1" },
+    itemname791733: { i18n_id: "itemname791733", i18n_sb: "魔·贾诩魂魄*1" },
     itemname791741: { i18n_id: "itemname791741", i18n_sb: "巅峰之战110积分礼包" },
-    itemname791751: { i18n_id: "itemname791751", i18n_sb: "\\u864E\\u5578\\xD71" },
-    itemname791761: { i18n_id: "itemname791761", i18n_sb: "\\u66F9\\u64CD\\xD71" },
-    itemname791771: { i18n_id: "itemname791771", i18n_sb: "\\u5218\\u5907\\xD71" },
-    itemname791781: { i18n_id: "itemname791781", i18n_sb: "\\u7075\\u829D\\xD7750" },
+    itemname791751: { i18n_id: "itemname791751", i18n_sb: "虎啸×1" },
+    itemname791761: { i18n_id: "itemname791761", i18n_sb: "曹操×1" },
+    itemname791771: { i18n_id: "itemname791771", i18n_sb: "刘备×1" },
+    itemname791781: { i18n_id: "itemname791781", i18n_sb: "灵芝×750" },
     itemname11100007: { i18n_id: "itemname11100007", i18n_sb: "女神文姬" },
     itemname21100008: { i18n_id: "itemname21100008", i18n_sb: "女神月英皮肤" },
     itemname791788: { i18n_id: "itemname791788", i18n_sb: "女神小乔礼包" },
     itemname791798: { i18n_id: "itemname791798", i18n_sb: "女神祝融皮肤礼包" },
-    itemname791806: { i18n_id: "itemname791806", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u793C\\u5305" },
+    itemname791806: { i18n_id: "itemname791806", i18n_sb: "魔·马超礼包" },
     itemname545022: { i18n_id: "itemname545022", i18n_sb: "第45章第2个宝箱" },
     itemname548023: { i18n_id: "itemname548023", i18n_sb: "第48章第3个宝箱" },
     itemname10548009: { i18n_id: "itemname10548009", i18n_sb: "第48章精英宝箱" },
     itemname791817: { i18n_id: "itemname791817", i18n_sb: "谢礼1(深渊)" },
     itemname791827: { i18n_id: "itemname791827", i18n_sb: "谢礼5(普通)" },
     itemname600098: { i18n_id: "itemname600098", i18n_sb: "高级精炼石" },
-    itemname600106: { i18n_id: "itemname600106", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD73280" },
-    itemname7710003: {
-        i18n_id: "itemname7710003",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*1"
-    },
+    itemname600106: { i18n_id: "itemname600106", i18n_sb: "主公经验×3280" },
+    itemname7710003: { i18n_id: "itemname7710003", i18n_sb: "神秘商品之魔·貂蝉魂魄*1" },
     itemname7710013: { i18n_id: "itemname7710013", i18n_sb: "神秘商品之郭嘉魂魄*1" },
     itemname7710023: { i18n_id: "itemname7710023", i18n_sb: "神秘商品之曹仁魂魄*1" },
     itemname7710033: { i18n_id: "itemname7710033", i18n_sb: "神秘商品之诸葛亮魂魄*1" },
@@ -9544,124 +9109,40 @@
     itemdesc143001: { i18n_id: "itemdesc143001", i18n_sb: "王允" },
     itemdesc164052: { i18n_id: "itemdesc164052", i18n_sb: "黄巾锤兵" },
     itemdesc164060: { i18n_id: "itemdesc164060", i18n_sb: "冀州重骑兵" },
-    itemdesc131006: { i18n_id: "itemdesc131006", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    itemdesc131006: { i18n_id: "itemdesc131006", i18n_sb: "吴·孙尚香" },
     itemdesc89121007: { i18n_id: "itemdesc89121007", i18n_sb: "累计登陆礼包张飞" },
-    itemdesc79111008: {
-        i18n_id: "itemdesc79111008",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79112018: { i18n_id: "itemdesc79112018", i18n_sb: "\\u5143\\u5B9D\\xD7150" },
-    itemdesc79113019: {
-        i18n_id: "itemdesc79113019",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5218\\u5907\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164036: {
-        i18n_id: "itemdesc79164036",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u91CD\\u9A91\\u5175\\xD71,\\u9752\\u9CDE\\u76D4\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121013: {
-        i18n_id: "itemdesc79121013",
-        i18n_sb: "\\u5927\\u5B9B\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79122016: { i18n_id: "itemdesc79122016", i18n_sb: "\\u5143\\u5B9D\\xD7150" },
-    itemdesc79123011: {
-        i18n_id: "itemdesc79123011",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5218\\u5907\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164011: {
-        i18n_id: "itemdesc79164011",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5DF4\\u8700\\u91CD\\u9A91\\u5175\\xD71,\\u9752\\u9CDE\\u76D4\\u788E\\u7247\\xD71"
-    },
-    itemdesc79131015: {
-        i18n_id: "itemdesc79131015",
-        i18n_sb: "\\u9E92\\u9E9F\\u888D\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79132021: {
-        i18n_id: "itemdesc79132021",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u9A6C\\u8D85\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79164047: {
-        i18n_id: "itemdesc79164047",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C5F\\u4E1C\\u91CD\\u65A7\\u5175\\xD71,\\u767D\\u9B03\\u788E\\u7247\\xD71"
-    },
-    itemdesc79141011: {
-        i18n_id: "itemdesc79141011",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79142019: {
-        i18n_id: "itemdesc79142019",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u9A6C\\u8D85\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79143018: {
-        i18n_id: "itemdesc79143018",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u8881\\u7ECD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164056: {
-        i18n_id: "itemdesc79164056",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5180\\u5DDE\\u9A91\\u5175\\xD71,\\u5434\\u516D\\u5251\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164027: {
-        i18n_id: "itemdesc79164027",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u897F\\u51C9\\u91CD\\u65A7\\u5175\\xD71,\\u6C34\\u6DF9\\u4E03\\u519B\\u788E\\u7247\\xD71"
-    },
-    itemdesc79143023: {
-        i18n_id: "itemdesc79143023",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u8881\\u7ECD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79171003: {
-        i18n_id: "itemdesc79171003",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79191005: {
-        i18n_id: "itemdesc79191005",
-        i18n_sb: "\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7200"
-    },
-    itemdesc79181009: {
-        i18n_id: "itemdesc79181009",
-        i18n_sb: "\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79151001: {
-        i18n_id: "itemdesc79151001",
-        i18n_sb: "\\u4FEE\\u7F57\\u8D64\\u5154\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79121020: {
-        i18n_id: "itemdesc79121020",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79171013: {
-        i18n_id: "itemdesc79171013",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc790220: {
-        i18n_id: "itemdesc790220",
-        i18n_sb: "\\u5185\\u542B\\u9752\\u9F99\\u5043\\u6708\\u5200\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790230: {
-        i18n_id: "itemdesc790230",
-        i18n_sb: "\\u5185\\u542B\\u501A\\u5929\\u5251\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790240: {
-        i18n_id: "itemdesc790240",
-        i18n_sb: "\\u5185\\u542B\\u4EC1\\u738B\\u76FE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790250: {
-        i18n_id: "itemdesc790250",
-        i18n_sb: "\\u5185\\u542B\\u7684\\u5362\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790260: {
-        i18n_id: "itemdesc790260",
-        i18n_sb: "\\u5185\\u542B\\u65E0\\u61C8\\u53EF\\u51FB\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790270: {
-        i18n_id: "itemdesc790270",
-        i18n_sb: "\\u5185\\u542B\\u4E4C\\u9A93\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790280: {
-        i18n_id: "itemdesc790280",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u7075\\u829D\\xD71000"
-    },
+    itemdesc79111008: { i18n_id: "itemdesc79111008", i18n_sb: "神·诸葛亮魂魄×2,灵芝×1000" },
+    itemdesc79112018: { i18n_id: "itemdesc79112018", i18n_sb: "元宝×150" },
+    itemdesc79113019: { i18n_id: "itemdesc79113019", i18n_sb: "元宝×40,刘备魂魄×3" },
+    itemdesc79164036: { i18n_id: "itemdesc79164036", i18n_sb: "元宝×20,青州重骑兵×1,青鳞盔碎片×1" },
+    itemdesc79121013: { i18n_id: "itemdesc79121013", i18n_sb: "大宛碎片×3,灵芝×500" },
+    itemdesc79122016: { i18n_id: "itemdesc79122016", i18n_sb: "元宝×150" },
+    itemdesc79123011: { i18n_id: "itemdesc79123011", i18n_sb: "元宝×40,刘备魂魄×3" },
+    itemdesc79164011: { i18n_id: "itemdesc79164011", i18n_sb: "元宝×20,巴蜀重骑兵×1,青鳞盔碎片×1" },
+    itemdesc79131015: { i18n_id: "itemdesc79131015", i18n_sb: "麒麟袍碎片×3,灵芝×500" },
+    itemdesc79132021: { i18n_id: "itemdesc79132021", i18n_sb: "元宝×60,马超魂魄×4" },
+    itemdesc79164047: { i18n_id: "itemdesc79164047", i18n_sb: "元宝×20,江东重斧兵×1,白鬃碎片×1" },
+    itemdesc79141011: { i18n_id: "itemdesc79141011", i18n_sb: "神·诸葛亮魂魄×2,灵芝×1000" },
+    itemdesc79142019: { i18n_id: "itemdesc79142019", i18n_sb: "元宝×60,马超魂魄×4" },
+    itemdesc79143018: { i18n_id: "itemdesc79143018", i18n_sb: "元宝×40,袁绍魂魄×3" },
+    itemdesc79164056: { i18n_id: "itemdesc79164056", i18n_sb: "元宝×20,冀州骑兵×1,吴六剑碎片×1" },
+    itemdesc79164027: { i18n_id: "itemdesc79164027", i18n_sb: "元宝×20,西凉重斧兵×1,水淹七军碎片×1" },
+    itemdesc79143023: { i18n_id: "itemdesc79143023", i18n_sb: "元宝×40,袁绍魂魄×3" },
+    itemdesc79171003: { i18n_id: "itemdesc79171003", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79191005: { i18n_id: "itemdesc79191005", i18n_sb: "爪黄飞电碎片×3,灵芝×200" },
+    itemdesc79181009: { i18n_id: "itemdesc79181009", i18n_sb: "爪黄飞电碎片×3,灵芝×1000" },
+    itemdesc79151001: { i18n_id: "itemdesc79151001", i18n_sb: "修罗赤兔碎片×3,灵芝×1000" },
+    itemdesc79121020: { i18n_id: "itemdesc79121020", i18n_sb: "神·吕布魂魄×3,灵芝×1000" },
+    itemdesc79171013: { i18n_id: "itemdesc79171013", i18n_sb: "神·吕蒙魂魄×2,灵芝×1000" },
+    itemdesc790220: { i18n_id: "itemdesc790220", i18n_sb: "内含青龙偃月刀碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790230: { i18n_id: "itemdesc790230", i18n_sb: "内含倚天剑碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790240: { i18n_id: "itemdesc790240", i18n_sb: "内含仁王盾碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790250: { i18n_id: "itemdesc790250", i18n_sb: "内含的卢碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790260: { i18n_id: "itemdesc790260", i18n_sb: "内含无懈可击碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790270: { i18n_id: "itemdesc790270", i18n_sb: "内含乌骓碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790280: { i18n_id: "itemdesc790280", i18n_sb: "打开可获得：灵芝×1000" },
     itemdesc790290: { i18n_id: "itemdesc790290", i18n_sb: "含有马超*1" },
-    itemdesc790300: { i18n_id: "itemdesc790300", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7300" },
+    itemdesc790300: { i18n_id: "itemdesc790300", i18n_sb: "内含灵芝×300" },
     itemdesc791000: { i18n_id: "itemdesc791000", i18n_sb: "首充双倍,续充另送元宝" },
     itemdesc791014: { i18n_id: "itemdesc791014", i18n_sb: "内含 20个银宝箱 10个银钥匙" },
     itemdesc791024: { i18n_id: "itemdesc791024", i18n_sb: "有大量机会获得古锭刀碎片以及其他稀有道具" },
@@ -9705,17 +9186,11 @@
     itemdesc791403: { i18n_id: "itemdesc791403", i18n_sb: "SS9AA" },
     itemdesc88111016: { i18n_id: "itemdesc88111016", i18n_sb: "典韦道具（20级）" },
     itemdesc88121013: { i18n_id: "itemdesc88121013", i18n_sb: "张星彩道具（20级）" },
-    itemdesc88131006: {
-        i18n_id: "itemdesc88131006",
-        i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u9053\\u5177\\uFF0820\\u7EA7\\uFF09"
-    },
+    itemdesc88131006: { i18n_id: "itemdesc88131006", i18n_sb: "吴·孙尚香道具（20级）" },
     itemdesc88141002: { i18n_id: "itemdesc88141002", i18n_sb: "吕布道具（20级）" },
     itemdesc88142007: { i18n_id: "itemdesc88142007", i18n_sb: "李儒道具（20级）" },
     itemdesc790311: { i18n_id: "itemdesc790311", i18n_sb: "内含：20级王异一个" },
-    itemdesc790321: {
-        i18n_id: "itemdesc790321",
-        i18n_sb: "\\u5185\\u542B\\uFF1A20\\u7EA7\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u4E00\\u4E2A"
-    },
+    itemdesc790321: { i18n_id: "itemdesc790321", i18n_sb: "内含：20级蜀·孙尚香一个" },
     itemdesc790331: { i18n_id: "itemdesc790331", i18n_sb: "内含：20级大乔一个" },
     itemdesc790341: { i18n_id: "itemdesc790341", i18n_sb: "内含：20级貂蝉一个" },
     itemdesc790351: { i18n_id: "itemdesc790351", i18n_sb: "内含：20级兵长陆逊一个" },
@@ -9745,47 +9220,17 @@
     itemdesc790423: { i18n_id: "itemdesc790423", i18n_sb: "7000灵芝" },
     itemdesc791418: { i18n_id: "itemdesc791418", i18n_sb: "混元礼包" },
     itemdesc791428: { i18n_id: "itemdesc791428", i18n_sb: "圣诞节公会礼包" },
-    itemdesc790428: {
-        i18n_id: "itemdesc790428",
-        i18n_sb: "\\u5185\\u542B\\u65B9\\u5929\\u753B\\u621F\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790438: {
-        i18n_id: "itemdesc790438",
-        i18n_sb: "\\u5185\\u542B\\u9F99\\u80C6\\u67AA\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790448: {
-        i18n_id: "itemdesc790448",
-        i18n_sb: "\\u5185\\u542B\\u6731\\u96C0\\u51A0\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790458: {
-        i18n_id: "itemdesc790458",
-        i18n_sb: "\\u5185\\u542B\\u7D2B\\u9A8D\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790468: {
-        i18n_id: "itemdesc790468",
-        i18n_sb: "\\u5185\\u542B\\u5175\\u7CAE\\u5BF8\\u65AD\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790478: {
-        i18n_id: "itemdesc790478",
-        i18n_sb: "\\u5185\\u542B\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
+    itemdesc790428: { i18n_id: "itemdesc790428", i18n_sb: "内含方天画戟碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790438: { i18n_id: "itemdesc790438", i18n_sb: "内含龙胆枪碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790448: { i18n_id: "itemdesc790448", i18n_sb: "内含朱雀冠碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790458: { i18n_id: "itemdesc790458", i18n_sb: "内含紫骍碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790468: { i18n_id: "itemdesc790468", i18n_sb: "内含兵粮寸断碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790478: { i18n_id: "itemdesc790478", i18n_sb: "内含木牛流马碎片×1，神装碎片礼盒×2，金装礼盒×3" },
     itemdesc790481: { i18n_id: "itemdesc790481", i18n_sb: "内含：1级凌操一个" },
-    itemdesc791446: {
-        i18n_id: "itemdesc791446",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A100\\u7075\\u829D \\u8463\\u767D\\u9B42\\u9B44\\xD710"
-    },
-    itemdesc791456: {
-        i18n_id: "itemdesc791456",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5173\\u5E73\\u9B42\\u9B44\\xD75\\uFF0C\\u91D1\\u7BB1\\u5B50\\xD720 \\u91D1\\u94A5\\u5319\\xD720"
-    },
-    itemdesc791464: {
-        i18n_id: "itemdesc791464",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u4E08\\u516B\\u86C7\\u77DB\\xD71"
-    },
-    itemdesc791474: {
-        i18n_id: "itemdesc791474",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u7ECF\\u9A8C\\u795E\\u4E66\\xD75"
-    },
+    itemdesc791446: { i18n_id: "itemdesc791446", i18n_sb: "打开可获得：100灵芝 董白魂魄×10" },
+    itemdesc791456: { i18n_id: "itemdesc791456", i18n_sb: "打开可获得：关平魂魄×5，金箱子×20 金钥匙×20" },
+    itemdesc791464: { i18n_id: "itemdesc791464", i18n_sb: "打开可获得：丈八蛇矛×1" },
+    itemdesc791474: { i18n_id: "itemdesc791474", i18n_sb: "打开可获得：经验神书×5" },
     itemdesc791484: { i18n_id: "itemdesc791484", i18n_sb: "包子*1 经验神书*1" },
     itemdesc40121019: { i18n_id: "itemdesc40121019", i18n_sb: "121019" },
     itemdesc40111021: { i18n_id: "itemdesc40111021", i18n_sb: "111021" },
@@ -9798,7 +9243,7 @@
     itemdesc791501: { i18n_id: "itemdesc791501", i18n_sb: "神榜低级宝箱" },
     itemdesc791511: { i18n_id: "itemdesc791511", i18n_sb: "霸者披风礼包" },
     itemdesc791521: { i18n_id: "itemdesc791521", i18n_sb: "燎原火礼包" },
-    itemdesc9181001: { i18n_id: "itemdesc9181001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44" },
+    itemdesc9181001: { i18n_id: "itemdesc9181001", i18n_sb: "魔·张飞魂魄" },
     itemdesc791540: { i18n_id: "itemdesc791540", i18n_sb: "可以获得燎原火碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
     itemdesc791550: { i18n_id: "itemdesc791550", i18n_sb: "至尊会员贵宾礼包" },
     itemdesc6300010: { i18n_id: "itemdesc6300010", i18n_sb: "可以获得倚天剑碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
@@ -9820,18 +9265,18 @@
     itemdesc791580: { i18n_id: "itemdesc791580", i18n_sb: "L1LC（之前的礼包SSCLCL新生成）" },
     itemdesc791590: { i18n_id: "itemdesc791590", i18n_sb: "打开可获得：元宝宝箱*5" },
     itemdesc791600: { i18n_id: "itemdesc791600", i18n_sb: "打开可获得：包子*1 红茶*1 超级传承符*1" },
-    itemdesc9181009: { i18n_id: "itemdesc9181009", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44" },
+    itemdesc9181009: { i18n_id: "itemdesc9181009", i18n_sb: "魔·张角魂魄" },
     itemdesc791613: { i18n_id: "itemdesc791613", i18n_sb: "内含神级武器诸葛连弩*1" },
-    itemdesc791623: { i18n_id: "itemdesc791623", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*2" },
+    itemdesc791623: { i18n_id: "itemdesc791623", i18n_sb: "内含魔·马超魂魄*2" },
     itemdesc791633: { i18n_id: "itemdesc791633", i18n_sb: "500元宝 500灵芝 10包子 10红茶" },
     itemdesc791643: { i18n_id: "itemdesc791643", i18n_sb: "200元宝 2包子 2红茶 5勾玉 5挑战文书" },
     itemdesc6300087: { i18n_id: "itemdesc6300087", i18n_sb: "可以获得八卦阵碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
-    itemdesc791654: { i18n_id: "itemdesc791654", i18n_sb: "\\u5415\\u73B2\\u7EEE\\u9B42\\u9B44\\xD730\\u793C\\u5305" },
+    itemdesc791654: { i18n_id: "itemdesc791654", i18n_sb: "吕玲绮魂魄×30礼包" },
     itemdesc791664: { i18n_id: "itemdesc791664", i18n_sb: "内含许愿流星*4" },
     itemdesc791674: { i18n_id: "itemdesc791674", i18n_sb: "内含神级防具青龙铠*1" },
     itemdesc791678: { i18n_id: "itemdesc791678", i18n_sb: "打开可获得小鸡哔哔" },
     itemdesc791688: { i18n_id: "itemdesc791688", i18n_sb: "国之宝匣*600" },
-    itemdesc791698: { i18n_id: "itemdesc791698", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*2" },
+    itemdesc791698: { i18n_id: "itemdesc791698", i18n_sb: "内含魔·凌统魂魄*2" },
     itemdesc791704: { i18n_id: "itemdesc791704", i18n_sb: "50元宝、5金宝箱、5金钥匙" },
     itemdesc541022: { i18n_id: "itemdesc541022", i18n_sb: "第41章第2个宝箱" },
     itemdesc544023: { i18n_id: "itemdesc544023", i18n_sb: "第44章第3个宝箱" },
@@ -9841,43 +9286,25 @@
     itemdesc600079: { i18n_id: "itemdesc600079", i18n_sb: "可以获得随机2级宝石一颗" },
     itemdesc791714: { i18n_id: "itemdesc791714", i18n_sb: "膜拜赏赐，悬挂后，膜拜过您的人都可获得1个银宝箱。" },
     itemdesc791724: { i18n_id: "itemdesc791724", i18n_sb: "打开可获得12个1级宝石箱" },
-    itemdesc791734: { i18n_id: "itemdesc791734", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*2" },
+    itemdesc791734: { i18n_id: "itemdesc791734", i18n_sb: "内含魔·贾诩魂魄*2" },
     itemdesc791742: { i18n_id: "itemdesc791742", i18n_sb: "打开可获得140个1级宝石箱" },
-    itemdesc791752: {
-        i18n_id: "itemdesc791752",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5173\\u7FBD\\u9B42\\u9B44\\xD7105\\u3001\\u7075\\u829D\\xD7500\\u3001\\u7ECF\\u9A8C\\u795E\\u4E66\\xD715"
-    },
-    itemdesc791762: { i18n_id: "itemdesc791762", i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u864E\\u5578\\xD71" },
+    itemdesc791752: { i18n_id: "itemdesc791752", i18n_sb: "打开可获得关羽魂魄×105、灵芝×500、经验神书×15" },
+    itemdesc791762: { i18n_id: "itemdesc791762", i18n_sb: "打开可获得虎啸×1" },
     itemdesc791772: { i18n_id: "itemdesc791772", i18n_sb: "含有郭嘉*1" },
-    itemdesc791782: {
-        i18n_id: "itemdesc791782",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD71500"
-    },
+    itemdesc791782: { i18n_id: "itemdesc791782", i18n_sb: "打开可获得灵芝×1500" },
     itemdesc11100008: { i18n_id: "itemdesc11100008", i18n_sb: "女神月英" },
     itemdesc21100009: { i18n_id: "itemdesc21100009", i18n_sb: "女神尚香皮肤" },
-    itemdesc791789: {
-        i18n_id: "itemdesc791789",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u795D\\u878D\\xD71"
-    },
-    itemdesc791799: {
-        i18n_id: "itemdesc791799",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u6625\\u534E\\u76AE\\u80A4\\xD71"
-    },
-    itemdesc791807: { i18n_id: "itemdesc791807", i18n_sb: "\\u5C04\\u624B\\u9EC4\\u5FE0\\xD71" },
+    itemdesc791789: { i18n_id: "itemdesc791789", i18n_sb: "打开可获得女神祝融×1" },
+    itemdesc791799: { i18n_id: "itemdesc791799", i18n_sb: "打开可获得女神春华皮肤×1" },
+    itemdesc791807: { i18n_id: "itemdesc791807", i18n_sb: "射手黄忠×1" },
     itemdesc545023: { i18n_id: "itemdesc545023", i18n_sb: "第40章第3个宝箱" },
     itemdesc549021: { i18n_id: "itemdesc549021", i18n_sb: "第44章第1个宝箱" },
     itemdesc10548010: { i18n_id: "itemdesc10548010", i18n_sb: "第43章隐藏宝箱" },
-    itemdesc791818: {
-        i18n_id: "itemdesc791818",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD76\\u3001\\u52FE\\u7389\\xD71\\u3001\\u864E\\u775B\\u77F3\\xD72"
-    },
-    itemdesc791828: {
-        i18n_id: "itemdesc791828",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD720\\u3001\\u52FE\\u7389\\xD75\\u3001\\u864E\\u775B\\u77F3\\xD712"
-    },
+    itemdesc791818: { i18n_id: "itemdesc791818", i18n_sb: "打开可获得灵芝×6、勾玉×1、虎睛石×2" },
+    itemdesc791828: { i18n_id: "itemdesc791828", i18n_sb: "打开可获得灵芝×20、勾玉×5、虎睛石×12" },
     itemdesc600099: { i18n_id: "itemdesc600099", i18n_sb: "使用后主公经验可提升28" },
     itemdesc600107: { i18n_id: "itemdesc600107", i18n_sb: "使用后主公经验可提升3840" },
-    itemdesc7710004: { i18n_id: "itemdesc7710004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*1" },
+    itemdesc7710004: { i18n_id: "itemdesc7710004", i18n_sb: "魔·凌统魂魄*1" },
     itemdesc7710014: { i18n_id: "itemdesc7710014", i18n_sb: "关羽魂魄*1" },
     itemdesc7710024: { i18n_id: "itemdesc7710024", i18n_sb: "黄月英魂魄*1" },
     itemdesc7710034: { i18n_id: "itemdesc7710034", i18n_sb: "吕布魂魄*1" },
@@ -10117,10 +9544,10 @@
     dialogname507003016: { i18n_id: "dialogname507003016", i18n_sb: "虞翻" },
     dialogname507006011: { i18n_id: "dialogname507006011", i18n_sb: "$UserName" },
     dialogname507009021: { i18n_id: "dialogname507009021", i18n_sb: "陆延" },
-    dialogname507012012: { i18n_id: "dialogname507012012", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname507012012: { i18n_id: "dialogname507012012", i18n_sb: "吴·孙尚香" },
     dialogname507012028: { i18n_id: "dialogname507012028", i18n_sb: "$UserName" },
     dialogname508004023: { i18n_id: "dialogname508004023", i18n_sb: "$UserName" },
-    dialogname508008023: { i18n_id: "dialogname508008023", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname508008023: { i18n_id: "dialogname508008023", i18n_sb: "吴·孙尚香" },
     dialogname508012012: { i18n_id: "dialogname508012012", i18n_sb: "华佗" },
     dialogname508013012: { i18n_id: "dialogname508013012", i18n_sb: "$UserName(暴走)" },
     dialogname509004013: { i18n_id: "dialogname509004013", i18n_sb: "$UserName" },
@@ -10216,7 +9643,7 @@
     dialogname980004121: { i18n_id: "dialogname980004121", i18n_sb: "曹丕" },
     dialogname990003092: { i18n_id: "dialogname990003092", i18n_sb: "貂蝉" },
     dialogname990003351: { i18n_id: "dialogname990003351", i18n_sb: "$UserName" },
-    dialogname980000021: { i18n_id: "dialogname980000021", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname980000021: { i18n_id: "dialogname980000021", i18n_sb: "吴·孙尚香" },
     dialogname990301014: { i18n_id: "dialogname990301014", i18n_sb: "$UserName" },
     dialogname990601013: { i18n_id: "dialogname990601013", i18n_sb: "神秘人" },
     dialogname9906010113: { i18n_id: "dialogname9906010113", i18n_sb: "神秘人" },
@@ -10325,7 +9752,7 @@
     dialogname549012011: { i18n_id: "dialogname549012011", i18n_sb: "$UserName" },
     dialogname549018011: { i18n_id: "dialogname549018011", i18n_sb: "张辽" },
     dialogname549019021: { i18n_id: "dialogname549019021", i18n_sb: "$UserName" },
-    dialogname549020025: { i18n_id: "dialogname549020025", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE" },
+    dialogname549020025: { i18n_id: "dialogname549020025", i18n_sb: "神·诸葛亮" },
     dialogdesc501003025: { i18n_id: "dialogdesc501003025", i18n_sb: "我自由职业做惯啦，不喜欢被人管。就不拜你的山头认你当主公啦。" },
     dialogdesc501004021: { i18n_id: "dialogdesc501004021", i18n_sb: "诸葛大叔，我知道你很厉害，但你适合坐办公室不适合现场打仗，我们还是快跑吧！" },
     dialogdesc501006011: { i18n_id: "dialogdesc501006011", i18n_sb: "一拜天地有车有房，二拜高堂有权有势……" },
@@ -10555,10 +9982,7 @@
     dialogdesc545008023: { i18n_id: "dialogdesc545008023", i18n_sb: "你不是想找谁是野心家吗，也许战场上就有你想要的答案。" },
     dialogdesc545018011: { i18n_id: "dialogdesc545018011", i18n_sb: "想从天水关救人，痴心妄想" },
     dialogdesc545020011: { i18n_id: "dialogdesc545020011", i18n_sb: "你在魏国官当的也低，家人生活的也不幸福，你这么有才华，不如跟我去蜀国混吧" },
-    dialogdesc546004014: {
-        i18n_id: "dialogdesc546004014",
-        i18n_sb: "\\u90A3\\u4F60\\u8C03\\u67E5\\u7684\\u8FC7\\u7A0B\\u4E2D\\uFF0C\\u6709\\u6CA1\\u6709\\u5174\\u8DA3\\u5E2E\\u6211\\u53BB\\u5B88\\u8857\\u4EAD\\xA0\\uFF1F"
-    },
+    dialogdesc546004014: { i18n_id: "dialogdesc546004014", i18n_sb: "那你调查的过程中，有没有兴趣帮我去守街亭 ？" },
     dialogdesc546008014: { i18n_id: "dialogdesc546008014", i18n_sb: "我是不是军人，大家切磋一下就知道了。" },
     dialogdesc546012018: { i18n_id: "dialogdesc546012018", i18n_sb: "小样胆肥啊，竟然从正面攻击，看我们怎么收拾你" },
     dialogdesc546018011: { i18n_id: "dialogdesc546018011", i18n_sb: "喂，已经2天没喝水了，你靠谱不靠谱啊……" },
@@ -11716,7 +11140,7 @@
     gems_compose: { i18n_id: "gems_compose", i18n_sb: "合成" },
     gems_epsOn: { i18n_id: "gems_epsOn", i18n_sb: "装备于" },
     e_magic_1004: { i18n_id: "e_magic_1004", i18n_sb: "神兵配置文件错误" },
-    MiracleWeapon_shenbing: { i18n_id: "MiracleWeapon_shenbing", i18n_sb: "\\u795E\\u5175\\xB7" },
+    MiracleWeapon_shenbing: { i18n_id: "MiracleWeapon_shenbing", i18n_sb: "神兵·" },
     MiracleWeapon_title: { i18n_id: "MiracleWeapon_title", i18n_sb: "神兵$0重$1锻" },
     MiracleWeapon_zhijia: { i18n_id: "MiracleWeapon_zhijia", i18n_sb: "武将自身智力增加$0" },
     MiracleWeapon_shuxing: { i18n_id: "MiracleWeapon_shuxing", i18n_sb: "总属性" },
@@ -11783,7 +11207,7 @@
     },
     union_war_reward_title10: { i18n_id: "union_war_reward_title10", i18n_sb: "跨服公会战冠军奖励" },
     union_war_reward_desc10: { i18n_id: "union_war_reward_desc10", i18n_sb: "跨服公会战冠军奖励：贡献礼盒*2,雪国之宝匣*50，可获得流星、装备、技能、银两以及稀有武将。" },
-    mystery_name_107710004: { i18n_id: "mystery_name_107710004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*1" },
+    mystery_name_107710004: { i18n_id: "mystery_name_107710004", i18n_sb: "魔·凌统魂魄*1" },
     mystery_name_107710014: { i18n_id: "mystery_name_107710014", i18n_sb: "关羽魂魄*1" },
     mystery_name_107710024: { i18n_id: "mystery_name_107710024", i18n_sb: "黄月英魂魄*1" },
     mystery_name_107710034: { i18n_id: "mystery_name_107710034", i18n_sb: "吕布魂魄*1" },
@@ -11859,9 +11283,9 @@
     itemname141009: { i18n_id: "itemname141009", i18n_sb: "左慈" },
     itemname121017: { i18n_id: "itemname121017", i18n_sb: "庞统" },
     itemname141010: { i18n_id: "itemname141010", i18n_sb: "贾诩" },
-    itemname181003: { i18n_id: "itemname181003", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    itemname181003: { i18n_id: "itemname181003", i18n_sb: "魔·马超" },
     itemname171008: { i18n_id: "itemname171008", i18n_sb: "公主宪英" },
-    itemname165002: { i18n_id: "itemname165002", i18n_sb: "\\u795E\\xB7\\u91CD\\u9A91\\u5175" },
+    itemname165002: { i18n_id: "itemname165002", i18n_sb: "神·重骑兵" },
     itemname7750008: { i18n_id: "itemname7750008", i18n_sb: "神秘商品之紫骍碎片*3" },
     itemname7750018: { i18n_id: "itemname7750018", i18n_sb: "神秘商品之贯石斧碎片*3" },
     itemname7750028: { i18n_id: "itemname7750028", i18n_sb: "神秘商品之青龙铠碎片*3" },
@@ -11881,7 +11305,7 @@
     itemname792070: { i18n_id: "itemname792070", i18n_sb: "西凉刀兵礼包" },
     itemname792080: { i18n_id: "itemname792080", i18n_sb: "鲁肃礼包" },
     itemname792090: { i18n_id: "itemname792090", i18n_sb: "贾诩礼包" },
-    itemname792100: { i18n_id: "itemname792100", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u793C\\u5305" },
+    itemname792100: { i18n_id: "itemname792100", i18n_sb: "魔·马超礼包" },
     itemname792110: { i18n_id: "itemname792110", i18n_sb: "小鸡哔哔礼包" },
     itemname792120: { i18n_id: "itemname792120", i18n_sb: "公主宪英礼包" },
     itemname792130: { i18n_id: "itemname792130", i18n_sb: "公孙瓒礼包" },
@@ -11901,30 +11325,24 @@
     itemname792270: { i18n_id: "itemname792270", i18n_sb: "波才魂魄礼包" },
     itemname792280: { i18n_id: "itemname792280", i18n_sb: "黄巾妖术兵魂魄礼包" },
     itemname792290: { i18n_id: "itemname792290", i18n_sb: "西凉锤兵魂魄礼包" },
-    itemname792300: {
-        i18n_id: "itemname792300",
-        i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44\\u793C\\u5305"
-    },
+    itemname792300: { i18n_id: "itemname792300", i18n_sb: "吴·孙尚香魂魄礼包" },
     itemname792310: { i18n_id: "itemname792310", i18n_sb: "姜维魂魄礼包" },
-    itemname792320: { i18n_id: "itemname792320", i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\u793C\\u5305" },
-    itemname792330: { i18n_id: "itemname792330", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname792320: { i18n_id: "itemname792320", i18n_sb: "神·吕布魂魄礼包" },
+    itemname792330: { i18n_id: "itemname792330", i18n_sb: "魔·马超魂魄礼包" },
     itemname792340: { i18n_id: "itemname792340", i18n_sb: "小鸡哔哔魂魄礼包" },
     itemname792350: { i18n_id: "itemname792350", i18n_sb: "公主宪英魂魄礼包" },
     itemname792360: { i18n_id: "itemname792360", i18n_sb: "公孙瓒魂魄礼包" },
-    itemname792370: { i18n_id: "itemname792370", i18n_sb: "\\u795E\\xB7\\u5927\\u5200\\u5175\\u793C\\u5305" },
-    itemname7740007: {
-        i18n_id: "itemname7740007",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*3"
-    },
+    itemname792370: { i18n_id: "itemname792370", i18n_sb: "神·大刀兵礼包" },
+    itemname7740007: { i18n_id: "itemname7740007", i18n_sb: "神秘商品之魔·张角魂魄*3" },
     itemname7740017: { i18n_id: "itemname7740017", i18n_sb: "神秘商品之小乔魂魄*3" },
     itemname7740027: { i18n_id: "itemname7740027", i18n_sb: "神秘商品之李典魂魄*3" },
     itemname7740037: { i18n_id: "itemname7740037", i18n_sb: "神秘商品之张郃魂魄*3" },
     itemname7740047: { i18n_id: "itemname7740047", i18n_sb: "神秘商品之天使尚香魂魄*3" },
     itemname7740057: { i18n_id: "itemname7740057", i18n_sb: "神秘商品之花鬘魂魄*3" },
-    itemdesc9151001: { i18n_id: "itemdesc9151001", i18n_sb: "\\u795E\\xB7\\u6307\\u7EB9\\u9B42\\u9B44" },
+    itemdesc9151001: { i18n_id: "itemdesc9151001", i18n_sb: "神·指纹魂魄" },
     itemdesc114001: { i18n_id: "itemdesc114001", i18n_sb: "魏武帝" },
     itemdesc121005: { i18n_id: "itemdesc121005", i18n_sb: "黄月英" },
-    itemdesc141001: { i18n_id: "itemdesc141001", i18n_sb: "\\u795E\\xB7\\u5415\\u5E03" },
+    itemdesc141001: { i18n_id: "itemdesc141001", i18n_sb: "神·吕布" },
     itemdesc111022: { i18n_id: "itemdesc111022", i18n_sb: "李典" },
     itemdesc171010: { i18n_id: "itemdesc171010", i18n_sb: "天使尚香" },
     itemdesc7750004: { i18n_id: "itemdesc7750004", i18n_sb: "照夜玉狮碎片*3" },
@@ -11946,10 +11364,7 @@
     itemdesc792066: { i18n_id: "itemdesc792066", i18n_sb: "打开可获得冀州骑兵*1" },
     itemdesc792076: { i18n_id: "itemdesc792076", i18n_sb: "打开可获得西凉重斧兵*1" },
     itemdesc792086: { i18n_id: "itemdesc792086", i18n_sb: "打开可获得黄月英*1" },
-    itemdesc792096: {
-        i18n_id: "itemdesc792096",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u5415\\u5E03*1"
-    },
+    itemdesc792096: { i18n_id: "itemdesc792096", i18n_sb: "打开可获得神·吕布*1" },
     itemdesc792106: { i18n_id: "itemdesc792106", i18n_sb: "打开可获得学妹小乔*1" },
     itemdesc792116: { i18n_id: "itemdesc792116", i18n_sb: "打开可获得李典*1" },
     itemdesc792126: { i18n_id: "itemdesc792126", i18n_sb: "打开可获得天使尚香*1" },
@@ -11971,16 +11386,13 @@
     itemdesc792286: { i18n_id: "itemdesc792286", i18n_sb: "打开可获得冀州长枪兵魂魄*1" },
     itemdesc792296: { i18n_id: "itemdesc792296", i18n_sb: "打开可获得西凉重弩兵魂魄*1" },
     itemdesc792306: { i18n_id: "itemdesc792306", i18n_sb: "打开可获得张郃魂魄*1" },
-    itemdesc792316: {
-        i18n_id: "itemdesc792316",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44*1"
-    },
+    itemdesc792316: { i18n_id: "itemdesc792316", i18n_sb: "打开可获得神·诸葛亮魂魄*1" },
     itemdesc792326: { i18n_id: "itemdesc792326", i18n_sb: "打开可获得黄盖魂魄*1" },
     itemdesc792336: { i18n_id: "itemdesc792336", i18n_sb: "打开可获得学妹小乔魂魄*1" },
     itemdesc792346: { i18n_id: "itemdesc792346", i18n_sb: "打开可获得李典魂魄*1" },
     itemdesc792356: { i18n_id: "itemdesc792356", i18n_sb: "打开可获得天使尚香魂魄*1" },
     itemdesc792366: { i18n_id: "itemdesc792366", i18n_sb: "打开可获得昭烈帝魂魄*1" },
-    itemdesc7740003: { i18n_id: "itemdesc7740003", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*3" },
+    itemdesc7740003: { i18n_id: "itemdesc7740003", i18n_sb: "魔·貂蝉魂魄*3" },
     itemdesc7740013: { i18n_id: "itemdesc7740013", i18n_sb: "郭嘉魂魄*3" },
     itemdesc7740023: { i18n_id: "itemdesc7740023", i18n_sb: "曹仁魂魄*3" },
     itemdesc7740033: { i18n_id: "itemdesc7740033", i18n_sb: "诸葛亮魂魄*3" },
@@ -11992,7 +11404,7 @@
     queueTeam_11: { i18n_id: "queueTeam_11", i18n_sb: "使用阵容" },
     queueTeam_21: { i18n_id: "queueTeam_21", i18n_sb: "副将" },
     MysteryStorePrompt_4: { i18n_id: "MysteryStorePrompt_4", i18n_sb: "主公，魂石不足" },
-    mystery_name_107700003: { i18n_id: "mystery_name_107700003", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*1" },
+    mystery_name_107700003: { i18n_id: "mystery_name_107700003", i18n_sb: "魔·貂蝉魂魄*1" },
     mystery_name_107700013: { i18n_id: "mystery_name_107700013", i18n_sb: "郭嘉魂魄*1" },
     mystery_name_107700023: { i18n_id: "mystery_name_107700023", i18n_sb: "曹仁魂魄*1" },
     mystery_name_107700033: { i18n_id: "mystery_name_107700033", i18n_sb: "诸葛亮魂魄*1" },
@@ -12005,16 +11417,16 @@
     mystery_name_107700103: { i18n_id: "mystery_name_107700103", i18n_sb: "诸葛瑾魂魄*1" },
     mystery_name_107700113: { i18n_id: "mystery_name_107700113", i18n_sb: "学妹小乔魂魄*1" },
     mystery_name_107700123: { i18n_id: "mystery_name_107700123", i18n_sb: "吴大帝魂魄*1" },
-    mystery_name_107700133: { i18n_id: "mystery_name_107700133", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*3" },
+    mystery_name_107700133: { i18n_id: "mystery_name_107700133", i18n_sb: "魔·张角魂魄*3" },
     mystery_name_107700143: { i18n_id: "mystery_name_107700143", i18n_sb: "小乔魂魄*3" },
     mystery_name_107700153: { i18n_id: "mystery_name_107700153", i18n_sb: "李典魂魄*3" },
     mystery_name_107700163: { i18n_id: "mystery_name_107700163", i18n_sb: "张郃魂魄*3" },
     mystery_name_107700173: { i18n_id: "mystery_name_107700173", i18n_sb: "天使尚香魂魄*3" },
-    mystery_name_107700183: { i18n_id: "mystery_name_107700183", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*3" },
+    mystery_name_107700183: { i18n_id: "mystery_name_107700183", i18n_sb: "魔·张飞魂魄*3" },
     mystery_name_107700193: { i18n_id: "mystery_name_107700193", i18n_sb: "曹操魂魄*3" },
     mystery_name_107700203: { i18n_id: "mystery_name_107700203", i18n_sb: "华佗魂魄*3" },
     mystery_name_107700213: { i18n_id: "mystery_name_107700213", i18n_sb: "曹丕魂魄*3" },
-    mystery_name_107700223: { i18n_id: "mystery_name_107700223", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*3" },
+    mystery_name_107700223: { i18n_id: "mystery_name_107700223", i18n_sb: "蜀·孙尚香魂魄*3" },
     mystery_name_107700233: { i18n_id: "mystery_name_107700233", i18n_sb: "荀彧魂魄*3" },
     mystery_name_107700243: { i18n_id: "mystery_name_107700243", i18n_sb: "的卢碎片*1" },
     mystery_name_107700253: { i18n_id: "mystery_name_107700253", i18n_sb: "倚天剑碎片*1" },
@@ -12087,10 +11499,7 @@
     stage_29502: { i18n_id: "stage_29502", i18n_sb: "居庸关1-居庸关5" },
     robot_5935: { i18n_id: "robot_5935", i18n_sb: "左慈队" },
     itemname792704: { i18n_id: "itemname792704", i18n_sb: "女神大小乔皮肤礼包" },
-    itemdesc792704: {
-        i18n_id: "itemdesc792704",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u5927\\u5C0F\\u4E54\\u76AE\\u80A4\\xD71"
-    },
+    itemdesc792704: { i18n_id: "itemdesc792704", i18n_sb: "打开可获得女神大小乔皮肤×1" },
     meridian_8: { i18n_id: "meridian_8", i18n_sb: "阳维脉" },
     meridian_1_10: { i18n_id: "meridian_1_10", i18n_sb: "下脘" },
     meridian_1_20: { i18n_id: "meridian_1_20", i18n_sb: "华盖" },
@@ -12139,7 +11548,7 @@
     mystery_name_107700446: { i18n_id: "mystery_name_107700446", i18n_sb: "马术残卷" },
     mystery_name_107700456: { i18n_id: "mystery_name_107700456", i18n_sb: "天香残卷" },
     itemname600121: { i18n_id: "itemname600121", i18n_sb: "大圣孙坚传承符" },
-    mystery_name_117710003: { i18n_id: "mystery_name_117710003", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*1" },
+    mystery_name_117710003: { i18n_id: "mystery_name_117710003", i18n_sb: "魔·貂蝉魂魄*1" },
     mystery_name_117710013: { i18n_id: "mystery_name_117710013", i18n_sb: "郭嘉魂魄*1" },
     mystery_name_117710023: { i18n_id: "mystery_name_117710023", i18n_sb: "曹仁魂魄*1" },
     mystery_name_117710033: { i18n_id: "mystery_name_117710033", i18n_sb: "诸葛亮魂魄*1" },
@@ -12151,7 +11560,7 @@
     mystery_name_107740030: { i18n_id: "mystery_name_107740030", i18n_sb: "鲁肃魂魄*3" },
     mystery_name_107740040: { i18n_id: "mystery_name_107740040", i18n_sb: "诸葛瑾魂魄*3" },
     mystery_name_107740052: { i18n_id: "mystery_name_107740052", i18n_sb: "刘协魂魄*3" },
-    mystery_name_117740004: { i18n_id: "mystery_name_117740004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*3" },
+    mystery_name_117740004: { i18n_id: "mystery_name_117740004", i18n_sb: "魔·凌统魂魄*3" },
     mystery_name_117740014: { i18n_id: "mystery_name_117740014", i18n_sb: "关羽魂魄*3" },
     mystery_name_117740024: { i18n_id: "mystery_name_117740024", i18n_sb: "黄月英魂魄*3" },
     mystery_name_117740034: { i18n_id: "mystery_name_117740034", i18n_sb: "吕布魂魄*3" },
@@ -12272,7 +11681,7 @@
     dialogname552020013: { i18n_id: "dialogname552020013", i18n_sb: "$UserName" },
     dialogname553004015: { i18n_id: "dialogname553004015", i18n_sb: "$UserName" },
     dialogname553012014: { i18n_id: "dialogname553012014", i18n_sb: "伊籍" },
-    dialogname553018013: { i18n_id: "dialogname553018013", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    dialogname553018013: { i18n_id: "dialogname553018013", i18n_sb: "魔·马超" },
     dialogname553019015: { i18n_id: "dialogname553019015", i18n_sb: "$UserName" },
     dialogname554004011: { i18n_id: "dialogname554004011", i18n_sb: "$UserName" },
     dialogname554008022: { i18n_id: "dialogname554008022", i18n_sb: "$UserName" },
@@ -12326,10 +11735,7 @@
     "4210062101": { i18n_id: "4210062101", i18n_sb: "万里奔袭" },
     "4110240101": { i18n_id: "4110240101", i18n_sb: "神兵天助" },
     itemname600207: { i18n_id: "itemname600207", i18n_sb: "花语扇碎片" },
-    itemdesc791210061: {
-        i18n_id: "itemdesc791210061",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x3,\\u7075\\u829Dx1000"
-    },
+    itemdesc791210061: { i18n_id: "itemdesc791210061", i18n_sb: "神·曹操魂魄x3,灵芝x1000" },
     itemdesc600213: { i18n_id: "itemdesc600213", i18n_sb: "可以兑换觉醒材料" },
     "8310080801": { i18n_id: "8310080801", i18n_sb: "觉醒图腾" },
     surrunderdesc_539: { i18n_id: "surrunderdesc_539", i18n_sb: "0" },
@@ -12395,10 +11801,7 @@
     "4710151301": { i18n_id: "4710151301", i18n_sb: "宝甲加护" },
     "4110241101": { i18n_id: "4110241101", i18n_sb: "共谋大业" },
     "4410130301": { i18n_id: "4410130301", i18n_sb: "骤如烈风" },
-    itemdesc791310131: {
-        i18n_id: "itemdesc791310131",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791310131: { i18n_id: "itemdesc791310131", i18n_sb: "神·曹操魂魄x2,灵芝x1000" },
     "8410030701": { i18n_id: "8410030701", i18n_sb: "觉醒图腾" },
     "8410130402": { i18n_id: "8410130402", i18n_sb: "修炼武将攻属性至6000" },
     surrunderdesc_550: { i18n_id: "surrunderdesc_550", i18n_sb: "0" },
@@ -12436,10 +11839,7 @@
     "8510020201": { i18n_id: "8510020201", i18n_sb: "最强属性" },
     "8110060802": { i18n_id: "8110060802", i18n_sb: "使用觉醒张辽战斗500次" },
     juexing_zhangliao_open02: { i18n_id: "juexing_zhangliao_open02", i18n_sb: "张辽神兵升至10重10锻" },
-    itemdesc87151002: {
-        i18n_id: "itemdesc87151002",
-        i18n_sb: "\\u795E\\xB7\\u8D5B\\u96F7\\u9053\\u5177\\uFF081\\u7EA7\\uFF09"
-    },
+    itemdesc87151002: { i18n_id: "itemdesc87151002", i18n_sb: "神·赛雷道具（1级）" },
     "31102805": {
         i18n_id: "31102805",
         i18n_sb: "你每受一次伤害，或行动阶段开始时，获得一枚“忍”标志。若“忍”的数量满足要求，则你在对应阶段必定消耗相应数量的“忍”标记发动相应技能。奇才效果：有大几率多段施放，每段对敌方全体造成智力伤害，减少自身下一次受到的伤害；乱武效果：对敌方全体造成智力伤害，若智力高于目标，则造成额外智力伤害；救援：免疫此次即将受到的伤害；拜印技能升级时，提升奇才及乱武的效果。"
@@ -12456,10 +11856,7 @@
     "4310201501": { i18n_id: "4310201501", i18n_sb: "止斗谋同" },
     "4310210101": { i18n_id: "4310210101", i18n_sb: "国色天香" },
     itemname791310091: { i18n_id: "itemname791310091", i18n_sb: "臣服奖励" },
-    itemdesc791310091: {
-        i18n_id: "itemdesc791310091",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791310091: { i18n_id: "itemdesc791310091", i18n_sb: "神·司马懿魂魄x2,灵芝x1000" },
     "8410220501": { i18n_id: "8410220501", i18n_sb: "千锤百炼" },
     "8310090501": { i18n_id: "8310090501", i18n_sb: "开启觉醒宝箱" },
     "8310210202": { i18n_id: "8310210202", i18n_sb: "天赋技能等级达到30级" },
@@ -12475,10 +11872,7 @@
         i18n_id: "35200105",
         i18n_sb: "永久提升自身10%智力并对敌方场上智力低于自身的角色造成无视防御的智力伤害，伤害系数$1%，同时有50%概率再次释放饶舌。阵亡时，若你在一场战斗中未发动过饶舌，你立即复活并将血量回复至1。"
     },
-    itemdesc79152001: {
-        i18n_id: "itemdesc79152001",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x4,\\u7075\\u829Dx1000"
-    },
+    itemdesc79152001: { i18n_id: "itemdesc79152001", i18n_sb: "神·司马懿魂魄x4,灵芝x1000" },
     "8520010302": { i18n_id: "8520010302", i18n_sb: "修炼武将智属性至6000" },
     "331020101": { i18n_id: "331020101", i18n_sb: "甘露一阶" },
     "331020103": { i18n_id: "331020103", i18n_sb: "行动时 易触发" },
@@ -12506,7 +11900,7 @@
     "8520020502": { i18n_id: "8520020502", i18n_sb: "臣服王元姬" },
     itemname9152001: { i18n_id: "itemname9152001", i18n_sb: "圣诞司徒魂魄" },
     itemname792757: { i18n_id: "itemname792757", i18n_sb: "麋鹿碎片*1" },
-    itemdesc151002: { i18n_id: "itemdesc151002", i18n_sb: "\\u795E\\xB7\\u8D5B\\u96F7" },
+    itemdesc151002: { i18n_id: "itemdesc151002", i18n_sb: "神·赛雷" },
     festival_first_kill_mail: {
         i18n_id: "festival_first_kill_mail",
         i18n_sb: "恭喜您首次击杀副本首领bossname,特此奉上福利：新年礼包*xueqiu_num,卑弥呼魂魄礼包*milu_num。"
@@ -12561,12 +11955,9 @@
     shenbing_name_800033: { i18n_id: "shenbing_name_800033", i18n_sb: "王元姬神兵" },
     "351021805": { i18n_id: "351021805", i18n_sb: "免疫此次即将受到的伤害" },
     itemdesc600246: { i18n_id: "itemdesc600246", i18n_sb: "贾诩觉醒升级材料" },
-    itemname121021: { i18n_id: "itemname121021", i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91" },
+    itemname121021: { i18n_id: "itemname121021", i18n_sb: "神·赵云" },
     "4310122401": { i18n_id: "4310122401", i18n_sb: "无人能挡" },
-    itemdesc791410101: {
-        i18n_id: "itemdesc791410101",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791410101: { i18n_id: "itemdesc791410101", i18n_sb: "神·曹操魂魄x2,灵芝x1000" },
     "8310120702": { i18n_id: "8310120702", i18n_sb: "觉醒太史慈升级图腾至2层2段" },
     juexing_taishici_open04: { i18n_id: "juexing_taishici_open04", i18n_sb: "拥有1个太史慈觉醒道具" },
     "32102901": { i18n_id: "32102901", i18n_sb: "连环" },
@@ -12587,10 +11978,7 @@
     "4410221101": { i18n_id: "4410221101", i18n_sb: "官渡之败" },
     shenbing_name_800035: { i18n_id: "shenbing_name_800035", i18n_sb: "华佗神兵" },
     "4110252101": { i18n_id: "4110252101", i18n_sb: "天马行空" },
-    itemdesc791410021: {
-        i18n_id: "itemdesc791410021",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791410021: { i18n_id: "itemdesc791410021", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8110250601": { i18n_id: "8110250601", i18n_sb: "开启觉醒宝箱" },
     "8110250802": { i18n_id: "8110250802", i18n_sb: "觉醒邓艾升级图腾至4层2段" },
     itemname792777: { i18n_id: "itemname792777", i18n_sb: "良心鸡碎片*1" },
@@ -12663,10 +12051,7 @@
     "4210210101": { i18n_id: "4210210101", i18n_sb: "趁手神兵" },
     "8210210101": { i18n_id: "8210210101", i18n_sb: "最强属性" },
     itemname791240011: { i18n_id: "itemname791240011", i18n_sb: "臣服奖励" },
-    itemdesc791210081: {
-        i18n_id: "itemdesc791210081",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791210081: { i18n_id: "itemdesc791210081", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     juexing_wudadi_open04: { i18n_id: "juexing_wudadi_open04", i18n_sb: "拥有1个吴大帝觉醒道具" },
     "4210082001": { i18n_id: "4210082001", i18n_sb: "护体宝甲" },
     "4240012401": { i18n_id: "4240012401", i18n_sb: "三足鼎立" },
@@ -12691,10 +12076,7 @@
     "4420132401": { i18n_id: "4420132401", i18n_sb: "亡国之恨" },
     "4210240401": { i18n_id: "4210240401", i18n_sb: "旧主之情" },
     itemname600279: { i18n_id: "itemname600279", i18n_sb: "流星鞭" },
-    itemdesc791310111: {
-        i18n_id: "itemdesc791310111",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791310111: { i18n_id: "itemdesc791310111", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     "8310110601": { i18n_id: "8310110601", i18n_sb: "觉醒图腾" },
     "8420130902": { i18n_id: "8420130902", i18n_sb: "使用觉醒伏皇后战斗500次" },
     juexing_fuhuanghou_open01: { i18n_id: "juexing_fuhuanghou_open01", i18n_sb: "伏皇后突破至5星" },
@@ -12720,13 +12102,10 @@
     itemname600293: { i18n_id: "itemname600293", i18n_sb: "周年庆积分" },
     "8410140601": { i18n_id: "8410140601", i18n_sb: "开启觉醒宝箱" },
     "8410140802": { i18n_id: "8410140802", i18n_sb: "觉醒文丑升级图腾至4层2段" },
-    shenbing_name_800043: { i18n_id: "shenbing_name_800043", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u795E\\u5175" },
+    shenbing_name_800043: { i18n_id: "shenbing_name_800043", i18n_sb: "神·诸葛亮神兵" },
     "4210021501": { i18n_id: "4210021501", i18n_sb: "天神之力" },
     "4710170401": { i18n_id: "4710170401", i18n_sb: "天生皇后" },
-    itemdesc791410141: {
-        i18n_id: "itemdesc791410141",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791410141: { i18n_id: "itemdesc791410141", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     "16500501": { i18n_id: "16500501", i18n_sb: "死神祝融" },
     "8650050101": { i18n_id: "8650050101", i18n_sb: "至尊身份" },
     "341021101": { i18n_id: "341021101", i18n_sb: "渐营一阶" },
@@ -12747,7 +12126,7 @@
     itemdesc600294: { i18n_id: "itemdesc600294", i18n_sb: "七彩石" },
     juexing_zhangbao_open01: { i18n_id: "juexing_zhangbao_open01", i18n_sb: "张宝突破至5星" },
     itemname9165006: { i18n_id: "itemname9165006", i18n_sb: "圣诞貂蝉魂魄" },
-    itemdesc79165006: { i18n_id: "itemdesc79165006", i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x3" },
+    itemdesc79165006: { i18n_id: "itemdesc79165006", i18n_sb: "界·关羽魂魄x3" },
     "8410220602": { i18n_id: "8410220602", i18n_sb: "觉醒宝箱开启200次" },
     shenbing_name_800044: { i18n_id: "shenbing_name_800044", i18n_sb: "SP马超神兵" },
     "4410221901": { i18n_id: "4410221901", i18n_sb: "逐鹿中原" },
@@ -12809,7 +12188,7 @@
     "12101901": { i18n_id: "12101901", i18n_sb: "徐庶" },
     "14201201": { i18n_id: "14201201", i18n_sb: "刘表" },
     "11101401": { i18n_id: "11101401", i18n_sb: "夏侯渊" },
-    "18100501": { i18n_id: "18100501", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353" },
+    "18100501": { i18n_id: "18100501", i18n_sb: "魔·董卓" },
     "19200301": { i18n_id: "19200301", i18n_sb: "功夫阿奇" },
     "17100801": { i18n_id: "17100801", i18n_sb: "公主宪英" },
     "13101901": { i18n_id: "13101901", i18n_sb: "诸葛瑾" },
@@ -13034,10 +12413,7 @@
     },
     "33100102": { i18n_id: "33100102", i18n_sb: "【炎神】获得上古炎神之助，使智力及血量大增，属被动技能，主智和血。装备后，可增加自身的智力和血量。" },
     "33200202": { i18n_id: "33200202", i18n_sb: "0" },
-    "38100302": {
-        i18n_id: "38100302",
-        i18n_sb: "\\u3010\\u9B54\\u94C1\\u9A91\\u3011\\u9B54\\xB7\\u9A6C\\u8D85\\u53D7\\u4F24\\u540E\\u53EF\\u9B54\\u6027\\u5927\\u53D1\\uFF0C\\u65A9\\u654C\\u4E00\\u7247\\uFF0C\\u5C5E\\u5356\\u8840\\u6280\\u80FD\\uFF0C\\u4E3B\\u9632\\u3002\\u53D7\\u4F24\\u540E\\u6613\\u89E6\\u53D1\\uFF0C\\u53EF\\u5BF9\\u654C\\u65B9\\u5168\\u4F53\\u9020\\u6210\\u9632\\u5FA1\\u529B\\u4F24\\u5BB3\\u3002"
-    },
+    "38100302": { i18n_id: "38100302", i18n_sb: "【魔铁骑】魔·马超受伤后可魔性大发，斩敌一片，属卖血技能，主防。受伤后易触发，可对敌方全体造成防御力伤害。" },
     "37100502": { i18n_id: "37100502", i18n_sb: "【圣弓】黄忠百发百中直取敌方要害的弓术，属攻击技能，主攻。行动时易触发，可对场上防最低敌军造成攻击伤害。" },
     "33101902": { i18n_id: "33101902", i18n_sb: "【弘援】诸葛瑾弘缓雍雅、大度善思，穷尽自己的才能以保友邦免于危难，属被动技能，主防。装备后，可提升己方全体防御。" },
     "371014202": {
@@ -13383,7 +12759,7 @@
     itemname143001: { i18n_id: "itemname143001", i18n_sb: "王允" },
     itemname164052: { i18n_id: "itemname164052", i18n_sb: "黄巾锤兵" },
     itemname164060: { i18n_id: "itemname164060", i18n_sb: "冀州重骑兵" },
-    itemname131006: { i18n_id: "itemname131006", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    itemname131006: { i18n_id: "itemname131006", i18n_sb: "吴·孙尚香" },
     itemname89121007: { i18n_id: "itemname89121007", i18n_sb: "累计登陆礼包张飞" },
     itemname79111008: { i18n_id: "itemname79111008", i18n_sb: "臣服奖励" },
     itemname79112018: { i18n_id: "itemname79112018", i18n_sb: "臣服奖励" },
@@ -13460,14 +12836,11 @@
     itemname791403: { i18n_id: "itemname791403", i18n_sb: "SS9AA" },
     itemname88111016: { i18n_id: "itemname88111016", i18n_sb: "典韦道具（20级）" },
     itemname88121013: { i18n_id: "itemname88121013", i18n_sb: "张星彩道具（20级）" },
-    itemname88131006: {
-        i18n_id: "itemname88131006",
-        i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u9053\\u5177\\uFF0820\\u7EA7\\uFF09"
-    },
+    itemname88131006: { i18n_id: "itemname88131006", i18n_sb: "吴·孙尚香道具（20级）" },
     itemname88141002: { i18n_id: "itemname88141002", i18n_sb: "吕布道具（20级）" },
     itemname88142007: { i18n_id: "itemname88142007", i18n_sb: "李儒道具（20级）" },
     itemname790311: { i18n_id: "itemname790311", i18n_sb: "20级王异礼包" },
-    itemname790321: { i18n_id: "itemname790321", i18n_sb: "20\\u7EA7\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u793C\\u5305" },
+    itemname790321: { i18n_id: "itemname790321", i18n_sb: "20级蜀·孙尚香礼包" },
     itemname790331: { i18n_id: "itemname790331", i18n_sb: "20级大乔礼包" },
     itemname790341: { i18n_id: "itemname790341", i18n_sb: "20级貂蝉礼包" },
     itemname790351: { i18n_id: "itemname790351", i18n_sb: "20级兵长陆逊礼包" },
@@ -13520,7 +12893,7 @@
     itemname791501: { i18n_id: "itemname791501", i18n_sb: "神榜低级宝箱" },
     itemname791511: { i18n_id: "itemname791511", i18n_sb: "霸者披风礼包" },
     itemname791521: { i18n_id: "itemname791521", i18n_sb: "燎原火礼包" },
-    itemname9181001: { i18n_id: "itemname9181001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44" },
+    itemname9181001: { i18n_id: "itemname9181001", i18n_sb: "魔·张飞魂魄" },
     itemname791540: { i18n_id: "itemname791540", i18n_sb: "燎原火宝箱（夏侯惇缘分金坐骑）" },
     itemname791550: { i18n_id: "itemname791550", i18n_sb: "至尊会员贵宾礼包" },
     itemname6300010: { i18n_id: "itemname6300010", i18n_sb: "倚天剑礼盒(曹操缘分神级武器)" },
@@ -13528,10 +12901,7 @@
     itemname6300030: { i18n_id: "itemname6300030", i18n_sb: "无双铠礼盒(凌统缘分神级防具)" },
     itemname6300040: { i18n_id: "itemname6300040", i18n_sb: "万箭齐发礼盒(袁绍缘分神级锦囊)" },
     itemname6300050: { i18n_id: "itemname6300050", i18n_sb: "乌云踏雪礼盒(张飞缘分神级坐骑)" },
-    itemname6300060: {
-        i18n_id: "itemname6300060",
-        i18n_sb: "\\u8FFD\\u98CE\\u793C\\u76D2\\uFF08\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u7F18\\u5206\\u795E\\u7EA7\\u5750\\u9A91\\uFF09"
-    },
+    itemname6300060: { i18n_id: "itemname6300060", i18n_sb: "追风礼盒（群·蔡文姬缘分神级坐骑）" },
     itemname6300070: { i18n_id: "itemname6300070", i18n_sb: "燎原火礼盒（夏侯惇缘分金坐骑）" },
     itemname6300089: { i18n_id: "itemname6300089", i18n_sb: "朱雀羽扇礼盒（周瑜缘分神级武器）" },
     itemname6300099: { i18n_id: "itemname6300099", i18n_sb: "朱雀羽扇礼盒（李典缘分神级武器）" },
@@ -13545,18 +12915,18 @@
     itemname791580: { i18n_id: "itemname791580", i18n_sb: "普通礼包C" },
     itemname791590: { i18n_id: "itemname791590", i18n_sb: "元宝宝箱*5" },
     itemname791600: { i18n_id: "itemname791600", i18n_sb: "UC礼包" },
-    itemname9181009: { i18n_id: "itemname9181009", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44" },
+    itemname9181009: { i18n_id: "itemname9181009", i18n_sb: "魔·张角魂魄" },
     itemname791613: { i18n_id: "itemname791613", i18n_sb: "『诸葛连弩』*1" },
-    itemname791623: { i18n_id: "itemname791623", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*2" },
+    itemname791623: { i18n_id: "itemname791623", i18n_sb: "魔·马超魂魄*2" },
     itemname791633: { i18n_id: "itemname791633", i18n_sb: "王者公会礼包" },
     itemname791643: { i18n_id: "itemname791643", i18n_sb: "邮政礼包低级" },
     itemname6300087: { i18n_id: "itemname6300087", i18n_sb: "八卦阵礼盒（曹仁缘分神级防具）" },
-    itemname791654: { i18n_id: "itemname791654", i18n_sb: "\\u5415\\u73B2\\u7EEE\\u9B42\\u9B44\\xD730\\u793C\\u5305" },
+    itemname791654: { i18n_id: "itemname791654", i18n_sb: "吕玲绮魂魄×30礼包" },
     itemname791664: { i18n_id: "itemname791664", i18n_sb: "许愿流星*4" },
     itemname791674: { i18n_id: "itemname791674", i18n_sb: "『青龙铠』*1" },
     itemname791678: { i18n_id: "itemname791678", i18n_sb: "小鸡哔哔礼包" },
     itemname791688: { i18n_id: "itemname791688", i18n_sb: "国之宝匣*600" },
-    itemname791698: { i18n_id: "itemname791698", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*2" },
+    itemname791698: { i18n_id: "itemname791698", i18n_sb: "魔·凌统魂魄*2" },
     itemname791704: { i18n_id: "itemname791704", i18n_sb: "8级礼包" },
     itemname541022: { i18n_id: "itemname541022", i18n_sb: "第41章第2个宝箱" },
     itemname544023: { i18n_id: "itemname544023", i18n_sb: "第44章第3个宝箱" },
@@ -13566,12 +12936,12 @@
     itemname600079: { i18n_id: "itemname600079", i18n_sb: "2级宝石箱" },
     itemname791714: { i18n_id: "itemname791714", i18n_sb: "银宝箱" },
     itemname791724: { i18n_id: "itemname791724", i18n_sb: "跨服天梯35积分礼包" },
-    itemname791734: { i18n_id: "itemname791734", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*2" },
+    itemname791734: { i18n_id: "itemname791734", i18n_sb: "魔·贾诩魂魄*2" },
     itemname791742: { i18n_id: "itemname791742", i18n_sb: "巅峰之战370积分礼包" },
-    itemname791752: { i18n_id: "itemname791752", i18n_sb: "\\u5173\\u7FBD\\u9B42\\u9B44\\xD7105" },
-    itemname791762: { i18n_id: "itemname791762", i18n_sb: "\\u864E\\u5578\\xD71" },
+    itemname791752: { i18n_id: "itemname791752", i18n_sb: "关羽魂魄×105" },
+    itemname791762: { i18n_id: "itemname791762", i18n_sb: "虎啸×1" },
     itemname791772: { i18n_id: "itemname791772", i18n_sb: "郭嘉" },
-    itemname791782: { i18n_id: "itemname791782", i18n_sb: "\\u7075\\u829D\\xD71500" },
+    itemname791782: { i18n_id: "itemname791782", i18n_sb: "灵芝×1500" },
     itemname11100008: { i18n_id: "itemname11100008", i18n_sb: "女神月英" },
     itemname21100009: { i18n_id: "itemname21100009", i18n_sb: "女神尚香皮肤" },
     itemname791789: { i18n_id: "itemname791789", i18n_sb: "女神祝融礼包" },
@@ -13582,12 +12952,9 @@
     itemname10548010: { i18n_id: "itemname10548010", i18n_sb: "第48章隐藏宝箱" },
     itemname791818: { i18n_id: "itemname791818", i18n_sb: "谢礼2(普通)" },
     itemname791828: { i18n_id: "itemname791828", i18n_sb: "谢礼5(困难)" },
-    itemname600099: { i18n_id: "itemname600099", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD728" },
-    itemname600107: { i18n_id: "itemname600107", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD73840" },
-    itemname7710004: {
-        i18n_id: "itemname7710004",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*1"
-    },
+    itemname600099: { i18n_id: "itemname600099", i18n_sb: "主公经验×28" },
+    itemname600107: { i18n_id: "itemname600107", i18n_sb: "主公经验×3840" },
+    itemname7710004: { i18n_id: "itemname7710004", i18n_sb: "神秘商品之魔·凌统魂魄*1" },
     itemname7710014: { i18n_id: "itemname7710014", i18n_sb: "神秘商品之关羽魂魄*1" },
     itemname7710024: { i18n_id: "itemname7710024", i18n_sb: "神秘商品之黄月英魂魄*1" },
     itemname7710034: { i18n_id: "itemname7710034", i18n_sb: "神秘商品之吕布魂魄*1" },
@@ -13804,122 +13171,38 @@
     itemdesc164021: { i18n_id: "itemdesc164021", i18n_sb: "西凉刀兵" },
     itemdesc142002: { i18n_id: "itemdesc142002", i18n_sb: "高顺" },
     itemdesc89131007: { i18n_id: "itemdesc89131007", i18n_sb: "至尊会员礼包大乔" },
-    itemdesc79111009: {
-        i18n_id: "itemdesc79111009",
-        i18n_sb: "\\u5BD2\\u51B0\\u5251\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79112019: {
-        i18n_id: "itemdesc79112019",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD72"
-    },
-    itemdesc79113020: {
-        i18n_id: "itemdesc79113020",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u66F9\\u64CD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164037: {
-        i18n_id: "itemdesc79164037",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C34\\u6DF9\\u4E03\\u519B\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121014: {
-        i18n_id: "itemdesc79121014",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD74,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79122017: {
-        i18n_id: "itemdesc79122017",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD72"
-    },
-    itemdesc79123013: {
-        i18n_id: "itemdesc79123013",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5218\\u5907\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164013: {
-        i18n_id: "itemdesc79164013",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5DF4\\u8700\\u957F\\u67AA\\u5175\\xD71,\\u9752\\u9CDE\\u76D4\\u788E\\u7247\\xD71"
-    },
-    itemdesc79132010: { i18n_id: "itemdesc79132010", i18n_sb: "\\u5143\\u5B9D\\xD7150" },
-    itemdesc79132022: {
-        i18n_id: "itemdesc79132022",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u9A6C\\u8D85\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79164048: {
-        i18n_id: "itemdesc79164048",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C5F\\u4E1C\\u91CD\\u6C34\\u5175\\xD71,\\u6C34\\u6DF9\\u4E03\\u519B\\u788E\\u7247\\xD71"
-    },
-    itemdesc79141012: {
-        i18n_id: "itemdesc79141012",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79142020: { i18n_id: "itemdesc79142020", i18n_sb: "\\u5143\\u5B9D\\xD7150" },
-    itemdesc79164007: {
-        i18n_id: "itemdesc79164007",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9EC4\\u5DFE\\u5DEB\\u5175\\xD71,\\u9ED1\\u9B03\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164057: {
-        i18n_id: "itemdesc79164057",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5180\\u5DDE\\u957F\\u67AA\\u5175\\xD71,\\u5434\\u516D\\u5251\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164028: {
-        i18n_id: "itemdesc79164028",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u897F\\u51C9\\u91CD\\u5F29\\u5175\\xD71,\\u6C34\\u6DF9\\u4E03\\u519B\\u788E\\u7247\\xD71"
-    },
-    itemdesc79111012: {
-        i18n_id: "itemdesc79111012",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79142006: {
-        i18n_id: "itemdesc79142006",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79191006: {
-        i18n_id: "itemdesc79191006",
-        i18n_sb: "\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7200"
-    },
-    itemdesc79171008: {
-        i18n_id: "itemdesc79171008",
-        i18n_sb: "\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79171010: {
-        i18n_id: "itemdesc79171010",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79122025: {
-        i18n_id: "itemdesc79122025",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79171014: {
-        i18n_id: "itemdesc79171014",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc790221: {
-        i18n_id: "itemdesc790221",
-        i18n_sb: "\\u5185\\u542B\\u767D\\u864E\\u5191\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790231: {
-        i18n_id: "itemdesc790231",
-        i18n_sb: "\\u5185\\u542B\\u96CC\\u96C4\\u53CC\\u80A1\\u5251\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790241: {
-        i18n_id: "itemdesc790241",
-        i18n_sb: "\\u5185\\u542B\\u85E4\\u7532\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790251: {
-        i18n_id: "itemdesc790251",
-        i18n_sb: "\\u5185\\u542B\\u60CA\\u5E06\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790261: {
-        i18n_id: "itemdesc790261",
-        i18n_sb: "\\u5185\\u542B\\u95EA\\u7535\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790271: {
-        i18n_id: "itemdesc790271",
-        i18n_sb: "\\u5185\\u542B\\u7070\\u5F71\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790281: {
-        i18n_id: "itemdesc790281",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u767D\\u864E\\u80C4\\xD71"
-    },
-    itemdesc790291: { i18n_id: "itemdesc790291", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7100" },
-    itemdesc790301: { i18n_id: "itemdesc790301", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7100" },
+    itemdesc79111009: { i18n_id: "itemdesc79111009", i18n_sb: "寒冰剑碎片×3,灵芝×500" },
+    itemdesc79112019: { i18n_id: "itemdesc79112019", i18n_sb: "元宝×60,木牛流马碎片×2" },
+    itemdesc79113020: { i18n_id: "itemdesc79113020", i18n_sb: "元宝×40,曹操魂魄×3" },
+    itemdesc79164037: { i18n_id: "itemdesc79164037", i18n_sb: "元宝×20,水淹七军碎片×1" },
+    itemdesc79121014: { i18n_id: "itemdesc79121014", i18n_sb: "神·周瑜魂魄×4,灵芝×1000" },
+    itemdesc79122017: { i18n_id: "itemdesc79122017", i18n_sb: "元宝×60,木牛流马碎片×2" },
+    itemdesc79123013: { i18n_id: "itemdesc79123013", i18n_sb: "元宝×40,刘备魂魄×3" },
+    itemdesc79164013: { i18n_id: "itemdesc79164013", i18n_sb: "元宝×20,巴蜀长枪兵×1,青鳞盔碎片×1" },
+    itemdesc79132010: { i18n_id: "itemdesc79132010", i18n_sb: "元宝×150" },
+    itemdesc79132022: { i18n_id: "itemdesc79132022", i18n_sb: "元宝×60,马超魂魄×4" },
+    itemdesc79164048: { i18n_id: "itemdesc79164048", i18n_sb: "元宝×20,江东重水兵×1,水淹七军碎片×1" },
+    itemdesc79141012: { i18n_id: "itemdesc79141012", i18n_sb: "神·诸葛亮魂魄×3,灵芝×1000" },
+    itemdesc79142020: { i18n_id: "itemdesc79142020", i18n_sb: "元宝×150" },
+    itemdesc79164007: { i18n_id: "itemdesc79164007", i18n_sb: "元宝×20,黄巾巫兵×1,黑鬃碎片×1" },
+    itemdesc79164057: { i18n_id: "itemdesc79164057", i18n_sb: "元宝×20,冀州长枪兵×1,吴六剑碎片×1" },
+    itemdesc79164028: { i18n_id: "itemdesc79164028", i18n_sb: "元宝×20,西凉重弩兵×1,水淹七军碎片×1" },
+    itemdesc79111012: { i18n_id: "itemdesc79111012", i18n_sb: "神·诸葛亮魂魄×3,灵芝×1000" },
+    itemdesc79142006: { i18n_id: "itemdesc79142006", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79191006: { i18n_id: "itemdesc79191006", i18n_sb: "爪黄飞电碎片×3,灵芝×200" },
+    itemdesc79171008: { i18n_id: "itemdesc79171008", i18n_sb: "爪黄飞电碎片×3,灵芝×1000" },
+    itemdesc79171010: { i18n_id: "itemdesc79171010", i18n_sb: "神·诸葛亮魂魄×2,灵芝×1000" },
+    itemdesc79122025: { i18n_id: "itemdesc79122025", i18n_sb: "神·吕布魂魄×2,灵芝×1000" },
+    itemdesc79171014: { i18n_id: "itemdesc79171014", i18n_sb: "神·吕蒙魂魄×2,灵芝×1000" },
+    itemdesc790221: { i18n_id: "itemdesc790221", i18n_sb: "内含白虎冑碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790231: { i18n_id: "itemdesc790231", i18n_sb: "内含雌雄双股剑碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790241: { i18n_id: "itemdesc790241", i18n_sb: "内含藤甲碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790251: { i18n_id: "itemdesc790251", i18n_sb: "内含惊帆碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790261: { i18n_id: "itemdesc790261", i18n_sb: "内含闪电碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790271: { i18n_id: "itemdesc790271", i18n_sb: "内含灰影碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790281: { i18n_id: "itemdesc790281", i18n_sb: "打开可获得：白虎胄×1" },
+    itemdesc790291: { i18n_id: "itemdesc790291", i18n_sb: "内含灵芝×100" },
+    itemdesc790301: { i18n_id: "itemdesc790301", i18n_sb: "内含灵芝×100" },
     itemdesc790217: { i18n_id: "itemdesc790217", i18n_sb: "含有兵长陆逊*1" },
     itemdesc791015: { i18n_id: "itemdesc791015", i18n_sb: "内含 10个金宝箱 10个金钥匙" },
     itemdesc791025: { i18n_id: "itemdesc791025", i18n_sb: "有大量机会获得朱雀羽扇碎片以及其他稀有道具" },
@@ -13962,10 +13245,7 @@
     itemdesc791394: { i18n_id: "itemdesc791394", i18n_sb: "SSVIPD" },
     itemdesc791404: { i18n_id: "itemdesc791404", i18n_sb: "SSAAA" },
     itemdesc88111021: { i18n_id: "itemdesc88111021", i18n_sb: "王异道具（20级）" },
-    itemdesc88121014: {
-        i18n_id: "itemdesc88121014",
-        i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9053\\u5177\\uFF0820\\u7EA7\\uFF09"
-    },
+    itemdesc88121014: { i18n_id: "itemdesc88121014", i18n_sb: "蜀·孙尚香道具（20级）" },
     itemdesc88131007: { i18n_id: "itemdesc88131007", i18n_sb: "大乔道具（20级）" },
     itemdesc88141003: { i18n_id: "itemdesc88141003", i18n_sb: "貂蝉道具（20级）" },
     itemdesc88171001: { i18n_id: "itemdesc88171001", i18n_sb: "兵长陆逊道具（20级）" },
@@ -14000,41 +13280,17 @@
     itemdesc790424: { i18n_id: "itemdesc790424", i18n_sb: "15000灵芝" },
     itemdesc791419: { i18n_id: "itemdesc791419", i18n_sb: "虎啸礼包" },
     itemdesc791429: { i18n_id: "itemdesc791429", i18n_sb: "元旦个人礼包" },
-    itemdesc790429: {
-        i18n_id: "itemdesc790429",
-        i18n_sb: "\\u5185\\u542B\\u9752\\u91ED\\u5251\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790439: {
-        i18n_id: "itemdesc790439",
-        i18n_sb: "\\u5185\\u542B\\u9E92\\u9E9F\\u5F13\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790449: {
-        i18n_id: "itemdesc790449",
-        i18n_sb: "\\u5185\\u542B\\u9E92\\u9E9F\\u888D\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790459: {
-        i18n_id: "itemdesc790459",
-        i18n_sb: "\\u5185\\u542B\\u4E4C\\u4E91\\u8E0F\\u96EA\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790469: {
-        i18n_id: "itemdesc790469",
-        i18n_sb: "\\u5185\\u542B\\u8FC7\\u6CB3\\u62C6\\u6865\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc791438: {
-        i18n_id: "itemdesc791438",
-        i18n_sb: "\\u81F3\\u5C0A\\u4F1A\\u54581\\u4EE5\\u4E0A\\uFF08\\u542B\\u81F3\\u5C0A\\u4F1A\\u54581\\uFF09\\u6BCF\\u65E5\\u53EF\\u8D2D\\u4E701\\u6B21\\uFF0C\\u5185\\u542B\\uFF1A\\u7ECF\\u9A8C\\u795E\\u4E66\\xD72"
-    },
+    itemdesc790429: { i18n_id: "itemdesc790429", i18n_sb: "内含青釭剑碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790439: { i18n_id: "itemdesc790439", i18n_sb: "内含麒麟弓碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790449: { i18n_id: "itemdesc790449", i18n_sb: "内含麒麟袍碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790459: { i18n_id: "itemdesc790459", i18n_sb: "内含乌云踏雪碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790469: { i18n_id: "itemdesc790469", i18n_sb: "内含过河拆桥碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc791438: { i18n_id: "itemdesc791438", i18n_sb: "至尊会员1以上（含至尊会员1）每日可购买1次，内含：经验神书×2" },
     itemdesc790482: { i18n_id: "itemdesc790482", i18n_sb: "内含：1级廖化一个" },
-    itemdesc791447: {
-        i18n_id: "itemdesc791447",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A100\\u5143\\u5B9D \\u4E8E\\u5409\\u9B42\\u9B44\\xD78"
-    },
-    itemdesc791457: {
-        i18n_id: "itemdesc791457",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5173\\u5E73\\u9B42\\u9B44\\xD715\\uFF0C\\u91D1\\u7BB1\\u5B50\\xD720 \\u91D1\\u94A5\\u5319\\xD720"
-    },
+    itemdesc791447: { i18n_id: "itemdesc791447", i18n_sb: "打开可获得：100元宝 于吉魂魄×8" },
+    itemdesc791457: { i18n_id: "itemdesc791457", i18n_sb: "打开可获得：关平魂魄×15，金箱子×20 金钥匙×20" },
     itemdesc791465: { i18n_id: "itemdesc791465", i18n_sb: "连续签到送宝马第3天坐骑" },
-    itemdesc791475: { i18n_id: "itemdesc791475", i18n_sb: "\\u5185\\u542B\\u5143\\u5B9D\\xD758" },
+    itemdesc791475: { i18n_id: "itemdesc791475", i18n_sb: "内含元宝×58" },
     itemdesc791485: { i18n_id: "itemdesc791485", i18n_sb: "红茶*1 经验神书*1" },
     itemdesc40122008: { i18n_id: "itemdesc40122008", i18n_sb: "122008" },
     itemdesc40112002: { i18n_id: "itemdesc40112002", i18n_sb: "112002" },
@@ -14047,10 +13303,7 @@
     itemdesc791502: { i18n_id: "itemdesc791502", i18n_sb: "神榜中级宝箱" },
     itemdesc791512: { i18n_id: "itemdesc791512", i18n_sb: "护心铠礼包" },
     itemdesc791522: { i18n_id: "itemdesc791522", i18n_sb: "沙里飞礼包" },
-    itemdesc791531: {
-        i18n_id: "itemdesc791531",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A25\\u4E2A\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44"
-    },
+    itemdesc791531: { i18n_id: "itemdesc791531", i18n_sb: "打开可获得：25个魔·张飞魂魄" },
     itemdesc791541: { i18n_id: "itemdesc791541", i18n_sb: "可以获得沙里飞碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
     itemdesc6300001: { i18n_id: "itemdesc6300001", i18n_sb: "可以获得雌雄双股剑碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
     itemdesc6300011: { i18n_id: "itemdesc6300011", i18n_sb: "可以获得丈八蛇矛碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
@@ -14071,31 +13324,19 @@
     itemdesc791571: { i18n_id: "itemdesc791571", i18n_sb: "L1G1" },
     itemdesc791581: { i18n_id: "itemdesc791581", i18n_sb: "L1LD（之前的礼包SSDLDL新生成）" },
     itemdesc791591: { i18n_id: "itemdesc791591", i18n_sb: "打开可获得：元宝宝箱*6" },
-    itemdesc791601: {
-        i18n_id: "itemdesc791601",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5143\\u5B9D\\xD7100,\\u52FE\\u7389\\xD75\\uFF0C\\u91D1\\u7BB1\\u5B50\\xD75\\uFF0C\\u91D1\\u94A5\\u5319\\xD75\\uFF0C\\u5305\\u5B50\\xD72"
-    },
-    itemdesc9181005: { i18n_id: "itemdesc9181005", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44" },
+    itemdesc791601: { i18n_id: "itemdesc791601", i18n_sb: "打开可获得：元宝×100,勾玉×5，金箱子×5，金钥匙×5，包子×2" },
+    itemdesc9181005: { i18n_id: "itemdesc9181005", i18n_sb: "魔·董卓魂魄" },
     itemdesc791614: { i18n_id: "itemdesc791614", i18n_sb: "内含神级坐骑惊帆*1" },
     itemdesc791624: { i18n_id: "itemdesc791624", i18n_sb: "300元宝 3包子 3红茶 30金钥匙" },
-    itemdesc791634: {
-        i18n_id: "itemdesc791634",
-        i18n_sb: "\\u91D1\\u94A5\\u5319\\xD75\\uFF0C\\u94F6\\u94A5\\u5319\\xD75\\uFF0C\\u94DC\\u94A5\\u5319\\xD75\\uFF0C\\u5587\\u53ED\\xD710\\uFF0C\\u52FE\\u7389\\xD78"
-    },
-    itemdesc791644: {
-        i18n_id: "itemdesc791644",
-        i18n_sb: "\\u5F20\\u98DE\\u9B42\\u9B44\\xD730 200\\u5143\\u5B9D \\u5305\\u5B50\\xD72"
-    },
+    itemdesc791634: { i18n_id: "itemdesc791634", i18n_sb: "金钥匙×5，银钥匙×5，铜钥匙×5，喇叭×10，勾玉×8" },
+    itemdesc791644: { i18n_id: "itemdesc791644", i18n_sb: "张飞魂魄×30 200元宝 包子×2" },
     itemdesc6300088: { i18n_id: "itemdesc6300088", i18n_sb: "可以获得骅骝碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
     itemdesc791655: { i18n_id: "itemdesc791655", i18n_sb: "神榜低级宝箱2倍" },
     itemdesc791665: { i18n_id: "itemdesc791665", i18n_sb: "可以获得金级被动技能残卷，稀有神级被动技能残卷其中一项" },
     itemdesc791675: { i18n_id: "itemdesc791675", i18n_sb: "内含神级武器青龙偃月刀*1" },
     itemdesc791679: { i18n_id: "itemdesc791679", i18n_sb: "打开可获得功夫阿奇" },
     itemdesc791689: { i18n_id: "itemdesc791689", i18n_sb: "城之宝匣*500" },
-    itemdesc600069: {
-        i18n_id: "itemdesc600069",
-        i18n_sb: "\\u5185\\u542B\\u52FE\\u7389\\xD73\\uFF0C\\u5929\\u68AF\\u6311\\u6218\\u8D5B\\u7ED3\\u675F\\u540E\\u82E5\\u8FB9\\u950B\\u533A\\u73A9\\u5BB6\\u83B7\\u80DC\\u53EF\\u4EE5\\u83B7\\u5F97\\u8FD4\\u5229\\u5143\\u5B9D"
-    },
+    itemdesc600069: { i18n_id: "itemdesc600069", i18n_sb: "内含勾玉×3，天梯挑战赛结束后若边锋区玩家获胜可以获得返利元宝" },
     itemdesc791705: { i18n_id: "itemdesc791705", i18n_sb: "100元宝、2包子、2勾玉" },
     itemdesc541023: { i18n_id: "itemdesc541023", i18n_sb: "第41章第3个宝箱" },
     itemdesc10540009: { i18n_id: "itemdesc10540009", i18n_sb: "第40章精英宝箱" },
@@ -14107,47 +13348,23 @@
     itemdesc791725: { i18n_id: "itemdesc791725", i18n_sb: "打开可获得14个1级宝石箱" },
     itemdesc600089: { i18n_id: "itemdesc600089", i18n_sb: "佳节至，特别的礼只为特别的你。打开福袋会有惊喜！" },
     itemdesc791743: { i18n_id: "itemdesc791743", i18n_sb: "打开可获得168个1级宝石箱" },
-    itemdesc791753: {
-        i18n_id: "itemdesc791753",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9752\\u9F99\\u5043\\u6708\\u5200\\xD71\\u3001\\u7CBE\\u70BC\\u6750\\u6599\\u9752\\u51A5\\xD736\\u3001\\u7075\\u829D\\xD7500\\u3001\\u7ECF\\u9A8C\\u795E\\u4E66\\xD715"
-    },
-    itemdesc791763: {
-        i18n_id: "itemdesc791763",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD72000"
-    },
-    itemdesc791773: { i18n_id: "itemdesc791773", i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5143\\u5B9D\\xD7200" },
-    itemdesc791783: {
-        i18n_id: "itemdesc791783",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD74500"
-    },
+    itemdesc791753: { i18n_id: "itemdesc791753", i18n_sb: "打开可获得青龙偃月刀×1、精炼材料青冥×36、灵芝×500、经验神书×15" },
+    itemdesc791763: { i18n_id: "itemdesc791763", i18n_sb: "打开可获得灵芝×2000" },
+    itemdesc791773: { i18n_id: "itemdesc791773", i18n_sb: "打开可获得元宝×200" },
+    itemdesc791783: { i18n_id: "itemdesc791783", i18n_sb: "打开可获得灵芝×4500" },
     itemdesc11100009: { i18n_id: "itemdesc11100009", i18n_sb: "女神尚香" },
     itemdesc600090: { i18n_id: "itemdesc600090", i18n_sb: "跨服公会战利品。可获得流星、装备、技能、银两以及稀有武将。" },
-    itemdesc791790: {
-        i18n_id: "itemdesc791790",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u6625\\u534E\\xD71"
-    },
-    itemdesc791800: {
-        i18n_id: "itemdesc791800",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u6587\\u59EC\\u76AE\\u80A4\\xD71"
-    },
-    itemdesc791808: {
-        i18n_id: "itemdesc791808",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5F20\\u98DE\\u9B42\\u9B44\\xD710\\u3001\\u7075\\u829D\\xD7100\\u3001\\u7ECF\\u9A8C\\u91D1\\u4E66\\xD710\\u3001\\u7CBE\\u70BC\\u6750\\u6599\\u9752\\u51A5\\xD78"
-    },
+    itemdesc791790: { i18n_id: "itemdesc791790", i18n_sb: "打开可获得女神春华×1" },
+    itemdesc791800: { i18n_id: "itemdesc791800", i18n_sb: "打开可获得女神文姬皮肤×1" },
+    itemdesc791808: { i18n_id: "itemdesc791808", i18n_sb: "打开可获得张飞魂魄×10、灵芝×100、经验金书×10、精炼材料青冥×8" },
     itemdesc546021: { i18n_id: "itemdesc546021", i18n_sb: "第41章第1个宝箱" },
     itemdesc549022: { i18n_id: "itemdesc549022", i18n_sb: "第44章第2个宝箱" },
     itemdesc10549009: { i18n_id: "itemdesc10549009", i18n_sb: "第44章精英宝箱" },
-    itemdesc791819: {
-        i18n_id: "itemdesc791819",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD712\\u3001\\u52FE\\u7389\\xD72\\u3001\\u864E\\u775B\\u77F3\\xD74"
-    },
-    itemdesc791829: {
-        i18n_id: "itemdesc791829",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD740\\u3001\\u52FE\\u7389\\xD77\\u3001\\u864E\\u775B\\u77F3\\xD715"
-    },
+    itemdesc791819: { i18n_id: "itemdesc791819", i18n_sb: "打开可获得灵芝×12、勾玉×2、虎睛石×4" },
+    itemdesc791829: { i18n_id: "itemdesc791829", i18n_sb: "打开可获得灵芝×40、勾玉×7、虎睛石×15" },
     itemdesc791835: { i18n_id: "itemdesc791835", i18n_sb: "打开可获得金4神礼盒" },
     itemdesc600108: { i18n_id: "itemdesc600108", i18n_sb: "使用后主公经验可提升3850" },
-    itemdesc7710005: { i18n_id: "itemdesc7710005", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*1" },
+    itemdesc7710005: { i18n_id: "itemdesc7710005", i18n_sb: "魔·黄盖魂魄*1" },
     itemdesc7710015: { i18n_id: "itemdesc7710015", i18n_sb: "张飞魂魄*1" },
     itemdesc7710025: { i18n_id: "itemdesc7710025", i18n_sb: "吕蒙魂魄*1" },
     itemdesc7710035: { i18n_id: "itemdesc7710035", i18n_sb: "张辽魂魄*1" },
@@ -14160,7 +13377,7 @@
     itemdesc7710105: { i18n_id: "itemdesc7710105", i18n_sb: "曹操魂魄*3" },
     itemdesc7710115: { i18n_id: "itemdesc7710115", i18n_sb: "华佗魂魄*3" },
     itemdesc7710125: { i18n_id: "itemdesc7710125", i18n_sb: "曹丕魂魄*3" },
-    itemdesc7710135: { i18n_id: "itemdesc7710135", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*3" },
+    itemdesc7710135: { i18n_id: "itemdesc7710135", i18n_sb: "蜀·孙尚香魂魄*3" },
     itemdesc7710145: { i18n_id: "itemdesc7710145", i18n_sb: "射手黄忠魂魄*3" },
     itemdesc7710155: { i18n_id: "itemdesc7710155", i18n_sb: "陆逊魂魄*3" },
     itemdesc7710165: { i18n_id: "itemdesc7710165", i18n_sb: "孟获魂魄*3" },
@@ -14388,8 +13605,8 @@
     dialogname507006012: { i18n_id: "dialogname507006012", i18n_sb: "凌操" },
     dialogname507009022: { i18n_id: "dialogname507009022", i18n_sb: "$UserName" },
     dialogname507012013: { i18n_id: "dialogname507012013", i18n_sb: "$UserName" },
-    dialogname507012029: { i18n_id: "dialogname507012029", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
-    dialogname508004024: { i18n_id: "dialogname508004024", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname507012029: { i18n_id: "dialogname507012029", i18n_sb: "吴·孙尚香" },
+    dialogname508004024: { i18n_id: "dialogname508004024", i18n_sb: "吴·孙尚香" },
     dialogname508008024: { i18n_id: "dialogname508008024", i18n_sb: "$UserName" },
     dialogname508012013: { i18n_id: "dialogname508012013", i18n_sb: "$UserName" },
     dialogname508013013: { i18n_id: "dialogname508013013", i18n_sb: "孙策" },
@@ -14426,7 +13643,7 @@
     dialogname517004024: { i18n_id: "dialogname517004024", i18n_sb: "$UserName" },
     dialogname517012014: { i18n_id: "dialogname517012014", i18n_sb: "伏完" },
     dialogname517016013: { i18n_id: "dialogname517016013", i18n_sb: "吕玲绮" },
-    dialogname517017022: { i18n_id: "dialogname517017022", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC" },
+    dialogname517017022: { i18n_id: "dialogname517017022", i18n_sb: "群·蔡文姬" },
     dialogname518004022: { i18n_id: "dialogname518004022", i18n_sb: "$UserName" },
     dialogname518011014: { i18n_id: "dialogname518011014", i18n_sb: "$UserName(暴走)" },
     dialogname518016014: { i18n_id: "dialogname518016014", i18n_sb: "诸葛亮" },
@@ -14958,7 +14175,7 @@
     "8430150101": { i18n_id: "8430150101", i18n_sb: "进击的勇者" },
     "8640510101": { i18n_id: "8640510101", i18n_sb: "比武达人" },
     "8640590101": { i18n_id: "8640590101", i18n_sb: "进击的霸主" },
-    "8210020101": { i18n_id: "8210020101", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u7684\\u5FC3\\u613F" },
+    "8210020101": { i18n_id: "8210020101", i18n_sb: "神·诸葛亮的心愿" },
     "8710010301": { i18n_id: "8710010301", i18n_sb: "兵长陆逊的心愿" },
     "8430230101": { i18n_id: "8430230101", i18n_sb: "进击的勇者" },
     "8210080101": { i18n_id: "8210080101", i18n_sb: "比武达人" },
@@ -15910,7 +15127,7 @@
     auto_name_50: { i18n_id: "auto_name_50", i18n_sb: "等级不足，将决还没有被解锁" },
     auto_name_304: { i18n_id: "auto_name_304", i18n_sb: "臣服任务已完成" },
     auto_name_571: { i18n_id: "auto_name_571", i18n_sb: "公会人数已满!" },
-    str_fight_speed: { i18n_id: "str_fight_speed", i18n_sb: "\\xD7 $1" },
+    str_fight_speed: { i18n_id: "str_fight_speed", i18n_sb: "× $1" },
     auto_name_234: { i18n_id: "auto_name_234", i18n_sb: "方法\\r\n" },
     auto_name_404: { i18n_id: "auto_name_404", i18n_sb: "提升等级!" },
     auto_name_493: { i18n_id: "auto_name_493", i18n_sb: "战绩：" },
@@ -16074,7 +15291,7 @@
     union_war_reward_title1: { i18n_id: "union_war_reward_title1", i18n_sb: "本服公会战16强入围奖励" },
     union_war_reward_desc1: { i18n_id: "union_war_reward_desc1", i18n_sb: "本服公会战16强入围奖励：城之宝匣*10，可获得流星、装备、技能、银两。" },
     sgs_hulao_reward_conf1: { i18n_id: "sgs_hulao_reward_conf1", i18n_sb: "谢礼1(普通);谢礼1(困难);谢礼1(深渊)" },
-    mystery_name_107710005: { i18n_id: "mystery_name_107710005", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*1" },
+    mystery_name_107710005: { i18n_id: "mystery_name_107710005", i18n_sb: "魔·黄盖魂魄*1" },
     mystery_name_107710015: { i18n_id: "mystery_name_107710015", i18n_sb: "张飞魂魄*1" },
     mystery_name_107710025: { i18n_id: "mystery_name_107710025", i18n_sb: "吕蒙魂魄*1" },
     mystery_name_107710035: { i18n_id: "mystery_name_107710035", i18n_sb: "张辽魂魄*1" },
@@ -16150,7 +15367,7 @@
     itemname111010: { i18n_id: "itemname111010", i18n_sb: "荀彧" },
     itemname142008: { i18n_id: "itemname142008", i18n_sb: "张宝" },
     itemname142006: { i18n_id: "itemname142006", i18n_sb: "华雄" },
-    itemname181004: { i18n_id: "itemname181004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF" },
+    itemname181004: { i18n_id: "itemname181004", i18n_sb: "魔·凌统" },
     itemname171009: { i18n_id: "itemname171009", i18n_sb: "软妹袁姬" },
     itemname79165001: { i18n_id: "itemname79165001", i18n_sb: "臣服奖励" },
     itemname7750009: { i18n_id: "itemname7750009", i18n_sb: "神秘商品之乌云踏雪碎片*3" },
@@ -16172,7 +15389,7 @@
     itemname792071: { i18n_id: "itemname792071", i18n_sb: "西凉锤兵礼包" },
     itemname792081: { i18n_id: "itemname792081", i18n_sb: "张宝礼包" },
     itemname792091: { i18n_id: "itemname792091", i18n_sb: "华雄礼包" },
-    itemname792101: { i18n_id: "itemname792101", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u793C\\u5305" },
+    itemname792101: { i18n_id: "itemname792101", i18n_sb: "魔·凌统礼包" },
     itemname792111: { i18n_id: "itemname792111", i18n_sb: "功夫阿奇礼包" },
     itemname792121: { i18n_id: "itemname792121", i18n_sb: "软妹袁姬礼包" },
     itemname792131: { i18n_id: "itemname792131", i18n_sb: "左慈礼包" },
@@ -16187,10 +15404,7 @@
     itemname792221: { i18n_id: "itemname792221", i18n_sb: "周泰魂魄礼包" },
     itemname792231: { i18n_id: "itemname792231", i18n_sb: "陆延魂魄礼包" },
     itemname792241: { i18n_id: "itemname792241", i18n_sb: "江东长弓兵魂魄礼包" },
-    itemname792251: {
-        i18n_id: "itemname792251",
-        i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u9B42\\u9B44\\u793C\\u5305"
-    },
+    itemname792251: { i18n_id: "itemname792251", i18n_sb: "群·蔡文姬魂魄礼包" },
     itemname792261: { i18n_id: "itemname792261", i18n_sb: "田丰魂魄礼包" },
     itemname792271: { i18n_id: "itemname792271", i18n_sb: "牛辅魂魄礼包" },
     itemname792281: { i18n_id: "itemname792281", i18n_sb: "黄巾大刀兵魂魄礼包" },
@@ -16198,25 +15412,22 @@
     itemname792301: { i18n_id: "itemname792301", i18n_sb: "鲁肃魂魄礼包" },
     itemname792311: { i18n_id: "itemname792311", i18n_sb: "周瑜魂魄礼包" },
     itemname792321: { i18n_id: "itemname792321", i18n_sb: "曹丕魂魄礼包" },
-    itemname792331: { i18n_id: "itemname792331", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname792331: { i18n_id: "itemname792331", i18n_sb: "魔·凌统魂魄礼包" },
     itemname792341: { i18n_id: "itemname792341", i18n_sb: "功夫阿奇魂魄礼包" },
     itemname792351: { i18n_id: "itemname792351", i18n_sb: "软妹袁姬魂魄礼包" },
     itemname792361: { i18n_id: "itemname792361", i18n_sb: "左慈魂魄礼包" },
-    itemname792371: { i18n_id: "itemname792371", i18n_sb: "\\u795E\\xB7\\u91CD\\u9A91\\u5175\\u793C\\u5305" },
-    itemname7740008: {
-        i18n_id: "itemname7740008",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*3"
-    },
+    itemname792371: { i18n_id: "itemname792371", i18n_sb: "神·重骑兵礼包" },
+    itemname7740008: { i18n_id: "itemname7740008", i18n_sb: "神秘商品之魔·贾诩魂魄*3" },
     itemname7740018: { i18n_id: "itemname7740018", i18n_sb: "神秘商品之陆逊魂魄*3" },
     itemname7740028: { i18n_id: "itemname7740028", i18n_sb: "神秘商品之孟获魂魄*3" },
     itemname7740038: { i18n_id: "itemname7740038", i18n_sb: "神秘商品之贾诩魂魄*3" },
     itemname7740048: { i18n_id: "itemname7740048", i18n_sb: "神秘商品之孙策魂魄*3" },
     itemname7740058: { i18n_id: "itemname7740058", i18n_sb: "神秘商品之公孙瓒魂魄*3" },
-    itemdesc9165001: { i18n_id: "itemdesc9165001", i18n_sb: "\\u795E\\xB7\\u5927\\u5200\\u5175\\u9B42\\u9B44" },
+    itemdesc9165001: { i18n_id: "itemdesc9165001", i18n_sb: "神·大刀兵魂魄" },
     itemdesc134001: { i18n_id: "itemdesc134001", i18n_sb: "吴大帝" },
     itemdesc121020: { i18n_id: "itemdesc121020", i18n_sb: "姜维" },
     itemdesc121008: { i18n_id: "itemdesc121008", i18n_sb: "赵云" },
-    itemdesc181009: { i18n_id: "itemdesc181009", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2" },
+    itemdesc181009: { i18n_id: "itemdesc181009", i18n_sb: "魔·张角" },
     itemdesc171011: { i18n_id: "itemdesc171011", i18n_sb: "采樵夏侯氏" },
     itemdesc7750005: { i18n_id: "itemdesc7750005", i18n_sb: "的卢碎片*3" },
     itemdesc7750015: { i18n_id: "itemdesc7750015", i18n_sb: "倚天剑碎片*3" },
@@ -16239,10 +15450,7 @@
     itemdesc792087: { i18n_id: "itemdesc792087", i18n_sb: "打开可获得姜维*1" },
     itemdesc792097: { i18n_id: "itemdesc792097", i18n_sb: "打开可获得赵云*1" },
     itemdesc792107: { i18n_id: "itemdesc792107", i18n_sb: "打开可获得冰雪春华*1" },
-    itemdesc792117: {
-        i18n_id: "itemdesc792117",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u5F20\\u89D2*1"
-    },
+    itemdesc792117: { i18n_id: "itemdesc792117", i18n_sb: "打开可获得魔·张角*1" },
     itemdesc792127: { i18n_id: "itemdesc792127", i18n_sb: "打开可获得采樵夏侯氏*1" },
     itemdesc792137: { i18n_id: "itemdesc792137", i18n_sb: "打开可获得魏武帝*1" },
     itemdesc792147: { i18n_id: "itemdesc792147", i18n_sb: "打开可获得王异魂魄*1" },
@@ -16262,19 +15470,13 @@
     itemdesc792287: { i18n_id: "itemdesc792287", i18n_sb: "打开可获得冀州重斧兵魂魄*1" },
     itemdesc792297: { i18n_id: "itemdesc792297", i18n_sb: "打开可获得张辽魂魄*1" },
     itemdesc792307: { i18n_id: "itemdesc792307", i18n_sb: "打开可获得徐晃魂魄*1" },
-    itemdesc792317: {
-        i18n_id: "itemdesc792317",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44*1"
-    },
+    itemdesc792317: { i18n_id: "itemdesc792317", i18n_sb: "打开可获得神·周瑜魂魄*1" },
     itemdesc792327: { i18n_id: "itemdesc792327", i18n_sb: "打开可获得凌统魂魄*1" },
     itemdesc792337: { i18n_id: "itemdesc792337", i18n_sb: "打开可获得冰雪春华魂魄*1" },
-    itemdesc792347: {
-        i18n_id: "itemdesc792347",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*1"
-    },
+    itemdesc792347: { i18n_id: "itemdesc792347", i18n_sb: "打开可获得魔·张角魂魄*1" },
     itemdesc792357: { i18n_id: "itemdesc792357", i18n_sb: "打开可获得采樵夏侯氏魂魄*1" },
     itemdesc792367: { i18n_id: "itemdesc792367", i18n_sb: "打开可获得魏武帝魂魄*1" },
-    itemdesc7740004: { i18n_id: "itemdesc7740004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*3" },
+    itemdesc7740004: { i18n_id: "itemdesc7740004", i18n_sb: "魔·凌统魂魄*3" },
     itemdesc7740014: { i18n_id: "itemdesc7740014", i18n_sb: "关羽魂魄*3" },
     itemdesc7740024: { i18n_id: "itemdesc7740024", i18n_sb: "黄月英魂魄*3" },
     itemdesc7740034: { i18n_id: "itemdesc7740034", i18n_sb: "吕布魂魄*3" },
@@ -16286,7 +15488,7 @@
     queueTeam_12: { i18n_id: "queueTeam_12", i18n_sb: "使用阵容成功" },
     queueTeam_22: { i18n_id: "queueTeam_22", i18n_sb: "技能" },
     MysteryStorePrompt_5: { i18n_id: "MysteryStorePrompt_5", i18n_sb: "主公，元宝不足" },
-    mystery_name_107700004: { i18n_id: "mystery_name_107700004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*1" },
+    mystery_name_107700004: { i18n_id: "mystery_name_107700004", i18n_sb: "魔·凌统魂魄*1" },
     mystery_name_107700014: { i18n_id: "mystery_name_107700014", i18n_sb: "关羽魂魄*1" },
     mystery_name_107700024: { i18n_id: "mystery_name_107700024", i18n_sb: "黄月英魂魄*1" },
     mystery_name_107700034: { i18n_id: "mystery_name_107700034", i18n_sb: "吕布魂魄*1" },
@@ -16296,15 +15498,15 @@
     mystery_name_107700074: { i18n_id: "mystery_name_107700074", i18n_sb: "曹操魂魄*1" },
     mystery_name_107700084: { i18n_id: "mystery_name_107700084", i18n_sb: "华佗魂魄*1" },
     mystery_name_107700094: { i18n_id: "mystery_name_107700094", i18n_sb: "曹丕魂魄*1" },
-    mystery_name_107700104: { i18n_id: "mystery_name_107700104", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*1" },
+    mystery_name_107700104: { i18n_id: "mystery_name_107700104", i18n_sb: "蜀·孙尚香魂魄*1" },
     mystery_name_107700114: { i18n_id: "mystery_name_107700114", i18n_sb: "射手黄忠魂魄*1" },
     mystery_name_107700124: { i18n_id: "mystery_name_107700124", i18n_sb: "曹植魂魄*1" },
-    mystery_name_107700134: { i18n_id: "mystery_name_107700134", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*3" },
+    mystery_name_107700134: { i18n_id: "mystery_name_107700134", i18n_sb: "魔·贾诩魂魄*3" },
     mystery_name_107700144: { i18n_id: "mystery_name_107700144", i18n_sb: "陆逊魂魄*3" },
     mystery_name_107700154: { i18n_id: "mystery_name_107700154", i18n_sb: "孟获魂魄*3" },
     mystery_name_107700164: { i18n_id: "mystery_name_107700164", i18n_sb: "贾诩魂魄*3" },
     mystery_name_107700174: { i18n_id: "mystery_name_107700174", i18n_sb: "孙策魂魄*3" },
-    mystery_name_107700184: { i18n_id: "mystery_name_107700184", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*3" },
+    mystery_name_107700184: { i18n_id: "mystery_name_107700184", i18n_sb: "魔·马超魂魄*3" },
     mystery_name_107700194: { i18n_id: "mystery_name_107700194", i18n_sb: "孙权魂魄*3" },
     mystery_name_107700204: { i18n_id: "mystery_name_107700204", i18n_sb: "张角魂魄*3" },
     mystery_name_107700214: { i18n_id: "mystery_name_107700214", i18n_sb: "甄姬魂魄*3" },
@@ -16433,19 +15635,19 @@
     mystery_name_107700447: { i18n_id: "mystery_name_107700447", i18n_sb: "看破残卷" },
     mystery_name_107700457: { i18n_id: "mystery_name_107700457", i18n_sb: "马术残卷" },
     itemname600122: { i18n_id: "itemname600122", i18n_sb: "曹植传承符" },
-    mystery_name_117710004: { i18n_id: "mystery_name_117710004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*1" },
+    mystery_name_117710004: { i18n_id: "mystery_name_117710004", i18n_sb: "魔·凌统魂魄*1" },
     mystery_name_117710014: { i18n_id: "mystery_name_117710014", i18n_sb: "关羽魂魄*1" },
     mystery_name_117710024: { i18n_id: "mystery_name_117710024", i18n_sb: "黄月英魂魄*1" },
     mystery_name_117710034: { i18n_id: "mystery_name_117710034", i18n_sb: "吕布魂魄*1" },
     mystery_name_117710044: { i18n_id: "mystery_name_117710044", i18n_sb: "周瑜魂魄*1" },
     mystery_name_117710054: { i18n_id: "mystery_name_117710054", i18n_sb: "步练师魂魄*1" },
-    mystery_name_107740001: { i18n_id: "mystery_name_107740001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*3" },
+    mystery_name_107740001: { i18n_id: "mystery_name_107740001", i18n_sb: "魔·张飞魂魄*3" },
     mystery_name_107740011: { i18n_id: "mystery_name_107740011", i18n_sb: "曹操魂魄*3" },
     mystery_name_107740021: { i18n_id: "mystery_name_107740021", i18n_sb: "华佗魂魄*3" },
     mystery_name_107740031: { i18n_id: "mystery_name_107740031", i18n_sb: "曹丕魂魄*3" },
-    mystery_name_107740041: { i18n_id: "mystery_name_107740041", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*3" },
+    mystery_name_107740041: { i18n_id: "mystery_name_107740041", i18n_sb: "蜀·孙尚香魂魄*3" },
     mystery_name_107740053: { i18n_id: "mystery_name_107740053", i18n_sb: "荀彧魂魄*3" },
-    mystery_name_117740005: { i18n_id: "mystery_name_117740005", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*3" },
+    mystery_name_117740005: { i18n_id: "mystery_name_117740005", i18n_sb: "魔·黄盖魂魄*3" },
     mystery_name_117740015: { i18n_id: "mystery_name_117740015", i18n_sb: "张飞魂魄*3" },
     mystery_name_117740025: { i18n_id: "mystery_name_117740025", i18n_sb: "吕蒙魂魄*3" },
     mystery_name_117740035: { i18n_id: "mystery_name_117740035", i18n_sb: "张辽魂魄*3" },
@@ -16565,7 +15767,7 @@
     dialogname553012015: { i18n_id: "dialogname553012015", i18n_sb: "$UserName" },
     dialogname553018014: { i18n_id: "dialogname553018014", i18n_sb: "$UserName" },
     dialogname553019021: { i18n_id: "dialogname553019021", i18n_sb: "$UserName" },
-    dialogname554004012: { i18n_id: "dialogname554004012", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    dialogname554004012: { i18n_id: "dialogname554004012", i18n_sb: "魔·马超" },
     dialogname554012011: { i18n_id: "dialogname554012011", i18n_sb: "$UserName" },
     dialogname554016021: { i18n_id: "dialogname554016021", i18n_sb: "$UserName" },
     dialogname554019012: { i18n_id: "dialogname554019012", i18n_sb: "$UserName" },
@@ -16614,10 +15816,7 @@
     "4210062201": { i18n_id: "4210062201", i18n_sb: "华容义释" },
     "4110240201": { i18n_id: "4110240201", i18n_sb: "权计无双" },
     itemname600208: { i18n_id: "itemname600208", i18n_sb: "青须巾碎片" },
-    itemdesc791310081: {
-        i18n_id: "itemdesc791310081",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x3,\\u7075\\u829Dx1000"
-    },
+    itemdesc791310081: { i18n_id: "itemdesc791310081", i18n_sb: "神·曹操魂魄x3,灵芝x1000" },
     itemdesc600214: { i18n_id: "itemdesc600214", i18n_sb: "购买一个觉醒钥匙" },
     "8310080901": { i18n_id: "8310080901", i18n_sb: "觉醒战斗" },
     surrunderdesc_540: { i18n_id: "surrunderdesc_540", i18n_sb: "0" },
@@ -16663,10 +15862,7 @@
     itemname792718: { i18n_id: "itemname792718", i18n_sb: "328元宝" },
     itemname792728: { i18n_id: "itemname792728", i18n_sb: "VIP4大礼包" },
     itemname792738: { i18n_id: "itemname792738", i18n_sb: "VIP14大礼包" },
-    itemdesc792715: {
-        i18n_id: "itemdesc792715",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*2"
-    },
+    itemdesc792715: { i18n_id: "itemdesc792715", i18n_sb: "打开可获得：蜀·孙尚香魂魄*2" },
     itemdesc792725: { i18n_id: "itemdesc792725", i18n_sb: "打开可获得:七星刀*1、七星甲*1、桃园结义*1" },
     itemdesc792735: { i18n_id: "itemdesc792735", i18n_sb: "打开可获得：吕布魂魄*90、方天画戟*1、7500灵芝、乌云踏雪*1" },
     itemname600217: { i18n_id: "itemname600217", i18n_sb: "8级智力宝石箱" },
@@ -16686,10 +15882,7 @@
     "4710151401": { i18n_id: "4710151401", i18n_sb: "美猴王" },
     "4110241201": { i18n_id: "4110241201", i18n_sb: "魏武霸业" },
     "4410130401": { i18n_id: "4410130401", i18n_sb: "誓随主公" },
-    itemdesc791410031: {
-        i18n_id: "itemdesc791410031",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791410031: { i18n_id: "itemdesc791410031", i18n_sb: "神·曹操魂魄x2,灵芝x1000" },
     "8410030801": { i18n_id: "8410030801", i18n_sb: "觉醒图腾" },
     "8410130502": { i18n_id: "8410130502", i18n_sb: "过关斩将持续3天在3名以上" },
     surrunderdesc_551: { i18n_id: "surrunderdesc_551", i18n_sb: "0" },
@@ -16710,7 +15903,7 @@
     },
     "4110251501": { i18n_id: "4110251501", i18n_sb: "照夜玉狮" },
     "4410210101": { i18n_id: "4410210101", i18n_sb: "风雅之士" },
-    itemdesc9111026: { i18n_id: "itemdesc9111026", i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44" },
+    itemdesc9111026: { i18n_id: "itemdesc9111026", i18n_sb: "神·司马懿魂魄" },
     "8410210201": { i18n_id: "8410210201", i18n_sb: "沮授的心愿" },
     "8410210202": { i18n_id: "8410210202", i18n_sb: "图鉴点亮[装备]北斗七星扇" },
     "351021101": { i18n_id: "351021101", i18n_sb: "救援一阶" },
@@ -16727,10 +15920,7 @@
     "8510020301": { i18n_id: "8510020301", i18n_sb: "心悦诚服" },
     "8510020102": { i18n_id: "8510020102", i18n_sb: "天赋技能等级达到30级" },
     juexing_zhangliao_open03: { i18n_id: "juexing_zhangliao_open03", i18n_sb: "拥有曹丕魂魄*30" },
-    itemdesc792744: {
-        i18n_id: "itemdesc792744",
-        i18n_sb: "\\u5185\\u542B\\uFF1A1\\u7EA7\\u795E\\xB7\\u8D5B\\u96F7\\u4E00\\u4E2A"
-    },
+    itemdesc792744: { i18n_id: "itemdesc792744", i18n_sb: "内含：1级神·赛雷一个" },
     "35103805": {
         i18n_id: "35103805",
         i18n_sb: "增加$1%的智力，每有一名敌方武将阵亡，获得一枚“忍”标记。阵亡时限一次，若你的“忍”标记数量为4或更多，清空所有标记并将血量回复至50%。"
@@ -16817,10 +16007,7 @@
         i18n_sb: "打开后随机获得：卑弥呼魂魄*1、王元姬魂魄*1、特殊传承符*1、包子*1、神兵铸铁*10、许愿流星*1、元宝*30、灵芝*5、灵芝*10、1级宝石箱*1、3级宝石箱*1，其中的一项。"
     },
     itemname111031: { i18n_id: "itemname111031", i18n_sb: "司马炎" },
-    itemdesc79111031: {
-        i18n_id: "itemdesc79111031",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79111031: { i18n_id: "itemdesc79111031", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8110310401": { i18n_id: "8110310401", i18n_sb: "心悦诚服" },
     "22101801": { i18n_id: "22101801", i18n_sb: "之于子归" },
     "311029101": { i18n_id: "311029101", i18n_sb: "扶乱一阶" },
@@ -16837,17 +16024,14 @@
     shenbing_desc_800033: { i18n_id: "shenbing_desc_800033", i18n_sb: "王元姬神兵" },
     "351021905": { i18n_id: "351021905", i18n_sb: "免疫此次即将受到的伤害" },
     itemdesc600247: { i18n_id: "itemdesc600247", i18n_sb: "太史慈觉醒升级材料碎片" },
-    itemdesc9121021: { i18n_id: "itemdesc9121021", i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44" },
+    itemdesc9121021: { i18n_id: "itemdesc9121021", i18n_sb: "神·赵云魂魄" },
     "4410101901": { i18n_id: "4410101901", i18n_sb: "神兵利器" },
     "8310120601": { i18n_id: "8310120601", i18n_sb: "开启觉醒宝箱" },
     "8310120802": { i18n_id: "8310120802", i18n_sb: "觉醒太史慈升级图腾至4层2段" },
     juexing_jiaxu_open01: { i18n_id: "juexing_jiaxu_open01", i18n_sb: "贾诩突破至5星" },
     "35104001": { i18n_id: "35104001", i18n_sb: "鬼仆" },
     "4210220201": { i18n_id: "4210220201", i18n_sb: "泡妞神器" },
-    itemdesc79121022: {
-        i18n_id: "itemdesc79121022",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79121022: { i18n_id: "itemdesc79121022", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8210220502": { i18n_id: "8210220502", i18n_sb: "SP关索突破至5星" },
     itemname730128: { i18n_id: "itemname730128", i18n_sb: "128级升级奖励" },
     itemdesc730130: { i18n_id: "itemdesc730130", i18n_sb: "10元宝,26800银子" },
@@ -16866,10 +16050,7 @@
     "4410221201": { i18n_id: "4410221201", i18n_sb: "河北群雄" },
     shenbing_desc_800035: { i18n_id: "shenbing_desc_800035", i18n_sb: "华佗神兵" },
     "4110252201": { i18n_id: "4110252201", i18n_sb: "讨灭蜀汉" },
-    itemdesc791110251: {
-        i18n_id: "itemdesc791110251",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791110251: { i18n_id: "itemdesc791110251", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8110250701": { i18n_id: "8110250701", i18n_sb: "觉醒图腾" },
     "8110250902": { i18n_id: "8110250902", i18n_sb: "使用觉醒邓艾战斗1000次" },
     itemname792778: { i18n_id: "itemname792778", i18n_sb: "神兵铸铁*100" },
@@ -16931,10 +16112,7 @@
     itemdesc600269: { i18n_id: "itemdesc600269", i18n_sb: "法正觉醒升级材料碎片" },
     "16500402": { i18n_id: "16500402", i18n_sb: "谁最美啊，我最美！" },
     "8140010502": { i18n_id: "8140010502", i18n_sb: "觉醒宝箱开启200次" },
-    itemdesc791140011: {
-        i18n_id: "itemdesc791140011",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791140011: { i18n_id: "itemdesc791140011", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     surrunderdesc_598: { i18n_id: "surrunderdesc_598", i18n_sb: "0" },
     e_beauty_1008: { i18n_id: "e_beauty_1008", i18n_sb: "用户信息异常" },
     e_beauty_1018: { i18n_id: "e_beauty_1018", i18n_sb: "当前天赋未开启" },
@@ -16977,10 +16155,7 @@
     ERROR_CODE_MOBILE_1004: { i18n_id: "ERROR_CODE_MOBILE_1004", i18n_sb: "新增手机号失败" },
     shenbing_name_800041: { i18n_id: "shenbing_name_800041", i18n_sb: "卑弥呼神兵" },
     "4210052101": { i18n_id: "4210052101", i18n_sb: "趁火打劫" },
-    itemdesc791110131: {
-        i18n_id: "itemdesc791110131",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791110131: { i18n_id: "itemdesc791110131", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     juexing_caoren_open04: { i18n_id: "juexing_caoren_open04", i18n_sb: "拥有1个盾里剑" },
     "331023401": { i18n_id: "331023401", i18n_sb: "琴音四阶" },
     "331023403": { i18n_id: "331023403", i18n_sb: "行动后 易触发" },
@@ -17002,7 +16177,7 @@
     itemdesc600289: { i18n_id: "itemdesc600289", i18n_sb: "颜良觉醒升级材料" },
     "8410140701": { i18n_id: "8410140701", i18n_sb: "觉醒图腾" },
     "8410140902": { i18n_id: "8410140902", i18n_sb: "使用觉醒文丑战斗500次" },
-    shenbing_desc_800043: { i18n_id: "shenbing_desc_800043", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u795E\\u5175" },
+    shenbing_desc_800043: { i18n_id: "shenbing_desc_800043", i18n_sb: "神·诸葛亮神兵" },
     "4210021601": { i18n_id: "4210021601", i18n_sb: "往生之躯" },
     "4710170501": { i18n_id: "4710170501", i18n_sb: "霸业初创" },
     "8710170101": { i18n_id: "8710170101", i18n_sb: "天赋异禀" },
@@ -17029,7 +16204,7 @@
     itemdesc600295: { i18n_id: "itemdesc600295", i18n_sb: "SP袁绍升级材料" },
     juexing_zhangbao_open02: { i18n_id: "juexing_zhangbao_open02", i18n_sb: "张宝神兵升至10重10锻" },
     itemname9165007: { i18n_id: "itemname9165007", i18n_sb: "财神关羽魂魄" },
-    itemdesc79165007: { i18n_id: "itemdesc79165007", i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2" },
+    itemdesc79165007: { i18n_id: "itemdesc79165007", i18n_sb: "界·关羽魂魄x2" },
     "8410220702": { i18n_id: "8410220702", i18n_sb: "觉醒SP袁绍升级图腾至2层2段" },
     shenbing_desc_800044: { i18n_id: "shenbing_desc_800044", i18n_sb: "SP马超神兵" },
     "4410222001": { i18n_id: "4410222001", i18n_sb: "邪神面具" },
@@ -17053,10 +16228,7 @@
     "4650080201": { i18n_id: "4650080201", i18n_sb: "誓死追随" },
     itemname9231019: { i18n_id: "itemname9231019", i18n_sb: "烈焰赤兔马碎片" },
     itemname600303: { i18n_id: "itemname600303", i18n_sb: "瑶池蟠桃碎片" },
-    itemdesc791650081: {
-        i18n_id: "itemdesc791650081",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791650081: { i18n_id: "itemdesc791650081", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     "8610010201": { i18n_id: "8610010201", i18n_sb: "最强属性" },
     "84111029401": { i18n_id: "84111029401", i18n_sb: "觉醒战斗" },
     "8650080202": { i18n_id: "8650080202", i18n_sb: "臣服文丑" },
@@ -17097,7 +16269,7 @@
     "12102001": { i18n_id: "12102001", i18n_sb: "姜维" },
     "14201301": { i18n_id: "14201301", i18n_sb: "伏皇后" },
     "12100801": { i18n_id: "12100801", i18n_sb: "赵云" },
-    "18100601": { i18n_id: "18100601", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9" },
+    "18100601": { i18n_id: "18100601", i18n_sb: "魔·贾诩" },
     "19200401": { i18n_id: "19200401", i18n_sb: "顽皮淘淘" },
     "17100901": { i18n_id: "17100901", i18n_sb: "软妹袁姬" },
     "17101201": { i18n_id: "17101201", i18n_sb: "英雄王关羽" },
@@ -17325,10 +16497,7 @@
         i18n_sb: "【琴音】能掌控世界的自然之音，敌军听了会死伤，友军听了可疗伤，属控场技能，主智。行动后易触发，可对敌方全体造成智力伤害，同时回复己方全体一定血量。"
     },
     "35102802": { i18n_id: "35102802", i18n_sb: "0" },
-    "32100102": {
-        i18n_id: "32100102",
-        i18n_sb: "\\u3010\\u6B66\\u9B42\\u3011\\u795E\\xB7\\u5173\\u7FBD\\u66B4\\u70C8\\u7684\\u6B7B\\u4EA1\\u4E4B\\u5FC3\\uFF0C\\u5C5E\\u5356\\u8840\\u6280\\u80FD\\uFF0C\\u4E3B\\u653B\\u3002\\u9635\\u4EA1\\u65F6\\uFF0C\\u53EF\\u5BF9\\u654C\\u65B9\\u5168\\u4F53\\u9020\\u6210\\u653B\\u51FB\\u529B\\u4F24\\u5BB3\\u3002"
-    },
+    "32100102": { i18n_id: "32100102", i18n_sb: "【武魂】神·关羽暴烈的死亡之心，属卖血技能，主攻。阵亡时，可对敌方全体造成攻击力伤害。" },
     "34101002": {
         i18n_id: "34101002",
         i18n_sb: "【乱武】文和乱武，天下异变。这是贾诩使人争斗残害的计策，越不聪明的对手将受害越深，属攻击技能，主智。行动时易触发，可对敌方场上全体造成智力伤害。"
@@ -17747,10 +16916,7 @@
     itemname791394: { i18n_id: "itemname791394", i18n_sb: "SSVIPD" },
     itemname791404: { i18n_id: "itemname791404", i18n_sb: "SSAAA" },
     itemname88111021: { i18n_id: "itemname88111021", i18n_sb: "王异道具（20级）" },
-    itemname88121014: {
-        i18n_id: "itemname88121014",
-        i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9053\\u5177\\uFF0820\\u7EA7\\uFF09"
-    },
+    itemname88121014: { i18n_id: "itemname88121014", i18n_sb: "蜀·孙尚香道具（20级）" },
     itemname88131007: { i18n_id: "itemname88131007", i18n_sb: "大乔道具（20级）" },
     itemname88141003: { i18n_id: "itemname88141003", i18n_sb: "貂蝉道具（20级）" },
     itemname88171001: { i18n_id: "itemname88171001", i18n_sb: "兵长陆逊道具（20级）" },
@@ -17808,12 +16974,9 @@
     itemname791502: { i18n_id: "itemname791502", i18n_sb: "神榜中级宝箱" },
     itemname791512: { i18n_id: "itemname791512", i18n_sb: "护心铠礼包" },
     itemname791522: { i18n_id: "itemname791522", i18n_sb: "沙里飞礼包" },
-    itemname791531: { i18n_id: "itemname791531", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname791531: { i18n_id: "itemname791531", i18n_sb: "魔·张飞魂魄礼包" },
     itemname791541: { i18n_id: "itemname791541", i18n_sb: "沙里飞宝箱（典韦缘分金坐骑）" },
-    itemname6300001: {
-        i18n_id: "itemname6300001",
-        i18n_sb: "\\u96CC\\u96C4\\u53CC\\u80A1\\u5251\\u793C\\u76D2(\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u7F18\\u5206\\u795E\\u7EA7\\u6B66\\u5668)"
-    },
+    itemname6300001: { i18n_id: "itemname6300001", i18n_sb: "雌雄双股剑礼盒(蜀·孙尚香缘分神级武器)" },
     itemname6300011: { i18n_id: "itemname6300011", i18n_sb: "丈八蛇矛礼盒(张飞缘分神级武器)" },
     itemname6300021: { i18n_id: "itemname6300021", i18n_sb: "朱雀冠礼盒(小乔缘分神级防具)" },
     itemname6300031: { i18n_id: "itemname6300031", i18n_sb: "无懈可击礼盒(诸葛亮缘分神级锦囊)" },
@@ -17833,7 +16996,7 @@
     itemname791581: { i18n_id: "itemname791581", i18n_sb: "普通礼包D" },
     itemname791591: { i18n_id: "itemname791591", i18n_sb: "元宝宝箱*6" },
     itemname791601: { i18n_id: "itemname791601", i18n_sb: "论坛公会A" },
-    itemname9181005: { i18n_id: "itemname9181005", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44" },
+    itemname9181005: { i18n_id: "itemname9181005", i18n_sb: "魔·董卓魂魄" },
     itemname791614: { i18n_id: "itemname791614", i18n_sb: "『惊帆』*1" },
     itemname791624: { i18n_id: "itemname791624", i18n_sb: "论坛礼包A" },
     itemname791634: { i18n_id: "itemname791634", i18n_sb: "4月微信礼包档次一" },
@@ -17856,26 +17019,23 @@
     itemname791725: { i18n_id: "itemname791725", i18n_sb: "跨服天梯55积分礼包" },
     itemname600089: { i18n_id: "itemname600089", i18n_sb: "中秋福袋" },
     itemname791743: { i18n_id: "itemname791743", i18n_sb: "巅峰之战410积分礼包" },
-    itemname791753: { i18n_id: "itemname791753", i18n_sb: "\\u9752\\u9F99\\u5043\\u6708\\u5200\\xD71" },
-    itemname791763: { i18n_id: "itemname791763", i18n_sb: "\\u7075\\u829D\\xD72000" },
-    itemname791773: { i18n_id: "itemname791773", i18n_sb: "\\u5143\\u5B9D\\xD7200" },
-    itemname791783: { i18n_id: "itemname791783", i18n_sb: "\\u7075\\u829D\\xD74500" },
+    itemname791753: { i18n_id: "itemname791753", i18n_sb: "青龙偃月刀×1" },
+    itemname791763: { i18n_id: "itemname791763", i18n_sb: "灵芝×2000" },
+    itemname791773: { i18n_id: "itemname791773", i18n_sb: "元宝×200" },
+    itemname791783: { i18n_id: "itemname791783", i18n_sb: "灵芝×4500" },
     itemname11100009: { i18n_id: "itemname11100009", i18n_sb: "女神尚香" },
     itemname600090: { i18n_id: "itemname600090", i18n_sb: "雪国之宝匣" },
     itemname791790: { i18n_id: "itemname791790", i18n_sb: "女神春华礼包" },
     itemname791800: { i18n_id: "itemname791800", i18n_sb: "女神文姬皮肤礼包" },
-    itemname791808: { i18n_id: "itemname791808", i18n_sb: "\\u5F20\\u98DE\\u9B42\\u9B44\\xD710" },
+    itemname791808: { i18n_id: "itemname791808", i18n_sb: "张飞魂魄×10" },
     itemname546021: { i18n_id: "itemname546021", i18n_sb: "第46章第1个宝箱" },
     itemname549022: { i18n_id: "itemname549022", i18n_sb: "第49章第2个宝箱" },
     itemname10549009: { i18n_id: "itemname10549009", i18n_sb: "第49章精英宝箱" },
     itemname791819: { i18n_id: "itemname791819", i18n_sb: "谢礼2(困难)" },
     itemname791829: { i18n_id: "itemname791829", i18n_sb: "谢礼5(深渊)" },
     itemname791835: { i18n_id: "itemname791835", i18n_sb: "金4神礼包" },
-    itemname600108: { i18n_id: "itemname600108", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD73850" },
-    itemname7710005: {
-        i18n_id: "itemname7710005",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*1"
-    },
+    itemname600108: { i18n_id: "itemname600108", i18n_sb: "主公经验×3850" },
+    itemname7710005: { i18n_id: "itemname7710005", i18n_sb: "神秘商品之魔·黄盖魂魄*1" },
     itemname7710015: { i18n_id: "itemname7710015", i18n_sb: "神秘商品之张飞魂魄*1" },
     itemname7710025: { i18n_id: "itemname7710025", i18n_sb: "神秘商品之吕蒙魂魄*1" },
     itemname7710035: { i18n_id: "itemname7710035", i18n_sb: "神秘商品之张辽魂魄*1" },
@@ -18005,10 +17165,10 @@
     itemdesc9164051: { i18n_id: "itemdesc9164051", i18n_sb: "黄巾刀兵魂魄" },
     itemdesc9164059: { i18n_id: "itemdesc9164059", i18n_sb: "冀州重斧兵魂魄" },
     itemdesc9171001: { i18n_id: "itemdesc9171001", i18n_sb: "兵长陆逊魂魄" },
-    itemdesc9181008: { i18n_id: "itemdesc9181008", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44" },
+    itemdesc9181008: { i18n_id: "itemdesc9181008", i18n_sb: "魔·黄盖魂魄" },
     itemdesc9122011: { i18n_id: "itemdesc9122011", i18n_sb: "孟获魂魄" },
     itemdesc9121020: { i18n_id: "itemdesc9121020", i18n_sb: "姜维魂魄" },
-    itemdesc9131002: { i18n_id: "itemdesc9131002", i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44" },
+    itemdesc9131002: { i18n_id: "itemdesc9131002", i18n_sb: "神·吕蒙魂魄" },
     itemdesc211001: { i18n_id: "itemdesc211001", i18n_sb: "方天画戟的简介" },
     itemdesc211011: { i18n_id: "itemdesc211011", i18n_sb: "龙胆枪的简介" },
     itemdesc213002: { i18n_id: "itemdesc213002", i18n_sb: "血轮的简介" },
@@ -18083,125 +17243,38 @@
     itemdesc164022: { i18n_id: "itemdesc164022", i18n_sb: "西凉锤兵" },
     itemdesc121019: { i18n_id: "itemdesc121019", i18n_sb: "徐庶" },
     itemdesc89171001: { i18n_id: "itemdesc89171001", i18n_sb: "兵长陆逊道具" },
-    itemdesc79111016: {
-        i18n_id: "itemdesc79111016",
-        i18n_sb: "\\u5927\\u5B9B\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79112020: {
-        i18n_id: "itemdesc79112020",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u5218\\u5907\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164004: {
-        i18n_id: "itemdesc79164004",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u6C34\\u5175\\xD71,\\u5434\\u516D\\u5251\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164038: {
-        i18n_id: "itemdesc79164038",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u91CD\\u65A7\\u5175\\xD71,\\u6BDB\\u9A74\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121015: {
-        i18n_id: "itemdesc79121015",
-        i18n_sb: "\\u5927\\u5B9B\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79122018: {
-        i18n_id: "itemdesc79122018",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u5218\\u5907\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79123014: {
-        i18n_id: "itemdesc79123014",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5B59\\u6743\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164015: {
-        i18n_id: "itemdesc79164015",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5DF4\\u8700\\u957F\\u621F\\u5175\\xD71,\\u6C34\\u6DF9\\u4E03\\u519B\\u788E\\u7247\\xD71"
-    },
-    itemdesc79132011: {
-        i18n_id: "itemdesc79132011",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u90ED\\u5609\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79133007: {
-        i18n_id: "itemdesc79133007",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5B59\\u6743\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164049: {
-        i18n_id: "itemdesc79164049",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C34\\u6DF9\\u4E03\\u519B\\u788E\\u7247\\xD71"
-    },
-    itemdesc79142002: {
-        i18n_id: "itemdesc79142002",
-        i18n_sb: "\\u5175\\u7CAE\\u5BF8\\u65AD\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79142021: {
-        i18n_id: "itemdesc79142021",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u66F9\\u64CD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164010: {
-        i18n_id: "itemdesc79164010",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9EC4\\u5DFE\\u5200\\u5175\\xD71,\\u9ED1\\u9B03\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164058: {
-        i18n_id: "itemdesc79164058",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5180\\u5DDE\\u91CD\\u65A7\\u5175\\xD71,\\u6BDB\\u9A74\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164029: {
-        i18n_id: "itemdesc79164029",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C34\\u6DF9\\u4E03\\u519B\\u788E\\u7247\\xD71"
-    },
-    itemdesc79111014: {
-        i18n_id: "itemdesc79111014",
-        i18n_sb: "\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79111006: {
-        i18n_id: "itemdesc79111006",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79181002: {
-        i18n_id: "itemdesc79181002",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79171009: {
-        i18n_id: "itemdesc79171009",
-        i18n_sb: "\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79181006: { i18n_id: "itemdesc79181006", i18n_sb: "\\u5E37\\u5E55\\xD71,\\u7075\\u829D\\xD71000" },
-    itemdesc79131019: {
-        i18n_id: "itemdesc79131019",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79124001: {
-        i18n_id: "itemdesc79124001",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc790222: {
-        i18n_id: "itemdesc790222",
-        i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7100\\uFF0C\\u6BCF\\u65E5\\u53EF\\u8D2D\\u4E705\\u6B21\\u3002"
-    },
-    itemdesc790232: {
-        i18n_id: "itemdesc790232",
-        i18n_sb: "\\u5185\\u542B\\u53E4\\u952D\\u5200\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790242: {
-        i18n_id: "itemdesc790242",
-        i18n_sb: "\\u5185\\u542B\\u767D\\u94F6\\u72EE\\u5B50\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790252: {
-        i18n_id: "itemdesc790252",
-        i18n_sb: "\\u5185\\u542B\\u8D64\\u5154\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790262: {
-        i18n_id: "itemdesc790262",
-        i18n_sb: "\\u5185\\u542B\\u4E50\\u4E0D\\u601D\\u8700\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790272: {
-        i18n_id: "itemdesc790272",
-        i18n_sb: "\\u5185\\u542B\\u8FFD\\u98CE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790282: {
-        i18n_id: "itemdesc790282",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u501A\\u5929\\u5251\\xD71"
-    },
-    itemdesc790292: { i18n_id: "itemdesc790292", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7300" },
-    itemdesc790302: { i18n_id: "itemdesc790302", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7300" },
+    itemdesc79111016: { i18n_id: "itemdesc79111016", i18n_sb: "大宛碎片×3,灵芝×500" },
+    itemdesc79112020: { i18n_id: "itemdesc79112020", i18n_sb: "元宝×60,刘备魂魄×3" },
+    itemdesc79164004: { i18n_id: "itemdesc79164004", i18n_sb: "元宝×20,青州水兵×1,吴六剑碎片×1" },
+    itemdesc79164038: { i18n_id: "itemdesc79164038", i18n_sb: "元宝×20,青州重斧兵×1,毛驴碎片×1" },
+    itemdesc79121015: { i18n_id: "itemdesc79121015", i18n_sb: "大宛碎片×3,灵芝×500" },
+    itemdesc79122018: { i18n_id: "itemdesc79122018", i18n_sb: "元宝×60,刘备魂魄×3" },
+    itemdesc79123014: { i18n_id: "itemdesc79123014", i18n_sb: "元宝×40,孙权魂魄×3" },
+    itemdesc79164015: { i18n_id: "itemdesc79164015", i18n_sb: "元宝×20,巴蜀长戟兵×1,水淹七军碎片×1" },
+    itemdesc79132011: { i18n_id: "itemdesc79132011", i18n_sb: "元宝×60,郭嘉魂魄×4" },
+    itemdesc79133007: { i18n_id: "itemdesc79133007", i18n_sb: "元宝×40,孙权魂魄×3" },
+    itemdesc79164049: { i18n_id: "itemdesc79164049", i18n_sb: "元宝×20,水淹七军碎片×1" },
+    itemdesc79142002: { i18n_id: "itemdesc79142002", i18n_sb: "兵粮寸断碎片×3,灵芝×500" },
+    itemdesc79142021: { i18n_id: "itemdesc79142021", i18n_sb: "元宝×60,曹操魂魄×3" },
+    itemdesc79164010: { i18n_id: "itemdesc79164010", i18n_sb: "元宝×20,黄巾刀兵×1,黑鬃碎片×1" },
+    itemdesc79164058: { i18n_id: "itemdesc79164058", i18n_sb: "元宝×20,冀州重斧兵×1,毛驴碎片×1" },
+    itemdesc79164029: { i18n_id: "itemdesc79164029", i18n_sb: "元宝×20,水淹七军碎片×1" },
+    itemdesc79111014: { i18n_id: "itemdesc79111014", i18n_sb: "爪黄飞电碎片×3,灵芝×1000" },
+    itemdesc79111006: { i18n_id: "itemdesc79111006", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79181002: { i18n_id: "itemdesc79181002", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79171009: { i18n_id: "itemdesc79171009", i18n_sb: "爪黄飞电碎片×3,灵芝×1000" },
+    itemdesc79181006: { i18n_id: "itemdesc79181006", i18n_sb: "帷幕×1,灵芝×1000" },
+    itemdesc79131019: { i18n_id: "itemdesc79131019", i18n_sb: "神·吕布魂魄×2,灵芝×1000" },
+    itemdesc79124001: { i18n_id: "itemdesc79124001", i18n_sb: "神·吕蒙魂魄×2,灵芝×1000" },
+    itemdesc790222: { i18n_id: "itemdesc790222", i18n_sb: "内含灵芝×100，每日可购买5次。" },
+    itemdesc790232: { i18n_id: "itemdesc790232", i18n_sb: "内含古锭刀碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790242: { i18n_id: "itemdesc790242", i18n_sb: "内含白银狮子碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790252: { i18n_id: "itemdesc790252", i18n_sb: "内含赤兔碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790262: { i18n_id: "itemdesc790262", i18n_sb: "内含乐不思蜀碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790272: { i18n_id: "itemdesc790272", i18n_sb: "内含追风碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790282: { i18n_id: "itemdesc790282", i18n_sb: "打开可获得：倚天剑×1" },
+    itemdesc790292: { i18n_id: "itemdesc790292", i18n_sb: "内含灵芝×300" },
+    itemdesc790302: { i18n_id: "itemdesc790302", i18n_sb: "内含灵芝×300" },
     itemdesc790218: { i18n_id: "itemdesc790218", i18n_sb: "含有曹操*1" },
     itemdesc791016: { i18n_id: "itemdesc791016", i18n_sb: "内含 20个金宝箱 10个金钥匙" },
     itemdesc791026: { i18n_id: "itemdesc791026", i18n_sb: "有大量机会获得诸葛连弩碎片以及其他稀有道具" },
@@ -18279,35 +17352,17 @@
     itemdesc790425: { i18n_id: "itemdesc790425", i18n_sb: "30000灵芝" },
     itemdesc791420: { i18n_id: "itemdesc791420", i18n_sb: "七星甲礼包" },
     itemdesc791430: { i18n_id: "itemdesc791430", i18n_sb: "元旦公会礼包" },
-    itemdesc790430: {
-        i18n_id: "itemdesc790430",
-        i18n_sb: "\\u5185\\u542B\\u9752\\u9F99\\u5043\\u6708\\u5200\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790440: {
-        i18n_id: "itemdesc790440",
-        i18n_sb: "\\u5185\\u542B\\u5BD2\\u51B0\\u5251\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790450: {
-        i18n_id: "itemdesc790450",
-        i18n_sb: "\\u5185\\u542B\\u65E0\\u53CC\\u94E0\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790460: {
-        i18n_id: "itemdesc790460",
-        i18n_sb: "\\u5185\\u542B\\u9A85\\u9A9D\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790470: {
-        i18n_id: "itemdesc790470",
-        i18n_sb: "\\u5185\\u542B\\u51B3\\u6597\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
+    itemdesc790430: { i18n_id: "itemdesc790430", i18n_sb: "内含青龙偃月刀碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790440: { i18n_id: "itemdesc790440", i18n_sb: "内含寒冰剑碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790450: { i18n_id: "itemdesc790450", i18n_sb: "内含无双铠碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790460: { i18n_id: "itemdesc790460", i18n_sb: "内含骅骝碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790470: { i18n_id: "itemdesc790470", i18n_sb: "内含决斗碎片×1，神装碎片礼盒×2，金装礼盒×3" },
     itemdesc791005: { i18n_id: "itemdesc791005", i18n_sb: " " },
     itemdesc790483: { i18n_id: "itemdesc790483", i18n_sb: "0" },
-    itemdesc791448: {
-        i18n_id: "itemdesc791448",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A100\\u5143\\u5B9D \\u5173\\u7D22\\u9B42\\u9B44\\xD78"
-    },
+    itemdesc791448: { i18n_id: "itemdesc791448", i18n_sb: "打开可获得：100元宝 关索魂魄×8" },
     itemdesc600050: { i18n_id: "itemdesc600050", i18n_sb: "恢复5点体力" },
     itemdesc791466: { i18n_id: "itemdesc791466", i18n_sb: "208个元宝" },
-    itemdesc791476: { i18n_id: "itemdesc791476", i18n_sb: "\\u5185\\u542B\\u5143\\u5B9D\\xD768" },
+    itemdesc791476: { i18n_id: "itemdesc791476", i18n_sb: "内含元宝×68" },
     itemdesc791486: { i18n_id: "itemdesc791486", i18n_sb: "包子*1 红茶*1 经验神书*2" },
     itemdesc40122009: { i18n_id: "itemdesc40122009", i18n_sb: "122009" },
     itemdesc40121009: { i18n_id: "itemdesc40121009", i18n_sb: "121009" },
@@ -18341,28 +17396,19 @@
     itemdesc791572: { i18n_id: "itemdesc791572", i18n_sb: "L1G2" },
     itemdesc791582: { i18n_id: "itemdesc791582", i18n_sb: "L1MD（之前的礼包SSMLML新生成）" },
     itemdesc791592: { i18n_id: "itemdesc791592", i18n_sb: "打开可获得：元宝宝箱*7" },
-    itemdesc791602: {
-        i18n_id: "itemdesc791602",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5143\\u5B9D\\xD7200\\uFF0C\\u7075\\u829D\\xD7150\\uFF0C\\u91D1\\u7BB1\\u5B50\\xD710\\uFF0C\\u91D1\\u94A5\\u5319\\xD710\\uFF0C\\u5305\\u5B50\\xD75"
-    },
-    itemdesc9121001: { i18n_id: "itemdesc9121001", i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44" },
+    itemdesc791602: { i18n_id: "itemdesc791602", i18n_sb: "打开可获得：元宝×200，灵芝×150，金箱子×10，金钥匙×10，包子×5" },
+    itemdesc9121001: { i18n_id: "itemdesc9121001", i18n_sb: "神·关羽魂魄" },
     itemdesc791615: { i18n_id: "itemdesc791615", i18n_sb: "内含孙策魂魄*6" },
     itemdesc791625: { i18n_id: "itemdesc791625", i18n_sb: "200灵芝 200元宝" },
-    itemdesc791635: {
-        i18n_id: "itemdesc791635",
-        i18n_sb: "\\u91D1\\u94A5\\u5319\\xD75\\uFF0C\\u94F6\\u94A5\\u5319\\xD75\\uFF0C\\u94DC\\u94A5\\u5319\\xD75\\uFF0C\\u6311\\u6218\\u6587\\u4E66\\xD75\\uFF0C\\u5143\\u5B9D\\xD730"
-    },
+    itemdesc791635: { i18n_id: "itemdesc791635", i18n_sb: "金钥匙×5，银钥匙×5，铜钥匙×5，挑战文书×5，元宝×30" },
     itemdesc791645: { i18n_id: "itemdesc791645", i18n_sb: "打开可获得：随机一件银装" },
-    itemdesc791646: { i18n_id: "itemdesc791646", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*1" },
+    itemdesc791646: { i18n_id: "itemdesc791646", i18n_sb: "内含魔·貂蝉魂魄*1" },
     itemdesc791656: { i18n_id: "itemdesc791656", i18n_sb: "神榜中级宝箱2倍" },
     itemdesc791666: { i18n_id: "itemdesc791666", i18n_sb: "可以获得稀有神级被动技能残卷" },
     itemdesc791676: { i18n_id: "itemdesc791676", i18n_sb: "可以获得稀有神级被动技能残卷" },
     itemdesc791680: { i18n_id: "itemdesc791680", i18n_sb: "打开可获得顽皮淘淘" },
     itemdesc791690: { i18n_id: "itemdesc791690", i18n_sb: "国之宝匣*500" },
-    itemdesc600070: {
-        i18n_id: "itemdesc600070",
-        i18n_sb: "\\u5185\\u542B\\u52FE\\u7389\\xD73\\uFF0C\\u5929\\u68AF\\u6311\\u6218\\u8D5B\\u7ED3\\u675F\\u540E\\u82E5\\u5408\\u4F5C\\u533A\\u73A9\\u5BB6\\u83B7\\u80DC\\u53EF\\u4EE5\\u83B7\\u5F97\\u8FD4\\u5229\\u5143\\u5B9D"
-    },
+    itemdesc600070: { i18n_id: "itemdesc600070", i18n_sb: "内含勾玉×3，天梯挑战赛结束后若合作区玩家获胜可以获得返利元宝" },
     itemdesc791706: { i18n_id: "itemdesc791706", i18n_sb: "100元宝、50灵芝、1挑战文书" },
     itemdesc542021: { i18n_id: "itemdesc542021", i18n_sb: "第42章第1个宝箱" },
     itemdesc10540010: { i18n_id: "itemdesc10540010", i18n_sb: "第40章隐藏宝箱" },
@@ -18374,47 +17420,23 @@
     itemdesc791726: { i18n_id: "itemdesc791726", i18n_sb: "打开可获得16个1级宝石箱" },
     itemdesc600088: { i18n_id: "itemdesc600088", i18n_sb: "中秋必食之品，养生解馋。食用后可回复大量体力。" },
     itemdesc791744: { i18n_id: "itemdesc791744", i18n_sb: "打开可获得200灵芝" },
-    itemdesc791754: {
-        i18n_id: "itemdesc791754",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9752\\u9F99\\u94E0\\xD71\\u3001\\u7CBE\\u70BC\\u6750\\u6599\\u9752\\u51A5\\xD736\\u3001\\u7075\\u829D\\xD71000"
-    },
-    itemdesc791764: {
-        i18n_id: "itemdesc791764",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD72500"
-    },
-    itemdesc791774: { i18n_id: "itemdesc791774", i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5143\\u5B9D\\xD7800" },
-    itemdesc791784: {
-        i18n_id: "itemdesc791784",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD74500"
-    },
+    itemdesc791754: { i18n_id: "itemdesc791754", i18n_sb: "打开可获得青龙铠×1、精炼材料青冥×36、灵芝×1000" },
+    itemdesc791764: { i18n_id: "itemdesc791764", i18n_sb: "打开可获得灵芝×2500" },
+    itemdesc791774: { i18n_id: "itemdesc791774", i18n_sb: "打开可获得元宝×800" },
+    itemdesc791784: { i18n_id: "itemdesc791784", i18n_sb: "打开可获得灵芝×4500" },
     itemdesc21100001: { i18n_id: "itemdesc21100001", i18n_sb: "女神貂蝉皮肤" },
     itemdesc791803: { i18n_id: "itemdesc791803", i18n_sb: "打开获得雪国之宝匣*1" },
-    itemdesc791791: {
-        i18n_id: "itemdesc791791",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u6587\\u59EC\\xD71"
-    },
-    itemdesc791801: {
-        i18n_id: "itemdesc791801",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u6708\\u82F1\\u76AE\\u80A4\\xD71"
-    },
-    itemdesc791809: {
-        i18n_id: "itemdesc791809",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u4E08\\u516B\\u86C7\\u77DB\\xD71\\u3001\\u5F20\\u98DE\\u9B42\\u9B44\\xD710\\u3001\\u7075\\u829D\\xD7100\\u3001\\u7ECF\\u9A8C\\u91D1\\u4E66\\xD710\\u3001\\u7CBE\\u70BC\\u6750\\u6599\\u9752\\u51A5\\xD78"
-    },
+    itemdesc791791: { i18n_id: "itemdesc791791", i18n_sb: "打开可获得女神文姬×1" },
+    itemdesc791801: { i18n_id: "itemdesc791801", i18n_sb: "打开可获得女神月英皮肤×1" },
+    itemdesc791809: { i18n_id: "itemdesc791809", i18n_sb: "打开可获得丈八蛇矛×1、张飞魂魄×10、灵芝×100、经验金书×10、精炼材料青冥×8" },
     itemdesc546022: { i18n_id: "itemdesc546022", i18n_sb: "第41章第2个宝箱" },
     itemdesc549023: { i18n_id: "itemdesc549023", i18n_sb: "第44章第3个宝箱" },
     itemdesc10549010: { i18n_id: "itemdesc10549010", i18n_sb: "第44章隐藏宝箱" },
-    itemdesc791820: {
-        i18n_id: "itemdesc791820",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD725\\u3001\\u52FE\\u7389\\xD73\\u3001\\u864E\\u775B\\u77F3\\xD76"
-    },
-    itemdesc791830: {
-        i18n_id: "itemdesc791830",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD712\\u3001\\u52FE\\u7389\\xD75\\u3001\\u864E\\u775B\\u77F3\\xD712"
-    },
+    itemdesc791820: { i18n_id: "itemdesc791820", i18n_sb: "打开可获得灵芝×25、勾玉×3、虎睛石×6" },
+    itemdesc791830: { i18n_id: "itemdesc791830", i18n_sb: "打开可获得灵芝×12、勾玉×5、虎睛石×12" },
     itemdesc791836: { i18n_id: "itemdesc791836", i18n_sb: "打开可获得：英雄王关羽1个，被动技能武神1个，灵芝100000" },
     itemdesc600109: { i18n_id: "itemdesc600109", i18n_sb: "使用后主公经验可提升5470" },
-    itemdesc7710006: { i18n_id: "itemdesc7710006", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*1" },
+    itemdesc7710006: { i18n_id: "itemdesc7710006", i18n_sb: "魔·董卓魂魄*1" },
     itemdesc7710016: { i18n_id: "itemdesc7710016", i18n_sb: "马超魂魄*1" },
     itemdesc7710026: { i18n_id: "itemdesc7710026", i18n_sb: "甘宁魂魄*1" },
     itemdesc7710036: { i18n_id: "itemdesc7710036", i18n_sb: "庞统魂魄*1" },
@@ -18455,10 +17477,7 @@
     itemdesc7720198: { i18n_id: "itemdesc7720198", i18n_sb: "绿沉枪碎片*3" },
     itemdesc7730004: { i18n_id: "itemdesc7730004", i18n_sb: "看破残卷" },
     itemdesc7730014: { i18n_id: "itemdesc7730014", i18n_sb: "马术残卷" },
-    itemdesc5710002: {
-        i18n_id: "itemdesc5710002",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5434\\xB7\\u5B59\\u5C1A\\u9999*1"
-    },
+    itemdesc5710002: { i18n_id: "itemdesc5710002", i18n_sb: "打开可获得吴·孙尚香*1" },
     itemdesc5730005: { i18n_id: "itemdesc5730005", i18n_sb: "打开可获得天香*1" },
     itemdesc5740004: { i18n_id: "itemdesc5740004", i18n_sb: "打开可获得女神祝融*1" },
     "50000201": { i18n_id: "50000201", i18n_sb: "第二章.桃园三结义" },
@@ -18657,10 +17676,10 @@
     dialogname507003022: { i18n_id: "dialogname507003022", i18n_sb: "神秘人" },
     dialogname507006013: { i18n_id: "dialogname507006013", i18n_sb: "$UserName" },
     dialogname507011011: { i18n_id: "dialogname507011011", i18n_sb: "朱治" },
-    dialogname507012014: { i18n_id: "dialogname507012014", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname507012014: { i18n_id: "dialogname507012014", i18n_sb: "吴·孙尚香" },
     dialogname5070120210: { i18n_id: "dialogname5070120210", i18n_sb: "$UserName" },
     dialogname508004025: { i18n_id: "dialogname508004025", i18n_sb: "$UserName" },
-    dialogname508010011: { i18n_id: "dialogname508010011", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname508010011: { i18n_id: "dialogname508010011", i18n_sb: "吴·孙尚香" },
     dialogname508012014: { i18n_id: "dialogname508012014", i18n_sb: "华佗" },
     dialogname508013014: { i18n_id: "dialogname508013014", i18n_sb: "$UserName(暴走)" },
     dialogname509004015: { i18n_id: "dialogname509004015", i18n_sb: "$UserName" },
@@ -18864,7 +17883,7 @@
     dialogname5490040111: { i18n_id: "dialogname5490040111", i18n_sb: "满宠" },
     dialogname549012013: { i18n_id: "dialogname549012013", i18n_sb: "$UserName" },
     dialogname549018013: { i18n_id: "dialogname549018013", i18n_sb: "张辽" },
-    dialogname549020011: { i18n_id: "dialogname549020011", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE" },
+    dialogname549020011: { i18n_id: "dialogname549020011", i18n_sb: "神·诸葛亮" },
     dialogdesc501003012: { i18n_id: "dialogdesc501003012", i18n_sb: "现在喊关兴也没用，他不会来救你的！" },
     dialogdesc501003027: { i18n_id: "dialogdesc501003027", i18n_sb: "知识？" },
     dialogdesc501004023: { i18n_id: "dialogdesc501004023", i18n_sb: "咦？竟然是貂蝉？！四大美女之一的貂蝉？！我最爱的女神，我来救你了！" },
@@ -19069,10 +18088,7 @@
     dialogdesc540004013: { i18n_id: "dialogdesc540004013", i18n_sb: "小备备是个讲义气的人，除非他自己也神志不清，否则绝不会魔化自己的义弟。" },
     dialogdesc540004022: { i18n_id: "dialogdesc540004022", i18n_sb: "等你有即将失去的东西的时候才知道害怕，我现在爱人朋友兄弟都死了，实在不知道该怕什么。" },
     dialogdesc540012014: { i18n_id: "dialogdesc540012014", i18n_sb: "听不懂你在说什么，反正我在这里誓死护卫！" },
-    dialogdesc540018011: {
-        i18n_id: "dialogdesc540018011",
-        i18n_sb: "\\u679C\\u7136\\u8FD8\\u662F\\u4F60\\u806A\\u660E\\uFF0C\\u4F60\\u8FD9\\u7BC7\\u300A\\u6211\\u6709\\u4E00\\u4E2A\\u597D\\u7238\\u7238\\u300B\\u5199\\u7684\\u771F\\u662F\\u751F\\u52A8\\u5F62\\u8C61\\u611F\\u4EBA\\u81F3\\u6DF1\\xA0\\uFF01"
-    },
+    dialogdesc540018011: { i18n_id: "dialogdesc540018011", i18n_sb: "果然还是你聪明，你这篇《我有一个好爸爸》写的真是生动形象感人至深 ！" },
     dialogdesc540019017: { i18n_id: "dialogdesc540019017", i18n_sb: "胡说，不可能，我怎么可能知道呢。" },
     dialogdesc540020016: { i18n_id: "dialogdesc540020016", i18n_sb: "你想魔化他？" },
     dialogdesc541004017: { i18n_id: "dialogdesc541004017", i18n_sb: "我的夫君……是死在你的手里吗？" },
@@ -19099,10 +18115,7 @@
     dialogdesc545018013: { i18n_id: "dialogdesc545018013", i18n_sb: "不管你来干什么，我都不会让你得逞！" },
     dialogdesc545020021: { i18n_id: "dialogdesc545020021", i18n_sb: "你怎么知道，我们攻打南安是假，围攻天水关是真？" },
     dialogdesc546004016: { i18n_id: "dialogdesc546004016", i18n_sb: "我乃蜀将参军，除了诸葛军师的命令，一律不听" },
-    dialogdesc546008022: {
-        i18n_id: "dialogdesc546008022",
-        i18n_sb: "\\u738B\\u5E73\\u9A6C\\u8C21\\uFF0C\\u4E8C\\u4F4D\\u5C06\\u519B\\u8BF7\\u548C\\u6211\\u4E00\\u8D77\\u53BB\\u5B88\\u8857\\u4EAD\\xA0\\u5427\\uFF0C\\u5C24\\u5176\\u662F\\u9A6C\\u8C21\\u5C06\\u519B\\uFF0C\\u8BF7\\u597D\\u597D\\u542C\\u53D6\\u6211\\u7684\\u610F\\u89C1\\uFF0C\\u8BF4\\u4E0D\\u5B9A\\u8FD9\\u6837\\u80FD\\u6551\\u4F60\\u4E00\\u547D\\u3002"
-    },
+    dialogdesc546008022: { i18n_id: "dialogdesc546008022", i18n_sb: "王平马谡，二位将军请和我一起去守街亭 吧，尤其是马谡将军，请好好听取我的意见，说不定这样能救你一命。" },
     dialogdesc546016011: { i18n_id: "dialogdesc546016011", i18n_sb: "此处易守难攻，只要占领最高点，从上向下攻击，一定能获得胜利！" },
     dialogdesc546018013: { i18n_id: "dialogdesc546018013", i18n_sb: "现在军心大乱，要是来波魏军，我们就全挂了……" },
     dialogdesc546020012: { i18n_id: "dialogdesc546020012", i18n_sb: "再等等，我在找一件东西。" },
@@ -19202,7 +18215,7 @@
     "8640390101": { i18n_id: "8640390101", i18n_sb: "进击的霸主" },
     "8210070201": { i18n_id: "8210070201", i18n_sb: "张飞的心愿" },
     "8210100401": { i18n_id: "8210100401", i18n_sb: "突破界限" },
-    "8210140201": { i18n_id: "8210140201", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u7684\\u5FC3\\u613F" },
+    "8210140201": { i18n_id: "8210140201", i18n_sb: "蜀·孙尚香的心愿" },
     "8210160401": { i18n_id: "8210160401", i18n_sb: "斩将的勇士" },
     "8220070201": { i18n_id: "8220070201", i18n_sb: "天梯的勇士" },
     "8220100101": { i18n_id: "8220100101", i18n_sb: "廖化的心愿" },
@@ -19228,7 +18241,7 @@
     "8430150201": { i18n_id: "8430150201", i18n_sb: "技能宗师" },
     "8640520101": { i18n_id: "8640520101", i18n_sb: "比武达人" },
     "8640600101": { i18n_id: "8640600101", i18n_sb: "进击的霸主" },
-    "8210020201": { i18n_id: "8210020201", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u7684\\u5FC3\\u613F" },
+    "8210020201": { i18n_id: "8210020201", i18n_sb: "神·诸葛亮的心愿" },
     "8710010401": { i18n_id: "8710010401", i18n_sb: "突破界限" },
     "8430230201": { i18n_id: "8430230201", i18n_sb: "神书终结者" },
     "8210080201": { i18n_id: "8210080201", i18n_sb: "天赋异禀" },
@@ -19279,10 +18292,7 @@
     "8310080302": { i18n_id: "8310080302", i18n_sb: "图鉴点亮[技能]红颜" },
     "8310150102": { i18n_id: "8310150102", i18n_sb: "天赋技能等级达到21级" },
     "8320120102": { i18n_id: "8320120102", i18n_sb: "图鉴点亮[武将]周泰" },
-    "8320180102": {
-        i18n_id: "8320180102",
-        i18n_sb: "\\u56FE\\u9274\\u70B9\\u4EAE[\\u6B66\\u5C06]\\u5434\\xB7\\u5B59\\u5C1A\\u9999"
-    },
+    "8320180102": { i18n_id: "8320180102", i18n_sb: "图鉴点亮[武将]吴·孙尚香" },
     "8320210302": { i18n_id: "8320210302", i18n_sb: "过关斩将神榜通过30关" },
     "8640020102": { i18n_id: "8640020102", i18n_sb: "累计天梯战斗1次" },
     "8410020302": { i18n_id: "8410020302", i18n_sb: "修炼武将攻属性至5500" },
@@ -19301,7 +18311,7 @@
     "8110140102": { i18n_id: "8110140102", i18n_sb: "累计登陆天数达到45天" },
     "8310130302": { i18n_id: "8310130302", i18n_sb: "最高战技等级达到85级" },
     "8310180102": { i18n_id: "8310180102", i18n_sb: "累计合成神品质技能书80次" },
-    "8810010302": { i18n_id: "8810010302", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u7A81\\u7834\\u81F35\\u661F" },
+    "8810010302": { i18n_id: "8810010302", i18n_sb: "魔·张飞突破至5星" },
     "8110060102": { i18n_id: "8110060102", i18n_sb: "天赋技能等级达到28级" },
     "8210010302": { i18n_id: "8210010302", i18n_sb: "臣服关羽" },
     "8910050102": { i18n_id: "8910050102", i18n_sb: "最高战技等级达到250级" },
@@ -20094,7 +19104,7 @@
     "1070310011": { i18n_id: "1070310011", i18n_sb: "恭喜主公！购买成功！" },
     "1070310021": { i18n_id: "1070310021", i18n_sb: "0" },
     "1070610006": { i18n_id: "1070610006", i18n_sb: "取消" },
-    "1070610017": { i18n_id: "1070610017", i18n_sb: "\\xD71" },
+    "1070610017": { i18n_id: "1070610017", i18n_sb: "×1" },
     "1070610028": { i18n_id: "1070610028", i18n_sb: "选择" },
     "1070610038": { i18n_id: "1070610038", i18n_sb: "恢复次数" },
     "1070610048": { i18n_id: "1070610048", i18n_sb: "阵容" },
@@ -20347,15 +19357,15 @@
     union_war_reward_title2: { i18n_id: "union_war_reward_title2", i18n_sb: "本服公会战8强入围奖励" },
     union_war_reward_desc2: { i18n_id: "union_war_reward_desc2", i18n_sb: "本服公会战8强入围奖励：城之宝匣*20，可获得流星、装备、技能、银两。" },
     sgs_hulao_reward_conf2: { i18n_id: "sgs_hulao_reward_conf2", i18n_sb: "谢礼2(普通);谢礼2(困难);谢礼2(深渊)" },
-    mystery_name_107710006: { i18n_id: "mystery_name_107710006", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*1" },
+    mystery_name_107710006: { i18n_id: "mystery_name_107710006", i18n_sb: "魔·董卓魂魄*1" },
     mystery_name_107710016: { i18n_id: "mystery_name_107710016", i18n_sb: "马超魂魄*1" },
     mystery_name_107710026: { i18n_id: "mystery_name_107710026", i18n_sb: "甘宁魂魄*1" },
     mystery_name_107710036: { i18n_id: "mystery_name_107710036", i18n_sb: "庞统魂魄*1" },
-    mystery_name_107710052: { i18n_id: "mystery_name_107710052", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*1" },
+    mystery_name_107710052: { i18n_id: "mystery_name_107710052", i18n_sb: "魔·张飞魂魄*1" },
     mystery_name_107710062: { i18n_id: "mystery_name_107710062", i18n_sb: "曹操魂魄*1" },
     mystery_name_107710072: { i18n_id: "mystery_name_107710072", i18n_sb: "华佗魂魄*1" },
     mystery_name_107710082: { i18n_id: "mystery_name_107710082", i18n_sb: "曹丕魂魄*1" },
-    mystery_name_107710092: { i18n_id: "mystery_name_107710092", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*1" },
+    mystery_name_107710092: { i18n_id: "mystery_name_107710092", i18n_sb: "蜀·孙尚香魂魄*1" },
     mystery_name_107710108: { i18n_id: "mystery_name_107710108", i18n_sb: "关羽魂魄*3" },
     mystery_name_107710118: { i18n_id: "mystery_name_107710118", i18n_sb: "黄月英魂魄*3" },
     mystery_name_107710128: { i18n_id: "mystery_name_107710128", i18n_sb: "吕布魂魄*3" },
@@ -20418,12 +19428,12 @@
         i18n_id: "IdCardBinding_17",
         i18n_sb: "您的累计下线时间未满5小时，为了您的健康，请您立即下线休息。如不下线，\n您的身体将受到损害，您的收益降为零。（如果您是成年用户，可补全防沉迷\n信息继续游戏）"
     },
-    "16500101": { i18n_id: "16500101", i18n_sb: "\\u795E\\xB7\\u5927\\u5200\\u5175" },
+    "16500101": { i18n_id: "16500101", i18n_sb: "神·大刀兵" },
     itemname9191005: { i18n_id: "itemname9191005", i18n_sb: "浣熊波波魂魄" },
     itemname131011: { i18n_id: "itemname131011", i18n_sb: "步练师" },
     itemname111005: { i18n_id: "itemname111005", i18n_sb: "司马懿" },
-    itemname121002: { i18n_id: "itemname121002", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE" },
-    itemname181005: { i18n_id: "itemname181005", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353" },
+    itemname121002: { i18n_id: "itemname121002", i18n_sb: "神·诸葛亮" },
+    itemname181005: { i18n_id: "itemname181005", i18n_sb: "魔·董卓" },
     itemname122014: { i18n_id: "itemname122014", i18n_sb: "法正" },
     itemname79165002: { i18n_id: "itemname79165002", i18n_sb: "臣服奖励" },
     itemname7750010: { i18n_id: "itemname7750010", i18n_sb: "神秘商品之骅骝碎片*3" },
@@ -20444,8 +19454,8 @@
     itemname792062: { i18n_id: "itemname792062", i18n_sb: "黄巾大刀兵礼包" },
     itemname792072: { i18n_id: "itemname792072", i18n_sb: "西凉斧兵礼包" },
     itemname792082: { i18n_id: "itemname792082", i18n_sb: "司马懿礼包" },
-    itemname792092: { i18n_id: "itemname792092", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u793C\\u5305" },
-    itemname792102: { i18n_id: "itemname792102", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u793C\\u5305" },
+    itemname792092: { i18n_id: "itemname792092", i18n_sb: "神·诸葛亮礼包" },
+    itemname792102: { i18n_id: "itemname792102", i18n_sb: "魔·董卓礼包" },
     itemname792112: { i18n_id: "itemname792112", i18n_sb: "顽皮淘淘礼包" },
     itemname792122: { i18n_id: "itemname792122", i18n_sb: "法正礼包" },
     itemname792132: { i18n_id: "itemname792132", i18n_sb: "荀彧礼包" },
@@ -20468,24 +19478,21 @@
     itemname792302: { i18n_id: "itemname792302", i18n_sb: "高顺魂魄礼包" },
     itemname792312: { i18n_id: "itemname792312", i18n_sb: "吕蒙魂魄礼包" },
     itemname792322: { i18n_id: "itemname792322", i18n_sb: "夏侯渊魂魄礼包" },
-    itemname792332: { i18n_id: "itemname792332", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname792332: { i18n_id: "itemname792332", i18n_sb: "魔·董卓魂魄礼包" },
     itemname792342: { i18n_id: "itemname792342", i18n_sb: "顽皮淘淘魂魄礼包" },
     itemname792352: { i18n_id: "itemname792352", i18n_sb: "法正魂魄礼包" },
     itemname792362: { i18n_id: "itemname792362", i18n_sb: "荀彧魂魄礼包" },
-    itemname792372: {
-        i18n_id: "itemname792372",
-        i18n_sb: "\\u795E\\xB7\\u5927\\u5200\\u5175\\u9B42\\u9B44\\u793C\\u5305"
-    },
+    itemname792372: { i18n_id: "itemname792372", i18n_sb: "神·大刀兵魂魄礼包" },
     itemname7740009: { i18n_id: "itemname7740009", i18n_sb: "神秘商品之袁绍魂魄*3" },
     itemname7740019: { i18n_id: "itemname7740019", i18n_sb: "神秘商品之太史慈魂魄*3" },
     itemname7740029: { i18n_id: "itemname7740029", i18n_sb: "神秘商品之华雄魂魄*3" },
     itemname7740039: { i18n_id: "itemname7740039", i18n_sb: "神秘商品之赵云魂魄*3" },
     itemname7740049: { i18n_id: "itemname7740049", i18n_sb: "神秘商品之兵长陆逊魂魄*3" },
     itemdesc9194001: { i18n_id: "itemdesc9194001", i18n_sb: "倒霉呆呆魂魄" },
-    itemdesc9165002: { i18n_id: "itemdesc9165002", i18n_sb: "\\u795E\\xB7\\u91CD\\u9A91\\u5175\\u9B42\\u9B44" },
+    itemdesc9165002: { i18n_id: "itemdesc9165002", i18n_sb: "神·重骑兵魂魄" },
     itemdesc141020: { i18n_id: "itemdesc141020", i18n_sb: "刘协" },
     itemdesc131004: { i18n_id: "itemdesc131004", i18n_sb: "周瑜" },
-    itemdesc181001: { i18n_id: "itemdesc181001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE" },
+    itemdesc181001: { i18n_id: "itemdesc181001", i18n_sb: "魔·张飞" },
     itemdesc122011: { i18n_id: "itemdesc122011", i18n_sb: "孟获" },
     itemdesc131019: { i18n_id: "itemdesc131019", i18n_sb: "诸葛瑾" },
     itemdesc7750006: { i18n_id: "itemdesc7750006", i18n_sb: "爪黄飞电碎片*3" },
@@ -20507,10 +19514,7 @@
     itemdesc792068: { i18n_id: "itemdesc792068", i18n_sb: "打开可获得冀州重斧兵*1" },
     itemdesc792078: { i18n_id: "itemdesc792078", i18n_sb: "打开可获得张辽*1" },
     itemdesc792088: { i18n_id: "itemdesc792088", i18n_sb: "打开可获得周瑜*1" },
-    itemdesc792098: {
-        i18n_id: "itemdesc792098",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u5F20\\u98DE*1"
-    },
+    itemdesc792098: { i18n_id: "itemdesc792098", i18n_sb: "打开可获得魔·张飞*1" },
     itemdesc792108: { i18n_id: "itemdesc792108", i18n_sb: "打开可获得射手黄忠*1" },
     itemdesc792118: { i18n_id: "itemdesc792118", i18n_sb: "打开可获得孟获*1" },
     itemdesc792128: { i18n_id: "itemdesc792128", i18n_sb: "打开可获得诸葛瑾*1" },
@@ -20532,19 +19536,13 @@
     itemdesc792288: { i18n_id: "itemdesc792288", i18n_sb: "打开可获得冀州重骑兵魂魄*1" },
     itemdesc792298: { i18n_id: "itemdesc792298", i18n_sb: "打开可获得张星彩魂魄*1" },
     itemdesc792308: { i18n_id: "itemdesc792308", i18n_sb: "打开可获得黄月英魂魄*1" },
-    itemdesc792318: {
-        i18n_id: "itemdesc792318",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44*1"
-    },
-    itemdesc792328: {
-        i18n_id: "itemdesc792328",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*1"
-    },
+    itemdesc792318: { i18n_id: "itemdesc792318", i18n_sb: "打开可获得神·关羽魂魄*1" },
+    itemdesc792328: { i18n_id: "itemdesc792328", i18n_sb: "打开可获得魔·张飞魂魄*1" },
     itemdesc792338: { i18n_id: "itemdesc792338", i18n_sb: "打开可获得射手黄忠魂魄*1" },
     itemdesc792348: { i18n_id: "itemdesc792348", i18n_sb: "打开可获得孟获魂魄*1" },
     itemdesc792358: { i18n_id: "itemdesc792358", i18n_sb: "打开可获得诸葛瑾魂魄*1" },
     itemdesc792368: { i18n_id: "itemdesc792368", i18n_sb: "打开可获得吴大帝魂魄*1" },
-    itemdesc7740005: { i18n_id: "itemdesc7740005", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*3" },
+    itemdesc7740005: { i18n_id: "itemdesc7740005", i18n_sb: "魔·黄盖魂魄*3" },
     itemdesc7740015: { i18n_id: "itemdesc7740015", i18n_sb: "张飞魂魄*3" },
     itemdesc7740025: { i18n_id: "itemdesc7740025", i18n_sb: "吕蒙魂魄*3" },
     itemdesc7740035: { i18n_id: "itemdesc7740035", i18n_sb: "张辽魂魄*3" },
@@ -20556,13 +19554,13 @@
     queueTeam_13: { i18n_id: "queueTeam_13", i18n_sb: "解锁阵容提示" },
     queueTeam_23: { i18n_id: "queueTeam_23", i18n_sb: "装备" },
     str_Filter_God: { i18n_id: "str_Filter_God", i18n_sb: "神" },
-    mystery_name_107700005: { i18n_id: "mystery_name_107700005", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*1" },
+    mystery_name_107700005: { i18n_id: "mystery_name_107700005", i18n_sb: "魔·黄盖魂魄*1" },
     mystery_name_107700015: { i18n_id: "mystery_name_107700015", i18n_sb: "张飞魂魄*1" },
     mystery_name_107700025: { i18n_id: "mystery_name_107700025", i18n_sb: "吕蒙魂魄*1" },
     mystery_name_107700035: { i18n_id: "mystery_name_107700035", i18n_sb: "张辽魂魄*1" },
     mystery_name_107700045: { i18n_id: "mystery_name_107700045", i18n_sb: "张春华魂魄*1" },
     mystery_name_107700055: { i18n_id: "mystery_name_107700055", i18n_sb: "程昱魂魄*1" },
-    mystery_name_107700065: { i18n_id: "mystery_name_107700065", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*1" },
+    mystery_name_107700065: { i18n_id: "mystery_name_107700065", i18n_sb: "魔·马超魂魄*1" },
     mystery_name_107700075: { i18n_id: "mystery_name_107700075", i18n_sb: "孙权魂魄*1" },
     mystery_name_107700085: { i18n_id: "mystery_name_107700085", i18n_sb: "张角魂魄*1" },
     mystery_name_107700095: { i18n_id: "mystery_name_107700095", i18n_sb: "甄姬魂魄*1" },
@@ -20574,7 +19572,7 @@
     mystery_name_107700155: { i18n_id: "mystery_name_107700155", i18n_sb: "华雄魂魄*3" },
     mystery_name_107700165: { i18n_id: "mystery_name_107700165", i18n_sb: "赵云魂魄*3" },
     mystery_name_107700175: { i18n_id: "mystery_name_107700175", i18n_sb: "兵长陆逊魂魄*3" },
-    mystery_name_107700185: { i18n_id: "mystery_name_107700185", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*3" },
+    mystery_name_107700185: { i18n_id: "mystery_name_107700185", i18n_sb: "魔·貂蝉魂魄*3" },
     mystery_name_107700195: { i18n_id: "mystery_name_107700195", i18n_sb: "郭嘉魂魄*3" },
     mystery_name_107700205: { i18n_id: "mystery_name_107700205", i18n_sb: "曹仁魂魄*3" },
     mystery_name_107700215: { i18n_id: "mystery_name_107700215", i18n_sb: "诸葛亮魂魄*3" },
@@ -20611,9 +19609,9 @@
     "4110061101": { i18n_id: "4110061101", i18n_sb: "夙昔旧主" },
     "4710150301": { i18n_id: "4710150301", i18n_sb: "武烈父女" },
     "4220120101": { i18n_id: "4220120101", i18n_sb: "火神后裔" },
-    itemname9111001: { i18n_id: "itemname9111001", i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44" },
+    itemname9111001: { i18n_id: "itemname9111001", i18n_sb: "神·曹操魂魄" },
     itemname792376: { i18n_id: "itemname792376", i18n_sb: "祝融礼包" },
-    itemdesc9111001: { i18n_id: "itemdesc9111001", i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44" },
+    itemdesc9111001: { i18n_id: "itemdesc9111001", i18n_sb: "神·曹操魂魄" },
     itemdesc792376: { i18n_id: "itemdesc792376", i18n_sb: "打开可获得祝融*1" },
     "8220120101": { i18n_id: "8220120101", i18n_sb: "勤劳的勇者" },
     "8710150302": { i18n_id: "8710150302", i18n_sb: "修炼武将攻属性至6000" },
@@ -20706,19 +19704,19 @@
     mystery_name_107700448: { i18n_id: "mystery_name_107700448", i18n_sb: "天妒残卷" },
     mystery_name_107700458: { i18n_id: "mystery_name_107700458", i18n_sb: "看破残卷" },
     itemname600123: { i18n_id: "itemname600123", i18n_sb: "祝融传承符" },
-    mystery_name_117710005: { i18n_id: "mystery_name_117710005", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*1" },
+    mystery_name_117710005: { i18n_id: "mystery_name_117710005", i18n_sb: "魔·黄盖魂魄*1" },
     mystery_name_117710015: { i18n_id: "mystery_name_117710015", i18n_sb: "张飞魂魄*1" },
     mystery_name_117710025: { i18n_id: "mystery_name_117710025", i18n_sb: "吕蒙魂魄*1" },
     mystery_name_117710035: { i18n_id: "mystery_name_117710035", i18n_sb: "张辽魂魄*1" },
     mystery_name_117710045: { i18n_id: "mystery_name_117710045", i18n_sb: "张春华魂魄*1" },
     mystery_name_117710055: { i18n_id: "mystery_name_117710055", i18n_sb: "程昱魂魄*1" },
-    mystery_name_107740002: { i18n_id: "mystery_name_107740002", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*3" },
+    mystery_name_107740002: { i18n_id: "mystery_name_107740002", i18n_sb: "魔·马超魂魄*3" },
     mystery_name_107740012: { i18n_id: "mystery_name_107740012", i18n_sb: "孙权魂魄*3" },
     mystery_name_107740022: { i18n_id: "mystery_name_107740022", i18n_sb: "张角魂魄*3" },
     mystery_name_107740032: { i18n_id: "mystery_name_107740032", i18n_sb: "甄姬魂魄*3" },
     mystery_name_107740042: { i18n_id: "mystery_name_107740042", i18n_sb: "司马懿魂魄*3" },
     mystery_name_107740054: { i18n_id: "mystery_name_107740054", i18n_sb: "步练师魂魄*3" },
-    mystery_name_117740006: { i18n_id: "mystery_name_117740006", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*3" },
+    mystery_name_117740006: { i18n_id: "mystery_name_117740006", i18n_sb: "魔·董卓魂魄*3" },
     mystery_name_117740016: { i18n_id: "mystery_name_117740016", i18n_sb: "马超魂魄*3" },
     mystery_name_117740026: { i18n_id: "mystery_name_117740026", i18n_sb: "甘宁魂魄*3" },
     mystery_name_117740036: { i18n_id: "mystery_name_117740036", i18n_sb: "庞统魂魄*3" },
@@ -20779,10 +19777,7 @@
     "322014205": { i18n_id: "322014205", i18n_sb: "造成智力伤害，伤害系数$1%；并增加己方全体下一次造成的伤害，增加值为智力的$2%。" },
     "4220141301": { i18n_id: "4220141301", i18n_sb: "朱雀焚天" },
     "33102003": { i18n_id: "33102003", i18n_sb: "行动时 易触发" },
-    itemdesc79131020: {
-        i18n_id: "itemdesc79131020",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79131020: { i18n_id: "itemdesc79131020", i18n_sb: "神·曹操魂魄x2,灵芝x1000" },
     surrunderdesc_533: { i18n_id: "surrunderdesc_533", i18n_sb: "0" },
     itemdesc6300165: { i18n_id: "itemdesc6300165", i18n_sb: "可以获得远交近攻碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
     "311017302": {
@@ -20890,10 +19885,7 @@
     "4210062301": { i18n_id: "4210062301", i18n_sb: "五虎之威" },
     "4110240301": { i18n_id: "4110240301", i18n_sb: "御马追风" },
     itemname600209: { i18n_id: "itemname600209", i18n_sb: "万能碎片" },
-    itemdesc79111024: {
-        i18n_id: "itemdesc79111024",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x3,\\u7075\\u829Dx1000"
-    },
+    itemdesc79111024: { i18n_id: "itemdesc79111024", i18n_sb: "神·曹操魂魄x3,灵芝x1000" },
     itemdesc600215: { i18n_id: "itemdesc600215", i18n_sb: "购买十个觉醒钥匙" },
     "8210060502": { i18n_id: "8210060502", i18n_sb: "觉醒宝箱开启200次" },
     surrunderdesc_541: { i18n_id: "surrunderdesc_541", i18n_sb: "0" },
@@ -20974,7 +19966,7 @@
     },
     "4110251601": { i18n_id: "4110251601", i18n_sb: "国仇家恨" },
     "4410210201": { i18n_id: "4410210201", i18n_sb: "徐徐而进" },
-    itemdesc111026: { i18n_id: "itemdesc111026", i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF" },
+    itemdesc111026: { i18n_id: "itemdesc111026", i18n_sb: "神·司马懿" },
     "8410210301": { i18n_id: "8410210301", i18n_sb: "无聊的杀手" },
     "8410210302": { i18n_id: "8410210302", i18n_sb: "累计击杀玩家队伍中的曹操30次" },
     "351021201": { i18n_id: "351021201", i18n_sb: "救援二阶" },
@@ -21089,7 +20081,7 @@
     "351021801": { i18n_id: "351021801", i18n_sb: "救援2" },
     itemname600245: { i18n_id: "itemname600245", i18n_sb: "擎天冠" },
     itemdesc600248: { i18n_id: "itemdesc600248", i18n_sb: "贾诩觉醒升级材料碎片" },
-    itemdesc121021: { i18n_id: "itemdesc121021", i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91" },
+    itemdesc121021: { i18n_id: "itemdesc121021", i18n_sb: "神·赵云" },
     "4410102001": { i18n_id: "4410102001", i18n_sb: "料敌先机" },
     "8310120701": { i18n_id: "8310120701", i18n_sb: "觉醒图腾" },
     "8310120902": { i18n_id: "8310120902", i18n_sb: "使用觉醒太史慈战斗500次" },
@@ -21180,10 +20172,7 @@
     juexing_weiwudi_open01: { i18n_id: "juexing_weiwudi_open01", i18n_sb: "魏武帝突破至5星" },
     "16500403": { i18n_id: "16500403", i18n_sb: "我要是再聪明一点就好了！" },
     "8140010602": { i18n_id: "8140010602", i18n_sb: "觉醒魏武帝升级图腾至2层2段" },
-    itemdesc791220141: {
-        i18n_id: "itemdesc791220141",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791220141: { i18n_id: "itemdesc791220141", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     e_evolution_1011: { i18n_id: "e_evolution_1011", i18n_sb: "觉醒钥匙不足" },
     e_beauty_1009: { i18n_id: "e_beauty_1009", i18n_sb: "红颜巡游奖励配置异常" },
     e_beauty_1019: { i18n_id: "e_beauty_1019", i18n_sb: "红颜已满级" },
@@ -21192,7 +20181,7 @@
     itemdesc792798: { i18n_id: "itemdesc792798", i18n_sb: "内含徐晃魂魄*30" },
     itemdesc792801: { i18n_id: "itemdesc792801", i18n_sb: "内含诏令*100" },
     "4210210301": { i18n_id: "4210210301", i18n_sb: "绝对防御" },
-    "8210210301": { i18n_id: "8210210301", i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u7684\\u5FC3\\u613F" },
+    "8210210301": { i18n_id: "8210210301", i18n_sb: "神·赵云的心愿" },
     itemname600272: { i18n_id: "itemname600272", i18n_sb: "白虹剑" },
     itemdesc600273: { i18n_id: "itemdesc600273", i18n_sb: "吴大帝觉醒升级材料碎片" },
     juexing_zhaoliedi_open02: { i18n_id: "juexing_zhaoliedi_open02", i18n_sb: "昭烈帝神兵升至10重10锻" },
@@ -21226,10 +20215,7 @@
     ERROR_CODE_MOBILE_1005: { i18n_id: "ERROR_CODE_MOBILE_1005", i18n_sb: "更新手机号失败" },
     shenbing_desc_800041: { i18n_id: "shenbing_desc_800041", i18n_sb: "卑弥呼神兵" },
     "4210052201": { i18n_id: "4210052201", i18n_sb: "琴瑟和鸣" },
-    itemdesc791210051: {
-        i18n_id: "itemdesc791210051",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791210051: { i18n_id: "itemdesc791210051", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     juexing_huangyueying_open01: { i18n_id: "juexing_huangyueying_open01", i18n_sb: "黄月英突破至5星" },
     "331023501": { i18n_id: "331023501", i18n_sb: "琴音五阶" },
     "331023503": { i18n_id: "331023503", i18n_sb: "行动后 易触发" },
@@ -21294,7 +20280,7 @@
     "4110300701": { i18n_id: "4110300701", i18n_sb: "奇门遁甲" },
     "4110301701": { i18n_id: "4110301701", i18n_sb: "秦晋之好" },
     "4650080301": { i18n_id: "4650080301", i18n_sb: "被斩马下" },
-    itemname161002: { i18n_id: "itemname161002", i18n_sb: "\\u754C\\xB7\\u5218\\u5907" },
+    itemname161002: { i18n_id: "itemname161002", i18n_sb: "界·刘备" },
     itemname600304: { i18n_id: "itemname600304", i18n_sb: "新年活动积分" },
     itemdesc791610011: { i18n_id: "itemdesc791610011", i18n_sb: "烈焰赤兔马x1,灵芝x1000" },
     "8610010301": { i18n_id: "8610010301", i18n_sb: "心悦诚服" },
@@ -21318,7 +20304,7 @@
     "11201801": { i18n_id: "11201801", i18n_sb: "辛宪英" },
     "11301901": { i18n_id: "11301901", i18n_sb: "典满" },
     "16403601": { i18n_id: "16403601", i18n_sb: "青州长枪兵" },
-    "12101401": { i18n_id: "12101401", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999" },
+    "12101401": { i18n_id: "12101401", i18n_sb: "蜀·孙尚香" },
     "12201601": { i18n_id: "12201601", i18n_sb: "夏侯氏" },
     "12301401": { i18n_id: "12301401", i18n_sb: "孙乾" },
     "16401501": { i18n_id: "16401501", i18n_sb: "巴蜀长枪兵" },
@@ -21334,9 +20320,9 @@
     "13100401": { i18n_id: "13100401", i18n_sb: "周瑜" },
     "14201401": { i18n_id: "14201401", i18n_sb: "伏完" },
     "13101801": { i18n_id: "13101801", i18n_sb: "孙策" },
-    "18100701": { i18n_id: "18100701", i18n_sb: "\\u9B54\\xB7\\u590F\\u4FAF\\u60C7" },
+    "18100701": { i18n_id: "18100701", i18n_sb: "魔·夏侯惇" },
     "19100501": { i18n_id: "19100501", i18n_sb: "浣熊波波" },
-    "11100101": { i18n_id: "11100101", i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD" },
+    "11100101": { i18n_id: "11100101", i18n_sb: "神·曹操" },
     "14200301": { i18n_id: "14200301", i18n_sb: "公孙瓒" },
     "10000002": { i18n_id: "10000002", i18n_sb: "神秘武将的简介" },
     "11200802": {
@@ -21480,7 +20466,7 @@
     "24101002": { i18n_id: "24101002", i18n_sb: "三国时代，两军对阵的战场上，双方各派出一名大将于阵前决斗，力强者胜，胜者可以任意处置对方军队，无视对方人马。" },
     "24300202": {
         i18n_id: "24300202",
-        i18n_sb: "\\u51FA\\u81EA\\u6218\\u56FD\\xB7\\u90D1\\xB7\\u5217\\u5FA1\\u5BC7\\u300A\\u5217\\u5B50\\xB7\\u738B\\u745E\\u300B\\uFF1A\\u201C\\u5929\\u5730\\u7EC8\\u4E4E\\uFF1F\\u4E0E\\u6211\\u5055\\u7EC8\\u5362\\u91CD\\u7384\\u89E3\\uFF1A\\u201C\\u5927\\u5C0F\\u867D\\u6B8A\\uFF0C\\u540C\\u5F52\\u4E8E\\u5C3D\\u8033\\u3002\\u201D\\u8BF4\\u7684\\u5C31\\u662F\\u8981\\u4E48\\u4F60\\u6B7B\\uFF0C\\u8981\\u4E48\\u6211\\u6B7B\\uFF0C\\u8981\\u4E48\\u4E00\\u8D77\\u6B7B\\u3002\\u4E8E\\u795E\\u5C06\\u8868\\u793A\\u7B11\\u800C\\u4E0D\\u8BED\\u3002"
+        i18n_sb: "出自战国·郑·列御寇《列子·王瑞》：“天地终乎？与我偕终卢重玄解：“大小虽殊，同归于尽耳。”说的就是要么你死，要么我死，要么一起死。于神将表示笑而不语。"
     },
     "23101102": {
         i18n_id: "23101102",
@@ -21553,10 +20539,7 @@
     },
     "33100502": { i18n_id: "33100502", i18n_sb: "【克己】吕蒙隐藏实力一鸣惊人的策略，能将防御和智力蓄积起来以待后发，属被动技能，主防和智。装备后，可增加自身的防御和智力。" },
     "34101802": { i18n_id: "34101802", i18n_sb: "0" },
-    "35103402": {
-        i18n_id: "35103402",
-        i18n_sb: "\\u3010\\u6B66\\u795E\\u3011\\u795E\\xB7\\u5173\\u7FBD\\u65E0\\u4EBA\\u80FD\\u654C\\u7684\\u79D8\\u8BC0\\uFF0C\\u5C5E\\u88AB\\u52A8\\u6280\\u80FD\\uFF0C\\u4E3B\\u653B\\u548C\\u9632\\u3002\\u88C5\\u5907\\u540E\\uFF0C\\u53EF\\u540C\\u65F6\\u589E\\u52A0\\u81EA\\u8EAB\\u653B\\u51FB\\u529B\\u548C\\u9632\\u5FA1\\u529B\\u3002"
-    },
+    "35103402": { i18n_id: "35103402", i18n_sb: "【武神】神·关羽无人能敌的秘诀，属被动技能，主攻和防。装备后，可同时增加自身攻击力和防御力。" },
     "31102202": {
         i18n_id: "31102202",
         i18n_sb: "【鬼才】司马懿驾驭天命，将局势导向己方优势的智谋，属控场技能，主智。自己回合内击毙后必触发，可对敌方所有援军造成智力伤害并使之冻结一回合（无法上场战斗）。"
@@ -21838,10 +20821,10 @@
     itemname9164051: { i18n_id: "itemname9164051", i18n_sb: "黄巾刀兵魂魄" },
     itemname9164059: { i18n_id: "itemname9164059", i18n_sb: "冀州重斧兵魂魄" },
     itemname9171001: { i18n_id: "itemname9171001", i18n_sb: "兵长陆逊魂魄" },
-    itemname9181008: { i18n_id: "itemname9181008", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44" },
+    itemname9181008: { i18n_id: "itemname9181008", i18n_sb: "魔·黄盖魂魄" },
     itemname9122011: { i18n_id: "itemname9122011", i18n_sb: "孟获魂魄" },
     itemname9121020: { i18n_id: "itemname9121020", i18n_sb: "姜维魂魄" },
-    itemname9131002: { i18n_id: "itemname9131002", i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44" },
+    itemname9131002: { i18n_id: "itemname9131002", i18n_sb: "神·吕蒙魂魄" },
     itemname211001: { i18n_id: "itemname211001", i18n_sb: "方天画戟" },
     itemname211011: { i18n_id: "itemname211011", i18n_sb: "龙胆枪" },
     itemname213002: { i18n_id: "itemname213002", i18n_sb: "血轮" },
@@ -22011,14 +20994,8 @@
     itemname10533010: { i18n_id: "itemname10533010", i18n_sb: "第33章隐藏宝箱" },
     itemname10538010: { i18n_id: "itemname10538010", i18n_sb: "第38章隐藏宝箱" },
     itemname6200008: { i18n_id: "itemname6200008", i18n_sb: "龙胆枪宝箱(赵云缘分神级武器)" },
-    itemname6200018: {
-        i18n_id: "itemname6200018",
-        i18n_sb: "\\u6731\\u96C0\\u51A0\\u5B9D\\u7BB1(\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u7F18\\u5206\\u795E\\u7EA7\\u9632\\u5177)"
-    },
-    itemname6200028: {
-        i18n_id: "itemname6200028",
-        i18n_sb: "\\u6731\\u96C0\\u51A0\\u5B9D\\u7BB1(\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u7F18\\u5206\\u795E\\u7EA7\\u9632\\u5177)"
-    },
+    itemname6200018: { i18n_id: "itemname6200018", i18n_sb: "朱雀冠宝箱(蜀·孙尚香缘分神级防具)" },
+    itemname6200028: { i18n_id: "itemname6200028", i18n_sb: "朱雀冠宝箱(群·蔡文姬缘分神级防具)" },
     itemname6200038: { i18n_id: "itemname6200038", i18n_sb: "闪电宝箱(张角缘分神级锦囊)" },
     itemname6200048: { i18n_id: "itemname6200048", i18n_sb: "骅骝宝箱(华佗缘分神级坐骑)" },
     itemname6200058: { i18n_id: "itemname6200058", i18n_sb: "的卢宝箱(刘备缘分神级坐骑)" },
@@ -22054,10 +21031,7 @@
     itemname6300012: { i18n_id: "itemname6300012", i18n_sb: "诸葛连弩礼盒(甄姬缘分神级武器)" },
     itemname6300022: { i18n_id: "itemname6300022", i18n_sb: "玄武盾礼盒(华佗缘分神级防具)" },
     itemname6300032: { i18n_id: "itemname6300032", i18n_sb: "乐不思蜀礼盒(大乔缘分神级锦囊)" },
-    itemname6300042: {
-        i18n_id: "itemname6300042",
-        i18n_sb: "\\u7EDD\\u5F71\\u793C\\u76D2(\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u7F18\\u5206\\u795E\\u7EA7\\u5750\\u9A91)"
-    },
+    itemname6300042: { i18n_id: "itemname6300042", i18n_sb: "绝影礼盒(神·诸葛亮缘分神级坐骑)" },
     itemname6300052: { i18n_id: "itemname6300052", i18n_sb: "赤兔礼盒(貂蝉缘分神级坐骑)" },
     itemname6300062: { i18n_id: "itemname6300062", i18n_sb: "追风礼盒(凌统缘分神级坐骑)" },
     itemname6300072: { i18n_id: "itemname6300072", i18n_sb: "灰影礼盒（王异缘分金坐骑）" },
@@ -22073,12 +21047,12 @@
     itemname791582: { i18n_id: "itemname791582", i18n_sb: "马岱礼包" },
     itemname791592: { i18n_id: "itemname791592", i18n_sb: "元宝宝箱*7" },
     itemname791602: { i18n_id: "itemname791602", i18n_sb: "论坛公会B" },
-    itemname9121001: { i18n_id: "itemname9121001", i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44" },
+    itemname9121001: { i18n_id: "itemname9121001", i18n_sb: "神·关羽魂魄" },
     itemname791615: { i18n_id: "itemname791615", i18n_sb: "孙策魂魄*6" },
     itemname791625: { i18n_id: "itemname791625", i18n_sb: "论坛礼包B" },
     itemname791635: { i18n_id: "itemname791635", i18n_sb: "4月微信礼包档次二" },
     itemname791645: { i18n_id: "itemname791645", i18n_sb: "银装宝箱" },
-    itemname791646: { i18n_id: "itemname791646", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*1" },
+    itemname791646: { i18n_id: "itemname791646", i18n_sb: "魔·貂蝉魂魄*1" },
     itemname791656: { i18n_id: "itemname791656", i18n_sb: "神榜中级宝箱2倍" },
     itemname791666: { i18n_id: "itemname791666", i18n_sb: "神技能宝盒" },
     itemname791676: { i18n_id: "itemname791676", i18n_sb: "至尊神技能宝盒" },
@@ -22096,26 +21070,23 @@
     itemname791726: { i18n_id: "itemname791726", i18n_sb: "跨服天梯95积分礼包" },
     itemname600088: { i18n_id: "itemname600088", i18n_sb: "月饼" },
     itemname791744: { i18n_id: "itemname791744", i18n_sb: "巅峰之战450积分礼包" },
-    itemname791754: { i18n_id: "itemname791754", i18n_sb: "\\u9752\\u9F99\\u94E0\\xD71" },
-    itemname791764: { i18n_id: "itemname791764", i18n_sb: "\\u7075\\u829D\\xD72500" },
-    itemname791774: { i18n_id: "itemname791774", i18n_sb: "\\u5143\\u5B9D\\xD7800" },
-    itemname791784: { i18n_id: "itemname791784", i18n_sb: "\\u7075\\u829D\\xD74500" },
+    itemname791754: { i18n_id: "itemname791754", i18n_sb: "青龙铠×1" },
+    itemname791764: { i18n_id: "itemname791764", i18n_sb: "灵芝×2500" },
+    itemname791774: { i18n_id: "itemname791774", i18n_sb: "元宝×800" },
+    itemname791784: { i18n_id: "itemname791784", i18n_sb: "灵芝×4500" },
     itemname21100001: { i18n_id: "itemname21100001", i18n_sb: "女神貂蝉皮肤" },
     itemname791803: { i18n_id: "itemname791803", i18n_sb: "雪国之宝匣*1" },
     itemname791791: { i18n_id: "itemname791791", i18n_sb: "女神文姬礼包" },
     itemname791801: { i18n_id: "itemname791801", i18n_sb: "女神月英皮肤礼包" },
-    itemname791809: { i18n_id: "itemname791809", i18n_sb: "\\u4E08\\u516B\\u86C7\\u77DB\\xD71" },
+    itemname791809: { i18n_id: "itemname791809", i18n_sb: "丈八蛇矛×1" },
     itemname546022: { i18n_id: "itemname546022", i18n_sb: "第46章第2个宝箱" },
     itemname549023: { i18n_id: "itemname549023", i18n_sb: "第49章第3个宝箱" },
     itemname10549010: { i18n_id: "itemname10549010", i18n_sb: "第49章隐藏宝箱" },
     itemname791820: { i18n_id: "itemname791820", i18n_sb: "谢礼2(深渊)" },
     itemname791830: { i18n_id: "itemname791830", i18n_sb: "谢礼6(普通)" },
     itemname791836: { i18n_id: "itemname791836", i18n_sb: "至尊会员15尊享礼包" },
-    itemname600109: { i18n_id: "itemname600109", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD75470" },
-    itemname7710006: {
-        i18n_id: "itemname7710006",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*1"
-    },
+    itemname600109: { i18n_id: "itemname600109", i18n_sb: "主公经验×5470" },
+    itemname7710006: { i18n_id: "itemname7710006", i18n_sb: "神秘商品之魔·董卓魂魄*1" },
     itemname7710016: { i18n_id: "itemname7710016", i18n_sb: "神秘商品之马超魂魄*1" },
     itemname7710026: { i18n_id: "itemname7710026", i18n_sb: "神秘商品之甘宁魂魄*1" },
     itemname7710036: { i18n_id: "itemname7710036", i18n_sb: "神秘商品之庞统魂魄*1" },
@@ -22156,10 +21127,7 @@
     itemname7720198: { i18n_id: "itemname7720198", i18n_sb: "神秘商品之7720198" },
     itemname7730004: { i18n_id: "itemname7730004", i18n_sb: "神秘商品之看破残卷" },
     itemname7730014: { i18n_id: "itemname7730014", i18n_sb: "神秘商品之马术残卷" },
-    itemname5710002: {
-        i18n_id: "itemname5710002",
-        i18n_sb: "\\u5546\\u57CE\\u793C\\u5305\\u4E4B\\u5434\\xB7\\u5B59\\u5C1A\\u9999"
-    },
+    itemname5710002: { i18n_id: "itemname5710002", i18n_sb: "商城礼包之吴·孙尚香" },
     itemname5730005: { i18n_id: "itemname5730005", i18n_sb: "商城礼包之天香" },
     itemname5740004: { i18n_id: "itemname5740004", i18n_sb: "商城礼包之女神祝融" },
     itemdesc600001: { i18n_id: "itemdesc600001", i18n_sb: "有机会获得神装、神装碎片、银两等各种宝物！" },
@@ -22320,124 +21288,37 @@
     itemdesc164023: { i18n_id: "itemdesc164023", i18n_sb: "西凉斧兵" },
     itemdesc141006: { i18n_id: "itemdesc141006", i18n_sb: "董卓" },
     itemdesc89111003: { i18n_id: "itemdesc89111003", i18n_sb: "曹操道具" },
-    itemdesc79111021: {
-        i18n_id: "itemdesc79111021",
-        i18n_sb: "\\u9E92\\u9E9F\\u888D\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79112021: {
-        i18n_id: "itemdesc79112021",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u90ED\\u5609\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79164008: {
-        i18n_id: "itemdesc79164008",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u67AA\\u5175\\xD71,\\u9A86\\u9A7C\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164039: {
-        i18n_id: "itemdesc79164039",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6BDB\\u9A74\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121016: {
-        i18n_id: "itemdesc79121016",
-        i18n_sb: "\\u9E92\\u9E9F\\u888D\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79122019: {
-        i18n_id: "itemdesc79122019",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u6C99\\u91CC\\u98DE\\u788E\\u7247\\xD72"
-    },
-    itemdesc79123015: {
-        i18n_id: "itemdesc79123015",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u90ED\\u5609\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79164019: {
-        i18n_id: "itemdesc79164019",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C34\\u6DF9\\u4E03\\u519B\\u788E\\u7247\\xD71"
-    },
-    itemdesc79132012: {
-        i18n_id: "itemdesc79132012",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD72"
-    },
-    itemdesc79133009: {
-        i18n_id: "itemdesc79133009",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5B59\\u6743\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79141002: {
-        i18n_id: "itemdesc79141002",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD74,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79142005: {
-        i18n_id: "itemdesc79142005",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u9A6C\\u8D85\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79142022: {
-        i18n_id: "itemdesc79142022",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u8881\\u7ECD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164051: {
-        i18n_id: "itemdesc79164051",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9EC4\\u5DFE\\u9524\\u5175\\xD71,\\u9ED1\\u9B03\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164059: {
-        i18n_id: "itemdesc79164059",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5180\\u5DDE\\u91CD\\u9A91\\u5175\\xD71,\\u6BDB\\u9A74\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121002: { i18n_id: "itemdesc79121002", i18n_sb: "\\u7075\\u829D\\xD71000,\\u4E03\\u661F\\xD71" },
-    itemdesc79121008: {
-        i18n_id: "itemdesc79121008",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79111013: {
-        i18n_id: "itemdesc79111013",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79131004: {
-        i18n_id: "itemdesc79131004",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD74,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79181005: {
-        i18n_id: "itemdesc79181005",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79121017: {
-        i18n_id: "itemdesc79121017",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79171012: {
-        i18n_id: "itemdesc79171012",
-        i18n_sb: "\\u4FEE\\u7F57\\u8D64\\u5154\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79114001: {
-        i18n_id: "itemdesc79114001",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc790223: {
-        i18n_id: "itemdesc790223",
-        i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7300\\uFF0C\\u6BCF\\u65E5\\u53EF\\u8D2D\\u4E705\\u6B21\\u3002"
-    },
-    itemdesc790233: {
-        i18n_id: "itemdesc790233",
-        i18n_sb: "\\u5185\\u542B\\u8D2F\\u77F3\\u65A7\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790243: {
-        i18n_id: "itemdesc790243",
-        i18n_sb: "\\u5185\\u542B\\u9752\\u9F99\\u94E0\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790253: {
-        i18n_id: "itemdesc790253",
-        i18n_sb: "\\u5185\\u542B\\u7167\\u591C\\u7389\\u72EE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790263: {
-        i18n_id: "itemdesc790263",
-        i18n_sb: "\\u5185\\u542B\\u65E0\\u4E2D\\u751F\\u6709\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790273: {
-        i18n_id: "itemdesc790273",
-        i18n_sb: "\\u5185\\u542B\\u5FEB\\u822A\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790283: {
-        i18n_id: "itemdesc790283",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u4E4C\\u4E91\\u8E0F\\u96EA\\xD71"
-    },
-    itemdesc790293: { i18n_id: "itemdesc790293", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7100" },
+    itemdesc79111021: { i18n_id: "itemdesc79111021", i18n_sb: "麒麟袍碎片×3,灵芝×500" },
+    itemdesc79112021: { i18n_id: "itemdesc79112021", i18n_sb: "元宝×60,郭嘉魂魄×4" },
+    itemdesc79164008: { i18n_id: "itemdesc79164008", i18n_sb: "元宝×20,青州枪兵×1,骆驼碎片×1" },
+    itemdesc79164039: { i18n_id: "itemdesc79164039", i18n_sb: "元宝×20,毛驴碎片×1" },
+    itemdesc79121016: { i18n_id: "itemdesc79121016", i18n_sb: "麒麟袍碎片×3,灵芝×500" },
+    itemdesc79122019: { i18n_id: "itemdesc79122019", i18n_sb: "元宝×60,沙里飞碎片×2" },
+    itemdesc79123015: { i18n_id: "itemdesc79123015", i18n_sb: "元宝×60,郭嘉魂魄×4" },
+    itemdesc79164019: { i18n_id: "itemdesc79164019", i18n_sb: "元宝×20,水淹七军碎片×1" },
+    itemdesc79132012: { i18n_id: "itemdesc79132012", i18n_sb: "元宝×60,木牛流马碎片×2" },
+    itemdesc79133009: { i18n_id: "itemdesc79133009", i18n_sb: "元宝×40,孙权魂魄×3" },
+    itemdesc79141002: { i18n_id: "itemdesc79141002", i18n_sb: "神·周瑜魂魄×4,灵芝×1000" },
+    itemdesc79142005: { i18n_id: "itemdesc79142005", i18n_sb: "元宝×60,马超魂魄×4" },
+    itemdesc79142022: { i18n_id: "itemdesc79142022", i18n_sb: "元宝×40,袁绍魂魄×3" },
+    itemdesc79164051: { i18n_id: "itemdesc79164051", i18n_sb: "元宝×20,黄巾锤兵×1,黑鬃碎片×1" },
+    itemdesc79164059: { i18n_id: "itemdesc79164059", i18n_sb: "元宝×20,冀州重骑兵×1,毛驴碎片×1" },
+    itemdesc79121002: { i18n_id: "itemdesc79121002", i18n_sb: "灵芝×1000,七星×1" },
+    itemdesc79121008: { i18n_id: "itemdesc79121008", i18n_sb: "神·诸葛亮魂魄×3,灵芝×1000" },
+    itemdesc79111013: { i18n_id: "itemdesc79111013", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79131004: { i18n_id: "itemdesc79131004", i18n_sb: "神·关羽魂魄×4,灵芝×1000" },
+    itemdesc79181005: { i18n_id: "itemdesc79181005", i18n_sb: "神·吕布魂魄×3,灵芝×1000" },
+    itemdesc79121017: { i18n_id: "itemdesc79121017", i18n_sb: "神·吕布魂魄×3,灵芝×1000" },
+    itemdesc79171012: { i18n_id: "itemdesc79171012", i18n_sb: "修罗赤兔碎片×3,灵芝×1000" },
+    itemdesc79114001: { i18n_id: "itemdesc79114001", i18n_sb: "神·吕蒙魂魄×3,灵芝×1000" },
+    itemdesc790223: { i18n_id: "itemdesc790223", i18n_sb: "内含灵芝×300，每日可购买5次。" },
+    itemdesc790233: { i18n_id: "itemdesc790233", i18n_sb: "内含贯石斧碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790243: { i18n_id: "itemdesc790243", i18n_sb: "内含青龙铠碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790253: { i18n_id: "itemdesc790253", i18n_sb: "内含照夜玉狮碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790263: { i18n_id: "itemdesc790263", i18n_sb: "内含无中生有碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790273: { i18n_id: "itemdesc790273", i18n_sb: "内含快航碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790283: { i18n_id: "itemdesc790283", i18n_sb: "打开可获得：乌云踏雪×1" },
+    itemdesc790293: { i18n_id: "itemdesc790293", i18n_sb: "内含灵芝×100" },
     itemdesc791001: { i18n_id: "itemdesc791001", i18n_sb: " " },
     itemdesc790219: { i18n_id: "itemdesc790219", i18n_sb: "含有于吉*1" },
     itemdesc791017: { i18n_id: "itemdesc791017", i18n_sb: "内含 30个金宝箱 10个金钥匙" },
@@ -22516,41 +21397,17 @@
     itemdesc790426: { i18n_id: "itemdesc790426", i18n_sb: "元旦宝箱" },
     itemdesc791421: { i18n_id: "itemdesc791421", i18n_sb: "铁面罩礼包" },
     itemdesc791431: { i18n_id: "itemdesc791431", i18n_sb: "三国杀活动1" },
-    itemdesc790431: {
-        i18n_id: "itemdesc790431",
-        i18n_sb: "\\u5185\\u542B\\u4E08\\u516B\\u86C7\\u77DB\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790441: {
-        i18n_id: "itemdesc790441",
-        i18n_sb: "\\u5185\\u542B\\u516B\\u5366\\u9635\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790451: {
-        i18n_id: "itemdesc790451",
-        i18n_sb: "\\u5185\\u542B\\u7EDD\\u5F71\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790461: {
-        i18n_id: "itemdesc790461",
-        i18n_sb: "\\u5185\\u542B\\u5357\\u86EE\\u5165\\u4FB5\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790471: {
-        i18n_id: "itemdesc790471",
-        i18n_sb: "\\u5185\\u542B\\u706B\\u653B\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc710028: {
-        i18n_id: "itemdesc710028",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u9752\\u51A5\\xD71\\uFF0C\\u7CBE\\u94C1\\u76FE\\xD71\\uFF0C\\u843D\\u96F7\\xD71"
-    },
-    itemdesc791439: {
-        i18n_id: "itemdesc791439",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5305\\u5B50\\xD71 \\u7EA2\\u8336\\xD71 \\u91D1\\u94A5\\u5319\\xD75 \\u91D1\\u94A5\\u5319\\xD75"
-    },
-    itemdesc791449: {
-        i18n_id: "itemdesc791449",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5305\\u5B50\\xD73 \\u7EA2\\u8336\\xD73 \\u91D1\\u7BB1\\u5B5020 \\u91D1\\u94A5\\u5319\\xD720 300\\u5143\\u5B9D"
-    },
+    itemdesc790431: { i18n_id: "itemdesc790431", i18n_sb: "内含丈八蛇矛碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790441: { i18n_id: "itemdesc790441", i18n_sb: "内含八卦阵碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790451: { i18n_id: "itemdesc790451", i18n_sb: "内含绝影碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790461: { i18n_id: "itemdesc790461", i18n_sb: "内含南蛮入侵碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790471: { i18n_id: "itemdesc790471", i18n_sb: "内含火攻碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc710028: { i18n_id: "itemdesc710028", i18n_sb: "打开可获得：青冥×1，精铁盾×1，落雷×1" },
+    itemdesc791439: { i18n_id: "itemdesc791439", i18n_sb: "打开可获得：包子×1 红茶×1 金钥匙×5 金钥匙×5" },
+    itemdesc791449: { i18n_id: "itemdesc791449", i18n_sb: "打开可获得：包子×3 红茶×3 金箱子20 金钥匙×20 300元宝" },
     itemdesc600051: { i18n_id: "itemdesc600051", i18n_sb: "恢复1点精力" },
     itemdesc791467: { i18n_id: "itemdesc791467", i18n_sb: "278个元宝" },
-    itemdesc791477: { i18n_id: "itemdesc791477", i18n_sb: "\\u5185\\u542B\\u5143\\u5B9D\\xD778" },
+    itemdesc791477: { i18n_id: "itemdesc791477", i18n_sb: "内含元宝×78" },
     itemdesc791487: { i18n_id: "itemdesc791487", i18n_sb: "【经验神书】:用于技能升级，使用后，可获得大量技能经验。" },
     itemdesc40122023: { i18n_id: "itemdesc40122023", i18n_sb: "122023" },
     itemdesc40121013: { i18n_id: "itemdesc40121013", i18n_sb: "121013" },
@@ -22584,28 +21441,19 @@
     itemdesc791573: { i18n_id: "itemdesc791573", i18n_sb: "L1G3" },
     itemdesc791583: { i18n_id: "itemdesc791583", i18n_sb: "L1ZC（之前的礼包SSZLZL新生成）" },
     itemdesc791593: { i18n_id: "itemdesc791593", i18n_sb: "打开可获得：元宝宝箱钥匙*2" },
-    itemdesc791603: {
-        i18n_id: "itemdesc791603",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5143\\u5B9D\\xD750\\uFF0C\\u6311\\u6218\\u6587\\u4E66\\xD75\\uFF0C\\u8D85\\u7EA7\\u4F20\\u627F\\u7B26\\xD71"
-    },
-    itemdesc9141001: { i18n_id: "itemdesc9141001", i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44" },
+    itemdesc791603: { i18n_id: "itemdesc791603", i18n_sb: "打开可获得：元宝×50，挑战文书×5，超级传承符×1" },
+    itemdesc9141001: { i18n_id: "itemdesc9141001", i18n_sb: "神·吕布魂魄" },
     itemdesc791616: { i18n_id: "itemdesc791616", i18n_sb: "内含孙策魂魄*4" },
     itemdesc791626: { i18n_id: "itemdesc791626", i18n_sb: "500灵芝" },
-    itemdesc791636: {
-        i18n_id: "itemdesc791636",
-        i18n_sb: "\\u91D1\\u7BB1\\xD715\\uFF0C\\u94F6\\u7BB1\\xD715\\uFF0C\\u94DC\\u7BB1\\xD715\\uFF0C\\u6311\\u6218\\u6587\\u4E66\\xD715\\uFF0C\\u5143\\u5B9D\\xD750"
-    },
+    itemdesc791636: { i18n_id: "itemdesc791636", i18n_sb: "金箱×15，银箱×15，铜箱×15，挑战文书×15，元宝×50" },
     itemdesc6300080: { i18n_id: "itemdesc6300080", i18n_sb: "可以获得古锭刀碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
-    itemdesc791647: { i18n_id: "itemdesc791647", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*2" },
+    itemdesc791647: { i18n_id: "itemdesc791647", i18n_sb: "内含魔·貂蝉魂魄*2" },
     itemdesc791657: { i18n_id: "itemdesc791657", i18n_sb: "神榜高级宝箱2倍" },
     itemdesc791667: { i18n_id: "itemdesc791667", i18n_sb: "可以获得金级被动技能残卷，稀有神级被动技能残卷其中一项" },
     itemdesc194001: { i18n_id: "itemdesc194001", i18n_sb: "倒霉呆呆" },
     itemdesc791681: { i18n_id: "itemdesc791681", i18n_sb: "打开可获得浣熊波波" },
     itemdesc791691: { i18n_id: "itemdesc791691", i18n_sb: "城之宝匣*400" },
-    itemdesc600071: {
-        i18n_id: "itemdesc600071",
-        i18n_sb: "\\u5185\\u542B\\u52FE\\u7389\\xD73\\uFF0C\\u5929\\u68AF\\u6311\\u6218\\u8D5B\\u7ED3\\u675F\\u540E\\u82E5\\u82F9\\u679C\\u533A\\u73A9\\u5BB6\\u83B7\\u80DC\\u53EF\\u4EE5\\u83B7\\u5F97\\u8FD4\\u5229\\u5143\\u5B9D"
-    },
+    itemdesc600071: { i18n_id: "itemdesc600071", i18n_sb: "内含勾玉×3，天梯挑战赛结束后若苹果区玩家获胜可以获得返利元宝" },
     itemdesc791707: { i18n_id: "itemdesc791707", i18n_sb: "100元宝、1包子、1红茶" },
     itemdesc542022: { i18n_id: "itemdesc542022", i18n_sb: "第42章第2个宝箱" },
     itemdesc10541009: { i18n_id: "itemdesc10541009", i18n_sb: "第41章精英宝箱" },
@@ -22617,44 +21465,23 @@
     itemdesc791727: { i18n_id: "itemdesc791727", i18n_sb: "打开可获得18个1级宝石箱" },
     itemdesc791735: { i18n_id: "itemdesc791735", i18n_sb: "打开可获得：勾玉*5、经验神书*5" },
     itemdesc791745: { i18n_id: "itemdesc791745", i18n_sb: "打开可获得196个1级宝石箱" },
-    itemdesc791755: {
-        i18n_id: "itemdesc791755",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5173\\u7FBD\\u9B42\\u9B44\\xD7270\\u3001\\u7075\\u829D\\xD71500"
-    },
-    itemdesc791765: { i18n_id: "itemdesc791765", i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9A6C\\u672F\\xD71" },
-    itemdesc791775: {
-        i18n_id: "itemdesc791775",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5143\\u5B9D\\xD71000"
-    },
+    itemdesc791755: { i18n_id: "itemdesc791755", i18n_sb: "打开可获得关羽魂魄×270、灵芝×1500" },
+    itemdesc791765: { i18n_id: "itemdesc791765", i18n_sb: "打开可获得马术×1" },
+    itemdesc791775: { i18n_id: "itemdesc791775", i18n_sb: "打开可获得元宝×1000" },
     itemdesc11100001: { i18n_id: "itemdesc11100001", i18n_sb: "女神貂蝉" },
     itemdesc21100002: { i18n_id: "itemdesc21100002", i18n_sb: "女神甄姬皮肤" },
     itemdesc9171004: { i18n_id: "itemdesc9171004", i18n_sb: "冰雪春华魂魄" },
-    itemdesc791792: {
-        i18n_id: "itemdesc791792",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u6708\\u82F1\\xD71"
-    },
-    itemdesc791802: {
-        i18n_id: "itemdesc791802",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u5C1A\\u9999\\u76AE\\u80A4\\xD71"
-    },
-    itemdesc791810: {
-        i18n_id: "itemdesc791810",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5F20\\u98DE\\u9B42\\u9B44\\xD715\\u3001\\u7075\\u829D\\xD7100\\u3001\\u7ECF\\u9A8C\\u91D1\\u4E66\\xD710\\u3001\\u7CBE\\u70BC\\u6750\\u6599\\u9752\\u51A5\\xD78"
-    },
+    itemdesc791792: { i18n_id: "itemdesc791792", i18n_sb: "打开可获得女神月英×1" },
+    itemdesc791802: { i18n_id: "itemdesc791802", i18n_sb: "打开可获得女神尚香皮肤×1" },
+    itemdesc791810: { i18n_id: "itemdesc791810", i18n_sb: "打开可获得张飞魂魄×15、灵芝×100、经验金书×10、精炼材料青冥×8" },
     itemdesc546023: { i18n_id: "itemdesc546023", i18n_sb: "第41章第3个宝箱" },
     itemdesc10545009: { i18n_id: "itemdesc10545009", i18n_sb: "第40章精英宝箱" },
     itemdesc791812: { i18n_id: "itemdesc791812", i18n_sb: "元旦礼盒" },
-    itemdesc791821: {
-        i18n_id: "itemdesc791821",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD78\\u3001\\u52FE\\u7389\\xD72\\u3001\\u864E\\u775B\\u77F3\\xD73"
-    },
-    itemdesc791831: {
-        i18n_id: "itemdesc791831",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD725\\u3001\\u52FE\\u7389\\xD76\\u3001\\u864E\\u775B\\u77F3\\xD715"
-    },
+    itemdesc791821: { i18n_id: "itemdesc791821", i18n_sb: "打开可获得灵芝×8、勾玉×2、虎睛石×3" },
+    itemdesc791831: { i18n_id: "itemdesc791831", i18n_sb: "打开可获得灵芝×25、勾玉×6、虎睛石×15" },
     itemdesc600100: { i18n_id: "itemdesc600100", i18n_sb: "此物使用后可增加10次天梯挑战机会，可在商城购买，或开宝箱获得。" },
     itemdesc600110: { i18n_id: "itemdesc600110", i18n_sb: "使用后主公经验可提升5740" },
-    itemdesc7710007: { i18n_id: "itemdesc7710007", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*1" },
+    itemdesc7710007: { i18n_id: "itemdesc7710007", i18n_sb: "魔·张角魂魄*1" },
     itemdesc7710017: { i18n_id: "itemdesc7710017", i18n_sb: "小乔魂魄*1" },
     itemdesc7710027: { i18n_id: "itemdesc7710027", i18n_sb: "李典魂魄*1" },
     itemdesc7710037: { i18n_id: "itemdesc7710037", i18n_sb: "张郃魂魄*1" },
@@ -22894,7 +21721,7 @@
     dialogname507003023: { i18n_id: "dialogname507003023", i18n_sb: "$UserName" },
     dialogname507006014: { i18n_id: "dialogname507006014", i18n_sb: "凌操" },
     dialogname507011012: { i18n_id: "dialogname507011012", i18n_sb: "$UserName" },
-    dialogname507012021: { i18n_id: "dialogname507012021", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname507012021: { i18n_id: "dialogname507012021", i18n_sb: "吴·孙尚香" },
     dialogname508004011: { i18n_id: "dialogname508004011", i18n_sb: "$UserName" },
     dialogname508008011: { i18n_id: "dialogname508008011", i18n_sb: "陆绩" },
     dialogname508010012: { i18n_id: "dialogname508010012", i18n_sb: "$UserName" },
@@ -22933,7 +21760,7 @@
     dialogname517008012: { i18n_id: "dialogname517008012", i18n_sb: "$UserName" },
     dialogname517015011: { i18n_id: "dialogname517015011", i18n_sb: "$UserName" },
     dialogname517016021: { i18n_id: "dialogname517016021", i18n_sb: "吕玲绮" },
-    dialogname517017024: { i18n_id: "dialogname517017024", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC" },
+    dialogname517017024: { i18n_id: "dialogname517017024", i18n_sb: "群·蔡文姬" },
     dialogname518008012: { i18n_id: "dialogname518008012", i18n_sb: "张宝" },
     dialogname518015011: { i18n_id: "dialogname518015011", i18n_sb: "波才" },
     dialogname518016016: { i18n_id: "dialogname518016016", i18n_sb: "诸葛亮" },
@@ -23009,7 +21836,7 @@
     dialogname530008012: { i18n_id: "dialogname530008012", i18n_sb: "$UserName" },
     dialogname530012011: { i18n_id: "dialogname530012011", i18n_sb: "侍女队长" },
     dialogname530016013: { i18n_id: "dialogname530016013", i18n_sb: "大乔" },
-    dialogname530019011: { i18n_id: "dialogname530019011", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname530019011: { i18n_id: "dialogname530019011", i18n_sb: "吴·孙尚香" },
     dialogname530020022: { i18n_id: "dialogname530020022", i18n_sb: "孙权" },
     dialogname531004018: { i18n_id: "dialogname531004018", i18n_sb: "黄盖" },
     dialogname531008021: { i18n_id: "dialogname531008021", i18n_sb: "太史慈" },
@@ -23427,7 +22254,7 @@
     "8210040101": { i18n_id: "8210040101", i18n_sb: "进击的勇者" },
     "8210070301": { i18n_id: "8210070301", i18n_sb: "张飞的心愿" },
     "8210110101": { i18n_id: "8210110101", i18n_sb: "天赋异禀" },
-    "8210140301": { i18n_id: "8210140301", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u7684\\u5FC3\\u613F" },
+    "8210140301": { i18n_id: "8210140301", i18n_sb: "蜀·孙尚香的心愿" },
     "8210180101": { i18n_id: "8210180101", i18n_sb: "关银屏的心愿" },
     "8220070301": { i18n_id: "8220070301", i18n_sb: "心悦诚服" },
     "8220100201": { i18n_id: "8220100201", i18n_sb: "廖化的心愿" },
@@ -23518,7 +22345,7 @@
     "8430180202": { i18n_id: "8430180202", i18n_sb: "累计合成神品质技能书4次" },
     "8640560102": { i18n_id: "8640560102", i18n_sb: "3星通关郭嘉投主10" },
     "8640270102": { i18n_id: "8640270102", i18n_sb: "累计修炼60次" },
-    "8310010402": { i18n_id: "8310010402", i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u7A81\\u7834\\u81F35\\u661F" },
+    "8310010402": { i18n_id: "8310010402", i18n_sb: "神·周瑜突破至5星" },
     "8430210202": { i18n_id: "8430210202", i18n_sb: "累计登陆天数达到26天" },
     "8110140202": { i18n_id: "8110140202", i18n_sb: "天赋技能等级达到20级" },
     "8310130402": { i18n_id: "8310130402", i18n_sb: "过关斩将神榜通过35关" },
@@ -23534,7 +22361,7 @@
     "8410010202": { i18n_id: "8410010202", i18n_sb: "修炼武将攻属性至6500" },
     "8210050402": { i18n_id: "8210050402", i18n_sb: "臣服诸葛亮" },
     "8110050202": { i18n_id: "8110050202", i18n_sb: "修炼武将智属性至6000" },
-    "8710100402": { i18n_id: "8710100402", i18n_sb: "\\u81E3\\u670D\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    "8710100402": { i18n_id: "8710100402", i18n_sb: "臣服吴·孙尚香" },
     "8110170202": { i18n_id: "8110170202", i18n_sb: "修炼武将攻属性至5500" },
     "8110150402": { i18n_id: "8110150402", i18n_sb: "修炼武将攻属性至5500" },
     "8710110202": { i18n_id: "8710110202", i18n_sb: "修炼武将攻属性至5000" },
@@ -24048,7 +22875,7 @@
     robot_4271: { i18n_id: "robot_4271", i18n_sb: "中级群将队" },
     robot_4281: { i18n_id: "robot_4281", i18n_sb: "低级智力队" },
     robot_4291: { i18n_id: "robot_4291", i18n_sb: "王异队" },
-    robot_4301: { i18n_id: "robot_4301", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u961F" },
+    robot_4301: { i18n_id: "robot_4301", i18n_sb: "群·蔡文姬队" },
     robot_4311: { i18n_id: "robot_4311", i18n_sb: "郭嘉队" },
     robot_4321: { i18n_id: "robot_4321", i18n_sb: "甘宁队" },
     robot_4331: { i18n_id: "robot_4331", i18n_sb: "鸿运当头的关心" },
@@ -24307,7 +23134,7 @@
     "1070310012": { i18n_id: "1070310012", i18n_sb: "主公，您还未达到领取条件！" },
     "1070410001": { i18n_id: "1070410001", i18n_sb: "去对酒获得武将！" },
     "1070610007": { i18n_id: "1070610007", i18n_sb: "强化" },
-    "1070610018": { i18n_id: "1070610018", i18n_sb: "\\xD72" },
+    "1070610018": { i18n_id: "1070610018", i18n_sb: "×2" },
     "1070610029": { i18n_id: "1070610029", i18n_sb: "服用" },
     "1070610039": { i18n_id: "1070610039", i18n_sb: "重播" },
     "1070610049": { i18n_id: "1070610049", i18n_sb: "排名" },
@@ -24482,7 +23309,7 @@
     interService_enroll: { i18n_id: "interService_enroll", i18n_sb: "报名" },
     interService_Instruction: {
         i18n_id: "interService_Instruction",
-        i18n_sb: "1. \\u4E3B\\u516C\\u7B49\\u7EA7\\u8FBE\\u523040\\u7EA7\\u65F6\\uFF0C\\u53EF\\u53C2\\u52A0\\u8DE8\\u670D\\u4E89\\u9738\\u8D5B\\uFF1B\\n2. \\u672C\\u5C4A\\u8DE8\\u670D\\u4E89\\u9738\\u8D5B\\u5468\\u671F16\\u5929\\uFF1B\\u6BD4\\u8D5B\\u7ED3\\u675F\\u540E\\uFF0C\\u6709\\u4E00\\u6BB5\\u95F4\\u6B47\\u671F\\uFF0C\\u518D\\u4E3E\\u529E\\u4E0B\\u5C4A\\u8DE8\\u670D\\u4E89\\u9738\\u8D5B\\uFF0C\\u4E0B\\u5C4A\\u65F6\\u95F4\\u656C\\u8BF7\\u671F\\u5F85\\uFF1B\\n3. \\u6BD4\\u8D5B\\u91C7\\u7528\\u79EF\\u5206\\u5236\\uFF0C\\u6839\\u636E\\u7ED3\\u675F\\u65F6\\u73A9\\u5BB6\\u7684\\u79EF\\u5206\\u6392\\u884C\\uFF0C\\u9009\\u51FA\\u524D100\\u540D\\u73A9\\u5BB6\\u8FDB\\u5165\\u79EF\\u5206\\u6392\\u884C\\u699C\\uFF1B\\n4. \\u6BD4\\u8D5B\\u5F00\\u59CB\\u540E\\uFF0C\\u7CFB\\u7EDF\\u4F1A\\u6839\\u636E\\u73A9\\u5BB6\\u5B9E\\u529B\\u8FDB\\u884C\\u5339\\u914D\\uFF0C\\u4ECE\\u5404\\u4E2A\\u670D\\u52A1\\u5668\\u4E2D\\u627E\\u51FA2\\u4E2A\\u5BF9\\u624B\\uFF0C\\u73A9\\u5BB6\\u53EF\\u4EE5\\u9009\\u62E9\\u4EFB\\u610F\\u4E00\\u4E2A\\u8FDB\\u884C\\u6311\\u6218\\uFF0C\\u65E0\\u8BBA\\u8F93\\u8D62\\uFF0C\\u7CFB\\u7EDF\\u90FD\\u4F1A\\u81EA\\u52A8\\u5237\\u65B0\\u4E00\\u6B21\\u5BF9\\u624B\\uFF1B\\n5. \\u73A9\\u5BB6\\u4E3B\\u52A8\\u653B\\u51FB\\uFF0C\\u8D62\\u4E86\\u53EF\\u6839\\u636E\\u8FDE\\u80DC\\u6570\\uFF0C\\u83B7\\u5F97\\u4E0D\\u540C\\u79EF\\u5206\\uFF1B\\u8F93\\u4E86\\u53EA\\u5F971\\u79EF\\u5206\\uFF1B\\n6. \\u73A9\\u5BB6\\u4E3B\\u52A8\\u653B\\u51FB\\u5931\\u8D25\\u540E\\uFF0C\\u8FDE\\u80DC\\u7ACB\\u5373\\u6E05\\u96F6\\uFF1B\\u4E14\\u5F53\\u65E5\\u8FDE\\u80DC\\u4F1A\\u5728\\u6B21\\u65E50\\u65F6\\u6E05\\u96F6\\uFF1B\\n7. \\u73A9\\u5BB6\\u88AB\\u653B\\u51FB\\uFF0C\\u8D62\\u4E86\\u4E0D\\u83B7\\u5F97\\u79EF\\u5206\\uFF1B\\u8F93\\u4E86\\u4E0D\\u6263\\u9664\\u79EF\\u5206\\uFF1B\\n8. \\u5173\\u4E8E\\u8FDE\\u80DC\\uFF1A\\u8FDE\\u80DC\\u5C40\\u6570\\u8D8A\\u591A\\uFF0C\\u83B7\\u5F97\\u7684\\u79EF\\u5206\\u8D8A\\u9AD8\\uFF1A\\n\\u8F931\\u573A\\uFF1A\\u79EF\\u5206+1\\uFF1B\\n1\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+2\\uFF1B\\n2\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+3\\uFF1B\\n3\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+4\\uFF1B\\n4\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+5\\uFF1B\\n5\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+6\\uFF1B\\n6\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+7\\uFF1B\\n7\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+8\\uFF1B\\n8\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+9\\uFF1B\\n9\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+10\\uFF1B\\n10\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+10\\uFF1B\\n11\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+10\\uFF1B\\n\\u2026\\u2026\\n20\\u8FDE\\u80DC\\uFF1A\\u79EF\\u5206+10\\uFF1B\\n9. \\u73A9\\u5BB6\\u6BCF\\u65E5\\u6700\\u9AD8\\u8FDE\\u80DC\\u6570\\u4E3A20\\u8FDE\\u80DC\\uFF0C\\u6EE120\\u8FDE\\u80DC\\u540E\\uFF0C\\u82E5\\u7EE7\\u7EED\\u53C2\\u6218\\uFF0C\\u8FDE\\u80DC\\u6570\\u5C06\\u91CD\\u7F6E\\u4E3A0\\uFF0C\\u80DC\\u5229\\u83B7\\u5F97\\u79EF\\u5206\\u5C06\\u4ECE1\\u8FDE\\u80DC\\u5F00\\u59CB\\u8BA1\\u7B97\\uFF1B\\n10. \\u73A9\\u5BB6\\u6BCF\\u65E5\\u670920\\u6B21\\u6311\\u6218\\u6B21\\u6570\\uFF1B\\u82E5\\u73A9\\u5BB6\\u6BCF\\u65E5\\u7684\\u6311\\u6218\\u6B21\\u6570\\u672A\\u6253\\u6EE120\\u6B21\\uFF0C\\u53EF\\u4EE5\\u5728\\u6BD4\\u8D5B\\u7ED3\\u675F\\u524D\\u7684\\u4EFB\\u610F\\u65F6\\u523B\\u8D2D\\u4E70\\u6B64\\u524D\\u5386\\u53F2\\u5269\\u4F59\\u7684\\u6B21\\u6570\\uFF0C\\u5E76\\u6309\\u89C4\\u5219\\u83B7\\u5F97\\u79EF\\u5206\\uFF1B\\n11. \\u6BCF\\u65E5\\u7D2F\\u8BA1\\u6311\\u621820\\u6B21\\u540E\\uFF0C\\u82E5\\u65E0\\u5386\\u53F2\\u53EF\\u8D2D\\u4E70\\u5269\\u4F59\\u6B21\\u6570\\u65F6\\uFF0C\\u5C06\\u65E0\\u6CD5\\u518D\\u7EE7\\u7EED\\u6311\\u6218\\uFF1B\\n12. \\u4F7F\\u7528\\u6311\\u6218\\u6B21\\u6570\\u65F6\\uFF0C\\u4E0D\\u9700\\u8981\\u6D88\\u8017\\u4F53\\u529B\\u6216\\u7CBE\\u529B\\uFF1B\\n13. \\u73A9\\u5BB6\\u6BCF\\u65E5\\u6311\\u6218\\u83B7\\u5F97\\u7684\\u79EF\\u5206\\uFF0C\\u53EF\\u7528\\u4E8E\\u5151\\u6362\\u5B9D\\u77F3\\uFF1B\\u4F46\\u73A9\\u5BB6\\u9700\\u572824\\u70B9\\u524D\\u5151\\u6362\\u5B8C\\u6BD5\\uFF0C\\u5426\\u5219\\u5F53\\u65E5\\u83B7\\u5F97\\u7684\\u79EF\\u5206\\u5C06\\u88AB\\u6E05\\u96F6\\uFF1B\\n14. \\u79EF\\u5206\\u699C\\u524D10\\u540D\\u73A9\\u5BB6\\u53EF\\u5728\\u6BD4\\u8D5B\\u6B21\\u65E5\\u3001\\u4E0A\\u534812\\u70B9\\u524D\\u60AC\\u6302\\u8D4F\\u8D50\\uFF0C12\\u70B9\\u540E\\u5F00\\u59CB\\u63A5\\u53D7\\u819C\\u62DC\\uFF1B\\u60AC\\u6302\\u540E\\uFF0C\\u819C\\u62DC\\u4ED6\\u7684\\u73A9\\u5BB6\\u5747\\u53EF\\u83B7\\u5F971\\u4EFD\\u60AC\\u6302\\u7684\\u8D4F\\u8D50\\uFF1B \\n15. \\u4EBA\\u6C14\\u6392\\u884C\\u699C\\u6839\\u636E\\u819C\\u62DC\\u4EBA\\u6570\\u8BC4\\u51FA\\uFF0C\\u6BCF\\u592924\\u65F6\\uFF0C\\u4EBA\\u6C14\\u699C\\u7B2C1\\u540D\\u53EF\\u83B7\\u5F97\\u4FEE\\u7F57\\u8D64\\u5154\\u788E\\u7247\\xD71\\u30011000\\u4E07\\u94F6\\u4E24\\uFF1B\\u7B2C2-10\\u540D\\u53EF\\u83B7\\u5F971000\\u4E07\\u94F6\\u4E24\\uFF1B\\n"
+        i18n_sb: "1. 主公等级达到40级时，可参加跨服争霸赛；\n2. 本届跨服争霸赛周期16天；比赛结束后，有一段间歇期，再举办下届跨服争霸赛，下届时间敬请期待；\n3. 比赛采用积分制，根据结束时玩家的积分排行，选出前100名玩家进入积分排行榜；\n4. 比赛开始后，系统会根据玩家实力进行匹配，从各个服务器中找出2个对手，玩家可以选择任意一个进行挑战，无论输赢，系统都会自动刷新一次对手；\n5. 玩家主动攻击，赢了可根据连胜数，获得不同积分；输了只得1积分；\n6. 玩家主动攻击失败后，连胜立即清零；且当日连胜会在次日0时清零；\n7. 玩家被攻击，赢了不获得积分；输了不扣除积分；\n8. 关于连胜：连胜局数越多，获得的积分越高：\n输1场：积分+1；\n1连胜：积分+2；\n2连胜：积分+3；\n3连胜：积分+4；\n4连胜：积分+5；\n5连胜：积分+6；\n6连胜：积分+7；\n7连胜：积分+8；\n8连胜：积分+9；\n9连胜：积分+10；\n10连胜：积分+10；\n11连胜：积分+10；\n……\n20连胜：积分+10；\n9. 玩家每日最高连胜数为20连胜，满20连胜后，若继续参战，连胜数将重置为0，胜利获得积分将从1连胜开始计算；\n10. 玩家每日有20次挑战次数；若玩家每日的挑战次数未打满20次，可以在比赛结束前的任意时刻购买此前历史剩余的次数，并按规则获得积分；\n11. 每日累计挑战20次后，若无历史可购买剩余次数时，将无法再继续挑战；\n12. 使用挑战次数时，不需要消耗体力或精力；\n13. 玩家每日挑战获得的积分，可用于兑换宝石；但玩家需在24点前兑换完毕，否则当日获得的积分将被清零；\n14. 积分榜前10名玩家可在比赛次日、上午12点前悬挂赏赐，12点后开始接受膜拜；悬挂后，膜拜他的玩家均可获得1份悬挂的赏赐； \n15. 人气排行榜根据膜拜人数评出，每天24时，人气榜第1名可获得修罗赤兔碎片×1、1000万银两；第2-10名可获得1000万银两；\n"
     },
     interService_popularityRank: { i18n_id: "interService_popularityRank", i18n_sb: "人气排行:" },
     interService_getReward: { i18n_id: "interService_getReward", i18n_sb: "获得奖励" },
@@ -24502,7 +23329,7 @@
     e_task_no_receive: { i18n_id: "e_task_no_receive", i18n_sb: "没有可领取的任务奖励" },
     DecisiveBattle_Instruction_3: {
         i18n_id: "DecisiveBattle_Instruction_3",
-        i18n_sb: "\\u7B2C21-30\\u540D\\u5956\\u52B1\\uFF1A150\\u5143\\u5B9D\\uFF1B\\n\\u7B2C31-40\\u540D\\u5956\\u52B1\\uFF1A100\\u5143\\u5B9D\\uFF1B\\n\\u7B2C41-50\\u540D\\u5956\\u52B1\\uFF1A50\\u5143\\u5B9D\\uFF1B\\n10.\\u5165\\u56F4\\u8005\\u6BD4\\u8D5B\\u5956\\u52B1\\uFF1A\\u6240\\u6709\\u5165\\u56F4\\u8005\\u5747\\u53EF\\u83B7\\u5F97\\u4E00\\u5B9A\\u5956\\u52B1\\uFF1B\\u8D5B\\u540E\\u901A\\u8FC7\\u7CFB\\u7EDF\\u90AE\\u4EF6\\u7EDF\\u4E00\\u53D1\\u9001\\u5956\\u52B1\\uFF1B\\n\\u7B2C\\u4E8C\\u8F6E\\u6DD8\\u6C70\\uFF0832\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F974\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u7B2C\\u56DB\\u8F6E\\u6DD8\\u6C70\\uFF0832\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F975\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u7B2C\\u4E94\\u8F6E\\u6DD8\\u6C70\\uFF0816\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F975\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u7B2C\\u4E03\\u8F6E\\u6DD8\\u6C70\\uFF0816\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F975\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u7B2C\\u516B\\u8F6E\\u6DD8\\u6C70\\uFF088\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u7B2C\\u5341\\u8F6E\\u6DD8\\u6C70\\uFF088\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u7B2C\\u5341\\u4E00\\u8F6E\\u6DD8\\u6C70\\uFF084\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\u30015\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u7B2C\\u5341\\u4E09\\u8F6E\\u6DD8\\u6C70\\uFF084\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\u30015\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u7B2C\\u5341\\u56DB\\u8F6E\\u6DD8\\u6C70\\uFF082\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u7B2C\\u5341\\u516D\\u8F6E\\u6DD8\\u6C70\\uFF082\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u7B2C\\u56DB\\u540D\\uFF081\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u5B63\\u519B\\uFF081\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F977\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u4E9A\\u519B\\uFF081\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F977\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u51A0\\u519B\\uFF081\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F977\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD73\\uFF1B\\n11.\\u6B22\\u5E86\\u5956\\u52B1\\uFF1A\\u524D3\\u540D\\u4E3B\\u516C\\u6240\\u5728\\u7684\\u670D\\u52A1\\u5668\\u4E2D\\u7684\\u6240\\u6709\\u73A9\\u5BB6\\uFF0C\\u90FD\\u5C06\\u83B7\\u5F97200\\u5143\\u5B9D\\u7684\\u5956\\u52B1\\uFF1B\\u8D5B\\u540E\\u901A\\u8FC7\\u7CFB\\u7EDF\\u90AE\\u4EF6\\u7EDF\\u4E00\\u53D1\\u9001\\u5956\\u52B1\\uFF1B\\n12.\\u6700\\u540E\\uFF0C\\u5EFA\\u8BAE\\u73A9\\u5BB6\\u5C3D\\u91CF\\u907F\\u514D\\u5728\\u6BD4\\u8D5B\\u5F00\\u59CB\\u524D\\u540E\\u4FEE\\u6539\\u9635\\u5BB9\\uFF0C\\u4EE5\\u514D\\u5F71\\u54CD\\u5230\\u6BD4\\u8D5B\\u7ED3\\u679C\\uFF1B"
+        i18n_sb: "第21-30名奖励：150元宝；\n第31-40名奖励：100元宝；\n第41-50名奖励：50元宝；\n10.入围者比赛奖励：所有入围者均可获得一定奖励；赛后通过系统邮件统一发送奖励；\n第二轮淘汰（32人）：可获得4级宝石箱×2；\n第四轮淘汰（32人）：可获得5级宝石箱×1；\n第五轮淘汰（16人）：可获得5级宝石箱×2；\n第七轮淘汰（16人）：可获得5级宝石箱×2；\n第八轮淘汰（8人）：可获得6级宝石箱×1；\n第十轮淘汰（8人）：可获得6级宝石箱×1；\n第十一轮淘汰（4人）：可获得6级宝石箱×1、5级宝石箱×1；\n第十三轮淘汰（4人）：可获得6级宝石箱×1、5级宝石箱×1；\n第十四轮淘汰（2人）：可获得6级宝石箱×2；\n第十六轮淘汰（2人）：可获得6级宝石箱×2；\n第四名（1人）：可获得6级宝石箱×2；\n季军（1人）：可获得7级宝石箱×1；\n亚军（1人）：可获得7级宝石箱×2；\n冠军（1人）：可获得7级宝石箱×3；\n11.欢庆奖励：前3名主公所在的服务器中的所有玩家，都将获得200元宝的奖励；赛后通过系统邮件统一发送奖励；\n12.最后，建议玩家尽量避免在比赛开始前后修改阵容，以免影响到比赛结果；"
     },
     DecisiveBattle_ExchangeIntro: { i18n_id: "DecisiveBattle_ExchangeIntro", i18n_sb: "（赛后7天内，请及时兑换奖励！）" },
     DecisiveBattle_round: { i18n_id: "DecisiveBattle_round", i18n_sb: "第$1轮" },
@@ -24560,11 +23387,11 @@
     union_war_reward_title3: { i18n_id: "union_war_reward_title3", i18n_sb: "本服公会战4强入围奖励" },
     union_war_reward_desc3: { i18n_id: "union_war_reward_desc3", i18n_sb: "本服公会战4强入围奖励：城之宝匣*30，可获得流星、装备、技能、银两。" },
     sgs_hulao_reward_conf3: { i18n_id: "sgs_hulao_reward_conf3", i18n_sb: "谢礼3(普通);谢礼3(困难);谢礼3(深渊)" },
-    mystery_name_107710007: { i18n_id: "mystery_name_107710007", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*1" },
+    mystery_name_107710007: { i18n_id: "mystery_name_107710007", i18n_sb: "魔·张角魂魄*1" },
     mystery_name_107710017: { i18n_id: "mystery_name_107710017", i18n_sb: "小乔魂魄*1" },
     mystery_name_107710027: { i18n_id: "mystery_name_107710027", i18n_sb: "李典魂魄*1" },
     mystery_name_107710037: { i18n_id: "mystery_name_107710037", i18n_sb: "张郃魂魄*1" },
-    mystery_name_107710053: { i18n_id: "mystery_name_107710053", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*1" },
+    mystery_name_107710053: { i18n_id: "mystery_name_107710053", i18n_sb: "魔·马超魂魄*1" },
     mystery_name_107710063: { i18n_id: "mystery_name_107710063", i18n_sb: "孙权魂魄*1" },
     mystery_name_107710073: { i18n_id: "mystery_name_107710073", i18n_sb: "张角魂魄*1" },
     mystery_name_107710083: { i18n_id: "mystery_name_107710083", i18n_sb: "甄姬魂魄*1" },
@@ -24628,13 +23455,13 @@
     itemdesc791954: { i18n_id: "itemdesc791954", i18n_sb: "打开可获得暗度陈仓碎片*1" },
     IdCardBinding_8: { i18n_id: "IdCardBinding_8", i18n_sb: "实名认证失败！" },
     IdCardBinding_18: { i18n_id: "IdCardBinding_18", i18n_sb: "去认证" },
-    "16500201": { i18n_id: "16500201", i18n_sb: "\\u795E\\xB7\\u91CD\\u9A91\\u5175" },
+    "16500201": { i18n_id: "16500201", i18n_sb: "神·重骑兵" },
     itemname9191006: { i18n_id: "itemname9191006", i18n_sb: "至尊小宝魂魄" },
     itemname171013: { i18n_id: "itemname171013", i18n_sb: "芽间月英" },
     itemname111013: { i18n_id: "itemname111013", i18n_sb: "曹仁" },
-    itemname131001: { i18n_id: "itemname131001", i18n_sb: "\\u795E\\xB7\\u5468\\u745C" },
-    itemname181006: { i18n_id: "itemname181006", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9" },
-    itemname181008: { i18n_id: "itemname181008", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6" },
+    itemname131001: { i18n_id: "itemname131001", i18n_sb: "神·周瑜" },
+    itemname181006: { i18n_id: "itemname181006", i18n_sb: "魔·贾诩" },
+    itemname181008: { i18n_id: "itemname181008", i18n_sb: "魔·黄盖" },
     itemname7750001: { i18n_id: "itemname7750001", i18n_sb: "神秘商品之绝影碎片*3" },
     itemname7750011: { i18n_id: "itemname7750011", i18n_sb: "神秘商品之方天画戟碎片*3" },
     itemname7750021: { i18n_id: "itemname7750021", i18n_sb: "神秘商品之龙胆枪碎片*3" },
@@ -24654,10 +23481,10 @@
     itemname792063: { i18n_id: "itemname792063", i18n_sb: "黄巾重锤兵礼包" },
     itemname792073: { i18n_id: "itemname792073", i18n_sb: "西凉弩兵礼包" },
     itemname792083: { i18n_id: "itemname792083", i18n_sb: "曹仁礼包" },
-    itemname792093: { i18n_id: "itemname792093", i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u793C\\u5305" },
-    itemname792103: { i18n_id: "itemname792103", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u793C\\u5305" },
+    itemname792093: { i18n_id: "itemname792093", i18n_sb: "神·周瑜礼包" },
+    itemname792103: { i18n_id: "itemname792103", i18n_sb: "魔·贾诩礼包" },
     itemname792113: { i18n_id: "itemname792113", i18n_sb: "浣熊波波礼包" },
-    itemname792123: { i18n_id: "itemname792123", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u793C\\u5305" },
+    itemname792123: { i18n_id: "itemname792123", i18n_sb: "魔·黄盖礼包" },
     itemname792133: { i18n_id: "itemname792133", i18n_sb: "步练师礼包" },
     itemname792143: { i18n_id: "itemname792143", i18n_sb: "郭嘉魂魄礼包" },
     itemname792153: { i18n_id: "itemname792153", i18n_sb: "卞皇后魂魄礼包" },
@@ -24678,14 +23505,11 @@
     itemname792303: { i18n_id: "itemname792303", i18n_sb: "张宝魂魄*1" },
     itemname792313: { i18n_id: "itemname792313", i18n_sb: "董卓魂魄*1" },
     itemname792323: { i18n_id: "itemname792323", i18n_sb: "赵云魂魄礼包" },
-    itemname792333: { i18n_id: "itemname792333", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname792333: { i18n_id: "itemname792333", i18n_sb: "魔·贾诩魂魄礼包" },
     itemname792343: { i18n_id: "itemname792343", i18n_sb: "浣熊波波魂魄礼包" },
-    itemname792353: { i18n_id: "itemname792353", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname792353: { i18n_id: "itemname792353", i18n_sb: "魔·黄盖魂魄礼包" },
     itemname792363: { i18n_id: "itemname792363", i18n_sb: "步练师魂魄礼包" },
-    itemname792373: {
-        i18n_id: "itemname792373",
-        i18n_sb: "\\u795E\\xB7\\u91CD\\u9A91\\u5175\\u9B42\\u9B44\\u793C\\u5305"
-    },
+    itemname792373: { i18n_id: "itemname792373", i18n_sb: "神·重骑兵魂魄礼包" },
     itemname7740010: { i18n_id: "itemname7740010", i18n_sb: "神秘商品之刘备魂魄*3" },
     itemname7740020: { i18n_id: "itemname7740020", i18n_sb: "神秘商品之貂蝉魂魄*3" },
     itemname7740030: { i18n_id: "itemname7740030", i18n_sb: "神秘商品之鲁肃魂魄*3" },
@@ -24695,9 +23519,9 @@
     itemdesc142003: { i18n_id: "itemdesc142003", i18n_sb: "公孙瓒" },
     itemdesc111006: { i18n_id: "itemdesc111006", i18n_sb: "张辽" },
     itemdesc131005: { i18n_id: "itemdesc131005", i18n_sb: "吕蒙" },
-    itemdesc181002: { i18n_id: "itemdesc181002", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749" },
+    itemdesc181002: { i18n_id: "itemdesc181002", i18n_sb: "魔·貂蝉" },
     itemdesc122025: { i18n_id: "itemdesc122025", i18n_sb: "花鬘" },
-    itemdesc165001: { i18n_id: "itemdesc165001", i18n_sb: "\\u795E\\xB7\\u5927\\u5200\\u5175" },
+    itemdesc165001: { i18n_id: "itemdesc165001", i18n_sb: "神·大刀兵" },
     itemdesc7750007: { i18n_id: "itemdesc7750007", i18n_sb: "大宛碎片*3" },
     itemdesc7750017: { i18n_id: "itemdesc7750017", i18n_sb: "古锭刀碎片*3" },
     itemdesc7750027: { i18n_id: "itemdesc7750027", i18n_sb: "白银狮子碎片*3" },
@@ -24717,10 +23541,7 @@
     itemdesc792069: { i18n_id: "itemdesc792069", i18n_sb: "打开可获得冀州重骑兵*1" },
     itemdesc792079: { i18n_id: "itemdesc792079", i18n_sb: "打开可获得庞统*1" },
     itemdesc792089: { i18n_id: "itemdesc792089", i18n_sb: "打开可获得吕蒙*1" },
-    itemdesc792099: {
-        i18n_id: "itemdesc792099",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u8C82\\u8749*1"
-    },
+    itemdesc792099: { i18n_id: "itemdesc792099", i18n_sb: "打开可获得魔·貂蝉*1" },
     itemdesc792109: { i18n_id: "itemdesc792109", i18n_sb: "打开可获得倒霉呆呆*1" },
     itemdesc792119: { i18n_id: "itemdesc792119", i18n_sb: "打开可获得花鬘*1" },
     itemdesc792129: { i18n_id: "itemdesc792129", i18n_sb: "打开可获得英雄王关羽*1" },
@@ -24742,19 +23563,13 @@
     itemdesc792289: { i18n_id: "itemdesc792289", i18n_sb: "打开可获得西凉刀兵魂魄*1" },
     itemdesc792299: { i18n_id: "itemdesc792299", i18n_sb: "打开可获得庞统魂魄*1" },
     itemdesc792309: { i18n_id: "itemdesc792309", i18n_sb: "打开可获得徐庶魂魄*1" },
-    itemdesc792319: {
-        i18n_id: "itemdesc792319",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44*1"
-    },
-    itemdesc792329: {
-        i18n_id: "itemdesc792329",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*1"
-    },
+    itemdesc792319: { i18n_id: "itemdesc792319", i18n_sb: "打开可获得神·吕蒙魂魄*1" },
+    itemdesc792329: { i18n_id: "itemdesc792329", i18n_sb: "打开可获得魔·貂蝉魂魄*1" },
     itemdesc792339: { i18n_id: "itemdesc792339", i18n_sb: "打开可获得倒霉呆呆魂魄*1" },
     itemdesc792349: { i18n_id: "itemdesc792349", i18n_sb: "打开可获得花鬘魂魄*1" },
     itemdesc792359: { i18n_id: "itemdesc792359", i18n_sb: "打开可获得英雄王关羽魂魄*1" },
     itemdesc792369: { i18n_id: "itemdesc792369", i18n_sb: "打开可获得刘协魂魄*1" },
-    itemdesc7740006: { i18n_id: "itemdesc7740006", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*3" },
+    itemdesc7740006: { i18n_id: "itemdesc7740006", i18n_sb: "魔·董卓魂魄*3" },
     itemdesc7740016: { i18n_id: "itemdesc7740016", i18n_sb: "马超魂魄*3" },
     itemdesc7740026: { i18n_id: "itemdesc7740026", i18n_sb: "甘宁魂魄*3" },
     itemdesc7740036: { i18n_id: "itemdesc7740036", i18n_sb: "庞统魂魄*3" },
@@ -24766,13 +23581,13 @@
     queueTeam_14: { i18n_id: "queueTeam_14", i18n_sb: "是否花费$1元宝解锁阵容$2？" },
     queueTeam_24: { i18n_id: "queueTeam_24", i18n_sb: "$1级解锁此阵容" },
     str_Filter_Gold: { i18n_id: "str_Filter_Gold", i18n_sb: "金" },
-    mystery_name_107700006: { i18n_id: "mystery_name_107700006", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*1" },
+    mystery_name_107700006: { i18n_id: "mystery_name_107700006", i18n_sb: "魔·董卓魂魄*1" },
     mystery_name_107700016: { i18n_id: "mystery_name_107700016", i18n_sb: "马超魂魄*1" },
     mystery_name_107700026: { i18n_id: "mystery_name_107700026", i18n_sb: "甘宁魂魄*1" },
     mystery_name_107700036: { i18n_id: "mystery_name_107700036", i18n_sb: "庞统魂魄*1" },
     mystery_name_107700046: { i18n_id: "mystery_name_107700046", i18n_sb: "跑男夏侯渊魂魄*1" },
     mystery_name_107700056: { i18n_id: "mystery_name_107700056", i18n_sb: "孟获魂魄*1" },
-    mystery_name_107700066: { i18n_id: "mystery_name_107700066", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*1" },
+    mystery_name_107700066: { i18n_id: "mystery_name_107700066", i18n_sb: "魔·貂蝉魂魄*1" },
     mystery_name_107700076: { i18n_id: "mystery_name_107700076", i18n_sb: "郭嘉魂魄*1" },
     mystery_name_107700086: { i18n_id: "mystery_name_107700086", i18n_sb: "曹仁魂魄*1" },
     mystery_name_107700096: { i18n_id: "mystery_name_107700096", i18n_sb: "诸葛亮魂魄*1" },
@@ -24784,7 +23599,7 @@
     mystery_name_107700156: { i18n_id: "mystery_name_107700156", i18n_sb: "鲁肃魂魄*3" },
     mystery_name_107700166: { i18n_id: "mystery_name_107700166", i18n_sb: "诸葛瑾魂魄*3" },
     mystery_name_107700176: { i18n_id: "mystery_name_107700176", i18n_sb: "刘协魂魄*3" },
-    mystery_name_107700186: { i18n_id: "mystery_name_107700186", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*3" },
+    mystery_name_107700186: { i18n_id: "mystery_name_107700186", i18n_sb: "魔·凌统魂魄*3" },
     mystery_name_107700196: { i18n_id: "mystery_name_107700196", i18n_sb: "关羽魂魄*3" },
     mystery_name_107700206: { i18n_id: "mystery_name_107700206", i18n_sb: "黄月英魂魄*3" },
     mystery_name_107700216: { i18n_id: "mystery_name_107700216", i18n_sb: "吕布魂魄*3" },
@@ -24822,12 +23637,9 @@
     "4710150401": { i18n_id: "4710150401", i18n_sb: "吴国父母" },
     "4220120201": { i18n_id: "4220120201", i18n_sb: "南蛮入侵" },
     itemname171015: { i18n_id: "itemname171015", i18n_sb: "大圣孙坚" },
-    itemname792377: { i18n_id: "itemname792377", i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u793C\\u5305" },
+    itemname792377: { i18n_id: "itemname792377", i18n_sb: "神·曹操礼包" },
     itemdesc171015: { i18n_id: "itemdesc171015", i18n_sb: "大圣孙坚" },
-    itemdesc792377: {
-        i18n_id: "itemdesc792377",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u66F9\\u64CD*1"
-    },
+    itemdesc792377: { i18n_id: "itemdesc792377", i18n_sb: "打开可获得神·曹操*1" },
     "8220120201": { i18n_id: "8220120201", i18n_sb: "天赋异禀" },
     "8710150402": { i18n_id: "8710150402", i18n_sb: "臣服吴大帝" },
     surrunderdesc_525: { i18n_id: "surrunderdesc_525", i18n_sb: "0" },
@@ -24919,19 +23731,19 @@
     mystery_name_107700449: { i18n_id: "mystery_name_107700449", i18n_sb: "洛神残卷" },
     mystery_name_107700459: { i18n_id: "mystery_name_107700459", i18n_sb: "天妒残卷" },
     itemdesc600121: { i18n_id: "itemdesc600121", i18n_sb: "将其他五星将的经验、星级、修炼属性同时传承给大圣孙坚，且只能传1次。" },
-    mystery_name_117710006: { i18n_id: "mystery_name_117710006", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*1" },
+    mystery_name_117710006: { i18n_id: "mystery_name_117710006", i18n_sb: "魔·董卓魂魄*1" },
     mystery_name_117710016: { i18n_id: "mystery_name_117710016", i18n_sb: "马超魂魄*1" },
     mystery_name_117710026: { i18n_id: "mystery_name_117710026", i18n_sb: "甘宁魂魄*1" },
     mystery_name_117710036: { i18n_id: "mystery_name_117710036", i18n_sb: "庞统魂魄*1" },
     mystery_name_117710046: { i18n_id: "mystery_name_117710046", i18n_sb: "跑男夏侯渊魂魄*1" },
     mystery_name_117710056: { i18n_id: "mystery_name_117710056", i18n_sb: "孟获魂魄*1" },
-    mystery_name_107740003: { i18n_id: "mystery_name_107740003", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*3" },
+    mystery_name_107740003: { i18n_id: "mystery_name_107740003", i18n_sb: "魔·貂蝉魂魄*3" },
     mystery_name_107740013: { i18n_id: "mystery_name_107740013", i18n_sb: "郭嘉魂魄*3" },
     mystery_name_107740023: { i18n_id: "mystery_name_107740023", i18n_sb: "曹仁魂魄*3" },
     mystery_name_107740033: { i18n_id: "mystery_name_107740033", i18n_sb: "诸葛亮魂魄*3" },
     mystery_name_107740043: { i18n_id: "mystery_name_107740043", i18n_sb: "姜维魂魄*3" },
     mystery_name_107740055: { i18n_id: "mystery_name_107740055", i18n_sb: "程昱魂魄*3" },
-    mystery_name_117740007: { i18n_id: "mystery_name_117740007", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*3" },
+    mystery_name_117740007: { i18n_id: "mystery_name_117740007", i18n_sb: "魔·张角魂魄*3" },
     mystery_name_117740017: { i18n_id: "mystery_name_117740017", i18n_sb: "小乔魂魄*3" },
     mystery_name_117740027: { i18n_id: "mystery_name_117740027", i18n_sb: "李典魂魄*3" },
     mystery_name_117740037: { i18n_id: "mystery_name_117740037", i18n_sb: "张郃魂魄*3" },
@@ -25053,7 +23865,7 @@
     dialogname553008012: { i18n_id: "dialogname553008012", i18n_sb: "$UserName" },
     dialogname553012022: { i18n_id: "dialogname553012022", i18n_sb: "$UserName" },
     dialogname553018016: { i18n_id: "dialogname553018016", i18n_sb: "$UserName" },
-    dialogname553020012: { i18n_id: "dialogname553020012", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    dialogname553020012: { i18n_id: "dialogname553020012", i18n_sb: "魔·马超" },
     dialogname554004014: { i18n_id: "dialogname554004014", i18n_sb: "孟达" },
     dialogname554012013: { i18n_id: "dialogname554012013", i18n_sb: "$UserName" },
     dialogname554016023: { i18n_id: "dialogname554016023", i18n_sb: "$UserName" },
@@ -25171,17 +23983,14 @@
     rank_tab_name_index3: { i18n_id: "rank_tab_name_index3", i18n_sb: "关卡榜" },
     rank_txt_guanka: { i18n_id: "rank_txt_guanka", i18n_sb: "关卡:" },
     HD_Accumulat_Summon_ItemTitle_t2: { i18n_id: "HD_Accumulat_Summon_ItemTitle_t2", i18n_sb: "银杯" },
-    "11102601": { i18n_id: "11102601", i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF" },
+    "11102601": { i18n_id: "11102601", i18n_sb: "神·司马懿" },
     "34101401": { i18n_id: "34101401", i18n_sb: "破军" },
     "311027203": { i18n_id: "311027203", i18n_sb: "行动前 必触发" },
     "311027504": { i18n_id: "311027504", i18n_sb: "敌方单体" },
     "4110250701": { i18n_id: "4110250701", i18n_sb: "菊花不保" },
     "4110251701": { i18n_id: "4110251701", i18n_sb: "灭蜀之愿" },
     "4410210301": { i18n_id: "4410210301", i18n_sb: "照夜玉狮" },
-    itemdesc79141014: {
-        i18n_id: "itemdesc79141014",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x3,\\u7075\\u829Dx1000"
-    },
+    itemdesc79141014: { i18n_id: "itemdesc79141014", i18n_sb: "神·司马懿魂魄x3,灵芝x1000" },
     "8410210401": { i18n_id: "8410210401", i18n_sb: "最强属性" },
     "8410210402": { i18n_id: "8410210402", i18n_sb: "修炼武将智属性至6000" },
     "351021301": { i18n_id: "351021301", i18n_sb: "救援三阶" },
@@ -25193,10 +24002,7 @@
     worship_no_talentFinally: { i18n_id: "worship_no_talentFinally", i18n_sb: "没有足够的天赋点" },
     "4110061901": { i18n_id: "4110061901", i18n_sb: "大魏之枪" },
     "4510020501": { i18n_id: "4510020501", i18n_sb: "前世宿敌" },
-    itemdesc791210141: {
-        i18n_id: "itemdesc791210141",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x3,\\u7075\\u829Dx1000"
-    },
+    itemdesc791210141: { i18n_id: "itemdesc791210141", i18n_sb: "神·司马懿魂魄x3,灵芝x1000" },
     "8210140701": { i18n_id: "8210140701", i18n_sb: "觉醒图腾" },
     "8210140502": { i18n_id: "8210140502", i18n_sb: "觉醒宝箱开启600次" },
     "8510020302": { i18n_id: "8510020302", i18n_sb: "臣服冰雪春华" },
@@ -25251,8 +24057,8 @@
     itemdesc221014: { i18n_id: "itemdesc221014", i18n_sb: "凤求凰的简介" },
     "8520020301": { i18n_id: "8520020301", i18n_sb: "至尊身份" },
     surrunderdesc_573: { i18n_id: "surrunderdesc_573", i18n_sb: "0" },
-    itemname151002: { i18n_id: "itemname151002", i18n_sb: "\\u795E\\xB7\\u8D5B\\u96F7" },
-    itemdesc9151002: { i18n_id: "itemdesc9151002", i18n_sb: "\\u795E\\xB7\\u8D5B\\u96F7\\u9B42\\u9B44" },
+    itemname151002: { i18n_id: "itemname151002", i18n_sb: "神·赛雷" },
+    itemdesc9151002: { i18n_id: "itemdesc9151002", i18n_sb: "神·赛雷魂魄" },
     itemdesc165003: { i18n_id: "itemdesc165003", i18n_sb: "电玩侍女" },
     festival_round_mail: {
         i18n_id: "festival_round_mail",
@@ -25304,7 +24110,7 @@
     },
     "4420131401": { i18n_id: "4420131401", i18n_sb: "草木皆兵" },
     "4110291201": { i18n_id: "4110291201", i18n_sb: "三国霸业" },
-    itemname600244: { i18n_id: "itemname600244", i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u4F20\\u627F\\u7B26" },
+    itemname600244: { i18n_id: "itemname600244", i18n_sb: "神·司马懿传承符" },
     "351021901": { i18n_id: "351021901", i18n_sb: "救援3" },
     itemname600246: { i18n_id: "itemname600246", i18n_sb: "天师尘" },
     itemdesc792773: { i18n_id: "itemdesc792773", i18n_sb: "内含凤求凰碎片*1，神兵铸铁*80" },
@@ -25505,7 +24311,7 @@
     "4110301801": { i18n_id: "4110301801", i18n_sb: "三国归晋" },
     "4650080401": { i18n_id: "4650080401", i18n_sb: "骤如烈风" },
     itemname165008: { i18n_id: "itemname165008", i18n_sb: "颜良文丑" },
-    itemdesc9161002: { i18n_id: "itemdesc9161002", i18n_sb: "\\u754C\\xB7\\u5218\\u5907\\u9B42\\u9B44" },
+    itemdesc9161002: { i18n_id: "itemdesc9161002", i18n_sb: "界·刘备魂魄" },
     itemdesc361002: {
         i18n_id: "itemdesc361002",
         i18n_sb: "【义绝】普通攻击时会进行一次判定，根据判定结果：失败(20%概率)（对一名场上角色造成80%普通攻击伤害）；成功(60%概率)（对一名场上角色造成160%普通攻击伤害并令其所有武将技能于当前阶段无效）；大成功(20%概率)（对一名场上角色造成160%普通攻击伤害并令其所有武将技能于当前回合无效）"
@@ -25700,10 +24506,7 @@
         i18n_id: "24101102",
         i18n_sb: "三国时代，最爱玩火的人非诸葛亮莫属。他初出茅庐后曾先烧了两把大火：火烧博望、火烧新野。最厉害的一次是火烧赤壁。最后在七擒孟获的最后一擒又火烧藤甲兵。“火神”之称可不是盖的。"
     },
-    "24300302": {
-        i18n_id: "24300302",
-        i18n_sb: "\\u51FA\\u81EA\\u300A\\u5B59\\u5B50\\xB7\\u8C0B\\u653B\\u7BC7\\u300B\\uFF1A\\u5C31\\u662F\\u6253\\u4ED7\\u4E4B\\u524D\\u4E00\\u5B9A\\u8981\\u505A\\u5230\\u77E5\\u9053\\u81EA\\u5DF1\\u7684\\u60C5\\u51B5\\uFF0C\\u4E86\\u89E3\\u654C\\u4EBA\\u7684\\u60C5\\u51B5\\uFF0C\\u8FD9\\u6837\\u624D\\u80FD\\u4FDD\\u8BC1\\u4E0D\\u6253\\u8D25\\u4ED7\\u3002"
-    },
+    "24300302": { i18n_id: "24300302", i18n_sb: "出自《孙子·谋攻篇》：就是打仗之前一定要做到知道自己的情况，了解敌人的情况，这样才能保证不打败仗。" },
     "23101202": {
         i18n_id: "23101202",
         i18n_sb: "它是浑身似火、两眼有神、四蹄如盆、尾扫残云的烈火式飞马；它是生性机敏，身健体高，满身灵气，桀骜不驯的千古龙驹，它就是神·吕布的坐骑、传说中的修罗赤兔马。原是吕布爱马之举感动山神，山神遂将此龙驹赐予吕布，助其扬名生威。而正是修罗赤兔马的存在，成就了神·吕布“修罗的战神”之称号。"
@@ -25775,13 +24578,10 @@
     "32100502": { i18n_id: "32100502", i18n_sb: "【奇才】旷世之才智让对手无处可逃，属控场技能，主智。行动前易触发，有几率对全体造成多段伤害，并减少自身下一次受到的伤害。" },
     "33102502": { i18n_id: "33102502", i18n_sb: "【国色】大乔拥有让人无法行动的美貌，属控场技能，主智。行动前一般概率触发，可对敌方单体造成智力伤害，并且让其无法行动2回合。" },
     "35102902": { i18n_id: "35102902", i18n_sb: "0" },
-    "38100202": {
-        i18n_id: "38100202",
-        i18n_sb: "\\u3010\\u9B54\\u79BB\\u95F4\\u3011\\u9B54\\xB7\\u8C82\\u8749\\u5E37\\u4E2D\\u654C\\u56FD\\u7684\\u79D8\\u672F\\uFF0C\\u53EF\\u4F7F\\u654C\\u65B92\\u540D\\u89D2\\u8272\\u4E92\\u76F8\\u4F24\\u5BB3\\uFF0C\\u5C5E\\u653B\\u51FB\\u6280\\u80FD\\uFF0C\\u4E3B\\u667A\\u3002\\u884C\\u52A8\\u65F6\\u53EF\\u5BF9\\u76EE\\u6807\\u9020\\u6210\\u667A\\u529B\\u4F24\\u5BB3\\u3002"
-    },
+    "38100202": { i18n_id: "38100202", i18n_sb: "【魔离间】魔·貂蝉帷中敌国的秘术，可使敌方2名角色互相伤害，属攻击技能，主智。行动时可对目标造成智力伤害。" },
     "38100802": {
         i18n_id: "38100802",
-        i18n_sb: "\\u3010\\u9B54\\u82E6\\u8089\\u3011\\u9B54\\xB7\\u9EC4\\u76D6\\u5411\\u4E16\\u95F4\\u65BD\\u52A0\\u82E6\\u75DB\\u3001\\u63D0\\u5347\\u81EA\\u5DF1\\u7684\\u6218\\u610F\\uFF0C\\u5C5E\\u653B\\u51FB\\u6280\\u80FD\\uFF0C\\u4E3B\\u653B\\u3002\\u884C\\u52A8\\u65F6\\u6613\\u89E6\\u53D1\\uFF0C\\u4F24\\u5BB3\\u53CB\\u519B\\u5E76\\u51CF\\u5C11\\u5176\\u4E0B\\u4E00\\u6B21\\u53D7\\u5230\\u7684\\u4F24\\u5BB3\\uFF0C\\u540C\\u65F6\\u81EA\\u5DF1\\u5BF9\\u654C\\u65B9\\u5355\\u4F53\\u9020\\u6210\\u731B\\u70C8\\u7684\\u653B\\u51FB\\u529B\\u4F24\\u5BB3\\u3002"
+        i18n_sb: "【魔苦肉】魔·黄盖向世间施加苦痛、提升自己的战意，属攻击技能，主攻。行动时易触发，伤害友军并减少其下一次受到的伤害，同时自己对敌方单体造成猛烈的攻击力伤害。"
     },
     "34200302": { i18n_id: "34200302", i18n_sb: "【义从】公孙瓒的白马义从部队作为骑兵精锐适应战场变化的能力，主攻和防。装备后，可提升自身的攻击与防御。" },
     "371014502": {
@@ -26261,10 +25061,7 @@
     itemname6300013: { i18n_id: "itemname6300013", i18n_sb: "诸葛连弩礼盒(兵长陆逊缘分神级武器)" },
     itemname6300023: { i18n_id: "itemname6300023", i18n_sb: "白虎胄礼盒(张飞缘分神级防具)" },
     itemname6300033: { i18n_id: "itemname6300033", i18n_sb: "顺手牵羊礼盒(陆逊缘分神级锦囊)" },
-    itemname6300043: {
-        i18n_id: "itemname6300043",
-        i18n_sb: "\\u60CA\\u5E06\\u793C\\u76D2(\\u795E\\xB7\\u5468\\u745C\\u7F18\\u5206\\u795E\\u7EA7\\u5750\\u9A91)"
-    },
+    itemname6300043: { i18n_id: "itemname6300043", i18n_sb: "惊帆礼盒(神·周瑜缘分神级坐骑)" },
     itemname6300053: { i18n_id: "itemname6300053", i18n_sb: "骅骝礼盒(张角缘分神级坐骑)" },
     itemname6300063: { i18n_id: "itemname6300063", i18n_sb: "快航礼盒（大乔缘分金坐骑）" },
     itemname6300073: { i18n_id: "itemname6300073", i18n_sb: "追风礼盒（荀攸缘分金坐骑）" },
@@ -26280,12 +25077,12 @@
     itemname791583: { i18n_id: "itemname791583", i18n_sb: "周仓礼包" },
     itemname791593: { i18n_id: "itemname791593", i18n_sb: "元宝宝箱钥匙*2" },
     itemname791603: { i18n_id: "itemname791603", i18n_sb: "论坛公会C" },
-    itemname9141001: { i18n_id: "itemname9141001", i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44" },
+    itemname9141001: { i18n_id: "itemname9141001", i18n_sb: "神·吕布魂魄" },
     itemname791616: { i18n_id: "itemname791616", i18n_sb: "孙策魂魄*4" },
     itemname791626: { i18n_id: "itemname791626", i18n_sb: "论坛礼包C" },
     itemname791636: { i18n_id: "itemname791636", i18n_sb: "4月微信礼包档次三" },
     itemname6300080: { i18n_id: "itemname6300080", i18n_sb: "古锭刀礼盒（华雄缘分神级武器）" },
-    itemname791647: { i18n_id: "itemname791647", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*2" },
+    itemname791647: { i18n_id: "itemname791647", i18n_sb: "魔·貂蝉魂魄*2" },
     itemname791657: { i18n_id: "itemname791657", i18n_sb: "神榜高级宝箱2倍" },
     itemname791667: { i18n_id: "itemname791667", i18n_sb: "技能宝盒*1" },
     itemname194001: { i18n_id: "itemname194001", i18n_sb: "倒霉呆呆" },
@@ -26303,26 +25100,23 @@
     itemname791727: { i18n_id: "itemname791727", i18n_sb: "跨服天梯115积分礼包" },
     itemname791735: { i18n_id: "itemname791735", i18n_sb: "勾玉*5、经验神书*5" },
     itemname791745: { i18n_id: "itemname791745", i18n_sb: "巅峰之战480积分礼包" },
-    itemname791755: { i18n_id: "itemname791755", i18n_sb: "\\u5173\\u7FBD\\u9B42\\u9B44\\xD7270" },
-    itemname791765: { i18n_id: "itemname791765", i18n_sb: "\\u9A6C\\u672F\\xD71" },
-    itemname791775: { i18n_id: "itemname791775", i18n_sb: "\\u5143\\u5B9D\\xD71000" },
+    itemname791755: { i18n_id: "itemname791755", i18n_sb: "关羽魂魄×270" },
+    itemname791765: { i18n_id: "itemname791765", i18n_sb: "马术×1" },
+    itemname791775: { i18n_id: "itemname791775", i18n_sb: "元宝×1000" },
     itemname11100001: { i18n_id: "itemname11100001", i18n_sb: "女神貂蝉" },
     itemname21100002: { i18n_id: "itemname21100002", i18n_sb: "女神甄姬皮肤" },
     itemname9171004: { i18n_id: "itemname9171004", i18n_sb: "冰雪春华魂魄" },
     itemname791792: { i18n_id: "itemname791792", i18n_sb: "女神月英礼包" },
     itemname791802: { i18n_id: "itemname791802", i18n_sb: "女神尚香皮肤礼包" },
-    itemname791810: { i18n_id: "itemname791810", i18n_sb: "\\u5F20\\u98DE\\u9B42\\u9B44\\xD715" },
+    itemname791810: { i18n_id: "itemname791810", i18n_sb: "张飞魂魄×15" },
     itemname546023: { i18n_id: "itemname546023", i18n_sb: "第46章第3个宝箱" },
     itemname10545009: { i18n_id: "itemname10545009", i18n_sb: "第45章精英宝箱" },
     itemname791812: { i18n_id: "itemname791812", i18n_sb: "元旦礼盒" },
     itemname791821: { i18n_id: "itemname791821", i18n_sb: "谢礼3(普通)" },
     itemname791831: { i18n_id: "itemname791831", i18n_sb: "谢礼6(困难)" },
     itemname600100: { i18n_id: "itemname600100", i18n_sb: "高级挑战文书" },
-    itemname600110: { i18n_id: "itemname600110", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD75740" },
-    itemname7710007: {
-        i18n_id: "itemname7710007",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*1"
-    },
+    itemname600110: { i18n_id: "itemname600110", i18n_sb: "主公经验×5740" },
+    itemname7710007: { i18n_id: "itemname7710007", i18n_sb: "神秘商品之魔·张角魂魄*1" },
     itemname7710017: { i18n_id: "itemname7710017", i18n_sb: "神秘商品之小乔魂魄*1" },
     itemname7710027: { i18n_id: "itemname7710027", i18n_sb: "神秘商品之李典魂魄*1" },
     itemname7710037: { i18n_id: "itemname7710037", i18n_sb: "神秘商品之张郃魂魄*1" },
@@ -26439,7 +25233,7 @@
     itemdesc9112020: { i18n_id: "itemdesc9112020", i18n_sb: "朱灵魂魄" },
     itemdesc9164004: { i18n_id: "itemdesc9164004", i18n_sb: "青州锤兵魂魄" },
     itemdesc9164038: { i18n_id: "itemdesc9164038", i18n_sb: "青州长戟兵魂魄" },
-    itemdesc9121014: { i18n_id: "itemdesc9121014", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44" },
+    itemdesc9121014: { i18n_id: "itemdesc9121014", i18n_sb: "蜀·孙尚香魂魄" },
     itemdesc9122017: { i18n_id: "itemdesc9122017", i18n_sb: "甘夫人魂魄" },
     itemdesc9123013: { i18n_id: "itemdesc9123013", i18n_sb: "王平魂魄" },
     itemdesc9164013: { i18n_id: "itemdesc9164013", i18n_sb: "巴蜀重骑兵魂魄" },
@@ -26536,118 +25330,37 @@
     itemdesc164024: { i18n_id: "itemdesc164024", i18n_sb: "西凉弩兵" },
     itemdesc171001: { i18n_id: "itemdesc171001", i18n_sb: "兵长陆逊" },
     itemdesc89141008: { i18n_id: "itemdesc89141008", i18n_sb: "于吉道具" },
-    itemdesc79112002: {
-        i18n_id: "itemdesc79112002",
-        i18n_sb: "\\u5927\\u5B9B\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79112022: {
-        i18n_id: "itemdesc79112022",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u66F9\\u64CD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164031: {
-        i18n_id: "itemdesc79164031",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u9A91\\u5175\\xD71,\\u9A86\\u9A7C\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121004: {
-        i18n_id: "itemdesc79121004",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79121018: {
-        i18n_id: "itemdesc79121018",
-        i18n_sb: "\\u5BD2\\u51B0\\u5251\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79122020: {
-        i18n_id: "itemdesc79122020",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u90ED\\u5609\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79123016: {
-        i18n_id: "itemdesc79123016",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5B59\\u6743\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79131003: {
-        i18n_id: "itemdesc79131003",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79132015: {
-        i18n_id: "itemdesc79132015",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u5218\\u5907\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79133011: {
-        i18n_id: "itemdesc79133011",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u8881\\u7ECD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79141003: {
-        i18n_id: "itemdesc79141003",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79142007: {
-        i18n_id: "itemdesc79142007",
-        i18n_sb: "\\u5BD2\\u51B0\\u5251\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79143001: {
-        i18n_id: "itemdesc79143001",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5B59\\u6743\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164052: {
-        i18n_id: "itemdesc79164052",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9EC4\\u5DFE\\u91CD\\u5F29\\u5175\\xD71,\\u9ED1\\u9B03\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164060: {
-        i18n_id: "itemdesc79164060",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u957F\\u621F\\u5175\\xD71,\\u6BDB\\u9A74\\u788E\\u7247\\xD71"
-    },
-    itemdesc79131001: { i18n_id: "itemdesc79131001", i18n_sb: "\\u7075\\u829D\\xD71000,\\u708E\\u795E\\xD71" },
-    itemdesc79131013: {
-        i18n_id: "itemdesc79131013",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79121001: { i18n_id: "itemdesc79121001", i18n_sb: "\\u7075\\u829D\\xD71000,\\u6B66\\u795E\\xD71" },
-    itemdesc79131010: {
-        i18n_id: "itemdesc79131010",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79141001: { i18n_id: "itemdesc79141001", i18n_sb: "\\u795E\\u621F\\xD71,\\u7075\\u829D\\xD71000" },
-    itemdesc79111017: {
-        i18n_id: "itemdesc79111017",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79111023: {
-        i18n_id: "itemdesc79111023",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79134001: {
-        i18n_id: "itemdesc79134001",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc790224: {
-        i18n_id: "itemdesc790224",
-        i18n_sb: "\\u5185\\u542B\\u8FFD\\u98CE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790234: {
-        i18n_id: "itemdesc790234",
-        i18n_sb: "\\u5185\\u542B\\u6731\\u96C0\\u7FBD\\u6247\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790244: {
-        i18n_id: "itemdesc790244",
-        i18n_sb: "\\u5185\\u542B\\u767D\\u864E\\u80C4\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790254: {
-        i18n_id: "itemdesc790254",
-        i18n_sb: "\\u5185\\u542B\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790264: {
-        i18n_id: "itemdesc790264",
-        i18n_sb: "\\u5185\\u542B\\u987A\\u624B\\u7275\\u7F8A\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790274: {
-        i18n_id: "itemdesc790274",
-        i18n_sb: "\\u5185\\u542B\\u71CE\\u539F\\u706B\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790284: {
-        i18n_id: "itemdesc790284",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u65E0\\u4E2D\\u751F\\u6709\\xD71"
-    },
-    itemdesc790294: { i18n_id: "itemdesc790294", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7300" },
+    itemdesc79112002: { i18n_id: "itemdesc79112002", i18n_sb: "大宛碎片×3,灵芝×500" },
+    itemdesc79112022: { i18n_id: "itemdesc79112022", i18n_sb: "元宝×60,曹操魂魄×3" },
+    itemdesc79164031: { i18n_id: "itemdesc79164031", i18n_sb: "元宝×20,青州骑兵×1,骆驼碎片×1" },
+    itemdesc79121004: { i18n_id: "itemdesc79121004", i18n_sb: "神·诸葛亮魂魄×3,灵芝×1000" },
+    itemdesc79121018: { i18n_id: "itemdesc79121018", i18n_sb: "寒冰剑碎片×3,灵芝×500" },
+    itemdesc79122020: { i18n_id: "itemdesc79122020", i18n_sb: "元宝×60,郭嘉魂魄×4" },
+    itemdesc79123016: { i18n_id: "itemdesc79123016", i18n_sb: "元宝×40,孙权魂魄×3" },
+    itemdesc79131003: { i18n_id: "itemdesc79131003", i18n_sb: "神·周瑜魂魄×3,灵芝×1000" },
+    itemdesc79132015: { i18n_id: "itemdesc79132015", i18n_sb: "元宝×60,刘备魂魄×3" },
+    itemdesc79133011: { i18n_id: "itemdesc79133011", i18n_sb: "元宝×40,袁绍魂魄×3" },
+    itemdesc79141003: { i18n_id: "itemdesc79141003", i18n_sb: "神·诸葛亮魂魄×3,灵芝×1000" },
+    itemdesc79142007: { i18n_id: "itemdesc79142007", i18n_sb: "寒冰剑碎片×3,灵芝×500" },
+    itemdesc79143001: { i18n_id: "itemdesc79143001", i18n_sb: "元宝×40,孙权魂魄×3" },
+    itemdesc79164052: { i18n_id: "itemdesc79164052", i18n_sb: "元宝×20,黄巾重弩兵×1,黑鬃碎片×1" },
+    itemdesc79164060: { i18n_id: "itemdesc79164060", i18n_sb: "元宝×20,青州长戟兵×1,毛驴碎片×1" },
+    itemdesc79131001: { i18n_id: "itemdesc79131001", i18n_sb: "灵芝×1000,炎神×1" },
+    itemdesc79131013: { i18n_id: "itemdesc79131013", i18n_sb: "神·周瑜魂魄×3,灵芝×1000" },
+    itemdesc79121001: { i18n_id: "itemdesc79121001", i18n_sb: "灵芝×1000,武神×1" },
+    itemdesc79131010: { i18n_id: "itemdesc79131010", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79141001: { i18n_id: "itemdesc79141001", i18n_sb: "神戟×1,灵芝×1000" },
+    itemdesc79111017: { i18n_id: "itemdesc79111017", i18n_sb: "神·吕布魂魄×3,灵芝×1000" },
+    itemdesc79111023: { i18n_id: "itemdesc79111023", i18n_sb: "神·吕蒙魂魄×3,灵芝×1000" },
+    itemdesc79134001: { i18n_id: "itemdesc79134001", i18n_sb: "神·吕蒙魂魄×2,灵芝×1000" },
+    itemdesc790224: { i18n_id: "itemdesc790224", i18n_sb: "内含追风碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790234: { i18n_id: "itemdesc790234", i18n_sb: "内含朱雀羽扇碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790244: { i18n_id: "itemdesc790244", i18n_sb: "内含白虎胄碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790254: { i18n_id: "itemdesc790254", i18n_sb: "内含爪黄飞电碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790264: { i18n_id: "itemdesc790264", i18n_sb: "内含顺手牵羊碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790274: { i18n_id: "itemdesc790274", i18n_sb: "内含燎原火碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790284: { i18n_id: "itemdesc790284", i18n_sb: "打开可获得：无中生有×1" },
+    itemdesc790294: { i18n_id: "itemdesc790294", i18n_sb: "内含灵芝×300" },
     itemdesc791002: { i18n_id: "itemdesc791002", i18n_sb: "连续31天每日领100元宝" },
     itemdesc740001: { i18n_id: "itemdesc740001", i18n_sb: "5灵芝" },
     itemdesc791018: { i18n_id: "itemdesc791018", i18n_sb: "内含 40个金宝箱 20个金钥匙" },
@@ -26708,10 +25421,7 @@
     itemdesc790366: { i18n_id: "itemdesc790366", i18n_sb: "内含：1级黄忠一个" },
     itemdesc790376: { i18n_id: "itemdesc790376", i18n_sb: "内含：1级关平一个" },
     itemdesc790386: { i18n_id: "itemdesc790386", i18n_sb: "内含：1级周泰一个" },
-    itemdesc790396: {
-        i18n_id: "itemdesc790396",
-        i18n_sb: "\\u5185\\u542B\\uFF1A1\\u7EA7\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u4E00\\u4E2A"
-    },
+    itemdesc790396: { i18n_id: "itemdesc790396", i18n_sb: "内含：1级群·蔡文姬一个" },
     itemdesc790406: { i18n_id: "itemdesc790406", i18n_sb: "内含：技能“无言”一个" },
     itemdesc790416: { i18n_id: "itemdesc790416", i18n_sb: "内含：技能“红颜”一个" },
     itemdesc791412: { i18n_id: "itemdesc791412", i18n_sb: "至尊会员礼包" },
@@ -26729,41 +25439,17 @@
     itemdesc790427: { i18n_id: "itemdesc790427", i18n_sb: "圣诞节宝箱" },
     itemdesc791422: { i18n_id: "itemdesc791422", i18n_sb: "沙里飞礼包" },
     itemdesc791432: { i18n_id: "itemdesc791432", i18n_sb: "三国杀活动2" },
-    itemdesc790432: {
-        i18n_id: "itemdesc790432",
-        i18n_sb: "\\u5185\\u542B\\u501A\\u5929\\u5251\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790442: {
-        i18n_id: "itemdesc790442",
-        i18n_sb: "\\u5185\\u542B\\u4EC1\\u738B\\u76FE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790452: {
-        i18n_id: "itemdesc790452",
-        i18n_sb: "\\u5185\\u542B\\u7684\\u5362\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790462: {
-        i18n_id: "itemdesc790462",
-        i18n_sb: "\\u5185\\u542B\\u65E0\\u61C8\\u53EF\\u51FB\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790472: {
-        i18n_id: "itemdesc790472",
-        i18n_sb: "\\u5185\\u542B\\u4E4C\\u9A93\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
+    itemdesc790432: { i18n_id: "itemdesc790432", i18n_sb: "内含倚天剑碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790442: { i18n_id: "itemdesc790442", i18n_sb: "内含仁王盾碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790452: { i18n_id: "itemdesc790452", i18n_sb: "内含的卢碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790462: { i18n_id: "itemdesc790462", i18n_sb: "内含无懈可击碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790472: { i18n_id: "itemdesc790472", i18n_sb: "内含乌骓碎片×1，神装碎片礼盒×2，金装礼盒×3" },
     itemdesc88142005: { i18n_id: "itemdesc88142005", i18n_sb: "陈宫道具（1级）" },
-    itemdesc791440: {
-        i18n_id: "itemdesc791440",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5305\\u5B50\\xD71 \\u7EA2\\u8336\\xD71 \\u8D85\\u7EA7\\u4F20\\u627F\\u7B26\\xD71"
-    },
-    itemdesc791450: {
-        i18n_id: "itemdesc791450",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5415\\u5E03\\u9B42\\u9B44\\xD730"
-    },
+    itemdesc791440: { i18n_id: "itemdesc791440", i18n_sb: "打开可获得：包子×1 红茶×1 超级传承符×1" },
+    itemdesc791450: { i18n_id: "itemdesc791450", i18n_sb: "打开可获得：吕布魂魄×30" },
     itemdesc791458: { i18n_id: "itemdesc791458", i18n_sb: "10个元宝" },
-    itemdesc791468: {
-        i18n_id: "itemdesc791468",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u6C34\\u6DF9\\u4E03\\u519B\\xD71"
-    },
-    itemdesc791478: { i18n_id: "itemdesc791478", i18n_sb: "\\u5185\\u542B\\u5143\\u5B9D\\xD788" },
+    itemdesc791468: { i18n_id: "itemdesc791468", i18n_sb: "打开可获得：水淹七军×1" },
+    itemdesc791478: { i18n_id: "itemdesc791478", i18n_sb: "内含元宝×88" },
     itemdesc791488: { i18n_id: "itemdesc791488", i18n_sb: "【经验金书】:用于技能升级，使用后，可获得中量技能经验。" },
     itemdesc40141006: { i18n_id: "itemdesc40141006", i18n_sb: "141006" },
     itemdesc40121015: { i18n_id: "itemdesc40121015", i18n_sb: "121015" },
@@ -26796,29 +25482,14 @@
     itemdesc791564: { i18n_id: "itemdesc791564", i18n_sb: "L1GQ" },
     itemdesc791574: { i18n_id: "itemdesc791574", i18n_sb: "L1G4" },
     itemdesc791584: { i18n_id: "itemdesc791584", i18n_sb: "L1HD（之前的礼包SSHLHL新生成）" },
-    itemdesc791594: {
-        i18n_id: "itemdesc791594",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u91D1\\u7BB1\\xD75\\uFF0C\\u94F6\\u7BB1\\xD75\\uFF0C\\u94DC\\u7BB1\\xD75\\uFF0C\\u52FE\\u7389\\xD710"
-    },
-    itemdesc791604: {
-        i18n_id: "itemdesc791604",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5415\\u5E03\\u9B42\\u9B44\\xD730"
-    },
-    itemdesc351033: {
-        i18n_id: "itemdesc351033",
-        i18n_sb: "\\u3010\\u6B66\\u795E\\u3011\\u795E\\xB7\\u5173\\u7FBD\\u65E0\\u4EBA\\u80FD\\u654C\\u7684\\u79D8\\u8BC0\\uFF0C\\u5C5E\\u88AB\\u52A8\\u6280\\u80FD\\uFF0C\\u4E3B\\u653B\\u548C\\u9632\\u3002\\u88C5\\u5907\\u540E\\uFF0C\\u53EF\\u540C\\u65F6\\u589E\\u52A0\\u81EA\\u8EAB\\u653B\\u51FB\\u529B\\u548C\\u9632\\u5FA1\\u529B\\u3002"
-    },
+    itemdesc791594: { i18n_id: "itemdesc791594", i18n_sb: "打开可获得：金箱×5，银箱×5，铜箱×5，勾玉×10" },
+    itemdesc791604: { i18n_id: "itemdesc791604", i18n_sb: "打开可获得：吕布魂魄×30" },
+    itemdesc351033: { i18n_id: "itemdesc351033", i18n_sb: "【武神】神·关羽无人能敌的秘诀，属被动技能，主攻和防。装备后，可同时增加自身攻击力和防御力。" },
     itemdesc791617: { i18n_id: "itemdesc791617", i18n_sb: "内含孙策魂魄*3" },
     itemdesc791627: { i18n_id: "itemdesc791627", i18n_sb: "50元宝 2包子 2红茶 10灵芝" },
-    itemdesc791637: {
-        i18n_id: "itemdesc791637",
-        i18n_sb: "\\u91D1\\u7BB1\\xD75\\uFF0C\\u94F6\\u7BB1\\xD75\\uFF0C\\u94DC\\u7BB1\\xD75\\uFF0C\\u6311\\u6218\\u6587\\u4E66\\xD73\\uFF0C\\u5143\\u5B9D\\xD720"
-    },
+    itemdesc791637: { i18n_id: "itemdesc791637", i18n_sb: "金箱×5，银箱×5，铜箱×5，挑战文书×3，元宝×20" },
     itemdesc6300081: { i18n_id: "itemdesc6300081", i18n_sb: "可以获得白银狮子碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
-    itemdesc791648: {
-        i18n_id: "itemdesc791648",
-        i18n_sb: "\\u9B54\\u8C82\\u8749\\u9B42\\u9B44\\xD725\\u3001300\\u7075\\u829D\\u3001300\\u5143\\u5B9D"
-    },
+    itemdesc791648: { i18n_id: "itemdesc791648", i18n_sb: "魔貂蝉魂魄×25、300灵芝、300元宝" },
     itemdesc791658: { i18n_id: "itemdesc791658", i18n_sb: "神榜低级宝箱3倍" },
     itemdesc791668: { i18n_id: "itemdesc791668", i18n_sb: "可以获得稀有神级被动技能残卷" },
     itemdesc193002: { i18n_id: "itemdesc193002", i18n_sb: "小鸡哔哔" },
@@ -26836,44 +25507,23 @@
     itemdesc791728: { i18n_id: "itemdesc791728", i18n_sb: "打开可获得25个1级宝石箱" },
     itemdesc791736: { i18n_id: "itemdesc791736", i18n_sb: "打开可获得：500灵芝" },
     itemdesc791746: { i18n_id: "itemdesc791746", i18n_sb: "打开可获得224个1级宝石箱" },
-    itemdesc791756: {
-        i18n_id: "itemdesc791756",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u8D75\\u4E91\\u9B42\\u9B44\\xD730\\u3001\\u7075\\u829D\\xD71500"
-    },
-    itemdesc791766: {
-        i18n_id: "itemdesc791766",
-        i18n_sb: "\\u7D2F\\u8BA1\\u767B\\u5F55\\u9001\\u795E\\u5C06\\u7B2C2\\u5929\\u9EC4\\u5FE0\\xD71"
-    },
-    itemdesc791776: {
-        i18n_id: "itemdesc791776",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5143\\u5B9D\\xD72000"
-    },
+    itemdesc791756: { i18n_id: "itemdesc791756", i18n_sb: "打开可获得赵云魂魄×30、灵芝×1500" },
+    itemdesc791766: { i18n_id: "itemdesc791766", i18n_sb: "累计登录送神将第2天黄忠×1" },
+    itemdesc791776: { i18n_id: "itemdesc791776", i18n_sb: "打开可获得元宝×2000" },
     itemdesc11100002: { i18n_id: "itemdesc11100002", i18n_sb: "女神甄姬" },
     itemdesc21100003: { i18n_id: "itemdesc21100003", i18n_sb: "女神大乔皮肤" },
     itemdesc89171004: { i18n_id: "itemdesc89171004", i18n_sb: "冰雪春华*1" },
-    itemdesc791793: {
-        i18n_id: "itemdesc791793",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u5C1A\\u9999\\xD71"
-    },
-    itemdesc89181001: { i18n_id: "itemdesc89181001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\xD71" },
-    itemdesc791811: {
-        i18n_id: "itemdesc791811",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u767D\\u864E\\u80C4\\xD71\\u3001\\u5F20\\u98DE\\u9B42\\u9B44\\xD730\\u3001\\u7075\\u829D\\xD7100\\u3001\\u7ECF\\u9A8C\\u91D1\\u4E66\\xD710\\u3001\\u7CBE\\u70BC\\u6750\\u6599\\u9752\\u51A5\\xD78"
-    },
+    itemdesc791793: { i18n_id: "itemdesc791793", i18n_sb: "打开可获得女神尚香×1" },
+    itemdesc89181001: { i18n_id: "itemdesc89181001", i18n_sb: "魔·张飞×1" },
+    itemdesc791811: { i18n_id: "itemdesc791811", i18n_sb: "打开可获得白虎胄×1、张飞魂魄×30、灵芝×100、经验金书×10、精炼材料青冥×8" },
     itemdesc547021: { i18n_id: "itemdesc547021", i18n_sb: "第42章第1个宝箱" },
     itemdesc10545010: { i18n_id: "itemdesc10545010", i18n_sb: "第40章隐藏宝箱" },
     itemdesc791813: { i18n_id: "itemdesc791813", i18n_sb: "圣诞礼盒" },
-    itemdesc791822: {
-        i18n_id: "itemdesc791822",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD715\\u3001\\u52FE\\u7389\\xD73\\u3001\\u864E\\u775B\\u77F3\\xD76"
-    },
-    itemdesc791832: {
-        i18n_id: "itemdesc791832",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD750\\u3001\\u52FE\\u7389\\xD78\\u3001\\u864E\\u775B\\u77F3\\xD720"
-    },
+    itemdesc791822: { i18n_id: "itemdesc791822", i18n_sb: "打开可获得灵芝×15、勾玉×3、虎睛石×6" },
+    itemdesc791832: { i18n_id: "itemdesc791832", i18n_sb: "打开可获得灵芝×50、勾玉×8、虎睛石×20" },
     itemdesc600101: { i18n_id: "itemdesc600101", i18n_sb: "使用后主公经验可提升277" },
     itemdesc600111: { i18n_id: "itemdesc600111", i18n_sb: "使用后主公经验可提升5060" },
-    itemdesc7710008: { i18n_id: "itemdesc7710008", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*1" },
+    itemdesc7710008: { i18n_id: "itemdesc7710008", i18n_sb: "魔·贾诩魂魄*1" },
     itemdesc7710018: { i18n_id: "itemdesc7710018", i18n_sb: "陆逊魂魄*1" },
     itemdesc7710028: { i18n_id: "itemdesc7710028", i18n_sb: "孟获魂魄*1" },
     itemdesc7710038: { i18n_id: "itemdesc7710038", i18n_sb: "贾诩魂魄*1" },
@@ -26890,7 +25540,7 @@
     itemdesc7710148: { i18n_id: "itemdesc7710148", i18n_sb: "曹操魂魄*3" },
     itemdesc7710158: { i18n_id: "itemdesc7710158", i18n_sb: "华佗魂魄*3" },
     itemdesc7710168: { i18n_id: "itemdesc7710168", i18n_sb: "曹丕魂魄*3" },
-    itemdesc7710178: { i18n_id: "itemdesc7710178", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*3" },
+    itemdesc7710178: { i18n_id: "itemdesc7710178", i18n_sb: "蜀·孙尚香魂魄*3" },
     itemdesc7710188: { i18n_id: "itemdesc7710188", i18n_sb: "射手黄忠魂魄*3" },
     itemdesc7720010: { i18n_id: "itemdesc7720010", i18n_sb: "骅骝碎片*1" },
     itemdesc7720020: { i18n_id: "itemdesc7720020", i18n_sb: "诸葛连弩碎片*1" },
@@ -27320,7 +25970,7 @@
     dialogname549004021: { i18n_id: "dialogname549004021", i18n_sb: "满宠" },
     dialogname549012015: { i18n_id: "dialogname549012015", i18n_sb: "鲍勋" },
     dialogname549018021: { i18n_id: "dialogname549018021", i18n_sb: "张辽" },
-    dialogname549020013: { i18n_id: "dialogname549020013", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE" },
+    dialogname549020013: { i18n_id: "dialogname549020013", i18n_sb: "神·诸葛亮" },
     dialogdesc501003014: { i18n_id: "dialogdesc501003014", i18n_sb: "看我劈了你！" },
     dialogdesc501003029: { i18n_id: "dialogdesc501003029", i18n_sb: "主公~请收留我吧！！" },
     dialogdesc501005011: { i18n_id: "dialogdesc501005011", i18n_sb: "放下那个妞！让我来！" },
@@ -27529,10 +26179,7 @@
     dialogdesc539018021: { i18n_id: "dialogdesc539018021", i18n_sb: "你爹今晚有一劫，只要他能熬过今晚，就万事无忧。" },
     dialogdesc539020013: { i18n_id: "dialogdesc539020013", i18n_sb: "你已经死了，是被你手下害死的。" },
     dialogdesc540004015: { i18n_id: "dialogdesc540004015", i18n_sb: "张飞临死前吟的诗词是：南北通灵，奇取天下。反正不在南边就在北边，我个人觉得还是曹操。" },
-    dialogdesc540008012: {
-        i18n_id: "dialogdesc540008012",
-        i18n_sb: "\\u4E1E\\u76F8\\u75C5\\u91CD\\u6B63\\xA0\\u5728\\u4FEE\\u517B\\uFF0C\\u95F2\\u6742\\u4EBA\\u7B49\\u4E00\\u5F8B\\u4E0D\\u89C1"
-    },
+    dialogdesc540008012: { i18n_id: "dialogdesc540008012", i18n_sb: "丞相病重正 在修养，闲杂人等一律不见" },
     dialogdesc540012021: { i18n_id: "dialogdesc540012021", i18n_sb: "好兴奋，终于要和野心家对决了，我终于可以跳出这个游戏了！" },
     dialogdesc540018013: { i18n_id: "dialogdesc540018013", i18n_sb: "才说第二句话就动手，曹操果然没看错人" },
     dialogdesc540019021: { i18n_id: "dialogdesc540019021", i18n_sb: "能在临死之前痛快一战，值了！" },
@@ -27676,7 +26323,7 @@
     "8640490101": { i18n_id: "8640490101", i18n_sb: "天梯讨伐者" },
     "8410040201": { i18n_id: "8410040201", i18n_sb: "华佗的心愿" },
     "8410060401": { i18n_id: "8410060401", i18n_sb: "进击的斩将者" },
-    "8410110201": { i18n_id: "8410110201", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u7684\\u5FC3\\u613F" },
+    "8410110201": { i18n_id: "8410110201", i18n_sb: "群·蔡文姬的心愿" },
     "8420020401": { i18n_id: "8420020401", i18n_sb: "斩将的勇士" },
     "8420100101": { i18n_id: "8420100101", i18n_sb: "董白的心愿" },
     "8420180201": { i18n_id: "8420180201", i18n_sb: "天梯的勇士" },
@@ -28797,11 +27444,11 @@
     union_war_reward_title4: { i18n_id: "union_war_reward_title4", i18n_sb: "本服公会战决赛入围奖励" },
     union_war_reward_desc4: { i18n_id: "union_war_reward_desc4", i18n_sb: "本服公会战决赛入围奖励：城之宝匣*50，可获得流星、装备、技能、银两。" },
     sgs_hulao_reward_conf4: { i18n_id: "sgs_hulao_reward_conf4", i18n_sb: "谢礼4(普通);谢礼4(困难);谢礼4(深渊)" },
-    mystery_name_107710008: { i18n_id: "mystery_name_107710008", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*1" },
+    mystery_name_107710008: { i18n_id: "mystery_name_107710008", i18n_sb: "魔·贾诩魂魄*1" },
     mystery_name_107710018: { i18n_id: "mystery_name_107710018", i18n_sb: "陆逊魂魄*1" },
     mystery_name_107710028: { i18n_id: "mystery_name_107710028", i18n_sb: "孟获魂魄*1" },
     mystery_name_107710038: { i18n_id: "mystery_name_107710038", i18n_sb: "贾诩魂魄*1" },
-    mystery_name_107710054: { i18n_id: "mystery_name_107710054", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*1" },
+    mystery_name_107710054: { i18n_id: "mystery_name_107710054", i18n_sb: "魔·貂蝉魂魄*1" },
     mystery_name_107710064: { i18n_id: "mystery_name_107710064", i18n_sb: "郭嘉魂魄*1" },
     mystery_name_107710074: { i18n_id: "mystery_name_107710074", i18n_sb: "曹仁魂魄*1" },
     mystery_name_107710084: { i18n_id: "mystery_name_107710084", i18n_sb: "诸葛亮魂魄*1" },
@@ -28869,9 +27516,9 @@
     itemname9171008: { i18n_id: "itemname9171008", i18n_sb: "公主宪英魂魄" },
     itemname171014: { i18n_id: "itemname171014", i18n_sb: "德古拉魏延" },
     itemname111017: { i18n_id: "itemname111017", i18n_sb: "张郃" },
-    itemname121001: { i18n_id: "itemname121001", i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD" },
+    itemname121001: { i18n_id: "itemname121001", i18n_sb: "神·关羽" },
     itemname171004: { i18n_id: "itemname171004", i18n_sb: "冰雪春华" },
-    itemname151001: { i18n_id: "itemname151001", i18n_sb: "\\u795E\\xB7\\u6307\\u7EB9" },
+    itemname151001: { i18n_id: "itemname151001", i18n_sb: "神·指纹" },
     itemname7750002: { i18n_id: "itemname7750002", i18n_sb: "神秘商品之惊帆碎片*3" },
     itemname7750012: { i18n_id: "itemname7750012", i18n_sb: "神秘商品之青釭剑碎片*3" },
     itemname7750022: { i18n_id: "itemname7750022", i18n_sb: "神秘商品之麒麟弓碎片*3" },
@@ -28891,19 +27538,16 @@
     itemname792064: { i18n_id: "itemname792064", i18n_sb: "冀州枪兵礼包" },
     itemname792074: { i18n_id: "itemname792074", i18n_sb: "西凉大刀兵礼包" },
     itemname792084: { i18n_id: "itemname792084", i18n_sb: "张郃礼包" },
-    itemname792094: { i18n_id: "itemname792094", i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u793C\\u5305" },
+    itemname792094: { i18n_id: "itemname792094", i18n_sb: "神·关羽礼包" },
     itemname792104: { i18n_id: "itemname792104", i18n_sb: "兵长陆逊礼包" },
     itemname792114: { i18n_id: "itemname792114", i18n_sb: "至尊小宝礼包" },
-    itemname792124: { i18n_id: "itemname792124", i18n_sb: "\\u795E\\xB7\\u6307\\u7EB9\\u793C\\u5305" },
+    itemname792124: { i18n_id: "itemname792124", i18n_sb: "神·指纹礼包" },
     itemname792134: { i18n_id: "itemname792134", i18n_sb: "芽间月英礼包" },
     itemname792144: { i18n_id: "itemname792144", i18n_sb: "许褚魂魄礼包" },
     itemname792154: { i18n_id: "itemname792154", i18n_sb: "辛宪英魂魄礼包" },
     itemname792164: { i18n_id: "itemname792164", i18n_sb: "典满魂魄礼包" },
     itemname792174: { i18n_id: "itemname792174", i18n_sb: "青州长枪兵魂魄礼包" },
-    itemname792184: {
-        i18n_id: "itemname792184",
-        i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44\\u793C\\u5305"
-    },
+    itemname792184: { i18n_id: "itemname792184", i18n_sb: "蜀·孙尚香魂魄礼包" },
     itemname792194: { i18n_id: "itemname792194", i18n_sb: "夏侯氏魂魄礼包" },
     itemname792204: { i18n_id: "itemname792204", i18n_sb: "孙乾魂魄礼包" },
     itemname792214: { i18n_id: "itemname792214", i18n_sb: "巴蜀长枪兵魂魄礼包" },
@@ -28920,27 +27564,21 @@
     itemname792324: { i18n_id: "itemname792324", i18n_sb: "孙策魂魄礼包" },
     itemname792334: { i18n_id: "itemname792334", i18n_sb: "兵长陆逊魂魄礼包" },
     itemname792344: { i18n_id: "itemname792344", i18n_sb: "至尊小宝魂魄礼包" },
-    itemname792354: { i18n_id: "itemname792354", i18n_sb: "\\u795E\\xB7\\u6307\\u7EB9\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname792354: { i18n_id: "itemname792354", i18n_sb: "神·指纹魂魄礼包" },
     itemname792364: { i18n_id: "itemname792364", i18n_sb: "芽间月英魂魄礼包" },
-    itemname7740001: {
-        i18n_id: "itemname7740001",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*3"
-    },
+    itemname7740001: { i18n_id: "itemname7740001", i18n_sb: "神秘商品之魔·张飞魂魄*3" },
     itemname7740011: { i18n_id: "itemname7740011", i18n_sb: "神秘商品之曹操魂魄*3" },
     itemname7740021: { i18n_id: "itemname7740021", i18n_sb: "神秘商品之华佗魂魄*3" },
     itemname7740031: { i18n_id: "itemname7740031", i18n_sb: "神秘商品之曹丕魂魄*3" },
-    itemname7740041: {
-        i18n_id: "itemname7740041",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*3"
-    },
+    itemname7740041: { i18n_id: "itemname7740041", i18n_sb: "神秘商品之蜀·孙尚香魂魄*3" },
     itemname7740051: { i18n_id: "itemname7740051", i18n_sb: "神秘商品之射手黄忠魂魄*3" },
     itemdesc9192003: { i18n_id: "itemdesc9192003", i18n_sb: "功夫阿奇魂魄" },
     itemdesc141009: { i18n_id: "itemdesc141009", i18n_sb: "左慈" },
     itemdesc121017: { i18n_id: "itemdesc121017", i18n_sb: "庞统" },
     itemdesc141010: { i18n_id: "itemdesc141010", i18n_sb: "贾诩" },
-    itemdesc181003: { i18n_id: "itemdesc181003", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    itemdesc181003: { i18n_id: "itemdesc181003", i18n_sb: "魔·马超" },
     itemdesc171008: { i18n_id: "itemdesc171008", i18n_sb: "公主宪英" },
-    itemdesc165002: { i18n_id: "itemdesc165002", i18n_sb: "\\u795E\\xB7\\u91CD\\u9A91\\u5175" },
+    itemdesc165002: { i18n_id: "itemdesc165002", i18n_sb: "神·重骑兵" },
     itemdesc7750008: { i18n_id: "itemdesc7750008", i18n_sb: "紫骍碎片*3" },
     itemdesc7750018: { i18n_id: "itemdesc7750018", i18n_sb: "贯石斧碎片*3" },
     itemdesc7750028: { i18n_id: "itemdesc7750028", i18n_sb: "青龙铠碎片*3" },
@@ -28960,10 +27598,7 @@
     itemdesc792070: { i18n_id: "itemdesc792070", i18n_sb: "打开可获得西凉刀兵*1" },
     itemdesc792080: { i18n_id: "itemdesc792080", i18n_sb: "打开可获得鲁肃*1" },
     itemdesc792090: { i18n_id: "itemdesc792090", i18n_sb: "打开可获得贾诩*1" },
-    itemdesc792100: {
-        i18n_id: "itemdesc792100",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u9A6C\\u8D85*1"
-    },
+    itemdesc792100: { i18n_id: "itemdesc792100", i18n_sb: "打开可获得魔·马超*1" },
     itemdesc792110: { i18n_id: "itemdesc792110", i18n_sb: "打开可获得小鸡哔哔*1" },
     itemdesc792120: { i18n_id: "itemdesc792120", i18n_sb: "打开可获得公主宪英*1" },
     itemdesc792130: { i18n_id: "itemdesc792130", i18n_sb: "打开可获得公孙瓒*1" },
@@ -28983,27 +27618,15 @@
     itemdesc792270: { i18n_id: "itemdesc792270", i18n_sb: "打开可获得波才魂魄*1" },
     itemdesc792280: { i18n_id: "itemdesc792280", i18n_sb: "打开可获得黄巾妖术兵魂魄*1" },
     itemdesc792290: { i18n_id: "itemdesc792290", i18n_sb: "打开可获得西凉锤兵魂魄*1" },
-    itemdesc792300: {
-        i18n_id: "itemdesc792300",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*1"
-    },
+    itemdesc792300: { i18n_id: "itemdesc792300", i18n_sb: "打开可获得吴·孙尚香魂魄*1" },
     itemdesc792310: { i18n_id: "itemdesc792310", i18n_sb: "打开可获得姜维魂魄*1" },
-    itemdesc792320: {
-        i18n_id: "itemdesc792320",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44*1"
-    },
-    itemdesc792330: {
-        i18n_id: "itemdesc792330",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*1"
-    },
+    itemdesc792320: { i18n_id: "itemdesc792320", i18n_sb: "打开可获得神·吕布魂魄*1" },
+    itemdesc792330: { i18n_id: "itemdesc792330", i18n_sb: "打开可获得魔·马超魂魄*1" },
     itemdesc792340: { i18n_id: "itemdesc792340", i18n_sb: "打开可获得小鸡哔哔魂魄*1" },
     itemdesc792350: { i18n_id: "itemdesc792350", i18n_sb: "打开可获得公主宪英魂魄*1" },
     itemdesc792360: { i18n_id: "itemdesc792360", i18n_sb: "打开可获得公孙瓒魂魄*1" },
-    itemdesc792370: {
-        i18n_id: "itemdesc792370",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u5927\\u5200\\u5175*1"
-    },
-    itemdesc7740007: { i18n_id: "itemdesc7740007", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*3" },
+    itemdesc792370: { i18n_id: "itemdesc792370", i18n_sb: "打开可获得神·大刀兵*1" },
+    itemdesc7740007: { i18n_id: "itemdesc7740007", i18n_sb: "魔·张角魂魄*3" },
     itemdesc7740017: { i18n_id: "itemdesc7740017", i18n_sb: "小乔魂魄*3" },
     itemdesc7740027: { i18n_id: "itemdesc7740027", i18n_sb: "李典魂魄*3" },
     itemdesc7740037: { i18n_id: "itemdesc7740037", i18n_sb: "张郃魂魄*3" },
@@ -29018,25 +27641,25 @@
         i18n_sb: "1.《王者之战》将在《跨服争霸》结束后连续进行9天共计20轮比赛；\n2.《王者之战》比赛范围：三个大区（边锋专区、安卓区、IOS区）。《跨服争霸》结束后，各区进行《王者之战》的分组，每个分组总共有128名玩家进行比赛；\n3.\t比赛规则：\n128人先进行1轮分组赛，分组时，系统随机两两匹配，一局定胜；\n获胜的64人进入通天组，失败的64人进入求生组；\n通天组与求生组各自再进行淘汰赛；\n通天组胜者可直接进入下一轮通天组淘汰赛；\n通天组败者可进入下一轮求生组选拔赛；\n求生组胜者可进入下一轮求生组选拔赛；\n求生组败者直接被淘汰出局；\n如此反复，9天共计进行20轮比赛，最终决出前四名：\n总冠军：通天组冠军VS求生组冠军；\n亚军：通天组亚军VS总冠军赛失败者；\n季军：亚军争夺赛失败者；\n第四名：求生组亚军；\n4.观战：未参与比赛的所有玩家都可在“赛事总览”参观看王者之战；\n5.支持：所有未参与比赛的玩家（入围玩家不参与），可以在比赛期间支持您喜爱的选手；\n6.支持规则：每一轮比赛分组后至开战前，可到“赛事总览”点击支持按钮进行支持；每日可支持的次数由当日比赛场次决定，每日最多可支持20次；每支持1次，根据胜负可获得不同积分，支持积分可用于兑换宝石箱和灵芝等奖励；\n"
     },
     str_Filter_Silver: { i18n_id: "str_Filter_Silver", i18n_sb: "银" },
-    mystery_name_107700007: { i18n_id: "mystery_name_107700007", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*1" },
+    mystery_name_107700007: { i18n_id: "mystery_name_107700007", i18n_sb: "魔·张角魂魄*1" },
     mystery_name_107700017: { i18n_id: "mystery_name_107700017", i18n_sb: "小乔魂魄*1" },
     mystery_name_107700027: { i18n_id: "mystery_name_107700027", i18n_sb: "李典魂魄*1" },
     mystery_name_107700037: { i18n_id: "mystery_name_107700037", i18n_sb: "张郃魂魄*1" },
     mystery_name_107700047: { i18n_id: "mystery_name_107700047", i18n_sb: "天使尚香魂魄*1" },
     mystery_name_107700057: { i18n_id: "mystery_name_107700057", i18n_sb: "花鬘魂魄*1" },
-    mystery_name_107700067: { i18n_id: "mystery_name_107700067", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*1" },
+    mystery_name_107700067: { i18n_id: "mystery_name_107700067", i18n_sb: "魔·凌统魂魄*1" },
     mystery_name_107700077: { i18n_id: "mystery_name_107700077", i18n_sb: "关羽魂魄*1" },
     mystery_name_107700087: { i18n_id: "mystery_name_107700087", i18n_sb: "黄月英魂魄*1" },
     mystery_name_107700097: { i18n_id: "mystery_name_107700097", i18n_sb: "吕布魂魄*1" },
     mystery_name_107700107: { i18n_id: "mystery_name_107700107", i18n_sb: "周瑜魂魄*1" },
     mystery_name_107700117: { i18n_id: "mystery_name_107700117", i18n_sb: "步练师魂魄*1" },
-    mystery_name_107700127: { i18n_id: "mystery_name_107700127", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*3" },
+    mystery_name_107700127: { i18n_id: "mystery_name_107700127", i18n_sb: "魔·张飞魂魄*3" },
     mystery_name_107700137: { i18n_id: "mystery_name_107700137", i18n_sb: "曹操魂魄*3" },
     mystery_name_107700147: { i18n_id: "mystery_name_107700147", i18n_sb: "华佗魂魄*3" },
     mystery_name_107700157: { i18n_id: "mystery_name_107700157", i18n_sb: "曹丕魂魄*3" },
-    mystery_name_107700167: { i18n_id: "mystery_name_107700167", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*3" },
+    mystery_name_107700167: { i18n_id: "mystery_name_107700167", i18n_sb: "蜀·孙尚香魂魄*3" },
     mystery_name_107700177: { i18n_id: "mystery_name_107700177", i18n_sb: "荀彧魂魄*3" },
-    mystery_name_107700187: { i18n_id: "mystery_name_107700187", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*3" },
+    mystery_name_107700187: { i18n_id: "mystery_name_107700187", i18n_sb: "魔·黄盖魂魄*3" },
     mystery_name_107700197: { i18n_id: "mystery_name_107700197", i18n_sb: "张飞魂魄*3" },
     mystery_name_107700207: { i18n_id: "mystery_name_107700207", i18n_sb: "吕蒙魂魄*3" },
     mystery_name_107700217: { i18n_id: "mystery_name_107700217", i18n_sb: "张辽魂魄*3" },
@@ -29165,19 +27788,19 @@
     mystery_name_107700450: { i18n_id: "mystery_name_107700450", i18n_sb: "雷击残卷" },
     mystery_name_107700460: { i18n_id: "mystery_name_107700460", i18n_sb: "洛神残卷" },
     itemdesc600122: { i18n_id: "itemdesc600122", i18n_sb: "将其他五星将的经验、星级、修炼属性同时传承给曹植，且只能传1次。" },
-    mystery_name_117710007: { i18n_id: "mystery_name_117710007", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*1" },
+    mystery_name_117710007: { i18n_id: "mystery_name_117710007", i18n_sb: "魔·张角魂魄*1" },
     mystery_name_117710017: { i18n_id: "mystery_name_117710017", i18n_sb: "小乔魂魄*1" },
     mystery_name_117710027: { i18n_id: "mystery_name_117710027", i18n_sb: "李典魂魄*1" },
     mystery_name_117710037: { i18n_id: "mystery_name_117710037", i18n_sb: "张郃魂魄*1" },
     mystery_name_117710047: { i18n_id: "mystery_name_117710047", i18n_sb: "天使尚香魂魄*1" },
     mystery_name_117710057: { i18n_id: "mystery_name_117710057", i18n_sb: "花鬘魂魄*1" },
-    mystery_name_107740004: { i18n_id: "mystery_name_107740004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*3" },
+    mystery_name_107740004: { i18n_id: "mystery_name_107740004", i18n_sb: "魔·凌统魂魄*3" },
     mystery_name_107740014: { i18n_id: "mystery_name_107740014", i18n_sb: "关羽魂魄*3" },
     mystery_name_107740024: { i18n_id: "mystery_name_107740024", i18n_sb: "黄月英魂魄*3" },
     mystery_name_107740034: { i18n_id: "mystery_name_107740034", i18n_sb: "吕布魂魄*3" },
     mystery_name_107740044: { i18n_id: "mystery_name_107740044", i18n_sb: "周瑜魂魄*3" },
     mystery_name_107740056: { i18n_id: "mystery_name_107740056", i18n_sb: "孟获魂魄*3" },
-    mystery_name_117740008: { i18n_id: "mystery_name_117740008", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*3" },
+    mystery_name_117740008: { i18n_id: "mystery_name_117740008", i18n_sb: "魔·贾诩魂魄*3" },
     mystery_name_117740018: { i18n_id: "mystery_name_117740018", i18n_sb: "陆逊魂魄*3" },
     mystery_name_117740028: { i18n_id: "mystery_name_117740028", i18n_sb: "孟获魂魄*3" },
     mystery_name_117740038: { i18n_id: "mystery_name_117740038", i18n_sb: "贾诩魂魄*3" },
@@ -29430,10 +28053,7 @@
     "4110250801": { i18n_id: "4110250801", i18n_sb: "直取蜀汉" },
     "4110251801": { i18n_id: "4110251801", i18n_sb: "魏武天下" },
     "4410210401": { i18n_id: "4410210401", i18n_sb: "直言劝谏" },
-    itemdesc79141021: {
-        i18n_id: "itemdesc79141021",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x3,\\u7075\\u829Dx1000"
-    },
+    itemdesc79141021: { i18n_id: "itemdesc79141021", i18n_sb: "神·司马懿魂魄x3,灵芝x1000" },
     "8410210501": { i18n_id: "8410210501", i18n_sb: "心悦诚服" },
     "8410210502": { i18n_id: "8410210502", i18n_sb: "臣服文丑" },
     "351021401": { i18n_id: "351021401", i18n_sb: "救援四阶" },
@@ -29442,23 +28062,17 @@
         i18n_id: "351021405",
         i18n_sb: "免疫此次即将受到的伤害，并提升自身下一次造成的伤害，增加值为攻击力的$2%；若血量低于$3%,血量则恢复50%，并为场上友方恢复25%，一场战斗中仅限一次；行动后，吴大帝有30%概率获得一回合的‘天年’效果。天年：己方武将在行动后，回复20%血量。己方场上每有一名吴国武将（包括副将），概率提升5%"
     },
-    "15100201": { i18n_id: "15100201", i18n_sb: "\\u795E\\xB7\\u8D5B\\u96F7" },
+    "15100201": { i18n_id: "15100201", i18n_sb: "神·赛雷" },
     "4110062001": { i18n_id: "4110062001", i18n_sb: "青龙盖世" },
     "4510020601": { i18n_id: "4510020601", i18n_sb: "征服之神" },
-    itemdesc791110061: {
-        i18n_id: "itemdesc791110061",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x3,\\u7075\\u829Dx1000"
-    },
+    itemdesc791110061: { i18n_id: "itemdesc791110061", i18n_sb: "神·司马懿魂魄x3,灵芝x1000" },
     "8210140801": { i18n_id: "8210140801", i18n_sb: "觉醒战斗" },
     "8210140602": { i18n_id: "8210140602", i18n_sb: "觉醒蜀孙尚香升级图腾至2层2段" },
     "8510020402": { i18n_id: "8510020402", i18n_sb: "过关斩将神榜通过85关" },
-    "35100202": {
-        i18n_id: "35100202",
-        i18n_sb: "\\u3010\\u6B66\\u9B42\\u3011\\u795E\\xB7\\u8D5B\\u96F7\\u66B4\\u70C8\\u7684\\u6B7B\\u4EA1\\u4E4B\\u5FC3\\uFF0C\\u5C5E\\u5356\\u8840\\u6280\\u80FD\\uFF0C\\u4E3B\\u653B\\u3002\\u9635\\u4EA1\\u65F6\\uFF0C\\u53EF\\u5BF9\\u654C\\u65B9\\u5168\\u4F53\\u9020\\u6210\\u653B\\u51FB\\u529B\\u4F24\\u5BB3\\u3002"
-    },
+    "35100202": { i18n_id: "35100202", i18n_sb: "【武魂】神·赛雷暴烈的死亡之心，属卖血技能，主攻。阵亡时，可对敌方全体造成攻击力伤害。" },
     "31102802": {
         i18n_id: "31102802",
-        i18n_sb: "\\u3010\\u62DC\\u5370\\u3011\\u795E\\xB7\\u53F8\\u9A6C\\u62DC\\u5370\\u540E\\u800C\\u56FE\\u8C0B\\u5929\\u4E0B\\uFF0C\\u5C5E\\u63A7\\u573A\\u6280\\u80FD\\uFF0C\\u4E3B\\u667A\\u3002\\u4F60\\u6BCF\\u53D7\\u4E00\\u6B21\\u4F24\\u5BB3\\uFF0C\\u6216\\u884C\\u52A8\\u9636\\u6BB5\\u5F00\\u59CB\\u65F6\\uFF0C\\u83B7\\u5F97\\u4E00\\u679A\\u201C\\u5FCD\\u201D\\u6807\\u5FD7\\u3002\\u82E5\\u201C\\u5FCD\\u201D\\u7684\\u6570\\u91CF\\u6EE1\\u8DB3\\u8981\\u6C42\\uFF0C\\u5219\\u4F60\\u5728\\u5BF9\\u5E94\\u9636\\u6BB5\\u5FC5\\u5B9A\\u6D88\\u8017\\u76F8\\u5E94\\u6570\\u91CF\\u7684\\u201C\\u5FCD\\u201D\\u6807\\u8BB0\\u53D1\\u52A8\\u4EE5\\u4E0B\\u6280\\u80FD\\uFF1A\\u884C\\u52A8\\u524D-\\u5947\\u624D\\uFF084\\u679A\\uFF09\\uFF1B\\u884C\\u52A8\\u65F6-\\u4E71\\u6B66\\uFF083\\u679A\\uFF09\\uFF1B\\u53D7\\u5230\\u6280\\u80FD\\u4F24\\u5BB3\\u65F6-\\u6551\\u63F4\\uFF084\\u679A\\uFF09\\u3002"
+        i18n_sb: "【拜印】神·司马拜印后而图谋天下，属控场技能，主智。你每受一次伤害，或行动阶段开始时，获得一枚“忍”标志。若“忍”的数量满足要求，则你在对应阶段必定消耗相应数量的“忍”标记发动以下技能：行动前-奇才（4枚）；行动时-乱武（3枚）；受到技能伤害时-救援（4枚）。"
     },
     itemdesc111012: { i18n_id: "itemdesc111012", i18n_sb: "曹丕" },
     "4340011401": { i18n_id: "4340011401", i18n_sb: "远交近攻" },
@@ -29594,10 +28208,7 @@
     "8210230402": { i18n_id: "8210230402", i18n_sb: "天赋技能等级达到30级" },
     surrunderdesc_593: { i18n_id: "surrunderdesc_593", i18n_sb: "0" },
     "4110242201": { i18n_id: "4110242201", i18n_sb: "蜀汉亡矣" },
-    itemdesc791110241: {
-        i18n_id: "itemdesc791110241",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791110241: { i18n_id: "itemdesc791110241", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8710030801": { i18n_id: "8710030801", i18n_sb: "觉醒战斗" },
     "8110240702": { i18n_id: "8110240702", i18n_sb: "觉醒钟会升级图腾至2层2段" },
     juexing_zhonghui_open04: { i18n_id: "juexing_zhonghui_open04", i18n_sb: "拥有1个钟会觉醒道具" },
@@ -29627,10 +28238,7 @@
     "4410240301": { i18n_id: "4410240301", i18n_sb: "你的名字" },
     itemname9141024: { i18n_id: "itemname9141024", i18n_sb: "SP马超魂魄" },
     surrunderdesc_596: { i18n_id: "surrunderdesc_596", i18n_sb: "0" },
-    itemdesc79141024: {
-        i18n_id: "itemdesc79141024",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79141024: { i18n_id: "itemdesc79141024", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8410250301": { i18n_id: "8410250301", i18n_sb: "SP张角的心愿" },
     "8410250402": { i18n_id: "8410250402", i18n_sb: "觉醒宝箱开启300次" },
     itemdesc600265: { i18n_id: "itemdesc600265", i18n_sb: "用于兑换端午节活动道具" },
@@ -29672,10 +28280,7 @@
         i18n_id: "21101802",
         i18n_sb: "相传由三国一代枪法宗师童渊所创，童渊晚年收赵云为关门弟子，赵云青出于蓝而胜于蓝，学有所成后赵云单人独骑杀败文丑，枪挑鞠义，长坂坡七进七出，单骑救阿斗，从此天下人而知。"
     },
-    itemdesc600278: {
-        i18n_id: "itemdesc600278",
-        i18n_sb: "\\u5C06\\u5176\\u4ED6\\u4E94\\u661F\\u5C06\\u7684\\u7ECF\\u9A8C\\u3001\\u661F\\u7EA7\\u3001\\u4FEE\\u70BC\\u5C5E\\u6027\\u540C\\u65F6\\u4F20\\u627F\\u7ED9\\u795E\\xB7\\u8D75\\u4E91\\uFF0C\\u4E14\\u53EA\\u80FD\\u4F201\\u6B21\\u3002"
-    },
+    itemdesc600278: { i18n_id: "itemdesc600278", i18n_sb: "将其他五星将的经验、星级、修炼属性同时传承给神·赵云，且只能传1次。" },
     "322011201": { i18n_id: "322011201", i18n_sb: "祸首二阶" },
     "36100201": { i18n_id: "36100201", i18n_sb: "义绝" },
     "352002502": {
@@ -29688,7 +28293,7 @@
     "4220110801": { i18n_id: "4220110801", i18n_sb: "蛮夷入侵" },
     "4310112401": { i18n_id: "4310112401", i18n_sb: "天妒英才" },
     "4520021001": { i18n_id: "4520021001", i18n_sb: "共商国事" },
-    itemname9161001: { i18n_id: "itemname9161001", i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44" },
+    itemname9161001: { i18n_id: "itemname9161001", i18n_sb: "界·关羽魂魄" },
     itemdesc9121024: { i18n_id: "itemdesc9121024", i18n_sb: "SP黄忠魂魄" },
     itemdesc600282: { i18n_id: "itemdesc600282", i18n_sb: "步练师觉醒升级材料碎片" },
     "8210240201": { i18n_id: "8210240201", i18n_sb: "千锤百炼" },
@@ -29785,10 +28390,7 @@
         i18n_sb: "【酒诗】七步即可成诗的曹植，饮酒作诗，属卖血技能，主智。受伤时易触发，受到伤害后，增加下一回合造成的伤害；阵亡时仅限一次，复活后增加自身攻击。现三阶状态下，酒诗发动后将不再受到额外伤害。"
     },
     "312012304": { i18n_id: "312012304", i18n_sb: "自身" },
-    itemdesc791110291: {
-        i18n_id: "itemdesc791110291",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791110291: { i18n_id: "itemdesc791110291", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     "23102001": { i18n_id: "23102001", i18n_sb: "狗货" },
     resolveBox_3: { i18n_id: "resolveBox_3", i18n_sb: "请选择你要分解的数量" },
     "11101601": { i18n_id: "11101601", i18n_sb: "典韦" },
@@ -29809,11 +28411,11 @@
     "16402901": { i18n_id: "16402901", i18n_sb: "西凉重弩兵" },
     "11100501": { i18n_id: "11100501", i18n_sb: "司马懿" },
     "13101601": { i18n_id: "13101601", i18n_sb: "孙坚" },
-    "12100201": { i18n_id: "12100201", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE" },
+    "12100201": { i18n_id: "12100201", i18n_sb: "神·诸葛亮" },
     "13101401": { i18n_id: "13101401", i18n_sb: "黄盖" },
     "17100201": { i18n_id: "17100201", i18n_sb: "跑男夏侯渊" },
     "17100601": { i18n_id: "17100601", i18n_sb: "夜夜星彩" },
-    "18100801": { i18n_id: "18100801", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6" },
+    "18100801": { i18n_id: "18100801", i18n_sb: "魔·黄盖" },
     "11101001": { i18n_id: "11101001", i18n_sb: "荀彧" },
     "11100402": {
         i18n_id: "11100402",
@@ -30044,11 +28646,11 @@
     "34100602": { i18n_id: "34100602", i18n_sb: "【崩坏】董卓的采阴补阳之术，能够延年益寿，属被动技能，主血。装备后，可增加自身血量。" },
     "38100402": {
         i18n_id: "38100402",
-        i18n_sb: "\\u3010\\u9B54\\u65CB\\u98CE\\u3011\\u9B54\\xB7\\u51CC\\u7EDF\\u987B\\u81FE\\u95F4\\u7D22\\u53D6\\u654C\\u4EBA\\u6027\\u547D\\u7684\\u5FEB\\u653B\\u4E4B\\u9053\\uFF0C\\u5C5E\\u653B\\u51FB\\u6280\\u80FD\\uFF0C\\u4E3B\\u653B\\u3002\\u884C\\u52A8\\u65F6\\u6613\\u89E6\\u53D1\\uFF0C\\u53EF\\u5BF9\\u654C\\u65B9\\u968F\\u673A2\\u540D\\u573A\\u4E0A\\u6B66\\u5C06\\u9020\\u6210\\u653B\\u51FB\\u4F24\\u5BB3\\uFF0C\\u540C\\u65F6\\u51CF\\u5C11\\u5176\\u4E0B\\u4E00\\u6B21\\u9020\\u6210\\u7684\\u4F24\\u5BB3\\u3002"
+        i18n_sb: "【魔旋风】魔·凌统须臾间索取敌人性命的快攻之道，属攻击技能，主攻。行动时易触发，可对敌方随机2名场上武将造成攻击伤害，同时减少其下一次造成的伤害。"
     },
     "38100902": {
         i18n_id: "38100902",
-        i18n_sb: "\\u3010\\u9B54\\u4E71\\u6B66\\u3011\\u9B54\\xB7\\u8D3E\\u8BE9\\u5012\\u884C\\u9006\\u65BD\\u3001\\u60D1\\u4E71\\u5FC3\\u667A\\u7684\\u81F4\\u6B7B\\u6BD2\\u7B56\\uFF0C\\u5C5E\\u5356\\u8840\\u6280\\u80FD\\uFF0C\\u4E3B\\u667A\\u3002\\u53D7\\u4F24\\u65F6\\u6613\\u89E6\\u53D1\\uFF0C\\u5BF9\\u654C\\u65B9\\u5168\\u4F53\\u9020\\u6210\\u667A\\u529B\\u4F24\\u5BB3\\uFF0C\\u82E5\\u76EE\\u6807\\u8840\\u91CF\\u5C11\\u4E8E30%\\uFF0C\\u5219\\u5BF9\\u8BE5\\u76EE\\u6807\\u9020\\u6210\\u989D\\u5916\\u4F24\\u5BB3\\u3002"
+        i18n_sb: "【魔乱武】魔·贾诩倒行逆施、惑乱心智的致死毒策，属卖血技能，主智。受伤时易触发，对敌方全体造成智力伤害，若目标血量少于30%，则对该目标造成额外伤害。"
     },
     "31102302": {
         i18n_id: "31102302",
@@ -30305,7 +28907,7 @@
     itemname9112020: { i18n_id: "itemname9112020", i18n_sb: "朱灵魂魄" },
     itemname9164004: { i18n_id: "itemname9164004", i18n_sb: "青州锤兵魂魄" },
     itemname9164038: { i18n_id: "itemname9164038", i18n_sb: "青州长戟兵魂魄" },
-    itemname9121014: { i18n_id: "itemname9121014", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44" },
+    itemname9121014: { i18n_id: "itemname9121014", i18n_sb: "蜀·孙尚香魂魄" },
     itemname9122017: { i18n_id: "itemname9122017", i18n_sb: "甘夫人魂魄" },
     itemname9123013: { i18n_id: "itemname9123013", i18n_sb: "王平魂魄" },
     itemname9164013: { i18n_id: "itemname9164013", i18n_sb: "巴蜀重骑兵魂魄" },
@@ -30481,7 +29083,7 @@
     itemname790366: { i18n_id: "itemname790366", i18n_sb: "1级黄忠礼包" },
     itemname790376: { i18n_id: "itemname790376", i18n_sb: "1级关平礼包" },
     itemname790386: { i18n_id: "itemname790386", i18n_sb: "1级周泰礼包" },
-    itemname790396: { i18n_id: "itemname790396", i18n_sb: "1\\u7EA7\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u793C\\u5305" },
+    itemname790396: { i18n_id: "itemname790396", i18n_sb: "1级群·蔡文姬礼包" },
     itemname790406: { i18n_id: "itemname790406", i18n_sb: "无言礼包" },
     itemname790416: { i18n_id: "itemname790416", i18n_sb: "红颜礼包" },
     itemname791412: { i18n_id: "itemname791412", i18n_sb: "至尊会员礼包" },
@@ -30495,10 +29097,7 @@
     itemname6200030: { i18n_id: "itemname6200030", i18n_sb: "无双铠宝箱(凌统缘分神级防具)" },
     itemname6200040: { i18n_id: "itemname6200040", i18n_sb: "万箭齐发宝箱(袁绍缘分神级锦囊)" },
     itemname6200050: { i18n_id: "itemname6200050", i18n_sb: "乌云踏雪宝箱(张飞缘分神级坐骑)" },
-    itemname6200060: {
-        i18n_id: "itemname6200060",
-        i18n_sb: "\\u8FFD\\u98CE\\u5B9D\\u7BB1(\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u7F18\\u5206\\u795E\\u7EA7\\u5750\\u9A91)"
-    },
+    itemname6200060: { i18n_id: "itemname6200060", i18n_sb: "追风宝箱(群·蔡文姬缘分神级坐骑)" },
     itemname790427: { i18n_id: "itemname790427", i18n_sb: "圣诞节宝箱" },
     itemname791422: { i18n_id: "itemname791422", i18n_sb: "沙里飞礼包" },
     itemname791432: { i18n_id: "itemname791432", i18n_sb: "三国杀活动2" },
@@ -30570,26 +29169,23 @@
     itemname791728: { i18n_id: "itemname791728", i18n_sb: "跨服天梯160积分礼包" },
     itemname791736: { i18n_id: "itemname791736", i18n_sb: "500灵芝" },
     itemname791746: { i18n_id: "itemname791746", i18n_sb: "巅峰之战520积分礼包" },
-    itemname791756: { i18n_id: "itemname791756", i18n_sb: "\\u8D75\\u4E91\\u9B42\\u9B44\\xD730" },
-    itemname791766: { i18n_id: "itemname791766", i18n_sb: "\\u9EC4\\u5FE0\\xD71" },
-    itemname791776: { i18n_id: "itemname791776", i18n_sb: "\\u5143\\u5B9D\\xD72000" },
+    itemname791756: { i18n_id: "itemname791756", i18n_sb: "赵云魂魄×30" },
+    itemname791766: { i18n_id: "itemname791766", i18n_sb: "黄忠×1" },
+    itemname791776: { i18n_id: "itemname791776", i18n_sb: "元宝×2000" },
     itemname11100002: { i18n_id: "itemname11100002", i18n_sb: "女神甄姬" },
     itemname21100003: { i18n_id: "itemname21100003", i18n_sb: "女神大乔皮肤" },
     itemname89171004: { i18n_id: "itemname89171004", i18n_sb: "冰雪春华道具" },
     itemname791793: { i18n_id: "itemname791793", i18n_sb: "女神尚香礼包" },
-    itemname89181001: { i18n_id: "itemname89181001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9053\\u5177" },
-    itemname791811: { i18n_id: "itemname791811", i18n_sb: "\\u767D\\u864E\\u80C4\\xD71" },
+    itemname89181001: { i18n_id: "itemname89181001", i18n_sb: "魔·张飞道具" },
+    itemname791811: { i18n_id: "itemname791811", i18n_sb: "白虎胄×1" },
     itemname547021: { i18n_id: "itemname547021", i18n_sb: "第47章第1个宝箱" },
     itemname10545010: { i18n_id: "itemname10545010", i18n_sb: "第45章隐藏宝箱" },
     itemname791813: { i18n_id: "itemname791813", i18n_sb: "圣诞礼盒" },
     itemname791822: { i18n_id: "itemname791822", i18n_sb: "谢礼3(困难)" },
     itemname791832: { i18n_id: "itemname791832", i18n_sb: "谢礼6(深渊)" },
-    itemname600101: { i18n_id: "itemname600101", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD7277" },
-    itemname600111: { i18n_id: "itemname600111", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD75060" },
-    itemname7710008: {
-        i18n_id: "itemname7710008",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*1"
-    },
+    itemname600101: { i18n_id: "itemname600101", i18n_sb: "主公经验×277" },
+    itemname600111: { i18n_id: "itemname600111", i18n_sb: "主公经验×5060" },
+    itemname7710008: { i18n_id: "itemname7710008", i18n_sb: "神秘商品之魔·贾诩魂魄*1" },
     itemname7710018: { i18n_id: "itemname7710018", i18n_sb: "神秘商品之陆逊魂魄*1" },
     itemname7710028: { i18n_id: "itemname7710028", i18n_sb: "神秘商品之孟获魂魄*1" },
     itemname7710038: { i18n_id: "itemname7710038", i18n_sb: "神秘商品之贾诩魂魄*1" },
@@ -30713,12 +29309,12 @@
     itemdesc9132010: { i18n_id: "itemdesc9132010", i18n_sb: "大虎魂魄" },
     itemdesc9132022: { i18n_id: "itemdesc9132022", i18n_sb: "凌操魂魄" },
     itemdesc9164047: { i18n_id: "itemdesc9164047", i18n_sb: "江东大刀兵魂魄" },
-    itemdesc9141011: { i18n_id: "itemdesc9141011", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u9B42\\u9B44" },
+    itemdesc9141011: { i18n_id: "itemdesc9141011", i18n_sb: "群·蔡文姬魂魄" },
     itemdesc9142019: { i18n_id: "itemdesc9142019", i18n_sb: "郭图魂魄" },
     itemdesc9143017: { i18n_id: "itemdesc9143017", i18n_sb: "波才魂魄" },
     itemdesc9164020: { i18n_id: "itemdesc9164020", i18n_sb: "黄巾妖术兵魂魄" },
     itemdesc9164022: { i18n_id: "itemdesc9164022", i18n_sb: "西凉锤兵魂魄" },
-    itemdesc9181004: { i18n_id: "itemdesc9181004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44" },
+    itemdesc9181004: { i18n_id: "itemdesc9181004", i18n_sb: "魔·凌统魂魄" },
     itemdesc9171010: { i18n_id: "itemdesc9171010", i18n_sb: "天使尚香魂魄" },
     itemdesc9131013: { i18n_id: "itemdesc9131013", i18n_sb: "甘宁魂魄" },
     itemdesc9171012: { i18n_id: "itemdesc9171012", i18n_sb: "英雄王关羽魂魄" },
@@ -30803,124 +29399,37 @@
     itemdesc164026: { i18n_id: "itemdesc164026", i18n_sb: "西凉大刀兵" },
     itemdesc171002: { i18n_id: "itemdesc171002", i18n_sb: "跑男夏侯渊" },
     itemdesc89121011: { i18n_id: "itemdesc89121011", i18n_sb: "诸葛亮道具" },
-    itemdesc79112008: {
-        i18n_id: "itemdesc79112008",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u90ED\\u5609\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79113010: {
-        i18n_id: "itemdesc79113010",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5B59\\u6743\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164032: {
-        i18n_id: "itemdesc79164032",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u621F\\u5175\\xD71,\\u9A86\\u9A7C\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121006: {
-        i18n_id: "itemdesc79121006",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79121019: {
-        i18n_id: "itemdesc79121019",
-        i18n_sb: "\\u5175\\u7CAE\\u5BF8\\u65AD\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79122022: {
-        i18n_id: "itemdesc79122022",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u5218\\u5907\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79123017: {
-        i18n_id: "itemdesc79123017",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5B59\\u6743\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79131006: {
-        i18n_id: "itemdesc79131006",
-        i18n_sb: "\\u5927\\u5B9B\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79132016: {
-        i18n_id: "itemdesc79132016",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u66F9\\u64CD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164002: {
-        i18n_id: "itemdesc79164002",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C5F\\u4E1C\\u5200\\u5175\\xD71,\\u5434\\u516D\\u5251\\u788E\\u7247\\xD71"
-    },
-    itemdesc79141004: {
-        i18n_id: "itemdesc79141004",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79142009: {
-        i18n_id: "itemdesc79142009",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u66F9\\u64CD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79143002: {
-        i18n_id: "itemdesc79143002",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u8881\\u7ECD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164017: {
-        i18n_id: "itemdesc79164017",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9EC4\\u5DFE\\u5996\\u672F\\u5175\\xD71,\\u9ED1\\u9B03\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164021: {
-        i18n_id: "itemdesc79164021",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u897F\\u51C9\\u9524\\u5175\\xD71,\\u5434\\u516D\\u5251\\u788E\\u7247\\xD71"
-    },
-    itemdesc79171001: {
-        i18n_id: "itemdesc79171001",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79131014: {
-        i18n_id: "itemdesc79131014",
-        i18n_sb: "\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79181003: {
-        i18n_id: "itemdesc79181003",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79131005: {
-        i18n_id: "itemdesc79131005",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79171005: {
-        i18n_id: "itemdesc79171005",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79111018: {
-        i18n_id: "itemdesc79111018",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79122014: {
-        i18n_id: "itemdesc79122014",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79141020: {
-        i18n_id: "itemdesc79141020",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
+    itemdesc79112008: { i18n_id: "itemdesc79112008", i18n_sb: "元宝×60,郭嘉魂魄×4" },
+    itemdesc79113010: { i18n_id: "itemdesc79113010", i18n_sb: "元宝×40,孙权魂魄×3" },
+    itemdesc79164032: { i18n_id: "itemdesc79164032", i18n_sb: "元宝×20,青州戟兵×1,骆驼碎片×1" },
+    itemdesc79121006: { i18n_id: "itemdesc79121006", i18n_sb: "神·周瑜魂魄×3,灵芝×1000" },
+    itemdesc79121019: { i18n_id: "itemdesc79121019", i18n_sb: "兵粮寸断碎片×3,灵芝×500" },
+    itemdesc79122022: { i18n_id: "itemdesc79122022", i18n_sb: "元宝×60,刘备魂魄×3" },
+    itemdesc79123017: { i18n_id: "itemdesc79123017", i18n_sb: "元宝×40,孙权魂魄×3" },
+    itemdesc79131006: { i18n_id: "itemdesc79131006", i18n_sb: "大宛碎片×3,灵芝×500" },
+    itemdesc79132016: { i18n_id: "itemdesc79132016", i18n_sb: "元宝×60,曹操魂魄×3" },
+    itemdesc79164002: { i18n_id: "itemdesc79164002", i18n_sb: "元宝×20,江东刀兵×1,吴六剑碎片×1" },
+    itemdesc79141004: { i18n_id: "itemdesc79141004", i18n_sb: "神·诸葛亮魂魄×3,灵芝×1000" },
+    itemdesc79142009: { i18n_id: "itemdesc79142009", i18n_sb: "元宝×60,曹操魂魄×3" },
+    itemdesc79143002: { i18n_id: "itemdesc79143002", i18n_sb: "元宝×40,袁绍魂魄×3" },
+    itemdesc79164017: { i18n_id: "itemdesc79164017", i18n_sb: "元宝×20,黄巾妖术兵×1,黑鬃碎片×1" },
+    itemdesc79164021: { i18n_id: "itemdesc79164021", i18n_sb: "元宝×20,西凉锤兵×1,吴六剑碎片×1" },
+    itemdesc79171001: { i18n_id: "itemdesc79171001", i18n_sb: "神·周瑜魂魄×3,灵芝×1000" },
+    itemdesc79131014: { i18n_id: "itemdesc79131014", i18n_sb: "爪黄飞电碎片×3,灵芝×1000" },
+    itemdesc79181003: { i18n_id: "itemdesc79181003", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79131005: { i18n_id: "itemdesc79131005", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79171005: { i18n_id: "itemdesc79171005", i18n_sb: "神·吕布魂魄×3,灵芝×1000" },
+    itemdesc79111018: { i18n_id: "itemdesc79111018", i18n_sb: "神·吕布魂魄×3,灵芝×1000" },
+    itemdesc79122014: { i18n_id: "itemdesc79122014", i18n_sb: "神·吕蒙魂魄×3,灵芝×1000" },
+    itemdesc79141020: { i18n_id: "itemdesc79141020", i18n_sb: "神·吕蒙魂魄×2,灵芝×1000" },
     itemdesc790225: { i18n_id: "itemdesc790225", i18n_sb: "有大量机会获得玄武盾碎片以及其他稀有道具" },
-    itemdesc790235: {
-        i18n_id: "itemdesc790235",
-        i18n_sb: "\\u5185\\u542B\\u8BF8\\u845B\\u8FDE\\u5F29\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790245: {
-        i18n_id: "itemdesc790245",
-        i18n_sb: "\\u5185\\u542B\\u7384\\u6B66\\u76FE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790255: {
-        i18n_id: "itemdesc790255",
-        i18n_sb: "\\u5185\\u542B\\u5927\\u5B9B\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790265: {
-        i18n_id: "itemdesc790265",
-        i18n_sb: "\\u5185\\u542B\\u4E07\\u7BAD\\u9F50\\u53D1\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790275: {
-        i18n_id: "itemdesc790275",
-        i18n_sb: "\\u5185\\u542B\\u6C99\\u91CC\\u98DE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790285: {
-        i18n_id: "itemdesc790285",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u864E\\u5578\\xD71"
-    },
-    itemdesc790295: { i18n_id: "itemdesc790295", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7100" },
+    itemdesc790235: { i18n_id: "itemdesc790235", i18n_sb: "内含诸葛连弩碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790245: { i18n_id: "itemdesc790245", i18n_sb: "内含玄武盾碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790255: { i18n_id: "itemdesc790255", i18n_sb: "内含大宛碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790265: { i18n_id: "itemdesc790265", i18n_sb: "内含万箭齐发碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790275: { i18n_id: "itemdesc790275", i18n_sb: "内含沙里飞碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790285: { i18n_id: "itemdesc790285", i18n_sb: "打开可获得：虎啸×1" },
+    itemdesc790295: { i18n_id: "itemdesc790295", i18n_sb: "内含灵芝×100" },
     itemdesc791003: { i18n_id: "itemdesc791003", i18n_sb: " " },
     itemdesc740002: { i18n_id: "itemdesc740002", i18n_sb: "5元宝" },
     itemdesc791019: { i18n_id: "itemdesc791019", i18n_sb: "有大量机会获得方天画戟碎片以及其他稀有道具" },
@@ -30976,10 +29485,7 @@
     itemdesc87121009: { i18n_id: "itemdesc87121009", i18n_sb: "黄忠道具（1级）" },
     itemdesc87122009: { i18n_id: "itemdesc87122009", i18n_sb: "关平道具（1级）" },
     itemdesc87131015: { i18n_id: "itemdesc87131015", i18n_sb: "周泰道具（1级）" },
-    itemdesc87141011: {
-        i18n_id: "itemdesc87141011",
-        i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u9053\\u5177\\uFF081\\u7EA7\\uFF09"
-    },
+    itemdesc87141011: { i18n_id: "itemdesc87141011", i18n_sb: "群·蔡文姬道具（1级）" },
     itemdesc790357: { i18n_id: "itemdesc790357", i18n_sb: "内含：1级曹丕一个" },
     itemdesc790367: { i18n_id: "itemdesc790367", i18n_sb: "内含：1级马超一个" },
     itemdesc790377: { i18n_id: "itemdesc790377", i18n_sb: "内含：1级关索一个" },
@@ -31002,41 +29508,17 @@
     itemdesc791413: { i18n_id: "itemdesc791413", i18n_sb: "论坛礼包A" },
     itemdesc791423: { i18n_id: "itemdesc791423", i18n_sb: "青龙铠礼包" },
     itemdesc791433: { i18n_id: "itemdesc791433", i18n_sb: "三国杀活动3" },
-    itemdesc790433: {
-        i18n_id: "itemdesc790433",
-        i18n_sb: "\\u5185\\u542B\\u96CC\\u96C4\\u53CC\\u80A1\\u5251\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790443: {
-        i18n_id: "itemdesc790443",
-        i18n_sb: "\\u5185\\u542B\\u85E4\\u7532\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790453: {
-        i18n_id: "itemdesc790453",
-        i18n_sb: "\\u5185\\u542B\\u60CA\\u5E06\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790463: {
-        i18n_id: "itemdesc790463",
-        i18n_sb: "\\u5185\\u542B\\u95EA\\u7535\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790473: {
-        i18n_id: "itemdesc790473",
-        i18n_sb: "\\u5185\\u542B\\u7070\\u5F71\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
+    itemdesc790433: { i18n_id: "itemdesc790433", i18n_sb: "内含雌雄双股剑碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790443: { i18n_id: "itemdesc790443", i18n_sb: "内含藤甲碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790453: { i18n_id: "itemdesc790453", i18n_sb: "内含惊帆碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790463: { i18n_id: "itemdesc790463", i18n_sb: "内含闪电碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790473: { i18n_id: "itemdesc790473", i18n_sb: "内含灰影碎片×1，神装碎片礼盒×2，金装礼盒×3" },
     itemdesc88112008: { i18n_id: "itemdesc88112008", i18n_sb: "于禁道具（1级）" },
-    itemdesc791441: {
-        i18n_id: "itemdesc791441",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A50\\u5143\\u5B9D \\u91D1\\u7BB1\\u5B50\\xD710 \\u91D1\\u94A5\\u5319\\xD710"
-    },
-    itemdesc791451: {
-        i18n_id: "itemdesc791451",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u8D64\\u5154\\xD71"
-    },
+    itemdesc791441: { i18n_id: "itemdesc791441", i18n_sb: "打开可获得：50元宝 金箱子×10 金钥匙×10" },
+    itemdesc791451: { i18n_id: "itemdesc791451", i18n_sb: "打开可获得：赤兔×1" },
     itemdesc791459: { i18n_id: "itemdesc791459", i18n_sb: "30个元宝" },
-    itemdesc791469: {
-        i18n_id: "itemdesc791469",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u9ED1\\u94C1\\u621F\\xD71"
-    },
-    itemdesc791479: { i18n_id: "itemdesc791479", i18n_sb: "\\u5185\\u542B\\u5143\\u5B9D\\xD798" },
+    itemdesc791469: { i18n_id: "itemdesc791469", i18n_sb: "打开可获得：黑铁戟×1" },
+    itemdesc791479: { i18n_id: "itemdesc791479", i18n_sb: "内含元宝×98" },
     itemdesc791489: { i18n_id: "itemdesc791489", i18n_sb: "【经验银书】:用于技能升级，使用后，可获得少量技能经验。" },
     itemdesc40141007: { i18n_id: "itemdesc40141007", i18n_sb: "141007" },
     itemdesc40121016: { i18n_id: "itemdesc40121016", i18n_sb: "121016" },
@@ -31069,74 +29551,44 @@
     itemdesc791565: { i18n_id: "itemdesc791565", i18n_sb: "L1ZQ" },
     itemdesc791575: { i18n_id: "itemdesc791575", i18n_sb: "L1LH" },
     itemdesc791585: { i18n_id: "itemdesc791585", i18n_sb: "L1DB（之前的礼包SSLBLB新生成）" },
-    itemdesc791595: {
-        i18n_id: "itemdesc791595",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u91D1\\u7BB1\\xD710\\uFF0C\\u91D1\\u94A5\\xD710\\uFF0C\\u6311\\u6218\\u6587\\u4E66\\xD75\\uFF0C\\u5143\\u5B9D\\xD720"
-    },
-    itemdesc791605: {
-        i18n_id: "itemdesc791605",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5173\\u7D22\\u9B42\\u9B44\\xD730"
-    },
+    itemdesc791595: { i18n_id: "itemdesc791595", i18n_sb: "打开可获得：金箱×10，金钥×10，挑战文书×5，元宝×20" },
+    itemdesc791605: { i18n_id: "itemdesc791605", i18n_sb: "打开可获得：关索魂魄×30" },
     itemdesc791608: { i18n_id: "itemdesc791608", i18n_sb: "内含元宝*200" },
     itemdesc791618: { i18n_id: "itemdesc791618", i18n_sb: "内含孙策魂魄*1" },
     itemdesc791628: { i18n_id: "itemdesc791628", i18n_sb: "200元宝 2包子 2红茶 20金钥匙" },
-    itemdesc791638: {
-        i18n_id: "itemdesc791638",
-        i18n_sb: "\\u91D1\\u7BB1\\xD710\\uFF0C\\u94F6\\u7BB1\\xD710\\uFF0C\\u94DC\\u7BB1\\xD710\\uFF0C\\u6311\\u6218\\u6587\\u4E66\\xD74\\uFF0C\\u52FE\\u7389\\xD712"
-    },
+    itemdesc791638: { i18n_id: "itemdesc791638", i18n_sb: "金箱×10，银箱×10，铜箱×10，挑战文书×4，勾玉×12" },
     itemdesc6300082: { i18n_id: "itemdesc6300082", i18n_sb: "可以获得大宛碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
-    itemdesc791649: {
-        i18n_id: "itemdesc791649",
-        i18n_sb: "300\\u5143\\u5B9D\\u300150\\u7075\\u829D\\u3001\\u5305\\u5B50\\xD72"
-    },
+    itemdesc791649: { i18n_id: "itemdesc791649", i18n_sb: "300元宝、50灵芝、包子×2" },
     itemdesc791659: { i18n_id: "itemdesc791659", i18n_sb: "神榜中级宝箱3倍" },
     itemdesc791669: { i18n_id: "itemdesc791669", i18n_sb: "内含关羽魂魄*6" },
     itemdesc192003: { i18n_id: "itemdesc192003", i18n_sb: "功夫阿奇" },
-    itemdesc791683: {
-        i18n_id: "itemdesc791683",
-        i18n_sb: "\\u8DE8\\u670D\\u8D5B\\u62A5\\u540D\\u95E8\\u7968\\xD71\\uFF0C\\u7075\\u829D\\xD7300"
-    },
+    itemdesc791683: { i18n_id: "itemdesc791683", i18n_sb: "跨服赛报名门票×1，灵芝×300" },
     itemdesc791693: { i18n_id: "itemdesc791693", i18n_sb: "城之宝匣*300" },
     itemdesc791700: { i18n_id: "itemdesc791700", i18n_sb: "打开获得国之宝匣*1" },
     itemdesc791709: { i18n_id: "itemdesc791709", i18n_sb: "200元宝、10金宝箱、10金钥匙" },
     itemdesc543021: { i18n_id: "itemdesc543021", i18n_sb: "第43章第1个宝箱" },
     itemdesc10542009: { i18n_id: "itemdesc10542009", i18n_sb: "第42章精英宝箱" },
-    itemdesc791710: { i18n_id: "itemdesc791710", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*1" },
+    itemdesc791710: { i18n_id: "itemdesc791710", i18n_sb: "内含魔·张角魂魄*1" },
     itemdesc730108: { i18n_id: "itemdesc730108", i18n_sb: "10元宝,22400银子" },
     itemdesc730118: { i18n_id: "itemdesc730118", i18n_sb: "10元宝,24400银子" },
     itemdesc600084: { i18n_id: "itemdesc600084", i18n_sb: "可以获得随机7级宝石一颗" },
     itemdesc791719: { i18n_id: "itemdesc791719", i18n_sb: "膜拜赏赐，悬挂后，膜拜过您的人都可获得1个高级传承符。" },
-    itemdesc791729: { i18n_id: "itemdesc791729", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*1" },
+    itemdesc791729: { i18n_id: "itemdesc791729", i18n_sb: "内含魔·董卓魂魄*1" },
     itemdesc791737: { i18n_id: "itemdesc791737", i18n_sb: "打开可获得：青龙偃月刀碎片*10" },
     itemdesc791747: { i18n_id: "itemdesc791747", i18n_sb: "打开可获得252个1级宝石箱" },
-    itemdesc791757: {
-        i18n_id: "itemdesc791757",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u8D64\\u5154\\xD71\\u3001\\u7075\\u829D\\xD72000"
-    },
-    itemdesc791767: {
-        i18n_id: "itemdesc791767",
-        i18n_sb: "\\u7D2F\\u8BA1\\u767B\\u5F55\\u9001\\u795E\\u5C06\\u7B2C3\\u5929\\u9A6C\\u8D85\\xD71"
-    },
-    itemdesc791777: {
-        i18n_id: "itemdesc791777",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5143\\u5B9D\\xD76000"
-    },
+    itemdesc791757: { i18n_id: "itemdesc791757", i18n_sb: "打开可获得赤兔×1、灵芝×2000" },
+    itemdesc791767: { i18n_id: "itemdesc791767", i18n_sb: "累计登录送神将第3天马超×1" },
+    itemdesc791777: { i18n_id: "itemdesc791777", i18n_sb: "打开可获得元宝×6000" },
     itemdesc11100003: { i18n_id: "itemdesc11100003", i18n_sb: "女神大乔" },
     itemdesc21100004: { i18n_id: "itemdesc21100004", i18n_sb: "女神小乔皮肤" },
     itemdesc791804: { i18n_id: "itemdesc791804", i18n_sb: "冰雪春华*1" },
-    itemdesc791794: {
-        i18n_id: "itemdesc791794",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u8C82\\u8749\\u76AE\\u80A4\\xD71"
-    },
-    itemdesc89181003: { i18n_id: "itemdesc89181003", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\xD71" },
+    itemdesc791794: { i18n_id: "itemdesc791794", i18n_sb: "打开可获得女神貂蝉皮肤×1" },
+    itemdesc89181003: { i18n_id: "itemdesc89181003", i18n_sb: "魔·马超×1" },
     itemdesc600091: { i18n_id: "itemdesc600091", i18n_sb: "双十一福袋，收集后可用于兑换双十一礼盒。" },
     itemdesc547022: { i18n_id: "itemdesc547022", i18n_sb: "第42章第2个宝箱" },
     itemdesc10546009: { i18n_id: "itemdesc10546009", i18n_sb: "第41章精英宝箱" },
     itemdesc89131019: { i18n_id: "itemdesc89131019", i18n_sb: "诸葛瑾*1" },
-    itemdesc791823: {
-        i18n_id: "itemdesc791823",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD730\\u3001\\u52FE\\u7389\\xD75\\u3001\\u864E\\u775B\\u77F3\\xD79"
-    },
+    itemdesc791823: { i18n_id: "itemdesc791823", i18n_sb: "打开可获得灵芝×30、勾玉×5、虎睛石×9" },
     itemdesc791833: { i18n_id: "itemdesc791833", i18n_sb: "内含魄*10" },
     itemdesc600102: { i18n_id: "itemdesc600102", i18n_sb: "使用后主公经验可提升895" },
     itemdesc600112: { i18n_id: "itemdesc600112", i18n_sb: "使用后主公经验可提升5175" },
@@ -31380,9 +29832,9 @@
     dialogname507003025: { i18n_id: "dialogname507003025", i18n_sb: "$UserName" },
     dialogname507006021: { i18n_id: "dialogname507006021", i18n_sb: "$UserName" },
     dialogname507011014: { i18n_id: "dialogname507011014", i18n_sb: "$UserName" },
-    dialogname507012023: { i18n_id: "dialogname507012023", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname507012023: { i18n_id: "dialogname507012023", i18n_sb: "吴·孙尚香" },
     dialogname508004013: { i18n_id: "dialogname508004013", i18n_sb: "$UserName" },
-    dialogname508008013: { i18n_id: "dialogname508008013", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname508008013: { i18n_id: "dialogname508008013", i18n_sb: "吴·孙尚香" },
     dialogname508010014: { i18n_id: "dialogname508010014", i18n_sb: "$UserName" },
     dialogname508012021: { i18n_id: "dialogname508012021", i18n_sb: "华佗" },
     dialogname508013022: { i18n_id: "dialogname508013022", i18n_sb: "$UserName" },
@@ -31495,7 +29947,7 @@
     dialogname530008014: { i18n_id: "dialogname530008014", i18n_sb: "$UserName" },
     dialogname530012013: { i18n_id: "dialogname530012013", i18n_sb: "侍女队长" },
     dialogname530016021: { i18n_id: "dialogname530016021", i18n_sb: "大乔" },
-    dialogname530019013: { i18n_id: "dialogname530019013", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname530019013: { i18n_id: "dialogname530019013", i18n_sb: "吴·孙尚香" },
     dialogname530020024: { i18n_id: "dialogname530020024", i18n_sb: "$UserName" },
     dialogname531004021: { i18n_id: "dialogname531004021", i18n_sb: "黄盖" },
     dialogname531012012: { i18n_id: "dialogname531012012", i18n_sb: "周瑜" },
@@ -31806,10 +30258,7 @@
     dialogdesc542020014: { i18n_id: "dialogdesc542020014", i18n_sb: "什么？？我女儿竟然看上了一个汉人？！这事绝不允许！我必须灭了你！" },
     dialogdesc543004011: { i18n_id: "dialogdesc543004011", i18n_sb: "张飞临死前，说野心家不是在北方就是在南方，北方的怀疑对象曹操已经死了，难道说，野心家还是在蜀国？" },
     dialogdesc543008012: { i18n_id: "dialogdesc543008012", i18n_sb: "军师有令，请顾问速速离开白帝城！" },
-    dialogdesc543016011: {
-        i18n_id: "dialogdesc543016011",
-        i18n_sb: "\\u4E3B\\u516C\\u6B63\\u5728\\u5185\\u4FEE\\u517B\\uFF0C\\u519B\\u5E08\\u8BF7\\u987E\\u95EE\\xA0\\u7559\\u6B65\\u3002"
-    },
+    dialogdesc543016011: { i18n_id: "dialogdesc543016011", i18n_sb: "主公正在内修养，军师请顾问 留步。" },
     dialogdesc543018016: { i18n_id: "dialogdesc543018016", i18n_sb: "道听途说就来动手，你也太不仗义了吧。" },
     dialogdesc543020013: { i18n_id: "dialogdesc543020013", i18n_sb: "我还怀疑你是魏国的奸细呢，你跟着我的两个兄弟打仗，他们全死了" },
     dialogdesc544004013: { i18n_id: "dialogdesc544004013", i18n_sb: "想这么多也没用，还是直接去找小诸葛问个清楚吧" },
@@ -31937,7 +30386,7 @@
     "8410020101": { i18n_id: "8410020101", i18n_sb: "吕布的心愿" },
     "8410040301": { i18n_id: "8410040301", i18n_sb: "最强属性" },
     "8410070101": { i18n_id: "8410070101", i18n_sb: "天赋异禀" },
-    "8410110301": { i18n_id: "8410110301", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u7684\\u5FC3\\u613F" },
+    "8410110301": { i18n_id: "8410110301", i18n_sb: "群·蔡文姬的心愿" },
     "8420050101": { i18n_id: "8420050101", i18n_sb: "陈宫的心愿" },
     "8420100201": { i18n_id: "8420100201", i18n_sb: "天梯的勇士" },
     "8420180301": { i18n_id: "8420180301", i18n_sb: "心悦诚服" },
@@ -31950,7 +30399,7 @@
     "8110120301": { i18n_id: "8110120301", i18n_sb: "战技宗师" },
     "8310130101": { i18n_id: "8310130101", i18n_sb: "神书终结者" },
     "8310170301": { i18n_id: "8310170301", i18n_sb: "天赋异禀" },
-    "8810010101": { i18n_id: "8810010101", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u7684\\u5FC3\\u613F" },
+    "8810010101": { i18n_id: "8810010101", i18n_sb: "魔·张飞的心愿" },
     "8420060301": { i18n_id: "8420060301", i18n_sb: "最强属性" },
     "8210010101": { i18n_id: "8210010101", i18n_sb: "天赋异禀" },
     "8920030101": { i18n_id: "8920030101", i18n_sb: "战技宗师" },
@@ -32816,7 +31265,7 @@
     "1071110010": { i18n_id: "1071110010", i18n_sb: "全部精力恢复：" },
     "1071110020": { i18n_id: "1071110020", i18n_sb: "技能效果" },
     "1071110030": { i18n_id: "1071110030", i18n_sb: "经验转化值：经验$1($2)\n$3等级：$4—>$5 $6—>$7\n返还千年灵芝：$8" },
-    "1071110040": { i18n_id: "1071110040", i18n_sb: "\\u94F6\\u4E24\\xD7$1" },
+    "1071110040": { i18n_id: "1071110040", i18n_sb: "银两×$1" },
     "1071110050": { i18n_id: "1071110050", i18n_sb: "主公经验" },
     "1071110060": { i18n_id: "1071110060", i18n_sb: "装备差?" },
     "1071210001": { i18n_id: "1071210001", i18n_sb: "普通修炼" },
@@ -33062,7 +31511,7 @@
     mystery_name_107710019: { i18n_id: "mystery_name_107710019", i18n_sb: "太史慈魂魄*1" },
     mystery_name_107710029: { i18n_id: "mystery_name_107710029", i18n_sb: "华雄魂魄*1" },
     mystery_name_107710039: { i18n_id: "mystery_name_107710039", i18n_sb: "赵云魂魄*1" },
-    mystery_name_107710055: { i18n_id: "mystery_name_107710055", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*1" },
+    mystery_name_107710055: { i18n_id: "mystery_name_107710055", i18n_sb: "魔·凌统魂魄*1" },
     mystery_name_107710065: { i18n_id: "mystery_name_107710065", i18n_sb: "关羽魂魄*1" },
     mystery_name_107710075: { i18n_id: "mystery_name_107710075", i18n_sb: "黄月英魂魄*1" },
     mystery_name_107710085: { i18n_id: "mystery_name_107710085", i18n_sb: "吕布魂魄*1" },
@@ -33130,7 +31579,7 @@
     itemname9171009: { i18n_id: "itemname9171009", i18n_sb: "软妹袁姬魂魄" },
     itemname124001: { i18n_id: "itemname124001", i18n_sb: "昭烈帝" },
     itemname111018: { i18n_id: "itemname111018", i18n_sb: "徐晃" },
-    itemname131002: { i18n_id: "itemname131002", i18n_sb: "\\u795E\\xB7\\u5415\\u8499" },
+    itemname131002: { i18n_id: "itemname131002", i18n_sb: "神·吕蒙" },
     itemname171006: { i18n_id: "itemname171006", i18n_sb: "夜夜星彩" },
     itemname111023: { i18n_id: "itemname111023", i18n_sb: "程昱" },
     itemname7750003: { i18n_id: "itemname7750003", i18n_sb: "神秘商品之赤兔碎片*3" },
@@ -33152,7 +31601,7 @@
     itemname792065: { i18n_id: "itemname792065", i18n_sb: "冀州斧兵礼包" },
     itemname792075: { i18n_id: "itemname792075", i18n_sb: "西凉重锤兵礼包" },
     itemname792085: { i18n_id: "itemname792085", i18n_sb: "徐晃礼包" },
-    itemname792095: { i18n_id: "itemname792095", i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u793C\\u5305" },
+    itemname792095: { i18n_id: "itemname792095", i18n_sb: "神·吕蒙礼包" },
     itemname792105: { i18n_id: "itemname792105", i18n_sb: "跑男夏侯渊礼包" },
     itemname792115: { i18n_id: "itemname792115", i18n_sb: "夜夜星彩礼包" },
     itemname792125: { i18n_id: "itemname792125", i18n_sb: "程昱礼包" },
@@ -33180,10 +31629,7 @@
     itemname792345: { i18n_id: "itemname792345", i18n_sb: "夜夜星彩魂魄礼包" },
     itemname792355: { i18n_id: "itemname792355", i18n_sb: "程昱魂魄礼包" },
     itemname792365: { i18n_id: "itemname792365", i18n_sb: "德古拉魏延魂魄礼包" },
-    itemname7740002: {
-        i18n_id: "itemname7740002",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*3"
-    },
+    itemname7740002: { i18n_id: "itemname7740002", i18n_sb: "神秘商品之魔·马超魂魄*3" },
     itemname7740012: { i18n_id: "itemname7740012", i18n_sb: "神秘商品之孙权魂魄*3" },
     itemname7740022: { i18n_id: "itemname7740022", i18n_sb: "神秘商品之张角魂魄*3" },
     itemname7740032: { i18n_id: "itemname7740032", i18n_sb: "神秘商品之甄姬魂魄*3" },
@@ -33193,7 +31639,7 @@
     itemdesc111010: { i18n_id: "itemdesc111010", i18n_sb: "荀彧" },
     itemdesc142008: { i18n_id: "itemdesc142008", i18n_sb: "张宝" },
     itemdesc142006: { i18n_id: "itemdesc142006", i18n_sb: "华雄" },
-    itemdesc181004: { i18n_id: "itemdesc181004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF" },
+    itemdesc181004: { i18n_id: "itemdesc181004", i18n_sb: "魔·凌统" },
     itemdesc171009: { i18n_id: "itemdesc171009", i18n_sb: "软妹袁姬" },
     itemdesc79165001: { i18n_id: "itemdesc79165001", i18n_sb: "毛驴碎片x1" },
     itemdesc7750009: { i18n_id: "itemdesc7750009", i18n_sb: "乌云踏雪碎片*3" },
@@ -33215,10 +31661,7 @@
     itemdesc792071: { i18n_id: "itemdesc792071", i18n_sb: "打开可获得西凉锤兵*1" },
     itemdesc792081: { i18n_id: "itemdesc792081", i18n_sb: "打开可获得张宝*1" },
     itemdesc792091: { i18n_id: "itemdesc792091", i18n_sb: "打开可获得华雄*1" },
-    itemdesc792101: {
-        i18n_id: "itemdesc792101",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u51CC\\u7EDF*1"
-    },
+    itemdesc792101: { i18n_id: "itemdesc792101", i18n_sb: "打开可获得魔·凌统*1" },
     itemdesc792111: { i18n_id: "itemdesc792111", i18n_sb: "打开可获得功夫阿奇*1" },
     itemdesc792121: { i18n_id: "itemdesc792121", i18n_sb: "打开可获得软妹袁姬*1" },
     itemdesc792131: { i18n_id: "itemdesc792131", i18n_sb: "打开可获得左慈*1" },
@@ -33233,10 +31676,7 @@
     itemdesc792221: { i18n_id: "itemdesc792221", i18n_sb: "打开可获得周泰魂魄*1" },
     itemdesc792231: { i18n_id: "itemdesc792231", i18n_sb: "打开可获得陆延魂魄*1" },
     itemdesc792241: { i18n_id: "itemdesc792241", i18n_sb: "打开可获得江东长弓兵魂魄*1" },
-    itemdesc792251: {
-        i18n_id: "itemdesc792251",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u9B42\\u9B44*1"
-    },
+    itemdesc792251: { i18n_id: "itemdesc792251", i18n_sb: "打开可获得群·蔡文姬魂魄*1" },
     itemdesc792261: { i18n_id: "itemdesc792261", i18n_sb: "打开可获得田丰魂魄*1" },
     itemdesc792271: { i18n_id: "itemdesc792271", i18n_sb: "打开可获得牛辅魂魄*1" },
     itemdesc792281: { i18n_id: "itemdesc792281", i18n_sb: "打开可获得黄巾大刀兵魂魄*1" },
@@ -33244,18 +31684,12 @@
     itemdesc792301: { i18n_id: "itemdesc792301", i18n_sb: "打开可获得鲁肃魂魄*1" },
     itemdesc792311: { i18n_id: "itemdesc792311", i18n_sb: "打开可获得周瑜魂魄*1" },
     itemdesc792321: { i18n_id: "itemdesc792321", i18n_sb: "打开可获得曹丕魂魄*1" },
-    itemdesc792331: {
-        i18n_id: "itemdesc792331",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*1"
-    },
+    itemdesc792331: { i18n_id: "itemdesc792331", i18n_sb: "打开可获得魔·凌统魂魄*1" },
     itemdesc792341: { i18n_id: "itemdesc792341", i18n_sb: "打开可获得功夫阿奇魂魄*1" },
     itemdesc792351: { i18n_id: "itemdesc792351", i18n_sb: "打开可获得软妹袁姬魂魄*1" },
     itemdesc792361: { i18n_id: "itemdesc792361", i18n_sb: "打开可获得左慈魂魄*1" },
-    itemdesc792371: {
-        i18n_id: "itemdesc792371",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u91CD\\u9A91\\u5175*1"
-    },
-    itemdesc7740008: { i18n_id: "itemdesc7740008", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*3" },
+    itemdesc792371: { i18n_id: "itemdesc792371", i18n_sb: "打开可获得神·重骑兵*1" },
+    itemdesc7740008: { i18n_id: "itemdesc7740008", i18n_sb: "魔·贾诩魂魄*3" },
     itemdesc7740018: { i18n_id: "itemdesc7740018", i18n_sb: "陆逊魂魄*3" },
     itemdesc7740028: { i18n_id: "itemdesc7740028", i18n_sb: "孟获魂魄*3" },
     itemdesc7740038: { i18n_id: "itemdesc7740038", i18n_sb: "贾诩魂魄*3" },
@@ -33270,25 +31704,25 @@
         i18n_sb: "7.每日支持次数与积分：\n第1天可支持可支持次数：20；支持正确：+2积分/次；支持失误：+1积分/次；\n第2天可支持可支持次数：20；支持正确：+3积分/次；支持失误：+1积分/次；\n第3天可支持可支持次数：20；支持正确：+4积分/次；支持失误：+1积分/次；\n第4天可支持可支持次数：20；支持正确：+5积分/次；支持失误：+1积分/次；\n第5天可支持可支持次数：16；支持正确：+6积分/次；支持失误：+1积分/次；\n第6天可支持可支持次数：16；支持正确：+7积分/次；支持失误：+1积分/次；\n第7天可支持可支持次数：16；支持正确：+8积分/次；支持失误：+1积分/次；\n第8天可支持可支持次数：10；支持正确：+9积分/次；支持失误：+1积分/次；\n第9天可支持可支持次数：4；支持正确：+10积分/次；支持失误：+1积分/次；\n8.支持排行：支持积分的排行榜，取全区全服的前50名（支持积分相同时，取优先到达该积分的玩家）；\n9.支持排行奖励：支持排行榜上的所有玩家都可获得一定的元宝奖励；赛后通过系统邮件统一发送奖励；\n第1名奖励：2000元宝；\n第2名奖励：1500元宝；\n第3名奖励：1000元宝；\n第4名奖励：500元宝；\n第5-10名奖励：300元宝；\n第11-20名奖励：200元宝；\n"
     },
     str_Filter_Copper: { i18n_id: "str_Filter_Copper", i18n_sb: "铜" },
-    mystery_name_107700008: { i18n_id: "mystery_name_107700008", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*1" },
+    mystery_name_107700008: { i18n_id: "mystery_name_107700008", i18n_sb: "魔·贾诩魂魄*1" },
     mystery_name_107700018: { i18n_id: "mystery_name_107700018", i18n_sb: "陆逊魂魄*1" },
     mystery_name_107700028: { i18n_id: "mystery_name_107700028", i18n_sb: "孟获魂魄*1" },
     mystery_name_107700038: { i18n_id: "mystery_name_107700038", i18n_sb: "贾诩魂魄*1" },
     mystery_name_107700048: { i18n_id: "mystery_name_107700048", i18n_sb: "孙策魂魄*1" },
     mystery_name_107700058: { i18n_id: "mystery_name_107700058", i18n_sb: "公孙瓒魂魄*1" },
-    mystery_name_107700068: { i18n_id: "mystery_name_107700068", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*1" },
+    mystery_name_107700068: { i18n_id: "mystery_name_107700068", i18n_sb: "魔·黄盖魂魄*1" },
     mystery_name_107700078: { i18n_id: "mystery_name_107700078", i18n_sb: "张飞魂魄*1" },
     mystery_name_107700088: { i18n_id: "mystery_name_107700088", i18n_sb: "吕蒙魂魄*1" },
     mystery_name_107700098: { i18n_id: "mystery_name_107700098", i18n_sb: "张辽魂魄*1" },
     mystery_name_107700108: { i18n_id: "mystery_name_107700108", i18n_sb: "张春华魂魄*1" },
     mystery_name_107700118: { i18n_id: "mystery_name_107700118", i18n_sb: "程昱魂魄*1" },
-    mystery_name_107700128: { i18n_id: "mystery_name_107700128", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44*3" },
+    mystery_name_107700128: { i18n_id: "mystery_name_107700128", i18n_sb: "魔·马超魂魄*3" },
     mystery_name_107700138: { i18n_id: "mystery_name_107700138", i18n_sb: "孙权魂魄*3" },
     mystery_name_107700148: { i18n_id: "mystery_name_107700148", i18n_sb: "张角魂魄*3" },
     mystery_name_107700158: { i18n_id: "mystery_name_107700158", i18n_sb: "甄姬魂魄*3" },
     mystery_name_107700168: { i18n_id: "mystery_name_107700168", i18n_sb: "司马懿魂魄*3" },
     mystery_name_107700178: { i18n_id: "mystery_name_107700178", i18n_sb: "步练师魂魄*3" },
-    mystery_name_107700188: { i18n_id: "mystery_name_107700188", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*3" },
+    mystery_name_107700188: { i18n_id: "mystery_name_107700188", i18n_sb: "魔·董卓魂魄*3" },
     mystery_name_107700198: { i18n_id: "mystery_name_107700198", i18n_sb: "马超魂魄*3" },
     mystery_name_107700208: { i18n_id: "mystery_name_107700208", i18n_sb: "甘宁魂魄*3" },
     mystery_name_107700218: { i18n_id: "mystery_name_107700218", i18n_sb: "庞统魂魄*3" },
@@ -33411,13 +31845,13 @@
     mystery_name_107700451: { i18n_id: "mystery_name_107700451", i18n_sb: "闭月残卷" },
     mystery_name_107700461: { i18n_id: "mystery_name_107700461", i18n_sb: "雷击残卷" },
     itemdesc600123: { i18n_id: "itemdesc600123", i18n_sb: "将其他五星将的经验、星级、修炼属性同时传承给祝融，且只能传1次。" },
-    mystery_name_117710008: { i18n_id: "mystery_name_117710008", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*1" },
+    mystery_name_117710008: { i18n_id: "mystery_name_117710008", i18n_sb: "魔·贾诩魂魄*1" },
     mystery_name_117710018: { i18n_id: "mystery_name_117710018", i18n_sb: "陆逊魂魄*1" },
     mystery_name_117710028: { i18n_id: "mystery_name_117710028", i18n_sb: "孟获魂魄*1" },
     mystery_name_117710038: { i18n_id: "mystery_name_117710038", i18n_sb: "贾诩魂魄*1" },
     mystery_name_117710048: { i18n_id: "mystery_name_117710048", i18n_sb: "孙策魂魄*1" },
     mystery_name_117710058: { i18n_id: "mystery_name_117710058", i18n_sb: "公孙瓒魂魄*1" },
-    mystery_name_107740005: { i18n_id: "mystery_name_107740005", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*3" },
+    mystery_name_107740005: { i18n_id: "mystery_name_107740005", i18n_sb: "魔·黄盖魂魄*3" },
     mystery_name_107740015: { i18n_id: "mystery_name_107740015", i18n_sb: "张飞魂魄*3" },
     mystery_name_107740025: { i18n_id: "mystery_name_107740025", i18n_sb: "吕蒙魂魄*3" },
     mystery_name_107740035: { i18n_id: "mystery_name_107740035", i18n_sb: "张辽魂魄*3" },
@@ -33489,10 +31923,7 @@
     "4110171201": { i18n_id: "4110171201", i18n_sb: "骁勇善战" },
     chuJi_JuanZhou: { i18n_id: "chuJi_JuanZhou", i18n_sb: "初级卷轴" },
     "34201304": { i18n_id: "34201304", i18n_sb: "敌方单体" },
-    itemdesc79142013: {
-        i18n_id: "itemdesc79142013",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x4,\\u7075\\u829Dx1000"
-    },
+    itemdesc79142013: { i18n_id: "itemdesc79142013", i18n_sb: "神·曹操魂魄x4,灵芝x1000" },
     "8420130402": { i18n_id: "8420130402", i18n_sb: "修炼武将智属性至5000" },
     "321010302": {
         i18n_id: "321010302",
@@ -33542,7 +31973,7 @@
     dialogname553008014: { i18n_id: "dialogname553008014", i18n_sb: "$UserName" },
     dialogname553016012: { i18n_id: "dialogname553016012", i18n_sb: "简雍" },
     dialogname553018022: { i18n_id: "dialogname553018022", i18n_sb: "严颜" },
-    dialogname553020014: { i18n_id: "dialogname553020014", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    dialogname553020014: { i18n_id: "dialogname553020014", i18n_sb: "魔·马超" },
     dialogname554004021: { i18n_id: "dialogname554004021", i18n_sb: "孟达" },
     dialogname554012015: { i18n_id: "dialogname554012015", i18n_sb: "$UserName" },
     dialogname554018012: { i18n_id: "dialogname554018012", i18n_sb: "满宠" },
@@ -33574,10 +32005,7 @@
     dialogdesc554018012: { i18n_id: "dialogdesc554018012", i18n_sb: "程昱军师已带兵攻入成都。" },
     dialogdesc554020012: { i18n_id: "dialogdesc554020012", i18n_sb: "我不信！" },
     "34101704": { i18n_id: "34101704", i18n_sb: "敌方单体" },
-    itemdesc79141017: {
-        i18n_id: "itemdesc79141017",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x3,\\u7075\\u829Dx1000"
-    },
+    itemdesc79141017: { i18n_id: "itemdesc79141017", i18n_sb: "神·曹操魂魄x3,灵芝x1000" },
     "8410170402": { i18n_id: "8410170402", i18n_sb: "修炼武将攻属性至5000" },
     "331004501": { i18n_id: "331004501", i18n_sb: "反间五阶" },
     "331004502": {
@@ -33623,10 +32051,7 @@
     AwakeTuTengTitle: { i18n_id: "AwakeTuTengTitle", i18n_sb: "点亮图腾" },
     AwakeConfirmTopLabel: { i18n_id: "AwakeConfirmTopLabel", i18n_sb: "进化需要消耗" },
     "37101603": { i18n_id: "37101603", i18n_sb: "行动后 易触发" },
-    itemdesc79171016: {
-        i18n_id: "itemdesc79171016",
-        i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44x4,\\u7075\\u829Dx1000"
-    },
+    itemdesc79171016: { i18n_id: "itemdesc79171016", i18n_sb: "神·曹操魂魄x4,灵芝x1000" },
     surrunderdesc_544: { i18n_id: "surrunderdesc_544", i18n_sb: "0" },
     itemname792706: { i18n_id: "itemname792706", i18n_sb: "3级宝石箱*5" },
     itemdesc792708: { i18n_id: "itemdesc792708", i18n_sb: "打开可获得：3级宝石箱*8" },
@@ -33696,21 +32121,18 @@
     },
     "15100202": {
         i18n_id: "15100202",
-        i18n_sb: "\\u795E\\xB7\\u8D5B\\u96F7\\u662F\\u4E2A\\u4E2A\\u6027\\u53E4\\u602A\\u7684\\u5BB6\\u4F19\\uFF0C\\u5014\\u5F3A\\u7684\\u65F6\\u5019\\u4EBA\\u795E\\u5171\\u6124\\uFF0C\\u53EF\\u7231\\u7684\\u65F6\\u5019\\u53C8\\u683C\\u5916\\u8BA8\\u559C\\u3002\\u522B\\u626D\\u800C\\u53C8\\u5446\\u840C\\uFF0C\\u5927\\u5BB6\\u90FD\\u4E0D\\u77E5\\u9053\\u5B83\\u8111\\u5B50\\u91CC\\u5230\\u5E95\\u88C5\\u4E86\\u4EC0\\u4E48\\u5947\\u5947\\u602A\\u602A\\u7684\\u4E1C\\u897F\\u3002"
+        i18n_sb: "神·赛雷是个个性古怪的家伙，倔强的时候人神共愤，可爱的时候又格外讨喜。别扭而又呆萌，大家都不知道它脑子里到底装了什么奇奇怪怪的东西。"
     },
     "4110062101": { i18n_id: "4110062101", i18n_sb: "红莲起舞" },
     itemname791210141: { i18n_id: "itemname791210141", i18n_sb: "臣服奖励" },
-    itemdesc600229: {
-        i18n_id: "itemdesc600229",
-        i18n_sb: "\\u5C06\\u5176\\u4ED6\\u4E94\\u661F\\u5C06\\u7684\\u7ECF\\u9A8C\\u3001\\u661F\\u7EA7\\u3001\\u4FEE\\u70BC\\u5C5E\\u6027\\u540C\\u65F6\\u4F20\\u627F\\u7ED9\\u795E\\xB7\\u66F9\\u64CD\\uFF0C\\u4E14\\u53EA\\u80FD\\u4F201\\u6B21\\u3002"
-    },
+    itemdesc600229: { i18n_id: "itemdesc600229", i18n_sb: "将其他五星将的经验、星级、修炼属性同时传承给神·曹操，且只能传1次。" },
     "8110060501": { i18n_id: "8110060501", i18n_sb: "开启觉醒宝箱" },
     "8210140702": { i18n_id: "8210140702", i18n_sb: "觉醒蜀孙尚香升级图腾至4层2段" },
     juexing_shusunshangxiang_open01: { i18n_id: "juexing_shusunshangxiang_open01", i18n_sb: "蜀孙尚香突破至5星" },
     "35100203": { i18n_id: "35100203", i18n_sb: "阵亡时 " },
     "35103802": {
         i18n_id: "35103802",
-        i18n_sb: "\\u3010\\u8FDE\\u7834\\u3011\\u795E\\xB7\\u53F8\\u9A6C\\u8FDE\\u73AF\\u7834\\u654C\\uFF0C\\u58EB\\u6C14\\u9AD8\\u6DA8\\uFF0C\\u5C5E\\u88AB\\u52A8\\u6280\\u80FD\\uFF0C\\u4E3B\\u667A\\u3002\\u88C5\\u5907\\u540E\\uFF0C\\u53EF\\u589E\\u52A0\\u81EA\\u8EAB\\u667A\\u529B\\u3002\\u6BCF\\u6709\\u4E00\\u540D\\u654C\\u65B9\\u6B66\\u5C06\\u9635\\u4EA1\\uFF0C\\u83B7\\u5F97\\u4E00\\u679A\\u201C\\u5FCD\\u201D\\u6807\\u8BB0\\u3002\\u9635\\u4EA1\\u65F6\\u9650\\u4E00\\u6B21\\uFF0C\\u82E5\\u4F60\\u7684\\u201C\\u5FCD\\u201D\\u6807\\u8BB0\\u6570\\u91CF\\u4E3A4\\u6216\\u66F4\\u591A\\uFF0C\\u6E05\\u7A7A\\u6240\\u6709\\u6807\\u8BB0\\u5E76\\u5C06\\u8840\\u91CF\\u56DE\\u590D\\u81F350%\\u3002"
+        i18n_sb: "【连破】神·司马连环破敌，士气高涨，属被动技能，主智。装备后，可增加自身智力。每有一名敌方武将阵亡，获得一枚“忍”标记。阵亡时限一次，若你的“忍”标记数量为4或更多，清空所有标记并将血量回复至50%。"
     },
     surrunderdesc_557: { i18n_id: "surrunderdesc_557", i18n_sb: "0" },
     "4340011501": { i18n_id: "4340011501", i18n_sb: "容我三思" },
@@ -33841,18 +32263,12 @@
     "32102304": { i18n_id: "32102304", i18n_sb: "敌方单体" },
     "4310220101": { i18n_id: "4310220101", i18n_sb: "之于子归" },
     itemname79121023: { i18n_id: "itemname79121023", i18n_sb: "臣服奖励" },
-    itemdesc79121023: {
-        i18n_id: "itemdesc79121023",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79121023: { i18n_id: "itemdesc79121023", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8210230501": { i18n_id: "8210230501", i18n_sb: "突破界限" },
     "8210230502": { i18n_id: "8210230502", i18n_sb: "关兴张苞突破至5星" },
     "4710031901": { i18n_id: "4710031901", i18n_sb: "朱雀红颜" },
     "4110242301": { i18n_id: "4110242301", i18n_sb: "密谋天下" },
-    itemdesc791710031: {
-        i18n_id: "itemdesc791710031",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791710031: { i18n_id: "itemdesc791710031", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8110240601": { i18n_id: "8110240601", i18n_sb: "开启觉醒宝箱" },
     "8110240802": { i18n_id: "8110240802", i18n_sb: "觉醒钟会升级图腾至4层2段" },
     "321005101": { i18n_id: "321005101", i18n_sb: "奇才一阶" },
@@ -33903,7 +32319,7 @@
     e_beauty_1023: { i18n_id: "e_beauty_1023", i18n_sb: "红颜参数异常" },
     "32102401": { i18n_id: "32102401", i18n_sb: "绝境" },
     "4210210601": { i18n_id: "4210210601", i18n_sb: "诸神之国" },
-    "8210210202": { i18n_id: "8210210202", i18n_sb: "\\u81E3\\u670D\\u795E\\xB7\\u53F8\\u9A6C\\u61FF" },
+    "8210210202": { i18n_id: "8210210202", i18n_sb: "臣服神·司马懿" },
     itemname600275: { i18n_id: "itemname600275", i18n_sb: "双股剑碎片" },
     itemdesc600276: { i18n_id: "itemdesc600276", i18n_sb: "赵云觉醒升级材料" },
     juexing_zhaoyun_open01: { i18n_id: "juexing_zhaoyun_open01", i18n_sb: "赵云突破至5星" },
@@ -33929,7 +32345,7 @@
     "4420131901": { i18n_id: "4420131901", i18n_sb: "凤舞之尊" },
     "4520021101": { i18n_id: "4520021101", i18n_sb: "国之王者" },
     itemname121024: { i18n_id: "itemname121024", i18n_sb: "SP黄忠" },
-    itemdesc9161001: { i18n_id: "itemdesc9161001", i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44" },
+    itemdesc9161001: { i18n_id: "itemdesc9161001", i18n_sb: "界·关羽魂魄" },
     "8420130601": { i18n_id: "8420130601", i18n_sb: "开启觉醒宝箱" },
     "8210240301": { i18n_id: "8210240301", i18n_sb: "SP黄忠的心愿" },
     "8210240102": { i18n_id: "8210240102", i18n_sb: "修炼武将攻属性至6000" },
@@ -34019,10 +32435,7 @@
         i18n_sb: "【酒诗】七步即可成诗的曹植，饮酒作诗，属卖血技能，主智。受伤时易触发，受到伤害后，增加下一回合造成的伤害；阵亡时仅限一次，复活后增加自身攻击。现四阶状态下，己方另两名武将可享受酒诗的增伤效果"
     },
     "312012404": { i18n_id: "312012404", i18n_sb: "自身" },
-    itemdesc791710151: {
-        i18n_id: "itemdesc791710151",
-        i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc791710151: { i18n_id: "itemdesc791710151", i18n_sb: "界·关羽魂魄x2,灵芝x1000" },
     "23102002": { i18n_id: "23102002", i18n_sb: "外表人畜无害，蠢萌可爱。实则凶残无比。" },
     resolveBox_4: { i18n_id: "resolveBox_4", i18n_sb: "分解后获得灵石" },
     "11102101": { i18n_id: "11102101", i18n_sb: "王异" },
@@ -34043,11 +32456,11 @@
     "11100601": { i18n_id: "11100601", i18n_sb: "张辽" },
     "11101301": { i18n_id: "11101301", i18n_sb: "曹仁" },
     "13200101": { i18n_id: "13200101", i18n_sb: "张昭" },
-    "13100101": { i18n_id: "13100101", i18n_sb: "\\u795E\\xB7\\u5468\\u745C" },
+    "13100101": { i18n_id: "13100101", i18n_sb: "神·周瑜" },
     "13101701": { i18n_id: "13101701", i18n_sb: "凌统" },
     "17100301": { i18n_id: "17100301", i18n_sb: "学妹小乔" },
     "11102201": { i18n_id: "11102201", i18n_sb: "李典" },
-    "15100101": { i18n_id: "15100101", i18n_sb: "\\u795E\\xB7\\u6307\\u7EB9" },
+    "15100101": { i18n_id: "15100101", i18n_sb: "神·指纹" },
     "13101101": { i18n_id: "13101101", i18n_sb: "步练师" },
     "11100702": {
         i18n_id: "11100702",
@@ -34540,12 +32953,12 @@
     itemname9132010: { i18n_id: "itemname9132010", i18n_sb: "大虎魂魄" },
     itemname9132022: { i18n_id: "itemname9132022", i18n_sb: "凌操魂魄" },
     itemname9164047: { i18n_id: "itemname9164047", i18n_sb: "江东大刀兵魂魄" },
-    itemname9141011: { i18n_id: "itemname9141011", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u9B42\\u9B44" },
+    itemname9141011: { i18n_id: "itemname9141011", i18n_sb: "群·蔡文姬魂魄" },
     itemname9142019: { i18n_id: "itemname9142019", i18n_sb: "郭图魂魄" },
     itemname9143017: { i18n_id: "itemname9143017", i18n_sb: "波才魂魄" },
     itemname9164020: { i18n_id: "itemname9164020", i18n_sb: "黄巾妖术兵魂魄" },
     itemname9164022: { i18n_id: "itemname9164022", i18n_sb: "西凉锤兵魂魄" },
-    itemname9181004: { i18n_id: "itemname9181004", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44" },
+    itemname9181004: { i18n_id: "itemname9181004", i18n_sb: "魔·凌统魂魄" },
     itemname9171010: { i18n_id: "itemname9171010", i18n_sb: "天使尚香魂魄" },
     itemname9131013: { i18n_id: "itemname9131013", i18n_sb: "甘宁魂魄" },
     itemname9171012: { i18n_id: "itemname9171012", i18n_sb: "英雄王关羽魂魄" },
@@ -34704,10 +33117,7 @@
     itemname87121009: { i18n_id: "itemname87121009", i18n_sb: "黄忠道具（1级）" },
     itemname87122009: { i18n_id: "itemname87122009", i18n_sb: "关平道具（1级）" },
     itemname87131015: { i18n_id: "itemname87131015", i18n_sb: "周泰道具（1级）" },
-    itemname87141011: {
-        i18n_id: "itemname87141011",
-        i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u9053\\u5177\\uFF081\\u7EA7\\uFF09"
-    },
+    itemname87141011: { i18n_id: "itemname87141011", i18n_sb: "群·蔡文姬道具（1级）" },
     itemname790357: { i18n_id: "itemname790357", i18n_sb: "1级曹丕礼包" },
     itemname790367: { i18n_id: "itemname790367", i18n_sb: "1级马超礼包" },
     itemname790377: { i18n_id: "itemname790377", i18n_sb: "1级关索礼包" },
@@ -34720,10 +33130,7 @@
     itemname536023: { i18n_id: "itemname536023", i18n_sb: "第36章第3个宝箱" },
     itemname10530009: { i18n_id: "itemname10530009", i18n_sb: "第30章精英宝箱" },
     itemname10535009: { i18n_id: "itemname10535009", i18n_sb: "第35章精英宝箱" },
-    itemname6200001: {
-        i18n_id: "itemname6200001",
-        i18n_sb: "\\u96CC\\u96C4\\u53CC\\u80A1\\u5251\\u5B9D\\u7BB1(\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u7F18\\u5206\\u795E\\u7EA7\\u6B66\\u5668)"
-    },
+    itemname6200001: { i18n_id: "itemname6200001", i18n_sb: "雌雄双股剑宝箱(蜀·孙尚香缘分神级武器)" },
     itemname6200011: { i18n_id: "itemname6200011", i18n_sb: "丈八蛇矛宝箱(张飞缘分神级武器)" },
     itemname6200021: { i18n_id: "itemname6200021", i18n_sb: "朱雀冠宝箱(小乔缘分神级防具)" },
     itemname6200031: { i18n_id: "itemname6200031", i18n_sb: "无懈可击宝箱(诸葛亮缘分神级锦囊)" },
@@ -34793,30 +33200,30 @@
     itemname791709: { i18n_id: "itemname791709", i18n_sb: "至尊会员3等级礼包" },
     itemname543021: { i18n_id: "itemname543021", i18n_sb: "第43章第1个宝箱" },
     itemname10542009: { i18n_id: "itemname10542009", i18n_sb: "第42章精英宝箱" },
-    itemname791710: { i18n_id: "itemname791710", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*1" },
+    itemname791710: { i18n_id: "itemname791710", i18n_sb: "魔·张角魂魄*1" },
     itemname730108: { i18n_id: "itemname730108", i18n_sb: "108级升级奖励" },
     itemname730118: { i18n_id: "itemname730118", i18n_sb: "118级升级奖励" },
     itemname600084: { i18n_id: "itemname600084", i18n_sb: "7级宝石箱" },
     itemname791719: { i18n_id: "itemname791719", i18n_sb: "高级传承符" },
-    itemname791729: { i18n_id: "itemname791729", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*1" },
+    itemname791729: { i18n_id: "itemname791729", i18n_sb: "魔·董卓魂魄*1" },
     itemname791737: { i18n_id: "itemname791737", i18n_sb: "关刀碎片*10" },
     itemname791747: { i18n_id: "itemname791747", i18n_sb: "巅峰之战560积分礼包" },
-    itemname791757: { i18n_id: "itemname791757", i18n_sb: "\\u8D64\\u5154\\xD71" },
-    itemname791767: { i18n_id: "itemname791767", i18n_sb: "\\u9A6C\\u8D85\\xD71" },
-    itemname791777: { i18n_id: "itemname791777", i18n_sb: "\\u5143\\u5B9D\\xD76000" },
+    itemname791757: { i18n_id: "itemname791757", i18n_sb: "赤兔×1" },
+    itemname791767: { i18n_id: "itemname791767", i18n_sb: "马超×1" },
+    itemname791777: { i18n_id: "itemname791777", i18n_sb: "元宝×6000" },
     itemname11100003: { i18n_id: "itemname11100003", i18n_sb: "女神大乔" },
     itemname21100004: { i18n_id: "itemname21100004", i18n_sb: "女神小乔皮肤" },
     itemname791804: { i18n_id: "itemname791804", i18n_sb: "冰雪春华礼包" },
     itemname791794: { i18n_id: "itemname791794", i18n_sb: "女神貂蝉皮肤礼包" },
-    itemname89181003: { i18n_id: "itemname89181003", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u9053\\u5177" },
+    itemname89181003: { i18n_id: "itemname89181003", i18n_sb: "魔·马超道具" },
     itemname600091: { i18n_id: "itemname600091", i18n_sb: "紫福袋" },
     itemname547022: { i18n_id: "itemname547022", i18n_sb: "第47章第2个宝箱" },
     itemname10546009: { i18n_id: "itemname10546009", i18n_sb: "第46章精英宝箱" },
     itemname89131019: { i18n_id: "itemname89131019", i18n_sb: "诸葛瑾道具" },
     itemname791823: { i18n_id: "itemname791823", i18n_sb: "谢礼3(深渊)" },
     itemname791833: { i18n_id: "itemname791833", i18n_sb: "魄*10" },
-    itemname600102: { i18n_id: "itemname600102", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD7895" },
-    itemname600112: { i18n_id: "itemname600112", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD75175" },
+    itemname600102: { i18n_id: "itemname600102", i18n_sb: "主公经验×895" },
+    itemname600112: { i18n_id: "itemname600112", i18n_sb: "主公经验×5175" },
     itemname7710009: { i18n_id: "itemname7710009", i18n_sb: "神秘商品之袁绍魂魄*1" },
     itemname7710019: { i18n_id: "itemname7710019", i18n_sb: "神秘商品之太史慈魂魄*1" },
     itemname7710029: { i18n_id: "itemname7710029", i18n_sb: "神秘商品之华雄魂魄*1" },
@@ -34868,10 +33275,7 @@
     itemdesc700000: { i18n_id: "itemdesc700000", i18n_sb: "默认道具" },
     itemdesc710022: { i18n_id: "itemdesc710022", i18n_sb: "打开可获得:张星彩1个" },
     itemdesc710012: { i18n_id: "itemdesc710012", i18n_sb: "打开可获得：神锦囊（万箭齐发），神防具（藤甲），的卢（神坐骑），银两和5000灵芝" },
-    itemdesc710017: {
-        i18n_id: "itemdesc710017",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5FEB\\u822A\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71"
-    },
+    itemdesc710017: { i18n_id: "itemdesc710017", i18n_sb: "打开可获得：快航碎片×1，神装碎片礼盒×1" },
     itemdesc720007: { i18n_id: "itemdesc720007", i18n_sb: "打开可获得：无言,4个勾玉,10个包子,10个红茶,大量银子,35级新手礼包。" },
     itemdesc730009: { i18n_id: "itemdesc730009", i18n_sb: "10元宝,2600银子" },
     itemdesc730019: { i18n_id: "itemdesc730019", i18n_sb: "10元宝,4600银子" },
@@ -34936,7 +33340,7 @@
     itemdesc9112002: { i18n_id: "itemdesc9112002", i18n_sb: "荀攸魂魄" },
     itemdesc9112022: { i18n_id: "itemdesc9112022", i18n_sb: "鲍勋魂魄" },
     itemdesc9164031: { i18n_id: "itemdesc9164031", i18n_sb: "青州枪兵魂魄" },
-    itemdesc9121002: { i18n_id: "itemdesc9121002", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44" },
+    itemdesc9121002: { i18n_id: "itemdesc9121002", i18n_sb: "神·诸葛亮魂魄" },
     itemdesc9121016: { i18n_id: "itemdesc9121016", i18n_sb: "魏延魂魄" },
     itemdesc9122019: { i18n_id: "itemdesc9122019", i18n_sb: "周仓魂魄" },
     itemdesc9123015: { i18n_id: "itemdesc9123015", i18n_sb: "简雍魂魄" },
@@ -34950,7 +33354,7 @@
     itemdesc9164053: { i18n_id: "itemdesc9164053", i18n_sb: "黄巾大刀兵魂魄" },
     itemdesc9164023: { i18n_id: "itemdesc9164023", i18n_sb: "西凉斧兵魂魄" },
     itemdesc9131004: { i18n_id: "itemdesc9131004", i18n_sb: "周瑜魂魄" },
-    itemdesc9181006: { i18n_id: "itemdesc9181006", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44" },
+    itemdesc9181006: { i18n_id: "itemdesc9181006", i18n_sb: "魔·贾诩魂魄" },
     itemdesc9111012: { i18n_id: "itemdesc9111012", i18n_sb: "曹丕魂魄" },
     itemdesc9171002: { i18n_id: "itemdesc9171002", i18n_sb: "跑男夏侯渊魂魄" },
     itemdesc9171013: { i18n_id: "itemdesc9171013", i18n_sb: "芽间月英魂魄" },
@@ -35034,121 +33438,37 @@
     itemdesc164027: { i18n_id: "itemdesc164027", i18n_sb: "西凉重锤兵" },
     itemdesc171003: { i18n_id: "itemdesc171003", i18n_sb: "学妹小乔" },
     itemdesc89121010: { i18n_id: "itemdesc89121010", i18n_sb: "马超道具" },
-    itemdesc79112010: {
-        i18n_id: "itemdesc79112010",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u90ED\\u5609\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79113011: {
-        i18n_id: "itemdesc79113011",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5218\\u5907\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164033: {
-        i18n_id: "itemdesc79164033",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u65A7\\u5175\\xD71,\\u9A86\\u9A7C\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121007: {
-        i18n_id: "itemdesc79121007",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79122007: {
-        i18n_id: "itemdesc79122007",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD72"
-    },
-    itemdesc79122023: {
-        i18n_id: "itemdesc79122023",
-        i18n_sb: "\\u5175\\u7CAE\\u5BF8\\u65AD\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79164001: {
-        i18n_id: "itemdesc79164001",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5DF4\\u8700\\u9A91\\u5175\\xD71,\\u9752\\u9CDE\\u76D4\\u788E\\u7247\\xD71"
-    },
-    itemdesc79131007: {
-        i18n_id: "itemdesc79131007",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79132017: {
-        i18n_id: "itemdesc79132017",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u9A6C\\u8D85\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79164042: {
-        i18n_id: "itemdesc79164042",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C5F\\u4E1C\\u65A7\\u5175\\xD71,\\u767D\\u9B03\\u788E\\u7247\\xD71"
-    },
-    itemdesc79141005: {
-        i18n_id: "itemdesc79141005",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79142010: {
-        i18n_id: "itemdesc79142010",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u6C99\\u91CC\\u98DE\\u788E\\u7247\\xD72"
-    },
-    itemdesc79143010: {
-        i18n_id: "itemdesc79143010",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u8881\\u7ECD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164020: {
-        i18n_id: "itemdesc79164020",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9EC4\\u5DFE\\u5927\\u5200\\u5175\\xD71,\\u9752\\u9CDE\\u76D4\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164022: {
-        i18n_id: "itemdesc79164022",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u897F\\u51C9\\u65A7\\u5175\\xD71,\\u5434\\u516D\\u5251\\u788E\\u7247\\xD71"
-    },
-    itemdesc79133005: {
-        i18n_id: "itemdesc79133005",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u5B59\\u6743\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79131017: {
-        i18n_id: "itemdesc79131017",
-        i18n_sb: "\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79194001: {
-        i18n_id: "itemdesc79194001",
-        i18n_sb: "\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD72,\\u7075\\u829D\\xD7200"
-    },
-    itemdesc79181004: {
-        i18n_id: "itemdesc79181004",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79121005: {
-        i18n_id: "itemdesc79121005",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79111015: { i18n_id: "itemdesc79111015", i18n_sb: "\\u4F24\\u901D\\xD71,\\u7075\\u829D\\xD71000" },
-    itemdesc79142003: {
-        i18n_id: "itemdesc79142003",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79131002: { i18n_id: "itemdesc79131002", i18n_sb: "\\u6D89\\u730E\\xD71,\\u7075\\u829D\\xD71000" },
-    itemdesc790226: {
-        i18n_id: "itemdesc790226",
-        i18n_sb: "\\u5185\\u542B\\u65B9\\u5929\\u753B\\u621F\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790236: {
-        i18n_id: "itemdesc790236",
-        i18n_sb: "\\u5185\\u542B\\u9F99\\u80C6\\u67AA\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790246: {
-        i18n_id: "itemdesc790246",
-        i18n_sb: "\\u5185\\u542B\\u6731\\u96C0\\u51A0\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790256: {
-        i18n_id: "itemdesc790256",
-        i18n_sb: "\\u5185\\u542B\\u7D2B\\u9A8D\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790266: {
-        i18n_id: "itemdesc790266",
-        i18n_sb: "\\u5185\\u542B\\u5175\\u7CAE\\u5BF8\\u65AD\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790276: {
-        i18n_id: "itemdesc790276",
-        i18n_sb: "\\u5185\\u542B\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790286: {
-        i18n_id: "itemdesc790286",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u7075\\u829D\\xD72000"
-    },
-    itemdesc790296: { i18n_id: "itemdesc790296", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7300" },
+    itemdesc79112010: { i18n_id: "itemdesc79112010", i18n_sb: "元宝×60,郭嘉魂魄×4" },
+    itemdesc79113011: { i18n_id: "itemdesc79113011", i18n_sb: "元宝×40,刘备魂魄×3" },
+    itemdesc79164033: { i18n_id: "itemdesc79164033", i18n_sb: "元宝×20,青州斧兵×1,骆驼碎片×1" },
+    itemdesc79121007: { i18n_id: "itemdesc79121007", i18n_sb: "神·周瑜魂魄×3,灵芝×1000" },
+    itemdesc79122007: { i18n_id: "itemdesc79122007", i18n_sb: "元宝×60,木牛流马碎片×2" },
+    itemdesc79122023: { i18n_id: "itemdesc79122023", i18n_sb: "兵粮寸断碎片×3,灵芝×500" },
+    itemdesc79164001: { i18n_id: "itemdesc79164001", i18n_sb: "元宝×20,巴蜀骑兵×1,青鳞盔碎片×1" },
+    itemdesc79131007: { i18n_id: "itemdesc79131007", i18n_sb: "神·周瑜魂魄×3,灵芝×1000" },
+    itemdesc79132017: { i18n_id: "itemdesc79132017", i18n_sb: "元宝×60,马超魂魄×4" },
+    itemdesc79164042: { i18n_id: "itemdesc79164042", i18n_sb: "元宝×20,江东斧兵×1,白鬃碎片×1" },
+    itemdesc79141005: { i18n_id: "itemdesc79141005", i18n_sb: "神·诸葛亮魂魄×3,灵芝×1000" },
+    itemdesc79142010: { i18n_id: "itemdesc79142010", i18n_sb: "元宝×60,沙里飞碎片×2" },
+    itemdesc79143010: { i18n_id: "itemdesc79143010", i18n_sb: "元宝×40,袁绍魂魄×3" },
+    itemdesc79164020: { i18n_id: "itemdesc79164020", i18n_sb: "元宝×20,黄巾大刀兵×1,青鳞盔碎片×1" },
+    itemdesc79164022: { i18n_id: "itemdesc79164022", i18n_sb: "元宝×20,西凉斧兵×1,吴六剑碎片×1" },
+    itemdesc79133005: { i18n_id: "itemdesc79133005", i18n_sb: "元宝×40,孙权魂魄×3" },
+    itemdesc79131017: { i18n_id: "itemdesc79131017", i18n_sb: "爪黄飞电碎片×3,灵芝×1000" },
+    itemdesc79194001: { i18n_id: "itemdesc79194001", i18n_sb: "木牛流马碎片×2,灵芝×200" },
+    itemdesc79181004: { i18n_id: "itemdesc79181004", i18n_sb: "神·关羽魂魄×3,灵芝×1000" },
+    itemdesc79121005: { i18n_id: "itemdesc79121005", i18n_sb: "神·吕布魂魄×3,灵芝×1000" },
+    itemdesc79111015: { i18n_id: "itemdesc79111015", i18n_sb: "伤逝×1,灵芝×1000" },
+    itemdesc79142003: { i18n_id: "itemdesc79142003", i18n_sb: "神·吕蒙魂魄×2,灵芝×1000" },
+    itemdesc79131002: { i18n_id: "itemdesc79131002", i18n_sb: "涉猎×1,灵芝×1000" },
+    itemdesc790226: { i18n_id: "itemdesc790226", i18n_sb: "内含方天画戟碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790236: { i18n_id: "itemdesc790236", i18n_sb: "内含龙胆枪碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790246: { i18n_id: "itemdesc790246", i18n_sb: "内含朱雀冠碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790256: { i18n_id: "itemdesc790256", i18n_sb: "内含紫骍碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790266: { i18n_id: "itemdesc790266", i18n_sb: "内含兵粮寸断碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790276: { i18n_id: "itemdesc790276", i18n_sb: "内含木牛流马碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790286: { i18n_id: "itemdesc790286", i18n_sb: "打开可获得：灵芝×2000" },
+    itemdesc790296: { i18n_id: "itemdesc790296", i18n_sb: "内含灵芝×300" },
     itemdesc791004: { i18n_id: "itemdesc791004", i18n_sb: " " },
     itemdesc740003: { i18n_id: "itemdesc740003", i18n_sb: "20000银两" },
     itemdesc791020: { i18n_id: "itemdesc791020", i18n_sb: "有大量机会获得青龙偃月刀碎片以及其他稀有道具" },
@@ -35199,10 +33519,7 @@
     itemdesc790317: { i18n_id: "itemdesc790317", i18n_sb: "内含：20级黄忠一个" },
     itemdesc790327: { i18n_id: "itemdesc790327", i18n_sb: "内含：20级关平一个" },
     itemdesc790337: { i18n_id: "itemdesc790337", i18n_sb: "内含：20级周泰一个" },
-    itemdesc790347: {
-        i18n_id: "itemdesc790347",
-        i18n_sb: "\\u5185\\u542B\\uFF1A20\\u7EA7\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u4E00\\u4E2A"
-    },
+    itemdesc790347: { i18n_id: "itemdesc790347", i18n_sb: "内含：20级群·蔡文姬一个" },
     itemdesc87111012: { i18n_id: "itemdesc87111012", i18n_sb: "曹丕道具（1级）" },
     itemdesc87121010: { i18n_id: "itemdesc87121010", i18n_sb: "马超道具（1级）" },
     itemdesc87122023: { i18n_id: "itemdesc87122023", i18n_sb: "关索道具（1级）" },
@@ -35230,41 +33547,17 @@
     itemdesc791414: { i18n_id: "itemdesc791414", i18n_sb: "论坛礼包B" },
     itemdesc791424: { i18n_id: "itemdesc791424", i18n_sb: "太史慈礼包" },
     itemdesc791434: { i18n_id: "itemdesc791434", i18n_sb: "三国杀活动4" },
-    itemdesc790434: {
-        i18n_id: "itemdesc790434",
-        i18n_sb: "\\u5185\\u542B\\u53E4\\u952D\\u5200\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790444: {
-        i18n_id: "itemdesc790444",
-        i18n_sb: "\\u5185\\u542B\\u767D\\u94F6\\u72EE\\u5B50\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790454: {
-        i18n_id: "itemdesc790454",
-        i18n_sb: "\\u5185\\u542B\\u8D64\\u5154\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790464: {
-        i18n_id: "itemdesc790464",
-        i18n_sb: "\\u5185\\u542B\\u4E50\\u4E0D\\u601D\\u8700\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790474: {
-        i18n_id: "itemdesc790474",
-        i18n_sb: "\\u5185\\u542B\\u8FFD\\u98CE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
+    itemdesc790434: { i18n_id: "itemdesc790434", i18n_sb: "内含古锭刀碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790444: { i18n_id: "itemdesc790444", i18n_sb: "内含白银狮子碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790454: { i18n_id: "itemdesc790454", i18n_sb: "内含赤兔碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790464: { i18n_id: "itemdesc790464", i18n_sb: "内含乐不思蜀碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790474: { i18n_id: "itemdesc790474", i18n_sb: "内含追风碎片×1，神装碎片礼盒×2，金装礼盒×3" },
     itemdesc88132022: { i18n_id: "itemdesc88132022", i18n_sb: "凌操道具（1级）" },
-    itemdesc791442: {
-        i18n_id: "itemdesc791442",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A50\\u5143\\u5B9D \\u52FE\\u7389\\xD74 \\u6311\\u6218\\u6587\\u4E66\\xD74"
-    },
-    itemdesc791452: {
-        i18n_id: "itemdesc791452",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u65B9\\u5929\\u753B\\u621F\\xD71"
-    },
+    itemdesc791442: { i18n_id: "itemdesc791442", i18n_sb: "打开可获得：50元宝 勾玉×4 挑战文书×4" },
+    itemdesc791452: { i18n_id: "itemdesc791452", i18n_sb: "打开可获得：方天画戟×1" },
     itemdesc791460: { i18n_id: "itemdesc791460", i18n_sb: "50个元宝" },
-    itemdesc791470: {
-        i18n_id: "itemdesc791470",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u94C1\\u7D22\\u8FDE\\u73AF\\xD71"
-    },
-    itemdesc791480: { i18n_id: "itemdesc791480", i18n_sb: "\\u5185\\u542B\\u5143\\u5B9D\\xD7108" },
+    itemdesc791470: { i18n_id: "itemdesc791470", i18n_sb: "打开可获得：铁索连环×1" },
+    itemdesc791480: { i18n_id: "itemdesc791480", i18n_sb: "内含元宝×108" },
     itemdesc791490: { i18n_id: "itemdesc791490", i18n_sb: "打开后随机获得大量元宝！" },
     itemdesc40142002: { i18n_id: "itemdesc40142002", i18n_sb: "142002" },
     itemdesc40131006: { i18n_id: "itemdesc40131006", i18n_sb: "131006" },
@@ -35297,26 +33590,14 @@
     itemdesc791566: { i18n_id: "itemdesc791566", i18n_sb: "L1SS" },
     itemdesc791576: { i18n_id: "itemdesc791576", i18n_sb: "L1MU（金装全部生成完后补量就行）" },
     itemdesc791586: { i18n_id: "itemdesc791586", i18n_sb: "L1YJ（之前的礼包SSYLYL新生成）" },
-    itemdesc791596: {
-        i18n_id: "itemdesc791596",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u91D1\\u7BB1\\xD715\\uFF0C\\u91D1\\u94A5\\xD715\\uFF0C\\u94F6\\u7BB1\\xD715\\uFF0C\\u94F6\\u94A5\\xD715\\uFF0C\\u5143\\u5B9D\\xD730"
-    },
-    itemdesc791606: {
-        i18n_id: "itemdesc791606",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u9B54\\xB7\\u9A6C\\u8D85\\u9B42\\u9B44\\xD725\\u4E2A\\uFF0C\\u5B9D300\\uFF0C\\u7075\\u829D500\\uFF0C\\u8D85\\u7EA7\\u4F20\\u627F\\u7B261\\u4E2A"
-    },
+    itemdesc791596: { i18n_id: "itemdesc791596", i18n_sb: "打开可获得：金箱×15，金钥×15，银箱×15，银钥×15，元宝×30" },
+    itemdesc791606: { i18n_id: "itemdesc791606", i18n_sb: "打开可获得：魔·马超魂魄×25个，宝300，灵芝500，超级传承符1个" },
     itemdesc791609: { i18n_id: "itemdesc791609", i18n_sb: "内含灵芝*500" },
-    itemdesc791619: { i18n_id: "itemdesc791619", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*1" },
+    itemdesc791619: { i18n_id: "itemdesc791619", i18n_sb: "内含魔·张飞魂魄*1" },
     itemdesc791629: { i18n_id: "itemdesc791629", i18n_sb: "100元宝 2包子 2红茶 20灵芝" },
-    itemdesc791639: {
-        i18n_id: "itemdesc791639",
-        i18n_sb: "\\u91D1\\u94A5\\u5319\\xD715\\uFF0C\\u94F6\\u94A5\\u5319\\xD715\\uFF0C\\u94DC\\u94A5\\u5319\\xD715\\uFF0C\\u52FE\\u7389\\xD715\\uFF0C\\u5143\\u5B9D\\xD750"
-    },
+    itemdesc791639: { i18n_id: "itemdesc791639", i18n_sb: "金钥匙×15，银钥匙×15，铜钥匙×15，勾玉×15，元宝×50" },
     itemdesc6300083: { i18n_id: "itemdesc6300083", i18n_sb: "可以获得龙胆枪碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
-    itemdesc791650: {
-        i18n_id: "itemdesc791650",
-        i18n_sb: "100\\u5143\\u5B9D\\u300150\\u7075\\u829D\\u3001\\u52FE\\u7389\\xD75"
-    },
+    itemdesc791650: { i18n_id: "itemdesc791650", i18n_sb: "100元宝、50灵芝、勾玉×5" },
     itemdesc791660: { i18n_id: "itemdesc791660", i18n_sb: "神榜高级宝箱3倍" },
     itemdesc791670: { i18n_id: "itemdesc791670", i18n_sb: "内含关羽魂魄*6" },
     itemdesc192004: { i18n_id: "itemdesc192004", i18n_sb: "顽皮淘淘" },
@@ -35326,48 +33607,27 @@
     itemdesc540021: { i18n_id: "itemdesc540021", i18n_sb: "第40章第1个宝箱" },
     itemdesc543022: { i18n_id: "itemdesc543022", i18n_sb: "第43章第2个宝箱" },
     itemdesc10542010: { i18n_id: "itemdesc10542010", i18n_sb: "第42章隐藏宝箱" },
-    itemdesc791711: { i18n_id: "itemdesc791711", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*2" },
+    itemdesc791711: { i18n_id: "itemdesc791711", i18n_sb: "内含魔·张角魂魄*2" },
     itemdesc730109: { i18n_id: "itemdesc730109", i18n_sb: "10元宝,22600银子" },
     itemdesc730119: { i18n_id: "itemdesc730119", i18n_sb: "10元宝,24600银子" },
     itemdesc600085: { i18n_id: "itemdesc600085", i18n_sb: "可以获得随机8级宝石一颗" },
-    itemdesc791720: {
-        i18n_id: "itemdesc791720",
-        i18n_sb: "\\u819C\\u62DC\\u4EBA\\u6C14\\u6392\\u884C\\u5956\\u52B1\\uFF0C\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u4FEE\\u7F57\\u8D64\\u5154\\u788E\\u7247\\xD71\\u30011000\\u4E07\\u94F6\\u4E24\\u3002"
-    },
-    itemdesc791730: { i18n_id: "itemdesc791730", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*2" },
-    itemdesc791738: {
-        i18n_id: "itemdesc791738",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u9A85\\u9A9D\\xD71"
-    },
+    itemdesc791720: { i18n_id: "itemdesc791720", i18n_sb: "膜拜人气排行奖励，打开可获得：修罗赤兔碎片×1、1000万银两。" },
+    itemdesc791730: { i18n_id: "itemdesc791730", i18n_sb: "内含魔·董卓魂魄*2" },
+    itemdesc791738: { i18n_id: "itemdesc791738", i18n_sb: "打开可获得：骅骝×1" },
     itemdesc791748: { i18n_id: "itemdesc791748", i18n_sb: "打开可获得350个1级宝石箱" },
-    itemdesc791758: {
-        i18n_id: "itemdesc791758",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5F20\\u98DE\\xD71\\u3001\\u5F20\\u98DE\\u9B42\\u9B44\\xD7105\\u3001\\u5305\\u5B50\\xD72\\u3001\\u7EA2\\u8336\\xD72\\u3001\\u7075\\u829D\\xD7100"
-    },
+    itemdesc791758: { i18n_id: "itemdesc791758", i18n_sb: "打开可获得张飞×1、张飞魂魄×105、包子×2、红茶×2、灵芝×100" },
     itemdesc791768: { i18n_id: "itemdesc791768", i18n_sb: "累计登录送神将第4天88元宝" },
-    itemdesc791778: {
-        i18n_id: "itemdesc791778",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5143\\u5B9D\\xD76000"
-    },
+    itemdesc791778: { i18n_id: "itemdesc791778", i18n_sb: "打开可获得元宝×6000" },
     itemdesc11100004: { i18n_id: "itemdesc11100004", i18n_sb: "女神小乔" },
     itemdesc21100005: { i18n_id: "itemdesc21100005", i18n_sb: "女神祝融皮肤" },
-    itemdesc791785: {
-        i18n_id: "itemdesc791785",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u8C82\\u8749\\xD71"
-    },
-    itemdesc791795: {
-        i18n_id: "itemdesc791795",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u7504\\u59EC\\u76AE\\u80A4\\xD71"
-    },
-    itemdesc89181002: { i18n_id: "itemdesc89181002", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\xD71" },
+    itemdesc791785: { i18n_id: "itemdesc791785", i18n_sb: "打开可获得女神貂蝉×1" },
+    itemdesc791795: { i18n_id: "itemdesc791795", i18n_sb: "打开可获得女神甄姬皮肤×1" },
+    itemdesc89181002: { i18n_id: "itemdesc89181002", i18n_sb: "魔·貂蝉×1" },
     itemdesc600092: { i18n_id: "itemdesc600092", i18n_sb: "双十一福袋，收集后可用于兑换双十一礼盒。" },
     itemdesc547023: { i18n_id: "itemdesc547023", i18n_sb: "第42章第3个宝箱" },
     itemdesc10546010: { i18n_id: "itemdesc10546010", i18n_sb: "第41章隐藏宝箱" },
     itemdesc791814: { i18n_id: "itemdesc791814", i18n_sb: "诸葛瑾*1" },
-    itemdesc791824: {
-        i18n_id: "itemdesc791824",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD79\\u3001\\u52FE\\u7389\\xD73\\u3001\\u864E\\u775B\\u77F3\\xD76"
-    },
+    itemdesc791824: { i18n_id: "itemdesc791824", i18n_sb: "打开可获得灵芝×9、勾玉×3、虎睛石×6" },
     itemdesc791834: { i18n_id: "itemdesc791834", i18n_sb: "内含魄*20" },
     itemdesc600103: { i18n_id: "itemdesc600103", i18n_sb: "使用后主公经验可提升1635" },
     itemdesc600113: { i18n_id: "itemdesc600113", i18n_sb: "使用后主公经验可提升5290" },
@@ -35612,7 +33872,7 @@
     dialogname507009011: { i18n_id: "dialogname507009011", i18n_sb: "$UserName" },
     dialogname507011015: { i18n_id: "dialogname507011015", i18n_sb: "朱治" },
     dialogname507012024: { i18n_id: "dialogname507012024", i18n_sb: "$UserName" },
-    dialogname508004014: { i18n_id: "dialogname508004014", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname508004014: { i18n_id: "dialogname508004014", i18n_sb: "吴·孙尚香" },
     dialogname508008014: { i18n_id: "dialogname508008014", i18n_sb: "$UserName" },
     dialogname508010015: { i18n_id: "dialogname508010015", i18n_sb: "陆延" },
     dialogname508012022: { i18n_id: "dialogname508012022", i18n_sb: "$UserName(暴走)" },
@@ -35818,7 +34078,7 @@
     dialogname549008012: { i18n_id: "dialogname549008012", i18n_sb: "$UserName" },
     dialogname549012021: { i18n_id: "dialogname549012021", i18n_sb: "$UserName" },
     dialogname549019012: { i18n_id: "dialogname549019012", i18n_sb: "魏延" },
-    dialogname549020021: { i18n_id: "dialogname549020021", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE" },
+    dialogname549020021: { i18n_id: "dialogname549020021", i18n_sb: "神·诸葛亮" },
     dialogdesc501003021: { i18n_id: "dialogdesc501003021", i18n_sb: "多谢英雄出手相助，吾人乃卧龙诸葛亮……" },
     dialogdesc501004011: { i18n_id: "dialogdesc501004011", i18n_sb: "主公，要救苍生，先灭黄巾军！" },
     dialogdesc501005013: { i18n_id: "dialogdesc501005013", i18n_sb: "（远处传声）才不是！~~" },
@@ -36021,10 +34281,7 @@
     dialogdesc539019012: { i18n_id: "dialogdesc539019012", i18n_sb: "他把自己关在内堂，里面一直有奇怪的声音和光芒……" },
     dialogdesc539020015: { i18n_id: "dialogdesc539020015", i18n_sb: "你仔细想想，你现在应该在哪里？" },
     dialogdesc540004017: { i18n_id: "dialogdesc540004017", i18n_sb: "去洛阳找曹操啊，如果他真的是野心家，干掉他我就能回现代了。" },
-    dialogdesc540008014: {
-        i18n_id: "dialogdesc540008014",
-        i18n_sb: "\\u8BC5\\u5492\\u4E1E\\u76F8\\u8005\\uFF0C\\xA0\\u5176\\u7F6A\\u5F53\\u8BDB\\uFF01"
-    },
+    dialogdesc540008014: { i18n_id: "dialogdesc540008014", i18n_sb: "诅咒丞相者， 其罪当诛！" },
     dialogdesc540016012: { i18n_id: "dialogdesc540016012", i18n_sb: "父亲让我们写对他的感受，我觉得要在冬天写才有切身体会啊" },
     dialogdesc540019011: { i18n_id: "dialogdesc540019011", i18n_sb: "你终于肯来见我了" },
     dialogdesc540019023: { i18n_id: "dialogdesc540019023", i18n_sb: "其实……他就在我宫中……" },
@@ -36182,7 +34439,7 @@
     "8430170201": { i18n_id: "8430170201", i18n_sb: "至尊身份" },
     "8640540101": { i18n_id: "8640540101", i18n_sb: "比武达人" },
     "8640240101": { i18n_id: "8640240101", i18n_sb: "该吃药了" },
-    "8310010201": { i18n_id: "8310010201", i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u7684\\u5FC3\\u613F" },
+    "8310010201": { i18n_id: "8310010201", i18n_sb: "神·周瑜的心愿" },
     "8430140201": { i18n_id: "8430140201", i18n_sb: "神书终结者" },
     "8110120401": { i18n_id: "8110120401", i18n_sb: "心悦诚服" },
     "8310130201": { i18n_id: "8310130201", i18n_sb: "天赋异禀" },
@@ -36192,7 +34449,7 @@
     "8210010201": { i18n_id: "8210010201", i18n_sb: "最强属性" },
     "8920040101": { i18n_id: "8920040101", i18n_sb: "战技宗师" },
     "8310040401": { i18n_id: "8310040401", i18n_sb: "心悦诚服" },
-    "8810040201": { i18n_id: "8810040201", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u7684\\u5FC3\\u613F" },
+    "8810040201": { i18n_id: "8810040201", i18n_sb: "魔·凌统的心愿" },
     "8710060401": { i18n_id: "8710060401", i18n_sb: "心悦诚服" },
     "8710080201": { i18n_id: "8710080201", i18n_sb: "最强属性" },
     "8810050401": { i18n_id: "8810050401", i18n_sb: "心悦诚服" },
@@ -36254,23 +34511,23 @@
     "8710020102": { i18n_id: "8710020102", i18n_sb: "图鉴点亮[装备]大宛" },
     "8710030302": { i18n_id: "8710030302", i18n_sb: "至尊会员等级达到至尊会员10" },
     "8110130102": { i18n_id: "8110130102", i18n_sb: "天赋技能等级达到28级" },
-    "8810030302": { i18n_id: "8810030302", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85\\u7A81\\u7834\\u81F35\\u661F" },
+    "8810030302": { i18n_id: "8810030302", i18n_sb: "魔·马超突破至5星" },
     "8810020302": { i18n_id: "8810020302", i18n_sb: "过关斩将持续7天在1名以上" },
     "8310050102": { i18n_id: "8310050102", i18n_sb: "通关白衣渡江7（精英）" },
     "8110220302": { i18n_id: "8110220302", i18n_sb: "修炼武将攻属性至5000" },
     "8810090102": { i18n_id: "8810090102", i18n_sb: "天赋技能等级达到30级" },
     "8710090302": { i18n_id: "8710090302", i18n_sb: "过关斩将最大排名达到10名" },
     "8710050102": { i18n_id: "8710050102", i18n_sb: "通关七擒孟获20" },
-    "8810080302": { i18n_id: "8810080302", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u7A81\\u7834\\u81F35\\u661F" },
+    "8810080302": { i18n_id: "8810080302", i18n_sb: "魔·黄盖突破至5星" },
     "8510010102": { i18n_id: "8510010102", i18n_sb: "天赋技能等级达到30级" },
-    "8810060302": { i18n_id: "8810060302", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u7A81\\u7834\\u81F35\\u661F" },
+    "8810060302": { i18n_id: "8810060302", i18n_sb: "魔·贾诩突破至5星" },
     "8110180102": { i18n_id: "8110180102", i18n_sb: "3星通关曹丕登基20" },
     "8420080302": { i18n_id: "8420080302", i18n_sb: "修炼武将智属性至5500" },
     "8210200102": { i18n_id: "8210200102", i18n_sb: "天水收姜维20累计攻打60次" },
     "8310190302": { i18n_id: "8310190302", i18n_sb: "图鉴点亮[武将]吕蒙" },
     "8220140102": { i18n_id: "8220140102", i18n_sb: "平定益州7（精英）累计攻打60次" },
     "8410090302": { i18n_id: "8410090302", i18n_sb: "修炼武将攻属性至6000" },
-    "8310110402": { i18n_id: "8310110402", i18n_sb: "\\u81E3\\u670D\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    "8310110402": { i18n_id: "8310110402", i18n_sb: "臣服吴·孙尚香" },
     "8240010202": { i18n_id: "8240010202", i18n_sb: "累计斩击玩家队伍中的陆逊60次" },
     "8340010402": { i18n_id: "8340010402", i18n_sb: "修炼武将攻属性至6000" },
     point_101: { i18n_id: "point_101", i18n_sb: "第1战：冷口关1" },
@@ -37050,7 +35307,7 @@
     "1071110011": { i18n_id: "1071110011", i18n_sb: "个性签名" },
     "1071110021": { i18n_id: "1071110021", i18n_sb: "触发" },
     "1071110031": { i18n_id: "1071110031", i18n_sb: "传承结果" },
-    "1071110041": { i18n_id: "1071110041", i18n_sb: "\\u6B66\\u5C06\\u5956\\u52B1\\xD7$1" },
+    "1071110041": { i18n_id: "1071110041", i18n_sb: "武将奖励×$1" },
     "1071110051": { i18n_id: "1071110051", i18n_sb: "武将经验" },
     "1071110061": { i18n_id: "1071110061", i18n_sb: "技能弱?" },
     "1071210002": { i18n_id: "1071210002", i18n_sb: "精心修炼" },
@@ -37293,7 +35550,7 @@
     mystery_name_107710020: { i18n_id: "mystery_name_107710020", i18n_sb: "貂蝉魂魄*1" },
     mystery_name_107710030: { i18n_id: "mystery_name_107710030", i18n_sb: "鲁肃魂魄*1" },
     mystery_name_107710040: { i18n_id: "mystery_name_107710040", i18n_sb: "诸葛瑾魂魄*1" },
-    mystery_name_107710056: { i18n_id: "mystery_name_107710056", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*1" },
+    mystery_name_107710056: { i18n_id: "mystery_name_107710056", i18n_sb: "魔·黄盖魂魄*1" },
     mystery_name_107710066: { i18n_id: "mystery_name_107710066", i18n_sb: "张飞魂魄*1" },
     mystery_name_107710076: { i18n_id: "mystery_name_107710076", i18n_sb: "吕蒙魂魄*1" },
     mystery_name_107710086: { i18n_id: "mystery_name_107710086", i18n_sb: "张辽魂魄*1" },
@@ -37304,7 +35561,7 @@
     mystery_name_107710148: { i18n_id: "mystery_name_107710148", i18n_sb: "曹操魂魄*3" },
     mystery_name_107710158: { i18n_id: "mystery_name_107710158", i18n_sb: "华佗魂魄*3" },
     mystery_name_107710168: { i18n_id: "mystery_name_107710168", i18n_sb: "曹丕魂魄*3" },
-    mystery_name_107710178: { i18n_id: "mystery_name_107710178", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*3" },
+    mystery_name_107710178: { i18n_id: "mystery_name_107710178", i18n_sb: "蜀·孙尚香魂魄*3" },
     mystery_name_107720006: { i18n_id: "mystery_name_107720006", i18n_sb: "爪黄飞电碎片*1" },
     mystery_name_107720017: { i18n_id: "mystery_name_107720017", i18n_sb: "古锭刀碎片*1" },
     mystery_name_107720027: { i18n_id: "mystery_name_107720027", i18n_sb: "白银狮子碎片*1" },
@@ -37358,10 +35615,10 @@
     IdCardBinding_11: { i18n_id: "IdCardBinding_11", i18n_sb: "您的账号还没经过实名认证，为了保证您在游戏中的利益，\n请尽快完成实名认证" },
     verPublish_enterLadder_btntext: { i18n_id: "verPublish_enterLadder_btntext", i18n_sb: "是" },
     "16500103": { i18n_id: "16500103", i18n_sb: "加攻击的药丸，我最爱吃了！" },
-    itemname9151001: { i18n_id: "itemname9151001", i18n_sb: "\\u795E\\xB7\\u6307\\u7EB9\\u9B42\\u9B44" },
+    itemname9151001: { i18n_id: "itemname9151001", i18n_sb: "神·指纹魂魄" },
     itemname114001: { i18n_id: "itemname114001", i18n_sb: "魏武帝" },
     itemname121005: { i18n_id: "itemname121005", i18n_sb: "黄月英" },
-    itemname141001: { i18n_id: "itemname141001", i18n_sb: "\\u795E\\xB7\\u5415\\u5E03" },
+    itemname141001: { i18n_id: "itemname141001", i18n_sb: "神·吕布" },
     itemname111022: { i18n_id: "itemname111022", i18n_sb: "李典" },
     itemname171010: { i18n_id: "itemname171010", i18n_sb: "天使尚香" },
     itemname7750004: { i18n_id: "itemname7750004", i18n_sb: "神秘商品之照夜玉狮碎片*3" },
@@ -37383,7 +35640,7 @@
     itemname792066: { i18n_id: "itemname792066", i18n_sb: "冀州骑兵礼包" },
     itemname792076: { i18n_id: "itemname792076", i18n_sb: "西凉重斧兵礼包" },
     itemname792086: { i18n_id: "itemname792086", i18n_sb: "黄月英礼包" },
-    itemname792096: { i18n_id: "itemname792096", i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u793C\\u5305" },
+    itemname792096: { i18n_id: "itemname792096", i18n_sb: "神·吕布礼包" },
     itemname792106: { i18n_id: "itemname792106", i18n_sb: "学妹小乔礼包" },
     itemname792116: { i18n_id: "itemname792116", i18n_sb: "李典礼包" },
     itemname792126: { i18n_id: "itemname792126", i18n_sb: "天使尚香礼包" },
@@ -37405,19 +35662,13 @@
     itemname792286: { i18n_id: "itemname792286", i18n_sb: "冀州长枪兵魂魄礼包" },
     itemname792296: { i18n_id: "itemname792296", i18n_sb: "西凉重弩兵魂魄礼包" },
     itemname792306: { i18n_id: "itemname792306", i18n_sb: "张郃魂魄礼包" },
-    itemname792316: {
-        i18n_id: "itemname792316",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\u793C\\u5305"
-    },
+    itemname792316: { i18n_id: "itemname792316", i18n_sb: "神·诸葛亮魂魄礼包" },
     itemname792326: { i18n_id: "itemname792326", i18n_sb: "黄盖魂魄礼包" },
     itemname792336: { i18n_id: "itemname792336", i18n_sb: "学妹小乔魂魄礼包" },
     itemname792346: { i18n_id: "itemname792346", i18n_sb: "李典魂魄礼包" },
     itemname792356: { i18n_id: "itemname792356", i18n_sb: "天使尚香魂魄礼包" },
     itemname792366: { i18n_id: "itemname792366", i18n_sb: "昭烈帝魂魄礼包" },
-    itemname7740003: {
-        i18n_id: "itemname7740003",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*3"
-    },
+    itemname7740003: { i18n_id: "itemname7740003", i18n_sb: "神秘商品之魔·貂蝉魂魄*3" },
     itemname7740013: { i18n_id: "itemname7740013", i18n_sb: "神秘商品之郭嘉魂魄*3" },
     itemname7740023: { i18n_id: "itemname7740023", i18n_sb: "神秘商品之曹仁魂魄*3" },
     itemname7740033: { i18n_id: "itemname7740033", i18n_sb: "神秘商品之诸葛亮魂魄*3" },
@@ -37426,8 +35677,8 @@
     itemdesc9191005: { i18n_id: "itemdesc9191005", i18n_sb: "浣熊波波魂魄" },
     itemdesc131011: { i18n_id: "itemdesc131011", i18n_sb: "步练师" },
     itemdesc111005: { i18n_id: "itemdesc111005", i18n_sb: "司马懿" },
-    itemdesc121002: { i18n_id: "itemdesc121002", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE" },
-    itemdesc181005: { i18n_id: "itemdesc181005", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353" },
+    itemdesc121002: { i18n_id: "itemdesc121002", i18n_sb: "神·诸葛亮" },
+    itemdesc181005: { i18n_id: "itemdesc181005", i18n_sb: "魔·董卓" },
     itemdesc122014: { i18n_id: "itemdesc122014", i18n_sb: "法正" },
     itemdesc79165002: { i18n_id: "itemdesc79165002", i18n_sb: "毛驴碎片x1" },
     itemdesc7750010: { i18n_id: "itemdesc7750010", i18n_sb: "骅骝碎片*3" },
@@ -37448,14 +35699,8 @@
     itemdesc792062: { i18n_id: "itemdesc792062", i18n_sb: "打开可获得黄巾大刀兵*1" },
     itemdesc792072: { i18n_id: "itemdesc792072", i18n_sb: "打开可获得西凉斧兵*1" },
     itemdesc792082: { i18n_id: "itemdesc792082", i18n_sb: "打开可获得司马懿*1" },
-    itemdesc792092: {
-        i18n_id: "itemdesc792092",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u8BF8\\u845B\\u4EAE*1"
-    },
-    itemdesc792102: {
-        i18n_id: "itemdesc792102",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u8463\\u5353*1"
-    },
+    itemdesc792092: { i18n_id: "itemdesc792092", i18n_sb: "打开可获得神·诸葛亮*1" },
+    itemdesc792102: { i18n_id: "itemdesc792102", i18n_sb: "打开可获得魔·董卓*1" },
     itemdesc792112: { i18n_id: "itemdesc792112", i18n_sb: "打开可获得顽皮淘淘*1" },
     itemdesc792122: { i18n_id: "itemdesc792122", i18n_sb: "打开可获得法正*1" },
     itemdesc792132: { i18n_id: "itemdesc792132", i18n_sb: "打开可获得荀彧*1" },
@@ -37478,17 +35723,11 @@
     itemdesc792302: { i18n_id: "itemdesc792302", i18n_sb: "打开可获得高顺魂魄*1" },
     itemdesc792312: { i18n_id: "itemdesc792312", i18n_sb: "打开可获得吕蒙魂魄*1" },
     itemdesc792322: { i18n_id: "itemdesc792322", i18n_sb: "打开可获得夏侯渊魂魄*1" },
-    itemdesc792332: {
-        i18n_id: "itemdesc792332",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*1"
-    },
+    itemdesc792332: { i18n_id: "itemdesc792332", i18n_sb: "打开可获得魔·董卓魂魄*1" },
     itemdesc792342: { i18n_id: "itemdesc792342", i18n_sb: "打开可获得顽皮淘淘魂魄*1" },
     itemdesc792352: { i18n_id: "itemdesc792352", i18n_sb: "打开可获得法正魂魄*1" },
     itemdesc792362: { i18n_id: "itemdesc792362", i18n_sb: "打开可获得荀彧魂魄*1" },
-    itemdesc792372: {
-        i18n_id: "itemdesc792372",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u5927\\u5200\\u5175\\u9B42\\u9B44*1"
-    },
+    itemdesc792372: { i18n_id: "itemdesc792372", i18n_sb: "打开可获得神·大刀兵魂魄*1" },
     itemdesc7740009: { i18n_id: "itemdesc7740009", i18n_sb: "袁绍魂魄*3" },
     itemdesc7740019: { i18n_id: "itemdesc7740019", i18n_sb: "太史慈魂魄*3" },
     itemdesc7740029: { i18n_id: "itemdesc7740029", i18n_sb: "华雄魂魄*3" },
@@ -37501,7 +35740,7 @@
     queueTeam_17: { i18n_id: "queueTeam_17", i18n_sb: "保存阵容成功" },
     LocalDecisiveBattle_3: {
         i18n_id: "LocalDecisiveBattle_3",
-        i18n_sb: "\\u7B2C21-30\\u540D\\u5956\\u52B1\\uFF1A150\\u5143\\u5B9D\\uFF1B\\n\\u7B2C31-40\\u540D\\u5956\\u52B1\\uFF1A100\\u5143\\u5B9D\\uFF1B\\n\\u7B2C41-50\\u540D\\u5956\\u52B1\\uFF1A50\\u5143\\u5B9D\\uFF1B\\n10.\\u5165\\u56F4\\u8005\\u6BD4\\u8D5B\\u5956\\u52B1\\uFF1A\\u6240\\u6709\\u5165\\u56F4\\u8005\\u5747\\u53EF\\u83B7\\u5F97\\u4E00\\u5B9A\\u5956\\u52B1\\uFF1B\\u8D5B\\u540E\\u901A\\u8FC7\\u7CFB\\u7EDF\\u90AE\\u4EF6\\u7EDF\\u4E00\\u53D1\\u9001\\u5956\\u52B1\\uFF1B\\n\\u7B2C\\u4E8C\\u8F6E\\u6DD8\\u6C70\\uFF0832\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F974\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u7B2C\\u56DB\\u8F6E\\u6DD8\\u6C70\\uFF0832\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F975\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u7B2C\\u4E94\\u8F6E\\u6DD8\\u6C70\\uFF0816\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F975\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u7B2C\\u4E03\\u8F6E\\u6DD8\\u6C70\\uFF0816\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F975\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u7B2C\\u516B\\u8F6E\\u6DD8\\u6C70\\uFF088\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u7B2C\\u5341\\u8F6E\\u6DD8\\u6C70\\uFF088\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u7B2C\\u5341\\u4E00\\u8F6E\\u6DD8\\u6C70\\uFF084\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\u30015\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u7B2C\\u5341\\u4E09\\u8F6E\\u6DD8\\u6C70\\uFF084\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\u30015\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u7B2C\\u5341\\u56DB\\u8F6E\\u6DD8\\u6C70\\uFF082\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u7B2C\\u5341\\u516D\\u8F6E\\u6DD8\\u6C70\\uFF082\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u7B2C\\u56DB\\u540D\\uFF081\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F976\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u5B63\\u519B\\uFF081\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F977\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD71\\uFF1B\\n\\u4E9A\\u519B\\uFF081\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F977\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD72\\uFF1B\\n\\u51A0\\u519B\\uFF081\\u4EBA\\uFF09\\uFF1A\\u53EF\\u83B7\\u5F977\\u7EA7\\u5B9D\\u77F3\\u7BB1\\xD73\\uFF1B\\n11.\\u6B22\\u5E86\\u5956\\u52B1\\uFF1A\\u524D3\\u540D\\u4E3B\\u516C\\u6240\\u5728\\u7684\\u670D\\u52A1\\u5668\\u4E2D\\u7684\\u6240\\u6709\\u73A9\\u5BB6\\uFF0C\\u90FD\\u5C06\\u83B7\\u5F97200\\u5143\\u5B9D\\u7684\\u5956\\u52B1\\uFF1B\\u8D5B\\u540E\\u901A\\u8FC7\\u7CFB\\u7EDF\\u90AE\\u4EF6\\u7EDF\\u4E00\\u53D1\\u9001\\u5956\\u52B1\\uFF1B\\n12.\\u6700\\u540E\\uFF0C\\u5EFA\\u8BAE\\u73A9\\u5BB6\\u5C3D\\u91CF\\u907F\\u514D\\u5728\\u6BD4\\u8D5B\\u5F00\\u59CB\\u524D\\u540E\\u4FEE\\u6539\\u9635\\u5BB9\\uFF0C\\u4EE5\\u514D\\u5F71\\u54CD\\u5230\\u6BD4\\u8D5B\\u7ED3\\u679C\\uFF1B"
+        i18n_sb: "第21-30名奖励：150元宝；\n第31-40名奖励：100元宝；\n第41-50名奖励：50元宝；\n10.入围者比赛奖励：所有入围者均可获得一定奖励；赛后通过系统邮件统一发送奖励；\n第二轮淘汰（32人）：可获得4级宝石箱×2；\n第四轮淘汰（32人）：可获得5级宝石箱×1；\n第五轮淘汰（16人）：可获得5级宝石箱×2；\n第七轮淘汰（16人）：可获得5级宝石箱×2；\n第八轮淘汰（8人）：可获得6级宝石箱×1；\n第十轮淘汰（8人）：可获得6级宝石箱×1；\n第十一轮淘汰（4人）：可获得6级宝石箱×1、5级宝石箱×1；\n第十三轮淘汰（4人）：可获得6级宝石箱×1、5级宝石箱×1；\n第十四轮淘汰（2人）：可获得6级宝石箱×2；\n第十六轮淘汰（2人）：可获得6级宝石箱×2；\n第四名（1人）：可获得6级宝石箱×2；\n季军（1人）：可获得7级宝石箱×1；\n亚军（1人）：可获得7级宝石箱×2；\n冠军（1人）：可获得7级宝石箱×3；\n11.欢庆奖励：前3名主公所在的服务器中的所有玩家，都将获得200元宝的奖励；赛后通过系统邮件统一发送奖励；\n12.最后，建议玩家尽量避免在比赛开始前后修改阵容，以免影响到比赛结果；"
     },
     str_Filter_Demon: { i18n_id: "str_Filter_Demon", i18n_sb: "魔" },
     mystery_name_107700009: { i18n_id: "mystery_name_107700009", i18n_sb: "袁绍魂魄*1" },
@@ -37510,19 +35749,19 @@
     mystery_name_107700039: { i18n_id: "mystery_name_107700039", i18n_sb: "赵云魂魄*1" },
     mystery_name_107700049: { i18n_id: "mystery_name_107700049", i18n_sb: "兵长陆逊魂魄*1" },
     mystery_name_107700059: { i18n_id: "mystery_name_107700059", i18n_sb: "魏武帝魂魄*1" },
-    mystery_name_107700069: { i18n_id: "mystery_name_107700069", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*1" },
+    mystery_name_107700069: { i18n_id: "mystery_name_107700069", i18n_sb: "魔·董卓魂魄*1" },
     mystery_name_107700079: { i18n_id: "mystery_name_107700079", i18n_sb: "马超魂魄*1" },
     mystery_name_107700089: { i18n_id: "mystery_name_107700089", i18n_sb: "甘宁魂魄*1" },
     mystery_name_107700099: { i18n_id: "mystery_name_107700099", i18n_sb: "庞统魂魄*1" },
     mystery_name_107700109: { i18n_id: "mystery_name_107700109", i18n_sb: "跑男夏侯渊魂魄*1" },
     mystery_name_107700119: { i18n_id: "mystery_name_107700119", i18n_sb: "孟获魂魄*1" },
-    mystery_name_107700129: { i18n_id: "mystery_name_107700129", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9B42\\u9B44*3" },
+    mystery_name_107700129: { i18n_id: "mystery_name_107700129", i18n_sb: "魔·貂蝉魂魄*3" },
     mystery_name_107700139: { i18n_id: "mystery_name_107700139", i18n_sb: "郭嘉魂魄*3" },
     mystery_name_107700149: { i18n_id: "mystery_name_107700149", i18n_sb: "曹仁魂魄*3" },
     mystery_name_107700159: { i18n_id: "mystery_name_107700159", i18n_sb: "诸葛亮魂魄*3" },
     mystery_name_107700169: { i18n_id: "mystery_name_107700169", i18n_sb: "姜维魂魄*3" },
     mystery_name_107700179: { i18n_id: "mystery_name_107700179", i18n_sb: "程昱魂魄*3" },
-    mystery_name_107700189: { i18n_id: "mystery_name_107700189", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*3" },
+    mystery_name_107700189: { i18n_id: "mystery_name_107700189", i18n_sb: "魔·张角魂魄*3" },
     mystery_name_107700199: { i18n_id: "mystery_name_107700199", i18n_sb: "小乔魂魄*3" },
     mystery_name_107700209: { i18n_id: "mystery_name_107700209", i18n_sb: "李典魂魄*3" },
     mystery_name_107700219: { i18n_id: "mystery_name_107700219", i18n_sb: "张郃魂魄*3" },
@@ -37553,9 +35792,9 @@
     "4110061501": { i18n_id: "4110061501", i18n_sb: "红莲疾风" },
     "4120120101": { i18n_id: "4120120101", i18n_sb: "落英缤纷" },
     "4220120501": { i18n_id: "4220120501", i18n_sb: "万象奔腾" },
-    itemname111001: { i18n_id: "itemname111001", i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD" },
+    itemname111001: { i18n_id: "itemname111001", i18n_sb: "神·曹操" },
     itemname792380: { i18n_id: "itemname792380", i18n_sb: "祝融魂魄礼包" },
-    itemdesc111001: { i18n_id: "itemdesc111001", i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD" },
+    itemdesc111001: { i18n_id: "itemdesc111001", i18n_sb: "神·曹操" },
     itemdesc792380: { i18n_id: "itemdesc792380", i18n_sb: "打开可获得祝融魂魄*1" },
     "8120120101": { i18n_id: "8120120101", i18n_sb: "勤劳的勇者" },
     "8220120302": { i18n_id: "8220120302", i18n_sb: "修炼武将攻属性至6000" },
@@ -37644,14 +35883,14 @@
     mystery_name_107700442: { i18n_id: "mystery_name_107700442", i18n_sb: "暗度陈仓碎片*3" },
     mystery_name_107700452: { i18n_id: "mystery_name_107700452", i18n_sb: "谦逊残卷" },
     mystery_name_107700462: { i18n_id: "mystery_name_107700462", i18n_sb: "闭月残卷" },
-    itemname600124: { i18n_id: "itemname600124", i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u4F20\\u627F\\u7B26" },
+    itemname600124: { i18n_id: "itemname600124", i18n_sb: "神·吕蒙传承符" },
     mystery_name_117710009: { i18n_id: "mystery_name_117710009", i18n_sb: "袁绍魂魄*1" },
     mystery_name_117710019: { i18n_id: "mystery_name_117710019", i18n_sb: "太史慈魂魄*1" },
     mystery_name_117710029: { i18n_id: "mystery_name_117710029", i18n_sb: "华雄魂魄*1" },
     mystery_name_117710039: { i18n_id: "mystery_name_117710039", i18n_sb: "赵云魂魄*1" },
     mystery_name_117710049: { i18n_id: "mystery_name_117710049", i18n_sb: "兵长陆逊魂魄*1" },
     mystery_name_117710059: { i18n_id: "mystery_name_117710059", i18n_sb: "魏武帝魂魄*1" },
-    mystery_name_107740006: { i18n_id: "mystery_name_107740006", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*3" },
+    mystery_name_107740006: { i18n_id: "mystery_name_107740006", i18n_sb: "魔·董卓魂魄*3" },
     mystery_name_107740016: { i18n_id: "mystery_name_107740016", i18n_sb: "马超魂魄*3" },
     mystery_name_107740026: { i18n_id: "mystery_name_107740026", i18n_sb: "甘宁魂魄*3" },
     mystery_name_107740036: { i18n_id: "mystery_name_107740036", i18n_sb: "庞统魂魄*3" },
@@ -37979,7 +36218,7 @@
     itemname231017: { i18n_id: "itemname231017", i18n_sb: "良心鸡" },
     itemdesc9231017: { i18n_id: "itemdesc9231017", i18n_sb: "集齐15个碎片可合成坐骑良心鸡" },
     "8520020102": { i18n_id: "8520020102", i18n_sb: "图鉴点亮[装备]凤求凰" },
-    itemname9151002: { i18n_id: "itemname9151002", i18n_sb: "\\u795E\\xB7\\u8D5B\\u96F7\\u9B42\\u9B44" },
+    itemname9151002: { i18n_id: "itemname9151002", i18n_sb: "神·赛雷魂魄" },
     itemname165003: { i18n_id: "itemname165003", i18n_sb: "电玩侍女" },
     itemdesc9165003: { i18n_id: "itemdesc9165003", i18n_sb: "电玩侍女魂魄" },
     itemdesc152002: { i18n_id: "itemdesc152002", i18n_sb: "卑弥呼" },
@@ -38003,7 +36242,7 @@
     "4110300201": { i18n_id: "4110300201", i18n_sb: "昭心可鉴" },
     "4110310601": { i18n_id: "4110310601", i18n_sb: "司马家族" },
     itemname351038: { i18n_id: "itemname351038", i18n_sb: "连破" },
-    "8110260201": { i18n_id: "8110260201", i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u7684\\u5FC3\\u613F" },
+    "8110260201": { i18n_id: "8110260201", i18n_sb: "神·司马懿的心愿" },
     "8110260302": { i18n_id: "8110260302", i18n_sb: "修炼武将智属性至6000" },
     festival_tree_first_kill_mail: {
         i18n_id: "festival_tree_first_kill_mail",
@@ -38030,7 +36269,7 @@
     itemdesc9241018: { i18n_id: "itemdesc9241018", i18n_sb: "集齐15个碎片可合成坐骑以逸待劳" },
     "351021803": { i18n_id: "351021803", i18n_sb: "受到普通伤害前 易触发" },
     itemname792773: { i18n_id: "itemname792773", i18n_sb: "凤求凰礼包（一）" },
-    "12102101": { i18n_id: "12102101", i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91" },
+    "12102101": { i18n_id: "12102101", i18n_sb: "神·赵云" },
     "4310122001": { i18n_id: "4310122001", i18n_sb: "天义有道" },
     "4410102401": { i18n_id: "4410102401", i18n_sb: "大魏肱骨" },
     "8410100601": { i18n_id: "8410100601", i18n_sb: "觉醒图腾" },
@@ -38066,10 +36305,7 @@
         i18n_sb: "【雉盗】属控场技能，主攻。若你行动时没有使用攻击技能，行动后必触发，你对敌方场上一名攻击最高的角色造成75%伤害，并偷取目标10%的攻击和防御，偷取的属性上限不会超过自身属性的200%"
     },
     "4410230301": { i18n_id: "4410230301", i18n_sb: "鸡飞虎走" },
-    itemdesc79141023: {
-        i18n_id: "itemdesc79141023",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79141023: { i18n_id: "itemdesc79141023", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8410230402": { i18n_id: "8410230402", i18n_sb: "天赋技能等级达到30级" },
     "13102202": {
         i18n_id: "13102202",
@@ -38078,10 +36314,7 @@
     "33102204": { i18n_id: "33102204", i18n_sb: "自身和敌方全体" },
     "4310220201": { i18n_id: "4310220201", i18n_sb: "以逸待劳" },
     itemname79131022: { i18n_id: "itemname79131022", i18n_sb: "臣服奖励" },
-    itemdesc79131022: {
-        i18n_id: "itemdesc79131022",
-        i18n_sb: "\\u795E\\xB7\\u8D75\\u4E91\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79131022: { i18n_id: "itemdesc79131022", i18n_sb: "神·赵云魂魄x2,灵芝x1000" },
     "8310220101": { i18n_id: "8310220101", i18n_sb: "心悦诚服" },
     "8310220102": { i18n_id: "8310220102", i18n_sb: "臣服大小乔" },
     "4710032001": { i18n_id: "4710032001", i18n_sb: "来电我呀" },
@@ -38165,7 +36398,7 @@
     "4220111001": { i18n_id: "4220111001", i18n_sb: "七擒孟获" },
     "4420132001": { i18n_id: "4420132001", i18n_sb: "远交近攻" },
     "4520021201": { i18n_id: "4520021201", i18n_sb: "邪马之主" },
-    itemname161001: { i18n_id: "itemname161001", i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD" },
+    itemname161001: { i18n_id: "itemname161001", i18n_sb: "界·关羽" },
     itemdesc121024: { i18n_id: "itemdesc121024", i18n_sb: "SP黄忠" },
     "8420130701": { i18n_id: "8420130701", i18n_sb: "觉醒图腾" },
     "8210240401": { i18n_id: "8210240401", i18n_sb: "开启觉醒宝箱" },
@@ -38238,7 +36471,7 @@
     "4110291901": { i18n_id: "4110291901", i18n_sb: "双剑合璧" },
     "4110301101": { i18n_id: "4110301101", i18n_sb: "秦晋之好" },
     "4610010301": { i18n_id: "4610010301", i18n_sb: "界限突破" },
-    itemname9161002: { i18n_id: "itemname9161002", i18n_sb: "\\u754C\\xB7\\u5218\\u5907\\u9B42\\u9B44" },
+    itemname9161002: { i18n_id: "itemname9161002", i18n_sb: "界·刘备魂魄" },
     itemname361002: { i18n_id: "itemname361002", i18n_sb: "义绝" },
     itemdesc231019: { i18n_id: "itemdesc231019", i18n_sb: "烈焰赤兔马的简介" },
     itemdesc600301: { i18n_id: "itemdesc600301", i18n_sb: "王元姬升级材料碎片" },
@@ -38276,10 +36509,10 @@
     "12101301": { i18n_id: "12101301", i18n_sb: "张星彩" },
     "11101701": { i18n_id: "11101701", i18n_sb: "张郃" },
     "13200201": { i18n_id: "13200201", i18n_sb: "张纮" },
-    "12100101": { i18n_id: "12100101", i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD" },
-    "18100101": { i18n_id: "18100101", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE" },
+    "12100101": { i18n_id: "12100101", i18n_sb: "神·关羽" },
+    "18100101": { i18n_id: "18100101", i18n_sb: "魔·张飞" },
     "17100401": { i18n_id: "17100401", i18n_sb: "冰雪春华" },
-    "18100901": { i18n_id: "18100901", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2" },
+    "18100901": { i18n_id: "18100901", i18n_sb: "魔·张角" },
     "11102301": { i18n_id: "11102301", i18n_sb: "程昱" },
     "17101301": { i18n_id: "17101301", i18n_sb: "芽间月英" },
     "11100802": {
@@ -38514,13 +36747,10 @@
         i18n_id: "33101602",
         i18n_sb: "【英魂】孙坚震慑敌军的魂魄之力，属控场技能，主攻。 行动前易触发，对敌方全体造成伤害并增加其下一次受到的伤害，且在敌方血量较低时会造成额外伤害。敌方已阵亡人数越多，此伤害越高。"
     },
-    "38100102": {
-        i18n_id: "38100102",
-        i18n_sb: "\\u3010\\u9B54\\u5486\\u54EE\\u3011\\u9B54\\xB7\\u5F20\\u98DE\\u4EE5\\u4E00\\u6321\\u5341\\u7684\\u62A4\\u4E3B\\u4E4B\\u6280\\uFF0C\\u5C5E\\u5356\\u8840\\u6280\\u80FD\\uFF0C\\u4E3B\\u9632\\u3002\\u53D7\\u4F24\\u540E\\u6613\\u89E6\\u53D1\\uFF0C\\u53EF\\u5BF9\\u654C\\u65B9\\u5355\\u4F53\\u9020\\u6210\\u8FDE\\u7EED\\u591A\\u6B21\\u9632\\u5FA1\\u4F24\\u5BB3\\u3002"
-    },
+    "38100102": { i18n_id: "38100102", i18n_sb: "【魔咆哮】魔·张飞以一挡十的护主之技，属卖血技能，主防。受伤后易触发，可对敌方单体造成连续多次防御伤害。" },
     "38100702": {
         i18n_id: "38100702",
-        i18n_sb: "\\u3010\\u9B54\\u96F7\\u51FB\\u3011\\u9B54\\xB7\\u5F20\\u89D2\\u9006\\u5929\\u6539\\u547D\\u3001\\u4F24\\u654C\\u6027\\u547D\\u53D6\\u5176\\u547D\\u6570\\u7684\\u592A\\u5E73\\u9053\\u6CD5\\uFF0C\\u5C5E\\u63A7\\u573A\\u6280\\u80FD\\uFF0C\\u4E3B\\u667A\\u3002\\u884C\\u52A8\\u540E\\u6613\\u89E6\\u53D1\\uFF0C\\u53EF\\u5BF9\\u654C\\u65B9\\u5355\\u4F53\\u9020\\u6210\\u667A\\u529B\\u4F24\\u5BB3\\uFF0C\\u5E76\\u5438\\u6536\\u4F24\\u5BB3\\u503C\\u5BF9\\u5E94\\u7684\\u8840\\u91CF."
+        i18n_sb: "【魔雷击】魔·张角逆天改命、伤敌性命取其命数的太平道法，属控场技能，主智。行动后易触发，可对敌方单体造成智力伤害，并吸收伤害值对应的血量."
     },
     "10000402": {
         i18n_id: "10000402",
@@ -38786,7 +37016,7 @@
     itemname9112002: { i18n_id: "itemname9112002", i18n_sb: "荀攸魂魄" },
     itemname9112022: { i18n_id: "itemname9112022", i18n_sb: "鲍勋魂魄" },
     itemname9164031: { i18n_id: "itemname9164031", i18n_sb: "青州枪兵魂魄" },
-    itemname9121002: { i18n_id: "itemname9121002", i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44" },
+    itemname9121002: { i18n_id: "itemname9121002", i18n_sb: "神·诸葛亮魂魄" },
     itemname9121016: { i18n_id: "itemname9121016", i18n_sb: "魏延魂魄" },
     itemname9122019: { i18n_id: "itemname9122019", i18n_sb: "周仓魂魄" },
     itemname9123015: { i18n_id: "itemname9123015", i18n_sb: "简雍魂魄" },
@@ -38800,7 +37030,7 @@
     itemname9164053: { i18n_id: "itemname9164053", i18n_sb: "黄巾大刀兵魂魄" },
     itemname9164023: { i18n_id: "itemname9164023", i18n_sb: "西凉斧兵魂魄" },
     itemname9131004: { i18n_id: "itemname9131004", i18n_sb: "周瑜魂魄" },
-    itemname9181006: { i18n_id: "itemname9181006", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44" },
+    itemname9181006: { i18n_id: "itemname9181006", i18n_sb: "魔·贾诩魂魄" },
     itemname9111012: { i18n_id: "itemname9111012", i18n_sb: "曹丕魂魄" },
     itemname9171002: { i18n_id: "itemname9171002", i18n_sb: "跑男夏侯渊魂魄" },
     itemname9171013: { i18n_id: "itemname9171013", i18n_sb: "芽间月英魂魄" },
@@ -38953,7 +37183,7 @@
     itemname790317: { i18n_id: "itemname790317", i18n_sb: "20级黄忠礼包" },
     itemname790327: { i18n_id: "itemname790327", i18n_sb: "20级关平礼包" },
     itemname790337: { i18n_id: "itemname790337", i18n_sb: "20级周泰礼包" },
-    itemname790347: { i18n_id: "itemname790347", i18n_sb: "20\\u7EA7\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u793C\\u5305" },
+    itemname790347: { i18n_id: "itemname790347", i18n_sb: "20级群·蔡文姬礼包" },
     itemname87111012: { i18n_id: "itemname87111012", i18n_sb: "曹丕道具（1级）" },
     itemname87121010: { i18n_id: "itemname87121010", i18n_sb: "马超道具（1级）" },
     itemname87122023: { i18n_id: "itemname87122023", i18n_sb: "关索道具（1级）" },
@@ -38975,10 +37205,7 @@
     itemname6200012: { i18n_id: "itemname6200012", i18n_sb: "诸葛连弩宝箱(甄姬缘分神级武器)" },
     itemname6200022: { i18n_id: "itemname6200022", i18n_sb: "玄武盾宝箱(华佗缘分神级防具)" },
     itemname6200032: { i18n_id: "itemname6200032", i18n_sb: "乐不思蜀宝箱(大乔缘分神级锦囊)" },
-    itemname6200042: {
-        i18n_id: "itemname6200042",
-        i18n_sb: "\\u7EDD\\u5F71\\u5B9D\\u7BB1(\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u7F18\\u5206\\u795E\\u7EA7\\u5750\\u9A91)"
-    },
+    itemname6200042: { i18n_id: "itemname6200042", i18n_sb: "绝影宝箱(神·诸葛亮缘分神级坐骑)" },
     itemname6200052: { i18n_id: "itemname6200052", i18n_sb: "赤兔宝箱(貂蝉缘分神级坐骑)" },
     itemname6200062: { i18n_id: "itemname6200062", i18n_sb: "追风宝箱(凌统缘分神级坐骑)" },
     itemname791414: { i18n_id: "itemname791414", i18n_sb: "论坛礼包B" },
@@ -38997,7 +37224,7 @@
     itemname791480: { i18n_id: "itemname791480", i18n_sb: "108元宝" },
     itemname791490: { i18n_id: "itemname791490", i18n_sb: "元宝宝箱" },
     itemname40142002: { i18n_id: "itemname40142002", i18n_sb: "高顺" },
-    itemname40131006: { i18n_id: "itemname40131006", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    itemname40131006: { i18n_id: "itemname40131006", i18n_sb: "吴·孙尚香" },
     itemname40131017: { i18n_id: "itemname40131017", i18n_sb: "凌统" },
     itemname40142013: { i18n_id: "itemname40142013", i18n_sb: "伏皇后" },
     itemname40121005: { i18n_id: "itemname40121005", i18n_sb: "黄月英" },
@@ -39023,17 +37250,14 @@
     itemname6300125: { i18n_id: "itemname6300125", i18n_sb: "朱雀冠礼盒(张春华缘分神级防具)" },
     itemname6300135: { i18n_id: "itemname6300135", i18n_sb: "的卢礼盒（诸葛瑾缘分神坐骑）" },
     itemname6300145: { i18n_id: "itemname6300145", i18n_sb: "玄武盾礼盒（荀彧缘分神防具）" },
-    itemname6300155: {
-        i18n_id: "itemname6300155",
-        i18n_sb: "\\u56FD\\u58EB\\u5723\\u888D\\u793C\\u76D2\\uFF08\\u795E\\xB7\\u5415\\u8499\\u7F18\\u5206\\u795E\\u9632\\u5177\\uFF09"
-    },
+    itemname6300155: { i18n_id: "itemname6300155", i18n_sb: "国士圣袍礼盒（神·吕蒙缘分神防具）" },
     itemname791566: { i18n_id: "itemname791566", i18n_sb: "双十一礼包" },
     itemname791576: { i18n_id: "itemname791576", i18n_sb: "木牛流马" },
     itemname791586: { i18n_id: "itemname791586", i18n_sb: "于吉礼包" },
     itemname791596: { i18n_id: "itemname791596", i18n_sb: "微信礼包" },
     itemname791606: { i18n_id: "itemname791606", i18n_sb: "魔马超" },
     itemname791609: { i18n_id: "itemname791609", i18n_sb: "『灵芝』*500" },
-    itemname791619: { i18n_id: "itemname791619", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*1" },
+    itemname791619: { i18n_id: "itemname791619", i18n_sb: "魔·张飞魂魄*1" },
     itemname791629: { i18n_id: "itemname791629", i18n_sb: "论坛礼包F" },
     itemname791639: { i18n_id: "itemname791639", i18n_sb: "5月微信礼包档次三" },
     itemname6300083: { i18n_id: "itemname6300083", i18n_sb: "龙胆枪礼盒（张辽缘分神级武器）" },
@@ -39047,30 +37271,30 @@
     itemname540021: { i18n_id: "itemname540021", i18n_sb: "第40章第1个宝箱" },
     itemname543022: { i18n_id: "itemname543022", i18n_sb: "第43章第2个宝箱" },
     itemname10542010: { i18n_id: "itemname10542010", i18n_sb: "第42章隐藏宝箱" },
-    itemname791711: { i18n_id: "itemname791711", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*2" },
+    itemname791711: { i18n_id: "itemname791711", i18n_sb: "魔·张角魂魄*2" },
     itemname730109: { i18n_id: "itemname730109", i18n_sb: "109级升级奖励" },
     itemname730119: { i18n_id: "itemname730119", i18n_sb: "119级升级奖励" },
     itemname600085: { i18n_id: "itemname600085", i18n_sb: "8级宝石箱" },
-    itemname791720: { i18n_id: "itemname791720", i18n_sb: "\\u4FEE\\u7F57\\u8D64\\u5154\\u788E\\u7247\\xD71" },
-    itemname791730: { i18n_id: "itemname791730", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*2" },
+    itemname791720: { i18n_id: "itemname791720", i18n_sb: "修罗赤兔碎片×1" },
+    itemname791730: { i18n_id: "itemname791730", i18n_sb: "魔·董卓魂魄*2" },
     itemname791738: { i18n_id: "itemname791738", i18n_sb: "骅骝礼包" },
     itemname791748: { i18n_id: "itemname791748", i18n_sb: "巅峰之战600积分礼包" },
     itemname791758: { i18n_id: "itemname791758", i18n_sb: "首次充值大礼包" },
     itemname791768: { i18n_id: "itemname791768", i18n_sb: "88元宝" },
-    itemname791778: { i18n_id: "itemname791778", i18n_sb: "\\u5143\\u5B9D\\xD76000" },
+    itemname791778: { i18n_id: "itemname791778", i18n_sb: "元宝×6000" },
     itemname11100004: { i18n_id: "itemname11100004", i18n_sb: "女神小乔" },
     itemname21100005: { i18n_id: "itemname21100005", i18n_sb: "女神祝融皮肤" },
     itemname791785: { i18n_id: "itemname791785", i18n_sb: "女神貂蝉礼包" },
     itemname791795: { i18n_id: "itemname791795", i18n_sb: "女神甄姬皮肤礼包" },
-    itemname89181002: { i18n_id: "itemname89181002", i18n_sb: "\\u9B54\\xB7\\u8C82\\u8749\\u9053\\u5177" },
+    itemname89181002: { i18n_id: "itemname89181002", i18n_sb: "魔·貂蝉道具" },
     itemname600092: { i18n_id: "itemname600092", i18n_sb: "红福袋" },
     itemname547023: { i18n_id: "itemname547023", i18n_sb: "第47章第3个宝箱" },
     itemname10546010: { i18n_id: "itemname10546010", i18n_sb: "第46章隐藏宝箱" },
     itemname791814: { i18n_id: "itemname791814", i18n_sb: "诸葛瑾礼包" },
     itemname791824: { i18n_id: "itemname791824", i18n_sb: "谢礼4(普通)" },
     itemname791834: { i18n_id: "itemname791834", i18n_sb: "魄*20" },
-    itemname600103: { i18n_id: "itemname600103", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD71635" },
-    itemname600113: { i18n_id: "itemname600113", i18n_sb: "\\u4E3B\\u516C\\u7ECF\\u9A8C\\xD75290" },
+    itemname600103: { i18n_id: "itemname600103", i18n_sb: "主公经验×1635" },
+    itemname600113: { i18n_id: "itemname600113", i18n_sb: "主公经验×5290" },
     itemname7710010: { i18n_id: "itemname7710010", i18n_sb: "神秘商品之刘备魂魄*1" },
     itemname7710020: { i18n_id: "itemname7710020", i18n_sb: "神秘商品之貂蝉魂魄*1" },
     itemname7710030: { i18n_id: "itemname7710030", i18n_sb: "神秘商品之鲁肃魂魄*1" },
@@ -39122,10 +37346,7 @@
     itemdesc710001: { i18n_id: "itemdesc710001", i18n_sb: "打开可获得：5把铜钥匙， 1万银子" },
     itemdesc710023: { i18n_id: "itemdesc710023", i18n_sb: "打开可获得:水淹七军1个，霸者披风1个，200灵芝" },
     itemdesc710013: { i18n_id: "itemdesc710013", i18n_sb: "打开可获得：神武器（方天画戟），神防具（无双铠），赤兔（神坐骑），银两和10000灵芝" },
-    itemdesc710018: {
-        i18n_id: "itemdesc710018",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u7684\\u5362\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
+    itemdesc710018: { i18n_id: "itemdesc710018", i18n_sb: "打开可获得：的卢碎片×1，神装碎片礼盒×2，金装礼盒×3" },
     itemdesc720008: { i18n_id: "itemdesc720008", i18n_sb: "打开可获得：桃园结义,4个勾玉,10个包子,10个红茶,大量银子。" },
     itemdesc730010: { i18n_id: "itemdesc730010", i18n_sb: "10元宝,2800银子" },
     itemdesc730020: { i18n_id: "itemdesc730020", i18n_sb: "10元宝,4800银子" },
@@ -39194,7 +37415,7 @@
     itemdesc9121018: { i18n_id: "itemdesc9121018", i18n_sb: "关银屏魂魄" },
     itemdesc9122020: { i18n_id: "itemdesc9122020", i18n_sb: "刘封魂魄" },
     itemdesc9123016: { i18n_id: "itemdesc9123016", i18n_sb: "伊籍魂魄" },
-    itemdesc9131001: { i18n_id: "itemdesc9131001", i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44" },
+    itemdesc9131001: { i18n_id: "itemdesc9131001", i18n_sb: "神·周瑜魂魄" },
     itemdesc9132012: { i18n_id: "itemdesc9132012", i18n_sb: "韩当魂魄" },
     itemdesc9133007: { i18n_id: "itemdesc9133007", i18n_sb: "全琮魂魄" },
     itemdesc9164049: { i18n_id: "itemdesc9164049", i18n_sb: "江东重水兵魂魄" },
@@ -39271,141 +37492,51 @@
     itemdesc112019: { i18n_id: "itemdesc112019", i18n_sb: "曹昂" },
     itemdesc113020: { i18n_id: "itemdesc113020", i18n_sb: "孟达" },
     itemdesc164036: { i18n_id: "itemdesc164036", i18n_sb: "青州长枪兵" },
-    itemdesc121014: { i18n_id: "itemdesc121014", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999" },
+    itemdesc121014: { i18n_id: "itemdesc121014", i18n_sb: "蜀·孙尚香" },
     itemdesc122016: { i18n_id: "itemdesc122016", i18n_sb: "夏侯氏" },
     itemdesc123014: { i18n_id: "itemdesc123014", i18n_sb: "孙乾" },
     itemdesc164015: { i18n_id: "itemdesc164015", i18n_sb: "巴蜀长枪兵" },
     itemdesc132012: { i18n_id: "itemdesc132012", i18n_sb: "韩当" },
     itemdesc133009: { i18n_id: "itemdesc133009", i18n_sb: "陆绩" },
     itemdesc164012: { i18n_id: "itemdesc164012", i18n_sb: "江东长弓兵" },
-    itemdesc141011: { i18n_id: "itemdesc141011", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC" },
+    itemdesc141011: { i18n_id: "itemdesc141011", i18n_sb: "群·蔡文姬" },
     itemdesc142021: { i18n_id: "itemdesc142021", i18n_sb: "田丰" },
     itemdesc164007: { i18n_id: "itemdesc164007", i18n_sb: "黄巾弩兵" },
     itemdesc164057: { i18n_id: "itemdesc164057", i18n_sb: "冀州骑兵" },
     itemdesc164028: { i18n_id: "itemdesc164028", i18n_sb: "西凉重斧兵" },
     itemdesc171005: { i18n_id: "itemdesc171005", i18n_sb: "射手黄忠" },
-    itemdesc79111003: {
-        i18n_id: "itemdesc79111003",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79112011: {
-        i18n_id: "itemdesc79112011",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u90ED\\u5609\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79113016: {
-        i18n_id: "itemdesc79113016",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u66F9\\u64CD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164034: {
-        i18n_id: "itemdesc79164034",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9752\\u5DDE\\u91CD\\u9524\\u5175\\xD71,\\u9A86\\u9A7C\\u788E\\u7247\\xD71"
-    },
-    itemdesc79121009: {
-        i18n_id: "itemdesc79121009",
-        i18n_sb: "\\u9E92\\u9E9F\\u888D\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79122008: {
-        i18n_id: "itemdesc79122008",
-        i18n_sb: "\\u5BD2\\u51B0\\u5251\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79122024: {
-        i18n_id: "itemdesc79122024",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u6C99\\u91CC\\u98DE\\u788E\\u7247\\xD72"
-    },
-    itemdesc79164003: {
-        i18n_id: "itemdesc79164003",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u5DF4\\u8700\\u67AA\\u5175\\xD71,\\u9752\\u9CDE\\u76D4\\u788E\\u7247\\xD71"
-    },
-    itemdesc79131008: {
-        i18n_id: "itemdesc79131008",
-        i18n_sb: "\\u795E\\xB7\\u8BF8\\u845B\\u4EAE\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79132018: {
-        i18n_id: "itemdesc79132018",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u6C99\\u91CC\\u98DE\\u788E\\u7247\\xD72"
-    },
-    itemdesc79164043: {
-        i18n_id: "itemdesc79164043",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u6C5F\\u4E1C\\u6C34\\u5175\\xD71,\\u767D\\u9B03\\u788E\\u7247\\xD71"
-    },
-    itemdesc79141006: {
-        i18n_id: "itemdesc79141006",
-        i18n_sb: "\\u5BD2\\u51B0\\u5251\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD7500"
-    },
-    itemdesc79142016: {
-        i18n_id: "itemdesc79142016",
-        i18n_sb: "\\u5143\\u5B9D\\xD760,\\u9A6C\\u8D85\\u9B42\\u9B44\\xD74"
-    },
-    itemdesc79143015: {
-        i18n_id: "itemdesc79143015",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u8881\\u7ECD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79164053: {
-        i18n_id: "itemdesc79164053",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u9EC4\\u5DFE\\u91CD\\u9524\\u5175\\xD71,\\u6C34\\u6DF9\\u4E03\\u519B\\u788E\\u7247\\xD71"
-    },
-    itemdesc79164023: {
-        i18n_id: "itemdesc79164023",
-        i18n_sb: "\\u5143\\u5B9D\\xD720,\\u897F\\u51C9\\u5F29\\u5175\\xD71,\\u5434\\u516D\\u5251\\u788E\\u7247\\xD71"
-    },
-    itemdesc79143014: {
-        i18n_id: "itemdesc79143014",
-        i18n_sb: "\\u5143\\u5B9D\\xD740,\\u8881\\u7ECD\\u9B42\\u9B44\\xD73"
-    },
-    itemdesc79131018: {
-        i18n_id: "itemdesc79131018",
-        i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79193002: {
-        i18n_id: "itemdesc79193002",
-        i18n_sb: "\\u6728\\u725B\\u6D41\\u9A6C\\u788E\\u7247\\xD72,\\u7075\\u829D\\xD7200"
-    },
-    itemdesc79111022: {
-        i18n_id: "itemdesc79111022",
-        i18n_sb: "\\u795E\\xB7\\u5173\\u7FBD\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79181008: {
-        i18n_id: "itemdesc79181008",
-        i18n_sb: "\\u722A\\u9EC4\\u98DE\\u7535\\u788E\\u7247\\xD73,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79142008: {
-        i18n_id: "itemdesc79142008",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u5E03\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc79141009: {
-        i18n_id: "itemdesc79141009",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD73,\\u7075\\u829D\\xD71000"
-    },
+    itemdesc79111003: { i18n_id: "itemdesc79111003", i18n_sb: "神·周瑜魂魄×3,灵芝×1000" },
+    itemdesc79112011: { i18n_id: "itemdesc79112011", i18n_sb: "元宝×60,郭嘉魂魄×4" },
+    itemdesc79113016: { i18n_id: "itemdesc79113016", i18n_sb: "元宝×40,曹操魂魄×3" },
+    itemdesc79164034: { i18n_id: "itemdesc79164034", i18n_sb: "元宝×20,青州重锤兵×1,骆驼碎片×1" },
+    itemdesc79121009: { i18n_id: "itemdesc79121009", i18n_sb: "麒麟袍碎片×3,灵芝×500" },
+    itemdesc79122008: { i18n_id: "itemdesc79122008", i18n_sb: "寒冰剑碎片×3,灵芝×500" },
+    itemdesc79122024: { i18n_id: "itemdesc79122024", i18n_sb: "元宝×60,沙里飞碎片×2" },
+    itemdesc79164003: { i18n_id: "itemdesc79164003", i18n_sb: "元宝×20,巴蜀枪兵×1,青鳞盔碎片×1" },
+    itemdesc79131008: { i18n_id: "itemdesc79131008", i18n_sb: "神·诸葛亮魂魄×3,灵芝×1000" },
+    itemdesc79132018: { i18n_id: "itemdesc79132018", i18n_sb: "元宝×60,沙里飞碎片×2" },
+    itemdesc79164043: { i18n_id: "itemdesc79164043", i18n_sb: "元宝×20,江东水兵×1,白鬃碎片×1" },
+    itemdesc79141006: { i18n_id: "itemdesc79141006", i18n_sb: "寒冰剑碎片×3,灵芝×500" },
+    itemdesc79142016: { i18n_id: "itemdesc79142016", i18n_sb: "元宝×60,马超魂魄×4" },
+    itemdesc79143015: { i18n_id: "itemdesc79143015", i18n_sb: "元宝×40,袁绍魂魄×3" },
+    itemdesc79164053: { i18n_id: "itemdesc79164053", i18n_sb: "元宝×20,黄巾重锤兵×1,水淹七军碎片×1" },
+    itemdesc79164023: { i18n_id: "itemdesc79164023", i18n_sb: "元宝×20,西凉弩兵×1,吴六剑碎片×1" },
+    itemdesc79143014: { i18n_id: "itemdesc79143014", i18n_sb: "元宝×40,袁绍魂魄×3" },
+    itemdesc79131018: { i18n_id: "itemdesc79131018", i18n_sb: "神·周瑜魂魄×3,灵芝×1000" },
+    itemdesc79193002: { i18n_id: "itemdesc79193002", i18n_sb: "木牛流马碎片×2,灵芝×200" },
+    itemdesc79111022: { i18n_id: "itemdesc79111022", i18n_sb: "神·关羽魂魄×2,灵芝×1000" },
+    itemdesc79181008: { i18n_id: "itemdesc79181008", i18n_sb: "爪黄飞电碎片×3,灵芝×1000" },
+    itemdesc79142008: { i18n_id: "itemdesc79142008", i18n_sb: "神·吕布魂魄×2,灵芝×1000" },
+    itemdesc79141009: { i18n_id: "itemdesc79141009", i18n_sb: "神·吕蒙魂魄×3,灵芝×1000" },
     itemdesc790214: { i18n_id: "itemdesc790214", i18n_sb: "有大量机会获得青龙偃月刀碎片以及其他稀有道具" },
-    itemdesc790227: {
-        i18n_id: "itemdesc790227",
-        i18n_sb: "\\u5185\\u542B\\u9752\\u91ED\\u5251\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790237: {
-        i18n_id: "itemdesc790237",
-        i18n_sb: "\\u5185\\u542B\\u9E92\\u9E9F\\u5F13\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790247: {
-        i18n_id: "itemdesc790247",
-        i18n_sb: "\\u5185\\u542B\\u9E92\\u9E9F\\u888D\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790257: {
-        i18n_id: "itemdesc790257",
-        i18n_sb: "\\u5185\\u542B\\u4E4C\\u4E91\\u8E0F\\u96EA\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790267: {
-        i18n_id: "itemdesc790267",
-        i18n_sb: "\\u5185\\u542B\\u8FC7\\u6CB3\\u62C6\\u6865\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD71\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD71"
-    },
-    itemdesc790277: {
-        i18n_id: "itemdesc790277",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u94F6\\u4E24\\xD720000"
-    },
-    itemdesc790287: {
-        i18n_id: "itemdesc790287",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u7075\\u829D\\xD7500"
-    },
-    itemdesc790297: { i18n_id: "itemdesc790297", i18n_sb: "\\u5185\\u542B\\u7075\\u829D\\xD7100" },
+    itemdesc790227: { i18n_id: "itemdesc790227", i18n_sb: "内含青釭剑碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790237: { i18n_id: "itemdesc790237", i18n_sb: "内含麒麟弓碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790247: { i18n_id: "itemdesc790247", i18n_sb: "内含麒麟袍碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790257: { i18n_id: "itemdesc790257", i18n_sb: "内含乌云踏雪碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790267: { i18n_id: "itemdesc790267", i18n_sb: "内含过河拆桥碎片×1，神装碎片礼盒×1，金装礼盒×1" },
+    itemdesc790277: { i18n_id: "itemdesc790277", i18n_sb: "打开可获得：银两×20000" },
+    itemdesc790287: { i18n_id: "itemdesc790287", i18n_sb: "打开可获得：灵芝×500" },
+    itemdesc790297: { i18n_id: "itemdesc790297", i18n_sb: "内含灵芝×100" },
     itemdesc791006: { i18n_id: "itemdesc791006", i18n_sb: "首充双倍,续充另送元宝" },
     itemdesc791011: { i18n_id: "itemdesc791011", i18n_sb: "内含 10个铜宝箱 10个铜钥匙" },
     itemdesc791021: { i18n_id: "itemdesc791021", i18n_sb: "有大量机会获得丈八蛇矛碎片以及其他稀有道具" },
@@ -39451,10 +37582,7 @@
     itemdesc88121009: { i18n_id: "itemdesc88121009", i18n_sb: "黄忠道具（20级）" },
     itemdesc88122009: { i18n_id: "itemdesc88122009", i18n_sb: "关平道具（20级）" },
     itemdesc88131015: { i18n_id: "itemdesc88131015", i18n_sb: "周泰道具（20级）" },
-    itemdesc88141011: {
-        i18n_id: "itemdesc88141011",
-        i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC\\u9053\\u5177\\uFF0820\\u7EA7\\uFF09"
-    },
+    itemdesc88141011: { i18n_id: "itemdesc88141011", i18n_sb: "群·蔡文姬道具（20级）" },
     itemdesc790308: { i18n_id: "itemdesc790308", i18n_sb: "内含：20级曹丕一个" },
     itemdesc790318: { i18n_id: "itemdesc790318", i18n_sb: "内含：20级马超一个" },
     itemdesc790328: { i18n_id: "itemdesc790328", i18n_sb: "内含：20级关索一个" },
@@ -39467,10 +37595,7 @@
     itemdesc87142002: { i18n_id: "itemdesc87142002", i18n_sb: "高顺道具（1级）" },
     itemdesc790359: { i18n_id: "itemdesc790359", i18n_sb: "内含：1级典韦一个" },
     itemdesc790369: { i18n_id: "itemdesc790369", i18n_sb: "内含：1级张星彩一个" },
-    itemdesc790379: {
-        i18n_id: "itemdesc790379",
-        i18n_sb: "\\u5185\\u542B\\uFF1A1\\u7EA7\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u4E00\\u4E2A"
-    },
+    itemdesc790379: { i18n_id: "itemdesc790379", i18n_sb: "内含：1级吴·孙尚香一个" },
     itemdesc790389: { i18n_id: "itemdesc790389", i18n_sb: "内含：1级吕布一个" },
     itemdesc790399: { i18n_id: "itemdesc790399", i18n_sb: "内含：1级李儒一个" },
     itemdesc790409: { i18n_id: "itemdesc790409", i18n_sb: "内含：技能“崩坏”一个" },
@@ -39490,41 +37615,17 @@
     itemdesc791415: { i18n_id: "itemdesc791415", i18n_sb: "凌操魂魄礼包" },
     itemdesc791425: { i18n_id: "itemdesc791425", i18n_sb: "灵芝大礼包" },
     itemdesc791435: { i18n_id: "itemdesc791435", i18n_sb: "三国杀活动5" },
-    itemdesc790435: {
-        i18n_id: "itemdesc790435",
-        i18n_sb: "\\u5185\\u542B\\u8D2F\\u77F3\\u65A7\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790445: {
-        i18n_id: "itemdesc790445",
-        i18n_sb: "\\u5185\\u542B\\u9752\\u9F99\\u94E0\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790455: {
-        i18n_id: "itemdesc790455",
-        i18n_sb: "\\u5185\\u542B\\u7167\\u591C\\u7389\\u72EE\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790465: {
-        i18n_id: "itemdesc790465",
-        i18n_sb: "\\u5185\\u542B\\u65E0\\u4E2D\\u751F\\u6709\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
-    itemdesc790475: {
-        i18n_id: "itemdesc790475",
-        i18n_sb: "\\u5185\\u542B\\u5FEB\\u822A\\u788E\\u7247\\xD71\\uFF0C\\u795E\\u88C5\\u788E\\u7247\\u793C\\u76D2\\xD72\\uFF0C\\u91D1\\u88C5\\u793C\\u76D2\\xD73"
-    },
+    itemdesc790435: { i18n_id: "itemdesc790435", i18n_sb: "内含贯石斧碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790445: { i18n_id: "itemdesc790445", i18n_sb: "内含青龙铠碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790455: { i18n_id: "itemdesc790455", i18n_sb: "内含照夜玉狮碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790465: { i18n_id: "itemdesc790465", i18n_sb: "内含无中生有碎片×1，神装碎片礼盒×2，金装礼盒×3" },
+    itemdesc790475: { i18n_id: "itemdesc790475", i18n_sb: "内含快航碎片×1，神装碎片礼盒×2，金装礼盒×3" },
     itemdesc88122010: { i18n_id: "itemdesc88122010", i18n_sb: "廖化道具（1级）" },
-    itemdesc791443: {
-        i18n_id: "itemdesc791443",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A50\\u7075\\u829D  \\u9A6C\\u5CB1\\u9B42\\u9B44\\xD710"
-    },
-    itemdesc791453: {
-        i18n_id: "itemdesc791453",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5305\\u5B50\\xD73 \\u5143\\u5B9D100 \\u91D1\\u7BB1\\u5B50\\xD75 \\u91D1\\u94A5\\u5319\\xD75"
-    },
+    itemdesc791443: { i18n_id: "itemdesc791443", i18n_sb: "打开可获得：50灵芝  马岱魂魄×10" },
+    itemdesc791453: { i18n_id: "itemdesc791453", i18n_sb: "打开可获得：包子×3 元宝100 金箱子×5 金钥匙×5" },
     itemdesc791461: { i18n_id: "itemdesc791461", i18n_sb: "5个灵芝" },
-    itemdesc791471: {
-        i18n_id: "itemdesc791471",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u9738\\u8005\\u62AB\\u98CE\\xD71"
-    },
-    itemdesc791481: { i18n_id: "itemdesc791481", i18n_sb: "\\u5185\\u542B\\u5143\\u5B9D\\xD7118" },
+    itemdesc791471: { i18n_id: "itemdesc791471", i18n_sb: "打开可获得：霸者披风×1" },
+    itemdesc791481: { i18n_id: "itemdesc791481", i18n_sb: "内含元宝×118" },
     itemdesc791491: { i18n_id: "itemdesc791491", i18n_sb: "用于打开元宝宝箱！" },
     itemdesc40142007: { i18n_id: "itemdesc40142007", i18n_sb: "142007" },
     itemdesc40131015: { i18n_id: "itemdesc40131015", i18n_sb: "131015" },
@@ -39557,26 +37658,14 @@
     itemdesc791567: { i18n_id: "itemdesc791567", i18n_sb: "L1TG" },
     itemdesc791577: { i18n_id: "itemdesc791577", i18n_sb: "L1LI（金装全部生成完后补量就行）" },
     itemdesc791587: { i18n_id: "itemdesc791587", i18n_sb: "L1GS（之前的礼包SSSLSL新生成）" },
-    itemdesc791597: {
-        i18n_id: "itemdesc791597",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u5143\\u5B9D\\xD7100\\uFF0C\\u91D1\\u7BB1\\xD715\\uFF0C\\u91D1\\u94A5\\xD715\\uFF0C\\u94F6\\u7BB1\\xD710\\uFF0C\\u94F6\\u94A5\\xD710\\uFF0C\\u5587\\u53ED\\xD710"
-    },
-    itemdesc791607: {
-        i18n_id: "itemdesc791607",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\uFF1A\\u4E08\\u516B\\u86C7\\u77DB\\xD71 \\uFF0C\\u5B9D300 \\u7075\\u829D200 \\u8D85\\u7EA7\\u4F20\\u627F\\u7B261\\u4E2A"
-    },
+    itemdesc791597: { i18n_id: "itemdesc791597", i18n_sb: "打开可获得：元宝×100，金箱×15，金钥×15，银箱×10，银钥×10，喇叭×10" },
+    itemdesc791607: { i18n_id: "itemdesc791607", i18n_sb: "打开可获得：丈八蛇矛×1 ，宝300 灵芝200 超级传承符1个" },
     itemdesc791610: { i18n_id: "itemdesc791610", i18n_sb: "内含灵芝*500" },
-    itemdesc791620: { i18n_id: "itemdesc791620", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*2" },
+    itemdesc791620: { i18n_id: "itemdesc791620", i18n_sb: "内含魔·张飞魂魄*2" },
     itemdesc791630: { i18n_id: "itemdesc791630", i18n_sb: "沙里飞" },
-    itemdesc791640: {
-        i18n_id: "itemdesc791640",
-        i18n_sb: "\\u91D1\\u7BB1\\xD75\\uFF0C\\u94F6\\u7BB1\\xD75\\uFF0C\\u94DC\\u7BB1\\xD75\\uFF0C\\u52FE\\u7389\\xD78\\uFF0C\\u5143\\u5B9D\\xD715"
-    },
+    itemdesc791640: { i18n_id: "itemdesc791640", i18n_sb: "金箱×5，银箱×5，铜箱×5，勾玉×8，元宝×15" },
     itemdesc6300084: { i18n_id: "itemdesc6300084", i18n_sb: "可以获得青龙铠碎片，武器，防具，锦囊，技能，银两等道具其中的一项" },
-    itemdesc791651: {
-        i18n_id: "itemdesc791651",
-        i18n_sb: "300\\u5143\\u5B9D\\u3001\\u5305\\u5B50\\xD72\\u3001\\u7EA2\\u8336\\xD72\\u300180\\u7075\\u829D"
-    },
+    itemdesc791651: { i18n_id: "itemdesc791651", i18n_sb: "300元宝、包子×2、红茶×2、80灵芝" },
     itemdesc791661: { i18n_id: "itemdesc791661", i18n_sb: "内含许愿流星*1" },
     itemdesc791671: { i18n_id: "itemdesc791671", i18n_sb: "内含关羽魂魄*6" },
     itemdesc191005: { i18n_id: "itemdesc191005", i18n_sb: "浣熊波波" },
@@ -39591,41 +37680,29 @@
     itemdesc600076: { i18n_id: "itemdesc600076", i18n_sb: "可以为装备增加宝石孔位" },
     itemdesc600086: { i18n_id: "itemdesc600086", i18n_sb: "可以获得随机9级宝石一颗" },
     itemdesc791721: { i18n_id: "itemdesc791721", i18n_sb: "膜拜人气排行奖励，打开可获得：1000万银两。" },
-    itemdesc791731: { i18n_id: "itemdesc791731", i18n_sb: "\\u5185\\u542B\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*1" },
+    itemdesc791731: { i18n_id: "itemdesc791731", i18n_sb: "内含魔·黄盖魂魄*1" },
     itemdesc791739: { i18n_id: "itemdesc791739", i18n_sb: "打开可获得：勾玉*10、经验神书*10" },
     itemdesc791749: { i18n_id: "itemdesc791749", i18n_sb: "打开可获得500灵芝" },
-    itemdesc791759: { i18n_id: "itemdesc791759", i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD7100" },
+    itemdesc791759: { i18n_id: "itemdesc791759", i18n_sb: "打开可获得灵芝×100" },
     itemdesc791769: { i18n_id: "itemdesc791769", i18n_sb: "累计登录送神将第5天98元宝" },
-    itemdesc791779: { i18n_id: "itemdesc791779", i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD7150" },
+    itemdesc791779: { i18n_id: "itemdesc791779", i18n_sb: "打开可获得灵芝×150" },
     itemdesc11100005: { i18n_id: "itemdesc11100005", i18n_sb: "女神祝融" },
     itemdesc21100006: { i18n_id: "itemdesc21100006", i18n_sb: "女神春华皮肤" },
-    itemdesc791786: {
-        i18n_id: "itemdesc791786",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u7504\\u59EC\\xD71"
-    },
-    itemdesc791796: {
-        i18n_id: "itemdesc791796",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u5927\\u4E54\\u76AE\\u80A4\\xD71"
-    },
-    itemdesc89171005: { i18n_id: "itemdesc89171005", i18n_sb: "\\u5C04\\u624B\\u9EC4\\u5FE0\\xD71" },
+    itemdesc791786: { i18n_id: "itemdesc791786", i18n_sb: "打开可获得女神甄姬×1" },
+    itemdesc791796: { i18n_id: "itemdesc791796", i18n_sb: "打开可获得女神大乔皮肤×1" },
+    itemdesc89171005: { i18n_id: "itemdesc89171005", i18n_sb: "射手黄忠×1" },
     itemdesc600047: { i18n_id: "itemdesc600047", i18n_sb: "双十一礼盒" },
     itemdesc548021: { i18n_id: "itemdesc548021", i18n_sb: "第43章第1个宝箱" },
     itemdesc10547009: { i18n_id: "itemdesc10547009", i18n_sb: "第42章精英宝箱" },
-    itemdesc791815: {
-        i18n_id: "itemdesc791815",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD75\\u3001\\u52FE\\u7389\\xD71\\u3001\\u864E\\u775B\\u77F3\\xD71"
-    },
-    itemdesc791825: {
-        i18n_id: "itemdesc791825",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u7075\\u829D\\xD718\\u3001\\u52FE\\u7389\\xD74\\u3001\\u864E\\u775B\\u77F3\\xD79"
-    },
+    itemdesc791815: { i18n_id: "itemdesc791815", i18n_sb: "打开可获得灵芝×5、勾玉×1、虎睛石×1" },
+    itemdesc791825: { i18n_id: "itemdesc791825", i18n_sb: "打开可获得灵芝×18、勾玉×4、虎睛石×9" },
     itemdesc600096: { i18n_id: "itemdesc600096", i18n_sb: "熔炼装备可获得，可作为精炼材料，提供少量精炼经验。" },
     itemdesc600104: { i18n_id: "itemdesc600104", i18n_sb: "使用后主公经验可提升1680" },
-    itemdesc7710001: { i18n_id: "itemdesc7710001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*1" },
+    itemdesc7710001: { i18n_id: "itemdesc7710001", i18n_sb: "魔·张飞魂魄*1" },
     itemdesc7710011: { i18n_id: "itemdesc7710011", i18n_sb: "曹操魂魄*1" },
     itemdesc7710021: { i18n_id: "itemdesc7710021", i18n_sb: "华佗魂魄*1" },
     itemdesc7710031: { i18n_id: "itemdesc7710031", i18n_sb: "曹丕魂魄*1" },
-    itemdesc7710041: { i18n_id: "itemdesc7710041", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*1" },
+    itemdesc7710041: { i18n_id: "itemdesc7710041", i18n_sb: "蜀·孙尚香魂魄*1" },
     itemdesc7710051: { i18n_id: "itemdesc7710051", i18n_sb: "射手黄忠魂魄*1" },
     itemdesc7710061: { i18n_id: "itemdesc7710061", i18n_sb: "曹植魂魄*1" },
     itemdesc7710071: { i18n_id: "itemdesc7710071", i18n_sb: "貂蝉魂魄*1" },
@@ -39900,7 +37977,7 @@
     dialogname517004017: { i18n_id: "dialogname517004017", i18n_sb: "$UserName" },
     dialogname517008021: { i18n_id: "dialogname517008021", i18n_sb: "袁术" },
     dialogname517015021: { i18n_id: "dialogname517015021", i18n_sb: "伏皇后" },
-    dialogname517017011: { i18n_id: "dialogname517017011", i18n_sb: "\\u7FA4\\xB7\\u8521\\u6587\\u59EC" },
+    dialogname517017011: { i18n_id: "dialogname517017011", i18n_sb: "群·蔡文姬" },
     dialogname518004013: { i18n_id: "dialogname518004013", i18n_sb: "$UserName" },
     dialogname518008021: { i18n_id: "dialogname518008021", i18n_sb: "$UserName" },
     dialogname518015021: { i18n_id: "dialogname518015021", i18n_sb: "$UserName" },
@@ -39921,7 +37998,7 @@
     dialogname521018015: { i18n_id: "dialogname521018015", i18n_sb: "$UserName(暴走)" },
     dialogname522005014: { i18n_id: "dialogname522005014", i18n_sb: "$UserName" },
     dialogname522010022: { i18n_id: "dialogname522010022", i18n_sb: "$UserName" },
-    dialogname522015021: { i18n_id: "dialogname522015021", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999" },
+    dialogname522015021: { i18n_id: "dialogname522015021", i18n_sb: "吴·孙尚香" },
     dialogname522018011: { i18n_id: "dialogname522018011", i18n_sb: "张纮" },
     dialogname522019016: { i18n_id: "dialogname522019016", i18n_sb: "$UserName" },
     dialogname523005021: { i18n_id: "dialogname523005021", i18n_sb: "$UserName" },
@@ -40409,7 +38486,7 @@
     "8220240301": { i18n_id: "8220240301", i18n_sb: "心悦诚服" },
     "8230140201": { i18n_id: "8230140201", i18n_sb: "神书终结者" },
     "8640050101": { i18n_id: "8640050101", i18n_sb: "斩将万人敌" },
-    "8310060101": { i18n_id: "8310060101", i18n_sb: "\\u5434\\xB7\\u5B59\\u5C1A\\u9999\\u7684\\u5FC3\\u613F" },
+    "8310060101": { i18n_id: "8310060101", i18n_sb: "吴·孙尚香的心愿" },
     "8310080301": { i18n_id: "8310080301", i18n_sb: "小乔的心愿" },
     "8310150101": { i18n_id: "8310150101", i18n_sb: "天赋异禀" },
     "8320120101": { i18n_id: "8320120101", i18n_sb: "韩当的心愿" },
@@ -40427,7 +38504,7 @@
     "8430180101": { i18n_id: "8430180101", i18n_sb: "进击的勇者" },
     "8640550101": { i18n_id: "8640550101", i18n_sb: "进击的霸主" },
     "8640260101": { i18n_id: "8640260101", i18n_sb: "该吃药了" },
-    "8310010301": { i18n_id: "8310010301", i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u7684\\u5FC3\\u613F" },
+    "8310010301": { i18n_id: "8310010301", i18n_sb: "神·周瑜的心愿" },
     "8430210101": { i18n_id: "8430210101", i18n_sb: "进击的霸主" },
     "8110140101": { i18n_id: "8110140101", i18n_sb: "精力充沛" },
     "8310130301": { i18n_id: "8310130301", i18n_sb: "战技宗师" },
@@ -41521,7 +39598,7 @@
     item_id791714: { i18n_id: "item_id791714", i18n_sb: "银宝箱" },
     goods_desc791716: { i18n_id: "goods_desc791716", i18n_sb: "膜拜赏赐，悬挂后，膜拜过您的人都可获得1个喇叭。" },
     shenbing_name_800004: { i18n_id: "shenbing_name_800004", i18n_sb: "貂蝉神兵" },
-    shenbing_name_800006: { i18n_id: "shenbing_name_800006", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u795E\\u5175" },
+    shenbing_name_800006: { i18n_id: "shenbing_name_800006", i18n_sb: "蜀·孙尚香神兵" },
     item_id_df791743: { i18n_id: "item_id_df791743", i18n_sb: "巅峰之战410积分礼包" },
     goods_desc_df791744: { i18n_id: "goods_desc_df791744", i18n_sb: "打开可获得200灵芝" },
     world_war_name5: { i18n_id: "world_war_name5", i18n_sb: "求生组淘汰赛" },
@@ -41533,12 +39610,12 @@
     },
     union_war_reward_title7: { i18n_id: "union_war_reward_title7", i18n_sb: "跨服公会战8强入围奖励" },
     union_war_reward_desc7: { i18n_id: "union_war_reward_desc7", i18n_sb: "跨服公会战8强入围奖励：贡献礼盒*1,雪国之宝匣*20，可获得流星、装备、技能、银两以及稀有武将。" },
-    mystery_name_107710001: { i18n_id: "mystery_name_107710001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*1" },
+    mystery_name_107710001: { i18n_id: "mystery_name_107710001", i18n_sb: "魔·张飞魂魄*1" },
     mystery_name_107710011: { i18n_id: "mystery_name_107710011", i18n_sb: "曹操魂魄*1" },
     mystery_name_107710021: { i18n_id: "mystery_name_107710021", i18n_sb: "华佗魂魄*1" },
     mystery_name_107710031: { i18n_id: "mystery_name_107710031", i18n_sb: "曹丕魂魄*1" },
-    mystery_name_107710041: { i18n_id: "mystery_name_107710041", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*1" },
-    mystery_name_107710057: { i18n_id: "mystery_name_107710057", i18n_sb: "\\u9B54\\xB7\\u8463\\u5353\\u9B42\\u9B44*1" },
+    mystery_name_107710041: { i18n_id: "mystery_name_107710041", i18n_sb: "蜀·孙尚香魂魄*1" },
+    mystery_name_107710057: { i18n_id: "mystery_name_107710057", i18n_sb: "魔·董卓魂魄*1" },
     mystery_name_107710067: { i18n_id: "mystery_name_107710067", i18n_sb: "马超魂魄*1" },
     mystery_name_107710077: { i18n_id: "mystery_name_107710077", i18n_sb: "甘宁魂魄*1" },
     mystery_name_107710087: { i18n_id: "mystery_name_107710087", i18n_sb: "庞统魂魄*1" },
@@ -41603,11 +39680,11 @@
     IdCardBinding_12: { i18n_id: "IdCardBinding_12", i18n_sb: "您的下线时间未满5小时,\n不能继续进行游戏!" },
     auto_name_Exp: { i18n_id: "auto_name_Exp", i18n_sb: "经验" },
     "16500203": { i18n_id: "16500203", i18n_sb: "加攻击的药丸，我最爱吃了！" },
-    itemname9165001: { i18n_id: "itemname9165001", i18n_sb: "\\u795E\\xB7\\u5927\\u5200\\u5175\\u9B42\\u9B44" },
+    itemname9165001: { i18n_id: "itemname9165001", i18n_sb: "神·大刀兵魂魄" },
     itemname134001: { i18n_id: "itemname134001", i18n_sb: "吴大帝" },
     itemname121020: { i18n_id: "itemname121020", i18n_sb: "姜维" },
     itemname121008: { i18n_id: "itemname121008", i18n_sb: "赵云" },
-    itemname181009: { i18n_id: "itemname181009", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2" },
+    itemname181009: { i18n_id: "itemname181009", i18n_sb: "魔·张角" },
     itemname171011: { i18n_id: "itemname171011", i18n_sb: "采樵夏侯氏" },
     itemname7750005: { i18n_id: "itemname7750005", i18n_sb: "神秘商品之的卢碎片*3" },
     itemname7750015: { i18n_id: "itemname7750015", i18n_sb: "神秘商品之倚天剑碎片*3" },
@@ -41630,7 +39707,7 @@
     itemname792087: { i18n_id: "itemname792087", i18n_sb: "姜维礼包" },
     itemname792097: { i18n_id: "itemname792097", i18n_sb: "赵云礼包" },
     itemname792107: { i18n_id: "itemname792107", i18n_sb: "冰雪春华礼包" },
-    itemname792117: { i18n_id: "itemname792117", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u793C\\u5305" },
+    itemname792117: { i18n_id: "itemname792117", i18n_sb: "魔·张角礼包" },
     itemname792127: { i18n_id: "itemname792127", i18n_sb: "采樵夏侯氏礼包" },
     itemname792137: { i18n_id: "itemname792137", i18n_sb: "魏武帝礼包" },
     itemname792147: { i18n_id: "itemname792147", i18n_sb: "王异魂魄礼包" },
@@ -41650,16 +39727,13 @@
     itemname792287: { i18n_id: "itemname792287", i18n_sb: "冀州重斧兵魂魄礼包" },
     itemname792297: { i18n_id: "itemname792297", i18n_sb: "张辽魂魄礼包" },
     itemname792307: { i18n_id: "itemname792307", i18n_sb: "徐晃魂魄*1" },
-    itemname792317: { i18n_id: "itemname792317", i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname792317: { i18n_id: "itemname792317", i18n_sb: "神·周瑜魂魄礼包" },
     itemname792327: { i18n_id: "itemname792327", i18n_sb: "凌统魂魄礼包" },
     itemname792337: { i18n_id: "itemname792337", i18n_sb: "冰雪春华魂魄礼包" },
-    itemname792347: { i18n_id: "itemname792347", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44\\u793C\\u5305" },
+    itemname792347: { i18n_id: "itemname792347", i18n_sb: "魔·张角魂魄礼包" },
     itemname792357: { i18n_id: "itemname792357", i18n_sb: "采樵夏侯氏魂魄礼包" },
     itemname792367: { i18n_id: "itemname792367", i18n_sb: "魏武帝魂魄礼包" },
-    itemname7740004: {
-        i18n_id: "itemname7740004",
-        i18n_sb: "\\u795E\\u79D8\\u5546\\u54C1\\u4E4B\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*3"
-    },
+    itemname7740004: { i18n_id: "itemname7740004", i18n_sb: "神秘商品之魔·凌统魂魄*3" },
     itemname7740014: { i18n_id: "itemname7740014", i18n_sb: "神秘商品之关羽魂魄*3" },
     itemname7740024: { i18n_id: "itemname7740024", i18n_sb: "神秘商品之黄月英魂魄*3" },
     itemname7740034: { i18n_id: "itemname7740034", i18n_sb: "神秘商品之吕布魂魄*3" },
@@ -41668,9 +39742,9 @@
     itemdesc9191006: { i18n_id: "itemdesc9191006", i18n_sb: "至尊小宝魂魄" },
     itemdesc171013: { i18n_id: "itemdesc171013", i18n_sb: "芽间月英" },
     itemdesc111013: { i18n_id: "itemdesc111013", i18n_sb: "曹仁" },
-    itemdesc131001: { i18n_id: "itemdesc131001", i18n_sb: "\\u795E\\xB7\\u5468\\u745C" },
-    itemdesc181006: { i18n_id: "itemdesc181006", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9" },
-    itemdesc181008: { i18n_id: "itemdesc181008", i18n_sb: "\\u9B54\\xB7\\u9EC4\\u76D6" },
+    itemdesc131001: { i18n_id: "itemdesc131001", i18n_sb: "神·周瑜" },
+    itemdesc181006: { i18n_id: "itemdesc181006", i18n_sb: "魔·贾诩" },
+    itemdesc181008: { i18n_id: "itemdesc181008", i18n_sb: "魔·黄盖" },
     itemdesc7750001: { i18n_id: "itemdesc7750001", i18n_sb: "绝影碎片*3" },
     itemdesc7750011: { i18n_id: "itemdesc7750011", i18n_sb: "方天画戟碎片*3" },
     itemdesc7750021: { i18n_id: "itemdesc7750021", i18n_sb: "龙胆枪碎片*3" },
@@ -41690,19 +39764,10 @@
     itemdesc792063: { i18n_id: "itemdesc792063", i18n_sb: "打开可获得黄巾重锤兵*1" },
     itemdesc792073: { i18n_id: "itemdesc792073", i18n_sb: "打开可获得西凉弩兵*1" },
     itemdesc792083: { i18n_id: "itemdesc792083", i18n_sb: "打开可获得曹仁*1" },
-    itemdesc792093: {
-        i18n_id: "itemdesc792093",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u5468\\u745C*1"
-    },
-    itemdesc792103: {
-        i18n_id: "itemdesc792103",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u8D3E\\u8BE9*1"
-    },
+    itemdesc792093: { i18n_id: "itemdesc792093", i18n_sb: "打开可获得神·周瑜*1" },
+    itemdesc792103: { i18n_id: "itemdesc792103", i18n_sb: "打开可获得魔·贾诩*1" },
     itemdesc792113: { i18n_id: "itemdesc792113", i18n_sb: "打开可获得浣熊波波*1" },
-    itemdesc792123: {
-        i18n_id: "itemdesc792123",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u9EC4\\u76D6*1"
-    },
+    itemdesc792123: { i18n_id: "itemdesc792123", i18n_sb: "打开可获得魔·黄盖*1" },
     itemdesc792133: { i18n_id: "itemdesc792133", i18n_sb: "打开可获得步练师*1" },
     itemdesc792143: { i18n_id: "itemdesc792143", i18n_sb: "打开可获得郭嘉魂魄*1" },
     itemdesc792153: { i18n_id: "itemdesc792153", i18n_sb: "打开可获得卞皇后魂魄*1" },
@@ -41723,20 +39788,11 @@
     itemdesc792303: { i18n_id: "itemdesc792303", i18n_sb: "打开可获得张宝魂魄*1" },
     itemdesc792313: { i18n_id: "itemdesc792313", i18n_sb: "打开可获得董卓魂魄*1" },
     itemdesc792323: { i18n_id: "itemdesc792323", i18n_sb: "打开可获得赵云魂魄*1" },
-    itemdesc792333: {
-        i18n_id: "itemdesc792333",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*1"
-    },
+    itemdesc792333: { i18n_id: "itemdesc792333", i18n_sb: "打开可获得魔·贾诩魂魄*1" },
     itemdesc792343: { i18n_id: "itemdesc792343", i18n_sb: "打开可获得浣熊波波魂魄*1" },
-    itemdesc792353: {
-        i18n_id: "itemdesc792353",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u9B54\\xB7\\u9EC4\\u76D6\\u9B42\\u9B44*1"
-    },
+    itemdesc792353: { i18n_id: "itemdesc792353", i18n_sb: "打开可获得魔·黄盖魂魄*1" },
     itemdesc792363: { i18n_id: "itemdesc792363", i18n_sb: "打开可获得步练师魂魄*1" },
-    itemdesc792373: {
-        i18n_id: "itemdesc792373",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u91CD\\u9A91\\u5175\\u9B42\\u9B44*1"
-    },
+    itemdesc792373: { i18n_id: "itemdesc792373", i18n_sb: "打开可获得神·重骑兵魂魄*1" },
     itemdesc7740010: { i18n_id: "itemdesc7740010", i18n_sb: "刘备魂魄*3" },
     itemdesc7740020: { i18n_id: "itemdesc7740020", i18n_sb: "貂蝉魂魄*3" },
     itemdesc7740030: { i18n_id: "itemdesc7740030", i18n_sb: "鲁肃魂魄*3" },
@@ -41755,19 +39811,19 @@
     mystery_name_107700040: { i18n_id: "mystery_name_107700040", i18n_sb: "诸葛瑾魂魄*1" },
     mystery_name_107700050: { i18n_id: "mystery_name_107700050", i18n_sb: "学妹小乔魂魄*1" },
     mystery_name_107700060: { i18n_id: "mystery_name_107700060", i18n_sb: "吴大帝魂魄*1" },
-    mystery_name_107700070: { i18n_id: "mystery_name_107700070", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*1" },
+    mystery_name_107700070: { i18n_id: "mystery_name_107700070", i18n_sb: "魔·张角魂魄*1" },
     mystery_name_107700080: { i18n_id: "mystery_name_107700080", i18n_sb: "小乔魂魄*1" },
     mystery_name_107700090: { i18n_id: "mystery_name_107700090", i18n_sb: "李典魂魄*1" },
     mystery_name_107700100: { i18n_id: "mystery_name_107700100", i18n_sb: "张郃魂魄*1" },
     mystery_name_107700110: { i18n_id: "mystery_name_107700110", i18n_sb: "天使尚香魂魄*1" },
     mystery_name_107700120: { i18n_id: "mystery_name_107700120", i18n_sb: "花鬘魂魄*1" },
-    mystery_name_107700130: { i18n_id: "mystery_name_107700130", i18n_sb: "\\u9B54\\xB7\\u51CC\\u7EDF\\u9B42\\u9B44*3" },
+    mystery_name_107700130: { i18n_id: "mystery_name_107700130", i18n_sb: "魔·凌统魂魄*3" },
     mystery_name_107700140: { i18n_id: "mystery_name_107700140", i18n_sb: "关羽魂魄*3" },
     mystery_name_107700150: { i18n_id: "mystery_name_107700150", i18n_sb: "黄月英魂魄*3" },
     mystery_name_107700160: { i18n_id: "mystery_name_107700160", i18n_sb: "吕布魂魄*3" },
     mystery_name_107700170: { i18n_id: "mystery_name_107700170", i18n_sb: "周瑜魂魄*3" },
     mystery_name_107700180: { i18n_id: "mystery_name_107700180", i18n_sb: "孟获魂魄*3" },
-    mystery_name_107700190: { i18n_id: "mystery_name_107700190", i18n_sb: "\\u9B54\\xB7\\u8D3E\\u8BE9\\u9B42\\u9B44*3" },
+    mystery_name_107700190: { i18n_id: "mystery_name_107700190", i18n_sb: "魔·贾诩魂魄*3" },
     mystery_name_107700200: { i18n_id: "mystery_name_107700200", i18n_sb: "陆逊魂魄*3" },
     mystery_name_107700210: { i18n_id: "mystery_name_107700210", i18n_sb: "孟获魂魄*3" },
     mystery_name_107700220: { i18n_id: "mystery_name_107700220", i18n_sb: "贾诩魂魄*3" },
@@ -41802,15 +39858,9 @@
     "4120120201": { i18n_id: "4120120201", i18n_sb: "宝甲加护" },
     "4220120601": { i18n_id: "4220120601", i18n_sb: "南中之主" },
     itemname79171015: { i18n_id: "itemname79171015", i18n_sb: "臣服奖励" },
-    itemname792381: { i18n_id: "itemname792381", i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44\\u793C\\u5305" },
-    itemdesc79171015: {
-        i18n_id: "itemdesc79171015",
-        i18n_sb: "\\u795E\\xB7\\u5415\\u8499\\u9B42\\u9B44\\xD72,\\u7075\\u829D\\xD71000"
-    },
-    itemdesc792381: {
-        i18n_id: "itemdesc792381",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u795E\\xB7\\u66F9\\u64CD\\u9B42\\u9B44*1"
-    },
+    itemname792381: { i18n_id: "itemname792381", i18n_sb: "神·曹操魂魄礼包" },
+    itemdesc79171015: { i18n_id: "itemdesc79171015", i18n_sb: "神·吕蒙魂魄×2,灵芝×1000" },
+    itemdesc792381: { i18n_id: "itemdesc792381", i18n_sb: "打开可获得神·曹操魂魄*1" },
     "8120120201": { i18n_id: "8120120201", i18n_sb: "天赋异禀" },
     "8220120402": { i18n_id: "8220120402", i18n_sb: "臣服孟获" },
     surrunderdesc_529: { i18n_id: "surrunderdesc_529", i18n_sb: "0" },
@@ -41849,10 +39899,7 @@
     stage_29202: { i18n_id: "stage_29202", i18n_sb: "居庸关1-居庸关5" },
     robot_5932: { i18n_id: "robot_5932", i18n_sb: "魏之谋臣队" },
     itemname792701: { i18n_id: "itemname792701", i18n_sb: "女神步练师礼包" },
-    itemdesc792701: {
-        i18n_id: "itemdesc792701",
-        i18n_sb: "\\u6253\\u5F00\\u53EF\\u83B7\\u5F97\\u5973\\u795E\\u6B65\\u7EC3\\u5E08\\xD71"
-    },
+    itemdesc792701: { i18n_id: "itemdesc792701", i18n_sb: "打开可获得女神步练师×1" },
     meridian_5: { i18n_id: "meridian_5", i18n_sb: "阴跷脉" },
     meridian_1_7: { i18n_id: "meridian_1_7", i18n_sb: "阴交" },
     meridian_1_17: { i18n_id: "meridian_1_17", i18n_sb: "膻中" },
@@ -41901,26 +39948,23 @@
     mystery_name_107700443: { i18n_id: "mystery_name_107700443", i18n_sb: "南蛮象碎片*3" },
     mystery_name_107700453: { i18n_id: "mystery_name_107700453", i18n_sb: "虎啸残卷" },
     mystery_name_107700463: { i18n_id: "mystery_name_107700463", i18n_sb: "谦逊残卷" },
-    itemdesc600124: {
-        i18n_id: "itemdesc600124",
-        i18n_sb: "\\u5C06\\u5176\\u4ED6\\u4E94\\u661F\\u5C06\\u7684\\u7ECF\\u9A8C\\u3001\\u661F\\u7EA7\\u3001\\u4FEE\\u70BC\\u5C5E\\u6027\\u540C\\u65F6\\u4F20\\u627F\\u7ED9\\u795E\\xB7\\u5415\\u8499\\uFF0C\\u4E14\\u53EA\\u80FD\\u4F201\\u6B21\\u3002"
-    },
+    itemdesc600124: { i18n_id: "itemdesc600124", i18n_sb: "将其他五星将的经验、星级、修炼属性同时传承给神·吕蒙，且只能传1次。" },
     mystery_name_117710010: { i18n_id: "mystery_name_117710010", i18n_sb: "刘备魂魄*1" },
     mystery_name_117710020: { i18n_id: "mystery_name_117710020", i18n_sb: "貂蝉魂魄*1" },
     mystery_name_117710030: { i18n_id: "mystery_name_117710030", i18n_sb: "鲁肃魂魄*1" },
     mystery_name_117710040: { i18n_id: "mystery_name_117710040", i18n_sb: "诸葛瑾魂魄*1" },
     mystery_name_117710050: { i18n_id: "mystery_name_117710050", i18n_sb: "学妹小乔魂魄*1" },
     mystery_name_117710060: { i18n_id: "mystery_name_117710060", i18n_sb: "吴大帝魂魄*1" },
-    mystery_name_107740007: { i18n_id: "mystery_name_107740007", i18n_sb: "\\u9B54\\xB7\\u5F20\\u89D2\\u9B42\\u9B44*3" },
+    mystery_name_107740007: { i18n_id: "mystery_name_107740007", i18n_sb: "魔·张角魂魄*3" },
     mystery_name_107740017: { i18n_id: "mystery_name_107740017", i18n_sb: "小乔魂魄*3" },
     mystery_name_107740027: { i18n_id: "mystery_name_107740027", i18n_sb: "李典魂魄*3" },
     mystery_name_107740037: { i18n_id: "mystery_name_107740037", i18n_sb: "张郃魂魄*3" },
     mystery_name_107740047: { i18n_id: "mystery_name_107740047", i18n_sb: "天使尚香魂魄*3" },
-    mystery_name_117740001: { i18n_id: "mystery_name_117740001", i18n_sb: "\\u9B54\\xB7\\u5F20\\u98DE\\u9B42\\u9B44*3" },
+    mystery_name_117740001: { i18n_id: "mystery_name_117740001", i18n_sb: "魔·张飞魂魄*3" },
     mystery_name_117740011: { i18n_id: "mystery_name_117740011", i18n_sb: "曹操魂魄*3" },
     mystery_name_117740021: { i18n_id: "mystery_name_117740021", i18n_sb: "华佗魂魄*3" },
     mystery_name_117740031: { i18n_id: "mystery_name_117740031", i18n_sb: "曹丕魂魄*3" },
-    mystery_name_117740041: { i18n_id: "mystery_name_117740041", i18n_sb: "\\u8700\\xB7\\u5B59\\u5C1A\\u9999\\u9B42\\u9B44*3" },
+    mystery_name_117740041: { i18n_id: "mystery_name_117740041", i18n_sb: "蜀·孙尚香魂魄*3" },
     mystery_name_117740053: { i18n_id: "mystery_name_117740053", i18n_sb: "荀彧魂魄*3" },
     mystery_name_117720004: { i18n_id: "mystery_name_117720004", i18n_sb: "照夜玉狮碎片*1" },
     mystery_name_117720014: { i18n_id: "mystery_name_117720014", i18n_sb: "丈八蛇矛碎片*1" },
@@ -42039,7 +40083,7 @@
     dialogname553012011: { i18n_id: "dialogname553012011", i18n_sb: "$UserName" },
     dialogname553016021: { i18n_id: "dialogname553016021", i18n_sb: "$UserName" },
     dialogname553019012: { i18n_id: "dialogname553019012", i18n_sb: "王平" },
-    dialogname553020016: { i18n_id: "dialogname553020016", i18n_sb: "\\u9B54\\xB7\\u9A6C\\u8D85" },
+    dialogname553020016: { i18n_id: "dialogname553020016", i18n_sb: "魔·马超" },
     dialogname554008012: { i18n_id: "dialogname554008012", i18n_sb: "$UserName" },
     dialogname554016011: { i18n_id: "dialogname554016011", i18n_sb: "朱灵" },
     dialogname554018014: { i18n_id: "dialogname554018014", i18n_sb: "满宠" },
@@ -42175,7 +40219,7 @@
     },
     "4110251101": { i18n_id: "4110251101", i18n_sb: "大愿得成" },
     "4410140301": { i18n_id: "4410140301", i18n_sb: "骤如烈风" },
-    itemname9111026: { i18n_id: "itemname9111026", i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44" },
+    itemname9111026: { i18n_id: "itemname9111026", i18n_sb: "神·司马懿魂魄" },
     "8410140301": { i18n_id: "8410140301", i18n_sb: "文丑的心愿" },
     "8410140302": { i18n_id: "8410140302", i18n_sb: "图鉴点亮[装备]鬼龙斩月刀" },
     surrunderdesc_554: { i18n_id: "surrunderdesc_554", i18n_sb: "0" },
@@ -42187,7 +40231,7 @@
     shenbing_desc_800027: { i18n_id: "shenbing_desc_800027", i18n_sb: "吴大帝神兵" },
     "4210141901": { i18n_id: "4210141901", i18n_sb: "雌雄剑" },
     "4110062301": { i18n_id: "4110062301", i18n_sb: "弃遇明主" },
-    itemname600229: { i18n_id: "itemname600229", i18n_sb: "\\u795E\\xB7\\u66F9\\u64CD\\u4F20\\u627F\\u7B26" },
+    itemname600229: { i18n_id: "itemname600229", i18n_sb: "神·曹操传承符" },
     itemdesc600226: { i18n_id: "itemdesc600226", i18n_sb: "张辽觉醒升级材料" },
     "8110060701": { i18n_id: "8110060701", i18n_sb: "觉醒图腾" },
     "8110060502": { i18n_id: "8110060502", i18n_sb: "觉醒宝箱开启500次" },
@@ -42203,10 +40247,7 @@
     "4310201201": { i18n_id: "4310201201", i18n_sb: "笑点鸳鸯" },
     "4410220401": { i18n_id: "4410220401", i18n_sb: "神之血裔" },
     itemname79141022: { i18n_id: "itemname79141022", i18n_sb: "臣服奖励" },
-    itemdesc79141022: {
-        i18n_id: "itemdesc79141022",
-        i18n_sb: "\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\u9B42\\u9B44x2,\\u7075\\u829Dx1000"
-    },
+    itemdesc79141022: { i18n_id: "itemdesc79141022", i18n_sb: "神·司马懿魂魄x2,灵芝x1000" },
     "8410220201": { i18n_id: "8410220201", i18n_sb: "SP袁绍的心愿" },
     "8210100601": { i18n_id: "8210100601", i18n_sb: "觉醒图腾" },
     "8410220402": { i18n_id: "8410220402", i18n_sb: "修炼武将攻属性至6000" },
@@ -42276,7 +40317,7 @@
     shenbing_name_800031: { i18n_id: "shenbing_name_800031", i18n_sb: "步练师神兵" },
     itemdesc79111026: { i18n_id: "itemdesc79111026", i18n_sb: "技能连破x1,灵芝x1000" },
     "8110260301": { i18n_id: "8110260301", i18n_sb: "最强属性" },
-    "8110260402": { i18n_id: "8110260402", i18n_sb: "\\u81E3\\u670D\\u795E\\xB7\\u66F9\\u64CD" },
+    "8110260402": { i18n_id: "8110260402", i18n_sb: "臣服神·曹操" },
     festival_tree_first_kill_server_mail: {
         i18n_id: "festival_tree_first_kill_server_mail",
         i18n_sb: "当前服务器副本首领bossname被killname击杀,特此为全服玩家奉上福利：雨露*yulu_num,植树节礼包*treepack_num。"
@@ -42296,10 +40337,7 @@
     "4420130801": { i18n_id: "4420130801", i18n_sb: "求援于外" },
     "4420131801": { i18n_id: "4420131801", i18n_sb: "大汉宗亲" },
     "4110291601": { i18n_id: "4110291601", i18n_sb: "祖孙同心" },
-    itemdesc600244: {
-        i18n_id: "itemdesc600244",
-        i18n_sb: "\\u5C06\\u5176\\u4ED6\\u4E94\\u661F\\u5C06\\u7684\\u7ECF\\u9A8C\\u3001\\u661F\\u7EA7\\u3001\\u4FEE\\u70BC\\u5C5E\\u6027\\u540C\\u65F6\\u4F20\\u627F\\u7ED9\\u795E\\xB7\\u53F8\\u9A6C\\u61FF\\uFF0C\\u4E14\\u53EA\\u80FD\\u4F201\\u6B21\\u3002"
-    },
+    itemdesc600244: { i18n_id: "itemdesc600244", i18n_sb: "将其他五星将的经验、星级、修炼属性同时传承给神·司马懿，且只能传1次。" },
     "351021903": { i18n_id: "351021903", i18n_sb: "受到普通伤害前 易触发" },
     itemname792774: { i18n_id: "itemname792774", i18n_sb: "凤求凰礼包（二）" },
     "12102102": {
@@ -42423,7 +40461,7 @@
     "4420132101": { i18n_id: "4420132101", i18n_sb: "一尘不染" },
     "4210240101": { i18n_id: "4210240101", i18n_sb: "麒麟弓" },
     itemname79121024: { i18n_id: "itemname79121024", i18n_sb: "臣服奖励" },
-    itemdesc161001: { i18n_id: "itemdesc161001", i18n_sb: "\\u754C\\xB7\\u5173\\u7FBD" },
+    itemdesc161001: { i18n_id: "itemdesc161001", i18n_sb: "界·关羽" },
     "8420130801": { i18n_id: "8420130801", i18n_sb: "觉醒图腾" },
     "8420130602": { i18n_id: "8420130602", i18n_sb: "觉醒宝箱开启200次" },
     "8210240302": { i18n_id: "8210240302", i18n_sb: "图鉴点亮[武将]SP关羽" },
@@ -42439,7 +40477,7 @@
     },
     "331023504": { i18n_id: "331023504", i18n_sb: "敌方全体和己方全体" },
     "4310011101": { i18n_id: "4310011101", i18n_sb: "侵略如火" },
-    shenbing_name_800042: { i18n_id: "shenbing_name_800042", i18n_sb: "\\u795E\\xB7\\u5468\\u745C\\u795E\\u5175" },
+    shenbing_name_800042: { i18n_id: "shenbing_name_800042", i18n_sb: "神·周瑜神兵" },
     "30000105": { i18n_id: "30000105", i18n_sb: "增加$1%血" },
     "8110130502": { i18n_id: "8110130502", i18n_sb: "觉醒宝箱开启200次" },
     itemdesc792803: { i18n_id: "itemdesc792803", i18n_sb: "内含补天石*10" },

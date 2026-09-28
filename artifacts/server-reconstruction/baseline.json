@@ -1,0 +1,34 @@
+{
+  "recorded_utc": "2026-09-25 16:47:17 UTC",
+  "head": "3cc74ae5dbaad086a6fe35c6a20a08d70a8981fd",
+  "serverproject_preexisting_status": "clean",
+  "full_worktree_status_file": "artifacts/server-reconstruction/worktree-status-baseline.txt",
+  "server_config_nonsecret": [
+    "listen = \"127.0.0.1:18723\"",
+    "database = \"data/accounts.sqlite3\"",
+    "guest_enabled = false",
+    "session_ttl_seconds = 86400",
+    "show_credentials = true"
+  ],
+  "listener_observed": "127.0.0.1:18723 (pid 909331)",
+  "baseline_checks": [
+    {
+      "name": "cargo-fmt-check",
+      "command": "cargo fmt --check",
+      "exit_code": 1,
+      "log": "artifacts/server-reconstruction/cargo-fmt-check-baseline.log"
+    },
+    {
+      "name": "cargo-test-locked",
+      "command": "cargo test --locked",
+      "exit_code": 0,
+      "log": "artifacts/server-reconstruction/cargo-test-locked-baseline.log"
+    },
+    {
+      "name": "cargo-clippy-locked",
+      "command": "cargo clippy --all-targets --locked -- -D warnings",
+      "exit_code": 0,
+      "log": "artifacts/server-reconstruction/cargo-clippy-locked-baseline.log"
+    }
+  ]
+}

@@ -60,7 +60,6 @@ String.method("toJson", function() {
 });
 // source line 62, bytecode pc 115
 String.method("removeSlash", function() {
-    /* TODO_BYTECODE pc=9 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 63, bytecode pc 24
-    return this.replace(undefined /* TODO_BYTECODE pc=9 opcode=regexp reason=regexp_object_literal_not_dumped */, "");
+    return this.replace(/\|/gi, "");
 });

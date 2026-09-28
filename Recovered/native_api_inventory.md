@@ -18,13 +18,13 @@ The member chains below are direct syntactic observations. The JSON and CSV cont
 
 | Source group | Distinct chains | Occurrences |
 |---|---:|---:|
-| `cocos_jsb_runtime` | 584 | 748 |
+| `cocos_jsb_runtime` | 584 | 747 |
 | `config` | 1 | 150 |
 | `game_logic` | 143 | 5260 |
 
 | Namespace | Distinct chains | Occurrences |
 |---|---:|---:|
-| `cc` | 490 | 5946 |
+| `cc` | 490 | 5945 |
 | `ccs` | 94 | 119 |
 | `cp` | 85 | 90 |
 | `jsb` | 1 | 3 |
@@ -85,8 +85,8 @@ The member chains below are direct syntactic observations. The JSON and CSV cont
 | `AssetsMgr` | `startUncompressThread` | 1 | `src_jsc/Core/Tools/Jsb.js:87` |
 | `BfSdk` | `checkBindingCode` | 1 | `src_jsc/Views/Dialog/BindingTelDialog.js:129` |
 | `BfSdk` | `login` | 2 | `src_jsc/Tools/Jsb.js:127`, `src_jsc/Views/Dialog/BindingDialog.js:250` |
-| `BfSdk` | `loginByHistory` | 2 | `src_jsc/Scene/Login/LoginScene_AnySdk.js:639`, `src_jsc/Scene/Login/LoginScene_BfSdk.js:511` |
-| `BfSdk` | `regis` | 2 | `src_jsc/Scene/Login/LoginScene_BfSdk.js:974`, `src_jsc/Views/Dialog/BindingDialog.js:295` |
+| `BfSdk` | `loginByHistory` | 2 | `src_jsc/Scene/Login/LoginScene_AnySdk.js:648`, `src_jsc/Scene/Login/LoginScene_BfSdk.js:520` |
+| `BfSdk` | `regis` | 2 | `src_jsc/Scene/Login/LoginScene_BfSdk.js:987`, `src_jsc/Views/Dialog/BindingDialog.js:295` |
 | `BfSdk` | `requestTelBinding` | 1 | `src_jsc/Views/Dialog/BindingTelDialog.js:114` |
 | `Build` | `getAccountSysCode` | 2 | `src_jsc/Tools/Jsb.js:112`, `src_jsc/main.js:13` |
 | `Build` | `getBuildType` | 2 | `src_jsc/Tools/Jsb.js:100`, `src_jsc/Tools/Sys.js:26` |
@@ -154,7 +154,7 @@ The member chains below are direct syntactic observations. The JSON and CSV cont
 | `Thirdpay` | `third_pay` | 2 | `src_jsc/Views/Table/ChargeItemTableView.js:288`, `src_jsc/Views/Table/ChargeItemTableView.js:318` |
 | `Trie` | `queryString` | 4 | `src_jsc/Tools/UI.js:530`, `src_jsc/Tools/UI.js:555`, `src_jsc/Tools/UI.js:601`, `src_jsc/Tools/UI.js:626` |
 | `Trie` | `setTrie` | 1 | `src_jsc/Tools/Jsb.js:117` |
-| `UserInfo` | `(empty)` | 4 | `src_jsc/Profile/GameData/common.js:322`, `src_jsc/Scene/Login/headers.js:97`, `src_jsc/Views/Dialog/SpecificDialog.js:871`, `src_jsc/cpp2jsb.js:252` |
+| `UserInfo` | `(empty)` | 4 | `src_jsc/Profile/GameData/common.js:322`, `src_jsc/Scene/Login/headers.js:97`, `src_jsc/Views/Dialog/SpecificDialog.js:872`, `src_jsc/cpp2jsb.js:252` |
 | `Utils` | `deleteDir` | 2 | `src_jsc/Core/Utils/headers.js:263`, `src_jsc/Utils/FileSys.js:28` |
 | `Utils` | `getFileDataSize` | 2 | `src_jsc/Core/Utils/headers.js:257`, `src_jsc/Utils/FileSys.js:22` |
 | `Utils` | `md5file` | 2 | `src_jsc/Core/Tools/Jsb.js:93`, `src_jsc/Tools/Jsb.js:133` |

@@ -192,9 +192,6 @@ var clearTimeout;
     (arguments = arguments);
     // source line 126, bytecode pc 13
     switch (arguments.length) {
-        case 2:
-        /* TODO_BYTECODE pc=13 opcode=tableswitch reason=tableswitch_target_invalid */
-        break;
         case 0:
         // source line 128, bytecode pc 66
         return { r: 0, g: 0, b: 0 }
@@ -210,6 +207,7 @@ var clearTimeout;
         case 3:
         // source line 136, bytecode pc 201
         return { r: r, g: g, b: b }
+        case 2:
         default:
         // source line 138, bytecode pc 207
         throw "unknown argument type";
@@ -819,15 +817,9 @@ var clearTimeout;
     (prototype = new this());
     // source line 657, bytecode pc 63
     (initializing = false);
-    /* TODO_BYTECODE pc=69 opcode=regexp reason=regexp_object_literal_not_dumped */
-    if (undefined /* TODO_BYTECODE pc=69 opcode=regexp reason=regexp_object_literal_not_dumped */.test(function() {
-})) {
-        /* TODO_BYTECODE pc=96 opcode=regexp reason=regexp_object_literal_not_dumped */
-    } else {
-        /* TODO_BYTECODE pc=106 opcode=regexp reason=regexp_object_literal_not_dumped */
-    }
     // source line 658, bytecode pc 116
-    (fnTest = undefined /* TODO_BYTECODE stack_merge_pc_91 */);
+    (fnTest = (/xyz/.test(function() {
+}) ? /\b_super\b/ : /.*/));
     for (var name in prop) {
         // source line 681, bytecode pc 249
         (prototype[name] = (((typeof(prop[name]) == "function") && ((typeof(_super[name]) == "function") && fnTest.test(prop[name]))) ? (function(name, fn) {

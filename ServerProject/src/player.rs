@@ -17,10 +17,13 @@ use serde_json::{Value, json};
 const FIRST_PK: i64 = 900_000_000;
 /// The recovered gold wine has a 30-minute free-draw cooldown.
 const GOLD_WINE_COOLDOWN_SECONDS: i64 = 1800;
+const SILVER_WINE_COOLDOWN_SECONDS: i64 = 600;
+const COPPER_WINE_COOLDOWN_SECONDS: i64 = 300;
 
 /// A complete per-player game state snapshot, already shaped as cmn payload.
 pub struct Snapshot {
     pub generals: Vec<Value>,
+    pub general_souls: Vec<Value>,
     pub items: Vec<Value>,
     pub equipment: Vec<Value>,
     pub team: Vec<Value>,
@@ -28,6 +31,25 @@ pub struct Snapshot {
     pub wine_gold_free_times: i64,
     pub wine_gold_free_end_time: i64,
     pub wine_first_time_consume_gold: i64,
+    pub wine_silver_free_times: i64,
+    pub wine_silver_free_end_time: i64,
+    pub wine_copper_free_end_time: i64,
+    pub wine_gold_count: i64,
+    pub wine_gold_guarantee_phase: i64,
+}
+
+/// Persisted wine cooldowns and gold guarantee progress for one player/zone.
+#[derive(Clone, Copy, Debug)]
+pub struct WineStatus {
+    pub gold_free_times: i64,
+    pub gold_free_end_time: i64,
+    pub silver_free_times: i64,
+    pub silver_free_end_time: i64,
+    pub copper_free_end_time: i64,
+    pub first_gold_consumed: i64,
+    pub first_silver_consumed: i64,
+    pub gold_wine_count: i64,
+    pub gold_guarantee_phase: i64,
 }
 
 /// Durable account-by-zone player fields used by login and the tutorial UI.
@@ -344,6 +366,21 @@ pub fn owns_general(db: &Connection, principal: &str, server_id: &str, pk_id: &s
     .is_some()
 }
 
+/// Static general IDs owned by the player, in entity insertion order.
+pub fn owned_general_ids(
+    db: &Connection,
+    principal: &str,
+    server_id: &str,
+) -> rusqlite::Result<Vec<String>> {
+    let mut statement = db.prepare(
+        "SELECT general_id FROM player_generals
+         WHERE principal = ?1 AND server_id = ?2 ORDER BY rowid",
+    )?;
+    statement
+        .query_map(params![principal, server_id], |row| row.get(0))?
+        .collect()
+}
+
 /// Grant one general instance by static configuration id.
 ///
 /// Duplicate instances are valid player entities (for example, a repeated
@@ -362,6 +399,35 @@ pub fn grant_general(
         params![principal, server_id, pk_id, general_id],
     )?;
     Ok((general_entry(&pk_id, general_id, 1, 0, 0), true))
+}
+
+/// Add duplicate-general shards and return the cumulative GeneralSoul model.
+pub fn grant_general_soul(
+    db: &Connection,
+    principal: &str,
+    server_id: &str,
+    general_id: &str,
+    amount: i64,
+) -> rusqlite::Result<Value> {
+    db.execute(
+        "INSERT INTO player_general_souls(principal, server_id, general_id, num)
+         VALUES (?1, ?2, ?3, ?4)
+         ON CONFLICT(principal, server_id, general_id)
+         DO UPDATE SET num = num + excluded.num",
+        params![principal, server_id, general_id, amount],
+    )?;
+    let num: i64 = db.query_row(
+        "SELECT num FROM player_general_souls
+         WHERE principal = ?1 AND server_id = ?2 AND general_id = ?3",
+        params![principal, server_id, general_id],
+        |row| row.get(0),
+    )?;
+    Ok(json!({
+        "pk_id": general_id,
+        "id": general_id,
+        "general_id": general_id,
+        "num": num
+    }))
 }
 
 /// Add the local dungeon reward to every general in team 1 and return the
@@ -505,6 +571,24 @@ pub fn item_config_for_pk(
         "SELECT item_id, num FROM player_items
          WHERE principal = ?1 AND server_id = ?2 AND pk_id = ?3",
         params![principal, server_id, pk_id],
+        |row| Ok((row.get(0)?, row.get(1)?)),
+    )
+    .optional()
+    .ok()
+    .flatten()
+}
+
+/// Current entity key and count for a configured item, if present.
+pub fn item_pk_for_config(
+    db: &Connection,
+    principal: &str,
+    server_id: &str,
+    item_id: &str,
+) -> Option<(String, i64)> {
+    db.query_row(
+        "SELECT pk_id, num FROM player_items
+         WHERE principal = ?1 AND server_id = ?2 AND item_id = ?3",
+        params![principal, server_id, item_id],
         |row| Ok((row.get(0)?, row.get(1)?)),
     )
     .optional()
@@ -696,6 +780,126 @@ pub fn wine_gold_state(
     Ok((remaining, cooldown_left, first_consumed))
 }
 
+/// Read current free-draw timers and persisted guarantee state.
+pub fn wine_status(
+    db: &Connection,
+    principal: &str,
+    server_id: &str,
+    configured_gold_free_draws: i64,
+) -> rusqlite::Result<WineStatus> {
+    db.execute(
+        "INSERT OR IGNORE INTO wine_state(principal, server_id) VALUES (?1, ?2)",
+        params![principal, server_id],
+    )?;
+    let mut row: (i64, i64, i64, i64, i64, i64, i64, i64) = db.query_row(
+        "SELECT gold_free_used, gold_free_cooldown_until, gold_first_consumed,
+                silver_cooldown_until, copper_cooldown_until, silver_first_consumed,
+                gold_wine_count, gold_guarantee_phase
+         FROM wine_state WHERE principal = ?1 AND server_id = ?2",
+        params![principal, server_id],
+        |row| {
+            Ok((
+                row.get(0)?, row.get(1)?, row.get(2)?, row.get(3)?, row.get(4)?,
+                row.get(5)?, row.get(6)?, row.get(7)?,
+            ))
+        },
+    )?;
+    let now = crate::db::now();
+    if row.0 > 0 && row.1 > 0 && row.1 <= now {
+        db.execute(
+            "UPDATE wine_state SET gold_free_used = 0, gold_free_cooldown_until = 0
+             WHERE principal = ?1 AND server_id = ?2",
+            params![principal, server_id],
+        )?;
+        row.0 = 0;
+        row.1 = 0;
+    }
+    let gold_left = if row.1 > now { row.1 - now } else { 0 };
+    let silver_left = (row.3 - now).max(0);
+    let copper_left = (row.4 - now).max(0);
+    let gold_available = configured_gold_free_draws > row.0 && row.1 == 0;
+    Ok(WineStatus {
+        gold_free_times: i64::from(gold_available),
+        gold_free_end_time: gold_left,
+        silver_free_times: i64::from(silver_left == 0),
+        silver_free_end_time: silver_left,
+        copper_free_end_time: copper_left,
+        first_gold_consumed: row.2,
+        first_silver_consumed: row.5,
+        gold_wine_count: row.6,
+        gold_guarantee_phase: row.7,
+    })
+}
+
+/// Commit the cooldown and guarantee counters after a successful wine request.
+/// The caller's outer transaction makes the item draw, rewards and timers atomic.
+pub fn finish_wine_draw(
+    db: &Connection,
+    principal: &str,
+    server_id: &str,
+    wine_type: i64,
+    gold_wine_count: i64,
+    gold_guarantee_phase: i64,
+    first_gold: bool,
+    first_silver: bool,
+) -> rusqlite::Result<()> {
+    db.execute(
+        "INSERT OR IGNORE INTO wine_state(principal, server_id) VALUES (?1, ?2)",
+        params![principal, server_id],
+    )?;
+    let now = crate::db::now();
+    match wine_type {
+        2 => {
+            db.execute(
+                "UPDATE wine_state SET gold_free_used = 1,
+                     gold_free_cooldown_until = ?3 + ?4,
+                     gold_first_consumed = 1,
+                     gold_wine_count = ?5,
+                     gold_guarantee_phase = ?6
+                 WHERE principal = ?1 AND server_id = ?2",
+                params![
+                    principal,
+                    server_id,
+                    now,
+                    GOLD_WINE_COOLDOWN_SECONDS,
+                    gold_wine_count,
+                    gold_guarantee_phase
+                ],
+            )?;
+        }
+        3 => {
+            db.execute(
+                "UPDATE wine_state SET silver_cooldown_until = ?3 + ?4,
+                     silver_first_consumed = CASE WHEN ?5 THEN 1 ELSE silver_first_consumed END
+                 WHERE principal = ?1 AND server_id = ?2",
+                params![
+                    principal,
+                    server_id,
+                    now,
+                    SILVER_WINE_COOLDOWN_SECONDS,
+                    first_silver
+                ],
+            )?;
+        }
+        4 => {
+            db.execute(
+                "UPDATE wine_state SET copper_cooldown_until = ?3 + ?4
+                 WHERE principal = ?1 AND server_id = ?2",
+                params![principal, server_id, now, COPPER_WINE_COOLDOWN_SECONDS],
+            )?;
+        }
+        _ => unreachable!("wine type is validated before persistence"),
+    }
+    if first_gold {
+        db.execute(
+            "UPDATE wine_state SET gold_first_consumed = 1
+             WHERE principal = ?1 AND server_id = ?2",
+            params![principal, server_id],
+        )?;
+    }
+    Ok(())
+}
+
 /// Consume an available free gold recruit and start its cooldown. The caller
 /// owns the surrounding write transaction, so the timer and draw commit together.
 pub fn consume_free_gold_wine(
@@ -795,6 +999,23 @@ pub fn snapshot(
     })
     .collect();
 
+    let general_souls = collect(
+        db,
+        "SELECT general_id, num FROM player_general_souls
+         WHERE principal = ?1 AND server_id = ?2 ORDER BY general_id",
+        principal,
+        server_id,
+    )?
+    .into_iter()
+    .map(|row| {
+        json!({
+            "pk_id": row[0].as_str().unwrap_or_default(),
+            "id": row[0].as_str().unwrap_or_default(),
+            "num": row[1].as_i64().unwrap_or(0)
+        })
+    })
+    .collect();
+
     let items = collect(
         db,
         "SELECT pk_id, item_id, num FROM player_items
@@ -847,17 +1068,22 @@ pub fn snapshot(
     .collect();
 
     let user_info = profile_info(db, principal, server_id, tutorial)?;
-    let (wine_gold_free_times, wine_gold_free_end_time, wine_first_time_consume_gold) =
-        wine_gold_state(db, principal, server_id, tutorial.gold_free_draws)?;
+    let wine = wine_status(db, principal, server_id, tutorial.gold_free_draws)?;
     Ok(Snapshot {
         generals,
+        general_souls,
         items,
         equipment,
         team,
         user_info,
-        wine_gold_free_times,
-        wine_gold_free_end_time,
-        wine_first_time_consume_gold,
+        wine_gold_free_times: wine.gold_free_times,
+        wine_gold_free_end_time: wine.gold_free_end_time,
+        wine_first_time_consume_gold: wine.first_gold_consumed,
+        wine_silver_free_times: wine.silver_free_times,
+        wine_silver_free_end_time: wine.silver_free_end_time,
+        wine_copper_free_end_time: wine.copper_free_end_time,
+        wine_gold_count: wine.gold_wine_count,
+        wine_gold_guarantee_phase: wine.gold_guarantee_phase,
     })
 }
 

@@ -258,9 +258,6 @@
     (hintNum = 0);
     // source line 188, bytecode pc 2253
     switch (index) {
-        case 7:
-        /* TODO_BYTECODE pc=2253 opcode=tableswitch reason=tableswitch_target_invalid */
-        break;
         case 0:
         // source line 190, bytecode pc 2352
         (hintNum = xs.Profile.GameData.Mgr.getInstance().Hint.campHintInfoCount());
@@ -287,34 +284,36 @@
         // source line 208, bytecode pc 2591
         (hintNum = xs.Profile.GameData.Mgr.getInstance().Hint.GoddessHintCount());
         break;
+        case 7:
         default:
-        if ((hintNum > 0)) {
-            // source line 213, bytecode pc 2640
-            (hintIcon = xs.Tools.UI.generalHintIcon(hintNum));
-            // source line 215, bytecode pc 2731
-            xs.Utils.Node.attachNodes(menu, hintIcon, { desc: "c", offset: xs.Scene.GeneralMenuScene.cfg.multiMenuCfg[index].hintOffset });
-        }
-        if (!xs.Guide.GuideMgr.getIsOver()) {
-            if ((index === 0)) {
-                // source line 221, bytecode pc 2792
-                menu.setGuideTag(3004);
-            }
-            if ((index === 1)) {
-                // source line 224, bytecode pc 2821
-                menu.setGuideTag(4007);
-            }
-            if ((index === 2)) {
-                // source line 227, bytecode pc 2851
-                menu.setGuideTag(4001);
-            }
-            if ((index === 5)) {
-                // source line 230, bytecode pc 2881
-                menu.setGuideTag(3007);
-            }
-        }
-        // source line 234, bytecode pc 2885
-        return menu;
+        break;
     }
+    if ((hintNum > 0)) {
+        // source line 213, bytecode pc 2640
+        (hintIcon = xs.Tools.UI.generalHintIcon(hintNum));
+        // source line 215, bytecode pc 2731
+        xs.Utils.Node.attachNodes(menu, hintIcon, { desc: "c", offset: xs.Scene.GeneralMenuScene.cfg.multiMenuCfg[index].hintOffset });
+    }
+    if (!xs.Guide.GuideMgr.getIsOver()) {
+        if ((index === 0)) {
+            // source line 221, bytecode pc 2792
+            menu.setGuideTag(3004);
+        }
+        if ((index === 1)) {
+            // source line 224, bytecode pc 2821
+            menu.setGuideTag(4007);
+        }
+        if ((index === 2)) {
+            // source line 227, bytecode pc 2851
+            menu.setGuideTag(4001);
+        }
+        if ((index === 5)) {
+            // source line 230, bytecode pc 2881
+            menu.setGuideTag(3007);
+        }
+    }
+    // source line 234, bytecode pc 2885
+    return menu;
 },
     MPMV_MenuTouchedInIndex: function(menu, index) {
     // source line 238, bytecode pc 3

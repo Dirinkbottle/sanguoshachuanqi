@@ -152,9 +152,8 @@
     // source line 93, bytecode pc 152
     (Utf8Encode = function(string) {
     var utftext, n, c;
-    /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 94, bytecode pc 29
-    (string = string.replace(undefined /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */, "\n"));
+    (string = string.replace(/\r\n/g, "\n"));
     // source line 95, bytecode pc 38
     (utftext = "");
     // source line 97, bytecode pc 43

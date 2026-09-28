@@ -103,10 +103,25 @@ pub struct GameData {
     /// 对酒奖池中 type=6 的武将 id，顺序即表序（去重）。
     wine_general_ids: Vec<String>,
     general_grades: HashMap<String, i64>,
+    general_configs: HashMap<String, GeneralConfig>,
+    general_names: HashMap<String, String>,
     item_ids: std::collections::HashSet<String>,
     user_levels: Vec<Value>,
     dungeon_plots: HashMap<String, (String, String)>,
     plot_dialogs: HashMap<String, Vec<Value>>,
+}
+
+#[derive(Clone, Debug)]
+struct GeneralConfig {
+    is_open: bool,
+    insight_max_level: i64,
+    insight_grow_type: String,
+    upgrade_exp_type: String,
+    insight_upgrade_exp_type: String,
+    eated_exp_type: String,
+    surrender_gift_id: String,
+    source_type_one: bool,
+    resource_id: String,
 }
 
 impl GameData {
@@ -127,6 +142,12 @@ impl GameData {
                 .map_err(|e| format!("读取 {} 失败: {e}", generals_file.display()))?,
         )
         .map_err(|e| format!("解析 {} 失败: {e}", generals_file.display()))?;
+        let general_names_file = dir.join("general_names.json");
+        let general_names: HashMap<String, String> = serde_json::from_slice(
+            &std::fs::read(&general_names_file)
+                .map_err(|e| format!("读取 {} 失败: {e}", general_names_file.display()))?,
+        )
+        .map_err(|e| format!("解析 {} 失败: {e}", general_names_file.display()))?;
         let items: Vec<Value> = serde_json::from_slice(
             &std::fs::read(&items_file)
                 .map_err(|e| format!("读取 {} 失败: {e}", items_file.display()))?,
@@ -185,6 +206,59 @@ impl GameData {
                 ))
             })
             .collect();
+        let general_configs = generals
+            .iter()
+            .filter_map(|entry| {
+                let id = entry.get("id")?.as_str()?.to_owned();
+                let sources = entry.get("source").and_then(Value::as_array);
+                Some((
+                    id,
+                    GeneralConfig {
+                        is_open: entry.get("is_open").and_then(Value::as_str) == Some("1"),
+                        insight_max_level: entry
+                            .get("insight_max_level")
+                            .and_then(Value::as_str)
+                            .and_then(|value| value.parse().ok())
+                            .unwrap_or(0),
+                        insight_grow_type: entry
+                            .get("insight_grow_type")
+                            .and_then(Value::as_str)
+                            .unwrap_or_default()
+                            .to_owned(),
+                        upgrade_exp_type: entry
+                            .get("upgrade_exp_type")
+                            .and_then(Value::as_str)
+                            .unwrap_or_default()
+                            .to_owned(),
+                        insight_upgrade_exp_type: entry
+                            .get("insight_upgrade_exp_type")
+                            .and_then(Value::as_str)
+                            .unwrap_or_default()
+                            .to_owned(),
+                        eated_exp_type: entry
+                            .get("eated_exp_type")
+                            .and_then(Value::as_str)
+                            .unwrap_or_default()
+                            .to_owned(),
+                        surrender_gift_id: entry
+                            .get("surrender_gift_id")
+                            .and_then(Value::as_str)
+                            .unwrap_or("0")
+                            .to_owned(),
+                        source_type_one: sources.is_some_and(|sources| {
+                            sources.iter().any(|source| {
+                                source.get("source_type").and_then(Value::as_str) == Some("1")
+                            })
+                        }),
+                        resource_id: entry
+                            .get("resource_id")
+                            .and_then(Value::as_str)
+                            .unwrap_or_default()
+                            .to_owned(),
+                    },
+                ))
+            })
+            .collect();
         let item_ids = items
             .iter()
             .filter_map(|entry| entry.get("id")?.as_str().map(str::to_owned))
@@ -202,6 +276,8 @@ impl GameData {
             dungeon_npcs,
             wine_general_ids,
             general_grades,
+            general_configs,
+            general_names,
             item_ids,
             user_levels,
             dungeon_plots,
@@ -365,6 +441,69 @@ impl GameData {
 
     pub fn general_grade(&self, general_id: &str) -> i64 {
         self.general_grades.get(general_id).copied().unwrap_or(4)
+    }
+
+    /// Localized display name recovered from the shipped Chinese i18n table.
+    pub fn general_name(&self, general_id: &str) -> &str {
+        self.general_names
+            .get(general_id)
+            .map(String::as_str)
+            .unwrap_or(general_id)
+    }
+
+    /// The source server's C1 eligibility check: normal generals with a valid
+    /// surrender progression and non-placeholder growth configuration.
+    pub fn is_wine_recruitable(&self, general_id: &str) -> bool {
+        let Some(config) = self.general_configs.get(general_id) else {
+            return false;
+        };
+        config.is_open
+            && config.insight_max_level > 0
+            && !config.insight_grow_type.starts_with("zhanjicailiao")
+            && !config.upgrade_exp_type.starts_with("zhanjicailiao")
+            && !config
+                .insight_upgrade_exp_type
+                .starts_with("zhanjicailiao")
+            && !config.eated_exp_type.starts_with("zhanji")
+            && config.surrender_gift_id != "0"
+            && !config.surrender_gift_id.is_empty()
+    }
+
+    /// `wine.wineGeneralInfo` only lists eligible, explicitly obtainable grades 1–4.
+    pub fn is_wine_preview_general(&self, general_id: &str) -> bool {
+        let Some(config) = self.general_configs.get(general_id) else {
+            return false;
+        };
+        !matches!(general_id, "131007")
+            && (1..=4).contains(&self.general_grade(general_id))
+            && config.is_open
+            && config.source_type_one
+            && self.is_wine_recruitable(general_id)
+    }
+
+    /// Static eligible draw candidates by the grade passed to x0.S/T.
+    pub fn wine_candidates(&self, grade: i64, require_source_one: bool) -> Vec<&str> {
+        let mut candidates: Vec<&str> = self
+            .general_configs
+            .iter()
+            .filter(|(id, config)| {
+                self.general_grade(id) == grade
+                    && self.is_wine_recruitable(id)
+                    && (!require_source_one || config.source_type_one)
+            })
+            .map(|(id, _)| id.as_str())
+            .collect();
+        candidates.sort_unstable();
+        candidates
+    }
+
+    /// General base resource ID used in the new-card reward payload.
+    pub fn general_resource_id(&self, general_id: &str) -> &str {
+        self.general_configs
+            .get(general_id)
+            .map(|config| config.resource_id.as_str())
+            .filter(|resource| !resource.is_empty() && *resource != "0")
+            .unwrap_or(general_id)
     }
 
     pub fn has_item(&self, item_id: &str) -> bool {

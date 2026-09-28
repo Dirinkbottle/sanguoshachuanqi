@@ -58,9 +58,8 @@
     (output = "");
     // source line 45, bytecode pc 41
     (i = 0);
-    /* TODO_BYTECODE pc=53 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 46, bytecode pc 71
-    (input = input.replace(undefined /* TODO_BYTECODE pc=53 opcode=regexp reason=regexp_object_literal_not_dumped */, ""));
+    (input = input.replace(/[^A-Za-z0-9\+\/\=]/g, ""));
     while ((i < input.length)) {
         // source line 48, bytecode pc 128
         (enc1 = this._keyStr.indexOf(input.charAt(i++)));
@@ -94,9 +93,8 @@
 },
     _utf8_encode: function(string) {
     var utftext, n, c;
-    /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 69, bytecode pc 29
-    (string = string.replace(undefined /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */, "\n"));
+    (string = string.replace(/\r\n/g, "\n"));
     // source line 70, bytecode pc 38
     (utftext = "");
     // source line 71, bytecode pc 43
@@ -213,9 +211,8 @@
     (output = "");
     // source line 147, bytecode pc 41
     (i = 0);
-    /* TODO_BYTECODE pc=53 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 148, bytecode pc 71
-    (input = input.replace(undefined /* TODO_BYTECODE pc=53 opcode=regexp reason=regexp_object_literal_not_dumped */, ""));
+    (input = input.replace(/[^A-Za-z0-9\+\/\=]/g, ""));
     while ((i < input.length)) {
         // source line 150, bytecode pc 128
         (enc1 = this._keyStr.indexOf(input.charAt(i++)));
@@ -251,9 +248,8 @@
     _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
     utf8_encode: function(string) {
     var utftext, n, c;
-    /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */
     // source line 175, bytecode pc 29
-    (string = string.replace(undefined /* TODO_BYTECODE pc=11 opcode=regexp reason=regexp_object_literal_not_dumped */, "\n"));
+    (string = string.replace(/\r\n/g, "\n"));
     // source line 176, bytecode pc 38
     (utftext = "");
     // source line 177, bytecode pc 43

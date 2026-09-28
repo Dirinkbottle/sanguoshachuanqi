@@ -140,6 +140,9 @@ class Body:
     instructions: list = field(default_factory=list)
     children: dict = field(default_factory=dict)
     try_notes: list = field(default_factory=list)
+    # Offset of script->main(): js_DisassembleAtPC prints a `main:` label there,
+    # and every JSTRY note offset is relative to it (jsinterp.cpp:3274).
+    main_pc: int = 0
 
 
 def parse_disassembly(path, outline_path):
@@ -152,6 +155,7 @@ def parse_disassembly(path, outline_path):
     pending_obj = None
     pending_meta = None
     pending_args, pending_locals = {}, {}
+    expect_main = False
     outline_names = {}
     if outline_path.exists():
         for line in outline_path.read_text(encoding="utf-8", errors="replace").splitlines():
@@ -218,14 +222,23 @@ def parse_disassembly(path, outline_path):
             pending_obj = None
             pending_meta = None
             pending_args, pending_locals = {}, {}
+            expect_main = False
             continue
         if line.startswith("--- END SCRIPT"):
             current = None
             continue
         if current is not None:
+            if line.strip() == "main:":
+                # js_DisassembleAtPC prints this label before the instruction at
+                # script->main(); JSTRY note offsets are relative to that pc.
+                expect_main = True
+                continue
             ins = INS_RE.match(line)
             if ins:
                 item = Instruction(int(ins.group(1)), int(ins.group(2)), ins.group(3), ins.group(4).strip())
+                if expect_main:
+                    current.main_pc = item.pc
+                    expect_main = False
                 current.instructions.append(item)
                 continue
             if current.instructions and current.instructions[-1].op == "tableswitch":
@@ -238,14 +251,78 @@ def parse_disassembly(path, outline_path):
     return bodies
 
 
+# jsopcode.cpp's QuoteString emits the shorthands in js_EscapeMap plus
+# \xHH (code units below 0x100) and \uXXXX (everything else); only the JSON
+# subset of those can be handed to json.loads unchanged.
+_JS_ESCAPE_TO_JSON = {"v": "u000B", "'": None}
+
+
+def decode_js_escapes(text):
+    r"""Rewrite the JavaScript-only escapes of a printed atom into JSON spelling.
+
+    js_Disassemble1 prints JOF_ATOM through ToDisassemblySource ->
+    QuoteString (jsopcode.cpp:581-588 and jsopcode.cpp:976-1047), so the text
+    between the quotes is JavaScript source, not the atom's value.  JSON
+    accepts \b \f \n \r \t \" \\ and \uXXXX but not \xHH, \v or \',
+    which is exactly what QuoteString uses for the CJK punctuation that makes
+    up the shipped i18n tables.  Without this translation json.loads fails and
+    the caller used to fall back to the still-escaped display text, so
+    js_string() escaped it a second time ("\u795E\xB7..." became the six
+    character string "\\u795E" instead of the atom "\u795E\xB7...").
+    """
+    out = []
+    i = 0
+    while i < len(text):
+        ch = text[i]
+        if ch != "\\":
+            out.append(ch)
+            i += 1
+            continue
+        if i + 1 >= len(text):
+            out.append("\\\\")
+            i += 1
+            continue
+        nxt = text[i + 1]
+        if nxt == "x" and re.match(r"[0-9A-Fa-f]{2}", text[i + 2:i + 4]):
+            out.append("\\u00" + text[i + 2:i + 4])
+            i += 4
+            continue
+        replacement = _JS_ESCAPE_TO_JSON.get(nxt, nxt)
+        if replacement is None:
+            out.append(nxt)
+        else:
+            out.append("\\" + replacement)
+        i += 2
+    return "".join(out)
+
+
 def parse_quoted(text):
     match = re.search(r'"(?:\\.|[^"\\])*"', text)
     if not match:
         return None
+    literal = match.group(0)[1:-1]
     try:
-        return json.loads(match.group(0))
+        return json.loads('"' + decode_js_escapes(literal) + '"')
     except Exception:
-        return match.group(0)[1:-1]
+        return literal
+
+
+def regexp_literal(text):
+    r"""Parse the literal jsopcode.cpp prints for JSOP_REGEXP.
+
+    js_Disassemble1 renders JOF_REGEXP through ToDisassemblySource
+    (jsopcode.cpp:616-623), which is RegExp.prototype.toSource: a re-parseable
+    /body/flags literal whose body escapes every '/' as '\/'.  The last '/'
+    is therefore always the delimiter.
+    """
+    text = (text or "").strip()
+    end = text.rfind("/")
+    if not text.startswith("/") or end <= 0:
+        return None
+    body, flags = text[1:end], text[end + 1:]
+    if not re.match(r"^[a-z]*$", flags):
+        return None
+    return "/" + body + "/" + flags
 
 
 def js_string(value):
@@ -499,7 +576,7 @@ class Decompiler:
         "bitand": "&", "bitor": "|", "bitxor": "^",
     }
     UNARY = {"not": "!", "neg": "-", "pos": "+", "bitnot": "~", "typeof": "typeof ", "typeofexpr": "typeof ", "void": "void "}
-    SUPPORTED_OPS = set("nop notearg loophead loopentry lineno endinit stop undefined null true false this string zero one int8 int32 uint16 uint24 uint32 double name getgname callname getintrinsic callintrinsic getaliasedvar callaliasedvar setaliasedvar implicitthis arguments getarg callarg getlocal calllocal bindname getprop getxprop callprop length getelem callelem newinit newarray initprop initelem initelem_array lambda deffun setprop setgname setintrinsic setconst setname setlocal setarg setelem not neg pos bitnot typeof typeofexpr void add sub mul div mod eq ne stricteq strictne lt le gt ge in instanceof lsh rsh ursh bitand bitor bitxor dup dup2 swap pick call new eval funcall funapply pop popv popn delname delprop delelem incarg arginc decarg argdec inclocal localinc declocal localdec incname nameinc decname namedec incgname gnameinc decgname gnamedec incprop propinc decprop propdec incelem eleminc decelem elemdec return throw defvar goto ifeq ifne or and".split())
+    SUPPORTED_OPS = set("nop notearg loophead loopentry lineno endinit stop undefined null true false this string zero one int8 int32 uint16 uint24 uint32 double name getgname callname getintrinsic callintrinsic getaliasedvar callaliasedvar setaliasedvar implicitthis arguments getarg callarg getlocal calllocal bindname getprop getxprop callprop length getelem callelem newinit newarray initprop initelem initelem_array lambda deffun regexp setprop setgname setintrinsic setconst setname setlocal setarg setelem not neg pos bitnot typeof typeofexpr void add sub mul div mod eq ne stricteq strictne lt le gt ge in instanceof lsh rsh ursh bitand bitor bitxor dup dup2 swap pick call new eval funcall funapply pop popv popn delname delprop delelem incarg arginc decarg argdec inclocal localinc declocal localdec incname nameinc decname namedec incgname gnameinc decgname gnamedec incprop propinc decprop propdec incelem eleminc decelem elemdec return throw defvar goto ifeq ifne or and".split())
     SIMPLE_IGNORED = {"notearg", "loophead", "loopentry", "lineno", "nop", "endinit", "stop", "retrval"}
     # JOF_DECOMPOSE inc/dec opcodes leave the old value on the operand stack and
     # then assign; see _fold_postfix_incdec.
@@ -903,6 +980,12 @@ class Decompiler:
             self._stmt(vm, "/* TODO_BYTECODE const_binding={} */".format(name if valid_identifier(name) else "unknown"), ins)
             self.metrics["todoOpcodes"][op] += 1; return
         if op == "regexp":
+            # The operand is the constant's source text, so the literal can be
+            # emitted as-is; dropping it turned every use into
+            # undefined.replace(...) / undefined.test(...) at run time.
+            literal = regexp_literal(arg)
+            if literal is not None:
+                vm.stack.append(Expr(literal, False, "literal")); return
             self._todo(vm, ins, "regexp_object_literal_not_dumped"); return
         if op == "toid":
             # JSOP_TOID converts sp[-1] to a property id in place and leaves the
@@ -930,7 +1013,20 @@ class Decompiler:
     def _try_layout(self, body, idx, stop):
         """Recognize v22's ordinary try/catch layout using JSOP_TRY's note target."""
         insns = body.instructions
-        handler_idx = self._target_index(body, branch_target(insns[idx]))
+        handler_pc = branch_target(insns[idx])
+        # jsc_disasm.cpp prints JSTRY notes with their raw offsets, which are
+        # relative to script->main() (jsinterp.cpp:3274 enters the handler at
+        # main + start + length).  jsopcode.cpp only decorates JSOP_TRY with a
+        # jump when note.start == loc + 1, i.e. when main() == code; for a
+        # function with an arguments/var prologue the operand stays empty, so
+        # recover the handler from the note itself.
+        for note in body.try_notes:
+            if note["kind"] != "catch":
+                continue
+            if body.main_pc + note["start"] == insns[idx].pc + 1:
+                handler_pc = body.main_pc + note["start"] + note["length"]
+                break
+        handler_idx = self._target_index(body, handler_pc) if handler_pc is not None else None
         if handler_idx is None or not idx < handler_idx < stop:
             return None
 
@@ -968,12 +1064,25 @@ class Decompiler:
         bindings = static_block_bindings(insns[handler_idx].arg)
         if bindings and valid_identifier(bindings[0]):
             catch_name = bindings[0]
-        if cursor < handler_exit and insns[cursor].op == "setlocal":
-            slot_match = re.match(r"(\d+)", insns[cursor].arg)
-            if slot_match:
-                catch_slot = int(slot_match.group(1))
-                if not (bindings and valid_identifier(bindings[0])):
-                    catch_name = self.name_for_slot(body, "getlocal", catch_slot)
+        # The catch entry stores the pending exception into the binding the
+        # enterblock just created (setlocal for locals, setaliasedvar/setarg
+        # for a function that needs a call object) and then pops it.  The catch
+        # clause already binds that value, so the store must not be executed on
+        # its own - it would read the (empty) operand stack and clobber the
+        # binding with undefined.
+        store_ops = {"setlocal", "setarg", "setaliasedvar", "setname", "setgname"}
+        if cursor < handler_exit and insns[cursor].op in store_ops:
+            store = insns[cursor]
+            if store.op == "setlocal":
+                slot_match = re.match(r"(\d+)", store.arg)
+                if slot_match:
+                    catch_slot = int(slot_match.group(1))
+                    if not (bindings and valid_identifier(bindings[0])):
+                        catch_name = self.name_for_slot(body, "getlocal", catch_slot)
+            elif not (bindings and valid_identifier(bindings[0])):
+                stored = parse_quoted(store.arg)
+                if stored and valid_identifier(stored):
+                    catch_name = stored
             cursor += 1
             if cursor < handler_exit and insns[cursor].op == "pop":
                 cursor += 1
@@ -1184,10 +1293,21 @@ class VM:
                 return self.local_overrides[idx]
         return self.owner.name_for_slot(body, op, idx)
 
-    def run(self, start, stop, depth=0, break_pc=None, continue_pc=None):
+    def run(self, start, stop, depth=0, break_pc=None, continue_pc=None, escape_stop=None):
         insns = self.body.instructions
         i = start
+        # `escape_stop` is the end of the enclosing region when this run only
+        # covers a sub-region (one arm of an if/else, one switch case).  A
+        # conditional whose target lands inside that enclosing region but past
+        # this run's own `stop` is still structurable there; see the
+        # conditional_target_outside_region handling below.
+        self.escape_stop = escape_stop
+        self.boundary = escape_stop if escape_stop is not None else stop
+        # Furthest bytecode index this run consumed; the switch emitters use it
+        # to resume the parent past an arm that escaped its own region.
+        self.end_index = start
         while i < stop:
+            self.end_index = max(self.end_index, i)
             if depth > 40:
                 self.out.append("/* TODO_BYTECODE reason=control_flow_nesting_limit */")
                 self.owner.metrics["todoOpcodes"]["<control-flow>"] += 1
@@ -1365,16 +1485,69 @@ class VM:
                     i += 1
                     continue
                 if target_idx > stop:
-                    self.owner._todo(self, ins, "conditional_target_outside_region")
-                    i += 1
+                    # The target is past this run's end.  That happens when the
+                    # run only covers a sub-region whose boundary is a heuristic
+                    # (an arm of an outer if/else or of a switch); the target can
+                    # still be a legitimate label inside the enclosing region.
+                    # Dropping the condition there made the guarded code execute
+                    # unconditionally (JSOP_IFEQ/JSOP_IFNE only branch when their
+                    # test fires - jsinterp.cpp:1573-1600 - so the guarded range
+                    # is not reachable on the other path), so structure the
+                    # conditional against the enclosing region instead.
+                    if self.escape_stop is None or target_idx >= self.escape_stop:
+                        self.owner._todo(self, ins, "conditional_target_outside_region")
+                        i += 1
+                        continue
+                    join = self.owner._find_else(self.body, i + 1, target_idx, self.escape_stop)
+                    if join and self.body.instructions[join[0]].op == "goto":
+                        goto_idx, end_idx = join
+                        fall = self.owner._new_vm(self.body, self.stack)
+                        fall.run(i + 1, goto_idx, depth + 1, break_pc, continue_pc,
+                                 escape_stop=self.escape_stop)
+                        taken = self.owner._new_vm(self.body, self.stack)
+                        # This run's break target can sit before the escaped
+                        # target; only forward it while it is still ahead.
+                        taken_break = break_pc if (break_pc is not None and break_pc >= target_idx) else None
+                        taken.run(target_idx, end_idx, depth + 1, taken_break, continue_pc,
+                                  escape_stop=self.escape_stop)
+                        if ins.op == "ifeq":
+                            then_vm, else_vm, condition = fall, taken, cond_value.text
+                        else:
+                            then_vm, else_vm, condition = taken, fall, cond_value.text
+                        if not then_vm.out and not else_vm.out and len(then_vm.stack) == len(else_vm.stack):
+                            self.stack = self.owner._merge_branch_stacks(
+                                then_vm.stack, else_vm.stack, condition, ins.pc)
+                        else:
+                            self.out.append("if ({}) {{".format(condition))
+                            self.out.extend("    " + line for line in then_vm.out)
+                            self.out.append("} else {")
+                            self.out.extend("    " + line for line in else_vm.out)
+                            self.out.append("}")
+                            self.stack = self.owner._merge_branch_stacks(
+                                then_vm.stack, else_vm.stack, condition, ins.pc)
+                        i = end_idx
+                        self.end_index = max(self.end_index, i)
+                        continue
+                    branch_vm = self.owner._new_vm(self.body, self.stack)
+                    branch_vm.run(i + 1, target_idx, depth + 1, break_pc, continue_pc,
+                                  escape_stop=self.escape_stop)
+                    condition = self.owner._branch_expr(ins.op, cond_value)
+                    self.out.append("if ({}) {{".format(condition))
+                    self.out.extend("    " + line for line in branch_vm.out)
+                    self.out.append("}")
+                    self.stack = self.owner._merge_stack(self.stack, branch_vm.stack, ins.pc)
+                    i = target_idx
+                    self.end_index = max(self.end_index, i)
                     continue
                 join = self.owner._find_else(self.body, i + 1, target_idx, stop)
                 if join and self.body.instructions[join[0]].op == "goto":
                     goto_idx, end_idx = join
                     fall = self.owner._new_vm(self.body, self.stack)
-                    fall.run(i + 1, goto_idx, depth + 1, break_pc, continue_pc)
+                    fall.run(i + 1, goto_idx, depth + 1, break_pc, continue_pc,
+                             escape_stop=self.boundary)
                     taken = self.owner._new_vm(self.body, self.stack)
-                    taken.run(target_idx, end_idx, depth + 1, break_pc, continue_pc)
+                    taken.run(target_idx, end_idx, depth + 1, break_pc, continue_pc,
+                              escape_stop=self.boundary)
                     if ins.op == "ifeq":
                         then_vm, else_vm, condition = fall, taken, cond_value.text
                     else:
@@ -1496,6 +1669,9 @@ def _emit_conditional_switch(self, vm, ins, idx, stop, depth, break_pc, continue
                 if dest is not None and (dest > max(starts) or is_shared_default_join) and dest <= stop:
                     exits.append(dest)
     end_idx = min(exits) if exits else stop
+    # An arm may escape past `end_idx` (a conditional whose target belongs to the
+    # enclosing region); resume the parent after everything the arms consumed.
+    furthest = end_idx
     self._stmt(vm, "switch ({}) {{".format(discriminant.text), ins)
     labels = defaultdict(list)
     for value, pc in entries:
@@ -1506,7 +1682,8 @@ def _emit_conditional_switch(self, vm, ins, idx, stop, depth, break_pc, continue
         end = min(next_start, end_idx)
         vm.out.extend("    " + label for label in labels[start])
         case_vm = self._new_vm(body, base_stack)
-        case_vm.run(start, end, depth + 1, end_idx, continue_pc)
+        case_vm.run(start, end, depth + 1, end_idx, continue_pc, escape_stop=vm.boundary)
+        furthest = max(furthest, case_vm.end_index)
         vm.out.extend("    " + line for line in case_vm.out)
         if not case_vm.out or not case_vm.out[-1].strip().startswith(("break", "return", "throw", "continue")):
             vm.out.append("    break;")
@@ -1516,7 +1693,7 @@ def _emit_conditional_switch(self, vm, ins, idx, stop, depth, break_pc, continue
     self.metrics["conditionalSwitchPcs"].update((body.index, j) for j in case_ops)
     self.metrics["conditionalSwitchPcs"].add((body.index, default_op))
     vm.stack = base_stack
-    self.metrics["switchNextIndex"] = end_idx
+    self.metrics["switchNextIndex"] = furthest
 
 
 def _emit_switch(self, vm, ins, idx, stop, depth, break_pc, continue_pc=None):
@@ -1528,11 +1705,20 @@ def _emit_switch(self, vm, ins, idx, stop, depth, break_pc, continue_pc=None):
         return
     default_off, low, high = details
     discriminant = vm.stack.pop() if vm.stack else Expr("undefined", False, "unknown", unknown=True)
-    case_entries = [(value, ins.pc + off) for value, off in ins.switch_cases]
     default_pc = ins.pc + default_off
+    # jsinterp.cpp:2580-2612 preloads the default offset into len and only
+    # overwrites it for a non-zero table entry ("int32_t off =
+    # GET_JUMP_OFFSET(pc2); if (off) len = off;"), so a zero entry means
+    # "take the default target".  It is not an invalid target: the empty case
+    # the old code emitted silently skipped the default arm's code.
+    case_entries = [(value, (ins.pc + off) if off else default_pc)
+                    for value, off in ins.switch_cases]
     targets = [pc for _, pc in case_entries] + [default_pc]
     target_indexes = [self._target_index(body, pc) for pc in targets]
-    if any(x is None or x >= stop for x in target_indexes):
+    # A default target that lands exactly on the end of the enclosing region is
+    # the switch join (the default arm is empty and falls out of the switch),
+    # so only targets beyond the region are invalid.
+    if any(x is None or x > stop for x in target_indexes):
         self._todo(vm, ins, "tableswitch_target_invalid")
         self.metrics["switchNextIndex"] = idx + 1
         return
@@ -1552,6 +1738,9 @@ def _emit_switch(self, vm, ins, idx, stop, depth, break_pc, continue_pc=None):
                 if ti is not None and (ti > max(case_starts) or (shared_default_join and ti == default_idx)):
                     end_candidates.append(ti)
     end_idx = min(end_candidates) if end_candidates else stop
+    # An arm may escape past `end_idx` (a conditional whose target belongs to the
+    # enclosing region); resume the parent after everything the arms consumed.
+    furthest = end_idx
     self._stmt(vm, "switch ({}) {{".format(discriminant.text), ins)
     labels = defaultdict(list)
     for value, pc in case_entries:
@@ -1563,7 +1752,8 @@ def _emit_switch(self, vm, ins, idx, stop, depth, break_pc, continue_pc=None):
         end = min(next_start, end_idx)
         vm.out.extend("    " + x for x in labels[start])
         case_vm = self._new_vm(body, vm.stack)
-        case_vm.run(start, end, depth + 1, end_idx, continue_pc)
+        case_vm.run(start, end, depth + 1, end_idx, continue_pc, escape_stop=vm.boundary)
+        furthest = max(furthest, case_vm.end_index)
         vm.out.extend("    " + x for x in case_vm.out)
         # Table switch source normally terminates each case with a jump to the common exit.
         if not case_vm.out or not case_vm.out[-1].strip().startswith(("break", "return", "throw")):
@@ -1571,7 +1761,7 @@ def _emit_switch(self, vm, ins, idx, stop, depth, break_pc, continue_pc=None):
     vm.out.append("}")
     self.metrics["switches"] += 1
     self.metrics["switchPcs"].add((body.index, idx))
-    self.metrics["switchNextIndex"] = end_idx
+    self.metrics["switchNextIndex"] = furthest
 
 
 Decompiler._emit_switch = _emit_switch

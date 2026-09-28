@@ -15,6 +15,10 @@ SOURCE_ROOT = PROJECT_ROOT / "Resources" / "assets"
 RECOVERED_ROOT = SOURCE_ROOT / "reconstructed" / "src_jsc"
 ENGINE_JS_ROOT = PROJECT_ROOT / "toolchain" / "cocos2d-x-2.2.6" / "scripting" / "javascript" / "bindings" / "js"
 RUNTIME_OVERLAY_ROOT = PROJECT_ROOT / "ClientProject" / "overlays" / "src_jsc"
+LOGIN_OVERLAYS = (
+    "Scene/Login/LoginScene_AnySdk.js",
+    "Scene/Login/LoginScene_BfSdk.js",
+)
 BINDING_SCRIPTS = (
     "jsb_cocos2d_constants.js",
     "jsb_cocos2d.js",
@@ -95,7 +99,7 @@ def apply_local_reconstruction_routes(active_src: Path) -> int:
 
 
 def apply_runtime_feature_overlays(active_src: Path) -> int:
-    """Stage local transport and dialog behavior without changing recovered JS."""
+    """Stage local runtime changes without modifying reconstructed sources."""
     net_overlay = RUNTIME_OVERLAY_ROOT / "Utils" / "Net.js"
     net_target = active_src / "Utils" / "Net.js"
     if not net_overlay.is_file() or not net_target.is_file():
@@ -122,8 +126,123 @@ def apply_runtime_feature_overlays(active_src: Path) -> int:
         raise SystemExit("could not apply NetConnectErr dialog overlay to " + str(dialog_target))
     dialog_target.write_text(dialog_text, encoding="utf-8")
 
-    print("Staged local XHR retry and adaptive close-only error dialog overlays")
-    return 2
+    for relative in LOGIN_OVERLAYS:
+        source = RUNTIME_OVERLAY_ROOT / relative
+        target = active_src / relative
+        if not source.is_file() or not target.is_file():
+            raise SystemExit("missing login runtime overlay or recovered " + relative)
+        overlay_text = source.read_text(encoding="utf-8")
+        if "SGSCQ_LOCAL_LOGIN_OVERLAY" not in overlay_text:
+            raise SystemExit("login runtime overlay is missing its marker: " + relative)
+        shutil.copy2(source, target)
+
+    print("Staged local XHR retry, adaptive close-only error dialog, and login overlays")
+    return 2 + len(LOGIN_OVERLAYS)
+
+
+def replace_once(path: Path, pattern: str, replacement: str, label: str) -> None:
+    text = path.read_text(encoding="utf-8")
+    updated, count = re.subn(pattern, replacement, text, flags=re.MULTILINE | re.DOTALL)
+    if count != 1:
+        raise SystemExit("expected exactly one {} in {} (found {})".format(label, path, count))
+    path.write_text(updated, encoding="utf-8")
+
+
+def apply_privacy_overlays(active_src: Path) -> int:
+    """Drop optional vendor attribution and analytics from executable APK JS."""
+    net = active_src / "Tools" / "Net.js"
+    replacements = (
+        (
+            r"^\s*\(_param\.data_acquire = xs\.Tools\.Net\.createExtraValue\(\)\);\s*$",
+            "    // SGSCQ_PRIVACY: omit optional device/channel acquisition metadata.",
+            "server-list data_acquire metadata",
+        ),
+        (
+            r"^\s*\(_param\.channel = xs\.Tools\.Jsb\.getChannelId\(\)\);\s*$",
+            "    // SGSCQ_PRIVACY: omit optional channel attribution.",
+            "server-list channel attribution",
+        ),
+        (
+            r"^\s*\(_param\.channel_id = xs\.Tools\.Jsb\.getChannelId\(\)\);\s*$",
+            "    // SGSCQ_PRIVACY: omit optional channel attribution.",
+            "server-list channel_id attribution",
+        ),
+    )
+    for pattern, replacement, label in replacements:
+        replace_once(net, pattern, replacement, label)
+
+    # These integrations only collect vendor activation/push metadata. Keep
+    # their callable entry points because recovered gameplay may invoke them.
+    replace_once(
+        net,
+        r"\(xs\.Tools\.Net\.requestCheckWanPuActive = function\(\) \{.*?\n\}\);(?=\n// source line 1483)",
+        "(xs.Tools.Net.requestCheckWanPuActive = function() {\n"
+        "    // SGSCQ_PRIVACY: vendor activation reporting is not required by gameplay.\n"
+        "});",
+        "WanPu activation request",
+    )
+    replace_once(
+        net,
+        r"\(xs\.Tools\.Net\.requestGeTuiSave = function\(\) \{.*?\n\}\);(?=\n// source line 1512)",
+        "(xs.Tools.Net.requestGeTuiSave = function() {\n"
+        "    // SGSCQ_PRIVACY: push-token/account reporting is disabled.\n"
+        "});",
+        "GeTui user-save request",
+    )
+
+    # The client attaches device, channel and online-time metadata to every
+    # gameplay API call when this flag is set. It is not read by gameplay APIs.
+    views = active_src / "Views" / "Mgr.js"
+    replace_once(
+        views,
+        r"if \(xs\.use_statistic_params\) \{\s*// source line 188, bytecode pc 207\s*"
+        r"\(_param\.statistic = xs\.Tools\.Statistic\.createStatisticParam\(\)\);\s*\}",
+        "// SGSCQ_PRIVACY: omit optional device/channel/online-time analytics payload.",
+        "global statistic request payload",
+    )
+
+    # The local version endpoint reads resource_version only. Avoid including
+    # channel/device identifiers, and encode JSON so the query parser receives
+    # one valid data value instead of raw braces/quotes.
+    update = active_src / "Update" / "UpdateScene.js"
+    text = update.read_text(encoding="utf-8")
+    text, count = re.subn(
+        r"^\s*channel: xsc\.app_channel,\s*\n\s*deviceId: xsc\.Tools\.Jsb\.getDeviceId\(\)\s*$",
+        "    // SGSCQ_PRIVACY: version check needs no channel or device identifiers.",
+        text,
+        count=1,
+        flags=re.MULTILINE,
+    )
+    if count != 1:
+        raise SystemExit("could not remove channel/device fields from local update check")
+    text, count = re.subn(
+        r"\(_tmp = \(_tmp \+ JSON\.stringify\(obj\)\)\);",
+        "(_tmp = (_tmp + encodeURIComponent(JSON.stringify(obj))));",
+        text,
+        count=1,
+    )
+    if count != 1:
+        raise SystemExit("could not URL-encode local update-check data")
+    update.write_text(text, encoding="utf-8")
+
+    # Empty out retained legacy host configuration as a second guard: the
+    # no-op request entry points above cannot accidentally reach vendor hosts.
+    url_cfg = active_src / "Cfg" / "Url.js"
+    text = url_cfg.read_text(encoding="utf-8")
+    text, count = re.subn(
+        r"((?:WanPu|GeTui):\s*\{\s*domain:\s*)\"[^\"]*\"",
+        r'\1""',
+        text,
+    )
+    if count < 2:
+        raise SystemExit("could not scrub legacy WanPu/GeTui hosts from {}".format(url_cfg))
+    url_cfg.write_text(text, encoding="utf-8")
+
+    print(
+        "Staged privacy overlays: no vendor activation/push requests, no channel/device "
+        "attribution, and no analytics payloads ({} legacy host entries cleared)".format(count)
+    )
+    return 7 + count
 
 
 def main() -> None:
@@ -220,6 +339,7 @@ def main() -> None:
     # keep the recovered source tree and bytecode-derived archive untouched.
     apply_local_reconstruction_routes(active_src)
     apply_runtime_feature_overlays(active_src)
+    apply_privacy_overlays(active_src)
 
     print(
         f"Staged {copied} APK assets plus {overlay_count} executable recovered JS files "

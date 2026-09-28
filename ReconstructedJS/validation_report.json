@@ -8,9 +8,9 @@
     "errors": []
   },
   "instructionRecovery": {
-    "translated": 2261885,
+    "translated": 2261948,
     "total": 2261953,
-    "weightedRate": 0.99997
+    "weightedRate": 0.999998
   },
   "dependencies": {
     "knownEdges": 815,
@@ -22,40 +22,17 @@
   },
   "cfgAnomalyCount": 117,
   "unresolvedOpcodes": {
-    "call": 2,
-    "callprop": 2,
-    "dup": 2,
-    "endinit": 1,
     "enditer": 2,
-    "enterblock": 3,
-    "exception": 3,
-    "getprop": 4,
-    "initprop": 2,
-    "leaveblock": 4,
-    "newinit": 1,
-    "notearg": 5,
-    "pop": 2,
-    "regexp": 16,
-    "retrval": 2,
-    "setrval": 2,
-    "stop": 2,
-    "swap": 2,
-    "tableswitch": 1,
-    "this": 6,
-    "toid": 1,
-    "try": 3
+    "retrval": 1,
+    "setrval": 1,
+    "toid": 1
   },
   "emittedTodoMarkersByOpcode": {
     "enditer": 2,
-    "ifeq": 4,
-    "leaveblock": 82,
-    "regexp": 16,
-    "setrval": 1,
-    "tableswitch": 15,
-    "toid": 1,
-    "try": 3
+    "leaveblock": 84,
+    "setrval": 1
   },
-  "manualReviewModuleCount": 83,
+  "manualReviewModuleCount": 77,
   "manualReviewModules": [
     {
       "output": "src_jsc/AnySdk/AnySdkHelp_js.js",
@@ -75,22 +52,9 @@
       ]
     },
     {
-      "output": "src_jsc/Cfg/String.js",
-      "rate": 0.989362,
-      "unresolvedOpcodes": {
-        "enterblock": 1,
-        "exception": 1,
-        "leaveblock": 1,
-        "try": 1
-      },
-      "cfgAnomalies": []
-    },
-    {
       "output": "src_jsc/Core/Cocos2d-x/jsb_cocos2d.js",
-      "rate": 0.999152,
-      "unresolvedOpcodes": {
-        "regexp": 3
-      },
+      "rate": 1.0,
+      "unresolvedOpcodes": {},
       "cfgAnomalies": [
         "block at pc 13: stack-height merge 1 vs 0",
         "block at pc 250: stack-height merge 1 vs 0",
@@ -109,16 +73,8 @@
     },
     {
       "output": "src_jsc/Core/Cocos2d-x/jsb_debugger.js",
-      "rate": 0.993998,
-      "unresolvedOpcodes": {
-        "enterblock": 1,
-        "exception": 1,
-        "leaveblock": 2,
-        "regexp": 6,
-        "retrval": 1,
-        "setrval": 1,
-        "try": 1
-      },
+      "rate": 1.0,
+      "unresolvedOpcodes": {},
       "cfgAnomalies": [
         "pc 114: operand stack underflow (need 1, height 0)",
         "pc 337: operand stack underflow (need 1, height 0)",
@@ -371,14 +327,6 @@
       ]
     },
     {
-      "output": "src_jsc/Prototype/String.js",
-      "rate": 0.995516,
-      "unresolvedOpcodes": {
-        "regexp": 1
-      },
-      "cfgAnomalies": []
-    },
-    {
       "output": "src_jsc/Scene/Awake/AwakeBoxView.js",
       "rate": 1.0,
       "unresolvedOpcodes": {},
@@ -497,29 +445,11 @@
     },
     {
       "output": "src_jsc/Tools/UI.js",
-      "rate": 0.999603,
-      "unresolvedOpcodes": {
-        "regexp": 1
-      },
+      "rate": 1.0,
+      "unresolvedOpcodes": {},
       "cfgAnomalies": [
         "pc 180: operand stack underflow (need 1, height 0)"
       ]
-    },
-    {
-      "output": "src_jsc/Utils/Base64.js",
-      "rate": 0.997409,
-      "unresolvedOpcodes": {
-        "regexp": 4
-      },
-      "cfgAnomalies": []
-    },
-    {
-      "output": "src_jsc/Utils/Md5.js",
-      "rate": 0.999597,
-      "unresolvedOpcodes": {
-        "regexp": 1
-      },
-      "cfgAnomalies": []
     },
     {
       "output": "src_jsc/Utils/buckets.js",
@@ -585,12 +515,6 @@
       "cfgAnomalies": [
         "pc 286: operand stack underflow (need 1, height 0)"
       ]
-    },
-    {
-      "output": "src_jsc/Views/Dialog/FightResult.js",
-      "rate": 1.0,
-      "unresolvedOpcodes": {},
-      "cfgAnomalies": []
     },
     {
       "output": "src_jsc/Views/Dialog/UnionEncounterMapDialog.js",
@@ -662,22 +586,8 @@
     },
     {
       "output": "src_jsc/Views/HulaoBattle/HulaoBattleMainView.js",
-      "rate": 0.980198,
-      "unresolvedOpcodes": {
-        "call": 2,
-        "callprop": 2,
-        "dup": 2,
-        "endinit": 1,
-        "getprop": 4,
-        "initprop": 2,
-        "newinit": 1,
-        "notearg": 5,
-        "pop": 2,
-        "stop": 2,
-        "swap": 2,
-        "tableswitch": 1,
-        "this": 6
-      },
+      "rate": 1.0,
+      "unresolvedOpcodes": {},
       "cfgAnomalies": [
         "pc 123: operand stack underflow (need 1, height 0)",
         "pc 171: operand stack underflow (need 1, height 0)"
@@ -698,17 +608,6 @@
       "cfgAnomalies": [
         "pc 123: operand stack underflow (need 1, height 0)"
       ]
-    },
-    {
-      "output": "src_jsc/Views/Mgr.js",
-      "rate": 0.999302,
-      "unresolvedOpcodes": {
-        "enterblock": 1,
-        "exception": 1,
-        "leaveblock": 1,
-        "try": 1
-      },
-      "cfgAnomalies": []
     },
     {
       "output": "src_jsc/Views/MiracleWeapons/MiracleWeaponLayer.js",

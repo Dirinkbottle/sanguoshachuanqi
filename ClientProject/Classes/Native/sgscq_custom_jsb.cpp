@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 #include "BFButton.h"
+#include "SpriteFrameRetention.h"
 #include "cocos2d_specifics.hpp"
 #include "generated/jsb_cocos2dx_extension_auto.hpp"
 
@@ -256,6 +257,10 @@ void register_all_xs_sanguosha(JSContext *cx, JSObject *global)
 
 void register_all_xs_sanguosha_manual(JSContext *cx, JSObject *global)
 {
-    // Manual registration surfaces are recovered separately; BFButton's
-    // original wrappers are all in the generated registration function.
+    jsval namespaceValue = JSVAL_VOID;
+    if (!JS_GetProperty(cx, global, "xs", &namespaceValue) || !namespaceValue.isObject()) {
+        JS_ReportError(cx, "xs namespace is unavailable for manual bindings");
+        return;
+    }
+    register_sprite_frame_retention(cx, JSVAL_TO_OBJECT(namespaceValue));
 }

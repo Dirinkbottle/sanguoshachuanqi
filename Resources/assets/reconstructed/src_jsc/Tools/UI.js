@@ -484,9 +484,8 @@
     // source line 467, bytecode pc 17
     (_text = (str || ""));
     if ((_text != "")) {
-        /* TODO_BYTECODE pc=43 opcode=regexp reason=regexp_object_literal_not_dumped */
         // source line 469, bytecode pc 61
-        (_text = str.replace(undefined /* TODO_BYTECODE pc=43 opcode=regexp reason=regexp_object_literal_not_dumped */, ""));
+        (_text = str.replace(/(^\s*)/g, ""));
     }
     // source line 471, bytecode pc 65
     return _text;

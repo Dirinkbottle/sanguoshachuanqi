@@ -3409,7 +3409,7 @@
         eated_exp_type: "shenwujiang_zhanji",
         general_soul_eated_exp_type: "shenhun_zhanji",
         insight_upgrade_exp_type: "shen_tupo",
-        voice_file: "eff_shen\\xB7zhaoyun",
+        voice_file: "eff_shen·zhaoyun",
         decompose_num: "18",
         culture_desc: "12102103",
         open_fskill_round: "0",

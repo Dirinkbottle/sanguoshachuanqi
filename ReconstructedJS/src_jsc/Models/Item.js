@@ -534,49 +534,53 @@
         (_model = xs.Models.Goddess.createWithBaseSurface(effVal));
         break;
         default:
-        /* TODO_BYTECODE pc=1092 opcode=ifeq reason=conditional_target_outside_region */
-        // source line 547, bytecode pc 1109
-        switch (this.getStyleId()) {
-            case xs.Const_Item_Style_General:
-            // source line 549, bytecode pc 1292
-            (_model = xs.Models.General.createWithBase(this.getStyleDesc()));
-            break;
-            case xs.Const_Item_Style_Equ:
-            // source line 552, bytecode pc 1340
-            (_model = xs.Models.Equipment.createWithBase(this.getStyleDesc()));
-            break;
-            case xs.Const_Item_Style_Skill:
-            // source line 555, bytecode pc 1388
-            (_model = xs.Models.Skill.createWithBase(this.getStyleDesc()));
-            break;
-            case xs.Const_Item_Style_Item:
-            // source line 558, bytecode pc 1436
-            (_model = xs.Models.Item.createWithBase(this.getStyleDesc()));
-            break;
-            case xs.Const_Item_Style_GeneralSoul:
-            // source line 561, bytecode pc 1484
-            (_model = xs.Models.GeneralSoul.createWithBase(this.getStyleDesc()));
-            break;
-            case xs.Const_Item_Style_SkillPiece:
-            // source line 564, bytecode pc 1532
-            (_model = xs.Models.SkillPiece.createWithBase(this.getStyleDesc()));
-            break;
-            case xs.Const_Item_Style_EquPiece:
-            // source line 567, bytecode pc 1580
-            (_model = xs.Models.EquipmentPiece.createWithBase(this.getStyleDesc()));
-            break;
-            case xs.Const_Item_Style_Goddess:
-            // source line 570, bytecode pc 1628
-            (_model = xs.Models.Goddess.createWithBase(this.getStyleDesc()));
-            break;
-            case xs.Const_Item_Style_GoddessSurface:
-            // source line 573, bytecode pc 1676
-            (_model = xs.Models.Goddess.createWithBaseSurface(this.getStyleDesc()));
-            break;
-            default:
-            // source line 577, bytecode pc 1686
+        if (((this.getItemType() === xs.Models.ItemType_Gift) || (this.getItemType() === xs.Models.ItemType_Box))) {
+            // source line 547, bytecode pc 1109
+            switch (this.getStyleId()) {
+                case xs.Const_Item_Style_General:
+                // source line 549, bytecode pc 1292
+                (_model = xs.Models.General.createWithBase(this.getStyleDesc()));
+                break;
+                case xs.Const_Item_Style_Equ:
+                // source line 552, bytecode pc 1340
+                (_model = xs.Models.Equipment.createWithBase(this.getStyleDesc()));
+                break;
+                case xs.Const_Item_Style_Skill:
+                // source line 555, bytecode pc 1388
+                (_model = xs.Models.Skill.createWithBase(this.getStyleDesc()));
+                break;
+                case xs.Const_Item_Style_Item:
+                // source line 558, bytecode pc 1436
+                (_model = xs.Models.Item.createWithBase(this.getStyleDesc()));
+                break;
+                case xs.Const_Item_Style_GeneralSoul:
+                // source line 561, bytecode pc 1484
+                (_model = xs.Models.GeneralSoul.createWithBase(this.getStyleDesc()));
+                break;
+                case xs.Const_Item_Style_SkillPiece:
+                // source line 564, bytecode pc 1532
+                (_model = xs.Models.SkillPiece.createWithBase(this.getStyleDesc()));
+                break;
+                case xs.Const_Item_Style_EquPiece:
+                // source line 567, bytecode pc 1580
+                (_model = xs.Models.EquipmentPiece.createWithBase(this.getStyleDesc()));
+                break;
+                case xs.Const_Item_Style_Goddess:
+                // source line 570, bytecode pc 1628
+                (_model = xs.Models.Goddess.createWithBase(this.getStyleDesc()));
+                break;
+                case xs.Const_Item_Style_GoddessSurface:
+                // source line 573, bytecode pc 1676
+                (_model = xs.Models.Goddess.createWithBaseSurface(this.getStyleDesc()));
+                break;
+                default:
+                // source line 577, bytecode pc 1686
+                (_model = this);
+                break;
+            }
+        } else {
+            // source line 583, bytecode pc 1701
             (_model = this);
-            break;
         }
         break;
     }
@@ -638,43 +642,47 @@
         (_tmpObj.surface = true);
         break;
         default:
-        /* TODO_BYTECODE pc=594 opcode=ifeq reason=conditional_target_outside_region */
-        // source line 641, bytecode pc 611
-        switch (this.getStyleId()) {
-            case xs.Const_Item_Style_General:
-            // source line 644, bytecode pc 730
-            (_class = xs.Views.Icon.IconStyleC);
-            break;
-            case xs.Const_Item_Style_Equ:
-            // source line 647, bytecode pc 759
-            (_class = xs.Views.Icon.IconStyleC);
-            break;
-            case xs.Const_Item_Style_Skill:
-            // source line 650, bytecode pc 788
-            (_class = xs.Views.Icon.IconStyleC);
-            break;
-            case xs.Const_Item_Style_GeneralSoul:
-            // source line 653, bytecode pc 817
-            (_class = xs.Views.Icon.IconStyleC);
-            // source line 654, bytecode pc 827
-            (_tmpObj.soul = true);
-            break;
-            case xs.Const_Item_Style_SkillPiece:
-            // source line 657, bytecode pc 856
-            (_class = xs.Views.Icon.IconStyleC);
-            // source line 658, bytecode pc 866
-            (_tmpObj.piece = true);
-            break;
-            case xs.Const_Item_Style_EquPiece:
-            // source line 661, bytecode pc 895
-            (_class = xs.Views.Icon.IconStyleC);
-            // source line 662, bytecode pc 905
-            (_tmpObj.piece = true);
-            break;
-            default:
-            // source line 666, bytecode pc 934
+        if (((this.getItemType() === xs.Models.ItemType_Gift) || (this.getItemType() === xs.Models.ItemType_Box))) {
+            // source line 641, bytecode pc 611
+            switch (this.getStyleId()) {
+                case xs.Const_Item_Style_General:
+                // source line 644, bytecode pc 730
+                (_class = xs.Views.Icon.IconStyleC);
+                break;
+                case xs.Const_Item_Style_Equ:
+                // source line 647, bytecode pc 759
+                (_class = xs.Views.Icon.IconStyleC);
+                break;
+                case xs.Const_Item_Style_Skill:
+                // source line 650, bytecode pc 788
+                (_class = xs.Views.Icon.IconStyleC);
+                break;
+                case xs.Const_Item_Style_GeneralSoul:
+                // source line 653, bytecode pc 817
+                (_class = xs.Views.Icon.IconStyleC);
+                // source line 654, bytecode pc 827
+                (_tmpObj.soul = true);
+                break;
+                case xs.Const_Item_Style_SkillPiece:
+                // source line 657, bytecode pc 856
+                (_class = xs.Views.Icon.IconStyleC);
+                // source line 658, bytecode pc 866
+                (_tmpObj.piece = true);
+                break;
+                case xs.Const_Item_Style_EquPiece:
+                // source line 661, bytecode pc 895
+                (_class = xs.Views.Icon.IconStyleC);
+                // source line 662, bytecode pc 905
+                (_tmpObj.piece = true);
+                break;
+                default:
+                // source line 666, bytecode pc 934
+                (_class = xs.Views.Icon.IconStyleB);
+                break;
+            }
+        } else {
+            // source line 673, bytecode pc 968
             (_class = xs.Views.Icon.IconStyleB);
-            break;
         }
         break;
     }

@@ -352,7 +352,45 @@ pub fn migrate(db: &mut Connection) -> rusqlite::Result<()> {
         tx.commit()?;
         version = 6;
     }
-    if version != 6 {
+    if version < 7 {
+        let tx = db.transaction()?;
+        for (column, definition) in [
+            ("silver_cooldown_until", "INTEGER NOT NULL DEFAULT 0"),
+            ("copper_cooldown_until", "INTEGER NOT NULL DEFAULT 0"),
+            ("silver_first_consumed", "INTEGER NOT NULL DEFAULT 0"),
+            ("gold_wine_count", "INTEGER NOT NULL DEFAULT 0"),
+            ("gold_guarantee_phase", "INTEGER NOT NULL DEFAULT 0"),
+        ] {
+            let exists: i64 = tx.query_row(
+                "SELECT EXISTS (
+                    SELECT 1 FROM pragma_table_info('wine_state') WHERE name = ?1
+                 )",
+                [column],
+                |row| row.get(0),
+            )?;
+            if exists == 0 {
+                tx.execute_batch(&format!(
+                    "ALTER TABLE wine_state ADD COLUMN {column} {definition};"
+                ))?;
+            }
+        }
+        tx.execute_batch(
+            "CREATE TABLE IF NOT EXISTS player_general_souls (
+                 principal TEXT NOT NULL,
+                 server_id TEXT NOT NULL,
+                 general_id TEXT NOT NULL,
+                 num INTEGER NOT NULL DEFAULT 0,
+                 PRIMARY KEY(principal, server_id, general_id)
+             );",
+        )?;
+        tx.execute(
+            "INSERT INTO schema_migrations(version, applied_at) VALUES (?1, ?2)",
+            params![7, now()],
+        )?;
+        tx.commit()?;
+        version = 7;
+    }
+    if version != 7 {
         return Err(rusqlite::Error::InvalidParameterName(format!(
             "unsupported database schema version {version}"
         )));

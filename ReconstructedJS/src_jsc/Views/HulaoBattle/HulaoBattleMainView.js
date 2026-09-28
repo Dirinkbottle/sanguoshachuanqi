@@ -84,7 +84,43 @@
     xs.Views.Mgr.showDialogByName("HulaoBattleSelectDifficulty", this.m_stage);
 }.bind(this));
     } else {
-        /* TODO_BYTECODE pc=238 opcode=tableswitch reason=tableswitch_target_invalid */
+        // source line 76, bytecode pc 238
+        switch (this.m_status) {
+            case 0:
+            break;
+            case 1:
+            // source line 80, bytecode pc 322
+            this.m_battleBtn.setString(xs.Tools.String.createString("HulaoBattle_btn_battle"));
+            // source line 83, bytecode pc 359
+            this.m_battleBtn.setOnClickCallBack(function() {
+    // source line 82, bytecode pc 41
+    this.goToGarrisonLayoutDialog({ stage: this.m_stage, mode: this.m_mode });
+}.bind(this));
+            break;
+            case 2:
+            // source line 86, bytecode pc 415
+            this.m_battleBtn.setString(xs.Tools.String.createString("HulaoBattle_btn_reward"));
+            // source line 87, bytecode pc 435
+            this.showRewardAnimation(this.m_mode);
+            // source line 90, bytecode pc 472
+            this.m_battleBtn.setOnClickCallBack(function() {
+    // source line 89, bytecode pc 26
+    this.getHulaoBattleReward(this.m_stage, this.m_mode);
+}.bind(this));
+            break;
+            case 3:
+            // source line 93, bytecode pc 546
+            (label = xs.Factorys.Label.createByStyleIdWithString("LS_SXJC", xs.Tools.String.createString("HulaoBattle_label_finish")));
+            // source line 94, bytecode pc 579
+            label.setPosition(this.m_battleBtn.getPosition());
+            // source line 95, bytecode pc 599
+            this.m_battleBtn.setVisible(false);
+            // source line 96, bytecode pc 637
+            xs.Utils.Node.attachNodes(this.m_ccbNode, label);
+            break;
+            default:
+            break;
+        }
     }
     // source line 105, bytecode pc 736
     this.m_title_1.setString(xs.Tools.String.createStringWithArgsArray("HulaoBattle_title1", [ xs.Tools.String.convNumberString(this.m_stage) ]));
@@ -92,8 +128,6 @@
     this.m_title_3.setString(xs.Tools.String.createStringWithArgsArray("HulaoBattle_title3", [ xs.Tools.String.convNumberString(this.m_stage) ]));
     // source line 112, bytecode pc 850
     this.setRewardData(this.m_stage);
-    /* TODO_BYTECODE detached_function_object=1 name=_anonymous_ see recovery outline */
-    /* TODO_BYTECODE detached_function_object=2 name=_anonymous_ see recovery outline */
 },
     goToGarrisonLayoutDialog: function(_data) {
     // source line 141, bytecode pc 148

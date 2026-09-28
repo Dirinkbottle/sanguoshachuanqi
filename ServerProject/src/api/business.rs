@@ -14,8 +14,10 @@ use crate::protocol::{
     ADD_TYPE_EQUIPMENT, ADD_TYPE_ITEM, ADD_TYPE_PLAYER_ATTR, ATTR_TONGQIAN, cmn_map, map_info,
     wine_info,
 };
+use rand::{Rng, seq::SliceRandom};
 use rusqlite::Connection;
 use serde_json::{Value, json};
+use std::collections::{HashMap, HashSet};
 
 /// 从请求里取一个字符串字段，数字也接受。
 ///
@@ -109,6 +111,8 @@ pub fn apply_business(
         }
         "dungeon.fightBefore" => fight_before(db, principal, server_id, data, tutorial, game_data),
         "wine.wine" => recruit(db, principal, server_id, data, tutorial, game_data),
+        "wine.wineInfo" => wine_info_query(db, principal, server_id, tutorial, game_data),
+        "wine.wineGeneralInfo" => wine_general_info(db, principal, server_id, tutorial, game_data),
         "team.chgBattleTeam" => change_team(db, principal, server_id, data, tutorial),
         "dungeon.fight" => fight(db, principal, server_id, data, tutorial, game_data),
         "item.use" => use_item(db, principal, server_id, data, tutorial),
@@ -300,76 +304,427 @@ fn recruit(
     tutorial: &Tutorial,
     game_data: &GameData,
 ) -> Result<Value, BusinessError> {
-    if text(data, "type").as_deref() != Some("2") {
-        return Err(failure("invalid_wine_type", "当前仅开放金酒杯单抽"));
+    let raw_type = text(data, "type").unwrap_or_else(|| "4".to_string());
+    let wine_type = raw_type
+        .parse::<i64>()
+        .ok()
+        .filter(|value| matches!(value, 2..=4))
+        .unwrap_or(4);
+    let is_multi = wine_truthy(data, "is_multi") || wine_truthy(data, "multi");
+    let draw_count = if is_multi { 10 } else { 1 };
+    let before = player::wine_status(db, principal, server_id, tutorial.gold_free_draws)
+        .map_err(|_| failure("internal_error", "无法读取酒馆状态"))?;
+    let cooldown_left = match wine_type {
+        2 => before.gold_free_end_time,
+        3 => before.silver_free_end_time,
+        _ => before.copper_free_end_time,
+    };
+    let can_draw_free = !is_multi
+        && cooldown_left == 0
+        && (wine_type != 2 || tutorial.gold_free_draws > 0);
+
+    let expected_item = match wine_type {
+        2 => "600023",
+        3 => "600024",
+        _ => "600025",
+    };
+    let requested_item_pk = text(data, "user_item_id");
+    let selected_item = if can_draw_free {
+        None
+    } else {
+        let required_item = if is_multi { "600032" } else { expected_item };
+        let held = requested_item_pk
+            .as_deref()
+            .and_then(|pk| player::item_config_for_pk(db, principal, server_id, pk))
+            .filter(|(item_id, count)| item_id == required_item && *count > 0)
+            .map(|(item_id, _)| item_id)
+            .or_else(|| {
+                player::item_pk_for_config(db, principal, server_id, required_item)
+                    .filter(|(_, count)| *count > 0)
+                    .map(|_| required_item.to_string())
+            });
+        held.ok_or_else(|| {
+            let message = match (wine_type, is_multi) {
+                (2, true) => "将军盏不足",
+                (2, false) => "金酒杯不足",
+                (3, _) => "银酒杯不足",
+                _ => "铜酒杯不足",
+            };
+            failure("insufficient_wine_item", message)
+        })?
+        .into()
+    };
+
+    let mut item_updates = Vec::new();
+    let mut item_deletes = Vec::new();
+    if let Some(item_id) = selected_item.as_deref() {
+        let (pk_id, _) = player::item_pk_for_config(db, principal, server_id, item_id)
+            .ok_or_else(|| failure("insufficient_wine_item", "酒杯不足"))?;
+        match player::consume_item(db, principal, server_id, item_id, 1)
+            .map_err(|_| failure("internal_error", "无法消耗酒杯"))?
+        {
+            Some(updated) => item_updates.push(updated),
+            None => item_deletes.push(json!(pk_id)),
+        }
     }
-    if text(data, "is_multi").is_some_and(|value| value != "0") {
-        return Err(failure("not_implemented", "十连招募尚未重建"));
+
+    let owned_ids = player::owned_general_ids(db, principal, server_id)
+        .map_err(|_| failure("internal_error", "无法读取武将"))?;
+    let mut seen: HashSet<String> = owned_ids.iter().cloned().collect();
+    let first_gold = wine_type == 2 && before.first_gold_consumed == 0;
+    let first_silver = wine_type == 3 && before.first_silver_consumed == 0;
+    let first_copper = wine_type == 4 && owned_ids.is_empty();
+    let mut gold_wine_count = before.gold_wine_count;
+    let mut gold_guarantee_phase = before.gold_guarantee_phase;
+    let mut newly_owned = Vec::new();
+    let mut soul_updates: HashMap<String, Value> = HashMap::new();
+    let mut reward_generals = Vec::with_capacity(draw_count);
+    let mut reward_souls = Vec::new();
+    let mut show_general_info = Vec::with_capacity(draw_count);
+    let mut rng = rand::thread_rng();
+    let first_copper_pool = ["121007", "111009", "111016"];
+    let first_gold_pool = ["111009", "122009", "142002", "122023"];
+
+    for draw_index in 0..draw_count {
+        let general_id = match wine_type {
+            2 if first_gold && draw_index == 0 => choose_from(
+                first_gold_pool
+                    .iter()
+                    .copied()
+                    .filter(|id| !seen.contains(*id))
+                    .collect(),
+                &mut rng,
+            )
+            .or_else(|| choose_from(first_gold_pool.to_vec(), &mut rng))
+            .unwrap_or_else(|| "111009".to_string()),
+            2 => {
+                gold_wine_count += 1;
+                let interval = if gold_guarantee_phase <= 1 { 4 } else { 10 };
+                if gold_wine_count % interval == 0 {
+                    gold_guarantee_phase += 1;
+                    gold_wine_count = 0;
+                    pick_grade(game_data, 1, true, &seen, &mut rng)
+                        .unwrap_or_else(|| pick_copper_grade(game_data, &mut rng))
+                } else {
+                    pick_gold_general(game_data, &owned_ids, &seen, &mut rng)
+                }
+            }
+            3 if first_silver && draw_index == 0 => pick_grade(
+                game_data,
+                2,
+                false,
+                &seen,
+                &mut rng,
+            )
+            .unwrap_or_else(|| pick_copper_grade(game_data, &mut rng)),
+            3 => pick_silver_general(game_data, &owned_ids, &seen, &mut rng),
+            4 if first_copper && draw_index == 0 => {
+                choose_from(first_copper_pool.to_vec(), &mut rng)
+                    .unwrap_or_else(|| "121007".to_string())
+            }
+            _ => pick_copper_grade(game_data, &mut rng),
+        };
+        let is_duplicate = !seen.insert(general_id.clone());
+        let name = game_data.general_name(&general_id);
+        if is_duplicate {
+            player::grant_general_soul(db, principal, server_id, &general_id, 18)
+                .map_err(|_| failure("internal_error", "无法保存武将魂魄"))?;
+            let soul_entry = json!({
+                "pk_id": general_id,
+                "id": general_id,
+                "general_id": general_id,
+                "general_name": name,
+                "num": 18,
+                "card_type": 1
+            });
+            reward_souls.push(soul_entry.clone());
+            soul_updates.insert(
+                general_id.clone(),
+                player::general_soul_entry(db, principal, server_id, &general_id)
+                    .map_err(|_| failure("internal_error", "无法读取武将魂魄"))?,
+            );
+            reward_generals.push(json!({
+                "pk_id": general_id,
+                "id": general_id,
+                "general_id": general_id,
+                "general_name": name,
+                "num": 18,
+                "card_type": 1,
+                "type": "2"
+            }));
+            show_general_info.push(json!({
+                "id": general_id,
+                "general_id": general_id,
+                "general_name": name,
+                "general_level": 1,
+                "general_star": 1,
+                "card_type": 1,
+                "num": 18,
+                "type": "2",
+                "general_painting_id": general_id
+            }));
+        } else {
+            let (entry, _) = player::grant_general(db, principal, server_id, &general_id)
+                .map_err(|_| failure("internal_error", "无法保存武将"))?;
+            newly_owned.push(entry.clone());
+            let general_pk = entry["pk_id"].clone();
+            reward_generals.push(json!({
+                "pk_id": general_pk,
+                "id": general_id,
+                "general_id": general_id,
+                "general_name": name,
+                "general_level": 1,
+                "general_star": 1,
+                "card_type": 1,
+                "num": 1,
+                "type": "1",
+                "general_painting_id": general_id,
+                "resource_id": game_data.general_resource_id(&general_id),
+                "grade": game_data.general_grade(&general_id)
+            }));
+            show_general_info.push(json!({
+                "id": general_id,
+                "general_id": general_id,
+                "general_name": name,
+                "general_level": 1,
+                "general_star": 1,
+                "card_type": 1,
+                "num": 1,
+                "type": "1",
+                "general_painting_id": general_id
+            }));
+        }
     }
-    if data.get("user_item_id").is_some() {
-        return Err(failure("invalid_item", "当前账号没有可用的招募道具"));
-    }
-    let used_free_draw =
-        player::consume_free_gold_wine(db, principal, server_id, tutorial.gold_free_draws)
-            .map_err(|_| failure("internal_error", "无法更新酒馆次数"))?;
-    let scope = PlayerScope {
+
+    player::finish_wine_draw(
         db,
         principal,
         server_id,
-        tutorial,
-    };
-    let user_info = if used_free_draw {
-        player::profile_info(db, principal, server_id, tutorial)
-            .map_err(|_| failure("internal_error", "无法读取玩家资源"))?
-    } else {
-        update_resource(
-            scope,
-            "user_gold",
-            -tutorial.gold_single_price,
-            "wine.wine:gold-single",
-            "insufficient_gold",
-        )?
-    };
-    if !used_free_draw {
-        player::mark_gold_first_consumed(db, principal, server_id)
-            .map_err(|_| failure("internal_error", "无法更新酒馆状态"))?;
-    }
-    let (entry, created) =
-        player::grant_general(db, principal, server_id, &tutorial.recruit_general_id)
-            .map_err(|_| failure("internal_error", "无法保存武将"))?;
-    let updates = if created {
-        vec![entry.clone()]
-    } else {
-        Vec::new()
-    };
-    // ToastResultView reads reward_info.general[0].id and then looks the player
-    // entity up by that configuration id, so the array must not be empty and the
-    // entity must exist in the same response through cmn.general_info.
-    let (gold_free_times, gold_free_end_time, first_time_consume_gold) =
-        player::wine_gold_state(db, principal, server_id, tutorial.gold_free_draws)
-            .map_err(|_| failure("internal_error", "无法读取酒馆次数"))?;
+        wine_type,
+        gold_wine_count,
+        gold_guarantee_phase,
+        first_gold,
+        first_silver,
+    )
+    .map_err(|_| failure("internal_error", "无法更新酒馆状态"))?;
+    let after = player::wine_status(db, principal, server_id, tutorial.gold_free_draws)
+        .map_err(|_| failure("internal_error", "无法读取酒馆状态"))?;
+    let user_info = player::profile_info(db, principal, server_id, tutorial)
+        .map_err(|_| failure("internal_error", "无法读取玩家资源"))?;
     Ok(json!({
         "result": true,
+        "ret": 0,
+        "code": 0,
+        "error_code": 0,
+        "msg": "success",
         "cmn": {
-            "general_info": cmn_map(updates, Vec::new()),
+            "general_info": cmn_map(newly_owned, Vec::new()),
+            "general_soul_info": cmn_map(soul_updates.into_values().collect(), Vec::new()),
+            "item_info": cmn_map(item_updates, item_deletes),
             "user_info": user_info
         },
-        "user_wine_info": wine_info(
-            gold_free_times,
-            gold_free_end_time,
-            first_time_consume_gold,
-            tutorial,
-            game_data,
-        ),
+        "user_wine_info": wine_info(&after, tutorial, game_data),
         "reward_info": {
-            "general": [{
-                "id": entry["id"],
-                "type": "1",
-                "num": 1,
-                "pk_id": entry["pk_id"]
-            }],
-            "general_soul": []
+            "general": reward_generals,
+            "general_soul": reward_souls
+        },
+        "show_general_info": show_general_info
+    }))
+}
+
+fn wine_truthy(data: &Value, key: &str) -> bool {
+    match data.get(key) {
+        Some(Value::Bool(value)) => *value,
+        Some(Value::Number(value)) => value.as_i64().unwrap_or(0) >= 1,
+        Some(Value::String(value)) => {
+            value.eq_ignore_ascii_case("true") || value.trim().parse::<i64>().is_ok_and(|n| n >= 1)
         }
+        _ => false,
+    }
+}
+
+fn choose_from<T: Clone>(items: Vec<T>, rng: &mut impl Rng) -> Option<T> {
+    items.choose(rng).cloned()
+}
+
+fn pick_grade(
+    game_data: &GameData,
+    grade: i64,
+    require_source_one: bool,
+    seen: &HashSet<String>,
+    rng: &mut impl Rng,
+) -> Option<String> {
+    let candidates = game_data.wine_candidates(grade, require_source_one);
+    choose_from(
+        candidates
+            .iter()
+            .copied()
+            .filter(|id| !seen.contains(*id))
+            .collect(),
+        rng,
+    )
+    .or_else(|| choose_from(candidates, rng))
+}
+
+fn pick_copper_grade(game_data: &GameData, rng: &mut impl Rng) -> String {
+    let candidates: Vec<&str> = game_data
+        .wine_candidates(3, false)
+        .into_iter()
+        .chain(game_data.wine_candidates(4, false))
+        .collect();
+    choose_from(candidates, rng).unwrap_or_else(|| "113010".to_string())
+}
+
+fn pick_gold_general(
+    game_data: &GameData,
+    owned_ids: &[String],
+    seen: &HashSet<String>,
+    rng: &mut impl Rng,
+) -> String {
+    if rng.gen_range(0..3) != 0 {
+        return choose_from(game_data.wine_candidates(2, false), rng)
+            .unwrap_or_else(|| pick_copper_grade(game_data, rng));
+    }
+    if rng.gen::<f64>() < 0.3 {
+        let mut new_grade_one: Vec<&str> = game_data
+            .wine_candidates(1, false)
+            .into_iter()
+            .filter(|id| !seen.contains(*id) && *id != "131007")
+            .collect();
+        new_grade_one.sort_unstable();
+        if let Some(id) = choose_from(new_grade_one, rng) {
+            return id.to_string();
+        }
+    }
+    let owned_grade_one: Vec<&str> = owned_ids
+        .iter()
+        .map(String::as_str)
+        .filter(|id| {
+            id.parse::<i64>().is_ok_and(|id| (100000..150000).contains(&id))
+                && game_data.general_grade(id) == 1
+                && game_data.general_name(id).starts_with('魔')
+                    == false
+                && game_data.general_fighting(id) <= 635.0
+        })
+        .collect();
+    if owned_grade_one.len() > 10 {
+        if let Some(id) = choose_from(owned_grade_one, rng) {
+            return id.to_string();
+        }
+    }
+    choose_from(game_data.wine_candidates(2, false), rng)
+        .unwrap_or_else(|| pick_copper_grade(game_data, rng))
+}
+
+fn pick_silver_general(
+    game_data: &GameData,
+    owned_ids: &[String],
+    seen: &HashSet<String>,
+    rng: &mut impl Rng,
+) -> String {
+    let mut normal: Vec<&str> = game_data
+        .wine_candidates(3, false)
+        .into_iter()
+        .filter(|id| !game_data.general_name(id).starts_with('魔'))
+        .chain(
+            game_data
+                .wine_candidates(2, false)
+                .into_iter()
+                .filter(|id| seen.contains(*id)),
+        )
+        .collect();
+    if rng.gen_range(0..20) == 0 {
+        let owned_grade_one: Vec<&str> = owned_ids
+            .iter()
+            .map(String::as_str)
+            .filter(|id| {
+                id.parse::<i64>().is_ok_and(|id| (100000..150000).contains(&id))
+                    && game_data.general_grade(id) == 1
+                    && game_data.general_fighting(id) <= 635.0
+                    && !game_data.general_name(id).starts_with('魔')
+            })
+            .collect();
+        if owned_grade_one.len() > 10 {
+            if let Some(id) = choose_from(owned_grade_one, rng) {
+                return id.to_string();
+            }
+        }
+    }
+    normal.sort_unstable();
+    choose_from(normal, rng).unwrap_or_else(|| pick_copper_grade(game_data, rng))
+}
+
+fn wine_info_query(
+    db: &Connection,
+    principal: &str,
+    server_id: &str,
+    tutorial: &Tutorial,
+    game_data: &GameData,
+) -> Result<Value, BusinessError> {
+    let status = player::wine_status(db, principal, server_id, tutorial.gold_free_draws)
+        .map_err(|_| failure("internal_error", "无法读取酒馆状态"))?;
+    let user_info = player::profile_info(db, principal, server_id, tutorial)
+        .map_err(|_| failure("internal_error", "无法读取玩家数据"))?;
+    Ok(json!({
+        "result": true,
+        "ret": 0,
+        "code": 0,
+        "error_code": 0,
+        "msg": "success",
+        "wine_info": wine_info(&status, tutorial, game_data),
+        "cmn": {"user_info": user_info}
+    }))
+}
+
+fn wine_general_info(
+    db: &Connection,
+    principal: &str,
+    server_id: &str,
+    tutorial: &Tutorial,
+    game_data: &GameData,
+) -> Result<Value, BusinessError> {
+    let status = player::wine_status(db, principal, server_id, tutorial.gold_free_draws)
+        .map_err(|_| failure("internal_error", "无法读取酒馆状态"))?;
+    let owned = player::owned_general_ids(db, principal, server_id)
+        .map_err(|_| failure("internal_error", "无法读取武将"))?;
+    let mut seen = HashSet::new();
+    let mut previews: Vec<Value> = owned
+        .iter()
+        .filter(|id| seen.insert((*id).clone()))
+        .filter(|id| game_data.is_wine_preview_general(id))
+        .map(|id| {
+            json!({
+                "general_id": id,
+                "id": id,
+                "pk_id": id,
+                "grade": game_data.general_grade(id),
+                "general_name": game_data.general_name(id)
+            })
+        })
+        .collect();
+    previews.sort_by(|a, b| {
+        a["grade"]
+            .as_i64()
+            .cmp(&b["grade"].as_i64())
+            .then_with(|| a["id"].as_str().cmp(&b["id"].as_str()))
+    });
+    Ok(json!({
+        "result": true,
+        "ret": 0,
+        "code": 0,
+        "error_code": 0,
+        "msg": "success",
+        "wine_info": previews,
+        "show_general_list": previews,
+        "gold_info": {"free_end_time": status.gold_free_end_time, "free_times": status.gold_free_times, "price": 268},
+        "silver_info": {"free_end_time": status.silver_free_end_time, "free_times": status.silver_free_times, "price": 100},
+        "copper_info": {"free_end_time": status.copper_free_end_time, "free_times": 1, "price": 10},
+        "gold_price": 268,
+        "silver_price": 100,
+        "copper_price": 10,
+        "need_times": 5,
+        "first_time_consume_gold": status.first_gold_consumed,
+        "multi_price": 2680
     }))
 }
 
